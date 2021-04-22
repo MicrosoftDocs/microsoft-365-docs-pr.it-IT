@@ -1,7 +1,7 @@
 ---
 title: Contattare Microsoft Defender per il supporto degli endpoint per i clienti del governo degli Stati Uniti
 description: Informazioni su come contattare il supporto di Microsoft Defender per endpoint per i clienti del governo degli Stati Uniti
-keywords: supporto, contatto, supporto premier, soluzioni, problemi, caso, governo, gcc, gcc-m, gcc-h, defender, endpoint, mdatp, mde
+keywords: supporto, contatto, supporto premier, soluzioni, problemi, caso, governo, gcc, gcc-m, gcc-h, defender, endpoint, Microsoft Defender for Endpoint, mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: efdd2807db53f37a76108b872ca0822acfb2af81
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 97971699ec6000ab9233c2fd739f471cdda01b2d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062669"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933854"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support-for-us-government-customers"></a>Contattare Microsoft Defender per il supporto degli endpoint per i clienti del governo degli Stati Uniti
 
@@ -30,7 +30,7 @@ ms.locfileid: "51062669"
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Defender for Endpoint ha recentemente aggiornato il processo di supporto per offrire un'esperienza di supporto più moderna e avanzata.
 

@@ -1,7 +1,7 @@
 ---
 title: Ottenere gli indicatori KPI mancanti in base all'ID software
 description: Recupera gli aggiornamenti della sicurezza mancanti in base all'ID software
-keywords: api, api del grafico, api supportate, ottenere, elenco, file, informazioni, ID software, api di gestione delle minacce & vulnerabilità, api mdatp tvm
+keywords: api, api del grafico, api supportate, ottenere, elenco, file, informazioni, ID software, api di gestione delle minacce & vulnerabilità, Api di Microsoft Defender per Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e5d84a3eadab85713779dd70848bc11d27484dcc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 25ac8ce2c9fb17b2576f86dae1da984865b19018
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499386"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933890"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Ottenere gli indicatori KPI mancanti in base all'ID software
 

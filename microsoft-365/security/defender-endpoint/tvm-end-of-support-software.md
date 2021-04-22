@@ -1,7 +1,7 @@
 ---
 title: Pianificare le versioni software e software di fine supporto
 description: Individuare e pianificare versioni software e software non più supportate e che non riceveranno aggiornamenti della sicurezza.
-keywords: gestione delle minacce e delle vulnerabilità, raccomandazione sulla sicurezza mdatp tvm, raccomandazione sulla sicurezza informatica, raccomandazione per la sicurezza utilizzabile
+keywords: gestione delle minacce e delle vulnerabilità, raccomandazione sulla sicurezza di Microsoft Defender for Endpoint tvm, raccomandazione sulla sicurezza informatica, raccomandazione per la sicurezza utilizzabile
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29adf8a542d97a981a07dac167343f3774aa5af4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8e8fc228b8856df03b580e748bf00efc8d4333c3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500148"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934130"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Pianificare le versioni software e software di fine supporto con gestione delle minacce e delle vulnerabilità
 

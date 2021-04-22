@@ -1,6 +1,6 @@
 ---
 title: Azioni di correzione in Microsoft Defender per Office 365
-keywords: AIR, autoIR, ATP, automatizzato, indagine, risposta, correzione, minacce, avanzate, minacce, protezione
+keywords: AIR, autoIR, Microsoft Defender for Endpoint, automatizzato, indagine, risposta, correzione, minacce, avanzate, minacce, protezione
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa4e2d6656ec430edc221ab94cac494e1ec0ca98
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 37953ad1125d5dad10eb5c6933b1ed9931d5de60
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205154"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933662"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Azioni di correzione in Microsoft Defender per Office 365
 
@@ -55,7 +55,7 @@ Microsoft Defender per Office 365 include azioni di correzione per affrontare va
 |:---|:---|:---|
 |Posta elettronica|Malware|Eliminazione recidiva della posta elettronica/cluster <p> Se più di una serie di messaggi di posta elettronica in un cluster contengono malware, il cluster viene considerato dannoso.|
 |Posta elettronica|URL dannoso<br/>(È stato rilevato un URL dannoso [da Collegamenti sicuri).](safe-links.md)|Eliminazione recidiva della posta elettronica/cluster <br/>URL di blocco (verifica del momento del clic)<p> La posta elettronica che contiene un URL dannoso è considerata dannosa.|
-|Posta elettronica|Phish|Eliminazione recidiva della posta elettronica/cluster <p> Se più di una serie di messaggi di posta elettronica in un cluster contengono tentativi di phishing, l'intero cluster viene considerato un tentativo di phishing.|
+|Posta elettronica|Phishing|Eliminazione recidiva della posta elettronica/cluster <p> Se più di una serie di messaggi di posta elettronica in un cluster contengono tentativi di phishing, l'intero cluster viene considerato un tentativo di phishing.|
 |Posta elettronica|Phish zapped <br>(I messaggi di posta elettronica sono stati recapitati e quindi [zapped](zero-hour-auto-purge.md).)|Eliminazione recidiva della posta elettronica/cluster <p>I report sono disponibili per visualizzare i messaggi zapped. [Vedere se ZAP ha spostato un messaggio e domande frequenti](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message).|
 |Posta elettronica|Messaggio di posta elettronica di phish [perso](enable-the-report-message-add-in.md) segnalato da un utente|[Indagine automatizzata attivata dal report dell'utente](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |Posta elettronica|Anomalia del volume <br> Le quantità di posta elettronica recenti superano i 7-10 giorni precedenti per i criteri di corrispondenza.|L'indagine automatizzata non comporta un'azione in sospeso specifica. <p>L'anomalia del volume non è una minaccia chiara, ma è semplicemente un'indicazione di volumi di posta elettronica più grandi negli ultimi giorni rispetto agli ultimi 7-10 giorni. <p>Anche se un volume elevato di posta elettronica può indicare potenziali problemi, è necessaria una conferma in termini di verdetti dannosi o di una revisione manuale dei messaggi di posta elettronica/cluster. Vedi [Trovare messaggi di posta elettronica sospetti recapitati.](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)|

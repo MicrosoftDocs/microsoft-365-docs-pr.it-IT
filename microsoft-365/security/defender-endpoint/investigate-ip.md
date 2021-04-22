@@ -1,7 +1,7 @@
 ---
 title: Analizzare un indirizzo IP associato a un avviso
 description: Usa le opzioni di indagine per esaminare le possibili comunicazioni tra dispositivi e indirizzi IP esterni.
-keywords: indagare, indagine, indirizzo IP, avviso, microsoft defender atp, IP esterno
+keywords: analizzare, analizzare, indirizzo IP, avviso, Microsoft Defender for Endpoint, IP esterno
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 003abd854e34bb5a9a05f675313ba6c4f6ce1d71
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cb95deb890b52f0f5fde26a3a193181713b8ae5f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186042"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933830"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Analizzare un indirizzo IP associato a un avviso di Microsoft Defender for Endpoint
 

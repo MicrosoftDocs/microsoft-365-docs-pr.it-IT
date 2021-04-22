@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 5a868904a43e17952368e097c0b0e963252d5bed
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570364"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933866"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novità di Microsoft Secure Score
 
@@ -50,7 +50,7 @@ I clienti di Microsoft Teams potranno vedere "Impedire agli utenti anonimi di pa
 
 ## <a name="december-2020"></a>Dicembre 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sono state aggiunte sei azioni di miglioramento relative agli account per Microsoft Defender for Endpoint (in precedenza Microsoft Defender ATP):
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Sono state aggiunte sei azioni di miglioramento relative agli account per Microsoft Defender per Endpoint:
 
 - Impostare "Lunghezza minima password" su "14 o più caratteri"
 - Imposta "Imponi cronologia password" su "24 o più password"
@@ -65,7 +65,7 @@ I clienti di Microsoft Teams potranno vedere "Impedire agli utenti anonimi di pa
 
 La possibilità di creare ticket ServiceNow tramite Secure Score passando a **Share > ServiceNow** non è più disponibile. Grazie per il feedback e il supporto continuo durante la determinazione dei passaggi successivi.
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sono state aggiunte tre azioni di miglioramento correlate ai servizi per Microsoft Defender for Endpoint (in precedenza Microsoft Defender ATP):
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Sono state aggiunte tre azioni di miglioramento correlate ai servizi per Microsoft Defender per Endpoint:
 
 - Correggere il percorso del servizio senza virgolette per i servizi di Windows
 - Modificare il percorso eseguibile del servizio in un percorso protetto comune

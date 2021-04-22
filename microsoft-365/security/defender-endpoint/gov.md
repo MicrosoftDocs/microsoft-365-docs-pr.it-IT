@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint per i clienti us government
+title: Microsoft Defender per endpoint per clienti del governo degli Stati Uniti
 description: Informazioni sui requisiti e le funzionalità di Microsoft Defender for Endpoint per i clienti del governo statunitense disponibili
-keywords: government, gcc, high, requirements, capabilities, defender, defender atp, mdatp, endpoint, dod
+keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender for Endpoint, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 16a7d289889940754a6d56058544a675b31192be
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382914"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933998"
 ---
-# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender for Endpoint per i clienti us government
+# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender per endpoint per clienti del governo degli Stati Uniti
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint per i clienti us government, creato nell'ambiente Azure US Government, usa le stesse tecnologie sottostanti di Defender per Endpoint in Azure Commercial.
 
@@ -171,9 +171,9 @@ Gestione e API: report di conformità e integrità dei dispositivi | ![Sì](imag
 Gestione e API: integrazione con prodotti di terze parti | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Gestione e API: API di streaming | ![Sì](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
 Gestione e API: report di Protezione dalle minacce | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
-Gestione delle & delle minacce | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
+Gestione di minacce e vulnerabilità. | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Analisi delle minacce | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
-Filtro contenuto Web | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
+Filtro contenuti Web | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
 Integrazioni: Azure Sentinel | ![Sì](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
 Integrazioni: Microsoft Cloud App Security | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione
 Integrazioni: Microsoft Compliance Manager | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione

@@ -1,7 +1,7 @@
 ---
-title: Risolvere i problemi di licenza per Microsoft Defender per Endpoint per Mac
-description: Risolvere i problemi relativi alle licenze in Microsoft Defender per Endpoint per Mac.
-keywords: microsoft, defender, atp, mac, prestazioni
+title: Risolvere i problemi di licenza per Microsoft Defender per Endpoint su Mac
+description: Risolvere i problemi relativi alle licenze in Microsoft Defender per Endpoint su Mac.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, prestazioni
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fb351d9ce8e9beef812e6aaa7d463161a6af8df
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862188"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934262"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Risolvere i problemi di licenza per Microsoft Defender per Endpoint in macOS
 

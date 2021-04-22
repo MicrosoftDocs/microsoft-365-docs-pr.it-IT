@@ -1,7 +1,7 @@
 ---
 title: Risolvere i falsi positivi/negativi in Microsoft Defender per endpoint
 description: Scopri come gestire i falsi positivi o i falsi negativi in Microsoft Defender per Endpoint.
-keywords: antivirus, eccezione, esclusione, defender atp, falso positivo, falso negativo, file bloccato, url bloccato
+keywords: antivirus, eccezione, esclusione, Microsoft Defender for Endpoint, falso positivo, falso negativo, file bloccato, URL bloccato
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759871"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933590"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Risolvere i falsi positivi/negativi in Microsoft Defender per endpoint
 
@@ -338,11 +338,11 @@ Per verificare la disponibilità di aggiornamenti relativi all'invio, accedere a
 
 Microsoft Defender for Endpoint offre un'ampia gamma di opzioni, inclusa la possibilità di ottimizzare le impostazioni per diverse funzionalità e funzionalità. Se si verificano numerosi falsi positivi, verificare le impostazioni di protezione dalle minacce dell'organizzazione. Potrebbe essere necessario apportare alcune modifiche a:
 
-- [Protezione basata sul cloud](#cloud-delivered-protection)
+- [Protezione fornita dal cloud](#cloud-delivered-protection)
 - [Correzione per applicazioni potenzialmente indesiderate](#remediation-for-potentially-unwanted-applications)
 - [Indagine e correzione automatizzate](#automated-investigation-and-remediation)
 
-### <a name="cloud-delivered-protection"></a>Protezione basata sul cloud
+### <a name="cloud-delivered-protection"></a>Protezione fornita dal cloud
 
 Controlla il livello di protezione fornito dal cloud per Microsoft Defender Antivirus. Per impostazione predefinita, la protezione recapitata nel cloud è impostata su **Non** configurato, che corrisponde a un normale livello di protezione per la maggior parte delle organizzazioni. Se la protezione consegnata dal cloud è impostata su **Alta,** Alta **+** o **Tolleranza zero,** è possibile che si verifichi un numero maggiore di falsi positivi.
 
@@ -440,7 +440,7 @@ A seconda del [livello di automazione](/microsoft-365/security/defender-endpoint
 > [!IMPORTANT]
 > Ti consigliamo di *usare l'automazione* completa per l'analisi e la correzione automatizzate. Non disattivare queste funzionalità a causa di un falso positivo. Usa invece gli [indicatori "consenti"](#indicators-for-microsoft-defender-for-endpoint)per definire le eccezioni e mantieni l'analisi e la correzione automatizzate impostate per eseguire automaticamente le azioni appropriate. Seguire [queste indicazioni consente](automation-levels.md#levels-of-automation) di ridurre il numero di avvisi che il team delle operazioni di sicurezza deve gestire. 
 
-## <a name="still-need-help"></a>Ulteriore assistenza
+## <a name="still-need-help"></a>Serve ulteriore assistenza?
 
 Se hai seguito tutti i passaggi descritti in questo articolo e hai ancora bisogno di assistenza, contatta il supporto tecnico.
 

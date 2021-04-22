@@ -1,7 +1,7 @@
 ---
 title: Gestire Microsoft Defender per Endpoint con oggetti Criteri di gruppo
 description: Informazioni su come gestire Microsoft Defender per Endpoint con oggetti Criteri di gruppo
-keywords: post-migrazione, gestire, operazioni, manutenzione, utilizzo, PowerShell, windows defender advanced threat protection, atp, edr
+keywords: post-migrazione, gestire, operazioni, manutenzione, utilizzo, PowerShell, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 6d10bd932d9414f1460076d3fe7ca8dbed8041a6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1b8f2e7c7435f2161f7261722795b35ca848ec2f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185657"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934238"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Gestire Microsoft Defender per Endpoint con oggetti Criteri di gruppo
 

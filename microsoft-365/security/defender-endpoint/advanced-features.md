@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903791"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934370"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurare le funzionalità avanzate in Defender for Endpoint
 
@@ -151,7 +151,7 @@ L'abilitazione dell'integrazione di Skype for Business consente di comunicare co
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Integrazione di Microsoft Defender for Identity
 
-L'integrazione con Azure Advanced Threat Protection consente di eseguire il pivot direttamente in un altro prodotto di sicurezza microsoft Identity. Azure Advanced Threat Protection aumenta un'indagine con informazioni aggiuntive su un account sospetto compromesso e risorse correlate. Abilitando questa funzionalità, arricchirai la funzionalità di indagine basata su dispositivo tramite pivot nella rete da un punto di vista di identificazione.
+L'integrazione con Microsoft Defender for Identity consente di eseguire il pivot direttamente in un altro prodotto di sicurezza microsoft Identity. Microsoft Defender for Identity aumenta un'indagine con informazioni aggiuntive su un account sospetto compromesso e risorse correlate. Abilitando questa funzionalità, arricchirai la funzionalità di indagine basata su dispositivo tramite pivot nella rete da un punto di vista di identificazione.
 
 > [!NOTE]
 > Per abilitare questa funzionalità, è necessario disporre della licenza appropriata.
@@ -160,7 +160,7 @@ L'integrazione con Azure Advanced Threat Protection consente di eseguire il pivo
 
 Questa funzionalità è disponibile solo se si dispone di un componente aggiuntivo di Office 365 E5 o Threat Intelligence attivo. Per ulteriori informazioni, vedere la pagina del prodotto Office 365 Enterprise E5.
 
-Quando si attiva questa funzionalità, sarà possibile incorporare i dati di Office 365 Advanced Threat Protection in Microsoft Defender Security Center per condurre un'indagine completa sulla sicurezza tra le cassette postali di Office 365 e i dispositivi Windows.
+Quando si attiva questa funzionalità, sarà possibile incorporare i dati di Microsoft Defender per Office 365 in Microsoft Defender Security Center per condurre un'indagine completa sulla sicurezza tra le cassette postali di Office 365 e i dispositivi Windows.
 
 > [!NOTE]
 > Per abilitare questa funzionalità, è necessario disporre della licenza appropriata.

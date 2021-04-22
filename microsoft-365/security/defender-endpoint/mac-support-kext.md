@@ -1,7 +1,7 @@
 ---
 title: Risolvere i problemi di estensione del kernel in Microsoft Defender per Endpoint in macOS
 description: Risolvere i problemi relativi alle estensioni del kernel in Microsoft Defender per Endpoint in macOS.
-keywords: microsoft, defender, atp, mac, kernel, estensione
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, estensione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9dc3ee17d79972b5d36c5fff58fbe4cc486027bd
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689654"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934274"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Risolvere i problemi di estensione del kernel in Microsoft Defender per Endpoint in macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689654"
 
 **Si applica a:**
 
-- [Microsoft Defender per Endpoint in macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender per endpoint su macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

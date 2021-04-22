@@ -1,7 +1,7 @@
 ---
 title: Punteggio di esposizione nella gestione delle minacce e delle vulnerabilità
 description: Il punteggio di esposizione alla gestione delle minacce e delle vulnerabilità riflette la vulnerabilità dell'organizzazione alle minacce di cybersecurity.
-keywords: punteggio di esposizione, punteggio di esposizione mdatp, punteggio di esposizione mdatp tvm, punteggio di esposizione dell'organizzazione, punteggio di esposizione dell'organizzazione tvm, gestione delle minacce e delle vulnerabilità, Microsoft Defender for Endpoint
+keywords: punteggio di esposizione, Punteggio di esposizione di Microsoft Defender for Endpoint, Punteggio di esposizione tvm di Microsoft Defender for Endpoint, punteggio di esposizione dell'organizzazione, punteggio di esposizione dell'organizzazione tvm, gestione delle minacce e delle vulnerabilità, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34c3122b017b14605fdbb3358f31f73e26361a4d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: fcea240fe1dc0ce97a2800391320b04c39c84336
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500122"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934106"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Punteggio di esposizione - Gestione delle minacce e delle vulnerabilità
 

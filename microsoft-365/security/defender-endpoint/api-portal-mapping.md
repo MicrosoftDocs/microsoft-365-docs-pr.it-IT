@@ -1,5 +1,5 @@
 ---
-title: Campi API di rilevamento di Microsoft Defender ATP
+title: Campi API di rilevamento di Microsoft Defender per endpoint
 description: Informazioni sul mapping dei campi dell'API di rilevamento ai valori in Microsoft Defender Security Center
 keywords: rilevamenti, campi di rilevamento, campi, api, campi, rilevamenti pull, api rest, richiesta, risposta
 search.product: eADQiWindows 10XVcnh
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e304d731409c4cd0fac722d492b3fab5ed28fd35
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164882"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933638"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Campi API di rilevamento di Microsoft Defender per endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
@@ -52,8 +52,8 @@ I numeri di campo corrispondono ai numeri nelle immagini seguenti.
 > | Etichetta portale   | Nome campo SIEM           | Campo ArcSight      | Valore di esempio                                                                      | Descrizione                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | name                | Microsoft Defender AV ha rilevato malware ad alta gravità "Mikatz" | Valore disponibile per ogni rilevamento.                                                                                                                                               |
-> | 2                 | Gravità                  | deviceSeverity      | Alto                                                                             | Valore disponibile per ogni rilevamento.                                                                                                                                               |
-> | 3                 | Category                  | deviceEventCategory | Malware                                                               | Valore disponibile per ogni rilevamento.                                                                                                                                               |
+> | 2                | Gravità                  | deviceSeverity      | Alto                                                                             | Valore disponibile per ogni rilevamento.                                                                                                                                               |
+> | 3                | Categoria                  | deviceEventCategory | Malware                                                               | Valore disponibile per ogni rilevamento.                                                                                                                                               |
 > | 4                 | Origine di rilevamento                    | sourceServiceName   | Antivirus                                                                 | Microsoft Defender Antivirus o Defender for Endpoint. Valore disponibile per ogni rilevamento.                                                                                         |
 > | 5                 | MachineName               | sourceHostName      | desktop-4a5ngd6                                                                           | Valore disponibile per ogni rilevamento.                                                                                                                                               |
 > | 6                 | FileName                  | fileName            | Robocopy.exe                                                                       | Disponibile per i rilevamenti associati a un file o a un processo.                                                                                                                      |

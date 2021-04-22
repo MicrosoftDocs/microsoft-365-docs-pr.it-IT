@@ -1,7 +1,7 @@
 ---
 title: Risolvere le vulnerabilità con la gestione delle minacce e delle vulnerabilità
 description: Correggere i punti deboli della sicurezza individuati tramite suggerimenti sulla sicurezza e creare eccezioni, se necessario, nella gestione delle minacce e delle vulnerabilità.
-keywords: microsoft defender for endpoint tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
+keywords: Microsoft Defender for Endpoint tvm remediation, Microsoft Defender for Endpoint tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be24528c2337c5d2616eb1bf69906f60ae7b4375
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 56b6c809e31285bbfae47a5fdcc0446890919e8b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689366"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934070"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Risolvere le vulnerabilità con la gestione delle minacce e delle vulnerabilità
 

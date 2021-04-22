@@ -1,7 +1,7 @@
 ---
 title: Onboard dei dispositivi non Windows nel servizio Microsoft Defender for Endpoint
 description: Configura i dispositivi non Windows in modo che possano inviare i dati del sensore al servizio Microsoft Defender for Endpoint.
-keywords: onboardare dispositivi non Windows, macos, linux, gestione dei dispositivi, configurare i dispositivi Windows ATP, configurare Microsoft Defender per i dispositivi endpoint
+keywords: onboard non Windows devices, macos, linux, device management, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c78779cd4a8a329864b6ac7e0debfc30ca0b3a56
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 1c10576b72793ab3833f2e9027e3814a449334ee
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893590"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933926"
 ---
 # <a name="onboard-non-windows-devices"></a>Aggiungere dispositivi non Windows
 
@@ -48,7 +48,7 @@ Per il funzionamento dell'integrazione, devi conoscere esattamente le versioni d
 Dovrai eseguire la procedura seguente per eseguire l'onboard di dispositivi non Windows:
 1. Seleziona il metodo di onboarding preferito:
 
-   - Per i dispositivi macOS, puoi scegliere di eseguire l'onboard tramite Microsoft Defender for Endpoint o tramite una soluzione di terze parti. Per altre informazioni, vedi [Microsoft Defender per Endpoint per Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - Per i dispositivi macOS, puoi scegliere di eseguire l'onboard tramite Microsoft Defender for Endpoint o tramite una soluzione di terze parti. Per altre informazioni, vedi [Microsoft Defender per Endpoint su Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
    - Per altri dispositivi non Windows scegli **Onboard di dispositivi non Windows tramite l'integrazione di terze parti.**   
     1. Nel riquadro di spostamento selezionare **Partner di**  >  **interoperabilità**. Verificare che la soluzione di terze parti sia elencata.

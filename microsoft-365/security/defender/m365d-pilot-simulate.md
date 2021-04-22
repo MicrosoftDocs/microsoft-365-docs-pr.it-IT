@@ -1,7 +1,7 @@
 ---
 title: Eseguire le simulazioni di attacco di Microsoft 365 Defender
 description: Eseguire simulazioni di attacco per il progetto pilota di Microsoft 365 Defender per vedere come si svolge e viene rapidamente corretti.
-keywords: Simulazione di attacco pilota di Microsoft Threat Protection, eseguire la simulazione di attacco pilota di Microsoft Threat Protection, simulare un attacco in Microsoft Threat Protection, progetto pilota di Microsoft Threat Protection, sicurezza informatica, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
+keywords: Simulazione di attacco pilota di Microsoft 365 Defender, eseguire la simulazione di attacco pilota di Microsoft 365 Defender, simulare l'attacco in Microsoft 365 Defender, progetto pilota di Microsoft 365 Defender, sicurezza informatica, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bb6472fdd52cdab0ab649fbb76b1ff6a683d6c80
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068253"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934478"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Eseguire le simulazioni di attacco di Microsoft 365 Defender
 

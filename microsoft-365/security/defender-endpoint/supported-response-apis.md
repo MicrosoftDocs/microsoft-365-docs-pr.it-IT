@@ -1,6 +1,6 @@
 ---
-title: API di risposta di Microsoft Defender Advanced Threat Protection supportate
-description: Informazioni sulle specifiche chiamate API di Microsoft Defender Advanced Threat Protection correlate alla risposta.
+title: API di risposta di Microsoft Defender for Endpoint supportate
+description: Informazioni sulle specifiche chiamate API di Microsoft Defender for Endpoint correlate alla risposta.
 keywords: api di risposta, api del grafico, api supportate, attore, avvisi, dispositivo, utente, dominio, ip, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a290c431f6d81b23896ddf77e7c7a47de378de22
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 36ed1f624fda7ae413ffbbf807925cf00e0a23ca
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185552"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933770"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>API di query di Microsoft Defender for Endpoint supportate 
 
@@ -38,13 +38,13 @@ Informazioni sulle chiamate API correlate alla risposta supportate che puoi eseg
 ## <a name="in-this-section"></a>Contenuto della sezione
 Argomento | Descrizione
 :---|:---
-Raccogliere il pacchetto di analisi | Esegui questa API per raccogliere un pacchetto di indagine da un dispositivo.
+Raccogliere un pacchetto di indagini | Esegui questa API per raccogliere un pacchetto di indagine da un dispositivo.
 Isola dispositivo | Esegui questa API per isolare un dispositivo dalla rete.
 Dispositivo unisolate | Rimuovere un dispositivo dall'isolamento. 
 Limitare l'esecuzione del codice | Esegui questa API per contenere un attacco arrestando processi dannosi. Puoi anche bloccare un dispositivo e impedire l'esecuzione di successivi tentativi di programmi potenzialmente dannosi.
 Annullamento dell'esecuzione del codice | Esegui questa operazione per annullare i criteri di restrizione delle applicazioni dopo aver verificato che il dispositivo compromesso è stato corretti.
-Eseguire l'analisi antivirus | Avviare in remoto un'analisi antivirus per identificare e correggere il malware che potrebbe essere presente in un dispositivo compromesso.
-Arrestare e mettere in quarantena il file |  Eseguire questa chiamata per interrompere l'esecuzione di processi, file in quarantena ed eliminare la persistenza, ad esempio le chiavi del Registro di sistema.
+Eseguire ricerca del virus | Avviare in remoto un'analisi antivirus per identificare e correggere il malware che potrebbe essere presente in un dispositivo compromesso.
+Arrestare e mettere in quarantena un file |  Eseguire questa chiamata per interrompere l'esecuzione di processi, file in quarantena ed eliminare la persistenza, ad esempio le chiavi del Registro di sistema.
 Esempio di richiesta | Esegui questa chiamata per richiedere un esempio di file da un dispositivo specifico. Il file verrà raccolto dal dispositivo e caricato in un archivio sicuro.
 Blocca file | Eseguire questa API per impedire l'ulteriore propagazione di un attacco nell'organizzazione vietando file potenzialmente dannosi o malware sospetto. 
 Sblocca file | Consentire l'esecuzione di un file nell'organizzazione tramite Microsoft Defender Antivirus.

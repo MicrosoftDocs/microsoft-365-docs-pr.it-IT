@@ -1,7 +1,7 @@
 ---
 title: Onboarding di dispositivi Windows 10 con uno script locale
 description: Usa uno script locale per distribuire il pacchetto di configurazione nei dispositivi in modo che siano onboarded nel servizio.
-keywords: configurare i dispositivi usando uno script locale, la gestione dei dispositivi, configurare i dispositivi Windows ATP, configurare Microsoft Defender per i dispositivi endpoint
+keywords: configurare i dispositivi usando uno script locale, la gestione dei dispositivi, configurare Microsoft Defender per i dispositivi endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 77473df9cc3e0e98efac8eaacd0a51b551bc3258
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 056268ed093d371d39a6136dd0b272c12ab6f9d7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067866"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933914"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Onboarding di dispositivi Windows 10 con uno script locale
 
@@ -150,6 +150,6 @@ Il monitoraggio può essere eseguito anche direttamente nel portale o utilizzand
 - [Onboardare dispositivi Windows 10 con Criteri di gruppo](configure-endpoints-gp.md)
 - [Onboard dei dispositivi Windows 10 con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](configure-endpoints-mdm.md)
-- [Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](configure-endpoints-vdi.md)
+- [Aggiungere dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](configure-endpoints-vdi.md)
 - [Eseguire un test di rilevamento in un dispositivo Microsoft Defender for Endpoint appena onboarded](run-detection-test.md)
 - [Risolvere i problemi di onboarding di Microsoft Defender per endpoint](troubleshoot-onboarding.md)

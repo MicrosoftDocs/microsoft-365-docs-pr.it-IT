@@ -1,7 +1,7 @@
 ---
 title: Gestire Microsoft Defender per Endpoint tramite PowerShell, WMI e MPCmdRun.exe
 description: Informazioni su come gestire Microsoft Defender per Endpoint con PowerShell, WMI e MPCmdRun.exe
-keywords: post-migrazione, gestire, operazioni, manutenzione, utilizzo, PowerShell, WMI, MPCmdRun.exe, windows defender advanced threat protection, atp, edr
+keywords: post-migrazione, gestire, operazioni, manutenzione, utilizzo, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 5f0e94360cfaa0c66aedec400e81adc85f4f5450
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b192551a351b58709185022cf311174052592b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185874"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934464"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Gestire Microsoft Defender per Endpoint con PowerShell, WMI e MPCmdRun.exe
 
@@ -55,7 +55,7 @@ Puoi usare PowerShell per gestire Microsoft Defender Antivirus, la protezione da
 |Attività  |Risorse per approfondire  |
 |---------|---------|
 |**Gestire Microsoft Defender Antivirus** <br/><br/>*Visualizzare lo stato della protezione antimalware, configurare le preferenze per le analisi antivirus & aggiornamenti e apportare altre modifiche alla protezione antivirus.*    |[Utilizzare i cmdlet di PowerShell per configurare e gestire Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[Usare i cmdlet di PowerShell per abilitare la protezione recapitata nel cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
-|**Configurare la protezione da** exploit per ridurre le minacce nei dispositivi dell'organizzazione<br/><br/> *È consigliabile usare la protezione degli exploit in [modalità](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) di controllo in un primo momento. In questo modo, puoi vedere in che modo la protezione degli exploit influisce sulle app che l'organizzazione usa.*     | [Personalizzare la protezione da exploit](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[Cmdlet di PowerShell per la protezione degli exploit](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
+|**Configurare la protezione da** exploit per ridurre le minacce nei dispositivi dell'organizzazione<br/><br/> *È consigliabile usare la protezione degli exploit in [modalità](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) di controllo in un primo momento. In questo modo, puoi vedere in che modo la protezione degli exploit influisce sulle app che l'organizzazione usa.*     | [Personalizzare la protezione dagli exploit](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[Cmdlet di PowerShell per la protezione degli exploit](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
 |**Configurare le regole di riduzione della superficie di** attacco con PowerShell <br/><br/>*È possibile utilizzare PowerShell per escludere file e cartelle dalle regole di riduzione della superficie di attacco.* |[Personalizzare le regole di riduzione della superficie di attacco: usare PowerShell per escludere i file & cartelle](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>Vedi anche lo strumento dell'interfaccia utente grafica di [António Vasconcelo per l'impostazione](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)delle regole di riduzione della superficie di attacco con PowerShell. |
 |**Abilitare Protezione di rete** con PowerShell <br/><br/>*È possibile usare PowerShell per abilitare Protezione di rete.* |[Attivare Protezione di rete con PowerShell](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#powershell) |
 |**Configurare l'accesso controllato alle cartelle** per la protezione da ransomware <br/><br/>*[L'accesso controllato](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) alle cartelle viene anche definito protezione antiransomware.* |[Abilitare l'accesso controllato alle cartelle con PowerShell](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell) |

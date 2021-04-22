@@ -2,7 +2,7 @@
 title: Informazioni sulla privacy - Microsoft Defender for Endpoint su iOS
 ms.reviewer: ''
 description: Descrive le informazioni sulla privacy per Microsoft Defender for Endpoint su iOS
-keywords: microsoft, defender, atp, ios, criteri, panoramica
+keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, criteri, panoramica
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5598df8a9e3493a1c4922f672468dd54e84c31e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688202"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934286"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Informazioni sulla privacy - Microsoft Defender for Endpoint su iOS
 
@@ -34,15 +34,15 @@ ms.locfileid: "51688202"
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> Defender for Endpoint per iOS usa una VPN per fornire la funzionalità Di protezione Web. Non si tratta di una VPN normale ed è una VPN locale o con looping che non porta traffico all'esterno del dispositivo. **Microsoft o l'organizzazione non visualizza l'attività di esplorazione.**
+> Defender for Endpoint in iOS usa una VPN per fornire la funzionalità Di protezione Web. Non si tratta di una VPN normale ed è una VPN locale o con looping che non porta traffico all'esterno del dispositivo. **Microsoft o l'organizzazione non visualizza l'attività di esplorazione.**
 
-Defender for Endpoint per iOS raccoglie informazioni dai dispositivi iOS configurati e le archivia nello stesso tenant in cui si dispone di Defender per Endpoint. Le informazioni vengono raccolte per mantenere Defender for Endpoint per iOS sicuro, aggiornato, che funzioni come previsto e supportare il servizio.
+Defender for Endpoint in iOS raccoglie le informazioni dai dispositivi iOS configurati e le archivia nello stesso tenant in cui si dispone di Defender per Endpoint. Le informazioni vengono raccolte per mantenere Defender for Endpoint su iOS sicuro, aggiornato, che funzioni come previsto e per supportare il servizio.
 
 Per altre informazioni sull'archiviazione dei dati, vedi [Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint.](data-storage-privacy.md)
 
 ## <a name="required-data"></a>Dati obbligatori 
 
-I dati necessari sono costituiti dai dati necessari per far funzionare Defender for Endpoint per iOS come previsto. Questi dati sono essenziali per il funzionamento del servizio e possono includere dati relativi all'utente finale, all'organizzazione, al dispositivo e alle app. 
+I dati necessari sono costituiti dai dati necessari per far funzionare Defender for Endpoint in iOS come previsto. Questi dati sono essenziali per il funzionamento del servizio e possono includere dati relativi all'utente finale, all'organizzazione, al dispositivo e alle app. 
 
 Ecco un elenco dei tipi di dati raccolti: 
 

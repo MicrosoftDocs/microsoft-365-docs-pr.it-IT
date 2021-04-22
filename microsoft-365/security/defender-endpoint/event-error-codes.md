@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: a8b7268e89470a85a34015967b69abb1818fe64f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222655"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933842"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Esaminare eventi ed errori tramite il Visualizzatore eventi
 
@@ -31,7 +31,7 @@ ms.locfileid: "51222655"
 
 **Si applica a:**
 - Visualizzatore eventi
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -68,13 +68,13 @@ Ad esempio, se i dispositivi non vengono visualizzati nell'elenco **Dispositivi,
 <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
 </tr>
 <tr>
-<td>2 </td>
+<td>2</td>
 <td>Arresto del servizio Microsoft Defender for Endpoint.</td>
 <td>Si verifica quando il dispositivo viene arrestato o offboarded.</td>
 <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
 </tr>
 <tr>
-<td>3 </td>
+<td>3</td>
 <td>Avvio del servizio Microsoft Defender for Endpoint non riuscito. Codice di errore: <code>variable</code> .</td>
 <td>Il servizio non è stato avviato.</td>
 <td>Esaminare altri messaggi per determinare le possibili cause e i passaggi per la risoluzione dei problemi.</td>
@@ -301,13 +301,13 @@ Vedi <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 </tr>
 <tr>
 <td>42</td>
-<td>Il componente WDATP di Microsoft Defender for Endpoint non è riuscito a eseguire l'azione. Componente: %1, Azione: %2, Tipo eccezione: %3, Messaggio eccezione: %4</td>
+<td>Microsoft Defender for Endpoint component failed to perform action. Componente: %1, Azione: %2, Tipo eccezione: %3, Messaggio eccezione: %4</td>
 <td>Errore interno. Avvio del servizio non riuscito.</td>
 <td>Se l'errore persiste, contattare il supporto tecnico.</td>
 </tr>
 <tr>
 <td>43</td>
-<td>Il componente WDATP di Microsoft Defender for Endpoint non è riuscito a eseguire l'azione. Componente: %1, Azione: %2, Tipo eccezione: %3, Errore eccezione: %4, Messaggio eccezione: %5</td>
+<td>Microsoft Defender for Endpoint component failed to perform action. Componente: %1, Azione: %2, Tipo eccezione: %3, Errore eccezione: %4, Messaggio eccezione: %5</td>
 <td>Errore interno. Avvio del servizio non riuscito.</td>
 <td>Se l'errore persiste, contattare il supporto tecnico.</td>
 </tr>
@@ -482,13 +482,13 @@ Vedi <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 </tr>
 <tr>
    <td>81</td>
-   <td>Non è stato possibile creare Windows Defender autologger ETW advanced threat protection. Codice errore: %1</td>
+   <td>Impossibile creare l'autologger ETW di Microsoft Defender per endpoint. Codice errore: %1</td>
    <td>Impossibile creare la sessione ETW.</td>
    <td>Riavviare il dispositivo. Se l'errore persiste, contattare il supporto tecnico.</td>
 </tr>
 <tr>
    <td>82</td>
-   <td>Impossibile rimuovere Windows Defender autologger ETW di Advanced Threat Protection. Codice errore: %1</td>
+   <td>Impossibile rimuovere l'autologger ETW di Microsoft Defender for Endpoint. Codice errore: %1</td>
    <td>Impossibile eliminare la sessione ETW.</td>
    <td>Contattare il supporto tecnico.</td>
 </tr>
@@ -500,7 +500,7 @@ Vedi <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 </tr>
 <tr>
    <td>85</td>
-   <td>Impossibile attivare il Windows Defender Advanced Threat Protection. Codice errore: %1</td>
+   <td>Impossibile attivare il file eseguibile di Microsoft Defender for Endpoint. Codice errore: %1</td>
    <td>Impossibile eseguire l'eseguibile SenseIR.</td>
    <td>Riavviare il dispositivo. Se l'errore persiste, contattare il supporto tecnico.</td>
 </tr>
@@ -554,19 +554,19 @@ Vedi <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 </tr>
 <tr>
    <td>94</td>
-   <td>Windows Defender eseguibile advanced threat protection avviato</td>
+   <td>Il file eseguibile di Microsoft Defender for Endpoint è stato avviato</td>
    <td>L'eseguibile SenseCE è stato avviato.</td>
    <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
 </tr>
 <tr>
    <td>95</td>
-   <td>Windows Defender eseguibile advanced threat protection è terminato</td>
+   <td>L'eseguibile di Microsoft Defender for Endpoint è terminato</td>
    <td>L'eseguibile SenseCE è terminato.</td>
    <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
 </tr>
 <tr>
    <td>96</td>
-   <td>Windows Defender ha chiamato Advanced Threat Protection Init. Codice risultato: %2</td>
+   <td>Microsoft Defender for Endpoint Init ha chiamato. Codice risultato: %2</td>
    <td>L'eseguibile SenseCE ha chiamato inizializzazione MCE.</td>
    <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
 </tr>
@@ -590,19 +590,19 @@ Vedi <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 </tr>
 <tr>
    <td>100</td>
-   <td>Windows Defender'avvio del file eseguibile di Advanced Threat Protection non è riuscito. Codice errore: %1</td>
+   <td>Avvio del file eseguibile di Microsoft Defender for Endpoint non riuscito. Codice errore: %1</td>
    <td>Impossibile avviare il file eseguibile SenseCE.</td>
    <td>Riavviare il dispositivo. Se l'errore persiste, contattare il supporto tecnico.</td>
 </tr>
 <tr>
    <td>102</td>
-   <td>Windows Defender file eseguibile di rilevamento e risposta di Advanced Threat Protection network detection and response è stato avviato</td>
+   <td>Il file eseguibile Di rilevamento e risposta di Microsoft Defender per endpoint di rete è stato avviato</td>
    <td>L'eseguibile SenseNdr è stato avviato.</td>
    <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
 </tr>
 <tr>
    <td>103</td>
-   <td>Windows Defender file eseguibile advanced threat protection network detection and response è terminato</td>
+   <td>L'eseguibile microsoft Defender for Endpoint Network Detection and Response è terminato</td>
    <td>L'eseguibile SenseNdr è terminato.</td>
    <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
 </tr>
@@ -612,6 +612,6 @@ Vedi <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Onboard di dispositivi Windows 10](configure-endpoints.md)
+- [Aggiungere di dispositivi Windows 10](configure-endpoints.md)
 - [Configurare le impostazioni del proxy del dispositivo e della connettività Internet](configure-proxy-internet.md)
-- [Risolvere i problemi di Microsoft Defender per Endpoint](troubleshoot-onboarding.md)
+- [Risolvere i problemi di Microsoft Defender per endpoint](troubleshoot-onboarding.md)

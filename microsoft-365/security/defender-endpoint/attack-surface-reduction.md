@@ -1,7 +1,7 @@
 ---
 title: Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 description: Le regole di riduzione della superficie di attacco possono impedire agli exploit di usare app e script per infettare i dispositivi con malware.
-keywords: Regole di riduzione della superficie di attacco, asr, fianchi, sistema di prevenzione delle intrusioni host, regole di protezione, anti-exploit, antiexploit, exploit, prevenzione delle infezioni, Microsoft Defender for Endpoint, Microsoft Defender ATP
+keywords: Regole di riduzione della superficie di attacco, asr, fianchi, sistema di prevenzione delle intrusioni host, regole di protezione, anti-exploit, antiexploit, exploit, prevenzione delle infezioni, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8790d959dc41e3edea684c66e556a2ec67f85ae1
-ms.sourcegitcommit: 0fe5989b7ee2f7ae0181f2781e31db7f58689441
+ms.openlocfilehash: 98f04a9aa34fda78c7caba2f6cb71c135428784f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697528"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933986"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -135,7 +135,7 @@ DeviceEvents
 2. Immetti le parole *Visualizzatore eventi* nel menu Start per aprire il Visualizzatore eventi di Windows.
 3. In **Azioni** selezionare **Importa visualizzazione personalizzata...**.
 4. Selezionare *l'cfa-events.xml* file da cui è stato estratto. In alternativa, [copiare il codice XML direttamente](event-views.md).
-5. Selezionare **OK**.
+5. Seleziona **OK**.
 
 È possibile creare una visualizzazione personalizzata che filtra gli eventi in modo da visualizzare solo gli eventi seguenti, tutti correlati all'accesso controllato alle cartelle:
 

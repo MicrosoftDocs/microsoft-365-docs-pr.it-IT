@@ -1,7 +1,7 @@
 ---
 title: Informazioni dettagliate sul dashboard - gestione delle minacce e delle vulnerabilità
 description: Il dashboard di gestione delle minacce e delle vulnerabilità può aiutare SecOps e gli amministratori della sicurezza a risolvere le minacce alla sicurezza informatica e a creare la resilienza della sicurezza dell'organizzazione.
-keywords: mdatp-tvm, dashboard mdatp-tvm, gestione delle vulnerabilità & delle minacce, gestione delle minacce e delle vulnerabilità, gestione delle minacce basate sul rischio & vulnerabilità, configurazione della sicurezza, Punteggio microsoft sicuro per i dispositivi, punteggio di esposizione
+keywords: Microsoft Defender for Endpoint-tvm, Dashboard di Microsoft Defender for Endpoint-tvm, gestione delle vulnerabilità di threat &, gestione delle minacce e delle vulnerabilità, gestione delle minacce basate sui rischi & gestione delle vulnerabilità, configurazione della sicurezza, Microsoft Secure Score per dispositivi, punteggio di esposizione
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35dd300d828bfa48ad753d7c65f36b2555cf4f60
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 82b6123a99eb406918708c6bf23b870ef3bc3d79
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500179"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934142"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Informazioni dettagliate sul dashboard - gestione delle minacce e delle vulnerabilità
 

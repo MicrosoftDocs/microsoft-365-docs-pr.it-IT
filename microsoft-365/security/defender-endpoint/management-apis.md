@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862092"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934457"
 ---
 # <a name="overview-of-management-and-apis"></a>Panoramica di gestione e API 
 
@@ -41,7 +41,7 @@ Riconoscendo che gli ambienti e le strutture dei clienti possono variare, Defend
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Onboarding degli endpoint e accesso al portale 
 
-L'onboarding dei dispositivi è completamente integrato in Microsoft Endpoint Manager e Microsoft Intune per i dispositivi client e nel Centro sicurezza Di Azure per i dispositivi server, offrendo un'esperienza end-to-end completa di configurazione, distribuzione e monitoraggio. Inoltre, Microsoft Defender for Endpoint supporta Criteri di gruppo e altri strumenti di terze parti usati per la gestione dei dispositivi.
+L'onboarding dei dispositivi è completamente integrato in Microsoft Endpoint Manager e Microsoft Intune per i dispositivi client e Azure Defender per i dispositivi server, offrendo un'esperienza end-to-end completa di configurazione, distribuzione e monitoraggio. Inoltre, Microsoft Defender for Endpoint supporta Criteri di gruppo e altri strumenti di terze parti usati per la gestione dei dispositivi.
 
 Defender for Endpoint offre un controllo specifico su ciò che gli utenti con accesso al portale possono vedere e fare attraverso la flessibilità del controllo degli accessi in base ai ruoli (RBAC). Il modello RBAC supporta tutte le funzionalità della struttura dei team di sicurezza:
 - Organizzazioni e team di sicurezza distribuiti a livello globale

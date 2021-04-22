@@ -1,7 +1,7 @@
 ---
 title: Migrazione da un gruppo HIPS di terze parti alle regole asr
 description: Descrive come affrontare una migrazione da una soluzione HIPS (Host Intrusion Prevention System) di terze parti alle regole di ripristino dell'accesso alternativo.
-keywords: Regole di riduzione della superficie di attacco, asr, regole asr, hips, sistema di prevenzione delle intrusioni host, regole di protezione, anti-exploit, antiexploit, exploit, prevenzione delle infezioni, Microsoft Defender for Endpoint, Microsoft Defender ATP
+keywords: Regole di riduzione della superficie di attacco, asr, regole asr, fianchi, sistema di prevenzione delle intrusioni host, regole di protezione, anti-exploit, antiexploit, exploit, prevenzione delle infezioni, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 5b2c6c12de7b87a045a81a552e3fe74b4829e94d
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764784"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933782"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migrazione da un gruppo HIPS di terze parti alle regole asr
 
@@ -41,7 +41,7 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Si applica a**- Tutti i processi
 - **Processi**- N/D
 - **Operation**- Registry Modifications
-- **Esempi di file/cartelle, chiavi/valori del Registro di sistema, processi,servizi** -  \Software,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
+- **Esempi di file/cartelle, chiavi/valori del Registro di sistema, processi, servizi** -  \Software,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Regole di riduzione della superficie** di attacco - Le regole asr bloccano le tecniche di attacco e non gli Indicatori di compromissione (IOC). Il blocco di un'estensione di file specifica non è sempre utile, perché non impedisce la compromissione di un dispositivo. Ostacola solo parzialmente un attacco finché gli utenti malintenzionati non creano un nuovo tipo di estensione per il payload.
 - **Altre funzionalità consigliate:** è consigliabile che Microsoft Defender AV sia abilitato, insieme a Cloud Protection e Behavior Analysis. Ti consigliamo di usare una prevenzione aggiuntiva, ad esempio la regola asr "Usare la protezione avanzata contro ransomware". In questo modo si garantisce un maggiore livello di protezione dagli attacchi ransomware. Inoltre, molte di queste chiavi del Registro di sistema vengono monitorate da Microsoft Defender per Endpoint, ad esempio le tecniche ASEP, che attiveranno avvisi specifici. Inoltre, le chiavi del Registro di sistema utilizzate richiedono almeno privilegi di amministratore locale o di programma di installazione attendibile. È consigliabile utilizzare un ambiente bloccato, con almeno account amministrativi o diritti. È possibile abilitare altre configurazioni di sistema, tra cui "Disabilitare SeDebug per i ruoli non necessari" che fanno parte dei consigli di sicurezza più ampi.
 
@@ -50,7 +50,7 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Si applica a**- Programmi non attendibili da USB
 - **Processi -***
 - **Operation**- Process Execution
-- **Esempi di file/cartelle, chiavi/valori del Registro di sistema, processi,servizi:-*
+- **Esempi di file/cartelle, chiavi/valori del Registro di sistema, processi, servizi:-*
 - Regole di riduzione della superficie di attacco **-** Le regole asr dispongono di una regola predefinita per impedire l'avvio di programmi non attendibili e non firmati da unità rimovibili: "Blocca processi non attendibili e non firmati eseguiti da USB", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".
 - **Altre funzionalità consigliate-** Esplorare controlli aggiuntivi per i dispositivi USB e altri supporti rimovibili con Microsoft Defender for Endpoint: Come controllare i dispositivi USB e altri supporti rimovibili con [Microsoft Defender for Endpoint.](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)
 
@@ -59,7 +59,7 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Si applica a**- Mshta
 - **Processi -** mshta.exe
 - **Operation**- Process Execution
-- **Esempi di file/cartelle, chiavi/valori del** Registro di sistema, processi,servizi - powershell.exe, cmd.exe, regsvr32.exe
+- **Esempi di file/cartelle, chiavi/valori** del Registro di sistema, processi, servizi - powershell.exe, cmd.exe, regsvr32.exe
 - **Regole di riduzione della superficie** di attacco- Le regole asr non contengono alcuna regola specifica per impedire ai processi figlio di "mshta.exe". Questo controllo rientra nell'ambito di Protezione da exploit o Windows Defender'applicazione.
 - **Altre funzionalità consigliate:** abilitare Windows Defender controllo dell'applicazione per impedire mshta.exe'esecuzione del tutto. Se l'organizzazione richiede "mshta.exe" per le app line-of-business, configura una regola specifica di Windows Defender Exploit Protection per impedire mshta.exe avviare processi figlio.
 
@@ -68,8 +68,8 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Si applica a**- Outlook
 - **Processi -** outlook.exe
 - **Operation**- Process Execution
-- **Esempi di file/cartelle, chiavi/valori del Registro di sistema, processi,servizi**- powershell.exe
-- Regole di riduzione della superficie di attacco **-** Le regole asr hanno una regola predefinita per impedire alle app di comunicazione di Office (Outlook, Skype e Teams) di avviare processi figlio: "Blocca l'applicazione di comunicazione di Office dalla creazione di processi figlio", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
+- **Esempi di file/cartelle, chiavi/valori del Registro di sistema, processi, servizi**- powershell.exe
+- Regole di riduzione della superficie di attacco **-** Le regole asr dispongono di una regola predefinita per impedire alle app di comunicazione di Office (Outlook, Skype e Teams) di avviare processi figlio: "Blocca l'applicazione di comunicazione di Office dalla creazione di processi figlio", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
 - **Altre funzionalità consigliate:** è consigliabile abilitare la modalità linguaggio vincolato di PowerShell per ridurre al minimo la superficie di attacco da PowerShell.
 
 
@@ -78,7 +78,7 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Si applica a**- Office  
 - **Processi -** winword.exe, powerpnt.exe, excel.exe
 - **Operation**- Process Execution
-- **Esempi di file/cartelle, chiavi/valori** del Registro di sistema, processi,servizi - powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
+- **Esempi di file/cartelle, chiavi/valori** del Registro di sistema, processi, servizi - powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
 - Regole di riduzione della superficie di attacco **:** le regole asr dispongono di una regola predefinita per impedire alle app di Office di avviare processi figlio: "Blocca la creazione di processi figlio da parte di tutte le applicazioni di Office", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
 - **Altre funzionalità consigliate**- N/D
     
@@ -87,7 +87,7 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Si applica a**- Office
 - **Processi -** winword.exe, powerpnt.exe, excel.exe
 - **Operazione**- Creazione file
-- Esempi di file/cartelle, chiavi del Registro di **sistema/valori, processi,servizi**- C:\Users *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop**.exe
+- Esempi di **file/cartelle, chiavi/valori** del Registro di sistema, processi, servizi - C:\Utenti *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop**.exe
 - **Regole di riduzione della superficie di** attacco - N/D.
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>Impedire a Wscript di leggere determinati tipi di file
@@ -137,14 +137,14 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Regole di riduzione della superficie di** attacco - Nel complesso, le regole asr non sono progettate per funzionare come application manager.
 - **Altre funzionalità consigliate:** per impedire agli utenti di avviare processi o programmi specifici, è consigliabile utilizzare Windows Defender Controllo applicazioni. Microsoft Defender for Endpoint File and Cert indicators, può essere usato in uno scenario di risposta a eventi imprevisti (non deve essere visto come un meccanismo di controllo dell'applicazione).
     
-### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>Bloccare le modifiche non autorizzate alle configurazioni av MDATP
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloccare le modifiche non autorizzate alle configurazioni di Microsoft Defender Antivirus
 
 - **Si applica a**- Tutti i processi
 - **Processi -***
 - **Operation**- Registry Modifications
 - Esempi di **file/cartelle, chiavi/valori** del Registro di sistema, processi, servizi - HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring e così via.
 - **Regole di riduzione della** superficie di attacco: le regole asr non coprono questi scenari perché fanno parte della protezione integrata di Microsoft Defender for Endpoint.
-- Altre funzionalità **consigliate-** Protezione da manomissione (consenso esplicito, gestito da Intune) impedisce modifiche non autorizzate alle chiavi del Registro di sistema DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring e DisableIOAVProtection (e altro ancora).
+- Altre funzionalità **consigliate-** Tamper Protection (consenso esplicito, gestito da Intune) impedisce modifiche non autorizzate alle chiavi del Registro di sistema DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring e DisableIOAVProtection (e altro ancora).
 
 Vedere anche
 

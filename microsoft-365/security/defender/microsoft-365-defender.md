@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender
 description: Microsoft 365 Defender è una soluzione di protezione dalle minacce coordinata progettata per proteggere dispositivi, identità, dati e applicazioni
-keywords: introduzione a Microsoft Threat Protection, sicurezza informatica, minacce persistenti avanzate, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, indagini e correzioni automatizzate, ricerca avanzata
+keywords: introduzione a MMicrosoft 365 Defender, sicurezza informatica, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, indagini e correzioni automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 86bc6ef03438b637f62cf0e2a46e418dbea7a3c1
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 32defdf459ec65ba0fd268a5a7c84851e9014efa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650279"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934046"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -92,7 +92,7 @@ Le funzionalità cross-product di Microsoft 365 Defender includono:
 - **Ricerca delle minacce** tra prodotti - I team di sicurezza possono sfruttare le proprie conoscenze organizzative uniche per cercare segni di compromissione creando query personalizzate sui dati non elaborati raccolti dai vari prodotti di protezione. Microsoft 365 Defender fornisce l'accesso basato su query a 30 giorni di segnali non elaborati storici e dati di avviso tra endpoint e dati di Microsoft Defender per Office 365. 
 
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Per iniziare
 I requisiti di licenza di Microsoft 365 Defender devono essere soddisfatti prima di poter abilitare il servizio nel Centro sicurezza Microsoft 365 [in security.microsoft.com](https://security.microsoft.com). Per ulteriori informazioni, leggere:
 - [Requisiti relativi alle licenze](prerequisites.md#licensing-requirements)
 - [Attivare Microsoft 365 Defender](m365d-enable.md)

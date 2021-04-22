@@ -1,6 +1,6 @@
 ---
-title: Visualizzare e organizzare la coda degli avvisi di Microsoft Defender ATP
-description: Informazioni sul funzionamento delle code degli avvisi di Microsoft Defender ATP e su come ordinare e filtrare gli elenchi di avvisi.
+title: Visualizzare e organizzare la coda di Microsoft Defender for Endpoint Alerts
+description: Informazioni sul funzionamento delle code degli avvisi di Microsoft Defender for Endpoint e su come ordinare e filtrare gli elenchi di avvisi.
 keywords: avvisi, code, coda degli avvisi, ordinare, ordinare, filtrare, gestire gli avvisi, nuovi, in corso, risolti, più recenti, tempo in coda, gravità, periodo di tempo, avvisi esperti di minacce Microsoft
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: e1c85db5afac70ec4f2520eed55dcc4f3773fd03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067930"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934334"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Visualizzare e organizzare la coda di Microsoft Defender for Endpoint Alerts
 
@@ -61,7 +61,7 @@ Gravità avviso | Descrizione
 Alto </br>(Rosso) | Avvisi comunemente visualizzati associati a minacce persistenti avanzate (APT). Questi avvisi indicano un rischio elevato a causa della gravità dei danni che possono infliggere ai dispositivi. Alcuni esempi sono: attività degli strumenti di furto di credenziali, attività ransomware non associate ad alcun gruppo, manomissione di sensori di sicurezza o attività dannose indicative di un avversario umano.
 Medio </br>(Arancione) | Avvisi relativi al rilevamento degli endpoint e ai comportamenti di risposta post-violazione che potrebbero far parte di una minaccia persistente avanzata (APT). Ciò include comportamenti osservati tipici delle fasi di attacco, modifiche anomali del Registro di sistema, esecuzione di file sospetti e così via. Anche se alcuni potrebbero essere parte dei test di sicurezza interni, richiede un'indagine perché potrebbe anche essere parte di un attacco avanzato.
 Basso </br>(Giallo) | Avvisi sulle minacce associate al malware prevalente. Ad esempio, strumenti di hacking, strumenti di hacking non malware, come l'esecuzione di comandi di esplorazione, la cancellazione dei registri e così via, che spesso non indicano una minaccia avanzata per l'organizzazione. Potrebbe anche derivare da un test isolato degli strumenti di sicurezza da parte di un utente dell'organizzazione.
-Informativo </br>(Grigio) | Avvisi che potrebbero non essere considerati dannosi per la rete, ma che possono aumentare la consapevolezza della sicurezza dell'organizzazione su potenziali problemi di sicurezza.
+Informativa </br>(Grigio) | Avvisi che potrebbero non essere considerati dannosi per la rete, ma che possono aumentare la consapevolezza della sicurezza dell'organizzazione su potenziali problemi di sicurezza.
 
 #### <a name="understanding-alert-severity"></a>Informazioni sulla gravità degli avvisi
 
@@ -111,7 +111,7 @@ Nella tabella seguente sono elencate le categorie correnti e il modo in cui veng
 
 Corrisponde allo stato di analisi automatica.
 
-### <a name="category"></a>Category
+### <a name="category"></a>Categoria
 
 È possibile scegliere di filtrare la coda per visualizzare tipi specifici di attività dannose.
 

@@ -1,7 +1,7 @@
 ---
-title: Risolvere i problemi relativi al servizio Microsoft Defender for Endpoint
+title: Risolvere i problemi del servizio di Microsoft Defender per endpoint
 description: Trovare soluzioni e soluzioni alternative a problemi noti, ad esempio errori del server quando si tenta di accedere al servizio.
-keywords: risolvere i problemi di microsoft Defender per l'endpoint, risolvere i problemi di Windows ATP, errore del server, accesso negato, credenziali non valide, nessun dato, portale dashboard, consenti, visualizzatore eventi
+keywords: risolvere i problemi di Microsoft Defender per Endpoint, errore del server, accesso negato, credenziali non valide, nessun dato, portale dashboard, consenti, visualizzatore eventi
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186018"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933758"
 ---
-# <a name="troubleshoot-service-issues"></a>Risolvere i problemi relativi ai servizi
+# <a name="troubleshoot-service-issues"></a>Risolvere i problemi dei servizi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -80,7 +80,7 @@ Il supporto dell'utilizzo della virgola come separatore nei numeri non è suppor
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Il tenant di Microsoft Defender for Endpoint è stato creato automaticamente in Europa
-Quando si utilizza il Centro sicurezza di Azure per monitorare i server, viene creato automaticamente un tenant di Microsoft Defender for Endpoint. I dati di Microsoft Defender for Endpoint sono archiviati in Europa per impostazione predefinita.
+Quando si usa Azure Defender per monitorare i server, viene creato automaticamente un tenant di Microsoft Defender for Endpoint. I dati di Microsoft Defender for Endpoint sono archiviati in Europa per impostazione predefinita.
 
 
 

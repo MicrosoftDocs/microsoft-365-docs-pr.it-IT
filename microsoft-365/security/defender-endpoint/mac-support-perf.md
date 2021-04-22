@@ -1,7 +1,7 @@
 ---
 title: Risolvere i problemi di prestazioni per Microsoft Defender per Endpoint in macOS
 description: Risolvere i problemi di prestazioni in Microsoft Defender per Endpoint in macOS.
-keywords: microsoft, defender, atp, mac, prestazioni
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, prestazioni
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698221"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934250"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Risolvere i problemi di prestazioni per Microsoft Defender per Endpoint in macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51698221"
 
 **Si applica a:**
 
-- [Microsoft Defender per Endpoint in macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender per endpoint su macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -66,7 +66,7 @@ I passaggi seguenti possono essere utilizzati per risolvere e attenuare questi p
 
 2. Apri il Finder e passa a **Utilità**  >  **applicazioni.** Aprire **Monitoraggio attività** e analizzare le applicazioni che utilizzano le risorse del sistema. Esempi tipici sono gli aggiornamenti software e i compilatori.
 
-1. Per trovare le applicazioni che attivano il maggior numero di analisi, puoi usare le statistiche in tempo reale raccolte da Defender per Endpoint per Mac.
+1. Per trovare le applicazioni che attivano il maggior numero di analisi, puoi usare le statistiche in tempo reale raccolte da Defender per Endpoint su Mac.
 
       > [!NOTE]
       > Questa funzionalità è disponibile nella versione 100.90.70 o successiva.

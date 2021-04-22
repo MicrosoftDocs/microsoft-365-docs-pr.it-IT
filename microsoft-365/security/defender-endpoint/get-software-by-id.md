@@ -1,7 +1,7 @@
 ---
-title: Ottenere il software in base all'ID
+title: Ottenere il software per Id
 description: Recupera un elenco di punteggi di esposizione per gruppo di dispositivi.
-keywords: api, api del grafico, api supportate, get, software, mdatp tvm api
+keywords: api, api graph, api supportate, get, software, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 57d6ccd2c5387d478b75cfb6fb32a5b1052e491c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 31203e83570dbeb2404c9f1578301b5d6c18223c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198590"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934310"
 ---
-# <a name="get-software-by-id"></a>Ottenere il software in base all'ID
+# <a name="get-software-by-id"></a>Ottenere il software per Id
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

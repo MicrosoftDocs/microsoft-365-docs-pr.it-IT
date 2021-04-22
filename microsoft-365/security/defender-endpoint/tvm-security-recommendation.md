@@ -1,7 +1,7 @@
 ---
 title: Consigli sulla sicurezza per gestione delle minacce e delle vulnerabilità
 description: Ottenere consigli sulla sicurezza utilizzabili in base alle minacce, alle probabilità di violazione e al valore, nella gestione delle minacce e delle vulnerabilità.
-keywords: gestione delle minacce e delle vulnerabilità, raccomandazione sulla sicurezza mdatp tvm, raccomandazione sulla sicurezza informatica, raccomandazione per la sicurezza utilizzabile
+keywords: gestione delle minacce e delle vulnerabilità, raccomandazione sulla sicurezza di Microsoft Defender for Endpoint tvm, raccomandazione sulla sicurezza informatica, raccomandazione per la sicurezza utilizzabile
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97d496271c1ef7185419f7d39956da0429f070aa
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: af22bac911339de9c2e02df24a77c1889a33d43a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500483"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933734"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Suggerimenti per la sicurezza - Gestione delle minacce e delle vulnerabilità
 

@@ -1,7 +1,7 @@
 ---
 title: Gestione di minacce e vulnerabilità
 description: Questa nuova funzionalità usa un approccio basato sul rischio che cambia il gioco per l'individuazione, la definizione delle priorità e la correzione delle vulnerabilità degli endpoint e delle configurazioni erre.
-keywords: gestione delle vulnerabilità &, gestione delle minacce e delle vulnerabilità, MDATP TVM, MDATP-TVM, gestione delle vulnerabilità, valutazione delle vulnerabilità, analisi delle minacce e vulnerabilità, valutazione della configurazione sicura, microsoft defender per endpoint, microsoft defender atp, vulnerabilità degli endpoint, generazione successiva
+keywords: gestione delle & delle vulnerabilità, gestione delle minacce e delle vulnerabilità, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestione delle vulnerabilità, valutazione delle vulnerabilità, analisi delle minacce e vulnerabilità, valutazione della configurazione sicura, Microsoft Defender for Endpoint, vulnerabilità degli endpoint, generazione successiva
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: e9c575aa8968b8cab2c5d91b9fe0b1cb46b292d3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 474b8f032d32668eaea3a477da013c2b8e74019b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860762"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934166"
 ---
 # <a name="threat-and-vulnerability-management"></a>Gestione di minacce e vulnerabilità
 
