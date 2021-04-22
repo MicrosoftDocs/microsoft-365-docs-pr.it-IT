@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 Piano 2. Il filtro dei tag è disponibile tra avvisi, report e indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti con tag.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c439dcb91831475bc10da4a01d0fa29e7aae359
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632203"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943012"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
@@ -49,6 +49,9 @@ Dopo aver applicato tag di sistema o tag personalizzati agli utenti, è possibil
 In questo articolo viene illustrato come configurare i tag utente nel Centro sicurezza & conformità. Non sono disponibili cmdlet nel Centro sicurezza & conformità per gestire i tag utente.
 
 Per informazioni su come i tag utente fanno parte della strategia per proteggere gli account utente ad alto impatto, vedere Consigli per la sicurezza per gli account con priorità [in Microsoft 365.](security-recommendations-for-priority-accounts.md)
+
+> [!NOTE]
+> Se si utilizza il Centro sicurezza Microsoft 365 unificato, è possibile impostare i tag qui: https://security.microsoft.com/userTags .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 

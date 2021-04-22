@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f9bb0690cf48c4cc694c0d563ba7d4203953358a
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939265"
+ms.locfileid: "51943054"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Panoramica del Centro sicurezza Microsoft 365 unificato
 
@@ -50,6 +50,9 @@ Se sono necessarie informazioni sulle modifiche dal Centro sicurezza & e conform
 
 - [Defender per Office 365 nel Centro sicurezza Microsoft 365](microsoft-365-security-center-mdo.md)
 - [Defender per endpoint nel Centro sicurezza Microsoft 365](microsoft-365-security-center-mde.md)
+
+> [!NOTE]
+> Il portale di sicurezza di Microsoft 365 usa e applica l'accesso basato sui ruoli esistenti e sposta ogni modello di sicurezza nel portale unificato. Ogni carico di lavoro convergente (ad esempio MDO o MDE) dispone di un proprio accesso basato sui ruoli. I ruoli già presenti nei prodotti verranno convergenti automaticamente nel portale di sicurezza di Microsoft 365. Tuttavia, i ruoli e le autorizzazioni per MCAS verranno comunque gestiti in MCAS.
 
 ## <a name="what-to-expect"></a>Cosa aspettarsi
 

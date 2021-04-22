@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -18,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935138"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51942994"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Valutare Microsoft Defender per Office 365
 
@@ -32,11 +33,14 @@ ms.locfileid: "51935138"
 > [!IMPORTANT]
 > La valutazione di Microsoft Defender per Office 365 è in anteprima pubblica. Questa versione di anteprima viene fornita senza un contratto di servizio. Alcune funzionalità potrebbero non essere supportate o avere funzionalità vincolate.
 
-L'esecuzione di una valutazione completa del prodotto per la sicurezza può aiutare a prendere decisioni informate su aggiornamenti e acquisti. Aiuta a provare le funzionalità del prodotto di sicurezza per valutare in che modo può aiutare il team delle operazioni di sicurezza nelle attività quotidiane.
+L'esecuzione di una valutazione approfondita del prodotto per la sicurezza può aiutare a prendere decisioni informate su aggiornamenti e acquisti. Aiuta a provare le funzionalità del prodotto di sicurezza per valutare in che modo può aiutare il team delle operazioni di sicurezza nelle attività quotidiane.
 
 L'esperienza di valutazione di [Microsoft Defender per Office 365](defender-for-office-365.md) è progettata per eliminare le complessità della configurazione di dispositivi e ambienti, in modo da concentrarsi sulla valutazione delle funzionalità di Microsoft Defender per Office 365. Con la modalità di valutazione, tutti i messaggi inviati alle cassette postali di Exchange Online possono essere valutati senza puntare i record MX a Microsoft. La funzionalità si applica solo alla protezione della posta elettronica e non ai client di Office come Word, SharePoint o Teams.
 
 Se non si dispone già di una licenza che supporta Microsoft Defender per Office 365, è possibile avviare una valutazione gratuita di [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) giorni e testare le funzionalità nel Centro sicurezza & e conformità di Office 365 ( https://protection.office.com/homepage) . Ti piacerà la configurazione rapida e puoi disattivarla facilmente se necessario.
+
+> [!NOTE]
+> Se si è nel portale di sicurezza unificato di Microsoft 365 (security.microsoft.com), è possibile avviare una valutazione di Defender per Office 365 qui: Email & Collaboration > Policies & Rules > Threat Policies > Additional Policies.
 
 ## <a name="how-the-evaluation-works"></a>Funzionamento della valutazione
 
