@@ -1,7 +1,7 @@
 ---
 title: Analizzare gli avvisi in Microsoft 365 Defender
 description: Analizzare gli avvisi visualizzati su dispositivi, utenti e cassette postali.
-keywords: eventi, avvisi, analisi, correlazione, attacco, computer, dispositivi, utenti, identità, cassetta postale, posta elettronica, 365, Microsoft, M365
+keywords: incidenti, avvisi, analizzare, analizzare, risposta, correlazione, attacco, computer, dispositivi, utenti, identità, identità, identità, cassetta postale, posta elettronica, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862007"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939543"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>Analizzare gli avvisi in Microsoft 365 Defender
+# <a name="analyze-alerts-in-microsoft-365-defender"></a>Analizzare gli avvisi in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -134,12 +134,12 @@ L'elenco delle azioni aggiuntive dipende dal tipo di avviso.
 
 ## <a name="resolve-an-alert"></a>Risolvere un avviso
 
-Una volta completata l'analisi di un avviso e  può essere risolto, passare al  riquadro Gestisci avviso per l'avviso e contrassegnarlo come Risolto e classificarlo come **avviso False** o **True.** Per gli avvisi veri, specificare il tipo di minaccia dell'avviso nel **campo Determinazione.**
+Una volta completata l'analisi di un avviso e  può essere risolto, passare al riquadro  Gestisci avviso per l'avviso e contrassegnarlo come Risolto e classificarlo come avviso **False** o **True.** Per gli avvisi veri, specificare il tipo di minaccia dell'avviso nel **campo Determinazione.**
 
 Classificare gli avvisi e specificarne la determinazione aiuta a ottimizzare Microsoft 365 Defender per fornire avvisi più veri e meno falsi.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
-- [Indagare sugli eventi imprevisti](investigate-incidents.md)
-- [Gestire gli eventi imprevisti](manage-incidents.md)
+- [Gestire gli incidenti](manage-incidents.md)
+- [Analizzare gli eventi imprevisti](investigate-incidents.md)

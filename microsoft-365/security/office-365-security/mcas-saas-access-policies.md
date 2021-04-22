@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 61509c88ea2289509abd5ec7b6c0dcd54395d5f0
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 414d6ae0586078551c737e45763ea665d5eec4e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599972"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939555"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>Criteri di Microsoft Cloud App Security consigliati per le app SaaS
 Microsoft Cloud App Security si basa sui criteri di accesso condizionale di Azure AD per abilitare il monitoraggio e il controllo in tempo reale delle azioni granulari con le app SaaS, ad esempio bloccando download, caricamenti, copia e incolla e stampa. Questa funzionalità aggiunge sicurezza alle sessioni che comportano rischi intrinseci, ad esempio quando si accede alle risorse aziendali da dispositivi non gestiti o da utenti guest.

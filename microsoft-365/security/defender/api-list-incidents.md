@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4488a552475121adc4a439106bc0bf0d97cb509a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7fb0de4f8dc67331e7acca59e70d061fe7c19493
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062042"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935738"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API di elenchi di eventi imprevisti in Microsoft 365 Defender
 
@@ -126,7 +126,7 @@ firstActivity | Ora in cui l'avviso ha segnalato per la prima volta che l'attivi
 title | Breve valore stringa di identificazione disponibile per ogni avviso. | Attività ransomware
 descrizione | Valore stringa che descrive ogni avviso. | L'utente Test User2 (testUser2@contoso.com) ha modificato 99 file con più estensioni che terminano con l'estensione non comune *herunterladen*. Si tratta di un numero insolito di manipolazioni di file ed è indicativo di un potenziale attacco ransomware.
 category | Visual and numeric view of how far the attack has progressed along the kill chain. Allineato al framework [MITRE ATT&CK™](https://attack.mitre.org/). | Impatto
-status | Categorizzare gli avvisi *(come Nuovo,* *Attivo* o *Risolto).* Può essere utile per organizzare e gestire la risposta agli avvisi. | Nuova
+status | Categorizzare gli avvisi *(come Nuovo,* *Attivo* o *Risolto).* Può essere utile per organizzare e gestire la risposta agli avvisi. | Nuovo
 gravità | Indica il possibile impatto sulle risorse. Maggiore è la gravità, maggiore sarà l'impatto. In genere, gli elementi di gravità superiore richiedono l'attenzione più immediata.<br>Uno dei valori seguenti: *Informational,* *Low,**Medium e *High.* | Medio
 investigationId | ID dell'indagine automatizzata attivato da questo avviso. | 1234
 investigationState | Informazioni sullo stato corrente dell'indagine. Uno dei valori seguenti: *Unknown,* *Terminated,* *SuccessfullyRemediated,* *Benign,* *Failed,* *PartiallyRemediated,* *Running,* *PendingApproval,* *PendingResource,* *PartiallyInvestigated,* *TerminatedByUser,* *TerminatedBySystem,* *Queued,* *InnerFailure,* *PreexistingAlert,* *UnsupportedOs,* *UnsupportedAlertType,* *SuppressedAlert.* | UnsupportedAlertType
@@ -142,7 +142,7 @@ dispositivi | Tutti i dispositivi in cui sono stati inviati avvisi relativi all'
 
 Nome del campo | Descrizione | Valore di esempio
 -|-|-
-DeviceId | ID dispositivo designato in Microsoft Defender ATP. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+DeviceId | ID dispositivo designato in Microsoft Defender for Endpoint. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  ID dispositivo designato in [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-whatis) Disponibile solo per i dispositivi aggiunti a un dominio. | null
 deviceDnsName | Nome di dominio completo per il dispositivo. | user5cx.middleeast.corp.contoso.com
 osPlatform | Piattaforma del sistema operativo in esecuzione nel dispositivo.| WindowsServer2016
@@ -157,7 +157,7 @@ entità | Tutte le entità identificate come parte o correlate a un determinato 
 
 Nome del campo | Descrizione | Valore di esempio
 -|-|-
-entityType | Entità identificate come parte o correlate a un determinato avviso.<br>I valori delle proprietà sono: *User,* *Ip,* *Url,* *File,* *Process,* *MailBox,* *MailMessage,* *MailCluster,* *Registry* | User
+entityType | Entità identificate come parte o correlate a un determinato avviso.<br>I valori delle proprietà sono: *User,* *Ip,* *Url,* *File,* *Process,* *MailBox,* *MailMessage,* *MailCluster,* *Registry* | Utente
 sha1 | Disponibile se entityType è *File*.<br>Hash del file per gli avvisi associati a un file o a un processo. | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
 sha256 | Disponibile se entityType è *File*.<br>Hash del file per gli avvisi associati a un file o a un processo. | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 fileName | Disponibile se entityType è *File*.<br>Nome file per gli avvisi associati a un file o a un processo | Detector.UnitTests.dll

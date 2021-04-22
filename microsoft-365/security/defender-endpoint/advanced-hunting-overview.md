@@ -1,7 +1,7 @@
 ---
 title: Panoramica della ricerca avanzata in Microsoft Defender for Endpoint
 description: Usare le funzionalità di ricerca delle minacce in Microsoft Defender for Endpoint per creare query che rilevano minacce e punti deboli nella rete
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft Defender for Endpoint, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, fuso orario, UTC
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, mdatp, microsoft defender atp, microsoft defender per endpoint, wdatp, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, fuso orario, UTC
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 114c0192f77411016fcb13ec2b912f4440ffa6e0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 906ae4bdebcc46e210fa9c5dcb5387c880fdbb38
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934358"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939661"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Ricerca proattiva di minacce con ricerca avanzata
 

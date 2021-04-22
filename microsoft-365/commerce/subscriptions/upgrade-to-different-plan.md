@@ -20,19 +20,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come eseguire l'aggiornamento a un piano diverso.
-ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580979"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939173"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
 
 Quando l'azienda cambia o sono necessarie altre funzionalità, è possibile aggiornare i piani. Il modo più semplice per eseguire questa operazione è usare la **scheda Aggiornamento** nell'interfaccia di amministrazione. Tuttavia, **l'utilizzo della scheda** Aggiornamento non è supportato in tutte le situazioni. In alcuni casi, potrebbe essere possibile modificare i piani manualmente.
-
-> [!NOTE]
-> Questo articolo si applica alla nuova interfaccia di amministrazione. Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page. Per visualizzare l'articolo sulla vecchia interfaccia di amministrazione, vedere [Passare a un piano di Microsoft 365 per le aziende diverso.](switch-to-a-different-plan.md)
 
 ## <a name="use-the-upgrade-tab"></a>Utilizzare la scheda Aggiornamento
 

@@ -1,7 +1,7 @@
 ---
 title: Gestire gli eventi imprevisti in Microsoft 365 Defender
 description: Informazioni su come assegnare, aggiornare lo stato,
-keywords: evento imprevisto, eventi imprevisti, avvisi, avvisi correlati, assegnare, aggiornare, stato, gestire, classificazione, microsoft, 365, M365
+keywords: incidente, incidenti, analizzare, risposta, avvisi, avvisi correlati, assegnare, aggiornare, stato, gestire, classificazione, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861732"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939755"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gestire gli eventi imprevisti in Microsoft 365 Defender
 
@@ -61,7 +61,7 @@ Ecco i modi in cui è possibile gestire gli eventi imprevisti:
 - Riquadro Proprietà di un evento imprevisto nella coda degli eventi imprevisti.
 - **Pagina di** riepilogo di un evento imprevisto.
 
-Nei casi in cui, durante l'analisi, si desidera spostare gli avvisi  da un evento imprevisto a un altro, è possibile farlo anche dalla scheda Avvisi, creando così un evento imprevisto più grande o più piccolo che include tutti gli avvisi rilevanti.
+Nei casi in cui, durante l'analisi, si desidera spostare gli avvisi  da un evento imprevisto a un altro, è possibile farlo anche dalla scheda Avvisi, creando così un evento imprevisto più grande o più piccolo che include tutti gli avvisi pertinenti.
 
 ## <a name="edit-the-incident-name"></a>Modificare il nome dell'evento imprevisto
 
@@ -102,4 +102,4 @@ Se si tratta di un avviso vero, è necessario specificare anche il tipo di minac
 
 - [Panoramica sugli incidenti](incidents-overview.md)
 - [Assegnare priorità agli incidenti](incident-queue.md)
-- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+- [Analizzare gli eventi imprevisti](investigate-incidents.md)

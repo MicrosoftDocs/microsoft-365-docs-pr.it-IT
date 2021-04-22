@@ -1,7 +1,7 @@
 ---
 title: Modifiche di denominazione nello schema di ricerca avanzata di Microsoft 365 Defender
 description: Tenere traccia e rivedere le tabelle e le colonne delle modifiche di denominazione nello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, dati, modifiche di denominazione, rinominare, Microsoft Threat Protection
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, dati, modifiche di denominazione, rinominare
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ab6bdefb457fb31df98d829ee801b72f4c8ae70a
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 22d26dac6b7ee502d6934349d22b1d40532f575f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499696"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935774"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema di ricerca avanzata - Modifiche di denominazione
 
@@ -62,7 +62,7 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 | `DetectionSource` | CustomerTI |  Ti personalizzato | Rebranding |
 | `DetectionSource` | OfficeATP | Microsoft Defender per Office 365 | Rebranding |
 | `DetectionSource` | MTP   | Microsoft 365 Defender | Rebranding |
-| `DetectionSource` | AzureATP |    Che cosa è Microsoft Defender per identità? | Rebranding |
+| `DetectionSource` | AzureATP |    Microsoft Defender per identità | Rebranding |
 | `DetectionSource` | CustomDetection   | Rilevamento personalizzato | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Indagine automatizzata | Rebranding |
 | `DetectionSource` | ThreatExperts | Microsoft Threat Experts | Rebranding |
@@ -70,7 +70,7 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 | `ServiceSource` | Microsoft Defender ATP| Microsoft Defender per endpoint | Rebranding |
 |`ServiceSource` |Microsoft Threat Protection   | Microsoft 365 Defender | Rebranding |
 | `ServiceSource` | Office 365 ATP  |Microsoft Defender per Office 365 | Rebranding |
-| `ServiceSource` |Azure ATP    |Che cosa è Microsoft Defender per identità? | Rebranding |
+| `ServiceSource` |Azure ATP    |Microsoft Defender per identità | Rebranding |
 
 `DetectionSource`è disponibile nella [tabella AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`è disponibile nelle [tabelle AlertEvidence](advanced-hunting-alertevidence-table.md) [e AlertInfo.](advanced-hunting-alertinfo-table.md) 
 
@@ -106,4 +106,4 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
-- [Comprensione dello schema](advanced-hunting-schema-tables.md)
+- [Comprendere lo schema](advanced-hunting-schema-tables.md)

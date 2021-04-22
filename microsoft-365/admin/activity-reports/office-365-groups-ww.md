@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Ottenere un report sui gruppi di Microsoft 365 per conoscere i gruppi e le relative attività.
-ms.openlocfilehash: fd3aa664b5a40bb5fffe0ed23e07ba6f1a5907c2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579567"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939231"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Gruppi di Microsoft 365
 
@@ -66,3 +66,8 @@ Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <
 |Membri  <br/> |Numero di membri del gruppo.  <br/> |
 |Membri esterni |Numero di utenti esterni nel gruppo.|
 |||
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Report di Microsoft 365 nell'interfaccia](activity-reports.md) di amministrazione (articolo) Report nel Centro sicurezza [&](../../compliance/reports-in-security-and-compliance.md) conformità (articolo) [Report di Microsoft 365](../../admin/activity-reports/active-users-ww.md) nell'interfaccia di amministrazione - Utenti attivi (articolo)
+

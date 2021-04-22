@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Ottenere un report sui gruppi di Microsoft 365 per conoscere i gruppi e le relative attività.
-ms.openlocfilehash: 9ab034531099b5572c42eb3a48ec28d99487ac99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d123e3beb55ba6e636084fabe995f4dd0ff56707
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579555"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939139"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Gruppi di Microsoft 365
 
@@ -60,4 +60,5 @@ Il **dashboard** dei report di Microsoft 365 mostra la panoramica delle attivit�
 |10,  <br/> |Selezionare o toccare **Il pulsante** Altre azioni OWA altre azioni accanto a un'intestazione di colonna per aggiungere o rimuovere colonne ![ dal ](../../media/80044eef-2368-4c7e-8d31-7155b029e0cf.png) report.  <br/> ![Report Gruppi - Scegliere le colonne](../../media/d7fb95d6-2a2e-4144-b80d-581223e48043.png)|
 |11,  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il **collegamento Esporta.** Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> |
 |||
-   
+
+

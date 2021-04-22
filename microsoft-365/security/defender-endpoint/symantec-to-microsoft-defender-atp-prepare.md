@@ -1,7 +1,7 @@
 ---
 title: Da Symantec a Microsoft Defender per endpoint - Fase 1, Preparazione
 description: Questa è la fase 1, Preparare, della migrazione da Symantec a Microsoft Defender per Endpoint.
-keywords: migrazione, windows defender advanced threat protection, atp, edr
+keywords: migrazione, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 8c8f91448415bc1e9490706ee23bd8cae7f51a63
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 03bc323958ffbf027a25290bb61bc82307d937a8
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698245"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935906"
 ---
 # <a name="migrate-from-symantec---phase-1-prepare-for-your-migration"></a>Eseguire la migrazione da Symantec - Fase 1: preparare la migrazione
 

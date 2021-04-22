@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender per Endpoint su Linux
 ms.reviewer: ''
-description: Descrive come installare e usare Microsoft Defender per Endpoint per Linux.
-keywords: microsoft, defender, atp, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+description: Descrive come installare e usare Microsoft Defender per Endpoint in Linux.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861396"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935942"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender per Endpoint su Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "51861396"
 Questo argomento descrive come installare, configurare, aggiornare e usare Microsoft Defender per Endpoint in Linux.
 
 > [!CAUTION]
-> L'esecuzione di altri prodotti di protezione degli endpoint di terze parti insieme a Microsoft Defender for Endpoint su Linux può causare problemi di prestazioni ed effetti collaterali imprevedibili. Se la protezione degli endpoint non Microsoft è un requisito assoluto nell'ambiente, è comunque possibile sfruttare in modo sicuro la funzionalità Defender for Endpoint for Linux EDR dopo aver configurato la funzionalità antivirus per l'esecuzione in [modalità passiva.](linux-preferences.md#enable--disable-passive-mode)
+> L'esecuzione di altri prodotti di protezione degli endpoint di terze parti insieme a Microsoft Defender for Endpoint su Linux può causare problemi di prestazioni ed effetti collaterali imprevedibili. Se la protezione degli endpoint non Microsoft è un requisito assoluto nell'ambiente, è comunque possibile sfruttare in modo sicuro la funzionalità Defender for Endpoint on Linux EDR dopo aver configurato la funzionalità antivirus per l'esecuzione in [modalità passiva.](linux-preferences.md#enable--disable-passive-mode)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Come installare Microsoft Defender per Endpoint in Linux
 
@@ -80,10 +80,10 @@ Se si verificano errori di installazione, fare riferimento a Risoluzione dei pro
 - Versione kernel minima 3.10.0-327
 - `fanotify`L'opzione kernel deve essere abilitata
   > [!CAUTION]
-  > L'esecuzione di Defender per Endpoint per Linux affiancata ad altre soluzioni di sicurezza basate su base non `fanotify` è supportata. Può portare a risultati imprevedibili, tra cui l'sospensione del sistema operativo.
+  > L'esecuzione di Defender per Endpoint su Linux affiancata ad altre soluzioni di sicurezza basate su base non `fanotify` è supportata. Può portare a risultati imprevedibili, tra cui l'sospensione del sistema operativo.
 
 - Spazio su disco: 1 GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon richiede l'autorizzazione eseguibile. Per ulteriori informazioni, vedere "Verificare che il daemon abbia l'autorizzazione eseguibile" in Risolvere i problemi di installazione di [Microsoft Defender per Endpoint per Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+- /opt/microsoft/mdatp/sbin/wdavdaemon richiede l'autorizzazione eseguibile. Per ulteriori informazioni, vedere "Verificare che il daemon abbia l'autorizzazione eseguibile" in Risolvere i problemi di installazione di [Microsoft Defender per Endpoint su Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
 - Memoria: 1 GB
     > [!NOTE]
     > Assicurati di avere spazio libero su disco in /var.

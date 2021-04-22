@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Informazioni su come ottenere una versione di valutazione gratuita o acquistare un abbonamento per Microsoft 365 per le aziende.
 ms.date: 08/07/2020
-ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 505ce060b9b40d72a54adbfffbcb2b3cf47a66e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576902"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939185"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Provare o acquistare un abbonamento a Microsoft 365 per le aziende
 
@@ -32,6 +32,16 @@ Microsoft 365 per le aziende è un servizio di sottoscrizione che consente di es
 
 > [!NOTE]
 > È necessario utilizzare una carta di credito quando si effettua la registrazione per una versione di valutazione gratuita. Al termine del periodo di valutazione gratuito, l'abbonamento di valutazione viene convertito automaticamente in un abbonamento a pagamento. La carta di credito non viene fatturata fino alla fine del periodo di prova.
+
+
+::: moniker region="o365-21vianet"
+
+> [!IMPORTANT]
+> **Opzioni di pagamento per Office 365 gestito da 21Vianet in Cina** Le carte di credito internazionali non sono accettate. È possibile pagare l'abbonamento tramite:
+> - Fattura
+> - Il pagamento online con Alipay o China UnionPay La prova di pagamento verrà fornita sotto forma di Fapiaos. Puoi inviare la richiesta Fapiao al nostro sistema [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) circa tre (3) giorni dopo aver pagato. Per ulteriori informazioni, vedere [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+::: moniker-end
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 

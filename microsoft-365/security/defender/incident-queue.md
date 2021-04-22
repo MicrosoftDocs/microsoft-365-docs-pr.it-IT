@@ -1,7 +1,7 @@
 ---
 title: Assegnare priorità agli incidenti in Microsoft 365 Defender
 description: Informazioni su come filtrare gli eventi imprevisti dalla coda degli eventi imprevisti in Microsoft 365 Defender
-keywords: evento imprevisto, coda, panoramica, dispositivi, identità, utenti, cassetta postale, posta elettronica, eventi imprevisti
+keywords: incidente, coda, panoramica, dispositivi, identità, utenti, cassetta postale, posta elettronica, eventi imprevisti, analizzare, risposta
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887258"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939707"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli incidenti in Microsoft 365 Defender
 
@@ -81,45 +81,11 @@ In questa tabella sono elencati i nomi dei filtri disponibili.
 | Stato | Puoi scegliere di limitare l'elenco degli eventi imprevisti visualizzati in base al loro stato per vedere quali sono attivi o risolti. |
 |||
 
-## <a name="incident-response-workflow"></a>Flusso di lavoro di risposta agli eventi imprevisti
-
-Ecco il flusso di lavoro tipico per rispondere agli eventi imprevisti:
-
-1. Identificare e individuare gli incidenti con la priorità più alta per l'indagine e la risoluzione.
-2. Per ogni incidente ad alta priorità, avviare [un'indagine:](investigate-incidents.md)
-
-   a. Visualizzare il riepilogo dell'evento imprevisto per comprendere l'ambito e la gravità e le entità interessate **(scheda** Riepilogo).
-
-   b. Iniziare a visualizzare gli avvisi per comprenderne l'origine, l'ambito e la gravità **(scheda** Avvisi).
-
-   c. In base alle esigenze, raccogliere informazioni sui dispositivi, gli utenti e le cassette postali influenzati (le schede **Dispositivi,** **Utenti** e **Cassette** postali).
-
-   d. Scopri come Microsoft 365 Defender ha risolto automaticamente alcuni avvisi **(scheda** Indagini).
-   
-   e. Se necessario, usare le informazioni nel set di dati per l'evento imprevisto per ulteriori informazioni (scheda **Prova e** risposta).
-
-   Durante l'analisi, è necessario preoccuparsi di:
-
-   - Containment: riduzione di qualsiasi ulteriore impatto sul tenant.
-   - Eliminazione: rimozione della minaccia alla sicurezza.
-   - Ripristino: ripristino delle risorse del tenant allo stato in cui si trovavano prima dell'evento imprevisto.
-
-3. Dopo aver risolto l'evento imprevisto, eseguire le operazioni seguenti:
-
-   - Comprendere il tipo di attacco e il relativo impatto.
-   - Ricercare l'attacco nella community di sicurezza per una tendenza di attacco alla sicurezza.
-   - Richiamare il flusso di lavoro utilizzato per risolvere l'evento imprevisto e aggiornare i flussi di lavoro e i playbook standard in base alle esigenze.
-   - Determinare se sono necessarie modifiche alla sicurezza ed eseguire le operazioni necessarie per implementarle.
-
-Ecco un riepilogo del processo di base.
-
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="Processo di base per l'analisi degli incidenti":::
-
 ## <a name="next-step"></a>Passaggio successivo
 
-Dopo aver determinato quale evento imprevisto richiede la priorità più alta, selezionarlo e avviare [l'indagine.](investigate-incidents.md)
+Dopo aver determinato quale evento imprevisto richiede la priorità più alta, selezionarlo e iniziare [l'analisi.](investigate-incidents.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
-- [Indagare sugli eventi imprevisti](investigate-incidents.md)
-- [Gestire gli eventi imprevisti](manage-incidents.md)
+- [Analizzare gli eventi imprevisti](investigate-incidents.md)
+- [Gestire gli incidenti](manage-incidents.md)

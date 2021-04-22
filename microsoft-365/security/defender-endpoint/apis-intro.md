@@ -2,7 +2,7 @@
 title: Accedere a API di Microsoft Defender per endpoint .
 ms.reviewer: ''
 description: Informazioni su come usare le API per automatizzare i flussi di lavoro e innovare in base alle funzionalità di Microsoft Defender for Endpoint
-keywords: api, api, Microsoft Defender for Endpoint, api aperte, Api Microsoft Defender for Endpoint, api pubbliche, api supportate, avvisi, dispositivo, utente, dominio, ip, file, ricerca avanzata, query
+keywords: api, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, api pubbliche, api supportate, avvisi, dispositivo, utente, dominio, ip, file, ricerca avanzata, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87dce8ff4fde505eb8d4e458c8d9fb56556f4d78
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 843bd953b97f29a5b9c80fc44a9b19fae60a6fa7
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935107"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939767"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Accedere a API di Microsoft Defender per endpoint . 
 

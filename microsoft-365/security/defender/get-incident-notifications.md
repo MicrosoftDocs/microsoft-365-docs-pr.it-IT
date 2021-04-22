@@ -1,7 +1,7 @@
 ---
-title: Ricevere notifiche di eventi imprevisti in Microsoft 365 Defender
+title: Ricevere notifiche di eventi imprevisti tramite posta elettronica in Microsoft 365 Defender
 description: Informazioni su come creare regole per ricevere notifiche tramite posta elettronica per eventi imprevisti in Microsoft 365 Defender
-keywords: incident, email, email notfications, configure, users, mailbox, email, incidents
+keywords: incident, email, email notfications, configure, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72a1f8fe71efcfa7f4f73671611576a454b508e6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861318"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939719"
 ---
 # <a name="get-incident-notifications-by-email"></a>Ricevere notifiche di eventi imprevisti tramite posta elettronica
 
@@ -43,7 +43,7 @@ Puoi configurare Microsoft 365 Defender per informare il personale con un messag
 - Gruppo di dispositivi.
 - Solo al primo aggiornamento per evento imprevisto.
 
-La notifica di posta elettronica contiene dettagli importanti sull'evento imprevisto, ad esempio il nome, la gravità e le categorie dell'evento imprevisto, tra gli altri. Puoi anche passare direttamente all'incidente e avviare subito l'indagine. Per ulteriori informazioni, vedere [Investigate incidents](investigate-incidents.md).
+La notifica di posta elettronica contiene dettagli importanti sull'evento imprevisto, ad esempio il nome, la gravità e le categorie dell'evento imprevisto, tra gli altri. Puoi anche passare direttamente all'evento imprevisto e iniziare subito l'analisi. Per ulteriori informazioni, vedere [Analyze incidents](investigate-incidents.md).
 
 È possibile aggiungere o rimuovere destinatari nelle notifiche di posta elettronica. Dopo l'aggiunta, i nuovi destinatari riceveranno una notifica sugli eventi imprevisti. 
 
@@ -77,4 +77,4 @@ Per modificare una regola esistente, selezionarla nell'elenco delle regole. Nel 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica sugli incidenti](incidents-overview.md)
 - [Assegnare priorità agli incidenti](incident-queue.md)
-- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+- [Analizzare gli eventi imprevisti](investigate-incidents.md)

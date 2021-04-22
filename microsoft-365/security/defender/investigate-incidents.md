@@ -1,7 +1,7 @@
 ---
-title: Analizzare gli incidenti in Microsoft 365 Defender
+title: Analizzare gli eventi imprevisti in Microsoft 365 Defender
 description: Analizzare gli incidenti relativi a dispositivi, utenti e cassette postali.
-keywords: incidente, incidenti, computer, dispositivi, utenti, identificare, posta, posta elettronica, cassetta postale, indagine, grafico, prova
+keywords: incidente, incidenti, analizzare, risposta, computer, dispositivi, utenti, identità, posta, posta elettronica, cassetta postale, indagine, grafico, prova
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,17 +22,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861876"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939743"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Analizzare gli incidenti in Microsoft 365 Defender
+# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analizzare gli eventi imprevisti in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Si applica a:**
 
@@ -40,9 +39,9 @@ ms.locfileid: "51861876"
 
 Microsoft 365 Defender aggrega tutti gli avvisi, gli asset, le indagini e le prove correlati provenienti da dispositivi, utenti e cassette postali in un evento imprevisto per fornire una panoramica completa dell'intera ampiezza di un attacco.
 
-All'interno di un evento imprevisto, si esaminano gli avvisi che influiscono sulla rete, si comprende il loro significato e si fascicolano le prove in modo da poter elaborare un piano di correzione efficace.
+All'interno di un evento imprevisto, si analizzano gli avvisi che influiscono sulla rete, si comprende il loro significato e si fascicolano le prove in modo da poter elaborare un piano di correzione efficace.
 
-## <a name="initial-investigation"></a>Indagine iniziale
+## <a name="initial-analysis"></a>Analisi iniziale
 
 Prima di esaminare i dettagli, esaminare le proprietà e il riepilogo dell'evento imprevisto.
 
@@ -89,7 +88,7 @@ Di seguito viene riportato un esempio.
 
 Per impostazione predefinita, gli avvisi vengono ordinati cronologicamente per consentire di vedere come si è verificata l'evento imprevisto nel tempo. La selezione di ogni avviso consente di accedere alla pagina principale dell'avviso, in cui è possibile eseguire un'analisi approfondita dell'avviso. 
 
-Informazioni su come usare le pagine di avviso e coda di avviso in [Analizzare gli avvisi](investigate-alerts.md)
+Informazioni su come usare le pagine della coda di avviso e degli avvisi per [analizzare gli avvisi](investigate-alerts.md)
 
 ## <a name="devices"></a>Dispositivi
 

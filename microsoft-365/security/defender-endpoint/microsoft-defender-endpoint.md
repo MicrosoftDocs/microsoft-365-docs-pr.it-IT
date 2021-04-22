@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender per endpoint
 description: Microsoft Defender for Endpoint è una piattaforma di sicurezza degli endpoint aziendale che aiuta a difendersi dalle minacce persistenti avanzate.
-keywords: introduzione a Microsoft Defender for Endpoint, introduzione a Microsoft Defender Advanced Threat Protection, introduzione a Microsoft Defender for Endpoint, cybersecurity, minacce persistenti avanzate, sicurezza aziendale, sensore comportamentale del computer, sicurezza cloud, analisi, intelligence per le minacce, riduzione della superficie di attacco, protezione di nuova generazione, indagine e correzione automatizzate, esperti di minacce Microsoft, punteggio sicuro, ricerca avanzata, protezione dalle minacce Microsoft, ricerca di minacce informatiche
+keywords: introduzione a Microsoft Defender for Endpoint, introduzione a Microsoft Defender for Endpoint, cybersecurity, minacce persistenti avanzate, sicurezza aziendale, sensore comportamentale del computer, sicurezza cloud, analisi, intelligence sulle minacce, riduzione della superficie di attacco, protezione di nuova generazione, analisi e correzione automatizzate, esperti di minacce Microsoft, punteggio sicuro, ricerca avanzata, Microsoft 365 Defender, ricerca di minacce informatiche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861828"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935930"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender per endpoint
 
@@ -64,7 +64,7 @@ Defender for Endpoint usa la seguente combinazione di tecnologia integrata in Wi
 <a href="#apis"><center><b>Configurazione e amministrazione centralizzate, API</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -126,11 +126,11 @@ Integrare Microsoft Defender for Endpoint nei flussi di lavoro esistenti.
 
 **[Integrazione con soluzioni Microsoft](threat-protection-integration.md)** <br>
 Defender for Endpoint si integra direttamente con varie soluzioni Microsoft, tra cui:
-- Centro sicurezza di Azure
+- Azure Defender
 - Azure Sentinel
 - Intune
 - Microsoft Cloud App Security
-- Che cosa è Microsoft Defender per identità?
+- Microsoft Defender per identità
 - Microsoft Defender per Office
 - Skype for Business
 

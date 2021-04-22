@@ -1,7 +1,7 @@
 ---
 title: Generare un avviso di Prova di Microsoft 365 Defender
 description: Generare un avviso di test per provare il funzionamento dell'ambiente lab di Microsoft 365 Defender
-keywords: Simulazione di Microsoft Threat Protection, provare Microsoft Threat Protection, generare un avviso di test in Microsoft Threat Protection, avviso di test nel laboratorio di valutazione di Microsoft Threat Protection
+keywords: Simulazione di Microsoft 365 Defender, provare Microsoft 365 Defender, generare un avviso di test in Microsoft 365 Defender, avviso di test nel laboratorio di valutazione di Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: eae17a2cec3aa4da036ef1de52c3cd637701b929
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ebe01570b8b425b45acdcb11cc7df47d2d62e547
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060730"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935654"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Generare un avviso di test nel laboratorio di valutazione di Microsoft 365 Defender  
 

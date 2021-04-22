@@ -1,7 +1,7 @@
 ---
 title: Distribuire i servizi supportati da Microsoft 365 Defender
 description: Informazioni sui servizi di sicurezza Microsoft che possono essere integrati da Microsoft 365 Defender, sui requisiti di licenza e sulle procedure di distribuzione
-keywords: distribuire, licenze, servizi supportati, provisioning, configurazione Microsoft Threat Protection, M365, idoneità alle licenze, Microsoft Defender ATP, MDATP, Office 365 ATP, Azure ATP, Microsoft Cloud App Security, MCAS, protezione avanzata dalle minacce, E5, A5, EMS
+keywords: distribuire, licenze, servizi supportati, provisioning, configurazione Microsoft 365 Defender, M365, idoneità alla licenza, Microsoft Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 434c318be404ffb04cac7a05664c8f001bb46507
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4e1b36423974e46a485727f7e1f158dc6163d834
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198862"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935678"
 ---
 # <a name="deploy-supported-services"></a>Distribuire i servizi supportati
 

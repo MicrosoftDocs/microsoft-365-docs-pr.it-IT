@@ -1,7 +1,7 @@
 ---
 title: Riferimento allo schema di ricerca avanzata
 description: Informazioni sulle tabelle nello schema di ricerca avanzata per comprendere i dati su cui è possibile eseguire query di ricerca delle minacce.
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft Defender for Endpoint, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, dati
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, mdatp, microsoft defender atp, microsoft defender per endpoint, ricerca wdatp, query, telemetria, riferimento allo schema, kusto, tabella, dati
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: b35cc32f776083b58bc6467be43508a805d92d9c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fa111197dfd68cfcca40ce8a39befe20b97d1be8
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934346"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939637"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Informazioni sullo schema di ricerca avanzata in Microsoft Defender for Endpoint
 

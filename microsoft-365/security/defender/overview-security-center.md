@@ -1,5 +1,5 @@
 ---
-title: Panoramica del Centro sicurezza Microsoft 365
+title: Panoramica del Centro sicurezza Microsoft 365, che combina MDO, MDE, MDI e MCAS
 description: Vantaggi del Centro sicurezza Microsoft 365, che combina Microsoft Defender per Office 365 (MDO) e Microsoft Defender for Endpoint (MDE), con Microsoft Defender for Identity (MDI) e Microsoft Cloud App Security (MCAS). In questo articolo vengono descritti i progressi del Centro sicurezza Microsoft 365 per gli amministratori.
 keywords: sicurezza, malware, Microsoft 365, M365, centro sicurezza, monitorare, segnalare, identità, dati, dispositivi, app
 ms.prod: m365-security
@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 04/07/2021
+ms.date: 04/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2e1553b231692d184146897ddc05e11930ed1bf0
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903975"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939265"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Panoramica del Centro sicurezza Microsoft 365 unificato
 
@@ -68,6 +68,9 @@ Il Centro sicurezza Microsoft 365 sottolinea *l'unità,* la chiarezza e gli obie
 - Terminologia comune
 - Entità comuni
 - Parità delle funzionalità con altri carichi di lavoro
+
+> [!NOTE]
+> Il Centro sicurezza Microsoft 365 unificato sarà accessibile senza la necessità per i clienti di eseguire operazioni di migrazione o acquistare una nuova licenza. Ad esempio, questo nuovo portale sarà accessibile agli amministratori con una sottoscrizione E3, così come per quelli con Microsoft Defender per Office 365 Piano 1 e Piano 2; Tuttavia, i clienti di Exchange Online Protection o MDO Piano 1 potranno visualizzare solo le funzionalità di sicurezza supportate dalla licenza di sottoscrizione. L'obiettivo del nuovo centro è centralizzare la sicurezza.
 
 ## <a name="unified-investigations"></a>Indagini unificate
 
