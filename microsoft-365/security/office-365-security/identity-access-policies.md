@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 7ade29259a5552bc9bbaac4b143842c69d05f917
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4b7315cbb8704b691ce4f3d6b96958f18248b478
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205354"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952633"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 
@@ -55,18 +55,18 @@ Il resto di questo articolo descrive come configurare questi criteri.
 
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine elencato in questa tabella. Tuttavia, i criteri MFA per livelli di protezione sensibili e altamente regolamentati possono essere implementati in qualsiasi momento.
 
-|Livello di protezione|Criteri|Ulteriori informazioni|
-|---|---|---|
-|**Protezione di base**|[Richiedi autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](#require-mfa-based-on-sign-in-risk)||
-||[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-multi-factor)|I client che non utilizzano l'autenticazione moderna possono ignorare i criteri di accesso condizionale, quindi è importante bloccarlo.|
-||[Gli utenti a rischio elevato devono modificare la password](#high-risk-users-must-change-password)|Forza gli utenti a modificare la password durante l'accesso se vengono rilevate attività ad alto rischio per il proprio account.|
-||[Applicare criteri di protezione dei dati delle app](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|
-||[Richiedere app approvate e protezione delle app](#require-approved-apps-and-app-protection)|Applica la protezione delle app per dispositivi mobili per telefoni e tablet con iOS, iPadOS o Android.|
-||[Definire i criteri di conformità dei dispositivi](#define-device-compliance-policies)|Un criterio per ogni piattaforma.|
-||[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applica la gestione intune dei PC con Windows o MacOS.|
-|**Sensibili**|[Richiedi autenticazione a più fattori quando il rischio di accesso è *basso,* *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||
-||[Richiedere PC e *dispositivi* mobili conformi](#require-compliant-pcs-and-mobile-devices)|Applica la gestione di Intune sia per PC (Windows o MacOS) che per telefoni o tablet (iOS, iPadOS o Android).|
-|**Riservatezza elevata**|[*Richiedi* sempre MFA](#require-mfa-based-on-sign-in-risk)|
+|Livello di protezione|Criteri|Ulteriori informazioni|Licenze|
+|---|---|---|---|
+|**Protezione di base**|[Richiedi autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con il componente aggiuntivo E5 Security|
+||[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-multi-factor)|I client che non utilizzano l'autenticazione moderna possono ignorare i criteri di accesso condizionale, quindi è importante bloccarlo.|Microsoft 365 E3 o E5|
+||[Gli utenti a rischio elevato devono modificare la password](#high-risk-users-must-change-password)|Forza gli utenti a modificare la password durante l'accesso se vengono rilevate attività ad alto rischio per il proprio account.|Microsoft 365 E5 o Microsoft 365 E3 con il componente aggiuntivo E5 Security|
+||[Applicare la protezione dei dati dei criteri di protezione delle applicazioni (APP)](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 o E5|
+||[Richiedere app approvate e protezione delle app](#require-approved-apps-and-app-protection)|Applica la protezione delle app per dispositivi mobili per telefoni e tablet con iOS, iPadOS o Android.|Microsoft 365 E3 o E5|
+||[Definire i criteri di conformità dei dispositivi](#define-device-compliance-policies)|Un criterio per ogni piattaforma.|Microsoft 365 E3 o E5|
+||[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applica la gestione intune dei PC con Windows o MacOS.|Microsoft 365 E3 o E5|
+|**Sensibili**|[Richiedi autenticazione a più fattori quando il rischio di accesso è *basso,* *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con il componente aggiuntivo E5 Security|
+||[Richiedere PC e *dispositivi* mobili conformi](#require-compliant-pcs-and-mobile-devices)|Applica la gestione di Intune sia per PC (Windows o MacOS) che per telefoni o tablet (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
+|**Riservatezza elevata**|[*Richiedi* sempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Assegnazione di criteri a gruppi e utenti
@@ -95,11 +95,11 @@ Prestare attenzione quando si applicano livelli di protezione superiori a gruppi
 
 Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati come gruppi di Microsoft 365. Ciò è importante per la distribuzione delle etichette di riservatezza durante la protezione dei documenti in Microsoft Teams e SharePoint.
 
-![Acquisizione dello schermo per la creazione di gruppi di Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![Esempio di creazione di un gruppo di Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Richiedi autenticazione a più fattori in base al rischio di accesso
 
-È consigliabile che gli utenti si registrino a MFA prima di richiederne l'utilizzo. Se si dispone di Microsoft 365 E5, Microsoft 365 E3 con il componente aggiuntivo Identity & Threat Protection, Office 365 con EMS E5 o singole licenze di Azure AD Premium P2, è possibile usare i criteri di registrazione MFA con Azure AD Identity Protection per richiedere agli utenti di registrarsi per la MFA. Il [lavoro prerequisito include](identity-access-prerequisites.md) la registrazione di tutti gli utenti con MFA.
+È consigliabile che gli utenti si registrino a MFA prima di richiederne l'utilizzo. Se si dispone di Microsoft 365 E5, Microsoft 365 E3 con il componente aggiuntivo E5 Security, Office 365 con EMS E5 o singole licenze di Azure AD Premium P2, è possibile usare i criteri di registrazione MFA con Azure AD Identity Protection per richiedere agli utenti di registrarsi per la MFA. Il [lavoro prerequisito include](identity-access-prerequisites.md) la registrazione di tutti gli utenti con MFA.
 
 Dopo la registrazione degli utenti, è possibile richiedere l'autenticazione a più fattori per l'accesso con un nuovo criterio di accesso condizionale.
 
@@ -211,7 +211,7 @@ Usa questo criterio insieme a [Configure Azure AD password protection](/azure/ac
 
 ## <a name="apply-app-data-protection-policies"></a>Applicare criteri di protezione dei dati APP
 
-I criteri di protezione delle app definiscono le app consentite e le azioni che possono eseguire con i dati dell'organizzazione. Le scelte disponibili in APP consentono alle organizzazioni di personalizzare la protezione in base alle proprie esigenze specifiche. Per alcuni, potrebbe non essere ovvio quali impostazioni dei criteri sono necessarie per implementare uno scenario completo. Per aiutare le organizzazioni a definire la priorità della protezione avanzata degli endpoint client mobili, Microsoft ha introdotto la tassonomia per il framework di protezione dei dati APP per la gestione delle app per dispositivi mobili iOS e Android.
+Gli APP definiscono le app consentite e le azioni che possono eseguire con i dati dell'organizzazione. Le scelte disponibili in APP consentono alle organizzazioni di personalizzare la protezione in base alle proprie esigenze specifiche. Per alcuni, potrebbe non essere ovvio quali impostazioni dei criteri sono necessarie per implementare uno scenario completo. Per aiutare le organizzazioni a definire la priorità della protezione avanzata degli endpoint client mobili, Microsoft ha introdotto la tassonomia per il framework di protezione dei dati APP per la gestione delle app per dispositivi mobili iOS e Android.
 
 Il framework di protezione dei dati APP è organizzato in tre livelli di configurazione distinti, con ogni livello che si esercite al di fuori del livello precedente:
 
@@ -331,7 +331,7 @@ Per **Sicurezza del sistema**, vedere questa tabella.
 
 |Tipo|Proprietà|Valore|Azione|
 |---|---|---|---|
-|Regole di Microsoft Defender per endpoint|Richiedere che il dispositivo sia in corrispondenza o sotto il punteggio di rischio del computer|Medio|Seleziona|
+|Regole di Microsoft Defender per endpoint nell'interfaccia di amministrazione di Microsoft Endpoint Manager|[Richiedere che il dispositivo sia in corrispondenza o sotto il punteggio di rischio del computer](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medio|Seleziona|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Richiedi PC conformi (ma non telefoni e tablet conformi)

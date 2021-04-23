@@ -20,16 +20,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d8d165f39c45bd235800dc951d50934b47dd7ff5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935450"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952681"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gestire gli errori di ricerca avanzata
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Si applica a:**
+- Microsoft 365 Defender
+- Microsoft Defender per endpoint
 
 
 La ricerca avanzata visualizza errori per segnalare errori di sintassi e ogni volta che le query vengono eseguite su [quote e parametri di utilizzo predefiniti.](advanced-hunting-limits.md) Fare riferimento alla tabella seguente per suggerimenti su come risolvere o evitare errori.
@@ -43,6 +48,8 @@ La ricerca avanzata visualizza errori per segnalare errori di sintassi e ogni vo
 | Limite di dimensioni dei risultati superato  | La dimensione aggregata del set di risultati per la query ha superato la dimensione massima. Questo errore può verificarsi se il set di risultati è così grande che il troncamento al limite di 10.000 record non può ridurlo a una dimensione accettabile. È più probabile che i risultati con più colonne con contenuto ridimensionabile siano influenzati da questo errore. | [Ottimizzare la query](advanced-hunting-best-practices.md) | `Result size limit exceeded. Use "summarize" to aggregate results, "project" to drop uninteresting columns, or "take" to truncate results.` |
 | Consumo eccessivo di risorse | La query ha consumato quantità eccessive di risorse ed è stato interrotto il completamento. In alcuni casi, la ricerca avanzata identifica l'operatore specifico che non è stato ottimizzato. | [Ottimizzare la query](advanced-hunting-best-practices.md) | -`Query stopped due to excessive resource consumption.`<br>-`Query stopped. Adjust use of the <operator name> operator to avoid excessive resource consumption.` |
 | Errori sconosciuti | La query non è riuscita a causa di un motivo sconosciuto. | Provare a eseguire di nuovo la query. Contattare Microsoft tramite il portale se le query continuano a restituire errori sconosciuti. | `An unexpected error occurred during query execution. Please try again in a few minutes.`
+
+
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Procedure consigliate per la ricerca avanzata](advanced-hunting-best-practices.md)

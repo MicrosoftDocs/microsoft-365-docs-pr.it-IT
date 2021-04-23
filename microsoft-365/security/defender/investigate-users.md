@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939731"
+ms.locfileid: "51957608"
 ---
 # <a name="analyze-users-in-microsoft-365-security-center"></a>Analizzare gli utenti nel Centro sicurezza Microsoft 365
 
@@ -41,6 +41,13 @@ Parte dell'analisi degli eventi imprevisti può includere account utente. Inizia
 Per ottenere un breve riepilogo di un account utente per l'evento imprevisto, selezionare il segno di spunta accanto al nome dell'account utente. Di seguito viene riportato un esempio.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Esempio del riquadro di riepilogo dell'account utente per un evento imprevisto nel Centro sicurezza Microsoft 365":::
+
+> [!NOTE]
+> La pagina Utente mostra l'organizzazione di Azure Active Directory (AD) e i gruppi, consentendoti di comprendere i gruppi e le autorizzazioni associati a un utente.
+
+In questa pagina a comparsa è possibile esaminare le informazioni sulle minacce degli utenti, inclusi eventuali eventi imprevisti correnti, avvisi attivi e livello di rischio, nonché l'esposizione degli utenti, gli account, i dispositivi e altro ancora.
+
+Inoltre, è possibile intervenire direttamente nel Centro sicurezza Microsoft 365 per risolvere un utente compromesso, confermando che l'utente è compromesso o richiedendo loro di accedere di nuovo.
 
 Da qui puoi selezionare **Vai alla pagina utente** per visualizzare i dettagli di un account utente. Di seguito viene riportato un esempio.
 

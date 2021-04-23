@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: fcfddadf13e000156fa5431cc30bc72f4f3537e2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e4469d8abcfa8308c64e2efa7f7dc4f0156e5718
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581047"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957528"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Prerequisiti per Microsoft Managed Desktop
 
@@ -27,7 +27,7 @@ In questo argomento vengono descritti i requisiti dell'infrastruttura che è nec
 
 Area | Dettagli prerequisiti
 --- | ---
-Licenze |Microsoft Managed Desktop richiede la licenza di Microsoft 365 E3 con Microsoft Defender for Endpoint (o equivalenti) assegnata agli utenti. Due licenze per Azure Active Directory Premium 2 devono essere disponibili nel tenant, ma gli utenti non necessitano di questa licenza. <br>Per informazioni dettagliate sui piani di servizio specifici, vedere [Ulteriori informazioni sulle licenze](#more-about-licenses) in questo argomento.<br>Per ulteriori informazioni sulle licenze disponibili, vedere [Licenze di Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
+Licenze |Microsoft Managed Desktop richiede la licenza di Microsoft 365 E3 con Microsoft Defender for Endpoint (o equivalenti) assegnata agli utenti.<br>Per informazioni dettagliate sui piani di servizio specifici, vedere [Ulteriori informazioni sulle licenze](#more-about-licenses) in questo argomento.<br>Per ulteriori informazioni sulle licenze disponibili, vedere [Licenze di Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)
 Connettività |  Tutti i dispositivi Microsoft Managed Desktop richiedono la connettività a numerosi endpoint di servizio Microsoft dalla rete aziendale.<br><br>Per l'elenco completo degli INDIRIZZI IP e DEGLI URL necessari, vedere [Configurazione di rete.](../get-ready/network.md) 
 Azure Active Directory |    Azure Active Directory (Azure AD) deve essere l'origine dell'autorità per tutti gli account utente oppure gli account utente devono essere sincronizzati da Active Directory locale utilizzando la versione più recente supportata di Azure AD Connect.<br><br>[Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview) deve essere abilitato per gli utenti di Microsoft Managed Desktop.<br><br>Per ulteriori informazioni, vedere [Azure AD Connect.](/azure/active-directory/hybrid/whatis-azure-ad-connect)<br><br>Per ulteriori informazioni sulle versioni supportate di Azure AD Connect, vedere [Azure AD Connect:Version release history](/azure/active-directory/hybrid/reference-connect-version-history).
 Autenticazione |    Se Azure AD non è l'origine dell'autenticazione principale per gli account utente, è necessario configurarne una in Azure AD Connect:<br>- Sincronizzazione hash password<br>- Autenticazione pass-through<br>- Provider di identità esterno (incluso ADFS di Windows Server e provider di identità non Microsoft) configurato per soddisfare i requisiti di integrazione di Azure AD. Per ulteriori [informazioni, vedere](https://www.microsoft.com/download/details.aspx?id=56843) le linee guida. <br><br>Quando si impostano le opzioni di autenticazione con Azure AD Connect, è consigliabile anche il writeback delle password. Per ulteriori informazioni, vedere [Writeback delle password.](/azure/active-directory/authentication/howto-sspr-writeback) <br><br>Se viene implementato un provider di identità esterno, è necessario convalidare la soluzione:<br>- Soddisfa i requisiti di integrazione di Azure AD<br>- Supporta l'accesso condizionale di Azure AD, che consente di configurare i criteri di conformità dei dispositivi Microsoft Managed Desktop<br>- Abilita la registrazione dei dispositivi e l'uso dei servizi o delle funzionalità di Microsoft 365 necessari come parte di Microsoft Managed Desktop <br><br>Per altre informazioni sulle opzioni di autenticazione con Azure AD, vedi Opzioni di accesso utente [di Azure AD Connect.](/azure/active-directory/connect/active-directory-aadconnect-user-signin)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935714"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952561"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creare e gestire regole di rilevamento personalizzate
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935714"
 
 **Si applica a:**
 - Microsoft 365 Defender
+- Microsoft Defender per endpoint
 
 Le regole di rilevamento personalizzate sono regole che è possibile progettare e modificare utilizzando [query di ricerca](advanced-hunting-overview.md) avanzate. Queste regole consentono di monitorare in modo proattivo vari eventi e stati di sistema, tra cui attività di violazione sospetta e endpoint non configurati correttamente. Puoi impostarli per l'esecuzione a intervalli regolari, generando avvisi ed eseguire azioni di risposta ogni volta che ci sono corrispondenze.
 
@@ -219,6 +220,9 @@ Nella schermata dei dettagli della regola (**Ricerca** di rilevamenti personaliz
 
 >[!TIP]
 >Per visualizzare rapidamente le informazioni ed eseguire azioni su un elemento di una tabella, utilizzare la colonna di selezione [&#10003;] a sinistra della tabella.
+
+>[!NOTE]
+>Alcune colonne di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender](m365d-enable.md) per cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in [Migrate advanced hunting queries from Microsoft Defender for Endpoint.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica dei rilevamenti personalizzati](custom-detections-overview.md)

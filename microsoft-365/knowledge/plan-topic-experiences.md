@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come pianificare gli argomenti relativi alla pianificazione per Microsoft Viva
-ms.openlocfilehash: 19baf8bdcfdd1fe38d64e3c2f259ace1ceab5a4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925977"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957540"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Pianificare gli argomenti di Microsoft Viva
 
@@ -70,6 +70,9 @@ Tutte le operazioni di elaborazione e archiviazione del contenuto vengono esegui
 ## <a name="user-permissions"></a>Autorizzazioni utenti
 
 Le autorizzazioni utente specificate determinano quali persone dell'organizzazione interagiscono con gli argomenti e cosa possono fare.
+
+> [!Note] 
+> Al momento, Viva Topics non supporta la fornitura di licenze o autorizzazioni utente per gli utenti Guest (esterni). 
 
 *Gestisci argomenti*
 

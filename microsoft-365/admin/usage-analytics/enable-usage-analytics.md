@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Informazioni su come iniziare a raccogliere dati per il tenant usando l'app modello Analisi di utilizzo di Microsoft 365 in Power BI.
-ms.openlocfilehash: 7c92fb643f9be6b5f1474f08df659c4f488a9a41
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579063"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957516"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
 
@@ -53,11 +53,11 @@ Per abilitare l'app modello, devi essere un **amministratore globale.**
   
 Per [ulteriori informazioni, vedere](../add-users/about-admin-roles.md) Sui ruoli di amministratore. 
   
-1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>. 
+1. Nell'interfaccia di amministrazione passare alla scheda **Impostazioni** \> **organizzazione** \> **Servizi.** 
     
-2. Nella pagina **Utilizzo** individuare la scheda Analisi di **utilizzo di Microsoft 365** e selezionare **Introduzione.**
+2. Nella scheda **Servizi** selezionare  **Report**.
     
-3. Nel riquadro Report visualizzato impostare Rendi i dati disponibili per l'analisi di utilizzo di **Microsoft 365 per Power BI** su **Su** \> **salvataggio.** 
+3. Nel riquadro Report visualizzato impostare Rendi disponibili i dati dei report per l'analisi di utilizzo di **Microsoft 365** per Power BI su **Al** \> **salvataggio.** 
   
 Il processo di raccolta dei dati verrà completato in due-48 ore a seconda delle dimensioni del tenant. Il **pulsante Vai a Power BI** verrà abilitato (non più grigio) al termine della raccolta dei dati. 
     

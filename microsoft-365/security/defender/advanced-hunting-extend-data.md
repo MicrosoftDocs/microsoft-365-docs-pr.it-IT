@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40cec28bf88445df13f78e672c4289d440b2b848
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f4b1399b77583e95b109575a9577d8b1af89e6ad
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935858"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952669"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Estendere la copertura di ricerca avanzata con le impostazioni giuste
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935858"
 
 **Si applica a:**
 - Microsoft 365 Defender
+- Microsoft Defender per endpoint
 
 [La ricerca avanzata](advanced-hunting-overview.md) si basa sui dati provenienti da varie origini, inclusi i dispositivi, le aree di lavoro di Office 365, Azure AD e Microsoft Defender for Identity. Per ottenere i dati più completi possibili, verificare di disporre delle impostazioni corrette nelle origini dati corrispondenti.
 
@@ -52,6 +53,9 @@ Se si esegue Active Directory in locale, è necessario installare il sensore Mic
 | Dati | Descrizione | Tabella schema | Configurazione |
 | --- | --- | --- | --- |
 | Controller di dominio | Dati da Active Directory locale inviati a Microsoft Defender per l'identità, arricchendo le informazioni relative all'identità, ad esempio i dettagli dell'account, l'attività di accesso e le query di Active Directory | Più tabelle, tra [cui IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)e [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installare il sensore Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step4)<br>- [Attivare gli eventi di Windows pertinenti](/azure-advanced-threat-protection/configure-event-collection) |
+
+>[!NOTE]
+>Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender](m365d-enable.md) per cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in [Migrate advanced hunting queries from Microsoft Defender for Endpoint.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)

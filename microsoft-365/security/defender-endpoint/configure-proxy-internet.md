@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c8f25b924109823951c331fe744b548d372eaf11
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932800"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957618"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurare le impostazioni del proxy del dispositivo e della connettività Internet
 
@@ -60,6 +60,7 @@ Configura un proxy statico basato sul Registro di sistema per consentire solo al
 
 > [!NOTE]
 > - Quando si usa questa opzione in Windows 10 o Windows Server 2019, è consigliabile avere la build seguente (o successiva) e l'aggiornamento cumulativo cumulativo:</br>
+> Windows 10 versione 1809 o Windows Server 2019 - https://support.microsoft.com/kb/5001384 <br>
 > Windows 10, versione 1909 - https://support.microsoft.com/kb/4601380</br>
 > Windows 10 versione 2004 - https://support.microsoft.com/kb/4601382</br>
 > Windows 10 versione 20H2 - https://support.microsoft.com/kb/4601382</br>

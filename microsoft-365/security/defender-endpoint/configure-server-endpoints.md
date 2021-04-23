@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 17aca5fb388aef26504902ee63b22410420c8827
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932954"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952489"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboard dei server Windows nel servizio Microsoft Defender for Endpoint
 
@@ -194,7 +194,7 @@ Defender for Endpoint può integrarsi con Azure Defender per fornire una soluzio
 
 In questa integrazione sono incluse le funzionalità seguenti:
 
-- Onboarding automatico: il sensore Defender for Endpoint viene abilitato automaticamente nei server Windows onboarding in Azure Defender. Per altre informazioni sull'onboarding di Azure Defender, vedi [Onboarding in Azure Defender Standard per la sicurezza avanzata.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
+- Onboarding automatico: il sensore Defender for Endpoint viene abilitato automaticamente nei server Windows onboarding in Azure Defender. Per altre informazioni sull'onboarding di Azure Defender, vedi [Usare la licenza integrata di Microsoft Defender for Endpoint.](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
 
     > [!NOTE]
     > L'integrazione tra Azure Defender for Servers e Microsoft Defender for Endpoint è stata estesa per supportare [Windows Server 2019 e Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
@@ -293,7 +293,7 @@ Per eseguire l'offboard del server Windows, è possibile utilizzare uno dei meto
     > [!NOTE]
     > In questo articolo si presuppone che si utilizzino server basati su x64 (MMA Agent .exe x64 [Nuova versione conforme a SHA-2](https://go.microsoft.com/fwlink/?LinkId=828603))
 
-**Passaggio 2: Creare un nome di file DeployMMA.cmd (tramite blocco note)** Aggiungere le righe seguenti al file cmd. Tieni presente che saranno necessari l'ID workspace e la chiave.
+**Passaggio 2: Creare un nome di file DeployMMA.cmd (tramite blocco note)** Aggiungere le righe seguenti al file cmd. Tieni presente che avrai bisogno dell'ID workspace e della chiave.
 
 ```dos
 @echo off 
@@ -338,7 +338,8 @@ Al termine di questa operazione, è necessario creare un criterio script di avvi
 
 :::image type="content" source="images/startupprops.png" alt-text="start up properties":::
 
-Il nome del file da eseguire qui è c:\windows\MMA\DeployMMA.cmd Una volta riavviato il server come parte del processo di avvio, installerà l'aggiornamento per l'esperienza del cliente e la telemetria diagnostica KB, quindi installerà MMAAgent, impostando l'ID e la chiave dell'area di lavoro, e il server verrà eseguito l'onboarded.
+Il nome del file da eseguire qui è c:\windows\MMA\DeployMMA.cmd.
+Una volta riavviato il server come parte del processo di avvio, installerà l'aggiornamento per l'esperienza del cliente e la telemetria diagnostica KB, quindi installerà l'agente MMA, impostando l'ID e la chiave dell'area di lavoro, e il server verrà onboarded.
 
 È inoltre possibile utilizzare **un'attività immediata** per eseguire deployMMA.cmd se non si desidera riavviare tutti i server.
 Questa operazione può essere eseguita in due fasi. Creare innanzitutto **i file e la** cartella nell'oggetto Criteri di gruppo: concedere al sistema il tempo necessario per verificare che l'oggetto Criteri di gruppo sia stato applicato e che tutti i server dispongono dei file di installazione. Aggiungi quindi l'attività immediata. In questo modo si ottiene lo stesso risultato senza richiedere un riavvio.
