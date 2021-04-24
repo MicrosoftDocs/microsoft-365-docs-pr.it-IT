@@ -129,15 +129,15 @@
                   href: defender/incidents-overview.md
                 - name: Assegnare priorità agli eventi imprevisti
                   href: defender/incident-queue.md
-                - name: Indagare sugli eventi imprevisti
+                - name: Gestire gli incidenti
+                  href: defender/manage-incidents.md
+                - name: Intervento in caso di incidente
                   items:
-                    - name: Indagare sugli eventi imprevisti
+                    - name: Analizzare gli incidenti
                       href: defender/investigate-incidents.md
-                    - name: Gestire gli eventi imprevisti
-                      href: defender/manage-incidents.md
-                    - name: Esaminare gli avvisi
+                    - name: Analizzare gli avvisi
                       href: defender/investigate-alerts.md
-                    - name: Esaminare gli utenti nel Centro sicurezza Microsoft 365
+                    - name: Analizzare gli utenti
                       href: defender/investigate-users.md
                 - name: Ricevere notifiche tramite posta elettronica
                   href: defender/get-incident-notifications.md
