@@ -2,7 +2,7 @@
 title: Punteggio più alto nei test di settore - Microsoft 365 Defender
 ms.reviewer: ''
 description: Visualizza gli ultimi punteggi e l'analisi di Microsoft 365 Defender. Ottiene costantemente punteggi alti in test indipendenti (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). Visualizza i punteggi e le analisi più recenti.
-keywords: Antivirus Microsoft Defender, Windows Defender Antivirus, recensioni AV, test antivirus, test AV, punteggi AV più recenti, punteggi rilevamento, test prodotti sicurezza, test settore sicurezza, test antivirus settore, miglior antivirus, AV-test, AV-comparatives, SE labs, MITRE ATT&CK, piattaforma protezione endpoint, EPP, rilevamento e risposta degli endpoint, EDR, Windows 10, Antivirus Microsoft Defender, WDAV, MDATP, Microsoft Threat Protection, sicurezza, malware, AV, antivirus, punteggi, protezione di nuova generazione
+keywords: Antivirus Microsoft Defender, Windows Defender Antivirus, recensioni antivirus, test antivirus, test antivirus, punteggi antivirus più recenti, punteggi rilevamento, test prodotti sicurezza, test settore sicurezza, test antivirus settore, miglior antivirus, test antivirus, confronti antivirus, SE labs, MITRE ATT&CK, piattaforma protezione endpoint, EPP, rilevamento endpoint e risposta, EDR, Windows 10, Antivirus Microsoft Defender, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender, sicurezza, malware, antivirus, antivirus, punteggi, punteggio, protezione di nuova generazione, classificazione, successo
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 1f649af2ca6089d1366cc6e080a430a6a00fc300
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569862"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934394"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Punteggio più alto nei test del settore
 
