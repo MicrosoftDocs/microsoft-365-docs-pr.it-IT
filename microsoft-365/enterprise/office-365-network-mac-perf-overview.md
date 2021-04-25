@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c3ce053ecc859d3ac0cf53b0a132a7032ce6a87a
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860864"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994678"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -152,7 +152,9 @@ La pagina di riepilogo della posizione dell'ufficio mostra inoltre la valutazion
 
 I confronti tra i clienti nella stessa città si basano sull'aspettativa che tutti i clienti hanno uguale accesso ai provider di servizi di rete, all'infrastruttura di telecomunicazione e ai punti di presenza della rete Microsoft nelle vicinanze.
 
-Nella scheda dettagli della pagina della posizione dell'ufficio vengono mostrati i risultati di misurazione specifici utilizzati per ottenere informazioni dettagliate, suggerimenti e la valutazione della rete. Questo viene fornito in modo che i tecnici di rete possano convalidare i suggerimenti e i fattori in qualsiasi vincolo o specifica nel proprio ambiente.
+I nomi delle località possono essere personalizzati quando si aggiunge una nuova posizione o si modifica una posizione esistente nel riquadro a comparsa della posizione. In questo modo è possibile personalizzare i nomi delle località in qualsiasi momento. Inoltre, quando si aggiungono subnet LAN direttamente nel riquadro a comparsa della posizione, viene visualizzato un elenco a discesa di subnet LAN con corrispondenza recinti che è possibile selezionare. È possibile aggiungere e modificare anche i nomi dei circuiti per specifici indirizzi IP di uscita dell'ufficio.
+
+Nella scheda dettagli della pagina della posizione dell'ufficio vengono mostrati i risultati di misurazione specifici utilizzati per ottenere informazioni dettagliate, suggerimenti e la valutazione della rete. Questo viene fornito in modo che i tecnici di rete possano convalidare i suggerimenti e i fattori in qualsiasi vincolo o specifica nel proprio ambiente. Troverai anche il numero stimato di utenti per i campioni raccolti in quella sede e i lavoratori remoti in quella città.
 
 > [!div class="mx-imgBorder"]
 > ![Dettagli specifici della posizione](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)

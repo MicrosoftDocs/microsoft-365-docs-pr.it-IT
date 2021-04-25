@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: df77a3d6c1f66882600a200b83b3b2585473f42b
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939243"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995070"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Abilitare regole per la riduzione della superficie di attacco
 
@@ -33,27 +33,23 @@ ms.locfileid: "51939243"
 > [!TIP]
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Le regole di riduzione della superficie](attack-surface-reduction.md) di attacco (regole ASR) consentono di impedire azioni che il malware spesso abuso per compromettere dispositivi e reti. Puoi impostare le regole asr per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
-- Windows 10 Pro, [versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
-- Windows 10 Enterprise, [versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
-- Windows Server, [versione 1803 (Canale semestraale)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+[Le regole di riduzione della superficie](attack-surface-reduction.md) di attacco (regole ASR) consentono di impedire azioni che il malware spesso abuso per compromettere dispositivi e reti.
 
 **Requisiti** Puoi impostare regole di riduzione della superficie di attacco per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
 
-- Windows 10 Pro, versione 1709 o successiva
-- Windows 10 Enterprise, versione 1709 o successiva
-- Windows Server, versione 1803 (Canale semestraale) o versione successiva
-- Windows Server 2019
+- Windows 10 Pro, [versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- Windows 10 Enterprise, [versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- Windows Server, [versione 1803 (Canale semestraale)](/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Anche se le regole di riduzione della superficie di attacco non richiedono una licenza di Windows E5, se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in Defender for Endpoint, nonché funzionalità di creazione di report e configurazione nel Centro sicurezza Microsoft 365. Queste funzionalità avanzate non sono disponibili con una licenza di Windows Professional o Windows E3. Tuttavia, se hai queste licenze, puoi usare il Visualizzatore eventi e i registri di Microsoft Defender Antivirus per esaminare gli eventi delle regole di riduzione della superficie di attacco.
+Anche se le regole di riduzione della superficie di attacco non richiedono una licenza di [Windows E5,](/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)nonché funzionalità di creazione di report e configurazione nel Centro sicurezza [Microsoft 365.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Queste funzionalità avanzate non sono disponibili con una licenza di Windows Professional o Windows E3. Tuttavia, se hai queste licenze, puoi usare il Visualizzatore eventi e i registri di Microsoft Defender Antivirus per esaminare gli eventi delle regole di riduzione della superficie di attacco.
 
 Ogni regola asr contiene una delle quattro impostazioni seguenti:
 
 - **Non configurato**: disabilita la regola asr
 - **Block**: Enable the ASR rule
 - **Controllo**: valutare l'impatto della regola asr sull'organizzazione se abilitata
-- **Avviso:** abilitare la regola asr, ma consentire all'utente finale di ignorare il blocco
+- **Avviso:** abilitare la regola asr ma consentire all'utente finale di ignorare il blocco
 
 > [!IMPORTANT]
 > Attualmente, la modalità avviso non è supportata per tre regole asr quando si configurano le regole asr in Microsoft Endpoint Manager (MEM). Per altre informazioni, vedi [Casi in cui la modalità avviso non è supportata.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)

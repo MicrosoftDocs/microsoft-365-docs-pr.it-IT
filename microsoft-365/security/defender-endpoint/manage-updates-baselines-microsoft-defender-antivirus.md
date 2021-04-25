@@ -8,18 +8,20 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b70cf96cde7d4dff8e2a4db6ce2469090dba7eb1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ae17aa6e2cb0cefd460ef0db0730570af8c84bb8
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765612"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995034"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base
 
@@ -34,7 +36,8 @@ Esistono due tipi di aggiornamenti correlati al mantenimento di Microsoft Defend
 - Aggiornamenti dei prodotti
 
 > [!IMPORTANT]
-> Mantenere Microsoft Defender Antivirus aggiornato è fondamentale per garantire ai dispositivi la tecnologia e le funzionalità più recenti necessarie per la protezione da nuovi malware e tecniche di attacco.  
+> Mantenere Microsoft Defender Antivirus aggiornato è fondamentale per garantire ai dispositivi la tecnologia e le funzionalità più recenti necessarie per la protezione da nuovi malware e tecniche di attacco.
+> 
 > Assicurati di aggiornare la protezione antivirus anche se Microsoft Defender Antivirus è in esecuzione in [modalità passiva.](./microsoft-defender-antivirus-compatibility.md)
 > 
 > Per visualizzare il motore, la piattaforma e la data della firma più recenti, visitare gli aggiornamenti di Security [intelligence per Microsoft Defender Antivirus e altri antimalware Microsoft.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
@@ -147,7 +150,7 @@ Dopo il rilascio di una nuova versione del pacchetto, il supporto per le due ver
 &ensp;Rilasciato: **03 dicembre 2020**  
 &ensp;Piattaforma: **4.18.2011.6**  
 &ensp;Motore: **1.1.17700.4**  
-&ensp;Fase di supporto: **sicurezza e aggiornamenti critici**
+&ensp;Fase di supporto: **supporto tecnico per l'aggiornamento (solo)**
     
 ### <a name="whats-new"></a>Novità
 
@@ -163,7 +166,7 @@ Nessun problema noto
 &ensp;Rilasciato: **29 ottobre 2020**  
 &ensp;Piattaforma: **4.18.2010.7**  
 &ensp;Motore: **1.1.17600.5**  
-&ensp;Fase di supporto: **sicurezza e aggiornamenti critici**
+&ensp;Fase di supporto: **supporto tecnico per l'aggiornamento (solo)**
     
 ### <a name="whats-new"></a>Novità
 
@@ -454,7 +457,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Informazioni aggiuntive
+### <a name="additional-information"></a>Ulteriori informazioni
 - Nessuno  
 <br/>
 </details><details>
@@ -468,7 +471,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Informazioni aggiuntive
+### <a name="additional-information"></a>Ulteriori informazioni
 - Nessuno  
 <br/>
 </details><details>
@@ -482,7 +485,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Informazioni aggiuntive
+### <a name="additional-information"></a>Ulteriori informazioni
 - Nessuno  
 <br/>
 </details><details>
@@ -496,7 +499,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Informazioni aggiuntive
+### <a name="additional-information"></a>Ulteriori informazioni
 - Nessuno  
 <br/>
 </details><details>
@@ -510,7 +513,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Informazioni aggiuntive
+### <a name="additional-information"></a>Ulteriori informazioni
 - Nessuno  
 <br/>
 </details><details>
@@ -524,7 +527,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Informazioni aggiuntive
+### <a name="additional-information"></a>Ulteriori informazioni
 - Firme aggiornate di Microsoft Defender Antivirus  
 <br/>
 </details><details>
@@ -538,7 +541,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Informazioni aggiuntive
+### <a name="additional-information"></a>Ulteriori informazioni
 - Nessuno  
 <br/>
 </details><details>
@@ -552,7 +555,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Informazioni aggiuntive
+### <a name="additional-information"></a>Ulteriori informazioni
 - È stato aggiunto il supporto per le immagini di installazione del sistema operativo Windows 10 RS1 o versioni successive.  
 <br/>
 </details>
@@ -566,4 +569,4 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 |[Gestire quando devono essere scaricati e applicati gli aggiornamenti della protezione](manage-protection-update-schedule-microsoft-defender-antivirus.md) | È possibile pianificare quando scaricare gli aggiornamenti della protezione. |
 |[Gestire gli aggiornamenti per gli endpoint non aggiornati](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Se un endpoint non esegue un aggiornamento o un'analisi pianificata, puoi forzare un aggiornamento o un'analisi al successivo accesso di un utente. |
 |[Gestire gli aggiornamenti forzati basati su eventi](manage-event-based-updates-microsoft-defender-antivirus.md) | È possibile impostare gli aggiornamenti della protezione da scaricare all'avvio o dopo determinati eventi di protezione recapitati nel cloud. |
-|[Gestire gli aggiornamenti per dispositivi mobili e macchine virtuali](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| È possibile specificare impostazioni, ad esempio se devono essere eseguiti aggiornamenti sull'alimentazione a batteria, particolarmente utili per dispositivi mobili e macchine virtuali. |
+|[Gestire gli aggiornamenti per dispositivi mobili e macchine virtuali (VMS)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| È possibile specificare impostazioni, ad esempio se devono essere eseguiti aggiornamenti sull'alimentazione a batteria, particolarmente utili per dispositivi mobili e macchine virtuali. |

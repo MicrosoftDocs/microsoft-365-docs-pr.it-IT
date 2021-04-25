@@ -19,12 +19,12 @@ description: Informazioni su come EOP e Office 365 proteggono l'utente con posta
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1820cab63abbbac09aa60a9c1684f3672882451
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 659a83c73b4fef9097aa317332c9951d53b09a33
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205664"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994986"
 ---
 # <a name="safety-tips-in-email-messages"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica
 
@@ -55,6 +55,6 @@ Il suggerimento per la sicurezza, un messaggio con codice a colori, avvisa l'ute
 
 ## <a name="working-with-safety-tips"></a>Utilizzo dei suggerimenti per la sicurezza
 
-I suggerimenti per la sicurezza sono sempre abilitati per Outlook sul Web, anche se non tutti i messaggi ne riceveranno uno. Gli amministratori possono disattivare i suggerimenti per la sicurezza per altri client di posta elettronica, ad esempio Outlook. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+Gli amministratori possono attivare o disattivare i suggerimenti per la sicurezza nei criteri di protezione da posta indesiderata. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
 Se non si è d'accordo con il modo in cui EOP ha categorizzato un messaggio(ovvero, il messaggio non è posta indesiderata o dovrebbe essere stato contrassegnato come posta indesiderata), è possibile inviare i messaggi a Microsoft per l'analisi per migliorare l'esperienza. Per istruzioni, vedere [Segnalare messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md). Puoi anche fare clic sul collegamento Feedback nel suggerimento per la sicurezza per inviare commenti direttamente a Microsoft per aiutarci a migliorare.

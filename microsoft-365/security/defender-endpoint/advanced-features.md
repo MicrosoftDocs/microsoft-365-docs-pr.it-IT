@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15909684d07bac46fd42163cee545bc4752b61d4
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934370"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995010"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurare le funzionalità avanzate in Defender for Endpoint
 
@@ -127,6 +127,8 @@ Per ulteriori informazioni, vedere [Manage indicators.](manage-indicators.md)
 Durante alcuni tipi di attacchi informatici, i malinti tentano di disabilitare le funzionalità di sicurezza, ad esempio la protezione antivirus, nei computer. Gli utenti malintenzionati desiderano disabilitare le funzionalità di sicurezza per ottenere un accesso più semplice ai dati, installare malware o sfruttare in altro modo i dati, l'identità e i dispositivi.
 
 La protezione anti-manomissione blocca essenzialmente Microsoft Defender Antivirus e impedisce che le impostazioni di sicurezza vengano modificate tramite app e metodi.
+
+Questa funzionalità è disponibile se l'organizzazione usa Microsoft Defender Antivirus e la protezione basata su cloud è abilitata. Per altre informazioni, vedi Usare tecnologie di nuova generazione in Microsoft Defender Antivirus tramite la [protezione basata sul cloud.](cloud-protection-microsoft-defender-antivirus.md)
 
 Mantenere attivata la protezione anti-manomissione per evitare modifiche indesiderate alla soluzione di sicurezza e alle relative funzionalità essenziali.
 

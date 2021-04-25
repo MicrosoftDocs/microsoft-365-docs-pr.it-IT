@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876338"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995082"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Risolvere i problemi di prestazioni correlati alla protezione in tempo reale
 
@@ -33,7 +33,7 @@ ms.locfileid: "51876338"
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-Se il sistema presenta un utilizzo elevato della CPU o problemi di prestazioni correlati al servizio di protezione in tempo reale in Microsoft Defender for Endpoint, è possibile inviare un ticket al supporto Tecnico Microsoft. Seguire i passaggi descritti in [Collect Microsoft Defender AV diagnostic data](/collect-diagnostic-data.md).
+Se il sistema presenta un utilizzo elevato della CPU o problemi di prestazioni correlati al servizio di protezione in tempo reale in Microsoft Defender for Endpoint, è possibile inviare un ticket al supporto Tecnico Microsoft. Seguire i passaggi descritti in [Raccogliere i dati di diagnostica di Microsoft Defender Antivirus.](collect-diagnostic-data.md)
 
 In quanto amministratore, puoi anche risolvere questi problemi da solo. 
 
@@ -132,7 +132,6 @@ Process Monitor (ProcMon) è uno strumento di monitoraggio avanzato che può mos
  
     >[!TIP] 
     >Attendere che il problema sia riprodotto completamente, quindi prendere nota del timestamp all'avvio della traccia.
-    
 
 10. Una volta che hai da due a quattro minuti di attività di processo durante la condizione di utilizzo elevato della CPU, interrompi l'acquisizione selezionando l'icona della lente di ingrandimento.
 
@@ -250,7 +249,7 @@ Lo strumento da riga di *comandowpr.exe* parte del sistema operativo a partire d
 
 1. Scaricare **[il profilo di analisi di Microsoft Defender for Endpoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** per le tracce delle prestazioni in un file denominato in una directory `WD.wprp` locale, ad esempio `C:\traces` .
 
-3. Fai clic con il pulsante destro del mouse sull'icona **del menu Start** e scegli Windows **Powershell (amministratore)** o Prompt dei comandi **(amministratore)** per aprire una finestra del prompt dei comandi dell'amministratore.
+3. Fai clic con il pulsante **destro del mouse** sull'icona Del menu Start e scegli Windows PowerShell **(Amministratore)** o Prompt dei comandi **(amministratore)** per aprire una finestra del prompt dei comandi dell'amministratore.
 
 4. Quando viene visualizzata la finestra di dialogo Controllo account utente, selezionare **Sì**.
 
@@ -280,5 +279,5 @@ Lo strumento da riga di *comandowpr.exe* parte del sistema operativo a partire d
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Raccogliere i dati di diagnostica di Microsoft Defender AV](collect-diagnostic-data.md)
+- [Raccogliere i dati di diagnostica di Microsoft Defender Antivirus](collect-diagnostic-data.md)
 - [Configurare e convalidare le esclusioni per le analisi di Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
