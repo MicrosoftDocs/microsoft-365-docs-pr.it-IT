@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e6bfb781b3454025c5ce0f43899180c91761a56d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 11a6fd00524e3dd7ad456f68da6f493d74deee69
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932560"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023190"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932560"
 
 **Si applica a:**
 - Microsoft 365 Defender
+- Microsoft Defender per endpoint
 
 
 
@@ -48,8 +49,8 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `NetworkAdapterName` | stringa | Nome della scheda di rete |
 | `MacAddress` | stringa | Indirizzo MAC della scheda di rete |
-| `NetworkAdapterType` | stringa | Tipo di scheda di rete. Per i valori possibili, fare riferimento a [questa enumerazione](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | stringa | Stato operativo della scheda di rete. Per i valori possibili, fare riferimento a [questa enumerazione](/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `NetworkAdapterType` | stringa | Tipo di scheda di rete. Per i valori possibili, fare riferimento a [questa enumerazione](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterStatus` | stringa | Stato operativo della scheda di rete. Per i valori possibili, fare riferimento a [questa enumerazione](/dotnet/api/system.net.networkinformation.operationalstatus) |
 | `TunnelType` | stringa | Protocollo di tunneling, se l'interfaccia viene utilizzata a questo scopo, ad esempio 6to4, Teredo, ISATAP, PPTP, SSTP e SSH |
 | `ConnectedNetworks` | stringa | Reti a cui è connessa la scheda. Ogni matrice JSON contiene il nome di rete, la categoria (pubblico, privato o dominio), una descrizione e un flag che indica se è connesso pubblicamente a Internet |
 | `DnsAddresses` | stringa | Indirizzi del server DNS in formato matrice JSON |

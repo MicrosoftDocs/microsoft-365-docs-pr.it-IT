@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa dispositivi mobili e sicurezza di base incorporati per rimuovere le informazioni dai dispositivi registrati.
-ms.openlocfilehash: ddf13ef6627d70128064e2d8bd185203244b12e4
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819809"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023858"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Cancellare un dispositivo mobile in Dispositivi mobili e sicurezza di base
 
@@ -45,7 +45,7 @@ I dispositivi mobili possono archiviare informazioni riservate dell'organizzazio
 
 ## <a name="wipe-a-mobile-device"></a>Cancellare un dispositivo mobile
 
-1. Accedere all'interfaccia di amministrazione di [Microsoft 365](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
+1. Accedere all'interfaccia di amministrazione di [Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Digita Gestione dispositivi mobili nel campo di ricerca e seleziona **Gestione dispositivi mobili** nell'elenco dei risultati.
 

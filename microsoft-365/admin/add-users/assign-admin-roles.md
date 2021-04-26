@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Informazioni su come assegnare ruoli di amministratore a uno o più utenti dell'azienda in modo che possano eseguire attività specifiche nell'interfaccia di amministrazione.
-ms.openlocfilehash: 5c40199823c93968be97302efc8e2d404f3cfed1
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: c723053d8d1a39bf0f996840bc418ffe299db089
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604334"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023990"
 ---
 # <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore
 
@@ -46,7 +46,7 @@ Quando si aggiungono nuovi utenti, se non si assegna loro  un ruolo di amministr
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 ## <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore 
 

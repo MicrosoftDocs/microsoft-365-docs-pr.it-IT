@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul pagamento per la Svizzera
+title: Informazioni di pagamento per la Svizzera
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -12,33 +12,35 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a667414830323b0a17669c456b70c85fa18911a3
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9fd93abaec4d3376ac75e4be03851067ec3be123
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542561"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024110"
 ---
-# <a name="payment-information-for-switzerland"></a>Informazioni sul pagamento per la Svizzera
+# <a name="payment-information-for-switzerland"></a>Informazioni di pagamento per la Svizzera
 
 [Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Pagare in CHF e fare riferimento ai numeri di fattura per la rimessa di pagamento.**
+**Pagare in CHF e fare riferimento ai numeri di fattura sulla rimessa di pagamento.**
 
 Se si dispone di una fattura fatturata da **Microsoft Ireland Operations Limited,** utilizzare queste informazioni bancarie:
 
-Bank: Citibank, Londra\
+Bank: Citibank, London\
 Codice SWIFT: CITIGB2L\
 Codice IBAN: GB44CITI18500812207648\
 Numero account: 12207648\
 Nome account: MICROSOFT
 
-Se si dispone di una fattura fatturata da **Microsoft Schweiz GmbH** per ordini e consumi a partire dal 1° marzo 2021, utilizzare le seguenti informazioni bancarie:
+Se si dispone di una fattura fatturata da **Microsoft Schweiz GmbH** per ordini e consumi a partire dal 1° marzo 2021, utilizzare queste informazioni bancarie:
 
-Bank: Citibank Europe plc\
+Banca: Citibank Europe plc\
 Codice SWIFT: CITIIE2X\
 Codice IBAN: IE59CITI99005170000132\
 Numero account: 70000132\
 Nome account: MICROSOFT
+
+Le fatture emesse da una filiale Microsoft locale vengono emesse con l'aliquota standard dell'IVA/IVA/GST e ritenute una fornitura nazionale di servizi ai fini dell'IVA/IVA/GST.

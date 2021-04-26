@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40663a06e380377ccfa33dcb41a69c42e729704d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1b716a37aa39dffc8dc541335f42265ae47fe989
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935510"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023004"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935510"
 
 **Si applica a:**
 - Microsoft 365 Defender
+- Microsoft Defender per endpoint
 
 La `DeviceFileEvents` tabella nello schema di ricerca [avanzata](advanced-hunting-overview.md) contiene informazioni sulla creazione, la modifica e altri eventi del file system. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 

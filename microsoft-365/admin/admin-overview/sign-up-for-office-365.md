@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Informazioni su cosa è necessario sapere prima di eseguire la procedura di registrazione per Office 365. '
-ms.openlocfilehash: 93d3f58db24e4233e8d7b2929fd2471707614097
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f2a4f555540b801441644af28435170f82229909
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904373"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023918"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Come iscriversi - Guida per gli amministratori
 
@@ -70,7 +70,7 @@ Guarda un breve video sulla scelta di un piano di Microsoft 365 per le aziende.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 Serve assistenza per la scelta di un piano? I consulenti di vendita sono a disposizione per rispondere a qualsiasi domanda. Vai a [Confronta tutti i prodotti](https://products.office.com/compare-all-microsoft-office-products?tab=2) e scegli una delle opzioni di supporto per i contatti elencate a sinistra della pagina.
   
@@ -135,6 +135,6 @@ Non è necessario annullare la versione di valutazione. Se la sottoscrizione di 
     > [!IMPORTANT]
     >  Al momento dell'iscrizione, assicurati di scegliere l'opzione di pagamento migliore per la tua organizzazione. Per modificare le opzioni di pagamento è necessario chiamare il servizio di supporto per la fatturazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-content"></a>Contenuto correlato
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+Video di formazione su [Microsoft 365 per le](../../business-video/index.yml) aziende (collegamenti)

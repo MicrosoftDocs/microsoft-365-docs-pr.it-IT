@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 per le aziende.
-ms.openlocfilehash: da2f2b7aced29cd121f7d597af5a518462d2623d
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222052"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023978"
 ---
 # <a name="reset-passwords"></a>Reimpostare password
 
@@ -50,7 +50,7 @@ Guarda un breve video sulla reimpostazione delle password degli utenti.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Passaggi: Reimpostare una password aziendale per un utente
 
@@ -150,4 +150,4 @@ Leggere questo articolo: [Si è dimenticato l'account o la password per l'accoun
 
 [Rimuovere un ex dipendente](remove-former-employee.md)
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](../../business-video/index.yml)

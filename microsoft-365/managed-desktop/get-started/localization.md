@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20456ce837be60b707569ae07d4fb00b695b3a98
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445982"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023262"
 ---
 # <a name="localize-the-user-experience"></a>Localizzare l'esperienza utente
 
@@ -62,43 +62,43 @@ Se si riutilizzano dispositivi esistenti, potrebbe essere necessario collaborare
 
 [L'immagine universale](../service-description/device-images.md#universal-image) fornita da Microsoft Managed Desktop include queste lingue e per Windows 10:
 
+- Arabo
+- Bulgaro
+- Chinese Simplified
+- Chinese Traditional
+- Croato
+- Ceco
+- Danese  
+- Olandese  
 - Inglese (US, GB, AU, CA, IN)
-- Spagnolo (Spagna, Messico)
-- Giapponese
+- Estone
+- Finlandese 
 - Francese (Francia, Canada)
 - Tedesco
-- Portoghese (Brasile)
-- Italiano
-- Chinese Simplified
-- Olandese  
-- Svedese
-- Danese  
-- Finlandese 
-- Russo 
-- Norvegese (Bokmal)
-- Coreano
-- Chinese Traditional
-- Polacco
-- Turco
-- Arabo
-- Ebraico
-- Portoghese (Portogallo)
-- Ceco
-- Ungherese
-- Thai
-- Indonesiano
 - Greco
-- Slovacco
-- Vietnamita
-- Sloveno
-- Croato
-- Romeno
-- Lituano
-- Bulgaro
-- Serbo (alfabeto latino)
+- Ebraico
+- Ungherese
+- Indonesiano
+- Italiano
+- Giapponese
+- Coreano
 - Lettone
+- Lituano
+- Norvegese (Bokmål)
+- Polacco
+- Portoghese (Brasile)
+- Portoghese (Portogallo)
+- Rumeno
+- Russo 
+- Serbo (alfabeto latino)
+- Slovacco
+- Sloveno
+- Spagnolo (Spagna, Messico)
+- Svedese
+- Tailandese
+- Turco
 - Ucraino
-- Estone
+- Vietnamita
 
 Microsoft 365 Apps for Enterprise potrebbe supportare un elenco leggermente diverso.
 

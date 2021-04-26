@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni su come aggiungere utenti e assegnare licenze a Microsoft 365 contemporaneamente.
 ms.date: 07/01/2020
-ms.openlocfilehash: a7c5fcf1a129a1d434b6e641688ce4c5d234817d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 97b7118f4052d4ab4e0ffe8ecec96f32e4042108
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760003"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024014"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aggiungere utenti e assegnare licenze contemporaneamente
 
@@ -85,7 +85,7 @@ Per aggiungere più utenti contemporaneamente, è possibile usare uno dei metodi
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver aggiunto un utente, si riceve una notifica tramite posta elettronica da Microsoft. con l'ID utente e la password della persona, che potrà quindi accedere a Microsoft 365. Usare il consueto processo per la comunicazione di nuove password. Condividere con loro la [guida introduttiva per i dipendenti](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f), ricca di informazioni su come, ad esempio, [scaricare e installare le app di Office in un PC o un Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) e [configurare le app di Office e la posta elettronica in un dispositivo mobile](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+Dopo aver aggiunto un utente, si riceve una notifica tramite posta elettronica da Microsoft. con l'ID utente e la password della persona, che potrà quindi accedere a Microsoft 365. Usare il consueto processo per la comunicazione di nuove password. Condividere con loro la [guida introduttiva per i dipendenti](../../business-video/employee-quick-setup.md), ricca di informazioni su come, ad esempio, [scaricare e installare le app di Office in un PC o un Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) e [configurare le app di Office e la posta elettronica in un dispositivo mobile](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## <a name="related-content"></a>Contenuti correlati
 

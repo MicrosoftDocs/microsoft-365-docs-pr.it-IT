@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa Dispositivi mobili e sicurezza di base per creare criteri per i dispositivi che proteggono le informazioni dell'organizzazione.
-ms.openlocfilehash: f31930f1a753259622520e50da8c255e7cd410e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904289"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023906"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Creare criteri di sicurezza dei dispositivi in Dispositivi mobili e sicurezza di base
 
@@ -36,7 +36,7 @@ ms.locfileid: "50904289"
 
 - Informazioni sui dispositivi, le app per dispositivi mobili e le impostazioni di sicurezza supportate da Dispositivi mobili e sicurezza di base. Vedi [Funzionalità della mobilità e della sicurezza di base.](capabilities.md)
 - Creare gruppi di sicurezza che includano gli utenti di Microsoft 365 a cui si desidera distribuire i criteri e per gli utenti che si desidera escludere dall'accesso a Microsoft 365. Prima di distribuire un nuovo criterio per l'organizzazione verifica i criteri distribuendoli a un numero limitato di utenti. È possibile creare e usare un gruppo di sicurezza che include solo se stessi o un numero limitato di utenti di Microsoft 365 che possono testare il criterio automaticamente. Per ulteriori informazioni sui gruppi di sicurezza, vedere [Creare, modificare o eliminare un gruppo di sicurezza.](../email/create-edit-or-delete-a-security-group.md)
-- Per creare e distribuire i criteri di sicurezza e mobilità di base in Microsoft 365, è necessario essere un amministratore globale di Microsoft 365. Per altre info, vedi [Autorizzazioni nel Centro sicurezza & conformità.](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)
+- Per creare e distribuire i criteri di sicurezza e mobilità di base in Microsoft 365, è necessario essere un amministratore globale di Microsoft 365. Per altre info, vedi [Autorizzazioni nel Centro sicurezza & conformità.](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 - Prima di distribuire i criteri, consenti all'organizzazione di conoscere i potenziali effetti della registrazione di un dispositivo in Dispositivi mobili e sicurezza di base. A seconda di come si configurano i criteri, ai dispositivi non conformi può essere impedito l'accesso a Microsoft 365 e ai dati, incluse le applicazioni installate, le foto e le informazioni personali in un dispositivo registrato, e i dati possono essere eliminati.
 
 >[!NOTE]
@@ -85,7 +85,7 @@ Il criterio viene inserito nel dispositivo mobile di ogni utente. Il criterio si
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>Passaggio 4: Bloccare l'accesso alla posta elettronica per i dispositivi non supportati
 
-Per proteggere le informazioni dell'organizzazione, è consigliabile bloccare l'accesso dell'app alla posta elettronica di Microsoft 365 per i dispositivi mobili non supportati da Dispositivi mobili e sicurezza di base. Per un elenco dei dispositivi supportati, vedi [Dispositivi supportati.](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)
+Per proteggere le informazioni dell'organizzazione, è consigliabile bloccare l'accesso dell'app alla posta elettronica di Microsoft 365 per i dispositivi mobili non supportati da Dispositivi mobili e sicurezza di base. Per un elenco dei dispositivi supportati, vedi [Dispositivi supportati.](../../admin/basic-mobility-security/capabilities.md)
 
 **Per bloccare l'accesso alle app:**
 

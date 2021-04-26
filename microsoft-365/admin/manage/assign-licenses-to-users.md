@@ -22,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come assegnare licenze agli utenti.
-ms.openlocfilehash: 3622be180ae622d5d08066cc03773a8175fe9342
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 9fa8981949215c4cf7779a21ff7089d7534e1ef0
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398164"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023750"
 ---
 # <a name="assign-licenses-to-users"></a>Assegnare licenze agli utenti
 
@@ -174,7 +174,7 @@ Nella pagina **Utenti attivi** si assegnano licenze utente ai prodotti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Se gli utenti non hanno ancora installato le app di Office, si può condividere con loro la [guida introduttiva per i dipendenti](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f), ricca di informazioni su come, ad esempio, [scaricare e installare Microsoft 365 o Office 2019 in un PC o un Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) e [configurare le app di Office e la posta elettronica in un dispositivo mobile](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+Se gli utenti non hanno ancora installato le app di Office, si può condividere con loro la [guida introduttiva per i dipendenti](../../business-video/employee-quick-setup.md), ricca di informazioni su come, ad esempio, [scaricare e installare Microsoft 365 o Office 2019 in un PC o un Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) e [configurare le app di Office e la posta elettronica in un dispositivo mobile](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## <a name="related-content"></a>Contenuto correlato
 

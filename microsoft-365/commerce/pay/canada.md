@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 909cd6a7e3d1334ab2aa5ad2ad000de55e3a1224
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 94febae2ba015ebc102473937443129bcfc56e9c
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551801"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024134"
 ---
 # <a name="payment-information-for-canada"></a>Informazioni di pagamento per il Canada
 
@@ -25,22 +25,24 @@ ms.locfileid: "50551801"
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Si prega di pagare in CAD e di fare riferimento ai numeri di fattura sulla rimessa di pagamento.**
+**Pagare in CAD e fare riferimento ai numeri di fattura nella rimessa di pagamento.**
 
-Se si dispone di una fattura fatturata da **Microsoft Corporation,** utilizzare le seguenti informazioni bancarie:
+Se si dispone di una fattura fatturata da **Microsoft Corporation,** utilizzare queste informazioni bancarie:
 
 Bank: Bank of America, Toronto\
 Codice SWIFT: BOFACATT\
-Numero di conto: 45571239\
+Numero account: 45571239\
 Nome account: MICROSOFT\
-BANK ID: 241\
+ID banca: 241\
 Branch: 56792\
 Nome account: MICROSOFT
 
-Se si dispone di una fattura fatturata da **Microsoft Canada Inc.** per ordini e consumi a partire dal 1° marzo 2021, utilizzare le seguenti informazioni bancarie:
+Se si dispone di una fattura fatturata da **Microsoft Canada Inc.** per ordini e consumi a partire dal 1° marzo 2021, utilizzare queste informazioni bancarie:
 
 Bank: Citibank N.A., Canadian Branch\
 Routing Number: 032820012\
 Codice BIC/SWIFT: CITICATTBCH\
 Numero account: 3003600001\
 Nome account: MICROSOFT
+
+Le fatture emesse da una filiale Microsoft locale vengono emesse con l'aliquota standard dell'IVA/IVA/GST e ritenute una fornitura nazionale di servizi ai fini dell'IVA/IVA/GST.

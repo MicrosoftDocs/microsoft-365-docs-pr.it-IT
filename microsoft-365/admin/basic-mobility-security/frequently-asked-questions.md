@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Domande frequenti sulla mobilità e la sicurezza di base.
-ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 14e12678ec210325f63914594fb6debcf7abb880
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906265"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023894"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>Domande frequenti su Mobilità e sicurezza di base
 
@@ -51,7 +51,7 @@ Per ulteriori informazioni, vedere [Set up Basic Mobility and Security.](set-up.
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Si sta tentando di configurare La mobilità di base e la sicurezza, ma sembra bloccata. Integrità dei servizi di Microsoft 365 mostra il "provisioning" da un po' di tempo. per correggere il problema?
 
-Potrebbe essere necessario del tempo per prepararsi al servizio. Al termine del provisioning, verrà visualizzata la pagina Dispositivi mobili e sicurezza di base. Se hai atteso 24 ore e lo stato è ancora provisioning, contatta il supporto e ti aieremo a capire qual è il problema. Per le opzioni di supporto, vedere [Serve ancora assistenza?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
+Potrebbe essere necessario del tempo per prepararsi al servizio. Al termine del provisioning, verrà visualizzata la pagina Dispositivi mobili e sicurezza di base. Se hai atteso 24 ore e lo stato è ancora provisioning, contatta il supporto e ti aieremo a capire qual è il problema.
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>Cosa posso fare se la registrazione dei dispositivi ha esito negativo?
 
@@ -73,7 +73,7 @@ La mobilità e la sicurezza di base sono ospitate dal servizio Intune. Si tratta
 
 ## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>Come funzionano i criteri per la mobilità e la sicurezza di base? Come si configurano? Disabilitarli?
 
-Dopo aver completato la configurazione iniziale per Dispositivi mobili e sicurezza di base, è possibile creare criteri e applicarli a gruppi di utenti nel Centro sicurezza & conformità. I criteri richiedono agli utenti dei criteri di registrare i propri dispositivi in Dispositivi mobili e sicurezza di base prima che il dispositivo possa essere usato per accedere ai dati di Microsoft 365. I criteri impostati determinano le impostazioni per i dispositivi mobili, ad esempio la frequenza con cui le password devono essere reimpostate o se è necessaria la crittografia dei dati. Per ulteriori informazioni, vedere [Create device security policies in Basic Mobility and Security](create-device-security-policies.md)and Microsoft   [365 compliance center.](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8)
+Dopo aver completato la configurazione iniziale per Dispositivi mobili e sicurezza di base, è possibile creare criteri e applicarli a gruppi di utenti nel Centro sicurezza & conformità. I criteri richiedono agli utenti dei criteri di registrare i propri dispositivi in Dispositivi mobili e sicurezza di base prima che il dispositivo possa essere usato per accedere ai dati di Microsoft 365. I criteri impostati determinano le impostazioni per i dispositivi mobili, ad esempio la frequenza con cui le password devono essere reimpostate o se è necessaria la crittografia dei dati. Per ulteriori informazioni, vedere [Create device security policies in Basic Mobility and Security](create-device-security-policies.md)and Microsoft   [365 compliance center.](../../compliance/microsoft-365-compliance-center.md)
 
 Per istruzioni dettagliate sulla creazione e la distribuzione dei criteri dei dispositivi, vedi Creare criteri di sicurezza dei dispositivi [in Dispositivi mobili e sicurezza di base.](create-device-security-policies.md)
 

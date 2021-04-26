@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 86d1ac6f816fae667e64ac4806db40d6e8e002ca
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 87c0b1aace9d1d3950fef1f8375b4668aeaaef21
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551285"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024074"
 ---
 # <a name="payment-information-for-finland"></a>Informazioni di pagamento per la Finlandia
 
@@ -25,20 +25,22 @@ ms.locfileid: "50551285"
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Pagare in EUR e fare riferimento ai numeri di fattura per la rimessa di pagamento.**
+**Pagare in EUR e fare riferimento ai numeri di fattura sulla rimessa di pagamento.**
 
 Se si dispone di una fattura fatturata da **Microsoft Ireland Operations Limited,** utilizzare queste informazioni bancarie:
 
-Bank: Citibank, Londra\
+Bank: Citibank, London\
 Codice SWIFT: CITIGB2L\
 Codice IBAN: GB31CITI18500812207591\
-Numero di conto: 12207591\
+Numero account: 12207591\
 Nome account: MICROSOFT
 
-Se si dispone di una fattura fatturata da **Microsoft Oy** per ordini e consumi a partire dal 1° marzo 2021, utilizzare le seguenti informazioni bancarie:
+Se si dispone di una fattura fatturata da **Microsoft Oy** per ordini e consumi a partire dal 1° marzo 2021, utilizzare queste informazioni bancarie:
 
-Bank: Citibank Europe plc\
+Banca: Citibank Europe plc\
 Codice SWIFT: CITIIE2X\
 Codice IBAN: IE97CITI99005170000127\
 Numero account: 70000127\
 Nome account: MICROSOFT
+
+Le fatture emesse da una filiale Microsoft locale vengono emesse con l'aliquota standard dell'IVA/IVA/GST e ritenute una fornitura nazionale di servizi ai fini dell'IVA/IVA/GST.

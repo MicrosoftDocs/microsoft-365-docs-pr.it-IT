@@ -21,12 +21,12 @@ description: 'Interfaccia di amministrazione di Microsoft 365: informazioni sull
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768722"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024194"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia di amministrazione di Microsoft 365
 
@@ -231,7 +231,7 @@ Alcuni mesi fa è stata aggiunta un'impostazione che consente di gestire i messa
 
 ### <a name="docs-training-and-videos-june"></a>Documenti, formazione e video (giugno)
 
-- [Introduzione a Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+- [Introduzione a Teams](../business-video/get-started-teams-small-business.md)
 
 ## <a name="may-2020"></a>Maggio 2020
 
@@ -333,19 +333,19 @@ Novità della **serie di video di Microsoft 365**: questo mese vengono forniti s
 
 #### <a name="for-your-users"></a>Per gli utenti
 
-- [Pianificare una riunione](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Pianificare una riunione](../business-video/schedule-guest-meeting.md)
 - [Partecipare a una riunione di Teams](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Creare un team di tutta l'organizzazione](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Creare un team con utenti guest](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Partecipare a un team come guest](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Creare un indirizzo di posta elettronica di gruppo](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Creare un team di tutta l'organizzazione](../business-video/org-wide-team.md)
+- [Creare un team con utenti guest](../business-video/team-with-guests.md)
+- [Partecipare a un team come guest](../business-video/join-team-guest.md)
+- [Creare un indirizzo di posta elettronica di gruppo](../business-video/group-email.md)
 
 #### <a name="for-admins-and-business-owners"></a>Per amministratori e proprietari di aziende
 
 - [Potenziare le piccole aziende con il lavoro remoto](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Esecuzione di una piccola azienda remota](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Iscriversi a Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Configurazione dell'accesso a due fattori](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Esecuzione di una piccola azienda remota](../business-video/sign-up.md)
+- [Iscriversi a Microsoft Business Basic](../business-video/sign-up.md)
+- [Configurazione dell'accesso a due fattori](../business-video/sign-up.md)
 
 ## <a name="march-2020"></a>Marzo 2020
 

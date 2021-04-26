@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Usare l'interfaccia di amministrazione per configurare l'organizzazione nel cloud e gestire utenti e abbonamenti. Per iniziare, accedere all'account con autorizzazioni di amministratore.
-ms.openlocfilehash: ef606565d7cad94bc0c7ff81630ef6c2fe8a6fc4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 8dcd806318bad4aed37aa8cccce4bf90c32e824c
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222088"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023954"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informazioni sull'interfaccia di amministrazione di Microsoft 365
 
@@ -43,7 +43,7 @@ Guardare un breve video sull'interfaccia di amministrazione. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
-Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](../../business-video/index.yml).
 
 ## <a name="how-to-get-to-the-admin-center"></a>Come accedere all'interfaccia di amministrazione
 
@@ -99,6 +99,6 @@ Ecco le funzionalità e le impostazioni disponibili nel riquadro di spostamento 
 
 - [Gestire un gruppo di Microsoft 365](../create-groups/manage-groups.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-content"></a>Contenuto correlato
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+Video di formazione su [Microsoft 365 per le](../../business-video/index.yml) aziende (collegamenti)

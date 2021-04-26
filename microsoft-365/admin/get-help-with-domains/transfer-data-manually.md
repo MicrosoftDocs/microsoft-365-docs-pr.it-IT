@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Informazioni su come trasferire manualmente i dati tra due account di Microsoft 365 quando è stato modificato il piano o il nome della società o sono state combinate più sottoscrizioni in uno.
-ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b240ffbbdbfb6ed7d20a9ead9b1ee90a3af4570d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915507"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023834"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Trasferire manualmente i dati tra due account
 
@@ -91,11 +91,11 @@ Esistono vari modi per salvare o trasferire i dati del sito del team:
   
 - Si può salvare il vecchio sito come modello e importare il modello nel nuovo sito.
 
-- Per trasferire i documenti, ricreare manualmente la gerarchia nel nuovo sito. Fatto questo, sarà possibile aprire contemporaneamente entrambi i siti del team di SharePoint, aprire entrambe le raccolte documenti con Esplora risorse e copiare e incollare i documenti. Vedere [Video: Copiare o spostare file delle raccolte tramite Apri con Esplora risorse](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+- Per trasferire i documenti, ricreare manualmente la gerarchia nel nuovo sito. Fatto questo, sarà possibile aprire contemporaneamente entrambi i siti del team di SharePoint, aprire entrambe le raccolte documenti con Esplora risorse e copiare e incollare i documenti. Vedere [Video: Copiare o spostare file delle raccolte tramite Apri con Esplora risorse](../../business-video/store-files.md).
 
 - Per trasferire dati di elenco, salvare un [modello di elenco](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393) e usare il modello salvato per ricreare l'elenco nel nuovo sito.
 
-- Per salvare una raccolta documenti o il contenuto di un elenco da un ambiente SharePoint Online (OneDrive for Business o siti del team) in condivisioni file o in un computer locale, vedere Informazioni sulla migrazione manuale del contenuto di [SharePoint Online.](https://support.microsoft.com/kb/2783484)
+- Per salvare una raccolta documenti o il contenuto di un elenco da un ambiente SharePoint Online (OneDrive for Business o siti del team) in condivisioni file o in un computer locale, vedere Informazioni sulla migrazione manuale del contenuto di [SharePoint Online.](/sharepoint/troubleshoot/migration-tool/content-manual-migration)
 
 ## <a name="transfer-users-data-between-subscriptions"></a>Trasferire i dati degli utenti tra gli abbonamenti
 
