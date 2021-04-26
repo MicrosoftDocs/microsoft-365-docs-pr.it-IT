@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Configurazione della comprensione dei contenuti in Project Cortex
-ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051568"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994702"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurazione di SharePoint Syntex
 
@@ -59,6 +59,8 @@ Se nell'organizzazione sono presenti più di 300 licenze di SharePoint Syntex, s
 
 È possibile stimare la capacità di AI Builder che più adatta all’utente con [Calcolatore AI Builder](https://powerapps.microsoft.com/ai-builder-calculator).
 
+Se si pianifica di usare un ambiente Power Platform personalizzato, è necessario [allocare crediti a tale ambiente](/power-platform/admin/capacity-add-on).
+
 Passare all'[interfaccia di amministrazione di Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) per controllare i crediti e il relativo utilizzo.
 
 ## <a name="to-set-up-sharepoint-syntex"></a>Per configurare SharePoint Syntex
@@ -80,11 +82,21 @@ Passare all'[interfaccia di amministrazione di Power Platform](https://admin.pow
       - **Nessuna raccolta di SharePoint** se non si vuole rendere l’opzione disponibile in alcun sito. È possibile modificare questa impostazione dopo la configurazione.
 
    > [!div class="mx-imgBorder"]
-   > ![Configurare l'elaborazione moduli](../media/content-understanding/admin-configforms.png)
+   > ![Configurare le opzioni del sito per l'elaborazione moduli](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Rimuovere un sito dopo che l’opzione è stata inclusa, non influisce sui modelli esistenti applicati alle raccolte del sito o sulla possibilità di applicare modelli di analisi dei documenti a una raccolta. 
     
+    Se sono configurati più ambienti Power Platform, sarà possibile scegliere quale usare per l'elaborazione moduli. (Questa opzione non verrà visualizzata se si dispone di un solo ambiente.)
+
+    ![Configurare le opzioni di Power Platform per l'elaborazione moduli](../media/content-understanding/setup-power-platform-env.png)
+
+    Per l'**ambiente di Power Platform**, è possibile selezionare:
+    - **Usare l'ambiente predefinito** per usare l'ambiente Power Platform predefinito.
+    - **Usare un ambiente personalizzato** per utilizzare un ambiente personalizzato. Scegliere l'ambiente che si desidera usare dall'elenco. È necessario installare l'app *AI Builder per Project Cortex* in questo ambiente e allocare crediti AI Builder prima di creare modelli di elaborazione moduli.
+
+    Fare clic su **Avanti**.
+
 5. Nella pagina **Creare un centro contenuti**, è possibile creare un sito del centro contenuti di SharePoint in cui gli utenti possono creare e gestire i modelli di analisi dei documenti.
 
     1. Per **Nome del sito**, digitare il nome che si desidera assegnare al sito del centro contenuti.
@@ -126,3 +138,5 @@ Per assegnare le licenze:
 [Panoramica del modello di elaborazione moduli](/ai-builder/form-processing-model-overview)
 
 [Istruzioni dettagliate per la creazione di un modello di analisi dei documenti (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
+
+[Creare e gestire ambienti nell'interfaccia di amministrazione di Power Platform](/power-platform/admin/create-environment)
