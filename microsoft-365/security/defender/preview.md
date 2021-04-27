@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 291ee6d2f72579a6daf731c121265164b2aaa547
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c82e1abf9e539ad169bbc488ade9cd21bb8e6727
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066741"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029075"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Funzionalità di anteprima di Microsoft 365 Defender
 
@@ -68,10 +68,6 @@ Se la casella di controllo **Attivare le funzionalità di anteprima** è selezio
 
 Le caratteristiche e i miglioramenti seguenti sono attualmente disponibili in anteprima:
 
-### <a name="improved-microsoft-365-security-center"></a>Centro sicurezza Microsoft 365 migliorato
-Il nuovo [Centro sicurezza Microsoft 365](https://security.microsoft.com) è ora disponibile in anteprima pubblica. Questa nuova esperienza consente di accedere a Defender per endpoint, Defender per Office 365, Microsoft 365 Defender e altre soluzioni nel Centro sicurezza Microsoft 365. Questa è la nuova sede per gestire i controlli di sicurezza. [Informazioni sulle novità](./overview-security-center.md).
-
-- Report di analisi delle minacce di **[Microsoft 365 Defender:](threat-analytics.md)** l'analisi delle minacce consente di rispondere e ridurre al minimo l'impatto degli attacchi attivi. Sono inoltre disponibili informazioni sui tentativi di attacco bloccati dalle soluzioni di Microsoft 365 Defender ed eseguire azioni preventive che attenuano il rischio di ulteriore esposizione e aumentano la resilienza. Come parte dell'esperienza di sicurezza unificata, l'analisi delle minacce è ora disponibile per i titolari della licenza di Microsoft Defender for Endpoint e Microsoft Defender per Office E5.
 - **[API di Microsoft 365 Defender:](api-overview.md)** le API di Microsoft 365 Defender di primo livello ti consentiranno di automatizzare i flussi di lavoro in base alle tabelle di ricerca avanzate e degli eventi imprevisti condivisi. 
 - **[Intervenire nella ricerca avanzata:](advanced-hunting-take-action.md)** è possibile contenere rapidamente minacce o affrontare asset compromessi che si trovano nella [ricerca avanzata.](advanced-hunting-overview.md)
 - **[Riferimento allo schema nel portale:](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** informazioni sulle tabelle dello schema di ricerca avanzate direttamente nel Centro sicurezza. Oltre alle descrizioni di tabelle e colonne, questo riferimento include tipi di eventi supportati `ActionType` (valori) e query di esempio.

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: comprendere le azioni e gli impatti delle fasi di migrazione del passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area dati tedesca.'
-ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995022"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029063"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Azioni e impatti delle fasi di migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -226,7 +226,7 @@ In questa fase, Skype for Business verrà migrato a Microsoft Teams. I clienti S
 - I contatti e le riunioni verranno migrati in Microsoft Teams.
 - Gli utenti non potranno accedere a Skype for Business tra le transizioni dei servizi di tempo ai servizi di Office 365 e non fino al completamento delle voci DNS dei clienti.
 - I contatti e le riunioni esistenti continueranno a funzionare come riunioni Skype for Business.
-- La versione web browser di Microsoft Teams non funzionerà dopo il completamento della fase 9.
+- La versione web browser di Microsoft Teams non funzionerà fino al completamento della fase 9.
 
 Se devi connetterti a Skype for Business online con PowerShell dopo il completamento della fase di migrazione 9, usa il codice di PowerShell seguente per connetterti:
 

@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 571acc9c240fc0243998050ac3013258a2f85a3e
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574620"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028945"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>App in Microsoft Managed Desktop
 
@@ -27,8 +27,7 @@ ms.locfileid: "51574620"
 
 Microsoft include alcune app chiave insieme alla licenza di Microsoft 365 E3 o E5 necessaria per partecipare a Microsoft Managed Desktop. Tuttavia, anche se forniamo queste app, hai ancora alcune responsabilità e azioni da completare.
 
-Puoi anche distribuire altre app non Microsoft agli utenti per il self-service tramite il portale aziendale o un'installazione in background necessaria, il tutto usando la pipeline di distribuzione di Microsoft Intune. Se si dispone delle competenze necessarie, è possibile eseguire la migrazione delle app necessarie. in alternativa, Microsoft Consulting Services (MCS) o fornitori non Microsoft saranno lieti di aiutarti con un progetto di creazione di pacchetti e migrazione. Per ulteriori informazioni sull'utilizzo di MCS, vedere [Utilizzo di Microsoft Consulting Services.](apps-MCS.md)
-
+Puoi anche distribuire altre app non Microsoft agli utenti per il self-service tramite il portale aziendale o un'installazione in background necessaria, il tutto usando la pipeline di distribuzione di Microsoft Intune. 
 
 ## <a name="apps-provided-by-microsoft"></a>App fornite da Microsoft
 
@@ -48,10 +47,7 @@ Esistono ancora alcune operazioni da eseguire con queste app:
 
 ## <a name="apps-you-provide"></a>App fornite
 
-Probabilmente hai altre app necessarie per le tue operazioni aziendali. Queste app possono essere distribuite solo nei dispositivi Microsoft Managed Desktop tramite la pipeline di distribuzione di Microsoft Intune. Se l'app ne ha bisogno, puoi averli in pacchetto da un fornitore (che potrebbe essere un fornitore non Microsoft o Microsoft Consulting Services (MCS)) o, se hai i mezzi, puoi creare il pacchetto manualmente. Questi pacchetti vengono quindi aggiunti al portale Microsoft Managed Desktop e assegnati ai gruppi di Azure Active Directory per attivare la distribuzione. 
-
-Se attualmente distribuisci le app usando Microsoft Endpoint Configuration Manager, Microsoft Managed Desktop può fornire una query per valutare le tue app e scoprire quali sono pronte per la migrazione a Microsoft Intune e quali potrebbero richiedere alcune modifiche.
-
+Probabilmente hai altre app necessarie per le tue operazioni aziendali. Queste app possono essere distribuite solo nei dispositivi Microsoft Managed Desktop tramite la pipeline di distribuzione di Microsoft Intune. Per altre informazioni sulla distribuzione delle applicazioni, segui i passaggi descritti in [Deploy apps to Microsoft Managed Desktop devices.](../get-started/deploy-apps.md)
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Preparazione delle proprie app per l'inclusione in Microsoft Managed Desktop
 Controlla le app, controllando:
@@ -59,24 +55,6 @@ Controlla le app, controllando:
 - Nessuna delle app è proibita o ha un comportamento limitato, come descritto in Requisiti per le app desktop gestite [da Microsoft.](../service-description/mmd-app-requirements.md)
 - Le app devono essere pronte per la gestione da Parte di Microsoft Intune. Per altre informazioni su questo argomento, vedi Distribuzione di app di [Windows 10 con Microsoft Intune](/intune/apps-windows-10-app-deploy) e Aggiungere app a Microsoft [Intune.](/intune/apps-add)
 - Altri requisiti di pre-creazione del pacchetto, ad esempio la fornitura di codici di licenza, il contratto con le condizioni di licenza e la pre-impostazione delle connessioni server.
-
-### <a name="decide-how-to-package-apps"></a>Decidere come creare il pacchetto delle app
-
-Alcuni editori di software indipendenti potrebbero richiedere che le tue app siano in pacchetto prima della distribuzione centralizzata. "Creazione di pacchetti" significa che il programma di installazione dell'app è configurato con impostazioni come codici di licenza, posizioni remote del server o collegamenti desktop in modo che l'app possa essere installata in background.
-
-Esistono tre opzioni per il pacchetto delle app: 
-
-
-- Puoi creare il pacchetto delle app manualmente
-- È possibile collaborare con un fornitore non Microsoft
-- Puoi interagire con MCS per creare un pacchetto delle tue app. Collaborare con il rappresentante dell'account Microsoft. Per ulteriori informazioni, vedere [Utilizzo di Microsoft Consulting Services.](apps-MCS.md)
-
-
-
-## <a name="deploying-apps"></a>Distribuzione di app
-
-Qualunque sia il metodo che usi per ottenere le app in pacchetto, una volta che è stato completato, sei pronto a seguire i passaggi descritti in [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.md).
-
 
 ## <a name="steps-to-get-ready"></a>Passaggi per prepararsi
 

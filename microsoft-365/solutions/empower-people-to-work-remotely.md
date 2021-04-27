@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Assicurarsi di aver abilitato tutte le caratteristiche di Microsoft 365 per massimizzare la produttività dei lavoratori remoti e mantenere l'accesso sicuro ai server, ai dati e al cloud.
-ms.openlocfilehash: aa72ba0c47acdd507bf86a082c9b4c2a87e3f1ef
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055520"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029123"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 

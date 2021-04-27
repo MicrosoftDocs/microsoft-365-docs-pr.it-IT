@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 91029f03e089f44f49800bfe2d18536a8d415411
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933386"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029029"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novità di Microsoft 365 Defender
 
@@ -38,6 +38,12 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+## <a name="april-2021"></a>Aprile 2021
+- Centro sicurezza Microsoft 365 migliorato <br> Il nuovo [Centro sicurezza Microsoft 365](https://security.microsoft.com) è ora disponibile in anteprima pubblica. Questa nuova esperienza consente di accedere a Defender per endpoint, Defender per Office 365, Microsoft 365 Defender e altre soluzioni nel Centro sicurezza Microsoft 365. Questa è la nuova sede per gestire i controlli di sicurezza. [Informazioni sulle novità](./overview-security-center.md).
+
+- [Report analisi delle minacce di Microsoft 365 Defender](threat-analytics.md)<br>
+ L'analisi delle minacce consente di rispondere e ridurre al minimo l'impatto degli attacchi attivi. Sono inoltre disponibili informazioni sui tentativi di attacco bloccati dalle soluzioni di Microsoft 365 Defender ed eseguire azioni preventive che attenuano il rischio di ulteriore esposizione e aumentano la resilienza. Come parte dell'esperienza di sicurezza unificata, l'analisi delle minacce è ora disponibile per i titolari della licenza di Microsoft Defender for Endpoint e Microsoft Defender per Office E5.
 
 ## <a name="march-2021"></a>Marzo 2021
 - [Tabella CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Informazioni sugli eventi in varie app e servizi cloud trattati da Microsoft Cloud App Security. Questa tabella include anche informazioni precedentemente disponibili in `AppFileEvents` .

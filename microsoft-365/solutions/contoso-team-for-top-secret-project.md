@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: laurawi
+manager: dansimp
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: in che modo Contoso ha usato un team con isolamento della sicurezza per un progetto top-secret per sviluppare una nuova famiglia di prodotti e servizi.'
-ms.openlocfilehash: d5ab2808251ff6a53f8975ea868431691d3301e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 751bf3972d148219a6cc341067c0bf34cd581447
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051007"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029017"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team isolato per un progetto top-secret di Contoso Corporation
 
@@ -40,7 +40,7 @@ Il personale IT di Contoso ha utilizzato [un team con isolamento della](secure-t
 
 ## <a name="step-1-created-a-private-team"></a>Passaggio 1: Creare un team privato
 
-Innanzitutto, per proteggere l'accesso al sito di SharePoint sottostante per il team, gli amministratori IT di Contoso hanno configurato i [criteri di accesso di SharePoint consigliati.](../security/defender-365-security/sharepoint-file-access-policies.md)
+Innanzitutto, per proteggere l'accesso al sito di SharePoint sottostante per il team, gli amministratori IT di Contoso hanno configurato i [criteri di accesso di SharePoint consigliati.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Successivamente, un amministratore IT di Contoso ha creato un nuovo team privato denominato Project 2X e aggiunto gli account utente del personale di Project 2X come membri. Il team è stato inoltre configurato in modo che solo i proprietari del team di Project 2X possano creare canali privati.
 
@@ -64,7 +64,7 @@ Per i dettagli della configurazione, vedere [Create a sensitivity label](secure-
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Passaggio 3: Configurare il sito di SharePoint sottostante
 
-Innanzitutto, per proteggere l'accesso al sito di SharePoint sottostante per il team, gli amministratori IT di Contoso hanno configurato i [criteri di accesso di SharePoint consigliati.](../security/defender-365-security/sharepoint-file-access-policies.md)
+Innanzitutto, per proteggere l'accesso al sito di SharePoint sottostante per il team, gli amministratori IT di Contoso hanno configurato i [criteri di accesso di SharePoint consigliati.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Successivamente, hanno configurato impostazioni di autorizzazione aggiuntive per il sito:
 
