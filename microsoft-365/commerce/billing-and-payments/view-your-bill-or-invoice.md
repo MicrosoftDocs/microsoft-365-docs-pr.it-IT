@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
 ms.date: 07/31/2020
-ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939487"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060968"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visualizzare la fattura
 
@@ -62,7 +62,7 @@ Se serve aiuto per interpretare gli addebiti riportati nella fattura, vedere [In
 
 È possibile inviare la richiesta per una Fapiao al [Sistema di gestione Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) tre (3) giorni circa dopo il pagamento.
 
-1. Nell’<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a> passare alla pagina **Fatturazione** > **Fatture e pagamenti**.
+1. Nell'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a> passare alla pagina **Fatturazione** > **Fatture e pagamenti**.
 
 2. Trovare la fattura desiderata quindi selezionare **Ottieni Fapiao**.
 
