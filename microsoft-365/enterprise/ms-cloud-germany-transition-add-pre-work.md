@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: pre-lavorare quando si esegue il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: ce7aad932482d7a9d1681957c06b85ab22a82149
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9c3aff56f5d85cd1b98747ef5b747720af74fe02
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760393"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073938"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Attività di pre-migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -33,7 +33,7 @@ Se si utilizza
 
 - **Office 365 in Microsoft Cloud Deutschland,** eseguire [questa procedura.](#general-tenant-migration-considerations)
 - **Domini personalizzati**, eseguire [questo passaggio.](#dns-entries-for-custom-domains)
-
+- **Office Apps**, prendere [in considerazione questo passaggio](#office-apps).
 - **SharePoint Online**, eseguire [questo passaggio.](#sharepoint-online)
 - **Exchange Online** o **Exchange Hybrid**, eseguire [questo passaggio.](#exchange-online)
 - **Skype for Business online,** eseguire [questo passaggio.](#skype-for-business-online)
@@ -83,6 +83,19 @@ Se la riga di comando restituisce un record DNS, rimuovere _il CNAME msoid_ dal 
 
 > [!NOTE]
 > Se si utilizza un dominio personalizzato per Exchange Online, è necessario avere accesso al provider di hosting DNS. Assicurarsi di poter accedere alle impostazioni DNS e modificarle durante la migrazione.
+
+## <a name="office-apps"></a>Office Apps
+
+**Si applica a**: I clienti che usano Le app di Office, in particolare nei client Windows <br>
+**Se applicato:** ogni volta che inizia la fase 9
+
+I tenant di Office 365 che effettuano la transizione all'area "Germania" richiedono a tutti gli utenti di chiudere, disconnettersi da Office 365 e accedere di nuovo per tutte le applicazioni desktop di Office (Word, Excel, PowerPoint, Outlook e così via) e il client OneDrive for Business dopo che la migrazione del tenant ha raggiunto la fase 9. La disconnessione e l'accesso consentono ai servizi di Office di ottenere nuovi token di autenticazione dal servizio Azure AD globale.
+
+Questa operazione è necessaria per tutti i client. Per garantire un'esperienza di migrazione senza problemi, è consigliabile informare e fornire istruzioni a tutti gli utenti interessati in anticipo e in una fase iniziale di questa prossima attività.
+
+I clienti con client Windows gestiti possono preparare i computer Windows con [lo strumento Office Client Cutover Tool (OCCT).](https://github.com/microsoft/OCCT) La configurazione guidata è progettata per l'esecuzione periodica nei client Windows finché il tenant non raggiunge la fase 9 della migrazione. Una volta raggiunta la fase 9, la OCCT eseguirà automaticamente tutte le modifiche necessarie nel computer senza l'interazione dell'utente.
+
+OCCT può essere distribuito nei client Windows in qualsiasi momento prima della fase 9. Se la configurazione guidata supporta l'esperienza di migrazione, è consigliabile avviare la distribuzione il prima possibile per dotare un numero massimo di client.
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (ADFS)
 
@@ -222,7 +235,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 
