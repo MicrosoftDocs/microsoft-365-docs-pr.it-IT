@@ -2,10 +2,10 @@
 title: Lab Kit di distribuzione di Windows e Office
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: greglin
+author: greg-lindsay
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028665"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060874"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -104,23 +104,15 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
 
   - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
-
   - [Distribuzione del sistema operativo di Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-
   - [Pianificare la distribuzione di Windows 10](/windows/deployment/planning/index)
-
   - [Guida alla distribuzione di Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
-
   - [Introduzione a Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Risorse correlate
 
   - [Introduzione a Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
-
   - [Office 365 per le aziende](https://products.office.com/business/office)
-
   - [Introduzione a Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
   - [Windows 10 per le aziende](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-
   - [Windows 10 per aziende di piccole e medie dimensioni](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

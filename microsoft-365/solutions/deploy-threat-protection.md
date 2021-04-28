@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 0edc3847d6b832f254c6f289355570a3a044b1f4
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650315"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061038"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Distribuire le funzionalità di protezione dalle minacce in Microsoft 365 E5
 
-Questa soluzione descrive potenti funzionalità di protezione dalle minacce in Microsoft 365 E5. Leggere questa soluzione per ottenere una panoramica di cosa è incluso, come funziona e come iniziare a distribuire queste funzionalità nell'organizzazione.
+Questa soluzione descrive potenti funzionalità di protezione dalle minacce in Microsoft 365 E5 e perché queste funzionalità sono importanti. Leggere questa soluzione per ottenere una panoramica di ciò che è incluso in Microsoft 365 E5, sul funzionamento delle funzionalità di protezione dalle minacce e su come configurare e configurare la protezione dalle minacce nell'organizzazione.
 
-## <a name="why-protecting-against-threats-is-important"></a>Perché la protezione dalle minacce è importante 
+## <a name="why-threat-protection-is-important"></a>Perché la protezione dalle minacce è importante 
 
 [Malware](/windows/security/threat-protection/intelligence/understanding-malware)e attacchi informatici sofisticati, ad esempio minacce [senza file,](/windows/security/threat-protection/intelligence/fileless-threats)sono un evento comune. Le aziende devono proteggere se stessi e i propri clienti con funzionalità di sicurezza IT efficaci. Gli attacchi informatici possono causare problemi importanti per l'organizzazione, dalla perdita di fiducia ai problemi finanziari, ai tempi di inattività che minacciano l'azienda e altro ancora. La protezione dalle minacce è importante, ma può essere difficile determinare dove concentrare il tempo, l'impegno e le risorse dell'organizzazione. Microsoft 365 E5 può essere utile. 
 
@@ -60,7 +60,7 @@ Nella figura seguente viene illustrato un percorso consigliato per la distribuzi
 |Soluzione/funzionalità  |Descrizione  |
 |---------|---------|
 |Autenticazione a più fattori e accesso condizionale     |Proteggere da identità e dispositivi compromessi. Iniziare con questa protezione perché è di base. La configurazione consigliata in questa guida include Azure AD Identity Protection come prerequisito.     |
-|Che cosa è Microsoft Defender per identità?     |  Una soluzione di sicurezza basata sul cloud che sfrutta i segnali di Servizi di dominio Active Directory (AD DS) locali per identificare, rilevare e analizzare minacce avanzate, identità compromesse e azioni insider dannose indirizzate all'organizzazione. Concentrarsi su Microsoft Defender per l'identità in seguito perché protegge l'infrastruttura locale e cloud, non ha dipendenze o prerequisiti e può offrire vantaggi di sicurezza immediati. | 
+|Microsoft Defender per identità     |  Una soluzione di sicurezza basata sul cloud che sfrutta i segnali di Servizi di dominio Active Directory (AD DS) locali per identificare, rilevare e analizzare minacce avanzate, identità compromesse e azioni insider dannose indirizzate all'organizzazione. Concentrarsi su Microsoft Defender per l'identità in seguito perché protegge l'infrastruttura locale e cloud, non ha dipendenze o prerequisiti e può offrire vantaggi di sicurezza immediati. | 
 |Microsoft Defender per Office 365     | Protegge l'organizzazione da minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. Protezioni per malware, phishing, spoofing e altri tipi di attacco. La configurazione di Microsoft Defender per Office 365 è consigliata successivamente perché il controllo delle modifiche, la migrazione delle impostazioni dal sistema in uso e altre considerazioni possono richiedere più tempo per la distribuzione. <p>**NOTA:** assicurarsi di configurare le funzionalità di protezione dalle minacce incluse in tutte le sottoscrizioni di Office 365 (Exchange Online Protection).       |
 |Microsoft Defender per endpoint    | Una piattaforma di endpoint protection che consente di prevenire, rilevare, analizzare e rispondere alle minacce avanzate.  Defender for Endpoint può richiedere del tempo per la distribuzione, ma la configurazione può essere eseguita in parallelo con altre funzionalità.   |
 |Microsoft Cloud App Security     |   Un broker di sicurezza per l'accesso al cloud per l'individuazione, l'indagine e la governance. Puoi abilitare Microsoft Cloud App Security in anticipo per iniziare a raccogliere dati e informazioni dettagliate. L'implementazione di informazioni e altre misure di protezione mirate nelle app SaaS implica la pianificazione e può richiedere più tempo.       | 
