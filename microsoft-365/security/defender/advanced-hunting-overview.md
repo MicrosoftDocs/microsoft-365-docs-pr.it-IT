@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: df48ec921dee7d8f3b441ed3f68ed148c5c6c857
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f43d3bf9575f00649a2b5015a8be16351bebd11b
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932978"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073962"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Ricerca proattiva di minacce con ricerca avanzata in Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "51932978"
 >
 
 La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query che permette di esplorare dati non elaborati fino a 30 giorni. È possibile esaminare in modo proattivo gli eventi nella rete per individuare gli indicatori di minaccia e le entità. L'accesso flessibile ai dati consente la ricerca senza vincoli delle minacce note e potenziali.
-<p></p>
+<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
@@ -55,17 +55,6 @@ Questa funzionalità è simile alla ricerca [avanzata in Microsoft Defender for 
 
 Per usare la ricerca avanzata, [attivare Microsoft 365 Defender.](m365d-enable.md)
 
-### <a name="before-you-begin"></a>Prima di iniziare
-
-Gli utenti devono disporre di uno dei seguenti livelli di autorizzazioni per accedere a Microsoft Defender:
-
-- Accesso completo (lettura e scrittura)
-- Accesso in sola lettura
-
-**Accesso completo:** gli utenti con accesso completo possono salvare, modificare e condividere una query. L'assegnazione dei diritti di accesso completi richiede l'aggiunta degli utenti ai ruoli predefiniti "Amministratore della sicurezza" o "Amministratore globale" in Azure Active Directory (AAD).
-
-**Accesso di sola lettura:** gli utenti con accesso in sola lettura possono accedere e visualizzare tutti gli avvisi e le informazioni correlate. Non potranno salvare, modificare o condividere una query. L'assegnazione dei diritti di accesso di sola lettura richiede l'aggiunta degli utenti al ruolo predefinito "Lettore di sicurezza" in AAD.
-
 ## <a name="get-started-with-advanced-hunting"></a>Introduzione alla ricerca avanzata
 
 Ti consigliamo di eseguire diversi passaggi per iniziare rapidamente a usare la ricerca avanzata.
@@ -73,14 +62,17 @@ Ti consigliamo di eseguire diversi passaggi per iniziare rapidamente a usare la 
 | Obiettivo di formazione | Descrizione | Risorsa |
 |--|--|--|
 | **Informazioni sulla lingua** | La ricerca avanzata si basa [sul linguaggio di query Kusto,](/azure/kusto/query/)che supporta la stessa sintassi e gli stessi operatori. Iniziare ad apprendere il linguaggio di query eseguendone la prima. | [Informazioni generali sul linguaggio di query](advanced-hunting-query-language.md) |
-| **Informazioni su come utilizzare i risultati della query** | Informazioni sui grafici e sui vari modi in cui è possibile visualizzare o esportare i risultati. Scopri come modificare rapidamente le query, eseguire il drill-down per ottenere informazioni più dettagliate ed eseguire azioni di risposta. | - [Utilizzare i risultati delle query](advanced-hunting-query-results.md)<br>- [Eseguire un'azione sui risultati della query](advanced-hunting-take-action.md) |
-| **Comprensione dello schema** | È possibile ottenere una conoscenza buona e approfondita delle tabelle nello schema e delle relative colonne. Informazioni su dove cercare i dati durante la creazione delle query. | - [Riferimento allo schema](advanced-hunting-schema-tables.md)<br>- [Transizione da Microsoft Defender per Endpoint](advanced-hunting-migrate-from-mde.md) |
-| **Ottenere suggerimenti ed esempi di esperti** | Formazione gratuita con le guide di esperti Microsoft. Esplorare le raccolte di query predefinite che coprono diversi scenari di ricerca delle minacce. | - [Ottenere una formazione esperta](advanced-hunting-expert-training.md)<br>- [Utilizzare query condivise](advanced-hunting-shared-queries.md)<br>- [Vai a caccia](advanced-hunting-go-hunt.md)<br>- [Ricerca di minacce su dispositivi, messaggi di posta elettronica, app e identità](advanced-hunting-query-emails-devices.md) |
-| **Ottimizzare le query e gestire gli errori** | Comprendere come creare query efficienti e senza errori. | - [Procedure consigliate per le query](advanced-hunting-best-practices.md)<br>- [Gestire gli errori](advanced-hunting-errors.md) |
-| **Creare regole di rilevamento personalizzate** | Comprendere come è possibile utilizzare query di ricerca avanzate per attivare avvisi ed eseguire automaticamente azioni di risposta. | - [Panoramica dei rilevamenti personalizzati](custom-detections-overview.md)<br>- [Regole di rilevamento personalizzate](custom-detection-rules.md) |
+| **Informazioni su come utilizzare i risultati della query** | Informazioni sui grafici e sui vari modi in cui è possibile visualizzare o esportare i risultati. Scopri come modificare rapidamente le query, eseguire il drill-down per ottenere informazioni più dettagliate ed eseguire azioni di risposta. | - [Utilizzare i risultati delle query](advanced-hunting-query-results.md)<br /> - [Eseguire un'azione sui risultati della query](advanced-hunting-take-action.md) |
+| **Comprensione dello schema** | È possibile ottenere una conoscenza buona e approfondita delle tabelle nello schema e delle relative colonne. Informazioni su dove cercare i dati durante la creazione delle query. | - [Riferimento allo schema](advanced-hunting-schema-tables.md) <br />- [Transizione da Microsoft Defender per Endpoint](advanced-hunting-migrate-from-mde.md) |
+| **Ottenere suggerimenti ed esempi di esperti** | Formazione gratuita con le guide di esperti Microsoft. Esplorare le raccolte di query predefinite che coprono diversi scenari di ricerca delle minacce. | - [Ottenere una formazione esperta](advanced-hunting-expert-training.md) <br />- [Utilizzare query condivise](advanced-hunting-shared-queries.md) <br />- [Vai a caccia](advanced-hunting-go-hunt.md) <br />- [Ricerca di minacce su dispositivi, messaggi di posta elettronica, app e identità](advanced-hunting-query-emails-devices.md) |
+| **Ottimizzare le query e gestire gli errori** | Comprendere come creare query efficienti e senza errori. | - [Procedure consigliate per le query](advanced-hunting-best-practices.md)<br />- [Gestire gli errori](advanced-hunting-errors.md) |
+| **Creare regole di rilevamento personalizzate** | Comprendere come è possibile utilizzare query di ricerca avanzate per attivare avvisi ed eseguire automaticamente azioni di risposta. | - [Panoramica dei rilevamenti personalizzati](custom-detections-overview.md) <br />- [Regole di rilevamento personalizzate](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Ottenere l'accesso
-Per usare la ricerca avanzata o altre funzionalità di [Microsoft 365 Defender,](microsoft-365-defender.md) è necessario un ruolo appropriato in Azure Active Directory. Inoltre, l'accesso ai dati degli endpoint è determinato dalle impostazioni RBAC (Role-Based Access Control) in Microsoft Defender for Endpoint. [Informazioni sulla gestione dell'accesso a Microsoft 365 Defender](m365d-permissions.md)
+Per usare la ricerca avanzata o altre funzionalità di [Microsoft 365 Defender,](microsoft-365-defender.md) è necessario un ruolo appropriato in Azure Active Directory. [Informazioni sui ruoli e sulle autorizzazioni necessari per la ricerca avanzata.](custom-roles.md)
+
+Inoltre, l'accesso ai dati degli endpoint è determinato dalle impostazioni RBAC (Role-Based Access Control) in Microsoft Defender for Endpoint. [Informazioni sulla gestione dell'accesso a Microsoft 365 Defender](m365d-permissions.md).
+
 
 ## <a name="data-freshness-and-update-frequency"></a>Aggiornamento dei dati e frequenza di aggiornamento
 I dati di ricerca avanzata possono essere categorizzati in due tipi distinti, ognuno consolidato in modo diverso.

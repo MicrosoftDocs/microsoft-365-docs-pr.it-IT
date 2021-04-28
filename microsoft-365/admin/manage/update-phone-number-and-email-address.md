@@ -20,18 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione. Queste informazioni sono necessarie se si desidera reimpostare la propria password di amministratore.
-ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 49e3cd3e861499d41107b9c76da175a95e74bb0e
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470918"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073778"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 
 Questo articolo spiega come l'amministratore può modificare il telefono e l'indirizzo di posta elettronica dell'azienda in Microsoft 365.
   
 Per sapere come cambiare le informazioni del profilo dell'organizzazione, ad esempio il nome, l'indirizzo e il numero di telefono della società e i dati del contatto tecnico, vedere [Cambiare l'indirizzo dell'organizzazione, l'indirizzo di posta elettronica del contatto tecnico e altre informazioni](change-address-contact-and-more.md).
+
+Per ulteriori informazioni sulla modifica delle informazioni di contatto degli utenti o sulla rimozione di ex dipendenti, vedere [Contenuto correlato.](#related-content)
   
 ## <a name="to-update-your-phone-number-and-email-address"></a>Per aggiornare il numero di telefono e l'indirizzo di posta elettronica
 
@@ -53,3 +55,13 @@ In caso di domande sulla fatturazione, vedere:
 - [Modificare gli indirizzi di fatturazione per Microsoft 365 per le aziende](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [Gestione metodi di pagamento](../../commerce/billing-and-payments/manage-payment-methods.md)
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Modificare un nome utente e un indirizzo di posta elettronica](../add-users/change-a-user-name-and-email-address.md) (video)
+
+[Aggiungere un nuovo dipendente](../add-users/add-new-employee.md) (video)
+
+[Rimuovere un ex dipendente](../add-users/remove-former-employee.md) (video)
+
+[Accedere ed eseguire il backup dei dati di un](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) ex utente (articolo)

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: comprendere le azioni e gli impatti delle fasi di migrazione del passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area dati tedesca.'
-ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 354ca55bae7704c011af5a76a1112e4d2ecb47ca
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061086"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073926"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Azioni e impatti delle fasi di migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -264,18 +264,26 @@ I clienti con Dynamics 365 richiedono un impegno aggiuntivo per eseguire la migr
 
 ## <a name="phase-9-office-apps"></a>Fase 9: App di Office
 
-**Si applica a:** Tutti i clienti che utilizzano applicazioni desktop di Office (Word, Excel, PowerPoint, Outlook, ...)
+**Si applica a:** Tutti i clienti che usano applicazioni desktop di Office (Word, Excel, PowerPoint, Outlook, OneDrive ...)
+
+In questa fase, tutte le applicazioni client e Office Online eseguono il cutover del client. Azure AD finalizza l'ambito tenant in modo che punti ai servizi di Office 365 e agli endpoint correlati.
 
 I tenant di Office 365 che effettuano la transizione all'area "Germania" richiedono a tutti gli utenti di chiudere, disconnettersi da Office 365 e accedere di nuovo per tutte le applicazioni desktop di Office (Word, Excel, PowerPoint, Outlook e così via) e il client OneDrive for Business dopo che la migrazione del tenant ha raggiunto la fase 9. La disconnessione e l'accesso consentono ai servizi di Office di ottenere nuovi token di autenticazione dal servizio Azure AD globale.
+
+Nel caso in cui le applicazioni desktop di Office non funzionino dopo aver eseguito la disconnessione e l'accesso dalle applicazioni, è consigliabile eseguire lo strumento [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) nel computer interessato per risolvere il problema.
+
+Se lo [strumento Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) è stato distribuito e pianificato in anticipo nei client Windows, la procedura di disconnessione/accesso non è necessaria.
 
 L'esperienza utente ottimale può essere garantita utilizzando le applicazioni di Office più recenti. Le aziende devono prendere in considerazione l'uso del Canale Enterprise mensile.
 
 Assicurati di aver completato la [procedura preliminare per i dispositivi](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) mobili.
 
-| Step(s) | Descrizione | Impatto |
-|:-------|:-------|:-------|
-| Client, Office Online durante il cutover del client di Office, Azure AD finalizza l'ambito tenant in modo che punti ai servizi di Office 365. | Questa modifica della configurazione consente ai client di Office di aggiornare e puntare agli endpoint dei servizi di Office 365. | <ul><li>Informare gli utenti di chiudere _tutte_ le app di Office e quindi accedere di nuovo (o forzare il riavvio dei client e gli utenti ad accedere) per consentire ai client di Office di ritirare la modifica. </li><li>Informare gli utenti e  il personale del supporto tecnico che gli utenti potrebbero visualizzare un banner di Office che richiede di riattivare le app di Office entro 72 ore dal cutover. </li><li>Tutte le applicazioni di Office nei computer personali devono essere chiuse e gli utenti devono disconnettersi e quindi accedere di nuovo. Nella barra di attivazione gialla, accedere per riattivare i servizi di Office 365.</li><li>I computer condivisi richiederanno azioni simili ai computer personali e non richiederanno una procedura speciale. </li><li>Nei dispositivi mobili, gli utenti devono disconnettersi dall'app, chiuderle e quindi accedere di nuovo.</li></ul>|
-||||
+Considerazioni aggiuntive:
+- Informare gli utenti di chiudere tutte le app di Office e quindi accedere di nuovo (o forzare il riavvio dei client e gli utenti ad accedere) per consentire ai client di Office di ritirare la modifica.
+- Informare gli utenti e il personale del supporto tecnico che gli utenti potrebbero visualizzare un banner di Office che richiede di riattivare le app di Office entro 72 ore dal cutover.
+- Tutte le applicazioni di Office nei computer personali devono essere chiuse e gli utenti devono disconnettersi e quindi accedere di nuovo. Nella barra di attivazione gialla, accedere per riattivare i servizi di Office 365.
+- I computer condivisi richiederanno azioni simili ai computer personali e non richiederanno una procedura speciale.
+- Nei dispositivi mobili, gli utenti devono disconnettersi dall'app, chiuderle e quindi accedere di nuovo.
 
 ## <a name="phase-9-line-of-business-apps"></a>Fase 9: app line-of-business
 

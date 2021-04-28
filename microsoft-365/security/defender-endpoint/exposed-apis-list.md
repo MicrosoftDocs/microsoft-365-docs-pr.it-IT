@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab3d3aa9a13b71f65d3d4335646e32a7e4270242
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061050"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073830"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Accedere a API di Microsoft Defender per endpoint
 
@@ -69,7 +69,6 @@ Argomento | Descrizione
 [Metodi e proprietà dei computer](machine.md) | Esegui chiamate API come ottenere dispositivi, ottenere dispositivi in base all'ID, informazioni sugli utenti \- connessi, modificare tag e altro ancora.
 [Metodi e proprietà di azioni dei computer](machineaction.md) | Esegui chiamata API come \- Isolamento, Esegui analisi antivirus e altro ancora.
 [Metodi e proprietà di consiglio](recommendation.md) | Eseguire chiamate API, ad esempio \- ottenere consigli in base all'ID.
-[Metodi e proprietà dell'attività di correzione](get-remediation-methods-properties.md) | Eseguire una chiamata API, ad esempio ottenere tutte le attività di correzione, ottenere l'attività di correzione dei dispositivi esposti e ottenere un'attività di correzione \- in base all'ID.
 [Metodi e proprietà di punteggio](score.md) | Esegui chiamate API come \- ottenere il punteggio di esposizione o ottenere il punteggio di sicurezza del dispositivo.
 [Metodi e proprietà di software](software.md) | Esegui chiamate API, ad esempio \- le vulnerabilità dell'elenco da parte del software.
 [Metodi utente](user.md) | Esegui chiamate API come \- ottenere avvisi correlati all'utente e dispositivi correlati all'utente.
