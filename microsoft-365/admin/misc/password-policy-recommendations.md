@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Informazioni su come rendere più sicura l'organizzazione da attacchi alle password e perché è necessario bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914727"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073866"
 ---
 # <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
 
@@ -34,7 +34,15 @@ L'amministratore di un'organizzazione ha la responsabilità di impostare i crite
   
 Per determinare la frequenza di scadenza delle password di Microsoft 365 nella propria organizzazione, vedere [Impostare i criteri di scadenza delle password per Microsoft 365](../manage/set-password-expiration-policy.md).
 
-Per altre informazioni sulle password per Microsoft 365, vedere gli [articoli correlati](#related-articles).
+Per altre informazioni sulle password per Microsoft 365, vedere:
+
+[Reimpostare la password](../add-users/reset-passwords.md) (articolo)
+
+[Impostare la password di un singolo utente in modo che non scada mai](../add-users/set-password-to-never-expire.md) (articolo)
+
+[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)
+
+[Inviare nuovamente la password utente - Guida per amministratori](../add-users/resend-user-password.md) (articolo)
   
 ## <a name="understanding-password-recommendations"></a>Informazioni sui suggerimenti per la scelta della password
 
@@ -134,12 +142,12 @@ Con l'autenticazione a più fattori basata sul rischio, quando il sistema rileva
 
 - [Le peggiori password del 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Reimpostare password](../add-users/reset-passwords.md)
+[Reimpostare la password](../add-users/reset-passwords.md) (articolo)
 
-[Impostare la password di un singolo utente in modo che non scada mai](../add-users/set-password-to-never-expire.md)
+[Impostare la password di un singolo utente in modo che non scada mai](../add-users/set-password-to-never-expire.md) (articolo)
 
-[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md)
+[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)
 
-[Inviare nuovamente la password utente - Guida per amministratori](../add-users/resend-user-password.md)
+[Inviare nuovamente la password utente - Guida per amministratori](../add-users/resend-user-password.md) (articolo)
