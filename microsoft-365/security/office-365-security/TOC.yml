@@ -204,18 +204,10 @@
           href: ../../compliance/alert-policies.md
         - name: Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
           href: reports-and-insights-in-security-and-compliance.md
-        - name: Abilitare il componente aggiuntivo Segnala messaggio
-          href: enable-the-report-message-add-in.md
-        - name: Abilitare il componente aggiuntivo Segnala phishing
-          href: enable-the-report-phish-add-in.md
-        - name: Installazione e uso del componente aggiuntivo per la segnalazione della posta indesiderata
-          href: junk-email-reporting-add-in-for-microsoft-outlook.md
+        - name: Segnalare i falsi positivi e i falsi negativi in Outlook
+          href: report-false-positives-and-false-negatives.md
         - name: Regole del flusso di posta (regole di trasporto) in Exchange Online Protection autonomo
           href: mail-flow-rules-transport-rules-0.md
-        - name: Segnalare posta indesiderata e phishing in Outlook sul web
-          href: report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-        - name: Segnalare posta indesiderata e phishing in Outlook per iOS e Android
-          href: report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
         - name: Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection autonomo
           href: run-an-administrator-role-group-report-in-eop-eop.md
     - name: Investigare
