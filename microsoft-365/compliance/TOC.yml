@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: Creazione impronta digitale documenti
           href: document-fingerprinting.md
-        - name: Funzioni DLP per le informazioni sensibili
-          href: what-the-dlp-functions-look-for.md
     - name: Classificatori sottoponibili a training
       items:
         - name: Informazioni sui classificatori sottoponibili a training
