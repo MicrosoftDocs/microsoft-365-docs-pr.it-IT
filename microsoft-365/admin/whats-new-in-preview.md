@@ -21,12 +21,12 @@ description: 'Interfaccia di amministrazione di Microsoft 365: informazioni sull
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024194"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077312"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia di amministrazione di Microsoft 365
 
@@ -83,7 +83,7 @@ Abbiamo rinnovato il Centro messaggi per aiutarti a individuare i messaggi perti
 
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Message center home page showing inbox and messages":::
 
-Per ulteriori informazioni sulle nuove funzionalità, vedere [Gestire i messaggi nel Centro messaggi.](manage/manage-messages.md)
+Per ulteriori informazioni sulle nuove funzionalità, vedere [Centro messaggi.](manage/message-center.md)
 
 ### <a name="whats-new-features"></a>Novità
 

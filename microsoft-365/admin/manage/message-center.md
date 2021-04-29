@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Panoramica del Centro messaggi di Microsoft 365 e del relativo ruolo nella gestione delle modifiche.
-ms.openlocfilehash: 905aa411e931f802735c913922a6431e7466cdb5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 52d2c0815757127ad0c4e34d077a8807f926740e
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727224"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077156"
 ---
 # <a name="message-center"></a>Centro messaggi
 
@@ -54,8 +54,11 @@ Per aprire il Centro messaggi:
 ::: moniker-end
 
 Puoi anche usare l'app Di amministrazione di [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=627216) sul dispositivo mobile per visualizzare il Centro messaggi, un ottimo modo per rimanere al corrente con le notifiche push.
+
+Per annullare la sottoscrizione ai messaggi di posta elettronica del Centro messaggi, vedere Annullare la sottoscrizione ai messaggi [di posta](#unsubscribe-from-message-center-emails) elettronica del Centro messaggi in questo articolo.
+
   
-### <a name="frequently-asked-questions"></a>Domande frequenti
+## <a name="frequently-asked-questions"></a>Domande frequenti
 
 |**Domanda**|**Risposta**|
 |:-----|:-----|
@@ -70,34 +73,40 @@ Puoi anche usare l'app Di amministrazione di [Microsoft 365](https://go.microsof
 |Come è possibile verificare che le notifiche sulla privacy dei dati siano ricevute dai contatti dell'organizzazione? <br/> |Come amministratore globale riceverai messaggi sulla privacy dei dati per la tua organizzazione. Inoltre, è possibile assegnare il ruolo di lettore privacy del Centro messaggi alle persone che dovrebbero visualizzare i messaggi sulla privacy dei dati. Altri ruoli di amministratore con accesso al Centro messaggi non possono visualizzare i messaggi sulla privacy dei dati.   <br/><br/>Per altre info, vedi [Preferenze](#preferences) in questo articolo.<br/> |
 |Perché non è possibile visualizzare un messaggio presente in precedenza? <br/> |Per gestire il numero di messaggi all'interno del Centro messaggi, ogni messaggio scadrà e verrà rimosso dopo un periodo di tempo. In genere, i messaggi scadono 30 giorni dopo il periodo di tempo indicato nel corpo del messaggio. <br/> |
 
-### <a name="messages"></a>Messaggi
+## <a name="filter-messages"></a>Filtrare i messaggi
 
 Il Centro messaggi presenta una visualizzazione di tutti i messaggi attivi in formato tabella. Per impostazione predefinita, mostra il messaggio più recente all'inizio dell'elenco. È possibile selezionare **Servizio** per visualizzare i messaggi per vari servizi, ad esempio Microsoft 365 Apps, SharePoint Online e così via.   In **Tag** puoi selezionare **Impatto** amministratore, **Privacy** dati, **Aggiornamento** funzionalità, **Aggiornamento** principale, **Nuova funzionalità,** **Ritiro** o **Messaggi di impatto utente.** In **Stato messaggio** è possibile selezionare **Preferiti,** **Messaggi non letti** o **Messaggi** aggiornati.
 
 Nella scheda Archivio vengono visualizzati i messaggi archiviati. Per archiviare un messaggio, nel riquadro dei messaggi selezionare **Archivia**.
 
-### <a name="choose-columns"></a>Scelta delle colonne
+::: moniker range="o365-worldwide"
 
-Per scegliere le  colonne, all'estrema destra della pagina Centro messaggi selezionare Scegli colonne e nel riquadro **Scegli** colonne selezionare quelle che si desidera visualizzare.
+Usare i menu a discesa **Servizio**, **Tag** e **Stato messaggio** per scegliere una visualizzazione filtrata dei messaggi. Ad esempio, in questo diagramma i messaggi sono contrassegnati con il tag **Impatto amministratore**.
 
-Ecco una breve panoramica delle informazioni che vedrai in ogni colonna.
+È possibile selezionare qualsiasi intestazione di colonna, ad eccezione di **Servizio** e **Tag** per ordinare i messaggi in ordine crescente o decrescente.
 
-#### <a name="column-information"></a>Informazioni colonna
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Visualizzazione Centro messaggi ordinata per impatto amministratore":::
 
-|**Colonna**|**Descrizione**|
-|:-----|:-----|
-|Segno di spunta  <br/> |Se si seleziona il segno di spunta nella riga dell'intestazione di colonna, verranno selezionati tutti i messaggi attualmente visualizzati. Selezionando il segno di spunta accanto a uno o più messaggi, è possibile eseguire un'azione su tali messaggi.  <br/> |
-|Titolo messaggio  <br/> |I titoli dei messaggi sono brevi descrizioni delle modifiche imminenti. Se il titolo completo non viene visualizzato, posizionare il puntatore del mouse su di esso e l'intero titolo verrà visualizzato in una casella popup.  <br/> |
-|Servizio <br/> |Le icone indicano l'applicazione a cui si applica il messaggio.<br/> |
-|Altre opzioni <br/> |Altre opzioni consentono di ignorare un messaggio, contrassegnarlo come letto o non letto o condividerlo con un altro amministratore. Per ripristinare un messaggio archiviato, selezionare la **scheda Archivio,** selezionare il segno di spunta accanto al messaggio e selezionare **Ripristina**. <br/> |
-|Tag <br/> |È possibile scegliere i tag **dall'elenco a** discesa Tag per filtrare i messaggi. I tag disponibili sono: **Impatto** amministratore, **Aggiornamento** principale, **Privacy** dei dati, **Aggiornamento** funzionalità, **Nuova funzionalità,** **Ritiro** e **Impatto utente.** <br/> |
-|Categoria  <br/> | Questa opzione non viene visualizzata per impostazione predefinita, ma può essere specificata nel **pannello Scegli** colonne. I messaggi sono identificati da una delle tre categorie seguenti: <br/><br/> **Prevenzione o risoluzione dei** problemi : informa l'utente dei problemi noti che interessano l'organizzazione e può richiedere l'intervento dell'utente per evitare interruzioni del servizio. I messaggi di tipo Prevenire o risolvere problemi sono diversi da quelli di tipo Integrità dei servizi, in quanto richiedono che l'utente sia proattivo per evitare problemi. <br/> <br/> **Pianificare la modifica**: informa l'utente delle modifiche apportate a Microsoft 365 che potrebbero richiedere l'intervento dell'utente per evitare interruzioni del servizio. Ad esempio, verranno comunicate le modifiche apportate ai requisiti di sistema o le caratteristiche in fase di rimozione. Per assicurare la normale operatività del servizio, Microsoft fornisce almeno 30 giorni di preavviso per ogni modifica che richiede l'intervento di un amministratore. <br/> <br/> **Rimanere informati:** informazioni sulle funzionalità nuove o aggiornate che stiamo attivando nell'organizzazione. Le funzionalità vengono in genere annunciate per prime nella roadmap di [Microsoft 365.](https://go.microsoft.com/fwlink/?linkid=2070821) <br/><br/>Può anche inserirvi informazioni sulla manutenzione pianificata in conformità al contratto di servizio. La manutenzione pianificata può comportare tempi di invasi, in cui l'utente o gli utenti non possono accedere a Microsoft 365, a una funzionalità specifica o a un servizio come la posta elettronica o OneDrive for Business.  <br/> |
-|Intervento entro  <br/> |Qui verranno specificate solo le date se Microsoft intende apportare una modifica che richiede l'intervento dell'utente entro una certa data di scadenza. Dal momento che raramente usiamo la colonna **Act by,** se vedi qualcosa qui, dovresti prestare particolare attenzione ad esso.  <br/> |
-|Ultimo aggiornamento  <br/> |Data in cui il messaggio è stato pubblicato o aggiornato per ultimo.  <br/> |
-|ID messaggio  <br/> |Microsoft tiene traccia dei post del Centro messaggi in base agli ID messaggio. Puoi fare riferimento a questo ID se vuoi inviare commenti e suggerimenti o se chiami il supporto per un determinato messaggio.  <br/> |
+::: moniker-end
 
-Per altre informazioni sulle operazioni che è possibile eseguire con i messaggi, vedere [Gestire i messaggi nel Centro messaggi](manage-messages.md).
-  
+::: moniker range="o365-germany"
+
+Usare il menu a discesa **Visualizzazioni** per selezionare una visualizzazione filtrata dei messaggi.
+
+È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa illustrazione i messaggi sono ordinati in base alla data di **Intervento entro**.
+
+![Visualizzazione Centro messaggi ordinata in base al tag Impatto amministratore](../../media/message-center-filter-act-by.png)
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+Usare i menu a discesa **Servizio**, **Tag** e **Stato messaggio** per scegliere una visualizzazione filtrata dei messaggi. Ad esempio, in questo diagramma i messaggi sono contrassegnati con **Impatto amministratore**.
+
+È possibile selezionare qualsiasi intestazione di colonna, ad eccezione di **Servizio** e **Tag** per ordinare i messaggi in ordine crescente o decrescente.
+
+::: moniker-end
+
 ### <a name="major-updates"></a>Aggiornamenti principali
 
 Gli aggiornamenti principali possono essere esaminati selezionando **l'aggiornamento principale** nell'elenco **a** discesa Tag.
@@ -180,13 +189,33 @@ Se l'amministrazione viene distribuita all'interno dell'organizzazione, potrebbe
 
 ::: moniker-end
 
-#### <a name="display-messages-in-your-preferred-language"></a>Visualizzare i messaggi nella lingua preferita
+### <a name="display-messages-in-your-preferred-language"></a>Visualizzare i messaggi nella lingua preferita
   
 Usiamo la traduzione automatica per visualizzare automaticamente i messaggi nella lingua preferita. Per [ulteriori informazioni su come impostare la lingua,](language-translation-for-message-center-posts.md) vedere Traduzione in lingua per i post del Centro messaggi.
   
 > [!NOTE]
 > Il digest settimanale e i post inviati tramite posta elettronica vengono inviati solo in inglese. I destinatari possono [utilizzare Translator per Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) per leggere il messaggio nella lingua preferita. 
-  
+
+## <a name="choose-columns"></a>Scelta delle colonne
+
+Per scegliere le  colonne, all'estrema destra della pagina Centro messaggi selezionare Scegli colonne e nel riquadro **Scegli** colonne selezionare quelle che si desidera visualizzare.
+
+Ecco una breve panoramica delle informazioni che vedrai in ogni colonna.
+
+### <a name="column-information"></a>Informazioni colonna
+
+|**Colonna**|**Descrizione**|
+|:-----|:-----|
+|Segno di spunta  <br/> |Se si seleziona il segno di spunta nella riga dell'intestazione di colonna, verranno selezionati tutti i messaggi attualmente visualizzati. Selezionando il segno di spunta accanto a uno o più messaggi, è possibile eseguire un'azione su tali messaggi.  <br/> |
+|Titolo messaggio  <br/> |I titoli dei messaggi sono brevi descrizioni delle modifiche imminenti. Se il titolo completo non viene visualizzato, posizionare il puntatore del mouse su di esso e l'intero titolo verrà visualizzato in una casella popup.  <br/> |
+|Servizio <br/> |Le icone indicano l'applicazione a cui si applica il messaggio.<br/> |
+|Altre opzioni <br/> |Altre opzioni consentono di ignorare un messaggio, contrassegnarlo come letto o non letto o condividerlo con un altro amministratore. Per ripristinare un messaggio archiviato, selezionare la **scheda Archivio,** selezionare il segno di spunta accanto al messaggio e selezionare **Ripristina**. <br/> |
+|Tag <br/> |È possibile scegliere i tag **dall'elenco a** discesa Tag per filtrare i messaggi. I tag disponibili sono: **Impatto** amministratore, **Aggiornamento** principale, **Privacy** dei dati, **Aggiornamento** funzionalità, **Nuova funzionalità,** **Ritiro** e **Impatto utente.** <br/> |
+|Categoria  <br/> | Questa opzione non viene visualizzata per impostazione predefinita, ma può essere specificata nel **pannello Scegli** colonne. I messaggi sono identificati da una delle tre categorie seguenti: <br/><br/> **Prevenzione o risoluzione dei** problemi : informa l'utente dei problemi noti che interessano l'organizzazione e può richiedere l'intervento dell'utente per evitare interruzioni del servizio. I messaggi di tipo Prevenire o risolvere problemi sono diversi da quelli di tipo Integrità dei servizi, in quanto richiedono che l'utente sia proattivo per evitare problemi. <br/> <br/> **Pianificare la modifica**: informa l'utente delle modifiche apportate a Microsoft 365 che potrebbero richiedere l'intervento dell'utente per evitare interruzioni del servizio. Ad esempio, verranno comunicate le modifiche apportate ai requisiti di sistema o le caratteristiche in fase di rimozione. Per assicurare la normale operatività del servizio, Microsoft fornisce almeno 30 giorni di preavviso per ogni modifica che richiede l'intervento di un amministratore. <br/> <br/> **Rimanere informati:** informazioni sulle funzionalità nuove o aggiornate che stiamo attivando nell'organizzazione. Le funzionalità vengono in genere annunciate per prime nella roadmap di [Microsoft 365.](https://go.microsoft.com/fwlink/?linkid=2070821) <br/><br/>Può anche inserirvi informazioni sulla manutenzione pianificata in conformità al contratto di servizio. La manutenzione pianificata può comportare tempi di invasi, in cui l'utente o gli utenti non possono accedere a Microsoft 365, a una funzionalità specifica o a un servizio come la posta elettronica o OneDrive for Business.  <br/> |
+|Intervento entro  <br/> |Qui verranno specificate solo le date se Microsoft intende apportare una modifica che richiede l'intervento dell'utente entro una certa data di scadenza. Dal momento che raramente usiamo la colonna **Act by,** se vedi qualcosa qui, dovresti prestare particolare attenzione ad esso.  <br/> |
+|Ultimo aggiornamento  <br/> |Data in cui il messaggio è stato pubblicato o aggiornato per ultimo.  <br/> |
+|ID messaggio  <br/> |Microsoft tiene traccia dei post del Centro messaggi in base agli ID messaggio. Puoi fare riferimento a questo ID se vuoi inviare commenti e suggerimenti o se chiami il supporto per un determinato messaggio.  <br/> |
+
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Ruoli di amministratore che non hanno accesso al Centro messaggi
 
 - Amministratore di conformità
@@ -198,7 +227,115 @@ Usiamo la traduzione automatica per visualizzare automaticamente i messaggi nell
 - Ruoli con autorizzazioni di scrittura nella directory
 - Amministratore del servizio Intune
 - Amministratore dei ruoli con privilegi
-- Ruolo con autorizzazioni di lettura per i report
+- Amministratore che legge i report
+
+## <a name="give-feedback-on-a-post"></a>Inviare feedback su un post
+
+Nel Centro messaggi è possibile selezionare un messaggio per visualizzarne i dettagli.
+
+Per fornire feedback sul messaggio, selezionare l'icona **Mi piace** o **Non mi piace** nella parte inferiore del riquadro dei dettagli del messaggio e digitare un commento facoltativo nella casella di testo visualizzata. Non specificare informazioni personali. Se si vuole, è possibile selezionare **Autorizzo a contattarmi in relazione a questo feedback** e quindi **Invia**.
+
+## <a name="share-a-message"></a>Condividere un messaggio
+
+Se è presente un messaggio su cui deve agire un altro utente. è possibile condividerne il contenuto con qualsiasi utente tramite posta elettronica:
+  
+1. Selezionare il messaggio per aprirlo e quindi selezionare **Condividi**.
+  
+2. Per condividere il messaggio, immettere fino a due indirizzi di posta elettronica delimitati da due punti. È possibile inviare messaggi a indirizzi di posta elettronica di singoli o di gruppo. Se si vuole, è possibile scegliere di ricevere una copia del messaggio di posta elettronica (il messaggio verrà inviato all'indirizzo di posta elettronica principale) oppure aggiungere un messaggio personale per fornire ulteriore contesto ai destinatari.
+  
+3. Selezionare **Condividi** per inviare il messaggio di posta elettronica.
+
+## <a name="get-a-link"></a>Ottenere un collegamento
+
+Se è necessario contattare un altro amministratore per verificare che sia informato della modifica e intervenga di conseguenza, è possibile generare un collegamento da condividere ad esempio tramite posta elettronica o messaggistica istantanea, che consentirà all'utente di connettersi direttamente al messaggio. La persona con cui si condivide il collegamento deve avere accesso al Centro messaggi. Per maggiori informazioni, vedere [Ruoli di amministratore che non hanno accesso al Centro messaggi](message-center.md#admin-roles-that-dont-have-access-to-the-message-center).
+
+::: moniker range="o365-worldwide"
+
+1. Selezionare il messaggio per aprirlo.
+
+2. Selezionare **Copia collegamento**.
+
+3. Premere CTRL+V oppure fare clic con il pulsante destro del mouse e scegliere **Incolla** per inserire il collegamento nel documento desiderato.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Selezionare il messaggio per aprirlo.
+
+2. Scegliere **Altro** \> **Ottieni un collegamento** nella barra delle azioni.
+
+3. Consentire alla pagina Web di accedere agli Appunti. Un collegamento diretto viene copiato negli Appunti.
+
+4. Premere CTRL+V oppure fare clic con il pulsante destro del mouse e scegliere **Incolla** per inserire il collegamento.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Selezionare il messaggio per aprirlo.
+
+2. Selezionare **Copia collegamento**.
+
+3. Premere CTRL+V oppure fare clic con il pulsante destro del mouse e scegliere **Incolla** per inserire il collegamento nel documento desiderato.
+
+::: moniker-end
+
+## <a name="read-and-unread-states"></a>Stati Letto e Da leggere
+
+I messaggi non letti nel Centro messaggi verranno visualizzati in grassetto. Aprendo un messaggio, verrà contrassegnato come letto. È possibile contrassegnare un messaggio come da leggere.
+
+::: moniker range="o365-worldwide"
+
+- Nella pagina principale del Centro messaggi selezionare i puntini di sospensione **Altre opzioni** accanto a un messaggio e infine scegliere **Segna come da leggere**.
+
+È anche possibile aprire un messaggio e contrassegnarlo come da leggere nel riquadro dei dettagli.
+  
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Selezionare il messaggio per aprirlo.
+
+2. Selezionare **Altro** \> **Segna come da leggere**.
+
+3. Chiudere il messaggio.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+- Nella pagina principale del Centro messaggi selezionare i puntini di sospensione **Altre opzioni** accanto a un messaggio e infine scegliere **Segna come da leggere**.
+
+::: moniker-end
+
+## <a name="archive-and-restore"></a>Archiviare e ripristinare
+
+Se viene visualizzato un messaggio che non è di propria competenza o su cui si è già intervenuti, è possibile archiviarlo per escluderlo dalla Posta in arrivo. La visualizzazione mostrata nel Centro messaggi è specifica per l'account utente, di conseguenza l'archiviazione di un messaggio non ha alcun effetto sugli altri amministratori. Per archiviare un messaggio, si può procedere in due modi.
+
+- Nella pagina principale del Centro messaggi selezionare un messaggio e quindi selezionare **Archivia** sopra l'elenco dei messaggi.
+
+- Aprire il messaggio, selezionare **Archivia** nella parte superiore del riquadro dei messaggi.
+
+È possibile recuperare un messaggio archiviato? Nessun problema.
+  
+1. Selezionare la scheda **Archivio** nella parte superiore del Centro messaggi. Viene visualizzato un elenco dei messaggi archiviati.
+
+2. Selezionare il messaggio e scegliere **Ripristina** per ripristinarlo nella Posta in arrivo.
+
+## <a name="favorite-messages"></a>Messaggi preferiti
+
+Per contrassegnare un messaggio come preferito, al passaggio del mouse sul titolo del messaggio verrà visualizzata una stella :::image type="icon" source="../../media/favorite-star.png" border="false"::: dei **Preferiti** che è possibile selezionare subito dopo i puntini di sospensione **Altre opzioni**. Dopo aver contrassegnato i messaggi come preferiti, è anche possibile ordinarli e filtrarli.
+
+## <a name="scroll-messages-in-the-message-pane"></a>Scorrere i messaggi nel riquadro dei messaggi
+
+Quando si apre un messaggio in un riquadro di lettura, è possibile usare le frecce **Su** e **Giù** :::image type="icon" source="../../media/updownarrows.png" border="false"::: nella parte superiore del riquadro per passare al messaggio successivo o a quello precedente nell'elenco.
+
+## <a name="track-your-message-center-tasks-in-planner"></a>Tenere traccia delle attività del Centro messaggi in Planner
+
+Nel Centro messaggi di Microsoft 365 arrivano molte informazioni utili riguardanti le modifiche ai servizi di Microsoft 365. Può risultare difficile tenere traccia di quali modifiche richiedono di portare a termine le attività, della data di scadenza e dell'autore e monitorarle fino al completamento. Potrebbe anche risultare utile aggiungere note riguardanti un elemento e contrassegnarle per controllarle in un secondo momento. È possibile effettuare tutte queste operazioni e molto altro durante la sincronizzazione dei messaggi dall'interfaccia di amministrazione di Microsoft 365 a Microsoft Planner. Per altre informazioni, vedere [Tenere traccia delle attività del Centro messaggi in Planner](/office365/planner/track-message-center-tasks-planner).
+
+Per una panoramica del Centro messaggi, vedere [Centro messaggi in Microsoft 365](message-center.md). Per informazioni su come impostare le preferenze per la lingua per abilitare la traduzione automatica dei post del Centro messaggi, vedere [Traduzione dei post del Centro messaggi](language-translation-for-message-center-posts.md). Se si cerca un modo alternativo per ottenere informazioni in tempo reale sull'integrità dei servizi e comunicazioni del Centro messaggi, vedere [Panoramica sull'API per le comunicazioni di servizio di Microsoft 365](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15)).
 
 ## <a name="unsubscribe-from-message-center-emails"></a>Annullare la sottoscrizione ai messaggi di posta elettronica del Centro messaggi
 
@@ -209,3 +346,11 @@ Usiamo la traduzione automatica per visualizzare automaticamente i messaggi nell
     -   Per interrompere la ricezione di avvisi di posta elettronica sui messaggi di privacy dei dati, verificare che la casella di controllo Invia messaggi di posta elettronica per i messaggi **di privacy** dei dati non sia selezionata.  I messaggi sulla privacy dei dati non sono inclusi nel digest settimanale.
 
 2. Selezionare **Salva** per mantenere le modifiche.<br/>
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Configurare le opzioni di rilascio Standard o Mirato](../manage/release-options-in-office-365.md) (articolo)
+
+[Gestire le caratteristiche di Office visualizzate in Novità](../manage/show-hide-new-features.md) (articolo)
+
+[Sottoscrizioni aziendali e documentazione relativa alla fatturazione](../../commerce/index.yml) (collegamenti)
