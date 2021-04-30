@@ -647,6 +647,6 @@
 ##### [Regole per la riduzione della superficie di attacco](troubleshoot-asr.md)
 ##### [Eseguire la migrazione a Regole per la riduzione della superficie di attacco](migrating-asr-rules.md)
 
-# [Microsoft 365 Defender](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
 # [Defender per Office 365](../office-365-security/index.yml)
 # [Defender per identità](https://docs.microsoft.com/defender-for-identity/)
