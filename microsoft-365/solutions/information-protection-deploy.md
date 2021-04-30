@@ -16,93 +16,93 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-overview
 ms.custom: ''
-description: Configurare l'infrastruttura di sicurezza e di servizio per proteggere le informazioni e rispettare le normative sulla privacy dei dati.
-ms.openlocfilehash: 9af0a113d9b0eb2cbca07fdf457cd8bb7db3e094
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Configurare la protezione delle informazioni in Microsoft 365 normative sulla privacy dei dati come GDPR e CALIFORNIA Consumer Privacy Act (CCPA), tra cui Microsoft Teams, SharePoint e posta elettronica.
+ms.openlocfilehash: cae3a559c2bce39ecb02afa9be0878ff5e19ba48
+ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842297"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100772"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365
 
-L'organizzazione potrebbe essere soggetta a normative regionali sulla privacy dei dati che richiedono di proteggere, gestire e fornire diritti e controllo sulle informazioni personali archiviate nell'infrastruttura IT, sia in locale che nel cloud. L'esempio migliore di una normativa sulla privacy dei dati è il Regolamento generale sulla protezione dei dati (GDPR) dell'Unione Europea. La mancata conformità alle normative sulla privacy dei dati può comportare sanzioni sostanziali.
+L'organizzazione potrebbe essere soggetta a normative regionali sulla privacy dei dati che richiedono di proteggere, gestire e fornire diritti e controllo sulle informazioni personali archiviate nell'infrastruttura IT, sia in locale che nel cloud. L'esempio migliore di una normativa sulla privacy dei dati è il regolamento generale sulla protezione dei dati (GDPR) dell'Unione europea. La mancata conformità alle normative sulla privacy dei dati può comportare sanzioni sostanziali.
 
-Esempi di tipi di dati in Microsoft 365 includono sessioni di chat in Microsoft Teams, messaggi di posta elettronica in Exchange e file in SharePoint e OneDrive. Questa soluzione fornisce indicazioni su come valutare i rischi e identificare le informazioni, proteggere, governare e rispondere agli incidenti di privacy dei dati per i dati personali archiviati nei servizi di Microsoft 365 soggetti alle normative sulla privacy dei dati.
+Esempi di tipi di dati in Microsoft 365 includono sessioni di chat in Microsoft Teams, messaggi di posta elettronica in Exchange e file in SharePoint e OneDrive. Questa soluzione fornisce indicazioni su come valutare i rischi e intraprendere azioni appropriate per proteggere i dati personali in Microsoft 365. Ciò include l'identificazione delle informazioni personali in modo da poter proteggere, regolamentare e rispondere a incidenti di privacy dei dati.
 
-![Che cos'è la protezione delle informazioni per le normative sulla privacy dei dati](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png)
+![Che cos'è la protezione delle informazioni per le normative sulla privacy dei dati](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-Vengono inoltre fornite informazioni aggiuntive sull'uso dei controlli di identità, dispositivo e protezione dalle minacce di Microsoft 365 per le esigenze di privacy dei dati. 
+Vengono inoltre fornite ulteriori informazioni sull'uso di controlli Microsoft 365 identità, dispositivo e protezione dalle minacce per le esigenze di privacy dei dati. 
 
-Per soddisfare i criteri di protezione delle informazioni per la conformità alle normative sulla privacy dei dati, usare queste funzionalità e funzionalità di Microsoft 365.
+Queste Microsoft 365 e funzionalità consentono di soddisfare i criteri per la protezione delle informazioni.
 
 | Capacità o funzionalità | Descrizione | Licenze |
 |:-------|:-----|:-------|
-| Compliance Manager | Gestire le attività di conformità alle normative, ottenere un punteggio complessivo della configurazione di conformità corrente e trovare suggerimenti per il miglioramento di questo strumento di valutazione dei rischi basato sul flusso di lavoro nel Centro conformità Microsoft 365. | Microsoft 365 E3 e E5 |
+| Compliance Manager | Gestire le attività di conformità normativa, ottenere un punteggio complessivo della configurazione di conformità corrente e trovare suggerimenti per il miglioramento. Si tratta di uno strumento di valutazione dei rischi basato sul flusso di lavoro nel Centro Microsoft 365 conformità. | Microsoft 365 E3 e E5 |
 | Microsoft Defender per Office 365 | Proteggere le app e i dati di Microsoft 365, ad esempio i messaggi di posta elettronica, i documenti di Office e gli strumenti di collaborazione, da eventuali attacchi. | Microsoft 365 E3 e E5 | 
-| Etichette di riservatezza | Classificare e proteggere i dati dell'organizzazione senza compromettere la produttività degli utenti e la loro capacità di collaborare aggiungendo etichette con vari livelli di protezione a messaggi di posta elettronica, file o siti. | Microsoft 365 E3 ed E5 |
-| Prevenzione della perdita dei dati (DLP) | Rilevare, comunicare e bloccare la condivisione rischiosa, involontaria o inappropriata, come la condivisione di dati che contengono informazioni personali, sia all'interno che all'esterno. | Microsoft 365 E3 ed E5 | 
-| Etichette e criteri di conservazione dei dati | Implementare controlli di governance delle informazioni, come la durata di conservazione dei dati e i requisiti per l'archiviazione dei dati personali dei clienti, per garantire la conformità con i criteri o le normative sui dati dell'organizzazione. | Microsoft 365 E3 ed E5 |
-| Crittografia della posta elettronica | Inviare e ricevere messaggi di posta elettronica tra persone all'interno e all'esterno dell'organizzazione che contengono dati regolamentati, come i dati personali dei clienti. | Microsoft 365 E3 ed E5 |
+| Etichette di riservatezza | Classificare e proteggere i dati dell'organizzazione senza ostacolare la produttività degli utenti e la loro capacità di collaborare. Inserire etichette con vari livelli di protezione per la posta elettronica, i file o i siti. | Microsoft 365 E3 ed E5 |
+| Prevenzione della perdita dei dati (DLP) | Rilevare, avvisare e bloccare la condivisione rischiosa, involontaria o inappropriata di dati contenenti informazioni personali, sia internamente che esternamente. | Microsoft 365 E3 ed E5 | 
+| Etichette e criteri di conservazione dei dati | Implementare i controlli di governance delle informazioni. Questi possono includere la determinazione del tempo di conservazione dei dati (ad esempio i dati personali relativi ai clienti) per conformarsi ai criteri o alle normative sui dati dell'organizzazione. | Microsoft 365 E3 ed E5 |
+| Crittografia della posta elettronica | Proteggere i dati personali inviando e ricevendo messaggi di posta elettronica crittografati tra persone interne ed esterne all'organizzazione. | Microsoft 365 E3 e E5 |
 ||||
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organizzazione delle linee guida in questa soluzione
 
-Per aiutarti a comprendere gli strumenti di Microsoft 365 disponibili per identificare, gestire, controllare e monitorare i dati personali soggetti a una o più normative relative alla privacy, questa guida è organizzata in sezioni.
+Per comprendere meglio gli Microsoft 365 disponibili per soddisfare una o più normative relative alla privacy, queste indicazioni sono organizzate in sezioni.
  
 ![Passaggi per implementare la protezione delle informazioni per le normative sulla privacy dei dati](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 Ognuna di queste sezioni corrisponde a un articolo separato in questa soluzione.
 
 >[!Note]
->Se si ha già familiarità con gli obblighi di privacy dei dati ed è in esecuzione su un piano esistente, è possibile concentrarsi sulle indicazioni relative a prevenzione, protezione, conservazione e analisi.
+>Se si ha già familiarità con gli obblighi di privacy dei dati e si sta eseguendo in base a un piano esistente, è possibile concentrarsi sulla guida Impedisci, Proteggi, Conserva e Analizza.
 
 >[!Important]
->Seguire queste indicazioni non ti rende necessariamente conforme alle normative sulla privacy dei dati, soprattutto considerando il numero di passaggi necessari che non sono nel contesto delle funzionalità. L'utente è responsabile di garantire la conformità e di consultare i team legali e di conformità o di richiedere indicazioni e consigli da terze parti che si specializzano nella conformità.
+>Seguire queste indicazioni non ti rende necessariamente conforme a qualsiasi normativa sulla privacy dei dati, soprattutto considerando il numero di passaggi necessari che non sono nel contesto delle funzionalità. L'utente è responsabile di garantire la conformità e di consultare i team legali e di conformità o di richiedere indicazioni e consigli da terze parti che si specializzano nella conformità.
 >
 
 ## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Pianificare: valutare i rischi per la privacy dei dati e identificare gli elementi sensibili
 
-La valutazione delle normative sulla privacy dei dati e dei rischi a cui l'organizzazione è soggetta è un primo passo fondamentale da intraprendere prima di iniziare a implementare miglioramenti, inclusi quelli raggiungibili tramite la configurazione di Microsoft 365. Ciò può includere una valutazione generale della conformità o l'identificazione di particolari tipi di informazioni sensibili soggetti ai controlli normativi che l'organizzazione deve rispettare, nonché il verificarsi di tali tipi nell'ambiente Microsoft 365.
+La valutazione delle normative sulla privacy dei dati e dei rischi a cui l'organizzazione è soggetta è un primo passo fondamentale da eseguire prima di iniziare a implementare miglioramenti, tra cui la configurazione delle funzionalità in Microsoft 365. Questo lavoro può includere una valutazione generale della conformità o l'identificazione di particolari tipi di informazioni riservate soggetti ai controlli normativi che l'organizzazione deve rispettare.
 
-Per ulteriori informazioni, vedere Valutare i rischi [per la privacy dei dati e identificare gli elementi sensibili.](information-protection-deploy-assess.md)
+Per ulteriori informazioni, vedere [Valutare i rischi per la privacy dei dati e identificare gli elementi sensibili.](information-protection-deploy-assess.md)
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>Tenere traccia: eseguire valutazioni dei rischi e controllare il punteggio di conformità
 
-Compliance Manager, disponibile nel Centro conformità Microsoft 365, offre una capacità integrata di tenere traccia e gestire le azioni di miglioramento nel complesso, nonché quelle relative a più normative sulla privacy dei dati che si applicano all'utente.
+Compliance Manager, disponibile nel Centro conformità Microsoft 365, offre la possibilità predefinita di tenere traccia e gestire le azioni di miglioramento nel complesso, nonché quelle relative a più normative sulla privacy dei dati che si applicano all'utente.
 
-Sfrutta i modelli di valutazione predefiniti specifici per ogni regolamento, in cui puoi tenere traccia delle attività per ogni modello di valutazione selezionato, nonché visualizzare controlli normativi specifici e correlarli ad azioni specifiche.
+È possibile utilizzare modelli di valutazione predefiniti specifici per ogni regolamento, in cui è possibile tenere traccia degli elementi di azione per ogni modello di valutazione selezionato, nonché visualizzare controlli normativi specifici e correlarli ad azioni specifiche.
 
-Per ulteriori informazioni, vedere [Usare Compliance Manager per gestire le azioni di miglioramento.](information-protection-deploy-compliance.md)
+Per ulteriori informazioni, vedere [Utilizzare Compliance Manager per gestire le azioni di miglioramento.](information-protection-deploy-compliance.md)
 
 ## <a name="prevent-protect-personal-data"></a>Impedisci: proteggere i dati personali
 
-Microsoft 365 offre una serie di funzionalità di protezione da identità, dispositivi e minacce che è possibile usare per garantire la conformità alle normative sulla privacy dei dati. 
+Microsoft 365 offre funzionalità di protezione da identità, dispositivi e minacce che puoi usare per rispettare la conformità alle normative sulla privacy dei dati. 
 
-Per ulteriori informazioni, vedere [Use identity, device, and threat protection for data privacy regulation.](information-protection-deploy-identity-device-threat.md)
+Per ulteriori informazioni, vedere [Use identity, device, and threat protection for data privacy regulation](information-protection-deploy-identity-device-threat.md).
 
-Questo articolo descrive brevemente ciò che le normative sulla privacy dei dati in genere chiamano in queste aree e fornisce un elenco delle soluzioni di Microsoft 365 correlate, con collegamenti a ulteriori informazioni che consentono di soddisfare eventuali requisiti di implementazione. 
+In questo articolo vengono brevemente descritte le norme sulla privacy dei dati generalmente richieste in queste aree e viene fornito un elenco delle soluzioni Microsoft 365 correlate, con collegamenti a ulteriori informazioni utili per risolvere eventuali requisiti di implementazione. 
 
-## <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteggere le informazioni soggette alle normative sulla privacy dei dati
+## <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteggere le informazioni soggette alla normativa sulla privacy dei dati
 
-Le normative sulla privacy dei dati stabiliscino una serie di controlli sulla protezione delle informazioni personali che possono essere utilizzati nel tuo ambiente, inclusi più di 40 controlli di Protezione delle informazioni solo nelle quattro normative sulla privacy dei dati nel nostro set di esempi di GDPR, California Consumer Protection Act (CCPA), HIPAA-HITECH (United States health care privacy act) e brazil Data Protection Act (LGPD).
+Le normative sulla privacy dei dati stabiliscino una serie di controlli sulla protezione delle informazioni personali che possono essere utilizzati nel tuo ambiente, inclusi più di 40 controlli per la protezione delle informazioni solo attraverso le quattro normative sulla privacy dei dati nel nostro set di esempio di GDPR, California Consumer Protection Act (CCPA), HIPAA-HITECH (United States health care privacy act) e il Brazil Data Protection Act (LGPD).
 
-Per ulteriori informazioni, vedere Proteggere le informazioni soggette alla normativa sulla privacy dei [dati nell'organizzazione.](information-protection-deploy-protect-information.md)
+Per ulteriori informazioni, vedere [Proteggere le informazioni soggette alla normativa sulla privacy dei dati nell'organizzazione.](information-protection-deploy-protect-information.md)
 
-In questo articolo vengono riportati i principali schemi di controllo che possono essere utilizzati per soddisfare le esigenze di protezione delle informazioni per la privacy dei dati nell'organizzazione.
+Questo articolo illustra i principali schemi di controllo che possono essere utilizzati per affrontare le esigenze di protezione delle informazioni per la privacy dei dati nell'organizzazione.
 
-## <a name="retain-govern-information-subject-to-data-privacy-regulation"></a>Conservare: gestire le informazioni soggette alle normative sulla privacy dei dati
+## <a name="retain-govern-information-subject-to-data-privacy-regulation"></a>Retain: Govern information subject to data privacy regulation
 
-Le normative sulla privacy dei dati sono necessarie per i controlli di governance delle informazioni personali che possono essere utilizzati nel proprio ambiente, inclusi più di ventiquattro controlli nelle quattro normative sulla privacy dei dati nel nostro set di campioni di GDPR, CCPA, HIPAA-HITECH e LGPD.
+Le normative sulla privacy dei dati sono necessarie per i controlli di governance delle informazioni personali che possono essere utilizzati nel tuo ambiente, inclusi più di 24 controlli nelle quattro normative sulla privacy dei dati nel nostro set di esempi di GDPR, CCPA, HIPAA-HITECH e LGPD.
 
-Per ulteriori informazioni, vedere [Governare le informazioni soggette alla normativa sulla privacy dei dati nell'organizzazione.](information-protection-deploy-govern.md)
+Per ulteriori informazioni, vedere [Govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md).
 
-Anche se le normative sulla privacy dei dati possono essere vaghe per quanto riguarda la governance delle informazioni, ad esempio la conservazione, l'eliminazione e l'archiviazione, questo articolo illustra i principali schemi di controllo che è possibile utilizzare per soddisfare le esigenze di governance delle informazioni per la privacy dei dati &mdash; &mdash; nell'organizzazione.
+Anche se le normative sulla privacy dei dati possono essere vaghe per quanto riguarda la governance delle informazioni, come la conservazione, l'eliminazione e l'archiviazione, questo articolo illustra gli schemi di controllo principali che è possibile utilizzare per soddisfare le esigenze di governance delle informazioni per la privacy dei dati &mdash; &mdash; nell'organizzazione.
 
-## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>Analizzare: monitorare, analizzare e rispondere agli incidenti di privacy dei dati
+## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>Analizzare: monitorare, analizzare e rispondere a eventi imprevisti sulla privacy dei dati
 
-Sono disponibili funzionalità di Microsoft 365 che consentono di monitorare, analizzare e rispondere agli incidenti di privacy dei dati nell'organizzazione durante l'operatività delle funzionalità correlate. 
+Sono disponibili Microsoft 365 che consentono di monitorare, analizzare e rispondere agli incidenti relativi alla privacy dei dati nell'organizzazione durante l'operatività delle funzionalità correlate. 
 
-Disporre di processi, procedure e altra documentazione per ognuno di questi può essere importante per dimostrare la conformità agli organismi normativi.
+La presenza di processi, procedure e altra documentazione per l'utilizzo di queste funzionalità può essere importante per dimostrare la conformità agli organismi normativi.
 
-Per ulteriori informazioni, vedere [Monitorare e rispondere agli incidenti di privacy dei dati nell'organizzazione.](information-protection-deploy-monitor-respond.md)
+Per ulteriori informazioni, vedere [Monitor and respond to data privacy incidents in your organization](information-protection-deploy-monitor-respond.md).
