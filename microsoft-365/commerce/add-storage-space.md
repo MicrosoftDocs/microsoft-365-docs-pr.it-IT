@@ -12,40 +12,41 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: drjones
 search.appverid:
 - MET150
-description: Informazioni su come aggiungere e ridurre l'archiviazione di file nell'abbonamento a Microsoft 365. Con spazio di archiviazione file aggiuntivo, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
-ms.date: ''
-ms.openlocfilehash: d65677b9c078026343410b53acd48932258cb4b1
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Informazioni su come aggiungere e ridurre l'archiviazione di file nell'Microsoft 365 abbonamento. Con l'archiviazione di file aggiuntiva, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
+ms.date: 04/02/2021
+ms.openlocfilehash: 576efee4ba0e1ad8fb43b3d8475d6c3a949ee1e8
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576962"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107389"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
-Se lo spazio di archiviazione per le raccolte di siti di SharePoint Online sta per esaurirsi, è possibile aggiungere altro spazio all'abbonamento, se il piano è idoneo. Se l'archivio file aggiuntivo di **Office 365** non è presente nell'elenco dei componenti aggiuntivi disponibili, significa che il piano non è idoneo. Per ulteriori informazioni, vedere [Il piano è idoneo?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+Se lo spazio di archiviazione per le raccolte di siti di SharePoint Online sta per esaurirsi, è possibile aggiungere altro spazio all'abbonamento, se il piano è idoneo. Se non vedi il Office 365 file **Archiviazione** nell'elenco dei componenti aggiuntivi disponibili, significa che il piano non è idoneo. Per ulteriori informazioni, vedere [Il piano è idoneo?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> Se l'abbonamento è stato acquistato tramite contratti multilicenza o un CSP, non è possibile acquistare **Office 365 Extra File Storage** per l'organizzazione direttamente da Microsoft. Per assistenza, contattare il proprio rappresentante o partner.
+> Se hai acquistato l'abbonamento tramite contratti multilicenza o un CSP, non puoi acquistare Office 365 **Extra File Archiviazione** per la tua organizzazione direttamente da Microsoft. Per assistenza, contattare il proprio rappresentante o partner.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Per eseguire le attività in questo articolo, è necessario essere un amministratore globale o di SharePoint. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../admin/add-users/about-admin-roles.md).
+Per eseguire le attività in questo articolo, è necessario essere un amministratore globale o SharePoint amministratore. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Visualizzare lo spazio di archiviazione disponibile
 
-1. Nell'interfaccia di amministrazione di SharePoint passare alla pagina <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Siti</a> attivi e accedere con un account con autorizzazioni [di](/sharepoint/sharepoint-admin-role) amministratore per l'organizzazione.
+1. Nell'SharePoint di amministrazione passare alla pagina <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Siti</a> attivi e accedere con un account con autorizzazioni di amministratore [per](/sharepoint/sharepoint-admin-role) l'organizzazione.
 
-2. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione usata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento. Se l'organizzazione ha configurato Multi-Geo in Office 365, la barra mostra anche la quantità di spazio di archiviazione usato in tutte le posizioni geografiche.
+2. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione usata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento. Se l'organizzazione ha configurato Multi-Geo in Office 365, la barra mostra anche la quantità di spazio di archiviazione utilizzato in tutte le posizioni geografiche.
 
    ![Barra di archiviazione nella pagina Siti attivi](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
@@ -61,7 +62,7 @@ Per informazioni sull'impostazione dei limiti di archiviazione per le raccolte [
 Se non hai ancora acquistato spazio di archiviazione aggiuntivo per l'abbonamento, puoi farlo.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acquisto servizi.</a>
-2. Nella parte inferiore della pagina **Acquista** servizi, nella sezione Componenti aggiuntivi, individuare Archiviazione file extra **di Office 365** e selezionare **Dettagli.** 
+2. Nella parte inferiore della pagina **Servizi** di acquisto, nella sezione Componenti aggiuntivi, individuare Office 365 file **aggiuntivo Archiviazione** e selezionare **Dettagli**. 
 3. Nella pagina dei dettagli del prodotto selezionare **Avanti.**
 4. Se necessario, scegliere la sottoscrizione di base, quindi immettere il numero di gigabyte di spazio di archiviazione che si desidera aggiungere.
 5. Selezionare **Estrai ora.**
@@ -70,12 +71,12 @@ Se non hai ancora acquistato spazio di archiviazione aggiuntivo per l'abbonament
 
 ## <a name="increase-or-decrease-storage"></a>Aumentare o diminuire lo spazio di archiviazione
 
-Se è già stato acquistato spazio di archiviazione file aggiuntivo tramite il componente aggiuntivo Di archiviazione file extra di **Office 365,** è possibile utilizzare questa procedura per aumentare o ridurre lo spazio di archiviazione aggiuntivo per l'abbonamento. È possibile ridurre lo spazio di archiviazione fino a 1 gigabyte. Per rimuovere tutto lo spazio di archiviazione aggiuntivo, [contattare il supporto](../admin/contact-support-for-business-products.md)tecnico .
+Se hai già acquistato spazio di archiviazione file aggiuntivo tramite il componente aggiuntivo **Office 365 Extra File Archiviazione,** puoi usare questa procedura per aumentare o ridurre lo spazio di archiviazione aggiuntivo per l'abbonamento. È possibile ridurre lo spazio di archiviazione fino a 1 gigabyte. Per rimuovere tutto lo spazio di archiviazione aggiuntivo, [contattare il supporto](../admin/contact-support-for-business-products.md)tecnico .
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **Prodotti** selezionare l'abbonamento che contiene il componente aggiuntivo Di archiviazione file extra di **Office 365.**
+2. Nella scheda **Prodotti** selezionare la sottoscrizione che contiene il Office 365 **aggiuntivo Archiviazione** aggiuntivo.
 3. Nella sezione Componenti aggiuntivi  della pagina dei dettagli del prodotto selezionare **Gestisci componenti aggiuntivi**.
-4. **Nell'elenco Componenti aggiuntivi del** riquadro  Gestisci componenti aggiuntivi scegliere Archiviazione file extra di **Office 365.**
+4. **Nell'elenco Componenti aggiuntivi del** riquadro  Gestisci componenti aggiuntivi scegliere Office 365 file **Archiviazione**.
 5. Nella casella **di** testo Quantità immettere il numero di GBs di spazio di archiviazione desiderato per la sottoscrizione.
 6. Selezionare **Salva**.
 
@@ -100,9 +101,9 @@ Office 365 Extra File Storage è disponibile per gli abbonamenti seguenti:
 - Microsoft 365 F1
 
 > [!NOTE]
-> Office 365 Extra File Storage è disponibile anche per i piani GCC, GCC High e DOD.
+> Office 365 Extra File Archiviazione è disponibile anche per i piani GCC, GCC High e DOD.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Gestire i limiti di archiviazione del sito](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (articolo)\
-[Impostare lo spazio di archiviazione predefinito per gli utenti di OneDrive](/onedrive/set-default-storage-space)(articolo)
+[Impostare lo spazio di archiviazione predefinito per OneDrive utenti](/onedrive/set-default-storage-space)(articolo)

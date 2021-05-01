@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4d305e952d48d42afffe91466121c67621aa9d85
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042687"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113403"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -60,8 +60,8 @@ Altre informazioni su come Contoso Corporation ha utilizzato un team isolato per
 ## <a name="initial-protections"></a>Protezioni iniziali
 
 Per proteggere l'accesso al team e al sito di SharePoint sottostante, vedere le procedure consigliate seguenti:
-- [Criteri di identità e accesso ai dispositivi](../security/defender-365-security/identity-access-policies.md)
-- [Criteri di accesso di SharePoint Online](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [Criteri di identità e accesso ai dispositivi](../security/office-365-security/identity-access-policies.md)
+- [Criteri di accesso di SharePoint Online](../security/office-365-security/sharepoint-file-access-policies.md)
 - [Distribuire i team con la protezione di base](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Condivisione con gli utenti guest
@@ -111,7 +111,7 @@ Per creare un'etichetta di riservatezza
 1. Aprire il [Centro conformità Microsoft 365](https://compliance.microsoft.com).
 2. In **Soluzioni** fare clic su **Protezione delle informazioni**.
 3. Fare clic su **Crea un'etichetta**.
-4. Assegnare un nome all'etichetta. Si consiglia di assegnargli il nome del team con cui verrà usato.
+4. Assegnare un nome all'etichetta. Si consiglia di assegnargli il nome del team con cui verrà usata.
 5. Aggiungere un nome visualizzato e una descrizione, quindi fare clic su **Avanti**.
 6. Nella **pagina Definire l'ambito di questa etichetta**, selezionare **File ed e-mail** e **Gruppi e siti**, quindi fare clic su **Avanti**.
 7. Nella pagina **Scegliere le impostazioni di protezione per file ed e-mail**, selezionare **Crittografare file ed e-mail**, quindi fare clic su **Avanti**.
@@ -231,7 +231,7 @@ In Microsoft 365 sono disponibili altri metodi per proteggere i contenuti. Valut
 
 - Chiedere agli utenti guest di accettare le [condizioni per l'utilizzo](/azure/active-directory/conditional-access/terms-of-use).
 - Configurare un [criterio di timeout della sessione](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) per gli utenti guest.
-- Creare [tipi di informazioni sensibili](../compliance/sensitive-information-type-learn-about.md) e usare la [prevenzione della perdita dei dati](../compliance/data-loss-prevention-policies.md) per impostare criteri per l'accesso alle informazioni riservate.
+- Creare [tipi di informazioni sensibili](../compliance/sensitive-information-type-learn-about.md) e usare la [prevenzione della perdita dei dati](../compliance/dlp-learn-about-dlp.md) per impostare criteri per l'accesso alle informazioni riservate.
 - Usare le [verifiche di accesso di Azure Active Directory](/azure/active-directory/governance/access-reviews-overview) per verificare periodicamente l'accesso e l'appartenenza al team.
 
 ## <a name="drive-user-adoption-for-team-members"></a>Incoraggiare l'adozione da parte dei membri del team

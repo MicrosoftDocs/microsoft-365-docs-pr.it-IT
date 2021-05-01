@@ -12,20 +12,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Informazioni su come annullare la versione di valutazione o l'abbonamento a pagamento a Microsoft 365 per le aziende.
-ms.date: ''
-ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.date: 04/08/2021
+ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644645"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107003"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -103,7 +104,7 @@ Se si usa un dominio personalizzato con il proprio abbonamento, è necessario es
 
 Se si è configurato un dominio personalizzato, sono stati aggiunti i record DNS necessari per il funzionamento del dominio con i servizi di Microsoft 365. Prima di rimuovere il dominio, assicurarsi di aggiornare i record DNS, come il record MX del dominio, presso l'host DNS.
 
-Ad esempio, modificare il record MX presso l'host DNS. La posta elettronica inviata al dominio non verrà più inviata all'indirizzo Microsoft e verrà invece indirizzata al nuovo provider di posta elettronica. Un record MX determina infatti la destinazione della posta elettronica per il dominio.
+Ad esempio, cambiare il record MX presso l'host DNS. La posta elettronica inviata al dominio non verrà più recapitata all'indirizzo Microsoft e viene invece indirizzata al nuovo provider di posta elettronica. Un record MX determina infatti la destinazione della posta elettronica per il dominio.
 
 - Se i record server dei nomi (NS) [puntano ai server dei nomi di Microsoft 365](../../admin/setup/add-domain.md), le modifiche del record MX non avranno effetto finché non si modificano i record NS in modo che puntino al nuovo host DNS (vedere il passaggio 2).
 
@@ -121,7 +122,7 @@ Per modificare i record NS, vedere [Rimuovere un dominio](../../admin/get-help-w
 
 ### <a name="save-your-data"></a>Salvare i dati
 
-Quando l'annullamento diventa effettivo, gli utenti perdono l'accesso ai propri dati. Prima di annullare l'abbonamento, impostare il salvataggio dei file di OneDrive for Business o SharePoint Online in un'altra posizione. I dati della società che non vengono spostati possono essere eliminati dopo 30 giorni e in ogni caso verranno eliminati entro 180 giorni dall'annullamento.
+Quando l'annullamento diventa effettivo, gli utenti perdono l'accesso ai propri dati, Prima di annullare l’abbonamento, dovranno salvare i file di OneDrive for Business o SharePoint Online in un'altra posizione. I dati dei clienti non salvati possono essere eliminati dopo 30 giorni, in ogni caso non oltre 180 giorni dall'annullamento.
 
 - Per spostare posta elettronica, contatti, attività e informazioni del calendario in un altro account, vedere [Esportare o eseguire il backup di posta elettronica, contatti e calendari in un file PST di Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 

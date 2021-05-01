@@ -12,22 +12,23 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jamitche
 search.appverid:
 - MET150
 description: Informazioni su come gestire le modalità di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.date: ''
-ms.openlocfilehash: 1d28d082c0a7c123aadaa2230930326139fdcb8e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579783"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107040"
 ---
 # <a name="manage-payment-methods"></a>Gestire le modalità di pagamento
 
@@ -35,7 +36,7 @@ Quando si acquistano prodotti o servizi aziendali da Microsoft, è possibile usa
 
 Se l'account aziendale ha un profilo di fatturazione e si è il proprietario o un collaboratore del profilo di fatturazione, è possibile usare il profilo di fatturazione associato al pagamento tramite carta di credito o fattura per effettuare acquisti o pagare fatture. I responsabili della fatturazione possono usare un profilo di fatturazione solo per pagare le fatture. Per altre informazioni sui profili e sui ruoli di fatturazione, vedere [Gestire i profili di fatturazione](manage-billing-profiles.md).
 
-Se l'account aziendale non ha un profilo di fatturazione, qualsiasi amministratore globale o di fatturazione può gestire e usare qualsiasi conto corrente bancario aggiunto all'account aziendale. Tuttavia, è possibile gestire o usare solo le carte di credito che si aggiungono.
+Se l'account aziendale non ha un profilo di fatturazione, qualsiasi amministratore globale o di fatturazione può gestire e usare qualsiasi conto corrente bancario aggiunto all'account aziendale. È in ogni caso possibile gestire o usare solo le carte di credito aggiunte personalmente.
 
 > [!NOTE]
 > L’opzione di pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
@@ -122,7 +123,7 @@ Se a un abbonamento o un profilo di fatturazione è associata una modalità di p
 | Problema | Procedura di risoluzione dei problemi |
 |:----------|:-----|
 |**Viene visualizzato un messaggio di errore che avvisa che il browser è impostato per bloccare i cookie.** |Impostare il browser in modo da accettare i cookie di terze parti e riprovare. |
-|**La carta di credito/debito è stata rifiutata.** |Se si paga con carta di credito o debito e questa viene rifiutata, si riceve un messaggio di posta elettronica che informa che Microsoft non è riuscita a elaborare il pagamento. Controllare che i dettagli della carta &mdash; ossia numero, data di scadenza, nome sulla carta e indirizzo comprensivo di città, stato e codice postale &mdash; corrispondano esattamente a quelli sulla carta e sul relativo estratto conto. È possibile aggiornare le informazioni della carta e inviare immediatamente il pagamento usando il collegamento per **pagare il saldo** nella sezione **Fatturazione** della pagina dei dettagli dell'abbonamento. Per altre informazioni, vedere [Cosa devo fare se il mio saldo è insoluto?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Se si continua a ricevere il messaggio di rifiuto, contattare la propria banca. È possibile che la carta non sia attiva. Se di recente si è ricevuta per posta la carta con una data di scadenza aggiornata, assicurarsi che sia attivata. Rivolgersi alla banca anche per sapere se la carta non è approvata per transazioni online, internazionali o ricorrenti. |
+|**La carta di credito/debito è stata rifiutata.** |Se si paga con carta di credito o debito e questa viene rifiutata, si riceve un messaggio di posta elettronica che informa che Microsoft non è riuscita a elaborare il pagamento. Controllare che i dettagli della carta &mdash; ossia numero, data di scadenza, nome sulla carta e indirizzo comprensivo di città, stato e codice postale &mdash; corrispondano esattamente a quelli sulla carta e sul relativo estratto conto. È possibile aggiornare le informazioni della carta e inviare immediatamente il pagamento usando il collegamento per **pagare il saldo** nella sezione **Fatturazione** della pagina dei dettagli dell'abbonamento. Per altre informazioni, vedere [Cosa devo fare se il mio saldo è insoluto?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Se si continua a ricevere il messaggio di rifiuto, contattare la propria banca. È possibile che la carta di credito non sia attiva. Se di recente si è ricevuta per posta la carta con una data di scadenza aggiornata, verificare che sia stata attivata. Rivolgersi alla banca anche per sapere se la carta di credito non è approvata per transazioni online, internazionali o ricorrenti. |
 |**Come aggiornare il numero della carta di credito o del conto corrente bancario?** |Non è possibile cambiare il numero di carta di credito o di conto corrente bancario in una modalità di pagamento esistente. Se il numero della carta o del conto è cambiato, [sostituirla con una modalità di pagamento diversa](#replace-a-payment-method), spostando tutti gli abbonamenti attivi dalla modalità di pagamento precedente a quella nuova, quindi [eliminare la vecchia modalità di pagamento](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**All'account è associata una sola carta di credito o un solo conto corrente bancario e si vuole rimuoverlo.** |Se si ha una sola modalità di pagamento, è necessario [sostituirla con una nuova](#replace-a-payment-method) per poterla eliminare. |
 |**Non si riesce ad aggiungere la carta o il conto corrente bancario.**  |È necessario usare una modalità di pagamento emessa dallo stesso paese/area geografica del tenant. Se si riscontrano problemi durante l'immissione delle informazioni della carta o del conto corrente bancario, è possibile [contattare il supporto](../../admin/contact-support-for-business-products.md). |

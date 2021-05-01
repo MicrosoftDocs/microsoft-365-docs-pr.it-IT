@@ -21,17 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: "Informazioni su come è possibile associare più di un indirizzo di posta elettronica, denominato alias di posta elettronica, all'account di Microsoft 365 per le aziende. "
-ms.openlocfilehash: 4003dcfca29a722ccdf9b86cca5aa1141fbdb367
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+description: 'Scopri come puoi avere più di un indirizzo di posta elettronica, denominato alias di posta elettronica, associato al tuo account Microsoft 365 per le aziende. '
+ms.openlocfilehash: 00e1c55edfcfa9937ab6a18b4bf268adb858b775
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892806"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107123"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Aggiungere un altro alias di posta elettronica per un utente
   
-Questo articolo è per gli amministratori di Microsoft 365 che hanno abbonamenti aziendali. Non è destinato agli utenti privati.
+Questo articolo è per Microsoft 365 amministratori che dispongono di abbonamenti aziendali. Non è destinato agli utenti privati.
   
 Un indirizzo di posta elettronica principale in Microsoft 365 è in genere l'indirizzo di posta elettronica assegnato a un utente al momento della creazione dell'account. Quando si invia un messaggio di posta elettronica a un altro utente, l'indirizzo di posta elettronica principale corrisponde in genere al contenuto del campo  *Da*  nelle app di posta elettronica. Possono inoltre avere più di un indirizzo di posta elettronica associato al proprio account Microsoft 365 per le aziende. Questi indirizzi aggiuntivi sono detti alias. 
   
@@ -53,7 +53,7 @@ A tale [scopo, è necessario](../add-users/about-admin-roles.md) disporre delle 
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
-2. Nella pagina **Utenti attivi** selezionare l'utente > Gestisci alias di **posta elettronica**. Questa opzione non verrà visualizzata se alla persona non è assegnata una licenza. 
+2. Nella pagina **Utenti attivi** selezionare l'utente che > gestisci nome utente e **posta elettronica.** Questa opzione non verrà visualizzata se alla persona non è assegnata una licenza. 
     
 3. Selezionare **+ Aggiungi un alias** e immettere un nuovo alias per l'utente.   
     
@@ -65,17 +65,17 @@ A tale [scopo, è necessario](../add-users/about-admin-roles.md) disporre delle 
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
   
     > [!TIP]
-    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [Aggiungere un dominio a Microsoft 365.](../setup/add-domain.md) 
+    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [Add a domain to Microsoft 365](../setup/add-domain.md). 
   
      
 5. Al termine, scegliere **Salva modifiche**.
     
-6. Attendere 24 ore prima che i nuovi alias si popolino in Microsoft 365.
+6. Attendere 24 ore che i nuovi alias si popolino in Microsoft 365.
     
     L'utente avrà ora un indirizzo principale e un alias. Ad esempio, tutta la posta inviata all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, verranno indirizzati alla posta in arrivo di Eliza.
     
   
-7. **Quando l'utente risponde, *l'indirizzo From* dipende dal client Outlook. Outlook sul Web utilizzerà l'alias con cui è stato ricevuto il messaggio di posta elettronica (verrà chiamato il principio ping-pong). Il desktop di Outlook utilizzerà il suo alias di posta elettronica principale.** Si supponga, ad esempio, che un messaggio sia stato inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio utilizzando outlook desktop, il suo indirizzo di posta elettronica principale verrà visualizzato come Eliza@NodPublishers.com, non Sales@NodPublishers.com.
+7. **Quando l'utente risponde, *l'indirizzo From* dipende dal suo Outlook client. Outlook sul Web verrà utilizzato l'alias con cui è stato ricevuto il messaggio di posta elettronica (verrà chiamato il principio ping-pong). Outlook desktop utilizzerà il suo alias di posta elettronica principale.** Si supponga, ad esempio, che un messaggio sia stato inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio usando Outlook desktop, l'indirizzo di posta elettronica principale verrà visualizzato come Eliza@NodPublishers.com, non Sales@NodPublishers.com.
     
 ::: moniker-end
 
@@ -97,16 +97,16 @@ A tale [scopo, è necessario](../add-users/about-admin-roles.md) disporre delle 
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
   
     > [!TIP]
-    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [Aggiungere un dominio a Microsoft 365.](../setup/add-domain.md) 
+    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [Add a domain to Microsoft 365](../setup/add-domain.md). 
 
 5. Al termine, scegliere **Salva**.
 
-6. Attendere 24 ore prima che i nuovi alias si popolino in Microsoft 365. 
+6. Attendere 24 ore che i nuovi alias si popolino in Microsoft 365. 
     
     L'utente avrà ora un indirizzo principale e un alias. Ad esempio, tutta la posta inviata all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, verranno indirizzati alla posta in arrivo di Eliza.
     
   
-7. **Quando l'utente risponde, *l'indirizzo From* dipende dal client Outlook. Outlook sul Web utilizzerà l'alias con cui è stato ricevuto il messaggio di posta elettronica (verrà chiamato il principio ping-pong). Il desktop di Outlook utilizzerà il suo alias di posta elettronica principale.** Si supponga, ad esempio, che un messaggio sia stato inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio utilizzando outlook desktop, il suo indirizzo di posta elettronica principale verrà visualizzato come Eliza@NodPublishers.com, non Sales@NodPublishers.com.
+7. **Quando l'utente risponde, *l'indirizzo From* dipende dal suo Outlook client. Outlook sul Web verrà utilizzato l'alias con cui è stato ricevuto il messaggio di posta elettronica (verrà chiamato il principio ping-pong). Outlook desktop utilizzerà il suo alias di posta elettronica principale.** Si supponga, ad esempio, che un messaggio sia stato inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio usando Outlook desktop, l'indirizzo di posta elettronica principale verrà visualizzato come Eliza@NodPublishers.com, non Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -128,16 +128,16 @@ A tale [scopo, è necessario](../add-users/about-admin-roles.md) disporre delle 
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
   
     > [!TIP]
-    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [Aggiungere un dominio a Microsoft 365.](../setup/add-domain.md) 
+    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [Add a domain to Microsoft 365](../setup/add-domain.md). 
 
 5. Al termine, scegliere **Salva**.
 
-6. Attendere 24 ore prima che i nuovi alias si popolino in Microsoft 365. 
+6. Attendere 24 ore che i nuovi alias si popolino in Microsoft 365. 
     
     L'utente avrà ora un indirizzo principale e un alias. Ad esempio, tutta la posta inviata all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, verranno indirizzati alla posta in arrivo di Eliza.
     
   
-7. **Quando l'utente risponde, *l'indirizzo From* dipende dal client Outlook. Outlook sul Web utilizzerà l'alias con cui è stato ricevuto il messaggio di posta elettronica (verrà chiamato il principio ping-pong). Il desktop di Outlook utilizzerà il suo alias di posta elettronica principale.** Si supponga, ad esempio, che un messaggio sia stato inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio utilizzando outlook desktop, il suo indirizzo di posta elettronica principale verrà visualizzato come Eliza@NodPublishers.com, non Sales@NodPublishers.com.
+7. **Quando l'utente risponde, *l'indirizzo From* dipende dal suo Outlook client. Outlook sul Web verrà utilizzato l'alias con cui è stato ricevuto il messaggio di posta elettronica (verrà chiamato il principio ping-pong). Outlook desktop utilizzerà il suo alias di posta elettronica principale.** Si supponga, ad esempio, che un messaggio sia stato inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio usando Outlook desktop, l'indirizzo di posta elettronica principale verrà visualizzato come Eliza@NodPublishers.com, non Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -154,7 +154,7 @@ Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impo
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Inviare facilmente messaggi di posta elettronica dall'indirizzo proxy
 
-Ad aprile 2021 viene lanciata una nuova funzionalità che consente agli utenti di inviare facilmente dagli alias quando utilizzano Outlook sul Web. Quando la funzionalità viene implementazione in una tenancy in cui l'amministratore tenant utilizza il cmdlet, gli utenti all'interno della tenancy avranno accesso a un elenco di caselle di controllo in cui ogni voce corrisponde a un alias nelle impostazioni di `Set-OrganizationConfig -SendFromAliasEnabled $true` Outlook. Se si seleziona un alias, l'alias verrà visualizzato nell'elenco a discesa Da del modulo Compose.
+Ad aprile 2021 viene lanciata una nuova funzionalità che consente agli utenti di inviare facilmente dagli alias quando usano Outlook sul Web. Quando la funzionalità viene implementazione in una tenancy in cui l'amministratore tenant utilizza il cmdlet, gli utenti all'interno della tenancy avranno accesso a un elenco di caselle di controllo in cui ogni voce corrisponde a un alias nelle impostazioni di `Set-OrganizationConfig -SendFromAliasEnabled $true` Outlook. Se si seleziona un alias, l'alias verrà visualizzato nell'elenco a discesa Da del modulo Compose.
   
 ## <a name="related-articles"></a>Articoli correlati
 

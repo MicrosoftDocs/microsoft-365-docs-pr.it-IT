@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365, fornendo l'accesso guest per una migliore collaborazione.
-ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a04ee4a96b5e9124ca94a4ece16c32ccc6b072d1
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918467"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114307"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -72,7 +72,7 @@ Ora gli utenti guest dovranno effettuare la registrazione all'autenticazione a p
 
 In alcune situazioni, gli utenti guest potrebbero non aver firmato accordi di non divulgazione o altri accordi legali con l'organizzazione. Si può richiedere ai guest di accettare le condizioni per l'utilizzo prima di accedere ai file che sono stati condivisi con loro. Le condizioni per l'utilizzo possono essere visualizzate al primo tentativo di accesso a un file o a un sito condiviso.
 
-Per creare le condizioni di utilizzo, è necessario prima di tutto creare il documento in Word o in un'altra applicazione e quindi salvarlo come file PDF. Successivamente, si potrà caricare il file in Azure AD.
+Per creare le condizioni di utilizzo, è necessario prima di tutto creare il documento in Word o in un'altra applicazione e quindi salvarlo come file PDF. Il file verrà quindi caricato in Azure AD.
 
 Per creare un documento di condizioni per l'utilizzo di Azure AD
 
@@ -256,7 +256,7 @@ Una volta impostato il criterio, se un utente digita "Progetto Saturno" in un do
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Creare un criterio DLP per rimuovere l'accesso guest ai file estremamente riservati
 
-È possibile usare [prevenzione della perdita dei dati (DLP)](../compliance/data-loss-prevention-policies.md) per impedire la condivisione indesiderata di contenuto riservato da parte dei guest. La prevenzione della perdita dei dati può intervenire sulla base dell'etichetta di riservatezza di un file e rimuovere l'accesso guest.
+È possibile usare [prevenzione della perdita dei dati (DLP)](../compliance/dlp-learn-about-dlp.md) per impedire la condivisione indesiderata di contenuto riservato da parte dei guest. La prevenzione della perdita dei dati può intervenire sulla base dell'etichetta di riservatezza di un file e rimuovere l'accesso guest.
 
 Per creare una regola DLP
 
