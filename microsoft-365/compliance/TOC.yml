@@ -235,8 +235,8 @@
       items:
         - name: Informazioni sulla prevenzione della perdita di dati
           items:
-            - name: Informazioni sulla prevenzione della perdita dei dati
-              href: data-loss-prevention-policies.md
+            - name: Informazioni sulla prevenzione della perdita di dati
+              href: dlp-learn-about-dlp.md
             - name: Informazioni sulla prevenzione della perdita di dati degli endpoint
               href: endpoint-dlp-learn-about.md
             - name: Informazioni sul criterio predefinito per la prevenzione della perdita di dati in Microsoft Teams (anteprima)
