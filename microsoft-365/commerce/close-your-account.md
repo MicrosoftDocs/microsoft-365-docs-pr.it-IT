@@ -10,19 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
+- commerce_subscription
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Scopri come chiudere l'account con Microsoft.
-ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.date: 04/02/2021
+ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860548"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107473"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 
@@ -38,13 +43,13 @@ Prima di iniziare questo processo, assicurarsi di eseguire il backup dei dati ch
 
 Eliminare tutti gli utenti ad eccezione di un amministratore globale. L'amministratore globale completa i passaggi per chiudere l'account. Prima di poter eliminare la directory al termine di questo processo, è necessario eliminare tutti gli altri utenti.
 
-Se gli utenti vengono sincronizzati da locale, disattivare prima la sincronizzazione, quindi eliminare gli utenti nella directory cloud utilizzando il portale di Azure o i cmdlet di Azure PowerShell.
+Se gli utenti vengono sincronizzati da locale, disattivare prima la sincronizzazione, quindi eliminare gli utenti nella directory cloud utilizzando il portale di Azure o i cmdlet di Azure PowerShell azure.
 
-Per eliminare gli utenti, vedere <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">Amministratore gestione utenti: Eliminare uno o più utenti</a>.
+Per eliminare gli utenti, vedere [Amministratore gestione utenti: Eliminare uno o più utenti](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365).
 
-È inoltre possibile utilizzare il cmdlet <a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">Remove-MsolUser</a> PowerShell per eliminare gli utenti in blocco.
+È inoltre possibile utilizzare il cmdlet [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell per eliminare gli utenti in blocco.
 
-Se l'organizzazione usa Active Directory che si sincronizza con Microsoft Azure Active Directory (Azure AD), eliminare invece l'account utente da Active Directory. Per istruzioni, vedere <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">Eliminazione in blocco degli utenti in Azure Active Directory.</a>
+Se l'organizzazione usa Active Directory che si sincronizza con Microsoft Azure Active Directory (Azure AD), elimina invece l'account utente da Active Directory. Per istruzioni, vedere [Eliminazione in blocco degli utenti in Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Passaggio 2: Annullare tutte le sottoscrizioni attive
 
@@ -64,7 +69,7 @@ Se l'organizzazione usa Active Directory che si sincronizza con Microsoft Azure 
 6. Per ogni sottoscrizione disabilitata, ripetere i passaggi da 3 a 5 finché non vengono eliminate tutte le sottoscrizioni.
 
 > [!NOTE]
-> Se non è possibile eliminare immediatamente una sottoscrizione disabilitata, <a href="/microsoft-365/Admin/contact-support-for-business-products" target="_blank">contattare il supporto tecnico</a>
+> Se non è possibile eliminare immediatamente una sottoscrizione disabilitata, [contattare il supporto](../admin/contact-support-for-business-products.md)tecnico.
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Passaggio 4: Disabilitare l'autenticazione a più fattori
 
@@ -73,7 +78,8 @@ Se l'organizzazione usa Active Directory che si sincronizza con Microsoft Azure 
 3. Scegliere **Autenticazione a più fattori.**
 4. Nella pagina Autenticazione a più fattori disabilitare tutti gli account ad eccezione dell'account amministratore globale attualmente in uso.
 
-È inoltre possibile <a href="/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">utilizzare PowerShell per disabilitare l'autenticazione a più fattori per più utenti.</a>
+È inoltre possibile [utilizzare PowerShell per disabilitare l'autenticazione a più fattori per più utenti.](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)
+
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Passaggio 5: Eliminare la directory in Azure Active Directory
 

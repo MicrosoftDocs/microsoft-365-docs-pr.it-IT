@@ -10,18 +10,18 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come pianificare la sicurezza e la privacy di Microsoft Viva Topics
-ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994547"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114063"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Sicurezza e privacy di Microsoft Viva Topics
 
-Gli argomenti utilizzano le funzionalità di sicurezza del contenuto esistenti in Microsoft 365, insieme ai controlli amministrativi, per controllare il contenuto generato dall'IA visualizzato agli utenti dell'organizzazione. È la combinazione di impostazioni di sicurezza di Microsoft 365 (autorizzazioni per siti, file e cartelle) e impostazioni di amministrazione degli argomenti che determinano cosa può vedere un determinato utente negli argomenti.
+Gli argomenti utilizzano le funzionalità di sicurezza del contenuto esistenti in Microsoft 365, insieme ai controlli amministrativi, per controllare quale contenuto generato dall'IA viene visualizzato agli utenti dell'organizzazione. È la combinazione di Microsoft 365 di sicurezza (autorizzazioni per siti, file e cartelle) e impostazioni di amministrazione degli argomenti che determinano cosa può vedere un determinato utente negli argomenti.
 
-La configurazione degli argomenti non modifica i controlli di accesso esistenti sul contenuto dell'organizzazione. Gli utenti potranno visualizzare solo ciò a cui hanno già accesso.
+La configurazione di Argomenti non modifica i controlli di accesso esistenti per il contenuto dell’organizzazione. Gli utenti possono visualizzare solo quelli a cui si ha già accesso.
 
 In questo articolo viene descritto il funzionamento degli argomenti dal punto di vista della sicurezza e le opzioni che gli amministratori della knowledge base e i responsabili della conoscenza hanno per controllare la visibilità degli argomenti. Leggere questo articolo come parte della pianificazione [per Argomenti](plan-topic-experiences.md).
 
@@ -60,13 +60,13 @@ Nella tabella seguente vengono descritti gli elementi che gli utenti, i visualiz
 
 ## <a name="best-practices"></a>Procedure consigliate
 
-Gli argomenti presentano informazioni agli utenti in base alle autorizzazioni esistenti per il contenuto. Microsoft 365 offre diversi modi per garantire che il contenuto riservato sia limitato agli utenti appropriati. Oltre alle autorizzazioni standard del team o [](../compliance/data-loss-prevention-policies.md) del sito, è possibile [](/azure/active-directory/governance/access-reviews-overview) utilizzare le etichette di riservatezza o la prevenzione della perdita dei dati per limitare l'accesso al contenuto e le revisioni di accesso per esaminare periodicamente l'accesso degli utenti alle informazioni riservate. [](../compliance/sensitivity-labels.md)
+Gli argomenti presentano informazioni agli utenti in base alle autorizzazioni esistenti per il contenuto. Microsoft 365 offre diversi modi per garantire che il contenuto riservato sia limitato agli utenti appropriati. Oltre alle autorizzazioni standard del team o [](../compliance/dlp-learn-about-dlp.md) del sito, è possibile [](/azure/active-directory/governance/access-reviews-overview) utilizzare le etichette di riservatezza o la prevenzione della perdita dei dati per limitare l'accesso al contenuto e le revisioni di accesso per esaminare periodicamente l'accesso degli utenti alle informazioni riservate. [](../compliance/sensitivity-labels.md)
 
 È consigliabile utilizzare questi strumenti per assicurarsi che le autorizzazioni per il contenuto siano impostate in modo appropriato all'interno dell'organizzazione. Le esperienze degli argomenti possono quindi fornire informazioni utili e appropriate agli utenti.
 
 Se sono presenti argomenti che si desidera escludere completamente dalle esperienze degli argomenti, è anche possibile:
 
-- [Escludere i siti di SharePoint sensibili dall'individuazione degli argomenti.](topic-experiences-discovery.md#select-sharepoint-topic-sources) Il contenuto di questi siti non verrà visualizzato nelle esperienze degli argomenti.
+- [Escludere i siti SharePoint sensibili dall'individuazione degli argomenti.](topic-experiences-discovery.md#select-sharepoint-topic-sources) Il contenuto di questi siti non verrà visualizzato nelle esperienze degli argomenti.
 
 - [Escludere gli argomenti in base al nome](topic-experiences-discovery.md#exclude-topics-by-name). Gli argomenti esclusi esplicitamente non verranno visualizzati nelle esperienze degli argomenti.
 

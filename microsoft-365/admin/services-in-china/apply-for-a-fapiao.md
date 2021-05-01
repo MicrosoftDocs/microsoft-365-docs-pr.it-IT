@@ -12,21 +12,23 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 - GEA150
-ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
-description: Informazioni su come inviare la richiesta Fapiao al sistema di gestione 21Vianet Fapiao dopo aver effettuato un pagamento in Office 365 gestito da 21Vianet in Cina.
+description: Scopri come inviare la richiesta Fapiao al sistema di gestione 21Vianet Fapiao dopo aver effettuato un pagamento nel Office 365 gestito da 21Vianet in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.date: 03/30/2021
+ms.openlocfilehash: 1f2dec1ca224b7f8c6c22d5d9d0d2a0cac8630ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470954"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107461"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Richiedere un Fapiao per Office 365 gestito da 21Vianet
 
@@ -38,18 +40,18 @@ Puoi inviare la richiesta Fapiao al sistema di gestione 21Vianet Fapiao circa tr
 
 Esistono due modi per richiedere un Fapiao:
   
-1. Dopo aver effettuato un pagamento nel sito Web Office 365 gestito da 21Vianet, si riceverà un messaggio di posta elettronica di conferma dell'ordine contenente il numero dell'ordine e un collegamento al sistema di gestione Fapiao. È possibile utilizzare il collegamento nel messaggio di posta elettronica per creare un account nel sistema di gestione delle informazioni <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao.</a>
+1. Dopo aver effettuato un pagamento nel Office 365 gestito dal sito Web 21Vianet, riceverai un messaggio di posta elettronica di conferma dell'ordine contenente il numero dell'ordine e un collegamento al sistema di gestione Fapiao. È possibile utilizzare il collegamento nel messaggio di posta elettronica per creare un account nel sistema di gestione delle informazioni <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao.</a>
 
     Oppure
 
 2. Puoi richiedere un Fapiao <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">dall'interfaccia di amministrazione.</a>
 
-    ![Pagina Fatture nell'interfaccia di amministrazione di Microsoft 365.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
+    ![La pagina Fatture nell'Microsoft 365 di amministrazione.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Passaggio 2: registrarsi con il sistema di gestione 21Vianet Fapiao
 
 > [!NOTE]
-> È possibile usare lo stesso nome di posta elettronica e la stessa password dell'account di Office 365 oppure è possibile usare qualcosa di diverso.
+> È possibile utilizzare lo stesso nome di posta elettronica e la stessa password dell'account Office 365 oppure è possibile utilizzare un valore diverso.
   
 1. Passare al sistema di gestione delle informazioni <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao.</a>
 

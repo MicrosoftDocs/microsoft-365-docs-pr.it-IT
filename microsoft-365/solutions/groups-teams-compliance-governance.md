@@ -1,5 +1,5 @@
 ---
-title: Opzioni di conformità per i gruppi di Microsoft 365, Teams e la collaborazione di SharePoint
+title: Opzioni di conformità per Microsoft 365 gruppi, Teams e SharePoint collaborazione
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Informazioni sulle opzioni di conformità per i gruppi di Microsoft 365, Teams e la collaborazione di SharePoint.
-ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+description: Informazioni sulle opzioni di conformità per Microsoft 365, Teams e SharePoint collaborazione.
+ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899353"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114029"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opzioni di conformità per i gruppi di Microsoft 365, Teams e la collaborazione di SharePoint
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opzioni di conformità per Microsoft 365 gruppi, Teams e SharePoint collaborazione
 
 Microsoft 365 offre una famiglia completa di strumenti per mantenere la conformità mentre gli utenti collaborano. Esaminare queste opzioni e valutare il modo in cui vengono mappate alle esigenze aziendali, la riservatezza dei dati e l'ambito delle persone con cui gli utenti devono collaborare.
 
@@ -31,15 +31,15 @@ Nella tabella seguente viene fornito un riferimento rapido per i controlli di co
 |Categoria|Descrizione|Riferimenti|
 |:-------|:----------|:--------|
 |Conservazione delle informazioni|||
-||Conservare la posta elettronica e il contenuto di SharePoint dei gruppi|[Informazioni sui criteri di conservazione per SharePoint e OneDrive](../compliance/retention-policies-sharepoint.md)|
+||Conservare i gruppi di posta e SharePoint contenuto|[Informazioni sui criteri di conservazione per SharePoint e OneDrive](../compliance/retention-policies-sharepoint.md)|
 ||Conservare chat e messaggi|[Informazioni sui criteri di conservazione per Microsoft Teams](../compliance/retention-policies-teams.md)|
 |Classificazione delle informazioni|||
 ||Classificare gruppi e team|[Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Classificare automaticamente il contenuto sensibile|[Applicare automaticamente un'etichetta di riservatezza al contenuto](../compliance/apply-sensitivity-label-automatically.md)|
 ||Crittografare contenuto sensibile|[Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](../compliance/encryption-sensitivity-labels.md)|
 |Protezione delle informazioni|||
-||Evitare la perdita di informazioni riservate|[Panoramica sulla prevenzione della perdita dei dati](../compliance/data-loss-prevention-policies.md)|
-||Proteggere le informazioni riservate in chat.|[Prevenzione della perdita dei dati e Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||Evitare la perdita di informazioni riservate|[Informazioni sulla prevenzione della perdita di dati](../compliance/dlp-learn-about-dlp.md)|
+||Proteggere le informazioni riservate in chat.|[Prevenzione della perdita di dati e Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Definire le informazioni riservate dell'organizzazione|[Tipi di informazioni sensibili personalizzati](../compliance/sensitive-information-type-learn-about.md)|
 |Segmentazione utente|||
 ||Limitare la comunicazione tra segmenti di utenti|[Barriere informative](../compliance/information-barriers.md)|
@@ -48,11 +48,11 @@ Nella tabella seguente viene fornito un riferimento rapido per i controlli di co
 
 I criteri di conservazione sono disponibili per conservare o eliminare gli elementi utilizzati per la collaborazione in gruppi e team, inclusi file, messaggi e posta. I criteri possono essere impostati per conservare ed eliminare, solo per conservare o eliminare solo. Le informazioni coperte da un criterio di conservazione sono protette nel caso in cui il gruppo o il team scada o viene eliminato in altro modo.
 
-La configurazione di un criterio di conservazione per i gruppi di Microsoft 365 riguarda la cassetta postale del gruppo e il sito e i file di SharePoint associati.
+La configurazione di un criterio di conservazione per Microsoft 365 gruppi riguarda la cassetta postale del gruppo e il sito SharePoint e i file associati.
 
 - [Informazioni sui criteri di conservazione per SharePoint e OneDrive](../compliance/retention-policies-sharepoint.md)
 
-I criteri di conservazione per Teams mantengono i messaggi di chat e canali. Mentre i messaggi di chat e canali vengono archiviati nelle cassette postali di Exchange, non sono interessati dai criteri di conservazione di Exchange. È necessario impostare i criteri di conservazione da applicare alle chat di Teams e ai messaggi del canale di Teams. 
+I criteri di conservazione per Teams i messaggi di chat e canali. Mentre i messaggi di chat e canali vengono archiviati Exchange cassette postali, non sono interessati dai criteri Exchange di conservazione. È necessario impostare i criteri di conservazione da applicare Teams chat e Teams canali. 
 
 Le chat utente vengono mantenute a tempo indeterminato anche se un account utente viene eliminato. Se non si desidera conservare questi dati a tempo indeterminato, è consigliabile utilizzare un criterio di conservazione per eliminare le chat degli utenti dopo un periodo di tempo specificato o includere questa eliminazione nel processo di eliminazione degli utenti.
 
@@ -60,7 +60,7 @@ Le chat utente vengono mantenute a tempo indeterminato anche se un account utent
 
 - [Criteri di conservazione in Microsoft Teams](/microsoftteams/retention-policies)
 
-È possibile impostare un singolo criterio di conservazione per applicarlo ai messaggi di chat di Teams e al canale di Teams. 
+Un singolo criterio di conservazione può essere impostato per essere applicato Teams messaggi di chat Teams canale. 
 
 Risorse aggiuntive:
 
@@ -93,11 +93,11 @@ Risorse aggiuntive:
 
 I criteri DLP possono impedire la condivisione accidentale di informazioni riservate tra SharePoint, Exchange e Teams. È possibile creare criteri che specificano le azioni da eseguire, ad esempio il blocco dell'accesso, in base a un set di regole.
 
-- [Panoramica sulla prevenzione della perdita dei dati](../compliance/data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita di dati](../compliance/dlp-learn-about-dlp.md)
 
-Dlp in Teams consente di proteggere le informazioni riservate nei messaggi di chat e canali di Teams eliminando i messaggi che contengono informazioni riservate.
+DLP in Teams può aiutare a proteggere le informazioni riservate nei messaggi Teams chat e canali eliminando i messaggi che contengono informazioni riservate.
 
-- [Prevenzione della perdita dei dati e Microsoft Teams](../compliance/dlp-microsoft-teams.md)
+- [Prevenzione della perdita di dati e Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
 Se si dispone di informazioni riservate univoche per l'organizzazione, ad esempio i nomi dei codici di progetto, è possibile creare tipi di informazioni riservate personalizzati e applicarle ai criteri DLP per proteggere il contenuto in gruppi, team e Sharepoint.
 
@@ -111,7 +111,7 @@ Con le barriere di informazioni, è possibile segmentare i dati e gli utenti per
 
 - [Barriere informazioni in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 
-- [Usare le barriere di informazioni con SharePoint](/sharepoint/information-barriers)
+- [Usare barriere alle informazioni con SharePoint](/sharepoint/information-barriers)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -14,21 +14,24 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: Informazioni su come acquistare e gestire componenti aggiuntivi per l'abbonamento a Microsoft 365 per le aziende.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: Scopri come acquistare e gestire i componenti aggiuntivi per l'abbonamento Microsoft 365 per le aziende.
+ms.date: 04/02/2021
+ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576926"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107437"
 ---
 # <a name="buy-or-manage-add-ons"></a>Acquistare o gestire i componenti aggiuntivi
 
-Molti piani di Microsoft 365 per le aziende dispongono di componenti aggiuntivi che è possibile acquistare per gli abbonamenti. I componenti aggiuntivi offrono altre funzionalità per migliorare l'esperienza di sottoscrizione.
+Molti Microsoft 365 per le aziende dispongono di componenti aggiuntivi che è possibile acquistare per le sottoscrizioni. I componenti aggiuntivi offrono altre funzionalità per migliorare l'esperienza di sottoscrizione.
 
 Esistono due tipi di componenti aggiuntivi:
 
@@ -70,7 +73,7 @@ Per rimuovere una sottoscrizione di componente aggiuntivo autonomo, annulla la [
 
 Non è possibile rimuovere un componente aggiuntivo tradizionale. Se si desidera rimuovere un componente aggiuntivo tradizionale, contattare [il supporto tecnico per assistenza.](../admin/contact-support-for-business-products.md)
   
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Aggiungere spazio di archiviazione per la sottoscrizione](add-storage-space.md) (articolo)\
 [Acquistare o rimuovere licenze di sottoscrizione](licenses/buy-licenses.md) (articolo)\

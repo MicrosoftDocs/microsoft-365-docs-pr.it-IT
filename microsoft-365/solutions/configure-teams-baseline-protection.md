@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con un livello di protezione di base.
-ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: db1a58fd06a62240cbcfcc74f83ba6196f33df80
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222744"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114295"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurare team con la protezione di base
 
@@ -96,7 +96,7 @@ In Microsoft 365 sono disponibili altri metodi per proteggere i contenuti. Valut
 
 - Fare in modo che gli utenti guest accettino le [condizioni per l'utilizzo](/azure/active-directory/conditional-access/terms-of-use).
 - Configurare un [criterio di timeout della sessione](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) per gli utenti guest.
-- Creare [tipi di informazioni sensibili](../compliance/sensitive-information-type-learn-about.md) e usare la [prevenzione della perdita dei dati](../compliance/data-loss-prevention-policies.md) per impostare criteri per l'accesso alle informazioni riservate.
+- Creare [tipi di informazioni sensibili](../compliance/sensitive-information-type-learn-about.md) e usare la [prevenzione della perdita dei dati](../compliance/dlp-learn-about-dlp.md) per impostare criteri per l'accesso alle informazioni riservate.
 
 ## <a name="see-also"></a>Vedere anche
 

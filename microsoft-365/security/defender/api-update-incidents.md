@@ -1,6 +1,6 @@
 ---
 title: API per gli eventi imprevisti di aggiornamento
-description: Informazioni su come aggiornare gli eventi imprevisti con l'API di Microsoft 365 Defender
+description: Scopri come aggiornare gli eventi imprevisti con Microsoft 365 Defender API
 keywords: aggiornamento, api, evento imprevisto
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 549f9bf2b9dc2ea5d1c734a809ad10a168c8123e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060802"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107605"
 ---
 # <a name="update-incidents-api"></a>API per gli eventi imprevisti di aggiornamento
 
@@ -51,7 +51,7 @@ Se la richiesta viene limitato, restituirà un codice `429` di risposta. Il corp
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi [Accedere alle API di Microsoft 365 Defender.](api-access.md)
+Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, [vedi Accedere alle API Microsoft 365 Defender](api-access.md).
 
 Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 -|-|-
@@ -80,10 +80,10 @@ Nel corpo della richiesta specificare i valori per i campi da aggiornare. Le pro
 
 Proprietà | Tipo | Descrizione
 -|-|-
-status | Enum | Specifica lo stato corrente dell'avviso. I valori possibili sono: ```Active``` ```Resolved``` , e ```Redirected``` .
+status | Enum | Specifica lo stato corrente dell'evento imprevisto. I valori possibili sono: ```Active``` ```Resolved``` , e ```Redirected``` .
 assignedTo | stringa | Proprietario dell'evento imprevisto.
-classificazione | Enum | Specifica dell'avviso. I valori possibili sono: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
-determinazione | Enum | Specifica la determinazione dell'avviso. I valori possibili sono: ```NotAvailable``` , , , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` .
+classificazione | Enum | Specifica dell'evento imprevisto. I valori possibili sono: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
+determinazione | Enum | Specifica la determinazione dell'evento imprevisto. I valori possibili sono: ```NotAvailable``` , , , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` .
 tag | string List | Elenco di tag Evento imprevisto.
 
 ## <a name="response"></a>Risposta

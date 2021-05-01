@@ -10,17 +10,23 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: Informazioni su come collaborare con i provider di soluzioni (partner) certificati Microsoft per acquistare e gestire prodotti e servizi per l'organizzazione o l'istituto di istruzione.
-ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.date: 04/13/2021
+ms.openlocfilehash: e225fa0c525d484e8c5a3887b82277a1da5861b0
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51749855"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107569"
 ---
 # <a name="manage-partner-relationships"></a>Gestire le relazioni con i partner
 
@@ -28,7 +34,7 @@ ms.locfileid: "51749855"
 
 1. Gli amministratori trovano e contattano un partner utilizzando il modulo all'indirizzo <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> .
 2. I partner inviano una richiesta di posta elettronica ai clienti per stabilire una relazione con i partner.
-3. I clienti accettano l'invito nell'interfaccia di amministrazione di Microsoft 365 e iniziano a collaborare con il partner.
+3. I clienti accettano l'invito Microsoft 365'interfaccia di amministrazione e iniziano a collaborare con il partner.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -43,7 +49,7 @@ Esistono diversi modi in cui un partner può collaborare con te. In base alle es
 | Rivenditore | Partner che vendono prodotti Microsoft all'organizzazione o all'istituto di istruzione. |
 | Amministratore delegato | Partner che gestiscono prodotti e servizi per l'organizzazione o l'istituto di istruzione. In Azure Active Directory (AD), il partner è un amministratore globale per il tenant. Questo ruolo consente loro di gestire servizi come la creazione di account utente, l'assegnazione e la gestione delle licenze e la reimpostazione della password. |
 | Amministratore delegato & rivenditore | Partner che vendono e gestiscono prodotti e servizi Microsoft all'organizzazione o all'istituto di istruzione. |
-| Partner | Si assegna al partner un account utente nel tenant e questi collaborano con altri servizi Microsoft per conto dell'utente. |
+| Partner | Si assegna al partner un account utente nel tenant e il partner collabora con altri servizi Microsoft per conto dell'utente. |
 | Advisor | I partner possono reimpostare le password e gestire automaticamente gli eventi imprevisti di supporto. |
 | Partner Microsoft Products & Services Agreement (MPSA) | Se hai lavorato con più partner tramite il programma MPSA, puoi consentire loro di visualizzare gli acquisti effettuati l'uno dall'altro. |
 | Partner line-of-business (LOB) | I partner possono sviluppare, inviare e gestire app LOB specifiche per l'organizzazione o l'istituto di istruzione. |
@@ -61,7 +67,7 @@ Il partner ti contatta e ti offre la possibilità di saperne di più su di essi.
 
 Dopo aver trovato un partner e aver deciso di collaborare con loro, ti invia un invito tramite posta elettronica.
 
-1. Nel messaggio di posta elettronica, selezionare il collegamento per passare all'interfaccia di amministrazione di Microsoft 365.
+1. Nel messaggio di posta elettronica, selezionare il collegamento per passare all'Microsoft 365 di amministrazione.
 2. Nella pagina **Accetta contratto & autorizzare il partner,** selezionare il collegamento relativo al Contratto per i clienti **Microsoft** e leggere il documento.
 3. Seleziona la casella per confermare la lettura del contratto.
 4. Selezionare **Accetta & autorizza**.
@@ -71,7 +77,7 @@ Dopo aver trovato un partner e aver deciso di collaborare con loro, ti invia un 
 
 Se hai già un partner ma non hai ancora firmato un Contratto per i clienti Microsoft, devi accettare il contratto prima che possa effettuare acquisti o gestire le sottoscrizioni per tuo conto.
 
-1. Se si riceve un messaggio di posta elettronica dal partner, selezionare il collegamento per passare all'interfaccia di amministrazione di Microsoft 365 o passare alla <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">pagina Accetta</a> contratto.
+1. Se si riceve un messaggio di posta elettronica dal partner, selezionare il collegamento per passare all'interfaccia di amministrazione di Microsoft 365 oppure passare alla <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">pagina Accetta</a> contratto.
 2. Selezionare il collegamento per il **Contratto con i clienti Microsoft** e leggere il documento.
 3. Seleziona la casella per confermare la lettura del contratto.
 4. Selezionare **Accetta**.
@@ -85,7 +91,7 @@ Se non vuoi assegnare i ruoli di amministratore al partner, annulla l'invito inv
 
 È possibile rimuovere i ruoli di amministratore da un partner in qualsiasi momento. La rimozione dei ruoli di amministratore non rimuove la relazione partner. Possono comunque collaborare con te in una capacità diversa, ad esempio un rivenditore. Se decidi di non voler più collaborare con un partner, contatta il partner per terminare la relazione.
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Relazioni partner.</a>
+1. Nell'interfaccia di amministrazione passare alla **pagina** Impostazioni  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relazioni partner.</a>
 2. Nella pagina **Relazioni partner** selezionare la riga contenente il nome del partner che si desidera rimuovere.
 3. Selezionare la riga contenente il nome del partner.
 4. Nella pagina partner selezionare **Rimuovi ruoli.**

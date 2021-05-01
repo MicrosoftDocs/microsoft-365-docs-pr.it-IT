@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Informazioni sulle azioni di correzione dopo un'indagine automatizzata in Microsoft Defender per Office 365.
-ms.date: 02/09/2021
+ms.date: 04/30/2021
 ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37953ad1125d5dad10eb5c6933b1ed9931d5de60
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ffaa7c46d81070a6443bf2233bbfdfd741ceb915
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933662"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114331"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Azioni di correzione in Microsoft Defender per Office 365
 
@@ -45,7 +45,7 @@ Le funzionalità di protezione dalle minacce in [Microsoft Defender per Office 3
 - Disattivazione dell'inoltro della posta elettronica esterna
 - Disattivazione delega
 
-In Microsoft Defender per Office 365 le azioni di correzione non vengono eseguite automaticamente. Al contrario, le azioni di correzione vengono eseguite solo dopo l'approvazione da parte del team delle operazioni di sicurezza dell'organizzazione.
+In Microsoft Defender per Office 365, le azioni di correzione non vengono eseguite automaticamente. Al contrario, le azioni di correzione vengono eseguite solo dopo l'approvazione da parte del team delle operazioni di sicurezza dell'organizzazione.
 
 ## <a name="threats-and-remediation-actions"></a>Minacce e azioni correttive
 
@@ -64,7 +64,7 @@ Microsoft Defender per Office 365 include azioni di correzione per affrontare va
 |Utente|Un utente invia malware/phish|L'indagine automatizzata non comporta un'azione in sospeso specifica. <p> L'utente potrebbe segnalare malware/phish o qualcuno potrebbe eseguire [lo spoofing dell'utente](anti-spoofing-protection.md) come parte di un attacco. Usa [Esplora minacce per](threat-explorer.md) visualizzare e gestire i messaggi di posta elettronica [contenenti malware](threat-explorer-views.md#email--malware) o [virus](threat-explorer-views.md#email--phish).|
 |Utente|Inoltro della posta elettronica <br> Le regole di inoltro delle cassette postali sono configurate, che possono essere utilizzate per l'esfiltrazione dei dati.|Rimuovere la regola di inoltro <p> Utilizzare [informazioni dettagliate sul flusso di](mail-flow-insights-v2.md)posta, incluso il [report](mfi-auto-forwarded-messages-report.md)Messaggi inoltrati automaticamente, per visualizzare dettagli più specifici sulla posta elettronica inoltrata.|
 |Utente|Regole di delega della posta elettronica <br> L'account di un utente ha la delega impostata.|Rimuovere la regola di delega <p> Se l'organizzazione usa [Microsoft Defender for Endpoint,](/windows/security/threat-protection/)valuta la possibilità di analizzare l'utente che riceve l'autorizzazione di delega. [](/microsoft-365/security/defender-endpoint/investigate-user)|
-|Utente|Esfiltrazione di dati <br> (Un utente ha violato i criteri [DLP](../../compliance/data-loss-prevention-policies.md)per la condivisione di file o di posta elettronica.)|L'indagine automatizzata non comporta un'azione in sospeso specifica. <p> [Visualizzare i report DLP ed eseguire un'azione.](../../compliance/view-the-dlp-reports.md)|
+|Utente|Esfiltrazione di dati <br> (Un utente ha violato i criteri DLP per la condivisione di file o di posta [elettronica](../../compliance/dlp-learn-about-dlp.md) |L'indagine automatizzata non comporta un'azione in sospeso specifica. <p> [Visualizzare i report DLP ed eseguire un'azione.](../../compliance/view-the-dlp-reports.md)|
 |Utente|Invio anomalo della posta elettronica <br> Un utente ha inviato di recente più messaggi di posta elettronica rispetto ai 7-10 giorni precedenti.|L'indagine automatizzata non comporta un'azione in sospeso specifica. <p> L'invio di un volume elevato di posta elettronica non è dannoso da solo. l'utente potrebbe aver semplicemente inviato un messaggio di posta elettronica a un gruppo di destinatari di grandi dimensioni per un evento. Per analizzare, usare [informazioni dettagliate sul](mail-flow-insights-v2.md)flusso di posta, incluso il [report](mfi-mail-flow-map-report.md) mappa del flusso di posta per determinare cosa sta succedendo ed eseguire un'azione.|
 
 ## <a name="next-steps"></a>Passaggi successivi

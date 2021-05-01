@@ -19,12 +19,12 @@ description: Durante e dopo un'indagine automatizzata in Microsoft 365, è possi
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ebdd25e9bddf53682f747fff7477d49dd1c94755
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b6ec188f37faeed283d49f68b0cb381fcb1af86e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933494"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114205"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 
@@ -32,10 +32,10 @@ ms.locfileid: "51933494"
 - [Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Quando si [verifica un'indagine](office-365-air.md) automatizzata in [Microsoft Defender per Office 365,](defender-for-office-365.md)i dettagli su tale indagine sono disponibili durante e dopo il processo di indagine automatizzata. Se si dispone delle autorizzazioni necessarie, è possibile visualizzare tali dettagli nel Centro sicurezza Microsoft 365. I dettagli dell'indagine forniscono lo stato aggiornato e la possibilità di approvare eventuali azioni in sospeso.
+Quando si [verifica un'indagine](office-365-air.md) automatizzata in [Microsoft Defender per Office 365](defender-for-office-365.md), i dettagli su tale indagine sono disponibili durante e dopo il processo di indagine automatizzata. Se si dispone delle autorizzazioni necessarie, è possibile visualizzare tali dettagli nel centro sicurezza Microsoft 365 sicurezza. I dettagli dell'indagine forniscono lo stato aggiornato e la possibilità di approvare eventuali azioni in sospeso.
 
 > [!TIP]
-> Vedere la nuova pagina di indagine unificata nel Centro sicurezza Microsoft 365. Per ulteriori informazioni, vedere [(NEW!) Pagina di indagine unificata](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Consultare la nuova pagina di indagine unificata nel centro sicurezza Microsoft 365 sicurezza. Per ulteriori informazioni, vedere [(NEW!) Pagina di indagine unificata](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## <a name="investigation-status"></a>Stato dell'indagine
 
@@ -46,7 +46,7 @@ Lo stato dell'indagine indica l'avanzamento dell'analisi e delle azioni. Durante
 |**In avvio**|L'indagine è stata attivata e in attesa di avviare l'esecuzione.|
 |**In esecuzione**|Il processo di indagine è iniziato ed è in corso. Questo stato si verifica anche quando [le azioni in sospeso](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) vengono approvate.|
 |**Nessuna minaccia trovata**|L'indagine è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <p> **SUGGERIMENTO:** se si sospetta che qualcosa sia stato perso (ad esempio un falso negativo), è possibile eseguire un'azione utilizzando [Esplora minacce.](threat-explorer.md)|
-|**Minacce trovate**|L'indagine automatizzata ha rilevato problemi, ma non esistono azioni di correzione specifiche per risolverli. <p> Lo **stato Minacce trovate** può verificarsi quando è stato identificato un tipo di attività utente, ma non sono disponibili azioni di pulizia. Tra gli esempi sono incluse le attività utente seguenti: <br/>- Un [evento di prevenzione della](../../compliance/data-loss-prevention-policies.md) perdita dei dati (DLP)<br/>- Anomalia di invio di un messaggio di posta elettronica<br/>- Malware inviato<br/>- Phish inviato <p> L'indagine non ha rilevato URL, file o messaggi di posta elettronica dannosi da correggere e nessuna attività della cassetta postale da correggere, ad esempio la disattivazione delle regole di inoltro o della delega. <p> **SUGGERIMENTO:** se si sospetta che sia stato perso qualcosa (ad esempio un falso negativo), è possibile analizzare ed eseguire azioni tramite [Threat Explorer.](threat-explorer.md)|
+|**Minacce trovate**|L'indagine automatizzata ha rilevato problemi, ma non esistono azioni di correzione specifiche per risolverli. <p> Lo **stato Minacce trovate** può verificarsi quando è stato identificato un tipo di attività utente, ma non sono disponibili azioni di pulizia. Tra gli esempi sono incluse le attività utente seguenti: <br/>- Un [evento di prevenzione della perdita di](../../compliance/dlp-learn-about-dlp.md) dati<br/>- Anomalia di invio di un messaggio di posta elettronica<br/>- Malware inviato<br/>- Phish inviato <p> L'indagine non ha rilevato URL, file o messaggi di posta elettronica dannosi da correggere e nessuna attività della cassetta postale da correggere, ad esempio la disattivazione delle regole di inoltro o della delega. <p> **SUGGERIMENTO:** se si sospetta che sia stato perso qualcosa (ad esempio un falso negativo), è possibile analizzare ed eseguire azioni tramite [Threat Explorer.](threat-explorer.md)|
 |**Terminated By System**|L'indagine è stata interrotta. Un'indagine può interrompersi per diversi motivi: <br/>- Le azioni in sospeso dell'indagine sono scadute. Timeout delle azioni in sospeso dopo l'attesa dell'approvazione per una settimana.<br/>- Sono presenti troppe azioni. Ad esempio, se ci sono troppi utenti che fa clic su URL dannosi, può superare la capacità dell'indagine di eseguire tutti gli analizzatori, quindi l'indagine si interrompe.<p> **SUGGERIMENTO:** se un'indagine si interrompe prima dell'azione, prova a usare [Esplora](threat-explorer.md) minacce per trovare e affrontare le minacce.|
 |**Azione in sospeso**|L'indagine ha rilevato una minaccia, ad esempio un messaggio di posta elettronica dannoso, un URL dannoso o un'impostazione della cassetta postale rischiosa e un'azione per correggere tale minaccia in attesa di [approvazione.](air-review-approve-pending-completed-actions.md) <p> Lo **stato Azione** in sospeso viene attivato quando viene trovata qualsiasi minaccia con un'azione corrispondente. Tuttavia, l'elenco delle azioni in sospeso può aumentare durante l'esecuzione di un'indagine. Visualizzare i dettagli dell'indagine per verificare se altri elementi sono ancora in attesa di completamento.|
 |**Correzione**|L'indagine è stata completata e tutte le azioni di correzione sono state approvate (come completamente corretti). <p> **NOTA:** le azioni di correzione approvate possono contenere errori che impediscono l'azione. Indipendentemente dal fatto che le azioni di correzione siano state completate correttamente, lo stato dell'indagine non cambia. Visualizzare i dettagli dell'indagine.|
@@ -58,7 +58,7 @@ Lo stato dell'indagine indica l'avanzamento dell'analisi e delle azioni. Durante
 
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 
-1. Accedere al Centro sicurezza Microsoft 365 ( <https://security.microsoft.com> ) e accedere.
+1. Accedere al centro Microsoft 365 sicurezza ( <https://security.microsoft.com> ) ed eseguire l'accesso.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In sospeso** o **Cronologia** selezionare un'azione. Verrà visualizzato il riquadro a comparsa.
 4. Nel riquadro a comparsa selezionare Apri **pagina analisi.** 
@@ -68,7 +68,7 @@ Lo stato dell'indagine indica l'avanzamento dell'analisi e delle azioni. Durante
 
 Alcuni tipi di avvisi attivano un'indagine automatizzata in Microsoft 365. Per ulteriori informazioni, vedere [Criteri di avviso che attivano indagini automatizzate.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
 
-1. Accedere al Centro sicurezza Microsoft 365 ( <https://security.microsoft.com> ) e accedere.
+1. Accedere al centro Microsoft 365 sicurezza ( <https://security.microsoft.com> ) ed eseguire l'accesso.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In sospeso** o **Cronologia** selezionare un'azione. Verrà visualizzato il riquadro a comparsa.
 4. Nel riquadro a comparsa selezionare Apri **pagina analisi.** 
