@@ -100,6 +100,24 @@
                   href: investigate-alerts.md
                 - name: Analizzare gli utenti
                   href: investigate-users.md
+                - name: Rispondere al primo evento imprevisto
+                  items:
+                    - name: Introduzione
+                      href: first-incident-overview.md
+                    - name: Preparazione
+                      href: first-incident-prepare.md
+                    - name: Passaggio 1. Analisi e analisi
+                      href: first-incident-analyze.md
+                    - name: Passaggio 2. Correzione
+                      href: first-incident-remediate.md
+                    - name: Passaggio 3. Revisione
+                      href: first-incident-post.md
+                    - name: Esempi aggiuntivi di eventi imprevisti
+                      items:
+                        - name: Posta di phishing
+                          href: first-incident-path-phishing.md
+                        - name: Identità
+                          href: first-incident-path-identity.md
             - name: Ricevere notifiche tramite posta elettronica
               href: get-incident-notifications.md
         - name: Analisi e risposta alle minacce automatizzate
