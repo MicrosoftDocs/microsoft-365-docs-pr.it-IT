@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come gestire gli elementi parzialmente indicizzati (denominati anche elementi non indicizzati) da Exchange, SharePoint e OneDrive for Business all'interno dell'organizzazione.
-ms.openlocfilehash: 5d30c0f7c6ae77236ba7fd9f2dbfcc7a0397ae21
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Informazioni su come gestire elementi parzialmente indicizzati (denominati anche elementi non indicizzati) da Exchange, SharePoint e OneDrive for Business all'interno dell'organizzazione.
+ms.openlocfilehash: c24fb2d9b633181538d76cf35e27dae1824b311d
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922580"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994805"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Analisi degli elementi parzialmente indicizzati in eDiscovery
 
-Una ricerca eDiscovery eseguita dal Centro conformità Microsoft 365 include automaticamente elementi parzialmente indicizzati nei risultati di ricerca stimati quando si esegue una ricerca. Gli elementi parzialmente indicizzati sono elementi e documenti delle cassette postali di Exchange nei siti di SharePoint e OneDrive for Business che per qualche motivo non sono stati completamente indicizzati per la ricerca. La maggior parte dei messaggi di posta elettronica e dei documenti del sito viene indicizzata correttamente perché rientrano nei limiti di indicizzazione [per i messaggi di posta elettronica.](limits-for-content-search.md#indexing-limits-for-email-messages) Tuttavia, alcuni elementi potrebbero superare questi limiti di indicizzazione e verranno parzialmente indicizzati. Ecco altri motivi per cui gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati quando si esegue una ricerca eDiscovery:
+Una ricerca eDiscovery eseguita dal Centro conformità Microsoft 365 include automaticamente elementi parzialmente indicizzati nei risultati di ricerca stimati quando si esegue una ricerca. Gli elementi parzialmente indicizzati sono Exchange di cassette postali e documenti nei siti SharePoint e OneDrive for Business che per qualche motivo non sono stati completamente indicizzati per la ricerca. La maggior parte dei messaggi di posta elettronica e dei documenti del sito viene indicizzata correttamente perché rientrano nei limiti di indicizzazione [per i messaggi di posta elettronica.](limits-for-content-search.md#indexing-limits-for-email-messages) Tuttavia, alcuni elementi potrebbero superare questi limiti di indicizzazione e verranno parzialmente indicizzati. Ecco altri motivi per cui gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati quando si esegue una ricerca eDiscovery:
   
 - I messaggi di posta elettronica dispongono di un file allegato senza un gestore valido, ad esempio file di immagine. questa è la causa più comune degli elementi di posta elettronica parzialmente indicizzati.
 
@@ -45,10 +45,7 @@ Dopo aver eseguito una ricerca eDiscovery, il numero totale e le dimensioni degl
   
 - Se un elemento è parzialmente indicizzato e corrisponde alla query di ricerca, viene incluso sia nel conteggio (e nelle dimensioni) degli elementi dei risultati di ricerca che negli elementi parzialmente indicizzati. Tuttavia, quando i risultati della stessa ricerca vengono esportati, l'elemento viene incluso solo con il set di risultati della ricerca. non è incluso come elemento parzialmente indicizzato.
 
-- Se si specifica un intervallo di date per una query di ricerca ,includendolo nella query con parole chiave o utilizzando una condizione, qualsiasi elemento parzialmente indicizzato che non corrisponde all'intervallo di date non viene incluso nel conteggio degli elementi parzialmente indicizzati. Gli elementi parzialmente indicizzati che rientrano nell'intervallo di date vengono inclusi nel conteggio degli elementi indicizzati.
-
-  > [!NOTE]
-  > Gli elementi parzialmente indicizzati che si  trovano nei siti di SharePoint e OneDrive non sono inclusi nella stima degli elementi parzialmente indicizzati visualizzati nelle statistiche dettagliate per la ricerca. Tuttavia, gli elementi parzialmente indicizzati possono essere esportati quando si esportano i risultati di una ricerca eDiscovery. Se ad esempio si esemplino solo siti di ricerca, il numero stimato di elementi parzialmente indicizzati sarà zero.
+- Gli elementi parzialmente indicizzati che si trovano nei  siti di SharePoint e OneDrive non sono inclusi nella stima degli elementi parzialmente indicizzati visualizzati nelle statistiche dettagliate per la ricerca. Tuttavia, gli elementi parzialmente indicizzati possono essere esportati quando si esportano i risultati di una ricerca eDiscovery. Se ad esempio si esemplino solo siti di ricerca, il numero stimato di elementi parzialmente indicizzati sarà zero.
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calcolo del rapporto tra gli elementi parzialmente indicizzati nell'organizzazione
 
@@ -80,7 +77,7 @@ Nei casi in cui è necessario esaminare parzialmente gli elementi per verificare
   
 ![Scegliere la seconda o la terza opzione per esportare elementi parzialmente indicizzati](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
-Quando si esportano i risultati della ricerca di eDiscovery o un report di ricerca utilizzando una di queste opzioni, l'esportazione include un report denominato Non indicizzato Items.csv. Questo report include la maggior parte delle stesse informazioni del file ResultsLog.csv; Tuttavia, il file di Items.csv non indicizzato include anche due campi correlati a elementi parzialmente indicizzati: **Tag** di errore e **Proprietà errore.** Questi campi contengono informazioni sull'errore di indicizzazione per ogni elemento parzialmente indicizzato. L'utilizzo delle informazioni contenute in questi due campi consente di determinare se l'errore di indicizzazione per un particolare impatto sull'indagine. In caso contrario, è possibile eseguire una ricerca mirata e recuperare ed esportare messaggi di posta elettronica specifici e documenti di SharePoint o OneDrive in modo da poterli esaminare per determinare se sono rilevanti per l'indagine. Per istruzioni dettagliate, vedere [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
+Quando si esportano i risultati della ricerca di eDiscovery o un report di ricerca utilizzando una di queste opzioni, l'esportazione include un report denominato Non indicizzato Items.csv. Questo report include la maggior parte delle stesse informazioni del file ResultsLog.csv; Tuttavia, il file di Items.csv non indicizzato include anche due campi correlati a elementi parzialmente indicizzati: **Tag** di errore e **Proprietà errore.** Questi campi contengono informazioni sull'errore di indicizzazione per ogni elemento parzialmente indicizzato. L'utilizzo delle informazioni contenute in questi due campi consente di determinare se l'errore di indicizzazione per un particolare impatto sull'indagine. In caso contrario, è possibile eseguire una ricerca mirata ed esportare messaggi di posta elettronica specifici e documenti di SharePoint o OneDrive in modo da poterli esaminare per determinare se sono rilevanti per l'indagine. Per istruzioni dettagliate, vedere [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
 
 > [!NOTE]
 > Il file di Items.csv contiene anche campi denominati **Tipo di errore** e Messaggio di **errore.** Si tratta di campi legacy che contengono informazioni simili a quelle contenute nei campi **Tag** errore e **Proprietà** errore, ma con informazioni meno dettagliate. È possibile ignorare questi campi legacy.
@@ -105,14 +102,14 @@ Di seguito è riportato un elenco degli errori di indicizzazione e una descrizio
 | `attachmentsize` <br/> |Un file allegato a un messaggio di posta elettronica è troppo grande e non può essere elaborato.  <br/> |
 | `indexingtruncated` <br/> |Quando si scrive il messaggio di posta elettronica elaborato nell'indice, una delle proprietà indicizzabili è troppo grande ed è stata troncata. Le proprietà troncate sono elencate nel campo Proprietà errore.  <br/> |
 | `invalidunicode` <br/> |Un messaggio di posta elettronica contiene testo che non è stato possibile elaborare come Unicode valido. L'indicizzazione per questo elemento potrebbe essere incompleta.  <br/> |
-| `parserencrypted` <br/> |Il contenuto dell'allegato o del messaggio di posta elettronica è crittografato e Microsoft 365 non è riuscito a decodificare il contenuto.  <br/> |
+| `parserencrypted` <br/> |Il contenuto dell'allegato o del messaggio di posta elettronica è crittografato e Microsoft 365 non è stato possibile decodificare il contenuto.  <br/> |
 | `parsererror` <br/> |Si è verificato un errore sconosciuto durante l'analisi. Ciò in genere è il risultato di un bug software o di un arresto anomalo del servizio.  <br/> |
 | `parserinputsize` <br/> |Un allegato era troppo grande per essere gestito dal parser e l'analisi dell'allegato non è stata completata o non è stata completata.  <br/> |
 | `parsermalformed` <br/> |Un allegato non è valido e non può essere gestito dal parser. Questo risultato può essere dovuto a vecchi formati di file, file creati da software incompatibile o virus che fingono di essere qualcosa di diverso da quello richiesto.  <br/> |
 | `parseroutputsize` <br/> |L'output dell'analisi di un allegato era troppo grande e doveva essere troncato.  <br/> |
-| `parserunknowntype` <br/> |Un allegato ha un tipo di file che Microsoft 365 non è riuscito a rilevare.  <br/> |
-| `parserunsupportedtype` <br/> |Un allegato ha un tipo di file che Office 365 è in grado di rilevare, ma l'analisi di tale tipo di file non è supportata.  <br/> |
-| `propertytoobig` <br/> |Il valore di una proprietà di posta elettronica nell'archivio di Exchange era troppo grande per essere recuperato e non è stato possibile elaborare il messaggio. Ciò accade in genere solo alla proprietà body di un messaggio di posta elettronica.  <br/> |
+| `parserunknowntype` <br/> |Un allegato aveva un tipo di file Microsoft 365 non è stato rilevato.  <br/> |
+| `parserunsupportedtype` <br/> |Un allegato aveva un tipo di file Office 365 possibile rilevare, ma l'analisi di tale tipo di file non è supportata.  <br/> |
+| `propertytoobig` <br/> |Il valore di una proprietà di posta elettronica in Exchange Store era troppo grande per essere recuperato e non è stato possibile elaborare il messaggio. Ciò accade in genere solo alla proprietà body di un messaggio di posta elettronica.  <br/> |
 | `retrieverrms` <br/> |Impossibile decodificare un messaggio protetto con RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Troppe parole sono state identificate nel documento durante l'indicizzazione. L'elaborazione della proprietà è stata interrotta al raggiungimento del limite e la proprietà viene troncata.  <br/> |
 
@@ -122,7 +119,7 @@ I campi di errore descrivono i campi interessati dall'errore di elaborazione ele
 
 La procedura seguente illustra come eseguire uno script di PowerShell che cerca tutti gli elementi in tutte le cassette postali di Exchange e quindi genera un rapporto sul rapporto tra gli elementi di posta elettronica parzialmente indicizzati dell'organizzazione (per numero e dimensioni) e visualizza il numero di elementi (e il relativo tipo di file) per ogni errore di indicizzazione che si verifica. Utilizzare le descrizioni dei tag di errore nella sezione precedente per identificare l'errore di indicizzazione.
   
-1. Salvare il testo seguente in un file Windows PowerShell script utilizzando il suffisso del nome di file ps1. ad `PartiallyIndexedItems.ps1` esempio.
+1. Salvare il testo seguente in un file Windows PowerShell script utilizzando un suffisso di nome file .ps1; ad `PartiallyIndexedItems.ps1` esempio.
 
    ```powershell
      write-host "**************************************************"

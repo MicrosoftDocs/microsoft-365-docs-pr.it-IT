@@ -17,37 +17,26 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: La prevenzione della perdita dei dati (DLP) nel Centro sicurezza e conformità include 80 tipi di informazioni riservate pronti per l'uso &amp; nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo.
-ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: La prevenzione della perdita dei dati (DLP) nel Centro sicurezza e conformità include oltre 200 tipi di informazioni riservate pronti per l'uso &amp; nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo.
+ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919712"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086729"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
-La prevenzione della perdita dei dati (DLP) nel Centro conformità include molti tipi di informazioni riservate pronti per l'uso nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo. Una tipologia di informazioni riservate viene definita da un modello identificato da un'espressione regolare o da una funzione. Le prove corroborative, come parole chiave e checksum, possono essere usate per identificare un tipo di informazioni riservate. In questa procedura di valutazione vengono usati anche il livello di probabilità e la prossimità.
-
-I tipi di informazioni riservate richiedono una di queste sottoscrizioni:
-- Microsoft 365 E3
-- Microsoft 365 E5
-
-I tipi di informazioni riservate vengono utilizzati in:
-
-- [Criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md) 
-- [Etichette di riservatezza](sensitivity-labels.md)
-- [Etichette di conservazione](retention.md)
-- [Conformità delle comunicazioni](communication-compliance.md)
-- [Criteri di etichettatura automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+La prevenzione della perdita dei dati (DLP) nel Centro conformità include molti tipi di informazioni riservate pronti per l'uso nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo. Per ulteriori informazioni sui tipi di informazioni riservate, vedere [Tipi di informazioni riservate](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>Numero di routing ABA
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre che possono essere formattate o non formattate
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Formattato:
 - quattro cifre che iniziano con 0, 1, 2, 3, 6, 7 o 8
@@ -108,11 +97,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="argentina-national-identity-dni-number"></a>Numero DNI (Argentina National Identity)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Otto cifre con o senza punti
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Otto cifre
 - due cifre
@@ -155,13 +144,96 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - registro nacional de las personas 
 - rnp 
    
+## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Codice identificativo fiscale univoco argentina (CUIT/CUIL)
+
+### <a name="format"></a>Formato
+
+Undici cifre con trattino
+
+### <a name="pattern"></a>Criterio
+
+Undici cifre con un trattino:
+- due cifre in 20, 23, 24, 27, 30, 33 o 34
+- un trattino (-)
+- otto cifre
+- un trattino (-)
+- una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione `Func_Argentina_Unique_Tax_Key` trova contenuto che corrisponde al modello.
+- Viene trovata una parola `Keyword_Argentina_Unique_Tax_Key` chiave from.
+
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione `Func_Argentina_Unique_Tax_Key` trova contenuto che corrisponde al modello.
+
+```xml
+    <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
+      <Entity id="98da3da1-9199-4571-b7c4-b6522980b507" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+          <Match idRef="Keyword_Argentina_Unique_Tax_Key" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
+
+- Clave Unica de Identificacion Tributaria
+- CUIT
+- codice univoco di identificazione del personale 
+- Clave Única de Identificación Tributaria
+- codice identificativo personale univoco
+- CUIL
+- Chiave di identificazione fiscale univoca
+- Chiave di identificazione univoca del personale
+- Chiave univoca di identificazione del lavoro
+- Codice di identificazione univoco del lavoro
+- Identificazione univoca del codice di lavoro
+- Chiave di identificazione univoca del lavoro
+- Chiave univoca di identificazione del lavoro
+- Codice univoco di identificazione fiscale
+- Chiave univoca di identificazione fiscale
+- Codice di identificazione univoco del lavoro
+- Codice univoco di identificazione del lavoro
+- Chiave univoca di identificazione del lavoro
+- Chiave univoca di identificazione del lavoro
+- ID fiscale
+- taxID #
+- taxId
+- taxidnumber
+- tax number
+- tax no
+- tax #
+- tax #
+- ID contribuente
+- numero contribuente
+- contribuente no
+- contribuente #
+- contribuente #
+- identità fiscale
+- tax identification
+- Número de Identificación Fiscal
+- número de contribuyente
+   
+   
 ## <a name="australia-bank-account-number"></a>Numero di conto corrente bancario Australia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 da sei a dieci cifre con o senza un numero di filiale dello stato della banca
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Il numero di account è da 6 a 10 cifre.
 
@@ -228,11 +300,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - Sicurezza delle app cloud Microsoft
 
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre con delimitatori facoltativi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre con delimitatori facoltativi:
 
@@ -289,11 +361,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre con delimitatori
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre con delimitatori:
 
@@ -343,11 +415,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="australia-drivers-license-number"></a>Numero di patente australiana
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove lettere e cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove lettere e cifre: 
 
@@ -494,11 +566,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="australia-medical-account-number"></a>Numero di conto medico Australia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10-11 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10-11 cifre:
 - La prima cifra è compresa nell'intervallo 2-6
@@ -545,11 +617,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
    
 ## <a name="australia-passport-number"></a>Numero di passaporto australiano
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Una lettera seguita da sette cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Una lettera (senza distinzione tra maiuscole e minuscole) seguita da sette cifre
 
@@ -616,11 +688,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="australia-tax-file-number"></a>Numero di file fiscale australia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 da otto a nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 da otto a nove cifre in genere presentate con spazi come segue:
 - tre cifre 
@@ -666,11 +738,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 ## <a name="austria-drivers-license-number"></a>Austria - Numero di patente di guida
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre
   
@@ -838,11 +910,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Una combinazione di 24 caratteri di lettere, cifre e caratteri speciali
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 24 caratteri:
   
@@ -881,11 +953,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="austria-passport-number"></a>Numero di passaporto austriano
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Una lettera seguita da uno spazio facoltativo e sette cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Combinazione di una lettera, sette cifre e uno spazio:
   
@@ -964,11 +1036,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="austria-social-security-number"></a>Austria - Numero di previdenza sociale
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre nel formato specificato
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre:
   
@@ -1036,11 +1108,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="austria-tax-identification-number"></a>Numero di identificazione fiscale Austria
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre con trattino facoltativo e barra
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre con trattino facoltativo e barra:
   
@@ -1109,11 +1181,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Motivo alfanumerico a 11 caratteri
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Motivo alfanumerico di 11 caratteri:
 
@@ -1176,11 +1248,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="azure-documentdb-auth-key"></a>Chiave di autenticazione di Azure DocumentDB
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 La stringa "DocumentDb" seguita dai caratteri e dalle stringhe descritti nel modello seguente.
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - Stringa "DocumentDb"
 - Qualsiasi combinazione di 3-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
@@ -1226,13 +1298,13 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Stringa di connessione del database IAAS di Azure e stringa di SQL azure
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Stringa di connessione del database IAAS di Azure e stringa di connessione SQL azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Stringa "Server", "server" o "origine dati" seguita dai caratteri e dalle stringhe descritti nel modello seguente, inclusa la stringa "cloudapp.azure.<!--no-hyperlink-->com" o "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net" e la stringa "Password" o "password" o "pwd".
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - la stringa "Server", "server" o "origine dati"
 - da zero a due spazi vuoti
@@ -1286,13 +1358,13 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-iot-connection-string"></a>Stringa di connessione IoT di Azure
+## <a name="azure-iot-connection-string"></a>Azure IoT stringa di connessione
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 La stringa "HostName" seguita dai caratteri e dalle stringhe descritti nel modello seguente, incluse le stringhe "azure-devices.<!--no-hyperlink-->net" e "SharedAccessKey".
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - la stringa "HostName"
 - da zero a due spazi vuoti
@@ -1348,11 +1420,11 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="azure-publish-setting-password"></a>Password dell'impostazione di pubblicazione di Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Stringa "userpwd=" seguita da una stringa alfanumerica.
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - la stringa "userpwd="
 - qualsiasi combinazione di 60 lettere minuscole o cifre
@@ -1399,11 +1471,11 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="azure-redis-cache-connection-string"></a>Stringa di connessione della cache di Azure Redis
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Stringa "redis.cache.windows.<!--no-hyperlink-->net" seguito dai caratteri e dalle stringhe descritti nel modello seguente, inclusa la stringa "password" o "pwd".
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - la stringa "redis.cache.windows.<!--no-hyperlink-->net"
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
@@ -1454,11 +1526,11 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="azure-sas"></a>Firma di accesso condiviso di Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 La stringa "sig" seguita dai caratteri e dalle stringhe delineati nel modello seguente.
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - la stringa "sig"
 - da zero a due spazi vuoti
@@ -1488,11 +1560,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 ## <a name="azure-service-bus-connection-string"></a>Stringa di connessione del bus di servizio di Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 La stringa "EndPoint" seguita dai caratteri e dalle stringhe descritti nel modello seguente, incluse le stringhe "servicebus.windows.<!--no-hyperlink-->net" e "SharedAccesKey".
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - la stringa "EndPoint"
 - da zero a due spazi vuoti
@@ -1548,11 +1620,11 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="azure-storage-account-key"></a>Chiave dell'account di archiviazione di Azure
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Stringa "DefaultEndpointsProtocol" seguita dai caratteri e dalle stringhe descritti nel modello seguente, inclusa la stringa "AccountKey".
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - la stringa "DefaultEndpointsProtocol"
 - da zero a due spazi vuoti
@@ -1612,13 +1684,13 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-storage-account-key-generic"></a>Chiave dell'account di archiviazione di Azure (generica)
+## <a name="azure-storage-account-key-generic"></a>Archiviazione di Azure account utente (generica)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Qualsiasi combinazione di 86 lettere minuscole o maiuscole, cifre, barra (/) o segno più (+), preceduta o seguita dai caratteri indicati nel modello seguente.
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - da zero a uno dei simboli di maggiore di (>), apostrofo ('), segno di uguale (=), virgolette (") o simbolo di numero (#)
 - qualsiasi combinazione di 86 caratteri minuscoli o maiuscoli, cifre, barra (/) o segno più (+)
@@ -1643,11 +1715,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ```
 ## <a name="belgium-drivers-license-number"></a>Numero di patente di guida belgio
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre
   
@@ -1815,11 +1887,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="belgium-national-number"></a>Belgio - Numero nazionale
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre più delimitatori facoltativi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre più delimitatori:
 - sei cifre e due punti facoltativi nel formato AA. MM.DD per la data di nascita 
@@ -1919,11 +1991,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="belgium-passport-number"></a>Belgio - numero di passaporto
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere seguite da sei cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 due lettere e seguito da sei cifre
   
@@ -2009,11 +2081,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Motivo alfanumerico a 12 caratteri
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Motivo alfanumerico a 12 caratteri:
 
@@ -2071,11 +2143,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="brazil-cpf-number"></a>Brasile - Numero CPF
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre che includono una cifra di controllo e possono essere formattate o non formattate
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Formattato:
 - tre cifre
@@ -2134,11 +2206,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>Numero della persona giuridica del Brasile (CNPJ)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 14 cifre che includono il numero di registrazione, il codice della filiale, le cifre di controllo e i delimitatori
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 14 cifre più delimitatori:
 
@@ -2207,13 +2279,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="brazil-national-identification-card-rg"></a>Carta di identità nazionale (RG) del Brasile
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Registro Geral (formato precedente): nove cifre
 
 Registro de Identidade (RIC) (nuovo formato): 11 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Registro Geral (formato precedente):
 - due cifre 
@@ -2267,11 +2339,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 ## <a name="bulgaria-drivers-license-number"></a>Numero di patente di guida bulgaria
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre
   
@@ -2438,11 +2510,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre senza spazi e delimitatori
   
@@ -2531,11 +2603,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="bulgaria-passport-number"></a>Numero di passaporto bulgaro
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre 
   
@@ -2605,11 +2677,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="canada-bank-account-number"></a>Canada - Numero di conto corrente bancario
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 7 o 12 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Un numero di conto corrente bancario canadese è di 7 o 12 cifre.
 
@@ -2679,11 +2751,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
    
 ## <a name="canada-drivers-license-number"></a>Canada - Numero di patente di guida
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Varia in base alla provincia
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Vari modelli per Alberta, Columbia Britannica, Manitoba, Nuovo Brunswick, Terranova e Labrador, Nuova Scozia, Ontario, Isola del Principe Edoardo, Quebec e Saskatchewan
 
@@ -2897,11 +2969,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="canada-health-service-number"></a>Numero del servizio sanitario canadese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
  10 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre
 
@@ -2944,11 +3016,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
       
 ## <a name="canada-passport-number"></a>Numero di passaporto canadese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere maiuscole seguite da sei cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 due lettere maiuscole seguite da sei cifre
 
@@ -3012,11 +3084,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="canada-personal-health-identification-number-phin"></a>Canada personal health identification number (PHIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre
 
@@ -3083,11 +3155,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="canada-social-insurance-number"></a>Canada - Numero di previdenza sociale
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre con trattini o spazi facoltativi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Formattato:
 - tre cifre 
@@ -3167,11 +3239,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="chile-identity-card-number"></a>Numero di carta di identità cileno
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 da sette a otto cifre più delimitatori una cifra di controllo o una lettera
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 da sette a otto cifre più delimitatori:
 - da una a due cifre 
@@ -3252,11 +3324,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="china-resident-identity-card-prc-number"></a>Numero di carta d'identità (PRC) residente in Cina
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 18 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 18 cifre:
 - sei cifre che sono un codice indirizzo 
@@ -3308,13 +3380,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - 鑑定 
 
    
-## <a name="credit-card-number"></a>Numero carta di credito
+## <a name="credit-card-number"></a>Numero di carta di credito
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Da 14 a 16 cifre che possono essere formattate o non formattate (dddddddd) e che devono superare il test Luhn.
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Modello complesso e affidabile che rileva le carte di tutte le principali marche in tutto il mondo, tra cui Visa, MasterCard, Discover Card, JCB, American Express, carte regalo e carte da pranzo.
 
@@ -3392,9 +3464,12 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód. segurança
+- 
+cód. segurança
 - cod. seguranca
+
 - cod. segurança
+
 - cód. seguranca
 - cód segurança
 - cod seguranca
@@ -3574,7 +3649,8 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - no do cartão
 - no do cartao
 - No. do cartão
-- No. do cartao
+- no. do cartao
+
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3608,11 +3684,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="croatia-drivers-license-number"></a>Croatia driver's license number
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre
   
@@ -3773,11 +3849,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ## <a name="croatia-identity-card-number"></a>Numero di carta d'identità della Croazia
 Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFICAZIONE NAZIONALE UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre consecutive
 
@@ -3837,11 +3913,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="croatia-passport-number"></a>Numero di passaporto croato
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre 
   
@@ -3906,11 +3982,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="croatia-personal-identification-oib-number"></a>Numero di identificazione personale (OIB) della Croazia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre:
 - 10 cifre 
@@ -3979,11 +4055,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="cyprus-drivers-license-number"></a>Numero di licenza per i driver di Cipro
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 12 cifre
   
@@ -4148,11 +4224,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre 
   
@@ -4190,11 +4266,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="cyprus-passport-number"></a>Numero di passaporto di Cipro
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 una lettera seguita da 6-8 cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 una lettera seguita da sei a otto cifre
   
@@ -4280,11 +4356,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre e una lettera nello schema specificato
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre e una lettera:
   
@@ -4351,11 +4427,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="czech-drivers-license-number"></a>Numero di patente di guida ceco
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere seguite da sei cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto lettere e cifre:
   
@@ -4520,11 +4596,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="czech-passport-number"></a>Numero di passaporto ceco
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre senza spazi o delimitatori
   
@@ -4598,11 +4674,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="czech-personal-identity-number"></a>Numero di identità personale ceco
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre con barra facoltativa (formato precedente) 10 cifre con barra facoltativa (nuovo formato)
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre (formato precedente):
 - sei cifre che rappresentano la data di nascita
@@ -4698,11 +4774,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="denmark-drivers-license-number"></a>Numero di patente di guida danimarca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre
   
@@ -4860,11 +4936,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="denmark-passport-number"></a>Numero di passaporto danimarca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre 
   
@@ -4937,11 +5013,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="denmark-personal-identification-number"></a>Numero di identificazione personale Danimarca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre contenenti una lineetta
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre:
 - sei cifre nel formato DDMMYY, ovvero la data di nascita 
@@ -5054,11 +5130,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Numero dea (Drug Enforcement Agency)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere seguite da sette cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Il modello deve includere tutti gli elementi seguenti:
 - una lettera (senza distinzione tra maiuscole e minuscole) da questo set di lettere possibili: abcdefghjklmnprstux, che è un codice registrante 
@@ -5112,11 +5188,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="estonia-drivers-license-number"></a>Numero di patente di guida estonia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere seguite da sei cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 due lettere e sei cifre:
   
@@ -5285,11 +5361,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre:
   
@@ -5366,11 +5442,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="estonia-passport-number"></a>Numero di passaporto estone
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 una lettera seguita da sette cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 una lettera seguita da sette cifre
   
@@ -5438,13 +5514,13 @@ eesti kodaniku pass passi number passinumbrid document no dokumendi nr
 - data di scadenza
 
 
-## <a name="eu-debit-card-number"></a>Numero carta di debito UE
+## <a name="eu-debit-card-number"></a>Numero di carta di debito dell'Unione europea
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 16 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Modello complesso e affidabile
 
@@ -5606,11 +5682,15 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - no de tarjeta 
 - no do cartao 
 - no do cartão 
-- No. de tarjeta 
-- No. do cartao 
-- No. do cartão 
+- no. de tarjeta
+ 
+- no. do cartao
+ 
+- no. do cartão
+ 
 - nr carta 
-- nr. carta 
+- nr. carta
+ 
 - numeri di scheda 
 - numero carta 
 - numero de cartao 
@@ -5629,7 +5709,8 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - nº de tarjeta 
 - nº do cartao 
 - nº do cartão 
-- nº. do cartão 
+- nº. do cartão
+ 
 - número de cartao 
 - número de cartão 
 - número de tarjeta 
@@ -5681,10 +5762,14 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- cod. seg 
-- cod. seguranca 
-- cod. segurança 
-- cod. sicurezza 
+- cod. seg
+ 
+- cod. seguranca
+ 
+- cod. segurança
+ 
+- cod. sicurezza
+ 
 - codice di sicurezza 
 - codice di verifica 
 - codigo 
@@ -5701,8 +5786,10 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - cvv2 
 - cód seguranca 
 - cód segurança 
-- cód. seguranca 
-- cód. segurança 
+- cód. seguranca
+ 
+- cód. segurança
+ 
 - código 
 - código de seguranca 
 - código de segurança 
@@ -5714,8 +5801,10 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - kreditkartenprufnummer 
 - kreditkartenprüfnummer 
 - kwestieaantal 
-- No. dell'edizione 
-- No. di sicurezza 
+- no. dell'edizione
+ 
+- no. di sicurezza
+ 
 - numero de securite 
 - numero de verificacao 
 - numero dell'edizione 
@@ -5944,11 +6033,11 @@ Queste entità sono nel tipo di informazioni riservate del numero di identificaz
 
 ## <a name="finland-drivers-license-number"></a>Numero di patente di guida finlandia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre contenenti una lineetta
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre contenenti un trattino:
   
@@ -6125,11 +6214,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Numero a 20 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Numero a 20 cifre:
 
@@ -6179,11 +6268,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="finland-national-id"></a>Id nazionale Finlandia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 sei cifre più un carattere che indica un secolo più tre cifre più una cifra di controllo
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Il modello deve includere tutti gli elementi seguenti:
 - sei cifre nel formato DDMMYY, che sono una data di nascita 
@@ -6274,10 +6363,10 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di passaporto UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 combinazione di nove lettere e cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 combinazione di nove lettere e cifre:
 - due lettere (senza distinzione tra maiuscole e minuscole) 
 - sette cifre
@@ -6354,11 +6443,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 12 cifre con convalida per scontare modelli analoghi, ad esempio, quello dei numeri telefonici francesi
 
@@ -6520,11 +6609,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Numero a 21 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Numero a 21 cifre:
 
@@ -6565,11 +6654,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="france-national-id-card-cni"></a>Carta d'identità francese (CNI)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 12 cifre
 
@@ -6613,11 +6702,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 ## <a name="france-passport-number"></a>Francia - numero di passaporto
 Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di passaporto UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre e lettere
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre e lettere:
 - due cifre 
@@ -6704,11 +6793,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="france-social-security-number-insee"></a>Numero di previdenza sociale francia (INSEE)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 15 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Deve corrispondere a uno di questi due modelli:
 - 13 cifre seguite da uno spazio seguito da due cifre<br/>
@@ -6759,14 +6848,16 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - national id
 - national identification
 - no d'identité
-- No. d'identité
+- 
+no. d'identité
 - numéro d'assurance
 - numéro d'identité
 - numero d'identite
 - numéro de sécu
 - numéro de sécurité sociale
 - no d'identite
-- No. d'identite
+- 
+no. d'identite
 - ssn
 - ssn #
 - sécurité sociale
@@ -6780,11 +6871,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="france-tax-identification-number"></a>Numero di identificazione fiscale francia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 13 cifre
   
@@ -6862,11 +6953,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Motivo alfanumerico a 13 caratteri
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Motivo alfanumerico a 13 caratteri:
 
@@ -6925,11 +7016,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 combinazione di 11 cifre e lettere
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre e lettere (senza distinzione tra maiuscole e minuscole):
 - una cifra o una lettera 
@@ -7113,13 +7204,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="germany-identity-card-number"></a>Numero carta d'identità Germania
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 dal 1° novembre 2010: nove lettere e cifre
 
 dal 1° aprile 1987 al 31 ottobre 2010: 10 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 dal 1° novembre 2010:
 - una lettera (senza distinzione tra maiuscole e minuscole) 
@@ -7171,11 +7262,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di passaporto UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre o lettere
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Il modello deve includere tutti gli elementi seguenti:
 - first character is a digit or a letter from this set (C, F, G, H, J, K) 
@@ -7249,11 +7340,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="germany-tax-identification-number"></a>Numero di identificazione fiscale Germania
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre
   
@@ -7329,11 +7420,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Motivo alfanumerico a 11 caratteri
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Motivo alfanumerico di 11 caratteri:
 
@@ -7388,11 +7479,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre 
   
@@ -7553,11 +7644,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="greece-national-id-card"></a>Carta d'identità nazionale della Grecia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Combinazione di 7-8 lettere e numeri, oltre a un trattino
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Sette lettere e numeri (formato precedente):
 - Una lettera (qualsiasi lettera dell'alfabeto greco)  
@@ -7611,11 +7702,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="greece-passport-number"></a>Numero di passaporto della Grecia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Due lettere seguite da sette cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Due lettere seguite da 7 cifre
   
@@ -7688,11 +7779,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Undici cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - 6 cifre come data di nascita AAMMDD
 - 4 cifre
@@ -7746,11 +7837,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nove cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 9 cifre
   
@@ -7809,11 +7900,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>Numero della carta di identità (HKID) di Hong Kong
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Combinazione di 8-9 lettere e numeri. Facoltativamente, l’ultimo carattere può essere racchiuso tra parentesi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Combinazione di 8-9 lettere:
 - 1-2 lettere (senza distinzione tra maiuscole e minuscole) 
@@ -7893,11 +7984,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
    
 ## <a name="hungary-drivers-license-number"></a>Numero di patente di guida ungherese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Due lettere seguite da sei cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Due lettere e sei cifre:
   
@@ -8066,11 +8157,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre:
   
@@ -8126,11 +8217,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="hungary-passport-number"></a>Numero di passaporto ungherese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Due lettere seguite da sei o sette cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Due lettere seguite da sei o sette cifre
   
@@ -8201,11 +8292,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="hungary-social-security-number-taj"></a>Codice di previdenza sociale ungherese (TAJ)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nove cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 9 cifre
   
@@ -8268,11 +8359,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre:
   
@@ -8349,11 +8440,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Motivo alfanumerico a 10 caratteri
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Motivo alfanumerico a 10 caratteri:
 
@@ -8408,11 +8499,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="india-permanent-account-number-pan"></a>India - Numero di account permanente (PAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 lettere o cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 lettere o cifre:
 - Tre lettere (senza distinzione tra maiuscole e minuscole) 
@@ -8459,11 +8550,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
    
 ## <a name="india-unique-identification-aadhaar-number"></a>India - Numero di identificazione univoca (Aadhaar)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 cifre contenenti spazi o trattini facoltativi 
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 12 cifre:
 - Una cifra che non è 0 o 1
@@ -8513,11 +8604,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="indonesia-identity-card-ktp-number"></a>Numero della carta di identità indonesiana (KTP)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 16 cifre contenenti punti facoltativi 
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 16 cifre:
 - Codice provincia a due cifre  
@@ -8559,11 +8650,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
    
 ## <a name="international-banking-account-number-iban"></a>Numero di conto bancario internazionale (IBAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Codice paese (due lettere) più cifre di controllo (due cifre) più numero bban (fino a 30 caratteri)
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Il modello deve includere tutti gli elementi seguenti:
 
@@ -8602,11 +8693,11 @@ Nessuno
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificazione internazionale delle malattie (ICD-10-CM)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Dizionario
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Parola chiave
 
@@ -8644,11 +8735,11 @@ Qualsiasi termine del dizionario Dictionary_icd_10_codes parole chiave, basato s
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Classificazione internazionale delle malattie (ICD-9-CM)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Dizionario
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Parola chiave
 
@@ -8685,7 +8776,7 @@ Qualsiasi termine del dizionario Dictionary_icd_9_codes parole chiave, basato su
 
 ## <a name="ip-address"></a>Indirizzo IP
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 #### <a name="ipv4"></a>IPv4:
 Modello complesso che rappresenta le versioni formattate (punti) e non formattate (senza punti) degli indirizzi IPv4
@@ -8693,7 +8784,7 @@ Modello complesso che rappresenta le versioni formattate (punti) e non formattat
 #### <a name="ipv6"></a>IPv6:
 Modello complesso che rappresenta i numeri IPv6 formattati (che includono i due punti)
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 ### <a name="checksum"></a>Checksum
 
@@ -8749,11 +8840,11 @@ Per IPv6, un criterio DLP ha una probabilità elevata di aver rilevato questo ti
 
 ## <a name="ireland-drivers-license-number"></a>Numero di patente di guida in Irlanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Sei cifre seguite da quattro lettere
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Sei cifre e quattro lettere:
   
@@ -8915,11 +9006,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="ireland-passport-number"></a>Numero di passaporto dell'Irlanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Due lettere o cifre seguite da sette cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Due lettere o cifre seguite da sette cifre:
   
@@ -8998,7 +9089,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="ireland-personal-public-service-pps-number"></a>Numero del servizio pubblico personale (PPS) dell'Irlanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Formato precedente (fino al 31 dicembre 2012):
 - sette cifre seguite da 1-2 lettere 
@@ -9006,7 +9097,7 @@ Formato precedente (fino al 31 dicembre 2012):
 Nuovo formato (1 gennaio 2013 e dopo):
 - sette cifre seguite da due lettere
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Formato precedente (fino al 31 dicembre 2012):
 - sette cifre 
@@ -9095,11 +9186,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="israel-bank-account-number"></a>Numero di conto corrente bancario Israele
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Formattato:
 - due cifre 
@@ -9144,11 +9235,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="israel-national-identification-number"></a>Numero di identificazione nazionale Israele
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre consecutive
 
@@ -9201,11 +9292,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 una combinazione di 10 lettere e cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 una combinazione di 10 lettere e cifre:
 - una lettera (senza distinzione tra maiuscole e minuscole) 
@@ -9376,11 +9467,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 una combinazione di 16 caratteri di lettere e cifre nel modello specificato
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Una combinazione di 16 caratteri di lettere e cifre:
 - tre lettere che corrispondono alle prime tre consonanti nel nome della famiglia
@@ -9457,11 +9548,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="italy-passport-number"></a>Numero di passaporto italiano
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere o cifre seguite da sette cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 due lettere o cifre seguite da sette cifre:
   
@@ -9546,11 +9637,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Motivo alfanumerico a 13 caratteri con delimitatori facoltativi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Motivo alfanumerico a 13 caratteri con delimitatori facoltativi:
 
@@ -9598,11 +9689,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="japan-bank-account-number"></a>Numero di conto corrente bancario giappone
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 sette o otto cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 numero di conto corrente bancario:
 - sette o otto cifre
@@ -9701,11 +9792,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="japan-drivers-license-number"></a>Numero di patente di guida giapponese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 12 cifre consecutive
 
@@ -9778,11 +9869,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Numero a 13 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Numero a 13 cifre:
 
@@ -9839,11 +9930,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Numero a 12 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Numero a 12 cifre:
 
@@ -9897,11 +9988,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
    
 ## <a name="japan-passport-number"></a>Numero di passaporto giappone
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere seguite da sette cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 due lettere (senza distinzione tra maiuscole e minuscole) seguite da sette cifre
 
@@ -9947,11 +10038,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="japan-residence-card-number"></a>Numero di carta di residenza giappone
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 lettere e cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 12 lettere e cifre:
 - due lettere (senza distinzione tra maiuscole e minuscole)
@@ -9991,11 +10082,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="japan-resident-registration-number"></a>Numero di registrazione residente in Giappone
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre consecutive
 
@@ -10037,11 +10128,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="japan-social-insurance-number-sin"></a>Giappone - Numero di previdenza sociale (SIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 7-12 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 7-12 cifre:
 - quattro cifre 
@@ -10103,11 +10194,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="latvia-drivers-license-number"></a>Numero di patente lettone
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 tre lettere seguite da sei cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 tre lettere e sei cifre:
   
@@ -10269,11 +10360,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="latvia-personal-code"></a>Codice personale Lettone
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre e un trattino facoltativo
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Formato precedente
 
@@ -10400,11 +10491,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="latvia-passport-number"></a>Numero di passaporto lettone
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere o cifre seguite da sette cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 due lettere o cifre seguite da sette cifre:
   
@@ -10482,11 +10573,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="lithuania-drivers-license-number"></a>Numero di patente di guida lituania
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre 
   
@@ -10651,11 +10742,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre senza spazi e delimitatori:
   
@@ -10733,11 +10824,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="lithuania-passport-number"></a>Numero di passaporto lituania
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre o lettere senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre o lettere (senza distinzione tra maiuscole e minuscole)
   
@@ -10809,11 +10900,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="luxemburg-drivers-license-number"></a>Numero di patente di guida di Luxemburg
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 sei cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 sei cifre 
   
@@ -10977,11 +11068,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 13 cifre:
   
@@ -11046,11 +11137,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="luxemburg-passport-number"></a>Numero di passaporto di Luxemburg
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre o lettere senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre o lettere (senza distinzione tra maiuscole e minuscole)
   
@@ -11133,11 +11224,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numero di identificazione nazionale di Luxemburg (persone non naturali)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre
   
@@ -11225,11 +11316,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="malaysia-identification-card-number"></a>Numero di carta di identità malese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 cifre contenenti lineette facoltative
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 12 cifre:
 - sei cifre nel formato AAMMDD, ovvero la data di nascita 
@@ -11291,11 +11382,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 ## <a name="malta-drivers-license-number"></a>Numero di patente di guida di Malta
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Combinazione di due caratteri e sei cifre nel formato specificato
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 combinazione di due caratteri e sei cifre:
   
@@ -11466,11 +11557,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 sette cifre seguite da una lettera
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 sette cifre seguite da una lettera:
   
@@ -11525,11 +11616,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="malta-passport-number"></a>Numero di passaporto di Malta
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 sette cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 sette cifre 
   
@@ -11598,7 +11689,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="malta-tax-identification-number"></a>Numero di identificazione fiscale di Malta
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Per i cittadini maltesi:
 - sette cifre e una lettera nello schema specificato
@@ -11606,7 +11697,7 @@ Per i cittadini maltesi:
 Nazionali non maltesi ed entità maltesi:
 - nove cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Nazionali maltesi: sette cifre e una lettera
   
@@ -11685,13 +11776,139 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - numero di identità univoco
 - uniqueidentityno #
 
+
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>Carta MBI (Medicare Beneficiary Identifier)
+
+### <a name="format"></a>Formato
+
+formato alfanumerico di undici caratteri
+  
+### <a name="pattern"></a>Criterio
+
+- una cifra compresa tra 1 e 9
+- una lettera esclusa S, L, O, I, B, Z
+- una cifra o una lettera esclusa S, L, O, I, B, Z
+- una cifra
+- un trattino facoltativo
+- una lettera esclusa S, L, O, I, B, Z
+- una cifra o una lettera esclusa S, L, O, I, B, Z
+- una cifra
+- un trattino facoltativo
+- due lettere escluse S, L, O, I, B, Z
+- due cifre
+    
+### <a name="checksum"></a>Checksum
+
+No
+  
+### <a name="definition"></a>Definizione
+
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_mbi_card` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keyword_mbi_card` chiave from. 
+    
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_mbi_card` regolare trova contenuto che corrisponde al modello. 
+    
+```xml
+    <!-- Medicare Beneficiary Identifier (MBI) card -->
+      <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_mbi_card" />
+          <Match idRef="Keyword_mbi_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_mbi_card" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keyword_mbi_card"></a>Keyword_mbi_card
+
+- mbi
+- mbi #
+- medicare beneficiario #
+- identificatore del beneficiario medicare
+- medicare beneficiario no
+- medicare numero beneficiario
+- medicare beneficiario #
+
+
+## <a name="mexico-unique-population-registry-code-curp"></a>Codice CURP (Unique Population Registry Code) del Messico
+
+### <a name="format"></a>Formato
+
+Motivo alfanumerico a 18 caratteri
+  
+### <a name="pattern"></a>Criterio
+
+- quattro lettere (senza distinzione tra maiuscole e minuscole)
+- sei cifre che indicano una data valida
+- una lettera - H/h o M/m
+- due lettere che indicano un codice di stato messicano valido
+- tre lettere
+- una lettera o una cifra
+- una cifra
+    
+### <a name="checksum"></a>Checksum
+
+No
+  
+### <a name="definition"></a>Definizione
+
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_mexico_population_registry_code` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keyword_mexico_population_registry_code` chiave from. 
+    
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_mexico_population_registry_code` trova contenuto che corrisponde al modello. 
+    
+```xml
+    <!-- Mexico Unique Population Registry Code (CURP) -->
+      <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+          <Match idRef="Keyword_mexico_population_registry_code" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keyword_mexico_population_registry_code"></a>Keyword_mexico_population_registry_code
+
+- Clave Única de Registro de Población
+- Clave Unica de Registro de Poblacion
+- Codice del Registro di sistema del popolamento univoco 
+- codice di popolazione univoco
+- CURP
+- ID personale
+- ID univoco
+- personalid
+- personalidnumber
+- uniqueidkey
+- uniqueidnumber
+- clave única
+- clave unica
+- clave personal Identidad
+- personal Identidad Clave
+- ClaveÚnica
+- claveunica
+- clavepersonalIdentidad
+
+
 ## <a name="netherlands-citizens-service-bsn-number"></a>Numero BSN (Netherlands citizen's service)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto o nove cifre contenenti spazi facoltativi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto-nove cifre:
 - tre cifre 
@@ -11749,11 +11966,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 ## <a name="netherlands-drivers-license-number"></a>Numero di patente olandese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 dieci cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 dieci cifre
   
@@ -11916,11 +12133,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="netherlands-passport-number"></a>Numero di passaporto olandese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove lettere o cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove lettere o cifre
   
@@ -11990,11 +12207,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre 
   
@@ -12073,11 +12290,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Motivo alfanumerico a 14 caratteri
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Motivo alfanumerico a 14 caratteri:
 
@@ -12135,11 +12352,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Formato da 14 a 16 cifre con delimitatore facoltativo
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Motivo da 14 a 16 cifre con delimitatore facoltativo:
 
@@ -12197,11 +12414,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 schema alfanumerico a otto caratteri
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 schema alfanumerico a otto caratteri
 
@@ -12312,11 +12529,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto o nove cifre con delimitatori facoltativi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto o nove cifre con delimitatori facoltativi
 
@@ -12366,11 +12583,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="new-zealand-ministry-of-health-number"></a>Numero del ministero della sanità della Nuova Zelanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 tre lettere, uno spazio (facoltativo) e quattro cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - tre lettere (senza distinzione tra maiuscole e minuscole) tranne "I" e "O"
 - uno spazio (facoltativo) 
@@ -12429,11 +12646,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre
 
@@ -12483,11 +12700,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
    
 ## <a name="norway-identification-number"></a>Numero di identificazione norvegia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre:
 - sei cifre nel formato DDMMYY che rappresentano la data di nascita 
@@ -12537,11 +12754,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>Numero di identificazione multivalore unificato delle Filippine
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 cifre separate da dei segni meno
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 12 cifre:
 - quattro cifre 
@@ -12581,11 +12798,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="poland-drivers-license-number"></a>Numero di patente di guida polonia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 14 cifre contenenti due barre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 14 cifre e due barre:
   
@@ -12749,11 +12966,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="poland-identity-card"></a>Carta di identità polonia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 tre lettere e sei cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 tre lettere (senza distinzione tra maiuscole e minuscole) seguite da sei cifre
 
@@ -12790,14 +13007,15 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - Dowód Tożsamości
 - dow. os.
 
+
    
 ## <a name="poland-national-id-pesel"></a>ID nazionale Polonia (PESEL)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - sei cifre che rappresentano la data di nascita nel formato AAMMDD
 - quattro cifre
@@ -12849,11 +13067,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ## <a name="poland-passport-number"></a>Numero di passaporto polonia
 Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di passaporto UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere e sette cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Due lettere (senza distinzione tra maiuscole e minuscole) seguite da sette cifre
 
@@ -12942,11 +13160,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Numero a 9 o 14 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 numero a nove cifre o a 14 cifre:
 
@@ -13008,11 +13226,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre
   
@@ -13072,11 +13290,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 ## <a name="portugal-citizen-card-number"></a>Numero di carta di cittadinanza portoghese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre
 
@@ -13125,11 +13343,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 ## <a name="portugal-drivers-license-number"></a>Numero di patente di guida portoghese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due modelli - due lettere seguite da 5-8 cifre con caratteri speciali
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Modello 1: due lettere seguite da 5/6 con caratteri speciali:
 - Due lettere (senza distinzione tra maiuscole e minuscole)
@@ -13308,11 +13526,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="portugal-passport-number"></a>Numero di passaporto portoghese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 una lettera seguita da sei cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 una lettera seguita da sei cifre:
   
@@ -13394,11 +13612,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="portugal-tax-identification-number"></a>Numero di identificazione fiscale del Portogallo
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre con spazi facoltativi
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - tre cifre
 - uno spazio facoltativo
@@ -13462,11 +13680,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="romania-drivers-license-number"></a>Numero di patente di guida romania
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 un carattere seguito da otto cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 un carattere seguito da otto cifre:
 - una lettera (senza distinzione tra maiuscole e minuscole) o una cifra 
@@ -13636,11 +13854,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - una cifra da 1 a 9
 - sei cifre che rappresentano la data di nascita (AAMMDD)
@@ -13728,11 +13946,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="romania-passport-number"></a>Numero di passaporto romania
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto o nove cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto o nove cifre
   
@@ -13808,11 +14026,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Numero a 10 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Numero a 10 cifre:
 
@@ -13870,11 +14088,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 numero a nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 numero a nove cifre:
 
@@ -13924,11 +14142,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="saudi-arabia-national-id"></a>Arabia Saudita - Identificativo nazionale
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre consecutive
 
@@ -13966,11 +14184,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Numero NRIC (National Registration Identity Card) di Singapore
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove lettere e cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - nove lettere e cifre:
 - la lettera "F", "G", "S" o "T" (senza distinzione tra maiuscole e minuscole) 
@@ -14020,11 +14238,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="slovakia-drivers-license-number"></a>Numero di patente di guida slovacchia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 un carattere seguito da sette cifre
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 un carattere seguito da sette cifre
   
@@ -14193,11 +14411,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove o dieci cifre contenenti barra rovesciata facoltativa
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - sei cifre che rappresentano la data di nascita
 - barra facoltativa (/)
@@ -14282,11 +14500,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="slovakia-passport-number"></a>Numero di passaporto slovacchia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 una cifra o una lettera seguita da sette cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 una cifra o una lettera (senza distinzione tra maiuscole e minuscole) seguita da sette cifre
   
@@ -14360,11 +14578,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="slovenia-drivers-license-number"></a>Numero di patente di guida slovena
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre
   
@@ -14531,11 +14749,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 13 cifre nel modello specificato:
   
@@ -14602,11 +14820,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="slovenia-passport-number"></a>Numero di passaporto slovenia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere seguite da sette cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 due lettere seguite da sette cifre:
   
@@ -14691,11 +14909,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - una cifra da 1 a 9
 - sei cifre
@@ -14756,11 +14974,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="south-africa-identification-number"></a>Numero di identificazione sudafricano
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 cifre che possono contenere spazi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 13 cifre:
 - sei cifre nel formato AAMMDD, ovvero la data di nascita 
@@ -14800,11 +15018,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
    
 ## <a name="south-korea-resident-registration-number"></a>South Korea resident registration number
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 cifre contenenti un segno meno
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 13 cifre:
 - sei cifre nel formato AAMMDD, ovvero la data di nascita 
@@ -14854,11 +15072,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="spain-drivers-license-number"></a>Numero di patente di guida in Spagna
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre seguite da un carattere
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre seguite da un carattere:
   
@@ -15051,11 +15269,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre seguite da un carattere
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 sette cifre seguite da un carattere
   
@@ -15125,11 +15343,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="spain-passport-number"></a>Numero di passaporto spagnolo
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 una combinazione di otto o nove caratteri di lettere e numeri senza spazi o delimitatori
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 una combinazione di otto o nove caratteri di lettere e numeri:
   
@@ -15215,11 +15433,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ## <a name="spain-social-security-number-ssn"></a>Spagna - Numero di previdenza sociale (SSN)
 
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11-12 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11-12 cifre:
 - due cifre 
@@ -15275,11 +15493,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 sette o otto cifre e una o due lettere nel modello specificato
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Spagnolo Natural Persons with a Spain National Identity Card:
   
@@ -15379,11 +15597,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="sql-server-connection-string"></a>SQL Server stringa di connessione
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 La stringa "User Id", "User ID", "uid" o "UserId" seguita dai caratteri e dalle stringhe descritti nel modello seguente.
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 - la stringa "User Id", "User ID", "uid" o "UserId"
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
@@ -15455,11 +15673,11 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="sweden-drivers-license-number"></a>Numero di patente di guida in Svezia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 dieci cifre contenenti un trattino
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 dieci cifre contenenti un trattino:
   
@@ -15630,11 +15848,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="sweden-national-id"></a>Svezia - ID nazionale
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 o 12 cifre e un delimitatore facoltativo
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 o 12 cifre e un delimitatore facoltativo:
 - due cifre (facoltativo) 
@@ -15694,11 +15912,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="sweden-passport-number"></a>Svezia - numero di passaporto
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 otto cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 otto cifre consecutive
 
@@ -15793,11 +16011,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre e un simbolo nel motivo specificato
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre e un simbolo:
   
@@ -15869,11 +16087,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="swift-code"></a>Codice SWIFT
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 quattro lettere seguite da 5-31 lettere o cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 quattro lettere seguite da 5-31 lettere o cifre:
 - Codice bancario di quattro lettere (senza distinzione tra maiuscole e minuscole) 
@@ -15948,11 +16166,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Numero a 13 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Numero a 13 cifre:
 
@@ -16016,11 +16234,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="taiwan-national-identification-number"></a>Taiwan - Numero di identificazione nazionale
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 una lettera (in inglese) seguita da nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 una lettera (in inglese) seguita da nove cifre:
 - una lettera (in inglese, senza distinzione tra maiuscole e minuscole) 
@@ -16076,12 +16294,12 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="taiwan-passport-number"></a>Numero di passaporto taiwanese
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 - Numero di passaporto biometrico: nove cifre
 - numero di passaporto non biometrico: nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 numero di passaporto biometrico:
 - il carattere "3" 
 - otto cifre
@@ -16125,11 +16343,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Numero di certificato residente a Taiwan (ARC/TARC)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 lettere e cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 lettere e cifre:
 - due lettere (senza distinzione tra maiuscole e minuscole) 
@@ -16175,11 +16393,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="thai-population-identification-code"></a>Codice di identificazione della popolazione thai
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 13 cifre:
 - la prima cifra non è zero o nove 
@@ -16216,7 +16434,6 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 #### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
 - Numero ID
-
 - Numero di identificazione
 - บัตรประชาชน
 - รหัสบัตรประชาชน
@@ -16225,11 +16442,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
   
 ## <a name="turkish-national-identification-number"></a>Numero di identificazione nazionale turco
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 11 cifre
 
@@ -16270,11 +16487,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="uk-drivers-license-number"></a>Regno Unito numero di patente di guida
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Combinazione di 18 lettere e numeri nel formato specificato
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 18 lettere e cifre:
 - Cinque lettere (senza distinzione tra maiuscole e minuscole) o la cifra "9" al posto di una lettera. 
@@ -16437,11 +16654,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
    
 ## <a name="uk-electoral-roll-number"></a>Regno Unito numero di rullino elettorale
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 due lettere seguite da 1-4 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 due lettere (senza distinzione tra maiuscole e minuscole) seguite da 1-4 numeri
 
@@ -16479,11 +16696,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="uk-national-health-service-number"></a>Regno Unito numero del servizio sanitario nazionale
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10-17 cifre separate da spazi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10-17 cifre:
 - 3 o 10 cifre 
@@ -16547,11 +16764,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ## <a name="uk-national-insurance-number-nino"></a>Regno Unito national insurance number (NINO)
 Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFICAZIONE NAZIONALE UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 sette o nove caratteri separati da spazi o trattini
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 due modelli possibili:
 
@@ -16630,12 +16847,12 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 cifre senza spazi e delimitatori
  
   
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 10 cifre
   
@@ -16683,11 +16900,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="us-bank-account-number"></a>Numero di conto corrente bancario statunitense
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 6-17 cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 6-17 cifre consecutive
 
@@ -16745,11 +16962,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="us-drivers-license-number"></a>Numero di patente di guida statunitense
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Varia in base allo stato
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 dipende dallo stato, ad esempio New York:
 - le nove cifre formattate come ddd ddd ddd corrisponderanno.
@@ -16897,11 +17114,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>Numero di identificazione del singolo contribuente statunitense (ITIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre che iniziano con "9" e contengono "7" o "8" come quarta cifra, facoltativamente formattate con spazi o trattini
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 formattato:
 - la cifra "9" 
@@ -16975,14 +17192,14 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="us-social-security-number-ssn"></a>Numero di previdenza sociale statunitense (SSN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre, che possono essere formattate o non formattate
 
 > [!NOTE]
 > Se emesso prima della metà del 2011, un SSN ha una formattazione solida in cui alcune parti del numero devono rientrare in determinati intervalli per essere valide (ma non è presente alcun checksum).
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Quattro funzioni ricercano i nomi SSN in quattro modelli diversi:
 - Func_ssn trova SSN con formattazione forte precedente alla 2011 formattata con trattini o spazi (ddd-dd-dddd OR ddd ddddd)
@@ -17055,11 +17272,11 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
    
 ## <a name="us--uk-passport-number"></a>Stati Uniti / Regno Unito passport number
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre consecutive
 
@@ -17128,11 +17345,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 nove cifre
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 nove cifre
 
@@ -17176,11 +17393,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - gestione dei record
 - Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 schema alfanumerico a otto caratteri
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Schema alfanumerico a otto caratteri:
 - due lettere o cifre

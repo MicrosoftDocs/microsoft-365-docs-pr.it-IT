@@ -13,17 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Gli amministratori possono configurare un connettore dati per importare i dati dal sistema di badging fisico dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare questi dati nei criteri di gestione dei rischi insider per rilevare l'accesso agli edifici fisici da parte di utenti specifici che potrebbero indicare una possibile minaccia interna all'organizzazione.
-ms.openlocfilehash: c07dfcbefa338f7499f2c45f595bf2ccda6387fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Gli amministratori possono configurare un connettore dati per importare i dati dal sistema di badging fisico dell'organizzazione Microsoft 365. In questo modo è possibile utilizzare questi dati nei criteri di gestione dei rischi insider per rilevare l'accesso agli edifici fisici da parte di utenti specifici che potrebbero indicare una possibile minaccia interna all'organizzazione.
+ms.openlocfilehash: a300107af1d3fe07f208f7e3f239f75a9cd6e5af
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911366"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994827"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurare un connettore per importare dati fisici di badging (anteprima)
 
-È possibile configurare un connettore di dati nel Centro conformità Microsoft 365 per importare i dati fisici di badging, ad esempio gli eventi di accesso fisico non elaborato dei dipendenti o eventuali allarmi di accesso fisico generati dal sistema di badging dell'organizzazione. Esempi di punti di accesso fisici sono una voce a un edificio o una voce alla sala server o al data center. I dati di badging fisico possono essere [](insider-risk-management.md) utilizzati dalla soluzione di gestione dei rischi insider di Microsoft 365 per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione.
+È possibile configurare un connettore di dati nel Centro conformità di Microsoft 365 per importare i dati fisici di badging, ad esempio gli eventi di accesso fisico non elaborato dei dipendenti o eventuali allarmi di accesso fisico generati dal sistema di badging dell'organizzazione. Esempi di punti di accesso fisici sono una voce a un edificio o una voce alla sala server o al data center. I dati di badging fisico possono essere utilizzati dalla soluzione di gestione dei rischi insider Microsoft 365 [insider](insider-risk-management.md) per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione.
 
 La configurazione di un connettore di badging fisico è costituita dalle attività seguenti:
 
@@ -31,7 +31,7 @@ La configurazione di un connettore di badging fisico è costituita dalle attivit
 
 - Creazione del payload JSON con uno schema definito dal connettore dati di badging fisico.
 
-- Creazione di un connettore dati di badging fisico nel Centro conformità Microsoft 365.
+- Creazione di un connettore dati di badging fisico nel Centro Microsoft 365 conformità.
 
 - Esecuzione di uno script per il push dei dati fisici non validi nell'endpoint API.
 
@@ -55,7 +55,7 @@ Il primo passaggio consiste nel creare e registrare una nuova app in Azure Activ
 
 - ID tenant (denominato anche *ID directory)*
 
-Per istruzioni dettagliate sulla creazione di un'app in Azure AD, vedi [Registrare un'applicazione con la piattaforma di identità Microsoft.](/azure/active-directory/develop/quickstart-register-app)
+Per istruzioni dettagliate sulla creazione di un'app in Azure AD, vedi [Registrare un'applicazione con](/azure/active-directory/develop/quickstart-register-app)il Microsoft Identity Platform .
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>Passaggio 2: Preparare un file JSON con dati fisici non validi
 
@@ -63,13 +63,13 @@ Il passaggio successivo consiste nel creare un file JSON contenente informazioni
 
 Il file JSON deve essere conforme alla definizione dello schema richiesta dal connettore. Ecco le descrizioni delle proprietà dello schema necessarie per il file JSON:
 
-| Proprietà | Descrizione | Tipo di dati |
-|:-----------|:--------------|:------------|
-|UserId|Un dipendente può avere più identità digitali nei sistemi. L'input deve avere l'ID di Azure AD già risolto dal sistema di origine. |UPN o indirizzo di posta elettronica|
-|AssetId|ID di riferimento dell'asset fisico o del punto di accesso fisico.| Stringa alfanumerica|
+|Proprietà|Descrizione|Tipo di dati|
+|---|---|---|
+|UserId|Un dipendente può avere più identità digitali nei sistemi. L'input deve avere l'ID di Azure AD già risolto dal sistema di origine.|UPN o indirizzo di posta elettronica|
+|AssetId|ID di riferimento dell'asset fisico o del punto di accesso fisico.|Stringa alfanumerica|
 |AssetName|Nome descrittivo dell'asset fisico o del punto di accesso fisico.|Stringa alfanumerica|
 |EventTime|Timestamp di accesso.|Data e ora in formato UTC|
-|AccessStatus|Valore di `Success` o `Failed`| Stringa|
+|AccessStatus|Valore di `Success` o `Failed`|Stringa|
 |||
 
 Ecco un esempio di file JSON conforme allo schema richiesto:
@@ -84,67 +84,68 @@ Ecco un esempio di file JSON conforme allo schema richiesto:
         "AccessStatus":"Failed",
     },
     {
-        "UserId":"pilarp@contoso.com",        
+        "UserId":"pilarp@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
-        "EventTime":"2019-07-04T02:57:49",        
+        "EventTime":"2019-07-04T02:57:49",
         "AccessStatus":"Success",
     }
 ]
 ```
+
 Puoi anche scaricare la definizione dello schema seguente per il file JSON dalla procedura guidata quando crei il connettore di badging fisico nel passaggio 3.
 
 ```text
 {
-    "title" : "Physical Badging Signals",
-    "description" : "Access signals from physical badging systems",
-    "DataType" : {
-        "description" : "Identify what is the data type for input signal",
-        "type" : "string",
-    },
-    "type" : "object",
-    "properties": {
-        "UserId" : {
-            "description" : "Unique identifier AAD Id resolved by the source system",
-            "type" : "string",
-        },
-        "AssetId": {
-            "description" : "Unique ID of the physical asset/access point",
-            "type" : "string",
-        },
-        "AssetName": {
-            "description" : "friendly name of the physical asset/access point",
-            "type" : "string",
-        },
-        "EventTime" : {
-            "description" : "timestamp of access",
-            "type" : "string",
-        },
-        "AccessStatus" : {
-            "description" : "what was the status of access attempt - Success/Failed",
-            "type" : "string",
-        },
-    }
-    "required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
+   "title" : "Physical Badging Signals",
+   "description" : "Access signals from physical badging systems",
+   "DataType" : {
+      "description" : "Identify what is the data type for input signal",
+      "type" : "string",
+   },
+   "type" : "object",
+   "properties": {
+      "UserId" : {
+         "description" : "Unique identifier AAD Id resolved by the source system",
+         "type" : "string",
+      },
+      "AssetId": {
+         "description" : "Unique ID of the physical asset/access point",
+         "type" : "string",
+      },
+      "AssetName": {
+         "description" : "friendly name of the physical asset/access point",
+         "type" : "string",
+      },
+      "EventTime" : {
+         "description" : "timestamp of access",
+         "type" : "string",
+      },
+      "AccessStatus" : {
+         "description" : "what was the status of access attempt - Success/Failed",
+         "type" : "string",
+      },
+   }
+   "required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
 }
 ```
 
 ## <a name="step-3-create-the-physical-badging-connector"></a>Passaggio 3: Creare il connettore di badging fisico
 
-Il passaggio successivo consiste nel creare un connettore di badging fisico nel Centro conformità Microsoft 365. Dopo aver eseguito lo script nel passaggio 4, il file JSON creato nel passaggio 3 verrà elaborato e inserito nell'endpoint API configurato nel passaggio 1. In questo passaggio, assicurarsi di copiare il JobId generato quando si crea il connettore. Userai JobId quando esegui lo script.
+Il passaggio successivo consiste nel creare un connettore di badging fisico nel Centro Microsoft 365 conformità. Dopo aver eseguito lo script nel passaggio 4, il file JSON creato nel passaggio 3 verrà elaborato e inserito nell'endpoint API configurato nel passaggio 1. In questo passaggio, assicurarsi di copiare il JobId generato quando si crea il connettore. Userai JobId quando esegui lo script.
 
-1. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
+1. Vai a <https://compliance.microsoft.com> e quindi fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
 
 2. Nella pagina **Connettori dati** in **Badging fisico** fare clic su **Visualizza.**
 
 3. Nella pagina **Badging fisico** fare clic su **Aggiungi connettore.**
 
 4. Nella pagina **Credenziali di autenticazione** eseguire le operazioni seguenti e quindi fare clic su **Avanti:**
-  
+
    1. Digitare o incollare l'ID applicazione Azure AD per l'app Azure creata nel passaggio 1.
-  
+
    2. Scarica lo schema di esempio per il riferimento per creare il file JSON.
-  
+
    3. Digitare un nome univoco per il connettore di badging fisico.
 
 5. Nella pagina **Revisione** rivedere le impostazioni e quindi fare clic su **Fine** per creare il connettore.
@@ -163,12 +164,12 @@ Il passaggio successivo consiste nel creare un connettore di badging fisico nel 
 
 Il passaggio successivo della configurazione di un connettore di badging fisico consiste nell'eseguire uno script che inserirà i dati di badging fisici nel file JSON (creato nel passaggio 2) nell'endpoint API creato nel passaggio 1. Forniamo uno script di esempio per il riferimento e puoi scegliere di usarlo o creare uno script personalizzato per pubblicare il file JSON nell'endpoint API.
 
-Dopo aver eseguito lo script, il file JSON contenente i dati di badging fisici viene inserito nell'organizzazione di Microsoft 365 a cui è possibile accedere dalla soluzione di gestione dei rischi insider. Ti consigliamo di pubblicare i dati fisici di badging ogni giorno. A tale scopo, automatizza il processo per generare il file JSON ogni giorno dal sistema di badging fisico e quindi pianificando lo script per il push dei dati.
+Dopo aver eseguito lo script, il file JSON contenente i dati di badging fisici viene inserito nell'organizzazione di Microsoft 365 dove è possibile accedervi dalla soluzione di gestione dei rischi insider. Ti consigliamo di pubblicare i dati fisici di badging ogni giorno. A tale scopo, automatizza il processo per generare il file JSON ogni giorno dal sistema di badging fisico e quindi pianificando lo script per il push dei dati.
 
 > [!NOTE]
 > Il numero massimo di record nel file JSON che possono essere elaborati dall'API è 50.000 record.
 
-1. Passare a [questo sito GitHub per](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) accedere allo script di esempio.
+1. Accedere a [questo GitHub per](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) accedere allo script di esempio.
 
 2. Fare clic **sul pulsante** Non elaborato per visualizzare lo script in visualizzazione testo
 
@@ -176,7 +177,7 @@ Dopo aver eseguito lo script, il file JSON contenente i dati di badging fisici v
 
 4. Modificare lo script di esempio per l'organizzazione, se necessario.
 
-5. Salvare il file di testo come Windows PowerShell di script utilizzando il suffisso del nome di file ps1. ad esempio, PhysicalBadging.ps1.
+5. Salvare il file di testo come Windows PowerShell di script utilizzando un suffisso di nome file .ps1; ad esempio, PhysicalBadging.ps1.
 
 6. Aprire un prompt dei comandi nel computer locale e passare alla directory in cui è stato salvato lo script.
 
@@ -188,13 +189,13 @@ Dopo aver eseguito lo script, il file JSON contenente i dati di badging fisici v
 
    Nella tabella seguente vengono descritti i parametri da utilizzare con questo script e i relativi valori obbligatori. Le informazioni ottenute nei passaggi precedenti vengono utilizzate nei valori per questi parametri.
 
-   | Parametro | Descrizione |
-   |:-------------|:--------------|
-   |tenantId | Questo è l'ID dell'organizzazione di Microsoft 365 ottenuta nel passaggio 1. È anche possibile ottenere il tenantId per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure AD. Viene utilizzato per identificare l'organizzazione. |
-   |appId | Questo è l'ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Viene usato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione di Microsoft 365.                    |
-   |appSecret | Questo è il segreto dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Viene utilizzato anche per l'autenticazione.                                                        |
-   |jobId | Questo è l'ID processo per il connettore di badging fisico creato nel passaggio 3. Viene usato per associare i dati fisici di badging inviati al cloud Microsoft con il connettore di badging fisico.              |
-   |JsonFilePath | Questo è il percorso del file nel computer locale (quello che stai usando per eseguire lo script) per il file JSON creato nel passaggio 2. Questo file deve seguire lo schema di esempio descritto nel passaggio 3.|
+   |Parametro|Descrizione|
+   |---|---|
+   |tenantId|Questo è l'ID dell'Microsoft 365 che hai ottenuto nel passaggio 1. È anche possibile ottenere il tenantId per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure AD. Viene utilizzato per identificare l'organizzazione.|
+   |appId|Questo è l'ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Viene usato da Azure AD per l'autenticazione quando lo script tenta di accedere all'Microsoft 365 organizzazione.|
+   |appSecret|Questo è il segreto dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Viene utilizzato anche per l'autenticazione.|
+   |jobId|Questo è l'ID processo per il connettore di badging fisico creato nel passaggio 3. Viene usato per associare i dati fisici di badging inviati al cloud Microsoft con il connettore di badging fisico.|
+   |JsonFilePath|Questo è il percorso del file nel computer locale (quello che stai usando per eseguire lo script) per il file JSON creato nel passaggio 2. Questo file deve seguire lo schema di esempio descritto nel passaggio 3.|
    |||
 
    Ecco un esempio di sintassi per lo script del connettore di badging fisico usando i valori effettivi per ogni parametro:
@@ -203,7 +204,7 @@ Dopo aver eseguito lo script, il file JSON contenente i dati di badging fisici v
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   Se il caricamento ha esito positivo, lo script visualizza il **messaggio Caricamento** completato.
+   Se il caricamento ha esito positivo, lo script visualizza il Upload **messaggio Operazione** completata.
 
    Se si dispone di più file JSON, è necessario eseguire lo script per ogni file.
 
@@ -212,9 +213,9 @@ Dopo aver eseguito lo script, il file JSON contenente i dati di badging fisici v
 
 ## <a name="step-5-monitor-the-physical-badging-connector"></a>Passaggio 5: Monitorare il connettore di badging fisico
 
-Dopo aver creato il connettore di badging fisico e aver push dei dati di badging fisici, è possibile visualizzare il connettore e caricare lo stato nel Centro conformità Microsoft 365. Se si pianifica l'esecuzione automatica dello script a intervalli regolari, è anche possibile visualizzare lo stato corrente dopo l'ultima esecuzione dello script.
+Dopo aver creato il connettore di badging fisico e aver push dei dati di badging fisici, è possibile visualizzare il connettore e caricare lo stato nel Centro Microsoft 365 conformità. Se si pianifica l'esecuzione automatica dello script a intervalli regolari, è anche possibile visualizzare lo stato corrente dopo l'ultima esecuzione dello script.
 
-1. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
+1. Vai a <https://compliance.microsoft.com> e fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
 
 2. Fare clic **sulla scheda Connettori** e quindi selezionare il connettore di badging fisico per visualizzare la pagina del riquadro a comparsa. Questa pagina contiene le proprietà e le informazioni sul connettore.
 
@@ -232,9 +233,9 @@ Se lo script non è stato eseguito nel passaggio 4, viene visualizzato un colleg
 
 Per assicurarsi che i dati di badging fisici più recenti dell'organizzazione siano disponibili per strumenti come la soluzione di gestione dei rischi insider, è consigliabile pianificare l'esecuzione automatica dello script su base ricorrente, ad esempio una volta al giorno. Ciò richiede anche di aggiornare i dati fisici di badging al file JSON in base a una pianificazione simile (se non la stessa) in modo che contenga le informazioni più recenti sui dipendenti che lasciano l'organizzazione. L'obiettivo è caricare i dati di badging fisici più correnti in modo che il connettore di badging fisico possa renderli disponibili per la soluzione di gestione dei rischi insider.
 
-Puoi usare l'app Utilità di pianificazione in Windows per eseguire automaticamente lo script ogni giorno.
+Puoi usare l'app Utilità di pianificazione Windows eseguire automaticamente lo script ogni giorno.
 
-1. Nel computer locale fare clic sul pulsante **Start** di Windows e quindi digitare **Utilità di pianificazione.**
+1. Nel computer locale fare clic sul pulsante Windows **Start** e quindi digitare **Utilità di pianificazione.**
 
 2. Fai clic **sull'app Utilità** di pianificazione per aprirla.
 

@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare Information Rights Management (IRM) in Exchange Online per l'utilizzo di un server Active Directory Rights Management Service (AD RMS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a520a3e55ae1137a0a4cc417dc68097d0793d978
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5e430f9c6ad5d377b568d22e9de53ab79d19165a
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908566"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876121"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurare IRM per l'uso di un server AD RMS locale
   
 Per l'utilizzo con le distribuzioni locali, Information Rights Management (IRM) in Exchange Online utilizza Active Directory Rights Management Services (AD RMS), una tecnologia di protezione delle informazioni in Windows Server 2008 e versioni successive. La protezione IRM viene applicata alla posta elettronica applicando un modello dei criteri dei diritti AD RMS a un messaggio di posta elettronica. I diritti sono allegati al messaggio stesso, in modo che la protezione si verifichi online e offline e all'interno e all'esterno del firewall dell'organizzazione.
   
-In questo argomento viene illustrato come configurare IRM per utilizzare un server AD RMS. Per informazioni sull'utilizzo delle nuove funzionalità per la crittografia dei messaggi di Office 365 con Azure Active Directory e Azure Rights Management, vedere domande frequenti sulla crittografia dei messaggi di [Office 365.](./ome-faq.md)
+In questo argomento viene illustrato come configurare IRM per utilizzare un server AD RMS. Per informazioni sull'uso delle nuove funzionalità per Office 365 Message Encryption con Azure Active Directory e Azure Rights Management, vedere le domande Office 365 Message Encryption [domande frequenti su Office 365 Message Encryption.](./ome-faq.yml)
   
 Per ulteriori informazioni su IRM in Exchange Online, vedere [Information Rights Management in Exchange Online](information-rights-management-in-exchange-online.md).
   
@@ -42,7 +42,7 @@ Per ulteriori informazioni su IRM in Exchange Online, vedere [Information Rights
 
 - Per informazioni su come installare e configurare Windows PowerShell ed eseguire la connessione al servizio, vedere [Connessione a Exchange Online tramite Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Per informazioni sui tasti di scelta rapida applicabili alle procedure descritte in questo argomento, vedere Tasti di scelta rapida per l'interfaccia di amministrazione di [Exchange in Exchange Online.](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- Per informazioni sui tasti di scelta rapida applicabili alle procedure descritte in questo argomento, vedere Tasti di scelta rapida per l'interfaccia di amministrazione di Exchange [in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Problemi? È possibile richiedere supporto nei forum di Exchange. I forum sono disponibili sui seguenti siti: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -74,7 +74,7 @@ Quando si importa il dominio di pubblicazione trusted, viene archiviato e protet
 
 6. Nelle caselle **Password** e **Conferma password**, digitare una password complessa che sarà utilizzata per crittografare il file del dominio di pubblicazione trusted. Sarà necessario specificare questa password durante l'importazione del dominio di pubblicazione trusted nell'organizzazione di posta elettronica basata su cloud. 
 
-### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>Passaggio 2: Utilizzare Exchange Management Shell per importare il disco di distribuzione di exchange in Exchange Online
+### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>Passaggio 2: utilizzare Exchange Management Shell per importare il disco di configurazione di Exchange Online
 
 Dopo aver esportato il dominio di pubblicazione trusted in un file XML, è necessario importarlo in Exchange Online. Quando viene importato un dominio di pubblicazione trusted, vengono importati anche i modelli dell'organizzazione AD RMS. Quando viene importato il primo dominio di pubblicazione trusted, diventa quello predefinito per l'organizzazione basata su cloud. Se si importa un altro dominio di pubblicazione trusted, è possibile utilizzare l'opzione **Predefinito** per fare in modo che sia quello predefinito disponibile per gli utenti. 
   
@@ -102,7 +102,7 @@ Per verificare di aver importato il dominio di pubblicazione trusted, eseguire i
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Passaggio 3: Utilizzare Exchange Management Shell per distribuire un modello di criteri per i diritti AD RMS
 
-Dopo avere importato il dominio di pubblicazione trusted, è necessario assicurarsi che sia distribuito un modello dei criteri dei diritti AD RMS. Un modello distribuito è visibile agli utenti di Outlook sul Web (in precedenza noti come Outlook Web App), che possono quindi applicare i modelli a un messaggio di posta elettronica.
+Dopo avere importato il dominio di pubblicazione trusted, è necessario assicurarsi che sia distribuito un modello dei criteri dei diritti AD RMS. Un modello distribuito è visibile Outlook sul Web (in precedenza noto come Outlook Web App), che possono quindi applicare i modelli a un messaggio di posta elettronica.
   
 Per tornare ad un elenco di tutti i modelli contenuti nel dominio di pubblicazione trusted predefinito, eseguire il comando riportato di seguito:
   
@@ -110,7 +110,7 @@ Per tornare ad un elenco di tutti i modelli contenuti nel dominio di pubblicazio
 Get-RMSTemplate -Type All | fl
 ```
 
-Se il valore del parametro  _Type_ è  `Archived`, il modello non è visibile agli utenti. Solo i modelli distribuiti nel dominio di pubblicazione siti predefinito sono disponibili in Outlook sul Web.
+Se il valore del parametro  _Type_ è  `Archived`, il modello non è visibile agli utenti. Solo i modelli distribuiti nel dominio di pubblicazione Outlook sul Web.
   
 Per distribuire un modello, eseguire il comando riportato di seguito:
   
@@ -168,4 +168,4 @@ Per verificare di aver importato il dominio di pubblicazione trusted e abilitato
   
 - Utilizzare il cmdlet **Test-IRMConfiguration** per verificare la funzionalità IRM. Per informazioni dettagliate, vedere "Esempio 1" in [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-- Comporre un nuovo messaggio in Outlook sul Web e  proteggerlo tramite IRM selezionando l'opzione Imposta autorizzazioni dal menu esteso ( ![ Icona Altre opzioni ](../media/ITPro-EAC-MoreOptionsIcon.gif) ).
+- Comporre un nuovo messaggio in Outlook sul Web e proteggerlo  tramite IRM selezionando l'opzione Imposta autorizzazioni dal menu esteso ( ![ Icona Altre opzioni ](../media/ITPro-EAC-MoreOptionsIcon.gif) ).

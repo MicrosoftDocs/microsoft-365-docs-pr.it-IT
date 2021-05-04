@@ -1,5 +1,5 @@
 ---
-title: Configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita dei dati (anteprima)
+title: Configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita di dati
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,23 +19,25 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come definire e gestire gli avvisi per i criteri DLP.
-ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Informazioni su come definire e gestire gli avvisi per i criteri di prevenzione della perdita di dati.
+ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917862"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750038"
 ---
-# <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>Configurare e visualizzare gli avvisi per i criteri DLP (anteprima)
+# <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita di dati
 
-In questo articolo viene illustrato come definire criteri di avviso rtf collegati ai criteri di prevenzione della perdita dei dati (DLP). Verrà illustrato come utilizzare il nuovo dashboard di gestione degli avvisi DLP nel Centro conformità [Microsoft 365](https://compliance.microsoft.com/) per visualizzare avvisi, eventi e metadati associati per le violazioni dei criteri DLP.
+I criteri di prevenzione della perdita dei dati (DLP) possono intraprendere azioni di protezione per impedire la condivisione involontaria di elementi sensibili. Quando viene eseguita un'azione su un elemento sensibile, è possibile ricevere una notifica configurando gli avvisi per DLP. In questo articolo viene illustrato come definire criteri di avviso rtf collegati ai criteri di prevenzione della perdita dei dati (DLP). Vedrai come usare il nuovo dashboard di [](https://compliance.microsoft.com/) gestione degli avvisi DLP nel Centro conformità Microsoft 365 per visualizzare gli avvisi, gli eventi e i metadati associati per le violazioni dei criteri DLP.
+
+<!-- LEFT OFF HERE-->
 
 ## <a name="features"></a>Funzionalità
 
-Le funzionalità seguenti fanno parte di questa anteprima:
+Di seguito sono riportate le funzionalità seguenti:
 
--   **Dashboard di gestione degli** avvisi DLP : nel Centro conformità [Microsoft 365,](https://compliance.microsoft.com/)questo dashboard mostra gli avvisi per i criteri DLP applicati ai carichi di lavoro seguenti:
+-   **Dashboard di gestione degli** avvisi DLP : nel Centro conformità Microsoft 365 [,](https://compliance.microsoft.com/)questo dashboard mostra gli avvisi per i criteri DLP applicati ai carichi di lavoro seguenti:
 
     -   Exchange
     -   SharePoint
@@ -54,9 +56,9 @@ Prima di iniziare, verificare di disporre dei prerequisiti necessari:
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Gestione delle licenze per il dashboard di gestione degli avvisi DLP
 
-Tutti i tenant idonei per la prevenzione della perdita dei dati di Office 365 possono accedere al nuovo dashboard di gestione degli avvisi DLP. To get started, you should be eligible for Office 365 DLP for Exchange Online, SharePoint Online, and OneDrive for Business. Per ulteriori informazioni sui requisiti di licenza per la prevenzione della perdita dei dati di Office 365, vedere Quali licenze forniscono a un utente i diritti a [beneficiare del servizio?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+Tutti i tenant idonei per Office 365 DLP possono accedere al nuovo dashboard di gestione degli avvisi DLP. To get started, you should be eligible for Office 365 DLP for Exchange Online, SharePoint Online, and OneDrive for Business. Per ulteriori informazioni sui requisiti di licenza per Office 365 DLP, vedere Quali licenze forniscono a un utente i diritti a [beneficiare del servizio?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-I clienti che partecipano [all'anteprima](./endpoint-dlp-learn-about.md?view=o365-worldwide) pubblica dlp degli endpoint o che sono idonei per DLP di [Teams](./dlp-microsoft-teams.md?view=o365-worldwide) visualizzano gli avvisi dei criteri DLP degli endpoint e gli avvisi dei criteri DLP di Teams nel dashboard di gestione degli avvisi DLP.
+I clienti che usano [Endpoint DLP](endpoint-dlp-learn-about.md) idonei per [Teams DLP](dlp-microsoft-teams.md) visualizzano gli avvisi dei criteri DLP degli endpoint e Teams gli avvisi dei criteri DLP nel dashboard di gestione degli avvisi DLP.
 
 ### <a name="licensing-for-alert-configuration-options"></a>Licenze per le opzioni di configurazione degli avvisi
 
@@ -66,13 +68,13 @@ I clienti che partecipano [all'anteprima](./endpoint-dlp-learn-about.md?view=o36
     -   Una sottoscrizione E1, F1 o G1 o una sottoscrizione E3 o G3 che include una delle funzionalità seguenti:
         -   Office 365 Advanced Threat Protection (Piano 2)
         -   Conformità Microsoft 365 E5
-        -   Licenza del componente aggiuntivo eDiscovery e controllo di Microsoft 365
+        -   Microsoft 365 licenza del componente aggiuntivo eDiscovery e controllo
 
 ### <a name="roles"></a>Ruoli
 
 Se si desidera visualizzare il dashboard di gestione degli avvisi DLP o modificare le opzioni di configurazione degli avvisi in un criterio DLP, è necessario essere membri di uno di questi gruppi di ruoli:
 
--   Amministratore conformità
+-   Amministratore di conformità
 -   Amministratore dei dati di conformità
 -   Amministratore della sicurezza
 -   Operatore della sicurezza
@@ -99,7 +101,7 @@ Se si è idonei per le [opzioni](#licensing-for-alert-configuration-options)di c
 
 Per utilizzare il dashboard di gestione degli avvisi DLP:
 
-1.  Nel Centro [conformità Microsoft 365](https://www.compliance.microsoft.com)passare a **Prevenzione della perdita di dati**.
+1.  Nel Centro [Microsoft 365 conformità](https://www.compliance.microsoft.com)passare a Prevenzione della perdita **di dati**.
 
 2.  Selezionare la **scheda Avvisi** per visualizzare il dashboard degli avvisi DLP.
 
@@ -121,16 +123,16 @@ Per utilizzare il dashboard di gestione degli avvisi DLP:
     |  | Utente                          | Utente che ha causato la violazione DLP                                          | Tutti gli eventi                               |
     |                   | Nome host                      | Nome host del computer in cui è stata rilevata la violazione DLP              | Eventi dei dispositivi                           |
     |                   | Indirizzo IP                    | Indirizzo IP del computer                                                  | Eventi dei dispositivi                           |
-    |                   | Percorso file                     | Percorso assoluto del file coinvolto nella violazione                        | Eventi di SharePoint, OneDrive e Dispositivi |
-    |                   | Destinatari di posta elettronica              | Destinatari del messaggio di posta elettronica che ha violato il criterio DLP                       | Eventi di Exchange                          |
-    |                   | Oggetto e-mail                 | Oggetto del messaggio di posta elettronica che ha violato il criterio DLP                          | Eventi di Exchange                          |
-    |                   | Allegati di posta elettronica             | Nomi degli allegati nel messaggio di posta elettronica che hanno violato il criterio DLP         | Eventi di Exchange                          |
-    |                   | Proprietario del sito                    | Nome del proprietario del sito                                                     | Eventi di SharePoint e OneDrive           |
-    |                   | URL del sito                      | URL completo del sito di SharePoint o OneDrive                                | Eventi di SharePoint e OneDrive           |
-    |                   | File creato                  | Ora di creazione del file                                                      | Eventi di SharePoint e OneDrive           |
-    |                   | File modificato per ultima            | Ora dell'ultima modifica del file                                  | Eventi di SharePoint e OneDrive           |
-    |                   | dimensioni dei file                     | Dimensioni del file                                                           | Eventi di SharePoint e OneDrive           |
-    |                   | Proprietario del file                    | Proprietario del file                                                          | Eventi di SharePoint e OneDrive           |
+    |                   | Percorso file                     | Percorso assoluto del file coinvolto nella violazione                        | SharePoint, OneDrive e Dispositivi |
+    |                   | Destinatari di posta elettronica              | Destinatari del messaggio di posta elettronica che ha violato il criterio DLP                       | Exchange eventi                          |
+    |                   | Oggetto e-mail                 | Oggetto del messaggio di posta elettronica che ha violato il criterio DLP                          | Exchange eventi                          |
+    |                   | Allegati posta elettronica             | Nomi degli allegati nel messaggio di posta elettronica che hanno violato il criterio DLP         | Exchange eventi                          |
+    |                   | Proprietario del sito                    | Nome del proprietario del sito                                                     | SharePoint e OneDrive eventi           |
+    |                   | URL del sito                      | URL completo del SharePoint o OneDrive sito                                | SharePoint e OneDrive eventi           |
+    |                   | File creato                  | Ora di creazione del file                                                      | SharePoint e OneDrive eventi           |
+    |                   | File modificato per ultima            | Ora dell'ultima modifica del file                                  | SharePoint e OneDrive eventi           |
+    |                   | Dimensioni dei file                     | Dimensioni del file                                                           | SharePoint e OneDrive eventi           |
+    |                   | Proprietario del file                    | Proprietario del file                                                          | SharePoint e OneDrive eventi           |
     |*Dettagli criteri*||
     |     | Criteri DLP corrispondenti            | Nome del criterio DLP corrispondente                                    | Tutti gli eventi                               |
     |                   | Regola corrispondente                  | Nome della regola DLP nel criterio DLP corrispondente                    | Tutti gli eventi                               |

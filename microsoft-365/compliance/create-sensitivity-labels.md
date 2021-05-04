@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i messaggi di posta elettronica dell'organizzazione."
-ms.openlocfilehash: 34cbea7199ed50de8e65a48f8087e6475fb41a50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i dati dell'organizzazione."
+ms.openlocfilehash: c34025d2b68eb0ee179c98ce9c97a59193f782e3
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926644"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994953"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Tutte le soluzioni di Microsoft Information Protection (MIP) sono implementate utilizzando le [etichette di riservatezza](sensitivity-labels.md). Per creare e pubblicare le etichette, passare all'interfaccia di amministrazione per l’applicazione di etichette, come il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). È anche possibile utilizzare il Centro sicurezza Microsoft 365 o il Centro sicurezza e conformità.
+Tutte le soluzioni di Microsoft Information Protection (MIP) sono implementate utilizzando le [etichette di riservatezza](sensitivity-labels.md). Per creare e pubblicare le etichette, passare al [Centro conformità Microsoft 365](https://compliance.microsoft.com/). È anche possibile usare il portale precedente, ovvero il Centro sicurezza e conformità di Office 365.
 
 Prima di tutto, creare e configurare le etichette di riservatezza che si vogliono rendere disponibili per le app e gli altri servizi. Ad esempio, le etichette che gli utenti possono vedere e applicare dalle app di Office. 
 
@@ -46,9 +46,6 @@ L'amministratore globale dell'organizzazione dispone delle autorizzazioni comple
         - **Soluzioni** > **Information Protection)**
         
         Se questa opzione non è immediatamente visibile, selezionare prima **Mostra tutto**. 
-    
-    - Centro sicurezza Microsoft 365: 
-        - **Classificazione** > **Etichette di riservatezza**
     
     - Centro sicurezza e conformità:
         - **Classificazione** > **Etichette di riservatezza**
@@ -144,9 +141,6 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         
         Se questa opzione non è immediatamente visibile, selezionare prima **Mostra tutto**. 
     
-    - Centro sicurezza Microsoft 365: 
-        - **Classificazione** > **Etichette di riservatezza**
-    
     - Centro sicurezza e conformità:
         - **Classificazione** > **Etichette di riservatezza**
 
@@ -192,7 +186,7 @@ Quando si usa l’etichettatura predefinita per le app di Office in Windows, mac
 
 Con il cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) di [PowerShell per Centro sicurezza e conformità](/powershell/exchange/scc-powershell) sono disponibili altre impostazioni per i criteri delle etichette.
 
-Solo per il client di etichettatura unificata di Azure Information Protection, è possibile specificare [impostazioni avanzate](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) che includono l'impostazione di un'etichetta predefinita diversa per Outlook e l'implementazione di messaggi popup in Outlook che segnalano, giustificano o bloccano l'invio di messaggi di posta elettronica. Per l'elenco completo, vedere [Impostazioni avanzate disponibili per i criteri delle etichette](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) in questa guida per gli amministratori del client.
+Il client di etichettatura unificata di Azure Information Protection supporta molte [impostazioni avanzate](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) che includono la migrazione da altre soluzioni di etichettatura e messaggi popup in Outlook che segnalano, giustificano o bloccano l'invio di messaggi di posta elettronica. Per l'elenco completo, vedere [Impostazioni avanzate disponibili per i criteri delle etichette](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) in questa guida per gli amministratori del client.
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Usare PowerShell per le etichette di riservatezza e i relativi criteri
 
@@ -225,7 +219,7 @@ Quando invece si elimina un'etichetta:
 
 - Per Office sul Web: gli utenti non possono visualizzare il nome dell'etichetta sulla barra di stato o nella colonna **Riservatezza**. Le informazioni sull'etichetta presenti nei metadati rimangono valide solo se l'etichetta non comportato l'applicazione della crittografia. Se l'etichetta ha comportato l'applicazione della crittografia e sono state abilitate [etichette di riservatezza per SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), le informazioni sull'etichetta presenti nei metadati vengono rimosse, così come la crittografia. 
 
-Quando si rimuove un'etichetta di riservatezza da un criterio di etichetta o si elimina un'etichetta di riservatezza, la replica di queste modifiche a tutti gli utenti e i servizi può richiedere fino a un'ora.
+Quando si rimuove un'etichetta di riservatezza da un criterio di etichetta o si elimina un'etichetta di riservatezza, la replica di queste modifiche a tutti gli utenti e i servizi può richiedere fino a 24 ore.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

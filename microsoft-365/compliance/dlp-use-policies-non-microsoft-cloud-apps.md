@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come usare i criteri dlp per le app cloud non Microsoft.
-ms.openlocfilehash: 6787add3ef8b2d6ded22bd05c0ff9658c4b7fbfc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4c5170cab01b1ca22701b13c7afbf4f2e0ba7da
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922082"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114134"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft (anteprima)
 
-I criteri di prevenzione della perdita dei dati (DLP) per le app cloud non Microsoft fanno parte della famiglia di funzionalità DLP di Microsoft 365; usando queste funzionalità, è possibile individuare e proteggere gli elementi sensibili nei servizi di Microsoft 365. Per ulteriori informazioni su tutte le offerte DLP di Microsoft, vedere [Overview of data loss prevention.](./data-loss-prevention-policies.md?view=o365-worldwide)
+I criteri di prevenzione della perdita dei dati (DLP) per le app cloud non Microsoft fanno parte della famiglia Microsoft 365 di funzionalità DLP. usando queste funzionalità, è possibile individuare e proteggere gli elementi sensibili tra Microsoft 365 servizi. Per ulteriori informazioni su tutte le offerte DLP di Microsoft, vedere [Informazioni sulla prevenzione della perdita dei dati.](dlp-learn-about-dlp.md)
 
 Puoi usare i criteri DLP per le app cloud non Microsoft per monitorare e rilevare quando gli elementi sensibili vengono usati e condivisi tramite app cloud non Microsoft. L'uso di questi criteri offre la visibilità e il controllo necessari per garantire che siano utilizzati e protetti correttamente e consente di evitare comportamenti rischiosi che potrebbero comprometterli.
 
@@ -37,37 +37,37 @@ Puoi usare i criteri DLP per le app cloud non Microsoft per monitorare e rilevar
 
 ### <a name="skusubscriptions-licensing"></a>Licenze per SKU/abbonamenti
 
-Prima di iniziare a usare i criteri DLP per le app cloud non Microsoft, confermare l'abbonamento [a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) e i componenti aggiuntivi. Per accedere a questa funzionalità e utilizzarla, è necessario disporre di uno di questi abbonamenti o componenti aggiuntivi:
+Prima di iniziare a usare i criteri DLP per le app cloud non Microsoft, confermare la sottoscrizione Microsoft 365 [ed](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) eventuali componenti aggiuntivi. Per accedere a questa funzionalità e utilizzarla, è necessario disporre di uno di questi abbonamenti o componenti aggiuntivi:
 
 - Microsoft 365 E5
 - Conformità Microsoft 365 E5
 - Microsoft 365 E5 Security
 
-### <a name="prepare-your-cloud-app-security-environment"></a>Preparare l'ambiente Cloud App Security
+### <a name="prepare-your-cloud-app-security-environment"></a>Preparare l'Cloud App Security locale
 
-I criteri DLP per le app cloud non Microsoft usano le funzionalità DLP di Cloud App Security. Per usarlo, è consigliabile preparare l'ambiente Cloud App Security. Per istruzioni, vedi [Impostare azioni di visibilità, protezione e governance istantanee per le tue app.](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)
+I criteri DLP per le app cloud non Microsoft usano Cloud App Security DLP. Per usarlo, è consigliabile preparare l'Cloud App Security locale. Per istruzioni, vedi [Impostare azioni di visibilità, protezione e governance istantanee per le tue app.](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)
 
-### <a name="connect-a-non-microsoft-cloud-app"></a>Connettere un'app cloud non Microsoft
+### <a name="connect-a-non-microsoft-cloud-app"></a>Connessione un'app cloud non Microsoft
 
 Per usare i criteri DLP per una specifica app cloud non Microsoft, l'app deve essere connessa a Cloud App Security. Per informazioni, vedere:
 
-- [Connect Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
-- [Connettere Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connettere G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
-- [Connettere Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
-- [Connettere Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
+- [Connessione Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
+- [Connessione Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
+- [Connessione G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [Connessione Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
+- [Connessione Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
-Dopo aver connesso le app cloud a Cloud App Security, puoi creare i criteri DLP di Microsoft 365 per loro.
+Dopo aver connesso le app cloud a Cloud App Security, è possibile creare Microsoft 365 criteri DLP per loro.
 
 >[!NOTE]
->È anche possibile usare Microsoft Cloud App Security per creare criteri DLP per le app cloud Microsoft. Tuttavia, è consigliabile usare Microsoft 365 per creare e gestire i criteri DLP per le app cloud Microsoft.
+>È anche possibile usare le Microsoft Cloud App Security per creare criteri DLP per le app cloud Microsoft. Tuttavia, è consigliabile usare Microsoft 365 per creare e gestire i criteri DLP per le app cloud Microsoft.
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>Creare un criterio DLP in un'app cloud non Microsoft
 
-Quando si seleziona un percorso per il criterio DLP, attivare il percorso **di Microsoft Cloud App Security.**
+Quando si seleziona una posizione per il criterio DLP, attivare la posizione **Microsoft Cloud App Security** locale.
 
 - Per selezionare un'app o un'istanza specifica, seleziona **Scegli istanza.**
-- Se non si seleziona un'istanza, il criterio usa tutte le app connesse nel tenant di Microsoft Cloud App Security.
+- Se non si seleziona un'istanza, il criterio usa tutte le app connesse nel tenant Microsoft Cloud App Security tenant.
 
    ![Percorsi per l'applicazione del criterio](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
 

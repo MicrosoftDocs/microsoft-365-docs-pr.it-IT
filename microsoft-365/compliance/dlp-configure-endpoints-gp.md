@@ -13,43 +13,43 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Usa Criteri di gruppo per distribuire il pacchetto di configurazione nei dispositivi Windows 10 in modo che siano onboarded nel servizio.
-ms.openlocfilehash: b786d011a46f69e7bcac846e726e2aeb3031ae08
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Usa Criteri di gruppo per distribuire il pacchetto di configurazione Windows 10 dispositivi in modo che siano onboarded nel servizio.
+ms.openlocfilehash: 284de5169324b6da4038cfe0b50b2f2ffa40e3fd
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918022"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893287"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Onboardare dispositivi Windows 10 con Criteri di gruppo 
+# <a name="onboard-windows-10-devices-using-group-policy"></a>Onboardare Windows 10 dispositivi con Criteri di gruppo 
 
 **Si applica a:**
 
-- [Prevenzione della perdita dei dati di Microsoft 365 Endpoint (DLP)](./endpoint-dlp-learn-about.md)
+- [Microsoft 365 Prevenzione della perdita dei dati degli endpoint (DLP)](./endpoint-dlp-learn-about.md)
 - Criteri di gruppo
 
 > [!NOTE]
-> Per usare gli aggiornamenti di Criteri di gruppo per distribuire il pacchetto, devi essere in Windows Server 2008 R2 o versione successiva.
+> Per utilizzare gli aggiornamenti di Criteri di gruppo per distribuire il pacchetto, è necessario essere in Windows Server 2008 R2 o versione successiva.
 
 > Per Windows Server 2019, potrebbe essere necessario sostituire NT AUTHORITY\Well-Known-System-Account con NT AUTHORITY\SYSTEM del file XML creato dalla preferenza di Criteri di gruppo.
 
-## <a name="onboard-devices-using-group-policy"></a>Onboardare i dispositivi con Criteri di gruppo
+## <a name="onboard-devices-using-group-policy"></a>Aggiungere dispositivi con Criteri di gruppo
 
-1. Aprire il file ZIP del pacchetto di configurazione criteri *di gruppo*(DeviceComplianceOnboardingPackage.zip) scaricato dall'onboarding guidato del servizio. È anche possibile ottenere il pacchetto dal [Centro conformità Microsoft](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
+1. Aprire il file del pacchetto .zip criteri di gruppo (*DeviceComplianceOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. È anche possibile ottenere il pacchetto dal [Centro conformità Microsoft](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
 
-2. Nel riquadro di spostamento seleziona **Impostazioni**  >  **Onboarding dispositivo.**
+2. Nel riquadro di spostamento seleziona **Impostazioni**  >  **onboarding del dispositivo**.
 
 3. Nel campo **Metodo di distribuzione** selezionare Criteri di **gruppo.**
 
-4. Fai **clic su Scarica** pacchetto e salva il file ZIP.
+4. Fai **clic su Scarica pacchetto** e salva il file .zip file.
 
-5. Estrarre il contenuto del file ZIP in un percorso condiviso di sola lettura accessibile dal dispositivo. Dovresti avere una cartella denominata *OptionalParamsPolicy* e il file *DeviceComplianceLocalOnboardingScript.cmd.*
+5. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dal dispositivo. Dovresti avere una cartella denominata *OptionalParamsPolicy* e il file *DeviceComplianceLocalOnboardingScript.cmd.*
 
 6. Aprire console [Gestione Criteri di](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) gruppo, fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
 
 7. **Nell'Editor Gestione Criteri di gruppo** vai a Configurazione **computer,** quindi **Preferenze** e quindi impostazioni del Pannello **di controllo.**
 
-8. Fare clic con il **pulsante destro del mouse** su Attività pianificate, scegliere **Nuovo** e quindi Attività immediata **(almeno Windows 7).**
+8. Fare clic con **il pulsante destro del mouse** su Attività pianificate, scegliere Nuovo e quindi Fare clic su Attività immediata **(almeno Windows 7).** 
 
 9. Nella **finestra Attività** visualizzata passare alla **scheda** Generale. In **Opzioni di sicurezza** fare clic su Cambia utente o **gruppo** e digitare SISTEMA e quindi fare clic su **Controlla nomi** e quindi su **OK.** NT AUTHORITY\SYSTEM viene visualizzato come account utente con cui verrà eseguita l'attività.
 
@@ -68,13 +68,13 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 
 1. Ottenere il pacchetto di offboarding dal [Centro conformità Microsoft.](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
 
-2. Nel riquadro di spostamento seleziona **Impostazioni**  >  **//Onboarding del** dispositivo  >  **Offboarding.**
+2. Nel riquadro di spostamento, selezionare **Impostazioni**  >  **//Onboarding del** dispositivo  >  **Offboarding**.
 
 3. Nel campo **Metodo di distribuzione** selezionare Criteri di **gruppo.**
 
-4. Fai **clic su Scarica** pacchetto e salva il file ZIP.
+4. Fai **clic su Scarica pacchetto** e salva il file .zip file.
 
-5. Estrarre il contenuto del file ZIP in un percorso condiviso di sola lettura accessibile dal dispositivo. Dovresti avere un file denominato *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+5. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dal dispositivo. Dovresti avere un file denominato *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 6. Aprire console [Gestione Criteri di](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) gruppo, fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
 
@@ -107,9 +107,9 @@ Con Criteri di gruppo non è disponibile un'opzione per monitorare la distribuzi
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Onboard dei dispositivi Windows 10 con Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [Onboard Windows 10 dispositivi con Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](dlp-configure-endpoints-mdm.md)
 - [Onboarding di dispositivi Windows 10 con uno script locale](dlp-configure-endpoints-script.md)
-- [Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](dlp-configure-endpoints-vdi.md)
-- [Eseguire un test di rilevamento su un nuovo dispositivo Microsoft Defender ATP onboarded](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Risolvere i problemi di onboarding di Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Aggiungere dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](dlp-configure-endpoints-vdi.md)
+- [Eseguire un test di rilevamento su un Microsoft Defender per dispositivi endpoint appena onboarded](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Risolvere i Microsoft Defender Advanced Threat Protection di onboarding](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

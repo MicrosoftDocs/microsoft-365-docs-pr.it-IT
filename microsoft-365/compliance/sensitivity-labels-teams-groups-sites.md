@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: 501df9b167e917d79957d8b156597af67e6240af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919582"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860875"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -51,7 +51,7 @@ Prima di abilitare le etichette di riservatezza per contenitori e configurare le
 
 ![Etichetta di riservatezza visualizzata nell'app Word per desktop](../media/sensitivity-label-word.png)
 
-Dopo l'abilitazione e la configurazione delle etichette di riservatezza, gli utenti possono anche vedere e applicare etichette di riservatezza a Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint. Un esempio quando si crea un nuovo sito del team di SharePoint:
+Dopo l'abilitazione e la configurazione delle etichette di riservatezza, gli utenti possono anche vedere e applicare etichette di riservatezza a siti di Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint. Ad esempio, quando si crea un nuovo sito del team da SharePoint:
 
 ![Etichetta di riservatezza durante la creazione di un sito del team da SharePoint](../media/sensitivity-labels-new-team-site.png)
 
@@ -144,7 +144,7 @@ Come procedura consigliata, non modificare le impostazioni di sito e gruppo per 
 
 Inoltre, se le modifiche includono l'impostazione **Accesso di utenti esterni**:
 
-- La nuova impostazione si applica ai nuovi utenti, ma non agli utenti esistenti. Ad esempio, se questa impostazione è stata selezionata in precedenza e quindi gli utenti Guest hanno eseguito l'accesso al sito, tali utenti Guest possono continuare ad accedere al sito dopo aver deselezionato l'impostazione nella configurazione dell'etichetta.
+- La nuova impostazione si applica ai nuovi utenti, ma non agli utenti esistenti. Ad esempio, se questa impostazione è stata selezionata in precedenza e quindi gli utenti guest hanno eseguito l'accesso al sito, tali utenti guest possono continuare ad accedere al sito dopo aver deselezionato l'impostazione nella configurazione dell'etichetta.
 
 - Le impostazioni di privacy relative alle proprietà dei gruppi hiddenMembership e roleEnabled non vengono aggiornate.
 
@@ -239,13 +239,13 @@ Verificare di avere la versione 16.0.19418.12000 o successiva di SharePoint Onli
    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
    ```
 
-5. Eseguire il comando seguente per applicare l'etichetta a questi siti. Usare gli esempi riportati:
+5. Eseguire il comando seguente per applicare l'etichetta a questi siti. Seguendo gli esempi:
 
    ```powershell
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
    ```
 
-Per applicare etichette diverse a siti diversi, ripetere il comando seguente per ogni sito: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
+Questa serie di comandi consente di applicare a più siti del tenant la stessa etichetta di riservatezza. È per questo che si usa il cmdlet Set-SPOTenant invece del cmdlet Set-SPOSite, specifico per la configurazione per sito. Tuttavia, usare il cmdlet Set-SPOSite quando è necessario applicare un'etichetta diversa a siti specifici ripetendo il comando seguente per ognuno di questi siti: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Visualizzare e gestire le etichette di riservatezza nell'interfaccia di amministrazione di SharePoint
 
@@ -317,7 +317,7 @@ Per passare dalle vecchie classificazioni alle etichette di riservatezza, esegui
 
 In seguito:
 
-1. Usare PowerShell per applicare le etichette di riservatezza ai gruppi di Microsoft 365 e ai siti di SharePoint esistenti utilizzando il mapping del nome. Per istruzioni, vedere la sezione successiva.
+1. Usare PowerShell per applicare le etichette di riservatezza ai gruppi di Microsoft 365 e ai siti di SharePoint esistenti utilizzando il mapping dei nomi. Per istruzioni, vedere la sezione successiva.
 
 2. Rimuovere le vecchie classificazioni dai gruppi e siti esistenti.
 

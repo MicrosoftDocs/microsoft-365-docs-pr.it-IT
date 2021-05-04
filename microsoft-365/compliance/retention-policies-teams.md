@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: cc17f89da743afce0d64b45f96493c050e61e343
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: b7bc84307f0db580995e039618cb01d25d6ecd66
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408361"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932859"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -43,35 +43,39 @@ Per altri carichi di lavoro, vedere:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
 
-Usando i criteri di conservazione per Teams è possibile eliminare i messaggi di chat e i messaggi di canale di Teams e per motivi di conformità è possibile conservare, oltre al testo nei messaggi, gli elementi seguenti: immagini incorporate, tabelle, collegamenti ipertestuali e collegamenti ad altri messaggi e file di Teams nonché il [contenuto della scheda](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Nei messaggi di chat sono inclusi tutti i nomi degli utenti presenti in chat e nei messaggi dei canali sono inclusi il nome del team e il titolo del messaggio (se disponibile). 
+Usando i criteri di conservazione per Teams è possibile eliminare i messaggi di chat e i messaggi di canale di Teams. Per motivi di conformità è possibile conservare, oltre al testo nei messaggi, i seguenti elementi: immagini incorporate, tabelle, collegamenti ipertestuali e collegamenti ad altri messaggi e file di Teams nonché il [contenuto della scheda](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Nei messaggi di chat sono inclusi tutti i nomi degli utenti presenti in chat e nei messaggi dei canali sono inclusi il nome del team e il titolo del messaggio (se disponibile). 
 
 > [!NOTE]
-> L'inclusione del contenuto della scheda è un'aggiunta recente ed è ora completamente distribuita ai tenant. Per altre informazioni vedere [Funzionalità di conformità di Microsoft 365 ora disponibili per il contenuto delle schede adattive tramite le app in Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
+> L'inclusione del contenuto della scheda in un criterio di conservazione per Teams è un'aggiunta abbastanza recente. Per altre informazioni vedere [Funzionalità di conformità di Microsoft 365 ora disponibili per il contenuto delle schede adattive tramite le app in Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-I messaggi Teams nei canali privati non sono attualmente supportati per i criteri di conservazione. Quando si usano i criteri di conservazione per Teams, non vengono conservati frammenti di codice, memo vocali registrati dal client per dispositivi mobili di Teams, anteprime, immagini di annunci e reazioni di altri utenti sotto forma di emoticon.
+I messaggi di Teams nei canali privati non sono attualmente supportati per i criteri di conservazione. Quando si usano i criteri di conservazione per Teams, non vengono conservati frammenti di codice, memo vocali registrati dal client per dispositivi mobili di Teams, anteprime, immagini di annunci e reazioni di altri utenti sotto forma di emoticon.
 
-I messaggi di posta elettronica e i file usati con Teams non sono inclusi nei criteri di conservazione per Teams. Questi elementi hanno criteri di conservazione personalizzati.
+I messaggi di posta elettronica e i file usati con Teams non sono inclusi nei criteri di conservazione per Teams. Questi elementi hanno i propri criteri di conservazione.
 
-## <a name="how-retention-works-with-microsoft-teams"></a>Come funziona la conservazione dei dati in Microsoft Teams
+## <a name="how-retention-works-with-microsoft-teams"></a>Come funziona la conservazione in Microsoft Teams
 
-È possibile usare i criteri di conservazione per conservare i dati delle chat e dei messaggi di canale in Teams e per eliminare tali chat e messaggi. Nel frattempo, le cassette postali di Exchange vengono usate per archiviare i dati di questi messaggi. I dati delle chat di Teams sono archiviati in una cartella nascosta nella cassetta postale di ogni utente della chat, mentre una cartella nascosta simile in una cassetta postale di gruppo viene usata per i messaggi dei canali di Teams.
+Usare questa sezione per comprendere come i requisiti di conformità vengono soddisfatti dall'archiviazione e dai processi back-end e come questi devono essere verificati dagli strumenti di eDiscovery anziché dai messaggi attualmente visibili nell'app Teams.
+
+È possibile usare i criteri di conservazione per conservare i dati delle chat e dei messaggi di canale in Teams e per eliminare tali chat e messaggi. Nel frattempo, le cassette postali di Exchange vengono usate per archiviare e i dati copiati di questi messaggi. I dati delle chat di Teams sono archiviati in una cartella nascosta nella cassetta postale di ogni utente della chat, mentre una cartella nascosta simile in una cassetta postale di gruppo viene usata per i messaggi dei canali di Teams. Queste cartelle nascoste non sono progettate per essere direttamente accessibili agli utenti o agli amministratori, ma archiviano dati che gli amministratori di conformità possono cercare con gli strumenti di eDiscovery.
 
 Queste cassette postali sono elencate dall'attributo RecipientTypeDetails:
 
-- **MailUser**: queste cassette postali archiviano i dati dei messaggi per gli utenti di Teams basati sul cloud.
-- **UserMailbox**: queste cassette postali archiviano i dati dei messaggi per gli [utenti di Teams locali](search-cloud-based-mailboxes-for-on-premises-users.md).
+- **UserMailbox**: queste cassette postali archiviano i dati dei messaggi per gli utenti di Teams basati sul cloud.
+- **MailUser**: queste cassette postali archiviano i dati dei messaggi per gli [utenti di Teams locali](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: queste cassette postali archiviano i dati dei messaggi per i canali di Teams.
 
 Altri tipi di cassette postali, ad esempio RoomMailbox usato per le sale riunioni di Teams, non sono supportati per i criteri di conservazione di Teams.
 
-È importante sapere che Teams usa un servizio di chat con tecnologia Azure come risorsa di archiviazione principale per tutti i messaggi (chat e messaggi di canale) e che, per impostazione predefinita, questo servizio archivia i dati a tempo indeterminato. Per questo motivo, se è necessario eliminare i messaggi di Teams per motivi di conformità, è consigliabile usare i criteri di conservazione per Teams che possono eliminare i messaggi dopo un periodo di tempo specifico, in base alla data di creazione. I messaggi vengono quindi eliminati definitivamente dalle cassette postali di Exchange e dal servizio di chat con tecnologia Azure sottostante. Per altre informazioni sull'architettura sottostante, vedere [Sicurezza e conformità in Microsoft Teams](/MicrosoftTeams/security-compliance-overview) e in particolare la sezione [Architettura di protezione delle informazioni](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+Teams usa un servizio di chat con tecnologia Azure come risorsa di archiviazione principale per tutti i messaggi (chat e messaggi di canale). Se è necessario eliminare i messaggi di Teams per motivi di conformità, i criteri di conservazione per Teams possono eliminare i messaggi dopo un periodo specifico, in base a quando alla data di creazione. I messaggi vengono eliminati definitivamente dalle cassette postali di Exchange in cui sono stati archiviati per le operazioni di conformità e dall'archiviazione primaria usata dal servizio di chat sottostante basato su Azure. Per altre informazioni sull'architettura sottostante, vedere [Sicurezza e conformità in Microsoft Teams](/MicrosoftTeams/security-compliance-overview) e in particolare la sezione [Architettura di protezione delle informazioni](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Anche se i dati delle chat e dei messaggi di canale di Teams vengono archiviati nelle cassette postali, questi dati vengono inclusi solo da un criterio di conservazione configurato per le posizioni **Messaggi del canale di Teams** e **Chat di Teams**. Le chat e i messaggi di canale di Teams non sono interessati dai criteri di conservazione configurati per le cassette postali di utenti o gruppi di Exchange.
+Anche se i dati delle chat e dei messaggi di canale di Teams vengono archiviati nelle cassette postali, è necessario configurare un criterio di conservazione per le posizioni dei **messaggi del canale di Teams** e delle **chat di Teams**. Le chat e i messaggi di canale di Teams non sono inclusi nei criteri di conservazione configurati per le cassette postali di utenti o gruppi di Exchange.
 
 > [!NOTE]
 > Se un utente è incluso in un criterio di conservazione attivo che conserva i messaggi di Teams e si eliminata una cassetta postale di un utente incluso in tale criterio, per conservare i dati di Teams la cassetta postale viene convertita in una [cassetta postale inattiva](inactive-mailboxes-in-office-365.md). Se non è necessario conservare i dati di Teams per l'utente, escludere l'account utente dal criterio di conservazione prima di eliminare la relativa cassetta postale.
 
-Dopo che i criteri di conservazione sono stati configurati per messaggi di chat e canali, un processo timer del servizio Exchange valuterà periodicamente gli elementi nella cartella nascosta in cui vengono archiviati i messaggi di Teams. Il processo timer richiede fino a sette giorni per l'esecuzione. Quando il periodo di conservazione degli elementi scade, questi vengono spostati nella cartella SubstrateHolds, un'altra cartella nascosta presente in ogni cassetta postale utente o di gruppo in cui vengono archiviati gli elementi "eliminati temporaneamente" prima che vengano eliminati definitivamente.
+Dopo che i criteri di conservazione sono stati configurati per messaggi di chat e canali, un processo timer del servizio Exchange valuterà periodicamente gli elementi nella cartella nascosta in cui vengono archiviati i messaggi di Teams. L'esecuzione del processo timer richiede in genere da 1 a 7 giorni. Quando il periodo di conservazione degli elementi scade, questi vengono spostati nella cartella SubstrateHolds, un'altra cartella nascosta presente in ogni cassetta postale utente o di gruppo in cui vengono archiviati gli elementi "eliminati temporaneamente" prima che vengano eliminati definitivamente. 
+
+I messaggi rimangono nella cartella SubstrateHolds per almeno 1 giorno, quindi se sono idonei per l'eliminazione, il processo timer li elimina definitivamente alla successiva esecuzione.
 
 Dopo la configurazione di un criterio di conservazione per i messaggi di chat e canali, i percorsi del contenuto variano in base al fatto che il criterio di conservazione sia impostato per conservare e poi eliminare, conservare solo o eliminare solo.
 
@@ -81,27 +85,91 @@ Se il criterio di conservazione conserva e poi elimina:
 
 Per i due percorsi nel diagramma:
 
-1. **Se un messaggio della chat o del canale viene modificato o eliminato** dall’utente durante il periodo di conservazione, il messaggio originale viene copiato (se è stato modificato) o spostato (se è stato eliminato) entro 21 giorni nella cartella SubstrateHolds. Il messaggio viene archiviato in questa posizione fino alla scadenza del periodo di conservazione, quindi viene eliminato definitivamente entro 24 ore.
+1. **Se un messaggio della chat o del canale viene modificato o eliminato** da un utente durante il periodo di conservazione, il messaggio originale viene copiato (se è stato modificato) o spostato (se è stato eliminato) entro 21 giorni nella cartella SubstrateHolds. Il messaggio viene archiviato per almeno 1 giorno. Alla scadenza del periodo di conservazione, il messaggio viene eliminato definitivamente alla successiva esecuzione del processo timer, in genere da 1 a 7 giorni.
 
-2. **Se il messaggio di una chat o un canale non viene eliminato**, così come per i messaggi correnti dopo essere stati modificati, il messaggio viene spostato nella cartella SubstrateHolds alla scadenza del periodo di conservazione. Questa azione richiede fino a sette giorni dalla data di scadenza. Dopo che il messaggio è stato spostato nella cartella SubstrateHolds, viene eliminato definitivamente entro 24 ore. 
+2. **Se il messaggio di una chat o un canale non viene eliminato** da un utente, così come per i messaggi correnti dopo essere stati modificati, il messaggio viene spostato nella cartella SubstrateHolds alla scadenza del periodo di conservazione. Questa azione richiede in genere da 1 a 7 giorni dalla data di scadenza. Quando il messaggio si trova nella cartella SubstrateHolds, viene archiviato in questa cartella per almeno 1 giorno e quindi viene eliminato definitivamente alla successiva esecuzione del processo timer, in genere da 1 a 7 giorni. 
 
 > [!NOTE]
-> I messaggi nella cartella SubstrateHolds sono disponibili per la ricerca tramite gli strumenti di eDiscovery. Finché i messaggi non vengono eliminati definitivamente dalla cartella SubstrateHolds, rimangono disponibili per la ricerca tramite gli strumenti di eDiscovery.
+> Gli strumenti di eDiscovery consentono di eseguire ricerche nei messaggi archiviati nelle cassette postali, incluse le cartelle nascoste. Finché i messaggi non vengono eliminati definitivamente dalla cartella SubstrateHolds, rimangono disponibili per la ricerca tramite gli strumenti di eDiscovery.
+
+Quando i messaggi vengono eliminati definitivamente dalla cartella SubstrateHolds, viene comunicata un'operazione di eliminazione al servizio chat di Azure back-end, che inoltra la stessa operazione all'app client Teams. I ritardi nella comunicazione o nella memorizzazione nella cache possono spiegare perché, per un breve periodo di tempo, gli utenti potrebbero ancora vedere questi messaggi nell'app Teams, ma i dati di questi messaggi non vengono restituiti nelle ricerche di eDiscovery. I messaggi visibili nell'app Teams non riflettono accuratamente se vengono conservati o eliminati definitivamente per i requisiti di conformità.
 
 Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed Elimina.
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Conserva solo
 
-1. **Se un messaggio della chat o del canale viene modificato o eliminato**: una copia del messaggio originale viene creata nella cartella SubstrateHolds entro 21 giorni e conservata in tale posizione fino alla scadenza del periodo di conservazione. Quindi il messaggio viene eliminato definitivamente dalla cartella SubstrateHolds entro 24 ore.
+1. **Se un messaggio della chat o del canale viene modificato o eliminato** da un utente durante il periodo di conservazione: il messaggio originale viene copiato (se è stato modificato) o spostato (se è stato eliminato) entro 21 giorni nella cartella SubstrateHolds. Se i criteri di conservazione sono configurati per conservarsi in modo permanente, l'elemento rimane in questa cartella. Se il criterio di conservazione ha una data di fine per il periodo di conservazione e scade, il messaggio viene eliminato definitivamente la prossima volta che viene eseguito il processo timer (in genere da 1 a 7 giorni).
 
-2. **Se l'elemento non viene modificato o eliminato**, così come per i messaggi correnti dopo essere stati modificati durante il periodo di conservazione: non succede niente prima o dopo il periodo di conservazione. L'elemento rimane nella posizione originale.
+2. **Se il messaggio della chat o del canale non viene modificato o eliminato** da un utente così come per i messaggi correnti dopo la modifica durante il periodo di conservazione: non accade nulla prima e dopo il periodo di conservazione. Il messaggio rimane nella posizione originale.
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Elimina solo
 
-1. **Se il messaggio non viene eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il messaggio viene spostato nella cartella SubstrateHolds. Questa azione richiede fino a sette giorni dalla data di scadenza. Quindi il messaggio viene eliminato definitivamente dalla cartella SubstrateHolds entro 24 ore.
+1. **Se il messaggio della chat o del canale viene modificato o eliminato** da un utente durante il periodo di conservazione: il messaggio originale viene copiato (se è stato modificato) o spostato (se è stato eliminato) entro 21 giorni nella cartella SubstrateHolds. Il messaggio viene conservato in tale posizione per almeno 1 giorno ed eliminato definitivamente la volta successiva in cui viene eseguito il processo timer (in genere da 1 a 7 giorni).
 
-2. **Se l'elemento viene eliminato dall'utente** durante il periodo, verrà spostato entro 21 giorni nella cartella SubstrateHolds, da dove verrà eliminato definitivamente entro 24 ore.
+2. **Se un messaggio di chat o di canale non viene eliminato** da un utente durante il periodo di conservazione: alla fine del periodo di conservazione il messaggio viene spostato nella cartella SubstrateHolds. Questa azione richiede in genere da 1 a 7 giorni dalla data di scadenza. Il messaggio viene conservato in tale posizione per almeno 1 giorno ed eliminato definitivamente la volta successiva in cui viene eseguito il processo timer (in genere da 1 a 7 giorni).
 
+#### <a name="example-flows-and-timings-for-retention-policies"></a>Esempi di flussi e tempi per i criteri di conservazione
+
+Usare gli esempi seguenti per vedere in che modo i processi e i tempi spiegati nelle sezioni precedenti si applicano ai criteri di conservazione con le seguenti configurazioni:
+
+- [Esempio 1: Conservare solo per 7 anni](#example-1-retain-only-for-7-years)
+- [Esempio 2: Conservare per 30 giorni e quindi eliminarlo](#example-2-retain-for-30-days-and-then-delete)
+- [Esempio 3: Eliminare solo dopo 1 giorno](#example-3-delete-only-after-1-day)
+
+Per tutti gli esempi che fanno riferimento all'eliminazione permanente, a causa dei [principi di conservazione](retention.md#the-principles-of-retention-or-what-takes-precedence), questa azione viene sospesa se il messaggio è soggetto a un altro criterio di conservazione per conservare l'elemento o è soggetto a un blocco eDiscovery.
+
+##### <a name="example-1-retain-only-for-7-years"></a>Esempio 1: Conservare solo per 7 anni
+
+Il primo giorno un utente crea un messaggio di chat o di canale.
+
+Il quinto giorno l'utente modifica il messaggio.
+
+Il trentesimo giorno l'utente elimina il messaggio corrente.
+
+Risultati della conservazione:
+
+- Per il messaggio originale:
+    - Il quinto giorno il messaggio viene copiato nella cartella SubstrateHolds, in cui è possibile eseguire ricerche con gli strumenti di eDiscovery per almeno 7 anni dal primo giorno (il periodo di conservazione).
+
+- Per il messaggio corrente (modificato):
+    - Il trentesimo giorno il messaggio viene trasferito nella cartella SubstrateHolds, in cui è possibile eseguire ricerche con gli strumenti di eDiscovery per almeno 7 anni dal primo giorno (il periodo di conservazione).
+
+Se l'utente ha eliminato il messaggio corrente dopo il periodo di conservazione specificato, anziché entro il periodo di conservazione, il messaggio verrà comunque spostato nella cartella SubstrateHolds. Tuttavia, dopo che il periodo di conservazione è scaduto, il messaggio verrà eliminato definitivamente dopo un minimo di 1 giorno e in genere da 1 a 7 giorni.
+
+##### <a name="example-2-retain-for-30-days-and-then-delete"></a>Esempio 2: Conservare per 30 giorni e quindi eliminarlo
+
+Il primo giorno un utente crea un messaggio di chat o di canale.
+
+Il decimo giorno l'utente modifica il messaggio.
+
+L'utente non apporta altre modifiche e non elimina il messaggio.
+
+Risultati della conservazione:
+
+- Per il messaggio originale:
+    - Il decimo giorno il messaggio viene copiato nella cartella SubstrateHolds, in cui è possibile eseguire ricerche con gli strumenti di eDiscovery.
+    - Alla fine del periodo di conservazione (30 giorni dal primo giorno), il messaggio viene eliminato definitivamente in genere entro 1-7 giorni dopo un minimo di 1 giorno e quindi non viene restituito con le ricerche di eDiscovery.
+
+- Per il messaggio corrente (modificato):
+    - Alla fine del periodo di conservazione (30 giorni dal primo giorno), il messaggio viene spostato nella cartella SubstrateHolds in genere entro 1-7 giorni, dove può ancora essere cercato con gli strumenti di eDiscovery.
+    - Quindi, il messaggio viene eliminato definitivamente in genere entro 1-7 giorni dopo un minimo di 1 giorno e quindi non viene restituito con le ricerche di eDiscovery.
+
+##### <a name="example-3-delete-only-after-1-day"></a>Esempio 3: Eliminare solo dopo 1 giorno
+
+> [!NOTE]
+> A causa della breve durata di questa configurazione, un giorno, e dei processi di conservazione che operano in un periodo di tempo compreso tra 1 e 7 giorni, questa sezione mostra intervalli di tempo di esempio che rientrano negli intervalli di tempo tipici.
+
+Il primo giorno un utente crea un messaggio di chat o di canale.
+
+Esempio di risultato di conservazione se l'utente non modifica o elimina il messaggio:
+
+- Quinto giorno (in genere 1-7 giorni dopo l'inizio del periodo di conservazione il terzo giorno):
+    - Il messaggio viene spostato nella cartella SubstrateHolds dove può ancora essere cercato con gli strumenti di eDiscovery e vi rimane per almeno 1 giorno.
+
+- Nono giorno (in genere 1-7 giorni dopo un minimo di 1 giorno nella cartella SubstrateHolds):
+    - Il messaggio viene eliminato definitivamente e quindi non viene restituito con le ricerche di eDiscovery.
+
+Come illustrato in questo esempio, anche se è possibile configurare criteri di conservazione per eliminare i messaggi dopo un solo giorno, il servizio viene sottoposto a più processi per garantire un'eliminazione conforme. Di conseguenza, un'azione di eliminazione dopo 1 giorno potrebbe richiedere 18 giorni prima che il messaggio venga eliminato definitivamente in modo che non venga più restituito nelle ricerche di eDiscovery.
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Chat di interoperabilità di Skype for Business e Teams.
 
@@ -119,7 +187,7 @@ Quando in una riunione ospitata dall'organizzazione vengono inclusi utenti ester
 
 - Se un utente esterno partecipa con un account guest nel tenant dell'organizzazione, l'utente ha una cassetta postale shadow che può essere soggetta ai criteri di conservazione dell'organizzazione per Teams. I messaggi della riunione vengono archiviati sia nella cassetta postale degli utenti che nella cassetta postale shadow. 
 
-- Se un utente esterno partecipa usando un account di un'altra organizzazione di Microsoft 365, i criteri di conservazione non possono eliminare i messaggi per l'utente, perché sono archiviati nella sua cassetta postale in un altro tenant. Per la stessa riunione, tuttavia, i criteri di conservazione configurati possono eliminare i messaggi per gli utenti interni dell'organizzazione.
+- Se un utente esterno partecipa usando un account di un'altra organizzazione di Microsoft 365, i criteri di conservazione non possono eliminare i messaggi per l'utente, perché sono archiviati nella sua cassetta postale in un altro tenant. Tuttavia, per la stessa riunione, i criteri di conservazione possono eliminare i messaggi per gli utenti.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l’organizzazione 
 
@@ -129,14 +197,9 @@ Se l’utente ha archiviato dei file in Teams, vedere la sezione [corrispondente
 
 ## <a name="limitations"></a>Limitazioni
 
-Lavoriamo costantemente all'ottimizzazione della funzionalità di conservazione in Teams. Nel frattempo, di seguito sono riportate alcune limitazioni da tenere presenti quando si usa la conservazione per le chat e i messaggi dei canali di Teams:
+Lavoriamo costantemente all'ottimizzazione della funzionalità di conservazione in Teams. Nel frattempo, tenere presente la seguente limitazione quando si usano i criteri di conservazione per i messaggi e le chat del canale di Teams:
 
-- **Problema di visualizzazione non corretta in Outlook**. Se si creano criteri di conservazione per i percorsi di Skype o Teams, uno di questi criteri viene visualizzato come criterio cartella predefinito quando un utente visualizza le proprietà di una cartella della cassetta postale nel client desktop di Outlook. Si tratta di un problema di visualizzazione non corretta in Outlook e di un [problema noto](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Quello che dovrebbe essere visualizzato come criterio cartella predefinito è il criterio di conservazione della cassetta postale applicato alla cartella. Il criterio di conservazione di Skype o Teams non viene applicato alla cassetta postale dell'utente.
-
-- **Problemi di configurazione**: 
-    - Quando si seleziona **Scegli i team** per il percorso **Messaggi del canale di Teams**, potrebbero essere visualizzati gruppi di Microsoft 365 che non corrispondono anche a team. Non selezionare questi gruppi.
-    
-    - Quando si seleziona **Scegli utenti** per la posizione **Chat di Teams**, potrebbero essere visualizzati utenti non della cassetta postale e guest. I criteri di conservazione non sono pensati per questi utenti, quindi non selezionarli.
+- **Problema di visualizzazione non corretta in Outlook**. Se si creano criteri di conservazione per i percorsi di Skype o Teams, uno di questi criteri viene visualizzato come criterio cartella predefinito quando un utente visualizza le proprietà di una cartella della cassetta postale nel client desktop di Outlook. Si tratta di un problema di visualizzazione non corretta in Outlook e di un [problema noto](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Dovrebbero essere invece visualizzati i criteri di conservazione delle cassette postali applicati alla cartella. Il criterio di conservazione di Skype o Teams non viene applicato alla cassetta postale dell'utente.
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione
 

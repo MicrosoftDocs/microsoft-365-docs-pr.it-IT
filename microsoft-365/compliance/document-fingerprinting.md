@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Gli Information Worker dell'organizzazione gestiscono molti tipi di informazioni riservate durante una giornata. La creazione impronta digitale documenti rende più semplice proteggere le informazioni identificando moduli standard utilizzati all'interno dell'organizzazione. In questo argomento vengono descritti i concetti alla base dell'impronta digitale dei documenti e come crearne uno tramite PowerShell.
-ms.openlocfilehash: 1542b956d0a1f662e059ca59ea346a8afc439c83
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 392b42e779de249dddc0acb4c7c757a009f9f743
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918502"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086739"
 ---
 # <a name="document-fingerprinting"></a>Creazione impronta digitale documenti
 
@@ -39,13 +39,13 @@ In teoria, l'organizzazione possiede già una pratica aziendale stabilita relati
 Sarà già chiaro che i documenti non hanno impronte digitali nel verso senso della parola, ma il nome consente di spiegare la funzionalità. Come le impronti digitali di una persona presentano criteri univoci, così i documenti presentano modelli di parole univoci. Quando si carica un file, DLP identifica il modello di parola univoco nel documento, crea un'impronta digitale del documento basata su tale modello e utilizza l'impronta digitale del documento per rilevare i documenti in uscita contenenti lo stesso modello. Ecco perché il caricamento di un modulo o modello crea il tipo più efficace di impronta digitale del documento. Chiunque compila un modulo usa lo stesso set originale di parole e poi aggiunge proprie parole al documento. Se il documento in uscita non è protetto da password e contiene tutto il testo del modulo originale, DLP può determinare se il documento corrisponde all'impronta digitale del documento.
 
 > [!IMPORTANT]
-> Per il momento, DLP può utilizzare l'impronta digitale del documento come metodo di rilevamento solo in Exchange online.
+> Per il momento, DLP può usare l'impronta digitale del documento come metodo di rilevamento solo Exchange online.
 
 Il seguente esempio mostra cosa accade si crea un'impronta digitale del documento in base al modello di brevetto. È comunque possibile usare qualsiasi modello per la creazione di un'impronta digitale del documento.
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Esempio di un documento di brevetto corrispondente a un'impronta digitale del documento di un modello di brevetto
 
-![Document-Fingerprinting-diagram.png](../media/Document-Fingerprinting-diagram.png)
+![Diagramma dell'impronta digitale del documento.](../media/Document-Fingerprinting-diagram.png)
   
 Il modello di brevetto contiene i campi vuoti "Patent title", "Inventors" e "Description" e le descrizioni per ognuno di questi campi, ovvero il modello di parola. Quando carichi il modello di brevetto originale, è in uno dei tipi di file supportati e in testo normale. DLP converte questo modello di parola in un'impronta digitale del documento, ovvero un piccolo file XML Unicode contenente un valore hash univoco che rappresenta il testo originale e l'impronta digitale viene salvata come classificazione dei dati in Active Directory. Come misura di sicurezza, il documento originale non viene archiviato nel servizio, ma viene archiviato solo il valore hash e il documento originale non può essere ricostruito dal valore hash. L'impronta digitale del brevetto diventa quindi un tipo di informazioni riservate che è possibile associare a un criterio DLP. Dopo aver associato l'impronta digitale a un criterio DLP, DLP rileva eventuali messaggi di posta elettronica in uscita contenenti documenti che corrispondono all'impronta digitale del brevetto e li gestisce in base ai criteri dell'organizzazione. 
 
@@ -62,10 +62,11 @@ L'impronta digitale del documento non rileva le informazioni riservate nei casi 
 - File protetti da password
 - File che contengono solo immagini
 - Documenti che non contengono tutto il testo del modulo originale usato per la creazione dell'impronta digitale del documento
+- File superiori a 10 MB
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Usare PowerShell per creare un pacchetto di regole di classificazione in base all'impronta digitale del documento
 
-Si noti che attualmente è possibile creare un'impronta digitale del documento solo tramite PowerShell nel Centro &amp; sicurezza e conformità. Per connettersi, [vedere Connect to Security & Compliance Center PowerShell.](/powershell/exchange/connect-to-scc-powershell)
+Si noti che attualmente è possibile creare un'impronta digitale del documento solo tramite PowerShell nel Centro &amp; sicurezza e conformità. Per connettersi, [vedere Connessione a PowerShell & Centro sicurezza](/powershell/exchange/connect-to-scc-powershell)e conformità.
 
 DLP usa pacchetti di regole di classificazione per rilevare contenuto sensibile. Per creare un pacchetto di regole di classificazione basato su un'impronta digitale del documento, utilizzare i cmdlet **New-DlpFingerprint** e **New-DlpSensitiveInformationType.** Poiché i risultati di **New-DlpFingerprint** non vengono archiviati all'esterno della regola di classificazione dei dati, si eseguono sempre **New-DlpFingerprint** e **New-DlpSensitiveInformationType** o **Set-DlpSensitiveInformationType** nella stessa sessione di PowerShell. In questo esempio viene creata una nuova impronta digitale di documento in base al file C:\Documenti\Contoso Employee Template.docx. La nuova impronta digitale viene archiviata come variabile e potrà essere quindi utilizzata con il cmdlet **New-DlpSensitiveInformationType** nella stessa sessione di PowerShell.
   
@@ -90,7 +91,7 @@ Infine, aggiungere il pacchetto di regole di classificazione dei dati "Contoso C
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-È inoltre possibile utilizzare il pacchetto di regole di classificazione dei dati nelle regole del flusso di posta in Exchange Online, come illustrato nell'esempio seguente. Per eseguire questo comando, è innanzitutto necessario [connettersi a PowerShell di Exchange Online.](/powershell/exchange/connect-to-exchange-online-powershell) Si noti inoltre che il pacchetto di regole richiede tempo per la sincronizzazione dal Centro sicurezza e conformità &amp; all'interfaccia di amministrazione di Exchange.
+È inoltre possibile utilizzare il pacchetto di regole di classificazione dei dati nelle regole del flusso di posta Exchange Online, come illustrato nell'esempio seguente. Per eseguire questo comando, è innanzitutto [necessario Connessione per Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell) Tieni inoltre presente che per la sincronizzazione del pacchetto di regole dal Centro sicurezza e conformità all'interfaccia di amministrazione Exchange &amp; sicurezza.
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

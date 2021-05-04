@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare etichette di conservazione e criteri di etichettatura automatica in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: 6b7e8f91706a9d12135069f0a6753c76eaff1fb4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920019"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107638"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -44,7 +44,7 @@ Le etichette di conservazione applicate automaticamente sono potenti perché:
 È possibile applicare automaticamente etichette di conservazione al contenuto quando questo include informazioni sensibili, parole chiave, proprietà disponibili per la ricerca o una corrispondenza per [classificatori sottoponibili a training](classifier-get-started-with.md).
 
 > [!TIP]
-> Ora, in anteprima, usare le proprietà ricercabili per identificare le [Registrazioni delle riunioni di Teams](#microsoft-teams-meeting-recordings).
+> Rilasciate di recente, le proprietà disponibili per la ricerca consentono di identificare le [Registrazioni delle riunioni di Teams](#microsoft-teams-meeting-recordings).
 
 I processi per l'applicazione automatica di un'etichetta di conservazione si basano sulle condizioni seguenti:
 
@@ -134,11 +134,11 @@ Dopo aver applicato l’etichetta al contenuto tramite un criterio di applicazio
 
 Quando si creano criteri di conservazione ad applicazione automatica per le informazioni riservate, viene visualizzato lo stesso elenco di modelli di criteri mostrato quando si creano criteri di prevenzione della perdita dei dati (DLP). Ogni modello è preconfigurato in modo da cercare specifici tipi di informazioni riservate. Ad esempio, il modello mostrato di seguito cerca i numeri ITIN, SSN e di passaporto nella categoria **Privacy**, e nel modello **Dati personali (PII) degli Stati Uniti**:
 
-![Modelli di criteri con le tipologie di informazioni sensibili](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![Modelli di criteri con le tipologie di informazioni sensibili](../media/sensitive-info-configuration.png)
 
-Per altre informazioni sui tipi di informazioni sensibili, vedere [Definizioni delle entità tipo di informazione sensibile](sensitive-information-type-entity-definitions.md).
+Per altre informazioni sui tipi di informazioni sensibili, vedere [Definizioni delle entità tipo di informazione sensibile](sensitive-information-type-entity-definitions.md). Attualmente, le [corrispondenze esatte dei dati](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) e la [creazione dell'impronta digitale dei documenti](document-fingerprinting.md) non sono supportate per questo scenario.
 
-Dopo aver selezionato un modello di criteri, è possibile aggiungere o rimuovere qualunque tipo di informazione riservata e modificare il numero di istanze e l'accuratezza della corrispondenza. Nella schermata di esempio seguente, un'etichetta di conservazione sarà applicata automaticamente solo quando:
+Dopo aver selezionato un modello di criteri, è possibile aggiungere o rimuovere qualunque tipo di informazioni sensibili e modificare il numero di istanze e l'accuratezza della corrispondenza. Nello screenshot di esempio mostrato di seguito, verrà applicata automaticamente un'etichetta di conservazione solo quando:
   
 - Il tipo di informazioni sensibili rilevate ha un'accuratezza della corrispondenza (o livello di attendibilità) di almeno 75. Molti tipi di informazioni sensibili sono definiti con più criteri. I criteri con un livello di accuratezza della corrispondenza superiore richiedono l'individuazione di ulteriori elementi di prova (ad esempio parole chiave, date o indirizzi), mentre i criteri con un livello di accuratezza della corrispondenza inferiore richiedono meno elementi di prova. Più basso è il valore di accuratezza della corrispondenza **min**, più facile sarà che il contenuto soddisfi la condizione.
 
@@ -228,7 +228,7 @@ Si noti che in questo esempio finale viene usata la procedura consigliata che in
 ##### <a name="microsoft-teams-meeting-recordings"></a>Registrazioni delle riunioni di Teams
 
 > [!NOTE]
-> La funzionalità che consente di mantenere o eliminare le registrazioni delle riunioni di Teams è in anteprima, e non sarà disponibile prima che le registrazioni siano salvate in OneDrive o SharePoint. Per altre informazioni, vedere [Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni](/MicrosoftTeams/tmr-meeting-recording-change).
+> La funzionalità che consente di mantenere o eliminare le registrazioni delle riunioni di Teams e non sarà disponibile prima che le registrazioni siano salvate in OneDrive o SharePoint. Per altre informazioni, vedere [Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni](/MicrosoftTeams/tmr-meeting-recording-change).
 
 Per identificare le registrazioni delle riunioni di Microsoft Teams salvate negli account OneDrive degli utenti o in SharePoint, specificare quanto segue nell'**Editor di query con parole chiave**:
 
@@ -236,7 +236,7 @@ Per identificare le registrazioni delle riunioni di Microsoft Teams salvate negl
 ProgID:Media AND ProgID:Meeting
 ```
 
-Nella maggior parte dei casi, le registrazioni delle riunioni vengono salvate in OneDrive. Tuttavia, le riunioni di canale vengono salvate in SharePoint.
+Nella maggior parte dei casi le registrazioni delle riunioni vengono salvate in OneDrive, ma le riunioni di canale vengono salvate in SharePoint.
 
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Etichette applicate automaticamente al contenuto con classificatori sottoponibili a training
@@ -285,7 +285,7 @@ Alcune impostazioni non possono essere modificate dopo aver creato e salvato l'e
 
 ### <a name="deleting-retention-labels"></a>Eliminazione delle etichette di conservazione.
 
-È possibile eliminare le etichette di conservazione che al momento non sono incluse in alcun criterio di conservazione, che non sono configurate per la conservazione basata su eventi o che contrassegnano gli elementi come record normativi. La possibilità di eliminare etichette di conservazione che contrassegnano gli elementi come record è al momento in fase di distribuzione in anteprima.
+È possibile eliminare le etichette di conservazione che al momento non sono incluse in alcun criterio di conservazione, che non sono configurate per la conservazione basata su eventi o che contrassegnano gli elementi come record normativi.
 
 Nel caso delle etichette di conservazione eliminabili, l'eliminazione non riuscirà se sono state applicate agli elementi e viene visualizzato un collegamento a Esplora contenuto per identificare gli elementi etichettati.
 

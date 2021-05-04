@@ -5,21 +5,22 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: normal
+recommendations: false
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Note sulla versione per la classificazione dei dati.
-ms.openlocfilehash: 2b9302cfa49f9445d3cbeb5109aef70e0c8d8f7f
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
-ms.translationtype: HT
+ms.openlocfilehash: bbce01555367c6151a7b16b551d5580ebcaf9d43
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663041"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086707"
 ---
 # <a name="data-classification-release-notes"></a>Note sulla versione della classificazione dei dati
 

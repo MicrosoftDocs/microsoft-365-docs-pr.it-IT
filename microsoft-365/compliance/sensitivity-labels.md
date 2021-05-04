@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 467960f2faf6c6262083ff238ee3b085e0e99129
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 1e21da114154a5258f81a48e39d46ae875ee3930
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499669"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892929"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -71,7 +71,7 @@ Per applicare le etichette di riservatezza, gli utenti devono aver eseguito l'ac
 
 - **Classificare il contenuto senza usare nessuna impostazione di protezione.** È anche possibile assegnare un'etichetta semplicemente come risultato della classificazione del contenuto. Questo offre agli utenti un mapping visivo della classificazione per i nomi delle etichette dell'organizzazione ed è possibile usare le etichette per generare report sull'utilizzo e visualizzare i dati delle attività per il contenuto riservato. In base a queste informazioni, è sempre possibile decidere in un secondo momento di applicare le impostazioni di protezione.
 
-In tutti questi casi, le etichette di riservatezza in Microsoft 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di riservatezza è possibile classificare i dati all'interno dell'organizzazione e applicare le impostazioni di protezione in base alla classificazione.
+In tutti i casi, le etichette di riservatezza in Microsoft 365 possono aiutare a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di riservatezza è possibile classificare i dati all'interno dell'organizzazione e applicare impostazioni di protezione in base alla classificazione.
 
 Per altre informazioni su questi e altri scenari supportati dalle etichette di riservatezza, vedere [Scenari comuni per le etichette di riservatezza](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Vengono continuamente sviluppate nuove funzionalità che supportano le etichette di riservatezza, dunque può essere utile consultare la [roadmap di Microsoft 365](https://aka.ms/MIPC/Roadmap).
 
@@ -154,7 +154,7 @@ L'ordinamento delle sottoetichette viene però usato con l'[etichettatura automa
 
 ### <a name="sublabels-grouping-labels"></a>Sottoetichette (raggruppamento etichette)
 
-Con le sottoetichette è possibile raggruppare uno o più etichette sotto un'etichetta padre visualizzata dall'utente in un'app di Office. Ad esempio, sotto l'etichetta Riservato l'organizzazione può usare etichette diverse per tipi specifici di tale classificazione. In questo esempio l'etichetta padre Riservato è semplicemente un'etichetta di testo senza impostazioni di sicurezza e non può essere applicata al contenuto perché contiene sottoetichette. Gli utenti devono invece scegliere Riservato per visualizzare le sottoetichette e in seguito possono scegliere una sottoetichetta da applicare al contenuto.
+Con le sottoetichette, è possibile raggruppare una o più etichette sotto un'etichetta padre che viene visualizzata da un utente in un'applicazione di Office. Ad esempio, in Riservato, l'organizzazione potrebbe usare varie etichette diverse per tipi specifici di quella classificazione. In questo esempio, l'etichetta Riservato è una semplice etichetta di testo senza alcuna impostazione di protezione e, poiché contiene sottoetichette, non può essere applicata al contenuto. Gli utenti devono invece scegliere Riservato per visualizzare le sottoetichette e quindi scegliere una sottoetichetta da applicare al contenuto.
 
 Le sottoetichette sono solo un modo per presentare le etichette agli utenti in gruppi logici. Non ereditano le impostazioni dell'etichetta padre che le contiene. Quando si pubblica una sottoetichetta per un utente, tale utente può applicare tale sottoetichetta al contenuto ma non può applicare l'etichetta padre.
 
@@ -190,7 +190,7 @@ Quando si configura un criterio di etichetta, è possibile:
 
 - **Richiedere agli utenti di applicare un'etichetta** con un'opzione per i messaggi di posta elettronica e documenti e un'altra per i contenitori. Questa opzione, nota anche come etichettatura obbligatoria, assicura l'applicazione di un'etichetta prima che gli utenti possano salvare documenti, inviare messaggi di posta elettronica e creare nuovi gruppi o siti.
     
-    L'etichetta può essere assegnata manualmente dall'utente, automaticamente in seguito a una condizione configurata oppure assegnata per impostazione predefinita (l'opzione per l'etichetta predefinita descritta in precedenza). Esempio di messaggio di richiesta mostrato in Outlook quando un utente deve assegnare un'etichetta:
+    Per i documenti e i messaggi di posta elettronica, l'etichetta può essere assegnata manualmente dall'utente, automaticamente in seguito a una condizione configurata oppure assegnata per impostazione predefinita ( l'opzione per l'etichetta predefinita descritta in precedenza). Esempio di messaggio di richiesta mostrato in Outlook quando un utente deve assegnare un'etichetta:
 
     ![Messaggio visualizzato in Outlook per richiedere all'utente di applicare l'etichetta obbligatoria](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
@@ -201,7 +201,7 @@ Quando si configura un criterio di etichetta, è possibile:
     
     Valutare l'uso di questa opzione per ampliare la portata dell'etichettatura. Tuttavia, in mancanza di formazione per gli utenti, queste impostazioni possono risultare nell'applicazione di etichette non corrette. Inoltre, a meno che non si imposti anche un'etichetta corrispondente predefinita, l'etichettatura obbligatoria può infastidire gli utenti con messaggi di richiesta frequenti.
 
-- **Fornire un collegamento a una pagina della Guida personalizzata.** Se gli utenti non conoscono il significato delle etichette di riservatezza o non sanno come usarle, è possibile fornire un URL che consente di accedere a maggiori informazioni, visualizzato nella parte inferiore del menu **Etichetta di riservatezza** nelle app di Office:
+- **Fornire il collegamento a una pagina della Guida personalizzata.** Se gli utenti non conoscono il significato delle etichette di riservatezza o non sanno come usarle, è possibile fornire un URL che consente di accedere a maggiori informazioni, visualizzato nella parte inferiore del menu **Etichetta di riservatezza** nelle app Office:
 
     ![Collegamento a ulteriori informazioni sul pulsante Riservatezza della barra multifunzione](../media/Sensitivity-label-learn-more.png)
 
@@ -219,9 +219,9 @@ Un criterio di etichetta è costituito da:
 - Gli utenti e i gruppi a cui verrà assegnato il criterio con le etichette.
 - L'ambito del criterio e le impostazioni del criterio per quell'ambito, ad esempio etichetta predefinita per i file e i messaggi di posta elettronica.
 
-È possibile includere un utente in più criteri di etichetta. L'utente visualizzerà tutte le etichette di riservatezza di tali criteri. Vedrà però le impostazioni dei criteri solo del criterio di etichetta con la priorità più alta.
+È possibile includere un utente in più criteri di etichetta. L'utente riceverà tutte le etichette di riservatezza e le impostazioni di tali criteri. Se si verifica un conflitto nelle impostazioni di più criteri, viene applicata l'impostazione del criterio con la priorità più alta. In altre parole, per ogni impostazione prevale la priorità più alta.
 
-Se l'etichetta o l'impostazione dei criteri di etichetta prevista per un utente o un gruppo non viene visualizzata, controllare l'ordine dei criteri per le etichette di riservatezza. Per riordinare i criteri di etichetta, selezionare un criterio di etichetta di riservatezza > scegliere i puntini di sospensione a destra > **Sposta su** o **Sposta giù**.
+Se il comportamento previsto per l'etichetta o l'impostazione dei criteri di etichetta per un utente o un gruppo non viene applicato, controllare l'ordine dei criteri per le etichette di riservatezza. Per riordinare i criteri di etichetta, selezionare un criterio di etichetta di riservatezza > scegliere i puntini di sospensione a destra > **Sposta su** o **Sposta giù**.
 
 ![Opzione Sposta nella pagina dei criteri di etichetta di riservatezza](../media/sensitivity-label-policy-priority.png)
 

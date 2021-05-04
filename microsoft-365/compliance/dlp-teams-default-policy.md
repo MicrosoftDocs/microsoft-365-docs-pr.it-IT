@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui criteri di prevenzione della perdita dei dati predefiniti in Microsoft Teams (anteprima)
+title: Informazioni sul criterio predefinito per la prevenzione della perdita di dati in Microsoft Teams (anteprima)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,20 +15,20 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni sui criteri di prevenzione della perdita di dati predefiniti in Microsoft Teams
-ms.openlocfilehash: 3992daf9431dbd87ed5e947a1e5a2b0acd20edce
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826247"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114144"
 ---
-# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Informazioni sui criteri di prevenzione della perdita dei dati predefiniti in Microsoft Teams (anteprima)
+# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Informazioni sul criterio predefinito per la prevenzione della perdita di dati in Microsoft Teams (anteprima)
 
-[Le funzionalità di prevenzione della](data-loss-prevention-policies.md) perdita dei dati (DLP) sono state estese per includere i messaggi di chat e canali di Microsoft Teams, inclusi i messaggi del canale privato. Come parte di questa versione, è stato creato un criterio DLP predefinito per i clienti per la prima volta al Centro conformità.
+[Le funzionalità di prevenzione della](dlp-learn-about-dlp.md) perdita dei dati sono state estese Microsoft Teams messaggi di chat e canali, inclusi i messaggi del canale privato. Come parte di questa versione, è stato creato un criterio DLP predefinito per i clienti per la prima volta al Centro conformità.
 
 ## <a name="applies-to"></a>Si applica a
 
-Qualsiasi tenant concesso in licenza con una o più delle licenze seguenti e con utenti di Teams attivi
+Qualsiasi tenant concesso in licenza con una o più delle licenze seguenti e con utenti Teams attivi
  
 - ME5, 
 - MA5, 
@@ -47,7 +47,7 @@ Gli amministratori possono visualizzare questo criterio nel [Centro](https://com
 
 
 > [!div class="mx-imgBorder"]
-> ![criterio DLP predefinito di Teams](../media/default-teams-dlp-policy.png)
+> ![criterio DLP Teams predefinito](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>Modificare o eliminare il criterio predefinito
 

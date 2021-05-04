@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Informazioni sui passaggi di base per la risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni in Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a867ed2e55c73fe4bbd890273d78cf57f4bfbd2c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926546"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060991"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Analizzare, risolvere e risolvere i problemi comuni di eDiscovery
 
@@ -38,7 +38,7 @@ Se si tenta di aggiungere la posizione della cassetta postale dell'utente per la
 
 Verificare la presenza di utenti duplicati o lista di distribuzione con lo stesso ID utente.
 
-1. Connettersi [a PowerShell & Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
+1. Connessione a [PowerShell & Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
 
 2. Eseguire il comando seguente per recuperare tutte le istanze del nome utente:
 
@@ -66,7 +66,7 @@ Una ricerca di contenuto o eDiscovery può produrre l'errore seguente: `This sea
 
 Se viene visualizzato questo errore, è consigliabile verificare i percorsi non riusciti nella ricerca e quindi eseguire di nuovo la ricerca solo nei percorsi non riusciti.
 
-1. Connettersi [a PowerShell & Centro](/powershell/exchange/connect-to-scc-powershell) sicurezza e conformità ed eseguire il comando seguente:
+1. Connessione [a PowerShell & centro](/powershell/exchange/connect-to-scc-powershell) sicurezza e conformità, quindi eseguire il comando seguente:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -82,7 +82,7 @@ Se viene visualizzato questo errore, è consigliabile verificare i percorsi non 
 
 Quando si esegue una ricerca eDiscovery che include posizioni di SharePoint Online e One Drive For Business, è possibile che venga visualizzato l'errore anche se il file si `File Not Found` trova nel sito. Questo errore verrà visualizzato negli avvisi di esportazione e errors.csv o ignorato items.csv. Ciò può verificarsi se non è possibile trovare il file nel sito o se l'indice non è aggiornato. Ecco il testo di un errore effettivo (con enfasi aggiunta).
 
-> 28.06.2019 10:02:19_FailedToExportItem_Failed per scaricare il contenuto. Ulteriori informazioni di diagnostica: Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Impossibile scaricare dal contenuto 6ea52149-91cd-4965-b5bb-82ca6a3ec9be di tipo Document. ID correlazione: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File non trovato.*** at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---
+> 28.06.2019 10:02:19_FailedToExportItem_Failed per scaricare il contenuto. Informazioni di diagnostica aggiuntive: Microsoft. Office. Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: impossibile eseguire il download dal contenuto 6ea52149-91cd-4965-b5bb-82ca6a3ec9be di tipo Document. ID correlazione: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft. SharePoint. Client.ServerException: ***file non trovato.*** presso Microsoft. SharePoint. Client.ClientRequest.ProcessResponseStream(Stream responseStream) presso Microsoft. SharePoint. Client.ClientRequest.ProcessResponse() --- fine dell'analisi dello stack delle eccezioni interne ---
 
 ### <a name="resolution"></a>Risoluzione
 
@@ -96,7 +96,7 @@ Una ricerca eDiscovery ha esito negativo con l'errore `recipient not found` . Qu
 
 ### <a name="resolution"></a>Risoluzione
 
-1. Connettersi [a PowerShell di Exchange Online.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Connessione a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Eseguire il comando seguente per verificare se l'utente è sincronizzato con Exchange Online Protection:
 
@@ -112,7 +112,7 @@ Quando si esportano i risultati della ricerca da eDiscovery o Ricerca contenuto 
 
 ### <a name="resolution"></a>Risoluzione
 
-1. Connettersi [a PowerShell & Centro](/powershell/exchange/connect-to-scc-powershell) sicurezza e conformità ed eseguire il comando seguente:
+1. Connessione [a PowerShell & centro](/powershell/exchange/connect-to-scc-powershell) sicurezza e conformità, quindi eseguire il comando seguente:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -142,7 +142,7 @@ Quando si esegue una ricerca eDiscovery, se la ricerca continuamente non riesce 
 
 1. Suddividere la ricerca in ricerche più piccole ed eseguire di nuovo la ricerca.  Provare a utilizzare un intervallo di date più piccolo o limitare il numero di posizioni in cui si sta ricercando.
 
-2. Connettersi [a PowerShell & Centro](/powershell/exchange/connect-to-scc-powershell) sicurezza e conformità ed eseguire il comando seguente:
+2. Connessione [a PowerShell & centro](/powershell/exchange/connect-to-scc-powershell) sicurezza e conformità, quindi eseguire il comando seguente:
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -162,7 +162,7 @@ Errore di distribuzione della sincronizzazione dei criteri di blocco del caso di
 
 ### <a name="resolution"></a>Risoluzione
 
-1. Connettersi [a PowerShell & Centro](/powershell/exchange/connect-to-scc-powershell) sicurezza e conformità ed eseguire il comando seguente per un blocco caso di eDiscovery:
+1. Connessione a [PowerShell &](/powershell/exchange/connect-to-scc-powershell) Centro sicurezza e conformità, quindi eseguire il comando seguente per un blocco caso di eDiscovery:
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -196,7 +196,7 @@ Errore di distribuzione della sincronizzazione dei criteri di blocco del caso di
 
 ## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>Errore: "La condizione specificata tramite le intestazioni condizionali HTTP non è soddisfatta"
 
-Quando si scaricano i risultati della ricerca utilizzando lo strumento di esportazione di eDiscovery, è possibile che venga visualizzato l'errore seguente: Si tratta di un errore temporaneo, che in genere si verifica nel percorso di `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` archiviazione di Azure.
+Quando si scaricano i risultati della ricerca utilizzando lo strumento di esportazione di eDiscovery, è possibile che venga visualizzato l'errore seguente: Si tratta di un errore temporaneo, che in genere si verifica nel percorso Archiviazione di Azure `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` ricerca.
 
 ### <a name="resolution"></a>Risoluzione
 
@@ -212,12 +212,14 @@ Si tratta di un problema sul lato client e per risolvere il problema, provare a 
 
 1. Prova a usare un altro client/computer per il download.
 
-2. Assicurati di eseguire il download in un'unità locale.
+2. Rimuovere le ricerche precedenti non più necessarie utilizzando il cmdlet [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch].
 
-3. Verificare che il programma antivirus non sia in esecuzione.
+3. Assicurati di eseguire il download in un'unità locale.
 
-4. Assicurarsi che nessun'altra esportazione sia in download nella stessa cartella o in qualsiasi cartella padre.
+4. Verificare che il programma antivirus non sia in esecuzione.
 
-5. Se i passaggi precedenti non sono stati esatti, disabilitare la compressione e la deduplicazione.
+5. Assicurarsi che nessun'altra esportazione sia in download nella stessa cartella o in qualsiasi cartella padre.
 
-6. Se funziona, il problema è dovuto a un programma antivirus locale o a un problema del disco.
+6. Se i passaggi precedenti non sono stati esatti, disabilitare la compressione e la deduplicazione.
+
+7. Se funziona, il problema è dovuto a un programma antivirus locale o a un problema del disco.

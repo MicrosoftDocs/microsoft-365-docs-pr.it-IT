@@ -15,23 +15,23 @@ search.appverid:
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come configurare IRM di Exchange Online per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale per soddisfare i requisiti dell'organizzazione.
-ms.openlocfilehash: 6a9759fce102c60dd766dd86ba8c9e6d4a02d85b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Informazioni su come configurare Exchange Online IRM per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale per soddisfare i requisiti dell'organizzazione.
+ms.openlocfilehash: d98cf5c762cd4dac0cbad6d25a3cc766d5c5310a
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924990"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876275"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>Crittografia della posta di Exchange Online con AD RMS
 
-Per aiutare ad impedire la fuga di informazioni, in Exchange Online è inclusa la funzionalità Information Rights Management (IRM) che fornisce una protezione online e offline dei messaggi di posta elettronica e degli allegati. È possibile configurare IRM di Exchange Online per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale, se necessario, per soddisfare i requisiti dell'organizzazione. Questo non è comune. Se non è necessario utilizzare AD RMS, utilizzare la crittografia dei messaggi di [Office 365.](ome.md) 
+Per aiutare ad impedire la fuga di informazioni, in Exchange Online è inclusa la funzionalità Information Rights Management (IRM) che fornisce una protezione online e offline dei messaggi di posta elettronica e degli allegati. È possibile configurare Exchange Online IRM per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale, se necessario, per soddisfare i requisiti dell'organizzazione. Questo non è comune. Se non è necessario utilizzare AD RMS, [utilizzare Office 365 Message Encryption.](ome.md) 
 
 La protezione IRM può essere applicata dagli utenti di Microsoft Outlook o Outlook sul web, nonché dagli amministratori utilizzando le regole di protezione del trasporto o le regole di protezione di Outlook. IRM consente agli utenti di controllare chi è autorizzato ad accedere, inoltrare, stampare o copiare dati riservati all'interno di un messaggio di posta elettronica.
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>Modifiche al funzionamento di IRM con Crittografia messaggi di Office 365 (OME) e Azure Active Directory
 
-A partire da settembre 2017, quando si configurano le nuove funzionalità di Crittografia messaggi di Office 365 per l'organizzazione, si configura anche IRM per l'utilizzo con Azure Rights Management (Azure RMS). IRM con Azure RMS non viene più configurato separatamente. Al contrario, OME e Rights Management sono perfettamente integrati. Per ulteriori dettagli sulle nuove funzionalità, vedere [Domande frequenti su Crittografia dei messaggi di Office 365Office 365 Message Encryption](./ome-faq.md). Se si è pronti per iniziare a usare le nuove funzionalità OME all'interno dell'organizzazione, vedere [Configurare nuove funzionalità di Office 365 Message Encryption in Azure Information Protection](./set-up-new-message-encryption-capabilities.md).
+A partire da settembre 2017, quando si configurano le nuove funzionalità di Crittografia messaggi di Office 365 per l'organizzazione, si configura anche IRM per l'utilizzo con Azure Rights Management (Azure RMS). IRM con Azure RMS non viene più configurato separatamente. Al contrario, OME e Rights Management sono perfettamente integrati. Per ulteriori dettagli sulle nuove funzionalità, vedere [Domande frequenti su Crittografia dei messaggi di Office 365Office 365 Message Encryption](./ome-faq.yml). Se si è pronti per iniziare a usare le nuove funzionalità OME all'interno dell'organizzazione, vedere [Configurare nuove funzionalità di Office 365 Message Encryption in Azure Information Protection](./set-up-new-message-encryption-capabilities.md).
   
 ## <a name="how-irm-works-with-exchange-online-and-active-directory-rights-management-services"></a>Funzionamento di IRM con Exchange Online e Active Directory Rights Management Services
 

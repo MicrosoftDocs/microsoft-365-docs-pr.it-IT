@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora attività estende la funzionalità di classificazione dei dati consentendo di visualizzare e filtrare le azioni intraprese dagli utenti sul contenuto etichettato.
-ms.openlocfilehash: 6825c00373617011db28fa484f272086f887ea40
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
-ms.translationtype: HT
+ms.openlocfilehash: 414ef4e5d9f6472180a5eaef391d3eba33463b02
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921634"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114008"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introduzione a Esplora attività
 
-Le schede Panoramica ed Esplora contenuto della classificazione dei dati consentono di ottenere informazioni sul contenuto individuato ed etichettato nonché di sapere dove si trova tale contenuto. Esplora attività estende questa famiglia di funzionalità, consentendo di monitorare le operazioni eseguite sul contenuto etichettato. Le informazioni di Esplora attività sono visualizzate in ordine cronologico.
+La [panoramica della classificazione dei](data-classification-overview.md) dati e le schede [di](data-classification-content-explorer.md) Esplora contenuto offrono visibilità sul contenuto individuato ed etichettato e sulla posizione del contenuto. Esplora attività estende questa famiglia di funzionalità, consentendo di monitorare le operazioni eseguite sul contenuto etichettato. Esplora attività offre una visualizzazione cronologica delle attività nel contenuto etichettato. Le informazioni sull'attività vengono raccolte dai Microsoft 365 di controllo unificati, trasformate e rese disponibili nell'interfaccia utente di Esplora attività. 
 
 ![Segnaposto per screenshot della panoramica di Esplora attività](../media/data-classification-activity-explorer-1.png)
 
@@ -43,6 +43,7 @@ Sono disponibili per l'uso oltre 30 filtri diversi, alcuni dei quali sono:
 - Criteri DLP
 
 
+
 ## <a name="prerequisites"></a>Prerequisiti
 
 A ogni account che accede e usa la classificazione dei dati deve essere assegnata una licenza da uno di questi abbonamenti:
@@ -56,7 +57,11 @@ A ogni account che accede e usa la classificazione dei dati deve essere assegnat
 
 ### <a name="permissions"></a>Autorizzazioni
 
- Per accedere alla scheda Esplora attività, è necessario che a un account sia assegnata l'appartenenza a uno di questi ruoli o gruppi di ruoli.
+ Per ottenere l'accesso alla scheda Esplora attività, è necessario assegnare esplicitamente a un account l'appartenenza a uno di questi gruppi di ruoli o concedere esplicitamente il ruolo.
+
+<!--
+> [!IMPORTANT]
+> Access to Activity explorer via the Security reader or Device Management role groups or other has been removed-->
 
 **Gruppi di ruoli di Microsoft 365**
 
@@ -65,21 +70,49 @@ A ogni account che accede e usa la classificazione dei dati deve essere assegnat
 - Amministratore della sicurezza
 - Amministratore dati di conformità
 
-## <a name="activity-type"></a>Tipo di attività
+**Microsoft 365 ruoli**
 
-Microsoft 365 monitora e crea report sui tipi di attività in SharePoint Online e OneDrive, ad esempio:
+- Amministratore di conformità
+- Amministratore della sicurezza
+
+## <a name="activity-types"></a>Tipi di attività
+
+Esplora attività raccoglie informazioni sulle attività dai log di controllo su più origini di attività. Per informazioni più dettagliate sull'attività di applicazione di etichette a Esplora attività, vedi Eventi di etichettatura [disponibili in Esplora attività.](data-classification-activity-explorer-available-events.md)
+
+**Attività delle etichette** di riservatezza e **attività** di etichettatura di conservazione da applicazioni native di Office, componente aggiuntivo di Azure Information Protection, SharePoint Online, Exchange Online (solo etichette di riservatezza) e OneDrive. Ecco alcuni esempi:
 
 - Etichetta applicata
 - Etichetta modificata (sottoposta a upgrade o downgrade oppure rimossa)
 - Simulazione di etichettatura automatica
+- file letto 
 
-Conoscere le azioni intraprese sul contenuto etichettato sensibile consente di verificare l'efficacia dei controlli già implementati, ad esempio i [criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md). Se non sono efficaci o se si individua un comportamento imprevisto, ad esempio un numero elevato di elementi etichettati come `highly confidential` declassato a `general`, è possibile gestire i vari criteri e intraprendere nuove azioni per limitare il comportamento indesiderato.
+**Scanner Azure Information Protection (AIP) e client AIP**
+
+- protezione applicata
+- protezione modificata
+- protezione rimossa
+- file individuati 
+
+Esplora attività raccoglie anche gli eventi corrispondenti ai criteri **DLP** di Exchange Online, SharePoint Online, OneDrive, Teams Chat e canale (anteprima), cartelle e raccolte di SharePoint locali e condivisioni file locali e dispositivi Windows 10 tramite prevenzione della perdita dei dati degli endpoint **(DLP).** Alcuni esempi di eventi Windows 10 dispositivi sono file:
+
+- eliminazioni
+- creazioni
+- copiato negli Appunti
+- modificati
+- lettura
+- stampa
+- ridenominazione
+- copiato nella condivisione di rete
+- accessibile da un'app non consentita 
+
+Il valore di comprendere quali azioni vengono intraprese con il contenuto con etichetta sensibile è che [](dlp-learn-about-dlp.md) è possibile vedere se i controlli già messi in atto, ad esempio la prevenzione della perdita di dati, sono efficaci o meno. Se non sono efficaci o se si individua un comportamento imprevisto, ad esempio un numero elevato di elementi etichettati come `highly confidential` declassato a `general`, è possibile gestire i vari criteri e intraprendere nuove azioni per limitare il comportamento indesiderato.
 
 > [!NOTE]
 > Esplora risorse non esegue il monitoraggio delle attività di conservazione per Exchange Online.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
 - [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
-- [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
-
+- [Ulteriori informazioni sui tipi di informazioni riservate](sensitive-information-type-learn-about.md)
+- [Informazioni sulla classificazione dei dati](data-classification-overview.md)

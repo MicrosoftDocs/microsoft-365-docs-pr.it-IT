@@ -21,21 +21,21 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come importare dati di terze parti da piattaforme di social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione documenti nelle cassette postali di Microsoft 365.
-ms.openlocfilehash: 83ba81907a9db8dd1f4e95e5df3306366838c1ba
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+description: Informazioni su come importare dati di terze parti da piattaforme di social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione documenti Microsoft 365 cassette postali.
+ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163651"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764111"
 ---
 # <a name="archive-third-party-data"></a>Archiviare i dati di terze parti
 
-Microsoft 365 consente agli amministratori di utilizzare i connettori dati per importare e archiviare dati di terze parti da piattaforme di social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione documenti nelle cassette postali nell'organizzazione di Microsoft 365. Uno dei principali vantaggi dell'utilizzo dei connettori di dati per importare e archiviare dati di terze parti in Microsoft 365 è che è possibile applicare diverse soluzioni di conformità di Microsoft 365 dopo l'importazione. Ciò consente di garantire che i dati non Microsoft dell'organizzazione siano conformi alle normative e agli standard che influiscono sull'organizzazione.
+Microsoft 365 consente agli amministratori di utilizzare i connettori dati per importare e archiviare dati di terze parti da piattaforme di social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione documenti nelle cassette postali dell'organizzazione Microsoft 365 aziendale. Uno dei vantaggi principali dell'utilizzo dei connettori di dati per importare e archiviare dati di terze parti in Microsoft 365 è che è possibile applicare diverse soluzioni di conformità Microsoft 365 dopo l'importazione. Ciò consente di garantire che i dati non Microsoft dell'organizzazione siano conformi alle normative e agli standard che influiscono sull'organizzazione.
 
 ## <a name="third-party-data-connectors"></a>Connettori dati di terze parti
 
-Nella tabella seguente sono elencati i connettori di dati di terze parti disponibili nel Centro conformità Microsoft 365. La tabella riepiloga inoltre le soluzioni di conformità che è possibile applicare ai dati di terze parti dopo l'importazione e l'archiviazione in Microsoft 365. Vedere la [sezione successiva per](#overview-of-compliance-solutions-that-support-third-party-data) una descrizione più dettagliata di ogni soluzione di conformità e su come può trarre vantaggio da dati di terze parti.
+Nella tabella seguente sono elencati i connettori di dati di terze parti disponibili nel Centro Microsoft 365 conformità. La tabella riepiloga inoltre le soluzioni di conformità che è possibile applicare ai dati di terze parti dopo l'importazione e l'archiviazione in Microsoft 365. Vedere la [sezione successiva per](#overview-of-compliance-solutions-that-support-third-party-data) una descrizione più dettagliata di ogni soluzione di conformità e su come può trarre vantaggio da dati di terze parti.
 
 > [!TIP]
 > Fare clic sul collegamento nella colonna **Dati di terze** parti per seguire le istruzioni dettagliate per la creazione di un connettore per tale tipo di dati.
@@ -47,17 +47,19 @@ Nella tabella seguente sono elencati i connettori di dati di terze parti disponi
 |[Bell Network <sup>1</sup>](archive-bell-network-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Cisco Jabber <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Cisco Jabber su MS SQL <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Cisco Jabber su Oracle <sup>2</sup>](archive-ciscojabberonoracle-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Cisco Jabber su PostgreSQL <sup>2</sup>](archive-ciscojabberonpostgresql-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[EML <sup>2</sup>](archive-eml-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[Numero organizzazione <sup>1</sup>](archive-enterprise-number-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Enterprise Numero <sup>1</sup>](archive-enterprise-number-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[FX Connect <sup>2</sup>](archive-fxconnect-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[FX Connessione <sup>2</sup>](archive-fxconnect-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Risorse umane](import-hr-data.md) ||||||![Segno di spunta](../media/checkmark.png)
 |[ICE Chat](archive-icechat-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Jive <sup>2</sup>](archive-jive-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[Ms SQL Database <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
+|[MS database SQL <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
 |[Rete O2 <sup>1</sup>](archive-o2-network-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Badging fisico](import-physical-badging-data.md) ||||||![Segno di spunta](../media/checkmark.png)|
 |[Pivot <sup>2</sup>](archive-pivot-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
@@ -90,7 +92,7 @@ I dati di terze parti elencati nella tabella precedente (ad eccezione dei dati d
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Panoramica delle soluzioni di conformità che supportano dati di terze parti
 
-Nelle sezioni seguenti vengono descritti alcuni aspetti che le soluzioni di conformità di Microsoft 365 possono aiutare a gestire i dati di terze parti elencati nella tabella precedente.
+Le sezioni seguenti descrivono alcuni degli aspetti che le soluzioni Microsoft 365 conformità possono aiutare a gestire i dati di terze parti elencati nella tabella precedente.
 
 ### <a name="litigation-hold"></a>Conservazione per controversia legale
 
@@ -98,7 +100,7 @@ Si posiziona un [blocco per controversia legale](create-a-litigation-hold.md) su
 
 ### <a name="ediscovery"></a>eDiscovery
 
-I tre principali strumenti di eDiscovery in Microsoft 365 sono Ricerca contenuto, Core eDiscovery ed Advanced eDiscovery.
+I tre principali strumenti di eDiscovery in Microsoft 365 ricerca contenuto, Core eDiscovery e Advanced eDiscovery.
 
 - **[Ricerca contenuto](content-search.md).** È possibile utilizzare lo strumento di ricerca contenuto per cercare nelle cassette postali i dati di terze parti importati. È possibile utilizzare le query e le condizioni di ricerca per restringere i risultati della ricerca e esportare i risultati della ricerca.
 
@@ -126,6 +128,6 @@ I segnali provenienti da dati di terze parti, come i dati selettivi sulle risors
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Collaborazione con un partner Microsoft per archiviare dati di terze parti
 
-Un'altra opzione per l'importazione e l'archiviazione di dati di terze parti è che l'organizzazione lavori con un partner Microsoft. Se un tipo di dati di terze parti non è supportato dai connettori dati disponibili nel Centro conformità Microsoft, è possibile collaborare con un partner in grado di fornire un connettore personalizzato che verrà configurato per estrarre regolarmente elementi dall'origine dati di terze parti e quindi connettersi al cloud Microsoft da un'API di terze parti e importare tali elementi in Microsoft 365. Il connettore partner converte inoltre il contenuto di un elemento dall'origine dati di terze parti in un messaggio di posta elettronica e quindi lo importa in una cassetta postale in Microsoft 365.
+Un'altra opzione per l'importazione e l'archiviazione di dati di terze parti è che l'organizzazione lavori con un partner Microsoft. Se un tipo di dati di terze parti non è supportato dai connettori di dati disponibili nel Centro conformità Microsoft, è possibile collaborare con un partner in grado di fornire un connettore personalizzato che verrà configurato per estrarre regolarmente elementi dall'origine dati di terze parti e quindi connettersi al cloud Microsoft da un'API di terze parti e importare tali elementi in Microsoft 365. Il connettore partner converte inoltre il contenuto di un elemento dall'origine dati di terze parti in un messaggio di posta elettronica e quindi lo importa in una cassetta postale in Microsoft 365.
 
-Per un elenco dei partner con cui è possibile lavorare e il processo dettagliato per questo metodo, vedere Collaborare con un partner per archiviare dati di terze parti [in Microsoft 365.](work-with-partner-to-archive-third-party-data.md)
+Per un elenco dei partner che è possibile utilizzare e il processo dettagliato per questo metodo, vedere Collaborare con un partner per archiviare dati di terze parti [in Microsoft 365](work-with-partner-to-archive-third-party-data.md).

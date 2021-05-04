@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f670a3cdefb7b6cd78d24a17fc2e6276274efff3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
+ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222419"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52079259"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -45,7 +45,7 @@ Infine, quando si configura la crittografia nelle etichette di riservatezza come
 - **Assegnare le autorizzazioni adesso**, in modo da determinare esattamente quali utenti ottengono le autorizzazioni per il contenuto con tale etichetta.
 - **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta al contenuto. In questo modo è possibile consentire agli utenti dell'organizzazione una certa flessibilità, che potrebbe essere necessaria per collaborare e svolgere il proprio lavoro.
 
-Le impostazioni di crittografia sono disponibili quando si [crea un'etichetta di riservatezza](create-sensitivity-labels.md) nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità.
+Le impostazioni di crittografia sono disponibili quando si [crea un'etichetta di riservatezza](create-sensitivity-labels.md) nel Centro conformità Microsoft 365. È anche possibile usare il portale precedente, ovvero il Centro sicurezza e conformità.
 
 ## <a name="understand-how-the-encryption-works"></a>Come funziona la crittografia
 
@@ -135,11 +135,11 @@ Impostazioni per il controllo di accesso del contenuto crittografato:
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licenza d'uso di Rights Management per l'accesso offline
 
-Quando un utente apre un documento o un messaggio di posta elettronica protetto dalla crittografia del servizio Microsoft Azure AD Rights Management, all'utente viene concessa una licenza d'uso di Azure Rights Management per quel contenuto. Questa licenza d'uso è un certificato che contiene i diritti di utilizzo dell'utente per il documento o il messaggio di posta elettronica e la chiave di crittografia usata per crittografare il contenuto. La licenza d'uso contiene anche una data di scadenza, se impostata, e la durata della validità.
+Quando un utente apre un documento o un messaggio di posta elettronica protetto dalla crittografia del servizio Microsoft Azure AD Rights Management, gli viene concessa una licenza d'uso di Azure Rights Management per quel contenuto. Questa licenza d'uso è un certificato che contiene i diritti di utilizzo dell'utente per il documento o il messaggio di posta elettronica e la chiave di crittografia usata per crittografare il contenuto. La licenza d'uso contiene anche una data di scadenza, se impostata, e la durata della validità.
 
 Se non è stata impostata alcuna data di scadenza, il periodo di validità predefinito del contratto di licenza con l'utente finale per un tenant è di 30 giorni. Per la durata della licenza d'uso, all'utente non viene richiesto di ripetere l'autenticazione o specificare una nuova autorizzazione per il contenuto. Questo processo consente all'utente di continuare ad aprire il documento o il messaggio di posta elettronica protetto senza una connessione Internet. Quando scade il periodo di validità della licenza d'uso, al successivo accesso al documento o al messaggio di posta elettronica protetto, l'utente deve ripetere l'autenticazione o specificare una nuova autorizzazione.
 
-Oltre al nuovo processo di autenticazione, vengono valutati nuovamente il gruppo a cui appartiene l'utente e le impostazioni di crittografia. Questo significa che, se dopo l'ultimo accesso, sono cambiate le impostazioni di crittografia o è cambiato il gruppo di appartenenza dell'utente, anche le autorizzazioni per accedere allo stesso documento o messaggio di posta elettronica potrebbero essere cambiate.
+Oltre al nuovo processo di autenticazione, vengono valutati nuovamente il gruppo a cui appartiene l'utente e le impostazioni di crittografia. Questo significa che se dopo l'ultimo accesso sono cambiati i criteri o il gruppo di appartenenza dell'utente, anche le autorizzazioni per accedere allo stesso documento o messaggio di posta elettronica potrebbero essere cambiate.
 
 Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 giorni, vedere [Licenza d'uso di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
@@ -206,7 +206,7 @@ Per eseguire questa operazione, aggiungere utenti o gruppi, assegnargli le autor
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L'emittente di Rights Management (l'utente che applica l'etichetta di riservatezza) dispone sempre dell'autorizzazione Controllo completo
 
-La crittografia per un'etichetta di riservatezza usa il servizio Azure Rights Management (Azure RMS) di Azure Information Protection. Quando un utente applica un'etichetta di riservatezza per proteggere un documento o un messaggio di posta elettronica utilizzando la crittografia, l'utente diventa l'emittente di Rights Management per quel contenuto.
+La crittografia per un'etichetta di riservatezza usa il servizio Microsoft Azure AD Rights Management di Azure Information Protection. Quando un utente applica un'etichetta di riservatezza per proteggere un documento o un messaggio di posta elettronica utilizzando la crittografia, l'utente diventa l'emittente di Rights Management per quel contenuto.
 
 All'emittente di Rights Management sono sempre concesse le autorizzazioni di controllo completo per il documento o messaggio di posta elettronica. Inoltre:
 
@@ -236,7 +236,7 @@ Per altre informazioni, prerequisiti e istruzioni di configurazione, vedere [Cri
     
     L'opzione Non inoltrare è supportata da tutti i client di posta elettronica che supportano le etichette di riservatezza. Tuttavia, l'applicazione dell'opzione **Solo crittografia** con un'etichetta di riservatezza è una release recente supportata solo dall'etichettatura integrata e non dal client di etichettatura unificata di Azure Information Protection. L'etichetta non sarà visibile per i client di posta elettronica che non supportano questa funzionalità.
     
-    Per controllare quale app Outlook che usa l'etichettatura integrata supporti l'applicazione dell'opzione Solo crittografia con un'etichetta di riservatezza, usare la [tabella funzionalità per Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) e la riga **Consenti agli utenti di assegnare autorizzazioni: Solo crittografia**.
+    Per controllare la versione minima delle app di Outlook che usano l'etichettatura integrata per supportare l'applicazione dell'opzione Solo crittografia con un'etichetta di riservatezza, usare la [tabella funzionalità per Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) e la riga **Consenti agli utenti di assegnare autorizzazioni: Solo crittografia**.
 
 - In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare le autorizzazioni personalizzate per utenti, gruppi oppure organizzazioni specifici.
 
@@ -424,7 +424,7 @@ Prima di utilizzare la crittografia, potrebbe essere necessario eseguire alcune 
 
 - Configurare Exchange per Azure Information Protection
     
-    Non è necessario configurare Exchange per Azure Information Protection prima che gli utenti possano applicare etichette in Outlook per crittografare i propri messaggi di posta elettronica. Tuttavia, se Exchange non è configurato per Azure Information Protection, non si hanno a disposizione le funzionalità complete offerte dall'uso della protezione di Azure Rights Management con Exchange.
+    Non è necessario configurare Exchange per Azure Information Protection prima che gli utenti possano applicare etichette in Outlook per crittografare i propri messaggi di posta elettronica. Tuttavia, se Exchange non è configurato per Azure Information Protection, non si hanno a disposizione le funzionalità complete offerte dall'uso della protezione di Microsoft Azure AD Rights Management con Exchange.
     
     Ad esempio, gli utenti non possono visualizzare i messaggi di posta elettronica crittografati sui telefoni cellulari o con Outlook sul Web, i messaggi di posta elettronica crittografati non possono essere indicizzati per la ricerca e non è possibile configurare i criteri di prevenzione della perdita dei dati di Exchange Online per la protezione di Rights Management. 
     

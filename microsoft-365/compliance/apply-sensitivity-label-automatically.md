@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: d645d185524d111af4eafed4b5fba06483525a85
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23320d962b52e1a443d459cb6b57d444fca91592
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920076"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939310"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -71,7 +71,9 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
         - Per questi file di Office, è supportato il formato Open XML, ad esempio le estensioni .docx e .xlsx, ma non il formato di Microsoft Office 97-2003, ad esempio le estensioni .doc e .xls.
     - Se sono presenti regole per il flusso di posta di Exchange o criteri di prevenzione della perdita dei dati che applicano la crittografia IRM: quando il contenuto viene identificato da queste regole o criteri e da un criterio di applicazione automatica di etichette, l'etichetta viene applicata. Se quell'etichetta applica la crittografia, le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati vengono ignorate. Se invece quella etichetta non applica la crittografia, in aggiunta all'etichetta vengono applicate le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati.
     - I messaggi di posta elettronica con crittografia IRM senza etichetta verranno sostituiti da un'etichetta con qualsiasi impostazione di crittografia se esiste una corrispondenza usando l'etichettatura automatica.
-    - La posta in arrivo viene etichettata quando esiste una corrispondenza con le condizioni di etichettatura automatica. Tuttavia, se l'etichetta è configurata per la crittografia, la crittografia non viene applicata.
+    - La posta in arrivo viene etichettata quando esiste una corrispondenza con le condizioni di etichettatura automatica:
+        - Se l'etichetta è configurata per la [crittografia](encryption-sensitivity-labels.md), la crittografia non viene applicata.
+        - Se l'etichetta è configurata per l'applicazione di [contrassegni dinamici](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), tenere presente che questo può risultare in nomi di persone esterne all'organizzazione.
     - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è la persona che invia il messaggio di posta elettronica.
     
 
@@ -128,7 +130,7 @@ Quando si seleziona l'opzione **Tipi di informazioni sensibili**, viene visualiz
 
 ![Tipi di informazioni sensibili per l'assegnazione automatica di etichette nelle app Office](../media/sensitivity-labels-sensitive-info-types.png)
 
-Analogamente a quando si configurano i criteri sulla prevenzione della perdita dei dati, è possibile perfezionare la condizione cambiando il conteggio delle istanze e l’accuratezza della corrispondenza. Ad esempio:
+Analogamente a quando si configurano i criteri sulla prevenzione della perdita dei dati, è possibile perfezionare la condizione cambiando il numero delle istanze e l’accuratezza della corrispondenza. Ad esempio:
 
 ![Opzioni per l'accuratezza della corrispondenza e numero di istanze](../media/sensitivity-labels-instance-count-match-accuracy.png)
 
@@ -164,7 +166,7 @@ Durante il periodo di anteprima dell'opzione, le app seguenti supportano i class
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Consigliare all'utente di applicare un'etichetta di riservatezza
 
-Se si preferisce, è possibile consigliare agli utenti di applicare l'etichetta. Con questa opzione, gli utenti possono accettare la classificazione e le eventuali protezioni associate o ignorare il suggerimento se l'etichetta non è adatta al relativo contenuto.
+Se si preferisce, si può consigliare agli utenti di applicare l'etichetta. Con questa opzione, gli utenti possono accettare la classificazione e l'eventuale protezione associata oppure chiudere il suggerimento, se l'etichetta non è adatta al contenuto.
 
 ![Opzione per consigliare un'etichetta di riservatezza agli utenti](../media/Sensitivity-labels-Recommended-label-option.png)
 
@@ -174,11 +176,11 @@ Ecco un esempio di un avviso del client di etichettatura unificata di Azure Info
 
 ### <a name="when-automatic-or-recommended-labels-are-applied"></a>Quando vengono applicate le etichette automatiche o consigliate
 
-L'implementazione dell'etichettatura automatica e consigliata nelle app di Office varia a seconda se si utilizza l'etichettatura non integrata in Office o il client di etichettatura unificata di Azure Information Protection. Tuttavia, in entrambi i casi:
+L'implementazione dell'etichettatura automatica e consigliata nelle app di Office varia a seconda che si usi l'etichettatura integrata in Office o il client di etichettatura unificata di Azure Information Protection. In entrambi i casi, tuttavia:
 
-- Non è possibile usare l'assegnazione automatica di etichette per le e-mail e i documenti in precedenza etichettati manualmente o associati automaticamente a un grado maggiore di riservatezza. È possibile applicare una singola etichetta di riservatezza a un documento o una e-mail (oltre a una singola etichetta di conservazione).
+- Non è possibile usare l'assegnazione automatica di etichette per le e-mail e i documenti in precedenza etichettati manualmente o associati automaticamente a un grado maggiore di riservatezza. È possibile applicare una singola etichetta di riservatezza a un documento o un messaggio di posta elettronica (oltre a una singola etichetta di conservazione).
 
-- Non è possibile usare l'assegnazione di etichette consigliate per i documenti o i messaggi di posta elettronica etichettati in precedenza con un grado maggiore di riservatezza. Quando il contenuto è già stato etichettato con un grado maggiore di riservatezza, l'utente non visualizzerà l'avviso con il consiglio e il suggerimento per i criteri.
+- Non è possibile usare la classificazione consigliata per i documenti etichettati in precedenza con un grado maggiore di riservatezza. Quando il contenuto è già stato etichettato con una riservatezza superiore, l'utente non visualizzerà l'avviso con il consiglio e il suggerimento per i criteri.
 
 Caratteristiche specifiche dell'etichettatura predefinita:
 
@@ -204,7 +206,7 @@ Assicurarsi di conoscere i prerequisiti prima di configurare i criteri di etiche
 
 - Modalità di simulazione:
     - È necessario abilitare il controllo per Microsoft 365. Per abilitare il controllo o verificare se è già attivato, vedere [Abilitare o disabilitare la ricerca nel log di audit](turn-audit-log-search-on-or-off.md).
-    - Per visualizzare i contenuti del file nella visualizzazione origine, è necessario avere il ruolo di **Visualizzatore contenuto di Esplora contenuto**. Per impostazione predefinita, gli amministratori globali non hanno questo ruolo. Se non si dispone di questa autorizzazione, non viene visualizzato il riquadro di anteprima quando si seleziona un elemento dalla scheda **Elementi corrispondenti**.
+    - Per visualizzare il contenuto del file e del messaggio di posta elettronica nella visualizzazione origine, è necessario avere il ruolo di **Visualizzatore contenuto di Esplora contenuto**. Per impostazione predefinita, gli amministratori globali non hanno questo ruolo. Se non si dispone di questa autorizzazione, non viene visualizzato il riquadro di anteprima quando si seleziona un elemento dalla scheda **Elementi corrispondenti**.
 
 - Per assegnare automaticamente un'etichetta ai file in SharePoint e OneDrive:
     - Sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).

@@ -1,12 +1,12 @@
 ---
-title: Risolvere gli errori di distribuzione del blocco di eDiscovery
+title: Risoluzione dei problemi di blocco di eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -15,15 +15,80 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ROBOTS: NOINDEX, NOFOLLOW
-description: Risolvere gli errori relativi ai blocchi applicati ai responsabile e alle origini dati non di tipo responsabile in Advanced eDiscovery.
-ms.openlocfilehash: a9956ac76cc083b6e408bd2f458b0320158fa231
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+description: Risolvere gli errori correlati alle esenzioni legali applicate ai custodi e alle origini dati non depositario in Core eDiscovery.
+ms.openlocfilehash: 3bd417f2eb6bfb8de8d4b5ccaeb48e6ae1c888eb
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099829"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860387"
 ---
-# <a name="troubleshoot-ediscovery-hold-errors"></a>Risolvere gli errori di blocco di eDiscovery
+# <a name="troubleshoot-ediscovery-hold-errors"></a>Risoluzione dei problemi di blocco di eDiscovery
 
-iniziare ad aggiungere contenuto qui
+In questo articolo vengono illustrati i problemi comuni che possono verificarsi con i blocchi di eDiscovery e come risolverli. L'articolo include inoltre procedure consigliate per ridurre o evitare questi problemi.
+
+## <a name="recommended-practices"></a>Procedure consigliate
+
+Per ridurre il numero di errori correlati ai blocchi di eDiscovery, è consigliabile eseguire le procedure seguenti:
+
+- Se una distribuzione del blocco è ancora in sospeso, con stato o , attendere il completamento della distribuzione del blocco prima di `On (Pending)` `Off (Pending)` apportare ulteriori aggiornamenti.
+
+- Unire gli aggiornamenti a un blocco di eDiscovery in una singola richiesta in blocco anziché aggiornare ripetutamente il criterio di blocco per ogni transazione. Ad esempio, per aggiungere più cassette postali utente a un criterio di blocco esistente utilizzando il cmdlet [Set-CaseHoldPolicy,](/powershell/module/exchange/set-caseholdpolicy) eseguire il comando (o aggiungere come blocco di codice a uno script) in modo che venga eseguito una sola volta per aggiungere più utenti.
+
+  **Valido**
+
+    ```powershell
+    Set-CaseHoldPolicy -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
+    ```
+
+   **Non valido**
+
+    ```powershell
+    $users = {$user1, $user2, $user3, $user4, $user5}
+    ForEach($user in $users)
+    {
+        Set-CaseHoldPolicy -AddExchangeLocation $user
+    }
+    ```
+
+   Nell'esempio errato precedente, il cmdlet viene eseguito cinque volte separate per completare l'attività. Per ulteriori informazioni sulle procedure consigliate per l'aggiunta di utenti a un criterio di blocco, vedere [la sezione Ulteriori](#more-information) informazioni.
+
+- Prima di contattare il supporto Tecnico Microsoft sui problemi di blocco di eDiscovery, seguire i passaggi descritti nella sezione [Errore/problema:](#errorissue-holds-dont-sync) I blocchi non vengono sincronizzati per ritentare la distribuzione del blocco. Questo processo spesso risolve problemi temporanei, tra cui errori interni del server.
+
+## <a name="errorissue-holds-dont-sync"></a>Errore/problema: i blocchi non vengono sincronizzati
+
+Se viene visualizzato uno dei seguenti messaggi di errore quando si mettono in attesa i custodi e le origini dati, utilizzare la procedura di risoluzione per risolvere il problema.
+
+> Risorse: la distribuzione del criterio richiede più tempo del previsto. L'aggiornamento dello stato finale della distribuzione potrebbe richiedere altre 2 ore, quindi controllare di nuovo tra un paio d'ore.
+
+> Impossibile distribuire i criteri nell'origine contenuto a causa di un problema temporaneo Office 365 datacenter. Il criterio corrente non viene applicato ad alcun contenuto nell'origine, quindi non c'è alcun impatto dalla distribuzione bloccata. Per risolvere il problema, provare a ridistribuire il criterio.
+
+> Non è stato possibile eseguire le modifiche richieste al criterio a causa di un errore temporaneo del server interno. Riprovare tra 30 minuti.
+
+### <a name="resolution"></a>Risoluzione
+
+1. Connessione [a PowerShell & Centro](/powershell/exchange/connect-to-scc-powershell) sicurezza e conformità ed eseguire il comando seguente per un blocco di eDiscovery:
+
+   ```powershell
+   Get-CaseHoldPolicy <policyname> -DistributionDetail | FL
+   ```
+
+2. Esaminare il valore nel *parametro DistributionDetail.* Cercare errori simili ai seguenti:
+
+   > Errore: risorse: la distribuzione del criterio richiede più tempo del previsto. L'aggiornamento dello stato finale della distribuzione potrebbe richiedere altre 2 ore, quindi controllare di nuovo tra un paio d'ore.
+
+3. Provare a eseguire **il comando Set-CaseHoldPolicy -RetryDistribution** sul criterio di conservazione in questione. Per esempio:
+
+   ```powershell
+   Set-CaseHoldPolicy <policyname> -RetryDistribution
+   ```
+
+## <a name="more-information"></a>Altre informazioni
+
+- Le indicazioni sull'aggiornamento dei criteri di blocco per più utenti nella sezione "Procedure consigliate" derivano dal fatto che il sistema blocca gli aggiornamenti simultanei a un criterio di conservazione. Ciò significa che quando un criterio di conservazione aggiornato viene applicato a nuovi percorsi di contenuto e il criterio di conservazione è in sospeso, non è possibile aggiungere ulteriori percorsi di contenuto al criterio di conservazione. Ecco alcuni aspetti da tenere presenti per ridurre il problema:
+  
+  - Ogni volta che un blocco viene aggiornato, passa immediatamente allo stato in sospeso. Lo stato in sospeso indica che il blocco viene applicato ai percorsi del contenuto.
+  
+  - Se si dispone di uno script che esegue un ciclo e aggiunge percorsi ai criteri uno alla volta (in modo analogo all'esempio non corretto mostrato nella sezione "Procedure consigliate"), il primo percorso del contenuto (ad esempio, una cassetta postale utente) avvia il processo di sincronizzazione che attiva lo stato in sospeso. Ciò significa che gli altri utenti aggiunti al criterio nei cicli successivi comportano un errore.
+  
+  - Se l'organizzazione utilizza uno script che esegue un ciclo per aggiornare i percorsi del contenuto per un criterio di blocco, è necessario aggiornare lo script in modo che aggiorne i percorsi in una singola operazione in blocco (come illustrato nell'esempio corretto nella sezione "Procedure consigliate").

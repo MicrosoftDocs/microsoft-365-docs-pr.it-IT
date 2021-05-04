@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come creare e importare un tipo di informazione sensibile personalizzato per i criteri nel Centro conformità.
-ms.openlocfilehash: 7ba807dce8b1d67280aeab929901327b7bfe03ef
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 18679e171fa704341094dee582124f36a950f8a5
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908534"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113988"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Creare tipi di informazioni sensibili personalizzati usando PowerShell
 
 Questo argomento mostra come usare PowerShell per creare un *pacchetto di regole* XML che definisce un [tipo di informazione sensibile](sensitive-information-type-entity-definitions.md) personalizzato. È necessario sapere come si creano le espressioni regolari. Ad esempio, in questo argomento viene creato un tipo di informazioni riservate personalizzato che identifica un ID dipendente. È possibile usare questo file XML di esempio come punto di partenza per il proprio file XML. Se non hai familiarità con i tipi di informazioni sensibili, leggi [Altre informazioni sui tipi di informazioni sensibili](sensitive-information-type-learn-about.md).
 
-Dopo aver creato un file XML ben formato, è possibile caricarlo in Microsoft 365 usando PowerShell in Microsoft 365. A questo punto è possibile usare il tipo di informazione sensibile personalizzato dei criteri, e verificare che stia rilevando le informazioni sensibili come previsto.
+Dopo aver creato un file XML ben formato, è possibile caricarlo in Microsoft 365 con PowerShell di Microsoft 365. A questo punto è possibile utilizzare il tipo di informazioni sensibili personalizzato nei criteri e verificare che stia rilevando le informazioni sensibili come previsto.
 
 > [!NOTE]
 > Se i comandi di PowerShell non sono necessari, si possono creare dei tipi di informazioni sensibili personalizzati nel Centro conformità.  Per altre informazioni, vedere [Creare un tipo di informazione sensibile personalizzato](create-a-custom-sensitive-information-type.md).
@@ -61,15 +61,15 @@ Di seguito viene mostrato il codice XML del pacchetto di regole che verrà creat
 </RulePack>
 <Rules>
 <!-- Employee ID -->
-    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
-        <Pattern confidenceLevel="60">
+    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="65">
             <IdMatch idRef="Regex_employee_id"/>
         </Pattern>
-        <Pattern confidenceLevel="70">
+        <Pattern confidenceLevel="75">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
         </Pattern>
-        <Pattern confidenceLevel="80">
+        <Pattern confidenceLevel="85">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
             <Any minMatches="1">
@@ -128,13 +128,13 @@ Di seguito viene mostrato il codice XML del pacchetto di regole che verrà creat
 
 Prima di iniziare, è utile comprendere la struttura di base dello schema XML per una regola e come è possibile utilizzare questa struttura per definire il tipo di informazioni riservate personalizzato in modo che identifichi il contenuto corretto.
   
-Una regola definisce una o più entità (ovvero tipi di informazioni riservate), mentre ogni entità definisce uno o più criteri. Una configurazione definisce ciò che viene cercato dai criteri durante l'analisi dei contenuti, come messaggi di posta elettronica e documenti.
+Una regola (Rule) definisce una o più entità (tipi di informazioni sensibili), mentre ogni entità (Entity) definisce uno o più modelli. Un modello (Pattern) è l'elemento cercato da un criterio quando valuta contenuti come messaggi di posta elettronica e documenti.
 
-In questo argomento, il markup XML usa il termine regola per indicare i criteri che definiscono un'entità, nota anche come tipo di informazione riservata. Quindi, in questo argomento il termine regola viene usato per indicare un'entità o un tipo di informazione riservata, non condizioni e azioni.
+In questo argomento, il markup XML usa il termine regola per indicare i modelli che definiscono un'entità, nota anche come tipo di informazioni sensibili. Quindi, in questo argomento il termine regola viene usato per indicare un'entità o un tipo di informazioni sensibili, non condizioni e azioni.
   
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>Scenario più semplice: entità con un solo modello
 
-Questo è lo scenario più semplice. I criteri devono identificare il contenuto che include l'ID dipendente dell'organizzazione, formattato come un numero di nove cifre. I criteri si riferiscono quindi a un'espressione regolare contenuta nella regola che identifica i numeri di nove cifre. Qualsiasi contenuto che include un numero di nove cifre soddisfa i criteri.
+Si tratta dello scenario più semplice. Si desidera utilizzare il criterio per identificare il contenuto che include l'ID dipendente dell'organizzazione, formattato come un numero di nove cifre. Pertanto, il modello fa riferimento a un'espressione regolare contenuta nella regola che identifica i numeri di nove cifre. Qualsiasi contenuto includa un numero di nove cifre soddisfa il modello.
   
 ![Diagramma dell'entità con un solo modello](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
@@ -150,7 +150,7 @@ Ad esempio, per aumentare le probabilità di identificazione di contenuto che in
   
 Tenere presente alcuni aspetti importanti di questa struttura:
   
-- I criteri che richiedono altre prove hanno un livello di probabilità più alto. Questo è utile perché quando si usa questo tipo di informazioni riservate nei criteri in un secondo momento, sarà possibile usare azioni più restrittive, come il blocco del contenuto, solo per le corrispondenze con la confidenza più alta, mentre per quelle con la confidenza più bassa si potranno usare azioni meno restrittive, come l'invio di una notifica.
+- I criteri che richiedono altre prove hanno un livello di confidenza più alto. Questo è utile perché, quando si userà questo tipo di informazioni sensibili in un criterio in un secondo momento, sarà possibile usare azioni più restrittive, ad esempio il blocco del contenuto, solo per le corrispondenze con confidenza più alta, mentre per quelle con confidenza più bassa si potranno usare azioni meno restrittive, come l'invio di una notifica.
 
 - Gli elementi di supporto IdMatch e Match fanno riferimento a regex e a parole chiave che in realtà sono elementi figlio di Rule, non di Pattern. Tali elementi di supporto sono utilizzati come riferimento da Pattern, ma sono inclusi in Rule. Questo significa che una singola definizione di un elemento di supporto, come un'espressione regolare o un elenco di parole chiave può funzionare da riferimento per più entità e criteri.
 
@@ -161,7 +161,7 @@ Un'entità è un tipo di informazione riservata, ad esempio un numero di carta d
 ### <a name="name-the-entity-and-generate-its-guid"></a>Assegnare un nome all'entità e creare il relativo GUID
 
 1. Nel proprio editor XML, aggiungere gli elementi Rules ed Entity.
-2. Aggiungere un commento che contenga il nome dell'entità personalizzata, in questo esempio l'ID dipendente. In seguito, aggiungere il nome dell'entità alla sezione delle stringhe localizzate. Il nome verrà visualizzato nell'interfaccia utente quando si creano i criteri.
+2. Aggiungere un commento contenente il nome dell'entità personalizzata, in questo esempio, Employee ID. In un secondo momento, verrà aggiunto il nome dell'entità alla sezione delle stringhe localizzate e tale nome verrà visualizzato nell'interfaccia utente quando si crea un criterio.
 3. Generare un GUID per l'entità. Esistono diversi modi per generare i GUID, ma la soluzione più semplice consiste nell'usare PowerShell digitando **[guid]::NewGuid()**. In seguito, il GUID dell'entità verrà aggiunto anche alla sezione delle stringhe localizzate.
   
 ![Markup XML che mostra gli elementi Rules ed Entity](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -174,7 +174,7 @@ Tutti i criteri seguenti hanno in comune il fatto che fanno tutti riferimento al
   
 ![Markup XML che mostra più elementi Criteri che fanno riferimento a un singolo elemento Regex](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
-Quando vengono soddisfatti, i criteri restituiscono un numero e un livello di probabilità che possono essere usati nelle condizioni dei criteri. Quando viene soddisfatto, un criterio restituisce un numero e un livello di probabilità che è possibile utilizzare nelle condizioni nei criteri. Il livello di confidenza, anche noto come accuratezza della corrispondenza, viene spiegato più avanti in questo argomento.
+Quando viene soddisfatto, un modello restituisce un numero e un livello di confidenza che è possibile usare nelle condizioni del criterio. Quando si aggiunge una condizione per il rilevamento di un tipo di informazioni sensibili a un criterio, è possibile modificare il numero e il livello di confidenza, come illustrato qui. Il livello di confidenza (altrimenti detto accuratezza della corrispondenza) è illustrato più avanti in questo argomento.
   
 ![Numero di istanze e opzioni di precisione di corrispondenza](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -210,7 +210,7 @@ In questo esempio l'entità ID dipendente usa già l'elemento IdMatch per fare r
   
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>Altri criteri, ad esempio date o indirizzi [funzioni predefinite]
 
-Oltre ai tipi di informazioni sensibili personalizzati, i tipi di informazioni sensibile possono usare anche funzioni predefinite che possono identificare prove corroborative, come una data degli Stati Uniti o dell’Unione Europea, una data di scadenza o un indirizzo negli Stati Uniti. Microsoft 365 non supporta il caricamento di funzioni personalizzate, ma quando si crea un tipo di informazione riservata personalizzato, l'entità può fare riferimento alle funzioni predefinite.
+Oltre ai tipi di informazioni sensibili predefinite, i tipi di informazioni sensibili possono usare funzioni predefinite che consentono di identificare prove corroborative, ad esempio una data degli Stati Uniti, una data dell'Unione europea, una data di scadenza o un indirizzo degli Stati Uniti. Microsoft 365 non supporta il caricamento di funzioni personalizzate, ma quando si crea un tipo di informazioni sensibili personalizzato, l'entità può fare riferimento alle funzioni predefinite.
   
 Ad esempio, un badge ID dipendente riporta la data di assunzione, in modo che l'entità personalizzata possa usare la funzione predefinita `Func_us_date` per identificare una data nel formato usato comunemente negli Stati Uniti. 
   
@@ -294,15 +294,15 @@ Si noti che per la posta elettronica, il corpo del messaggio e ciascun allegato 
 
 Maggiore è la prova richiesta da un criterio, maggiore è la probabilità che un'entità effettiva (ad esempio un ID dipendente) sia stata identificata quando si verifica la corrispondenza al criterio. Ad esempio, un criterio che richiede un numero ID di nove cifre, una data di assunzione e una parole chiave in posizioni molto vicine, rispetto ai criteri che richiedono solo un numero ID di nove cifre hanno una maggiore probabilità.
   
-L'elemento Pattern ha un attributo confidenceLevel obbligatorio. Il valore di confidenceLevel, ovvero un numero intero compreso tra 1 e 100, può essere considerato come un ID univoco per ogni criterio in un'entità. Ai criteri in un'entità devono essere assegnati livelli di probabilità diversi. Il valore esatto del numero intero non ha importanza, basta selezionare numeri significativi per il proprio team di conformità. Dopo aver caricato il tipo di informazioni riservate personalizzato e aver creato dei criteri, è possibile fare riferimento a questi livelli di probabilità nelle condizioni delle regole create dall'utente.
+L'elemento Pattern ha un attributo confidenceLevel obbligatorio. Il valore di confidenceLevel, ovvero un numero intero compreso tra 1 e 100, può essere considerato come un ID univoco per ogni modello in un'entità. Ai modelli in un'entità devono essere assegnati livelli di confidenza diversi. Il valore esatto del numero intero non ha importanza, basta selezionare numeri significativi per il proprio team di conformità. Dopo aver caricato il tipo di informazioni sensibili personalizzato e aver creato un criterio, è possibile fare riferimento a questi livelli di confidenza nelle condizioni delle regole create.
   
 ![Markup XML che mostra gli elementi Pattern con i diversi valori per l'attributo confidenceLevel](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
 Oltre all'attributo confidenceLevel per ogni elemento Pattern, l'elemento Entity ha un attributo recommendedConfidence. L'attributo recommendedConfidence può essere considerato come il livello di confidenza predefinito per la regola. Quando si crea una regola nei criteri, se non si specifica un livello di confidenza per la regola, la corrispondenza per questa regola verrà basata sul livello di confidenza consigliato per l'entità. Tenere presente che l'attributo recommendedConfidence è obbligatorio per ogni ID entità nel pacchetto di regole, se non è possibile salvare i criteri che usano il tipo di informazioni sensibili. 
   
-## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Vuoi che siano supportate altre lingue nell'interfaccia utente del Centro conformità? Elemento LocalizedStrings
+## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Si vogliono supportare altre lingue nell'interfaccia utente del Centro conformità? [elemento LocalizedStrings]
 
-Se il team di conformità usa il Centro conformità Microsoft 365 per creare i criteri in aree geografiche e in lingue differenti, è possibile fornire versioni localizzate del nome e della descrizione del tipo di informazioni riservate personalizzato. Quando il team di conformità usa Microsoft 365 in un'altra lingua supportata, il nome localizzato viene mostrato nell'interfaccia.
+Se il team di conformità usa il Centro conformità Microsoft 365 per creare criteri in diverse impostazioni locali e in diverse lingue, è possibile fornire versioni localizzate del nome e della descrizione del tipo di informazioni sensibili personalizzato. Quando il team di conformità usa Microsoft 365 in una lingua supportata, nell'interfaccia utente verrà visualizzato il nome localizzato.
   
 ![Numero di istanze e opzioni di precisione di corrispondenza](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -310,7 +310,7 @@ L'elemento Rules deve contenere un elemento LocalizedStrings, che contiene un el
   
 ![Markup XML che mostra i contenuti di un elemento LocalizedStrings](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
-Le stringhe localizzate vengono utilizzate solo per il modo in cui le informazioni riservate personalizzate vengono visualizzate nell'interfaccia utente del Centro conformità. Le stringhe localizzate vengono utilizzate solo per il modo in cui le informazioni riservate personalizzate vengono visualizzate nell'interfaccia utente del Centro di conformità e sicurezza. Non è possibile utilizzare le stringhe localizzate per fornire versioni localizzate diverse di un elenco di parole chiave o di un'espressione regolare.
+Le stringhe localizzate vengono usate solo per determinare in che modo viene visualizzato il tipo di informazioni sensibili personalizzato nell'interfaccia utente del Centro conformità. Non è possibile usare stringhe localizzate per fornire diverse versioni localizzate di un elenco di parole chiave o di espressioni regolari.
   
 ## <a name="other-rule-package-markup-rulepack-guid"></a>Altri markup del pacchetto di regole [GUID RulePack]
 
@@ -348,7 +348,7 @@ Una volta completato, l'elemento RulePack dovrebbe avere l'aspetto seguente.
   
 ## <a name="changes-for-exchange-online"></a>Modifiche per Exchange Online
 
-In passato, per importare tipi di informazioni riservate personalizzati per la prevenzione della perdita dei dati, è probabile che tu abbia usato PowerShell in Exchange Online. Ora i tipi di informazioni riservate personalizzati possono essere usati sia nell'interfaccia di amministrazione di Exchange che nel Centro conformità. Nell'ambito di questo miglioramento, è necessario usare PowerShell nel Centro conformità per importare i tipi di informazioni riservate personalizzati: non è più possibile importarli da Exchange PowerShell. I tipi di informazioni riservate personalizzati continueranno a funzionare come prima, tuttavia per visualizzare nell'interfaccia di amministrazione di Exchange le modifiche apportate ai tipi di informazioni riservate personalizzati nel Centro conformità potrebbe volerci fino a un'ora.
+Nelle versioni precedenti era possibile usare PowerShell per Exchange Online per importare i tipi di informazioni sensibili personalizzati per DLP. Ora i tipi di informazioni sensibili personalizzati possono essere usati sia nell'interfaccia di amministrazione di Exchange che nel Centro conformità. Nell'ambito di questo miglioramento, è necessario usare PowerShell nel Centro conformità per importare i tipi di informazioni sensibili personalizzati: non è più possibile importarli da Exchange PowerShell. Nell'ambito di questo miglioramento, è consigliabile usare il Centro di sicurezza e conformità PowerShell per importare i tipi di informazioni riservate personalizzati; non è più possibile importare tali informazioni da Exchange PowerShell. I tipi di informazioni sensibili personalizzati continueranno a funzionare come prima; tuttavia, per visualizzare le modifiche apportate ai tipi di informazioni sensibili personalizzati nel Centro conformità all'interno dell'interfaccia di amministrazione di Exchange è necessario attendere fino a un'ora.
   
 Notare che, nel Centro conformità, bisogna usare il cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** per caricare un pacchetto di regole. (In precedenza, nell'interfaccia di amministrazione di Exchange di Exchange, veniva usato il cmdlet **ClassificationRuleCollection**) 
   
@@ -453,7 +453,7 @@ Se un tipo di informazioni riservate personalizzato contiene un problema che pu�
     
 ## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>Effettuare una nuova ricerca per indicizzazione del contenuto per identificare le informazioni riservate
 
-Microsoft 365 usa il crawler di ricerca per identificare e classificare le informazioni riservate contenute nel sito. Il contenuto in SharePoint Online e OneDrive for Business viene sottoposto di nuovo a ricerca per indicizzazione automaticamente ogni volta che viene aggiornato. Tuttavia, per identificare il nuovo tipo di informazioni riservate personalizzato in tutto il contenuto esistente, è necessario ripetere la ricerca per indicizzazione del contenuto.
+Microsoft 365 usa il crawler di ricerca per identificare e classificare le informazioni riservate nel contenuto del sito. Il contenuto in SharePoint Online e OneDrive for Business viene sottoposto di nuovo a ricerca per indicizzazione automaticamente ogni volta che viene aggiornato. Tuttavia, per identificare il nuovo tipo di informazioni sensibili personalizzato in tutto il contenuto esistente, è necessario ripetere la ricerca per indicizzazione del contenuto.
   
 In Microsoft 365 è possibile richiedere manualmente l'esecuzione di una nuova ricerca per indicizzazione di un intero tenant, ma tale operazione è possibile per una raccolta siti, un elenco o una raccolta. Vedere [Richiedere manualmente l'esecuzione di una nuova ricerca per indicizzazione e la reindicizzazione di un sito, una raccolta o un elenco](/sharepoint/crawl-site-content).
   
@@ -532,7 +532,7 @@ Per connettersi a PowerShell nel Centro conformità, vedere [Connettersi a Power
    ```
 
    > [!NOTE]
-   > Il pacchetto di regole predefinite che contiene i tipi di informazioni riservate predefinito è denominato Pacchetto di regole di Microsoft. Il pacchetto di regole che contiene i tipi di informazioni riservate personalizzato creato nell'interfaccia utente del Centro conformità è denominato Microsoft.SCCManaged.CustomRulePack.
+   > Nota: il pacchetto di regole predefinite che contiene i tipi di informazioni sensibili predefinito è denominato Pacchetto di regole di Microsoft. Il pacchetto di regole che contiene i tipi di informazioni sensibili personalizzato creato nell'interfaccia utente del Centro conformità è denominato Microsoft.SCCManaged.CustomRulePack.
 
 2. Usare il cmdlet [Get- DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) per archiviare il pacchetto di regole personalizzato in una variabile:
 
@@ -921,7 +921,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Set-DlpSensitiveIn
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- [Panoramica relativa ai criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
 

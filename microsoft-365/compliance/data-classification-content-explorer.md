@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora contenuto consente di visualizzare in modo nativo gli elementi con etichetta.
-ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: b39dd09012e7cde6c19ea88a0915154da84c712a
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080725"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114216"
 ---
 # <a name="get-started-with-content-explorer"></a>Introduzione a Esplora contenuto
 
@@ -82,7 +82,7 @@ Esplora contenuto mostra uno snapshot corrente degli elementi che hanno un'etich
 
 ### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
 
-I [criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md) aiutano a proteggere le informazioni riservate definite come **tipo di informazioni sensibili**. Microsoft 365 include le [definizioni per molti tipi di informazioni sensibili comuni](sensitive-information-type-entity-definitions.md) di diverse aree geografiche, pronte per l'uso. Ad esempio, un numero di carta di credito, numeri di conti corrente bancari, numeri di documenti di identità e numeri di servizio Windows Live ID.
+I [criteri di prevenzione della perdita dei dati](dlp-learn-about-dlp.md) aiutano a proteggere le informazioni riservate definite come **tipo di informazioni sensibili**. Microsoft 365 include le [definizioni per molti tipi di informazioni sensibili comuni](sensitive-information-type-entity-definitions.md) di diverse aree geografiche, pronte per l'uso. Ad esempio, un numero di carta di credito, numeri di conti corrente bancari, numeri di documenti di identità e numeri di servizio Windows Live ID.
 
 > [!NOTE]
 > Al momento Esplora contenuto non analizza i tipi di informazioni sensibili in Exchange Online.
@@ -145,4 +145,4 @@ Ecco cosa è possibile cercare:
 - [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
 - [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
 - [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
-- [Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)

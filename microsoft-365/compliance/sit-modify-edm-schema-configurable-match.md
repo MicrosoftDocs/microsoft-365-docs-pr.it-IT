@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come modificare uno schema EDM per usare la corrispondenza configurabile.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dea641072983163c6fbbcc5888d5ee6ea91f6990
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 7d470b986d4a94206935efb832deec7171f8e404
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408315"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114194"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificare lo schema Exact Data Match per usare la corrispondenza configurabile
 
@@ -133,6 +133,6 @@ Il contrassegno `ignoredDelimiters` non supporta:
 - [Creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 - [Definizioni delle entità tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
 - [Tipi di informazioni sensibili personalizzati](./sensitive-information-type-learn-about.md)
-- [Panoramica sui criteri di DLP](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

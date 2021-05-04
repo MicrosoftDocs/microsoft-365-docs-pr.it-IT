@@ -19,17 +19,18 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sui modelli di criteri di prevenzione della perdita di dati (DLP) inclusi nel Centro sicurezza & conformità di Office 365.
-ms.openlocfilehash: 80f1d4f93ecf7c3cb327633b1626ddb4ccbcbaa9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+recommendations: false
+description: Informazioni sui modelli di criteri di prevenzione della perdita dei dati (DLP) inclusi nel Centro Office 365 sicurezza & conformità.
+ms.openlocfilehash: afcc641e6e868c1988f6b30a286c082e960d056c
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819266"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086697"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
 
-La prevenzione della perdita di dati (DLP) nel Centro sicurezza e conformità include modelli di criteri pronti all'uso che rilevino i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette al &amp; U.S. Health Insurance Act (HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, i tipi di informazioni riservate ricercate e le condizioni e le azioni predefinite. L'argomento non include tutti i dettagli sulla configurazione di ogni criterio; tuttavia, contiene informazioni sufficienti a stabilire quale tipo di modello è più adatto alla propria situazione. Tenere presente che è possibile personalizzare questi modelli di criteri per soddisfare requisiti specifici.
+La prevenzione della perdita dei dati (DLP) nel Centro sicurezza e conformità include modelli di criteri pronti all'uso che riagiscono ai requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette al &amp; U.S. Health Insurance Act (HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, i tipi di informazioni riservate ricercate e le condizioni e le azioni predefinite. L'argomento non include tutti i dettagli sulla configurazione di ogni criterio; tuttavia, contiene informazioni sufficienti a stabilire quale tipo di modello è più adatto alla propria situazione. Tenere presente che è possibile personalizzare questi modelli di criteri per soddisfare requisiti specifici.
   
 ## <a name="australia-financial-data"></a>Dati finanziari Australia
 
@@ -133,8 +134,8 @@ La prevenzione della perdita di dati (DLP) nel Centro sicurezza e conformità in
 
 |**Nome regola**|**Condizioni  <br/> (inclusi i tipi di informazioni riservate)**|**Azioni**|
 |:-----|:-----|:-----|
-|Contenuto ue sensibile a basso volume trovato  <br/> | I contenuti includono informazioni riservate:  <br/>  Numero di carta di debito UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero della patente ue - conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione nazionale UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero di passaporto UE - conteggio minimo 1, conteggio massimo 9  <br/>  CODICE DI PREVIDENZA SOCIALE UE (SSN) o ID equivalente - conteggio minimo 1, conteggio massimo 9  <br/>  Codice fiscale UE (TIN) - conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare rapporti operazioni non consentite all'amministratore  <br/> |
-|Elevato volume di contenuti sensibili dell'Unione Europea trovati  <br/> | I contenuti includono informazioni riservate:  <br/>  Numero di carta di debito UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero della patente ue - conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione nazionale UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero di passaporto UE - conteggio minimo 1, conteggio massimo 9  <br/>  CODICE DI PREVIDENZA SOCIALE UE (SSN) o ID equivalente - conteggio minimo 1, conteggio massimo 9  <br/>  Codice fiscale UE (TIN) - conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> | Limitare l'accesso al contenuto per gli utenti esterni  <br/>  Inviare notifiche agli utenti tramite posta elettronica e suggerimenti per i criteri  <br/>  Consentire override  <br/>  Richiedere una motivazione aziendale  <br/>  Inviare rapporti operazioni non consentite all'amministratore  <br/> |
+|Contenuto sensibile UE a basso volume trovato  <br/> | I contenuti includono informazioni riservate:  <br/>  Numero di carta di debito UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero di patente di guida UE - Conteggio minimo 1, Conteggio massimo 9  <br/>  Numero di identificazione nazionale UE - Conteggio minimo 1, Conteggio massimo 9  <br/>  Numero di passaporto UE - Conteggio minimo 1, Conteggio massimo 9  <br/>  Numero di previdenza sociale UE (SSN) o ID equivalente - Conteggio minimo 1, Conteggio massimo 9  <br/>  CODICE FISCALE UE (TIN) - Conteggio minimo 1, Conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare rapporti operazioni non consentite all'amministratore  <br/> |
+|Volume elevato di contenuti sensibili dell'UE trovati  <br/> | I contenuti includono informazioni riservate:  <br/>  Numero di carta di debito UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero di patente di guida UE - Conteggio minimo 1, Conteggio massimo 9  <br/>  Numero di identificazione nazionale UE - Conteggio minimo 1, Conteggio massimo 9  <br/>  Numero di passaporto UE - Conteggio minimo 1, Conteggio massimo 9  <br/>  Numero di previdenza sociale UE (SSN) o ID equivalente - Conteggio minimo 1, Conteggio massimo 9  <br/>  CODICE FISCALE UE (TIN) - Conteggio minimo 1, Conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> | Limitare l'accesso al contenuto per gli utenti esterni  <br/>  Inviare una notifica agli utenti tramite messaggio di posta elettronica e suggerimenti per i criteri  <br/>  Consentire override  <br/>  Richiedere una motivazione aziendale  <br/>  Inviare rapporti operazioni non consentite all'amministratore  <br/> |
    
 ## <a name="germany-financial-data"></a>Dati finanziari Germania
 
@@ -287,7 +288,7 @@ La prevenzione della perdita di dati (DLP) nel Centro sicurezza e conformità in
 
 |**Nome regola**|**Condizioni  <br/> (inclusi i tipi di informazioni riservate)**|**Azioni**|
 |:-----|:-----|:-----|
-|Il contenuto corrisponde all'HIPAA degli Stati Uniti  <br/> | Contiene una delle seguenti informazioni riservate:  <br/>  Numero di previdenza sociale (SSN, U.SSN) - conteggio minimo 1, conteggio massimo qualsiasi  <br/>  Numero dea (Drug Enforcement Agency) - conteggio minimo 1, conteggio massimo qualsiasi  <br/> **E** <br/>  Il contenuto contiene uno dei seguenti termini:  <br/>  Classificazione internazionale delle malattia (ICD-9-CM) - conteggio minimo 1, conteggio massimo qualsiasi  <br/>  Classificazione internazionale delle malattia (ICD-10-CM) - conteggio minimo 1, conteggio massimo qualsiasi  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare una notifica  <br/> |
+|Il contenuto corrisponde a HIPAA statunitense  <br/> | Contiene una delle seguenti informazioni riservate:  <br/>  U.S. Social Security Number (SSN) - Conteggio minimo 1, Conteggio massimo qualsiasi  <br/>  Numero dea (Drug Enforcement Agency) - Conteggio minimo 1, Conteggio massimo qualsiasi  <br/> **E** <br/>  Il contenuto contiene uno dei seguenti termini:  <br/>  Classificazione internazionale delle malattie (ICD-9-CM) - Conteggio minimo 1, Conteggio massimo qualsiasi  <br/>  Classificazione internazionale delle malattie (ICD-10-CM) - Conteggio minimo 1, Conteggio massimo qualsiasi  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare una notifica  <br/> |
    
 ## <a name="us-patriot-act"></a>U.S. Patriot Act
 
