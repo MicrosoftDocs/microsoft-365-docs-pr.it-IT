@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare il proxy del dispositivo e le impostazioni di connessione Internet per la prevenzione della perdita di dati degli endpoint.
-ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5da9161f2f59ef8a40ca8a7d302dc7de578dba39
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199275"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114124"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurazione del proxy del dispositivo e delle impostazioni di connessione Internet per la prevenzione della perdita di dati degli endpoint
 
@@ -142,7 +142,7 @@ Argomenti correlati •   Onboarding di dispositivi Windows 10 •   Risolvere i
 
 - [Informazioni sulla prevenzione della perdita di dati degli endpoint ](endpoint-dlp-learn-about.md)
 - [Uso della Prevenzione della perdita di dati degli endpoint ](endpoint-dlp-using.md)
-- [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
 - [Microsoft Defender ATP](/windows/security/threat-protection/)

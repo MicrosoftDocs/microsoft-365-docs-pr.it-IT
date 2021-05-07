@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 42fe70d1360f45deb6f98f41c0ffec97de7e00a9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498343"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860955"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -193,7 +193,7 @@ Quando si pubblicano etichette di conservazione, vengono incluse in un **criteri
 |Applicata automaticamente in base a tipi di informazioni sensibili o classificatori sottoponibili a training  <br/> |Exchange (solo a tutte le cassette postali), SharePoint, OneDrive  <br/> |
 |Applicata automaticamente in base a una query  <br/> |Exchange, SharePoint, OneDrive, gruppi di Microsoft 365  <br/> |
    
-In Exchange, le etichette di conservazione applicate automaticamente vengono applicate solo ai nuovi messaggi inviati (dati in movimento), non a tutti gli elementi attualmente presenti nella cassetta postale (dati archiviati). Inoltre, le etichette di conservazione applicate automaticamente per i tipi di informazioni sensibili e i classificatori sottoponibili a training possono essere applicate solo a tutte le cassette postali, non a cassette postali specifiche.
+Le etichette di conservazione applicabili automaticamente in Exchange (sia per le query sia per i tipi di informazioni riservate) vengono applicate solo ai messaggi inviati di recente (dati in transito), non a tutti gli elementi attualmente nella cassetta postale (dati inattivi). Inoltre, le etichette di conservazione applicate automaticamente per i tipi di informazioni riservate possono essere applicate solo a tutte le cassette postali, non a cassette postali specifiche.
   
 Le cartelle pubbliche di Exchange, Skype e i messaggi di Teams e Yammer non supportano le etichette di conservazione. Per conservare ed eliminare contenuto in queste posizioni, usare i criteri di conservazione.
 
@@ -263,7 +263,7 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 |Audit delle attività dell’amministratore| Sì | Sì|
 |Identificazione degli elementi soggetti a conservazione: <br /> - Ricerca contenuto <br /> - Pagina di classificazione dei dati, Esplora contenuto, Esplora attività | <br /> No <br /> No | <br /> Sì <br /> Sì|
 
-Si noti che è possibile usare sia criteri di conservazione che etichette di conservazione, come metodi di conservazione complementari. Ad esempio:
+Si noti che è possibile usare sia criteri di conservazione sia etichette di conservazione, come metodi di conservazione complementari. Per esempio:
 
 1. Si può creare e configurare un criterio conservazione che elimina automaticamente il contenuto cinque anni dopo l'ultima modifica e applicarlo a tutti gli account di OneDrive.
 

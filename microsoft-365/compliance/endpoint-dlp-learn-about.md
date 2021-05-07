@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: 5aaed57574f1ecabdf28442b30dcd42677243df1
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: b5aa6c737bc54129ce49378a7dcaf81e9d5c612f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445276"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114104"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
-È possibile usare la prevenzione della perdita dei dati (DLP) di Microsoft 365 per monitorare le azioni intraprese sugli elementi che si considerano sensibili e per evitare la condivisione involontaria di tali elementi. Per altre informazioni, vedere [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md).
+È possibile usare la prevenzione della perdita dei dati (DLP) di Microsoft 365 per monitorare le azioni intraprese sugli elementi che si considerano sensibili e per evitare la condivisione involontaria di tali elementi. Per altre informazioni su DLP, vedere [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md).
 
 La **prevenzione della perdita di dati degli endpoint** (Endpoint DLP) estende le funzionalità di monitoraggio e protezione delle attività di DLP agli elementi sensibili presenti nei dispositivi Windows 10. Dopo aver eseguito l'onboarding dei dispositivi nelle soluzioni del Centro conformità Microsoft 365, le informazioni sulle azioni che gli utenti stanno eseguendo sugli elementi sensibili sono rese visibili in [Esplora attività](data-classification-activity-explorer.md) ed è possibile applicare azioni di protezione su tali elementi tramite [criteri DLP](create-test-tune-dlp-policy.md).
 
@@ -160,7 +160,7 @@ Dopo avere acquisito familiarità con Endpoint DLP, è possibile proseguire con 
 
 - [Introduzione alla prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-getting-started.md)
 - [Uso della prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-using.md)
-- [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
 - [Microsoft Defender ATP](/windows/security/threat-protection/)

@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla classificazione dei dati
+title: Informazioni sulla classificazione dei dati
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922680"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899386"
 ---
-# <a name="know-your-data---data-classification-overview"></a>Conoscere i dati - Panoramica della classificazione dei dati
+# <a name="learn-about-data-classification"></a>Informazioni sulla classificazione dei dati
 
 Gli amministratori Microsoft 365 e gli amministratori della conformità possono valutare e contrassegnare i contenuti dell’organizzazione per monitorarne gli spostamenti, proteggerli ovunque e fare in modo che vengano conservati e cancellati secondo le esigenze specifiche dell’organizzazione. Queste operazioni possono essere eseguite mediante l'applicazione di [etichette di riservatezza](sensitivity-labels.md), di [etichette di conservazione](retention.md#retention-labels) e tramite la classificazione della tipologia delle informazioni riservate. Esistono vari modi per eseguire l'individuazione, la valutazione e l'aggiunta di tag, ma il risultato finale è che potrebbe essere presente un numero molto elevato di documenti e messaggi di posta elettronica contrassegnati e classificati con una o entrambe le etichette. Dopo aver applicato le etichette di conservazione e le etichette di riservatezza, è opportuno verificarne l'utilizzo nel tenant e controllare le operazioni che vengono svolte con tali elementi. La pagina di classificazione dei dati consente di avere visibilità sui contenuti, in particolare:
 
@@ -36,8 +36,12 @@ Gli amministratori Microsoft 365 e gli amministratori della conformità possono 
 - le posizioni dei dati riservati e conservati
 
 Queste funzionalità vengono anche gestite nella pagina di classificazione dei dati:
+
 - [classificatori sottoponibili a training](classifier-learn-about.md)
-- [tipi di informazioni sensibili](./sensitive-information-type-entity-definitions.md)
+- [tipi di informazioni sensibili](sensitive-information-type-learn-about.md)
+- [corrispondenze di dati esatte](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Esplora contenuto](data-classification-content-explorer.md)
+- [Esplora attività](data-classification-activity-explorer.md)
 
 La funzionalità Classificazione dei dati è disponibile nel **Centro conformità Microsoft 365** o nel **Centro sicurezza Microsoft 365** > **Classificazione** > **Classificazione dei dati**.
 
@@ -96,7 +100,7 @@ La scheda etichetta di riservatezza mostra il numero di elementi (e-mail o docum
 ![schermata della scomposizione dei contenuti in base al segnaposto di classificazione delle etichette di riservatezza](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> Se non sono state create o pubblicate etichette di riservatezza o non è stata applicata alcuna etichetta di riservatezza ai contenuti, la scheda visualizzerà il messaggio "Non sono state rilevate etichette di riservatezza". Per iniziare a usare le etichette di riservatezza vedere:
+> Se non sono state create o pubblicate etichette di riservatezza o non è stata applicata alcuna etichetta di riservatezza ai contenuti, la scheda visualizzerà il messaggio "Non sono state rilevate etichette di riservatezza". Per un'introduzione sulle etichette di riservatezza, vedere:
 >- [Iniziare ad usare le etichette di riservatezza](get-started-with-sensitivity-labels.md) oppure per AIP [Configurare i criteri di protezione delle informazioni in Azure](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Principali etichette di conservazione applicate ai contenuti
@@ -113,7 +117,7 @@ Le scheda delle principali etichette di conservazione applicate mostra il numero
 
 ## <a name="top-activities-detected"></a>Attività principali rilevate
 
-Questa scheda offre un breve riepilogo delle azioni più comuni eseguite dagli utenti con gli elementi con etichette di riservatezza. È possibile usare [Esplora attività](data-classification-activity-explorer.md) per eseguire il drill-down avanzato su otto diverse attività di cui Microsoft 365 tiene traccia sui contenuti etichettati e su contenuti presenti negli endpoint di Windows 10.
+Questa scheda offre un breve riepilogo delle azioni più comuni eseguite dagli utenti con gli elementi con etichette di riservatezza. È possibile usare [Esplora attività](data-classification-activity-explorer.md) per esaminare a fondo le diverse attività di cui Microsoft 365 tiene traccia sui contenuti etichettati e sui contenuti presenti negli endpoint di Windows 10.
 
 > [!NOTE]
 > Se la scheda visualizza il messaggio "Non è stata rilevata alcuna attività", significa che non sono state rilevate attività sui file o che non è stato attivato il controllo da parte dell'utente e dell'amministratore. Per attivare i log di controllo, vedere:
@@ -124,7 +128,7 @@ Questa scheda offre un breve riepilogo delle azioni più comuni eseguite dagli u
 Il motivo della classificazione dei dati consiste nel fornire visibilità sul numero di elementi etichettati e della relativa posizione. Queste schede consentono di conoscere il numero di elementi etichettati in Exchange, SharePoint, OneDrive e così via.
 
 > [!NOTE]
-> Se la scheda visualizza il messaggio "Non sono state rilevate posizioni" significa che non sono state create o pubblicate etichette di riservatezza o che non è stata applicata alcuna etichetta di conservazione ai contenuti. Per iniziare a usare le etichette di riservatezza vedere:
+> Se la scheda visualizza il messaggio "Nessun percorso rilevato" significa che non sono state create o pubblicate etichette di riservatezza o che non è stata applicata alcuna etichetta di conservazione ai contenuti. Per un'introduzione sulle etichette di riservatezza, vedere:
 >- [Etichette di riservatezza](sensitivity-labels.md)
 
 ## <a name="see-also"></a>Vedere anche
@@ -133,5 +137,6 @@ Il motivo della classificazione dei dati consiste nel fornire visibilità sul nu
 - [Visualizzare il contenuto con etichetta](data-classification-content-explorer.md)
 - [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
 - [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
+- [Informazioni sui tipi di informazioni riservate](sensitive-information-type-learn-about.md)
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
 - [Informazioni sui classificatori sottoponibili a training (anteprima)](classifier-learn-about.md)

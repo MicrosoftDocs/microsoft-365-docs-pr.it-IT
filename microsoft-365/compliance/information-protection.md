@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -16,13 +16,14 @@ search.appverid:
 ms.collection:
 - m365solution-mip
 - m365initiative-compliance
+recommendations: false
 description: Implementare Microsoft Information Protection (MIP) per proteggere le informazioni sensibili ovunque ci si trovi.
-ms.openlocfilehash: e8487bf443592fa45b887929f947b701406dba55
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 36e8e917349edd5523677112818cd39514710583
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394694"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114362"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365.
 
@@ -48,7 +49,7 @@ Per comprendere l’insieme dei dati e identificare i dati importanti nell'ambie
  
 |Funzionalità|Che problemi risolve?|Per iniziare|
 |:------|:------------|:--------------------|
-|[Tipi di informazioni sensibili](sensitive-information-type-learn-about.md)| Identifica i dati sensibili usando espressioni regolari predefinite o personalizzate oppure una funzione. Le evidenze corroborative includono parole chiave, livelli di confidenza e prossimità.| [Personalizzare un tipo di informazioni sensibili predefinito](customize-a-built-in-sensitive-information-type.md)|
+|[Tipi di informazioni sensibili](sensitive-information-type-learn-about.md)| Identifica i dati sensibili usando espressioni regolari predefinite o personalizzate o una funzione. Le evidenze corroborative includono parole chiave, livelli di confidenza e prossimità.| [Personalizzare un tipo di informazioni sensibili predefinito](customize-a-built-in-sensitive-information-type.md)|
 |[Classificatori sottoponibili a training](classifier-learn-about.md)| Identifica i dati sensibili usando esempi di dati a cui si è interessati, anziché identificare gli elementi (criteri di ricerca). È possibile usare classificatori predefiniti o eseguire il training di un classificatore con contenuti propri.| [Introduzione ai classificatori sottoponibili a training](classifier-get-started-with.md) |
 |[Classificazione dei dati](data-classification-overview.md) | Identificazione grafica degli elementi dell'organizzazione che dispongono di un'etichetta di riservatezza, un'etichetta di conservazione oppure che sono stati classificati. È inoltre possibile usare queste informazioni per ottenere dati analitici sulle azioni intraprese dagli utenti su tali elementi. | [Introduzione a Esplora contenuto](data-classification-content-explorer.md)<br /><br /> [Introduzione a Esplora attività](data-classification-activity-explorer.md) |
 
@@ -77,8 +78,19 @@ Per evitare la condivisione accidentale di informazioni riservate, usare le funz
 
 |Funzionalità|Che problemi risolve?|Per iniziare|
 |:------|:------------|:---------------------|
-|[Data loss prevention (DLP)](data-loss-prevention-policies.md)| Evita la condivisione involontaria di elementi riservati. | [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)|
+|[Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)| Evita la condivisione involontaria di elementi riservati. | [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)|
 |[Informazioni sulla prevenzione della perdita di dati degli endpoint](endpoint-dlp-learn-about.md)| Consente di estendere le funzionalità DLP agli elementi usati e condivisi nei computer con Windows 10. | [Introduzione alla prevenzione della perdita di dati degli endpoint](endpoint-dlp-getting-started.md)|
 |[Informazioni sull'Estensione della conformità Microsoft (anteprima)](dlp-chrome-learn-about.md) | Estende le funzionalità DLP al browser Chrome | [Introduzione all'estensione della Conformità Microsoft (anteprima)](dlp-chrome-get-started.md)|
 |[Informazioni sullo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)](dlp-on-premises-scanner-learn.md)|Estende il monitoraggio DLP delle attività sui file e le azioni di protezione per tali file nelle condivisioni di file locali, cartelle e raccolte documenti di SharePoint.|[Introduzione allo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)](dlp-on-premises-scanner-get-started.md)|
 |[Proteggere le informazioni riservate nella chat e nei messaggi di canale di Microsoft Teams](dlp-microsoft-teams.md) | Estende alcune funzionalità DLP alla chat e ai messaggi di canale di Teams | [Informazioni sul criterio predefinito per la prevenzione della perdita di dati in Microsoft Teams (anteprima)](dlp-teams-default-policy.md)| 
+
+
+## <a name="additional-resources"></a>Risorse aggiuntive
+
+Molte organizzazioni usano queste funzionalità di protezione delle informazioni per conformarsi alle normative sulla privacy dei dati. A tale scopo, è stato progettato un flusso di lavoro che fornisce una guida attraverso il processo end-to end di pianificazione e implementazione delle funzionalità in Microsoft 365, tra cui accesso sicuro, protezione dalla minacce, protezione delle informazioni e governance dei dati. Per ulteriori informazioni, vedere [Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+
+Inoltre, per pianificare una strategia integrata per l’implementazione delle funzionalità di protezione delle informazioni, scaricare *Funzionalità di conformità e protezione delle informazioni di Microsoft 365*.  Queste illustrazioni possono essere personalizzate.
+
+| Elemento | Descrizione |
+|:-----|:------------|
+|[![Modello poster: Capacità della Conformità e protezione delle informazioni di Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Scarica come PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Scarica come Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Giapponese: [Scarica come PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Scarica come Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Ultimo aggiornamento: ottobre 2020|Include: <ul><li>  Protezione dell’informazione e prevenzione della perdita dei dati di Microsoft</li><li>Criteri di conservazione ed etichette di conservazione. </li><li>Barriere informative</li><li>Conformità delle comunicazioni</li><li>Gestione dei rischi Insider</li><li>Inserimento dei dati di terze parti</li>|

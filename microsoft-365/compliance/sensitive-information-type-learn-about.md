@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919672"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114226"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Ulteriori informazioni sui tipi di informazioni riservate
 
@@ -35,9 +35,10 @@ I tipi di informazioni riservate sono classificatori basati su modelli. Rilevano
 
 ## <a name="sensitive-information-types-are-used-in"></a>I tipi di informazioni riservate vengono utilizzati in
 
-- [Criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md) 
+- [Criteri di prevenzione della perdita di dati](dlp-learn-about-dlp.md) 
 - [Etichette di riservatezza](sensitivity-labels.md)
 - [Etichette di conservazione](retention.md)
+- [Gestione dei rischi Insider](insider-risk-management.md)
 - [Conformità delle comunicazioni](communication-compliance.md)
 - [Criteri di etichettatura automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -65,11 +66,11 @@ Scopri di più sui livelli di confidenza in questo video
 
 ## <a name="argentina-national-identity-dni-number"></a>Numero DNI (Argentina National Identity)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Otto cifre separate da spazi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Otto cifre
 - due cifre
@@ -143,7 +144,7 @@ Per creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e 
 
 
 > [!NOTE]
-> I livelli di sicurezza migliorati sono disponibili per l'uso immediato all'interno di Prevenzione della perdita di dati per i servizi di Microsoft 365, Microsoft Information Protection per i servizi di Microsoft 365, Conformità delle comunicazioni, Governance delle informazioni e Gestione record.
+> I livelli di sicurezza migliorati sono disponibili per l'uso immediato all'interno di Prevenzione della perdita di dati per i servizi di Microsoft 365, Microsoft Information Protection per i servizi Microsoft 365, Conformità delle comunicazioni, Governance delle informazioni e Gestione record.
 
 > Microsoft 365 Information Protection supporta in anteprima i set di caratteri a due byte per le lingue seguenti:
 > - Cinese (semplificato)

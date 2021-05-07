@@ -1,5 +1,5 @@
 ---
-title: Reimpostare password
+title: Reimpostare le password
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -26,17 +26,17 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 per le aziende.
-ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: Informazioni su come reimpostare la password per un utente in Microsoft 365 per le aziende.
+ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023978"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241701"
 ---
-# <a name="reset-passwords"></a>Reimpostare password
+# <a name="reset-passwords"></a>Reimpostare le password
 
-Questo articolo spiega come reimpostare le password per se stessi e per gli utenti quando si dispone di un abbonamento a Microsoft 365 per le aziende.
+In questo articolo viene illustrato come reimpostare le password per se stessi e per gli utenti quando si dispone di un abbonamento Microsoft 365 per le aziende.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -54,23 +54,7 @@ Se il video è stato utile, consultare la [serie dei corsi di formazione complet
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Passaggi: Reimpostare una password aziendale per un utente
 
-::: moniker range="o365-worldwide"
-
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
-
-::: moniker-end
 
 2. Nella pagina **Utenti attivi** selezionare l'utente e quindi Reimposta **password.**
 
@@ -84,7 +68,7 @@ Se il video è stato utile, consultare la [serie dei corsi di formazione complet
 
 ## <a name="reset-my-admin-password"></a>Reimpostare la password di amministratore
 
-Seguire questa procedura se la password è stata dimenticata ma si è in grado di accedere a Microsoft 365 perché, ad esempio, la password viene salvata nel browser:
+Seguire questa procedura se hai dimenticato la password ma sei in grado di accedere a Microsoft 365 perché, ad esempio, la password viene salvata nel browser:
 
 1. Seleziona il tuo nome (icona) nell'angolo in alto a destra > **Informazioni personali**  >  **account** personale .
 
@@ -132,7 +116,7 @@ Per informazioni generali, vedere [Manage Microsoft 365 with PowerShell](../../e
 
 Vedere questo interessante post di blog da Vasil Michev, MVP Microsoft: [Forzare la modifica della password per tutti gli utenti in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Non ho un abbonamento a Microsoft 365 per le aziende
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Non ho un abbonamento Microsoft 365 per le aziende
 
 Leggere questo articolo: [Si è dimenticato l'account o la password per l'account usato con Office](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
   

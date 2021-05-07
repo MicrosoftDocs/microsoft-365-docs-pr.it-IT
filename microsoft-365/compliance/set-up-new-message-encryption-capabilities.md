@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Scopri di più sulle nuove funzionalità crittografiche di Office 365, che consentono di comunicare tramite posta elettronica in sicurezza con le persone all’interno e all’esterno dell’organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919392"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876305"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurare le nuove funzionalità di Message Encryption
 
@@ -44,7 +44,7 @@ Azure RMS viene attivato automaticamente anche per la maggior parte dei piani id
 
 Per ulteriori informazioni, vedere:
 
-- [Quali abbonamenti sono necessari per usare le nuove funzionalità di OME? ](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) per verificare se il piano di abbonamento include Azure Information Protection (che include le funzionalità di Azure RMS).
+- [Quali abbonamenti sono necessari per usare le nuove funzionalità di OME? ](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) per verificare se il piano di abbonamento include Azure Information Protection (che include le funzionalità di Azure RMS).
 - Per informazioni sull'acquisto di un abbonamento idoneo, vedere [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).  
 
 ### <a name="manually-activating-azure-rights-management"></a>Attivazione manuale di Azure Rights Management

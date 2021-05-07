@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: La prevenzione della perdita dei dati di Microsoft 365 nello scanner locale estende il monitoraggio delle attività sui file e le azioni di protezione per tali file nelle condivisioni di file locali e cartelle e raccolte documenti di SharePoint locali. I file vengono analizzati e protetti tramite uno scanner di Azure Information Protection (AIP)
-ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: La prevenzione della perdita dei dati di Microsoft 365 nello scanner locale estende il monitoraggio delle attività sui file e le azioni di protezione per tali file alle condivisioni di file locali e alle cartelle e raccolte documenti di SharePoint. I file vengono analizzati e protetti tramite uno scanner di Azure Information Protection (AIP)
+ms.openlocfilehash: f0a34a13630e42c5dd29734ad708b3c11bb1d587
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917812"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114164"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Informazioni sullo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)
 
-Lo scanner locale per la prevenzione della perdita dei dati Microsoft fa parte della famiglia di funzionalità di prevenzione della perdita dei dati (DLP) di Microsoft 365 che è possibile usare per individuare e proteggere gli elementi sensibili nei servizi di Microsoft 365. Per altre informazioni su tutte le offerte DLP Microsoft, vedere [Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md).
+Lo scanner locale per la prevenzione della perdita dei dati Microsoft fa parte della famiglia di funzionalità di prevenzione della perdita dei dati (DLP) di Microsoft 365 che è possibile usare per individuare e proteggere gli elementi sensibili nei servizi di Microsoft 365. Per altre informazioni su tutte le offerte DLP Microsoft, vedere [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md).
 
 Lo **scanner locale DPL** esegue una ricerca per indicizzazione dei dati locali in archivio nelle condivisioni file e nelle raccolte documenti e nelle cartelle di SharePoint per trovare elementi sensibili che, in caso di divulgazione, rappresentano un rischio per l'organizzazione o rappresentano un rischio di violazione dei criteri di conformità. In questo modo si ottengono la visibilità e il controllo necessari per assicurarsi che gli elementi sensibili vengano usati e protetti correttamente e per evitare comportamenti rischiosi che potrebbero comprometterli. Lo scanner DPL locale rileva le informazioni riservate usando [tipi di informazioni integrate](sensitive-information-type-entity-definitions.md) o [informazioni](create-a-custom-sensitive-information-type.md) riservate personalizzate, [etichette di riservatezza](sensitivity-labels.md) o proprietà dei file. Le informazioni sulle azioni che gli utenti stanno eseguendo sugli elementi sensibili sono rese visibili in [esplora attività](data-classification-activity-explorer.md) ed è possibile applicare azioni di protezione su tali elementi tramite [criteri DLP](create-test-tune-dlp-policy.md).
 
@@ -89,6 +89,6 @@ Dopo avere acquisito familiarità con lo scanner locale DLP, è possibile proseg
 
 - [Introduzione allo scanner locale per la prevenzione della perdita dei dati di Microsoft](dlp-on-premises-scanner-get-started.md)
 - [Usare lo scanner locale per la prevenzione della perdita dei dati di Microsoft](dlp-on-premises-scanner-use.md) 
-- [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)

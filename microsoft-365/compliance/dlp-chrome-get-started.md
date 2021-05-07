@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Preparare e distribuire l'estensione per la conformità Microsoft.
-ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838349"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113864"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>Introduzione all'estensione per la conformità Microsoft (anteprima)
 
@@ -35,7 +35,7 @@ Usare queste procedure per implementare l'estensione di conformità Microsoft.
 Per usare l'estensione per la conformità Microsoft, occorre eseguire l'onboarding del dispositivo nella prevenzione della perdita dei dati degli endpoint. Leggere questi articoli se non si ha familiarità con la prevenzione della perdita dei dati o endpoint DLP.
 
 - [Informazioni sull'estensione per la conformità Microsoft](dlp-chrome-learn-about.md)
-- [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
 - [Informazioni sulla prevenzione della perdita dei dati degli endpoint](endpoint-dlp-learn-about.md)
@@ -274,7 +274,7 @@ Ora che si è eseguito l'onboarding dei dispositivi e che è possibile visualizz
 
 - [Informazioni sulla prevenzione della perdita di dati degli endpoint ](endpoint-dlp-learn-about.md)
 - [Uso della Prevenzione della perdita di dati degli endpoint ](endpoint-dlp-using.md)
-- [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/)

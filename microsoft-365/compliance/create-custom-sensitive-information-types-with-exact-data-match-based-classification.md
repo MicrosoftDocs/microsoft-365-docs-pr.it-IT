@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: a6e4429718de05362bd6bd3336c9d19ceeec64b9
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408645"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113998"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match
 
@@ -48,7 +48,7 @@ Ma cosa succede se si vuole un tipo di informazioni sensibili personalizzato che
 
 ![Classificazione basata su EDM](../media/EDMClassification.png)
 
-La classificazione basata su EDM consente di creare tipi di informazioni sensibili personalizzati che fanno riferimento a valori esatti in un database di informazioni sensibili. Il database può essere aggiornato giornalmente e può contenere un massimo di 100 milioni di righe di dati. I dipendenti, i pazienti o i clienti vanno e vengono e i record cambiano, i tipi di informazioni sensibili personalizzati rimangono aggiornati e disponibili. È anche possibile usare una classificazione basata su EDM con criteri, ad esempio i [criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md) (DLP) o i [criteri dei file di Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
+La classificazione basata su EDM consente di creare tipi di informazioni sensibili personalizzati che fanno riferimento a valori esatti in un database di informazioni sensibili. Il database può essere aggiornato giornalmente e può contenere un massimo di 100 milioni di righe di dati. I dipendenti, i pazienti o i clienti vanno e vengono e i record cambiano, i tipi di informazioni sensibili personalizzati rimangono aggiornati e disponibili. È anche possibile usare una classificazione basata su EDM con criteri, ad esempio i [criteri di prevenzione della perdita dei dati](dlp-learn-about-dlp.md) o i [criteri dei file di Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft 365 Information Protection supporta in anteprima i set di caratteri a due byte nelle seguenti lingue:
@@ -167,7 +167,7 @@ Quando si include il campo ***ignoredDelimiters** _ con caratteri supportati, ED
 - \~
 - \; 
 
-- Il contrassegno `ignoredDelimiters` non supporta:
+Il contrassegno `ignoredDelimiters` non supporta:
 - Caratteri 0-9
 - A-Z
 - a-z
@@ -301,6 +301,8 @@ Utilizzando l'esempio proposto, osservare:
 
 > [!NOTE]
 > L'aggiornamento dello schema EDM impiega tra i 10 e i 60 minuti con aggiunte. Completare l'aggiornamento prima di eseguire i passaggi che usano le aggiunte.
+ 
+Dopo aver importato il pacchetto di regole con il tipo di informazioni sensibili EDM e la tabella dei dati sensibili, è possibile testare il tipo appena creato usando la funzione **Test** nelle procedura guidata EDM nel centro conformità. Per istruzioni sull’utilizzo di questa funzionalità, vedere [Usare la procedura guidata per lo schema Exact Data Match e per il tipo di informazioni sensibili](sit-edm-wizard.md).
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>Modificare lo schema per la classificazione basata su EDM
 
@@ -369,7 +371,7 @@ L’hashing e il caricamento può essere eseguito con un computer oppure è poss
 
 Se si vuole eseguire l'hashing e il caricamento da un computer, è necessario farlo da uno che può connettersi direttamente al tenant di Microsoft 365. È necessario che i file dati di testo sensibili non crittografati siano presenti sul computer per l'hashing.
 
-Se non si vuole esporre file dati di testo sensibili non crittografati, è possibile inserirlo in un computer in un percorso sicuro e quindi copiare il file hash e il file salt in un computer che può connettersi direttamente al tenant di Microsoft 365 per il caricamento. In questo scenario sarà necessario l’EDMUploadAgent su entrambi i computer.
+Se non si vuole esporre file dati di testo sensibili non crittografati, è possibile eseguirne l’hashing su un computer in una posizione sicura e quindi copiare il file hash e il file salt in un computer che può connettersi direttamente al tenant di Microsoft 365 per il caricamento. In questo scenario, sarà necessario l’EDMUploadAgent su entrambi i computer.
 
 > [!IMPORTANT]
 > Se si usa lo schema Exact Data Match e la procedura guidata per il tipo di informazioni sensibili per creare il proprio schema e i file modello, è ***necessario*** scaricare lo schema per questa procedura.
@@ -427,7 +429,7 @@ Il computer deve avere accesso diretto al tenant di Microsoft 365.
    > È possibile caricare i dati con EDMUploadAgent in qualsiasi archivio dati solo due volte al giorno.
 
    > [!TIP]
-   > Per ottenere un elenco dei parametri di comando supportati, eseguire l'agente senza argomenti, ad esempio "EdmUploadAgent.exe".
+   > Per ottenere un elenco dei parametri di comando supportati, eseguire l'agente senza argomenti. Ad esempio, “EdmUploadAgent.exe”.
 
 2. Autorizzare l'agente di caricamento EDM, aprire il prompt dei comandi di Windows (come amministratore), passare alla directory **C:\EDM\Data** ed eseguire il comando seguente:
 
@@ -655,7 +657,7 @@ I tipi di informazioni sensibili EDM per gli scenari seguenti sono in fase di sv
 
 - [Definizioni delle entità tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
 - [Ulteriori informazioni sui tipi di informazioni riservate](sensitive-information-type-learn-about.md)
-- [Panoramica sui criteri di DLP](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [Modificare lo schema Exact Data Match per usare la corrispondenza configurabile](sit-modify-edm-schema-configurable-match.md)

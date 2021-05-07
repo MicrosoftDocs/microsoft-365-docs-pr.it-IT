@@ -1,17 +1,17 @@
 ---
-title: Panoramica sulla prevenzione della perdita dei dati
+title: Informazioni di riferimento sulla prevenzione della perdita di dati
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/12/2019
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: low
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -21,59 +21,68 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come identificare, monitorare e proteggere automaticamente le informazioni riservate della tua organizzazione in tutta la suite Office 365.
-ms.openlocfilehash: 737e556972ca8ab0f82e1c4fe9e8602f09e91fc8
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
-ms.translationtype: HT
+description: materiale di riferimento per la prevenzione della perdita di dati
+ms.openlocfilehash: a94dde0bba3fdfc869746f51687ed7709a96639a
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445430"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114402"
 ---
-# <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
+# <a name="data-loss-prevention-reference"></a>Informazioni di riferimento sulla prevenzione della perdita di dati
+ 
+> [!IMPORTANT]
+> Questo è l'argomento di riferimento non è più la risorsa principale per Microsoft 365 di prevenzione della perdita dei dati (DLP). Il set di contenuti DLP viene aggiornato e ristrutturato. Gli argomenti trattati in questo articolo verranno trattati in articoli nuovi e aggiornati. Per ulteriori informazioni sulla prevenzione della perdita dei dati, vedere [Informazioni sulla prevenzione della perdita dei dati.](dlp-learn-about-dlp.md)
+
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
 > Le funzionalità di prevenzione della perdita dei dati sono state aggiunte di recente ai messaggi di chat e canali di Microsoft Teams per gli utenti con licenza di Office 365 Advanced Compliance, che è disponibile come opzione indipendente e incluso in Office 365 E5 e Microsoft 365 E5 Compliance. Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
-Per ottenere la conformità agli standard aziendali e alle normative di settore, le organizzazioni devono proteggere le informazioni riservate e impedirne la divulgazione accidentale. Le informazioni riservate possono essere dati finanziari o informazioni di identificazione personale (PII) come numeri di carta di credito, codici fiscali o cartelle cliniche. I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità di Office 365 permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
+
+
+<!-- MOVED TO LEARN ABOUT To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Office 365 Security &amp; Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365.
   
-Con i criteri di prevenzione della perdita dei dati è possibile:
+With a DLP policy, you can:
   
-- **Identificare le informazioni riservate in numerose posizioni, ad esempio Exchange Online, SharePoint Online e OneDrive for Business e Microsoft Teams.**
+- **Identify sensitive information across many locations, such as Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Teams.**
     
-    Ad esempio, è possibile identificare tutti i documenti che includono un numero di carta di credito archiviato in un sito OneDrive for Business; in alternativa, è possibile monitorare solo i siti OneDrive di utenti specifici.
+    For example, you can identify any document containing a credit card number that's stored in any OneDrive for Business site, or you can monitor just the OneDrive sites of specific people.
     
-- **Prevenire la condivisione accidentale di informazioni riservate**. 
+- **Prevent the accidental sharing of sensitive information**. 
     
-    È ad esempio possibile identificare i documenti o i messaggi di posta elettronica contenenti dati sanitari condivisi con persone esterne all'organizzazione e quindi bloccarne l'accesso oppure bloccare l'invio del messaggio.
+    For example, you can identify any document or email containing a health record that's shared with people outside your organization, and then automatically block access to that document or block the email from being sent.
     
-- **Monitorare e proteggere le informazioni riservate nelle versioni desktop di Excel, PowerPoint e Word.**
+- **Monitor and protect sensitive information in the desktop versions of Excel, PowerPoint, and Word.**
     
-    Analogamente a Exchange Online, SharePoint Online e OneDrive for Business, questi programmi desktop di Office dispongono delle stesse caratteristiche per identificare le informazioni riservate e applicare i criteri di prevenzione della perdita dei dati. La prevenzione della perdita dei dati fornisce un monitoraggio continuo quando gli utenti condividono contenuti in questi programmi di Office.
+    Just like in Exchange Online, SharePoint Online, and OneDrive for Business, these Office desktop programs include the same capabilities to identify sensitive information and apply DLP policies. DLP provides continuous monitoring when people share content in these Office programs.
     
-- **Informare gli utenti su come garantire la conformità senza interrompere il flusso di lavoro.**
+- **Help users learn how to stay compliant without interrupting their workflow.**
     
-    È possibile informare gli utenti sui criteri di prevenzione della perdita dei dati e aiutarli a rimanere conformi senza comprometterne la produttività. Se ad esempio un utente prova a condividere un documento contenente informazioni riservate, è possibile inviargli una notifica tramite posta elettronica e mostrargli un suggerimento per i criteri nel contesto della raccolta documenti, che gli consente di ignorare i criteri se giustificato da motivi aziendali. Gli stessi suggerimenti per i criteri vengono visualizzati anche in Outlook sul web, Outlook, Excel, PowerPoint e Word.
+    You can educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification. The same policy tips also appear in Outlook on the web, Outlook, Excel, PowerPoint, and Word.
     
-- **Visualizzare avvisi e report DLP che indicano i contenuti corrispondenti ai criteri DLP dell'organizzazione.**
+- **View DLP alerts and reports showing content that matches your organization’s DLP policies.**
     
-    Per visualizzare gli avvisi e i metadati relativi ai criteri di prevenzione della perdita dei dati, è possibile usare il [Dashboard di gestione degli avvisi DLP](dlp-configure-view-alerts-policies.md). È anche possibile visualizzare i report della corrispondenza dei criteri per valutare il modo in cui l'organizzazione rispetta i criteri di prevenzione della perdita dei dati. Se esistono criteri di prevenzione della perdita dei dati che consentono agli utenti di ignorare un suggerimento per i criteri e segnalare un falso positivo, si può anche visualizzare il contenuto della segnalazione.
-    
+    To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
+
+-->    
+## <a name="create-and-manage-dlp-policies"></a>Creare e gestire i criteri DLP
+
 È possibile creare e gestire i criteri di prevenzione della perdita dei dati nella pagina Prevenzione della perdita di dati nel Centro conformità e sicurezza di Microsoft 365.
   
 ![Pagina Prevenzione della perdita di dati nel Centro sicurezza e conformità di Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
-## <a name="what-a-dlp-policy-contains"></a>Contenuto di un criterio DLP
+<!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
-In un criterio DLP sono disponibili alcuni elementi di base:
+A DLP policy contains a few basic things:
   
-- Dove proteggere il contenuto: **Posizioni** come ad esempio siti di Exchange Online, SharePoint Online e OneDrive for Business, ma anche messaggi di chat e canali di Microsoft Teams. 
+- Where to protect the content: **locations** such as Exchange Online, SharePoint Online, and OneDrive for Business sites, as well as Microsoft Teams chat and channel messages. 
     
-- Quando e come proteggere il contenuto applicando **regole** costituite da: 
+- When and how to protect the content by enforcing **rules** comprised of: 
     
-  - **Condizioni** che il contenuto deve soddifsfare prima che venga applicata la regola. Ad esempio, una regola potrebbe essere configurata in modo da cercare solo contenuti che includono numeri di codice fiscale condivisi con persone esterne all'organizzazione. 
+  - **Conditions** the content must match before the rule is enforced. For example, a rule might be configured to look only for content containing Social Security numbers that's been shared with people outside your organization. 
     
-  - **Azioni** che devono essere eseguite automaticamente dalla regola quando viene trovato il contenuto che soddisfa le condizioni. Ad esempio, una regola potrebbe essere configurata in modo da bloccare l'accesso a un documento e inviare una notifica tramite posta elettronica sia all'utente che al responsabile della conformità. 
+  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification. -->
     
 È possibile usare una regola per rispettare uno specifico requisito di protezione e quindi usare i criteri di prevenzione della perdita dei dati per raggruppare i requisiti comuni, ad esempio tutte le regole necessarie per la conformità a una specifica normativa.
   
@@ -81,20 +90,20 @@ In un criterio DLP sono disponibili alcuni elementi di base:
   
 ![Diagramma che mostra criterio di prevenzione della perita dei dati contenente posizioni e regole](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>Sedi
+<!-- MOVED TO LEARN ABOUT ### Locations
 
-I criteri di prevenzione della perdita dei dati vengono applicati agli elementi sensibili nelle diverse posizioni di Microsoft 365 e l’ambito può essere ulteriormente definito come descritto in questa tabella.
+DLP policies are applied to sensitive items across Microsoft 365 locations and can be further scoped as detailed in this table.
 
 
-|Posizione | Includere/escludere da|
+|Location | Include/exclude by|
 |---------|---------|
-|Posta elettronica di Exchange| gruppi di distribuzione|
-|Siti di SharePoint |siti |
-|Account di OneDrive |account |
-|Messaggi di chat e canali di Teams |account |
-|Dispositivi Windows 10 |utente o gruppo |
-|Microsoft Cloud App Security |istanza |
-
+|Exchange email| distribution groups|
+|SharePoint sites |sites |
+|OneDrive accounts |accounts |
+|Teams chat and channel messages |accounts |
+|Windows 10 devices |user or group |
+|Microsoft Cloud App Security |instance |
+ -->
 
 Se si sceglie di includere gruppi di distribuzione specifici in Exchange, i criteri DLP verranno applicati solo ai membri di quel gruppo. Analogamente, escludendo un gruppo di distribuzione si escluderanno tutti i membri di quel gruppo di distribuzione dalla valutazione dei criteri. È possibile scegliere di applicare un criterio ai membri delle liste di distribuzione, dei gruppi di distribuzione dinamici e dei gruppi di sicurezza. Una politica DLP non può contenere più di 50 inclusioni ed esclusioni.
 
@@ -496,8 +505,7 @@ In seguito alla sincronizzazione del criterio con il percorso corretto, viene av
 
 In tutti i siti SharePoint Online e in tutti quelli di OneDrive for Business, i documenti vengono modificati costantemente: vengono creati, modificati, condivisi e così via. Questo implica che in qualsiasi momento possono entrare in conflitto o diventare conformi a un criterio di prevenzione della perdita dei dati. Ad esempio, una persona può caricare un documento che non contiene informazioni riservate nel proprio sito del team, ma in seguito un'altra persona può modificarlo e aggiungervi informazioni riservate.
   
-Per questo motivo, i criteri di prevenzione della perdita dei dati controllano frequentemente in background la presenza di corrispondenze con i criteri, in una sorta di valutazione asincrona.
-<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
+Per questo motivo, i criteri DLP consentono di verificare la corrispondenza dei documenti ai criteri in background frequentemente. Tale operazione può essere considerata come una valutazione asincrona del criterio.<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
   
 #### <a name="how-it-works"></a>Funzionamento
  
@@ -510,7 +518,7 @@ Mentre vengono aggiunti o modificati documenti nei siti, il motore di ricerca es
 I criteri di prevenzione della perdita dei dati valutano tutti i contenuti che possono essere indicizzati. Per altre informazioni sui tipi di file sottoposti per impostazione predefinita a ricerca per indicizzazione, vedere [Estensioni dei nomi di file sottoposti a ricerca per indicizzazione e tipi di file analizzati predefiniti in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Per impostazione predefinita, la condivisione esterna dei nuovi file in SharePoint potrebbe essere bloccata finché almeno un criterio di prevenzione della perdita dei dati non scansioni il nuovo elemento. Per informazioni dettagliate, vedere [Contrassegnare i nuovi file come riservati per impostazione predefinita](/sharepoint/sensitive-by-default). 
+> Per evitare che i documenti vengano condivisi prima che i criteri DLP possano analizzarli, la condivisione di nuovi file in SharePoint può essere bloccata fino a quando il relativo contenuto non è stato indicizzato. Per informazioni dettagliate, vedere [Contrassegnare i nuovi file come riservati per impostazione predefinita](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Valutazione dei criteri in Exchange Online, Outlook e Outlook sul web
 
@@ -546,7 +554,7 @@ I membri del team conformità addetti alla creazione dei criteri di prevenzione 
 
 Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-Queste autorizzazioni sono necessarie solo per creare e applicare criteri di prevenzione della perdita dei dati. L'applicazione dei criteri non richiede l'accesso al contenuto.
+Queste autorizzazioni sono necessarie solo per la creazione e l'applicazione di un criterio DLP. L'applicazione di un criterio non richiede l'accesso ai contenuti.
   
 ## <a name="find-the-dlp-cmdlets"></a>Trovare i cmdlet di prevenzione della perdita dei dati
 

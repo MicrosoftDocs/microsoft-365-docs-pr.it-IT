@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sulla procedura di base per la creazione di un dizionario di parole chiave nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: b70deed531204f2ffe85253bd9ae2073dad291ec
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 94bacc2a2fe91fdc35aad753cc2e7db80a374e29
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632192"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876077"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
@@ -31,7 +31,7 @@ La prevenzione della perdita dei dati consente di identificare, monitorare e pro
 
 ## <a name="keyword-dictionary-limits"></a>Limiti dizionario di parole chiave
 
-Esiste un limite di 50 tipi di informazioni sensibili basati su dizionario di parole chiave che possono essere creati per tenant. Per sapere quanti dizionari di parole chiave sono presenti nel tenant, è possibile eseguire questo script di PowerShell nel tenant.
+Esiste un limite di 50 tipi di informazioni sensibili basati su dizionario di parole chiave che possono essere creati per tenant. Per informazioni sul numero di dizionari di parole chiave disponibili nel tenant, utilizzare le procedure descritte in [Connettersi a PowerShell nel Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) per connettersi al tenant ed eseguire questo script di PowerShell.
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -69,7 +69,7 @@ $Matches.Matches.Count
 Remove-Item $rawFile
 ```
 
-## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Procedura di base per la creazione di un dizionario di parole chiave
+## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Passaggi di base per la creazione di un dizionario di parole chiave
 
 Le parole chiave per il dizionario possono provenire da diverse origini, in genere da un file (ad esempio, un elenco con estensione csv o txt) importato nel servizio o tramite il cmdlet di PowerShell, da un elenco che viene immesso direttamente nel cmdlet di PowerShell o da un dizionario esistente. Quando si crea un dizionario di parole chiave, seguire gli stessi passaggi di base:
   

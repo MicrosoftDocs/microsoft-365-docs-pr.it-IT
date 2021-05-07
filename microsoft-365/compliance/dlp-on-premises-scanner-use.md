@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come usare la prevenzione della perdita dei dati di Microsoft 365 nello scanner locale per analizzare i dati inattivi e implementare azioni di protezione per le condivisioni di file locali e le cartelle e raccolte documenti di SharePoint locali.
-ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0abe36af5588c1828da106779a144b6e7f37d6a8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917822"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114154"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Usare lo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)
 
@@ -32,7 +32,7 @@ Per acquisire familiarità con le funzionalità locali di prevenzione della perd
 
 > [!IMPORTANT]
 > Questi scenari locali DLP non costituiscono le procedure ufficiali per la creazione e l'ottimizzazione di criteri DLP. Vedere gli argomenti seguenti quando è necessario usare i criteri di prevenzione della perdita dei dati in situazioni generiche:
->- [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+>- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 >- [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)
 >- [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
 >- [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
@@ -80,6 +80,6 @@ Per applicare le regole DPL ai file analizzati, occorre abilitare l'applicazione
 
 - [Informazioni sullo scanner locale per la prevenzione della perdita dei dati (anteprima)](dlp-on-premises-scanner-learn.md)
 - [Introduzione allo scanner DPL locale (anteprima)](dlp-on-premises-scanner-get-started.md)
-- [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)

@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Questo articolo descrive le procedure consigliate per la condivisione di file e cartelle con utenti non autenticati.
-ms.openlocfilehash: acc825a8fc445d224fbc91dd12dace2a5e1b25c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1e696611d37cd1b57f881457025464dccea54496
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199526"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114319"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati
 
 La condivisione non autenticata (collegamenti *Chiunque*) può essere comoda e utile in diversi scenari. I collegamenti *Chiunque* sono il modo più semplice per condividere: il collegamento può essere aperto senza autenticazione e passato ad altre persone.
 
-In genere, non tutto il contenuto di un'organizzazione è adatto alla condivisione non autenticata. Questo articolo illustra le opzioni disponibili per la creazione di un ambiente in cui gli utenti possano condividere file e cartelle senza autenticazione e in cui siano implementate misure di sicurezza per proteggere il contenuto dell'organizzazione.
+Solitamente, non tutti i contenuti in un'organizzazione sono adatti alla condivisione senza autenticazione. Questo articolo illustra le opzioni disponibili per la creazione di un ambiente in cui gli utenti possano condividere file e cartelle senza autenticazione e in cui siano implementate misure di sicurezza per proteggere il contenuto dell'organizzazione.
 
 > [!NOTE]
 > Affinché la condivisione non autenticata funzioni, è necessario abilitarla per l'organizzazione e per il singolo sito o team che si userà. Vedere [Collaborazione con persone esterne all'organizzazione](collaborate-with-people-outside-your-organization.md) per lo scenario da abilitare.
@@ -103,7 +103,7 @@ Per impostare il collegamento di condivisione di file e cartelle predefinito per
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Impedire la condivisione di contenuto riservato non autenticato
 
-È possibile usare [prevenzione della perdita dei dati (DLP)](../compliance/data-loss-prevention-policies.md) per impedire la condivisione di contenuto riservato non autenticato. La prevenzione della perdita di dati può agire in base all'etichetta di riservatezza, all'etichetta di conservazione o alle informazioni sensibili di un file nel file stesso.
+È possibile usare [prevenzione della perdita dei dati (DLP)](../compliance/dlp-learn-about-dlp.md) per impedire la condivisione di contenuto riservato non autenticato. La prevenzione della perdita di dati può agire in base all'etichetta di riservatezza, all'etichetta di conservazione o alle informazioni sensibili di un file nel file stesso.
 
 Per creare una regola DLP
 1. Nell'interfaccia di amministrazione di Conformità Microsoft 365 passare alla pagina [Prevenzione della perdita dei dati](https://compliance.microsoft.com/datalossprevention).

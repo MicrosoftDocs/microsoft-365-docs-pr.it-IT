@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 63670b157a66bad963f02355cbed2bdd95690081
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b2ce9670e9f297c89ed70e1b37c17aa59b80844
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908290"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687272"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -83,6 +83,15 @@ Se sono presenti più criteri di conservazione e quando si usano anche etichette
 5. Completare la procedura guidata per salvare le impostazioni.
 
 Per altre informazioni sui criteri di conservazione per Teams, vedere [Criteri di conservazione in Microsoft Teams](/microsoftteams/retention-policies) nella documentazione di Teams.
+
+#### <a name="known-configuration-issues"></a>Problemi di configurazione noti
+
+- Anche se è possibile selezionare l'opzione per iniziare il periodo di conservazione alla data dell'ultima modifica degli elementi, il valore **Quando gli elementi sono stati creati** viene sempre utilizzato. Per i messaggi modificati, una copia del messaggio originale viene salvata con il timestamp originale per identificare quando è stato creato il messaggio pre-modifica. Il messaggio modificato ha un timestamp più recente.
+
+- Quando si seleziona **Scegli i team** per il percorso **Messaggi del canale di Teams**, potrebbero essere visualizzati gruppi di Microsoft 365 che non corrispondono anche a team. Non selezionare questi gruppi.
+
+- Quando si seleziona il percorso **Scegli utenti per le chat di Teams**, potrebbero essere visualizzati utenti non della cassetta postale e utenti guest. I criteri di conservazione non sono progettati per questi utenti, perciò non devono essere selezionati.
+
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Un altro criterio di conservazione necessario per supportare Teams
 
@@ -194,9 +203,16 @@ Per verificare la sintassi del tenant e identificare gli URL per gli utenti, ved
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informazioni di configurazione per i gruppi di Microsoft 365
 
-Per conservare o eliminare il contenuto di un gruppo di Microsoft 365 (in precedenza gruppo di Office365), è necessario usare la posizione **Gruppi di Microsoft 365**. Anche se un gruppo di Microsoft 365 ha una cassetta postale di Exchange, un criterio di conservazione che include l'intero percorso **Posta elettronica di Exchange** non includerà il contenuto nelle cassette postali del gruppo di Microsoft 365. Inoltre, anche se il percorso **Posta elettronica di Exchange** consente inizialmente di selezionare una cassetta postale del gruppo da includere o escludere, provando a salvare il criterio di conservazione si riceverà un messaggio di errore che segnala che "RemoteGroupMailbox" non è una selezione valida per il percorso di Exchange.
+Per conservare o eliminare il contenuto di un gruppo di Microsoft 365 (in precedenza gruppo di Office365), è necessario usare la posizione **Gruppi di Microsoft 365**. Anche se un gruppo di Microsoft 365 ha una cassetta postale di Exchange, un criterio di conservazione che include l'intero percorso **Posta elettronica di Exchange** non includerà il contenuto nelle cassette postali del gruppo di Microsoft 365. Anche se il percorso **Posta elettronica di Exchange** consente inizialmente di specificare una cassetta postale di gruppo da includere o escludere, provando a salvare il criterio di conservazione si riceverà un messaggio di errore che segnala che "RemoteGroupMailbox" non è una selezione valida per il percorso di Exchange.
 
-I criteri di conservazione applicati a un gruppo di Microsoft 365 includono la cassetta postale del gruppo e il sito del team di SharePoint. I file archiviati nel sito del team di SharePoint sono inclusi in questa posizione, i messaggi delle chat o dei canali di Teams hanno invece le proprie posizioni per i criteri di conservazione.
+Per impostazione predefinita, i criteri di conservazione applicati a un gruppo di Microsoft 365 includono la cassetta postale di gruppo e il sito dei team di SharePoint. I file archiviati nel sito del team di SharePoint sono inclusi in questa posizione, i messaggi delle chat o dei canali di Teams hanno invece le proprie posizioni per i criteri di conservazione.
+
+Per cambiare l'impostazione predefinita per applicare il criterio di conservazione soltanto alle cassette postali di Microsoft 365 o ai siti dei team di SharePoint, usare il cmdlet di PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) con il parametro *Applicazioni* con uno dei seguenti valori:
+
+- `Group:Exchange` soltanto per le cassette postali di Microsoft 365 connesse al gruppo.
+- `Group:SharePoint` soltanto per i siti di SharePoint connessi al gruppo.
+
+Per tornare al valore predefinito sia della cassetta postale sia del sito di SharePoint per i gruppi di Microsoft 365 selezionati, specificare `Group:Exchange,SharePoint`.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informazioni di configurazione per Skype for Business
 

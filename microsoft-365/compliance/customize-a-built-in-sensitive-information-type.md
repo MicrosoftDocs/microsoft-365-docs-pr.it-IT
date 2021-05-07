@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come creare una tipologia personalizzata di informazioni sensibili che consente di usare regole che soddisfano le esigenze della propria organizzazione.
-ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b24313c54fdf49876c58d1809cbb29159f4508f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922660"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114260"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizzare una tipologia integrata di informazioni sensibili
 
@@ -232,7 +232,7 @@ Di seguito sono riportati i termini incontrati durante la procedura.
 |Funzioni|Il file XML fa riferimento a `Func_credit_card`, una funzione nel codice compilato. Le funzioni vengono utilizzate per eseguire regex complessi e verificare la corrispondenza del checksum alle regole predefinite. Poiché è ciò che accade nel codice, alcune variabili non vengono visualizzate nel file XML.|
 |IdMatch|L'identificatore per il quale i criteri cercano corrispondenze, ad esempio un numero di carta di credito.|
 |Elenchi di parole chiave|Il file XML fa anche riferimento a `keyword_cc_verification` e `keyword_cc_name`, elenchi di parole chiave, in cui si ricercano corrispondenze per l'entità all'interno di `patternsProximity`. Questi attualmente non vengono visualizzati nell'XML.|
-|Modello|Il modello contiene l'elenco di ciò che il tipo di informazione sensibile sta cercando. Questo include parole chiave, RegEx e funzioni interne, che eseguono attività come la verifica dei checksum. I tipi di informazioni sensibili possono avere più modelli con probabilità univoche. Questo è utile quando si crea un tipo di informazioni riservate che restituisce un livello elevato di probabilità se vengono trovate prove corroborative e un livello minore se vengono trovate poche o nessuna prova corroborativa.|
+|Modello|Il modello contiene l'elenco di ciò che il tipo di informazione sensibile sta cercando. Ciò include parole chiave, regex e funzioni interne che eseguono attività come la verifica checksum. Le tipologie di informazioni sensibili possono avere più modelli con affidabilità univoche. Ciò è utile quando si crea una tipologia di informazioni sensibili che restituisce affidabilità elevata se sono disponibili prove corroborative e affidabilità minore se sono disponibili prove corroborative minime o nulle.|
 |Modello confidenceLevel|Il livello di affidabilità che il motore DLP individui una corrispondenza. Tale livello di affidabilità è associato a una corrispondenza con i modelli se vengono soddisfatti i requisiti del modello. Questa misura di affidabilità è da prendere in considerazione quando si usano regole di flusso di posta (note anche come regole di trasporto) di Exchange.|
 |patternsProximity|Quando viene individuato qualcosa di simile al modello di un numero di carta di credito, `patternsProximity` è la prossimità al numero in cui verranno ricercate prove corroborative.|
 |recommendedConfidence|Il livello di affidabilità consigliato per la regola. Si applica a entità e affinità. Per le entità, il numero non viene mai valutato rispetto al valore `confidenceLevel` dei modelli. È semplicemente un suggerimento che consente di scegliere un livello di affidabilità se si desidera applicarne uno. Per le affinità, il valore `confidenceLevel` del modello deve essere maggiore del numero `recommendedConfidence` per richiamare un'azione di regola di flusso di posta. Il valore `recommendedConfidence` è il livello di affidabilità predefinito usato nella regola di flusso di posta che richiama un'azione. Se si desidera, è anche possibile modificare manualmente la regola di flusso di posta da richiamare in base al livello di affidabilità del modello.|
@@ -240,7 +240,5 @@ Di seguito sono riportati i termini incontrati durante la procedura.
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
-    
 - [Creare una tipologia personalizzata di informazioni riservate](create-a-custom-sensitive-information-type.md)
-    
-- [Panoramica relativa ai criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)

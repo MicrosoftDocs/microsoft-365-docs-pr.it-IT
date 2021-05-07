@@ -1,7 +1,7 @@
 ---
-title: Elencare i dispositivi esposti di un'attività di correzione
+title: Elencare i dispositivi esposti a un'attività correttiva
 description: Restituisce informazioni sui dispositivi esposti per l'attività di correzione specificata.
-keywords: api, correzione, api di correzione, ottenere, attività di correzione,
+keywords: api, correzione, api di correzione, ottenere, attività di correzione, correggere dispositivi esposti
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061198"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241713"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a>Elencare i dispositivi esposti di un'attività di correzione
+# <a name="list-exposed-devices-of-one-remediation-activity"></a>Elencare i dispositivi esposti a un'attività correttiva
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,7 +49,16 @@ Restituisce informazioni sui dispositivi esposti per l'attività di correzione s
 
 **URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences
 
-**Dettagli proprietà**
+## <a name="permissions"></a>Autorizzazioni
+
+Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi Usare Le API di [Microsoft Defender per endpoint per i dettagli.](apis-intro.md)
+
+Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
+:---|:---|:---
+Applicazione | RemediationTask.Read.All | \'Leggere informazioni sulla vulnerabilità di Gestione minacce e vulnerabilità\'
+Delegato (account aziendale o dell'istituto di istruzione) | RemediationTask.Read.Read | \'Leggere informazioni sulla vulnerabilità di Gestione minacce e vulnerabilità\'
+
+## <a name="properties-details"></a>Dettagli proprietà
 
 Proprietà (id) | Tipo di dati | Descrizione | Esempio
 :---|:---|:---|:---
@@ -60,13 +69,13 @@ rbacGroupName | Stringa | Nome del gruppo di dispositivi a cui è associato ques
 
 ## <a name="example"></a>Esempio
 
-**Esempio di** richiesta
+### <a name="request-example"></a>Esempio di richiesta
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-**Esempio di** risposta
+### <a name="response-example"></a>Esempio di risposta
 
 ```json
 {
@@ -108,10 +117,10 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [Metodi e proprietà di correzione](get-remediation-methods-properties.md)
 
-- [Ottenere un'attività di correzione in base all'ID](get-remediation-one-activity.md)
+- [Ottenere un'attività correttiva per ID](get-remediation-one-activity.md)
 
-- [Elencare tutte le attività di correzione](get-remediation-all-activities.md)
+- [Elencare tutte le attività correttive](get-remediation-all-activities.md)
 
-- [Gestione delle vulnerabilità & rischio](next-gen-threat-and-vuln-mgt.md)
+- [Rischio basato sulle minacce & gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnerabilità nell'organizzazione](tvm-weaknesses.md)

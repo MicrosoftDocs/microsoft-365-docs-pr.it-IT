@@ -25,24 +25,24 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come reimpostare le password utilizzando lo strumento di reimpostazione delle password in modalità self-service.
-ms.openlocfilehash: 0842430eda8c96647dd12d0da6d0c9e0481346dc
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: d24e826287f69f867fdaf9a5c8b424dbad4e0ebb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023762"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241833"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
-In qualità di amministratore di Microsoft 365, puoi consentire agli utenti di usare lo strumento di reimpostazione delle password in modalità [self-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) in modo da non doverli reimpostare. Un gran risparmio di tempo!
+Come amministratore Microsoft 365, puoi consentire agli utenti di usare lo strumento di reimpostazione delle password in modalità [self-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) in modo da non doverli reimpostare. Un gran risparmio di tempo!
   
 ## <a name="before-you-begin"></a>Prima di iniziare
   
-- Si ottiene gratuitamente la reimpostazione  della password self-service per gli utenti cloud con qualsiasi piano a pagamento aziendale, didattico o no profit di Microsoft 365. Non funziona con la versione di valutazione di Microsoft 365.
+- Ottieni gratuitamente la reimpostazione della  password self-service per gli utenti cloud con qualsiasi piano Microsoft 365 aziendale, scolastico o no profit a pagamento. Non funziona con la versione Microsoft 365 versione di valutazione.
 
 - Si basa su Azure. Questa funzionalità verrà scaricata automaticamente e **gratuitamente** in Azure quando si esegue questa procedura. L'attivazione della reimpostazione della password in modalità self-service non costa nulla se non si usano altre funzionalità di Azure.
 
-- **Se si utilizza un'istanza** di Active Directory locale, i due punti precedenti non sono applicabili. È invece possibile configurare questa impostazione, ma richiede una sottoscrizione a pagamento **per Azure AD Premium.**
+- **Se si utilizza un'istanza** di Active Directory locale, i due punti precedenti non sono applicabili. È invece possibile configurare questa impostazione, ma richiede una sottoscrizione a pagamento **ad Azure AD Premium**.
 
 Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
 
@@ -57,24 +57,8 @@ Se il video è stato utile, consultare la [serie dei corsi di formazione complet
 ## <a name="steps-let-people-reset-their-own-passwords"></a>Passaggi: consentire agli utenti di reimpostare le proprie password
 
 Con questi passaggi si attiva la reimpostazione della password in modalità self-service per tutti gli utenti dell'azienda.
-  
-::: moniker range="o365-worldwide"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Impostazioni** > **organizzazione.**
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Impostazioni** \> **Privacy &amp; di** sicurezza.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Impostazioni** \> **Impostazioni** \> **Privacy &amp; di** sicurezza.
-
-::: moniker-end
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Impostazioni**  >  **impostazioni dell'organizzazione.**
 
 2. Nella parte superiore della pagina **Impostazioni organizzazione** selezionare la scheda Sicurezza **& Privacy.**
   
@@ -88,7 +72,7 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
   
 7. Quando gli utenti effettuano l'accesso, gli verrà richiesto di immettere ulteriori informazioni di contatto che li aiuteranno a reimpostare la password in futuro.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md)
 

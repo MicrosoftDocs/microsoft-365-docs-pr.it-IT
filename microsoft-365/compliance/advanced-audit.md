@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574655"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892907"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
@@ -41,7 +41,7 @@ Audit avanzato conserva tutti i record di controllo di Exchange, SharePoint e Az
 Stiamo anche offrendo la possibilità di conservare i log di controllo per 10 anni. Il periodo di conservazione di 10 anni dei log di controllo consente di supportare le indagini lunghe e rispondere a obblighi normativi, legali e interni.
 
 > [!NOTE]
-> La conservazione dei log di controllo per 10 anni richiede una licenza per componenti aggiuntivi.  Questa nuova licenza sarà disponibile all'inizio del 2021. Per altre informazioni, vedere [Domande frequenti su Audit avanzato](#faqs-for-advanced-audit) in questo articolo.
+> La conservazione dei log di controllo per 10 anni richiede una licenza per componenti aggiuntivi.  Per altre informazioni, vedere [Domande frequenti su Audit avanzato](#faqs-for-advanced-audit) in questo articolo.
 
 ### <a name="audit-log-retention-policies"></a>Criteri di conservazione dei log di controllo
 
@@ -63,9 +63,12 @@ Audit avanzato aiuta le organizzazioni a svolgere indagini forensi o di conformi
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+> [!NOTE]
+> <sup>*</sup> Al momento, questo evento non è disponibile negli ambienti Office 365 e Microsoft 365 Government. Ciò include gli ambienti GCC, GCC High e DoD.
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
@@ -197,13 +200,9 @@ Un utente deve essere assegnato a una licenza E5 per usufruire delle funzionalit
 
 Per i clienti idonei e gli utenti a cui è assegnata la licenza appropriata, non ci sono azioni da intraprendere per accedere agli eventi di controllo cruciali.
 
-**Quando sarà disponibile il componente aggiuntivo per la conservazione dei log di controllo per 10 anni?**
+**Cosa succede ai log di controllo dell'organizzazione se è stato creato un criterio di conservazione dei log di controllo per 10 anni quando la funzionalità è stata rilasciata per la disponibilità generale, ma prima che la licenza necessaria per il componente aggiuntivo fosse disponibile?**
 
-Il nuovo componente aggiuntivo per la conservazione dei log di controllo per 10 anni è ora disponibile per l’acquisto per i clienti con abbonamento E5.
-
-**Che cosa succede ai log di controllo della mia organizzazione se creo un criterio di conservazione dei log di controllo per 10 anni quando la funzionalità viene rilasciata al pubblico, ma prima che la licenza necessaria per il componente aggiuntivo sia resa disponibile a febbraio 2021?**
-
-Qualsiasi dato dei log di controllo coperto da un criterio di conservazione per 10 anni creato dopo che il componente sarà reso disponibile sarà conservato per 10 anni. Se la licenza per il componente aggiuntivo di conservazione del log di controllo per 10 anni sarà disponibile all'inizio del 2021, l'utente dovrà acquistare le licenze del componente aggiuntivo per gli utenti i cui dati di controllo vengono conservati ai sensi di un criterio di conservazione da 10 anni già esistente.
+Tutti i dati dei log di controllo coperti da un criterio di conservazione di 10 anni creato dopo che la funzionalità è stata rilasciata per la disponibilità generale nell'ultimo trimestre del 2020 verranno conservati per 10 anni. Ciò include i criteri di conservazione dei log di controllo per 10 anni creati prima che la licenza necessaria per il componente aggiuntivo venisse rilasciata per l'acquisto. Tuttavia, ora che la licenza per il componente aggiuntivo di conservazione dei log di controllo per 10 anni è disponibile, l'utente dovrà acquistare e assegnare le licenze del componente aggiuntivo per qualsiasi utente i cui dati di controllo siano coperti da un criterio di conservazione per 10 anni.
 
 **I nuovi eventi di Audit avanzato sono disponibili nell'API Office 365 Management Activity?**
 

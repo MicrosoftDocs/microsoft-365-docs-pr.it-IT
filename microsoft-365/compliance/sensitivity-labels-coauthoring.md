@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: 34c674dc5fb9be9cb5572ce1f14e11a0f8ab14ae
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034225"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764365"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
@@ -60,7 +60,7 @@ Per altre informazioni sulla modifica dei metadati, vedere le seguenti risorse:
 
 - Specifiche aperte: [2.6.3 LabelInfo vs Proprietà personalizzate dei documenti](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-A causa di queste modifiche, non bisogna abilitare tale impostazione se nell’organizzazione sono presenti app, servizi, script o strumenti che leggono o scrivono i metadati delle etichette nella posizione precedente. Se questa impostazione viene abilitata, si potrebbe incorrere in quanto segue:
+A causa di queste modifiche, non bisogna abilitare tale impostazione se nell’organizzazione sono presenti app, servizi, script o strumenti che leggono o scrivono i metadati delle etichette nella posizione precedente. Se lo si fa, queste possono essere alcune delle conseguenze:
 
 - Un documento etichettato appare senza etichetta
 
@@ -104,7 +104,7 @@ Prima di attivare questa funzionalità, assicurarsi di aver compreso i seguenti 
     - **App e servizi che usano Microsoft Information Protection SDK:** 
         - Versione minima di 1.7 
 
-I servizi di Microsoft 365 supportano automaticamente la nuova etichettatura dei metadati quando questa funzionalità viene attivata. Ad esempio:
+I servizi di Microsoft 365 supportano automaticamente la nuova etichettatura dei metadati quando questa funzionalità viene attivata. Per esempio:
 
 - [Criteri di etichetta automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Criteri di prevenzione della perdita dei dati che usano etichette di riservatezza come condizioni](dlp-sensitivity-label-as-condition.md)
@@ -140,7 +140,7 @@ Questa versione di anteprima di creazione condivisa per file crittografati con e
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Come abilitare la creazione condivisa per i file con etichette di riservatezza
 
 > [!CAUTION]
-> L'attivazione di questa impostazione è un'azione unidirezionale. Durante la versione di anteprima è consigliabile testare la nuova funzionalità solo in un ambiente non di produzione e solo dopo aver letto e compreso le modifiche dei metadati, i prerequisiti, le limitazioni e gli eventuali problemi noti documentati in questa pagina.
+> L'attivazione di questa impostazione è un'azione unidiredirezionale. Durante la versione di anteprima è consigliabile testare la nuova funzionalità solo in un ambiente non di produzione e solo dopo aver letto e compreso le modifiche dei metadati, i prerequisiti, le limitazioni e gli eventuali problemi noti documentati in questa pagina.
 
 Durante l'anteprima è necessario usare un URL specifico per accedere a questa impostazione nel Centro conformità Microsoft 365.
 
@@ -179,6 +179,6 @@ Se un tecnico del supporto disabilita questa impostazione per il tenant:
 
 - Il nuovo formato e percorso dei metadati non verrà copiato nel formato e nella posizione originali per i documenti di Office usati quando l'impostazione era abilitata. Di conseguenza, le informazioni di etichettatura per i file di Word, Excel e PowerPoint non crittografati andranno perse.
 
-- La creazione condivisa e il salvataggio automatico non funzioneranno più nel tenant.
+- Creazione condivisa e salvataggio automatico non funzioneranno più nel tenant per documenti etichettati e crittografati.
 
 - Le etichette di riservatezza rimangono abilitate per i file di Office in OneDrive e SharePoint.

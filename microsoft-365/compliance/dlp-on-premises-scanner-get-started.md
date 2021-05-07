@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare lo scanner per la prevenzione della perdita dei dati locali di Microsoft 365
-ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917832"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114174"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Introduzione allo scanner per la prevenzione della perdita dei dati locali (anteprima)
 
@@ -55,7 +55,7 @@ I dati provenienti dallo scanner per la prevenzione della perdita dei dati local
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Prerequisiti scanner per la prevenzione della perdita dei dati locali
 
-- Lo scanner Azure Information Protection (AIP) implementa la corrispondenza e l'applicazione dei criteri di prevenzione della perdita dei dati. Lo scanner viene installato come parte del client AIP. Pertanto l'installazione deve soddisfare tutti i prerequisiti di AIP, del client AIP e dello scanner di etichette unificato AIP.
+- Lo scanner Azure Information Protection (AIP) implementa la corrispondenza e l’applicazione dei criteri di prevenzione della perdita dei dati. Lo scanner viene installato come parte del client AIP. Pertanto l'installazione deve soddisfare tutti i prerequisiti di AIP, del client AIP e dello scanner di etichette unificato AIP.
 - Distribuire il client e lo scanner AIP. Per ulteriori informazioni vedere [Installare il client di etichettatura unificata AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) e [][Configurazione e installazione dello scanner di etichettatura unificata di Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install).
 - È necessario che almeno un'etichetta e un criterio siano pubblicati nel tenant, anche se tutte le regole di rilevamento sono basate solo su tipi di informazioni riservate.
 
@@ -127,7 +127,7 @@ Dopo aver distribuito i criteri di test per i percorsi di prevenzione della perd
 
 - [Informazioni sullo scanner per la prevenzione della perdita dei dati locali (anteprima)](dlp-on-premises-scanner-learn.md)
 - [Usare lo scanner per la prevenzione della perdita dei dati locali (anteprima)](dlp-on-premises-scanner-use.md)
-- [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
 - [Abbonamento a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
