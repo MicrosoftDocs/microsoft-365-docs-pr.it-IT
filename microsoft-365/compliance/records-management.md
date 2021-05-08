@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051688"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245433"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informazioni sulla gestione dei record in Microsoft 365
 
@@ -48,7 +48,7 @@ Usa le funzionalità seguenti per supportare la soluzione di gestione dei record
 
 - **Esportare le informazioni riguardanti tutti gli elementi eliminati** con l'[opzione di esportazione](disposition.md#filter-and-export-the-views).
 
-- **Impostare autorizzazioni specifiche** per le funzioni di gestione dei record nell'organizzazione per [avere l’accesso corretto](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Impostare autorizzazioni specifiche** per le funzioni di gestione dei record nell'organizzazione per [avere l’accesso corretto](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Utilizzando queste funzionalità, è possibile incorporare le pianificazioni e i requisiti di conservazione dell'organizzazione in una soluzione di gestione dei record che gestisce la conservazione, la dichiarazione dei record e l'eliminazione a supporto dell'intero ciclo di vita del contenuto.
 
@@ -111,6 +111,4 @@ Quando viene applicata un'etichetta di conservazione a un elemento elenco con un
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione
 
-Vedere [Introduzione alla gestione dei record](get-started-with-records-management.md).
-
-Per contrassegnare i contenuti come record, vedere [Dichiarare un elemento come record tramite le etichette di conservazione](declare-records.md).
+Vedere [Introduzione alla gestione dei record](get-started-with-records-management.md). Questo articolo contiene informazioni su abbonamenti, autorizzazioni e collegamenti a istruzioni di configurazione end-to-end per gli scenari di gestione dei record.

@@ -13,27 +13,27 @@
       href: architecture-icons-templates.md
 - name: Soluzioni di Microsoft 365 Foundation
   items:
-    - name: Aumentare la produttività dei lavoratori remoti con Microsoft 365
+    - name: Configurare l’infrastruttura per il lavoro remoto
       items:
         - name: Panoramica
           href: empower-people-to-work-remotely.md
         - name: Passaggio 1. Aumentare la sicurezza dell'accesso
           href: empower-people-to-work-remotely-secure-sign-in.md
-        - name: Passaggio 2. Fornire l'accesso remoto
+        - name: 'Passaggio2: Fornire l''accesso remoto'
           href: empower-people-to-work-remotely-remote-access.md
-        - name: Passaggio 3. Distribuire sicurezza e conformità
+        - name: 'Passaggio 3: Distribuire sicurezza e conformità'
           href: empower-people-to-work-remotely-security-compliance.md
         - name: Passaggio 4. Distribuire la gestione endpoint
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: Passaggio 5. Distribuire le app e i servizi per la produttività
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: Passaggio 6. Formare i lavoratori remoti
+        - name: 'Passaggio 6: Formare i lavoratori remoti'
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Proteggere la collaborazione con Microsoft 365
       items:
         - name: Panoramica
           href: setup-secure-collaboration-with-teams.md
-        - name: Passaggio 1. Configurare tre livelli di protezione con Microsoft Teams
+        - name: 'Passaggio 1: Configurare tre livelli di protezione con Microsoft Teams'
           items:
             - name: Panoramica dei tre livelli di protezione
               href: configure-teams-three-tiers-protection.md
@@ -107,7 +107,7 @@
           href: tenant-management-networking.md
         - name: Passaggio 3. Identità
           href: tenant-management-identity.md
-        - name: Passaggio 4. Migrazione
+        - name: 'Passaggio 4: Migrazione'
           href: tenant-management-migration.md
         - name: Passaggio 5. Gestione di dispositivi e app
           href: tenant-management-device-management.md
@@ -123,7 +123,7 @@
               href: /MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Passaggio 2. - Configurare il sistema telefonico
               href: /microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Passaggio 3. - Configurare la connettività PSTN
+            - name: 'Passaggio 3: Configurare la connettività PSTN'
               items:
                 - name: Opzione piano per chiamate
                   href: /microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json

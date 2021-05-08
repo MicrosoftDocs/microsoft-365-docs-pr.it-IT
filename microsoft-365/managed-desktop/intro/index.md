@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445555"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245529"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
@@ -57,7 +57,7 @@ Gli amministratori IT traggono vantaggio da queste caratteristiche:
 ## <a name="device-management"></a>Gestione dei dispositivi
 Microsoft Managed Desktop gestisce i dispositivi registrati e il software Microsoft in uso.
 
-- **Hardware:** anziché far ricercare e verificare dal tuo reparto IT i dispositivi (e i relativi driver), i dispositivi specifici vengono testati con attenzione da Microsoft Managed Desktop, creando una [serie di dispositivi](../service-description/device-list.md) che soddisfano i requisiti di prestazioni a livello aziendale, garantiti per l'uso. È possibile procurarsi i dispositivi da se (o collaborare con un partner) o riutilizzare i dispositivi già esistenti, purché siano nell'elenco approvato. La registrazione dei dispositivi è facile e immediata. Prima di essere distribuiti, è anche possibile [personalizzare](../working-with-managed-desktop/config-setting-overview.md) alcuni caratteristiche del dispositivo per gli utenti.
+- **Hardware:** invece di far ricercare e verificare al proprio reparto IT se un dispositivo è compatibile con il servizio, sono stati forniti requisiti, strumenti e processi hardware e software specifici per semplificare la selezione in modo da poter scegliere i dispositivi in tutta sicurezza. È possibile trovare i dispositivi consigliati filtrando per Microsoft Managed Desktop nel sito [Dispositivi Windows 10 per le aziende](https://www.microsoft.com/windowsforbusiness/view-all-devices). È possibile procurarsi i dispositivi da se (o collaborare con un partner) o riutilizzare i dispositivi già esistenti, purché siano nell'elenco approvato. La registrazione dei dispositivi è facile e immediata. Prima di essere distribuiti, è anche possibile [personalizzare](../working-with-managed-desktop/config-setting-overview.md) alcuni caratteristiche del dispositivo per gli utenti.
 
 - **Aggiornamenti:** Microsoft Managed Desktop consente di configurare e gestire tutti gli aspetti dei [gruppi di distribuzione](../service-description/updates.md) per quanto riguarda aggiornamenti di qualità e funzionalità di Windows 10, driver, firmware, definizioni antivirus e app Microsoft 365 per gli aggiornamenti aziendali. Questo include test e verifica approfonditi di tutti gli aggiornamenti, assicurando che i dispositivi registrati siano sempre aggiornati, riducendo al minimo i disservizi, così da liberare il tuo reparto IT.
 
@@ -66,7 +66,7 @@ Microsoft Managed Desktop gestisce i dispositivi registrati e il software Micros
 
 ## <a name="device-monitoring"></a>Monitoraggio del dispositivo
 
-Microsoft contribuisce a mantenere la sicurezza dei propri dispositivi grazie a un centro operativo dedicato, che monitora i dispositivi e usa i dati delle minacce che vengono analizzati ogni mese. Tali caratteristiche di sicurezza sono integrate anziché aggiunte in un secondo momento.
+Microsoft contribuisce a mantenere la sicurezza dei propri dispositivi grazie a un centro operativo dedicato, che monitora i dispositivi e usa i dati delle minacce che vengono analizzati ogni mese. Tali funzionalità di sicurezza sono integrate anziché aggiunte in un secondo momento.
 
 Il monitoraggio dell'integrità dei dispositivi include anche informazioni approfondite sulle prestazioni dei dispositivi. Per altre informazioni, vedere [Operazioni e monitoraggio per Microsoft Managed Desktop](../service-description/operations-and-monitoring.md).
 

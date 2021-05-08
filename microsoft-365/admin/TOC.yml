@@ -107,16 +107,30 @@
               href: create-groups/manage-guest-access-in-groups.md
             - name: Cambiare un nome utente e un indirizzo e-mail
               href: add-users/change-a-user-name-and-email-address.md
-            - name: Rimuovere un ex dipendente
-              href: add-users/remove-former-employee.md
-            - name: Accedere ai dati di un ex utente ed eseguirne il backup
-              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: Ripristinare un utente
               href: add-users/restore-user.md
             - name: Creare un modello per aggiungere utenti
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: Aggiornare gli utenti alle app più recenti
               href: setup/upgrade-users-to-latest-office-client.md
+        - name: Rimuovere un ex dipendente
+          items:
+            - name: Panoramica
+              href: add-users/remove-former-employee.md
+            - name: Passaggio 1. Impedire a un dipendente di accedere e bloccare l'accesso ai servizi Microsoft 365
+              href: add-users/remove-former-employee-step-1.md
+            - name: Passaggio 2. Salvare il contenuto della cassetta postale di un ex dipendente
+              href: add-users/remove-former-employee-step-2.md
+            - name: Passaggio 3. Inoltrare la posta elettronica di un ex dipendente a un altro dipendente o convertirla in una cassetta postale condivisa
+              href: add-users/remove-former-employee-step-3.md
+            - name: Passaggio 4. Concedere a un altro dipendente l'accesso ai dati di OneDrive e Outlook
+              href: add-users/remove-former-employee-step-4.md
+            - name: Passaggio 5. Cancellare i dati e bloccare il dispositivo mobile di un ex dipendente.
+              href: add-users/remove-former-employee-step-5.md
+            - name: Passaggio 6. Rimuovere la licenza di Microsoft 365 da un ex dipendente
+              href: add-users/remove-former-employee-step-6.md
+            - name: Passaggio 7. Eliminare l'account utente di un ex dipendente.
+              href: add-users/remove-former-employee-step-7.md
         - name: Gruppi
           items:
             - name: Panoramica dei gruppi

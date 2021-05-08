@@ -21,14 +21,17 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: Scopri come rinnovare Microsoft 365 attivando o disattivando la fatturazione ricorrente.
-ms.openlocfilehash: 76be85fe3cbeafb275478e6236e051b6a252c099
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615172"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244649"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Rinnovare Microsoft 365 per le aziende
+
+> [!IMPORTANT]
+> A partire dal 26 gennaio 2021 i nuovi conti correnti bancari non sono più supportati per i clienti in Belgio, Francia, Italia, Lussemburgo, Portogallo, Spagna e Stati Uniti. I clienti esistenti in uno di questi paesi/aree geografiche possono continuare a pagare l'abbonamento con un conto corrente bancario esistente e aggiungervi nuovi abbonamenti, ma solo fino a quando il conto corrente bancario è in regola.
 
 Questo articolo si applica alla maggior parte degli abbonamenti a pagamento a Microsoft 365 per le aziende.
   

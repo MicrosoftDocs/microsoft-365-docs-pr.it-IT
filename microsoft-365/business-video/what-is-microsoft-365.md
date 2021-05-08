@@ -20,12 +20,12 @@ search.appverid:
 description: Informazioni sulle funzionalità di Microsoft 365 Business Premium.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f4c41e86f3a98c2af076a58e311aa14be79704e9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580331"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245181"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -45,5 +45,7 @@ Quando ti iscrivi a Microsoft 365 Business Premium, ottieni tutti gli stessi str
 | Proteggere i dati aziendali | I tuoi dati personali sono protetti sui dispositivi personali con accesso tramite PIN e copia e salvataggio limitati. Puoi anche aggiungere la protezione delle informazioni per assicurarti che solo le persone autorizzate possano accedere alle informazioni sensibili. |
 | Proteggi i tuoi dispositivi | Puoi proteggere i tuoi file di lavoro sui dispositivi limitando l'accesso ai dispositivi mobili, ad esempio copia e incolla. Puoi anche cancellare selettivamente i dati aziendali dai dispositivi mobili registrati in caso di smarrimento o furto. |
 | Ulteriori funzionalità relative alla sicurezza | Le funzionalità avanzate di Microsoft 365 Business Premium sono disponibili per aiutarti a proteggere la tua azienda dalle minacce informatiche e salvaguardare le informazioni sensibili. Le funzionalità includono Office 365 Advanced Threat Protection, Criteri di prevenzione della perdita di dati (DLP), archiviazione Exchange Online, Azure Information Protection e Intune. |
+
+Se si ha Microsoft Business Premium, il modo più rapido per configurare la sicurezza e iniziare a collaborare in modo sicuro consiste nel seguire le indicazioni fornite in questa raccolta: [Microsoft 365 per piccole imprese e campagne](../campaigns/index.md). Queste indicazioni sono state sviluppate in collaborazione con il team Microsoft Defending Democracy per proteggere tutti i clienti delle piccole imprese dalle minacce informatiche lanciate da hacker sofisticati. 
 
 Per maggiori dettagli, vedere [Contenuto di Microsoft 365 Business](../business/index.yml)

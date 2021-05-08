@@ -21,14 +21,17 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 65454dcc71645b370d2ebfc875474151c0954a3c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576938"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245005"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Come pagare un abbonamento
+
+> [!IMPORTANT]
+> A partire dal 26 gennaio 2021 i nuovi conti correnti bancari non sono più supportati per i clienti in Belgio, Francia, Italia, Lussemburgo, Portogallo, Spagna e Stati Uniti. I clienti esistenti in uno di questi paesi/aree geografiche possono continuare a pagare l'abbonamento con un conto corrente bancario esistente e aggiungervi nuovi abbonamenti, ma solo fino a quando il conto corrente bancario è in regola.
 
 Per pagare l'abbonamento, è possibile usare una carta di credito o di debito oppure un conto corrente bancario. In alcuni casi, è possibile pagare la fattura tramite assegno o bonifico bancario. Se si dispone di un profilo di fatturazione, le opzioni sono leggermente diverse. Per altre informazioni, vedere [Come pagare l'abbonamento con un profilo di fatturazione](pay-for-subscription-billing-profile.md). Se non si è sicuri di disporre di un account con profilo di fatturazione, vedere [Informazioni sui profili di fatturazione](manage-billing-profiles.md).
 

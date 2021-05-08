@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni su come configurare la sottoscrizione a Microsoft 365 Business Standard.
-ms.openlocfilehash: 9efd14af2955e85b9b13c437ad869710f69a90f6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579087"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244456"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Configurare Microsoft Business Standard
 
@@ -67,9 +67,9 @@ Gli utenti possono essere aggiunti nella procedura guidata, ma è anche possibil
 
 A tutti gli utenti aggiunti nella procedura guidata viene assegnata automaticamente una licenza di Microsoft 365 Business Standard.
 
-1. Se la sottoscrizione a Microsoft 365 Business Standard include già degli utenti (ad esempio se si è usato Azure AD Connect), sarà disponibile un’opzione per assegnare le licenze a questi utenti. Procedere aggiungendo le licenze anche per questi utenti.
+1. Se l'abbonamento a Microsoft 365 Business Standard include già degli utenti (ad esempio se si è usato Azure AD Connect), sarà disponibile un’opzione per assegnare le licenze a questi utenti.
 
-2. Una volta aggiunti gli utenti, sarà disponibile un’opzione per condividere le credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
+2. Dopo aver aggiunto gli utenti, sarà disponibile anche un'opzione per la condivisione delle credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
 
 ## <a name="connect-your-domain"></a>Connettere il proprio dominio
 
@@ -139,4 +139,4 @@ Microsoft 365 non include un sito Web pubblico che possa essere usato dall'azien
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-Per altre informazioni, vedere [Usare un sito Web pubblico](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9).
+Per altre informazioni, vedere [Usare un sito Web pubblico](../../business-video/create-web-site.md).

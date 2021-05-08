@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implementare le funzionalità di Governance delle informazioni Microsoft per gestire i dati in base ai requisiti di conformità o normativi.
-ms.openlocfilehash: 6a0db63f218db72dbda9afc510cb5ef5f5e13eaa
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107704"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244565"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Governance delle informazioni Microsoft in Microsoft 365
 
@@ -31,6 +31,8 @@ Usare le funzionalità di Governance delle informazioni Microsoft, a volte abbre
 ![Gestire i dati: governance delle informazioni e gestione dei record](../media/information-governance-records-management.png)
 
 Si vuole proteggere i propri dati? Vedere [Microsoft Information Protection in Microsoft 365](information-protection.md).
+
+Per consentire il rispetto delle normative sulla privacy dei dati, è stato progettato un flusso di lavoro che fornisce una guida attraverso il processo end-to end di pianificazione e implementazione delle funzionalità in Microsoft 365, tra cui accesso sicuro, protezione dalla minacce, protezione delle informazioni e governance dei dati. Per altre informazioni, vedere [Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## <a name="information-governance"></a>Governance delle informazioni
 
