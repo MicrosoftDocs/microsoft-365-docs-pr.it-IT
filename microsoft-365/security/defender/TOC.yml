@@ -130,11 +130,11 @@
               href: m365d-remediation-actions.md
             - name: Visita il Centro notifiche
               href: m365d-action-center.md
-            - name: Approva o rifiuta azioni in sospeso
+            - name: Visualizzare e gestire le azioni correttive
               href: m365d-autoir-actions.md
             - name: Visualizza dettagli e risultati delle indagini automatizzate
               href: m365d-autoir-results.md
-            - name: Segnalare falsi positivi/negativi
+            - name: Indirizzo falsi positivi/negativi
               href: m365d-autoir-report-false-positives-negatives.md
         - name: Ricerca avanzata
           items:
