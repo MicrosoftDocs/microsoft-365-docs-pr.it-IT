@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Panoramica del Centro messaggi di Microsoft 365 e del relativo ruolo nella gestione delle modifiche.
-ms.openlocfilehash: 52d2c0815757127ad0c4e34d077a8807f926740e
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+description: Panoramica del centro messaggi Microsoft 365 messaggi e del suo ruolo nella gestione delle modifiche.
+ms.openlocfilehash: af65db32edd56b11adede0e4e690b3f69b07180e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077156"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244420"
 ---
 # <a name="message-center"></a>Centro messaggi
 
@@ -53,7 +53,7 @@ Per aprire il Centro messaggi:
 
 ::: moniker-end
 
-Puoi anche usare l'app Di amministrazione di [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=627216) sul dispositivo mobile per visualizzare il Centro messaggi, un ottimo modo per rimanere al corrente con le notifiche push.
+Puoi anche usare [l'app Microsoft 365 admin](https://go.microsoft.com/fwlink/p/?linkid=627216) sul dispositivo mobile per visualizzare il Centro messaggi, che è un ottimo modo per rimanere al corrente con le notifiche push.
 
 Per annullare la sottoscrizione ai messaggi di posta elettronica del Centro messaggi, vedere Annullare la sottoscrizione ai messaggi [di posta](#unsubscribe-from-message-center-emails) elettronica del Centro messaggi in questo articolo.
 
@@ -62,12 +62,12 @@ Per annullare la sottoscrizione ai messaggi di posta elettronica del Centro mess
 
 |**Domanda**|**Risposta**|
 |:-----|:-----|
-|Chi può visualizzare i post nel Centro messaggi?  <br/> |La maggior parte degli utenti a cui è stato assegnato un ruolo di amministratore in Microsoft 365 può visualizzare i post del Centro messaggi. [Ecco un elenco dei](#admin-roles-that-dont-have-access-to-the-message-center) ruoli di amministratore che non hanno accesso al Centro messaggi. È inoltre possibile assegnare il ruolo di lettore del Centro messaggi agli utenti che dovrebbero essere in grado di leggere e condividere i post del Centro messaggi senza disporre di altri privilegi di amministratore.<br/>|
-|Questo è l'unico modo in cui Microsoft comunicherà le modifiche su Microsoft 365?  <br/> |No, ma il Centro messaggi è il modo principale per comunicare i tempi delle singole modifiche in Microsoft 365. Per informazioni sulle risorse aggiuntive, vedere Stay [on top of Microsoft 365 changes.](stay-on-top-of-updates.md)  <br/> |
+|Chi può visualizzare i post nel Centro messaggi?  <br/> |La maggior parte degli utenti a cui è stato assegnato un ruolo di amministratore Microsoft 365 visualizzare i post del Centro messaggi. [Ecco un elenco dei](#admin-roles-that-dont-have-access-to-the-message-center) ruoli di amministratore che non hanno accesso al Centro messaggi. È inoltre possibile assegnare il ruolo di lettore del Centro messaggi agli utenti che dovrebbero essere in grado di leggere e condividere i post del Centro messaggi senza disporre di altri privilegi di amministratore.<br/>|
+|Questo è l'unico modo in cui Microsoft comunicherà le modifiche Microsoft 365?  <br/> |No, ma il Centro messaggi è il modo principale per comunicare i tempi delle singole modifiche Microsoft 365. Per [informazioni sulle risorse aggiuntive, vedere Stay on top of Microsoft 365 changes.](stay-on-top-of-updates.md)  <br/> |
 |Come si visualizzano i post in una lingua specifica?  <br/> |I post del Centro messaggi sono scritti solo in inglese, ma puoi controllare se, per impostazione predefinita, i post vengono visualizzati in inglese o vengono tradotti automaticamente nella lingua preferita. Puoi anche scegliere di tradurre automaticamente i post in qualsiasi lingua che supportiamo. Per [ulteriori informazioni, vedere Traduzione della lingua](language-translation-for-message-center-posts.md) per i post del Centro messaggi.  <br/> |
-|È possibile ottenere un'anteprima delle modifiche o delle caratteristiche prima che vengano distribuite nell'organizzazione?  <br/> |Alcune modifiche e nuove funzionalità possono essere visualizzate in anteprima acconsentendo esplicitamente al programma di rilascio Mirato. Per acconsentire esplicitamente, nell'interfaccia di amministrazione passare a **Impostazioni**  >  **Impostazioni organizzazione Profilo**  >  **organizzazione** Preferenze  >  **di rilascio.** Nell'interfaccia di amministrazione potrebbe essere necessario selezionare **Mostra tutto** nella parte inferiore del riquadro di spostamento sinistro per visualizzare **Impostazioni.** È possibile scegliere Rilascio mirato per l'intera organizzazione o solo per gli utenti selezionati. Per ulteriori informazioni sul programma, vedere Opzioni di rilascio standard o mirate [in Microsoft 365.](release-options-in-office-365.md)  <br/> |
+|È possibile ottenere un'anteprima delle modifiche o delle caratteristiche prima che vengano distribuite nell'organizzazione?  <br/> |Alcune modifiche e nuove funzionalità possono essere visualizzate in anteprima acconsentendo esplicitamente al programma di rilascio Mirato. Per acconsentire esplicitamente, nell'interfaccia di amministrazione passare **a** Impostazioni  >  **Impostazioni organizzazione**  >  **Profilo organizzazione** Preferenze  >  **di rilascio.** Nell'interfaccia di amministrazione potrebbe essere  necessario selezionare Mostra tutto nella parte inferiore del riquadro di spostamento sinistro per visualizzare Impostazioni **.)** È possibile scegliere Rilascio mirato per l'intera organizzazione o solo per gli utenti selezionati. Per [altre informazioni sul programma, Microsoft 365](release-options-in-office-365.md) opzioni di rilascio standard o mirate in Microsoft 365.  <br/> |
 |È possibile individuare la data esatta in cui una modifica verrà resa disponibile a un'organizzazione?  <br/> |Purtroppo non è possibile indicare la data esatta in cui verrà apportata una modifica all'organizzazione. Nel post del Centro messaggi vengono fornite tutte le informazioni disponibili al momento del rilascio, in base al livello di probabilità. Stiamo lavorando a miglioramenti per migliorare questo livello di dettaglio.  <br/> |
-|I messaggi sono specifici per l'organizzazione di ogni utente?  <br/> |Microsoft si impegna al massimo perché a ogni utente vengano visualizzati solo i post del Centro messaggi che interessano la sua organizzazione. La roadmap di Microsoft 365 include tutte le funzionalità attualmente in fase di implementazione, ma non tutte si applicano a tutte le organizzazioni. <br/> |
+|I messaggi sono specifici per l'organizzazione di ogni utente?  <br/> |Microsoft si impegna al massimo perché a ogni utente vengano visualizzati solo i post del Centro messaggi che interessano la sua organizzazione. La Microsoft 365 roadmap include tutte le funzionalità attualmente in fase di implementazione, ma non tutte si applicano a tutte le organizzazioni. <br/> |
 |È possibile inviare i post del Centro messaggi tramite posta elettronica?  <br/> |Sì. È possibile scegliere di ricevere un digest settimanale tramite posta elettronica e fino a un massimo di altri due indirizzi di posta elettronica. Il digest settimanale inviato tramite posta elettronica è attivato per impostazione predefinita. Se non si riceve il digest settimanale, controllare la cartella della posta indesiderata. Vedi la [sezione](#preferences) Preferenze di questo articolo per ulteriori informazioni su come configurare il digest settimanale.  <br/> |
 |Come si interrompe il recupero del digest del Centro messaggi?  <br/> |Vai a Centro messaggi nell'interfaccia di amministrazione e seleziona **Preferenze.** Nella scheda **Posta** elettronica disattivare l'opzione Invia **notifiche tramite posta elettronica dal Centro messaggi.**   <br/> |
 |Come è possibile verificare che le notifiche sulla privacy dei dati siano ricevute dai contatti dell'organizzazione? <br/> |Come amministratore globale riceverai messaggi sulla privacy dei dati per la tua organizzazione. Inoltre, è possibile assegnare il ruolo di lettore privacy del Centro messaggi alle persone che dovrebbero visualizzare i messaggi sulla privacy dei dati. Altri ruoli di amministratore con accesso al Centro messaggi non possono visualizzare i messaggi sulla privacy dei dati.   <br/><br/>Per altre info, vedi [Preferenze](#preferences) in questo articolo.<br/> |
@@ -135,7 +135,7 @@ Gli aggiornamenti principali vengono comunicati con almeno 30 giorni di anticipo
   
 ### <a name="preferences"></a>Preferenze
 
-Se l'amministrazione viene distribuita all'interno dell'organizzazione, potrebbe non essere necessario o meno visualizzare post su tutti i servizi di Microsoft 365. Ogni amministratore può:
+Se l'amministrazione viene distribuita all'interno dell'organizzazione, potrebbe non essere necessario o necessario visualizzare post su tutti i Microsoft 365 servizi. Ogni amministratore può:
 
 - Impostare le preferenze che controllano quali messaggi vengono visualizzati nel Centro messaggi.
 - Filtrare i messaggi
@@ -169,7 +169,7 @@ Se l'amministrazione viene distribuita all'interno dell'organizzazione, potrebbe
 
    Per ricevere avvisi di posta elettronica sui messaggi di privacy dei dati, verificare che **Inviami** messaggi di posta elettronica per i messaggi di privacy dei dati sia **Su**. Per interrompere la ricezione di questi avvisi, modificare l'impostazione su **Disattivato.** I messaggi sulla privacy dei dati non sono inclusi nel digest settimanale.
 
-   È possibile selezionare o cancellare l'indirizzo di posta elettronica principale, ma non è possibile modificarlo. Per specificare altri indirizzi di posta elettronica a cui viene inviato il riepilogo settimanale della posta elettronica, verificare che Send **a weekly digest of my messages** sia **On**. Immettere l'indirizzo di posta elettronica per un gruppo di Microsoft 365 o una lista di distribuzione se più di due persone devono ricevere il messaggio di posta elettronica digest.
+   È possibile selezionare o cancellare l'indirizzo di posta elettronica principale, ma non è possibile modificarlo. Per specificare altri indirizzi di posta elettronica a cui viene inviato il riepilogo settimanale della posta elettronica, verificare che Send **a weekly digest of my messages** sia **On**. Immettere l'indirizzo di posta elettronica per un Microsoft 365 o una lista di distribuzione se più di due persone devono ricevere il messaggio di posta elettronica digest.
 
 4. Selezionare **Salva** per mantenere le modifiche.<br/>
 
@@ -181,7 +181,7 @@ Se l'amministrazione viene distribuita all'interno dell'organizzazione, potrebbe
 
 2. Nella scheda **Visualizzazione personalizzata** verificare che la casella di controllo sia selezionata per ogni servizio che si desidera monitorare. Deselezionare le caselle di controllo per i servizi che si desidera filtrare dalla visualizzazione Centro messaggi.
 
-3. I messaggi di posta elettronica digest sono attivati per impostazione predefinita e vengono inviati all'indirizzo di posta elettronica principale. Per interrompere la ricezione del digest settimanale, deselezionare la casella di controllo Invia **notifiche tramite** posta elettronica dal Centro messaggi nella scheda Posta **elettronica**. 
+3. I messaggi di posta elettronica digest sono attivati per impostazione predefinita e vengono inviati all'indirizzo di posta elettronica principale. Per interrompere la ricezione del digest settimanale, deselezionare la casella di controllo Invia **notifiche tramite** posta elettronica dal Centro messaggi nella scheda Posta **elettronica**.
 
    È inoltre possibile immettere fino a due indirizzi di posta elettronica, separati da un punto e virgola. <br><br/>È inoltre possibile scegliere i messaggi di posta elettronica che si desidera ottenere, nonché un digest settimanale dei servizi selezionati.
 
@@ -194,7 +194,7 @@ Se l'amministrazione viene distribuita all'interno dell'organizzazione, potrebbe
 Usiamo la traduzione automatica per visualizzare automaticamente i messaggi nella lingua preferita. Per [ulteriori informazioni su come impostare la lingua,](language-translation-for-message-center-posts.md) vedere Traduzione in lingua per i post del Centro messaggi.
   
 > [!NOTE]
-> Il digest settimanale e i post inviati tramite posta elettronica vengono inviati solo in inglese. I destinatari possono [utilizzare Translator per Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) per leggere il messaggio nella lingua preferita. 
+> Il digest settimanale e i post inviati tramite posta elettronica vengono inviati solo in inglese. I destinatari possono [Translator per Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) leggere il messaggio nella lingua preferita.
 
 ## <a name="choose-columns"></a>Scelta delle colonne
 
@@ -211,7 +211,7 @@ Ecco una breve panoramica delle informazioni che vedrai in ogni colonna.
 |Servizio <br/> |Le icone indicano l'applicazione a cui si applica il messaggio.<br/> |
 |Altre opzioni <br/> |Altre opzioni consentono di ignorare un messaggio, contrassegnarlo come letto o non letto o condividerlo con un altro amministratore. Per ripristinare un messaggio archiviato, selezionare la **scheda Archivio,** selezionare il segno di spunta accanto al messaggio e selezionare **Ripristina**. <br/> |
 |Tag <br/> |È possibile scegliere i tag **dall'elenco a** discesa Tag per filtrare i messaggi. I tag disponibili sono: **Impatto** amministratore, **Aggiornamento** principale, **Privacy** dei dati, **Aggiornamento** funzionalità, **Nuova funzionalità,** **Ritiro** e **Impatto utente.** <br/> |
-|Categoria  <br/> | Questa opzione non viene visualizzata per impostazione predefinita, ma può essere specificata nel **pannello Scegli** colonne. I messaggi sono identificati da una delle tre categorie seguenti: <br/><br/> **Prevenzione o risoluzione dei** problemi : informa l'utente dei problemi noti che interessano l'organizzazione e può richiedere l'intervento dell'utente per evitare interruzioni del servizio. I messaggi di tipo Prevenire o risolvere problemi sono diversi da quelli di tipo Integrità dei servizi, in quanto richiedono che l'utente sia proattivo per evitare problemi. <br/> <br/> **Pianificare la modifica**: informa l'utente delle modifiche apportate a Microsoft 365 che potrebbero richiedere l'intervento dell'utente per evitare interruzioni del servizio. Ad esempio, verranno comunicate le modifiche apportate ai requisiti di sistema o le caratteristiche in fase di rimozione. Per assicurare la normale operatività del servizio, Microsoft fornisce almeno 30 giorni di preavviso per ogni modifica che richiede l'intervento di un amministratore. <br/> <br/> **Rimanere informati:** informazioni sulle funzionalità nuove o aggiornate che stiamo attivando nell'organizzazione. Le funzionalità vengono in genere annunciate per prime nella roadmap di [Microsoft 365.](https://go.microsoft.com/fwlink/?linkid=2070821) <br/><br/>Può anche inserirvi informazioni sulla manutenzione pianificata in conformità al contratto di servizio. La manutenzione pianificata può comportare tempi di invasi, in cui l'utente o gli utenti non possono accedere a Microsoft 365, a una funzionalità specifica o a un servizio come la posta elettronica o OneDrive for Business.  <br/> |
+|Categoria  <br/> | Questa opzione non viene visualizzata per impostazione predefinita, ma può essere specificata nel **pannello Scegli** colonne. I messaggi sono identificati da una delle tre categorie seguenti: <br/><br/> **Prevenzione o risoluzione dei** problemi : informa l'utente dei problemi noti che interessano l'organizzazione e può richiedere l'intervento dell'utente per evitare interruzioni del servizio. I messaggi di tipo Prevenire o risolvere problemi sono diversi da quelli di tipo Integrità dei servizi, in quanto richiedono che l'utente sia proattivo per evitare problemi. <br/> <br/> **Pianificare la modifica**: informa l'utente delle modifiche apportate Microsoft 365 che potrebbero richiedere l'intervento dell'utente per evitare interruzioni del servizio. Ad esempio, verranno comunicate le modifiche apportate ai requisiti di sistema o le caratteristiche in fase di rimozione. Per assicurare la normale operatività del servizio, Microsoft fornisce almeno 30 giorni di preavviso per ogni modifica che richiede l'intervento di un amministratore. <br/> <br/> **Rimanere informati:** informazioni sulle funzionalità nuove o aggiornate che stiamo attivando nell'organizzazione. Le funzionalità vengono in genere annunciate per prime nella roadmap [Microsoft 365.](https://go.microsoft.com/fwlink/?linkid=2070821) <br/><br/>Può anche inserirvi informazioni sulla manutenzione pianificata in conformità al contratto di servizio. La manutenzione pianificata può comportare tempi di invasi, in cui l'utente o gli utenti non possono accedere a Microsoft 365, a una funzionalità specifica o a un servizio, ad esempio posta elettronica o OneDrive for Business.  <br/> |
 |Intervento entro  <br/> |Qui verranno specificate solo le date se Microsoft intende apportare una modifica che richiede l'intervento dell'utente entro una certa data di scadenza. Dal momento che raramente usiamo la colonna **Act by,** se vedi qualcosa qui, dovresti prestare particolare attenzione ad esso.  <br/> |
 |Ultimo aggiornamento  <br/> |Data in cui il messaggio è stato pubblicato o aggiornato per ultimo.  <br/> |
 |ID messaggio  <br/> |Microsoft tiene traccia dei post del Centro messaggi in base agli ID messaggio. Puoi fare riferimento a questo ID se vuoi inviare commenti e suggerimenti o se chiami il supporto per un determinato messaggio.  <br/> |
@@ -340,17 +340,16 @@ Per una panoramica del Centro messaggi, vedere [Centro messaggi in Microsoft 365
 ## <a name="unsubscribe-from-message-center-emails"></a>Annullare la sottoscrizione ai messaggi di posta elettronica del Centro messaggi
 
 1. I messaggi di posta elettronica digest sono attivati per impostazione predefinita e vengono inviati all'indirizzo di posta elettronica principale. Per interrompere la ricezione del digest settimanale, selezionare **Preferenze** e quindi **Posta elettronica.**
-
     - De-selezionare la **casella di controllo Invia un digest settimanale dei miei messaggi.**
     - La notifica tramite posta elettronica per gli aggiornamenti principali è un controllo separato. Se non si desidera ricevere avvisi tramite posta elettronica  sugli aggiornamenti principali, verificare che la casella di controllo Inviami messaggi di posta elettronica per gli aggiornamenti principali non sia selezionata.
     -   Per interrompere la ricezione di avvisi di posta elettronica sui messaggi di privacy dei dati, verificare che la casella di controllo Invia messaggi di posta elettronica per i messaggi **di privacy** dei dati non sia selezionata.  I messaggi sulla privacy dei dati non sono inclusi nel digest settimanale.
 
 2. Selezionare **Salva** per mantenere le modifiche.<br/>
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Configurare le opzioni di rilascio Standard o Mirato](../manage/release-options-in-office-365.md) (articolo)
 
-[Gestire le caratteristiche di Office visualizzate in Novità](../manage/show-hide-new-features.md) (articolo)
+[Gestire le Office funzionalità visualizzate in Novità](../manage/show-hide-new-features.md) (articolo)
 
 [Sottoscrizioni aziendali e documentazione relativa alla fatturazione](../../commerce/index.yml) (collegamenti)

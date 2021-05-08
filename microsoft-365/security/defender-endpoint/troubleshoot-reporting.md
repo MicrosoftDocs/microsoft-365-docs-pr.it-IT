@@ -7,21 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 50136c620450861c41513650f27bf24fc782e968
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: ca62db922a13ab2cb3226eaf0efb92bfaf8c572b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764532"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274893"
 ---
-# <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Risolvere i problemi relativi ai report di Microsoft Defender Antivirus in Conformità degli aggiornamenti
+# <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Risolvere i problemi relativi alla creazione di report di Microsoft Defender Antivirus nella procedura di aggiornamento per la conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,18 +32,18 @@ ms.locfileid: "51764532"
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Il 31 marzo 2020, la funzionalità di segnalazione di Microsoft Defender Antivirus di Conformità degli aggiornamenti verrà rimossa. È possibile continuare a definire ed esaminare i criteri di conformità della sicurezza utilizzando [Microsoft Endpoint Manager,](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)che consente un controllo più fine sulle funzionalità di sicurezza e gli aggiornamenti.
+> Il 31 marzo 2020 verrà rimossa la Antivirus Microsoft Defender di report di Conformità degli aggiornamenti. È possibile continuare a definire ed esaminare i criteri di conformità della sicurezza [usando Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), che consente un controllo più fine sulle funzionalità e gli aggiornamenti di sicurezza.
 
-Puoi usare Microsoft Defender Antivirus con la conformità degli aggiornamenti. Verrà visualizzato lo stato per le licenze E3, B, F1, VL e Pro. Tuttavia, per le licenze E5, è necessario usare [il portale di Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) Per altre informazioni sulle opzioni di licenza, vedi [Opzioni di licenza dei prodotti Windows 10.](https://www.microsoft.com/licensing/product-licensing/windows10.aspx)
+È possibile utilizzare Antivirus Microsoft Defender conformità degli aggiornamenti. Vedrai lo stato per le licenze E3, B, F1, VL e Pro licenze. Tuttavia, per le licenze E5, è necessario usare [il portale di Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) Per ulteriori informazioni sulle opzioni di licenza, vedere [Windows 10 opzioni di licenza del prodotto.](https://www.microsoft.com/licensing/product-licensing/windows10.aspx)
 
-Quando usi [Conformità aggiornamenti di Windows Analytics](/windows/deployment/update/update-compliance-using#wdav-assessment) per ottenere la segnalazione dello stato di protezione dei dispositivi o degli endpoint nella rete che usano Microsoft Defender Antivirus, potresti riscontrare problemi o problemi.
+Quando si usa Windows conformità agli aggiornamenti di Windows Analytics per ottenere la segnalazione dello stato di protezione dei dispositivi o [degli endpoint](/windows/deployment/update/update-compliance-using#wdav-assessment) della rete che usano Antivirus Microsoft Defender, è possibile che si verifichino problemi o problemi.
 
 In genere, gli indicatori più comuni di un problema sono:
 - Viene visualizzato solo un numero limitato o un sottoinsieme di tutti i dispositivi che si prevedeva di visualizzare
 - Non viene visualizzato alcun dispositivo
 - I report e le informazioni visualizzati sono obsoleti (più vecchi di pochi giorni)
 
-Per codici di errore comuni e ID evento correlati al servizio Microsoft Defender Antivirus che non sono correlati alla conformità degli aggiornamenti, vedi [Eventi di Microsoft Defender Antivirus.](troubleshoot-microsoft-defender-antivirus.md) 
+Per codici di errore comuni e ID evento correlati al servizio Antivirus Microsoft Defender che non sono correlati alla conformità degli aggiornamenti, vedere Antivirus Microsoft Defender [eventi](troubleshoot-microsoft-defender-antivirus.md). 
 
 Esistono tre passaggi per la risoluzione di questi problemi:
 
@@ -56,16 +57,16 @@ Esistono tre passaggi per la risoluzione di questi problemi:
 
 ## <a name="confirm-prerequisites"></a>Verificare i prerequisiti
 
-Per fare in modo che i dispositivi siano visualizzati correttamente in Conformità degli aggiornamenti, è necessario soddisfare alcuni prerequisiti sia per il servizio di conformità degli aggiornamenti che per Microsoft Defender Antivirus:
+Per fare in modo che i dispositivi siano visualizzati correttamente in Conformità degli aggiornamenti, è necessario soddisfare alcuni prerequisiti sia per il servizio di conformità degli aggiornamenti che per Antivirus Microsoft Defender:
 
 >[!div class="checklist"]
->- Gli endpoint usano Microsoft Defender Antivirus come unica app di protezione antivirus. [L'uso di qualsiasi altra app antivirus causerà](microsoft-defender-antivirus-compatibility.md) la disabilitazione di Microsoft Defender AV e l'endpoint non verrà segnalato in Conformità degli aggiornamenti.
+>- Gli endpoint usano il Antivirus Microsoft Defender come unica app di protezione antivirus. [L'uso di qualsiasi altra app antivirus causerà](microsoft-defender-antivirus-compatibility.md) la disabilitazione di Microsoft Defender AV e l'endpoint non verrà segnalato in Conformità degli aggiornamenti.
 > - [La protezione consegnata dal cloud è abilitata.](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - Gli endpoint possono [connettersi al cloud di Microsoft Defender AV](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
-> - Se l'endpoint esegue Windows 10 versione 1607 o precedente, i dati di diagnostica di [Windows 10](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)devono essere impostati sul livello avanzato .
+> - Se l'endpoint è Windows 10 versione 1607 o precedente, Windows 10 dati di diagnostica devono essere impostati [sul livello avanzato](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - Sono 3 giorni che tutti i requisiti sono stati soddisfatti
 
-"È possibile utilizzare Microsoft Defender Antivirus con la conformità degli aggiornamenti. Verrà visualizzato lo stato per le licenze E3, B, F1, VL e Pro. Tuttavia, per le licenze E5, devi usare il portale di Microsoft Defender for Endpoint ( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) . Per altre informazioni sulle opzioni di licenza, vedi Opzioni di licenza dei prodotti Windows 10"
+"È possibile utilizzare Antivirus Microsoft Defender conformità degli aggiornamenti. Vedrai lo stato per le licenze E3, B, F1, VL e Pro licenze. Tuttavia, per le licenze E5, devi usare il portale di Microsoft Defender for Endpoint ( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) . Per ulteriori informazioni sulle opzioni di licenza, vedere Windows 10 opzioni di licenza del prodotto"
 
 Se tutti i prerequisiti precedenti sono stati soddisfatti, potrebbe essere necessario procedere al passaggio successivo per raccogliere informazioni di diagnostica e inviarle a Microsoft.
 
@@ -74,5 +75,5 @@ Se tutti i prerequisiti precedenti sono stati soddisfatti, potrebbe essere neces
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Distribuire Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Distribuire Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

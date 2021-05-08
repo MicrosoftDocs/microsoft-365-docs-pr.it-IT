@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 8ecf39090d368427c103c7ec78e22bc13f7c339f
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: c593dfe384649b1599d5c0bab8fa6a8204d105dc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591769"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274833"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Visualizzare i dettagli e i risultati di un'indagine automatizzata
 
@@ -37,7 +37,7 @@ Con Microsoft Defender per [](automated-investigations.md) Endpoint, quando vien
 
 ## <a name="new-unified-investigation-page"></a>(NEW!) Pagina analisi unificata
 
-La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) e Microsoft Defender per Office [365.](/microsoft-365/security/office-365-security/office-365-atp) 
+La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) e Microsoft Defender per [Office 365](/microsoft-365/security/office-365-security/office-365-atp). 
 
 > [!TIP]
 > Per ulteriori informazioni sulle modifiche, vedere [(NEW!) Pagina di indagine unificata](/microsoft-365/security/mtp/mtp-autoir-results).
@@ -83,7 +83,7 @@ Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informa
 | Scheda | Descrizione |
 |:--------|:--------|
 | **Grafico dell'indagine**   | Fornisce una rappresentazione visiva dell'indagine. Descrive le entità ed elenca le minacce rilevate, insieme agli avvisi e alle eventuali azioni ancora in fase di approvazione.<br/>È possibile selezionare un elemento nel grafico per visualizzare ulteriori dettagli. Ad esempio, selezionando **l'icona**  Prova si visualizza la scheda Prova, in cui è possibile visualizzare le entità rilevate e i relativi verdetti. |
-| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, nelle app di Office, in Cloud App Security e in altre funzionalità di Microsoft 365 Defender.|
+| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, nelle app Office, Cloud App Security e altre funzionalità di Microsoft 365 Defender.|
 | **Dispositivi** | Elenca i dispositivi inclusi nell'indagine insieme al relativo livello di correzione. I livelli di correzione corrispondono al livello [di automazione per i gruppi di dispositivi.](automation-levels.md) |
 | **Cassette postali** |Elenca le cassette postali che sono influenzate dalle minacce rilevate.  |
 | **Utenti**  | Elenca gli account utente che sono influenzati dalle minacce rilevate. |

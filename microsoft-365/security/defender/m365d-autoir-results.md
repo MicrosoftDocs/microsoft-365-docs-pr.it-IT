@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b26574c85e498209f8d0233495d3fe0e44733909
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ad774fc36f4f167cb7a4e695b9f572ceb55b968b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245877"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274677"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Dettagli e risultati di un'indagine automatizzata
 
@@ -35,20 +35,22 @@ ms.locfileid: "52245877"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Con Microsoft 365 Defender, quando [viene](m365d-autoir.md) eseguita un'indagine automatizzata, i dettagli su tale indagine sono disponibili sia durante che dopo il processo di indagine automatizzata. Se di dispone delle [autorizzazioni necessarie](m365d-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
+Con Microsoft 365 Defender, quando viene eseguita un'indagine automatizzata, i dettagli su tale indagine sono disponibili sia durante che dopo il processo di indagine automatizzata. [](m365d-autoir.md) Se di dispone delle [autorizzazioni necessarie](m365d-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. Questa visualizzazione offre lo stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
 
 ![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a>(NEW!) Pagina analisi unificata
 
-La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e Microsoft Defender per [Office 365](../office-365-security/defender-for-office-365.md). Per accedere alla pagina di indagine unificata, seleziona il collegamento nel banner giallo che vedrai in:
-- Qualsiasi pagina di indagine nel Centro Office 365 sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) )
-- Qualsiasi pagina di indagine nel Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Qualsiasi evento imprevisto o centro notifiche nel centro sicurezza Microsoft 365 stato migliorato ( [https://security.microsoft.com](https://security.microsoft.com) )
+La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e Microsoft Defender per Office [365.](../office-365-security/defender-for-office-365.md) Per accedere alla pagina di indagine unificata, seleziona il collegamento nel banner giallo che vedrai in:
+
+- Qualsiasi pagina di indagine nel Centro sicurezza & e conformità di Office 365 ( [https://protection.office.com](https://protection.office.com) )
+- Qualsiasi pagina di indagine in Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
+- Qualsiasi evento imprevisto o centro notifiche nel Centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>Aprire la visualizzazione dei dettagli dell'indagine
 
 È possibile aprire la visualizzazione dei dettagli dell'indagine utilizzando uno dei metodi seguenti:
+
 - [Selezionare un elemento nel centro notifiche](#select-an-item-in-the-action-center)
 - [Selezionare un'indagine dalla pagina dei dettagli dell'incidente](#open-an-investigation-from-an-incident-details-page)
 
@@ -75,8 +77,6 @@ Il centro [notifiche migliorato](m365d-action-center.md) ( ) riunisce le azioni 
 
 Utilizzare una pagina dei dettagli di un incidente per visualizzare informazioni dettagliate relative a un incidente, inclusi gli avvisi che sono stati attivati, le informazioni su eventuali dispositivi, gli account utente o le cassette postali interessati.
 
-![Dettagli incidente](../../media/mtp-incidentdetails-tabs.png)
-
 1. Andare su [https://security.microsoft.com](https://security.microsoft.com) ed eseguire l'accesso. 
 
 2. Nel riquadro di spostamento scegliere **Eventi imprevisti & avvisi** Eventi  >  **imprevisti**. 
@@ -87,9 +87,13 @@ Utilizzare una pagina dei dettagli di un incidente per visualizzare informazioni
 
 5. Selezionare **Apri pagina di analisi**. 
 
+Di seguito viene riportato un esempio.
+
+![Dettagli incidente](../../media/mtp-incidentdetails-tabs.png)
+
 ## <a name="investigation-details"></a>Dettagli indagine
 
-Utilizzare la vista dei dettagli dell'indagine per visualizzare le attività passate, attuali e in sospeso relative a un'indagine. La visualizzazione dei dettagli dell'indagine è simile all'immagine seguente:
+Utilizzare la vista dei dettagli dell'indagine per visualizzare le attività passate, attuali e in sospeso relative a un'indagine. Di seguito viene riportato un esempio.
 
 ![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
@@ -101,16 +105,16 @@ Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informa
 | Scheda | Descrizione |
 |:--------|:--------|
 | **Grafico dell'indagine**   | Fornisce una rappresentazione visiva dell'indagine. Descrive le entità ed elenca le minacce rilevate, insieme agli avvisi e alle eventuali azioni ancora in fase di approvazione.<br/>È possibile selezionare un elemento nel grafico per visualizzare ulteriori dettagli. Ad esempio, selezionando **l'icona**  Prova si visualizza la scheda Prova, in cui è possibile visualizzare le entità rilevate e i relativi verdetti. |
-| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, nelle app Office, Cloud App Security e altre funzionalità di Microsoft 365 Defender.|
+| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, nelle app di Office, in Microsoft Cloud App Security e in altre funzionalità di Microsoft 365 Defender.|
 | **Dispositivi** | Elenca i dispositivi inclusi nell'indagine insieme al relativo livello di correzione. I livelli di correzione corrispondono al [livello di automazione per i gruppi di dispositivi.](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **Cassette postali** |Elenca le cassette postali che sono influenzate dalle minacce rilevate.  |
 | **Utenti**  | Elenca gli account utente che sono influenzati dalle minacce rilevate. |
-| **Prova** | Elenca le prove generate da avvisi/indagini. Include i verdetti (*Dannoso,* *Sospetto* o Nessuna minaccia *trovata)* e lo stato di correzione. |
+| **Prova** | Elenca le prove generate da avvisi o indagini. Include i verdetti (*Dannoso,* *Sospetto,* *Sconosciuto* *o* Nessuna minaccia trovata) e lo stato di correzione. |
 | **Entità**  | Fornisce informazioni dettagliate su ogni entità analizzata, incluso un verdetto per ogni tipo di entità (*Dannoso,* *Sospetto* o *Nessuna minaccia trovata).*|
 |**Log**    | Fornisce una visualizzazione cronologica dettagliata di tutte le azioni di indagine eseguite dopo l'attivazione di un avviso.|
-| **Azioni in sospeso** | Elenca gli elementi che richiedono l'approvazione per continuare. Passare al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) per approvare le azioni in sospeso. |
+| **Cronologia azioni in sospeso** | Elenca gli elementi che richiedono l'approvazione per continuare. Passare al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) per approvare le azioni in sospeso. |
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Approvare o rifiutare le azioni di correzione dopo un'indagine automatizzata](m365d-autoir-actions.md)
+- [Visualizzare e gestire le azioni correttive](m365d-autoir-actions.md)
 - [Ulteriori informazioni sulle azioni di correzione](m365d-remediation-actions.md)

@@ -8,26 +8,26 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 926c5dbff3c393691af626fdeef08cb5badd8105
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 0848aa95a9a4835aa2e73747cf8e5d3efe8efbf7
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50550481"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273105"
 ---
 # <a name="payment-information-for-panama"></a>Informazioni di pagamento per Panama
 
 [Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.
+Pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Bank:** Bank of America   
+**Banca:** Bank of America   
 **Ramo:** Dallas   
 **Codice SWIFT:** BOFAUS3N   
 **Numero account:** 4426587954   

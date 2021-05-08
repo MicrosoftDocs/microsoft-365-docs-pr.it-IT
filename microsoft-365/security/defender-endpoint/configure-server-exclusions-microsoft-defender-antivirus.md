@@ -1,28 +1,29 @@
 ---
-title: Configurare le esclusioni di Microsoft Defender Antivirus in Windows Server
+title: Configurare Antivirus Microsoft Defender esclusioni in Windows Server
 ms.reviewer: ''
 manager: dansimp
-description: Windows Server include esclusioni automatiche, in base al ruolo del server. Puoi anche aggiungere esclusioni personalizzate.
-keywords: esclusioni, server, esclusioni automatiche, automatiche, personalizzate, analisi, Microsoft Defender Antivirus
+description: Windows Il server include esclusioni automatiche in base al ruolo del server. Puoi anche aggiungere esclusioni personalizzate.
+keywords: esclusioni, server, esclusioni automatiche, automatiche, personalizzate, analisi, Antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
-ms.openlocfilehash: 507edb980f671b2f39403cc41e540150f5e82891
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: f82da8eb0dcba39404c2b7f191e166aa78357cee
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764342"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274761"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurare le esclusioni di Microsoft Defender Antivirus in Windows Server
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurare Antivirus Microsoft Defender esclusioni in Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "51764342"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus in Windows Server 2016 e Windows Server 2019 registra automaticamente l'utente in determinate esclusioni, come definito dal ruolo del server specificato. Queste esclusioni non vengono visualizzate negli elenchi di esclusione standard visualizzati [nell'app Sicurezza di Windows.](microsoft-defender-security-center-antivirus.md)
+Antivirus Microsoft Defender in Windows Server 2016 e Windows Server 2019 si registra automaticamente in determinate esclusioni, come definito dal ruolo del server specificato. Queste esclusioni non vengono visualizzate negli elenchi di esclusione standard visualizzati [nell'app Sicurezza di Windows.](microsoft-defender-security-center-antivirus.md)
 
 > [!NOTE]
 > Le esclusioni automatiche si applicano solo all'analisi RTP (Real-Time Protection). Le esclusioni automatiche non vengono rispettate durante un'analisi completa/rapida o su richiesta.
@@ -46,27 +47,27 @@ Tenere presenti i seguenti punti importanti:
 - Le esclusioni personalizzate hanno la precedenza rispetto alle esclusioni automatiche.
 - Le esclusioni automatiche si applicano solo all'analisi RTP (Real-Time Protection). Le esclusioni automatiche non vengono rispettate durante un'analisi completa/rapida o su richiesta.
 - Le esclusioni personalizzate e duplicate non sono in conflitto con le esclusioni automatiche.
-- Microsoft Defender Antivirus usa gli strumenti Dism (Deployment Image Servicing and Management) per determinare quali ruoli sono installati nel computer.
+- Antivirus Microsoft Defender vengono utilizzati gli strumenti Dism (Deployment Image Servicing and Management) per determinare quali ruoli sono installati nel computer.
 
 ## <a name="opt-out-of-automatic-exclusions"></a>Rifiutare esplicitamente le esclusioni automatiche
 
-In Windows Server 2016 e Windows Server 2019, le esclusioni predefinite recapitate dagli aggiornamenti di Security Intelligence escludono solo i percorsi predefiniti per un ruolo o una funzionalità. Se è stato installato un ruolo o una funzionalità in un percorso personalizzato o si desidera controllare manualmente il set di esclusioni, assicurarsi di rifiutare esplicitamente le esclusioni automatiche recapitate negli aggiornamenti di Security intelligence. Tieni però presente che le esclusioni che vengono recapitate automaticamente sono ottimizzate per i ruoli di Windows Server 2016 e 2019. Vedere [Suggerimenti per la definizione delle esclusioni](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) prima di definire gli elenchi di esclusione.
+In Windows Server 2016 e Windows Server 2019, le esclusioni predefinite recapitate dagli aggiornamenti di Security Intelligence escludono solo i percorsi predefiniti per un ruolo o una funzionalità. Se è stato installato un ruolo o una funzionalità in un percorso personalizzato o si desidera controllare manualmente il set di esclusioni, assicurarsi di rifiutare esplicitamente le esclusioni automatiche recapitate negli aggiornamenti di Security intelligence. Tieni però presente che le esclusioni che vengono recapitate automaticamente sono ottimizzate per i ruoli Windows Server 2016 2019. Vedere [Consigli per definire le esclusioni prima](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) di definire gli elenchi di esclusione.
 
 > [!WARNING]
-> Il rifiuto esplicito delle esclusioni automatiche può influire negativamente sulle prestazioni o causare il danneggiamento dei dati. Le esclusioni che vengono recapitate automaticamente sono ottimizzate per i ruoli di Windows Server 2016 e Windows Server 2019.
+> Il rifiuto esplicito delle esclusioni automatiche può influire negativamente sulle prestazioni o causare il danneggiamento dei dati. Le esclusioni che vengono recapitate automaticamente sono ottimizzate per Windows Server 2016 e Windows Server 2019.
 
 Poiché le esclusioni predefinite escludono solo i percorsi **predefiniti,** se si spostaNO NTDS e SYSVOL in un'altra unità o percorso diverso dal percorso *originale,* è necessario aggiungere le esclusioni manualmente utilizzando le informazioni [riportate qui.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)
 
 È possibile disabilitare gli elenchi di esclusione automatica con Criteri di gruppo, cmdlet di PowerShell e WMI.
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Usare Criteri di gruppo per disabilitare l'elenco delle esclusioni automatici in Windows Server 2016 e Windows Server 2019
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Utilizzare Criteri di gruppo per disabilitare l'elenco delle esclusioni Windows Server 2016 e Windows Server 2019
 
 1. Nel computer di gestione di Criteri di gruppo aprire Console [Gestione Criteri di gruppo.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)) Fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e quindi scegliere **Modifica**.
 2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer** e quindi fare clic su **Modelli amministrativi.**
-3. Espandere l'albero fino **ai componenti di Windows**  >  **Esclusioni di Microsoft Defender Antivirus**  >  .
+3. Espandere l'albero per **Windows componenti**  >  **Antivirus Microsoft Defender**  >  **esclusioni**.
 4. Fare doppio clic **su Disattiva esclusioni automatici** e impostare l'opzione su **Abilitato.** Fare clic su **OK**. 
 
-### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>Utilizzare i cmdlet di PowerShell per disabilitare l'elenco di esclusioni automatici in Windows Server 2016 e 2019
+### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>Utilizzare i cmdlet di PowerShell per disabilitare l'elenco di esclusioni Windows Server 2016 2019
 
 Utilizzare i cmdlet seguenti:
 
@@ -76,10 +77,10 @@ Set-MpPreference -DisableAutoExclusions $true
 
 Per altre informazioni, vedere le risorse seguenti:
 
-- [Utilizzare i cmdlet di PowerShell per configurare ed eseguire Microsoft Defender Antivirus.](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Usare PowerShell con Microsoft Defender Antivirus](/powershell/module/defender/).
+- [Utilizzare i cmdlet di PowerShell per configurare ed eseguire Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+- [Usare PowerShell con Antivirus Microsoft Defender](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Usare Windows Management Instruction (WMI) per disabilitare l'elenco di esclusioni automatici in Windows Server 2016 e Windows Server 2019
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Utilizzare Windows Management Instruction (WMI) per disabilitare l'elenco delle esclusioni automatici in Windows Server 2016 e Windows Server 2019
 
 Utilizzare il **metodo Set** della [classe MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) per le proprietà seguenti:
 
@@ -96,17 +97,17 @@ Le sezioni seguenti contengono le esclusioni che vengono recapitate con percorsi
 
 ### <a name="default-exclusions-for-all-roles"></a>Esclusioni predefinite per tutti i ruoli
 
-In questa sezione sono elencate le esclusioni predefinite per tutti i ruoli di Windows Server 2016 e 2019.
+In questa sezione sono elencate le esclusioni predefinite per tutti i ruoli Windows Server 2016 2019.
 
 > [!NOTE]
 > I percorsi predefiniti potrebbero essere diversi da quelli elencati in questo articolo.
 
-#### <a name="windows-tempedb-files"></a>File "temp.edb" di Windows
+#### <a name="windows-tempedb-files"></a>Windows File "temp.edb"
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
 
-#### <a name="windows-update-files-or-automatic-update-files"></a>File di Windows Update o file di aggiornamento automatico
+#### <a name="windows-update-files-or-automatic-update-files"></a>Windows Aggiornare i file o i file di aggiornamento automatico
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -114,7 +115,7 @@ In questa sezione sono elencate le esclusioni predefinite per tutti i ruoli di W
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
-#### <a name="windows-security-files"></a>File di sicurezza di Windows
+#### <a name="windows-security-files"></a>Sicurezza di Windows file
 
 - `%windir%\Security\database\*.chk`
 - `%windir%\Security\database\*.edb`
@@ -258,9 +259,9 @@ In questa sezione sono elencate le esclusioni di file e cartelle e le esclusioni
 
 - `%systemroot%\System32\dns.exe`
 
-### <a name="file-and-storage-services-exclusions"></a>Esclusioni di Servizi file e archiviazione
+### <a name="file-and-storage-services-exclusions"></a>Esclusioni di file e Archiviazione Services
 
-In questa sezione vengono elencate le esclusioni di file e cartelle che vengono recapitate automaticamente quando si installa il ruolo Servizi file e archiviazione. Le esclusioni elencate di seguito non includono le esclusioni per il ruolo Clustering.
+In questa sezione vengono elencate le esclusioni di file e cartelle che vengono recapitate automaticamente quando si installa il ruolo File e Archiviazione Services. Le esclusioni elencate di seguito non includono le esclusioni per il ruolo Clustering.
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
@@ -325,9 +326,9 @@ Escludere i file seguenti da questa cartella e da tutte le relative sottocartell
 - `*.ins`
 - `Oscfilter.ini`
 
-### <a name="windows-server-update-services-exclusions"></a>Esclusioni di Windows Server Update Services
+### <a name="windows-server-update-services-exclusions"></a>Windows Server Update Services esclusioni
 
-In questa sezione sono elencate le esclusioni di cartelle che vengono recapitate automaticamente quando si installa il ruolo Windows Server Update Services (WSUS). La cartella WSUS è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
+In questa sezione vengono elencate le esclusioni di cartelle che vengono recapitate automaticamente quando si installa il ruolo Windows Server Update Services (WSUS). La cartella WSUS è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
 - `%systemroot%\WSUS\WSUSContent`
 - `%systemroot%\WSUS\UpdateServicesDBFiles`
@@ -336,9 +337,9 @@ In questa sezione sono elencate le esclusioni di cartelle che vengono recapitate
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Configurare e convalidare le esclusioni per le analisi di Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configurare e convalidare le esclusioni per Antivirus Microsoft Defender analisi](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurare e convalidare le esclusioni in base al nome file, all'estensione e al percorso della cartella](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurare e convalidare le esclusioni per i file aperti dai processi](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Errori comuni da evitare durante la definizione delle esclusioni](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Personalizzare, avviare ed esaminare i risultati delle analisi e delle correzioni di Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Errori comuni da evitare quando si definiscono le esclusioni](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [Personalizzare, avviare ed esaminare i risultati di Antivirus Microsoft Defender analisi e correzione](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

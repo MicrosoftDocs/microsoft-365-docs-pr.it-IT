@@ -1,7 +1,7 @@
 ---
 title: Panoramica di Microsoft Viva Topics
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Panoramica di Viva Topics.
-ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488158"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275199"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Panoramica di Microsoft Viva Topics 
 
@@ -40,8 +40,12 @@ Viva Topics utilizza l'intelligenza artificiale per cercare e identificare autom
 
 Quando un argomento viene menzionato nel contenuto delle notizie e delle pagine di SharePoint, lo vedrai evidenziato. È possibile aprire il riepilogo dell'argomento dagli highlight. Apri i dettagli dell'argomento dal titolo del riepilogo. L'argomento menzionato potrebbe essere identificato automaticamente o essere stato aggiunto alla pagina con un riferimento diretto all'argomento dall'autore della pagina. 
 
-   ![Highlight degli argomenti](../media/knowledge-management/saturn.png) </br> 
+   ![Highlight degli argomenti](../media/knowledge-management/saturn.png) 
 
+
+   ![Screenshot che mostra la ricerca in Word tramite la casella di ricerca.](../media/knowledge-management/word-search-2.png)
+
+   ![Screenshot che mostra la ricerca in Word tramite il menu di scelta rapida Ricerca.](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>Indicizzazione informazioni
 
@@ -99,7 +103,7 @@ Vedere [Gestisci argomenti nel Centro argomenti](manage-topics.md) per ulteriori
 
 ## <a name="admin-controls"></a>Controlli amministratore
 
-I controlli dell'amministratore nell'interfaccia di amministrazione di Microsoft 365 consentono di gestire Viva Topics. Consentono a un amministratore globale di Microsoft 365 o di SharePoint di:
+I controlli di amministrazione nell'Microsoft 365 di amministrazione consentono di gestire Viva Topics. Consentono a un amministratore globale di Microsoft 365 o di SharePoint di:
 
 - Controllare quali utenti dell'organizzazione possono visualizzare gli argomenti nelle pagine moderne di SharePoint o nei risultati della ricerca di SharePoint.
 - Controllare quali siti di SharePoint verranno sottoposti a ricerca per indicizzazione per identificare gli argomenti.

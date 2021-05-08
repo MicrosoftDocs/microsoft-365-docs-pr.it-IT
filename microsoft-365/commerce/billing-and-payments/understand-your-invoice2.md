@@ -25,14 +25,17 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Come interpretare i dati su addebiti, fatturazione e pagamenti nell’estratto conto o fattura di Microsoft 365 per le aziende e come cambiare il numero di ordine d'acquisto.
-ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615376"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245017"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendi l’estratto conto o la fattura per Microsoft 365 per le aziende
+
+> [!IMPORTANT]
+> A partire dal 26 gennaio 2021, i nuovi conti bancari non sono più supportati per i clienti in Belgio, Francia, Italia, Lussemburgo, Portogallo, Spagna e Stati Uniti. Se si è un cliente esistente in uno di questi paesi, è possibile continuare a pagare l'abbonamento con un conto corrente bancario esistente e aggiungervi nuove sottoscrizioni, ma solo finché il conto corrente bancario è in regola.
 
 Ogni mese o ogni anno (a seconda dell'opzione che scegli quando acquisti l'abbonamento), riceverai un'email che ti informa che il tuo nuovo estratto conto è disponibile nell’interfaccia di amministrazione. [Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md).
   

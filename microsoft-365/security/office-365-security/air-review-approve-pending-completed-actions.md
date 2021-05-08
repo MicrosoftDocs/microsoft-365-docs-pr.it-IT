@@ -3,8 +3,8 @@ title: Esaminare e gestire le azioni di correzione in Microsoft Defender per Off
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automatizzato, indagine, risposta, correzione, minacce, avanzate, minacce, protezione
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -19,12 +19,12 @@ description: Informazioni sulle azioni di correzione nelle funzionalità di anal
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: ce6cfd920845f5a85dbc7d7d48cfefdd6209ec3a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933650"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275073"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Esaminare e gestire le azioni di correzione in Office 365
 
@@ -42,7 +42,7 @@ Queste azioni di correzione non vengono eseguite a meno che il team delle operaz
 
 ## <a name="approve-or-reject-pending-actions"></a>Approvare (o rifiutare) le azioni in sospeso
 
-1. Accedere al Centro sicurezza Microsoft 365 ( <https://security.microsoft.com> ) e accedere.
+1. Accedere al centro Microsoft 365 sicurezza ( <https://security.microsoft.com> ) ed eseguire l'accesso.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In** sospeso esaminare l'elenco delle azioni in attesa di approvazione.
 4. Selezionare un elemento nell'elenco. Verrà visualizzato il riquadro a comparsa. 

@@ -1,35 +1,36 @@
 ---
-title: Errori comuni da evitare durante la definizione delle esclusioni
-description: Evitare errori comuni durante la definizione delle esclusioni per le analisi di Microsoft Defender Antivirus.
+title: Errori comuni da evitare quando si definiscono le esclusioni
+description: Evitare errori comuni durante la definizione delle esclusioni per Antivirus Microsoft Defender analisi.
 keywords: esclusioni, file, estensione, tipo di file, nome cartella, nome file, analisi
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: eb3ac89eb05b39ff3337aa8e9c5ead1c308fbefb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: de739ca3c6a4ab305b575fa7e2f419d044d997a8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764916"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274972"
 ---
-# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Errori comuni da evitare durante la definizione delle esclusioni
+# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Errori comuni da evitare quando si definiscono le esclusioni
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-Puoi definire un elenco di esclusione per gli elementi che non vuoi analizzare da Microsoft Defender Antivirus. Tali elementi esclusi potrebbero contenere minacce che rendono vulnerabile il dispositivo. 
+È possibile definire un elenco di esclusione per gli elementi che non si desidera Antivirus Microsoft Defender analizzare. Tali elementi esclusi potrebbero contenere minacce che rendono vulnerabile il dispositivo. 
 
 In questo articolo vengono descritti alcuni errori comuni da evitare durante la definizione delle esclusioni. 
 
-Prima di definire gli elenchi di esclusione, vedere [Suggerimenti per la definizione delle esclusioni.](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
+Prima di definire gli elenchi di esclusione, [vedere Consigli per la definizione delle esclusioni.](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
 ## <a name="excluding-certain-trusted-items"></a>Esclusione di determinati elementi attendibili
 
@@ -54,13 +55,13 @@ Non utilizzare un singolo elenco di esclusione per definire le esclusioni per pi
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Utilizzo di variabili di ambiente non corrette come caratteri jolly nel nome file e nel percorso della cartella o negli elenchi di esclusione delle estensioni
 
-Il servizio Microsoft Defender Antivirus viene eseguito nel contesto di sistema utilizzando l'account LocalSystem, il che significa che ottiene informazioni dalla variabile di ambiente di sistema e non dalla variabile di ambiente utente. L'utilizzo delle variabili di ambiente come carattere jolly negli elenchi di esclusione è limitato alle variabili di sistema e a quelle applicabili ai processi in esecuzione come account NT AUTHORITY\SYSTEM. Pertanto, non utilizzare variabili di ambiente utente come caratteri jolly quando si aggiungono le esclusioni di processi e cartelle di Microsoft Defender Antivirus. Per un elenco completo delle [variabili di ambiente di](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) sistema, vedere la tabella in Variabili di ambiente di sistema.
+Antivirus Microsoft Defender Il servizio viene eseguito nel contesto di sistema utilizzando l'account LocalSystem, il che significa che ottiene informazioni dalla variabile di ambiente di sistema e non dalla variabile di ambiente utente. L'utilizzo delle variabili di ambiente come carattere jolly negli elenchi di esclusione è limitato alle variabili di sistema e a quelle applicabili ai processi in esecuzione come account NT AUTHORITY\SYSTEM. Pertanto, non utilizzare variabili di ambiente utente come caratteri jolly quando si aggiungono Antivirus Microsoft Defender cartelle ed esclusioni di processo. Per un elenco completo delle [variabili di ambiente di](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) sistema, vedere la tabella in Variabili di ambiente di sistema.
 
 Per informazioni su come utilizzare i caratteri jolly negli elenchi di esclusione dei nomi di file e dei percorsi delle cartelle o delle estensioni, vedere Use [wildcards in the file name and folder path or extension exclusion lists.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Configurare e convalidare le esclusioni nelle analisi di Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configurare e convalidare le esclusioni Antivirus Microsoft Defender analisi](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurare e convalidare le esclusioni in base all'estensione di file e al percorso della cartella](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurare e convalidare le esclusioni per i file aperti dai processi](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configurare le esclusioni di Microsoft Defender Antivirus in Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configurare Antivirus Microsoft Defender esclusioni in Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

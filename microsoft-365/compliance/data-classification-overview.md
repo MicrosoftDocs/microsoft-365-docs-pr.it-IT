@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899386"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244384"
 ---
 # <a name="learn-about-data-classification"></a>Informazioni sulla classificazione dei dati
 
@@ -112,7 +112,7 @@ Le scheda delle principali etichette di conservazione applicate mostra il numero
 ![schermata segnaposto delle principali etichette di conservazione](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> Se la scheda mostra il messaggio "Non sono state rilevate etichette di conservazione" significa che non sono state create o pubblicate etichette di conservazione o non è stata applicata alcuna etichetta di conservazione ai contenuti. Per iniziare a usare le etichette di conservazione, vedere:
+> Se la scheda visualizza il messaggio "Nessun percorso rilevato" significa che non sono state create o pubblicate etichette di riservatezza o che non è stata applicata alcuna etichetta di conservazione ai contenuti. Per un'introduzione sulle etichette di riservatezza, vedere: Per iniziare a usare le etichette di conservazione, vedere:
 >- [Familiarizza con i criteri e le etichette di conservazione](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>Attività principali rilevate
@@ -140,3 +140,5 @@ Il motivo della classificazione dei dati consiste nel fornire visibilità sul nu
 - [Informazioni sui tipi di informazioni riservate](sensitive-information-type-learn-about.md)
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
 - [Informazioni sui classificatori sottoponibili a training (anteprima)](classifier-learn-about.md)
+
+Per informazioni su come usare la classificazione dei dati per rispettare le normative sulla privacy dei dati, vedere [Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).

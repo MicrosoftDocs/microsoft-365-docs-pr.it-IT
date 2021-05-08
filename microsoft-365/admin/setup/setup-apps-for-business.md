@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni su come configurare la sottoscrizione a Microsoft 365 Apps for business.
-ms.openlocfilehash: 56eb3eb0f28ee99aab1c50a970626c61514335cd
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579099"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244480"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurare Microsoft 365 Apps for business
 
@@ -57,7 +57,7 @@ Gli utenti possono essere aggiunti nella procedura guidata, ma è anche possibil
 
 2. Scegliere **Vai alla configurazione** per avviare la procedura guidata.
 
-3. Nella prima pagina viene mostrata l’opzione per installare le app di Office sul proprio computer. Questo può essere fatto anche in seguito.
+3. Nella prima pagina viene mostrata l'opzione per installare le app di Office sul proprio computer. È possibile effettuare questa operazione in un secondo momento.
 
 3. Nella pagina successiva è possibile aggiungere gli utenti, che verranno automaticamente assegnati alla licenza di Microsoft Apps for business. Una volta aggiunti gli utenti, sarà disponibile un’opzione per condividere le credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
 
@@ -89,7 +89,7 @@ Se si usa Office 365 gestito da 21Vianet, passare a [https://portal.partner.micr
 
 2. Selezionare **Installa**.
 
-Serve una procedura più dettagliata o si vuole installare la versione a 64 bit di Office? Vedere le [istruzioni dettagliate per l'installazione](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
+Serve una procedura più dettagliata o si vuole installare la versione a 64 bit di Office? Vedere le [Istruzioni dettagliate per l'installazione](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
   
 ## <a name="set-up-mobile"></a>Configurare il dispositivo mobile 
 
@@ -99,7 +99,7 @@ Vedere la procedura per il dispositivo in uso: [Android](https://support.microso
   
 ## <a name="store-files-online"></a>Archiviare file online
 
-Con Microsoft è facile archiviare file online. Per sapere quali sono le posizioni di archiviazione più adatte per la propria azienda, vedere [Dove archiviare i documenti in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Con Microsoft è facile archiviare file online. Per sapere quali sono le posizioni di archiviazione più adatte per la propria azienda, vedere [Dove archiviare i documenti in Office 365](../../business-video/store-files.md).
   
 Ognuno ottiene automaticamente una posizione di archiviazione di **OneDrive** sul cloud quando viene creato il relativo account Microsoft. Con OneDrive è possibile accedere ai file archiviati nel computer, nel telefono e nel tablet.
   

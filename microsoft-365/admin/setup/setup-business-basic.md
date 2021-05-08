@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni su come configurare la sottoscrizione a Microsoft 365 Business Basic.
-ms.openlocfilehash: 409d2fd4698452a1694d39c4ca3cc7f378d355e8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580787"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244468"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Configurare Microsoft 365 Business Basic
 
@@ -37,7 +37,7 @@ ms.locfileid: "51580787"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>Aggiungere il proprio dominio per personalizzare l’accesso
 
@@ -85,9 +85,9 @@ Gli utenti possono essere aggiunti nella procedura guidata, ma è anche possibil
 
 A tutti gli utenti aggiunti nella procedura guidata viene assegnata automaticamente una licenza di Microsoft 365 Business Basic.
 
-1. Se la sottoscrizione a Microsoft 365 Business Basic include già degli utenti (ad esempio se si è usato Azure AD Connect), sarà disponibile un’opzione per assegnare le licenze a questi utenti. Procedere aggiungendo le licenze anche per questi utenti.
+1. Se l'abbonamento a Microsoft 365 Business Basic include già degli utenti (ad esempio se si è usato Azure AD Connect), è disponibile un'opzione per l'assegnazione di licenze a questi utenti. Procedere con l'aggiunta di licenze anche per questi utenti.
 
-2. Una volta aggiunti gli utenti, sarà disponibile un’opzione per condividere le credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
+2. Dopo aver aggiunto gli utenti, sarà disponibile anche un'opzione per la condivisione delle credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
 
 ## <a name="connect-your-domain"></a>Connettere il proprio dominio
 

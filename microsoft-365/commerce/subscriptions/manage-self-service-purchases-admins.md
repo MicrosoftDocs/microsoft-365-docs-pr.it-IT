@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a gestire gli acquisti self-service effettuati dagli utenti nell'organizzazione.
-ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398182"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244993"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gestire acquisti in modalità self-service (amministratore)
 
@@ -43,14 +43,13 @@ Gli amministratori possono visualizzare gli acquisti in modalità self-service e
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **prodotti.**
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **prodotti.**
-
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
 ::: moniker-end
 
 2. Nella scheda **Prodotti** selezionare l'icona del filtro, quindi **selezionare Self-service**.
@@ -59,7 +58,7 @@ Gli amministratori possono visualizzare gli acquisti in modalità self-service e
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visualizzare chi dispone di licenze per una sottoscrizione di acquisto self-service
 
 > [!NOTE]
-> Gli amministratori non possono assegnare o annullare l'assegnazione delle licenze per una sottoscrizione di acquisto self-service acquistata da un utente dell'organizzazione. È possibile prendere in consegna una sottoscrizione di acquisto [self-service](#take-over-a-self-service-purchase-subscription)e quindi assegnare o annullare l'assegnazione delle licenze.
+> Gli amministratori non possono assegnare o annullare l'assegnazione di licenze per un abbonamento acquistato in modalità self-service da un utente dell'organizzazione. È possibile [assumere il controllo di un abbonamento acquistato in modalità self-service](#take-over-a-self-service-purchase-subscription) e quindi assegnare licenze o annullarne l'assegnazione.
 
 ::: moniker range="o365-worldwide"
 
@@ -69,12 +68,13 @@ Gli amministratori possono visualizzare gli acquisti in modalità self-service e
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina Licenze  > **di** fatturazione.
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenze</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina Licenze  > **di** fatturazione.
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenze</a>.
 
 ::: moniker-end
 
@@ -189,7 +189,7 @@ Quando si sceglie di annullare una sottoscrizione di acquisto self-service, gli 
 ::: moniker-end
 
 2. Nella scheda **Prodotti** selezionare l'icona del filtro, quindi **selezionare Self-service**.
-3. Selezionare l'abbonamento che si desidera annullare.
+3. Selezionare l'abbonamento che si vuole annullare.
 4. Nella sezione Sottoscrizioni e  impostazioni della pagina dei dettagli dell'abbonamento selezionare Prendi **il controllo della sottoscrizione.**
 5. Nel riquadro destro selezionare **Annulla sottoscrizione**.
 6. Selezionare un motivo per l'annullamento dall'elenco a discesa, quindi selezionare **Annulla sottoscrizione.**

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 81c7fb2bb7cd20fea3f343097811078ed744c3eb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4199f55488ef0dc5989af88e8be83a3d51190d1f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765372"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275061"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Gestire gli aggiornamenti e le analisi di Microsoft Defender Antivirus per gli endpoint non aggiornati
 
@@ -31,19 +32,19 @@ ms.locfileid: "51765372"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus consente di definire per quanto tempo un endpoint può evitare un aggiornamento o il numero di analisi che può perdere prima di essere necessario per l'aggiornamento e l'analisi stessa. Ciò è particolarmente utile in ambienti in cui i dispositivi non sono spesso connessi a una rete aziendale o esterna o in dispositivi che non vengono utilizzati quotidianamente.
+Antivirus Microsoft Defender consente di definire per quanto tempo un endpoint può evitare un aggiornamento o il numero di analisi che può mancare prima di essere necessario per l'aggiornamento e l'analisi. Ciò è particolarmente utile in ambienti in cui i dispositivi non sono spesso connessi a una rete aziendale o esterna o in dispositivi che non vengono utilizzati quotidianamente.
 
 Ad esempio, un dipendente che usa un PC specifico è in pausa per tre giorni e non accede al PC durante tale periodo.
 
-Quando l'utente torna a lavorare e accede al PC, Microsoft Defender Antivirus controllera' immediatamente e scarichi gli aggiornamenti di protezione più recenti ed eseguirà un'analisi.
+Quando l'utente torna a lavorare e accede al PC, Antivirus Microsoft Defender controlla immediatamente e scarica gli aggiornamenti di protezione più recenti ed esegue un'analisi.
 
 ## <a name="set-up-catch-up-protection-updates-for-endpoints-that-havent-updated-for-a-while"></a>Configurare gli aggiornamenti di protezione da recuperare per gli endpoint che non sono stati aggiornati per un po' di tempo
 
-Se Microsoft Defender Antivirus non ha scaricato gli aggiornamenti di protezione per un periodo specificato, è possibile configurarlo per controllare e scaricare automaticamente l'aggiornamento più recente al successivo accesso. Ciò è utile se all'avvio sono stati disabilitati a livello globale i [download degli aggiornamenti automatici.](manage-event-based-updates-microsoft-defender-antivirus.md)
+Se Antivirus Microsoft Defender non ha scaricato gli aggiornamenti di protezione per un periodo specificato, è possibile configurarlo per controllare e scaricare automaticamente l'aggiornamento più recente all'accesso successivo. Ciò è utile se all'avvio sono stati disabilitati a livello globale i [download degli aggiornamenti automatici.](manage-event-based-updates-microsoft-defender-antivirus.md)
 
 ### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>Usare Configuration Manager per configurare gli aggiornamenti di protezione di blocco
 
-1.  Nella console di Microsoft Endpoint Manager apri i criteri antimalware che vuoi modificare (fai clic su Asset  **e** conformità nel riquadro di spostamento a sinistra, quindi espandi l'albero fino a Panoramica criteri  >    >  **antimalware** di Endpoint Protection)
+1.  Nella console Microsoft Endpoint Manager, aprire il criterio antimalware che si desidera modificare (fare clic su Asset **e** conformità nel riquadro di spostamento a sinistra, quindi espandere l'albero fino a Panoramica Endpoint Protection  >    >  **Criteri antimalware**)
 
 2.  Passare alla sezione **Aggiornamenti di Intelligence per la** sicurezza e configurare le impostazioni seguenti:
 
@@ -62,7 +63,7 @@ Se Microsoft Defender Antivirus non ha scaricato gli aggiornamenti di protezione
 
 3. Fare **clic su Criteri** e quindi su Modelli **amministrativi.**
 
-4. Espandi l'albero **fino ai componenti di Windows > Microsoft Defender Antivirus > aggiornamenti delle firme**.
+4. Espandere l'albero per **Windows componenti > Antivirus Microsoft Defender > aggiornamenti delle firme**.
 
 5. Fare doppio clic sull'impostazione Definisci il numero di giorni dopo il quale è necessario un aggiornamento **di intelligence** per la sicurezza e impostare l'opzione su **Abilitato**. Immettere il numero di giorni dopo i quali si desidera che Microsoft Defender AV controlli e scarii il più recente aggiornamento della protezione.
 
@@ -76,7 +77,7 @@ Utilizzare i cmdlet seguenti:
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-Per ulteriori informazioni su come usare PowerShell con Microsoft [Defender Antivirus,](use-powershell-cmdlets-microsoft-defender-antivirus.md) vedere Utilizzare i cmdlet di PowerShell per configurare ed eseguire i cmdlet di Microsoft Defender Antivirus e [Defender.](/powershell/module/defender/)
+Per ulteriori informazioni su come usare PowerShell con Antivirus Microsoft Defender, vedere Use [PowerShell cmdlets to configure](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Antivirus Microsoft Defender run Antivirus Microsoft Defender and [Defender cmdlets.](/powershell/module/defender/)
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Utilizzare Windows Management Instruction (WMI) per configurare gli aggiornamenti di protezione di aggiornamento
 
@@ -92,7 +93,7 @@ Per ulteriori informazioni e parametri consentiti, vedere:
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>Impostare il numero di giorni prima che la protezione venga segnalata come non aggiornata
 
-Puoi anche specificare il numero di giorni dopo i quali la protezione antivirus di Microsoft Defender è considerata vecchia o non aggiornata. Dopo il numero di giorni specificato, il client segnala se stesso come non aggiornato e visualizza un errore all'utente del PC. Potrebbe anche causare il tentativo di scaricare un aggiornamento da altre origini (in base all'ordine di origine di [fallback](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)definito), ad esempio quando si usa MMPC come origine secondaria dopo aver impostato WSUS o Microsoft Update come prima origine.
+È inoltre possibile specificare il numero di giorni dopo i quali la protezione Antivirus Microsoft Defender è considerata precedente o non aggiornata. Dopo il numero di giorni specificato, il client segnala se stesso come non aggiornato e visualizza un errore all'utente del PC. Può anche causare Antivirus Microsoft Defender di tentare di scaricare un aggiornamento da altre origini (in base all'ordine di [origine di fallback](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)definito), ad esempio quando si utilizza MMPC come origine secondaria dopo aver impostato WSUS o Microsoft Update come prima origine.
 
 ### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Utilizzare Criteri di gruppo per specificare il numero di giorni prima che la protezione venga considerata non aggiornata
 
@@ -102,7 +103,7 @@ Puoi anche specificare il numero di giorni dopo i quali la protezione antivirus 
 
 4.  Fare **clic su Criteri** e quindi su Modelli **amministrativi.**
 
-5.  Espandi l'albero **fino ai componenti di Windows > Microsoft Defender Antivirus > aggiornamenti** delle firme e configura le impostazioni seguenti:
+5.  Espandere l'albero per **Windows componenti > Antivirus Microsoft Defender > aggiornamenti delle firme** e configurare le impostazioni seguenti:
 
     1.  Fare doppio clic su Definisci il numero di giorni prima che le definizioni **di spyware** siano considerate non aggiornate e impostare l'opzione su **Abilitato**. Immettere il numero di giorni dopo i quali si desidera che Microsoft Defender AV consideri l'intelligence di sicurezza spyware non aggiornata.
 
@@ -115,7 +116,7 @@ Puoi anche specificare il numero di giorni dopo i quali la protezione antivirus 
 
 ## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>Configurare le analisi di catch-up per gli endpoint che non sono stati analizzati per un po' di tempo
 
-È possibile impostare il numero di analisi pianificate consecutive che possono essere perse prima che Microsoft Defender Antivirus forza un'analisi.
+È possibile impostare il numero di analisi pianificate consecutive che possono essere perse prima Antivirus Microsoft Defender forzare un'analisi.
 
 Il processo per l'abilitazione di questa funzionalità è il seguente:
 
@@ -135,7 +136,7 @@ Questa funzionalità può essere abilitata sia per le analisi complete che per l
 
 4.  Fare **clic su Criteri** e quindi su Modelli **amministrativi.**
 
-5.  Espandi l'albero fino ai componenti **di Windows > Microsoft Defender Antivirus > analisi** e configura le impostazioni seguenti:
+5.  Espandere l'albero per **Windows componenti > Antivirus Microsoft Defender > analisi** e configurare le impostazioni seguenti:
 
     1.  Se sono state impostate analisi rapide pianificate, fare doppio clic sull'impostazione Attiva analisi rapida di acquisizione e impostare l'opzione su **Abilitato.**  
     2. Se sono state impostate analisi complete pianificate, fare doppio clic sull'impostazione Attiva analisi completa di acquisizione completa e impostare l'opzione su **Abilitato.**  Fare clic su **OK**.
@@ -155,9 +156,9 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-Per ulteriori informazioni su come usare [PowerShell con](use-powershell-cmdlets-microsoft-defender-antivirus.md) Microsoft Defender Antivirus, vedere Utilizzare i cmdlet di PowerShell per gestire i cmdlet di Microsoft Defender Antivirus e [Defender.](/powershell/module/defender/)
+Per ulteriori informazioni su come usare [PowerShell con Antivirus Microsoft Defender,](use-powershell-cmdlets-microsoft-defender-antivirus.md) vedere Usare i cmdlet di Power Antivirus Microsoft Defender Shell per gestire i cmdlet di Antivirus Microsoft Defender e [Defender.](/powershell/module/defender/)
 
-### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Utilizzare Windows Management Instruction (WMI) per configurare le analisi di aggiornamento
+### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Utilizzare Windows Management Instruction (WMI) per configurare le analisi di catch-up
 
 Utilizzare il [ **metodo Set** della **classe MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) per le proprietà seguenti:
 
@@ -172,7 +173,7 @@ Per ulteriori informazioni e parametri consentiti, vedere:
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Usare Configuration Manager per configurare le analisi di catch-up
 
-1.  Nella console di Microsoft Endpoint Manager apri i criteri antimalware che vuoi modificare (fai clic su Asset  **e** conformità nel riquadro di spostamento a sinistra, quindi espandi l'albero fino a Panoramica criteri  >    >  **antimalware** di Endpoint Protection)
+1.  Nella console Microsoft Endpoint Manager, aprire il criterio antimalware che si desidera modificare (fare clic su Asset **e** conformità nel riquadro di spostamento a sinistra, quindi espandere l'albero fino a Panoramica Endpoint Protection  >    >  **Criteri antimalware**)
 
 2.  Passare alla sezione **Analisi pianificate** e **Forzare un'analisi** del tipo di analisi selezionato se il computer client è offline... su **Sì**. 
 
@@ -182,9 +183,9 @@ Per ulteriori informazioni e parametri consentiti, vedere:
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Distribuire Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Distribuire Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Gestire quando devono essere scaricati e applicati gli aggiornamenti della protezione](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [Gestire gli aggiornamenti forzati basati su eventi](manage-event-based-updates-microsoft-defender-antivirus.md)
-- [Gestire gli aggiornamenti per dispositivi mobili e macchine virtuali](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Gestire gli aggiornamenti per dispositivi mobili e macchine virtuali (VMS)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

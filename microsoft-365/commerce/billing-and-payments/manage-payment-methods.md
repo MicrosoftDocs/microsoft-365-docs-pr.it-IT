@@ -23,14 +23,17 @@ search.appverid:
 - MET150
 description: Informazioni su come gestire le modalità di pagamento nell'interfaccia di amministrazione di Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107040"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244721"
 ---
 # <a name="manage-payment-methods"></a>Gestire le modalità di pagamento
+
+> [!IMPORTANT]
+> A partire dal 26 gennaio 2021 i nuovi conti correnti bancari non sono più supportati per i clienti in Belgio, Francia, Italia, Lussemburgo, Portogallo, Spagna e Stati Uniti. I clienti esistenti in uno di questi paesi/aree geografiche possono continuare a pagare l'abbonamento con un conto corrente bancario esistente e aggiungervi nuovi abbonamenti, ma solo fino a quando il conto corrente bancario è in regola.
 
 Quando si acquistano prodotti o servizi aziendali da Microsoft, è possibile usare una modalità di pagamento esistente o aggiungerne una nuova. Per pagare gli acquisti, è possibile usare una carta di credito o di debito oppure un conto corrente bancario.
 

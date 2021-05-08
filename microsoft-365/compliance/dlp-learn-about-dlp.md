@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come proteggere le informazioni riservate usando Microsoft 365 criteri e strumenti di prevenzione della perdita dei dati ed eseguire un'analisi del ciclo di vita DLP.
-ms.openlocfilehash: 451622d15b1f422304dd498264ff2fe4a343bb6c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52127790"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244613"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati
 
@@ -212,3 +212,5 @@ Per ulteriori informazioni su Microsoft 365 DLP, vedere:
 - [Informazioni sullo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)](dlp-on-premises-scanner-learn.md)
 - [Informazioni sull'Estensione della conformità Microsoft (anteprima)](dlp-chrome-learn-about.md)
 - [Informazioni sulla dashboard degli avvisi per la prevenzione delle perdita dei dati](dlp-alerts-dashboard-learn.md)
+
+Per informazioni su come usare la prevenzione della perdita dei dati per conformarsi alle normative sulla privacy dei dati, vedere [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).

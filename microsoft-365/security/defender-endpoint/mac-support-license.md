@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1f8428c2995eec2dece290049eda67a3683b4c1e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934262"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244981"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Risolvere i problemi di licenza per Microsoft Defender per Endpoint in macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "51934262"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint su macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,15 +46,14 @@ Durante l'esecuzione di Microsoft Defender for [](mac-install-manually.md) Endpo
 
 Nessuna licenza trovata
 
-Sembra che l'organizzazione non abbia una licenza per l'abbonamento a Microsoft 365 Enterprise.
+Sembra che l'organizzazione non abbia una licenza per Microsoft 365 Enterprise abbonamento.
 
 Contattare l'amministratore per assistenza.
 
 **Causa:** 
 
-Hai distribuito e/o installato il pacchetto Microsoft Defender for Endpoint su macOS ("Scarica pacchetto di installazione") ma potresti aver eseguito lo script di configurazione ("Scarica pacchetto di onboarding").
+Hai distribuito e/o installato il pacchetto Microsoft Defender for Endpoint per macOS ("Scarica pacchetto di installazione"), ma potresti aver eseguito lo script di configurazione ("Scarica pacchetto di onboarding" oppure non hai assegnato una licenza all'utente.
 
 **Soluzione:**
 
 Seguire le MicrosoftDefenderATPOnboardingMacOs.py seguenti: Configurazione [client](mac-install-manually.md#client-configuration)
-

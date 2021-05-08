@@ -1,5 +1,5 @@
 ---
-title: Pianificare gli aggiornamenti di protezione di Microsoft Defender Antivirus
+title: Pianificare Antivirus Microsoft Defender aggiornamenti della protezione
 description: Pianificare il giorno, l'ora e l'intervallo per il download degli aggiornamenti della protezione
 keywords: aggiornamenti, linee di base della sicurezza, pianificare gli aggiornamenti
 search.product: eADQiWindows 10XVcnh
@@ -8,21 +8,22 @@ search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 327974c4db4166301820cf148811aceda1700513
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 26b88b8677c27a5d6615776a371326e37034afd4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765348"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275037"
 ---
-# <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Gestire la pianificazione per il download e l'applicazione degli aggiornamenti di protezione
+# <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Gestire la pianificazione del momento in cui devono essere scaricati e applicati gli aggiornamenti della protezione
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +32,7 @@ ms.locfileid: "51765348"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus ti consente di determinare quando cercare e scaricare gli aggiornamenti.
+Antivirus Microsoft Defender consente di determinare quando cercare e scaricare gli aggiornamenti.
 
 Puoi pianificare gli aggiornamenti per gli endpoint: 
 
@@ -43,22 +44,22 @@ Puoi pianificare gli aggiornamenti per gli endpoint:
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>Utilizzare Configuration Manager per pianificare gli aggiornamenti della protezione
 
-1.  Nella console di Microsoft Endpoint Manager apri i criteri antimalware che vuoi modificare (fai clic su Asset  **e** conformità nel riquadro di spostamento a sinistra, quindi espandi l'albero fino a Panoramica criteri  >    >  **antimalware** di Endpoint Protection)
+1.  Nella console Microsoft Endpoint Manager, aprire il criterio antimalware che si desidera modificare (fare clic su Asset **e** conformità nel riquadro di spostamento a sinistra, quindi espandere l'albero fino a Panoramica Endpoint Protection  >    >  **Criteri antimalware**)
 
 2.  Passare alla sezione **Aggiornamenti di Intelligence per la sicurezza.**
 
 3. Per controllare e scaricare gli aggiornamenti in un determinato momento:
-      1. Impostare **Controlla aggiornamenti dell'intelligence di sicurezza** di Endpoint Protection a un intervallo specifico... su **0**.
-      2. Imposta Controlla aggiornamenti di Intelligence per la sicurezza di Endpoint Protection ogni giorno **in...** al momento in cui devono essere controllati gli aggiornamenti.
+      1. Impostare Verifica disponibilità Endpoint Protection aggiornamenti delle funzionalità di intelligence per la **sicurezza a un intervallo specifico...** su **0**.
+      2. Imposta **Verifica disponibilità Endpoint Protection aggiornamenti delle funzionalità di intelligence** per la sicurezza ogni giorno all'ora in cui devono essere controllati gli aggiornamenti.
       3
-4. Per controllare e scaricare gli aggiornamenti a intervalli continui, impostare Controlla aggiornamenti di Intelligence per la sicurezza di Endpoint Protection a un intervallo **specifico...** sul numero di ore che devono verificarsi tra gli aggiornamenti.
+4. Per controllare e scaricare gli aggiornamenti a intervalli continui, impostare Verifica disponibilità aggiornamenti di intelligence per la sicurezza Endpoint Protection un intervallo **specifico...** sul numero di ore che devono verificarsi tra gli aggiornamenti.
 
 5.  [Distribuire il criterio aggiornato come al solito.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
 ## <a name="use-group-policy-to-schedule-protection-updates"></a>Utilizzare Criteri di gruppo per pianificare gli aggiornamenti della protezione
 
 > [!IMPORTANT]
-> Per impostazione predefinita, Microsoft Defender Antivirus verifica la disponibilità di un aggiornamento 15 minuti prima dell'ora di qualsiasi analisi pianificata. L'abilitazione di queste impostazioni avrà la precedenza su quella predefinita.
+> Per impostazione predefinita, Antivirus Microsoft Defender un aggiornamento 15 minuti prima dell'ora di qualsiasi analisi pianificata. L'abilitazione di queste impostazioni avrà la precedenza su quella predefinita.
 
 1.  Nel computer di gestione di Criteri di gruppo, aprire Console Gestione Criteri di [gruppo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
 
@@ -66,7 +67,7 @@ Puoi pianificare gli aggiornamenti per gli endpoint:
 
 4.  Fare **clic su Criteri** e quindi su Modelli **amministrativi.**
 
-5.  Espandere l'albero fino **ai componenti di Windows** Microsoft Defender  >  **Antivirus** Signature  >  **Intelligence Updates** e configurare le impostazioni seguenti:
+5.  Espandere l'albero per **Windows componenti**  >  **Antivirus Microsoft Defender**  >  **aggiornamenti di Signature Intelligence** e configurare le impostazioni seguenti:
 
     1. Fare doppio clic **sull'impostazione Specifica il giorno della** settimana per verificare la disponibilità di aggiornamenti delle funzionalità di intelligence per la sicurezza e impostare l'opzione su **Abilitato.** Immettere il giorno della settimana per verificare la disponibilità di aggiornamenti. Fare clic su **OK**.
     2. Fare doppio clic **sull'impostazione Specifica l'intervallo per controllare la** disponibilità di aggiornamenti delle funzionalità di intelligence per la sicurezza e impostare l'opzione su **Abilitato.** Immettere il numero di ore tra gli aggiornamenti. Fare clic su **OK**.
@@ -83,7 +84,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-Per ulteriori informazioni su come usare PowerShell con Microsoft [Defender Antivirus,](use-powershell-cmdlets-microsoft-defender-antivirus.md) vedere Utilizzare i cmdlet di PowerShell per configurare ed eseguire i cmdlet di Microsoft Defender Antivirus e [Defender.](/powershell/module/defender/)
+Per ulteriori informazioni su come usare PowerShell con Antivirus Microsoft Defender, vedere Use [PowerShell cmdlets to configure](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Antivirus Microsoft Defender run Antivirus Microsoft Defender and [Defender cmdlets.](/powershell/module/defender/)
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>Utilizzare Windows Management Instruction (WMI) per pianificare gli aggiornamenti della protezione
 
@@ -101,9 +102,9 @@ Per ulteriori informazioni e parametri consentiti, vedere:
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Distribuire Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Distribuire Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Gestire gli aggiornamenti per gli endpoint non aggiornati](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Gestire gli aggiornamenti forzati basati su eventi](manage-event-based-updates-microsoft-defender-antivirus.md)
-- [Gestire gli aggiornamenti per dispositivi mobili e macchine virtuali](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Gestire gli aggiornamenti per dispositivi mobili e macchine virtuali (VMS)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

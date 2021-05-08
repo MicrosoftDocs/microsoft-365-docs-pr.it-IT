@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un Exchange Server locale per l'utilizzo dell'autenticazione moderna ibrida (HMA, Hybrid Modern Authentication), offrendo un'autenticazione e un'autorizzazione degli utenti più sicure.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cb6d25a346ac48c9875a26f385cb733f1ff051f
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 2ae7a09387b62abc9e8c74f4a38c2fe8750bab19
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259452"
+ms.locfileid: "52244552"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 
@@ -140,7 +140,7 @@ Se OAuth non è presente in alcun server e in una delle quattro directory virtua
 Tornare alla shell di Exchange locale per l'ultimo comando. A questo punto è possibile verificare che l'utente locale abbia una voce per il provider di autenticazione evoSTS:
 
 ```powershell
-Get-AuthServer | where {$_.Name -like "EvoSts"}
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
 ```
 
 L'output dovrebbe mostrare un AuthServer con nome EvoSts e lo stato "Enabled" deve essere True. In caso contrario, è consigliabile scaricare ed eseguire la versione più recente della procedura guidata di configurazione ibrida.

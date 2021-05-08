@@ -1,12 +1,12 @@
 ---
 title: Valutare Microsoft Defender Antivirus
-description: Le aziende di tutte le dimensioni possono usare questa guida per valutare e testare la protezione offerta da Microsoft Defender Antivirus in Windows 10.
-keywords: Microsoft Defender Antivirus, protezione cloud, cloud, antimalware, sicurezza, defender, valutare, testare, proteggere, confrontare, protezione in tempo reale
+description: Le aziende di tutte le dimensioni possono usare questa guida per valutare e testare la protezione offerta da Antivirus Microsoft Defender in Windows 10.
+keywords: Antivirus Microsoft Defender, protezione cloud, cloud, antimalware, sicurezza, defender, valutare, testare, proteggere, confrontare, protezione in tempo reale
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 7f3fa1ca854a75025f850c85637cd3e08678bdbc
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4f789ab80d48966d4cf922811d05d74882d728fe
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764832"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274737"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Valutare Microsoft Defender Antivirus
 
@@ -30,15 +31,15 @@ ms.locfileid: "51764832"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Usa questa guida per determinare il livello di protezione di Microsoft Defender Antivirus da virus, malware e applicazioni potenzialmente indesiderate.
+Utilizzare questa guida per determinare Antivirus Microsoft Defender protegge da virus, malware e applicazioni potenzialmente indesiderate.
 
 >[!TIP]
 >Puoi anche visitare il sito Web demo di Microsoft Defender for Endpoint [all'indirizzo demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) per verificare che le funzionalità seguenti funzionino e vedere come funzionano:
->- Protezione basata sul cloud
+>- Protezione fornita dal cloud
 >- Apprendimento rapido (incluso Blocco a prima vista)
 >- Blocco di applicazioni potenzialmente indesiderate
 
-Spiega le importanti funzionalità di protezione di nuova generazione di Microsoft Defender Antivirus disponibili sia per le piccole che per le grandi aziende e come aumentano il rilevamento e la protezione da malware nella rete.
+Vengono illustrate le importanti funzionalità di protezione di nuova generazione Antivirus Microsoft Defender disponibili sia per le piccole che per le grandi imprese e come aumentano il rilevamento e la protezione da malware nella rete.
 
 Puoi scegliere di configurare e valutare ogni impostazione in modo indipendente o contemporaneamente. Sono state raggruppate impostazioni simili in base a scenari di valutazione tipici e sono incluse istruzioni per l'utilizzo di PowerShell per abilitare le impostazioni.
 
@@ -51,11 +52,11 @@ Puoi anche scaricare powershell che abiliterà automaticamente tutte le impostaz
 - [Scaricare lo script di PowerShell per configurare automaticamente le impostazioni](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings)
 
 > [!IMPORTANT]
-> La guida è attualmente destinata alla valutazione a computer singolo di Microsoft Defender Antivirus. L'abilitazione di tutte le impostazioni in questa guida potrebbe non essere adatta per la distribuzione reale.
+> La guida è attualmente progettata per la valutazione di un singolo computer di Antivirus Microsoft Defender. L'abilitazione di tutte le impostazioni in questa guida potrebbe non essere adatta per la distribuzione reale.
 >
-> Per i consigli più recenti per la distribuzione e il monitoraggio di Microsoft Defender Antivirus in una rete, vedi [Distribuire Microsoft Defender Antivirus.](deploy-manage-report-microsoft-defender-antivirus.md)
+> Per gli ultimi suggerimenti per la distribuzione e il monitoraggio di Antivirus Microsoft Defender in una rete, vedere [Deploy Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Distribuire Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Distribuire Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

@@ -1,13 +1,13 @@
 ---
-title: Abilitare e configurare le funzionalità di protezione di Microsoft Defender Antivirus
-description: Abilitare e configurare le funzionalità di protezione in tempo reale di Microsoft Defender Antivirus, ad esempio il monitoraggio del comportamento, l'euristica e l'apprendimento automatico
+title: Abilitare e configurare le funzionalità Antivirus Microsoft Defender protezione dei dati
+description: Abilitare e configurare Antivirus Microsoft Defender di protezione in tempo reale, ad esempio il monitoraggio del comportamento, l'euristica e l'apprendimento automatico
 keywords: antivirus, protezione in tempo reale, rtp, machine learning, monitoraggio del comportamento, euristica
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 12/16/2019
@@ -15,14 +15,15 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 807348fcbf3ad4ef9698b11b194d752d8038b4c9
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 1e39e42b79a2a767473c4473434da249a0d07228
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765108"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275133"
 ---
-# <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Abilitare e configurare la protezione always-on di Microsoft Defender Antivirus in Criteri di gruppo
+# <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Abilitare e configurare la protezione sempre attiva di Microsoft Defender Antivirus in Criteri di gruppo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,36 +38,36 @@ Queste attività includono eventi, ad esempio processi che apportano modifiche i
 
 ## <a name="enable-and-configure-always-on-protection-in-group-policy"></a>Abilitare e configurare la protezione always-on in Criteri di gruppo
 
-Puoi usare Editor **Criteri di gruppo locali per** abilitare e configurare le impostazioni di protezione always-on di Microsoft Defender Antivirus.
+È possibile utilizzare **Editor Criteri di gruppo locali** per abilitare e configurare Antivirus Microsoft Defender di protezione always-on.
 
 Per abilitare e configurare la protezione always-on:
 
 1. Aprire **Editor Criteri di gruppo locali.** Per eseguire l'operazione:  
 
-    1. Nella casella di ricerca della barra delle applicazioni di Windows 10 digita **gpedit.**
+    1. Nella casella di Windows 10 della barra delle applicazioni digitare **gpedit**.
     
     1. In **Corrispondenza ottimale** fare clic su Modifica Criteri di **gruppo** per avviare Editor Criteri di **gruppo locali.**
     
        ![GpEdit taskbar search result](images/gpedit-search.png)
 
-2. Nel riquadro sinistro **dell'Editor Criteri** di gruppo locali espandere l'albero fino a Configurazione **computer** Modelli amministrativi  >    >  **Componenti di Windows** Microsoft Defender  >  **Antivirus.** 
+2. Nel riquadro sinistro **dell'Editor** Criteri di gruppo locali espandere l'albero fino a Configurazione **computer** Modelli amministrativi  >    >  **Windows componenti**  >  **Antivirus Microsoft Defender**. 
 
-3. Configurare le impostazioni dei criteri del servizio antimalware di Microsoft Defender Antivirus. Per eseguire l'operazione:  
+3. Configurare le impostazioni Antivirus Microsoft Defender dei criteri del servizio antimalware. Per eseguire l'operazione:  
 
-    1. Nel riquadro **dei dettagli di Microsoft Defender Antivirus** a destra fare doppio clic sull'impostazione dei criteri come specificato nella tabella seguente:
+    1. Nel riquadro **Antivirus Microsoft Defender** dettagli a destra fare doppio clic sull'impostazione del criterio come specificato nella tabella seguente:
 
        | Impostazione | Descrizione | Impostazione predefinita |
        |-----------------------------|------------------------|-------------------------------|
-       | Consenti avvio del servizio antimalware con priorità normale | Puoi ridurre la priorità del motore di Microsoft Defender Antivirus, che può essere utile nelle distribuzioni leggere in cui vuoi avere il più possibile un processo di avvio snello. Ciò può influire sulla protezione dell'endpoint. | Abilitato
-       | Consenti al servizio antimalware di rimanere sempre in esecuzione | Se gli aggiornamenti della protezione sono stati disabilitati, puoi impostare Microsoft Defender Antivirus per l'esecuzione. In questo modo si riduce la protezione nell'endpoint. | Disabilitato |
+       | Consenti avvio del servizio antimalware con priorità normale | È possibile ridurre la priorità del motore di Antivirus Microsoft Defender, che può essere utile nelle distribuzioni leggere in cui si desidera disporre di un processo di avvio il più snello possibile. Ciò può influire sulla protezione dell'endpoint. | Abilitato
+       | Consenti al servizio antimalware di rimanere sempre in esecuzione | Se gli aggiornamenti della protezione sono stati disabilitati, è possibile impostare Antivirus Microsoft Defender'esecuzione. In questo modo si riduce la protezione nell'endpoint. | Disabilitato |
     
     1. Configurare l'impostazione in base alle esigenze e fare clic su **OK.**
     
     1. Ripetere i passaggi precedenti per ogni impostazione nella tabella.
 
-4. Configurare le impostazioni dei criteri di protezione in tempo reale di Microsoft Defender Antivirus. Per eseguire l'operazione:
+4. Configurare le Antivirus Microsoft Defender dei criteri di protezione in tempo reale. Per eseguire l'operazione:
 
-    1. Nel riquadro **dei dettagli di Microsoft Defender Antivirus** fare doppio clic su Protezione in tempo **reale.** In caso contrario, dal **riquadro sinistro dell'albero di Microsoft Defender Antivirus** fai clic su Protezione in tempo **reale.**
+    1. Nel riquadro **Antivirus Microsoft Defender** dettagli fare doppio clic su **Protezione in tempo reale.** In caso contrario, **dal Antivirus Microsoft Defender** albero a sinistra fare clic su Protezione in **tempo reale.**
     
     1. Nel riquadro **dei dettagli protezione** in tempo reale a destra fare doppio clic sull'impostazione del criterio come specificato nella tabella seguente:  
 
@@ -74,9 +75,9 @@ Per abilitare e configurare la protezione always-on:
        |-----------------------------|------------------------|-------------------------------|
        | Attivare il monitoraggio del comportamento | Il motore AV monitorerà i processi di file, le modifiche ai file e al Registro di sistema e altri eventi sugli endpoint per attività dannose sospette e note. | Abilitato |
        | Analizzare tutti i file e gli allegati scaricati | I file e gli allegati scaricati vengono analizzati automaticamente. Questo funziona in aggiunta al filtro SmartScreen Windows Defender, che analizza i file prima e durante il download. | Abilitato |
-       | Monitorare le attività di file e programmi nel computer | Il motore di Microsoft Defender Antivirus prende nota di eventuali modifiche ai file (scritture di file, ad esempio spostamenti, copie o modifiche) e attività generali del programma (programmi aperti o in esecuzione e che causano l'esecuzione di altri programmi). | Abilitato |
+       | Monitorare le attività di file e programmi nel computer | Il motore di Antivirus Microsoft Defender prende nota di eventuali modifiche ai file (scritture di file, ad esempio spostamenti, copie o modifiche) e attività generali del programma (programmi aperti o in esecuzione e che causano l'esecuzione di altri programmi). | Abilitato |
        | Attivare le notifiche di scrittura del volume non elaborato | Le informazioni sulle scritture di volumi non elaborati verranno analizzate dal monitoraggio del comportamento. | Abilitato |
-       | Attivare l'analisi dei processi ogni volta che è abilitata la protezione in tempo reale | Puoi abilitare in modo indipendente il motore di Microsoft Defender Antivirus per analizzare i processi in esecuzione alla ricerca di modifiche o comportamenti sospetti. Ciò è utile se la protezione in tempo reale è stata temporaneamente disabilitata e si desidera analizzare automaticamente i processi avviati mentre era disabilitata. | Abilitato |
+       | Attivare l'analisi dei processi ogni volta che è abilitata la protezione in tempo reale | È possibile abilitare il motore di Antivirus Microsoft Defender in modo indipendente per analizzare i processi in esecuzione alla ricerca di modifiche o comportamenti sospetti. Ciò è utile se la protezione in tempo reale è stata temporaneamente disabilitata e si desidera analizzare automaticamente i processi avviati mentre era disabilitata. | Abilitato |
        | Definire le dimensioni massime dei file e degli allegati scaricati da analizzare | È possibile definire le dimensioni in kilobyte. | Abilitato |
        | Configurare l'override delle impostazioni locali per attivare il monitoraggio del comportamento | Configurare una sostituzione locale per la configurazione del monitoraggio del comportamento. Questa impostazione può essere impostata solo da Criteri di gruppo. Se abiliti questa impostazione, l'impostazione della preferenza locale avrà la priorità su Criteri di gruppo. Se si disabilita o non si configura questa impostazione, Criteri di gruppo avrà la priorità sull'impostazione di preferenza locale.| Abilitato |
        | Configurare l'override delle impostazioni locali per l'analisi di tutti i file e gli allegati scaricati | Configurare una sostituzione locale per la configurazione dell'analisi di tutti i file e gli allegati scaricati. Questa impostazione può essere impostata solo da Criteri di gruppo. Se abiliti questa impostazione, l'impostazione della preferenza locale avrà la priorità su Criteri di gruppo. Se si disabilita o non si configura questa impostazione, Criteri di gruppo avrà la priorità sull'impostazione di preferenza locale.| Abilitato |
@@ -89,7 +90,7 @@ Per abilitare e configurare la protezione always-on:
     
     1. Ripetere i passaggi precedenti per ogni impostazione nella tabella.
 
-5. Configurare l'impostazione dei criteri di analisi di Microsoft Defender Antivirus. Per eseguire l'operazione:  
+5. Configurare l'impostazione Antivirus Microsoft Defender criteri di analisi dei dati. Per eseguire l'operazione:  
 
     1. Nel riquadro **sinistro dell'albero di Microsoft Defender Antivirus** fai clic su **Analizza.**
     

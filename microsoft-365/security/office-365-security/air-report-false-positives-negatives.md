@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.prod: m365-security
 ms.date: 01/29/2021
 localization_priority: Normal
@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 4476578939f2ece90c638c919c7e4d134ea2d9ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206843"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275085"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Come segnalare falsi positivi/negativi nelle funzionalità di indagine e risposta automatizzate
 
@@ -37,7 +37,7 @@ ms.locfileid: "51206843"
 - [Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Se le funzionalità di analisi e risposta [automatizzate (AIR) in Office 365](automated-investigation-response-office.md) non sono state rilevate o rilevate in modo errato, il team delle operazioni di sicurezza può eseguire alcune operazioni per risolverlo. Tali azioni includono:
+Se le funzionalità di analisi e risposta [automatizzate (AIR) Office 365](automated-investigation-response-office.md) hanno perso o rilevato in modo errato qualcosa, il team delle operazioni di sicurezza può eseguire alcune operazioni per risolverlo. Tali azioni includono:
 
 - [Segnalazione di un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Regolazione degli avvisi](#adjust-an-alert-to-prevent-false-positives-from-recurring) (se necessario); e
@@ -47,15 +47,15 @@ Usa questo articolo come guida.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Segnalare un falso positivo/negativo a Microsoft per l'analisi
 
-Se AIR in Microsoft Defender per Office 365 ha perso un messaggio di posta elettronica, un allegato di posta elettronica, un URL in un messaggio di posta elettronica o un URL in un file di Office, è possibile inviare posta indesiderata sospetta, phish, URL e file a [Microsoft per l'analisi di Office 365.](admin-submission.md)
+Se AIR in Microsoft Defender per Office 365 ha perso un messaggio di posta elettronica, un allegato di posta elettronica, un URL in un messaggio di posta elettronica o un URL in un file Office, è possibile inviare a Microsoft la posta indesiderata, il [phish,](admin-submission.md)gli URL e i file sospetti per l'analisi di Office 365 .
 
 È inoltre possibile [inviare un file a Microsoft per l'analisi del malware.](https://www.microsoft.com/wdsi/filesubmission)
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Modificare un avviso per evitare che i falsi positivi si ricorrenti
 
-Se un avviso viene attivato da un uso legittimo o l'avviso non è accurato, puoi gestire gli avvisi nel [portale di Cloud App Security.](/cloud-app-security/managing-alerts)
+Se un avviso viene attivato da un uso legittimo o l'avviso non è accurato, è possibile gestire gli avvisi nel portale [di Cloud App Security.](/cloud-app-security/managing-alerts)
 
-Se l'organizzazione usa [Microsoft Defender for Endpoint](/windows/security/threat-protection) oltre a Office 365 e un file, un indirizzo IP, un URL o un dominio viene considerato come malware in un dispositivo, anche se è sicuro, è possibile creare un indicatore personalizzato con un'azione ["Consenti"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)per il dispositivo.
+Se l'organizzazione usa [Microsoft Defender per Endpoint](/windows/security/threat-protection) oltre a Office 365 e un file, un indirizzo IP, un URL o un dominio viene considerato come malware in un dispositivo, anche se è sicuro, puoi creare un indicatore personalizzato con un'azione ["Consenti"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)per il dispositivo.
 
 ## <a name="undo-a-remediation-action"></a>Annullare un'azione di correzione
 
@@ -68,9 +68,9 @@ Nella maggior parte dei casi, se è stata eseguita un'azione di correzione su un
 
 Con Threat Explorer, il team delle operazioni di sicurezza può trovare un messaggio di posta elettronica interessato da un'azione e potenzialmente annullare l'azione.
 
-|Scenario|Opzioni annulla|Ulteriori informazioni|
+|Scenario|Opzioni annulla|Altre informazioni|
 |---|---|---|
-|Un messaggio di posta elettronica è stato instradato alla cartella Posta indesiderata di un utente|- Spostare il messaggio nella cartella Posta eliminata dell'utente<br/>- Spostare il messaggio nella cartella Posta in arrivo dell'utente<br/>- Eliminare il messaggio|[Trovare e analizzare la posta elettronica dannosa recapitata in Office 365](investigate-malicious-email-that-was-delivered.md)|
+|Un messaggio di posta elettronica è stato instradato alla cartella Posta indesiderata di un utente|- Spostare il messaggio nella cartella Posta eliminata dell'utente<br/>- Spostare il messaggio nella cartella Posta in arrivo dell'utente<br/>- Eliminare il messaggio|[Individuare e analizzare i messaggi di posta elettronica dannosi recapitati in Office 365](investigate-malicious-email-that-was-delivered.md)|
 |Un messaggio di posta elettronica o un file è stato messo in quarantena|- Rilasciare il messaggio di posta elettronica o il file<br/>- Eliminare il messaggio di posta elettronica o il file|[Gestire i messaggi in quarantena come amministratore](manage-quarantined-messages-and-files.md)|
 |
 
@@ -78,7 +78,7 @@ Con Threat Explorer, il team delle operazioni di sicurezza può trovare un messa
 
 Nel centro notifiche è possibile visualizzare le azioni di correzione eseguite e potenzialmente annullare l'azione.
 
-1. Accedere al Centro sicurezza Microsoft 365 ( <https://security.microsoft.com> ).
+1. Accedere al centro Microsoft 365 sicurezza ( <https://security.microsoft.com> ).
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Selezionare la **scheda Cronologia** per visualizzare l'elenco delle azioni completate.
 4. Selezionare un elemento. Verrà visualizzato il riquadro a comparsa.

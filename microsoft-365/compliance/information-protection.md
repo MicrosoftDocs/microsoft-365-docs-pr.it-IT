@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implementare Microsoft Information Protection (MIP) per proteggere le informazioni sensibili ovunque ci si trovi.
-ms.openlocfilehash: 36e8e917349edd5523677112818cd39514710583
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: f39890db2338d5811e15c81dfafef47c60b028c5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114362"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244333"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365.
 
@@ -89,7 +89,7 @@ Per evitare la condivisione accidentale di informazioni riservate, usare le funz
 
 Molte organizzazioni usano queste funzionalità di protezione delle informazioni per conformarsi alle normative sulla privacy dei dati. A tale scopo, è stato progettato un flusso di lavoro che fornisce una guida attraverso il processo end-to end di pianificazione e implementazione delle funzionalità in Microsoft 365, tra cui accesso sicuro, protezione dalla minacce, protezione delle informazioni e governance dei dati. Per ulteriori informazioni, vedere [Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
-Inoltre, per pianificare una strategia integrata per l’implementazione delle funzionalità di protezione delle informazioni, scaricare *Funzionalità di conformità e protezione delle informazioni di Microsoft 365*.  Queste illustrazioni possono essere personalizzate.
+Inoltre, per pianificare una strategia integrata per l'implementazione delle funzionalità di protezione delle informazioni, scaricare *Funzionalità di conformità e protezione delle informazioni di Microsoft 365*.  Queste illustrazioni possono essere personalizzate.
 
 | Elemento | Descrizione |
 |:-----|:------------|

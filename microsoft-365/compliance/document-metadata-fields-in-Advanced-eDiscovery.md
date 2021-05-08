@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo vengono definiti i campi di metadati per i documenti in un set di revisioni in un caso in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259464"
+ms.locfileid: "52244601"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi metadati documento in Advanced eDiscovery
 
@@ -119,7 +119,7 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |Data fine riunione|MeetingEndDate|Meeting_end_date|Data di fine riunione per le riunioni.|
 |Data inizio riunione|MeetingStartDate|Meeting_start_date|Data di inizio della riunione per le riunioni.|
 |Tipo di messaggio|MessageKind|Message_kind|Tipo di messaggio da cercare. Valori possibili: contatti docs e-mail dati esterni fax im journals riunioni **<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> microsoftteams** (restituisce elementi da chat, riunioni e chiamate in Microsoft Teams) note post **<br /> <br /> <br /> rssfeeds <br /> <br />** attività segreteria telefonica| 
-|ID padre allegato moderno||ModernAttachment_ParentId|ID non modificabile dell'elemento padre del documento.|
+|ModernAttachment_ParentId||ModernAttachment_ParentId||
 |Estensione nativa|NativeExtension|Native_extension|Estensione nativa dell'elemento.|
 |Nome file nativo|NativeFileName|Native_file_name|Nome file nativo dell'elemento.|
 |NativeMD5||Native_MD5|Hash MD5 (valore hash a 128 bit) del flusso di file.|
@@ -164,7 +164,6 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |Titolo|Titolo|Doc_title|Titolo dai metadati del documento.|
 |A|A|Email_to|Campo A per i tipi di messaggio. Il formato è **DisplayName \<SmtpAddress>**|
 |Univoco nel set di posta elettronica|UniqueInEmailSet||**False** se è presente un duplicato dell'allegato nel relativo set di posta elettronica.|
-|ID gruppo versione||Version_Group_Id|Raggruppa le diverse versioni dello stesso documento.|
 |È stato corretti|WasRemediated|Was_Remediated|**True** se l'elemento è stato corretti, in caso contrario **False**.|
 |Word count|WordCount|Word_count|Numero di parole nell'elemento.|
 |||||

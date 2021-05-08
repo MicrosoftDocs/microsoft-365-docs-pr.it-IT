@@ -19,19 +19,19 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Panoramica del modo in cui Microsoft 365 consente di lavorare ovunque.
-ms.openlocfilehash: 94033282edd980b022898da80b298a22c228e586
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Panoramica di come Microsoft 365 lavoro da qualsiasi luogo.
+ms.openlocfilehash: 1b8bfe4f452b1a7d9501ba7b92554f86492a36e6
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578544"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244885"
 ---
 # <a name="work-from-anywhere---overview"></a>Lavorare da qualsiasi luogo - panoramica
 
-Lontano dalla scrivania? Non c'è più batteria del portatile? Non c'è problema! Gestire il lavoro da qualsiasi luogo con Office sul telefono o tablet.
+Lontano dalla scrivania? Non c'è più batteria del portatile? Non c'è problema! Gestisci il tuo lavoro da qualsiasi luogo con Office sul tuo telefono o tablet.
 
-**Suggerimento per professionisti:** Tieni a controllo l'equilibrio tra vita professionale e vita privata disattivando le notifiche per le tue app di lavoro nei dispositivi personali.
+**Pro suggerimento:** Tieni a controllo l'equilibrio tra vita professionale e vita privata disattivando le notifiche per le tue app di lavoro nei dispositivi personali.
 
 Usa i quattro suggerimenti seguenti per lavorare ovunque tu sia.
 
@@ -45,53 +45,53 @@ Utilizzare questo modello per analizzare le abitudini e il modo in cui si deside
 
 ## <a name="install-outlook-and-keep-in-touch"></a>Installare Outlook e mantenersi in contatto
 
-È possibile rimanere in cima ai messaggi di posta elettronica e agli appuntamenti con Outlook sul telefono. Scarica l'app, quindi avvia, accedi e configura l'account.
+È possibile rimanere in cima a messaggi di posta elettronica e appuntamenti con Outlook sul telefono. Scarica l'app, quindi avvia, accedi e configura l'account.
 
-Per ulteriori informazioni su come [installare Outlook in un telefono, vedere](https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236).
+Ottenere ulteriori dettagli su come [installare Outlook su un telefono](install-apps-android.md).
 
 ## <a name="save-your-files-to-the-cloud"></a>salvare i file nel cloud
 
 Archiviare i file aziendali in Microsoft Teams o SharePoint. In questo modo l'utente e le altre persone dell'azienda possono accedervi anche quando non si è in ufficio.
 
-**Configurare le app per dispositivi mobili di SharePoint e Microsoft Teams**
+**Configurare le app SharePoint e Microsoft Teams mobili**
 
-- Ottenere [l'app SharePoint per dispositivi mobili](https://support.microsoft.com/office/539608ac-4725-455e-aea0-9ca1f769849f).
-- Ottenere [l'app microsoft Teams per dispositivi mobili](https://support.microsoft.com/office/set-up-your-teams-mobile-apps-1ba8dce3-1122-47f4-8db6-00a4f93117e8).
+- Ottieni [l'SharePoint per dispositivi mobili](https://support.microsoft.com/office/539608ac-4725-455e-aea0-9ca1f769849f).
+- Ottieni [l'Microsoft Teams per dispositivi mobili](https://support.microsoft.com/office/set-up-your-teams-mobile-apps-1ba8dce3-1122-47f4-8db6-00a4f93117e8).
 
-È possibile archiviare i file personali in OneDrive e sincronizzarli dal telefono.
+Puoi archiviare i file personali in OneDrive e sincronizzarli dal telefono.
 
 **Sincronizzare i file con OneDrive**
 
 1. Apri OneDrive e accedi.
 1. Seguire le istruzioni per completare la configurazione e avviare la sincronizzazione.
 
-Serve aiuto? Consigli su [dove archiviare i file,](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)su come usare l'app [OneDrive per dispositivi mobili](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) e su come [sincronizzare file e cartelle.](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)
+Serve aiuto? Consigli su [dove archiviare i file,](store-files.md)su come usare l'app OneDrive [per dispositivi mobili](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) e su come [sincronizzare file e cartelle.](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)
 
 ## <a name="open-and-edit-your-files-from-any-device"></a>Aprire e modificare i file da qualsiasi dispositivo
 
 ### <a name="work-on-your-phone-or-tablet"></a>Lavorare su un telefono o un tablet
 
-Installare le app di Office in un telefono o tablet e lavorare ovunque ci si trova. Scarica le app, quindi avvia, accedi e configura l'account.
+Installa le app Office su un telefono o un tablet e lavora ovunque tu sia. Scarica le app, quindi avvia, accedi e configura l'account.
 
-Altre informazioni sull'installazione dell'app di Office in: [Android](https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236)  |  [iOS](https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343).
+Altre informazioni sull'installazione del app Office su: [Android](install-apps-android.md)  |  [iOS.](install-apps-ios.md)
 
-Non sei sicuro di cosa puoi fare sul tuo telefono o tablet? Altre informazioni sull'uso delle app di Office:
+Non sei sicuro di cosa puoi fare sul tuo telefono o tablet? Altre informazioni sull'uso Office app:
 
 | Lavorare su un iPad o iPhone| Lavorare su un telefono o un tablet Android| 
 | :------------------- | :------------------- |
-| [App di Office per iOS](https://support.microsoft.com/office/microsoft-office-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0)  | [App di Office per Android](https://support.microsoft.com/en-us/office/microsoft-office-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b)| 
+| [app Office per iOS](https://support.microsoft.com/office/microsoft-office-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0)  | [app Office per Android](https://support.microsoft.com/en-us/office/microsoft-office-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b)| 
 | [Usare Word in un dispositivo mobile](https://support.microsoft.com/office/93446a8c-3809-4227-902c-11f11ebe8c2a)|[Usare Word in un dispositivo mobile](https://support.microsoft.com/office/93446a8c-3809-4227-902c-11f11ebe8c2a)| 
-| [Guida di PowerPoint per iPhone](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b)|[Guida di PowerPoint per tablet Android](https://support.microsoft.com/office/2ada1d22-3784-4943-bc47-9d1ede42875c)| 
-| [Guida di PowerPoint per iPad](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)|[Guida di PowerPoint per telefoni Android](https://support.microsoft.com/office/f6714e00-0ee2-48d1-bd3d-e1997565861f)| 
+| [PowerPoint per iPhone guida](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b)|[PowerPoint per Android Guida di Tablet PC](https://support.microsoft.com/office/2ada1d22-3784-4943-bc47-9d1ede42875c)| 
+| [PowerPoint per iPad Guida](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)|[PowerPoint per Android Guida di Phones](https://support.microsoft.com/office/f6714e00-0ee2-48d1-bd3d-e1997565861f)| 
 
 ### <a name="work-in-a-browser"></a>Lavorare in un browser
 
-Puoi anche creare e modificare documenti direttamente dal browser. Aprire file, modificare testo, modificare la formattazione, aggiungere immagini e creare grafici in Word, Excel e PowerPoint. Puoi anche lavorare in un documento contemporaneamente a un collega o un cliente quando hai condiviso [il file](https://support.microsoft.com/office/6725104a-6df7-4778-99c4-c06217dffecc) con loro.
+Puoi anche creare e modificare documenti direttamente dal browser. Aprire file, modificare testo, modificare la formattazione, aggiungere immagini e creare grafici in Word, Excel e PowerPoint. Puoi anche lavorare in un documento contemporaneamente a un collega o un cliente quando hai condiviso [il file](overview-file-sharing.md) con loro.
 
-1. Accedi a [Office.com](https://office.com) con il tuo account Microsoft 365.
-1. Avvia un'app di Office per iniziare a lavorare.
+1. Accedi a [Office.com](https://office.com) con il tuo Microsoft 365 account.
+1. Avvia un app Office per iniziare a lavorare.
 
-**Lavorare in un browser con Office Online**
+**Usare un browser con Office Online**
 
 - [Introduzione a Office Online in Microsoft 365](https://support.microsoft.com/office/5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 - [Introduzione a Word per il Web](https://support.microsoft.com/office/b406a6f9-341e-45f2-b9ac-ed85b6f7b8f6)
@@ -102,10 +102,10 @@ Puoi anche creare e modificare documenti direttamente dal browser. Aprire file, 
 
 Dal portatile:
 
-- In Microsoft Teams fai **clic** sul pulsante Riunioni sul lato sinistro dell'app e vedrai un elenco di tutte le :::image type="icon" source="../media/meetings-icon.png" border="false"::: riunioni della settimana. Trovare la riunione desiderata e quindi fare clic su Partecipa.
+- In Microsoft Teams, **fai** clic sul pulsante Riunioni a sinistra dell'app e vedrai un elenco di tutte le :::image type="icon" source="../media/meetings-icon.png" border="false"::: riunioni della settimana. Trovare la riunione desiderata e quindi fare clic su Partecipa.
 
 Dal telefono:
 
-- Sia prima che durante la riunione, vedrai l'avviso di riunione nell'elenco di chat o in una conversazione di canale in Microsoft Teams.
+- Sia prima che durante la riunione, vedrai l'avviso di riunione nell'elenco chat o in una conversazione di canale in Microsoft Teams.
 
     È possibile partecipare da tale avviso riunione o dal **calendario della** :::image type="icon" source="../media/meetings-icon.png" border="false"::: riunione

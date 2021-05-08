@@ -19,16 +19,23 @@ search.appverid:
 - MET150
 description: Scopri come leggere e comprendere la tua fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579759"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244709"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Come leggere la fattura
 
 La fattura fornisce un riepilogo degli addebiti e le istruzioni per il pagamento. È possibile [visualizzare la propria fattura online](#view-your-online-invoice) nell’interfaccia di amministrazione di Microsoft 365. Puoi anche scaricarla in Portable Document Format (.pdf) per inviarla tramite e-mail.
+
+Per visualizzare e stampare la fattura:
+
+1. Sulla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>, selezionare un intervallo di date per la fattura.
+2. Per stampare o salvare una copia PDF della fattura, selezionare **Visualizza fattura PDF** e quindi stampare il PDF.
+
+Per altre informazioni, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
 
 Se hai solo un abbonamento Microsoft 365, vedi [Comprendere la fattura per Microsoft 365 per aziende](understand-your-invoice2.md).
 
@@ -133,13 +140,6 @@ Le istruzioni di pagamento dipendono dal metodo di pagamento e vengono fornite n
 
 - **Periodo di servizio:** Il periodo di tempo durante il quale viene addebitato l'uso del servizio.
 - **Periodo di fatturazione:** Il periodo di tempo che inizia dalla data dell'ultima fattura.
-
-### <a name="how-do-i-view-and-print-my-bill"></a>Come si fa a visualizzare e stampare la fattura?
-
-1. Sulla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>, selezionare un intervallo di date per la fattura.
-2. Per stampare o salvare una copia PDF della fattura, selezionare **Visualizza fattura PDF** e quindi stampare il PDF.
-
-Per altre informazioni, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Perché non vedo il pagamento anticipato di Azure come metodo di pagamento?
 

@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Se è necessaria una soluzione di gestione dei record per Microsoft 365 che gestisca i contenuti di valore per obblighi legali, aziendali o normativi, di seguito vengono riportate alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 2ab5eaa494094dcbf0723f426fcbd644901c22bb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051898"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244345"
 ---
 # <a name="get-started-with-records-management"></a>Introduzione alla gestione dei record
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Pronto a iniziare a gestire i contenuti di valore dell'organizzazione per gli obblighi legali, aziendali o normativi usando una soluzione di gestione dei record in Microsoft 365? usare le seguenti indicazioni generali:
+Pronto a iniziare a gestire i contenuti di valore dell'organizzazione per gli obblighi legali, aziendali o normativi usando una soluzione di gestione dei record in Microsoft 365? Per iniziare, usare le indicazioni seguenti:
 
 1. **Conoscere la soluzione di gestione dei record** e le azioni consentite o bloccate quando i documenti e i messaggi di posta elettronica vengono dichiarati come record: [Informazioni sulla gestione dei record](records-management.md). 
 
@@ -53,9 +53,9 @@ Ai membri del team di conformità responsabili della gestione dei record è nece
 
 Per un ruolo di sola lettura, è possibile creare un nuovo gruppo di ruoli e aggiungere a questo gruppo il ruolo **Gestione dei record View-Only**. 
 
-Per altre informazioni su questi gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
+Per altre informazioni su questi gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Queste autorizzazioni sono necessarie solo per creare, configurare e applicare etichette di conservazione che dichiarano i record e gestire le eliminazioni. La persona che configura tali etichette non ha bisogno di accedere al contenuto.
 
@@ -84,8 +84,8 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 
 ## <a name="end-user-documentation-for-records"></a>Documentazione per gli utenti finali sui record
 
-Le etichette di conservazione usate per la gestione dei record hanno una presenza sull'interfaccia utente nelle app Microsoft 365. Assicurarsi di fornire indicazioni agli utenti finali e all'help desk prima di distribuire le etichette di conservazione alla rete di produzione.
+Le etichette di conservazione che vengono usate per la gestione record sono presenti nelle app di Microsoft 365. Assicurarsi di fornire indicazioni agli utenti finali e all'help desk prima di distribuire le etichette di conservazione alla rete di produzione.
 
-La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post seguente: [Formazione dell’utente finale sulle etichette di conservazione in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
+Per aiutare gli utenti ad applicare le etichette di conservazione in SharePoint e OneDrive, incluse le informazioni su come sbloccare i record per la modifica, vedere [Applicare etichette di conservazione ai file in SharePoint o OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-Nella sezione seguente sono disponibili anche le istruzioni per gli utenti di base: [Applicare manualmente le etichette di conservazione](create-apply-retention-labels.md#manually-apply-retention-labels).
+Tuttavia, la documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post di blog seguente: [Formazione dell’utente finale sulle etichette di conservazione in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).

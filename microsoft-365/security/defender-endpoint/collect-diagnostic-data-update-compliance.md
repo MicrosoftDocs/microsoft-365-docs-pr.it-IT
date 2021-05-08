@@ -1,13 +1,13 @@
 ---
-title: Raccogliere dati di diagnostica per La conformità degli aggiornamenti e Windows Defender Microsoft Defender Antivirus
-description: Usare uno strumento per raccogliere dati per risolvere i problemi di conformità degli aggiornamenti quando si usa il componente aggiuntivo Valutazione antivirus di Microsoft Defender
+title: Raccogliere dati di diagnostica per conformità degli aggiornamenti e Windows Defender Antivirus Microsoft Defender
+description: Usare uno strumento per raccogliere dati per risolvere i problemi di conformità degli aggiornamenti quando si usa il componente aggiuntivo Antivirus Microsoft Defender valutazione
 keywords: risolvere i problemi, errore, correggere, conformità degli aggiornamenti, oms, monitorare, report, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f2b3060d7f0d9daf0f923c674f2fe45ba976fdfc
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 2aaf3d1c650713a7f6cfb7b9abb9f2232013d6db
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764736"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274797"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a>Raccogliere i dati di diagnostica di conformità degli aggiornamenti per la valutazione di Microsoft Defender AV
 
@@ -33,9 +34,9 @@ ms.locfileid: "51764736"
 
 In questo articolo viene descritto come raccogliere i dati di diagnostica che possono essere utilizzati dai team di supporto e progettazione Microsoft per risolvere i problemi che possono verificarsi quando si usa la sezione Valutazione di Microsoft Defender AV nel componente aggiuntivo Conformità aggiornamenti.
 
-Prima di tentare questo processo, assicurati di aver letto Risoluzione dei problemi di segnalazione di [Microsoft Defender Antivirus,](troubleshoot-reporting.md)aver soddisfatto tutti i prerequisiti e aver eseguito qualsiasi altra procedura di risoluzione dei problemi suggerita.
+Prima di tentare questo processo, verificare di aver letto Risoluzione dei problemi Antivirus Microsoft Defender [report,](troubleshoot-reporting.md)aver soddisfatto tutti i prerequisiti e aver eseguito qualsiasi altra procedura di risoluzione dei problemi suggerita.
 
-In almeno due dispositivi che non segnalano o non vengono visualizzati in Conformità aggiornamento, ottenere il file di diagnostica CAB seguendo la procedura seguente:On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:
+In almeno due dispositivi che non segnalano o non vengono visualizzati in Conformità aggiornamento, ottenere il file di diagnostica .cab seguendo la procedura seguente:
 
 1. Aprire una versione a livello di amministratore del prompt dei comandi come segue:
         
@@ -53,9 +54,9 @@ In almeno due dispositivi che non segnalano o non vengono visualizzati in Confor
     mpcmdrun -getfiles
     ```
     
-4. Verrà generato un file CAB contenente diversi log di diagnostica. Il percorso del file verrà specificato nell'output nel prompt dei comandi. Per impostazione predefinita, il percorso è `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .
+4. Verrà .cab un file contenente diversi log di diagnostica. Il percorso del file verrà specificato nell'output nel prompt dei comandi. Per impostazione predefinita, il percorso è `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .
 
-5. Copiare questi file CAB in un percorso accessibile dal supporto Tecnico Microsoft. Un esempio potrebbe essere una cartella di OneDrive protetta da password che puoi condividere con microsoft.
+5. Copiare .cab file in un percorso accessibile dal supporto Tecnico Microsoft. Un esempio potrebbe essere una cartella OneDrive protetta da password che puoi condividere con noi.
 
 6. Inviare un messaggio di posta elettronica utilizzando <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">il modello</a>di posta elettronica Supporto conformità aggiornamenti e compilare il modello con le informazioni seguenti:
   
@@ -71,4 +72,4 @@ In almeno due dispositivi che non segnalano o non vengono visualizzati in Confor
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Risolvere i Windows Defender report di Microsoft Defender Antivirus](troubleshoot-reporting.md)
+- [Risolvere i Windows Defender Antivirus Microsoft Defender report](troubleshoot-reporting.md)

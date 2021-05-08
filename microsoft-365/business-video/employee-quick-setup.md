@@ -20,26 +20,26 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Aiuta i dipendenti a configurare le app di Office che ottengono con Microsoft 365 Business Premium.
-ms.openlocfilehash: 72b05435de13ef0d020be74f619a140e188f79d8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Aiuta i dipendenti a imparare a configurare Office app che ottengono con Microsoft 365 Business Premium.
+ms.openlocfilehash: c70100de68f9aee2df82ceb4105b517d8e6ee447
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580619"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244945"
 ---
 # <a name="employee-quick-setup"></a>Configurazione rapida per i dipendenti
 
-Sei una novità di Microsoft 365 per le aziende? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Guarda questo video](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) per informazioni. Segui questi passaggi.
+Sei nuovo a Microsoft 365 per le aziende? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Guarda questo video](../business/microsoft-365-business-start.md) per informazioni. Segui questi passaggi.
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Immagine che mostra la procedura di configurazione rapida dei dipendenti.":::
 
 ## <a name="1-sign-in-to-office"></a>1. Accedere a Office
 
 1. Passare a [Office.com](https://office.com) e scegliere **Accedi**.
-1. Digitare la posta elettronica e la password di Microsoft 365, quindi **accedere.**
+1. Digita il Microsoft 365 e la password, quindi **accedi.**
 
-## <a name="2-download-and-install-office-apps"></a>2. Scaricare e installare le app di Office
+## <a name="2-download-and-install-office-apps"></a>2. Scaricare e installare Office app
 
 1. Scegliere **Installa Office** in alto a destra.
     - In Chrome, passare al download nella parte inferiore della pagina e scegliere **Apri**.
@@ -59,31 +59,31 @@ Sei una novità di Microsoft 365 per le aziende? :::image type="icon" source="..
 > [!TIP]
 > Per importare i vecchi messaggi di posta elettronica, esportarli in un file PST e quindi importarlo in questo modo.
 
-## <a name="4-save-or-copy-files-to-onedrive"></a>4. Salvare o copiare file in OneDrive
+## <a name="4-save-or-copy-files-to-onedrive"></a>4. Salvare o copiare file OneDrive
 
-- Salvare i documenti **in OneDrive** dal menu **Salva con** nome nelle app di Office.
-    :::image type="content" source="../media/save-onedrive.png" alt-text="Indica chi è come salvare con nome in OneDrive.":::
+- Salvare i documenti **OneDrive** dal menu **Salva** con nome nelle Office app.
+    :::image type="content" source="../media/save-onedrive.png" alt-text="Indica chi è come salvare con nome per OneDrive.":::
 
 - Oppure copiare i file dal desktop o da Documenti in **OneDrive**.
 
-    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Immagine che mostra come salvare in OneDrive dalla cartella Documenti.":::
+    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Immagine che mostra come salvare OneDrive dalla cartella Documenti.":::
 
     > [!TIP]
-    > È inoltre possibile archiviare file [nei siti](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) in Microsoft 365.
+    > È inoltre possibile archiviare i file [nei siti](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) Microsoft 365.
 
 ## <a name="5-share-documents"></a>5. Condividere documenti
 
 1. Per condividere documenti con altri utenti, scegliere **Condividi**.
 
-    :::image type="content" source="../media/share-office-doc.png" alt-text="Icona Condividi in un'app di Office.":::
+    :::image type="content" source="../media/share-office-doc.png" alt-text="Icona Condividi in un app Office.":::
 
 1. Digitare l'indirizzo di posta elettronica, concedere autorizzazioni di lettura o modifica, includere un messaggio e scegliere **Condividi**.
 1. In alternativa, scegliere **Recupera un collegamento di condivisione** nella parte inferiore dello schermo.
 
 ## <a name="6-get-outlook-on-your-phone"></a>6. Ottenere Outlook sul telefono
 
-- Ottenere **Outlook** sul telefono dall'App Store o da Google Play Store. Aprirlo e scegliere **Introduzione e** aggiungere la posta elettronica e la password.
+- Ottieni **Outlook** sul telefono da App Store o Google Play Store. Aprirlo e scegliere **Informazioni di base** e aggiungere la posta elettronica e la password.
 - In alternativa, aprire Outlook in un dispositivo iOS o Android e passare a **Impostazioni**.
 
     Scegliere **Aggiungi Account**, **Aggiungi account e-mail**, quindi digitare indirizzo di posta elettronica e password.
-- In un **Windows Phone** scegliere **Impostazioni,** **Posta elettronica + account,** **Aggiungi un account** e quindi **Exchange.**
+- In un **Windows Phone**, scegliere **Impostazioni**, Posta elettronica **+ account**, Aggiungi **un account** e quindi **Exchange**.

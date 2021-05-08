@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 48674292e5a72ccc371ff4bf43dc499f19b3886d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064053"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274929"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Esaminare le azioni di correzione dopo un'indagine automatizzata
 
@@ -61,7 +61,7 @@ Se eseguita automaticamente o dopo l'approvazione, un'indagine automatizzata pu�
 
 ## <a name="review-pending-actions"></a>Rivedere le azioni in sospeso
 
-1. Accedere al Centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedere.
+1. Accedere al centro Microsoft 365 sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) ) ed eseguire l'accesso.
 2. Nel riquadro di spostamento, scegliere **Centro notifiche**. 
 3. Esaminare gli elementi nella **scheda In** sospeso. 
 4. Selezionare un'azione per aprire il riquadro a comparsa.
@@ -73,7 +73,7 @@ Se eseguita automaticamente o dopo l'approvazione, un'indagine automatizzata pu�
 
 ## <a name="review-completed-actions"></a>Rivedere le azioni completate
 
-1. Accedere al Centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedere.
+1. Accedere al centro Microsoft 365 sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) ) ed eseguire l'accesso.
 2. Nel riquadro di spostamento, scegliere **Centro notifiche**. 
 3. Esaminare gli elementi nella **scheda** Cronologia. 
 4. Selezionare un elemento per visualizzare ulteriori dettagli sull'azione di correzione.
@@ -84,7 +84,7 @@ Se hai determinato che un dispositivo o un file non è una minaccia, puoi annull
 
 | Origine azione | Azioni supportate |
 |:---|:---|
-| - Indagine automatizzata <br/>- Microsoft Defender Antivirus <br/>- Azioni di risposta manuale | - Isola dispositivo <br/>- Limitare l'esecuzione del codice <br/>- Mettere in quarantena un file <br/>- Rimuovere una chiave del Registro di sistema <br/>- Arrestare un servizio <br/>- Disabilitare un driver <br/>- Rimuovere un'attività pianificata |
+| - Indagine automatizzata <br/>- Antivirus Microsoft Defender <br/>- Azioni di risposta manuale | - Isola dispositivo <br/>- Limitare l'esecuzione del codice <br/>- Mettere in quarantena un file <br/>- Rimuovere una chiave del Registro di sistema <br/>- Arrestare un servizio <br/>- Disabilitare un driver <br/>- Rimuovere un'attività pianificata |
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>Per annullare più azioni contemporaneamente
 
@@ -111,7 +111,7 @@ I livelli di automazione influiscono sul fatto che determinate azioni di correzi
 |**Semi - Richiede l'approvazione per la correzione delle cartelle principali** |Viene raggiunto un verdetto *di Sospetto* per un elemento di prova. <br/><br/>Le azioni di correzione sono in attesa di approvazione.  |[Approvare (o rifiutare) le azioni in sospeso.](#review-pending-actions)|
 |**Semi - Richiede l'approvazione per la correzione delle cartelle non temporanee** |Viene raggiunto un verdetto *di Dannoso* per una prova. <br/><br/>Se l'elemento è un file o un file eseguibile che non si trova in una cartella temporanea, ad esempio la cartella di download o la cartella temporanea dell'utente, le azioni di correzione sono in attesa di approvazione. <br/><br/>Se l'elemento è un file o un file *eseguibile* in una cartella temporanea, le azioni di correzione vengono eseguite automaticamente.  |1. [Approvare (o rifiutare) le azioni in sospeso](#review-pending-actions)<br/><br/>2. [Rivedere le azioni completate](#review-completed-actions)  |
 |**Semi - Richiede l'approvazione per la correzione delle cartelle non temporanee** |Viene raggiunto un verdetto *di Sospetto* per un elemento di prova. <br/><br/>Le azioni di correzione sono in attesa di approvazione. |[Approvare (o rifiutare) le azioni in sospeso](#review-pending-actions)  | 
-|Qualsiasi livello **di automazione completo** o **semiautorizzazione** |Viene raggiunto il verdetto *Nessuna minaccia* trovata per un elemento di prova. <br/><br/>Non vengono eseguite azioni di correzione e nessuna azione è in attesa di approvazione. |[Visualizza dettagli e risultati delle indagini automatizzate](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
+|Qualsiasi livello **di automazione completo** o **semiautorizzazione** |Viene raggiunto il verdetto *Nessuna minaccia* trovata per un elemento di prova. <br/><br/>Non vengono eseguite azioni di correzione e nessuna azione è in attesa di approvazione. |[Visualizzare dettagli e risultati delle indagini automatizzate](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
 |**Nessuna risposta automatica** (scelta non consigliata)|Non vengono eseguite indagini automatizzate, quindi non vengono raggiunti verdetti e non vengono intraprese azioni di correzione o in attesa di approvazione. |[Valuta la possibilità di configurare o modificare i gruppi di dispositivi per usare **l'automazione** completa **o semiautonotica**](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) |
 
 In Microsoft Defender per Endpoint, tutti i verdetti vengono monitorati nel [centro notifiche.](auto-investigation-action-center.md#new-a-unified-action-center)
@@ -120,7 +120,7 @@ In Microsoft Defender per Endpoint, tutti i verdetti vengono monitorati nel [cen
 
 - [Informazioni sulle funzionalità di risposta in tempo reale](live-response.md)
 - [Ricerca proattiva di minacce con ricerca avanzata](advanced-hunting-overview.md)
-- [Risolvere i falsi positivi/negativi in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 65c196f8838378a10263370b1377b3eb43b14915
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051908"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244589"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Pronti per iniziare a gestire i dati della tua organizzazione, conservando il contenuto che occorre mantenere ed eliminando il contenuto non necessario? Usare le seguenti indicazioni generali per iniziare:
+Pronti per iniziare a gestire i dati della tua organizzazione, conservando il contenuto che occorre mantenere ed eliminando il contenuto non necessario? Per iniziare, usare le indicazioni seguenti:
 
 1. **Comprendere il funzionamento della conservazione** in Microsoft 365, e identificare se necessario usare criteri o etichette di conservazione oppure una combinazione tra i due: [Informazioni sulla conservazione](retention.md)
 
@@ -56,9 +56,9 @@ Ai membri del team di conformità che creeranno e gestiranno i criteri e le etic
 
 In alternativa all'utilizzo di questo ruolo predefinito, è possibile creare un nuovo gruppo di ruoli e aggiungere a questo gruppo il ruolo **Gestione conservazione**. Per sola lettura, usare **Gestione conservazione solo visualizzazione**. 
 
-Per altre informazioni su gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
+Per altre informazioni su gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Queste autorizzazioni sono necessarie solo per creare, configurare e applicare criteri di conservazione ed etichette di conservazione. La persona che configura tali criteri ed etichette non ha bisogno di accedere al contenuto.
 
@@ -86,8 +86,6 @@ Se si usano etichette di conservazione per la gestione dei record, esistono ulte
 
 La maggior parte dei criteri di conservazione funzionano in modo discreto in background senza interazione dell'utente. Pertanto, richiedono poca documentazione per gli utenti. I criteri di conservazione per Teams informano gli utenti quando i loro messaggi sono stati eliminati attraverso un collegamento a [Messaggi di Teams sui criteri di conservazione](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
-Poiché le etichette di conservazione sono presenti nelle app di Microsoft 365, assicurarsi di fornire indicazioni agli utenti finali e all'help desk prima di distribuire le etichette alla rete di produzione.
+Poiché le etichette di conservazione sono presenti nelle app di Microsoft 365, assicurarsi di fornire indicazioni agli utenti finali e all'help desk prima di distribuire le etichette alla rete di produzione. Per aiutare gli utenti ad applicare le etichette di conservazione in SharePoint e OneDrive, vedere [Applicare etichette di conservazione ai file in SharePoint o OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post di blog seguente: [Formazione dell’utente finale sulle etichette di conservazione in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
-
-Nella sezione seguente sono disponibili anche le istruzioni per gli utenti di base: [Applicare manualmente le etichette di conservazione](create-apply-retention-labels.md#manually-apply-retention-labels).
+Tuttavia, la documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post di blog seguente: [Formazione dell’utente finale sulle etichette di conservazione in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).

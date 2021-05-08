@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i dati dell'organizzazione."
-ms.openlocfilehash: c34025d2b68eb0ee179c98ce9c97a59193f782e3
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994953"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244625"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
 

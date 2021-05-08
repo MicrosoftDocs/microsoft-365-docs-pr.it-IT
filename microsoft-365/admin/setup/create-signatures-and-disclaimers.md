@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Informazioni su come gestire le firme di posta elettronica, incluse dichiarazioni di non responsabilità legali o dichiarazioni di divulgazione per tutti i messaggi di posta elettronica che entrano o escono dall'organizzazione.
-ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914235"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244528"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Creare firme e dichiarazioni di non responsabilità a livello di organizzazione
 
@@ -40,7 +40,7 @@ ms.locfileid: "50914235"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Creare una firma da applicare a tutti i messaggi
 
@@ -80,14 +80,14 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
 6. In **Applica questa regola** selezionare **[Applica a tutti i messaggi]**.
     
     > [!TIP]
-    > [Altre informazioni](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) su come applicare condizioni se non si vuole che la dichiarazione di non responsabilità venga applicata a tutti i messaggi. Questo articolo sull'ambito è Exchange Server, ma si applica anche a Microsoft 365. 
+    > [Altre informazioni](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) su come applicare condizioni se non si vuole che la dichiarazione di non responsabilità venga applicata a tutti i messaggi. Questo articolo sull'ambito è Exchange Server, ma si applica anche Microsoft 365. 
   
 7. In Effettua le operazioni seguenti lasciare selezionata l'opzione **Aggiungi una dichiarazione di non responsabilità**. 
     
 8.  Seleziona **Immetti testo** e digita la dichiarazione di non responsabilità. 
     
     > [!TIP]
-    > [Altre informazioni](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sulla formattazione di dichiarazioni di non responsabilità. Questo articolo di formattazione è Exchange Server, ma si applica anche a Microsoft 365. 
+    > [Altre informazioni](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sulla formattazione di dichiarazioni di non responsabilità. Questo articolo di formattazione è Exchange Server, ma si applica anche Microsoft 365. 
 
 9. Selezionare **Seleziona uno** e scegliere A **capo** come opzione di fallback. Quindi scegliere **OK**. Con questa opzione, se la dichiarazione di non responsabilità non può essere aggiunta a causa di un'impostazione della posta, come la crittografia, verrà incorporata nella busta del messaggio.
     
@@ -115,4 +115,4 @@ Per ottenere queste e altre funzionalità per gestire le firme di posta elettron
   
 ## <a name="more-resources"></a>Altre risorse
 
-- Per informazioni sull'utilizzo di PowerShell, vedere Dichiarazioni di non [responsabilità, firme,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) piè di pagina o intestazioni dei messaggi a livello di organizzazione in Exchange Online.
+- Per [informazioni sull'utilizzo](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) di PowerShell, vedere Dichiarazioni di non responsabilità, firme, piè di pagina o intestazioni a livello Exchange Online messaggio a livello di organizzazione.

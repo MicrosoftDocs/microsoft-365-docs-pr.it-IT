@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: f8dd48364f60da789ac95638018245cf46434822
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e51cc1d613e6f9e7ab96653692362ed7fe239e3e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197638"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274845"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitare il centro notifiche per visualizzare le azioni di correzione
 
@@ -82,13 +82,13 @@ Quando si visita il centro notifiche, vengono visualizzate due schede: **Azioni 
 - Scegliere le colonne che si desidera visualizzare.
 - Specificare il numero di elementi da includere in ogni pagina di dati.
 - Utilizzare i filtri per visualizzare solo gli elementi che si desidera visualizzare.
-- Selezionare **Esporta** per esportare i risultati in un file CSV. 
+- Selezionare **Esporta** per esportare i risultati in .csv file. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Visualizzare e approvare le azioni di correzione](manage-auto-investigation.md)
+- [Visualizzare e approvare le azioni correttive](manage-auto-investigation.md)
 - [Vedere la guida interattiva: Analizzare e correggere le minacce con Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
  
 ## <a name="see-also"></a>Vedere anche
 
-- [Risolvere i falsi positivi/negativi in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint](defender-endpoint-false-positives-negatives.md)

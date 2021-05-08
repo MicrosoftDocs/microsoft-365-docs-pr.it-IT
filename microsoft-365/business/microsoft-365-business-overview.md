@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 Business Premium, un servizio in abbonamento che include le app di produttività di Office e funzionalità di protezione avanzata dalle minacce informatiche.
-ms.openlocfilehash: d6b0ded25e0478f85e73b807789463e4d55b1bb0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578348"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244857"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Panoramica di Microsoft 365 Business Premium
 
@@ -46,7 +46,7 @@ Questo video offre una rapida panoramica di Microsoft 365 Business Premium.<br><
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml). 
 
 Microsoft 365 Business Premium è inteso per un massimo di 300 licenze. Se occorrono più licenze, vedere la documentazione di [Microsoft 365 Enterprise](../enterprise/index.yml) per maggiori informazioni.
 
@@ -75,7 +75,7 @@ Microsoft 365 Business Premium aiuta a **difendersi dalle minacce** mediante:
 
 - Esecuzione di un'analisi avanzata degli allegati di posta elettronica in un ambiente sandbox per rilevare il malware appena sviluppato (allegati sicuri). 
 
-- Abilitazione dei criteri anti-phishing che utilizzano modelli di machine learning e rilevamento della rappresentazione per fornire protezione dagli attacchi avanzati (anti-phishing in Defender per l'intelligence di Office 365). 
+- Abilitazione di criteri anti-phishing che utilizzano modelli di machine learning e rilevamento della rappresentazione per fornire protezione dagli attacchi avanzati (anti-phishing in Defender per Office 365 intelligence). 
 
 - Configurazione di criteri avanzati che disabilitano l'accesso da posizioni non attendibili o escludono l'autenticazione a più fattori da posizioni attendibili, ad esempio la rete dell'ufficio (Azure MFA con IP attendibili e accesso condizionale). 
 
@@ -111,6 +111,6 @@ Per l'elenco completo delle funzionalità di sicurezza, vedere [Funzionalità di
 
 - Per ottenere Microsoft 365 Business Premium senza rivolgersi a un partner, è possibile [acquistarlo qui](https://www.microsoft.com/microsoft-365/business) e seguire le istruzioni per l'[iscrizione.](sign-up.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-content"></a>Contenuti correlati
 
-[Video di formazione su Microsoft 365 Business Premium](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business Premium video di formazione (pagina](../business-video/index.yml) di collegamento)

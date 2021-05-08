@@ -9,18 +9,19 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: ff98b78d113a67ad6bd816753c691e8afe71dd77
-ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+ms.topic: article
+ms.openlocfilehash: 9a2f37aa0a2a17646862a7a7e1bd8b34685e76b8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52065074"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274713"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Proteggere le impostazioni di sicurezza con protezione antimanomissione
 
@@ -51,15 +52,15 @@ Con la protezione dalle manomissioni, alle app dannose non viene impedito di ese
 - Disabilitazione della protezione recapitata nel cloud
 - Rimozione degli aggiornamenti delle funzionalità di intelligence per la sicurezza
 
-### <a name="how-it-works"></a>Funzionamento
+### <a name="how-it-works"></a>Come funziona
 
-La protezione anti-manomissione blocca essenzialmente Microsoft Defender Antivirus e impedisce che le impostazioni di sicurezza vengano modificate tramite app e metodi come:
+La protezione anti-manomissione blocca essenzialmente Antivirus Microsoft Defender e impedisce che le impostazioni di sicurezza vengano modificate tramite app e metodi come:
 
-- Configurazione delle impostazioni nell'Editor del Registro di sistema nel dispositivo Windows
+- Configurazione delle impostazioni nell'Editor del Registro di sistema nel Windows dispositivo
 - Modifica delle impostazioni tramite i cmdlet di PowerShell
 - Modifica o rimozione delle impostazioni di sicurezza tramite criteri di gruppo
 
-La protezione anti-manomissione non impedisce la visualizzazione delle impostazioni di sicurezza. La protezione anti-manomissione non influisce sul modo in cui le app antivirus di terze parti si registrano con l'app Sicurezza di Windows. Se l'organizzazione usa Windows 10 Enterprise E5, i singoli utenti non possono modificare l'impostazione di protezione da manomissione; in questi casi, la protezione dalle manomissioni è gestita dal team di sicurezza.
+La protezione anti-manomissione non impedisce la visualizzazione delle impostazioni di sicurezza. La protezione anti-manomissione non influisce sul modo in cui le app antivirus di terze parti si registrano nell'app Sicurezza di Windows sicurezza. Se l'organizzazione usa Windows 10 Enterprise E5, i singoli utenti non possono modificare l'impostazione di protezione da manomissione. in questi casi, la protezione dalle manomissioni è gestita dal team di sicurezza.
 
 
 
@@ -67,7 +68,7 @@ La protezione anti-manomissione non impedisce la visualizzazione delle impostazi
 
 | Per eseguire questa attività... | Vedi questa sezione... |
 |:---|:---|
-| Attivare o disattivare la protezione da manomissione in Microsoft Defender Security Center <p>Gestire la protezione contro le manomissioni nel tenant | [Gestire la protezione da manomissione per l'organizzazione tramite Microsoft Defender Security Center](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
+| Attivare o disattivare la protezione da manomissione nella Microsoft Defender Security Center <p>Gestire la protezione contro le manomissioni nel tenant | [Gestire la protezione da manomissioni per l'organizzazione usando il Microsoft Defender Security Center](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
 | Attivare o disattivare la protezione da manomissioni per tutta o parte dell'organizzazione tramite Intune <p>Ottimizzare le impostazioni di protezione delle manomissioni nell'organizzazione | [Gestire la protezione contro le manomissioni per l'organizzazione con Intune](#manage-tamper-protection-for-your-organization-using-intune) |
 | Attivare o disattivare la protezione da manomissione per l'organizzazione con Configuration Manager | [Gestire la protezione anti-manomissione per l'organizzazione usando il collegamento del tenant con Configuration Manager, versione 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
 | Attivare o disattivare la protezione da manomissione per un singolo dispositivo | [Gestire la protezione contro le manomissioni in un singolo dispositivo](#manage-tamper-protection-on-an-individual-device) |
@@ -86,45 +87,45 @@ Nella tabella seguente vengono fornite informazioni dettagliate su metodi, strum
 |     Microsoft Intune                                                         |     No                                                 |
 | Microsoft Endpoint Configuration Manager + Tenant Attach                     |     No                                                 |
 |     Microsoft Defender for Endpoint Portal (securitycenter.microsoft.com)    |     Sì                                                |
-|     Portale di Microsoft 365 Defender (security.microsoft.com)                   |     Sì                                                |
+|     Microsoft 365 Defender Portal (security.microsoft.com)                   |     Sì                                                |
 
-## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>Gestire la protezione da manomissione per l'organizzazione tramite Microsoft Defender Security Center
+## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>Gestire la protezione da manomissioni per l'organizzazione usando il Microsoft Defender Security Center
 
-La protezione anti-manomissione può essere attivata o disattivata per il tenant tramite Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Ecco alcuni punti da tenere presenti:
+La protezione anti-manomissione può essere attivata o disattivata per il tenant usando il Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Ecco alcuni punti da tenere presenti:
 
-- Attualmente, l'opzione per gestire la protezione dalle manomissioni in Microsoft Defender Security Center è attivata per impostazione predefinita per le nuove distribuzioni. Per le distribuzioni esistenti, la protezione contro le manomissioni è disponibile in base al consenso esplicito, con l'intenzione di renderlo il metodo predefinito nel prossimo futuro. Per acconsentire esplicitamente, in Microsoft Defender Security Center scegliere **Impostazioni**  >  **Funzionalità avanzate**  >  **Protezione anti-manomissione.)** 
+- Attualmente, l'opzione per gestire la protezione dalle manomissioni nel Microsoft Defender Security Center è attivata per impostazione predefinita per le nuove distribuzioni. Per le distribuzioni esistenti, la protezione contro le manomissioni è disponibile in base al consenso esplicito, con l'intenzione di renderlo il metodo predefinito nel prossimo futuro. Per acconsentire esplicitamente, Microsoft Defender Security Center scegliere **Impostazioni**  >  **Funzionalità avanzate**  >  **Protezione anti-manomissione.)** 
 
-- Quando usi Microsoft Defender Security Center per gestire la protezione da manomissione, non devi usare Intune o il metodo di collegamento del tenant.
+- Quando si usa il Microsoft Defender Security Center per gestire la protezione da manomissione, non è necessario usare Intune o il metodo di collegamento del tenant.
 
-- Quando gestisci la protezione anti-manomissione in Microsoft Defender Security Center, l'impostazione viene applicata a livello di tenant, interessando tutti i dispositivi che eseguono Windows 10, Windows Server 2016 o Windows Server 2019. Per ottimizzare la protezione da manomissione (ad esempio, avere la protezione manomissione attivata per alcuni dispositivi, ma disattivata per altri), usa [Intune](#manage-tamper-protection-for-your-organization-using-intune) o Configuration Manager con il [collegamento del tenant.](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
+- Quando si gestisce la protezione contro le manomissioni nel Microsoft Defender Security Center, l'impostazione viene applicata a livello di tenant, interessando tutti i dispositivi che eseguono Windows 10, Windows Server 2016 o Windows Server 2019. Per ottimizzare la protezione da manomissione (ad esempio, avere la protezione manomissione attivata per alcuni dispositivi, ma disattivata per altri), usa [Intune](#manage-tamper-protection-for-your-organization-using-intune) o Configuration Manager con il [collegamento del tenant.](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
 
-- Se si dispone di un ambiente ibrido, le impostazioni di protezione delle manomissioni configurate in Intune hanno la precedenza sulle impostazioni configurate in Microsoft Defender Security Center. 
-
-
+- Se si dispone di un ambiente ibrido, le impostazioni di protezione delle manomissioni configurate in Intune hanno la precedenza sulle impostazioni configurate nel Microsoft Defender Security Center. 
 
 
-### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>Requisiti per la gestione della protezione da manomissione in Microsoft Defender Security Center
+
+
+### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>Requisiti per la gestione della protezione da manomissione nell'Microsoft Defender Security Center
 
 - È necessario disporre delle autorizzazioni [appropriate,](/microsoft-365/security/defender-endpoint/assign-portal-access)ad esempio l'amministratore globale, l'amministratore della sicurezza o le operazioni di sicurezza.
 
-- I dispositivi Windows devono eseguire una delle versioni seguenti di Windows:
+- I Windows devono eseguire una delle seguenti versioni di Windows:
    - Windows 10
    - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windows Server, versione [1803](/windows/release-health/status-windows-10-1803) o successiva
    - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-   - Per altre informazioni sulle versioni, vedi [Informazioni sulla versione di Windows 10.](/windows/release-health/release-information)
+   - Per ulteriori informazioni sui rilasci, [vedere Windows 10 release .](/windows/release-health/release-information)
 
 - I dispositivi devono [essere onboarded in Microsoft Defender for Endpoint.](/microsoft-365/security/defender-endpoint/onboarding)
 
-- I dispositivi devono usare la piattaforma antimalware versione 4.18.2010.7 (o superiore) e la versione del motore antimalware 1.1.17600.5 (o superiore). ([Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base](manage-updates-baselines-microsoft-defender-antivirus.md).)
+- I dispositivi devono usare la piattaforma antimalware versione 4.18.2010.7 (o superiore) e la versione del motore antimalware 1.1.17600.5 (o superiore). ([Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base.](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 - [La protezione con distribuzione cloud](enable-cloud-protection-microsoft-defender-antivirus.md) deve essere attivata.
 
-### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-defender-security-center"></a>Attivare o disattivare la protezione da manomissione in Microsoft Defender Security Center 
+### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-defender-security-center"></a>Attivare o disattivare la protezione da manomissione nella Microsoft Defender Security Center 
 
-![Attivare la protezione anti-manomissione in Microsoft Defender Security Center](images/mde-turn-tamperprotect-on.png)
+![Attivare la protezione anti-manomissione nella Microsoft Defender Security Center](images/mde-turn-tamperprotect-on.png)
 
-1. Vai a Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e accedi.
+1. Vai al Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e accedi.
 
 2. Scegliere **Impostazioni**.
 
@@ -138,11 +139,11 @@ Se si fa parte del team di sicurezza dell'organizzazione e la sottoscrizione inc
 
 - È necessario disporre delle autorizzazioni [appropriate,](/microsoft-365/security/defender-endpoint/assign-portal-access)ad esempio l'amministratore globale, l'amministratore della sicurezza o le operazioni di sicurezza.
 
-- L'organizzazione usa [Intune per gestire i dispositivi](/intune/fundamentals/what-is-device-management). ( Sono necessarie licenze di[Intune;](/intune/fundamentals/licenses) Intune è incluso in Microsoft 365 E5.
+- L'organizzazione usa [Intune per gestire i dispositivi](/intune/fundamentals/what-is-device-management). ( Sono necessarie licenze di[Intune;](/intune/fundamentals/licenses) Intune è incluso in Microsoft 365 E5.)
 
-- I dispositivi Windows devono eseguire Windows 10 OS [1709,](/windows/release-health/status-windows-10-1709) [1803,](/windows/release-health/status-windows-10-1803) [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) o versioni successive. Per altre informazioni sulle versioni, vedi Informazioni [sulla versione di Windows 10.](/windows/release-health/release-information)
+- I Windows devono essere in esecuzione Windows 10 OS [1709,](/windows/release-health/status-windows-10-1709) [1803,](/windows/release-health/status-windows-10-1803) [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) o versioni successive. Per ulteriori informazioni sui rilasci, [vedere Windows 10 sulle versioni.](/windows/release-health/release-information)
 
-- Devi usare la sicurezza di Windows con [security intelligence](https://www.microsoft.com/wdsi/definitions) aggiornata alla versione 1.287.60.0 (o superiore).
+- Devi usare la sicurezza Windows sicurezza con [security intelligence](https://www.microsoft.com/wdsi/definitions) aggiornata alla versione 1.287.60.0 (o superiore).
 
 - I dispositivi devono usare la piattaforma antimalware versione 4.18.1906.3 (o superiore) e la versione del motore antimalware 1.1.15500.X (o versione successiva). ([Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
@@ -299,7 +300,7 @@ No. Gli amministratori locali non possono modificare o modificare le impostazion
 
 Se un dispositivo è fuori bordo da Microsoft Defender for Endpoint, la protezione anti-manomissione è attivata, che è lo stato predefinito per i dispositivi non gestiti. 
 
-### <a name="will-there-be-an-alert-about-tamper-protection-status-changing-in-the-microsoft-defender-security-center"></a>Verrà visualizzato un avviso sulla modifica dello stato di protezione delle manomissioni in Microsoft Defender Security Center?
+### <a name="will-there-be-an-alert-about-tamper-protection-status-changing-in-the-microsoft-defender-security-center"></a>Verrà visualizzato un avviso in caso di modifica dello stato di protezione da manomissione nel Microsoft Defender Security Center?
 
 Sì. L'avviso viene visualizzato in [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) **Avvisi**.
 
@@ -311,7 +312,7 @@ Il team delle operazioni di sicurezza può inoltre utilizzare query di ricerca, 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+[Proteggere i Windows pc con Endpoint Protection per Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
 [Panoramica di Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
 

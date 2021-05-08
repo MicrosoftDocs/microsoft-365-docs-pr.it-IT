@@ -21,12 +21,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sulle notifiche di posta indesiderata degli utenti finali per i messaggi in quarantena in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9cff91be399bd98eb7e6e5a2a6d91a4a8bb602ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3f5eafbb51cd0ff32c69fa0cff85729ef95d3d1f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206084"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274989"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Usare le notifiche di posta indesiderata degli utenti per rilasciare e segnalare i messaggi in quarantena
 
@@ -56,7 +56,7 @@ Una notifica di posta indesiderata dell'utente finale contiene le informazioni s
 
 - **Date**: data e ora (in UTC) in cui il messaggio è stato messo in quarantena.
 
-- **Blocca mittente:** fare clic su questo collegamento per aggiungere il mittente all'elenco Mittenti bloccati. Per ulteriori informazioni, vedere [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- **Blocca mittente:** fare clic su questo collegamento per aggiungere il mittente all'elenco Mittenti bloccati nella cassetta postale. Per ulteriori informazioni, vedere [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Rilascio**: per i messaggi di posta indesiderata (non di phishing), è possibile rilasciare il messaggio qui senza andare in quarantena nel Centro sicurezza & conformità.
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni su come annullare la versione di valutazione o l'abbonamento a pagamento a Microsoft 365 per le aziende.
 ms.date: 04/08/2021
-ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107003"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244661"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -126,7 +126,7 @@ Quando l'annullamento diventa effettivo, gli utenti perdono l'accesso ai propri 
 
 - Per spostare posta elettronica, contatti, attività e informazioni del calendario in un altro account, vedere [Esportare o eseguire il backup di posta elettronica, contatti e calendari in un file PST di Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
-- Per salvare una raccolta di documenti o il contenuto di un elenco (ad esempio i contatti) da un ambiente SharePoint Online (OneDrive for Business o siti del team) in una condivisione file o in un computer locale, vedere [Informazioni sulla migrazione manuale del contenuto di SharePoint Online](https://support.microsoft.com/kb/2783484).
+- Per salvare una raccolta di documenti o il contenuto di un elenco (ad esempio i contatti) da un ambiente SharePoint Online (OneDrive for Business o siti del team) in una condivisione file o in un computer locale, vedere [Informazioni sulla migrazione manuale del contenuto di SharePoint Online](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ### <a name="uninstall-office-optional"></a>Disinstallare Office (facoltativo)
 

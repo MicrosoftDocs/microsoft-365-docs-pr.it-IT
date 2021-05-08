@@ -9,8 +9,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.date: 10/22/2020
 localization_priority: Normal
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 013e01e9f84cae01258afc6ba139b7b5ada5912f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ba206002415fcd4ae968cc88563136399b78f435
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934118"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274775"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Livelli di automazione nelle funzionalità di analisi e correzione automatizzate
 
@@ -50,7 +50,7 @@ Nella tabella seguente vengono descritti ogni livello di automazione e il suo fu
 |:---|:---|
 |**Completo : correggere automaticamente le minacce** <br/>(noto anche come *automazione completa)*| Con l'automazione completa, le azioni di correzione vengono eseguite automaticamente. Tutte le azioni di correzione eseguite possono essere visualizzate [nel](auto-investigation-action-center.md) Centro notifiche nella **scheda** Cronologia. Se necessario, è possibile annullare un'azione di correzione.<br/><br/>**_L'automazione_* completa è consigliata ed è selezionata per impostazione predefinita per i tenant creati il 16 agosto 2020 con Microsoft Defender for Endpoint, senza ancora definire gruppi di dispositivi.*  |
 |**Semi - Richiede l'approvazione per qualsiasi correzione** <br/>(noto anche come *semiautorizzazione)*| Con questo livello di semiautorizzazione, è necessaria l'approvazione per *qualsiasi* azione correttiva. Tali azioni in sospeso possono essere visualizzate e approvate nel [Centro notifiche,](auto-investigation-action-center.md)nella **scheda In** sospeso.<br/><br/>*Questo livello di semiautorizzazione è selezionato per impostazione predefinita per i tenant creati prima del 16 agosto 2020 con Microsoft Defender per Endpoint, senza gruppi di dispositivi definiti.*|
-|**Semi - Richiede l'approvazione per la correzione delle cartelle principali** <br/>(anche un tipo di *semiautorizzazione)*  | Con questo livello di semiautorizzazione, è necessaria l'approvazione per tutte le azioni di correzione necessarie per i file o i file eseguibili presenti nelle cartelle principali. Le cartelle principali includono le directory del sistema operativo, ad **esempio Windows** ( `\windows\*` ).<br/><br/>Le azioni di correzione possono essere eseguite automaticamente su file o file eseguibili presenti in altre cartelle (non di base). <br/><br/>Le azioni in sospeso per file o eseguibili nelle cartelle principali possono essere visualizzate e approvate nel Centro [notifiche,](auto-investigation-action-center.md)nella **scheda In** sospeso. <br/><br/>Le azioni eseguite su file o eseguibili in altre cartelle possono essere visualizzate nel Centro notifiche [nella](auto-investigation-action-center.md) **scheda** Cronologia. |
+|**Semi - Richiede l'approvazione per la correzione delle cartelle principali** <br/>(anche un tipo di *semiautorizzazione)*  | Con questo livello di semiautorizzazione, è necessaria l'approvazione per tutte le azioni di correzione necessarie per i file o i file eseguibili presenti nelle cartelle principali. Le cartelle principali includono le directory del sistema operativo, ad esempio **Windows** ( `\windows\*` ).<br/><br/>Le azioni di correzione possono essere eseguite automaticamente su file o file eseguibili presenti in altre cartelle (non di base). <br/><br/>Le azioni in sospeso per file o eseguibili nelle cartelle principali possono essere visualizzate e approvate nel Centro [notifiche,](auto-investigation-action-center.md)nella **scheda In** sospeso. <br/><br/>Le azioni eseguite su file o eseguibili in altre cartelle possono essere visualizzate nel Centro notifiche [nella](auto-investigation-action-center.md) **scheda** Cronologia. |
 |**Semi - Richiede l'approvazione per la correzione delle cartelle non temporanee** <br/>(anche un tipo di *semiautorizzazione)*| Con questo livello di semiautorizzazione, è necessaria l'approvazione per tutte le azioni di correzione necessarie per i file o i file eseguibili non *presenti* nelle cartelle temporanee. <br/><br/>Le cartelle temporanee possono includere gli esempi seguenti: <br/>- `\users\*\appdata\local\temp\*`<br/>- `\documents and settings\*\local settings\temp\*` <br/>- `\documents and settings\*\local settings\temporary\*`<br/>- `\windows\temp\*`<br/>- `\users\*\downloads\*`<br/>- `\program files\` <br/>- `\program files (x86)\*`<br/>- `\documents and settings\*\users\*`<br/><br/>Le azioni di correzione possono essere eseguite automaticamente su file o file eseguibili presenti in cartelle temporanee. <br/><br/>Le azioni in sospeso per file o eseguibili non presenti in cartelle temporanee possono essere visualizzate e approvate nel Centro notifiche [nella](auto-investigation-action-center.md) **scheda** In sospeso.<br/><br/>Le azioni eseguite su file o eseguibili in cartelle temporanee possono essere visualizzate e approvate nel Centro notifiche [nella](auto-investigation-action-center.md) **scheda** Cronologia.   |
 |**Nessuna risposta automatica** <br/>(noto anche come *nessuna automazione)* | Senza automazione, l'indagine automatizzata non viene eseguita nei dispositivi dell'organizzazione. Di conseguenza, non vengono intraprese o in sospeso azioni di correzione a seguito di un'indagine automatizzata. Tuttavia, possono essere effettive [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)altre funzionalità di protezione dalle minacce, ad esempio la protezione da applicazioni potenzialmente indesiderate, a seconda di come sono configurate le funzionalità antivirus e di protezione di nuova generazione.<br/><br/>****L'utilizzo dell'opzione*** no automation non è consigliato perché riduce il livello di sicurezza dei dispositivi dell'organizzazione. [Valuta la possibilità di configurare il livello di automazione per l'automazione completa (o almeno semi-automazione)](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups)*. |
 
