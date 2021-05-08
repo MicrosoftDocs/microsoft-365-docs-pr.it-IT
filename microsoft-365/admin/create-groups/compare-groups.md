@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Informazioni sui tipi di gruppi che è possibile usare.
-ms.openlocfilehash: 7b67fa5e7dc661163ce6c2c8933ebdafd0a5940d
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9f36688972f00a27a274b6a974d958d1d590aa93
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023846"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243985"
 ---
 # <a name="compare-groups"></a>Confrontare i gruppi
 
 Nella sezione **Gruppi** dell'interfaccia di amministrazione di Microsoft 365 è possibile gestire questi tipi di gruppi: 
 
 - **I gruppi di Microsoft 365** (noti in precedenza come “gruppi di Office 365”) vengono usati per la collaborazione tra gli utenti, sia all’interno che all’esterno dell’azienda.
-- **I gruppi di distribuzione** vengono usati per inviare notifiche a un gruppo di persone.
+- I **gruppi di distribuzione** vengono usati per inviare notifiche tramite posta elettronica a un gruppo di persone.
 - **I gruppi di sicurezza** vengono usati per concedere l'accesso a risorse come i siti di SharePoint.
 - **I gruppi di sicurezza abilitati alla posta elettronica** vengono usati per concedere l'accesso a risorse come SharePoint e per inviare notifiche a tali utenti tramite posta elettronica.
 - **Le cassette postali condivise** vengono usate quando più persone devono accedere alla stessa cassetta postale, ad esempio un'informazione aziendale o un indirizzo di posta elettronica di supporto.
@@ -59,6 +59,8 @@ I gruppi di distribuzione sono ideali per quelle situazioni in cui è necessario
 
 I gruppi di distribuzione possono essere [aggiornati ai gruppi di Microsoft 365](../manage/upgrade-distribution-lists.md).
 
+È possibile aggiungere gruppi di distribuzione a un team in Microsoft Teams.
+
 ## <a name="security-groups"></a>Gruppi di sicurezza
 
 [I gruppi di sicurezza](../email/create-edit-or-delete-a-security-group.md) vengono usati per concedere l'accesso alle risorse di Microsoft 365, ad esempio SharePoint. Consentono di semplificare l'amministrazione perché è necessario gestire solo il gruppo anziché aggiungere utenti a ogni risorsa singolarmente.
@@ -67,17 +69,23 @@ I gruppi di sicurezza possono contenere utenti o dispositivi. La creazione di un
 
 I gruppi di sicurezza possono essere [configurati per l'appartenenza dinamica in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), consentendo l'aggiunta o la rimozione dei membri o dei dispositivi del gruppo in base agli attributi degli utenti, ad esempio reparto, posizione o titolo oppure gli attributi del dispositivo come la versione del sistema operativo.
 
+I gruppi di sicurezza possono essere aggiunti a un team.
+
 ## <a name="mail-enabled-security-groups"></a>Gruppi di sicurezza abilitati alla posta elettronica
 
 I gruppi di sicurezza abilitati alla posta elettronica sono identici ai normali gruppi di sicurezza, con la differenza che non possono essere gestiti in modo dinamico tramite Azure Active Directory e non possono contenere dispositivi.
 
 Includono la possibilità di inviare messaggi di posta elettronica a tutti i membri del gruppo.
 
+I gruppi di sicurezza abilitati alla posta elettronica possono essere aggiunti a un team.
+
 ## <a name="shared-mailboxes"></a>Cassette postali condivise
 
 [Le cassette postali condivise](../email/create-a-shared-mailbox.md) vengono usate quando più persone devono accedere alla stessa cassetta postale, ad esempio un'informazione aziendale o un indirizzo di posta elettronica di supporto, una reception o un'altra funzione che potrebbe essere condivisa da più persone.
 
 Le cassette postali condivise possono ricevere messaggi esterni se abilitati dall'amministratore.
+
+Le cassette postali condivise includono un calendario che può essere usato per la collaborazione.
 
 Gli utenti che dispongono delle autorizzazioni per la cassetta postale del gruppo possono inviare o inviare per conto dell'indirizzo di posta elettronica della cassetta postale, se l'amministratore ha concesso tali autorizzazioni. Questa funzione è particolarmente utile per le cassette postali dell'assistenza e del supporto, perché gli utenti possono inviare messaggi di posta elettronica dal "supporto tecnico Contoso" o dalla "reception dell'edificio A".
 

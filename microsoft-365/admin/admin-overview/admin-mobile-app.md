@@ -1,5 +1,5 @@
 ---
-title: Informazioni sull'app per dispositivi mobili di amministrazione di Microsoft 365
+title: Informazioni sull'Microsoft 365 admin per dispositivi mobili
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,21 +22,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Ottieni l'app Di amministrazione di Microsoft 365 e scopri come gestire l'organizzazione online dal telefono o dal tablet.
-ms.openlocfilehash: 20a44501db43b8cba7f31bcfded039b00f3ab341
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: Ottieni l Microsoft 365'app Admin e scopri come gestire l'organizzazione online dal telefono o dal tablet.
+ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023942"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244021"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'app per dispositivi mobili per amministratori di Microsoft 365
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'Microsoft 365 per dispositivi mobili di amministrazione
 
-Sei un amministratore che di solito è in viaggio? Anche in caso contrario, potrebbe essere necessario gestire Microsoft 365 dal telefono o dal tablet. Scopri l'app di amministrazione gratuita di [Microsoft 365,](https://go.microsoft.com/fwlink/?LinkID=627216)la soluzione perfetta per l'interfaccia di amministrazione di Microsoft 365 basata sul Web. Puoi scaricare l'app [dall'Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)e da Google Play [Store.](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)
+Sei un amministratore che di solito è in viaggio? Anche in caso contrario, a volte potrebbe essere necessario gestire le Microsoft 365 dal telefono o dal tablet. Scopri [l'app Microsoft 365 admin](https://go.microsoft.com/fwlink/?LinkID=627216)gratuita, il perfetto complementare per l'interfaccia di amministrazione basata sul Web Microsoft 365. Puoi scaricare l'app [dall'Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)e da Google Play [Store.](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot: Admin mobile app's home page, displaying search, Message Center, health, and quick links":::
 
-L'app amministratore ha molte funzionalità che ti consentiranno di gestire Microsoft 365 dal tuo dispositivo mobile o tablet, quando non puoi accedere a un computer. Ecco un elenco di alcune delle attività che puoi eseguire dall'app:
+L'app amministratore ha molte funzionalità che ti permetteranno di gestire i Microsoft 365 dal tuo dispositivo mobile o tablet, quando non puoi accedere a un computer. Ecco un elenco di alcune delle attività che puoi eseguire dall'app:
 
 - **Gestire utenti e dispositivi** Aggiungere o modificare un utente, reimpostare la password di un utente, assegnare un ruolo, bloccare l'utente, eliminare l'utente, gestire alias, assegnare licenze, cancellare i dati del dispositivo e altro ancora.
 - **Gestire i gruppi** Aggiungere un gruppo, aggiungere o rimuovere utenti dai gruppi.
@@ -46,7 +46,7 @@ L'app amministratore ha molte funzionalità che ti consentiranno di gestire Micr
 - **Integrità dei servizi** Monitorare l'integrità di tutti i servizi visualizzando lo stato corrente del servizio e i dettagli sulle interruzioni e le interruzioni del servizio.
 - **Notifiche** Tieniti aggiornato su tutte le informazioni importanti e gli aggiornamenti relativi ai post del centro messaggi, all'integrità del servizio e alla fatturazione tramite notifiche push. È anche possibile personalizzare ciò di cui si desidera ricevere una notifica.
 
-Se si è un amministratore e si è responsabili di più organizzazioni di Microsoft 365, è possibile accedere a più organizzazioni e passare rapidamente da una all'altra. L'app supporta il tema scuro ed è disponibile in 39 lingue.
+Se sei un amministratore e sei responsabile di più organizzazioni Microsoft 365, puoi accedere a più organizzazioni e passare rapidamente da una all'altra. L'app supporta il tema scuro ed è disponibile in 39 lingue.
   
 > [!IMPORTANT]
 > In caso di problemi durante l'uso dell'app Admin per dispositivi mobili su iOS o Android, [inviaci](mailto:feedback365@microsoft.com) un'e-mail all'indirizzo feedback365@microsoft.com per contattarci.
@@ -67,7 +67,7 @@ Di seguito sono riportate le risposte alle domande frequenti.
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>Che cosa serve per usare l'app?
 
-Per usare l'app è necessario disporre delle autorizzazioni di amministratore e di una sottoscrizione valida per uno dei seguenti abbonamenti a Microsoft 365:
+Per usare l'app devi disporre delle autorizzazioni di amministratore e di una sottoscrizione valida per una delle seguenti Microsoft 365 seguenti:
 
 - Microsoft 365 Apps for Enterprise
 - Microsoft 365 Apps for Business
@@ -76,12 +76,12 @@ Per usare l'app è necessario disporre delle autorizzazioni di amministratore e 
 - Microsoft 365 Business Basic
 - Microsoft 365 E3/E5
 - Office 365: E1, E3/E5
-- Piano di Exchange Online
-- Piano onedrive for business
+- Exchange Online piano
+- OneDrive per le aziende
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Posso usare l'app con l'abbonamento a Microsoft 365 Family?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Posso usare l'app con l'Microsoft 365 Family abbonamento?
 
-No, l'app non funziona con gli abbonamenti a Microsoft 365 Family o Microsoft 365 Personal.
+No, l'app non funziona con Microsoft 365 Family o Microsoft 365 Personal sottoscrizioni.
 
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>L'app funziona se nell'organizzazione è abilitata la sincronizzazione della directory?
 
@@ -89,7 +89,7 @@ Sì, ma con funzionalità ridotte. Sarà possibile accedere e visualizzare le in
   
 ### <a name="what-languages-are-supported-by-the-app"></a>Quali lingue sono supportate dall'app?
 
-L'app supporta tutte le 39 lingue supportate dall'interfaccia di amministrazione di Microsoft 365 basata sul Web. Per modificare la lingua, dal menu di spostamento a sinistra nell'interfaccia di amministrazione passare a Impostazioni Lingua o selezionare l'icona Lingua nella sezione Collegamenti rapidi della home page dell'app  >   per dispositivi mobili dell'amministratore.  
+L'app supporta tutte le 39 lingue supportate dall'interfaccia Microsoft 365 web. Per modificare la lingua, dal menu di spostamento **sinistro** nell'interfaccia di amministrazione passare Impostazioni Lingua o selezionare l'icona Lingua nella sezione Collegamenti rapidi della home page dell'app per dispositivi mobili di  >   amministrazione.  
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>Come è possibile condividere gli eventi imprevisti relativi ai servizi e i messaggi con il resto dell'organizzazione?
 
@@ -105,17 +105,17 @@ Provare alcune procedure comuni per la risoluzione dei problemi delle app per di
 
 1. Chiudere e riaprire l'app.
 1. Disinstallare e reinstallare l'app. Assicurati di essere sulla versione più recente dell'app.
-1. Se nel dispositivo è installata l'app Microsoft Authenticator o del portale aziendale, provare a reinstallarla o ad aggiornarla alla versione più recente.
+1. Se hai installato Microsoft Authenticator o del portale aziendale nel dispositivo, prova a reinstallarla o ad aggiornarla alla versione più recente.
 1. Se non funziona, puoi inviarci un'e-mail all'indirizzo feedback365@microsoft.com per contattarci.
 
 ### <a name="how-do-i-manage-notifications-in-the-app"></a>Come si gestiscono le notifiche nell'app?
 
-Dal menu di spostamento a sinistra vai a **Impostazioni**  >  **Notifiche.** Puoi gestire l'integrità del servizio, il centro messaggi e le notifiche di fatturazione qui.
+Dal menu di spostamento a sinistra passare a **Impostazioni**  >  **Notifiche**. Puoi gestire l'integrità del servizio, il centro messaggi e le notifiche di fatturazione qui.
 
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>Cosa si può fare se non è presente alcuna risposta alla propria domanda?
 
 Invia [feedback365@microsoft.com](mailto:feedback365@microsoft.com) un messaggio di posta elettronica per segnalare un problema con l'app. Oppure puoi fornire commenti e suggerimenti nella parte inferiore di questo articolo.
   
-## <a name="related-content"></a>Contenuto correlato 
+## <a name="related-content"></a>Contenuti correlati 
 
-Video di formazione su [Microsoft 365 per le](../../business-video/index.yml) aziende (collegamenti)
+[video Microsoft 365 formazione su Microsoft 365](../../business-video/index.yml) per le aziende (pagina dei collegamenti)
