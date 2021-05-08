@@ -20,67 +20,25 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
-description: Per informazioni su quali abbonamenti l'organizzazione ha a che fare, accedere alla pagina I tuoi prodotti.
-ms.openlocfilehash: d1325a480e92ee0ed61a15b9e9b364bb339b32ce
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Informazioni su come verificare le sottoscrizioni dell'organizzazione andando alla pagina I tuoi prodotti.
+ms.openlocfilehash: 38098eb01a9a1e7fa2ee46acf20cc03ed8f31f93
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926151"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243997"
 ---
-# <a name="what-subscription-do-i-have"></a><span data-ttu-id="362bc-103">Qual è l'abbonamento corrente?</span><span class="sxs-lookup"><span data-stu-id="362bc-103">What subscription do I have?</span></span>
+# <a name="what-subscription-do-i-have"></a><span data-ttu-id="f1a04-103">Qual è l'abbonamento corrente?</span><span class="sxs-lookup"><span data-stu-id="f1a04-103">What subscription do I have?</span></span>
 
-<span data-ttu-id="362bc-104">Gli amministratori possono verificare gli abbonamenti dell'organizzazione nell'interfaccia di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="362bc-104">If you're an admin, you can verify which subscriptions your organization has by going to the admin center.</span></span>
+<span data-ttu-id="f1a04-104">Se si è un amministratore, è possibile verificare le sottoscrizioni dell'organizzazione andando all'interfaccia di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="f1a04-104">If you're an admin, you can verify which subscriptions your organization has by going to the admin center.</span></span>
   
- <span data-ttu-id="362bc-105">**Se non si è un amministratore**</span><span class="sxs-lookup"><span data-stu-id="362bc-105">**Not an admin?**</span></span> <span data-ttu-id="362bc-106">Vedere qual è il prodotto o la licenza di [Microsoft 365 per](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) le aziende?</span><span class="sxs-lookup"><span data-stu-id="362bc-106">See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)</span></span>
+ <span data-ttu-id="f1a04-105">**Se non si è un amministratore**</span><span class="sxs-lookup"><span data-stu-id="f1a04-105">**Not an admin?**</span></span> <span data-ttu-id="f1a04-106">Vedere Quali Microsoft 365 prodotto o licenza per le [aziende sono in uso?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)</span><span class="sxs-lookup"><span data-stu-id="f1a04-106">See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)</span></span>
 
-::: moniker range="o365-worldwide"
+1. <span data-ttu-id="f1a04-107">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.</span><span class="sxs-lookup"><span data-stu-id="f1a04-107">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+2. <span data-ttu-id="f1a04-108">Nella scheda **Prodotti** vengono visualizzati tutti gli abbonamenti.</span><span class="sxs-lookup"><span data-stu-id="f1a04-108">On the **Products** tab, you see all your subscriptions.</span></span> <span data-ttu-id="f1a04-109">Ogni riga di sottoscrizione include informazioni sulle licenze, sullo stato della sottoscrizione e sulla fatturazione.</span><span class="sxs-lookup"><span data-stu-id="f1a04-109">Each subscription line includes information about licenses, subscription status, and billing.</span></span>
+3. <span data-ttu-id="f1a04-110">Se si desidera modificare le colonne visualizzate nell'elenco, selezionare **Scegli colonne**.</span><span class="sxs-lookup"><span data-stu-id="f1a04-110">If you want to change the columns that appear in the list, select **Choose columns**.</span></span> <span data-ttu-id="f1a04-111">Modificare la selezione delle colonne, quindi selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="f1a04-111">Change the selection of columns, then select **Save**.</span></span>
+4. <span data-ttu-id="f1a04-112">Per visualizzare altri dettagli per una singola sottoscrizione, selezionare tale sottoscrizione.</span><span class="sxs-lookup"><span data-stu-id="f1a04-112">To see more details for a single subscription, select that subscription.</span></span>
 
-1. <span data-ttu-id="362bc-107">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.</span><span class="sxs-lookup"><span data-stu-id="362bc-107">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
-2. <span data-ttu-id="362bc-108">Nella scheda **Prodotti** sono visualizzati tutti gli abbonamenti.</span><span class="sxs-lookup"><span data-stu-id="362bc-108">On the **Products** tab, you see all your subscriptions.</span></span> <span data-ttu-id="362bc-109">Ogni riga di sottoscrizione include informazioni sulle licenze, lo stato dell'abbonamento e la fatturazione.</span><span class="sxs-lookup"><span data-stu-id="362bc-109">Each subscription line includes information about licenses, subscription status, and billing.</span></span>
-3. <span data-ttu-id="362bc-110">Se si desidera modificare le colonne visualizzate nell'elenco, selezionare **Scegli colonne.**</span><span class="sxs-lookup"><span data-stu-id="362bc-110">If you want to change the columns that appear in the list, select **Choose columns**.</span></span> <span data-ttu-id="362bc-111">Modificare la selezione delle colonne, quindi selezionare **Salva.**</span><span class="sxs-lookup"><span data-stu-id="362bc-111">Change the selection of columns, then select **Save**.</span></span>
-4. <span data-ttu-id="362bc-112">Per visualizzare altri dettagli per una singola sottoscrizione, selezionare tale sottoscrizione.</span><span class="sxs-lookup"><span data-stu-id="362bc-112">To see more details for a single subscription, select that subscription.</span></span>
-
-::: moniker-end
+## <a name="related-content"></a><span data-ttu-id="f1a04-113">Contenuti correlati</span><span class="sxs-lookup"><span data-stu-id="f1a04-113">Related content</span></span>
   
-::: moniker range="o365-germany"
-
-1. <span data-ttu-id="362bc-113">Nell'interfaccia di amministrazione passare alla pagina **Sottoscrizioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">fatturazione.</a>  </span><span class="sxs-lookup"><span data-stu-id="362bc-113">In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
-
-2. <span data-ttu-id="362bc-114">Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato.</span><span class="sxs-lookup"><span data-stu-id="362bc-114">If you have only one subscription, it will be displayed on the **Subscriptions** page, along with the subscription name, information about the subscription, and its status.</span></span> <span data-ttu-id="362bc-115">Nella schermata seguente, è possibile vedere che ho un abbonamento a Microsoft 365 Apps for business.</span><span class="sxs-lookup"><span data-stu-id="362bc-115">In the following screenshot, you can see that I have an Microsoft 365 Apps for business subscription.</span></span>
-
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
-  
-3. <span data-ttu-id="362bc-p105">Se si hanno più abbonamenti, accanto alle informazioni dettagliate sull'abbonamento verrà visualizzata una colonna con l'elenco degli abbonamenti acquistati e degli eventuali abbonamenti di valutazione. Per impostazione predefinita, l'abbonamento all'inizio dell'elenco è selezionato automaticamente e sono visualizzate le informazioni dettagliate sull'abbonamento.</span><span class="sxs-lookup"><span data-stu-id="362bc-p105">If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.</span></span>
-
-    <span data-ttu-id="362bc-119">Se si hanno più abbonamenti, scegliere quello per cui si desidera visualizzare informazioni dettagliate.</span><span class="sxs-lookup"><span data-stu-id="362bc-119">If you have multiple subscriptions, choose the one for which you want to see detailed information.</span></span> <span data-ttu-id="362bc-120">La visualizzazione verrà aggiornata con le informazioni su quell'abbonamento.</span><span class="sxs-lookup"><span data-stu-id="362bc-120">The subscription card will update with information about that subscription.</span></span>
-
-    ![Pagina Sottoscrizioni dell'interfaccia di amministrazione che mostra un elenco di più sottoscrizioni raggruppate in base al relativo stato.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
-  
-    > [!NOTE]
-    > <span data-ttu-id="362bc-122">Se sono presenti abbonamenti scaduti o disabilitati, saranno elencati in base allo stato corrente.</span><span class="sxs-lookup"><span data-stu-id="362bc-122">If you have subscriptions that have expired or have been disabled, they'll be listed based on their current state.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <span data-ttu-id="362bc-123">Nell'interfaccia di amministrazione passare alla pagina **Sottoscrizioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">fatturazione.</a>  </span><span class="sxs-lookup"><span data-stu-id="362bc-123">In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
-
-2. <span data-ttu-id="362bc-124">Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato.</span><span class="sxs-lookup"><span data-stu-id="362bc-124">If you have only one subscription, it will be displayed on the **Subscriptions** page, along with the subscription name, information about the subscription, and its status.</span></span> <span data-ttu-id="362bc-125">Nella schermata seguente, è possibile vedere che ho un abbonamento a Microsoft 365 Apps for business.</span><span class="sxs-lookup"><span data-stu-id="362bc-125">In the following screenshot, you can see that I have an Microsoft 365 Apps for business subscription.</span></span>
-
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
-  
-3. <span data-ttu-id="362bc-p108">Se si hanno più abbonamenti, accanto alle informazioni dettagliate sull'abbonamento verrà visualizzata una colonna con l'elenco degli abbonamenti acquistati e degli eventuali abbonamenti di valutazione. Per impostazione predefinita, l'abbonamento all'inizio dell'elenco è selezionato automaticamente e sono visualizzate le informazioni dettagliate sull'abbonamento.</span><span class="sxs-lookup"><span data-stu-id="362bc-p108">If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.</span></span>
-
-    <span data-ttu-id="362bc-129">Se si hanno più abbonamenti, scegliere quello per cui si desidera visualizzare informazioni dettagliate.</span><span class="sxs-lookup"><span data-stu-id="362bc-129">If you have multiple subscriptions, choose the one for which you want to see detailed information.</span></span> <span data-ttu-id="362bc-130">La visualizzazione verrà aggiornata con le informazioni su quell'abbonamento.</span><span class="sxs-lookup"><span data-stu-id="362bc-130">The subscription card will update with information about that subscription.</span></span>
-
-    ![Pagina Sottoscrizioni dell'interfaccia di amministrazione che mostra un elenco di più sottoscrizioni raggruppate in base al relativo stato.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
-  
-    > [!NOTE]
-    > <span data-ttu-id="362bc-132">Se sono presenti abbonamenti scaduti o disabilitati, saranno elencati in base allo stato corrente.</span><span class="sxs-lookup"><span data-stu-id="362bc-132">If you have subscriptions that have expired or have been disabled, they'll be listed based on their current state.</span></span>
-
-::: moniker-end
-
-## <a name="related-articles"></a><span data-ttu-id="362bc-133">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="362bc-133">Related articles</span></span>
-  
-[<span data-ttu-id="362bc-134">Abbonamenti e fatturazione</span><span class="sxs-lookup"><span data-stu-id="362bc-134">Subscriptions and billing</span></span>](../../commerce/index.yml)
+<span data-ttu-id="f1a04-114">[Sottoscrizioni e fatturazione](../../commerce/index.yml) (collegamenti)</span><span class="sxs-lookup"><span data-stu-id="f1a04-114">[Subscriptions and billing](../../commerce/index.yml) (links)</span></span>
