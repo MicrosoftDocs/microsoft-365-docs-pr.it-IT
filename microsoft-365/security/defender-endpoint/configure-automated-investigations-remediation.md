@@ -9,8 +9,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,19 +18,19 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 31a1c79440a8c1edc2bc8e2f2a163ded2a92fd64
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 23d6c8c87a6cbcc7b8060440ba2c0cae6182767d
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165766"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274545"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurare le funzionalità di analisi e correzione automatizzate in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -48,7 +48,7 @@ Per configurare l'analisi e la correzione automatizzate,
 3. Nella sezione **Generale** selezionare **Funzionalità avanzate**.
 4. Attivare sia **Analisi automatizzata che** Risolvi **automaticamente gli avvisi**.
 
-## <a name="set-up-device-groups"></a>Configurare i gruppi di dispositivi
+## <a name="set-up-device-groups"></a>Configurare gruppi di dispositivi
 
 1. In Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ), nella pagina **Impostazioni,** in **Autorizzazioni,** selezionare **Gruppi di dispositivi.**
 2. Seleziona **+ Aggiungi gruppo di dispositivi**.
@@ -66,4 +66,4 @@ Per configurare l'analisi e la correzione automatizzate,
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Risolvere i falsi positivi/negativi in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint](defender-endpoint-false-positives-negatives.md)

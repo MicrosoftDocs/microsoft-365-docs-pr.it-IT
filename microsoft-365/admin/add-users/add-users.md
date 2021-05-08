@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Informazioni su come aggiungere utenti e assegnare licenze a Microsoft 365 contemporaneamente.
 ms.date: 07/01/2020
-ms.openlocfilehash: 6a1361d9cfebd2b305a71248fcbb461d0a68a052
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 3efa32d21a21ed12041f5731296c1b033374712f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107087"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274389"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aggiungere utenti e assegnare licenze contemporaneamente
 
@@ -40,7 +40,24 @@ Se viene visualizzata questa pagina nell'interfaccia di amministrazione, è atti
 
 :::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: visualizzazione interfaccia di amministrazione semplificata":::
 
+::: moniker range="o365-worldwide"
+
 1. Passare all'interfaccia di amministrazione all'indirizzo <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
 2. Selezionare **Crea un account per un altro utente**.
 3. Nella pagina **Aggiungi un account utente**, inserire il nome e cognome, il nome visualizzato e il nome utente che sarà usato per accedere.
 4. Aggiungere l'indirizzo di posta elettronica dell'utente nella casella di testo **Fino a 5 indirizzi di posta elettronica...**. Ciò assicura che il nuovo utente otterrà le informazioni necessarie per accedere ai servizi Microsoft 365.
@@ -55,22 +72,15 @@ Se viene visualizzata questa pagina nell'interfaccia di amministrazione, è atti
 
 ## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>Aggiungere un utente alla volta nella visualizzazione dashboard
 
- ::: moniker range="o365-worldwide"
-
 :::image type="content" source="../../media/classic-admin-center.png" alt-text="Screenshot: visualizzazione dashboard interfaccia di amministrazione":::
 
-1. Passare all'interfaccia di amministrazione all'indirizzo <https://admin.microsoft.com>.
-2. Andare a **Utenti** > **Utenti attivi** e selezionare **Aggiungi un utente**.
-3. Nel riquadro **Configura le impostazioni di base**, inserire le informazioni di base dell'utente e quindi selezionare **Avanti**.
-    - **Nome** Immettere il nome e il cognome, il nome visualizzato e il nome utente.
-    - **Dominio** Scegliere il dominio per l'account dell'utente. Se ad esempio il nome utente è Pio e il suo dominio è contoso.com, questo utente eseguirà l'accesso digitando pio@contoso.com.
-    - **Impostazioni password** Scegliere se usare la password creata automaticamente o creare una password complessa per l'utente.
-    - L'utente dovrà cambiare la password dopo 90 giorni. Oppure si può selezionare **Chiedi all'utente di cambiare la password al primo accesso**.
-    - Scegliere se si vuole  inviare la password tramite posta elettronica quando l'utente viene aggiunto.
-4. Nel riquadro **Assegna licenze di prodotto**, selezionare la posizione e la licenza appropriata per l'utente. Se non ci sono licenze disponibili, è sempre possibile aggiungere un utente e acquistare licenze aggiuntive. Espandere **App** e selezionare o deselezionare le app per cui l'utente ha una licenza. Selezionare **Avanti**.
-5. Nel riquadro **Impostazioni facoltative** espandere **Ruoli** per rendere l'utente amministratore. Espandere **informazioni profilo** per aggiungere altre informazioni sull'utente.
-6. Selezionare **Avanti**, esaminare le impostazioni del nuovo utente, apportare le modifiche desiderate, quindi selezionare **Completa l'aggiunta**, quindi **Chiudi**.
+::: moniker range="o365-worldwide"
 
+1. Passare all'interfaccia di amministrazione all'indirizzo <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
 
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 

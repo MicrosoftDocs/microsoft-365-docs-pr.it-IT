@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Ulteriori informazioni su Office 365 gestito da 21Vianet progettato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 92b69cc77f5c48af63651f2fd37761981ca45ad5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1ee7ba7be2e350195350a5c00e92ed10924657ac
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914343"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274365"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 gestito da 21Vianet
 
@@ -95,33 +95,33 @@ Per informazioni su come iniziare a usare i servizi generali di Office 365, vede
 |:-----|:-----|
 |Blackberry Business Cloud Services (BBCS)  <br/> |Non disponibile, ma è possibile utilizzare dispositivi Exchange ActiveSync o un'offerta di Research in Motion (RIM, la soluzione di posta elettronica wireless BlackBerry) per eseguire Blackberry Enterprise Server (BES).  <br/> |
 |Information Rights Management  <br/> |Prossimamente.  <br/> |
-|Informazioni sulla disponibilità  <br/> |Sono disponibili informazioni sulla disponibilità tra le cassette postali locali e le cassette postali di Exchange Online.  <br/> |
-|Condivisione del calendario  <br/> |È disponibile la condivisione del calendario tra le cassette postali locali e le cassette postali di Exchange Online.  <br/> |
+|Informazioni sulla disponibilità  <br/> |Sono disponibili informazioni sulla disponibilità tra le cassette postali locali e Exchange Online locale.  <br/> |
+|Condivisione del calendario  <br/> |La condivisione del calendario tra le cassette postali locali e Exchange Online è disponibile.  <br/> |
 |Condivisione dei contatti  <br/> |Prossimamente.  <br/> |
 |Monitoraggio messaggi  <br/> |Prossimamente.  <br/> |
 |App  <br/> |Prossimamente.  <br/> |
 |Funzionalità Posizioni  <br/> |Questa funzionalità mostra le mappe degli indirizzi nella posta elettronica; poiché potrebbero consentire dati al di fuori del proprio paese, non sono disponibili.  <br/> |
-|Account connessi  <br/> |La connessione ad altri account, ad esempio Hotmail (Outlook.com) sarà presto disponibile.  <br/> |
+|Account connessi  <br/> |La connessione ad altri account, ad esempio Hotmail (Outlook.com), sarà presto disponibile.  <br/> |
    
 ## <a name="exchange"></a>Exchange
 
- Novità dell'aggiornamento cumulativo 5 (CU5) di Exchange 2013, sono ora supportate le distribuzioni ibride complete tra le organizzazioni exchange 2013 locali e i servizi di Office 365. Sfruttando i nuovi miglioramenti apportati alla procedura guidata di configurazione ibrida, Exchange 2013 CU5 supporta le seguenti funzionalità ibride tra l'organizzazione locale e l'organizzazione di Exchange Online:  
+ Novità di Exchange 2013 Cumulative Update 5 (CU5), sono ora supportate le distribuzioni ibride complete tra organizzazioni Exchange 2013 locali e servizi Office 365. Sfruttando i nuovi miglioramenti apportati alla procedura guidata di configurazione ibrida, Exchange 2013 CU5 supporta le seguenti funzionalità ibride tra le organizzazioni locali e Exchange Online:  
 
 - Instradamento sicuro della posta tra organizzazioni locali e organizzazioni di Exchange Online. 
 - Routing della posta con uno spazio dei nomi di dominio condiviso. Ad esempio, lo stesso dominio SMTP @contoso.com viene utilizzato sia dalle organizzazioni di Exchange Online che da quella locale. 
 - Un elenco indirizzi globale unificato, denominato anche "rubrica condivisa".  
 - Condivisione delle informazioni sulla disponibilità e sul calendario tra organizzazioni locali e organizzazioni di Exchange Online.  
 - Controllo centralizzato del flusso di posta in ingresso e in uscita. È possibile configurare tutti i messaggi di Exchange in ingresso e in uscita in modo che siano instradati attraverso l'organizzazione locale di Exchange. 
-- Un singolo URL di Office Outlook Web App sia per l'organizzazione locale che per l'organizzazione di Exchange Online.  
+- Un singolo URL Office Outlook Web App per le organizzazioni locali e Exchange Online locali.  
 - Possibilità di spostare le cassette postali esistenti dall'organizzazione locale all'organizzazione di Exchange Online. Se necessario, anche le cassette postali di Exchange Online possono essere nuovamente spostate nell'organizzazione locale.  
 - Gestione centralizzata delle cassette postali tramite l'interfaccia locale di amministrazione di Exchange.  
-- Suggerimenti messaggio, supporto delle foto HD per i contatti di Outlook e ricerca in più cassette postali tra organizzazioni locali ed Exchange Online. 
+- Suggerimenti messaggio, supporto delle foto HD per Outlook contatti e ricerca in più cassette postali tra organizzazioni locali e Exchange Online organizzazioni. 
 - Archiviazione dei messaggi basata su cloud per le cassette postali di Exchange locali. 
 
-Per le organizzazioni che eseguono versioni precedenti o miste di Exchange Server, alcune funzionalità ibride non sono completamente supportate per i tenant di Office 365 ospitati da 21Vianet. Utilizzare la tabella seguente per ulteriori informazioni sul supporto delle funzionalità ibride in diversi scenari di distribuzione di Exchange:  <br/> 
+Per le organizzazioni che eseguono versioni precedenti o miste di Exchange Server, alcune funzionalità ibride non sono completamente supportate per i tenant Office 365 ospitati da 21Vianet. Utilizzare la tabella seguente per ulteriori informazioni sul supporto delle funzionalità ibride in Exchange diversi scenari di distribuzione:  <br/> 
 
 
-|**Versione locale di Exchange**|**Versione server ibrido di Exchange**|**Configurazione ibrida guidata supportata?**|**Funzionalità ibride supportate**|
+|**Versione locale Exchange locale**|**Exchange Versione server ibrido**|**Configurazione ibrida guidata supportata?**|**Funzionalità ibride supportate**|
 |:-----|:-----|:-----|:-----|
 | 2016  <br/> | N/D  <br/> | Sì  <br/> | Tutti  <br/> |
 | CU5 2013  <br/> | N/D  <br/> | Sì  <br/> | Tutti  <br/> |
@@ -137,20 +137,20 @@ Per le organizzazioni che eseguono versioni precedenti o miste di Exchange Serve
 
    
 > [!IMPORTANT]
->  Delegare l'accesso al calendario, quando un utente o un set di utenti viene fornito l'accesso al calendario di un altro utente, non è supportato nelle distribuzioni ibride con tenant di Office 365 ospitati da 21Vianet. 
+>  La delega dell'accesso al calendario, quando a un utente o a un set di utenti viene fornito l'accesso al calendario di un altro utente, non è supportata nelle distribuzioni ibride con tenant di Office 365 ospitati da 21Vianet. 
   
- Inoltre, alcuni criteri di messaggistica e funzionalità di conformità di Exchange non sono completamente supportati nelle distribuzioni ibride con tenant di Office 365 ospitati da 21Vianet. Tali caratteristiche includono:
+ Inoltre, alcune funzionalità Exchange di messaggistica unificata e di conformità non sono completamente supportate nelle distribuzioni ibride con tenant Office 365 ospitati da 21Vianet. Tali caratteristiche includono:
 
 - [Gestione record di messaggistica](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) 
 - [eDiscovery in locale](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 
 - [Conservazione in locale](/exchange/security-and-compliance/in-place-and-litigation-holds) 
 - [Archiviazione sul posto](/exchange/in-place-archiving-in-exchange-2013-exchange-2013-help)
 - [Controllo delle cassette postali](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)
-- Accesso agli archivi online con [Outlook Web App (OWA)](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-on-the-web) 
+- Accesso agli archivi online [con Outlook Web App (OWA)](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-on-the-web) 
 
-Utilizzare la tabella seguente per ulteriori informazioni sul supporto delle funzionalità in diversi scenari di distribuzione di Exchange: 
+Utilizzare la tabella seguente per ulteriori informazioni sul supporto delle funzionalità in diversi scenari di Exchange distribuzione: 
 
-|**Versione locale di Exchange**|**MrM (split archive)**|**OWA (split archive)**|**eDiscovery sul posto**|**Controllo delle cassette postali**|**Archiviazione/archiviazione sul posto**|
+|**Versione locale Exchange locale**|**MrM (split archive)**|**OWA (split archive)**|**eDiscovery sul posto**|**Controllo delle cassette postali**|**Archiviazione/archiviazione sul posto**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | Tutti i 2013 CU5  <br/> | Supportato <br/>  | Non supportato <br/>  | Supportato <br/>  | Supportato  <br/> | Supportato <br/> |
 | Tutti i 2010 SP3 <br/>  | Non supportato <br/>  | Non supportato <br/>  | Supportato<sup>1</sup> <br/> | Supportato  <br/> | Supportato <br/>  |
@@ -175,7 +175,7 @@ Condivisione dei dati di contatto di Exchange sui dispositivi mobili Apple su Ap
 |Exchange Hosted Email Encryption  |Non disponibile.  |
 |Crittografia dei messaggi di Office 365  |Prossimamente.  |
    
-## <a name="office"></a>Ufficio
+## <a name="office"></a>Office
 
 |||
 |:-----|:-----|
@@ -220,16 +220,24 @@ Condivisione dei dati di contatto di Exchange sui dispositivi mobili Apple su Ap
 |Partner di diffusione  <br/> |Non disponibile.  <br/> |
 |Funzionalità vocali, ad esempio la segreteria telefonica, la possibilità di effettuare e ricevere chiamate da numeri PSTN, trasferimento di chiamate, inoltro di chiamata  <br/> |Non disponibile. Queste funzionalità richiedono partner di diffusione.  <br/> |
 |Archiviazione o possibilità di contrassegnare un utente e archiviare i messaggi di posta elettronica e i messaggi immediati dell'utente in Exchange  <br/> |Non disponibile.  <br/> |
-|Supporto del browser client Web Skype for Business (LWA) per Firefox 29  <br/> |Non disponibile, ma è possibile utilizzare una versione precedente di Firefox.  <br/> |
-|Unified Contact Store (UCS)  <br/> |La possibilità per gli utenti di mantenere tutte le informazioni di contatto di Skype for Business in Microsoft Exchange Server 2013 è disabilitata.  <br/> |
+|Skype for Business Supporto del browser client Web (LWA) per Firefox 29  <br/> |Non disponibile, ma è possibile utilizzare una versione precedente di Firefox.  <br/> |
+|Unified Contact Store (UCS)  <br/> |La possibilità per gli utenti di mantenere tutte le informazioni Skype for Business contatto in Microsoft Exchange Server 2013 è disabilitata.  <br/> |
 | Dispositivi per conferenze:  <br/>  Polycom CX5100 Unified Conference Station  <br/>  Logitech ConferenceCam CC3000e  <br/>  Polycom CX7000  <br/>  Polycom CX3000  <br/>  Logitech BCC950 ConferenceCam  <br/>  Polycom CX5000 HD  <br/> |Non disponibile.  <br/> |
    
 ## <a name="data-subject-requests-for-gdpr"></a>Richieste dell'soggetto dei dati per il GDPR
 
-Il GDPR concede ai singoli (o agli interessati) determinati diritti in relazione al trattamento dei propri dati personali, tra cui il diritto di correggere dati non accurati, cancellare o limitare il trattamento, ricevere i dati e soddisfare una richiesta di trasmissione dei dati a un altro controllore. Il ruolo di amministratore tenant per Office 365 gestito da 21Vianet può richiedere dati per conto di un soggetto dei dati nei modi seguenti:
+Il GDPR concede ai singoli (o agli interessati) determinati diritti in relazione al trattamento dei propri dati personali, tra cui il diritto di correggere dati non accurati, cancellare o limitare il trattamento, ricevere i dati e soddisfare una richiesta di trasmissione dei dati a un altro controllore. Il ruolo di amministratore tenant Office 365 gestito da 21Vianet può richiedere dati per conto di un soggetto di dati nei modi seguenti:
   
-- Usando l'interfaccia di amministrazione di Azure Active Directory, un amministratore tenant può eliminare definitivamente un soggetto di dati da Azure Active Directory e dai servizi correlati.
+- Usando l Azure Active Directory admin center, un amministratore tenant può eliminare definitivamente un soggetto di dati da Azure Active Directory e dai servizi correlati.
     
-- I log generati dal sistema per i servizi Microsoft gestiti da 21Vianet possono essere esportati dagli amministratori tenant tramite l'esportazione dei log di dati.
+- I log generati dal sistema servizi Microsoft gestiti da 21Vianet possono essere esportati dagli amministratori tenant utilizzando l'esportazione dei log di dati.
     
 Per informazioni dettagliate e istruzioni, vedere Richieste dell'oggetto dei dati [(DSR) per GDPR.](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Provare o acquistare un abbonamento Microsoft 365 per le aziende](../../commerce/try-or-buy-microsoft-365.md) (articolo)
+
+[Supporto di Azure Information Protection Office 365 gestito da 21Vianet](parity-between-azure-information-protection.md) (articolo)
+
+[Visualizzare la fattura o ottenere un Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (articolo)

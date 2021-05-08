@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f57d14427ef68280a065489e068955db9e5045a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18afd4aa160ec345839d23719d1b3fcce21654ec
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934802"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246357"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Risoluzione dei problemi in Microsoft Defender per Endpoint su Android
 
@@ -51,11 +51,11 @@ Errore imprevisto, riprovare in un secondo momento
 
 **Causa:**
 
-Nel dispositivo è installata una versione precedente dell'app "Microsoft Authenticator".
+Hai una versione precedente dell'app "Microsoft Authenticator" installata nel dispositivo.
 
 **Soluzione:**
 
-Installare la versione più recente e [di Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) da Google Play Store e riprovare
+Installare la versione più recente [e Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) da Google Play Store e riprovare
 
 ## <a name="sign-in-failed---invalid-license"></a>Accesso non riuscito - Licenza non valida
 
@@ -67,11 +67,15 @@ Installare la versione più recente e [di Microsoft Authenticator](https://play.
 
 **Causa:**
 
-Non si dispone di una licenza di Microsoft 365 assegnata o l'organizzazione non dispone di una licenza per l'abbonamento a Microsoft 365 Enterprise.
+Non è stata assegnata Microsoft 365 licenza oppure l'organizzazione non dispone di una licenza per Microsoft 365 Enterprise abbonamento.
 
 **Soluzione:**
 
 Contattare l'amministratore per assistenza.
+
+## <a name="report-unsafe-site"></a>Segnala sito non sicuro
+
+I siti Web di phishing rappresentano siti Web attendibili allo scopo di ottenere informazioni personali o finanziarie. Visitare la [pagina Fornire commenti e](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) suggerimenti sulla protezione di rete se si desidera segnalare un sito Web che potrebbe essere un sito di phishing.
 
 ## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a>Le pagine di phishing non vengono bloccate in alcuni dispositivi OEM
 

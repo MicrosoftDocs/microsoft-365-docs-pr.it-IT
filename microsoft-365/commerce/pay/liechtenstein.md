@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f4f9e5844264c6c002c07fa9cb3902b9a46f0d02
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: cba160af4bfae22dfe9a59a955e92439db139ffa
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543353"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273393"
 ---
 # <a name="payment-information-for-liechtenstein"></a>Informazioni di pagamento per Liechtenstein
 
 [Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagare solo in CHF e fare riferimento ai numeri di fattura per la rimessa di pagamento.
+Pagare solo in CHF e fare riferimento ai numeri di fattura sulla rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Bank:** Citibank, Londra  
+**Banca:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
 **IBAN:** GB44CITI18500812207648  
-**Numero di conto:** 12207648  
+**Numero account:** 12207648  
 **Nome account:** MICROSOFT  

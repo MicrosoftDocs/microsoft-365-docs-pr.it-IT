@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere l'organizzazione da phishing e altri attacchi che usano URL dannosi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644777"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274437"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -57,9 +57,9 @@ La protezione collegamenti sicuri è disponibile nei percorsi seguenti:
 
   Per ulteriori informazioni sulla protezione dei collegamenti sicuri in Teams, vedere la sezione Impostazioni collegamenti sicuri per [Microsoft Teams](#safe-links-settings-for-microsoft-teams) più avanti in questo articolo.
 
-- **App di Office 365:** la protezione dei collegamenti sicuri per le app di Office 365 è disponibile in accessi desktop, mobili e Web supportati. La **protezione** dei collegamenti sicuri per le app di Office 365 viene configurata nell'impostazione globale che non rientra nei **criteri** collegamenti sicuri. Per istruzioni, vedere [Configurare le impostazioni globali per le impostazioni dei collegamenti sicuri in Microsoft Defender per Office 365.](configure-global-settings-for-safe-links.md)
+- **App di Office 365:** la protezione dei collegamenti sicuri per le app di Office 365 è disponibile nelle app desktop, mobili e Web supportate. La **protezione** dei collegamenti sicuri per le app di Office 365 viene configurata nell'impostazione globale che non rientra nei **criteri** collegamenti sicuri. Per istruzioni, vedere [Configurare le impostazioni globali per le impostazioni dei collegamenti sicuri in Microsoft Defender per Office 365.](configure-global-settings-for-safe-links.md)
 
-  Tuttavia, la protezione dei collegamenti sicuri per  le app di Office 365 viene applicata solo agli utenti inclusi nei criteri collegamenti sicuri attivi. Se un utente non è incluso in un criterio collegamenti sicuri attivo, l'utente non ottiene la protezione collegamenti sicuri nelle app di Office 365 supportate.
+  La protezione dei collegamenti sicuri per le app di Office 365 viene applicata a tutti gli utenti dell'organizzazione con licenza per Defender per Office 365, indipendentemente dal fatto che gli utenti siano inclusi o meno nei criteri collegamenti sicuri attivi.
 
   Per ulteriori informazioni sulla protezione dei collegamenti sicuri nelle app di Office 365, vedere la sezione Impostazioni collegamenti sicuri per le app [di Office 365](#safe-links-settings-for-office-365-apps) più avanti in questo articolo.
 
@@ -78,6 +78,8 @@ In questo articolo sono incluse descrizioni dettagliate dei seguenti tipi di imp
 
 Nella tabella seguente vengono descritti gli scenari per i collegamenti sicuri nelle organizzazioni di Microsoft 365 e Office 365 che includono Defender per Office 365 (in altre parole, la mancanza di licenze non è mai un problema negli esempi).
 
+<br>
+
 ****
 
 |Scenario|Risultato|
@@ -87,6 +89,7 @@ Nella tabella seguente vengono descritti gli scenari per i collegamenti sicuri n
 |Nell'organizzazione di Pat, nessun amministratore ha creato criteri collegamenti sicuri, ma la protezione dei collegamenti sicuri per le app di Office 365 è attivata. Pat apre un documento di Word e fa clic su un URL nel file.|Pat non è protetto da collegamenti sicuri. <p> Anche se la protezione collegamenti sicuri per le app di Office 365 è attivata a livello globale, Pat non è incluso in alcun criterio collegamenti sicuri attivi, quindi la protezione non può essere applicata.|
 |Nell'organizzazione di Lee, è configurato nell'elenco Blocca gli URL seguenti nelle `https://tailspintoys.com` impostazioni globali per i collegamenti sicuri.  Esiste già un criterio collegamenti sicuri che include Lee. Lee riceve un messaggio di posta elettronica contenente l'URL `https://tailspintoys.com/aboutus/trythispage` . Lee fa clic sull'URL.|L'URL potrebbe essere bloccato automaticamente per Lee. dipende dalla voce dell'URL nell'elenco e dal client di posta elettronica utilizzato da Lee. Per ulteriori informazioni, vedere [la sezione "Bloccare gli URL seguenti"](#block-the-following-urls-list-for-safe-links) per i collegamenti sicuri più avanti in questo articolo.|
 |Jamie e Julia lavorano entrambi per contoso.com. Molto tempo fa, gli amministratori hanno configurato i criteri collegamenti sicuri che si applicano sia a Jaaire che a Julia. Jamie invia un messaggio di posta elettronica a Julia, senza sapere che il messaggio contiene un URL dannoso.|Julia è protetta da Collegamenti **sicuri se** il criterio Collegamenti sicuri che si applica a lei è configurato per essere applicato ai messaggi tra destinatari interni. Per ulteriori informazioni, vedere la sezione [Impostazioni collegamenti sicuri per i](#safe-links-settings-for-email-messages) messaggi di posta elettronica più avanti in questo articolo.|
+|
 
 ## <a name="safe-links-settings-for-email-messages"></a>Impostazioni collegamenti sicuri per i messaggi di posta elettronica
 
@@ -104,9 +107,7 @@ Le impostazioni dei criteri collegamenti sicuri applicabili ai messaggi di posta
   - Gli URL che non hanno una reputazione valida vengono detonati in modo asincrono in background.
 
 - **Applica l'analisi degli URL** in tempo reale per i collegamenti sospetti e i collegamenti che puntano ai file: consente l'analisi in tempo reale dei collegamenti, inclusi i collegamenti nei messaggi di posta elettronica che puntano a contenuto scaricabile. Il valore consigliato è abilitato.
-
   - **Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio:**
-
     - Abilitato: i messaggi che contengono URL vengono mantenuti fino al termine dell'analisi. I messaggi vengono recapitati solo dopo la conferma della sicurezza degli URL. Questo è il valore consigliato.
     - Disabilitato: se l'analisi degli URL non può essere completata, recapita comunque il messaggio.
 
@@ -125,7 +126,6 @@ Le impostazioni dei criteri collegamenti sicuri applicabili ai messaggi di posta
   Per ulteriori informazioni sui valori consigliati per le impostazioni dei criteri Standard e Strict per i criteri collegamenti sicuri, vedere [Safe Links policy settings.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - **Filtri destinatari:** è necessario specificare le condizioni e le eccezioni del destinatario che determinano a chi si applica il criterio. È possibile utilizzare queste proprietà per le condizioni e le eccezioni:
-
   - **Il destinatario è**
   - **Il dominio del destinatario è**
   - **Il destinatario è un membro di**
@@ -207,7 +207,7 @@ La protezione dei collegamenti sicuri per le app di Office 365 presenta i requis
 
 - Gli utenti hanno eseguito l'accesso utilizzando i propri account aziendali o dell'istituto di istruzione. Per ulteriori informazioni, vedere [Sign in to Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).
 
-La protezione dei collegamenti sicuri per le app di Office 365 viene configurata nelle impostazioni globali per Collegamenti sicuri, non nei criteri Collegamenti sicuri. Tuttavia, per applicare la protezione dei collegamenti sicuri per le app di Office 365, l'utente che apre il documento di Office e fa clic sul collegamento deve essere incluso in un criterio collegamenti sicuri attivo.
+La protezione dei collegamenti sicuri per le app di Office 365 viene configurata nelle impostazioni globali per Collegamenti sicuri, non nei criteri Collegamenti sicuri. La protezione viene applicata a tutti gli utenti dell'organizzazione con licenza per Defender per Office 365, indipendentemente dal fatto che gli utenti siano inclusi o meno nei criteri collegamenti sicuri attivi.
 
 Le impostazioni di Collegamenti sicuri seguenti sono disponibili per le app di Office 365:
 
@@ -256,26 +256,23 @@ Quando un utente in un criterio collegamenti sicuri attivo fa clic su un collega
 
 L'elenco degli URL viene configurato nelle impostazioni globali per i collegamenti sicuri. Per istruzioni, vedere [Configurare l'elenco "Blocca gli URL seguenti".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)
 
-> [!NOTE]
-> 
-> - Per un elenco veramente universale degli URL bloccati ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Limiti:
->   - Il numero massimo di voci è 500.
->   - La lunghezza massima di una voce è di 128 caratteri.
->   - Tutte le voci non possono superare i 10.000 caratteri.
-> 
-> - Non includere una barra ( `/` ) alla fine dell'URL. Ad esempio, utilizzare `https://www.contoso.com` , non `https://www.contoso.com/` .
-> 
-> - Un URL solo dominio (ad esempio `contoso.com` o `tailspintoys.com` ) blocterà qualsiasi URL che contiene il dominio.
-> 
-> - È possibile bloccare un sottodominio senza bloccare il dominio completo. Ad esempio, `toys.contoso.com*` blocca qualsiasi URL che contiene il sottodominio, ma non blocca gli URL che contengono il dominio completo `contoso.com` .
-> 
-> - È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url.
+**Note**:
+
+- Per un elenco veramente universale degli URL bloccati ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- Limiti per **l'elenco Blocca gli URL** seguenti:
+  - Il numero massimo di voci è 500.
+  - La lunghezza massima di una voce è di 128 caratteri.
+  - Tutte le voci non possono superare i 10.000 caratteri.
+- Non includere una barra ( `/` ) alla fine dell'URL. Ad esempio, utilizzare `https://www.contoso.com` , non `https://www.contoso.com/` .
+- Un URL solo dominio (ad esempio `contoso.com` o `tailspintoys.com` ) blocterà qualsiasi URL che contiene il dominio.
+- È possibile bloccare un sottodominio senza bloccare il dominio completo. Ad esempio, `toys.contoso.com*` blocca qualsiasi URL che contiene il sottodominio, ma non blocca gli URL che contengono il dominio completo `contoso.com` .
+- È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Sintassi delle voci per l'elenco "Blocca gli URL seguenti"
 
 Nella tabella seguente sono descritti alcuni esempi dei valori che è possibile immettere e dei relativi risultati:
+
+<br>
 
 ****
 
@@ -296,24 +293,24 @@ Ogni criterio Collegamenti sicuri contiene un elenco Non riscrivere gli **URL** 
 
 Per aggiungere voci all'elenco nei criteri collegamenti sicuri nuovi o esistenti, vedere [Create Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) o Modify Safe Links [policies.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
-> [!NOTE]
-> 
-> - I client seguenti non riconoscono gli elenchi **Non riscrivere** gli URL seguenti nei criteri Collegamenti sicuri. Agli utenti inclusi nei criteri può essere impedito di accedere agli URL in base ai risultati dell'analisi dei collegamenti sicuri in questi client:
-> 
->   - Microsoft Teams
->   - Office Web Apps
-> 
->   Per un elenco veramente universale degli URL consentiti ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Prendi in considerazione l'aggiunta di URL interni di uso comune all'elenco per migliorare l'esperienza utente. Ad esempio, se si dispone di servizi locali, ad esempio Skype for Business o SharePoint, è possibile aggiungere tali URL per escluderli dalla scansione.
-> 
-> - Se si dispone già di **Do not rewrite the following URL** entries in your Safe Links policies, assicurarsi di esaminare gli elenchi e aggiungere caratteri jolly in base alle esigenze. Ad esempio, l'elenco include una voce simile e `https://contoso.com/a` successivamente decidi di includere sottopercorso come `https://contoso.com/a/b` . Anziché aggiungere una nuova voce, aggiungere un carattere jolly alla voce esistente in modo che diventi `https://contoso.com/a/*` .
-> 
-> - È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url. I caratteri jolly includono in modo esplicito prefissi o sottodomini. Ad esempio, la voce non corrisponde a , perché consente agli utenti di visitare sottodomini e percorsi `contoso.com` `*.contoso.com/*` nel dominio `*.contoso.com/*` specificato.
+**Note**:
+
+- I client seguenti non riconoscono gli elenchi **Non riscrivere** gli URL seguenti nei criteri Collegamenti sicuri. Agli utenti inclusi nei criteri può essere impedito di accedere agli URL in base ai risultati dell'analisi dei collegamenti sicuri in questi client:
+  - Microsoft Teams
+  - Office Web Apps
+
+  Per un elenco veramente universale degli URL consentiti ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+
+- Prendi in considerazione l'aggiunta di URL interni di uso comune all'elenco per migliorare l'esperienza utente. Ad esempio, se si dispone di servizi locali, ad esempio Skype for Business o SharePoint, è possibile aggiungere tali URL per escluderli dalla scansione.
+- Se si dispone già di **Do not rewrite the following URL** entries in your Safe Links policies, assicurarsi di esaminare gli elenchi e aggiungere caratteri jolly in base alle esigenze. Ad esempio, l'elenco include una voce simile e `https://contoso.com/a` successivamente decidi di includere sottopercorso come `https://contoso.com/a/b` . Anziché aggiungere una nuova voce, aggiungere un carattere jolly alla voce esistente in modo che diventi `https://contoso.com/a/*` .
+- È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url. I caratteri jolly includono in modo esplicito prefissi o sottodomini. Ad esempio, la voce non corrisponde a , perché consente agli utenti di visitare sottodomini e percorsi `contoso.com` `*.contoso.com/*` nel dominio `*.contoso.com/*` specificato.
+- Se un URL utilizza il reindirizzamento automatico per HTTP a HTTPS (ad esempio, il reindirizzamento 302 per ), e si tenta di immettere sia le voci HTTP che HTTPS per lo stesso URL nell'elenco, è possibile notare che la seconda voce URL sostituisce la prima voce `http://www.contoso.com` `https://www.contoso.com` URL. Questo comportamento non si verifica se le versioni HTTP e HTTPS dell'URL sono completamente separate.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Sintassi delle voci per l'elenco "Non riscrivere gli URL seguenti"
 
 Nella tabella seguente sono descritti alcuni esempi dei valori che è possibile immettere e dei relativi risultati:
+
+<br>
 
 ****
 

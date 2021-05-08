@@ -1,5 +1,5 @@
 ---
-title: Aumentare la produttività dei lavoratori remoti con Microsoft 365
+title: Configurare l’infrastruttura per il lavoro remoto con Microsoft 365
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,17 +17,20 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: Assicurarsi di aver abilitato tutte le caratteristiche di Microsoft 365 per massimizzare la produttività dei lavoratori remoti e mantenere l'accesso sicuro ai server, ai dati e al cloud.
-ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+keywords: lavorare da casa, lavoro da casa, ibrido, lavoratore remoto, lavoro ibrido, dipendenti remoti, connettività ibrida, accesso remoto, lavoro remoto, lavorare a distanza, telelavorare, lavoro in movimento, lavorare in remoto, lavorare ovunque, ambienti di lavoro flessibili
+description: Esaminare i vari livelli dell'infrastruttura in modo che i lavoratori remoti possano accedere in modo sicuro alle risorse locali e di Microsoft 365.
+ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029123"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246321"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
+# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>Configurare l’infrastruttura per il lavoro remoto con Microsoft 365
 
-L'azienda potrebbe dover consentire ai lavoratori di avere accesso sicuro alle informazioni, agli strumenti e alle risorse locali e basate sul cloud dalle proprie case. Per molte organizzazioni, consentire al personale di lavorare fuori dall’ufficio è importante per:
+Per proteggere e ottimizzare la produttività e la collaborazione di un lavoratore remoto, è necessario configurare l'infrastruttura IT e cloud per consentire il lavoro remoto e per fornire l'accesso a informazioni, strumenti e risorse locali e basate sul cloud dell'organizzazione. Questa soluzione illustra i passaggi per la distribuzione dei livelli chiave dell'infrastruttura che consentono ai dipendenti di lavorare al meglio, ovunque si trovino.
+
+Per molte organizzazioni, consentire al personale di lavorare fuori dall’ufficio è importante per:
 
 - Risparmiare spazio fisico.
 - Assumere e trattenere dipendenti che non sono disposti al trasferimento.
@@ -125,8 +128,6 @@ Utilizzare la procedura seguente per proteggere e ottimizzare l'accesso ai serve
 5. [Distribuire le app e i servizi per la produttività dei lavoratori remoti](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Formare i lavoratori remoti e rispondere al feedback sull'utilizzo](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Passaggi per aumentare la produttività dei lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![La procedura per configurare l’infrastruttura per il lavoro remoto con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Per le informazioni più recenti da Microsoft sul supporto dei lavoratori remoti, vedere [Abilitazione del lavoro ibrido nel sito di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
-
-Per scoprire in che modo un'organizzazione multi-nazionale fittizia, ma rappresentativa, ha potenziato il proprio lavoro da remoto, vedere [Risposta al COVID-19 e infrastruttura per il lavoro da remoto e in sede di Contoso](contoso-remote-onsite-work.md).
+Per scoprire in che modo un'organizzazione multi-nazionale fittizia, ma rappresentativa, ha configurato la propria infrastruttura per il lavoro remoto, vedere [Risposta al COVID-19 e infrastruttura per il lavoro da remoto e in sede di Contoso](contoso-remote-onsite-work.md).

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860798"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246466"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Analizzare le entità nei dispositivi che usano la risposta in tempo reale
 
@@ -44,14 +44,14 @@ Con la risposta in tempo reale, gli analisti possono eseguire tutte le attività
 - Esegui comandi di base e avanzati per eseguire attività di indagine su un dispositivo.
 - Scaricare file come esempi di malware e risultati degli script di PowerShell.
 - Scaricare i file in background (nuovo!).
-- Caricare uno script di PowerShell o un file eseguibile nella raccolta ed eseguirlo in un dispositivo da un livello di tenant.
+- Upload uno script di PowerShell o un file eseguibile nella raccolta ed eseguirlo in un dispositivo a livello di tenant.
 - Eseguire o annullare azioni di correzione.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di poter avviare una sessione su un dispositivo, assicurati di soddisfare i requisiti seguenti:
 
-- **Verificare che sia in esecuzione una versione supportata di Windows**. <br/>
+- **Verificare che sia in esecuzione una versione supportata** di Windows . <br/>
 I dispositivi devono eseguire una delle versioni seguenti di Windows
 
   - **Windows 10**
@@ -101,13 +101,13 @@ Dovrai abilitare almeno il livello di correzione minimo per un determinato grupp
 ## <a name="live-response-dashboard-overview"></a>Panoramica del dashboard di risposta in tempo reale
 Quando avvii una sessione di risposta in tempo reale su un dispositivo, viene aperto un dashboard. Il dashboard fornisce informazioni sulla sessione, ad esempio: 
 
-- Chi ha creato la sessione
+- Who creata la sessione
 - All'avvio della sessione
 - Durata della sessione
 
 Il dashboard consente inoltre di accedere a:
 - Disconnetti sessione
-- Caricare file nella raccolta 
+- Upload file nella raccolta 
 - Console dei comandi
 - Log dei comandi
 
@@ -143,7 +143,6 @@ I comandi seguenti sono disponibili per i ruoli utente a cui viene concessa la p
 |`connect` | Avvia una sessione di risposta in tempo reale al dispositivo. |
 |`connections` | Mostra tutte le connessioni attive. |
 |`dir` | Visualizza un elenco di file e sottodirectory in una directory. |
-|`download <file_path> &` | Scarica un file in background. |
 |`drivers` |  Mostra tutti i driver installati nel dispositivo. |
 |`fg <command ID>` | Posiziona il processo specificato in primo piano in primo piano, rendendolo il processo corrente. <br> NOTA: fg accetta un "ID comando" disponibile dai processi, non un PID |
 |`fileinfo` | Ottenere informazioni su un file. |
@@ -173,7 +172,7 @@ I comandi seguenti sono disponibili per i ruoli utente a cui viene concessa la p
 
 ## <a name="use-live-response-commands"></a>Usare i comandi di risposta in tempo reale
 
-I comandi che puoi usare nella console seguono principi simili a quelli dei [comandi di Windows.](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)
+I comandi che è possibile utilizzare nella console seguono principi simili [a quelli Windows Comandi](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 I comandi avanzati offrono un set più affidabile di azioni che consentono di eseguire azioni più efficaci, ad esempio scaricare e caricare un file, eseguire script nel dispositivo ed eseguire azioni di correzione su un'entità.
 
@@ -200,7 +199,7 @@ Di seguito vengono descritti alcuni esempi:
 
 |Comando  |Funzione  |
 |---------|---------|
-|`Download "C:\windows\some_file.exe" &`     |Avvia il download di un file *denominatosome_file.exe* in background.         |
+|`getfile "C:\windows\some_file.exe" &`     |Avvia il download di un file *denominatosome_file.exe* in background.         |
 |`fg 1234`     |Restituisce un download con ID comando *1234* in primo piano.         |
 
 
@@ -214,7 +213,7 @@ Puoi avere una raccolta di script di PowerShell che possono essere eseguiti nei 
 
 #### <a name="to-upload-a-file-in-the-library"></a>Per caricare un file nella raccolta
 
-1. Fare **clic su Carica file nella raccolta.** 
+1. Fare **clic Upload file nella raccolta.** 
 
 2. Fare **clic su** Sfoglia e selezionare il file.
 
@@ -234,16 +233,6 @@ In qualsiasi momento durante una sessione, è possibile annullare un comando pre
 
 >[!WARNING]
 >L'utilizzo di questo collegamento non arresterà il comando sul lato agente. Il comando verrà annullato solo nel portale. Pertanto, le operazioni di modifica come "correzione" potrebbero continuare, mentre il comando viene annullato. 
-
-### <a name="automatically-run-prerequisite-commands"></a>Eseguire automaticamente i comandi dei prerequisiti
-
-Alcuni comandi dispongono di comandi prerequisiti da eseguire. Se non si esegue il comando prerequisito, verrà visualizzato un errore. Ad esempio, `download` l'esecuzione del comando senza `fileinfo` restituirà un errore.
-
-È possibile utilizzare il flag auto per eseguire automaticamente i comandi dei prerequisiti, ad esempio:
-
-```console
-getfile c:\Users\user\Desktop\work.txt -auto
-```
 
 ## <a name="run-a-powershell-script"></a>Eseguire uno script di PowerShell 
 

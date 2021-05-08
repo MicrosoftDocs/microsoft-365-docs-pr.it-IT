@@ -3,7 +3,7 @@ title: Panoramica del dashboard di sicurezza
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 description: Usare il nuovo dashboard di sicurezza per esaminare lo stato di Office 365 Threat Protection e visualizzare e agire sugli avvisi di sicurezza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7114776f686d25808c141a07b8cb2868cc67615d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205641"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274413"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -87,7 +87,7 @@ Le metriche vengono calcolate come descritto nella tabella seguente:
 |---|---|
 |Messaggi analizzati|Numero di messaggi di posta elettronica analizzati moltiplicati per il numero di destinatari|
 |Minacce arrestate|Numero di messaggi di posta elettronica identificati come contenenti malware moltiplicati per il numero di destinatari|
-|Bloccato da [Defender per Office 365 ](defender-for-office-365.md)|Numero di messaggi di posta elettronica bloccati da Defender per Office 365 moltiplicato per il numero di destinatari|
+|Bloccato da [Defender per Office 365](defender-for-office-365.md)|Numero di messaggi di posta elettronica bloccati da Defender per Office 365 moltiplicato per il numero di destinatari|
 |Rimosso dopo il recapito|Numero di messaggi rimossi per [l'eliminazione](zero-hour-auto-purge.md) automatica a zero ore moltiplicato per il numero di destinatari|
 
 ## <a name="malware"></a>Malware
@@ -96,7 +96,7 @@ I widget di malware mostrano i dettagli sulle tendenze del malware e sui tipi di
 
 ![Tendenze malware e tipi di famiglia](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>Approfondimenti
+## <a name="insights"></a>Dati analitici
 
 Le informazioni dettagliate non solo vengono esaminate, ma includono anche consigli e azioni da prendere in considerazione.
 

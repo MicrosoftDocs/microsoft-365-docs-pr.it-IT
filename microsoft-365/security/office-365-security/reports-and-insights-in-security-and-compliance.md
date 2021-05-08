@@ -3,7 +3,7 @@ title: Report intelligenti, informazioni dettagliate - Centro sicurezza & Confor
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ description: Informazioni sui report intelligenti e sulle informazioni dettaglia
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1759b93e6393031455ebfa372785395c5b88ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8e945cd3e3ba3dd0a80214e032c420bf7ecad18e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206602"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274425"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
 
@@ -55,7 +55,7 @@ Nel Centro sicurezza e conformità è disponibile un'& ampia gamma di report. (V
 |---|---|---|
 |**Report & Centro sicurezza e conformità** (tutto in su) <p> Informazioni dettagliate e suggerimenti principali e collegamenti ai report di conformità di Security &, inclusi report di prevenzione della perdita dei dati, etichette, report di sicurezza della posta elettronica, report di Defender per Office 365 e altro ancora|Nel Centro sicurezza & conformità passare a **Dashboard** \> **report**|[Monitorare e visualizzare i report nel Centro sicurezza Microsoft 365](../defender/overview-security-center.md)|
 |**Prevenzione della perdita dei dati** <p> Corrispondenza dei criteri di prevenzione della perdita dei dati, falsi positivi e override e collegamenti per creare o modificare criteri|Nel Centro sicurezza & conformità passare a Criteri di **prevenzione della perdita di** \> **dati**|[Visualizzare i report per la prevenzione della perdita dei dati](../../compliance/view-the-dlp-reports.md)|
-|**Governance dei dati** <p> Informazioni sul modo in cui vengono applicate etichette, etichette classificate come record, tendenze delle etichette e altro ancora|Nel Centro sicurezza & conformità passare a **Dashboard di governance delle** \> **informazioni**|[Visualizzare i rapporti della governance dei dati](../../compliance/view-the-data-governance-reports.md)|
+|**Governance dei dati** <p> Informazioni sul modo in cui vengono applicate etichette, etichette classificate come record, tendenze delle etichette e altro ancora|Nel Centro sicurezza & conformità passare a **Dashboard di governance delle** \> **informazioni**|[Visualizzare i report della gestione dei dati](../../compliance/view-the-data-governance-reports.md)|
 |**Dashboard di gestione delle** minacce (noto anche come dashboard di sicurezza) <p> Rilevamenti di minacce, tendenze di malware, utenti di destinazione principali, dettagli sui messaggi di posta elettronica inviati e ricevuti e altro ancora|Nel Centro sicurezza & conformità passare a **Dashboard di gestione delle** \> **minacce**|[Visualizzare i report per Defender per Office 365](view-reports-for-mdo.md)|
 |**Esplora minacce** (noto anche come Esplora risorse) o **rilevamenti in tempo reale** <p> Malware sospetto rilevato nella posta elettronica e nei file in Microsoft 365|Nel Centro sicurezza & conformità passare a **Gestione** minacce \> **Explorer** o **Rilevamenti in tempo reale**<br> |[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md)|
 |**Defender per Office 365 e i report di sicurezza della posta elettronica** <p> Report sulla sicurezza della posta elettronica e sulla protezione dalle minacce (inclusi i report di malware, posta indesiderata, phishing e spoofing)|Nel Centro sicurezza & conformità passare a **Dashboard** \> **report**|[Visualizzare i report per Defender per Office 365](view-reports-for-mdo.md) <p> [Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità](view-email-security-reports.md)|

@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Gli amministratori possono imparare a usare i tag di quarantena per controllare le attività che gli utenti possono eseguire sui messaggi in quarantena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 580cf2bad690d0fc6508d11178527ad218df763b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 512c589572502deacb5529ca9d6f2876861bf050
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205785"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274461"
 ---
 # <a name="quarantine-tags"></a>Tag di quarantena
 
@@ -43,6 +43,10 @@ Le singole autorizzazioni vengono combinate nei gruppi di autorizzazioni preimpo
 
 Le singole autorizzazioni disponibili e ciò che è incluso o non incluso nei gruppi di autorizzazioni preimpostati sono descritti nella tabella seguente:
 
+<br>
+
+****
+
 |Autorizzazione|Nessun diritto di accesso|Accesso limitato|Accesso completo|
 |---|:---:|:---:|:---:|
 |**Consenti mittente** (_PermissionToAllowSender_)|||![Segno di spunta](../../media/checkmark.png)|
@@ -57,7 +61,7 @@ Se non ti piace le autorizzazioni predefinite nei gruppi di autorizzazioni preim
 
 È possibile creare e assegnare tag di quarantena nel Centro sicurezza & conformità o in PowerShell (PowerShell di Exchange Online per le organizzazioni di Microsoft 365 con cassette postali di Exchange Online; PowerShell EOP autonomo nelle organizzazioni EOP senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **Tag quarantena,** aprire <https://protection.office.com/quarantineTags> .
 
@@ -126,6 +130,8 @@ Il _parametro EndUserQuarantinePermissionsValue_ utilizza un valore decimale con
 
 L'ordine e i valori necessari per ogni singola autorizzazione nei gruppi di autorizzazioni preimpostati sono descritti nella tabella seguente:
 
+<br>
+
 ****
 
 |Autorizzazione|Nessun diritto di accesso|Accesso limitato|Accesso completo|
@@ -140,6 +146,7 @@ L'ordine e i valori necessari per ogni singola autorizzazione nei gruppi di auto
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |Valore binario|00000000|01101010|11101100|
 |Valore decimale da utilizzare|0|106|236|
+|
 
 <sup>\*</sup> Attualmente, questo valore è sempre 0. Per PermissionToViewHeader, il valore 0  non nasconde il pulsante Visualizza intestazione messaggio nei dettagli del messaggio in quarantena (il pulsante è sempre disponibile).
 
@@ -224,6 +231,8 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-Quarant
 ## <a name="step-2-assign-a-quarantine-tag-to-supported-features"></a>Passaggio 2: Assegnare un tag di quarantena alle funzionalità supportate
 
 Nelle _funzionalità_ di protezione supportate per mettere in quarantena i messaggi o i file (automaticamente o come azione configurabile), è possibile assegnare un tag di quarantena alle azioni di quarantena disponibili. Le funzionalità che consentono di mettere in quarantena i messaggi e la disponibilità dei tag di quarantena sono descritte nella tabella seguente:
+
+<br>
 
 ****
 

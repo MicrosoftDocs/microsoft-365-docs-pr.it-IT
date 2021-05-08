@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 36bf1beabddb3ede4bd83ccac2303293eb61f674
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7b010016e02c956be8c43519cc64dc03d71e0bce
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549497"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274197"
 ---
 # <a name="payment-information-for-belarus"></a>Informazioni di pagamento per la Bielorussia
 
@@ -27,8 +27,8 @@ Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Bank:** Citibank, Londra  
+**Banca:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
-**Numero di conto:** 12510049  
+**Numero account:** 12510049  
 **Nome account:** MICROSOFT  

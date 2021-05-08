@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f3c2b7ae70f42cb7ffc2deef1786ad43e65f33b6
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4a35c6717fd7a1834364df32cf5570c83a5b776e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764640"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274521"
 ---
-# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri di Microsoft Defender Antivirus
+# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedire o consentire agli utenti di modificare localmente Antivirus Microsoft Defender impostazioni dei criteri
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,15 +32,15 @@ ms.locfileid: "51764640"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Per impostazione predefinita, le impostazioni di Microsoft Defender Antivirus distribuite tramite un oggetto Criteri di gruppo agli endpoint della rete impediranno agli utenti di modificare localmente le impostazioni. È possibile modificare questa impostazione in alcuni casi.
+Per impostazione predefinita, Antivirus Microsoft Defender le impostazioni distribuite tramite un oggetto Criteri di gruppo agli endpoint della rete impediranno agli utenti di modificare localmente le impostazioni. È possibile modificare questa impostazione in alcuni casi.
 
 Ad esempio, potrebbe essere necessario consentire a determinati gruppi di utenti (ad esempio ricercatori della sicurezza e investigatori delle minacce) un ulteriore controllo sulle singole impostazioni negli endpoint che usano.
 
-## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Configurare sostituzioni locali per le impostazioni di Microsoft Defender Antivirus
+## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Configurare sostituzioni locali per Antivirus Microsoft Defender impostazioni
 
 L'impostazione predefinita per questi criteri è **Disabled**.
 
-Se sono impostati su **Abilitato,** gli utenti degli endpoint possono apportare modifiche all'impostazione associata all'app Sicurezza di [Windows,](microsoft-defender-security-center-antivirus.md) alle impostazioni di Criteri di gruppo locali e ai cmdlet di PowerShell (se appropriato).
+Se sono impostati su **Abilitato,** gli utenti degli endpoint possono apportare modifiche all'impostazione associata all'app [Sicurezza di Windows,](microsoft-defender-security-center-antivirus.md) alle impostazioni di Criteri di gruppo locali e ai cmdlet di PowerShell (se appropriato).
 
 Nella tabella seguente sono elencate tutte le impostazioni dei criteri di sostituzione e le istruzioni di configurazione per la caratteristica o l'impostazione associata.
 
@@ -49,7 +50,7 @@ Per configurare queste impostazioni:
 
 2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione computer **e** fare clic su **Modelli amministrativi.**
 
-3. Espandi l'albero **fino ai componenti di Windows > Microsoft Defender Antivirus** e quindi alla **posizione** specificata nella tabella seguente.
+3. Espandere l'albero **Windows componenti > Antivirus Microsoft Defender** e quindi il **percorso** specificato nella tabella seguente.
 
 4. Fai doppio clic **sull'impostazione del** criterio come specificato nella tabella seguente e imposta l'opzione sulla configurazione desiderata. Fare **clic su OK** e ripetere l'operazione per tutte le altre impostazioni.
 
@@ -59,11 +60,11 @@ Posizione | Impostazione | Articolo
 ---|---|---|---
 MAPPE | Configurare l'override delle impostazioni locali per la segnalazione a Microsoft MAPS | [Abilitare la protezione basata sul cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 Quarantena | Configurare l'override dell'impostazione locale per la rimozione degli elementi dalla cartella quarantena | [Configurare la correzione per le analisi](configure-remediation-microsoft-defender-antivirus.md)
-Protezione in tempo reale | Configurare l'override delle impostazioni locali per il monitoraggio dell'attività di file e programmi nel computer | [Abilitare e configurare la protezione e il monitoraggio always-on di Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protezione in tempo reale | Configurare l'override delle impostazioni locali per il monitoraggio dell'attività dei file in ingresso e in uscita | [Abilitare e configurare la protezione e il monitoraggio always-on di Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protezione in tempo reale | Configurare l'override delle impostazioni locali per l'analisi di tutti i file e gli allegati scaricati | [Abilitare e configurare la protezione e il monitoraggio always-on di Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protezione in tempo reale | Configurare l'override delle impostazioni locali per attivare il monitoraggio del comportamento | [Abilitare e configurare la protezione e il monitoraggio always-on di Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protezione in tempo reale | Configurare l'override delle impostazioni locali per attivare la protezione in tempo reale | [Abilitare e configurare la protezione e il monitoraggio always-on di Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protezione in tempo reale | Configurare l'override delle impostazioni locali per il monitoraggio dell'attività di file e programmi nel computer | [Abilitare e configurare Antivirus Microsoft Defender protezione e monitoraggio always-on](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protezione in tempo reale | Configurare l'override delle impostazioni locali per il monitoraggio dell'attività dei file in ingresso e in uscita | [Abilitare e configurare Antivirus Microsoft Defender protezione e monitoraggio always-on](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protezione in tempo reale | Configurare l'override delle impostazioni locali per l'analisi di tutti i file e gli allegati scaricati | [Abilitare e configurare Antivirus Microsoft Defender protezione e monitoraggio always-on](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protezione in tempo reale | Configurare l'override delle impostazioni locali per attivare il monitoraggio del comportamento | [Abilitare e configurare Antivirus Microsoft Defender protezione e monitoraggio always-on](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protezione in tempo reale | Configurare l'override delle impostazioni locali per attivare la protezione in tempo reale | [Abilitare e configurare Antivirus Microsoft Defender protezione e monitoraggio always-on](configure-real-time-protection-microsoft-defender-antivirus.md)
 Correzione | Configurare l'override delle impostazioni locali per l'ora del giorno per eseguire un'analisi completa pianificata per completare la correzione | [Configurare la correzione per le analisi](configure-remediation-microsoft-defender-antivirus.md)
 Analisi | Configurare l'override dell'impostazione locale per la percentuale massima di utilizzo della CPU | [Configurare ed eseguire analisi](run-scan-microsoft-defender-antivirus.md)
 Analisi | Configurare l'override delle impostazioni locali per pianificare il giorno dell'analisi | [Configurare le analisi pianificate](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
@@ -87,14 +88,14 @@ Per impostazione predefinita, gli elenchi configurati in Criteri di gruppo local
 
 2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione computer **e** fare clic su **Modelli amministrativi.**
 
-3. Espandi l'albero **fino ai componenti di Windows > Microsoft Defender Antivirus.**
+3. Espandere l'albero per **Windows componenti > Antivirus Microsoft Defender**.
 
 4. Fare doppio clic su **Configura comportamento di unione dell'amministratore locale per** gli elenchi e impostare l'opzione su **Disabilitato.** Fare clic su **OK**.
 
 > [!NOTE]
-> Se si disabilita l'unione di elenchi locali, verranno sovrascritte le impostazioni di accesso controllato alle cartelle. Sostituisce inoltre tutte le cartelle protette o le app consentite impostate dall'amministratore locale. Per altre informazioni sulle impostazioni di accesso controllato alle cartelle, vedi [Consentire un'app bloccata in Sicurezza di Windows.](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)
+> Se si disabilita l'unione di elenchi locali, verranno sovrascritte le impostazioni di accesso controllato alle cartelle. Sostituisce inoltre tutte le cartelle protette o le app consentite impostate dall'amministratore locale. Per altre informazioni sulle impostazioni di accesso controllato alle cartelle, vedi [Consentire un'app](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)bloccata in Sicurezza di Windows .
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Configurare l'interazione dell'utente finale con Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Configurare l'interazione dell'utente finale con Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)

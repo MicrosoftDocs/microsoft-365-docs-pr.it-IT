@@ -1,5 +1,5 @@
 ---
-title: Distribuire e abilitare Microsoft Defender Antivirus
+title: Distribuire e abilitare in Microsoft Defender Antivirus
 description: Distribuire Microsoft Defender Antivirus per la protezione degli endpoint con Microsoft Intune, Microsoft Endpoint Configuration Manager, Criteri di gruppo, cmdlet di PowerShell o WMI.
 keywords: distribuire, abilitare, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 01/06/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 146447f4036d800832c75c7a59978e9571253a17
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 88a5401818c3d6f2b35675830a38b266db9627e4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764820"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274497"
 ---
-# <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Distribuire e abilitare Microsoft Defender Antivirus
+# <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Distribuire e abilitare in Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

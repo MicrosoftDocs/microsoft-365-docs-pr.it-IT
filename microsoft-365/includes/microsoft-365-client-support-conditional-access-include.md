@@ -24,7 +24,7 @@
 |POWER BI|Pianificato|Pianificato|N/D|Pianificato|Pianificato|
 |POWERPOINT|✔|Pianificato|Pianificato|Pianificato|Pianificato|
 |PROJECT|N/D|N/D|N/D|Pianificato|N/D|
-|PUBLISHER|N/D|N/D|N/D|Pianificato|N/D|
+|PUBLISHER|N/D|N/D|N/D|✔|N/D|
 |AMMINISTRATORE DI SHAREPOINT|N/D|N/D|N/D|Pianificato|N/D|
 |SHAREPOINT|Pianificato|Pianificato|N/D|N/D|N/D|
 |STICKY NOTES|N/D|N/D|N/D|N/D|Pianificato|
@@ -33,7 +33,7 @@
 |TEAMS|✔|✔|✔|Pianificato|N/D|
 |TO-DO|Pianificato|Pianificato|Pianificato|N/D|Pianificato|
 |VISIO|N/D|✔|N/D|Pianificato|N/D|
-|LAVAGNA|N/D|Pianificato|N/D|N/D|Pianificato|
+|LAVAGNA|✔|Pianificato|N/D|N/D|Pianificato|
 |WORD|✔|Pianificato|Pianificato|Pianificato|✔|
 |WORKPLACE ANALYTICS|N/D|N/D|N/D|N/D|N/D|
 |YAMMER|Pianificato|Pianificato|Pianificato|Pianificato|N/D|

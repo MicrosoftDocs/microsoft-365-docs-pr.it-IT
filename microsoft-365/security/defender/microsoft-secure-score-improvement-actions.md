@@ -1,6 +1,6 @@
 ---
 title: Valutare il proprio livello di sicurezza tramite Microsoft Secure Score
-description: Descrive come intervenire per migliorare microsoft Secure Score nel Centro sicurezza Microsoft 365.
+description: Descrive come eseguire un'azione per migliorare microsoft Secure Score nel centro sicurezza Microsoft 365 sicurezza.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,31 +21,31 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 0b2b9f1f01a583a96e0ae663e3f78cb0a7d846fc
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570601"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246398"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Valutare il proprio stato di sicurezza con Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score è una misurazione della postura di sicurezza di una organizzazione, in cui i numeri più alti indicano l'esecuzione di più azioni di miglioramento. È disponibile nel Centro sicurezza https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+Microsoft Secure Score è una misurazione della postura di sicurezza di una organizzazione, in cui i numeri più alti indicano l'esecuzione di più azioni di miglioramento. È disponibile nel centro sicurezza https://security.microsoft.com/securescore [Microsoft 365 sicurezza.](overview-security-center.md)
 
 Per trovare più rapidamente le informazioni necessarie, le azioni di miglioramento Microsoft sono organizzate in gruppi:
 
-* Identity (account di Azure Active Directory & ruoli)
+* Identità (Azure Active Directory account & ruoli)
 * Dispositivo (Microsoft Defender for Endpoint, noto come [Microsoft Secure Score per dispositivi](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-* App (app di posta elettronica e cloud, tra cui Office 365 e Microsoft Cloud App Security)
+* App (app di posta elettronica e cloud, Office 365 e Microsoft Cloud App Security)
 
 >[!NOTE]
 >Nella recente versione di Microsoft Secure Score è stato rilasciato un modello di punteggio migliorato che ha reso Microsoft Secure Score temporaneamente incompatibile con Identity Secure Score e l'API Graph. [Visualizza dettagli](microsoft-secure-score-whats-new.md)
 
 Nella pagina panoramica di Microsoft Secure Score, visualizzare la modalità di suddivisione dei punti tra questi gruppi e i punti disponibili. Puoi anche ottenere una visualizzazione generale del punteggio totale, della tendenza storica del punteggio sicuro con confronti di benchmark e delle azioni di miglioramento con priorità che possono essere intraprese per migliorare il punteggio.
 
-![Home page punteggio sicuro](../../media/secure-score/secure-score-homepage-new.png)
+![Home page punteggio sicuro](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="check-your-current-score"></a>Controllare il punteggio corrente
 
@@ -61,7 +61,7 @@ Di seguito sono riportati i punteggi che è possibile aggiungere alla visualizza
 
 Questa visualizzazione è l'aspetto che avrà se hai incluso tutte le possibili visualizzazioni del punteggio:
 
-![Il punteggio sicuro, incluso il punteggio pianificato, il punteggio della licenza corrente e il punteggio raggiungibile](../../media/secure-score/your-secure-score.png)
+![Il punteggio sicuro, incluso il punteggio pianificato, il punteggio della licenza corrente e il punteggio raggiungibile](../../media/secure-score/secure-score-achievable.png)
 
 ## <a name="take-action-to-improve-your-score"></a>Agire per migliorare il punteggio
 
@@ -81,7 +81,7 @@ Per completare l'azione, sono disponibili alcune opzioni:
 
 - Seleziona **Gestisci** per passare alla schermata di configurazione e apportare la modifica. Potrai quindi ottenere i punti che valgono l'azione, visibili nel fly out. L'aggiornamento dei punti in genere è di circa 24 ore.
 
-- Selezionare **Condividi** per copiare il collegamento diretto all'azione di miglioramento. È inoltre possibile scegliere la piattaforma per condividere il collegamento, ad esempio posta elettronica, Microsoft Teams, Microsoft Planner o ServiceNow. Selezionando ServiceNow è possibile creare un ticket di modifica che sarà visibile in ServiceNow e nella home page del Centro sicurezza Microsoft 365. Per ulteriori informazioni, vedere Centro sicurezza [Microsoft 365 e Integrazione ServiceNow.](./tickets.md)
+- Selezionare **Condividi** per copiare il collegamento diretto all'azione di miglioramento. È inoltre possibile scegliere la piattaforma per condividere il collegamento, ad esempio posta elettronica, Microsoft Teams o Microsoft Planner.
 
 Aggiungere **note** per tenere traccia dello stato o di qualsiasi altro elemento su cui si desidera aggiungere commenti. Se aggiungi tag  personalizzati all'azione di miglioramento, puoi filtrare in base a tali tag.
 
@@ -94,9 +94,9 @@ Scegliere eventuali stati e registrare note specifiche per l'azione di miglioram
 - **Rischio accettato:** la sicurezza deve essere sempre bilanciata con l'usabilità e non tutte le raccomandazioni funzioneranno per l'ambiente. In questo caso, è possibile scegliere di accettare il rischio o il rischio rimanente e non di eseguire l'azione di miglioramento. Non verranno dati punti, ma l'azione non sarà più visibile nell'elenco delle azioni di miglioramento. È possibile visualizzare questa azione nella cronologia o annullarla in qualsiasi momento.
 - **Risolto tramite terze parti** e **risolto** tramite mitigazione alternativa: l'azione di miglioramento è già stata affrontata da un'applicazione o un software di terze parti o uno strumento interno. Potrai ottenere i punti che valgono l'azione, in modo che il punteggio rifletta meglio la tua posizione di sicurezza complessiva. Se uno strumento interno o di terze parti non copre più il controllo, puoi scegliere un altro stato. Tieni presente che Microsoft non avrà visibilità sulla completezza dell'implementazione se l'azione di miglioramento viene contrassegnata come uno di questi stati.
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>Azioni di miglioramento della gestione delle & delle minacce
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Azioni di & gestione delle vulnerabilità di miglioramento delle minacce
 
-Per le azioni di miglioramento nella categoria "Dispositivo", non puoi scegliere gli stati. Al contrario, sarai indirizzato alla raccomandazione di sicurezza per la gestione delle minacce e delle vulnerabilità [associata](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/use) per intraprendere un'azione. L'eccezione scelta e la giustificazione da scrivere saranno specifiche per tale portale. Non sarà presente nel portale Microsoft Secure Score.
+Per le azioni di miglioramento nella categoria "Dispositivo", non puoi scegliere gli stati. Al contrario, verrà indirizzato all'gestione di minacce e vulnerabilità [di](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) sicurezza associata nella Microsoft Defender Security Center [per](/windows/security/threat-protection/microsoft-defender-atp/use) eseguire un'azione. L'eccezione scelta e la giustificazione da scrivere saranno specifiche per tale portale. Non sarà presente nel portale Microsoft Secure Score.
 
 #### <a name="completed-improvement-actions"></a>Azioni di miglioramento completate
 

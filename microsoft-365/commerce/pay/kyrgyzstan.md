@@ -8,26 +8,26 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4f7a8db3c4c68f58146b03600317fc854e7d458e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: f8fa212a98337a510459d2907c17ada5f21a164e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50550565"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273441"
 ---
 # <a name="payment-information-for-kyrgyzstan"></a>Informazioni di pagamento per il Kirghizistan
 
 [Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md). 
 
-Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.
+Pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Bank:** Citibank, Londra  
+**Banca:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
 **IBAN:** 12510049,  
 **Numero account:** GB95CITI18500812510049  

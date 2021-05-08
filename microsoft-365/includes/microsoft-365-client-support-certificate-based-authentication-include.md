@@ -36,7 +36,7 @@
 |TEAMS|✔|✔|✔|Pianificato|N/D|
 |TO-DO|✔|✔|✔|N/D|✔|
 |VISIO|N/D|✔|N/D|✔|N/D|
-|LAVAGNA|N/D|Pianificato|N/D|N/D|✔|
+|LAVAGNA|✔|Pianificato|N/D|N/D|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|N/D|N/D|N/D|N/D|N/D|
 |YAMMER|✔|✔|Pianificato|Pianificato|N/D|
