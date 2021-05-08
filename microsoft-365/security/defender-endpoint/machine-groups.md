@@ -1,6 +1,6 @@
 ---
 title: Creare e gestire gruppi di dispositivi in Microsoft Defender for Endpoint
-description: Creare gruppi di dispositivi e impostare livelli di correzione automatizzati su di essi confiando le regole applicabili al gruppo
+description: Creare gruppi di dispositivi e impostare livelli di correzione automatizzati su di essi confermando le regole applicabili al gruppo
 keywords: gruppi di dispositivi, gruppi, correzione, livello, regole, gruppo aad, ruolo, assegnare, classificare
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860304"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259416"
 ---
 # <a name="create-and-manage-device-groups"></a>Creazione e gestione di gruppi di dispositivi
 
@@ -59,7 +59,7 @@ Come parte del processo di creazione di un gruppo di dispositivi, dovrai:
 
 ## <a name="create-a-device-group"></a>Creare un gruppo di dispositivi
 
-1. Nel riquadro di spostamento seleziona **Impostazioni Gruppi**  >  **di dispositivi.**
+1. Nel riquadro di spostamento, **selezionare** Impostazioni  >  **gruppi di dispositivi**.
 
 2. Fai **clic su Aggiungi gruppo di dispositivi.**
 
@@ -81,6 +81,8 @@ Come parte del processo di creazione di un gruppo di dispositivi, dovrai:
 
 Puoi alzare di livello o abbassare di livello il rango di un gruppo di dispositivi in modo che gli sia stata data una priorità maggiore o inferiore durante la corrispondenza. Quando un dispositivo viene abbinato a più di un gruppo, viene aggiunto solo al gruppo con il livello più alto. È inoltre possibile modificare ed eliminare gruppi.
 
+
+
 >[!WARNING]
 >L'eliminazione di un gruppo di dispositivi può influire sulle regole di notifica tramite posta elettronica. Se un gruppo di dispositivi è configurato in base a una regola di notifica tramite posta elettronica, verrà rimosso da tale regola. Se il gruppo di dispositivi è l'unico gruppo configurato per una notifica tramite posta elettronica, la regola di notifica tramite posta elettronica verrà eliminata insieme al gruppo di dispositivi.
 
@@ -91,8 +93,22 @@ I dispositivi non corrispondenti ad alcun gruppo vengono aggiunti al gruppo Disp
 >[!NOTE]
 > L'applicazione delle modifiche alla configurazione del gruppo di dispositivi può richiedere alcuni minuti.
 
+
+### <a name="add-device-group-definitions"></a>Aggiungere definizioni di gruppi di dispositivi
+Le definizioni dei gruppi di dispositivi possono includere anche più valori per ogni condizione. Puoi impostare più tag, nomi di dispositivi e domini sulla definizione di un singolo gruppo di dispositivi.
+
+1. Crea un nuovo gruppo di dispositivi, quindi seleziona **la scheda** Dispositivi.
+2. Aggiungere il primo valore per una delle condizioni.
+3. Selezionare `+` questa opzione per aggiungere altre righe dello stesso tipo di proprietà.
+
+>[!TIP]
+> Utilizzare l'operatore 'OR' tra le righe dello stesso tipo di condizione, che consente più valori per proprietà.
+> Puoi aggiungere fino a 10 righe (valori) per ogni tipo di proprietà: tag, nome dispositivo, dominio.
+
+Per altre informazioni sul collegamento alle definizioni dei gruppi di dispositivi, vedi Gruppi di [dispositivi - Microsoft 365 sicurezza](https://sip.security.microsoft.com/homepage).
+
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Gestire l'accesso al portale tramite il controllo dell'accesso basato sui ruoli](rbac.md)
 - [Creare e gestire tag di dispositivi](machine-tags.md)
-- [Ottenere l'elenco dei gruppi di dispositivi tenant con l'API Graph](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [Ottenere l'elenco dei gruppi di dispositivi tenant usando l Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)

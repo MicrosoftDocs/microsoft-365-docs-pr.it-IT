@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 23320d962b52e1a443d459cb6b57d444fca91592
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 477f176d523fbb458ae266cad98b07a63a10050c
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939310"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259344"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -67,8 +67,9 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è il conto che ha modificato per ultimo il file.
 
     Caratteristiche specifiche dell'etichettatura automatica per Exchange:
-    - A differenza dell'etichettatura manuale o dell'etichettatura automatica per le app di Office, negli allegati di Office (file Word, Excel e PowerPoint) e PDF vengono ricercate anche le condizioni specificate nei criteri di etichettatura automatica. Quando viene rilevata una corrispondenza, viene applicata un'etichetta al messaggio ma non all'allegato.
-        - Per questi file di Office, è supportato il formato Open XML, ad esempio le estensioni .docx e .xlsx, ma non il formato di Microsoft Office 97-2003, ad esempio le estensioni .doc e .xls.
+    - A differenza dell'etichettatura manuale o dell'etichettatura automatica per le app di Office, negli allegati di Office (file Word, Excel e PowerPoint) e PDF vengono ricercate anche le condizioni specificate nei criteri di etichettatura automatica. Quando viene rilevata una corrispondenza, viene applicata un'etichetta al messaggio di posta elettronica ma non all'allegato.
+        - Per i file PDF, se l'etichetta applica la crittografia, questi file vengono crittografati quando il tenant [abilitati per gli allegati PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - Per questi file di Office, è supportato il formato Open XML, ad esempio le estensioni .docx e .xlsx, ma non il formato di Microsoft Office 97-2003, ad esempio le estensioni .doc e .xls. Se l'etichetta applica la crittografia, questi file vengono crittografati.
     - Se sono presenti regole per il flusso di posta di Exchange o criteri di prevenzione della perdita dei dati che applicano la crittografia IRM: quando il contenuto viene identificato da queste regole o criteri e da un criterio di applicazione automatica di etichette, l'etichetta viene applicata. Se quell'etichetta applica la crittografia, le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati vengono ignorate. Se invece quella etichetta non applica la crittografia, in aggiunta all'etichetta vengono applicate le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati.
     - I messaggi di posta elettronica con crittografia IRM senza etichetta verranno sostituiti da un'etichetta con qualsiasi impostazione di crittografia se esiste una corrispondenza usando l'etichettatura automatica.
     - La posta in arrivo viene etichettata quando esiste una corrispondenza con le condizioni di etichettatura automatica:

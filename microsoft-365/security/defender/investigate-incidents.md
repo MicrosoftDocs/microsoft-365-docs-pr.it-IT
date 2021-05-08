@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939743"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259637"
 ---
 # <a name="analyze-incidents-in-microsoft-365-defender"></a>Analizzare gli eventi imprevisti in Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "51939743"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender aggrega tutti gli avvisi, gli asset, le indagini e le prove correlati provenienti da dispositivi, utenti e cassette postali in un evento imprevisto per fornire una panoramica completa dell'intera ampiezza di un attacco.
+Microsoft 365 Defender aggrega tutti gli avvisi, gli asset, le indagini e le prove correlati da dispositivi, utenti e cassette postali in un evento imprevisto per fornire una panoramica completa dell'intera ampiezza di un attacco.
 
 All'interno di un evento imprevisto, si analizzano gli avvisi che influiscono sulla rete, si comprende il loro significato e si fascicolano le prove in modo da poter elaborare un piano di correzione efficace.
 
@@ -61,7 +61,7 @@ Da qui è possibile selezionare Apri **pagina evento imprevisto.** Verrà aperta
 
 La **pagina** Riepilogo offre uno sguardo istantaneo sugli aspetti principali da notare sull'evento imprevisto.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Esempio della pagina Riepilogo per un evento imprevisto nel Centro sicurezza Microsoft 365":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Esempio della pagina Riepilogo per un evento imprevisto nel centro sicurezza Microsoft 365 sicurezza":::
 
 Le categorie di attacco offrono una visualizzazione visiva e numerica dell'avanzamento dell'attacco contro la catena di uccidi. Come per altri prodotti di sicurezza Microsoft, Microsoft 365 Defender è allineato al framework [MITRE ATT&&trade; CK.](https://attack.mitre.org/)
 
@@ -103,7 +103,7 @@ Puoi selezionare il segno di spunta per un dispositivo per visualizzare i dettag
 Dalla pagina del dispositivo puoi raccogliere informazioni aggiuntive sul dispositivo, ad esempio tutti gli avvisi, una sequenza temporale e suggerimenti per la sicurezza. Ad esempio, dalla scheda **Sequenza** temporale puoi scorrere la sequenza temporale del computer e visualizzare tutti gli eventi e i comportamenti osservati nel computer in ordine cronologico, in sequenza con gli avvisi generati.
 
 > [!TIP]
-> Puoi eseguire analisi su richiesta in una pagina del dispositivo. Nel Centro sicurezza Microsoft 365 scegliere **Endpoint > inventario del dispositivo**. Selezionare un dispositivo con avvisi ed eseguire un'analisi antivirus. Le azioni, ad esempio le analisi antivirus, vengono rilevate e visibili nella **pagina Inventario** dispositivi. Per altre informazioni, vedi [Eseguire l'analisi di Microsoft Defender Antivirus nei dispositivi.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+> Puoi eseguire analisi su richiesta in una pagina del dispositivo. Nel Centro sicurezza Microsoft 365 scegliere **Endpoint > inventario del dispositivo.** Selezionare un dispositivo con avvisi ed eseguire un'analisi antivirus. Le azioni, ad esempio le analisi antivirus, vengono rilevate e visibili nella **pagina Inventario** dispositivi. Per altre informazioni, vedi [Eseguire Antivirus Microsoft Defender analisi nei dispositivi](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## <a name="users"></a>Utenti
 
@@ -123,7 +123,7 @@ Nella **scheda Cassette** postali sono elencate tutte le cassette postali identi
 
 ## <a name="investigations"></a>Indagini
 
-Nella **scheda Indagini** sono elencate tutte le indagini automatizzate attivate dagli avvisi in questo evento imprevisto. Le indagini eseguiranno azioni di correzione o attenderanno l'approvazione degli analisti delle azioni, a seconda di come sono configurate le indagini automatizzate per l'esecuzione in Microsoft Defender per Endpoint e Defender per Office 365.
+Nella **scheda Indagini** sono elencate tutte le indagini automatizzate attivate dagli avvisi in questo evento imprevisto. Le indagini eseguiranno azioni di correzione o attenderanno l'approvazione degli analisti delle azioni, a seconda di come hai configurato le indagini automatizzate per l'esecuzione in Microsoft Defender per Endpoint e Defender per Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Esempio di pagina Indagini per un evento imprevisto":::
 
@@ -135,9 +135,26 @@ La **scheda Prova e risposta** mostra tutti gli eventi supportati e le entità s
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Esempio di pagina Prova e risposta per un evento imprevisto":::
 
-Microsoft 365 Defender analizza automaticamente tutti gli eventi supportati e le entità sospette degli incidenti negli avvisi, fornendo informazioni sui messaggi di posta elettronica, i file, i processi, i servizi, gli indirizzi IP e altro ancora importanti. In questo modo è possibile rilevare e bloccare rapidamente potenziali minacce nell'evento imprevisto.
+Microsoft 365 Defender analizza automaticamente tutti gli eventi supportati e le entità sospette degli eventi imprevisti negli avvisi, fornendo informazioni sui messaggi di posta elettronica, i file, i processi, i servizi, gli indirizzi IP e altro ancora importanti. In questo modo è possibile rilevare e bloccare rapidamente potenziali minacce nell'evento imprevisto.
 
 Ogni entità analizzata è contrassegnata con un verdetto (Dannoso, Sospetto, Pulito) e uno stato di correzione. In questo modo è possibile comprendere lo stato di correzione dell'intero evento imprevisto e i passaggi successivi.
+
+## <a name="graph-in-preview"></a>Graph (in anteprima)
+
+Con la nuova **scheda Graph** (in anteprima), puoi vedere:
+
+- La connessione degli avvisi agli asset influenzati nell'organizzazione.
+- Entità correlate agli avvisi e al modo in cui fanno parte della storia dell'attacco.
+- Avvisi per l'evento imprevisto.
+
+Di seguito viene riportato un esempio.
+
+:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Esempio di pagina Graph per un evento imprevisto":::
+
+Il grafico degli incidenti consente di comprendere rapidamente l'ambito completo dell'attacco connettendo le diverse entità sospette che fanno parte dell'attacco con gli asset correlati, ad esempio utenti, dispositivi e cassette postali. 
+
+Ora è possibile comprendere come l'attacco si è diffuso nella rete nel corso del tempo, da dove è iniziato e fino a che punto è andato l'attacco.
+
 
 ## <a name="related-topics"></a>Argomenti correlati
 

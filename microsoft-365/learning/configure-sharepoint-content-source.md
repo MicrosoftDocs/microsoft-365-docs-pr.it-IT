@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Informazioni su come configurare SharePoint come origine di contenuto di apprendimento per Microsoft Viva Learning (Preview).
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da75ec0573519ed73507994afeac995c0461de0c
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: fc702f57b75b78ab523226ba7d8a8eb6505f2975
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100961"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244130"
 ---
 # <a name="coming-soon-configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>Presto disponibile: Configurare SharePoint come origine di contenuto di apprendimento per Microsoft Viva Learning (anteprima)
 
@@ -40,11 +40,11 @@ Viva Learning (Anteprima) supporta i tipi di documento seguenti:
 - Audio (.m4a)
 - Video (.mov, .mp4, .avi)
 
-Per ulteriori informazioni, vedere la documentazione [SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
+Per ulteriori informazioni, vedere [SharePoint limiti.](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498) 
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Gli URL delle cartelle delle raccolte documenti possono essere raccolti da qualsiasi SharePoint dell'organizzazione. Viva Learning (Anteprima) segue tutte le autorizzazioni di contenuto esistenti. Di conseguenza, solo il contenuto per cui un utente dispone dell'autorizzazione di accesso è disponibile per la ricerca e può essere utilizzato in Viva Learning (Anteprima). Qualsiasi contenuto all'interno di queste cartelle sarà disponibile per la ricerca, ma è possibile utilizzare solo il contenuto per cui il singolo dipendente dispone delle autorizzazioni.
+Gli URL delle cartelle delle raccolte documenti possono essere raccolti da qualsiasi SharePoint dell'organizzazione. Viva Learning (Anteprima) segue tutte le autorizzazioni di contenuto esistenti. Di conseguenza, solo il contenuto per cui un utente dispone dell'autorizzazione di accesso è disponibile per la ricerca e visibile all'interno di Viva Learning (Anteprima). Qualsiasi contenuto all'interno di queste cartelle sarà disponibile per la ricerca, ma è possibile utilizzare solo il contenuto per cui il singolo dipendente dispone delle autorizzazioni.
 
 L'eliminazione del contenuto dall'archivio dell'organizzazione non è attualmente supportata.
 
@@ -70,11 +70,11 @@ Per configurare SharePoint come origini di contenuto di apprendimento in Viva Le
 
 1.  Nel riquadro di spostamento sinistro dell'Microsoft 365 di amministrazione passare **a** Impostazioni  >  **Impostazioni organizzazione**.
  
-2.  Nella scheda **Servizi della**  pagina Impostazioni organizzazione selezionare **App di apprendimento (anteprima).**
+2.  Nella scheda **Servizi della**  pagina Impostazioni organizzazione selezionare Viva **Learning (anteprima).**
 
      ![Impostazioni nell'interfaccia Microsoft 365 di amministrazione di Viva Learning elencata.](../media/learning/learning-sharepoint-configure1.png)
 
-3.  Nel pannello App di apprendimento **(anteprima),** in SharePoint, fornisce l'URL del sito del SharePoint in cui vuoi che Viva Learning crei un repository centralizzato.
+3.  Nel pannello **Viva Learning (Anteprima),** in SharePoint, fornisce l'URL del sito del SharePoint in cui vuoi che Viva Learning (Anteprima) crei un repository centralizzato.
 
      ![Riquadro di apprendimento nell'Microsoft 365 di amministrazione che mostra SharePoint selezionato.](../media/learning/learning-sharepoint-configure2.png)
 

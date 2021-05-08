@@ -22,7 +22,7 @@
 |POWER APPS|Pianificato|Pianificato|N/D|N/D|Pianificato|
 |POWER AUTOMATE|Pianificato|Pianificato|N/D|N/D|N/D|
 |POWER BI|Pianificato|Pianificato|N/D|Pianificato|Pianificato|
-|POWERPOINT|✔|Pianificato|Pianificato|Pianificato|Pianificato|
+|POWERPOINT|✔|Pianificato|Pianificato|Pianificato|N/D|
 |PROJECT|N/D|N/D|N/D|Pianificato|N/D|
 |PUBLISHER|N/D|N/D|N/D|✔|N/D|
 |AMMINISTRATORE DI SHAREPOINT|N/D|N/D|N/D|Pianificato|N/D|
@@ -34,6 +34,6 @@
 |TO-DO|Pianificato|Pianificato|Pianificato|N/D|Pianificato|
 |VISIO|N/D|✔|N/D|Pianificato|N/D|
 |LAVAGNA|✔|Pianificato|N/D|N/D|Pianificato|
-|WORD|✔|Pianificato|Pianificato|Pianificato|✔|
+|WORD|✔|Pianificato|Pianificato|Pianificato|N/D|
 |WORKPLACE ANALYTICS|N/D|N/D|N/D|N/D|N/D|
 |YAMMER|Pianificato|Pianificato|Pianificato|Pianificato|N/D|

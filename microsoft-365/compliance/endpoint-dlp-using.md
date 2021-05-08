@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: 1b918346467f9878582dfb301f48e530bfb400f8
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: cbd95ed3ee70b69b395f73c83852a9f37a269f0b
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114094"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259488"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso della prevenzione della perdita di dati degli endpoint
 
@@ -123,7 +123,7 @@ Per acquisire familiarità con le funzionalità di Endpoint DLP e su come vengon
 > [!IMPORTANT]
 > Questi scenari di Endpoint DLP non sono le procedure ufficiali per la creazione e l'ottimizzazione di criteri DLP. Vedere gli argomenti seguenti quando è necessario usare i criteri di prevenzione della perdita dei dati in situazioni generiche:
 
->- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
+>- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 >- [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)
 >- [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
 >- [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
@@ -221,7 +221,7 @@ Per questi scenari è necessario aver già eseguito l'onboarding dei dispositivi
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
 - [Microsoft Defender ATP](/windows/security/threat-protection/)
-- [Strumenti e metodi di onboarding per i dispositivi Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Strumenti e metodi di onboarding per i dispositivi Windows 10](/microsoft-365/compliance/dlp-configure-endpoints)
 - [Abbonamento a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Dispositivi aggiunti ad Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

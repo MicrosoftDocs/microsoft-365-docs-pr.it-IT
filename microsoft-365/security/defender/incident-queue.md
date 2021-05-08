@@ -1,5 +1,5 @@
 ---
-title: Assegnare priorità agli incidenti in Microsoft 365 Defender
+title: Assegnare priorità agli eventi imprevisti in Microsoft 365 Defender
 description: Informazioni su come filtrare gli eventi imprevisti dalla coda degli eventi imprevisti in Microsoft 365 Defender
 keywords: incidente, coda, panoramica, dispositivi, identità, utenti, cassetta postale, posta elettronica, eventi imprevisti, analizzare, risposta
 search.product: eADQiWindows 10XVcnh
@@ -22,29 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 47d066fa20abe963f7afaa3b88cecc96fa6e87fc
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939707"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259590"
 ---
-# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli incidenti in Microsoft 365 Defender
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli eventi imprevisti in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Si applica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender applica l'analisi della correlazione e aggrega gli avvisi correlati e le indagini automatizzate di prodotti diversi in un evento imprevisto. Microsoft 365 Defender attiva anche avvisi univoci sulle attività che possono essere identificate come dannose solo in base alla visibilità end-to-end che Microsoft 365 Defender ha nell'intera famiglia di prodotti. Questa visualizzazione offre agli analisti della sicurezza la più ampia storia di attacco, che li aiuta a comprendere meglio e gestire le minacce complesse all'interno dell'organizzazione.
+Microsoft 365 Defender applica l'analisi della correlazione e aggrega gli avvisi correlati e le indagini automatizzate di prodotti diversi in un evento imprevisto. Microsoft 365 Defender attiva anche avvisi univoci sulle attività che possono essere identificate solo come dannose, data la visibilità end-to-end che Microsoft 365 Defender ha nell'intera famiglia di prodotti. Questa visualizzazione offre agli analisti della sicurezza la più ampia storia di attacco, che li aiuta a comprendere meglio e gestire le minacce complesse all'interno dell'organizzazione.
 
 La **coda eventi imprevisti** mostra una raccolta di eventi imprevisti creati su dispositivi, utenti e cassette postali. Ti aiuta a ordinare gli eventi imprevisti in base alla loro priorità e a definire una risposta di cybersecurity mirata. 
 
-È possibile accedere alla coda degli eventi imprevisti da Eventi imprevisti & avvisi **> eventi** imprevisti sulla barra di avvio veloce del Centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)).
+È possibile accedere alla coda degli eventi imprevisti da **Eventi imprevisti &** avvisi > eventi imprevisti sulla barra di avvio veloce del Centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Di seguito viene riportato un esempio.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Esempio di coda degli eventi imprevisti":::
 
-Per impostazione predefinita, nella coda degli eventi imprevisti nel Centro sicurezza Microsoft 365 vengono visualizzati gli eventi imprevisti visualizzati negli ultimi sei mesi. L'evento imprevisto più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo.
+La **sezione Eventi imprevisti e avvisi più** recenti mostra un grafico del numero di avvisi ricevuti e di eventi imprevisti creati nelle ultime 24 ore.
+
+Per impostazione predefinita, nella coda degli eventi imprevisti nel centro sicurezza Microsoft 365 vengono visualizzati gli eventi imprevisti visualizzati negli ultimi sei mesi. L'evento imprevisto più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo.
 
 La coda eventi imprevisti include colonne personalizzabili **(selezionare** Scegli colonne) che offrono visibilità sulle diverse caratteristiche dell'evento imprevisto o sulle entità influenzate. Ciò consente di prendere una decisione informata sulla definizione di priorità degli incidenti per l'analisi.
 
@@ -74,7 +76,7 @@ In questa tabella sono elencati i nomi dei filtri disponibili.
 | Gruppo di dispositivi | Filtra in base ai gruppi di dispositivi definiti. |
 | Stato dell'indagine | Filtra gli incidenti in base allo stato dell'indagine automatizzata.  |
 | Più categorie | È possibile scegliere di visualizzare solo gli eventi imprevisti mappati a più categorie e quindi causare più danni. |
-| Più servizi di origine  | Filtra per visualizzare solo gli eventi imprevisti che contengono avvisi da origini diverse (Microsoft Defender per Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender per Office 365). |
+| Più servizi di origine  | Filtra per visualizzare solo gli eventi imprevisti che contengono avvisi da origini diverse (Microsoft Defender per Endpoint, Microsoft Cloud App Security, Microsoft Defender per l'identità, Microsoft Defender per Office 365). |
 | Piattaforma del sistema operativo | Limitare la visualizzazione della coda degli eventi imprevisti in base al sistema operativo. |
 | Servizi di origine | Scegliendo un’origine specifica puoi concentrarti sugli eventi imprevisti che contengono almeno un avviso dall'origine selezionata. |
 | Gravità | La gravità di un incidente è indicativa dell'impatto che può avere sulle risorse. Maggiore è la gravità, maggiore è l'impatto e in genere richiede l'attenzione più immediata. |
@@ -87,5 +89,5 @@ Dopo aver determinato quale evento imprevisto richiede la priorità più alta, s
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
-- [Analizzare gli eventi imprevisti](investigate-incidents.md)
+- [Analizzare gli incidenti](investigate-incidents.md)
 - [Gestire gli incidenti](manage-incidents.md)

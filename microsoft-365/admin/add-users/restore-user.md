@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Informazioni su come ripristinare gli account utente eliminati e tutti i dati associati.
-ms.openlocfilehash: 4893f7468a8ab5919dd3be1cce233917323f2076
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9cdc4100f963ed450b50caa0f07a3863bc87992d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023966"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244033"
 ---
 # <a name="restore-a-user"></a>Ripristinare un utente
    
@@ -42,30 +42,12 @@ Ecco un paio di suggerimenti:
     
 ## <a name="restore-one-or-more-user-accounts"></a>Ripristinare uno o più account utente
 
-Per eseguire questa procedura, è necessario essere un amministratore globale di Microsoft 365 o un amministratore di gestione degli utenti. 
-  
- 
-::: moniker range="o365-worldwide"
+Per eseguire questa procedura, Microsoft 365 amministratore globale o amministratore di gestione utenti. 
 
 1. Nell'interfaccia di amministrazione passare alla **pagina Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">utenti eliminati.</a>
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Accedere [all'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=848041)e quindi selezionare **Utenti** \> **Eliminati utenti**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Accedere [all'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=850627)e quindi selezionare **Utenti** \> **Eliminati utenti**.
-
-::: moniker-end
-
 2. Nella pagina **Utenti eliminati** selezionare i nomi degli utenti che si desidera ripristinare e quindi selezionare **Ripristina**.
     
- 
 3. Seguire le istruzioni visualizzate per impostare la password e quindi selezionare **Ripristina**.
     
 4. Se l'utente viene ripristinato correttamente, selezionare **Invia messaggio di posta elettronica e chiudi**. Se si riscontra un conflitto tra nomi o indirizzi proxy, vedere le istruzioni di seguito per ripristinare questi account.
@@ -73,31 +55,12 @@ Per eseguire questa procedura, è necessario essere un amministratore globale di
 Dopo aver ripristinato un utente, assicurati di avvisarlo che la password è cambiata e di seguirli.
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>Ripristinare un utente con conflitto relativo al nome utente
-<a name="RestoreUserNameConflict"> </a>
 
 I conflitti relativi al nome utente si verificano quando l'amministratore elimina un account utente, ne crea uno nuovo con lo stesso nome utente (per lo stesso utente o per un altro utente con nome simile) e successivamente cerca di ripristinare l'account eliminato.
   
 Per risolvere i conflitti di questo tipo, sostituire l'account utente attivo con quello da ripristinare oppure assegnare un altro nome utente a quest'ultimo account, in modo da evitare che esistano due account con lo stesso nome utente. Ecco come fare.
-  
-
-::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla **pagina Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">utenti eliminati.</a>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Accedere [all'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=848041)e quindi selezionare **Utenti** \> **Eliminati utenti**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Accedere [all'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=850627)e quindi selezionare **Utenti** \> **Eliminati utenti**.
-
-::: moniker-end
-
   
 2. Nella pagina **Utenti eliminati** selezionare i nomi degli utenti che si desidera ripristinare e quindi selezionare **Ripristina**.
     
@@ -118,26 +81,9 @@ Per risolvere i conflitti di questo tipo, sostituire l'account utente attivo con
 
 I conflitti relativi all'indirizzo proxy si verificano quando l'amministratore elimina un account utente contenente un indirizzo proxy, assegna lo stesso indirizzo proxy a un altro account, quindi cerca di ripristinare l'account eliminato. Eseguire la procedura seguente per risolvere il problema.
   
-A tale [scopo, è necessario](about-admin-roles.md) disporre delle autorizzazioni di amministratore in Microsoft 365. 
-  
-
-::: moniker range="o365-worldwide"
+A tale [scopo,](about-admin-roles.md) è necessario disporre Microsoft 365 autorizzazioni di amministratore. 
 
 1. Nell'interfaccia di amministrazione passare alla **pagina Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">utenti eliminati.</a>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Accedere [all'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=848041)e quindi selezionare **Utenti** \> **Eliminati utenti**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Accedere [all'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=850627)e quindi selezionare **Utenti** \> **Eliminati utenti**.
-
-::: moniker-end
 
 2. Nella pagina **Utenti eliminati** selezionare l'utente da ripristinare e quindi scegliere **Ripristina**. 
     

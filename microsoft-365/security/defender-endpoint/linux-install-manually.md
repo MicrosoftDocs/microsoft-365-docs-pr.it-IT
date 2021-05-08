@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c13138f3d80a95dbda3a899507f662c081831d94
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929086"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259680"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint su Linux
 
@@ -166,10 +166,10 @@ Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipa
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
     Ad esempio, se hai scelto *il canale prod:*
-    
+
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```   
+    ```
 
 - Installare il `gpg` pacchetto se non è già installato:
 
@@ -268,11 +268,11 @@ Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipa
 
 Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
 
-1. In Microsoft Defender Security Center, vai a **Impostazioni > Gestione dispositivi > onboarding**.
+1. In Microsoft Defender Security Center passare a Gestione **Impostazioni > dispositivi > onboarding**.
 2. Nel primo menu a discesa seleziona **Linux Server** come sistema operativo. Nel secondo menu a discesa seleziona Script locale (per un massimo **di 10 dispositivi)** come metodo di distribuzione.
 3. Seleziona **Scarica pacchetto di onboarding.** Salvare il file come WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Screenshot di Microsoft Defender Security Center](images/atp-portal-onboarding-linux.png)
+    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
 
 4. Da un prompt dei comandi, verificare di disporre del file.
     Estrarre il contenuto dell'archivio:
@@ -341,7 +341,7 @@ Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
     - Aprire una finestra terminale. Copiare ed eseguire il comando seguente:
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
     - Il file dovrebbe essere stato messo in quarantena da Defender per Endpoint su Linux. Utilizzare il comando seguente per elencare tutte le minacce rilevate:
@@ -352,7 +352,7 @@ Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
 
 ## <a name="installer-script"></a>Script del programma di installazione
 
-In alternativa, puoi usare uno script di avvio automatico del [programma](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) di installazione fornito nel repository [GitHub pubblico.](https://github.com/microsoft/mdatp-xplat/)
+In alternativa, puoi usare uno script di avvio automatico del [programma](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) di installazione fornito nel nostro repository GitHub [pubblico.](https://github.com/microsoft/mdatp-xplat/)
 Lo script identifica la distribuzione e la versione e configura il dispositivo per estrarre il pacchetto più recente e installarlo.
 Puoi anche eseguire l'onboardboard con uno script fornito.
 

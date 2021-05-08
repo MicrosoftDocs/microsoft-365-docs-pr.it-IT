@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 976a79be98efcbb5d7fd3749ddb0cdb282b1e3e3
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fcb7283faed6fe8c5af59cedeeb90577b557ab34
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274569"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259536"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Indagine e risposta automatizzate in Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "52274569"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Se l'organizzazione usa [Microsoft 365 Defender,](microsoft-365-defender.md)il team delle operazioni di sicurezza riceve un avviso nel centro sicurezza Microsoft 365 ogni volta che viene rilevata un'attività o un artefatto dannoso o sospetto. Dato il flusso apparentemente senza fine delle minacce che possono arrivare, i team di sicurezza spesso devono affrontare la sfida di affrontare l'elevato volume di avvisi. Fortunatamente, Microsoft 365 Defender include funzionalità di analisi e risposta automatizzate (AIR) che consentono al team delle operazioni di sicurezza di affrontare le minacce in modo più efficiente ed efficiente.
+Se l'organizzazione usa [Microsoft 365 Defender,](microsoft-365-defender.md)il team delle operazioni di sicurezza riceve un avviso nel centro sicurezza Microsoft 365 ogni volta che viene rilevata un'attività o un artefatto dannoso o sospetto. Dato il flusso apparentemente senza fine delle minacce che possono arrivare, i team di sicurezza spesso devono affrontare la sfida di affrontare l'elevato volume di avvisi. Fortunatamente, Microsoft 365 Defender include funzionalità di analisi e correzione automatizzate (AIR) che consentono al team delle operazioni di sicurezza di affrontare le minacce in modo più efficiente ed efficiente.
 
 In questo articolo viene fornita una panoramica di AIR e vengono forniti collegamenti ai passaggi successivi e a risorse aggiuntive.
 
@@ -59,7 +59,7 @@ In Microsoft 365 Defender, l'indagine e la risposta automatizzate con funzionali
 
 Imagine avere un analista virtuale nel team di operazioni di sicurezza di livello 1 o di livello 2. L'analista virtuale simula i passaggi ideali che le operazioni di sicurezza seguirebbero per analizzare e correggere le minacce. L'analista virtuale potrebbe lavorare 24x7, con capacità illimitata, e assumere un carico significativo di indagini e di correzione delle minacce. Un analista virtuale di questo tipo potrebbe ridurre in modo significativo il tempo necessario per rispondere, liberando il team delle operazioni di sicurezza per altre minacce importanti o progetti strategici. Se questo scenario sembra fantascienza, non lo è! Tale analista virtuale fa parte della famiglia Microsoft 365 Defender e il suo nome è analisi e risposta *automatizzate.*
 
-Le funzionalità di analisi e risposta automatizzate consentono al team delle operazioni di sicurezza di aumentare notevolmente la capacità dell'organizzazione di gestire gli avvisi e gli incidenti di sicurezza. Grazie all'indagine e alla risposta automatizzate, è possibile ridurre i costi di gestione delle attività di indagine e di risposta e ottenere il massimo dalla famiglia di prodotti di protezione dalle minacce. Le funzionalità di analisi e risposta automatizzate consentono al team delle operazioni di sicurezza di:
+Le funzionalità di analisi e risposta automatizzate consentono al team delle operazioni di sicurezza di aumentare notevolmente la capacità dell'organizzazione di gestire gli avvisi e gli incidenti di sicurezza. Grazie all'indagine e alla risposta automatizzate, è possibile ridurre i costi di gestione delle attività di indagine e correzione e ottenere il massimo dalla famiglia di prodotti di protezione dalle minacce. Le funzionalità di analisi e risposta automatizzate consentono al team delle operazioni di sicurezza di:
 
 1. Determinare se una minaccia richiede un'azione.
 2. Eseguire (o consigliare) tutte le azioni di correzione necessarie.

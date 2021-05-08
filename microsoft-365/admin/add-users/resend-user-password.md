@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: Informazioni su come reimpostare la password e inviare un messaggio di posta elettronica a un nuovo utente di Microsoft 365.
-ms.openlocfilehash: 2b2c8657a4bbd4745a3fee34fc259244b83640d3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: Informazioni su come reimpostare la password e inviare un messaggio di posta elettronica a un nuovo Microsoft 365 utente.
+ms.openlocfilehash: 17db9a61dc12c349f0aea032655b56c2a448653f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222100"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244045"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Inviare nuovamente la password utente - Guida per amministratori
 
@@ -39,23 +39,7 @@ Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un a
 
 ## <a name="resend-user-password"></a>Inviare nuovamente la password utente
   
-::: moniker range="o365-worldwide"  
-  
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
-
-::: moniker-end
 
 2. Nella pagina **Utenti attivi** selezionare l'utente e quindi Reimposta **password.**
 

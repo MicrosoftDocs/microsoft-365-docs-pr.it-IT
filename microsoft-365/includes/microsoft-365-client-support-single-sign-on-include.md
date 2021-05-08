@@ -29,6 +29,6 @@
 |TEAMS|✔|✔|Pianificato|✔|N/D|
 |TO-DO|✔|✔|N/D|N/D|✔|
 |VISIO|N/D|✔|N/D|✔|N/D|
-|LAVAGNA|N/D|✔|N/D|N/D|✔|
+|LAVAGNA|✔|✔|N/D|N/D|✔|
 |WORD|✔|✔|✔|✔|✔|
 |YAMMER|✔|✔|N/D|Pianificato|N/D|
