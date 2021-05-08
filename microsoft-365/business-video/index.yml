@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Formazione su Microsoft 365 Small Business
-summary: Scopri come configurare e gestire Microsoft 365 per la tua azienda.
+summary: Scopri come configurare e gestire le Microsoft 365 per la tua azienda.
 brand: m365
 metadata:
   title: Formazione su Microsoft 365 Small Business
-  description: Configurare e gestire Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365.
+  description: Configurare e gestire le Microsoft 365 nell'Microsoft 365 di amministrazione.
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -29,7 +29,7 @@ productDirectory:
       url: upgrade.md
     - title: Configurare i dispositivi mobili
       imageSrc: 'https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg'
-      summary: Installare le app di Office nei dispositivi mobili.
+      summary: Installa Office app nei dispositivi mobili.
       url: work-from-anywhere.md
     - title: Collaborare con altre persone
       imageSrc: 'https://docs.microsoft.com/office/media/icons/collaborate-blue.svg'
@@ -61,18 +61,18 @@ productDirectory:
       url: overview-m365-security.md
     - title: Ottieni supporto
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
-      summary: Ottenere assistenza con Microsoft 365 per le aziende.
-      url: find-help-answers.md
+      summary: Ottenere assistenza per Microsoft 365 per le aziende.
+      url: get-help-support.md
 additionalContent:
   sections:
     - title: Altre informazioni
       items:
         - title: Informazioni su Office
-          summary: 'Informazioni su come usare Word, Excel, PowerPoint e altre app di Office.'
+          summary: 'Informazioni su come usare Word, Excel, PowerPoint e altre Office app.'
           url: 'https://support.microsoft.com/training'
         - title: Formazione per ITPros
           summary: Percorsi di apprendimento completi per le aziende di medie e medie dimensioni.
           url: 'https://docs.microsoft.com/learn/m365/'
         - title: Trovare altre risorse di amministrazione
-          summary: Passare al sito della Guida dell'interfaccia di amministrazione di Microsoft 365.
+          summary: Passare al sito della Guida Microsoft 365'interfaccia di amministrazione.
           url: ../admin/index.yml
