@@ -5,35 +5,31 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
-- BCS160
-- MET150
-- MOE150
-- BEA160
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
 ms.date: 07/31/2020
-ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060968"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280824"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visualizzare la fattura
 
@@ -49,25 +45,39 @@ Se serve aiuto per interpretare gli addebiti riportati nella fattura, vedere [In
   
 ## <a name="view-a-bill-or-invoice"></a>Visualizzare un estratto conto o una fattura
 
+::: moniker range="o365-worldwide"
+
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
-    - Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fatture e pagamenti</a>.
-    - Se si usa Office 365 gestito da 21Vianet, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fatture e pagamenti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fatture e pagamenti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fatture e pagamenti</a>.
+
+::: moniker-end
+
 2. Nella scheda **Fatture**, selezionare un intervallo di date nell’elenco a discesa e scegliere l’ordine da visualizzare.
 3. Nella pagina di riepilogo è possibile visualizzare gli elementi, la quantità, il prezzo, lo sconto e il totale di tutti gli elementi della fattura.
 4. Per stampare o salvare una copia PDF della fattura, selezionare **Scarica PDF**.
 
-::: moniker region="o365-21vianet"
+::: moniker range="o365-21vianet"
 
 ## <a name="request-a-fapiao"></a>Richiedere una Fapiao
 
 È possibile inviare la richiesta per una Fapiao al [Sistema di gestione Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) tre (3) giorni circa dopo il pagamento.
 
-1. Nell'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a> passare alla pagina **Fatturazione** > **Fatture e pagamenti**.
-
+1. Nell'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a> passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">**Fatture e pagamenti**</a>.
 2. Trovare la fattura desiderata quindi selezionare **Ottieni Fapiao**.
 
 > [!NOTE]
-
+>
 > È necessario un account registrato per accedere al [Sistema di gestione Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465). Se non è già stato configurato un account, vedere [Inviare richiesta di Fapiao per Office 365 gestito da 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end

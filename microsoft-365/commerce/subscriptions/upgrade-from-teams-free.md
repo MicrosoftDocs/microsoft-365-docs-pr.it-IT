@@ -1,5 +1,5 @@
 ---
-title: Eseguire l'aggiornamento da Microsoft Teams gratuito a Microsoft 365 per le aziende
+title: Aggiornamento da Microsoft Teams gratuito a Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
 - fwlink 2135143
@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,67 +15,67 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: ''
-search.appverid: ''
-description: Informazioni su come eseguire l'aggiornamento da Microsoft Teams Gratuito a un nuovo abbonamento a Microsoft 365 per le aziende.
+ms.custom:
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
+description: Scopri come eseguire l'aggiornamento da Microsoft Teams gratuito a un nuovo abbonamento Microsoft 365 per le aziende.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 9a50ee669147a600fea9548b1ab8b01f28f53dc1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 75639666aec322e66cd3a529d415ee09b86c9b9f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924327"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280884"
 ---
-# <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Eseguire l'aggiornamento da Microsoft Teams gratuito a Microsoft 365 per le aziende
+# <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Aggiornamento da Microsoft Teams gratuito a Microsoft 365 per le aziende
 
 > [!IMPORTANT]
-> Questo documento si applica solo alle organizzazioni Microsoft Teams Free in India.
+> Questo articolo si applica solo alle Microsoft Teams free in India.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Per aggiornare un'organizzazione gratuita di Microsoft Teams, è necessario essere un amministratore gratuito di Microsoft Teams. L'utente è automaticamente un amministratore se è stata creata l'organizzazione Microsoft Teams Free.
+Devi essere un amministratore gratuito Microsoft Teams aggiornare un'Microsoft Teams gratuita. Sei automaticamente un amministratore se hai creato l'Microsoft Teams Organizzazione gratuita.
 
 ## <a name="step-1-get-your-work-or-school-account-id"></a>Passaggio 1: ottenere l'ID dell'account aziendale o dell'istituto di istruzione
 
-Per iniziare il processo, ottieni l'ID dell'account aziendale o dell'istituto di istruzione sottostante. Questo ID account è diverso dall'indirizzo di posta elettronica utilizzato per accedere a Microsoft Teams Free.
+Per iniziare il processo, ottieni l'ID dell'account aziendale o dell'istituto di istruzione sottostante. Questo ID account è diverso dall'indirizzo di posta elettronica utilizzato per accedere Microsoft Teams gratuito.
 
-1. Vai a <a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank">https://account.activedirectory.windowsazure.com</a>
+1. Vai a <a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank"><https://account.activedirectory.windowsazure.com></a>
 2. Nell'intestazione selezionare l'icona del profilo. L'ID account viene visualizzato sotto il nome e termina con *.onmicrosoft.com*.\
     L'indirizzo di posta elettronica dell'amministratore sarà *simile admin@yourfreeorgname.onmicrosoft.com*.
 
 ## <a name="step-2-reset-your-password"></a>Passaggio 2: Reimpostare la password
 
-Dopo aver creato l'account aziendale o dell'istituto di istruzione sottostante per l'organizzazione gratuita di Microsoft Teams, è necessario reimpostare la password per l'account.
+Dopo aver creato l'account aziendale o dell'istituto di istruzione sottostante per l'organizzazione Microsoft Teams Gratuita, devi reimpostare la password per l'account.
 
-1. Accedere all'interfaccia di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a>. Quando viene richiesto di accedere, scegliere **Password dimenticata.**
+1. Passare <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">all'Microsoft 365 di amministrazione .</a> Quando viene richiesto di accedere, scegliere **Password dimenticata.**
 2. Completare la procedura di reimpostazione della password utilizzando l'account aziendale o dell'istituto di istruzione sottostante (quello che termina con *.onmicrosoft.com*).
 3. Completare i passaggi di verifica. Si riceverà un messaggio di posta elettronica con un codice da utilizzare per impostare una nuova password.
 4. Immetti il codice per completare il processo di verifica.
 
 ## <a name="step-3-buy-your-new-subscription"></a>Passaggio 3: Acquistare il nuovo abbonamento
 
-Usa l'account aziendale o dell'istituto di istruzione sottostante recuperato e la nuova password di amministratore per acquistare un nuovo abbonamento a Microsoft 365 per le aziende.
+Usa l'account aziendale o dell'istituto di istruzione sottostante recuperato e la nuova password di amministratore per acquistare un nuovo abbonamento Microsoft 365 per le aziende.
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 passare a **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acquisto di servizi</a>.
-2. Trova il prodotto Microsoft 365 per le aziende che vuoi acquistare.
+2. Trova il Microsoft 365 per le aziende che vuoi acquistare.
     > [!IMPORTANT]
     > Assicurati di sceglierne uno che includa Microsoft Teams.
-3. Completare l'acquisto. Ricordarsi di acquistare licenze sufficienti per tutti gli utenti nell'organizzazione gratuita di Microsoft Teams che si desidera spostare in Microsoft 365 per le aziende.
+3. Completare l'acquisto. Ricordarsi di acquistare licenze sufficienti per tutti gli utenti dell'organizzazione Microsoft Teams Free che si desidera spostare in Microsoft 365 per le aziende.
 
 ## <a name="step-4-assign-new-licenses-to-users"></a>Passaggio 4: Assegnare nuove licenze agli utenti
 
-Ora che si dispone di un nuovo abbonamento a Microsoft 365 per le aziende, è possibile assegnare licenze agli utenti esistenti nell'organizzazione Gratuita di Microsoft Teams.
+Ora che hai un nuovo abbonamento Microsoft 365 per le aziende, puoi assegnare licenze agli utenti esistenti nell'organizzazione Microsoft Teams Gratuita.
 
 1. Nell'interfaccia di amministrazione passare a **Utenti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-2. Selezionare gli utenti a cui si desidera assegnare le licenze di Microsoft 365 per le aziende, quindi selezionare **Gestisci licenze prodotto.**
+2. Selezionare gli utenti a cui si desidera assegnare Microsoft 365 per le licenze business, quindi selezionare **Gestisci licenze prodotto**.
 3. Nel riquadro **Gestisci licenze prodotto** selezionare Sostituisci **assegnazioni licenze esistenti.**
 4. Nel riquadro **Sostituisci prodotti esistenti** individuare il prodotto Microsoft 365 per le aziende acquistato e impostare l'interruttore su **Attivato.**
 5. Selezionare **Sostituisci** e quindi **Chiudi.**
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Benvenuto in Microsoft Teams gratuito](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (articolo)\
 [Aggiornare Microsoft Teams gratuitamente alla versione di sottoscrizione](/microsoftteams/upgrade-freemium) (articolo)\

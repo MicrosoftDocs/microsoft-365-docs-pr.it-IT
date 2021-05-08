@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 05/20/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3de9ddfc0cab12d2eea717c5d6b01e5b70b21213
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: e0253c4ac7d92c91e3fda45681568d721645f2b0
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765792"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275385"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-av"></a>Ripristinare i file in quarantena in Microsoft Defender AV
 
@@ -31,7 +32,7 @@ ms.locfileid: "51765792"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Se Microsoft Defender Antivirus è configurato per rilevare e correggere le minacce nel dispositivo, Microsoft Defender Antivirus messo in quarantena i file sospetti. Se si è certi che un file in quarantena non sia una minaccia, è possibile ripristinarlo.
+Se Antivirus Microsoft Defender è configurato per rilevare e correggere le minacce nel dispositivo, Antivirus Microsoft Defender i file sospetti. Se si è certi che un file in quarantena non sia una minaccia, è possibile ripristinarlo.
 
 1. Aprire **Sicurezza di Windows**.
 2. Selezionare **Protezione da & virus e** quindi fare clic su Cronologia **protezione**.
@@ -47,4 +48,4 @@ Se Microsoft Defender Antivirus è configurato per rilevare e correggere le mina
 - [Esaminare i risultati dell'analisi](review-scan-results-microsoft-defender-antivirus.md)
 - [Configurare e convalidare le esclusioni in base al nome file, all'estensione e al percorso della cartella](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurare e convalidare le esclusioni per i file aperti dai processi](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configurare le esclusioni di Microsoft Defender Antivirus in Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configurare Antivirus Microsoft Defender esclusioni in Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

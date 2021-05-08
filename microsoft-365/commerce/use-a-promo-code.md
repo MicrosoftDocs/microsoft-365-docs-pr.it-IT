@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,24 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
 ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Scopri come applicare un codice promozionale all'abbonamento a Microsoft 365 per ridurre il prezzo e come risolvere i problemi relativi al codice promozionale in caso di errore.
-ms.openlocfilehash: c526d5fd44db5e653f79c4987a35c72cdd6fdcad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- commerce_purchase
+- PPM_jmueller
+search.appverid: MET150
+description: Scopri come applicare un codice promozionale all'abbonamento Microsoft 365 per ridurre il prezzo e come risolvere i problemi relativi al codice promozionale in caso di errore.
+ms.date: 03/17/2021
+ms.openlocfilehash: 01cc7cd182f3e25867191c83b58016ef090c8934
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921757"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280404"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Usare il codice promozionale per ridurre il prezzo
 
@@ -38,43 +35,32 @@ Quando acquisti un abbonamento, puoi usare un codice promozionale per ridurre il
 ## <a name="apply-a-promo-code-to-your-subscription"></a>Applicare un codice promozionale all'abbonamento
 
 1. Iniziare l'acquisto acquistando un nuovo abbonamento o aggiungendo servizi a un abbonamento esistente.
-    
-2. Quando estrai, scegli **Avere un codice promozionale o di sconto?, quindi immetti il codice nella casella. 
-  
-3. Seleziona **Applica codice promozionale.** Verrà visualizzata la conferma che l'applicazione è stata eseguita correttamente. If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why. 
-    
-4. Continuare l'estrazione. Nella pagina di conferma dell'ordine, vedrai il codice di sconto incluso con l'importo. 
-    
+2. Quando estrai, scegli **Avere un codice promozionale** o sconto? e quindi immetti il codice nella casella.
+3. Seleziona **Applica codice promozionale.** Verrà visualizzata la conferma che l'applicazione è stata eseguita correttamente. If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why.
+4. Continuare l'estrazione. Nella pagina di conferma dell'ordine, vedrai il codice di sconto incluso con l'importo.
+
 In qualsiasi momento dopo il completamento dell'acquisto, lo sconto associato al codice promozionale può essere visualizzato nella fattura. Per ulteriori informazioni, vedere [View your](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Condizioni per i codici promozionali
 
-Le linee guida seguenti si applicano ai codici promozionali per gli abbonamenti a Microsoft 365 per le aziende.
+Le linee guida seguenti si applicano ai codici promozionali per Microsoft 365 per le sottoscrizioni aziendali.
   
-- **Numero di codici promozionali per abbonamento** È possibile usare un codice promozionale per più abbonamenti nello stesso ordine, ma non si possono usare più codici promozionali per lo stesso abbonamento. 
-    
-- **Durata dello sconto** Dopo l'applicazione all'ordine, lo sconto associato al codice promozionale avrà una durata pari a quella dell'abbonamento. Se l'abbonamento è rinnovabile mensilmente, il codice di sconto sarà valido fino alla fine del mese di fatturazione in corso. Se l'abbonamento è rinnovabile annualmente (anche se con pagamento mensile), il codice di sconto sarà valido fino alla fine dell'anno di fatturazione in corso. 
-    
-- **Limiti di licenza per i codici promozionali** Per alcuni codici promozionali è previsto un livello massimo. Lo sconto verrà applicato solo alle licenze fino a tale limite massimo. Per appurare se esistono limitazioni di questo tipo per il codice promozionale disponibile, è possibile consultare i termini e le condizioni corrispondenti. 
-    
-- **Date di fine validità del codice promozionale** La data di fine della promozione è l'ultimo giorno entro il quale è possibile usare un codice promozionale per una specifica campagna. Una volta completato l'acquisto, il prezzo scontato per l'abbonamento verrà applicato per l'intera durata dell'ordine. 
-    
+- **Numero di codici promozionali per abbonamento** È possibile usare un codice promozionale per più abbonamenti nello stesso ordine, ma non si possono usare più codici promozionali per lo stesso abbonamento.
+- **Durata dello sconto** Dopo l'applicazione all'ordine, lo sconto associato al codice promozionale avrà una durata pari a quella dell'abbonamento. Se l'abbonamento è rinnovabile mensilmente, il codice di sconto sarà valido fino alla fine del mese di fatturazione in corso. Se l'abbonamento è rinnovabile annualmente (anche se con pagamento mensile), il codice di sconto sarà valido fino alla fine dell'anno di fatturazione in corso.
+- **Limiti di licenza per i codici promozionali** Per alcuni codici promozionali è previsto un livello massimo. Lo sconto verrà applicato solo alle licenze fino a tale limite massimo. Per appurare se esistono limitazioni di questo tipo per il codice promozionale disponibile, è possibile consultare i termini e le condizioni corrispondenti.
+- **Date di fine validità del codice promozionale** La data di fine della promozione è l'ultimo giorno entro il quale è possibile usare un codice promozionale per una specifica campagna. Una volta completato l'acquisto, il prezzo scontato per l'abbonamento verrà applicato per l'intera durata dell'ordine.
+
 ## <a name="troubleshooting-promo-codes"></a>Risoluzione dei problemi relativi ai codici promozionali
 
 Se viene visualizzato un messaggio di errore dopo l'immissione del codice promozionale, i motivi possono essere vari. L'elenco seguente contiene le cause più comuni.
   
 - **È stato commesso un errore di digitazione durante l'immissione del codice.** Fare attenzione a eventuali trattini, alla combinazione di maiuscole e minuscole o alla presenza di simboli speciali nel codice promozionale. I codici promozionali devono essere immessi in modo esatto.
-  
 - **Si sta tentando di applicare il codice promozionale a un abbonamento non nuovo.** I codici promozionali sono destinati ai nuovi abbonamenti. Se si tenta di usarli in un abbonamento già attivo, l'opzione per applicare il codice promozionale non sarà disponibile. Non esiste alcun modo per usare un codice promozionale dopo aver finalizzato l'acquisto.
-  
 - **Il codice promozionale è scaduto.** Le campagne promozionali sono valide per periodi di tempo limitati. I codici promozionali hanno una data di scadenza. Un codice promozionale non sarà più utilizzabile in caso di superamento della data di scadenza. Non esiste alcun modo per accettare o sostituire i codici promozionali scaduti, ma è comunque possibile acquistare un abbonamento senza codice promozionale.
-  
 - **Il codice promozionale in uso non è valido per l'area geografica di appartenenza.** Alcuni codici promozionali sono validi sono in aree geografiche o paesi specifici. I codici promozionali sono validi solo nel paese o nell'area geografica in cui sono stati creati.
   
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuti correlati
 
-[Acquistare un abbonamento dalla versione di valutazione gratuita](./try-or-buy-microsoft-365.md)
-  
-[Acquistare un altro abbonamento](./try-or-buy-microsoft-365.md)
-  
-[Acquistare o modificare un componente aggiuntivo](buy-or-edit-an-add-on.md)
+[Acquistare un abbonamento dalla versione di valutazione gratuita](./try-or-buy-microsoft-365.md) (articolo)\  
+[Acquistare un altro abbonamento](./try-or-buy-microsoft-365.md) (articolo)\  
+[Acquistare o modificare un componente aggiuntivo](buy-or-edit-an-add-on.md) (articolo)

@@ -3,6 +3,7 @@ title: Microsoft Home Use Program domande frequenti
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -10,21 +11,24 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: Domande frequenti sull'Microsoft Home Use Program.
-ms.openlocfilehash: e4940460501da94960cb82eb311a1d1d6470cc63
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/01/2021
+ms.openlocfilehash: 5f10e5fb313ec7b48605975a7e03f262fd742801
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244697"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280812"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft Home Use Program domande frequenti
 
-I clienti con contratti multilicenza usano Microsoft Home Use Program (HUP) nel [sito Web Microsoft Store per le aziende .](https://go.microsoft.com/fwlink/?linkid=2139192) 
+I clienti con contratti multilicenza usano Microsoft Home Use Program (HUP) nel [sito Web Microsoft Store per le aziende .](https://go.microsoft.com/fwlink/?linkid=2139192)
 
 Tutti gli altri clienti accedono a HUP usando questo passaggio:
 
@@ -46,12 +50,9 @@ Gli sconti sulle Microsoft 365 Family e sulle sottoscrizioni personali sono offe
 
 Per i dipendenti di usufruire dello sconto Microsoft Home Use Program, hanno bisogno di un indirizzo di posta elettronica aziendale valido e di un account Microsoft attivo e l'organizzazione deve soddisfare uno dei seguenti criteri:
 
-- Clienti che dispongono di Software Assurance attivo per le applicazioni Office idonee 
-
+- Clienti che dispongono di Software Assurance attivo per le applicazioni Office idonee
 - Clienti che hanno Microsoft 365/Microsoft 365 E3/E5 da Software Assurance
-
 - Clienti commerciali e governativi che hanno acquistato ≥ 2.000 licenze di una o una combinazione di Microsoft 365 E3/E5
-
 - Clienti dell'istruzione e no profit
 
 ## <a name="why-do-i-have-to-create-an-azure-active-directory-aad-account-to-use-the-home-use-program-microsoft-store-for-business"></a>Perché è necessario creare un account Azure Active Directory (AAD) per utilizzare il programma Home Use Program/Microsoft Store per le aziende?
@@ -73,11 +74,8 @@ Utilizzare le risorse disponibili nella home page del programma [Home Use Progra
 ## <a name="what-are-the-steps-for-an-eligible-employee-to-make-a-microsoft-home-use-program-purchase"></a>Quali sono i passaggi per un dipendente idoneo per effettuare un Microsoft Home Use Program acquisto?
 
 1. **Iscriviti** Vai alla pagina [Microsoft Home Use Program e](https://www.microsoft.com/home-use-program)seleziona il pulsante Informazioni di base. I dipendenti immettono l'indirizzo di posta elettronica aziendale.
-
 2. **Conferma**  Un messaggio di posta elettronica viene inviato alla posta in arrivo dell'indirizzo di posta elettronica aziendale con un collegamento che autentica l'idoneità per il programma.
-
 3. **Accedi** Dopo l'autenticazione, iniziano il processo di acquisto fornendo l'account Microsoft associato all'indirizzo di posta elettronica personale, che consente loro di visualizzare gli sconti sui prodotti disponibili in base ai vantaggi del programma Home Use Program dell'organizzazione. Per altre info, vedi [Come accedere al tuo account Microsoft.](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)
-
 4. **Negozio** L'acquisto viene elaborato e completato nel Microsoft Store.
 
 ## <a name="if-an-employee-subscribes-to-microsoft-365-through-the-microsoft-home-use-program-how-does-this-impact-our-organizations-microsoft-365-business-subscription-and-device-limit"></a>Se un dipendente sottoscrive Microsoft 365 tramite il Microsoft Home Use Program, in che modo questo influisce sulla sottoscrizione aziendale e sul limite di dispositivi dell'organizzazione Microsoft 365'azienda?
@@ -105,23 +103,15 @@ Se i dipendenti hanno domande, fare riferimento alle risorse seguenti:
  Per assistenza in caso di problemi tecnici, vedere [Supporto Tecnico Microsoft.](https://support.microsoft.com/) Troverai assistenza per:
 
 - Stato dell'ordine
-
 - Fatturazione
-
 - Installazione di Office
-
 - Accesso a Office
 
 ## <a name="related-content"></a>Contenuti correlati
 
-[Microsoft 365 sottoscrizioni .](https://www.microsoft.com/home-use-program/) (pagina di collegamento)
-
-[Centro servizi per contratti multilicenza Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (pagina dei collegamenti)
-
-[Microsoft Store per le aziende admin support](/microsoft-store/) (pagina di collegamento)
-
-[Microsoft Store per le aziende](https://go.microsoft.com/fwlink/?linkid=2139192) (pagina di collegamento)
-
-[Home Use Program employee store](https://www.microsoft.com/home-use-program) (pagina di collegamento)
-
+[Microsoft 365 sottoscrizioni .](https://www.microsoft.com/home-use-program/) (pagina di collegamento)\
+[Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (pagina di collegamento)\
+[Microsoft Store per le aziende admin support](/microsoft-store/) (pagina di collegamento)\
+[Microsoft Store per le aziende](https://go.microsoft.com/fwlink/?linkid=2139192) (pagina di collegamento)\
+[Home Use Program employee store](https://www.microsoft.com/home-use-program) (link page)\
 [Licenze Microsoft: panoramica del programma per uso domestico](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (pagina dei collegamenti)

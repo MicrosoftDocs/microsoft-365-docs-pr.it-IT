@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,19 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Scopri quali opzioni di pagamento sono disponibili per pagare l'abbonamento con un profilo di fatturazione.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: be89c2d355202dd8ca8698ac735cbb384bb8ef06
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_billing
+- PPM_jmueller
+ms.date: 04/02/2021
+ms.openlocfilehash: 00c1fdca0f1ba227dcd10dffb7c46b03618593e7
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579771"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280860"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Come pagare l'abbonamento con un profilo di fatturazione
 
@@ -62,6 +64,7 @@ Per istruzioni sul pagamento, vedere [Pagare la fattura](view-your-bill-or-invoi
  **Selezionare il paese/area geografica di destinazione della fattura nel menu a discesa sotto.**
 
 > [!div class="op_single_selector"]
+>
 > - **Selezionare il paese o l'area geografica**
 > - [Afghanistan](../pay/afghanistan.md)
 > - [Albania](../pay/albania.md)
@@ -217,7 +220,7 @@ Per istruzioni sul pagamento, vedere [Pagare la fattura](view-your-bill-or-invoi
 
 ## <a name="can-i-pay-my-invoice-online"></a>Possibilità di pagare la fattura online
 
-Se la fatturazione ricorrente è disattivata per il profilo di fatturazione, è possibile utilizzare una carta di credito per pagare la fattura online. Per effettuare un pagamento, usa **il** pulsante Paga ora nella fattura nell'interfaccia di amministrazione di Microsoft 365. Per trovare la fattura, vedere Visualizzare la fattura o [la fattura.](view-your-bill-or-invoice.md)
+Se la fatturazione ricorrente è disattivata per il profilo di fatturazione, è possibile utilizzare una carta di credito per pagare la fattura online. Per effettuare un pagamento, usa il **pulsante** Paga ora nella fattura nell'Microsoft 365 di amministrazione. Per trovare la fattura, vedere Visualizzare la fattura o [la fattura.](view-your-bill-or-invoice.md)
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Passaggio dalla modalità di pagamento attuale a quella tramite fattura
 

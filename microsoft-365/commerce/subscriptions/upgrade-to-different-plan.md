@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: Informazioni su come eseguire l'aggiornamento a un piano diverso.
-ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.date: 04/21/2021
+ms.openlocfilehash: d9adf8bb18279d5057278a7c55cd751838325bc2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939173"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280440"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
 
@@ -36,20 +37,13 @@ Quando l'azienda cambia o sono necessarie altre funzionalità, è possibile aggi
 Quando si utilizza la **scheda** Aggiornamento, viene eseguito il processo di acquisto di un nuovo piano. A tutti gli utenti vengono assegnate automaticamente licenze nel nuovo piano e il vecchio piano viene annullato automaticamente.
 
 1. Nell'interfaccia di amministrazione passare alla **pagina Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti.</a>
-
 2. Selezionare la sottoscrizione che si desidera aggiornare.
-
 3. Nella pagina dei dettagli della sottoscrizione selezionare **Aggiorna**.
-
 4. Trova il piano a cui vuoi eseguire l'aggiornamento, quindi seleziona il **pulsante** Aggiorna.
-
 5. Immetti il numero di licenze necessarie, scegli se pagare ogni mese o per l'intero anno, quindi seleziona **Vai all'estrazione.**
-
     > [!NOTE]
     > Assicurati di acquistare licenze sufficienti per coprire tutti gli utenti.
-
 6. Nella pagina successiva, verificare **l'indirizzo** Venduto a, Le informazioni fatturate e **Gli elementi nell'ordine indicato.**  In questo passaggio è possibile modificare la modalità di pagamento predefinita. Se è necessario apportare modifiche, selezionare **Cambia** accanto alla sezione applicabile.
-
 7. Al termine, selezionare Inserisci **ordine.**
 
 Al termine dell'estrazione, potrebbero essere necessario alcuni minuti per completare l'aggiornamento. È possibile iniziare subito a usare il nuovo abbonamento. Selezionare **Controlla stato aggiornamento** per verificare lo stato dell'aggiornamento. Al termine dell'aggiornamento, si verrà informati. La notifica viene visualizzata nella pagina **I tuoi prodotti,** accanto al nuovo abbonamento.
@@ -62,7 +56,7 @@ Se la **scheda** Aggiornamento è vuota, verrà visualizzata una spiegazione del
 
 Quando si utilizza la **scheda Aggiornamento,** i piani a cui è possibile eseguire l'aggiornamento vengono visualizzati in base ai servizi del piano corrente. È possibile utilizzare la **scheda Aggiornamento** solo per passare a un piano con gli stessi servizi correlati ai dati o a una versione successiva. Ciò garantisce che gli utenti non perdano i dati relativi a tali servizi durante la modifica.
 
-Se si desidera passare a un piano con un numero minore di servizi, è possibile modificare i piani [manualmente](change-plans-manually.md)oppure chiamare [il supporto](../../admin/contact-support-for-business-products.md) tecnico per assistenza.
+Se si desidera passare a un piano con un numero minore di servizi, è possibile modificare i piani [manualmente](change-plans-manually.md)oppure chiamare [il supporto](../../business-video/get-help-support.md) tecnico per assistenza.
 
 ## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Voglio solo aggiornare alcuni dei miei utenti. Come si fa?
 
@@ -80,43 +74,43 @@ Se nella scheda Aggiornamento non  è presente alcun piano, significa che il pia
 
 ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Perché non sono elencati piani per l'aggiornamento?
 
-#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Non è possibile aggiornare le sottoscrizioni ora perché sono disponibili più utenti che licenze.
+#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Non è possibile aggiornare le sottoscrizioni ora perché sono disponibili più utenti che licenze
 
-Per aggiornare automaticamente i piani, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../commerce/licenses/buy-licenses.md). Dopo aver risolto eventuali conflitti di licenza, i piani dovrebbero essere elencati nella **scheda** Aggiornamento. In caso contrario, è possibile [modificare i piani manualmente](change-plans-manually.md)oppure chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
+Per aggiornare automaticamente i piani, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../commerce/licenses/buy-licenses.md). Dopo aver risolto eventuali conflitti di licenza, i piani dovrebbero essere elencati nella **scheda** Aggiornamento. In caso contrario, è possibile [modificare i piani manualmente](change-plans-manually.md)oppure chiamare il [supporto](../../business-video/get-help-support.md)tecnico.
 
-#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Non è possibile aggiornare le sottoscrizioni al momento perché questa sottoscrizione non è completamente impostata o il servizio non è disponibile.
+#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Non è possibile aggiornare le sottoscrizioni al momento perché questa sottoscrizione non è completamente impostata o il servizio non è disponibile
 
 Ad esempio, se uno dei servizi presenta un evento imprevisto, non sarà possibile eseguire l'aggiornamento finché tutti i servizi non saranno integri. Per verificare se sono presenti problemi di provisioning o di integrità del servizio, nell'interfaccia di amministrazione passare alla **pagina Integrità** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">servizio integrità.</a>
 
-Se il provisioning del piano non è stato ancora completato o si è verificato un problema di integrità di un servizio, attendere alcune ore finché il servizio non diventa di nuovo disponibile e riprovare. Se il problema persiste, contattare [il supporto](../../admin/contact-support-for-business-products.md).
+Se il provisioning del piano non è stato ancora completato o si è verificato un problema di integrità di un servizio, attendere alcune ore finché il servizio non diventa di nuovo disponibile e riprovare. Se il problema persiste, contattare [il supporto](../../business-video/get-help-support.md).
 
-#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>Non è possibile aggiornare i piani perché è in corso l'aggiornamento di un altro piano o è in sospeso una verifica del credito.
+#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>Non è possibile aggiornare i piani perché è in corso l'aggiornamento di un altro piano o è in sospeso una verifica del credito
 
 Attendere che la verifica del credito sia stata completata prima di aggiornare i piani. Le verifiche del credito possono richiedere fino a due giorni lavorativi.
 
-#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>Attualmente, questa sottoscrizione non è idonea per l'aggiornamento.
+#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>Attualmente, questa sottoscrizione non è idonea per l'aggiornamento
 
-È possibile [modificare i piani manualmente o](change-plans-manually.md) chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
+È possibile [modificare i piani manualmente o](change-plans-manually.md) chiamare il [supporto](../../business-video/get-help-support.md)tecnico.
 
-#### <a name="i-see-a-different-message-than-whats-listed-here"></a>Il messaggio visualizzato è diverso rispetto a quello riportato di seguito.
+#### <a name="i-see-a-different-message-than-whats-listed-here"></a>Viene visualizzato un messaggio diverso da quello elencato qui
 
-È possibile [modificare i piani manualmente o](change-plans-manually.md) chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
+È possibile [modificare i piani manualmente o](change-plans-manually.md) chiamare il [supporto](../../business-video/get-help-support.md)tecnico.
 
 ### <a name="additional-reasons-you-cant-upgrade"></a>Altri motivi per cui non è possibile eseguire l'aggiornamento
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Sono disponibili due o più piani per lo stesso prodotto
 
-È possibile utilizzare la **scheda Aggiornamento** solo se tutti gli utenti sottoscriveno lo stesso piano. Ad esempio, se si dispone di due piani Di Microsoft 365 Business Standard, non sarà possibile aggiornare automaticamente uno di essi a un altro piano.
+È possibile utilizzare la **scheda Aggiornamento** solo se tutti gli utenti sottoscriveno lo stesso piano. Ad esempio, se si dispone di due Microsoft 365 Business Standard, non sarà possibile aggiornare automaticamente uno di essi a un altro piano.
 
 #### <a name="you-have-a-prepaid-plan"></a>Si ha un piano prepagato
 
 Se hai pagato l'abbonamento in anticipo, potresti essere in grado di [modificare i piani manualmente.](change-plans-manually.md) Tuttavia, non si riceverà un credito per il tempo inutilizzato rimanente nell'abbonamento corrente se si aggiornano i piani prima della scadenza del piano corrente.
 
-Puoi anche chiamare [il supporto](../../admin/contact-support-for-business-products.md) per assistenza.
+Puoi anche chiamare [il supporto](../../business-video/get-help-support.md) per assistenza.
 
 #### <a name="you-have-a-government-or-non-profit-plan"></a>Il piano è destinato a enti pubblici o organizzazioni no profit
 
-Se si dispone di un piano governativo o no profit, è possibile modificare i piani [manualmente](change-plans-manually.md) o [chiamare il supporto](../../admin/contact-support-for-business-products.md) per assistenza.
+Se si dispone di un piano governativo o no profit, è possibile modificare i piani [manualmente](change-plans-manually.md) o [chiamare il supporto](../../business-video/get-help-support.md) per assistenza.
 
 #### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>L'abbonamento da cui si desidera eseguire l'aggiornamento presenta un problema temporaneo
 
@@ -124,9 +118,9 @@ Se si dispone di un piano governativo o no profit, è possibile modificare i pia
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Il piano a cui si desidera eseguire l'aggiornamento non è un'opzione supportata
 
-Quando si aggiornano i piani, i piani disponibili per l'aggiornamento vengono visualizzati in base ai servizi del piano corrente. È possibile eseguire l'aggiornamento solo a un piano con gli stessi servizi correlati ai dati, ad esempio Exchange Online o SharePoint Online, o a una versione successiva di tali servizi. In questo modo si garantisce che gli \' utenti non perdano i dati relativi a tali servizi durante l'aggiornamento.
+Quando si aggiornano i piani, i piani disponibili per l'aggiornamento vengono visualizzati in base ai servizi del piano corrente. È possibile eseguire l'aggiornamento solo a un piano con gli stessi servizi correlati ai dati, ad esempio Exchange Online o SharePoint Online, o a una versione superiore di tali servizi. In questo modo si garantisce che gli \' utenti non perdano i dati relativi a tali servizi durante l'aggiornamento.
 
-Se il piano non è idoneo per l'aggiornamento automatico dei piani, potrebbe essere possibile modificare [i piani manualmente,](change-plans-manually.md)invece. Puoi anche chiamare [il supporto](../../admin/contact-support-for-business-products.md) per assistenza.
+Se il piano non è idoneo per l'aggiornamento automatico dei piani, potrebbe essere possibile modificare [i piani manualmente,](change-plans-manually.md)invece. Puoi anche chiamare [il supporto](../../business-video/get-help-support.md) per assistenza.
 
 #### <a name="your-subscription-has-an-add-on"></a>L'abbonamento ha un componente aggiuntivo
 
@@ -142,19 +136,19 @@ Quando si aggiornano automaticamente i piani utilizzando il pulsante Cambia pian
 
 ### <a name="access-to-services"></a>Accesso ai servizi
 
- **Gli amministratori** non potranno usare l'interfaccia di amministrazione durante l'aggiornamento del piano. L'operazione può richiedere fino a un'ora.
+**Gli amministratori** non potranno usare l'interfaccia di amministrazione durante l'aggiornamento del piano. L'operazione può richiedere fino a un'ora.
   
- **Gli** utenti non avranno alcuna interruzione del servizio. Continueranno ad avere il servizio esistente fino al completamento dell'aggiornamento.
+**Gli** utenti non avranno alcuna interruzione del servizio. Continueranno ad avere il servizio esistente fino al completamento dell'aggiornamento.
   
 ### <a name="users-and-licenses"></a>Utenti e licenze
 
 Gli utenti dell'abbonamento precedente verranno spostati automaticamente nel nuovo abbonamento.
   
-Se la sottoscrizione precedente include più servizi e se sono stati modificati i servizi a cui sono assegnati gli utenti, è possibile prendere nota di questo articolo prima di aggiornare i piani in modo da poter ricreare tali modifiche in seguito. A tutti gli utenti verrà fornito l'accesso a tutti i servizi del nuovo abbonamento. Ad esempio, se in precedenza è stato acquistato Microsoft 365 Business Premium per tutti i 100 utenti, ma il servizio SharePoint Online non è stato assegnato da 50 di essi, questa modifica non verrà mantenuta dopo l'aggiornamento dei piani.
+Se la sottoscrizione precedente include più servizi e se sono stati modificati i servizi a cui sono assegnati gli utenti, è possibile prendere nota di questo articolo prima di aggiornare i piani in modo da poter ricreare tali modifiche in seguito. A tutti gli utenti verrà fornito l'accesso a tutti i servizi del nuovo abbonamento. Ad esempio, se in precedenza hai acquistato Microsoft 365 Business Premium per tutti i 100 utenti, ma non hai assegnato il servizio SharePoint Online da 50 di essi, questa modifica non verrà mantenuta dopo l'aggiornamento dei piani.
   
 Se si dispone di più di una sottoscrizione prima di aggiornare i piani e gli utenti hanno assegnato licenze a più di una sottoscrizione, questo modello di assegnazione verrà mantenuto il più possibile nella nuova sottoscrizione.
   
-Tutti i dati utente verranno conservati durante l'aggiornamento, incluse le cassette postali di Exchange e i documenti, gli elenchi e altre informazioni di SharePoint Online.
+Tutti i dati utente verranno conservati durante l'aggiornamento, incluse le cassette postali Exchange e SharePoint online documenti, elenchi e altre informazioni.
   
 ### <a name="billing"></a>Fatturazione
 
@@ -167,10 +161,9 @@ Al termine dell'aggiornamento del piano, la fatturazione nel vecchio abbonamento
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Chiamare il supporto tecnico per facilitare l'aggiornamento dei piani
 
-[Chiamare il supporto Tecnico Microsoft](../../admin/contact-support-for-business-products.md)
+[Chiamare il supporto Tecnico Microsoft](../../business-video/get-help-support.md)
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuti correlati
 
-[Modificare manualmente i piani](change-plans-manually.md)
-
-[Eseguire il backup dei dati prima di cambiare piano di Microsoft 365 per le aziende](back-up-data-before-switching-plans.md)
+[Modificare i piani manualmente](change-plans-manually.md) (articolo)\
+[Eseguire il backup dei dati](back-up-data-before-switching-plans.md) prima di Microsoft 365 per i piani aziendali (articolo)

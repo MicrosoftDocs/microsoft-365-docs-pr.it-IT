@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,19 +13,22 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Scopri come leggere e comprendere la tua fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 819db7eb999344d2736015dd766453c07f2ed86f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244709"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280836"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Come leggere la fattura
 
@@ -103,17 +107,13 @@ Se hai servizi di terze parti nella tua fattura, il nome e l'indirizzo di ogni a
 Le fatture sono disponibili online. Un collegamento alla fattura online è disponibile dalla fattura PDF e da una notifica e-mail. La fattura online è espandibile in modo da poter visualizzare gli addebiti sulla fattura e vedere maggiori dettagli per ogni articolo. La fattura online include:
 
 - **Dettagli sui prezzi**&mdash;Ulteriori informazioni inclusi dettagli su sconti e prezzi dei prodotti.
-
 - **Pagamento online**&mdash;Si può scegliere se effettuare un pagamento online dalla fattura.
-
 - **Gestione costi di Azure**&mdash;Per i clienti Azure, le fatture online includono un collegamento alla gestione dei costi di Azure.
 
 ### <a name="to-view-your-online-invoice"></a>Per visualizzare la fattura online
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
-
 2. Per scaricare la versione .pdf della fattura, scegliere **Scarica la fattura PDF** nella riga relativa alla fattura che si desidera visualizzare.
-
 3. Per visualizzare la tua fattura online, scegli una fattura dall'elenco. Puoi anche scaricare il .pdf dalla pagina dei dettagli della fattura.
 
 ## <a name="invoice-faq"></a>FAQ fattura
@@ -145,8 +145,8 @@ Le istruzioni di pagamento dipendono dal metodo di pagamento e vengono fornite n
 
 Il pagamento anticipato di Azure è disponibile come metodo di pagamento solo per prodotti e servizi Azure idonei.
 
-## <a name="need-help-contact-support"></a>Hai bisogno di assistenza? Contattare il supporto.
+## <a name="need-help-contact-support"></a>Hai bisogno di assistenza? Contattare il supporto
 
 Se hai domande o hai bisogno di aiuto con i tuoi crediti Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">creare una richiesta di supporto tecnico con il servizio clienti di Azure</a>.
 
-Se hai domande o hai bisogno d’aiuto con la tua fattura nell’interfaccia di amministrazione di Microsoft 365, [contatta il supporto tecnico per i prodotti per le aziende](../../admin/contact-support-for-business-products.md).
+Se hai domande o hai bisogno d’aiuto con la tua fattura nell’interfaccia di amministrazione di Microsoft 365, [contatta il supporto tecnico per i prodotti per le aziende](../../business-video/get-help-support.md).

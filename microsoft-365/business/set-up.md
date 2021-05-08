@@ -30,22 +30,22 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Scopri i passaggi di configurazione per Microsoft 365 Business Premium, tra cui l'aggiunta di un dominio e di utenti, la configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: c8e2ca94f4947d4f9c69915d2fef410a6075bfed
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579915"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245045"
 ---
-# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurare Microsoft 365 Business Premium nella configurazione guidata
+# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurare i Microsoft 365 Business Premium nella configurazione guidata
 
-Guarda questo video per una panoramica della configurazione di Microsoft 365 Business Premium.<br><br>
+Guarda questo video per una panoramica dell'Microsoft 365 Business Premium configurazione.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Aggiungere il dominio, gli utenti e configurare i criteri
 
-Quando si acquista Microsoft 365 Business Premium, è possibile utilizzare un dominio di cui si è proprietari o acquistarne uno durante [l'iscrizione.](sign-up.md)
+Quando acquisti Microsoft 365 Business Premium, hai la possibilità di usare un dominio di tua proprietà o acquistarne uno durante [l'iscrizione.](sign-up.md)
 
 - Se è stato acquistato un nuovo dominio al momento dell’iscrizione, il dominio è già configurato ed è possibile [Aggiungere utenti e assegnare le licenze](#add-users-and-assign-licenses).
 
@@ -67,7 +67,7 @@ Quando si acquista Microsoft 365 Business Premium, è possibile utilizzare un do
     ![Screenshot della pagina Personalizza l'accesso.](../media/adddomain.png)
 
     
-4. Seguire i passaggi della procedura guidata per creare record DNS presso qualsiasi provider di hosting DNS per [Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) che verifica di essere proprietari del dominio. Se si conosce l’host del dominio, vedere anche le [istruzioni specifiche dell’host](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Seguire i passaggi della procedura guidata per creare record DNS presso qualsiasi provider di [hosting DNS per](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Microsoft 365 che verifica di essere proprietari del dominio. Se si conosce l’host del dominio, vedere anche le [istruzioni specifiche dell’host](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
     Se il proprio provider di hosting è GoDaddy o un altro host abilitato con [Domain Connect](/office365/admin/get-help-with-domains/domain-connect), il processo è semplice e viene richiesto di eseguire l’accesso e lasciare che Microsoft Authenticate completi l’autenticazione.
 
@@ -79,11 +79,11 @@ Gli utenti possono essere aggiunti nella procedura guidata, ma è anche possibil
 
 #### <a name="add-users-in-the-wizard"></a>Aggiungere utenti nella procedura guidata
 
-A tutti gli utenti aggiunti nella procedura guidata viene assegnata automaticamente una licenza Di Microsoft 365 Business Premium.
+A tutti gli utenti aggiunti nella procedura guidata viene assegnata automaticamente una Microsoft 365 Business Premium licenza.
 
 ![Screenshot della pagina Aggiungi nuovi utenti della procedura guidata](../media/addnewuserspage.png)
 
-1. Se l'abbonamento a Microsoft 365 Business Premium ha utenti esistenti (ad esempio, se hai usato Azure AD Connect), ottieni un'opzione per assegnare le licenze a loro ora. Procedere aggiungendo le licenze anche per questi utenti.
+1. Se la sottoscrizione Microsoft 365 Business Premium ha utenti esistenti (ad esempio, se hai usato Azure AD Connessione), ottieni un'opzione per assegnare le licenze a loro ora. Procedere aggiungendo le licenze anche per questi utenti.
 
 2. Una volta aggiunti gli utenti, sarà disponibile un’opzione per condividere le credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
 
@@ -94,7 +94,7 @@ A tutti gli utenti aggiunti nella procedura guidata viene assegnata automaticame
   
 Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o il registrar.
   
-1. La configurazione guidata rileva in genere il registrar e offre un collegamento a istruzioni dettagliate per l'aggiornamento dei record NS presso il suo sito Web. In caso contrario, modificare i server dei nomi per [configurare Microsoft 365 con qualsiasi registrar.](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) 
+1. La configurazione guidata rileva in genere il registrar e offre un collegamento a istruzioni dettagliate per l'aggiornamento dei record NS presso il suo sito Web. In caso contrario, modificare i server dei nomi per [configurare Microsoft 365 con qualsiasi registrar .](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) 
 
     - Se si dispone di record DNS esistenti, ad esempio un sito Web, ma il proprio host DNS è abilitato per [Domain Connect](/office365/admin/get-help-with-domains/domain-connect), scegliere **Aggiungi record per me**. Nella pagina **Scegli i tuoi servizi online**, accettare tutti i predefiniti, scegliere **Successivo**, e scegliere **Autorizza** nella pagina del proprio host DNS.
     - Se si dispone di record DNS esistenti con altri host DNS (non abilitati per il protocollo Domain Connect), è possibile gestire i propri record DNS per assicurarsi che i servizi esistenti restino connessi. Vedere [Informazioni di base sul dominio](/office365/admin/get-help-with-domains/dns-basics) per maggiori dettagli.
@@ -107,30 +107,30 @@ Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o 
 
 I criteri impostati nella procedura guidata vengono applicati automaticamente a un [gruppo di sicurezza](/office365/admin/create-groups/compare-groups#security-groups) denominato Tutti gli *utenti.* È inoltre possibile creare gruppi aggiuntivi a cui assegnare criteri nell'interfaccia di amministrazione.
 
-1. Nella pagina Aumentare la protezione dalle **minacce informatiche** avanzate è consigliabile accettare le impostazioni predefinite per consentire a [Office 365 Advance Threat Protection](../security/office-365-security/defender-for-office-365.md) di analizzare file e collegamenti nelle app di Office.
+1. In Aumentare la protezione dalle minacce **informatiche** avanzate è consigliabile accettare le impostazioni predefinite per consentire a [Office 365 Advance Threat Protection](../security/office-365-security/defender-for-office-365.md) di analizzare file e collegamenti nelle app Office avanzate.
 
     ![Screenshot della pagina Aumenta protezione.](../media/increasetreatprotection.png)
 
 
-2. Nella pagina **Impedisci** perdite di dati sensibili accettare le impostazioni predefinite per attivare prevenzione della perdita dei dati (DLP) di Office 365 per tenere traccia dei dati sensibili nelle app di Office e impedire la condivisione accidentale di tali dati all'esterno dell'organizzazione.
+2. Nella pagina **Impedisci** perdite di dati sensibili accettare le impostazioni predefinite per attivare Office 365 Data Loss Prevention (DLP) per tenere traccia dei dati sensibili nelle app di Office e impedire la condivisione accidentale di questi dati all'esterno dell'organizzazione.
 
-3. Nella pagina **Proteggi i dati in Office per dispositivi mobili** lascia la gestione delle app per dispositivi mobili, espandi le impostazioni e rivedile e quindi seleziona Crea criteri di gestione delle app per dispositivi **mobili.**
+3. Nella pagina **Proteggi i dati in Office** per dispositivi mobili, lascia la gestione delle app per dispositivi mobili, espandi le impostazioni e rivedile e quindi seleziona Crea criteri di gestione delle app per dispositivi **mobili.**
 
     ![Screenshot of Protect data in Office for mobile page.](../media/protectdatainmobile.png)
 
 
 ## <a name="secure-windows-10-pcs"></a>Proteggere i PC con Windows 10
 
-Nel riquadro di spostamento a sinistra seleziona **Installazione** e quindi, in Accesso e **sicurezza,** scegli **Proteggi i computer Windows 10.** Scegliere **Visualizza** per iniziare. Vedi [proteggere i computer Windows 10](secure-win-10-pcs.md) per istruzioni complete.
+Nel riquadro di spostamento sinistro selezionare **Installazione** e quindi, **in** Accesso e sicurezza, scegliere Proteggi i Windows 10 **computer.** Scegliere **Visualizza** per iniziare. Per [istruzioni complete, vedere proteggere Windows 10 computer.](secure-win-10-pcs.md)
 
-## <a name="deploy-office-365-client-apps"></a>Distribuire le app client di Office 365
+## <a name="deploy-office-365-client-apps"></a>Distribuire Office 365 client
 
-Se si è scelto di installare automaticamente le app di Office durante l'installazione, le app verranno installate nei dispositivi Windows 10 dopo che gli utenti hanno eseguito l'accesso ad Azure AD dai propri dispositivi Windows, usando le credenziali di lavoro.
+Se hai scelto di installare automaticamente le app Office durante la configurazione, le app verranno installate nei dispositivi Windows 10 dopo che gli utenti hanno eseguito l'accesso ad Azure AD dai dispositivi Windows, usando le credenziali di lavoro.
 
-Per installare Office su dispositivi mobili iOS o Android, vedere Configurare i dispositivi mobili per gli utenti [di Microsoft 365 Business Premium.](set-up-mobile-devices.md)
+Per installare Office dispositivi mobili iOS o Android, vedi [Configurare i dispositivi mobili per Microsoft 365 Business Premium utenti.](set-up-mobile-devices.md)
 
-È inoltre possibile installare Office singolarmente. Per istruzioni, vedere installare [Office in un PC o un Mac.](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+È inoltre possibile installare Office singolarmente. Vedi [installare Office su un PC o mac per](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) istruzioni.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](../business-video/index.yml)

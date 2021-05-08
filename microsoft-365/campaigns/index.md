@@ -24,18 +24,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Suggerimenti di sicurezza e collaborazione di Microsoft 365 per le piccole imprese, comprese le piccole aziende, gli studi e le campagne elettorali.
-ms.openlocfilehash: 621ebe483683f68ccb9332f9c8b2802bd9b98867
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+description: Suggerimenti di sicurezza e collaborazione di Microsoft 365 Business Premium per le piccole imprese, comprese le piccole aziende, gli studi e le campagne elettorali.
+ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100784"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245029"
 ---
 <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 per piccole imprese e campagne
 ===========================
 
-Oggigiorno proteggere i dati e le comunicazioni è una priorità, soprattutto per le campagne politiche, gli studi medici e legali e molte altre piccole imprese. Questa soluzione offre una serie di suggerimenti il cui scopo è aiutare a proteggere se stessi e i propri dati. Questa raccolta include la guida per la configurazione e l'utilizzo di questo ambiente consigliato, indipendentemente dal tipo di attività.
+Se si ha Microsoft 365 Business Premium, le indicazioni fornite in questa raccolta sono il modo più rapido per configurare la sicurezza e iniziare a collaborare in modo sicuro. Oggigiorno proteggere i dati e le comunicazioni è una priorità, soprattutto per le campagne politiche, gli studi medici e legali e molte altre piccole imprese. Questa soluzione offre una serie di suggerimenti il cui scopo è aiutare a proteggere se stessi e i propri dati. Questa raccolta include la guida per la configurazione e l'utilizzo di questo ambiente consigliato, indipendentemente dal tipo di attività.
 
 
 ![Microsoft 365 Business Premium protegge gli strumenti di produttività e collaborazione, l’archiviazione di file, la posta elettronica, i dispositivi e l’identità](../media/M365-WhatIsIt-SecurityFocus.png)

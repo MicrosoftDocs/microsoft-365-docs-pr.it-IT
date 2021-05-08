@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori delle organizzazioni con Microsoft Defender per Office 365 possono anche gestire i file in quarantena in SharePoint Online, OneDrive for Business e Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599536"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272205"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -196,7 +196,7 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le azio
 
 - **Scarica il messaggio**: nel riquadro a comparsa visualizzato, selezionare **Sono consapevole dei rischi associati al download di questo messaggio** per salvare una copia locale del messaggio in formato .eml.
 
-- **Blocca mittente:** impedisce al mittente di inviare messaggi ai destinatari nell'organizzazione.
+- **Blocca mittente:** aggiungere il mittente all'elenco Mittenti bloccati nella cassetta postale. Per ulteriori informazioni, vedere [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Invia messaggio**: nel riquadro a comparsa visualizzato scegliere le opzioni seguenti:
 

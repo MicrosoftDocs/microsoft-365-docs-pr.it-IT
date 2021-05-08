@@ -2,8 +2,8 @@
 title: Scaricare i report esistenti nel Centro &amp; sicurezza e conformità
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 ms.date: 06/01/2018
 audience: ITPro
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Informazioni su come scaricare uno o più report esistenti nel Centro &amp; sicurezza e conformità.
-ms.openlocfilehash: d912f96037727b6a152ee43133e82b625ef3e04f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e9d3b47938f7397f5cfd5b4333800a4f4cf4f823
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198683"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275229"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Scaricare i report esistenti nel Centro &amp; sicurezza e conformità
 

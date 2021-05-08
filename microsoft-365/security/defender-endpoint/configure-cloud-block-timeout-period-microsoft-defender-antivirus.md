@@ -1,25 +1,26 @@
 ---
-title: Configurare il periodo di timeout del blocco cloud di Microsoft Defender Antivirus
-description: Puoi configurare per quanto tempo Microsoft Defender Antivirus blocterà l'esecuzione di un file in attesa di una determinazione del cloud.
-keywords: Microsoft Defender Antivirus, antimalware, sicurezza, defender, cloud, timeout, blocco, periodo, secondi
+title: Configurare il periodo di timeout Antivirus Microsoft Defender blocco cloud
+description: Puoi configurare per quanto tempo Antivirus Microsoft Defender l'esecuzione di un file durante l'attesa di una determinazione del cloud.
+keywords: Antivirus Microsoft Defender, antimalware, sicurezza, defender, cloud, timeout, blocco, periodo, secondi
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 372d679f45d6f87392b612f757e6bdf1c6c6b9ad
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 02b8ee1c73116718d771847a43d6334e0723bd5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765804"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275309"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurare il periodo di timeout del blocco cloud
 
@@ -30,9 +31,9 @@ ms.locfileid: "51765804"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Quando Microsoft Defender Antivirus rileva un file sospetto, può impedire l'esecuzione del file durante la query al [servizio cloud Microsoft Defender Antivirus.](cloud-protection-microsoft-defender-antivirus.md)
+Quando Antivirus Microsoft Defender trova un file sospetto, può impedire l'esecuzione del file durante la query al [Antivirus Microsoft Defender cloud.](cloud-protection-microsoft-defender-antivirus.md)
 
-Il periodo predefinito per il blocco [del](configure-block-at-first-sight-microsoft-defender-antivirus.md) file è 10 secondi. È possibile specificare un ulteriore periodo di tempo prima che il file possa essere eseguito. In questo modo è possibile assicurarsi che sia disponibile tempo sufficiente per ricevere una determinazione appropriata dal servizio cloud Microsoft Defender Antivirus.
+Il periodo predefinito per il blocco [del](configure-block-at-first-sight-microsoft-defender-antivirus.md) file è 10 secondi. È possibile specificare un ulteriore periodo di tempo prima che il file possa essere eseguito. In questo modo è possibile garantire che il tempo necessario per ricevere una determinazione adeguata dal servizio cloud Antivirus Microsoft Defender servizio cloud.
 
 ## <a name="prerequisites-to-use-the-extended-cloud-block-timeout"></a>Prerequisiti per l'utilizzo del timeout del blocco cloud esteso
 
@@ -46,7 +47,7 @@ Il periodo predefinito per il blocco [del](configure-block-at-first-sight-micros
 
 2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione computer **e** fare clic su **Modelli amministrativi.**
 
-3. Espandere l'albero fino **ai componenti di Windows > Microsoft Defender Antivirus > MpEngine**
+3. Espandere l'albero per **Windows componenti > Antivirus Microsoft Defender > MpEngine**
 
 4. Fare doppio clic **su Configura controllo cloud esteso** e verificare che l'opzione sia abilitata. Specifica la quantità di tempo aggiuntiva per impedire l'esecuzione del file durante l'attesa di una determinazione del cloud. È possibile specificare il tempo aggiuntivo, in secondi, da 1 secondo a 50 secondi. Questa ora verrà aggiunta ai 10 secondi predefiniti.
 
@@ -54,7 +55,7 @@ Il periodo predefinito per il blocco [del](configure-block-at-first-sight-micros
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Usare tecnologie antivirus di nuova generazione tramite la protezione basata su cloud](cloud-protection-microsoft-defender-antivirus.md)
 - [Configurare il blocco al primo avvistamento](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 - [Abilitare la protezione basata sul cloud](enable-cloud-protection-microsoft-defender-antivirus.md)

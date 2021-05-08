@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,30 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Come interpretare i dati su addebiti, fatturazione e pagamenti nell’estratto conto o fattura di Microsoft 365 per le aziende e come cambiare il numero di ordine d'acquisto.
-ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 9eb9d063b3634269600d5f6566e9e5f373ab08c2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245017"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280488"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendi l’estratto conto o la fattura per Microsoft 365 per le aziende
 
 > [!IMPORTANT]
-> A partire dal 26 gennaio 2021, i nuovi conti bancari non sono più supportati per i clienti in Belgio, Francia, Italia, Lussemburgo, Portogallo, Spagna e Stati Uniti. Se si è un cliente esistente in uno di questi paesi, è possibile continuare a pagare l'abbonamento con un conto corrente bancario esistente e aggiungervi nuove sottoscrizioni, ma solo finché il conto corrente bancario è in regola.
+> A partire dal 26 gennaio 2021 i nuovi conti correnti bancari non sono più supportati per i clienti in Belgio, Francia, Italia, Lussemburgo, Portogallo, Spagna e Stati Uniti. I clienti esistenti in uno di questi paesi/aree geografiche possono continuare a pagare l'abbonamento con un conto corrente bancario esistente e aggiungervi nuovi abbonamenti, ma solo fino a quando il conto corrente bancario è in regola.
 
 Ogni mese o ogni anno (a seconda dell'opzione che scegli quando acquisti l'abbonamento), riceverai un'email che ti informa che il tuo nuovo estratto conto è disponibile nell’interfaccia di amministrazione. [Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md).
   
@@ -96,7 +93,7 @@ La tabella seguente descrive i campi che potrebbero essere riportati nella fattu
 |Indirizzo di utilizzo del servizio|L'indirizzo in cui viene usato il servizio, che in genere corrisponde all'indirizzo specificato in Venduto a. Per aggiornare l'indirizzo di utilizzo dei servizi, vedere [Cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).|
 |Venduto a|Il nome e l'indirizzo della propria società. Per aggiornare questa informazione, vedere [Cambiare l'indirizzo dell'organizzazione, l'indirizzo di posta elettronica del contatto tecnico e altre informazioni](../../admin/manage/change-address-contact-and-more.md).  |
 |Subtotale|Ogni abbonamento riportato nella fattura prevede una riga Subtotale separata per tutte le colonne di addebiti, sconti, crediti, subtotale, imposta e totale.|
-|Imposta|Nella pagina 1 della fattura è indicata l'imposta totale. La pagina 2 mostra l'aliquota di imposta applicata e l'importo totale dell'imposta per ogni riga. Se la fattura contiene imposte ma la società è esente, [contattare il supporto](../../admin/contact-support-for-business-products.md).  |
+|Imposta|Nella pagina 1 della fattura è indicata l'imposta totale. La pagina 2 mostra l'aliquota di imposta applicata e l'importo totale dell'imposta per ogni riga. Se la fattura contiene imposte ma la società è esente, [contattare il supporto](../../business-video/get-help-support.md).  |
 |Totale|L'importo dovuto per il periodo di fatturazione.|
 
 ## <a name="change-your-purchase-order-number"></a>Cambiare il numero dell'ordine d'acquisto
@@ -109,6 +106,7 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -120,16 +118,16 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 ::: moniker range="o365-21vianet"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
+
 ::: moniker-end
 
 1. Nella scheda **Prodotti**, selezionare l'abbonamento che si vuole cambiare.
 
-1. Nella sezione Impostazioni sottoscrizione e pagamento della pagina dei dettagli **dell'abbonamento** selezionare **Modifica fattura.** 
+1. Nella sezione Impostazioni sottoscrizione e pagamento della pagina dei dettagli **dell'abbonamento** selezionare **Modifica fattura.**
 
 1. Nella parte inferiore del riquadro **Modifica dettagli per** il pagamento tramite voce immettere il numero dell'ordine fornitore e quindi selezionare **Salva**.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuti correlati
 
-[Pagare l'abbonamento a Microsoft 365 per le aziende](pay-for-your-subscription.md)
-
-[Minecraft: Opzioni di pagamento di Education Edition](/education/windows/school-get-minecraft)
+[Pagare l'abbonamento Microsoft 365 per le aziende](pay-for-your-subscription.md) (articolo)\
+[Minecraft: opzioni di pagamento di Education Edition](/education/windows/school-get-minecraft) (articolo)

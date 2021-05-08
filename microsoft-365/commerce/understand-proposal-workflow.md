@@ -5,23 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: presharm
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+search.appverid: MET150
 description: Informazioni sulle proposte per l'acquisto di prodotti e servizi Microsoft.
 ROBOTS: NOINDEX
-ms.openlocfilehash: b7165db7acd33f9175b6d9d3c86b1f93b2486c43
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: a3c91168c90b91d83a9aa116c1ff57d103b3c48c
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921805"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280872"
 ---
 # <a name="understand-the-proposal-workflow"></a>Informazioni sul flusso di lavoro della proposta
 
@@ -59,23 +64,18 @@ Se si tratta di un nuovo account di fatturazione e nessuno ha accettato un contr
 
 - La persona denominata nella proposta\
     OPPURE
-- Sono già un [amministratore globale di Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) per l'organizzazione
+- Sono già un amministratore [Azure Active Directory globale per](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) l'organizzazione
 
 ## <a name="what-is-the-overall-workflow"></a>Qual è il flusso di lavoro complessivo?
 
 Il flusso di lavoro complessivo della proposta è simile al seguente:
 
 - Il rappresentante Microsoft crea una proposta e invia un collegamento all'utente in un messaggio di posta elettronica.
-
 - Il collegamento viene utilizzato per passare alla pagina di accesso della proposta.
-
 - Esaminare le informazioni dell'organizzazione.
-
 - Esaminare la proposta, accettare l'mca se necessario e completare il processo di estrazione.
-
     > [!IMPORTANT]
     > È necessario disporre dell'autorità per firmare un mcA per conto dell'organizzazione. Se non si dispone di tale autorità, è necessario eseguire questo passaggio.
-
 - Al termine dell'estrazione, vengono forniti collegamenti aggiuntivi per configurare i prodotti e i servizi.
 
 ## <a name="proposal-terms"></a>Condizioni della proposta
@@ -86,7 +86,7 @@ La tabella seguente contiene i termini e le definizioni che vengono visualizzati
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Account di fatturazione | Un account usato per gestire le impostazioni dell'account, le fatture, i metodi di pagamento e i prodotti. |
 | Profilo di fatturazione | Informazioni sull'organizzazione che consentono di personalizzare quali articoli sono inclusi nella fattura e come pagare le fatture. Il profilo di fatturazione include il nome dell'account di fatturazione, i metodi di pagamento utilizzati per il profilo di fatturazione specifico, le informazioni di contatto, le impostazioni della fattura e le autorizzazioni che consentono di modificare il profilo di fatturazione, pagare le fatture e acquistare prodotti e servizi. |
-| Contratti esistenti | Qualsiasi contratto che l'organizzazione ha già in essere con Microsoft. Questo può includere, ma non è limitato a, un contratto Contratto Enterprise, un Contratto di servizi di & Microsoft o un Contratto per i clienti Microsoft. |
+| Contratti esistenti | Qualsiasi contratto che l'organizzazione ha già in essere con Microsoft. Questo può includere, ma non è limitato a, un contratto Enterprise Agreement, un Contratto di servizi di & Microsoft o un Contratto per i clienti Microsoft. |
 | Contratto per i clienti Microsoft (MCA) | Contratto che descrive i termini e le condizioni dell'account tenuto dall'organizzazione con Microsoft. |
 | Rappresentante Microsoft | Un rappresentante Microsoft autorizzato che prepara una proposta per l'utente e l'organizzazione. |
 | Organizzazione | Persona giuridica che utilizza prodotti, tecnologie o servizi Microsoft. |
@@ -97,11 +97,11 @@ La tabella seguente contiene i termini e le definizioni che vengono visualizzati
 
 Dopo l'accesso, la prima operazione da eseguire è esaminare le informazioni dell'organizzazione.
 
-### <a name="your-organization"></a>L'organizzazione
+### <a name="your-organization"></a>La tua organizzazione
 
 Nella **sezione Organizzazione** viene visualizzato l'account di fatturazione associato. Le informazioni sull'account di fatturazione vengono estrarte da un account di fatturazione esistente o create automaticamente dal rappresentante Microsoft. Se l'organizzazione è affiliata a un'altra organizzazione, viene visualizzata anche una sezione **Organizzazione** lead con il nome e l'indirizzo di tale organizzazione.
 
-Se questa è la prima volta che l'organizzazione stabilisce una relazione commerciale con Microsoft e  non è  ancora stata firmata una mcA, se le informazioni nell'organizzazione o nell'organizzazione lead non sono corrette, contattare il rappresentante per apportare modifiche. Dopo aver accettato un mca, è possibile esaminare e modificare l'indirizzo e le informazioni di contatto dell'organizzazione nella pagina [Account](https://go.microsoft.com/fwlink/p/?linkid=2084771) di fatturazione nell'interfaccia di amministrazione di Microsoft 365. Se il nome dell'organizzazione cambia, aprire una richiesta di servizio per aggiornarla. [Informazioni su come aprire una richiesta di servizio](../admin/contact-support-for-business-products.md)
+Se questa è la prima volta che l'organizzazione stabilisce una relazione commerciale con Microsoft e  non è  ancora stata firmata una mcA, se le informazioni nell'organizzazione o nell'organizzazione lead non sono corrette, contattare il rappresentante per apportare modifiche. Dopo aver accettato un mcA, è possibile esaminare e modificare l'indirizzo e le informazioni di contatto dell'organizzazione nella pagina [Account](https://go.microsoft.com/fwlink/p/?linkid=2084771) di fatturazione nell'interfaccia di amministrazione di Microsoft 365. Se il nome dell'organizzazione cambia, aprire una richiesta di servizio per aggiornarla. [Informazioni su come aprire una richiesta di servizio](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>Informazioni personali
 
@@ -155,18 +155,15 @@ Per informazioni sui profili di fatturazione, vedere [Manage billing profiles](b
 In questa sezione viene visualizzato un elenco di tutti gli elementi inclusi nella proposta. L'elenco può includere una o più delle categorie seguenti:
 
 - **Termini supplementari** Elenco di eventuali modifiche all'amministratore di sistema che contengono i termini per l'organizzazione. Ad esempio, questo elenco potrebbe includere termini HIPAA o GDPR.
-
 - **Acquista ora** Elenco di elementi da pagare durante l'estrazione alla fine del flusso di lavoro di accettazione della proposta.
-
 - **Sconti (applicati agli addebiti futuri)** Elenco di sconti ricevuti come parte della proposta.
-
 - **Incluso** Elenco di elementi inclusi nel pacchetto di proposte senza costi aggiuntivi. Alcuni di questi elementi potrebbero avere un costo associato in futuro.
 
 ### <a name="summary"></a>Riepilogo
 
 Questa sezione mostra il numero di articoli da pagare, il subtotale, le imposte stimate e l'importo totale dell'ordine.
 
-Per eseguire l'ordine, selezionare **Ordina** o Accetta **& ordine.**
+Per eseguire l'ordine, selezionare **Inserisci ordine** o Accetta ordine di **&amp; collocare un contratto.**
 
 Dopo aver fatto l'ordine, riceverai una conferma con i passaggi successivi da eseguire. Se hai acquistato un piano di Azure, il passaggio successivo consiste nel configurare l'account di fatturazione nel portale di Azure.
 
@@ -174,7 +171,7 @@ Dopo aver fatto l'ordine, riceverai una conferma con i passaggi successivi da es
 
 Se sei un nuovo cliente e hai acquistato prodotti Azure come parte della proposta, il passaggio successivo consiste nel configurare il nuovo account di fatturazione. Per informazioni su come, vedere [Configurare l'account di fatturazione per un Contratto per i clienti Microsoft.](/azure/cost-management-billing/manage/mca-setup-account)
 
-Se si è un cliente di Azure esistente con un Contratto Enterprise e si firma un contratto multicanalità per la prima volta, il passaggio successivo consiste nel conoscere le modifiche tra i contratti e come completare le attività con il nuovo account di fatturazione. Per ulteriori informazioni, vedere [Complete Contratto Enterprise tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
+Se si è un cliente di Azure esistente con un Enterprise Agreement e si firma un contratto multicanalità per la prima volta, il passaggio successivo consiste nel conoscere le modifiche tra i contratti e come completare le attività con il nuovo account di fatturazione. Per ulteriori informazioni, vedere [Complete Enterprise Agreement tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
 
 ## <a name="understand-invoicing"></a>Informazioni sulla fatturazione
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,29 +13,30 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
-search.appverid:
-- MET150
-description: "Scopri l'importo dell'imposta che ti verrà addebitata per l'abbonamento a Microsoft 365 per le aziende in diverse aree geografiche. "
+search.appverid: MET150
+description: "Scopri l'importo dell'imposta che ti verrà addebitata per l'abbonamento Microsoft 365 per le aziende in diverse aree geografiche. "
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a7aa1e1825e41f463de17eebd676d8168a56d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- commerce_billing
+- PPM_jmueller
+ms.date: 03/17/2021
+ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911711"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280596"
 ---
 # <a name="tax-information"></a>Informazioni fiscali
 
-Quando si acquistano prodotti e servizi Di Microsoft 365, le imposte che si paga sono determinate da una delle due cose: l'indirizzo aziendale o l'indirizzo di spedizione, se diverso. Se l'organizzazione si trova negli Stati Uniti, è necessario fornire un codice FEIN (Federal Employer Identification Number).
+Quando si acquistano Microsoft 365 prodotti e servizi, le imposte da pagare sono determinate da una delle due cose seguenti: l'indirizzo aziendale o l'indirizzo di spedizione, se diverso. Se l'organizzazione si trova negli Stati Uniti, è necessario fornire un codice FEIN (Federal Employer Identification Number).
 
 Le aziende dei seguenti paesi possono fornire il numero di partita IVA o l'equivalente locale:
 
 :::row:::
     :::column:::
+
 - Armenia
 - Australia
 - Austria
@@ -99,13 +101,13 @@ Le aziende dei seguenti paesi possono fornire il numero di partita IVA o l'equiv
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Medio Oriente e Africa (EMEA)
 
-Quando si acquistano i servizi di Microsoft 365 nell'area EMEA, questo acquisto potrebbe essere soggetto Value-Added Tax (IVA).
+Quando si acquistano Microsoft 365 nell'area EMEA, questo acquisto potrebbe essere soggetto all'imposta Value-Added (IVA).
   
 - Se ci si trova in uno Stato membro dell'Unione Europea, Armenia, Bielorussia, Norvegia, Turchia o Emirati Arabi Uniti e non si fornisce la partita IVA locale valida, Microsoft Ireland Operations Ltd. applicherà l'aliquota IVA locale corrente, in base al paese di fatturazione su cui è impostato l'account.
 
 - Se ci si trova in Liechtenstein, Russia, Serbia, Sudafrica o Svizzera, viene applicata l'IVA, indipendentemente dal fatto che tu fornisci o meno la partita IVA.
 
-- Per i clienti dell'UE, prima di poter convalidare la partita IVA, deve essere disponibile per la verifica nel sistema VIES (VAT Information Exchange System). Se non è possibile verificare la partita IVA, contattare l'autorità fiscale locale.
+- Per i clienti dell'UE, prima di poter convalidare la partita IVA, deve essere disponibile per la verifica nel sistema VIES (Vat Information Exchange System). Se non è possibile verificare la partita IVA, contattare l'autorità fiscale locale.
 
 Potresti essere idoneo per la valutazione zero dell'IVA se:
   
@@ -155,7 +157,7 @@ Ad esempio:
 
 ## <a name="apply-for-tax-exempt-status"></a>Richiedere lo stato di esenzione fiscale
 
-Se si è idonei per lo stato di esenzione fiscale nel [mercato,](/office365/admin/contact-support-for-business-products) avviare una richiesta di servizio per stabilire lo stato di esenzione fiscale per l'organizzazione.
+Se si è idonei per lo stato di esenzione fiscale nel [mercato,](../../business-video/get-help-support.md) avviare una richiesta di servizio per stabilire lo stato di esenzione fiscale per l'organizzazione.
 
 |Paese o impostazioni locali | Documentazione |
 |------------------|----------------|
@@ -167,7 +169,7 @@ Se si è idonei per lo stato di esenzione fiscale nel [mercato,](/office365/admi
 | Stati Uniti | Certificato di esenzione iva |
 | Portorico | Certificado de Compras Exentas |
   
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
   
 [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\
 [Informazioni sull'estratto conto o la fattura](understand-your-invoice.md) (articolo)

@@ -1,12 +1,12 @@
 ---
-title: Guida alla distribuzione di Microsoft Defender Antivirus Virtual Desktop Infrastructure
-description: Scopri come distribuire Microsoft Defender Antivirus in un ambiente desktop virtuale per il miglior equilibrio tra protezione e prestazioni.
+title: Antivirus Microsoft Defender Virtual Desktop Infrastructure guida alla distribuzione
+description: Informazioni su come distribuire Antivirus Microsoft Defender in un ambiente desktop virtuale per il miglior equilibrio tra protezione e prestazioni.
 keywords: vdi, hyper-v, vm, macchina virtuale, windows defender, antivirus, av, desktop virtuale, rds, desktop remoto
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,13 @@ ms.date: 12/28/2020
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: fed66586dc0607989e407ecd790d2af8c40e2939
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765732"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275253"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guida alla distribuzione di Microsoft Defender Antivirus in un ambiente VDI (Virtual Desktop Infrastructure)
 
@@ -30,11 +31,11 @@ ms.locfileid: "51765732"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Oltre alle configurazioni hardware o locali standard, è anche possibile utilizzare Microsoft Defender Antivirus in un ambiente desktop remoto (RDS) o VDI (Virtual Desktop Infrastructure).
+Oltre alle configurazioni hardware o locali standard, è anche possibile utilizzare Antivirus Microsoft Defender in un ambiente desktop remoto (RDS) o VDI (Virtual Desktop Infrastructure).
 
-Per ulteriori informazioni sul supporto di Servizi Desktop remoto Microsoft e VDI, vedere Documentazione di Desktop virtuale [Windows.](/azure/virtual-desktop)
+Vedi [Windows documentazione sul desktop virtuale per](/azure/virtual-desktop) ulteriori dettagli su Desktop remoto Microsoft Services e il supporto VDI.
 
-Per le macchine virtuali basate su Azure, vedere [Installare Endpoint Protection in Azure Defender.](/azure/security-center/security-center-install-endpoint-protection)
+Per le macchine virtuali basate su Azure, vedere [Install Endpoint Protection in Azure Defender](/azure/security-center/security-center-install-endpoint-protection).
 
 Con la possibilità di distribuire facilmente gli aggiornamenti alle macchine virtuali in esecuzione in VDI, questa guida è stata abbreviata per concentrarsi su come è possibile ottenere gli aggiornamenti nei computer in modo rapido e semplice. Non è più necessario creare e sigillare periodicamente le immagini dorate, poiché gli aggiornamenti vengono espansi nei bit dei componenti nel server host e quindi scaricati direttamente nella macchina virtuale quando è attivata.
 
@@ -48,14 +49,14 @@ In questa guida viene descritto come configurare le macchine virtuali per garant
 - [Eseguire l'analisi di computer o computer non aggiornati che sono stati offline per un po' di tempo](#scan-vms-that-have-been-offline)
 - [Applicare esclusioni](#exclusions)
 
-È inoltre possibile scaricare il white paper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure,](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)che esamina la nuova funzionalità di aggiornamento delle informazioni di sicurezza condivise, oltre a test delle prestazioni e indicazioni su come testare le prestazioni dell'antivirus nella propria VDI.
+È inoltre possibile scaricare il white paper Antivirus Microsoft Defender su [Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), che esamina la nuova funzionalità di aggiornamento della sicurezza intelligence condivisa, oltre a test delle prestazioni e indicazioni su come testare le prestazioni dell'antivirus nel proprio VDI.
 
 > [!IMPORTANT]
-> Anche se la VDI può essere ospitata in Windows Server 2012 o Windows Server 2016, le macchine virtuali (VM) devono eseguire Almeno Windows 10, 1607, a causa di tecnologie e funzionalità di protezione aumentate che non sono disponibili nelle versioni precedenti di Windows.<br/>Esistono miglioramenti delle prestazioni e delle funzionalità per il modo in cui Microsoft Defender AV opera sulle macchine virtuali in Windows 10 Insider Preview, build 18323 (e versioni successive). Ci identificheremo in questa guida se devi usare una build di Insider Preview; se non viene specificato, la versione minima richiesta per la protezione e le prestazioni migliori è Windows 10 1607.
+> Anche se la VDI può essere ospitata in Windows Server 2012 o Windows Server 2016, le macchine virtuali devono eseguire almeno Windows 10 1607, a causa di tecnologie e funzionalità di protezione più avanzate che non sono disponibili nelle versioni precedenti di Windows.<br/>Esistono miglioramenti delle prestazioni e delle funzionalità per il modo in cui Microsoft Defender AV opera sulle macchine virtuali in Windows 10 Insider Preview, build 18323 (e versioni successive). Ci identificheremo in questa guida se devi usare una build di Insider Preview; se non viene specificato, la versione minima richiesta per la protezione e le prestazioni migliori è Windows 10 1607.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Configurare una condivisione file VDI dedicata
 
-In Windows 10, versione 1903, è stata introdotta la funzionalità di intelligence per la sicurezza condivisa, che scarica la decompressione degli aggiornamenti di security intelligence scaricati in un computer host, salvando così le risorse precedenti di CPU, disco e memoria nei singoli computer. Questa funzionalità è stata backport e ora funziona in Windows 10 versione 1703 e versioni successive. È possibile impostare questa funzionalità con Criteri di gruppo o PowerShell.
+In Windows 10, versione 1903, è stata introdotta la funzionalità di intelligence per la sicurezza condivisa, che scarica la decompressione degli aggiornamenti di security intelligence scaricati in un computer host, salvando così le risorse precedenti di CPU, disco e memoria nei singoli computer. Questa funzionalità è stata backported e ora funziona in Windows 10 1703 e versioni successive. È possibile impostare questa funzionalità con Criteri di gruppo o PowerShell.
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>Utilizzare Criteri di gruppo per abilitare la funzionalità di intelligence per la sicurezza condivisa:
 
@@ -65,7 +66,7 @@ In Windows 10, versione 1903, è stata introdotta la funzionalità di intelligen
 
 3. Fare clic **su Modelli amministrativi**.
 
-4. Espandere l'albero fino **ai componenti di Windows** Microsoft Defender  >  **Antivirus** Security  >  **Intelligence Updates**.
+4. Espandere l'albero per **Windows componenti**  >  **Antivirus Microsoft Defender**  >  **aggiornamenti di Security Intelligence**.
 
 5. Fare doppio clic **su Definisci percorso intelligence di sicurezza per i client VDI** e quindi impostare l'opzione su **Abilitato**. Viene visualizzato automaticamente un campo.
 
@@ -144,7 +145,7 @@ Ecco un esempio: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
 Le analisi pianificate vengono eseguite oltre alla protezione [e all'analisi in tempo reale.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
-L'ora di inizio dell'analisi stessa è ancora basata sul criterio di analisi pianificato (**ScheduleDay,** **ScheduleTime** e **ScheduleQuickScanTime**). La randomizzazione causerà l'avvio di un'analisi da parte di Microsoft Defender Antivirus su ogni computer entro un intervallo di 4 ore dal momento impostato per l'analisi pianificata.
+L'ora di inizio dell'analisi stessa è ancora basata sul criterio di analisi pianificato (**ScheduleDay,** **ScheduleTime** e **ScheduleQuickScanTime**). La casualità causerà Antivirus Microsoft Defender un'analisi su ogni computer entro un intervallo di 4 ore dall'ora impostata per l'analisi pianificata.
 
 Vedere [Pianificare le analisi per](scheduled-catch-up-scans-microsoft-defender-antivirus.md) altre opzioni di configurazione disponibili per le analisi pianificate.
 
@@ -152,7 +153,7 @@ Vedere [Pianificare le analisi per](scheduled-catch-up-scans-microsoft-defender-
 
 È possibile specificare il tipo di analisi da eseguire durante un'analisi pianificata. Le analisi rapide sono l'approccio preferito perché sono progettate per cercare in tutti i luoghi in cui il malware deve risiedere per essere attivo. Nella procedura seguente viene descritto come configurare analisi rapide tramite Criteri di gruppo.
 
-1. Nell'Editor Criteri di gruppo passare a Modelli amministrativi  >  **Componenti di Windows** Microsoft Defender  >  **Antivirus**  >  **Scan.**
+1. Nell'Editor Criteri di gruppo passare a **Modelli amministrativi**  >  **Windows componenti**  >  **Antivirus Microsoft Defender**  >  **Analisi**.
 
 2. Selezionare **Specificare il tipo di analisi da utilizzare per un'analisi pianificata** e quindi modificare l'impostazione dei criteri.
 
@@ -164,9 +165,9 @@ Vedere [Pianificare le analisi per](scheduled-catch-up-scans-microsoft-defender-
 
 ## <a name="prevent-notifications"></a>Impedisci notifiche
 
-A volte, le notifiche di Microsoft Defender Antivirus possono essere inviate o mantenute in più sessioni. Per ridurre al minimo il problema, è possibile bloccare l'interfaccia utente di Microsoft Defender Antivirus. La procedura seguente descrive come eliminare le notifiche con Criteri di gruppo.
+A volte, Antivirus Microsoft Defender notifiche possono essere inviate o mantenute in più sessioni. Per ridurre al minimo il problema, è possibile bloccare l'interfaccia Antivirus Microsoft Defender utente. La procedura seguente descrive come eliminare le notifiche con Criteri di gruppo.
 
-1. Nell'Editor Criteri di gruppo vai a **Componenti di Windows** Microsoft Defender  >  **Antivirus**  >  **Client Interface.**
+1. Nell'Editor Criteri di gruppo passare a Windows **componenti**  >  **Antivirus Microsoft Defender**  >  **Client Interface**.
 
 2. Selezionare **Elimina tutte le notifiche** e quindi modificare le impostazioni dei criteri. 
 
@@ -174,12 +175,12 @@ A volte, le notifiche di Microsoft Defender Antivirus possono essere inviate o m
 
 4. Distribuisci l'oggetto Criteri di gruppo come di solito.
 
-L'eliminazione delle notifiche impedisce la visualizzazione delle notifiche di Microsoft Defender Antivirus nel Centro notifiche in Windows 10 quando vengono eseguite analisi o vengono eseguite azioni di correzione. Tuttavia, il team delle operazioni di sicurezza visualizza i risultati dell'analisi in Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+L'eliminazione delle notifiche impedisce Antivirus Microsoft Defender notifiche di essere visualizzate nel centro notifiche in Windows 10 quando vengono eseguite analisi o vengono eseguite azioni di correzione. Tuttavia, il team delle operazioni di sicurezza visualizza i risultati dell'analisi nel Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
 > [!TIP]
 > Per aprire il Centro notifiche in Windows 10, eseguire una delle operazioni seguenti:
 > - All'estremità destra della barra delle applicazioni seleziona l'icona del Centro notifiche.
-> - Premi il tasto WINDOWS + A.
+> - Premi il Windows logo + A.
 > - In un dispositivo touchscreen scorri rapidamente dal bordo destro dello schermo.
 
 ## <a name="disable-scans-after-an-update"></a>Disabilitare le analisi dopo un aggiornamento
@@ -189,7 +190,7 @@ La disabilitazione di un'analisi dopo un aggiornamento impedirà l'esecuzione di
 > [!IMPORTANT]
 > L'esecuzione di analisi dopo un aggiornamento garantisce che le macchine virtuali siano protette con gli ultimi aggiornamenti di Security intelligence. La disabilitazione di questa opzione riduce il livello di protezione delle macchine virtuali e deve essere usata solo quando si crea o distribuisce per la prima volta l'immagine di base.
 
-1. Nell'Editor Criteri di gruppo passare a **Componenti di Windows** Microsoft Defender  >  **Antivirus** Security  >  **Intelligence Updates**.
+1. Nell'Editor Criteri di gruppo passare a Windows **componenti**  >  **Antivirus Microsoft Defender**  >  **aggiornamenti di Security Intelligence.**
 
 2. Seleziona **Attiva analisi dopo l'aggiornamento delle funzionalità di intelligence** per la sicurezza e quindi modifica l'impostazione dei criteri.
 
@@ -203,7 +204,7 @@ Questo criterio impedisce l'esecuzione di un'analisi immediatamente dopo un aggi
 
 ## <a name="scan-vms-that-have-been-offline"></a>Analizzare le macchine virtuali che sono state offline
 
-1. Nell'Editor Criteri di gruppo passare a Componenti **di Windows** Microsoft  >  **Defender Antivirus**  >  **Scan.**
+1. Nell'Editor Criteri di gruppo passare a Windows **componenti**  >  **Antivirus Microsoft Defender**  >  **Scansione**.
 
 2. Seleziona **Attiva analisi rapida di acquisizione e** quindi modifica l'impostazione dei criteri.
 
@@ -217,7 +218,7 @@ Questo criterio forza un'analisi se la macchina virtuale ha perso due o più ana
 
 ## <a name="enable-headless-ui-mode"></a>Abilitare la modalità interfaccia utente headless
 
-1. Nell'Editor Criteri di gruppo vai a **Componenti di Windows** Microsoft Defender  >  **Antivirus**  >  **Client Interface.**
+1. Nell'Editor Criteri di gruppo passare a Windows **componenti**  >  **Antivirus Microsoft Defender**  >  **Client Interface**.
 
 2. Seleziona **Abilita modalità interfaccia utente headless** e modifica il criterio.
 
@@ -227,16 +228,16 @@ Questo criterio forza un'analisi se la macchina virtuale ha perso due o più ana
 
 5. Distribuisci l'oggetto Criteri di gruppo come di solito.
  
-Questo criterio nasconde l'intera interfaccia utente di Microsoft Defender Antivirus agli utenti finali dell'organizzazione.
+Questo criterio nasconde l'intera Antivirus Microsoft Defender'interfaccia utente agli utenti finali dell'organizzazione.
 
 ## <a name="exclusions"></a>Esclusioni
 
 Le esclusioni possono essere aggiunte, rimosse o personalizzate in base alle proprie esigenze.
 
-Per altre informazioni, vedi Configurare le esclusioni di [Microsoft Defender Antivirus in Windows Server.](configure-exclusions-microsoft-defender-antivirus.md)
+Per ulteriori informazioni, vedere [Configure Antivirus Microsoft Defender exclusions on Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-- [Blog della community tecnica: Configurazione di Microsoft Defender Antivirus per computer VDI non persistenti](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
+- [Blog Community tech: Configurazione Antivirus Microsoft Defender per computer VDI non persistenti](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [Forum TechNet su Servizi Desktop remoto e VDI](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
 - [Script Di PowerShell SignatureDownloadCustomTask](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)
