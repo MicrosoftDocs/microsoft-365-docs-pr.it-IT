@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Informazioni su come cercare argomenti in Microsoft Viva.
-ms.openlocfilehash: 1739923c95b42f192bb2e285245f72c3e09e1c30
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15b42c9d3689a73c865be53bb29f298fcbf896bd
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925929"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281043"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utilizzare Microsoft Search per trovare argomenti in Microsoft Viva Topics
 
-Anche se gli utenti di Viva Topics possono trovare gli argomenti attraverso le evidenziazioni degli argomenti nei propri siti di SharePoint, possono trovarli anche tramite Microsoft Search. 
+Anche se gli utenti di Viva Topics possono trovare argomenti attraverso le evidenziazioni degli argomenti nei propri siti SharePoint, possono trovarli anche tramite Microsoft Search. 
 
 ## <a name="topic-answer"></a>Risposta argomento
 
@@ -36,6 +36,8 @@ Verrà visualizzata la risposta all'argomento:
 
 La pagina dell'argomento può essere visualizzata nei risultati della ricerca anche se la scheda di risposta dell'argomento non viene visualizzata.
 
+I risultati della ricerca in Word PowerPoint la risposta dell'argomento quando ne viene trovata una.
+
 
 ## <a name="acronyms"></a>Acronimi
 
@@ -45,12 +47,12 @@ In Viva Topics è possibile modificare manualmente un argomento in modo da inclu
 
 ## <a name="bookmarks-and-topics"></a>Segnalibri e argomenti
 
-[I segnalibri](/microsoftsearch/manage-bookmarks) sono una funzionalità di Microsoft Search che consente agli utenti di trovare rapidamente siti e strumenti importanti con una semplice ricerca (ad esempio, uno strumento di prenotazione viaggi in un sito esterno all'esterno del tenant di Microsoft 365). Vengono creati dagli amministratori della ricerca nell'interfaccia di amministrazione di Microsoft 365. 
+[I segnalibri](/microsoftsearch/manage-bookmarks) sono una funzionalità di Microsoft Search che consente agli utenti di trovare rapidamente siti e strumenti importanti con una semplice ricerca (ad esempio, uno strumento di prenotazione di viaggi in un sito esterno all'esterno del tenant di Microsoft 365). Vengono creati dagli amministratori della ricerca nell'Microsoft 365 di amministrazione. 
 
 Per gli utenti che cercano informazioni sulla prenotazione di un viaggio di lavoro:
 
 - Se alcuni utenti conoscono il nome dello strumento di viaggio (ad esempio, "Concur"), è più semplice creare un segnalibro per passare direttamente al sito esterno.
-- Per gli utenti che in genere ricercano "viaggi", crea un argomento su "Viaggi" con le informazioni che si aspettano di visualizzare. Prendere in considerazione l'aggiunta di un collegamento al sito esterno Concur nella descrizione dell'argomento. Se invece il collegamento è a un sito di prenotazione viaggi interno ospitato nel tenant di Microsoft 365, è possibile aggiungerlo alle "Risorse aggiunte".
+- Per gli utenti che in genere ricercano "viaggi", crea un argomento su "Viaggi" con le informazioni che si aspettano di visualizzare. Prendere in considerazione l'aggiunta di un collegamento al sito esterno Concur nella descrizione dell'argomento. Se invece il collegamento è a un sito di prenotazione viaggi interno ospitato nel tenant di Microsoft 365, puoi aggiungerlo alle "Risorse aggiunte".
  
 ### <a name="search-results-priority"></a>Priorità dei risultati della ricerca 
  

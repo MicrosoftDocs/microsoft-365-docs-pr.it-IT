@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ff9834e2853c1745c20847f869bc2cba4e082e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 9cd544ca3d714ea46c74e10f8aba5e46dc0e1b35
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114271"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280994"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Distribuire Microsoft Defender per Endpoint su Linux con Ansible
 
@@ -282,3 +282,6 @@ Durante l'aggiornamento del sistema operativo a una nuova versione principale, d
 - [Aggiungere e rimuovere archivi APT](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
 - [Gestire i pacchetti apt](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+
+## <a name="see-also"></a>Vedere anche
+- [Analizzare i problemi di integrità degli agenti](health-status.md)

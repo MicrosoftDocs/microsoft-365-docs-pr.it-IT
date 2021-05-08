@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Panoramica di Viva Topics.
-ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275199"
+ms.locfileid: "52281030"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Panoramica di Microsoft Viva Topics 
 
-Viva Topics utilizza la tecnologia Microsoft AI, Microsoft 365, Microsoft Graph, Search e altri componenti e servizi per portare la conoscenza ai tuoi utenti nelle app Microsoft 365 che usano tutti i giorni, a partire dalle pagine moderne di SharePoint e Microsoft Search.
+Viva Topics usa la tecnologia Microsoft AI, Microsoft 365, Microsoft Graph, Ricerca e altri componenti e servizi per portare conoscenze agli utenti nelle app di Microsoft 365 che usano ogni giorno, a partire da pagine moderne di SharePoint, Microsoft Search e Ricerca in Word e PowerPoint.
 
 </br>
 
@@ -42,6 +42,7 @@ Quando un argomento viene menzionato nel contenuto delle notizie e delle pagine 
 
    ![Highlight degli argomenti](../media/knowledge-management/saturn.png) 
 
+Quando si utilizza la ricerca in Word o PowerPoint, tramite  la casella di ricerca o selezionando Cerca nel menu di scelta rapida, i risultati visualizzati potrebbero visualizzare anche il riepilogo dell'argomento.
 
    ![Screenshot che mostra la ricerca in Word tramite la casella di ricerca.](../media/knowledge-management/word-search-2.png)
 

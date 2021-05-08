@@ -1,12 +1,12 @@
 ---
 title: Abilitare il blocco al primo rilevamento per rilevare il malware in pochi secondi
-description: Attivare la funzionalità blocco al primo rilevamento per rilevare e bloccare il malware in pochi secondi.
-keywords: analisi, blocco al primo rilevamento, malware, primo rilevamento, cloud, defender, antivirus
+description: Attivare la funzionalità di blocco al primo rilevamento per rilevare e bloccare il malware entro pochi secondi.
+keywords: analisi, blocco al primo rilevamento, malware, primo rilevamebto, cloud, defender, antivirus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: priority
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: marcmcc
@@ -14,12 +14,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.date: 04/28/2021
 ms.technology: mde
-ms.openlocfilehash: d4db3549d04e5883f02ba263c06371371d385022
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
-ms.translationtype: MT
+ms.topic: article
+ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079204"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274953"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Abilitare il blocco al primo rilevamento
 
@@ -30,190 +31,190 @@ ms.locfileid: "52079204"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-In questo articolo viene descritta una funzionalità antivirus/antimalware nota come "blocco al primo sguardo" e viene descritto come abilitare il blocco al primo sguardo per l'organizzazione. 
+Questo articolo descrive una funzionalità antivirus/antimalware nota come blocco al primo rilevamento e descrive come abilitarla per l'organizzazione. 
 
 > [!TIP]
-> Questo articolo è destinato agli amministratori aziendali e ai professionisti IT che gestiscono le impostazioni di sicurezza per le organizzazioni. Se non sei un amministratore enteprise o un professionista IT, ma hai domande sul blocco a prima vista, vedi Non è un amministratore aziendale o [un professionista IT?](#not-an-enterprise-admin-or-it-pro).
+> Questo articolo è destinato agli amministratori aziendali e ai professionisti IT che gestiscono le impostazioni di sicurezza per le organizzazioni. Se non si è un amministratore aziendale o un professionista IT, ma si hanno domande sul blocco al primo rilevamento, vedere [Non si è un amministratore aziendale o un professionista IT?](#not-an-enterprise-admin-or-it-pro).
 
-## <a name="what-is-block-at-first-sight"></a>Che cos'è "blocco al primo sguardo"?
+## <a name="what-is-block-at-first-sight"></a>Cos'è il blocco al primo rilevamento?
 
-Block at first sight è una funzionalità di protezione dalle minacce di nuova generazione che rileva nuovo malware e lo blocca in pochi secondi. Il blocco al primo sguardo è abilitato quando sono abilitate determinate impostazioni di sicurezza. Queste impostazioni includono:
+Il blocco al primo rilevamento è una funzionalità di protezione dalle minacce di nuova generazione, che rileva il nuovo malware e lo blocca entro pochi secondi. Il blocco al primo rilevamento è abilitato quando sono abilitate determinate impostazioni di sicurezza. Queste impostazioni includono:
 
-- Protezione basata sul cloud; 
-- Un timeout di invio di esempio specificato (ad esempio 50 secondi); e 
-- Livello di blocco dei file elevato. 
+- Protezione fornita dal cloud; 
+- Un timeout di invio del campione specificato (ad esempio 50 secondi); e 
+- Un livello di livello di blocco dei file alto. 
 
-Nella maggior parte delle organizzazioni aziendali, le impostazioni necessarie per abilitare il blocco al primo sguardo sono configurate con le distribuzioni di Microsoft Defender Antivirus. 
+Nella maggior parte delle organizzazioni aziendali, le impostazioni necessarie per abilitare il blocco al primo rilevamento sono configurate con le distribuzioni di Antivirus Microsoft Defender. 
 
-## <a name="how-it-works"></a>Funzionamento
+## <a name="how-it-works"></a>Come funziona
 
-Quando Microsoft Defender Antivirus rileva un file sospetto ma non rilevato, interroga il back-end di protezione cloud. Il back-end cloud applica l'euristica, l'apprendimento automatico e l'analisi automatica del file per determinare se i file sono dannosi o meno una minaccia.
+Quando Antivirus Microsoft Defender incontra un file sospetto, ma non rilevato, interroga il back-end per la protezione cloud. Il back-end cloud applica l'euristica, l'apprendimento automatico e l'analisi automatica del file per determinare se i file sono dannosi o se non si tratta di una minaccia.
 
-Microsoft Defender Antivirus usa più tecnologie di rilevamento e prevenzione per fornire una protezione accurata, intelligente e in tempo reale. 
+Antivirus Microsoft Defender usa più tecnologie di rilevamento e prevenzione per offrire una protezione accurata, in tempo reale e intelligente. 
 
-![Elenco dei motori Microsoft Defender AV](images/microsoft-defender-atp-next-generation-protection-engines.png)  
-
-> [!TIP]
-> Per altre informazioni, vedi questo blog: Informazioni sulle tecnologie avanzate alla base di [Microsoft Defender for Endpoint next-generation protection.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
-
-## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Alcune informazioni sul blocco a prima vista
-
-- In Windows 10, versione 1803 o successiva, il blocco al primo sguardo può bloccare i file eseguibili non portabili (ad esempio JS, VBS o macro) e i file eseguibili.
-
-- Block at first sight usa solo il back-end di protezione cloud per i file eseguibili e i file eseguibili non portatili scaricati da Internet o originati dall'area Internet. Un valore hash del file exe viene controllato tramite il back-end cloud per determinare se il file è un file non rilevato in precedenza.
-
-- Se il back-end cloud non è in grado di effettuare una determinazione, Microsoft Defender Antivirus blocca il file e carica una copia nel cloud. Il cloud esegue un'analisi più approfondita per raggiungere una determinazione prima di consentire l'esecuzione del file o bloccarlo in tutti gli incontri futuri, a seconda che il file sia dannoso o meno una minaccia.
-
-- In molti casi, questo processo può ridurre il tempo di risposta per il nuovo malware da ore a secondi.
-
-- È possibile [specificare per quanto tempo deve essere impedito l'esecuzione](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) di un file durante l'analisi del file da parte del servizio di protezione basato su cloud. Inoltre, è [possibile personalizzare il messaggio visualizzato sui desktop](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) degli utenti quando un file viene bloccato. È possibile modificare il nome della società, le informazioni di contatto e l'URL del messaggio.
-
-## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Attivare il blocco al primo sguardo con Microsoft Intune
+![Elenco dei motori antivirus di Microsoft Defender](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> Microsoft Intune fa ora parte di Microsoft Endpoint Manager.
+> Per altre informazioni, vedere il blog [Informazioni sulle tecnologie avanzate al centro della protezione di Microsoft Defender per endpoint di nuova generazione](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
-1. Nell'interfaccia di amministrazione di Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), accedere a Profili **di** configurazione  >  **dei dispositivi**.
+## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Alcune informazioni da conoscere sul blocco al primo rilevamento
 
-2. Seleziona o crea un profilo usando il **tipo di profilo** Restrizioni dispositivo.
+- In Windows 10 versione 1803 e successive, il blocco al primo rilevamento può ora bloccare i file eseguibili non di tipo PE, ad esempio JS, VBS o macro, nonché i file eseguibili.
 
-3. In Impostazioni **di configurazione per** il profilo Restrizioni dispositivo imposta o conferma le impostazioni seguenti in Microsoft Defender **Antivirus:**
+- Il blocco al primo rilevamento usa solo il back-end per la protezione cloud per i file eseguibili e i file eseguibili non di tipo PE scaricati da Internet o che provengono dall'area Internet. Tramite il back-end cloud viene controllato un valore hash del file .exe, per determinare se si tratta di un file non rilevato in precedenza.
 
-   - **Protezione recapitata nel cloud**: abilitata
-   - **Livello di blocco dei file**: Alto
-   - **Estensione temporale per l'analisi dei file dal cloud**: 50
-   - **Chiedi conferma agli utenti prima dell'invio** dell'esempio: invia tutti i dati senza chiedere conferma
+- Se il back-end cloud non è in grado di eseguire questa operazione, Antivirus Microsoft Defender blocca il file e carica una copia nel cloud. Il cloud effettua ulteriori analisi per raggiungere una decisione prima di consentire l'esecuzione o bloccare il file in tutti i futuri incontri, a seconda che sia ritenuto dannoso o sicuro.
+
+- In molti casi questo processo può ridurre il tempo di risposta per il nuovo malware da ore a secondi.
+
+- È possibile [specificare per quanto tempo deve essere impedita l'esecuzione del file](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) mentre il servizio di protezione basato sul cloud lo analizza. Inoltre, si può [personalizzare il messaggio visualizzato sui desktop degli utenti](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) quando viene bloccato un file. È possibile modificare il nome della società, le informazioni di contatto e l'URL del messaggio.
+
+## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Attivare il blocco al primo rilevamento con Microsoft Intune
+
+> [!TIP]
+> Microsoft Intune ora fa parte di Microsoft Endpoint Manager.
+
+1. Nell'interfaccia di amministrazione di Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) passare a **Dispositivi** > **Profili di configurazione**.
+
+2. Selezionare o creare un profilo usando il tipo di profilo **Limitazioni del dispositivo**.
+
+3. Nelle **Impostazioni di configurazione** del profilo Limitazioni del dispositivo impostare o confermare le impostazioni seguenti in **Antivirus Microsoft Defender**:
+
+   - **Protezione fornita dal cloud**: abilitata
+   - **Livello di blocco file**: alto
+   - **Estensioni di tempo per l'analisi di file da parte del cloud**: 50
+   - **Richiedi conferma all'utente prima dell'invio di campioni**: Invia tutti i dati senza chiedere conferma
 
    ![Configurazione di Intune](images/defender/intune-block-at-first-sight.png)
 
 4. Salvare le impostazioni.
 
 > [!TIP]
-> - Se si imposta il livello di blocco dei file **su Alto,** viene applicato un livello elevato di rilevamento. Nell'improbabile caso in cui il blocco dei file causa un rilevamento falso positivo dei file legittimi, il team delle operazioni di sicurezza può [ripristinare i file in quarantena.](./restore-quarantined-files-microsoft-defender-antivirus.md)
-> - Per altre informazioni sulla configurazione delle restrizioni per i dispositivi Microsoft Defender Antivirus in Intune, vedi [Configurare le impostazioni di restrizione dei dispositivi in Microsoft Intune.](/intune/device-restrictions-configure)
-> - Per un elenco delle restrizioni per i dispositivi Microsoft Defender Antivirus in Intune, vedi Restrizioni dei dispositivi per le impostazioni di [Windows 10 (e più nuove) in Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+> - Impostando il livello di blocco dei file su **Alto**, si applica un livello di rilevamento elevato. Nel caso improbabile che il blocco dei file causi erroneamente il rilevamento di file legittimi, il team delle operazioni di sicurezza può [ripristinare i file in quarantena](./restore-quarantined-files-microsoft-defender-antivirus.md).
+> - Per altre informazioni sulla configurazione delle limitazioni per i dispositivi di Antivirus Microsoft Defender in Intune, vedere [Configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune](/intune/device-restrictions-configure).
+> - Per un elenco delle limitazioni dei dispositivi di Antivirus Microsoft Defender in Intune, vedere [Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Attivare il blocco al primo sguardo con Microsoft Endpoint Manager
+## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Abilitare il blocco al primo rilevamento con Microsoft Endpoint Manager
 
 > [!TIP]
-> Se stai cercando Microsoft Endpoint Configuration Manager, ora fa parte di Microsoft Endpoint Manager.
+> Se si sta cercando Microsoft Endpoint Configuration Manager, ora fa parte di Microsoft Endpoint Manager.
 
-1. In Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), passare a Endpoint **security**  >  **Antivirus**.
+1. In Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) passare a **Sicurezza degli endpoint** > **Antivirus**.
 
-2. Seleziona un criterio esistente o crea un nuovo criterio usando il tipo di profilo **Microsoft Defender Antivirus.**
+2. Selezionare un criterio esistente o crearne uno nuovo usando il tipo di profilo **Antivirus Microsoft Defender**.
 
 3. Impostare o confermare le impostazioni di configurazione seguenti:
 
-   - **Attivare la protezione basata sul cloud**: Sì
-   - **Livello di protezione fornito dal cloud**: Alto
-   - **Timeout esteso defender cloud in secondi**: 50
+   - **Attiva la protezione fornita dal cloud**: Sì
+   - **Livello di protezione fornita dal cloud**: Alto
+   - **Defender - Timeout esteso per il cloud in secondi**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Bloccare le impostazioni al primo avvistamento in Endpoint Manager":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Impostazioni di blocco al primo rilevamento in Endpoint Manager":::
 
-4. Applicare il profilo Microsoft Defender Antivirus a un gruppo, ad esempio Tutti gli **utenti** **,** Tutti i dispositivi o Tutti gli utenti e **i dispositivi**.
+4. Applicare il profilo Antivirus Microsoft Defender a un gruppo, ad esempio **Tutti gli utenti**, **Tutti i dispositivi** o **Tutti gli utenti e i dispositivi**.
 
-## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Attivare il blocco al primo sguardo con Criteri di gruppo
+## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Abilitare il blocco al primo rilevamento con Criteri di gruppo
 
 > [!NOTE]
-> Ti consigliamo di usare Intune o Microsoft Endpoint Manager per attivare il blocco al primo sguardo. 
+> È consigliabile usare Intune o Microsoft Endpoint Manager per abilitare il blocco al primo rilevamento. 
 
-1. Nel computer di gestione di Criteri di gruppo aprire Console Gestione Criteri di [gruppo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**. 
+1. Nel computer di gestione dei Criteri di gruppo aprire la [Console Gestione Criteri di gruppo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo da configurare e scegliere **Modifica**. 
 
-2. Usando **l'Editor Gestione Criteri di gruppo** vai a Configurazione **computer**  >  **Modelli amministrativi** Componenti di  >  **Windows** Microsoft Defender  >  **Antivirus**  >  **MAPS**. 
+2. Usando l'**Editor Gestione Criteri di gruppo** passare a **Configurazione computer** > **Modelli amministrativi** > **Componenti di Windows** > **Antivirus Microsoft Defender** > **MAPS**. 
 
-3. Nella sezione MAPPE fare doppio clic su Configura la funzionalità **"Blocca** al primo avvistamento" e impostarla su **Abilitato** e quindi selezionare **OK.**
+3. Nella sezione MAPS fare doppio clic su **Configura la funzionalità 'Blocco al primo rilevamento'** e impostarla su **Abilitato**, quindi scegliere **OK**.
 
     > [!IMPORTANT]
-    > **L'impostazione su Chiedi sempre conferma (0)** riduce lo stato di protezione del dispositivo. Se si **imposta su Non inviare mai (2),** il blocco al primo sguardo non funzionerà.
+    > Impostando **Richiedi sempre conferma (0)** verrà ridotto il livello di protezione del dispositivo. Impostando **Non inviare mai (2)**, il blocco al primo rilevamento non funzionerà.
 
-4. Nella sezione MAPPE fare doppio clic su **Invia esempi di file** quando è necessaria un'ulteriore analisi e impostarlo su **Abilitato.** In **Invia esempi di file quando è necessaria un'ulteriore analisi** selezionare Invia tutti **i** campioni e quindi fare clic su **OK.**
+4. Nella sezione MAPS fare doppio clic su **Invia campioni di file se sono necessarie ulteriori analisi** e impostarlo su **Abilitato**. In **Invia campioni di file se sono necessarie ulteriori analisi** selezionare **Invia tutti i campioni** e quindi fare clic su **OK**.
 
-5. Ridistribuire l'oggetto Criteri di gruppo nella rete come in genere.
+5. Ridistribuire l'oggetto Criteri di gruppo nella rete nel modo consueto.
 
-## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>Verificare che il blocco al primo avvistamento sia abilitato nei singoli dispositivi client
+## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>Confermare l'abilitazione della funzionalità di blocco al primo rilevamento in singoli dispositivi client
 
-Puoi verificare che il blocco al primo sguardo sia abilitato nei singoli dispositivi client usando l'app Sicurezza di Windows. Il blocco al primo rilevamento viene abilitato automaticamente, purché la protezione consegnata dal **cloud** e l'invio automatico **di** campioni siano entrambi attivati.
+È possibile verificare che il blocco al primo rilevamento sia abilitato nei singoli dispositivi client usando l'app Sicurezza di Windows. Il blocco al primo rilevamento viene abilitato automaticamente purché siano attivate le opzioni **Protezione fornita dal cloud** e **Invio automatico di file di esempio**.
 
-1. Apri l'app Sicurezza di Windows.
+1. Aprire l'app Sicurezza di Windows.
 
-2. Selezionare **Protezione da &** virus e quindi, in **Impostazioni** protezione da & virus, selezionare Gestisci **impostazioni**.
+2. Selezionare **Protezione da virus e minacce**, quindi in **Impostazioni di Protezione da virus e minacce** selezionare **Gestisci impostazioni**.
 
-   ![Screenshot dell'etichetta Impostazioni di protezione da & virus nell'app Sicurezza di Windows](images/defender/wdav-protection-settings-wdsc.png)
+   ![Screenshot dell'etichetta Impostazioni di Protezione da virus e minacce nell'app Sicurezza di Windows](images/defender/wdav-protection-settings-wdsc.png)
 
-3. Verificare che **la protezione con distribuzione cloud e** **l'invio automatico** di esempi siano entrambi attivati.
+3. Verificare che le opzioni **Protezione fornita dal cloud** e **Invio automatico di file di esempio** siano entrambe abilitate.
 
 > [!NOTE]
-> - Se le impostazioni dei prerequisiti vengono configurate e distribuite tramite Criteri di gruppo, le impostazioni descritte in questa sezione saranno disattivate e non saranno disponibili per l'utilizzo nei singoli endpoint. 
-> - Le modifiche apportate tramite un oggetto Criteri di gruppo devono prima essere distribuite a singoli endpoint prima che l'impostazione venga aggiornata in Impostazioni di Windows.
+> - Se le impostazioni dei prerequisiti vengono configurate e distribuite tramite Criteri di gruppo, le impostazioni descritte in questa sezione non saranno disponibili per l'uso nei singoli endpoint. 
+> - Le modifiche apportate tramite un oggetto Criteri di gruppo devono essere distribuite nei singoli endpoint prima che l'impostazione venga aggiornata nelle impostazioni di Windows.
 
-## <a name="validate-block-at-first-sight-is-working"></a>Convalidare il blocco al primo avvistamento funziona
+## <a name="validate-block-at-first-sight-is-working"></a>Verificare che il blocco al primo rilevamento funzioni
 
-Per verificare che la funzionalità funzioni, seguire le indicazioni in Convalidare le connessioni [tra la rete e il cloud.](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
+Per verificare che la funzionalità sia operativa, seguire le istruzioni in [Convalidare le connessioni tra la rete e il cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
-## <a name="turn-off-block-at-first-sight"></a>Disattivare il blocco al primo sguardo
+## <a name="turn-off-block-at-first-sight"></a>Disabilitare il blocco al primo rilevamento
 
 > [!CAUTION]
-> Disattivando il blocco al primo sguardo, si riduce lo stato di protezione dei dispositivi e della rete.
+> Disabilitando il blocco al primo rilevamento si ridurrà lo stato di protezione dei dispositivi e della rete.
 
-È possibile scegliere di disabilitare il blocco al primo sguardo se si desidera mantenere le impostazioni dei prerequisiti senza usare effettivamente la protezione blocco al primo sguardo. Potresti disattivare temporaneamente il blocco al primo sguardo per vedere in che modo questa funzionalità influisce sulla rete. Tuttavia, non è consigliabile disabilitare definitivamente la protezione del blocco al primo sguardo.
+Si può scegliere di disabilitare il blocco al primo rilevamento se si vogliono mantenere le impostazioni dei prerequisiti senza usare la protezione del blocco al primo rilevamento. È possibile disabilitare temporaneamente il blocco al primo rilevamento per vedere in che modo questa funzionalità influisce sulla rete aziendale. Tuttavia, non è consigliabile disabilitare la protezione del blocco al primo rilevamento in modo permanente.
 
-### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Disattivare il blocco al primo sguardo con Microsoft Endpoint Manager
+### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Disabilitare il blocco al primo rilevamento con Microsoft Endpoint Manager
 
-1. Vai all'interfaccia di amministrazione di Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e accedi.
+1. Passare all'interfaccia di amministrazione di Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e accedere.
 
-2. Vai a **Endpoint security**  >  **Antivirus** e quindi seleziona i criteri di Microsoft Defender Antivirus.
+2. Passare a **Sicurezza endpoint** > **Antivirus** e quindi selezionare il criterio di Antivirus Microsoft Defender.
 
-3. In **Gestisci** scegliere **Proprietà.**
+3. In **Gestisci** scegliere **Proprietà**.
 
-4. Accanto a **Impostazioni di configurazione** scegliere **Modifica.**
+4. Accanto a **Impostazioni di configurazione** scegliere **Modifica**.
 
 5. Modificare una o più delle impostazioni seguenti:
 
-   - Impostare **Attiva protezione recapitata nel cloud** su **No** o Non **configurato**.
-   - Impostare **il livello di protezione fornito dal cloud** su Non **configurato**.
-   - Deselezionare la casella di controllo **Defender Cloud Extended Timeout in secondi.**
+   - Impostare **Attiva la protezione fornita dal cloud** su **No** o **Non configurato**.
+   - Impostare **Livello di protezione fornita dal cloud** su **Non configurato**.
+   - Deselezionare la casella di controllo **Defender - Timeout esteso per il cloud in secondi**.
 
 6. Rivedere e salvare le impostazioni.
 
-### <a name="turn-off-block-at-first-sight-with-group-policy"></a>Disattivare il blocco al primo sguardo con Criteri di gruppo
+### <a name="turn-off-block-at-first-sight-with-group-policy"></a>Disabilitare il blocco al primo rilevamento con Criteri di gruppo
 
-1. Nel computer di gestione di Criteri di gruppo aprire Console Gestione Criteri di [gruppo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e quindi scegliere **Modifica**.
+1. Nel computer di gestione dei Criteri di gruppo aprire la [Console Gestione Criteri di gruppo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo da configurare e quindi scegliere **Modifica**.
 
-2. Utilizzando **l'Editor Gestione Criteri di gruppo** passare a Configurazione **computer** e selezionare **Modelli amministrativi.**
+2. Usando l **'Editor Gestione Criteri di gruppo** passare a **Configurazione computer** e selezionare **Modelli amministrativi**.
 
-3. Espandere l'albero tramite **i componenti di Windows** Microsoft Defender  >  **Antivirus**  >  **MAPS**.
+3. Espandere l'albero fino a visualizzare **Componenti di Windows** > **Antivirus Microsoft Defender** > **MAPS**.
 
-4. Fai doppio clic **su Configura la funzionalità "Blocca** al primo avvistamento" e imposta l'opzione su **Disabilitato.**
+4. Fai doppio clic su **Configura la funzionalità 'Blocco al primo rilevamento'** e impostare l'opzione su **Disabilitata**.
 
     > [!NOTE]
-    > La disabilitazione del blocco al primo avvistamento non disabilita o modifica i criteri di gruppo dei prerequisiti.
+    > La disattivazione del blocco al primo rilevamento non disabilita né altera i Criteri di gruppo prerequisiti.
 
-## <a name="not-an-enterprise-admin-or-it-pro"></a>Non sei un amministratore aziendale o un professionista IT?
+## <a name="not-an-enterprise-admin-or-it-pro"></a>Non si è un amministratore aziendale o un professionista IT?
 
-Se non sei un amministratore aziendale o un professionista IT, ma hai domande sul blocco a prima vista, questa sezione fa per te. Blocca al primo rilevamento è una funzionalità di protezione dalle minacce che rileva e blocca il malware in pochi secondi. Anche se non esiste un'impostazione specifica denominata "Blocca al primo sguardo", la funzionalità viene abilitata quando determinate impostazioni sono configurate nel dispositivo.
+Se non si è un amministratore aziendale o un professionista IT, ma si hanno domande sul blocco al primo rilevamento, questa è la sezione giusta. Il blocco al primo rilevamento è una funzionalità di protezione dalle minacce che rileva e blocca il malware nel giro di pochi secondi. Anche se non esiste una specifica impostazione denominata "Blocco al primo rilevamento", la funzionalità viene abilitata quando nel dispositivo vengono configurate determinate impostazioni.
 
-### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>Come gestire il blocco al primo sguardo sul tuo dispositivo
+### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>Come gestire il blocco al primo rilevamento nel proprio dispositivo
 
-Se hai un dispositivo personale non gestito da un'organizzazione, potresti chiederti come attivare o disattivare il blocco al primo sguardo. Puoi usare l'app Sicurezza di Windows per gestire il blocco al primo sguardo.
+Se si ha un dispositivo personale non gestito da un'organizzazione, può essere utile sapere come attivare o disattivare il blocco al primo rilevamento. A questo scopo si può usare l'app Sicurezza di Windows.
 
-1. Nel computer Windows 10 apri l'app Sicurezza di Windows.
+1. Nel computer Windows 10 aprire l'app Sicurezza di Windows.
 
-2. Selezionare **Protezione da & virus**.
+2. Selezionare **Protezione da virus e minacce**.
 
-3. In **Impostazioni protezione da & virus** selezionare Gestisci **impostazioni.**
+3. In **Impostazioni di Protezione da virus e minacce** selezionare **Gestisci impostazioni**.
 
 4. Eseguire una delle operazioni seguenti:
 
-   - Per abilitare il blocco al primo rilevamento, assicurati che sia la protezione consegnata dal **cloud** che l'invio automatico **di** campioni siano entrambi attivati.
+   - Per attivare il blocco al primo rilevamento, verificare che siano abilitate entrambe le opzioni **Protezione fornita dal cloud** e **Invio automatico di file di esempio**.
 
-   - Per disabilitare il blocco al primo rilevamento, disattiva **Protezione recapitata dal cloud** o Invio automatico di **campioni.** <br/>
+   - Per disattivare il blocco al primo rilevamento, disabilitare **Protezione fornita dal cloud** e **Invio automatico di file di esempio**. <br/>
     
      > [!CAUTION]
-     > La disattivazione del blocco al primo sguardo riduce il livello di protezione per il dispositivo. Non è consigliabile disabilitare definitivamente il blocco al primo sguardo. 
+     > Disattivando il blocco al primo rilevamento si riduce il livello di protezione del dispositivo. Non è consigliabile disabilitare la protezione del blocco al primo rilevamento in modo permanente. 
 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Abilitare la protezione basata sul cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
-- [Protezione di Windows](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Abilitare la protezione fornita dal cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [Restare protetti con Sicurezza di Windows](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)

@@ -17,47 +17,47 @@ search.appverid:
 - SPO160
 - MET150
 description: In questo articolo viene descritto come avviare il portale tramite l'utilità di pianificazione di avvio del portale
-ms.openlocfilehash: 1e62446054f91ff5d2c99520ca65c1681d899ac9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: d7ea64b3a9fef25ddfde43e61624e49d2b7d4352
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272073"
+ms.locfileid: "52280971"
 ---
-# <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Avviare il portale utilizzando l'utilità di pianificazione di avvio di SharePoint Portal
+# <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Avviare il portale usando l'utilità di SharePoint di avvio del portale
 
-Un portale è un sito di comunicazione di SharePoint nella rete Intranet con traffico elevato, un sito che ha da 10.000 a oltre 100.000 visualizzatori nel corso di diverse settimane. Utilizzare l'utilità di pianificazione di avvio del portale per avviare il portale per garantire agli utenti un'esperienza di visualizzazione ottimale quando accedono al nuovo portale di SharePoint.
+Un portale è un sito di comunicazione SharePoint sulla rete Intranet con traffico elevato, un sito che ha da 10.000 a oltre 100.000 visitatori nel corso di diverse settimane. Usa l'utilità di pianificazione di avvio del portale per avviare il portale per garantire agli utenti un'esperienza di visualizzazione ottimale quando accedono al nuovo SharePoint portale.
 <br>
 <br>
-L'utilità di pianificazione per l'avvio del portale è progettata per consentire di seguire un approccio di implementazione in più fasi, tramite l'invio in batch dei visualizzatori e la gestione dei reindirizzamenti DEGLI URL per il nuovo portale. Durante l'avvio di ogni ondata, è possibile raccogliere il feedback degli utenti, monitorare le prestazioni del portale e sospendere l'avvio per risolvere i problemi prima di procedere con l'onda successiva. Ulteriori informazioni su come pianificare [l'avvio di un portale in SharePoint.](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide) 
+L'utilità di pianificazione per l'avvio del portale è progettata per consentire di seguire un approccio di implementazione in più fasi, tramite l'invio in batch dei visualizzatori e la gestione dei reindirizzamenti DEGLI URL per il nuovo portale. Durante l'avvio di ogni ondata, è possibile raccogliere il feedback degli utenti, monitorare le prestazioni del portale e sospendere l'avvio per risolvere i problemi prima di procedere con l'onda successiva. Altre informazioni su come pianificare [l'avvio di un portale in SharePoint](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
 
 **Esistono due tipi di reindirizzamenti:**
 
-- **Bidirezionale:** avviare un nuovo portale di SharePoint moderno per sostituire un portale classico o moderno di SharePoint esistente
-- **Reindirizzare a una pagina temporanea:** avviare un nuovo portale di SharePoint moderno senza portale di SharePoint esistente
+- **Bidirezionale:** avvia un nuovo portale SharePoint moderno per sostituire un portale SharePoint classico o moderno esistente
+- **Reindirizza a una pagina temporanea:** avvia un nuovo portale SharePoint moderno senza un portale SharePoint esistente
 
 Le autorizzazioni del sito devono essere impostate separatamente dalle ondate durante l'avvio. Ad esempio, se si rilascia un portale a livello di organizzazione, è possibile impostare le autorizzazioni su "Tutti tranne gli utenti esterni", quindi separare gli utenti in gruppi di sicurezza. L'aggiunta di un gruppo di sicurezza a un'onda non consente a tale gruppo di sicurezza di accedere al sito. 
 
 
 > [!NOTE]
-> - Questa funzionalità sarà accessibile  dal pannello Impostazioni nella home page dei siti di comunicazione di SharePoint per i clienti con rilascio mirato a partire da maggio 2021 e sarà disponibile per tutti i clienti entro luglio 2021
+> - Questa funzionalità sarà accessibile dal pannello **Impostazioni** nella home page dei siti di comunicazione di SharePoint per i clienti con rilascio mirato a partire da maggio 2021 e sarà disponibile per tutti i clienti entro luglio 2021
 > - La versione powershell di questo strumento è disponibile oggi
-> - Questa funzionalità può essere utilizzata solo nei siti di comunicazione di SharePoint moderni
+> - Questa funzionalità può essere utilizzata solo nei siti di comunicazione SharePoint moderni
 > - È necessario disporre delle autorizzazioni di proprietario del sito per personalizzare e pianificare l'avvio di un portale
 > - Gli avvii devono essere pianificati con almeno sette giorni di anticipo e ogni onda può durare da uno a sette giorni
 > - Il numero di onde richieste viene determinato automaticamente dal numero previsto di utenti 
-> - Prima di pianificare l'avvio di un portale, è necessario eseguire lo strumento Diagnostica pagine per [SharePoint](https://aka.ms/perftool) per verificare che la home page del sito sia integra
+> - Prima di pianificare l'avvio di un portale, è necessario eseguire lo strumento Diagnostica pagine per SharePoint per verificare che la home page del sito sia integra [](https://aka.ms/perftool)
 > - Al termine dell'avvio, tutti gli utenti con autorizzazioni per il sito potranno accedere al nuovo sito
-> - Se l'organizzazione usa [Viva Connections,](https://docs.microsoft.com/SharePoint/viva-connections)gli utenti potrebbero visualizzare l'icona dell'organizzazione nella barra dell'app Di Microsoft Teams, tuttavia, quando l'icona è selezionata, gli utenti non potranno accedere al portale fino all'avvio dell'ondata
-> - Questa funzionalità non è disponibile per i piani di Office 365 Germany, Office 365 gestito da 21Vianet (Cina) o Microsoft 365 US Government
+> - Se l'organizzazione usa [Viva Connections,](https://docs.microsoft.com/SharePoint/viva-connections)gli utenti potrebbero visualizzare l'icona dell'organizzazione nella barra dell'app Microsoft Teams, tuttavia, quando l'icona è selezionata, gli utenti non potranno accedere al portale fino all'avvio dell'ondata
+> - Questa funzionalità non è disponibile per Office 365 Germania, Office 365 gestito da 21Vianet (Cina) o per Microsoft 365 piani del governo degli Stati Uniti
 
 ### <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>Comprendere le differenze tra le opzioni dell'utilità di pianificazione di avvio del portale:
 
-In precedenza, gli avvii del portale potevano essere pianificati solo tramite PowerShell di SharePoint. A questo punto, sono disponibili due opzioni che consentono di pianificare e gestire l'avvio del portale. Informazioni sulle differenze principali tra entrambi gli strumenti:
+In precedenza, gli avvii del portale potevano essere pianificati solo SharePoint PowerShell. A questo punto, sono disponibili due opzioni che consentono di pianificare e gestire l'avvio del portale. Informazioni sulle differenze principali tra entrambi gli strumenti:
 
-**Versione powershell di SharePoint:**
+**SharePoint Versione powershell:**
 
-- Le credenziali di amministratore sono necessarie per usare [PowerShell di SharePoint](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) 
+- Le credenziali di amministratore sono necessarie per [usare SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) 
 - Requisito minimo di un'onda 
 - Pianificare l'avvio in base al fuso orario UTC (Coordinated Universal Time)
 
@@ -79,16 +79,16 @@ In precedenza, gli avvii del portale potevano essere pianificati solo tramite Po
     
     ![Immagine del prompt per l'utilizzo dell'utilità di pianificazione di avvio del portale durante la ripubblicazione della home page](../media/portal-launch-republish-2.png)
     
-    **Opzione 2:** in qualsiasi momento, è possibile passare alla home page del sito di comunicazione di SharePoint, selezionare **Impostazioni** e **quindi** Pianificare l'avvio del sito per pianificare l'avvio del portale.
+    **Opzione 2:** in qualsiasi momento, è possibile passare alla home page del sito  di comunicazione di SharePoint, selezionare **Impostazioni** e quindi Pianificare l'avvio del sito per pianificare l'avvio del portale.
     
-    ![Immagine del riquadro Impostazioni con l'opzione Pianifica avvio sito evidenziata](../media/portal-launch-settings-2.png)
+    ![Immagine del riquadro Impostazioni con l'opzione Pianifica l'avvio di un sito evidenziata](../media/portal-launch-settings-2.png)
 
-3.  Successivamente, confermare il punteggio di integrità del portale e apportare miglioramenti al portale, se necessario, utilizzando lo strumento Diagnostica pagine per [SharePoint](https://aka.ms/perftool) fino a quando il portale non riceve un **punteggio Integro.** Selezionare quindi **Avanti**.
+3.  Quindi, confermare il punteggio di integrità del portale e apportare miglioramenti al portale, se necessario, usando lo strumento Diagnostica pagine per [SharePoint](https://aka.ms/perftool) fino a quando il portale non riceve un **punteggio Integro.** Selezionare quindi **Avanti**.
 
     ![Immagine dello strumento utilità di pianificazione di avvio del portale](../media/portal-launch-panel-2.png)
        
     > [!NOTE] 
-    > Il nome e la descrizione del sito non possono essere modificati dall'utilità  di pianificazione di avvio del portale e possono essere modificati selezionando **Impostazioni** e quindi Informazioni sito dalla home page.
+    > Il nome e la descrizione del sito non possono essere modificati dall'utilità di  pianificazione di avvio del portale e possono essere modificati selezionando **Impostazioni** e quindi Informazioni sito dalla home page.
  
 4.  Selezionare **il numero di utenti previsti** nell'elenco a discesa. Questa figura rappresenta il numero di utenti che probabilmente dovranno accedere al sito. L'utilità di pianificazione di avvio del portale determinerà automaticamente il numero ideale di onde a seconda degli utenti previsti come questo:
     
@@ -99,31 +99,31 @@ In precedenza, gli avvii del portale potevano essere pianificati solo tramite Po
 
 5.  Quindi, determinare **il tipo di reindirizzamento** necessario:
 
-    Opzione 1: Inviare utenti a una pagina di **SharePoint esistente (bidirezionale):** utilizzare questa opzione quando si avvia un nuovo portale di SharePoint moderno per sostituire un portale di SharePoint esistente. Gli utenti in ondate attive verranno reindirizzati al nuovo sito indipendentemente dal fatto che si snavigare verso il sito vecchio o nuovo. Gli utenti in un'ondata non avviata che tentano di accedere al nuovo sito verranno reindirizzati al sito precedente fino all'avvio dell'ondata.
+    Opzione 1: Inviare utenti a una pagina **di SharePoint esistente (bidirezionale):** utilizzare questa opzione quando si avvia un nuovo portale SharePoint moderno per sostituire un portale SharePoint esistente. Gli utenti in ondate attive verranno reindirizzati al nuovo sito indipendentemente dal fatto che si snavigare verso il sito vecchio o nuovo. Gli utenti in un'ondata non avviata che tentano di accedere al nuovo sito verranno reindirizzati al sito precedente fino all'avvio dell'ondata.
     
     > [!NOTE] 
-    > Quando si utilizza l'opzione bidirezionale, la persona che pianifica l'avvio deve disporre anche delle autorizzazioni di proprietario del sito per l'altro portale di SharePoint.
+    > Quando si utilizza l'opzione bidirezionale, la persona che pianifica l'avvio deve disporre anche delle autorizzazioni di proprietario del sito per l'SharePoint portale.
        
-    **Opzione 2:** Inviare gli utenti a una pagina temporanea rigenerata automaticamente (reindirizzamento temporaneo delle pagine): utilizzare un reindirizzamento temporaneo della pagina quando non esiste un portale di SharePoint esistente. Gli utenti vengono indirizzati a un nuovo portale di SharePoint moderno e se un utente è in un'ondata che non è stata avviata, verrà reindirizzato a una pagina temporanea.
+    **Opzione 2:** Inviare gli utenti a una pagina temporanea rigenerata automaticamente (reindirizzamento temporaneo delle pagine) - Utilizzare un reindirizzamento temporaneo della pagina quando non esiste un portale SharePoint esistente. Gli utenti vengono indirizzati a un nuovo portale SharePoint moderno e se un utente è in un'ondata che non è stata avviata, verrà reindirizzato a una pagina temporanea.
     
     **Opzione 3: Inviare gli** utenti a una pagina esterna: fornire un URL esterno a un'esperienza di pagina di destinazione temporanea fino all'avvio dell'ondata dell'utente.
     
-6.  Suddividere il pubblico in onde. Aggiungere fino a 20 gruppi di sicurezza per ogni ondata. I dettagli dell'onda possono essere modificati fino al lancio di ogni onda. Ogni onda può durare almeno un giorno (24 ore) e al massimo sette giorni. Ciò consente a SharePoint e all'ambiente tecnico di accumulare e ridimensionare il volume di utenti del sito. Quando si pianifica un avvio tramite l'interfaccia utente, il fuso orario si basa sulle impostazioni internazionali del sito. 
+6.  Suddividere il pubblico in onde. Aggiungere fino a 20 gruppi di sicurezza per ogni ondata. I dettagli dell'onda possono essere modificati fino al lancio di ogni onda. Ogni onda può durare almeno un giorno (24 ore) e al massimo sette giorni. Ciò consente SharePoint e l'ambiente tecnico l'opportunità di accumulare e ridimensionare il volume di utenti del sito. Quando si pianifica un avvio tramite l'interfaccia utente, il fuso orario si basa sulle impostazioni internazionali del sito. 
 
     >[!NOTE] 
     > - L'utilità di pianificazione per l'avvio del portale avrà automaticamente un minimo di 2 onde. Tuttavia, la versione powershell di questo strumento consentirà 1 onda.
-    >  - I gruppi di Microsoft 365 non sono supportati da questa versione dell'utilità di pianificazione di avvio del portale.
+    >  - Microsoft 365 gruppi non sono supportati da questa versione dell'utilità di pianificazione di avvio del portale.
 
 7. Determinare chi deve visualizzare immediatamente il sito e immettere le informazioni nel **campo Utenti esenti da ondate.** Questi utenti sono esclusi dalle ondate e non verranno reindirizzati prima, durante o dopo l'avvio.
 
-8.  Confermare i dettagli di avvio del portale e selezionare **Pianifica**. Dopo la pianificazione dell'avvio, tutte le modifiche alla home page del portale di SharePoint dovranno ricevere un risultato di diagnostica integro prima che l'avvio del portale venga ripreso.
+8.  Confermare i dettagli di avvio del portale e selezionare **Pianifica**. Dopo la pianificazione dell'avvio, tutte le modifiche apportate alla home page del portale di SharePoint dovranno ricevere un risultato di diagnostica integro prima della ripresa dell'avvio del portale.
 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>Apportare modifiche a un avvio pianificato del portale
 
 I dettagli di avvio possono essere modificati per ogni ondata fino alla data di avvio dell'onda. 
 
-1.  Per modificare i dettagli di avvio del portale, passare a **Impostazioni** e selezionare **Pianifica avvio sito.**
+1.  Per modificare i dettagli di avvio del portale, passare a **Impostazioni** e selezionare **Pianifica avvio sito**.
 2.  Selezionare quindi **Modifica**.
 3.  Dopo aver apportato le modifiche, selezionare **Aggiorna**.
 
@@ -132,7 +132,7 @@ I dettagli di avvio possono essere modificati per ogni ondata fino alla data di 
 
 Gli avvii pianificati tramite lo strumento Utilità di pianificazione di avvio portale possono essere annullati o eliminati in qualsiasi momento anche se alcune onde sono già state avviate.
 
-1.  Per annullare l'avvio del portale, passare a **Impostazioni** e **Pianificare l'avvio del sito.**
+1.  Per annullare l'avvio del portale, passare a **Impostazioni** **e Pianificare l'avvio del sito.**
 
 2.  Selezionare quindi **Elimina** e quindi, quando viene visualizzato il messaggio seguente, selezionare **di nuovo Elimina.**
 
@@ -141,11 +141,11 @@ Gli avvii pianificati tramite lo strumento Utilità di pianificazione di avvio p
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>Usare l'utilità di pianificazione di avvio del portale di PowerShell
 
-Lo strumento utilità di pianificazione di avvio di SharePoint Portal era originariamente disponibile solo tramite PowerShell di [SharePoint](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) e continuerà a essere supportato tramite PowerShell per i clienti che preferiscono questo metodo. Le stesse note all'inizio di questo articolo si applicano a entrambe le versioni dell'utilità di pianificazione di avvio del portale. 
+Lo strumento SharePoint utilità di pianificazione di avvio del portale di SharePoint era originariamente disponibile solo tramite [PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) e continuerà SharePoint essere supportato tramite PowerShell per i clienti che preferiscono questo metodo. Le stesse note all'inizio di questo articolo si applicano a entrambe le versioni dell'utilità di pianificazione di avvio del portale. 
 
 >[!NOTE]
-> Per utilizzare PowerShell di SharePoint, sono necessarie le autorizzazioni di amministratore.
-> Verranno visualizzati i dettagli di avvio del portale per gli avvii creati in PowerShell e possono essere gestiti nel nuovo strumento Utilità di pianificazione di avvio portale in SharePoint.
+> È necessario disporre delle autorizzazioni di amministratore per SharePoint PowerShell.
+> I dettagli di avvio del portale per gli avvii creati in PowerShell verranno visualizzati e possono essere gestiti nel nuovo strumento utilità di pianificazione di avvio del portale in SharePoint.
 
 
 ### <a name="app-setup-and-connecting-to-sharepoint-online"></a>Configurazione dell'app e connessione a SharePoint Online
@@ -175,11 +175,11 @@ Il numero di onde necessarie dipende dalle dimensioni di avvio previste.
 
 #### <a name="steps-for-bidirectional-redirection"></a>Passaggi per il reindirizzamento bidirezionale
 
-Il reindirizzamento bidirezionale prevede l'avvio di un nuovo portale di SharePoint Online moderno per sostituire un portale classico o moderno di SharePoint esistente. Gli utenti in ondate attive verranno reindirizzati al nuovo sito indipendentemente dal fatto che si snavigare verso il sito vecchio o nuovo. Gli utenti in un'ondata non avviata che tentano di accedere al nuovo sito verranno reindirizzati al sito precedente fino all'avvio dell'ondata. 
+Il reindirizzamento bidirezionale prevede l'avvio di un nuovo portale SharePoint Online moderno per sostituire un portale SharePoint classico o moderno esistente. Gli utenti in ondate attive verranno reindirizzati al nuovo sito indipendentemente dal fatto che si snavigare verso il sito vecchio o nuovo. Gli utenti in un'ondata non avviata che tentano di accedere al nuovo sito verranno reindirizzati al sito precedente fino all'avvio dell'ondata. 
 
 Supportiamo solo il reindirizzamento tra la home page predefinita nel vecchio sito e la home page predefinita nel nuovo sito. Se si dispone di amministratori o proprietari che devono accedere ai siti vecchi e nuovi senza essere reindirizzati, assicurarsi che siano elencati utilizzando il `WaveOverrideUsers` parametro .
 
-Per eseguire la migrazione a fasi degli utenti da un sito di SharePoint esistente a un nuovo sito di SharePoint:
+Per eseguire la migrazione degli utenti da un sito SharePoint esistente a un nuovo SharePoint in fasi:
 
 1. Eseguire il comando seguente per designare le ondate di avvio del portale.
    
@@ -200,7 +200,7 @@ Per eseguire la migrazione a fasi degli utenti da un sito di SharePoint esistent
 
 #### <a name="steps-for-redirection-to-temporary-page"></a>Passaggi per il reindirizzamento alla pagina temporanea
 
-Il reindirizzamento temporaneo delle pagine deve essere utilizzato quando non esiste un portale di SharePoint esistente. Gli utenti vengono indirizzati a un nuovo portale di SharePoint Online moderno in modo a fasi. Se un utente è in un'ondata che non è stata avviata, verrà reindirizzato a una pagina temporanea (qualsiasi URL). 
+Il reindirizzamento temporaneo delle pagine deve essere utilizzato quando non SharePoint esistente. Gli utenti vengono indirizzati a un nuovo SharePoint online moderno in modo a fasi. Se un utente è in un'ondata che non è stata avviata, verrà reindirizzato a una pagina temporanea (qualsiasi URL). 
 
 1. Eseguire il comando seguente per designare le ondate di avvio del portale.
    

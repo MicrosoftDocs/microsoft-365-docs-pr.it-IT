@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 998d8c500613ffa9fc6d790535e555ff9503f590
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933218"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281018"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Risolvere i problemi di prestazioni per Microsoft Defender per Endpoint su Linux
 
@@ -148,3 +148,6 @@ I passaggi seguenti possono essere utilizzati per risolvere e attenuare questi p
 5. Configurare Microsoft Defender per Endpoint su Linux con esclusioni per i processi o i percorsi del disco che contribuiscono ai problemi di prestazioni e ri-abilitare la protezione in tempo reale.
 
     Per altre informazioni, vedi [Configurare e convalidare le esclusioni per Microsoft Defender per Endpoint su Linux.](linux-exclusions.md)
+
+## <a name="see-also"></a>Vedere anche
+- [Analizzare i problemi di integrità degli agenti](health-status.md)
