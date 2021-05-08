@@ -16,208 +16,208 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 330406b3540becafb0ffac8cbbc36437a2e57f60
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 12ed9b8648630428c6da347252d077521d859482
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688838"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245709"
 ---
-# <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a><span data-ttu-id="1fcdf-104">Requisiti minimi per Microsoft Defender per Endpoint</span><span class="sxs-lookup"><span data-stu-id="1fcdf-104">Minimum requirements for Microsoft Defender for Endpoint</span></span>
+# <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a><span data-ttu-id="40a3d-104">Requisiti minimi per Microsoft Defender per Endpoint</span><span class="sxs-lookup"><span data-stu-id="40a3d-104">Minimum requirements for Microsoft Defender for Endpoint</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="1fcdf-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="1fcdf-105">**Applies to:**</span></span>
-- [<span data-ttu-id="1fcdf-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="1fcdf-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="1fcdf-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="1fcdf-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="40a3d-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="40a3d-105">**Applies to:**</span></span>
+- [<span data-ttu-id="40a3d-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="40a3d-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="40a3d-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="40a3d-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="1fcdf-108">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="1fcdf-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="1fcdf-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
+> <span data-ttu-id="40a3d-108">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="40a3d-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="40a3d-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="40a3d-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
-<span data-ttu-id="1fcdf-110">Esistono alcuni requisiti minimi per l'onboarding dei dispositivi nel servizio.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-110">There are some minimum requirements for onboarding devices to the service.</span></span> <span data-ttu-id="1fcdf-111">Informazioni sulle licenze, i requisiti hardware e software e altre impostazioni di configurazione per eseguire l'onboardment dei dispositivi nel servizio.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-111">Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.</span></span>
+<span data-ttu-id="40a3d-110">Esistono alcuni requisiti minimi per l'onboarding dei dispositivi nel servizio.</span><span class="sxs-lookup"><span data-stu-id="40a3d-110">There are some minimum requirements for onboarding devices to the service.</span></span> <span data-ttu-id="40a3d-111">Informazioni sulle licenze, i requisiti hardware e software e altre impostazioni di configurazione per eseguire l'onboardment dei dispositivi nel servizio.</span><span class="sxs-lookup"><span data-stu-id="40a3d-111">Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.</span></span>
 
 > [!TIP]
-> - <span data-ttu-id="1fcdf-112">Informazioni sui miglioramenti più recenti in Defender for Endpoint: [Defender for Endpoint Tech Community.](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)</span><span class="sxs-lookup"><span data-stu-id="1fcdf-112">Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).</span></span>
-> - <span data-ttu-id="1fcdf-113">Defender for Endpoint ha dimostrato le funzionalità di ottica e rilevamento leader del settore nella recente valutazione MITRE.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-113">Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation.</span></span> <span data-ttu-id="1fcdf-114">Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).</span><span class="sxs-lookup"><span data-stu-id="1fcdf-114">Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).</span></span>
+> - <span data-ttu-id="40a3d-112">Informazioni sui miglioramenti più recenti in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).</span><span class="sxs-lookup"><span data-stu-id="40a3d-112">Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).</span></span>
+> - <span data-ttu-id="40a3d-113">Defender for Endpoint ha dimostrato le funzionalità di ottica e rilevamento leader del settore nella recente valutazione MITRE.</span><span class="sxs-lookup"><span data-stu-id="40a3d-113">Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation.</span></span> <span data-ttu-id="40a3d-114">Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).</span><span class="sxs-lookup"><span data-stu-id="40a3d-114">Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).</span></span>
 
-## <a name="licensing-requirements"></a><span data-ttu-id="1fcdf-115">Requisiti per la licenza</span><span class="sxs-lookup"><span data-stu-id="1fcdf-115">Licensing requirements</span></span>
-<span data-ttu-id="1fcdf-116">Microsoft Defender for Endpoint richiede una delle seguenti offerte di contratti multilicenza Microsoft:</span><span class="sxs-lookup"><span data-stu-id="1fcdf-116">Microsoft Defender for Endpoint requires one of the following Microsoft volume licensing offers:</span></span>
+## <a name="licensing-requirements"></a><span data-ttu-id="40a3d-115">Requisiti per la licenza</span><span class="sxs-lookup"><span data-stu-id="40a3d-115">Licensing requirements</span></span>
+<span data-ttu-id="40a3d-116">Microsoft Defender for Endpoint richiede una delle seguenti offerte di contratti multilicenza Microsoft:</span><span class="sxs-lookup"><span data-stu-id="40a3d-116">Microsoft Defender for Endpoint requires one of the following Microsoft volume licensing offers:</span></span>
 
-- <span data-ttu-id="1fcdf-117">Windows 10 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="1fcdf-117">Windows 10 Enterprise E5</span></span>
-- <span data-ttu-id="1fcdf-118">Windows 10 Education A5</span><span class="sxs-lookup"><span data-stu-id="1fcdf-118">Windows 10 Education A5</span></span>
-- <span data-ttu-id="1fcdf-119">Microsoft 365 E5 (M365 E5) che include Windows 10 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="1fcdf-119">Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5</span></span>
-- <span data-ttu-id="1fcdf-120">Microsoft 365 A5 (M365 A5)</span><span class="sxs-lookup"><span data-stu-id="1fcdf-120">Microsoft 365 A5 (M365 A5)</span></span>
-- <span data-ttu-id="1fcdf-121">Microsoft 365 E5 Security</span><span class="sxs-lookup"><span data-stu-id="1fcdf-121">Microsoft 365 E5 Security</span></span>
-- <span data-ttu-id="1fcdf-122">Microsoft 365 A5 Security</span><span class="sxs-lookup"><span data-stu-id="1fcdf-122">Microsoft 365 A5 Security</span></span>
-- <span data-ttu-id="1fcdf-123">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="1fcdf-123">Microsoft Defender for Endpoint</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="1fcdf-124">Gli utenti con licenza idonea possono usare Microsoft Defender per Endpoint su un massimo di cinque dispositivi simultanei.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-124">Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.</span></span>
-> <span data-ttu-id="1fcdf-125">Microsoft Defender for Endpoint è disponibile anche per l'acquisto da un provider di soluzioni cloud (CSP).</span><span class="sxs-lookup"><span data-stu-id="1fcdf-125">Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).</span></span>
-> <span data-ttu-id="1fcdf-126">Le macchine virtuali RDSH non richiedono una licenza di Defender for Endpoint separata.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-126">RDSH VMs do not require a separate Defender for Endpoint license.</span></span>
-
-<span data-ttu-id="1fcdf-127">Microsoft Defender for Endpoint per i server richiede una delle opzioni di licenza seguenti:</span><span class="sxs-lookup"><span data-stu-id="1fcdf-127">Microsoft Defender for Endpoint for servers requires one of the following licensing options:</span></span>
-
-- [<span data-ttu-id="1fcdf-128">Centro sicurezza di Azure con Azure Defender abilitato</span><span class="sxs-lookup"><span data-stu-id="1fcdf-128">Azure Security Center with Azure Defender enabled</span></span>](https://docs.microsoft.com/azure/security-center/security-center-pricing)
-- <span data-ttu-id="1fcdf-129">Microsoft Defender for Endpoint for Server (uno per server coperto)</span><span class="sxs-lookup"><span data-stu-id="1fcdf-129">Microsoft Defender for Endpoint for Server (one per covered server)</span></span>
+- <span data-ttu-id="40a3d-117">Windows 10 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="40a3d-117">Windows 10 Enterprise E5</span></span>
+- <span data-ttu-id="40a3d-118">Windows 10 Education A5</span><span class="sxs-lookup"><span data-stu-id="40a3d-118">Windows 10 Education A5</span></span>
+- <span data-ttu-id="40a3d-119">Microsoft 365 E5 (M365 E5) che include Windows 10 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="40a3d-119">Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5</span></span>
+- <span data-ttu-id="40a3d-120">Microsoft 365 A5 (M365 A5)</span><span class="sxs-lookup"><span data-stu-id="40a3d-120">Microsoft 365 A5 (M365 A5)</span></span>
+- <span data-ttu-id="40a3d-121">Microsoft 365 E5 Security</span><span class="sxs-lookup"><span data-stu-id="40a3d-121">Microsoft 365 E5 Security</span></span>
+- <span data-ttu-id="40a3d-122">Microsoft 365 A5 Security</span><span class="sxs-lookup"><span data-stu-id="40a3d-122">Microsoft 365 A5 Security</span></span>
+- <span data-ttu-id="40a3d-123">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="40a3d-123">Microsoft Defender for Endpoint</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1fcdf-130">I clienti possono acquisire licenze server (una per server OSE)) per Microsoft Defender for Endpoint for Servers se hanno un minimo combinato di 50 licenze per una o più delle licenze utente seguenti:</span><span class="sxs-lookup"><span data-stu-id="1fcdf-130">Customers may acquire server licenses (one per covered server Operating System Environment (OSE)) for Microsoft Defender for Endpoint for Servers if they have a combined minimum of 50 licenses for one or more of the following user licenses:</span></span>
+> <span data-ttu-id="40a3d-124">Gli utenti con licenza idonea possono usare Microsoft Defender per Endpoint su un massimo di cinque dispositivi simultanei.</span><span class="sxs-lookup"><span data-stu-id="40a3d-124">Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.</span></span>
+> <span data-ttu-id="40a3d-125">Microsoft Defender for Endpoint è disponibile anche per l'acquisto da un Cloud Solution Provider (CSP).</span><span class="sxs-lookup"><span data-stu-id="40a3d-125">Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).</span></span>
+> <span data-ttu-id="40a3d-126">Le macchine virtuali RDSH non richiedono una licenza di Defender for Endpoint separata.</span><span class="sxs-lookup"><span data-stu-id="40a3d-126">RDSH VMs do not require a separate Defender for Endpoint license.</span></span>
+
+<span data-ttu-id="40a3d-127">Microsoft Defender for Endpoint per i server richiede una delle opzioni di licenza seguenti:</span><span class="sxs-lookup"><span data-stu-id="40a3d-127">Microsoft Defender for Endpoint for servers requires one of the following licensing options:</span></span>
+
+- [<span data-ttu-id="40a3d-128">Centro sicurezza di Azure con Azure Defender abilitato</span><span class="sxs-lookup"><span data-stu-id="40a3d-128">Azure Security Center with Azure Defender enabled</span></span>](https://docs.microsoft.com/azure/security-center/security-center-pricing)
+- <span data-ttu-id="40a3d-129">Microsoft Defender for Endpoint for Server (uno per server coperto)</span><span class="sxs-lookup"><span data-stu-id="40a3d-129">Microsoft Defender for Endpoint for Server (one per covered server)</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="40a3d-130">I clienti possono acquisire licenze server (una per server OSE)) per Microsoft Defender for Endpoint for Servers se hanno un minimo combinato di 50 licenze per una o più delle licenze utente seguenti:</span><span class="sxs-lookup"><span data-stu-id="40a3d-130">Customers may acquire server licenses (one per covered server Operating System Environment (OSE)) for Microsoft Defender for Endpoint for Servers if they have a combined minimum of 50 licenses for one or more of the following user licenses:</span></span>
 >
-> * <span data-ttu-id="1fcdf-131">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="1fcdf-131">Microsoft Defender for Endpoint</span></span>
-> * <span data-ttu-id="1fcdf-132">Windows E5/A5</span><span class="sxs-lookup"><span data-stu-id="1fcdf-132">Windows E5/A5</span></span>
-> * <span data-ttu-id="1fcdf-133">Microsoft 365 E5/A5</span><span class="sxs-lookup"><span data-stu-id="1fcdf-133">Microsoft 365 E5/A5</span></span>
-> * <span data-ttu-id="1fcdf-134">Microsoft 365 E5/A5 Security</span><span class="sxs-lookup"><span data-stu-id="1fcdf-134">Microsoft 365 E5/A5 Security</span></span>
+> * <span data-ttu-id="40a3d-131">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="40a3d-131">Microsoft Defender for Endpoint</span></span>
+> * <span data-ttu-id="40a3d-132">Windows E5/A5</span><span class="sxs-lookup"><span data-stu-id="40a3d-132">Windows E5/A5</span></span>
+> * <span data-ttu-id="40a3d-133">Microsoft 365 E5/A5</span><span class="sxs-lookup"><span data-stu-id="40a3d-133">Microsoft 365 E5/A5</span></span>
+> * <span data-ttu-id="40a3d-134">Microsoft 365 E5/A5 Security</span><span class="sxs-lookup"><span data-stu-id="40a3d-134">Microsoft 365 E5/A5 Security</span></span>
 
-<span data-ttu-id="1fcdf-135">Per informazioni dettagliate sulle licenze, vedere il sito [condizioni](https://www.microsoft.com/licensing/terms/) del prodotto e collaborare con il team dell'account per ulteriori informazioni sui termini e le condizioni.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-135">For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.</span></span>
+<span data-ttu-id="40a3d-135">Per informazioni dettagliate sulle licenze, vedere il sito [condizioni](https://www.microsoft.com/licensing/terms/) del prodotto e collaborare con il team dell'account per ulteriori informazioni sui termini e le condizioni.</span><span class="sxs-lookup"><span data-stu-id="40a3d-135">For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.</span></span>
 
-<span data-ttu-id="1fcdf-136">Per altre informazioni sulla matrice di funzionalità nelle edizioni di Windows 10, vedi [Confrontare le edizioni di Windows 10.](https://www.microsoft.com/windowsforbusiness/compare)</span><span class="sxs-lookup"><span data-stu-id="1fcdf-136">For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).</span></span>
+<span data-ttu-id="40a3d-136">Per ulteriori informazioni sulla matrice di funzionalità nelle Windows 10, vedere [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).</span><span class="sxs-lookup"><span data-stu-id="40a3d-136">For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).</span></span>
 
-<span data-ttu-id="1fcdf-137">Per una tabella di confronto dettagliata del confronto delle edizioni commerciali di Windows 10, vedi il [PDF di confronto.](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf)</span><span class="sxs-lookup"><span data-stu-id="1fcdf-137">For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).</span></span>
+<span data-ttu-id="40a3d-137">Per una tabella di confronto dettagliata di Windows 10 edizione commerciale, vedere il [PDF di confronto](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).</span><span class="sxs-lookup"><span data-stu-id="40a3d-137">For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).</span></span>
 
-## <a name="browser-requirements"></a><span data-ttu-id="1fcdf-138">Requisiti per il browser</span><span class="sxs-lookup"><span data-stu-id="1fcdf-138">Browser requirements</span></span>
-<span data-ttu-id="1fcdf-139">L'accesso a Defender for Endpoint viene eseguito tramite un browser, che supporta i browser seguenti:</span><span class="sxs-lookup"><span data-stu-id="1fcdf-139">Access to Defender for Endpoint is done through a browser, supporting the following browsers:</span></span>
+## <a name="browser-requirements"></a><span data-ttu-id="40a3d-138">Requisiti per il browser</span><span class="sxs-lookup"><span data-stu-id="40a3d-138">Browser requirements</span></span>
+<span data-ttu-id="40a3d-139">L'accesso a Defender for Endpoint viene eseguito tramite un browser, che supporta i browser seguenti:</span><span class="sxs-lookup"><span data-stu-id="40a3d-139">Access to Defender for Endpoint is done through a browser, supporting the following browsers:</span></span>
 
-- <span data-ttu-id="1fcdf-140">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="1fcdf-140">Microsoft Edge</span></span>
-- <span data-ttu-id="1fcdf-141">Google Chrome</span><span class="sxs-lookup"><span data-stu-id="1fcdf-141">Google Chrome</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="1fcdf-142">Mentre altri browser potrebbero funzionare, i browser menzionati sono quelli supportati.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-142">While other browsers might work, the mentioned browsers are the ones supported.</span></span>
-
-
-## <a name="hardware-and-software-requirements"></a><span data-ttu-id="1fcdf-143">Requisiti hardware e software</span><span class="sxs-lookup"><span data-stu-id="1fcdf-143">Hardware and software requirements</span></span>
-
-### <a name="supported-windows-versions"></a><span data-ttu-id="1fcdf-144">Versioni di Windows supportate</span><span class="sxs-lookup"><span data-stu-id="1fcdf-144">Supported Windows versions</span></span>
-- <span data-ttu-id="1fcdf-145">Windows 7 SP1 Enterprise ([Richiede ESU per il supporto](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq). )</span><span class="sxs-lookup"><span data-stu-id="1fcdf-145">Windows 7 SP1 Enterprise ([Requires ESU for support](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)</span></span>
-- <span data-ttu-id="1fcdf-146">Windows 7 SP1 Pro ([Richiede ESU per il supporto](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq). )</span><span class="sxs-lookup"><span data-stu-id="1fcdf-146">Windows 7 SP1 Pro ([Requires ESU for support](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)</span></span>
-- <span data-ttu-id="1fcdf-147">Windows 8.1 Enterprise</span><span class="sxs-lookup"><span data-stu-id="1fcdf-147">Windows 8.1 Enterprise</span></span>
-- <span data-ttu-id="1fcdf-148">Windows 8.1 Pro</span><span class="sxs-lookup"><span data-stu-id="1fcdf-148">Windows 8.1 Pro</span></span>
-- <span data-ttu-id="1fcdf-149">Windows 10 Enterprise</span><span class="sxs-lookup"><span data-stu-id="1fcdf-149">Windows 10 Enterprise</span></span>
-- [<span data-ttu-id="1fcdf-150">Windows 10 Enterprise LTSC</span><span class="sxs-lookup"><span data-stu-id="1fcdf-150">Windows 10 Enterprise LTSC</span></span>](https://docs.microsoft.com/windows/whats-new/ltsc/)
-- <span data-ttu-id="1fcdf-151">Windows 10 Education</span><span class="sxs-lookup"><span data-stu-id="1fcdf-151">Windows 10 Education</span></span>
-- <span data-ttu-id="1fcdf-152">Windows 10 Pro</span><span class="sxs-lookup"><span data-stu-id="1fcdf-152">Windows 10 Pro</span></span>
-- <span data-ttu-id="1fcdf-153">Windows 10 Pro Education</span><span class="sxs-lookup"><span data-stu-id="1fcdf-153">Windows 10 Pro Education</span></span>
-- <span data-ttu-id="1fcdf-154">Windows Server</span><span class="sxs-lookup"><span data-stu-id="1fcdf-154">Windows server</span></span>
-  - <span data-ttu-id="1fcdf-155">Windows Server 2008 R2 SP1</span><span class="sxs-lookup"><span data-stu-id="1fcdf-155">Windows Server 2008 R2 SP1</span></span>
-  - <span data-ttu-id="1fcdf-156">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="1fcdf-156">Windows Server 2012 R2</span></span>
-  - <span data-ttu-id="1fcdf-157">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="1fcdf-157">Windows Server 2016</span></span>
-  - <span data-ttu-id="1fcdf-158">Windows Server, versione 1803 o successiva</span><span class="sxs-lookup"><span data-stu-id="1fcdf-158">Windows Server, version 1803 or later</span></span>
-  - <span data-ttu-id="1fcdf-159">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="1fcdf-159">Windows Server 2019</span></span>
-- <span data-ttu-id="1fcdf-160">Desktop virtuale Windows</span><span class="sxs-lookup"><span data-stu-id="1fcdf-160">Windows Virtual Desktop</span></span>
-
-<span data-ttu-id="1fcdf-161">I dispositivi nella rete devono eseguire una di queste edizioni.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-161">Devices on your network must be running one of these editions.</span></span>
-
-<span data-ttu-id="1fcdf-162">I requisiti hardware per Defender per Endpoint nei dispositivi sono gli stessi per le edizioni supportate.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-162">The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.</span></span>
+- <span data-ttu-id="40a3d-140">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="40a3d-140">Microsoft Edge</span></span>
+- <span data-ttu-id="40a3d-141">Google Chrome</span><span class="sxs-lookup"><span data-stu-id="40a3d-141">Google Chrome</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1fcdf-163">I computer che eseguono versioni per dispositivi mobili di Windows (ad esempio Windows CE e Windows 10 Mobile) non sono supportati.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-163">Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.</span></span>
+> <span data-ttu-id="40a3d-142">Mentre altri browser potrebbero funzionare, i browser menzionati sono quelli supportati.</span><span class="sxs-lookup"><span data-stu-id="40a3d-142">While other browsers might work, the mentioned browsers are the ones supported.</span></span>
+
+
+## <a name="hardware-and-software-requirements"></a><span data-ttu-id="40a3d-143">Requisiti hardware e software</span><span class="sxs-lookup"><span data-stu-id="40a3d-143">Hardware and software requirements</span></span>
+
+### <a name="supported-windows-versions"></a><span data-ttu-id="40a3d-144">Versioni Windows supportate</span><span class="sxs-lookup"><span data-stu-id="40a3d-144">Supported Windows versions</span></span>
+- <span data-ttu-id="40a3d-145">Windows 7 SP1 Enterprise ([Richiede ESU per il supporto](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq). )</span><span class="sxs-lookup"><span data-stu-id="40a3d-145">Windows 7 SP1 Enterprise ([Requires ESU for support](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)</span></span>
+- <span data-ttu-id="40a3d-146">Windows 7 SP1 Pro ([Richiede ESU per il supporto](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)</span><span class="sxs-lookup"><span data-stu-id="40a3d-146">Windows 7 SP1 Pro ([Requires ESU for support](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)</span></span>
+- <span data-ttu-id="40a3d-147">Windows 8.1 Enterprise</span><span class="sxs-lookup"><span data-stu-id="40a3d-147">Windows 8.1 Enterprise</span></span>
+- <span data-ttu-id="40a3d-148">Windows 8.1 Pro</span><span class="sxs-lookup"><span data-stu-id="40a3d-148">Windows 8.1 Pro</span></span>
+- <span data-ttu-id="40a3d-149">Windows 10 Enterprise</span><span class="sxs-lookup"><span data-stu-id="40a3d-149">Windows 10 Enterprise</span></span>
+- [<span data-ttu-id="40a3d-150">Windows 10 Enterprise LTSC 2016 (o versione successiva)</span><span class="sxs-lookup"><span data-stu-id="40a3d-150">Windows 10 Enterprise LTSC 2016 (or later)</span></span>](/windows/whats-new/ltsc/)
+- <span data-ttu-id="40a3d-151">Windows 10 Education</span><span class="sxs-lookup"><span data-stu-id="40a3d-151">Windows 10 Education</span></span>
+- <span data-ttu-id="40a3d-152">Windows 10 Pro</span><span class="sxs-lookup"><span data-stu-id="40a3d-152">Windows 10 Pro</span></span>
+- <span data-ttu-id="40a3d-153">Windows 10 Pro Education</span><span class="sxs-lookup"><span data-stu-id="40a3d-153">Windows 10 Pro Education</span></span>
+- <span data-ttu-id="40a3d-154">Windows server</span><span class="sxs-lookup"><span data-stu-id="40a3d-154">Windows server</span></span>
+  - <span data-ttu-id="40a3d-155">Windows Server 2008 R2 SP1</span><span class="sxs-lookup"><span data-stu-id="40a3d-155">Windows Server 2008 R2 SP1</span></span>
+  - <span data-ttu-id="40a3d-156">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="40a3d-156">Windows Server 2012 R2</span></span>
+  - <span data-ttu-id="40a3d-157">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="40a3d-157">Windows Server 2016</span></span>
+  - <span data-ttu-id="40a3d-158">Windows Server, versione 1803 o successiva</span><span class="sxs-lookup"><span data-stu-id="40a3d-158">Windows Server, version 1803 or later</span></span>
+  - <span data-ttu-id="40a3d-159">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="40a3d-159">Windows Server 2019</span></span>
+- <span data-ttu-id="40a3d-160">Desktop virtuale Windows</span><span class="sxs-lookup"><span data-stu-id="40a3d-160">Windows Virtual Desktop</span></span>
+
+<span data-ttu-id="40a3d-161">I dispositivi nella rete devono eseguire una di queste edizioni.</span><span class="sxs-lookup"><span data-stu-id="40a3d-161">Devices on your network must be running one of these editions.</span></span>
+
+<span data-ttu-id="40a3d-162">I requisiti hardware per Defender per Endpoint nei dispositivi sono gli stessi per le edizioni supportate.</span><span class="sxs-lookup"><span data-stu-id="40a3d-162">The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="40a3d-163">I computer che eseguono versioni per dispositivi mobili di Windows (ad esempio Windows CE e Windows 10 Mobile) non sono supportati.</span><span class="sxs-lookup"><span data-stu-id="40a3d-163">Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.</span></span>
 >
-> <span data-ttu-id="1fcdf-164">Le macchine virtuali che eseguono Windows 10 Enterprise 2016 LTSB potrebbero riscontrare problemi di prestazioni se eseguite su piattaforme di virtualizzazione non Microsoft.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-164">Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.</span></span>
+> <span data-ttu-id="40a3d-164">Le macchine virtuali che Windows 10 Enterprise 2016 LTSB possono riscontrare problemi di prestazioni se eseguite su piattaforme di virtualizzazione non Microsoft.</span><span class="sxs-lookup"><span data-stu-id="40a3d-164">Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.</span></span>
 >
-> <span data-ttu-id="1fcdf-165">Per gli ambienti virtuali, ti consigliamo di usare Windows 10 Enterprise LTSC 2019 o versione successiva.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-165">For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.</span></span>
+> <span data-ttu-id="40a3d-165">Per gli ambienti virtuali, è consigliabile usare Windows 10 Enterprise LTSC 2019 o versione successiva.</span><span class="sxs-lookup"><span data-stu-id="40a3d-165">For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.</span></span>
 
 
-### <a name="other-supported-operating-systems"></a><span data-ttu-id="1fcdf-166">Altri sistemi operativi supportati</span><span class="sxs-lookup"><span data-stu-id="1fcdf-166">Other supported operating systems</span></span>
-- [<span data-ttu-id="1fcdf-167">Android</span><span class="sxs-lookup"><span data-stu-id="1fcdf-167">Android</span></span>](microsoft-defender-endpoint-android.md)
-- [<span data-ttu-id="1fcdf-168">iOS</span><span class="sxs-lookup"><span data-stu-id="1fcdf-168">iOS</span></span>](microsoft-defender-endpoint-ios.md)
-- [<span data-ttu-id="1fcdf-169">Linux</span><span class="sxs-lookup"><span data-stu-id="1fcdf-169">Linux</span></span>](microsoft-defender-endpoint-linux.md)
-- [<span data-ttu-id="1fcdf-170">macOS</span><span class="sxs-lookup"><span data-stu-id="1fcdf-170">macOS</span></span>](microsoft-defender-endpoint-mac.md)
-
-> [!NOTE]
-> <span data-ttu-id="1fcdf-171">Dovrai confermare le distribuzioni Linux e le versioni di Android, iOS e macOS che hai compatibile con Defender for Endpoint per il funzionamento dell'integrazione.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-171">You'll need to confirm the Linux distributions and versions of Android, iOS and macOS you've are compatible with Defender for Endpoint for the integration to work.</span></span>
-
-
-
-### <a name="network-and-data-storage-and-configuration-requirements"></a><span data-ttu-id="1fcdf-172">Requisiti di archiviazione e configurazione di rete e dati</span><span class="sxs-lookup"><span data-stu-id="1fcdf-172">Network and data storage and configuration requirements</span></span>
-<span data-ttu-id="1fcdf-173">Quando esegui l'onboarding guidato per la prima volta, devi scegliere dove archiviare le informazioni relative a Microsoft Defender for Endpoint: nell'Unione Europea, nel Regno Unito o nel datacenter degli Stati Uniti.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-173">When you run the onboarding wizard for the first time, you must choose where your Microsoft Defender for Endpoint-related information is stored: in the European Union, the United Kingdom, or the United States datacenter.</span></span>
+### <a name="other-supported-operating-systems"></a><span data-ttu-id="40a3d-166">Altri sistemi operativi supportati</span><span class="sxs-lookup"><span data-stu-id="40a3d-166">Other supported operating systems</span></span>
+- [<span data-ttu-id="40a3d-167">Android</span><span class="sxs-lookup"><span data-stu-id="40a3d-167">Android</span></span>](microsoft-defender-endpoint-android.md)
+- [<span data-ttu-id="40a3d-168">iOS</span><span class="sxs-lookup"><span data-stu-id="40a3d-168">iOS</span></span>](microsoft-defender-endpoint-ios.md)
+- [<span data-ttu-id="40a3d-169">Linux</span><span class="sxs-lookup"><span data-stu-id="40a3d-169">Linux</span></span>](microsoft-defender-endpoint-linux.md)
+- [<span data-ttu-id="40a3d-170">macOS</span><span class="sxs-lookup"><span data-stu-id="40a3d-170">macOS</span></span>](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
-> - <span data-ttu-id="1fcdf-174">Non è possibile modificare il percorso di archiviazione dei dati dopo la prima installazione.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-174">You cannot change your data storage location after the first-time setup.</span></span>
-> - <span data-ttu-id="1fcdf-175">Per altre [informazioni su dove](data-storage-privacy.md) e come Microsoft archivia i dati, consulta Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-175">Review the [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.</span></span>
+> <span data-ttu-id="40a3d-171">Dovrai confermare le distribuzioni Linux e le versioni di Android, iOS e macOS che hai compatibile con Defender for Endpoint per il funzionamento dell'integrazione.</span><span class="sxs-lookup"><span data-stu-id="40a3d-171">You'll need to confirm the Linux distributions and versions of Android, iOS and macOS you've are compatible with Defender for Endpoint for the integration to work.</span></span>
 
 
-### <a name="diagnostic-data-settings"></a><span data-ttu-id="1fcdf-176">Impostazioni dei dati di diagnostica</span><span class="sxs-lookup"><span data-stu-id="1fcdf-176">Diagnostic data settings</span></span>
+
+### <a name="network-and-data-storage-and-configuration-requirements"></a><span data-ttu-id="40a3d-172">Requisiti di archiviazione e configurazione di rete e dati</span><span class="sxs-lookup"><span data-stu-id="40a3d-172">Network and data storage and configuration requirements</span></span>
+<span data-ttu-id="40a3d-173">Quando esegui l'onboarding guidato per la prima volta, devi scegliere dove archiviare le informazioni relative a Microsoft Defender for Endpoint: nell'Unione Europea, nel Regno Unito o nel datacenter degli Stati Uniti.</span><span class="sxs-lookup"><span data-stu-id="40a3d-173">When you run the onboarding wizard for the first time, you must choose where your Microsoft Defender for Endpoint-related information is stored: in the European Union, the United Kingdom, or the United States datacenter.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1fcdf-177">Microsoft Defender for Endpoint non richiede alcun livello di diagnostica specifico purché sia abilitato.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-177">Microsoft Defender for Endpoint doesn't require any specific diagnostic level as long as it's enabled.</span></span>
+> - <span data-ttu-id="40a3d-174">Non è possibile modificare il percorso di archiviazione dei dati dopo la prima installazione.</span><span class="sxs-lookup"><span data-stu-id="40a3d-174">You cannot change your data storage location after the first-time setup.</span></span>
+> - <span data-ttu-id="40a3d-175">Per altre [informazioni su dove](data-storage-privacy.md) e come Microsoft archivia i dati, consulta Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint.</span><span class="sxs-lookup"><span data-stu-id="40a3d-175">Review the [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.</span></span>
 
-<span data-ttu-id="1fcdf-178">Verificare che il servizio dati di diagnostica sia abilitato in tutti i dispositivi dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-178">Make sure that the diagnostic data service is enabled on all the devices in your organization.</span></span>
-<span data-ttu-id="1fcdf-179">Per impostazione predefinita, questo servizio è abilitato.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-179">By default, this service is enabled.</span></span> <span data-ttu-id="1fcdf-180">È consigliabile verificare che i dati dei sensori siano da essi.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-180">It's good practice to check to ensure that you'll get sensor data from them.</span></span>
 
-<span data-ttu-id="1fcdf-181">Usa la riga di comando per controllare il tipo di avvio del servizio dati di diagnostica **di Windows 10:**</span><span class="sxs-lookup"><span data-stu-id="1fcdf-181">**Use the command line to check the Windows 10 diagnostic data service startup type**:</span></span>
+### <a name="diagnostic-data-settings"></a><span data-ttu-id="40a3d-176">Impostazioni dei dati di diagnostica</span><span class="sxs-lookup"><span data-stu-id="40a3d-176">Diagnostic data settings</span></span>
 
-1. <span data-ttu-id="1fcdf-182">Apri un prompt della riga di comando con privilegi elevati nel dispositivo:</span><span class="sxs-lookup"><span data-stu-id="1fcdf-182">Open an elevated command-line prompt on the device:</span></span>
+> [!NOTE]
+> <span data-ttu-id="40a3d-177">Microsoft Defender for Endpoint non richiede alcun livello di diagnostica specifico purché sia abilitato.</span><span class="sxs-lookup"><span data-stu-id="40a3d-177">Microsoft Defender for Endpoint doesn't require any specific diagnostic level as long as it's enabled.</span></span>
 
-   1.  <span data-ttu-id="1fcdf-183">Passare a **Start** e digitare **cmd**.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-183">Go to **Start** and type **cmd**.</span></span>
+<span data-ttu-id="40a3d-178">Verificare che il servizio dati di diagnostica sia abilitato in tutti i dispositivi dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="40a3d-178">Make sure that the diagnostic data service is enabled on all the devices in your organization.</span></span>
+<span data-ttu-id="40a3d-179">Per impostazione predefinita, questo servizio è abilitato.</span><span class="sxs-lookup"><span data-stu-id="40a3d-179">By default, this service is enabled.</span></span> <span data-ttu-id="40a3d-180">È consigliabile verificare che i dati dei sensori siano da essi.</span><span class="sxs-lookup"><span data-stu-id="40a3d-180">It's good practice to check to ensure that you'll get sensor data from them.</span></span>
 
-   1.  <span data-ttu-id="1fcdf-184">Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-184">Right-click **Command prompt** and select **Run as administrator**.</span></span>
+<span data-ttu-id="40a3d-181">**Utilizzare la riga di comando per controllare il tipo** Windows 10 di avvio del servizio dati di diagnostica:</span><span class="sxs-lookup"><span data-stu-id="40a3d-181">**Use the command line to check the Windows 10 diagnostic data service startup type**:</span></span>
 
-2. <span data-ttu-id="1fcdf-185">Immettere il comando seguente e premere **INVIO**:</span><span class="sxs-lookup"><span data-stu-id="1fcdf-185">Enter the following command, and press **Enter**:</span></span>
+1. <span data-ttu-id="40a3d-182">Apri un prompt della riga di comando con privilegi elevati nel dispositivo:</span><span class="sxs-lookup"><span data-stu-id="40a3d-182">Open an elevated command-line prompt on the device:</span></span>
+
+   1.  <span data-ttu-id="40a3d-183">Passare a **Start** e digitare **cmd**.</span><span class="sxs-lookup"><span data-stu-id="40a3d-183">Go to **Start** and type **cmd**.</span></span>
+
+   1.  <span data-ttu-id="40a3d-184">Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.</span><span class="sxs-lookup"><span data-stu-id="40a3d-184">Right-click **Command prompt** and select **Run as administrator**.</span></span>
+
+2. <span data-ttu-id="40a3d-185">Immettere il comando seguente e premere **INVIO**:</span><span class="sxs-lookup"><span data-stu-id="40a3d-185">Enter the following command, and press **Enter**:</span></span>
 
    ```console
    sc qc diagtrack
    ```
 
-   <span data-ttu-id="1fcdf-186">Se il servizio è abilitato, il risultato dovrebbe essere simile allo screenshot seguente:</span><span class="sxs-lookup"><span data-stu-id="1fcdf-186">If the service is enabled, then the result should look like the following screenshot:</span></span>
+   <span data-ttu-id="40a3d-186">Se il servizio è abilitato, il risultato dovrebbe essere simile allo screenshot seguente:</span><span class="sxs-lookup"><span data-stu-id="40a3d-186">If the service is enabled, then the result should look like the following screenshot:</span></span>
 
    ![Risultato del comando sc query per diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 
-<span data-ttu-id="1fcdf-188">Dovrai impostare l'avvio automatico del servizio  se il START_TYPE non è impostato su **AUTO_START**.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-188">You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.</span></span>
+<span data-ttu-id="40a3d-188">Dovrai impostare l'avvio automatico del servizio  se il START_TYPE non è impostato su **AUTO_START**.</span><span class="sxs-lookup"><span data-stu-id="40a3d-188">You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.</span></span>
 
 
-<span data-ttu-id="1fcdf-189">**Usa la riga di comando per impostare il servizio dati di diagnostica di Windows 10 per l'avvio automatico:**</span><span class="sxs-lookup"><span data-stu-id="1fcdf-189">**Use the command line to set the Windows 10 diagnostic data service to automatically start:**</span></span>
+<span data-ttu-id="40a3d-189">**Utilizzare la riga di comando per impostare l'avvio Windows 10 servizio dati di diagnostica:**</span><span class="sxs-lookup"><span data-stu-id="40a3d-189">**Use the command line to set the Windows 10 diagnostic data service to automatically start:**</span></span>
 
-1.  <span data-ttu-id="1fcdf-190">Aprire un prompt della riga di comando con privilegi elevati nell'endpoint:</span><span class="sxs-lookup"><span data-stu-id="1fcdf-190">Open an elevated command-line prompt on the endpoint:</span></span>
+1.  <span data-ttu-id="40a3d-190">Aprire un prompt della riga di comando con privilegi elevati nell'endpoint:</span><span class="sxs-lookup"><span data-stu-id="40a3d-190">Open an elevated command-line prompt on the endpoint:</span></span>
 
-    1. <span data-ttu-id="1fcdf-191">Passare a **Start** e digitare **cmd**.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-191">Go to **Start** and type **cmd**.</span></span>
+    1. <span data-ttu-id="40a3d-191">Passare a **Start** e digitare **cmd**.</span><span class="sxs-lookup"><span data-stu-id="40a3d-191">Go to **Start** and type **cmd**.</span></span>
 
-    1. <span data-ttu-id="1fcdf-192">Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-192">Right-click **Command prompt** and select **Run as administrator**.</span></span>
+    1. <span data-ttu-id="40a3d-192">Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.</span><span class="sxs-lookup"><span data-stu-id="40a3d-192">Right-click **Command prompt** and select **Run as administrator**.</span></span>
 
-2.  <span data-ttu-id="1fcdf-193">Immettere il comando seguente e premere **INVIO**:</span><span class="sxs-lookup"><span data-stu-id="1fcdf-193">Enter the following command, and press **Enter**:</span></span>
+2.  <span data-ttu-id="40a3d-193">Immettere il comando seguente e premere **INVIO**:</span><span class="sxs-lookup"><span data-stu-id="40a3d-193">Enter the following command, and press **Enter**:</span></span>
 
     ```console
     sc config diagtrack start=auto
     ```
 
-3.  <span data-ttu-id="1fcdf-194">Viene visualizzato un messaggio di esito positivo.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-194">A success message is displayed.</span></span> <span data-ttu-id="1fcdf-195">Verificare la modifica immettendo il comando seguente e premere **INVIO:**</span><span class="sxs-lookup"><span data-stu-id="1fcdf-195">Verify the change by entering the following command, and press **Enter**:</span></span>
+3.  <span data-ttu-id="40a3d-194">Viene visualizzato un messaggio di esito positivo.</span><span class="sxs-lookup"><span data-stu-id="40a3d-194">A success message is displayed.</span></span> <span data-ttu-id="40a3d-195">Verificare la modifica immettendo il comando seguente e premere **INVIO:**</span><span class="sxs-lookup"><span data-stu-id="40a3d-195">Verify the change by entering the following command, and press **Enter**:</span></span>
 
     ```console
     sc qc diagtrack
     ```
 
 
-#### <a name="internet-connectivity"></a><span data-ttu-id="1fcdf-196">Connessione Internet</span><span class="sxs-lookup"><span data-stu-id="1fcdf-196">Internet connectivity</span></span>
-<span data-ttu-id="1fcdf-197">La connettività Internet nei dispositivi è necessaria direttamente o tramite proxy.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-197">Internet connectivity on devices is required either directly or through proxy.</span></span>
+#### <a name="internet-connectivity"></a><span data-ttu-id="40a3d-196">Connessione Internet</span><span class="sxs-lookup"><span data-stu-id="40a3d-196">Internet connectivity</span></span>
+<span data-ttu-id="40a3d-197">La connettività Internet nei dispositivi è necessaria direttamente o tramite proxy.</span><span class="sxs-lookup"><span data-stu-id="40a3d-197">Internet connectivity on devices is required either directly or through proxy.</span></span>
 
-<span data-ttu-id="1fcdf-198">Il sensore Defender for Endpoint può usare una larghezza di banda media giornaliera di 5 MB per comunicare con il servizio cloud Defender for Endpoint e segnalare i dati informatici.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-198">The Defender for Endpoint sensor can use a daily average bandwidth of 5 MB to communicate with the Defender for Endpoint cloud service and report cyber data.</span></span> <span data-ttu-id="1fcdf-199">Le attività una-off come i caricamenti di file e la raccolta di pacchetti di analisi non sono incluse in questa larghezza di banda media giornaliera.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-199">One-off activities such as file uploads and investigation package collection aren't included in this daily average bandwidth.</span></span>
+<span data-ttu-id="40a3d-198">Il sensore Defender for Endpoint può usare una larghezza di banda media giornaliera di 5 MB per comunicare con il servizio cloud Defender for Endpoint e segnalare i dati informatici.</span><span class="sxs-lookup"><span data-stu-id="40a3d-198">The Defender for Endpoint sensor can use a daily average bandwidth of 5 MB to communicate with the Defender for Endpoint cloud service and report cyber data.</span></span> <span data-ttu-id="40a3d-199">Le attività una-off come i caricamenti di file e la raccolta di pacchetti di analisi non sono incluse in questa larghezza di banda media giornaliera.</span><span class="sxs-lookup"><span data-stu-id="40a3d-199">One-off activities such as file uploads and investigation package collection aren't included in this daily average bandwidth.</span></span>
 
-<span data-ttu-id="1fcdf-200">Per ulteriori informazioni sulle impostazioni di configurazione del proxy aggiuntive, vedere [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).</span><span class="sxs-lookup"><span data-stu-id="1fcdf-200">For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).</span></span>
+<span data-ttu-id="40a3d-200">Per ulteriori informazioni sulle impostazioni di configurazione del proxy aggiuntive, vedere [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).</span><span class="sxs-lookup"><span data-stu-id="40a3d-200">For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).</span></span>
 
-<span data-ttu-id="1fcdf-201">Prima di eseguire l'onboard di dispositivi, è necessario che il servizio dati di diagnostica sia abilitato.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-201">Before you onboard devices, the diagnostic data service must be enabled.</span></span> <span data-ttu-id="1fcdf-202">Il servizio è abilitato per impostazione predefinita in Windows 10.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-202">The service is enabled by default in Windows 10.</span></span>
+<span data-ttu-id="40a3d-201">Prima di eseguire l'onboard di dispositivi, è necessario che il servizio dati di diagnostica sia abilitato.</span><span class="sxs-lookup"><span data-stu-id="40a3d-201">Before you onboard devices, the diagnostic data service must be enabled.</span></span> <span data-ttu-id="40a3d-202">Il servizio è abilitato per impostazione predefinita in Windows 10.</span><span class="sxs-lookup"><span data-stu-id="40a3d-202">The service is enabled by default in Windows 10.</span></span>
 
 
-## <a name="microsoft-defender-antivirus-configuration-requirement"></a><span data-ttu-id="1fcdf-203">Requisiti di configurazione di Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="1fcdf-203">Microsoft Defender Antivirus configuration requirement</span></span>
-<span data-ttu-id="1fcdf-204">L'agente Defender for Endpoint dipende dalla capacità di Microsoft Defender Antivirus di analizzare i file e fornire informazioni su di essi.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-204">The Defender for Endpoint agent depends on the ability of Microsoft Defender Antivirus to scan files and provide information about them.</span></span>
+## <a name="microsoft-defender-antivirus-configuration-requirement"></a><span data-ttu-id="40a3d-203">Antivirus Microsoft Defender di configurazione</span><span class="sxs-lookup"><span data-stu-id="40a3d-203">Microsoft Defender Antivirus configuration requirement</span></span>
+<span data-ttu-id="40a3d-204">L'agente Defender for Endpoint dipende dalla capacità Antivirus Microsoft Defender di analizzare i file e fornire informazioni su di essi.</span><span class="sxs-lookup"><span data-stu-id="40a3d-204">The Defender for Endpoint agent depends on the ability of Microsoft Defender Antivirus to scan files and provide information about them.</span></span>
 
-<span data-ttu-id="1fcdf-205">Configura gli aggiornamenti di Security Intelligence nel Defender per i dispositivi endpoint indipendentemente dal fatto che Microsoft Defender Antivirus sia l'antimalware attivo o meno.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-205">Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not.</span></span> <span data-ttu-id="1fcdf-206">Per altre informazioni, vedi [Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)</span><span class="sxs-lookup"><span data-stu-id="1fcdf-206">For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).</span></span>
+<span data-ttu-id="40a3d-205">Configura gli aggiornamenti di Security intelligence nel Defender per i dispositivi endpoint Antivirus Microsoft Defender è l'antimalware attivo o meno.</span><span class="sxs-lookup"><span data-stu-id="40a3d-205">Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not.</span></span> <span data-ttu-id="40a3d-206">Per ulteriori informazioni, vedere [Manage Antivirus Microsoft Defender updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).</span><span class="sxs-lookup"><span data-stu-id="40a3d-206">For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).</span></span>
 
-<span data-ttu-id="1fcdf-207">Quando Microsoft Defender Antivirus non è l'antimalware attivo nell'organizzazione e usi il servizio Defender for Endpoint, Microsoft Defender Antivirus passa alla modalità passiva.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-207">When Microsoft Defender Antivirus isn't the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode.</span></span>
+<span data-ttu-id="40a3d-207">Quando Antivirus Microsoft Defender non è l'antimalware attivo nell'organizzazione e usi defender per il servizio endpoint, Antivirus Microsoft Defender attiva la modalità passiva.</span><span class="sxs-lookup"><span data-stu-id="40a3d-207">When Microsoft Defender Antivirus isn't the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode.</span></span>
 
-<span data-ttu-id="1fcdf-208">Se l'organizzazione ha disattivato Microsoft Defender Antivirus tramite criteri di gruppo o altri metodi, i dispositivi che sono stati onboarded devono essere esclusi da questo criterio di gruppo.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-208">If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.</span></span>
+<span data-ttu-id="40a3d-208">Se l'organizzazione ha disattivato Antivirus Microsoft Defender tramite Criteri di gruppo o altri metodi, i dispositivi di cui è stato fatto l'onboarded devono essere esclusi da questi criteri di gruppo.</span><span class="sxs-lookup"><span data-stu-id="40a3d-208">If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.</span></span>
 
-<span data-ttu-id="1fcdf-209">Se stai onboarding dei server e Microsoft Defender Antivirus non è l'antimalware attivo nei server, Microsoft Defender Antivirus dovrà essere configurato per passare alla modalità passiva o disinstallarlo.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-209">If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, Microsoft Defender Antivirus will either need to be configured to go on passive mode or uninstalled.</span></span> <span data-ttu-id="1fcdf-210">La configurazione dipende dalla versione del server.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-210">The configuration is dependent on the server version.</span></span> <span data-ttu-id="1fcdf-211">Per ulteriori informazioni, vedere [Compatibilità con Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)</span><span class="sxs-lookup"><span data-stu-id="1fcdf-211">For more information, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md).</span></span>
+<span data-ttu-id="40a3d-209">Se si stanno onboarding dei server e Antivirus Microsoft Defender non è l'antimalware attivo nei server, Antivirus Microsoft Defender dovrà essere configurato per passare alla modalità passiva o disinstallato.</span><span class="sxs-lookup"><span data-stu-id="40a3d-209">If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, Microsoft Defender Antivirus will either need to be configured to go on passive mode or uninstalled.</span></span> <span data-ttu-id="40a3d-210">La configurazione dipende dalla versione del server.</span><span class="sxs-lookup"><span data-stu-id="40a3d-210">The configuration is dependent on the server version.</span></span> <span data-ttu-id="40a3d-211">Per ulteriori informazioni, vedere [Antivirus Microsoft Defender compatibilità.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)</span><span class="sxs-lookup"><span data-stu-id="40a3d-211">For more information, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1fcdf-212">I criteri di gruppo normali non si applicano a Protezione da manomissione e le modifiche alle impostazioni di Microsoft Defender Antivirus verranno ignorate quando Protezione da manomissione è impostata su Protezione da manomissione.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-212">Your regular group policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on.</span></span>
+> <span data-ttu-id="40a3d-212">I criteri di gruppo normali non si applicano a Protezione da manomissione e le modifiche alle impostazioni Antivirus Microsoft Defender verranno ignorate quando Protezione manomissione è impostata su Protezione da manomissione.</span><span class="sxs-lookup"><span data-stu-id="40a3d-212">Your regular group policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on.</span></span>
 
 
-## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a><span data-ttu-id="1fcdf-213">Il driver Microsoft Defender Antivirus Early Launch Antimalware (ELAM) è abilitato</span><span class="sxs-lookup"><span data-stu-id="1fcdf-213">Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled</span></span>
-<span data-ttu-id="1fcdf-214">Se si esegue Microsoft Defender Antivirus come prodotto antimalware principale nei dispositivi, l'onboard dell'agente Defender for Endpoint verrà eseguito correttamente.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-214">If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.</span></span>
+## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a><span data-ttu-id="40a3d-213">Antivirus Microsoft Defender Il driver antimalware ad avvio anticipato (ELAM) è abilitato</span><span class="sxs-lookup"><span data-stu-id="40a3d-213">Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled</span></span>
+<span data-ttu-id="40a3d-214">Se stai eseguendo Antivirus Microsoft Defender come prodotto antimalware principale nei dispositivi, l'onboard dell'agente Defender for Endpoint verrà eseguito correttamente.</span><span class="sxs-lookup"><span data-stu-id="40a3d-214">If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.</span></span>
 
-<span data-ttu-id="1fcdf-215">Se stai eseguendo un client antimalware di terze parti e usi soluzioni di gestione dei dispositivi mobili o Microsoft Endpoint Manager (current branch), dovrai assicurarti che il driver ELAM di Microsoft Defender Antivirus sia abilitato.</span><span class="sxs-lookup"><span data-stu-id="1fcdf-215">If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Manager (current branch), you'll need to ensure the Microsoft Defender Antivirus ELAM driver is enabled.</span></span> <span data-ttu-id="1fcdf-216">Per altre informazioni, vedi [Verificare che Microsoft Defender Antivirus non sia disabilitato dai criteri.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</span><span class="sxs-lookup"><span data-stu-id="1fcdf-216">For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).</span></span>
+<span data-ttu-id="40a3d-215">Se stai eseguendo un client antimalware di terze parti e usi soluzioni di gestione dei dispositivi mobili o Microsoft Endpoint Manager (ramo corrente), dovrai assicurarti che il driver ELAM Antivirus Microsoft Defender sia abilitato.</span><span class="sxs-lookup"><span data-stu-id="40a3d-215">If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Manager (current branch), you'll need to ensure the Microsoft Defender Antivirus ELAM driver is enabled.</span></span> <span data-ttu-id="40a3d-216">Per ulteriori informazioni, vedere [Ensure that Antivirus Microsoft Defender is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).</span><span class="sxs-lookup"><span data-stu-id="40a3d-216">For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).</span></span>
 
 
-## <a name="related-topics"></a><span data-ttu-id="1fcdf-217">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="1fcdf-217">Related topics</span></span>
-- [<span data-ttu-id="1fcdf-218">Configurare Microsoft Defender per la distribuzione degli endpoint</span><span class="sxs-lookup"><span data-stu-id="1fcdf-218">Set up Microsoft Defender for Endpoint deployment</span></span>](production-deployment.md)
-- [<span data-ttu-id="1fcdf-219">Dispositivi onboard</span><span class="sxs-lookup"><span data-stu-id="1fcdf-219">Onboard devices</span></span>](onboard-configure.md)
+## <a name="related-topics"></a><span data-ttu-id="40a3d-217">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="40a3d-217">Related topics</span></span>
+- [<span data-ttu-id="40a3d-218">Configurare Microsoft Defender per la distribuzione degli endpoint</span><span class="sxs-lookup"><span data-stu-id="40a3d-218">Set up Microsoft Defender for Endpoint deployment</span></span>](production-deployment.md)
+- [<span data-ttu-id="40a3d-219">Dispositivi onboard</span><span class="sxs-lookup"><span data-stu-id="40a3d-219">Onboard devices</span></span>](onboard-configure.md)

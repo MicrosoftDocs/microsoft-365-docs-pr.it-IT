@@ -539,6 +539,12 @@
 ####### [Elencare i computer in base al consiglio](get-recommendation-machines.md)
 ####### [Elencare le vulnerabilità per consiglio](get-recommendation-vulnerabilities.md)
 
+###### [Attività correttive]()
+####### [Metodi e proprietà delle attività correttive](get-remediation-methods-properties.md)
+####### [Ottenere un'attività correttiva per ID](get-remediation-one-activity.md)
+####### [Elencare tutte le attività correttive](get-remediation-all-activities.md)
+####### [Elencare i dispositivi esposti a un'attività correttiva](get-remediation-exposed-devices-activities.md)
+
 ###### [Punteggio]()
 ####### [Metodi e proprietà di punteggio](score.md)
 ####### [Elencare punteggio di esposizione per gruppo di computer](get-machine-group-exposure-score.md)
