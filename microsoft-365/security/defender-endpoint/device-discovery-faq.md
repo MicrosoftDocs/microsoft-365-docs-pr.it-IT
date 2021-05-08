@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765000"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245961"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Domande frequenti sull'individuazione dei dispositivi
 
@@ -49,13 +49,17 @@ Puoi disattivare l'individuazione dei dispositivi tramite la [pagina Funzionalit
  In questa modalità gli endpoint onboarded in Microsoft Defender for Endpoint possono eseguire attivamente il probe dei dispositivi osservati nella rete per arricchire i dati raccolti (con quantità trascurabile di traffico di rete). Questa modalità è altamente consigliata per creare un inventario dei dispositivi affidabile e coerente. Se si sceglie di disabilitare questa modalità e si seleziona Modalità di individuazione di base, è probabile che si oda solo una visibilità limitata degli endpoint non gestiti nella rete.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Posso controllare quali dispositivi eseguono l'individuazione standard?
- Puoi personalizzare l'elenco dei dispositivi usati per eseguire l'individuazione standard. Puoi abilitare l'individuazione standard in tutti i dispositivi onboarded che supportano anche questa funzionalità (attualmente solo dispositivi Windows 10) oppure selezionare un sottoinsieme o un sottoinsieme dei dispositivi specificando i tag del dispositivo. In questo caso, tutti gli altri dispositivi verranno configurati per eseguire solo l'individuazione di base. La configurazione è disponibile nella pagina delle impostazioni di individuazione dei dispositivi.
+ Puoi personalizzare l'elenco dei dispositivi usati per eseguire l'individuazione standard. Puoi abilitare l'individuazione standard in tutti i dispositivi onboarded che supportano anche questa funzionalità (attualmente solo dispositivi Windows 10) oppure selezionare un sottoinsieme o sottoinsiemi dei dispositivi specificandone i tag. In questo caso, tutti gli altri dispositivi verranno configurati per eseguire solo l'individuazione di base. La configurazione è disponibile nella pagina delle impostazioni di individuazione dei dispositivi.
+
+## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>Posso escludere i dispositivi non gestiti dall'elenco di inventario dei dispositivi?
+Sì, puoi applicare filtri per escludere i dispositivi non gestiti dall'elenco di inventario dei dispositivi. Puoi anche usare la colonna dello stato di onboarding nelle query API per filtrare i dispositivi non gestiti. 
+
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>Quali dispositivi onboarded possono eseguire l'individuazione?
- I dispositivi onboarded in esecuzione in Windows 10 versione 1809 o successiva possono eseguire l'individuazione.
+ I dispositivi onboarded eseguiti Windows 10 versione 1809 o successiva possono eseguire l'individuazione.
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>Cosa succede se i dispositivi onboarded sono connessi alla rete domestica o al punto di accesso pubblico?
- Il motore di individuazione distingue tra gli eventi di rete ricevuti nella rete aziendale e l'esterno della rete aziendale. Correlando gli identificatori di rete tra tutti i client del tenant, gli eventi sono differenziati tra quelli ricevuti da reti private e reti aziendali. I dispositivi di rete privata non verranno elencati nell'inventario e non verranno attivamente sondati.
+ Il motore di individuazione distingue tra gli eventi di rete ricevuti nella rete aziendale e l'esterno della rete aziendale. Correlando gli identificatori di rete tra tutti i client del tenant, gli eventi sono differenziati tra quelli ricevuti da reti private e reti aziendali. Ad esempio, se la maggior parte dei dispositivi nella rete segnala di essere connessi allo stesso nome di rete, con lo stesso gateway predefinito e lo stesso indirizzo del server DHCP, si può presumere che questa rete sia probabilmente una rete aziendale. I dispositivi di rete privata non verranno elencati nell'inventario e non verranno attivamente sondati.
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>Quali protocolli si stanno acquisendo e analizzando?
  Per impostazione predefinita, tutti i dispositivi onboarded in esecuzione su Windows 10 versione 1809 o successiva acquisisce e analizzano i protocolli seguenti: ARP, CDP, DHCP, DHCPv6, IP (intestazioni), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (intestazioni), UDP (intestazioni), WSD

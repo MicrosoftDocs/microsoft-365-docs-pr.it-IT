@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 7d23230ebe4321f355128d1f3268e967a35a0a89
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114226"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245649"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Ulteriori informazioni sui tipi di informazioni riservate
 
@@ -38,7 +38,7 @@ I tipi di informazioni riservate sono classificatori basati su modelli. Rilevano
 - [Criteri di prevenzione della perdita di dati](dlp-learn-about-dlp.md) 
 - [Etichette di riservatezza](sensitivity-labels.md)
 - [Etichette di conservazione](retention.md)
-- [Gestione dei rischi Insider](insider-risk-management.md)
+- [Gestione dei rischi insider](insider-risk-management.md)
 - [Conformità delle comunicazioni](communication-compliance.md)
 - [Criteri di etichettatura automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -70,7 +70,7 @@ Scopri di più sui livelli di confidenza in questo video
 
 Otto cifre separate da spazi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Otto cifre
 - due cifre
@@ -158,5 +158,7 @@ Per creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e 
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
 - [Creare una tipologia personalizzata di informazioni riservate](create-a-custom-sensitive-information-type.md)
 - [Creare un tipo di informazioni riservate personalizzato in PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+
+Per informazioni su come usare i tipi di informazioni riservate per conformarsi alle normative sulla privacy dei dati, vedere Distribuire la protezione delle informazioni per le normative sulla privacy dei dati [con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

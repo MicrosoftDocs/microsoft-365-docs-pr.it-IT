@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare le funzionalità di conformità per evitare la perdita di dati e proteggere le informazioni riservate dei clienti.
-ms.openlocfilehash: c0accc37d3dcda9ba75813f01a98a3233c5a8369
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579955"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245085"
 ---
 # <a name="set-up-compliance-features"></a>Funzionalità di conformità della configurazione
 
-Microsoft 365 Business Premium include funzionalità che consentono di proteggere i dati e i dispositivi e di proteggere le informazioni riservate dei clienti.
+Il Microsoft 365 Business Premium include funzionalità per proteggere i dati e i dispositivi e consente di proteggere le informazioni riservate dei clienti.
 
 ## <a name="set-up-dlp-features"></a>Configurare le funzionalità DLP
 
@@ -49,7 +49,7 @@ Per mettere una cassetta postale in conservazione per controversia legale, nell'
     
 1. Nel riquadro di spostamento sinistro passare a **Utenti** \> **Utenti attivi**.
     
-2. Selezionare un utente di cui si desidera mantenere la cassetta postale per controversia legale. Nel riquadro degli utenti espandere **Impostazioni posta** e accanto a **Altre impostazioni** scegliere Modifica proprietà **di Exchange.**
+2. Selezionare un utente di cui si desidera mantenere la cassetta postale per controversia legale. Nel riquadro dell'utente espandere **Impostazioni posta** e accanto a **Altre impostazioni** scegliere Modifica **Exchange proprietà**.
     
 3. Nella pagina della cassetta postale per l'utente, scegliere ** funzionalità della cassetta postale ** sul riquadro di spostamento sinistro, quindi scegliere il collegamento **Abilita** in Conservazione per **controversia legale**.
     
@@ -61,7 +61,7 @@ Per mettere una cassetta postale in conservazione per controversia legale, nell'
 
 Le etichette di riservatezza sono disponibili con Azure Information Protection (AIP) Piano 1 e consentono di classificare e facoltativamente proteggere i documenti e i messaggi di posta elettronica applicando etichette. Le etichette possono essere applicate automaticamente dagli amministratori che definiscono regole e condizioni, manualmente dagli utenti o utilizzando una combinazione in cui agli utenti vengono forniti suggerimenti.
 
-Per configurare le etichette di riservatezza, visualizza il video per [creare e gestire le etichette di riservatezza.](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)
+Per configurare le etichette di riservatezza, visualizza il video per [creare e gestire le etichette di riservatezza.](../business-video/create-sensitivity-labels.md)
 
 
 

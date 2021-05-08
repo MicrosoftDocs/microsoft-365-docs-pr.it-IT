@@ -1,6 +1,6 @@
 ---
-title: Analisi e risposta automatizzate in Microsoft 365 Defender
-description: Ottenere una panoramica delle funzionalità di indagine e risposta automatizzate, denominate anche auto-riparazione, in Microsoft 365 Defender
+title: Indagine e risposta automatizzate in Microsoft 365 Defender
+description: Ottieni una panoramica delle funzionalità di indagine e risposta automatizzate, denominate anche auto-riparazione, in Microsoft 365 Defender
 keywords: automated, investigation, alert, trigger, action, remediation, self-healing
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,14 +21,14 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 356d843420856c8e7ec4f00ff0f6f0781cfed6b5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591924"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245457"
 ---
-# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Analisi e risposta automatizzate in Microsoft 365 Defender
+# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Indagine e risposta automatizzate in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -44,7 +44,7 @@ In questo articolo viene fornita una panoramica di AIR e vengono forniti collega
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>Funzionamento dell'indagine automatizzata e dell'auto-riparazione
 
-Quando vengono attivati avvisi di sicurezza, il team delle operazioni di sicurezza deve esaminare tali avvisi ed eseguire le operazioni necessarie per proteggere l'organizzazione. La classificazione in ordine di priorità e l'analisi degli avvisi può richiedere molto tempo, soprattutto quando continuano ad arrivare nuovi avvisi durante il corso di un'indagine. I team delle operazioni di sicurezza possono sentirsi sopraffatti dall'enorme volume di minacce che devono monitorare e da cui devono proteggersi. Le funzionalità di indagine e risposta automatizzate, con auto-riparazione, in Microsoft 365 Defender possono essere di aiuto.
+Quando vengono attivati avvisi di sicurezza, il team delle operazioni di sicurezza deve esaminare tali avvisi ed eseguire le operazioni necessarie per proteggere l'organizzazione. La classificazione in ordine di priorità e l'analisi degli avvisi può richiedere molto tempo, soprattutto quando continuano ad arrivare nuovi avvisi durante il corso di un'indagine. I team delle operazioni di sicurezza possono sentirsi sopraffatti dall'enorme volume di minacce che devono monitorare e da cui devono proteggersi. Funzionalità di indagine e risposta automatizzate, con auto-riparazione, in Microsoft 365 Defender può aiutare.
 
 Guarda il video seguente per vedere come funziona l'auto-riparazione: <p>
 
@@ -53,11 +53,11 @@ Guarda il video seguente per vedere come funziona l'auto-riparazione: <p>
 In Microsoft 365 Defender, l'indagine e la risposta automatizzate con funzionalità di auto-riparazione funzionano su dispositivi, posta elettronica & contenuti e identità.
  
 > [!TIP]
-> In questo articolo viene descritto il funzionamento dell'indagine e della risposta automatizzate. Per configurare queste funzionalità, vedere [Configure automated investigation and response capabilities in Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md)
+> In questo articolo viene descritto il funzionamento dell'indagine e della risposta automatizzate. Per configurare queste funzionalità, vedere [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
 ## <a name="your-own-virtual-analyst"></a>Analista virtuale
 
-Immagina di avere un analista virtuale nel tuo team di operazioni di sicurezza di livello 1 o di livello 2. L'analista virtuale simula i passaggi ideali che le operazioni di sicurezza seguirebbero per analizzare e correggere le minacce. L'assistente virtuale potrebbe lavorare 24 ore su 24, 7 giorni su 7 con capacità illimitata e intraprendere un carico significativo di indagini e correzione delle minacce. Un tale assistente virtuale potrebbe ridurre significativamente i tempi di risposta, togliendo l'incombenza al team delle operazioni di sicurezza per consentirgli di svolgere altri importanti progetti strategici. Se questo scenario sembra fantascienza, non lo è! Tale analista virtuale fa parte della famiglia di prodotti Microsoft 365 Defender e il suo nome è analisi e risposta *automatizzate.*
+Imagine avere un analista virtuale nel team di operazioni di sicurezza di livello 1 o di livello 2. L'analista virtuale simula i passaggi ideali che le operazioni di sicurezza seguirebbero per analizzare e correggere le minacce. L'assistente virtuale potrebbe lavorare 24 ore su 24, 7 giorni su 7 con capacità illimitata e intraprendere un carico significativo di indagini e correzione delle minacce. Un tale assistente virtuale potrebbe ridurre significativamente i tempi di risposta, togliendo l'incombenza al team delle operazioni di sicurezza per consentirgli di svolgere altri importanti progetti strategici. Se questo scenario sembra fantascienza, non lo è! Tale analista virtuale fa parte della famiglia Microsoft 365 Defender e il suo nome è analisi e risposta *automatizzate.*
 
 Le funzionalità di analisi e risposta automatizzate consentono al team delle operazioni di sicurezza di aumentare notevolmente la capacità dell'organizzazione di gestire gli avvisi e gli incidenti di sicurezza. Grazie all'indagine e alla risposta automatizzate, è possibile ridurre i costi di gestione delle attività di indagine e correzione e ottenere il massimo dalla famiglia di prodotti di protezione dalle minacce. Le funzionalità di analisi e risposta automatizzate consentono al team delle operazioni di sicurezza di:
 
@@ -88,11 +88,11 @@ In Microsoft 365 Defender, ogni indagine automatizzata correla i segnali tra Mic
 
 |Entità |Servizi di protezione dalle minacce  |
 |:---------|:---------|
-|Dispositivi (denominati anche endpoint e talvolta definiti computer)     |[Microsoft Defender per endpoint](../defender-endpoint/automated-investigations.md)<br/>[Che cosa è Microsoft Defender per identità?](/azure-advanced-threat-protection/what-is-atp) |      
+|Dispositivi (denominati anche endpoint e talvolta definiti computer)     |[Microsoft Defender ATP](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender per identità](/azure-advanced-threat-protection/what-is-atp) |      
 |Contenuto della posta elettronica (messaggi di posta elettronica che possono contenere file e URL)     |[Microsoft Defender per Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
-> Non tutti gli avvisi attivano un'indagine automatizzata e non tutte le indagini generano azioni di correzione automatizzate; dipende dal modo in cui l'indagine e la risposta automatizzate sono configurate per l'organizzazione. Vedere [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
+> Non tutti gli avvisi attivano un'indagine automatizzata e non tutte le indagini generano azioni di correzione automatizzate; dipende dal modo in cui l'indagine e la risposta automatizzate sono configurate per l'organizzazione. Vedi [Configurare le funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md)
 
 ## <a name="viewing-a-list-of-investigations"></a>Visualizzazione di un elenco di indagini
 

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9a263cbc6bdd0d521e835f086967a6f7236c6948
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 00943eb85abbfd2d237ae5544eb69d3ec4d9f875
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167042"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245505"
 ---
 # <a name="device-images"></a>Immagini dispositivo
 
@@ -25,13 +25,13 @@ ms.locfileid: "51167042"
 Se ordini [nuovi dispositivi o](#new-devices) riutilizzi quelli esistenti, hai diverse opzioni per assicurarti che l'immagine nel dispositivo soddisfi i requisiti del [dispositivo.](device-requirements.md#check-hardware-requirements) [](#existing-devices)
 
 ## <a name="new-devices"></a>Nuovi dispositivi
-Quando ordini un nuovo dispositivo da un produttore [approvato,](device-requirements.md#minimum-requirements)segui questi passaggi per assicurarti che spediranno i dispositivi con la configurazione software e l'immagine Microsoft Managed Desktop giuste.
+Quando ordini un nuovo dispositivo da un produttore [approvato,](device-requirements.md#minimum-requirements)segui questi passaggi per assicurarti che spediranno i dispositivi con la configurazione Microsoft Managed Desktop immagine e software.
 
 ### <a name="dell"></a>Dell
-Collaborare direttamente con il rappresentante commerciale Dell, che si assicurerà che l'immagine approvata da Microsoft Managed Desktop sia applicata ai dispositivi per l'ordine. Per ulteriori domande sui dispositivi Dell, sull'immagine e sul processo di ordinamento, contattare MMD_at_dell@dell.com.
+Collaborare direttamente con il venditore Dell, che si assicurerà che l'immagine approvata da Microsoft Managed Desktop sia applicata ai dispositivi per l'ordine. Per ulteriori domande sui dispositivi Dell, sull'immagine e sul processo di ordinamento, contattare MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP 
-Quando ordini nuovi dispositivi da HP, assicurati di usare lo SKU specifico elencato nella sezione Requisiti aggiuntivi per ogni modello, come mostrato in [Program devices.](device-list.md#hp)
+Quando ordini nuovi dispositivi da HP, assicurati di usare lo SKU specifico elencato nella sezione Requisiti aggiuntivi per ogni modello disponibile nel sito Dispositivi aziendali di [Shop Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices) (filtra la visualizzazione per visualizzare i dispositivi Microsoft Managed Desktop).
 
 Se stai ordinando un dispositivo da HP che [](customizing.md) è stato approvato come eccezione ma non è attualmente elencato nella pagina Elenco dispositivi, assicurati di richiedere lo SKU da usare per il tuo modello. We'll work with HP to get you this information by using your exception request. Puoi anche contattare direttamente HP per qualsiasi domanda sui dispositivi e sulle istruzioni per l'ordinamento dei dispositivi usando questi indirizzi:
  
@@ -41,9 +41,9 @@ Se stai ordinando un dispositivo da HP che [](customizing.md) è stato approvato
 - Globale: mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Quando ordini i dispositivi da Lenovo per l'uso in Microsoft Managed Desktop, dovrai indicare un numero di parte specifico incluso nell'ordine. Contatta il tuo rappresentante commerciale Lenovo o il partner di canale Lenovo e chiedi loro di creare un "*modello* di offerta speciale " con un sistema che soddisfi i requisiti [del dispositivo.](device-requirements.md#minimum-requirements) Per includere un'immagine precaricata compatibile con Microsoft Managed Desktop, chiedere al venditore di fare riferimento al " numero di parte del blocco predefinito del sistema *SBB0Q94938 – MmD Enablement*".
+Quando ordini i dispositivi da Lenovo per l'uso in Microsoft Managed Desktop, dovrai indicare un numero di parte specifico incluso nell'ordine. Contatta il tuo rappresentante commerciale Lenovo o il partner di canale Lenovo e chiedi loro di creare un "*modello* di offerta speciale " con un sistema che soddisfi i requisiti [del dispositivo.](device-requirements.md#minimum-requirements) Per includere un'immagine precaricata compatibile con Microsoft Managed Desktop, chiedere al venditore di fare riferimento al " numero parte blocco predefinito del sistema *SBB0Q94938 – MmD Enablement*".
 
-I prodotti seguenti sono attualmente abilitati per il supporto di Microsoft Managed Desktop:
+I prodotti seguenti sono attualmente abilitati per Microsoft Managed Desktop supporto tecnico:
 
 - L13 Gen 1
 - L13 Yoga Gen 1
@@ -60,7 +60,7 @@ I prodotti seguenti sono attualmente abilitati per il supporto di Microsoft Mana
 
 
 ### <a name="microsoft"></a>Microsoft
-Tutti i dispositivi Microsoft che soddisfano i requisiti del dispositivo sono disponibili con un'immagine compatibile con Microsoft Managed Desktop. Non sono necessari altri passaggi.
+Tutti i dispositivi Microsoft che soddisfano i requisiti del dispositivo sono disponibili con un'immagine che funziona con Microsoft Managed Desktop. Non sono necessari altri passaggi.
 
 Per ottenere l'immagine più recente disponibile in fabbrica in un dispositivo Microsoft, collaborare con lo specialista di Surface per usare il processo "Po pegged" di Surface.
 
@@ -68,7 +68,7 @@ Per ottenere l'immagine più recente disponibile in fabbrica in un dispositivo M
 
 Puoi riutilizzare i dispositivi esistenti purché soddisfino sia i requisiti  [del dispositivo](device-requirements.md#minimum-requirements) che i [requisiti software](device-requirements.md#installed-software). Seguire i passaggi pertinenti per il produttore.
 
-Puoi ricreare l'immagine dei dispositivi con un'immagine del produttore o usando l'"immagine universale" di Microsoft Managed Desktop. Per ottenere un'immagine del produttore appropriata, puoi ordinare almeno un [nuovo](#new-devices) dispositivo del modello che stai riutilizzando. Puoi quindi ottenere l'immagine da tale dispositivo e applicarla ad altri dispositivi dello stesso modello.
+Puoi ricreare l'immagine dei dispositivi con un'immagine del produttore o usando la Microsoft Managed Desktop "immagine universale". Per ottenere un'immagine del produttore appropriata, puoi ordinare almeno un [nuovo](#new-devices) dispositivo del modello che stai riutilizzando. Puoi quindi ottenere l'immagine da tale dispositivo e applicarla ad altri dispositivi dello stesso modello.
 
 > [!NOTE]
 > È responsabilità dell'utente creare, testare e distribuire immagini. È inoltre consigliabile usare le immagini appropriate fornite dal produttore quando possibile anziché immagini personalizzate, inclusa l'"immagine universale".
@@ -95,17 +95,17 @@ Questi passaggi rimuoveranno tutti i dati nel dispositivo, quindi prima di inizi
 
 I dispositivi Microsoft Surface includono immagini di "ripristino bare [metal"](https://support.microsoft.com/en-us/surfacerecoveryimage) specifiche per ogni modello. Puoi usare queste immagini per ricreare l'immagine dei dispositivi.
 
-Queste immagini usano Ambiente ripristino Windows (WinRE) e questo è un processo manuale (non automatizzato). Segui i passaggi descritti in [Creazione e uso di un'unità di ripristino USB per Surface.](https://support.microsoft.com/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07)
+Queste immagini usano Windows Recovery Environment (WinRE) e questo è un processo manuale (non automatizzato). Segui i passaggi descritti in [Creazione e uso di un'unità di ripristino USB per Surface.](https://support.microsoft.com/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07)
 
 
 ### <a name="universal-image"></a>Immagine universale
-Microsoft Managed Desktop ha creato un'immagine contenente Windows 10 Pro e Microsoft 365 Apps for Enterprise che puoi usare con Microsoft Managed Desktop. Tuttavia, è meglio usare le immagini appropriate a Microsoft Managed Desktop fornite dal produttore quando possibile, anche se ciò significa che una versione precedente di Windows deve essere aggiornata dopo l'accesso dell'utente. L'utilizzo dell'immagine universale di Microsoft Managed Desktop dovrebbe essere un'opzione finale.
+Microsoft Managed Desktop ha creato un'immagine contenente Windows 10 Pro e Microsoft 365 Apps per Enterprise che puoi usare con Microsoft Managed Desktop. Tuttavia, è meglio usare le immagini appropriate Microsoft Managed Desktop fornite dal produttore quando possibile, anche se ciò significa che una versione precedente di Windows che deve essere aggiornata dopo l'accesso dell'utente. L'Microsoft Managed Desktop'immagine universale deve essere un'opzione finale.
 
-- L'immagine viene aggiornata con gli ultimi aggiornamenti qualitativi mensili di Windows ogni 30-60 giorni e gli aggiornamenti di Microsoft 365 Apps for Enterprise almeno due volte all'anno.
-- L'immagine contiene un pacchetto di provisioning di ripristino per garantire il ripristino di Microsoft 365 Apps for Enterprise in base agli scenari di ripristino di Windows.
+- L Windows'immagine viene aggiornata con gli aggiornamenti qualitativi mensili più recenti ogni 30-60 giorni e Microsoft 365 Apps aggiornamenti Enterprise almeno due volte all'anno.
+- L'immagine contiene un pacchetto di provisioning di ripristino per Microsoft 365 Apps per Enterprise ripristino dopo Windows scenari di ripristino.
 - Puoi distribuire l'immagine con unità USB. Contiene un processo scriptable per inserire i driver (delineati nella documentazione inclusa nell'immagine).
 - È possibile modificare gli script e le cartelle inclusi per l'utilizzo con altre personalizzazioni, ad esempio aggiungendo aggiornamenti cumulativi specifici, codice di copia file o eseguendo altri controlli.
-- I driver e gli aggiornamenti qualitativi vengono aggiunti a Windows durante la distribuzione dall'unità USB.
+- I driver e gli aggiornamenti qualitativi vengono aggiunti Windows durante la distribuzione dall'unità USB.
 
 > [!NOTE]
 > È responsabilità dell'utente aggiungere tutti i driver necessari, eseguire tutti i test e assicurarsi che non vi siano problemi con l'immagine distribuita finale. Forniamo l'immagine universale "così come è", ma forniremo indicazioni tecniche e rispondere alle domande. Contatto MMDImage@microsoft.com.

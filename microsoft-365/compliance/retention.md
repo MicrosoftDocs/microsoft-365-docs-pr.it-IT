@@ -19,19 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860955"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245589"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Se vengono visualizzati messaggi sui criteri di conservazione nelle app, contattare il reparto IT per informazioni sulla loro configurazione. Se questi messaggi si riferiscono alla chat di Teams o a messaggi di canale, vedere [Messaggi di Teams sui criteri di conservazione](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> Se vengono visualizzati messaggi sui criteri di conservazione in Teams o si hanno domande sulle etichette di conservazione nelle app, contattare il reparto IT per informazioni sulla loro configurazione. Nel frattempo, gli articoli seguenti potrebbero risultare utili:
+> -  [Messaggi di Teams sui criteri di conservazione](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [Applicare etichette di conservazione ai file in SharePoint o OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > Le informazioni presenti in questa pagina sono destinate agli amministratori IT che possono creare i criteri e le etichette di conservazione per motivi di conformità.
 
@@ -470,8 +472,4 @@ Se si sono configurati i siti di SharePoint per criteri tipo di contenuto o crit
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione
 
-Se si è pronti per creare criteri di conservazione, vedere [Creare e configurare criteri di conservazione](create-retention-policies.md).
-
-Per creare e applicare etichette di conservazione:
-- [Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)
-- [Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)
+Vedere [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md). Questo articolo contiene informazioni su abbonamenti, autorizzazioni e collegamenti a istruzioni di configurazione end-to-end per gli scenari di conservazione.

@@ -23,28 +23,28 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: Informazioni su come spostare i file di lavoro personali e i file aziendali sensibili in OneDrive for Business in pochi semplici passaggi.
-ms.openlocfilehash: d6bcf2b41f1052c521fda50557aac4bf6a3800fa
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Scopri come spostare i file di lavoro personali e i file aziendali sensibili OneDrive for Business in pochi semplici passaggi.
+ms.openlocfilehash: 4dadc87c0168a9fcdcc795a94df8ee5b7fc7fd91
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580075"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245105"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business
 
-Guardare un breve video sullo spostamento di file in OneDrive for Business.<br><br>
+Guarda un breve video sullo spostamento di file in OneDrive for Business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business
 
 Se un utente ha un computer che contiene molti file personali, occorre prima spostarli in OneDrive for Business:
   
-1. Vai a portal.office.com e accedi con le credenziali di Microsoft 365 per le aziende dell'utente.
+1. Vai a portal.office.com e accedi con le credenziali dell'utente Microsoft 365 per le aziende.
 
 2. Fare clic sull'icona di avvio delle app ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) e passare a OneDrive. 
     
@@ -54,4 +54,4 @@ Per trasferire il profilo utente e i file importanti si può anche usare uno str
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Per altre informazioni sulla configurazione e sull'uso di Microsoft 365 per le aziende
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](../business-video/index.yml)

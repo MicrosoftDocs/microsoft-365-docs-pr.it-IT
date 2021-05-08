@@ -1,5 +1,5 @@
 ---
-title: Panoramica di Microsoft 365 Business Premium Security
+title: Panoramica della Microsoft 365 Business Premium sicurezza
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle funzionalità di sicurezza incluse in Microsoft 365 per le aziende.
-ms.openlocfilehash: 5274d54fb39cfbeee8ce9abd7fb738543aaacc53
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0cbb13d08b52484d69c50de7e45dafb5020a9192
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578736"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245205"
 ---
 # <a name="overview-of-security"></a>Panoramica della sicurezza
 
@@ -34,12 +34,12 @@ ms.locfileid: "51578736"
 
 Microsoft 365 Business Premium offre funzionalità di protezione dalle minacce, protezione dei dati e gestione dei dispositivi per proteggere l'azienda da minacce online e accessi non autorizzati, oltre a proteggere e gestire i dati aziendali su telefoni, tablet e computer.
 
-|![Protezione dalle minacce](../media/m365-business-security-threat-protection.png)<br/>[Protezione dalle minacce](#threat-protection)|![Collaborare con un client](../media/m365-business-security-data-protection.png) <br/>[Protezione dei dati](#data-protection) | ![Gestione dispositivi](../media/m365-business-security-device-management.png) <br/>[Gestione dispositivi](#device-management) |
+|![Protezione dalle minacce](../media/m365-business-security-threat-protection.png)<br/>[Protezione dalle minacce](#threat-protection)|![Collaborare con un client](../media/m365-business-security-data-protection.png) <br/>[Protezione dei dati](#data-protection) | ![Gestione dei dispositivi](../media/m365-business-security-device-management.png) <br/>[Gestione dispositivi](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Protezione dalle minacce
 
-Microsoft 365 Business Premium include Office 365 Advanced Threat Protection (ATP), un servizio di filtro della posta elettronica basato su cloud che protegge da malware, ransomware, collegamenti dannosi e altro ancora. I collegamenti sicuri di ATP proteggono l'utente da URL dannosi nei messaggi di posta elettronica o nei documenti di Office. Gli allegati sicuri di ATP proteggono l'utente da malware e virus allegati a messaggi o documenti.
+Microsoft 365 Business Premium include Office 365 Advanced Threat Protection (ATP), un servizio di filtro della posta elettronica basato su cloud che protegge da malware, ransomware, collegamenti dannosi e altro ancora. I collegamenti sicuri di ATP proteggono l'utente da URL dannosi nei messaggi di posta elettronica Office documenti. Gli allegati sicuri di ATP proteggono l'utente da malware e virus allegati a messaggi o documenti.
 
 L'autenticazione a più fattori (MFA) o la verifica in due passaggi richiede di presentare una seconda forma di autenticazione, ad esempio un codice di verifica, per confermare l'identità prima di poter accedere alle risorse.  
 
@@ -47,22 +47,26 @@ Windows Defender fornisce una protezione completa per il sistema, i file e le at
 
 ## <a name="data-protection"></a>Protezione dei dati
 
-Le funzionalità di protezione dei dati in Microsoft 365 Business Premium assicurano che i dati importanti rimangano sicuri e che solo le persone autorizzate vi hanno accesso.
+Le funzionalità di protezione dei Microsoft 365 Business Premium consentono di garantire che i dati importanti rimangano sicuri e che solo le persone autorizzate possono accedervi.
 
 È possibile utilizzare i criteri di prevenzione della perdita dei dati (DLP) per identificare e gestire le informazioni riservate, ad esempio i numeri di previdenza sociale o di carta di credito, in modo che non vengono erroneamente condivise. 
 
-La crittografia dei messaggi di Office 365 combina le funzionalità di crittografia e diritti di accesso per garantire che solo i destinatari previsti possano visualizzare il contenuto dei messaggi. La crittografia dei messaggi di Office 365 funziona con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica.
+Office 365 Message Encryption combina funzionalità di crittografia e diritti di accesso per garantire che solo i destinatari previsti possano visualizzare il contenuto dei messaggi. Office 365 Message Encryption funziona con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica.
 
 Archiviazione Exchange Online è una soluzione di archiviazione basata su cloud che funziona con Microsoft Exchange o Exchange Online per fornire funzionalità di archiviazione avanzate, tra cui blocchi e ridondanza dei dati. È possibile utilizzare i criteri di conservazione per aiutare l'organizzazione a ridurre le responsabilità associate alla posta elettronica e ad altre comunicazioni. Se l'azienda deve conservare le comunicazioni relative a controversie legali, è possibile utilizzare i blocchi In-Place e le esenzioni per controversia legale per conservare la posta elettronica correlata.
 
 ## <a name="device-management"></a>Gestione dei dispositivi
 
-Le funzionalità avanzate di gestione dei dispositivi di Microsoft 365 Business Premium consentono di monitorare e controllare le attività che gli utenti possono eseguire con i dispositivi registrati. Queste funzionalità includono l'accesso condizionale, Gestione dispositivi mobili (MDM), BitLocker e gli aggiornamenti automatici.
+Microsoft 365 Business Premium funzionalità avanzate di gestione dei dispositivi consentono di monitorare e controllare le attività che gli utenti possono eseguire con i dispositivi registrati. Queste funzionalità includono l'accesso condizionale, gestione di dispositivi mobili (MDM), BitLocker e aggiornamenti automatici.
 
 È possibile utilizzare i criteri di accesso condizionale per richiedere misure di sicurezza aggiuntive per determinati utenti e attività. Ad esempio, è possibile richiedere l'autenticazione a più fattori (MFA) o bloccare i client che non supportano l'accesso condizionale.
 
-Con MDM, puoi proteggere e gestire i dispositivi mobili degli utenti come iPhone, iPad, Android e telefoni Windows. Puoi creare e gestire i criteri di sicurezza dei dispositivi, cancellare in remoto un dispositivo per rimuovere tutti i dati aziendali, ripristinare le impostazioni di fabbrica di un dispositivo e visualizzare report dettagliati sul dispositivo. 
+Con MDM puoi proteggere e gestire i dispositivi mobili degli utenti come iPhone, iPad, Android e Windows telefoni. Puoi creare e gestire i criteri di sicurezza dei dispositivi, cancellare in remoto un dispositivo per rimuovere tutti i dati aziendali, ripristinare le impostazioni di fabbrica di un dispositivo e visualizzare report dettagliati sul dispositivo. 
 
-Puoi abilitare la crittografia BitLocker per proteggere i dati in caso di perdita o furto di un dispositivo e abilitare Windows Exploit Guard per fornire una protezione avanzata contro i ransomware.
+Puoi abilitare la BitLocker per proteggere i dati in caso di sperpero o furto di un dispositivo e abilitare Windows Exploit Guard per fornire una protezione avanzata contro i ransomware.
 
 È possibile configurare gli aggiornamenti automatici in modo che le funzionalità e gli aggiornamenti di sicurezza più recenti siano applicati a tutti i dispositivi utente. 
+
+## <a name="recommended-security-guidance"></a>Indicazioni consigliate per la sicurezza
+
+Se si dispone di Microsoft Business Premium, il modo più rapido per configurare la sicurezza e iniziare a collaborare in modo sicuro è seguire le indicazioni in questa raccolta: Microsoft 365 per le aziende e le campagne di piccole [dimensioni.](../campaigns/index.md) Questa guida è stata sviluppata in collaborazione con il team di Microsoft Defending Democracy per proteggere tutti i clienti delle piccole imprese dalle minacce informatiche lanciate da sofisticati hacker.

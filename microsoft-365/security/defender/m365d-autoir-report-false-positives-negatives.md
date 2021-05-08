@@ -1,6 +1,6 @@
 ---
 title: Gestire falsi positivi o falsi negativi in AIR in Microsoft 365 Defender
-description: È stato rilevato qualcosa di sbagliato o mancato da AIR in Microsoft 365 Defender? Informazioni su come inviare falsi positivi o falsi negativi a Microsoft per l'analisi.
+description: Qualcosa non è stato rilevato o rilevato in modo errato da AIR in Microsoft 365 Defender? Informazioni su come inviare falsi positivi o falsi negativi a Microsoft per l'analisi.
 keywords: automatizzato, indagine, avviso, correzione, falso positivo, falso negativo
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f57e68ba88879ed78170e6348ecdbce4db82b668
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 727ca529dc1a16af778e01a08c9adcfe42b9b974
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592061"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245469"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Gestire falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate
 
@@ -35,7 +35,7 @@ ms.locfileid: "51592061"
 **Si applica a:**
 - Microsoft 365 Defender
 
-I falsi positivi/negativi possono verificarsi occasionalmente con qualsiasi soluzione di protezione dalle minacce. Se [le funzionalità di analisi e risposta](m365d-autoir.md) automatizzate in Microsoft 365 Defender hanno perso o rilevato in modo errato qualcosa, il team delle operazioni di sicurezza può eseguire le operazioni seguenti:
+I falsi positivi/negativi possono verificarsi occasionalmente con qualsiasi soluzione di protezione dalle minacce. Se [le funzionalità di analisi e risposta](m365d-autoir.md) automatizzate in Microsoft 365 Defender hanno perso o rilevato qualcosa in modo errato, il team delle operazioni di sicurezza può eseguire le operazioni seguenti:
 
 - [Segnalare un falso positivo/negativo a Microsoft;](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Modificare gli avvisi](#adjust-an-alert-to-prevent-false-positives-from-recurring) (se necessario); e 
@@ -47,15 +47,15 @@ Nelle sezioni seguenti viene descritto come eseguire queste attività.
 
 |Elemento perso o rilevato in modo errato |Servizio  |Soluzione  |
 |---------|---------|---------|
-|- Messaggio di posta elettronica <br/>- Allegato di posta elettronica <br/>- URL in un messaggio di posta elettronica<br/>- URL in un file di Office      |[Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Inviare posta indesiderata sospetta, phish, URL e file a Microsoft per l'analisi](../office-365-security/admin-submission.md)         |
-|File o app in un dispositivo    |[Microsoft Defender per endpoint](/windows/security/threat-protection)         |[Inviare un file a Microsoft per l'analisi del malware](https://www.microsoft.com/wdsi/filesubmission)         |
+|- Messaggio di posta elettronica <br/>- Allegato di posta elettronica <br/>- URL in un messaggio di posta elettronica<br/>- URL in un Office file      |[Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Inviare posta indesiderata sospetta, phish, URL e file a Microsoft per l'analisi](../office-365-security/admin-submission.md)         |
+|File o app in un dispositivo    |[Microsoft Defender ATP](/windows/security/threat-protection)         |[Inviare un file a Microsoft per l'analisi del malware](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Modificare un avviso per evitare che i falsi positivi si ricorrenti
 
 |Scenario |Servizio |Soluzione |
 |--------|--------|--------|
-|- Un avviso viene attivato da un uso legittimo <br/>- Un avviso non è accurato    |[Microsoft Cloud App Security](/cloud-app-security)<br/> oppure <br/>[Rilevamento delle minacce avanzate di Azure](/azure/security/fundamentals/threat-detection)         |[Gestire gli avvisi nel portale di Cloud App Security](/cloud-app-security/managing-alerts)         |
-|Un file, un indirizzo IP, un URL o un dominio viene considerato come malware in un dispositivo, anche se è sicuro|[Microsoft Defender per endpoint](/windows/security/threat-protection) |[Creare un indicatore personalizzato con un'azione "Consenti"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|- Un avviso viene attivato da un uso legittimo <br/>- Un avviso non è accurato    |[Microsoft Cloud App Security](/cloud-app-security)<br/> oppure <br/>[Rilevamento delle minacce avanzate di Azure](/azure/security/fundamentals/threat-detection)         |[Gestire gli avvisi nel Cloud App Security portale](/cloud-app-security/managing-alerts)         |
+|Un file, un indirizzo IP, un URL o un dominio viene considerato come malware in un dispositivo, anche se è sicuro|[Microsoft Defender ATP](/windows/security/threat-protection) |[Creare un indicatore personalizzato con un'azione "Consenti"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annullare un'azione di correzione eseguita in un dispositivo
 
@@ -73,4 +73,4 @@ Se è stata eseguita un'azione di correzione su un'entità (ad esempio un dispos
 
 - [Visualizzare i dettagli e i risultati di un'indagine automatizzata](m365d-autoir-results.md)
 - [Ricerca proattiva di minacce con ricerca avanzata in Microsoft 365 Defender](advanced-hunting-overview.md)
-- [Risolvere i falsi positivi/negativi in Microsoft Defender per endpoint](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
+- [Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

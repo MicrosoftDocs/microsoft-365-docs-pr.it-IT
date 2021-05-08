@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c9526363b0430514455db1fbdf12cfb7a18229f1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932990"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245601"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Quote di ricerca avanzate e parametri di utilizzo
 
@@ -35,7 +35,7 @@ ms.locfileid: "51932990"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Per mantenere il servizio efficiente e reattivo, la ricerca avanzata imposta diverse quote e parametri di utilizzo (noti anche come "limiti del servizio"). Queste quote e questi parametri si applicano alle query eseguite manualmente e tramite [regole di rilevamento personalizzate.](custom-detection-rules.md) I clienti che eseguono regolarmente più query devono tenere traccia del consumo e applicare le [procedure consigliate di ottimizzazione](advanced-hunting-best-practices.md) per ridurre al minimo le interruzioni.
+Per mantenere il servizio efficiente e reattivo, la ricerca avanzata imposta diverse quote e parametri di utilizzo (noti anche come "limiti del servizio"). Queste quote e parametri si applicano separatamente alle query eseguite manualmente e alle query eseguite utilizzando [regole di rilevamento personalizzate.](custom-detection-rules.md) I clienti che eseguono regolarmente più query devono tenere conto di questi limiti e applicare le procedure consigliate di ottimizzazione [per](advanced-hunting-best-practices.md) ridurre al minimo le interruzioni.
 
 Fare riferimento alla tabella seguente per comprendere le quote esistenti e i parametri di utilizzo.
 
@@ -44,7 +44,7 @@ Fare riferimento alla tabella seguente per comprendere le quote esistenti e i pa
 | DataRange | 30 giorni | Ogni query | Ogni query può cercare dati fino agli ultimi 30 giorni. |
 | Set di risultati | 10.000 righe | Ogni query | Ogni query può restituire fino a 10.000 record. |
 | Timeout | 10 minuti | Ogni query | Ogni query può essere eseguita per un massimo di 10 minuti. Se non viene completato entro 10 minuti, il servizio visualizza un errore.
-| Risorse CPU | In base alle dimensioni del tenant | - Nell'ora e quindi ogni 15 minuti<br>- Ogni giorno alle 12.00 | Il servizio applica separatamente la quota giornaliera e la quota di 15 minuti. Per ogni quota, il [portale visualizza un](advanced-hunting-errors.md) errore ogni volta che viene eseguita una query e il tenant ha utilizzato più del 10% delle risorse allocate. Le query vengono bloccate se il tenant ha raggiunto il 100% fino al successivo ciclo giornaliero o di 15 minuti. |
+| Risorse CPU | In base alle dimensioni del tenant | Ogni 15 minuti | Il [portale visualizza un errore ogni](advanced-hunting-errors.md) volta che viene eseguita una query e il tenant ha utilizzato più del 10% delle risorse allocate. Le query vengono bloccate se il tenant ha raggiunto il 100% fino al successivo ciclo di 15 minuti. |
 
 >[!NOTE] 
 >Un set separato di quote e parametri si applica alle query di ricerca avanzate eseguite tramite l'API. [Informazioni sulle API di ricerca avanzata](./api-advanced-hunting.md)

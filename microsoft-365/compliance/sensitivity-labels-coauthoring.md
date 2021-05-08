@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 990ab13508565fb910abe0d5e759a93e54766915
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764365"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245721"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
@@ -134,6 +134,8 @@ Questa versione di anteprima di creazione condivisa per file crittografati con e
 - Gli utenti non potranno applicare etichette in Office per il web per file di Word, Excel e PowerPoint che hanno dimensioni superiori a 300 MB. Per questi file è possibile usare le app desktop di Office. Tuttavia, è necessario essere l'unica persona con il file aperto.
 
 - Quando si usano [criteri di prevenzione della perdita dei dati che usano etichette di riservatezza come condizioni](dlp-sensitivity-label-as-condition.md), gli allegati non crittografati per i messaggi di posta elettronica non sono supportati.
+
+- Alcuni documenti non sono compatibili con le etichette di riservatezza a causa di funzionalità come la [password di protezione](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643), le [cartelle di lavoro condivise](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534) o il contenuto che include controlli ActiveX. Altri motivi sono documentati in [Risolvere i problemi relativi alla creazione condivisa in Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7). Per questi documenti viene visualizzato un messaggio **CARICAMENTO NON RIUSCITO** e occorre selezionare l’opzione **Rimuovi modifiche**. Finché non viene risolto il problema, non etichettare questi documenti identificati con questo messaggio di errore.
 
 - Le app di Office per iOS e Android non sono supportate.
 

@@ -1,6 +1,6 @@
 ---
 title: Azioni di correzione in Microsoft 365 Defender
-description: Panoramica delle azioni di correzione che seguono indagini automatizzate in Microsoft 365 Defender
+description: Ottenere una panoramica delle azioni di correzione che seguono indagini automatizzate in Microsoft 365 Defender
 keywords: automatizzata, indagine, avviso, attivare, azione, correzione
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 41d8b91cbc905da982f8a344392398635f8d3632
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 31162944f4728f2c84efbe2cd5eafbd0c70e00f6
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591853"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245853"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Azioni di correzione in Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "51591853"
 
 ## <a name="remediation-actions"></a>Azioni correttive
 
-Durante e dopo un'indagine automatizzata in Microsoft 365 Defender, vengono identificate azioni di correzione per elementi dannosi o sospetti. Alcuni tipi di azioni di correzione vengono eseguite nei dispositivi, definiti anche endpoint. Altre azioni di correzione vengono eseguite sul contenuto della posta elettronica. Le indagini automatizzate vengono completate dopo l'esecuzione, l'approvazione o il rifiuto di azioni correttive.
+Durante e dopo un'indagine automatizzata in Microsoft 365 Defender, le azioni di correzione vengono identificate per elementi dannosi o sospetti. Alcuni tipi di azioni di correzione vengono eseguite nei dispositivi, definiti anche endpoint. Altre azioni di correzione vengono eseguite sul contenuto della posta elettronica. Le indagini automatizzate vengono completate dopo l'esecuzione, l'approvazione o il rifiuto di azioni correttive.
 
 > [!IMPORTANT]
 > Il fatto che le azioni di correzione siano eseguite automaticamente o solo dopo l'approvazione dipende da determinate impostazioni, ad esempio il modo in cui i livelli di automazione. Per ulteriori informazioni, vedere gli articoli seguenti:

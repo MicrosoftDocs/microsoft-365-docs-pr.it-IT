@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 7106f5d2e740d2b4cacbcaeb0b9391095bbeb356
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e3e842f812c5675334cc25fa35544165129db2b4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592025"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245889"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visualizzare e gestire le azioni nel centro notifiche
 
@@ -42,7 +42,7 @@ Le funzionalità di protezione dalle minacce in Microsoft 365 Defender possono c
 - Il team delle operazioni di sicurezza può eseguire [](advanced-hunting-overview.md) azioni di correzione manualmente, ad esempio durante la ricerca avanzata o durante l'analisi [di avvisi](investigate-alerts.md) [o incidenti.](investigate-incidents.md)
 
 > [!NOTE]
-> È necessario avere [autorizzazioni appropriate](m365d-action-center.md#required-permissions-for-action-center-tasks) per approvare o rifiutare azioni correttive. Per ulteriori informazioni, vedere [Prerequisites for automated investigation and response in Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
+> È necessario avere [autorizzazioni appropriate](m365d-action-center.md#required-permissions-for-action-center-tasks) per approvare o rifiutare azioni correttive. Per ulteriori informazioni, vedere [Prerequisites for automated investigation and response in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
 ## <a name="review-pending-actions-in-the-action-center"></a>Esaminare le azioni in sospeso nel centro notifiche
 
@@ -68,7 +68,7 @@ Se hai determinato che un dispositivo o un file non è una minaccia, puoi annull
 
 | Origine azione | Azioni supportate |
 |:---|:---|
-| - Indagine automatizzata <br/>- Microsoft Defender Antivirus <br/>- Azioni di risposta manuale | - Isola dispositivo <br/>- Limitare l'esecuzione del codice <br/>- Mettere in quarantena un file <br/>- Rimuovere una chiave del Registro di sistema <br/>- Arrestare un servizio <br/>- Disabilitare un driver <br/>- Rimuovere un'attività pianificata |
+| - Indagine automatizzata <br/>- Antivirus Microsoft Defender <br/>- Azioni di risposta manuale | - Isola dispositivo <br/>- Limitare l'esecuzione del codice <br/>- Mettere in quarantena un file <br/>- Rimuovere una chiave del Registro di sistema <br/>- Arrestare un servizio <br/>- Disabilitare un driver <br/>- Rimuovere un'attività pianificata |
 
 ### <a name="undo-one-remediation-action"></a>Annullare un'azione di correzione
 

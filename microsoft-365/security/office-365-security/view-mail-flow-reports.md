@@ -19,12 +19,12 @@ description: Gli amministratori possono ottenere informazioni sui report del flu
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13871908c3b09660906b9233d23495830cf31ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206233"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245673"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visualizzare i report del flusso di posta nel dashboard report nel Centro sicurezza & conformità
 
@@ -35,7 +35,7 @@ ms.locfileid: "51206233"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Oltre ai report del flusso di posta disponibili nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza e conformità di &, nel dashboard report sono disponibili diversi report aggiuntivi sul flusso di posta per monitorare l'organizzazione di Microsoft 365.
+Oltre ai report del flusso di posta disponibili nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza e conformità di &, nel dashboard report sono disponibili diversi report aggiuntivi sul flusso di posta che consentono di monitorare l'organizzazione di Microsoft 365.
 
 Se si dispone delle [autorizzazioni necessarie,](#what-permissions-are-needed-to-view-these-reports)è possibile visualizzare questi report nel Centro [sicurezza & conformità](https://protection.office.com) andando a Dashboard  \> **report.** Per passare direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
 
@@ -95,29 +95,29 @@ Se si fa **clic su Filtri** in una visualizzazione tabella dei dettagli, è poss
 
 Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
-## <a name="exchange-transport-rule-report"></a>Report delle regole di trasporto di Exchange
+## <a name="exchange-transport-rule-report"></a>Exchange delle regole di trasporto
 
-Il **rapporto sulle regole di trasporto** di Exchange mostra l'effetto delle regole del flusso di posta (note anche come regole di trasporto) sui messaggi in arrivo e in uscita nell'organizzazione.
+Il Exchange delle **regole** di trasporto mostra l'effetto delle regole del flusso di posta (note anche come regole di trasporto) sui messaggi in arrivo e in uscita nell'organizzazione.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare **a** \> **Dashboard report** e selezionare **Regola di trasporto di Exchange.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Per visualizzare il report, aprire il Centro [sicurezza & conformità,](https://protection.office.com)passare a Dashboard report e selezionare Exchange  \>  Regola di **trasporto**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
-![Widget delle regole di trasporto di Exchange nel dashboard dei report](../../media/transport-rule-report-widget.png)
+![Exchange della regola di trasporto nel dashboard report](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Visualizzazione dei report per il report delle regole di trasporto di Exchange
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Visualizzazione report per il report Exchange regola di trasporto
 
 Nella visualizzazione report sono disponibili i grafici seguenti:
 
-- **Visualizzare i dati per: regole di trasporto di Exchange** \> **Scomporsi per: Direzione**: questo grafico  mostra il numero di **messaggi in** ingresso e in uscita interessati dalle regole di trasporto.
+- **Visualizzare i dati per: Exchange di trasporto** \> **Scomporsi per: Direzione**: questo grafico  mostra il numero di **messaggi in** ingresso e in uscita interessati dalle regole di trasporto.
 
-- **Visualizzare i dati per: regole di trasporto di Exchange** \> **Scomporsi per: Gravità**: questo grafico mostra il numero **di** messaggi Di gravità elevata e Gravità media e **Gravità** bassa. Il livello di gravità viene impostato come azione nella regola **(** Controlla questa regola con livello di gravità o _SetAuditSeverity_). Per ulteriori informazioni, vedere [Mail flow rule actions in Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **Visualizzare i dati per: Exchange di trasporto** \> **Scomporsi per: Gravità**: questo grafico mostra il numero **di** messaggi Di gravità elevata e Gravità media e **Gravità** bassa. Il livello di gravità viene impostato come azione nella regola **(** Controlla questa regola con livello di gravità o _SetAuditSeverity_). Per ulteriori informazioni, vedere [Mail flow rule actions in Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Visualizzare i dati per: regole di trasporto** \> di Exchange DLP **Scomporsi per: Direzione**: questo grafico  mostra il numero di messaggi **in** ingresso e in uscita interessati dalle regole di trasporto dlp (Data Loss Prevention). È possibile perfezionare ulteriormente il grafico selezionando una delle opzioni seguenti:
+- **Visualizzare i dati in base a: DLP Exchange trasporto** \> **Scomporsi per: Direzione**: questo grafico  mostra il numero di messaggi **in** ingresso e in uscita interessati dalle regole di trasporto dlp (Data Loss Prevention). È possibile perfezionare ulteriormente il grafico selezionando una delle opzioni seguenti:
 
   - **Mostra dati per: Tutte le regole di trasporto DLP**
   - **Mostra dati per: utenti compromessi**
   - **Mostra dati per: Basso volume di contenuto rilevato U.S. Patriot Act**
 
-- **Visualizzare i dati per: regole di trasporto** \> di Exchange DLP **Scomporsi per: Direzione**:  questa visualizzazione mostra il numero  di messaggi di gravità alta e media **e** di gravità bassa interessati dalle regole di trasporto DLP. È possibile perfezionare ulteriormente il grafico selezionando una delle opzioni seguenti:
+- **Visualizzare i dati in base a: DLP Exchange trasporto** \> **Scomporsi per: Direzione**:  questa visualizzazione mostra il numero  di messaggi di gravità alta e media **e** di gravità bassa interessati dalle regole di trasporto DLP. È possibile perfezionare ulteriormente il grafico selezionando una delle opzioni seguenti:
 
   - **Mostra dati per: Tutte le regole di trasporto DLP**
   - **Mostra dati per: utenti compromessi**
@@ -129,13 +129,13 @@ Se si fa **clic su Filtri** in una visualizzazione report, è possibile modifica
 - Valori di direzione
 - Valori di gravità
 
-![Visualizzazione dei report nel report delle regole di trasporto di Exchange](../../media/transport-rule-report-report-view.png)
+![Visualizzazione report nel report delle regole Exchange trasporto](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Visualizzazione tabella dettagli per il report sulle regole di trasporto di Exchange
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Visualizzazione tabella dettagli per il report Exchange regole di trasporto
 
 Se si fa **clic su Visualizza tabella** dettagli , le informazioni visualizzate dipendono dal grafico visualizzato:
 
-- **Visualizzare i dati per: Regole di trasporto di Exchange**:
+- **Visualizzare i dati per: Exchange di trasporto**:
 
   - **Data**
   - **Regola di trasporto**
@@ -145,7 +145,7 @@ Se si fa **clic su Visualizza tabella** dettagli , le informazioni visualizzate 
   - **Gravità**
   - **Direzione**
 
-- **Visualizzare i dati per: regole di trasporto di Exchange DLP**:
+- **Visualizzare i dati per: DLP Exchange di trasporto**:
 
   - **Data**
   - **Criteri DLP**
@@ -166,7 +166,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
 ## <a name="forwarding-report"></a>Rapporto di inoltro
 
-Il **rapporto Inoltro mostra** i messaggi inoltrati automaticamente dall'organizzazione ai domini esterni dalle cassette postali di Exchange Online. I messaggi inoltrati possono rappresentare un rischio per la sicurezza o la conformità e possono indicare un account compromesso.
+Il **rapporto Inoltro mostra** i messaggi inoltrati automaticamente dall'organizzazione a domini esterni da Exchange Online cassette postali. I messaggi inoltrati possono rappresentare un rischio per la sicurezza o la conformità e possono indicare un account compromesso.
 
 Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard report  \>  e selezionare Report **di inoltro.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -214,7 +214,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
 ## <a name="mailflow-status-report"></a>Rapporto sullo stato del flusso di posta
 
-La **relazione sullo stato del flusso di** posta è simile al [rapporto](#sent-and-received-email-report)Posta inviata e ricevuta, con ulteriori informazioni sulla posta elettronica consentita o bloccata sul perimetro. Questo è l'unico report che contiene informazioni sulla protezione perimetrale e mostra la quantità di posta elettronica bloccata prima di essere consentita al servizio per la valutazione da Parte di Exchange Online Protection (EOP). È importante comprendere che se un messaggio viene inviato a cinque destinatari, viene conteggiato come cinque messaggi diversi e non un messaggio.
+La **relazione sullo stato del flusso di** posta è simile al [rapporto](#sent-and-received-email-report)Posta inviata e ricevuta, con ulteriori informazioni sulla posta elettronica consentita o bloccata sul perimetro. Questo è l'unico report che contiene informazioni sulla protezione perimetrale e mostra la quantità di posta elettronica bloccata prima di essere consentita al servizio per la valutazione da parte di Exchange Online Protection (EOP). È importante comprendere che se un messaggio viene inviato a cinque destinatari, viene conteggiato come cinque messaggi diversi e non un messaggio.
 Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard report e  \>  selezionare Report stato flusso **di posta**. Per passare direttamente alla relazione **sullo stato del flusso di posta,** aprire <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget rapporto sullo stato del flusso di posta nel dashboard report](../../media/mail-flow-status-report-widget.png)
@@ -264,9 +264,9 @@ Se si fa **clic su Scegli una categoria per ulteriori dettagli,** è possibile s
 
 Per la visualizzazione dettagli, è possibile esportare i dati solo per un giorno. Pertanto, se si desidera esportare i dati per 7 giorni, è necessario eseguire 7 diverse azioni di esportazione.
 
-Ogni file CSV esportato è limitato a 150.000 righe. Se i dati di quel giorno contengono più di 150.000 righe, verranno creati più file CSV.
+Ogni file .csv esportato è limitato a 150.000 righe. Se i dati di quel giorno contengono più di 150.000 righe, verranno creati .csv file.
 
-![Visualizzazione tipo nella relazione sullo stato del flusso di posta ](../../media/mail-flow-status-report-type-view.png)
+![Visualizzazione tipo nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-type-view.png)
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Visualizzazione della direzione per la relazione sullo stato del flusso di posta
 
@@ -284,9 +284,9 @@ La tabella dati contiene le stesse informazioni della **visualizzazione Tipo.**
 
 Per la visualizzazione dettagli, è possibile esportare i dati solo per un giorno. Pertanto, se si desidera esportare i dati per 7 giorni, è necessario eseguire 7 diverse azioni di esportazione.
 
-Ogni file CSV esportato è limitato a 150.000 righe. Se i dati di quel giorno contengono più di 150.000 righe, verranno creati più file CSV.
+Ogni file .csv esportato è limitato a 150.000 righe. Se i dati di quel giorno contengono più di 150.000 righe, verranno creati .csv file.
 
-![Visualizzazione direzione nella relazione sullo stato del flusso di posta ](../../media/mail-flow-status-report-direction-view.png)
+![Visualizzazione direzione nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-direction-view.png)
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Visualizzazione imbuto per la relazione sullo stato del flusso di posta
 
@@ -317,9 +317,9 @@ Questo grafico mostra il numero di messaggi di posta elettronica organizzati per
 - **Posta elettronica dopo la detonazione di file e URL**<sup>1</sup>
 - **Email detected as benign after post-delivery protection (URL click time protection)**
 
-<sup>1</sup> Defender solo per Office 365
+<sup>1</sup> Defender per Office 365 solo
 
-Per visualizzare separatamente il messaggio di posta elettronica filtrato da EOP o Defender per Office 365, fare clic sul valore nella legenda del grafico.
+Per visualizzare il messaggio di posta elettronica filtrato da EOP o Defender per Office 365 separatamente, fare clic sul valore nella legenda del grafico.
 
 La tabella dei dati contiene le informazioni seguenti, visualizzate in ordine di data decrescente:
 
@@ -352,11 +352,11 @@ Dopo aver fatto **clic su** Esporta **in Opzioni,** è possibile selezionare uno
 - **Riepilogo (con i dati degli ultimi 90 giorni al massimo)**
 - **Dettagli (con dati degli ultimi 30 giorni al massimo)**
 
-In **Data** scegliere un intervallo e quindi fare clic su **Applica.** I dati per i filtri correnti verranno esportati in un file CSV.
+In **Data** scegliere un intervallo e quindi fare clic su **Applica.** I dati per i filtri correnti verranno esportati in un .csv file.
 
-Ogni file CSV esportato è limitato a 150.000 righe. Se i dati contengono più di 150.000 righe, verranno creati più file CSV.
+Ogni file .csv esportato è limitato a 150.000 righe. Se i dati contengono più di 150.000 righe, verranno creati .csv file.
 
- ![Visualizzazione Imbuto nella relazione sullo stato del flusso di posta ](../../media/mail-flow-status-report-funnel-view.png)
+ ![Visualizzazione Imbuto nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Visualizzazione tecnica per la relazione sullo stato del flusso di posta
 
@@ -386,7 +386,7 @@ Questo grafico mostra i messaggi organizzati nelle categorie seguenti:
 - **Non posta indesiderata** e  **posta indesiderata**
 - **Posta elettronica non dannosa,** **rilevamento collegamenti sicuri** e <sup>\*</sup> **ZAP**
 
-<sup>\*</sup> Defender per Office 365
+<sup>\*</sup>Defender per Office 365
 
 Quando si passa il mouse su una categoria nel grafico, è possibile visualizzare il numero di messaggi in tale categoria.
 
@@ -413,11 +413,11 @@ Facendo clic **su Esporta,** in **Opzioni** è possibile selezionare uno dei val
 - **Riepilogo (con i dati degli ultimi 90 giorni al massimo)**
 - **Dettagli (con dati degli ultimi 30 giorni al massimo)**
 
-In **Data** scegliere un intervallo e quindi fare clic su **Applica.** I dati per i filtri correnti verranno esportati in un file CSV.
+In **Data** scegliere un intervallo e quindi fare clic su **Applica.** I dati per i filtri correnti verranno esportati in un .csv file.
 
-Ogni file CSV esportato è limitato a 150.000 righe. Se i dati contengono più di 150.000 righe, verranno creati più file CSV.
+Ogni file .csv esportato è limitato a 150.000 righe. Se i dati contengono più di 150.000 righe, verranno creati .csv file.
 
- ![Visualizzazione tecnica nella relazione sullo stato del flusso di posta ](../../media/mail-flow-status-report-Tech-view.png)
+ ![Visualizzazione tecnica nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>Rapporto di posta elettronica inviato e ricevuto
 

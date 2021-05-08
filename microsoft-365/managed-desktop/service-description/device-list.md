@@ -1,5 +1,5 @@
 ---
-title: Dispositivi Desktop gestito Microsoft
+title: Microsoft Managed Desktop dispositivi
 description: Questo articolo elenca le specifiche per i dispositivi approvati per Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
@@ -8,30 +8,35 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218665"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245937"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Dispositivi Desktop gestito Microsoft 
+# <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop dispositivi
+
+> [!NOTE]
+> Microsoft Managed Desktop non richiede più che i modelli di dispositivo siano presenti in questo elenco. A partire dal 3 maggio 2021, tutti i dispositivi di un produttore approvato devono soddisfare i requisiti hardware e software pubblicati. Puoi continuare a usare i dispositivi in questo elenco con sicurezza. Puoi trovare altri dispositivi consigliati per Microsoft Managed Desktop nel sito [Shop Windows 10 Pro dispositivi](https://www.microsoft.com/windowsforbusiness/view-all-devices) aziendali. In tale sito, visualizzare i dispositivi consigliati espandendo **Funzionalità** nell'area  Filtra per e quindi selezionando **Microsoft Managed Desktop**. Ogni volta che si prevede di registrare un modello di dispositivo specifico nel servizio per la prima volta, è consigliabile testare un esempio per assicurarsi che garantisca l'esperienza utente prevista. Per altre informazioni, vedi [Convalidare i nuovi dispositivi.](../get-started/validate-device.md)
 
 Microsoft Managed Desktop valuta regolarmente i dispositivi da includere nel servizio. Questo articolo elenca i dispositivi specifici attualmente supportati. Per una dichiarazione più generale dei requisiti dei dispositivi, vedi [Requisiti del dispositivo.](device-requirements.md)
 
-Per ulteriori informazioni su Microsoft Managed Desktop, vedere la documentazione e le risorse [di Microsoft Managed Desktop.](../index.yml) 
+Per ulteriori informazioni sulle Microsoft Managed Desktop, vedere Microsoft Managed Desktop [documentazione e risorse.](../index.yml) 
+
+[Selezionare e convalidare nuovi dispositivi](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere uno dei modelli seguenti e soddisfare o superare le specifiche elencate per RAM, famiglia di processori e spazio su disco. 
 
-I collegamenti ai dispositivi qui sono solo per riferimento. Se vuoi ordinare i dispositivi, contatta i contatti del canale commerciale per assicurarti di scegliere le configurazioni corrette. In questa tabella, la *data di archiviazione* è la data in cui questi modelli saranno soggetti a una durata del servizio Microsoft Managed Desktop più breve; i dispositivi di questo tipo onboarded dopo questa data non riceveranno un periodo di supporto triennale completo da Microsoft Managed Desktop. I dispositivi archiviati sono elencati anche nei [dispositivi archiviati di Microsoft Managed Desktop.](archived-device-list.md) *Data di* ritiro è la data in cui il modello non sarà più supportato da Microsoft Managed Desktop. In tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
+I collegamenti ai dispositivi qui sono solo per riferimento. Se vuoi ordinare i dispositivi, contatta i contatti del canale commerciale per assicurarti di scegliere le configurazioni corrette. In questa tabella, la data *di* archiviazione è la data in cui questi modelli saranno soggetti a una durata Microsoft Managed Desktop durata del servizio; i dispositivi di questo tipo onboarded dopo questa data non riceveranno un periodo di supporto triennale completo da Microsoft Managed Desktop. I dispositivi archiviati sono elencati anche in [Microsoft Managed Desktop archiviati.](archived-device-list.md) *Data di* ritiro è la data in cui questo modello non sarà più supportato Microsoft Managed Desktop affatto. In tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
 
 >[!NOTE]
 >I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma microsoft fornirà un avviso di 90 giorni per eventuali modifiche che influiscono sulla data di archiviazione o di ritiro. I dispositivi aggiunti più di recente sono contrassegnati con **\*** .
 
 
-## <a name="microsoft-managed-desktop-devices"></a>Dispositivi desktop gestiti Microsoft
+## <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop Dispositivi
 
 ### <a name="dell"></a>Dell
 
@@ -76,13 +81,13 @@ I collegamenti ai dispositivi qui sono solo per riferimento. Se vuoi ordinare i 
 
 Inoltre, il dispositivo deve soddisfare anche questi criteri:     
 
-- Se uno SKU specifico è elencato nei requisiti del dispositivo, assicurati di usarlo quando ordini. In questo modo si garantisce che i dispositivi siano conformi ai requisiti software di Microsoft Managed Desktop. 
-- L'esperienza di prima esecuzione di Windows non è stata completata.
-- Essere registrati con Microsoft Managed Desktop usando la [funzionalità di registrazione dei](../get-started/register-devices-self.md) dispositivi
+- Se uno SKU specifico è elencato nei requisiti del dispositivo, assicurati di usarlo quando ordini. In questo modo, i dispositivi sono conformi ai Microsoft Managed Desktop software. 
+- Non è stata completata Windows'esperienza di prima esecuzione.
+- Essere registrati con Microsoft Managed Desktop tramite la [funzionalità Registrazione](../get-started/register-devices-self.md) dispositivo
 
 >[!NOTE]
 >I dispositivi con processore da 2,0 GHz o superiore offriranno un'esperienza molto migliore agli utenti coinvolti in queste attività:
->- Uso di videoconferenze con Teams. Per [informazioni dettagliate, vedere Requisiti](/microsoftteams/hardware-requirements-for-the-teams-app) hardware per Microsoft Teams.
+>- Uso di videoconferenze con Teams. Vedi [Requisiti hardware per Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) per informazioni dettagliate.
 >-  Utilizzo di un dispositivo per diversi carichi di lavoro.
 >- Utilizzo di più monitor.
 

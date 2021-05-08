@@ -1,7 +1,7 @@
 ---
-title: Elencare tutte le attività di correzione
+title: Elencare tutte le attività correttive
 description: Restituisce informazioni su tutte le attività di correzione.
-keywords: api, correzione, api di correzione, ottenere, attività di correzione,
+keywords: api, correzione, api di correzione, ottenere, attività di correzione, tutte le correzioni,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac4a777136dcdfc5d7ab61ddc8d496b7452f69e2
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: cf7c79cb6cc76af88ce0293a013ba6edbf435d8c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061126"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245493"
 ---
-# <a name="list-all-remediation-activities"></a>Elencare tutte le attività di correzione
+# <a name="list-all-remediation-activities"></a>Elencare tutte le attività correttive
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,7 +47,16 @@ Restituisce informazioni su tutte le attività di correzione.
 
 **URL:** GET: /api/remediationTasks
 
-**Dettagli proprietà**
+## <a name="permissions"></a>Autorizzazioni
+
+Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi Usare Le API di [Microsoft Defender per endpoint per i dettagli.](apis-intro.md)
+
+Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
+:---|:---|:---
+Applicazione | RemediationTask.Read.All | \'Leggere informazioni sulla vulnerabilità di Gestione minacce e vulnerabilità\'
+Delegato (account aziendale o dell'istituto di istruzione) | RemediationTask.Read.Read | \'Leggere informazioni sulla vulnerabilità di Gestione minacce e vulnerabilità\'
+
+## <a name="properties"></a>Proprietà
 
 Proprietà (id) | Tipo di dati | Descrizione | Esempio di valore restituito
 :---|:---|:---|:---
@@ -56,19 +65,19 @@ completerEmail | Stringa | Se l'attività di correzione è stata completata manu
 completerId | Stringa | Se l'attività di correzione è stata completata manualmente da un utente, questa colonna contiene l'ID oggetto | null
 completionMethod | Stringa | Un'attività di correzione può essere completata "automaticamente" (se tutti i dispositivi sono patchati) o "manualmente" da una persona che seleziona "contrassegna come completata" | Automatica
 createdOn | DateTime | Ora in cui è stata creata questa attività di correzione | 2021-01-12T18:54:11.5499478Z
-descrizione | Stringa | Descrizione di questa attività di correzione | Aggiornare Chrome a una versione successiva per ridurre le 1248 vulnerabilità note che interessano i dispositivi.
+descrizione | Stringa | Descrizione di questa attività di correzione | Aggiornare Microsoft Silverlight a una versione successiva per ridurre le vulnerabilità note che interessano i dispositivi.
 dueOn | DateTime | Data di scadenza impostata dal creatore per questa attività di correzione | 2021-01-13T00:00:00Z
 fixedDevices | . | Il numero di dispositivi che sono stati corretti | 2
 id | Stringa | ID di questa attività di correzione | 097d9735-5479-4899-b1b7-77398899df92
-nameId | Stringa | Nome prodotto correlato | chrome
-priority | Stringa | Priorità impostata dal creatore per questa attività di correzione (High\Medium\Low) | Alto
-productId | Stringa | ID prodotto correlato | google-_-chrome
+nameId | Stringa | Nome prodotto correlato | Microsoft Silverlight
+priority | Stringa | Priorità impostata dal creatore per questa attività di correzione (High\Medium\Low) | Alta
+productId | Stringa | ID prodotto correlato | microsoft-_-silverlight
 productivityImpactRemediationType | Stringa | Alcune modifiche alla configurazione potrebbero essere richieste solo per i dispositivi senza alcun impatto sull'utente. Questo valore indica la selezione tra "tutti i dispositivi esposti" o "solo i dispositivi senza impatto sull'utente". | AllExposedAssets
 rbacGroupNames | Stringa | Nomi dei gruppi di dispositivi correlati | [ "Windows Servers", "Windows 10" ]
 recommendedProgram | Stringa | Programma consigliato a cui eseguire l'aggiornamento | null
 recommendedVendor | Stringa | Fornitore consigliato a cui eseguire l'aggiornamento | null
 recommendedVersion | Stringa | Versione consigliata per l'aggiornamento/aggiornamento | null
-relatedComponent | Stringa | Componente correlato di questa attività di correzione (simile al componente correlato per una raccomandazione sulla sicurezza) | Google Chrome
+relatedComponent | Stringa | Componente correlato di questa attività di correzione (simile al componente correlato per una raccomandazione sulla sicurezza) | Microsoft Silverlight
 requesterEmail | Stringa | Indirizzo di posta elettronica creatore | globaladmin@UserName.contoso.com
 requesterId | Stringa | ID oggetto creatore | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | Stringa | Note (testo libero) aggiunte dall'autore per questa attività di correzione | null
@@ -76,19 +85,19 @@ scid | Stringa | SCID della raccomandazione relativa alla sicurezza | null
 status | Stringa | Stato attività di correzione (Attivo/Completato) | Attivo
 statusLastModifiedOn | DateTime | Data in cui il campo stato è stato aggiornato | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Numero di dispositivi esposti a cui è applicabile questa correzione | 43
-title | Stringa | Titolo di questa attività di correzione | Aggiornare Google Chrome
+title | Stringa | Titolo di questa attività di correzione | Aggiornare Microsoft Silverlight
 type | Stringa | Tipo di correzione | Update
-vendorId | Stringa | Nome fornitore correlato | google
+vendorId | Stringa | Nome fornitore correlato | Microsoft
 
 ## <a name="example"></a>Esempio
 
-**Esempio di** richiesta
+### <a name="request-example"></a>Esempio di richiesta
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 ```
 
-**Esempio di** risposta
+### <a name="response-example"></a>Esempio di risposta
 
 ```json
 {
@@ -135,10 +144,10 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 
 - [Metodi e proprietà di correzione](get-remediation-methods-properties.md)
 
-- [Ottenere un'attività di correzione in base all'ID](get-remediation-one-activity.md)
+- [Ottenere un'attività correttiva per ID](get-remediation-one-activity.md)
 
-- [Elencare i dispositivi esposti di un'attività di correzione](get-remediation-exposed-devices-activities.md)
+- [Elencare i dispositivi esposti a un'attività correttiva](get-remediation-exposed-devices-activities.md)
 
-- [Gestione delle vulnerabilità & rischio](next-gen-threat-and-vuln-mgt.md)
+- [Rischio basato sulle minacce & gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnerabilità nell'organizzazione](tvm-weaknesses.md)

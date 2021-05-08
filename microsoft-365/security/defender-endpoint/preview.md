@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ea37ad4302eedf7d43e3ad03e94357a146c2216c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861060"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245577"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Funzionalità di anteprima di Microsoft Defender per Endpoint
 
@@ -44,7 +44,7 @@ Il servizio Defender for Endpoint viene costantemente aggiornato per includere n
 Scopri le nuove funzionalità nella versione di anteprima di Defender for Endpoint ed essere tra i primi a provare le funzionalità future attivando l'esperienza di anteprima.
 
 >[!TIP]
->Ricevi una notifica quando questa pagina viene aggiornata copiando e incollando l'URL seguente nel lettore di feed: `https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+preview+features%22&locale=en-us`
+>Ricevi una notifica quando questa pagina viene aggiornata copiando e incollando l'URL seguente nel lettore di feed: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Per altre informazioni sulle nuove funzionalità disponibili in genere, vedi Novità [di Defender per Endpoint.](whats-new-in-microsoft-defender-atp.md)
 
@@ -54,7 +54,7 @@ Avrai accesso alle funzionalità future su cui puoi fornire feedback per miglior
 
 Attivare l'opzione esperienza di anteprima per essere tra i primi a provare le funzionalità che saranno introdotte.
 
-1. Nel riquadro di spostamento selezionare **Impostazioni Caratteristiche** avanzate  >  **Funzionalità di**  >  **anteprima**.
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **funzionalità avanzate**  >  **Funzionalità di anteprima.**
 
 2. Attiva o disattiva **l'impostazione** **e** seleziona Salva **preferenze.**
 

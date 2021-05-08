@@ -11,19 +11,21 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b2976fc643eb433039d9595bc8e9632fd8cb60ea
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 850d7e6692d3ccbfda6e15c8d5ca95301bd4d094
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893474"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245613"
 ---
 # <a name="register-new-devices-yourself"></a>Registrare manualmente i nuovi dispositivi
 
-Microsoft Managed Desktop può funzionare con dispositivi nuovi o puoi riutilizzare i dispositivi che potresti già avere (che richiederanno di ricrearne l'immagine). Puoi registrare i dispositivi con Microsoft Managed Desktop nel portale di Microsoft Endpoint Manager.
+Microsoft Managed Desktop possono funzionare con dispositivi nuovi o puoi riutilizzare i dispositivi che potresti già avere (che richiederanno di ricrearne l'immagine). Puoi registrare i dispositivi con Microsoft Managed Desktop nel Microsoft Endpoint Manager portale.
 
 > [!NOTE]
 > Collaborare con un partner per ottenere dispositivi? In tal caso, non è necessario preoccuparsi di ottenere gli hash hardware; si occuperà di questo per te. Assicurati che il partner stabilirà una relazione con te nel [Centro per i partner.](https://partner.microsoft.com/dashboard) Per altre informazioni, vedere la Guida [del Centro per i partner.](/partner-center/request-a-relationship-with-a-customer) Una volta stabilita questa relazione, il partner registrerà semplicemente i dispositivi per conto dell'utente. Non sono necessarie ulteriori azioni da parte dell'utente. Se vuoi visualizzare i dettagli o il tuo partner ha domande, vedi Passaggi per i [partner per registrare i dispositivi.](register-devices-partner.md) Una volta registrati i dispositivi, puoi procedere con il [controllo dell'immagine](#check-the-image) e [la consegna dei dispositivi](#deliver-the-device) agli utenti.
+
+
 
 ## <a name="prepare-to-register-brand-new-devices"></a>Preparare la registrazione di nuovi dispositivi
 
@@ -32,7 +34,7 @@ Una volta che hai a disposizione i nuovi dispositivi, segui questi passaggi:
 
 1. [Ottenere l'hash hardware per ogni dispositivo.](#obtain-the-hardware-hash)
 2. [Unire i dati hash](#merge-hash-data)
-3. [Registrare i dispositivi in Microsoft Managed Desktop.](#register-devices-by-using-the-admin-portal)
+3. [Registrare i dispositivi in Microsoft Managed Desktop](#register-devices-by-using-the-admin-portal).
 4. [Verificare che l'immagine sia corretta.](#check-the-image)
 5. [Recapita il dispositivo](#deliver-the-device)
 
@@ -42,11 +44,11 @@ Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo ri
 
 - Chiedere al fornitore OEM il file di registrazione AutoPilot, che includerà gli hash hardware.
 - Esegui uno [script Windows PowerShell su](#powershell-script-method) ogni dispositivo e raccogli i risultati in un file.
-- Avviare ogni dispositivo, ma non completare l'esperienza di installazione di Windows, e raccogliere gli [hash in un'unità flash rimovibile.](#flash-drive-method)
+- Avviare ogni dispositivo, ma non completare l'Windows di installazione, e raccogliere gli hash in un'unità [flash rimovibile.](#flash-drive-method)
 
 #### <a name="powershell-script-method"></a>Metodo script di PowerShell
 
-È possibile utilizzare lo script [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell nel sito Web PowerShell Gallery. Per altre informazioni sull'identificazione del dispositivo e sull'hash hardware, vedi [Aggiunta di dispositivi a Windows Autopilot.](/mem/autopilot/add-devices#device-identification)
+È possibile utilizzare lo script [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell nel sito Web PowerShell Gallery. Per ulteriori informazioni sull'identificazione del dispositivo e sull'hash hardware, vedi Aggiunta di dispositivi [Windows Autopilot.](/mem/autopilot/add-devices#device-identification)
 
 1.  Aprire un prompt di PowerShell con diritti amministrativi.
 2.  Correre `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -79,7 +81,7 @@ Dovrai combinare i dati nei file CSV in un singolo file per completare la regist
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
 
-In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)seleziona Dispositivi **nel** riquadro di spostamento a sinistra. Cerca la sezione Microsoft Managed Desktop del menu e seleziona **Dispositivi.** Nell'area di lavoro Dispositivi desktop gestiti Microsoft seleziona **+ Registra dispositivi**, che apre un riquadro a comparsa per registrare nuovi dispositivi.
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **Dispositivi nel** riquadro di spostamento sinistro. Cerca la sezione Microsoft Managed Desktop del menu e seleziona **Dispositivi.** Nell'Microsoft Managed Desktop di lavoro Dispositivi, seleziona **+ Registra dispositivi**, che apre un riquadro a comparsa per registrare nuovi dispositivi.
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -102,7 +104,7 @@ Puoi monitorare l'avanzamento della registrazione del dispositivo nella pagina p
 |---------------|-------------|
 | Registrazione in sospeso | La registrazione non è ancora stata eseguita. Eseguire il check back in un secondo momento. |
 | Registrazione non riuscita | Impossibile completare la registrazione. Per ulteriori [informazioni, vedere Risoluzione dei](#troubleshooting-device-registration) problemi di registrazione dei dispositivi. |
-| Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente. Microsoft Managed Desktop li guiderà nella configurazione della prima volta, quindi non è necessario eseguire ulteriori operazioni di preparazione. |
+| Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente. Microsoft Managed Desktop le guiderà attraverso la prima configurazione, quindi non è necessario eseguire ulteriori operazioni di preparazione. |
 | Attivo | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Questo stato indica anche che usano regolarmente il dispositivo. |
 | Inattivo | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Tuttavia, non hanno usato il dispositivo di recente (negli ultimi 7 giorni).  | 
 
@@ -118,18 +120,18 @@ Puoi monitorare l'avanzamento della registrazione del dispositivo nella pagina p
 
 ### <a name="check-the-image"></a>Controllare l'immagine
 
-Se il dispositivo è stato utilizzato da un fornitore di partner Microsoft Managed Desktop, l'immagine deve essere corretta.
+Se il dispositivo viene da un Microsoft Managed Desktop partner, l'immagine deve essere corretta.
 
 Se preferisci, puoi anche applicare l'immagine da solo. To get started, contact the Microsoft representative you're working with and they will provide you the location and steps for applying the image.
 
 ### <a name="autopilot-group-tag"></a>Tag gruppo Autopilot
 
 Quando usi il portale di amministrazione per registrare i dispositivi, assegniamo automaticamente il tag Microsoft365Managed_Autopilot **gruppo** Autopilot.
-Il servizio monitora tutti i dispositivi Microsoft Managed Desktop ogni giorno e assegna il tag di gruppo a tutti i dispositivi che non lo hanno già.
+Il servizio monitora tutti Microsoft Managed Desktop dispositivi ogni giorno e assegna il tag di gruppo a tutti i dispositivi che non lo hanno già.
 
 ### <a name="deliver-the-device"></a>Recapita il dispositivo
 
 > [!IMPORTANT]
 > Prima di consegnare il dispositivo all'utente, assicurati di aver ottenuto e applicato le [licenze appropriate](../get-ready/prerequisites.md) per tale utente.
 
-Se vengono applicate tutte le licenze, puoi ottenere gli utenti pronti per l'uso dei dispositivi [e](get-started-devices.md)quindi l'utente può avviare il dispositivo e procedere con l'esperienza di installazione di Windows.
+Se vengono applicate tutte le [](get-started-devices.md)licenze, puoi fare in modo che gli utenti siano pronti per l'uso dei dispositivi e quindi l'utente può avviare il dispositivo e procedere con l'Windows di installazione.

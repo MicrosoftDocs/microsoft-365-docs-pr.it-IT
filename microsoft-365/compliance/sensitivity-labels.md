@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1e21da114154a5258f81a48e39d46ae875ee3930
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: da660f79cd218c4b97cd2159f2811985d4651cef
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892929"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245625"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -261,3 +261,5 @@ Sono anche disponibili informazioni sulle [soluzioni dei partner integrate con M
 ## <a name="deployment-guidance"></a>Guida alla distribuzione
 
 Per la pianificazione della distribuzione e il materiale sussidiario che include informazioni sulla licenza, autorizzazioni, strategia di distribuzione, un elenco di scenari supportati e la documentazione per l'utente finale, vedere [Introduzione alle etichette di riservatezza](get-started-with-sensitivity-labels.md).
+
+Per informazioni su come usare le etichette di riservatezza per rispettare le normative sulla privacy dei dati, vedere [Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).

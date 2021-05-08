@@ -1,6 +1,6 @@
 ---
-title: Panoramica dell'individuazione dei dispositivi
-description: Informazioni su come sfruttare l'individuazione degli endpoint in Microsoft 365 Defender per trovare i dispositivi non gestiti nella rete
+title: Panoramica di Device discovery
+description: Scopri come sfruttare l'individuazione degli endpoint in Microsoft 365 Defender per trovare dispositivi non gestiti nella rete
 keywords: individuazione dei dispositivi, individuazione, passiva, proattiva, rete, visibilità, server, workstation, onboard, dispositivi non gestiti
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c549d5d2a7c30892a9272b4ac3e03cb8979bc1a5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764988"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245949"
 ---
-# <a name="device-discovery-overview"></a>Panoramica dell'individuazione dei dispositivi
+# <a name="device-discovery-overview"></a>Panoramica di Device discovery
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -96,10 +96,11 @@ I dispositivi individuati ma non ancora stati onboarded e protetti da Microsoft 
 
 ![Immagine del dashboard dell'inventario dei dispositivi](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
-
+> [!TIP]
+> Puoi sempre applicare filtri per escludere i dispositivi non gestiti dall'elenco di inventario dei dispositivi. Puoi anche usare la colonna dello stato di onboarding nelle query API per filtrare i dispositivi non gestiti. 
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Valutazione della vulnerabilità nei dispositivi individuati
-Le vulnerabilità e i rischi nei dispositivi, nonché altri dispositivi non gestiti individuati nella rete, fanno parte dei flussi TVM correnti in "Suggerimenti per la sicurezza" e sono rappresentati nelle pagine delle entità nel portale. Cercare suggerimenti sulla sicurezza correlati a "SSH" per individuare le vulnerabilità SSH correlate ai dispositivi gestiti e non gestiti. 
+Le vulnerabilità e i rischi nei dispositivi e in altri dispositivi non gestiti individuati nella rete fanno parte dei flussi TVM correnti in "Security Consigli" e sono rappresentati nelle pagine delle entità nel portale. Cercare suggerimenti sulla sicurezza correlati a "SSH" per individuare le vulnerabilità SSH correlate ai dispositivi gestiti e non gestiti. 
 
 ![Immagine del dashboard degli elementi consigliati per la sicurezza](images/1156c82ffadd356ce329d1cf551e806c.png)  
 
@@ -131,8 +132,8 @@ DeviceNetworkEvents
 ```
 
 
-## <a name="changed-behaviour"></a>Comportamento modificato
-Nella sezione seguente sono elencate le modifiche che verranno osservate in Microsoft Defender per Endpoint e/o Centro sicurezza Microsoft 365 quando questa funzionalità è abilitata. 
+## <a name="changed-behavior"></a>Comportamento modificato
+La sezione seguente elenca le modifiche che osserverai in Microsoft Defender for Endpoint e/o Microsoft 365 Security Center quando questa funzionalità è abilitata. 
  
 1.  I dispositivi non onboarded in Microsoft Defender to Endpoint dovrebbero essere visualizzati nell'inventario dei dispositivi, nella ricerca avanzata e nelle query API. Ciò può aumentare in modo significativo le dimensioni dei risultati delle query. 
     1. Le tabelle "DeviceInfo" e "DeviceNetworkInfo" in Ricerca avanzata ora conteneranno il dispositivo individuato. Puoi filtrare tali dispositivi usando l'attributo "OnboardingStatus".
@@ -145,5 +146,5 @@ Nella sezione seguente sono elencate le modifiche che verranno osservate in Micr
 
 
 ## <a name="next-steps"></a>Passaggi successivi
-- [Configurare l'individuazione dei dispositivi](configure-device-discovery.md)
+- [Configurare device discovery](configure-device-discovery.md)
 - [Domande frequenti su Individuazione dispositivi](device-discovery-faq.md)

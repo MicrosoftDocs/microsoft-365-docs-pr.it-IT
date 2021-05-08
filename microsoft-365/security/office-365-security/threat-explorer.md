@@ -19,12 +19,12 @@ description: Usa Esplora risorse e i rilevamenti in tempo reale nel Centro sicur
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6bea6cb60579263515d21e159c4032fe4281cad
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 810b5c99aa239f295fd930c1d13a6a817012b18b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024182"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245565"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer e rilevamenti in tempo reale
 
@@ -32,13 +32,13 @@ ms.locfileid: "52024182"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Se [l'organizzazione](#new-features-in-threat-explorer-and-real-time-detections)dispone di [Microsoft Defender per Office 365](defender-for-office-365.md)e si dispone delle autorizzazioni necessarie, si dispone dei rilevamenti di **Esplora** risorse o in tempo reale **(in** precedenza report in tempo *reale,* vedere novità !). [](#required-licenses-and-permissions) Nel Centro sicurezza & conformità passare a **Gestione delle** minacce e quindi scegliere **Esplora risorse** _o_ **Rilevamenti in tempo reale.**
+Se [l'organizzazione](#new-features-in-threat-explorer-and-real-time-detections)dispone di [Microsoft Defender per Office 365](defender-for-office-365.md)e si dispone delle autorizzazioni necessarie, si dispone dei rilevamenti di **Esplora** risorse o in tempo reale **(in** precedenza rapporti in tempo *reale,* vedere novità !). [](#required-licenses-and-permissions) Nel Centro sicurezza & conformità passare a **Gestione delle** minacce e quindi scegliere **Esplora risorse** _o_ **Rilevamenti in tempo reale.**
 
 <br>
 
 ****
 
-|Con Microsoft Defender per Office 365 Piano 2, viene visualizzato:|Con Microsoft Defender per Office 365 Piano 1, viene visualizzato:|
+|Con Microsoft Defender per Office 365 Piano 2, viene visualizzato:|Con Microsoft Defender per Office 365 piano 1, viene visualizzato:|
 |---|---|
 |![Esplora minacce](../../media/threatmgmt-explorer.png)|![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -49,7 +49,7 @@ Explorer o rilevamenti in tempo reale consentono al team delle operazioni di sic
 
 Con questo report, è possibile:
 
-- [Vedere malware rilevato dalle funzionalità di sicurezza di Microsoft 365](#see-malware-detected-in-email-by-technology)
+- [Vedere malware rilevato dalle Microsoft 365 di sicurezza](#see-malware-detected-in-email-by-technology)
 - [Visualizzare l'URL di phishing e fare clic su Dati verdetto](#view-phishing-url-and-click-verdict-data)
 - [Avviare un processo di indagine e risposta](#start-automated-investigation-and-response) automatizzato da una visualizzazione in Esplora risorse (solo Defender per Office 365 Piano 2)
 - [Analizzare la posta elettronica dannosa e altro ancora](#more-ways-to-use-explorer-and-real-time-detections)
@@ -71,7 +71,7 @@ L'ID avviso è disponibile all'interno dell'URL quando si visualizza un singolo 
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Estensione del limite di conservazione e ricerca dei dati di Explorer (e rilevamento in tempo reale) per i tenant di prova da 7 a 30 giorni (Anteprima)
 
-Come parte di questa modifica, sarà possibile cercare e filtrare i dati di posta elettronica in 30 giorni (un aumento rispetto ai 7 giorni precedenti) in Threat Explorer/Rilevamenti in tempo reale per i tenant di valutazione di Defender per Office P1 e P2.
+Come parte di questa modifica, sarà possibile cercare e filtrare i dati di posta elettronica in 30 giorni (un aumento rispetto ai 7 giorni precedenti) in Threat Explorer/Rilevamenti in tempo reale per Defender per tenant di prova Office P1 e P2.
 Ciò non influisce sui tenant di produzione per i clienti P1 e P2/E5, che hanno già le funzionalità di conservazione e ricerca dei dati di 30 giorni.
 
 ### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Limiti aggiornati per l'esportazione di record per Threat Explorer (anteprima)
@@ -81,7 +81,7 @@ Come parte di questo aggiornamento, il numero di righe per i record di posta ele
 ### <a name="tags-in-threat-explorer"></a>Tag in Threat Explorer
 
 > [!NOTE]
-> La funzionalità tag utente è disponibile in *Anteprima,* non è disponibile per tutti gli utenti ed è soggetta a modifiche. Per informazioni sulla pianificazione dei rilasci, vedere la roadmap di Microsoft 365.
+> La funzionalità tag utente è disponibile in *Anteprima,* non è disponibile per tutti gli utenti ed è soggetta a modifiche. Per informazioni sulla pianificazione dei rilasci, vedere la guida di orientamento Microsoft 365 rilascio.
 
 I tag utente identificano gruppi specifici di utenti in Microsoft Defender per Office 365. Per ulteriori informazioni sui tag, incluse le licenze e la configurazione, vedere [Tag utente](user-tags.md).
 
@@ -179,10 +179,7 @@ Attualmente, viene visualizzata la posizione di recapito nella griglia della pos
 *Dopo il recapito* del messaggio di posta elettronica sono state applicate altre azioni. Possono includere *ZAP,* correzione manuale *(azione* eseguita da un amministratore, ad esempio eliminazione recidiva), recapito dinamico e rielaborazione *(per* un messaggio di posta elettronica che è stato rilevato retroattivamente come valido).
 
 > [!NOTE]
->
-> - Come parte delle modifiche in sospeso, il valore "Rimosso da ZAP" attualmente evaso nel filtro Azione di recapito sta per andare via. Avrai un modo per cercare tutti i messaggi di posta elettronica con il tentativo ZAP tramite **Azioni aggiuntive.**
->
-> - Saranno disponibili nuovi campi e valori per le **tecnologie di rilevamento** e azioni **aggiuntive** (in particolare per gli scenari ZAP). Sarà necessario valutare le query salvate e le query rilevate esistenti per assicurarsi che funzionino con i nuovi valori.
+> Come parte delle modifiche in sospeso, il valore "Rimosso da ZAP" attualmente evaso nel filtro Azione di recapito sta per andare via. Avrai un modo per cercare tutti i messaggi di posta elettronica con il tentativo ZAP tramite **Azioni aggiuntive.**
 
 > [!div class="mx-imgBorder"]
 > ![Azioni aggiuntive in Esplora risorse](../../media/Additional_Actions.png)
@@ -195,7 +192,7 @@ Attualmente, viene visualizzata la posizione di recapito nella griglia della pos
 
 - Bloccato dai criteri utente: un utente crea criteri a livello di casella di posta per bloccare domini o mittenti.
 
-- Consentito dai criteri dell'organizzazione: i team di sicurezza dell'organizzazione impostano criteri o regole del flusso di posta di Exchange (note anche come regole di trasporto) per consentire a mittenti e domini per gli utenti dell'organizzazione. Può essere per un set di utenti o per l'intera organizzazione.
+- Consentito dai criteri dell'organizzazione: i team di sicurezza dell'organizzazione impostano criteri o regole del flusso di posta Exchange (note anche come regole di trasporto) per consentire a mittenti e domini per gli utenti dell'organizzazione. Può essere per un set di utenti o per l'intera organizzazione.
 
 - Bloccato dai criteri dell'organizzazione: i team di sicurezza dell'organizzazione impostano criteri o regole del flusso di posta per bloccare mittenti, domini, lingue dei messaggi o INDIRIZZI IP di origine per gli utenti dell'organizzazione. Può essere applicato a un set di utenti o all'intera organizzazione.
 
@@ -285,9 +282,9 @@ Sarà possibile esportare l'elenco degli utenti di destinazione, fino a un limit
 > [!div class="mx-imgBorder"]
 > ![Utenti di destinazione principali](../../media/Top_Targeted_Users.png)
 
-### <a name="exchange-transport-rules"></a>Regole di trasporto di Exchange
+### <a name="exchange-transport-rules"></a>Exchange di trasporto
 
-Come parte dell'arricchimento dei dati, sarà possibile visualizzare tutte le diverse regole di trasporto di Exchange applicate a un messaggio. Queste informazioni saranno disponibili nella visualizzazione Griglia posta elettronica. Per visualizzarla, selezionare **Opzioni colonna** nella griglia e quindi Aggiungi regola di trasporto **di Exchange** dalle opzioni di colonna. Sarà visibile anche nel riquadro **a** comparsa Dettagli nel messaggio di posta elettronica.
+Come parte dell'arricchimento dei dati, sarà possibile visualizzare tutte le diverse regole di trasporto Exchange (ETR) applicate a un messaggio. Queste informazioni saranno disponibili nella visualizzazione Griglia posta elettronica. Per visualizzarla, selezionare **Opzioni colonna** nella griglia e quindi Exchange regola **di trasporto** dalle opzioni colonna. Sarà visibile anche nel riquadro **a** comparsa Dettagli nel messaggio di posta elettronica.
 
 Sarà possibile visualizzare sia il GUID che il nome delle regole di trasporto applicate al messaggio. Sarà possibile cercare i messaggi utilizzando il nome della regola di trasporto. Si tratta di una ricerca "Contiene", il che significa che è possibile eseguire anche ricerche parziali.
 
@@ -296,7 +293,7 @@ Sarà possibile visualizzare sia il GUID che il nome delle regole di trasporto a
 >
 > - Solo EXO - Prevenzione della perdita di dati: Tutti
 > - Solo EXO - O365SupportViewConfig: All
-> - Microsoft Azure Active Directory o EXO - Amministratore della sicurezza: Tutti
+> - Microsoft Azure Active Directory o EXO - Amministratore sicurezza: Tutti
 > - AAD o EXO - Security Reader: All
 > - Solo EXO - Regole di trasporto: Tutte
 > - Solo EXO - Configurazione View-Only: Tutti
@@ -304,11 +301,11 @@ Sarà possibile visualizzare sia il GUID che il nome delle regole di trasporto a
 > All'interno della griglia di posta elettronica, del riquadro a comparsa Dettagli e del file CSV esportato, gli ETF vengono presentati con un nome/GUID, come illustrato di seguito.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Regole di trasporto di Exchange](../../media/ETR_Details.png)
+> > ![Exchange Regole di trasporto](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Connettori in ingresso
 
-I connettori sono una raccolta di istruzioni che personalizzano il flusso della posta elettronica da e verso l'organizzazione di Microsoft 365 o Office 365. Consentono di applicare eventuali restrizioni o controlli di sicurezza. In Esplora minacce è ora possibile visualizzare i connettori correlati a un messaggio di posta elettronica e cercare i messaggi di posta elettronica utilizzando i nomi dei connettori.
+I connettori sono una raccolta di istruzioni che personalizzano il flusso della posta elettronica da e verso l'Microsoft 365 o Office 365'organizzazione. Consentono di applicare eventuali restrizioni o controlli di sicurezza. In Esplora minacce è ora possibile visualizzare i connettori correlati a un messaggio di posta elettronica e cercare i messaggi di posta elettronica utilizzando i nomi dei connettori.
 
 La ricerca di connettori è di natura "contiene", il che significa che anche le ricerche parziali di parole chiave dovrebbero funzionare. All'interno della visualizzazione Griglia principale, del riquadro a comparsa Dettagli e del file CSV esportato, i connettori vengono visualizzati nel formato Nome/GUID, come illustrato di seguito:
 
@@ -342,7 +339,7 @@ In questo esempio viene utilizzato Threat Explorer.
 
 4. Seleziona l'oggetto di qualsiasi messaggio nella scheda Posta > dettagli per visualizzare ulteriori informazioni sulla rappresentazione, ad esempio Dominio impersonato/Posizione rilevata.
 
-    **OPPURE**
+    **OR**
 
     Selezionare **Utente rappresentato e** digitare l'indirizzo di posta elettronica di un utente protetto nella casella di testo.
 
@@ -375,7 +372,7 @@ Come viene eseguita questa operazione? Lo stato del recapito è ora suddiviso in
 
 |Recapitati|Posta indesiderata|Bloccato|Sostituito|
 |---|---|---|---|
-|La posta elettronica è stata recapitata nella posta in arrivo o nella cartella di un utente e l'utente può accedervi.|La posta elettronica è stata inviata alla cartella Posta indesiderata o Eliminata dell'utente e l'utente può accedervi.|Messaggi di posta elettronica messi in quarantena, non riusciti o eliminati. Questi messaggi non sono accessibili all'utente.|La posta elettronica aveva allegati dannosi sostituiti da file txt che indicavano che l'allegato era dannoso.|
+|La posta elettronica è stata recapitata nella posta in arrivo o nella cartella di un utente e l'utente può accedervi.|La posta elettronica è stata inviata alla cartella Posta indesiderata o Eliminata dell'utente e l'utente può accedervi.|Messaggi di posta elettronica messi in quarantena, non riusciti o eliminati. Questi messaggi non sono accessibili all'utente.|La posta elettronica aveva allegati dannosi sostituiti da .txt che indicavano che l'allegato era dannoso.|
 |
 
 Ecco cosa può e non può vedere l'utente:
@@ -404,15 +401,15 @@ Ecco cosa può e non può vedere l'utente:
 
 La **sequenza temporale della** posta elettronica è una nuova funzionalità di Explorer che migliora l'esperienza di ricerca per gli amministratori. Riduce il tempo dedicato al controllo di posizioni diverse per cercare di comprendere l'evento. Quando si verificano più eventi in corrispondenza o vicino allo stesso momento dell'arrivo di un messaggio di posta elettronica, tali eventi vengono visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito della posta elettronica vengono acquisiti nella **colonna Azione** speciale. Gli amministratori possono combinare le informazioni della sequenza temporale con l'azione speciale intrapresa sul post-recapito della posta per ottenere informazioni dettagliate sul funzionamento dei criteri, su dove è stata infine instradata la posta e, in alcuni casi, sulla valutazione finale.
 
-Per ulteriori informazioni, vedere [Investigate and remediate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md).
+Per ulteriori informazioni, vedere Analizzare e correggere i messaggi di posta elettronica dannosi [recapitati in Office 365](investigate-malicious-email-that-was-delivered.md).
 
 ### <a name="export-url-click-data"></a>Esportare i dati di clic url
 
-È ora possibile esportare i report per i clic url in Microsoft Excel per visualizzare **l'ID** del messaggio di rete e fare clic su **verdetto**, che consente di spiegare dove ha avuto origine il traffico di clic sull'URL. Ecco come funziona: in Gestione delle minacce sulla barra di avvio veloce di Office 365, seguire questa catena:
+È ora possibile esportare i report per i clic url Microsoft Excel per visualizzare **l'ID** messaggio di rete e fare clic su **verdetto**, che consente di spiegare da dove ha avuto origine il traffico di clic sull'URL. Ecco come funziona: in Threat Management sulla barra di Office 365 di avvio veloce, segui questa catena:
 
 **Explorer** \> **Visualizza Phish** \> **Clic** \> **Gli URL principali o** **i clic principali dell'URL** \> selezionano qualsiasi record per aprire il riquadro a comparsa url.
 
-Quando si seleziona un URL nell'elenco,  nel riquadro a comparsa viene visualizzato un nuovo pulsante Esporta. Utilizzare questo pulsante per spostare i dati in un foglio di calcolo di Excel per semplificare la creazione di report.
+Quando si seleziona un URL nell'elenco,  nel riquadro a comparsa viene visualizzato un nuovo pulsante Esporta. Utilizzare questo pulsante per spostare i dati in un foglio Excel per semplificare la creazione di report.
 
 Seguire questo percorso per accedere alla stessa posizione nel report Rilevamenti in tempo reale:
 
@@ -426,7 +423,7 @@ Seguire questo percorso per accedere alla stessa posizione nel report Rilevament
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Vedere malware rilevato nella posta elettronica tramite tecnologia
 
-Si supponga di voler visualizzare il malware rilevato nei messaggi di posta elettronica ordinati in base alla tecnologia Microsoft 365. A tale scopo, usa la visualizzazione [Posta > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
+Si supponga di voler visualizzare il malware rilevato nei messaggi di posta elettronica ordinati in base Microsoft 365 tecnologia. A tale scopo, usa la visualizzazione [Posta > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
 
 1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione <https://protection.office.com>  \> **delle minacce** (o **Rilevamenti in tempo reale).** In questo esempio viene utilizzato Explorer.
 
@@ -516,12 +513,12 @@ Si supponga di voler visualizzare i messaggi di posta elettronica segnalati dagl
    > [!div class="mx-imgBorder"]
    > ![Phish segnalato dall'utente](../../media/EmailUserReportedReportType.png)
 
-Il report viene aggiornato per visualizzare i dati relativi ai messaggi di posta elettronica segnalati da utenti dell'organizzazione come tentativi di phishing. È possibile utilizzare queste informazioni per eseguire ulteriori analisi e, se necessario, modificare i criteri [anti-phishing in Microsoft Defender per Office 365.](configure-atp-anti-phishing-policies.md)
+Il report viene aggiornato per visualizzare i dati relativi ai messaggi di posta elettronica segnalati da utenti dell'organizzazione come tentativi di phishing. È possibile utilizzare queste informazioni per eseguire ulteriori analisi e, se necessario, modificare i criteri [anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="start-automated-investigation-and-response"></a>Avviare un'indagine e una risposta automatizzate
 
 > [!NOTE]
-> Le funzionalità di analisi e risposta automatizzate sono disponibili in *Microsoft Defender per Office 365 Piano 2* e Office *365 E5.*
+> Le funzionalità di analisi e risposta automatizzate sono disponibili in Microsoft Defender per Office 365 *Piano 2* *e Office 365 E5.*
 
 [L'indagine e la risposta automatizzate](automated-investigation-response-office.md) possono risparmiare tempo e impegno per le operazioni di sicurezza dedicato all'analisi e alla mitigazione dei cyberattacchi. Oltre a configurare avvisi che possono attivare un playbook di sicurezza, puoi avviare un processo di indagine e risposta automatizzato da una visualizzazione in Esplora risorse. Per informazioni dettagliate, vedi Esempio: un amministratore [della sicurezza attiva un'indagine da Explorer.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
 
@@ -533,14 +530,14 @@ Oltre agli scenari descritti in questo articolo, sono disponibili molte più opz
 - [Visualizzare i file dannosi rilevati in SharePoint Online, OneDrive e Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Ottenere una panoramica delle visualizzazioni in Esplora minacce (e rilevamenti in tempo reale)](threat-explorer-views.md)
 - [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report)
-- [Analisi e risposta automatizzate in Microsoft 365 Defender](../defender/m365d-autoir.md)
+- [Indagine e risposta automatizzate in Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
-È necessario disporre [di Microsoft Defender per Office 365](defender-for-office-365.md) per usare Esplora risorse o rilevamenti in tempo reale.
+Devi disporre di [Microsoft Defender per Office 365](defender-for-office-365.md) usare Explorer o rilevamenti in tempo reale.
 
 - Explorer è incluso in Defender per Office 365 Piano 2.
-- Il report rilevamenti in tempo reale è incluso in Defender per Office 365 Piano 1.
+- Il report rilevamenti in tempo reale è incluso in Defender per Office 365 piano 1.
 - Pianificare l'assegnazione delle licenze per tutti gli utenti che devono essere protetti da Defender per Office 365. Explorer e i rilevamenti in tempo reale mostrano i dati di rilevamento per gli utenti con licenza.
 
 Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necessario disporre delle autorizzazioni appropriate, ad esempio quelle concesse a un amministratore della sicurezza o a un lettore di sicurezza.
@@ -548,10 +545,10 @@ Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necess
 - Per il Centro sicurezza & conformità, è necessario disporre di uno dei ruoli seguenti:
 
   - Gestione organizzazione
-  - Amministratore della sicurezza (può essere assegnato nell'interfaccia di amministrazione di Azure Active Directory ( <https://aad.portal.azure.com> )
+  - Amministratore della sicurezza (può essere assegnato nell'Azure Active Directory di amministrazione ( <https://aad.portal.azure.com> )
   - Ruolo con autorizzazioni di lettura per la sicurezza
 
-- Per Exchange Online, è necessario disporre di uno dei ruoli seguenti assegnati nell'interfaccia di amministrazione di Exchange ( ) o <https://admin.protection.outlook.com/ecp/> [in PowerShell di Exchange Online](/powershell/exchange/exchange-online-powershell):
+- Per Exchange Online, è necessario disporre di uno dei ruoli seguenti assegnati nell'interfaccia di amministrazione di Exchange ( ) o <https://admin.protection.outlook.com/ecp/> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Gestione organizzazione
   - Gestione organizzazione sola visualizzazione
@@ -565,10 +562,10 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>Differenze tra Esplora minacce e rilevamenti in tempo reale
 
-- Il *report rilevamenti in tempo* reale è disponibile in Defender per Office 365 Piano 1. *Threat Explorer* è disponibile in Defender per Office 365 Piano 2.
+- Il *report Rilevamenti in tempo* reale è disponibile in Defender per Office 365 Piano 1. *Threat Explorer* è disponibile in Defender per Office 365 Piano 2.
 - Il report Rilevamenti in tempo reale consente di visualizzare i rilevamenti in tempo reale. Threat Explorer esegue anche questa operazione, ma fornisce anche ulteriori dettagli per un determinato attacco.
 - Una *visualizzazione Tutti i* messaggi di posta elettronica è disponibile in Esplora minacce, ma non nel report Rilevamenti in tempo reale.
-- Altre funzionalità di filtro e azioni disponibili sono incluse in Threat Explorer. Per ulteriori informazioni, vedere [Microsoft Defender per Office 365 Service Description: Feature availability across Defender for Office 365 plans.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+- Altre funzionalità di filtro e azioni disponibili sono incluse in Threat Explorer. Per altre informazioni, vedi [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
 
 ## <a name="other-articles"></a>Altri articoli
 

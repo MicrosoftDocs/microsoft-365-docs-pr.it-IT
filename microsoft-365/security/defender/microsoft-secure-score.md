@@ -1,6 +1,6 @@
 ---
 title: Microsoft Secure Score
-description: Descrive Microsoft Secure Score nel Centro sicurezza Microsoft 365, come migliorare la sicurezza e cosa possono aspettarsi gli amministratori della sicurezza.
+description: Descrive Microsoft Secure Score nel centro sicurezza Microsoft 365 sicurezza, come migliorare la sicurezza e cosa possono aspettarsi gli amministratori della sicurezza.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570464"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245378"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score è una misurazione della postura di sicurezza di una organizzazione, in cui i numeri più alti indicano l'esecuzione di più azioni di miglioramento. È disponibile nel Centro sicurezza https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+Microsoft Secure Score è una misurazione della postura di sicurezza di una organizzazione, in cui i numeri più alti indicano l'esecuzione di più azioni di miglioramento. È disponibile nel centro sicurezza https://security.microsoft.com/securescore [Microsoft 365 sicurezza.](overview-security-center.md)
 
-Seguendo i consigli di Secure Score è possibile proteggere l'organizzazione dalle minacce. Da un dashboard centralizzato nel Centro sicurezza Microsoft 365, le organizzazioni possono monitorare e lavorare sulla sicurezza delle identità, delle app e dei dispositivi di Microsoft 365.
+Seguendo i consigli di Secure Score è possibile proteggere l'organizzazione dalle minacce. Da un dashboard centralizzato nel centro sicurezza Microsoft 365, le organizzazioni possono monitorare e lavorare sulla sicurezza delle identità, delle app e dei dispositivi Microsoft 365 aziendali.
 
 Microsoft Secure Score aiuta le organizzazioni a:  
 
@@ -44,9 +44,9 @@ Microsoft Secure Score aiuta le organizzazioni a:
 
 Le organizzazioni ottengono l'accesso a visualizzazioni affidabili di metriche e tendenze, integrazione con altri prodotti Microsoft, confronto dei punteggi con organizzazioni simili e molto altro ancora. Il punteggio può anche riflettere quando soluzioni di terze parti hanno indirizzato le azioni consigliate.
 
-![Home page punteggio sicuro](../../media/secure-score/secure-score-homepage-new.png)
+![Home page punteggio sicuro](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>Funzionamento
+## <a name="how-it-works"></a>Come funziona
 
 Ti vengono dati punti per le azioni seguenti:
 
@@ -77,18 +77,18 @@ Ad esempio, un'azione di miglioramento indica di ottenere 10 punti proteggendo t
 
 Attualmente sono disponibili suggerimenti per i prodotti seguenti:
 
-- Microsoft 365 (incluso Exchange Online)
+- Microsoft 365 (Exchange Online)
 - Azure Active Directory
 - Microsoft Defender per endpoint
-- Che cosa è Microsoft Defender per identità?
+- Microsoft Defender per identità
 - Cloud App Security
 - Microsoft Teams
 
-Le raccomandazioni per altri prodotti di sicurezza saranno presto disponibili. I consigli non riguardano tutte le superfici di attacco associate a ogni prodotto, ma sono una buona linea di base. Puoi anche contrassegnare le azioni di miglioramento come coperte da una mitigazione alternativa o di terze parti.
+Consigli per altri prodotti di sicurezza saranno disponibili a breve. I consigli non riguardano tutte le superfici di attacco associate a ogni prodotto, ma sono una buona linea di base. Puoi anche contrassegnare le azioni di miglioramento come coperte da una mitigazione alternativa o di terze parti.
 
 ### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
 
-Microsoft Secure Score ha aggiornato le azioni di miglioramento per supportare le impostazioni predefinite di sicurezza [in Azure Active Directory,](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)che semplificano la protezione dell'organizzazione con impostazioni di sicurezza preconfigurato per gli attacchi comuni.
+Microsoft Secure Score ha aggiornato le azioni di miglioramento per supportare le impostazioni predefinite di sicurezza [in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), che semplificano la protezione dell'organizzazione con impostazioni di sicurezza preconfigurato per gli attacchi comuni.
 
 Se si attivano le impostazioni predefinite di sicurezza, verranno assegnati punti completi per le azioni di miglioramento seguenti:
 

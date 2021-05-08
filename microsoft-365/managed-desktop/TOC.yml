@@ -104,6 +104,8 @@
           href: get-started/enterprise-state-roaming.md
         - name: Localizzare l'esperienza utente
           href: get-started/localization.md
+        - name: Convalidare nuovi dispositivi
+          href: get-started/validate-device.md
         - name: Configurare dispositivi
           href: get-started/set-up-devices.md
           items:

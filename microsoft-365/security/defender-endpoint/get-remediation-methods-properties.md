@@ -1,7 +1,7 @@
 ---
-title: Metodi e proprietà dell'attività di correzione
-description: La risposta API contiene le & di correzione delle vulnerabilità create nel tenant. Puoi richiedere tutte le attività di correzione, una sola attività di correzione o informazioni sui dispositivi esposti per un'attività di correzione selezionata.
-keywords: api, correzione, api di correzione, ottenere, attività di correzione,
+title: Metodi e proprietà delle attività correttive
+description: La risposta API contiene le & gestione delle vulnerabilità di correzione create nel tenant. Puoi richiedere tutte le attività di correzione, una sola attività di correzione o informazioni sui dispositivi esposti per un'attività di correzione selezionata.
+keywords: api, correzione, api di correzione, ottenere, attività di correzione, metodi di correzione, proprietà di correzione,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f720d638ec469523a1d567dee9c01fa0974b0090
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 4c0ecd89c45ec2c91dc37f0c9cd0bfb868c0474e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061125"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245541"
 ---
-# <a name="remediation-activity-methods-and-properties"></a>Metodi e proprietà dell'attività di correzione
+# <a name="remediation-activity-methods-and-properties"></a>Metodi e proprietà delle attività correttive
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,15 +39,15 @@ ms.locfileid: "52061125"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-La risposta API contiene [le & di](next-gen-threat-and-vuln-mgt.md)gestione delle vulnerabilità che sono state create nel   tenant.  
+La risposta API contiene [le & gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)di correzione delle minacce create   nel tenant.  
 
 ## <a name="methods"></a>Metodi
 
 Metodo | Tipo di dati | Descrizione
 :---|:---|:---
-[Elencare tutte le attività di correzione](get-remediation-all-activities.md) | Raccolta di indagini | Restituisce informazioni su tutte le attività di correzione.
-[Elencare i dispositivi esposti di un'attività di correzione](get-remediation-exposed-devices-activities.md) | Entità di indagine | Restituisce informazioni sui dispositivi esposti per l'attività di correzione specificata.
-[Ottenere un'attività di correzione in base all'ID](get-remediation-one-activity.md) | Entità di indagine | Restituisce informazioni per l'attività di correzione specificata.
+[Elencare tutte le attività correttive](get-remediation-all-activities.md) | Raccolta di indagini | Restituisce informazioni su tutte le attività di correzione.
+[Elencare i dispositivi esposti a un'attività correttiva](get-remediation-exposed-devices-activities.md) | Entità di indagine | Restituisce informazioni sui dispositivi esposti per l'attività di correzione specificata.
+[Ottenere un'attività correttiva per ID](get-remediation-one-activity.md) | Entità di indagine | Restituisce informazioni per l'attività di correzione specificata.
 
 Ulteriori informazioni sulle [attività di correzione.](tvm-remediation.md)
 
@@ -86,12 +86,12 @@ vendorId | Stringa | Nome fornitore correlato
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Ottenere un'attività di correzione in base all'ID](get-remediation-one-activity.md)
+- [Ottenere un'attività correttiva per ID](get-remediation-one-activity.md)
 
-- [Elencare tutte le attività di correzione](get-remediation-all-activities.md)
+- [Elencare tutte le attività correttive](get-remediation-all-activities.md)
 
-- [Elencare i dispositivi esposti di un'attività di correzione](get-remediation-exposed-devices-activities.md)
+- [Elencare i dispositivi esposti a un'attività correttiva](get-remediation-exposed-devices-activities.md)
 
-- [Gestione delle vulnerabilità & rischio](next-gen-threat-and-vuln-mgt.md)
+- [Rischio basato sulle minacce & gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnerabilità nell'organizzazione](tvm-weaknesses.md)

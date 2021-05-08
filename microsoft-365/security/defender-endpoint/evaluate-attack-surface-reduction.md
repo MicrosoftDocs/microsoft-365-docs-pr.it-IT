@@ -6,19 +6,20 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.topic: article
 localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: ''
+ms.reviewer: dansimp
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 73b23427ff401f2a37c399131d6aa01330ff9de5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570340"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245301"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Rilevare regole per la riduzione della superficie di attacco
 
@@ -26,15 +27,18 @@ ms.locfileid: "51570340"
 
 
 **Si applica a:**
+
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Le regole di riduzione della superficie di attacco consentono di impedire le azioni in genere utilizzate dal malware per compromettere dispositivi o reti. Imposta le regole di riduzione della superficie di attacco per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
+Le regole di riduzione della superficie di attacco consentono di impedire le azioni in genere utilizzate dal malware per compromettere dispositivi o reti. Le regole di riduzione della superficie di attacco consentono di chiudere molti dei punti di ingresso comuni utilizzati da malware e ransomware. 
 
-- Windows 10 Pro, [versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
-- Windows 10 Enterprise, [versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+Impostare le regole di riduzione della superficie di attacco per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
+
+- Windows 10 Pro versione [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- Windows 10 Enterprise versione [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
 - Windows Server, [versione 1803 (Canale semestraale)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
@@ -66,7 +70,7 @@ Per abilitare tutte le regole di riduzione della superficie di attacco aggiunte 
 
 Puoi anche usare Criteri di gruppo, Intune o provider di servizi di configurazione (CSP) per la gestione dei dispositivi mobili (MDM) per configurare e distribuire l'impostazione. Per ulteriori informazioni, vedere [l'articolo principale Sulle regole di riduzione della superficie di](attack-surface-reduction.md) attacco.
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Esaminare gli eventi di riduzione della superficie di attacco nel Visualizzatore eventi di Windows
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Esaminare gli eventi di riduzione della superficie di attacco nel Visualizzatore Windows eventi
 
 Per esaminare le app che sarebbero state bloccate, aprire il Visualizzatore eventi e filtrare l'ID evento 1121 nel registro microsoft-Windows-Windows Defender/operativo. Nella tabella seguente sono elencati tutti gli eventi di protezione di rete.
 

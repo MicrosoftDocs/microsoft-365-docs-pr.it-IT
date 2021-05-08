@@ -1,5 +1,5 @@
 ---
-title: Report sui dispositivi vulnerabili - Gestione delle minacce e delle vulnerabilità
+title: Report dispositivi vulnerabili - gestione di minacce e vulnerabilità
 description: Report che mostra le tendenze dei dispositivi vulnerabili e le statistiche correnti. L'obiettivo è comprendere il respiro e l'ambito dell'esposizione del dispositivo.
 keywords: Microsoft Defender for Endpoint-tvm vulnerable devices, Microsoft Defender for Endpoint, tvm, reduce threat & vulnerability exposure, reduce threat and vulnerability, monitor security configuration
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4b2b581d570bd0924970a845c66a599495ff9829
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 355561936642b1fa38228bfa07ad59269c48d817
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933710"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245481"
 ---
-# <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Report sui dispositivi vulnerabili - Gestione delle minacce e delle vulnerabilità
+# <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Report dispositivi vulnerabili - gestione di minacce e vulnerabilità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,16 +37,16 @@ ms.locfileid: "51933710"
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Il report mostra grafici e grafici a barre con tendenze dei dispositivi vulnerabili e statistiche correnti. L'obiettivo è comprendere il respiro e l'ambito dell'esposizione del dispositivo. 
+Il report mostra grafici e grafici a barre con tendenze dei dispositivi vulnerabili e statistiche correnti. L'obiettivo è comprendere il respiro e l'ambito dell'esposizione del dispositivo.
 
-Accedere al report in Microsoft Defender Security Center accedendo a **Report > dispositivi vulnerabili**
+Accedere al report nel Microsoft Defender Security Center accedendo a **Report > dispositivi vulnerabili**
 
 Sono disponibili due colonne:
 
 - Tendenze (nel tempo). Può mostrare gli ultimi 30 giorni, 3 mesi, 6 mesi o un intervallo di date personalizzato.
 - Oggi (informazioni correnti)
 
-**Filtro:** è possibile filtrare i dati in base ai livelli di gravità della vulnerabilità, alla disponibilità degli exploit, al periodo di validità della vulnerabilità, alla piattaforma del sistema operativo, alla versione di Windows 10 o al gruppo di dispositivi.
+**Filtro:** è possibile filtrare i dati in base ai livelli di gravità della vulnerabilità, alla disponibilità degli exploit, al periodo di validità della vulnerabilità, alla piattaforma del sistema operativo, Windows 10 versione o al gruppo di dispositivi.
 
 **Drill-down:** se sono disponibili informazioni approfondite che si desidera esplorare ulteriormente, selezionare il grafico a barre pertinente per visualizzare un elenco filtrato di dispositivi nella pagina Inventario dispositivi. Da qui è possibile esportare l'elenco.
 
@@ -74,13 +74,13 @@ Numero di dispositivi in ogni sistema operativo esposti a causa di vulnerabilit�
 
 ![Un grafico dei dispositivi vulnerabili correnti per piattaforma del sistema operativo e un grafico che mostra i dispositivi vulnerabili da parte delle piattaforme del sistema operativo nel tempo.](images/tvm-report-os.png)
 
-## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>Dispositivi vulnerabili tramite grafici della versione di Windows 10
+## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>Dispositivi vulnerabili per grafici Windows 10 versione
 
-Numero di dispositivi in ogni versione di Windows 10 esposti a causa di applicazioni vulnerabili o del sistema operativo.
+Numero di dispositivi in ogni versione Windows 10 esposta a causa di applicazioni vulnerabili o del sistema operativo.
 
-![Un grafico dei dispositivi vulnerabili correnti per la versione di Windows 10 e un grafico che mostra i dispositivi vulnerabili dalla versione di Windows 10 nel tempo.](images/tvm-report-version.png)
+![Un grafico dei dispositivi vulnerabili correnti per Windows 10 versione e un grafico che mostra i dispositivi vulnerabili Windows 10 versione nel tempo.](images/tvm-report-version.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)

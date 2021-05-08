@@ -1,6 +1,6 @@
 ---
 title: Requisiti dei dispositivi
-description: Riepilogo dei requisiti hardware e software minimi per l'utilizzo dei dispositivi con Microsoft Managed Desktop
+description: Riepilogo dei requisiti hardware e software minimi per i dispositivi che funzionano con Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768891"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245793"
 ---
 # <a name="device-requirements"></a>Requisiti dei dispositivi
 
-Microsoft Managed Desktop valuta regolarmente i requisiti dei dispositivi da includere nel servizio. In questo articolo vengono descritti i requisiti hardware e software che un dispositivo deve soddisfare per poter utilizzare Microsoft Managed Desktop. Puoi esaminare un elenco di dispositivi [specifici già approvati](device-list.md) per l'uso con il servizio in base a questi requisiti.
+Microsoft Managed Desktop valuta regolarmente i requisiti del dispositivo da includere nel servizio. Questo articolo descrive i requisiti hardware e software che un dispositivo deve soddisfare per poter lavorare con Microsoft Managed Desktop. Puoi esaminare un elenco di dispositivi specifici già approvati per l'uso con il servizio in base a questi requisiti. Filtrare i Microsoft Managed Desktop nel [sito Dei dispositivi Windows 10 Pro negozio](https://www.microsoft.com/windowsforbusiness/view-all-devices)
 
 > [!NOTE]
 > Questi requisiti possono cambiare in qualsiasi momento, ma microsoft fornirà 30 giorni di preavviso per eventuali modifiche dei requisiti hardware. I requisiti modificati più di recente sono contrassegnati con **\*** . 
@@ -45,7 +45,7 @@ Il dispositivo deve essere stato creato da uno di questi produttori:
 
 Il dispositivo deve avere questo software preinstallato:
 
-- Edizione Windows 10 Enterprise, Pro o Pro Workstation
+- Windows 10 Enterprise, Pro o Pro Workstation
 - la versione a 64 bit di Microsoft 365 Apps for enterprise 
 - Tutti i driver di dispositivo applicabili
 
@@ -59,7 +59,7 @@ I dispositivi devono disporre di queste funzionalità:
 - In grado di eseguire la sicurezza basata su virtualizzazione 
 - [Integrità del codice protetto da hypervisor](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) supportata dal BIOS
 
-Per ulteriori informazioni su queste funzionalità e sulle tecnologie correlate a esse utilizzate dal servizio, vedere [Tecnologie Desktop](../intro/technologies.md)gestito Microsoft .
+Per ulteriori informazioni su queste funzionalità e sulle tecnologie correlate a esse utilizzate dal servizio, vedere [Microsoft Managed Desktop technologies](../intro/technologies.md).
 
 > [!NOTE]
 > ARM processori non sono supportati.
@@ -70,13 +70,13 @@ I dispositivi devono soddisfare o superare i seguenti limiti per l'archiviazione
 - L'unità di avvio deve avere una capacità di almeno 128 GB.
 - La memoria interna del dispositivo (RAM) deve essere uguale o superiore a 8 GB.
 
-Se il dispositivo è stato creato dopo il 1° luglio 2020, deve avere anche una fotocamera IR, un lettore di impronte digitali o entrambi, per supportare [Windows Hello.](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
+Se il dispositivo è stato creato dopo il 1° luglio 2020, deve avere anche una fotocamera IR, un lettore di impronte digitali [o entrambi,](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)per supportare Windows Hello.
 
 ## <a name="recommended-features"></a>Funzionalità consigliate
 
 Gli utenti avranno un'esperienza molto migliore se scegli dispositivi con queste funzionalità:
 
-- Un processore Intel vPro platform o un processore AMD Ryzen Pro
+- Un processore Intel vPro platform o un processore AMD Ryzen Pro processore
 - Unità di avvio del tipo SSD con una capacità di almeno 256 GB
 - Memoria interna del dispositivo (RAM) di almeno 16 GB
 - Supporto per lo standby moderno
