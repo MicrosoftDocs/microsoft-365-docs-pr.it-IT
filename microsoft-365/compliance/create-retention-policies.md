@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269505"
+ms.locfileid: "52280428"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -85,7 +85,7 @@ Se sono presenti più criteri di conservazione e quando si usano anche etichette
 
 5. Completare la procedura guidata per salvare le impostazioni.
 
-Per informazioni di alto livello su quando utilizzare i criteri di conservazione per Teams, vedere [Criteri di conservazione in Microsoft Teams](/microsoftteams/retention-policies) nella documentazione di Teams.
+Per indicazioni su quando usare i criteri di conservazione per Teams e sull'esperienza dell'utente finale, vedere [Gestire i criteri di conservazione per Microsoft Teams](/microsoftteams/retention-policies) nella documentazione di Teams.
 
 Per informazioni tecniche sul funzionamento della conservazione per Teams, inclusi gli elementi dei messaggi supportati per le informazioni sulla conservazione e gli intervalli con procedure dettagliate di esempio, vedere [Informazioni sulla conservazione per Microsoft Teams](retention-policies-teams.md).
 
