@@ -22,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come assegnare licenze agli utenti.
-ms.openlocfilehash: 9fa8981949215c4cf7779a21ff7089d7534e1ef0
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: ae088ab5c26df9b782bd4433bbd0c9f2d0ed9348
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023750"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274377"
 ---
 # <a name="assign-licenses-to-users"></a>Assegnare licenze agli utenti
 
@@ -41,9 +41,10 @@ ms.locfileid: "52023750"
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per assegnare le licenze è necessario essere un amministratore globale, delle licenze o degli utenti. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../add-users/about-admin-roles.md).
-- È possibile [assegnare licenze ad account utente con PowerShell di Office 365](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- È possibile [assegnare licenze di Microsoft 365 ad account utente con PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 - Per usare licenze basate su gruppi, vedere [Assegnare licenze agli utenti in base all'appartenenza ai gruppi in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 - Alcuni servizi, come Sway, vengono assegnati agli utenti automaticamente e non è necessario assegnarli singolarmente.
+
 
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>Usare la pagina Licenze per assegnare licenze agli utenti
 
@@ -128,6 +129,10 @@ Nella pagina **Utenti attivi** si assegnano licenze utente ai prodotti.
 5. Nel riquadro **Aggiungi a prodotti esistenti** impostare sulla posizione **Attivata** l'interruttore relativo alla licenza che si vuole assegnare agli utenti selezionati.\
     Per impostazione predefinita, tutti i servizi associati a tali licenze vengono automaticamente assegnati agli utenti. È possibile porre limiti ai servizi disponibili agli utenti. Impostare sulla posizione **Disattivata** gli interruttori relativi ai servizi che non si desidera assegnare agli utenti.
 6. Nella parte inferiore del riquadro selezionare **Aggiungi** \> **Chiudi**.  
+
+
+> [!NOTE]
+> Se si vogliono assegnare licenze per un numero elevato di utenti, usare [Assegnare licenze agli utenti in base all'appartenenza ai gruppi in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 ### <a name="assign-licenses-to-one-user"></a>Assegnare licenze a un utente
 

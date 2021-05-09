@@ -20,12 +20,12 @@ ms.custom:
 description: Informazioni su come gli utenti possono visualizzare e gestire i messaggi in quarantena in Exchange Online Protection (EOP) che avrebbero dovuto essere recapitati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9a9da170dc0d3effba495c29672fb8f6bb02031
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 036aa164b8b77efd2365d56c07d26870eac243f5
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599936"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274449"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Trovare e rilasciare i messaggi messi in quarantena come utente di EOP
 
@@ -156,7 +156,9 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le oper
 
 - **Rimuovi da quarantena**: dopo aver fatto clic su **Sì** nell'avviso che viene visualizzato, il messaggio viene eliminato immediatamente.
 
-- **Blocca mittente**: impedisce al mittente di inviare messaggi all’utente.
+- **Blocca mittente**: aggiungere il mittente all'elenco Mittenti bloccati della cassetta postale. Per ulteriori informazioni, vedere [Blocca mittente di posta](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+
+Aggiungere il mittente all'elenco Mittenti bloccati della cassetta postale. Per ulteriori informazioni, vedere [Blocca mittente di posta](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 Al termine, fare clic su **Chiudi**.
 

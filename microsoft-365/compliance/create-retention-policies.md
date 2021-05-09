@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 2b2ce9670e9f297c89ed70e1b37c17aa59b80844
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687272"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269505"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -74,7 +74,10 @@ Se sono presenti più criteri di conservazione e quando si usano anche etichette
 
    Per **Messaggi del canale di Teams** sono inclusi i messaggi provenienti da canali standard ma non dai [canali privati](/microsoftteams/private-channels). I canali privati non sono al momento supportati dai criteri di conservazione.
 
-   Per impostazione predefinita, [tutti i team e gli utenti sono selezionati](#a-policy-that-applies-to-entire-locations), ma si può raffinare la ricerca selezionando le opzioni [**Scegli** ed **Escludi**](#a-policy-with-specific-inclusions-or-exclusions).
+   Per impostazione predefinita, [tutti i team e gli utenti sono selezionati](#a-policy-that-applies-to-entire-locations), ma si può raffinare la ricerca selezionando le opzioni [**Scegli** ed **Escludi**](#a-policy-with-specific-inclusions-or-exclusions). Prima di modificare l'impostazione predefinita, tuttavia, tenere presente le conseguenze per i criteri di conservazione che eliminano i messaggi quando sono configurati su include o esclude:
+    
+    - Per le chat di gruppo, poiché una copia dei messaggi viene salvata nella cassetta postale di ogni utente inclusa nella chat, nei risultati di eDiscovery continueranno a essere restituite copie dei messaggi dagli utenti a cui non è stato assegnato il criterio.
+    - Per gli utenti a cui non è stato assegnato il criterio, i messaggi eliminati vengono restituiti nei risultati della ricerca di Teams, ma non visualizzano il contenuto del messaggio in seguito all'eliminazione definitiva dai criteri assegnati agli utenti.
 
 4. Nella pagina **Decidere se si vuole conservare il contenuto, eliminarlo e entrambi** della procedura guidata specificare le opzioni di configurazione per la conservazione e l'eliminazione del contenuto.
 
@@ -82,7 +85,9 @@ Se sono presenti più criteri di conservazione e quando si usano anche etichette
 
 5. Completare la procedura guidata per salvare le impostazioni.
 
-Per altre informazioni sui criteri di conservazione per Teams, vedere [Criteri di conservazione in Microsoft Teams](/microsoftteams/retention-policies) nella documentazione di Teams.
+Per informazioni di alto livello su quando utilizzare i criteri di conservazione per Teams, vedere [Criteri di conservazione in Microsoft Teams](/microsoftteams/retention-policies) nella documentazione di Teams.
+
+Per informazioni tecniche sul funzionamento della conservazione per Teams, inclusi gli elementi dei messaggi supportati per le informazioni sulla conservazione e gli intervalli con procedure dettagliate di esempio, vedere [Informazioni sulla conservazione per Microsoft Teams](retention-policies-teams.md).
 
 #### <a name="known-configuration-issues"></a>Problemi di configurazione noti
 
@@ -250,9 +255,9 @@ Per l'inizio del periodo di conservazione, è anche possibile scegliere quando i
 
 Esempi:
 
-- SharePoint: se si vuole conservare gli elementi di una raccolta siti per sette anni dopo l'ultima modifica del contenuto e un documento presente nella raccolta siti non è stato modificato per sei anni, il documento verrà conservato solo per un altro anno se non viene modificato. Se il documento viene nuovamente modificato, la durata viene ricalcolata in base alla nuova data di modifica e il documento verrà conservato per altri sette anni.
+- SharePoint. se, ad esempio, si vogliono conservare elementi di una raccolta siti per sette anni dall'ultima modifica e un documento presente in questa raccolta siti non è stato modificato per sei anni, il documento verrà conservato solo per un altro anno, se non viene modificato. Se il documento viene nuovamente modificato, il periodo di conservazione verrà ricalcolato in base alla nuova data di modifica e il documento verrà conservato per altri sette anni.
 
-- Exchange: se si vuole conservare gli elementi di una cassetta postale per sette anni e un messaggio è stato inviato sei anni fa, il messaggio verrà conservato solo per un altro anno. Per gli elementi di Exchange, l'età dipende dalla data di ricezione per la posta in arrivo o dalla data di invio per la posta in uscita. La conservazione degli elementi in base all'ultima modifica si applica solo ai contenuti dei siti di OneDrive e SharePoint.
+- Exchange: se si desidera conservare elementi di una cassetta postale per sette anni e un messaggio è stato inviato sei anni fa, il messaggio verrà conservato solo per un altro anno. Per elementi di Exchange, il periodo si basa sempre sulla data di ricezione o di invio, che corrispondono. La conservazione del contenuto in base all'ultima modifica si applica solo al contenuto del sito di OneDrive e SharePoint.
 
 Al termine del periodo di conservazione, si sceglie se si vuole eliminare definitivamente il contenuto:
 
@@ -264,7 +269,7 @@ I criteri di conservazione possono conservare e quindi eliminare gli elementi su
 
 In entrambi i casi, se i criteri di conservazione eliminano gli elementi, è importante tenere presente che il periodo di tempo specificato per i criteri di conservazione viene calcolato dal momento in cui l'elemento è stato creato o modificato, non dal momento dell'assegnazione dei criteri.
 
-Perciò, prima di assegnare un criterio di conservazione per la prima volta, e specialmente quando il criterio elimina degli elementi, bisogna per prima cosa considerare l'età del contenuto e il modo in cui il criterio potrebbe condizionarlo.  Potrebbe inoltre essere necessario comunicare il nuovo criterio agli utenti prima di assegnarlo, per dargli il tempo di valutare il possibile impatto.
+Pertanto, prima di assegnare un criterio a un sito per la prima volta, specialmente se quel criterio elimina elementi, dovresti prima prendere in considerazione l'età del contenuto esistente e il modo in cui il criterio potrebbe agire su tale contenuto. Potresti inoltre voler comunicare il nuovo criterio agli utenti prima di assegnarlo, per dargli il tempo di valutare il possibile impatto.
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Criteri validi per intere posizioni
 
