@@ -48,6 +48,8 @@
           href: service-description/support.md
         - name: Operazioni e monitoraggio
           href: service-description/operations-and-monitoring.md
+        - name: Registri diagnostici
+          href: service-description/diagnostic-logs.md
         - name: Requisiti per le applicazioni
           href: service-description/mmd-app-requirements.md
         - name: Controllo delle applicazioni
