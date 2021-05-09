@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come usare il caricamento in rete per importare più file PST in blocco nelle cassette postali degli utenti in Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf7f471a4323c4c03f232e93d2f00b930e53aefe
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 6ff645589337260cd8e29d1e1d066abdf60c1f1a
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114342"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280922"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usare il caricamento in rete per importare file PST dell'organizzazione in Microsoft 365
 
@@ -173,7 +173,7 @@ Come passaggio facoltativo, è possibile installare e usare Microsoft Azure Stor
 
 - Verificare il nome file (e il percorso della sottocartella, se incluso) per ogni file PST caricato nel BLOB di Azure. Questo è utile per creare il file di mapping PST nel passaggio successivo, perché per ogni file PST è necessario specificare il percorso della cartella e il nome del file. Verificando questi nomi è possibile ridurre il rischio di errori nel file di mapping PST.
 
-Lo strumento Microsoft Azure Storage Explorer è in anteprima.
+L'applicazione autonoma Esplora archivi di Azure è in genere disponibile. Puoi scaricare l'ultima versione usando il collegamento nella procedura seguente.
   
 > [!IMPORTANT]
 > Non è possibile usare Azure Storage Explorer per caricare o modificare i file PST. L'unico metodo di importazione dei file PST supportato è l'uso di AzCopy. Inoltre, non si possono eliminare i file PST caricati nel BLOB di Azure. Se si tenta di eliminare un file PST, si riceve un errore relativo all'assenza delle autorizzazioni necessarie. Tutti i file PST vengono eliminati automaticamente dall'area di archiviazione di Azure. Se non ci sono processi di importazione in corso, tutti i file PST nel contenitore **ingestiondata** vengono eliminati 30 giorni dopo la creazione del processo di importazione più recente.

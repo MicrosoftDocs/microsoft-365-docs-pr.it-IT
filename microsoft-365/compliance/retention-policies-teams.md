@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: b7bc84307f0db580995e039618cb01d25d6ecd66
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932859"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280800"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -163,13 +163,13 @@ Il primo giorno un utente crea un messaggio di chat o di canale.
 
 Esempio di risultato di conservazione se l'utente non modifica o elimina il messaggio:
 
-- Quinto giorno (in genere 1-7 giorni dopo l'inizio del periodo di conservazione il terzo giorno):
+- Quinto giorno (in genere 1-7 giorni dopo l'inizio del periodo di conservazione il secondo giorno):
     - Il messaggio viene spostato nella cartella SubstrateHolds dove può ancora essere cercato con gli strumenti di eDiscovery e vi rimane per almeno 1 giorno.
 
 - Nono giorno (in genere 1-7 giorni dopo un minimo di 1 giorno nella cartella SubstrateHolds):
     - Il messaggio viene eliminato definitivamente e quindi non viene restituito con le ricerche di eDiscovery.
 
-Come illustrato in questo esempio, anche se è possibile configurare criteri di conservazione per eliminare i messaggi dopo un solo giorno, il servizio viene sottoposto a più processi per garantire un'eliminazione conforme. Di conseguenza, un'azione di eliminazione dopo 1 giorno potrebbe richiedere 18 giorni prima che il messaggio venga eliminato definitivamente in modo che non venga più restituito nelle ricerche di eDiscovery.
+Come illustrato in questo esempio, anche se è possibile configurare criteri di conservazione per eliminare i messaggi dopo un solo giorno, il servizio viene sottoposto a più processi per garantire un'eliminazione conforme. Di conseguenza, un'azione di eliminazione dopo 1 giorno potrebbe richiedere 16 giorni prima che il messaggio venga eliminato definitivamente in modo che non venga più restituito nelle ricerche di eDiscovery.
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Chat di interoperabilità di Skype for Business e Teams.
 
@@ -197,7 +197,7 @@ Se l’utente ha archiviato dei file in Teams, vedere la sezione [corrispondente
 
 ## <a name="limitations"></a>Limitazioni
 
-Lavoriamo costantemente all'ottimizzazione della funzionalità di conservazione in Teams. Nel frattempo, tenere presente la seguente limitazione quando si usano i criteri di conservazione per i messaggi e le chat del canale di Teams:
+Lavoriamo continuamente per ottimizzare la funzionalità di conservazione su Teams. Nel frattempo, tieni presente la limitazione seguente quando usi i criteri di conservazione per i messaggi di canale e le chat di Teams:
 
 - **Problema di visualizzazione non corretta in Outlook**. Se si creano criteri di conservazione per i percorsi di Skype o Teams, uno di questi criteri viene visualizzato come criterio cartella predefinito quando un utente visualizza le proprietà di una cartella della cassetta postale nel client desktop di Outlook. Si tratta di un problema di visualizzazione non corretta in Outlook e di un [problema noto](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Dovrebbero essere invece visualizzati i criteri di conservazione delle cassette postali applicati alla cartella. Il criterio di conservazione di Skype o Teams non viene applicato alla cassetta postale dell'utente.
 
