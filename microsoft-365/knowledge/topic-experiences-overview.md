@@ -14,22 +14,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Panoramica di Viva Topics.
-ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281030"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302125"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Panoramica di Microsoft Viva Topics 
 
-Viva Topics usa la tecnologia Microsoft AI, Microsoft 365, Microsoft Graph, Ricerca e altri componenti e servizi per portare conoscenze agli utenti nelle app di Microsoft 365 che usano ogni giorno, a partire da pagine moderne di SharePoint, Microsoft Search e Ricerca in Word e PowerPoint.
+Viva Topics usa la tecnologia Microsoft AI, Microsoft 365, Microsoft Graph, Ricerca e altri componenti e servizi per far conoscere gli utenti nelle app di Microsoft 365 che usano ogni giorno SharePoint, a partire da pagine moderne, Microsoft Search e Ricerca in Word, PowerPoint, Outlook e Excel.
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
 
-</br>
+<br/>
 
 Viva Topics aiuta ad affrontare un problema aziendale chiave in molte aziende: fornire le informazioni agli utenti quando ne hanno bisogno. Ad esempio, i nuovi dipendenti devono apprendere rapidamente molte nuove informazioni e incontrano termini di cui non sanno nulla quando leggono le informazioni aziendali. Per saperne di più, l'utente potrebbe dover allontanarsi da ciò che sta facendo e dedicare tempo prezioso alla ricerca di dettagli, come informazioni su quale sia il termine, chi nell'organizzazione è un esperto in materia e forse siti e documenti relativi al termine.
 
@@ -42,7 +42,7 @@ Quando un argomento viene menzionato nel contenuto delle notizie e delle pagine 
 
    ![Highlight degli argomenti](../media/knowledge-management/saturn.png) 
 
-Quando si utilizza la ricerca in Word o PowerPoint, tramite  la casella di ricerca o selezionando Cerca nel menu di scelta rapida, i risultati visualizzati potrebbero visualizzare anche il riepilogo dell'argomento.
+Quando si utilizza la ricerca in Word, PowerPoint, Outlook o Excel, tramite la casella  di ricerca o selezionando Cerca nel menu di scelta rapida, i risultati visualizzati potrebbero visualizzare anche il riepilogo dell'argomento.
 
    ![Screenshot che mostra la ricerca in Word tramite la casella di ricerca.](../media/knowledge-management/word-search-2.png)
 
@@ -71,7 +71,7 @@ Quando un argomento viene identificato e l'IA determina di avere informazioni su
 
 Gli amministratori delle informazioni possono scegliere di eseguire la ricerca per indicizzazione di tutti i siti di SharePoint nel tenant o di selezionarne solo alcuni.
 
-Vedere [Scoperta e conservazione dell'argomento](./topic-experiences-discovery-curation.md)
+Vedi [Individuazione e cura degli argomenti](./topic-experiences-discovery-curation.md).
 
 ## <a name="roles"></a>Ruoli
 
@@ -97,7 +97,7 @@ I responsabili informazioni possono:
 
 - Confermare o rimuovere gli argomenti rilevati nel tuo tenant.
 - Creare nuovi argomenti manualmente in base alle necessità (ad esempio, se non sono state fornite informazioni sufficienti per scoprirlo tramite IA).
-- Modificare le pagine degli argomenti esistenti.</br>
+- Modificare le pagine degli argomenti esistenti.<br/>
 
 Vedere [Gestisci argomenti nel Centro argomenti](manage-topics.md) per ulteriori informazioni.  
 
@@ -125,7 +125,8 @@ Agli utenti a cui consenti l'accesso per visualizzare gli argomenti nel lavoro q
 
 Inoltre, gli utenti con le autorizzazioni appropriate possono taggare elementi come conversazioni di Yammer che sono rilevanti per un argomento e aggiungerli a un argomento specifico. 
 
-Vedere [Scoperta e conservazione dell'argomento](./topic-experiences-discovery-curation.md)
+Vedi [Individuazione e cura degli argomenti](./topic-experiences-discovery-curation.md).
 
-
-## <a name="see-also"></a>Vedere anche
+<!--
+## See also
+-->

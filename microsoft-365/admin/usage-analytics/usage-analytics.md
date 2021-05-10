@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Ottieni una panoramica del modo in cui l'organizzazione adotta Microsoft 365 servizi per comunicare e collaborare.
-ms.openlocfilehash: 7d267dcbbb35a03794567991fddb2e3a573d47dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ac54e8bbc24393b7140fbc32efd48047beca2a1c
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297393"
+ms.locfileid: "52301741"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analisi di utilizzo di Microsoft 365
 
@@ -89,6 +89,9 @@ I report attività utente sono disponibili per determinati servizi individuali. 
 Non è gratuito, ti serve una licenza Power BI Pro licenza. Per informazioni [dettagliate, vedi prerequisiti](/power-bi/service-template-apps-install-distribute#prerequisites) per l'installazione, la personalizzazione e la distribuzione di un'app modello.
 
 Per condividere i dashboard con altri utenti, vedere Altre informazioni in [Condividere dashboard e report.](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)
+### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>Il ruolo Lettore report di riepilogo utilizzo è sufficiente per visualizzare l'analisi dei dati di utilizzo?
+
+Il ruolo Lettore report di riepilogo utilizzo consente l'accesso solo alle aggregazioni a livello di tenant Microsoft 365'analisi dell'utilizzo.  È consigliabile il ruolo Lettore report o Lettore report di riepilogo utilizzo a chiunque sia responsabile della gestione e dell'adozione delle modifiche, ma non necessariamente un amministratore IT.
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Chi può connettersi all'analisi dell'utilizzo di Microsoft 365?
 

@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a2bc36f9d3a3e9179f07662da8d97f4c55e72a24
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768999"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302053"
 ---
 # <a name="turn-on-network-protection"></a>Attivare la protezione di rete
 
@@ -43,7 +43,7 @@ Controlla se la protezione di rete è stata abilitata in un dispositivo locale u
 
 2. Scegli **HKEY_LOCAL_MACHINE** dal menu laterale
 
-3. Esplorare i menu annidati fino a **Criteri SOFTWARE**  >    >  **Microsoft**  >  **Windows Defender**  >  Windows Defender Protezione  >   di rete di Exploit Guard
+3. Spostarsi tra i menu annidati fino a **Criteri SOFTWARE**  >    >  **Microsoft**  >  **Windows Defender**  >  **Policy Manager** 
 
 4. Seleziona **EnableNetworkProtection** per visualizzare lo stato corrente della protezione di rete nel dispositivo
 
@@ -64,7 +64,7 @@ Abilitare la protezione di rete utilizzando uno dei metodi seguenti:
 
 ### <a name="powershell"></a>PowerShell
 
-1. Digitare **powershell** nel menu Start, fare clic con il pulsante destro del mouse Windows PowerShell **e** selezionare Esegui come **amministratore**
+1. Digita **powershell** nel menu Start, fai clic con il pulsante destro **del** mouse Windows PowerShell e scegli Esegui **come amministratore**
 2. Immettere il cmdlet seguente:
 
     ```PowerShell
@@ -85,11 +85,11 @@ Usa [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (in precedenza Intune)
 
-1. Accedere all'interfaccia di amministrazione di Microsoft Endpoint Manager (https://endpoint.microsoft.com)
+1. Accedere all'Microsoft Endpoint Manager di amministrazione (https://endpoint.microsoft.com)
 
 2. Creare o modificare un profilo di [configurazione di Endpoint Protection](/mem/intune/protect/endpoint-protection-configure)
 
-3. In **Impostazioni di configurazione** nel flusso del profilo passare a Microsoft Defender Exploit **Guard** Filtro di rete  >    >  **Protezione di rete**  >  **Abilita** o **Controlla solo**
+3. In **Configurazione Impostazioni** nel flusso del profilo, andare a Microsoft Defender Exploit Guard   >  **Filtro** di rete Protezione di  >  **rete**  >  **Abilita** o Controlla **solo**
 
 ### <a name="group-policy"></a>Criteri di gruppo
 
@@ -101,17 +101,17 @@ Utilizzare la procedura seguente per abilitare la protezione di rete nei compute
 
     In un computer di gestione di Criteri di gruppo aggiunto al dominio, aprire la [Console](https://technet.microsoft.com/library/cc731212.aspx)Gestione Criteri di gruppo, fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
 
-2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer** e selezionare **Modelli amministrativi.**
+2. Nell **'Editor Gestione Criteri di gruppo** passare a **Configurazione computer** e selezionare **Modelli amministrativi**.
 
-3. Espandere l'albero fino **ai componenti di Windows** Microsoft Defender  >  **Antivirus** Windows Defender Protezione  >  **di rete di Exploit**  >  **Guard**.
+3. Espandere l'albero per **Windows componenti**  >  **Antivirus Microsoft Defender**  >  **Windows Defender Protezione di rete di Exploit Guard**  >  .
 
 > [!NOTE]
-> Nelle versioni precedenti di Windows, il percorso dei Criteri di gruppo potrebbe essere "Windows Defender Antivirus" anziché "Microsoft Defender Antivirus".
+> Nelle versioni precedenti di Windows, il percorso di Criteri di gruppo potrebbe essere "Windows Defender Antivirus" anziché "Antivirus Microsoft Defender".
 
 4. Fai doppio clic **sull'impostazione Impedisci** a utenti e app di accedere a siti Web pericolosi e imposta l'opzione su **Abilitato.** Nella sezione opzioni è necessario specificare una delle opzioni seguenti:
     * **Blocca** - Gli utenti non possono accedere a indirizzi IP e domini dannosi
     * **Disabilita (impostazione predefinita):** la funzionalità Protezione di rete non funziona. Agli utenti non verrà impedito di accedere a domini dannosi
-    * **Modalità di** controllo- Se un utente visita un dominio o un indirizzo IP dannoso, un evento verrà registrato nel registro eventi di Windows. Tuttavia, all'utente non verrà impedito di visitare l'indirizzo.
+    * **Modalità di** controllo: se un utente visita un dominio o un indirizzo IP dannoso, un evento verrà registrato nel Windows eventi. Tuttavia, all'utente non verrà impedito di visitare l'indirizzo.
 
 > [!IMPORTANT]
 > Per abilitare completamente la protezione di rete, devi impostare l'opzione Criteri di gruppo su **Abilitato** e anche selezionare **Blocca** nel menu a discesa delle opzioni.

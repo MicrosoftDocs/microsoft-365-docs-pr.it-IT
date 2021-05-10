@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b5af93e82f72bac900682b2e231453e448b267d9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934190"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301777"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender per Endpoint su Mac
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934190"
 Questo argomento descrive come installare, configurare, aggiornare e usare Defender per Endpoint su Mac.
 
 > [!CAUTION]
-> L'esecuzione di altri prodotti di protezione degli endpoint di terze parti insieme a Microsoft Defender per Endpoint su Mac può causare problemi di prestazioni ed effetti collaterali imprevedibili. Se la protezione degli endpoint non Microsoft è un requisito assoluto nell'ambiente, puoi comunque sfruttare in modo sicuro la funzionalità Defender for Endpoint on Mac EDR dopo aver configurato la funzionalità antivirus per l'esecuzione in [modalità passiva.](mac-preferences.md#enable--disable-passive-mode)
+> L'esecuzione di altri prodotti di protezione degli endpoint di terze parti insieme a Microsoft Defender per Endpoint su Mac può causare problemi di prestazioni ed effetti collaterali imprevedibili. Se la protezione degli endpoint non Microsoft è un requisito assoluto nell'ambiente, puoi comunque sfruttare in modo sicuro la funzionalità Defender for Endpoint su Mac EDR dopo aver configurato la funzionalità antivirus per l'esecuzione in modalità [passiva.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Novità della versione più recente
 
@@ -56,7 +56,7 @@ Per ottenere le funzionalità più recenti, incluse le funzionalità di anteprim
 
 ### <a name="prerequisites"></a>Prerequisiti
 
-- Una sottoscrizione defender per endpoint e l'accesso al portale di Microsoft Defender Security Center
+- Una sottoscrizione defender per endpoint e l'accesso al portale Microsoft Defender Security Center
 - Esperienza a livello di principiante nello scripting macOS e BASH
 - Privilegi amministrativi nel dispositivo (in caso di distribuzione manuale)
 
@@ -98,10 +98,12 @@ Microsoft Defender per Endpoint su Mac richiede una delle seguenti offerte per c
 - Microsoft 365 E5 (M365 E5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
+- Windows 10 Enterprise E5
+- Microsoft Defender per endpoint
 
 > [!NOTE]
 > Gli utenti con licenza idonea possono usare Microsoft Defender per Endpoint su un massimo di cinque dispositivi simultanei.
-> Microsoft Defender for Endpoint è disponibile anche per l'acquisto da un provider di soluzioni cloud (CSP). Quando viene acquistato tramite un CSP, non richiede offerte di contratti multilicenza Microsoft elencate.
+> Microsoft Defender for Endpoint è disponibile anche per l'acquisto da un Cloud Solution Provider (CSP). Quando viene acquistato tramite un CSP, non richiede offerte di contratti multilicenza Microsoft elencate.
 
 ### <a name="network-connections"></a>Connessioni di rete
 

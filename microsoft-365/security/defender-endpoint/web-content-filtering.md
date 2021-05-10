@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c9a069deded237c5ded6bcd9f6c6a77f644e65a2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689342"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302065"
 ---
 # <a name="web-content-filtering"></a>Filtro contenuti Web
 
@@ -36,7 +36,8 @@ ms.locfileid: "51689342"
 > Questa versione di anteprima viene fornita senza un contratto di servizio e non è consigliata per i carichi di lavoro di produzione. Alcune funzionalità potrebbero non essere supportate o avere funzionalità vincolate.
 > Per altre informazioni, vedi [Funzionalità di anteprima di Microsoft Defender per Endpoint.](preview.md)
 
->Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> [!TIP]
+> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Il filtro contenuto Web fa parte [delle funzionalità di protezione Web](web-protection-overview.md) in Microsoft Defender for Endpoint. Consente all'organizzazione di tenere traccia e regolare l'accesso ai siti Web in base alle categorie di contenuto. Molti di questi siti Web, sebbene non dannosi, potrebbero essere problematici a causa delle normative di conformità, dell'utilizzo della larghezza di banda o di altri problemi.
 
@@ -47,36 +48,32 @@ Il filtro contenuto Web è disponibile nei principali Web browser, con blocchi e
 Riepilogo dei vantaggi:
 
 - Agli utenti viene impedito l'accesso a siti Web in categorie bloccate, indipendentemente dal fatto che si esezionino in locale o fuori sede
-- Distribuire comodamente i criteri a gruppi di utenti usando i gruppi di dispositivi definiti in [Microsoft Defender per le impostazioni di](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac) controllo di accesso basato sui ruoli di Endpoint
-- Accedere ai report Web nella stessa posizione centrale, con visibilità sui blocchi effettivi e sull'utilizzo web
+- Il team di sicurezza può distribuire comodamente i criteri a gruppi di utenti usando i gruppi di dispositivi definiti in [Microsoft Defender per le impostazioni di](/microsoft-365/security/defender-endpoint/rbac) controllo di accesso basato sui ruoli di Endpoint
+- Il team di sicurezza può accedere ai report Web nella stessa posizione centrale, con visibilità sui blocchi effettivi e sull'utilizzo web
 
 ## <a name="user-experience"></a>Esperienza utente
 
-L'esperienza di blocco per i browser supportati da terze parti è fornita da Protezione di rete, che fornisce un avviso popup a livello di sistema che informa l'utente di una connessione bloccata. 
-
-Per un'esperienza più facile da usare nel browser, prendi in considerazione l'uso di Microsoft Edge.
+L'esperienza di blocco per i browser supportati da terze parti è fornita da Protezione di rete, che fornisce un avviso popup a livello di sistema che informa l'utente di una connessione bloccata. Per un'esperienza più facile da usare nel browser, prendi in considerazione l'uso di Microsoft Edge.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 Prima di provare questa funzionalità, verificare di disporre dei requisiti seguenti:
 
-- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Componente aggiuntivo Microsoft 365 E5 Security o la licenza autonoma di Microsoft Defender for Endpoint. 
-- Accesso al portale di Microsoft Defender Security Center
-- Dispositivi che eseguono l'aggiornamento dell'anniversario di Windows 10 (versione 1607) o successiva con l'aggiornamento MoCAMP più recente.
-
-Se Windows Defender SmartScreen non è attivato, Protezione di rete prenderà il controllo del blocco. Richiede [l'abilitazione di Protezione](enable-network-protection.md) di rete nel dispositivo. Chrome, Firefox, Brave e Opera sono attualmente browser di terze parti in cui questa funzionalità è abilitata.
+- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security componente aggiuntivo o la licenza autonoma di Microsoft Defender for Endpoint. 
+- Accesso a Microsoft Defender Security Center portale ( https://securitycenter.windows.com) .
+- Dispositivi che Windows 10'aggiornamento dell'anniversario (versione 1607) o successiva con l'aggiornamento MoCAMP più recente.
 
 ## <a name="data-handling"></a>Gestione dei dati
 
-Seguiremo qualsiasi area geografica hai scelto di usare come parte delle impostazioni di gestione dei dati di [Microsoft Defender for Endpoint.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/data-storage-privacy) I dati non lasceranno il data center in tale area. Inoltre, i dati non verranno condivisi con terze parti, inclusi i provider di dati.
+Seguiremo qualsiasi area geografica hai scelto di usare come parte delle impostazioni di gestione dei dati di [Microsoft Defender for Endpoint.](data-storage-privacy.md) I dati non lasceranno il data center in tale area. Inoltre, i dati non verranno condivisi con terze parti, inclusi i provider di dati.
 
 ## <a name="turn-on-web-content-filtering"></a>Attivare il filtro contenuto Web
 
-Dal menu di spostamento a sinistra, selezionare **Impostazioni > generale > funzionalità avanzate**. Scorrere verso il basso fino a visualizzare la voce relativa al filtro **contenuto Web.** Imposta l'interruttore **su Attivato** **e Salva preferenze.**
+Dal menu di spostamento a sinistra, **selezionare** Impostazioni  >  **Funzionalità**  >  **avanzate generali.** Scorrere verso il basso fino a visualizzare la voce relativa al filtro **contenuto Web.** Imposta l'interruttore **su Attivato** **e Salva preferenze.**
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurare i criteri di filtro contenuto Web
 
-I criteri di filtro del contenuto Web specificano quali categorie di siti sono bloccate in quali gruppi di dispositivi. Per gestire i criteri, passare a **Impostazioni > Regole > filtro contenuto Web**.
+I criteri di filtro del contenuto Web specificano quali categorie di siti sono bloccate in quali gruppi di dispositivi. Per gestire i criteri, passare **a** Regole Impostazioni  >  **filtro**  >  **contenuto Web**.
 
 Usa il filtro per individuare i criteri che contengono determinate categorie bloccate o che vengono applicati a gruppi di dispositivi specifici.
 
@@ -85,12 +82,17 @@ Usa il filtro per individuare i criteri che contengono determinate categorie blo
 Per aggiungere un nuovo criterio:
 
 1. Selezionare **Aggiungi criterio** nella pagina Filtro contenuto **Web** in **Impostazioni**.
+
 2. Specificare un nome.
+
 3. Selezionare le categorie da bloccare. Utilizzare l'icona espandi per espandere completamente ogni categoria padre e selezionare categorie di contenuto Web specifiche.
+
 4. Specificare l'ambito dei criteri. Seleziona i gruppi di dispositivi per specificare dove applicare il criterio. Solo i dispositivi nei gruppi di dispositivi selezionati non potranno accedere ai siti Web nelle categorie selezionate.
+
 5. Esaminare il riepilogo e salvare il criterio. L'aggiornamento dei criteri può richiedere fino a 2 ore per l'applicazione ai dispositivi selezionati.
 
-Suggerimento: puoi distribuire un criterio senza selezionare alcuna categoria in un gruppo di dispositivi. Questa azione creerà un criterio solo di controllo, per aiutarti a comprendere il comportamento dell'utente prima di creare un criterio di blocco.
+> [!TIP]
+> Puoi distribuire un criterio senza selezionare alcuna categoria in un gruppo di dispositivi. Questa azione creerà un criterio solo di controllo, per aiutarti a comprendere il comportamento dell'utente prima di creare un criterio di blocco.
 
 >[!NOTE]
 >Se stai rimuovendo un criterio o modificando i gruppi di dispositivi contemporaneamente, questo potrebbe causare un ritardo nella distribuzione dei criteri.
@@ -102,15 +104,17 @@ Suggerimento: puoi distribuire un criterio senza selezionare alcuna categoria in
 
 È possibile ignorare la categoria bloccata nel filtro contenuto Web per consentire un singolo sito creando un criterio indicatore personalizzato. Il criterio indicatore personalizzato sostituisce il criterio di filtro contenuto Web quando viene applicato al gruppo di dispositivi in questione.
 
-1. Creare un indicatore personalizzato in Microsoft Defender Security Center andando a **Impostazioni**  >    >  **Indicatori URL/Elemento aggiunta**  >  **dominio**
-2. Immettere il dominio del sito
+1. Creare un indicatore personalizzato nel Microsoft Defender Security Center andando a Impostazioni  >    >  **URL indicatori/Elemento aggiunta**  >  **dominio**.
+
+2. Immettere il dominio del sito.
+
 3. Impostare l'azione del criterio su **Consenti**.  
 
 ### <a name="reporting-inaccuracies"></a>Segnalazione di imprecisioni
 
-Se si verifica un dominio categorizzato in modo errato, è possibile segnalare imprecisioni direttamente dalla pagina dei report filtro contenuto Web. Questa funzionalità è disponibile solo nel nuovo Centro sicurezza Microsoft 365 (security.microsoft.com).
+Se si verifica un dominio categorizzato in modo errato, è possibile segnalare imprecisioni direttamente dalla pagina dei report filtro contenuto Web. Questa funzionalità è disponibile solo nel nuovo centro sicurezza Microsoft 365 (security.microsoft.com).
 
-Per segnalare un'imprecisione, passare a Report **> Protezione Web > Web Content Filtering Details > Domains**. Nella scheda domini dei report Filtro contenuto Web verrà visualizzato un pulsante con i puntini di sospensione accanto a ognuno dei domini. Posizionare il puntatore del mouse sui puntini di sospensione e selezionare **Segnala imprecisione.**
+Per segnalare un'imprecisione, passare **a** Report Protezione Web Protezione  >    >  **Web Dettagli filtro contenuto**  >  **Domini.** Nella scheda domini dei report Filtro contenuto Web verrà visualizzato un pulsante con i puntini di sospensione accanto a ognuno dei domini. Posizionare il puntatore del mouse sui puntini di sospensione e selezionare **Segnala imprecisione.**
 
 Verrà aperto un pannello in cui è possibile selezionare la priorità e aggiungere ulteriori dettagli, ad esempio la categoria suggerita per la ri categorizzazione. Dopo aver completato il modulo, selezionare **Invia**. Il team esamina la richiesta entro un giorno lavorativo. Per sbloccare immediatamente, crea un [indicatore consenti personalizzato.](indicator-ip-domain.md)
 
@@ -156,11 +160,11 @@ Usa il filtro dell'intervallo di tempo nella parte superiore sinistra della pagi
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>Limitazioni e problemi noti in questa anteprima
 
-- Solo Microsoft Edge è supportato se la configurazione del sistema operativo del dispositivo è Server (cmd > Systeminfo > OS Configuration). Protezione di rete è supportata solo in modalità Inspect nei dispositivi server, responsabile della protezione del traffico tra i browser di terze parti supportati.
+- Solo Microsoft Edge è supportata se la configurazione del sistema operativo del dispositivo è Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**). Protezione di rete è supportata solo in modalità Inspect nei dispositivi server, responsabile della protezione del traffico tra i browser di terze parti supportati.
 
-- I dispositivi non assegnati avranno dati non corretti visualizzati nel report. Nel pivot Report details > Device groups, you may see a row with a blank Device Group field. Questo gruppo contiene i dispositivi non assegnati prima di essere inseriti nel gruppo specificato. Il report per questa riga potrebbe non contenere un conteggio accurato dei dispositivi o dei conteggi di accesso.
+- I dispositivi non assegnati avranno dati non corretti visualizzati nel report. Nel **pivot Dettagli rapporto**  >  **Gruppi di dispositivi** potrebbe essere visualizzata una riga con un campo Gruppo di dispositivi vuoto. Questo gruppo contiene i dispositivi non assegnati prima di essere inseriti nel gruppo specificato. Il report per questa riga potrebbe non contenere un conteggio accurato dei dispositivi o dei conteggi di accesso.
 
-- I report filtro contenuto Web sono attualmente limitati alla visualizzazione dei primi 5.000 record. Ad esempio, il report "Domini" mostrerà solo un massimo di 5000 domini principali per una determinata query di filtro, se applicabile. 
+- I report filtro contenuto Web sono attualmente limitati alla visualizzazione dei primi 5.000 record. Ad esempio, il report Domini mostrerà solo un massimo di 5000 domini principali per una determinata query di filtro, se applicabile. 
 
 ## <a name="related-topics"></a>Argomenti correlati
 

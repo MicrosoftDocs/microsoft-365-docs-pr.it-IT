@@ -1,6 +1,6 @@
 ---
-title: Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base
-description: Gestire il modo in cui Microsoft Defender Antivirus riceve la protezione e gli aggiornamenti dei prodotti.
+title: Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base
+description: Gestire il modo Antivirus Microsoft Defender ricevere aggiornamenti di prodotti e protezione.
 keywords: aggiornamenti, linee di base della sicurezza, protezione, pianificazione degli aggiornamenti, forzare gli aggiornamenti, aggiornamenti mobili, wsus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,59 +16,59 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/06/2021
-ms.openlocfilehash: 22a173d39c3ab8d1afd91a33b05e02e58da24aaa
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/08/2021
+ms.openlocfilehash: 4f2b931018d49affa2d94ddf1a147c4fd2e02085
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274557"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302077"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base
+# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base
 
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
 
-Esistono due tipi di aggiornamenti correlati al mantenimento di Microsoft Defender Antivirus aggiornato:
+Esistono due tipi di aggiornamenti correlati alla Antivirus Microsoft Defender aggiornati:
 
 - Aggiornamenti delle funzionalità di intelligence per la sicurezza
 - Aggiornamenti dei prodotti
 
 > [!IMPORTANT]
-> Mantenere Microsoft Defender Antivirus aggiornato è fondamentale per garantire ai dispositivi la tecnologia e le funzionalità più recenti necessarie per la protezione da nuovi malware e tecniche di attacco.
+> Mantenere Antivirus Microsoft Defender aggiornato è fondamentale per garantire ai dispositivi le tecnologie e le funzionalità più recenti necessarie per la protezione da nuovi malware e tecniche di attacco.
 > 
-> Assicurati di aggiornare la protezione antivirus anche se Microsoft Defender Antivirus è in esecuzione in [modalità passiva.](./microsoft-defender-antivirus-compatibility.md)
+> Assicurarsi di aggiornare la protezione antivirus anche se Antivirus Microsoft Defender è in esecuzione in [modalità passiva.](./microsoft-defender-antivirus-compatibility.md)
 > 
-> Per visualizzare il motore, la piattaforma e la data della firma più recenti, visitare gli aggiornamenti di Security [intelligence per Microsoft Defender Antivirus e altri antimalware Microsoft.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
+> Per visualizzare il motore, la piattaforma e la data della firma più recenti, visitare gli aggiornamenti di Security intelligence per Antivirus Microsoft Defender [e altri antimalware Microsoft.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## <a name="security-intelligence-updates"></a>Aggiornamenti delle funzionalità di intelligence per la sicurezza
 
-Microsoft Defender Antivirus usa la protezione basata sul [cloud](cloud-protection-microsoft-defender-antivirus.md) (denominata anche Microsoft Advanced Protection Service o MAPS) e scarica periodicamente gli aggiornamenti delle informazioni di sicurezza per fornire protezione.
+Antivirus Microsoft Defender utilizza la protezione consegnata dal [cloud](cloud-protection-microsoft-defender-antivirus.md) (chiamata anche Microsoft Advanced Protection Service o MAPS) e scarica periodicamente gli aggiornamenti delle informazioni di sicurezza per fornire protezione.
 
 > [!NOTE]
 > Gli aggiornamenti vengono rilasciati sotto i seguenti numeri KB:  
-> Microsoft Defender Antivirus: KB2267602  
-> System Center Endpoint Protection: KB2461484
+> - Antivirus Microsoft Defender: KB2267602  
+> - System Center Endpoint Protection: KB2461484
 
-La protezione basata sul cloud è sempre attiva e richiede una connessione attiva a Internet per funzionare. Gli aggiornamenti delle funzionalità di intelligence per la sicurezza vengono eseguiti in base a una cadenza pianificata (configurabile tramite criteri). Per ulteriori informazioni, vedere [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus.](cloud-protection-microsoft-defender-antivirus.md) 
+La protezione basata sul cloud è sempre attiva e richiede una connessione attiva a Internet per funzionare. Gli aggiornamenti delle funzionalità di intelligence per la sicurezza vengono eseguiti in base a una cadenza pianificata (configurabile tramite criteri). Per ulteriori informazioni, vedere [Use Microsoft cloud-provided protection in Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md). 
 
-Per un elenco dei recenti aggiornamenti delle funzionalità di intelligence per la sicurezza, vedere Aggiornamenti delle informazioni di [sicurezza per Microsoft Defender Antivirus e altri antimalware Microsoft.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
+Per un elenco dei recenti aggiornamenti delle funzionalità di intelligence per la sicurezza, vedere Aggiornamenti dell'intelligence per la sicurezza per Antivirus Microsoft Defender [e altri antimalware Microsoft.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 Gli aggiornamenti dei motori sono inclusi con gli aggiornamenti delle funzionalità di intelligence per la sicurezza e vengono rilasciati a cadenza mensile.
 
 ## <a name="product-updates"></a>Aggiornamenti dei prodotti
 
-Microsoft Defender Antivirus richiede aggiornamenti mensili [(KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (noti come aggiornamenti della *piattaforma)* e riceverà aggiornamenti delle funzionalità principali insieme alle versioni di Windows 10.
+Antivirus Microsoft Defender aggiornamenti mensili [(KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (noti come aggiornamenti della piattaforma *)* e riceveranno aggiornamenti delle funzionalità principali insieme Windows 10 versioni.
 
 È possibile gestire la distribuzione degli aggiornamenti tramite uno dei metodi seguenti: 
 
 - [Windows Server Update Service (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
-- Il metodo consueto che usi per distribuire gli aggiornamenti di Microsoft e Windows agli endpoint nella rete.
+- Il metodo consueto utilizzato per distribuire Microsoft e Windows aggiornamenti agli endpoint nella rete.
 
-Per ulteriori informazioni, vedere [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
+Per ulteriori informazioni, vedere [Manage the sources for Antivirus Microsoft Defender protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
 > Gli aggiornamenti mensili vengono rilasciati in più fasi, con la conseguente visualizzazione di più pacchetti in [Windows Server Update Services.](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
@@ -83,11 +83,11 @@ Tutti gli aggiornamenti contengono
 - miglioramenti all'integrazione (Cloud, Microsoft 365 Defender).
 <br/>
 <details>
-<summary> Aprile-2021 (Piattaforma: 4.19.2104.9| Motore: 1.1.18100.5)</summary>
+<summary> Aprile-2021 (Piattaforma: 4.18.2104.9| Motore: 1.1.18100.5)</summary>
 
 &ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.337.2.0**  
 &ensp;Rilasciato: **1 aprile 2021**  
-&ensp;Piattaforma: **4.19.2104.9**  
+&ensp;Piattaforma: **4.18.2104.9**  
 &ensp;Motore: **1.1.18100.5**  
 &ensp;Fase di supporto: **sicurezza e aggiornamenti critici**
     
@@ -101,11 +101,11 @@ Nessun problema noto
 </details>
 
 <details>
-<summary> Marzo-2021 (Piattaforma: 4.19.2103.7 | Motore: 1.1.18000.5)</summary>
+<summary> Marzo-2021 (Piattaforma: 4.18.2103.7 | Motore: 1.1.18000.5)</summary>
 
 &ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.335.36.0**  
 &ensp;Rilasciato: **1 aprile 2021**  
-&ensp;Piattaforma: **4.19.2103.7**  
+&ensp;Piattaforma: **4.18.2103.7**  
 &ensp;Motore: **1.1.18000.5**  
 &ensp;Fase di supporto: **sicurezza e aggiornamenti critici**
     
@@ -119,11 +119,11 @@ Nessun problema noto
 Nessun problema noto  
 <br/>
 </details><details>
-<summary> Febbraio-2021 (Piattaforma: 4.19.2102.3 | Motore: 1.1.17900.7)</summary>
+<summary> Febbraio-2021 (Piattaforma: 4.18.2102.3 | Motore: 1.1.17900.7)</summary>
 
 &ensp;Versione dell'aggiornamento di Security Intelligence: **1.333.7.0**  
 &ensp;Rilasciato: **9 marzo 2021**  
-&ensp;Piattaforma: **4.19.2102.3**  
+&ensp;Piattaforma: **4.18.2102.3**  
 &ensp;Motore: **1.1.17900.7**  
 &ensp;Fase di supporto: **sicurezza e aggiornamenti critici**
     
@@ -154,7 +154,7 @@ Dopo il rilascio di una nuova versione del pacchetto, il supporto per le due ver
 
 - Miglioramenti al rilevamento degli exploit shellcode
 - Maggiore visibilità per i tentativi di furto delle credenziali
-- Miglioramenti delle funzionalità di antitampering nei servizi di Microsoft Defender Antivirus
+- Miglioramenti apportati alle funzionalità di antitampering nei Antivirus Microsoft Defender servizi
 - Supporto migliorato per l'emulazione x64 ARM x64
 - Fix: EDR Block notification remains in threat history after real-time protection performed initial detection
 
@@ -216,7 +216,7 @@ Nessun problema noto
    - Protezione di rete in Server 2019
    - Esclusioni di indirizzi IP per Protezione di rete
 - Visibilità migliorata nelle misurazioni TPM
-- Analisi migliorata dei moduli VBA di Office
+- Analisi Office modulo VBA migliorata
 
 ### <a name="known-issues"></a>Problemi noti
 
@@ -239,7 +239,7 @@ Nessun problema noto
 - Monitoraggio del comportamento migliorato per le analisi della memoria
 - Analisi dei flussi macro migliorata
 - Aggiunta `AMRunningMode` al cmdlet Get-MpComputerStatus PowerShell
-- [DisableAntiSpyware viene](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) ignorato. Microsoft Defender Antivirus si disattiva automaticamente quando rileva un altro programma antivirus.
+- [DisableAntiSpyware viene](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) ignorato. Antivirus Microsoft Defender si spegne automaticamente quando rileva un altro programma antivirus.
 
 
 ### <a name="known-issues"></a>Problemi noti
@@ -456,13 +456,13 @@ La tabella seguente fornisce le Antivirus Microsoft Defender della piattaforma e
 |1703 (RS2) |4.11.15603.2 |1.1.13504.0 | Supporto tecnico per gli aggiornamenti (solo) |
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Supporto tecnico per gli aggiornamenti (solo) |  
 
-Per informazioni sulla versione di Windows 10, vedi la scheda delle informazioni sul ciclo [di vita di Windows.](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
+Per Windows 10 sulla versione, vedere la scheda [Windows del ciclo di vita.](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Aggiornamenti per Gestione e manutenzione immagini distribuzione
 
-Ti consigliamo di aggiornare le immagini di installazione di Windows 10 (Enterprise, Pro e Home), Windows Server 2019 e Windows Server 2016 OS con gli aggiornamenti antivirus e antimalware più recenti. Mantenere aggiornate le immagini di installazione del sistema operativo consente di evitare un gap di protezione. 
+È consigliabile aggiornare le immagini di installazione Windows 10 (Enterprise, Pro e Home), Windows Server 2019 e le immagini di installazione del sistema operativo Windows Server 2016 con gli aggiornamenti antivirus e antimalware più recenti. Mantenere aggiornate le immagini di installazione del sistema operativo consente di evitare un gap di protezione. 
 
-Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
+Per altre informazioni, vedi [Aggiornamento di Microsoft Defender per Windows di installazione del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
 <summary>1.1.2105.01</summary>
@@ -475,7 +475,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -489,7 +489,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -503,7 +503,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -517,7 +517,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -531,7 +531,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -545,7 +545,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -559,8 +559,8 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
-- Firme aggiornate di Microsoft Defender Antivirus  
+### <a name="additional-information"></a>Informazioni aggiuntive
+- Firme Antivirus Microsoft Defender aggiornate  
 <br/>
 </details><details>
 <summary>1.1.2011.01</summary>
@@ -573,7 +573,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -587,8 +587,8 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
-- È stato aggiunto il supporto per le immagini di installazione del sistema operativo Windows 10 RS1 o versioni successive.  
+### <a name="additional-information"></a>Informazioni aggiuntive
+- È stato aggiunto il supporto per Windows 10 immagini di installazione del sistema operativo RS1 o versione successiva.  
 <br/>
 </details>
 
@@ -596,7 +596,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 
 | Articolo | Descrizione  |
 |:---|:---|
-|[Immagini di installazione dell'aggiornamento di Microsoft Defender per Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Esaminare i pacchetti di aggiornamento antimalware per le immagini di installazione del sistema operativo (file WIM e VHD). Ottenere gli aggiornamenti di Microsoft Defender Antivirus per Le immagini di installazione di Windows 10 (edizioni Enterprise, Pro e Home), Windows Server 2019 e Windows Server 2016.  |
+|[Aggiornamento di Microsoft Defender per le Windows di installazione del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Esaminare i pacchetti di aggiornamento antimalware per le immagini di installazione del sistema operativo (file WIM e VHD). Ottenere Antivirus Microsoft Defender aggiornamenti per Windows 10 (edizioni Enterprise, Pro e Home), Windows Server 2019 e Windows Server 2016 di installazione.  |
 |[Gestire la modalità di download e applicazione degli aggiornamenti della protezione](manage-protection-updates-microsoft-defender-antivirus.md) | Gli aggiornamenti di protezione possono essere recapitati tramite molte origini. |
 |[Gestire quando devono essere scaricati e applicati gli aggiornamenti della protezione](manage-protection-update-schedule-microsoft-defender-antivirus.md) | È possibile pianificare quando scaricare gli aggiornamenti della protezione. |
 |[Gestire gli aggiornamenti per gli endpoint non aggiornati](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Se un endpoint non esegue un aggiornamento o un'analisi pianificata, puoi forzare un aggiornamento o un'analisi al successivo accesso di un utente. |

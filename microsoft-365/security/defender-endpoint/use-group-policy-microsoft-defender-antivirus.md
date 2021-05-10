@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/07/2021
+ms.date: 05/08/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296732"
+ms.locfileid: "52302101"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utilizzare le impostazioni di Criteri di gruppo per configurare e gestire Antivirus Microsoft Defender
 
@@ -55,7 +55,7 @@ In generale, è possibile utilizzare la procedura seguente per configurare o mod
 Nella tabella seguente in questo argomento sono elencate le impostazioni di Criteri di gruppo disponibili in Windows 10 versione 1703 e vengono forniti collegamenti all'argomento appropriato in questa raccolta di documentazione (se applicabile). 
 
 > [!TIP]
-> Scaricare il foglio di Impostazioni di riferimento di Criteri di [gruppo Windows 10 maggio 2020 Update (2004).](https://www.microsoft.com/download/101451) In questo foglio di calcolo sono elencate le impostazioni dei criteri per le configurazioni di computer e utenti incluse nei file del modello amministrativo recapitati per Windows 10 maggio 2020 Update (2004). È possibile configurare queste impostazioni dei criteri quando si modificano gli oggetti Criteri di gruppo.
+> Scaricare il foglio di Impostazioni di riferimento di Criteri di [gruppo Windows 10 maggio 2020 Update (2004).](https://www.microsoft.com/download/101451) In questo foglio di calcolo sono elencate le impostazioni dei criteri per le configurazioni di computer e utenti incluse nei file del modello amministrativo recapitati per Windows 10 maggio 2020 Update (2004). È possibile configurare fare riferimento al foglio di calcolo quando si modificano oggetti Criteri di gruppo.
 
 | Posizione | Impostazione | Articolo |
 |:---|:---|:---|

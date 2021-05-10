@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come usare Microsoft Teams per creare il canale di gestione dei contratti usando una Microsoft 365 soluzione.
-ms.openlocfilehash: a97f6a77818fc53aa28a5924b97e3c7309d01e3a
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281193"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301801"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Passaggio 2. Usare Microsoft Teams per creare il canale di gestione dei contratti
 
@@ -42,6 +42,9 @@ Dopo aver collegato SharePoint raccolta documenti, sarà possibile visualizzare 
    ![Visualizzazione elenco.](../media/content-understanding/list-view.png) 
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Personalizzare la visualizzazione del riquadro della scheda Contratti
+
+> [!NOTE]
+> Questa sezione fa riferimento ad esempi di codice contenuti nel file **ContractCard.jsincluso** nel file zip **solutionfiles.**
 
 Anche Teams consente di visualizzare i contratti in una visualizzazione riquadro, è consigliabile personalizzarlo per visualizzare i dati del contratto che si desidera rendere visibili nella scheda contratto. Ad esempio, per la **scheda Contratti,** è importante che i membri vedano il cliente, l'appaltatore e l'importo della commissione nella scheda del contratto. Tutti questi campi sono stati estratti da ogni contratto tramite il SharePoint Syntex applicato alla raccolta documenti. Vuoi anche essere in grado di modificare la barra di intestazione del riquadro con colori diversi per ogni stato in modo che i membri possano facilmente vedere dove si trova il contratto nel processo di approvazione. Ad esempio, tutti i contratti approvati avranno una barra di intestazione blu.
 
