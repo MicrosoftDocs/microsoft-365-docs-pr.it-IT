@@ -12,25 +12,25 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4c4f2befd7fb9a8ccca0c1562aaed8b0ccdff92c
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 69b444dcb4195c322cfb5b3475fec8b1c22623ba
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547865"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299881"
 ---
-# <a name="contact-support-for-croatia"></a><span data-ttu-id="05ac7-103">Contattare il supporto tecnico per la Croazia</span><span class="sxs-lookup"><span data-stu-id="05ac7-103">Contact support for Croatia</span></span>
+# <a name="contact-support-for-croatia"></a><span data-ttu-id="f6160-103">Contattare il supporto per la Croazia</span><span class="sxs-lookup"><span data-stu-id="f6160-103">Contact support for Croatia</span></span>
 
-<span data-ttu-id="05ac7-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="05ac7-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="f6160-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="f6160-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="05ac7-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="05ac7-105">Phone number</span></span>
-<span data-ttu-id="05ac7-106">0800 222 225</span><span class="sxs-lookup"><span data-stu-id="05ac7-106">0800 222 225</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f6160-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="f6160-105">Phone number</span></span>
+<span data-ttu-id="f6160-106">0800 222 225</span><span class="sxs-lookup"><span data-stu-id="f6160-106">0800 222 225</span></span>
 
-## <a name="hours"></a><span data-ttu-id="05ac7-107">Ore</span><span class="sxs-lookup"><span data-stu-id="05ac7-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="05ac7-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="05ac7-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f6160-107">Ore</span><span class="sxs-lookup"><span data-stu-id="f6160-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f6160-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="f6160-108">Billing Support:</span></span>
 
-<span data-ttu-id="05ac7-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="05ac7-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="f6160-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="f6160-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="05ac7-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="05ac7-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f6160-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="f6160-110">Technical Support:</span></span>
 
-<span data-ttu-id="05ac7-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="05ac7-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f6160-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="f6160-111">English: 24 hours a day, 7 days a week</span></span>

@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Lettonia
+title: Informazioni di supporto per la Lettonia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,25 +12,25 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4d06a8beca5670fec4c03bdad7ae52f3f2130ac8
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7b52cdc7eee24989febd6d69dc0e4603a20bfa4c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546296"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298446"
 ---
-# <a name="contact-support-for-latvia"></a><span data-ttu-id="9fc4d-103">Contattare il supporto per la Lettonia</span><span class="sxs-lookup"><span data-stu-id="9fc4d-103">Contact support for Latvia</span></span>
+# <a name="contact-support-for-latvia"></a><span data-ttu-id="d7181-103">Contattare il supporto per la Lettonia</span><span class="sxs-lookup"><span data-stu-id="d7181-103">Contact support for Latvia</span></span>
 
-<span data-ttu-id="9fc4d-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="9fc4d-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="d7181-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="d7181-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="9fc4d-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="9fc4d-105">Phone number</span></span>
-<span data-ttu-id="9fc4d-106">8000 42 33</span><span class="sxs-lookup"><span data-stu-id="9fc4d-106">8000 42 33</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d7181-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="d7181-105">Phone number</span></span>
+<span data-ttu-id="d7181-106">8000 42 33</span><span class="sxs-lookup"><span data-stu-id="d7181-106">8000 42 33</span></span>
 
-## <a name="hours"></a><span data-ttu-id="9fc4d-107">Ore</span><span class="sxs-lookup"><span data-stu-id="9fc4d-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="9fc4d-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="9fc4d-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d7181-107">Ore</span><span class="sxs-lookup"><span data-stu-id="d7181-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d7181-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="d7181-108">Billing Support:</span></span>
 
-<span data-ttu-id="9fc4d-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="9fc4d-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="d7181-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="d7181-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="9fc4d-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="9fc4d-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d7181-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="d7181-110">Technical Support:</span></span>
 
-<span data-ttu-id="9fc4d-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="9fc4d-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d7181-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="d7181-111">English: 24 hours a day, 7 days a week</span></span>

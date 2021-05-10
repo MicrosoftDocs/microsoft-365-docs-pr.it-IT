@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Cipro
+title: Informazioni di supporto per Cipro
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,25 +12,25 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e93ccd2f9ddb545f1ad8ea094b854b7c8df797f2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e2ae17c20ffb10f09a99c5d53829da371a67979f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547901"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298975"
 ---
-# <a name="contact-support-for-cyprus"></a><span data-ttu-id="3867c-103">Contattare il supporto per Cipro</span><span class="sxs-lookup"><span data-stu-id="3867c-103">Contact support for Cyprus</span></span>
+# <a name="contact-support-for-cyprus"></a><span data-ttu-id="73516-103">Contattare il supporto per Cipro</span><span class="sxs-lookup"><span data-stu-id="73516-103">Contact support for Cyprus</span></span>
 
-<span data-ttu-id="3867c-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="3867c-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="73516-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="73516-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="3867c-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="3867c-105">Phone number</span></span>
-<span data-ttu-id="3867c-106">8009 2519</span><span class="sxs-lookup"><span data-stu-id="3867c-106">8009 2519</span></span>
+## <a name="phone-number"></a><span data-ttu-id="73516-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="73516-105">Phone number</span></span>
+<span data-ttu-id="73516-106">8009 2519</span><span class="sxs-lookup"><span data-stu-id="73516-106">8009 2519</span></span>
 
-## <a name="hours"></a><span data-ttu-id="3867c-107">Ore</span><span class="sxs-lookup"><span data-stu-id="3867c-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="3867c-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="3867c-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="73516-107">Ore</span><span class="sxs-lookup"><span data-stu-id="73516-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="73516-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="73516-108">Billing Support:</span></span>
 
-<span data-ttu-id="3867c-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="3867c-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="73516-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="73516-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="3867c-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="3867c-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="73516-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="73516-110">Technical Support:</span></span>
 
-<span data-ttu-id="3867c-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="3867c-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="73516-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="73516-111">English: 24 hours a day, 7 days a week</span></span>
