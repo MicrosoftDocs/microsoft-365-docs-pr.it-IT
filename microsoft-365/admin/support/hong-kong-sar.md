@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per l'R.A.S. di Hong Kong
+title: Informazioni di supporto per l'R SAR di Hong Kong
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,35 +12,35 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0f7cd59079edd6e578c4e209f8d2e75cfd9f9eb9
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: dd0b48df0404b51059692966558ee33e8ec5dc1b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546881"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296084"
 ---
-# <a name="contact-support-for-hong-kong-sar"></a><span data-ttu-id="6dc45-103">Contattare il supporto per l'R.A.S. di Hong Kong</span><span class="sxs-lookup"><span data-stu-id="6dc45-103">Contact support for Hong Kong SAR</span></span>
+# <a name="contact-support-for-hong-kong-sar"></a><span data-ttu-id="2c8ee-103">Contattare il supporto per Hong Kong SAR</span><span class="sxs-lookup"><span data-stu-id="2c8ee-103">Contact support for Hong Kong SAR</span></span>
 
-<span data-ttu-id="6dc45-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="6dc45-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="2c8ee-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="2c8ee-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6dc45-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="6dc45-105">Phone number</span></span>
-<span data-ttu-id="6dc45-106">3 071 3055</span><span class="sxs-lookup"><span data-stu-id="6dc45-106">3 071 3055</span></span>
+## <a name="phone-number"></a><span data-ttu-id="2c8ee-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="2c8ee-105">Phone number</span></span>
+<span data-ttu-id="2c8ee-106">3 071 3055</span><span class="sxs-lookup"><span data-stu-id="2c8ee-106">3 071 3055</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6dc45-107">Ore</span><span class="sxs-lookup"><span data-stu-id="6dc45-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6dc45-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="6dc45-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="2c8ee-107">Ore</span><span class="sxs-lookup"><span data-stu-id="2c8ee-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="2c8ee-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="2c8ee-108">Billing Support:</span></span>
 
-<span data-ttu-id="6dc45-109">Nepalese: Mon-Fri dalle 9.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="6dc45-109">Cantonese: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="2c8ee-109">Cantonese: Mon-Fri dalle 9.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="2c8ee-109">Cantonese: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="6dc45-110">Mandarino: Mon-Fri 9.00-18.00</span><span class="sxs-lookup"><span data-stu-id="6dc45-110">Mandarin: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="2c8ee-110">Mandarino: Mon-Fri 9.00-18.00</span><span class="sxs-lookup"><span data-stu-id="2c8ee-110">Mandarin: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="6dc45-111">Inglese: Mon-Fri dalle 9.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="6dc45-111">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="2c8ee-111">Inglese: Mon-Fri 9.00-18.00</span><span class="sxs-lookup"><span data-stu-id="2c8ee-111">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6dc45-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="6dc45-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="2c8ee-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="2c8ee-112">Technical Support:</span></span>
 
-<span data-ttu-id="6dc45-113">Nepalese: Mon-Fri dalle 9.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="6dc45-113">Cantonese: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="2c8ee-113">Cantonese: Mon-Fri dalle 9.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="2c8ee-113">Cantonese: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="6dc45-114">Mandarino: Mon-Fri 9.00-18.00</span><span class="sxs-lookup"><span data-stu-id="6dc45-114">Mandarin: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="2c8ee-114">Mandarino: Mon-Fri 9.00-18.00</span><span class="sxs-lookup"><span data-stu-id="2c8ee-114">Mandarin: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="6dc45-115">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="6dc45-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="2c8ee-115">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="2c8ee-115">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="6dc45-116">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="6dc45-116">Local call charges apply</span></span>
+<span data-ttu-id="2c8ee-116">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="2c8ee-116">Local call charges apply</span></span>

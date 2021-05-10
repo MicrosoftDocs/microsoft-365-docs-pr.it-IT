@@ -12,35 +12,35 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ae71fca926cafeb0936806ee4f5205a8c462f1e6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7f0f18e89c42d3bd43f21de47b9cc4ba6c420f34
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548429"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296865"
 ---
-# <a name="contact-support-for-brazil"></a><span data-ttu-id="9d820-103">Contattare il supporto per il Brasile</span><span class="sxs-lookup"><span data-stu-id="9d820-103">Contact support for Brazil</span></span>
+# <a name="contact-support-for-brazil"></a><span data-ttu-id="7e0a7-103">Contattare il supporto per il Brasile</span><span class="sxs-lookup"><span data-stu-id="7e0a7-103">Contact support for Brazil</span></span>
 
-<span data-ttu-id="9d820-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="9d820-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="7e0a7-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="7e0a7-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="9d820-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="9d820-105">Phone number</span></span>
-<span data-ttu-id="9d820-106">0800 762 1146</span><span class="sxs-lookup"><span data-stu-id="9d820-106">0800 762 1146</span></span>
+## <a name="phone-number"></a><span data-ttu-id="7e0a7-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="7e0a7-105">Phone number</span></span>
+<span data-ttu-id="7e0a7-106">0800 762 1146</span><span class="sxs-lookup"><span data-stu-id="7e0a7-106">0800 762 1146</span></span>
 
-## <a name="hours"></a><span data-ttu-id="9d820-107">Ore</span><span class="sxs-lookup"><span data-stu-id="9d820-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="9d820-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="9d820-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="7e0a7-107">Ore</span><span class="sxs-lookup"><span data-stu-id="7e0a7-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="7e0a7-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="7e0a7-108">Billing Support:</span></span>
 
-<span data-ttu-id="9d820-109">Portoghese: Mon-Fri dalle 9.00 alle 17.00</span><span class="sxs-lookup"><span data-stu-id="9d820-109">Portuguese: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="7e0a7-109">Portoghese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="7e0a7-109">Portuguese: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="9d820-110">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="9d820-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="7e0a7-110">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="7e0a7-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="9d820-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="9d820-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="7e0a7-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="7e0a7-111">Technical Support:</span></span>
 
-<span data-ttu-id="9d820-112">Portoghese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="9d820-112">Portuguese: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="7e0a7-112">Portoghese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="7e0a7-112">Portuguese: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="9d820-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="9d820-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="7e0a7-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="7e0a7-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="9d820-114">Numero di telefono alternativo:</span><span class="sxs-lookup"><span data-stu-id="9d820-114">Alternative Phone Number:</span></span>
+<span data-ttu-id="7e0a7-114">Numero Telefono alternativo:</span><span class="sxs-lookup"><span data-stu-id="7e0a7-114">Alternative Phone Number:</span></span>
 
-<span data-ttu-id="9d820-115">0800 047 4958 (numero verde locale)</span><span class="sxs-lookup"><span data-stu-id="9d820-115">0800 047 4958 (Local toll-free)</span></span>
+<span data-ttu-id="7e0a7-115">0800 047 4958 (numero verde locale)</span><span class="sxs-lookup"><span data-stu-id="7e0a7-115">0800 047 4958 (Local toll-free)</span></span>
 
-<span data-ttu-id="9d820-116">11 4700 1999 (si applicano addebiti per chiamate locali)</span><span class="sxs-lookup"><span data-stu-id="9d820-116">11 4700 1999 (Local call charges apply)</span></span>
+<span data-ttu-id="7e0a7-116">11 4700 1999 (Si applicano i costi delle chiamate locali)</span><span class="sxs-lookup"><span data-stu-id="7e0a7-116">11 4700 1999 (Local call charges apply)</span></span>
