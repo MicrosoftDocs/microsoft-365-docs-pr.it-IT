@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5a3d21ba5a62e966c86b0f4e707db12fb6a40d43
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e0bd218aaa95fabf3f825b09953caa7f6d79c55b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545189"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295572"
 ---
-# <a name="contact-support-for-panama"></a><span data-ttu-id="a971b-103">Contattare il supporto tecnico per Panama</span><span class="sxs-lookup"><span data-stu-id="a971b-103">Contact support for Panama</span></span>
+# <a name="contact-support-for-panama"></a><span data-ttu-id="ab2c3-103">Contattare il supporto per Panama</span><span class="sxs-lookup"><span data-stu-id="ab2c3-103">Contact support for Panama</span></span>
 
-<span data-ttu-id="a971b-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="a971b-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="ab2c3-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="ab2c3-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a971b-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="a971b-105">Phone number</span></span>
-<span data-ttu-id="a971b-106">00800 051 0398</span><span class="sxs-lookup"><span data-stu-id="a971b-106">00800 051 0398</span></span>
+## <a name="phone-number"></a><span data-ttu-id="ab2c3-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="ab2c3-105">Phone number</span></span>
+<span data-ttu-id="ab2c3-106">00800 051 0398</span><span class="sxs-lookup"><span data-stu-id="ab2c3-106">00800 051 0398</span></span>
 
-<span data-ttu-id="a971b-107">Selezionare l'opzione 4</span><span class="sxs-lookup"><span data-stu-id="a971b-107">Select option 4</span></span>
+<span data-ttu-id="ab2c3-107">Selezionare l'opzione 4</span><span class="sxs-lookup"><span data-stu-id="ab2c3-107">Select option 4</span></span>
 
-<span data-ttu-id="a971b-108">Immettere il codice 7007</span><span class="sxs-lookup"><span data-stu-id="a971b-108">Enter code 7007</span></span>
+<span data-ttu-id="ab2c3-108">Immettere il codice 7007</span><span class="sxs-lookup"><span data-stu-id="ab2c3-108">Enter code 7007</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a971b-109">Ore</span><span class="sxs-lookup"><span data-stu-id="a971b-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a971b-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="a971b-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="ab2c3-109">Ore</span><span class="sxs-lookup"><span data-stu-id="ab2c3-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="ab2c3-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="ab2c3-110">Billing Support:</span></span>
 
-<span data-ttu-id="a971b-111">Spagnolo: Mon-Fri dalle 9.00 alle 17.00</span><span class="sxs-lookup"><span data-stu-id="a971b-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="ab2c3-111">Spagnolo: Mon-Fri dalle 9.00 alle 17.00</span><span class="sxs-lookup"><span data-stu-id="ab2c3-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a971b-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="a971b-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="ab2c3-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="ab2c3-112">Technical Support:</span></span>
 
-<span data-ttu-id="a971b-113">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="a971b-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="ab2c3-113">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="ab2c3-113">Spanish: 24 hours a day, 7 days a week</span></span>
