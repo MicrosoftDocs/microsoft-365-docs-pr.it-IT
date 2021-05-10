@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: L'amministratore può imparare a configurare il supporto per la posta elettronica in ingresso anonima da origini IPv6 in Exchange Online ed Exchange Online Protection.
+description: L'amministratore può imparare a configurare il supporto per la posta elettronica in ingresso anonima da origini IPv6 in Exchange Online e Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df06891401802d212cbfdb55085662901f5546e9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 80fdcc9dcfe3006ef8b21aa19856fe8c0ea3ff70
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206473"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300050"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Aggiungere il supporto per la posta elettronica in ingresso anonima su IPv6 in Microsoft 365
 
@@ -34,13 +34,13 @@ ms.locfileid: "51206473"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Le organizzazioni di Microsoft 365 con cassette postali di Exchange Online e organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online supportano la posta elettronica in ingresso anonima su IPv6. Il server di posta elettronica IPv6 di origine deve soddisfare entrambi i requisiti seguenti:
+Microsoft 365 con cassette postali Exchange Online e organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali Exchange Online supportano la posta elettronica in ingresso anonima su IPv6. Il server di posta elettronica IPv6 di origine deve soddisfare entrambi i requisiti seguenti:
 
 - L'indirizzo IPv6 di origine deve avere un record PTR (Reverse DNS Lookup) valido che consenta alla destinazione di trovare il nome di dominio dall'indirizzo IPv6.
 
 - Il mittente deve superare la verifica SPF (definita in [RFC 7208](https://tools.ietf.org/html/rfc7208)) oppure la [verifica DKIM](http://dkim.org/) (definita in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
 
-Prima che l'organizzazione possa ricevere messaggi di posta elettronica in ingresso anonimi tramite IPv6, un amministratore deve contattare il supporto Tecnico Microsoft e richiederlo. Per istruzioni su come aprire una richiesta di supporto, vedere Contattare il supporto per i prodotti [aziendali - Guida per gli amministratori.](../../admin/contact-support-for-business-products.md)
+Prima che l'organizzazione possa ricevere messaggi di posta elettronica in ingresso anonimi tramite IPv6, un amministratore deve contattare il supporto Tecnico Microsoft e richiederlo. Per istruzioni su come aprire una richiesta di supporto, vedere Contattare il supporto per i prodotti [aziendali - Guida per gli amministratori.](../../business-video/get-help-support.md)
 
 Dopo aver abilitato il supporto dei messaggi IPv6 in ingresso anonimi nell'organizzazione, il messaggio passa attraverso il normale filtro messaggi fornito dal servizio.
 

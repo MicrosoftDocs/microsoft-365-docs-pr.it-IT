@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939755"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300002"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gestire gli eventi imprevisti in Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "51939755"
 
 La gestione degli incidenti è fondamentale per garantire che le minacce siano contenute e trattate.
 
-È possibile gestire gli eventi imprevisti da Eventi imprevisti & avvisi **> eventi** imprevisti sulla barra di avvio veloce del Centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Di seguito viene riportato un esempio.
+È possibile gestire gli eventi imprevisti & avvisi **> eventi** imprevisti sulla barra di avvio veloce del centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Di seguito viene riportato un esempio.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Esempio di coda degli eventi imprevisti":::
 
@@ -65,7 +65,7 @@ Nei casi in cui, durante l'analisi, si desidera spostare gli avvisi  da un event
 
 ## <a name="edit-the-incident-name"></a>Modificare il nome dell'evento imprevisto
 
-Microsoft 365 Defender assegna automaticamente un nome in base agli attributi di avviso, ad esempio il numero di endpoint interessati, gli utenti interessati, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento imprevisto. Ad esempio: *evento imprevisto a più fasi in più endpoint segnalati da più origini.*
+Microsoft 365 Defender assegna automaticamente un nome in base agli attributi degli avvisi, ad esempio il numero di endpoint interessati, gli utenti interessati, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento imprevisto. Ad esempio: *evento imprevisto a più fasi in più endpoint segnalati da più origini.*
 
 È possibile modificare il nome dell'evento imprevisto dal **campo Nome** evento imprevisto nel **riquadro Gestisci** evento imprevisto.
 
@@ -98,8 +98,16 @@ Se si tratta di un avviso vero, è necessario specificare anche il tipo di minac
 
 È possibile aggiungere più commenti a un evento imprevisto con il **campo** Commento. Ogni commento viene aggiunto agli eventi cronologici dell'evento imprevisto. È possibile visualizzare i commenti e la cronologia di un evento imprevisto dal collegamento Commenti **e cronologia** nella **pagina Riepilogo.**
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="next-steps"></a>Passaggi successivi
+
+Per i nuovi eventi imprevisti, avviare [l'indagine](investigate-incidents.md).
+
+Per gli incidenti in-process, continuare [l'indagine](investigate-incidents.md).
+
+Per gli eventi imprevisti risolti, eseguire una [revisione post-incidente.](first-incident-post.md)
+
+## <a name="see-also"></a>Vedere anche
 
 - [Panoramica sugli incidenti](incidents-overview.md)
 - [Assegnare priorità agli incidenti](incident-queue.md)
-- [Analizzare gli eventi imprevisti](investigate-incidents.md)
+- [Indagare sugli eventi imprevisti](investigate-incidents.md)

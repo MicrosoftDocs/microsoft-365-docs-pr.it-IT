@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La roadmap per configurare i servizi cloud per Microsoft 365.
-ms.openlocfilehash: 5049d24a2cff696ee44429f809b2b91c15a4b4d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3303d91b5ec72090c69ae0b1fb14434e03c83729
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928261"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300026"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Roadmap dei servizi cloud per Microsoft 365
 
-Per ottenere i vantaggi della creatività, del lavoro in team e della produttività di Microsoft 365 per le aziende, distribuire i servizi cloud più adatti alle esigenze dell'organizzazione.
+Per ottenere i vantaggi di creatività, lavoro in team e produttività di Microsoft 365 per le aziende, distribuire i servizi cloud più adatti alle esigenze dell'organizzazione.
 
-Se si dispone di distribuzioni basate su server esistenti per Exchange, SharePoint o Skype for Business e si desidera eseguire la migrazione dell'intera organizzazione a Microsoft 365 per le aziende, vedere la roadmap del software client e [server.](client-server-software-roadmap-microsoft-365.md) Questa roadmap include Microsoft Office client, prodotti Office Server locali e dispositivi basati su Microsoft &ndash; Windows.
+Se si dispone di distribuzioni basate su server esistenti per Exchange, SharePoint o Skype for Business e si desidera eseguire la migrazione dell'intera organizzazione a Microsoft 365 per le aziende, vedere la guida di orientamento al software client e [server.](client-server-software-roadmap-microsoft-365.md) Questa roadmap include Microsoft Office client, prodotti Office Server locali e dispositivi basati Windows &ndash; Microsoft.
 
 ## <a name="deploy"></a>Distribuzione
 
@@ -40,12 +40,12 @@ Per distribuire i servizi cloud:
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Formazione degli utenti](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-## <a name="manage"></a>Gestione
+## <a name="manage"></a>Gestire
 
 Per gestire i servizi cloud: 
 
 - [Controllare l'integrità del servizio](view-service-health.md)
-- [Comprendere le opzioni di supporto](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+- [Comprendere le opzioni di supporto](../business-video/get-help-support.md)
 - Amministrare i servizi cloud
   - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
@@ -56,11 +56,11 @@ Per gestire i servizi cloud:
 
 ## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Come Microsoft fa i servizi cloud per Microsoft 365
 
-Per informazioni su come Microsoft IT ha distribuito o gestisce i servizi cloud di Microsoft 365:
+Per informazioni su come Microsoft IT ha distribuito o sta gestendo Microsoft 365 cloud:
 
 1. Passare a [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
 2. Selezionare **Cerca contenuto**.
-3. In **Affina risultati** selezionare **Professionisti IT** in **Gruppo di** destinatari e quindi in **Prodotto** selezionare un servizio cloud.
+3. In **Affinamento risultati** selezionare **Pro it** in Gruppo **di** destinatari e quindi in **Prodotto** selezionare un servizio cloud.
 
 ## <a name="next-step"></a>Passaggio successivo
 

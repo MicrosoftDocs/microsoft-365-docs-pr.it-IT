@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Danimarca
+title: Informazioni di supporto per la Danimarca
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 65d9e2d99a7533c78135f6b8f5be4ff918510de6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 379580c2c404a1a0669cad4fb657c28857072c1c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547777"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298939"
 ---
 # <a name="contact-support-for-denmark"></a>Contattare il supporto per la Danimarca
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 80 34 76 23
@@ -35,6 +35,6 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Numero di telefono alternativo: 38 48 70 67
+Numero Telefono alternativo: 38 48 70 67
 
 Costo in base alle tariffe telefoniche locali

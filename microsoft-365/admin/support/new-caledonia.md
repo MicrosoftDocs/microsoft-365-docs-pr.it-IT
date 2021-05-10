@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per la Nuova Caledonia
+title: Informazioni di supporto per Nuova Caledonia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d9bbb10f18125307de52b310069d3413d147cd67
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c5af218ecda44a2157b32571d8b37803c0a7e3ae
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545465"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297969"
 ---
-# <a name="contact-support-for-new-caledonia"></a>Contattare il supporto tecnico per la Nuova Caledonia
+# <a name="contact-support-for-new-caledonia"></a>Contattare il supporto per La Nuova Caledonia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5147
@@ -39,4 +39,4 @@ Francese: Mon-Fri dalle 18.00 alle 7.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

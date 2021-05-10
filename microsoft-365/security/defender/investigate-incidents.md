@@ -1,6 +1,6 @@
 ---
 title: Analizzare gli eventi imprevisti in Microsoft 365 Defender
-description: Analizzare gli incidenti relativi a dispositivi, utenti e cassette postali.
+description: Analizzare gli eventi imprevisti correlati a dispositivi, utenti e cassette postali.
 keywords: incidente, incidenti, analizzare, risposta, computer, dispositivi, utenti, identità, posta, posta elettronica, cassetta postale, indagine, grafico, prova
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259637"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300086"
 ---
-# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analizzare gli eventi imprevisti in Microsoft 365 Defender
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Analizzare gli eventi imprevisti in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Microsoft 365 Defender aggrega tutti gli avvisi, gli asset, le indagini e le pro
 
 All'interno di un evento imprevisto, si analizzano gli avvisi che influiscono sulla rete, si comprende il loro significato e si fascicolano le prove in modo da poter elaborare un piano di correzione efficace.
 
-## <a name="initial-analysis"></a>Analisi iniziale
+## <a name="initial-investigation"></a>Indagine iniziale
 
 Prima di esaminare i dettagli, esaminare le proprietà e il riepilogo dell'evento imprevisto.
 
@@ -88,7 +88,7 @@ Di seguito viene riportato un esempio.
 
 Per impostazione predefinita, gli avvisi vengono ordinati cronologicamente per consentire di vedere come si è verificata l'evento imprevisto nel tempo. La selezione di ogni avviso consente di accedere alla pagina principale dell'avviso, in cui è possibile eseguire un'analisi approfondita dell'avviso. 
 
-Informazioni su come usare le pagine della coda di avviso e degli avvisi per [analizzare gli avvisi](investigate-alerts.md)
+Informazioni su come usare le pagine di avviso e coda di avviso in [Analizzare gli avvisi.](investigate-alerts.md)
 
 ## <a name="devices"></a>Dispositivi
 
@@ -123,11 +123,13 @@ Nella **scheda Cassette** postali sono elencate tutte le cassette postali identi
 
 ## <a name="investigations"></a>Indagini
 
-Nella **scheda Indagini** sono elencate tutte le indagini automatizzate attivate dagli avvisi in questo evento imprevisto. Le indagini eseguiranno azioni di correzione o attenderanno l'approvazione degli analisti delle azioni, a seconda di come hai configurato le indagini automatizzate per l'esecuzione in Microsoft Defender per Endpoint e Defender per Office 365.
+Nella **scheda Indagini** sono elencate tutte le indagini [automatizzate](m365d-autoir.md) attivate dagli avvisi in questo evento imprevisto. Le indagini eseguiranno azioni di correzione o attenderanno l'approvazione degli analisti delle azioni, a seconda di come hai configurato le indagini automatizzate per l'esecuzione in Microsoft Defender per Endpoint e Defender per Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Esempio di pagina Indagini per un evento imprevisto":::
 
 Selezionare un'indagine per accedere alla pagina dei dettagli dell'indagine per ottenere informazioni complete sull'indagine e sullo stato della correzione. Se sono presenti azioni in sospeso per l'approvazione nell'ambito dell'indagine, verranno visualizzate nella scheda Azioni in sospeso. Eseguire un'azione nell'ambito della correzione degli eventi imprevisti.
+
+Per altre informazioni, vedi [Analisi e risposta automatizzate in Microsoft 365 Defender.](m365d-autoir.md)
 
 ## <a name="evidence-and-response"></a>Prova e risposta
 
@@ -155,8 +157,14 @@ Il grafico degli incidenti consente di comprendere rapidamente l'ambito completo
 
 Ora è possibile comprendere come l'attacco si è diffuso nella rete nel corso del tempo, da dove è iniziato e fino a che punto è andato l'attacco.
 
+## <a name="next-steps"></a>Passaggi successivi
 
-## <a name="related-topics"></a>Argomenti correlati
+In base alle esigenze:
+
+- [Analizzare gli avvisi di un evento imprevisto](investigate-alerts.md)
+- [Analizzare gli utenti di un evento imprevisto](investigate-users.md)
+
+## <a name="see-also"></a>Vedere anche
 
 - [Panoramica sugli incidenti](incidents-overview.md)
 - [Assegnare priorità agli incidenti](incident-queue.md)

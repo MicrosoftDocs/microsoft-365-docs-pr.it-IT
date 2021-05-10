@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per le isole Marshall
+title: Informazioni di supporto per Le isole Marshall
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6917efbfc24cbc9b600f930113edeba085ef8855
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8d003176501a18de9de3c202b2a1dcf5d68fe9a7
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545941"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298077"
 ---
-# <a name="contact-support-for-marshall-islands"></a>Contattare il supporto per le isole Marshall
+# <a name="contact-support-for-marshall-islands"></a>Contattare il supporto per Marshall Islands
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5148
@@ -35,4 +35,4 @@ Inglese: Mon-Fri 13.00-21.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

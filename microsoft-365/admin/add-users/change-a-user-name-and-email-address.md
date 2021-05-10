@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Informazioni su come un amministratore globale può modificare il nome visualizzato e l'indirizzo e-mail di un utente. "
-ms.openlocfilehash: 94ed05d87fa290f2ae1059ae04c62c5d0d5e6860
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023774"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291020"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiare un nome utente e un indirizzo e-mail
 
@@ -50,7 +50,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
     
 2. Selezionare il nome dell'utente e quindi, nella scheda **Account**, selezionare **Gestisci nome utente**.
     
-3. Nella prima casella digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, specificarlo per il nuovo alias di posta elettronica usando l'elenco a discesa. 
+3. Nella prima casella, digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile sceglierlo per il nuovo alias usando l'elenco a discesa. 
 
 4. Selezionare **Salva modifiche**.
 
@@ -63,7 +63,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 2. Selezionare l'utente. Nel riquadro a comparsa, accanto a **Nome utente/Indirizzo di posta elettronica**, selezionare **Modifica**.
 
-3. Nella prima casella digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa.
+3. Nella prima casella, digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa.
 
 4. Selezionare **Salva**.
 
@@ -75,7 +75,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 2. Selezionare l'utente. Nel riquadro a comparsa, accanto a **Nome utente/Indirizzo di posta elettronica**, selezionare **Modifica**.
 
-3. Nella prima casella digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa.
+3. Nella prima casella, digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile sceglierlo per il nuovo alias usando l'elenco a discesa.
 
 4. Selezionare **Salva**.
 
@@ -221,7 +221,7 @@ Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effetti
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Non è possibile trovare un parametro corrispondente al nome 'EmailAddresses'"
 
-Se viene visualizzato il messaggio di errore **Non è possibile trovare un parametro corrispondente al nome "EmailAddresses"**, significa che l'operazione sta impiegando più tempo del previsto per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il [supporto](../contact-support-for-business-products.md), che provvederà a eseguire una sincronizzazione completa.
+Se viene visualizzato il messaggio di errore **Non è possibile trovare un parametro corrispondente al nome "EmailAddresses"**, significa che l'operazione sta impiegando più tempo del previsto per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il [supporto](../../business-video/get-help-support.md), che provvederà a eseguire una sincronizzazione completa.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare"
 

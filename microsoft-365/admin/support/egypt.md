@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b1b2df955098387ceab8fb665fa89328120b7a0b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9d41818df38a039ff0b16f95587c2c6361fe67f8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547649"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298915"
 ---
 # <a name="contact-support-for-egypt"></a>Contattare il supporto per l'Egitto
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 000 0325
@@ -31,7 +31,7 @@ ms.locfileid: "50547649"
 
 Arabo: Sun-Thu dalle 10.00 alle 18.00
 
-Inglese: Mon-Fri dalle 10.00 alle 18.00
+Inglese: Mon-Fri 10.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

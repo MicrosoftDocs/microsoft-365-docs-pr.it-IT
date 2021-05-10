@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per l'Honduras
+title: Informazioni di supporto per Honduras
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62b2d6516e44b7bcd9b76e427491697046092882
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: dbc862fbab11e3fe16783bd3269cd18e9599a8bf
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546917"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298660"
 ---
-# <a name="contact-support-for-honduras"></a>Contattare il supporto tecnico per l'Honduras
+# <a name="contact-support-for-honduras"></a>Contattare il supporto per l'Honduras
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 800 0123

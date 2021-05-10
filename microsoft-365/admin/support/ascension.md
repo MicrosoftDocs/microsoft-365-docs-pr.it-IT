@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per l'ascensione
+title: Informazioni di supporto per Ascension
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 841f71b5bf35e784db879dd264fec086ace9d837
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: b704e20c146d881dc49964a561914274343aaf0f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548873"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299953"
 ---
-# <a name="contact-support-for-ascension"></a>Contattare il supporto per l'ascensione
+# <a name="contact-support-for-ascension"></a>Contattare il supporto per Ascension
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5151
@@ -35,4 +35,4 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

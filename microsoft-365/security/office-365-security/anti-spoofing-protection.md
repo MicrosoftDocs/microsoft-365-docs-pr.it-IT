@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769023"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291032"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -80,7 +80,7 @@ I messaggi oggetto di spoofing, ovvero falsificati, hanno le implicazioni negati
 
   ![Messaggio legittimo di reimpostazione della password di Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-  Il messaggio proveniva davvero da Microsoft, ma gli utenti sono diventati sospettosi. Poiché è difficile capire la differenza tra un messaggio di reimpostazione della password autentico e uno contraffatto, molti utenti potrebbero ignorare il messaggio, segnalarlo come posta indesiderata o segnalarlo inutilmente a Microsoft come phishing.
+  Il messaggio proveniva effettivamente da Microsoft, ma gli utenti sono diventati sospettosi. Poiché è difficile capire la differenza tra un messaggio di reimpostazione della password autentico e uno contraffatto, molti utenti potrebbero ignorare il messaggio, segnalarlo come posta indesiderata o segnalarlo inutilmente a Microsoft come phishing.
 
 ## <a name="different-types-of-spoofing"></a>Tipi diversi di spoofing
 
@@ -139,11 +139,11 @@ Un' organizzazione con Microsoft Defender per Office 365 può usare Esplora mina
 
 Ad esempio, Gabriela Laureano (glaureano@contoso.com) è interessata al birdwatching, aderisce alla lista di distribuzione birdwatchers@fabrikam.com e invia il messaggio seguente alla lista:
 
-> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br> **Oggetto:** ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier?
+> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br> **Oggetto:** ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera controllare la vista dal Monte Rainer questa settimana?
 
 Il server della lista di distribuzione riceve il messaggio, ne modifica il contenuto e lo riproduce ai membri della lista. Il messaggio riprodotto ha lo stesso indirizzo del mittente (glaureano@contoso.com), ma è stato modificato aggiungendo un tag alla riga dell'oggetto e un piè di pagina in fondo. Questo tipo di modifica è comune nelle liste di distribuzione e può generare falsi positivi.
 
-> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br> **Oggetto:** [BIRDWATCHING] ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier? <p> Questo messaggio è stato inviato all'elenco di discussione degli amanti del birdwatching. È possibile annullare l’iscrizione in qualsiasi momento.
+> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br> **Oggetto:** [BIRDWATCHING] ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera controllare la vista dal Monte Rainer questa settimana? <p> Questo messaggio è stato inviato all'elenco di discussione degli amanti del birdwatching. È possibile annullare l’iscrizione in qualsiasi momento.
 
 Per consentire ai messaggi delle liste di distribuzione di superare i controlli anti-spoofing, eseguire le operazioni seguenti in base al fatto che si controlli o meno la lista di distribuzione:
 
@@ -163,7 +163,7 @@ Per consentire ai messaggi delle liste di distribuzione di superare i controlli 
 
   - Creare regole di posta in arrivo nel client di posta elettronica per spostare i messaggi nella cartella Posta in arrivo. È anche possibile chiedere agli amministratori di configurare override come descritto in [Usare spoof intelligence per configurare i mittenti di posta elettronica non autenticata consentiti](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
 
-  - Creare un ticket di supporto con Microsoft 365 per creare una sostituzione per la lista di distribuzione al fine di trattarla come legittima. Per altre informazioni, vedere [Contattare il supporto per i prodotti per le aziende - Guida per amministratori](../../admin/contact-support-for-business-products.md).
+  - Creare un ticket di supporto con Microsoft 365 per creare una sostituzione per la lista di distribuzione al fine di trattarla come legittima. Per altre informazioni, vedere [Contattare il supporto per i prodotti per le aziende - Guida per amministratori](../../business-video/get-help-support.md).
 
 Se il problema persiste, è possibile segnalare il messaggio come falso positivo a Microsoft. Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 

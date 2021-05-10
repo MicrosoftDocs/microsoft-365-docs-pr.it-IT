@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5859adec666fc8cd957ab0b199a1bd600279288f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205404"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298029"
 ---
 # <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per Exchange Online Protection
 
@@ -29,25 +29,25 @@ ms.locfileid: "51205404"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, le risorse di supporto tecnico elencate in questo articolo consentono di trovare risposte in caso di difficoltà con EOP. Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
+Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, le risorse di supporto tecnico elencate in questo articolo consentono di trovare risposte in caso di difficoltà con EOP. Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
 
 ## <a name="self-support-options"></a>Opzioni di supporto in autonomia
 
-Al momento dell'accesso, l'interfaccia di amministrazione di Microsoft 365 fornisce informazioni sullo stato dei servizi dell'organizzazione. Inoltre, la sezione integrità del servizio mostra lo stato corrente dei servizi, i dettagli sulle interruzioni e le interruzioni ed elenca i tempi di manutenzione pianificati. L'interfaccia di amministrazione di Microsoft 365 fornisce inoltre informazioni sui problemi noti e sulle risoluzioni previste. Se si è interessati da un evento a livello di servizio, verrà visualizzato un avviso (generalmente unito all'icona di una campana). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario. Per ulteriori informazioni sull'area di integrità del servizio, vedere [Integrità e continuità del servizio.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Potresti essere in grado di trovare altre informazioni personali usando gli strumenti, i forum e i siti della community elencati qui.
+Al momento dell'accesso, Microsoft 365'interfaccia di amministrazione fornisce informazioni sullo stato dei servizi dell'organizzazione. Inoltre, la sezione integrità del servizio mostra lo stato corrente dei servizi, i dettagli sulle interruzioni e le interruzioni ed elenca i tempi di manutenzione pianificati. L Microsoft 365 di amministrazione fornisce inoltre informazioni sui problemi noti e sulle risoluzioni previste. Se si è interessati da un evento a livello di servizio, verrà visualizzato un avviso (generalmente unito all'icona di una campana). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario. Per ulteriori informazioni sull'area di integrità del servizio, vedere [Integrità e continuità del servizio.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Potresti essere in grado di trovare altre informazioni personali usando gli strumenti, i forum e i siti della community elencati qui.
 
 Articolo relativo alle [informazioni generali dei prodotti per Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore](../../admin/contact-support-for-business-products.md)
+[Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore](../../business-video/get-help-support.md)
 
-[Community di Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Assistente supporto e ripristino Microsoft (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft Assistente supporto e ripristino (Assistente supporto e ripristino)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Strumento di risoluzione dei problemi del flusso di posta](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Supporto assistito di Microsoft
 
-È possibile ottenere assistenza da Microsoft avviando una nuova richiesta di servizio all'interno dell'interfaccia di amministrazione di Microsoft 365 o chiamando il telefono. Gli abbonati al supporto Premier hanno opzioni di supporto aggiuntive.
+È possibile ottenere assistenza da Microsoft avviando una nuova richiesta di servizio nell'interfaccia di amministrazione di Microsoft 365 o chiamando al telefono. Gli abbonati al supporto Premier hanno opzioni di supporto aggiuntive.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Supporto per i sottoscrittori del Supporto Premier Microsoft
 
@@ -57,7 +57,7 @@ Per ulteriori informazioni su come il supporto Premier può aiutare l'organizzaz
 
 ### <a name="ask-for-help-on-the-web"></a>Richiedere assistenza sul Web
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365.
+1. Accedere all'interfaccia Microsoft 365 di amministrazione.
 
 2. Andare a **Supporto** \> **Richiedi l'assistenza clienti** \> **Nuova richiesta di assistenza**
 
@@ -65,7 +65,7 @@ Per ulteriori informazioni su come il supporto Premier può aiutare l'organizzaz
 
 ### <a name="ask-for-help-on-the-telephone"></a>Richiedere assistenza tramite il telefono
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365.
+1. Accedere all'interfaccia Microsoft 365 di amministrazione.
 
 2. Per problemi generali relativi al prodotto, passare a **Supporto** \> **Tecnico Richiedi assistenza** \> **clienti.**
 

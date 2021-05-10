@@ -1,6 +1,6 @@
 ---
 title: Ricevere notifiche di eventi imprevisti tramite posta elettronica in Microsoft 365 Defender
-description: Informazioni su come creare regole per ricevere notifiche tramite posta elettronica per eventi imprevisti in Microsoft 365 Defender
+description: Informazioni su come creare regole per ricevere notifiche di posta elettronica per gli eventi imprevisti in Microsoft 365 Defender
 keywords: incident, email, email notfications, configure, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939719"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299965"
 ---
 # <a name="get-incident-notifications-by-email"></a>Ricevere notifiche di eventi imprevisti tramite posta elettronica
 
@@ -43,7 +43,7 @@ Puoi configurare Microsoft 365 Defender per informare il personale con un messag
 - Gruppo di dispositivi.
 - Solo al primo aggiornamento per evento imprevisto.
 
-La notifica di posta elettronica contiene dettagli importanti sull'evento imprevisto, ad esempio il nome, la gravità e le categorie dell'evento imprevisto, tra gli altri. Puoi anche passare direttamente all'evento imprevisto e iniziare subito l'analisi. Per ulteriori informazioni, vedere [Analyze incidents](investigate-incidents.md).
+La notifica di posta elettronica contiene dettagli importanti sull'evento imprevisto, ad esempio il nome, la gravità e le categorie dell'evento imprevisto, tra gli altri. Puoi anche passare direttamente all'evento imprevisto e iniziare subito l'analisi. Per ulteriori informazioni, vedere [Investigate incidents](investigate-incidents.md).
 
 È possibile aggiungere o rimuovere destinatari nelle notifiche di posta elettronica. Dopo l'aggiunta, i nuovi destinatari riceveranno una notifica sugli eventi imprevisti. 
 
@@ -55,7 +55,7 @@ Allo stesso modo, se l'organizzazione utilizza il controllo di accesso basato su
 
 Seguire questa procedura per creare una nuova regola e personalizzare le impostazioni di notifica tramite posta elettronica.
 
-1. Nel riquadro di spostamento seleziona Impostazioni > notifiche di posta elettronica di **Microsoft 365 Defender > eventi imprevisti**.
+1. Nel riquadro di spostamento, selezionare Impostazioni > Microsoft 365 **defender > notifiche di posta elettronica evento imprevisto**.
 2. Selezionare **Aggiungi elemento**.
 3. Nella pagina **Nozioni di** base digitare il nome della regola e una descrizione e quindi selezionare **Avanti.**
 4. Nella pagina **Impostazioni notifica** configurare:
@@ -63,7 +63,7 @@ Seguire questa procedura per creare una nuova regola e personalizzare le imposta
     - **Ambito del gruppo di** dispositivi- È possibile specificare tutti i gruppi di dispositivi o selezionarli dall'elenco dei gruppi di dispositivi nel tenant.
     - **Notifica solo alla prima occorrenza per evento** imprevisto: selezionare se si desidera una notifica solo sul primo avviso corrispondente alle altre selezioni. Gli aggiornamenti o gli avvisi successivi correlati all'evento imprevisto non invierà notifiche aggiuntive.
     - **Includi il nome dell'organizzazione nel messaggio** di posta elettronica- Selezionare se si desidera che il nome dell'organizzazione venga visualizzato nella notifica di posta elettronica.
-    - **Includi collegamento al portale specifico del** tenant: selezionare se si desidera aggiungere un collegamento con l'ID tenant nella notifica di posta elettronica per l'accesso a un tenant di Microsoft 365 specifico.
+    - **Includi collegamento al portale specifico** del tenant: selezionare se si desidera aggiungere un collegamento con l'ID tenant nella notifica di posta elettronica per l'accesso a un tenant Microsoft 365 specifico.
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Impostazioni di notifica per le notifiche di posta elettronica degli eventi imprevisti":::
 
@@ -77,4 +77,4 @@ Per modificare una regola esistente, selezionarla nell'elenco delle regole. Nel 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica sugli incidenti](incidents-overview.md)
 - [Assegnare priorità agli incidenti](incident-queue.md)
-- [Analizzare gli eventi imprevisti](investigate-incidents.md)
+- [Indagare sugli eventi imprevisti](investigate-incidents.md)

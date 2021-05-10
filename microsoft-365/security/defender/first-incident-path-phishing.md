@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fb3656a9d3f67d979c012d9cc316a10e65a72042
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 41a2c73ce5e1c3060d88572f4fa7afe63e193f46
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114790"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299989"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Esempio di attacco tramite posta elettronica di phishing
 
@@ -67,5 +67,5 @@ Vedi il percorso [di analisi degli attacchi basati sull'identità.](first-incide
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
-- [Analizzare gli incidenti](investigate-incidents.md)
-- [Gestire gli incidenti](manage-incidents.md)
+- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+- [Gestire gli eventi imprevisti](manage-incidents.md)

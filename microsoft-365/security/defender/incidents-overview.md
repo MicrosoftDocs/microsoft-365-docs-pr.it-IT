@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e2e29015d4cb5e04510577118eb847b9b596a6c5
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114283"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300014"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Eventi imprevisti in Microsoft 365 Defender
 
@@ -62,7 +62,7 @@ Il raggruppamento degli avvisi correlati in un evento imprevisto offre una visua
 - Ambito dell'attacco, ad esempio il numero di dispositivi, utenti e cassette postali che sono stati influenzati. 
 - Tutti i dati associati all'attacco.
 
-Se [abilitato,](m365d-enable.md)Microsoft 365 Defender può analizzare e risolvere automaticamente gli avvisi tramite l'automazione e l'intelligenza artificiale. È inoltre possibile eseguire ulteriori passaggi di correzione per risolvere l'attacco. 
+Se [abilitato,](m365d-enable.md)Microsoft 365 Defender [può](m365d-autoir.md) analizzare e risolvere automaticamente gli avvisi tramite l'automazione e l'intelligenza artificiale. È inoltre possibile eseguire ulteriori passaggi di correzione per risolvere l'attacco. 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Eventi imprevisti e avvisi nel centro sicurezza Microsoft 365 sicurezza
 
@@ -94,11 +94,15 @@ Le schede aggiuntive per un evento imprevisto sono:
 
 - Indagini
 
-  Tutte le indagini automatizzate attivate dagli avvisi nell'evento imprevisto.
+  Tutte le [indagini automatizzate attivate](m365d-autoir.md) dagli avvisi nell'evento imprevisto.
 
 - Prova e risposta
 
   Tutti gli eventi supportati e le entità sospette negli avvisi nell'evento imprevisto.
+
+- Graph (in anteprima)
+
+  Figura che mostra la connessione degli avvisi agli asset che hanno effetto nell'organizzazione.
 
 Ecco la relazione tra un evento imprevisto e i relativi dati e le schede di un evento imprevisto nel centro sicurezza Microsoft 365 sicurezza.
 
@@ -115,7 +119,7 @@ Su base continuativa, identificare gli eventi imprevisti con priorità più alta
 - [Per determinare](incident-queue.md) gli eventi imprevisti con priorità più alta, è necessario filtrare e ordinare la coda degli eventi imprevisti.
 - [Gestire](manage-incidents.md) gli eventi imprevisti modificandone il titolo, assegnandoli a un analista e aggiungendo tag e commenti.
 
-1. Per ogni evento imprevisto, avviare [un'analisi degli attacchi e degli avvisi:](investigate-incidents.md)
+1. Per ogni evento imprevisto, avviare [un'analisi e un attacco:](investigate-incidents.md)
  
    a. Visualizzare il riepilogo dell'evento imprevisto per comprendere l'ambito e la gravità e le entità interessate **(scheda** Riepilogo).
 
@@ -123,7 +127,7 @@ Su base continuativa, identificare gli eventi imprevisti con priorità più alta
 
    c. In base alle esigenze, raccogliere informazioni sui dispositivi, gli utenti e le cassette postali influenzati (le schede **Dispositivi,** **Utenti** e **Cassette** postali).
 
-   d. Scopri come Microsoft 365 Defender ha risolto automaticamente alcuni avvisi **(scheda** Indagini).
+   d. Scopri come Microsoft 365 Defender ha [risolto automaticamente alcuni avvisi](m365d-autoir.md) **(scheda** Indagini).
    
    e. Se necessario, usare le informazioni nel set di dati per l'evento imprevisto per ulteriori informazioni (scheda **Prova e** risposta).
 
@@ -149,7 +153,7 @@ Ecco un esempio di operazioni di sicurezza per Microsoft 365 Defender.
 Le attività giornaliere possono includere:
 
 - [Gestione](manage-incidents.md) degli eventi imprevisti
-- Revisione delle [azioni di indagine e risposta automatizzate (AIR)](m365d-action-center.md)
+- Revisione delle [azioni di indagine e risposta automatizzate (AIR)](m365d-action-center.md) nel centro notifiche
 - Analisi delle minacce più [recenti](threat-analytics.md)
 - [Risposta](investigate-incidents.md) agli eventi imprevisti
 
@@ -167,8 +171,19 @@ Le attività giornaliere, mensili, trimestrali e annuali possono essere utilizza
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Nella coda degli eventi imprevisti della **pagina Eventi imprevisti** sono elencati gli eventi imprevisti più recenti. Da qui è possibile:
+**Se non si ha la novità dell'analisi** della sicurezza e della risposta agli eventi imprevisti:
 
-- Vedere quali eventi imprevisti devono essere [classificati in](incident-queue.md) base alla gravità e ad altri fattori. 
-- [Gestire gli eventi imprevisti,](manage-incidents.md)che includono la ridenominazione, l'assegnazione, la classificazione e l'aggiunta di tag e commenti per il flusso di lavoro di gestione degli eventi imprevisti.
-- Eseguire [un'analisi](investigate-incidents.md) di un evento imprevisto.
+- Vedere [](first-incident-overview.md) la procedura dettagliata Rispondi al primo evento imprevisto per ottenere una presentazione guidata di un processo tipico di analisi, correzione e revisione post-incidente nel Centro sicurezza Microsoft 365 con un esempio di attacco.
+
+**Se si ha esperienza con l'analisi** della sicurezza e la risposta agli incidenti:
+
+- Introduzione alla coda degli eventi imprevisti dalla **pagina** Eventi imprevisti del centro sicurezza Microsoft 365 sicurezza. Da qui è possibile:
+
+  - Vedere quali eventi imprevisti devono essere [classificati in](incident-queue.md) base alla gravità e ad altri fattori. 
+
+  - [Gestire gli eventi imprevisti,](manage-incidents.md)che includono la ridenominazione, l'assegnazione, la classificazione e l'aggiunta di tag e commenti in base al flusso di lavoro di gestione degli eventi imprevisti.
+
+  - Eseguire [indagini](investigate-incidents.md) su eventi imprevisti.
+
+- Vedi questi [playbook di risposta agli eventi imprevisti](https://docs.microsoft.com/security/compass/incident-response-playbooks) per indicazioni dettagliate su phishing, spray per password e attacchi di concessione del consenso delle app.
+
