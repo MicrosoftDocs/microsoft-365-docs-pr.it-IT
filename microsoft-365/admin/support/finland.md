@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Finlandia
+title: Informazioni di supporto per la Finlandia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f6c8a8e0b58fe31e7dcaba91b81ca36bd03e9f06
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9a634f05c1d4a7adbe7df16b328429e91dbb20ce
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547421"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296228"
 ---
 # <a name="contact-support-for-finland"></a>Contattare il supporto per la Finlandia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 98462
@@ -35,6 +35,6 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Numero di telefono alternativo: 09 72 51 96 30
+Numero Telefono alternativo: 09 72 51 96 30
 
 Costo in base alle tariffe telefoniche locali

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ae71fca926cafeb0936806ee4f5205a8c462f1e6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7f0f18e89c42d3bd43f21de47b9cc4ba6c420f34
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548429"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296865"
 ---
 # <a name="contact-support-for-brazil"></a>Contattare il supporto per il Brasile
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 762 1146
@@ -29,7 +29,7 @@ ms.locfileid: "50548429"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Portoghese: Mon-Fri dalle 9.00 alle 17.00
+Portoghese: Mon-Fri 9.00-17.00
 
 Inglese: lun-ven 9:00-17:00
 
@@ -39,8 +39,8 @@ Portoghese: 24 ore al giorno, 7 giorni alla settimana
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Numero di telefono alternativo:
+Numero Telefono alternativo:
 
 0800 047 4958 (numero verde locale)
 
-11 4700 1999 (si applicano addebiti per chiamate locali)
+11 4700 1999 (Si applicano i costi delle chiamate locali)

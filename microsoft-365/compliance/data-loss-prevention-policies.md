@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: materiale di riferimento per la prevenzione della perdita di dati
-ms.openlocfilehash: a94dde0bba3fdfc869746f51687ed7709a96639a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114402"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296769"
 ---
 # <a name="data-loss-prevention-reference"></a>Informazioni di riferimento sulla prevenzione della perdita di dati
  
@@ -385,7 +385,7 @@ Quando si usa un'[etichetta di conservazione](retention.md#retention-labels) cre
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta di riservatezza come condizione nei criteri di prevenzione della perdita dei dati
 
-Etichette di riservatezza come condizione nei criteri di prevenzione della perdita dei dati in anteprima. [Altre informazioni](./dlp-sensitivity-label-as-condition.md).
+[Ulteriori informazioni](./dlp-sensitivity-label-as-condition.md) sull'uso dell'etichetta riservatezza come condizione nei criteri DLP.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Correlazione tra questa funzionalità e le altre
 

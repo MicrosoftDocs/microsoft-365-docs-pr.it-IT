@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2527389634cda9912f45ecdcd3213f7d987b7bb8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221872"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296696"
 ---
 # <a name="what-is-a-domain"></a>Cos'è un dominio?
 
@@ -42,11 +42,11 @@ Uso di un dominio personalizzato come *rob@contoso. <span> com* con Microsoft 36
 
  **Acquistare un nuovo dominio:**
   
-Usare Microsoft 365 per acquistare un nuovo dominio: verrà configurato tutto. [Ulteriori informazioni.](buy-a-domain-name.md)
+Usa Microsoft 365 per acquistare un nuovo dominio: verrà configurato tutto. [Ulteriori informazioni.](buy-a-domain-name.md)
   
  **Usare un dominio che si possiede già:**
   
-Se si è già proprietari di un  *dominio come you@yourcompany. <span> com*  è possibile aggiungerlo e iniziare subito a usare OneDrive e le app Microsoft. La configurazione della posta elettronica e di Skype for Business richiederà qualche minuto. 
+Se si è già proprietari di un *dominio come you@yourcompany. <span> com* puoi aggiungerlo e iniziare subito a usare OneDrive e le app Microsoft. La configurazione della posta elettronica e di Skype for Business richiederà qualche minuto. 
   
 > [!TIP]
 > Verificare dove è registrato il dominio: [Trovare il registrar](find-your-domain-registrar.md)
@@ -57,6 +57,6 @@ Se si è già proprietari di un  *dominio come you@yourcompany. <span> com*  è 
   
 ## <a name="feeling-stuck"></a>Serve aiuto?
 
-Chiamare il supporto Tecnico Microsoft - [Assistenza per la configurazione di un dominio](../contact-support-for-business-products.md)
+Chiamare il supporto Tecnico Microsoft - [Assistenza per la configurazione di un dominio](../../business-video/get-help-support.md)
   
 

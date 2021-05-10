@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2b9640619594dc5f8878e5d2be233da25f341093
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9c25ba7fc49d5b26dd2e95262e9ef87a02a93308
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548225"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296384"
 ---
-# <a name="contact-support-for-cape-verde-cabo-verde"></a>Contattare il supporto tecnico per Capo Verde (Cabo Verde)
+# <a name="contact-support-for-cape-verde-cabo-verde"></a>Contattare il supporto per Capo Verde (Cabo Verde)
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +351 21 366 5030
@@ -33,8 +33,8 @@ Inglese: Mon-Fri dalle 8.00 alle 16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Portoghese: Mon-Fri dalle 7:00 alle 20:00
+Portoghese: Mon-Fri dalle 7.00 alle 20.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

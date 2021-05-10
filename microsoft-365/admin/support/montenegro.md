@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2a99515ced22c03767476e9f709b9e38a3cc3536
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8dbb6ebb123770c0293ba25145ef2234fc6031a5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545681"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295724"
 ---
-# <a name="contact-support-for-montenegro"></a>Contattare il supporto tecnico per il Montenegro
+# <a name="contact-support-for-montenegro"></a>Contattare il supporto per il Montenegro
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 080 081 110

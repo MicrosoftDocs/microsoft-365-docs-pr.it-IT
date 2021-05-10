@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 615170c8fd6bc044bca41963502392ff2f3be57e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 788641b549119229307a179dbfebed09b2a4c0b0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547397"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296216"
 ---
 # <a name="contact-support-for-french-guiana"></a>Contattare il supporto per la Guiana francese
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5147
@@ -29,14 +29,14 @@ ms.locfileid: "50547397"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri dalle 5:00 alle 13:00
+Francese: Mon-Fri 5.00-13.00
 
-Inglese: Mon-Fri 05.00-13.00
+Inglese: Mon-Fri 5.00-13.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: Mon-Fri dalle 4.00 alle 17.00
+Francese: Mon-Fri 4.00-17.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

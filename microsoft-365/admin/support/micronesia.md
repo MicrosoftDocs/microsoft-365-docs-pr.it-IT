@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b79fcc2ec36c57a902b3dceaa365f4a28d2ff464
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: ecefa45d73c527e9464fb5d6332dfccd5fd018be
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545753"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295748"
 ---
-# <a name="contact-support-for-micronesia"></a>Contattare il supporto tecnico per Micronesia
+# <a name="contact-support-for-micronesia"></a>Contattare il supporto per Micronesia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5148
@@ -35,4 +35,4 @@ Inglese: Mon-Fri 11.00-19.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

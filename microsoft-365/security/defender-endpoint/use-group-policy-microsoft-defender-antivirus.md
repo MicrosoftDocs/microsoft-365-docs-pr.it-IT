@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 04/13/2021
+ms.date: 05/07/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 8db14b016491ac10872f29f04b8166e548d6c63b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275337"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296732"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utilizzare le impostazioni di Criteri di gruppo per configurare e gestire Antivirus Microsoft Defender
 
@@ -33,6 +33,8 @@ ms.locfileid: "52275337"
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
 È possibile usare [Criteri di](/windows/win32/srvnodes/group-policy) gruppo per configurare e gestire Antivirus Microsoft Defender sugli endpoint.
+
+## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>Configurare Antivirus Microsoft Defender tramite Criteri di gruppo
 
 In generale, è possibile utilizzare la procedura seguente per configurare o modificare Antivirus Microsoft Defender criteri di gruppo:
 
@@ -48,7 +50,12 @@ In generale, è possibile utilizzare la procedura seguente per configurare o mod
 
 6. [Distribuire l'oggetto Criteri di gruppo aggiornato come si fa normalmente.](/windows/win32/srvnodes/group-policy) 
 
-Nella tabella seguente in questo argomento sono elencate le impostazioni di Criteri di gruppo disponibili in Windows 10 versione 1703 e vengono forniti collegamenti all'argomento appropriato in questa raccolta di documentazione (se applicabile).
+## <a name="group-policy-settings-and-resources"></a>Risorse e impostazioni di Criteri di gruppo
+
+Nella tabella seguente in questo argomento sono elencate le impostazioni di Criteri di gruppo disponibili in Windows 10 versione 1703 e vengono forniti collegamenti all'argomento appropriato in questa raccolta di documentazione (se applicabile). 
+
+> [!TIP]
+> Scaricare il foglio di Impostazioni di riferimento di Criteri di [gruppo Windows 10 maggio 2020 Update (2004).](https://www.microsoft.com/download/101451) In questo foglio di calcolo sono elencate le impostazioni dei criteri per le configurazioni di computer e utenti incluse nei file del modello amministrativo recapitati per Windows 10 maggio 2020 Update (2004). È possibile configurare queste impostazioni dei criteri quando si modificano gli oggetti Criteri di gruppo.
 
 | Posizione | Impostazione | Articolo |
 |:---|:---|:---|
@@ -61,14 +68,14 @@ Nella tabella seguente in questo argomento sono elencate le impostazioni di Crit
 | Esclusioni | Esclusioni di processi | [Configurare e convalidare le esclusioni Antivirus Microsoft Defender analisi](configure-exclusions-microsoft-defender-antivirus.md) | 
 | Esclusioni | Disattivare le esclusioni automatici | [Configurare e convalidare le esclusioni Antivirus Microsoft Defender analisi](configure-exclusions-microsoft-defender-antivirus.md) |
 | MAPPE | Configurare la funzionalità "Blocca al primo avvistamento" | [Abilita blocco al primo avvistamento](configure-block-at-first-sight-microsoft-defender-antivirus.md) |
-| MAPPE | Partecipare a Microsoft MAPS | [Abilitare la protezione basata sul cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
-| MAPPE | Inviare esempi di file quando è necessaria un'ulteriore analisi | [Abilitare la protezione basata sul cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| MAPPE | Partecipare a Microsoft MAPS | [Abilitare la protezione fornita dal cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| MAPPE | Inviare esempi di file quando è necessaria un'ulteriore analisi | [Abilitare la protezione fornita dal cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | MAPPE | Configurare l'override delle impostazioni locali per la segnalazione a Microsoft MAPS | [Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | MpEngine | Configurare il controllo del cloud esteso | [Configurare il periodo di timeout del blocco cloud](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
 | MpEngine | Selezionare il livello di protezione cloud | [Specificare il livello di protezione fornita dal cloud](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
-| Sistema di ispezione della rete | Specificare ulteriori set di definizioni per l'ispezione del traffico di rete | Non più rilevante |
-| Sistema di ispezione della rete | Attivare il ritiro delle definizioni | Non più rilevante |
-| Sistema di ispezione della rete | Attivare il riconoscimento del protocollo | Non più rilevante |
+| Sistema di ispezione della rete | Specificare ulteriori set di definizioni per l'ispezione del traffico di rete | [Specificare ulteriori set di definizioni per l'ispezione del traffico di rete](specify-additional-definitions-network-traffic-inspection-mdav.md) |
+| Sistema di ispezione della rete | Attivare il ritiro delle definizioni | [Configurare il ritiro delle definizioni](turn-on-definition-retirement.md)  |
+| Sistema di ispezione della rete | Attivare il riconoscimento del protocollo | [Attivare il riconoscimento del protocollo](turn-on-protocol-recognition.md)  |
 | Quarantena | Configurare l'override dell'impostazione locale per la rimozione degli elementi dalla cartella quarantena | [Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Quarantena | Configurare la rimozione degli elementi dalla cartella quarantena | [Configurare la correzione per Antivirus Microsoft Defender analisi](configure-remediation-microsoft-defender-antivirus.md) |
 | Protezione in tempo reale | Configurare l'override delle impostazioni locali per il monitoraggio dell'attività di file e programmi nel computer | [Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -144,8 +151,7 @@ Nella tabella seguente in questo argomento sono elencate le impostazioni di Crit
 | Minacce | Specificare i livelli di avviso per le minacce a cui non deve essere eseguita l'azione predefinita quando viene rilevata | [Configurare la correzione per Antivirus Microsoft Defender analisi](configure-remediation-microsoft-defender-antivirus.md) |
 | Minacce | Specificare le minacce su cui non deve essere eseguita l'azione predefinita quando viene rilevata | [Configurare la correzione per Antivirus Microsoft Defender analisi](configure-remediation-microsoft-defender-antivirus.md) |
 
-
-## <a name="related-articles"></a>Articoli correlati
+## <a name="see-also"></a>Vedere anche
 
 - [Argomenti di riferimento per gli strumenti di gestione e configurazione](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

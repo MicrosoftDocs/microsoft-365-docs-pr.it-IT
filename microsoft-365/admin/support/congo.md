@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a9e3a25329b4572781cfc5d71401110f7c71d558
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e2f74fa9e28003c64f55870e8389cef6a2751625
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547943"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296324"
 ---
 # <a name="contact-support-for-congo"></a>Contattare il supporto per il Congo
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 225 20 24 24 90
@@ -33,7 +33,7 @@ Immettere il codice 7703
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri dalle 9.00 alle 17.00
+Francese: Mon-Fri 9.00-17.00
 
 Inglese: lun-ven 9:00-17:00
 

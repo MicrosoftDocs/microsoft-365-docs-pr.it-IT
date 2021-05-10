@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Giamaica
+title: Informazioni di supporto per la Giamaica
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fbef3f83f2d7b5aebd470f9d462da3dc165707c0
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9ca8e6dbcde637cc26fa1fb92a71263c9c8eb2d5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546689"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296024"
 ---
 # <a name="contact-support-for-jamaica"></a>Contattare il supporto per la Giamaica
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 1 800 865 9408

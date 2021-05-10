@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Giappone
+title: Informazioni di supporto per il Giappone
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 95dcb4b707919d8f944282f433345bd51379203b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 5ccc39d25b4aa8fee662b4710f2560f4ad3dfd30
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546605"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296012"
 ---
 # <a name="contact-support-for-japan"></a>Contattare il supporto per il Giappone
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0120 996 680 (Office 365 Enterprise)
@@ -33,11 +33,11 @@ ms.locfileid: "50546605"
 
 Giapponese: Mon-Fri 9:00-17:00
 
-(Chiuso nei fine settimana e nelle festività pubbliche)
+(Chiuso nei fine settimana e nei giorni festivi)
 
 Inglese: Mon-Fri 9:00-17:00
 
-(Chiuso nei fine settimana e nelle festività pubbliche)
+(Chiuso nei fine settimana e nei giorni festivi)
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
@@ -51,7 +51,7 @@ Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Il supporto tecnico telefonico è disponibile dalle 9:00 alle 17:30 nei giorni feriali. Per problemi di gravità elevata, il supporto tecnico è disponibile 24 ore al giorno, 7 giorni alla settimana.
 
-Numero di telefono alternativo:
+Numero Telefono alternativo:
 
 Costo in base alle tariffe telefoniche locali
 

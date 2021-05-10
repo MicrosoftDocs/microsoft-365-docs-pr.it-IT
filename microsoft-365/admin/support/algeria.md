@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per l'Algeria
+title: Informazioni di supporto per l'Algeria
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d13b995b5c380b1a96ab441f3f81d7ca2f6768a6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: b9b5b9f8f622eb5e45dce459cdeaeaee9eb38d0c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549113"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296672"
 ---
 # <a name="contact-support-for-algeria"></a>Contattare il supporto per l'Algeria
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 021 89 10 70
@@ -37,7 +37,7 @@ Immettere il codice 7703
 
 Arabo: Sun-Thu dalle 9.00 alle 17.00
 
-Francese: Mon-Fri dalle 9.00 alle 17.00
+Francese: Mon-Fri 9.00-17.00
 
 Inglese: lun-ven 9:00-17:00
 

@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per le Isole Faroe
+title: Informazioni di supporto per le isole Faroe
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da5b913615e47fd9dd1e4c8888aa07305d60a6b3
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: bdbf542b3f98aae77e5654dadd0f445382a460ce
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547445"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296240"
 ---
-# <a name="contact-support-for-faroe-islands"></a>Contattare il supporto per le Isole Faroe
+# <a name="contact-support-for-faroe-islands"></a>Contattare il supporto per le isole Faroe
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +45 38 48 70 67
@@ -35,4 +35,4 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

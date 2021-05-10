@@ -94,12 +94,14 @@
               href: manage-incidents.md
             - name: Intervento in caso di incidente
               items:
-                - name: Analizzare gli incidenti
+                - name: Indagare sugli eventi imprevisti
                   href: investigate-incidents.md
-                - name: Analizzare gli avvisi
+                - name: Esaminare gli avvisi
                   href: investigate-alerts.md
                 - name: Analizzare gli utenti
                   href: investigate-users.md
+                - name: Playbook di risposta agli eventi imprevisti
+                  href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
                 - name: Rispondere al primo evento imprevisto
                   items:
                     - name: Introduzione

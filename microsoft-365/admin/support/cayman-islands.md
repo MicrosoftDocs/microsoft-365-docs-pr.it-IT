@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per le isole Cayman
+title: Informazioni di supporto per le isole Cayman
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 093f0ef2a3e9d5def61d14b50c8edae20ba443af
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6d7bc7485ae66ad249a81b56592358507cffb539
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548177"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296805"
 ---
-# <a name="contact-support-for-cayman-islands"></a>Contattare il supporto per le Isole Cayman
+# <a name="contact-support-for-cayman-islands"></a>Contattare il supporto per le isole Cayman
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 1 877 308 6465

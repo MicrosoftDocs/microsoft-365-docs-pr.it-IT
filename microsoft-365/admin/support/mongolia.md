@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: babdfd3ed314e4fa0317d8e8afef3963685e6ab2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 2894d7d9f86be3b54926b1cdf7b94bc1e0aad839
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545705"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295796"
 ---
 # <a name="contact-support-for-mongolia"></a>Contattare il supporto per la Mongolia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +7 499 922 86 23
@@ -29,14 +29,14 @@ ms.locfileid: "50545705"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Russo: Mon-Fri dalle 10.00 alle 19:00 di Mosca
+Russo: Mon-Fri 10:00-19:00 a Mosca
 
-Inglese: Mon-Fri dalle 9:00 alle 17:00 di Londra
+Inglese: Mon-Fri 9.00-17.00 Londra
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Russo: Mon-Fri dalle 7:00 alle 20:00 di Mosca
+Russo: Mon-Fri dalle 7.00 alle 20.00 a Mosca
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

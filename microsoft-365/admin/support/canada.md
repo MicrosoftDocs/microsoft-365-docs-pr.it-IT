@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Canada
+title: Informazioni di supporto per il Canada
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e4bbef3fa2548fc35a4b0869b232335bfecaa24
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: ad044d7cb0ad2ed15d738e99deb14a9a04218479
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548261"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296817"
 ---
 # <a name="contact-support-for-canada"></a>Contattare il supporto per il Canada
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 1 800 865 9408

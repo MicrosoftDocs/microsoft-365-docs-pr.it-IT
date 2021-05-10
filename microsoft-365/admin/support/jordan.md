@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2309673639b36a5f9fd29a9fd8013792f246afbc
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: f2bf1835b6f4c1118400f41ce1f9743a056afab0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546485"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296000"
 ---
 # <a name="contact-support-for-jordan"></a>Contattare il supporto per la Giordania
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 18 800 000
@@ -33,7 +33,7 @@ Dopo la composizione, immettere 877 663 5075
 
 Arabo: Sun-Thu dalle 10.00 alle 18.00
 
-Inglese: Mon-Fri dalle 10.00 alle 18.00
+Inglese: Mon-Fri 10.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
