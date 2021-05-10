@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una revisione per l'eliminazione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b64db336aa619313f2ff744e94d48e44c13856a0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488169"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296757"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -52,7 +52,7 @@ Verificare che il controllo sia abilitato almeno un giorno prima della prima azi
 
 ## <a name="disposition-reviews"></a>Revisioni per l'eliminazione
 
-Quando un contenuto raggiunge la fine del periodo di conservazione, ci sono diversi motivi per cui si può scegliere di esaminare il contenuto prima di decidere se eliminarlo definitivamente ("eliminato"). Ad esempio, invece di eliminare il contenuto può essere necessario:
+Quando un contenuto raggiunge la fine del periodo di conservazione, ci sono diversi motivi per cui si può scegliere di esaminare il contenuto prima di decidere se eliminarlo definitivamente ("eliminato"). Ad esempio, invece di eliminare il contenuto potrebbe essere necessario:
   
 - Sospendere l'eliminazione del contenuto pertinente in caso di controversie legali o di un controllo.
 
@@ -114,7 +114,7 @@ Come si può vedere dall'immagine, le azioni supportate sono:
 
 Se si hanno le autorizzazioni necessarie per la posizione e il contenuto, è possibile usare il collegamento nella colonna **posizione** per visualizzare i documenti nella posizione originale. Durante una revisione per l'eliminazione, il contenuto non si sposta mai dalla posizione originale e non viene eliminato finché non lo decide il revisore.
 
-Le notifiche di posta elettronica vengono inviate automaticamente ai revisori con cadenza settimanale. Questa programmazione implica che, quando il contenuto raggiunge la fine del periodo di conservazione, possono trascorrere fino a sette giorni perché ai revisori venga notificato tramite posta elettronica che il contenuto è in attesa di eliminazione.
+Le notifiche di posta elettronica vengono inviate automaticamente ai revisori con cadenza settimanale. Questo processo pianificato sta a significare che quando il contenuto raggiunge la fine del periodo di conservazione, potrebbero essere necessari fino a sette giorni prima che i revisori ricevano la notifica tramite posta elettronica che il contenuto è in attesa di eliminazione.
   
 Tutte le azioni di eliminazione possono essere controllate e il testo della motivazione inserito dal revisore viene salvato e visualizzato nella colonna **commento** nella pagina **elementi eliminati**.
   
@@ -133,7 +133,7 @@ Questi elementi visualizzano i **record eliminati** nella colonna **Tipo**. Ad e
 
 ![Elementi eliminati senza revisione per l'eliminazione](../media/records-disposed2.png)
 
-Gli elementi visualizzati nella scheda **Elementi eliminati** vengono conservati per un massimo di sette anni dalla data di eliminazione dell'elemento, con un limite di 1 milione di elementi per ogni record per quel periodo. Se la cifra di **Conteggio** visualizzata si avvicina al limite di 1 milione e occorre prova di eliminazione dei record, contattare il [supporto tecnico Microsoft](/office365/admin/contact-support-for-business-products).
+Gli elementi visualizzati nella scheda **Elementi eliminati** vengono conservati per un massimo di sette anni dalla data di eliminazione dell'elemento, con un limite di 1 milione di elementi per ogni record per quel periodo. Se la cifra di **Conteggio** visualizzata si avvicina al limite di 1 milione e occorre prova di eliminazione dei record, contattare il [supporto tecnico Microsoft](../business-video/get-help-support.md).
 
 > [!NOTE]
 > Questa funzionalità usa le informazioni provenienti dal [Log di controllo unificato](search-the-audit-log-in-security-and-compliance.md) e, di conseguenza, è necessario che il controllo sia [abilitato e con ricerca consentita](turn-audit-log-search-on-or-off.md) in modo da acquisire gli eventi corrispondenti.

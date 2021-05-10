@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Questo articolo spiega cosa succede ai dati dell'utente quando l'abbonamento a Microsoft 365 scade o viene disabilitato oppure viene annullato dall'utente.
-ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644657"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297273"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Che cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365?
 
 Quando termina l'abbonamento, sia perché scade sia perché si decide di annullarlo, l'accesso ai servizi di Microsoft 365, alle applicazioni e ai dati della società passa attraverso vari stati prima che l'abbonamento venga completamente disattivato o *eliminato*. Se si è consapevoli di questo percorso, si sarà più preparati a riportare l'abbonamento a uno stato attivo prima che sia troppo tardi oppure, se si vuole realmente disattivare Microsoft 365, a eseguire il backup dei dati prima che vengano eliminati definitivamente.
 
-Leggere queste importanti informazioni prima di contattare il [supporto Microsoft 365](../../admin/contact-support-for-business-products.md).
+Leggere queste importanti informazioni prima di contattare il [supporto Microsoft 365](../../business-video/get-help-support.md).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Cosa succede ai dati alla scadenza di un abbonamento?
 
@@ -73,7 +73,7 @@ Per informazioni su come annullare l'abbonamento, vedere [Annullare l'abbonament
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Cosa è possibile fare quando l'abbonamento sta per scadere?
 
-Nel periodo in cui un abbonamento è attivo è possibile accedere normalmente ai propri dati, ai servizi come la posta elettronica e OneDrive for Business e alle applicazioni di Office. Quando si avvicina la data di scadenza dell'abbonamento, l'amministratore riceve una serie di notifiche tramite posta elettronica e nell'interfaccia di amministrazione.
+Nel periodo in cui un abbonamento è attivo è possibile accedere normalmente ai propri dati, ai servizi come la posta elettronica, a OneDrive for Business e alle applicazioni di Office. Quando si avvicina la data di scadenza dell'abbonamento, l'amministratore riceve una serie di notifiche tramite posta elettronica e nell'interfaccia di amministrazione.
   
 Prima che l'abbonamento raggiunga effettivamente la data di scadenza, è possibile scegliere tra alcune opzioni:
   
@@ -99,7 +99,7 @@ Prima che l'abbonamento raggiunga effettivamente la data di scadenza, è possibi
 
 ## <a name="what-happens-after-my-subscription-expires"></a>Cosa succede dopo la scadenza dell'abbonamento?
 
-Se si lascia scadere l'abbonamento, questo passa attraverso diversi stati prima di essere eliminato definitivamente. In questo modo l'amministratore ha il tempo di riattivarlo, se vuole continuare a usare il servizio, oppure di eseguire il backup dei dati se decide di non usare più l'abbonamento.
+Se si lascia scadere l'abbonamento, questo passa attraverso diversi stati prima di essere eliminato definitivamente. In questo modo, l'amministratore ha il tempo di riattivarlo se vuole continuare a usare il servizio, oppure può eseguire il backup dei dati se decide di non usare più l'abbonamento.
   
 Ecco cosa aspettarsi in ogni stato dell'abbonamento.
   
@@ -123,9 +123,9 @@ Un amministratore globale o di fatturazione può [riattivare l'abbonamento](reac
   
  **Cosa aspettarsi:** se non viene riattivato quando è scaduto o disabilitato, l'abbonamento viene eliminato.
   
-Gli amministratori e gli utenti non hanno più accesso ai servizi o alle applicazioni Office inclusi nell'abbonamento. Tutti i dati della società, dai dati degli utenti ai documenti e alla posta elettronica, vengono eliminati definitivamente e non sono recuperabili.
+Gli amministratori e gli utenti non hanno più accesso ai servizi o alle applicazioni di Office incluse nell'abbonamento. Tutti i dati dei clienti, dai dati degli utenti ai documenti e messaggi di posta elettronica, vengono eliminati definitivamente e non potranno essere recuperati.
   
-A questo punto non è più possibile riattivare l'abbonamento. Tuttavia, un amministratore globale o fatturazione può ancora accedere all'interfaccia di amministrazione per gestire altri abbonamenti o per acquistarne di nuovi, in base alle esigenze dell'azienda.
+A questo punto non è più possibile riattivare l'abbonamento. Tuttavia, l'amministratore globale o della fatturazione può ancora accedere all'interfaccia di amministrazione per gestire altri abbonamenti o per acquistarne di nuovi, in base alle esigenze dell'azienda.
   
 > [!NOTE]
 > - Se si aggiunge un nuovo abbonamento dello stesso tipo di quello eliminato, non è possibile ripristinare i dati precedentemente associati all'abbonamento eliminato.
@@ -133,7 +133,7 @@ A questo punto non è più possibile riattivare l'abbonamento. Tuttavia, un ammi
 
 ### <a name="what-happens-when-my-trial-ends"></a>Cosa succede alla fine del periodo di valutazione?
 
-Al termine del periodo di valutazione, non è possibile continuare a usare Microsoft 365 gratuitamente. È possibile procedere in diversi modi:
+Al termine del periodo di valutazione, non è possibile continuare a usare Microsoft 365 gratuitamente. È possibile scegliere tra le seguenti opzioni:
 
 - **Acquistare Microsoft 365.** Trascorso il periodo di valutazione l'abbonamento entra nello stato Scaduto, che concede altri 30 giorni di tempo (per la maggior parte delle versioni di valutazione e nella maggior parte dei paesi e delle aree geografiche) per acquistare Microsoft 365. Per informazioni su come convertire la versione di valutazione in un abbonamento a pagamento, vedere [Acquistare un abbonamento nella versione di valutazione](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 

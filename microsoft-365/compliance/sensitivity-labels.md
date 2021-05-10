@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: da660f79cd218c4b97cd2159f2811985d4651cef
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd3cc0a71fab9f2ceb6d3219a371bb4d5c030744
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245625"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297249"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -44,12 +44,14 @@ Le etichette di riservatezza della soluzione Microsoft Information Protection co
 
 Esempio che mostra le etichette di riservatezza disponibili in Excel dalla scheda **Home** sulla barra multifunzione. In questo esempio l'etichetta applicata viene visualizzata sulla barra di stato:
 
-![Etichetta di riservatezza nella barra multifunzione e nella barra di stato di Excel](../media/Sensitivity-label-in-Excel.png)
+![Etichetta di riservatezza sulla barra multifunzione e sulla barra di stato di Excel](../media/Sensitivity-label-in-Excel.png)
 
 Per applicare le etichette di riservatezza, gli utenti devono aver eseguito l'accesso con l'account aziendale o dell'istituto di istruzione di Microsoft 365.
 
 > [!NOTE]
-> Per i tenant del governo degli Stati Uniti, le etichette di riservatezza sono [ora supportate per gli ambienti GCC e GCC High](/officeupdates/current-channel#version-2101-january-26) e attualmente vengono distribuite per gli ambienti DoD.
+> Per i tenant del governo degli Stati Uniti, le etichette di riservatezza sono ora supportate per tutte le piattaforme:
+> - Per gli ambienti GCC e GCC High: note sulla versione per [Office per Windows](/officeupdates/current-channel#version-2101-january-26) e [Office per Mac](/officeupdates/release-notes-office-for-mac#feature-updates-2)
+> - Per ambienti DoD: note sulla versione per [Office per Windows](/officeupdates/current-channel#version-2103-march-30)
 >
 > Se si usa il client e lo scanner di etichettatura unificata di Azure Information Protection per questi ambienti, vedere [Descrizione del servizio Azure Information Protection Premium Government](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
@@ -219,13 +221,14 @@ Un criterio di etichetta è costituito da:
 - Gli utenti e i gruppi a cui verrà assegnato il criterio con le etichette.
 - L'ambito del criterio e le impostazioni del criterio per quell'ambito, ad esempio etichetta predefinita per i file e i messaggi di posta elettronica.
 
-È possibile includere un utente in più criteri di etichetta. L'utente riceverà tutte le etichette di riservatezza e le impostazioni di tali criteri. Se si verifica un conflitto nelle impostazioni di più criteri, viene applicata l'impostazione del criterio con la priorità più alta. In altre parole, per ogni impostazione prevale la priorità più alta.
+È possibile includere un utente in più criteri di etichetta. L'utente riceverà tutte le etichette di riservatezza e le impostazioni di tali criteri. Se si verifica un conflitto nelle impostazioni di più criteri, viene applicata l'impostazione del criterio con la priorità più alta (posizione più bassa). In altre parole, per ogni impostazione prevale la priorità più alta.
 
-Se il comportamento previsto per l'etichetta o l'impostazione dei criteri di etichetta per un utente o un gruppo non viene applicato, controllare l'ordine dei criteri per le etichette di riservatezza. Per riordinare i criteri di etichetta, selezionare un criterio di etichetta di riservatezza > scegliere i puntini di sospensione a destra > **Sposta su** o **Sposta giù**.
+Se il comportamento previsto per l'etichetta o l'impostazione dei criteri di etichetta per un utente o un gruppo non viene applicato, controllare l'ordine dei criteri per le etichette di riservatezza. Potrebbe essere necessario spostare i criteri verso il basso. Per riordinare i criteri di etichetta, selezionare un criterio di etichetta di riservatezza > scegliere i puntini di sospensione a destra > **Sposta su** o **Sposta giù**.
 
 ![Opzione Sposta nella pagina dei criteri di etichetta di riservatezza](../media/sensitivity-label-policy-priority.png)
 
-Se si usano etichette di conservazione oltre alle etichette di riservatezza, è importante tenere presente che la priorità è importante per i criteri delle etichette di riservatezza, ma non per le [etichette di conservazione](retention.md#the-principles-of-retention-or-what-takes-precedence).
+> [!NOTE]
+> Bisogna tenere conto che quando si verifica un conflitto nelle impostazioni per un utente a cui sono assegnati più criteri, viene applicata l'impostazione del criterio con la priorità più alta (posizione più bassa).
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Etichette di riservatezza e Azure Information Protection
 
