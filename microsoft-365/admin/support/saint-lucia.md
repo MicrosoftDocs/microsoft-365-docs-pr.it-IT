@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7d76ebbc45301b65ca7e92e086e5a76c5ea993e6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 17abaa21428f92fc7add1c851cd57bea0f0885b3
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544769"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295476"
 ---
-# <a name="contact-support-for-saint-lucia"></a>Contattare il supporto tecnico per Saint Lucia
+# <a name="contact-support-for-saint-lucia"></a>Contattare il supporto per Saint Lucia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5145
@@ -35,4 +35,4 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

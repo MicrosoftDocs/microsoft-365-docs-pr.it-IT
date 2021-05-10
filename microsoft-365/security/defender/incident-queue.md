@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 47d066fa20abe963f7afaa3b88cecc96fa6e87fc
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: a3b6edda36d2872177d9a88f3259220dcf2e76f3
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259590"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291316"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli eventi imprevisti in Microsoft 365 Defender
 
@@ -83,11 +83,14 @@ In questa tabella sono elencati i nomi dei filtri disponibili.
 | Stato | Puoi scegliere di limitare l'elenco degli eventi imprevisti visualizzati in base al loro stato per vedere quali sono attivi o risolti. |
 |||
 
-## <a name="next-step"></a>Passaggio successivo
+## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver determinato quale evento imprevisto richiede la priorità più alta, selezionarlo e iniziare [l'analisi.](investigate-incidents.md)
+Dopo aver determinato quale evento imprevisto richiede la priorità più alta, selezionarlo e:
+
+- [Gestire](manage-incidents.md) le proprietà dell'evento imprevisto per tag, assegnazione a un analista della sicurezza e commenti.
+- Iniziare [l'indagine](investigate-incidents.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
-- [Analizzare gli incidenti](investigate-incidents.md)
-- [Gestire gli incidenti](manage-incidents.md)
+- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+- [Gestire gli eventi imprevisti](manage-incidents.md)

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ef646a8b9b4696ca7ce1a9383619bc882b15f2b2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 00eadf91a1957cba95a0212423cf0759d40e9fe0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544313"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295368"
 ---
 # <a name="contact-support-for-somalia"></a>Contattare il supporto per la Somalia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +974 44 119418
@@ -45,4 +45,4 @@ Arabo: Sun-Thu dalle 10.00 alle 18.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

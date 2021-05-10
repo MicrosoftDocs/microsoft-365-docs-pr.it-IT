@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 400a14b6a4c0a8e1c7ca1ab9eaeb4358f13a7396
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 955c77e53172c9cc82ff49eaee2bade7f30cc655
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544997"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295528"
 ---
 # <a name="contact-support-for-poland"></a>Contattare il supporto per la Polonia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 800 70 23 20
@@ -39,6 +39,6 @@ Polacco: Mon-Fri dalle 8.00 alle 18.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Numero di telefono alternativo: 022 306 05 17
+Numero Telefono alternativo: 022 306 05 17
 
 Costo in base alle tariffe telefoniche locali

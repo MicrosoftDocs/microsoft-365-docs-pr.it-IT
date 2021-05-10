@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5a3d21ba5a62e966c86b0f4e707db12fb6a40d43
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e0bd218aaa95fabf3f825b09953caa7f6d79c55b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545189"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295572"
 ---
-# <a name="contact-support-for-panama"></a>Contattare il supporto tecnico per Panama
+# <a name="contact-support-for-panama"></a>Contattare il supporto per Panama
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 00800 051 0398

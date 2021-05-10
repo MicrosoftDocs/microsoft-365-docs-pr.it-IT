@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2256f5cf585a06f0071b954e0fbfe8d73783ec60
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: d8ab3b32fe52850898f91797ff737763c8f10f84
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544469"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295392"
 ---
 # <a name="contact-support-for-sint-maarten"></a>Contattare il supporto per Sint Maarten
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5145
@@ -35,4 +35,4 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

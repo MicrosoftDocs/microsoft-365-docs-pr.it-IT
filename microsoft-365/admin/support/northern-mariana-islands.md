@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per le Isole Marianne settentrionali
+title: Informazioni di supporto per le isole Marianne settentrionali
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d18ad29a18d2b12f756e9f4c82f0e8ee94ee3ac3
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9b066e5e20ea1474d19d2234e9bfeca3bfddaae4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545273"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295628"
 ---
-# <a name="contact-support-for-northern-mariana-islands"></a>Contattare il supporto per le Isole Marianne settentrionali
+# <a name="contact-support-for-northern-mariana-islands"></a>Contattare il supporto per le isole Marianne settentrionali
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5148
@@ -35,4 +35,4 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

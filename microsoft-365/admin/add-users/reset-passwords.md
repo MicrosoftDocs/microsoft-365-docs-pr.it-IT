@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Informazioni su come reimpostare la password per un utente in Microsoft 365 per le aziende.
-ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8720942d60b5ce4efaca8885bd5209cb3e7e7ef8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241701"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52290996"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -50,7 +50,7 @@ Guarda un breve video sulla reimpostazione delle password degli utenti.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Passaggi: Reimpostare una password aziendale per un utente
 
@@ -86,7 +86,7 @@ Se hai dimenticato la password e non riesci ad accedere:
 
 - Assicurati di aver fornito informazioni di contatto alternative, incluso un numero di cellulare.
 
-- In caso contrario, [chiamare il Supporto Tecnico Microsoft.](../contact-support-for-business-products.md)
+- In caso contrario, [chiamare il Supporto Tecnico Microsoft.](../../business-video/get-help-support.md)
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Reimpostare tutte le password aziendali per tutti gli utenti dell'organizzazione contemporaneamente
 <a name="bkmk_forgot"> </a>

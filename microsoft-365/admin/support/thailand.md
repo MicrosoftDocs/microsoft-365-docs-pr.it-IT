@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Thailandia
+title: Informazioni di supporto per la Thailandia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a41c9e64e67f6562e16973782b3ba91f3ceb5d7d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e501e49fa09d007f9c25a84b152e3e1a3f1656d0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543989"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295104"
 ---
 # <a name="contact-support-for-thailand"></a>Contattare il supporto per la Thailandia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 001 800 441 2619
@@ -31,7 +31,7 @@ ms.locfileid: "50543989"
 
 Thai: Mon-Fri dalle 9.00 alle 17.00
 
-Inglese: Mon-Fri dalle 9.00 alle 18.00
+Inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e57d03ae636837120b53c0de16861ad142ef76
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: e3df1286c69132c960c412f6f74512bb49c32b28
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280934"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291044"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Preparare Microsoft Defender per la distribuzione degli endpoint
 
@@ -134,7 +134,6 @@ Scegli il componente di Defender per Endpoint da usare e rimuovi quelli che non 
 | Microsoft Threat Experts (MTE)          | Microsoft Threat Experts è un servizio di ricerca gestito che fornisce ai Security Operation Center (SOC) il monitoraggio e l'analisi a livello di esperti per garantire che le minacce critiche nei loro ambienti unici non si perdino. <br>[Ulteriori informazioni.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Non applicabile      |
 
 ## <a name="next-step"></a>Passaggio successivo
-|||
-|:-------|:-----|
-|![Fase 2: configurazione](images/setup.png) <br>[Fase 2: configurazione](production-deployment.md) | Configurare Microsoft Defender per la distribuzione degli endpoint
+
+![Fase 2: configurazione](images/setup.png) <br>[Fase 2: configurazione |](production-deployment.md) Configurare Microsoft Defender per la distribuzione degli endpoint
 

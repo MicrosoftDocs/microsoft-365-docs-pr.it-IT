@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0c23823b76a6cdf262b43aef1a581f59d2c69b4e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: dbc41b13c8b4d8d05b794988159f3bbff081fa71
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543749"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295044"
 ---
-# <a name="contact-support-for-turks-and-caicos-islands"></a>Contattare il supporto per le isole Turks e Caicos
+# <a name="contact-support-for-turks-and-caicos-islands"></a>Contattare il supporto per Turks e Caicos Islands
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5145
@@ -35,4 +35,4 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

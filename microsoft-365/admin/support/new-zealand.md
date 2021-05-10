@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 46364078af9dfdd2d77fcadde5282d3a1e5dbb28
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 3c7e8df9833d664810075f335f5413e12ac3c2dc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545452"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295664"
 ---
 # <a name="contact-support-for-new-zealand"></a>Contattare il supporto per la Nuova Zelanda
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 194 197
@@ -35,6 +35,6 @@ Inglese: Mon-Fri 9.00-18.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Numero di telefono alternativo: 09 912 7298
+Numero Telefono alternativo: 09 912 7298
 
 Costo in base alle tariffe telefoniche locali
