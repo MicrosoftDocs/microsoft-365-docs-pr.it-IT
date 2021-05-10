@@ -12,31 +12,31 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d8943e3a2374786ea91b322e5b1e896965e4cc75
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 4826aea7355a3d37f93d1803c5b7696a7756092f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549125"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297009"
 ---
-# <a name="contact-support-for-albania"></a><span data-ttu-id="2aa01-103">Contattare il supporto per l'Albania</span><span class="sxs-lookup"><span data-stu-id="2aa01-103">Contact support for Albania</span></span>
+# <a name="contact-support-for-albania"></a><span data-ttu-id="3da4b-103">Contattare il supporto per l'Albania</span><span class="sxs-lookup"><span data-stu-id="3da4b-103">Contact support for Albania</span></span>
 
-<span data-ttu-id="2aa01-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="2aa01-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="3da4b-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="3da4b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2aa01-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="2aa01-105">Phone number</span></span>
-<span data-ttu-id="2aa01-106">04 451 5151</span><span class="sxs-lookup"><span data-stu-id="2aa01-106">04 451 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="3da4b-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="3da4b-105">Phone number</span></span>
+<span data-ttu-id="3da4b-106">04 451 5151</span><span class="sxs-lookup"><span data-stu-id="3da4b-106">04 451 5151</span></span>
 
-<span data-ttu-id="2aa01-107">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="2aa01-107">Select option 9</span></span>
+<span data-ttu-id="3da4b-107">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="3da4b-107">Select option 9</span></span>
 
-<span data-ttu-id="2aa01-108">Immettere il codice 7700</span><span class="sxs-lookup"><span data-stu-id="2aa01-108">Enter code 7700</span></span>
+<span data-ttu-id="3da4b-108">Immettere il codice 7700</span><span class="sxs-lookup"><span data-stu-id="3da4b-108">Enter code 7700</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2aa01-109">Ore</span><span class="sxs-lookup"><span data-stu-id="2aa01-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2aa01-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="2aa01-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="3da4b-109">Ore</span><span class="sxs-lookup"><span data-stu-id="3da4b-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="3da4b-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="3da4b-110">Billing Support:</span></span>
 
-<span data-ttu-id="2aa01-111">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="2aa01-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="3da4b-111">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="3da4b-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2aa01-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="2aa01-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="3da4b-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="3da4b-112">Technical Support:</span></span>
 
-<span data-ttu-id="2aa01-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="2aa01-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="3da4b-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="3da4b-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="2aa01-114">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="2aa01-114">Local call charges apply</span></span>
+<span data-ttu-id="3da4b-114">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="3da4b-114">Local call charges apply</span></span>
