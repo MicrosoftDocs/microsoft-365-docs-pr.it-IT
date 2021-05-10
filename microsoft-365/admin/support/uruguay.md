@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5e59e4f0d6ede264c4362888a6b8e6496b186293
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: abd4c36e87ff40c1f2056121d280576a6792125f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543545"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297465"
 ---
-# <a name="contact-support-for-uruguay"></a>Contattare il supporto tecnico per l'Uruguay
+# <a name="contact-support-for-uruguay"></a>Contattare il supporto per l'Uruguay
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 000 411 002 7131

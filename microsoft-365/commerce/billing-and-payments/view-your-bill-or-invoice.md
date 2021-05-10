@@ -24,12 +24,12 @@ ms.custom:
 - PPM_jmueller
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
 ms.date: 07/31/2020
-ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: eff193689817c1c89fff7c8ffbc5335fff64ee0f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280824"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297357"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visualizzare la fattura
 
@@ -37,7 +37,7 @@ Questo articolo è destinato agli abbonati a Microsoft 365 per le aziende.
   
 Se serve aiuto per interpretare gli addebiti riportati nella fattura, vedere [Informazioni sull'estratto conto o la fattura](understand-your-invoice2.md) per una descrizione dettagliata.
   
-**Se si ha un problema con la fattura** [Contattare il supporto tecnico per i prodotti per le aziende](../../admin/contact-support-for-business-products.md).
+**Se si ha un problema con la fattura** [Contattare il supporto tecnico per i prodotti per le aziende](../../business-video/get-help-support.md).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 

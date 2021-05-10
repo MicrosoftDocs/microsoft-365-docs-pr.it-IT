@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8c229a45ca8ee920eb3f9afe0b155ecd607827a5
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e3604cd6d829cf0a60650cbb483d74390d2c0d2d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548813"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296949"
 ---
-# <a name="contact-support-for-bahrain-kingdom-of"></a>Contattare il supporto tecnico per il Bahrein, Regno di
+# <a name="contact-support-for-bahrain-kingdom-of"></a>Contattare il supporto per il Bahrain, Regno di
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 800 81 250
@@ -31,7 +31,7 @@ ms.locfileid: "50548813"
 
 Arabo: Sun-Thu dalle 10.00 alle 18.00
 
-Inglese: Mon-Fri dalle 10.00 alle 18.00
+Inglese: Mon-Fri 10.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

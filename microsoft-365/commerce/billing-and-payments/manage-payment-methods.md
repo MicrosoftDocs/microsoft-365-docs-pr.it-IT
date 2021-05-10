@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gestire le modalità di pagamento nell'interfaccia di amministrazione di Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 82b2880eed830bd3b65cce14635c4fa10f618740
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244721"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297369"
 ---
 # <a name="manage-payment-methods"></a>Gestire le modalità di pagamento
 
@@ -129,7 +129,7 @@ Se a un abbonamento o un profilo di fatturazione è associata una modalità di p
 |**La carta di credito/debito è stata rifiutata.** |Se si paga con carta di credito o debito e questa viene rifiutata, si riceve un messaggio di posta elettronica che informa che Microsoft non è riuscita a elaborare il pagamento. Controllare che i dettagli della carta &mdash; ossia numero, data di scadenza, nome sulla carta e indirizzo comprensivo di città, stato e codice postale &mdash; corrispondano esattamente a quelli sulla carta e sul relativo estratto conto. È possibile aggiornare le informazioni della carta e inviare immediatamente il pagamento usando il collegamento per **pagare il saldo** nella sezione **Fatturazione** della pagina dei dettagli dell'abbonamento. Per altre informazioni, vedere [Cosa devo fare se il mio saldo è insoluto?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Se si continua a ricevere il messaggio di rifiuto, contattare la propria banca. È possibile che la carta di credito non sia attiva. Se di recente si è ricevuta per posta la carta con una data di scadenza aggiornata, verificare che sia stata attivata. Rivolgersi alla banca anche per sapere se la carta di credito non è approvata per transazioni online, internazionali o ricorrenti. |
 |**Come aggiornare il numero della carta di credito o del conto corrente bancario?** |Non è possibile cambiare il numero di carta di credito o di conto corrente bancario in una modalità di pagamento esistente. Se il numero della carta o del conto è cambiato, [sostituirla con una modalità di pagamento diversa](#replace-a-payment-method), spostando tutti gli abbonamenti attivi dalla modalità di pagamento precedente a quella nuova, quindi [eliminare la vecchia modalità di pagamento](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**All'account è associata una sola carta di credito o un solo conto corrente bancario e si vuole rimuoverlo.** |Se si ha una sola modalità di pagamento, è necessario [sostituirla con una nuova](#replace-a-payment-method) per poterla eliminare. |
-|**Non si riesce ad aggiungere la carta o il conto corrente bancario.**  |È necessario usare una modalità di pagamento emessa dallo stesso paese/area geografica del tenant. Se si riscontrano problemi durante l'immissione delle informazioni della carta o del conto corrente bancario, è possibile [contattare il supporto](../../admin/contact-support-for-business-products.md). |
+|**Non si riesce ad aggiungere la carta o il conto corrente bancario.**  |È necessario usare una modalità di pagamento emessa dallo stesso paese/area geografica del tenant. Se si riscontrano problemi durante l'immissione delle informazioni della carta o del conto corrente bancario, è possibile [contattare il supporto](../../business-video/get-help-support.md). |
 
 ## <a name="related-content"></a>Contenuti correlati
 

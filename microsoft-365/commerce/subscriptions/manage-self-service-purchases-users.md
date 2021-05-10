@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Gli utenti possono imparare a gestire gli acquisti in modalità self-service.
-ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920193"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297297"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gestire acquisti in modalità self-service (utenti)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50920193"
 
 ::: moniker-end
 
-Gli utenti possono acquistare sottoscrizioni a determinati prodotti e assegnare licenze per tali sottoscrizioni agli utenti del team. L'utente è responsabile del pagamento di eventuali acquisti self-service. È possibile gestire le sottoscrizioni nell'interfaccia di amministrazione di Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">in admin.microsoft.com</a>.
+Gli utenti possono acquistare sottoscrizioni a determinati prodotti e assegnare licenze per tali sottoscrizioni agli utenti del team. L'utente è responsabile del pagamento di eventuali acquisti self-service. È possibile gestire le sottoscrizioni nell'Microsoft 365 di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
 L'amministratore ha una visualizzazione di sola lettura in tutte le sottoscrizioni acquistate. Possono visualizzare il prodotto, il nome dell'acquirente, le sottoscrizioni acquistate, la data di scadenza, il prezzo di acquisto e gli utenti assegnati per ogni sottoscrizione acquistata.
 
@@ -107,4 +107,4 @@ L'amministratore ha una visualizzazione di sola lettura in tutte le sottoscrizio
 
 Per domande frequenti sugli acquisti self-service, vedere Domande frequenti [sugli acquisti in self-service.](self-service-purchase-faq.md)
 
-Se hai domande o hai bisogno di assistenza per gli acquisti self-service, [contatta il supporto](../../admin/contact-support-for-business-products.md).
+Se hai domande o hai bisogno di assistenza per gli acquisti self-service, [contatta il supporto](../../business-video/get-help-support.md).

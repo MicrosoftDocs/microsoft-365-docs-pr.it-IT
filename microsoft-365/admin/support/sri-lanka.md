@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per lo Sri Lanka
+title: Informazioni di supporto per lo Sri Lanka
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e48a9eb8c2b64ac8779d953a6267a4b4ce3e412c
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a0720cdccaacd3432d15ed254b00a8c9fb2852da
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544241"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297657"
 ---
 # <a name="contact-support-for-sri-lanka"></a>Contattare il supporto per lo Sri Lanka
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 2423 254
@@ -29,7 +29,7 @@ ms.locfileid: "50544241"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri dalle 9.00 alle 18.00
+Inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

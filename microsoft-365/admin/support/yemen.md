@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 06baed414f0893d540779001cfa140775430568d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c04f92c4297804cf16c06c5bfffc24f7bae77031
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549281"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297417"
 ---
 # <a name="contact-support-for-yemen"></a>Contattare il supporto per lo Yemen
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +974 44 119418
@@ -37,7 +37,7 @@ Immettere il codice 7700
 
 Arabo: Sun-Thu dalle 10.00 alle 18.00
 
-Inglese: Mon-Fri dalle 10.00 alle 18.00
+Inglese: Mon-Fri 10.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
@@ -45,4 +45,4 @@ Arabo: Sun-Thu dalle 10.00 alle 18.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

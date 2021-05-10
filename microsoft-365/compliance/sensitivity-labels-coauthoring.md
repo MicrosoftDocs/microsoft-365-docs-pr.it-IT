@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: 990ab13508565fb910abe0d5e759a93e54766915
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4b2c4551579d2609b66b5cd8fa8857f98b966a7d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245721"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297261"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
@@ -173,7 +173,7 @@ Dopo aver abilitato la creazione condivisa per i file con etichette di riservate
 
 ![Opzione che mostra la creazione condivisa per le etichette di riservatezza attivata](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Come illustrato nello screenshot, quando questa impostazione è attivata, è possibile contattare il [Supporto tecnico Microsoft](/office365/admin/contact-support-for-business-products) e richiedere di disattivarla. Potrebbero essere necessari diversi giorni per processare la richiesta. Inoltre è necessario dimostrare di essere un amministratore globale del tenant. Verranno applicate le tariffe standard del Supporto tecnico. 
+Come illustrato nello screenshot, quando questa impostazione è attivata, è possibile contattare il [Supporto tecnico Microsoft](../business-video/get-help-support.md) e richiedere di disattivarla. Potrebbero essere necessari diversi giorni per processare la richiesta. Inoltre è necessario dimostrare di essere un amministratore globale del tenant. Verranno applicate le tariffe standard del Supporto tecnico. 
 
 Se un tecnico del supporto disabilita questa impostazione per il tenant:
 

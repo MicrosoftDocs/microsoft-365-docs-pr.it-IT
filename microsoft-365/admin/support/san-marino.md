@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: af24a9a7ebbcbe7e5f7204826209e16d70bc2e2f
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: debafb5031183f4650131807228d743a9a84debd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544697"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297765"
 ---
 # <a name="contact-support-for-san-marino"></a>Contattare il supporto per San Marino
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5154
@@ -29,9 +29,9 @@ ms.locfileid: "50544697"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Italiano: Mon-Fri dalle 10.00 alle 18.00
+Italiano: Mon-Fri 10.00-18.00
 
-Inglese: Mon-Fri dalle 10.00 alle 18.00
+Inglese: Mon-Fri 10.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
@@ -39,4 +39,4 @@ Italiano: Mon-Fri dalle 9.00 alle 22.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

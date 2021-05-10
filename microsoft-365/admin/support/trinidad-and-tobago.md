@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Trinidad e Tobago
+title: Informazioni di supporto per Trinidad e Tobago
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 899f9edff7c6061b0dcb3fbada3f165cf212948f
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9d841987299746b7c9dc7a0801a833f734316e11
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543809"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297537"
 ---
 # <a name="contact-support-for-trinidad-amp-tobago"></a>Contattare il supporto per Trinidad &amp; Tobago
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 1 855 214 7711

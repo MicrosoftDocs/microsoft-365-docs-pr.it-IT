@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4d1a5e1d5d2d1ab76930aa21affbb86e7a18cb87
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a4bc0a5ee11c1edd195aebd01c8c62981f10f3b4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543785"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297525"
 ---
 # <a name="contact-support-for-tunisia"></a>Contattare il supporto per la Tunisia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 71 168 700
@@ -37,7 +37,7 @@ Immettere il codice 7703
 
 Arabo: Sun-Thu dalle 9.00 alle 17.00
 
-Francese: Mon-Fri dalle 9.00 alle 17.00
+Francese: Mon-Fri 9.00-17.00
 
 Inglese: lun-ven 9:00-17:00
 

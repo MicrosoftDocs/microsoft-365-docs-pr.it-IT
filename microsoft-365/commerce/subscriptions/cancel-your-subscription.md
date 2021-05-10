@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: Informazioni su come annullare la versione di valutazione o l'abbonamento a pagamento a Microsoft 365 per le aziende.
 ms.date: 04/08/2021
-ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244661"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297309"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
-*Idoneità:* Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se si hanno più di 25 licenze assegnate a utenti, ridurlo a meno di 25 o [contattare il supporto per annullare l'abbonamento](../../admin/contact-support-for-business-products.md).
+*Idoneità:* Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se si hanno più di 25 licenze assegnate a utenti, ridurlo a meno di 25 o [contattare il supporto per annullare l'abbonamento](../../business-video/get-help-support.md).
 
 *Rimborso:* eventuali crediti proporzionali verranno rimessi entro il successivo ciclo di fatturazione.
 

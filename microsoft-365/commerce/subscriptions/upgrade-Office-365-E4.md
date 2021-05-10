@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Informazioni su come eseguire l'aggiornamento da un Office 365 E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f9143497ac2ee15009a3a2b3af9e76426d408d38
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 0e30ece58cfc10ea258a684f9ac6ca4dba1b8692
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280512"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297285"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Eseguire l'aggiornamento da Office 365 E4
 
@@ -63,7 +63,7 @@ L'aggiornamento manuale dei piani implica il completamento delle procedure separ
 3. Selezionare la **scheda** Aggiornamento. Se vengono elencati altri piani, significa che è possibile aggiornare automaticamente i piani.
 4. Se non è possibile eseguire l'aggiornamento automatico, viene visualizzato un messaggio che descrive il motivo per cui non è possibile eseguire l'aggiornamento.
 
-Esistono diversi motivi per cui non è possibile aggiornare automaticamente i piani. La maggior parte dei problemi è temporanea, ad esempio i problemi di integrità del servizio che è possibile risolvere. Per ulteriori informazioni, vedere [Perché non è possibile aggiornare i piani?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Per assistenza per l'aggiornamento, [contattare il supporto](../../admin/contact-support-for-business-products.md)tecnico .
+Esistono diversi motivi per cui non è possibile aggiornare automaticamente i piani. La maggior parte dei problemi è temporanea, ad esempio i problemi di integrità del servizio che è possibile risolvere. Per ulteriori informazioni, vedere [Perché non è possibile aggiornare i piani?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Per assistenza per l'aggiornamento, [contattare il supporto](../../business-video/get-help-support.md)tecnico .
 
 ## <a name="will-a-credit-check-be-required"></a>Sarà necessaria una verifica del credito?
 
@@ -137,7 +137,7 @@ Puoi usare l'Microsoft 365 di amministrazione per riassegnare le licenze per un 
 
 Dopo che tutti gli utenti sono stati riassegnati al nuovo abbonamento, annullare l'abbonamento [Office 365 E4](cancel-your-subscription.md).
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Eseguire l'aggiornamento a un piano diverso](upgrade-to-different-plan.md) (articolo)\
 [Acquistare o rimuovere licenze di sottoscrizione](../licenses/buy-licenses.md) (articolo)\

@@ -23,12 +23,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: Informazioni su come riscattare un Microsoft 365 Business Standard prodotto acquistato presso un punto vendita al dettaglio.
 ms.date: 11/13/2020
-ms.openlocfilehash: 0e647b8d52d024750b3944a03133755c1257ee4c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ed9fb3c1ecc02930f55ddc11c523cf5989d6bbbe
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107449"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297321"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Immettere il codice Product Key per Microsoft 365 Business Standard
 
@@ -67,4 +67,4 @@ Se non si ha di Microsoft 365 per le aziende, informazioni su come [configurare 
 
 Vedere questo elenco di errori e soluzioni comuni: [Problemi con il codice Product Key di Microsoft 365 per le aziende?](product-key-errors-and-solutions.md)
   
-In caso contrario, [chiamare il Supporto Tecnico Microsoft.](../admin/contact-support-for-business-products.md)
+In caso contrario, [chiamare il Supporto Tecnico Microsoft.](../business-video/get-help-support.md)

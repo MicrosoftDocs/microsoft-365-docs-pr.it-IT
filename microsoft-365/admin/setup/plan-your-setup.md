@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Informazioni sui requisiti e sulle considerazioni per il passaggio a Microsoft 365 per le aziende.
-ms.openlocfilehash: ba97253beed1544d8f993a462559037a0a1a4281
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244504"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297033"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Pianificare la configurazione di Microsoft 365 per le aziende
 
@@ -56,7 +56,7 @@ L'installazione guidata illustra come installare le app Microsoft 365 nel comput
   
 Se non si completa la configurazione guidata, è possibile completare le attività di installazione in qualsiasi momento [dall'installazione dell'interfaccia di](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **amministrazione.** Da qui è possibile eseguire la migrazione della posta elettronica e dei contatti da un altro servizio di posta elettronica, modificare il dominio dell'account amministratore, gestire le informazioni di fatturazione, aggiungere o rimuovere utenti, reimpostare le password ed eseguire altre funzioni aziendali. Per ulteriori informazioni sulle differenze tra  l'installazione guidata e la pagina Di installazione, vedere Differenze tra l'installazione guidata di Microsoft 365 e [la pagina Di installazione](o365-setup-wizard-and-setup-page.md).
 
-Per qualsiasi difficoltà, siamo disponibili telefonicamente. [Opzioni di assistenza](../contact-support-for-business-products.md)
+Per qualsiasi difficoltà, siamo disponibili telefonicamente. [Opzioni di assistenza](../../business-video/get-help-support.md)
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>Quando non è opportuno usare la configurazione guidata: Ambienti ibridi e sincronizzazione di Active Directory
 
@@ -138,7 +138,7 @@ Per organizzazioni di grandi dimensioni o se si inizia da distribuzioni Skype fo
 - **Se si hanno meno di 50 dipendenti:**
 
   - **Chiedi assistenza e ti chiameremo**. Dopo aver acquistato Microsoft 365, è possibile accedere all'interfaccia di amministrazione (non è necessario eseguire il programma di installazione per accedervi). Nella parte inferiore dell'interfaccia di amministrazione selezionare **Serve assistenza?** Descrivi il tuo problema e ti chiameremo. 
-  - **Chiama [Microsoft 365 supporto per le aziende](../contact-support-for-business-products.md) con le tue domande.** Microsoft è sempre pronta a offrire supporto. 
+  - **Chiama [Microsoft 365 supporto per le aziende](../../business-video/get-help-support.md) con le tue domande.** Microsoft è sempre pronta a offrire supporto. 
   - **Valutare se affidarsi a un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089)**. Se si ha poco tempo o si hanno requisiti avanzati (come lo spostamento di migliaia di file Microsoft 365 un'archiviazione cloud o l'integrazione con altro software), un partner esperto può essere di grande aiuto. 
 
 - **Se si hanno più di 50 dipendenti**, è disponibile il [FastTrack Onboarding Center](https://go.microsoft.com/fwlink/?LinkId=517115) per offrire assistenza con la distribuzione.

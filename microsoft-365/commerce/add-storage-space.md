@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 description: Informazioni su come aggiungere e ridurre l'archiviazione di file nell'Microsoft 365 abbonamento. Con l'archiviazione di file aggiuntiva, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 576efee4ba0e1ad8fb43b3d8475d6c3a949ee1e8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107389"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293680"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
@@ -71,7 +71,7 @@ Se non hai ancora acquistato spazio di archiviazione aggiuntivo per l'abbonament
 
 ## <a name="increase-or-decrease-storage"></a>Aumentare o diminuire lo spazio di archiviazione
 
-Se hai già acquistato spazio di archiviazione file aggiuntivo tramite il componente aggiuntivo **Office 365 Extra File Archiviazione,** puoi usare questa procedura per aumentare o ridurre lo spazio di archiviazione aggiuntivo per l'abbonamento. È possibile ridurre lo spazio di archiviazione fino a 1 gigabyte. Per rimuovere tutto lo spazio di archiviazione aggiuntivo, [contattare il supporto](../admin/contact-support-for-business-products.md)tecnico .
+Se hai già acquistato spazio di archiviazione file aggiuntivo tramite il componente aggiuntivo **Office 365 Extra File Archiviazione,** puoi usare questa procedura per aumentare o ridurre lo spazio di archiviazione aggiuntivo per l'abbonamento. È possibile ridurre lo spazio di archiviazione fino a 1 gigabyte. Per rimuovere tutto lo spazio di archiviazione aggiuntivo, [contattare il supporto](../business-video/get-help-support.md)tecnico .
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 2. Nella scheda **Prodotti** selezionare la sottoscrizione che contiene il Office 365 **aggiuntivo Archiviazione** aggiuntivo.

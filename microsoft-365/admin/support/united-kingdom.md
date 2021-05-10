@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4c14ef71c429a19f479456c6a0c2c8120b7ded0a
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c281cdc1183af270b4d09721f38233b10c52d99d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543569"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297477"
 ---
 # <a name="contact-support-for-united-kingdom"></a>Contattare il supporto per il Regno Unito
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 032 6417
@@ -35,6 +35,6 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Numero di telefono alternativo: 0203 450 6455
+Numero Telefono alternativo: 0203 450 6455
 
 Costo in base alle tariffe telefoniche locali

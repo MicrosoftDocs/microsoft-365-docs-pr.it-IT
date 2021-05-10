@@ -22,18 +22,18 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Informazioni su come attivare, rinnovare o aggiungere licenze a un abbonamento Microsoft 365 per le aziende.
 ms.date: 10/21/2020
-ms.openlocfilehash: e0e317dc0917876c6299fe1eea5812b7bfe0cd8b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 04df3b24693ac92875cc667aea61e0e9b35cb270
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107593"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293632"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Immettere il codice Product Key acquistato da Microsoft Open
 
 Se hai acquistato Microsoft 365 per le aziende da un [programma Microsoft Open License,](https://go.microsoft.com/fwlink/p/?LinkID=613298)questo articolo fa per te. I clienti con contratti multilicenza che hanno acquistato un codice Product Key possono seguire questo argomento per attivare, rinnovare o aggiungere licenze a un abbonamento.
   
- **Serve assistenza immediatamente?** [Chiamare il Supporto Tecnico Microsoft](../admin/contact-support-for-business-products.md) . 
+ **Serve assistenza immediatamente?** [Chiamare il Supporto Tecnico Microsoft](..//business-video/get-help-support.md) . 
   
  **Serve altro?**
  
@@ -67,4 +67,4 @@ I partner possono trovare utile l'articolo [Partner: usare un codice Product Key
   
 I clienti con contratto multilicenza possono trovare altre informazioni nel [Centro servizi per contratti multilicenza e risorse](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-In caso contrario, se si desidera parlare con una persona, [chiamare il Supporto Tecnico Microsoft.](../admin/contact-support-for-business-products.md)
+In caso contrario, se si desidera parlare con una persona, [chiamare il Supporto Tecnico Microsoft.](../business-video/get-help-support.md)

@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 per le aziende, su come configurarlo e su come preparare i dispositivi e i PC degli utenti per assicurarsi che siano protetti da Microsoft 365 per le aziende.
-ms.openlocfilehash: cc54147e75a27fbb93255d6f706b4f9044c75858
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245125"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293708"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introduzione a Microsoft 365 per le aziende
 
@@ -65,7 +65,7 @@ Guarda questo video per una panoramica della configurazione di Microsoft 365 per
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Configurare Microsoft 365 per le aziende (amministratore)
@@ -105,9 +105,9 @@ Se si conserva un Active Directory locale contenente alcune risorse locali (ad e
   
 - Contattare il partner.
     
-- In qualità di Microsoft 365 per le aziende, hai accesso al team di supporto dei clienti: contatta il supporto per i prodotti **[aziendali - Guida per gli amministratori](../admin/contact-support-for-business-products.md)**
+- In qualità di Microsoft 365 per le aziende, hai accesso al team di supporto dei clienti: contatta il supporto per i prodotti **[aziendali - Guida per gli amministratori](../business-video/get-help-support.md)**
     
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Microsoft 365 documentazione e risorse per le aziende](./index.yml)
   

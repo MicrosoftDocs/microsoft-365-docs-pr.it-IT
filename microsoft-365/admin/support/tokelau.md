@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 34389dce004a5908be0fe5e238ed8a4c40057ade
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 63da424b7bf93fa2f570081ddd3c09ea9f9df94e
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543845"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297549"
 ---
-# <a name="contact-support-for-tokelau"></a>Contattare il supporto tecnico per Tokelau
+# <a name="contact-support-for-tokelau"></a>Contattare il supporto per Tokelau
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 +1 312 843 5148
@@ -29,10 +29,10 @@ ms.locfileid: "50543845"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 14.00-22.00
+Inglese: Mon-Fri dalle 14.00 alle 22.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Si applicano addebiti per chiamate internazionali
+Si applicano i costi delle chiamate internazionali

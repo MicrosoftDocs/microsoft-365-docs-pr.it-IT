@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 5aeaa51e5ab8974c8ca26453534396dac14b5853
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893486"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297217"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Distribuire Microsoft Defender per Endpoint negli anelli
 
@@ -81,7 +81,7 @@ La tabella seguente mostra gli endpoint supportati e lo strumento corrispondente
 
 | Endpoint     | Strumento di distribuzione                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script locale (fino a 10 dispositivi)](configure-endpoints-script.md) <br> NOTA: se vuoi distribuire più di 10 dispositivi in un ambiente di produzione, usa il metodo Criteri di gruppo o gli altri strumenti supportati elencati di seguito.<br>  [Criteri di gruppo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Script VDI](configure-endpoints-vdi.md)   |
+| **Windows**  |  [Script locale (fino a 10 dispositivi)](configure-endpoints-script.md) <br> NOTA: se vuoi distribuire più di 10 dispositivi in un ambiente di produzione, usa il metodo Criteri di gruppo o gli altri strumenti supportati elencati di seguito.<br>  [Criteri di gruppo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestione dispositivi mobili](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Script VDI](configure-endpoints-vdi.md)   |
 | **macOS**    | [Script locale](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestione di dispositivi mobili](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Script locale](linux-install-manually.md) <br> [Pupazzo](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Basato su app](ios-install.md)                                |
@@ -105,8 +105,8 @@ Usa il materiale seguente per selezionare l'architettura appropriata di Microsof
 
 ## <a name="existing-deployments"></a>Distribuzioni esistenti
 
-### <a name="windows-endpoints"></a>Endpoint di Windows
-Per Windows e/o Windows Server, è possibile selezionare diversi computer da testare in anticipo (prima della patch di martedì) utilizzando il programma Di convalida degli aggiornamenti della sicurezza **(SUVP).**
+### <a name="windows-endpoints"></a>Windows endpoint
+Per Windows e/o Windows Server, è possibile selezionare più computer da testare in anticipo (prima della patch di martedì) utilizzando il programma Di convalida degli aggiornamenti della sicurezza **(SUVP).**
 
 Per ulteriori informazioni, vedere:
 - [Che cos'è il programma di convalida degli aggiornamenti della sicurezza](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
@@ -114,16 +114,16 @@ Per ulteriori informazioni, vedere:
 
 
 ### <a name="non-windows-endpoints"></a>Endpoint non Windows
-Con macOS e Linux, puoi prendere un paio di sistemi ed eseguirti nel canale "InsidersFast".
+Con macOS e Linux, puoi prendere un paio di sistemi ed eseguirti nel canale Beta.
 
 >[!NOTE]
->Idealmente, almeno un amministratore della sicurezza e uno sviluppatore, in modo da poter individuare problemi di compatibilità, prestazioni e affidabilità prima che la build venga trasformata nel canale "Produzione".
+>Idealmente almeno un amministratore della sicurezza e uno sviluppatore in modo da poter trovare problemi di compatibilità, prestazioni e affidabilità prima che la build la relazioni nel canale Corrente.
 
-La scelta del canale determina il tipo e la frequenza degli aggiornamenti offerti al dispositivo. I dispositivi in insiders-fast sono i primi a ricevere aggiornamenti e nuove funzionalità, seguiti successivamente da insider lenti e infine da prod.
+La scelta del canale determina il tipo e la frequenza degli aggiornamenti offerti al dispositivo. I dispositivi nella versione Beta sono i primi a ricevere aggiornamenti e nuove funzionalità, seguiti successivamente da Anteprima e infine da Current.
 
 ![Immagine degli anelli insider](images/insider-rings.png)
 
-Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipato, è consigliabile configurare alcuni dispositivi nell'organizzazione per l'uso di insiders-fast o insiders-slow.
+Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipato, è consigliabile configurare alcuni dispositivi dell'organizzazione per l'uso della versione Beta o dell'anteprima.
 
 >[!WARNING]
 >Il cambio di canale dopo l'installazione iniziale richiede la reinstallazione del prodotto. Per cambiare il canale del prodotto: disinstalla il pacchetto esistente, ri-configura il dispositivo per l'uso del nuovo canale e segui i passaggi in questo documento per installare il pacchetto dal nuovo percorso.

@@ -22,12 +22,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Modificare le sottoscrizioni manualmente acquistando una nuova sottoscrizione e verificando che entrambe le sottoscrizioni siano elencate e attive.
 ms.date: 03/17/2021
-ms.openlocfilehash: 1dc7ff8cd6b8a43db7d70ab6c17aec16a020baac
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 7361b459e61961efbb729d80dcbb55dfdad65933
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107681"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293620"
 ---
 # <a name="change-plans-manually"></a>Modificare manualmente i piani
 
@@ -74,7 +74,7 @@ Includere una licenza per ogni utente da spostare.
 
 - **Se sono stati acquistati due abbonamenti e non sono entrambi elencati qui**, è possibile che siano stati acquistati per organizzazioni diverse (per domini diversi). Gli abbonamenti devono rimanere nei limiti di un'organizzazione.
 
-- **Se sai di avere un abbonamento aggiuntivo** e non è elencato qui o non è attivo, chiama il supporto Tecnico [Microsoft.](../../admin/contact-support-for-business-products.md)
+- **Se sai di avere un abbonamento aggiuntivo** e non è elencato qui o non è attivo, chiama il supporto Tecnico [Microsoft.](../../business-video/get-help-support.md)
 
 ### <a name="what-about-the-old-licenses"></a>Cosa accade alle vecchie licenze
 
@@ -115,4 +115,4 @@ Se tutti gli utenti sono stati spostati su un altro abbonamento e l'abbonamento 
 Se sono stati spostati solo alcuni utenti, [rimuovere le licenze](../licenses/buy-licenses.md) non più necessarie.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Chiamare il supporto tecnico per modificare i piani
-[Chiamare il supporto Tecnico Microsoft](../../admin/contact-support-for-business-products.md)
+[Chiamare il supporto Tecnico Microsoft](../../business-video/get-help-support.md)

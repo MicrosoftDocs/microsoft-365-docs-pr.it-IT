@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ba6129d4b33a67a31c0fe3a8993ac2fb3d386696
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6a8d5d3dfcdf718fe36653488d6a319d59d6267e
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544301"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297681"
 ---
 # <a name="contact-support-for-south-africa"></a>Contattare il supporto per il Sudafrica
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 080 020 2883
@@ -35,6 +35,6 @@ Inglese: lun-ven 9:00-17:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Numero di telefono alternativo: 021 427 3315
+Numero Telefono alternativo: 021 427 3315
 
 Costo in base alle tariffe telefoniche locali

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1ceea1dbdb3f9d149f4e5a0bd892eda2bb9128aa
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114779"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297153"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Passaggio 3. Eseguire una revisione post-incidente del primo evento imprevisto
 
@@ -61,5 +61,5 @@ Vedi questi percorsi di indagine aggiuntivi:
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
-- [Analizzare gli incidenti](investigate-incidents.md)
-- [Gestire gli incidenti](manage-incidents.md)
+- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+- [Gestire gli eventi imprevisti](manage-incidents.md)

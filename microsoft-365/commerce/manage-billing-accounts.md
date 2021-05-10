@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni sugli account di fatturazione e su come gestirli.
 ms.date: 03/17/2021
-ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ecac005b8b49739cb74efc4ca2fae44667f37bad
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107581"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293644"
 ---
 # <a name="manage-billing-accounts"></a>Gestire account di fatturazione
 
@@ -56,7 +56,7 @@ Nella tabella seguente sono elencati i termini importanti visualizzati nella pag
 | Profili di fatturazione | Un profilo di fatturazione definisce le proprietà della fattura, ad esempio chi riceve la fattura, la modalità di consegna della fattura, le condizioni di pagamento e un numero di ordine di acquisto. Per distribuire la fatturazione all'interno dell'organizzazione, è possibile creare più profili di fatturazione e identificare il profilo di fatturazione appropriato al momento dell'acquisto. Per ulteriori informazioni sui profili di fatturazione e su come utilizzarli per creare opzioni di fatturazione più flessibili per l'organizzazione, [vedere Understand billing profiles](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> Se è necessario modificare il **nome** o l'indirizzo della vendita, ma non viene visualizzato un **collegamento** Modifica, è necessario contattare il [supporto](../admin/contact-support-for-business-products.md) tecnico per modificarlo. Le richieste di **una modifica del nome** Venduto a richiederanno una verifica del credito. Completare [questo modulo](https://www.microsoft.com/download/details.aspx?id=102732)ed essere pronti a condividere uno dei seguenti documenti con Microsoft quando si contatta il supporto tecnico:
+> Se è necessario modificare il **nome** o l'indirizzo della vendita, ma non viene visualizzato un **collegamento** Modifica, è necessario contattare il [supporto](../business-video/get-help-support.md) tecnico per modificarlo. Le richieste di **una modifica del nome** Venduto a richiederanno una verifica del credito. Completare [questo modulo](https://www.microsoft.com/download/details.aspx?id=102732)ed essere pronti a condividere uno dei seguenti documenti con Microsoft quando si contatta il supporto tecnico:
 >
 > - Documento o lettera di registrazione rilasciata dal governo
 > - Stampa dal Registro di sistema della società locale

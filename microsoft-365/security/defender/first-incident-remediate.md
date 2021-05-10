@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2fe6c5b1b0feea2163c0a2bcc871921a885abb85
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ed597c55a646eb00d6e6d256c287b22c119f8148
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114992"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297345"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Passaggio 2. Correggere il primo evento imprevisto
 
@@ -36,7 +36,7 @@ ms.locfileid: "52114992"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender non solo fornisce funzionalità di rilevamento e analisi, ma fornisce anche il contenimento e l'eliminazione di malware. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network.  Microsoft 365 Defender offre diverse azioni di correzione che possono essere configurate per la correzione automatica a seconda del sistema operativo e del tipo di attacco.
+Microsoft 365 Defender non solo fornisce funzionalità di rilevamento e analisi, ma fornisce anche il contenimento e l'eliminazione di malware. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network.  Microsoft 365 Defender offre diverse azioni di correzione [](m365d-autoir.md) che possono essere configurate per la correzione automatica a seconda del sistema operativo e del tipo di attacco.
 
 Microsoft 365 Defender offre diverse azioni di correzione che gli analisti possono avviare manualmente. Le azioni sono suddivise in due categorie, Azioni su dispositivi e Azioni sui file. Alcune azioni possono essere usate per arrestare immediatamente la minaccia, mentre altre azioni sono utili per un'ulteriore analisi forense.
 
@@ -98,5 +98,5 @@ Informazioni su come [eseguire una revisione post-incidente di un evento imprevi
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
-- [Analizzare gli incidenti](investigate-incidents.md)
-- [Gestire gli incidenti](manage-incidents.md)
+- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+- [Gestire gli eventi imprevisti](manage-incidents.md)

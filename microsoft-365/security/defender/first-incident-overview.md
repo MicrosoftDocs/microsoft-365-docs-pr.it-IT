@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66c9821e5db00cc3da5718f52b8aaaeff5a431e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5ea847e822e094049dd8f0b941f22f3bb4f7eff4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114755"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297177"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Introduzione alla risposta al primo incidente
 
@@ -58,6 +58,17 @@ Verificare che l'organizzazione e Microsoft 365 tenant siano [pronti per la gest
 
 ## <a name="see-also"></a>Vedere anche
 
+Indicazioni per la risposta agli eventi imprevisti per Microsoft 365 Defender:
+
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
-- [Analizzare gli incidenti](investigate-incidents.md)
-- [Gestire gli incidenti](manage-incidents.md)
+- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+- [Gestire gli eventi imprevisti](manage-incidents.md)
+
+Esempi aggiuntivi di prime risposte agli eventi imprevisti:
+
+- [Posta di phishing](first-incident-path-phishing.md)
+- [Attacco di base dell'identità](first-incident-path-identity.md)
+
+[Playbook dettagliati sulla risposta agli incidenti](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+
+

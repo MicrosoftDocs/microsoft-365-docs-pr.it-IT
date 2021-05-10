@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a503c39002f55ba3464446e5266e8522b601cfc8
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: bc8040c27b7dcfa89299926d9ab52187579daf37
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544541"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297741"
 ---
-# <a name="contact-support-for-serbia"></a>Contattare il supporto tecnico per la Serbia
+# <a name="contact-support-for-serbia"></a>Contattare il supporto per la Serbia
 
-[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 190 095

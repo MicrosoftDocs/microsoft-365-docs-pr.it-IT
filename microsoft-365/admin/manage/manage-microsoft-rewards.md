@@ -1,5 +1,5 @@
 ---
-title: Gestire Microsoft Rewards
+title: Gestisci Microsoft Rewards
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 description: Gli utenti che dispongono di account Microsoft personali possono guadagnare punti Microsoft Rewards in relazione alle ricerche di lavoro se è abilitata la funzionalità Collega AAD con Premi.
-ms.openlocfilehash: 7ae88c9fd355251c47747ef8460bab1f0b30bbaa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929491"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297069"
 ---
-# <a name="manage-microsoft-rewards"></a>Gestire Microsoft Rewards
+# <a name="manage-microsoft-rewards"></a>Gestisci Microsoft Rewards
 
-Gli utenti che dispongono di account Microsoft personali possono guadagnare punti [Microsoft Rewards](https://www.microsoft.com/rewards) in relazione alle ricerche di lavoro se è abilitata la funzionalità Collega Microsoft Azure Active *Directory (Azure AD) con Rewards.*
+Gli utenti che dispongono di account Microsoft personali possono guadagnare punti [Microsoft Rewards](https://www.microsoft.com/rewards) in relazione alle ricerche di lavoro se è abilitata la funzionalità Link *Microsoft Azure Active Directory (Azure AD) con Rewards.*
 
 A meno che l'utente non acconsenta esplicitamente a questa funzionalità, il suo account Microsoft personale verrà associato all'account Azure AD dell'area di lavoro. Microsoft Rewards riceve e registra le informazioni relative a una ricerca, ma non riceve alcuna informazione sul contenuto della ricerca. Il contenuto delle query dell'organizzazione non verrà condiviso con Microsoft Rewards come parte di questa funzionalità.
 

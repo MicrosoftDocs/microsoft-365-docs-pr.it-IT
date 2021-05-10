@@ -22,12 +22,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: Scopri come acquistare e gestire i componenti aggiuntivi per l'abbonamento Microsoft 365 per le aziende.
 ms.date: 04/02/2021
-ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: d60503cd7ab7be219c3ed813dd1d9aef480cd4dc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107437"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297333"
 ---
 # <a name="buy-or-manage-add-ons"></a>Acquistare o gestire i componenti aggiuntivi
 
@@ -71,7 +71,7 @@ Per gestire un componente aggiuntivo tradizionale, accedere alla sottoscrizione 
 
 Per rimuovere una sottoscrizione di componente aggiuntivo autonomo, annulla la [sottoscrizione,](subscriptions/cancel-your-subscription.md)come qualsiasi altra sottoscrizione. Oppure puoi [disattivare la fatturazione ricorrente](subscriptions/renew-your-subscription.md).
 
-Non è possibile rimuovere un componente aggiuntivo tradizionale. Se si desidera rimuovere un componente aggiuntivo tradizionale, contattare [il supporto tecnico per assistenza.](../admin/contact-support-for-business-products.md)
+Non è possibile rimuovere un componente aggiuntivo tradizionale. Se si desidera rimuovere un componente aggiuntivo tradizionale, contattare [il supporto tecnico per assistenza.](../business-video/get-help-support.md)
   
 ## <a name="related-content"></a>Contenuto correlato
 

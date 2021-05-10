@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1890b4f9b4c71efebe833ebaee62debedbf0fb72
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114921"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297225"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Passaggio 1. Analizzare e analizzare il primo evento imprevisto
 
@@ -97,9 +97,9 @@ Di seguito è riportato un solo approccio alla triage:
 
 La comprensione del contesto che circonda gli avvisi è altrettanto importante. Spesso un avviso non è un singolo evento indipendente. Esiste una catena di processi creati, comandi e azioni che potrebbero non essere stati evasi contemporaneamente. Pertanto, un analista deve cercare la prima e l'ultima attività dell'entità sospetta nelle sequenze temporali del dispositivo per comprendere il contesto degli avvisi.
 
-Esistono diversi modi per leggere e analizzare i dati con Microsoft 365 Defender, ma l'obiettivo finale per gli analisti è quello di rispondere agli incidenti il più rapidamente possibile. Anche se Microsoft 365 Defender può ridurre in modo significativo il tempo medio per la correzione [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) tramite la funzionalità di correzione automatica leader del settore, esistono sempre casi che richiedono un'analisi manuale. 
+Esistono diversi modi per leggere e analizzare i dati con Microsoft 365 Defender, ma l'obiettivo finale per gli analisti è quello di rispondere agli incidenti il più rapidamente possibile. Sebbene Microsoft 365 Defender possa ridurre in modo significativo il tempo medio per la [](m365d-autoir.md) correzione [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) tramite la funzionalità di analisi e risposta automatizzata leader del settore, esistono sempre casi che richiedono un'analisi manuale. 
 
-Di seguito viene riportato un esempio:
+Ecco un esempio:
 
 1. Dopo aver determinato la priorità di analisi, un analista inizia un'analisi approfondita selezionando il nome dell'evento imprevisto. In questa pagina viene visualizzato il **riepilogo degli** eventi imprevisti in cui i dati vengono visualizzati nelle schede per facilitare l'analisi. Nella scheda **Avvisi** viene visualizzato il tipo di avvisi. Gli analisti possono fare clic su ogni avviso per eseguire il drill-down nella rispettiva origine di rilevamento. 
 
@@ -136,5 +136,5 @@ Informazioni su [come correggere gli eventi imprevisti.](first-incident-remediat
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
-- [Analizzare gli incidenti](investigate-incidents.md)
-- [Gestire gli incidenti](manage-incidents.md)
+- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+- [Gestire gli eventi imprevisti](manage-incidents.md)

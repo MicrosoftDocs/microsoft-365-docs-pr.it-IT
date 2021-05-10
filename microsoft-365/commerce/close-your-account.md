@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: Scopri come chiudere l'account con Microsoft.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 86232e3f433526cc60ef369eda03ef8d20ab08c9
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107473"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293668"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 
@@ -69,7 +69,7 @@ Se l'organizzazione usa Active Directory che si sincronizza con Microsoft Azure 
 6. Per ogni sottoscrizione disabilitata, ripetere i passaggi da 3 a 5 finché non vengono eliminate tutte le sottoscrizioni.
 
 > [!NOTE]
-> Se non è possibile eliminare immediatamente una sottoscrizione disabilitata, [contattare il supporto](../admin/contact-support-for-business-products.md)tecnico.
+> Se non è possibile eliminare immediatamente una sottoscrizione disabilitata, [contattare il supporto](../business-video/get-help-support.md)tecnico.
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Passaggio 4: Disabilitare l'autenticazione a più fattori
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni su come apportare modifiche al profilo dell'organizzazione, ad esempio nome dell'organizzazione, indirizzo, telefono, contatto tecnico e posta elettronica.
 ms.date: 03/30/2021
-ms.openlocfilehash: d27ad65b9f58d4da6c01b32c9441c0296a17e3bd
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 05908de7c4fc899669da2ba2a3d3024855f4b394
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107015"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297093"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modificare l'indirizzo dell'organizzazione, il contatto tecnico e altre informazioni
   
@@ -55,7 +55,7 @@ Di seguito è disponibile una descrizione di ogni campo.
 |---------|---------|
 |Nome  <br/>   | Il nome immesso qui è quello che gli utenti vedranno nelle pagine seguenti:  <br/>  Pagina di accesso: se gli utenti hanno configurato altri account Microsoft con l'indirizzo di posta elettronica aziendale o dell'istituto di istruzione, potrebbero vedere il nome dell'organizzazione nella pagina di accesso. In questo modo possono distinguere tra l'account aziendale o dell'istituto di istruzione e gli altri account e identificare quello da usare per l'accesso.  <br/>  Collegamento e pagina del profilo dell'organizzazione: il collegamento al profilo dell'organizzazione mostra il nome dell'organizzazione.  <br/>  Yammer spostamento: in Yammer spostamento sinistro viene utilizzato il nome dell'organizzazione come nome della rete Yammer principale.  <br/> OneDrive client di sincronizzazione: il nome dell'organizzazione viene visualizzato in Esplora file in Windows e Nel Finder su Mac, i percorsi dei file, il centro attività di OneDrive, la descrizione comando dell'icona del cloud di OneDrive e la finestra delle impostazioni di OneDrive. Attualmente, l'aggiornamento del nome dell'organizzazione non lo aggiorna per i client configurati. <br/> MS Teams: Organization Switcher in Teams visualizza il nome dell'organizzazione <br/>  |
 |Indirizzo, Città, Provincia, Codice postale  <br/>     | L'indirizzo immesso qui è quello che verrà visualizzato nella fattura, in Venduto a: L'indirizzo Venduto a nella fattura corrisponde all'indirizzo dell'organizzazione nella pagina del profilo (vedere Informazioni sulla fattura o sulla fattura per Microsoft 365 per le [aziende).](../../commerce/billing-and-payments/understand-your-invoice2.md)  <br/>        |
-|Paese o area geografica  <br/>    | Questo è il paese o l'area geografica in cui risiede la società. Il paese o l'area geografica che si seleziona determina quali servizi sono disponibili, le imposte e la valuta della fatturazione per il paese o l'area geografica e la posizione del data center più vicino. Vedere [Informazioni sulle restrizioni di licenza](https://office.microsoft.com/redir/FX103037529).  <br/>NOTA: una volta selezionato, il paese o l'area geografica non può essere modificato. Se si vuole cambiare la selezione, è necessario annullare l'abbonamento e ripetere l'iscrizione. Per informazioni su questo processo, [contattare il supporto](../contact-support-for-business-products.md)tecnico.        |
+|Paese o area geografica  <br/>    | Questo è il paese o l'area geografica in cui risiede la società. Il paese o l'area geografica che si seleziona determina quali servizi sono disponibili, le imposte e la valuta della fatturazione per il paese o l'area geografica e la posizione del data center più vicino. Vedere [Informazioni sulle restrizioni di licenza](https://office.microsoft.com/redir/FX103037529).  <br/>NOTA: una volta selezionato, il paese o l'area geografica non può essere modificato. Se si vuole cambiare la selezione, è necessario annullare l'abbonamento e ripetere l'iscrizione. Per informazioni su questo processo, [contattare il supporto](../../business-video/get-help-support.md)tecnico.        |
 |Telefono  <br/>     | Numero principale per l'organizzazione. Si tratta in genere del numero della sede centrale.  <br/>        |
 |Contatto tecnico  <br/> |Questo è l'indirizzo di posta elettronica della persona tecnica principale che gestisce l'Microsoft 365 abbonamento. Si tratta della persona che riceverà le comunicazioni sullo stato Microsoft 365 servizio.  <br/> |
 |Lingua preferita  <br/> |La lingua preferita determina la lingua di tutte le comunicazioni inviate da Microsoft all'organizzazione. Quando si effettua l'accesso, l'impostazione determina la lingua usata da SharePoint Online, ovvero la lingua visualizzata dagli utenti del sito del team. Se si modifica l'impostazione sulla preferenza della lingua dopo l'accesso, tutte le comunicazioni future saranno inviate nella lingua più recente selezionata.    <br/> NOTA: la lingua utilizzata da SharePoint Online non può essere modificata.           |

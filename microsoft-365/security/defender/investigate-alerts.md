@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939543"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297129"
 ---
-# <a name="analyze-alerts-in-microsoft-365-defender"></a>Analizzare gli avvisi in Microsoft 365 Defender
+# <a name="investigate-alerts-in-microsoft-365-defender"></a>Analizzare gli avvisi in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,13 +40,13 @@ Gli avvisi sono alla base di tutti gli eventi imprevisti e indicano il verificar
 
 In Microsoft 365 Defender, gli avvisi correlati vengono aggregati insieme per formare [eventi imprevisti.](incidents-overview.md) Gli incidenti forniscono sempre il contesto più ampio di un attacco, tuttavia, l'analisi degli avvisi può essere utile quando è necessaria un'analisi più approfondita. 
 
-La **coda Avvisi** mostra il set corrente di avvisi. Si arriva alla coda degli avvisi da **Eventi imprevisti & avvisi > avvisi** sulla barra di avvio veloce del Centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)).
+La **coda Avvisi** mostra il set corrente di avvisi. Si arriva alla coda degli avvisi da **Eventi imprevisti & avvisi > avvisi** sulla barra di avvio veloce del centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)).
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Esempio di coda degli avvisi":::
 
 Gli avvisi di diverse soluzioni di sicurezza Microsoft come Microsoft Defender for Endpoint, Microsoft Defender per Office 365 e Microsoft 365 Defender vengono visualizzati qui.
 
-Per impostazione predefinita, nella coda degli avvisi nel Centro sicurezza Microsoft 365 vengono visualizzati gli avvisi nuovi e in corso degli ultimi 30 giorni. L'avviso più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo. 
+Per impostazione predefinita, nella coda degli avvisi nel centro sicurezza Microsoft 365 vengono visualizzati gli avvisi nuovi e in corso degli ultimi 30 giorni. L'avviso più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo. 
 
 Dalla coda degli avvisi predefinita, è  possibile selezionare **Filtri** per visualizzare un riquadro Filtri, da cui è possibile specificare un sottoinsieme degli avvisi. Di seguito viene riportato un esempio.
 
@@ -66,7 +66,7 @@ Dalla coda degli avvisi predefinita, è  possibile selezionare **Filtri** per vi
 
 Per visualizzare la pagina di avviso principale, selezionare il nome dell'avviso. Di seguito viene riportato un esempio.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel Centro sicurezza Microsoft 365":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel centro sicurezza Microsoft 365 sicurezza":::
 
 È inoltre possibile selezionare **l'azione Apri la pagina di avviso** principale nel riquadro **Gestisci** avviso.
 
@@ -77,7 +77,7 @@ Una pagina di avviso è composta da queste sezioni:
 - Eventi correlati
 - Dettagli di riepilogo
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel Centro sicurezza Microsoft 365":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel centro sicurezza Microsoft 365 sicurezza":::
 
 In tutta una pagina di avviso, puoi selezionare i puntini di sospensione (**...**) accanto a qualsiasi entità per visualizzare le azioni disponibili, ad esempio l'apertura della pagina di asset specifica o la procedura di correzione specifica.
 
@@ -85,7 +85,7 @@ In tutta una pagina di avviso, puoi selezionare i puntini di sospensione (**...*
 
 La **sezione Azioni eseguite** contiene un elenco di asset interessati, ad esempio cassette postali, dispositivi e utenti interessati da questo avviso. 
 
-È inoltre possibile selezionare **Visualizza nel centro notifiche** per visualizzare la scheda **Cronologia** del **centro** notifiche nel centro sicurezza Microsoft 365. 
+È inoltre possibile selezionare **Visualizza nel centro** notifiche  per visualizzare la scheda **Cronologia** del centro notifiche nel centro Microsoft 365 sicurezza. 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Tracciare il ruolo di un avviso nella storia di avviso
 
@@ -128,7 +128,7 @@ Da questo riquadro è inoltre possibile eseguire queste azioni aggiuntive:
 
 Di seguito viene riportato un esempio.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Esempio di azioni su un avviso nel Centro sicurezza Microsoft 365":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Esempio di azioni su un avviso nel Centro sicurezza Microsoft 365 sicurezza":::
 
 L'elenco delle azioni aggiuntive dipende dal tipo di avviso.
 
@@ -138,8 +138,12 @@ Una volta completata l'analisi di un avviso e  può essere risolto, passare al r
 
 Classificare gli avvisi e specificarne la determinazione aiuta a ottimizzare Microsoft 365 Defender per fornire avvisi più veri e meno falsi.
 
+## <a name="next-steps"></a>Passaggi successivi
+
+In base alle esigenze per gli eventi imprevisti in-process, continuare [l'indagine.](investigate-incidents.md)
+
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
 - [Gestire gli incidenti](manage-incidents.md)
-- [Analizzare gli eventi imprevisti](investigate-incidents.md)
+- [Indagare sugli incidenti](investigate-incidents.md)

@@ -15,13 +15,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
-description: Scaricare controlli di terze parti, scoprire come Microsoft mantiene al sicuro i dati dei clienti e sapere come è possibile conformarsi a ISO, HIPAA, FINRA e FedRAMP quando si usa Office 365.
-ms.openlocfilehash: 6d7dafb3493aabe525c266184235a63840ce8785
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Scaricare controlli di terze parti, scoprire come Microsoft mantiene al sicuro i dati dei clienti e sapere come è possibile conformarsi a ISO, HIPAA, FINRA e FedRAMP quando si utilizza Office 365.
+ms.openlocfilehash: 2e473ad4a17ac5c229563ee3286942e90bfc674f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919562"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297237"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garanzia del servizio nel Centro sicurezza e conformità
 
@@ -29,11 +29,11 @@ Usare Garanzia del servizio nel Centro sicurezza & conformità per accedere ai d
   
 - Procedure di sicurezza Microsoft per i dati dei clienti archiviati in Office 365. 
     
-- Report di controllo di terze parti indipendenti di Office 365. 
+- Report di controllo indipendenti di terze parti Office 365. 
     
-- Dettagli di implementazione e test per i controlli di sicurezza, privacy e conformità utilizzati da Office 365 per proteggere i dati. 
+- Dettagli di implementazione e test per i controlli di sicurezza, privacy e conformità Office 365 per proteggere i dati. 
     
-È inoltre possibile scoprire in che modo Office 365 può aiutare i clienti a conformarsi a standard, leggi e normative in tutti i settori, ad esempio:
+Puoi anche scoprire in che modo Office 365 aiutare i clienti a conformarsi a standard, leggi e normative in tutti i settori, ad esempio:
   
 -  International Organization for Standardization (ISO) 27001 e 27018 
     
@@ -41,22 +41,22 @@ Usare Garanzia del servizio nel Centro sicurezza & conformità per accedere ai d
     
 - FedRAMP (Federal Risk and Authorization Management Program)
     
-## <a name="who-can-access-office-365-service-assurance-and-how"></a>Chi può accedere a Office 365 Service Assurance e come?
+## <a name="who-can-access-office-365-service-assurance-and-how"></a>Who possibile accedere a Office 365 service assurance e come?
 
  **I nuovi clienti e** i clienti che valutano i servizi online Microsoft possono accedere a Garanzia del servizio, inclusa nei piani di Office 365 Enterprise E3 ed E5 (sottoscrizioni di valutazione e a pagamento). Se non si dispone di uno di questi piani e si desidera provare Garanzia del servizio, è possibile iscriversi a una versione di valutazione di [Office 365 Enterprise E5.](https://go.microsoft.com/fwlink/p/?LinkID=698279)
   
- **I membri della sottoscrizione di O365** possono accedere alla sezione Garanzia del servizio nel Centro protezione di Office 365 per impostazione predefinita. La garanzia del servizio fornisce report e documenti che descrivono le procedure di sicurezza di Microsoft per i dati dei clienti archiviati in Office 365. Fornisce inoltre report di controllo di terze parti indipendenti in Office 365.
+ Per impostazione predefinita, i membri della sottoscrizione di **O365** possono accedere alla sezione Garanzia del servizio Office 365 Protection Center. La garanzia del servizio fornisce report e documenti che descrivono le procedure di sicurezza di Microsoft per i dati dei clienti archiviati in Office 365. Fornisce inoltre report di controllo indipendenti di terze parti Office 365.
  
 ## <a name="choose-your-industry-and-regional-settings"></a>Scegliere le impostazioni internazionali e del settore
 <a name="Chooseyourindustryregional"> </a>
 
 Quando si accede a Garanzia del servizio per la prima volta, il primo passaggio consiste nel configurare le impostazioni internazionali e del settore. È possibile modificare queste impostazioni in qualsiasi momento. La configurazione di queste impostazioni consente a Garanzia del servizio di fornire contenuti più rilevanti per l'organizzazione. Per configurare le impostazioni del settore e dell'area geografica:
   
-1. Dopo aver accesso a Garanzia del servizio, selezionare **Impostazioni** e la pagina Impostazioni area geografica e settore viene visualizzata come illustrato nello screenshot seguente. 
+1. Dopo aver accesso a Garanzia del servizio, **selezionare Impostazioni** e verrà visualizzata la pagina Impostazioni area geografica e settore, come illustrato nello screenshot seguente. 
     
     ![Visualizza la pagina Impostazioni Centro protezione.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
-2. Nella pagina **Impostazioni** selezionare la freccia in giù accanto a **Area** geografica e controllare le aree appropriate per l'organizzazione. 
+2. Nella pagina **Impostazioni** selezionare la freccia in giù accanto a **Area** geografica e verificare le aree appropriate per l'organizzazione. 
     
 3. Selezionare la freccia in giù accanto a **Settore** e controllare i settori appropriati per l'organizzazione. 
     
@@ -67,15 +67,15 @@ Quando si accede a Garanzia del servizio per la prima volta, il primo passaggio 
 
 Per esaminare e scaricare il contenuto, selezionare un'opzione nel riquadro di spostamento:
   
-- **Report di** conformità per visualizzare i controlli e le valutazioni indipendenti di Office 365 e di altri servizi cloud Microsoft, come illustrato nella schermata seguente. 
+- **Report di** conformità per visualizzare controlli e valutazioni indipendenti di Office 365 e di altri servizi cloud Microsoft, come illustrato nella schermata seguente. 
     
     ![Mostra la pagina Garanzia del servizio: Report di conformità dei servizi.](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
-- **Considerare attendibili i** documenti per visualizzare informazioni sul funzionamento di Office 365 da parte di Microsoft, come illustrato nella schermata seguente. 
+- **Considera attendibili i** documenti per visualizzare le informazioni sul funzionamento di Microsoft Office 365 come illustrato nella schermata seguente. 
     
     ![Mostra la pagina Garanzia del servizio: Considera attendibili i documenti forniti da Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
-- **Controlli controllati per** visualizzare informazioni su come i controlli di Office 365 soddisfano i requisiti di sicurezza, conformità e privacy, come illustrato nella schermata seguente. 
+- **Controlli controllati per** visualizzare informazioni su come i controlli Office 365 soddisfano i requisiti di sicurezza, conformità e privacy, come illustrato nella schermata seguente. 
     
     ![Mostra la schermata Controlli controllati di Controllo del servizio.](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
@@ -86,16 +86,16 @@ Selezionare il report che si desidera scaricare e selezionare **Salva** per scar
   
 |**Pagina Garanzia del servizio**|**Contenuto disponibile**|**Descrizione**|
 |:-----|:-----|:-----|
-|Report di conformità  <br/> | FedRamp  <br/>  Valutazione GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Usare i report di conformità dei servizi per esaminare le valutazioni di controllo eseguite da revisori indipendenti di terze parti delle operazioni di recapito dei servizi di Office 365.  <br/> |
+|Report di conformità  <br/> | FedRamp  <br/>  Valutazione GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Utilizzare i report di conformità dei servizi per esaminare le valutazioni di controllo eseguite da revisori indipendenti di terze parti Office 365 service delivery operations.  <br/> |
 |Documenti sull'affidabilità  <br/> | Domande frequenti e white paper  <br/>  Report sulla gestione dei rischi  <br/> |Utilizzare white paper, domande frequenti, report di fine anno e altre risorse riservate di Microsoft rese disponibili ai sensi del contratto di non divulgazione per le valutazioni di revisione/rischio.  <br/> |
-|Controlli controllati  <br/> |Standard e normative globali implementati da Office 365.  <br/> | Supporto per la valutazione dei rischi durante la valutazione, l'onboarding o l'uso dei servizi di Office 365. Scoprire:  <br/> <br/>- Come i controlli di Office 365 soddisfano i requisiti di sicurezza, conformità e privacy.  <br/>- Informazioni sui test dei controlli in Office 365, sui risultati di questi test e sul momento in cui sono stati completati.  <br/> |
+|Controlli controllati  <br/> |Standard e normative globali implementati Office 365.Global standards and regulations that Office 365 has implemented.  <br/> | Supporto per la valutazione dei rischi durante la valutazione, l'onboarding o l'Office 365 servizi. Scoprire:  <br/> <br/>- Come i Office 365 soddisfano i requisiti di sicurezza, conformità e privacy.  <br/>- Informazioni sui test dei Office 365, sui risultati di questi test e sul momento in cui sono stati completati.  <br/> |
    
 A seconda della configurazione specifica, le opzioni incluse nella visualizzazione potrebbero avere alcune differenze.
     
 ## <a name="get-help-with-service-assurance"></a>Assistenza per Service Assurance
 <a name="addother"> </a>
 
-[Contattare il supporto tecnico per i prodotti per le aziende - Guida per l'amministratore](../admin/contact-support-for-business-products.md).
+[Contattare il supporto tecnico per i prodotti per le aziende - Guida per l'amministratore](../business-video/get-help-support.md).
   
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 <a name="addother"> </a>
