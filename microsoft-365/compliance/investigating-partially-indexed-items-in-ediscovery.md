@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come gestire elementi parzialmente indicizzati (denominati anche elementi non indicizzati) da Exchange, SharePoint e OneDrive for Business all'interno dell'organizzazione.
-ms.openlocfilehash: c24fb2d9b633181538d76cf35e27dae1824b311d
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 539fd2687735a5ee14be543750becca8c6c3154c
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994805"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311455"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Analisi degli elementi parzialmente indicizzati in eDiscovery
 
@@ -49,9 +49,9 @@ Dopo aver eseguito una ricerca eDiscovery, il numero totale e le dimensioni degl
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calcolo del rapporto tra gli elementi parzialmente indicizzati nell'organizzazione
 
-Per comprendere l'esposizione dell'organizzazione a elementi parzialmente indicizzati, è possibile eseguire una ricerca di tutto il contenuto in tutte le cassette postali (utilizzando una query con parole chiave vuota). Nell'esempio seguente, sono presenti 56.208 (4.830 MB) elementi completamente indicizzati e 470 (316 MB) elementi parzialmente indicizzati.
+Per comprendere l'esposizione dell'organizzazione a elementi parzialmente indicizzati, è possibile eseguire una ricerca di tutto il contenuto in tutte le cassette postali (utilizzando una query con parole chiave vuota). Nell'esempio seguente sono presenti 1.629.904 (146,46 GB) elementi completamente indicizzati e 10.025 (10,27 GB) elementi parzialmente indicizzati.
   
-![Esempio di statistiche di ricerca che mostrano elementi parzialmente indicizzati](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Esempio di statistiche di ricerca che mostrano elementi parzialmente indicizzati](../media/PartiallyIndexedItemsTest.png)
   
 È possibile determinare la percentuale di elementi parzialmente indicizzati utilizzando i calcoli seguenti.
   
@@ -59,23 +59,23 @@ Per comprendere l'esposizione dell'organizzazione a elementi parzialmente indici
 
 `(Total number of partially indexed items/Total number of items) x 100`
 
-`(470/56,208) x 100 = 0.84%`
+`(10025/1629904) x 100 = 0.62%`
 
-Utilizzando i risultati della ricerca dell'esempio precedente, lo 0,84% di tutti gli elementi delle cassette postali viene parzialmente indicizzato.
+Utilizzando i risultati della ricerca dell'esempio precedente, lo 0,62% di tutti gli elementi delle cassette postali viene parzialmente indicizzato.
   
  **Per calcolare la percentuale delle dimensioni degli elementi parzialmente indicizzati nell'organizzazione:**
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(316 MB/4830 MB) x 100 = 6.54%`
+`(10.27 GB/146.46 MB) x 100 = 7.0%`
 
-Nell'esempio precedente, quindi, il 6,54% delle dimensioni totali degli elementi delle cassette postali deriva da elementi parzialmente indicizzati. Come indicato in precedenza, la maggior parte delle organizzazioni ha meno dell'1% del contenuto in base al volume e meno del 12% del contenuto per dimensioni parzialmente indicizzate.
+Nell'esempio precedente, pertanto, il 7% delle dimensioni totali degli elementi delle cassette postali deriva da elementi parzialmente indicizzati. Come indicato in precedenza, la maggior parte delle organizzazioni ha meno dell'1% del contenuto in base al volume e meno del 12% del contenuto per dimensioni parzialmente indicizzate.
 
 ## <a name="working-with-partially-indexed-items"></a>Utilizzo di elementi parzialmente indicizzati
 
 Nei casi in cui è necessario esaminare parzialmente gli elementi per verificare che non contengano informazioni rilevanti, è possibile esportare un [report](export-a-content-search-report.md) di ricerca del contenuto contenente informazioni sugli elementi parzialmente indicizzati. Quando si esporta un report di ricerca contenuto, assicurarsi di scegliere una delle opzioni di esportazione che include elementi parzialmente indicizzati.
   
-![Scegliere la seconda o la terza opzione per esportare elementi parzialmente indicizzati](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Scegliere la seconda o la terza opzione per esportare elementi parzialmente indicizzati](../media/PartiallyIndexedItemsExportOptions.png)
   
 Quando si esportano i risultati della ricerca di eDiscovery o un report di ricerca utilizzando una di queste opzioni, l'esportazione include un report denominato Non indicizzato Items.csv. Questo report include la maggior parte delle stesse informazioni del file ResultsLog.csv; Tuttavia, il file di Items.csv non indicizzato include anche due campi correlati a elementi parzialmente indicizzati: **Tag** di errore e **Proprietà errore.** Questi campi contengono informazioni sull'errore di indicizzazione per ogni elemento parzialmente indicizzato. L'utilizzo delle informazioni contenute in questi due campi consente di determinare se l'errore di indicizzazione per un particolare impatto sull'indagine. In caso contrario, è possibile eseguire una ricerca mirata ed esportare messaggi di posta elettronica specifici e documenti di SharePoint o OneDrive in modo da poterli esaminare per determinare se sono rilevanti per l'indagine. Per istruzioni dettagliate, vedere [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
 

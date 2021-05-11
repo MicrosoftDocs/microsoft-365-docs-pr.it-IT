@@ -17,95 +17,97 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come gestire i casi di eDiscovery di base. Ciò include la chiusura di un caso, la riapertura di un caso chiuso e l'eliminazione di un caso.
-ms.openlocfilehash: 17b243a7207fd6927188b42e585101ff1d258b76
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: 251ca932954071cf949c45343130f122464dcf01
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412795"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310897"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Chiudere, riaprire ed eliminare un caso di Core eDiscovery
 
-Questo articolo descrive come chiudere, riaprire ed eliminare i casi di eDiscovery di base in Microsoft 365.
+In questo articolo viene descritto come chiudere, riaprire ed eliminare i casi di eDiscovery di base in Microsoft 365.
 
 ## <a name="close-a-case"></a>Chiudere un caso
 
 Una volta completata la causa legale o l'indagine supportata da un caso di Core eDiscovery, è possibile chiudere il caso. Ecco cosa accade quando si chiude un caso:
   
-- Se il caso contiene percorsi di contenuto per il blocco di eDiscovery, tali blocchi verranno disattivati. Una volta disattivata l'esenzione, viene applicato un periodo di tolleranza di 30 giorni (denominato blocco di *ritardo)* ai percorsi di contenuto che erano in attesa. Ciò consente di impedire l'eliminazione immediata del contenuto e offre agli amministratori la possibilità di cercare e ripristinare il contenuto prima che possa essere eliminato definitivamente dopo la scadenza del periodo di blocco. Per ulteriori informazioni, vedere [Rimozione di percorsi di contenuto da un blocco di eDiscovery.](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)
+- Se il caso contiene blocchi di eDiscovery, verranno disattivati. Dopo che il blocco è stato disattivato, un periodo di tolleranza di 30 giorni (denominato blocco di *ritardo)* viene applicato alle posizioni di contenuto che erano in attesa. Ciò consente di evitare che il contenuto venga eliminato immediatamente e offre agli amministratori la possibilità di cercare e ripristinare il contenuto prima che venga eliminato definitivamente dopo la scadenza del periodo di attesa. Per ulteriori informazioni, vedere [Rimozione di percorsi di contenuto da un blocco di eDiscovery.](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)
 
-- La chiusura di un caso disattiva solo le esenzioni associate a tale caso. Se altri blocchi vengono inseriti in un percorso di contenuto (ad esempio un blocco per controversia legale, un criterio di conservazione o un blocco di un altro caso di Core eDiscovery), tali blocchi verranno mantenuti.
+- La chiusura di un caso disattiva solo le esenzioni associate a tale caso. Se altre esenzioni vengono collocate in un percorso di contenuto (ad esempio un blocco per controversia legale, un criterio di conservazione o un blocco di un altro caso di eDiscovery di base), tali blocchi verranno comunque mantenuti.
 
-- Il caso è ancora elencato nella pagina Core eDiscovery nel Centro conformità Microsoft 365. I dettagli, le esenzioni, le ricerche e i membri di un caso chiuso vengono mantenuti.
+- Il caso è ancora elencato nella pagina Core eDiscovery nel Centro Microsoft 365 conformità. I dettagli, le esenzioni, le ricerche e i membri di un caso chiuso vengono conservati.
 
-- È possibile modificare un caso dopo che è stato chiuso. Ad esempio, è possibile aggiungere o rimuovere membri, creare ricerche ed esportare i risultati della ricerca. La differenza principale tra casi attivi e chiusi è che i blocchi di eDiscovery vengono disattivati quando un caso viene chiuso.
+- È possibile modificare un caso dopo che è stato chiuso. Ad esempio, è possibile aggiungere o rimuovere membri, creare ricerche ed esportare risultati di ricerca. La differenza principale tra i casi attivi e chiusi è che i blocchi di eDiscovery vengono disattivati quando un caso viene chiuso.
 
 Per chiudere un caso:
   
-1. Nel Centro conformità Microsoft 365 fare clic su **eDiscovery** Core per visualizzare l'elenco  >   dei casi di eDiscovery di base nell'organizzazione.
+1. Nel Centro Microsoft 365 conformità fare clic su **eDiscovery** Core per visualizzare l'elenco dei casi di eDiscovery di base  >   nell'organizzazione.
 
 2. Fare clic sul nome del caso che si desidera chiudere.
 
-    Viene **visualizzata la pagina Gestisci** questo caso a comparsa.
+   ![Chiudere il caso nella home page del caso](../media/eDiscoveryCaseHomePage.png)
 
-3. In **Gestisci stato caso fare** clic su Chiudi **caso.**
+3. Nella home page, in **Stato,** fare clic **su Chiudi caso.**
 
     Viene visualizzato un avviso che indica che le esenzioni associate al caso verranno disattivate.
 
 4. Fare **clic su Sì** per chiudere il caso.
 
-    Lo stato nella pagina **Gestisci questo caso** a comparsa viene modificato da **Attivo** a **Chiusura.**
+    Lo stato nella home page del caso viene modificato da **Attivo** a **Chiuso.**
 
-5. Chiudere la **pagina Gestisci questo caso.**
+5. Nella pagina **Core eDiscovery** fare clic su **Aggiorna** per aggiornare lo stato del caso chiuso. Il completamento del processo di chiusura potrebbe richiedere fino a 60 minuti.
 
-6. Nella pagina **Core eDiscovery** fare clic su **Aggiorna** per aggiornare lo stato del caso chiuso. Il completamento del processo di chiusura potrebbe richiedere fino a 60 minuti.
-
-    Al termine del processo, lo stato del caso viene modificato in **Chiuso** nella **pagina Core eDiscovery.** Fare di nuovo clic sul  nome del caso per visualizzare la pagina Gestisci questo caso a comparsa, che contiene informazioni sulla chiusura del caso e sull'utente che lo ha chiuso.
+    Al termine del processo, lo stato del caso viene modificato in **Chiuso** nella **pagina Core eDiscovery.**
 
 ## <a name="reopen-a-closed-case"></a>Riaprire un caso chiuso
 
-Quando si riapre un caso, tutti i blocchi di eDiscovery presenti al momento della chiusura del caso non verranno ripristinati automaticamente. Dopo la riapertura del caso, sarà necessario passare alla pagina **Esenzioni** e attivare le esenzioni precedenti. Per attivare un'esenzione, selezionarla per visualizzare la pagina a comparsa e quindi impostare l'interruttore **Stato** su **Attivato.**
+Quando si riapre un caso, le eventuali eDiscovery conservate al momento della chiusura del caso non verranno ripristinate automaticamente. Dopo la riapertura del caso, è necessario passare alla pagina **Esenzioni** e attivare le esenzioni precedenti. Per attivare un'esenzione, selezionarla per visualizzare la pagina a comparsa e quindi impostare l'interruttore **Stato** su **Attivato.**
   
-1. Nel Centro conformità Microsoft 365 fare clic su **eDiscovery** Core per visualizzare l'elenco  >   dei casi di eDiscovery di base nell'organizzazione.
+1. Nel Centro Microsoft 365 conformità fare clic su **eDiscovery** Core per visualizzare l'elenco dei casi di eDiscovery di base  >   nell'organizzazione.
 
 2. Fare clic sul nome del caso che si desidera riaprire.
 
-    Viene **visualizzata la pagina Gestisci** questo caso a comparsa. 
+   ![Riaprire un caso chiuso](../media/eDiscoveryCaseHomePageReopen.png)
 
-3. In **Gestisci stato caso fare** clic su **Riapri caso.**
+3. Nella home page, in **Stato, fare** clic su **Riapri caso.**
 
     Viene visualizzato un avviso che indica che le esenzioni associate al caso al momento della chiusura non verranno attivate automaticamente.
 
 4. Fare **clic su Sì** per riaprire il caso.
 
-    Lo stato nella pagina **Gestisci questo caso** a comparsa viene modificato da **Chiuso** ad **Attivo.**
+    Lo stato nella pagina a comparsa della home page del caso viene modificato da **Chiuso** ad **Attivo.**
 
-5. Chiudere la **pagina Gestisci questo caso.** 
+5. Nella pagina **Core eDiscovery** fare clic su **Aggiorna** per aggiornare lo stato del caso riaperto. Il completamento del processo di riapertura potrebbe richiedere fino a 60 minuti. 
 
-6. Nella pagina **Core eDiscovery** fare clic su **Aggiorna** per aggiornare lo stato del caso riaperto. Il completamento del processo di riapertura potrebbe richiedere fino a 60 minuti. 
+    Al termine del processo, lo stato del caso viene modificato in **Attivo** nella **pagina Core eDiscovery.**
 
-    Al termine del processo, lo stato del caso viene modificato in **Attivo** nella **pagina Core eDiscovery.** 
+7. (Facoltativo) Per attivare eventuali esenzioni associate al  caso riaperto, passare alla scheda Esenzioni, selezionare un'esenzione e quindi selezionare la casella di controllo in **Stato** nella pagina del riquadro a comparsa di blocco.
   
 ## <a name="delete-a-case"></a>Eliminare un caso
 
-È inoltre possibile eliminare i casi di eDiscovery core attivi e chiusi. Quando si elimina un caso, tutte le ricerche e le esportazioni nel caso vengono eliminate e il caso viene rimosso dall'elenco dei casi nella pagina **Core eDiscovery** nel Centro conformità Microsoft 365. Non è possibile riaprire un caso eliminato.
+È inoltre possibile eliminare i casi di eDiscovery core attivi e chiusi. Quando si elimina un caso, tutte le ricerche e le esportazioni nel caso vengono eliminate e il caso viene rimosso dall'elenco dei casi nella pagina **eDiscovery** di base nel Centro conformità Microsoft 365. Non è possibile riaprire un caso eliminato.
 
-Prima di poter eliminare un caso (che sia attivo o chiuso), è necessario eliminare tutti i blocchi *di* eDiscovery associati al caso. Ciò include l'eliminazione delle esenzioni con stato **Disattivato.** 
+Prima di poter eliminare un caso ,sia esso attivo  o chiuso, è necessario eliminare tutte le eDiscovery associate al caso. Ciò include l'eliminazione delle esenzioni con stato **Disattivato.** 
 
 Per eliminare un blocco di eDiscovery:
 
-1. Passare alla **scheda Esenzioni** nel caso in cui si desidera eliminare.
+1. Passare alla **scheda** Esenzioni nel caso in cui si desidera eliminare.
 
-2. Fare clic sull'esenzione che si desidera eliminare.
+2. Selezionare l'esenzione che si desidera eliminare.
 
-3. Nella pagina a comparsa fare clic su **Elimina blocco.**
+3. Nella pagina a comparsa fare clic su **Elimina.**
+
+      ![Eliminare un blocco di eDiscovery](../media/DeleteeDiscoveryHold.png)
 
 Per eliminare un caso:
 
-1. Nel Centro conformità Microsoft 365 fare clic su **eDiscovery** Core per visualizzare l'elenco  >   dei casi di eDiscovery di base nell'organizzazione.
+1. Nel Centro Microsoft 365 conformità fare clic su **eDiscovery** Core per visualizzare l'elenco dei casi di eDiscovery di base  >   nell'organizzazione.
 
 2. Fare clic sul nome del caso che si desidera eliminare.
 
-3. In **Gestisci stato caso nella** pagina a comparsa fare clic su Elimina **caso.**
+3. Nella home page del caso, in **Stato,** fare clic **su Elimina caso.**
+
+      ![Riaprire un caso chiuso](../media/eDiscoveryCaseHomePageDelete.png)
 
 Se il caso che si sta tentando di eliminare contiene ancora blocchi di eDiscovery, verrà visualizzato un messaggio di errore. Sarà necessario eliminare tutte le esenzioni associate al caso e quindi riprovare a eliminare il caso.

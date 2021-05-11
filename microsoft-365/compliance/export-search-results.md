@@ -1,5 +1,5 @@
 ---
-title: Esportare i risultati di Ricerca contenuto
+title: Esportare i risultati della ricerca contenuto
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,22 +20,22 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: Esportare i risultati della ricerca da una ricerca contenuto nel centro Microsoft 365 conformità in un computer locale. I risultati della posta elettronica vengono esportati come file PST. Il contenuto SharePoint e OneDrive for Business siti vengono esportati come documenti Office nativi.
+description: Esportare i risultati della ricerca da una ricerca contenuto nel Centro Microsoft 365 conformità in un computer locale. I risultati della posta elettronica vengono esportati come file PST. Il contenuto SharePoint e OneDrive for Business siti vengono esportati come documenti Office nativi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bb46966ddd8d4b2ae61091b126daea1413039ac
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994861"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311961"
 ---
-# <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
+# <a name="export-content-search-results"></a>Esportare i risultati della ricerca contenuto
 
 Dopo aver eseguito correttamente una ricerca contenuto, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da SharePoint e OneDrive for Business, vengono esportate copie di documenti Office nativi. I risultati della ricerca esportati includono altri documenti e report.
   
 L'esportazione dei risultati di una ricerca contenuto implica la preparazione dei risultati e il loro download in un computer locale.
   
-## <a name="before-you-export-content-search-results"></a>Prima di esportare i risultati della ricerca contenuto
+## <a name="before-you-export-search-results"></a>Prima di esportare i risultati della ricerca
 
 - Per esportare i risultati della ricerca, è necessario disporre del ruolo di gestione esportazione nel Centro sicurezza & conformità. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
 
@@ -57,7 +57,7 @@ L'esportazione dei risultati di una ricerca contenuto implica la preparazione de
   > <sup>1</sup> Microsoft non produce estensioni o componenti aggiuntivi di terze parti per ClickOnce applicazioni. L'esportazione dei risultati della ricerca con un browser non supportato con estensioni o componenti aggiuntivi di terze parti non è supportata.<br/>
   > <sup>2</sup> In seguito alle recenti modifiche apportate al Microsoft Edge, il ClickOnce non è più abilitato per impostazione predefinita. Per istruzioni sull'abilitazione del ClickOnce in Edge, vedere [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- È consigliabile scaricare i risultati della ricerca in un computer locale. Tuttavia, per eliminare il firewall o l'infrastruttura proxy dell'azienda dal causare problemi durante il download dei risultati della ricerca, è consigliabile scaricare i risultati della ricerca in un desktop virtuale esterno alla rete. Ciò può ridurre i timeout che si verificano nelle connessioni dati di Azure durante l'esportazione di un numero elevato di file. Per ulteriori informazioni sui desktop virtuali, vedere [Windows Desktop virtuale](https://azure.microsoft.com/services/virtual-desktop). 
+- È consigliabile scaricare i risultati della ricerca in un computer locale. Per evitare che il firewall o l'infrastruttura proxy dell'azienda possa causare problemi durante il download dei risultati della ricerca, è consigliabile scaricare i risultati della ricerca in un desktop virtuale esterno alla rete. Ciò può ridurre i timeout che si verificano nelle connessioni dati di Azure durante l'esportazione di un numero elevato di file. Per ulteriori informazioni sui desktop virtuali, vedere [Windows Desktop virtuale](https://azure.microsoft.com/services/virtual-desktop).
 
 - Per migliorare le prestazioni durante il download dei risultati di ricerca, è consigliabile suddividere le ricerche che restituiscono un set di risultati di grandi dimensioni in ricerche più piccole. È ad esempio possibile utilizzare intervalli di date nelle query di ricerca per restituire un set più piccolo di risultati che possono essere scaricati più velocemente.
   
@@ -82,55 +82,57 @@ L'esportazione dei risultati di una ricerca contenuto implica la preparazione de
     </system.net>
     ```
 
+- Se i risultati di una ricerca contenuto sono precedenti a 7 giorni e si invia un processo di esportazione, viene visualizzato un messaggio di errore in cui viene richiesto di eseguire di nuovo la ricerca per aggiornare i risultati della ricerca. In questo caso, annullare l'esportazione, eseguire di nuovo la ricerca e quindi avviare di nuovo l'esportazione.
+
 ## <a name="step-1-prepare-search-results-for-export"></a>Passaggio 1: Preparare i risultati della ricerca per l'esportazione
 
 Il primo passaggio consiste nel preparare i risultati della ricerca per l'esportazione. Quando si preparano i risultati, questi vengono caricati in un percorso di Archiviazione di Azure fornito da Microsoft nel cloud Microsoft. Il contenuto delle cassette postali e dei siti viene caricato alla velocità massima di 2 GB all'ora.
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Nel Centro Microsoft 365 conformità selezionare la ricerca di contenuto da cui si desidera esportare i risultati.
   
-2. Accedere usando l'account di lavoro o della scuola.
+2. Scegliere **Esporta** risultati dal menu Azioni nella parte inferiore della pagina a **comparsa.**
+
+   ![Opzione Esporta risultati nel menu Azioni](../media/ActionMenuExportResults.png)
+
+   Viene **visualizzata la** pagina a comparsa Esporta risultati. Le opzioni di esportazione disponibili per esportare il contenuto dipendono dal fatto che i risultati della ricerca si trovino nelle cassette postali o nei siti o in una combinazione di entrambi.
+
+3. In **Opzioni di output** scegliere una delle opzioni seguenti:
   
-3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic **su Cerca** \> **contenuto .**
+   ![Opzioni di esportazione dell'output](../media/ExportOutputOptions.png)
+
+    - Tutti gli elementi, esclusi quelli con formato non riconosciuto, vengono crittografati o non sono stati **indicizzati per altri motivi.** Questa opzione esporta solo gli elementi indicizzati.
   
-4. Nella pagina **Ricerca contenuto** selezionare una ricerca. 
+    - Tutti gli elementi, inclusi quelli con formato non riconosciuto, vengono crittografati o non sono stati **indicizzati per altri motivi.** Questa opzione esporta gli elementi indicizzati e non indicizzati.
   
-5. Nel riquadro dei dettagli, in **Esporta i risultati in un computer**, fare clic su **Avvia esportazione**.
+    - **Solo gli elementi con un** formato non riconosciuto, crittografati o non indicizzati per altri motivi. Questa opzione esporta solo gli elementi non indicizzati.
+
+      Per una [descrizione dell'esportazione](#more-information) degli elementi parzialmente indicizzati, vedere la sezione Ulteriori informazioni. Per ulteriori informazioni sugli elementi parzialmente indicizzati, vedere [Elementi parzialmente indicizzati in Ricerca contenuto.](partially-indexed-items-in-content-search.md)
+
+4. In **Esporta Exchange contenuto come** scegliere una delle opzioni seguenti:
   
-    > [!NOTE]
-    > Se i risultati di una ricerca hanno più di 7 giorni, viene chiesto di aggiornare i risultati di ricerca. In tal caso, annullare l'esportazione, fare clic su **Aggiorna i risultati della ricerca** nel riquadro dei dettagli per la ricerca selezionata, quindi avviare l'esportazione dopo l’aggiornamento dei risultati.  
+   ![Opzioni di Exchange](../media/ExchangeExportOptions.png)
+
+    - **Un file PST per ogni cassetta postale**: Esporta un file PST per ogni cassetta postale utente che contiene i risultati della ricerca. Tutti i risultati della cassetta postale di archiviazione dell'utente sono inclusi nello stesso file PST. Questa opzione riproduce la struttura delle cartelle delle cassette postali dalla cassetta postale di origine.
   
-6. Nella pagina **Esporta i risultati della** ricerca, in Opzioni di **output,** scegliere una delle opzioni seguenti:
+    - **Un file PST contenente tutti** i messaggi : Esporta un singolo file PST (denominato *Exchange.pst*) contenente i risultati della ricerca da tutte le cassette postali di origine incluse nella ricerca. Questa opzione riproduce la struttura delle cartelle delle cassette postali per ogni messaggio.
   
-    - Tutti gli elementi, esclusi quelli con formato non riconosciuto, vengono crittografati o non sono stati indicizzati per altri motivi
+    - **Un file PST contenente tutti i messaggi in** una singola cartella: esporta i risultati della ricerca in un singolo file PST in cui tutti i messaggi si trovano in una singola cartella di primo livello. Questa opzione consente ai revisori di esaminare gli elementi in ordine cronologico (gli elementi vengono ordinati in base alla data di invio) senza dover esplorare la struttura di cartelle della cassetta postale originale per ogni elemento.
   
-    - Tutti gli elementi, inclusi quelli con formato non riconosciuto, vengono crittografati o non sono stati indicizzati per altri motivi
+    - **Singoli messaggi**: Esporta i risultati della ricerca come singoli messaggi di posta elettronica, utilizzando il formato msg. Se si seleziona questa opzione, i risultati della ricerca tramite posta elettronica vengono esportati in una cartella nel file system. Il percorso della cartella per i singoli messaggi è lo stesso utilizzato se i risultati sono stati esportati in un file PST.
   
-    - Solo gli elementi con un formato non riconosciuto, crittografati o non indicizzati per altri motivi
+5. Configurare le opzioni aggiuntive seguenti:
+
+   ![Opzioni di Exchange](../media/OtherExportOptions.png)
+
+   1. Selezionare la **casella di controllo Abilita deduplicazione per Exchange contenuto per** escludere i messaggi duplicati.
   
-    Per una [descrizione dell'esportazione](#more-information) degli elementi parzialmente indicizzati, vedere la sezione Ulteriori informazioni. Per ulteriori informazioni sugli elementi parzialmente indicizzati, vedere [Elementi parzialmente indicizzati in Ricerca contenuto](partially-indexed-items-in-content-search.md).
+      Se si seleziona questa opzione, verrà esportata solo una copia di un messaggio anche se nelle cassette postali in cui è stata ricercata vengono trovate più copie dello stesso messaggio. Il report dei risultati dell'esportazione (che è un file denominato Results.csv) conterrà una riga per ogni copia di un messaggio duplicato in modo da poter identificare le cassette postali (o le cartelle pubbliche) che contengono una copia del messaggio duplicato. Per ulteriori informazioni sulla deduplicazione e su come vengono identificati gli elementi duplicati, vedere [De-duplicazione nei risultati della ricerca eDiscovery.](de-duplication-in-ediscovery-search-results.md)
   
-7. In **Esporta Exchange contenuto come** scegliere una delle opzioni seguenti:
+   2. Selezionare la **casella di controllo Includi versioni SharePoint file** per esportare tutte le versioni SharePoint documenti. Questa opzione viene visualizzata solo se le origini di contenuto della ricerca includono SharePoint o OneDrive for Business siti.
   
-    - **Un file PST per ogni cassetta postale:** Esporta un file PST per ogni cassetta postale utente che contiene i risultati della ricerca. Tutti i risultati della cassetta postale di archiviazione dell'utente sono inclusi nello stesso file PST. Questa opzione riproduce la struttura delle cartelle delle cassette postali dalla cassetta postale di origine.
+   3. Selezionare Esporta **file in una cartella compressa (compressa). Include solo singoli messaggi e SharePoint per** esportare i risultati della ricerca in cartelle compresse. Questa opzione viene visualizzata solo quando si sceglie di esportare Exchange elementi come singoli messaggi e quando i risultati della ricerca includono SharePoint o OneDrive documenti. Questa opzione viene utilizzata principalmente per aggirare il limite di 260 caratteri nei nomi dei percorsi Windows file quando gli elementi vengono esportati. Vedere "Nomi di file di elementi esportati" nella [sezione Ulteriori](#more-information) informazioni.
   
-    - **Un file PST contenente tutti i messaggi:** Esporta un singolo file PST (denominato *Exchange.pst)* che contiene i risultati della ricerca da tutte le cassette postali di origine incluse nella ricerca. Questa opzione riproduce la struttura delle cartelle delle cassette postali per ogni messaggio.
-  
-    - **Un file PST contenente tutti i messaggi in una singola cartella:** Esporta i risultati della ricerca in un singolo file PST in cui tutti i messaggi si trovano in una singola cartella di primo livello. Questa opzione consente ai revisori di esaminare gli elementi in ordine cronologico (gli elementi vengono ordinati in base alla data di invio) senza dover esplorare la struttura di cartelle della cassetta postale originale per ogni elemento.
-  
-    - **Singoli messaggi:** Esporta i risultati della ricerca come singoli messaggi di posta elettronica, utilizzando il formato msg. Se si seleziona questa opzione, i risultati della ricerca tramite posta elettronica vengono esportati in una cartella nel file system. Il percorso della cartella per i singoli messaggi è lo stesso utilizzato se i risultati sono stati esportati in file PST.
-  
-      > [!IMPORTANT]
-      > Per decrittografare i messaggi protetti con RMS quando vengono esportati, è necessario esportare i risultati della ricerca di posta elettronica come singoli messaggi. I messaggi crittografati rimarranno crittografati se si esportano i risultati della ricerca come file PST. Per ulteriori informazioni, vedere [Decrittografia di messaggi di posta elettronica](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments) protetti con RMS e file allegati crittografati in questo articolo.
-  
-8. Fare clic **sulla casella di controllo Abilita deduplicazione** per escludere i messaggi duplicati. Questa opzione viene visualizzata solo se le origini di contenuto della ricerca includono Exchange cassette postali o cartelle pubbliche. 
-  
-    Se si seleziona questa opzione, verrà esportata solo una copia di un messaggio anche se nelle cassette postali in cui è stata ricercata vengono trovate più copie dello stesso messaggio. Il rapporto dei risultati dell'esportazione (Results.csv) conterrà una riga per ogni copia di un messaggio duplicato in modo da poter identificare le cassette postali (o le cartelle pubbliche) che contengono una copia del messaggio duplicato. Per ulteriori informazioni sulla deduplicazione e su come vengono identificati gli elementi duplicati, vedere [De-duplicazione nei risultati della ricerca eDiscovery.](de-duplication-in-ediscovery-search-results.md)
-  
-9. Fare clic **sulla casella di controllo Includi versioni SharePoint documenti per** esportare tutte le versioni SharePoint documenti. Questa opzione viene visualizzata solo se le origini di contenuto della ricerca includono SharePoint o OneDrive for Business siti. 
-  
-10. Fare clic sulla casella di controllo Esporta file in una cartella compressa **(compressa)** per esportare i risultati della ricerca in cartelle compresse. Questa opzione è disponibile solo quando si sceglie di esportare Exchange elementi come singoli messaggi e quando i risultati della ricerca includono SharePoint o OneDrive documenti. Questa opzione viene utilizzata principalmente per aggirare il limite di 260 caratteri nei nomi dei percorsi Windows file quando gli elementi vengono esportati. Vedere "Nomi di file di elementi esportati" nella [sezione Ulteriori](#more-information) informazioni. 
-  
-11. Fare clic su **Avvia esportazione**. I risultati della ricerca sono preparati per il download, il che significa che vengono caricati in un percorso Archiviazione di Azure nel cloud Microsoft. Questa operazione può richiedere diversi minuti.
+6. Fare **clic su** Esporta per avviare il processo di esportazione. I risultati della ricerca sono preparati per il download, ovvero vengono raccolti dai percorsi del contenuto originale e quindi caricati in un percorso Archiviazione di Azure nel cloud Microsoft. Questa operazione può richiedere diversi minuti.
 
 Per istruzioni su come scaricare i risultati della ricerca esportati, vedere la sezione successiva.
   
@@ -138,7 +140,7 @@ Per istruzioni su come scaricare i risultati della ricerca esportati, vedere la 
 
 Il passaggio successivo consiste nel scaricare i risultati della ricerca dal percorso Archiviazione di Azure nel computer locale.
   
-1. Nella pagina **Ricerca contenuto** fare clic sulla **scheda** Esportazioni. 
+1. Nella pagina **Ricerca contenuto** nel Centro Microsoft 365 conformità selezionare la **scheda** Esportazioni
   
    Potrebbe essere necessario fare clic **su Aggiorna** per aggiornare l'elenco dei processi di esportazione in modo che venga visualizzato il processo di esportazione creato. I processi di esportazione hanno lo stesso nome della ricerca corrispondente **con _Export** aggiunto al nome di ricerca.
   
@@ -146,7 +148,10 @@ Il passaggio successivo consiste nel scaricare i risultati della ricerca dal per
 
 3. Nella pagina a comparsa in **Chiave di esportazione** fare clic su Copia negli **Appunti.** Questa chiave viene utilizzata nel passaggio 6 per scaricare i risultati della ricerca.
   
-4. Fai clic su **Scarica risultati**.
+   > [!IMPORTANT]
+   > Poiché chiunque può installare e avviare lo strumento di esportazione eDiscovery e quindi utilizzare questa chiave per scaricare i risultati della ricerca, è bene assicurarsi di adottare alcune precauzioni per proteggere la chiave così come si proteggono le password o altre informazioni relative alla sicurezza. 
+
+4. Nella parte superiore della pagina a comparsa fare clic su **Scarica risultati.**
 
 5. Se viene richiesto di installare lo strumento di **esportazione di eDiscovery,** fare clic su **Installa**.
 
@@ -168,7 +173,7 @@ Il passaggio successivo consiste nel scaricare i risultati della ricerca dal per
   
     Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Ecco altre informazioni sull'esportazione dei risultati della ricerca.
   
@@ -226,10 +231,10 @@ Per informazioni sui limiti durante l'esportazione dei risultati della ricerca d
 
   - **Elementi ignorati** Quando si esportano risultati di ricerca da SharePoint siti OneDrive for Business, l'esportazione include in genere un report elementi ignorati (SkippedItems.csv). Gli elementi citati in questo report sono in genere elementi che non verranno scaricati, ad esempio una cartella o un set di documenti. La non esportazione di questi tipi di elementi è in base alla progettazione. Per altri elementi ignorati, il campo "Tipo di errore" e "Dettagli errore" nel rapporto elementi ignorati mostrano il motivo per cui l'elemento è stato ignorato e non è stato scaricato con gli altri risultati della ricerca.
 
-  - **Registro di traccia** Contiene informazioni dettagliate sulla registrazione del processo di esportazione e consente di individuare i problemi durante l'esportazione.
+  - **Trace.log** Contiene informazioni dettagliate sulla registrazione del processo di esportazione e consente di individuare i problemi durante l'esportazione. Se si apre un ticket con il supporto tecnico Microsoft su un problema relativo all'esportazione dei risultati della ricerca, potrebbe essere richiesto di fornire questo registro di traccia.
   
     > [!NOTE]
-    > È possibile esportare questi documenti senza dover esportare i risultati della ricerca effettivi. Vedere [Export a Content Search report](export-a-content-search-report.md). 
+    > È possibile esportare questi documenti senza dover esportare i risultati della ricerca effettivi. Vedere [Export a Content search report](export-a-content-search-report.md).
   
 ### <a name="exporting-partially-indexed-items"></a>Esportazione di elementi parzialmente indicizzati
   
@@ -271,7 +276,7 @@ Per informazioni sui limiti durante l'esportazione dei risultati della ricerca d
   
 ### <a name="decrypting-rms-protected-email-messages-and-encrypted-file-attachments"></a>Decrittografia di messaggi di posta elettronica protetti da RMS e file allegati crittografati
 
-Tutti i messaggi di posta elettronica protetti da rights-protected (protetti da RMS) inclusi nei risultati di una ricerca contenuto verranno decrittografati durante l'esportazione. Inoltre, qualsiasi file crittografato con una tecnologia di crittografia [Microsoft](encryption.md) e allegato a un messaggio di posta elettronica incluso nei risultati della ricerca verrà decrittografato anche quando viene esportato. Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli Manager eDiscovery. Questo perché il ruolo di gestione Decrittografia RMS viene assegnato a questo gruppo di ruoli per impostazione predefinita. Quando si esportano allegati e messaggi di posta elettronica crittografati, tenere presente quanto segue:
+Tutti i messaggi di posta elettronica protetti da rights-protected (protetti con RMS) inclusi nei risultati di una ricerca contenuto verranno decrittografati quando vengono esportati. Inoltre, qualsiasi file crittografato con una tecnologia di crittografia [Microsoft](encryption.md) e allegato a un messaggio di posta elettronica incluso nei risultati della ricerca verrà decrittografato anche quando viene esportato. Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli Manager eDiscovery. Questo perché il ruolo di gestione Decrittografia RMS viene assegnato a questo gruppo di ruoli per impostazione predefinita. Quando si esportano allegati e messaggi di posta elettronica crittografati, tenere presente quanto segue:
   
 - Come spiegato in precedenza, per decrittografare i messaggi protetti con RMS durante l'esportazione, è necessario esportare i risultati della ricerca come singoli messaggi. Se si esportano i risultati della ricerca in un file PST, i messaggi protetti con RMS rimangono crittografati.
 
@@ -297,7 +302,7 @@ Tutti i messaggi di posta elettronica protetti da rights-protected (protetti da 
 
     Per ovviare a questo problema, è consigliabile scaricare i risultati della ricerca in un percorso con un nome di percorso breve. Ad esempio, il download dei risultati della ricerca in una cartella denominata aggiungerebbe un numero minore di caratteri ai nomi di percorso degli elementi esportati rispetto al download in  `C:\Results` una cartella denominata  `C:\Users\Admin\Desktop\Results` .
 
-- Quando si esportano documenti del sito, è anche possibile che il nome file originale di un documento verrà modificato. Ciò avviene in modo specifico per i documenti che sono stati eliminati da un SharePoint o OneDrive for Business sito che è stato messo in attesa. Dopo l'eliminazione di un documento presente in un sito in attesa, il documento eliminato viene automaticamente spostato nella raccolta di archiviazione per il sito (che è stata creata quando il sito è stato messo in attesa). Quando il documento eliminato viene spostato nella raccolta di archiviazione, al nome file originale del documento viene aggiunto un ID univoco e generato in modo casuale. Ad esempio, se il nome del file di un documento è e tale documento viene successivamente eliminato e spostato nella raccolta di archiviazione, il nome del documento spostato nella raccolta di archiviazione viene modificato in modo simile a  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Se un documento nella raccolta di archiviazione corrisponde alla query di una ricerca contenuto e si esportano i risultati di tale ricerca, il file esportato ha il nome file modificato. in questo esempio il nome del file del documento esportato sarà  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
+- Quando si esportano documenti del sito, è anche possibile che il nome file originale di un documento verrà modificato. Ciò avviene in modo specifico per i documenti che sono stati eliminati da un SharePoint o OneDrive for Business sito che è stato messo in attesa. Dopo l'eliminazione di un documento presente in un sito in attesa, il documento eliminato viene automaticamente spostato nella raccolta di archiviazione per il sito (che è stata creata quando il sito è stato messo in attesa). Quando il documento eliminato viene spostato nella raccolta di archiviazione, al nome file originale del documento viene aggiunto un ID univoco e generato in modo casuale. Ad esempio, se il nome del file di un documento è e tale documento viene successivamente eliminato e spostato nella raccolta di archiviazione, il nome del documento spostato nella raccolta di archiviazione viene modificato in modo simile a  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Se un documento nella raccolta archiviazione corrisponde alla query di una ricerca contenuto e si esportano i risultati di tale ricerca, il file esportato ha il nome file modificato. in questo esempio il nome del file del documento esportato sarà  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
 
     Quando un documento in un sito in attesa viene modificato e il controllo delle versioni per la raccolta documenti nel sito è stato abilitato, viene creata automaticamente una copia del file nella raccolta di archiviazione. In questo caso, al nome del file del documento copiato nella raccolta di archiviazione viene aggiunto anche un ID univoco e generato in modo casuale.
 
@@ -307,7 +312,7 @@ Tutti i messaggi di posta elettronica protetti da rights-protected (protetti da 
   
 - Quando si scaricano i risultati della ricerca utilizzando lo strumento di esportazione di eDiscovery, è possibile che venga visualizzato l'errore seguente: Si tratta di un errore temporaneo, che in genere si verifica nel percorso Archiviazione di Azure `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` ricerca. Per risolvere questo problema, ritentare [il download dei risultati della](#step-2-download-the-search-results)ricerca, che riavvierà lo strumento di esportazione di eDiscovery.
 
-- Tutti i risultati della ricerca e i report di esportazione sono inclusi in una cartella con lo stesso nome della cartella Ricerca contenuto. I messaggi di posta elettronica che sono stati esportati si trovano in una cartella denominata **Exchange**. I documenti si trovano in una cartella denominata **SharePoint**.
+- Tutti i risultati della ricerca e i report di esportazione sono inclusi in una cartella con lo stesso nome della ricerca contenuto. I messaggi di posta elettronica che sono stati esportati si trovano in una cartella denominata **Exchange**. I documenti si trovano in una cartella denominata **SharePoint**.
 
 - I metadati del file system per i documenti SharePoint e OneDrive for Business vengono mantenuti quando i documenti vengono esportati nel computer locale. Ciò significa che le proprietà del documento, ad esempio le date di creazione e dell'ultima modifica, non subiscono variazioni durante l’esportazione dei documenti.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9c4f3da57796903fc22314574f389bcdd92ca4b3
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689450"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311989"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Risolvere i problemi di integrazione degli strumenti SIEM
 
@@ -51,7 +51,7 @@ Se il segreto client scade o se la copia fornita durante l'abilitazione dell'app
 
 4. Fare **clic su Registrazioni app**. Selezionare quindi l'applicazione nell'elenco delle applicazioni.
 
-5. Seleziona **la sezione** Chiavi, quindi fornisci una descrizione chiave e specifica la durata della validità della chiave.
+5. Seleziona **Certificati & segreti,** Fai clic su Nuovo segreto client, quindi fornisci una descrizione e specifica la durata della validità.
 
 6. Fare clic su **Salva**. Viene visualizzato il valore della chiave.
 
@@ -59,7 +59,7 @@ Se il segreto client scade o se la copia fornita durante l'abilitazione dell'app
 
 
 ## <a name="error-when-getting-a-refresh-access-token"></a>Errore durante il recupero di un token di accesso di aggiornamento
-Se si verifica un errore durante il tentativo di ottenere un token di aggiornamento quando si usano l'API di threat intelligence o gli strumenti SIEM, è necessario aggiungere l'URL di risposta per l'applicazione pertinente in Azure Active Directory.
+Se si verifica un errore durante il tentativo di ottenere un token di aggiornamento quando si usano l'API threat intelligence o gli strumenti SIEM, dovrai aggiungere l'URL di risposta per l'applicazione pertinente in Azure Active Directory.
 
 1. Accedere al [portale di gestione di Azure](https://ms.portal.azure.com).
 

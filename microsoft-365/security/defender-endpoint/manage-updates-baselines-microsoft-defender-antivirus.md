@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/08/2021
-ms.openlocfilehash: 4f2b931018d49affa2d94ddf1a147c4fd2e02085
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.date: 05/10/2021
+ms.openlocfilehash: 5b599e9d5a5c3d098033af1f1df96ee9f26025ee
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302077"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52312013"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base
 
@@ -83,7 +83,7 @@ Tutti gli aggiornamenti contengono
 - miglioramenti all'integrazione (Cloud, Microsoft 365 Defender).
 <br/>
 <details>
-<summary> Aprile-2021 (Piattaforma: 4.18.2104.9| Motore: 1.1.18100.5)</summary>
+<summary> Aprile-2021 (Piattaforma: 4.18.2104.9 | Motore: 1.1.18100.5)</summary>
 
 &ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.337.2.0**  
 &ensp;Rilasciato: **1 aprile 2021**  

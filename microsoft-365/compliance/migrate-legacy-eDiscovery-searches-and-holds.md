@@ -1,5 +1,5 @@
 ---
-title: Eseguire la migrazione delle ricerche e dei blocchi legacy di eDiscovery nel Centro conformità Microsoft 365
+title: Eseguire la migrazione di ricerche e blocchi legacy di eDiscovery nel Centro Microsoft 365 conformità
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,31 +14,31 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: ef5562aa6f5c7519d19452100b55dd4bc30d4126
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aaae5e6bddc48f29cc0766fe26a1976672c7dd49
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926324"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310796"
 ---
-# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Eseguire la migrazione delle ricerche e dei blocchi legacy di eDiscovery nel Centro conformità Microsoft 365
+# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Eseguire la migrazione di ricerche e blocchi legacy di eDiscovery nel Centro Microsoft 365 conformità
 
-Il Centro conformità Microsoft 365 offre un'esperienza migliorata per l'utilizzo di eDiscovery, tra cui: maggiore affidabilità, prestazioni migliori e molte funzionalità personalizzate per i flussi di lavoro di eDiscovery, tra cui casi per organizzare il contenuto in base alla materia, set di revisione per esaminare il contenuto e l'analisi per aiutare a ridurre i dati per la revisione, ad esempio il raggruppamento quasi duplicato, il threading della posta elettronica, l'analisi dei temi e la codifica predittiva.
+Il Centro conformità di Microsoft 365 offre un'esperienza migliorata per l'utilizzo di eDiscovery, tra cui: maggiore affidabilità, prestazioni migliori e molte funzionalità personalizzate per i flussi di lavoro di eDiscovery, tra cui casi per organizzare il contenuto in base alla materia, set di revisione per esaminare il contenuto e l'analisi per aiutare a ridurre i dati per la revisione, ad esempio il raggruppamento quasi duplicato, il threading della posta elettronica, l'analisi dei temi e la codifica predittiva.
 
 Per aiutare i clienti a sfruttare le funzionalità nuove e migliorate, in questo articolo vengono fornite indicazioni di base su come eseguire la migrazione delle ricerche e dei blocchi di eDiscovery di In-Place dall'interfaccia di amministrazione di Exchange al Centro conformità Microsoft 365.
 
 > [!NOTE]
-> Poiché esistono molti scenari diversi, in questo articolo vengono fornite indicazioni generali per la transizione di ricerche e blocchi a un caso di eDiscovery di base nel Centro conformità Microsoft 365. L'utilizzo dei casi di eDiscovery non è sempre necessario, ma aggiunge un ulteriore livello di sicurezza consentendo di assegnare le autorizzazioni per controllare chi ha accesso ai casi di eDiscovery nell'organizzazione.
+> Poiché esistono molti scenari diversi, in questo articolo vengono fornite indicazioni generali per la transizione di ricerche e blocchi a un caso di eDiscovery di base nel Centro Microsoft 365 conformità. L'utilizzo dei casi di eDiscovery non è sempre necessario, ma aggiunge un ulteriore livello di sicurezza consentendo di assegnare le autorizzazioni per controllare chi ha accesso ai casi di eDiscovery nell'organizzazione.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per eseguire i comandi di PowerShell descritti in questo articolo, è necessario essere membri del gruppo di ruoli Responsabile eDiscovery nel Centro sicurezza & conformità. È inoltre necessario essere membri del gruppo di ruoli Gestione individuazione nell'interfaccia di amministrazione di Exchange.
+- Per eseguire i comandi di PowerShell descritti in questo articolo, è necessario essere membri del gruppo di ruoli Responsabile eDiscovery nel Centro sicurezza & conformità. È inoltre necessario essere membri del gruppo di ruoli Gestione individuazione nell'Exchange di amministrazione.
 
 - In questo articolo vengono fornite indicazioni su come creare un blocco di eDiscovery. Il criterio di blocco verrà applicato alle cassette postali tramite un processo asincrono. Quando si crea un blocco di eDiscovery, è necessario creare sia caseHoldPolicy che CaseHoldRule, altrimenti il blocco non verrà creato e i percorsi del contenuto non verranno messi in attesa.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Passaggio 1: Connettersi a PowerShell di Exchange Online e PowerShell & centro conformità
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Passaggio 1: Connessione per Exchange Online PowerShell e PowerShell del Centro sicurezza & conformità
 
-Il primo passaggio consiste nel connettersi a PowerShell di Exchange Online e PowerShell & Centro conformità. È possibile copiare lo script seguente, incollarlo in una finestra di PowerShell ed eseguirlo. Verranno richieste le credenziali per l'organizzazione a cui si desidera connettersi. 
+Il primo passaggio consiste nel connettersi a Exchange Online PowerShell e PowerShell & Centro conformità. È possibile copiare lo script seguente, incollarlo in una finestra di PowerShell ed eseguirlo. Verranno richieste le credenziali per l'organizzazione a cui si desidera connettersi. 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -81,7 +81,7 @@ L'output di questi due comandi sarà simile al seguente:
 > [!NOTE]
 > La durata del blocco In-Place in questo esempio è indefinita (*ItemHoldPeriod: Unlimited*). Questo è tipico per gli scenari di eDiscovery e indagini legali. Se la durata del blocco ha un valore diverso da quello indefinito, è probabile che il blocco venga utilizzato per conservare il contenuto in uno scenario di conservazione. Anziché utilizzare i cmdlet di eDiscovery in PowerShell del Centro sicurezza & e conformità per gli scenari di conservazione, è consigliabile utilizzare [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) e [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) per conservare il contenuto. Il risultato dell'utilizzo di questi cmdlet sarà simile all'utilizzo di **New-CaseHoldPolicy** e **New-CaseHoldRule,** ma sarà possibile specificare un periodo di conservazione e un'azione di conservazione, ad esempio l'eliminazione del contenuto dopo la scadenza del periodo di conservazione. Inoltre, l'utilizzo dei cmdlet di conservazione non richiede di associare i blocchi di conservazione a un caso di eDiscovery.
 
-## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Passaggio 4: Creare un caso nel Centro conformità Microsoft 365
+## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Passaggio 4: Creare un caso nel Centro Microsoft 365 conformità
 
 Per creare un blocco di eDiscovery, è necessario creare un caso di eDiscovery a cui associare il blocco. Nell'esempio seguente viene creato un caso di eDiscovery utilizzando un nome di propria scelta. Le proprietà del nuovo caso verranno archiviate in una variabile per l'utilizzo in un secondo momento. È possibile visualizzare tali proprietà eseguendo il `$case | FL` comando dopo aver creato il caso.
 
@@ -130,25 +130,25 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![Esempio New-ComplianceSearch PowerShell](../media/MigrateLegacyeDiscovery6.png)
 
-## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Passaggio 8: Verificare il caso, il blocco e la ricerca nel Centro conformità Microsoft 365
+## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Passaggio 8: Verificare il caso, il blocco e la ricerca nel Centro Microsoft 365 conformità
 
-Per assicurarsi che tutto sia configurato correttamente, accedere al Centro conformità Microsoft 365 all'indirizzo e fare clic [https://compliance.microsoft.com](https://compliance.microsoft.com) su **eDiscovery > Core**.
+Per verificare che tutto sia configurato correttamente, accedere al Centro conformità Microsoft 365 e fare clic [https://compliance.microsoft.com](https://compliance.microsoft.com) su **eDiscovery > Core**.
 
-![eDiscovery del Centro conformità Microsoft 365](../media/MigrateLegacyeDiscovery7.png)
+![Microsoft 365 eDiscovery del Centro conformità](../media/MigrateLegacyeDiscovery7.png)
 
-Il caso creato nel passaggio 3 è elencato nella **pagina Core eDiscovery.** Aprire il caso e quindi notare l'esenzione creata nel passaggio 4 nell'elenco nella **scheda Esenzioni.** È possibile fare clic sul blocco per visualizzare i dettagli, incluso il numero di cassette postali a cui viene applicato il blocco e lo stato di distribuzione.
+Il caso creato nel passaggio 3 è elencato nella **pagina Core eDiscovery.** Aprire il caso e quindi notare l'esenzione creata nel passaggio 4 nell'elenco nella **scheda Esenzione.** È possibile selezionare il blocco per visualizzare i dettagli nella pagina del riquadro a comparsa, incluso il numero di cassette postali a cui viene applicato il blocco e lo stato di distribuzione.
 
-![Blocchi di eDiscovery nel Centro conformità Microsoft 365](../media/MigrateLegacyeDiscovery8.png)
+![Blocchi eDiscovery nel Centro Microsoft 365 conformità](../media/MigrateLegacyeDiscovery8.png)
 
-La ricerca creata nel passaggio 7 è elencata nella scheda **Ricerche** del caso di eDiscovery.
+La ricerca creata nel passaggio 7 è elencata nella **scheda Ricerche** del caso.
 
-![Ricerca di casi di eDiscovery nel Centro conformità Microsoft 365](../media/MigrateLegacyeDiscovery9.png)
+![Ricerca di casi di eDiscovery nel Centro Microsoft 365 conformità](../media/MigrateLegacyeDiscovery9.png)
 
-Se si esegue la migrazione In-Place ricerca eDiscovery ma non la si associa a un caso di eDiscovery, verrà elencata nella pagina Ricerca contenuto nel Centro conformità Microsoft 365.
+Se si esegue la migrazione di una ricerca eDiscovery di In-Place ma non la si associa a un caso di eDiscovery, questa verrà elencata nella pagina Ricerca contenuto nel Centro conformità di Microsoft 365.
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- Per ulteriori informazioni sulle In-Place eDiscovery & nell'interfaccia di amministrazione di Exchange, vedere:
+- Per ulteriori informazioni sull'In-Place eDiscovery & blocchi nell'interfaccia Exchange di amministrazione, vedere:
   
   - [eDiscovery sul posto](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
@@ -170,4 +170,4 @@ Se si esegue la migrazione In-Place ricerca eDiscovery ma non la si associa a un
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- Per ulteriori informazioni sul Centro conformità Microsoft 365, vedere Panoramica del Centro conformità [Microsoft 365.](microsoft-365-compliance-center.md)
+- Per ulteriori informazioni sul Centro Microsoft 365 conformità, vedere [Overview of the Microsoft 365 compliance center.](microsoft-365-compliance-center.md)

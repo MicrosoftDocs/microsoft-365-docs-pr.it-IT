@@ -1,12 +1,12 @@
 ---
-title: Query delle parole chiave e condizioni di ricerca per ricerca contenuto
+title: Query con parole chiave e condizioni di ricerca per eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.SearchQueryLearnMore
 ms.service: O365-seccomp
@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sulle proprietà di posta elettronica e file che è possibile cercare utilizzando gli strumenti di ricerca ed eDiscovery in Microsoft 365.
-ms.openlocfilehash: 10b2af333d5eeef6dd70541a86b9114929c0c94c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Informazioni sulle proprietà di posta elettronica e file che è possibile cercare utilizzando gli strumenti di ricerca di eDiscovery in Microsoft 365.
+ms.openlocfilehash: a9a178eb9b139cacd803c8ab168b3143b75b5f92
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114018"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311869"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto ed eDiscovery
+# <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Query con parole chiave e condizioni di ricerca per eDiscovery
 
-In questo argomento vengono descritte le proprietà di posta elettronica e documento che è possibile cercare negli elementi di posta elettronica in Exchange Online e nei documenti archiviati nei siti di SharePoint e OneDrive for Business utilizzando la funzionalità Ricerca contenuto nel Centro conformità Microsoft 365. È inoltre possibile utilizzare i cmdlet **\* -ComplianceSearch** in PowerShell & Centro sicurezza e conformità per cercare queste proprietà. L'argomento descrive anche:
+In questo argomento vengono descritte le proprietà di posta elettronica e documento che è possibile cercare negli elementi di posta elettronica e nelle conversazioni di chat di Microsoft Teams in Exchange Online e i documenti archiviati nei siti SharePoint e OneDrive for Business utilizzando gli strumenti di ricerca eDiscovery nel Centro conformità Microsoft 365. Ciò include Ricerca contenuto, Core eDiscovery e Advanced eDiscovery (le ricerche eDiscovery in Advanced eDiscovery sono denominate *raccolte).* È inoltre possibile utilizzare i cmdlet **\* -ComplianceSearch** in PowerShell & Centro sicurezza e conformità per cercare queste proprietà. L'argomento descrive anche:
   
 - Utilizzo di operatori di ricerca booleani, condizioni di ricerca e altre tecniche di query di ricerca per affinare i risultati della ricerca.
 
@@ -39,14 +39,20 @@ In questo argomento vengono descritte le proprietà di posta elettronica e docum
 
 - Ricerca di contenuto del sito condiviso con utenti esterni all'organizzazione
 
-Per istruzioni dettagliate su come creare una ricerca contenuto, vedere [Ricerca contenuto](content-search.md).
+Per istruzioni dettagliate su come creare ricerche eDiscovery diverse, vedere:
+
+- [Ricerca contenuto](content-search.md)
+
+- [Cercare contenuto in Core eDiscovery](search-for-content-in-core-ediscovery.md)
+
+- [Creare una raccolta di bozze in Advanced eDiscovery](create-draft-collection.md)
 
 > [!NOTE]
-> Ricerca contenuto nel Centro conformità Microsoft 365 e i cmdlet **\* -ComplianceSearch** corrispondenti in PowerShell del Centro sicurezza & e conformità utilizzano il linguaggio KQL (Keyword Query Language). Per informazioni più dettagliate, vedere [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). 
+> Le ricerche eDiscovery nel Centro conformità Microsoft 365 e i cmdlet **\* -ComplianceSearch** corrispondenti in & PowerShell del Centro sicurezza e conformità utilizzano il linguaggio KQL (Keyword Query Language). Per informazioni più dettagliate, vedere [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
   
 ## <a name="searchable-email-properties"></a>Proprietà di posta elettronica disponibili per la ricerca
 
-Nella tabella seguente sono elencate le proprietà dei messaggi di posta elettronica che è possibile cercare utilizzando la funzionalità Ricerca contenuto nel Centro conformità di Microsoft 365 o utilizzando il cmdlet **New-ComplianceSearch** o **Set-ComplianceSearch.** La tabella include un esempio della sintassi  _property:value_ per ogni proprietà e una descrizione dei risultati della ricerca restituiti dagli esempi. È possibile digitare queste  `property:value` coppie nella casella delle parole chiave per una ricerca contenuto. 
+Nella tabella seguente sono elencate le proprietà dei messaggi di posta elettronica che è possibile cercare utilizzando gli strumenti di ricerca di eDiscovery nel Centro conformità Microsoft 365 o utilizzando il cmdlet **New-ComplianceSearch** o **Set-ComplianceSearch.** La tabella include un esempio della sintassi  _property:value_ per ogni proprietà e una descrizione dei risultati della ricerca restituiti dagli esempi. È possibile digitare queste  `property:value` coppie nella casella delle parole chiave per una ricerca eDiscovery. 
 
 > [!NOTE]
 > Quando si cercano proprietà di posta elettronica, non è possibile cercare elementi in cui la proprietà specificata è vuota o vuota. Ad esempio, l'utilizzo della coppia *property:value* di **subject:""** per cercare messaggi di posta elettronica con una riga dell'oggetto vuota restituirà zero risultati. Ciò vale anche per la ricerca di proprietà di siti e contatti.
@@ -57,12 +63,12 @@ Nella tabella seguente sono elencate le proprietà dei messaggi di posta elettro
 |Ccn|Campo Ccn di un messaggio di posta elettronica. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|Tutti gli esempi restituiscono messaggi contenenti Pilar Pinilla nel campo Bcc (Ccn).|
 |Categoria| Le categorie da cercare. Le categorie possono essere definite dagli utenti utilizzando Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). I valori possibili sono i seguenti:  <br/><br/>  blu  <br/>  verde  <br/>  arancione  <br/>  viola  <br/>  rosso  <br/>  giallo|`category:"Red Category"`|I messaggi ai quali è stata assegnata la categoria di colore rosso nelle cassette postali di origine. |
 |Cc|Campo Cc di un messaggio di posta elettronica. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In entrambi gli esempi, i messaggi con Pilar Pinilla specificato nel campo Cc.|
-|Folderid|ID cartella (GUID) di una cartella della cassetta postale specifica. Se si utilizza questa proprietà, assicurarsi di cercare nella cassetta postale in cui si trova la cartella specificata. Verrà cercata solo la cartella specificata. Le sottocartelle nella cartella non verranno cercate. Per cercare le sottocartelle, è necessario utilizzare la proprietà Folderid per la sottocartella in cui si desidera eseguire la ricerca.  <br/> Per ulteriori informazioni sulla ricerca della proprietà Folderid e sull'utilizzo di uno script per ottenere gli ID cartella per una cassetta postale specifica, vedere [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Nel primo esempio vengono restituiti tutti gli elementi nella cartella della cassetta postale specificata. Nel secondo esempio vengono restituiti tutti gli elementi nella cartella della cassetta postale specificata inviati o ricevuti da garthf@contoso.com.|
+|Folderid|ID cartella (GUID) di una cartella della cassetta postale specifica. Se si utilizza questa proprietà, assicurarsi di cercare nella cassetta postale in cui si trova la cartella specificata. Verrà cercata solo la cartella specificata. Le sottocartelle nella cartella non verranno cercate. Per cercare le sottocartelle, è necessario utilizzare la proprietà Folderid per la sottocartella in cui si desidera eseguire la ricerca.  <br/> Per ulteriori informazioni sulla ricerca della proprietà Folderid e sull'utilizzo di uno script per ottenere gli ID cartella per una cassetta postale specifica, vedere [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Nel primo esempio vengono restituiti tutti gli elementi nella cartella della cassetta postale specificata. Nel secondo esempio vengono restituiti tutti gli elementi nella cartella della cassetta postale specificata inviati o ricevuti da garthf@contoso.com.|
 |Da|Mittente di un messaggio di posta elettronica. <sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|I messaggi inviati dall'utente specificato o da un dominio specificato.|
 |HasAttachment|Indica se un messaggio ha un allegato. Utilizzare i valori **true** o **false**.|`from:pilar@contoso.com AND hasattachment:true`|Messaggi inviati dall'utente specificato con allegati.|
 |Priorità|La priorità di un messaggio di posta elettronica, che può essere specificata dall'utente al momento dell'invio di un messaggio. Per impostazione predefinita, i messaggi vengono inviati con una priorità normale, a meno che il mittente non imposti la priorità **high** (alta) o **low** (bassa).|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|I messaggi contrassegnati con priorità alta, media o bassa.|
 |IsRead|Indica se i messaggi sono stati letti. Utilizzare i valori **true** o **false**.|`isread:true`  <br/> `isread:false`|Nel primo esempio vengono restituiti i messaggi con la proprietà IsRead impostata su **True.** Nel secondo esempio vengono restituiti i messaggi con la proprietà IsRead impostata su **False.**|
-|Itemclass|Utilizzare questa proprietà per cercare tipi di dati di terze parti specifici importati dall'organizzazione Office 365. Utilizzare la sintassi seguente per questa proprietà:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|Nel primo esempio vengono restituiti gli elementi di Facebook che contengono la parola "contoso" nella proprietà Subject. Nel secondo esempio vengono restituiti gli elementi di Twitter pubblicati da Ann Beebe e che contengono la parola chiave "Northwind Traders".  <br/> Per un elenco completo dei valori da utilizzare per i tipi di dati di terze parti per la proprietà ItemClass, vedere [Use Content Search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
+|Itemclass|Utilizzare questa proprietà per cercare tipi di dati di terze parti specifici importati dall'organizzazione Office 365. Utilizzare la sintassi seguente per questa proprietà:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|Nel primo esempio vengono restituiti gli elementi di Facebook che contengono la parola "contoso" nella proprietà Subject. Nel secondo esempio vengono restituiti gli elementi di Twitter pubblicati da Ann Beebe e che contengono la parola chiave "Northwind Traders".  <br/> Per un elenco completo dei valori da utilizzare per i tipi di dati di terze parti per la proprietà ItemClass, vedere [Use Content search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
 |Kind| Tipo di messaggio di posta elettronica da cercare. Valori possibili:  <br/>  contatti  <br/>  docs  <br/>  e-mail  <br/>  externaldata  <br/>  fax  <br/>  im  <br/>  journals  <br/>  riunioni  <br/>  microsoftteams (restituisce elementi da chat, riunioni e chiamate in Microsoft Teams)  <br/>  note  <br/>  post  <br/>  rssfeeds  <br/>  attività  <br/>  segreteria telefonica|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|Nel primo esempio vengono restituiti i messaggi di posta elettronica che soddisfano i criteri di ricerca. Nel secondo esempio vengono restituiti i messaggi di posta elettronica, le conversazioni di messaggistica istantanea (incluse Skype for Business conversazioni e chat in Microsoft Teams) e i messaggi vocali che soddisfano i criteri di ricerca. Nel terzo esempio vengono restituiti gli elementi importati nelle cassette postali di Microsoft 365 da origini dati di terze parti, ad esempio Twitter, Facebook e Cisco Jabber, che soddisfano i criteri di ricerca. Per ulteriori informazioni, vedere [Archiving third-party data in Office 365](https://www.microsoft.com/?ref=go).|
 |Partecipanti|Tutti i campi delle persone in un messaggio di posta elettronica. Questi campi sono From, To, Cc e Bcc.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|I messaggi inviati da o a garthf@contoso.com. Il secondo esempio restituisce tutti i messaggi inviati da o a un utente nel dominio contoso.com.|
 |Ricevuto|La data in cui un messaggio di posta elettronica viene ricevuto da un destinatario.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Messaggi ricevuti il 15 aprile 2016. Nel secondo esempio vengono restituiti tutti i messaggi ricevuti tra il 1° gennaio 2016 e il 31 marzo 2016.|
@@ -89,9 +95,9 @@ Tenere tuttavia presente che se si impedisce l'espansione dei destinatari nella 
 
 ## <a name="searchable-site-properties"></a>Proprietà dei siti disponibili per la ricerca
 
-Nella tabella seguente sono elencate alcune delle proprietà SharePoint e OneDrive for Business che possono essere ricercate utilizzando la funzionalità Ricerca contenuto nel Centro sicurezza e conformità di & o utilizzando il cmdlet **New-ComplianceSearch** o **Set-ComplianceSearch.** La tabella include un esempio della sintassi  _property:value_ per ogni proprietà e una descrizione dei risultati della ricerca restituiti dagli esempi. 
+Nella tabella seguente sono elencate alcune delle proprietà di SharePoint e OneDrive for Business che possono essere ricercate utilizzando gli strumenti di ricerca eDiscovery nel Centro conformità Microsoft 365 o utilizzando il cmdlet **New-ComplianceSearch** o **Set-ComplianceSearch.** La tabella include un esempio della sintassi  _property:value_ per ogni proprietà e una descrizione dei risultati della ricerca restituiti dagli esempi. 
   
-Per un elenco completo delle SharePoint disponibili per la ricerca, vedere [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). È possibile eseguire ricerche  nelle **proprietà** contrassegnate con Sì nella colonna Queryable. 
+Per un elenco completo delle SharePoint disponibili per la ricerca, vedere [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). È possibile eseguire ricerche  nelle **proprietà** contrassegnate con Sì nella colonna Queryable.
   
 | Proprietà | Descrizione proprietà | Esempio | Risultati di ricerca restituiti dagli esempi |
 |:-----|:-----|:-----|:-----|
@@ -100,7 +106,7 @@ Per un elenco completo delle SharePoint disponibili per la ricerca, vedere [Over
 |Creato|La data di creazione di un elemento.|`created>=06/01/2016`|Tutti gli elementi creati il 1° giugno 2016 o dopo il 1° giugno 2016.|
 |CreatedBy|L'utente che ha creato o caricato un elemento. Assicurati di usare il nome visualizzato dell'utente per questa proprietà.|`createdby:"Garth Fort"`|Tutti gli elementi creati o caricati da Garth Fort.|
 |DetectedLanguage|La lingua di un elemento.|`detectedlanguage:english`|Tutti gli elementi in lingua inglese.|
-|DocumentLink|Percorso (URL) di una cartella specifica in un SharePoint o OneDrive for Business sito. Se si utilizza questa proprietà, assicurarsi di cercare il sito in cui si trova la cartella specificata.  <br/> Per restituire gli elementi contenuti nelle sottocartelle della cartella specificata per la proprietà documentlink, è necessario aggiungere / all'URL della cartella specificata, ad \* esempio,  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Per ulteriori informazioni sulla ricerca della proprietà documentlink e sull'utilizzo di uno script per ottenere gli URL documentlink per le cartelle in un sito specifico, vedere [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Nel primo esempio vengono restituiti tutti gli elementi nella cartella OneDrive for Business specificata. Nel secondo esempio vengono restituiti i documenti nella cartella del sito specificata (e in tutte le sottocartelle) che contengono la parola "confidential" nel nome del file.|
+|DocumentLink|Percorso (URL) di una cartella specifica in un SharePoint o OneDrive for Business sito. Se si utilizza questa proprietà, assicurarsi di cercare il sito in cui si trova la cartella specificata.  <br/> Per restituire gli elementi contenuti nelle sottocartelle della cartella specificata per la proprietà documentlink, è necessario aggiungere / all'URL della cartella specificata, ad \* esempio,  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Per ulteriori informazioni sulla ricerca della proprietà documentlink e sull'utilizzo di uno script per ottenere gli URL documentlink per le cartelle in un sito specifico, vedere [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Nel primo esempio vengono restituiti tutti gli elementi nella cartella OneDrive for Business specificata. Nel secondo esempio vengono restituiti i documenti nella cartella del sito specificata (e in tutte le sottocartelle) che contengono la parola "confidential" nel nome del file.|
 |FileExtension|Estensione di un file. ad esempio docx, one, pptx o xlsx.|`fileextension:xlsx`|Tutti Excel file (Excel 2007 e versioni successive)|
 |FileName|Il nome di un file.|`filename:"marketing plan"`  <br/> `filename:estimate`|Il primo esempio restituisce i file con la frase esatta "marketing plan" nel titolo. Il secondo esempio restituisce i file con la parola "estimate" nel nome file.|
 |LastModifiedTime|La data dell'ultima modifica di un elemento.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Nel primo esempio vengono restituiti gli elementi modificati il 1° maggio 2016 o dopo il 1° maggio 2016. Nel secondo esempio vengono restituiti gli elementi modificati tra il 1° maggio 2016 e il 1 giugno 2016.|
@@ -114,7 +120,7 @@ Per un elenco completo delle SharePoint disponibili per la ricerca, vedere [Over
 
 ## <a name="searchable-contact-properties"></a>Proprietà dei contatti disponibili per la ricerca
 
-Nella tabella seguente sono elencate le proprietà dei contatti indicizzate e che è possibile cercare utilizzando Ricerca contenuto. Si tratta delle proprietà che gli utenti possono configurare per i contatti (denominati anche contatti personali) che si trovano nella rubrica personale della cassetta postale di un utente. Per cercare i contatti, è possibile selezionare le cassette postali in cui eseguire la ricerca e quindi utilizzare una o più proprietà di contatto nella query con parole chiave.
+Nella tabella seguente sono elencate le proprietà dei contatti indicizzate e che è possibile cercare utilizzando gli strumenti di ricerca di eDiscovery. Si tratta delle proprietà che gli utenti possono configurare per i contatti (denominati anche contatti personali) che si trovano nella rubrica personale della cassetta postale di un utente. Per cercare i contatti, è possibile selezionare le cassette postali in cui eseguire la ricerca e quindi utilizzare una o più proprietà di contatto nella query con parole chiave.
   
 > [!TIP]
 > Per cercare valori contenenti spazi o caratteri speciali, utilizzare le virgolette doppie (" ") per contenere la frase. ad `businessaddress:"123 Main Street"` esempio.
@@ -216,7 +222,7 @@ Creare una condizione utilizzando le proprietà comuni quando si cercano cassett
 |Mittente/Autore|Per la posta elettronica, l'utente che ha inviato un messaggio. Per i documenti, l'utente menzionato nel campo dell'autore dei documenti di Office. È possibile digitare più nomi, separati da virgole. Due o più valori sono collegati logicamente dall'operatore **OR**.|
 |Dimensioni (in byte)|Per la posta elettronica e i documenti, la dimensione dell'elemento (in byte).|
 |Oggetto/Titolo|Per la posta elettronica, il testo nella riga dell'oggetto di un messaggio. Per i documenti, il titolo del documento. Come spiegato in precedenza, la proprietà Title è un Microsoft Office documenti. È possibile digitare il nome di più di un oggetto/titolo, separati da virgole. Due o più valori sono collegati logicamente dall'operatore **OR**.|
-|Etichetta di conformità|Sia per la posta elettronica che per i documenti, le etichette di conservazione assegnate automaticamente ai messaggi e ai documenti tramite criteri di etichetta automatica o etichette di conservazione assegnate manualmente dagli utenti. Le etichette di conservazione vengono utilizzate per classificare la posta elettronica e i documenti per la governance delle informazioni e applicare le regole di conservazione in base alle impostazioni definite dall'etichetta. È possibile digitare parte del nome dell'etichetta di conservazione e utilizzare un carattere jolly oppure digitare il nome completo dell'etichetta. Per ulteriori informazioni sulle etichette di conservazione, vedere [Informazioni sui criteri di conservazione e sulle etichette di conservazione.](retention.md)|
+|Etichetta di conservazione|Sia per la posta elettronica che per i documenti, le etichette di conservazione assegnate ai messaggi e ai documenti automaticamente dai criteri di etichetta automatica o dalle etichette di conservazione assegnate manualmente dagli utenti. Le etichette di conservazione vengono utilizzate per classificare la posta elettronica e i documenti per la governance delle informazioni e applicare le regole di conservazione in base alle impostazioni definite dall'etichetta. È possibile digitare parte del nome dell'etichetta di conservazione e utilizzare un carattere jolly oppure digitare il nome completo dell'etichetta. Per ulteriori informazioni sulle etichette di conservazione, vedere [Informazioni sui criteri di conservazione e sulle etichette di conservazione.](retention.md)|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Condizioni per le proprietà della posta
@@ -291,66 +297,66 @@ Tenere presente quanto segue quando si utilizzano le condizioni di ricerca.
     
 - È possibile utilizzare il controllo di trascinamento della selezione per rieseguire la sequenza dell'ordine delle condizioni. Fare clic sul controllo per una condizione e spostarlo verso l'alto o verso il basso.
     
-- Come descritto in precedenza, alcune proprietà delle condizioni consentono di digitare più valori. I valori sono collegati logicamente dall'operatore **OR**. Ne consegue che la stessa logica dispone di più istanze della stessa condizione, ognuna con un singolo valore. Le illustrazioni seguenti mostrano un esempio di una singola condizione con più valori e un esempio di più condizioni (per la stessa proprietà) con un singolo valore. Entrambi gli esempi comportano la stessa query:  `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)`
-    
-    ![Una condizione con più valori](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+- Come spiegato in precedenza, alcune proprietà della condizione consentono di digitare più valori (separati da punto e virgola). Ogni valore è connesso logicamente dall'operatore **OR** e restituisce la query `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)` . Nella figura seguente viene illustrato un esempio di condizione con più valori.
+
+    ![Una condizione con più valori](../media/SearchConditions1.png)
   
-    ![Più condizioni di ricerca per la stessa proprietà](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
-  
-> [!TIP]
-> Se una condizione accetta più valori, è consigliabile utilizzare una singola condizione e specificare più valori (separati da virgole o punti e virgola). Ciò garantisce che la logica di query che viene applicata corrisponda a quella desiderata. 
+  > [!NOTE]
+  > Non è possibile aggiungere più condizioni facendo clic **su Aggiungi condizione** per la stessa proprietà. È invece necessario fornire più valori per la condizione (separati da punti e virgola), come illustrato nell'esempio precedente.
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Esempi
 
-Negli esempi seguenti viene illustrata la versione basata su GUI di una query di ricerca con condizioni, la sintassi della query di ricerca visualizzata nel riquadro dei dettagli della ricerca selezionata (restituita anche dal cmdlet **Get-ComplianceSearch)** e la logica della query KQL corrispondente. 
+Negli esempi seguenti viene illustrata la versione basata su GUI di una query di ricerca con condizioni, la sintassi della query di ricerca visualizzata nel riquadro dei dettagli della ricerca selezionata (restituita anche dal cmdlet **Get-ComplianceSearch)** e la logica della query KQL corrispondente.
   
 #### <a name="example-1"></a>Esempio 1
 
-In questo esempio vengono restituiti SharePoint e OneDrive for Business che contengono un numero di carta di credito e sono stati modificati per l'ultima volta prima del 1° gennaio 2016.
+In questo esempio vengono restituiti SharePoint e OneDrive for Business che contengono un numero di carta di credito e sono stati modificati per l'ultima volta prima del 1° gennaio 2021.
   
  **GUI**
   
-![Primo esempio relativo alle condizioni di ricerca](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![Primo esempio relativo alle condizioni di ricerca](../media/SearchConditions2.png)
   
  **Sintassi della query di ricerca**
   
- `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2021-01-01)`
   
  **Logica della query di ricerca**
   
- `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2021-01-01)`
   
+Si noti nella schermata precedente che l'interfaccia utente di ricerca rafforza che la query con parole chiave e la condizione sono connesse dall'operatore **AND.**
+
 #### <a name="example-2"></a>Esempio 2
 
-In questo esempio vengono restituiti i documenti o gli elementi della posta elettronica che contengono la parola chiave "report", che sono stati inviati o creati prima del 1° aprile 2015 e che contengono la parola "northwind" nel campo dell'oggetto dei messaggi di posta elettronica o nella proprietà del titolo dei documenti. La query esclude le pagine Web che soddisfano gli altri criteri della ricerca. 
+In questo esempio vengono restituiti gli elementi di posta elettronica o i documenti che contengono la parola chiave "report", che sono stati inviati o creati prima del 1 aprile 2021 e che contengono la parola "northwind" nel campo oggetto dei messaggi di posta elettronica o nella proprietà title dei documenti. La query esclude le pagine Web che soddisfano gli altri criteri della ricerca.
   
  **GUI**
   
-![Secondo esempio relativo alle condizioni di ricerca](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![Secondo esempio relativo alle condizioni di ricerca](../media/SearchConditions3.png)
   
  **Sintassi della query di ricerca**
   
- `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
+ `report(c:c)(date<2021-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
   
  **Logica della query di ricerca**
   
- `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
+ `report AND (date<2021-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
   
 #### <a name="example-3"></a>Esempio 3
 
-In questo esempio vengono restituiti i messaggi di posta elettronica o le riunioni del calendario inviate tra il 1/12/2016 e il 30/11/2016 e che contengono parole che iniziano con "phone" o "smartphone".
+In questo esempio vengono restituiti i messaggi di posta elettronica o le riunioni del calendario inviate tra l'1/12/2019 e il 30/11/2020 e che contengono parole che iniziano con "phone" o "smartphone".
   
  **GUI**
   
-![Terzo esempio relativo alle condizioni di ricerca](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![Terzo esempio relativo alle condizioni di ricerca](../media/SearchConditions4.png)
   
  **Sintassi della query di ricerca**
   
- `phone* OR smartphone*(c:c)(sent=2016-12-01..2016-11-30)(kind="email")(kind="meetings")`
+ `phone* OR smartphone*(c:c)(sent=2019-12-01..2020-11-30)(kind="email")(kind="meetings")`
   
  **Logica della query di ricerca**
   
- `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
+ `phone* OR smartphone* AND (sent=2029-12-01..2020-11-30) AND ((kind="email") OR (kind="meetings"))`
   
 ## <a name="special-characters"></a>Caratteri speciali
 
@@ -360,32 +366,32 @@ Alcuni caratteri speciali non sono inclusi nell'indice di ricerca e pertanto non
 
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Ricerca di contenuti dei siti condivisi con utenti esterni
 
-È inoltre possibile utilizzare la funzionalità Ricerca contenuto nel Centro sicurezza & e conformità per cercare i documenti archiviati nei siti SharePoint e OneDrive for Business condivisi con persone esterne all'organizzazione. Ciò consente di identificare informazioni proprietarie o sensibili condivise all'esterno dell'organizzazione. A tale scopo, è possibile utilizzare  `ViewableByExternalUsers` la proprietà in una query con parole chiave. Questa proprietà restituisce documenti o siti condivisi con utenti esterni utilizzando uno dei metodi di condivisione seguenti: 
+È inoltre possibile utilizzare gli strumenti di ricerca eDiscovery nel Centro conformità per cercare i documenti archiviati nei siti SharePoint e OneDrive for Business condivisi con persone esterne all'organizzazione. Ciò consente di identificare informazioni proprietarie o sensibili condivise all'esterno dell'organizzazione. A tale scopo, è possibile utilizzare  `ViewableByExternalUsers` la proprietà in una query con parole chiave. Questa proprietà restituisce documenti o siti condivisi con utenti esterni utilizzando uno dei metodi di condivisione seguenti: 
   
 - Invito alla condivisione che richiede agli utenti di accedere all'organizzazione come utente autenticato.
-    
+
 - Un collegamento guest anonimo, che consente a chiunque abbia questo collegamento di accedere alla risorsa senza dover essere autenticato.
-    
-Di seguito vengono descritti alcuni esempi:
+
+Ecco alcuni esempi:
   
-- La query  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` restituisce tutti gli elementi che sono stati condivisi con persone esterne all'organizzazione e contengono un numero di carta di credito. 
-    
-- La query restituisce un elenco di documenti in tutti i siti del team dell'organizzazione che  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` sono stati condivisi con utenti esterni. 
-    
+- La query  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` restituisce tutti gli elementi che sono stati condivisi con persone esterne all'organizzazione e contengono un numero di carta di credito.
+  
+- La query restituisce un elenco di documenti in tutti i siti del team dell'organizzazione che  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` sono stati condivisi con utenti esterni.
+
 > [!TIP]
-> Una query di ricerca, ad esempio, potrebbe restituire molti  `ViewableByExternalUsers:true AND ContentType:document` file aspx nei risultati della ricerca. Per eliminare questi (o altri tipi di file), è possibile utilizzare la proprietà per  `FileExtension` escludere tipi di file specifici, ad esempio  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` . 
+> Una query di ricerca, ad esempio, potrebbe restituire molti  `ViewableByExternalUsers:true AND ContentType:document` file aspx nei risultati della ricerca. Per eliminare questi (o altri tipi di file), è possibile utilizzare la proprietà per  `FileExtension` escludere tipi di file specifici, ad esempio  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` .
   
 Cosa viene considerato contenuto condiviso con persone esterne all'organizzazione? Documenti nei siti SharePoint e OneDrive for Business dell'organizzazione condivisi tramite l'invio di un invito alla condivisione o condivisi in posizioni pubbliche. Le attività utente seguenti, ad esempio, comportano contenuto visualizzabile dagli utenti esterni:
   
 - Un utente condivide un file o una cartella con una persona esterna all'organizzazione.
-    
+  
 - Un utente crea e invia un collegamento a un file condiviso a una persona esterna all'organizzazione. Questo collegamento consente all'utente esterno di visualizzare (o modificare) il file.
-    
+  
 - Un utente invia un invito alla condivisione o un collegamento guest a una persona esterna all'organizzazione per visualizzare (o modificare) un file condiviso.
-    
+  
 ### <a name="issues-using-the-viewablebyexternalusers-property"></a>Problemi relativi all'utilizzo della proprietà ViewableByExternalUsers
 
-Sebbene la proprietà rappresenti lo stato di condivisione di un documento o di un sito con utenti esterni, esistono alcune avvertenze sull'operazione che questa proprietà esegue e  `ViewableByExternalUsers` non riflette. Negli scenari seguenti il valore della proprietà non verrà aggiornato e i risultati di una query di ricerca contenuto che utilizza questa proprietà potrebbero non essere  `ViewableByExternalUsers` accurati. 
+Sebbene la proprietà rappresenti lo stato di condivisione di un documento o di un sito con utenti esterni, esistono alcune avvertenze sull'operazione che questa proprietà esegue e  `ViewableByExternalUsers` non riflette. Negli scenari seguenti il valore della proprietà non verrà aggiornato e i risultati di una query di ricerca che utilizza questa proprietà potrebbero non essere  `ViewableByExternalUsers` accurati. 
   
 - Modifiche ai criteri di condivisione, ad esempio la disattivazione della condivisione esterna per un sito o per l'organizzazione. La proprietà continuerà a mostrare i documenti condivisi in precedenza come accessibili esternamente anche se l'accesso esterno potrebbe essere stato revocato.
     
@@ -429,7 +435,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 ## <a name="search-tips-and-tricks"></a>Suggerimenti pratici per la ricerca
 
-- Per le ricerche con parole chiave non viene eseguita la distinzione tra maiuscole e minuscole. Ad esempio, **cat** e **CAT** restituiscono gli stessi risultati. 
+- Per le ricerche con parole chiave non viene eseguita la distinzione tra maiuscole e minuscole. Ad esempio, **cat** e **CAT** restituiscono gli stessi risultati.
 
 - Gli operatori **booleani AND**, **OR**, **NOT** e **NEAR** devono essere maiuscoli. 
 

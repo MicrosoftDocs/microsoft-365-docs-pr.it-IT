@@ -1,5 +1,5 @@
 ---
-title: Esportare e scaricare contenuto da un caso di eDiscovery di base
+title: Esportare e scaricare contenuto da un caso di Core eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,92 +16,53 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: In questo articolo viene descritto come esportare e scaricare contenuto da un caso di eDiscovery di base.
-ms.openlocfilehash: 30fc30943bd570cf4d79ce88b5bef5836b3dfe14
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: Descrive come esportare e scaricare contenuto da un caso di eDiscovery di base in Microsoft 365.
+ms.openlocfilehash: 8eb54e23369ef682e8aa1ebf7e681eb34444f1cd
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760300"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310843"
 ---
-# <a name="export-content-from-a-core-ediscovery-case"></a>Esportare il contenuto da un caso di eDiscovery di base
+# <a name="export-content-from-a-core-ediscovery-case"></a>Esportare contenuto da un caso di eDiscovery di base
 
-Dopo aver eseguito correttamente una ricerca, è possibile esportare i risultati della ricerca. Quando si esportano i risultati della ricerca, gli elementi della cassetta postale vengono scaricati nei file PST o come singoli messaggi. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office native e di altri documenti. Viene esportato anche un file di Results.csv contenente informazioni su tutti gli elementi esportati e un file manifesto (in formato XML) che contiene informazioni su tutti i risultati di ricerca.
+Dopo aver eseguito correttamente una ricerca associata a un caso di eDiscovery di base, è possibile esportare i risultati della ricerca. Quando si esportano i risultati della ricerca, gli elementi delle cassette postali vengono scaricati nei file PST o come singoli messaggi. Quando si esporta contenuto da SharePoint e OneDrive for Business, vengono esportate copie di documenti Office nativi e altri documenti. Viene esportato Results.csv file contenente informazioni su ogni elemento esportato e un file manifesto (in formato XML) contenente informazioni su ogni risultato della ricerca.
   
-È possibile esportare i risultati di una [singola ricerca associata a un caso](#export-the-results-of-a-single-search) oppure esportare i risultati di [più ricerche associate a un caso](#export-the-results-of-multiple-searches).
+## <a name="export-search-results"></a>Esportare i risultati della ricerca
+
+1. Accedere a e accedere utilizzando le credenziali per l'account utente a cui sono state assegnate [https://compliance.microsoft.com](https://compliance.microsoft.com) le autorizzazioni di eDiscovery appropriate.
+
+2. Nel riquadro di spostamento sinistro del Centro Microsoft 365 conformità fare clic su **Mostra** tutto e quindi su **eDiscovery > Core**.
+
+3. Nella pagina **Core eDiscovery** fare clic sul nome del caso in cui si desidera creare il blocco.
+
+4. Nella **home** page del caso fare clic sulla **scheda** Ricerche.
+
+5. Scegliere **Esporta** risultati dal menu Azioni nella parte inferiore della pagina a **comparsa.**
+
+   ![Opzione Esporta risultati nel menu Azioni](../media/ActionMenuExportResults.png)
+
+   Il flusso di lavoro per esportare i risultati di una ricerca associata a un caso di eDiscovery di base corrisponde all'esportazione dei risultati della ricerca per una ricerca nella **pagina Ricerca contenuto.** Per istruzioni dettagliate, vedere Export [content search results](export-search-results.md).
+
+   > [!NOTE]
+   > Quando si esportano i risultati della ricerca, è possibile abilitare la deduplicazione in modo che venga esportata solo una copia di un messaggio di posta elettronica anche se nelle cassette postali in cui è stata ricercata potrebbero essere state trovate più istanze dello stesso messaggio. Per ulteriori informazioni sulla deduplicazione e su come vengono identificati gli elementi duplicati, vedere [De-duplicazione nei risultati della ricerca eDiscovery.](de-duplication-in-ediscovery-search-results.md)
+
+   Dopo aver avviato l'esportazione, i risultati della ricerca vengono preparati per il download, il che significa che vengono trasferiti in un percorso di Archiviazione di Azure fornito da Microsoft nel cloud Microsoft.
   
-## <a name="export-the-results-of-a-single-search"></a>Esportare i risultati di una singola ricerca
-
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery appropriate.
-
-2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto** e quindi su **eDiscovery > Core**.
-
-3. Nella pagina **Core eDiscovery** selezionare il caso in cui si desidera esportare i risultati della ricerca e quindi fare clic su **Apri caso**.
-
-4. Nella **Home** page del caso, fare clic sulla scheda **ricerche** .
-
-5. Nell'elenco delle ricerche per il caso, fare clic sulla ricerca di cui si desidera esportare i risultati della ricerca, quindi fare clic su **Esporta risultati** nel riquadro a comparsa.
-
-    Viene visualizzata la pagina dei **risultati di esportazione** . 
-
-    ![Pagina Export results](../media/ab0bb46d-310b-4374-8644-717146df6676.png)
+6. Fare clic **sulla scheda** Esportazioni nel caso in cui si desidera visualizzare l'elenco dei processi di esportazione.
   
-    Il flusso di lavoro per esportare i risultati di una ricerca associata a un caso di eDiscovery di base è uguale all'esportazione dei risultati della ricerca per una ricerca nella pagina **Ricerca contenuto** . Per istruzioni dettagliate, vedere [Export content search results](export-search-results.md).
+   ![Esportare processi nella scheda Esporta nel caso di Core eDiscovery](../media/CoreeDiscoveryExport.png)
 
-    > [!NOTE]
-    > Quando si esportano i risultati della ricerca, è possibile abilitare la deduplicazione in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio nelle cassette postali di cui è stata eseguita la ricerca. Per ulteriori informazioni sulla deduplicazione e sulla modalità di identificazione degli elementi duplicati, vedere [de-duplication nei risultati della ricerca di eDiscovery](de-duplication-in-ediscovery-search-results.md).
+   Potrebbe essere necessario fare clic **su Aggiorna** per aggiornare l'elenco dei processi di esportazione in modo che venga visualizzato il processo di esportazione creato. I processi di esportazione hanno lo stesso nome della ricerca corrispondente **con _Export** aggiunto al nome di ricerca.
 
-    Dopo aver avviato l'esportazione, i risultati della ricerca sono pronti per il download, il che significa che vengono caricati in una posizione di archiviazione di Azure fornita da Microsoft nel cloud Microsoft.
-  
-6. Fare clic sulla scheda **Esporta** per visualizzare l'elenco dei processi di esportazione per il caso.
-  
-    Potrebbe essere necessario fare clic su **Aggiorna** per aggiornare l'elenco dei processi di esportazione in modo che venga visualizzato il processo di esportazione creato. I processi di esportazione hanno lo stesso nome della ricerca corrispondente con **_Export** accodati al nome della ricerca.
+7. Fare clic sul processo di esportazione creato per visualizzare le informazioni sullo stato nella pagina a comparsa. Queste informazioni includono la percentuale di elementi che sono stati trasferiti nell'Archiviazione di Azure locale.
 
-7. Fare clic sul processo di esportazione creato per visualizzare le informazioni sullo stato nella pagina a comparsa. Queste informazioni includono la percentuale di elementi che sono stati trasferiti nel percorso di archiviazione di Azure.
+8. Dopo aver trasferito tutti gli elementi, fare clic **su Scarica risultati** per scaricare i risultati della ricerca nel computer locale. Per ulteriori informazioni sul download dei risultati della ricerca, vedere Passaggio 2 in [Esportare i risultati della ricerca di contenuto](export-search-results.md#step-2-download-the-search-results)
 
-8. Dopo aver trasferito tutti gli elementi, fare clic su **Scarica risultati** per scaricare i risultati della ricerca nel computer locale. Per ulteriori informazioni sul download dei risultati della ricerca, vedere passaggio 2 in [Export content search results](export-search-results.md#step-2-download-the-search-results)
+### <a name="more-information-about-exporting-searches-from-a-case"></a>Ulteriori informazioni sull'esportazione di ricerche da un caso
 
-## <a name="export-the-results-of-multiple-searches"></a>Esportare i risultati di più ricerche
+- Per ulteriori informazioni sui file di esportazione inclusi quando si esportano i risultati della ricerca, vedere [Export a Content search report.](export-a-content-search-report.md#whats-included-in-the-report)
 
-Come alternativa all'esportazione dei risultati di una singola ricerca associata a un caso, è possibile esportare i risultati di più ricerche dallo stesso caso in un singolo processo di esportazione. L'esportazione dei risultati di più ricerche è più semplice e veloce rispetto all'esportazione dei risultati di una ricerca alla volta.
-  
-> [!NOTE]
-> Non è possibile esportare i risultati di più ricerche se una di queste ricerche è stata configurata per la ricerca di percorsi in attesa.
+- Se si riavvia l'esportazione, le modifiche apportate alle query delle ricerche che costituiscono il processo di esportazione non influiranno sui risultati della ricerca recuperati. Quando si riavvia un'esportazione, verrà eseguito di nuovo lo stesso processo di query di ricerca combinato eseguito al momento della creazione del processo di esportazione.
 
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery appropriate.
-
-2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto** e quindi su **eDiscovery > Core**.
-
-3. Nella pagina **Core eDiscovery** selezionare il caso in cui si desidera esportare i risultati della ricerca e quindi fare clic su **Apri caso**.
-
-4. Nella **Home** page del caso, fare clic sulla scheda **ricerche** .
-    
-5. Nell'elenco delle ricerche per il caso, selezionare la casella di controllo accanto a due o più ricerche da cui si desidera esportare i risultati della ricerca. 
-
-   Viene visualizzata la pagina del riquadro a comparsa **azioni in blocco** . 
-
-    ![Nella pagina azioni in blocco fare clic su Esporta risultati](../media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
-  
-6. Fare clic su **Esporta risultati**.
-
-   Viene visualizzata la pagina dei **risultati di esportazione** . 
-
-    ![Pagina Export results](../media/ab0bb46d-310b-4374-8644-717146df6676.png)
-  
-    A questo punto, il flusso di lavoro per esportare i risultati di più ricerche associate a un caso di eDiscovery di base è uguale all'esportazione dei risultati della ricerca per una singola ricerca. Vedere il passaggio 5 nella sezione precedente.
-
-### <a name="more-information-about-exporting-the-results-of-multiple-searches"></a>Ulteriori informazioni sull'esportazione dei risultati di più ricerche
-
-- Quando si esportano i risultati di più ricerche, le query di ricerca provenienti da tutte le ricerche vengono combinate **tramite gli operatori e** quindi viene avviata la ricerca combinata. I risultati stimati della ricerca combinata vengono visualizzati nella pagina a comparsa del processo di esportazione selezionato. I risultati della ricerca vengono quindi copiati nel percorso di archiviazione di Azure nel cloud Microsoft. Lo stato del processo di copia viene visualizzato anche nella pagina a comparsa. Come indicato in precedenza, dopo che tutti i risultati della ricerca sono stati copiati, è possibile scaricarli in un computer locale.
-
-- Il numero massimo di parole chiave dalle query per tutte le ricerche che si desidera esportare è 500. Questo è lo stesso limite per una singola ricerca. Ciò è dovuto al fatto che il processo di esportazione combina tutte le query di ricerca utilizzando l'operatore **or** . Se si supera questo limite, verrà restituito un errore. In questo caso, è necessario esportare i risultati da meno ricerche o semplificare le query di ricerca delle ricerche originali che si desidera esportare.
-
-- I risultati della ricerca esportati vengono organizzati in base alla posizione di contenuto in cui è stato trovato l'elemento. Questo significa che un percorso di contenuto nei risultati di esportazione potrebbe avere elementi restituiti da ricerche diverse. Ad esempio, se si sceglie di esportare i messaggi di posta elettronica in un unico file PST per ogni cassetta postale, il file PST potrebbe avere risultati da più ricerche.
-
-- Se lo stesso elemento di posta elettronica o documento proveniente dallo stesso percorso di contenuto viene restituito da più di una delle ricerche esportate, verrà esportata solo una copia dell'elemento.
-
-- Non è possibile modificare un'esportazione per più ricerche dopo averlo creato. Ad esempio, non è possibile aggiungere o rimuovere ricerche dal processo di esportazione. È necessario creare un processo di esportazione per modificare i risultati di ricerca esportati. Dopo la creazione di un processo di esportazione, è possibile scaricare i risultati solo in un computer, riavviare l'esportazione o eliminare il processo di esportazione.
-
-- Se si riavvia l'esportazione, le eventuali modifiche apportate alle query delle ricerche che compongono il processo di esportazione non influiscono sui risultati della ricerca recuperati. Quando si riavvia un'esportazione, viene eseguito di nuovo lo stesso processo di query di ricerca combinato eseguito al momento della creazione del processo di esportazione.
-
-- Inoltre, se si riavvia un'esportazione, i risultati della ricerca copiati nel percorso di archiviazione di Azure sovrascrivono i risultati precedenti. I risultati precedenti che sono stati copiati non saranno disponibili per il download.
+- Inoltre, se si riavvia un'esportazione, i risultati della ricerca copiati nel percorso Archiviazione di Azure sovrascrivono i risultati precedenti. I risultati precedenti copiati non saranno disponibili per il download.

@@ -1,5 +1,5 @@
 ---
-title: Verificare la presenza di errori nella query di Ricerca contenuto
+title: Verificare la presenza di errori nella query di ricerca
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: Informazioni su come rilevare errori e errori di digitazione nella query con parole chiave per ricerca contenuto, prima di eseguire la ricerca.
-ms.openlocfilehash: 939ac3d227f176a0b74138107ced5dd5b7142bcd
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+description: Informazioni su come rilevare errori e errori di digitazione nella query con parole chiave per le ricerche di eDiscovery prima di eseguire la ricerca.
+ms.openlocfilehash: 9c041ca690df3306347cbca77df3ba9639801245
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488213"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311689"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>Verificare la presenza di errori nella query di Ricerca contenuto
+# <a name="check-your-search-query-for-errors"></a>Verificare la presenza di errori nella query di ricerca
   
-Ecco un elenco dei caratteri non supportati che controlliamo. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o restituiscono risultati imprevisti.
+Ecco un elenco dei caratteri non supportati che controlliamo nelle query di ricerca per Ricerca contenuto ed eDiscovery di base. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o restituiscono risultati imprevisti.
   
 - **Virgolette intelligenti** : le virgolette singole e doppie intelligenti (denominate anche virgolette graffe) non sono supportate. In una query di ricerca è possibile utilizzare solo virgolette semplici. 
 
@@ -45,4 +45,4 @@ Ecco un esempio del messaggio di avviso visualizzato dopo aver fatto clic su Con
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Come impedire i caratteri non supportati nelle query di ricerca
 
-I caratteri non supportati vengono in genere aggiunti a una query quando si copiano la query o parti della query da altre applicazioni , ad esempio Microsoft Word o Microsoft Excel, e li si incolla nella casella delle parole chiave nella pagina della query di una ricerca contenuto. Il modo migliore per impedire i caratteri non supportati è semplicemente digitare la query nella casella parola chiave. Oppure è possibile copiare una query da Word o Excel e quindi incollarla in un editor di testo normale, ad esempio Blocco note Microsoft. Salvare il file di testo e selezionare **ANSI** **nell'elenco a** discesa Codifica. Questa operazione rimuoverà la formattazione e i caratteri non supportati. È quindi possibile copiare e incollare la query dal file di testo alla casella di query con parole chiave. 
+I caratteri non supportati vengono in genere aggiunti a una query quando si copiano la query o parti della query da altre applicazioni (ad esempio Microsoft Word o Microsoft Excel) e li incollano nella casella parola chiave nella pagina di query di una ricerca contenuto. Il modo migliore per impedire i caratteri non supportati è semplicemente digitare la query nella casella parola chiave. Oppure è possibile copiare una query da Word o Excel e quindi incollarla in un editor di testo normale, ad esempio Microsoft Blocco note. Salvare il file di testo e selezionare **ANSI** **nell'elenco a** discesa Codifica. Questa operazione rimuoverà la formattazione e i caratteri non supportati. È quindi possibile copiare e incollare la query dal file di testo alla casella di query con parole chiave.

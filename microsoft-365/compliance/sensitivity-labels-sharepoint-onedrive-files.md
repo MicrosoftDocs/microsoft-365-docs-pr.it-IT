@@ -17,16 +17,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file di Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: c3d4320937b441510424454197c4eb4ffa46d9fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f610e04a9115b7654332bcc1f479144b4d100618
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245637"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311929"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+> [!NOTE]
+> Esiste un problema corrente che causa l'apertura di file con etichetta e crittografati in Office sul web:
+>
+> Durante l'analisi di un problema relativo a specifiche proprietà del documento, non sarà possibile aprire molti file in Office sul web. Per questi file, puoi continuare ad aprirli e modificarli nelle app desktop e Office mobili. In caso contrario, eseguire le operazioni seguenti:
+>
+> 1. Apri il file nell'Office desktop.
+> 2. Rimuovere l'etichetta che applica la crittografia.
+> 3. Salva il file nel percorso originale (SharePoint o OneDrive) e chiudi l'app desktop.
+> 4. Aprire il file in Office sul web e riapplicare l'etichetta originale che applica la crittografia.
+> 
+> I file creati e modificati solo in Office sul web non sono interessati.
 
 Abilitare le etichette di riservatezza Office file in SharePoint e OneDrive in modo che gli utenti possano applicare le etichette di riservatezza [in](sensitivity-labels.md) Office per il Web. Quando questa funzionalità è abilitata, gli utenti visualizzano il pulsante Riservatezza sulla barra multifunzione in modo che possano applicare etichette e visualizzano qualsiasi nome di etichetta applicato sulla barra di stato. 
 
@@ -71,14 +83,6 @@ Queste nuove funzionalità funzionano solo [con le etichette di](sensitivity-lab
 Usa l'app di sincronizzazione OneDrive versione 19.002.0121.0008 o successiva su Windows e la versione 19.002.0107.0008 o successiva su Mac. Entrambe queste versioni sono state rilasciate il 28 gennaio 2019 e sono attualmente rilasciate per tutti gli anelli. Per ulteriori informazioni, vedere le OneDrive [sulla versione](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). Dopo aver abilitato le etichette di riservatezza per i file Office in SharePoint e OneDrive, agli utenti che eseguono una versione precedente dell'app di sincronizzazione viene richiesto di aggiornarla.
 
 ## <a name="limitations"></a>Limitazioni
-
-- Power Query e componenti aggiuntivi personalizzati con Excel sul web: se questi file sono crittografati con un'etichetta di riservatezza, SharePoint e OneDrive non possono elaborare i file in modo che gli utenti non possano aprirli in Office sul web. Per questi file, applicare un'etichetta senza crittografia in modo che possano essere aperti in Office sul web oppure indicare agli utenti di aprire i file nelle proprie app desktop.
-
-- Se si verificano problemi durante l'apertura di file con etichetta e crittografati in Office sul web, provare a eseguire le operazioni seguenti:
-    1. Apri il file nell'Office desktop.
-    2. Rimuovere l'etichetta che applica la crittografia.
-    3. Salva il file nel percorso originale (SharePoint o OneDrive) e chiudi l'app desktop.
-    4. Aprire il file in Office sul web e riapplicare l'etichetta originale che applica la crittografia.
 
 - SharePoint e OneDrive non applicano automaticamente etichette di riservatezza ai file esistenti già crittografati con le etichette di Azure Information Protection. Al contrario, per il funzionamento delle funzionalità dopo aver abilitato le etichette di riservatezza per Office file in SharePoint e OneDrive, completare queste attività:
     
@@ -173,7 +177,8 @@ Per abilitare le nuove funzionalità, utilizzare il cmdlet [Set-SPOTenant](/powe
 
 1. Usando un account aziendale o dell'istituto di istruzione con privilegi di amministratore globale o SharePoint amministratore in Microsoft 365, connettersi a SharePoint. Per informazioni in merito, vedere [Guida introduttiva a SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Nota: se si dispone di Microsoft 365 Multi-Geo, utilizzare il parametro -Url con [Connessione-SPOService](/powershell/module/sharepoint-online/connect-sposervice)e specificare l'URL del sito dell'interfaccia di amministrazione di SharePoint Online per una delle posizioni geografiche.
+   > [!NOTE]
+   > Se si dispone di Microsoft 365 Multi-Geo, utilizzare il parametro -Url con [Connessione-SPOService](/powershell/module/sharepoint-online/connect-sposervice)e specificare l'URL del sito Dell'interfaccia di amministrazione di SharePoint Online per una delle posizioni geografiche.
 
 2. Eseguire il comando seguente e premere **Y** per confermare:
 

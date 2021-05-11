@@ -1,139 +1,129 @@
 ---
-title: Visualizzare le statistiche delle parole chiave per i risultati di Ricerca contenuto
+title: Visualizzare le statistiche per i risultati della ricerca eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/30/2017
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.search: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: Informazioni su come usare la funzionalità Statistiche di ricerca per visualizzare e confrontare le statistiche per più ricerche di contenuto nel Centro sicurezza & conformità.
+description: Informazioni su come utilizzare la funzionalità delle statistiche di ricerca per visualizzare le statistiche per le ricerche di contenuto e le ricerche associate a un caso di eDiscovery di base nel Centro Microsoft 365 conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f12c51c47045996e450772c081bd26ef4a520b5f
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: a0e543c89b91560520a4e4bf31feb8471c91da4a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838699"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311114"
 ---
-# <a name="view-keyword-statistics-for-content-search-results"></a>Visualizzare le statistiche delle parole chiave per i risultati di Ricerca contenuto
+# <a name="view-statistics-for-ediscovery-search-results"></a>Visualizzare le statistiche per i risultati della ricerca eDiscovery
 
-Dopo aver creato ed eseguito una ricerca contenuto, è possibile visualizzare le statistiche sui risultati della ricerca stimati. Include un riepilogo dei risultati della ricerca (simile al riepilogo dei risultati di ricerca stimati visualizzati nel riquadro dei dettagli), le statistiche delle query, ad esempio il numero di percorsi di contenuto con elementi che corrispondono alla query di ricerca e il nome dei percorsi di contenuto con il maggior numero di elementi corrispondenti. È possibile visualizzare statistiche per una o più ricerche di contenuto. In questo modo è possibile confrontare rapidamente i risultati di più ricerche e prendere decisioni sull'efficacia delle query di ricerca.
+Dopo aver creato ed eseguito una ricerca contenuto o una ricerca associata a un caso di eDiscovery di base, è possibile visualizzare le statistiche sui risultati della ricerca stimati. Include un riepilogo dei risultati della ricerca (simile al riepilogo dei risultati di ricerca stimati visualizzati nella pagina del riquadro a comparsa di ricerca), le statistiche delle query, ad esempio il numero di percorsi di contenuto con elementi che corrispondono alla query di ricerca e l'identità dei percorsi di contenuto con il maggior numero di elementi corrispondenti.
   
-È inoltre possibile configurare ricerche nuove ed esistenti per restituire statistiche per ogni parola chiave in una query di ricerca. In questo modo è possibile confrontare il numero di risultati per ogni parola chiave di una query e confrontare le statistiche delle parole chiave da più ricerche.
+È inoltre possibile utilizzare l'elenco delle parole chiave per configurare una ricerca in modo da restituire statistiche per ogni parola chiave in una query di ricerca. In questo modo è possibile confrontare il numero di risultati restituiti da ogni parola chiave in una query.
   
-È anche possibile scaricare le statistiche di ricerca e delle parole chiave in un file CSV. Questo consente di usare le funzionalità di filtro e ordinamento di Excel per confrontare i risultati e preparare report per i risultati della ricerca.
+È inoltre possibile scaricare le statistiche di ricerca in un file CSV. Questo consente di usare le funzionalità di filtro e ordinamento di Excel per confrontare i risultati e preparare report per i risultati della ricerca.
   
-## <a name="get-statistics-for-content-searches"></a>Ottenere statistiche per le ricerche di contenuto
+## <a name="get-statistics-for-searches"></a>Ottenere statistiche per le ricerche
 
-Per visualizzare le statistiche per le ricerche di contenuto:
+Per visualizzare le statistiche per una ricerca contenuto o una ricerca associata a un caso di eDiscovery di base.
   
-1. Nel Centro conformità Microsoft 365 passare a **Mostra tutto il** contenuto di  >  **ricerca.**
+1. Nel Centro Microsoft 365 conformità fare clic **su Mostra tutto** e quindi eseguire una delle operazioni seguenti:
 
-2. Nell'elenco delle ricerche selezionare due o più ricerche e quindi fare clic **su** Statistiche di ricerca nella pagina riquadro **a** comparsa Azioni in blocco.
-    
-    ![Selezionare più ricerche e quindi fare clic su Statistiche di ricerca](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
-  
-3. Nella pagina **Statistiche di** ricerca fare clic su uno dei collegamenti seguenti per visualizzare le statistiche sulle ricerche selezionate. 
-    
-    **Riepilogo**
-    
-    In questa pagina vengono visualizzate statistiche simili a quelle visualizzate nel riquadro dei dettagli nella **pagina Ricerca contenuto.** Vengono visualizzate le statistiche per tutte le ricerche selezionate. Tieni presente che puoi anche eseguire di nuovo le ricerche selezionate da questa pagina per aggiornare le statistiche. 
-    
-    ![Riepilogo delle statistiche per le ricerche selezionate](../media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
-  
-    a.  Nome della ricerca contenuto. Come indicato in precedenza, è possibile visualizzare e confrontare le statistiche per più ricerche.
-    
-    b. Tipo di percorso del contenuto in cui è stata ricercata. In ogni riga vengono visualizzate le statistiche relative a cassette postali, siti e cartelle pubbliche della ricerca specificata.
-    
-    c. Numero di percorsi di contenuto contenenti elementi che corrispondono alla query di ricerca. Per le cassette postali, questa statistica include anche il numero di cassette postali di archiviazione che contengono elementi che corrispondono alla query di ricerca.
-    
-    d. Numero totale di elementi di tutti i percorsi di contenuto specificati che corrispondono alla query di ricerca. Alcuni esempi di tipi di elementi sono i messaggi di posta elettronica, gli elementi del calendario e i documenti. Se un elemento contiene più istanze di una parola chiave in fase di ricerca, viene conteggiato una sola volta nel numero totale di elementi. Ad esempio, se si cercano parole "stock" o "frode" e un messaggio di posta elettronica contiene tre istanze della parola "stock", viene conteggiato una sola volta nella colonna **Items.** 
-    
-    e. Dimensione totale di tutti gli elementi trovati nel percorso di contenuto specificato che corrispondono alla query di ricerca. 
-    
-    **Query**
-    
-    In questa pagina vengono visualizzate le statistiche relative alla query di ricerca.
-    
-    ![Statistiche query di ricerca per le ricerche selezionate](../media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
-  
-    a. Nome della ricerca contenuto per cui la riga contiene le statistiche di query.
-    
-    b. Tipo di percorso del contenuto a cui sono applicabili le statistiche della query.
-    
-    c. Questa colonna indica a quale parte della query di ricerca sono applicabili le statistiche. **Primary** indica l'intera query di ricerca. Se si utilizza un elenco di parole chiave quando si crea o si modifica una query di ricerca, le statistiche per ogni componente della query vengono incluse in questa tabella. Per ulteriori [informazioni, vedere la sezione Ottenere statistiche](#get-keyword-statistics-for-content-searches) sulle parole chiave per le ricerche di contenuto in questo articolo. 
-    
-    d. Questa colonna contiene la query di ricerca effettiva eseguita dallo strumento ricerca contenuto. Si noti che lo strumento aggiunge automaticamente alcuni componenti aggiuntivi alla query creata. 
+   - Fare **clic su Ricerca** contenuto e quindi selezionare una ricerca per visualizzare la pagina a comparsa.
 
-    - Quando si cerca tutto il contenuto nelle cassette postali (senza specificare alcuna parola chiave), la query di parola chiave effettiva è in modo che  `size>=0` tutti gli elementi vengono restituiti. 
-    
-     - Quando si esegue una ricerca nei siti di SharePoint Online e OneDrive for Business, vengono aggiunti i due componenti seguenti:
-    
-          **NOT IsExternalContent:1** - Esclude qualsiasi contenuto da un'organizzazione di SharePoint locale. 
-    
-          **NOT IsOneNotePage:1** - Esclude tutti i file di OneNote perché si tratta di duplicati di qualsiasi documento corrispondente alla query di ricerca. 
+     OPPURE
 
-    
-    e. Numero di percorsi di contenuto (specificati dalla colonna ** Tipo percorso ** ) che contengono elementi che corrispondono alla query di ricerca elencata nella **colonna Query.** 
-    
-    f. Numero di elementi (dal percorso di contenuto specificato) che corrispondono alla query di ricerca elencata nella **colonna Query.** Come spiegato in precedenza, se un elemento contiene più istanze di una parola chiave in fase di ricerca, viene conteggiato una sola volta nella colonna. 
-    
-    g. Dimensione totale di tutti gli elementi trovati (nel percorso di contenuto specificato) che corrispondono alla query di ricerca nella **colonna Query.** 
-    
-    **Posizioni principali**
-    
-    In questa pagina vengono visualizzate le statistiche sul numero di elementi che corrispondono alla query di ricerca in ogni percorso di contenuto in cui è stata eseguita la ricerca. Vengono visualizzati i primi 1.000 percorsi. Se si visualizzano le statistiche per più ricerche, vengono visualizzate le prime 1.000 posizioni per ogni ricerca. Si noti che un percorso di contenuto non è incluso in questa pagina se non contiene elementi che corrispondono alla query di ricerca.
-    
-    ![Statistiche sul numero di elementi trovati nei percorsi di contenuto in cui è stata ricercata](../media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
-  
-    a. Nome del percorso del contenuto.
-    
-    b. Tipo di percorso del contenuto a cui sono applicabili le statistiche sulla posizione.
-    
-    c. Esistono colonne per ogni ricerca per cui si visualizzano le statistiche. Questa colonna mostra il numero (e le dimensioni totali) degli elementi che corrispondono alla query di ricerca in ogni percorso del contenuto. Si noti che quando si visualizzano statistiche per più ricerche, la "NA" in questa colonna indica che il percorso del contenuto non è stato incluso nella ricerca. 
+   - Fare **clic su eDiscovery** Core, selezionare un caso e quindi selezionare una ricerca nella  >   **scheda** Ricerche per visualizzare la pagina a comparsa.
 
-## <a name="get-keyword-statistics-for-content-searches"></a>Ottenere statistiche sulle parole chiave per le ricerche contenuto
+2. Nella pagina a comparsa della ricerca selezionata fare clic sulla **scheda Statistiche di** ricerca.
+  
+   ![Scheda Statistiche di ricerca](../media/SearchStatistics1.png)
 
-Come spiegato in precedenza, **la** pagina Query mostra la query di ricerca e il numero (e le dimensioni) degli elementi che corrispondono alla query. Se si utilizza un elenco di parole chiave quando si crea o si modifica una query di ricerca, è possibile ottenere statistiche avanzate che mostrano quanti elementi corrispondono a ogni parola chiave o frase chiave. Ciò consente di identificare rapidamente quali parti della query sono più (e meno) efficaci. Ad esempio, se una parola chiave restituisce un numero elevato di elementi, è possibile scegliere di perfezionare la query con parole chiave per restringere i risultati della ricerca. È possibile configurare un elenco di parole chiave quando si crea o si modifica una ricerca contenuto. 
+La **scheda Statistiche** di ricerca contiene le sezioni seguenti che contengono diversi tipi di statistiche sulla ricerca.
 
-Per creare un elenco di parole chiave e visualizzare le statistiche delle parole chiave per una ricerca contenuto:
+### <a name="search-content"></a>Ricerca contenuto
+
+In questa sezione viene visualizzato un riepilogo grafico degli elementi stimati restituiti dalla ricerca. Indica il numero di elementi che soddisfano i criteri di ricerca. Queste informazioni danno un'idea del numero stimato di elementi restituiti dalla ricerca.
+
+![Stime di ricerca per una ricerca](../media/SearchContentReport.png)
+
+- **Elementi stimati in base alle** posizioni : numero totale di elementi stimati restituiti dalla ricerca. Viene inoltre visualizzato il numero specifico di elementi presenti nelle cassette postali e nei siti.
+
+- **Posizioni stimate con risultati**: numero totale di percorsi di contenuto che contengono elementi restituiti dalla ricerca. Viene inoltre visualizzato il numero specifico di posizioni di cassette postali e siti.
+
+- **Volume di dati per posizione (in MB):** dimensione totale di tutti gli elementi stimati restituiti dalla ricerca. Vengono inoltre visualizzate le dimensioni specifiche degli elementi delle cassette postali e degli elementi del sito.
+
+### <a name="condition-report"></a>Rapporto condizioni
+
+In questa sezione vengono visualizzate statistiche sulla query di ricerca e sul numero di elementi stimati corrispondenti a parti diverse della query di ricerca. È possibile utilizzare queste statistiche per analizzare il numero di elementi che corrispondono a ogni componente della query di ricerca. In questo modo è possibile perfezionare i criteri di ricerca e, se necessario, limitare l'ambito dell'ambito. È inoltre possibile scaricare una copia di questo report in formato CSV.
+
+![Rapporto condizioni](../media/SearchContentReportNoKeywordList.png)
+
+- **Tipo di percorso**: Tipo di percorso del contenuto a cui sono applicabili le statistiche della query. Il valore di **Exchange** indica la posizione di una cassetta postale; il valore **SharePoint** indica la posizione di un sito.
+
+- **Parte**: parte della query di ricerca a cui sono applicabili le statistiche. **Primary** indica l'intera query di ricerca. **Keyword** indica che le statistiche nella riga sono relative a una parola chiave specifica. Se si utilizza un elenco di parole chiave per la query di ricerca, le statistiche per ogni componente della query vengono incluse in questa tabella. Per ulteriori informazioni, vedere [Get keyword statistics for searches](#get-keyword-statistics-for-searches).
+
+- **Condizione**: Componente effettivo (parola chiave o condizione) della query di ricerca che ha restituito le statistiche visualizzate nella riga corrispondente.
+
+- **Posizioni con risultati**: Numero delle posizioni  del contenuto (specificate dalla colonna Tipo percorso) che contengono gli elementi che corrispondono alla query principale o parola chiave elencata nella **colonna** Condizione.
+
+- **Elementi**: numero di elementi (dal percorso di contenuto specificato) che corrispondono alla query elencata nella **colonna** Condizione. Come spiegato in precedenza, se un elemento contiene più istanze di una parola chiave in fase di ricerca, viene conteggiato una sola volta in questa colonna.
+
+- **Dimensione (MB):** dimensione totale di tutti gli elementi trovati (nel percorso di contenuto specificato) che corrispondono alla query di ricerca nella **colonna** Condizione.
+
+### <a name="top-locations"></a>Posizioni principali
+
+In questa sezione vengono visualizzate le statistiche relative alle posizioni di contenuto specifiche con la maggior parte degli elementi restituiti dalla ricerca. Vengono visualizzati i primi 1.000 percorsi. È inoltre possibile scaricare una copia di questo report in formato CSV.
+
+- Nome del nome della posizione (l'indirizzo di posta elettronica delle cassette postali e l'URL per i siti).
+
+- Tipo di posizione (una cassetta postale o un sito).
+
+- Numero stimato di elementi nel percorso del contenuto restituito dalla ricerca.
+
+- Dimensione totale degli elementi stimati in ogni percorso di contenuto.
+
+## <a name="get-keyword-statistics-for-searches"></a>Ottenere statistiche sulle parole chiave per le ricerche
+
+Come spiegato in precedenza, nella sezione **Rapporto** condizione vengono mostrati la query di ricerca e il numero (e le dimensioni) degli elementi che corrispondono alla query. Se si utilizza un elenco di parole chiave quando si crea o si modifica una query di ricerca, è possibile ottenere statistiche avanzate che mostrano quanti elementi corrispondono a ogni parola chiave o frase chiave. Ciò consente di identificare rapidamente quali parti della query sono più (e meno) efficaci. Ad esempio, se una parola chiave restituisce un numero elevato di elementi, è possibile scegliere di perfezionare la query con parole chiave per restringere i risultati della ricerca.
+
+Per creare un elenco di parole chiave e visualizzare le statistiche delle parole chiave per una ricerca:
   
-1. Nel Centro conformità Microsoft 365 passare a **Mostra tutto il** contenuto di  >  **ricerca.**
-    
-2. Nell'elenco delle ricerche di contenuto fare clic su e una ricerca e quindi fare clic su **Modifica** ![ icona ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) Modifica.
-    
-3. Fare **clic su Query** e quindi eseguire le operazioni seguenti: 
-    
-    ![Fare clic sulla casella di controllo Mostra elenco parole chiave e digitare una parola chiave in ogni riga](../media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
+1. Nel Centro Microsoft 365 conformità creare una nuova ricerca contenuto o una ricerca associata a un caso di eDiscovery di base.
+
+2. Nella pagina **Condizioni** della procedura guidata di ricerca. selezionare la **casella di controllo Mostra elenco parole chiave.**
+
+   ![Casella di controllo Mostra elenco parole chiave](../media/SearchKeywordsList1.png)
+
+3. Digitare una parola chiave o una fase di parola chiave in una riga della tabella delle parole chiave. Ad esempio, digitare **budget** nella prima riga, digitare **sicurezza** nella seconda riga e **FY2021** nella terza riga.
+
+   ![Digitare fino a 20 parole chiave o frasi chiave nell'elenco](../media/SearchKeywordsList2.png)
+
+   > [!NOTE]
+   > Per ridurre i problemi causati da elenchi di parole chiave di grandi dimensioni, è possibile utilizzare un massimo di 20 righe nell'elenco di parole chiave di una query di ricerca.
+
+4. Dopo aver aggiunto le parole chiave all'elenco per cui si desidera cercare e ottenere statistiche, eseguire la ricerca.
+
+5. Al termine della ricerca, selezionarla per visualizzare la pagina a comparsa.
+
+6. Nella scheda **Statistiche di** ricerca fare clic sul report **Condizione per** visualizzare le statistiche delle parole chiave per la ricerca.
+
+    ![Vengono visualizzate le statistiche per ogni parola chiave](../media/SearchKeywordsList3.png)
   
-    a. Fare clic **sulla casella di controllo Mostra elenco** parole chiave. 
-    
-    b. Digitare una parola chiave o una fase di parola chiave in una riga della tabella delle parole chiave. Ad esempio, digitare **budget** nella prima riga e quindi digitare **sicurezza** nella seconda riga. 
-    
-4. Dopo aver aggiunto le parole chiave per cui si desidera eseguire la ricerca e ottenere statistiche, fare clic **su Cerca** per eseguire la ricerca rivista. 
-    
-5. Al termine della ricerca, selezionarla nell'elenco delle ricerche e quindi fare clic sul pulsante **Statistiche** ![ di ricerca statistiche di ricerca ](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) . È inoltre possibile visualizzare e confrontare le statistiche delle parole chiave per più ricerche.
-    
-6. Nella pagina **Statistiche di** ricerca fare clic su **Query** per visualizzare le statistiche delle parole chiave per le ricerche selezionate. 
-    
-    ![Vengono visualizzate le statistiche per ogni parola chiave per le ricerche selezionate](../media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
-  
-    Come mostrato nella schermata precedente, vengono visualizzate le statistiche per ogni parola chiave. ciò include: 
-    
+    Come mostrato nella schermata precedente, vengono visualizzate le statistiche per ogni parola chiave. ciò include:
+
     - Statistiche delle parole chiave per ogni tipo di percorso di contenuto incluso nella ricerca.
-    
-    - Query di ricerca effettiva per ogni parola chiave, che include tutte le condizioni della query di ricerca. 
-    
-    - La query di ricerca completa (identificata **come Primaria** nella **colonna Part)** e le statistiche per la query completa. Si noti che si tratta delle stesse statistiche visualizzate nella **pagina Riepilogo.** 
 
-> [!NOTE]
-> Per ridurre i problemi causati da elenchi di parole chiave di grandi dimensioni, ora si è limitati a un massimo di 20 righe nell'elenco di parole chiave di una query di ricerca.
+    - Numero di elementi della cassetta postale non indicizzati.
+
+    - Query di ricerca effettiva e risultati per ogni parola chiave (identificata come **Parola** chiave nella **colonna Part),** che include tutte le condizioni della query di ricerca.
+
+    - La query di ricerca completa (identificata come **Primaria** nella **colonna Part)** e le statistiche per la query completa per ogni tipo di posizione. Si noti che si tratta delle stesse statistiche visualizzate nella **scheda** Riepilogo.

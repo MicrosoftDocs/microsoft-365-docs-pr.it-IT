@@ -1,5 +1,5 @@
 ---
-title: Limiti per la ricerca di contenuto e Core eDiscovery nel Centro conformità
+title: Limiti per Ricerca contenuto ed eDiscovery di base nel Centro conformità
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,16 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: Informazioni sui limiti in vigore per la funzionalità ricerca contenuto nel Centro conformità Microsoft 365, ad esempio il numero massimo di ricerche simultanee. Questi limiti di ricerca si applicano anche alle ricerche associate ai casi di eDiscovery di base.
-ms.openlocfilehash: e4cfc79d35b4dc6a22e8e7a872699d906b39a901
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Informazioni sui limiti in vigore per le funzionalità ricerca contenuto e Core eDiscovery nel Centro Microsoft 365 conformità.
+ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244321"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311413"
 ---
-# <a name="limits-for-content-search"></a>Limiti per ricerca contenuto 
-Vengono applicati diversi limiti per lo strumento ricerca contenuto nel Centro Microsoft 365 conformità. Sono incluse le ricerche eseguite nella **pagina Ricerca** contenuto e le ricerche associate a un caso di eDiscovery nella pagina **Core eDiscovery.** Questi limiti consentono di mantenere l'integrità e la qualità dei servizi forniti alle organizzazioni. Esistono anche limiti relativi all'indicizzazione dei messaggi di posta elettronica in Exchange Online ricerca. Non è possibile modificare i limiti per ricerca contenuto o indicizzazione della posta elettronica, ma è necessario conoscerli in modo da poter prendere in considerazione questi limiti durante la pianificazione, l'esecuzione e la risoluzione dei problemi delle ricerche di contenuto.
+# <a name="limits-for-ediscovery-search"></a>Limiti per la ricerca eDiscovery 
+
+Diversi limiti vengono applicati agli strumenti di ricerca eDiscovery nel Centro Microsoft 365 conformità. Sono incluse le ricerche eseguite nella **pagina Ricerca** contenuto e le ricerche associate a un caso di eDiscovery nella pagina **Core eDiscovery.** Questi limiti consentono di mantenere l'integrità e la qualità dei servizi forniti alle organizzazioni. Esistono anche limiti relativi all'indicizzazione dei messaggi di posta elettronica in Exchange Online ricerca. Non è possibile modificare i limiti per le ricerche di eDiscovery o l'indicizzazione della posta elettronica, ma è necessario conoscerli in modo da poter prendere in considerazione questi limiti durante la pianificazione, l'esecuzione e la risoluzione dei problemi delle ricerche di eDiscovery.
+
+Per i limiti correlati allo strumento Advanced eDiscovery, vedere [Limiti in Advanced eDiscovery](limits-ediscovery20.md)
   
 ## <a name="search-limits"></a>Limiti relativi alla ricerca
 
@@ -99,7 +102,7 @@ Nella tabella seguente vengono descritti i limiti di indicizzazione che potrebbe
 |Numero massimo di token univoci nel corpo  <br/> |1 milione  <br/> |Come spiegato in precedenza, i token sono il risultato dell'estrazione del testo dal contenuto, della rimozione della punteggiatura e degli spazi e quindi della suddivisione in parole (detti token) archiviate nell'indice. Ad esempio, la frase  `"cat, mouse, bird, dog, dog"` contiene 5 token. Ma solo 4 di questi sono token univoci. Esiste un limite di 1 milione di token univoci per ogni messaggio di posta elettronica, che consente di evitare che l'indice sia troppo grande con token casuali.  <br/> |
 |||
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Esistono ulteriori limiti correlati a diversi aspetti della ricerca di contenuto, ad esempio l'indicizzazione del contenuto. Per ulteriori informazioni su questi limiti, vedere i seguenti argomenti:
 

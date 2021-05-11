@@ -1,5 +1,5 @@
 ---
-title: Usare Ricerca contenuto per le raccolte di destinazione
+title: Usare Ricerca contenuto per raccolte di destinazione
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Utilizzare Ricerca contenuto nel Centro Microsoft 365 conformità per eseguire raccolte mirate, che garantiscono che gli elementi si trovino in una cassetta postale o in una cartella del sito specifica.
-ms.openlocfilehash: ea01386b7e52c05f8116caacddd6dec7baf12272
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+description: Utilizzare Ricerca contenuto nel Centro Microsoft 365 conformità per eseguire una raccolta di destinazione, che cerca gli elementi in una cassetta postale o in una cartella del sito specifica.
+ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994763"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311909"
 ---
-# <a name="use-content-search-for-targeted-collections"></a>Usare Ricerca contenuto per le raccolte di destinazione
+# <a name="use-content-search-for-targeted-collections"></a>Usare Ricerca contenuto per raccolte di destinazione
 
-La funzionalità Ricerca contenuto nel Centro conformità Microsoft 365 non fornisce un modo diretto nell'interfaccia utente per cercare cartelle specifiche nelle cassette postali di Exchange o nei siti SharePoint e OneDrive for Business. È tuttavia possibile eseguire ricerche in cartelle specifiche (denominate raccolte di *destinazione)* specificando la proprietà ID cartella per la posta elettronica o il percorso (DocumentLink) per i siti nella sintassi della query di ricerca effettiva. L'utilizzo di Ricerca contenuto per eseguire una raccolta di destinazione è utile quando si è certi che gli elementi che rieseguono un caso o elementi con privilegi si trovino in una cassetta postale o in una cartella del sito specifica. È possibile utilizzare lo script in questo articolo per ottenere l'ID cartella per le cartelle delle cassette postali o il percorso (DocumentLink) per le cartelle in un SharePoint e OneDrive for Business sito. È quindi possibile utilizzare l'ID o il percorso della cartella in una query di ricerca per restituire gli elementi che si trovano nella cartella.
+Lo strumento ricerca contenuto nel Centro conformità Microsoft 365 non fornisce un modo diretto nell'interfaccia utente per cercare cartelle specifiche nelle cassette postali di Exchange o SharePoint e OneDrive for Business siti. È tuttavia possibile eseguire ricerche in cartelle specifiche (denominate raccolte di *destinazione)* specificando la proprietà ID cartella per la posta elettronica o il percorso (DocumentLink) per i siti nella sintassi della query di ricerca effettiva. L'utilizzo di Ricerca contenuto per eseguire una raccolta di destinazione è utile quando si è certi che gli elementi che rieseguono un caso o elementi con privilegi si trovino in una cassetta postale o in una cartella del sito specifica. È possibile utilizzare lo script in questo articolo per ottenere l'ID cartella per le cartelle delle cassette postali o il percorso (DocumentLink) per le cartelle in un SharePoint e OneDrive for Business sito. È quindi possibile utilizzare l'ID o il percorso della cartella in una query di ricerca per restituire gli elementi che si trovano nella cartella.
 
 > [!NOTE]
 > Per restituire il contenuto che si trova in una cartella in un sito SharePoint o OneDrive for Business, lo script in questo argomento utilizza la proprietà gestita DocumentLink anziché la proprietà Path. La proprietà DocumentLink è più affidabile della proprietà Path perché restituirà tutto il contenuto di una cartella, mentre la proprietà Path non restituirà alcuni file multimediali.
@@ -37,7 +37,7 @@ La funzionalità Ricerca contenuto nel Centro conformità Microsoft 365 non forn
 
 - Per eseguire lo script nel passaggio 1, è necessario essere membri del gruppo di ruoli Responsabile eDiscovery nel Centro sicurezza & conformità. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
 
-    Inoltre, è necessario disporre del ruolo Destinatari di posta nell'Exchange Online organizzazione. Questa operazione è necessaria per eseguire il cmdlet **Get-MailboxFolderStatistics,** incluso nello script. Per impostazione predefinita, il ruolo Destinatari di posta viene assegnato ai gruppi di ruoli Gestione organizzazione e Gestione destinatari in Exchange Online. Per ulteriori informazioni sull'assegnazione delle autorizzazioni in Exchange Online, vedere [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help). È inoltre possibile creare un gruppo di ruoli personalizzato, assegnare il ruolo Destinatari di posta e quindi aggiungere i membri che devono eseguire lo script nel passaggio 1. Per ulteriori informazioni, vedere [Gestire gruppi di ruoli](/Exchange/permissions-exo/role-groups).
+- È inoltre necessario essere assegnati al ruolo Destinatari di posta nell'Exchange Online organizzazione. Questa operazione è necessaria per eseguire il cmdlet **Get-MailboxFolderStatistics,** incluso nello script. Per impostazione predefinita, il ruolo Destinatari di posta viene assegnato ai gruppi di ruoli Gestione organizzazione e Gestione destinatari in Exchange Online. Per ulteriori informazioni sull'assegnazione delle autorizzazioni in Exchange Online, vedere [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help). È inoltre possibile creare un gruppo di ruoli personalizzato, assegnare il ruolo Destinatari di posta e quindi aggiungere i membri che devono eseguire lo script nel passaggio 1. Per ulteriori informazioni, vedere [Gestire gruppi di ruoli](/Exchange/permissions-exo/role-groups).
 
 - Lo script in questo articolo supporta l'autenticazione moderna. È possibile utilizzare lo script così come è se si è un'Microsoft 365 o un'Microsoft 365 GCC organizzazione. Se si è un'organizzazione di Office 365 Germany, un'organizzazione di Microsoft 365 GCC High o un'organizzazione DoD di Microsoft 365, sarà necessario modificare lo script per eseguirlo correttamente. In particolare, è necessario modificare la riga e utilizzare il `Connect-ExchangeOnline` *parametro ExchangeEnvironmentName* (e il valore appropriato per il tipo di organizzazione) per connettersi a Exchange Online PowerShell.  È inoltre necessario modificare la riga e utilizzare i parametri `Connect-IPPSSession` *ConnectionUri* e *AzureADAuthorizationEndpointUri* (e i valori appropriati per il tipo di organizzazione) per connettersi a PowerShell del Centro sicurezza & conformità. Per ulteriori informazioni, vedere gli esempi in [Connessione a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) e Connessione sicurezza & [Centro conformità PowerShell.](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)
 
@@ -57,7 +57,7 @@ La funzionalità Ricerca contenuto nel Centro conformità Microsoft 365 non forn
 
 Lo script eseguito in questo primo passaggio restituirà un elenco di cartelle delle cassette postali o SharePoint e OneDrive for Business e l'ID o il percorso della cartella corrispondente per ogni cartella. Quando si esegue questo script, verranno richieste le informazioni seguenti.
 
-- **Indirizzo di posta elettronica o URL** sito: digitare un indirizzo di posta elettronica del responsabile per restituire un elenco Exchange cartelle e ID cartella della cassetta postale. Oppure digitare l'URL di un SharePoint o di un OneDrive for Business per restituire un elenco di percorsi per il sito specificato. Di seguito vengono descritti alcuni esempi:
+- **Indirizzo di posta elettronica o URL** sito: digitare un indirizzo di posta elettronica del responsabile per restituire un elenco Exchange cartelle e ID cartella della cassetta postale. Oppure digitare l'URL di un SharePoint o di un OneDrive for Business per restituire un elenco di percorsi per il sito specificato. Ecco alcuni esempi:
 
   - **Exchange**: stacig@contoso.onmicrosoft.com <spam> <spam>
 
@@ -268,7 +268,7 @@ Ecco alcuni esempi di utilizzo delle proprietà  `folderid` e in una query di ri
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Quando si usa lo script in questo articolo per eseguire raccolte di destinazione, tenere presente quanto segue.
 
