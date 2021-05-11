@@ -506,54 +506,54 @@
           items:
             - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
-            - name: Visualizzare le statistiche delle parole chiave per i risultati della ricerca
+            - name: Visualizzare in anteprima i risultati della ricerca di eDiscovery
+              href: preview-ediscovery-search-results.md
+            - name: Visualizzare le statistiche per i risultati della ricerca
               href: view-keyword-statistics-for-content-search.md
             - name: Esportare i risultati della ricerca
               href: export-search-results.md
             - name: Esportare un report sulle ricerche
               href: export-a-content-search-report.md
-            - name: Usare Microsoft Edge per scaricare i risultati della ricerca
-              href: configure-edge-to-export-search-results.md
             - name: Cercare ed eliminare messaggi di posta elettronica
               href: search-for-and-delete-messages-in-your-organization.md
             - name: Cercare i dati della chat di Teams per gli utenti locali
               href: search-cloud-based-mailboxes-for-on-premises-users.md
-            - name: Modificare in blocco più ricerche di contenuti
-              href: bulk-edit-content-searches.md
             - name: Preparare un file CSV per un elenco ID di ricerca
               href: csv-file-for-an-id-list-content-search.md
-            - name: Verificare la presenza di errori nella query di ricerca
-              href: check-your-content-search-query-for-errors.md
+            - name: Configurare il filtro delle autorizzazioni per la ricerca contenuto
+              href: permissions-filtering-for-content-search.md
             - name: Risolvere i problemi comuni di eDiscovery
               href: ediscovery-troubleshooting-common-issues.md
             - name: Eseguire nuovamente una ricerca non riuscita
               href: retry-failed-content-search.md
             - name: Conservare i destinatari in Ccn per la ricerca
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-        - name: Configurare la ricerca contenuto
-          items:
-            - name: Configurare il filtro delle autorizzazioni per la ricerca contenuto
-              href: permissions-filtering-for-content-search.md
-            - name: Modificare le dimensioni dei file PST quando si esportano i risultati della ricerca
-              href: change-the-size-of-pst-files-when-exporting-results.md
-            - name: Disabilitare i report quando si esportano i risultati della ricerca
-              href: disable-reports-when-you-export-content-search-results.md
         - name: Riferimento ricerca contenuto
           items:
-            - name: Limiti di Ricerca contenuto
+            - name: Limiti di eDiscovery Search
               href: limits-for-content-search.md
+            - name: Contenuto archiviato nelle cassette postali per eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
+            - name: Differenze tra i risultati della ricerca stimati ed effettivi
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
             - name: Elementi parzialmente indicizzati
               href: partially-indexed-items-in-content-search.md
             - name: Analizzare gli elementi parzialmente indicizzati
               href: investigating-partially-indexed-items-in-ediscovery.md
             - name: De-duplicazione nei risultati della ricerca
               href: de-duplication-in-ediscovery-search-results.md
-            - name: Differenze tra i risultati della ricerca stimati ed effettivi
-              href: differences-between-estimated-and-actual-ediscovery-search-results.md
-            - name: Contenuto archiviato nelle cassette postali per eDiscovery
-              href: what-is-stored-in-exo-mailbox.md
             - name: Decrittografia negli strumenti di eDiscovery
               href: ediscovery-decryption.md
+            - name: Modificare le dimensioni dei file PST quando si esportano i risultati della ricerca
+              href: change-the-size-of-pst-files-when-exporting-results.md
+            - name: Disabilitare i report quando si esportano i risultati della ricerca
+              href: disable-reports-when-you-export-content-search-results.md
+            - name: Verificare la presenza di errori nella query di ricerca
+              href: check-your-content-search-query-for-errors.md
+            - name: Usare Microsoft Edge per scaricare i risultati della ricerca
+              href: configure-edge-to-export-search-results.md
+            - name: Modificare in blocco più ricerche di contenuti
+              href: bulk-edit-content-searches.md
         - name: Script di PowerShell per la ricerca contenuto
           items:
             - name: Usare la ricerca contenuto per le raccolte di destinazione
@@ -578,23 +578,29 @@
           href: close-reopen-delete-core-ediscovery-cases.md
         - name: Informazioni di riferimento su Core eDiscovery
           items:
+            - name: Limiti di eDiscovery Search
+              href: limits-for-content-search.md
             - name: Assegnare autorizzazioni di eDiscovery
               href: assign-ediscovery-permissions.md
             - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
             - name: Contenuto archiviato nelle cassette postali per eDiscovery
               href: what-is-stored-in-exo-mailbox.md
-            - name: Configurare i filtri delle autorizzazioni di ricerca
-              href: permissions-filtering-for-content-search.md
+            - name: Visualizzare in anteprima i risultati della ricerca di eDiscovery
+              href: preview-ediscovery-search-results.md
             - name: Configurare i limiti di conformità
               href: set-up-compliance-boundaries.md
+            - name: Configurare i filtri delle autorizzazioni di ricerca
+              href: permissions-filtering-for-content-search.md
+            - name: Differenze tra i risultati della ricerca stimati ed effettivi
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: Esportare un report sulle ricerche
+              href: export-a-content-search-report.md
             - name: Usare uno script per aggiungere gli utenti a un blocco di eDiscovery
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
             - name: Creare un report sui blocchi di eDiscovery
               href: create-a-report-on-holds-in-ediscovery-cases.md
-            - name: Esportare un report sulle ricerche
-              href: export-a-content-search-report.md
-            - name: Visualizzare le statistiche delle parole chiave per i risultati della ricerca
+            - name: Visualizzare le statistiche per i risultati della ricerca
               href: view-keyword-statistics-for-content-search.md
             - name: Cercare ed eliminare fughe di dati
               href: data-spillage-scenariosearch-and-purge.md
@@ -786,18 +792,22 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Gestire i criteri di controllo e avviso
   items:
+    - name: Soluzioni di controllo di Microsoft 365
+      href: auditing-solutions-overview.md
     - name: Controllo di base
       items:
+        - name: Configurare il controllo di base
+          href: set-up-basic-auditing.md
         - name: Eseguire ricerche nel log di controllo
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Usare uno script PowerShell per la ricerca nel log di audit
           href: audit-log-search-script.md
-        - name: Abilitare o disabilitare la ricerca dei log di controllo
-          href: turn-audit-log-search-on-or-off.md
         - name: Proprietà dettagliate nel log di controllo
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: 'Esportare, configurare e visualizzare i record del log di controllo'
           href: export-view-audit-log-records.md
+        - name: Abilitare o disabilitare la ricerca dei log di controllo
+          href: turn-audit-log-search-on-or-off.md
         - name: Usare il log di controllo per individuare i problemi più comuni
           href: auditing-troubleshooting-scenarios.md
         - name: Usare il controllo di condivisione nel log di controllo
@@ -810,16 +820,18 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Domande frequenti e risoluzione dei problemi su API Office 365 Management Activity
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Controllo delle cassette postali
-      href: enable-mailbox-auditing.md
     - name: Audit avanzato
       items:
         - name: Panoramica di Audit avanzato
           href: advanced-audit.md
+        - name: Configurare Audit avanzato
+          href: set-up-advanced-audit.md
         - name: Gestire i criteri di conservazione dei log di controllo
           href: audit-log-retention-policies.md
         - name: Usare Audit avanzato per le indagini sugli account compromessi
           href: mailitemsaccessed-forensics-investigations.md
+    - name: Controllo delle cassette postali
+      href: enable-mailbox-auditing.md
     - name: Criteri di avviso
       href: alert-policies.md
 - name: Gestire i rischi di conformità
