@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per distribuire le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 08ecf97e3cb45896390c3dac9074c54a2b0bbe96
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994773"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302113"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -97,7 +97,10 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentazione per gli utenti finali sulle etichette di riservatezza
 
-La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e dalle istruzioni personalizzate per i nomi e le configurazioni delle etichette scelti. Per le etichette predefinite, è possibile usare l'impostazione dei criteri di etichettatura **Fornisci agli utenti un collegamento a una pagina personalizzata della Guida** per specificare un collegamento interno della documentazione. Gli utenti possono accedervi facilmente selezionando **Altre informazioni** tramite il pulsante **Sensibilità** della barra multifunzione di Office per Word, PowerPoint, Excel e Outlook.
+La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e dalle istruzioni personalizzate per i nomi e le configurazioni delle etichette scelti. È possibile usare l'impostazione dei criteri di etichettatura **Fornisci agli utenti un collegamento a una pagina personalizzata della Guida** per specificare un collegamento interno della documentazione. Gli utenti possono accedervi facilmente selezionando Altre informazioni tramite il pulsante **Sensibilità**:
+
+- Per le etichette incorporate: opzione di menu **Altre informazioni**.
+- Per il client di etichettatura unificata di Azure Information Protection **: Guida e feedback** Opzione di menu > **Collegamento Altre informazioni** nella finestra di dialogo Microsoft Azure Information Protection.
 
 Per supportare la scrittura di documentazioni personalizzate, questo post di blog include un pacchetto scaricabile che può essere usato per formare gli utenti e promuovere l'adozione: [Formazione per l'utente finale sulle etichette di riservatezza di M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
 
