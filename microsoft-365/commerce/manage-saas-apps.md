@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jamitche
+ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,16 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: Scopri come attivare e gestire le app di terze parti nell'Microsoft 365 di amministrazione.
 ms.date: 04/15/2021
-ms.openlocfilehash: eece8154640dcdd55239511ed099abcdca39e807
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 5a486dba03fbd34fe2e409bba8ba41c1f9873141
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280524"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331623"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni di app di terze parti per l'organizzazione
 
@@ -87,7 +86,7 @@ Ecco cosa puoi fare in ogni portale.
 
 Dopo l'attivazione, l'app rimane attiva a meno che non venga annullata, scada o se il pagamento non viene mantenuto attivo. Questi eventi modificano lo stato dell'app in disabilitato. Una volta disabilitata, un'app non può essere riattivata. Per continuare a usare l'app, acquistarne un'altra copia.
 
-## <a name="assign-licenses"></a>Assegnare le licenze
+## <a name="assign-licenses"></a>Assegnazione delle licenze
 
 Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Vengono attivati nel portale dell'editore di terze parti. Nella pagina dell'app, in **Impostazioni & azioni** selezionare il collegamento per assegnare le licenze.
 
@@ -103,7 +102,7 @@ Gli amministratori possono modificare il numero di licenze di proprietà dell'or
 2. Trova e seleziona l'app che vuoi gestire.
 3. Selezionare **Cambia quantità di licenza**.
 
-## <a name="manage-payment-methods"></a>Gestire le modalità di pagamento
+## <a name="manage-payment-methods"></a>Gestire i metodi di pagamento
 
 Alle app software-as-a-service è assegnato un profilo di fatturazione. I profili di fatturazione consentono di personalizzare i prodotti inclusi nella fattura e la modalità di pagamento delle fatture. che includono:
 

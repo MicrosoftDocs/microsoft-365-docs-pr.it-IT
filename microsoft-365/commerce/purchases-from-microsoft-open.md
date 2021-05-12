@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,49 +16,46 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 ROBOTS: NOINDEX
-description: Informazioni su come attivare, rinnovare o aggiungere licenze a un abbonamento Microsoft 365 per le aziende.
+description: Informazioni su come attivare, rinnovare o aggiungere licenze a un abbonamento a Microsoft 365 per le aziende.
 ms.date: 10/21/2020
-ms.openlocfilehash: 04df3b24693ac92875cc667aea61e0e9b35cb270
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 78524b47b32d1b827cc6d525e4aa8e3feb499557
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293632"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333387"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Immettere il codice Product Key acquistato da Microsoft Open
 
-Se hai acquistato Microsoft 365 per le aziende da un [programma Microsoft Open License,](https://go.microsoft.com/fwlink/p/?LinkID=613298)questo articolo fa per te. I clienti con contratti multilicenza che hanno acquistato un codice Product Key possono seguire questo argomento per attivare, rinnovare o aggiungere licenze a un abbonamento.
+Se è stato acquistato Microsoft 365 per le aziende da un [programma Microsoft Open License,](https://go.microsoft.com/fwlink/p/?LinkID=613298)questo articolo fa per te. I clienti con contratti multilicenza che hanno acquistato un codice Product Key possono seguire questo argomento per attivare, rinnovare o aggiungere licenze a un abbonamento.
   
  **Serve assistenza immediatamente?** [Chiamare il Supporto Tecnico Microsoft](..//business-video/get-help-support.md) . 
   
  **Serve altro?**
  
- **Per informazioni su Microsoft 365 Home** o Personale, vedere Utilizzo dei codici Product Key con [Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
+ **Per informazioni su Microsoft 365 Home o Personal,** vedere [Utilizzo dei codici Product Key con Office.](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)
   
- **Per informazioni su Microsoft 365 Business Standard acquistati presso** un punto vendita al dettaglio, vedere Immettere il codice [Product Key acquistato presso un punto vendita al dettaglio.](enter-your-product-key.md) 
+ **Per informazioni su Microsoft 365 Business Standard** acquistato presso un punto vendita al dettaglio, vedere Immettere il codice [Product Key acquistato presso un punto vendita al dettaglio.](enter-your-product-key.md) 
   
 ## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>Attivare, rinnovare o aggiungere licenze a un abbonamento acquistato tramite Microsoft Open
 
 Se hai acquistato Microsoft 365 da un programma Microsoft Open License, il sistema immette automaticamente il codice quando attivi, rinnovi o aggiungi licenze a un abbonamento.
   
-1. Dopo aver acquistato una chiave da un partner Microsoft 365, controllare la posta in arrivo per un messaggio di posta elettronica da Microsoft contenente un collegamento di attivazione.
+1. Dopo aver acquistato una chiave da un partner di Microsoft 365, controllare la posta in arrivo per un messaggio di posta elettronica da Microsoft contenente un collegamento di attivazione.
     
     > [!TIP]
-    >  Il messaggio di posta elettronica viene inviato all'utente indicato come amministratore online nel contratto multilicenza. Se non si è certi di chi è designato come amministratore online, chiedere al Microsoft 365 partner. 
+    >  Il messaggio di posta elettronica viene inviato all'utente indicato come amministratore online nel contratto multilicenza. Se non si è certi di chi è designato come amministratore online, chiedere al partner Microsoft 365. 
   
-2. Seguire il collegamento nel messaggio di posta elettronica per accedere con l'account aziendale o dell'istituto di istruzione, accettare il Contratto di licenza Open e rinnovare l'abbonamento. Per una procedura dettagliata, scaricare la guida PDF [Activate Online Services: Microsoft 365 Subscription, che](https://go.microsoft.com/fwlink/p/?LinkId=618100)illustra come attivare una nuova sottoscrizione, rinnovare una sottoscrizione esistente o aggiungere licenze a un abbonamento esistente.
+2. Seguire il collegamento nel messaggio di posta elettronica per accedere con l'account aziendale o dell'istituto di istruzione, accettare il Contratto di licenza Open e rinnovare l'abbonamento. Per una procedura dettagliata, scaricare la guida PDF [Activate Online Services: Microsoft 365 Subscription,](https://go.microsoft.com/fwlink/p/?LinkId=618100)che illustra come attivare un nuovo abbonamento, rinnovare un abbonamento esistente o aggiungere licenze a un abbonamento esistente.
     
 > [!NOTE]
 > I clienti con contratti multilicenza possono anche scegliere di attivare le sottoscrizioni nel [Centro servizi per contratti multilicenza.](https://go.microsoft.com/fwlink/p/?LinkID=282016) Per informazioni su come fare, scaricare la guida in PDF [Attivazione dei Microsoft Online Services nel Centro servizi per contratti multilicenza](https://go.microsoft.com/fwlink/p/?LinkId=618096). 
   
 ## <a name="whats-next"></a>Operazioni successive
 
-Se non si ha di Microsoft 365 per le aziende, vedere come configurare Microsoft 365 [per l'organizzazione.](../admin/setup/setup.md)
+Se non si ha una nuova versione di Microsoft 365 per le aziende, vedere come configurare [Microsoft 365 per l'organizzazione.](../admin/setup/setup.md)
   
 ## <a name="still-having-trouble-with-product-keys"></a>Problemi con i codici Product Key?
 

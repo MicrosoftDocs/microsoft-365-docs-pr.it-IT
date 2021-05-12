@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implementare Microsoft Information Protection (MIP) per proteggere le informazioni sensibili ovunque ci si trovi.
-ms.openlocfilehash: 86b4704ab12d14702bb0a8dde47208f054c67a54
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: a68f8dee00117af1fa4d7be5f459ed5c850a5100
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296744"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332751"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365.
 
@@ -78,8 +78,8 @@ Per evitare la condivisione accidentale di informazioni riservate, usare le funz
 
 |Funzionalità|Che problemi risolve?|Per iniziare|
 |:------|:------------|:---------------------|
-|[Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)| Evita la condivisione involontaria di elementi riservati. | [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)|
-|[Informazioni sulla prevenzione della perdita di dati degli endpoint](endpoint-dlp-learn-about.md)| Consente di estendere le funzionalità DLP agli elementi usati e condivisi nei computer con Windows 10. | [Introduzione alla prevenzione della perdita di dati degli endpoint](endpoint-dlp-getting-started.md)|
-|[Informazioni sull'Estensione della conformità Microsoft (anteprima)](dlp-chrome-learn-about.md) | Estende le funzionalità DLP al browser Chrome | [Introduzione all'estensione della Conformità Microsoft (anteprima)](dlp-chrome-get-started.md)|
-|[Informazioni sullo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)](dlp-on-premises-scanner-learn.md)|Estende il monitoraggio DLP delle attività sui file e le azioni di protezione per tali file nelle condivisioni di file locali, cartelle e raccolte documenti di SharePoint.|[Introduzione allo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)](dlp-on-premises-scanner-get-started.md)|
+|[Prevenzione della perdita dei dati](dlp-learn-about-dlp.md)| Evita la condivisione involontaria di elementi riservati. | [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)|
+|[Prevenzione della perdita dei dati degli endpoint ](endpoint-dlp-learn-about.md)| Consente di estendere le funzionalità DLP agli elementi usati e condivisi nei computer con Windows 10. | [Introduzione alla prevenzione della perdita di dati degli endpoint](endpoint-dlp-getting-started.md)|
+|[Estensione della conformità Microsoft (anteprima)](dlp-chrome-learn-about.md) | Estende le funzionalità DLP al browser Chrome | [Introduzione all'estensione della Conformità Microsoft (anteprima)](dlp-chrome-get-started.md)|
+|[Scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)](dlp-on-premises-scanner-learn.md)|Estende il monitoraggio DLP delle attività sui file e le azioni di protezione per tali file nelle condivisioni di file locali, cartelle e raccolte documenti di SharePoint.|[Introduzione allo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)](dlp-on-premises-scanner-get-started.md)|
 |[Proteggere le informazioni riservate nella chat e nei messaggi di canale di Microsoft Teams](dlp-microsoft-teams.md) | Estende alcune funzionalità DLP alla chat e ai messaggi di canale di Teams | [Informazioni sul criterio predefinito per la prevenzione della perdita di dati in Microsoft Teams (anteprima)](dlp-teams-default-policy.md)|

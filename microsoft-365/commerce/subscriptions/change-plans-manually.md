@@ -1,10 +1,11 @@
 ---
-title: Modificare manualmente Microsoft 365 per i piani aziendali
+title: Modificare manualmente i piani di Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,19 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 ROBOTS: NOINDEX
 description: Modificare le sottoscrizioni manualmente acquistando una nuova sottoscrizione e verificando che entrambe le sottoscrizioni siano elencate e attive.
 ms.date: 03/17/2021
-ms.openlocfilehash: 7361b459e61961efbb729d80dcbb55dfdad65933
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 99bb732405d6420e430adad3ece7ea7f0c93579b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293620"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333303"
 ---
 # <a name="change-plans-manually"></a>Modificare manualmente i piani
 
@@ -52,7 +50,7 @@ Per continuare con una modifica manuale, leggere [Passaggio 2: Acquistare una nu
 
 OPPURE
 
-**Acquistare una nuova sottoscrizione e licenze:** Seguire i passaggi descritti in [Acquistare un altro Microsoft 365 per le](../try-or-buy-microsoft-365.md) aziende per acquistare un nuovo abbonamento.
+**Acquistare una nuova sottoscrizione e licenze:** Seguire i passaggi descritti in Acquistare un altro abbonamento [a Microsoft 365 per le](../try-or-buy-microsoft-365.md) aziende per acquistare un nuovo abbonamento.
 
 Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si trovano gli utenti. Ad esempio, controllare gli indirizzi di posta elettronica degli utenti che si desidera spostare. Se gli indirizzi di posta \@ elettronica includono contoso.com, è necessario acquistare un nuovo abbonamento per contoso.com.
 Includere una licenza per ogni utente da spostare.
@@ -63,7 +61,7 @@ Includere una licenza per ogni utente da spostare.
 
 2. **Verificare che entrambe le sottoscrizioni siano elencate e attive** La sottoscrizione da cui si stanno spostando gli utenti e la sottoscrizione in cui si stanno spostando gli utenti devono essere elencate insieme. Se il nuovo abbonamento non compare ancora al primo controllo, controllare di nuovo più tardi. Verificare che entrambe le sottoscrizioni siano attive. [Il nuovo abbonamento non è elencato o non è attivo](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. **Verificare di disporre di licenze sufficienti per ogni utente** Ogni utente ha bisogno di una licenza corrispondente all'abbonamento. Quindi, se vuoi spostare dieci utenti in Microsoft 365 Business Premium, dovrai assicurarti che siano disponibili dieci licenze.
+3. **Verificare di disporre di licenze sufficienti per ogni utente** Ogni utente ha bisogno di una licenza corrispondente all'abbonamento. Pertanto, se si desidera spostare dieci utenti in Microsoft 365 Business Premium, è necessario assicurarsi che siano disponibili dieci licenze.
 
 4. **Servono altre licenze per il nuovo abbonamento?**
    Vai alla **pagina I tuoi prodotti** e acquista altre [licenze.](../licenses/buy-licenses.md)

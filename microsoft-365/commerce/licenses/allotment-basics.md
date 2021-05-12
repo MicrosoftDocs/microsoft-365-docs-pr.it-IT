@@ -11,17 +11,19 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.collection: ''
+ms.collection:
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - commerce_licensing
 description: Informazioni sulla nuova funzionalità di assegnazione.
 ms.date: 03/17/2021
-ms.openlocfilehash: 949e06d4bf54405e0045f8c7512a04b1b5cc22c0
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 0910673ce54f3f977ed8ecbc3d6c77ac2ebad0cc
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327131"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331695"
 ---
 # <a name="allotment-basics"></a>Nozioni di base sulla assegnazione
 
@@ -37,13 +39,13 @@ Puoi anche delegare la gestione delle tue attività. I proprietari di assegnazio
 
 È possibile utilizzare le risorse con qualsiasi prodotto disponibile per gli utenti:
 
-- Office suite e prodotti autonomi
-- Enterprise e Mobility
+- Famiglia di prodotti Office e prodotti autonomi
+- Prodotti Enterprise e Mobility
 - Prodotti Dynamics 365
 
 I prodotti seguenti non possono essere utilizzati con le operazioni di assegnazione:
 
-- Microsoft Store app
+- App di Microsoft Store
 - Software perpetuo o software direttamente assegnato a un utente se non è coinvolta alcuna licenza.
 - Risorse di Azure
 

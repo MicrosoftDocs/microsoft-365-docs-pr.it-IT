@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,27 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 description: Scopri come assegnare licenze ai gruppi per l'uso con i dispositivi.
 ms.custom:
-- okr_SMB
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.openlocfilehash: a316810e3e6ddb1373697dc56b2fccb5a32cf0b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- okr_SMB
+- commerce_licensing
+search.appverid: MET150
+ms.date: 03/17/2021
+ms.openlocfilehash: 67bd0734953c64f51390aac949a7da477914c7b4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911483"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331659"
 ---
 # <a name="manage-licenses-for-devices"></a>Gestire le licenze per i dispositivi
 
 Se hai Microsoft 365 Apps for enterprise (dispositivo) o Microsoft 365 Apps for Education (dispositivo), puoi assegnare licenze ai dispositivi usando i gruppi di Azure AD. Quando un dispositivo ha una licenza, chiunque lo usi può usare Microsoft 365 Apps for enterprise (in precedenza denominato Office 365 ProPlus). Si supponga, ad esempio, di disporre di 20 portatili e tablet utilizzati dagli utenti dell'organizzazione. Quando assegni una licenza a ogni dispositivo, ogni persona che accede a uno dei dispositivi usa Microsoft 365 Apps for enterprise senza la necessità della propria licenza.
 
 > [!IMPORTANT]
-> Le licenze basate su dispositivi per Microsoft 365 Apps for enterprise sono disponibili solo come licenza per componenti aggiuntivi per alcuni clienti commerciali e per alcuni clienti dell'istruzione. Per i clienti commerciali, la licenza è *Microsoft 365 Apps for enterprise (dispositivo)* ed è disponibile solo tramite Contratto Enterprise/Contratto Enterprise Subscription. Per i clienti education, la licenza è *Microsoft 365 Apps for Education (dispositivo)* ed è disponibile solo tramite Enrollment for Education Solutions (EES). Per ulteriori informazioni, leggere il post di blog sulla [disponibilità dell'istruzione.](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/) Per la disponibilità commerciale, contattare il rappresentante dell'account Microsoft.
+> Le licenze basate su dispositivi per Microsoft 365 Apps for enterprise sono disponibili solo come licenza per componenti aggiuntivi per alcuni clienti commerciali e per alcuni clienti dell'istruzione. Per i clienti commerciali, la licenza è *Microsoft 365 Apps for enterprise (dispositivo)* ed è disponibile solo tramite Contratto Enterprise/Contratto Enterprise Subscription. Per i clienti education, la licenza è *Microsoft 365 Apps for Education (dispositivo)* ed è disponibile solo tramite Enrollment for Education Solutions (EES). Per ulteriori informazioni, leggere il post di blog sulla [disponibilità dell'istruzione.](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education) Per la disponibilità commerciale, contattare il rappresentante dell'account Microsoft.
 
 Per iniziare, creare un gruppo nell'interfaccia di amministrazione di Azure Active Directory e quindi assegnare i dispositivi al gruppo. Per altre informazioni sulle licenze dei dispositivi, inclusi i requisiti dei dispositivi, i tipi di gruppi che puoi usare e come configurare Microsoft 365 Apps for enterprise per l'uso delle licenze per dispositivi, vedi Licenze basate su dispositivi per [Microsoft 365 Apps for enterprise.](/deployoffice/device-based-licensing)
 

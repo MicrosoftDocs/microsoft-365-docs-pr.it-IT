@@ -4,6 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: SKjerland
+ms.reviewer: nicholak
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -12,22 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
-- MSStore_Link
 - AdminSurgePortfolio
+- commerce_licensing
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Rimuovere la licenza da una cassetta postale condivisa per assegnarla a un altro utente. '
-ms.openlocfilehash: 873b50b34b9887ada92cc56f7083e3b748a52035
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327223"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332655"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Rimuovere una licenza da una cassetta postale condivisa
 
@@ -42,7 +41,6 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire ques
 > 3. La cassetta postale condivisa viene messa in conservazione per controversia legale.
 > 4. Alla cassetta postale condivisa è assegnata una licenza di Microsoft Defender.
 
-  
 ## <a name="remove-the-license"></a>Rimuovere la licenza
 
 ::: moniker range="o365-worldwide"
@@ -50,7 +48,7 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire ques
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
    > [!NOTE]
-   > È necessario rimuovere la licenza dalla pagina Utenti attivi. Non è possibile rimuovere la licenza dalla pagina Cassetta postale condivisa perché le licenze sono impostazioni utente. 
+   > È necessario rimuovere la licenza dalla pagina Utenti attivi. Non è possibile rimuovere la licenza dalla pagina Cassetta postale condivisa perché le licenze sono impostazioni utente.
   
 2. Selezionare la cassetta postale condivisa.
 
@@ -100,9 +98,7 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire ques
 
 6. Stai ancora pagando la licenza. Per interrompere il pagamento, [rimuovi la licenza dall'abbonamento.](../../commerce/licenses/buy-licenses.md)
 
-::: moniker-end 
-
- 
+::: moniker-end
 
 ## <a name="related-articles"></a>Articoli correlati
 

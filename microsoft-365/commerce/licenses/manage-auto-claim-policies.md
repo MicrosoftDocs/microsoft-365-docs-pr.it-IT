@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.review: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,18 +13,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-description: Scopri come creare e gestire i criteri di attestazione automatica che assegnano automaticamente licenze agli utenti per determinate app.
 ms.custom:
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+- commerce_licensing
+description: Scopri come creare e gestire i criteri di attestazione automatica che assegnano automaticamente licenze agli utenti per determinate app.
+search.appverid: MET150
+ms.date: 04/06/2021
+ms.openlocfilehash: b104700905b3753466036411368951f12a7012d8
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599452"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331647"
 ---
 # <a name="manage-auto-claim-policies"></a>Gestire i criteri di richiesta automatica
 
@@ -58,7 +59,7 @@ Per impostazione predefinita, la funzionalità dei criteri di attestazione autom
 
 Solo un amministratore globale può disattivare un'impostazione dei criteri di attestazione automatica.
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">organizzazione.</a>
+1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Impostazioni organizzazione.</a>
 2. Nella parte inferiore della tabella seleziona App e servizi **di proprietà dell'utente.**
 3. Nel riquadro destro deselezionare la casella Consenti agli utenti di richiedere automaticamente le licenze al **primo accesso.**
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_signup
-- PPM_pablom
-ms.reviewer: seemg
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Informazioni sulla Microsoft 365 di iscrizione self-service e sui programmi self-service disponibili, ad esempio Microsoft Power Apps, Microsoft Flow e Dynamics 365 for Finance.
 ms.date: 03/17/2021
-ms.openlocfilehash: a3257cf57d3a2579a250f90811c1bd644cd0d27d
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: f3427294a94875e21a5e6b99a09056617a7dea99
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107413"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332379"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Utilizzo dell'iscrizione in modalità self-service nell'organizzazione
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: Informazioni su come eseguire l'aggiornamento a un piano diverso.
 ms.date: 04/21/2021
-ms.openlocfilehash: d9adf8bb18279d5057278a7c55cd751838325bc2
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 2cfb5c3c6c5052a813e7dd078f15b6c0c943b004
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280440"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333103"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
 
@@ -100,7 +99,7 @@ Attendere che la verifica del credito sia stata completata prima di aggiornare i
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Sono disponibili due o più piani per lo stesso prodotto
 
-È possibile utilizzare la **scheda Aggiornamento** solo se tutti gli utenti sottoscriveno lo stesso piano. Ad esempio, se si dispone di due Microsoft 365 Business Standard, non sarà possibile aggiornare automaticamente uno di essi a un altro piano.
+È possibile utilizzare la **scheda Aggiornamento** solo se tutti gli utenti sottoscriveno lo stesso piano. Ad esempio, se si dispone di due piani Di Microsoft 365 Business Standard, non sarà possibile aggiornare automaticamente uno di essi a un altro piano.
 
 #### <a name="you-have-a-prepaid-plan"></a>Si ha un piano prepagato
 
@@ -118,7 +117,7 @@ Se si dispone di un piano governativo o no profit, è possibile modificare i pia
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Il piano a cui si desidera eseguire l'aggiornamento non è un'opzione supportata
 
-Quando si aggiornano i piani, i piani disponibili per l'aggiornamento vengono visualizzati in base ai servizi del piano corrente. È possibile eseguire l'aggiornamento solo a un piano con gli stessi servizi correlati ai dati, ad esempio Exchange Online o SharePoint Online, o a una versione superiore di tali servizi. In questo modo si garantisce che gli \' utenti non perdano i dati relativi a tali servizi durante l'aggiornamento.
+Quando si aggiornano i piani, i piani disponibili per l'aggiornamento vengono visualizzati in base ai servizi del piano corrente. È possibile eseguire l'aggiornamento solo a un piano con gli stessi servizi correlati ai dati, ad esempio Exchange Online o SharePoint Online, o a una versione successiva di tali servizi. In questo modo si garantisce che gli \' utenti non perdano i dati relativi a tali servizi durante l'aggiornamento.
 
 Se il piano non è idoneo per l'aggiornamento automatico dei piani, potrebbe essere possibile modificare [i piani manualmente,](change-plans-manually.md)invece. Puoi anche chiamare [il supporto](../../business-video/get-help-support.md) per assistenza.
 
@@ -144,11 +143,11 @@ Quando si aggiornano automaticamente i piani utilizzando il pulsante Cambia pian
 
 Gli utenti dell'abbonamento precedente verranno spostati automaticamente nel nuovo abbonamento.
   
-Se la sottoscrizione precedente include più servizi e se sono stati modificati i servizi a cui sono assegnati gli utenti, è possibile prendere nota di questo articolo prima di aggiornare i piani in modo da poter ricreare tali modifiche in seguito. A tutti gli utenti verrà fornito l'accesso a tutti i servizi del nuovo abbonamento. Ad esempio, se in precedenza hai acquistato Microsoft 365 Business Premium per tutti i 100 utenti, ma non hai assegnato il servizio SharePoint Online da 50 di essi, questa modifica non verrà mantenuta dopo l'aggiornamento dei piani.
+Se la sottoscrizione precedente include più servizi e se sono stati modificati i servizi a cui sono assegnati gli utenti, è possibile prendere nota di questo articolo prima di aggiornare i piani in modo da poter ricreare tali modifiche in seguito. A tutti gli utenti verrà fornito l'accesso a tutti i servizi del nuovo abbonamento. Ad esempio, se in precedenza è stato acquistato Microsoft 365 Business Premium per tutti i 100 utenti, ma il servizio SharePoint Online non è stato assegnato da 50 di essi, questa modifica non verrà mantenuta dopo l'aggiornamento dei piani.
   
 Se si dispone di più di una sottoscrizione prima di aggiornare i piani e gli utenti hanno assegnato licenze a più di una sottoscrizione, questo modello di assegnazione verrà mantenuto il più possibile nella nuova sottoscrizione.
   
-Tutti i dati utente verranno conservati durante l'aggiornamento, incluse le cassette postali Exchange e SharePoint online documenti, elenchi e altre informazioni.
+Tutti i dati utente verranno conservati durante l'aggiornamento, incluse le cassette postali di Exchange e i documenti, gli elenchi e altre informazioni di SharePoint Online.
   
 ### <a name="billing"></a>Fatturazione
 
@@ -166,4 +165,4 @@ Al termine dell'aggiornamento del piano, la fatturazione nel vecchio abbonamento
 ## <a name="related-content"></a>Contenuti correlati
 
 [Modificare i piani manualmente](change-plans-manually.md) (articolo)\
-[Eseguire il backup dei dati](back-up-data-before-switching-plans.md) prima di Microsoft 365 per i piani aziendali (articolo)
+[Eseguire il backup dei dati prima di cambiare piano di Microsoft 365 per le aziende](back-up-data-before-switching-plans.md) (articolo)

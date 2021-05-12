@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Questo articolo spiega cosa succede ai dati dell'utente quando l'abbonamento a Microsoft 365 scade o viene disabilitato oppure viene annullato dall'utente.
 ms.date: 04/08/2021
-ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d0821214f9a8c242306685db2ee7faf3779cecff
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326799"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333027"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Che cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365?
 
@@ -50,6 +50,7 @@ L'immagine seguente mostra cosa aspettarsi quando scade un abbonamento a pagamen
 *Per la maggior parte delle offerte, nella maggior parte dei paesi e delle aree geografiche.
   
 > [!NOTE]
+>
 > **Che cosa sono i "dati del cliente"?** I dati del cliente, definiti nelle [condizioni dei Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=613649), indicano tutti i dati, inclusi tutti i file di testo, audio e di immagine forniti a Microsoft dal cliente, o per conto del cliente, mediante l'uso dei servizi di Microsoft 365. Per altre informazioni sulla protezione dei dati del cliente, vedere [Get started with the Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Cosa succede se si annulla un abbonamento?
@@ -68,6 +69,7 @@ Per informazioni su come annullare l'abbonamento, vedere [Annullare l'abbonament
 > Se si vogliono eliminare i dati dell'abbonamento prima del termine della fase Disabilitato standard, è possibile [chiudere l'account](../close-your-account.md).
   
 > [!NOTE]
+>
 > Se si elimina esplicitamente un abbonamento, vengono ignorate le fasi Scaduto e Disabilitato e i dati e il contenuto di SharePoint Online, incluso OneDrive, vengono eliminati immediatamente.
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Cosa è possibile fare quando l'abbonamento sta per scadere?

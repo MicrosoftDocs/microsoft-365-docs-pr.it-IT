@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,31 +13,28 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 ROBOTS: NOINDEX
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: jkinma
-description: Informazioni su come riscattare un Microsoft 365 Business Standard prodotto acquistato presso un punto vendita al dettaglio.
+description: Informazioni su come riscattare un codice Product Key di Microsoft 365 Business Standard acquistato presso un punto vendita al dettaglio.
 ms.date: 11/13/2020
-ms.openlocfilehash: ed9fb3c1ecc02930f55ddc11c523cf5989d6bbbe
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b313b38fbb4fff332bb13402dc5af5db4e0bf676
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297321"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331720"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Immettere il codice Product Key per Microsoft 365 Business Standard
 
-Se hai acquistato Microsoft 365 Business Standard da un punto vendita al dettaglio, questo articolo ti aiuta ad attivare l'abbonamento.
+Se è stato acquistato Microsoft 365 Business Standard presso un punto vendita al dettaglio, questo articolo consente di attivare l'abbonamento.
   
  **Serve altro?**
- **Per informazioni su Microsoft 365 Family o Microsoft 365 Personal**, vedere Utilizzo dei codici Product Key con [Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
- **Si ha un contratto multilicenza?** Se hai acquistato Microsoft 365 per le aziende tramite un programma [Microsoft Open License,](https://go.microsoft.com/fwlink/p/?LinkID=613298)vedi l'articolo Immettere il codice [Product Key acquistato da Microsoft Open](purchases-from-microsoft-open.md).
+ **Per assistenza con Microsoft 365 Family o Microsoft 365 Personal,** vedere [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Si ha un contratto multilicenza?** Se è stato acquistato Microsoft 365 per le aziende tramite un programma [Microsoft Open License,](https://go.microsoft.com/fwlink/p/?LinkID=613298)vedere l'articolo Immettere il codice [Product Key acquistato da Microsoft Open.](purchases-from-microsoft-open.md)
   
 ## <a name="activate-a-new-subscription"></a>Attivare un nuovo abbonamento
 
@@ -57,14 +55,14 @@ Se hai acquistato Microsoft 365 Business Standard da un punto vendita al dettagl
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Estendere la data di scadenza o aggiungere una licenza a un abbonamento esistente
 
-Per estendere la data di scadenza o aggiungere una licenza all'abbonamento Microsoft 365 Business Standard esistente, usare una chiave nuova e inutilizzata per lo stesso Microsoft 365 piano. L'immissione Microsoft 365 codice Product Key originale non funzionerà perché non è possibile utilizzare di nuovo un codice Che è già stato riscattato. Vedi [Aggiungere licenze o estendere un abbonamento a pagamento per l'uso di un codice Product Key.](licenses/add-licenses-using-product-key.md)
+Per estendere la data di scadenza o aggiungere una licenza all'abbonamento a Microsoft 365 Business Standard esistente, usare una chiave nuova e inutilizzata per lo stesso piano di Microsoft 365. L'immissione del codice Product Key originale di Microsoft 365 non funzionerà perché un codice già riscattato non può essere usato di nuovo. Vedi [Aggiungere licenze o estendere un abbonamento a pagamento per l'uso di un codice Product Key.](licenses/add-licenses-using-product-key.md)
 
 ## <a name="whats-next"></a>Operazioni successive
 
-Se non si ha di Microsoft 365 per le aziende, informazioni su come [configurare Microsoft 365](../admin/setup/setup.md).
+Se non si ha di nuovo Microsoft 365 per le aziende, informazioni su come [configurare Microsoft 365.](../admin/setup/setup.md)
   
 ## <a name="still-having-trouble-with-product-keys"></a>Problemi con i codici Product Key?
 
-Vedere questo elenco di errori e soluzioni comuni: [Problemi con il codice Product Key di Microsoft 365 per le aziende?](product-key-errors-and-solutions.md)
+Consultare questo elenco di errori e soluzioni comuni: Problemi con il codice Product Key di [Microsoft 365 per le aziende?](product-key-errors-and-solutions.md)
   
 In caso contrario, [chiamare il Supporto Tecnico Microsoft.](../business-video/get-help-support.md)

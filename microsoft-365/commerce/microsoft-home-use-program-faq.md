@@ -3,7 +3,7 @@ title: Microsoft Home Use Program domande frequenti
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: tugu
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -15,16 +15,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: Domande frequenti sull'Microsoft Home Use Program.
 ms.date: 05/01/2021
-ms.openlocfilehash: 5f10e5fb313ec7b48605975a7e03f262fd742801
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ee89f6ddd5cd2e10cc32b023328d74ace245ffe2
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280812"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331563"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft Home Use Program domande frequenti
 

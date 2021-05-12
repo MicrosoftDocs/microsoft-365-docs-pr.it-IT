@@ -21,14 +21,41 @@ search.appverid:
 - MET150
 - MOE150
 description: Altre informazioni sull'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221762"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332247"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Informazioni generali sull'interfaccia di amministrazione di Microsoft 365
+
+- [Interfaccia di amministrazione in visualizzazione semplificata](#the-admin-center-in-simplified-view)
+- [Interfaccia di amministrazione nella visualizzazione dashboard](#the-admin-center-in-dashboard-view)
+
+## <a name="the-admin-center-in-simplified-view"></a>Interfaccia di amministrazione in visualizzazione semplificata
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
+
+Con l'interfaccia di amministrazione di Microsoft 365, è possibile reimpostare le password, visualizzare la fattura, aggiungere o rimuovere utenti e molto altro ancora in un'unica posizione.
+
+Accedi a Office.com con il tuo account aziendale e seleziona l'icona di avvio delle app. 
+
+Se si dispone dell'autorizzazione per accedere all'interfaccia di amministrazione, verrà visualizzato **Amministratore** nell'elenco. Selezionarlo. 
+
+Nella parte superiore dell'interfaccia di amministrazione, esamina le azioni principali. Potrebbero essere disponibili azioni diverse a seconda di ciò che è già stato configurato, ad esempio la creazione di nuovi account, l'uso di Teams, la configurazione della posta elettronica e l'installazione di app di Office. 
+ 
+In **L'organizzazione** nella **scheda Utenti** è un elenco di persone che possono accedere ad app e servizi, aggiungere nuovi utenti, reimpostare password o usare il menu **Altre** azioni. Selezionare una persona per visualizzare o modificare le informazioni e le impostazioni.  
+
+Nella scheda **Teams** creare un nuovo team o gestire i team esistenti. È possibile gestire i membri di un team o selezionare **Altre azioni per** modificare altre impostazioni di Teams. 
+
+Nella scheda **Abbonamenti** aggiungi altri prodotti, aggiungi licenze o usa il menu Altre **azioni** per modificare le licenze o il metodo di pagamento.
+
+Nella scheda **Informazioni,** sfogliare video e articoli sull'interfaccia di amministrazione e altre funzionalità di Microsoft 365. Per esplorare le funzionalità più avanzate dell'interfaccia di amministrazione, aprire il menu di spostamento ed espandere le intestazioni per visualizzare altre informazioni. Seleziona **Mostra tutto** per visualizzare tutto nel menu di spostamento o usa la barra di ricerca per trovare rapidamente ciò che stai cercando.
+
+Per assistenza, selezionare **Guida & supporto**. Cercare l'argomento desiderato e visualizzare la soluzione consigliata oppure selezionare l'auricolare per contattare il supporto, quindi immettere la domanda e le informazioni di contatto. 
+
+## <a name="the-admin-center-in-dashboard-view"></a>Interfaccia di amministrazione nella visualizzazione dashboard
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -59,8 +86,6 @@ Per ulteriori informazioni sulla gestione di fatturazione, password, utenti e am
 Per impostazione predefinita, la persona che si i iscrizione e acquista un abbonamento a Microsoft 365 per le aziende ottiene le autorizzazioni di amministratore. Tale persona può assegnare autorizzazioni di amministratore ad altre persone per aiutarle a gestire Microsoft 365 per l'organizzazione.
 
 Se viene visualizzato il messaggio "Non hai **l'autorizzazione** per accedere a questa pagina o eseguire questa azione", non sei un amministratore.
-<br><br>    
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
   
 ### <a name="who-has-admin-permissions-in-my-business"></a>Chi ha le autorizzazioni di amministratore nella mia attività?
 <a name="bkmk_admin"> </a>
@@ -116,7 +141,7 @@ L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>Quali opzioni di lingua sono disponibili nell'interfaccia di amministrazione?
 
-L'interfaccia di amministrazione di Microsoft 365 è completamente localizzata in 40 lingue.
+L'Microsoft 365 di amministrazione è completamente localizzata in 40 lingue.
 
 |Lingua |Locale |
 |---------|---------|

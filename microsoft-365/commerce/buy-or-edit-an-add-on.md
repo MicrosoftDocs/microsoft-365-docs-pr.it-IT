@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,26 +13,23 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: jkinma
-description: Scopri come acquistare e gestire i componenti aggiuntivi per l'abbonamento Microsoft 365 per le aziende.
+description: Informazioni su come acquistare e gestire componenti aggiuntivi per l'abbonamento a Microsoft 365 per le aziende.
 ms.date: 04/02/2021
-ms.openlocfilehash: d60503cd7ab7be219c3ed813dd1d9aef480cd4dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8cf586114c9b6ab30a9f4e5acdd669e185edd71b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297333"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331779"
 ---
 # <a name="buy-or-manage-add-ons"></a>Acquistare o gestire i componenti aggiuntivi
 
-Molti Microsoft 365 per le aziende dispongono di componenti aggiuntivi che è possibile acquistare per le sottoscrizioni. I componenti aggiuntivi offrono altre funzionalità per migliorare l'esperienza di sottoscrizione.
+Molti piani di Microsoft 365 per le aziende dispongono di componenti aggiuntivi che è possibile acquistare per gli abbonamenti. I componenti aggiuntivi offrono altre funzionalità per migliorare l'esperienza di sottoscrizione.
 
 Esistono due tipi di componenti aggiuntivi:
 
@@ -73,7 +71,7 @@ Per rimuovere una sottoscrizione di componente aggiuntivo autonomo, annulla la [
 
 Non è possibile rimuovere un componente aggiuntivo tradizionale. Se si desidera rimuovere un componente aggiuntivo tradizionale, contattare [il supporto tecnico per assistenza.](../business-video/get-help-support.md)
   
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Aggiungere spazio di archiviazione per la sottoscrizione](add-storage-space.md) (articolo)\
 [Acquistare o rimuovere licenze di sottoscrizione](licenses/buy-licenses.md) (articolo)\

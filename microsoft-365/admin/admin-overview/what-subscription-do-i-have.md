@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come verificare le sottoscrizioni dell'organizzazione andando alla pagina I tuoi prodotti.
 ms.date: 01/21/2021
-ms.openlocfilehash: c54b9795487f1cfc5902c2c761fdd65b78109bcf
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: e1f7ebecafa5edff1ccc3d6eb4e4dc143054996a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327235"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332667"
 ---
 # <a name="what-subscription-do-i-have"></a>Qual è l'abbonamento corrente?
 
 Se si è un amministratore, è possibile verificare le sottoscrizioni dell'organizzazione andando all'interfaccia di amministrazione.
   
- **Se non si è un amministratore** Vedere Qual è il prodotto o la licenza di [Microsoft 365 per](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) le aziende?
+**Se non si è un amministratore** Vedere Quali Microsoft 365 prodotto o licenza per le [aziende sono in uso?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 2. Nella scheda **Prodotti** vengono visualizzati tutti gli abbonamenti. Ogni riga di sottoscrizione include informazioni sulle licenze, sullo stato della sottoscrizione e sulla fatturazione.

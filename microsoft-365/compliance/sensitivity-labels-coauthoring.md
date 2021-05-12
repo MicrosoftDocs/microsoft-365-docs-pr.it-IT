@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: 4b2c4551579d2609b66b5cd8fa8857f98b966a7d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297261"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332727"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
@@ -84,7 +84,7 @@ Prima di attivare questa funzionalità, assicurarsi di aver compreso i seguenti 
 
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Anteprima: [Anteprima: Canale corrente (Anteprima)](https://office.com/insider)
-    - **macOS**: Anteprima: [Canale beta](https://office.com/insider)
+    - **macOS**: Anteprima: [canale corrente (Anteprima)](https://office.com/insider)
     - **iOS**: non ancora supportato
     - **Android**: non ancora supportato
 

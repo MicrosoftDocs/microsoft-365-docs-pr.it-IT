@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: drjones
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
 description: Scopri come applicare un codice promozionale all'abbonamento Microsoft 365 per ridurre il prezzo e come risolvere i problemi relativi al codice promozionale in caso di errore.
 ms.date: 03/17/2021
-ms.openlocfilehash: 01cc7cd182f3e25867191c83b58016ef090c8934
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280404"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332919"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Usare il codice promozionale per ridurre il prezzo
 

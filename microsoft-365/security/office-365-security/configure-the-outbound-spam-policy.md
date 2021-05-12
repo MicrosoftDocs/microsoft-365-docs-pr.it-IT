@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri di posta indesiderata in uscita in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ceaf0d276aff4504dd34aa3229c28c9cb042742d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206373"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331671"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurare il filtro posta indesiderata in uscita in EOP
 
@@ -271,11 +271,11 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
 Non è possibile rimuovere il criterio predefinito.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>Utilizzare PowerShell di Exchange Online o PowerShell EOP autonomo per configurare i criteri di posta indesiderata in uscita
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>Utilizzare Exchange Online PowerShell o PowerShell EOP autonomo per configurare i criteri di posta indesiderata in uscita
 
 Come descritto in precedenza, un criterio di posta indesiderata in uscita è costituito da un criterio di filtro della posta indesiderata in uscita e da una regola di filtro della posta indesiderata in uscita.
 
-In PowerShell di Exchange Online o PowerShell EOP autonomo, la differenza tra i criteri di filtro della posta indesiderata in uscita e le regole di filtro della posta indesiderata in uscita è evidente. È possibile gestire i criteri di filtro della posta indesiderata in uscita utilizzando i cmdlet **\* -HostedOutboundSpamFilterPolicy** e gestire le regole di filtro della posta indesiderata in uscita utilizzando i cmdlet **\* -HostedOutboundSpamFilterRule.**
+In Exchange Online PowerShell o PowerShell EOP autonomo, la differenza tra i criteri di filtro della posta indesiderata in uscita e le regole di filtro della posta indesiderata in uscita è evidente. È possibile gestire i criteri di filtro della posta indesiderata in uscita utilizzando i cmdlet **\* -HostedOutboundSpamFilterPolicy** e gestire le regole di filtro della posta indesiderata in uscita utilizzando i cmdlet **\* -HostedOutboundSpamFilterRule.**
 
 - In PowerShell, si crea prima il criterio di filtro della posta indesiderata in uscita, quindi si crea la regola di filtro della posta indesiderata in uscita che identifica il criterio a cui si applica la regola.
 - In PowerShell le impostazioni vengono modificate separatamente nei criteri di filtro della posta indesiderata in uscita e nella regola di filtro della posta indesiderata in uscita.
@@ -515,6 +515,6 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Remove-Host
 
 [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Domande frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.md)
+[Domande frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.yml)
 
 [Report dei messaggi inoltrati automaticamente](mfi-auto-forwarded-messages-report.md)

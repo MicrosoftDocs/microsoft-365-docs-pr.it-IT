@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Informazioni su come annullare la versione di valutazione o l'abbonamento a pagamento a Microsoft 365 per le aziende.
 ms.date: 04/08/2021
-ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297309"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333315"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -126,7 +124,7 @@ Quando l'annullamento diventa effettivo, gli utenti perdono l'accesso ai propri 
 
 - Per spostare posta elettronica, contatti, attività e informazioni del calendario in un altro account, vedere [Esportare o eseguire il backup di posta elettronica, contatti e calendari in un file PST di Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
-- Per salvare una raccolta di documenti o il contenuto di un elenco (ad esempio i contatti) da un ambiente SharePoint Online (OneDrive for Business o siti del team) in una condivisione file o in un computer locale, vedere [Informazioni sulla migrazione manuale del contenuto di SharePoint Online](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration).
+- Per salvare una raccolta di documenti o il contenuto di un elenco (ad esempio i contatti) da un ambiente SharePoint Online (OneDrive for Business o siti del team) in una condivisione file o in un computer locale, vedere [Informazioni sulla migrazione manuale del contenuto di SharePoint Online](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ### <a name="uninstall-office-optional"></a>Disinstallare Office (facoltativo)
 

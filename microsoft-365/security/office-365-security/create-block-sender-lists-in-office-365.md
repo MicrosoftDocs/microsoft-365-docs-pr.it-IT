@@ -14,12 +14,12 @@ search.appverid:
 description: Gli amministratori possono conoscere le opzioni disponibili e preferite per bloccare i messaggi in ingresso in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9ee0a026e33bf07bb929607b8eed9078d0b6e4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206001"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331455"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Creare elenchi di mittenti bloccati in EOP
 
@@ -70,7 +70,7 @@ Quando i messaggi vengono bloccati a causa dell'elenco Mittenti bloccati di un u
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Utilizzare elenchi di mittenti bloccati o elenchi di domini bloccati
 
-Quando più utenti sono interessati, l'ambito è più ampio, quindi l'opzione migliore successiva è elenchi di mittenti bloccati o elenchi di domini bloccati nei criteri di protezione da posta indesiderata. I messaggi provenienti dai mittenti degli elenchi sono contrassegnati come  Posta indesiderata e l'azione configurata per il verdetto filtro posta indesiderata viene eseguita sul messaggio. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata](configure-your-spam-filter-policies.md).
+Quando più utenti sono interessati, l'ambito è più ampio, quindi l'opzione migliore successiva è elenchi di mittenti bloccati o elenchi di domini bloccati nei criteri di protezione da posta indesiderata. I messaggi provenienti dai mittenti degli elenchi sono contrassegnati come posta  indesiderata con alta probabilità e l'azione configurata per il verdetto Filtro posta indesiderata ad alta probabilità viene eseguita sul messaggio. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata](configure-your-spam-filter-policies.md).
 
 Il limite massimo per questi elenchi è di circa 1000 voci.
 
