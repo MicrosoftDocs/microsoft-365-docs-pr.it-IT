@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 63c870c5682e963e6ab29160218c7405cabb0838
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1bca1cf32bc92a7c19be8d36d03166fd121c0295
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935546"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327635"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Eseguire la migrazione da Symantec - Fase 3: onboard a Microsoft Defender per Endpoint
 
@@ -59,11 +59,11 @@ I metodi di distribuzione variano a seconda del sistema operativo selezionato. P
 
 |Sistema operativo  |Metodo  |
 |---------|---------|
-|Windows 10     |- [Criteri di gruppo](configure-endpoints-gp.md)<br/>- [Configuration Manager](configure-endpoints-sccm.md)<br/>- [Gestione dei dispositivi mobili (Intune)](configure-endpoints-mdm.md)<br/>- [Script locale](configure-endpoints-script.md) <br/><br/>**NOTA:** uno script locale è adatto per un modello di prova, ma non deve essere utilizzato per la distribuzione di produzione. Per una distribuzione di produzione, è consigliabile usare Criteri di gruppo, Microsoft Endpoint Configuration Manager o Intune.         |
-|- Windows 8.1 Enterprise <br/>- Windows 8.1 Pro <br/>- Windows 7 SP1 Enterprise <br/>- Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)<br/><br/>**NOTA:** Microsoft Monitoring Agent è ora l'agente di Azure Log Analytics. Per ulteriori informazioni, vedere [Panoramica dell'agente di log analytics.](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)        |
-|- Windows Server 2019 e versioni successive <br/>- Windows Server 2019 Core Edition <br/>- Windows Server versione 1803 e successive |- [Script locale](configure-endpoints-script.md) <br/>- [Criteri di gruppo](configure-endpoints-gp.md) <br/>- [Configuration Manager](/configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [Script di onboarding VDI per dispositivi non persistenti](configure-endpoints-vdi.md) <br/><br/>**NOTA:** uno script locale è adatto per un modello di prova, ma non deve essere utilizzato per la distribuzione di produzione. Per una distribuzione di produzione, è consigliabile usare Criteri di gruppo, Microsoft Endpoint Configuration Manager o Intune.    |
-|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender Security Center](configure-server-endpoints.md)<br/>- [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
-|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)<br/><br/>iOS<br/><br/>Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o superiore<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Aggiungere dispositivi non Windows](configure-endpoints-non-windows.md)  |
+|Windows 10     |- [Criteri di gruppo](configure-endpoints-gp.md)<br/>- [Configuration Manager](configure-endpoints-sccm.md)<br/>- [Gestione dei dispositivi mobili (Intune)](configure-endpoints-mdm.md)<br/>- [Script locale](configure-endpoints-script.md) <p>**NOTA:** uno script locale è adatto per un modello di prova, ma non deve essere utilizzato per la distribuzione di produzione. Per una distribuzione di produzione, è consigliabile usare Criteri di gruppo, Microsoft Endpoint Configuration Manager o Intune.         |
+|- Windows 8.1 Enterprise <br/>- Windows 8.1 Pro <br/>- Windows 7 SP1 Enterprise <br/>- Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)<p>**NOTA:** Microsoft Monitoring Agent è ora l'agente di Azure Log Analytics. Per ulteriori informazioni, vedere [Panoramica dell'agente di log analytics.](/azure/azure-monitor/platform/log-analytics-agent)        |
+|- Windows Server 2019 e versioni successive <br/>- Windows Server 2019 Core Edition <br/>- Windows Server versione 1803 e successive |- [Script locale](configure-endpoints-script.md) <br/>- [Criteri di gruppo](configure-endpoints-gp.md) <br/>- [Configuration Manager](configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [Script di onboarding VDI per dispositivi non persistenti](configure-endpoints-vdi.md) <p>**NOTA:** uno script locale è adatto per un modello di prova, ma non deve essere utilizzato per la distribuzione di produzione. Per una distribuzione di produzione, è consigliabile usare Criteri di gruppo, Microsoft Endpoint Configuration Manager o Intune.    |
+|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender Security Center](configure-server-endpoints.md)<br/>- [Azure Defender](/azure/security-center/security-center-wdatp) |
+|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)<p>iOS<p>Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o superiore<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Aggiungere dispositivi non Windows](configure-endpoints-non-windows.md)  |
 
 ## <a name="run-a-detection-test"></a>Eseguire un test di rilevamento
 
@@ -71,9 +71,9 @@ Per verificare che i dispositivi onboarded siano connessi correttamente a Micros
 
 |Sistema operativo  |Linee guida  |
 |---------|---------|
-|- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, versione 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |Vedere [Eseguire un test di rilevamento](run-detection-test.md). <br/><br/>Visita il sito degli scenari demo di Microsoft Defender for Endpoint ( ) e [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) prova uno o più degli scenari. Ad esempio, provare lo **scenario demo di protezione fornito dal** cloud.         |
-|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Scarica e usa l'app FAI-da-to-app all'indirizzo [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <br/><br/>Per altre informazioni, vedi [Microsoft Defender per Endpoint su macOS.](microsoft-defender-endpoint-mac.md)        |
-|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o superiore<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Eseguire il comando seguente e cercare il risultato **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Aprire una finestra del terminale ed eseguire il comando seguente: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Eseguire il comando seguente per elencare eventuali minacce rilevate: <br/>`mdatp threat list`. <br/><br/>Per altre informazioni, vedi [Microsoft Defender per Endpoint su Linux.](microsoft-defender-endpoint-linux.md) |
+|- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, versione 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |Vedere [Eseguire un test di rilevamento](run-detection-test.md). <p>Visita il sito degli scenari demo di Microsoft Defender for Endpoint ( ) e [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) prova uno o più degli scenari. Ad esempio, provare lo **scenario demo di protezione fornito dal** cloud.         |
+|macOS<br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)     |Scarica e usa l'app FAI-da-to-app all'indirizzo [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <p>Per altre informazioni, vedi [Microsoft Defender per Endpoint su macOS.](microsoft-defender-endpoint-mac.md)        |
+|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o superiore<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Eseguire il comando seguente e cercare il risultato **1**: <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Aprire una finestra del terminale ed eseguire il comando seguente: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Eseguire il comando seguente per elencare eventuali minacce rilevate: <br/>`mdatp threat list`. <p>Per altre informazioni, vedi [Microsoft Defender per Endpoint su Linux.](microsoft-defender-endpoint-linux.md) |
 
 ## <a name="uninstall-symantec"></a>Disinstallare Symantec
 

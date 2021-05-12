@@ -5,27 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_o365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: Informazioni su come acquistare altre licenze o ridurre il numero di licenze per l'abbonamento a Microsoft 365 per le aziende.
-ms.date: ''
-ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.date: 04/07/2021
+ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615136"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327119"
 ---
 # <a name="buy-or-remove-licenses"></a>Acquistare o rimuovere licenze
 

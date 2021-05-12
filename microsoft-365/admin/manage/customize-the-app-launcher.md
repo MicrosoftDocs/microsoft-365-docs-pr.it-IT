@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: "Creare collegamenti rapidi alla posta elettronica, ai documenti, alle app, ai siti di SharePoint, ai siti esterni e ad altre risorse aggiungendo riquadri personalizzati all'icona di avvio delle app. "
-ms.openlocfilehash: b6ae4deed1566492574e30cf8cb66a750c9858c8
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470632"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327211"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Aggiungere riquadri personalizzati all'icona di avvio delle app
 
@@ -48,19 +48,28 @@ Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano
   
 4. Immetti un **Nome del riquadro** per il nuovo riquadro. Il nome verrà visualizzato nel riquadro. 
     
-5. Immetti un **URL del sito Web** per il riquadro. Questa è la posizione in cui vuoi che gli utenti vadano quando selezionano il riquadro nell'icona di avvio delle app. Usa HTTPS nell'URL.<br/>SUGGERIMENTO: se si sta creando un riquadro per un sito di SharePoint, passare a tale sito, copiare l'URL e incollarlo qui. L'URL del sito del team predefinito è simile al seguente: `https://<company_name>.sharepoint.com` 
+5. Immetti un **URL del sito Web** per il riquadro. Questa è la posizione in cui vuoi che gli utenti vadano quando selezionano il riquadro nell'icona di avvio delle app. Usa HTTPS nell'URL.
+
+    > [!TIP]
+    > Se vuoi creare un riquadro per un sito di SharePoint, passa a tale sito, copia l'URL e incollalo in questo campo. L'URL del sito del team predefinito è simile al seguente: `https://<company_name>.sharepoint.com` 
   
-6. Immetti un **URL dell'immagine** per il riquadro. L'immagine verrà visualizzata nella pagina Mie app e nell'icona di avvio delle app.<br/>SUGGERIMENTO: l'immagine deve essere di 60x60 pixel ed essere disponibile per tutti gli utenti dell'organizzazione senza richiedere l'autenticazione.
+6. Immetti un **URL dell'immagine** per il riquadro. L'immagine verrà visualizzata nella pagina Mie app e nell'icona di avvio delle app.
+
+    > [!TIP]
+    > L'immagine deve essere di 60x60 pixel ed essere disponibile per tutti gli utenti dell'organizzazione senza richiedere l'autenticazione.
 
 7. Immetti una **Descrizione** per il riquadro. Questo viene visualizzato quando si seleziona il riquadro nella pagina App personali e si seleziona Dettagli **app**. 
   
 8. Seleziona **Salva modifiche** per creare il riquadro personalizzato. 
     
-Il riquadro personalizzato viene ora visualizzato nella scheda **Tutte** nell'icona di avvio delle app per te e i tuoi utenti. 
+    Il riquadro personalizzato viene ora visualizzato nella scheda **Tutte** nell'icona di avvio delle app per te e i tuoi utenti. 
+
+    > [!NOTE]
+    > Se il riquadro personalizzato creato nei passaggi precedenti non è visualizzato, verifica di avere una cassetta postale di Exchange Online assegnata e di aver eseguito almeno una volta l'accesso alla tua cassetta postale. Questi passaggi sono necessari per i riquadri personalizzati in Microsoft 365. 
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Nell'interfaccia di amministrazione passare alla scheda **Impostazioni**  >  **organizzazione Profilo**  >  **organizzazione.** </a>
+1. Nell'interfaccia di amministrazione passare alla scheda **Impostazioni**  >  **organizzazione Profilo**  >  **organizzazione.**
     
 2. Nella pagina **Profilo organizzazione,** accanto a **Aggiungi riquadri personalizzati per l'organizzazione,** selezionare **Modifica.**
 

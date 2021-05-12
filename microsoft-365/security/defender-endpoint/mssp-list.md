@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 48e45385fb138c19b76dc2d672566cf2ad0fb3cc
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862152"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327299"
 ---
 # <a name="supported-managed-security-service-providers"></a>Provider di servizi di sicurezza gestiti supportati
 
@@ -36,6 +36,7 @@ ms.locfileid: "51862152"
 
 Logo |Nome partner   | Descrizione 
 :---|:---|:---
+![Immagine del logo Aujas](images/aujas-logo.png) | [Servizio MDE gestito da Aujas](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas cybersecurity fornisce servizi di sicurezza gestiti 24*7 nell'intera gamma aziendale, usando Microsoft Defender per gli endpoint attraverso i suoi Cyber Defense Center.
 ![Immagine del logo BDO Digital](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | La difesa gestita di BDO Digital sfrutta gli strumenti delle procedure consigliate, l'IA e gli esperti di sicurezza in-house per la protezione delle identità 24/7/365
 ![Immagine del logo BlueVoyant](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR per Microsoft Defender for Endpoint fornisce supporto per il monitoraggio, l'analisi e la mitigazione degli attacchi avanzati agli endpoint
 ![Immagine del logo del Centro sicurezza cloud](images/cloudsecuritycenter-logo.png)| [Centro sicurezza cloud](https://go.microsoft.com/fwlink/?linkid=2099315) | Il Centro sicurezza cloud di InSpark è un servizio gestito 24x7 che offre funzionalità di protezione e & rispondere
@@ -44,6 +45,7 @@ Logo |Nome partner   | Descrizione
 ![Immagine del logo di Dell Technologies Advanced Threat Protection](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | Servizio di monitoraggio professionale per comportamenti dannosi e anomalie con funzionalità 24 ore su 24, 7 giorni su 7
 ![Immagine del logo DXC-Managed rilevamento delle minacce degli endpoint e risposta](images/dxc-logo.png)| [Rilevamento e risposta delle minacce degli endpoint gestiti da DXC](https://go.microsoft.com/fwlink/?linkid=2090395) | Identificare le minacce degli endpoint che eludono le tradizionali difese di sicurezza e le contengono in ore o minuti, non giorni
 ![Immagine del registro di eSentire](images/esentire-logo.png) | [Rilevamento e risposta gestiti di eSentire](https://go.microsoft.com/fwlink/?linkid=2154970) | Indagini sulle minacce 24x7 e risposta tramite Microsoft Defender for Endpoint.
+![Immagine del logo espellere](images/expel-logo.png)| [Espellere il rilevamento gestito e la risposta per Microsoft Defender Endpoint](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel aiuta la sicurezza a tenere il passo rilevando i rischi per la sicurezza in Microsoft Defender Endpoint.
 ![Immagine del logo NTT Security](images/ntt-logo.png)| [Sicurezza NTT](https://go.microsoft.com/fwlink/?linkid=2095320) | Il servizio EDR di NTT fornisce il monitoraggio della sicurezza 24 ore su 24, 7 giorni su 7 & risposta attraverso l'endpoint e la rete
 ![Immagine del logo OneVinn](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| Rilevamento gestito e risposta 24 ore su 24, 7 giorni su 7, basato su Microsoft Defender e Azure Sentinel, arricchito dall'intelligence sulle minacce di Onevinn.
 ![Immagine del logo Quorum Cyber](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| Un servizio all'avanguardia di Threat Hunting & Security Engineering.

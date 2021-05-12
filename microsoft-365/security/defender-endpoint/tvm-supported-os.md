@@ -1,7 +1,7 @@
 ---
-title: Sistemi operativi e piattaforme supportati per la gestione di minacce e vulnerabilità
+title: Piattaforme e funzionalità dei sistemi operativi supportati
 description: Assicurati di soddisfare i requisiti del sistema operativo o della piattaforma per la gestione delle minacce e delle vulnerabilità, in modo che le attività in tutti i dispositivi siano adeguatamente rappresentate.
-keywords: gestione delle & delle minacce, gestione delle minacce e delle vulnerabilità, sistema operativo, requisiti della piattaforma, prerequisiti, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm,
+keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm, supported operating systems, supported platforms, linux support, mac support
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 55322d238839d347882ec1d74b767c68fd2be2b3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3c9c96c73a6d1843f2e7aa626cafac0860887a65
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935522"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327343"
 ---
-# <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>Sistemi operativi e piattaforme supportati - gestione delle minacce e delle vulnerabilità
+# <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemi operativi, piattaforme e funzionalità supportati per la gestione di minacce e vulnerabilità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,20 +42,29 @@ Prima di iniziare, assicurati di soddisfare i requisiti del sistema operativo o 
 >[!NOTE]
 >I sistemi e le piattaforme supportati per la gestione delle minacce e delle vulnerabilità possono essere diversi dall'elenco [Requisiti minimi per Microsoft Defender per endpoint.](minimum-requirements.md)
 
-Sistema operativo | Supporto per la valutazione della sicurezza
-:---|:---
-Windows 7 | Vulnerabilità del sistema operativo
-Windows 8.1 | Vulnerabilità del sistema operativo<br/>Vulnerabilità del prodotto software<br/>Valutazione della configurazione del sistema operativo<br/>Valutazione della configurazione dei controlli di sicurezza<br/>Valutazione della configurazione del prodotto software |
-Windows 10, versioni 1607-1703 | Vulnerabilità del sistema operativo
-Windows 10, versione 1709 o successiva |Vulnerabilità del sistema operativo<br/>Vulnerabilità del prodotto software<br/>Valutazione della configurazione del sistema operativo<br/>Valutazione della configurazione dei controlli di sicurezza<br/>Valutazione della configurazione del prodotto software
-Windows Server 2008 R2 | Vulnerabilità del sistema operativo<br/>Vulnerabilità del prodotto software<br/>Valutazione della configurazione del sistema operativo<br/>Valutazione della configurazione dei controlli di sicurezza<br/>Valutazione della configurazione del prodotto software
-Windows Server 2012 R2 | Vulnerabilità del sistema operativo<br/>Vulnerabilità del prodotto software<br/>Valutazione della configurazione del sistema operativo<br/>Valutazione della configurazione dei controlli di sicurezza<br/>Valutazione della configurazione del prodotto software
-Windows Server 2016 | Vulnerabilità del sistema operativo<br/>Vulnerabilità del prodotto software<br/>Valutazione della configurazione del sistema operativo<br/>Valutazione della configurazione dei controlli di sicurezza<br/>Valutazione della configurazione del prodotto software
-Windows Server 2019 | Vulnerabilità del sistema operativo<br/>Vulnerabilità del prodotto software<br/>Valutazione della configurazione del sistema operativo<br/>Valutazione della configurazione dei controlli di sicurezza<br/>Valutazione della configurazione del prodotto software
-macOS 10.14 "Mojave" e successive | Vulnerabilità del sistema operativo<br/>Vulnerabilità del prodotto software 
-Linux | Non supportato (pianificato)
+## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>Funzionalità per sistemi operativi e piattaforme supportati
+
+Nella tabella seguente, "Sì" indica che è supportata una funzionalità di gestione delle minacce e delle vulnerabilità per il sistema operativo o la piattaforma in tale riga.
+
+Sistema operativo o piattaforma supportati | Vulnerabilità del sistema operativo | Vulnerabilità del prodotto software | Valutazione della configurazione del sistema operativo | Valutazione della configurazione dei controlli di sicurezza | Valutazione della configurazione del prodotto software
+:---|:---|:---|:---|:---|:---
+Windows 7 | Sì | Non supportato | Non supportato | Non supportato | Non supportato
+Windows 8.1 | Sì | Sì | Sì | Sì| Sì
+Windows 10, versioni 1607-1703 | Sì  | Non supportato | Non supportato | Non supportato | Non supportato
+Windows 10, versione 1709 o successiva | Sì | Sì | Sì | Sì | Sì
+Windows Server 2008 R2 | Sì | Sì | Sì | Sì | Sì
+Windows Server 2012 R2 | Sì | Sì | Sì | Sì | Sì
+Windows Server 2016 | Sì | Sì | Sì | Sì | Sì
+Windows Server 2019 | Sì | Sì | Sì | Sì | Sì
+macOS 10.14 "Mojave" e successive | Sì | Sì | Sì \( anteprima\) | Sì \( anteprima\) | Sì \( anteprima\)
+Red Hat Enterprise Linux 7.2 o versione successiva \* (vedere l'avviso "Importante" di seguito) | Sì | Sì | Sì | Sì | Sì
+CentOS 7.2 o versione successiva | Sì | Sì | Sì | Sì | Sì
+Ubuntu 16,04 LTS o superiore | Sì | Sì | Sì | Sì | Sì
+
+>[!IMPORTANT]
+> \* Red Hat Enterprise Linux: "I dati di vulnerabilità forniti e visualizzati come parte dei servizi Microsoft Defender for Endpoint sono resi disponibili nella sua forma non elaborata, "AS IS", di Red Hat, Inc., e potrebbero non essere aggiornati. I dati accessibili nell'API Red Hat Security Data sono concessi in licenza con la licenza internazionale Creative Commons Attribution 4.0. L'utilizzo di questi dati è rischioso. Microsoft e i suoi fornitori di terze parti non rilascino alcuna responsabilità per danni indiretti e indiretti e garanzie implicite, incluse garanzie implicite di non violazione, com commercializzabilità e idoneità per uno scopo specifico. © 2020 Red Hat. Tutti i diritti riservati. © 2020 Microsoft. Tutti i diritti riservati."
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Prerequisiti per & autorizzazioni](tvm-prerequisites.md)

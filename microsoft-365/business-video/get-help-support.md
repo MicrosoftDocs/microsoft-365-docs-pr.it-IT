@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
@@ -20,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come ottenere assistenza o supporto per amministratori in Microsoft 365 Business Premium.
-ms.openlocfilehash: 5494b51ba59304de8dde71c9c7fa0434ec5dd0c8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
-ms.translationtype: HT
+ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244933"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327187"
 ---
 # <a name="get-support"></a>Ottieni supporto
 
@@ -44,7 +43,7 @@ Per iniziare, [verificare lo stato di integrità corrente dei servizi](../enterp
 
 Risparmia tempo iniziando la tua richiesta di assistenza online. Ti aiuteremo a trovare una soluzione o a metterti in contatto con il supporto tecnico.
 
-1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Se viene visualizzato il messaggio che informa che non si dispone dell'autorizzazione per accedere alla pagina o eseguire l'azione, non si è un amministratore. [Chi ha le autorizzazioni di amministratore nella mia organizzazione?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Se viene visualizzato un messaggio che indica che non si dispone dell'autorizzazione per accedere a questa pagina o eseguire questa azione, non si è amministratori. Per ulteriori informazioni, vedere Who dispone delle autorizzazioni di amministratore nella mia [azienda?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
 
 2. Selezionare il pulsante **Serve aiuto?**
 
@@ -216,7 +215,7 @@ Il ruolo del supporto di 21Vianet consiste nel:
 
 ## <a name="feature-availability"></a>Disponibilità delle funzionalità
 
-Per visualizzare la disponibilità delle funzionalità tra i piani di Office 365, vedere [Descrizione dei servizi di Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
+Per visualizzare la disponibilità delle funzionalità Office 365 piani, vedere [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## <a name="follow-us-on-wechat"></a>Seguici su WeChat
 

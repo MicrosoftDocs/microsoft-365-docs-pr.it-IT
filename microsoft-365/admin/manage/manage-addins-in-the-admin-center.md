@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni sull'utilizzo di componenti aggiuntivi centralizzati per distribuire componenti aggiuntivi a utenti e gruppi dell'organizzazione.
-ms.openlocfilehash: 8503ed7ea2e088a8e17b52e619ee999aa05f497a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 76bfa6272ec784518f045a50299fc7cda719eec8
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579291"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327199"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -39,7 +39,7 @@ Per ulteriori informazioni sull'installazione di componenti aggiuntivi dall'inte
 
 Un componente aggiuntivo può essere nello stato **Attivo** **o Disattivato.**
   
-|**Stato**|**Quando si verifica lo stato**|**Impatto**|
+| Stato | Quando si verifica lo stato | Impatto |
 |:-----|:-----|:-----|
 |**Attivo**  <br/> |L'amministratore ha caricato il componente aggiuntivo e lo ha assegnato a utenti o gruppi.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo lo vedono nei client pertinenti.  <br/> |
 |**Disattivato**  <br/> |L'amministratore ha disattivato il componente aggiuntivo.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo non possono più accedervi.  <br/> Se lo stato del componente aggiuntivo viene modificato su Attivo, gli utenti e i gruppi potranno accedervi di nuovo.  <br/> |
@@ -53,7 +53,7 @@ Prendere in considerazione l'eliminazione di un componente aggiuntivo se non vie
 
 1. Nell'interfaccia di amministrazione passare alla pagina  >  **Servizi & componenti aggiuntivi.**
 
-     > [!NOTE]
+    > [!NOTE]
     > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se non vedi i passaggi precedenti, vai alla sezione Distribuzione centralizzata andando a **Impostazioni**  >  **App integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
 
 2. Selezionare il componente aggiuntivo distribuito.
@@ -68,7 +68,7 @@ Dopo la distribuzione, gli amministratori possono anche gestire l'accesso degli 
 
 1. Nell'interfaccia di amministrazione passare alla pagina  >  **Servizi & componenti aggiuntivi.**
 
-     > [!NOTE]
+    > [!NOTE]
     > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se non vedi i passaggi precedenti, vai alla sezione Distribuzione centralizzata andando a **Impostazioni**  >  **App integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
 
 2. Selezionare il componente aggiuntivo distribuito.
@@ -88,29 +88,27 @@ In quanto organizzazione è possibile impedire il download di nuovi componenti a
   
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> [Servizi &amp; componenti aggiuntivi](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
-     > [!NOTE]
+    > [!NOTE]
     > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se non vedi i passaggi precedenti, vai alla sezione Distribuzione centralizzata andando a **Impostazioni**  >  **App integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
     
 3. Selezionare **App e servizi di proprietà dell'utente.**
     
 4. Deselezionare l'opzione per consentire agli utenti di accedere a Office Store.
 
-Questo impedirà a tutti gli utenti di acquisire i componenti aggiuntivi seguenti dallo Store.
-  
-- Componenti aggiuntivi per Word, Excel e PowerPoint 2016 da:
-    
-  - Windows
-    
-  - Mac
-    
-  - Ufficio
-    
-    
-- Acquisizioni a partire da **AppSource**
-    
-- Componenti aggiuntivi in Microsoft 365
-    
-Un utente che tenta di accedere all'archivio visualizza il messaggio seguente: **Spiacenti, Microsoft 365 è** stato configurato per impedire l'acquisizione individuale di componenti aggiuntivi di Office Store.
+    Questo impedirà a tutti gli utenti di acquisire i componenti aggiuntivi seguenti dallo Store.
+      
+    - Componenti aggiuntivi per Word, Excel e PowerPoint 2016 da:
+        
+      - Windows
+      - Mac
+      - Office
+        
+        
+    - Acquisizioni a partire da **AppSource**
+        
+    - Componenti aggiuntivi in Microsoft 365
+        
+    Un utente che tenta di accedere all'archivio visualizza il messaggio seguente: **Spiacenti, Microsoft 365 è** stato configurato per impedire l'acquisizione individuale di componenti aggiuntivi di Office Store.
   
 Il supporto per la disattivazione di Office Store è disponibile nelle versioni seguenti:
   
@@ -126,8 +124,8 @@ Ciò non impedisce a un amministratore di utilizzare la distribuzione centralizz
   
 Per impedire a un utente di accedere con un account Microsoft, è possibile limitare l'accesso in modo che utilizzi solo l'account dell'organizzazione. Per ulteriori informazioni, vedere [Identity, authentication, and authorization in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office).  
 
-> [!NOTE]
-> Impedire agli utenti di accedere all'Office Store impedirà anche loro di eseguire il sideload dei componenti aggiuntivi di Office per [il testing.](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
+> [!NOTE] 
+> Impedire agli utenti di accedere all'Office Store impedirà anche loro di sideload dei componenti aggiuntivi di Office per il [testing da una condivisione di rete.](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>Altre informazioni sull'esperienza dell'utente finale con i componenti aggiuntivi
 
@@ -145,15 +143,19 @@ Se il componente aggiuntivo distribuito non supporta i comandi dei componenti ag
     
 2. Selezionare la scheda **Gestito dall'amministratore** nella finestra Componenti aggiuntivi per Office. 
     
-3. Fare doppio clic sul componente aggiuntivo distribuito in precedenza, in questo esempio **Citazioni**. <br/>![Scheda Gestito dall'amministratore della pagina Componenti aggiuntivi di Office](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. Fare doppio clic sul componente aggiuntivo distribuito in precedenza (in questo esempio **Citations**).
+
+    ![Scheda Gestito dall'amministratore della pagina Componenti aggiuntivi di Office](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>In Outlook
 
-1. Sulla barra **multifunzione Home** selezionare Ottieni **componenti aggiuntivi.**<br/>![Pulsante Store in Outlook](../../media/getaddinsicon.png)
+1. Sulla barra **multifunzione Home** selezionare Ottieni **componenti aggiuntivi.**
+
+    ![Pulsante Store in Outlook](../../media/getaddinsicon.png)
   
 2. Seleziona **Gestito dall'amministratore** nel riquadro di spostamento sinistro. 
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
 [Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione](./manage-deployment-of-add-ins.md)
 

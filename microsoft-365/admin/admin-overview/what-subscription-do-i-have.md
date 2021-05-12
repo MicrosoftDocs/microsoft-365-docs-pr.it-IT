@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,26 +14,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
-- Adm_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
+- commerce_subscriptions
+search.appverid: MET150
 description: Informazioni su come verificare le sottoscrizioni dell'organizzazione andando alla pagina I tuoi prodotti.
-ms.openlocfilehash: 38098eb01a9a1e7fa2ee46acf20cc03ed8f31f93
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 01/21/2021
+ms.openlocfilehash: c54b9795487f1cfc5902c2c761fdd65b78109bcf
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243997"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327235"
 ---
 # <a name="what-subscription-do-i-have"></a>Qual è l'abbonamento corrente?
 
 Se si è un amministratore, è possibile verificare le sottoscrizioni dell'organizzazione andando all'interfaccia di amministrazione.
   
- **Se non si è un amministratore** Vedere Quali Microsoft 365 prodotto o licenza per le [aziende sono in uso?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+ **Se non si è un amministratore** Vedere Qual è il prodotto o la licenza di [Microsoft 365 per](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) le aziende?
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 2. Nella scheda **Prodotti** vengono visualizzati tutti gli abbonamenti. Ogni riga di sottoscrizione include informazioni sulle licenze, sullo stato della sottoscrizione e sulla fatturazione.

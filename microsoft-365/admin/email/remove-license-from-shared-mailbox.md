@@ -22,19 +22,21 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Rimuovere la licenza da una cassetta postale condivisa per assegnarla a un altro utente. '
-ms.openlocfilehash: 82ec863d5c2ae550fb401e71744715a27c89d382
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 873b50b34b9887ada92cc56f7083e3b748a52035
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470620"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327223"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Rimuovere una licenza da una cassetta postale condivisa
 
 Le cassette postali condivise in genere non richiedono una licenza. Seguire queste istruzioni per rimuovere una licenza da una cassetta postale condivisa in modo che sia possibile assegnarla a un utente o restituire la licenza in modo che non si paga per una licenza non necessaria.
 
 > [!NOTE]
+>
 > Una licenza è necessaria negli scenari seguenti:
+>
 > 1. La cassetta postale condivisa dispone di più di 50 GB di spazio di archiviazione in uso.
 > 2. La cassetta postale condivisa utilizza l'archiviazione sul posto.
 > 3. La cassetta postale condivisa viene messa in conservazione per controversia legale.

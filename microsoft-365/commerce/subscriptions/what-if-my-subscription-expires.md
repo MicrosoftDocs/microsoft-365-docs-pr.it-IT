@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
+- commerce_subscriptions
+search.appverid: MET150
 description: Questo articolo spiega cosa succede ai dati dell'utente quando l'abbonamento a Microsoft 365 scade o viene disabilitato oppure viene annullato dall'utente.
-ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 04/08/2021
+ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297273"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326799"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Che cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365?
 
@@ -78,23 +77,14 @@ Nel periodo in cui un abbonamento è attivo è possibile accedere normalmente ai
 Prima che l'abbonamento raggiunga effettivamente la data di scadenza, è possibile scegliere tra alcune opzioni:
   
 - **Abilitare la fatturazione ricorrente per l'abbonamento.**
-
   - Se la **fatturazione ricorrente** è già attivata, non è necessario eseguire alcuna operazione. L'abbonamento viene fatturato automaticamente e viene addebitato un ulteriore anno o mese, a seconda della frequenza di pagamento attuale. Se per qualsiasi motivo è stata disattivata la **fatturazione ricorrente**, è sempre possibile [riattivarla](renew-your-subscription.md).
-
   - Se si è acquistato Microsoft 365 Apps for business con una carta prepagata, è possibile [attivare la fatturazione ricorrente](renew-your-subscription.md) per l'abbonamento.
-
   - Se si ha una licenza Open Volume con un abbonamento annuale prepagato, contattare il proprio partner per acquistare un nuovo codice Product Key. Si riceveranno istruzioni tramite posta elettronica per attivare il codice nel [Centro servizi per contratti multilicenza](https://go.microsoft.com/fwlink/p/?LinkID=282016). Per informazioni su come trovare un nuovo partner o il partner con cui si è lavorato in passato, vedere [Trovare il partner o rivenditore](../../admin/manage/find-your-partner-or-reseller.md).
-
   - Se si ha Microsoft 365 Apps for business, vedere [Gestire la fatturazione ricorrente per l'abbonamento](renew-your-subscription.md).
-
 - **Lasciar scadere l'abbonamento.**
-
   - Se si paga tramite carta di credito o fattura e si vuole interrompere l'abbonamento, [disattivare la fatturazione ricorrente](renew-your-subscription.md). L'abbonamento termina alla data di scadenza e si potranno ignorare tutte le relative notifiche tramite posta elettronica.
-
   - Se si ha una licenza Open Volume acquistata da un partner, è possibile lasciar scadere l'abbonamento senza eseguire alcuna azione.
-
   - I clienti di Office 365 Business Standard con un abbonamento prepagato e attivato con un codice Product Key possono lasciar scadere l'abbonamento senza eseguire alcuna azione.
-
 - **Annullare l'abbonamento prima della scadenza.** Per informazioni dettagliate, vedere [Annullare l'abbonamento](cancel-your-subscription.md).
 
 ## <a name="what-happens-after-my-subscription-expires"></a>Cosa succede dopo la scadenza dell'abbonamento?
@@ -105,7 +95,7 @@ Ecco cosa aspettarsi in ogni stato dell'abbonamento.
   
 ### <a name="state-expired"></a>Stato: Scaduto
 
- **Cosa aspettarsi:** lo stato Scaduto dura 30 giorni per la maggior parte degli abbonamenti, compresi quelli acquistati tramite [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), nella maggior parte dei paesi e delle aree geografiche. Per i prodotti con contratto multilicenza, a eccezione di Microsoft Open, lo stato Scaduto dura 90 giorni.
+**Cosa aspettarsi:** lo stato Scaduto dura 30 giorni per la maggior parte degli abbonamenti, compresi quelli acquistati tramite [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), nella maggior parte dei paesi e delle aree geografiche. Per i prodotti con contratto multilicenza, a eccezione di Microsoft Open, lo stato Scaduto dura 90 giorni.
 
 In questo stato, gli utenti possono accedere normalmente al portale di Microsoft 365, alle applicazioni di Office e a servizi come la posta elettronica e SharePoint Online.
   
@@ -113,7 +103,7 @@ L'amministratore ha ancora accesso all'interfaccia di amministrazione. Nessun pr
   
 ### <a name="state-disabled"></a>Stato: Disabilitato
 
- **Cosa aspettarsi:** se non viene riattivato mentre è nello stato Scaduto, l'abbonamento entra nello stato Disabilitato e questa fase dura 90 giorni per la maggior parte degli abbonamenti e nella maggior parte dei paesi e delle aree geografiche. Per i prodotti con contratti multilicenza, lo stato Scaduto dura 30 giorni.
+**Cosa aspettarsi:** se non viene riattivato mentre è nello stato Scaduto, l'abbonamento entra nello stato Disabilitato e questa fase dura 90 giorni per la maggior parte degli abbonamenti e nella maggior parte dei paesi e delle aree geografiche. Per i prodotti con contratti multilicenza, lo stato Scaduto dura 30 giorni.
 
 In questo stato le funzionalità disponibili si riducono notevolmente. Gli utenti non possono eseguire l'accesso o accedere a servizi come la posta elettronica o SharePoint Online. Le applicazioni di Office entrano alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzano [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Gli amministratori possono sempre accedere all'interfaccia di amministrazione, ma non possono assegnare licenze agli utenti. I dati della società, inclusi tutti i dati degli utenti, la posta elettronica e i file sui siti del team, sono disponibili solo agli amministratori.
 
@@ -121,13 +111,14 @@ Un amministratore globale o di fatturazione può [riattivare l'abbonamento](reac
 
 ### <a name="state-deleted"></a>Stato: Eliminato
   
- **Cosa aspettarsi:** se non viene riattivato quando è scaduto o disabilitato, l'abbonamento viene eliminato.
+**Cosa aspettarsi:** se non viene riattivato quando è scaduto o disabilitato, l'abbonamento viene eliminato.
   
 Gli amministratori e gli utenti non hanno più accesso ai servizi o alle applicazioni di Office incluse nell'abbonamento. Tutti i dati dei clienti, dai dati degli utenti ai documenti e messaggi di posta elettronica, vengono eliminati definitivamente e non potranno essere recuperati.
   
 A questo punto non è più possibile riattivare l'abbonamento. Tuttavia, l'amministratore globale o della fatturazione può ancora accedere all'interfaccia di amministrazione per gestire altri abbonamenti o per acquistarne di nuovi, in base alle esigenze dell'azienda.
   
 > [!NOTE]
+>
 > - Se si aggiunge un nuovo abbonamento dello stesso tipo di quello eliminato, non è possibile ripristinare i dati precedentemente associati all'abbonamento eliminato.
 > - Se una licenza Microsoft Cloud Solution Provider viene sospesa, non è previsto la scadenza dopo 30 giorni e i servizi vengono disabilitati immediatamente. I dati verranno eliminati dopo 90 giorni se il tenant non viene riattivato aggiungendo una nuova licenza.
 
@@ -136,12 +127,11 @@ A questo punto non è più possibile riattivare l'abbonamento. Tuttavia, l'ammin
 Al termine del periodo di valutazione, non è possibile continuare a usare Microsoft 365 gratuitamente. È possibile scegliere tra le seguenti opzioni:
 
 - **Acquistare Microsoft 365.** Trascorso il periodo di valutazione l'abbonamento entra nello stato Scaduto, che concede altri 30 giorni di tempo (per la maggior parte delle versioni di valutazione e nella maggior parte dei paesi e delle aree geografiche) per acquistare Microsoft 365. Per informazioni su come convertire la versione di valutazione in un abbonamento a pagamento, vedere [Acquistare un abbonamento nella versione di valutazione](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
-
 - **Estendere il periodo di valutazione.** Serve più tempo per valutare Microsoft 365? In alcuni casi potrebbe essere possibile [estendere il periodo di valutazione](../extend-your-trial.md).
-
 - **Annullare la versione di valutazione o lasciarla scadere.** Se si decide di non acquistare Microsoft 365, è possibile lasciar scadere la versione di valutazione o [annullarla](cancel-your-subscription.md). Eseguire il backup dei dati che si vogliono conservare. Trascorsi i 30 giorni dello stato Scaduto, le informazioni dell'account di valutazione e i relativi dati vengono eliminati definitivamente.
 
 > [!NOTE]
+>
 > Le informazioni riportate in questa pagina sono soggette alla [dichiarazione di non responsabilità e agli avvisi di modifica dei criteri Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613651). Visitare periodicamente questo sito per prendere visione di eventuali modifiche.
 
 ## <a name="related-content"></a>Contenuti correlati
