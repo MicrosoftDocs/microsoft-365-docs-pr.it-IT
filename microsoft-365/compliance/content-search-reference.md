@@ -1,5 +1,5 @@
 ---
-title: Riferimento ricerca contenuto
+title: Riferimento funzionalità per Ricerca contenuto
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Questo articolo contiene informazioni di riferimento sullo strumento eDiscovery della Ricerca contenuto nel Centro conformità Microsoft 365 per scoprire i dettagli relativi alla Ricerca contenuto.
-ms.openlocfilehash: c345cf00bddba30cb543ad9682a2a332607d31fe
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314316"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332895"
 ---
-# <a name="content-search-reference"></a>Riferimento ricerca contenuto
+# <a name="feature-reference-for-content-search"></a>Riferimento funzionalità per Ricerca contenuto
+
+Questo articolo descrive funzionalità e funzioni di Ricerca contenuto.
 
 ## <a name="content-search-limits"></a>Limiti di Ricerca contenuto
 
@@ -71,6 +73,10 @@ Tenere presente quanto segue quando si usa l'elenco di parole chiave per creare 
     
 - Se si dispone di una query di ricerca che contiene parole chiave per i caratteri non italiani (come i caratteri cinesi), è possibile fare clic su **Lingua - paese/area geografica della query**![Icona Lingua - paese/area geografica della query Ricerca contenuto](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) e selezionare un valore di codice per la lingua - paese per la ricerca. La lingua/area geografica predefinita è neutrale. Come è possibile stabilire se è necessario cambiare l'impostazione della lingua per una ricerca contenuto? Se si è certi che i percorsi di contenuto contengano i caratteri non italiani che si stanno cercando, ma la ricerca non restituisce risultati, l'impostazione della lingua potrebbe essere la causa. 
   
+## <a name="partially-indexed-items"></a>Elementi parzialmente indicizzati
+
+- Gli elementi parzialmente indicizzati nelle cassette postali sono inclusi nei risultati della ricerca stimati. Gli elementi parzialmente indicizzati di SharePoint e OneDrive non vengono inclusi nei risultati della ricerca stimati. Per altre informazioni, vedere [Elementi parzialmente indicizzati in eDiscovery](partially-indexed-items-in-content-search.md).
+
 ## <a name="searching-onedrive-accounts"></a>Eseguire una ricerca negli account di OneDrive
 
 - Per ottenere un elenco degli URL dei siti di OneDrive nell'organizzazione, vedere [Creare un elenco di tutti i percorsi di OneDrive nell'organizzazione](/onedrive/list-onedrive-urls). Lo script in questo articolo crea un file di testo che contiene un elenco di tutti i siti di OneDrive. Per eseguire questo script, è necessario installare e usare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL del dominio MySite dell'organizzazione a ogni sito OneDrive che si desidera includere nella ricerca. Si tratta del dominio che contiene tutti i siti di OneDrive, ad esempio, `https://contoso-my.sharepoint.com`. Di seguito viene riportato un esempio di sito OneDrive di un utente: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
@@ -228,12 +234,6 @@ Se la licenza di Exchange Online, o l'intera licenza di Microsoft 365, viene rim
 - Se si usa il cmdlet **New-ComplianceSearch** per creare una ricerca contenuto e si specifica una cassetta postale disconnessa come percorso di contenuto di Exchange in cui eseguire la ricerca, la ricerca contenuto non restituirà risultati della ricerca dalla cassetta postale disconnessa.
 
 Se è necessario conservare i dati in una cassetta postale disconnessa in modo che sia disponibile per la ricerca, è necessario applicare un blocco alla cassetta postale prima di rimuovere la licenza. In questo modo i dati vengono mantenuti e le cassette postali disconnesse sono disponibili per la ricerca finché non viene rimosso il blocco. Per altre informazioni sui blocchi, vedere [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
-
-## <a name="partially-indexed-items"></a>Elementi parzialmente indicizzati
-
-- Come descritto in precedenza, gli elementi parzialmente indicizzati nelle cassette postali sono inclusi nei risultati della ricerca stimati. Gli elementi parzialmente indicizzati di SharePoint e OneDrive non vengono inclusi nei risultati della ricerca stimati.
-
-- Se un elemento parzialmente indicizzato corrisponde alla query di ricerca, perché altre proprietà del messaggio o del documento soddisfano i criteri di ricerca, non verrà incluso nel numero stimato di elementi non indicizzati. Se un elemento parzialmente indicizzato è escluso dai criteri di ricerca, non verrà incluso nel numero stimato di elementi non indicizzati. Per altre informazioni, vedere [Elementi parzialmente indicizzati in Ricerca contenuto in Office 365](partially-indexed-items-in-content-search.md).
 
 ## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Ricerca di contenuto in un ambiente SharePoint Multi-Geo
 

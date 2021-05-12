@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: a9755542b608c8ed7d3cd93bebbd764fd56b9768
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326619"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332715"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -67,7 +67,7 @@ I numeri elencati indicano la versione minima delle applicazioni di Office neces
 |[Controllare le attività degli utenti correlate alle etichette](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | In distribuzione: 16.0.13628+ | Sì <sup>\*</sup>                                                        |
 |[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | In distribuzione: 16.45+         | In distribuzione: 2.47+ | In distribuzione: 16.0.13628+ | In distribuzione                                            
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                                  | In distribuzione: 16.44+ | In revisione | In revisione | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Supporto della creazione condivisa e del salvataggio automatico](sensitivity-labels-coauthoring.md) per documenti etichettati e crittografati | Anteprima: [Canale corrente (Anteprima)](https://office.com/insider) | Anteprima: [Canale beta](https://office.com/insider) | In revisione | In revisione | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Supporto della creazione condivisa e del salvataggio automatico](sensitivity-labels-coauthoring.md) per documenti etichettati e crittografati | Anteprima: [Canale corrente (Anteprima)](https://office.com/insider) | Anteprima: [Canale corrente (Anteprima)](https://office.com/insider) | In revisione | In revisione | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Nota a piè di pagina:**

@@ -501,9 +501,11 @@
       items:
         - name: Panoramica della ricerca contenuto
           href: search-for-content.md
-        - name: Usare la ricerca contenuto
+        - name: Cercare contenuto
           href: content-search.md
           items:
+            - name: Riferimento funzionalità per Ricerca contenuto
+              href: content-search-reference.md
             - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
             - name: Visualizzare in anteprima i risultati della ricerca di eDiscovery
@@ -663,32 +665,20 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Correzione degli errori dei singoli elementi
               href: single-item-error-remediation.md
-        - name: Raccogliere contenuti per un caso (anteprima)
+        - name: Raccogliere contenuti per un caso
           items:
-            - name: Informazioni sulle raccolte (anteprima)
+            - name: Informazioni sulle raccolte
               href: collections-overview.md
-            - name: Creare una raccolta bozza (anteprima)
+            - name: Creare una raccolta bozza
               href: create-draft-collection.md
-            - name: Eseguire il commit di una raccolta bozza in un insieme da rivedere (anteprima)
+            - name: Eseguire il commit di una raccolta bozza in un insieme da rivedere
               href: commit-draft-collection.md
-            - name: Statistiche e report di raccolte (anteprima)
+            - name: Statistiche e report di raccolte
               href: collection-statistics-reports.md
             - name: Creare query di ricerca per le raccolte
               href: building-search-queries.md
             - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
-        - name: Raccogliere i dati per un caso
-          items:
-            - name: Creare una ricerca
-              href: create-search-to-collect-data.md
-            - name: Creare query di ricerca
-              href: building-search-queries.md
-            - name: Query con parole chiave e condizioni di ricerca
-              href: keyword-queries-and-search-conditions.md
-            - name: Statistiche della ricerca
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: Aggiungere i risultati della ricerca a un insieme da rivedere
-              href: add-data-to-review-set.md
         - name: Gestire gli insiemi da rivedere
           href: managing-review-sets.md
           items:
@@ -840,6 +830,8 @@
       items:
         - name: Informazioni su Compliance Manager
           href: compliance-manager.md
+        - name: Novità di Compliance Manager
+          href: compliance-manager-whats-new.md
         - name: Guida rapida a Compliance Manager
           href: compliance-manager-quickstart.md
         - name: Introduzione a Compliance Manager
