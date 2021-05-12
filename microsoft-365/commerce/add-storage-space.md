@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +19,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: drjones
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Informazioni su come aggiungere e ridurre l'archiviazione di file nell'Microsoft 365 abbonamento. Con l'archiviazione di file aggiuntiva, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 98fdb4412f263bd9e0a22b6890ff66509cb3e799
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293680"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332187"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
@@ -103,7 +101,7 @@ Office 365 Extra File Storage è disponibile per gli abbonamenti seguenti:
 > [!NOTE]
 > Office 365 Extra File Archiviazione è disponibile anche per i piani GCC, GCC High e DOD.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
-[Gestire i limiti di archiviazione del sito](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (articolo)\
+[Gestire i limiti di archiviazione del sito](/sharepoint/manage-site-collection-storage-limits) (articolo)\
 [Impostare lo spazio di archiviazione predefinito per OneDrive utenti](/onedrive/set-default-storage-space)(articolo)

@@ -303,19 +303,19 @@
     - name: Domande frequenti
       items:
         - name: Domande frequenti sull'amministrazione delegata
-          href: delegated-administration-faq.md
+          href: delegated-administration-faq.yml
         - name: Domande frequenti su Exchange Online Protection
-          href: eop-general-faq.md
+          href: eop-general-faq.yml
         - name: 'Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in Exchange Online Protection'
-          href: eop-queued-deferred-and-bounced-messages-faq.md
+          href: eop-queued-deferred-and-bounced-messages-faq.yml
         - name: Domande frequenti sulla protezione antimalware
-          href: anti-malware-protection-faq-eop.md
+          href: anti-malware-protection-faq-eop.yml
         - name: Domande frequenti sulla protezione da posta indesiderata
-          href: anti-spam-protection-faq.md
+          href: anti-spam-protection-faq.yml
         - name: Domande frequenti sulla protezione anti-spoofing
-          href: anti-spoofing-protection-faq.md
+          href: anti-spoofing-protection-faq.yml
         - name: Domande frequenti sulla quarantena
-          href: quarantine-faq.md
+          href: quarantine-faq.yml
     - name: Riferimenti
       items:
         - name: Roadmap per la sicurezza

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55c22c9901f163fdf64e6148d5b2c19e51136bc1
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086803"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326619"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -89,7 +89,7 @@ I numeri elencati indicano la versione minima delle applicazioni di Office neces
 |[Assegnare ora le autorizzazioni](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Consentire agli utenti di assegnare le autorizzazioni <br /> - Non inoltrare](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Consentire agli utenti di assegnare le autorizzazioni <br /> - Solo crittografia](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | Sì |
-|[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | In distribuzione: 4.2111+            | In distribuzione: 4.2111+                | Sì                |
+|[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Sì                |
 |[Controllare le attività degli utenti correlate alle etichette](data-classification-activity-explorer.md) | 2011+ | In revisione | In revisione           | In revisione               | In revisione |
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | In revisione           | In revisione               | Sì |
 |[Impostazioni diverse per l'etichetta predefinita e l'etichetta obbligatoria](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | In distribuzione in anteprima: [Canale beta](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Sì |
@@ -134,7 +134,7 @@ Per Microsoft Word 2016, Excel 2016, PowerPoint 2016 e Outlook 2016, specifica i
 | | | 
 
 
-Distribuire questa impostazione usando Criteri di gruppo o il [servizio di criteri cloud di Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
+Distribuire questa impostazione usando Criteri di gruppo o il [servizio di criteri cloud di Office](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!NOTE]
 > Se usi l'impostazione dei criteri di gruppo **Usa la funzionalità di riservatezza in Office per applicare e visualizzare le etichette di riservatezza** e la imposti sul valore **1**, in alcune circostanze il cliente di Azure Information Protection potrebbe continuare a essere caricato nelle app di Office. Il blocco del caricamento dei componenti aggiuntivi in ogni app previene questo problema.

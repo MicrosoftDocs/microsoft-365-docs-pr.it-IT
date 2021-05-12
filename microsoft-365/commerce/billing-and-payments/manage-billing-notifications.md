@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +16,17 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: Informazioni su come gestire chi riceve messaggi di posta elettronica di notifica di fatturazione e allegati di fattura.
-ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911855"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332139"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gestire le notifiche di fatturazione e le fatture allegate
 
@@ -41,7 +43,7 @@ Per eseguire la procedura descritta in questo articolo, è necessario essere un 
 
 I messaggi di posta elettronica di notifica di fatturazione vengono inviati nella lingua preferita dell'organizzazione. Per modificare la lingua preferita, eseguire la procedura seguente.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Notifiche**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">fatturazione.</a>
+1. Nell'Microsoft 365 di amministrazione passare alla pagina **Notifiche**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">fatturazione.</a>
 2. Nella sezione **Impostazioni notifiche di fatturazione** seleziona Modifica impostazioni **notifica.**
 3. Nel riquadro **Impostazioni notifica fatturazione,** in **Lingua preferita** selezionare la lingua che si desidera utilizzare, quindi selezionare **Salva**.
 
@@ -101,7 +103,7 @@ Per interrompere la ricezione **dell'allegato** della fattura in qualsiasi momen
 
 Se si dispone di un profilo di fatturazione, alcuni dei passaggi descritti in questo articolo potrebbero essere leggermente diversi per alcuni abbonamenti. In questa sezione vengono descritte queste differenze. [Come è possibile sapere se si dispone di un profilo di fatturazione?](manage-billing-profiles.md)
 
-### <a name="who-receives-billing-notifications"></a>Chi riceve le notifiche di fatturazione?
+### <a name="who-receives-billing-notifications"></a>Who riceve le notifiche di fatturazione?
 
 I messaggi di posta elettronica di notifica di fatturazione vengono inviati agli indirizzi di posta elettronica principali e alternativi per gli utenti a cui è assegnato uno dei ruoli seguenti:
 
@@ -125,7 +127,7 @@ Per ricevere le fatture come allegati alle notifiche delle fatture, eseguire la 
 2. Seleziona la **scheda Profili di** fatturazione, quindi seleziona un profilo di fatturazione dall'elenco.
 3. Nella pagina dei dettagli del profilo di fatturazione, in Ottieni fatture negli allegati di posta **elettronica,** impostare l'interruttore su **Attivato.**
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\
 [Comprendere la fattura o la fattura per Microsoft 365 per le aziende](understand-your-invoice2.md) (articolo)\

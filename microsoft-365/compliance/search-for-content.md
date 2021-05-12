@@ -13,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilizzare lo strumento Ricerca contenuto eDiscovery nel Centro sicurezza & e conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, nei documenti nei siti di SharePoint e nelle posizioni di OneDrive e nelle conversazioni di messaggistica istantanea in Skype for Business.
-ms.openlocfilehash: a6aa416768e7910e546b39d5866f884d2d532732
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927592"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333687"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Cercare contenuto tramite lo strumento Ricerca contenuto
 
@@ -28,7 +28,9 @@ Utilizzare lo strumento Ricerca contenuto nel Centro sicurezza & conformità per
 
 Il primo passaggio consiste nell'iniziare a utilizzare lo strumento Ricerca contenuto per scegliere i percorsi di contenuto in cui eseguire la ricerca e configurare una query con parole chiave per la ricerca di elementi specifici. In caso contrario, è possibile lasciare vuota la query e restituire tutti gli elementi nelle posizioni di destinazione.
   
-- [Creare ed eseguire](content-search.md) una ricerca di contenuto 
+- [Creare ed eseguire](content-search.md) una ricerca contenuto
+
+- [Riferimento funzionalità] per Ricerca contenuto (content-search-reference.md)
 
 - [Creare query di ricerca e usare condizioni per](keyword-queries-and-search-conditions.md) restringere la ricerca 
 

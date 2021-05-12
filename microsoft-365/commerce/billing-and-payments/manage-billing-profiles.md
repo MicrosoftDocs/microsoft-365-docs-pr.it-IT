@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,16 +18,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: Informazioni su come i profili di fatturazione supportano le fatture.
 ms.date: 04/02/2021
-ms.openlocfilehash: 57786df370246c2b4fda556a9c48eb828db1cb4f
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 36d762e50627763b7856ed1fe6c109e8da2b4789
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280788"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332031"
 ---
 # <a name="understand-billing-profiles"></a>Informazioni sui profili di fatturazione
 
@@ -58,7 +57,7 @@ I ruoli nei profili di fatturazione dispongono delle autorizzazioni per controll
 
 ## <a name="view-billing-profiles"></a>Visualizzare i profili di fatturazione
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
 2. Scegliere **Profili di** fatturazione e quindi un profilo di fatturazione dall'elenco.
 
     - Nella scheda **Panoramica** è possibile modificare i dettagli del profilo di fatturazione e attivare o disattivare l'invio di una fattura tramite posta elettronica.
@@ -73,4 +72,4 @@ I ruoli nei profili di fatturazione dispongono delle autorizzazioni per controll
 
 Se hai domande o hai bisogno di assistenza per i costi di Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">crea una richiesta di supporto con il supporto di Azure.</a>
 
-Se hai domande o hai bisogno di assistenza con il profilo di fatturazione nell Microsoft 365 di amministrazione, contatta [il supporto per i prodotti aziendali.](../../business-video/get-help-support.md)
+Se hai domande o hai bisogno di assistenza con il profilo di fatturazione nell'interfaccia di amministrazione di Microsoft 365, [contatta il supporto per i prodotti aziendali.](../../business-video/get-help-support.md)

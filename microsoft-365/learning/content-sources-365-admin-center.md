@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 05/12/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,13 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Informazioni su come configurare le origini di contenuto di apprendimento per Microsoft Viva Learning (Preview) nell'Microsoft 365 di amministrazione.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b2e6ab6306db9a5ac9d91226431e5876cc244499
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: aba5c9f4eae3de5a1dfccd306bd38b2e3eeea5d0
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245421"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333543"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurare origini di contenuto di apprendimento per Microsoft Viva Learning (Anteprima) nell'Microsoft 365 di amministrazione
 

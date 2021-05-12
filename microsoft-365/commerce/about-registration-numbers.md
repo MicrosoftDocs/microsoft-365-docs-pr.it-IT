@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,22 +13,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: drjones
 description: Informazioni sui numeri di registrazione e sulle notifiche sotto-revisione quando si acquistano prodotti o servizi Microsoft.
 ms.date: 03/17/2021
-ms.openlocfilehash: 25302ce9481fba146d4fcda5fe72c31b5126fd08
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 8ec97356f9859e928a8ee435f406c15f4f17a4c4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107401"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332223"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Informazioni sui numeri di registrazione e sulle notifiche in fase di revisione
 

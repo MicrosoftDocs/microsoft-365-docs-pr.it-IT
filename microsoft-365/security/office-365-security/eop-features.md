@@ -13,12 +13,12 @@ ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ff3c889f3e4d6779b08584ba6537da36d6f2660e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b30608b858f06951a8f4c250f288a8d44bd84b08
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205509"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333831"
 ---
 # <a name="eop-features"></a>Funzionalità di Exchange Online Protection
 
@@ -40,7 +40,7 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |Rilevamento posta indesiderata in ingresso|Per ulteriori informazioni, vedere [Protezione da posta indesiderata in Microsoft 365.](anti-spam-protection.md) <p> Negli ambienti di EOP autonomi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare le regole del flusso di posta (anche note come regole di trasporto) in Exchange locale per tradurre il verdetto filtro posta indesiderata in modo che la regola della posta indesiderata possa spostare il messaggio nella cartella Posta indesiderata. Per informazioni dettagliate, vedere [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |Rilevamento posta indesiderata in uscita|La protezione da posta indesiderata in uscita è sempre abilitata se si utilizza il servizio per l'invio della posta in uscita. Per ulteriori informazioni, vedere [Protezione da posta indesiderata in uscita.](outbound-spam-controls.md)|
 |Protezione backscatter|Per ulteriori informazioni, vedere [Backscatter ed EOP.](backscatter-messages-and-eop.md)|
-|Filtro della posta in blocco|EOP usa la soglia di reclamo in blocco (BCL) per contrassegnare i messaggi di posta elettronica in blocco come posta indesiderata. Per ulteriori informazioni, vedere i seguenti argomenti: <p> [Differenza tra posta elettronica indesiderata e posta elettronica inviata in blocco](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [Livello di reclamo in blocco (BCL) in EOP](bulk-complaint-level-values.md) <p> [Configurare criteri di protezione da posta indesiderata](configure-your-spam-filter-policies.md)|
+|Filtro della posta in blocco|EOP usa la soglia di reclamo in blocco (BCL) per contrassegnare i messaggi di posta elettronica in blocco come posta indesiderata. Per ulteriori informazioni, vedere i seguenti argomenti: <p> [Differenza tra posta elettronica indesiderata e posta elettronica inviata in blocco](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [Livello di reclamo in blocco (BCL) in EOP](bulk-complaint-level-values.md) <p> [Configurazione dei criteri di protezione dalla posta indesiderata](configure-your-spam-filter-policies.md)|
 |Elenchi di protezione dagli URL dannosi|EOP usa alcuni elenchi di protezione URL aggiuntivi, che consentono di rilevare i collegamenti dannosi all'interno dei messaggi.|
 |Protezione anti-phishing|EOP include 750.000 domini di spammer noti.|
 |Protezione anti-spoofing|Per ulteriori informazioni, vedere [Protezione anti-spoofing.](anti-spoofing-protection.md)|
@@ -98,6 +98,6 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |Assistenza tecnica telefonica e Web 7 giorni su 7, 24 ore su 24|Per ulteriori informazioni sulle opzioni di supporto e la guida di EOP, vedere [Guida e supporto tecnico per EOP](help-and-support-for-eop.md).|
 |**Altre funzionalità**||
 |Rete di server globale con ridondanza geografica|EOP viene eseguito in una rete globale di datacenter progettati per offrire la massima disponibilità. Per ulteriori informazioni, vedere la sezione relativa ai datacenter di EOP in [Panoramica su Exchange Online Protection](exchange-online-protection-overview.md).  |
-|L'accodamento dei messaggi sul server locale non consente di accettare la posta|I messaggi in differimento rimangono nelle code per un giorno. I tentativi di invio dei messaggi variano in base all'errore ricevuto dal sistema di posta elettronica del destinatario. In media, l'intervallo tra i tentativi di invio è di 5 minuti. Per ulteriori informazioni, vedere [Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
+|L'accodamento dei messaggi sul server locale non consente di accettare la posta|I messaggi in differimento rimangono nelle code per un giorno. I tentativi di invio dei messaggi variano in base all'errore ricevuto dal sistema di posta elettronica del destinatario. In media, l'intervallo tra i tentativi di invio è di 5 minuti. Per ulteriori informazioni, vedere [Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP](eop-queued-deferred-and-bounced-messages-faq.yml).|
 |Crittografia dei messaggi di Office 365 disponibile come servizio aggiuntivo|Per ulteriori informazioni, vedere [Crittografia in Office 365](../../compliance/encryption.md).|
 |

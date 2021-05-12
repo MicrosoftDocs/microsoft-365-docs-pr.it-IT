@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 477f176d523fbb458ae266cad98b07a63a10050c
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: d0745ac2e4d5b78b40746fd0593a9af18e691021
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259344"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326831"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -220,7 +220,9 @@ Assicurarsi di conoscere i prerequisiti prima di configurare i criteri di etiche
 - Una o più etichette di riservatezza [create e pubblicate](create-sensitivity-labels.md) (per almeno un utente) che è possibile selezionare per i criteri di applicazione automatica di etichette. Per queste etichette:
     - Non è rilevante se l'opzione di etichettatura automatica nelle app di Office sia attivata o disattivata perché, come spiegato nell'introduzione, quella impostazione delle etichette integra i criteri di applicazione automatica di etichette.
     - Se le etichette che si vogliono usare per l'applicazione automatica di etichette sono configurate per l'uso di contrassegni visivi (intestazioni, piè di pagina e filigrane), tenere presente che non questi non vengono applicati ai documenti.
-    - Se si applica la [crittografia](encryption-sensitivity-labels.md) alle etichette, queste devono essere configurate per l'impostazione **Assegnare ora le autorizzazioni**.
+    - Se le etichette applicano la [crittografia](encryption-sensitivity-labels.md):
+        - Quando il criterio di applicazione automatica delle etichette include posizioni per SharePoint o OneDrive, l'etichetta deve essere configurata per l'impostazione **Assegnare le autorizzazioni adesso**.
+        - Quando il criterio di applicazione automatica delle etichette è solo per Exchange, l'etichetta può essere configurata sia per **Assegnare le autorizzazioni adesso** o **Consentire agli utenti di assegnare le autorizzazioni** (per le opzioni Non inoltrare o Solo crittografia).
 
 ### <a name="learn-about-simulation-mode"></a>Informazioni sulla modalità di simulazione
 
