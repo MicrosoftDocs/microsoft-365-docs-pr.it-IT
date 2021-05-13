@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come creare un calendario condiviso.
-ms.openlocfilehash: 684122bcbccd7e8a419cc98eb0d0028c6218141a
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 21b594d1d5f28cc38c907cb8e85085a296ef20b8
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903695"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464358"
 ---
 # <a name="create-a-shared-calendar"></a>Creare un calendario condiviso
 
@@ -41,6 +41,10 @@ Un calendario condiviso consente di visualizzare rapidamente quando le persone s
 1. È ora possibile visualizzare il calendario e i calendari per le persone aggiunte.
 1. Per verificare la disponibilità del gruppo, scegliere la **visualizzazione** Giorno.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
-[Gestire il calendario e i contatti in Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (articolo) Collaborazione tramite [posta](https://docs.microsoft.com/microsoft-365/admin/email/email-collaboration) elettronica (articolo) Panoramica dell'interfaccia di amministrazione di [Microsoft 365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (articolo)
+[Gestire il calendario e i contatti in Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (articolo)
+
+[Collaborazione tramite posta](../admin/email/email-collaboration.md) elettronica (articolo)
+
+[Panoramica dell'Microsoft 365 di amministrazione](admin-center-overview.md) (articolo)

@@ -18,17 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b706cb8dbd43d545768c1c573021b5ef401e3c09
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934562"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346403"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Impostare le preferenze per Microsoft Defender per Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Si applica a:**
 
@@ -106,6 +105,7 @@ Specificare i criteri di unione per le esclusioni. Può trattarsi di una combina
 #### <a name="scan-exclusions"></a>Esclusioni analisi
 
 Specificare le entità escluse dall'analisi. Le esclusioni possono essere specificate da percorsi completi, estensioni o nomi di file.
+Le esclusioni vengono specificate come matrice di elementi, l'amministratore può specificare il numero di elementi necessario, in qualsiasi ordine.
 
 |Sezione|Valore|
 |:---|:---|
@@ -136,6 +136,27 @@ Specificare il contenuto escluso dall'analisi tramite il percorso completo del f
 | **Data type** | Stringa |
 | **Valori possibili** | percorsi validi |
 | **Comments** | Applicabile solo se *$type* *è excludedPath* |
+
+## <a name="supported-exclusion-types"></a>Tipi di esclusione supportati
+
+La tabella seguente mostra i tipi di esclusione supportati da Defender per Endpoint su Mac.
+
+Esclusione | Definizione | Esempi
+---|---|---
+Estensione del file | Tutti i file con estensione, ovunque nel dispositivo | `.test`
+File | Un file specifico identificato dal percorso completo | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Cartella | Tutti i file nella cartella specificata (in modo ricorsivo) | `/var/log/`<br/>`/var/*/`
+Procedura | Un processo specifico (specificato dal percorso completo o dal nome del file) e tutti i file aperti da esso | `/bin/cat`<br/>`cat`<br/>`c?t`
+
+> [!IMPORTANT]
+> I percorsi precedenti devono essere collegamenti rigidi, non collegamenti simbolici, per essere esclusi correttamente. È possibile verificare se un percorso è un collegamento simbolico eseguendo `file <path-name>` .
+
+Le esclusioni di file, cartelle e processi supportano i caratteri jolly seguenti:
+
+Carattere jolly | Descrizione | Esempio | Corrispondenze | Non corrisponde
+---|---|---|---|---
+\* |    Corrisponde a qualsiasi numero di caratteri compresi nessuno (si noti che quando questo carattere jolly viene utilizzato all'interno di un percorso sostituirà una sola cartella) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
+? | Corrisponde a qualsiasi carattere singolo | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
 
 ##### <a name="path-type-file--directory"></a>Tipo di percorso (file/directory)
 
@@ -358,7 +379,7 @@ Specificare se gli utenti possono inviare commenti e suggerimenti a Microsoft an
 
 ### <a name="endpoint-detection-and-response-preferences"></a>Preferenze di risposta e rilevamento degli endpoint
 
-Gestire le preferenze del componente di rilevamento e risposta degli endpoint (EDR) di Microsoft Defender per Endpoint in macOS.
+Gestisci le preferenze del componente di rilevamento e risposta degli endpoint (EDR) di Microsoft Defender per Endpoint in macOS.
 
 |Sezione|Valore|
 |:---|:---|
@@ -416,7 +437,7 @@ Il profilo di configurazione seguente (o, nel caso di JAMF, un elenco di proprie
   - **Le applicazioni potenzialmente indesiderate sono** bloccate
   - **Le bombe di** archiviazione (file con una velocità di compressione elevata) vengono verificate in Microsoft Defender per i log degli endpoint
 - Abilitare gli aggiornamenti automatici delle funzionalità di intelligence per la sicurezza
-- Abilitare la protezione basata sul cloud
+- Abilitare la protezione fornita dal cloud
 - Abilitare l'invio automatico di esempi
 
 ### <a name="property-list-for-jamf-configuration-profile"></a>Elenco delle proprietà per il profilo di configurazione JAMF
@@ -577,6 +598,14 @@ I modelli seguenti contengono voci per tutte le impostazioni descritte in questo
             </dict>
             <dict>
                 <key>$type</key>
+                <string>excludedPath</string>
+                <key>isDirectory</key>
+                <true/>
+                <key>path</key>
+                <string>/Users/*/git</string>
+            </dict>
+            <dict>
+                <key>$type</key>
                 <string>excludedFileExtension</string>
                 <key>extension</key>
                 <string>pdf</string>
@@ -719,6 +748,14 @@ I modelli seguenti contengono voci per tutte le impostazioni descritte in questo
                         </dict>
                         <dict>
                             <key>$type</key>
+                            <string>excludedPath</string>
+                            <key>isDirectory</key>
+                            <true/>
+                            <key>path</key>
+                            <string>/Users/*/git</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
                             <string>excludedFileExtension</string>
                             <key>extension</key>
                             <string>pdf</string>
@@ -812,7 +849,7 @@ Dopo aver creato il profilo di configurazione per l'organizzazione, è possibile
 
 ### <a name="jamf-deployment"></a>Distribuzione JAMF
 
-Dalla console JAMF apri **Profili** di configurazione computer, passa al profilo di configurazione che vuoi usare, quindi  >  seleziona **Impostazioni personalizzate.** Crea una voce con `com.microsoft.wdav` come dominio di preferenza e carica il file *plist* prodotto in precedenza.
+Dalla console JAMF, aprire **Profili** di configurazione computer, passare al profilo di configurazione che si desidera utilizzare, quindi  >  selezionare **Impostazioni**. Crea una voce con `com.microsoft.wdav` come dominio di preferenza e carica il file *plist* prodotto in precedenza.
 
 >[!CAUTION]
 >È necessario immettere il dominio di preferenza corretto ( ); in caso contrario, le preferenze non verranno `com.microsoft.wdav` riconosciute da Microsoft Defender per Endpoint.
@@ -829,7 +866,7 @@ Dalla console JAMF apri **Profili** di configurazione computer, passa al profilo
 
 5. Apri il profilo di configurazione e carica il `com.microsoft.wdav.xml` file. Questo file è stato creato nel passaggio 3.
 
-6. Seleziona **OK**.
+6. Selezionare **OK**.
 
 7. Selezionare **Gestisci**  >  **assegnazioni**. Nella scheda **Includi** seleziona **Assegna a tutti gli utenti & Tutti i dispositivi**.
 

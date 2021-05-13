@@ -1,5 +1,5 @@
 ---
-title: Tabelle di dati nello schema di ricerca avanzata di Microsoft 365 Defender
+title: Tabelle dati nello schema di ricerca avanzata Microsoft 365 Defender
 description: Informazioni sulle tabelle nello schema di ricerca avanzata per comprendere i dati su cui è possibile eseguire query di ricerca delle minacce
 keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, dati
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0313d1e95682d52e44cf90360c8ef322f0cad5db
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932918"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470581"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendere schema di ricerca avanzato
 
@@ -58,8 +58,7 @@ Di seguito sono elencate tutte le tabelle dello schema. Ogni nome di tabella rim
 | Nome della tabella | Descrizione |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | File, indirizzi IP, URL, utenti o dispositivi associati agli avvisi |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Avvisi da Microsoft Defender per Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity, incluse le informazioni sulla gravità e la categorizzazione delle minacce  |
-| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Attività correlate ai file in app e servizi cloud |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Avvisi da Microsoft Defender per Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender per l'identità, incluse le informazioni sulla gravità e la categorizzazione delle minacce  |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Eventi che coinvolgono account e oggetti in Office 365 e altri servizi e app cloud |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Più tipi di evento, inclusi gli eventi attivati da controlli di sicurezza, ad esempio Windows Defender Antivirus e protezione dagli exploit |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Informazioni sui certificati dei file firmati ottenuti dagli eventi di verifica dei certificati sugli endpoint |
@@ -77,11 +76,11 @@ Di seguito sono elencate tutte le tabelle dello schema. Ogni nome di tabella rim
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Vulnerabilità software riscontrate nei dispositivi e elenco degli aggiornamenti della sicurezza disponibili che affrontano ogni vulnerabilità |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Knowledge base sulle vulnerabilità divulgate pubblicamente, anche se il codice di exploit è disponibile pubblicamente |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Informazioni sui file allegati ai messaggi di posta elettronica |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Eventi di posta elettronica di Microsoft 365, inclusi il recapito della posta elettronica e gli eventi di blocco |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Eventi di sicurezza che si verificano dopo il recapito, dopo che Microsoft 365 ha recapitato i messaggi di posta elettronica alla cassetta postale del destinatario |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 di posta elettronica, inclusi il recapito della posta elettronica e gli eventi di blocco |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Eventi di sicurezza che si verificano dopo il recapito, dopo Microsoft 365 recapitato i messaggi di posta elettronica alla cassetta postale del destinatario |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Informazioni sugli URL nei messaggi di posta elettronica |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). In questa tabella viene illustrata una serie di eventi correlati all'identità ed eventi di sistema nel controller di dominio. |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Informazioni sull'account da varie origini, tra cui Azure Active Directory |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Informazioni sull'account provenienti da varie fonti, tra cui Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Eventi di autenticazione in Active Directory e Microsoft online Services |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Query per oggetti Active Directory, ad esempio utenti, gruppi, dispositivi e domini |
 

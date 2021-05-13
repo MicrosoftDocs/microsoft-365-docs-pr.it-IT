@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli utenti che dispongono di account Microsoft personali possono guadagnare punti Microsoft Rewards in relazione alle ricerche di lavoro se è abilitata la funzionalità Collega AAD con Premi.
-ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8cbd88de530ec4aa566962bb74715dc9c417f296
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297069"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464343"
 ---
 # <a name="manage-microsoft-rewards"></a>Gestisci Microsoft Rewards
 
@@ -33,3 +33,13 @@ A meno che l'utente non acconsenta esplicitamente a questa funzionalità, il suo
 Per gli amministratori di organizzazioni didattiche con figli minori, è necessario un account Microsoft per i genitori per partecipare a Microsoft Rewards. L'account parentale non verrà associato all'account dell'organizzazione dello studente. Per altre informazioni sugli account Microsoft per i bambini, vedi [Consenso dei genitori e Account per bambini Microsoft.](https://support.microsoft.com/account-billing/c6951746-8ee5-8461-0809-fbd755cd902e)
 
 Questa funzionalità non è disponibile per gli utenti governativi. Gli amministratori devono assicurarsi che i criteri di conformità dell'organizzazione consentano l'uso di account Microsoft Rewards personali con ricerche di lavoro.
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Configurare Microsoft Search](/microsoftsearch/setup-microsoft-search.md) (articolo)
+
+[Le 12 attività principali per i team di sicurezza per supportare il lavoro da casa](../../security/top-security-tasks-for-remote-work.md) (articolo)
+
+[Novità di Microsoft 365](https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426) (articolo)
+
+

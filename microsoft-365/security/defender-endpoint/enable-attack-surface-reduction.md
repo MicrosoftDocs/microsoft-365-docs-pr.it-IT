@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc04db0c9fe8ee6d09efc9802ab4a747af0b3e9c
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326704"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345889"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Abilitare regole per la riduzione della superficie di attacco
 
@@ -38,12 +38,12 @@ ms.locfileid: "52326704"
 
 **Requisiti** Puoi impostare regole di riduzione della superficie di attacco per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
 
-- Windows 10 Pro, [versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
-- Windows 10 Enterprise, [versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- Windows 10 Pro versione [1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- Windows 10 Enterprise versione [1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
 - Windows Server, [versione 1803 (Canale semestraale)](/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Anche se le regole di riduzione della superficie di attacco non richiedono una licenza di [Windows E5,](/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)nonché funzionalità di creazione di report e configurazione nel Centro sicurezza [Microsoft 365.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Queste funzionalità avanzate non sono disponibili con una licenza di Windows Professional o Windows E3. Tuttavia, se hai queste licenze, puoi usare il Visualizzatore eventi e i registri di Microsoft Defender Antivirus per esaminare gli eventi delle regole di riduzione della superficie di attacco.
+Anche se le regole di riduzione della superficie di attacco non richiedono una licenza [Windows E5,](/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)nonché funzionalità di creazione di report e configurazione nel centro sicurezza [Microsoft 365.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Queste funzionalità avanzate non sono disponibili con una licenza Windows Professional o Windows E3. Tuttavia, se si dispone di tali licenze, è possibile utilizzare visualizzatore eventi e registri Antivirus Microsoft Defender per esaminare gli eventi delle regole di riduzione della superficie di attacco.
 
 Ogni regola asr contiene una delle quattro impostazioni seguenti:
 
@@ -53,12 +53,12 @@ Ogni regola asr contiene una delle quattro impostazioni seguenti:
 - **Avviso:** abilitare la regola asr ma consentire all'utente finale di ignorare il blocco
 
 > [!IMPORTANT]
-> Attualmente, la modalità avviso non è supportata per tre regole asr quando si configurano le regole asr in Microsoft Endpoint Manager (MEM). Per altre informazioni, vedi [Casi in cui la modalità avviso non è supportata.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
+> Attualmente, la modalità avviso non è supportata per tre regole asr quando si configurano le regole di ripristino asr in Microsoft Endpoint Manager (MEM). Per altre informazioni, vedi [Casi in cui la modalità avviso non è supportata.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-È consigliabile usare le regole asr con una licenza di Windows E5 (o una SKU di licenza simile) per sfruttare le funzionalità avanzate di monitoraggio e creazione di report disponibili in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender for Endpoint). Tuttavia, per altre licenze come Windows Professional o E3 che non hanno accesso alle funzionalità avanzate di monitoraggio e creazione di report, è possibile sviluppare strumenti di monitoraggio e creazione di report personalizzati oltre agli eventi generati in ogni endpoint quando vengono attivate le regole di registrazione asr (ad esempio, Inoltro eventi).
+È consigliabile usare le regole asr con una licenza di Windows E5 (o SKU di licenza simile) per sfruttare le funzionalità avanzate di monitoraggio e creazione di report disponibili in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender for Endpoint). Tuttavia, per altre licenze come Windows Professional o E3 che non hanno accesso alle funzionalità avanzate di monitoraggio e creazione di report, è possibile sviluppare strumenti di monitoraggio e creazione di report personalizzati oltre agli eventi generati in ogni endpoint quando vengono attivate le regole di ripristino del codice "AsR" (ad esempio, Inoltro eventi).
 
 > [!TIP]
-> Per altre informazioni sulle licenze di Windows, vedi [Licenze di Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) e ottieni la guida per i [contratti multilicenza per Windows 10.](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
+> Per ulteriori informazioni sulle licenze Windows, vedere [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) e ottenere la guida per contratti [multilicenza per Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 Puoi abilitare le regole di riduzione della superficie di attacco usando uno dei metodi seguenti:
 
@@ -68,7 +68,7 @@ Puoi abilitare le regole di riduzione della superficie di attacco usando uno dei
 - [Criteri di gruppo](#group-policy)
 - [PowerShell](#powershell)
 
-È consigliabile gestire a livello aziendale, ad esempio Intune o Microsoft Endpoint Manager. La gestione a livello aziendale sovrascriverà tutte le impostazioni di Criteri di gruppo o PowerShell in conflitto all'avvio.
+Enterprise è consigliata la gestione a livello di Microsoft Endpoint Manager, ad esempio Intune. Enterprise gestione a livello di utente sovrascriverà tutte le impostazioni di Criteri di gruppo o PowerShell in conflitto all'avvio.
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>Escludere file e cartelle dalle regole asr
 
@@ -88,9 +88,9 @@ Le procedure seguenti per l'abilitazione delle regole asr includono istruzioni s
 
 ## <a name="intune"></a>Intune
 
-1. Selezionare **Profili di configurazione** del  >  **dispositivo**. Scegliere un profilo di endpoint protection esistente o crearne uno nuovo. Per crearne uno nuovo, selezionare **Crea profilo** e immettere le informazioni per il profilo. Per **Tipo di profilo** selezionare Endpoint **protection.** Se è stato scelto un profilo esistente, selezionare **Proprietà** e quindi **Impostazioni.**
+1. Selezionare **Profili di configurazione** del  >  **dispositivo**. Scegliere un profilo di endpoint protection esistente o crearne uno nuovo. Per crearne uno nuovo, selezionare **Crea profilo** e immettere le informazioni per il profilo. Per **Tipo di profilo** selezionare Endpoint **protection.** Se è stato scelto un profilo esistente, selezionare **Proprietà** e quindi selezionare **Impostazioni**.
 
-2. Nel riquadro **Endpoint protection** seleziona Windows Defender **Exploit Guard** e quindi seleziona Riduzione della superficie **di attacco.** Selezionare l'impostazione desiderata per ogni regola asr.
+2. Nel riquadro **Endpoint protection** seleziona Windows Defender **Exploit Guard,** quindi seleziona **Riduzione della superficie di attacco.** Selezionare l'impostazione desiderata per ogni regola asr.
 
 3. In **Eccezioni di riduzione della superficie di attacco** immetti singoli file e cartelle. È inoltre possibile selezionare **Importa per** importare un file CSV contenente file e cartelle da escludere dalle regole asr. Ogni riga del file CSV deve essere formattata come segue:
 
@@ -128,7 +128,7 @@ Esempio:
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, vai a **Assets and Compliance**  >  **Endpoint Protection**  >  **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, andare a **Assets and Compliance**  >  **Endpoint Protection** Windows Defender  >  **Exploit Guard**.
 
 2. Selezionare **Home**  >  **Create Exploit Guard Policy**.
 
@@ -149,7 +149,7 @@ Esempio:
 
 2. Nell **'Editor Gestione Criteri di gruppo** passare a **Configurazione computer** e selezionare **Modelli amministrativi**.
 
-3. Espandi l'albero fino ai **componenti di Windows** Microsoft Defender  >  **Antivirus** Microsoft Defender Exploit Guard Riduzione della  >  **superficie**  >  **di attacco.**
+3. Espandere l'albero per **Windows componenti Antivirus Microsoft Defender** Microsoft Defender Exploit Guard riduzione della superficie  >    >    >  **di attacco.**
 
 4. Selezionare **Configura regole di riduzione della superficie di attacco** e selezionare **Abilitato.** È quindi possibile impostare il singolo stato per ogni regola nella sezione opzioni.
 
@@ -167,32 +167,32 @@ Esempio:
    > [!WARNING]
    > Non utilizzare le virgolette perché non sono supportate per la colonna **Nome valore** o **Valore.**
 
-## <a name="microsoft-endpoint-manager-custom-procedure"></a>Procedura personalizzata di Microsoft Endpoint Manager
+## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager personalizzata
 
-Puoi usare un'interfaccia di amministrazione di Microsoft Endpoint Manager (MEM) per configurare regole asr personalizzate.
+È possibile utilizzare un'interfaccia Microsoft Endpoint Manager (MEM) per configurare regole asr personalizzate.
 
-1. Aprire l'interfaccia di amministrazione di Microsoft Endpoint Manager (MEM). Nel menu **Home** fare clic su **Dispositivi,** selezionare **Profilo di configurazione** e quindi fare clic su Crea **profilo.**
+1. Aprire l'Microsoft Endpoint Manager di amministrazione (MEM). Nel menu **Home** fare clic su **Dispositivi,** selezionare **Profilo di configurazione** e quindi fare clic su Crea **profilo.**
 
    ![MEM Create Profile](images/mem01-create-profile.png)
 
 2. In **Crea profilo** selezionare quanto segue nei due elenchi a discesa seguenti:
 
-   - In **Piattaforma** seleziona **Windows 10 e versioni successive**
+   - In **Piattaforma** selezionare Windows 10 **e versioni successive**
    - In **Tipo di profilo** selezionare **Modelli**
 
    Selezionare **Personalizzato** e quindi fare clic su **Crea.**
 
    ![Attributi del profilo delle regole MEM](images/mem02-profile-attributes.png)
 
-3. Lo strumento Modello personalizzato viene aperto al **passaggio 1 Nozioni di base.** In **1 Nozioni di** base, in **Nome** digitare un nome per il modello e **in** Descrizione è possibile digitare una descrizione facoltativa.
+3. Lo strumento Modello personalizzato viene aperto al **passaggio 1 Nozioni di base.** In **1 Nozioni di** base, in **Nome** digitare un nome per il modello e **in** Descrizione è possibile digitare una descrizione (facoltativo).
 
    ![Attributi di base MEM](images/mem03-1-basics.png)
 
-4. Fare clic su **Avanti**. Step **2 Configuration settings opens.** Per Impostazioni URI OMA, fare clic su **Aggiungi.** Vengono ora visualizzate due opzioni: **Aggiungi** ed **Esporta**.
+4. Fare clic su **Avanti**. Step **2 Configuration settings opens.** Per l'URI OMA Impostazioni, fare clic su **Aggiungi.** Vengono ora visualizzate due opzioni: **Aggiungi** ed **Esporta**.
 
    ![Impostazioni di configurazione MEM](images/mem04-2-configuration-settings.png)
 
-5. Fare **di nuovo clic su** Aggiungi. Verrà **visualizzata la finestra di dialogo Aggiungi impostazioni URI OMA** riga. In **Aggiungi riga** eseguire le operazioni seguenti:
+5. Fare **di nuovo clic su** Aggiungi. Verrà visualizzata la finestra di dialogo Aggiungi **URI OMA Impostazioni** riga. In **Aggiungi riga** eseguire le operazioni seguenti:
 
    - In **Nome** digitare un nome per la regola.
    - In **Descrizione** digitare una breve descrizione.
@@ -223,7 +223,7 @@ Puoi usare un'interfaccia di amministrazione di Microsoft Endpoint Manager (MEM)
    - In **Proprietà** selezionare la proprietà a cui si desidera applicare la regola
    - In **Valore** immettere il valore applicabile o l'intervallo di valori
 
-   ![Regole di applicabilità MEM](images/mem07-5-applicability -rules.png)
+   ![Regole di applicabilità MEM](images/mem07-5-applicability-rules.png)
 
 10. Fare clic su **Avanti**. Nel passaggio **6 Rivedere e creare** esaminare le impostazioni e le informazioni selezionate e immesse e quindi fare clic su **Crea.**
 
@@ -241,7 +241,7 @@ Puoi usare un'interfaccia di amministrazione di Microsoft Endpoint Manager (MEM)
 > [!WARNING]
 > Se gestisci i computer e i dispositivi con Intune, Configuration Manager o un'altra piattaforma di gestione a livello aziendale, il software di gestione sovrascriverà tutte le impostazioni di PowerShell in conflitto all'avvio. Per consentire agli utenti di definire il valore tramite PowerShell, utilizzare l'opzione "Definito dall'utente" per la regola nella piattaforma di gestione.
 
-1. Digita **powershell** nel menu Start, fai clic con il pulsante destro **del** mouse Windows PowerShell e scegli Esegui **come amministratore.**
+1. Digitare **powershell** nel menu Start, fare clic con il pulsante destro **del** mouse Windows PowerShell e scegliere Esegui **come amministratore.**
 
 2. Digitare il cmdlet seguente:
 
@@ -260,6 +260,12 @@ Puoi usare un'interfaccia di amministrazione di Microsoft Endpoint Manager (MEM)
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
+
+    Per abilitare AsR Bloccare l'abuso di driver firmati vulnerabili sfruttati, utilizzare il cmdlet seguente:
+
+   ```PowerShell
+   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   ```
 
     Per disattivare le regole asr, utilizzare il cmdlet seguente:
 

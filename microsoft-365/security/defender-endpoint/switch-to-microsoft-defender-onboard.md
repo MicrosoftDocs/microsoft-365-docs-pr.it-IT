@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 6b3b9fda0060108bd6a3c48188ff6e89261be096
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 66d24f5a479a903c8d42d509f1bbe956293c9ac3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327247"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346341"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Passare a Microsoft Defender per Endpoint - Fase 3: onboard
 
@@ -42,15 +42,21 @@ ms.locfileid: "52327247"
 **Benvenuti nella fase 3 del [passaggio a Microsoft Defender per Endpoint.](switch-to-microsoft-defender-migration.md#the-migration-process)** Questa fase di migrazione include i passaggi seguenti:
 
 1. [Onboard dei dispositivi a Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
+
 2. [Eseguire un test di rilevamento](#run-a-detection-test).
+
 3. [Disinstallare la soluzione non Microsoft.](#uninstall-your-non-microsoft-solution)
+
 4. [Assicurati che Microsoft Defender for Endpoint sia in modalità attiva.](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode)
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Aggiungere dispositivi a Microsoft Defender for Endpoint
 
-1. Vai a Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) e accedi.
-2. Scegliere **Impostazioni**  >    >  **Onboarding gestione dispositivi**. 
+1. Vai al Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) e accedi.
+
+2. Scegliere **Impostazioni**  >    >  **Onboarding di Gestione dispositivi**. 
+
 3. **Nell'elenco Selezionare il sistema operativo per avviare il processo di onboarding** selezionare un sistema operativo. 
+
 4. In **Metodo di distribuzione** selezionare un'opzione. Segui i collegamenti e le istruzioni per eseguire l'onboardboard dei dispositivi dell'organizzazione. Hai bisogno di assistenza? Vedere [Metodi di onboarding](#onboarding-methods) (in questo articolo).
 
 ### <a name="onboarding-methods"></a>Metodi di onboarding
@@ -98,4 +104,5 @@ A tale scopo, visitare il sito degli scenari dimostrativi di Microsoft Defender 
 **Congratulazioni**! La migrazione a Microsoft Defender for Endpoint è stata [completata.](switch-to-microsoft-defender-migration.md#the-migration-process) 
 
 - [Visitare il dashboard delle operazioni](security-operations-dashboard.md) di sicurezza nella Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
+
 - [Gestire Microsoft Defender per Endpoint, dopo la migrazione.](manage-atp-post-migration.md)

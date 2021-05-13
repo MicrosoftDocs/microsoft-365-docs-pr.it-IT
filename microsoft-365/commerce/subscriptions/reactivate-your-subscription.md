@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come riattivare l'abbonamento alla scadenza, alla disabilitazione o all'annullamento.
 ms.date: 04/07/2021
-ms.openlocfilehash: 7f77a9782e9028521cbcefbdbffc49bc28db8e9c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333171"
+ms.locfileid: "52345143"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
@@ -65,6 +65,6 @@ Per riattivare una sottoscrizione, devi essere un amministratore globale o di fa
 
 ## <a name="related-content"></a>Contenuti correlati
 
-[Provare o acquistare un abbonamento a Microsoft 365 per le aziende](../try-or-buy-microsoft-365.md) (articolo)\
+[Provare o acquistare un abbonamento Microsoft 365 per le aziende](../try-or-buy-microsoft-365.md) (articolo)\
 [Rinnovare Microsoft 365 per le aziende](renew-your-subscription.md) (articolo)\
 [Annullare l'abbonamento](cancel-your-subscription.md) (articolo)

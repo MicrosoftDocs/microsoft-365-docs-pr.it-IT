@@ -18,18 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934526"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346391"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Risorse per Microsoft Defender per Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
+
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,7 +52,7 @@ Se è possibile riprodurre un problema, aumentare il livello di registrazione, e
 
 2. Riprodurre il problema
 
-3. Eseguire `sudo mdatp diagnostic create` il backup dei log di Microsoft Defender for Endpoint. I file verranno archiviati all'interno di un archivio ZIP. Questo comando stamperà anche il percorso del file per il backup al termine dell'operazione.
+3. Eseguire `sudo mdatp diagnostic create` il backup dei log di Microsoft Defender for Endpoint. I file verranno archiviati all'interno di .zip archivio. Questo comando stamperà anche il percorso del file per il backup al termine dell'operazione.
 
    > [!TIP]
    > Per impostazione predefinita, i log di diagnostica vengono salvati in `/Library/Application Support/Microsoft/Defender/wdavdiag/` . Per modificare la directory in cui vengono salvati i log di diagnostica, passare `--path [directory]` al comando seguente, sostituendo `[directory]` con la directory desiderata.
@@ -59,6 +60,7 @@ Se è possibile riprodurre un problema, aumentare il livello di registrazione, e
    ```bash
    sudo mdatp diagnostic create
    ```
+
    ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
@@ -68,6 +70,7 @@ Se è possibile riprodurre un problema, aumentare il livello di registrazione, e
    ```bash
    mdatp log level set --level info
    ```
+
    ```console
    Log level configured successfully
    ```
@@ -80,7 +83,7 @@ Il registro dettagliato verrà salvato in `/Library/Logs/Microsoft/mdatp/install
 
 ## <a name="uninstalling"></a>Disinstallazione
 
-Esistono diversi modi per disinstallare Microsoft Defender for Endpoint in macOS. Tieni presente che, anche se la disinstallazione gestita centralmente è disponibile in JAMF, non è ancora disponibile per Microsoft Intune.
+Esistono diversi modi per disinstallare Microsoft Defender for Endpoint in macOS. Tieni presente che, sebbene la disinstallazione gestita centralmente sia disponibile in JAMF, non è ancora disponibile per Microsoft Intune.
 
 ### <a name="interactive-uninstallation"></a>Disinstallazione interattiva
 
@@ -88,8 +91,7 @@ Esistono diversi modi per disinstallare Microsoft Defender for Endpoint in macOS
 
 ### <a name="from-the-command-line"></a>Dalla riga di comando
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
-- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
+- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
 
 ## <a name="configuring-from-the-command-line"></a>Configurazione dalla riga di comando
 
@@ -117,7 +119,7 @@ Le attività importanti, ad esempio il controllo delle impostazioni del prodotto
 |Protezione   |Eseguire un'analisi completa                             |`mdatp scan full`                                                                 |
 |Protezione   |Annullare un'analisi su richiesta in corso           |`mdatp scan cancel`                                                               |
 |Protezione   |Richiedere un aggiornamento di security intelligence     |`mdatp definitions update`                                                        |
-|EDR          |Aggiungi tag di gruppo al dispositivo. I tag EDR vengono utilizzati per la gestione dei gruppi di dispositivi. Per ulteriori informazioni, visitare https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|EDR          |Aggiungi tag di gruppo al dispositivo. EDR vengono usati per la gestione dei gruppi di dispositivi. Per ulteriori informazioni, visitare https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Rimuovere il tag di gruppo dal dispositivo               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |Aggiungere l'ID gruppo                               |`mdatp edr group-ids --group-id [group]`                                          |
 
@@ -158,4 +160,4 @@ Per abilitare il completamento automatico in zsh:
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Informazioni sul portale di Microsoft Defender for Endpoint
 
-[Le funzionalità EDR per macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sono ora disponibili nel blog di Microsoft Defender for Endpoint e forniscono indicazioni dettagliate su cosa aspettarsi in Microsoft Defender for Endpoint Security Center.
+[EDR funzionalità per macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sono ora disponibili, nel blog di Microsoft Defender for Endpoint, fornisce indicazioni dettagliate su cosa aspettarsi in Microsoft Defender for Endpoint Security Center.

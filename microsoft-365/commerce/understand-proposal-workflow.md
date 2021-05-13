@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Informazioni sulle proposte per l'acquisto di prodotti e servizi Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: c61fa53267f2fdb60e78a05cd89aa6f364cb2395
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 5dece5ccc0cc26b157ae0cc33ec9bb1fe44c44b3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332955"
+ms.locfileid: "52345083"
 ---
 # <a name="understand-the-proposal-workflow"></a>Informazioni sul flusso di lavoro della proposta
 
@@ -170,7 +170,7 @@ Dopo aver fatto l'ordine, riceverai una conferma con i passaggi successivi da es
 
 Se sei un nuovo cliente e hai acquistato prodotti Azure come parte della proposta, il passaggio successivo consiste nel configurare il nuovo account di fatturazione. Per informazioni su come, vedere [Configurare l'account di fatturazione per un Contratto per i clienti Microsoft.](/azure/cost-management-billing/manage/mca-setup-account)
 
-Se si è un cliente di Azure esistente con un Contratto Enterprise e si firma un contratto multicanalità per la prima volta, il passaggio successivo consiste nel conoscere le modifiche tra i contratti e come completare le attività con il nuovo account di fatturazione. Per ulteriori informazioni, vedere [Complete Contratto Enterprise tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
+Se si è un cliente di Azure esistente con un Enterprise Agreement e si firma un contratto multicanalità per la prima volta, il passaggio successivo consiste nel conoscere le modifiche tra i contratti e come completare le attività con il nuovo account di fatturazione. Per ulteriori informazioni, vedere [Complete Enterprise Agreement tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
 
 ## <a name="understand-invoicing"></a>Informazioni sulla fatturazione
 

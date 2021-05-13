@@ -15,55 +15,55 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Informazioni su come creare ed eseguire una query in un set di revisione per organizzare i dati per una revisione più efficiente in un caso avanzato di eDiscovery.
+description: Informazioni su come creare ed eseguire una query in un set di revisione per organizzare i dati per una revisione più efficiente in un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ead897d412af2356d8b57ab8494539a5ed9a019
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816569"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345801"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
 
-Nella maggior parte dei casi, sarà utile essere in grado di approfondire i dati in un set di revisione e organizzare tali dati per facilitare una revisione più efficiente. L'utilizzo di query in un set di revisione consente di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri della revisione.
+Nella maggior parte dei casi, sarà utile essere in grado di approfondire i dati in un set di recensioni e organizzare tali dati per facilitare una revisione più efficiente. L'utilizzo di query in un set di revisione consente di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri della revisione.
 
-## <a name="creating-and-running-a-query-in-a-review-set"></a>Creazione e esecuzione di una query in un set di Revisione
+## <a name="creating-and-running-a-query-in-a-review-set"></a>Creazione ed esecuzione di una query in un set di revisione
 
-Per creare ed eseguire una query sui documenti in un set di revisione, selezionare **nuova query** nel set di revisione. Dopo aver denominato la query e aver definito le condizioni, selezionare **Salva** per salvare ed eseguire la query. Per eseguire una query salvata in precedenza, selezionare una query salvata.
+Per creare ed eseguire una query sui documenti di un set di revisioni, selezionare **Nuova query** nel set di revisioni. Dopo aver definito la query e aver definito le condizioni, selezionare **Salva** per salvare ed eseguire la query. Per eseguire una query salvata in precedenza, selezionare una query salvata.
 
-![Esaminare le query di set](../media/AeDReviewSetQueries.png)
+![Esaminare le query impostate](../media/AeDReviewSetQueries.png)
 
-## <a name="building-a-review-set-query"></a>Creazione di una query del set di Revisione
+## <a name="building-a-review-set-query"></a>Creazione di una query del set di revisione
 
-È possibile creare una query utilizzando una combinazione di parole chiave, proprietà e condizioni nella condizione keywords. È inoltre possibile raggruppare le condizioni come blocco (denominato *gruppo di condizioni* ) per creare una query più complessa. Per un elenco e una descrizione delle proprietà dei metadati di cui è possibile eseguire la ricerca, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+È possibile creare una query utilizzando una combinazione di parole chiave, proprietà e condizioni nella condizione Parole chiave. È inoltre possibile raggruppare le condizioni come blocco ( denominato gruppo *di condizioni*) per creare una query più complessa. Per un elenco e una descrizione delle proprietà dei metadati che è possibile cercare, vedere [Campi dei metadati del documento in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ### <a name="conditions"></a>Condizioni
 
-Tutti i campi ricercabili in un set di revisione dispongono di una condizione corrispondente che è possibile utilizzare per creare la query.
+Ogni campo ricercabile in un set di revisione ha una condizione corrispondente che è possibile utilizzare per creare la query.
 
-Sono disponibili più tipi di condizioni:
+Esistono più tipi di condizioni:
 
-- FREETEXT: viene utilizzata una condizione FREETEXT per i campi di testo, ad esempio subject. È possibile elencare più termini di ricerca separandoli con una virgola.
+- Testo libero: per i campi di testo, ad esempio l'oggetto, viene utilizzata una condizione di testo libero. È possibile elencare più termini di ricerca separandoli con una virgola.
 
-- Data: viene utilizzata una condizione data per i campi data, ad esempio la data dell'Ultima modifica.
+- Data: per i campi data, ad esempio la data dell'ultima modifica, viene utilizzata una condizione di data.
 
-- Opzioni di ricerca: una condizione per le opzioni di ricerca fornirà un elenco di valori possibili per il campo specifico del set di revisione. Viene utilizzato per i campi, ad esempio sender, in cui è presente un numero finito di valori possibili nel set di revisione.
+- Opzioni di ricerca: una condizione delle opzioni di ricerca fornirà un elenco dei valori possibili per il campo specifico nel set di recensioni. Viene utilizzato per i campi, ad esempio il mittente, in cui è presente un numero limitato di valori possibili nel set di revisioni.
 
-- Keyword: una condizione di parola chiave è un'istanza specifica della condizione di FREETEXT che è possibile utilizzare per cercare i termini oppure utilizzare la lingua di query simile a KQL. Per ulteriori informazioni, vedere di seguito.
+- Parola chiave: una condizione di parola chiave è un'istanza specifica della condizione di testo libero che puoi usare per cercare termini o usare un linguaggio di query simile a KQL. Vedi di seguito per altri dettagli.
 
-### <a name="query-language"></a>Lingua query
+### <a name="query-language"></a>Linguaggio di query
 
-Oltre alle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella condizione keywords per creare la query. Il linguaggio di query per le query dei set di revisione supporta gli operatori booleani standard, ad esempio **e** , **o** , **non** e **vicino** . Supporta anche un carattere jolly con caratteri singoli (?) e un carattere jolly a più caratteri (*).
+Oltre alle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella condizione Keywords per creare la query. Il linguaggio di query per le query di set di revisione supporta gli operatori Boolean standard, ad **esempio AND**, **OR**, **NOT** e **NEAR.** Supporta inoltre un carattere jolly a carattere singolo (?) e un carattere jolly a più caratteri (*).
 
 ## <a name="filters"></a>Filtri
 
-Oltre alle query che è possibile salvare, è possibile utilizzare i filtri set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione. L'utilizzo dei filtri consente di affinare ulteriormente i risultati visualizzati da una query del set di revisione.
+Oltre alle query che è possibile salvare, è possibile utilizzare i filtri dei set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione. L'utilizzo dei filtri consente di perfezionare ulteriormente i risultati visualizzati da una query del set di revisione.
 
 ![Esaminare i filtri impostati](../media/AeDReviewSetFilters.png)
 
 I filtri differiscono dalle query in due modi significativi:
 
-- I filtri sono transitori. Non vengono mantenuti oltre la sessione esistente. In altre parole, non è possibile salvare un filtro. Le query vengono salvate nel set di revisione e vengono accessibili ogni volta che si apre il set di revisione.
+- I filtri sono temporanei. Non vengono mantenuti oltre la sessione esistente. In altre parole, non è possibile salvare un filtro. Le query vengono salvate nel set di revisione e vi accedono ogni volta che si apre il set di revisioni.
 
-- I filtri sono sempre additivi. I filtri vengono applicati oltre alla query del set di revisione corrente. L'applicazione di una query diversa sostituirà i risultati restituiti dalla query corrente.
+- I filtri sono sempre additivi. I filtri vengono applicati in aggiunta alla query corrente dell'insieme da rivedere. L'applicazione di una query diversa sostituirà i risultati restituiti dalla query corrente.

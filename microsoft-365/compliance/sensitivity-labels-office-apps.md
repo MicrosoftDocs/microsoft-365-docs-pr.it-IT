@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9755542b608c8ed7d3cd93bebbd764fd56b9768
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332715"
+ms.locfileid: "52345765"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -92,7 +92,7 @@ I numeri elencati indicano la versione minima delle applicazioni di Office neces
 |[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Sì                |
 |[Controllare le attività degli utenti correlate alle etichette](data-classification-activity-explorer.md) | 2011+ | In revisione | In revisione           | In revisione               | In revisione |
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | In revisione           | In revisione               | Sì |
-|[Impostazioni diverse per l'etichetta predefinita e l'etichetta obbligatoria](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | In distribuzione in anteprima: [Canale beta](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Sì |
+|[Impostazioni diverse per l'etichetta predefinita e l'etichetta obbligatoria](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Sì |
 |
 
 **Note a piè di pagina:**

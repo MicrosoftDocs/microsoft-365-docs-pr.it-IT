@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 4b7315cbb8704b691ce4f3d6b96958f18248b478
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 2bd719377e36cf608a0fe75078ab8bef004ad92e
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952633"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346329"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 
@@ -34,7 +34,7 @@ ms.locfileid: "51952633"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - Azure
 
-In questo articolo vengono descritti i criteri consigliati comuni per la protezione dell'accesso ai servizi cloud di Microsoft 365, incluse le applicazioni locali pubblicate con il proxy di applicazione di Azure Active Directory (Azure AD).
+In questo articolo vengono descritti i criteri consigliati comuni per la protezione dell'accesso ai servizi cloud di Microsoft 365, incluse le applicazioni locali pubblicate con proxy di applicazione Azure Active Directory (Azure AD).
 
 In questa guida viene illustrato come distribuire i criteri consigliati in un ambiente appena effettuato il provisioning. La configurazione di questi criteri in un ambiente lab separato consente di comprendere e valutare i criteri consigliati prima di implementare l'implementazione negli ambienti di preproduzione e produzione. Il nuovo ambiente di cui è stato eseguito il provisioning può essere solo cloud o ibrido per soddisfare le esigenze di valutazione.
 
@@ -46,7 +46,7 @@ Nel diagramma seguente viene illustrato l'insieme consigliato di criteri. Mostra
 
 Ecco un riepilogo PDF di una pagina con collegamenti ai singoli criteri:
 
-[![Immagine del pollice per l'identità e la protezione dei dispositivi per gli stampati di Microsoft 365](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download in formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Immagine di scorrimento per identità e protezione del dispositivo per Microsoft 365 stampati](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download in formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 Il resto di questo articolo descrive come configurare questi criteri.
 
@@ -55,7 +55,7 @@ Il resto di questo articolo descrive come configurare questi criteri.
 
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine elencato in questa tabella. Tuttavia, i criteri MFA per livelli di protezione sensibili e altamente regolamentati possono essere implementati in qualsiasi momento.
 
-|Livello di protezione|Criteri|Ulteriori informazioni|Licenze|
+|Livello di protezione|Criteri|Altre informazioni|Licenze|
 |---|---|---|---|
 |**Protezione di base**|[Richiedi autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con il componente aggiuntivo E5 Security|
 ||[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-multi-factor)|I client che non utilizzano l'autenticazione moderna possono ignorare i criteri di accesso condizionale, quindi è importante bloccarlo.|Microsoft 365 E3 o E5|
@@ -63,9 +63,9 @@ Per ottenere il tempo necessario per eseguire queste attività, è consigliabile
 ||[Applicare la protezione dei dati dei criteri di protezione delle applicazioni (APP)](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 o E5|
 ||[Richiedere app approvate e protezione delle app](#require-approved-apps-and-app-protection)|Applica la protezione delle app per dispositivi mobili per telefoni e tablet con iOS, iPadOS o Android.|Microsoft 365 E3 o E5|
 ||[Definire i criteri di conformità dei dispositivi](#define-device-compliance-policies)|Un criterio per ogni piattaforma.|Microsoft 365 E3 o E5|
-||[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applica la gestione intune dei PC con Windows o MacOS.|Microsoft 365 E3 o E5|
+||[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applica la gestione di Intune dei PC Windows o MacOS.|Microsoft 365 E3 o E5|
 |**Sensibili**|[Richiedi autenticazione a più fattori quando il rischio di accesso è *basso,* *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con il componente aggiuntivo E5 Security|
-||[Richiedere PC e *dispositivi* mobili conformi](#require-compliant-pcs-and-mobile-devices)|Applica la gestione di Intune sia per PC (Windows o MacOS) che per telefoni o tablet (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
+||[Richiedere PC e *dispositivi* mobili conformi](#require-compliant-pcs-and-mobile-devices)|Applica la gestione di Intune per PC (Windows o MacOS) e telefoni o tablet (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
 |**Riservatezza elevata**|[*Richiedi* sempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
 |
 
@@ -91,11 +91,11 @@ Ecco i risultati:
 
   In questo caso, i membri del gruppo Top Secret Project X corrispondono ai criteri di accesso condizionale di base e altamente regolamentati. I controlli di accesso per entrambi i criteri vengono combinati. Poiché il controllo di accesso per i criteri di accesso condizionale altamente regolamentati è più restrittivo, viene utilizzato.
 
-Prestare attenzione quando si applicano livelli di protezione superiori a gruppi e utenti. Ad esempio, ai membri del gruppo Top Secret Project X verrà richiesto di utilizzare l'autenticazione a più fattori ogni volta che effettuano l'accesso, anche se non stanno lavorando al contenuto altamente regolamentato per Project X.
+Prestare attenzione quando si applicano livelli di protezione superiori a gruppi e utenti. Ad esempio, ai membri del gruppo Top Secret Project X verrà richiesto di utilizzare la MFA ogni volta che a loro volta accederanno, anche se non stanno lavorando al contenuto altamente regolamentato per Project X.
 
-Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati come gruppi di Microsoft 365. Ciò è importante per la distribuzione delle etichette di riservatezza durante la protezione dei documenti in Microsoft Teams e SharePoint.
+Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati Microsoft 365 gruppi. Ciò è importante per la distribuzione delle etichette di riservatezza durante la protezione dei documenti in Microsoft Teams e SharePoint.
 
-![Esempio di creazione di un gruppo di Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![Esempio di creazione di un Microsoft 365 gruppo](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Richiedi autenticazione a più fattori in base al rischio di accesso
 
@@ -104,7 +104,7 @@ Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono esser
 Dopo la registrazione degli utenti, è possibile richiedere l'autenticazione a più fattori per l'accesso con un nuovo criterio di accesso condizionale.
 
 1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le proprie credenziali.
-2. Nell'elenco dei servizi di Azure scegliere **Azure Active Directory.**
+2. Nell'elenco dei servizi di Azure scegliere **Azure Active Directory**.
 3. **Nell'elenco Gestisci** scegliere **Sicurezza** e quindi **Accesso condizionale.**
 4. Scegliere **Nuovo criterio** e digitare il nome del nuovo criterio.
 
@@ -177,7 +177,7 @@ Infine, selezionare **Attivato** per **Abilita criterio** e quindi scegliere **C
 
 Prendi in considerazione [l'uso dello](/azure/active-directory/active-directory-conditional-access-whatif) strumento What if per testare il criterio.
 
-Per Exchange Online, è possibile utilizzare i criteri di autenticazione per disabilitare l'autenticazione di [base,](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)che forza tutte le richieste di accesso client a utilizzare l'autenticazione moderna.
+Ad Exchange Online, è possibile utilizzare i criteri di autenticazione per disabilitare l'autenticazione di [base,](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)che forza tutte le richieste di accesso client a utilizzare l'autenticazione moderna.
 
 ## <a name="high-risk-users-must-change-password"></a>Gli utenti a rischio elevato devono modificare la password
 
@@ -215,24 +215,24 @@ Gli APP definiscono le app consentite e le azioni che possono eseguire con i dat
 
 Il framework di protezione dei dati APP è organizzato in tre livelli di configurazione distinti, con ogni livello che si esercite al di fuori del livello precedente:
 
-- **La protezione dei dati di base** aziendale (livello 1) garantisce che le app siano protette con un PIN e crittografate ed esegua operazioni di cancellazione selettiva. Per i dispositivi Android, questo livello convalida l'attestazione del dispositivo Android. Si tratta di una configurazione entry level che fornisce un controllo di protezione dei dati simile nei criteri cassetta postale di Exchange Online e introduce l'IT e la popolazione di utenti in APP.
-- **Enterprise enhanced data protection** (Level 2) introduce meccanismi di prevenzione della perdita di dati app e requisiti minimi del sistema operativo. Questa è la configurazione applicabile alla maggior parte degli utenti mobili che accedono ai dati aziendali o dell'istituto di istruzione.
-- **Enterprise high data protection** (Level 3) introduce meccanismi avanzati di protezione dei dati, una configurazione pin avanzata e APP Mobile Threat Defense. Questa configurazione è preferibile per gli utenti che accedono a dati ad alto rischio.
+- **Enterprise protezione dei dati** di base (livello 1) garantisce che le app siano protette con un PIN e crittografate ed esegua operazioni di cancellazione selettiva. Per i dispositivi Android, questo livello convalida l'attestazione del dispositivo Android. Si tratta di una configurazione di livello di ingresso che fornisce un controllo di protezione dei dati simile nei criteri Exchange Online cassetta postale e introduce l'IT e la popolazione di utenti in APP.
+- **Enterprise protezione avanzata dei dati** (livello 2) introduce meccanismi di prevenzione della perdita di dati APP e requisiti minimi del sistema operativo. Questa è la configurazione applicabile alla maggior parte degli utenti mobili che accedono ai dati aziendali o dell'istituto di istruzione.
+- **Enterprise protezione dei** dati elevata (livello 3) introduce meccanismi avanzati di protezione dei dati, una configurazione pin avanzata e APP Mobile Threat Defense. Questa configurazione è preferibile per gli utenti che accedono a dati ad alto rischio.
 
 Per visualizzare i suggerimenti specifici per ogni livello di configurazione e le app minime che devono essere protette, consulta Framework di protezione dei dati usando i criteri [di protezione delle app.](/mem/intune/apps/app-protection-framework)
 
 Usando i principi descritti [in](microsoft-365-policies-configurations.md)Configurazioni di identità e accesso ai dispositivi, i livelli di protezione di base e sensibili sono strettamente associati alle impostazioni di protezione avanzata dei dati aziendali di livello 2. Il livello di protezione altamente regolamentato è strettamente associato alle impostazioni di protezione dei dati elevata di livello 3 aziendale.
 
-|Livello di protezione|Criteri di protezione delle app|Ulteriori informazioni|
+|Livello di protezione|Criteri di protezione delle app|Altre informazioni|
 |---|---|---|
 |Protezione di base|[Protezione avanzata dei dati di livello 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Le impostazioni dei criteri applicate nel livello 2 includono tutte le impostazioni dei criteri consigliate per il livello 1 e aggiungono o aggiornano solo le impostazioni dei criteri seguenti per implementare più controlli e una configurazione più sofisticata rispetto al livello 1.|
 |Dati sensibili|[Protezione avanzata dei dati di livello 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Le impostazioni dei criteri applicate nel livello 2 includono tutte le impostazioni dei criteri consigliate per il livello 1 e aggiungono o aggiornano solo le impostazioni dei criteri seguenti per implementare più controlli e una configurazione più sofisticata rispetto al livello 1.|
 |Altamente regolamentato|[Livello 3 di protezione dei dati elevata aziendale](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Le impostazioni dei criteri applicate al livello 3 includono tutte le impostazioni dei criteri consigliate per i livelli 1 e 2 e aggiungono o aggiornano solo le impostazioni dei criteri seguenti per implementare più controlli e una configurazione più sofisticata rispetto al livello 2.|
 |
 
-Per creare un nuovo criterio di protezione delle app per ogni piattaforma (iOS e Android) in Microsoft Endpoint Manager usando le impostazioni del framework di protezione dei dati, puoi:
+Per creare un nuovo criterio di protezione delle app per ogni piattaforma (iOS e Android) Microsoft Endpoint Manager le impostazioni del framework di protezione dei dati, puoi:
 
-1. Creare manualmente i criteri seguendo la procedura descritta in Come creare e distribuire i criteri di protezione delle [app con Microsoft Intune.](/mem/intune/apps/app-protection-policies)
+1. Creare manualmente i criteri seguendo la procedura descritta in Come creare e distribuire i criteri di protezione [delle app con Microsoft Intune](/mem/intune/apps/app-protection-policies).
 2. Importare i modelli JSON di [Intune App Protection Policy Configuration Framework](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) con gli script di [PowerShell di Intune.](https://github.com/microsoftgraph/powershell-intune-samples)
 
 ## <a name="require-approved-apps-and-app-protection"></a>Richiedi app approvate e protezione APP
@@ -241,14 +241,14 @@ Per applicare i criteri di protezione APP applicati in Intune, è necessario cre
 
 L'applicazione dei criteri di protezione app richiede un set di criteri descritti in Richiedi criteri di protezione delle app per l'accesso [alle app cloud con accesso condizionale.](/azure/active-directory/conditional-access/app-protection-based-conditional-access) Questi criteri sono inclusi in questo set consigliato di criteri di configurazione di identità e accesso.
 
-Per creare i criteri di accesso condizionale che richiedono app approvate e protezione app, seguire "Passaggio 1: Configurare un criterio di accesso condizionale di Azure AD per Microsoft 365" nello scenario 1: le app [di Microsoft 365](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)richiedono app approvate con criteri di protezione delle app, che consentono a Outlook per iOS e Android, ma bloccano la connessione dei client Exchange ActiveSync OAuth a Exchange Online.
+Per creare i criteri di accesso condizionale che richiedono app approvate e protezione app, seguire "Passaggio 1: Configurare un criterio di accesso condizionale di Azure AD per Microsoft 365" nello [scenario 1:](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)le app Microsoft 365 richiedono app approvate con criteri di protezione delle app, che consentono Outlook per iOS e Android, ma impedisce ai client Exchange ActiveSync di connettersi a Exchange Online.
 
    > [!NOTE]
-   > Questo criterio garantisce agli utenti mobili di accedere a tutti gli endpoint di Office usando le app applicabili.
+   > Questo criterio garantisce agli utenti mobili di accedere a Office endpoint usando le app applicabili.
 
-Se si abilita l'accesso da dispositivi mobili a Exchange Online, implementare Block [ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), che impedisce ai client Exchange ActiveSync di utilizzare l'autenticazione di base di connettersi a Exchange Online. Questo criterio non è illustrato nell'illustrazione nella parte superiore di questo articolo. Viene descritto e illustrato in Suggerimenti per i criteri [per la protezione della posta elettronica.](secure-email-recommended-policies.md)
+Se si abilita l'accesso mobile Exchange Online, implementare Block [ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), che impedisce ai client Exchange ActiveSync di utilizzare l'autenticazione di base di connettersi a Exchange Online. Questo criterio non è illustrato nell'illustrazione nella parte superiore di questo articolo. Viene descritto e illustrato in Suggerimenti per i criteri [per la protezione della posta elettronica.](secure-email-recommended-policies.md)
 
-Per creare i criteri di accesso condizionale che richiedono Edge per iOS e Android, seguire "Passaggio 2: Configurare un criterio di accesso condizionale di Azure AD per Microsoft 365" nello [scenario 2:](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)le app del browser richiedono app approvate con criteri di protezione delle app, che consentono a Edge per iOS e Android, ma impedisce ad altri web browser di dispositivi mobili di connettersi agli endpoint di Microsoft 365.
+Per creare i criteri di accesso condizionale che richiedono Edge per iOS e Android, seguire "Passaggio 2: Configurare un criterio di accesso condizionale di Azure AD per Microsoft 365" in [Scenario 2: Le](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)app del browser richiedono app approvate con criteri di protezione delle app, che consentono a Edge per iOS e Android, ma impedisce ad altri web browser di dispositivi mobili di connettersi agli endpoint Microsoft 365.
 
  Questi criteri sfruttano i controlli di [concessione Richiedi app client approvata](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) e [Richiedi criteri di protezione delle app](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
@@ -271,7 +271,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 ## <a name="define-device-compliance-policies"></a>Definire i criteri di conformità dei dispositivi
 
-I criteri di conformità dei dispositivi definiscono i requisiti che i dispositivi devono soddisfare per essere determinati come conformi. I criteri di conformità dei dispositivi intune vengono creati dall'interfaccia di amministrazione di Microsoft Endpoint Manager.
+I criteri di conformità dei dispositivi definiscono i requisiti che i dispositivi devono soddisfare per essere determinati come conformi. I criteri di conformità dei dispositivi intune vengono creati dall'Microsoft Endpoint Manager di amministrazione.
 
 Devi creare un criterio per ogni piattaforma PC, telefono o tablet:
 
@@ -282,7 +282,7 @@ Devi creare un criterio per ogni piattaforma PC, telefono o tablet:
 - Windows 8.1 e versioni successive
 - Windows 10 e versioni successive
 
-Per creare criteri di conformità dei dispositivi, accedere all'interfaccia di amministrazione di [Microsoft Endpoint Manager](https://endpoint.microsoft.com) con le credenziali di amministratore e quindi passare a **Criteri** di conformità \>  \> **dispositivi**. Selezionare **Crea criterio**.
+Per creare criteri di conformità dei dispositivi, accedere [all'interfaccia](https://endpoint.microsoft.com) di amministrazione di Microsoft Endpoint Manager con le credenziali di amministratore e quindi passare a **Criteri** di conformità \>  \> **dispositivi**. Selezionare **Crea criterio**.
 
 Per distribuire i criteri di conformità dei dispositivi, è necessario assegnare tali criteri ai gruppi di utenti. È possibile assegnare un criterio dopo aver creato e salvato il criterio. Nell'interfaccia di amministrazione seleziona il criterio e quindi seleziona **Assegnazioni.** Dopo aver selezionato i gruppi che si desidera ricevere il criterio, selezionare **Salva** per salvare l'assegnazione di gruppo e distribuire il criterio.
 
@@ -292,7 +292,7 @@ Per istruzioni dettagliate sulla creazione di criteri di conformità in Intune, 
 
 Le impostazioni seguenti sono consigliate per i PC che eseguono Windows 10 e versioni successive, come configurato nel **Passaggio 2: Impostazioni** di conformità , del processo di creazione dei criteri.
 
-Per le regole di > di valutazione del servizio di attestazione dell'integrità di **Windows,** vedi questa tabella.
+Per le regole di valutazione > Windows integrità del servizio di **attestazione** dell'integrità, vedere questa tabella.
 
 |Proprietà|Valore|Azione|
 |---|---|---|
@@ -320,18 +320,18 @@ Per **Sicurezza del sistema**, vedere questa tabella.
 |Crittografia|Crittografia dell'archiviazione dei dati nel dispositivo|Richiedi|Seleziona|
 |Sicurezza dei dispositivi|Firewall|Richiedi|Seleziona|
 ||Antivirus|Richiedi|Seleziona|
-||Antispyware|Richiedi|Seleziona <p> Questa impostazione richiede una soluzione Anti-Spyware registrata nel Centro sicurezza Windows.|
+||Antispyware|Richiedi|Seleziona <p> Questa impostazione richiede una soluzione Anti-Spyware registrata con Sicurezza di Windows Center.|
 |Defender|Microsoft Defender Antimalware|Richiedi|Seleziona|
-||Versione minima di Microsoft Defender Antimalware||Tipo <p> Supportato solo per desktop Windows 10. Microsoft consiglia versioni non superiori a cinque rispetto alla versione più recente.|
+||Versione minima di Microsoft Defender Antimalware||Tipo <p> Supportato solo per Windows 10 desktop. Microsoft consiglia versioni non superiori a cinque rispetto alla versione più recente.|
 ||Firma antimalware di Microsoft Defender aggiornata|Richiedi|Seleziona|
-||Protezione in tempo reale|Richiedi|Seleziona <p> Supportato solo per desktop Windows 10|
+||Protezione in tempo reale|Richiedi|Seleziona <p> Supportato solo per Windows 10 desktop|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender per endpoint
 
 |Tipo|Proprietà|Valore|Azione|
 |---|---|---|---|
-|Regole di Microsoft Defender per endpoint nell'interfaccia di amministrazione di Microsoft Endpoint Manager|[Richiedere che il dispositivo sia in corrispondenza o sotto il punteggio di rischio del computer](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medio|Seleziona|
+|Regole di Microsoft Defender per endpoint nell'Microsoft Endpoint Manager di amministrazione|[Richiedere che il dispositivo sia in corrispondenza o sotto il punteggio di rischio del computer](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medio|Seleziona|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Richiedi PC conformi (ma non telefoni e tablet conformi)
@@ -341,7 +341,7 @@ Prima di aggiungere un criterio per richiedere PC conformi, assicurati di regist
 Per richiedere PC conformi:
 
 1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le proprie credenziali.
-2. Nell'elenco dei servizi di Azure scegliere **Azure Active Directory.**
+2. Nell'elenco dei servizi di Azure scegliere **Azure Active Directory**.
 3. **Nell'elenco Gestisci** scegliere **Sicurezza** e quindi **Accesso condizionale.**
 4. Scegliere **Nuovo criterio** e digitare il nome del nuovo criterio.
 
@@ -351,7 +351,7 @@ Per richiedere PC conformi:
 
 7. In **Includi** scegli **Seleziona app > Seleziona** e quindi seleziona le app desiderate nell'elenco App **cloud.** Ad esempio, selezionare Exchange Online. Al **termine, scegliere** Seleziona.
 
-8. Per richiedere PC conformi (ma non telefoni e tablet conformi), in **Assegnazioni** scegliere Condizioni **> Piattaforme dispositivo**. Selezionare **Sì** per **Configura**. Scegli **Seleziona piattaforme dispositivo,** seleziona **Windows** e **macOS** e quindi scegli **Fine.**
+8. Per richiedere PC conformi (ma non telefoni e tablet conformi), in **Assegnazioni** scegliere Condizioni **> Piattaforme dispositivo**. Selezionare **Sì** per **Configura**. Scegli **Seleziona piattaforme dispositivo,** **seleziona** Windows **e macOS** e quindi scegli **Fine.**
 
 9. In **Controlli di accesso** scegliere **Concedi** .
 
@@ -367,7 +367,7 @@ Per richiedere PC conformi:
 Per richiedere la conformità per tutti i dispositivi:
 
 1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le proprie credenziali.
-2. Nell'elenco dei servizi di Azure scegliere **Azure Active Directory.**
+2. Nell'elenco dei servizi di Azure scegliere **Azure Active Directory**.
 3. **Nell'elenco Gestisci** scegliere **Sicurezza** e quindi **Accesso condizionale.**
 4. Scegliere **Nuovo criterio** e digitare il nome del nuovo criterio.
 

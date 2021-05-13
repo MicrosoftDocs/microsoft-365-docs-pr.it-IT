@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Informazioni dettagliate di rete (anteprima)
+title: Microsoft 365 Informazioni dettagliate sulla rete
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 Informazioni dettagliate di rete (anteprima)
-ms.openlocfilehash: ca665f4e492b071e5a387ffde0efae8336bd96bc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft 365 Informazioni dettagliate sulla rete
+ms.openlocfilehash: 10b1c66a8f9aae555c2841b2b290f341bec3c7ec
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245781"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470557"
 ---
-# <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Informazioni dettagliate di rete (anteprima)
+# <a name="microsoft-365-network-insights"></a>Microsoft 365 Informazioni dettagliate sulla rete
 
 **Le informazioni dettagliate** di rete sono metriche sulle prestazioni raccolte dal tenant Microsoft 365 e disponibili per la visualizzazione solo da parte degli utenti amministrativi nel tenant. Le informazioni dettagliate vengono visualizzate nell'Microsoft 365 admin center all'indirizzo <https://portal.microsoft.com/adminportal/home#/networkperformance> .
 

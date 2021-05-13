@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: eac7de88e6d4c09e6807edbbd35d6ccc4718c671
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296696"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464334"
 ---
 # <a name="what-is-a-domain"></a>Cos'è un dominio?
 
@@ -58,5 +58,13 @@ Se si è già proprietari di un *dominio come you@yourcompany. <span> com* puoi 
 ## <a name="feeling-stuck"></a>Serve aiuto?
 
 Chiamare il supporto Tecnico Microsoft - [Assistenza per la configurazione di un dominio](../../business-video/get-help-support.md)
-  
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Acquistare un dominio](buy-a-domain-name.md) (articolo)
+
+[Aggiungere un dominio a Microsoft 365](../setup/add-domain.md) (articolo)
+
+[Pilota Microsoft 365 dal dominio personalizzato](../misc/pilot-microsoft-365-from-my-custom-domain.md) (articolo)
+
 

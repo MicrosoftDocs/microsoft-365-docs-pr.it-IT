@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come gestire le sottoscrizioni di iscrizione self-service gratuite per l'organizzazione.
 ms.date: 03/17/2021
-ms.openlocfilehash: b469515a649399c71ef64ba2567dfa376f21e9a7
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333219"
+ms.locfileid: "52345131"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Gestire le sottoscrizioni di iscrizione self-service
 
@@ -58,4 +58,4 @@ Utilizzare il cmdlet [**Set-MsolCompanySettings**](/powershell/module/msonline/s
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Ho una sottoscrizione di iscrizione self-service che blocca l'eliminazione della directory
 
-I prodotti di iscrizione self-service a cui i singoli utenti possono iscriversi possono anche creare un utente guest per l'autenticazione nella directory di Azure AD. Per evitare la perdita di dati, questi prodotti self-service bloccano le eliminazioni delle directory fino a quando non vengono completamente eliminati dalla directory. Possono essere eliminati solo dall'amministratore di Azure AD. Per ulteriori informazioni, vedere [Eliminare una directory in Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-delete-howto)
+I prodotti di iscrizione self-service a cui i singoli utenti possono iscriversi possono anche creare un utente guest per l'autenticazione nella directory di Azure AD. Per evitare la perdita di dati, questi prodotti self-service bloccano le eliminazioni delle directory fino a quando non vengono completamente eliminati dalla directory. Possono essere eliminati solo dall'amministratore di Azure AD. Per ulteriori informazioni, vedere [Delete a directory in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).

@@ -17,19 +17,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934298"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346415"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurare e convalidare le esclusioni per Microsoft Defender per Endpoint su Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Si applica a:**
+
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +38,7 @@ ms.locfileid: "51934298"
 In questo articolo vengono fornite informazioni su come definire le esclusioni applicabili alle analisi su richiesta e sulla protezione e il monitoraggio in tempo reale.
 
 > [!IMPORTANT]
-> Le esclusioni descritte in questo articolo non si applicano ad altre funzionalità di Defender per Endpoint su Linux, tra cui il rilevamento e la risposta degli endpoint (EDR). I file esclusi utilizzando i metodi descritti in questo articolo possono comunque attivare avvisi EDR e altri rilevamenti.
+> Le esclusioni descritte in questo articolo non si applicano ad altre funzionalità di Defender per Endpoint su Linux, tra cui il rilevamento e la risposta degli endpoint (EDR). I file esclusi utilizzando i metodi descritti in questo articolo possono comunque attivare EDR avvisi e altri rilevamenti.
 
 Puoi escludere determinati file, cartelle, processi e file aperti dal processo da analisi di Defender for Endpoint in Linux.
 

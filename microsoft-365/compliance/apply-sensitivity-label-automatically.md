@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: d0745ac2e4d5b78b40746fd0593a9af18e691021
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: f5281255db48b61e7cf21a1ac8d6b5bdd18ebc20
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326831"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332979"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -73,9 +73,9 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     - Se sono presenti regole per il flusso di posta di Exchange o criteri di prevenzione della perdita dei dati che applicano la crittografia IRM: quando il contenuto viene identificato da queste regole o criteri e da un criterio di applicazione automatica di etichette, l'etichetta viene applicata. Se quell'etichetta applica la crittografia, le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati vengono ignorate. Se invece quella etichetta non applica la crittografia, in aggiunta all'etichetta vengono applicate le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati.
     - I messaggi di posta elettronica con crittografia IRM senza etichetta verranno sostituiti da un'etichetta con qualsiasi impostazione di crittografia se esiste una corrispondenza usando l'etichettatura automatica.
     - La posta in arrivo viene etichettata quando esiste una corrispondenza con le condizioni di etichettatura automatica:
-        - Se l'etichetta è configurata per la [crittografia](encryption-sensitivity-labels.md), la crittografia non viene applicata.
+        - Se l'etichetta è configurata per la [crittografia](encryption-sensitivity-labels.md), viene applicata tale crittografia. Tuttavia, questa configurazione al momento non è supportata.
         - Se l'etichetta è configurata per l'applicazione di [contrassegni dinamici](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), tenere presente che questo può risultare in nomi di persone esterne all'organizzazione.
-    - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è la persona che invia il messaggio di posta elettronica.
+    - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è la persona che invia il messaggio di posta elettronica. Al momento non è possibile impostare un proprietario di Rights Manager per tutte le e-mail in arrivo che vengono crittografate automaticamente.
     
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Confronto tra l'applicazione automatica di etichette per le app di Office e i criteri di applicazione automatica di etichette

@@ -1,5 +1,5 @@
 ---
-title: Modifiche di denominazione nello schema di ricerca avanzata di Microsoft 365 Defender
+title: Modifiche di denominazione nello schema di ricerca avanzata Microsoft 365 Defender
 description: Tenere traccia e rivedere le tabelle e le colonne delle modifiche di denominazione nello schema di ricerca avanzata
 keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, dati, modifiche di denominazione, rinominare
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023786"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470497"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema di ricerca avanzata - Modifiche di denominazione
 
@@ -78,12 +78,12 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 
 1. Nelle tabelle [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) [e EmailEvents](advanced-hunting-emailevents-table.md) le colonne e sono `MalwareFilterVerdict` state `PhishFilterVerdict` sostituite dalla `ThreatTypes` colonna. Anche `MalwareDetectionMethod` le colonne e sono state `PhishDetectionMethod` sostituite dalla `DetectionMethods` colonna. Questa struttura consente di fornire ulteriori informazioni nelle nuove colonne. Il mapping viene fornito di seguito.
 
-| Nome della tabella | Nome colonna originale | Nome nuova colonna | Motivo della modifica
-|--|--|--|--|
-| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Includere altri metodi di rilevamento |
-| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Includere altri tipi di minacce |
-| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Includere altri metodi di rilevamento |
-| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Includere altri tipi di minacce |
+    | Nome della tabella | Nome colonna originale | Nome nuova colonna | Motivo della modifica
+    |--|--|--|--|
+    | `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Includere altri metodi di rilevamento |
+    | `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Includere altri tipi di minacce |
+    | `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Includere altri metodi di rilevamento |
+    | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Includere altri tipi di minacce |
 
 
 2. Nelle tabelle `EmailAttachmentInfo` e , la colonna è stata aggiunta per fornire ulteriori informazioni sulla minaccia di posta `EmailEvents` `ThreatNames` elettronica. Questa colonna contiene valori come Spam o Phish.
@@ -92,18 +92,20 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 
 4. Nella tabella [DeviceEvents](advanced-hunting-deviceevents-table.md) sono stati modificati diversi nomi ActionType per riflettere meglio la descrizione dell'azione. I dettagli delle modifiche sono disponibili di seguito.
 
-| Nome della tabella | Nome ActionType originale | Nuovo nome ActionType | Motivo della modifica
-|--|--|--|--|
-| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Feedback dei clienti |
-| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Feedback dei clienti |
-| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Feedback dei clienti |
-| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Feedback dei clienti |
+    | Nome della tabella | Nome ActionType originale | Nuovo nome ActionType | Motivo della modifica
+    |--|--|--|--|
+    | `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Feedback dei clienti |
+    | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Feedback dei clienti |
+    | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Feedback dei clienti |
+    | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Feedback dei clienti |
 
 ## <a name="march-2021"></a>Marzo 2021
 
 La `DeviceTvmSoftwareInventoryVulnerabilities` tabella è deprecata. Sostituendolo sono le `DeviceTvmSoftwareInventory` tabelle e `DeviceTvmSoftwareVulnerabilities` .
 
+## <a name="may-2021"></a>Maggio 2021
 
+La `AppFileEvents` tabella è deprecata. La `CloudAppEvents` tabella include informazioni che prima era presente nella `AppFileEvents` tabella, insieme ad altre attività nei servizi cloud.
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)

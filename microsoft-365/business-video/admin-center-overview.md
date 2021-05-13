@@ -1,5 +1,5 @@
 ---
-title: Interfaccia di amministrazione di Microsoft 365 - Panoramica
+title: Microsoft 365 di amministrazione - Panoramica
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,38 +20,40 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Altre informazioni sull'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Altre informazioni sull'interfaccia Microsoft 365'interfaccia di amministrazione.
+ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332247"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470425"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Informazioni generali sull'interfaccia di amministrazione di Microsoft 365
 
 - [Interfaccia di amministrazione in visualizzazione semplificata](#the-admin-center-in-simplified-view)
 - [Interfaccia di amministrazione nella visualizzazione dashboard](#the-admin-center-in-dashboard-view)
 
+L Microsoft 365'interfaccia di amministrazione ha due visualizzazioni: la visualizzazione semplificata consente alle organizzazioni più piccole di gestire le attività più comuni. La visualizzazione Dashboard include attività e impostazioni più complesse. Puoi passare da un pulsante all'altro nella parte superiore dell'interfaccia di amministrazione.
+
 ## <a name="the-admin-center-in-simplified-view"></a>Interfaccia di amministrazione in visualizzazione semplificata
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
-Con l'interfaccia di amministrazione di Microsoft 365, è possibile reimpostare le password, visualizzare la fattura, aggiungere o rimuovere utenti e molto altro ancora in un'unica posizione.
+Con l'Microsoft 365 di amministrazione, è possibile reimpostare le password, visualizzare la fattura, aggiungere o rimuovere utenti e molto altro ancora in un'unica posizione.
 
 Accedi a Office.com con il tuo account aziendale e seleziona l'icona di avvio delle app. 
 
 Se si dispone dell'autorizzazione per accedere all'interfaccia di amministrazione, verrà visualizzato **Amministratore** nell'elenco. Selezionarlo. 
 
-Nella parte superiore dell'interfaccia di amministrazione, esamina le azioni principali. Potrebbero essere disponibili azioni diverse a seconda di ciò che è già stato configurato, ad esempio la creazione di nuovi account, l'uso di Teams, la configurazione della posta elettronica e l'installazione di app di Office. 
+Nella parte superiore dell'interfaccia di amministrazione, esamina le azioni principali. Potresti visualizzare azioni diverse a seconda di ciò che hai già configurato, ad esempio la creazione di nuovi account, l'uso di Teams, la configurazione della posta elettronica e l'installazione Office app. 
  
 In **L'organizzazione** nella **scheda Utenti** è un elenco di persone che possono accedere ad app e servizi, aggiungere nuovi utenti, reimpostare password o usare il menu **Altre** azioni. Selezionare una persona per visualizzare o modificare le informazioni e le impostazioni.  
 
-Nella scheda **Teams** creare un nuovo team o gestire i team esistenti. È possibile gestire i membri di un team o selezionare **Altre azioni per** modificare altre impostazioni di Teams. 
+Nella scheda **Teams,** creare un nuovo team o gestire i team esistenti. È possibile gestire i membri di un team o selezionare **Altre azioni per** modificare altre Teams impostazioni. 
 
 Nella scheda **Abbonamenti** aggiungi altri prodotti, aggiungi licenze o usa il menu Altre **azioni** per modificare le licenze o il metodo di pagamento.
 
-Nella scheda **Informazioni,** sfogliare video e articoli sull'interfaccia di amministrazione e altre funzionalità di Microsoft 365. Per esplorare le funzionalità più avanzate dell'interfaccia di amministrazione, aprire il menu di spostamento ed espandere le intestazioni per visualizzare altre informazioni. Seleziona **Mostra tutto** per visualizzare tutto nel menu di spostamento o usa la barra di ricerca per trovare rapidamente ciò che stai cercando.
+Nella scheda **Informazioni,** sfogliare video e articoli sull'interfaccia di amministrazione e altre Microsoft 365 funzionalità. Per esplorare le funzionalità più avanzate dell'interfaccia di amministrazione, aprire il menu di spostamento ed espandere le intestazioni per visualizzare altre informazioni. Seleziona **Mostra tutto** per visualizzare tutto nel menu di spostamento o usa la barra di ricerca per trovare rapidamente ciò che stai cercando.
 
 Per assistenza, selezionare **Guida & supporto**. Cercare l'argomento desiderato e visualizzare la soluzione consigliata oppure selezionare l'auricolare per contattare il supporto, quindi immettere la domanda e le informazioni di contatto. 
 
@@ -59,11 +61,11 @@ Per assistenza, selezionare **Guida & supporto**. Cercare l'argomento desiderato
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-L'interfaccia di amministrazione di Microsoft 365 consente di gestire l'azienda nel cloud. È possibile completare attività quali l'aggiunta e la rimozione di utenti, la modifica delle licenze e la reimpostazione delle password. 
+L Microsoft 365'interfaccia di amministrazione consente di gestire l'azienda nel cloud. È possibile completare attività quali l'aggiunta e la rimozione di utenti, la modifica delle licenze e la reimpostazione delle password. 
 
 Le aree di lavoro specializzate, come sicurezza o gestione dei dispositivi, consentono un controllo più granulare. Per ulteriori informazioni sulla collaborazione tra le aree di amministrazione, vedere Informazioni sui tipi specifici di ruoli IT e altre aree di lavoro, ad esempio Sicurezza, Gestione dispositivi o [Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) in questo articolo.
 
-Per accedere all'interfaccia di amministrazione di Microsoft 365, passare a [admin.microsoft.com](https://admin.microsoft.com) oppure, se è già stato effettuato l'accesso, selezionare l'icona di avvio delle app e scegliere **Amministratore.**
+Per accedere all'Microsoft 365 di amministrazione, vai a [admin.microsoft.com](https://admin.microsoft.com) oppure, se hai già effettuato l'accesso, seleziona l'icona di avvio delle app e scegli **Amministratore.**
 
 Nella home page è possibile creare schede per le attività eseguite di frequente. Per aggiungere una nuova scheda, selezionare **Aggiungi scheda,** quindi selezionare il segno più accanto alla scheda che si desidera aggiungere. Al termine, chiudere la finestra. È possibile ridisporre le schede selezionandole e quindi trascinandole nel punto desiderato. Per rimuovere una scheda, selezionare **Altre azioni** e quindi scegliere **Rimuovi.**
 
@@ -81,9 +83,9 @@ Se si ha bisogno di supporto in qualsiasi momento, scegliere **Serve assistenza.
 
 Per ulteriori informazioni sulla gestione di fatturazione, password, utenti e amministratori, vedere le altre lezioni di questo corso.
 
-## <a name="who-is-an-admin"></a>Chi è un amministratore? 
+## <a name="who-is-an-admin"></a>Who è un amministratore? 
 
-Per impostazione predefinita, la persona che si i iscrizione e acquista un abbonamento a Microsoft 365 per le aziende ottiene le autorizzazioni di amministratore. Tale persona può assegnare autorizzazioni di amministratore ad altre persone per aiutarle a gestire Microsoft 365 per l'organizzazione.
+Per impostazione predefinita, la persona che si i iscrizione e acquista un abbonamento Microsoft 365 per le aziende ottiene le autorizzazioni di amministratore. Tale persona può assegnare autorizzazioni di amministratore ad altre persone per aiutarle a gestire Microsoft 365 per l'organizzazione.
 
 Se viene visualizzato il messaggio "Non hai **l'autorizzazione** per accedere a questa pagina o eseguire questa azione", non sei un amministratore.
   
@@ -105,7 +107,7 @@ Se non hai idea di chi contattare presso il tuo istituto di istruzione o lavoro 
 
 ## <a name="turn-on-targeted-release"></a>Attivare Rilascio mirato
 
-1. Accedi a [admin.microsoft.com](https://admin.microsoft.com), vai al riquadro di spostamento e seleziona **Impostazioni** \> **Profilo organizzazione.**
+1. Accedi a [admin.microsoft.com](https://admin.microsoft.com), vai al riquadro di spostamento e **seleziona** Impostazioni \> **Profilo organizzazione**.
 
 2. Vai alla **scheda Preferenze rilascio** e quindi seleziona **Modifica.** 
     
@@ -119,25 +121,25 @@ Nell'interfaccia di amministrazione, è possibile inviare commenti e suggeriment
 
 Non vedi le risposte alle tue domande qui? Vai alla **sezione Feedback** nella parte inferiore di questa pagina e fai la tua domanda. 
   
-### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Quali piani di Microsoft 365 sono disponibili per la versione di valutazione o l'acquisto?
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Quali Microsoft 365 sono disponibili per la versione di valutazione o l'acquisto?
 
-Microsoft 365 è una soluzione completa e intelligente che include Office 365, Windows 10 ed Enterprise Mobility + Security che consente a tutti di essere creativi e collaborare in modo sicuro. Nell'interfaccia di amministrazione sono disponibili le seguenti sottoscrizioni di Microsoft 365 che puoi provare o acquistare ora:
+Microsoft 365 è una soluzione completa e intelligente che include Office 365, Windows 10 e Enterprise Mobility + Security che consente a tutti di essere creativi e collaborare in modo sicuro. Nell'interfaccia Microsoft 365 sono disponibili le seguenti sottoscrizioni per provare o acquistare subito:
   
 - Microsoft 365 for business
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     
-Per ulteriori informazioni, vedere [Provare o acquistare un abbonamento a Microsoft 365.](../commerce/try-or-buy-microsoft-365.md)
+Per ulteriori informazioni, vedere [Try or buy a Microsoft 365 subscription](../commerce/try-or-buy-microsoft-365.md).
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>È stato rilevato un bug o si desidera richiedere un miglioramento delle funzionalità. Come si fa a far sapere a Microsoft?
 
-Ci piace sentire da te! La segnalazione di bug e la condivisione del feedback ci aiutano a migliorare l'interfaccia di amministrazione di Microsoft 365. Per inviare commenti e suggerimenti, seleziona il pulsante **Feedback** nella parte inferiore della pagina e usa il modulo per inviarci le tue opinioni. Selezionare la casella di controllo e confermare l'indirizzo di posta elettronica se si desidera che un utente del team dell'interfaccia di amministrazione di Microsoft 365 esegua il follow-up dei commenti. Non possiamo promessa di seguire ogni feedback, ma proveremo. 
+Ci piace sentire da te! La segnalazione di bug e la condivisione dei commenti e suggerimenti ci aiuta a migliorare l Microsoft 365 interno di amministrazione. Per inviare commenti e suggerimenti, seleziona il pulsante **Feedback** nella parte inferiore della pagina e usa il modulo per inviarci le tue opinioni. Selezionare la casella di controllo e confermare l'indirizzo di posta elettronica se si desidera che un utente del team dell'interfaccia di amministrazione Microsoft 365 follow-up dei commenti. Non possiamo promessa di seguire ogni feedback, ma proveremo. 
   
 Puoi anche fornire feedback dall'esterno dell'interfaccia di amministrazione nel forum uservoice. È possibile utilizzare questa pagina per fornire suggerimenti sulle funzionalità che possono essere votati da altri utenti del [forum: forum UserVoice per la nuova interfaccia di amministrazione.](https://go.microsoft.com/fwlink/?linkid=2024994)
 
-### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Che dire dei tipi specifici di ruoli IT e di altre aree di lavoro come Sicurezza, Gestione dispositivi o Exchange?
+### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Quali sono i tipi specifici di ruoli IT e altre aree di lavoro come Sicurezza, Gestione dispositivi o Exchange?
 
-L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti i team e i ruoli che gestiscono Microsoft 365. L'esperienza, le informazioni e i controlli sono personalizzati e personalizzabili per ogni amministratore e ruolo. Inoltre, le aree di lavoro specializzate consentono un controllo approfondito e granulare. Queste aree di lavoro specializzate includono SharePoint, &amp; Teams Skype, Exchange, Sicurezza, Conformità, Gestione dispositivi e Azure Active Directory. È possibile trovare le aree di lavoro specializzate dal riquadro di spostamento nell'interfaccia di amministrazione di Microsoft 365 all'indirizzo [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
+L Microsoft 365 di amministrazione è il punto di ingresso comune per tutti i team e i ruoli che gestiscono Microsoft 365. L'esperienza, le informazioni e i controlli sono personalizzati e personalizzabili per ogni amministratore e ruolo. Inoltre, le aree di lavoro specializzate consentono un controllo approfondito e granulare. Queste aree di lavoro specializzate includono SharePoint, Teams &amp; Skype, Exchange, sicurezza, conformità, gestione dei dispositivi e Azure Active Directory. È possibile trovare le aree di lavoro specializzate dal riquadro di spostamento nell'Microsoft 365 di amministrazione all'indirizzo [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>Quali opzioni di lingua sono disponibili nell'interfaccia di amministrazione?
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 56ab6c6c11bd2c0786c0d797e5302a1f06f9bd53
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 3ca8f5234f90624c8570cbfb10e75bd0ee9380ae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327259"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345837"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -49,7 +49,7 @@ Per ulteriori informazioni sulla configurazione delle regole di riduzione della 
 
 ## <a name="assess-rule-impact-before-deployment"></a>Valutare l'impatto delle regole prima della distribuzione
 
-È possibile valutare in che modo una regola di riduzione della superficie di attacco potrebbe influire sulla rete aprendo il suggerimento per la sicurezza per tale regola nella gestione delle minacce [e delle vulnerabilità.](https://docs.microsoft.com/windows/security/threat-protection/#tvm)
+È possibile valutare l'impatto di una regola di riduzione della superficie di attacco sulla rete aprendo il suggerimento per la sicurezza per tale regola in [gestione di minacce e vulnerabilità](https://docs.microsoft.com/windows/security/threat-protection/#tvm).
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Sicurezza per la regola di riduzione della superficie di attacco":::
 
@@ -67,14 +67,14 @@ La modalità avviso consente all'organizzazione di disporre di regole di riduzio
 
 ### <a name="requirements-for-warn-mode-to-work"></a>Requisiti per il funzionamento della modalità avviso
 
-La modalità avviso è supportata nei dispositivi che eseguono le versioni seguenti di Windows:
+La modalità avviso è supportata nei dispositivi che eseguono le seguenti versioni di Windows:
 
-- [Windows 10, versione 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) o successiva
+- [Windows 10 versione 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) o successiva
 - [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) o successiva
 
-Microsoft Defender Antivirus deve essere in esecuzione con protezione in tempo reale in [modalità Attiva.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
+Antivirus Microsoft Defender deve essere in esecuzione con protezione in tempo reale in [modalità attiva.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
 
-Assicurati inoltre che siano installati [gli aggiornamenti antimalware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) e Microsoft Defender Antivirus.
+Assicurarsi inoltre che siano [installati Antivirus Microsoft Defender e antimalware.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
 
 - Requisito minimo di rilascio della piattaforma: `4.18.2008.9`
 - Requisito minimo di rilascio del motore: `1.1.17400.5`
@@ -83,7 +83,7 @@ Per ulteriori informazioni e per ottenere gli aggiornamenti, vedere [Update for 
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Casi in cui la modalità avviso non è supportata
 
-La modalità avviso non è supportata per tre regole di riduzione della superficie di attacco quando le si configura in Microsoft Endpoint Manager. Se usi Criteri di gruppo per configurare le regole di riduzione della superficie di attacco, la modalità avviso è supportata. Le tre regole che non supportano la modalità avviso quando vengono configurate in Microsoft Endpoint Manager sono le seguenti:
+La modalità avviso non è supportata per tre regole di riduzione della superficie di attacco quando le si configura in Microsoft Endpoint Manager. Se usi Criteri di gruppo per configurare le regole di riduzione della superficie di attacco, la modalità avviso è supportata. Le tre regole che non supportano la modalità di avviso quando vengono configurate in Microsoft Endpoint Manager sono le seguenti:
 
 - [Impedire a JavaScript o VBScript di avviare il contenuto eseguibile](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) scaricato (GUID) `d3e037e1-3eb8-44c8-a917-57927947596d`
 - [Bloccare la persistenza tramite la sottoscrizione di eventi WMI](#block-persistence-through-wmi-event-subscription) (GUID) `e6db77e5-3df2-4cf1-b95a-636979351e5b`
@@ -97,7 +97,7 @@ Ogni volta che viene attivata una regola di riduzione della superficie di attacc
 
 Inoltre, quando vengono attivate determinate regole di riduzione della superficie di attacco, vengono generati avvisi.
 
-Le notifiche e gli avvisi generati possono essere visualizzati in Microsoft Defender Security Center ( ) e nel Centro sicurezza [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ).
+Le notifiche e gli avvisi generati possono essere visualizzati nel Microsoft Defender Security Center ( ) e nel Centro sicurezza Microsoft 365 [https://securitycenter.windows.com](https://securitycenter.windows.com) sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Eventi avanzati di ricerca e riduzione della superficie di attacco
 
@@ -107,18 +107,18 @@ Si supponga, ad esempio, che si verifichi un evento di riduzione della superfici
 
 Per ulteriori informazioni sulla ricerca avanzata, vedere Ricerca proattiva [per le minacce con la ricerca avanzata.](advanced-hunting-overview.md)
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>Funzionalità di riduzione della superficie di attacco tra le versioni di Windows
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>Funzionalità di riduzione della superficie di attacco Windows versioni
 
 Puoi impostare regole di riduzione della superficie di attacco per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
 
-- Windows 10 Pro, [versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
-- Windows 10 Enterprise, [versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- Windows 10 Pro versione [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- Windows 10 Enterprise versione [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
 - Windows Server, [versione 1803 (Canale semestraale)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Anche se le regole di riduzione della superficie di attacco non richiedono una licenza di [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](microsoft-defender-endpoint.md)nonché funzionalità di creazione di report e configurazione nel Centro sicurezza [Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Queste funzionalità avanzate non sono disponibili con una licenza di Windows Professional o Windows E3. Tuttavia, se hai queste licenze, puoi usare il Visualizzatore eventi e i registri di Microsoft Defender Antivirus per esaminare gli eventi delle regole di riduzione della superficie di attacco.
+Anche se le regole di riduzione della superficie di attacco non richiedono una licenza [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](microsoft-defender-endpoint.md)nonché funzionalità di creazione di report e configurazione nel centro sicurezza [Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Queste funzionalità avanzate non sono disponibili con una licenza Windows Professional o Windows E3. Tuttavia, se si dispone di tali licenze, è possibile utilizzare visualizzatore eventi e registri Antivirus Microsoft Defender per esaminare gli eventi delle regole di riduzione della superficie di attacco.
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Esaminare gli eventi di riduzione della superficie di attacco in Microsoft Defender Security Center
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Esaminare gli eventi di riduzione della superficie di attacco nella Microsoft Defender Security Center
 
 Defender for Endpoint fornisce report dettagliati per eventi e blocchi nell'ambito di scenari di analisi degli avvisi.
 
@@ -131,12 +131,12 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Esaminare gli eventi di riduzione della superficie di attacco nel Visualizzatore eventi di Windows
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Esaminare gli eventi di riduzione della superficie di attacco nel Visualizzatore Windows eventi
 
-È possibile esaminare il registro eventi di Windows per visualizzare gli eventi generati dalle regole di riduzione della superficie di attacco:
+È possibile esaminare il registro eventi Windows eventi per visualizzare gli eventi generati dalle regole di riduzione della superficie di attacco:
 
 1. Scarica il [pacchetto di valutazione](https://aka.ms/mp7z2w) ed estrai il file *cfa-events.xml* in un percorso facilmente accessibile nel dispositivo.
-2. Immetti le parole *Visualizzatore eventi* nel menu Start per aprire il Visualizzatore eventi di Windows.
+2. Immetti le parole *Visualizzatore eventi* nel menu Start per aprire il Visualizzatore Windows eventi.
 3. In **Azioni** selezionare **Importa visualizzazione personalizzata...**.
 4. Selezionare *l'cfa-events.xml* file da cui è stato estratto. In alternativa, [copiare il codice XML direttamente](event-views.md).
 5. Selezionare **OK**.
@@ -150,7 +150,7 @@ DeviceEvents
 |1122|Evento quando la regola viene attivata in modalità di controllo|
 |
 
-La "versione del motore" elencata per gli eventi di riduzione della superficie di attacco nel registro eventi, viene generata da Defender per Endpoint, non dal sistema operativo. Defender for Endpoint è integrato con Windows 10, quindi questa funzionalità funziona su tutti i dispositivi con Windows 10 installato.
+La "versione del motore" elencata per gli eventi di riduzione della superficie di attacco nel registro eventi, viene generata da Defender per Endpoint, non dal sistema operativo. Defender for Endpoint è integrato con Windows 10, quindi questa funzionalità funziona su tutti i dispositivi Windows 10 installati.
 
 ## <a name="attack-surface-reduction-rules"></a>Regole per la riduzione della superficie di attacco
 
