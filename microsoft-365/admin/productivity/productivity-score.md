@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica del punteggio della produttività Microsoft.
-ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876132"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345239"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio della produttività Microsoft 
 
@@ -63,7 +63,7 @@ Il Punteggio di produttività è basato sui punteggi combinati delle categorie d
 - Integrità di Microsoft 365 Apps (100 punti)
 - **Totale possibile= 800 punti**
  
- In ogni categoria di punteggio, quantifichiamo gli indicatori chiave su come l'organizzazione sta utilizzando Microsoft 365 nel suo percorso verso la trasformazione digitale. Sono disponibili panoramiche sulle attività chiave di 28 giorni e 180 giorni. Sono inoltre disponibili metriche di supporto che non fanno parte del calcolo del punteggio, ma sono importanti per identificare le statistiche sull'utilizzo sottostante e le configurazioni da risolvere.
+In ogni categoria di punteggio, quantifichiamo gli indicatori chiave su come l'organizzazione sta utilizzando Microsoft 365 nel suo percorso verso la trasformazione digitale. Sono disponibili panoramiche sulle attività chiave di 28 giorni e 180 giorni. Sono inoltre disponibili metriche di supporto che non fanno parte del calcolo del punteggio, ma sono importanti per identificare le statistiche sull'utilizzo sottostante e le configurazioni da risolvere.
 
 ### <a name="products-included-in-productivity-score"></a>Prodotti inclusi nel punteggio della produttività 
 
@@ -74,7 +74,7 @@ Il punteggio dell'organizzazione viene aggiornato ogni giorno e riflette le azio
 
 ## <a name="prerequisites"></a>Prerequisiti 
 
-I dati sulle esperienze degli utente richiedono un abbonamento a Microsoft 365 for business o Office 365 per aziende. Per i dati di analisi degli endpoint per il tenant è necessario aggiungere Microsoft Intune all'abbonamento. Intune ti consente di proteggere i dati dell'organizzazione con la gestione di dispositivi e app. Dopo aver aggiunto Intune, è possibile attivare la funzione analisi endpoint nell'esperienza di Intune. Altre informazioni su [Microsoft Intune](/mem/intune/). 
+I dati sulle esperienze degli utente richiedono un abbonamento a Microsoft 365 for business o Office 365 per aziende. Per i dati di analisi degli endpoint per il tenant è necessario aggiungere Microsoft Intune all'abbonamento. Intune consente di proteggere i dati dell'organizzazione con la gestione di dispositivi e app. Dopo aver aggiunto Intune, è possibile attivare la funzione analisi endpoint nell'esperienza di Intune. Per ulteriori informazioni su Microsoft Intune, vedere la documentazione [Microsoft Intune](/mem/intune/). 
 
 > [!NOTE]
 > Non è necessaria una licenza per Workplace Analytics per ottenere le funzionalità del punteggio della produttività.
@@ -107,7 +107,10 @@ La home page del punteggio della produttività mostra il punteggio totale dell'o
 
 **Il punteggio dell'organizzazione** viene visualizzato come valore percentuale e in punti. È possibile visualizzare i punti nel numeratore e i punti massimi nel denominatore.
 
-I **benchmark del peer** consentono di confrontare il punteggio con organizzazioni simili alla propria. Il benchmark del peer per le categorie di esperienze delle persone è dato da una media all'interno di un insieme di organizzazioni simili. L’insieme di organizzazioni è composto da organizzazioni della propria area geografica con un numero analogo di utenti dotati di licenza, tipi di licenze, settore ed esperienza con Microsoft 365. 
+I **benchmark del peer** consentono di confrontare il punteggio con organizzazioni simili alla propria. Il benchmark del peer per le categorie di esperienze delle persone è dato da una media all'interno di un insieme di organizzazioni simili. L’insieme di organizzazioni è composto da organizzazioni della propria area geografica con un numero analogo di utenti dotati di licenza, tipi di licenze, settore ed esperienza con Microsoft 365.
+
+> [!NOTE]
+> Microsoft usa i dati interni per determinare il settore in cui un'organizzazione ha eseguito il mapping. Ai tenant in un'organizzazione padre viene eseguito il mapping allo stesso settore dell'organizzazione padre. Le organizzazioni non possono visualizzare o modificare i mapping di settore.
 
 Il peer benchmark dell’analisi degli endpoint include obiettivi per le prestazioni di avvio del dispositivo e la configurazione software consigliata in base ai valori mediani aggregati di tutti i tenant.
 
@@ -158,8 +161,6 @@ Questo report aiuta le organizzazioni a capire:
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Monitorare l'attività Microsoft 365 utilizzando i report](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (articolo)
-
-[Abilitare l'analisi dell'utilizzo di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (articolo)
-
-[Informazioni generali sull'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (video)
+[Monitorare l'attività Microsoft 365 utilizzando i report](/microsoft-365/admin/activity-reports/activity-reports) (articolo)\
+[Abilitare l'analisi dell'utilizzo di Microsoft 365](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (articolo)\
+[Informazioni generali sull'interfaccia di amministrazione di Microsoft 365](/microsoft-365/business-video/admin-center-overview) (video)
