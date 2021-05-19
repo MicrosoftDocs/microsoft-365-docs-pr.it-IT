@@ -1,23 +1,23 @@
 ---
 title: Informazioni di pagamento per la Bielorussia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
-localization_priority: Normal
+ms.custom: commerce_billing_payinfo
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7b010016e02c956be8c43519cc64dc03d71e0bce
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 29b714fb5c3df920409bd667ca1408814799a780
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274197"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537139"
 ---
 # <a name="payment-information-for-belarus"></a>Informazioni di pagamento per la Bielorussia
 
@@ -31,4 +31,4 @@ Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa
 **Codice SWIFT:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Numero account:** 12510049  
-**Nome account:** MICROSOFT  
+**Nome account:** MICROSOFT

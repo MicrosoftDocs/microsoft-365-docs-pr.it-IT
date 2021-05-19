@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Scopri come chiudere l'account con Microsoft.
 ms.date: 04/02/2021
-ms.openlocfilehash: 767a82088500bc24c0d4755a2dafd40742fc796c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331767"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537296"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 
@@ -52,7 +52,7 @@ Se l'organizzazione usa Active Directory che si sincronizza con Microsoft Azure 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Passaggio 2: Annullare tutte le sottoscrizioni attive
 
 1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **Prodotti** trovare un abbonamento attivo. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Annulla l’abbonamento**.
+2. Nella scheda **Prodotti** trovare un abbonamento attivo. Seleziona i tre punti (altre azioni), quindi seleziona **Annulla sottoscrizione.**
 3. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Se si vuole, inviare un feedback.
 4. Selezionare **Salva**.
 5. Ripetere i passaggi da 1 a 4 per annullare tutte le sottoscrizioni attive.

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come creare e gestire le etichette di riservatezza.
-ms.openlocfilehash: 997b05ba549d3dc57e1793585331dfcfae1e277b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 26697265088a2a59ac145eeff2816b816b95a149
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578940"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537380"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>Proteggere i documenti con etichette di riservatezza
 
@@ -50,8 +50,8 @@ Le etichette di riservatezza consentono di classificare e proteggere i contenuti
 1. Facoltativamente, attivare Prevenzione della **perdita dei dati dell'endpoint.** Selezionare **Avanti**.
 1. Facoltativamente, attivare **l'etichettatura automatica**. Aggiungere una condizione. Ad esempio, in **Rileva contenuto che contiene** selezionare Aggiungi una **condizione.** Immettere la condizione. Ad esempio, aggiungi una condizione che se vengono rilevati passport, social security o altre informazioni riservate, l'etichetta verrà aggiunta. Selezionare **Avanti**.
 1. Rivedere le impostazioni e selezionare **Crea**. L'etichetta è stata creata. Ripetere questo processo per eventuali etichette aggiuntive desiderate.
-1. Per impostazione predefinita, le etichette vengono visualizzate nelle app di Office nell'ordine seguente: **Riservato,** **Interno** e **Pubblico.** Per modificare l'ordine, per ogni etichetta seleziona **Altre** azioni (i puntini di sospensione) e quindi sposta l'etichetta verso l'alto o verso il basso. In genere, le autorizzazioni sono elencate dal livello più basso a quello più alto.
-1. Per aggiungere un'etichetta secondaria a un'etichetta, selezionare **Altre azioni,** quindi **Aggiungi sottoal livello.**
+1. Per impostazione predefinita, le etichette vengono Office app in questo ordine: **Riservato,** **Interno** e **Pubblico.** Per modificare l'ordine, per ogni etichetta seleziona i tre punti (altre azioni), quindi sposta l'etichetta verso l'alto o verso il basso. In genere, le autorizzazioni sono elencate dal livello più basso a quello più alto.
+1. Per aggiungere un'etichetta secondaria a un'etichetta, seleziona i tre punti (altre azioni), quindi **Aggiungi livello secondario.**
 1. Al termine, scegliere **Pubblica etichette,** **Scegliere le etichette da pubblicare** e quindi **Aggiungi**. Selezionare le etichette che si desidera pubblicare, quindi scegliere **Aggiungi**, **Fatto** e **quindi Avanti**.
 1. Per impostazione predefinita, il nuovo criterio di etichetta viene applicato a tutti gli utenti. Se si desidera limitare l'applicazione del criterio, selezionare **Scegli utenti o gruppi** e quindi **Aggiungi**. Selezionare a chi si desidera applicare il criterio, quindi scegliere **Aggiungi**, **Fatto** e **quindi Avanti**.
 1. Se si desidera un'etichetta predefinita per i documenti e la posta elettronica, selezionare l'etichetta desiderata nell'elenco a discesa. Rivedere le impostazioni rimanenti, regolare in base alle esigenze e quindi selezionare **Avanti.**
@@ -60,5 +60,5 @@ Le etichette di riservatezza consentono di classificare e proteggere i contenuti
 
 Per il corretto funzionamento delle etichette, ogni utente deve scaricare il client di etichettatura unificata di Azure Information Protection. Cercare nel Web **AzinfoProtection_UL.exe,** quindi scaricarlo dall'Area download Microsoft ed eseguirlo nei computer degli utenti.
 
-Alla successiva apertura di un'app di Office come Word, verranno visualizzate le etichette di riservatezza create. Per modificare o applicare un'etichetta, selezionare Riservatezza e scegliere un'etichetta.
+Alla successiva apertura di un app Office come Word, verranno visualizzate le etichette di riservatezza create. Per modificare o applicare un'etichetta, selezionare Riservatezza e scegliere un'etichetta.
 

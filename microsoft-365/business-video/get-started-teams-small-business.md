@@ -1,5 +1,5 @@
 ---
-title: Introduzione a Microsoft Teams per piccole aziende
+title: Introduzione a Teams
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,62 +20,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Scopri come usare le Microsoft Teams nella tua piccola azienda.
-ms.openlocfilehash: d550758e91be28bde3ca3492576f7e3fb6138623
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245217"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537368"
 ---
-# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>Introduzione a Microsoft Teams per piccole aziende
-
-- [Usare Teams per la propria azienda (video)](#use-teams-for-your-business-video)
-- [Ospitare riunioni online per la propria azienda (video)](#host-online-meetings-for-your-business-video)
-- [Avviare e aggiungere chat (video)](#start-and-pin-chats-video)
-- [Creare un team a livello aziendale (video)](#create-a-company-wide-team-video)
-- [Creare un team con utenti guest (video)](#create-a-team-with-guests-video)
-
-Il modo in cui lavoriamo e viviamo è cambiato in modo significativo e molte piccole imprese stanno abbracciando il [lavoro remoto.](https://www.microsoft.com/microsoft-teams/work-remotely?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline) Man mano che l'azienda lavora per dotare i dipendenti di lavorare in remoto e connettersi virtualmente con i clienti, di seguito è riportato un breve set di linee guida che consentono di iniziare rapidamente a lavorare con Microsoft Teams. 
+# <a name="get-started-with-teams"></a>Introduzione a Teams
 
 Se stai solo iniziando a cambiare la tua azienda per lavorare in remoto, sei arrivato nel posto giusto. Con Microsoft 365, è possibile gestire un'azienda virtualmente e rimanere in contatto con dipendenti, partner e clienti tramite riunioni online, [chat,](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)condivisione di file e chiamate in Microsoft Teams. 
 
-## <a name="use-teams-for-your-business-video"></a>Usare Teams per la propria azienda (video)
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ueMh?autoplay=false]
-
-Per assistenza nell'utilizzo in remoto, è consigliabile iniziare con questi tre passaggi:
-
-## <a name="1-get-ready"></a>1. Prepararsi 
-
-Iniziare è facile. Se hai già un abbonamento Microsoft 365, assicurati che tutti gli utenti abbia una licenza che include Microsoft Teams. Se l'azienda non ha ancora Microsoft Teams, è possibile trovare il Microsoft Teams per la propria [azienda e](https://www.microsoft.com/microsoft-teams/teams-for-work) iscriversi.
-
-### <a name="get-microsoft-teams-ready-for-your-customers"></a>Prepararsi Microsoft Teams clienti
-
-L'accesso guest consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali esistenti in Microsoft Teams. Chiunque abbia un account di posta elettronica aziendale o consumer, ad esempio Outlook, Gmail o altri, può partecipare come guest in Microsoft Teams con accesso completo a chat, riunioni e file del team. Come amministratore Microsoft Teams, puoi controllare quali funzionalità gli utenti guest possono (e non possono) usare in Microsoft Teams - vedere [Gestire l'accesso guest.](https://docs.microsoft.com/microsoftteams/set-up-guests)
-
-## <a name="2-start-using-microsoft"></a>2. Iniziare a usare Microsoft 
-
-Ora è il momento di iniziare a usare Microsoft Teams. Puoi usarla dal Web o [installare l'app](https://aka.ms/installteams) nel computer, nel portatile o nel dispositivo mobile.
 
 ### <a name="meet-from-anywhere"></a>Incontrarsi da qualsiasi luogo
 
 Con Microsoft Teams, gli utenti possono usare le videoconferenze per comunicare in modo sicuro con i video HD mentre vedono e parlano con altri partecipanti in tempo reale. Ciò aggiunge un livello di interazione e interazione alla conversazione, poiché il linguaggio del corpo e le espressioni facciali promuovono una maggiore collaborazione e comprensione.
 
-### <a name="host-online-meetings-for-your-business-video"></a>Ospitare riunioni online per la propria azienda (video)
-
-> [!VIDEO https://docs.microsoft.com/microsoft-365/business-video/overview-online-meetings?view=o365-worldwide]
-
 ### <a name="chat-from-anywhere"></a>Chat da qualsiasi luogo
 
 Connessione in tempo reale su chat private 1:1, chat di gruppo o conversazioni di canale visibili all'intero team. La cronologia chat è disponibile in qualsiasi momento per ricordare le discussioni e le decisioni passate. Ciò aggiunge un grande valore per le nuove persone che tornerà nel team o per i membri correnti del team che desiderano visitare di nuovo il contesto di una conversazione.
 
-### <a name="start-and-pin-chats-video"></a>Avviare e aggiungere chat (video)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
-
 ### <a name="collaborate-with-customers-and-employees"></a>Collaborare con clienti e dipendenti
-
-Microsoft Teams un modo eccellente per rimanere in contatto sia con i dipendenti che con i clienti.
 
 Aiutare tutti gli utenti dell'organizzazione a installare Microsoft Teams nei propri dispositivi. Per ulteriori informazioni, vedere [download Microsoft Teams](https://aka.ms/downloadteams).
 
@@ -87,33 +53,11 @@ Un team di Microsoft Teams è progettato per riunire un gruppo di persone che la
 
 I canali sono sezioni dedicate all'interno di un team per mantenere le conversazioni organizzate per argomenti, progetti o discipline specifici. Le conversazioni, i file e le note per ogni canale sono visibili solo ai membri del gruppo.
 
-### <a name="create-a-company-wide-team-video"></a>Creare un team a livello aziendale (video)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9?autoplay=false]
-
-### <a name="create-a-team-with-guests-video"></a>Creare un team con utenti guest (video)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp?autoplay=false]
-
 ### <a name="store-and-share-files"></a>Archiviare e condividere file
 
 Poiché il team collabora in remoto, avrai file su cui condividere e collaborare, sia all'interno che all'esterno dell'azienda. Microsoft Teams facile condividere file e lavorarvi insieme. Se i documenti sono file di Word, Excel o PowerPoint i colleghi e i clienti possono anche visualizzare, modificare e collaborare su di essi, direttamente all'interno di Microsoft Teams.
 
 Assicurati che i documenti chiave della tua azienda siano salvati nel cloud e pronti per essere condivisi in modo sicuro con clienti, clienti, partner, fornitori e altre persone della tua azienda. Mantenere i file nel cloud significa anche ottenere i vantaggi del backup e la possibilità di ripristinare da errori del disco rigido, attacchi ransomware e altre disgrazie.
-
-- [Condividere i file aziendali](overview-file-sharing.md)
-
-- [Dove archiviare i file](store-files.md)
-
-## <a name="3-get-everyone-ready"></a>3. Prepara tutti
-
-Per aiutare i dipendenti a ottenere il massimo dal Microsoft Teams, è possibile condividere con loro i collegamenti seguenti alle risorse di formazione degli utenti finali:
-
-- Guarda una serie di brevi [video introduttivi](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) per una procedura dettagliata di Microsoft Teams.
-
-- Guarda i [video sulle riunioni](https://support.microsoft.com/office/b6caa0d4-eecb-4aa0-bc75-c05f4cd907b2) per informazioni su come usare le riunioni.
-
-- Crea o [promuovi il tuo team](org-wide-team.md) a livello di organizzazione in un luogo in cui imparare e fare le cose.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -125,12 +69,12 @@ Una funzionalità di sicurezza altamente consigliata è l'autenticazione a più 
 
 ### <a name="microsoft-teams-templates"></a>Microsoft Teams modelli
 
-Per semplificare e semplificare la distribuzione nell'organizzazione, consultare i modelli disponibili in modo specifico per le piccole imprese. i modelli di Microsoft Teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate, orientando gli utenti a iniziare a usare Microsoft Teams in modo efficace. Vedi [Introduzione ai modelli Teams per le piccole e medie imprese.](https://docs.microsoft.com/microsoftteams/smb-templates)
+Per semplificare e semplificare la distribuzione nell'organizzazione, consultare i modelli disponibili in modo specifico per le piccole imprese. i modelli di Microsoft Teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate, orientando gli utenti a iniziare a usare Microsoft Teams in modo efficace. Vedi [Introduzione ai modelli Teams per le piccole e medie imprese.](/microsoftteams/smb-templates)
 
 ### <a name="business-phone-system"></a>Sistema telefonico aziendale
 
 Trasforma qualsiasi PC, Mac o dispositivo mobile in [](https://aka.ms/getbusinessvoice) un telefono aziendale di lavoro aggiungendo un Microsoft 365 Business Voice all'abbonamento. Assegnare ai dipendenti il proprio numero di telefono dell'ufficio per effettuare e ricevere chiamate, configurare un sistema di menu delle chiamate per instradare le chiamate, aggiungere audioconferenze e configurare sia numeri a numero verde che a numero verde per la propria azienda. Fai tutto questo sostituendo i tradizionali provider di telefonia e i sistemi di telefonia interno che possono essere costose e difficili da gestire.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Potenziare la piccola azienda con il lavoro remoto](../admin/misc/empower-your-small-business-with-remote-work.md) (articolo)

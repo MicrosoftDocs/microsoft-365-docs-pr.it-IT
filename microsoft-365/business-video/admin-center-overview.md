@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Altre informazioni sull'interfaccia Microsoft 365'interfaccia di amministrazione.
-ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470425"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537392"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Informazioni generali sull'interfaccia di amministrazione di Microsoft 365
 
@@ -47,11 +47,11 @@ Se si dispone dell'autorizzazione per accedere all'interfaccia di amministrazion
 
 Nella parte superiore dell'interfaccia di amministrazione, esamina le azioni principali. Potresti visualizzare azioni diverse a seconda di ciò che hai già configurato, ad esempio la creazione di nuovi account, l'uso di Teams, la configurazione della posta elettronica e l'installazione Office app. 
  
-In **L'organizzazione** nella **scheda Utenti** è un elenco di persone che possono accedere ad app e servizi, aggiungere nuovi utenti, reimpostare password o usare il menu **Altre** azioni. Selezionare una persona per visualizzare o modificare le informazioni e le impostazioni.  
+In **L'organizzazione** nella **scheda Utenti** è un elenco di persone che possono accedere ad app e servizi, aggiungere nuovi utenti, reimpostare le password o usare i tre puntini (altre azioni) menu. Selezionare una persona per visualizzare o modificare le informazioni e le impostazioni.  
 
-Nella scheda **Teams,** creare un nuovo team o gestire i team esistenti. È possibile gestire i membri di un team o selezionare **Altre azioni per** modificare altre Teams impostazioni. 
+Nella scheda **Teams,** creare un nuovo team o gestire i team esistenti. Puoi gestire i membri di un team o selezionare i tre puntini (altre azioni) per modificare altre Teams impostazioni. 
 
-Nella scheda **Abbonamenti** aggiungi altri prodotti, aggiungi licenze o usa il menu Altre **azioni** per modificare le licenze o il metodo di pagamento.
+Nella scheda **Abbonamenti** aggiungi altri prodotti, aggiungi licenze o usa il menu a tre punti (altre azioni) per modificare le licenze o il metodo di pagamento.
 
 Nella scheda **Informazioni,** sfogliare video e articoli sull'interfaccia di amministrazione e altre Microsoft 365 funzionalità. Per esplorare le funzionalità più avanzate dell'interfaccia di amministrazione, aprire il menu di spostamento ed espandere le intestazioni per visualizzare altre informazioni. Seleziona **Mostra tutto** per visualizzare tutto nel menu di spostamento o usa la barra di ricerca per trovare rapidamente ciò che stai cercando.
 
@@ -67,7 +67,7 @@ Le aree di lavoro specializzate, come sicurezza o gestione dei dispositivi, cons
 
 Per accedere all'Microsoft 365 di amministrazione, vai a [admin.microsoft.com](https://admin.microsoft.com) oppure, se hai già effettuato l'accesso, seleziona l'icona di avvio delle app e scegli **Amministratore.**
 
-Nella home page è possibile creare schede per le attività eseguite di frequente. Per aggiungere una nuova scheda, selezionare **Aggiungi scheda,** quindi selezionare il segno più accanto alla scheda che si desidera aggiungere. Al termine, chiudere la finestra. È possibile ridisporre le schede selezionandole e quindi trascinandole nel punto desiderato. Per rimuovere una scheda, selezionare **Altre azioni** e quindi scegliere **Rimuovi.**
+Nella home page è possibile creare schede per le attività eseguite di frequente. Per aggiungere una nuova scheda, selezionare **Aggiungi scheda,** quindi selezionare il segno più accanto alla scheda che si desidera aggiungere. Al termine, chiudere la finestra. È possibile ridisporre le schede selezionandole e quindi trascinandole nel punto desiderato. Per rimuovere una scheda, selezionare i tre punti (altre azioni), quindi scegliere **Rimuovi.**
 
 Per visualizzare altre attività di amministrazione, espandi il menu di spostamento. Le impostazioni di configurazione avanzate sono disponibili nelle altre interfaccia di amministrazione nella parte inferiore.
 

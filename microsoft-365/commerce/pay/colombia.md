@@ -1,23 +1,24 @@
 ---
 title: Informazioni di pagamento per la Colombia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: de07b6ece0932ca76100470b01d1a2b593cfe1d6
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: efc83c637330c556724699c272cc0c2bd90f0982
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274005"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536947"
 ---
 # <a name="payment-information-for-colombia"></a>Informazioni di pagamento per la Colombia
 
@@ -32,4 +33,4 @@ Si prega di pagare solo in Pesos colombiano. Per elaborare il pagamento, il nome
 **Codice SWIFT:** CITICOBB  
 **NIT:** 800.198.591-3  
 **Numero account:** 0060534055  
-**Nome account:** Branch of Microsoft Colombia Inc.   
+**Nome account:** Branch of Microsoft Colombia Inc.

@@ -2,22 +2,23 @@
 title: Informazioni di pagamento per l'Australia
 f1.keywords:
 - NOCSH
-author: cmcatee-MSFT
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6b02242af4e1beb5b113c72ce3e1ab91d682417a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: e396618984b90053c2f4918201f6abfe5ca915df
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274279"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537224"
 ---
 # <a name="payment-information-for-australia"></a>Informazioni di pagamento per l'Australia
 
@@ -29,18 +30,18 @@ ms.locfileid: "52274279"
 
 Se si dispone di una fattura fatturata da **Microsoft Regional Sales Pte Ltd,** utilizzare queste informazioni bancarie:
 
-Bank: Citibank, Sydney\
-Codice SWIFT: CITIAU2X\
-Codice BSB: 242000\
-Numero account: 205565043\
-Nome account: MICROSOFT
+**Banca:** Citibank, Sydney  
+**Codice SWIFT:** CITIAU2X  
+**Codice BSB:** 242000  
+**Numero account:** 205565043  
+**Nome account:** MICROSOFT
 
 Se si dispone di una fattura fatturata da **Microsoft Pty Ltd** per gli ordini e i consumi a partire dal 1° marzo 2021, utilizzare queste informazioni bancarie:
 
-Banca: Citibank, N.A. Sydney\
-Codice SWIFT: CITIAU2X\
-Codice BSB: 248053\
-Numero account: 100001074\
-Nome account: MICROSOFT
+**Banca:** Citibank, N.A. Sydney  
+**Codice SWIFT:** CITIAU2X  
+**Codice BSB:** 248053  
+**Numero account:** 100001074  
+**Nome account:** MICROSOFT  
 
 Le fatture emesse da una filiale Microsoft locale vengono emesse con l'aliquota standard dell'IVA/IVA/GST e ritenute una fornitura nazionale di servizi ai fini dell'IVA/IVA/GST.

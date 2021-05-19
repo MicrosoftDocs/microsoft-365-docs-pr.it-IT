@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Informazioni su come acquistare altre licenze o ridurre il numero di licenze per l'abbonamento a Microsoft 365 per le aziende.
+description: Scopri come acquistare altre licenze o ridurre il numero di licenze per l'abbonamento Microsoft 365 per le aziende.
 ms.date: 04/07/2021
-ms.openlocfilehash: a327149a780d2059cfc69068fc4b2122e549773c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a20e89ff28c582018c55281a85dbe115b58f9d74
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331683"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537272"
 ---
 # <a name="buy-or-remove-licenses"></a>Acquistare o rimuovere licenze
 
@@ -36,7 +36,7 @@ ms.locfileid: "52331683"
 
 - Per eseguire le attività descritte in questo articolo, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 - È possibile [aggiungere utenti e assegnare licenze contemporaneamente.](../../admin/add-users/add-users.md)
-- Se è stato acquistato il piano di Microsoft 365 per le aziende o Office 365 Enterprise tramite un partner di terze parti, è necessario acquistare licenze aggiuntive tramite tale partner.
+- Se hai acquistato il tuo piano Microsoft 365 per le aziende o Office 365 Enterprise tramite un partner di terze parti, devi acquistare licenze aggiuntive tramite tale partner.
 
 ## <a name="watch-buy-new-licenses"></a>Guarda: Acquistare nuove licenze
 
@@ -68,7 +68,7 @@ Se sono state rimosse licenze da un abbonamento, l'operazione successiva da eseg
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
 ::: moniker-end
 
-2. Nella scheda **Prodotti** individuare l'abbonamento per cui si desidera acquistare o rimuovere licenze. Seleziona **Altre azioni** (tre puntini), quindi seleziona Acquista **licenze.** [Cosa succede se non vengono visualizzati i pulsanti Acquista licenze o Rimuovi licenze?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+2. Nella scheda **Prodotti** individuare l'abbonamento per cui si desidera acquistare o rimuovere licenze. Seleziona i tre punti (altre azioni), quindi seleziona **Acquista licenze.** [Cosa succede se non vengono visualizzati i pulsanti Acquista licenze o Rimuovi licenze?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. Se si desidera ridurre il numero di licenze, nella parte superiore del riquadro **Acquista licenze** selezionare **Rimuovi licenze**.
 4. Per acquistare o rimuovere licenze, in **Nuova** quantità nella **casella Totale** licenze immettere il numero totale di licenze desiderate per l'abbonamento. Ad esempio, se si dispone di 100 licenze e si desidera aggiungervi altre cinque, immettere 105. Se si desidera rimuoverli cinque, immettere 95.
 5. Selezionare **Salva**.
@@ -84,7 +84,7 @@ Questa tabella descrive i motivi per  cui i pulsanti Acquista **licenze** o Rimu
 |---------|---------|---------|
 |È in sospeso una verifica del credito. |Se è in sospeso una verifica del credito, non è possibile acquistare o rimuovere licenze fino al completamento della verifica del credito.  | Controllare in un secondo momento se la verifica del credito è stata completata. In genere sono necessari fino a due giorni lavorativi.<br/>Al termine della verifica del credito, dovrebbero essere visualizzati i pulsanti **Acquista licenze** **e Rimuovi** licenze. |
 |La sottoscrizione è stata attivata utilizzando un codice Product Key.| Se l'abbonamento è stato acquistato e attivato utilizzando un codice Product Key di 25 caratteri, nella colonna **Canale** acquisti della pagina **Prodotti** verrà visualizzata la parola "Prepagata".  |Vedi [Aggiungere licenze a un abbonamento a pagamento per l'uso di un codice Product Key.](add-licenses-using-product-key.md) |
-|L'abbonamento è stato acquistato tramite un rivenditore.| La parola "Rivenditore" viene visualizzata nella **colonna Canale** acquisti della **pagina Prodotti.** | Se l'abbonamento è stato acquistato tramite un partner CSP (Cloud Solution Provider), contattare il partner CSP per acquistare altre licenze.        |
+|L'abbonamento è stato acquistato tramite un rivenditore.| La parola "Rivenditore" viene visualizzata nella **colonna Canale** acquisti della **pagina Prodotti.** | Se l'abbonamento è stato acquistato tramite un partner Cloud Solution Provider (CSP), contattare il partner CSP per acquistare altre licenze.        |
 |Si dispone di una sottoscrizione di valutazione. | Per visualizzare le sottoscrizioni di valutazione, seleziona il pulsante del filtro, quindi scegli **Versione di valutazione.** | Prima di tutto acquista l'abbonamento di valutazione, quindi puoi acquistare altre licenze.|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>Quando saranno disponibili le nuove licenze da assegnare?
@@ -104,8 +104,8 @@ Se sono stati acquistati più licenze per l'abbonamento, è consigliabile assegn
 
 Se hai ridotto il numero di licenze per l'abbonamento perché qualcuno ha lasciato l'organizzazione, potresti voler rimuovere l'account dell'utente. Per ulteriori informazioni, vedere [Rimuovere un ex dipendente.](../../admin/add-users/remove-former-employee.md)
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\
 [Informazioni su abbonamenti e licenze](subscriptions-and-licenses.md) (articolo)\
-[Provare o acquistare un abbonamento a Microsoft 365](../try-or-buy-microsoft-365.md) (articolo)
+[Provare o acquistare un abbonamento Microsoft 365 (articolo)](../try-or-buy-microsoft-365.md)

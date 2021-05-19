@@ -22,26 +22,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: Informazioni su come impostare i criteri di scadenza delle password per l'organizzazione nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Informazioni su come un amministratore può impostare un criterio di scadenza password per account aziendali, scolastici o no profit nell'interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903155"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537488"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Impostare i criteri di scadenza delle password per l'organizzazione
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?view=o365-worldwide).
-
-::: moniker-end
-
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
+Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../../business-video/admin-center-overview.md).
 
 Gli amministratori possono fare in modo che la password di un utente scada dopo un determinato numero di giorni o che non scada mai. Per impostazione predefinita, le password sono impostate per non scadere mai per l'organizzazione.
 
@@ -49,7 +42,7 @@ Ricerche correnti indicano che le modifiche obbligatorie delle password sono pi�
 
 Per eseguire questi passaggi, è necessario essere un [amministratore globale](../add-users/about-admin-roles.md).
 
-Gli utenti non hanno le autorizzazioni per impostare una password in modo che non scada mai. Chiedere al supporto tecnico dell'azienda o dell'istituto di istruzione di completare la procedura descritta in questo articolo.
+Gli utenti non hanno le autorizzazioni per impostare una password senza scadenza. Chiedere al supporto tecnico dell'azienda o dell'istituto di istruzione di completare la procedura descritta in questo articolo.
 
 ## <a name="set-password-expiration-policy"></a>Impostare il criterio di scadenza delle password
 
@@ -90,12 +83,12 @@ Per informazioni sulla sincronizzazione degli hash delle password utente da Acti
 
 ## <a name="update-password-policy"></a>Aggiornare i criteri password
 
-Il cmdlet Set-MsolPasswordPolicy aggiorna i criteri delle password di un dominio o di un tenant specifico. Sono necessarie due impostazioni. La prima indica il periodo di validità di una password prima che debba essere cambiata e la seconda indica il numero di giorni prima della data di scadenza della password in cui si attiverà l'invio agli utenti della prima notifica della scadenza.
+Il cmdlet Set-MsolPasswordPolicy aggiorna il criterio della password di un dominio o un tenant specifico. Sono necessarie due impostazioni; la prima indica il periodo di validità di una password prima che debba essere cambiata e la seconda indica il numero di giorni prima della data di scadenza della password in cui si attiverà l'invio agli utenti della prima notifica della scadenza.
 
 Per informazioni su come aggiornare i criteri delle password per un dominio o un tenant specifico, vedere [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
 
 ## <a name="related-content"></a>Contenuti correlati
 
-[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md)
+[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)
 
-[Reimpostare password](../add-users/reset-passwords.md)
+[Reimpostare la password](../add-users/reset-passwords.md) (articolo)

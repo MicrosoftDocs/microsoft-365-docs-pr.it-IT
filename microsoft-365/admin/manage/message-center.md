@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Panoramica del centro messaggi Microsoft 365 messaggi e del suo ruolo nella gestione delle modifiche.
-ms.openlocfilehash: af65db32edd56b11adede0e4e690b3f69b07180e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244420"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537524"
 ---
 # <a name="message-center"></a>Centro messaggi
 
@@ -249,66 +249,21 @@ Se è presente un messaggio su cui deve agire un altro utente. è possibile cond
 
 Se è necessario contattare un altro amministratore per verificare che sia informato della modifica e intervenga di conseguenza, è possibile generare un collegamento da condividere ad esempio tramite posta elettronica o messaggistica istantanea, che consentirà all'utente di connettersi direttamente al messaggio. La persona con cui si condivide il collegamento deve avere accesso al Centro messaggi. Per maggiori informazioni, vedere [Ruoli di amministratore che non hanno accesso al Centro messaggi](message-center.md#admin-roles-that-dont-have-access-to-the-message-center).
 
-::: moniker range="o365-worldwide"
-
 1. Selezionare il messaggio per aprirlo.
 
 2. Selezionare **Copia collegamento**.
 
 3. Premere CTRL+V oppure fare clic con il pulsante destro del mouse e scegliere **Incolla** per inserire il collegamento nel documento desiderato.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Selezionare il messaggio per aprirlo.
-
-2. Scegliere **Altro** \> **Ottieni un collegamento** nella barra delle azioni.
-
-3. Consentire alla pagina Web di accedere agli Appunti. Un collegamento diretto viene copiato negli Appunti.
-
-4. Premere CTRL+V oppure fare clic con il pulsante destro del mouse e scegliere **Incolla** per inserire il collegamento.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Selezionare il messaggio per aprirlo.
-
-2. Selezionare **Copia collegamento**.
-
-3. Premere CTRL+V oppure fare clic con il pulsante destro del mouse e scegliere **Incolla** per inserire il collegamento nel documento desiderato.
-
-::: moniker-end
 
 ## <a name="read-and-unread-states"></a>Stati Letto e Da leggere
 
 I messaggi non letti nel Centro messaggi verranno visualizzati in grassetto. Aprendo un messaggio, verrà contrassegnato come letto. È possibile contrassegnare un messaggio come da leggere.
 
-::: moniker range="o365-worldwide"
 
 - Nella pagina principale del Centro messaggi selezionare i puntini di sospensione **Altre opzioni** accanto a un messaggio e infine scegliere **Segna come da leggere**.
 
 È anche possibile aprire un messaggio e contrassegnarlo come da leggere nel riquadro dei dettagli.
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Selezionare il messaggio per aprirlo.
-
-2. Selezionare **Altro** \> **Segna come da leggere**.
-
-3. Chiudere il messaggio.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- Nella pagina principale del Centro messaggi selezionare i puntini di sospensione **Altre opzioni** accanto a un messaggio e infine scegliere **Segna come da leggere**.
-
-::: moniker-end
-
 ## <a name="archive-and-restore"></a>Archiviare e ripristinare
 
 Se viene visualizzato un messaggio che non è di propria competenza o su cui si è già intervenuti, è possibile archiviarlo per escluderlo dalla Posta in arrivo. La visualizzazione mostrata nel Centro messaggi è specifica per l'account utente, di conseguenza l'archiviazione di un messaggio non ha alcun effetto sugli altri amministratori. Per archiviare un messaggio, si può procedere in due modi.
@@ -346,7 +301,7 @@ Per una panoramica del Centro messaggi, vedere [Centro messaggi in Microsoft 365
 
 2. Selezionare **Salva** per mantenere le modifiche.<br/>
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Configurare le opzioni di rilascio Standard o Mirato](../manage/release-options-in-office-365.md) (articolo)
 

@@ -15,10 +15,10 @@ metadata:
 productDirectory:
   title: Proteggere il lavoro remoto con Microsoft 365 Business Premium
   items:
-    - title: Lettura
+    - title: Guarda
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
-      summary: Metodi migliori per consentire un lavoro remoto protetto con Microsoft 365 Business Premium.
-      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623'
+      summary: I cinque vantaggi principali di Microsoft 365 Business Premium.
+      url: 'https://aka.ms/M365BPvideo'
     - title: Ottenere il kit partner gratuito
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: Guida pratica e risorse di mercato per i partner per la sicurezza del lavoro remoto.

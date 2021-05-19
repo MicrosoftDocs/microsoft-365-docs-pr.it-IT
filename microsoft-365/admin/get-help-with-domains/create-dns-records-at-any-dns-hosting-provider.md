@@ -16,16 +16,16 @@ ms.collection:
 - Adm_O365_Setup
 search.appverid:
 - MET150
-description: Informazioni su come verificare il dominio e creare record DNS presso un provider di hosting DNS per Microsoft 365.
+description: Connettere un dominio di qualsiasi provider di hosting DNS a Microsoft 365 verificando il dominio e aggiornando i record DNS nell'account del proprio registrar.
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 06a5e7d081a16cd8d5aae28268b3aaf737981a43
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: facdd460bd3197e39dd6d4d9f4a5450dc972bf03
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051043"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537560"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Aggiungere record DNS per connettere il dominio
 
@@ -129,7 +129,7 @@ Convalidare il record SPF usando uno di questi [strumenti di convalida SPF](/off
 
 SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile impostare anche DKIM e DMARC per Microsoft 365. 
 
-Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md) e [Usare DKIM per convalidare la posta elettronica in Microsoft 365](../../security/defender-365-security/use-dmarc-to-validate-email.md).
+Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) e [Usare DKIM per convalidare la posta elettronica in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 ### <a name="add-srv-records-for-communications-services-teams-skype-for-business"></a>Aggiungere record SRV per servizi di comunicazione (Teams, Skype for Business)
 
@@ -166,3 +166,11 @@ Per aggiungere questi valori, creare una singola stringa, separando i valori con
 
 - Esempio 1: `100 1 443 sipdir.online.lync.com.`
 - Esempio 2: `100 1 443 sipdir.online.lync.com`
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar del dominio](change-nameservers-at-any-domain-registrar.md) (articolo)
+
+[Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)
+
+[Gestire i domini](index.yml) (pagina di collegamento)

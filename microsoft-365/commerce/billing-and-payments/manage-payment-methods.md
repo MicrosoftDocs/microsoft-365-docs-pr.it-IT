@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Informazioni su come gestire le modalità di pagamento nell'interfaccia di amministrazione di Microsoft 365.
+description: Acquistare prodotti o servizi da Microsoft usando un metodo di pagamento esistente o aggiungendone uno nell'interfaccia di amministrazione di Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: b6fe62a70d478a98eb13a17fafb4320afc6b5952
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332007"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537320"
 ---
 # <a name="manage-payment-methods"></a>Gestire le modalità di pagamento
 
@@ -87,7 +87,7 @@ Per cambiare la modalità di pagamento per un singolo abbonamento, vedere [Cambi
 
 1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 2. Nella scheda **Prodotti** trovare l'abbonamento che si vuole pagare con la modalità di pagamento alternativo.
-3. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Sostituisci metodo di pagamento**.
+3. Selezionare i tre puntini (altre azioni), quindi **Sostituisci metodo di pagamento**.
 4. Nel riquadro **Sostituisci metodo di pagamento** scegliere una modalità di pagamento alternativa nell'elenco a discesa oppure scegliere di aggiungere una modalità di pagamento.
 5. Se si aggiunge una modalità di pagamento, immettere i dettagli della carta o del conto, quindi selezionare **Salva**.
 6. Verificare che la modalità di pagamento selezionata sia corretta, quindi scegliere **Sostituisci**.

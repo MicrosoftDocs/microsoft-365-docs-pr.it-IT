@@ -1,23 +1,24 @@
 ---
 title: Informazioni di pagamento per l'Armenia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4ec6de2cf44ac9243aa43075945a078bc050b00a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 19ccd5c0dfb4581a7d310e6dabebba1746694870
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274293"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537236"
 ---
 # <a name="payment-information-for-armenia"></a>Informazioni di pagamento per l'Armenia
 
@@ -31,4 +32,4 @@ Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa
 **Codice SWIFT:** CITIGB2L  
 **Numero IBAN:** GB95CITI18500812510049  
 **Numero account:** 12510049  
-**Nome account:** Microsoft  
+**Nome account:** Microsoft

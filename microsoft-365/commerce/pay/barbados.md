@@ -1,23 +1,23 @@
 ---
 title: Informazioni di pagamento per Barbados
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
-localization_priority: Normal
+ms.custom: commerce_billing_payinfo
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f996c63890dfcde2a62c92523f6721e5ed350ebe
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: e9bbd29db305eb5c335514621b442d9750b4cca8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274209"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537151"
 ---
 # <a name="payment-information-for-barbados"></a>Informazioni di pagamento per Barbados
 
@@ -31,4 +31,4 @@ Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa
 **Ramo:** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  
-**Nome account:** Microsoft  
+**Nome account:** Microsoft

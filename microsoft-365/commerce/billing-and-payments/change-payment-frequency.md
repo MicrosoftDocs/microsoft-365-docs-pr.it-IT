@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come modificare la frequenza di fatturazione per l'abbonamento aziendale.
 ms.date: 04/02/2021
-ms.openlocfilehash: b8a0341f8cd5f4788bf2eea93394b33e8079abc5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 010857d9092ef62d11e1b7c6019f2fe0eaafb58f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332169"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537344"
 ---
 # <a name="change-your-billing-frequency"></a>Modificare la frequenza di fatturazione
 
@@ -36,3 +36,13 @@ Quando si acquista un abbonamento, si sceglie la fatturazione mensile o annuale.
 2. Nella scheda **Prodotti**, selezionare l'abbonamento che si vuole cambiare.
 3. Nella sezione Impostazioni sottoscrizione  e pagamento della pagina dei dettagli dell'abbonamento selezionare **Modifica frequenza di fatturazione.**
 4. Nel riquadro **Modifica frequenza di** fatturazione scegliere l'opzione per la frequenza di fatturazione, quindi selezionare **Cambia**.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Visualizzare la fattura o la fattura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (articolo)
+
+[Pagamento dell'abbonamento](../../commerce/billing-and-payments/pay-for-your-subscription.md) (articolo)
+
+[Informazioni su come trovare e visualizzare la fattura o la fattura](view-your-bill-or-invoice.md) (articolo)
+
+[Modificare gli indirizzi di fatturazione](change-your-billing-addresses.md) (articolo)

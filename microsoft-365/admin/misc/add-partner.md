@@ -20,32 +20,32 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Informazioni su come aggiungere un partner consulente della sottoscrizione come partner del record al momento dell'acquisto di Microsoft 365, modificare il partner o eliminare un partner da una sottoscrizione.
-ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Informazioni su come aggiungere un partner consulente della sottoscrizione come partner del Microsoft 365 record al momento dell'acquisto, della modifica del partner o dell'eliminazione di un partner da una sottoscrizione.
+ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579231"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537476"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Aggiungere, modificare o rimuovere un partner con il ruolo di consulente dell'abbonamento
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Questo articolo si applica a Office 365 gestito da 21Vianet in Cina. È per le organizzazioni che desiderano consentire a un partner 21Vianet di amministrare l'abbonamento a Office 365.
+> Questo articolo si applica Office 365 gestito da 21Vianet in Cina. È per le organizzazioni che desiderano consentire a un partner 21Vianet di amministrare la Office 365 per loro.
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-Un partner Microsoft autorizzato che opera come consulente dell'abbonamento mette a disposizione la sua esperienza in materia di vendite, supporto e assistenza tecnica per aiutare a configurare e gestire l'abbonamento. È possibile aggiungere un partner consulente della sottoscrizione come partner di registrazione quando si acquista Microsoft 365 o in un altro momento. Se attualmente non si lavora con un partner, è anche possibile trovarlo nel sito [Web Microsoft Pinpoint.](https://pinpoint.microsoft.com)
+Un partner Microsoft autorizzato che opera come consulente dell'abbonamento mette a disposizione la sua esperienza in materia di vendite, supporto e assistenza tecnica per aiutare a configurare e gestire l'abbonamento. È possibile aggiungere un partner consulente della sottoscrizione come partner del record quando si acquista Microsoft 365 o in un altro momento. Se attualmente non si lavora con un partner, è anche possibile trovarlo nel sito [Web Microsoft Pinpoint.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-Il partner scelto dipende dai servizi Microsoft che usi e dal paese o dall'area geografica in cui userai tali servizi. Se si sta aggiungendo un partner o cambiando il partner dell'abbonamento, per prima cosa è necessario ottenere il suo ID partner Microsoft, chiedendo al partner stesso.
+Il partner scelto dipende dal servizi Microsoft utilizzato e dal paese o dall'area geografica in cui verranno utilizzati tali servizi. Se si sta aggiungendo un partner o cambiando il partner dell'abbonamento, per prima cosa è necessario ottenere il suo ID partner Microsoft, chiedendo al partner stesso.
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ Il partner scelto dipende dai servizi di Office 365 usati e dal paese o dall'are
 
 ::: moniker range="o365-21vianet"
 
-Gli amministratori di Office 365 possono creare o modificare utenti, reimpostare le password degli utenti, gestire le licenze utente, gestire i domini e assegnare autorizzazioni di amministratore ad altri utenti dell'organizzazione, tra le altre cose. Tuttavia, se si desidera che altre persone esee possano eseguire queste attività amministrative, è possibile delegare questo ruolo a un partner autorizzato di 21Vianet creando una relazione partner.
+In quanto amministratore di Office 365, è possibile creare o modificare utenti, reimpostare le password utente, gestire le licenze utente, gestire i domini e assegnare autorizzazioni di amministratore ad altri utenti dell'organizzazione, tra le altre cose. Tuttavia, se si desidera che altre persone esee possano eseguire queste attività amministrative, è possibile delegare questo ruolo a un partner autorizzato di 21Vianet creando una relazione partner.
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ Seguire i passaggi nella pagina dei provider per cercare o ottenere una corrispo
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 2. Se si dispone di più sottoscrizioni, selezionare la sottoscrizione che si desidera modificare.
-3. A destra, sotto il costo della sottoscrizione, scegliere **Altre azioni** Aggiungi partner > **del record.**
+3. A destra, sotto il costo della sottoscrizione, selezionare i tre punti (altre azioni) > **Aggiungi partner di record**.
 4. Immettere l'ID del partner Microsoft da aggiungere, selezionare **Controlla ID** e quindi **Invia**. L'ID del partner Microsoft può essere richiesto al partner stesso.
 5. L'ID del partner è visualizzato nella pagina **Abbonamenti**.
 
@@ -160,7 +160,7 @@ Per accettare questa offerta
 
 ## <a name="view-your-partner-relationships"></a>Visualizzare le relazioni con i partner
 
-- Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Relazioni partner.</a> I partner sono elencati in questa pagina.
+- Nell'interfaccia di amministrazione passare alla **pagina** Impostazioni  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relazioni partner.</a> I partner sono elencati in questa pagina.
 
   Se non si dispone di un partner, verrà visualizzato il messaggio "Non c'è niente qui".
   
@@ -220,4 +220,4 @@ Non è possibile rimuovere una relazione come rivenditore autonomamente.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Trovare il partner o il rivenditore Microsoft 365](../manage/find-your-partner-or-reseller.md)
+[Trovare il Microsoft 365 partner o rivenditore](../manage/find-your-partner-or-reseller.md)
