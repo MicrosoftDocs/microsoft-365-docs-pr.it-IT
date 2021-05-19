@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come ottenere assistenza o supporto per amministratori in Microsoft 365 Business Premium.
-ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: HT
+description: Devi essere un amministratore per un abbonamento aziendale per ottenere assistenza per l'amministratore o supporto online o telefonico in Microsoft 365 Business Premium.
+ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327187"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535711"
 ---
 # <a name="get-support"></a>Ottieni supporto
 
@@ -252,3 +252,12 @@ Le opzioni di supporto assistito sono riservate agli amministratori delle organi
 Inoltre, è possibile [effettuare ricerche nei forum della community di Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=518605) per trovare problemi noti e argomenti di tendenza oppure pubblicare nuove domande. I forum della community sono monitorati da agenti del supporto Microsoft qualificati che possono aiutare a risolvere i problemi.
 
 ::: moniker-end
+
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Trovare documenti e formazione](find-help-answers.md) (articolo)
+
+[Configurazione rapida dei dipendenti](employee-quick-setup.md) (articolo)
+
+[Panoramica della Microsoft 365 Business Premium configurazione](setup-overview.md) (video)

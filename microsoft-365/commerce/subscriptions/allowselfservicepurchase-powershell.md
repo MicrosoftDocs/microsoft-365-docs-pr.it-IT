@@ -21,12 +21,12 @@ search.appverid:
 description: Informazioni su come usare il cmdlet Di PowerShell AllowSelfServicePurchase per attivare o disattivare l'acquisto in modalità self-service.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333375"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536131"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usare AllowSelfServicePurchase per il modulo di PowerShell MSCommerce
 
@@ -42,7 +42,8 @@ Il **modulo MSCommerce** PowerShell è ora disponibile in [PowerShell Gallery.](
 
 Per usare il **modulo ms-Commerce** PowerShell, è necessario:
 
-- Un dispositivo Windows 10
+- Un Windows 10 dispositivo
+- PowerShell 5 o versioni seguenti. Attualmente, PowerShell 6.x/7.x non è supportato con questo modulo.
 - Autorizzazione di amministratore per il dispositivo
 - Ruolo amministratore globale o fatturazione per il tenant
 
@@ -58,13 +59,13 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>Importare MSCommerce nella sessione di PowerShell
 
-Dopo aver installato il modulo nel dispositivo Windows 10, importalo in ogni sessione di PowerShell avviata. Per importarlo in una sessione di PowerShell, eseguire il comando seguente:
+Dopo aver installato il modulo nel dispositivo Windows 10, importarlo in ogni sessione di PowerShell avviata. Per importarlo in una sessione di PowerShell, eseguire il comando seguente:
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Connettersi a MSCommerce con le credenziali
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Connessione a MSCommerce con le credenziali
 
 Per connettersi al modulo di PowerShell con le credenziali, eseguire il comando seguente.
 
@@ -72,7 +73,7 @@ Per connettersi al modulo di PowerShell con le credenziali, eseguire il comando 
 Connect-MSCommerce
 ```
 
-Questo comando connette la sessione di PowerShell corrente a un tenant di Azure Active Directory. Il comando richiede un nome utente e una password per il tenant a cui si desidera connettersi. Se per le credenziali è abilitata l'autenticazione a più fattori, si utilizza l'opzione interattiva per accedere.
+Questo comando connette la sessione di PowerShell corrente a un tenant Azure Active Directory corrente. Il comando richiede un nome utente e una password per il tenant a cui si desidera connettersi. Se per le credenziali è abilitata l'autenticazione a più fattori, si utilizza l'opzione interattiva per accedere.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Visualizzare i dettagli per AllowSelfServicePurchase
 
@@ -99,10 +100,10 @@ Nella tabella seguente sono elencati i prodotti disponibili e il **relativo Prod
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (autonomo) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Piano di progetto 1 | CFQ7TTC0KXND |
-| Piano di progetto 3 | CFQ7TTC0KXNC |
-| Visio Piano 1 | CFQ7TTC0KXN9 |
-| Visio Piano 2 | CFQ7TTC0KXN8 |
+| Project - Piano 1 | CFQ7TTC0KXND |
+| Project - Piano 3 | CFQ7TTC0KXNC |
+| Visio - Piano 1 | CFQ7TTC0KXN9 |
+| Visio - Piano 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Visualizzare o impostare lo stato per AllowSelfServicePurchase
 
@@ -161,3 +162,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Gestire gli acquisti in modalità self-service (amministratore)](manage-self-service-purchases-admins.md) (articolo)
+
+[Domande frequenti sull'acquisto in self-service](self-service-purchase-faq.yml) (articolo)

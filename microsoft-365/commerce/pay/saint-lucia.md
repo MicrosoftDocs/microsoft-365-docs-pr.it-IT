@@ -1,23 +1,24 @@
 ---
 title: Informazioni di pagamento per Saint Lucia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 35b550c65bd9d23f05c27fd6ed5da7d1b560406a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9e864a6d499044edd978e1dbe87d19bd5b567aa4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272961"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535219"
 ---
 # <a name="payment-information-for-saint-lucia"></a>Informazioni di pagamento per Saint Lucia
 
@@ -31,4 +32,4 @@ Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa
 **Branch** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  
-**Nome account:** Microsoft  
+**Nome account:** Microsoft

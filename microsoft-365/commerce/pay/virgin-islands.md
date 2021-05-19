@@ -1,23 +1,24 @@
 ---
 title: Informazioni di pagamento per Isole Vergini, Stati Uniti
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 315b3c494ed1374b80b1517a73f61764c9fa8e14
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 18ed76f9bf777d6a9782dfb7fff75e1c5465123d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272217"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536179"
 ---
 # <a name="payment-information-for-virgin-islands-us"></a>Informazioni di pagamento per Isole Vergini, Stati Uniti
 
@@ -31,4 +32,4 @@ Pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa di paga
 **Ramo:** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  
-**Nome account:** Microsoft  
+**Nome account:** Microsoft

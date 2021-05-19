@@ -1,5 +1,5 @@
 ---
-title: Novità dell'interfaccia di amministrazione di Microsoft 365
+title: Novità nell'interfaccia Microsoft 365 di amministrazione?
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -17,38 +17,38 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: 'Interfaccia di amministrazione di Microsoft 365: informazioni sulle funzionalità aggiunte questo mese.'
+description: 'L Microsoft 365 di amministrazione: informazioni sulle funzionalità aggiunte questo mese.'
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077312"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535747"
 ---
-# <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia di amministrazione di Microsoft 365
+# <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia Microsoft 365 di amministrazione
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Alcune delle informazioni contenute in questo articolo potrebbero non essere applicabili a Office 365 gestito da 21Vianet.
+> Alcune delle informazioni contenute in questo articolo potrebbero non essere applicabili Office 365 gestito da 21Vianet.
 
 ::: moniker-end
 
-Stiamo continuamente aggiungendo nuove funzionalità all'interfaccia di amministrazione di [Microsoft 365,](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)risolvendo i problemi a cui apprendiamo e apportando modifiche in base al tuo feedback. Dai un'occhiata qui sotto per vedere cosa è disponibile per te oggi. Alcune funzionalità vengono implementazioni a velocità diverse per i clienti. Se non vedi ancora una funzionalità, prova ad [aggiungerti alla versione mirata.](manage/release-options-in-office-365.md)
+Stiamo continuamente aggiungendo nuove funzionalità all'interfaccia di amministrazione di [Microsoft 365,](../business-video/admin-center-overview.md)risolvendo i problemi che abbiamo appreso e apportando modifiche in base al tuo feedback. Dai un'occhiata qui sotto per vedere cosa è disponibile per te oggi. Alcune funzionalità vengono implementazioni a velocità diverse per i clienti. Se non vedi ancora una funzionalità, prova ad [aggiungerti alla versione mirata.](manage/release-options-in-office-365.md)
 
 E se si desidera sapere quali sono le novità con altri servizi cloud Microsoft:
 
 - [Novità di Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
-- [Novità nell'interfaccia di amministrazione di Exchange](/Exchange/whats-new)
+- [Novità nell'interfaccia Exchange di amministrazione](/Exchange/whats-new)
 - [Novità di Microsoft Intune](/mem/intune/fundamentals/whats-new)
-- [Novità del Centro conformità Microsoft 365](/Office365/SecurityCompliance/whats-new)
+- [Novità del Centro Microsoft 365 conformità](/Office365/SecurityCompliance/whats-new)
 - [Novità di Microsoft 365 Defender](../security/mtp/whats-new.md)
-- [Novità nell'interfaccia di amministrazione di SharePoint](/sharepoint/what-s-new-in-admin-center)
+- [Novità nell'interfaccia SharePoint di amministrazione](/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](/OfficeUpdates/)
-- [Come controllare l'integrità dei rilasci di Windows](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+- [Come verificare l'integrità Windows rilascio](/windows/deployment/update/check-release-health)
 
 ## <a name="april-2021"></a>Aprile 2021
 
@@ -87,9 +87,9 @@ Per ulteriori informazioni sulle nuove funzionalità, vedere [Centro messaggi.](
 
 ### <a name="whats-new-features"></a>Novità
 
-Sono stati apportati miglioramenti alla modalità di visualizzazione delle funzionalità "Novità" per gli utenti nelle app di Office. È ora possibile visualizzare il contenuto rtf nel nuovo riquadro Novità che gli utenti possono visualizzare. È inoltre possibile ottenere ulteriori informazioni sulla funzionalità prima di decidere di consentire agli utenti di conoscerlo. Per altre info, vedere [Gestire le caratteristiche di Office visualizzate in Novità.](manage/show-hide-new-features.md)
+Abbiamo apportato miglioramenti alla modalità di visualizzazione delle funzionalità "Novità" per gli utenti nelle Office app. È ora possibile visualizzare il contenuto rtf nel nuovo riquadro Novità che gli utenti possono visualizzare. È inoltre possibile ottenere ulteriori informazioni sulla funzionalità prima di decidere di consentire agli utenti di conoscerlo. Per altre info, vedere [Gestire Office funzionalità visualizzate in Novità](manage/show-hide-new-features.md).
 
-:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office app what's new page showing improvements to Power BI":::
 
 ## <a name="ignite-2020-august--september"></a>Ignite 2020 (agosto & settembre)
 
@@ -112,18 +112,18 @@ Abbiamo sviluppato un set di funzionalità per amministratori multi-tenant come 
 
 ### <a name="monitor-your-most-important-accounts"></a>Monitorare gli account più importanti
 
-È possibile monitorare e tenere traccia dei messaggi di posta elettronica non riusciti o ritardati inviati agli utenti che hanno un impatto aziendale elevato, come il CEO. È possibile tenere traccia degli account con priorità aggiungendo gli utenti all'elenco degli account con priorità nell'interfaccia di amministrazione di Microsoft 365. Aggiungere dirigenti, dirigenti, responsabili o altri utenti che hanno accesso a informazioni sensibili o ad alta priorità.
+È possibile monitorare e tenere traccia dei messaggi di posta elettronica non riusciti o ritardati inviati agli utenti che hanno un impatto aziendale elevato, come il CEO. È possibile tenere traccia degli account con priorità aggiungendo gli utenti all'elenco degli account con priorità nell'Microsoft 365 di amministrazione. Aggiungere dirigenti, dirigenti, responsabili o altri utenti che hanno accesso a informazioni sensibili o ad alta priorità.
 
 Gli account di priorità sono disponibili solo per le organizzazioni che soddisfano entrambi i requisiti seguenti:
 
 - Office 365 E3 o Microsoft 365 E3 o Office 365 E5 o Microsoft 365 E5.
-- Almeno 10.000 licenze e almeno 50 utenti di Exchange Online attivi mensilmente.
+- Almeno 10.000 licenze e almeno 50 utenti attivi mensilmente Exchange Online utenti.
 
 ![Pagina di installazione per la funzionalità: monitorare gli account più importanti](../media/MAC-WN-PriorityAccounts.png)
 
 Esistono due modi per iniziare:
 
-- Vai a **Utenti** e quindi nel menu "Altre azioni" seleziona Gestisci account con **priorità** per aggiungere utenti all'elenco.
+- Vai a **Utenti** e quindi nel menu tre punti (altre azioni) seleziona **Gestisci** account di priorità per aggiungere utenti all'elenco.
 - Vai a **Installazione,** trova l'attività di installazione **Monitora gli account più importanti** e quindi seleziona **Introduzione.**
 
 Per altre info sugli account con priorità, consulta [Monitoraggio degli account con priorità.](./setup/priority-accounts.md)
@@ -132,33 +132,33 @@ Per altre info sugli account con priorità, consulta [Monitoraggio degli account
 
 Abbiamo iniziato la distribuzione di una nuova esperienza di ricerca per l'interfaccia di amministrazione e non vediamo l'ora di provarla. ![La casella di ricerca è stata spostata nell'area banner. ALT+S per eseguire la ricerca da qualsiasi pagina.](../media/MAC-WN-GlobalSearch.png)
 
-- La casella di ricerca è stata spostata nell'area di intestazione in cui è presente "Interfaccia di amministrazione di Microsoft 365" in modo da eseguire la ricerca da qualsiasi pagina e non solo dalla home page. Abbiamo anche un collegamento: **ALT+S.**
+- La casella di ricerca è stata spostata nell'area di intestazione in cui è presente "interfaccia di amministrazione di Microsoft 365" in modo da eseguire la ricerca da qualsiasi pagina e non solo dalla home page. Abbiamo anche un collegamento: **ALT+S.**
 - La ricerca è più intelligente e consente di ottenere risultati migliori, anche più velocemente. Prova a digitare "2fa" per iniziare.
 - I risultati della ricerca sono organizzati in base al tipo di elemento o azione che è possibile eseguire.
-  - **Utenti**: selezionare il nome dell'utente ed è possibile modificarlo qui. Se si seleziona il menu "Altre azioni" accanto al nome, è possibile reimpostarne la password. È possibile eseguire la ricerca in base al nome visualizzato, al cognome, al nome, al nome utente o all'indirizzo di posta elettronica principale e agli alias di posta elettronica. Ma per ottenere una corrispondenza esatta, cercare in base all'indirizzo di posta elettronica principale o al nome utente.
+  - **Utenti**: selezionare il nome dell'utente ed è possibile modificarlo qui. Se si seleziona il menu con tre puntini (altre azioni) accanto al nome, è possibile reimpostarne la password. È possibile eseguire la ricerca in base al nome visualizzato, al cognome, al nome, al nome utente o all'indirizzo di posta elettronica principale e agli alias di posta elettronica. Ma per ottenere una corrispondenza esatta, cercare in base all'indirizzo di posta elettronica principale o al nome utente.
   - **Gruppi**: modificare il gruppo da qualsiasi pagina, aggiungere membri, assegnare proprietari.
   - **Azioni**: in modo analogo a come è possibile cercare un utente e quindi reimpostare la password, è anche possibile cercare "reimpostare la password" da qualsiasi pagina e quindi reimpostare una o più password per gli utenti.
   - **Spostamento:** i risultati in Spostamento consentono di accedere rapidamente a una pagina nell'interfaccia di amministrazione. Ad esempio, la ricerca di "ruoli" consente di accedere alla pagina Ruoli per i ruoli di Azure AD.
-  - **Impostazioni**: cercare qualsiasi impostazione correlata all'organizzazione, i servizi sottoscritti e le impostazioni di sicurezza e privacy. 
+  - **Impostazioni**: cercare qualsiasi impostazione relativa all'organizzazione, ai servizi sottoscritti e alle impostazioni di sicurezza e privacy. 
   - **Domini**: è possibile trovare collegamenti rapidi ai domini e quindi il collegamento consente di accedere alla pagina Panoramica e integrità del dominio.
   - **Documentazione:** se non è possibile trovare un risultato per l'utente, verrà cercata una documentazione utile. Per trovare una corrispondenza nell'elenco di articoli curato, è necessario attendere un secondo per consentire alla ricerca di trovare i risultati. 
   - **Feedback**: Non hai trovato quello che cercavi? Inviaci commenti e suggerimenti dalla ricerca. Aggiungeremo funzionalità di ricerca per altre pagine e altre funzionalità nell'interfaccia di amministrazione.
 
-### <a name="microsoft-365-admin-mobile-app"></a>App per dispositivi mobili di amministrazione di Microsoft 365
+### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 admin per dispositivi mobili
 
-L'app per dispositivi mobili di amministrazione di [Microsoft 365,](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app)inclusa nell'abbonamento, ti consente di gestire Microsoft 365 dal dispositivo mobile in modo da poterti allontanare dalla scrivania per eseguire attività quotidiane. Infatti, nell'app sono presenti più di 90 funzionalità e ne sono state aggiunte altre:
+[L Microsoft 365 app](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app)per dispositivi mobili di amministrazione, inclusa nell'abbonamento, ti consente di gestire Microsoft 365 dal dispositivo mobile in modo da poterti allontanare dalla scrivania per eseguire attività quotidiane. Infatti, nell'app sono presenti più di 90 funzionalità e ne sono state aggiunte altre:
 
-- Supporto per i criteri di gestione delle applicazioni mobili e accesso condizionale di Microsoft Intune: ora è possibile usare il dispositivo personale per gestire Microsoft 365 anche se **l'organizzazione** ha attivato i criteri di gestione delle applicazioni mobili e di accesso condizionale di Intune.
-- **Notifiche del Centro messaggi**: attivare le notifiche del Centro messaggi in **Impostazioni** Notifiche se si desidera ricevere un avviso sui nuovi post  >   del Centro messaggi. Tramite le notifiche, vogliamo essere sempre informati su informazioni ed eventi importanti nel tenant.
-- **Avvisi di fatturazione:** puoi anche attivare le notifiche di fatturazione in Impostazioni Notifiche se vuoi ricevere notifiche di fatturazione sul dispositivo se un abbonamento sta per  >   scadere.
+- Supporto per i criteri di gestione delle applicazioni mobili e di accesso condizionale di Microsoft Intune : ora è possibile usare il dispositivo personale per gestire Microsoft 365 anche se **l'organizzazione** ha attivato la gestione delle applicazioni mobili di Intune e i criteri di accesso condizionale.
+- **Notifiche del Centro messaggi**: attivare le notifiche del Centro messaggi **Impostazioni** notifiche se si desidera ricevere un avviso sui nuovi post  >   del Centro messaggi. Tramite le notifiche, vogliamo essere sempre informati su informazioni ed eventi importanti nel tenant.
+- **Avvisi di fatturazione:** puoi anche attivare le notifiche di fatturazione in notifiche Impostazioni se vuoi ricevere notifiche di fatturazione sul dispositivo se un abbonamento sta per  >   scadere.
 - **Modalità scura:** benvenuto nel lato oscuro dell'app per dispositivi mobili. Questa è stata una delle funzionalità più richieste. Vai a **Impostazioni**  >  **Temi** per attivarlo.
 - **Segnalare un problema:** ora puoi segnalare un problema nell'app o visualizzare i problemi segnalati da altri amministratori. Visitare **Integrità del servizio** per estrarlo.
 
-![Pagina Integrità nell'app di amministrazione di Microsoft 365 con notifiche per il Centro messaggi, integrità del servizio, avvisi di fatturazione.](../media/MAC-WN-AdminMobileApp.png)
+![La pagina Integrità nell'Microsoft 365 di amministrazione con notifiche per il centro messaggi, l'integrità del servizio, gli avvisi di fatturazione.](../media/MAC-WN-AdminMobileApp.png)
 
 ### <a name="usage-recommendations-for-small-and-medium-businesses"></a>Consigli sull'utilizzo per le piccole e medie imprese
 
-Le piccole e medie imprese potrebbero ricevere un suggerimento nella **home** page se alcune persone dell'organizzazione non usano attivamente le app di Teams, OneDrive o Office. Quando si visualizza il suggerimento, è possibile inviare rapidamente tramite posta elettronica la formazione Microsoft agli utenti inattivi per aiutarli a iniziare con l'app e per assicurarsi di ottenere il valore completo dalle sottoscrizioni.
+Le piccole e medie imprese potrebbero ricevere un suggerimento nella **home** page se alcune persone dell'organizzazione non usano attivamente Teams, OneDrive o Office app. Quando si visualizza il suggerimento, è possibile inviare rapidamente tramite posta elettronica la formazione Microsoft agli utenti inattivi per aiutarli a iniziare con l'app e per assicurarsi di ottenere il valore completo dalle sottoscrizioni.
 
 ### <a name="remote-work-collection"></a>Raccolta di lavoro remota
 
@@ -172,12 +172,12 @@ Per ulteriori informazioni su come consentire in modo sicuro il lavoro remoto e 
 
 Stiamo continuamente esaminando e aggiornando il contenuto e gli strumenti per tenere il passo con le modifiche apportate al prodotto. Ora abbiamo molti altri strumenti di diagnostica self-service per aiutarti a risolvere i problemi in modo rapido ed efficiente. Ecco alcuni elementi che sono stati aggiunti di recente:
 
-- Modificare il criterio di limitazione del servizio Web Exchange
-- Controllo dello stato del provisioning e della convalida di Teams per utenti specifici
+- Modificare il criterio Exchange di limitazione del servizio Web
+- Controllo dello stato Teams provisioning e convalida a utenti specifici
 - Risolvere i problemi di installazione di DKIM
 - Diagnosticare gli errori di registrazione degli utenti di Intune
 
-Stiamo inoltre stentando l'esperienza di supporto nuova e migliorata già visualizzata nell'interfaccia di amministrazione di Microsoft 365 in alcune delle altre centri di amministrazione. L'interfaccia di amministrazione di Teams e le centri di amministrazione di sicurezza e conformità hanno già questa nuova esperienza. A breve, **l'interfaccia di** amministrazione  di **Exchange, l'interfaccia** di amministrazione di SharePoint e Office.com verranno aggiornati insieme a questa nuova esperienza di assistenza per gli amministratori.
+Stiamo inoltre stendando l'esperienza di supporto nuova e migliorata già visualizzata nell'interfaccia di amministrazione di Microsoft 365 in alcune delle altre interfaccia di amministrazione. Teams L'interfaccia di amministrazione e le centri di amministrazione di sicurezza e conformità hanno già questa nuova esperienza. A breve, **Exchange'interfaccia** di amministrazione, **SharePoint** e **Office.com** verranno aggiornati insieme a questa nuova esperienza di assistenza per gli amministratori.
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Gestire le modifiche con Microsoft Planner
 
@@ -190,10 +190,10 @@ Per altre informazioni, vedere questo articolo e video per vedere come funziona:
 ### <a name="documentation-training-and-videos"></a>Documentazione, formazione e video
 
 - Brand new and just in time for Microsoft Ignite--[The Virtual Hub](https://adoption.microsoft.com/virtual-hub/). Approfondimento sulla formazione tecnica per professionisti IT e sviluppatori. Trova rapidamente circa 20 nuovi video come parte di #SIDETRACKED, il nome della traccia dell'amministratore di Ignite quest'anno.
-- Novità della serie di video [di Microsoft 365:](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) questo mese vengono trattate le nuove funzionalità disponibili in Whiteboard per Teams e sul Web, come automatizzare il provisioning degli utenti in Azure AD, nuovi trigger e azioni di Power Automate in Teams e altro ancora. E rimanete sintonizzati per il mese prossimo, dove avremo un riepilogo di tutte le grandi cose che accadono a Ignite!
-- È stata riprogettata la pagina [della documentazione di Microsoft 365](/microsoft-365) incentrata innanzitutto sulle soluzioni. Verranno evidenziate nuove soluzioni non appena saranno disponibili in questa pagina, quindi tenere d'occhio.
+- Novità della serie di video [Microsoft 365:](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) questo mese vengono trattate le nuove funzionalità disponibili in Whiteboard per Teams e sul Web, come automatizzare il provisioning degli utenti in Azure AD, nuovi trigger e azioni di Power Automate in Teams e altro ancora. E rimanete sintonizzati per il mese prossimo, dove avremo un riepilogo di tutte le grandi cose che accadono a Ignite!
+- È stata riprogettata la pagina [Microsoft 365 della](/microsoft-365) documentazione che si concentra innanzitutto sulle soluzioni. Verranno evidenziate nuove soluzioni non appena saranno disponibili in questa pagina, quindi tenere d'occhio.
 
-![Nuova pagina di destinazione per la documentazione relativa alle soluzioni Microsoft 365 con soluzioni come "Responsabilizzare i lavoratori remoti".](../media/MAC-WN-M365Docspage.png)
+![Nuova pagina di destinazione per la documentazione Microsoft 365 soluzioni con soluzioni come "Responsabilizzare i lavoratori remoti".](../media/MAC-WN-M365Docspage.png)
 
 ## <a name="july-2020"></a>Luglio 2020
 
@@ -215,19 +215,19 @@ Nella gestione delle sottoscrizioni è stato svolto molto lavoro per velocizzare
 
 ### <a name="domains"></a>Domini
 
-La gestione del dominio può essere complicata e abbiamo rilasciato una nuova funzionalità per semplificare la gestione. Vai a Impostazioni > Domini e quindi seleziona un dominio per ottenere ulteriori informazioni sul dominio e sull'integrità del dominio.
+La gestione del dominio può essere complicata e abbiamo rilasciato una nuova funzionalità per semplificare la gestione. Vai a Impostazioni > domini e quindi seleziona un dominio per ottenere ulteriori informazioni sul dominio e sull'integrità del dominio.
 
 :::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Pagina dei dettagli dei domini per contoso.com":::
 
 ### <a name="docs-training-and-videos-july-2020"></a>Documenti, formazione e video (luglio 2020)
 
-Novità della serie di video [di Microsoft 365:](https://youtu.be/m1Nu8WJgCDY) questo mese vengono trattate la nuova esperienza Yammer per il Web e i dispositivi mobili, come integrare l'app Community Yammer per Microsoft Teams, nuovi pacchetti di criteri per supportare firstline worker e manager e altro ancora.
+Novità di una serie di video di Microsoft 365: questo mese vengono trattate la nuova esperienza di Yammer per il Web e i dispositivi mobili, come integrare [l'app](https://youtu.be/m1Nu8WJgCDY) community di Yammer per Microsoft Teams, nuovi pacchetti di criteri per supportare firstline worker e manager e altro ancora.
 
 ## <a name="june-2020"></a>Giugno 2020
 
-### <a name="keeping-up-with-office-whats-new-management"></a>Tenere il passo con la gestione delle novità di Office
+### <a name="keeping-up-with-office-whats-new-management"></a>Tenere il passo con Office what's new management
 
-Alcuni mesi fa è stata aggiunta un'impostazione che consente di gestire i messaggi Novità visualizzati nelle app di Office di un utente. Questo mese è stata rilasciata una nuova scheda home page che consente di agire rapidamente e tenere traccia dei messaggi Novità che si desidera visualizzare agli utenti **dell'organizzazione.**
+Alcuni mesi fa, è stata aggiunta un'impostazione che consente di gestire i messaggi Novità visualizzati nelle app Office di un utente. Questo mese è stata rilasciata una nuova scheda home page che consente di agire rapidamente e tenere traccia dei messaggi Novità che si desidera visualizzare agli utenti **dell'organizzazione.**
 
 ### <a name="docs-training-and-videos-june"></a>Documenti, formazione e video (giugno)
 
@@ -237,20 +237,20 @@ Alcuni mesi fa è stata aggiunta un'impostazione che consente di gestire i messa
 
 ### <a name="new-update-channel-for-office"></a>Nuovo canale di aggiornamento per Office
 
-Il 12 maggio è stata annunciata la disponibilità di un nuovo canale di aggiornamento per Office: Canale Enterprise mensile. Questo canale di aggiornamento fornisce agli utenti nuove funzionalità di Office una volta al mese, il secondo martedì del mese.
+Il 12 maggio è stata annunciata la disponibilità di un nuovo canale di aggiornamento per Office: Canale Enterprise mensile. Questo canale di aggiornamento fornisce agli utenti nuove funzionalità Office una volta al mese, il secondo martedì del mese.
 
-Se si consente agli utenti di installare Autonomamente Office dal portale, è possibile selezionare Canale Enterprise mensile per loro. A tale scopo, accedere all'interfaccia di amministrazione di Microsoft 365 e passare a **Mostra** tutte le impostazioni dell'organizzazione Impostazioni organizzazione  >   >    >  **Servizi**  >  **Impostazioni di download software di Office.** Se si seleziona **Una volta al mese (Canale Enterprise mensile),** tutte le nuove installazioni self-install di Office verranno configurate per l'utilizzo del Canale Enterprise mensile.
+Se si consente agli utenti di installare automaticamente Office dal portale, è possibile selezionare Canale Enterprise mensile. A tale scopo, accedere all'interfaccia di amministrazione Microsoft 365 e passare a **Mostra** tutte le Impostazioni  >   >  **impostazioni dell'organizzazione**  >  **Servizi**  >  **Office impostazioni di download software**. Se si seleziona Una volta al mese **(Canale** Enterprise mensile), tutte le nuove installazioni self-install di Office verranno configurate per l'utilizzo del Canale Enterprise mensile.
 
-In combinazione con il rilascio del Canale Enterprise mensile, stiamo anche rivedendo i nomi dei canali di aggiornamento esistenti. Ad esempio, Canale mensile viene rinominato Canale corrente. I nuovi nomi hanno effetto il 9 giugno 2020.
+In combinazione con il rilascio di Monthly Enterprise Channel, stiamo anche rivedendo i nomi dei canali di aggiornamento esistenti. Ad esempio, Canale mensile viene rinominato Canale corrente. I nuovi nomi hanno effetto il 9 giugno 2020.
 
 Per altre informazioni, vedere [Modifiche ai canali di aggiornamento per Microsoft 365 Apps](/DeployOffice/update-channels-changes).
 
 ### <a name="new-admin-roles"></a>Nuovi ruoli di amministratore
 
-Abbiamo aggiunto alcuni nuovi ruoli di amministratore di Azure Active Directory all'interfaccia di amministrazione di Microsoft 365.
+Abbiamo aggiunto alcuni nuovi ruoli di Azure Active Directory'interfaccia Microsoft 365 di amministrazione.
 
 - Il ruolo di amministratore dell'identità ibrida consente agli utenti di gestire il provisioning cloud e i servizi di autenticazione.
-- Il ruolo di amministratore di rete consente agli utenti di gestire i percorsi di rete ed esaminare le informazioni dettagliate sulla rete per Microsoft 365 Software as a Service apps.
+- Il ruolo di amministratore di rete consente agli utenti di gestire i percorsi di rete ed esaminare le informazioni dettagliate di rete Microsoft 365 software come app di servizio.
 - Il ruolo di amministratore della stampante concede l'autorizzazione per gestire tutti gli aspetti delle stampanti e delle connessioni alle stampanti.
 - Il tecnico della stampante è un sottoinsieme del ruolo di amministratore della stampante in cui tali utenti possono registrare e annullare la registrazione delle stampanti e aggiornare lo stato della stampante.
 Per ulteriori informazioni su questi ruoli, vedere [Informazioni sui ruoli di amministratore.](./add-users/about-admin-roles.md)
@@ -261,18 +261,18 @@ Molti amministratori hanno sentito dire che devono condividere informazioni sui 
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 Solution and Architecture Center
 
-Proprio questo mese è stato rilasciato un nuovo sito denominato Centro soluzioni e architettura [https://docs.microsoft.com]() [di Microsoft 365,](../solutions/index.yml)che riunisce le indicazioni tecniche necessarie per comprendere, pianificare e implementare soluzioni Microsoft 365 integrate per la collaborazione sicura e conforme. In questo centro troverai:
+Proprio questo mese è stato rilasciato un nuovo sito denominato centro soluzioni e architettura [https://docs.microsoft.com]() [di Microsoft 365,](../solutions/index.yml)che riunisce le indicazioni tecniche necessarie per comprendere, pianificare e implementare soluzioni Microsoft 365 integrate per una collaborazione sicura e conforme. In questo centro troverai:
 
 - Linee guida per le soluzioni di base
 - Soluzioni del carico di lavoro e indicazioni per gli scenari
 - Illustrazioni di soluzioni e architetture (poster!!!)
 - Indicazioni specifiche del settore
-- Entità di progettazione dell'architettura aziendale
+- Enterprise di progettazione dell'architettura
 
 ### <a name="docs-training-and-videos-may"></a>Documenti, formazione e video (maggio)
 
-- Novità della **serie di video di Microsoft 365**: questo mese vengono trattate le nuove esperienze di supporto nell'amministratore di Teams e nei Centri sicurezza e conformità, integrazione di Planner con il Centro messaggi e il nuovo layout video 3x3 in Microsoft Teams. 
-- La pagina hub della Guida dell'interfaccia di amministrazione di [Microsoft 365](./index.yml) è stata aggiornata per aiutarti a trovare più rapidamente ciò di cui hai bisogno. E se vai a vedere la pagina in questo momento, abbiamo aggiunto una scheda per informarti degli aggiornamenti e delle modifiche importanti.
+- Novità della serie di video Microsoft 365 : questo mese vengono trattate le nuove esperienze di supporto **nell'amministratore** di Teams e nei Centri sicurezza e conformità, integrazione di Planner con il Centro messaggi e il nuovo layout video 3x3 in Microsoft Teams. 
+- La [Microsoft 365 dell'hub dell'interfaccia](./index.yml) di amministrazione è stata aggiornata per aiutarti a trovare più rapidamente ciò di cui hai bisogno. E se vai a vedere la pagina in questo momento, abbiamo aggiunto una scheda per informarti degli aggiornamenti e delle modifiche importanti.
 
 ## <a name="april-2020"></a>Aprile 2020
 
@@ -280,7 +280,7 @@ Proprio questo mese è stato rilasciato un nuovo sito denominato Centro soluzion
 
 [Aprile 2020](#april-2020)
 
-Beh, l'abbiamo fatto! Abbiamo fatto il secondo passo verso un'esperienza di ruoli unificati ed è ora possibile gestire i ruoli di Intune nell'interfaccia di amministrazione di Microsoft 365. È inoltre possibile sfruttare funzionalità quali la possibilità di cercare ruoli e visualizzare le autorizzazioni di ruolo. Ciò significa che non sono necessari due strumenti separati per gestire i ruoli per Microsoft 365 e Intune. Quando accedi all'interfaccia di amministrazione di Microsoft 365, vedrai che nella pagina Ruoli sono presenti due pivot, uno per Azure AD e uno per Intune.
+Beh, l'abbiamo fatto! Abbiamo fatto il secondo passo verso un'esperienza di ruoli unificati e ora puoi gestire i ruoli di Intune nell'Microsoft 365 di amministrazione. È inoltre possibile sfruttare funzionalità quali la possibilità di cercare ruoli e visualizzare le autorizzazioni di ruolo. Ciò significa che non sono necessari due strumenti separati per gestire i ruoli per Microsoft 365 e Intune. Quando accedi all'interfaccia di amministrazione di Microsoft 365, vedrai che nella pagina Ruoli sono presenti due pivot, uno per Azure AD e uno per Intune.
 
 ![Pagina Ruoli con il pivot di Intune selezionato](../media/MAC-WN-IntuneRoles.png)
 
@@ -290,23 +290,23 @@ A partire da maggio, gli amministratori in versione mirata inizieranno a vedere 
 
 [Partecipa a Targeted Release](manage/release-options-in-office-365.md) per iniziare!
 
-### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"Serve aiuto?" avviato nell'interfaccia di amministrazione di Teams & centro sicurezza e conformità
+### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"Serve aiuto?" avviato nell'Teams di amministrazione & centro sicurezza e conformità
 
-L'interfaccia di amministrazione di Teams, il Centro sicurezza e il Centro conformità ora usano la stessa "Serve assistenza?" funzionalità utilizzata dall'interfaccia di amministrazione di Microsoft 365 per trovare assistenza e contattare il supporto tecnico. Abbiamo ricevuto molti feedback dagli amministratori che desiderano lo stesso livello di assistenza e supporto e siamo lieti di fornire questo feedback. Provalo e inviaci il tuo feedback.
+L'Teams di amministrazione, il Centro sicurezza e il Centro conformità ora usano la stessa "Serve assistenza?" che l'Microsoft 365 di amministrazione usa per trovare assistenza e contattare il supporto. Abbiamo ricevuto molti feedback dagli amministratori che desiderano lo stesso livello di assistenza e supporto e siamo lieti di fornire questo feedback. Provalo e inviaci il tuo feedback.
 
 #### <a name="need-chat"></a>Hai bisogno di chat?
 
-I nostri agenti di supporto hanno lavorato da casa, pur continuando a prendere casi dei clienti e limitazioni sulla larghezza di banda Internet mentre lavorano da casa possono influire sulla qualità delle chiamate dei clienti. Per continuare a supportare l'utente, è stata avviata l'opzione di supporto live chat per i clienti commerciali nell'interfaccia di amministrazione di Microsoft 365.
+I nostri agenti di supporto hanno lavorato da casa, pur continuando a prendere casi dei clienti e limitazioni sulla larghezza di banda Internet mentre lavorano da casa possono influire sulla qualità delle chiamate dei clienti. Per continuare a supportare l'utente, è stata avviata l'opzione di supporto chat live per i clienti commerciali nell'Microsoft 365 di amministrazione.
 
 Durante la creazione di una richiesta di servizio, ora vedrai la chat come opzione, oltre al telefono e alla posta elettronica. Seleziona la chat come canale di comunicazione preferito e crea la richiesta. Dopo aver creato la richiesta, puoi avviare la chat quando sei pronto per chattare con gli agenti Microsoft.
 
-### <a name="teams-updates"></a>Aggiornamenti di Teams
+### <a name="teams-updates"></a>Teams aggiornamenti
 
-Con il maggiore utilizzo di Teams, sono state aggiunte alcune funzionalità che consentono di gestirle.
+Con l'aumento dell'Teams, sono state aggiunte alcune funzionalità che consentono di gestirle.
 
-- Una nuova scheda consigliata nella home page dell'interfaccia di amministrazione mostra quali utenti non hanno utilizzato attivamente Teams per 30 giorni. È possibile inviare a tali utenti un messaggio di posta elettronica di formazione per iniziare a usare Teams.
-- **Riunire le persone** con  i team: passare a Installazione per visualizzare una nuova pagina che consente di attivare Teams per gli utenti con licenza e consentire l'accesso guest, in modo da poter collaborare con clienti esterni in Teams.
-- Una scheda di Microsoft Teams viene ora aggiunta per impostazione predefinita alla home page. Mostra se Teams è attivato e se è consentito l'accesso guest. Consente inoltre di controllare lo stato di installazione per gli utenti di Teams appena concessi in licenza e di verificare se i problemi di rete potrebbero influire sugli utenti di Teams.
+- Una nuova scheda di raccomandazione nella home page dell'interfaccia di amministrazione mostra quali utenti non hanno utilizzato attivamente Teams per 30 giorni. È possibile inviare a tali utenti un messaggio di posta elettronica di formazione per iniziare a usare Teams.
+- **Riunire** gli utenti con  i team : passare al programma di installazione per visualizzare una nuova pagina che consente di attivare Teams per gli utenti con licenza e consentire l'accesso guest, in modo da poter collaborare con clienti esterni in Teams.
+- Una Microsoft Teams viene ora aggiunta per impostazione predefinita alla home page. Indica se l Teams è attivato e se è consentito l'accesso guest. Consente inoltre di controllare lo stato di installazione per gli utenti Teams con licenza e di verificare se i problemi di rete potrebbero influire Teams utenti.
 - Infine, Teams è ora un passaggio del flusso di configurazione iniziale se hai acquistato una licenza che include Teams.
 
 ### <a name="productivity-score"></a>Punteggio di produttività
@@ -318,23 +318,23 @@ Il punteggio di produttività fornisce informazioni dettagliate su come gli uten
 - Nuova categoria Comunicazioni nell'ambito dell'esperienza dei dipendenti
 - Dettagli utente con metadati dell'organizzazione nelle categorie Esperienza dipendente
 
-Per altre informazioni, vedere il blog: Misurare e migliorare l'esperienza di [Microsoft 365 con Microsoft Productivity Score](https://techcommunity.microsoft.com/t5/microsoft-365-blog/measure-and-improve-the-microsoft-365-experience-with-microsoft/ba-p/1348618). Il punteggio di produttività è attualmente in anteprima privata. [Partecipa all'anteprima privata del punteggio produttività](https://aka.ms/productivityscorepreview) per iniziare.
+Per altre informazioni, vedere il blog: Misurare e migliorare l'esperienza Microsoft 365 [con Microsoft Productivity Score](https://techcommunity.microsoft.com/t5/microsoft-365-blog/measure-and-improve-the-microsoft-365-experience-with-microsoft/ba-p/1348618). Il punteggio di produttività è attualmente in anteprima privata. [Partecipa all'anteprima privata del punteggio produttività](https://aka.ms/productivityscorepreview) per iniziare.
 
 ### <a name="groups-updates"></a>Aggiornamenti dei gruppi
 
 Abbiamo due aggiornamenti per i gruppi questo mese:
 
-- È ora possibile modificare gli indirizzi di posta elettronica per i gruppi di Office 365 (noti anche come gruppi in Outlook e presto noti come gruppi di Microsoft 365).
+- È ora possibile modificare gli indirizzi di posta elettronica per Office 365 (noti anche come gruppi in Outlook e presto noti come Microsoft 365 gruppi).
 - Abbiamo ascoltato il tuo feedback e abbiamo aggiunto messaggi di errore più chiari per il motivo per cui non puoi convertire un gruppo in un team Microsoft.
 
 ### <a name="docs-videos-and-training-april"></a>Documentazione, video e formazione (aprile)
 
-Novità della **serie di video di Microsoft 365**: questo mese vengono forniti suggerimenti e risorse per aiutare le piccole aziende a passare al lavoro remoto, tra cui come implementare Microsoft Teams, risorse di formazione sul lavoro remoto per rimanere in contatto con clienti e partner e il nuovo piano di Microsoft 365 Business Voice. [Novità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+Novità della serie **di video Microsoft 365**: questo mese vengono forniti suggerimenti e risorse per aiutare le piccole aziende a passare al lavoro remoto, tra cui come implementare Microsoft Teams, risorse di formazione sul lavoro remoto per rimanere in contatto con clienti e partner e il nuovo piano di Microsoft 365 Business Voice. [Novità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 #### <a name="for-your-users"></a>Per gli utenti
 
 - [Pianificare una riunione](../business-video/schedule-guest-meeting.md)
-- [Partecipare a una riunione di Teams](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Partecipare a una Teams riunione](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
 - [Creare un team di tutta l'organizzazione](../business-video/org-wide-team.md)
 - [Creare un team con utenti guest](../business-video/team-with-guests.md)
 - [Partecipare a un team come guest](../business-video/join-team-guest.md)
@@ -342,7 +342,7 @@ Novità della **serie di video di Microsoft 365**: questo mese vengono forniti s
 
 #### <a name="for-admins-and-business-owners"></a>Per amministratori e proprietari di aziende
 
-- [Potenziare le piccole aziende con il lavoro remoto](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [Aumentare la produttività di un'azienda di piccole dimensioni con il lavoro remoto](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [Esecuzione di una piccola azienda remota](../business-video/sign-up.md)
 - [Iscriversi a Microsoft Business Basic](../business-video/sign-up.md)
 - [Configurazione dell'accesso a due fattori](../business-video/sign-up.md)
@@ -355,15 +355,15 @@ Abbiamo ricevuto molti commenti e suggerimenti dagli amministratori sulla diffic
 
 ![Aggiungere la pagina di conferma dell'utente con l'errore.](../media/MAC-WN-ImprovedLicensing.png)
 
-### <a name="microsoft-teams-home-page-card"></a>Home page di Microsoft Teams
+### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams home page
 
-Con l'uptick nell'utilizzo di Teams, alcune organizzazioni riceveranno una scheda dashboard aggiunta che rende Teams più individuabile. La scheda include anche collegamenti alla formazione e ai documenti per facilitare la transizione dell'organizzazione al lavoro remoto. Basta passare alla **home** page per visualizzare la nuova scheda.
+Con l'uptick nell'Teams, alcune organizzazioni riceveranno una scheda del dashboard aggiunta che rende più Teams più individuabile. La scheda include anche collegamenti alla formazione e ai documenti per facilitare la transizione dell'organizzazione al lavoro remoto. Basta passare alla **home** page per visualizzare la nuova scheda.
 
-![Home page di Microsoft Teams](../media/MAC-WN-TeamsCard.PNG)
+![Microsoft Teams home page](../media/MAC-WN-TeamsCard.PNG)
 
-### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personalizzare il tema dell'app per dispositivi mobili di SharePoint dell'organizzazione
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personalizzare il tema dell'app SharePoint per dispositivi mobili dell'organizzazione
 
-Utilizzando l'interfaccia di amministrazione di Microsoft 365, è ora possibile personalizzare il tema dell'organizzazione nell'app per dispositivi mobili di SharePoint per iOS e app sharePoint per dispositivi mobili per Android. Questa funzionalità offre comodamente un'esperienza di app Intranet per dispositivi mobili che può corrispondere a SharePoint Online per i dipendenti in viaggio. La personalizzazione del tema include l'immagine del logo, il colore della barra di spostamento, i colori del testo e dell'icona e i colori principale, semplificando il riconoscimento.
+Usando l'Microsoft 365 di amministrazione, ora puoi personalizzare il tema dell'organizzazione in SharePoint app per dispositivi mobili per iOS e SharePoint per dispositivi mobili per Android. Questa funzionalità offre comodamente un'esperienza di app Intranet per dispositivi mobili che può corrispondere al tuo SharePoint Online per i dipendenti in viaggio. La personalizzazione del tema include l'immagine del logo, il colore della barra di spostamento, i colori del testo e dell'icona e i colori principale, semplificando il riconoscimento.
 
 ![Diagramma che mappa le impostazioni dell'interfaccia di amministrazione all'app per dispositivi mobili.](../media/MAC-WN-CustThemeSP.png)
 
@@ -371,11 +371,11 @@ Utilizzando l'interfaccia di amministrazione di Microsoft 365, è ora possibile 
 
 Quando gli amministratori hanno creato un nuovo gruppo e lo hanno reso un team contemporaneamente, possono assegnare ai proprietari che non dispongono di una licenza che include Teams. E questo ha creato qualche mal di testa. Il flusso della procedura guidata è stato aggiornato per verificare che i proprietari hanno una licenza di Teams e se non hanno la possibilità di trasformare il gruppo in un team è disabilitato.
 
-### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Offerte di Microsoft 365 per piccole e medie imprese
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365 offerte per piccole e medie imprese
 
 Sappiamo che si tratta di un annuncio per il mese prossimo, ma vogliamo essere certi di essere pronti.
 
-A partire dal 21 aprile, vengono apportate modifiche relative agli abbonamenti a Office 365 per le piccole e medie imprese e a Office 365 ProPlus. Questi prodotti useranno ora il marchio Microsoft 365.
+A partire dal 21 aprile, stiamo apportando modifiche relative alle sottoscrizioni Office 365 per le piccole e medie imprese e a Office 365 ProPlus. Questi prodotti useranno ora il marchio Microsoft 365.
 
 I nuovi nomi di prodotto vengono validi il 21 aprile 2020. Si tratta di una modifica solo al nome del prodotto e al momento non sono presenti modifiche ai prezzi o alle funzionalità.
 
@@ -385,11 +385,11 @@ I nuovi nomi di prodotto vengono validi il 21 aprile 2020. Si tratta di una modi
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
 |Office 365 Business     |    Microsoft 365 Apps for business       |
-|Office 365 ProPlus    |   App di Microsoft 365 per le aziende      |
+|Office 365 ProPlus    |   Microsoft 365 app per le aziende      |
 
 ### <a name="videos-training-and-docs"></a>Video, formazione e documenti
 
-Novità della [serie Web Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096): nell'episodio di questo mese, viene evidenziato l'anniversario di 3 anni di Microsoft Teams e vengono trattate nuove funzionalità, tra cui la qualità audio migliorata nelle riunioni online, le comunicazioni mirate per i manager di prima linea con l'app Turni, l'interoperabilità consumer di Teams e Skype e altro ancora.
+Novità della serie Web Microsoft 365 : nell'episodio di questo mese, viene evidenziato l'anniversario di 3 anni di Microsoft Teams e vengono trattate le nuove funzionalità, tra cui la qualità audio migliorata nelle riunioni online, le comunicazioni mirate per i manager di prima linea con [l'app](https://go.microsoft.com/fwlink/p/?linkid=2118096)Turni, l'interoperabilità degli utenti di Teams e Skype e altro ancora.
 
 ## <a name="february-2020"></a>Febbraio 2020
 
@@ -399,7 +399,7 @@ Abbiamo ricevuto molti feedback da partner e amministratori sulle sfide della ge
 > [!TIP]
 > Non è necessario eseguire alcun'operazione per fare in modo che il commutatore dell'organizzazione venga visualizzato purché si sia il Partner of Record per almeno un'organizzazione.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare il nome dell'organizzazione.
+1. Nell'Microsoft 365 di amministrazione selezionare il nome dell'organizzazione.
 ![Acquisizione schermo: nella parte superiore della home page viene visualizzato il nome del profilo dell'organizzazione con l'icona del commutatore.](../media/MAC-Organization-switcher.png)
 
 2. Nel commutatore dell'organizzazione selezionare l'organizzazione che si desidera gestire.
@@ -412,10 +412,10 @@ Abbiamo ricevuto molti feedback da partner e amministratori sulle sfide della ge
 Un paio di modifiche nell'area dei gruppi questo mese:
 
 - **Ordina per nome gruppo**: è possibile ordinare l'elenco dei gruppi in ordine alfabetico selezionando la **colonna Nome** gruppo.
-- **Ripristinare i gruppi di Microsoft 365** eliminati: non è più necessario accedere all'interfaccia di amministrazione di Exchange per ripristinare i gruppi di Microsoft 365 eliminati. Passare a Interfaccia di amministrazione di **Microsoft 365** Gruppi eliminati \>  \>  \> gruppi (selezionare un gruppo dall'elenco) \> **Ripristina gruppo**. Il gruppo verrà ripristinato  nell'elenco Gruppi e verrà ripristinato il messaggio di posta elettronica, le conversazioni, il blocco appunti, i file e il calendario del gruppo.
+- **Ripristinare i Microsoft 365** eliminati : non è più necessario accedere all'interfaccia di amministrazione di Exchange per ripristinare i gruppi Microsoft 365 eliminati. Vai a **Microsoft 365'interfaccia** di amministrazione Gruppi eliminati \>  \>  \> gruppi (selezionare un gruppo dall'elenco) \> **Ripristina gruppo**. Il gruppo verrà ripristinato  nell'elenco Gruppi e verrà ripristinato il messaggio di posta elettronica, le conversazioni, il blocco appunti, i file e il calendario del gruppo.
 
 ### <a name="videos-training-and-docs-february"></a>Video, formazione e documenti (febbraio)
 
-- Novità della **serie di video di Microsoft 365**: questo mese, sono incentrate sulle funzionalità di ricerca personalizzate per SharePoint Online, la funzionalità di gestione di Office "Novità" che consente di visualizzare o nascondere funzionalità specifiche agli utenti finali tramite il riquadro della Guida in-app, gli aggiornamenti più recenti della sicurezza e della conformità in Yammer e altro ancora. Ecco l'ultimo episodio: [Novità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- Novità di una **serie di video** di Microsoft 365 : questo mese ci concentriamo sulle funzionalità di ricerca personalizzate per SharePoint Online, sulla funzionalità di gestione "Novità" di Office che consente di visualizzare o nascondere funzionalità specifiche agli utenti finali tramite il riquadro della Guida in-app, gli aggiornamenti più recenti della sicurezza e della conformità in Yammer e altro ancora. Ecco l'ultimo episodio: [Novità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
-- **Spostamento documenti:** gli articoli Web di amministrazione di Office 365 sono stati combinati con il contenuto di Microsoft 365 e il nuovo URL potrebbe essere stato notato. Ad esempio, questo articolo era ospitato in: **docs.microsoft.com/Office365/Admin/whats-new-in-preview**, ma l'URL è ora: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. Se sono disponibili pagine con segnalibri, è consigliabile aggiornare i collegamenti. Tuttavia, i collegamenti al contenuto verranno reindirizzati al nuovo repo del contenuto.
+- **Spostamento di documenti:** sono stati combinati gli Office 365 web di amministrazione con il contenuto Microsoft 365 e potresti aver notato il nuovo URL. Ad esempio, questo articolo era ospitato in: **docs.microsoft.com/Office365/Admin/whats-new-in-preview**, ma l'URL è ora: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. Se sono disponibili pagine con segnalibri, è consigliabile aggiornare i collegamenti. Tuttavia, i collegamenti al contenuto verranno reindirizzati al nuovo repo del contenuto.

@@ -19,12 +19,12 @@ description: Informazioni su come trovare e utilizzare i report di sicurezza del
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d9f6d12fef8a2ef6241fbbd5e0e2a980284e9cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206242"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531027"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -42,7 +42,7 @@ Nel Centro sicurezza e conformità è disponibile [un'ampia](https://protection.
 ## <a name="compromised-users-report"></a>Report utenti compromessi
 
 > [!NOTE]
-> Questo report è disponibile nelle organizzazioni di Microsoft 365 con cassette postali di Exchange Online. Non è disponibile nelle organizzazioni autonome di Exchange Online Protection (EOP).
+> Questo report è disponibile nelle organizzazioni Microsoft 365 con Exchange Online cassette postali. Non è disponibile nelle organizzazioni autonome Exchange Online Protection (EOP).
 
 Il **report Utenti compromessi** mostra il numero di  account  utente contrassegnati come sospetti o con restrizioni negli ultimi 7 giorni. Gli account in uno di questi stati sono problematici o addirittura compromessi. Con un uso frequente, è possibile utilizzare il report per individuare picchi e persino tendenze in account sospetti o con restrizioni. Per ulteriori informazioni sugli utenti compromessi, vedere [Risposta a un account di posta elettronica compromesso.](responding-to-a-compromised-email-account.md)
 
@@ -72,9 +72,9 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
 ## <a name="encryption-report"></a>Report crittografia
 
-Il **report Crittografia** è disponibile in EOP (sottoscrizioni con cassette postali in Exchange Online o EOP autonomo senza cassette postali di Exchange Online). Il team di sicurezza dell'organizzazione può utilizzare le informazioni contenute in questo report per identificare i modelli e applicare o modificare in modo proattivo i criteri per i messaggi di posta elettronica sensibili. Ad esempio:
+Il **report Crittografia** è disponibile in EOP (sottoscrizioni con cassette postali in Exchange Online o EOP autonomo senza Exchange Online cassette postali). Il team di sicurezza dell'organizzazione può utilizzare le informazioni contenute in questo report per identificare i modelli e applicare o modificare in modo proattivo i criteri per i messaggi di posta elettronica sensibili. Ad esempio:
 
-- Se viene visualizzato un numero elevato di messaggi di posta elettronica crittografati dagli utenti, è possibile aggiungere un criterio di crittografia per automatizzare la crittografia per determinati casi di utilizzo. Per ulteriori informazioni, vedere [Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Microsoft 365.](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
+- Se viene visualizzato un numero elevato di messaggi di posta elettronica crittografati dagli utenti, è possibile aggiungere un criterio di crittografia per automatizzare la crittografia per determinati casi di utilizzo. Per ulteriori informazioni, vedere [Define mail flow rules to encrypt email messages in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
 - Se sono disponibili diversi modelli di crittografia ma nessuno li utilizza, è possibile verificare se gli utenti necessitano di formazione delle funzionalità.
 
@@ -82,7 +82,7 @@ La visualizzazione aggregata consente il filtro per gli ultimi 90 giorni, mentre
 
 Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare **a** \> **Dashboard report** e selezionare **Report di crittografia.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=EncryptionReport> .
 
-Per ulteriori informazioni sulla crittografia, vedere [Crittografia della posta elettronica in Microsoft 365.](../../compliance/email-encryption.md)
+Per ulteriori informazioni sulla crittografia, vedere [Crittografia della posta elettronica in Microsoft 365](../../compliance/email-encryption.md).
 
 ### <a name="report-view-for-the-encryption-report"></a>Visualizzazione report per il report Crittografia
 
@@ -104,7 +104,7 @@ Nel grafico è possibile utilizzare i filtri seguenti:
   - **Non inoltrare**
   - **Crittografa solo**
   - **OME precedente**
-  - **Personalizzata**
+  - **Personalizzato**
 
   Se si fa **clic su Filtri**, è possibile modificare il grafico con i filtri seguenti:
 
@@ -149,7 +149,7 @@ Il **rapporto sullo stato del flusso di posta** contiene informazioni su malware
 
 ## <a name="malware-detections-in-email-report"></a>Rilevamenti di malware nel report di posta elettronica
 
-Il **rapporto Rilevamenti malware nel** rapporto di posta elettronica mostra informazioni sui rilevamenti di malware nei messaggi di posta elettronica in arrivo e in uscita (malware rilevato da Exchange Online Protection o EOP). Per ulteriori informazioni sulla protezione da malware in EOP, vedere [Protezione antimalware in EOP.](anti-malware-protection.md)
+Il **rapporto Rilevamenti malware nel** report di posta elettronica mostra informazioni sui rilevamenti di malware nei messaggi di posta elettronica in arrivo e in uscita (malware rilevato da Exchange Online Protection o EOP). Per ulteriori informazioni sulla protezione da malware in EOP, vedere [Protezione antimalware in EOP.](anti-malware-protection.md)
 
  Il filtro di visualizzazione aggregata consente 90 giorni, mentre il filtro della tabella dei dettagli consente solo 10 giorni.
 
@@ -246,48 +246,64 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
 ## <a name="spoof-detections-report"></a>Report rilevamenti di spoofing
 
-Il **report Rilevamenti di** spoofing mostra il numero di messaggi di posta contraffatti rilevati e di quelli considerati "buoni" (messaggi di spoofing per motivi aziendali legittimi). Per ulteriori informazioni sullo spoofing, vedere [Protezione anti-spoofing in EOP.](anti-spoofing-protection.md)
+> [!NOTE]
+> Il report dei rilevamenti di spoofing migliorato, come descritto in questo articolo, è in Anteprima, è soggetto a modifiche e non è disponibile in tutte le organizzazioni. La versione precedente del report mostrava solo **Posta buona** e Posta indesiderata rilevata come **posta indesiderata.**
 
-La visualizzazione aggregata del report consente 90 giorni di filtro, mentre la visualizzazione dettagli consente solo dieci giorni di filtro.
+Il **report Rilevamenti di** spoofing mostra informazioni sui messaggi bloccati o consentiti a causa dello spoofing. Per ulteriori informazioni sullo spoofing, vedere [Protezione anti-spoofing in EOP.](anti-spoofing-protection.md)
+
+La visualizzazione aggregata del report consente 45 giorni di filtro, mentre la visualizzazione dettagli consente solo <sup>\*</sup> dieci giorni di filtro.
+
+<sup>\*</sup> Infine, sarà possibile utilizzare fino a 90 giorni di filtro.
 
 Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare **a** \> **Dashboard report** e selezionare **Rilevamenti spoofing**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=SpoofMailReport> .
 
 ![Widget Rilevamenti di spoofing nel dashboard dei report](../../media/spoof-detections-widget.png)
 
-Quando si passa il puntatore del mouse su un giorno (punto dati) nel grafico, è possibile visualizzare il numero di messaggi di posta contraffatti ricevuti.
+Quando si passa il mouse su un giorno (punto dati) nel grafico, è possibile vedere quanti messaggi falsificati sono stati rilevati e perché.
 
 È possibile filtrare sia il grafico che la tabella dei dettagli facendo clic su **Filtri** e selezionando uno o più dei valori seguenti:
 
 - **Data di inizio** e **Data fine**
 
-- **Posta buona**
+- **Risultato**
+  - **Pass**
+  - **Fail**
+  - **SoftPass**
+  - **Nessuna**
+  - **Altro**
 
-- **Intercettato come posta indesiderata**
+- **Tipo spoof**: **interno** ed **esterno**
 
 ![Visualizzazione report nel report Rilevamenti spoofing](../../media/spoof-detections-report-view.png)
 
 Se si fa **clic su Visualizza tabella dettagli**, è possibile visualizzare i dettagli seguenti:
 
 - **Data**
-- **Mittente contraffatto**
-- **True sender**
-- **Indirizzo IP mittente**
-- **Azione**
+- **Utente contraffatto**
+- **Infrastruttura di invio**
+- **Tipo spoofing**
+- **Risultato**
+- **Codice risultato**
+- **SPF**
+- **DKIM**
+- **DMARC**
 - **Conteggio messaggi**
 
 Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
+Per ulteriori informazioni sui codici dei risultati dell'autenticazione composita, vedere Intestazioni dei messaggi di posta indesiderata [in Microsoft 365](anti-spam-message-headers.md).
+
 ## <a name="threat-protection-status-report"></a>Report dello stato di protezione dalle minacce
 
-La **relazione sullo stato di Protezione** dalle minacce è disponibile sia in EOP che in Microsoft Defender per Office 365. Tuttavia, i report contengono dati diversi. Ad esempio, i clienti EOP possono visualizzare le informazioni sul malware rilevato nella posta elettronica, ma non informazioni sui file dannosi rilevati da Allegati sicuri [per SharePoint, OneDrive e Microsoft Teams.](mdo-for-spo-odb-and-teams.md)
+La **relazione sullo stato di Protezione** dalle minacce è disponibile sia in EOP che in Microsoft Defender per Office 365; Tuttavia, i report contengono dati diversi. Ad esempio, i clienti EOP possono visualizzare le informazioni sul malware rilevato nella posta elettronica, ma non informazioni sui file dannosi rilevati dagli allegati sicuri per [SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)e Microsoft Teams .
 
-Il report fornisce il conteggio dei messaggi di posta elettronica con contenuto dannoso, ad esempio file o indirizzi di siti Web (URL) che sono stati bloccati [](safe-attachments.md)dal motore antimalware, eliminazione automatica a zero ore [(ZAP)](zero-hour-auto-purge.md)e funzionalità di Defender per Office 365 come collegamenti [sicuri,](safe-links.md)allegati sicuri e [anti-phishing.](set-up-anti-phishing-policies.md) È possibile utilizzare queste informazioni per identificare le tendenze o determinare se i criteri dell'organizzazione devono essere rettificati.
+Il report fornisce il conteggio dei messaggi di posta elettronica con contenuto dannoso, ad esempio file o indirizzi di siti Web (URL) bloccati dal motore [](safe-attachments.md)antimalware, eliminazione automatica a zero ore [(ZAP)](zero-hour-auto-purge.md)e Defender per funzionalità di Office 365 come collegamenti [sicuri,](safe-links.md)allegati sicuri e [anti-phishing.](set-up-anti-phishing-policies.md) È possibile utilizzare queste informazioni per identificare le tendenze o determinare se i criteri dell'organizzazione devono essere rettificati.
 
 **Nota:** è importante comprendere che se un messaggio viene inviato a cinque destinatari, viene conteggiato come cinque messaggi diversi e non un messaggio.
 
 Per visualizzare il report, aprire [il Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard  \> **report** e selezionare **Stato di Protezione dalle minacce**. Per passare direttamente al report, aprire uno degli URL seguenti:
 
-- Microsoft Defender per Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- Microsoft Defender per Office 365:<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Widget Stato di Protezione dalle minacce nel dashboard dei report](../../media/threat-protection-status-report-widget.png)
@@ -306,10 +322,10 @@ Sono disponibili le visualizzazioni seguenti:
 
   ![Visualizzazione panoramica nel rapporto sullo stato di Threat Protection](../../media/threat-protection-status-report-overview-view.png)
 
-- **Visualizzare i dati per: Contenuto \> Malware**<sup>1:</sup>vengono visualizzate le informazioni seguenti per Microsoft Defender per le organizzazioni di Office 365:
+- **Visualizzare i dati per: Contenuto \> Malware**<sup>1</sup>: Vengono visualizzate le informazioni seguenti per Microsoft Defender per Office 365 organizzazioni:
 
-  - **Motore antimalware:** file dannosi rilevati in Sharepoint, OneDrive e Microsoft Teams dal rilevamento di [virus incorporato in Microsoft 365.](virus-detection-in-spo.md)
-  - **Detonazione file:** file dannosi rilevati [da allegati sicuri per SharePoint, OneDrive e Microsoft Teams.](mdo-for-spo-odb-and-teams.md)
+  - **Motore antimalware:** file dannosi rilevati in Sharepoint, OneDrive e Microsoft Teams dal rilevamento di [virus incorporato in Microsoft 365](virus-detection-in-spo.md).
+  - **Detonazione file:** file dannosi rilevati dagli allegati sicuri per [SharePoint, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
   ![Visualizzazione malware contenuto nel rapporto sullo stato di Threat Protection](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -329,7 +345,7 @@ Sono disponibili le visualizzazioni seguenti:
 
 - **Scomporsi per: Tecnologia di rilevamento** **e Visualizzazione dati per: E-mail \> Phish**: Vengono visualizzate le seguenti informazioni:
 
-  - **Reputazione URL generata da ATP**<sup>1</sup>: reputazione url dannosa generata dalle detonazioni di Defender per Office 365 in altri clienti di Microsoft 365.
+  - **Reputazione URL generata da ATP**<sup>1</sup>: reputazione url dannosa generata da Defender per Office 365 detonazioni in altri Microsoft 365 clienti.
   - **Filtro phish avanzato:** segnali di phishing basati sull'apprendimento automatico.
   - **Anti-spoof - Errore DMARC**: errore di autenticazione DMARC nei messaggi.
   - **Anti-spoofing - intra-org:** il mittente sta tentando di eseguire lo spoofing del dominio del destinatario.
@@ -347,7 +363,7 @@ Sono disponibili le visualizzazioni seguenti:
 
 - **Scomporsi per: Tecnologia di rilevamento** e Visualizzazione dati per: Malware di posta elettronica : Vengono visualizzate le informazioni seguenti: **\>**
 
-  - **Reputazione file generata da ATP**<sup>1:</sup>tutta la reputazione dei file dannosi generata da Defender per le detonazioni di Office 365.
+  - **Reputazione file generata da ATP**<sup>1:</sup>tutta la reputazione dei file dannosi generata da Defender per Office 365 detonazioni.
   - **Motore antimalware**<sup>1</sup>: Rilevamento da motori antimalware.
   - **Blocco del tipo di file dei** criteri antimalware: si tratta di messaggi di posta elettronica filtrati a causa del tipo di file dannoso identificato nel messaggio.
   - **Detonazione file**<sup>1</sup>: rilevamento tramite allegati sicuri.
@@ -382,9 +398,9 @@ Sono disponibili le visualizzazioni seguenti:
 
   ![Visualizzazione dello stato del recapito per la posta elettronica di phishing nel rapporto sullo stato di Threat Protection](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>1</sup> Defender solo per Office 365
+<sup>1</sup> Defender per Office 365 solo
 
-<sup>2</sup> L'eliminazione automatica a zero ore (ZAP) non è disponibile in EOP autonomo (funziona solo nelle cassette postali di Exchange Online).
+<sup>2</sup> L'eliminazione automatica a zero ore (ZAP) non è disponibile in EOP autonomo (funziona solo in Exchange Online cassette postali).
 
 Se si fa **clic su Filtri**, i filtri disponibili dipendono dal grafico che si stava esaminando:
 
@@ -499,7 +515,7 @@ Per visualizzare questo report, nel [Centro sicurezza & conformità](https://pro
 ![Nel Centro sicurezza & conformità scegliere Gestione delle minacce \> Esaminare i messaggi segnalati \> dall'utente](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> Per il corretto funzionamento del report Messaggi segnalati dall'utente, è necessario che la registrazione di controllo sia **attivata** per l'ambiente office 365. Questa operazione viene in genere eseguita da un utente a cui è assegnato il ruolo Log di controllo in Exchange Online. Per ulteriori informazioni, vedere Attivare o disattivare la ricerca nel log di [controllo di Microsoft 365.](../../compliance/turn-audit-log-search-on-or-off.md)
+> Per il corretto funzionamento del rapporto Messaggi  segnalati dall'utente, è necessario che la registrazione di controllo sia attivata per l'Office 365 locale. Questa operazione viene in genere eseguita da un utente a cui è assegnato il ruolo Log di controllo in Exchange Online. Per ulteriori informazioni, vedere [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quali autorizzazioni sono necessarie per visualizzare questi report?
 
@@ -507,12 +523,12 @@ Per visualizzare e utilizzare i report descritti in questo articolo, è necessar
 
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
-- **Lettore sicurezza**
+- **Ruolo con autorizzazioni di lettura per la sicurezza**
 - **Lettore globale**
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-**Nota:** l'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di  Microsoft 365 offre agli utenti le autorizzazioni necessarie nel Centro sicurezza e conformità di & e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+**Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel Centro sicurezza e conformità di & e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Cosa succede se i report non mostrano dati?
 

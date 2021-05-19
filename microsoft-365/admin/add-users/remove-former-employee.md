@@ -24,41 +24,29 @@ search.appverid:
 - MET150
 - MOE150
 description: Seguire i passaggi descritti in questa soluzione per rimuovere un ex dipendente Microsoft 365 e proteggere i dati dell'organizzazione.
-ms.openlocfilehash: 4b4cf59fdce81b3098ee333095daa8e1af1cd5c5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 79baf5cbd94d555c1dff1859f5045cde3dbcfdc0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241737"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535912"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Panoramica: rimuovere un ex dipendente e proteggere i dati
 
 Una domanda che spesso ci viene data è: "Cosa devo fare per proteggere i dati e proteggere l'accesso quando un dipendente lascia l'organizzazione?" In questa serie di articoli viene illustrato come bloccare l'accesso a Microsoft 365, i passaggi da eseguire per proteggere i dati e come consentire ad altri dipendenti di accedere ai dati.
 
-Guarda un breve video sulla rimozione di un dipendente. <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
-
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
-
-Per impedire a un dipendente di accedere:
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-2. Selezionare la casella accanto al nome dell'utente e quindi selezionare **Reimposta password.**
-3. Immettere una nuova password e quindi selezionare **Reimposta**. Non inviarlo a loro.
-4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella **scheda Account** selezionare **Avvia disconnessione.**
-
-> [!NOTE]
-> È necessario essere un amministratore globale per avviare la disconnessione.
-
-Entro un'ora o dopo aver lasciato la pagina Microsoft 365 corrente in cui si trova, viene richiesto di accedere di nuovo. Un token di accesso è valido per un'ora, quindi la sequenza temporale dipende dal tempo che rimane su quel token e dal fatto che si snavigare fuori dalla pagina Web corrente.
-
-> [!IMPORTANT]
-> Anche se i passaggi di questa soluzione sono stati numerati e non è necessario completare la soluzione utilizzando l'ordine esatto, è consigliabile eseguire la procedura in questo modo.
+:::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot: Overview steps for removing a former employee":::
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 Per completare i passaggi di questa soluzione, è necessario essere un amministratore globale.
+
+## <a name="solution-remove-a-former-employee"></a>Soluzione: rimuovere un ex dipendente
+
+> [!IMPORTANT]
+> Anche se i passaggi di questa soluzione sono stati numerati e non è necessario completare la soluzione utilizzando l'ordine esatto, è consigliabile eseguire la procedura in questo modo.
+
+:::image type="content" source="../../media/delete-user-account.png" alt-text="Screenshot: Steps for removing a former employee from your organization":::
 
 |||
 |:-----|:-----|

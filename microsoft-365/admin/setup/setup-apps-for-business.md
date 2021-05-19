@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni su come configurare la sottoscrizione a Microsoft 365 Apps for business.
-ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9c973866a3bf1008a8c8062e2a5b9e101494d5f9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244480"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535735"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurare Microsoft 365 Apps for business
 
@@ -45,13 +45,13 @@ Gli utenti possono essere aggiunti nella procedura guidata, ma è anche possibil
 
 ::: moniker range="o365-germany"
 
-1. Se si usa Office 365 Germany, passare a questa [interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=848041).
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Se si usa Office 365 gestito da 21Vianet, passare a questa [interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=850627).
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end 
 

@@ -18,19 +18,19 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
 search.appverid: MET150
-description: Informazioni su come esaminare e approvare o rifiutare le richieste di licenza degli utenti per l'abbonamento a Microsoft 365 per le aziende.
+description: Informazioni su come esaminare e approvare o rifiutare le richieste di licenza degli utenti per l'abbonamento Microsoft 365 per le aziende.
 ms.date: 08/07/2020
-ms.openlocfilehash: 06ee210b39c19c1f2c8a2041c463568e55001b6e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331551"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535675"
 ---
 # <a name="manage-license-requests"></a>Gestire le richieste di licenza
 
 > [!NOTE]
-> Le informazioni contenute in questo articolo si applicano solo ai prodotti acquistati in modalità self-service. Per ulteriori informazioni, vedere [Domande frequenti sugli acquisti in self-service.](../subscriptions/self-service-purchase-faq.md)
+> Le informazioni contenute in questo articolo si applicano solo ai prodotti acquistati in modalità self-service. Per ulteriori informazioni, vedere [Domande frequenti sugli acquisti in self-service.](../subscriptions/self-service-purchase-faq.yml)
 
 Se si disabilitano gli acquisti in modalità self-service nell'organizzazione, è possibile utilizzare le richieste di licenze per gestire il processo di richiesta di licenza per gli utenti. Quando un utente tenta di effettuare un acquisto in modalità self-service per un prodotto bloccato, può inviare una richiesta di licenza all'amministratore. Quando effettua una richiesta, può aggiungere i nomi di altri utenti che necessitano anche di licenze per il prodotto.
 
@@ -77,7 +77,7 @@ Quando si torna **all'elenco Richieste,** viene visualizzato il messaggio **You'
 9. Chiudere il riquadro destro.
     Gli utenti ricevono un messaggio di posta elettronica che indica che la richiesta è stata approvata o rifiutata.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\
 [Spostare gli utenti in un abbonamento diverso](../subscriptions/move-users-different-subscription.md) (articolo)\

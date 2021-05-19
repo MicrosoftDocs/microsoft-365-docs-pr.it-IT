@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d69c7dc30a4cf6a3078f510a02e5572fe8b36cbb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934250"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530911"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Risolvere i problemi di prestazioni per Microsoft Defender per Endpoint in macOS
 
@@ -94,7 +94,7 @@ I passaggi seguenti possono essere utilizzati per risolvere e attenuare questi p
       Per raccogliere le statistiche correnti, eseguire:
 
       ```bash
-      mdatp config real-time-protection --value enabled
+      mdatp config real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]
@@ -104,7 +104,7 @@ I passaggi seguenti possono essere utilizzati per risolvere e attenuare questi p
 1. Nel sistema Mac scarica il parser python di esempio high_cpu_parser.py usando il comando:
 
     ```bash
-    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
 
     L'output di questo comando deve essere simile al seguente:

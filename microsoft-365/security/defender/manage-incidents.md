@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300002"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530839"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gestire gli eventi imprevisti in Microsoft 365 Defender
 
@@ -45,12 +45,12 @@ La gestione degli incidenti è fondamentale per garantire che le minacce siano c
 
 Ecco i modi in cui è possibile gestire gli eventi imprevisti:
 
-- Modificare il nome dell'evento imprevisto
-- Aggiungere tag evento imprevisto.
-- Assegnare l'evento imprevisto a un account utente
-- Risolverli 
-- Impostare la classificazione e la determinazione
-- Aggiungere commenti.
+- [Modificare il nome dell'evento imprevisto](#edit-the-incident-name)
+- [Aggiungere tag agli eventi](#add-incident-tags)
+- [Assegnare l'evento imprevisto a un account utente](#assign-incidents)
+- [Risolverli](#resolve-an-incident)
+- [Impostare la classificazione e la determinazione](#set-the-classification-and-determination)
+- [Aggiungere commenti](#add-comments)
 
 È possibile gestire gli eventi imprevisti dal **riquadro Gestisci eventi imprevisti** per un evento imprevisto. Di seguito viene riportato un esempio.
 
@@ -61,7 +61,7 @@ Ecco i modi in cui è possibile gestire gli eventi imprevisti:
 - Riquadro Proprietà di un evento imprevisto nella coda degli eventi imprevisti.
 - **Pagina di** riepilogo di un evento imprevisto.
 
-Nei casi in cui, durante l'analisi, si desidera spostare gli avvisi  da un evento imprevisto a un altro, è possibile farlo anche dalla scheda Avvisi, creando così un evento imprevisto più grande o più piccolo che include tutti gli avvisi pertinenti.
+Nei casi in cui si desidera spostare gli avvisi da un  evento imprevisto a un altro, è possibile farlo anche dalla scheda Avvisi, creando così un evento imprevisto più grande o più piccolo che include tutti gli avvisi pertinenti.
 
 ## <a name="edit-the-incident-name"></a>Modificare il nome dell'evento imprevisto
 
@@ -82,7 +82,7 @@ Quando si inizia a digitare, è possibile selezionare da un elenco di tag selezi
 
 Se non è stato ancora assegnato un evento imprevisto, è possibile selezionare **Assegna a** e specificare l'account utente. In questo modo viene assegnata la proprietà dell'evento imprevisto e tutti gli avvisi ad esso associati.
 
-## <a name="resolve-incident"></a>Risolvere l'evento imprevisto
+## <a name="resolve-an-incident"></a>Risolvere un evento imprevisto
 
 Se l'evento imprevisto è stato risolto, selezionare **Risolvi evento imprevisto** per spostare l'interruttore verso destra. Si noti che la risoluzione di un evento imprevisto risolve anche tutti gli avvisi collegati e attivi correlati all'evento imprevisto.
 

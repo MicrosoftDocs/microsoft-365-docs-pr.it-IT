@@ -1,5 +1,5 @@
 ---
-title: Gestire account di fatturazione
+title: Comprendere gli account di fatturazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,22 +17,22 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Informazioni sugli account di fatturazione e su come gestirli.
+description: Informazioni sugli account di fatturazione e su come vengono utilizzati per gestire le impostazioni dell'account, le fatture, i metodi di pagamento e gli acquisti.
 ms.date: 03/17/2021
-ms.openlocfilehash: 05ab759f300cb7fa6b02e06714d7d98e64890be8
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 1eb01ace2fe8b84b813793168cb50db2508b4ebb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331599"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535639"
 ---
-# <a name="manage-billing-accounts"></a>Gestire account di fatturazione
+# <a name="understand-billing-accounts"></a>Comprendere gli account di fatturazione
 
-Un account di fatturazione viene creato quando ti is iscriviti per provare o acquistare prodotti Microsoft. L'account di fatturazione viene utilizzato per gestire le impostazioni, le fatture, i metodi di pagamento e gli acquisti dell'account. È possibile avere accesso a più account di fatturazione. Ad esempio, ti sei connesso direttamente a Microsoft 365 o hai accesso al contratto Contratto Enterprise, ai servizi di & prodotti Microsoft o al Contratto per i clienti Microsoft dell'organizzazione. Per ognuno di questi scenari, si dispone di un account di fatturazione separato.
+Un account di fatturazione viene creato quando ti is iscriviti per provare o acquistare prodotti Microsoft. L'account di fatturazione viene utilizzato per gestire le impostazioni, le fatture, i metodi di pagamento e gli acquisti dell'account. È possibile avere accesso a più account di fatturazione. Ad esempio, si è effettuato l'Microsoft 365 direttamente o si ha accesso al contratto Enterprise Agreement, ai servizi di & microsoft o al Contratto per i clienti Microsoft dell'organizzazione. Per ognuno di questi scenari, si dispone di un account di fatturazione separato.
 
-L'interfaccia di amministrazione di Microsoft 365 attualmente supporta il tipo di account di fatturazione seguente:
+L Microsoft 365 interno di amministrazione supporta attualmente il tipo di account di fatturazione seguente:
 
-- Microsoft Online Services: questo account di fatturazione viene creato quando si effettua direttamente l'iscrizione a un abbonamento a Microsoft 365.
+- Microsoft Online Services: questo account di fatturazione viene creato quando ti isti a un abbonamento Microsoft 365 direttamente.
 - Programma Microsoft Products & Services Agreement (MPSA): questo account di fatturazione viene creato quando l'organizzazione firma un contratto multilicenza MPSA per acquistare software e servizi online.
 - Contratto per i clienti Microsoft: questo account di fatturazione viene creato quando l'organizzazione collabora con un rappresentante Microsoft, un partner autorizzato o acquista in modo indipendente.
 
@@ -67,16 +67,16 @@ In questa sezione sono elencati gli indirizzi di spedizione associati all'accoun
 
 ## <a name="understand-access-to-billing-accounts"></a>Informazioni sull'accesso agli account di fatturazione
 
-È possibile fornire ad altri utenti l'accesso all'account di fatturazione nell'interfaccia di amministrazione di Microsoft 365 tramite ruoli e autorizzazioni. Solo il proprietario di un account di fatturazione può concedere l'accesso a un account di fatturazione. È possibile assegnare uno dei ruoli seguenti agli utenti:
+È possibile fornire ad altri utenti l'accesso all'account di fatturazione nell'Microsoft 365 di amministrazione tramite ruoli e autorizzazioni. Solo il proprietario di un account di fatturazione può concedere l'accesso a un account di fatturazione. È possibile assegnare uno dei ruoli seguenti agli utenti:
 
 - **Proprietario dell'account di fatturazione** &mdash; Può assegnare autorizzazioni, modificare account, firmare contratti e visualizzare gli account.
 - **Collaboratore account di fatturazione** &mdash; Può modificare gli account, firmare contratti e visualizzare gli account.
 - **Lettore account di fatturazione** &mdash; Può visualizzare gli account.
 
 > [!Note]
-> I ruoli dell'account di fatturazione si applicano solo agli account di fatturazione e non ad altri scenari dell'interfaccia di amministrazione di Microsoft 365.
+> I ruoli dell'account di fatturazione si applicano solo agli account di fatturazione e non ad altri scenari Microsoft 365'interfaccia di amministrazione.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Informazioni fiscali](billing-and-payments/tax-information.md) (articolo) \
 [Informazioni sui profili di fatturazione](billing-and-payments/manage-billing-profiles.md) (articolo)

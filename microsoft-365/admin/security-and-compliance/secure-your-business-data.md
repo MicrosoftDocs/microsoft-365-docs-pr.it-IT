@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteggere la posta elettronica aziendale e i dati da minacce informatiche, inclusi ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: c20b0d070c4c4ca28ee681e560c4a91c412241fc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: dcaeb9588f50d1e12bdff5164f5f41a0beee2e47
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244540"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535879"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>I 10 modi principali per proteggere i Microsoft 365 per le aziende
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Se si è un'organizzazione di piccole o medie dimensioni che utilizza uno dei piani aziendali di Microsoft e il tipo di organizzazione è destinato a criminali informatici e hacker, utilizzare le indicazioni fornite in questo articolo per aumentare la sicurezza dell'organizzazione. Queste indicazioni aiutano l'organizzazione a raggiungere gli obiettivi descritti nel Manuale della campagna per la [cybersecurity](https://go.microsoft.com/fwlink/p/?linkid=2015598)della scuola Kennedy di Harvard.
 
@@ -55,9 +48,9 @@ Microsoft consiglia di completare le attività elencate nella tabella seguente c
 |9 |[Proteggere da allegati e file dannosi con allegati sicuri](secure-your-business-data.md#atp)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10  |[Proteggere da attacchi di phishing con collegamenti sicuri](secure-your-business-data.md#phishingatp)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Se si dispone di Microsoft Business Premium, il modo più rapido per configurare la sicurezza e iniziare a collaborare in modo sicuro è seguire le indicazioni in questa raccolta: Microsoft 365 per le aziende e le campagne di piccole [dimensioni.](../../campaigns/index.md) Questa guida è stata sviluppata in collaborazione con il team di Microsoft Defending Democracy per proteggere tutti i clienti delle piccole imprese dalle minacce informatiche lanciate da sofisticati hacker.
+Se si ha Microsoft Business Premium, il modo più rapido per configurare la sicurezza e iniziare a collaborare in modo sicuro consiste nel seguire le indicazioni fornite in questa raccolta: [Microsoft 365 per piccole imprese e campagne](../../campaigns/index.md). Queste indicazioni sono state sviluppate in collaborazione con il team Microsoft Defending Democracy per proteggere tutti i clienti delle piccole imprese dalle minacce informatiche lanciate da hacker sofisticati.
 
-Prima di iniziare, controlla il [punteggio Microsoft 365 sicuro](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) nel centro sicurezza Microsoft 365 sicurezza. Da un dashboard centralizzato puoi monitorare e migliorare la sicurezza per le identità, i dati, le app, i dispositivi e l'infrastruttura Microsoft 365 sicurezza. Vengono forniti punti per la configurazione delle funzionalità di sicurezza consigliate, l'esecuzione di attività correlate alla sicurezza (ad esempio la visualizzazione di report) o la gestione di suggerimenti con un'applicazione o un software di terze parti. Con ulteriori approfondimenti e maggiore visibilità su un insieme più ampio di prodotti e servizi Microsoft, è possibile avere la certezza di segnalare in modo sicuro l'integrità della sicurezza dell'organizzazione.
+Prima di iniziare, controlla il [punteggio Microsoft 365 sicuro](../../security/defender/microsoft-secure-score.md) nel centro sicurezza Microsoft 365 sicurezza. Da un dashboard centralizzato puoi monitorare e migliorare la sicurezza per le identità, i dati, le app, i dispositivi e l'infrastruttura Microsoft 365 sicurezza. Vengono forniti punti per la configurazione delle funzionalità di sicurezza consigliate, l'esecuzione di attività correlate alla sicurezza (ad esempio la visualizzazione di report) o la gestione di suggerimenti con un'applicazione o un software di terze parti. Con ulteriori approfondimenti e maggiore visibilità su un insieme più ampio di prodotti e servizi Microsoft, è possibile avere la certezza di segnalare in modo sicuro l'integrità della sicurezza dell'organizzazione.
 
 ![Screenshot of Microsoft Secure Score](../../media/secure-score.png)
 
@@ -172,7 +165,7 @@ Per creare una regola di trasporto della posta, visualizzare [un breve video di 
 > [!TIP]
 > È inoltre possibile aggiungere i file che si desidera bloccare all'elenco antimalware [nel passaggio 4.](#4-raise-the-level-of-protection-against-malware-in-mail)
 
-Per ulteriori informazioni, vedere:
+Per altre informazioni, vedi:
 
 - [Ransomware: come ridurre i rischi](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
