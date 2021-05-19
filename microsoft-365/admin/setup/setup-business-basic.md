@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni su come configurare la sottoscrizione a Microsoft 365 Business Basic.
-ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 51a83d4cc230fa4bdb78bba71c9c7193a36fd391
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244468"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535723"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Configurare Microsoft 365 Business Basic
 
@@ -53,13 +53,13 @@ Quando si acquista Microsoft 365 Business Basic, si può scegliere di usare un d
 
 ::: moniker range="o365-germany"
 
-1. Se si usa Office 365 Germany, passare a questa [interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=848041).
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Se si usa Office 365 gestito da 21Vianet, passare a questa [interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=850627).
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end 
 
@@ -68,7 +68,7 @@ Quando si acquista Microsoft 365 Business Basic, si può scegliere di usare un d
 3. Nel passaggio **Aggiungi dominio** immettere il nome del dominio che si vuole usare (ad esempio contoso.com).
 
     > [!IMPORTANT]
-    > Se un dominio è stato acquistato durante l’iscrizione, il passaggio **Aggiungi un dominio** non comparirà. Proseguire al passaggio [Aggiungi utenti](#add-users-and-assign-licenses).
+    > Se un dominio è stato acquistato durante l'iscrizione, il passaggio **Aggiungi un dominio** non comparirà. In alternativa, andare a [Aggiungi utenti](#add-users-and-assign-licenses).
 
     
 4. Seguire i passaggi della procedura guidata per [creare record DNS presso un provider DNS per Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) che verifica che si è proprietari del dominio. Se si conosce l’host del dominio, vedere anche le [istruzioni specifiche dell’host](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
@@ -99,7 +99,7 @@ Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o 
 1. La configurazione guidata rileva in genere il registrar e offre un collegamento a istruzioni dettagliate per l'aggiornamento dei record NS presso il suo sito Web. Se ciò non si verifica, [Modificare i server dei nomi per configurare Office 365 con qualsiasi registrar](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
     - Se si dispone di record DNS esistenti, ad esempio un sito Web, ma il proprio host DNS è abilitato per [Domain Connect](/office365/admin/get-help-with-domains/domain-connect), scegliere **Aggiungi record per me**. Nella pagina **Scegli i tuoi servizi online**, accettare tutti i predefiniti, scegliere **Successivo**, e scegliere **Autorizza** nella pagina del proprio host DNS.
-    - Se si dispone di record DNS esistenti con altri host DNS (non abilitati per il protocollo Domain Connect), è possibile gestire i propri record DNS per assicurarsi che i servizi esistenti restino connessi. Vedere [Informazioni di base sul dominio](/office365/admin/get-help-with-domains/dns-basics) per maggiori dettagli.
+    - Se si dispone di record DNS esistenti con altri host DNS (non abilitati per il protocollo Domain Connect), è possibile gestire i propri record DNS per assicurarsi che i servizi esistenti restino connessi. Vedere [dati principali domini](/office365/admin/get-help-with-domains/dns-basics) per altre informazioni.
 
 2. Seguire i passaggi della procedura guidata, la posta elettronica e gli altri servizi saranno configurati automaticamente.
 

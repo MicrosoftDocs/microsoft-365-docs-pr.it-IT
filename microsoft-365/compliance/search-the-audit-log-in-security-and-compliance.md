@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f61a67b29dec114d222dfc7b25e44c163859ba41
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051738"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536047"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -575,7 +575,7 @@ La tabella seguente descrive le attività di richiesta di condivisione e accesso
 |Richiesta di accesso rifiutata |AccessRequestDenied|Una richiesta di accesso a un sito, una cartella o un documento è stata negata.|
 |Rimosso un collegamento condivisibile nell'organizzazione|CompanyLinkRemoved|Un utente ha rimosso un collegamento a livello aziendale a una risorsa. Il collegamento non può più essere usato per accedere alla risorsa.|
 |Rimosso un collegamento anonimo|AnonymousLinkRemoved|Un utente ha rimosso un collegamento anonimo a una risorsa. Il collegamento non può più essere usato per accedere alla risorsa.|
-|File, cartella o sito condiviso|SharingSet|Un utente (membro o guest) ha condiviso un file, una cartella o un sito in SharePoint o OneDrive for Business con un utente che fa parte della directory dell'organizzazione. Il valore nella colonna **Dettagli** per questa attività identifica il nome dell'utente con cui la risorsa è stata condivisa e indica se l'utente è un membro o un guest. <br/><br/> Questa attività è spesso accompagnata da un secondo evento che descrive come è stato concesso all'utente l'accesso alla risorsa, ad esempio, aggiungendo l'utente a un gruppo che ha accesso alla risorsa.|
+|File, cartella o sito condiviso|SharingSet|Un utente (membro o guest) ha condiviso un file, una cartella o un sito in SharePoint o OneDrive for Business con un utente che fa parte della directory dell'organizzazione. Il valore nella colonna **Dettagli** per questa attività identifica il nome dell'utente con cui la risorsa è stata condivisa e indica se l'utente è un membro o un guest. <br/><br/> Questa attività è spesso accompagnata da un secondo evento che descrive come è stato concesso all'utente l'accesso alla risorsa. Ad esempio aggiungendo l'utente a un gruppo che ha accesso alla risorsa.|
 |Richiesta di accesso aggiornata|AccessRequestUpdated|Una richiesta di accesso a un elemento è stata aggiornata.|
 |Aggiornato un collegamento anonimo|AnonymousLinkUpdated|Un utente ha aggiornato un collegamento anonimo a una risorsa. Il campo aggiornato è incluso nella proprietà EventData quando si esportano i risultati della ricerca.|
 |Invito alla condivisione aggiornato|SharingInvitationUpdated|È stato aggiornato un invito alla condivisione esterna.|
@@ -648,7 +648,7 @@ Nella tabella seguente sono elencati gli eventi derivanti da attività di ammini
 |Connessione Inviato a eliminata|SendToConnectionRemoved|L'amministratore SharePoint o globale elimina una nuova connessione Invia a nella pagina Gestione record nell'interfaccia di amministrazione di SharePoint.|
 |Sito eliminato|SiteDeleted|L'amministratore del sito elimina un sito.|
 |Anteprima documento abilitata|PreviewModeEnabledSet|Un amministratore del sito abilita l'anteprima dei documenti per un sito.|
-|Flusso di lavoro legacy abilitato|LegacyWorkflowEnabledSet|Un proprietario o un amministratore del sito aggiunge il tipo di contenuto Attività flusso di lavoro di SharePoint 2013 al sito. Gli amministratori globali possono anche abilitare i flussi di lavoro per l'intera organizzazione nell'interfaccia di amministrazione di SharePoint.|
+|Flusso di lavoro legacy abilitato|LegacyWorkflowEnabledSet|L'amministratore o il proprietario del sito aggiunge il tipo di contenuto di attività di flusso di lavoro di SharePoint 2013 al sito. Gli amministratori globali possono inoltre abilitare i flussi di lavoro per l'intera organizzazione nell'interfaccia di amministrazione di SharePoint.|
 |Office su richiesta abilitato|OfficeOnDemandSet|Un amministratore del sito abilita Office su richiesta, che consente agli utenti di accedere alla versione più recente delle applicazioni desktop di Office. Office su richiesta viene abilitato nell'interfaccia di amministrazione di SharePoint e richiede un abbonamento a Microsoft 365, che include le applicazioni Office complete installate.|
 |Origine dei risultati abilitata per ricerche in Persone|PeopleResultsScopeSet|Un amministratore del sito crea l'origine dei risultati per le ricerche in Persone per un sito.|
 |Feed RSS abilitati|NewsFeedEnabledSet|Un proprietario o un amministratore del sito abilita i feed RSS per un sito. Gli amministratori globali possono abilitare i feed RSS per l'intera organizzazione nell'interfaccia di amministrazione di SharePoint.|
@@ -673,7 +673,7 @@ La tabella seguente elenca le attività che possono essere registrate tramite la
 |Nome descrittivo|Operazione|Descrizione|
 |:-----|:-----|:-----|
 |Elementi delle cassette postali accessibili|MailItemsAccessed|I messaggi di una cassetta postale sono stati letti o aperti. Per questa attività i record di controllo vengono attivati nei casi seguenti: quando un client di posta elettronica, ad esempio Outlook, esegue un'operazione di binding sui messaggi oppure quando i protocolli di posta, ad esempio Exchange ActiveSync o IMAP, sincronizzano gli elementi in una cartella di posta elettronica. Hanno accesso a questa attività solo per gli utenti con una licenza di Office 365 o Microsoft 365 E5. L'analisi dei record di controllo per questa attività è utile per l'analisi di un account di posta elettronica compromesso. Per altre informazioni, vedere la sezione "Accesso a eventi cruciali per le indagini" in [Audit avanzato](advanced-audit.md#access-to-crucial-events-for-investigations). |
-|Aggiunte autorizzazioni delegate per le cassette postali|AddMailboxPermissions|Un amministratore ha assegnato l'autorizzazione FullAccess per la cassetta postale a un utente (noto come delegato) alla cassetta postale di un'altra persona. L'autorizzazione FullAccess consente al delegato di aprire la cassetta postale di un'altra persona e di leggere e gestire il contenuto della cassetta postale.|
+|Aggiunte autorizzazioni delegate per le cassette postali|Add-MailboxPermission|Un amministratore ha assegnato l'autorizzazione FullAccess per la cassetta postale a un utente (noto come delegato) alla cassetta postale di un'altra persona. L'autorizzazione FullAccess consente al delegato di aprire la cassetta postale di un'altra persona e di leggere e gestire il contenuto della cassetta postale.|
 |Aggiunto o rimosso un utente con accesso delegato alla cartella del calendario|UpdateCalendarDelegation|Un utente è stato aggiunto o rimosso come delegato al calendario della cassetta postale di un altro utente. La delega del calendario assegna a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.|
 |Aggiunte autorizzazioni alla cartella|AddFolderPermissions|È stata aggiunta un'autorizzazione per una cartella. Le autorizzazioni per le cartelle determinano quali utenti dell'organizzazione possono accedere alle cartelle di una cassetta postale e ai messaggi che contengono.|
 |Messaggi copiati in un'altra cartella|Copy|Un messaggio è stato copiato in un'altra cartella.|
@@ -901,7 +901,7 @@ La tabella seguente elenca le attività di Esplora contenuto registrate nel log 
 
 ### <a name="quarantine-activities"></a>Attività in quarantena
 
-La tabella seguente elenca le attività in quarantena che è possibile cercare nel log di audit. Per altre informazioni sulla quarantena, vedere [Messaggi di posta elettronica in quarantena in Office 365](../security/defender-365-security/quarantine-email-messages.md).
+La tabella seguente elenca le attività in quarantena che è possibile cercare nel log di audit. Per altre informazioni sulla quarantena, vedere [Messaggi di posta elettronica in quarantena in Office 365](../security/office-365-security/quarantine-email-messages.md).
 
 |Nome descrittivo|Operazione|Descrizione|
 |:-----|:-----|:-----|
@@ -1000,7 +1000,7 @@ La tabella seguente elenca gli eventi risultanti dalle attività di etichettatur
 
 ### <a name="briefing-email-activities"></a>Attività e-mail di Briefing
 
-La tabella seguente elenca le attività delle e-mail di Briefing registrate nel log di controllo di Office 365. Per ulteriori informazioni sulle e-mail di Briefing, vedere:
+La tabella seguente elenca le attività delle e-mail di Briefing registrate nel log di controllo di Office 365. Per altre informazioni sulle e-mail di Briefing, vedere:
 
 - [Panoramica delle e-mail di Briefing](/Briefing/be-overview)
 

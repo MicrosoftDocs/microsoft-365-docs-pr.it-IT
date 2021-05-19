@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Modificare le sottoscrizioni manualmente acquistando una nuova sottoscrizione e verificando che entrambe le sottoscrizioni siano elencate e attive.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345179"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536107"
 ---
 # <a name="change-plans-manually"></a>Modificare manualmente i piani
 
@@ -94,7 +94,7 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
 
 2. Selezionare i cerchi accanto ai nomi degli utenti per i quali si desidera sostituire le licenze esistenti.
 
-3. Nella parte superiore selezionare **Altre opzioni** (**...**) e quindi scegliere Gestisci **licenze prodotto**.
+3. Nella parte superiore selezionare i tre puntini (altre azioni), quindi scegliere **Gestisci licenze prodotto.**
 
 4. Selezionare **Sostituisci assegnazioni licenze di prodotto esistenti** \> **Avanti**.
 

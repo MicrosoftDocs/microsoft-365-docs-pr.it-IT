@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
+ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079259"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532087"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -65,7 +65,9 @@ Se si usa questa soluzione di crittografia, la caratteristica **utente con privi
 
 4.  Nella pagina **Crittografia** della procedura guidata, selezionare una delle opzioni seguenti:
     
-    - **Rimuovi la crittografia se il file è crittografato**: per altre informazioni su questo scenario, vedere la sezione [Cosa succede alla crittografia esistente quando viene applicata un'etichetta](#what-happens-to-existing-encryption-when-a-labels-applied). È importante comprendere che questa impostazione può generare un'etichetta di riservatezza che gli utenti potrebbero non essere in grado di applicare quando non dispongono di autorizzazioni sufficienti.
+    - **Rimuovi crittografia se il file è crittografato**: questa opzione è supportato solo dal client di etichettatura unificata di Azure Information Protection. Quando si seleziona questa opzione e si usa l'etichettatura predefinita, l'etichetta potrebbe non venire visualizzata nelle app, oppure potrebbe essere visualizzata ma non apportare alcuna modifica crittografia.
+        
+        Per altre informazioni su questo scenario, vedere la sezione [Cosa succede alla crittografia esistente quando viene applicata un'etichetta](#what-happens-to-existing-encryption-when-a-labels-applied). È importante comprendere che questa impostazione può generare un'etichetta di riservatezza che gli utenti potrebbero non essere in grado di applicare quando non dispongono di autorizzazioni sufficienti.
     
     - **Configurare le impostazioni di crittografia**: attiva la crittografia e rende visibili le impostazioni di crittografia:
         
@@ -85,13 +87,17 @@ Tuttavia, il contenuto potrebbe essere già crittografato. Ad esempio, un altro 
 
 La tabella seguente identifica cosa accade alla crittografia esistente quando si applica un'etichetta di riservatezza a tale contenuto:
 
-| | Crittografia: non selezionata | Crittografia: configurata | Crittografia: rimuovere |
+| | Crittografia: non selezionata | Crittografia: configurata | Crittografia: rimuovere <sup>\*</sup> |
 |:-----|:-----|:-----|:-----|
 |**Autorizzazioni specificate da un utente**|La crittografia originale viene mantenuta|Viene applicata una nuova crittografia dell'etichetta|La crittografia originale viene rimossa|
 |**Modello di protezione**|La crittografia originale viene mantenuta|Viene applicata una nuova crittografia dell'etichetta|La crittografia originale viene rimossa|
 |**Etichetta con autorizzazioni definite dall'amministratore**|La crittografia originale viene rimossa|Viene applicata una nuova crittografia dell'etichetta|La crittografia originale viene rimossa|
 
-Si noti che nei casi in cui viene applicata la nuova crittografia dell'etichetta o la crittografia originale viene rimossa, ciò si verifica solo se l'utente che applica l'etichetta dispone di un ruolo o diritto di utilizzo che supporta questa azione:
+**Nota a piè di pagina:**
+
+<sup>\*</sup> Supportata solo dal client di etichettatura unificata di Azure Information Protection
+
+Nei casi in cui viene applicata la nuova crittografia dell'etichetta o la crittografia originale viene rimossa, ciò si verifica solo se l'utente che applica l'etichetta dispone di un ruolo o diritto di utilizzo che supporta questa azione:
 
 - Il [diritto di utilizzo](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Esportazione o Controllo completo.
 - Il ruolo di [emittente di Rights Management o proprietario di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) o [utente con privilegi avanzati](/azure/information-protection/configure-super-users).
@@ -228,7 +234,7 @@ Per altre informazioni, prerequisiti e istruzioni di configurazione, vedere [Cri
 ## <a name="let-users-assign-permissions"></a>Consentire agli utenti di assegnare le autorizzazioni
 
 > [!IMPORTANT]
-> Non tutti i client di etichettatura supportano tutte le opzioni che consentono agli utenti di assegnare le loro autorizzazioni. Usare questa sezione per ulteriori informazioni.
+> Non tutti i client di etichettatura supportano tutte le opzioni che consentono agli utenti di assegnare le loro autorizzazioni. Usare questa sezione per altre informazioni.
 
 È possibile usare le opzioni seguenti per consentire agli utenti di assegnare autorizzazioni quando applicano manualmente un'etichetta di riservatezza al contenuto:
 
@@ -269,11 +275,11 @@ Se una delle due opzioni viene applicata a un messaggio di posta elettronica, il
 
 - **Non inoltrare**: i destinatari non possono inoltrare il messaggio di posta elettronica, stamparlo o copiarlo. Ad esempio, nel client Outlook il pulsante Inoltra non è disponibile, le opzioni di menu Salva con nome e Stampa non sono disponibili e non è possibile aggiungere o modificare i destinatari nelle caselle A, Cc o Ccn.
     
-    Per altre informazioni su come funziona questa opzione, vedere [Opzione Non inoltrare per i messaggi di posta elettronica](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
+    Per altre informazioni su come funziona questa opzione, vedere [Opzione Non inoltrare per i messaggi di posta elettronica](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
 
 - **Solo crittografia**: i destinatari dispongono di tutti i diritti di utilizzo tranne Salva come, Esporta e Controllo completo. Questa combinazione di diritti di utilizzo significa che i destinatari non hanno restrizioni, tranne quella di non poter rimuovere la protezione. Ad esempio, un destinatario può copiare dall'e-mail, stampare o inoltrare.
     
-    Per altre informazioni su come funzioni questa opzione, vedere [Opzione Solo crittografia per i messaggi di posta elettronica](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
+    Per altre informazioni su come funzioni questa opzione, vedere [Opzione Solo crittografia per i messaggi di posta elettronica](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
 
 I documenti di Office non crittografati allegati al messaggio di posta elettronica ereditano automaticamente le stesse restrizioni. Per Non inoltrare, i diritti di utilizzo applicati a questi documenti sono Modifica contenuto, Modifica, Salva, Visualizza, Apri, Leggi e Consenti macro. Se l'utente vuole avere diritti di utilizzo diversi per un allegato, o se l'allegato non è un documento di Office che supporta questa protezione ereditata, l'utente deve crittografare il file prima di allegarlo al messaggio di posta elettronica.
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Gli utenti possono imparare a gestire gli acquisti in modalità self-service.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333255"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536083"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gestire acquisti in modalità self-service (utenti)
 
@@ -34,7 +34,7 @@ ms.locfileid: "52333255"
 
 ::: moniker-end
 
-Gli utenti possono acquistare sottoscrizioni a determinati prodotti e assegnare licenze per tali sottoscrizioni agli utenti del team. L'utente è responsabile del pagamento di eventuali acquisti self-service. È possibile gestire le sottoscrizioni nell'interfaccia di amministrazione di Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">in admin.microsoft.com</a>.
+Gli utenti possono acquistare sottoscrizioni a determinati prodotti e assegnare licenze per tali sottoscrizioni agli utenti del team. L'utente è responsabile del pagamento di eventuali acquisti self-service. È possibile gestire le sottoscrizioni nell'Microsoft 365 di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
 L'amministratore ha una visualizzazione di sola lettura in tutte le sottoscrizioni acquistate. Possono visualizzare il prodotto, il nome dell'acquirente, le sottoscrizioni acquistate, la data di scadenza, il prezzo di acquisto e gli utenti assegnati per ogni sottoscrizione acquistata.
 
@@ -75,7 +75,7 @@ L'amministratore ha una visualizzazione di sola lettura in tutte le sottoscrizio
 ## <a name="cancel-a-subscription"></a>Annullare una sottoscrizione
 
 1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **Prodotti**, trovare l'abbonamento da annullare. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Annulla l’abbonamento**.
+2. Nella scheda **Prodotti**, trovare l'abbonamento da annullare. Seleziona i tre punti (altre azioni), quindi seleziona **Annulla sottoscrizione.**
 3. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Facoltativamente, fornire eventuali commenti e suggerimenti.
 4. Selezionare **Salva**.
 
@@ -108,6 +108,6 @@ L'amministratore ha una visualizzazione di sola lettura in tutte le sottoscrizio
 
 ## <a name="need-help-contact-us"></a>Hai bisogno di assistenza? Contattaci.
 
-Per domande frequenti sugli acquisti self-service, vedere Domande frequenti [sugli acquisti in self-service.](self-service-purchase-faq.md)
+Per domande frequenti sugli acquisti self-service, vedere Domande frequenti [sugli acquisti in self-service.](self-service-purchase-faq.yml)
 
 Se hai domande o hai bisogno di assistenza per gli acquisti self-service, [contatta il supporto](../../business-video/get-help-support.md).

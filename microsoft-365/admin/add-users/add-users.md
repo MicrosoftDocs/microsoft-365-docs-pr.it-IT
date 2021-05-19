@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Informazioni su come aggiungere utenti e assegnare licenze a Microsoft 365 contemporaneamente.
+description: Ogni membro del team deve disporre di un account utente per poter accedere a Microsoft 365 for Business. Informazioni su come aggiungere utenti e assegnare licenze.
 ms.date: 07/01/2020
-ms.openlocfilehash: 3efa32d21a21ed12041f5731296c1b033374712f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274389"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535999"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aggiungere utenti e assegnare licenze contemporaneamente
 

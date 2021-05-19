@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come gestire le sottoscrizioni di iscrizione self-service gratuite per l'organizzazione.
 ms.date: 03/17/2021
-ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 741c9e0b45f127ffc0753b34982073f90c525d5b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345131"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536071"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Gestire le sottoscrizioni di iscrizione self-service
 
@@ -39,7 +39,7 @@ ms.locfileid: "52345131"
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>In che modo queste sottoscrizioni sono diverse dalle sottoscrizioni di acquisto in modalità self-service?
 
-Le sottoscrizioni di iscrizione self-service sono gratuite e sono disponibili per un elenco più ampio di prodotti rispetto alle sottoscrizioni di acquisto self-service. Quando un utente si i iscrizione a una sottoscrizione di acquisto self-service, è responsabile del pagamento. Le sottoscrizioni di acquisto self-service sono disponibili solo per i prodotti Power Platform (Power BI, Power Apps e Power Automate), Project e Visio. Per ulteriori informazioni, vedere [Domande frequenti sugli acquisti in self-service.](self-service-purchase-faq.md)
+Le sottoscrizioni di iscrizione self-service sono gratuite e sono disponibili per un elenco più ampio di prodotti rispetto alle sottoscrizioni di acquisto self-service. Quando un utente si i iscrizione a una sottoscrizione di acquisto self-service, è responsabile del pagamento. Le sottoscrizioni di acquisto self-service sono disponibili solo per i prodotti Power Platform (Power BI, Power Apps e Power Automate), Project e Visio. Per ulteriori informazioni, vedere [Domande frequenti sugli acquisti in self-service.](self-service-purchase-faq.yml)
 
 ## <a name="block-users-from-signing-up"></a>Impedire agli utenti di iscriversi
 

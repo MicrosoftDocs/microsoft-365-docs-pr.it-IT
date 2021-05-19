@@ -782,10 +782,10 @@
   items:
     - name: Soluzioni di controllo di Microsoft 365
       href: auditing-solutions-overview.md
-    - name: Controllo di base
+    - name: Audit di base
       items:
-        - name: Configurare il controllo di base
-          href: set-up-basic-auditing.md
+        - name: Configurare l'audit di base
+          href: set-up-basic-audit.md
         - name: Eseguire ricerche nel log di controllo
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Usare uno script PowerShell per la ricerca nel log di audit

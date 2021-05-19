@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Informazioni su come annullare la versione di valutazione o l'abbonamento a pagamento a Microsoft 365 per le aziende.
+description: Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende nell'interfaccia di amministrazione.
 ms.date: 04/08/2021
-ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333315"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536119"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -46,7 +46,7 @@ Se si è aggiunto il nome del proprio dominio per usarlo con l’abbonamento, è
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Trovare l'abbonamento da annullare. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Annulla l’abbonamento**.
+2. Trovare l'abbonamento da annullare. Selezionare i tre puntini (Altre azioni), quindi **Annulla abbonamento**.
 3. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Se si vuole, inviare un feedback.
 4. Selezionare **Salva**.
 
@@ -69,7 +69,7 @@ L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità
 ::: moniker-end
 
 2. Selezionare la scheda **Prodotti**.
-3. Trovare l'abbonamento da annullare. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Annulla l’abbonamento**.
+3. Trovare l'abbonamento da annullare. Selezionare i tre puntini (Altre azioni), quindi **Annulla abbonamento**.
 4. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Se si vuole, inviare un feedback.
 5. Selezionare **Salva**.
 

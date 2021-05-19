@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In questo articolo viene illustrato come creare, testare e ottimizzare un criterio DLP in base alle esigenze dell'organizzazione.
-ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e252c7328c59c246f739caf4b70acd44de010e42
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052084"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532519"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
@@ -50,7 +50,7 @@ I membri del team conformità addetti alla creazione dei criteri DLP necessitano
 
 Utilizzare il **ruolo Gestione conformità DLP** di sola visualizzazione per creare un gruppo di ruoli con privilegi di sola visualizzazione per i criteri DLP e i report DLP.
 
-Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Queste autorizzazioni sono necessarie per creare e applicare un criterio DLP per non applicare i criteri.
 
@@ -73,9 +73,9 @@ Vedere [Definizioni di entità del tipo di](sensitive-information-type-entity-de
 
 Quando i rischi di perdita dei dati non sono del tutto ovvi, è difficile capire da dove iniziare esattamente con l'implementazione della prevenzione della perdita dei dati. Fortunatamente, i criteri DLP possono essere eseguiti in "modalità di test", consentendo di valutarne l'efficacia e l'accuratezza prima di attivarli.
 
-I criteri DLP per Exchange Online possono essere gestiti tramite l'interfaccia di amministrazione di Exchange. Tuttavia, è possibile configurare i criteri DLP per tutti i carichi di lavoro tramite il Centro sicurezza & conformità, quindi questo è ciò che verrà utilizzato per le dimostrazioni in questo articolo. Nel Centro sicurezza & conformità, i criteri DLP sono presenti in Criteri di prevenzione **della perdita dei**  >  **dati**. Scegliere **Crea un criterio** da avviare.
+I criteri DLP per Exchange Online possono essere gestiti tramite l'Exchange di amministrazione. Tuttavia, è possibile configurare i criteri DLP per tutti i carichi di lavoro tramite il Centro sicurezza & conformità, quindi questo è ciò che verrà utilizzato per le dimostrazioni in questo articolo. Nel Centro sicurezza & conformità, i criteri DLP sono presenti in Criteri di prevenzione **della perdita dei**  >  **dati**. Scegliere **Crea un criterio** da avviare.
 
-Microsoft 365 offre un'ampia gamma di [modelli di](what-the-dlp-policy-templates-include.md) criteri DLP che è possibile utilizzare per creare criteri. Supponiamo che tu sia un'azienda australiana. Puoi filtrare i modelli in Australia e scegliere Financial, Medical and Health e Privacy.
+Microsoft 365 fornisce un'ampia gamma di [modelli di](what-the-dlp-policy-templates-include.md) criteri DLP che è possibile utilizzare per creare criteri. Supponiamo che tu sia un'azienda australiana. Puoi filtrare i modelli in Australia e scegliere Financial, Medical and Health e Privacy.
 
 ![Opzione per scegliere il paese o l'area geografica](../media/DLP-create-test-tune-choose-country.png)
 
@@ -87,17 +87,17 @@ Assegnare un nome al nuovo criterio DLP. Il nome predefinito corrisponderà al m
 
 ![Opzione per assegnare un nome al criterio](../media/DLP-create-test-tune-name-policy.png)
 
-Scegliere le posizioni a cui verrà applicato il criterio. I criteri DLP possono essere applicati a Exchange Online, SharePoint Online e OneDrive for Business. Lascerò questo criterio configurato per l'applicazione a tutte le posizioni.
+Scegliere le posizioni a cui verrà applicato il criterio. I criteri DLP possono essere applicati Exchange Online, SharePoint Online e OneDrive for Business. Lascerò questo criterio configurato per l'applicazione a tutte le posizioni.
 
 ![Opzione per scegliere tutte le posizioni](../media/DLP-create-test-tune-choose-locations.png)
 
-Al primo passaggio **Impostazioni criteri,** accetta solo le impostazioni predefinite per il momento. È possibile personalizzare i criteri DLP, ma le impostazioni predefinite sono un ottimo punto di partenza.
+Al primo **passaggio Impostazioni** criteri, accetta solo le impostazioni predefinite per il momento. È possibile personalizzare i criteri DLP, ma le impostazioni predefinite sono un ottimo punto di partenza.
 
 ![Opzioni per personalizzare il tipo di contenuto da proteggere](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Dopo aver fatto clic su Avanti,** verrà visualizzata una **pagina** impostazioni dei criteri aggiuntiva con altre opzioni di personalizzazione. Per un criterio che si sta solo testando, ecco dove è possibile iniziare a apportare alcune modifiche.
+Dopo aver fatto clic su Avanti,** verrà visualizzata una pagina Impostazioni **criteri** aggiuntiva con altre opzioni di personalizzazione. Per un criterio che si sta solo testando, ecco dove è possibile iniziare a apportare alcune modifiche.
 
-- I've turned off policy tips for now, which is a reasonable step to take if you're just testing things out and don't want to display anything to users yet. I suggerimenti per i criteri visualizzano avvisi agli utenti che stanno per violare un criterio DLP. Ad esempio, un utente di Outlook visualizza un avviso che indica che il file allegato contiene numeri di carta di credito e causerà il rifiuto della posta elettronica. L'obiettivo dei suggerimenti per i criteri è arrestare il comportamento non conforme prima che si verifica.
+- I've turned off policy tips for now, which is a reasonable step to take if you're just testing things out and don't want to display anything to users yet. I suggerimenti per i criteri visualizzano avvisi agli utenti che stanno per violare un criterio DLP. Ad esempio, un utente Outlook un messaggio di avviso che indica che il file allegato contiene numeri di carta di credito e causerà il rifiuto del messaggio di posta elettronica. L'obiettivo dei suggerimenti per i criteri è arrestare il comportamento non conforme prima che si verifica.
 - Ho anche ridotto il numero di istanze da 10 a 1, in modo che questo criterio rilevi qualsiasi condivisione dei dati delle informazioni personali australiane, non solo la condivisione in blocco dei dati.
 - Ho anche aggiunto un altro destinatario all'e-mail di segnalazione degli eventi imprevisti.
 
@@ -152,7 +152,7 @@ Quando si modifica una regola all'interno di un criterio DLP, è possibile modif
 - Condizioni, inclusi il tipo e il numero di istanze di dati sensibili che attiveranno la regola.
 - Azioni intraprese, ad esempio la limitazione dell'accesso al contenuto.
 - Notifiche utente, ovvero suggerimenti per i criteri visualizzati all'utente nel client di posta elettronica o nel Web browser.
-- Sostituzioni utente, che determina se gli utenti possono scegliere di procedere comunque con la posta elettronica o la condivisione di file.
+- Le sostituzioni degli utenti determinano se gli utenti possono comunque scegliere di procedere con la posta elettronica o la condivisione di file.
 - Report operazioni non consentite, per informare gli amministratori.
 
 ![Opzioni per modificare parti di una regola](../media/DLP-create-test-tune-editing-options.png)
@@ -173,7 +173,7 @@ Dopo aver salvato le modifiche alle impostazioni dei criteri, è inoltre necessa
 
 ![Opzione per visualizzare i suggerimenti per i criteri in modalità test](../media/DLP-create-test-tune-show-policy-tips.png)
 
-Sul lato server (o sul lato cloud, se si preferisce), la modifica potrebbe non essere immediatamente effettiva a causa di vari intervalli di elaborazione. Se si sta apportando una modifica ai criteri DLP che visualizza nuovi suggerimenti per i criteri a un utente, è possibile che l'utente non veda immediatamente le modifiche nel client Outlook, verificando la presenza di modifiche dei criteri ogni 24 ore. Se si desidera velocizzare i test, è possibile utilizzare questa correzione del Registro di sistema per cancellare l'indicatore dell'ora dell'ultimo [download dalla chiave PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook scariderà le informazioni più recenti sui criteri al successivo riavvio e inizierà a comporre un messaggio di posta elettronica.
+Sul lato server (o sul lato cloud, se si preferisce), la modifica potrebbe non essere immediatamente effettiva a causa di vari intervalli di elaborazione. Se si sta apportando una modifica ai criteri DLP che visualizza nuovi suggerimenti per i criteri per un utente, è possibile che l'utente non veda immediatamente le modifiche apportate nel client Outlook, che verifica la presenza di modifiche dei criteri ogni 24 ore. Se si desidera velocizzare i test, è possibile utilizzare questa correzione del Registro di sistema per cancellare l'indicatore dell'ora dell'ultimo [download dalla chiave PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook le informazioni più recenti sui criteri verranno scaricate al successivo riavvio e inizierà a comporre un messaggio di posta elettronica.
 
 Se sono abilitati suggerimenti per i criteri, l'utente inizierà a visualizzare i suggerimenti in Outlook e potrà segnalare falsi positivi quando si verificano.
 
@@ -199,14 +199,12 @@ Questo caso di patente di guida è un buon esempio da vedere. Il motivo per cui 
 
 
 Un'opzione è quella di rimuovere il tipo di informazioni sulla patente di guida australiana dal criterio. È presente perché fa parte del modello di criteri DLP, ma non è forzato a usarlo. Se sei interessato solo ai numeri di file fiscali e non alle licenze di guida, puoi semplicemente rimuoverlo. Ad esempio, è possibile rimuoverlo dalla regola di volume basso nel criterio, ma lasciarlo nella regola di volume elevato in modo che gli elenchi di licenze di più driver siano ancora rilevati.
-
-![Opzione per eliminare il tipo di informazioni riservate dalla regola](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
-Un'altra opzione è semplicemente aumentare il numero di istanze, in modo che un volume basso di licenze del driver viene rilevato solo quando sono presenti più istanze.
+Un'altra opzione è aumentare il numero di istanze, in modo che un volume basso di licenze del driver viene rilevato solo quando sono presenti più istanze.
 
 ![Opzione per modificare il numero di istanze](../media/DLP-create-test-tune-edit-instance-count.png)
 
-Oltre a modificare il numero di istanze, puoi anche modificare l'accuratezza della corrispondenza (o il livello di confidenza). Se il tipo di informazioni riservate include più modelli, è possibile modificare l'accuratezza della corrispondenza nella regola, in modo che la regola corrisponda solo a modelli specifici. Ad esempio, per ridurre i falsi positivi, puoi impostare l'accuratezza della corrispondenza della regola in modo che corrisponda solo al modello con il livello di probabilità più alto. Comprendere come viene calcolato il livello di confidenza è un po' complicato (e oltre l'ambito di questo post), ma ecco una buona spiegazione di come usare il livello di confidenza per ottimizzare [le regole.](data-loss-prevention-policies.md#match-accuracy)
+Oltre a modificare il numero di istanze, puoi anche modificare l'accuratezza della corrispondenza (o il livello di confidenza). Se il tipo di informazioni riservate include più modelli, è possibile modificare l'accuratezza della corrispondenza nella regola, in modo che la regola corrisponda solo a modelli specifici. Ad esempio, per ridurre i falsi positivi, puoi impostare l'accuratezza della corrispondenza della regola in modo che corrisponda solo al modello con il livello di probabilità più alto. Per ulteriori informazioni sui livelli di confidenza, vedere [Come usare il livello di probabilità per ottimizzare le regole.](data-loss-prevention-policies.md#match-accuracy)
 
 Infine, se si desidera ottenere anche un po' più avanzato, è possibile personalizzare qualsiasi tipo di informazione sensibile, ad esempio è possibile rimuovere "Sydney NSW" [dall'elenco](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)delle parole chiave per il numero di patente di guida australiana, per eliminare il falso positivo attivato in precedenza. Per informazioni su come eseguire questa operazione utilizzando XML e PowerShell, vedere personalizzazione di un tipo di informazioni [riservate predefinito.](customize-a-built-in-sensitive-information-type.md)
 
@@ -216,7 +214,7 @@ Quando si è soddisfatti che il criterio DLP rilevi in modo accurato ed efficace
 
 ![Opzione per attivare i criteri](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Se si è in attesa di vedere quando il criterio avrà effetto, connettersi & Centro sicurezza e conformità [PowerShell](/powershell/exchange/connect-to-scc-powershell) ed eseguire il [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) per visualizzare DistributionStatus.
+Se si è in attesa di vedere quando il criterio avrà effetto, Connessione & Centro sicurezza e conformità [PowerShell](/powershell/exchange/connect-to-scc-powershell) ed eseguire il [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) per visualizzare DistributionStatus.
 
 ![Esecuzione del cmdlet in PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 

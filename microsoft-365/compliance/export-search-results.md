@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Esportare i risultati della ricerca da una ricerca contenuto nel Centro Microsoft 365 conformità in un computer locale. I risultati della posta elettronica vengono esportati come file PST. Il contenuto SharePoint e OneDrive for Business siti vengono esportati come documenti Office nativi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311961"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536059"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati della ricerca contenuto
 
@@ -122,7 +122,7 @@ Il primo passaggio consiste nel preparare i risultati della ricerca per l'esport
   
 5. Configurare le opzioni aggiuntive seguenti:
 
-   ![Opzioni di Exchange](../media/OtherExportOptions.png)
+   ![Configurare altre opzioni di esportazione](../media/OtherExportOptions.png)
 
    1. Selezionare la **casella di controllo Abilita deduplicazione per Exchange contenuto per** escludere i messaggi duplicati.
   
@@ -173,7 +173,7 @@ Il passaggio successivo consiste nel scaricare i risultati della ricerca dal per
   
     Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Ecco altre informazioni sull'esportazione dei risultati della ricerca.
   

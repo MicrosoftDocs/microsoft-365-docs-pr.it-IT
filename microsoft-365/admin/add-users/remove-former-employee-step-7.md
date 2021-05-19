@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Seguire questa procedura per eliminare l'account utente di un ex dipendente.
-ms.openlocfilehash: 0afa9b112919d2668d7553ac5bcf08e664bc1749
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244235"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535939"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Passaggio 7 - Eliminare l'account utente di un ex dipendente
 
@@ -43,7 +43,13 @@ Dopo il salvataggio e l'accesso ai dati utente dell'ex dipendente, è possibile 
 3. Sotto il nome dell'utente, selezionare **Elimina utente.** Scegliere le opzioni desiderate per l'utente e quindi selezionare **Elimina utente.** Se hai già fornito a un altro utente l'accesso alla posta elettronica e OneDrive di questo utente, non è necessario farlo di nuovo qui.
 
 Quando si elimina un utente, il suo account diventa inattivo per circa 30 giorni. Si ha quindi a disposizione questo periodo di tempo per ripristinare l'account prima che venga eliminato definitivamente.
-  
+
+## <a name="watch-delete-a-former-employees-user-account"></a>Watch: Delete a former employee's user account
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+
 ## <a name="does-your-organization-use-active-directory"></a>L'organizzazione usa Active Directory?
 
 Se l'organizzazione sincronizza gli account utente Microsoft 365 da un ambiente Active Directory locale, è necessario eliminare e ripristinare tali account utente nel servizio Active Directory locale. Non è possibile eliminarli o ripristinarli in Office 365.
@@ -81,3 +87,5 @@ Le operazioni precedenti possono essere eseguite in tre posizioni:
 ## <a name="related-articles"></a>Articoli correlati
 
 [Ripristinare un utente](restore-user.md)
+
+[Reimpostare password](reset-passwords.md)

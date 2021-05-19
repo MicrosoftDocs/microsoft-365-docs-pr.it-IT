@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come verificare le sottoscrizioni dell'organizzazione andando alla pagina I tuoi prodotti.
 ms.date: 01/21/2021
-ms.openlocfilehash: e1f7ebecafa5edff1ccc3d6eb4e4dc143054996a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: c33ba799880e6c687a08c2d49b17cbae8e80552c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332667"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535891"
 ---
 # <a name="what-subscription-do-i-have"></a>Qual è l'abbonamento corrente?
 
@@ -39,6 +39,12 @@ Se si è un amministratore, è possibile verificare le sottoscrizioni dell'organ
 3. Se si desidera modificare le colonne visualizzate nell'elenco, selezionare **Scegli colonne**. Modificare la selezione delle colonne, quindi selezionare **Salva**.
 4. Per visualizzare altri dettagli per una singola sottoscrizione, selezionare tale sottoscrizione.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
   
 [Sottoscrizioni e fatturazione](../../commerce/index.yml) (collegamenti)
+
+[Visualizzare la fattura o la fattura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (articolo)
+
+[Pagamento dell'abbonamento](../../commerce/billing-and-payments/pay-for-your-subscription.md) (articolo)
+
+[Modificare gli indirizzi di fatturazione](../../commerce/billing-and-payments/change-your-billing-addresses.md) (articolo)

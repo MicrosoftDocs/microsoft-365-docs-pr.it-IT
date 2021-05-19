@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345765"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532051"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -170,7 +170,7 @@ Quando inizialmente gli utenti etichettano un documento o un messaggio di posta 
 
 - Un utente applica l'etichetta **Riservato \ Tutti i dipendenti** a un documento e questa etichetta è configurata per applicare le impostazioni di crittografia a tutti gli utenti dell'organizzazione. Quindi, questo utente configura manualmente le impostazioni di IRM in modo da limitare l'accesso a un utente esterno all'organizzazione. Il risultato finale è un documento con etichetta **Riservato \ Tutti i dipendenti** e crittografato, ma gli utenti dell'organizzazione non possono aprirlo come previsto.
 
-- Un utente applica l'etichetta **Riservato \ Solo destinatari** a un messaggio di posta elettronica e questo messaggio è configurato per applicare l'impostazione di crittografia **Non inoltrare**. Quindi, nell'app Outlook l'utente configura manualmente le impostazioni di IRM in modo che il messaggio di posta elettronica non abbia limitazioni. Il risultato finale è che il messaggio può essere inoltrato dai destinatari, nonostante l'etichetta **Riservato \ Solo destinatari**.
+- Un utente applica l'etichetta **Riservato \ Solo destinatari** a un messaggio di posta elettronica e questo messaggio è configurato per applicare l'impostazione di crittografia **Non inoltrare**. Nell'app Outlook, l'utente seleziona manualmente l'impostazione IRM per Solo cittografia. Come risultato finale, il messaggio rimane crittografato e può essere inoltrato dai destinatari, nonostante l'etichetta **Riservato\Solo destinatari**.
     
     Come eccezione, in Outlook sul Web le opzioni del menu **Crittografa** non sono disponibili per la selezione quando l'etichetta attualmente selezionata applica la crittografia.
 
@@ -178,13 +178,23 @@ Quando inizialmente gli utenti etichettano un documento o un messaggio di posta 
 
 Se il documento o il messaggio di posta elettronica è già etichettato, l'utente può eseguire una qualsiasi di queste azioni se il contenuto non è già crittografato o se ha il [diritto di utilizzo](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Esportazione o Controllo completo.. 
 
-Per un'esperienza di creazione di etichette più coerente con un reporting significativo, fornire etichette appropriate e indicazioni in modo che gli utenti applichino solo etichette per proteggere i documenti. Ad esempio:
+Per un'esperienza di creazione di etichette più coerente con un reporting significativo, fornire etichette appropriate e indicazioni in modo che gli utenti applichino solo etichette per proteggere i documenti e le e-mail. Ad esempio:
 
 - Per i casi eccezionali in cui gli utenti devono assegnare le proprie autorizzazioni, fornire etichette che [consentano agli utenti di assegnare autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
 - Invece di chiedere agli utenti di rimuovere manualmente la crittografia dopo aver selezionato un'etichetta che la applica, fornire una sottoetichetta alternativa da usare quando gli utenti hanno bisogno di un'etichetta con la stessa classificazione, ma senza crittografia. Ad esempio:
     - **Riservato \ Tutti i dipendenti**
     - **Riservato \ Chiunque (nessuna crittografia)**
+
+- Considerare di disabilitare le impostazioni IRM per evitare che gli utenti le selezionino:
+    - Outlook per Windows: 
+        - Chiavi del registro (DWORD:00000001) *DisableDNF* e *DisableEO* da HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
+        - Assicurarsi che l'impostazione dei Criteri di gruppo **Configurare l'opzione di crittografia per il pulsante Crittografa** non sia configurata
+    - Outlook per Mac: 
+        - Le impostazioni di sicurezza delle chiavi *DisableEncryptOnly* e *DisableDoNotForward* documentate in [Impostare le preferenze per Outlook per Mac](/DeployOffice/mac/preferences-outlook)
+    - Outlook sul web: 
+        - Parametri *SimplifiedClientAccessDoNotForwardDisabled* e *SimplifiedClientAccessEncryptOnlyDisabled* documentati per [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
+        - Outlook per iOS e Android: queste app non supportano l'applicazione della crittografia senza etichette da parte degli utenti, quindi non è necessario disabilitare alcun elemento.
 
 > [!NOTE]
 > Se gli utenti rimuovono manualmente la crittografia da un documento etichettato archiviato in SharePoint o OneDrive e sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), la crittografia delle etichette verrà ripristinata automaticamente al successivo accesso o download del documento. 
@@ -413,7 +423,7 @@ Le altre impostazioni avanzate di PowerShell rimangono supportate solo per il cl
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Suggerimenti di PowerShell per specificare le impostazioni avanzate
 
-Per specificare un'etichetta predefinita diversa per Outlook, è necessario specificare il GUID dell'etichetta. Per trovare questo valore si può usare il comando seguente:
+Per specificare un'etichetta predefinita diversa per Outlook, identificare l'etichetta in base al GUID. Per trovare questo valore si può usare il comando seguente:
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid

@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: "Informazioni su come un amministratore globale può modificare il nome visualizzato e l'indirizzo e-mail di un utente. "
-ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: "Informazioni su come un amministratore globale di Microsoft 365 può modificare il nome visualizzato e l'indirizzo di posta elettronica di un utente quando cambia nome. "
+ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291020"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535987"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiare un nome utente e un indirizzo e-mail
 
@@ -63,7 +63,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 2. Selezionare l'utente. Nel riquadro a comparsa, accanto a **Nome utente/Indirizzo di posta elettronica**, selezionare **Modifica**.
 
-3. Nella prima casella, digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa.
+3. Nella prima casella, digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile sceglierlo per il nuovo alias usando l'elenco a discesa.
 
 4. Selezionare **Salva**.
 
@@ -251,8 +251,10 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 Per informazioni su come cambiare il nome di un utente in Active Directory, vedere [Rinominare un account utente](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)) in Windows Server 2003 e versioni precedenti.
   
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Amministratori: Reimpostare la password di uno o più utenti](reset-passwords.md)
+[Amministratori: Reimpostare la password di uno o più utenti](reset-passwords.md) (articolo)
   
-[Aggiungere un altro indirizzo di posta elettronica a un utente](../email/add-another-email-alias-for-a-user.md)
+[Aggiungere un altro indirizzo di posta elettronica a un utente](../email/add-another-email-alias-for-a-user.md) (articolo)
+
+[Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) (articolo)

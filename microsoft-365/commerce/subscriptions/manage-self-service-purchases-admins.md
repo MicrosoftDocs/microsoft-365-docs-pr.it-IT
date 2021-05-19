@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Gli amministratori possono imparare a gestire gli acquisti self-service effettuati dagli utenti nell'organizzazione.
 ms.date: 03/26/2021
-ms.openlocfilehash: af1786b7e3d1b3e4a03202d605d734271acb1da5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a4ac4b79a9a73f80fc22e6f14696e25925df9faf
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333339"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536095"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gestire acquisti in modalità self-service (amministratore)
 
@@ -200,6 +200,6 @@ Quando si sceglie di annullare una sottoscrizione di acquisto self-service, gli 
 
 ## <a name="need-help-contact-us"></a>Hai bisogno di assistenza? Contattaci.
 
-Per domande frequenti sugli acquisti self-service, vedere Domande frequenti [sugli acquisti in self-service.](self-service-purchase-faq.md)
+Per domande frequenti sugli acquisti self-service, vedere Domande frequenti [sugli acquisti in self-service.](self-service-purchase-faq.yml)
 
 Se hai domande o hai bisogno di assistenza per gli acquisti self-service, [contatta il supporto](../../business-video/get-help-support.md).

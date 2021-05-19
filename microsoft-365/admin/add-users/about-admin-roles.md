@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio può aprire ticket di supporto nell'interfaccia di amministrazione.
-ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: I ruoli di amministratore, quale Amministratore dei servizi, sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione.
+ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759409"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536011"
 ---
 # <a name="about-admin-roles"></a>Informazioni sui ruoli di amministratore
 
@@ -43,7 +43,7 @@ Per le descrizioni dettagliate dei ruoli di Intune che è possibile gestire nell
 
 Per altre informazioni sull'assegnazione di ruoli nell'interfaccia di amministrazione di Microsoft 365, vedere [Assegnare ruoli di amministratore](assign-admin-roles.md).
 
-### <a name="watch-what-is-an-admin"></a>Guardare: Che cos'è un amministratore?
+## <a name="watch-what-is-an-admin"></a>Guardare: Che cos'è un amministratore?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
@@ -70,7 +70,7 @@ Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazio
 |Amministratore fatturazione     |   Assegna il ruolo di amministratore fatturazione agli utenti che effettuano acquisti, gestisci abbonamenti e richieste di servizi ed esegui il monitoraggio dell'integrità dei servizi. <br><br> Gli amministratori fatturazione possono anche fare quanto segue:<br> - Gestisci tutti gli aspetti della fatturazione <br> - Crea e gestisci ticket di supporto nel portale di Azure <br>  |
 |Amministratore di Exchange     |   Assegnare il ruolo di amministratore di Exchange agli utenti che hanno la necessità di visualizzare e gestire le cassette postali di posta elettronica degli utenti, i gruppi di Microsoft 365 ed Exchange Online. <br><br> Gli amministratori di Exchange possono anche:<br> - Recuperare gli elementi eliminati nella cassetta postale di un utente <br> - Configurare i delegati "Invia come"e "Invia per conto di" <br>  |
 |Amministratore globale     |   Assegnare il ruolo di amministratore globale agli utenti che hanno bisogno dell'accesso globale alla maggior parte delle funzionalità di gestione e dei dati in Microsoft Online Services. <br><br> Concedere l'accesso globale a troppi utenti costituisce un rischio per la sicurezza; si consiglia di configurare tra 2 e 4 amministratori globali. <br><br> Solo gli amministratori globali possono:<br> - Reimpostare le password per tutti gli utenti <br> - Aggiungere e gestire domini <br> <br> **Nota:** la persona che ha effettuato l'iscrizione ai Microsoft Online Services diventa automaticamente un amministratore globale. |
-|Ruolo con autorizzazioni di lettura globali    |   Assegnare il ruolo con autorizzazioni di lettura globali agli utenti che hanno l'esigenza di visualizzare funzionalità e impostazioni di amministrazione nelle interfacce di amministrazione che l'amministratore globale può visualizzare. L'amministratore con il ruolo con autorizzazioni di lettura globali non può modificare impostazioni.   |
+|Ruolo con autorizzazioni di lettura globali    |   Assegnare il ruolo con autorizzazioni di lettura globali agli utenti che hanno l'esigenza di visualizzare funzionalità e impostazioni di amministrazione nelle interfacce di amministrazione che l'amministratore globale può visualizzare. L'amministratore con autorizzazioni di lettura globali non può modificare alcuna impostazione.   |
 |Amministratore gruppi     |   Assegna il ruolo di amministratore dei gruppi agli utenti che devono gestire tutte le impostazioni dei gruppi nelle interfacce di amministrazione, compresi l'interfaccia di amministrazione di Microsoft 365 e il portale di Azure Active Directory. <br><br> Gli amministratori dei gruppi possono:<br> - Creare, modificare, eliminare e ripristinare gruppi di Microsoft 365 <br> - Creare e aggiornare criteri per la creazione, la scadenza e la denominazione dei gruppi <br> - Creare, modificare, eliminare e ripristinare gruppi di sicurezza di Azure Active Directory| 
 |Amministratore di supporto tecnico     |   Assegnare il ruolo di amministratore di supporto tecnico agli utenti che devono eseguire le azioni seguenti:<br> - Reimpostare password <br> - Forzare gli utenti a disconnettersi <br> - Gestire le richieste di servizio <br> - Monitorare l'integrità dei servizi <br> <br> **Nota**: l'amministratore di supporto tecnico può solo assistere gli utenti che non sono amministratori e gli utenti a cui sono assegnati i ruoli seguenti: ruolo con autorizzazioni di lettura nella directory, mittente dell'invito guest, amministratore di supporto tecnico, ruolo con autorizzazioni di lettura per il Centro messaggi e ruolo con autorizzazioni di lettura per i report.      |
 |Amministratore licenze    |   Assegna il ruolo di amministratore della licenza agli utenti che devono assegnare e rimuovere licenze dagli utenti e modificarne la posizione di utilizzo. <br/><br/> Gli amministratori delle licenze possono anche fare quanto segue: <br> - Rielaborare le assegnazioni delle licenze per le licenze basate su gruppo <br> - Assegnare licenze di prodotto ai gruppi per le licenze basate su gruppo  |
@@ -93,12 +93,12 @@ Un partner può assegnare questi ruoli:
 
 Prima che il partner possa assegnare questi ruoli agli utenti, è necessario aggiungerlo come amministratore con delega al proprio account. Il processo viene avviato da un partner autorizzato, che invia un messaggio di posta elettronica nel quale richiede l'autorizzazione ad agire come amministratore con delega. Per istruzioni, vedere [Autorizzare o rimuovere relazioni con i partner](../misc/add-partner.md).
   
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Assegnare ruoli di amministratore](assign-admin-roles.md)
+[Assegnare ruoli di amministratore](assign-admin-roles.md) (articolo)
 
-[Ruoli di Azure AD nell'interfaccia di amministrazione di Microsoft 365](azure-ad-roles-in-the-mac.md)
+[Ruoli di Azure AD nell'interfaccia di amministrazione di Microsoft 365](azure-ad-roles-in-the-mac.md) (articolo)
 
-[Ruolo di amministratore di Exchange Online](about-exchange-online-admin-role.md)
+[Ruolo di amministratore di Exchange Online](about-exchange-online-admin-role.md) (articolo)
   
-[Report sulle attività nell'interfaccia di amministrazione di Microsoft 365](../activity-reports/activity-reports.md)
+[Report sulle attività nell'interfaccia di amministrazione di Microsoft 365](../activity-reports/activity-reports.md) (aticolo)

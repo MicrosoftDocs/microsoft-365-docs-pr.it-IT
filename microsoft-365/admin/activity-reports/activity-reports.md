@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte degli utenti dell'organizzazione. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte delle persone dell'organizzazione e analizzare ogni grafico per altri dati analitici.
+ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759811"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530971"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Report di Microsoft 365 nell'interfaccia di amministrazione
 
@@ -63,7 +63,7 @@ Guardare questo video per una panoramica sull'uso dei report:
 
 Utenti che hanno le autorizzazioni seguenti:
   
-- Amministratori globali: è preferibile assegnare questo ruolo solo a poche persone nell'organizzazione. Questo approccio riduce i rischi per l'azienda.
+- Amministratori globali: è preferibile assegnare questo ruolo solo a poche persone nella società. Questo approccio riduce i rischi per l'azienda.
     
 - Amministratori di Exchange
     
@@ -199,6 +199,10 @@ Ogni volta che si chiude l'account di un utente, Microsoft elimina i dati di uti
   
 Tuttavia, quando si seleziona un giorno specifico (vedere numero 3), fino a 28 giorni prima della data corrente, il report visualizza l'utilizzo dell'utente per tale giorno nella tabella dei Dettagli utente (vedere numero 2).
   
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Report nel Centro sicurezza &amp; conformità](../../compliance/reports-in-security-and-compliance.md)
+[Report nel Centro sicurezza &amp; e conformità](../../compliance/reports-in-security-and-compliance.md) (articolo)
+
+[Analisi dell'utilizzo di Microsoft 365](../usage-analytics/usage-analytics.md) (articolo)
+
+[Personalizzare i report nell'analisi dell'utilizzo di Microsoft 365](../usage-analytics/customize-reports.md) (articolo)
