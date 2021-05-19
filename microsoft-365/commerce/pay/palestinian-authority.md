@@ -1,34 +1,35 @@
 ---
 title: Informazioni di pagamento per l'Autorità palestinese
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 733740245ba7dbf9ee07d00854aa202a95fd54f7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: e2245c4d0d247a2f425e28227f655383684dab90
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273117"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536395"
 ---
-# <a name="payment-information-for-palestinian-authority"></a><span data-ttu-id="ab9c2-103">Informazioni di pagamento per l'Autorità palestinese</span><span class="sxs-lookup"><span data-stu-id="ab9c2-103">Payment information for Palestinian Authority</span></span>
+# <a name="payment-information-for-palestinian-authority"></a><span data-ttu-id="0ac9c-103">Informazioni di pagamento per l'Autorità palestinese</span><span class="sxs-lookup"><span data-stu-id="0ac9c-103">Payment information for Palestinian Authority</span></span>
 
-<span data-ttu-id="ab9c2-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="ab9c2-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="0ac9c-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="0ac9c-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="ab9c2-105">Pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="ab9c2-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="0ac9c-105">Pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="0ac9c-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="ab9c2-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="ab9c2-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="0ac9c-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="0ac9c-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="ab9c2-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="ab9c2-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="ab9c2-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="ab9c2-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="ab9c2-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="ab9c2-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="ab9c2-110">**Numero account:** 12510049</span><span class="sxs-lookup"><span data-stu-id="ab9c2-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="ab9c2-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="ab9c2-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="0ac9c-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="0ac9c-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="0ac9c-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="0ac9c-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="0ac9c-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="0ac9c-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="0ac9c-110">**Numero account:** 12510049</span><span class="sxs-lookup"><span data-stu-id="0ac9c-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="0ac9c-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="0ac9c-111">**Account Name:** MICROSOFT</span></span>

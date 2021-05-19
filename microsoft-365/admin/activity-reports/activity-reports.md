@@ -19,186 +19,190 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte degli utenti dell'organizzazione. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte delle persone dell'organizzazione e analizzare ogni grafico per altri dati analitici.
+ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759811"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530971"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center"></a><span data-ttu-id="59fdf-104">Report di Microsoft 365 nell'interfaccia di amministrazione</span><span class="sxs-lookup"><span data-stu-id="59fdf-104">Microsoft 365 Reports in the admin center</span></span>
+# <a name="microsoft-365-reports-in-the-admin-center"></a><span data-ttu-id="9548a-103">Report di Microsoft 365 nell'interfaccia di amministrazione</span><span class="sxs-lookup"><span data-stu-id="9548a-103">Microsoft 365 Reports in the admin center</span></span>
 
-<span data-ttu-id="59fdf-p102">È possibile vedere facilmente come vengono usati i servizi di Microsoft 365 dalle persone nell'azienda. Ad esempio, è possibile identificare chi usa molto un servizio e raggiunge le quote o chi potrebbe non avere necessità di una licenza di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="59fdf-p102">You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.</span></span>
+<span data-ttu-id="9548a-p101">È possibile vedere facilmente come vengono usati i servizi di Microsoft 365 dalle persone nell'azienda. Ad esempio, è possibile identificare chi usa molto un servizio e raggiunge le quote o chi potrebbe non avere necessità di una licenza di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="9548a-p101">You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.</span></span>
   
-<span data-ttu-id="59fdf-p103">I report sono disponibili per gli ultimi 7, 30, 90 e 180 giorni. I dati per tutti i periodi di riferimento non saranno subito disponibili. I report diventeranno disponibili entro 48 ore.</span><span class="sxs-lookup"><span data-stu-id="59fdf-p103">Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.</span></span>
+<span data-ttu-id="9548a-p102">I report sono disponibili per gli ultimi 7, 30, 90 e 180 giorni. I dati per tutti i periodi di riferimento non saranno subito disponibili. I report diventeranno disponibili entro 48 ore.</span><span class="sxs-lookup"><span data-stu-id="9548a-p102">Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.</span></span>
   
-<span data-ttu-id="59fdf-110">Guardare questo video per una panoramica sull'uso dei report:</span><span class="sxs-lookup"><span data-stu-id="59fdf-110">Watch this video for on overview: on how you can use the reports:</span></span>
+<span data-ttu-id="9548a-109">Guardare questo video per una panoramica sull'uso dei report:</span><span class="sxs-lookup"><span data-stu-id="9548a-109">Watch this video for on overview: on how you can use the reports:</span></span>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
-## <a name="how-to-get-to-the-reports-dashboard"></a><span data-ttu-id="59fdf-111">Come accedere al dashboard Report</span><span class="sxs-lookup"><span data-stu-id="59fdf-111">How to get to the Reports dashboard</span></span>
+## <a name="how-to-get-to-the-reports-dashboard"></a><span data-ttu-id="9548a-110">Come accedere al dashboard Report</span><span class="sxs-lookup"><span data-stu-id="9548a-110">How to get to the Reports dashboard</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="59fdf-112">Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.</span><span class="sxs-lookup"><span data-stu-id="59fdf-112">In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.</span></span>
+1. <span data-ttu-id="9548a-111">Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.</span><span class="sxs-lookup"><span data-stu-id="9548a-111">In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="59fdf-113">Nell'**interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Report</a> **\>Utilizzo**.</span><span class="sxs-lookup"><span data-stu-id="59fdf-113">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.</span></span>
+1. <span data-ttu-id="9548a-112">Nell'**interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Report</a> **\>Utilizzo**.</span><span class="sxs-lookup"><span data-stu-id="9548a-112">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="59fdf-114">Nell'**interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Report</a> **\>Utilizzo**.</span><span class="sxs-lookup"><span data-stu-id="59fdf-114">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.</span></span>
+1. <span data-ttu-id="9548a-113">Nell'**interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Report</a> **\>Utilizzo**.</span><span class="sxs-lookup"><span data-stu-id="9548a-113">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="59fdf-115">Fare clic sul pulsante **Visualizza altro** dalla scheda riepilogo attività di un servizio, ad esempio e-mail o OneDrive, per visualizzare la pagina dettagli del report.</span><span class="sxs-lookup"><span data-stu-id="59fdf-115">Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page.</span></span> <span data-ttu-id="59fdf-116">Nelle schede sono disponibili report diversi per il servizio.</span><span class="sxs-lookup"><span data-stu-id="59fdf-116">In there different reports for the service are provided in tabs.</span></span> <br/><span data-ttu-id="59fdf-117">![La dashboard di utilizzo](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)</span><span class="sxs-lookup"><span data-stu-id="59fdf-117">![The Usage dashboard](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)</span></span> 
+2. <span data-ttu-id="9548a-114">Fare clic sul pulsante **Visualizza altro** dalla scheda riepilogo attività di un servizio, ad esempio e-mail o OneDrive, per visualizzare la pagina dettagli del report.</span><span class="sxs-lookup"><span data-stu-id="9548a-114">Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page.</span></span> <span data-ttu-id="9548a-115">Nelle schede sono disponibili report diversi per il servizio.</span><span class="sxs-lookup"><span data-stu-id="9548a-115">In there different reports for the service are provided in tabs.</span></span> <br/><span data-ttu-id="9548a-116">![La dashboard di utilizzo](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)</span><span class="sxs-lookup"><span data-stu-id="9548a-116">![The Usage dashboard](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)</span></span> 
 
-## <a name="who-can-see-reports"></a><span data-ttu-id="59fdf-118">Chi può vedere i report</span><span class="sxs-lookup"><span data-stu-id="59fdf-118">Who can see reports</span></span>
+## <a name="who-can-see-reports"></a><span data-ttu-id="9548a-117">Chi può vedere i report</span><span class="sxs-lookup"><span data-stu-id="9548a-117">Who can see reports</span></span>
 
-<span data-ttu-id="59fdf-119">Utenti che hanno le autorizzazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="59fdf-119">People who have the following permissions:</span></span>
+<span data-ttu-id="9548a-118">Utenti che hanno le autorizzazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="9548a-118">People who have the following permissions:</span></span>
   
-- <span data-ttu-id="59fdf-120">Amministratori globali: è preferibile assegnare questo ruolo solo a poche persone nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="59fdf-120">Global admins: We recommend that only a few people in your company have this role.</span></span> <span data-ttu-id="59fdf-121">Questo approccio riduce i rischi per l'azienda.</span><span class="sxs-lookup"><span data-stu-id="59fdf-121">It reduces the risk to your business.</span></span>
+- <span data-ttu-id="9548a-p104">Amministratori globali: è preferibile assegnare questo ruolo solo a poche persone nella società. Questo approccio riduce i rischi per l'azienda.</span><span class="sxs-lookup"><span data-stu-id="9548a-p104">Global admins: We recommend that only a few people in your company have this role. It reduces the risk to your business.</span></span>
     
-- <span data-ttu-id="59fdf-122">Amministratori di Exchange</span><span class="sxs-lookup"><span data-stu-id="59fdf-122">Exchange admins</span></span>
+- <span data-ttu-id="9548a-121">Amministratori di Exchange</span><span class="sxs-lookup"><span data-stu-id="9548a-121">Exchange admins</span></span>
     
-- <span data-ttu-id="59fdf-123">Amministratori di SharePoint</span><span class="sxs-lookup"><span data-stu-id="59fdf-123">SharePoint admins</span></span>
+- <span data-ttu-id="9548a-122">Amministratori di SharePoint</span><span class="sxs-lookup"><span data-stu-id="9548a-122">SharePoint admins</span></span>
     
-- <span data-ttu-id="59fdf-124">Amministratori di Skype for Business</span><span class="sxs-lookup"><span data-stu-id="59fdf-124">Skype for Business admins</span></span>
+- <span data-ttu-id="9548a-123">Amministratori di Skype for Business</span><span class="sxs-lookup"><span data-stu-id="9548a-123">Skype for Business admins</span></span>
 
-- <span data-ttu-id="59fdf-125">Ruolo con autorizzazioni di lettura globali</span><span class="sxs-lookup"><span data-stu-id="59fdf-125">Global reader</span></span>
+- <span data-ttu-id="9548a-124">Ruolo con autorizzazioni di lettura globali</span><span class="sxs-lookup"><span data-stu-id="9548a-124">Global reader</span></span>
     
-- <span data-ttu-id="59fdf-126">Ruolo con autorizzazioni di lettura per i report</span><span class="sxs-lookup"><span data-stu-id="59fdf-126">Reports reader</span></span>
+- <span data-ttu-id="9548a-125">Ruolo con autorizzazioni di lettura per i report</span><span class="sxs-lookup"><span data-stu-id="9548a-125">Reports reader</span></span>
 
-- <span data-ttu-id="59fdf-127">Amministratore del servizio Teams</span><span class="sxs-lookup"><span data-stu-id="59fdf-127">Teams Service Administrator</span></span>
+- <span data-ttu-id="9548a-126">Amministratore del servizio Teams</span><span class="sxs-lookup"><span data-stu-id="9548a-126">Teams Service Administrator</span></span>
 
-- <span data-ttu-id="59fdf-128">Amministratore delle comunicazioni di Teams</span><span class="sxs-lookup"><span data-stu-id="59fdf-128">Teams Communications Administrator</span></span>
+- <span data-ttu-id="9548a-127">Amministratore delle comunicazioni di Teams</span><span class="sxs-lookup"><span data-stu-id="9548a-127">Teams Communications Administrator</span></span>
     
-<span data-ttu-id="59fdf-129">Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../add-users/about-admin-roles.md) e [Assegnare ruoli di amministratore](../add-users/assign-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="59fdf-129">To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).</span></span>
+<span data-ttu-id="9548a-128">Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../add-users/about-admin-roles.md) e [Assegnare ruoli di amministratore](../add-users/assign-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="9548a-128">To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).</span></span>
   
-## <a name="which-activity-reports-are-available-in-the-admin-center"></a><span data-ttu-id="59fdf-130">Quali report attività sono disponibili nell'Interfaccia di amministrazione</span><span class="sxs-lookup"><span data-stu-id="59fdf-130">Which activity reports are available in the admin center</span></span>
+## <a name="which-activity-reports-are-available-in-the-admin-center"></a><span data-ttu-id="9548a-129">Quali report attività sono disponibili nell'Interfaccia di amministrazione</span><span class="sxs-lookup"><span data-stu-id="9548a-129">Which activity reports are available in the admin center</span></span>
 
-<span data-ttu-id="59fdf-131">In base all'abbonamento, questi sono i report disponibili.</span><span class="sxs-lookup"><span data-stu-id="59fdf-131">Depending on your subscription, here are the available reports.</span></span>
+<span data-ttu-id="9548a-130">In base all'abbonamento, questi sono i report disponibili.</span><span class="sxs-lookup"><span data-stu-id="9548a-130">Depending on your subscription, here are the available reports.</span></span>
 
-- [<span data-ttu-id="59fdf-132">Utilizzo del browser Microsoft</span><span class="sxs-lookup"><span data-stu-id="59fdf-132">Microsoft browser usage</span></span>](browser-usage-report.md) 
+- [<span data-ttu-id="9548a-131">Utilizzo del browser Microsoft</span><span class="sxs-lookup"><span data-stu-id="9548a-131">Microsoft browser usage</span></span>](browser-usage-report.md) 
   
-- [<span data-ttu-id="59fdf-133">Attività di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="59fdf-133">Email activity</span></span>](email-activity-ww.md)
+- [<span data-ttu-id="9548a-132">Attività di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="9548a-132">Email activity</span></span>](email-activity-ww.md)
 
-- [<span data-ttu-id="59fdf-134">Attività di posta elettronica per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-134">Email activity for US Government</span></span>](email-activity.md)
+- [<span data-ttu-id="9548a-133">Attività di posta elettronica per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-133">Email activity for US Government</span></span>](email-activity.md)
     
-- [<span data-ttu-id="59fdf-135">Utilizzo delle cassette postali</span><span class="sxs-lookup"><span data-stu-id="59fdf-135">Mailbox usage</span></span>](mailbox-usage.md)
+- [<span data-ttu-id="9548a-134">Utilizzo delle cassette postali</span><span class="sxs-lookup"><span data-stu-id="9548a-134">Mailbox usage</span></span>](mailbox-usage.md)
     
-- [<span data-ttu-id="59fdf-136">Attivazioni di Office</span><span class="sxs-lookup"><span data-stu-id="59fdf-136">Office activations</span></span>](microsoft-office-activations-ww.md)
+- [<span data-ttu-id="9548a-135">Attivazioni di Office</span><span class="sxs-lookup"><span data-stu-id="9548a-135">Office activations</span></span>](microsoft-office-activations-ww.md)
 
-- [<span data-ttu-id="59fdf-137">Attivazioni di Office per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-137">Office activations for US Government</span></span>](microsoft-office-activations.md)
+- [<span data-ttu-id="9548a-136">Attivazioni di Office per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-136">Office activations for US Government</span></span>](microsoft-office-activations.md)
 
-- [<span data-ttu-id="59fdf-138">Utenti attivi</span><span class="sxs-lookup"><span data-stu-id="59fdf-138">Active Users</span></span>](active-users-ww.md)
+- [<span data-ttu-id="9548a-137">Utenti attivi</span><span class="sxs-lookup"><span data-stu-id="9548a-137">Active Users</span></span>](active-users-ww.md)
 
-- [<span data-ttu-id="59fdf-139">Utenti attivi per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-139">Active Users for US Government</span></span>](active-users.md)
+- [<span data-ttu-id="9548a-138">Utenti attivi per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-138">Active Users for US Government</span></span>](active-users.md)
   
-- [<span data-ttu-id="59fdf-140">Utilizzo delle applicazioni di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="59fdf-140">Email apps usage</span></span>](email-apps-usage-ww.md)
+- [<span data-ttu-id="9548a-139">Utilizzo delle applicazioni di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="9548a-139">Email apps usage</span></span>](email-apps-usage-ww.md)
 
-- [<span data-ttu-id="59fdf-141">Utilizzo delle applicazioni di posta elettronica per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-141">Email apps usage for US Government</span></span>](email-apps-usage.md)
+- [<span data-ttu-id="9548a-140">Utilizzo delle applicazioni di posta elettronica per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-140">Email apps usage for US Government</span></span>](email-apps-usage.md)
 
-- [<span data-ttu-id="59fdf-142">Attività di Forms</span><span class="sxs-lookup"><span data-stu-id="59fdf-142">Forms activity</span></span>](forms-activity-ww.md)
+- [<span data-ttu-id="9548a-141">Attività di Forms</span><span class="sxs-lookup"><span data-stu-id="9548a-141">Forms activity</span></span>](forms-activity-ww.md)
 
-- [<span data-ttu-id="59fdf-143">Attività di Forms per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-143">Forms activity for US Government</span></span>](forms-activity.md)
+- [<span data-ttu-id="9548a-142">Attività di Forms per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-142">Forms activity for US Government</span></span>](forms-activity.md)
 
-- [<span data-ttu-id="59fdf-144">Attività Dynamics 365 Customer Voice</span><span class="sxs-lookup"><span data-stu-id="59fdf-144">Dynamics 365 Customer Voice activity</span></span>](forms-pro-activity-ww.md)
+- [<span data-ttu-id="9548a-143">Attività Dynamics 365 Customer Voice</span><span class="sxs-lookup"><span data-stu-id="9548a-143">Dynamics 365 Customer Voice activity</span></span>](forms-pro-activity-ww.md)
   
-- [<span data-ttu-id="59fdf-145">Attività Dynamics 365 Customer Voice per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-145">Dynamics 365 Customer Voice activity for US Government</span></span>](forms-pro-activity.md)
+- [<span data-ttu-id="9548a-144">Attività Dynamics 365 Customer Voice per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-144">Dynamics 365 Customer Voice activity for US Government</span></span>](forms-pro-activity.md)
 
-- [<span data-ttu-id="59fdf-146">Gruppi di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="59fdf-146">Microsoft 365 groups</span></span>](office-365-groups-ww.md)
+- [<span data-ttu-id="9548a-145">Gruppi di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="9548a-145">Microsoft 365 groups</span></span>](office-365-groups-ww.md)
 
-- [<span data-ttu-id="59fdf-147">Gruppi di Microsoft 365 per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-147">Microsoft 365 groups for US Government</span></span>](office-365-groups.md)
+- [<span data-ttu-id="9548a-146">Gruppi di Microsoft 365 per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-146">Microsoft 365 groups for US Government</span></span>](office-365-groups.md)
   
-- [<span data-ttu-id="59fdf-148">Attività degli utenti di OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="59fdf-148">OneDrive for Business user activity</span></span>](onedrive-for-business-activity-ww.md)
+- [<span data-ttu-id="9548a-147">Attività degli utenti di OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="9548a-147">OneDrive for Business user activity</span></span>](onedrive-for-business-activity-ww.md)
 
-- [<span data-ttu-id="59fdf-149">Attività degli utenti di OneDrive for Business per US Government </span><span class="sxs-lookup"><span data-stu-id="59fdf-149">OneDrive for Business user activity for US Government</span></span>](onedrive-for-business-activity.md)
+- [<span data-ttu-id="9548a-148">Attività degli utenti di OneDrive for Business per US Government </span><span class="sxs-lookup"><span data-stu-id="9548a-148">OneDrive for Business user activity for US Government</span></span>](onedrive-for-business-activity.md)
 
-- [<span data-ttu-id="59fdf-150">Utilizzo di OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="59fdf-150">OneDrive for Business usage</span></span>](onedrive-for-business-usage-ww.md)
+- [<span data-ttu-id="9548a-149">Utilizzo di OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="9548a-149">OneDrive for Business usage</span></span>](onedrive-for-business-usage-ww.md)
 
-- [<span data-ttu-id="59fdf-151">Utilizzo di OneDrive for Business per US Government </span><span class="sxs-lookup"><span data-stu-id="59fdf-151">OneDrive for Business usage for US Government</span></span>](onedrive-for-business-usage.md)
+- [<span data-ttu-id="9548a-150">Utilizzo di OneDrive for Business per US Government </span><span class="sxs-lookup"><span data-stu-id="9548a-150">OneDrive for Business usage for US Government</span></span>](onedrive-for-business-usage.md)
 
-- [<span data-ttu-id="59fdf-152">Utilizzo di Microsoft 365 Apps</span><span class="sxs-lookup"><span data-stu-id="59fdf-152">Microsoft 365 Apps usage</span></span>](microsoft365-apps-usage-ww.md)
+- [<span data-ttu-id="9548a-151">Utilizzo di Microsoft 365 Apps</span><span class="sxs-lookup"><span data-stu-id="9548a-151">Microsoft 365 Apps usage</span></span>](microsoft365-apps-usage-ww.md)
   
-- [<span data-ttu-id="59fdf-153">Utilizzo dei sito di SharePoint</span><span class="sxs-lookup"><span data-stu-id="59fdf-153">SharePoint site usage</span></span>](sharepoint-site-usage-ww.md)
+- [<span data-ttu-id="9548a-152">Utilizzo dei sito di SharePoint</span><span class="sxs-lookup"><span data-stu-id="9548a-152">SharePoint site usage</span></span>](sharepoint-site-usage-ww.md)
 
-- [<span data-ttu-id="59fdf-154">Utilizzo del sito di SharePoint per US Government</span><span class="sxs-lookup"><span data-stu-id="59fdf-154">SharePoint site usage for US Government</span></span>](sharepoint-site-usage.md)
+- [<span data-ttu-id="9548a-153">Utilizzo del sito di SharePoint per US Government</span><span class="sxs-lookup"><span data-stu-id="9548a-153">SharePoint site usage for US Government</span></span>](sharepoint-site-usage.md)
   
-- [<span data-ttu-id="59fdf-155">Attività di SharePoint</span><span class="sxs-lookup"><span data-stu-id="59fdf-155">SharePoint activity</span></span>](sharepoint-activity-ww.md)
+- [<span data-ttu-id="9548a-154">Attività di SharePoint</span><span class="sxs-lookup"><span data-stu-id="9548a-154">SharePoint activity</span></span>](sharepoint-activity-ww.md)
 
-- [<span data-ttu-id="59fdf-156">Attività di SharePoint per US Government</span><span class="sxs-lookup"><span data-stu-id="59fdf-156">SharePoint activity for US Government</span></span>](sharepoint-activity.md)
+- [<span data-ttu-id="9548a-155">Attività di SharePoint per US Government</span><span class="sxs-lookup"><span data-stu-id="9548a-155">SharePoint activity for US Government</span></span>](sharepoint-activity.md)
   
-- [<span data-ttu-id="59fdf-157">Attività in Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="59fdf-157">Skype for Business Online activity</span></span>](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
+- [<span data-ttu-id="9548a-156">Attività in Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="9548a-156">Skype for Business Online activity</span></span>](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
-- [<span data-ttu-id="59fdf-158">Attività organizzatore di conferenze di Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="59fdf-158">Skype for Business Online conference organized activity</span></span>](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
+- [<span data-ttu-id="9548a-157">Attività organizzatore di conferenze di Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="9548a-157">Skype for Business Online conference organized activity</span></span>](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
   
-- [<span data-ttu-id="59fdf-159">Attività partecipante a conferenze di Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="59fdf-159">Skype for Business Online conference participant activity</span></span>](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
+- [<span data-ttu-id="9548a-158">Attività partecipante a conferenze di Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="9548a-158">Skype for Business Online conference participant activity</span></span>](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
-- [<span data-ttu-id="59fdf-160">Attività peer-to-peer in Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="59fdf-160">Skype for Business Online peer-to-peer activity</span></span>](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
+- [<span data-ttu-id="9548a-159">Attività peer-to-peer in Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="9548a-159">Skype for Business Online peer-to-peer activity</span></span>](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
 
-- [<span data-ttu-id="59fdf-161">Attività in Yammer</span><span class="sxs-lookup"><span data-stu-id="59fdf-161">Yammer activity</span></span>](yammer-activity-report-ww.md)
+- [<span data-ttu-id="9548a-160">Attività in Yammer</span><span class="sxs-lookup"><span data-stu-id="9548a-160">Yammer activity</span></span>](yammer-activity-report-ww.md)
 
-- [<span data-ttu-id="59fdf-162">Attività di Yammer per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-162">Yammer activity for US Government</span></span>](yammer-activity-report.md)
+- [<span data-ttu-id="9548a-161">Attività di Yammer per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-161">Yammer activity for US Government</span></span>](yammer-activity-report.md)
 
-- [<span data-ttu-id="59fdf-163">Utilizzo di dispositivi Yammer</span><span class="sxs-lookup"><span data-stu-id="59fdf-163">Yammer device usage</span></span>](yammer-device-usage-report-ww.md)
+- [<span data-ttu-id="9548a-162">Utilizzo di dispositivi Yammer</span><span class="sxs-lookup"><span data-stu-id="9548a-162">Yammer device usage</span></span>](yammer-device-usage-report-ww.md)
 
-- [<span data-ttu-id="59fdf-164">Utilizzo dei dispositivi Yammer per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-164">Yammer device usage for US Government</span></span>](yammer-device-usage-report.md)
+- [<span data-ttu-id="9548a-163">Utilizzo dei dispositivi Yammer per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-163">Yammer device usage for US Government</span></span>](yammer-device-usage-report.md)
 
-- [<span data-ttu-id="59fdf-165">Report delle attività dei gruppi di Yammer</span><span class="sxs-lookup"><span data-stu-id="59fdf-165">Yammer groups activity report</span></span>](yammer-groups-activity-report-ww.md)
+- [<span data-ttu-id="9548a-164">Report delle attività dei gruppi di Yammer</span><span class="sxs-lookup"><span data-stu-id="9548a-164">Yammer groups activity report</span></span>](yammer-groups-activity-report-ww.md)
 
-- [<span data-ttu-id="59fdf-166">Report delle attività dei gruppi di Yammer per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-166">Yammer groups activity report for US Government</span></span>](yammer-groups-activity-report.md)
+- [<span data-ttu-id="9548a-165">Report delle attività dei gruppi di Yammer per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-165">Yammer groups activity report for US Government</span></span>](yammer-groups-activity-report.md)
 
-- [<span data-ttu-id="59fdf-167">Attività degli utenti di Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="59fdf-167">Microsoft Teams user activity</span></span>](microsoft-teams-user-activity-preview.md)
+- [<span data-ttu-id="9548a-166">Attività degli utenti di Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="9548a-166">Microsoft Teams user activity</span></span>](microsoft-teams-user-activity-preview.md)
 
-- [<span data-ttu-id="59fdf-168">Attività degli utenti di Microsoft Teams per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-168">Microsoft Teams user activity for US Government</span></span>](microsoft-teams-user-activity.md)
+- [<span data-ttu-id="9548a-167">Attività degli utenti di Microsoft Teams per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-167">Microsoft Teams user activity for US Government</span></span>](microsoft-teams-user-activity.md)
 
-- [<span data-ttu-id="59fdf-169">Utilizzo di dispositivi Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="59fdf-169">Microsoft Teams device usage</span></span>](microsoft-teams-device-usage-preview.md)
+- [<span data-ttu-id="9548a-168">Utilizzo di dispositivi Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="9548a-168">Microsoft Teams device usage</span></span>](microsoft-teams-device-usage-preview.md)
 
-- [<span data-ttu-id="59fdf-170">Uso dei dispositivi di Microsoft Teams per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="59fdf-170">Microsoft Teams device usage for US Government</span></span>](microsoft-teams-device-usage.md)
+- [<span data-ttu-id="9548a-169">Uso dei dispositivi di Microsoft Teams per il Governo degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="9548a-169">Microsoft Teams device usage for US Government</span></span>](microsoft-teams-device-usage.md)
 
-## <a name="how-to-view-licensing-information"></a><span data-ttu-id="59fdf-171">Come visualizzare le informazioni sulle licenze</span><span class="sxs-lookup"><span data-stu-id="59fdf-171">How to view licensing information</span></span>
+## <a name="how-to-view-licensing-information"></a><span data-ttu-id="9548a-170">Come visualizzare le informazioni sulle licenze</span><span class="sxs-lookup"><span data-stu-id="9548a-170">How to view licensing information</span></span>
 
-- <span data-ttu-id="59fdf-172">Per vedere quante sono le licenze assegnate e quelle non assegnate, passare alla pagina **Fatturazione**\><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licenze</a> nell'interfaccia di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="59fdf-172">To see how many licenses you have assigned and unassigned, in the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
+- <span data-ttu-id="9548a-171">Per vedere quante sono le licenze assegnate e quelle non assegnate, passare alla pagina **Fatturazione**\><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licenze</a> nell'interfaccia di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="9548a-171">To see how many licenses you have assigned and unassigned, in the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
     
-- <span data-ttu-id="59fdf-173">Per vedere gli utenti con licenza, senza licenza o guest, nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="59fdf-173">To see who is licensed, unlicensed, or guest, in the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span> 
+- <span data-ttu-id="9548a-172">Per vedere gli utenti con licenza, senza licenza o guest, nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9548a-172">To see who is licensed, unlicensed, or guest, in the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span> 
   
-## <a name="how-to-view-usage-information-for-a-specific-user"></a><span data-ttu-id="59fdf-174">Visualizzare le informazioni sull'utilizzo per un utente specifico</span><span class="sxs-lookup"><span data-stu-id="59fdf-174">How to view usage information for a specific user</span></span>
+## <a name="how-to-view-usage-information-for-a-specific-user"></a><span data-ttu-id="9548a-173">Visualizzare le informazioni sull'utilizzo per un utente specifico</span><span class="sxs-lookup"><span data-stu-id="9548a-173">How to view usage information for a specific user</span></span>
 
-<span data-ttu-id="59fdf-p106">Usare i report del servizio per sapere quanto viene usato il servizio da uno specifico utente. Ad esempio, per sapere quanto spazio di archiviazione della cassetta postale è stato usato da un utente specifico, aprire il report Utilizzo cassette postali e ordinare gli utenti in base al nome. Se ci sono migliaia di utenti, esportare il report in Excel per filtrare rapidamente l'elenco.</span><span class="sxs-lookup"><span data-stu-id="59fdf-p106">Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.</span></span>
+<span data-ttu-id="9548a-p105">Usare i report del servizio per sapere quanto viene usato il servizio da uno specifico utente. Ad esempio, per sapere quanto spazio di archiviazione della cassetta postale è stato usato da un utente specifico, aprire il report Utilizzo cassette postali e ordinare gli utenti in base al nome. Se ci sono migliaia di utenti, esportare il report in Excel per filtrare rapidamente l'elenco.</span><span class="sxs-lookup"><span data-stu-id="9548a-p105">Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.</span></span>
   
-<span data-ttu-id="59fdf-178">Non è possibile generare un report in cui si immette l'account di un utente e viene visualizzato un elenco con i servizi usati dall'utente e l'entità dell'utilizzo.</span><span class="sxs-lookup"><span data-stu-id="59fdf-178">You can't generate a report where you enter a user's account and then get a list of which services they are using and how much.</span></span>
+<span data-ttu-id="9548a-177">Non è possibile generare un report in cui si immette l'account di un utente e viene visualizzato un elenco con i servizi usati dall'utente e l'entità dell'utilizzo.</span><span class="sxs-lookup"><span data-stu-id="9548a-177">You can't generate a report where you enter a user's account and then get a list of which services they are using and how much.</span></span>
 
-<span data-ttu-id="59fdf-179">In alcune circostanze i nuovi utenti vengono visualizzati come **sconosciuti**.</span><span class="sxs-lookup"><span data-stu-id="59fdf-179">There are circumstances where new users show up as **unknown**.</span></span> <span data-ttu-id="59fdf-180">Ciò è dovuto a ritardi occasionali nella creazione dei profili utente.</span><span class="sxs-lookup"><span data-stu-id="59fdf-180">This is usually due to occasional delays in creating user profiles.</span></span>  
+<span data-ttu-id="9548a-178">In alcune circostanze i nuovi utenti vengono visualizzati come **sconosciuti**.</span><span class="sxs-lookup"><span data-stu-id="9548a-178">There are circumstances where new users show up as **unknown**.</span></span> <span data-ttu-id="9548a-179">Ciò è dovuto a ritardi occasionali nella creazione dei profili utente.</span><span class="sxs-lookup"><span data-stu-id="9548a-179">This is usually due to occasional delays in creating user profiles.</span></span>  
   
-## <a name="hide-user-details-in-the-reports"></a><span data-ttu-id="59fdf-181">Nascondere i dettagli utente nei report</span><span class="sxs-lookup"><span data-stu-id="59fdf-181">Hide user details in the reports</span></span>
+## <a name="hide-user-details-in-the-reports"></a><span data-ttu-id="9548a-180">Nascondere i dettagli utente nei report</span><span class="sxs-lookup"><span data-stu-id="9548a-180">Hide user details in the reports</span></span>
 
-<span data-ttu-id="59fdf-182">Se si vogliono nascondere le informazioni a livello di utente quando si generano i report, è possibile apportare rapidamente questa modifica nell'interfaccia di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="59fdf-182">If you want to hide user level information when you're generating your reports, you can quickly make that change in the admin center.</span></span>
+<span data-ttu-id="9548a-181">Se si vogliono nascondere le informazioni a livello di utente quando si generano i report, è possibile apportare rapidamente questa modifica nell'interfaccia di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="9548a-181">If you want to hide user level information when you're generating your reports, you can quickly make that change in the admin center.</span></span>
   
-1. <span data-ttu-id="59fdf-183">Nell'interfaccia di amministrazione passare a **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Servizi &amp; componenti aggiuntivi</a>.</span><span class="sxs-lookup"><span data-stu-id="59fdf-183">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.</span></span>
+1. <span data-ttu-id="9548a-182">Nell'interfaccia di amministrazione passare a **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Servizi &amp; componenti aggiuntivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9548a-182">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.</span></span>
 
-2. <span data-ttu-id="59fdf-184">Selezionare **Reports**.</span><span class="sxs-lookup"><span data-stu-id="59fdf-184">Select **Reports**.</span></span> 
+2. <span data-ttu-id="9548a-183">Selezionare **Reports**.</span><span class="sxs-lookup"><span data-stu-id="9548a-183">Select **Reports**.</span></span> 
   
-3. <span data-ttu-id="59fdf-185">Nel riquadro **Reports** selezionare le opzioni desiderate e poi salvare le modifiche.</span><span class="sxs-lookup"><span data-stu-id="59fdf-185">In the **Reports** pane, select the options you want, and then save your changes.</span></span>
+3. <span data-ttu-id="9548a-184">Nel riquadro **Reports** selezionare le opzioni desiderate e poi salvare le modifiche.</span><span class="sxs-lookup"><span data-stu-id="9548a-184">In the **Reports** pane, select the options you want, and then save your changes.</span></span>
   
-<span data-ttu-id="59fdf-186">L'elenco di utenti avrà questo aspetto:</span><span class="sxs-lookup"><span data-stu-id="59fdf-186">Your user list will look like this:</span></span>
+<span data-ttu-id="9548a-185">L'elenco di utenti avrà questo aspetto:</span><span class="sxs-lookup"><span data-stu-id="9548a-185">Your user list will look like this:</span></span>
   
 ![Report - Elenco utenti anonimi](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-<span data-ttu-id="59fdf-p108">Perché le modifiche abbiano effetto sui report nella dashboard dei report occorrerà qualche minuto. Questa impostazione si applica anche all'API dei report.</span><span class="sxs-lookup"><span data-stu-id="59fdf-p108">It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.</span></span>
+<span data-ttu-id="9548a-p107">Perché le modifiche abbiano effetto sui report nella dashboard dei report occorrerà qualche minuto. Questa impostazione si applica anche all'API dei report.</span><span class="sxs-lookup"><span data-stu-id="9548a-p107">It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.</span></span>
   
-## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a><span data-ttu-id="59fdf-190">Cosa succede ai dati di utilizzo quando un account utente viene chiuso?</span><span class="sxs-lookup"><span data-stu-id="59fdf-190">What happens to usage data when a user account is closed?</span></span>
+## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a><span data-ttu-id="9548a-189">Cosa succede ai dati di utilizzo quando un account utente viene chiuso?</span><span class="sxs-lookup"><span data-stu-id="9548a-189">What happens to usage data when a user account is closed?</span></span>
 
-<span data-ttu-id="59fdf-191">Ogni volta che si chiude l'account di un utente, Microsoft elimina i dati di utilizzo entro 30 giorni.</span><span class="sxs-lookup"><span data-stu-id="59fdf-191">Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days.</span></span> <span data-ttu-id="59fdf-192">Quell'utente continuerà a essere incluso nei totali del grafico Attività (vedere numero 1) per i periodi in cui era attivo, ma non verrà visualizzato nella tabella dei Dettagli dell'utente (vedere numero 2).</span><span class="sxs-lookup"><span data-stu-id="59fdf-192">That user will still be included in the Activity chart totals (see number 1) for the periods she was active in, but will not appear in the User Details table (see number 2).</span></span>
+<span data-ttu-id="9548a-190">Ogni volta che si chiude l'account di un utente, Microsoft elimina i dati di utilizzo entro 30 giorni.</span><span class="sxs-lookup"><span data-stu-id="9548a-190">Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days.</span></span> <span data-ttu-id="9548a-191">Quell'utente continuerà a essere incluso nei totali del grafico Attività (vedere numero 1) per i periodi in cui era attivo, ma non verrà visualizzato nella tabella dei Dettagli dell'utente (vedere numero 2).</span><span class="sxs-lookup"><span data-stu-id="9548a-191">That user will still be included in the Activity chart totals (see number 1) for the periods she was active in, but will not appear in the User Details table (see number 2).</span></span>
   
-<span data-ttu-id="59fdf-193">Tuttavia, quando si seleziona un giorno specifico (vedere numero 3), fino a 28 giorni prima della data corrente, il report visualizza l'utilizzo dell'utente per tale giorno nella tabella dei Dettagli utente (vedere numero 2).</span><span class="sxs-lookup"><span data-stu-id="59fdf-193">However, when you select a particular day (see number 3), up to 28 days from the current date, the report show the user's usage for that day in the User Details table (see number 2).</span></span>
+<span data-ttu-id="9548a-192">Tuttavia, quando si seleziona un giorno specifico (vedere numero 3), fino a 28 giorni prima della data corrente, il report visualizza l'utilizzo dell'utente per tale giorno nella tabella dei Dettagli utente (vedere numero 2).</span><span class="sxs-lookup"><span data-stu-id="9548a-192">However, when you select a particular day (see number 3), up to 28 days from the current date, the report show the user's usage for that day in the User Details table (see number 2).</span></span>
   
-## <a name="related-articles"></a><span data-ttu-id="59fdf-194">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="59fdf-194">Related articles</span></span>
+## <a name="related-content"></a><span data-ttu-id="9548a-193">Contenuto correlato</span><span class="sxs-lookup"><span data-stu-id="9548a-193">Related content</span></span>
 
-[<span data-ttu-id="59fdf-195">Report nel Centro sicurezza &amp; conformità</span><span class="sxs-lookup"><span data-stu-id="59fdf-195">Reports in the Security &amp; Compliance Center</span></span>](../../compliance/reports-in-security-and-compliance.md)
+<span data-ttu-id="9548a-194">[Report nel Centro sicurezza &amp; e conformità](../../compliance/reports-in-security-and-compliance.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="9548a-194">[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)</span></span>
+
+<span data-ttu-id="9548a-195">[Analisi dell'utilizzo di Microsoft 365](../usage-analytics/usage-analytics.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="9548a-195">[Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)</span></span>
+
+<span data-ttu-id="9548a-196">[Personalizzare i report nell'analisi dell'utilizzo di Microsoft 365](../usage-analytics/customize-reports.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="9548a-196">[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)</span></span>
