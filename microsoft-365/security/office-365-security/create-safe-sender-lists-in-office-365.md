@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono conoscere le opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5473f8c37b4edcf6c2451cf995b430edbe09533
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205988"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538760"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
 
@@ -33,12 +33,12 @@ ms.locfileid: "51205988"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Se si è un cliente di Microsoft 365 con cassette postali in Exchange Online o un cliente autonomo di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, EOP offre diversi modi per garantire che gli utenti ricevano la posta elettronica da mittenti attendibili. Queste opzioni includono le regole del flusso di posta di Exchange (note anche come regole di trasporto), i mittenti attendibili di Outlook, l'elenco indirizzi IP consentiti (filtro connessioni) e gli elenchi di mittenti consentiti o gli elenchi di domini consentiti nei criteri di protezione da posta indesiderata. Collettivamente, è possibile pensare a queste opzioni come _elenchi di mittenti attendibili._
+Se si è un cliente di Microsoft 365 con cassette postali in Exchange Online o un cliente autonomo di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, EOP offre diversi modi per garantire che gli utenti ricevano posta elettronica da mittenti attendibili. Queste opzioni includono le regole del flusso di posta Exchange (note anche come regole di trasporto), i mittenti attendibili di Outlook, l'elenco indirizzi IP consentiti (filtro connessioni) e gli elenchi di mittenti consentiti o gli elenchi di domini consentiti nei criteri di protezione da posta indesiderata. Collettivamente, è possibile pensare a queste opzioni come _elenchi di mittenti attendibili._
 
 Gli elenchi di mittenti attendibili disponibili sono descritti nell'elenco seguente nell'ordine dal più consigliato al meno consigliato:
 
 1. Regole del flusso di posta
-2. Mittenti attendibili di Outlook
+2. Outlook Mittenti attendibili
 3. Elenco indirizzi IP consentiti (filtro connessioni)
 4. Elenchi di mittenti consentiti o elenchi di domini consentiti (criteri di protezione da posta indesiderata)
 
@@ -50,15 +50,15 @@ Le regole del flusso di posta consentono la massima flessibilità per garantire 
 >
 > - Sebbene sia possibile utilizzare gli elenchi di mittenti attendibili per facilitare i falsi positivi (buona posta elettronica contrassegnata come non buona), è consigliabile considerare l'utilizzo degli elenchi di mittenti attendibili come soluzione temporanea da evitare, se possibile. Non è consigliabile gestire i falsi positivi utilizzando elenchi di mittenti attendibili, perché le eccezioni al filtro posta indesiderata possono aprire l'organizzazione a spoofing e altri attacchi. Se si insiste sull'utilizzo degli elenchi di mittenti attendibili per gestire i falsi positivi, è necessario essere attenti e mantenere pronto l'argomento Segnalare messaggi e file a [Microsoft.](report-junk-email-messages-to-microsoft.md)
 >
-> - Per consentire a un dominio di inviare messaggi di posta elettronica non autenticati (ignorare la protezione anti-spoofing) ma non di ignorare i controlli di protezione da posta indesiderata e antimalware, è possibile aggiungerlo all'elenco Mittenti attendibili [AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)
+> - Per consentire a un dominio di inviare messaggi di posta elettronica non autenticati (ignorare la protezione anti-spoofing) ma non di ignorare i controlli di protezione da posta indesiderata e antimalware, è possibile utilizzare le informazioni [di spoof intelligence](learn-about-spoof-intelligence.md) e l'elenco [consenti/blocca](tenant-allow-block-list.md)tenant.
 >
-> - EOP e Outlook esaminano diverse proprietà dei messaggi per determinare il mittente del messaggio. Per ulteriori informazioni, vedere la sezione [Considerazioni per la posta elettronica](#considerations-for-bulk-email) in blocco più avanti in questo articolo.
+> - EOP e Outlook controllare diverse proprietà del messaggio per determinare il mittente del messaggio. Per ulteriori informazioni, vedere la sezione [Considerazioni per la posta elettronica](#considerations-for-bulk-email) in blocco più avanti in questo articolo.
 
 Al contrario, sono disponibili diverse opzioni per bloccare la posta elettronica da origini specifiche utilizzando _elenchi di mittenti bloccati._ Per altre informazioni, vedere [Creare elenchi di mittenti bloccati in EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Scelta consigliata) Usare le regole del flusso di posta
 
-Le regole del flusso di posta in Exchange Online e in EOP autonomo utilizzano condizioni ed eccezioni per identificare i messaggi e azioni per specificare le operazioni da eseguire per tali messaggi. Per ulteriori informazioni, vedere [Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Le regole del flusso di posta Exchange Online e EOP autonomo utilizzano condizioni ed eccezioni per identificare i messaggi e azioni per specificare le operazioni da eseguire per tali messaggi. Per ulteriori informazioni, vedere [Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
 L'esempio seguente presuppone che sia necessaria la posta elettronica contoso.com per ignorare il filtro posta indesiderata. A tale scopo, configurare le impostazioni seguenti:
 
@@ -100,7 +100,7 @@ L'esempio seguente presuppone che sia necessaria la posta elettronica contoso.co
 
 ![Impostazioni delle regole del flusso di posta nell'interfaccia di amministrazione di Exchange per ignorare il filtro posta indesiderata.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
-## <a name="use-outlook-safe-senders"></a>Utilizzare Mittenti attendibili di Outlook
+## <a name="use-outlook-safe-senders"></a>Usare Outlook mittenti attendibili
 
 > [!CAUTION]
 > Questo metodo crea un rischio elevato per gli utenti malintenzionati di recapitare correttamente messaggi di posta elettronica nella Posta in arrivo che altrimenti verrebbero filtrati; Tuttavia, gli elenchi Mittenti attendibili o Domini attendibili dell'utente non impediscono il filtro di malware o messaggi di phishing ad alta probabilità.
@@ -150,13 +150,13 @@ Si supponga, ad esempio, che Blue Yonder Airlines abbia assunto Margie's Travel 
 
 - `5321.MailFrom`L'indirizzo è blueyonder.airlines@margiestravel.com.
 
-- L'indirizzo blueyonder@news.blueyonderairlines.com, che è quello `5322.From` che verrà visualizzato in Outlook.
+- L'indirizzo blueyonder@news.blueyonderairlines.com, che è quello che `5322.From` vedrai in Outlook.
 
-Gli elenchi di mittenti attendibili e di domini attendibili nei criteri di protezione da posta indesiderata in EOP controllano solo gli indirizzi, in modo analogo ai mittenti attendibili di Outlook che `5322.From` utilizzano `5322.From` l'indirizzo.
+Gli elenchi di mittenti attendibili ed elenchi di domini attendibili nei criteri di protezione da posta indesiderata in EOP controllano solo gli indirizzi, in modo analogo Outlook mittenti attendibili che utilizzano `5322.From` `5322.From` l'indirizzo.
 
 Per impedire che questo messaggio venga filtrato, è possibile eseguire la procedura seguente:
 
-- Aggiungere blueyonder@news.blueyonderairlines.com `5322.From` (l'indirizzo) come mittente sicuro di Outlook.
+- Aggiungere blueyonder@news.blueyonderairlines.com `5322.From` (l'indirizzo) come mittente Outlook mittente sicuro.
 
 - [Utilizzare una regola del flusso di](#recommended-use-mail-flow-rules) posta con una condizione che consente di cercare i messaggi da blueyonder@news.blueyonderairlines.com (l'indirizzo, blueyonder.airlines@margiestravel.com `5322.From` (il ) o `5321.MailFrom` entrambi.
 

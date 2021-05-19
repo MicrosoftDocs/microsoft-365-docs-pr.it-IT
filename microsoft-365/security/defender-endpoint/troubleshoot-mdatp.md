@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8aaea65c617300a16f99a9a3e3a62d94b7983198
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933758"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538352"
 ---
 # <a name="troubleshoot-service-issues"></a>Risolvere i problemi dei servizi
 
@@ -34,14 +34,14 @@ ms.locfileid: "51933758"
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
-Questa sezione risolve i problemi che possono verificarsi quando usi il servizio Microsoft Defender Advanced Threat.
+In questa sezione vengono risolti i problemi che possono verificarsi quando usi il servizio Microsoft Defender for Endpoint.
 
 ## <a name="server-error---access-is-denied-due-to-invalid-credentials"></a>Errore del server - Accesso negato a causa di credenziali non valide
 Se si verifica un errore del server quando si tenta di accedere al servizio, è necessario modificare le impostazioni dei cookie del browser.
 Configurare il browser per consentire i cookie.
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>Elementi o dati mancanti nel portale
-Se alcuni elementi o dati non sono presenti in Microsoft Defender Security Center, è possibile che le impostazioni proxy lo blocchino.
+Se alcuni elementi o dati non sono presenti Microsoft Defender Security Center è possibile che le impostazioni proxy lo blocchino.
 
 Assicurati che sia `*.securitycenter.windows.com` incluso l'elenco di proxy consentiti.
 
@@ -57,7 +57,7 @@ Vedi Esaminare gli eventi e gli errori tramite il [Visualizzatore](event-error-c
 
 Se l'onboarding dei dispositivi viene completato correttamente ma Microsoft Defender for Endpoint non viene avviato dopo un riavvio e viene visualizzato l'errore 577, verificare che Windows Defender non sia disabilitato da un criterio.
 
-Per altre informazioni, vedi [Verificare che Microsoft Defender Antivirus non sia disabilitato dai criteri.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+Per ulteriori informazioni, vedere [Ensure that Antivirus Microsoft Defender is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="known-issues-with-regional-formats"></a>Problemi noti con i formati regionali
 

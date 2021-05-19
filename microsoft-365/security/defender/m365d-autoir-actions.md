@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9e82f1c5de9fe1f4a03385458338edf18c4f35bd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274653"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538844"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visualizzare e gestire le azioni nel centro notifiche
 
@@ -36,7 +36,7 @@ ms.locfileid: "52274653"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Le funzionalità di protezione dalle minacce in Microsoft 365 Defender possono comportare determinate azioni di correzione. Di seguito vengono descritti alcuni esempi:
+Le funzionalità di protezione dalle minacce in Microsoft 365 Defender possono comportare determinate azioni di correzione. Ecco alcuni esempi:
 
 - [Le indagini automatizzate](m365d-autoir.md) possono comportare azioni di correzione che vengono eseguite automaticamente o in attesa dell'approvazione.
 - Antivirus, antimalware e altre funzionalità di protezione dalle minacce possono comportare azioni di correzione, ad esempio il blocco di un file, un URL o un processo o l'invio di un artefatto in quarantena.
@@ -69,7 +69,7 @@ Se hai determinato che un dispositivo o un file non è una minaccia, puoi annull
 
 | Origine azione | Azioni supportate |
 |:---|:---|
-| - Indagine automatizzata <br/>- Microsoft Defender Antivirus <br/>- Azioni di risposta manuale | - Isola dispositivo <br/>- Limitare l'esecuzione del codice <br/>- Mettere in quarantena un file <br/>- Rimuovere una chiave del Registro di sistema <br/>- Arrestare un servizio <br/>- Disabilitare un driver <br/>- Rimuovere un'attività pianificata |
+| - Indagine automatizzata <br/>- Antivirus Microsoft Defender <br/>- Azioni di risposta manuale | - Isola dispositivo <br/>- Limitare l'esecuzione del codice <br/>- Mettere in quarantena un file <br/>- Rimuovere una chiave del Registro di sistema <br/>- Arrestare un servizio <br/>- Disabilitare un driver <br/>- Rimuovere un'attività pianificata |
 
 ### <a name="undo-one-remediation-action"></a>Annullare un'azione di correzione
 
@@ -98,4 +98,4 @@ Se hai determinato che un dispositivo o un file non è una minaccia, puoi annull
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Visualizzare i dettagli e i risultati di un'indagine automatizzata](m365d-autoir-results.md)
-- [Indirizzo falsi positivi o falsi negativi)](m365d-autoir-report-false-positives-negatives.md)
+- [Risolvere i falsi positivi o i falsi negativi](m365d-autoir-report-false-positives-negatives.md)

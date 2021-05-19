@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3ca8f5234f90624c8570cbfb10e75bd0ee9380ae
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: da4b7fce66a6c51da61edd7c44216ee268c3156a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345837"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538664"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -160,7 +160,7 @@ Se si configurano regole di riduzione della superficie di attacco tramite Criter
 
 |Nome della regola|GUID|Esclusioni di & file|Sistema operativo minimo supportato|
 |---|:---:|---|---|
-|[Bloccare l'abuso di driver firmati vulnerabili sfruttati](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Supportato|[Windows 10, versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
+|[Bloccare l'abuso di driver firmati vulnerabili sfruttati](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva) |
 |[Impedire ad Adobe Reader di creare processi figlio](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
 |[Impedire a Office applicazioni di creare processi figlio](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
 |[Bloccare il furto delle credenziali dal sottosistema Windows autorità di sicurezza locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
@@ -184,6 +184,14 @@ Questa regola impedisce a un'applicazione di scrivere un driver firmato vulnerab
 
 Questa regola non blocca il caricamento di un driver già esistente nel sistema.
 
+>[!NOTE]
+>
+> Questa regola può essere configurata utilizzando [l'URI OMA MEM](enable-attack-surface-reduction.md#mem) per le informazioni procedurali sulle regole personalizzate URI OMA MEM.
+>
+> Questa regola può essere configurata anche tramite [PowerShell.](enable-attack-surface-reduction.md#powershell)
+>
+> È possibile utilizzare questo sito Web per [inviare un driver per l'analisi.](https://www.microsoft.com/en-us/wdsi/driversubmission)
+
 Questa regola è supportata in tutte le versioni in cui è supportato il controllo del codice asr. che è:
 
 - [Windows 10 Pro versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
@@ -194,16 +202,6 @@ Questa regola è supportata in tutte le versioni in cui è supportato il control
 Nome Intune: `Block abuse of exploited vulnerable signed drivers`
 
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
-
-Vedere [Microsoft Endpoint Manager procedure personalizzate per](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) le procedure delle regole personalizzate MEM.
-
-È possibile eseguire questo comando nella riga di comando per abilitare la regola asr:
-
-```powershell
-"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
-```
-
-È possibile utilizzare questo sito Web per [inviare un driver per l'analisi.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Impedire ad Adobe Reader di creare processi figlio
 

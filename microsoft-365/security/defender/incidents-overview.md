@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: cc2fcd7410c2f3122fb3ce49a40e93bfa0767331
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300014"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539024"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Eventi imprevisti in Microsoft 365 Defender
 
@@ -135,7 +135,7 @@ Su base continuativa, identificare gli eventi imprevisti con priorità più alta
 
 3. Per quanto possibile, eseguire il ripristino dall'attacco ripristinando le risorse del tenant allo stato in cui si trovavano prima dell'incidente.
 
-4. [Risolvere](manage-incidents.md#resolve-incident) l'evento imprevisto e richiedere tempo per l'apprendimento post-incidente per:
+4. [Risolvere](manage-incidents.md#resolve-an-incident) l'evento imprevisto e richiedere tempo per l'apprendimento post-incidente per:
 
    - Comprendere il tipo di attacco e il relativo impatto.
    - Ricercare l'attacco in [Threat Analytics](threat-analytics.md) e nella community di sicurezza per una tendenza di attacco alla sicurezza.
@@ -148,7 +148,7 @@ Se non si ha di [](incidents-overview.md) che fare con l'analisi della sicurezza
 
 Ecco un esempio di operazioni di sicurezza per Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Esempio di operazioni di sicurezza per Micosoft 365 Defender":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Esempio di operazioni di sicurezza per Microsoft 365 Defender":::
 
 Le attività giornaliere possono includere:
 

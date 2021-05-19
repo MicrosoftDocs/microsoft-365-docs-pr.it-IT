@@ -14,23 +14,24 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Informazioni su come impedire l'aggiunta di utenti guest a un gruppo specifico
-ms.openlocfilehash: 572746a666586920ad85dafddbd78997940490d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1db2055f3e546c05905dbf4c854333387112f06e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907941"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538928"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedire l'aggiunta di utenti guest a uno specifico gruppo di Microsoft 365 o team di Microsoft Teams
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedire l'aggiunta di guest a un gruppo Microsoft 365 o a un team Microsoft Teams utenti
 
 Se si desidera consentire l'accesso guest alla maggior parte dei gruppi e dei team, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per singoli gruppi e team. Il blocco dell'accesso guest a un team viene eseguito bloccando l'accesso guest al gruppo associato. Ciò impedisce l'aggiunta di nuovi guest, ma non rimuove gli utenti guest già presenti nel gruppo o nel team.
 
-Se si utilizzano etichette di riservatezza nell'organizzazione, è consigliabile usarle per controllare l'accesso guest per ogni gruppo. Per informazioni su come eseguire questa operazione, utilizzare etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di [Microsoft 365 e siti di SharePoint.](../compliance/sensitivity-labels-teams-groups-sites.md) Questo è l'approccio consigliato.
+Se si utilizzano etichette di riservatezza nell'organizzazione, è consigliabile usarle per controllare l'accesso guest per ogni gruppo. Per informazioni su come eseguire questa operazione, utilizzare le etichette di riservatezza per proteggere il contenuto [in Microsoft Teams, Microsoft 365](../compliance/sensitivity-labels-teams-groups-sites.md)gruppi e SharePoint siti. Questo è l'approccio consigliato.
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Modificare le impostazioni dei gruppi con Microsoft PowerShell
 
-È inoltre possibile impedire l'aggiunta di nuovi guest a singoli gruppi tramite PowerShell. Tenere presente che il sito di SharePoint associato al team dispone [di controlli di condivisione guest separati.](/sharepoint/change-external-sharing-site)
+È inoltre possibile impedire l'aggiunta di nuovi guest a singoli gruppi tramite PowerShell. Tenere presente che il sito del team SharePoint dispone [di controlli di condivisione guest separati.](/sharepoint/change-external-sharing-site)
 
 È necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell per Graph](/powershell/azure/active-directory/install-adv2) (nome modulo **AzureADPreview**) per modificare l'impostazione di accesso guest a livello di gruppo:
 
@@ -75,7 +76,7 @@ Per ulteriori informazioni, vedere [Allow or block invitations to B2B users from
 
 ## <a name="add-guests-to-the-global-address-list"></a>Aggiungere utenti guest all'elenco indirizzi globale
 
-Per impostazione predefinita, gli utenti guest non sono visibili nell'elenco indirizzi globale di Exchange. Seguire i passaggi elencati di seguito per rendere visibile un guest nell'elenco indirizzi globale.
+Per impostazione predefinita, gli utenti guest non sono visibili nell'Exchange indirizzi globale. Seguire i passaggi elencati di seguito per rendere visibile un guest nell'elenco indirizzi globale.
 
 Trovare l'ObjectID del guest eseguendo:
 
@@ -95,8 +96,8 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [Creare il piano di governance della collaborazione](collaboration-governance-first.md)
 
-[Gestire l'appartenenza ai gruppi nell'interfaccia di amministrazione di Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
+[Gestire l'appartenenza ai gruppi nell'Microsoft 365 di amministrazione](../admin/create-groups/add-or-remove-members-from-groups.md)
   
-[Verifiche di accesso ad Azure Active Directory](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Azure Active Directory di accesso](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)

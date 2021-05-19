@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Questo articolo contiene informazioni di riferimento sullo strumento eDiscovery della Ricerca contenuto nel Centro conformità Microsoft 365 per scoprire i dettagli relativi alla Ricerca contenuto.
-ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 14660b4cfcd09f5346fa8d0d901880d0a6c774c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332895"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538484"
 ---
 # <a name="feature-reference-for-content-search"></a>Riferimento funzionalità per Ricerca contenuto
 
@@ -33,19 +33,7 @@ Questo articolo descrive funzionalità e funzioni di Ricerca contenuto.
 
 ## <a name="content-search-limits"></a>Limiti di Ricerca contenuto
 
-- Per una descrizione dei limiti applicati alla Ricerca contenuto, vedere [Limiti per la Ricerca contenuto](limits-for-content-search.md).
-  
-- Microsoft raccoglie informazioni sulle prestazioni per la Ricerca contenuto eseguite da tutte le organizzazioni nel servizio. Sebbene la complessità della query di ricerca possa influire sui tempi di ricerca, il fattore principale che influisce sul tempo necessario per una ricerca è il numero di cassette postali in cui la ricerca viene eseguita. Sebbene Microsoft non fornisca un contratto di servizio per i tempi di ricerca, la tabella seguente elenca i tempi di ricerca medi per un'operazione di Ricerca contenuto in base al numero di cassette postali incluse nella ricerca.
-  
-  |**Numero di cassette postali**|**Tempo medio di ricerca**|
-  |:-----|:-----|
-  |100  <br/> |30 secondi  <br/> |
-  |1.000  <br/> |45 secondi  <br/> |
-  |10.000  <br/> |4 minuti  <br/> |
-  |25.000  <br/> |10 minuti  <br/> |
-  |50.000  <br/> |20 minuti  <br/> |
-  |100.000  <br/> |25 minuti  <br/> |
-  |||
+Per una descrizione dei limiti applicati a Ricerca contenuto, vedere [Limiti per Ricerca contenuto](limits-for-content-search.md).
   
 ## <a name="building-a-search-query"></a>Creare una query di ricerca
 
@@ -71,7 +59,7 @@ Tenere presente quanto segue quando si usa l'elenco di parole chiave per creare 
   
 - Durante l'esecuzione di una ricerca di contenuto, Microsoft 365 controlla automaticamente la query di ricerca per individuare caratteri non supportati e operatori booleani che potrebbero non essere scritti in maiuscolo. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o la restituzione di risultati indesiderati. Per altre informazioni sui caratteri non supportati controllati, vedere [Verificare la presenza di errori nella query Ricerca contenuto](check-your-content-search-query-for-errors.md).
     
-- Se si dispone di una query di ricerca che contiene parole chiave per i caratteri non italiani (come i caratteri cinesi), è possibile fare clic su **Lingua - paese/area geografica della query**![Icona Lingua - paese/area geografica della query Ricerca contenuto](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) e selezionare un valore di codice per la lingua - paese per la ricerca. La lingua/area geografica predefinita è neutrale. Come è possibile stabilire se è necessario cambiare l'impostazione della lingua per una ricerca contenuto? Se si è certi che i percorsi di contenuto contengano i caratteri non italiani che si stanno cercando, ma la ricerca non restituisce risultati, l'impostazione della lingua potrebbe essere la causa. 
+- Se si dispone di una query di ricerca che contiene parole chiave per i caratteri non italiani (come i caratteri cinesi), è possibile fare clic su **Lingua - paese/area geografica della query**![Icona Lingua - paese/area geografica della query Ricerca contenuto](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) e selezionare un valore di codice per la lingua - paese per la ricerca. La lingua/area geografica predefinita è neutrale. Come è possibile stabilire se è necessario cambiare l'impostazione della lingua per una ricerca contenuto? Se si è certi che i percorsi di contenuto contengano i caratteri non italiani che si stanno cercando, ma la ricerca non restituisce risultati, l'impostazione della lingua potrebbe essere la causa.
   
 ## <a name="partially-indexed-items"></a>Elementi parzialmente indicizzati
 

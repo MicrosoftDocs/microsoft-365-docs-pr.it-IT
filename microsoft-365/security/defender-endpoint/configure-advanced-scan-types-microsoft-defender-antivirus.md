@@ -14,13 +14,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1efa72d5b8d204b6aec1cef05fe3c8afe1ca82f7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/06/2021
+ms.topic: how-to
+ms.openlocfilehash: 1942531b77df1c2bd9408815d3ad54b4b7211e8b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275306"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538400"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurare le opzioni di analisi di Microsoft Defender Antivirus
 
@@ -33,7 +34,7 @@ ms.locfileid: "52275306"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Utilizzare Microsoft Intune per configurare le opzioni di analisi
 
-Per [altri dettagli, vedi](/intune/device-restrictions-configure) Configurare le impostazioni di restrizione Microsoft Intune e Antivirus Microsoft Defender dispositivo per Windows 10 in [Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Per altre informazioni, vedere [Configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune](/intune/device-restrictions-configure) e [Impostazioni relative alle restrizioni dei dispositivi di Antivirus Microsoft Defender per Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Utilizzare Microsoft Endpoint Manager per configurare le opzioni di analisi
 
@@ -51,19 +52,19 @@ Per configurare le impostazioni di Criteri di gruppo descritte nella tabella seg
 
 4. Fai doppio clic **sull'impostazione del** criterio come specificato nella tabella seguente e imposta l'opzione sulla configurazione desiderata. Fare **clic su OK** e ripetere l'operazione per tutte le altre impostazioni.
 
-Descrizione | Posizione e impostazione | Impostazione predefinita (se non configurata) | Parametro di PowerShell `Set-MpPreference` o proprietà WMI per la `MSFT_MpPreference` classe
----|---|---|---
-Analisi della posta elettronica Vedere [Limitazioni dell'analisi della posta elettronica](#ref1)| Analisi > Attivare l'analisi della posta elettronica | Disabilitato | `-DisableEmailScanning`
-Analisi [dei reparse point](/windows/win32/fileio/reparse-points) | Analisi > Attiva analisi reparse point | Disabilitato | Non disponibile
-Analisi delle unità di rete mappate | Analisi > eseguire l'analisi completa sulle unità di rete mappate | Disabilitato | `-DisableScanningMappedNetworkDrivesForFullScan`
- Analizzare i file di archivio (ad esempio .zip o .rar file). [L'elenco di esclusione delle](configure-extension-file-exclusions-microsoft-defender-antivirus.md) estensioni avrà la precedenza su questa impostazione. | Analisi > analizzare i file di archivio | Abilitato | `-DisableArchiveScanning`
-Analizzare i file in rete | Analisi > file di rete | Disabilitato | `-DisableScanningNetworkFiles`
-Eseguire l'analisi di file eseguibili imballati | Analisi > eseguire l'analisi di file eseguibili imballati | Abilitato | Non disponibile
-Analizzare le unità rimovibili solo durante le analisi complete | Analisi > eseguire l'analisi delle unità rimovibili | Disabilitato | `-DisableRemovableDriveScanning`
-Specificare il livello di sottocartelle all'interno di una cartella di archiviazione da analizzare | Analisi > Specificare la profondità massima per l'analisi dei file di archivio | 0 | Non disponibile
- Specifica il carico massimo della CPU (come percentuale) durante un'analisi. Nota: non si tratta di un limite rigido, ma di una guida che il motore di analisi non superi in media questo limite massimo. | Analisi > Specificare la percentuale massima di utilizzo della CPU durante un'analisi | 50 |  `-ScanAvgCPULoadFactor`
- Specificare le dimensioni massime, in kilobyte, dei file di archivio da analizzare. Il valore **predefinito, 0**, non applica alcun limite | Analisi > Specificare la dimensione massima dei file di archivio da analizzare | Nessun limite | Non disponibile
- Configurare la priorità della CPU bassa per le analisi pianificate | Analisi > La priorità della CPU bassa per le analisi pianificate | Disabilitato | Non disponibile
+| Descrizione | Posizione e impostazione | Impostazione predefinita (se non configurata) | Parametro di PowerShell `Set-MpPreference` o proprietà WMI per la `MSFT_MpPreference` classe |
+|---|---|---|---|
+| Analisi della posta elettronica Vedere [Limitazioni dell'analisi della posta elettronica](#ref1)| Analisi > Attivare l'analisi della posta elettronica | Disabilitato | `-DisableEmailScanning` |
+|Analisi [dei reparse point](/windows/win32/fileio/reparse-points) | Analisi > Attiva analisi reparse point | Disabilitato | Non disponibile |
+| Analisi delle unità di rete mappate | Analisi > eseguire l'analisi completa sulle unità di rete mappate | Disabilitato | `-DisableScanningMappedNetworkDrivesForFullScan`|
+ Analizzare i file di archivio (ad esempio .zip o .rar file). [L'elenco di esclusione delle](configure-extension-file-exclusions-microsoft-defender-antivirus.md) estensioni avrà la precedenza su questa impostazione. | Analisi > analizzare i file di archivio | Abilitato | `-DisableArchiveScanning` |
+| Analizzare i file in rete | Analisi > file di rete | Disabilitato | `-DisableScanningNetworkFiles` |
+| Eseguire l'analisi di file eseguibili imballati | Analisi > eseguire l'analisi di file eseguibili imballati | Abilitato | Non disponibile |
+| Analizzare le unità rimovibili solo durante le analisi complete | Analisi > eseguire l'analisi delle unità rimovibili | Disabilitato | `-DisableRemovableDriveScanning` |
+| Specificare il livello di sottocartelle all'interno di una cartella di archiviazione da analizzare | Analisi > Specificare la profondità massima per l'analisi dei file di archivio | 0 | Non disponibile |
+| Specifica il carico massimo della CPU (come percentuale) durante un'analisi. Nota: non si tratta di un limite rigido, ma di una guida che il motore di analisi non superi in media questo limite massimo. Le analisi eseguite manualmente ignoreranno questa impostazione e verranno eseguite senza limiti di CPU. | Analisi > Specificare la percentuale massima di utilizzo della CPU durante un'analisi | 50 |  `-ScanAvgCPULoadFactor` |
+| Specificare le dimensioni massime, in kilobyte, dei file di archivio da analizzare. Il valore **predefinito, 0**, non applica alcun limite | Analisi > Specificare la dimensione massima dei file di archivio da analizzare | Nessun limite | Non disponibile |
+| Configurare la priorità della CPU bassa per le analisi pianificate | Analisi > La priorità della CPU bassa per le analisi pianificate | Disabilitato | Non disponibile |
  
 > [!NOTE]
 > Se la protezione in tempo reale è attivata, i file vengono analizzati prima dell'accesso e dell'esecuzione. L'ambito di analisi include tutti i file, inclusi i file su supporti rimovibili montati, ad esempio unità USB. Se il dispositivo che esegue l'analisi ha la protezione in tempo reale o la protezione all'accesso attivata, l'analisi includerà anche condivisioni di rete.

@@ -17,13 +17,14 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: Come distribuire team con la protezione dei dati altamente sensibili.
-ms.openlocfilehash: fdc3c1ab2c780289b7405623779b8af89da8ba17
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d83c10df50d02f47a6d70ee80b2ddbf89fff37d0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916287"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538196"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurare team con la protezione dei dati altamente sensibili
 
@@ -33,7 +34,7 @@ Per questo livello di protezione si crea un'etichetta di riservatezza che può e
 
 Il livello dei dati altamente sensibili offre le seguenti protezioni aggiuntive rispetto al livello di base:
 
-- Un'etichetta di riservatezza per il team che consente di attivare o disattivare la condivisione con gli ospiti e limitare l'accesso ai contenuti di SharePoint per i dispositivi non gestiti. Questa etichetta può essere usata anche per classificare e crittografare i file.
+- Un'etichetta di riservatezza per il team che consente di attivare o disattivare la condivisione con gli ospiti e bloccare l'accesso ai contenuti di SharePoint per i dispositivi non gestiti. L'etichetta può anche essere usata per classificare e crittografare i file.
 - Tipo di collegamento di condivisione predefinito più restrittivo
 - Solo i proprietari del team possono creare canali privati.
 - Le richieste di accesso per il sito di SharePoint associato sono disattivate.

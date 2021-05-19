@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1928e381e861f993d171462833b8807b69dea515
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 0b816956442408c9a61f662827f1fd45d9b6511f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470677"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538856"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Ottenere una formazione esperta sulla ricerca avanzata
 
@@ -50,7 +50,8 @@ Ottenere una formazione più esperta con *L33TSP3AK:* ricerca avanzata in Micros
 
 | Titolo | Descrizione | Watch | Query | 
 |--|--|--|--|
-| Episodio 1  | In questo episodio verranno apprese diverse procedure consigliate per l'esecuzione di query di ricerca avanzate. Tra gli argomenti trattati sono: come ottimizzare le query, usare la ricerca avanzata per ransomware, gestire JSON come tipo dinamico e lavorare con gli operatori di dati esterni. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [File di testo](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt)
+| Episodio 1  | In questo episodio verranno apprese diverse procedure consigliate per l'esecuzione di query di ricerca avanzate. Tra gli argomenti trattati sono: come ottimizzare le query, usare la ricerca avanzata per ransomware, gestire JSON come tipo dinamico e lavorare con gli operatori di dati esterni. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [File di testo](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
+| Episodio 2 | In questo episodio imparerai a analizzare e rispondere a percorsi di accesso sospetti o insoliti e all'esfiltrazione dei dati tramite regole di inoltro della posta in arrivo. Sebastien Molendijk, Senior Program Manager per Cloud Security CxE, condivide come usare la ricerca avanzata per analizzare gli incidenti in più fasi con Microsoft Cloud App Security dati. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [File di testo](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
 
 
 ## <a name="how-to-use-the-csl-file"></a>Come usare il file CSL

@@ -16,23 +16,24 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: Informazioni su come consentire ai membri del gruppo di inviare messaggi di posta elettronica come gruppo di Microsoft 365 o inviare messaggi di posta elettronica per conto di un gruppo di Microsoft 365.
-ms.openlocfilehash: cc0a9472f127fae94d77f618ed7347d844879ba8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Informazioni su come consentire ai membri del gruppo di inviare posta elettronica come Microsoft 365 o inviare messaggi di posta elettronica per conto di un Microsoft 365 gruppo.
+ms.openlocfilehash: 07db8f415da46e6235c051e262237de79e61c8b9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904745"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538256"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Consenti ai membri di inviare come o inviare per conto di un gruppo
 
-Un membro di un gruppo di Microsoft  365 a cui sono state concesse le autorizzazioni Invia come o Invia per conto di può inviare messaggi di posta elettronica come gruppo o per conto del gruppo.  Non è possibile concedere queste autorizzazioni agli utenti guest del gruppo.
+Un membro di un Microsoft 365 a cui  sono  state concesse le autorizzazioni Invia come o Invia per conto di può inviare messaggi di posta elettronica come gruppo o per conto del gruppo. Non è possibile concedere queste autorizzazioni agli utenti guest del gruppo.
 
-In questo articolo viene illustrato come un amministratore globale o di Exchange può impostare queste autorizzazioni.
+In questo articolo viene illustrato come un amministratore globale o Exchange può impostare queste autorizzazioni.
   
-Ad esempio, se Megan Bowen fa parte del gruppo Formazione  **di** Microsoft 365 e dispone delle autorizzazioni Invia come  per il gruppo, se invia un messaggio di posta elettronica come gruppo, avrà l'aspetto del gruppo Formazione che ha inviato il messaggio di posta elettronica. 
+Ad esempio, se Megan Bowen fa parte del gruppo  **Training** Microsoft 365 e dispone delle autorizzazioni Invia come per il  gruppo, se invia un messaggio di posta elettronica come gruppo, sarà simile al gruppo Formazione che ha inviato il messaggio di posta elettronica. 
   
-**L'autorizzazione Invia per conto di** consente a un utente di inviare messaggi di posta elettronica per conto di un gruppo di Microsoft 365. Ad esempio, se Alex Wilber fa parte del gruppo **Marketing**  di Microsoft 365 e dispone delle autorizzazioni Invia per conto di e invia un messaggio di posta elettronica come gruppo, il messaggio di posta elettronica sembra essere stato inviato da **Alex Wilber** per conto di Marketing.
+**L'autorizzazione Invia per conto di** consente a un utente di inviare messaggi di posta elettronica per conto di un Microsoft 365 gruppo. Ad esempio, se Alex Wilber fa parte del gruppo **Marketing** Microsoft 365 e dispone delle autorizzazioni Invia per conto di e invia un messaggio di posta elettronica come gruppo, il messaggio di posta elettronica sembra essere stato inviato da **Alex Wilber** per conto di Marketing. 
 
 > [!IMPORTANT]
 > È possibile configurare **Invia come** o Invia per **conto di** un determinato utente, ma non entrambi. Se si configurano entrambi, per impostazione predefinita verrà **utilizzato Invia come**.
@@ -44,7 +45,7 @@ Ad esempio, se Megan Bowen fa parte del gruppo Formazione  **di** Microsoft 365 
 
 In questa sezione viene illustrato come consentire agli utenti di inviare messaggi di posta elettronica come gruppo nell'interfaccia di amministrazione di [Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) in Exchange Online.
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Nell'interfaccia di amministrazione di Exchange,</a>accedere a **Destinatari** \> **Gruppi**.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Nell'Exchange di amministrazione,</a>passare a **Destinatari** \> **Gruppi**.
     
 2. Selezionare **Modifica** ![ Icona modifica gruppo nel gruppo che si desidera consentire agli utenti ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) di inviare come.   
     
@@ -62,7 +63,7 @@ In questa sezione viene illustrato come consentire agli utenti di inviare messag
 
 In questa sezione viene illustrato come consentire agli utenti di inviare messaggi di posta elettronica per conto di un gruppo nell'interfaccia di amministrazione di Exchange (EAC) in Exchange Online.
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Nell'interfaccia di amministrazione di Exchange,</a>accedere a **Destinatari** \> **Gruppi**.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Nell'Exchange di amministrazione,</a>passare a **Destinatari** \> **Gruppi**.
     
 2. Selezionare **Modifica** ![ Icona modifica gruppo nel gruppo che si desidera consentire agli utenti ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) di inviare come. 
     
@@ -82,7 +83,7 @@ In questa sezione viene illustrato come consentire agli utenti di inviare messag
 
 [Creare il piano di governance della collaborazione](collaboration-governance-first.md)
 
-[Altre informazioni sui gruppi di Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Ulteriori informazioni sui Microsoft 365 di lavoro](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 

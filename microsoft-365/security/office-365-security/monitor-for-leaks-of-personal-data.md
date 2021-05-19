@@ -19,12 +19,12 @@ search.appverid:
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0976c0d1c0c8d3ebb25ebf423f1d9df2f71fc852
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205275"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538280"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -79,7 +79,7 @@ Il Centro sicurezza e conformità offre due metodi per il monitoraggio e la crea
 
 - Cercare direttamente il log di controllo: è possibile ricercare tutti gli eventi in un intervallo di date specificato o filtrare i risultati in base a criteri specifici, come l'utente che ha effettuato l'operazione, l'operazione o l'oggetto di destinazione.
 
-I team di conformità e sicurezza delle informazioni possono usare questi strumenti per analizzare in modo proattivo le attività eseguite dagli utenti finali e dagli amministratori nei servizi. È possibile configurare avvisi automatici per l'invio di notifiche tramite posta elettronica quando si verificano certe attività su specifiche raccolte siti, ad esempio, quando vengono condivisi contenuti da siti contenenti informazioni correlate al GDPR. Ciò consente a questi team di intervenire presso gli utenti per assicurarsi che rispettino i criteri di sicurezza aziendali o per offrire formazione aggiuntiva.
+I team di conformità e sicurezza delle informazioni possono usare questi strumenti per analizzare in modo proattivo le attività eseguite dagli utenti finali e dagli amministratori nei servizi. È possibile configurare avvisi automatici per l'invio di notifiche tramite posta elettronica quando si verificano certe attività su specifiche raccolte siti, ad esempio, quando vengono condivisi contenuti da siti contenenti informazioni correlate al GDPR. Ciò consente a questi team di intervenire per assicurarsi che gli utenti rispettino i criteri di sicurezza aziendali o per offrire formazione aggiuntiva.
 
 I team di sicurezza delle informazioni possono anche cercare nel log di controllo per analizzare sospette violazioni dei dati e determinarne l'eventuale causa e gravità. Questa funzionalità integrata agevola la conformità agli articoli 33 e 34 dell'RGPD, secondo i quali le notifiche devono essere fornite all'autorità di supervisione dell'RGPD e ai soggetti dei dati interessati da una violazione dei dati entro uno specifico periodo di tempo. Le voci del log di controllo vengono conservate solo per 90 giorni nel servizio (spesso è consigliabile e molte organizzazioni hanno richiesto un periodo di conservazione di tali log anche maggiore).
 
@@ -87,7 +87,7 @@ Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo un
 
 Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controllo:
 
-- [Criteri di avviso nei centri di sicurezza e di conformità di Microsoft 365](../../compliance/alert-policies.md)
+- [Criteri avviso in Microsoft 365](../../compliance/alert-policies.md)
 
 - [Eseguire ricerche nel il log di controllo per le attività di utente e amministratore in Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduzione)
 

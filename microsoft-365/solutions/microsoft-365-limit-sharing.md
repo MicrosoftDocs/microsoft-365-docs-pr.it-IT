@@ -18,13 +18,14 @@ search.appverid:
 f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
+recommendations: false
 description: Altre informazioni sulle opzioni per limitare o disabilitare la condivisione in Microsoft 365.
-ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f237df883bb401342a3a5c93432beeb5028cfce6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920205"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539192"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitare la condivisione in Microsoft 365
 
@@ -211,7 +212,7 @@ Gli utenti che hanno accesso ai file e alle cartelle in Microsoft 365 possono sc
 
 L’accesso condizionale di Azure Active Directory offre opzioni per limitare o prevenire la condivisione con altre persone in base alla posizione della rete, all’integrità del dispositivo, ai rischi legati all’accesso e altri fattori. Vedere [Che cos’è l’accesso condizionale?](/azure/active-directory/conditional-access/overview).
 
-SharePoint offre l’integrazione diretta con l’accesso condizionale di Azure AD sia per i dispositivi non gestiti che per le posizioni di rete. Vedere i seguenti riferimenti per i dettagli:
+SharePoint offre l’integrazione diretta con l’accesso condizionale di Azure AD sia per i dispositivi non gestiti che per le posizioni di rete. Consultare i riferimenti che seguono per altri dettagli:
 
 - [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices)
 - [Controllare l'accesso ai dati di SharePoint e OneDrive in base al percorso di rete](/sharepoint/control-access-based-on-network-location)

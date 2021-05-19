@@ -1,5 +1,5 @@
 ---
-title: Pagina dell'entità di posta elettronica di Microsoft Defender per Office 365 (MDO)
+title: Pagina dell'entità di posta elettronica di Microsoft Defender for Office 365 (MDO)
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,13 +14,13 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: I clienti di Microsoft Defender per Office 365 E5 e P1 e P2 ora possono ottenere una visualizzazione a 360 gradi di ogni pagina di posta elettronica con entità di posta elettronica.
-ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+description: I clienti di Microsoft Defender per Office 365 E5 e P1 e P2 ora possono ottenere una visualizzazione a 360 gradi di ogni messaggio di posta elettronica con la pagina dell'entità di posta elettronica.
+ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933362"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539096"
 ---
 # <a name="the-email-entity-page"></a>Pagina Entità posta elettronica
 
@@ -34,7 +34,7 @@ Gli amministratori di Microsoft Defender per Office 365 (o MDO) E5 e MDO P1 e P2
 
 ## <a name="reach-the-email-entity-page"></a>Raggiungere la pagina dell'entità di posta elettronica
 
-Il Centro sicurezza e conformità di Office esistente (protection.office.com) o il nuovo Centro sicurezza Microsoft 365 (security.microsoft.com) consentono di visualizzare e usare la pagina dell'entità di posta elettronica.
+Il & Centro sicurezza e conformità (protection.office.com) o il nuovo Centro sicurezza Microsoft 365 (security.microsoft.com) consentono di visualizzare e usare la pagina dell'entità di posta elettronica.
 
 |Centro|URL|Navigazione|
 |---|---|---|
@@ -111,7 +111,7 @@ Gli utenti potranno visualizzare dettagli di detonazione arricchiti per allegati
 
 *Dettagli posta elettronica*: dettagli necessari per una conoscenza approfondita della posta elettronica disponibile nella *scheda* Analisi.
 
-- *Regole di trasporto di Exchange (ETR* o regole del flusso di posta): queste regole vengono applicate a un messaggio a livello di trasporto e hanno la precedenza sui verdetti di phish e posta indesiderata. Questi possono essere creati e modificati solo nell'interfaccia di amministrazione di Exchange, ma se un ETR si applica a un messaggio, il nome ETR e il GUID verranno visualizzati qui. Informazioni preziose a scopo di monitoraggio.
+- *Exchange transport rules (ETRs or Mailflow rules):* queste regole vengono applicate a un messaggio a livello di trasporto e hanno la precedenza sui verdetti di phish e spam. Questi possono essere creati e modificati solo nell'interfaccia di amministrazione di Exchange, ma se un ETR si applica a un messaggio, il nome ETR e il GUID verranno visualizzati qui. Informazioni preziose a scopo di monitoraggio.
 
 - *Sostituzioni* di sistema: si tratta di un mezzo per fare eccezioni al percorso di recapito destinato a un messaggio ignorando il percorso di recapito fornito dal sistema (in base alla tecnologia di rilevamento e minaccia).
 
@@ -131,7 +131,7 @@ Gli utenti potranno visualizzare dettagli di detonazione arricchiti per allegati
 
 - *Domain Created Date*: Specifica la data di creazione del dominio di invio. Un dominio appena creato è qualcosa di cui potresti essere cauto se altri segnali indicano un comportamento sospetto.
 
-*Autenticazione della* posta elettronica: i metodi di autenticazione della posta elettronica utilizzati da Microsoft 365 includono SPF, DKIM e DMARC.
+*Autenticazione della* posta elettronica : i metodi di autenticazione della posta elettronica Microsoft 365 includono SPF, DKIM e DMARC.
 
 - Sender Policy Framework (**SPF**): Descrive i risultati del controllo SPF per il messaggio. I valori possibili possono essere:
   - Pass (indirizzo IP): il controllo SPF per il messaggio passato e include l'indirizzo IP del mittente. Il client è autorizzato a inviare o inoltrare la posta elettronica per conto del dominio del mittente.
@@ -153,4 +153,4 @@ Gli utenti potranno visualizzare dettagli di detonazione arricchiti per allegati
   - Bestguesspass: indica che non esiste alcun record TXT DMARC per il dominio, ma se ne esistesse uno, il controllo DMARC per il messaggio sarebbe stato superato.
   - Nessuno: indica che non esiste alcun record TXT DMARC per il dominio di invio in DNS.
 
-*Autenticazione composita:* si tratta di un valore utilizzato da Microsoft 365 per combinare l'autenticazione di posta elettronica come SPF, DKIM e DMARC, per determinare se il messaggio è autentico. Utilizza il *dominio From:* della posta come base di valutazione.
+*Autenticazione composita*: questo valore viene utilizzato da Microsoft 365 per combinare l'autenticazione di posta elettronica come SPF, DKIM e DMARC, per determinare se il messaggio è autentico. Utilizza il *dominio From:* della posta come base di valutazione.

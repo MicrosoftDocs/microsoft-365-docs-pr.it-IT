@@ -16,13 +16,14 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: Informazioni sulla procedura di configurazione di Microsoft 365 necessaria per consentire a un team di comunicare, collaborare ad attività e documenti con utenti guest in Teams.
-ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c17732705c1d88ff70e56f5d26d9e268e3ff7c19
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904661"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539264"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborazione con gli utenti guest in un team
 
@@ -61,7 +62,7 @@ Se si lavora con utenti guest da più organizzazioni, è possibile limitare la p
 
 Teams ha un interruttore principale Attivato/Disattivato per l'accesso degli utenti guest e una varietà di impostazioni disponibili per controllare le operazioni che gli utenti guest possono eseguire in un team. L'interruttore principale **Consenti accesso ospite in Teams** deve essere **Attivato** perché l'accesso guest funzioni in Teams.
 
-Verificare che l'accesso guest sia abilitato in Teams e apportare eventuali modifiche alle impostazioni in base alle esigenze aziendali. Tenere presente che le impostazioni influiscono su tutti i team.
+Verificare che l'accesso guest sia abilitato in Teams e apportare eventuali modifiche alle impostazioni guest in base alle esigenze aziendali. Tenere in considerazione che queste impostazioni avranno ripercussioni su tutti i team.
 
 ![Screenshot dell'opzione di accesso guest in Teams](../media/teams-guest-access-toggle-on.png)
 
@@ -81,7 +82,7 @@ Dopo aver attivato l'accesso guest in Teams, è possibile controllare in modo fa
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Impostazioni guest di Gruppi di Microsoft 365
 
-Teams usa Gruppi di Microsoft 365 per l'iscrizione al team. Per il funzionamento dell'accesso degli utenti guest in Teams, è necessario che le impostazioni guest di Gruppi di Microsoft 365 siano attivate.
+Teams utilizza i Gruppi di Microsoft 365 per l'iscrizione al team. Per il funzionamento dell'accesso degli utenti guest in Teams, è necessario che le impostazioni guest di Gruppi di Microsoft 365 siano attivate.
 
 ![Screenshot delle impostazioni guest di Gruppi di Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365](../media/office-365-groups-guest-settings.png)
 
@@ -146,7 +147,7 @@ Per creare un team
 5. Digitare un nome e una descrizione per il team e fare clic su **Crea**.
 6. Fare clic **Ignora**.
 
-In seguito verranno invitato gli utenti. È quindi importante controllare le impostazioni di condivisione a livello di sito per il sito di SharePoint associato al team.
+In un secondo momento verranno invitati gli utenti. È quindi importante controllare le impostazioni di condivisione a livello di sito per il sito di SharePoint associato al team.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Impostazioni di condivisione a livello di sito di SharePoint
 

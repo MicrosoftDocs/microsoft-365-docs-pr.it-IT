@@ -1,5 +1,5 @@
 ---
-title: Criteri di denominazione dei gruppi di Microsoft 365
+title: Microsoft 365 di denominazione dei gruppi
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,22 +16,23 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Informazioni su come creare criteri di denominazione per i gruppi di Microsoft 365.
-ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Informazioni su come creare criteri di denominazione per Microsoft 365 gruppi.
+ms.openlocfilehash: 5ab5f252e2b81470413b4efea17b131613aabc18
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921049"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538172"
 ---
-# <a name="microsoft-365-groups-naming-policy"></a>Criteri di denominazione dei gruppi di Microsoft 365
+# <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 di denominazione dei gruppi
 
 È possibile utilizzare un criterio di denominazione dei gruppi per applicare una strategia di denominazione coerente per i gruppi creati dagli utenti dell'organizzazione. I criteri di denominazione consentono all'utente e agli utenti di identificare la funzione del gruppo, dell'appartenenza, dell'area geografica o dell'utente che ha creato il gruppo. I criteri di denominazione consentono inoltre di classificare i gruppi nella rubrica. È possibile utilizzare il criterio per impedire l'utilizzo di parole specifiche nei nomi di gruppo e negli alias.
 
 Il criterio di denominazione viene applicato ai gruppi creati in tutti i carichi di lavoro dei gruppi (ad esempio Outlook, Microsoft Teams, SharePoint, Planner, Yammer e così via). Viene applicato sia al nome del gruppo che all'alias del gruppo. Viene inoltre applicato quando un utente crea un gruppo e quando il nome, l'alias, la descrizione o l'avatar del gruppo viene modificato per un gruppo esistente.
 
 > [!TIP]
-> I criteri di denominazione dei gruppi di Microsoft 365 si applicano solo ai gruppi di Microsoft 365. Non si applica ai gruppi di distribuzione creati in Exchange Online. Per creare un criterio di denominazione per i gruppi di distribuzione, vedere [Create a distribution group naming policy](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> Un Microsoft 365 di denominazione dei gruppi si applica solo Microsoft 365 gruppi. Non si applica ai gruppi di distribuzione creati in Exchange Online. Per creare un criterio di denominazione per i gruppi di distribuzione, vedere [Create a distribution group naming policy](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 I criteri di denominazione del gruppo sono composti dalle funzionalità seguenti:
 
@@ -39,9 +40,9 @@ I criteri di denominazione del gruppo sono composti dalle funzionalità seguenti
 
 - **Parole bloccate** personalizzate : è possibile caricare un set di parole bloccate specifiche per l'organizzazione che verrebbero bloccate nei gruppi creati dagli utenti. Ad esempio: ""CEO, Payroll, HR" (CEO, Buste paga, RU)".
 
-## <a name="licensing-requirements"></a>Requisiti per la licenza
+## <a name="licensing-requirements"></a>Requisiti di licenza
 
-L'uso dei criteri di denominazione di Azure AD per i gruppi di Microsoft 365 richiede di essere in possesso, ma non necessariamente di assegnare una licenza Azure Active Directory Premium P1 o una licenza EDU di Azure AD Basic per ogni utente univoco (inclusi gli utenti guest) membro di uno o più gruppi di Microsoft 365.
+L'uso dei criteri di denominazione di Azure AD per i gruppi di Microsoft 365 richiede che tu possieda ma non necessariamente assegni una licenza Azure Active Directory Premium P1 o una licenza EDU di Azure AD Basic per ogni utente univoco (inclusi gli utenti guest) membro di uno o più gruppi di Microsoft 365.
 
 Questa operazione è necessaria anche per l'amministratore che crea i criteri di denominazione dei gruppi.
 
@@ -63,7 +64,7 @@ Esempi:
 - Reparto dell'utente = Progettazione
 - Nome del gruppo creato = "GRP Mio gruppo Progettazione"
 
-Gli attributi di Azure Active Directory (Azure AD) supportati sono [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] e [Title].
+Gli attributi Azure Active Directory (Azure AD) supportati sono [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] e [Title].
 
 - Gli attributi utente non supportati vengono considerati come stringhe fisse, ad esempio [postalCode].
 
@@ -80,13 +81,13 @@ Gli attributi di Azure Active Directory (Azure AD) supportati sono [Department],
   > [!NOTE]
   > È consentito un punto (.) o un trattino (-) in qualsiasi punto del nome del gruppo, ad eccezione dell'inizio o della fine del nome. Un carattere di sottolineatura (_) è consentito in qualsiasi punto del nome del gruppo, incluso all'inizio o alla fine del nome.
 
-- Se si utilizzano gruppi connessi a Office 365 yammer, evitare di utilizzare i caratteri seguenti nei criteri di denominazione: @, \# \[ , , , \] \<, and \> . Se questi caratteri sono nel criterio di denominazione, gli utenti regolari di Yammer non saranno in grado di creare gruppi.
+- Se si utilizzano gruppi Yammer Office 365 connessi, evitare di utilizzare i caratteri seguenti nei criteri di denominazione: @, \# \[ , , , \] \<, and \> . Se questi caratteri sono nel criterio di denominazione, gli utenti Yammer non saranno in grado di creare gruppi.
 
 > [!Tip]
 > - Utilizzare stringhe brevi come suffisso.
 > - Utilizzare gli attributi con i valori.
 > - Non essere troppo creativo, la lunghezza totale del nome ha un massimo di 264 caratteri.
-> - Caricare parole bloccate specifiche dell'organizzazione per limitare l'utilizzo.
+> - Upload parole bloccate specifiche dell'organizzazione per limitare l'utilizzo.
 
 ## <a name="custom-blocked-words"></a>Parole bloccate personalizzate
 
@@ -120,8 +121,8 @@ Alcuni amministratori sono esenti da questi criteri, in tutti i carichi di lavor
 
 Per configurare un criterio di denominazione:
 
-1. In [Azure Active Directory,](https://aad.portal.azure.com)in **Gestisci,** fare clic su **Gruppi.**
-2. In **Impostazioni** fare clic su **Criteri di denominazione.**
+1. In [Azure Active Directory](https://aad.portal.azure.com), in **Gestisci** fare clic su **Gruppi.**
+2. In **Impostazioni** fare clic su **Criterio di denominazione.**
 3. Scegliere la **scheda Criteri di denominazione dei** gruppi.
 4. In **Criterio corrente** scegliere se si desidera richiedere un prefisso o un suffisso o entrambi e selezionare le caselle di controllo appropriate.
 5. Scegliere tra **Attribute** e **String** per ogni riga e quindi specificare l'attributo o la stringa.
@@ -135,4 +136,4 @@ Per configurare un criterio di denominazione:
 
 [Creare il piano di governance della collaborazione](collaboration-governance-first.md)
 
-[Cmdlet di Azure Active Directory per la configurazione delle impostazioni dei gruppi](/azure/active-directory/enterprise-users/groups-settings-cmdlets)
+[Azure Active Directory cmdlet per la configurazione delle impostazioni di gruppo](/azure/active-directory/enterprise-users/groups-settings-cmdlets)

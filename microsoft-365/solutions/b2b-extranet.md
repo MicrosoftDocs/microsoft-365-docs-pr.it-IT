@@ -15,17 +15,18 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: Informazioni su come creare un sito Extranet B2B o un team con utenti guest gestiti da un'organizzazione partner.
-ms.openlocfilehash: f9b8d9326f302233ed85c9d168fdf6f343dc6cbf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d76951da5d8affa1dac08cbdc68a91329ca069ed
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904757"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538244"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Creare una Extranet B2B con guest gestiti.
 
-È possibile usare [Azure Active Directory Entitlement Management](/azure/active-directory/governance/entitlement-management-overview) per creare una extranet B2B per collaborare con un'organizzazione partner che usa Azure Active Directory. In questo modo gli utenti possono registrarsi autonomamente nel sito Extranet o nel team e ricevere l'accesso tramite un flusso di lavoro di approvazione.
+È possibile utilizzare [gestione Azure Active Directory](/azure/active-directory/governance/entitlement-management-overview) diritti per creare una extranet B2B per collaborare con un'organizzazione partner che utilizza Azure Active Directory. In questo modo gli utenti possono registrarsi autonomamente nel sito Extranet o nel team e ricevere l'accesso tramite un flusso di lavoro di approvazione.
 
 Con questo metodo di condivisione delle risorse per la collaborazione, l'organizzazione partner può aiutare a mantenere e approvare gli utenti guest, riducendo l'onere per il reparto IT e consentendo ai più familiari con il contratto di collaborazione di gestire l'accesso degli utenti.
 
@@ -45,18 +46,18 @@ In questo video vengono illustrate le procedure descritte in questo articolo.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
-## <a name="connect-the-partner-organization"></a>Connettere l'organizzazione partner
+## <a name="connect-the-partner-organization"></a>Connessione'organizzazione partner
 
 Per invitare guest da un'organizzazione partner, è necessario aggiungere il dominio del partner come organizzazione connessa in Azure Active Directory.
 
 Per aggiungere un'organizzazione connessa
-1. In [Azure Active Directory](https://aad.portal.azure.com)fare clic su Governance **dell'identità.**
+1. In [Azure Active Directory](https://aad.portal.azure.com), fare clic su **Governance dell'identità**.
 2. Fare **clic su Organizzazioni connesse**.
 4. Fare **clic su Aggiungi organizzazione connessa.**
 5. Digitare un nome e una descrizione per l'organizzazione e quindi fare clic su **Avanti: Directory + dominio**.
 6. Fare **clic su Aggiungi directory + dominio.**
 7. Digitare il dominio dell'organizzazione che si desidera connettere e quindi fare clic su **Aggiungi.**
-8. Fare **clic su** Connetti e quindi su **Avanti: Sponsor.**
+8. Fare **Connessione** e quindi su **Avanti: Sponsor.**
 9. Aggiungere persone dell'organizzazione o dell'organizzazione a cui ci si connette a chi si desidera approvare l'accesso per gli utenti guest.
 10. Fare clic su **Avanti: Rivedi + Crea**.
 11. Rivedere le impostazioni scelte e quindi fare clic su **Crea.**
@@ -68,7 +69,7 @@ Per aggiungere un'organizzazione connessa
 Il primo passaggio per selezionare le risorse da condividere con un'organizzazione partner consiste nel creare un catalogo che le contenga.
 
 Per creare un catalogo
-1. In [Azure Active Directory](https://aad.portal.azure.com)fare clic su Governance **dell'identità.**
+1. In [Azure Active Directory](https://aad.portal.azure.com), fare clic su **Governance dell'identità**.
 2. Fare **clic su Cataloghi.**
 3. Fare **clic su Nuovo catalogo.**
 4. Digitare un nome e una descrizione per il catalogo e verificare che **Sia Abilitato** che **Abilitato** per gli utenti esterni siano entrambi impostati su **Sì.**
@@ -76,12 +77,12 @@ Per creare un catalogo
 
    ![Screenshot della pagina dei cataloghi in Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
 
-Dopo aver creato il catalogo, aggiungere il sito o il team di SharePoint che si desidera condividere con l'organizzazione partner.
+Dopo aver creato il catalogo, aggiungere il SharePoint o il team che si desidera condividere con l'organizzazione partner.
 
 Per aggiungere risorse a un catalogo
 1. In Governance dell'identità di Azure AD, fare **clic su Cataloghi** e quindi sul catalogo in cui si desidera aggiungere risorse.
 2. Fare **clic su** Risorse e quindi su Aggiungi **risorse.**
-3. Selezionare i team o i siti di SharePoint che si desidera includere nella rete Extranet e quindi fare clic su **Aggiungi**.
+3. Selezionare i team o SharePoint siti che si desidera includere nella rete Extranet e quindi fare clic su **Aggiungi**.
 
    ![Screenshot della pagina delle risorse del catalogo in Azure Active Directory Identity Governance](../media/identity-governance-catalog-resource.png)
 

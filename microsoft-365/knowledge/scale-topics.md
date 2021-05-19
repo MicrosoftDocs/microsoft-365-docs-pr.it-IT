@@ -13,22 +13,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Informazioni sulle procedure consigliate per gestire i numerosi argomenti dell'organizzazione tramite Viva Topics.
-ms.openlocfilehash: 3246c7e91c315dadb6c2b14008c9a4da378409d5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52334109"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538412"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Gestire gli argomenti su vasta scala in Microsoft Viva Topics
 
 Quando si indicizzano SharePoint siti o l'intera organizzazione per Viva Topics, è possibile che venga generato un numero di argomenti. In questo caso e vengono visualizzati migliaia  di argomenti suggeriti nella pagina Gestisci argomenti, può essere difficile sapere da dove iniziare. In questo articolo viene descritto come Viva Topics consente di ottimizzare gli argomenti e le informazioni visualizzati agli utenti che cercano informazioni, anche in organizzazioni di grandi dimensioni con un numero elevato di argomenti.
 
-Innanzitutto, un promemoria dei quattro stati per gli argomenti:
+Innanzitutto, un promemoria delle [quattro fasi per gli argomenti:](manage-topics.md#topic-stages)
 
-- **Consigliato:** un argomento è stato identificato dall'IA e dispone di risorse, connessioni e proprietà di supporto sufficienti. Questi argomenti sono contrassegnati come **argomento consigliato** nell'interfaccia utente.
+- **Consigliati**: un argomento è stato identificato dall'IA e ha risorse di supporto, connessioni e proprietà sufficienti. Questi argomenti sono contrassegnati come **argomento consigliato** nell'interfaccia utente.
 
-- **Confermata:** viene convalidato un argomento suggerito dall'IA. La convalida dell'argomento deve essere confermata da un responsabile della conoscenza. Per confermare un argomento, è necessario che vi sia una rete di due voti positivi ricevuti dagli utenti che hanno votato usando il meccanismo di feedback nella scheda dell'argomento. Ad esempio, se un utente ha votato positivo e un utente ha votato negativo per un determinato argomento, sarebbero comunque necessari altri due voti positivi per confermare l'argomento.
+- **Confermati**: un argomento che è stato suggerito dall'IA viene convalidato. La convalida dell'argomento deve essere confermata da un responsabile della conoscenza. Per confermare un argomento, è necessario che vi sia una rete di due voti positivi ricevuti dagli utenti che hanno votato usando il meccanismo di feedback nella scheda dell'argomento. Ad esempio, se un utente ha votato positivo e un utente ha votato negativo per un determinato argomento, sarebbero comunque necessari altri due voti positivi per confermare l'argomento.
  
 - **Published**: argomento confermato che è stato curato: sono state apportate modifiche manuali per migliorarne la qualità.
 

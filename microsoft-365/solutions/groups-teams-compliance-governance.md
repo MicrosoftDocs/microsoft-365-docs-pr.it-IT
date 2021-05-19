@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Informazioni sulle opzioni di conformità per Microsoft 365, Teams e SharePoint collaborazione.
-ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 236b977b22066830e1b36bc87676fd5fa2c9d3f5
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241677"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538124"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opzioni di conformità per Microsoft 365 gruppi, Teams e SharePoint collaborazione
 
@@ -39,11 +40,11 @@ Nella tabella seguente viene fornito un riferimento rapido per i controlli di co
 ||Crittografare contenuto sensibile|[Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](../compliance/encryption-sensitivity-labels.md)|
 |Protezione delle informazioni|||
 ||Evitare la perdita di informazioni riservate|[Informazioni sulla prevenzione della perdita di dati](../compliance/dlp-learn-about-dlp.md)|
-||Proteggere le informazioni riservate in chat.|[Prevenzione della perdita di dati e Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||Proteggere le informazioni riservate in chat.|[Prevenzione della perdita dei dati e Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Definire le informazioni riservate dell'organizzazione|[Tipi di informazioni sensibili personalizzati](../compliance/sensitive-information-type-learn-about.md)|
 |Segmentazione utente|||
 ||Limitare la comunicazione tra segmenti di utenti|[Barriere informative](../compliance/information-barriers.md)|
-|Residenza dati|||
+|Residenza dei dati|||
 ||Archiviare i dati in posizioni geografiche specifiche|[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## <a name="information-retention"></a>Conservazione delle informazioni
@@ -99,7 +100,7 @@ I criteri DLP possono impedire la condivisione accidentale di informazioni riser
 
 DLP in Teams può aiutare a proteggere le informazioni riservate nei messaggi Teams chat e canali eliminando i messaggi che contengono informazioni riservate.
 
-- [Prevenzione della perdita di dati e Microsoft Teams](../compliance/dlp-microsoft-teams.md)
+- [Prevenzione della perdita dei dati e Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
 Se si dispone di informazioni riservate univoche per l'organizzazione, ad esempio i nomi dei codici di progetto, è possibile creare tipi di informazioni riservate personalizzati e applicarle ai criteri DLP per proteggere il contenuto in gruppi, team e Sharepoint.
 
@@ -111,11 +112,11 @@ Con le barriere di informazioni, è possibile segmentare i dati e gli utenti per
 
 - [Barriere informative](../compliance/information-barriers.md)
 
-- [Barriere informazioni in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
+- [Barriere informative in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 
 - [Usare barriere alle informazioni con SharePoint](/sharepoint/information-barriers)
 
-## <a name="data-residency"></a>Residenza dati
+## <a name="data-residency"></a>Residenza dei dati
 
 Con Microsoft 365 Multi-Geo, è possibile effettuare il provisioning e archiviare i dati a riposo nelle posizioni geografiche scelte per soddisfare i requisiti di residenza dei dati. In un ambiente Multi-Geo, il tenant di Microsoft 365 è costituito da una posizione centrale (in cui è stato originariamente effettuato il provisioning della sottoscrizione di Microsoft 365) e da una o più posizioni satellite in cui è possibile archiviare i dati.
 

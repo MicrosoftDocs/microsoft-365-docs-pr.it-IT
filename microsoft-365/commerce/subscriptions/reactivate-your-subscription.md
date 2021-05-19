@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come riattivare l'abbonamento alla scadenza, alla disabilitazione o all'annullamento.
 ms.date: 04/07/2021
-ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345143"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538460"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
@@ -58,12 +58,12 @@ Per riattivare una sottoscrizione, devi essere un amministratore globale o di fa
 
 ::: moniker-end
 
-2. Nella scheda **Prodotti**, trovare l'abbonamento da riattivare. Seleziona **Altre azioni** (tre puntini), quindi seleziona **Riattiva questa sottoscrizione**.\
+2. Nella scheda **Prodotti**, trovare l'abbonamento da riattivare. Seleziona i tre punti (altre azioni), quindi seleziona **Riattiva questa sottoscrizione**.\
     Se l'opzione Riattiva **questa sottoscrizione** non è visualizzata, contattare [il supporto](../../business-video/get-help-support.md)tecnico.
 3. Nel riquadro **Riattiva l’abbonamento**, selezionare una modalità di pagamento nell'elenco a discesa oppure selezionare **Aggiungi modalità di pagamento**.
 4. Selezionare **Salva**.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Provare o acquistare un abbonamento Microsoft 365 per le aziende](../try-or-buy-microsoft-365.md) (articolo)\
 [Rinnovare Microsoft 365 per le aziende](renew-your-subscription.md) (articolo)\

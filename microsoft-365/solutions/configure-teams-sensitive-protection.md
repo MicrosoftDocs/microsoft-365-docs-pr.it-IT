@@ -17,19 +17,20 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: Come distribuire team con la protezione dei dati sensibili.
-ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916227"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538184"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurare team con la protezione dei dati sensibili
 
 Questo articolo illustra la configurazione di un team per un livello di protezione dei dati sensibili. Prima di eseguire la procedura descritta in questo articolo, assicurarsi di aver completato la procedura descritta in [Distribuire i team con la protezione di base](configure-teams-baseline-protection.md). Il livello dei dati sensibili offre le seguenti protezioni aggiuntive rispetto al livello di base:
 
-- Un'etichetta di riservatezza per il team che consente di attivare o disattivare la condivisione guest e limitare l'accesso al contenuto di SharePoint al solo Web per i dispositivi non gestiti. Questa etichetta può essere usata anche per classificare i file.
+- Un'etichetta di riservatezza per il team che consente di attivare o disattivare la condivisione guest e limitare l'accesso al contenuto di SharePoint al solo Web per i dispositivi non gestiti. L'etichetta può essere usata anche per classificare i file.
 - Tipo di collegamento di condivisione predefinito più restrittivo
 - Solo i proprietari del team possono creare canali privati.
 

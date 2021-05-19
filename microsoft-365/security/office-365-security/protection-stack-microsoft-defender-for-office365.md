@@ -13,19 +13,19 @@ localization_priority: Normal
 description: Seguire il percorso di un messaggio in arrivo tramite lo stack di filtro delle minacce in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0760bd7a67f175e4af114324ccc729355ad5f593
-ms.sourcegitcommit: 4e05f19c00e172b65f637f19ca461db5b21dff4e
+ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51601390"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538688"
 ---
-# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protezione dettagliata dalle minacce in Microsoft Defender per Office 365
+# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Procedura dettagliata per la protezione dalle minacce in Microsoft Defender per Office 365
 
-Lo stack di protezione o filtro di Microsoft Defender per Office 365 può essere suddiviso in 4 fasi, come in questo articolo. In generale, la posta in arrivo passa attraverso tutte queste fasi prima del recapito, ma il percorso effettivo della posta elettronica è soggetto alla configurazione defender per Office 365 di un'organizzazione.
+Microsoft Defender per Office 365 o lo stack di filtro può essere suddiviso in 4 fasi, come in questo articolo. In generale, la posta in arrivo passa attraverso tutte queste fasi prima del recapito, ma il percorso effettivo della posta elettronica è soggetto al Defender di un'organizzazione per Office 365 configurazione.
 
 > [!TIP]
-> Rimanere sintonizzati fino alla fine di questo articolo per un grafico *unificato* di tutte e 4 le fasi di Defender per la protezione di Office 365!
+> Rimanete sintonizzati fino alla fine di questo articolo per un grafico *unificato* di tutte e 4 le fasi di Defender per Office 365 protezione.
 
 ## <a name="phase-1---edge-protection"></a>Fase 1 - Protezione edge
 
@@ -33,9 +33,9 @@ Purtroppo, i blocchi edge che una volta erano *critici* sono relativamente sempl
 
 I blocchi perimetrali sono progettati per essere automatici. In caso di falso positivo, ai mittenti verrà notificato e verrà spiegato come risolvere il problema. I connettori di partner attendibili con reputazione limitata possono garantire il recapito o le sostituzioni temporanee possono essere messe in atto durante l'onboarding di nuovi endpoint.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="La fase 1 del filtro in Defender per Office 365 è Edge Protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Fase 1 del filtro in Defender per Office 365 protezione perimetrale.":::
 
-1. **La limitazione della** rete protegge l'infrastruttura di Office 365 e i clienti da attacchi DoS (Denial of Service) limitando il numero di messaggi che possono essere inviati da un set specifico di infrastrutture.
+1. **La limitazione** della rete protegge Office 365 e i clienti da attacchi DoS (Denial of Service) limitando il numero di messaggi che possono essere inviati da un set specifico di infrastrutture.
 
 2. **La reputazione IP e la limitazione** bloccano i messaggi inviati da indirizzi IP di connessione non validi noti. Se un IP specifico invia molti messaggi in un breve periodo di tempo, verranno limitate.
 
@@ -61,7 +61,7 @@ Le funzionalità dell'intelligence mittente sono fondamentali per l'intercettazi
     - **DMARC** consente agli amministratori di contrassegnare SPF e DKIM come necessari nel proprio dominio e impone l'allineamento tra i risultati di queste due tecnologie.
     - **ARC** non è configurato dal cliente, ma si basa su DMARC per funzionare con l'inoltro nelle liste di distribuzione, durante la registrazione di una catena di autenticazione.
 
-3. **L'intelligence** spoofing è in grado di filtrare gli utenti autorizzati a "spoofing" (ovvero quelli che inviano posta per conto di un altro account o inoltrano una lista di distribuzione) da spoofer dannosi che imitano un dominio esterno noto o dell'organizzazione. Separa la posta legittima "per conto di" dai mittenti che effettuano lo spoofing per recapitare messaggi di posta indesiderata e phishing. 
+3. **L'intelligence** spoofing è in grado di filtrare i mittenti autorizzati a "spoofing" (ovvero quelli che inviano posta per conto di un altro account o inoltrano una lista di distribuzione) da mittenti malintenzionati che imitano domini esterni aziendali o noti. Separa la posta legittima "per conto di" dai mittenti che effettuano lo spoofing per recapitare messaggi di posta indesiderata e phishing.
 
     **L'intelligence di spoofing tra** organizzazioni rileva e blocca i tentativi di spoofing da un dominio all'interno dell'organizzazione.
 
@@ -83,13 +83,13 @@ In questa fase lo stack di filtri inizia a gestire il contenuto specifico del me
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="La fase 3 del filtro in MDO è Il filtro contenuto.":::
 
-1. **Le regole di** trasporto (note anche come regole del flusso di posta o regole di trasporto di Exchange) consentono a un amministratore di eseguire un'ampia gamma di azioni quando viene soddisfatta una gamma altrettanto ampia di condizioni per un messaggio. Tutti i messaggi che attraversano l'organizzazione vengono valutati in base alle regole del flusso di posta abilitate/alle regole di trasporto.
+1. **Le regole** di trasporto (note anche come regole del flusso di posta o regole di trasporto Exchange) consentono a un amministratore di eseguire un'ampia gamma di azioni quando viene soddisfatta una gamma altrettanto ampia di condizioni per un messaggio. Tutti i messaggi che attraversano l'organizzazione vengono valutati in base alle regole del flusso di posta abilitate/alle regole di trasporto.
 
-2. **Microsoft Defender Antivirus** e due *motori antivirus* di terze parti vengono usati per rilevare tutto il malware noto negli allegati.
+2. **Antivirus Microsoft Defender** e due *motori antivirus* di terze parti vengono utilizzati per rilevare tutto il malware noto negli allegati.
 
 3. I motori antivirus (AV) vengono utilizzati anche per il true-type di tutti gli allegati, in modo che il blocco dei tipi possa bloccare tutti gli allegati dei tipi specificati dall'amministratore. 
 
-4. Ogni volta che Microsoft Defender per Office 365 rileva un allegato dannoso, l'hash del file e un hash del contenuto attivo vengono aggiunti alla reputazione di Exchange Online Protection (EOP). **Il blocco della reputazione** degli allegati bloccherà il file in tutti Office 365 e sugli endpoint tramite chiamate cloud MSAV.
+4. Ogni volta che Microsoft Defender per Office 365 rileva un allegato dannoso, l'hash del file e un hash del contenuto attivo vengono aggiunti alla reputazione Exchange Online Protection (EOP). **Il blocco della reputazione** degli allegati bloccherà il file in Office 365 e sugli endpoint tramite chiamate cloud MSAV.
 
 5. **Il clustering euristico** può determinare che un file è sospetto in base all'euristica di recapito. Quando viene trovato un allegato sospetto, l'intera campagna viene sospesa e il file viene in modalità sandbox. Se il file viene rilevato dannoso, l'intera campagna viene bloccata.
 
@@ -99,7 +99,7 @@ In questa fase lo stack di filtri inizia a gestire il contenuto specifico del me
 
 8. **L'euristica del** contenuto può rilevare messaggi sospetti in base alla struttura e alla frequenza delle parole all'interno del corpo del messaggio, utilizzando modelli di machine learning.
 
-9. **Allegati sicuri** consente di creare sandbox per ogni allegato per i clienti di Defender per Office 365, usando l'analisi dinamica per rilevare minacce mai viste prima.
+9. **Allegati sicuri** consente di creare sandbox per ogni allegato per Defender Office 365 clienti, usando l'analisi dinamica per rilevare le minacce mai viste prima.
 
 10. **La detonazione del** contenuto collegato considera ogni URL che si collega a un file in un messaggio di posta elettronica come allegato, inviando in modo asincrono in modalità sandbox il file al momento del recapito.
 
@@ -113,17 +113,17 @@ L'ultima fase si verifica dopo il recapito della posta o dei file, agendo sulla 
 
 1. **Collegamenti sicuri** è la protezione basata sul clic di MDO. Ogni URL in ogni messaggio viene racchiuso in modo che punti ai server Collegamenti sicuri Microsoft. Quando si fa clic su un URL, viene controllato rispetto alla reputazione più recente, prima che l'utente venga reindirizzato al sito di destinazione. L'URL viene in modalità sandbox asincrona per aggiornarne la reputazione.
 
-2. **Phish Zero-Hour Auto-Purge (ZAP)** rileva e neutralizza retroattivamente i messaggi di phishing dannosi già recapitati alle cassette postali di Exchange Online.
+2. **Phish Zero-Hour Auto-Purge (ZAP)** rileva e neutralizza retroattivamente i messaggi di phishing dannosi già recapitati Exchange Online cassette postali.
 
-3. **Malware ZAP** rileva e neutralizza retroattivamente i messaggi di malware dannosi già recapitati alle cassette postali di Exchange Online.
+3. **Malware ZAP** rileva e neutralizza retroattivamente i messaggi di malware dannosi già recapitati Exchange Online cassette postali.
 
-4. **Spam ZAP** rileva e neutralizza retroattivamente i messaggi di posta indesiderata dannosi già recapitati alle cassette postali di Exchange Online.
+4. **Spam ZAP** rileva e neutralizza retroattivamente i messaggi di posta indesiderata dannosi già recapitati Exchange Online cassette postali.
 
 5. **Le visualizzazioni** della campagna consentono agli amministratori di vedere il quadro generale di un attacco, più velocemente e completamente, di quanto possa fare qualsiasi team senza automazione. Microsoft sfrutta le grandi quantità di dati anti-phishing, posta indesiderata e antimalware nell'intero servizio per identificare le campagne e quindi consente agli amministratori di analizzarle dall'inizio alla fine, inclusi obiettivi, impatti e flussi, disponibili anche in una scrittura di campagna scaricabile.
 
 6. **I componenti** aggiuntivi Segnala messaggio consentono agli utenti di segnalare facilmente falsi positivi (posta elettronica buona, erroneamente contrassegnata come non *buona)* o falsi negativi (posta elettronica errata contrassegnata come *buona)* a Microsoft per ulteriori analisi.
 
-7. **Collegamenti sicuri per i client di Office** offre la stessa protezione basata sul clic dei collegamenti sicuri, in modo nativo, all'interno di client di Office come Word, PowerPoint ed Excel.
+7. **Collegamenti sicuri per i client Office** offre la stessa protezione basata sul clic dei collegamenti sicuri, in modo nativo, all'interno di client Office come Word, PowerPoint e Excel.
 
 8. **La protezione per OneDrive, SharePoint** e Teams offre la stessa protezione degli allegati sicuri da file dannosi, in modo nativo, all'interno di OneDrive, SharePoint e Microsoft Teams.
 
@@ -136,7 +136,7 @@ Il diagramma finale (come tutte le parti del diagramma che lo compone) è sogget
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Tutte le fasi del filtro in MDO nell'ordine da 1 a 4.":::
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 È necessario configurare Microsoft Defender per Office 365 ***in questo momento** _? Usa questo stack, _now*, con questa procedura dettagliata per [iniziare](protect-against-threats.md) a proteggere l'organizzazione.
 

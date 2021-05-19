@@ -17,13 +17,14 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: Come distribuire team con un livello di protezione di base.
-ms.openlocfilehash: db1a58fd06a62240cbcfcc74f83ba6196f33df80
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ec8c2a1a5c4480ffd36b77fe9e9accc91214c6a3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114295"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538208"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurare team con la protezione di base
 

@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni sull'ordine delle applicazioni di protezione in Exchange Online Protection (EOP) e su come il valore di priorità nei criteri di protezione determina quale criterio viene applicato.
+description: Gli amministratori possono ottenere informazioni sull'ordine di applicazione delle protezioni in Exchange Online Protection (EOP) e su come il valore di priorità nei criteri di protezione determina quale criterio viene applicato.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cd2809fa69064c2058516f459eeba60683c91b9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930378"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539012"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
@@ -33,7 +33,7 @@ ms.locfileid: "51930378"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o in organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, la posta elettronica in ingresso può essere contrassegnata da più forme di protezione. Ad esempio, i criteri anti-phishing incorporati in EOP disponibili per tutti i clienti di Microsoft 365 e i criteri anti-phishing più affidabili disponibili per i clienti di Microsoft Defender per Office 365. I messaggi passano anche attraverso più analisi di rilevamento alla ricerca di malware, posta indesiderata, phishing e così via. Data l'attività, può verificarsi una certa confusione sul criterio applicato.
+Nelle Microsoft 365 con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, la posta elettronica in ingresso può essere contrassegnata da più forme di protezione. Ad esempio, i criteri anti-phishing incorporati in EOP disponibili per tutti i clienti di Microsoft 365 e i criteri anti-phishing più affidabili disponibili per Microsoft Defender per i clienti Office 365. I messaggi passano anche attraverso più analisi di rilevamento alla ricerca di malware, posta indesiderata, phishing e così via. Data l'attività, può verificarsi una certa confusione sul criterio applicato.
 
 In generale, un criterio applicato a un messaggio viene identificato nell'intestazione **X-Forefront-Antispam-Report** nella **proprietà CAT (Category).** Per ulteriori informazioni, vedere [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md).
 
@@ -45,31 +45,31 @@ Esistono due fattori principali che determinano quale criterio viene applicato a
 
   ****
 
-  |Priority|Protezione della posta elettronica|Categoria|Dove gestire|
+  |Priorità|Protezione della posta elettronica|Categoria|Dove gestire|
   |---|---|---|---|
   |1|Malware|CAT:MALW|[Configurare i criteri antimalware in EOP](configure-anti-malware-policies.md)|
   |2|Phishing|CAT:PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |3|Alta probabilità di posta indesiderata|CAT:HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
-  |4 |Spoofing|CAT:SPOOF|[Configurare spoof intelligence in EOP](learn-about-spoof-intelligence.md)|
+  |4 |Spoofing|CAT:SPOOF|[Informazioni di intelligence di spoofing in EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Rappresentazione utente (utenti protetti)|UIMP|[Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Rappresentazione del dominio (domini protetti)|DIMP|[Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)|
   |7 |Posta indesiderata|CAT:SPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |8 |Invio in blocco|CAT:BULK|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> Queste funzionalità sono disponibili solo nei criteri anti-phishing in Microsoft Defender per Office 365.
+  <sup>\*</sup>Queste funzionalità sono disponibili solo nei criteri anti-phishing in Microsoft Defender per Office 365.
 
 - Priorità del **criterio:** per ogni tipo di criterio (protezione da posta indesiderata, antimalware, anti-phishing e così via), esiste un criterio predefinito che si applica a tutti gli utenti, ma è possibile creare criteri personalizzati che si applicano a utenti specifici. Ogni criterio personalizzato ha un valore di priorità che determina l'ordine in cui vengono applicati i criteri. Il criterio predefinito viene sempre applicato per ultimo.
 
   Se un utente è definito in più criteri dello stesso tipo, viene applicato solo il criterio con la priorità più alta. Gli eventuali criteri rimanenti di quel tipo non vengono valutati per l'utente (incluso il criterio predefinito).
 
-Si considerino ad esempio i seguenti criteri anti-phishing in Microsoft Defender per Office 365 che si applicano agli stessi utenti e un messaggio identificato sia come rappresentazione utente che come spoofing:
+Si considerino ad esempio i seguenti criteri anti-phishing in Microsoft Defender per Office 365 che si applicano agli stessi utenti e un messaggio identificato sia come rappresentazione utente che come spoofing: 
 
 <br>
 
 ****
 
-|Nome criterio|Priority|Rappresentazione utente|Anti-spoofing|
+|Nome criterio|Priorità|Rappresentazione utente|Anti-spoofing|
 |---|---|---|---|
 |Criterio A|1|Attivato|Disattivato|
 |Criterio B|2|Disattivato|Attivato|

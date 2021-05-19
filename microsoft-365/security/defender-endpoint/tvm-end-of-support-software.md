@@ -1,7 +1,7 @@
 ---
 title: Pianificare le versioni software e software di fine supporto
 description: Individuare e pianificare versioni software e software non più supportate e che non riceveranno aggiornamenti della sicurezza.
-keywords: gestione delle minacce e delle vulnerabilità, raccomandazione sulla sicurezza di Microsoft Defender for Endpoint tvm, raccomandazione sulla sicurezza informatica, raccomandazione per la sicurezza utilizzabile
+keywords: gestione di minacce e vulnerabilità, raccomandazione sulla sicurezza di Microsoft Defender for Endpoint tvm, raccomandazione sulla sicurezza informatica, raccomandazione di sicurezza utilizzabile
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e8fc228b8856df03b580e748bf00efc8d4333c3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bb436cbd2d0fa453872760c1d2656585e02d1767
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934130"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538868"
 ---
-# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Pianificare le versioni software e software di fine supporto con gestione delle minacce e delle vulnerabilità
+# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Pianificare le versioni software e software di fine supporto con gestione di minacce e vulnerabilità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -41,16 +41,19 @@ End-of-support (EOS), altrimenti noto come end-of-life (EOL), per le versioni so
 
 È fondamentale che gli amministratori IT e della sicurezza lavorino insieme e assicurino che l'inventario software dell'organizzazione sia configurato per ottenere risultati ottimali, conformità e un ecosistema di rete sano. Devono esaminare le opzioni per rimuovere o sostituire le app che hanno raggiunto la fine del supporto e aggiornano le versioni non più supportate. È meglio creare e implementare un piano prima **della** fine delle date di supporto.
 
+>[!NOTE]
+> La funzionalità EOS non è attualmente disponibile per i prodotti non Windows (Mac, Linux); verrà tuttavia aggiunto in futuro.
+
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>Trovare versioni software o software non più supportate
 
-1. Dal menu Gestione delle minacce e delle vulnerabilità passare a [**Suggerimenti per la sicurezza.**](tvm-security-recommendation.md)
+1. Dal menu gestione di minacce e vulnerabilità, passare a [**Suggerimenti per la sicurezza.**](tvm-security-recommendation.md)
 2. Vai al pannello **Filtri** e cerca la sezione tag. Selezionare una o più opzioni di tag EOS. Quindi **applica**.
 
     ![Tag screenshot che affermano che il software EOS, le versioni EOS e le versioni future di EOS.](images/tvm-eos-tag.png)
 
 3. Verrà visualizzato un elenco di suggerimenti relativi al software con supporto terminato, alle versioni software che terminano il supporto o alle versioni con fine del supporto imminente. Questi tag sono visibili anche nella pagina [dell'inventario software.](tvm-software-inventory.md)
 
-    ![Suggerimenti con tag EOS.](images/tvm-eos-tags-column.png)
+    ![Consigli con tag EOS.](images/tvm-eos-tags-column.png)
 
 ## <a name="list-of-versions-and-dates"></a>Elenco di versioni e date
 
@@ -72,6 +75,6 @@ Dopo aver identificato le versioni software e software vulnerabili a causa del l
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)
 - [Inventario software](tvm-software-inventory.md)

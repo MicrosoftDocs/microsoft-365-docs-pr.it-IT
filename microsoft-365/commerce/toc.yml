@@ -68,7 +68,7 @@
       href: billing-and-payments/psd2.md
 - name: Account di fatturazione
   items:
-    - name: Gestire account di fatturazione
+    - name: Informazioni sugli account di fatturazione
       href: manage-billing-accounts.md
     - name: Associare un tenant al proprio account di fatturazione
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business

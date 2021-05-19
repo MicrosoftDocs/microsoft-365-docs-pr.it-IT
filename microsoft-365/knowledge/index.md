@@ -1,7 +1,7 @@
 ---
 title: Introduzione a Microsoft Viva Topics
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: ''
@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Informazioni su come trovare risorse per Microsoft Viva Topics.
-ms.openlocfilehash: 31031697b7825b725c020952a6217b278aa09f02
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 4596f703f86465e4d2d37e2744493bcaef440b7b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454124"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538916"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introduzione a Microsoft Viva Topics
 
@@ -29,13 +29,13 @@ ms.locfileid: "50454124"
 </br>
 
 
-Viva Topics è un servizio di Office 365 che aiuta le organizzazioni a trasformare le informazioni in conoscenza.
+Viva Topics è un Microsoft 365 che aiuta le organizzazioni a trasformare le informazioni in conoscenze.
 
 Le risorse di questa pagina sono pensate per iniziare a imparare a usare Viva Topics nell'organizzazione.
 
 ## <a name="get-started"></a>Per iniziare
 
-Le risorse in questa sezione ti aiutano a saperne di più su cosa sia Viva Topics e su come può aiutarti.
+Le risorse di questa sezione sono utili per saperne di più su cosa è Viva Topics e su come può essere utile.
 
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|

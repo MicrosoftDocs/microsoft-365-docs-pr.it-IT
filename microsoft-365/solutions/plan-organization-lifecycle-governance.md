@@ -1,5 +1,5 @@
 ---
-title: Pianificare la governance dell'organizzazione e del ciclo di vita per i gruppi di Microsoft 365 e Microsoft Teams
+title: Pianificare la governance dell'organizzazione e del ciclo di vita Microsoft 365 gruppi e Microsoft Teams
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,27 +14,28 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Informazioni sulle opzioni di governance del ciclo di vita per gli strumenti di collaborazione in Microsoft 365
-ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7d88618b75ef731bf38df029970efdc05f3eea5a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907929"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538820"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Pianificare la governance dell'organizzazione e del ciclo di vita per i gruppi di Microsoft 365 e Microsoft Teams
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Pianificare la governance dell'organizzazione e del ciclo di vita Microsoft 365 gruppi e Microsoft Teams
 
-I gruppi di Microsoft 365 hanno un ricco set di strumenti per implementare le funzionalità di governance necessarie all'organizzazione. 
+Microsoft 365 ha un ricco set di strumenti per implementare le funzionalità di governance necessarie all'organizzazione. 
 
 Nella sezione seguente vengono descritte le funzionalità, vengono consigliate le procedure consigliate e vengono fornite indicazioni per porre le domande giuste per determinare i requisiti per la governance e come soddisfarle.
 
-## <a name="control-who-can-create-microsoft-365-groups"></a>Controllare chi può creare gruppi di Microsoft 365
+## <a name="control-who-can-create-microsoft-365-groups"></a>Controllare chi può creare Microsoft 365 gruppi
 
 I gruppi possono essere creati dagli utenti finali da più punti finali, tra cui Outlook, SharePoint, Teams e altri ambienti.
 
 ![image desc](../media/04.png)
 
-Consigliamo vivamente il self-service per consentire ai proprietari dei gruppi di aiutare gli utenti a lavorare più facilmente. La limitazione della creazione di gruppi e team può rallentare la produttività degli utenti perché molti servizi di Microsoft 365 richiedono la creazione di gruppi per il funzionamento del servizio.
+Consigliamo vivamente il self-service per consentire ai proprietari dei gruppi di aiutare gli utenti a lavorare più facilmente. La limitazione della creazione di gruppi e team può rallentare la produttività degli utenti perché molti servizi Microsoft 365 richiedono la creazione di gruppi per il funzionamento del servizio.
 
 Considerare le opzioni di governance seguenti per la creazione di gruppi:
 
@@ -42,11 +43,11 @@ Considerare le opzioni di governance seguenti per la creazione di gruppi:
 - Limitare la creazione di gruppi ai membri di un gruppo [di sicurezza con](/azure/active-directory/users-groups-roles/groups-create-rule) appartenenza dinamica contenente, ad esempio, tutti i dipendenti a tempo pieno.
 - Limitare la creazione di gruppi a un gruppo di sicurezza e richiedere agli utenti di completare la formazione nei criteri di utilizzo dei gruppi dell'organizzazione per diventare membri del gruppo di sicurezza.
 
-Se si desidera limitare gli utenti che possono creare gruppi, vedere Gestire chi può creare gruppi di [Microsoft 365](manage-creation-of-groups.md) per informazioni su come configurarlo.
+Se si desidera limitare gli utenti che possono creare gruppi, vedere [Manage who can create Microsoft 365 groups](manage-creation-of-groups.md) per informazioni su come configurarlo.
 
 ## <a name="group-delete-restore-and-archiving"></a>Eliminazione, ripristino e archiviazione del gruppo
 
-Quando un gruppo di Microsoft 365 viene eliminato, per impostazione predefinita viene conservato per 30 giorni. Questo periodo di 30 giorni è definito di "eliminazione temporanea", perché è ancora possibile ripristinare il gruppo. Dopo 30 giorni, il gruppo e i contenuti associati vengono eliminati definitivamente e non possono essere ripristinati.
+Quando un Microsoft 365 viene eliminato, per impostazione predefinita viene conservato per 30 giorni. Questo periodo di 30 giorni è definito di "eliminazione temporanea", perché è ancora possibile ripristinare il gruppo. Dopo 30 giorni, il gruppo e i contenuti associati vengono eliminati definitivamente e non possono essere ripristinati.
 
 Se sono stati applicati criteri di conservazione per conservare chat, file o posta elettronica, tali elementi verranno mantenuti dopo l'eliminazione del gruppo. Per [informazioni dettagliate, vedere](../compliance/retention.md) Informazioni sui criteri di conservazione.
 
@@ -61,7 +62,7 @@ I criteri di denominazione dei gruppi consentono di gestire i gruppi in due modi
 
 I criteri di denominazione vengono applicati quando i gruppi vengono creati da uno dei servizi connessi al gruppo.
 
-Se si decide di utilizzare i criteri di denominazione per i gruppi, vedere Criteri di denominazione dei gruppi di [Microsoft 365.](groups-naming-policy.md)
+Se si decide di utilizzare i criteri di denominazione per i gruppi, vedere [Microsoft 365 criteri di denominazione dei gruppi.](groups-naming-policy.md)
 
 ## <a name="group-expiration-policy"></a>Criteri di scadenza gruppo
 
@@ -73,10 +74,12 @@ Dopo aver impostato i gruppi in modo che scada:
 - Tutti i gruppi non rinnovati vengono eliminati.
 - Qualsiasi gruppo eliminato può essere ripristinato entro 30 giorni dai proprietari del gruppo o dall'amministratore.
 
-I criteri di scadenza sono un buon modo per limitare l'espansione dei gruppi assicurando che i gruppi non più in uso siano eliminati. Se si desidera creare un criterio di scadenza del gruppo, vedere Criteri di scadenza gruppo [di Microsoft 365.](microsoft-365-groups-expiration-policy.md)
+I criteri di scadenza sono un buon modo per limitare l'espansione dei gruppi assicurando che i gruppi non più in uso siano eliminati. Se si desidera creare un criterio di scadenza del gruppo, vedere Microsoft 365 [Criteri di scadenza gruppo.](microsoft-365-groups-expiration-policy.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Pianificazione dettagliata della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Creare il piano di governance della collaborazione](collaboration-governance-first.md)
+
+[Rimuovere un ex dipendente e proteggere i dati](/microsoft-365/admin/add-users/remove-former-employee)

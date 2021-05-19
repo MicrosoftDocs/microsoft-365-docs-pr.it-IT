@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Informazioni sui limiti in vigore per le funzionalità ricerca contenuto e Core eDiscovery nel Centro Microsoft 365 conformità.
-ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 5ca6fd30b40fbfaa3b93095eee403979f541d154
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311413"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538424"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limiti per la ricerca eDiscovery 
 
@@ -41,18 +41,18 @@ Nella tabella seguente sono elencati i limiti di ricerca quando si utilizza lo s
 |Numero massimo di ricerche a livello di organizzazione che possono essere eseguite contemporaneamente. <br/> |3  <br/> |
 |Numero massimo di ricerche che un singolo utente può avviare contemporaneamente. Questo limite è molto probabilmente raggiunto quando l'utente tenta di avviare più ricerche utilizzando il comando **Get-ComplianceSearch \| Start-ComplianceSearch** in PowerShell del Centro sicurezza & conformità.  <br/> |10    <br/> |
 |Numero massimo di elementi per cassetta postale utente visualizzati nella pagina di anteprima durante l'anteprima dei risultati di Ricerca contenuto.  <br/> |100  <br/> |
-|Numero massimo di elementi trovati in tutte le cassette postali utente visualizzate nella pagina di anteprima durante l'anteprima dei risultati della ricerca. Vengono visualizzati gli elementi più recenti.  <br/> |1,000  <br/> |
-|Numero massimo di cassette postali utente che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 1000 cassette postali che contengono contenuto corrispondente alla query di ricerca, solo le prime 1000 cassette postali con il maggior numero di risultati di ricerca saranno disponibili per l'anteprima.  <br/> |1,000  <br/> |
+|Numero massimo di elementi trovati in tutte le cassette postali utente visualizzate nella pagina di anteprima durante l'anteprima dei risultati della ricerca. Vengono visualizzati gli elementi più recenti.  <br/> |1.000  <br/> |
+|Numero massimo di cassette postali utente che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 1000 cassette postali che contengono contenuto corrispondente alla query di ricerca, solo le prime 1000 cassette postali con il maggior numero di risultati di ricerca saranno disponibili per l'anteprima.  <br/> |1.000  <br/> |
 |Numero massimo di elementi trovati nei siti SharePoint e OneDrive for Business visualizzati nella pagina di anteprima durante l'anteprima dei risultati della ricerca. Vengono visualizzati gli elementi più recenti.  <br/> |200  <br/> |
 |Numero massimo di siti (in SharePoint e OneDrive for Business) che possono essere visualizzati in anteprima per i risultati della ricerca. Se sono presenti più di 200 siti totali contenenti contenuto corrispondente alla query di ricerca, solo i 200 siti principali con il maggior numero di risultati di ricerca saranno disponibili per l'anteprima.  <br/> |200  <br/> |
 |Il numero massimo di elementi per cassetta postale delle cartelle pubbliche che vengono visualizzati nella pagina di anteprima durante l'anteprima dei risultati della ricerca contenuto.  <br/> |100  <br/> |
 |Numero massimo di elementi trovati in tutte le cassette postali delle cartelle pubbliche visualizzate nella pagina di anteprima durante l'anteprima dei risultati della ricerca contenuto.  <br/> |200  <br/> |
-|Numero massimo di cassette postali pubbliche che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 500 cassette postali di cartelle pubbliche che contengono contenuto corrispondente alla query di ricerca, solo le prime 500 cassette postali delle cartelle pubbliche con il maggior numero di risultati di ricerca saranno disponibili per l'anteprima.  <br/> |500  <br/> |
+|Numero massimo di cassette postali delle cartelle pubbliche che possono essere visualizzate in anteprima per i risultati della ricerca. Se sono presenti più di 500 cassette postali di cartelle pubbliche che contengono contenuto corrispondente alla query di ricerca, solo le prime 500 cassette postali delle cartelle pubbliche con il maggior numero di risultati di ricerca saranno disponibili per l'anteprima.  <br/> |500  <br/> |
 |Numero massimo di caratteri per la query di ricerca ,inclusi gli operatori e le condizioni, per una ricerca.  <br/><br/> **Nota:** Questo limite ha effetto dopo l'espansione della query e include i caratteri della query con parole chiave, eventuali filtri delle autorizzazioni di ricerca applicati all'utente e gli URL di tutte le posizioni del sito. Ciò significa che la query verrà espansa in base a ognuna delle parole chiave. Se ad esempio una query di ricerca include 15 parole chiave e parametri e condizioni aggiuntivi, la query viene espansa 15 volte, ognuna con gli altri parametri e condizioni della query. Pertanto, anche se il numero di caratteri nella query di ricerca potrebbe essere inferiore al limite, è la query espansa che può contribuire a superare questo limite.  <br/> |**Cassette postali:** 10.000  <br/> **Siti:** 4.000 durante la ricerca in tutti i siti o 2.000 durante la ricerca fino a 20 siti <sup>2</sup> <br/> |
 |Numero massimo di varianti restituite quando si utilizza un carattere jolly prefisso per cercare una frase esatta in una query di ricerca o quando si utilizza un carattere jolly prefisso e l'operatore **booleano NEAR.**  <br/> |10.000 <sup>3</sup> <br/> |
 |Numero minimo di caratteri alfa per i caratteri jolly del prefisso. ad  `time*` esempio, ,  `one*` o  `set*` .  <br/> |3  <br/> |
 |Numero massimo di cassette postali in una ricerca in cui è possibile eliminare elementi eseguendo un'azione di "ricerca ed eliminazione" (utilizzando il comando **New-ComplianceSearchAction -Purge).** Se la ricerca per cui si sta eseguendo un'azione di eliminazione ha più cassette postali di origine rispetto a questo limite, l'azione di eliminazione avrà esito negativo. Per ulteriori informazioni sulla ricerca e sull'eliminazione, vedere [Search for and delete email messages in your organization](search-for-and-delete-messages-in-your-organization.md).  <br/> |50.000  <br/> |
-|Numero massimo di posizioni in una ricerca da cui è possibile esportare gli elementi. Se la ricerca che si sta esportando ha più posizioni oltre questo limite, l'esportazione avrà esito negativo. Per ulteriori informazioni, vedere [Export content search results](export-search-results.md).  <br/> |100,000  <br/> |
+|Numero massimo di posizioni in una ricerca da cui è possibile esportare gli elementi. Se la ricerca che si sta esportando ha più posizioni oltre questo limite, l'esportazione avrà esito negativo. Per ulteriori informazioni, vedere [Export content search results](export-search-results.md).  <br/> |100.000  <br/> |
 |||
 
 > [!NOTE]
@@ -80,7 +80,7 @@ Nella tabella seguente sono elencati i limiti per l'esportazione dei risultati d
 |Numero massimo di organizzazioni che è possibile esportare in un solo giorno <br/><br/> **Nota:** Questo limite viene reimpostato ogni giorno alle 12:00 UTC <br/> |2 TB <br/> |
 |Numero massimo di esportazioni simultanee che possono essere eseguite contemporaneamente all'interno dell'organizzazione <br/><br/> **Nota:** **L'esecuzione di un report Solo** l'esportazione viene eseguita in base alle esportazioni simultanee totali per l'organizzazione. Se tre utenti eseguono 3 esportazioni ciascuna, è possibile eseguire solo un'altra esportazione. Indipendentemente dal fatto che esporti un report o i risultati della ricerca, non è possibile eseguire altre esportazioni finché non ne viene completata una.   <br/> |10   <br/> |
 |Numero massimo di esportazioni che un singolo utente può eseguire contemporaneamente <br/> |3 <br/> |
-|Numero massimo di cassette postali per i risultati della ricerca che possono essere scaricate tramite lo strumento di esportazione di eDiscovery <br/>| 100,000 <br/>|
+|Numero massimo di cassette postali per i risultati della ricerca che possono essere scaricate tramite lo strumento di esportazione di eDiscovery <br/>| 100.000 <br/>|
 |Dimensione massima del file PST che può essere esportato <br/><br/> **Nota:** Se i risultati della ricerca dalla cassetta postale di un utente sono superiori a 10 GB, i risultati della ricerca per la cassetta postale verranno esportati in due (o più) file PST separati. Se si sceglie di esportare tutti i risultati della ricerca in un singolo file PST, il file PST verrà inserito in file PST aggiuntivi se la dimensione totale dei risultati della ricerca è superiore a 10 GB. Se si desidera modificare questa dimensione predefinita, è possibile modificare il Registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Vedere [Change the size of PST files when exporting eDiscovery search results](change-the-size-of-pst-files-when-exporting-results.md). I risultati della ricerca provenienti da una cassetta postale specifica non verranno suddivisi tra più file PST, a meno che il contenuto di una singola cassetta postale non sia superiore a 10 GB. Se si è scelto di esportare i risultati della ricerca in un file PST contenente tutti i messaggi in una singola cartella e i risultati della ricerca sono superiori a 10 GB, gli elementi sono ancora organizzati in ordine cronologico, quindi verranno suddivisi in altri file PST in base alla data di invio.<br/> | 10 GB <br/> |
 |Frequenza con cui i risultati della ricerca delle cassette postali e dei siti vengono caricati in un percorso Archiviazione di Azure fornito da Microsoft. |Massimo 2 GB all'ora|
 |||
@@ -102,7 +102,7 @@ Nella tabella seguente vengono descritti i limiti di indicizzazione che potrebbe
 |Numero massimo di token univoci nel corpo  <br/> |1 milione  <br/> |Come spiegato in precedenza, i token sono il risultato dell'estrazione del testo dal contenuto, della rimozione della punteggiatura e degli spazi e quindi della suddivisione in parole (detti token) archiviate nell'indice. Ad esempio, la frase  `"cat, mouse, bird, dog, dog"` contiene 5 token. Ma solo 4 di questi sono token univoci. Esiste un limite di 1 milione di token univoci per ogni messaggio di posta elettronica, che consente di evitare che l'indice sia troppo grande con token casuali.  <br/> |
 |||
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Esistono ulteriori limiti correlati a diversi aspetti della ricerca di contenuto, ad esempio l'indicizzazione del contenuto. Per ulteriori informazioni su questi limiti, vedere i seguenti argomenti:
 
