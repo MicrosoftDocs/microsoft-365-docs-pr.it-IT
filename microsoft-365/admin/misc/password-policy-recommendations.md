@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
-description: Informazioni su come rendere più sicura l'organizzazione da attacchi alle password e perché è necessario bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+description: Rendere più sicura l'organizzazione da attacchi alle password, bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
+ms.openlocfilehash: 1927e481625e93afa8aa064666e75ea8f891669e
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073866"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572298"
 ---
 # <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
 
@@ -128,7 +128,7 @@ Per altre informazioni, vedere [Configurare l'autenticazione a più fattori](../
 
 Con l'autenticazione a più fattori basata sul rischio, quando il sistema rileva un'attività sospetta richiede all'utente di provare di essere il legittimo proprietario dell'account. 
   
-## <a name="want-to-know-more-recommended-reading"></a>Servono altre informazioni? Letture consigliate (in inglese)
+## <a name="want-to-know-more-recommended-reading"></a>Servono altre informazioni? Letture consigliate
 
 - [Le password Web complesse sono davvero utili?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 

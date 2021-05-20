@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: b7bb1008120df8efefc983d526d90e8397b3a89e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 629b236be3f857da47674cda9350d8b89e6f3445
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924236"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537644"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Cercare ed eliminare messaggi di posta elettronica
 
 **Questo articolo è rivolto agli amministratori. Per cercare gli elementi nella propria cassetta postale per eliminarli, vedere [Trovare un messaggio o un elemento con Ricerca immediata](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
 
-È possibile utilizzare la funzionalità Ricerca contenuto per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali nell'organizzazione. Ciò è utile per trovare e rimuovere messaggi potenzialmente dannosi o ad alto rischio, ad esempio:
+È possibile utilizzare la funzionalità di ricerca di contenuto per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali nell'organizzazione. Ciò consente di individuare e rimuovere posta elettronica potenzialmente dannosa o ad alto rischio, ad esempio:
 
 - Messaggi contenenti virus o allegati pericolosi
 
@@ -41,11 +41,14 @@ ms.locfileid: "50924236"
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per creare ed eseguire una ricerca di contenuto, è necessario essere membro del gruppo di ruoli **Gestione di eDiscovery** o disporre del ruolo di gestione della **Ricerca di conformità**. Per eliminare i messaggi, è necessario essere membro del gruppo di ruoli **Gestione dell’organizzazione** o disporre del ruolo di gestione **Search And Purge**. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](assign-ediscovery-permissions.md).
+- Per creare ed eseguire una ricerca di contenuto, è necessario essere membro del gruppo di ruoli **manager di eDiscovery** o essere assegnato al ruolo di **Ricerca di conformità** in Centro sicurezza e conformità. Per eliminare i messaggi, è necessario essere membro del gruppo di ruoli **Gestione dell’organizzazione** o essere assegnato al ruolo di **Search And Purge** in Centro sicurezza e conformità. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](assign-ediscovery-permissions.md).
+
+  > [!NOTE]
+  > Il gruppo di ruoli **Gestione dell’organizzazione** si trova sia in Exchange Online che nel Centro sicurezza e conformità. Si tratta di gruppi di ruoli separati che assegnano autorizzazioni diverse. Essere un membro di **Gestione dell’organizzazione** in Exchange Online non concede le autorizzazioni necessarie per eliminare i messaggi di posta elettronica. Se non è stato assegnato il ruolo **Search And Purge** nel Centro sicurezza e conformità, direttamente o tramite un gruppo di ruoli come **Gestione dell’organizzazione**, si riceverà un errore nel passaggio 3 quando si esegue il cmdlet **New-ComplianceSearchAction** con il messaggio "Impossibile trovare un parametro che corrisponde al nome del parametro 'Purge'".
 
 - Per eliminare i messaggi, è necessario usare PowerShell in Centro sicurezza e conformità. Per informazioni su come connettersi, vedere il [Passaggio 2](#step-2-connect-to-security--compliance-center-powershell).
 
-- È possibile rimuovere al massimo 10 elementi per ogni cassetta postale alla volta. Poiché la possibilità di cercare e di rimuovere i messaggi è uno strumento di intervento, questo limite garantisce che i messaggi vengano rimossi rapidamente dalle cassette postali. Lo scopo di questa funzionalità non è svuotare le cassette postali degli utenti.
+- È possibile rimuovere un massimo di 10 elementi per ogni cassetta postale alla volta. Poiché la possibilità di cercare e rimuovere i messaggi è uno strumento di intervento, questo limite garantisce che i messaggi vengano rimossi rapidamente dalle cassette postali. Questa funzionalità non ha lo scopo di pulizia delle cassette postali degli utenti.
 
 - Il numero massimo di cassette postali supportato dalla ricerca di contenuto da usare per eliminare gli elementi con un'operazione di ricerca e rimozione è 50.000. Se la ricerca, creata nel [Passaggio 1](#step-1-create-a-content-search-to-find-the-message-to-delete), include più di 50.000 cassette postali, l'azione di rimozione, creata nel Passaggio 3, non riuscirà. La ricerca in più di 50.000 cassette postali in un'unica operazione può in genere verificarsi quando si configura la ricerca in modo da includere tutte le cassette postali dell'organizzazione. Questa restrizione si applica inoltre quando meno di 50.000 cassette postali contengono elementi che corrispondono alla query di ricerca. Vedere la sezione [Altre informazioni](#more-information) per indicazioni sull'uso dei filtri di autorizzazioni per la ricerca ed eliminare elementi da più di 50.000 cassette postali.
 
@@ -155,4 +158,4 @@ Per altre informazioni, vedere [New-ComplianceSearchAction](/powershell/module/e
 
 - **Perché il flusso di lavoro di ricerca e rimozione è diviso tra diversi gruppi di ruoli del centro sicurezza e conformità?**
 
-  Come indicato in precedenza, per eseguire ricerche nelle cassette postali, è necessario essere membri del gruppo di ruoli di responsabili di eDiscovery o disporre del ruolo di gestione di ricerca di conformità. Per eliminare i messaggi, è necessario essere membri del gruppo di ruoli di gestione dell'organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. In questo modo è possibile controllare chi può eseguire ricerche nelle cassette postali dell'organizzazione e chi può eliminare i messaggi.
+  Come indicato in precedenza, per eseguire ricerche nelle cassette postali, è necessario essere membri del gruppo di ruoli di responsabili di eDiscovery o disporre del ruolo di gestione di ricerca di conformità. Per eliminare i messaggi, è necessario essere membri del gruppo di ruoli di gestione dell'organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. In questo modo è possibile controllare chi può eseguire ricerche nelle cassette postali dell'organizzazione e chi può eliminare i messaggi.
