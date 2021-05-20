@@ -19,12 +19,12 @@ localization_priority: Priority
 description: Informazioni per amministratori sul modo in cui EOP usa l'autenticazione della posta elettronica (SPF, DKIM e DMARC) per prevenire lo spoofing, il phishing e la posta indesiderata.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 633494717ad7cf68319a2332f435fd8b56fc8aeb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4815924714845b641819021ea793baa465cfc812
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205905"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538292"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticazione e-mail in EOP
 
@@ -39,9 +39,7 @@ ms.locfileid: "51205905"
 Con la denominazione di autenticazione e-mail, nota anche come autenticazione della posta elettronica o convalida della posta elettronica, si indica un gruppo di standard che prova a bloccare lo spoofing, ossia i messaggi di posta elettronica provenienti da mittenti contraffatti. In tutte le organizzazioni Microsoft 365, EOP usa questi standard per verificare la posta elettronica in ingresso:
 
 - [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-
 - [DKIM](use-dkim-to-validate-outbound-email.md)
-
 - [DMARC](use-dmarc-to-validate-email.md)
 
 L'autenticazione della posta elettronica verifica che i messaggi di posta elettronica provenienti da un mittente, ad esempio laura@contoso.com, siano legittimi e provengano da fonti previste per quel dominio di posta elettronica, ad esempio contoso.com.
@@ -58,7 +56,7 @@ Al marzo 2018, solo il 9% dei domini delle aziende Fortune 500 pubblicava criter
 
 ![Criteri DMARC delle società Fortune 500](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-Le proporzioni delle piccole e medie imprese che pubblicano criteri avanzati di autenticazione della posta elettronica sono più piccole. E il numero è ancora più piccolo per i domini di posta elettronica all'esterno del Nord America e dell'Europa occidentale.
+La percentuale di aziende piccole e di medie dimensioni che pubblicano criteri di autenticazione e-mail avanzati è esigua, ed è ancora più esigua per i domini e-mail esterni all'America del Nord e all'Europa occidentale.
 
 L’assenza di criteri avanzati di autenticazione della posta elettronica è un problema importante. Benché le organizzazioni possano non comprendere come funziona l'autenticazione della posta elettronica, gli aggressori lo conoscono a fondo e ne traggono vantaggio. Per evitare l'esposizione al phishing e a causa dell'adozione limitata di criteri avanzati di autenticazione della posta elettronica, Microsoft usa l'*autenticazione implicita* per controllare la posta in ingresso.
 
@@ -89,7 +87,7 @@ Affidarsi solo ai record di autenticazione della posta elettronica per determina
 
 L'autenticazione composita può risolvere queste limitazioni, passando messaggi che altrimenti non supererebbero i controlli di autenticazione della posta elettronica.
 
-Per semplicità, gli esempi seguenti sono incentrati sui risultati dell'autenticazione. Altri fattori di intelligence di back-end potrebbero identificare i messaggi che superano l'autenticazione e-mail come contraffatti o i messaggi che non la superano come legittimi.
+Per semplicità, gli esempi che seguono si concentrano sui risultati di autenticazione e-mail. Altri fattori di intelligence di back-end potrebbero identificare i messaggi che superano l'autenticazione e-mail come contraffatti o i messaggi che non la superano come legittimi.
 
 Il dominio fabrikam.com, ad esempio, non ha record SPF, DKIM o DMARC. I messaggi provenienti da mittenti nel dominio fabrikam.com possono non superare l'autenticazione composita (notare il valore `compauth` e il motivo):
 
@@ -102,7 +100,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Se fabrikam.com configura un SPF senza un record DKIM, il messaggio può superare l'autenticazione composita. Il dominio che ha superato i controlli SPF è allineato al dominio nell'indirizzo del mittente:
+Se fabrikam.com configura un record SPF senza un record DKIM, il messaggio può superare l'autenticazione composita perché il dominio che ha superato i controlli SPF è allineato al dominio nell'indirizzo del mittente:
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -113,7 +111,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Se fabrikam.com configura un DKIM senza un record SPF, il messaggio può superare l'autenticazione composita. Il dominio che della firma DKIM è allineato al dominio nell'indirizzo del mittente:
+Se fabrikam.com configura un record DKIM senza un record SPF, il messaggio può superare l'autenticazione composita perché il dominio nella firma DKIM è allineato al dominio nell'indirizzo del mittente:
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -146,9 +144,7 @@ Microsoft 365 tiene traccia di chi invia messaggi di posta elettronica non auten
 Si può usare questo metodo per risolvere lo spoofing intra-organizzazione e lo spoofing fra domini nei casi in cui si è proprietari o si interagisce con più tenant. Il metodo consente anche di risolvere i problemi di spoofing fra domini in cui si invia ad altri clienti all'interno di Microsoft 365 o a terze parti ospitate da altri provider.
 
 - [Configurare record SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md) per i propri domini.
-
 - [Configurare record DKIM](use-dkim-to-validate-outbound-email.md) per i propri domini primari.
-
 - [Valutare la possibilità di configurare record DMARC](use-dmarc-to-validate-email.md) per il dominio per determinare chi sono i mittenti legittimi.
 
 Microsoft non fornisce istruzioni dettagliate per l'implementazione dei record SPF, DKIM e DMARC. Online, tuttavia, sono disponibili numerose informazioni. Esistono anche società terze parti che si occupano di aiutare le organizzazioni a configurare i record di autenticazione della posta elettronica.
@@ -167,17 +163,11 @@ Microsoft 365 tratterà i messaggi di posta elettronica ricevuti dall'infrastrut
 
 Dopo aver iniziato a usare un criterio di fallback SPF `?all`, è possibile individuare e includere gradualmente altre origini di posta elettronica per i messaggi e quindi aggiornare il record SPF con criteri più restrittivi.
 
-### <a name="use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>Usare spoof intelligence per configurare i mittenti di posta elettronica non autenticata consentiti
+### <a name="configure-permitted-senders-of-unauthenticated-email"></a>Configurare i mittenti di posta elettronica non autenticata consentiti
 
-È anche possibile usare [spoof intelligence](learn-about-spoof-intelligence.md) per consentire ai mittenti di trasmettere messaggi non autenticati alla propria organizzazione.
+È anche possibile usare [spoof intelligence](learn-about-spoof-intelligence.md) e nell'[elenco consenti/blocca tenant](tenant-allow-block-list.md) per consentire ai mittenti di trasmettere messaggi non autenticati alla propria organizzazione.
 
 Per i domini esterni, l'utente oggetto di spoofing è il dominio dell'indirizzo del mittente, mentre l'infrastruttura di invio è l'indirizzo IP di origine, suddiviso in intervalli CIDR /24, o il dominio dell'organizzazione del record DNS inverso (PTR).
-
-Nello screenshot seguente l'indirizzo IP di origine potrebbe essere 131.107.18.4 con il record PTR outbound.mail.protection.outlook.com. Questo sarebbe visualizzato come outlook.com per l'infrastruttura di invio.
-
-Per consentire al mittente di inviare messaggi di posta elettronica non autenticati, modificare il **No** in un **Sì**.
-
-![Configurazione anti-spoofing per alcuni mittenti](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Creare una voce Consenti per la coppia mittente/destinatario
 
@@ -189,7 +179,7 @@ A causa dei problemi generati dalla posta indesiderata e dal phishing, Microsoft
 
 - Anche se in passato non erano tenuti a pubblicare record di autenticazione e-mail, devono farlo se inviano messaggi di posta elettronica a Microsoft.
 
-- Configurare SPF per pubblicare gli indirizzi IP di invio del dominio e configurare DKIM (se disponibile) per la firma digitale dei messaggi. Dovrebbero inoltre prendere in considerazione la configurazione dei record DMARC.
+- Configurare SPF per pubblicare gli indirizzi IP di invio del dominio e configurare DKIM (se disponibile) per la firma digitale dei messaggi. Sarebbe inoltre opportuno configurare i record DMARC.
 
 - Se usano mittenti in blocco per inviare messaggi di posta elettronica per loro conto, assicurarsi che il dominio nell'indirizzo Da (se di loro proprietà) sia allineato al dominio che supera i controlli SPF o DMARC.
 

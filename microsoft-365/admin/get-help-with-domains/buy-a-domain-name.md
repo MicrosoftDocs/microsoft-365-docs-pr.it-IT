@@ -22,21 +22,24 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Informazioni su come acquistare un nome di dominio in Microsoft 365.
-ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+description: Scopri come acquistare un nome di dominio in Microsoft 365.
+ms.openlocfilehash: 53c71796c09f08d1f50c58704b8dd95c1a241518
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470512"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537572"
 ---
 # <a name="buy-a-domain-name"></a>Acquistare un nome di dominio
+
+> [!NOTE]
+> Se l'organizzazione usa Office 365 gestito da 21Vianet in Cina, vedere Come acquistare un dominio per Office 365 gestito [da 21Vianet in Cina.](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md)
 
  *Per aggiungere, modificare o rimuovere domini, **è necessario** essere un **amministratore globale** di un piano aziendale [o aziendale.](https://products.office.com/business/office) Queste modifiche influiscono *sull'intero* tenant, gli amministratori personalizzati o gli utenti *normali* non saranno in grado di apportare queste modifiche.*  
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Accedere e passare a Impostazioni \> Domini \> Acquistare un dominio
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Accedere e andare a Impostazioni \> Domini \> Acquistare un dominio
 
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
@@ -68,23 +71,21 @@ ms.locfileid: "51470512"
 > [!NOTE]
 > Quando si seleziona **Acquista dominio**, è possibile che venga reindirizzato al sito Web del partner Microsoft se il tenant viene acquistato/gestito tramite un partner Microsoft.
 
-### <a name="domain-privacy"></a>Privacy del dominio
+## <a name="domain-privacy"></a>Privacy del dominio
 Offriamo un abbonamento gratuito alla privacy del dominio con l'acquisto di un dominio. In questo modo le informazioni di contatto vengono associate alla registrazione del dominio con ICANN privato. [Ulteriori informazioni.](https://whois.icann.org/en/privacy-and-proxy-services)
   
-### <a name="buy-a-domain-from-another-domain-registrar"></a>Acquistare un dominio presso un altro registrar
-Se si desidera acquistare un dominio da un registrar diverso da [GoDaddy,](https://www.godaddy.com)è consigliabile usarne uno di seguito che supporti la configurazione automatica (Domain Connect). 
+## <a name="buy-a-domain-from-another-domain-registrar"></a>Acquistare un dominio presso un altro registrar
+Se si desidera acquistare un dominio da un registrar diverso da [GoDaddy,](https://www.godaddy.com)è consigliabile usarne uno di seguito che supporti la configurazione automatica (Domain Connessione). 
   
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    
-### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Trasferire il dominio presso un altro registrar
+## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Trasferire il dominio presso un altro registrar
 
 Se il proprio dominio è gestito da un provider che non supporta tutti i record DNS necessari, è possibile trasferirlo in un altro registrar. Con il trasferimento del dominio, si cambia il destinatario dei pagamenti per effettuare il rinnovo e si mantiene il nome di dominio.
   
 È necessario richiedere il trasferimento al registrar presso il quale si vuole spostare il dominio. Cercare nel suo sito Web un'opzione relativa al **trasferimento del DNS**. Tenere presente che, una volta apportate le modifiche necessarie, l'aggiornamento su Internet può richiedere alcuni giorni.
- 
-
 
 
 ::: moniker range="o365-21vianet"
@@ -99,12 +100,12 @@ Per configurare un dominio in Microsoft 365, è necessario essere proprietari di
 > [!CAUTION]
 > Alcuni registrar o provider di hosting DNS non consentono la creazione di tutti i record DNS richiesti da Microsoft 365. I provider di hosting elencati in questo articolo supportano tutti i record necessari. Se si prevede di usare un provider di hosting diverso, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-Dopo aver registrato il dominio (presso un registrar), accedi a Microsoft 365 come amministratore e configura il dominio in modo da poterlo usare con il tuo indirizzo di posta elettronica e altri servizi.
+Dopo aver registrato il dominio (presso un registrar), accedi a Microsoft 365 come amministratore e configura il dominio in modo da poterlo usare con l'indirizzo di posta elettronica e altri servizi.
   
 > [!NOTE]
-> Le informazioni sul sito Web pubblico di SharePoint Online contenute in questo articolo si applicano solo se l'organizzazione ha acquistato Microsoft 365 prima del 9 marzo 2015. 
+> Le SharePoint del sito Web pubblico online in questo articolo si applicano solo se l'organizzazione ha acquistato Microsoft 365 prima del 9 marzo 2015. 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Registrar che supportano tutti i record DNS necessari per Microsoft 365
+### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Registrar che supportano tutti i record DNS necessari per Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -116,10 +117,10 @@ Dopo aver registrato il dominio (presso un registrar), accedi a Microsoft 365 co
     
 ::: moniker-end
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Aggiungere un dominio a Microsoft 365](../setup/add-domain.md)
+[Aggiungere un dominio a Microsoft 365](../setup/add-domain.md) (articolo)
 
-[Domande frequenti sui domini](../setup/domains-faq.yml)
+[Domande frequenti sui](../setup/domains-faq.yml) domini (articolo)
 
-[Aggiornare i record DNS per mantenere il sito Web con il provider di hosting corrente.](../dns/update-dns-records-to-retain-current-hosting-provider.md)
+[Aggiornare i record DNS per mantenere il sito Web con il provider di hosting corrente](../dns/update-dns-records-to-retain-current-hosting-provider.md) (articolo)

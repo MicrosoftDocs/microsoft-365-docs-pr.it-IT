@@ -20,19 +20,20 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
+recommendations: false
 description: Come configurare Teams per una maggiore sicurezza della condivisione dei file con tre livelli di protezione, in modo da bilanciare la sicurezza con la facilità di collaborazione.
-ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916215"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539216"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurare Teams con tre livelli di protezione
 
 Gli articoli in questa serie offrono suggerimenti per configurare i team in Microsoft Teams e i siti di SharePoint associati per la protezione dei file in modo da bilanciare la sicurezza con la facilità di collaborazione.
 
-L'articolo definisce quattro diverse configurazioni, a partire da un team pubblico con i criteri di condivisione più aperti. Ogni configurazione aggiuntiva rappresenta un miglioramento significativo in termini di protezione, ma la possibilità di accedere e collaborare ai file archiviati nei si riduce al gruppo di membri dei team interessati. 
+L'articolo definisce quattro diverse configurazioni, a partire da un team pubblico con i criteri di condivisione più aperti. Ogni configurazione aggiuntiva rappresenta un miglioramento significativo in termini di protezione, ma la possibilità di accedere e collaborare sui file archiviati nei team si riduce al gruppo rilevante di membri del team. 
 
 Le configurazioni descritte in questo articolo sono allineate alle raccomandazioni di Microsoft per i tre livelli di protezione per dati, identità e dispositivi:
 
@@ -87,7 +88,7 @@ Le autorizzazioni risultanti consentono:
 
 Per impostazione predefinita, i proprietari e i membri del team possono condividere il sito con utenti esterni al team senza aggiungerli al team. Questo è sconsigliato perché complica la gestione degli utenti, inoltre utenti che non sono membri del team potrebbero accedere ai file del team senza che i proprietari ne siano consapevoli. Per evitarlo, a partire dal livello protezione di base, è consigliabile permettere solo ai proprietari di condividere direttamente il sito.
 
-Mentre non è disponibile un'opzione di autorizzazione di sola lettura per i team, lo è per il sito di SharePoint. Se sono presenti stakeholder o gruppi di partner che devono essere in grado di visualizzare i file del team, ma non di modificarli, può essere utile aggiungerli direttamente al sito di SharePoint con autorizzazioni di lettura.
+Mentre i team non dispongono di un'autorizzazione di sola lettura, il sito di SharePoint dispone di tale autorizzazione. Se sono presenti stakeholder di gruppi di partner che devono essere in grado di visualizzare i file del team, ma non di modificarli, è consigliabile aggiungerli direttamente al sito di SharePoint con autorizzazioni di lettura.
 
 ## <a name="sharing-files-and-folders"></a>Condivisione di file e cartelle
 
@@ -115,7 +116,7 @@ Vedere i riferimenti seguenti per creare un ambiente di condivisione guest sicur
 
 Per i livelli dei dati sensibili e altamente sensibili, l'accesso al contenuto di SharePoint viene limitato mediante l'applicazione di etichette di riservatezza. L'accesso condizionale di Azure Active Directory offre numerose opzioni per determinare il modo in cui gli utenti accedono a Microsoft 365, incluse limitazioni basate su luogo, rischio, conformità dei dispositivi e altri fattori. Si consiglia di leggere l'articolo [Informazioni sull'accesso condizionale](/azure/active-directory/conditional-access/overview) e valutare quali altri criteri potrebbero essere appropriati per l'organizzazione.
 
-Si noti che gli utenti guest spesso non hanno dispositivi gestiti dall'organizzazione. Se si consentono gli utenti guest in uno qualsiasi dei livelli, considerare i tipi di dispositivi che useranno per accedere ai team e ai siti e impostare i criteri per i dispositivi non gestiti di conseguenza.
+Gli utenti guest spesso non hanno dispositivi gestiti dall'organizzazione. Se si ammettono gli utenti guest in uno qualsiasi dei livelli, valutare i tipi di dispositivi che useranno per accedere ai team e ai siti e impostare i criteri appropriati per i dispositivi non gestiti.
 
 ## <a name="next-step"></a>Passaggio successivo
 

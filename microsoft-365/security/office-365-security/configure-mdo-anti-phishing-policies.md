@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare a creare, modificare ed eliminare i criteri anti-phishing avanzati disponibili nelle organizzazioni con Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c8d61aee9afb332a8426890560ad221a9c87c7d
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 3660b9574f4faf4ee9c0602ac23b36f8634650dc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218820"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537908"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri anti-phishing in Microsoft Defender per Office 365
 
@@ -30,11 +30,11 @@ ms.locfileid: "51218820"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I criteri anti-phishing in [Microsoft Defender per Office 365](defender-for-office-365.md) consentono di proteggere l'organizzazione da attacchi di phishing dannosi basati sulla rappresentazione e da altri tipi di attacchi di phishing. Per ulteriori informazioni sulle differenze tra i criteri anti-phishing in Exchange Online Protection (EOP) e i criteri anti-phishing in Microsoft Defender per Office 365, vedere [Protezione anti-phishing.](anti-phishing-protection.md)
+I criteri anti-phishing in [Microsoft Defender per Office 365](defender-for-office-365.md) possono aiutare a proteggere l'organizzazione da attacchi di phishing dannosi basati sulla rappresentazione e da altri tipi di attacchi di phishing. Per ulteriori informazioni sulle differenze tra i criteri anti-phishing in Exchange Online Protection (EOP) e i criteri anti-phishing in Microsoft Defender per Office 365, vedere [Protezione anti-phishing.](anti-phishing-protection.md)
 
 Gli amministratori possono visualizzare, modificare e configurare (ma non eliminare) il criterio anti-phishing predefinito. Per una maggiore granularità, è inoltre possibile creare criteri anti-phishing personalizzati che si applicano a utenti, gruppi o domini specifici nell'organizzazione. I criteri personalizzati hanno sempre la precedenza sul criterio predefinito, ma non è possibile modificarne la priorità (in funzione).
 
-È possibile configurare i criteri anti-phishing nel Centro sicurezza & conformità o in PowerShell di Exchange Online.
+È possibile configurare i criteri anti-phishing nel Centro sicurezza & conformità o in Exchange Online PowerShell.
 
 Per informazioni sulla configurazione dei criteri anti-phishing più limitati disponibili nelle organizzazioni di Exchange Online Protection (ovvero le organizzazioni senza Microsoft Defender per Office 365), vedere [Configure anti-phishing policies in EOP.](configure-anti-phishing-policies-eop.md)
 
@@ -49,7 +49,7 @@ La differenza tra questi due elementi non è ovvia quando si gestiscono i criter
 - Quando si modifica un criterio, le impostazioni relative al nome, alla priorità, abilitate o disabilitate e ai filtri destinatari modificano la regola anti-phish. Tutte le altre impostazioni modificano il criterio anti-phish associato.
 - Quando si rimuove un criterio, vengono rimossi la regola anti-phish e il criterio anti-phish associato.
 
-In PowerShell di Exchange Online, il criterio e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione Utilizzare PowerShell di Exchange Online per configurare i criteri [anti-phishing in Microsoft Defender per Office 365](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) più avanti in questo articolo.
+In Exchange Online PowerShell, il criterio e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione Usare Exchange Online PowerShell per configurare i criteri [anti-phishing in Microsoft Defender per Office 365](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) più avanti in questo articolo.
 
 Ogni organizzazione di Microsoft Defender per Office 365 dispone di un criterio anti-phishing predefinito denominato Office365 AntiPhish Default con queste proprietà:
 
@@ -57,11 +57,11 @@ Ogni organizzazione di Microsoft Defender per Office 365 dispone di un criterio 
 - Il valore personalizzato della priorità del criterio è **Minore** e non può essere modificato (il criterio viene sempre applicato per ultimo). Qualsiasi criterio personalizzato creato avrà sempre una priorità più alta.
 - Il criterio è quello predefinito (la proprietà **IsDefault** contiene il valore `True`), e non è possibile eliminarlo.
 
-Per aumentare l'efficacia della protezione anti-phishing in Microsoft Defender per Office 365, è possibile creare criteri anti-phishing personalizzati con impostazioni più rigide applicate a utenti o gruppi di utenti specifici.
+Per aumentare l'efficacia della protezione anti-phishing in Microsoft Defender per Office 365, è possibile creare criteri anti-phishing personalizzati con impostazioni più restrittive applicate a utenti o gruppi di utenti specifici.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **anti-phishing di ATP,** utilizzare <https://protection.office.com/antiphishing> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **Anti-phishing,** utilizzare <https://protection.office.com/antiphishing> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -74,10 +74,10 @@ Per aumentare l'efficacia della protezione anti-phishing in Microsoft Defender p
   **Note**:
 
   - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
-  - Il **gruppo di ruoli Gestione organizzazione** di sola visualizzazione in Exchange [Online](/Exchange/permissions-exo/permissions-exo#role-groups) consente inoltre l'accesso in sola lettura alla funzionalità <sup>\*</sup> .
+  - Il **gruppo di ruoli Gestione organizzazione** di sola visualizzazione in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) consente inoltre l'accesso in sola lettura alla funzionalità <sup>\*</sup> .
   - <sup>\*</sup> Nel Centro sicurezza & conformità, l'accesso di sola lettura consente agli utenti di visualizzare le impostazioni dei criteri anti-phishing personalizzati. Gli utenti di sola lettura non possono visualizzare le impostazioni nel criterio anti-phishing predefinito.
 
-- Per le impostazioni consigliate per i criteri anti-phishing in Microsoft Defender per Office 365, vedere [Criteri anti-phishing in Defender for Office 365 settings.](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)
+- Per le impostazioni consigliate per i criteri anti-phishing in Microsoft Defender per Office 365, vedere [Criteri anti-phishing in Defender per Office 365 impostazioni](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
 - Consentire fino a 30 minuti per l'applicazione di un criterio nuovo o aggiornato.
 
@@ -89,7 +89,7 @@ La creazione di un criterio anti-phishing personalizzato nel Centro sicurezza & 
 
 Quando si crea un criterio anti-phishing, è possibile specificare solo il nome, la descrizione e il filtro destinatario che identifica a chi si applica il criterio. Dopo aver creato il criterio, è possibile modificare il criterio per modificare o rivedere le impostazioni anti-phishing predefinite.
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **ATP anti-phishing.**
+1. Nel Centro sicurezza & conformità passare a **Gestione** delle minacce \> **Criteri** \> **Anti-phishing.**
 
 2. Nella pagina **Anti-phishing** fare clic su **Crea**.
 
@@ -133,11 +133,11 @@ Quando si crea un criterio anti-phishing, è possibile specificare solo il nome,
 
 Dopo aver creato il criterio anti-phishing con queste impostazioni generali, seguire le istruzioni nella sezione successiva per configurare le impostazioni di protezione nel criterio.
 
-## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Usare il Centro sicurezza & conformità per modificare i criteri anti-phishing in Microsoft Defender per Office 365
+## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Utilizzare il Centro sicurezza & conformità per modificare i criteri anti-phishing in Microsoft Defender per Office 365
 
 Utilizzare le procedure seguenti per modificare i criteri anti-phishing: un nuovo criterio creato dall'utente o criteri esistenti già personalizzati.
 
-1. Se non si è già presenti, aprire il Centro sicurezza & conformità e passare a **Criteri** di gestione delle minacce \>  \> **ATP anti-phishing**.
+1. Se non si è già presenti, aprire il Centro sicurezza & conformità e passare a **Criteri** di gestione delle minacce \>  \> **Anti-phishing.**
 
 2. Selezionare il criterio anti-phishing personalizzato che si desidera modificare. Se è già selezionato, deselezionalo e selezionalo di nuovo.
 
@@ -152,13 +152,13 @@ Utilizzare le procedure seguenti per modificare i criteri anti-phishing: un nuov
    - **Nome**
    - **Descrizione**
    - **Applicato a**
-   - **Revisione delle impostazioni**
+   - **Rivedere le impostazioni**
 
    Al termine, fare clic su **Salva** in qualsiasi pagina.
 
-5. **Rappresentazione:** fare **clic su** Modifica per modificare i mittenti protetti e i domini protetti nel criterio. Queste impostazioni sono una condizione per il criterio che identifica i mittenti contraffatti da cercare (singolarmente o per dominio) nell'indirizzo mittente dei messaggi in ingresso. Per ulteriori informazioni, vedere [Impostazioni di rappresentazione nei criteri anti-phishing in Microsoft Defender per Office 365.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+5. **Rappresentazione:** fare **clic su Modifica** per modificare i mittenti protetti e i domini dei mittenti protetti nel criterio. Queste impostazioni sono una condizione per il criterio che identifica mittenti specifici da cercare (singolarmente o per dominio) nell'indirizzo mittente dei messaggi in ingresso. Per ulteriori informazioni, vedere [Impostazioni di rappresentazione nei criteri anti-phishing in Microsoft Defender per Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-   - **Aggiungere utenti da proteggere**: il valore predefinito è **Disattivato.** Per attivarlo, fai scorrere l'interruttore su **Attivato** e quindi fai clic sul **pulsante** Aggiungi utente visualizzato.
+   - **Aggiungere utenti da proteggere**: il valore predefinito è **Off** ![ Toggle ](../../media/scc-toggle-off.png) Off. Per attivarlo, fai scorrere  l'interruttore su ![ Attiva/Disattiva ](../../media/scc-toggle-on.png) e quindi fai clic sul **pulsante** Aggiungi utente visualizzato.
 
      Nel riquadro **a comparsa** Aggiungi utente visualizzato configurare i valori seguenti:
 
@@ -182,43 +182,48 @@ Utilizzare le procedure seguenti per modificare i criteri anti-phishing: un nuov
 
    - **Aggiungere domini da proteggere**: configurare una o entrambe le impostazioni seguenti:
 
-     - **Includi automaticamente i domini di cui sono proprietario**: il valore predefinito è **Disattivato.** Per attivarlo, fai scorrere l'interruttore su **On.**
-     - **Includi domini personalizzati**: il valore predefinito è **Off**. Per attivarlo, fai scorrere l'interruttore su **On** e nella casella **Aggiungi** domini immetti il nome di dominio (ad esempio, contoso.com), premi INVIO e ripeti se necessario.
+     - **Includi automaticamente i domini di cui sono proprietario**: il valore predefinito è **Off** ![ Toggle ](../../media/scc-toggle-off.png) Off. Per attivarlo, fai scorrere l'interruttore **su** ![ ](../../media/scc-toggle-on.png) Attiva/Disattiva.
+
+       Per visualizzare i domini di cui si è proprietari, selezionare **Visualizza domini di cui si è proprietari.**
+
+     - **Includi domini personalizzati**: il valore predefinito è **Off** ![ Toggle ](../../media/scc-toggle-off.png) Off. Per attivarlo, fai scorrere  l'interruttore su Attiva/Disattiva e nella casella Aggiungi domini immetti il nome di dominio ![ ](../../media/scc-toggle-on.png) (ad esempio, contoso.com),  premi INVIO e ripeti se necessario.
 
      > [!NOTE]
      > È possibile avere un massimo di 50 domini in tutti i criteri anti-phishing.
 
    - **Azioni**: fare clic su **Modifica**
 
-     - **Se la posta elettronica** viene inviata da un utente rappresentato: configurare una delle azioni seguenti per i messaggi in cui il mittente contraffatto è uno degli utenti protetti specificati in Aggiungere utenti **da proteggere:**
+     - **Se la posta elettronica viene** inviata da un utente rappresentato: configurare una delle azioni seguenti per i messaggi in cui il mittente è uno degli utenti protetti specificati in Aggiungere utenti da **proteggere:**
 
        - **Non applicare alcuna azione**
        - **Reindirizzare il messaggio ad altri indirizzi di posta elettronica**
-       - **Sposta messaggio nella cartella Posta indesiderata**
+       - **Spostare il messaggio nelle cartelle posta indesiderata dei destinatari**
        - **Mettere in quarantena il messaggio**
        - **Recapitare il messaggio e aggiungere altri indirizzi alla riga Ccn**
        - **Eliminare il messaggio prima che venga recapitato**
 
-     - **Se la posta elettronica** viene inviata da un dominio rappresentato: configurare una delle azioni seguenti per i messaggi in cui il mittente contraffatto si trova in uno dei domini protetti specificati in Aggiungere domini **per proteggere**:
+     - **Se la posta elettronica** viene inviata da un dominio rappresentato: configurare una delle azioni seguenti per i messaggi in cui il dominio del mittente si trova in uno dei domini protetti specificati in Aggiungere domini per **proteggere**:
 
        - **Non applicare alcuna azione**
        - **Reindirizzare il messaggio ad altri indirizzi di posta elettronica**
-       - **Sposta messaggio nella cartella Posta indesiderata**
+       - **Spostare il messaggio nelle cartelle posta indesiderata dei destinatari**
        - **Mettere in quarantena il messaggio**
        - **Recapitare il messaggio e aggiungere altri indirizzi alla riga Ccn**
        - **Eliminare il messaggio prima che venga recapitato**
 
    - Fare **clic su Attiva suggerimenti per la sicurezza della rappresentazione** e configurare una delle impostazioni seguenti:
 
-     - **Mostra suggerimento per gli utenti rappresentati**: il valore predefinito è **Disattivato.** Per attivarlo, fai scorrere l'interruttore su **On.**
-     - **Show tip for impersonated domains**: The default value is **Off**. Per attivarlo, fai scorrere l'interruttore su **On.**
-     - **Mostra suggerimento per caratteri insoliti**: il valore predefinito è **Disattivato.** Per attivarlo, fai scorrere l'interruttore su **On.**
+     - **Mostra suggerimento per gli utenti impersonati**
+     - **Mostra suggerimento per i domini impersonati**
+     - **Mostra suggerimento per caratteri insoliti**
+
+     Il valore predefinito per tutti i suggerimenti è **Off** ![ Toggle ](../../media/scc-toggle-off.png) Off. Per attivarli, fai scorrere l'interruttore **su** [Attiva/Disattiva.](../../media/scc-toggle-on.png)
 
      Al termine, scegliere **Salva**.
 
    - **Intelligence delle cassette postali**:
 
-     - **Abilitare l'intelligence delle cassette postali?**: il valore predefinito è **On**. Per disattivarlo, fai scorrere l'interruttore su **Off.**
+     - **Enable mailbox intelligence?**: Il valore predefinito è **On** [Toggle On](../../media/scc-toggle-on.png). Per disattivarlo, fai scorrere l'interruttore su **Disattiva** ![ ](../../media/scc-toggle-off.png) Disattiva.
 
      - **Abilitare la protezione della rappresentazione basata sull'intelligence delle** cassette postali? : Questa impostazione è disponibile solo se **Abilita intelligence cassetta postale?** è **Attiva**. Attivare questa impostazione per specificare l'azione da eseguire sui messaggi per i rilevamenti di rappresentazione dai risultati dell'intelligence delle cassette postali.
 
@@ -226,7 +231,7 @@ Utilizzare le procedure seguenti per modificare i criteri anti-phishing: un nuov
 
        - Non applicare alcuna azione: si noti che questo valore ha lo stesso risultato dell'attivazione di Abilita intelligence cassetta **postale?** ma disattivando Abilita protezione della rappresentazione basata **sull'intelligence** delle cassette **postali?**.
        - **Reindirizzare il messaggio ad altri indirizzi di posta elettronica**
-       - **Sposta messaggio nella cartella Posta indesiderata**
+       - **Spostare il messaggio nelle cartelle posta indesiderata dei destinatari**
        - **Mettere in quarantena il messaggio**
        - **Recapitare il messaggio e aggiungere altri indirizzi alla riga Ccn**
        - **Eliminare il messaggio prima che venga recapitato**
@@ -253,18 +258,20 @@ Utilizzare le procedure seguenti per modificare i criteri anti-phishing: un nuov
 
    Al termine, fare clic su **Salva** in qualsiasi pagina.
 
-6. **Spoof**: **fare** clic su Modifica per attivare o disattivare l'intelligence spoofing, attivare o disattivare l'identificazione del mittente non autenticato in Outlook e configurare l'azione da applicare ai messaggi provenienti da mittenti falsificati bloccati. Per ulteriori informazioni, vedere [Spoofing settings in anti-phishing policies.](set-up-anti-phishing-policies.md#spoof-settings)
+6. **Spoof**:  fare clic su Modifica per attivare o disattivare l'intelligence spoofing, attivare o disattivare l'identificazione del mittente non autenticato in Outlook e configurare l'azione da applicare ai messaggi provenienti da mittenti falsificati bloccati. Per ulteriori informazioni su queste impostazioni, vedere [Spoofing settings in anti-phishing policies.](set-up-anti-phishing-policies.md#spoof-settings)
 
    Si noti che queste stesse impostazioni sono disponibili anche nei criteri anti-phishing in EOP.
 
-   - **Impostazioni del filtro di spoofing**: il valore predefinito è **On** e si consiglia di lasciarlo. Per disattivarlo, fai scorrere l'interruttore su **Off.** Per ulteriori informazioni, vedere [Configure spoof intelligence in EOP.](learn-about-spoof-intelligence.md)
+   - **Impostazioni filtro spoofing**: utilizzare l'impostazione **Abilita spoof intelligence?** per attivare o disattivare l'intelligence spoofing. Il valore predefinito è **On** e si consiglia di lasciarlo. Per disattivarlo, fai scorrere l'interruttore su **Disattiva** ![ ](../../media/scc-toggle-off.png) Disattiva.
 
      > [!NOTE]
-     > Non è necessario disabilitare la protezione anti-spoofing se il record MX non punta a Microsoft 365. si abilita invece il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+     > Non è necessario disattivare la protezione anti-spoofing se il record MX non punta a Microsoft 365; si abilita invece il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   - **Abilita funzionalità mittente non autenticato**: il valore predefinito è **Attivato.** Per disattivarlo, fai scorrere l'interruttore su **Off.**
+   - **Impostazioni mittente non autenticato**: è possibile configurare le impostazioni seguenti:
+     - Abilitare il simbolo del punto interrogativo **(?)** del mittente non autenticato? : aggiungere un punto interrogativo alla foto del mittente  nella casella Da di Outlook se il messaggio non supera i controlli SPF o DKIM e il messaggio non supera L'autenticazione composita o DMARC. [](email-validation-and-authentication.md#composite-authentication) Il valore predefinito è **Attivato**. Per disattivarlo, fai scorrere l'interruttore su **Disattiva** ![ ](../../media/scc-toggle-off.png) Disattiva.
+     - **Abilitare il tag "via"?**: aggiungere il tag via (chris@contoso.com tramite fabrikam.com) se l'indirizzo di posta elettronica nella casella Da è diverso dal dominio nella firma DKIM o nell'indirizzo **MAIL FROM.** Il valore predefinito è **Attivato**. Per disattivarlo, fai scorrere l'interruttore su **Disattiva** ![ ](../../media/scc-toggle-off.png) Disattiva.
 
-   - **Azioni**: specificare l'azione da eseguire sui messaggi che non riescono a spoof intelligence:
+   - **Azioni**: specificare l'azione da eseguire sui messaggi provenienti da mittenti falsificati bloccati:
 
      **Se la posta elettronica viene inviata da un utente a cui non è consentito effettuare lo spoofing del dominio:**
 
@@ -275,12 +282,13 @@ Utilizzare le procedure seguenti per modificare i criteri anti-phishing: un nuov
 
      - È possibile fare **clic su** Modifica in ogni sezione per tornare alla pagina pertinente.
      - È possibile attivare o **disattivare** le impostazioni seguenti **direttamente** in questa pagina:
-       - **Abilitare la protezione antispoofing**
-       - **Abilitare la funzionalità Mittente non autenticato**
+       - **Impostazioni di filtro spoofing**
+       - **Impostazioni mittente non autenticato**
+       - **Azioni**
 
    Al termine, fare clic su **Salva** in qualsiasi pagina.
 
-7. **Impostazioni avanzate**: fare clic **su Modifica** per configurare le soglie di phishing avanzate. Per ulteriori informazioni, vedere [Soglie avanzate di phishing nei criteri anti-phishing in Microsoft Defender per Office 365.](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+7. **Impostazioni avanzate**: fare clic **su Modifica** per configurare le soglie di phishing avanzate. Per ulteriori informazioni, vedere [Soglie avanzate di phishing nei criteri anti-phishing in Microsoft Defender per Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
    - **Soglie di phishing avanzate**: selezionare uno dei valori seguenti:
 
@@ -295,11 +303,11 @@ Utilizzare le procedure seguenti per modificare i criteri anti-phishing: un nuov
 
 8. Tornare alla pagina **Modifica i \<Name\> criteri,** rivedere le impostazioni e quindi fare clic su **Chiudi.**
 
-### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy-in-microsoft-defender-for-office-365"></a>Usare il Centro sicurezza & conformità per modificare i criteri anti-phishing predefiniti in Microsoft Defender per Office 365
+### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy-in-microsoft-defender-for-office-365"></a>Utilizzare il Centro sicurezza & conformità per modificare il criterio anti-phishing predefinito in Microsoft Defender per Office 365
 
 Il criterio anti-phishing predefinito in Microsoft Defender per Office 365 è denominato Office365 AntiPhish Default e non viene visualizzato nell'elenco dei criteri. Per modificare il criterio anti-phishing predefinito, eseguire la procedura seguente:
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **ATP anti-phishing.**
+1. Nel Centro sicurezza & conformità passare a **Gestione** delle minacce \> **Criteri** \> **Anti-phishing.**
 
 2. Nella pagina **Anti-phishing** fare clic su **Criterio predefinito.**
 
@@ -319,13 +327,13 @@ Il criterio anti-phishing predefinito in Microsoft Defender per Office 365 è de
 
 ### <a name="enable-or-disable-custom-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Abilitare o disabilitare i criteri anti-phishing personalizzati in Microsoft Defender per Office 365
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **ATP anti-phishing.**
+1. Nel Centro sicurezza & conformità passare a **Gestione** delle minacce \> **Criteri** \> **Anti-phishing.**
 
 2. Notare il valore nella **colonna** Stato:
 
-   - Fai scorrere **l'interruttore su Off** per disabilitare il criterio.
+   - Fai scorrere l'interruttore **su Disattiva** Disattiva ![ per ](../../media/scc-toggle-off.png) disabilitare il criterio.
 
-   - Fai scorrere **l'interruttore su Attivato** per abilitare il criterio.
+   - Fai scorrere l'interruttore **su** ![ Attiva/Disattiva ](../../media/scc-toggle-on.png) per abilitare il criterio.
 
 Non è possibile disabilitare il criterio anti-phishing predefinito.
 
@@ -341,7 +349,7 @@ I criteri anti-phishing personalizzati vengono visualizzati nell'ordine in cui v
 
 Per modificare la priorità di  un criterio, fare clic su Aumenta priorità o Riduci  priorità nelle proprietà del criterio (non è possibile modificare direttamente il numero di priorità nel Centro sicurezza & conformità).  La modifica della priorità di un criterio ha senso solo se si dispone di più criteri.
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **ATP anti-phishing.**
+1. Nel Centro sicurezza & conformità passare a **Gestione** delle minacce \> **Criteri** \> **Anti-phishing.**
 
 2. Selezionare il criterio che si desidera modificare. Se è già selezionato, deselezionalo e selezionalo di nuovo.
 
@@ -359,9 +367,9 @@ Per modificare la priorità di  un criterio, fare clic su Aumenta priorità o Ri
 
 ## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Usare il Centro sicurezza & conformità per visualizzare i criteri anti-phishing in Microsoft Defender per Office 365
 
-1. Nel Centro sicurezza & conformità e passare a **Gestione** delle minacce \>  \> **Criteri ATP anti-phishing**.
+1. Nel Centro sicurezza & conformità e passare a **Gestione** delle minacce \> **Criteri** \> **Anti-phishing**.
 
-2. Eseguire una delle operazioni seguenti:
+2. Esegui uno dei seguenti passaggi:
 
    - Selezionare un criterio anti-phishing personalizzato che si desidera visualizzare. Se è già selezionato, deselezionalo e selezionalo di nuovo.
 
@@ -371,7 +379,7 @@ Per modificare la priorità di  un criterio, fare clic su Aumenta priorità o Ri
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Usare il Centro sicurezza & conformità per rimuovere i criteri anti-phishing in Microsoft Defender per Office 365
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **ATP anti-phishing.**
+1. Nel Centro sicurezza & conformità passare a **Gestione** delle minacce \> **Criteri** \> **Anti-phishing.**
 
 2. Selezionare il criterio che si desidera rimuovere. Se è già selezionato, deselezionalo e selezionalo di nuovo.
 
@@ -379,11 +387,11 @@ Per modificare la priorità di  un criterio, fare clic su Aumenta priorità o Ri
 
 Non è possibile rimuovere il criterio predefinito.
 
-## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Utilizzare PowerShell di Exchange Online per configurare i criteri anti-phishing in Microsoft Defender per Office 365
+## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Usare Exchange Online PowerShell per configurare i criteri anti-phishing in Microsoft Defender per Office 365
 
 Come descritto in precedenza, un criterio di protezione da posta indesiderata è costituito da un criterio anti-phish e da una regola anti-phish.
 
-In PowerShell di Exchange Online, la differenza tra i criteri anti-phish e le regole anti-phish è evidente. È possibile gestire i criteri anti-phish utilizzando i cmdlet **\* -AntiPhishPolicy** e gestire le regole anti-phish utilizzando i cmdlet **\* -AntiPhishRule.**
+In Exchange Online PowerShell, è evidente la differenza tra i criteri anti-phish e le regole anti-phish. È possibile gestire i criteri anti-phish utilizzando i cmdlet **\* -AntiPhishPolicy** e gestire le regole anti-phish utilizzando i cmdlet **\* -AntiPhishRule.**
 
 - In PowerShell, si crea prima il criterio anti-phish, quindi si crea la regola anti-phish che identifica il criterio a cui si applica la regola.
 - In PowerShell, le impostazioni dei criteri anti-phish e della regola anti-phish vengono modificate separatamente.
@@ -619,14 +627,14 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Remove-Anti
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
-Per verificare la corretta configurazione dei criteri anti-phishing in Microsoft Defender per Office 365, eseguire una delle operazioni seguenti:
+Per verificare di aver configurato correttamente i criteri anti-phishing in Microsoft Defender per Office 365, eseguire una delle operazioni seguenti:
 
-- Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **ATP anti-phishing.** Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare ulteriori dettagli, eseguire una delle operazioni seguenti:
+- Nel Centro sicurezza & conformità passare a **Gestione** delle minacce \> **Criteri** \> **Anti-phishing.** Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare ulteriori dettagli, eseguire una delle operazioni seguenti:
 
   - Selezionare il criterio nell'elenco e visualizzare i dettagli nel riquadro a comparsa.
   - Fare **clic su** Criterio predefinito e visualizzare i dettagli nel riquadro a comparsa.
 
-- In PowerShell di Exchange Online, sostituire con il nome del criterio o della regola ed eseguire \<Name\> il comando seguente e verificare le impostazioni:
+- In Exchange Online PowerShell, sostituire con il nome del criterio o della regola ed eseguire il \<Name\> comando seguente e verificare le impostazioni:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

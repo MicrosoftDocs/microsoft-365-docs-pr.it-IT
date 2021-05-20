@@ -1,7 +1,7 @@
 ---
-title: API per gli eventi imprevisti di aggiornamento
-description: Scopri come aggiornare gli eventi imprevisti con Microsoft 365 Defender API
-keywords: aggiornamento, api, evento imprevisto
+title: Aggiornare l'API degli incidenti
+description: Informazioni su come aggiornare gli incidenti utilizzando l'API Microsoft 365 Defender
+keywords: aggiornamento, api, incidente
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: e3f3919d067078ef1fd1e116dc52e8a73c0726d9
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107605"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571782"
 ---
-# <a name="update-incidents-api"></a>API per gli eventi imprevisti di aggiornamento
+# <a name="update-incident-api"></a>Aggiornare l'API degli incidenti
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,26 +40,26 @@ ms.locfileid: "52107605"
 
 ## <a name="api-description"></a>Descrizione API
 
-Aggiorna le proprietà dell'evento imprevisto esistente. Le proprietà aggiornabili sono: ```status``` , , , e ```determination``` ```classification``` ```assignedTo``` ```tags``` .
+Aggiorna le proprietà dell'incidente esistente. Le proprietà aggiornabili sono: ```status``` , , , , e ```determination``` ```classification``` ```assignedTo``` ```tags``` ```comments``` .
 
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Quote, allocazione delle risorse e altri vincoli
 
-1. È possibile effettuare fino a 50 chiamate al minuto o 1500 chiamate all'ora prima di ottenere la soglia di limitazione.
-2. È possibile impostare `determination` la proprietà solo se è `classification` impostata su TruePositive.
+1. È possibile effettuare fino a 50 chiamate al minuto o 1500 chiamate all'ora prima di raggiungere la soglia di limitazione.
+2. È possibile impostare la `determination` proprietà solo se è `classification` impostata su TruePositive.
 
-Se la richiesta viene limitato, restituirà un codice `429` di risposta. Il corpo della risposta indicherà l'ora in cui è possibile iniziare a effettuare nuove chiamate.
+Se la richiesta è limitata, restituirà un codice `429` di risposta. Il corpo della risposta indicherà l'ora in cui è possibile iniziare a effettuare nuove chiamate.
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, [vedi Accedere alle API Microsoft 365 Defender](api-access.md).
+Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per ulteriori informazioni, incluso come scegliere le autorizzazioni, [vedere Accedere alle API Microsoft 365 Defender](api-access.md).
 
 Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 -|-|-
-Applicazione | Incident.ReadWrite.All | Lettura e scrittura di tutti gli eventi imprevisti
-Delegato (account aziendale o dell'istituto di istruzione) | Incident.ReadWrite | Eventi imprevisti di lettura e scrittura
+Applicazione | Incident.ReadWrite.All | Leggere e scrivere tutti gli incidenti
+Delegato (account aziendale o dell'istituto di istruzione) | Incident.ReadWrite | Leggere e scrivere incidenti
 
 > [!NOTE]
-> Quando si ottiene un token utilizzando le credenziali utente, l'utente deve disporre dell'autorizzazione per aggiornare l'evento imprevisto nel portale.
+> Quando si ottiene un token utilizzando le credenziali utente, l'utente deve avere l'autorizzazione per aggiornare l'incidente nel portale.
 
 ## <a name="http-request"></a>Richiesta HTTP
 
@@ -71,28 +71,29 @@ PATCH /api/incidents/{id}
 
 Name | Tipo | Descrizione
 -|-|-
-Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**.
-Content-Type | Stringa | application/json. **Obbligatorio**.
+Autorizzazione | Stringa | Portatore {token}. **Obbligatorio**.
+Content-Type | Stringa | domanda/json. **Obbligatorio**.
 
 ## <a name="request-body"></a>Corpo della richiesta
 
-Nel corpo della richiesta specificare i valori per i campi da aggiornare. Le proprietà esistenti non incluse nel corpo della richiesta manterranno i relativi valori, a meno che non sia necessario ricalcolarne il ricalcolo a causa di modifiche ai valori correlati. Per ottenere prestazioni ottimali, è consigliabile omettere i valori esistenti che non sono stati modificati.
+Nel corpo della richiesta fornire i valori per i campi da aggiornare. Le proprietà esistenti che non sono incluse nel corpo della richiesta manterranno i relativi valori, a meno che non rocali a causa di modifiche ai valori correlati. Per ottenere prestazioni ottimali, è necessario omettere i valori esistenti che non sono stati modificati.
 
 Proprietà | Tipo | Descrizione
 -|-|-
-status | Enum | Specifica lo stato corrente dell'evento imprevisto. I valori possibili sono: ```Active``` ```Resolved``` , e ```Redirected``` .
-assignedTo | stringa | Proprietario dell'evento imprevisto.
-classificazione | Enum | Specifica dell'evento imprevisto. I valori possibili sono: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
-determinazione | Enum | Specifica la determinazione dell'evento imprevisto. I valori possibili sono: ```NotAvailable``` , , , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` .
-tag | string List | Elenco di tag Evento imprevisto.
+stato | Enum | Specifica lo stato corrente dell'incidente. I valori possibili sono: ```Active``` ```Resolved``` , e ```Redirected``` .
+assegnatoA | stringa | Proprietario dell'incidente.
+classificazione | Enum | Specifica dell'incidente. I valori possibili sono: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
+determinazione | Enum | Specifica la determinazione dell'incidente. I valori possibili sono: ```NotAvailable``` , , , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` .
+Tag | elenco di stringhe | Elenco di tag Incidente.
+commento | stringa | Commento da aggiungere all'incidente.
 
 ## <a name="response"></a>Risposta
 
-Se ha esito positivo, questo metodo restituisce `200 OK` . Il corpo della risposta conterrà l'entità evento imprevisto con proprietà aggiornate. Se non è stato trovato un evento imprevisto con l'ID specificato, il metodo restituisce `404 Not Found` .
+In caso di esito positivo, questo metodo restituisce `200 OK` . Il corpo della risposta conterrà l'entità incidente con proprietà aggiornate. Se non è stato trovato un incidente con l'ID specificato, il metodo restituisce `404 Not Found` .
 
 ## <a name="example"></a>Esempio
 
-**Richiesta**
+**richiesta**
 
 Ecco un esempio della richiesta.
 
@@ -100,7 +101,7 @@ Ecco un esempio della richiesta.
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
 
-**Risposta**
+**risposta**
 
 ```json
 {
@@ -108,15 +109,27 @@ Ecco un esempio della richiesta.
     "assignedTo": "secop2@contoso.com",
     "classification": "TruePositive",
     "determination": "Malware",
-    "tags": ["Yossi's playground", "Don't mess with the Zohan"]
+    "tags": ["Yossi's playground", "Don't mess with the Zohan"],
+    "comments": [
+          {
+              "comment": "pen testing",
+              "createdBy": "secop2@contoso.com",
+              "createdTime": "2021-05-02T09:34:21.5519738Z"
+          },
+          {
+              "comment": "valid incident",
+              "createdBy": "secop2@contoso.comt",
+              "createdTime": "2021-05-02T09:36:27.6652581Z"
+          }
+      ]
 }
 ```
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Accedere alle API di Microsoft 365 Defender](api-access.md)
-- [Informazioni sui limiti delle API e sulle licenze](api-terms.md)
-- [Comprendere i codici di errore](api-error-codes.md)
+- [Accedere alle API Microsoft 365 Defender](api-access.md)
+- [Informazioni sui limiti e le licenze delle API](api-terms.md)
+- [Informazioni i codici di errore](api-error-codes.md)
 - [Incidenti delle API](api-incident.md)
 - [Elencare incidenti](api-list-incidents.md)
 - [Panoramica degli eventi imprevisti](incidents-overview.md)

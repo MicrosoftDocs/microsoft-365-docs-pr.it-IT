@@ -1,7 +1,7 @@
 ---
-title: Analizzare gli utenti in Microsoft 365 Defender
-description: Analizzare gli utenti per individuare un incidente nel centro Microsoft 365 sicurezza.
-keywords: sicurezza, malware, Microsoft 365, M365, centro sicurezza, monitorare, segnalare, identità, dati, dispositivi, app, eventi imprevisti, analizzare, risposta
+title: Indagare sugli utenti Microsoft 365 Defender
+description: Indagare sugli utenti per un incidente nel centro Microsoft 365 sicurezza di 200.
+keywords: sicurezza, malware, Microsoft 365, M365, centro sicurezza, monitorare, segnalare, identità, dati, dispositivi, app, incidente, analizzare, rispondere
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7084b9370a0dd83265b37ff1d152e2164fe32813
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 72eb111da2f342b78aa6161c7334a7252314b4a5
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539132"
+ms.locfileid: "52572802"
 ---
-# <a name="investigate-users-in-microsoft-365-defender"></a>Analizzare gli utenti in Microsoft 365 Defender
+# <a name="investigate-users-in-microsoft-365-defender"></a>Indagare sugli utenti Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,43 +34,43 @@ ms.locfileid: "52539132"
 
 - Microsoft 365 Defender
 
-Parte dell'indagine degli eventi imprevisti può includere account utente. Iniziare con la **scheda Utenti** per un evento imprevisto da **Eventi imprevisti & avvisi >** evento *>* **utenti**. 
+Parte dell'indagine sugli incidenti può includere account utente. Iniziare con la **scheda Utenti** per un incidente da Incidenti & **avvisi >** *incidente* **> Utenti**. 
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Esempio di pagina Utenti per un evento imprevisto":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Esempio di pagina Utenti per un incidente":::
 
-Per ottenere un breve riepilogo di un account utente per l'evento imprevisto, selezionare il segno di spunta accanto al nome dell'account utente. Di seguito viene riportato un esempio.
+Per ottenere un breve riepilogo di un account utente per l'incidente, selezionare il segno di spunta accanto al nome dell'account utente. Di seguito viene riportato un esempio.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Esempio del riquadro di riepilogo dell'account utente per un evento imprevisto nel centro Microsoft 365 sicurezza":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Esempio del riquadro di riepilogo dell'account utente per un incidente nel centro Microsoft 365 sicurezza di applicazione":::
 
 > [!NOTE]
-> La pagina Utente mostra Azure Active Directory(AD) e i gruppi, consentendoti di comprendere i gruppi e le autorizzazioni associati a un utente.
+> La pagina Utente mostra Azure Active Directory organizzazione di Azure AD e gruppi, che consente di comprendere i gruppi e le autorizzazioni associati a un utente.
 
-In questa pagina a comparsa è possibile esaminare le informazioni sulle minacce degli utenti, inclusi eventuali eventi imprevisti correnti, avvisi attivi e livello di rischio, nonché l'esposizione degli utenti, gli account, i dispositivi e altro ancora.
+In questa pagina a comparsa è possibile esaminare le informazioni sulle minacce degli utenti, inclusi eventuali incidenti correnti, avvisi attivi e livello di rischio, nonché l'esposizione degli utenti, account, dispositivi e altro ancora.
 
-Inoltre, è possibile eseguire un'azione direttamente nel centro sicurezza Microsoft 365 per risolvere un utente compromesso, confermando che l'utente è compromesso o richiedendo loro di accedere di nuovo.
+Inoltre, è possibile intervenire direttamente nel centro sicurezza Microsoft 365 per rivolgersi a un utente compromesso, confermando che l'utente è compromesso o richiedendo loro di accedere di nuovo.
 
-Da qui puoi selezionare **Vai alla pagina utente** per visualizzare i dettagli di un account utente. Di seguito viene riportato un esempio.
+Da qui, è possibile selezionare **Vai alla pagina utente** per visualizzare i dettagli di un account utente. Di seguito viene riportato un esempio.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Esempio di pagina dell'account utente per un evento imprevisto nel centro sicurezza Microsoft 365 sicurezza":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Esempio della pagina dell'account utente per un incidente nel centro Microsoft 365 sicurezza di applicazione":::
 
-Puoi anche visualizzare questa pagina selezionando il nome dell'account utente nell'elenco nella **pagina** Utenti.
+È inoltre possibile visualizzare questa pagina selezionando il nome dell'account utente dall'elenco nella **pagina** Utenti.
 
-La Microsoft 365 utente del Centro sicurezza e sicurezza combina le informazioni di Microsoft Defender per Endpoint, Microsoft Defender per l'identità e Microsoft Cloud App Security (a seconda delle licenze di cui si dispone). 
+La Microsoft 365 utente del Centro sicurezza locale combina le informazioni di Microsoft Defender for Endpoint, Microsoft Defender for Identity e Microsoft Cloud App Security (a seconda delle licenze in diserti). 
 
-In questa pagina vengono visualizzate informazioni specifiche del rischio per la sicurezza di un account utente. Include un punteggio che consente di valutare i rischi e gli eventi e gli avvisi recenti che hanno contribuito al rischio complessivo dell'utente.
+Questa pagina mostra informazioni specifiche del rischio per la sicurezza di un account utente. Ciò include un punteggio che aiuta a valutare il rischio e gli eventi e gli avvisi recenti che hanno contribuito al rischio complessivo dell'utente.
 
-Da questa pagina puoi eseguire queste azioni aggiuntive: 
+Da questa pagina è possibile eseguire queste azioni aggiuntive: 
 
 - Contrassegnare l'account utente come compromesso
-- Richiedere all'utente di eseguire di nuovo l'accesso
+- Richiedere all'utente di accedere di nuovo
 - Sospendere l'account utente
-- Vedere le impostazioni Azure Active Directory (Azure AD) dell'account utente
+- Visualizzare le impostazioni Azure Active Directory account utente di Azure AD (Azure AD)
 - Visualizzare i file di proprietà dell'account utente
-- Visualizzare i file condivisi con questo utente. 
+- Visualizzare i file condivisi con l'utente. 
 
 Di seguito viene riportato un esempio.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Esempio di azioni su un account utente per un evento imprevisto nel centro sicurezza Microsoft 365 sicurezza":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Esempio delle azioni su un account utente per un incidente nel centro Microsoft 365 sicurezza di sicurezza":::
 
 
 <!--
@@ -82,7 +82,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In base alle esigenze per gli eventi imprevisti in-process, continuare [l'indagine.](investigate-incidents.md)
+Se necessario per gli incidenti in corso, continuare [l'indagine](investigate-incidents.md).
 
 ## <a name="see-also"></a>Vedere anche
 

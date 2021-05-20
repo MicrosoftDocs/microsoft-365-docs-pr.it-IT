@@ -2,22 +2,23 @@
 title: Informazioni di pagamento per la Svizzera
 f1.keywords:
 - NOCSH
-author: cmcatee-MSFT
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 80f4c52417c0e3fe3a7a501ec55f2e45a8105afc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 60f0965bce53e462ede98622323a88bfbeb1b490
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272781"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537776"
 ---
 # <a name="payment-information-for-switzerland"></a>Informazioni di pagamento per la Svizzera
 
@@ -29,18 +30,18 @@ ms.locfileid: "52272781"
 
 Se si dispone di una fattura fatturata da **Microsoft Ireland Operations Limited,** utilizzare queste informazioni bancarie:
 
-Bank: Citibank, London\
-Codice SWIFT: CITIGB2L\
-Codice IBAN: GB44CITI18500812207648\
-Numero account: 12207648\
-Nome account: MICROSOFT
+**Banca:** Citibank, Londra  
+**Codice SWIFT:** CITIGB2L  
+**Codice IBAN:** GB44CITI18500812207648  
+**Numero account:** 12207648  
+**Nome account:** MICROSOFT
 
 Se si dispone di una fattura fatturata da **Microsoft Schweiz GmbH** per ordini e consumi a partire dal 1° marzo 2021, utilizzare queste informazioni bancarie:
 
-Banca: Citibank Europe plc\
-Codice SWIFT: CITIIE2X\
-Codice IBAN: IE59CITI99005170000132\
-Numero account: 70000132\
-Nome account: MICROSOFT
+**Banca:** Citibank Europe plc  
+**Codice SWIFT:** CITIIE2X  
+**Codice IBAN:** IE59CITI99005170000132  
+**Numero account:** 70000132  
+**Nome account:** MICROSOFT
 
 Le fatture emesse da una filiale Microsoft locale vengono emesse con l'aliquota standard dell'IVA/IVA/GST e ritenute una fornitura nazionale di servizi ai fini dell'IVA/IVA/GST.

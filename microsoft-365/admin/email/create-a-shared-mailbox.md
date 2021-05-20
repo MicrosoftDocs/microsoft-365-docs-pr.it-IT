@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915879"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537608"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
@@ -38,7 +38,7 @@ ms.locfileid: "50915879"
 
 Le cassette postali condivise consentono a un gruppo di persone di monitorare e inviare posta elettronica da un indirizzo di posta elettronica comune, come info@contoso.com. Quando un utente del gruppo risponde a un messaggio inviato alla cassetta postale condivisa, il messaggio di risposta sembrerà inviato dalla cassetta postale condivisa, non dal singolo utente.
 
-Le cassette postali condivise includono un calendario condiviso. Sono molte le piccole aziende che trovano utile usare un calendario condiviso come posizione centralizzata in cui tutti possono inserire i propri appuntamenti. Ad esempio, se un'azienda ha 3 persone che effettuano visite presso clienti, tutte e tre possono usare il calendario condiviso per immettere gli appuntamenti. È un modo semplice per tenersi informati sulle reciproche posizioni.
+Le cassette postali condivise includono un calendario condiviso. Sono molte le piccole aziende che trovano utile usare un calendario condiviso come posizione centralizzata in cui tutti possono inserire i propri appuntamenti. Ad esempio, se un'azienda ha 3 persone che effettuano visite presso clienti, tutte e tre possono usare il calendario condiviso per inserire gli appuntamenti. È un modo semplice per tenersi informati sulle reciproche posizioni.
 
 Prima di creare una cassetta postale condivisa, leggere [Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) per altre informazioni.
 
@@ -190,7 +190,7 @@ Per ulteriori informazioni sulle cassette postali condivise in Outlook, vedere:
 
 ## <a name="use-the-shared-calendar"></a>Usare il calendario condiviso
 
-Dopo aver creato la cassetta postale condivisa, viene creato automaticamente un calendario condiviso. Il calendario della cassetta postale condivisa viene in genere preferito a un calendario di SharePoint per tenere traccia degli appuntamenti e della posizione delle persone. Un calendario condiviso è integrato in Outlook ed è molto più facile da usare rispetto a un calendario di SharePoint.
+Il calendario della cassetta postale condivisa viene in genere preferito a un calendario di SharePoint per tenere traccia degli appuntamenti e della posizione delle persone. Un calendario condiviso è integrato con Outlook, genera promemoria ed è molto più facile da creare e usare rispetto a un calendario di SharePoint.
 
 1. Nell'app Outlook passare alla visualizzazione Calendario e selezionare la cassetta postale condivisa.
 
@@ -198,14 +198,14 @@ Dopo aver creato la cassetta postale condivisa, viene creato automaticamente un 
 
 3. Qualsiasi membro della cassetta postale condivisa può creare, visualizzare e gestire gli appuntamenti nel calendario, come gli appuntamenti personali. Tutti i membri della cassetta postale condivisa possono vedere le modifiche apportate al calendario condiviso.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Informazioni sulle cassette postali condivise](about-shared-mailboxes.md)
+[Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) (articolo)
 
-[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md)
+[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md) (articolo)
 
-[Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md)
+[Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md) (articolo)
 
-[Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md)
+[Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md) (articolo)
 
-[Risolvere i problemi relativi alle cassette postali condivise](resolve-issues-with-shared-mailboxes.md)
+[Risolvere i problemi relativi alle cassette postali condivise](resolve-issues-with-shared-mailboxes.md) (articolo)

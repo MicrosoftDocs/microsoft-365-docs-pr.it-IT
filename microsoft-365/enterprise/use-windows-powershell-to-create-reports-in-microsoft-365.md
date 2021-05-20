@@ -15,36 +15,36 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: "Riepilogo: usare PowerShell per Microsoft 365 per creare report che non è possibile produrre nell'interfaccia di amministrazione di Microsoft 365."
-ms.openlocfilehash: dc183ae8a315bf788befc85474d0647802ac91ee
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: "Riepilogo: utilizzare PowerShell per Microsoft 365 per creare report che non è possibile produrre nell'interfaccia di amministrazione Microsoft 365 di amministrazione."
+ms.openlocfilehash: 9e3b90dcdd32f80125175ad2e15a852db51e17f8
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222780"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572742"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Usare PowerShell per creare report per Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Nell'interfaccia di amministrazione di Microsoft 365 sono disponibili molti report diversi. Tuttavia, questi report forniscono solo così tante informazioni e a volte ne servono di più. Questo è il momento in cui è necessario PowerShell per Microsoft 365.
+Molti report diversi sono disponibili nell'interfaccia Microsoft 365 amministrazione. Ma questi rapporti forniscono solo così tante informazioni e a volte ne hai bisogno di più. È allora che hai bisogno di PowerShell per Microsoft 365.
   
-Questi articoli descrivono come usare PowerShell per Microsoft 365 per ottenere informazioni dal tenant di Microsoft 365:
+In questi articoli viene descritto come utilizzare PowerShell per Microsoft 365 per ottenere informazioni dal tenant Microsoft 365 utente:
   
-- Introduzione alla creazione di report con PowerShell per Microsoft 365:
+- Introduzione alla creazione di report tramite PowerShell per Microsoft 365:
     
   - [Perché è necessario usare PowerShell per Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - Report degli account utente e delle licenze:
     
-  - [Visualizzare le licenze e i servizi di Microsoft 365 con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
+  - [Visualizzare Microsoft 365 licenze e servizi con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-  - [Visualizzare gli utenti con licenza e senza licenza di Microsoft 365 con PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
+  - [Visualizzare Microsoft 365 utenti con licenza e senza licenza con PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
     
-  - [Visualizzare i dettagli del servizio e della licenza dell'account di Microsoft 365 con PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+  - [Visualizzare Microsoft 365 della licenza dell'account e del servizio con PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-  - [Visualizzare gli account utente di Microsoft 365 con PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
+  - [Visualizzare Microsoft 365 account utente con PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
     
 - Report di SharePoint Online:
     
@@ -54,10 +54,10 @@ Questi articoli descrivono come usare PowerShell per Microsoft 365 per ottenere 
     
 - Report di Exchange Online:
     
-  - [Utilizzare PowerShell di Exchange Online per visualizzare la cassetta postale](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
+  - [Utilizzare Exchange Online PowerShell per visualizzare la cassetta postale](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     
     
-## <a name="related-articlesl"></a>Articoli correlati
+## <a name="related-articles"></a>Articoli correlati
 
 [Gestire Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   

@@ -21,38 +21,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Informazioni su come impostare alcune password utente individuali in modo che non scada mai, usando Windows PowerShell.
-ms.openlocfilehash: c70fce1c3ea9cb1dea66982a27ddb24e2b2de255
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: Accedi al tuo account Microsoft 365 amministratore per impostare alcune singole password utente in modo che non scadano mai usando Windows PowerShell.
+ms.openlocfilehash: 0747e0bfe8a7389db554d5d6a7f685605e013306
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222065"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571926"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Impostare la password di un singolo utente in modo che non scada mai
 
-In questo articolo viene illustrato come impostare una password per un singolo utente in modo che non scada. È necessario completare questi passaggi con PowerShell.
+In questo articolo viene illustrato come impostare una password per la scadenza di un singolo utente. È necessario completare questi passaggi utilizzando PowerShell.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview). 
+Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../../business-video/admin-center-overview.md). 
 
-Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un amministratore globale o un amministratore delle password.
+Per eseguire questa [procedura, è necessario essere un amministratore globale](about-admin-roles.md) o un amministratore di password.
 
-Un amministratore globale per un servizio cloud Microsoft può usare [Azure Active Directory PowerShell per Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) per impostare password che non scadono per utenti specifici. È inoltre possibile utilizzare i cmdlet [di AzureAD](/powershell/module/Azuread) per rimuovere la configurazione senza scadenza o per vedere quali password utente sono impostate per non scadere mai.
+Un amministratore globale per un servizio cloud Microsoft può utilizzare [Azure Active Directory PowerShell per Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) impostare le password per non scadere per utenti specifici. È inoltre possibile usare i cmdlet [di AzureAD](/powershell/module/Azuread) per rimuovere la configurazione non scade mai o per vedere quali password utente sono impostate per non scadere mai.
 
-Questa guida si applica ad altri provider, come Intune e Microsoft 365, che si basano anche su Azure AD per i servizi di identità e directory. La scadenza della password è l'unica parte del criterio che può essere modificata.
+Questa guida si applica ad altri provider, ad esempio Intune e Microsoft 365, che si basano anche su Azure AD per i servizi di identità e directory. La scadenza della password è l'unica parte del criterio che può essere modificata.
 
 > [!NOTE]
-> Solo le password per gli account utente non sincronizzati tramite la sincronizzazione della directory possono essere configurate in modo da non scadere. Per ulteriori informazioni sulla sincronizzazione della directory, vedere [Connect AD with Azure AD](/azure/active-directory/connect/active-directory-aadconnect).
+> Solo le password per gli account utente non sincronizzati tramite la sincronizzazione della directory possono essere configurate per non scadere. Per ulteriori informazioni sulla sincronizzazione della directory, [vedere Connessione Active Directory con Azure AD](/azure/active-directory/connect/active-directory-aadconnect).
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Come controllare i criteri di scadenza per una password
 
-Per ulteriori informazioni sul comando Get-AzureADUser nel modulo AzureAD, vedere l'articolo di riferimento [Get-AzureADUser.](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)
+Per ulteriori informazioni sul comando Get-AzureADUser nel modulo AzureAD, vedere l'articolo di riferimento [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
 
 Eseguire uno dei comandi riportati di seguito:
 
-- Per verificare se la password di un singolo utente è impostata in modo che non scada mai, eseguire il cmdlet seguente utilizzando l'UPN (ad *esempio, user@contoso.onmicrosoft.com*) o l'ID utente dell'utente che si desidera controllare:
+- Per verificare se la password di un singolo utente è impostata per non scadere mai, eseguire il cmdlet seguente utilizzando l'UPN ( *ad esempio, user@contoso.onmicrosoft.com*) o l'ID utente dell'utente che si desidera controllare:
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -68,7 +68,7 @@ Eseguire uno dei comandi riportati di seguito:
     }
     ```  
 
-- Per visualizzare **l'impostazione Nessuna scadenza** password per tutti gli utenti, eseguire il cmdlet seguente:
+- Per visualizzare **l'impostazione Password non scade** mai per tutti gli utenti, eseguire il cmdlet seguente:
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -76,7 +76,7 @@ Eseguire uno dei comandi riportati di seguito:
      }
     ```
 
-- Per ottenere un report di tutti gli utenti con PasswordNeverExpires in Html sul desktop dell'utente corrente con nome  **ReportPasswordNeverExpires.html**
+- Per ottenere un report di tutti gli utenti con PasswordNeverExpires in Html sul desktop dell'utente corrente con  **nomeReportPasswordNeverExpires.html**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -101,20 +101,20 @@ Run one of the following commands:
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
     ```
 
-- Per impostare le password di tutti gli utenti di un'organizzazione in modo che non scada mai, eseguire il cmdlet seguente:
+- Per impostare le password di tutti gli utenti di un'organizzazione in modo che non scadano mai, eseguire il cmdlet seguente:
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 > [!WARNING]
-> Gli account utente configurati con `-PasswordPolicies DisablePasswordExpiration` il parametro hanno ancora validità in base all'attributo. `pwdLastSet` In base all'attributo, se si modifica la scadenza in , tutte le password con `pwdLastSet` `-PasswordPolicies None` pwdLastSet precedenti a 90 giorni richiedono all'utente di modificarle al successivo accesso. Questa modifica può influire su un numero elevato di utenti.
+> Gli account utente configurati con il `-PasswordPolicies DisablePasswordExpiration` parametro invecchiano ancora in base `pwdLastSet` all'attributo. In base `pwdLastSet` all'attributo , se si modifica la scadenza `-PasswordPolicies None` in , tutte le password con pwdLastSet precedente a 90 giorni richiedono all'utente di modificarle al successivo accesso. Questa modifica può interessare un gran numero di utenti.
 
-### <a name="set-a-password-to-expire"></a>Impostare una password in modo che scada
+### <a name="set-a-password-to-expire"></a>Impostare una password per la scadenza
 
 Eseguire uno dei comandi riportati di seguito:
 
-- Per impostare la password di un utente in modo che scada, eseguire il cmdlet seguente utilizzando l'UPN o l'ID utente dell'utente:
+- Per impostare la password di un utente in modo che la password scada, eseguire il cmdlet seguente utilizzando l'UPN o l'ID utente dell'utente:
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None
@@ -128,6 +128,6 @@ Eseguire uno dei comandi riportati di seguito:
 
 ## <a name="related-content"></a>Contenuti correlati
 
-[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md)
+[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)
 
-[Reimpostare password](../add-users/reset-passwords.md)
+[Reimpostare la password](../add-users/reset-passwords.md) (articolo)

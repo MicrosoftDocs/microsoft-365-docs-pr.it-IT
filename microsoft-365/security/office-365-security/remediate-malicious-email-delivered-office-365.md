@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 202ebc8b79368c8d41fd3727b67359ddcb8a08fa
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a59b24cd29ab8bf3b9b08c7818813a7ab89f7ce2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206613"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537884"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Correggere i messaggi di posta elettronica dannosi recapitati in Office 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "51206613"
 La correzione significa eseguire un'azione prescritta contro una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere puliti dal sistema, tramite l'eliminazione automatica a zero ore (ZAP) o dai team di sicurezza tramite azioni di correzione come lo spostamento nella posta in *arrivo,* lo spostamento nella posta *indesiderata,* lo spostamento agli elementi *eliminati,* l'eliminazione reversa *o* l'eliminazione *permanente.* Microsoft Defender per Office 365 P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite indagini manuali e automatizzate.
 
 > [!NOTE]
-> Per correggere la posta elettronica dannosa, i team di sicurezza necessitano del ruolo di ricerca *ed eliminazione* assegnato. L'assegnazione di ruolo viene eseguita tramite le autorizzazioni nel Centro sicurezza e conformità.
+> Per correggere la posta elettronica dannosa, i team di sicurezza necessitano del ruolo di ricerca *ed eliminazione* assegnato. L'assegnazione di ruolo viene eseguita tramite le autorizzazioni nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Informazioni necessarie prima di iniziare
 
@@ -104,7 +104,7 @@ Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, inclusi il
   > [!NOTE]
   > Per ottenere risultati ottimali, è consigliabile eseguire la correzione in batch di 50.000 o meno.
 
-  Durante la correzione vengono agiti solo i messaggi di posta elettronica corretti. I messaggi di posta elettronica non correttibili non possono essere corretti dal sistema di posta elettronica di Office 365, poiché non vengono archiviati nelle cassette postali cloud.
+  Durante la correzione vengono agiti solo i messaggi di posta elettronica corretti. I messaggi di posta elettronica non correttibili non possono essere corretti dal Office 365 di posta elettronica, poiché non vengono archiviati nelle cassette postali cloud.
 
   Se necessario, gli amministratori possono eseguire azioni sui messaggi di posta elettronica in quarantena, ma tali messaggi scadranno dalla quarantena se non vengono eliminati manualmente. I messaggi di posta elettronica messi in quarantena a causa di contenuti dannosi non sono accessibili dagli utenti, quindi il personale di sicurezza non deve eseguire alcuna azione per eliminare le minacce in quarantena. Se i messaggi di posta elettronica sono locali o esterni, l'utente può essere contattato per risolvere il messaggio di posta elettronica sospetto. Oppure gli amministratori possono usare strumenti di sicurezza/server di posta elettronica separati per la rimozione. Questi messaggi di posta elettronica possono essere identificati applicando il percorso di recapito *= filtro esterno* locale in Threat Explorer. Per i messaggi di posta elettronica non riusciti o eliminati o non accessibili dagli utenti, non ci saranno messaggi di posta elettronica da mitigare, dal momento che questi messaggi non raggiungono la cassetta postale.
 

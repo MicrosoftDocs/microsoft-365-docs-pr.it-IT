@@ -18,12 +18,12 @@ ms.collection:
 description: Gli amministratori possono imparare a usare l'analizzatore di configurazione per trovare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di protezione standard e rigidi criteri di sicurezza predefiniti di protezione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65fd67c93711dc847a25be485b4b016af55e4a31
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fd0cf4f3194a7a8eec39f2d0c447dca2dae5948b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205064"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537932"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizzatore della configurazione per i criteri di protezione in EOP e Microsoft Defender per Office 365
 
@@ -38,13 +38,13 @@ L'analizzatore della configurazione nel Centro sicurezza & conformità offre una
 
 L'analizzatore di configurazione analizza i seguenti tipi di criteri:
 
-- **Criteri di Exchange Online Protection (EOP):** sono incluse le organizzazioni di Microsoft 365 con cassette postali di Exchange Online e le organizzazioni EOP autonome senza cassette postali di Exchange Online:
+- **Exchange Online Protection (EOP):** sono incluse Microsoft 365 con cassette postali Exchange Online e organizzazioni EOP autonome senza Exchange Online cassette postali:
 
   - [Criteri di protezione da posta indesiderata](configure-your-spam-filter-policies.md).
   - [Criteri antimalware](configure-anti-malware-policies.md).
   - [Criteri anti-phishing EOP](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Criteri di Microsoft Defender per Office 365**: sono incluse le organizzazioni con abbonamenti ai componenti aggiuntivi di Microsoft 365 E5 o Defender per Office 365:
+- **Microsoft Defender per Office 365** criteri : sono incluse le organizzazioni con Microsoft 365 E5 o Defender per Office 365 di componenti aggiuntivi:
 
   - Criteri anti-phishing in Microsoft Defender per Office 365, che includono:
 
@@ -56,7 +56,7 @@ L'analizzatore di configurazione analizza i seguenti tipi di criteri:
 
   - [Criteri allegati sicuri](set-up-safe-attachments-policies.md).
 
-I **valori delle** impostazioni dei criteri Standard e **Strict** utilizzati come baseline sono descritti in Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di [Office 365.](recommended-settings-for-eop-and-office365.md)
+I **valori delle** impostazioni dei criteri Standard e **Strict** utilizzati come baseline sono descritti in Impostazioni consigliate per EOP e Microsoft Defender per la Office 365 [sicurezza](recommended-settings-for-eop-and-office365.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -92,7 +92,7 @@ L'analizzatore della configurazione ha due schede principali:
 
 Per impostazione predefinita, la scheda viene aperta nel confronto con il profilo di protezione standard. È possibile passare al confronto del profilo di protezione Strict facendo clic **su Visualizza suggerimenti rigorosi.** Per tornare indietro, selezionare **Visualizza suggerimenti standard.**
 
-![Impostazioni e visualizzazione suggerimenti nell'analizzatore di configurazione](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![Impostazioni e suggerimenti nell'analizzatore di configurazione](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 Per impostazione predefinita, la colonna Nome **gruppo/impostazione** criteri contiene una visualizzazione compressa dei diversi tipi di criteri di sicurezza e del numero di impostazioni che devono essere migliorate (se presenti). I tipi di criteri sono:
 
@@ -124,7 +124,7 @@ Se il confronto non contiene suggerimenti per il miglioramento (verde), l'espans
 
 - **Last modified**: Data dell'ultima modifica del criterio.
 
-- **Suggerimenti**: valore dell'impostazione nel profilo di protezione Standard o Strict. Per modificare il valore dell'impostazione nel criterio in modo che corrisponda al valore consigliato nel profilo di protezione, fare clic su **Adotta**. Se la modifica ha esito positivo, verrà visualizzato il messaggio: **Raccomandazioni adottate correttamente.** Fare **clic su** Aggiorna per visualizzare il numero ridotto di suggerimenti e la rimozione della riga di impostazione/criterio specifica dai risultati.
+- **Consigli**: Valore dell'impostazione nel profilo di protezione Standard o Strict. Per modificare il valore dell'impostazione nel criterio in modo che corrisponda al valore consigliato nel profilo di protezione, fare clic su **Adotta**. Se la modifica ha esito positivo, verrà visualizzato il messaggio: Consigli **adottato correttamente**. Fare **clic su** Aggiorna per visualizzare il numero ridotto di suggerimenti e la rimozione della riga di impostazione/criterio specifica dai risultati.
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Scheda Analisi e cronologia della deriva della configurazione nell'analizzatore della configurazione
 
@@ -141,6 +141,6 @@ Per filtrare i risultati, selezionare **Filtro**. Nel riquadro **a** comparsa Fi
 - **Ora inizio** e **Ora fine** (data)
 - **Protezione standard** o **Protezione rigida**
 
-Per esportare i risultati in un file CSV, fare clic su **Esporta.**
+Per esportare i risultati in un file .csv, fare clic su **Esporta.**
 
 ![Analisi della deriva della configurazione e visualizzazione della cronologia nell'analizzatore della configurazione](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

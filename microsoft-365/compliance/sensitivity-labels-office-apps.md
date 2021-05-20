@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bca8efa15bdfe2f4b7c8c90e7a4706f40b19f85d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532051"
+ms.locfileid: "52572610"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -46,7 +46,7 @@ Le nuove versioni delle app di Office vengono rese disponibili in momenti divers
 > [!NOTE]
 > I nomi dei canali di aggiornamento per le app di Office sono stati modificati di recente. Ad esempio, il Canale mensile ora si chiama Canale corrente e Office Insider ora si chiama Canale beta. Per altre informazioni, vedere [Modifiche ai canali di aggiornamento per Microsoft 365 Apps](/deployoffice/update-channels-changes).
 
-Office per iOS e Office per Android: le etichette di riservatezza sono integrate nell'[app Office](https://www.microsoft.com/it-IT/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+Office per iOS e Office per Android: le etichette di riservatezza sono integrate nell'[app Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 Ulteriori funzionalità sono disponibili quando si installa il client di etichettatura unificata di Azure Information Protection, che è supportato solo nei computer Windows. Per informazioni in merito, vedere [Confrontare i client di etichettatura per i computer Windows](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -56,7 +56,7 @@ I numeri elencati indicano la versione minima delle applicazioni di Office neces
 
 |Funzionalità                                                                                                        |Windows |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
-|[Applicare, cambiare o rimuovere manualmente l'etichetta](https://support.microsoft.com/it-IT/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Applicare, cambiare o rimuovere manualmente l'etichetta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Applicare un'etichetta predefinita](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
 |[Richiedere una giustificazione per la modifica di un'etichetta.](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Fornire un collegamento a una pagina della Guida personalizzata.](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -80,7 +80,7 @@ I numeri elencati indicano la versione minima delle applicazioni di Office neces
 
 |Funzionalità                                                                                                        |Outlook per Windows |Outlook per Mac |Outlook su iOS |Outlook su Android |Outlook sul Web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[Applicare, cambiare o rimuovere manualmente l'etichetta](https://support.microsoft.com/it-IT/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
+|[Applicare, cambiare o rimuovere manualmente l'etichetta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Applicare un'etichetta predefinita](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Richiedere una giustificazione per la modifica di un'etichetta.](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Fornire un collegamento a una pagina della Guida personalizzata.](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
@@ -194,7 +194,7 @@ Per un'esperienza di creazione di etichette più coerente con un reporting signi
         - Le impostazioni di sicurezza delle chiavi *DisableEncryptOnly* e *DisableDoNotForward* documentate in [Impostare le preferenze per Outlook per Mac](/DeployOffice/mac/preferences-outlook)
     - Outlook sul web: 
         - Parametri *SimplifiedClientAccessDoNotForwardDisabled* e *SimplifiedClientAccessEncryptOnlyDisabled* documentati per [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
-        - Outlook per iOS e Android: queste app non supportano l'applicazione della crittografia senza etichette da parte degli utenti, quindi non è necessario disabilitare alcun elemento.
+    - Outlook per iOS e Android: queste app non supportano l'applicazione della crittografia senza etichette da parte degli utenti, quindi non è necessario disabilitare alcun elemento.
 
 > [!NOTE]
 > Se gli utenti rimuovono manualmente la crittografia da un documento etichettato archiviato in SharePoint o OneDrive e sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), la crittografia delle etichette verrà ripristinata automaticamente al successivo accesso o download del documento. 
@@ -438,8 +438,8 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
 
 ## <a name="end-user-documentation"></a>Documentazione per gli utenti finali
 
-- [Applicare le etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.microsoft.com/it-IT/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Problemi noti relativi alle etichette di riservatezza in Office](https://support.microsoft.com/it-IT/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Applicare le etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Problemi noti relativi alle etichette di riservatezza in Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [Applicare automaticamente o consigliare l'applicazione di etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Problemi noti con l'applicazione automatica o la raccomandazione delle etichette di riservatezza](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

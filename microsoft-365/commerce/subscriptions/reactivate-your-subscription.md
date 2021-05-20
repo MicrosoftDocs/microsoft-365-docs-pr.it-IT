@@ -19,22 +19,22 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Informazioni su come riattivare l'abbonamento alla scadenza, alla disabilitazione o all'annullamento.
+description: Gli amministratori possono riattivare un abbonamento alla scadenza, alla disattivazione o all'annullamento o all'annullamento nel bel mezzo di un periodo di abbonamento.
 ms.date: 04/07/2021
-ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538460"
+ms.locfileid: "52572514"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
-È possibile riattivare l'abbonamento nell'interfaccia di amministrazione se: l'abbonamento è scaduto, è stato disabilitato da Microsoft o se è stato annullato nel corso di un periodo di sottoscrizione.
+È possibile riattivare l'abbonamento nell'interfaccia di amministrazione se: l'abbonamento è scaduto, è stato disabilitato da Microsoft o se è stato annullato nel bel mezzo di un periodo di abbonamento.
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Per riattivare una sottoscrizione, devi essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+Per riattivare un abbonamento, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 **Se non si è un amministratore** Contattare l'amministrazione per riattivare l'abbonamento.
 
@@ -58,13 +58,13 @@ Per riattivare una sottoscrizione, devi essere un amministratore globale o di fa
 
 ::: moniker-end
 
-2. Nella scheda **Prodotti**, trovare l'abbonamento da riattivare. Seleziona i tre punti (altre azioni), quindi seleziona **Riattiva questa sottoscrizione**.\
-    Se l'opzione Riattiva **questa sottoscrizione** non è visualizzata, contattare [il supporto](../../business-video/get-help-support.md)tecnico.
+2. Nella scheda **Prodotti**, trovare l'abbonamento da riattivare. Selezionare i tre punti (altre azioni), quindi selezionare **Riattiva la sottoscrizione**.\
+    Se l'abbonamento non viene **riattivato, contattare** [il supporto tecnico](../../business-video/get-help-support.md).
 3. Nel riquadro **Riattiva l’abbonamento**, selezionare una modalità di pagamento nell'elenco a discesa oppure selezionare **Aggiungi modalità di pagamento**.
 4. Selezionare **Salva**.
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Provare o acquistare un abbonamento Microsoft 365 per le aziende](../try-or-buy-microsoft-365.md) (articolo)\
+[Provare o acquistare un Microsoft 365 per l'abbonamento aziendale](../try-or-buy-microsoft-365.md) (articolo)\
 [Rinnovare Microsoft 365 per le aziende](renew-your-subscription.md) (articolo)\
 [Annullare l'abbonamento](cancel-your-subscription.md) (articolo)

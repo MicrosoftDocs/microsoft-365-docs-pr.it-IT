@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Rimuovere la licenza da una cassetta postale condivisa per assegnarla a un altro utente. '
-ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332655"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537584"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Rimuovere una licenza da una cassetta postale condivisa
 
@@ -47,6 +47,20 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire ques
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
+
+::: moniker-end
+
    > [!NOTE]
    > È necessario rimuovere la licenza dalla pagina Utenti attivi. Non è possibile rimuovere la licenza dalla pagina Cassetta postale condivisa perché le licenze sono impostazioni utente.
   
@@ -59,46 +73,6 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire ques
 5. Quando si torna alla **pagina Utenti** attivi, lo stato della cassetta postale condivisa sarà **Senza licenza.**
 
 6. Stai ancora pagando la licenza. Per interrompere il pagamento, [rimuovi la licenza dall'abbonamento.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
-
-    > [!NOTE]
-    > È necessario rimuovere la licenza dalla pagina Utenti attivi. Non è possibile rimuovere la licenza dalla pagina Cassetta postale condivisa perché le licenze sono impostazioni utente.
-
-2. Selezionare la cassetta postale condivisa, quindi selezionare **Modifica** accanto a **Licenze prodotto.**
-
-3. Nella pagina **Licenze di** prodotto imposta l'interruttore su **Disattivato** per la licenza che vuoi rimuovere.
-
-4. Selezionare **Salva**.
-
-5. Quando si torna alla **pagina Utenti** attivi, lo stato della cassetta postale condivisa sarà **Senza licenza.**
-
-6. Stai ancora pagando la licenza. Per interrompere il pagamento, [rimuovi la licenza dall'abbonamento.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
-
-    > [!NOTE]
-    > È necessario rimuovere la licenza dalla pagina Utenti attivi. Non è possibile rimuovere la licenza dalla pagina Cassetta postale condivisa perché le licenze sono impostazioni utente.
-
-2. Selezionare la cassetta postale condivisa, quindi selezionare **Modifica** accanto a **Licenze prodotto.**
-
-3. Nella pagina **Licenze di** prodotto imposta l'interruttore su **Disattivato** per la licenza che vuoi rimuovere.
-
-4. Selezionare **Salva**.
-
-5. Quando si torna alla **pagina Utenti** attivi, lo stato della cassetta postale condivisa sarà **Senza licenza.**
-
-6. Stai ancora pagando la licenza. Per interrompere il pagamento, [rimuovi la licenza dall'abbonamento.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
 
 ## <a name="related-articles"></a>Articoli correlati
 

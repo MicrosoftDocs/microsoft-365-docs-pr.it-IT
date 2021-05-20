@@ -20,12 +20,12 @@ description: Gli amministratori possono scoprire come rimuovere gli utenti dal p
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32748d717762d7af727a1583226b6d47ee7697c6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2171e2465aa40e187f8104c7c0d2675562f115ce
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205737"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537872"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Rimuovere utenti bloccati dal portale Utenti con restrizioni in Office 365
 
@@ -81,7 +81,7 @@ Gli amministratori possono rimuovere gli utenti dal portale Utenti con restrizio
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Verificare le impostazioni di avviso per gli utenti con restrizioni
 
-Il criterio di avviso predefinito denominato **Utente al quale è stato impedito di inviare messaggi di posta elettronica** invierà automaticamente una notifica agli amministratori quando gli utenti sono bloccati dall'invio di posta in uscita. È possibile verificare queste impostazioni e aggiungere altri utenti a cui inviare una notifica. Per ulteriori informazioni sui criteri di avviso, vedere [Criteri di avviso nel Centro sicurezza e conformità](../../compliance/alert-policies.md).
+Il criterio di avviso predefinito denominato **Utente al quale è stato impedito di inviare messaggi di posta elettronica** invierà automaticamente una notifica agli amministratori quando gli utenti sono bloccati dall'invio di posta in uscita. È possibile verificare queste impostazioni e aggiungere altri utenti a cui inviare una notifica. Per ulteriori informazioni sui criteri di avviso, vedere [Criteri di avviso in Microsoft 365](../../compliance/alert-policies.md).
 
 > [!IMPORTANT]
 > Per il corretto funzionamento degli avvisi, la ricerca nel log di controllo deve essere attivata. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](../../compliance/turn-audit-log-search-on-or-off.md).

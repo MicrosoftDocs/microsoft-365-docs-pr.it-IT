@@ -1,23 +1,24 @@
 ---
 title: Informazioni di pagamento per Suriname
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 899ce4cf73161ae0c27e41748de873a9f47be05f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: a48f2116ae7ca2f27203cb2a0bc1c966875d4347
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272805"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537800"
 ---
 # <a name="payment-information-for-suriname"></a>Informazioni di pagamento per Suriname
 
@@ -31,4 +32,4 @@ Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa
 **Branch** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  
-**Nome account:** Microsoft  
+**Nome account:** Microsoft

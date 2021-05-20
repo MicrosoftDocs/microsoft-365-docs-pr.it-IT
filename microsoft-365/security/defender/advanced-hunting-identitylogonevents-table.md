@@ -1,7 +1,7 @@
 ---
-title: Tabella IdentityLogonEvents nello schema di ricerca avanzata
-description: Informazioni sugli eventi di autenticazione registrati da Active Directory nella tabella IdentityLogonEvents dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, IdentityLogonEvents, Azure AD, Active Directory, Microsoft Defender for Identity, identità
+title: IdentityLogonEvents nello schema di ricerca avanzato
+description: Informazioni sugli eventi di autenticazione registrati da Active Directory nella tabella IdentityLogonEvents dello schema di ricerca avanzato
+keywords: caccia avanzata, ricerca di minacce, caccia alle minacce informatiche, Microsoft 365 Defender, microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, IdentityLogonEvents, Azure AD, Active Directory, Microsoft Defender per identità, identità
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 55ec52acd5419729f46779f1d4205cd55ce27f9d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3cd0c0f371c73a515704791e829be7266d400580
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935810"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572754"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -35,30 +35,30 @@ ms.locfileid: "51935810"
 **Si applica a:**
 - Microsoft 365 Defender
 
-La tabella nello schema di ricerca avanzata contiene informazioni sulle attività di autenticazione effettuate tramite Active Directory locale acquisite da Microsoft Defender per le identità e le attività di autenticazione relative ai servizi online Microsoft acquisiti da `IdentityLogonEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella dello schema di ricerca avanzato contiene informazioni sulle attività di autenticazione effettuate tramite Active Directory locale acquisite da Microsoft Defender per `IdentityLogonEvents` le attività di identità e autenticazione correlate ai servizi online Microsoft acquisiti [](advanced-hunting-overview.md) da Microsoft Cloud App Security. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
-> Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza.
+> Per informazioni dettagliate sui tipi di eventi `ActionType` (valori) supportati da una tabella, utilizzare il riferimento allo schema incorporato disponibile nel Centro sicurezza.
 
 >[!NOTE]
->Questa tabella illustra le attività di accesso di Azure Active Directory (AD) monitorate da Cloud App Security, in particolare le attività di accesso e autenticazione interattive con ActiveSync e altri protocolli legacy. Gli accessi non interattivi non disponibili in questa tabella possono essere visualizzati nel log di controllo di Azure AD. [Altre informazioni sulla connessione di Cloud App Security a Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>Questa tabella illustra Azure Active Directory di accesso (Azure AD) monitorate da Cloud App Security, in particolare le attività interattive di accesso e autenticazione con ActiveSync e altri protocolli legacy. Gli accessi non interattivi non disponibili in questa tabella possono essere visualizzati nel registro di controllo di Azure AD. [Ulteriori informazioni sulla connessione Cloud App Security a Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
-| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) informazioni di riferimento sullo schema nel portale |
+| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere il riferimento allo schema](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) nel portale |
 | `Application` | stringa | Applicazione che ha eseguito l'azione registrata |
-| `LogonType` | stringa | Tipo di sessione di accesso, in particolare:<br><br> - **Interattivo-** L'utente interagisce fisicamente con il computer usando la tastiera e lo schermo locali<br><br> - **Accessi remoti interattivi (RDP):** l'utente interagisce con il computer in remoto utilizzando Desktop remoto, Servizi terminal, Assistenza remota o altri client RDP<br><br> - **Rete** - Sessione avviata quando si accede al computer tramite PsExec o quando si accede a risorse condivise nel computer, ad esempio stampanti e cartelle condivise.<br><br> - **Batch** - Sessione avviata da attività pianificate<br><br> - **Servizio** - Sessione avviata dai servizi all'avvio |
+| `LogonType` | stringa | Tipo di sessione di accesso, in particolare:<br><br> - **Interattivo** : l'utente interagisce fisicamente con la macchina utilizzando la tastiera e lo schermo locali<br><br> - **Accessi RDP (Remote Interactive)** - L'utente interagisce con il computer in remoto utilizzando Desktop remoto, Servizi terminal, Assistenza remota o altri client RDP<br><br> - **Rete** - Sessione avviata quando si accede al computer tramite PsExec o quando si accede a risorse condivise nel computer, ad esempio stampanti e cartelle condivise<br><br> - **Batch** - Sessione avviata da attività pianificate<br><br> - **Servizio** - Sessione avviata dai servizi all'avvio |
 | `Protocol` | stringa | Protocollo di rete utilizzato |
 | `FailureReason` | stringa | Informazioni che spiegano perché l'azione registrata non è riuscita |
 | `AccountName` | stringa | Nome utente dell'account |
 | `AccountDomain` | stringa | Dominio dell'account |
-| `AccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account |
+| `AccountUpn` | stringa | Nome entità utente (UPN) dell'account |
 | `AccountSid` | stringa | Identificatore di sicurezza (SID) dell'account |
-| `AccountObjectId` | stringa | Identificatore univoco dell'account in Azure AD |
-| `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere una combinazione di un nome o di un dato nome, un'iniziazione intermedia e un cognome o un cognome. |
+| `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure AD |
+| `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. Tipicamente una combinazione di un dato o nome, un'iniziazione media e un cognome o cognome. |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del dispositivo |
 | `DeviceType` | stringa | Tipo di dispositivo |
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione sul computer. Ciò indica specifici sistemi operativi, incluse variazioni all'interno della stessa famiglia di prodotti, come Windows 10 e Windows 7. |
@@ -71,8 +71,8 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `TargetAccountDisplayName` | stringa | Nome visualizzato dell'account a cui è stata applicata l'azione registrata |
 | `Location` | stringa | Città, paese o altra posizione geografica associata all'evento |
 | `Isp` | stringa | Provider di servizi Internet (ISP) associato all'indirizzo IP dell'endpoint |
-| `ReportId` | long | Identificatore univoco dell'evento |
-| `AdditionalFields` | stringa | Informazioni aggiuntive sull'entità o sull'evento |
+| `ReportId` | long | Identificatore univoco per l'evento |
+| `AdditionalFields` | stringa | Ulteriori informazioni sull'entità o sull'evento |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
