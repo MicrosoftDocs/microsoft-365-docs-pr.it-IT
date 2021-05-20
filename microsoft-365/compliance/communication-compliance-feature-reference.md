@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dcae50150eb3b21e65e68a5cea376a0cdef31a65
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538448"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583485"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni
 
@@ -311,6 +311,7 @@ I filtri di conformità delle comunicazioni consentono di filtrare e ordinare i 
 | **Dimensioni** | Dimensioni del messaggio in KB. |
 | **Oggetto/Titolo** | Oggetto del messaggio o titolo della chat. |
 | **Tag** | Tag assegnati a un messaggio, *questionable,* *compliant* o *non conforme.* |
+| **Lingua** | Lingua rilevata del testo nel messaggio. Il messaggio viene classificato in base alla lingua della maggior parte del testo del messaggio. Ad esempio, per un messaggio contenente testo tedesco e italiano, ma la maggior parte del testo è in tedesco, il messaggio viene classificato come tedesco (DE). Sono supportate le lingue seguenti: cinese (semplificato - ZH), inglese (EN), francese (FR), tedesco (DE), italiano (IT), giapponese (JP), portoghese (PT) e spagnolo (ES). Ad esempio, per filtrare i messaggi classificati in tedesco e italiano, immettere "DE,IT" (codici di lingua a 2 cifre) nella casella di ricerca Filtro lingua. Per visualizzare la classificazione della lingua rilevata per un messaggio, selezionare un messaggio, selezionare Visualizza dettagli messaggio e scorrere fino al campo EmailDetectedLanguage. |
 | **Riassegnata a** | Nome utente della persona inclusa nell'ambito di un'azione di escalation del messaggio. |
 | **Classificatori** | Nome dei classificatori predefiniti e personalizzati applicabili al messaggio. Alcuni esempi includono *linguaggio offensivo,* *molestie* mirate, *volgarità,* *minacce* e altro ancora.
 

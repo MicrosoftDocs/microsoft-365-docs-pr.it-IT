@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come usare Power Automate per creare il flusso per elaborare i contratti utilizzando una Microsoft 365 soluzione.
-ms.openlocfilehash: d9892110d6aebd3eaae6fbc21d453b7eb14d7f7e
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281236"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583101"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Passaggio 3. Usare Power Automate per creare il flusso per elaborare i contratti
 
@@ -36,11 +36,11 @@ Il diagramma seguente mostra il Power Automate per la soluzione di gestione dei 
 
 ## <a name="prepare-your-contract-for-review"></a>Preparare il contratto per la revisione
 
-Quando un contratto viene identificato e classificato dal modello di comprensione dei documenti syntex SharePoint, il flusso di Power Automate cambierà innanzitutto lo stato in "In revisione".
+Quando un contratto viene identificato e classificato dal modello di SharePoint Syntex document understanding, il flusso di Power Automate cambierà innanzitutto lo stato **in In revisione.**
 
 ![Stato aggiornamento.](../media/content-understanding/flow-overview.png)
 
-Dopo aver estratto il file, modificare il valore di stato in "In revisione".
+Dopo l'estrazione del file, modificare il valore di stato **in In revisione**.
 
 ![Stato revisione.](../media/content-understanding/in-review.png)
 
@@ -141,7 +141,7 @@ Quando un contratto è stato approvato, si verifica quanto segue:
 
    ![Stato scheda approvato.](../media/content-understanding/approved-contracts-tab.png)
 
-- Nel flusso, lo stato viene modificato in "Approvato".
+- Nel flusso, lo stato viene modificato in **Approvato**.
 
    ![Flow stato approvato.](../media/content-understanding/status-approved.png)
 

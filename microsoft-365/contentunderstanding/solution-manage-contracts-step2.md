@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come usare Microsoft Teams per creare il canale di gestione dei contratti usando una Microsoft 365 soluzione.
-ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 20ace5d17550c8dd800368957dd940c9857bce5d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301801"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583137"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Passaggio 2. Usare Microsoft Teams per creare il canale di gestione dei contratti
 
@@ -44,13 +44,13 @@ Dopo aver collegato SharePoint raccolta documenti, sarà possibile visualizzare 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Personalizzare la visualizzazione del riquadro della scheda Contratti
 
 > [!NOTE]
-> Questa sezione fa riferimento ad esempi di codice contenuti nel file **ContractCard.jsincluso** nel file zip **solutionfiles.**
+> Questa sezione fa riferimento ad esempi di codice contenuti nel file [ContractTileFormatting.jsincluso](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) nell'archivio [Contracts Management Solution Assets.](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)
 
 Anche Teams consente di visualizzare i contratti in una visualizzazione riquadro, è consigliabile personalizzarlo per visualizzare i dati del contratto che si desidera rendere visibili nella scheda contratto. Ad esempio, per la **scheda Contratti,** è importante che i membri vedano il cliente, l'appaltatore e l'importo della commissione nella scheda del contratto. Tutti questi campi sono stati estratti da ogni contratto tramite il SharePoint Syntex applicato alla raccolta documenti. Vuoi anche essere in grado di modificare la barra di intestazione del riquadro con colori diversi per ogni stato in modo che i membri possano facilmente vedere dove si trova il contratto nel processo di approvazione. Ad esempio, tutti i contratti approvati avranno una barra di intestazione blu.
 
    ![Visualizzazione elenco.](../media/content-understanding/tile.png)
 
-La visualizzazione riquadro personalizzata usata richiede di apportare modifiche al file JSON usato per formattare la visualizzazione riquadro corrente. Puoi fare riferimento al file JSON usato per creare la visualizzazione scheda scaricando il file **ContractCard.jsfile.** Nelle sezioni seguenti vedrai sezioni specifiche del codice per le funzionalità presenti nelle schede del contratto.
+La visualizzazione riquadro personalizzata usata richiede di apportare modifiche al file JSON usato per formattare la visualizzazione riquadro corrente. Puoi fare riferimento al file JSON usato per creare la visualizzazione scheda esaminando il file [ContractTileFormatting.jssu.](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) Nelle sezioni seguenti vedrai sezioni specifiche del codice per le funzionalità presenti nelle schede del contratto.
 
 Se vuoi visualizzare o apportare modifiche al codice JSON per la visualizzazione nel canale Teams, nel canale Teams seleziona il menu a discesa della visualizzazione e quindi seleziona **Formatta visualizzazione corrente.**
 
@@ -58,7 +58,7 @@ Se vuoi visualizzare o apportare modifiche al codice JSON per la visualizzazione
 
 ## <a name="card-size-and-shape"></a>Dimensioni e forma della scheda
 
-Nel **ContractCard.js** file scaricato nel file ZIP di riferimento, esaminare la sezione seguente per visualizzare il codice per la formattazione delle dimensioni e della forma della scheda.
+Nel file [ContractTileFormatting.js,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) esaminare la sezione seguente per visualizzare il codice per la formattazione delle dimensioni e della forma della scheda.
 
 ```JSON
                   {
@@ -84,7 +84,7 @@ Nel **ContractCard.js** file scaricato nel file ZIP di riferimento, esaminare la
 
 ## <a name="contract-status"></a>Stato contratto
 
-Il codice seguente consente di definire lo stato di ogni scheda titolo. Si noti che ogni valore di stato (*New*, *In review*, *Approved* e *Rejected*) visualizza un codice di colore diverso per ognuno. Nel **ContractCard.jsfile** scaricato, esaminare la sezione che definisce lo stato.
+Il codice seguente consente di definire lo stato di ogni scheda titolo. Si noti che ogni valore di stato (*New*, *In review*, *Approved* e *Rejected*) visualizza un codice di colore diverso per ognuno. Nel file [ContractTileFormatting.js,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) esaminare la sezione che definisce lo stato.
 
 ```JSON
           {
@@ -109,7 +109,7 @@ Il codice seguente consente di definire lo stato di ogni scheda titolo. Si noti 
 
 In ogni scheda contratto verranno visualizzati tre campi estratti per ogni contratto (*Cliente,* Appaltatore e Importo *commissione*). Inoltre, vuoi anche visualizzare l'ora/data in cui il file è stato classificato dal modello syntex SharePoint usato per identificarlo. 
 
-NelContractCard.js **file scaricato,** le sezioni seguenti definiscono ognuna di queste.
+Nel file [ContractTileFormatting.js,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) le sezioni seguenti definiscono ognuna di queste.
 
 ### <a name="client"></a>Client
 

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Panoramica del processo di pianificazione per la prevenzione della perdita di dati
-ms.openlocfilehash: 6a72a8bab27db4d8b11d3e0b3d7a1dac7a1f0092
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 84f1dc0426ba88f934c1d67d71f75364adeb4340
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52581595"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583353"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Pianificare la prevenzione della perdita dei dati (DLP)
 
@@ -42,7 +42,7 @@ Questi sono solo alcuni esempi di come i clienti possono affrontare DLP e non im
 
 ## <a name="overview-of-planning-process"></a>Panoramica del processo di pianificazione
 
-Le [informazioni sulla prevenzione della perdita dei](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) dati introducono i tre diversi aspetti del processo di pianificazione [DLP.](dlp-learn-about-dlp.md#plan-for-dlp) Verranno fornite informazioni più dettagliate sugli elementi comuni a tutti i piani DLP.
+Le [informazioni sulla prevenzione della perdita dei](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) dati introducono i tre diversi aspetti del processo di pianificazione [dlp.](dlp-learn-about-dlp.md#plan-for-dlp) Verranno fornite informazioni più dettagliate sugli elementi comuni a tutti i piani DLP.
 
 ### <a name="identify-stakeholders"></a>Identificare le parti interessate
 
@@ -117,11 +117,11 @@ Per comunicare con le parti interessate e impostare l'ambito del progetto, è es
 
 #### <a name="sensitive-item-discovery"></a>Individuazione di elementi sensibili
 
-Esistono diversi modi per individuare i singoli elementi sensibili e la posizione in cui si trovano. È possibile che le etichette di riservatezza sono già state distribuite oppure che si sia deciso di distribuire un criterio DLP molto ampio in tutte le posizioni che individuano e controllano solo gli elementi. Per ulteriori informazioni, vedere [Know your data](information-protection.md#know-your-data).
+Esistono diversi modi per individuare i singoli elementi sensibili e la posizione in cui si trovano. È possibile che le etichette di riservatezza sono già state distribuite oppure che si sia deciso di distribuire un criterio DLP generale in tutte le posizioni che individuano e controllano solo gli elementi. Per ulteriori informazioni, vedere [Know your data](information-protection.md#know-your-data).
 
 #### <a name="policy-planning"></a>Pianificazione dei criteri
 
-Una volta avviata l'adozione della prevenzione della perdita dei dati, è possibile utilizzare queste domande per concentrare le attività di progettazione e implementazione dei criteri.
+All'inizio dell'adozione della prevenzione della perdita dei dati, è possibile usare queste domande per concentrare le attività di progettazione e implementazione dei criteri.
 
 ##### <a name="what-laws-regulations-and-industry-standards-must-your-organization-comply-with"></a>Quali leggi, normative e standard di settore devono essere conformi all'organizzazione?
 
@@ -134,7 +134,7 @@ Poiché molte organizzazioni vengono a DLP con l'obiettivo di conformità normat
 
 Una volta che l'organizzazione sa dove si trova in termini di esigenze di conformità normativa, avrai un'idea di quali elementi sensibili devono essere protetti dalla perdita di dati e di come vuoi definire la priorità dell'implementazione dei criteri per proteggerli. In questo modo sarà possibile scegliere i modelli di criteri DLP più appropriati. Microsoft 365 viene fornito con modelli DLP preconfigurato per Financial, Medical and health, Privacy ed è possibile creare modelli personalizzati utilizzando il modello personalizzato. Durante la progettazione e la creazione dei criteri DLP effettivi, conoscere la risposta a questa domanda consente anche di scegliere il tipo di [informazioni riservate corretto.](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 
-**Esempio** Per iniziare rapidamente, selezionare il modello `U.K. Financial Data` di criteri che include i tipi di informazioni riservate , e `Credit Card Number` `EU Debit Card Number` `SWIFT Code` . 
+**Esempio** Per iniziare rapidamente, selezionare il modello `U.K. Financial Data` di criteri, che include `Credit Card Number` i tipi di informazioni riservate , e `EU Debit Card Number` `SWIFT Code` . 
 
 ##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>Dove sono gli elementi sensibili e in quali processi aziendali sono coinvolti?
 
@@ -148,7 +148,7 @@ Gli elementi che contengono le informazioni riservate delle organizzazioni vengo
 - Microsoft Cloud App Security
 - Archivi locali
 
-**Esempio** I revisori interni dell'organizzazione stanno verificando un set di numeri di carta di credito. Mantengono un foglio di calcolo in un sito SharePoint sicuro. Molti dei dipendenti effettuano copie e le salvano nel sito OneDrive for Business lavoro sincronizzato con il Windows 10 dispositivo. Uno di questi incolla un elenco di 14 di essi in un messaggio di posta elettronica e tenta di inviarlo ai revisori esterni per la revisione. Si desidera applicare il criterio al sito di SharePoint sicuro, a tutti i revisori interni OneDrive for Business account, ai dispositivi Windows 10 e Exchange posta elettronica.
+**Esempio** I revisori interni dell'organizzazione stanno verificando un set di numeri di carta di credito. Mantengono un foglio di calcolo in un sito SharePoint sicuro. Molti dei dipendenti effettuano copie e le salvano nel sito OneDrive for Business lavoro, che viene sincronizzato con il Windows 10 dispositivo. Uno di questi incolla un elenco di 14 di essi in un messaggio di posta elettronica e tenta di inviarlo ai revisori esterni per la revisione. È necessario applicare il criterio al sito di SharePoint sicuro, a tutti i revisori interni OneDrive for Business account, ai dispositivi Windows 10 e alla posta Exchange posta elettronica.
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>Qual è la tolleranza delle organizzazioni per le perdite?
 
@@ -173,7 +173,7 @@ Se si creano criteri DLP con un forte impatto potenziale, si consiglia di attene
   
 1. **Iniziare in modalità test senza suggerimenti per i criteri**, quindi utilizzare i report di prevenzione della perdita dei dati e i rapporti operazioni non consentite per valutare l'impatto. È possibile usare i report di prevenzione della perdita dei dati per visualizzare il numero, la posizione, il tipo e la gravità delle corrispondenze ai criteri. In base ai risultati, è possibile ottimizzare i criteri in base alle esigenze. In modalità test, i criteri DLP non avranno effetto sulla produttività degli utenti dell'organizzazione. Utilizzare inoltre questa fase per testare il flusso di lavoro per la revisione degli eventi DLP e la correzione dei problemi.
     
-2. **Passare alla modalità test** con notifiche e criteri Suggerimenti in modo da iniziare a insegnare agli utenti i criteri di conformità e prepararli per i criteri che verranno applicati. È utile avere un collegamento a una pagina dei criteri dell'organizzazione che fornisce ulteriori dettagli sul criterio nel suggerimento per i criteri. In questa fase, è anche possibile chiedere agli utenti di segnalare falsi positivi in modo da poter perfezionare ulteriormente i criteri. Passare a questa fase dopo aver avuto la certezza che i risultati dell'applicazione dei criteri corrispondano a quanto avevano in mente gli stakeholder. 
+2. **Passare alla modalità test** con notifiche e criteri Suggerimenti in modo da iniziare a insegnare agli utenti i criteri di conformità e prepararli per i criteri che verranno applicati. È utile avere un collegamento a una pagina dei criteri dell'organizzazione che fornisce ulteriori dettagli sui criteri nel suggerimento per i criteri. In questa fase, è anche possibile chiedere agli utenti di segnalare falsi positivi in modo da poter perfezionare ulteriormente i criteri. Passare a questa fase dopo aver avuto la certezza che i risultati dell'applicazione dei criteri corrispondano a quanto avevano in mente gli stakeholder. 
     
 3. **Avviare l'applicazione dei criteri** in modo che le azioni nelle regole siano applicate e i contenuti protetti. Continuare a eseguire il monitoraggio dei report di prevenzione della perdita dei dati e dei rapporti operazioni non consentite oppure delle notifiche per essere certi di ottenere i risultati desiderati. 
 
@@ -187,7 +187,7 @@ Se si creano criteri DLP con un forte impatto potenziale, si consiglia di attene
 
     ![Impostare la priorità delle regole](../media/dlp-set-rule-priority.png)
 
-#### <a name="end-user-training"></a>Formazione degli utenti finali
+#### <a name="end-user-training"></a>Formazione per gli utenti finali
 
 Quando viene attivato un criterio DLP, è possibile configurare i criteri in Invia notifiche di posta elettronica e visualizzare suggerimenti sui criteri per i criteri [DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies) agli amministratori e agli utenti finali. Mentre i criteri sono ancora in modalità test e prima che siano impostati per applicare un'azione di blocco, i suggerimenti per i criteri sono modi utili per aumentare la consapevolezza dei comportamenti rischiosi per gli elementi sensibili e formare gli utenti a evitare tali comportamenti in futuro.  
 
@@ -200,8 +200,8 @@ Le normative, le leggi e gli standard di settore a cui è soggetta l'organizzazi
 |Descrizione delle esigenze aziendali dei clienti  | approccio  |
 |---------|---------|
 |**Contoso Bank** è in un settore altamente regolamentato e ha molti tipi diversi di elementi sensibili in molte posizioni diverse. </br> - Sa quali tipi di informazioni riservate hanno la priorità principale. </br> - deve ridurre al minimo l'interruzione dell'attività durante l'implementazione dei criteri. </br> - dispone di risorse IT e può assumere esperti per pianificare, progettare la distribuzione </br> - ha un contratto di supporto premier con Microsoft| - Prendere il tempo necessario per comprendere quali normative devono rispettare e come devono conformarsi. </br> -Take the time to understand the better together value of the Microsoft 365 Information Protection stack </br> - Sviluppare uno schema di etichettatura di riservatezza per gli elementi con priorità e applicarlo </br> - Coinvolgere i proprietari dei processi aziendali </br>- Criteri di progettazione/codice, distribuzione in modalità test, formazione degli utenti </br>- ripeti|
-|**TailSpin Toys** non sa cosa hanno o dove si trova e hanno poca o nessuna profondità di risorse. Usano Teams, ODB e Exchange ampiamente.     |- Iniziare con criteri semplici per le posizioni con priorità. </br>- Monitorare ciò che viene identificato </br>- Applicare le etichette di riservatezza di conseguenza </br>- Affinare i criteri, formare gli utenti       |
-|**Fabrikam** è una piccola startup e desidera proteggere la proprietà intellettuale e deve spostarsi rapidamente. Sono disposti a dedicare alcune risorse, ma non possono permettersi l'assunzione di esperti esterni. </br>- Gli elementi sensibili sono tutti in Microsoft 365 OneDdrive for Business/SharePoint </br>- L'adozione di OneDrive for Business e SharePoint è lenta, i dipendenti/shadow IT usano DropBox e Google Drive per condividere/archiviare elementi </br>- I dipendenti valorizzano la velocità del lavoro rispetto alla disciplina di protezione dei dati </br>- Il cliente ha acquistato e acquistato tutti i 18 dipendenti nuovi Windows 10 dispositivi     |- Sfruttare i vantaggi del criterio DLP predefinito in Teams </br>- Utilizzare l'impostazione con restrizioni per impostazione predefinita per SharePoint elementi </br>- Distribuire criteri che impediscono la condivisione esterna </br>- Distribuire i criteri in posizioni con priorità </br>- Distribuire criteri in Windows 10 dispositivi </br>- Bloccare i caricamenti in un OneDrive for Business cloud      |
+|**TailSpin Toys** non sa cosa hanno o dove si trova e hanno poca o nessuna profondità di risorse. Usano Teams, OneDrive for Business e Exchange ampiamente.     |- Iniziare con criteri semplici per le posizioni con priorità. </br>- Monitorare ciò che viene identificato </br>- Applicare le etichette di riservatezza di conseguenza </br>- Affinare i criteri, formare gli utenti       |
+|**Fabrikam** è una piccola startup e desidera proteggere la proprietà intellettuale e deve spostarsi rapidamente. Sono disposti a dedicare alcune risorse, ma non possono permettersi di assumere esperti esterni. </br>- Gli elementi sensibili sono tutti Microsoft 365 OneDrive for Business/SharePoint </br>- L'adozione di OneDrive for Business e SharePoint è lenta, i dipendenti/shadow IT usano DropBox e Google Drive per condividere/archiviare elementi </br>- I dipendenti valorizzano la velocità del lavoro rispetto alla disciplina di protezione dei dati </br>- Il cliente ha acquistato e acquistato tutti i 18 dipendenti nuovi Windows 10 dispositivi     |- Sfruttare i vantaggi del criterio DLP predefinito in Teams </br>- Utilizzare l'impostazione con restrizioni per impostazione predefinita per SharePoint elementi </br>- Distribuire criteri che impediscono la condivisione esterna </br>- Distribuire i criteri in posizioni con priorità </br>- Distribuire criteri in Windows 10 dispositivi </br>- Bloccare i caricamenti nell'OneDrive for Business cloud non OneDrive for Business      |
 
 <!--
 

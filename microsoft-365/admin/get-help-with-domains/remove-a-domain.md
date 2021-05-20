@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare utenti e gruppi in un altro dominio.
-ms.openlocfilehash: 3586cc8b288b77725c0dd3484629688e98e0a218
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare utenti e gruppi in un altro dominio o annullare l'abbonamento.
+ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572118"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582933"
 ---
 # <a name="remove-a-domain"></a>Rimuovere un dominio
   
@@ -218,10 +218,10 @@ Il problema persiste? Potrebbe essere necessario rimuovere manualmente il domini
   
 ::: moniker-end
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Domande frequenti sui domini](../setup/domains-faq.yml)
+[Domande frequenti sui](../setup/domains-faq.yml) domini (articolo)
 
-[Passare a un piano di Microsoft 365 per le aziende diverso](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Passare a un piano Microsoft 365 per le aziende](../../commerce/subscriptions/switch-to-a-different-plan.md) diverso (articolo)
 
-[Annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md)
+[Annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md) (articolo)

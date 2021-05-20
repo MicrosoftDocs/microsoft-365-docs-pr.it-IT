@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333819"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583593"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Panoramica del Centro argomenti in Microsoft Viva Topics
 
@@ -39,7 +39,7 @@ Il centro argomenti viene creato durante l'installazione di Viva Topics. Al term
 
     ![Connessione persone alla conoscenza](../media/admin-org-knowledge-options-completed.png) 
 
-3. Selezionare la **scheda Centro** argomenti. In **Indirizzo sito** è un collegamento al Centro argomenti.
+3. Selezionare la **scheda Centro** argomenti. In **Indirizzo sito** è un collegamento al centro argomenti.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
@@ -79,7 +79,7 @@ Nella pagina **Gestisci argomenti,** il dashboard degli argomenti mostra tutti g
  
 - Rimuovere l'argomento: rende l'argomento non riconoscibile per gli utenti finali. L'argomento viene spostato nella **scheda Rimosso** e può essere confermato in un secondo momento, se necessario. 
 
-Per ulteriori informazioni su come gestire gli argomenti nella pagina **Gestisci argomenti, vedere [Gestire gli argomenti](manage-topics.md).
+Per ulteriori informazioni su come gestire gli argomenti nella **pagina Gestisci argomenti,** vedere [Gestire gli argomenti](manage-topics.md).
 
 ## <a name="create-or-edit-a-topic"></a>Creare o modificare un argomento
 

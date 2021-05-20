@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: 'Proteggere la posta elettronica aziendale e i dati da minacce informatiche, inclusi ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: dcaeb9588f50d1e12bdff5164f5f41a0beee2e47
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Proteggere la posta elettronica aziendale e i dati da minacce informatiche, inclusi ransomware, phishing e allegati dannosi.
+ms.openlocfilehash: 12bdb9f12c1b0d3072a4c84c006787c26050cc8b
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535879"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582801"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>I 10 modi principali per proteggere i Microsoft 365 per le aziende
 
@@ -345,3 +345,11 @@ Per creare un nuovo criterio destinato a tutti i destinatari del dominio:
 |
 
 Per altre informazioni, vedi [Collegamenti sicuri in Microsoft Defender per Office 365](../../security/office-365-security/atp-safe-links.md).
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Autenticazione a più fattori per Microsoft 365](multi-factor-authentication-microsoft-365.md) (articolo)
+
+[Gestire e monitorare gli account con priorità](../setup/priority-accounts.md) (articolo)
+
+[Microsoft 365 report nell'interfaccia di amministrazione](../activity-reports/activity-reports.md) (video)

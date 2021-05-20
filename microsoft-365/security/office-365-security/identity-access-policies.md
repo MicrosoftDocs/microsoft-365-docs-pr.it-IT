@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 2bd719377e36cf608a0fe75078ab8bef004ad92e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346329"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583669"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 
@@ -42,7 +42,7 @@ In questa guida viene illustrato come distribuire i criteri consigliati in un am
 
 Nel diagramma seguente viene illustrato l'insieme consigliato di criteri. Mostra a quale livello di protezione si applica ogni criterio e se i criteri si applicano a PC, telefoni e tablet o a entrambe le categorie di dispositivi. Indica inoltre dove configurare questi criteri.
 
-[![Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 Ecco un riepilogo PDF di una pagina con collegamenti ai singoli criteri:
 
@@ -55,7 +55,7 @@ Il resto di questo articolo descrive come configurare questi criteri.
 
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine elencato in questa tabella. Tuttavia, i criteri MFA per livelli di protezione sensibili e altamente regolamentati possono essere implementati in qualsiasi momento.
 
-|Livello di protezione|Criteri|Altre informazioni|Licenze|
+|Livello di protezione|Criteri|Ulteriori informazioni|Licenze|
 |---|---|---|---|
 |**Protezione di base**|[Richiedi autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con il componente aggiuntivo E5 Security|
 ||[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-multi-factor)|I client che non utilizzano l'autenticazione moderna possono ignorare i criteri di accesso condizionale, quindi è importante bloccarlo.|Microsoft 365 E3 o E5|
@@ -223,7 +223,7 @@ Per visualizzare i suggerimenti specifici per ogni livello di configurazione e l
 
 Usando i principi descritti [in](microsoft-365-policies-configurations.md)Configurazioni di identità e accesso ai dispositivi, i livelli di protezione di base e sensibili sono strettamente associati alle impostazioni di protezione avanzata dei dati aziendali di livello 2. Il livello di protezione altamente regolamentato è strettamente associato alle impostazioni di protezione dei dati elevata di livello 3 aziendale.
 
-|Livello di protezione|Criteri di protezione delle app|Altre informazioni|
+|Livello di protezione|Criterio di protezione delle app|Ulteriori informazioni|
 |---|---|---|
 |Protezione di base|[Protezione avanzata dei dati di livello 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Le impostazioni dei criteri applicate nel livello 2 includono tutte le impostazioni dei criteri consigliate per il livello 1 e aggiungono o aggiornano solo le impostazioni dei criteri seguenti per implementare più controlli e una configurazione più sofisticata rispetto al livello 1.|
 |Dati sensibili|[Protezione avanzata dei dati di livello 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Le impostazioni dei criteri applicate nel livello 2 includono tutte le impostazioni dei criteri consigliate per il livello 1 e aggiungono o aggiornano solo le impostazioni dei criteri seguenti per implementare più controlli e una configurazione più sofisticata rispetto al livello 1.|
@@ -313,7 +313,7 @@ Per **Sicurezza del sistema**, vedere questa tabella.
 ||Password semplici|Blocca|Seleziona|
 ||Tipo di password|Impostazione predefinita del dispositivo|Seleziona|
 ||Lunghezza minima password|6 |Tipo|
-||Numero massimo di minuti di inattività prima che sia necessaria la password|15 |Tipo <p> Questa impostazione è supportata per Android versioni 4.0 e successive o KNOX 4.0 e versioni successive. Per i dispositivi iOS, è supportato per iOS 8.0 e versioni successive.|
+||Numero massimo di minuti di inattività prima che sia necessaria la password|15|Tipo <p> Questa impostazione è supportata per Android versioni 4.0 e successive o KNOX 4.0 e versioni successive. Per i dispositivi iOS, è supportato per iOS 8.0 e versioni successive.|
 ||Scadenza password (giorni)|41|Tipo|
 ||Numero di password precedenti per impedire il riutilizzo|5 |Tipo|
 ||Richiedi password quando il dispositivo torna dallo stato di inattività (mobile e olografico)|Richiedi|Disponibile per Windows 10 e versioni successive|

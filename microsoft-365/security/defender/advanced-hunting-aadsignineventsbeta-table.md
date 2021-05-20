@@ -1,7 +1,7 @@
 ---
 title: Tabella AADSignInEventsBeta nello schema di ricerca avanzata
-description: Informazioni sulle informazioni associate alla tabella degli eventi di accesso di Azure Active Directory dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca di minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, file, indirizzo IP, dispositivo, computer, utente, account, identità, AAD
+description: Informazioni sulle informazioni associate alla Azure Active Directory degli eventi di accesso dello schema di ricerca avanzata
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, file, indirizzo IP, dispositivo, computer, utente, account, identità, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 704752951c453a3fe872b814e7364ef1699226bf
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932608"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582981"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,12 +34,11 @@ ms.locfileid: "51932608"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> La tabella è attualmente in versione beta e viene offerta a breve termine per consentire la ricerca tramite gli eventi di accesso di `AADSignInEventsBeta` Azure Active Directory (AAD). Alla fine verranno spostate tutte le informazioni sullo schema di accesso nella `IdentityLogonEvents` tabella.<br><br>
-> I clienti che possono accedere a Microsoft 365 Defender tramite la soluzione Microsoft Defender for Endpoint integrata di Azure Defender, ma non dispongono di licenze per Microsoft Defender per Office, Microsoft Defender for Identity o Microsoft Cloud App Security, non potranno visualizzare questo schema. 
+> La tabella è attualmente in versione beta e viene offerta a breve termine per consentire la ricerca tramite eventi di accesso `AADSignInEventsBeta` Azure Active Directory (AAD). Alla fine verranno spostate tutte le informazioni sullo schema di accesso nella `IdentityLogonEvents` tabella.
 
  
 
-La tabella nello schema di ricerca avanzata contiene informazioni sugli accesso interattivi e `AADSignInEventsBeta` non interattivi di Azure Active Directory. Per altre informazioni, vedere Sign-ins in [Azure Active Directory sign-in activity reports - preview](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+La tabella nello schema di ricerca avanzata contiene informazioni Azure Active Directory accesso interattivo `AADSignInEventsBeta` e non interattivo. Altre informazioni sugli Azure Active Directory di attività di accesso [- anteprima.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Utilizzare questo riferimento per creare query che forniscano informazioni dalla tabella.
 Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [le informazioni di riferimento sulla Ricerca avanzata](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
@@ -75,7 +74,7 @@ Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [l
 | `IsCompliant`                     | int       | Indica se il dispositivo che ha avviato l'accesso è conforme (1) o non conforme (0)                                                                                       |
 | `AuthenticationProcessingDetails` | stringa        | Dettagli sul processore di autenticazione                                                                                                                                          |
 | `AuthenticationRequirement`       | stringa        | Tipo di autenticazione necessario per l'accesso. Valori possibili: multiFactorAuthentication (era necessaria la MFA) e singleFactorAuthentication (non è stata richiesta alcuna autenticazione a più fattori).                |
-| `TokenIssuerType`                 | int        | Indica se l'autorità emittente di token è Azure Active Directory (0) o Active Directory Federation Services (1)                                                                             |
+| `TokenIssuerType`                 | int        | Indica se l'autorità emittente di token Azure Active Directory (0) o Active Directory Federation Services (1)                                                                             |
 | `RiskLevelAggregated`                       | int        | Livello di rischio aggregato durante l'accesso. Valori possibili: 0 (livello di rischio aggregato non impostato), 1 (nessuno), 10 (basso), 50 (medio) o 100 (alto).                               |
 | `RiskDetails`                      | int        | Dettagli sullo stato rischioso dell'utente che ha eseguito l'accesso                                                                                                                            |
 | `RiskState`                       | int        | Indica lo stato utente rischioso. Valori possibili: 0 (nessuno), 1 (sicurezza confermata), 2 (correzione), 3 (ignorato), 4 (a rischio) o 5 (compromesso confermato).                                |

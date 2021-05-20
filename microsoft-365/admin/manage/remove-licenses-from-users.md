@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come annullare l'assegnazione delle licenze dagli account utente.
 ms.date: 07/01/2020
-ms.openlocfilehash: 5ef28b3065703ec224e6426c4fdbfffdb5269b22
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4ff6a0e5554117cd1fc2d818c04edabc9e33b2a1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537500"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582909"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 
@@ -117,13 +117,13 @@ Quando si utilizza la **pagina Utenti attivi** per annullare l'assegnazione dell
 ::: moniker-end
 
 2. Selezionare i cerchi accanto ai nomi degli utenti per cui si desidera annullare l'assegnazione delle licenze.
-3. Nella parte superiore seleziona i tre puntini (altre azioni), quindi seleziona **Gestisci licenze prodotto.**
+3. Nella parte superiore, selezionare i tre puntini (altre azioni), quindi **Gestisci licenze prodotto**.
 4. Nel riquadro **Gestisci licenze prodotto** selezionare **Sostituisci assegnazioni licenze di prodotto esistenti** \> **Avanti**.
 5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la **casella** di controllo Rimuovi tutte le licenze di prodotto dagli utenti selezionati, quindi **selezionare Sostituisci** \> **Chiudi**.
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Cosa succede ai dati di un utente quando si rimuove la licenza?
 
-- Quando una licenza viene rimossa da un utente, i dati associati a tale account vengono mantenuti per 30 giorni. Dopo il periodo di tolleranza di 30 giorni, i dati vengono eliminati e non possono essere ripristinati.
+- Quando una licenza viene rimossa da un utente, Exchange dati online associati a tale account vengono mantenuti per 30 giorni. Dopo il periodo di tolleranza di 30 giorni, i dati vengono eliminati e non possono essere ripristinati.
 - I file salvati in OneDrive for Business non vengono eliminati a meno che l'utente non venga eliminato dall'interfaccia di amministrazione di Microsoft 365 o non venga rimosso tramite la sincronizzazione di Active Directory. Per ulteriori informazioni, vedere OneDrive [conservazione ed eliminazione.](/onedrive/retention-and-deletion)
 - Quando la licenza viene rimossa, la cassetta postale dell'utente non è più disponibile per la ricerca utilizzando uno strumento di eDiscovery, ad esempio Ricerca contenuto o Advanced eDiscovery. Per ulteriori informazioni, vedere "Ricerca di cassette postali disconnesse o senza licenza" [in Ricerca contenuto in Microsoft 365](../../compliance/content-search.md).
 - Se si dispone di una sottoscrizione Enterprise, come Office 365 Enterprise E3, Exchange Online consente di conservare i dati della cassetta postale di un account utente eliminato utilizzando cassette postali [inattive.](../../compliance/inactive-mailboxes-in-office-365.md) Per ulteriori informazioni, vedere [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).

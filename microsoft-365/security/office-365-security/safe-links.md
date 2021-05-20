@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere l'organizzazione da phishing e altri attacchi che usano URL dannosi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c93ed2ec46cd0fd82ae1808ff7cfdb4a4f758117
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246502"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583581"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -52,6 +52,9 @@ La protezione collegamenti sicuri è disponibile nei percorsi seguenti:
 - **Messaggi di posta** elettronica: la protezione dei collegamenti sicuri per i collegamenti nei messaggi di posta elettronica è controllata dai criteri collegamenti sicuri. Non esiste un criterio collegamenti sicuri predefinito, quindi per ottenere la protezione dei collegamenti sicuri nei messaggi di posta elettronica, è necessario creare uno o più **criteri collegamenti sicuri.** Per istruzioni, vedi [Configurare i criteri collegamenti sicuri in Microsoft Defender per Office 365](set-up-safe-links-policies.md).
 
   Per ulteriori informazioni sulla protezione dei collegamenti sicuri per i messaggi di posta elettronica, vedere la sezione Impostazioni collegamenti sicuri per i messaggi [di](#safe-links-settings-for-email-messages) posta elettronica più avanti in questo articolo.
+  
+  > [!NOTE]
+  > I collegamenti vendita non funzionano sulle cartelle pubbliche abilitate alla posta elettronica.
 
 - **Microsoft Teams** (attualmente in anteprima TAP): la protezione dei collegamenti sicuri per i collegamenti nelle conversazioni Teams, nelle chat di gruppo o dai canali è controllata anche dai criteri collegamenti sicuri. Non esiste un criterio collegamenti sicuri predefinito, quindi per ottenere la protezione dei collegamenti sicuri in Teams, è necessario creare uno o più criteri **collegamenti sicuri.**
 
@@ -107,9 +110,7 @@ Le impostazioni dei criteri collegamenti sicuri applicabili ai messaggi di posta
   - Gli URL che non hanno una reputazione valida vengono detonati in modo asincrono in background.
 
 - **Applica l'analisi degli URL** in tempo reale per i collegamenti sospetti e i collegamenti che puntano ai file: consente l'analisi in tempo reale dei collegamenti, inclusi i collegamenti nei messaggi di posta elettronica che puntano a contenuto scaricabile. Il valore consigliato è abilitato.
-
   - **Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio:**
-
     - Abilitato: i messaggi che contengono URL vengono mantenuti fino al termine dell'analisi. I messaggi vengono recapitati solo dopo la conferma della sicurezza degli URL. Questo è il valore consigliato.
     - Disabilitato: se l'analisi degli URL non può essere completata, recapita comunque il messaggio.
 
@@ -128,7 +129,6 @@ Le impostazioni dei criteri collegamenti sicuri applicabili ai messaggi di posta
   Per ulteriori informazioni sui valori consigliati per le impostazioni dei criteri Standard e Strict per i criteri collegamenti sicuri, vedere [Safe Links policy settings.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - **Filtri destinatari:** è necessario specificare le condizioni e le eccezioni del destinatario che determinano a chi si applica il criterio. È possibile utilizzare queste proprietà per le condizioni e le eccezioni:
-
   - **Il destinatario è**
   - **Il dominio del destinatario è**
   - **Il destinatario è un membro di**
@@ -138,7 +138,7 @@ Le impostazioni dei criteri collegamenti sicuri applicabili ai messaggi di posta
 - **Priorità:** se si creano più criteri, è possibile specificare l'ordine in cui vengono applicati. Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
   Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
-
+  
 ### <a name="how-safe-links-works-in-email-messages"></a>Funzionamento dei collegamenti sicuri nei messaggi di posta elettronica
 
 A livello di alto livello, ecco come funziona la protezione dei collegamenti sicuri sugli URL nei messaggi di posta elettronica:
@@ -259,26 +259,23 @@ Quando un utente in un criterio collegamenti sicuri attivo fa clic su un collega
 
 L'elenco degli URL viene configurato nelle impostazioni globali per i collegamenti sicuri. Per istruzioni, vedere [Configurare l'elenco "Blocca gli URL seguenti".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)
 
-> [!NOTE]
-> 
-> - Per un elenco veramente universale degli URL bloccati ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Limiti:
->   - Il numero massimo di voci è 500.
->   - La lunghezza massima di una voce è di 128 caratteri.
->   - Tutte le voci non possono superare i 10.000 caratteri.
-> 
-> - Non includere una barra ( `/` ) alla fine dell'URL. Ad esempio, utilizzare `https://www.contoso.com` , non `https://www.contoso.com/` .
-> 
-> - Un URL solo dominio (ad esempio `contoso.com` o `tailspintoys.com` ) blocterà qualsiasi URL che contiene il dominio.
-> 
-> - È possibile bloccare un sottodominio senza bloccare il dominio completo. Ad esempio, `toys.contoso.com*` blocca qualsiasi URL che contiene il sottodominio, ma non blocca gli URL che contengono il dominio completo `contoso.com` .
-> 
-> - È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url.
+**Note**:
+
+- Per un elenco veramente universale degli URL bloccati ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- Limiti per **l'elenco Blocca gli URL** seguenti:
+  - Il numero massimo di voci è 500.
+  - La lunghezza massima di una voce è di 128 caratteri.
+  - Tutte le voci non possono superare i 10.000 caratteri.
+- Non includere una barra ( `/` ) alla fine dell'URL. Ad esempio, utilizzare `https://www.contoso.com` , non `https://www.contoso.com/` .
+- Un URL solo dominio (ad esempio `contoso.com` o `tailspintoys.com` ) blocterà qualsiasi URL che contiene il dominio.
+- È possibile bloccare un sottodominio senza bloccare il dominio completo. Ad esempio, `toys.contoso.com*` blocca qualsiasi URL che contiene il sottodominio, ma non blocca gli URL che contengono il dominio completo `contoso.com` .
+- È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Sintassi delle voci per l'elenco "Blocca gli URL seguenti"
 
 Nella tabella seguente sono descritti alcuni esempi dei valori che è possibile immettere e dei relativi risultati:
+
+<br>
 
 ****
 
@@ -299,24 +296,24 @@ Ogni criterio Collegamenti sicuri contiene un elenco Non riscrivere gli **URL** 
 
 Per aggiungere voci all'elenco nei criteri collegamenti sicuri nuovi o esistenti, vedere [Create Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) o Modify Safe Links [policies.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
-> [!NOTE]
-> 
-> - I client seguenti non riconoscono gli elenchi **Non riscrivere** gli URL seguenti nei criteri Collegamenti sicuri. Agli utenti inclusi nei criteri può essere impedito di accedere agli URL in base ai risultati dell'analisi dei collegamenti sicuri in questi client:
-> 
->   - Microsoft Teams
->   - Office Web app
-> 
->   Per un elenco veramente universale degli URL consentiti ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Prendi in considerazione l'aggiunta di URL interni di uso comune all'elenco per migliorare l'esperienza utente. Ad esempio, se si dispone di servizi locali, ad esempio Skype for Business o SharePoint, è possibile aggiungere tali URL per escluderli dall'analisi.
-> 
-> - Se si dispone già di **Do not rewrite the following URL** entries in your Safe Links policies, assicurarsi di esaminare gli elenchi e aggiungere caratteri jolly in base alle esigenze. Ad esempio, l'elenco include una voce simile e `https://contoso.com/a` successivamente decidi di includere sottopercorso come `https://contoso.com/a/b` . Anziché aggiungere una nuova voce, aggiungere un carattere jolly alla voce esistente in modo che diventi `https://contoso.com/a/*` .
-> 
-> - È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url. I caratteri jolly includono in modo esplicito prefissi o sottodomini. Ad esempio, la voce non corrisponde a , perché consente agli utenti di visitare sottodomini e percorsi `contoso.com` `*.contoso.com/*` nel dominio `*.contoso.com/*` specificato.
+**Note**:
+
+- I client seguenti non riconoscono gli elenchi **Non riscrivere** gli URL seguenti nei criteri Collegamenti sicuri. Agli utenti inclusi nei criteri può essere impedito di accedere agli URL in base ai risultati dell'analisi dei collegamenti sicuri in questi client:
+  - Microsoft Teams
+  - Office Web app
+
+  Per un elenco veramente universale degli URL consentiti ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+
+- Prendi in considerazione l'aggiunta di URL interni di uso comune all'elenco per migliorare l'esperienza utente. Ad esempio, se si dispone di servizi locali, ad esempio Skype for Business o SharePoint, è possibile aggiungere tali URL per escluderli dall'analisi.
+- Se si dispone già di **Do not rewrite the following URL** entries in your Safe Links policies, assicurarsi di esaminare gli elenchi e aggiungere caratteri jolly in base alle esigenze. Ad esempio, l'elenco include una voce simile e `https://contoso.com/a` successivamente decidi di includere sottopercorso come `https://contoso.com/a/b` . Anziché aggiungere una nuova voce, aggiungere un carattere jolly alla voce esistente in modo che diventi `https://contoso.com/a/*` .
+- È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url. I caratteri jolly includono in modo esplicito prefissi o sottodomini. Ad esempio, la voce non corrisponde a , perché consente agli utenti di visitare sottodomini e percorsi `contoso.com` `*.contoso.com/*` nel dominio `*.contoso.com/*` specificato.
+- Se un URL utilizza il reindirizzamento automatico per HTTP a HTTPS (ad esempio, il reindirizzamento 302 per ), e si tenta di immettere sia le voci HTTP che HTTPS per lo stesso URL nell'elenco, è possibile notare che la seconda voce URL sostituisce la prima voce `http://www.contoso.com` `https://www.contoso.com` URL. Questo comportamento non si verifica se le versioni HTTP e HTTPS dell'URL sono completamente separate.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Sintassi delle voci per l'elenco "Non riscrivere gli URL seguenti"
 
 Nella tabella seguente sono descritti alcuni esempi dei valori che è possibile immettere e dei relativi risultati:
+
+<br>
 
 ****
 

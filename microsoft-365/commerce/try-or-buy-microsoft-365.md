@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 search.appverid: MET150
-description: Scopri come ottenere una versione di valutazione gratuita o acquistare un abbonamento per Microsoft 365 per le aziende.
+description: Iscriversi per una versione di valutazione gratuita di 30 giorni Microsoft 365 Business Standard, Microsoft 365 Business Premium o Microsoft 365 Apps for business.
 ms.date: 08/07/2020
-ms.openlocfilehash: 78716d78745616530729ff2fa5cfa31202e056c8
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344687"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583449"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Provare o acquistare un abbonamento Microsoft 365 per le aziende
 
@@ -141,11 +141,11 @@ Se si dispone di un nuovo account e si sta configurando il primo abbonamento, è
 
 Se si dispone già di una sottoscrizione e si sta aggiungendo una nuova sottoscrizione, è possibile spostarvi gli utenti. Per informazioni su come, vedere [Spostare gli utenti in un abbonamento diverso.](subscriptions/move-users-different-subscription.md)
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Microsoft 365 video di formazione per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (video di formazione)\
+[Microsoft 365 video di formazione per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (video)\
 [Aggiungere utenti e assegnare licenze contemporaneamente](../admin/add-users/add-users.md) (articolo)\
 [Assegnare licenze agli utenti](../admin/manage/assign-licenses-to-users.md) (articolo)\
 [Eseguire l'aggiornamento a un piano diverso](subscriptions/upgrade-to-different-plan.md) (articolo)\
 [Acquistare o modificare un componente aggiuntivo per Microsoft 365 per le aziende](buy-or-edit-an-add-on.md) (articolo)\
-[Aggiungere spazio di archiviazione per l'abbonamento](add-storage-space.md)
+[Aggiungere spazio di archiviazione per la sottoscrizione](add-storage-space.md) (articolo)

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come posta elettronica e Skype for Business Online utilizzino il proprio nome di dominio.
-ms.openlocfilehash: 1348beb09fcbc5c12d01dbf197b1cb1240decded
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 447cc69aa2c4c3edcf1c4c6a2435cdc27fc22cd2
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332643"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582993"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 
@@ -196,3 +196,10 @@ Dopo l'aggiornamento dei record del server dei nomi in modo che puntino a Micros
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Quindi la posta elettronica Microsoft e altri servizi saranno tutti impostati per l'utilizzo con il dominio. 
   
+## <a name="related-content"></a>Contenuto correlato
+
+[Aggiungere record DNS per connettere il dominio](create-dns-records-at-any-dns-hosting-provider.md) (articolo)
+
+[Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)
+
+[Gestire i domini](index.yml) (pagina di collegamento)

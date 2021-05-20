@@ -17,12 +17,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 321e27f22295a4da17d0eb37b477a1dc7b779d38
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644765"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583713"
 ---
 # <a name="user-submissions-policy"></a>Criteri per gli invii di utenti
 
@@ -33,7 +33,7 @@ ms.locfileid: "51644765"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nelle organizzazioni di Microsoft 365 con cassette postali di Exchange Online, è possibile specificare una cassetta postale per ricevere i messaggi che gli utenti segnalano come dannosi o non dannosi. Quando gli utenti inviano messaggi utilizzando le varie opzioni di segnalazione, è possibile utilizzare questa cassetta postale per intercettare i messaggi (solo inviare alla cassetta postale personalizzata) o ricevere copie dei messaggi (inviare alla cassetta postale personalizzata e a Microsoft). Questa funzionalità funziona con le opzioni di segnalazione dei messaggi seguenti:
+Nelle Microsoft 365 con cassette postali Exchange Online, è possibile specificare una cassetta postale per ricevere i messaggi che gli utenti segnalano come dannosi o non dannosi. Quando gli utenti inviano messaggi utilizzando le varie opzioni di segnalazione, è possibile utilizzare questa cassetta postale per intercettare i messaggi (solo inviare alla cassetta postale personalizzata) o ricevere copie dei messaggi (inviare alla cassetta postale personalizzata e a Microsoft). Questa funzionalità funziona con le opzioni di segnalazione dei messaggi seguenti:
 
 - [Componente aggiuntivo Segnala messaggio](enable-the-report-message-add-in.md)
 
@@ -44,7 +44,7 @@ Nelle organizzazioni di Microsoft 365 con cassette postali di Exchange Online, �
 - [Report incorporati in Outlook per iOS e Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
 
   > [!NOTE]
-  > Se la segnalazione è stata disabilitata in Outlook sul [Web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)l'abilitazione degli invii degli utenti qui avrà la precedenza su tale impostazione e consentirà agli utenti di segnalare di nuovo i messaggi in Outlook sul Web.
+  > Se i report sono stati [disabilitati in Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)sul Web, l'abilitazione degli invii degli utenti qui avrà la precedenza su tale impostazione e consentirà agli utenti di segnalare di nuovo i messaggi Outlook sul Web.
 
 È inoltre possibile configurare gli strumenti di segnalazione dei messaggi di terze parti per inoltrare i messaggi alla cassetta postale specificata.
 
@@ -54,11 +54,11 @@ Il recapito dei messaggi segnalati dall'utente a una cassetta postale personaliz
 
 Utilizzare gli articoli seguenti per configurare i prerequisiti necessari in modo che i messaggi segnalati dall'utente vadano alla cassetta postale personalizzata:
 
-- Ignorare il filtro della posta indesiderata sulla cassetta postale personalizzata creando una regola del flusso di posta di Exchange per impostare il livello di probabilità di posta indesiderata. Vedere [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **-1**.
+- Ignorare il filtro della posta indesiderata sulla cassetta postale personalizzata creando una regola del flusso di posta di Exchange per impostare il livello di probabilità di posta indesiderata. Vedere [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to Bypass spam **filtering**.
 
-- Disattivare l'analisi degli allegati per la ricerca di malware nella cassetta postale personalizzata. Usare Configurare i criteri allegati sicuri [in Defender per Office 365](set-up-safe-attachments-policies.md) per creare un criterio Allegati sicuri con l'impostazione **Disattivato** per allegati sicuri risposta **malware sconosciuto.**
+- Disattivare l'analisi degli allegati per la ricerca di malware nella cassetta postale personalizzata. Usa [Configurare i criteri allegati sicuri in Defender per Office 365](set-up-safe-attachments-policies.md) per creare un criterio Allegati sicuri con l'impostazione **Disattivato** per allegati sicuri risposta **malware sconosciuto.**
 
-- Disattivare l'analisi degli URL nei messaggi nella cassetta postale personalizzata. Usare Configurare i criteri collegamenti sicuri [in Defender per Office 365](set-up-safe-links-policies.md) per creare un criterio Collegamenti sicuri con l'impostazione **Disattivato** per Selezionare l'azione per URL sconosciuti potenzialmente dannosi **nei messaggi**.
+- Disattivare l'analisi degli URL nei messaggi nella cassetta postale personalizzata. Usa Configurare i criteri collegamenti sicuri [in Defender per Office 365](set-up-safe-links-policies.md) per creare un criterio Collegamenti sicuri con l'impostazione **Disattivato** per Selezionare l'azione per URL sconosciuti potenzialmente dannosi **nei messaggi.**
 
 - Creare un criterio antimalware per disattivare l'eliminazione automatica di malware zero ore. Vedere [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) to set Malware **Zero-hour Auto Purge** to **Off.**
 
@@ -75,15 +75,15 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 - Per modificare la configurazione per gli invii di utenti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
   - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-  - **Gestione dell'organizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Gestione organizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- È necessario accedere a PowerShell di Exchange Online. Se l'account che si sta tentando di utilizzare non ha accesso a PowerShell di Exchange Online, verrà visualizzato un errore simile al seguente quando si specifica la cassetta postale degli invii:
+- È necessario accedere a Exchange Online PowerShell. Se l'account che si sta tentando di utilizzare non ha accesso Exchange Online PowerShell, quando si specifica la cassetta postale degli invii verrà visualizzato un errore simile al seguente:
 
   > Specificare un indirizzo di posta elettronica nel dominio
 
-  Per ulteriori informazioni sull'abilitazione o disabilitazione dell'accesso a PowerShell di Exchange Online, vedere i seguenti argomenti:
+  Per ulteriori informazioni sull'abilitazione o disabilitazione dell'accesso Exchange Online PowerShell, vedere gli argomenti seguenti:
 
-  - [Abilitare o disabilitare l'accesso a PowerShell di Exchange Online](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Abilitare o disabilitare l'accesso Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [Regole di Accesso client in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Utilizzare il Centro sicurezza & conformità per configurare la cassetta postale degli invii degli utenti
@@ -104,7 +104,7 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 
         - **Dopo l'invio:** fai clic ![ su Espandi ](../../media/scc-expand-icon.png) icona. Nelle **caselle Titolo** e **Messaggio** di conferma immettere il testo descrittivo visualizzato dagli utenti dopo la segnalazione di un messaggio utilizzando il componente aggiuntivo Segnala messaggio o Segnala phishing. Puoi usare la variabile %type% per includere il tipo di invio.
 
-      Al termine, fare clic su **Salva**. Per cancellare questi valori, fare **clic su Ripristina** nella pagina **Invii** utente.
+      Al termine, scegliere **Salva**. Per cancellare questi valori, fare **clic su Ripristina** nella pagina **Invii** utente.
     
     - **Personalizzare le opzioni di creazione di report per l'utente finale:** fare clic su questo collegamento. Nel riquadro **a comparsa Personalizza opzioni di segnalazione dell'utente** finale visualizzato immettere il testo descrittivo per le opzioni di segnalazione della posta indesiderata. 
     
@@ -113,18 +113,18 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
         - **Inviare automaticamente report**
         - **Non inviare mai rapporti**
        
-      Al termine, fare clic su **Salva**.
+      Al termine, scegliere **Salva**.
 
         - **Invia i messaggi segnalati a**: Effettuare una delle seguenti selezioni:
 
         - **Microsoft (scelta consigliata):** la cassetta postale di invio degli utenti non viene utilizzata (tutti i messaggi segnalati vengono inviati a Microsoft).
 
-        - **Sia Microsoft che una cassetta postale personalizzata:** nella casella visualizzata, immettere l'indirizzo di posta elettronica di una cassetta postale di Exchange Online esistente. I gruppi di distribuzione non sono consentiti. Gli invii utente verranno a Microsoft per l'analisi e alla cassetta postale personalizzata per l'amministratore o il team delle operazioni di sicurezza da analizzare.
+        - **Sia Microsoft che una cassetta postale personalizzata:** nella casella visualizzata, immettere l'indirizzo di posta elettronica di una cassetta postale Exchange Online esistente. I gruppi di distribuzione non sono consentiti. Gli invii utente verranno a Microsoft per l'analisi e alla cassetta postale personalizzata per l'amministratore o il team delle operazioni di sicurezza da analizzare.
 
-        - **Solo cassetta postale personalizzata:** nella casella visualizzata, immettere l'indirizzo di posta elettronica di una cassetta postale di Exchange Online esistente. I gruppi di distribuzione non sono consentiti. Utilizzare questa opzione se si desidera che il messaggio vada prima solo a un amministratore o al team delle operazioni di sicurezza per l'analisi. I messaggi non verranno inviati a Microsoft a meno che l'amministratore non lo inseri.
+        - **Solo cassetta postale personalizzata:** nella casella visualizzata, immettere l'indirizzo di posta elettronica di una cassetta postale Exchange Online esistente. I gruppi di distribuzione non sono consentiti. Utilizzare questa opzione se si desidera che il messaggio vada prima solo a un amministratore o al team delle operazioni di sicurezza per l'analisi. I messaggi non verranno inviati a Microsoft a meno che l'amministratore non lo inseri.
 
           > [!NOTE]
-          > Le organizzazioni governative statunitensi (GCC, GCC-H e DoD) possono configurare solo **la cassetta postale personalizzata.** Le altre due opzioni sono disabilitate.
+          > Le organizzazioni governative statunitensi (GCC, GCC-H e DoD) possono configurare solo **cassette postali personalizzate.** Le altre due opzioni sono disabilitate.
 
           > [!NOTE]
           > Se le organizzazioni sono configurate per l'invio solo alla cassetta postale personalizzata, i messaggi segnalati non verranno inviati per la nuova analisi e i risultati nel portale Messaggi segnalati dall'utente saranno sempre vuoti.
@@ -132,12 +132,12 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
       Al termine, fare clic su **Conferma**.
 
       > [!CAUTION]
-      > Se è stata disabilitata la segnalazione della posta indesiderata [in Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) sul Web utilizzando i criteri cassetta postale di Outlook sul Web, ma si configura una delle impostazioni precedenti per segnalare i messaggi a Microsoft, gli utenti potranno segnalare i messaggi a Microsoft in Outlook sul Web utilizzando il componente aggiuntivo Segnala messaggio o Segnala phishing.
+      > Se è stata disabilitata la segnalazione della posta indesiderata [in Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) sul Web utilizzando i criteri delle cassette postali di Outlook sul Web, ma si configura una delle impostazioni precedenti per segnalare i messaggi a Microsoft, gli utenti potranno segnalare i messaggi a Microsoft in Outlook sul Web utilizzando il componente aggiuntivo Segnala messaggio o segnala phishing.
 
 
-    2. **Disabilitare** la funzionalità Segnala messaggio per Outlook : selezionare questa opzione se si utilizzano strumenti di segnalazione di terze parti anziché il componente aggiuntivo Segnala messaggio, il componente aggiuntivo Segnala phishing o i report incorporati in Outlook sul Web e quindi configurare le impostazioni seguenti:
+    2. Disabilitare la funzionalità Segnala messaggio per **Outlook**: selezionare questa opzione se si utilizzano strumenti di report di terze parti anziché il componente aggiuntivo Segnala messaggio, il componente aggiuntivo Segnala phishing o il report incorporato in Outlook sul Web e quindi configurare le impostazioni seguenti:
 
-       Selezionare **Usa questa cassetta postale personalizzata per ricevere gli invii segnalati dall'utente.** Nella casella visualizzata immettere l'indirizzo di posta elettronica di una cassetta postale esistente già in Office 365. Deve essere una cassetta postale esistente in Exchange Online in grado di ricevere posta elettronica.
+       Selezionare **Usa questa cassetta postale personalizzata per ricevere gli invii segnalati dall'utente.** Nella casella visualizzata, immettere l'indirizzo di posta elettronica di una cassetta postale esistente già in Office 365. Deve trattarsi di una cassetta postale esistente in Exchange Online che può ricevere posta elettronica.
 
        Al termine, fare clic su **Conferma**.
 

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come pianificare gli argomenti relativi alla pianificazione per Microsoft Viva
-ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957540"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583113"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Pianificare gli argomenti di Microsoft Viva
 
@@ -23,7 +23,7 @@ L'utente ha il controllo dell'esperienza degli argomenti nell'organizzazione. Le
 
 In questo articolo verranno esaminate queste decisioni di pianificazione:
 
-- Siti di SharePoint di cui eseguire la ricerca per indicizzazione per gli argomenti
+- Quali SharePoint di ricerca per indicizzazione per gli argomenti
 - Quali argomenti, se presenti, si desidera escludere dalle esperienze degli argomenti
 - Utenti a cui si desidera rendere visibili gli argomenti
 - Quali utenti si desidera concedere le autorizzazioni per gestire gli argomenti nel Centro argomenti
@@ -32,26 +32,28 @@ In questo articolo verranno esaminate queste decisioni di pianificazione:
 
 La sicurezza e la privacy dei dati vengono rispettate e le esperienze degli argomenti non concedono agli utenti l'accesso aggiuntivo ai file a cui non hanno diritti. È consigliabile leggere anche [La sicurezza e la privacy](topic-experiences-security-privacy.md) di Microsoft Viva Topics nell'ambito del processo di pianificazione.
 
+Per saperne di più sulla tecnologia IA alla base di Viva Topics, leggi [Alessandria in Microsoft Viva Topics: dai big data alle grandi conoscenze.](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
+
 ## <a name="requirements"></a>Requisiti
 
-È necessario essere [abbonati a Viva Topics](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o un amministratore di SharePoint per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
+Devi essere [sottoscritto a Viva Topics](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o SharePoint amministratore per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
 
 Tutti gli utenti che useranno Gli argomenti richiedono una **licenza esperienze di** argomento. L'assegnazione delle licenze è trattata in [Set up Microsoft Viva Topics.](set-up-topic-experiences.md)
 
 ## <a name="topic-discovery"></a>Individuazione argomenti
 
-Le impostazioni di individuazione degli argomenti specificano quali siti di SharePoint vengono utilizzati come origini per gli argomenti. È possibile scegliere di includere tutti i siti di SharePoint, un elenco specifico di siti o nessun sito. È consigliabile scegliere tutti i siti in modo che le esperienze degli argomenti possano individuare un gran numero di argomenti importanti per gli utenti.
+Le impostazioni di individuazione degli argomenti specificano i siti di SharePoint da usare come origini per gli argomenti. È possibile scegliere di includere tutti i siti di SharePoint, uno specifico elenco di siti o nessun sito. È consigliabile scegliere tutti i siti in modo che le esperienze degli argomenti possano individuare un gran numero di argomenti importanti per gli utenti.
 
-Quando si configurano gli argomenti, è possibile scegliere tra le opzioni seguenti:
+Quando si configurano gli argomenti è possibile scegliere uno dei seguenti comandi:
 
-- **Tutti i siti**: tutti i siti di SharePoint nell'organizzazione. Sono inclusi i siti correnti e futuri.
-- **Tutti, ad eccezione dei siti selezionati:** tutti i siti ad eccezione di quelli specificati. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. 
-- **Solo siti selezionati:** solo i siti specificati. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti.
-- **Nessun sito:** non includere alcun sito di SharePoint.
+- **Tutti i siti**: tutti i siti di SharePoint nell’organizzazione. Sono inclusi i siti correnti e futuri.
+- **Tutti, ad eccezione dei siti specificati.**: tutti i siti ad eccezione di quelli specificati. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. 
+- **Solo siti selezionati:** solo i siti specificati. I siti creati in futuro non verranno inclusi come origini per l’individuazione di argomenti.
+- **Nessun sito**: non includere siti di SharePoint.
 
-Se si sceglie **Tutti, ad** eccezione dei siti selezionati o Solo i siti **selezionati,** è possibile caricare un file CSV con un elenco di siti. Queste opzioni sono utili se si sta eseguendo un progetto pilota e si desidera includere un numero limitato di siti da avviare.
+Se si sceglie **Tutti,** ad eccezione dei siti selezionati o Solo i siti **selezionati,** è possibile caricare un file .csv con un elenco di siti. Queste opzioni sono utili se si sta eseguendo un progetto pilota e si desidera includere un numero limitato di siti da avviare.
 
-È possibile copiare il modello csv seguente:
+Puoi copiare il modello .csv seguente:
 
 ``` csv
 Site name,URL
@@ -90,9 +92,9 @@ Se si desidera limitare la creazione e la modifica di argomenti a utenti o grupp
 
 È possibile scegliere di non consentire a nessuno di contribuire agli argomenti, tuttavia non è consigliabile. Se si sceglie questa opzione, i knowledge manager potranno comunque modificare e creare argomenti.
 
-*Visualizzatori argomenti*
+*Visualizzatori dell'argomento*
 
-I visualizzatori di argomenti possono visualizzare informazioni sulle pagine degli argomenti, nei risultati della ricerca e quando gli argomenti vengono evidenziati nel contenuto come le pagine di SharePoint. Gli utenti possono visualizzare gli argomenti individuati solo quando hanno accesso ai file e alle pagine in cui è stato individuato l'argomento.
+I visualizzatori di argomenti possono visualizzare informazioni sulle pagine degli argomenti, nei risultati della ricerca e quando gli argomenti vengono evidenziati nel contenuto come SharePoint pagine. Gli utenti possono visualizzare gli argomenti individuati solo quando hanno accesso ai file e alle pagine in cui è stato individuato l'argomento.
 
 Quando si configurano i visualizzatori di argomenti, è possibile scegliere tra:
 
@@ -106,11 +108,11 @@ Si consiglia **a Tutti gli** utenti dell'organizzazione, ma se si sta eseguendo 
 
 Gli amministratori possono escludere determinati argomenti dalle esperienze degli argomenti. Ciò è utile se si desidera evitare che i dati sensibili appaiano negli argomenti. Anche se i knowledge manager possono escludere gli argomenti nel Centro argomenti, gli argomenti esclusi dall'amministratore non sono nemmeno visibili ai knowledge manager. I responsabili della conoscenza possono anche rimuovere gli argomenti nel Centro argomenti dopo l'individuazione.
 
-Se si desidera escludere gli argomenti a livello di amministratore, è necessario aggiungerli a un file CSV e caricare il file. È possibile eseguire questa operazione durante l'installazione o in un secondo momento.
+Se si desidera escludere gli argomenti a livello di amministratore, è necessario aggiungerli a un .csv file e caricare il file. È possibile eseguire questa operazione durante l'installazione o in un secondo momento.
 
-Il file CSV deve contenere i parametri seguenti:
+Il .csv file deve contenere i parametri seguenti:
 
-- **Nome**: digitare il nome dell'argomento che si desidera escludere. Questa operazione può essere eseguita in due modi:
+- **Nome**: digitare il nome dell’argomento da escludere. È possibile eseguire questa operazione in due modi:
 - **MatchType-Exact/Partial**: Digitare se il nome immesso è un *tipo* di corrispondenza esatto *o* parziale.
     - Corrispondenza esatta: è possibile includere il nome esatto o l'acronimo (ad esempio, *Contoso* o *ATL).*
     - Corrispondenza parziale: è possibile escludere tutti gli argomenti che includono una parola specifica.  Ad esempio, *arco* escluderà tutti gli argomenti con la parola arco *al* suo interno, ad esempio Cerchio *arco,* *Saldatura* arco di plasma o *Arco di formazione.* Si noti che non verranno esclusi gli argomenti in cui il testo è incluso come parte di una parola, ad esempio *Architettura*.
@@ -126,17 +128,17 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Amministrazione
 
-Quando si configurano gli argomenti, come parte del processo di installazione, viene creato automaticamente un centro argomenti. Pensa a cosa vuoi assegnare un nome al Centro argomenti e a cosa vuoi che sia l'URL. È possibile impostare sia il nome che l'URL come parte del processo di installazione e modificare il nome (ma non l'URL) in un secondo momento nell'interfaccia di amministrazione di Microsoft 365. È possibile avere un solo centro argomenti.
+Quando si configurano gli argomenti, come parte del processo di installazione, viene creato automaticamente un centro argomenti. Pensa a cosa vuoi assegnare un nome al Centro argomenti e a cosa vuoi che sia l'URL. È possibile impostare sia il nome che l'URL come parte del processo di installazione ed è possibile modificare il nome (ma non l'URL) in un secondo momento nell'interfaccia di amministrazione di Microsoft 365. È possibile avere un solo centro argomenti.
 
 ## <a name="setup-checklist"></a>Elenco di controllo per l'installazione
 
 Quando si configurano le esperienze degli argomenti, durante l'installazione guidata saranno necessari gli elementi seguenti:
 
 > [!div class="checklist"]
-> * Elenco di siti da includere o escludere se non si includono tutti i siti per l'individuazione degli argomenti
-> * Gruppo di sicurezza per i visualizzatori di argomenti se non si consente a tutti gli utenti di visualizzare gli argomenti
-> * Gruppo di sicurezza per i collaboratori di argomenti se non si consente a tutti gli utenti di creare e modificare argomenti
-> * Gruppo di sicurezza per i knowledge manager degli argomenti se non si consente a tutti gli utenti di gestire gli argomenti
+> * Elenco dei siti da includere o escludere se non si includono tutti i siti per l'individuazione di argomenti
+> * Gruppo di sicurezza per visualizzatori di argomenti se non si consente a tutti gli utenti di visualizzare gli argomenti
+> * Gruppo di sicurezza per collaboratori di argomenti se non si consente a tutti gli utenti di creare e modificare gli argomenti
+> * Gruppo di sicurezza per responsabili delle informazioni di argomenti se non si consente a tutti gli utenti di gestire gli argomenti
 > * Elenco di argomenti sensibili da escludere dall'individuazione degli argomenti
 > * Nome del sito Centro argomenti
 
@@ -150,4 +152,4 @@ Quando si configurano le esperienze degli argomenti, durante l'installazione gui
 
 [Gestire le autorizzazioni per gli argomenti in Microsoft 365](topic-experiences-user-permissions.md)
 
-[Modificare il nome del Centro argomenti in Microsoft 365](topic-experiences-administration.md)
+[Modificare il nome del centro argomenti in Microsoft 365](topic-experiences-administration.md)

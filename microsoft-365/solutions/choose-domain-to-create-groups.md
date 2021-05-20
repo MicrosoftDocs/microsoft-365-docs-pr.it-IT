@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Informazioni su come scegliere il dominio da usare per la creazione di Microsoft 365 di posta elettronica configurando i criteri degli indirizzi di posta elettronica tramite PowerShell.
-ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538220"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583149"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Scegliere il dominio da utilizzare per la creazione Microsoft 365 gruppi
 
@@ -119,10 +119,10 @@ Ci sono alcune altre cose da sapere:
     
 - È possibile configurare un limite massimo di 100 criteri per gli indirizzi di posta elettronica per un'organizzazione.
     
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Pianificazione dettagliata della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Pianificazione dettagliata della governance della](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) collaborazione (articolo)
 
-[Creare il piano di governance della collaborazione](collaboration-governance-first.md)
+[Creare il piano di governance della collaborazione](collaboration-governance-first.md) (articolo)
 
-[Creare un Microsoft 365 nell'interfaccia di amministrazione](../admin/create-groups/create-groups.md)
+[Creare un Microsoft 365 nell'interfaccia di amministrazione](../admin/create-groups/create-groups.md) (articolo)

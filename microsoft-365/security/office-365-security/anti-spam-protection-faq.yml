@@ -20,12 +20,12 @@ metadata:
   description: Gli amministratori possono visualizzare le domande frequenti e le risposte sulla protezione da posta indesiderata in Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 430ed10d74dea909415ee0ca32d33ad8d006ae6b
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: e632ab1183c43cd50da7c2cf7832a5a18fa64d50
+  ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334054"
+  ms.lasthandoff: 05/20/2021
+  ms.locfileid: "52583617"
 title: Domande frequenti sulla protezione da posta indesiderata
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  In questo argomento vengono fornite domande frequenti e risposte sulla protezione antimalware per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online o organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online.
+  In questo argomento vengono fornite domande frequenti e risposte sulla protezione antimalware per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online o organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali Exchange Online.
 
 
   Per domande e risposte sulla quarantena, vedere [Domande frequenti sulla quarantena](quarantine-faq.yml).
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > Nelle distribuzioni ibride in cui EOP protegge le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) nell'organizzazione exchange locale per rilevare le intestazioni del filtro posta indesiderata di EOP aggiunte ai messaggi. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+      > Nelle distribuzioni ibride in cui EOP protegge le cassette postali locali, è necessario configurare due regole del flusso di posta Exchange (note anche come regole di trasporto) nell'organizzazione Exchange locale per rilevare le intestazioni del filtro posta indesiderata di EOP aggiunte ai messaggi. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
        **Per i messaggi in uscita:** Il messaggio viene instradato attraverso il [pool](high-risk-delivery-pool-for-outbound-messages.md) di recapito ad alto rischio o viene restituito al mittente in un rapporto di mancato recapito (noto anche come rapporto di mancato recapito o messaggio di mancato recapito). Per ulteriori informazioni sulla protezione da posta indesiderata in uscita, vedere [Outbound spam controls](outbound-spam-controls.md).
   - question: >
@@ -70,7 +70,9 @@ sections:
       Una variante di posta indesiderata zero-day è una variante sconosciuta di posta indesiderata di prima generazione che non è mai stata acquisita o analizzata, quindi i filtri di protezione da posta indesiderata non hanno ancora informazioni disponibili per rilevarla. Dopo che un campione di posta indesiderata zero-day è stato acquisito e analizzato dai nostri analisti della posta indesiderata, se soddisfa i criteri di classificazione della posta indesiderata, i filtri di protezione da posta indesiderata vengono aggiornati per rilevarlo e non viene più considerato "zero-day".
 
 
-      **Nota:** Se si riceve un messaggio che potrebbe essere una variante di posta indesiderata zero-day, per aiutarci a migliorare il servizio, inviare il messaggio a Microsoft utilizzando uno dei metodi descritti in Segnalare messaggi e file a [Microsoft](report-junk-email-messages-to-microsoft.md).
+      > [!NOTE]
+
+      > Se si riceve un messaggio che potrebbe essere una variante di posta indesiderata zero-day, per aiutarci a migliorare il servizio, inviare il messaggio a Microsoft utilizzando uno dei metodi descritti in Segnalare messaggi e file a [Microsoft](report-junk-email-messages-to-microsoft.md).
   - question: >
       È necessario configurare il servizio per fornire la protezione dalla posta indesiderata?
     answer: >
@@ -80,7 +82,7 @@ sections:
       Per ulteriori informazioni, vedere i seguenti argomenti:
 
 
-      [Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365](recommended-settings-for-eop-and-office365.md)
+      [Impostazioni consigliate per EOP e Microsoft Defender per Office 365 sicurezza](recommended-settings-for-eop-and-office365.md)
 
 
       [Configurare il filtro connessioni in EOP](configure-the-connection-filter-policy.md)
@@ -97,7 +99,7 @@ sections:
   - question: >
       Il filtro della posta elettronica in blocco è abilitato per impostazione predefinita?
     answer: >
-      Sì. Per ulteriori informazioni sulla posta elettronica in blocco, vedere Qual è la differenza tra posta indesiderata [e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+      Sì. Per ulteriori informazioni sulla posta elettronica in blocco, vedere [Differenza tra posta elettronica indesiderata e posta elettronica in blocco](what-s-the-difference-between-junk-email-and-bulk-email.md)
   - question: >
       Il servizio offre filtro URL?
     answer: >
@@ -109,13 +111,13 @@ sections:
   - question: >
       È possibile ricevere rapporti sulla posta indesiderata?
     answer: >
-      Sì, ad esempio, è possibile ottenere un report di rilevamento della posta indesiderata nell'interfaccia di amministrazione di Microsoft 365. Questo report mostra il volume di posta indesiderata come conteggio dei messaggi univoci. Per ulteriori informazioni sulla segnalazione, vedere i seguenti collegamenti:
+      Sì, ad esempio, è possibile ottenere un report di rilevamento della posta indesiderata nell'Microsoft 365 di amministrazione. Questo report mostra il volume di posta indesiderata come conteggio dei messaggi univoci. Per ulteriori informazioni sulla segnalazione, vedere i seguenti collegamenti:
 
 
-      Clienti di Exchange Online: [monitoraggio, creazione di report e traccia dei messaggi in Exchange Online](/exchange/monitoring/monitoring)
+      Exchange Online clienti: [monitoraggio, creazione di report e traccia dei messaggi in Exchange Online](/exchange/monitoring/monitoring)
 
 
-      Clienti EOP autonomi: [segnalazione e traccia dei messaggi in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
+      Clienti EOP autonomi: [creazione di report e traccia dei messaggi in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
   - question: >
       Qualcuno mi ha inviato un messaggio e non riesco a trovarlo. Sospetto che sia stato identificato come posta indesiderata. Esiste uno strumento per scoprirlo?
     answer: >
@@ -133,10 +135,10 @@ sections:
       Sì. Anche se ti consigliamo di indirizzare il record MX a Microsoft, ci rendiamo conto che esistono motivi aziendali legittimi per instradare la posta elettronica a un luogo diverso da Microsoft.
 
 
-      - **In ingresso:** modificare i record MX in modo che puntino al provider di terze parti e quindi reindirizzare i messaggi a EOP per un'ulteriore elaborazione. Per ulteriori informazioni, vedere [Enhanced Filtering for connectors in Exchange Online.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+      - **In ingresso:** modificare i record MX in modo che puntino al provider di terze parti e quindi reindirizzare i messaggi a EOP per un'ulteriore elaborazione. Per ulteriori informazioni, vedere [Enhanced Filtering for connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 
-      - **Outbound:** configurare il routing smart host da Microsoft 365 al provider di terze parti di destinazione.
+      - **Outbound:** configurare il routing smart host Microsoft 365 al provider di terze parti di destinazione.
   - question: >
       Microsoft dispone di documentazione su come è possibile proteggersi da tentativi di phishing?
     answer: >

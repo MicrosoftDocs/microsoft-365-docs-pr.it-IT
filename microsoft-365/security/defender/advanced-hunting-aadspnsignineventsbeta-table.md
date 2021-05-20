@@ -1,6 +1,6 @@
 ---
 title: Tabella AADSpnSignInEventsBeta nello schema di ricerca avanzata
-description: Informazioni sulle informazioni associate all'entità servizio di Azure Active Directory e alla tabella degli eventi di accesso delle identità gestite dello schema di ricerca avanzata
+description: Informazioni sulle informazioni associate all'entità Azure Active Directory e agli eventi di accesso dell'identità gestita della tabella degli eventi di ricerca avanzata
 keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, AlertInfo, avviso, entità, prova, file, indirizzo IP, dispositivo, computer, utente, account, identità, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 984e945107b6e0b41459659a7f2e9f649981e4b5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f74972bcd5d0ddaab58d82b72a55991fda44e3b1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932596"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583545"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -34,12 +34,11 @@ ms.locfileid: "51932596"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> La tabella è attualmente in versione beta e viene offerta a breve termine per consentire la ricerca tramite l'entità servizio `AADSpnSignInEventsBeta` di Azure Active Directory (AAD) e gli eventi di accesso delle identità gestite. Alla fine verranno spostate tutte le informazioni sullo schema di accesso nella `IdentityLogonEvents` tabella.<br><br>
-> I clienti che possono accedere a Microsoft 365 Defender tramite la soluzione Microsoft Defender for Endpoint integrata di Azure Defender, ma non dispongono di licenze per Microsoft Defender per Office, Microsoft Defender for Identity o Microsoft Cloud App Security, non potranno visualizzare questo schema. 
+> La tabella è attualmente in versione beta e viene offerta a breve termine per consentire la ricerca tramite l'entità servizio Azure Active Directory (AAD) e gli eventi di accesso delle identità `AADSpnSignInEventsBeta` gestite. Alla fine verranno spostate tutte le informazioni sullo schema di accesso nella `IdentityLogonEvents` tabella.
 
 
 
-La tabella nello schema di ricerca avanzata contiene informazioni sull'entità servizio di Azure Active Directory e sugli account `AADSpnSignInEventsBeta` di accesso delle identità gestite. Ulteriori informazioni sui diversi tipi di accesso sono disponibili nei report attività di accesso di [Azure Active Directory - anteprima.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
+La `AADSpnSignInEventsBeta` tabella nello schema di ricerca avanzata contiene informazioni sull Azure Active Directory'entità servizio e sugli account di accesso delle identità gestite. Ulteriori informazioni sui diversi tipi di accesso in Azure Active Directory attività di [accesso - anteprima.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Utilizzare questo riferimento per creare query che forniscano informazioni dalla tabella.
 

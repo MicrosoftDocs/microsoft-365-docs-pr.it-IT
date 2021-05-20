@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri di posta indesiderata in uscita in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ead8aa75c0218dd2c4cad96e50e37ed3ddc12815
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331671"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583209"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurare il filtro posta indesiderata in uscita in EOP
 
@@ -35,15 +35,15 @@ ms.locfileid: "52331671"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o in organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, i messaggi di posta elettronica in uscita inviati tramite EOP vengono controllati automaticamente per verificare la presenza di posta indesiderata e attività di invio insolite.
+Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, i messaggi di posta elettronica in uscita inviati tramite EOP vengono controllati automaticamente alla ricerca di posta indesiderata e attività di invio insolite.
 
-La posta indesiderata in uscita da un utente dell'organizzazione indica in genere un account compromesso. I messaggi in uscita sospetti vengono contrassegnati come posta indesiderata (indipendentemente dal livello di probabilità di posta indesiderata o dal livello di probabilità di posta indesiderata) e vengono instradati attraverso il [pool](high-risk-delivery-pool-for-outbound-messages.md) di recapito ad alto rischio per proteggere la reputazione del servizio (ovvero, mantenere i server di posta elettronica di origine di Microsoft 365 fuori dagli elenchi di indirizzi IP bloccati). Agli amministratori viene automaticamente notificata l'attività di posta elettronica in uscita sospetta e gli utenti bloccati tramite [criteri di avviso.](../../compliance/alert-policies.md)
+La posta indesiderata in uscita da un utente dell'organizzazione indica in genere un account compromesso. I messaggi in uscita sospetti vengono contrassegnati come posta indesiderata (indipendentemente dal livello di probabilità di posta indesiderata o dal livello di probabilità di posta indesiderata) e vengono instradati attraverso il [pool](high-risk-delivery-pool-for-outbound-messages.md) di recapito ad alto rischio per proteggere la reputazione del servizio Microsoft 365 ,ovvero mantenere i server di posta elettronica di origine fuori dagli elenchi di indirizzi IP bloccati. Agli amministratori viene automaticamente notificata l'attività di posta elettronica in uscita sospetta e gli utenti bloccati tramite [criteri di avviso.](../../compliance/alert-policies.md)
 
 EOP utilizza i criteri di posta indesiderata in uscita come parte della difesa generale dell'organizzazione dalla posta indesiderata. Per altre informazioni, vedere [Protezione dalla posta indesiderata](anti-spam-protection.md).
 
 Gli amministratori possono visualizzare, modificare e configurare (ma non eliminare) il criterio di posta indesiderata in uscita predefinito. Per una maggiore granularità, è inoltre possibile creare criteri di posta indesiderata in uscita personalizzati che si applicano a utenti, gruppi o domini specifici dell'organizzazione. I criteri personalizzati hanno sempre la precedenza sul criterio predefinito, ma non è possibile modificarne la priorità (in funzione).
 
-È possibile configurare i criteri di posta indesiderata in uscita nel Centro sicurezza & conformità o in PowerShell (PowerShell di Exchange Online per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
+È possibile configurare i criteri di posta indesiderata in uscita nel Centro sicurezza & conformità o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online, PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
 
 Gli elementi di base di un criterio di posta indesiderata in uscita in EOP sono:
 
@@ -56,7 +56,7 @@ La differenza tra questi due elementi non è ovvia quando si gestiscono i criter
 - Quando si modifica un criterio, le impostazioni relative al nome, alla priorità, abilitate o disabilitate e ai filtri destinatari modificano la regola di filtro della posta indesiderata in uscita. Tutte le altre impostazioni modificano il criterio di filtro della posta indesiderata in uscita associato.
 - Quando si rimuove un criterio, la regola di filtro della posta indesiderata in uscita e il criterio di filtro della posta indesiderata in uscita associato vengono rimossi.
 
-In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione Utilizzare PowerShell di Exchange Online o [PowerShell EOP](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) autonomo per configurare i criteri di posta indesiderata in uscita più avanti in questo articolo.
+In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione Use [Exchange Online PowerShell or standalone EOP PowerShell to configure outbound spam policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) più avanti in questo articolo.
 
 Ogni organizzazione dispone di un criterio di protezione da posta indesiderata in uscita predefinito denominato Default con queste proprietà:
 
@@ -78,10 +78,10 @@ Per aumentare l'efficacia del filtro posta indesiderata in uscita, è possibile 
 
   Per altre informazioni, vedere [Autorizzazioni in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Note**:
-
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
-  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
+  > [!NOTE]
+  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > 
+  > - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 - Per le impostazioni consigliate per i criteri di posta indesiderata in uscita, vedere [EOP outbound spam filter settings](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
 
@@ -288,16 +288,15 @@ La creazione di un criterio di posta indesiderata in uscita in PowerShell è un 
 1. Creare il criterio di filtro della posta indesiderata in uscita.
 2. Creare la regola di filtro della posta indesiderata in uscita che specifica il criterio di filtro della posta indesiderata in uscita a cui si applica la regola.
 
- **Note**:
-
-- È possibile creare una nuova regola di filtro della posta indesiderata in uscita e assegnarle un criterio di filtro della posta indesiderata in uscita esistente e non associazione. Una regola di filtro della posta indesiderata in uscita non può essere associata a più di un criterio di filtro della posta indesiderata in uscita.
-
-- È possibile configurare le impostazioni seguenti nei nuovi criteri di filtro della posta indesiderata in uscita in PowerShell che non sono disponibili nel Centro sicurezza & conformità fino a quando non si crea il criterio:
-
-  - Creare il nuovo criterio come disabilitato (_Abilitato_ `$false` nel cmdlet **New-HostedOutboundSpamFilterRule).**
-  - Impostare la priorità del criterio durante la creazione (_Priority_ _\<Number\>_ ) nel cmdlet **New-HostedOutboundSpamFilterRule.**
-
-- Un nuovo criterio di filtro della posta indesiderata in uscita creato in PowerShell non è visibile nel Centro sicurezza & conformità finché non si assegna il criterio a una regola di filtro della posta indesiderata.
+> [!NOTE]
+> - È possibile creare una nuova regola di filtro della posta indesiderata in uscita e assegnarle un criterio di filtro della posta indesiderata in uscita esistente e non associazione. Una regola di filtro della posta indesiderata in uscita non può essere associata a più di un criterio di filtro della posta indesiderata in uscita.
+> 
+> - È possibile configurare le impostazioni seguenti nei nuovi criteri di filtro della posta indesiderata in uscita in PowerShell che non sono disponibili nel Centro sicurezza & conformità fino a quando non si crea il criterio:
+> 
+>   - Creare il nuovo criterio come disabilitato (_Abilitato_ `$false` nel cmdlet **New-HostedOutboundSpamFilterRule).**
+>   - Impostare la priorità del criterio durante la creazione (_Priority_ _\<Number\>_ ) nel cmdlet **New-HostedOutboundSpamFilterRule.**
+> 
+> - Un nuovo criterio di filtro della posta indesiderata in uscita creato in PowerShell non è visibile nel Centro sicurezza & conformità finché non si assegna il criterio a una regola di filtro della posta indesiderata.
 
 #### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>Passaggio 1: Utilizzare PowerShell per creare un criterio di filtro della posta indesiderata in uscita
 
@@ -309,7 +308,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 In questo esempio viene creato un nuovo criterio di filtro della posta indesiderata in uscita denominato Contoso Executives con le impostazioni seguenti:
 
-- I limiti di frequenza dei destinatari sono limitati ai valori più piccoli predefiniti. Per ulteriori informazioni, vedere [Limiti di invio tra le opzioni di Microsoft 365.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
+- I limiti di frequenza dei destinatari sono limitati ai valori più piccoli predefiniti. Per ulteriori informazioni, vedere [Limiti di invio tra Microsoft 365 opzioni.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
 
 - Dopo aver raggiunto uno dei limiti, all'utente viene impedito di inviare messaggi.
 

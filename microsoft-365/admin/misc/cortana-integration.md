@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: Quando si esegue l'accesso con account aziendali o dell'istituto di istruzione validi, gli utenti possono ottenere servizi di assistenza basati su cloud con Cortana nelle esperienze di Microsoft 365 che soddisfano le promesse di privacy, sicurezza e conformità a livello aziendale di Office 365.
-ms.openlocfilehash: dd00972f6e84f5d430ad860ea9cbf637bd7c790f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Gli utenti con account aziendali o dell'istituto di istruzione validi possono ottenere Cortana in Microsoft 365 esperienze che soddisfano Office 365 promesse di sicurezza a livello aziendale.
+ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537464"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582777"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -183,3 +183,12 @@ Disattivare l'accesso di Cortana ai dati ospitati da Microsoft dell'organizzazio
 3. Selezionare **Salva modifiche**.
 
 Per i servizi disciplinati dal [Contratto di servizi Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174) e dall'Informativa sulla privacy [Microsoft,](https://privacy.microsoft.com/privacystatement)Microsoft è il controllore dei dati. In qualità di data controller, Microsoft usa i dati per migliorare prodotti e servizi in conformità [all'Informativa sulla privacy microsoft.](https://privacy.microsoft.com/privacystatement)
+
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Assistenza vocale Cortana in Teams](/microsoftteams/cortana-in-teams) (articolo)
+
+[Configurare Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (articolo)
+
+[Cosa puoi fare con Riproduci i miei messaggi di posta elettronica da Cortana?](https://support.microsoft.com/help/4558256)

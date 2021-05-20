@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 948f4515b37f27695e1e66730134aa19114ca1cf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aa12cc4ad885c3d4b9d1c35fba9f38747f24077d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539000"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583195"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -93,7 +93,7 @@ Queste indicazioni illustrano come implementare la protezione per identità e di
 
 Il **modello identity and device protection for Microsoft 365** architecture mostra quali funzionalità sono paragonabili.
 
-[![Immagine thumb per identity e protezione del dispositivo per Microsoft 365 poster](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download in formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Scarica come Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Immagine thumb per identity e protezione del dispositivo per Microsoft 365 poster](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download in formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Scarica come Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 Vedere inoltre la soluzione Distribuire la protezione delle informazioni per le normative sulla [privacy](../../solutions/information-protection-deploy.md) dei dati per proteggere le informazioni archiviate in Microsoft 365.
 

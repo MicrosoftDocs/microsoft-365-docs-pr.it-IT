@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Informazioni su come trovare i valori/informazioni necessari per creare record DNS per Microsoft 365. '
-ms.openlocfilehash: 45994139b11a2fd5a03b2e979dd6af334bc1f00b
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+description: Raccogliere i valori/informazioni necessari per creare record DNS per connettere il dominio all'Microsoft 365 sottoscrizione.
+ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126372"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582957"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Raccogliere le informazioni necessarie per creare record DNS
 
@@ -38,7 +38,7 @@ ms.locfileid: "50126372"
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla **pagina Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains.</a>
+1. Nell'Microsoft 365 di amministrazione passare alla **pagina Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains.</a>
 
 ::: moniker-end
 
@@ -54,23 +54,23 @@ ms.locfileid: "50126372"
 
 ::: moniker-end
     
-2. Nella pagina **Domini** selezionare il dominio e quindi avviare **la configurazione.** Verrà nuovamente visualizzata la configurazione guidata domini per verificare il valore specifico da aggiungere.
+2. Nella pagina **Domini** seleziona il dominio, quindi seleziona **Avvia configurazione.** Verrà nuovamente visualizzata la configurazione guidata domini per verificare il valore specifico da aggiungere.
     
 3. Nella pagina **Verifica dominio** selezionare Aggiungi un **record TXT,** quindi selezionare **Avanti.**
     
-4. Copiare **il valore TXT** visualizzato. Ha un aspetto simile al seguente: **MS=msXXXXXXXX**. 
+4. Copiare **il valore TXT** visualizzato. È simile al seguente: **MS=msXXXXXXXXXX**. 
     
-5. Passare a [Creare record DNS presso un provider di hosting DNS](create-dns-records-at-any-dns-hosting-provider.md)e selezionare l'host DNS nell'elenco dei registrar per visualizzare le istruzioni dettagliate.
+5. Passare a [Creare record DNS presso qualsiasi provider di hosting DNS](create-dns-records-at-any-dns-hosting-provider.md)e selezionare l'host DNS nell'elenco dei registrar per visualizzare le istruzioni dettagliate.
     
-6. Seguire i passaggi per creare il record TXT (o record MX) nell'host DNS, quindi verificare di nuovo il dominio in Microsoft 365.
+6. Seguire i passaggi per la creazione del record TXT (o record MX) nell'host DNS, quindi verificare di nuovo il dominio in Microsoft 365.
 
-7. Rimuovere il record TXT (o record MX) dall'host DNS dopo aver verificato il dominio in Microsoft 365.
+7. Rimuovere il record TXT (o record MX) dall'host DNS dopo aver verificato il dominio Microsoft 365.
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Passaggio 2: Trovare il valore del record MX per la posta elettronica e altro ancora
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla **pagina Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains.</a>
+1. Nell'Microsoft 365 di amministrazione passare alla **pagina Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains.</a>
 
 ::: moniker-end
     
@@ -94,6 +94,14 @@ ms.locfileid: "50126372"
     
     I gruppi di record DNS presenti in questa sezione dipendono dalle impostazioni elencate in **Scopo del dominio**.
     
-4. Passare a Creare record DNS presso un provider di [hosting DNS](create-dns-records-at-any-dns-hosting-provider.md)e quindi selezionare l'host DNS nell'elenco dei registrar per visualizzare istruzioni dettagliate per l'aggiunta di record nel sito Web dell'host DNS.
+4. Passare a Creare record DNS presso qualsiasi [provider di hosting DNS](create-dns-records-at-any-dns-hosting-provider.md)e quindi selezionare l'host DNS nell'elenco dei registrar per visualizzare istruzioni dettagliate per l'aggiunta di record nel sito Web dell'host DNS.
     
 5. Eseguire la procedura per creare i record presso l'host DNS.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Domande frequenti sui](../setup/domains-faq.yml) domini (articolo)
+
+[Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)
+
+[Gestire i domini](index.yml) (pagina di collegamento)

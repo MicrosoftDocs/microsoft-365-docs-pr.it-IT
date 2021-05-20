@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Informazioni sulle procedure consigliate per gestire i numerosi argomenti dell'organizzazione tramite Viva Topics.
-ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a11d6fd1a7435ce75faa749a6d66fba6c1cda457
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538412"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583065"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Gestire gli argomenti su vasta scala in Microsoft Viva Topics
 
@@ -28,15 +28,17 @@ Innanzitutto, un promemoria delle [quattro fasi per gli argomenti:](manage-topic
 
 - **Consigliati**: un argomento è stato identificato dall'IA e ha risorse di supporto, connessioni e proprietà sufficienti. Questi argomenti sono contrassegnati come **argomento consigliato** nell'interfaccia utente.
 
-- **Confermati**: un argomento che è stato suggerito dall'IA viene convalidato. La convalida dell'argomento deve essere confermata da un responsabile della conoscenza. Per confermare un argomento, è necessario che vi sia una rete di due voti positivi ricevuti dagli utenti che hanno votato usando il meccanismo di feedback nella scheda dell'argomento. Ad esempio, se un utente ha votato positivo e un utente ha votato negativo per un determinato argomento, sarebbero comunque necessari altri due voti positivi per confermare l'argomento.
+- **Confermato:** un argomento suggerito dall'IA deve essere convalidato. La convalida degli argomenti si verifica quando:
+   - Un responsabile della conoscenza conferma un argomento. Un responsabile [della knowledge base conferma un argomento](manage-topics.md#confirmed-topics) nella pagina **Gestisci** argomenti. 
+   - Più utenti confermano un argomento. Deve essere presente una rete di due voti positivi ricevuti dagli utenti che hanno votato usando il meccanismo di feedback nella scheda dell'argomento. Ad esempio, se un utente ha votato positivo e un utente ha votato negativo per un determinato argomento, sarebbero comunque necessari altri due voti positivi per confermare l'argomento.
  
-- **Published**: argomento confermato che è stato curato: sono state apportate modifiche manuali per migliorarne la qualità.
+- **Published**: Argomento confermato che è stato curato. Sono state apportate modifiche manuali per migliorarne la qualità.
 
 - **Rimosso**: un argomento viene rifiutato da un responsabile della conoscenza e non sarà più visibile ai visualizzatori. Un argomento può essere rimosso in qualsiasi stato (suggerito, confermato o pubblicato). Per rimuovere un argomento, deve essere presente una rete di due voti negativi ricevuti dagli utenti che hanno votato usando i meccanismi di feedback nella scheda dell'argomento. Ad esempio, se un utente ha votato negativo e un utente ha votato positivo per un determinato argomento, sarebbero comunque necessari altri due voti negativi per rimuovere l'argomento. Quando un argomento pubblicato viene rimosso, la pagina con i dettagli curati dovrà essere eliminata manualmente tramite la raccolta pagine del Centro argomenti.
 
 ## <a name="knowledge-manager-role"></a>Ruolo di knowledge manager 
 
-Quando si configura Viva Topics, si aggiungerà un gruppo di utenti a cui sono concesse le autorizzazioni per visualizzare l'esperienza **Gestione** argomenti nel Centro argomenti. Verrà visualizzato solo per gli utenti che hanno il ruolo di cura principale per gli argomenti. Avranno accesso ai dati relativi agli argomenti e potranno visualizzare gli elenchi di tutti gli argomenti a cui hanno accesso per la revisione e la cura.
+Quando si configura Viva Topics, si aggiungerà un gruppo di utenti a cui sono concesse le autorizzazioni per visualizzare la **pagina Gestisci** argomenti nel Centro argomenti. Verrà visualizzato solo per gli utenti che hanno il ruolo di cura principale per gli argomenti. Avranno accesso ai dati relativi agli argomenti e potranno visualizzare gli elenchi di tutti gli argomenti a cui hanno accesso per la revisione e la cura.
 
 I dipendenti di questo ruolo devono disporre di ampie autorizzazioni per visualizzare un'ampia gamma di argomenti. In caso contrario, se le autorizzazioni sono segmentate, è possibile selezionare un gruppo di utenti che rappresentano aree diverse dell'azienda e possono essere curate per le proprie aree.
 
