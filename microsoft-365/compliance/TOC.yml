@@ -245,6 +245,10 @@
               href: dlp-chrome-learn-about.md
             - name: Informazioni sulla dashboard degli avvisi per la prevenzione delle perdita dei dati
               href: dlp-alerts-dashboard-learn.md
+        - name: Piano per la prevenzione della perdita dei dati
+          items:
+            - name: Piano per la prevenzione della perdita dei dati
+              href: dlp-overview-plan-for-dlp.md
         - name: Introduzione alla prevenzione della perdita dei dati
           items:
             - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti

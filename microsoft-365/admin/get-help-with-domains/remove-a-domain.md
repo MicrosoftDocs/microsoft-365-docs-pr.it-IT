@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Informazioni su come rimuovere un dominio vecchio da Microsoft 365 e spostare utenti e gruppi in un altro dominio.
+description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare utenti e gruppi in un altro dominio.
 ms.openlocfilehash: 3586cc8b288b77725c0dd3484629688e98e0a218
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -29,199 +29,199 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572118"
 ---
-# <a name="remove-a-domain"></a><span data-ttu-id="10036-103">Rimuovere un dominio</span><span class="sxs-lookup"><span data-stu-id="10036-103">Remove a domain</span></span>
+# <a name="remove-a-domain"></a><span data-ttu-id="cae50-103">Rimuovere un dominio</span><span class="sxs-lookup"><span data-stu-id="cae50-103">Remove a domain</span></span>
   
- <span data-ttu-id="10036-104">Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**.</span><span class="sxs-lookup"><span data-stu-id="10036-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="cae50-104">Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**.</span><span class="sxs-lookup"><span data-stu-id="cae50-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
   
-<span data-ttu-id="10036-105">Si sta rimuovendo il dominio perché si desidera aggiungerlo a un altro piano Microsoft 365 di sottoscrizione?</span><span class="sxs-lookup"><span data-stu-id="10036-105">Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan?</span></span> <span data-ttu-id="10036-106">O vuoi semplicemente annullare l'abbonamento?</span><span class="sxs-lookup"><span data-stu-id="10036-106">Or do you just want to cancel your subscription?</span></span> <span data-ttu-id="10036-107">È possibile [modificare il piano o l'abbonamento](../../commerce/subscriptions/switch-to-a-different-plan.md) o [annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="10036-107">You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).</span></span>
+<span data-ttu-id="cae50-105">Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sottoscrizione Microsoft 365 diverso?</span><span class="sxs-lookup"><span data-stu-id="cae50-105">Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan?</span></span> <span data-ttu-id="cae50-106">O vuoi semplicemente annullare l'abbonamento?</span><span class="sxs-lookup"><span data-stu-id="cae50-106">Or do you just want to cancel your subscription?</span></span> <span data-ttu-id="cae50-107">È possibile [modificare il piano o l'abbonamento o](../../commerce/subscriptions/switch-to-a-different-plan.md) annullare [l'abbonamento.](../../commerce/subscriptions/cancel-your-subscription.md)</span><span class="sxs-lookup"><span data-stu-id="cae50-107">You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).</span></span>
   
-### <a name="step-1-move-users-to-another-domain"></a><span data-ttu-id="10036-108">Passaggio 1: Spostare gli utenti in un altro dominio</span><span class="sxs-lookup"><span data-stu-id="10036-108">Step 1: Move users to another domain</span></span>
+### <a name="step-1-move-users-to-another-domain"></a><span data-ttu-id="cae50-108">Passaggio 1: Spostare gli utenti in un altro dominio</span><span class="sxs-lookup"><span data-stu-id="cae50-108">Step 1: Move users to another domain</span></span>
 
-#### <a name="move-users"></a><span data-ttu-id="10036-109">Spostare gli utenti</span><span class="sxs-lookup"><span data-stu-id="10036-109">Move users</span></span>
+#### <a name="move-users"></a><span data-ttu-id="cae50-109">Spostare gli utenti</span><span class="sxs-lookup"><span data-stu-id="cae50-109">Move users</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="10036-110">Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">interfaccia di amministrazione</a>.</span><span class="sxs-lookup"><span data-stu-id="10036-110">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.</span></span>
+1. <span data-ttu-id="cae50-110">Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">interfaccia di amministrazione</a>.</span><span class="sxs-lookup"><span data-stu-id="cae50-110">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.</span></span>
 
-2. <span data-ttu-id="10036-111">Selezionare **Utenti** > **Utenti attivi**.</span><span class="sxs-lookup"><span data-stu-id="10036-111">Select **Users** > **Active users**.</span></span>
+2. <span data-ttu-id="cae50-111">Selezionare **Utenti** > **Utenti attivi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-111">Select **Users** > **Active users**.</span></span>
 
-3. <span data-ttu-id="10036-112">Selezionare le caselle accanto ai nomi di tutti gli utenti da spostare.</span><span class="sxs-lookup"><span data-stu-id="10036-112">Select the boxes next to the names of all the users you want to move.</span></span>
+3. <span data-ttu-id="cae50-112">Selezionare le caselle accanto ai nomi di tutti gli utenti che si desidera spostare.</span><span class="sxs-lookup"><span data-stu-id="cae50-112">Select the boxes next to the names of all the users you want to move.</span></span>
 
-4. <span data-ttu-id="10036-113">Nella parte superiore della pagina e quindi scegliere **Cambia domini**.</span><span class="sxs-lookup"><span data-stu-id="10036-113">At the top of the page, and then choose **Change domains**.</span></span>
+4. <span data-ttu-id="cae50-113">Nella parte superiore della pagina, quindi scegliere **Cambia domini**.</span><span class="sxs-lookup"><span data-stu-id="cae50-113">At the top of the page, and then choose **Change domains**.</span></span>
 
-5. <span data-ttu-id="10036-114">Nel riquadro **Cambia domini** selezionare un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="10036-114">In the **Change domains** pane, select a different domain.</span></span>
+5. <span data-ttu-id="cae50-114">Nel riquadro **Cambia domini** selezionare un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="cae50-114">In the **Change domains** pane, select a different domain.</span></span>
 
-<span data-ttu-id="10036-p102">È necessario eseguire questa operazione anche per se stessi se si usa il dominio che si intende rimuovere. Quando si modifica il dominio per il proprio account, per proseguire è necessario disconnettersi e accedere di nuovo con il nuovo dominio scelto.</span><span class="sxs-lookup"><span data-stu-id="10036-p102">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+<span data-ttu-id="cae50-p102">È necessario eseguire questa operazione anche per se stessi se si usa il dominio che si intende rimuovere. Quando si modifica il dominio per il proprio account, per proseguire è necessario disconnettersi e accedere di nuovo con il nuovo dominio scelto.</span><span class="sxs-lookup"><span data-stu-id="cae50-p102">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="10036-117">Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">interfaccia di amministrazione</a>.</span><span class="sxs-lookup"><span data-stu-id="10036-117">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.</span></span>  
+1. <span data-ttu-id="cae50-117">Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">interfaccia di amministrazione</a>.</span><span class="sxs-lookup"><span data-stu-id="cae50-117">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.</span></span>  
 
-2. <span data-ttu-id="10036-118">Selezionare **Utenti** > **Utenti attivi**.</span><span class="sxs-lookup"><span data-stu-id="10036-118">Select **Users** > **Active users**.</span></span>
+2. <span data-ttu-id="cae50-118">Selezionare **Utenti** > **Utenti attivi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-118">Select **Users** > **Active users**.</span></span>
 
-3. <span data-ttu-id="10036-119">Selezionare le caselle accanto ai nomi di tutti gli utenti da spostare.</span><span class="sxs-lookup"><span data-stu-id="10036-119">Select the boxes next to the names of all the users you want to move.</span></span>
+3. <span data-ttu-id="cae50-119">Selezionare le caselle accanto ai nomi di tutti gli utenti che si desidera spostare.</span><span class="sxs-lookup"><span data-stu-id="cae50-119">Select the boxes next to the names of all the users you want to move.</span></span>
 
-4. <span data-ttu-id="10036-120">Nella parte superiore della pagina scegliere **Altri domini** > **di modifica**.</span><span class="sxs-lookup"><span data-stu-id="10036-120">At the top of the page, choose **More** > **Edit domains**.</span></span>
+4. <span data-ttu-id="cae50-120">Nella parte superiore della pagina scegliere **Altro** > **Modifica domini**.</span><span class="sxs-lookup"><span data-stu-id="cae50-120">At the top of the page, choose **More** > **Edit domains**.</span></span>
 
-5. <span data-ttu-id="10036-121">Nel riquadro **Modifica domini** selezionare un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="10036-121">In the **Edit domains** pane, select a different domain.</span></span>
+5. <span data-ttu-id="cae50-121">Nel riquadro **Modifica domini** selezionare un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="cae50-121">In the **Edit domains** pane, select a different domain.</span></span>
   
-<span data-ttu-id="10036-p103">È necessario eseguire questa operazione anche per se stessi se si usa il dominio che si intende rimuovere. Quando si modifica il dominio per il proprio account, per proseguire è necessario disconnettersi e accedere di nuovo con il nuovo dominio scelto.</span><span class="sxs-lookup"><span data-stu-id="10036-p103">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+<span data-ttu-id="cae50-p103">È necessario eseguire questa operazione anche per se stessi se si usa il dominio che si intende rimuovere. Quando si modifica il dominio per il proprio account, per proseguire è necessario disconnettersi e accedere di nuovo con il nuovo dominio scelto.</span><span class="sxs-lookup"><span data-stu-id="cae50-p103">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="10036-124">Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a>.</span><span class="sxs-lookup"><span data-stu-id="10036-124">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>  
+1. <span data-ttu-id="cae50-124">Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a>.</span><span class="sxs-lookup"><span data-stu-id="cae50-124">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>  
 
-2. <span data-ttu-id="10036-125">Selezionare **Utenti** > **Utenti attivi**.</span><span class="sxs-lookup"><span data-stu-id="10036-125">Select **Users** > **Active users**.</span></span>
+2. <span data-ttu-id="cae50-125">Selezionare **Utenti** > **Utenti attivi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-125">Select **Users** > **Active users**.</span></span>
 
-3. <span data-ttu-id="10036-126">Selezionare le caselle accanto ai nomi di tutti gli utenti da spostare.</span><span class="sxs-lookup"><span data-stu-id="10036-126">Select the boxes next to the names of all the users you want to move.</span></span>
+3. <span data-ttu-id="cae50-126">Selezionare le caselle accanto ai nomi di tutti gli utenti che si desidera spostare.</span><span class="sxs-lookup"><span data-stu-id="cae50-126">Select the boxes next to the names of all the users you want to move.</span></span>
 
-4. <span data-ttu-id="10036-127">Nella parte superiore della pagina scegliere **Altri domini** > **di modifica**.</span><span class="sxs-lookup"><span data-stu-id="10036-127">At the top of the page, choose **More** > **Edit domains**.</span></span>
+4. <span data-ttu-id="cae50-127">Nella parte superiore della pagina scegliere **Altro** > **Modifica domini**.</span><span class="sxs-lookup"><span data-stu-id="cae50-127">At the top of the page, choose **More** > **Edit domains**.</span></span>
 
-5. <span data-ttu-id="10036-128">Nel riquadro **Modifica domini** selezionare un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="10036-128">In the **Edit domains** pane, select a different domain.</span></span>
+5. <span data-ttu-id="cae50-128">Nel riquadro **Modifica domini** selezionare un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="cae50-128">In the **Edit domains** pane, select a different domain.</span></span>
   
-<span data-ttu-id="10036-p104">È necessario eseguire questa operazione anche per se stessi se si usa il dominio che si intende rimuovere. Quando si modifica il dominio per il proprio account, per proseguire è necessario disconnettersi e accedere di nuovo con il nuovo dominio scelto.</span><span class="sxs-lookup"><span data-stu-id="10036-p104">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+<span data-ttu-id="cae50-p104">È necessario eseguire questa operazione anche per se stessi se si usa il dominio che si intende rimuovere. Quando si modifica il dominio per il proprio account, per proseguire è necessario disconnettersi e accedere di nuovo con il nuovo dominio scelto.</span><span class="sxs-lookup"><span data-stu-id="cae50-p104">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
 
 ::: moniker-end
 
-#### <a name="move-yourself"></a><span data-ttu-id="10036-131">Muoviti</span><span class="sxs-lookup"><span data-stu-id="10036-131">Move yourself</span></span>
+#### <a name="move-yourself"></a><span data-ttu-id="cae50-131">Spostare se stessi</span><span class="sxs-lookup"><span data-stu-id="cae50-131">Move yourself</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="10036-132">Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a>.</span><span class="sxs-lookup"><span data-stu-id="10036-132">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>
+1. <span data-ttu-id="cae50-132">Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a>.</span><span class="sxs-lookup"><span data-stu-id="cae50-132">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>
 
-2. <span data-ttu-id="10036-133">Passare a **Utenti** \> **utenti attivi** e selezionare l'account dall'elenco.</span><span class="sxs-lookup"><span data-stu-id="10036-133">Go to **Users** \> **Active Users**, and select your account from the list.</span></span>
+2. <span data-ttu-id="cae50-133">Vai a **Utenti** \> **Utenti attivi** e seleziona il tuo account nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="cae50-133">Go to **Users** \> **Active Users**, and select your account from the list.</span></span>
 
-3. <span data-ttu-id="10036-134">Nella scheda **Account** selezionare Gestisci **nome utente** e quindi scegliere un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="10036-134">On the **Account** tab, select **Manage username**, and then choose a different domain.</span></span>
+3. <span data-ttu-id="cae50-134">Nella scheda **Account** selezionare Gestisci **nome utente** e quindi scegliere un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="cae50-134">On the **Account** tab, select **Manage username**, and then choose a different domain.</span></span>
   
-4. <span data-ttu-id="10036-135">Nella parte superiore selezionare il nome dell'account, quindi selezionare **Discon discon disconta**.</span><span class="sxs-lookup"><span data-stu-id="10036-135">At the top, select your account name, then select **Sign Out**.</span></span>
+4. <span data-ttu-id="cae50-135">Nella parte superiore, seleziona il nome dell'account, quindi seleziona **Disconnetta**.</span><span class="sxs-lookup"><span data-stu-id="cae50-135">At the top, select your account name, then select **Sign Out**.</span></span>
 
-5. <span data-ttu-id="10036-136">Accedere con il nuovo dominio e la stessa password.</span><span class="sxs-lookup"><span data-stu-id="10036-136">Sign in with the new domain and your same password.</span></span>
+5. <span data-ttu-id="cae50-136">Accedi con il nuovo dominio e la stessa password.</span><span class="sxs-lookup"><span data-stu-id="cae50-136">Sign in with the new domain and your same password.</span></span>
 
-<span data-ttu-id="10036-p105">È anche possibile usare PowerShell per trasferire gli utenti in un altro dominio. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="10036-p105">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="cae50-p105">È anche possibile usare PowerShell per trasferire gli utenti in un altro dominio. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="cae50-p105">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="10036-140">Passare a **Utenti** \> **utenti attivi** e selezionare il proprio nome nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="10036-140">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
+1. <span data-ttu-id="cae50-140">Passare a **Utenti** \> **Utenti attivi** e selezionare il proprio nome nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="cae50-140">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
 
-2. <span data-ttu-id="10036-141">Nella sezione **Nome utente/Posta** elettronica selezionare **Modifica** e quindi scegliere un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="10036-141">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
+2. <span data-ttu-id="cae50-141">Nella sezione **Nome utente/posta** elettronica selezionare **Modifica** e quindi scegliere un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="cae50-141">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
 
-3. <span data-ttu-id="10036-142">Selezionare **Imposta come principale** > **Salva** > **chiudi**.</span><span class="sxs-lookup"><span data-stu-id="10036-142">Select **Set as primary** > **Save** > **Close**.</span></span>
+3. <span data-ttu-id="cae50-142">Selezionare **Imposta come principale** > **Salva** > **chiudi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-142">Select **Set as primary** > **Save** > **Close**.</span></span>
   
-4. <span data-ttu-id="10036-143">Nella parte superiore selezionare il nome dell'account, quindi selezionare **Discon discon disconta**.</span><span class="sxs-lookup"><span data-stu-id="10036-143">At the top, select your account name, then select **Sign Out**.</span></span>
+4. <span data-ttu-id="cae50-143">Nella parte superiore, seleziona il nome dell'account, quindi seleziona **Disconnetta**.</span><span class="sxs-lookup"><span data-stu-id="cae50-143">At the top, select your account name, then select **Sign Out**.</span></span>
 
-5. <span data-ttu-id="10036-144">Accedere con il nuovo dominio e la stessa password.</span><span class="sxs-lookup"><span data-stu-id="10036-144">Sign in with the new domain and your same password.</span></span>
+5. <span data-ttu-id="cae50-144">Accedi con il nuovo dominio e la stessa password.</span><span class="sxs-lookup"><span data-stu-id="cae50-144">Sign in with the new domain and your same password.</span></span>
 
-<span data-ttu-id="10036-p106">È anche possibile usare PowerShell per trasferire gli utenti in un altro dominio. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="10036-p106">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="cae50-p106">È anche possibile usare PowerShell per trasferire gli utenti in un altro dominio. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="cae50-p106">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="10036-148">Passare a **Utenti** \> **utenti attivi** e selezionare il proprio nome nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="10036-148">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
+1. <span data-ttu-id="cae50-148">Passare a **Utenti** \> **Utenti attivi** e selezionare il proprio nome nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="cae50-148">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
 
-2. <span data-ttu-id="10036-149">Nella sezione **Nome utente/Posta** elettronica selezionare **Modifica** e quindi scegliere un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="10036-149">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
+2. <span data-ttu-id="cae50-149">Nella sezione **Nome utente/posta** elettronica selezionare **Modifica** e quindi scegliere un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="cae50-149">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
 
-3. <span data-ttu-id="10036-150">Selezionare **Imposta come principale** > **Salva** > **chiudi**.</span><span class="sxs-lookup"><span data-stu-id="10036-150">Select **Set as primary** > **Save** > **Close**.</span></span>
+3. <span data-ttu-id="cae50-150">Selezionare **Imposta come principale** > **Salva** > **chiudi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-150">Select **Set as primary** > **Save** > **Close**.</span></span>
   
-4. <span data-ttu-id="10036-151">Nella parte superiore selezionare il nome dell'account, quindi selezionare **Discon discon disconta**.</span><span class="sxs-lookup"><span data-stu-id="10036-151">At the top, select your account name, then select **Sign Out**.</span></span>
+4. <span data-ttu-id="cae50-151">Nella parte superiore, seleziona il nome dell'account, quindi seleziona **Disconnetta**.</span><span class="sxs-lookup"><span data-stu-id="cae50-151">At the top, select your account name, then select **Sign Out**.</span></span>
 
-5. <span data-ttu-id="10036-152">Accedere con il nuovo dominio e la stessa password.</span><span class="sxs-lookup"><span data-stu-id="10036-152">Sign in with the new domain and your same password.</span></span>
+5. <span data-ttu-id="cae50-152">Accedi con il nuovo dominio e la stessa password.</span><span class="sxs-lookup"><span data-stu-id="cae50-152">Sign in with the new domain and your same password.</span></span>
 
-<span data-ttu-id="10036-p107">È anche possibile usare PowerShell per trasferire gli utenti in un altro dominio. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="10036-p107">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="cae50-p107">È anche possibile usare PowerShell per trasferire gli utenti in un altro dominio. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="cae50-p107">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
 
 ::: moniker-end
 
-### <a name="step-2-move-groups-to-another-domain"></a><span data-ttu-id="10036-156">Passaggio 2: Spostare gruppi in un altro dominio</span><span class="sxs-lookup"><span data-stu-id="10036-156">Step 2: Move groups to another domain</span></span>
+### <a name="step-2-move-groups-to-another-domain"></a><span data-ttu-id="cae50-156">Passaggio 2: Spostare gruppi in un altro dominio</span><span class="sxs-lookup"><span data-stu-id="cae50-156">Step 2: Move groups to another domain</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="10036-157">Nell'interfaccia di amministrazione passare alla **pagina** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppi</a> gruppi.</span><span class="sxs-lookup"><span data-stu-id="10036-157">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="cae50-157">Nell'interfaccia di amministrazione passare alla **pagina** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppi di</a> gruppi.</span><span class="sxs-lookup"><span data-stu-id="cae50-157">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
   
-2. <span data-ttu-id="10036-158">Selezionare il nome del gruppo e quindi nella scheda **Generale in** Indirizzo **di posta elettronica primario** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="10036-158">Select the group name, and then on the **General** tab under **Email address, Primary**, select **Edit**.</span></span>
+2. <span data-ttu-id="cae50-158">Selezionare il nome del gruppo e quindi nella **scheda Generale** in **Indirizzo di posta elettronica, Primario,** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="cae50-158">Select the group name, and then on the **General** tab under **Email address, Primary**, select **Edit**.</span></span>
 
-3. <span data-ttu-id="10036-159">Utilizzare l'elenco a discesa per scegliere un altro dominio.</span><span class="sxs-lookup"><span data-stu-id="10036-159">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="cae50-159">Usa l'elenco a discesa per scegliere un altro dominio.</span><span class="sxs-lookup"><span data-stu-id="cae50-159">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="10036-160">Selezionare **Salva**, quindi **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="10036-160">Select **Save**, then **Close**.</span></span> <span data-ttu-id="10036-161">Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.</span><span class="sxs-lookup"><span data-stu-id="10036-161">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="cae50-160">Selezionare **Salva**, quindi **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-160">Select **Save**, then **Close**.</span></span> <span data-ttu-id="cae50-161">Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.</span><span class="sxs-lookup"><span data-stu-id="cae50-161">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="10036-162"><a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di</a>amministrazione passare alla **pagina** > **Gruppi** gruppi.</span><span class="sxs-lookup"><span data-stu-id="10036-162">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
+1. <span data-ttu-id="cae50-162"><a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Gruppi** > **di** gruppi.</span><span class="sxs-lookup"><span data-stu-id="cae50-162">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
 
-2. <span data-ttu-id="10036-163">Selezionare il nome del gruppo e quindi selezionare **Modifica** accanto a **Nome**.</span><span class="sxs-lookup"><span data-stu-id="10036-163">Select the group name, and then select **Edit** next to **Name**.</span></span>
+2. <span data-ttu-id="cae50-163">Selezionare il nome del gruppo e quindi selezionare **Modifica** accanto a **Nome**.</span><span class="sxs-lookup"><span data-stu-id="cae50-163">Select the group name, and then select **Edit** next to **Name**.</span></span>
 
-3. <span data-ttu-id="10036-164">Utilizzare l'elenco a discesa per scegliere un altro dominio.</span><span class="sxs-lookup"><span data-stu-id="10036-164">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="cae50-164">Usa l'elenco a discesa per scegliere un altro dominio.</span><span class="sxs-lookup"><span data-stu-id="cae50-164">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="10036-165">Selezionare **Salva**, quindi **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="10036-165">Select **Save**, then **Close**.</span></span> <span data-ttu-id="10036-166">Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.</span><span class="sxs-lookup"><span data-stu-id="10036-166">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="cae50-165">Selezionare **Salva**, quindi **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-165">Select **Save**, then **Close**.</span></span> <span data-ttu-id="cae50-166">Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.</span><span class="sxs-lookup"><span data-stu-id="cae50-166">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="10036-167"><a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di</a>amministrazione passare alla **pagina** > **Gruppi** gruppi.</span><span class="sxs-lookup"><span data-stu-id="10036-167">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
+1. <span data-ttu-id="cae50-167"><a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Gruppi** > **di** gruppi.</span><span class="sxs-lookup"><span data-stu-id="cae50-167">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
 
-2. <span data-ttu-id="10036-168">Selezionare il nome del gruppo e quindi selezionare **Modifica** accanto a **Nome**.</span><span class="sxs-lookup"><span data-stu-id="10036-168">Select the group name, and then select **Edit** next to **Name**.</span></span>
+2. <span data-ttu-id="cae50-168">Selezionare il nome del gruppo e quindi selezionare **Modifica** accanto a **Nome**.</span><span class="sxs-lookup"><span data-stu-id="cae50-168">Select the group name, and then select **Edit** next to **Name**.</span></span>
 
-3. <span data-ttu-id="10036-169">Utilizzare l'elenco a discesa per scegliere un altro dominio.</span><span class="sxs-lookup"><span data-stu-id="10036-169">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="cae50-169">Usa l'elenco a discesa per scegliere un altro dominio.</span><span class="sxs-lookup"><span data-stu-id="cae50-169">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="10036-170">Selezionare **Salva**, quindi **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="10036-170">Select **Save**, then **Close**.</span></span> <span data-ttu-id="10036-171">Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.</span><span class="sxs-lookup"><span data-stu-id="10036-171">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="cae50-170">Selezionare **Salva**, quindi **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-170">Select **Save**, then **Close**.</span></span> <span data-ttu-id="cae50-171">Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.</span><span class="sxs-lookup"><span data-stu-id="cae50-171">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
 
 ::: moniker-end
 
-### <a name="step-3-remove-the-old-domain"></a><span data-ttu-id="10036-172">Passaggio 3: Rimuovere il dominio precedente</span><span class="sxs-lookup"><span data-stu-id="10036-172">Step 3: Remove the old domain</span></span>
+### <a name="step-3-remove-the-old-domain"></a><span data-ttu-id="cae50-172">Passaggio 3: rimuovere il vecchio dominio</span><span class="sxs-lookup"><span data-stu-id="cae50-172">Step 3: Remove the old domain</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="10036-173">Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.</span><span class="sxs-lookup"><span data-stu-id="10036-173">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="cae50-173">Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.</span><span class="sxs-lookup"><span data-stu-id="cae50-173">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="10036-174">Nell'interfaccia di amministrazione passare alla **pagina** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domini di</a> installazione.</span><span class="sxs-lookup"><span data-stu-id="10036-174">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="cae50-174">Nell'interfaccia di amministrazione passare alla **pagina Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains.</a></span><span class="sxs-lookup"><span data-stu-id="cae50-174">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="10036-175">Nell'interfaccia di amministrazione passare alla **pagina** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domini di</a> installazione.</span><span class="sxs-lookup"><span data-stu-id="10036-175">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="cae50-175">Nell'interfaccia di amministrazione passare alla **pagina Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains.</a></span><span class="sxs-lookup"><span data-stu-id="cae50-175">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
   
-2. <span data-ttu-id="10036-176">Nella **pagina** Domini selezionare il dominio da rimuovere.</span><span class="sxs-lookup"><span data-stu-id="10036-176">On the **Domains** page, select the domain that you want to remove.</span></span>
+2. <span data-ttu-id="cae50-176">Nella **pagina Domini** selezionare il dominio che si desidera rimuovere.</span><span class="sxs-lookup"><span data-stu-id="cae50-176">On the **Domains** page, select the domain that you want to remove.</span></span>
 
-3. <span data-ttu-id="10036-177">Nel riquadro destro selezionare **Rimuovi**.</span><span class="sxs-lookup"><span data-stu-id="10036-177">In the right pane, select **Remove**.</span></span>
+3. <span data-ttu-id="cae50-177">Nel riquadro destro selezionare **Rimuovi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-177">In the right pane, select **Remove**.</span></span>
 
-4. <span data-ttu-id="10036-178">Seguire eventuali richieste aggiuntive, quindi selezionare **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="10036-178">Follow any additional prompts, and then select **Close**.</span></span>
+4. <span data-ttu-id="cae50-178">Seguire eventuali istruzioni aggiuntive e quindi selezionare **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="cae50-178">Follow any additional prompts, and then select **Close**.</span></span>
 
-## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a><span data-ttu-id="10036-179">Quanto ci vuole per rimuovere un dominio?</span><span class="sxs-lookup"><span data-stu-id="10036-179">How long does it take for a domain to be removed?</span></span>
+## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a><span data-ttu-id="cae50-179">Quanto ci vuole per rimuovere un dominio?</span><span class="sxs-lookup"><span data-stu-id="cae50-179">How long does it take for a domain to be removed?</span></span>
 
-<span data-ttu-id="10036-180">L'Microsoft 365 può richiedere solo 5 minuti per rimuovere un dominio se non viene fatto riferimento in molti luoghi come gruppi di sicurezza, liste di distribuzione, utenti e gruppi Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="10036-180">It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups.</span></span> <span data-ttu-id="10036-181">Se sono presenti molti riferimenti che usano il dominio, la rimozione può richiedere diverse ore (un giorno).</span><span class="sxs-lookup"><span data-stu-id="10036-181">If there are many references that use the domain it can take several hours (a day) for the domain to be removed.</span></span>
+<span data-ttu-id="cae50-180">La rimozione di un dominio può richiedere fino a Microsoft 365 5 minuti se non vi si fa riferimento in molte posizioni, ad esempio gruppi di sicurezza, liste di distribuzione, utenti e gruppi di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="cae50-180">It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups.</span></span> <span data-ttu-id="cae50-181">Se sono presenti molti riferimenti che usano il dominio, la rimozione può richiedere diverse ore (un giorno).</span><span class="sxs-lookup"><span data-stu-id="cae50-181">If there are many references that use the domain it can take several hours (a day) for the domain to be removed.</span></span>
   
-<span data-ttu-id="10036-p112">Se ci sono centinaia o migliaia di utenti, usare PowerShell per eseguire query per tutti gli utenti e spostarli in un altro dominio. In caso contrario, alcuni utenti potrebbero risultare mancanti nell'interfaccia utente e quindi, quando si rimuove il dominio, non sarà possibile spostarli e non si riuscirà a individuare la causa del problema. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="10036-p112">If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="cae50-p112">Se ci sono centinaia o migliaia di utenti, usare PowerShell per eseguire query per tutti gli utenti e spostarli in un altro dominio. In caso contrario, alcuni utenti potrebbero risultare mancanti nell'interfaccia utente e quindi, quando si rimuove il dominio, non sarà possibile spostarli e non si riuscirà a individuare la causa del problema. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="cae50-p112">If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
   
-## <a name="still-need-help"></a><span data-ttu-id="10036-186">Serve ulteriore assistenza?</span><span class="sxs-lookup"><span data-stu-id="10036-186">Still need help?</span></span>
+## <a name="still-need-help"></a><span data-ttu-id="cae50-186">Serve ulteriore assistenza?</span><span class="sxs-lookup"><span data-stu-id="cae50-186">Still need help?</span></span>
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> <span data-ttu-id="10036-187">Non si riesce a rimuovere il dominio [".onmicrosoft.com"](../setup/domains-faq.yml) dall'account.</span><span class="sxs-lookup"><span data-stu-id="10036-187">You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account.</span></span> <span data-ttu-id="10036-188">Quando si rimuove un dominio, gli account utente verranno ripristinati all'indirizzo ".onmicrosoft.com" come Nome SMTP/Utente primario.</span><span class="sxs-lookup"><span data-stu-id="10036-188">When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.</span></span>
+> <span data-ttu-id="cae50-187">Non si riesce a rimuovere il dominio [".onmicrosoft.com"](../setup/domains-faq.yml) dall'account.</span><span class="sxs-lookup"><span data-stu-id="cae50-187">You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account.</span></span> <span data-ttu-id="cae50-188">Quando si rimuove un dominio, gli account utente tornano all'indirizzo ".onmicrosoft.com" come SMTP primario/UserprincipalName.</span><span class="sxs-lookup"><span data-stu-id="cae50-188">When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.</span></span>
   
-<span data-ttu-id="10036-p114">Il problema persiste? Potrebbe essere necessario rimuovere manualmente il dominio. [Contattare il supporto](../../business-video/get-help-support.md) per ottenere assistenza.</span><span class="sxs-lookup"><span data-stu-id="10036-p114">Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md) and we'll help you take care of it!</span></span>
+<span data-ttu-id="cae50-p114">Il problema persiste? Potrebbe essere necessario rimuovere manualmente il dominio. [Contattare il supporto](../../business-video/get-help-support.md) per ottenere assistenza.</span><span class="sxs-lookup"><span data-stu-id="cae50-p114">Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md) and we'll help you take care of it!</span></span>
   
 ::: moniker-end
 
-## <a name="related-articles"></a><span data-ttu-id="10036-192">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="10036-192">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="cae50-192">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="cae50-192">Related articles</span></span>
 
-[<span data-ttu-id="10036-193">Domande frequenti sui domini</span><span class="sxs-lookup"><span data-stu-id="10036-193">Domains FAQ</span></span>](../setup/domains-faq.yml)
+[<span data-ttu-id="cae50-193">Domande frequenti sui domini</span><span class="sxs-lookup"><span data-stu-id="cae50-193">Domains FAQ</span></span>](../setup/domains-faq.yml)
 
-[<span data-ttu-id="10036-194">Passare a un piano di Microsoft 365 per le aziende diverso</span><span class="sxs-lookup"><span data-stu-id="10036-194">Switch to a different Microsoft 365 for business plan</span></span>](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[<span data-ttu-id="cae50-194">Passare a un piano di Microsoft 365 per le aziende diverso</span><span class="sxs-lookup"><span data-stu-id="cae50-194">Switch to a different Microsoft 365 for business plan</span></span>](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
-[<span data-ttu-id="10036-195">Annullare l'abbonamento</span><span class="sxs-lookup"><span data-stu-id="10036-195">Cancel your subscription</span></span>](../../commerce/subscriptions/cancel-your-subscription.md)
+[<span data-ttu-id="cae50-195">Annullare l'abbonamento</span><span class="sxs-lookup"><span data-stu-id="cae50-195">Cancel your subscription</span></span>](../../commerce/subscriptions/cancel-your-subscription.md)
