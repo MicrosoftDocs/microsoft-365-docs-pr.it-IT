@@ -1,5 +1,5 @@
 ---
-title: Usare DMARC per convalidare la posta elettronica
+title: 'Usare DMARC per convalidare la posta elettronica: procedura di configurazione'
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -7,6 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.date: 05/10/2021
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -17,12 +18,12 @@ ms.collection:
 description: Informazioni su come configurare DMARC (Domain-based Message Authentication, Reporting, and Conformance) per convalidare i messaggi inviati dall'organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec17ebadb40f2032e36cc6d4d74db445897c40b4
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9beada6e0fb61e503392b0bd379f02bd1c025464
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206109"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538676"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usare DMARC per convalidare la posta elettronica
 
@@ -33,18 +34,18 @@ ms.locfileid: "51206109"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Autenticazione dei messaggi, la creazione di report e la conformità di un dominio ([DMARC](https://dmarc.org)) funziona con Sender Policy Framework (SPF) e DKIM (DomainKeys Identified Mail) per l'autenticazione dei mittenti di posta e garantire che i sistemi di posta elettronica di destinazione considerino attendibili i messaggi inviati dal dominio dell'utente. L'implementazione di DMARC con SPF e DKIM fornisce un'ulteriore protezione dallo spoofing e dal phishing. DMARC consente ai sistemi di posta di ricezione di determinare cosa fare con i messaggi inviati dal dominio che non supera i controlli SPF o DKIM.
+[DMARC](https://dmarc.org) (Domain-based Message Authentication, Reporting, and Conformance) funziona con Sender Policy Framework (SPF) e DKIM (DomainKeys Identified Mail) per l'autenticazione dei mittenti di posta e per garantire che i sistemi di posta elettronica di destinazione considerino attendibili i messaggi inviati dal dominio dell'utente. L'implementazione di DMARC con SPF e DKIM fornisce un'ulteriore protezione dallo spoofing e dal phishing. DMARC consente ai sistemi di posta di ricezione di determinare cosa fare con i messaggi inviati dal dominio che non supera i controlli SPF o DKIM.
 
 > [!TIP]
 > Vedere il catalogo [Microsoft Intelligent Security Association](https://www.microsoft.com/misapartnercatalog) per individuare i fornitori di terze parti che offrono la creazione di report DMARC per Microsoft 365.
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>In che modo SPF e DMARC collaborano per proteggere la posta elettronica in Microsoft 365?
 
- Un messaggio di posta elettronica potrebbe contenere più originatori o mittenti, indirizzi. Questi indirizzi sono utilizzati per scopi differenti. Ad esempio, si consideri quanto segue:
+ Un messaggio di posta elettronica potrebbe contenere più iniziatori o mittenti e indirizzi. Questi indirizzi sono usati per scopi differenti. Ad esempio, si consideri quanto segue:
 
-- **Indirizzo "Mail From" (Posta da)** Identifica il mittente e consente di specificare dove inviare notifiche di ritorno se si verificano problemi con la consegna del messaggio, ad esempio notifiche di mancato recapito. Ciò verrà visualizzato nella parte della busta di un messaggio di posta elettronica e, generalmente, non viene visualizzato dall'applicazione di posta elettronica. Ciò a volte viene chiamato indirizzo 5321.MailFrom o indirizzo reverse-path.
+- **Indirizzo "Mail From" (Posta da)**: identifica il mittente e consente di specificare dove inviare notifiche di ritorno se si verificano problemi con la consegna del messaggio, ad esempio notifiche di mancato recapito. Ciò verrà visualizzato nella parte della busta di un messaggio di posta elettronica e, generalmente, non viene visualizzato dall'applicazione di posta elettronica. Questo indirizzo a volte viene chiamato 5321.MailFrom o indirizzo reverse-path.
 
-- **Indirizzo "From" (Da)** L'indirizzo visualizzato come indirizzo From dall'applicazione di posta elettronica. Questo indirizzo identifica l'autore del messaggio di posta elettronica. Vale a dire, la cassetta postale dell'utente o del sistema responsabile della creazione del messaggio. Questo a volte viene chiamato indirizzo 5322.From.
+- **Indirizzo "From" (Da)**: l'indirizzo visualizzato come indirizzo From dall'applicazione di posta elettronica. Questo indirizzo identifica l'autore del messaggio di posta elettronica. Vale a dire, la cassetta postale dell'utente o del sistema responsabile della creazione del messaggio. Questo a volte viene chiamato indirizzo 5322.From.
 
 SPF Usa un record TXT DNS per fornire un elenco di indirizzi IP di invio autorizzati per un determinato dominio. Normalmente, i controlli SPF vengono eseguiti solo in base all'indirizzo 5321.MailFrom. Ciò significa che l'indirizzo 5322.From non è autenticato quando si usa SPF. Ciò consente uno scenario in cui un utente può ricevere un messaggio che supera un controllo SPF, ma presenta un indirizzo mittente 5322.From falsificato. Si consideri, ad esempio, la seguente trascrizione SMTP:
 
@@ -91,11 +92,11 @@ _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=
 
 Microsoft invia i propri report DMARC a una terza parte:[Agari](https://agari.com). Agari raccoglie e analizza i report DMARC. Vedere il catalogo [Microsoft Intelligent Security Association](https://www.microsoft.com/misapartnercatalog) per individuare altri fornitori di terze parti che offrono la creazione di report DMARC per Microsoft 365.
 
-## <a name="implement-dmarc-for-inbound-mail"></a>Implementare DMARC per la posta in ingresso
+## <a name="set-up-dmarc-for-inbound-mail"></a>Configurare DMARC per la posta in ingresso
 
 Non serve fare nulla per configurare DMARC per la posta ricevuta in Microsoft 365. Microsoft si occupa di tutto. Per sapere cosa succede alla posta che non supera i controlli DMARC, vedere [Come viene gestita la posta elettronica in ingresso che non supera il controllo DMARC in Microsoft 365](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
 
-## <a name="implement-dmarc-for-outbound-mail-from-microsoft-365"></a>Implementare DMARC per la posta in uscita da Microsoft 365
+## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>Configurare DMARC per la posta in uscita da Microsoft 365
 
 Se si usa Microsoft 365, ma non si usa un dominio personalizzato, vale a dire, si usa onmicrosoft.com, non è necessario eseguire altre operazioni per configurare o implementare DMARC per l'organizzazione. SPF è già configurato e Microsoft 365 genera automaticamente una firma DKIM per la posta in uscita. Per altre informazioni sulla firma, vedere [Comportamento predefinito per DKIM e Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
 
@@ -147,7 +148,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 dove:
 
-- *domain* è il dominio da proteggere. Per impostazione predefinita, il record protegge la posta elettronica dal dominio e da tutti i sottodomini. Ad esempio, se si specifica \_dmarc.contoso.com, DMARC protegge la posta del dominio e da tutti i sottodomini, ad esempio housewares.contoso.com o plumbing.contoso.com.
+- *domain* è il dominio da proteggere. Per impostazione predefinita, il record protegge la posta elettronica dal dominio e da tutti i sottodomini. Ad esempio, se viene specificato \_dmarc.contoso.com, DMARC protegge la posta del dominio e da tutti i sottodomini, ad esempio housewares.contoso.com o plumbing.contoso.com.
 
 - *TTL* deve essere sempre l'equivalente di un'ora. L'unità utilizzata per TTL, ore (1 ora), minuti (60 minuti) o secondi (3600 secondi) varia a seconda del registrar del dominio.
 
@@ -178,6 +179,15 @@ Esempi:
     ```
 
 Dopo aver creato il record, è necessario aggiornare il record nel registrar del dominio. Per istruzioni sull'aggiunta del record TXT DMARC ai record DNS di Microsoft 365, vedere [Creare record DNS per Microsoft 365 quando si gestiscono i record DNS](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+
+## <a name="dmarc-mail-public-preview-feature"></a>Posta DMARC (funzionalità di anteprima pubblica)
+> [!CAUTION]
+> I messaggi di posta elettronica potrebbero non essere inviati quotidianamente e il report stesso potrebbe cambiare durante l'anteprima pubblica.  Possono essere previsti messaggi di posta elettronica dek report aggregato DMARC da account utente (come account hotmail.com, outlook.com o live.com).
+
+In questo esempio di record TXT DMARC **_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"** è possibile visualizzare l'indirizzo *rua*, elaborato, in questo caso, dalla società di terze parti, Agari. Questo indirizzo viene usato per inviare un "feedback aggregato" per l'analisi e per generare un report.
+
+> [!TIP]
+> Vedere il catalogo [Microsoft Intelligent Security Association](https://www.microsoft.com/misapartnercatalog) per individuare altri fornitori di terze parti che offrono la creazione di report DMARC per Microsoft 365. Per altre informazioni sugli indirizzi "rua" di DMARC, vedere ['Domain-based Message Authentication, Reporting, and Conformance (DMARC)' di IETF.org](https://datatracker.ietf.org/doc/html/rfc7489).
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Procedure consigliate per l'implementazione di DMARC in Microsoft 365
 
@@ -217,11 +227,11 @@ Se si pubblica un criterio reject DMARC (p=reject), nessun altro cliente in Micr
 
 Se il criterio DMARC del server di invio è `p=reject`, [Exchange Online Protection](exchange-online-protection-overview.md) EOP contrassegna il messaggio come spoof invece di rifiutarlo. In altre parole, per la posta elettronica in ingresso, Microsoft 365 tratta `p=reject` e `p=quarantine` allo stesso modo. Gli amministratori possono definire l'azione da eseguire per i messaggi classificati come spoof nei [criteri anti-phishing](set-up-anti-phishing-policies.md).
 
-Microsoft 365 è configurato in questo modo perché alcuni messaggi di posta elettronica legittimi potrebbero non superare DMARC. Ad esempio, un messaggio potrebbe non superare DMARC se viene inviato a una lista di distribuzione che poi inoltre il messaggio a tutti i partecipanti della lista. Se Microsoft 365 rifiutasse questi messaggi, le persone potrebbero perdere posta elettronica legittima e non ci sarebbe modo di recuperarla. Al contrario, questi messaggi continueranno a non superare DMARC ma verranno contrassegnati come posta indesiderata e non rifiutati. Se si desidera, gli utenti possono comunque ricevere questi messaggi nella propria posta in arrivo attraverso i seguenti metodi:
+Microsoft 365 è configurato in questo modo perché una parte di posta elettronica legittima potrebbe non superare il DMARC. Ad esempio, un messaggio potrebbe non superare il DMARC se viene inviato a una lista di distribuzione che poi inoltre il messaggio a tutti i partecipanti della lista. Se Microsoft 365 ha rifiutato questi messaggi, le persone potrebbero perdere posta elettronica legittima e non ci sarà modo di recuperarla. Al contrario, questi messaggi continueranno a non superare il DMARC, ma verranno contrassegnati come posta indesiderata e non rifiutati. Se si desidera, gli utenti possono comunque ricevere questi messaggi nella propria posta in arrivo attraverso i seguenti metodi:
 
 - Gli utenti aggiungono mittenti sicuri singolarmente mediante il loro client di posta elettronica.
 
-- Gli amministratori possono aggiornare la creazione di report di [spoof intelligence](learn-about-spoof-intelligence.md) per consentire lo spoofing.
+- Gli amministratori possono usare i [dati analitici di spoof intelligence](learn-about-spoof-intelligence.md) o l'[elenco Consenti/Blocca tenant](tenant-allow-block-list.md) per consentire i messaggi dal mittente oggeto di spoofing.
 
 - Gli amministratori creano una regola di flusso di posta di Exchange, nota anche come regola di trasporto, per tutti gli utenti che consentono messaggi di questi mittenti specifici.
 
@@ -237,7 +247,7 @@ Microsoft 365 attualmente usa ARC per verificare i risultati dell'autenticazione
 
 Se sono stati configurati i record MX del dominio in cui EOP non è la prima voce, gli errori DMARC non verranno applicati nel dominio.
 
-Se si è clienti e il record MX principale del proprio dominio non punta a Exchange Online Protection, non si usufruirà dei vantaggi di DMARC. Ad esempio, DMARC non funzionerà se si punta il record MX al server di posta locale e si indirizza quindi la posta elettronica a EOP utilizzando un connettore. In questo scenario, il dominio di destinazione è uno dei domini accettati ma EOP non è il principale MX. Ad esempio, si supponga che contoso.com punti il relativo MX a se stesso e utilizzi EOP come un record MX secondario, il record MX di contoso.com avrà il seguente aspetto:
+Se si è clienti e il proprio record MX principale del dominio non si riferisce a Exchange Online Protection, non si trarranno vantaggi da DMARC. Ad esempio, DMARC non funzionerà se si punta il record MX al server di posta locale e si indirizza quindi la posta elettronica a EOP utilizzando un connettore. In questo scenario, il dominio di destinazione è uno dei domini accettati ma EOP non è il principale MX. Ad esempio, si supponga che contoso.com punti il relativo MX a se stesso e utilizzi EOP come un record MX secondario, il record MX di contoso.com avrà il seguente aspetto:
 
 ```console
 contoso.com     3600   IN  MX  0  mail.contoso.com

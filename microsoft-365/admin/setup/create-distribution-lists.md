@@ -22,7 +22,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Creare gruppi di distribuzione o elenchi nell'interfaccia Microsoft 365 amministrazione in modo da poter inviare messaggi di posta elettronica a un gruppo senza digitare il nome di ogni destinatario.
+description: Creare gruppi di distribuzione o elenchi nell'Microsoft 365 di amministrazione per poter inviare messaggi di posta elettronica a un gruppo senza digitare il nome di ogni destinatario.
 ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -30,11 +30,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572250"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Creare gruppi di distribuzione nell'interfaccia Microsoft 365 amministrazione
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Creare gruppi di distribuzione nell'Microsoft 365 di amministrazione
   
-Utilizzati quando si desidera inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione (liste di distribuzione) sono organizzati da un particolare argomento di discussione (ad esempio "Marketing") o da utenti che condividono un lavoro comune che richiede loro di comunicare frequentemente. Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.
+Utilizzato quando si desidera inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione (liste di distribuzione) sono organizzati da un particolare oggetto di discussione (ad esempio "Marketing") o da utenti che condividono attività comuni che richiedono loro di comunicare frequentemente. Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.
 
-I gruppi di distribuzione sono talvolta chiamati liste di distribuzione.
+I gruppi di distribuzione sono talvolta denominati liste di distribuzione.
   
 ## <a name="create-a-distribution-group-list"></a>Creare un gruppo di distribuzione (elenco)
 
@@ -58,26 +58,26 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
 
 1. Selezionare l'icona di avvio delle app  e scegliere **Amministratore**.
     
-    Non riesci a trovare l'app che stai cercando? Nell'icona di avvio delle app seleziona **Tutte le** app per visualizzare un elenco alfabetico delle app disponibili. Tramite la lista è possibile cercare un'applicazione specifica. 
+    Non riesci a trovare l'app che stai cercando? Nell'icona di avvio delle app seleziona **Tutte le app** per visualizzare un elenco alfabetico delle app disponibili. Tramite la lista è possibile cercare un'applicazione specifica. 
     
-2. Selezionare **Gruppi** \> **gruppi** nel riquadro di spostamento sinistro e quindi Aggiungere **un gruppo**. 
+2. Selezionare **Gruppi** \> **Gruppi** nel riquadro di spostamento a sinistra e quindi **selezionare Aggiungi un gruppo.** 
       
-3. Nel campo **Scegliere un tipo di** gruppo scegliere **Distribuzione** e quindi **Avanti**.
+3. Nel campo **Scegliere un tipo di gruppo** scegliere **Distribuzione** e quindi **Avanti.**
   
 4. Immettere un nome, una descrizione e un alias di posta elettronica per il nuovo gruppo e scegliere se si desidera che le persone esterne all'organizzazione inviino messaggi di posta elettronica al gruppo. 
     
-5. **Premere** Aggiungi per creare un gruppo, quindi esaminare il gruppo e scegliere **Chiudi**. 
+5. Premere **Aggiungi** per creare un gruppo, quindi rivedere il gruppo e scegliere **Chiudi.** 
     
-6. Per aggiungere utenti alla lista di distribuzione, vedere [Aggiungere un utente o un contatto a un gruppo di distribuzione](../email/add-user-or-contact-to-distribution-list.md).
+6. Per aggiungere utenti alla lista di distribuzione, vedere [Aggiungere un utente o un contatto a un gruppo di distribuzione.](../email/add-user-or-contact-to-distribution-list.md)
     
-Informazioni su come utilizzare il gruppo in Outlook 2016 e Outlook sul Web in [Utilizzare gruppi di contatti (in](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)precedenza liste di distribuzione) in Outlook . 
+Per informazioni su come usare il gruppo in Outlook 2016 e Outlook sul Web, vedere Usare gruppi di contatti (in precedenza liste di [distribuzione) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
   
-Per informazioni su [problemi relativi alle liste di](/office365/troubleshoot/groups/distribution-list-issues) distribuzione, vedere i problemi relativi ai gruppi di distribuzione. 
+Per informazioni sui [problemi relativi alle liste di](/office365/troubleshoot/groups/distribution-list-issues) distribuzione, vedere Problemi relativi al gruppo di distribuzione. 
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Impostazioni della posta elettronica dell'utente](../email/office-365-user-email-settings.md) (articolo)
+[Impostazioni di posta elettronica dell'utente](../email/office-365-user-email-settings.md) (articolo)
 
-[Creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia Microsoft 365 di amministrazione](../email/create-edit-or-delete-a-security-group.md) (articolo)
+[Creare, modificare o eliminare un gruppo di sicurezza nell'Microsoft 365 di amministrazione](../email/create-edit-or-delete-a-security-group.md) (articolo)
 
 [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) (articolo)

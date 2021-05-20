@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Visualizzare in anteprima un campione dei risultati restituiti da una Ricerca contenuto o da una ricerca Core eDiscovery nel Centro conformità Microsoft 365.
-ms.openlocfilehash: ebe4aa0d5f08ab97376cfde63eb59351fccd1911
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: a89c8c9ed2500b4e2a859c75be3da177203d1406
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314307"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538600"
 ---
 # <a name="preview-ediscovery-search-results"></a>Visualizzare in anteprima i risultati di una ricerca di eDiscovery
 
@@ -39,9 +39,25 @@ Per visualizzare in anteprima un campione dei risultati restituiti da una ricerc
 
 3. Nella parte inferiore della pagina, fare clic su **Verifica campione**.
 
-   Viene visualizzata una pagina contenente un campione dei risultati della ricerca.
+   ![Fare clic su Esamina esempio nella pagina a comparsa per visualizzare in anteprima i risultati](../media/PreviewSearchResults1.png)
 
-4. Selezionare un elemento per visualizzarne il contenuto nel riquadro di anteprima.
+   Viene visualizzata una pagina contenente un esempio dei risultati della ricerca.
+
+4. Selezionare un elemento per visualizzarne il contenuto nel Riquadro di lettura.
+
+   ![Visualizzare in anteprima gli elementi nel Riquadro di lettura](../media/PreviewSearchResults2.png)
+
+   Nello screenshot precedente, le parole chiave della query di ricerca sono evidenziate quando si visualizza l'anteprima degli elementi.
+
+## <a name="how-the-search-result-samples-are-selected"></a>Come vengono selezionati gli esempi dei risultati della ricerca
+
+Per l'anteprima sono disponibili al massimo 1.000 elementi selezionati casualmente. Oltre a essere selezionati in modo casuale, gli elementi disponibili per l'anteprima devono anche soddisfare i criteri seguenti:
+
+- È possibile visualizzare in anteprima un massimo di 100 elementi da un singolo percorso di contenuto (una cassetta postale o un sito). Ciò significa che è possibile che meno di 1.000 elementi siano disponibili per l'anteprima. Ad esempio, se si cerca in quattro cassette postali e la ricerca restituisce 1.500 elementi stimati, solo 400 saranno disponibili per l'anteprima, perché è possibile visualizzare in anteprima solo 100 elementi per ogni cassetta postale.
+
+- Per gli elementi della cassetta postale, l'anteprima è disponibile solo per i messaggi di posta elettronica. Non è possibile visualizzare in anteprima elementi come attività, elementi del calendario e contatti.
+
+- Per gli elementi del sito, l'anteprima è disponibile solo per i documenti. Non è possibile visualizzare in anteprima elementi come cartelle, elenchi o allegati di elenchi.
 
 ## <a name="file-types-supported-when-previewing-search-results"></a>Tipi di file supportati quando si visualizza l'anteprima dei risultati della ricerca
 

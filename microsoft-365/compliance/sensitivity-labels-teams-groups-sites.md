@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860875"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531043"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -34,9 +34,10 @@ Le [etichette di riservatezza](sensitivity-labels.md), oltre a essere usate per 
 - Accesso utenti esterni
 - Condivisione esterna dai siti di SharePoint
 - Accesso da dispositivi non gestiti
+- Contesti di autenticazione (anteprima)
 
 > [!IMPORTANT]
-> La funzionalità **Accedi da dispositivi non gestiti** funziona in combinazione con la caratteristica di SharePoint che consente di [controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices). Per utilizzare un'etichetta di riservatezza per cui sia configurata questa impostazione, è necessario configurare questa funzionalità dipendente di SharePoint. Altre informazioni sono disponibili nelle istruzioni seguenti.
+> Le impostazioni per i dispositivi non gestiti e i contesti di autenticazione funzionano in concomitanza all'accesso condizionale di Azure Active Directory. È necessario configurare questa funzionalità dipendente se si vuole usare un'etichetta di riservatezza per queste impostazioni. Altre informazioni sono disponibili nelle istruzioni seguenti.
 
 Quando si applica questa etichetta di riservatezza a uno dei contenitori supportati, l'etichetta applica automaticamente le impostazioni di classificazione e protezione configurate al sito o al gruppo.
 
@@ -47,7 +48,7 @@ Il contenuto di tali contenitori, tuttavia, non eredita le etichette per la clas
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
-Prima di abilitare le etichette di riservatezza per contenitori e configurare le etichette di riservatezza per le nuove impostazioni, gli utenti potranno vedere e applicare tali etichette nelle loro app. Un esempio da Word:
+Prima di abilitare le etichette di riservatezza per i contenitori e configurarle per le nuove impostazioni, gli utenti possono visualizzare e applicare tali etichette nelle loro app. Ad esempio, da Word:
 
 ![Etichetta di riservatezza visualizzata nell'app Word per desktop](../media/sensitivity-label-word.png)
 
@@ -56,6 +57,8 @@ Dopo l'abilitazione e la configurazione delle etichette di riservatezza, gli ute
 ![Etichetta di riservatezza durante la creazione di un sito del team da SharePoint](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Come abilitare le etichette di riservatezza per i contenitori e sincronizzare le etichette
+
+Se le etichette di riservatezza per i contenitori non sono ancora state abilitate, eseguire i passaggi seguenti (si tratta di un processo una tantum):
 
 1. Dato che questa funzione usa le funzionalità di Azure AD, seguire le istruzioni riportate nella relativa documentazione per abilitare il supporto per le etichette di riservatezza: [Assegnare etichette di riservatezza a gruppi di Microsoft 365 in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
@@ -71,7 +74,7 @@ Dopo l'abilitazione e la configurazione delle etichette di riservatezza, gli ute
 
 ## <a name="how-to-configure-groups-and-site-settings"></a>Come configurare i gruppi e le impostazioni del sito
 
-L'abilitazione delle etichette di riservatezza per i contenitori indica che è possibile configurare le impostazioni di protezione per i gruppi e i siti tramite la procedura guidata dell’etichetta di riservatezza. Finché non si abilita il supporto, le impostazioni sono visibili nella procedura guidata, ma non è possibile configurarle.
+Dopo aver abilitato le etichette di riservatezza per i contenitori, come descritto nella sezione precedente, è possibile configurare le impostazioni di protezione per i gruppi e i siti attraverso la procedura guidata delle etichetta di riservatezza. Finché le etichette di riservatezza non sono abilitate per i contenitori, le impostazioni sono visibili nella procedura guidata ma non sarà possibile configurarle.
 
 1. Seguire le istruzioni generali per [creare o modificare un'etichetta di riservatezza](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) e verificare che sia selezionata l'opzione **Gruppi e siti** per l'ambito dell'etichetta: 
     
@@ -84,7 +87,7 @@ L'abilitazione delle etichette di riservatezza per i contenitori indica che è p
 2. Quindi, nella pagina **Definisci impostazioni di protezione per gruppi e siti**, selezionare una o entrambe le opzioni disponibili:
     
     - **Privacy e impostazioni di accesso utente esterno** per configurare le impostazioni di **Privacy** e **Accesso utenti esterni**. 
-    - **Impostazioni di accesso al dispositivo e condivisione esterna** per configurare le impostazioni **Controlla la condivisione esterna da siti di SharePoint etichettati** e **Accedi da dispositivi non gestiti**.
+    - Impostazioni di **condivisione esterna e accesso condizionale** per configurare il **controllo della condivisione esterna da siti di SharePoint etichettati** e **usare l'accesso condizionale di Azure AD per proteggere l'impostazione dei siti di SharePoint etichettati**.
 
 3. Se è stato selezionato **Privacy e impostazioni di accesso utente esterno**, configurare le seguenti impostazioni:
     
@@ -98,13 +101,25 @@ L'abilitazione delle etichette di riservatezza per i contenitori indica che è p
     
     - **Accesso utente esterno**: controllare se il proprietario del gruppo può [aggiungere utenti guest al gruppo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-4. Se è stato selezionato **Accesso dispositivo e impostazioni condivisione esterna**, configurare le seguenti impostazioni:
+4. Se è stato selezionato **Condivisione esterna del dispositivo e Impostazioni di accesso al dispositivo**, configurare le seguenti impostazioni:
     
     - **Controlla la condivisione esterna da siti di SharePoint etichettati**: selezionare questa opzione per selezionare in seguito la condivisione con tutti gli utenti, gli utenti guest nuovi ed esistenti, gli utenti guest esistenti o soltanto gli utenti della propria organizzazione. Per altre informazioni su questa configurazione e sulle impostazioni, vedere la documentazione di SharePoint [Attivare e disattivare la condivisione esterna per un sito](/sharepoint/change-external-sharing-site).
     
-    - **Accedi da dispositivi non gestiti**: questa opzione si serve della funzionalità di SharePoint che usa l'accesso condizionale di Azure AD per bloccare o limitare l'accesso ai contenuti di SharePoint e OneDrive da dispositivi non gestiti. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices) dalla documentazione di SharePoint. L'opzione specificata per questa impostazione dell'etichetta equivale all'esecuzione di un comando di PowerShell per un sito, come descritto nei passaggi 3-5 [Bloccare o limitare l'accesso a uno specifico sito di SharePoint o OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) della sezione delle istruzioni di SharePoint.
-        
-        Per altre informazioni, vedere [Ulteriori informazioni sulle dipendenze per l'opzione dei dispositivi non gestiti](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) alla fine di questa sezione.
+    - **Usare l'accesso condizionale di Azure AD per proteggere i siti di SharePoint etichettati**: selezionare questa opzione solo se l'organizzazione ha configurato e usa l'[accesso condizionale di Azure Active Directory](/azure/active-directory/conditional-access/overview). Quindi, selezionare una delle impostazioni seguenti:
+    
+        - **Determinare se gli utenti possono accedere ai siti di SharePoint da dispositivi non gestiti**: questa opzione si serve della funzionalità di SharePoint che usa l'accesso condizionale di Azure AD per bloccare o limitare l'accesso ai contenuti di SharePoint e OneDrive da dispositivi non gestiti. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices) dalla documentazione di SharePoint. L'opzione specificata per questa impostazione dell'etichetta equivale all'esecuzione di un comando di PowerShell per un sito, come descritto nei passaggi 3-5 [Bloccare o limitare l'accesso a uno specifico sito di SharePoint o OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) della sezione delle istruzioni di SharePoint.
+            
+            Per ulteriori informazioni sulla configurazione, vedere [Ulteriori informazioni sulle dipendenze per l'opzione dei dispositivi non gestiti](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) alla fine di questa sezione.
+            
+        - **Scegliere un contesto di autenticazione esistente**: questa opzione, che al momento è in anteprima, consente di applicare condizioni di accesso più rigide quando gli utenti accedono a siti di SharePoint a cui è applicata questa etichetta. Queste condizioni vengono applicate quando si seleziona un contesto di autenticazione esistente creato e pubblicato per la distribuzione dell'accesso condizionale dell'organizzazione. Se gli utenti non soddisfano le condizioni configurate o se usano app che non supportano contesti di autenticazione, gli viene negato l'accesso.
+            
+            Per ulteriori informazioni sulla configurazione, vedere [Ulteriori informazioni sulle dipendenze per l'opzione del contesto di autenticazione](#more-information-about-the-dependencies-for-the-authentication-context-option) alla fine di questa sezione.
+            
+            Esempi di questa configurazione delle etichette:
+            
+             - Viene scelto un contesto di autenticazione configurato per richiedere l'[autenticazione a più fattori (MFA)](/azure/active-directory/conditional-access/untrusted-networks). Questa etichetta viene applicata a un sito di SharePoint che contiene elementi che contiene elementi altamente riservati. Di conseguenza, quando gli utenti di una rete non attendibile provano ad accedere a un documento in questo sito, dovranno completare la richiesta di autenticazione a più fattori per poter accedere al documento.
+             
+             - Viene scelto un contesto di autenticazione configurato per i [criteri delle condizioni d'uso (ToU)](/azure/active-directory/conditional-access/terms-of-use). Questa etichetta viene applicata a un sito di SharePoint che contiene elementi che richiedono l'accettazione delle condizioni d'uso per motivi legali o di conformità. Di conseguenza, quando gli utenti tentano di accedere a un documento nel sito, dovranno accettare le condizioni d'uso per poter accedere al documento originale.
 
 > [!IMPORTANT]
 > Quando si applica l'etichetta a un team, un gruppo o un sito, vengono applicate solo queste impostazioni a livello di sito e di gruppo. Se l’[ ambito dell'etichetta ](sensitivity-labels.md#label-scopes) include file e messaggi di posta elettronica, le altre impostazioni dell'etichetta, come la crittografia e il contrassegno di contenuti, non vengono applicate al contenuto all'interno del team, del gruppo o del sito.
@@ -118,6 +133,43 @@ Se non si configurano i criteri di accesso condizionale dipendente per SharePoin
 Per esempio, se il tenant è configurato in modo da **Consentire l'accesso limitato solo web**, l'impostazione dell'etichetta che consente l'accesso totale non avrà effetto perché è meno restrittiva. Per questa impostazione a livello del tenant, scegliere l'impostazione dell'etichetta per bloccare l'accesso (più restrittiva) o l'impostazione per l'accesso limitato (la stessa impostazione del tenant).
 
 Dato che la funzionalità di SharePoint può essere configurata indipendentemente dall'impostazione dell'etichetta, la procedura guidata dell'etichetta di riservatezza non verifica che le dipendenze siano disponibili. Queste dipendenze possono essere configurate dopo la creazione e la pubblicazione dell'etichetta e anche dopo l'applicazione dell'etichetta. Se l'etichetta è già stata applicata, l'impostazione dell'etichetta non avrà effetto fino alla successiva autenticazione dell'utente.
+
+##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>Ulteriori informazioni sulle dipendenze per l'opzione del contesto di autenticazione
+
+Per essere visualizzati nell'elenco a discesa per la selezione, i contesti di autenticazione devono essere creati, configurati e pubblicati come parte della configurazione dell'accesso condizionale di Azure Active Directory. Per altre informazioni e istruzioni, vedere la sezione [Configurare i contesti di autenticazione](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) nella documentazione dell'accesso condizionale di Azure AD.
+
+Non tutte le app supportano i contesti di autenticazione. Se un utente con un'app non supportata si connette al sito configurato per un contesto di autenticazione, viene visualizzato un messaggio di accesso negato oppure gli verrà richiesto di eseguire l'autenticazione ma questa verrà rifiutato. Le app che al momento supportano i contesti di autenticazione sono:
+
+- Office per il Web, che include Outlook per il Web
+
+- Microsoft Planner
+
+- Microsoft 365 Apps per Word, Excel e PowerPoint. Versioni minime:
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 2.48.303
+    - Android: 16.0.13924.10000
+
+- Microsoft 365 Apps Outlook. Versioni minime:
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 4.2109.0
+    - Android: 4.2025.1
+
+- App di sincronizzazione OneDrive, versioni minime:
+    - Windows: 21.002
+    - macOS: 21.002
+    - iOS: distribuzione nella versione 12.30
+    - Android: non ancora supportato
+
+Limitazioni note di questa anteprima:
+
+- Per l'app sincronizzazione OneDrive, viene supportato solo OneDrive e non gli altri siti.
+
+- Le funzionalità e le app seguenti potrebbero non essere compatibili con i contesti di autenticazione, pertanto è consigliabile verificare che continuino a funzionare dopo che un utente accede al sito attraverso un contesto di autenticazione:
+    
+    - Flussi di lavoro che usano PowerApps o Power Automate
+    - App di terze parti
 
 ## <a name="sensitivity-label-management"></a>Gestione delle etichetta di riservatezza
 

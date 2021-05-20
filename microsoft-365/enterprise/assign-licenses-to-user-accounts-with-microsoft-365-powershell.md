@@ -1,5 +1,5 @@
 ---
-title: Assegnare Microsoft 365 licenze agli account utente con PowerShell
+title: Assegnare Microsoft 365 licenze utente agli account utente con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: In questo articolo imparerai a usare PowerShell per assegnare una Microsoft 365 licenza a utenti senza licenza.
+description: In questo articolo viene illustrato come usare PowerShell per assegnare una licenza Microsoft 365 licenza agli utenti senza licenza.
 ms.openlocfilehash: 6d7e005aff018394810082de57c68ea289057f8e
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -28,36 +28,36 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572622"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Assegnare Microsoft 365 licenze agli account utente con PowerShell
+# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Assegnare Microsoft 365 licenze utente agli account utente con PowerShell
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Gli utenti non possono utilizzare alcun servizio Microsoft 365 a cui al proprio account non è stata assegnata una licenza da un piano di licenza. È possibile utilizzare PowerShell per assegnare rapidamente licenze ad account senza licenza. 
+Gli utenti non possono usare alcun servizio Microsoft 365 finché al loro account non viene assegnata una licenza da un piano di licenze. È possibile usare PowerShell per assegnare rapidamente le licenze agli account senza licenza. 
 
-Agli account utente deve prima essere assegnata una posizione. La specifica di un percorso è una parte necessaria della creazione di un nuovo account utente [nell'Microsoft 365 di amministrazione](../admin/add-users/add-users.md). 
+Agli account utente deve prima essere assegnata una posizione. La specifica di una posizione è una parte obbligatoria della creazione di un nuovo account utente [nell'Microsoft 365 di amministrazione.](../admin/add-users/add-users.md) 
 
-Per impostazione predefinita, gli account sincronizzati da Servizi di dominio Active Directory locali non hanno un percorso specificato. È possibile configurare un percorso per questi account da:
+Per impostazione predefinita, agli account sincronizzati da Servizi di dominio Active Directory locale non è stato specificato un percorso. È possibile configurare un percorso per questi account da:
 
 - L'interfaccia di amministrazione di Microsoft 365
  - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
- - Il [portale di Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) ( Utenti di Active **Directory**> account utente > informazioni  >   di **contatto**  >  **profilo** Paese o  >  **area geografica**).
+ - Il [portale di Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) ( Utenti di Active **Directory**  >  **>** account utente > **profilo**  >  **Informazioni contatto** Paese o area  >  **geografica**).
 
 >[!Note]
->[Informazioni su come assegnare licenze agli account utente con l'interfaccia](../admin/manage/assign-licenses-to-users.md) Microsoft 365 amministrazione. Per un elenco delle risorse aggiuntive, vedere [Gestire utenti e gruppi](../admin/add-users/index.yml).
+>[Informazioni su come assegnare licenze agli account utente con](../admin/manage/assign-licenses-to-users.md) l'Microsoft 365 di amministrazione. Per un elenco delle risorse aggiuntive, vedere [Manage users and groups](../admin/add-users/index.yml).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Innanzitutto, [connettersi al tenant Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 
-Elencare quindi i piani di licenza per il tenant con questo comando.
+Successivamente, elencare i piani di licenza per il tenant con questo comando.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Ottenere quindi il nome di accesso dell'account a cui si desidera aggiungere una licenza, noto anche come nome dell'entità utente (UPN).
+Successivamente, ottenere il nome di accesso dell'account a cui si desidera aggiungere una licenza, noto anche come nome dell'entità utente (UPN).
 
 Assicurarsi quindi che all'account utente sia assegnata una posizione di utilizzo.
 
@@ -65,7 +65,7 @@ Assicurarsi quindi che all'account utente sia assegnata una posizione di utilizz
 Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
 ```
 
-Se non è stata assegnata alcuna posizione di utilizzo, è possibile assegnarla con questi comandi:
+Se non è assegnata alcuna posizione di utilizzo, è possibile assegnare una con questi comandi:
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -87,11 +87,11 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Si noti che inizieremo a deprecare questo modulo quando la funzionalità di questo modulo è disponibile nel più [Azure Active Directory PowerShell per Graph](/powershell/azuread/v2/azureactivedirectory) modulo. Consigliamo ai clienti che stanno creando nuovi script di PowerShell di utilizzare il modulo più nuovo anziché questo modulo.
+Si noti che inizieremo a deprecato questo modulo quando la funzionalità di questo modulo è disponibile nella versione più [recente Azure Active Directory PowerShell per](/powershell/azuread/v2/azureactivedirectory) Graph modulo. Consigliamo ai clienti che creano nuovi script di PowerShell di usare il modulo più recente anziché questo modulo.
 
-Innanzitutto, [connettersi al tenant Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-Eseguire il `Get-MsolAccountSku` comando per visualizzare i piani di licenza disponibili e il numero di licenze disponibili in ogni piano dell'organizzazione. Il numero di licenze disponibili in ogni piano è **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**. Per ulteriori informazioni su piani di licenza, licenze e servizi, vedere [Visualizzare licenze e servizi con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
+Eseguire il `Get-MsolAccountSku` comando per visualizzare i piani di licenza disponibili e il numero di licenze disponibili in ogni piano dell'organizzazione. Il numero di licenze disponibili in ogni piano è **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits.** Per ulteriori informazioni su piani di licenza, licenze e servizi, vedere [Visualizzare licenze e servizi con PowerShell.](view-licenses-and-services-with-microsoft-365-powershell.md)
 
 >[!Note]
 >PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
@@ -103,15 +103,15 @@ Per trovare gli account senza licenza nell'organizzazione, eseguire questo coman
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-È possibile assegnare licenze solo agli account utente la cui **proprietà UsageLocation** è impostata su un codice paese ISO 3166-1 alpha-2 valido. Ad esempio, US per gli Stati Uniti e FR per la Francia. Alcuni Microsoft 365 servizi non sono disponibili in alcuni paesi. Per ulteriori informazioni, vedere [Informazioni sulle restrizioni di licenza](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+È possibile assegnare licenze solo agli account utente la cui proprietà **UsageLocation** è impostata su un codice paese ISO 3166-1 alfa-2 valido. Ad esempio, US per gli Stati Uniti e FR per la Francia. Alcuni Microsoft 365 non sono disponibili in alcuni paesi. Per ulteriori informazioni, vedere [Informazioni sulle restrizioni di licenza.](https://go.microsoft.com/fwlink/p/?LinkId=691730)
     
-Per trovare gli account che non hanno un valore **UsageLocation,** eseguire questo comando.
+Per trovare gli account che non hanno un **valore UsageLocation,** eseguire questo comando.
 
 ```powershell
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 ```
 
-Per impostare il **valore UsageLocation** in un account, eseguire questo comando.
+Per impostare il **valore UsageLocation** su un account, eseguire questo comando.
 
 ```powershell
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
@@ -133,7 +133,7 @@ Per assegnare una licenza a un utente, utilizzare il comando seguente in PowerSh
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-In questo esempio viene assegnata una licenza **dal piano di licenze litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) all'utente senza licenza **belindan \@ litwareinc.com**:
+In questo esempio viene assegnata una licenza dal piano di licenza **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) all'utente senza licenza **belindan \@ litwareinc.com**:
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -149,31 +149,31 @@ Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLi
 >Non è possibile assegnare più licenze a un utente dallo stesso piano di gestione delle licenze. Se non si dispone di una quantità sufficiente di licenze disponibili, le licenze vengono assegnate agli utenti nell'ordine in cui vengono restituiti dal cmdlet **Get-MsolUser** finché non vengono esaurite le licenze disponibili.
 >
 
-In questo esempio le licenze del **piano di licenza litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) vengono assegnate a tutti gli utenti senza licenza:
+In questo esempio vengono assegnate le licenze del piano di licenza **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) a tutti gli utenti senza licenza:
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-In questo esempio vengono assegnate le stesse licenze agli utenti senza licenza nel reparto vendite negli Stati Uniti:
+In questo esempio vengono assegnate le stesse licenze agli utenti senza licenza nel reparto Vendite negli Stati Uniti:
   
 ```powershell
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Spostare un utente in un abbonamento diverso (piano di licenza) con il modulo Azure Active Directory PowerShell per Graph utente
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Spostare un utente in un altro abbonamento (piano di licenza) con Azure Active Directory PowerShell per Graph modulo
 
-Innanzitutto, [connettersi al tenant Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
-Ottenere quindi il nome di accesso dell'account utente per il quale si desidera cambiare sottoscrizioni, noto anche come nome dell'entità utente (UPN).
+Successivamente, ottenere il nome di accesso dell'account utente per il quale si desidera cambiare sottoscrizione, noto anche come nome dell'entità utente (UPN).
 
-Elencare quindi le sottoscrizioni (piani di licenza) per il tenant con questo comando.
+Quindi, elencare le sottoscrizioni (piani di licenza) per il tenant con questo comando.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Elencare quindi le sottoscrizioni attualmente disponibili nell'account utente con questi comandi.
+Elenca quindi le sottoscrizioni attualmente disponibili nell'account utente con questi comandi.
 
 ```powershell
 $userUPN="<user account UPN>"
@@ -182,9 +182,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-Identificare la sottoscrizione attualmente in corso (la sottoscrizione FROM) e la sottoscrizione a cui l'utente si sta spostando (la sottoscrizione TO).
+Identificare la sottoscrizione attualmente disponibile dall'utente (la sottoscrizione FROM) e la sottoscrizione a cui si sta spostando l'utente (la sottoscrizione TO).
 
-Infine, specificare i nomi delle sottotitoi TO e FROM (numeri di parte SKU) ed eseguire questi comandi.
+Infine, specificare i nomi delle sottoscrizioni TO e FROM (numeri di parte SKU) ed eseguire questi comandi.
 
 ```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"

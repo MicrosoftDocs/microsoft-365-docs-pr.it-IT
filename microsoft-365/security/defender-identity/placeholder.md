@@ -1,6 +1,6 @@
 ---
-title: Argomento segnaposto per creare la cartella in master da eliminare
-description: Argomento segnaposto per creare la cartella in master da eliminare
+title: Argomento segnaposto per creare la cartella nel master da eliminare
+description: Argomento segnaposto per creare la cartella nel master da eliminare
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -29,5 +29,5 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572817"
 ---
-# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a>Argomento segnaposto per creare la cartella in master da eliminare
+# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a>Argomento segnaposto per creare la cartella nel master da eliminare
 

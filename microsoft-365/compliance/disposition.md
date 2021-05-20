@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto quando si utilizza una revisione per l'eliminazione o gli elementi segnati come record vengono eliminati automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 13310eca369949e2b66163907be4268120aa0ed0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344944"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532179"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -53,16 +53,24 @@ Inoltre:
 
 - Per visualizzare il contenuto degli elementi durante il processo di eliminazione, aggiungere utenti al gruppo di ruoli **Visualizzatore contenuto di Esplora contenuto**. Se gli utenti non hanno le autorizzazioni di questo gruppo di ruoli, possono comunque selezionare un'azione di revisione per l'eliminazione per completare l'operazione, ma devono farlo senza poter vedere il contenuto dell'elemento dal mini riquadro di anteprima nel centro conformità.
 
-- In anteprima: per impostazione predefinita, ogni utente che accede alla pagina **Eliminazione** vede solo i suoi elementi assegnati per la revisione. Per consentire a un amministratore della gestione dei record di visualizzare tutti gli elementi assegnati a tutti gli utenti e tutte le etichette di conservazione configurate per la revisione per l'eliminazione: spostarsi su **Impostazioni di gestione dei record** > **Generale** > **Gruppo di sicurezza di manager record** per selezionare e abilitare un gruppo di sicurezza abilitato alla posta elettronica contenente gli account dell'amministratore.
+- In anteprima: per impostazione predefinita, ogni utente che accede alla pagina **Eliminazione** vede solo i suoi elementi assegnati per la revisione. Per consentire a un amministratore della gestione dei record di visualizzare tutti gli elementi assegnati a tutti gli utenti e tutte le etichette di conservazione configurate per la revisione per l'eliminazione: passare a **Impostazioni di gestione dei record** > **Generale** > **Gruppo di sicurezza per la gestione record** per selezionare e abilitare un gruppo di sicurezza abilitato alla posta che contiene gli account amministratore.
     
     I gruppi di Microsoft 365 e i gruppi di sicurezza non abilitati alla posta elettronica non supportano questa funzionalità e non vengono visualizzati nell'elenco di selezione. Se è necessario creare un nuovo gruppo di sicurezza abilitato alla posta elettronica, utilizzare il collegamento all'interfaccia di amministrazione di Microsoft 365 per creare il nuovo gruppo. 
     
     > [!IMPORTANT]
-    > Non è possibile disabilitare questa autorizzazione o sostituire il gruppo abilitato dal Centro conformità. Tuttavia, è possibile abilitare un altro gruppo di sicurezza abilitato alla posta elettronica usando il cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
-    > 
-    > Ad esempio: `Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
+    > Dopo aver abilitato il gruppo, non sarà più possibile modificarlo nel Centro conformità. Vedere la sezione successiva per informazioni su come abilitare un gruppo diverso con PowerShell.
 
 - Nell'anteprima: l'opzione di **Impostazioni di gestione dei record** è visibile solo agli amministratori della gestione dei record. 
+
+#### <a name="enabling-another-security-group-for-disposition"></a>Abilitazione di un altro gruppo di sicurezza per l'eliminazione
+
+Dopo aver abilitato un gruppo di sicurezza per l'eliminazione dalle **impostazioni di gestione dei record** nel Centro conformità Microsoft 365, non sarà possibile disabilitare questa autorizzazione per il gruppo o sostituire il gruppo selezionato nel Centro conformità. Tuttavia, è possibile abilitare un altro gruppo di sicurezza abilitato alla posta elettronica tramite il cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+
+Ad esempio: 
+
+```PowerShell
+Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
+````
 
 ### <a name="enable-auditing"></a>Abilitazione del controllo
 
@@ -142,17 +150,21 @@ Dopo aver specificato i revisori, ricordarsi di concedere l'autorizzazione ruolo
 
 ### <a name="how-to-customize-email-messages-for-disposition-review"></a>Come personalizzare i messaggi di posta elettronica per la revisione per l'eliminazione
 
+Esempio di notifica di posta elettronica predefinita inviata a un revisore:
+
+![Esempio di notifica tramite posta elettronica con testo predefinito quando un elemento è pronto per la revisione per l'eliminazione](../media/disposition-review-email.png)
+
 In anteprima, è possibile anche personalizzare i messaggi di posta elettronica inviati ai revisori per l'eliminazione per la notifica e i promemoria iniziali.
 
-In una delle pagine Eliminazione nel Centro conformità selezionare le **Impostazioni di gestione dei record**:  
+In una delle pagine Eliminazione nel Centro conformità selezionare le **impostazioni di gestione dei record**:  
 
-![Impostazioni di gestione dei record](../media/record-management-settings.png)
+![Impostazioni predefinite della gestione dei record](../media/record-management-settings.png)
 
-Quindi selezionare la scheda **Modelli di messaggi di posta** e specificare se si vogliono usare solo i modelli di posta elettronica predefiniti oppure se aggiungere un testo personalizzato al modello predefinito. Il testo personalizzato viene aggiunto alle istruzioni di posta elettronica dopo le informazioni sull'etichetta di conservazione e prima delle istruzioni delle fasi successive.
+Quindi selezionare la scheda **Notifiche di eliminazione** e specificare se si vuole usare solo il messaggio di posta elettronica predefinito oppure aggiungere un testo personalizzato a questo. Il testo personalizzato viene aggiunto alle istruzioni di posta elettronica dopo le informazioni sull'etichetta di conservazione e prima delle istruzioni delle fasi successive.
 
 È possibile aggiungere un testo per tutte le lingue, ma la formattazione e le immagini non sono attualmente supportate. Gli URL e gli indirizzi di posta elettronica possono essere immessi come testo e, a seconda del client di posta elettronica, possono essere visualizzati come collegamenti ipertestuali o come testo non formattato nel messaggio di posta elettronica personalizzato.
 
-Testo di esempio da accodare:
+Testo di esempio da aggiungere:
 
 ```console
 If you need additional information, visit the helpdesk website (https://support.contoso.com) or send them an email (helpdesk@contoso.com).
@@ -162,7 +174,7 @@ Selezionare **Salva** per salvare eventuali modifiche.
 
 ### <a name="viewing-and-disposing-of-content"></a>Visualizzazione ed eliminazione del contenuto
 
-Quando riceve una notifica tramite posta elettronica che informa che il contenuto è pronto per la revisione, il revisore può accedere alla scheda **eliminazione** dalla **gestione dei record** nel Centro conformità Microsoft 365. I revisori possono vedere quanti elementi per ogni etichetta di conservazione sono in attesa di eliminazione tramite la visualizzazione del **carattere** che indica **Eliminazione in sospeso**. Selezionano quindi un'etichetta di conservazione, poi **Apri in una nuova finestra** per visualizzare tutto il contenuto con quella etichetta:
+Quando un revisore viene informato tramite posta elettronica che il contenuto è pronto per essere rivisto, possono usare il collegamento nel messaggio di posta elettronica che li porta direttamente alla pagina **Eliminazione** da **Gestione record** nel Centro conformità Microsoft 365. I revisori possono visualizzare quanti elementi per ogni etichetta di conservazione sono in attesa di eliminazione nella colonna **Tipo** che mostra **Eliminazione in sospeso**. Selezionano quindi un'etichetta di conservazione, poi **Apri in una nuova finestra** per visualizzare tutto il contenuto con quella etichetta:
 
 ![Aprire in una nuova finestra per la revisione per l'eliminazione](../media/open-in-new-window.png)
 

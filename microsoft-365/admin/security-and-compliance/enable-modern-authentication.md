@@ -45,7 +45,7 @@ Per abilitare l'autenticazione moderna per tutti i dispositivi che eseguono Wind
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-Dopo aver impostato le chiavi del Registro di sistema, è possibile impostare Office 2013 app per dispositivi per l'utilizzo [dell'autenticazione a più fattori (AMF)](set-up-multi-factor-authentication.md) con Microsoft 365. 
+Dopo aver impostato le chiavi del Registro di sistema, puoi impostare le app dei dispositivi Office 2013 per l'uso dell'autenticazione a più fattori [(MFA)](set-up-multi-factor-authentication.md) con Microsoft 365. 
   
 Se si è attualmente connessi con una delle app client, è necessario disconnettersi e accedere di nuovo per rendere effettive le modifiche. In caso contrario, le impostazioni MRU e di roaming non saranno disponibili finché non viene stabilita l'identità ADAL.
   
@@ -57,9 +57,9 @@ Per disabilitare l'autenticazione moderna in un dispositivo, impostare le seguen
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Accedere a Office 2013 con un secondo metodo di verifica](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (articolo)
+[Accedere a Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) con un secondo metodo di verifica (articolo)
 
-[Outlook richiede la password e non utilizza l'autenticazione moderna per connettersi a Office 365](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) (articolo)
+Outlook richiede la password e non usa [l'autenticazione](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) moderna per connettersi a Office 365 (articolo)
 

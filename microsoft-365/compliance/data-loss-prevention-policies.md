@@ -32,7 +32,7 @@ ms.locfileid: "52572562"
 # <a name="data-loss-prevention-reference"></a>Informazioni di riferimento sulla prevenzione della perdita di dati
  
 > [!IMPORTANT]
-> Questo argomento di riferimento non è più la risorsa principale per le Microsoft 365 informazioni sulla prevenzione della perdita di dati (DLP). Il set di contenuti DLP è in fase di aggiornamento e ristrutturazione. Gli argomenti trattati in questo articolo verranno passando a nuovi articoli aggiornati. Per ulteriori informazioni su DLP, vedere [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md).
+> Questo è l'argomento di riferimento non è più la risorsa principale per Microsoft 365 di prevenzione della perdita dei dati (DLP). Il set di contenuti DLP viene aggiornato e ristrutturato. Gli argomenti trattati in questo articolo verranno trattati in articoli nuovi e aggiornati. Per ulteriori informazioni sulla prevenzione della perdita dei dati, vedere [Informazioni sulla prevenzione della perdita dei dati.](dlp-learn-about-dlp.md)
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -66,7 +66,7 @@ With a DLP policy, you can:
     To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
 
 -->    
-## <a name="create-and-manage-dlp-policies"></a>Creare e gestire criteri DLP
+## <a name="create-and-manage-dlp-policies"></a>Creare e gestire i criteri DLP
 
 È possibile creare e gestire i criteri di prevenzione della perdita dei dati nella pagina Prevenzione della perdita di dati nel Centro conformità e sicurezza di Microsoft 365.
   
@@ -385,7 +385,7 @@ Quando si usa un'[etichetta di conservazione](retention.md#retention-labels) cre
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta di riservatezza come condizione nei criteri di prevenzione della perdita dei dati
 
-[Altre informazioni](./dlp-sensitivity-label-as-condition.md) sull'uso dell'etichetta di riservatezza come condizione nei criteri DLP.
+[Ulteriori informazioni](./dlp-sensitivity-label-as-condition.md) sull'uso dell'etichetta riservatezza come condizione nei criteri DLP.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Correlazione tra questa funzionalità e le altre
 
@@ -520,7 +520,7 @@ Mentre vengono aggiunti o modificati documenti nei siti, il motore di ricerca es
 I criteri di prevenzione della perdita dei dati valutano tutti i contenuti che possono essere indicizzati. Per altre informazioni sui tipi di file sottoposti per impostazione predefinita a ricerca per indicizzazione, vedere [Estensioni dei nomi di file sottoposti a ricerca per indicizzazione e tipi di file analizzati predefiniti in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Per evitare che i documenti vengano condivisi prima che i criteri DLP avessero l'opportunità di analizzarli, la condivisione di nuovi file in SharePoint può essere bloccata fino a quando il suo contenuto non è stato indicizzato. Per informazioni dettagliate, vedere [Contrassegnare i nuovi file come riservati per impostazione predefinita](/sharepoint/sensitive-by-default). 
+> Per evitare che i documenti vengano condivisi prima che i criteri DLP possano analizzarli, la condivisione di nuovi file in SharePoint può essere bloccata fino a quando il relativo contenuto non è stato indicizzato. Per informazioni dettagliate, vedere [Contrassegnare i nuovi file come riservati per impostazione predefinita](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Valutazione dei criteri in Exchange Online, Outlook e Outlook sul web
 

@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Informazioni su come instradare il traffico a un sito Web pubblico esistente ospitato al di fuori di Microsoft, se Microsoft è stato impostato per gestire i record DNS per il dominio personalizzato.
+description: Informazioni su come instradare il traffico a un sito Web pubblico esistente ospitato all'esterno di Microsoft, se è stato impostato Microsoft per la gestione dei record DNS per il dominio personalizzato.
 ms.openlocfilehash: 2a1559bbb902375bbc363180cdb4f98ec2b3a939
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -30,18 +30,18 @@ ms.locfileid: "52572142"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Aggiornare i record DNS per mantenere il proprio sito Web con l'attuale provider di hosting
 
- **Se si gestiscono i record Microsoft del dominio presso il provider di hosting DNS**, non è necessario preoccuparsi dei passaggi descritti in questo argomento. Il sito Web rimarrà ospitato dove si trova e gli utenti potranno continuare ad accedervi. 
+ **Se si gestiscono i record Microsoft** del dominio presso il provider di hosting DNS, non è necessario preoccuparsi dei passaggi descritti in questo argomento. Il sito Web rimarrà ospitato dove si trova e gli utenti potranno continuare ad accedervi. 
   
- **Se Microsoft gestisce i record DNS**, per instradare il traffico a un sito Web pubblico esistente ospitato al di fuori di Microsoft, dopo aver aggiunto il dominio a Microsoft, eseguire le operazioni seguenti: 
+ **Se Microsoft gestisce i** record DNS, per instradare il traffico a un sito Web pubblico esistente ospitato all'esterno di Microsoft, dopo aver aggiunto il dominio a Microsoft, eseguire le operazioni seguenti: 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Aggiornare i record DNS nell'interfaccia Microsoft 365 di amministrazione
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Aggiornare i record DNS nell'Microsoft 365 di amministrazione
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
-1. Nella pagina **Domini** selezionare il dominio e quindi dns **records**.
+1. Nella pagina **Domini** selezionare il dominio e quindi scegliere **Record DNS**.
 
 1. Selezionare **+ Aggiungi record** e immettere quanto segue: 
     
-   - Per **il** tipo invio: **A (Indirizzo)**
+   - Per **digitare** enter: **A (Address)**
     
    - Per **Nome host o alias** digitare **@**
     
@@ -55,7 +55,7 @@ ms.locfileid: "52572142"
   
 1. Selezionare **+ Aggiungi record** e immettere quanto segue: 
     
-   - Per **il** tipo invio: **CNAME (Alias)**
+   - Per **digitare** enter: **CNAME (Alias)**
     
    - Per **Nome host o alias** digitare **www**
     
@@ -65,6 +65,6 @@ ms.locfileid: "52572142"
     
 Eseguire infine le operazioni seguenti:
   
-[Aggiornare i record NS del dominio in modo](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) che puntino a Microsoft. 
+[Aggiornare i record NS](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) del dominio in modo che puntino a Microsoft. 
   
-Quando i record NS sono stati aggiornati in modo che puntino a Microsoft, il dominio è tutto pronto. La posta elettronica verrà instradata a Microsoft e il traffico verso l'indirizzo del sito Web continuerà a essere indirizzato all'host del sito Web corrente.
+Quando i record NS sono stati aggiornati in modo che puntino a Microsoft, il dominio è tutto configurato. La posta elettronica verrà instradata a Microsoft e il traffico verso l'indirizzo del sito Web continuerà ad andare all'host del sito Web corrente.

@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291032"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537968"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -44,17 +44,28 @@ Quando si tratta di proteggere gli utenti, Microsoft prende seriamente in consid
 
 In EOP sono disponibili le tecnologie anti-spoofing seguenti:
 
-- **Spoof Intelligence**: per esaminare i messaggi falsificati inviati da mittenti in domini interni ed esterni e consentire o bloccare tali mittenti. Per altre informazioni, vedere [Configurare spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
-
-- **Criteri anti-phishing**: in EOP i criteri anti-phishing consentono di attivare o disattivare spoof intelligence, attivare o disattivare l'identificazione dei mittenti non autenticati in Outlook e specificare l'azione per i mittenti di spoofing bloccati (spostare nella cartella Posta indesiderata o mettere in quarantena). I criteri anti-phishing avanzati disponibili in Microsoft Defender per Office 365 includono anche impostazioni anti-imitazione (mittenti e domini protetti), impostazioni di intelligence sulle cassette postali e soglie di phishing avanzate. Per altre informazioni, vedere [Criteri anti-phishing in Microsoft 365](set-up-anti-phishing-policies.md).
-
 - **Autenticazione e-mail**: parte integrante di qualsiasi iniziativa anti-spoofing è l'uso dell'autenticazione e-mail, nota anche come convalida della posta elettronica, tramite i record SPF, DKIM e DMARC nel DNS. È possibile configurare questi record per un dominio in modo che i sistemi di posta elettronica di destinazione possano controllare la validità dei messaggi che dichiarano di provenire da mittenti in tale dominio. Per i messaggi in ingresso, Microsoft 365 richiede l'autenticazione di posta elettronica per i domini dei mittenti. Per altre informazioni, vedere [Autenticazione di posta elettronica in Microsoft 365](email-validation-and-authentication.md).
 
-Dall'ottobre 2018, la protezione anti-spoofing è disponibile in EOP.
+  EOP analizza e blocca i messaggi che non è possibile autenticare con una combinazione di metodi standard di autenticazione della posta elettronica e tecniche basate sulla reputazione del mittente.
 
-EOP analizza e blocca i messaggi che non è possibile autenticare con una combinazione di metodi standard di autenticazione della posta elettronica e tecniche basate sulla reputazione del mittente.
+  ![Controlli anti-spoofing di EOP](../../media/eop-anti-spoofing-protection.png)
 
-![Controlli anti-spoofing di EOP](../../media/eop-anti-spoofing-protection.png)
+- **Dati analitici di Spoof intelligence**: rivedere i messaggi oggetto di spoofing dai mittenti nei domini interni ed esterni negli ultimi 7 giorni e consentire o bloccare tali mittenti. Per altre informazioni, vedere [Dati analitici di spoof intelligence in EOP](learn-about-spoof-intelligence.md).
+
+- **Consentire o bloccare i mittenti di spoofing nel tenant Elenco consentiti/bloccati**: quando si esegue l'override del verdetto nei dati analitici di spoof intelligence, il mittente di spoofing diventa una voce nell'Elenco consentiti/bloccati manuale che compare unicamente nella scheda **Spoofing** nel tenant Elenco consentiti/bloccati. Inoltre, è possibile creare, consentire o bloccare manualmente le voci per i mittenti di spoofing prima che vengano rilevati da spoof intelligence. Per altre informazioni, vedere [Gestire il tenant Elenco consentiti/blcocati in EOP](tenant-allow-block-list.md).
+
+- **Criteri anti-phishing**: in EOP, i criteri anti-phishing contengono le seguenti impostazioni anti-spoofing:
+  - Attivare o disattivare spoof intelligence.
+  - Attivare o disattivare l'identificazione dei mittenti non autenticati in Outlook.
+  - Specificare l'azione per i mittenti di spoofing bloccati.
+
+  Per altre informazioni, vedere [Impostazioni di spoofing nei criteri anti-phishing](set-up-anti-phishing-policies.md#spoof-settings).
+
+  **Nota**: i criteri anti-phishing in Microsoft Defender per Office 365 contengono protezioni aggiuntive, inclusa la protezione da **imitazione**. Per altre informazioni, vedere [Impostazioni esclusive nei criteri anti-phishing in Microsoft Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+- **Report di rilevamento spoofing**: per altre informazioni, vedere [Report di rilevamento spoofing](view-email-security-reports.md#spoof-detections-report).
+
+  **Nota**: Le organizzazioni Defender per Office 365 possono anche usare i Rilevamenti in tempo reale (Piano 1) o Esplora minacce (Piano 2) per visualizzare le informazioni relative ai tentativi di phishing. Per altre informazioni, vedere [Analisi e risposta alle minacce di Microsoft 365](office-365-ti.md).
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Come viene usato lo spoofing negli attacchi di phishing
 
@@ -127,12 +138,6 @@ Microsoft distingue tra due diversi tipi di spoofing dei messaggi:
 
 Per altre informazioni su DMARC, vedere [Usare DMARC per convalidare la posta elettronica in Microsoft 365](use-dmarc-to-validate-email.md).
 
-## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Report relativi al numero di messaggi contrassegnati come spoofing
-
-Le organizzazioni EOP possono usare il report dei **rilevamenti Spoof** nella dashboard dei Report del Centro di Sicurezza e Conformità. Per altre informazioni, vedere [Report Rilevamenti spoof](view-email-security-reports.md#spoof-detections-report).
-
-Un' organizzazione con Microsoft Defender per Office 365 può usare Esplora minacce nel Centro sicurezza e conformità per visualizzare informazioni sui tentativi di phishing. Per altre informazioni, vedere [Analisi e risposta alle minacce di Microsoft 365](office-365-ti.md).
-
 ## <a name="problems-with-anti-spoofing-protection"></a>Problemi correlati alla protezione anti-spoofing
 
 È noto che le liste di distribuzione, dette anche elenchi di discussione, hanno problemi con l'anti-spoofing a causa del modo in cui inoltrano e modificano i messaggi.
@@ -161,7 +166,7 @@ Per consentire ai messaggi delle liste di distribuzione di superare i controlli 
 
     Quando un numero sufficiente di mittenti risponde ai proprietari dei domini che dovrebbero impostare i record di autenticazione della posta elettronica, li sprona a intervenire. Anche se Microsoft è compatibile con i proprietari di dominio per pubblicare i record necessari, è ancora più utile quando i singoli utenti lo richiedono.
 
-  - Creare regole di posta in arrivo nel client di posta elettronica per spostare i messaggi nella cartella Posta in arrivo. È anche possibile chiedere agli amministratori di configurare override come descritto in [Usare spoof intelligence per configurare i mittenti di posta elettronica non autenticata consentiti](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
+  - Creare regole di posta in arrivo nel client di posta elettronica per spostare i messaggi nella cartella Posta in arrivo. Inoltre, è possibile chiedere agli amministratori di configurare gli override come descritto in [Dati analitici di spoof intelligence in EOP](learn-about-spoof-intelligence.md) e [Gestire il tenant Elenco consentiti/bloccati](tenant-allow-block-list.md).
 
   - Creare un ticket di supporto con Microsoft 365 per creare una sostituzione per la lista di distribuzione al fine di trattarla come legittima. Per altre informazioni, vedere [Contattare il supporto per i prodotti per le aziende - Guida per amministratori](../../business-video/get-help-support.md).
 
