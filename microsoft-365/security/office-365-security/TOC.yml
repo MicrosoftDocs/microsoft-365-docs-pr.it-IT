@@ -38,14 +38,6 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Panoramica del Centro sicurezza Microsoft 365
           href: ../defender/overview-security-center.md
-        - name: Esplora minacce per Defender per Office 365
-          items:
-            - name: Rilevazione minacce in Esplora minacce
-              href: threat-hunting-in-threat-explorer.md
-            - name: Protezione e-mail con Esplora minacce
-              href: email-security-in-microsoft-defender.md
-            - name: Dati principali su Esplora minacce e rilevamenti in tempo reale
-              href: real-time-detections.md
         - name: Pagina Entità posta elettronica
           href: mdo-email-entity-page.md
         - name: Panoramica AIR
@@ -200,6 +192,14 @@
           href: zero-hour-auto-purge.md
     - name: Rilevamento
       items:
+        - name: Esplora minacce per Defender per Office 365
+          items:
+            - name: Rilevazione minacce in Esplora minacce
+              href: threat-hunting-in-threat-explorer.md
+            - name: Protezione e-mail con Esplora minacce
+              href: email-security-in-microsoft-defender.md
+            - name: Dati principali su Esplora minacce e rilevamenti in tempo reale
+              href: real-time-detections.md
         - name: Usare gli indicatori delle minacce
           href: threat-trackers.md
         - name: Visualizzare gli avvisi
