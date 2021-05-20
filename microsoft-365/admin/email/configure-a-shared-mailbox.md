@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Dopo aver creato una cassetta postale condivisa, è necessario configurare alcune impostazioni per i relativi utenti, ad esempio l'inoltro della posta elettronica e le risposte automatiche. In seguito, potrebbe essere necessario modificare altre impostazioni, ad esempio il nome o i membri della cassetta postale.
-ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Creare una cassetta postale condivisa e configurare alcune impostazioni per gli utenti, ad esempio l'inoltro della posta elettronica e le risposte automatiche.
+ms.openlocfilehash: ab23353f07a24f06d43172e8087819dd915ab720
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243973"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582669"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Configurare le impostazioni della cassetta postale condivisa
 
@@ -142,7 +142,7 @@ Se si sceglie di non visualizzare la cassetta postale condivisa nell'elenco indi
 > [!NOTE]
 > Nascondere una cassetta postale condivisa dall'elenco indirizzi rende impossibile per i nuovi membri della cassetta postale condivisa aggiungere la cassetta postale nascosta al proprio profilo Outlook fino a quando la cassetta postale condivisa non viene nuovamente visualizzata nell'elenco indirizzi. 
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) (articolo)
 

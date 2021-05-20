@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Informazioni sulle sottoscrizioni e sulle licenze in Microsoft 365 per le aziende.
+description: Le applicazioni e i servizi ricevuti dipendono dal Microsoft 365 prodotto acquistato, ad esempio Microsoft 365 Apps for business.
 ms.date: 07/01/2020
-ms.openlocfilehash: a8ec5b0716a5ceaa02526520e76dc390a6fba0f7
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4e93a84df106475417289da168ca472ed5a07475
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331491"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582729"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Informazioni su abbonamenti e licenze in Microsoft 365 per le aziende
 
@@ -82,7 +82,7 @@ Tipi diversi di amministratori possono usare le licenze in modi diversi, in base
 |Amministratore del supporto dei servizi  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
 |Amministratore utenti  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Sì  <br/> |
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Acquistare o rimuovere licenze per l'abbonamento aziendale](buy-licenses.md) (articolo)\
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\

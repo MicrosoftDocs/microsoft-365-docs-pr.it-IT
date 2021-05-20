@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Informazioni su come gestire le firme di posta elettronica, incluse dichiarazioni di non responsabilità legali o dichiarazioni di divulgazione per tutti i messaggi di posta elettronica che entrano o escono dall'organizzazione.
-ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Gestire le firme di posta elettronica, incluse dichiarazioni di non responsabilità legali o dichiarazioni di divulgazione per tutti i messaggi di posta elettronica che entrano o escono dall'organizzazione.
+ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244528"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582753"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Creare firme e dichiarazioni di non responsabilità a livello di organizzazione
 
@@ -40,7 +40,7 @@ ms.locfileid: "52244528"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Creare una firma da applicare a tutti i messaggi
 
@@ -115,4 +115,13 @@ Per ottenere queste e altre funzionalità per gestire le firme di posta elettron
   
 ## <a name="more-resources"></a>Altre risorse
 
-- Per [informazioni sull'utilizzo](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) di PowerShell, vedere Dichiarazioni di non responsabilità, firme, piè di pagina o intestazioni a livello Exchange Online messaggio a livello di organizzazione.
+Per informazioni sull'utilizzo di PowerShell, vedere Dichiarazioni di non [responsabilità, firme,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)piè di pagina o intestazioni a livello di organizzazione in Exchange Online .
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Eseguire la migrazione di posta elettronica e contatti Microsoft 365](migrate-email-and-contacts-admin.md) (video)
+
+[Impostazioni di posta elettronica dell'utente](../email/office-365-user-email-settings.md) (articolo)
+
+[Informazioni generali sull'interfaccia di amministrazione di Microsoft 365](../../business-video/admin-center-overview.md) (video)
+

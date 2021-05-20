@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Seguire questa procedura per concedere a un altro dipendente l'accesso ai dati OneDrive e Outlook del dipendente precedente.
-ms.openlocfilehash: 451f8f7f50098c280e3925ef4efe5ad491ac54fa
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Seguire i passaggi descritti in questo articolo per concedere a un altro dipendente l'accesso ai dati OneDrive e Outlook dell'ex dipendente.
+ms.openlocfilehash: cb5c27cbc7f1c184af8f0d1ad32b822660e93791
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244210"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582693"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Passaggio 4 - Concedere a un altro dipendente l'accesso OneDrive e Outlook dati
 
@@ -161,10 +161,10 @@ Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle at
 > [!TIP]
 > Se si desidera importare o ripristinare solo alcuni elementi da un file di dati di Outlook (.pst), è possibile aprire il Outlook File di dati. Nel riquadro di spostamento trascinare quindi gli elementi dalle Outlook file di dati alle cartelle Outlook esistenti. 
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Aggiungere e rimuovere amministratori in un OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
+[Aggiungere e rimuovere amministratori in un account OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (articolo)
 
-[Ripristinare una cartella OneDrive](/onedrive/restore-deleted-onedrive)
+[Ripristinare un'OneDrive](/onedrive/restore-deleted-onedrive) eliminata (articolo)
   
-[OneDrive conservazione ed eliminazione](/onedrive/retention-and-deletion)
+[OneDrive conservazione ed eliminazione (articolo)](/onedrive/retention-and-deletion)
