@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Come distribuire team con la protezione dei dati sensibili.
-ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538184"
+ms.locfileid: "52572718"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurare team con la protezione dei dati sensibili
 
@@ -105,7 +105,7 @@ Per limitare la creazione di canali privati
 
 Ogni volta che si crea un nuovo team con l'etichetta per i dati sensibili, occorre eseguire due passaggi in SharePoint:
 
-- Aggiornare le impostazioni di condivisione guest per il sito nell'interfaccia di amministrazione di SharePoint in base a ciò che è stato scelto al momento della creazione dell'etichetta e aggiornare il collegamento di condivisione predefinito in *Persone specifiche*.
+- Aggiorna le impostazioni di condivisione guest per il sito nell'interfaccia di amministrazione di SharePoint in modo da aggiornare il collegamento di condivisione predefinito *Utenti specifici*.
 - Aggiornare le impostazioni di condivisione del sito nel sito stesso per impedire ai membri di condividerlo.
 
 ### <a name="site-guest-sharing-settings"></a>Impostazioni di condivisione guest del sito

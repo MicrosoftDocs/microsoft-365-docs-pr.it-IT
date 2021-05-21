@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245589"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572658"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -394,11 +394,15 @@ Per usare i cmdlet di conservazione, è prima necessario [connettersi a PowerShe
 
 - [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
 
+- [Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig)
+
 - [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
 
 - [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
 - [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
+
+- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig )
 
 - [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
@@ -409,6 +413,7 @@ Per usare i cmdlet di conservazione, è prima necessario [connettersi a PowerShe
 - [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
 
 - [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
+
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Quando usare i criteri di conservazione e le etichette di conservazione o i blocchi di eDiscovery
 
