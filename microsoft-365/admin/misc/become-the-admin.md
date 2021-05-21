@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Informazioni su come verificare la posta elettronica e la proprietà del dominio per assumere un tenant non gestito in Microsoft 365
-ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Informazioni su come verificare la proprietà della posta elettronica e del dominio per assumere il controllo di un tenant non gestito creato da un utente in modalità self-service Microsoft 365.
+ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914847"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593934"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Eseguire l'acquisizione di un amministratore interno
 
@@ -41,7 +41,7 @@ Se sei un amministratore e vuoi assumere un tenant non gestito creato da un'iscr
 > [!NOTE]
 > Se il servizio self-service è abilitato nel tenant, gli utenti possono sottoscrivere servizi gratuiti, ad esempio Power BI, autonomamente. Questi passaggi presuppongono che una sottoscrizione utente in modalità self-service abbia creato il tenant non gestito che si desidera assumere come amministratore. Nel primo passaggio viene creato un contesto utente nel tenant non gestito, usando Power BI per illustrare il percorso di acquisizione dell'amministratore.
 
-1. Per iscriversi a Power BI, passare al sito [di Power BI](https://powerbi.com) e selezionare Avvia la versione di valutazione gratuita di Avvio gratuito  >   (nella casella Condividi con Power BI Pro). 
+1. Per iscriverti Power BI, vai al sito [di Power BI](https://powerbi.com) e seleziona Avvia la versione di valutazione gratuita di Start gratuito (nella casella Condividi  >   con Power BI Pro). 
 
 2. Iscriversi con un account utente che utilizza il nome di dominio dell'organizzazione (ad esempio `powerbiadmin@contoso.com` ). Se l'account è già in uso, accedere utilizzando la password corrente.
 
@@ -66,12 +66,12 @@ Se sei un amministratore e vuoi assumere un tenant non gestito creato da un'iscr
 > [!NOTE]
 > L'assunzione del tenant shadow non inciderà sulle informazioni o sui servizi esistenti. Tuttavia, se tutti gli utenti del dominio si sono registrati per i servizi che richiedono una licenza, ti verrà chiesto di acquistare licenze per loro come parte dell'assunzione del ruolo di amministratore. Puoi acquistare o rimuovere licenze al termine del processo di configurazione dell'amministratore.
   
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-YouTube: 3 passaggi per eseguire l'acquisizione di un amministratore [IT per Power BI e Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 passaggi per eseguire l'acquisizione](https://www.youtube.com/watch?v=xt5EsrQBZZk) di un amministratore IT per Power BI e Microsoft 365 (video)
 
-[Acquisizione dell'amministratore in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Acquisizione dell'amministratore in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (articolo)
 
-[Uso dell'iscrizione self-service nell'organizzazione](self-service-sign-up.md)
+[Uso dell'iscrizione in modalità self-service nell'organizzazione](self-service-sign-up.md) (articolo)
   
-[Informazioni sul ruolo di amministratore del servizio Power BI](/power-bi/service-admin-role)
+[Informazioni sul ruolo Power BI amministratore del servizio](/power-bi/service-admin-role) (articolo)

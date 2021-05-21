@@ -33,7 +33,7 @@
 |STICKY NOTES|N/D|N/D|N/D|N/D|✔|
 |STREAM|✔|✔|N/D|N/D|N/D|
 |SWAY|N/D|N/D|N/D|N/D|✔|
-|TEAMS|✔|✔|✔|Pianificato|N/D|
+|TEAMS|✔|✔|✔|✔|N/D|
 |TO-DO|✔|✔|✔|N/D|✔|
 |VISIO|N/D|✔|N/D|✔|N/D|
 |LAVAGNA|✔|Pianificato|N/D|N/D|✔|

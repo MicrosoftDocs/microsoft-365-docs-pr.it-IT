@@ -21,23 +21,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: 'Informazioni su come modificare il tema predefinito di Microsoft 365 e personalizzarlo in base al logo o al colore della società. '
-ms.openlocfilehash: b7a0b142b8bd465a9e3258aaaeb951b72bc53fc7
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+description: Informazioni su come modificare il tema predefinito per la parte superiore della barra di spostamento in Microsoft 365 e personalizzarlo in base al logo o al colore della società.
+ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060909"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593830"
 ---
-# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema di Microsoft 365 per l'organizzazione
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
 L'amministratore dell'organizzazione può creare più temi per le persone dell'organizzazione e selezionare i temi da applicare ai diversi membri dell'organizzazione. Il tema dell'organizzazione è quello visualizzato nella barra di spostamento superiore per gli utenti dell'organizzazione.
 
-È possibile aggiungere o aggiornare un tema predefinito applicabile a tutti gli utenti dell'organizzazione. È inoltre possibile creare fino a quattro temi di gruppo aggiuntivi che possono essere assegnati a più gruppi di Microsoft 365.
+È possibile aggiungere o aggiornare un tema predefinito applicabile a tutti gli utenti dell'organizzazione. Puoi anche creare fino a quattro temi di gruppo aggiuntivi che possono essere assegnati a più Microsoft 365 gruppi.
   
 ## <a name="add-or-update-your-organizations-theme"></a>Aggiungere o aggiornare il tema dell'organizzazione
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni** \> **organizzazione** e quindi scegliere la **scheda Profilo** organizzazione.
+1. Nell'interfaccia di amministrazione passare alla **Impostazioni** \> **org Impostazioni** e quindi scegliere la **scheda Profilo** organizzazione.
 
 2. Nella scheda **Profilo organizzazione** selezionare **Tema organizzazione.**
 
@@ -46,7 +46,7 @@ Tutti i temi possono essere personalizzati utilizzando le schede seguenti.
 |**Scheda**|**Cosa potete fare?**|
 |:-----|:-----|
 |[Generale](#general-modify-a-theme) <br/> |Modificare il nome di un tema e assegnare fino a cinque gruppi (se applicabile).  <br/> |
-|[Logo](#logos-specify-your-theme-logos) <br/> |Aggiungere il logo del tema, inclusi il tema scuro di Office e le opzioni per dispositivi mobili.  <br/> |
+|[Logo](#logos-specify-your-theme-logos) <br/> |Aggiungi il logo del tema, inclusa la Office tema scuro e le opzioni per dispositivi mobili.  <br/> |
 |[Colori](#colors-choose-theme-colors) <br/> |Personalizzare una combinazione di colori specificando i colori della barra di spostamento, dell'accento, del testo e dell'icona. <br/> |
 
 ## <a name="general-modify-a-theme"></a>Generale: Modificare un tema
@@ -59,7 +59,7 @@ Il tema predefinito è il primo tema visualizzato.
 
 1. Se in precedenza è stato personalizzato un tema per l'organizzazione, selezionare **Tema** predefinito e utilizzare una delle personalizzazioni salvate oppure selezionare **Aggiungi tema.**
 2. Nella pagina **Generale** è possibile impedire agli utenti di ignorare il tema e visualizzare il nome visualizzato dell'utente.
-3. Seleziona **Salva** per salvare le modifiche.  
+3. Selezionare **Salva** per salvare le modifiche.  
 
 > [!IMPORTANT]
 > Il tema predefinito è univoco, non può essere rinominato e si applica a tutti gli utenti dell'organizzazione. Per eliminare il tema predefinito, è necessario eliminare prima tutti gli altri temi.
@@ -72,7 +72,7 @@ Puoi creare fino a quattro temi di gruppo aggiuntivi.
 
 1. Nella pagina **Generale** immettere un nome per il tema.
 
-2. In **Gruppi** puoi selezionare fino a 5 gruppi di Microsoft 365 che possono visualizzare il tema del gruppo, invece di usare il tema predefinito. Puoi anche impedire agli utenti di ignorare il tema e mostrare il nome visualizzato dell'utente.
+2. In **Gruppi** puoi selezionare fino a 5 Microsoft 365 che possono visualizzare il tema del gruppo, anziché usare il tema predefinito. Puoi anche impedire agli utenti di ignorare il tema e mostrare il nome visualizzato dell'utente.
 
 3. Selezionare **Salva**.
 
@@ -83,12 +83,12 @@ Puoi creare fino a quattro temi di gruppo aggiuntivi.
 Nella pagina **Logo puoi** aggiungere i logo e specificare l'URL a cui gli utenti accederanno quando selezionano il logo.
 
 - **Logo predefinito:** aggiungere un percorso URL che punti al logo. Assicurati che l'URL usi HTTPS e che l'immagine sia di almeno 200 x 30 pixel. Il logo predefinito può essere in formato JPG, PNG, GIF o SVG.
-- **Logo alternativo:** aggiungere un percorso URL che punti al logo. Il logo alternativo deve essere ottimizzato per l'utilizzo nei temi scuri di Office. Stessi requisiti del logo predefinito.
+- **Logo alternativo:** aggiungere un percorso URL che punti al logo. Il logo alternativo deve essere ottimizzato per l'uso in Office temi scuri. Stessi requisiti del logo predefinito.
 - **Logo predefinito piccolo**: Aggiungere un percorso URL che punti al logo. L'immagine deve essere di almeno 48 x 48 pixel. Puoi ridimensionare l'immagine in modo che si adatti a dispositivi più piccoli o mobili.
 - **Logo alternativo piccolo:** aggiungere un percorso URL che punti al logo. Questa immagine ha gli stessi requisiti del logo predefinito di piccole dimensioni.
 - **Collegamento al clic:** aggiungere una posizione URL che punti al logo. È possibile utilizzare il logo come collegamento a qualsiasi risorsa aziendale, ad esempio il sito Web dell'azienda.
 
-Seleziona **Salva** per salvare le modifiche.
+Selezionare **Salva** per salvare le modifiche.
 
 È possibile rimuovere i logo in qualsiasi momento. Torna alla pagina **Logos** e seleziona **Rimuovi.**
 
@@ -103,7 +103,7 @@ Nella pagina **Colori** è possibile impostare i colori predefiniti e scegliere 
 
 - **Colore barra di spostamento:** selezionare un colore da utilizzare per lo sfondo della barra di spostamento. La barra di spostamento viene visualizzata nella parte superiore di ogni pagina.
 - **Colore testo e icona:** selezionare un colore da utilizzare per il testo e le icone sulla barra di spostamento superiore.
-- **Colore principale:** selezionane uno che viene visualizzato bene su uno sfondo bianco o chiaro. Il colore principale viene utilizzato per colorare alcuni collegamenti e pulsanti visualizzati su uno sfondo bianco o chiaro. Ad esempio, il colore principale viene utilizzato per colorare gli elementi nella posta in arrivo di un utente e nella Office.com portale.
+- **Colore principale:** selezionane uno che viene visualizzato bene su uno sfondo bianco o chiaro. Il colore principale viene utilizzato per colorare alcuni collegamenti e pulsanti visualizzati su uno sfondo bianco o chiaro. Ad esempio, il colore principale viene utilizzato per colorare gli elementi nella posta in arrivo di un utente e nella pagina del portale Office.com.
 - **Reimposta colore:** selezionare questo collegamento per ripristinare i colori predefiniti.
 - **Quale logo deve essere utilizzato?**: Selezionare i logo predefiniti o qualsiasi altro logo creato dall'utente.
 
@@ -113,7 +113,7 @@ Nella pagina **Colori** è possibile impostare i colori predefiniti e scegliere 
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>L'organizzazione ha già un tema per tutti i dipendenti. Come cambierà?
 
-Il tema predefinito continuerà a essere visualizzato per tutti i dipendenti.L'aggiunta di un nuovo tema di gruppo sarà disponibile solo per i gruppi di Microsoft 365 associati a tale tema.
+Il tema predefinito continuerà a essere visualizzato per tutti i dipendenti.L'aggiunta di un nuovo tema di gruppo sarà disponibile solo per i Microsoft 365 associati a tale tema.
 
 ### <a name="whydont-isee-group-themes-in-the-admin-center"></a>Perché i temi di gruppo non vengono visualizzati nell'interfaccia di amministrazione?
 
@@ -123,16 +123,16 @@ Solo gli amministratori globali possono personalizzare i temi aziendali.I lettor
 
 È possibile creare fino a cinque temi. Tema predefinito e quattro temi di gruppo.  
 
-### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>È possibile utilizzare gruppi di sicurezza o gruppi di distribuzione anziché i gruppi di Microsoft 365?
+### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>È possibile utilizzare gruppi di sicurezza o gruppi di distribuzione anziché Microsoft 365 gruppi?
 
-No, i nuovi temi di gruppo devono essere mappati a uno o più gruppi di Microsoft 365 e non a gruppi di sicurezza o gruppi di distribuzione.
+No, i nuovi temi di gruppo devono essere mappati a uno o più Microsoft 365 e non a gruppi di sicurezza o gruppi di distribuzione.
 
 > [!NOTE]
-> È possibile convertire i gruppi di distribuzione in gruppi di [Microsoft 365](../manage/upgrade-distribution-lists.md) in Outlook.
+> È possibile convertire [i gruppi di distribuzione Microsoft 365 gruppi in](../manage/upgrade-distribution-lists.md) Outlook.
 
-### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>È possibile assegnare manualmente un tema indipendentemente dai gruppi di Microsoft 365?  
+### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>È possibile assegnare manualmente un tema indipendentemente Microsoft 365 gruppi?  
 
-No, i nuovi temi di gruppo devono essere mappati a uno o più gruppi di Microsoft 365. Gli utenti membri del gruppo di Microsoft 365 riceveranno il tema applicato al gruppo. È possibile creare e aggiungere nuovi membri a un gruppo di [Microsoft 365](../create-groups/create-groups.md) andando a **Gruppi** di impostazioni   >  **** nell'interfaccia di amministrazione.
+No, i nuovi temi di gruppo devono essere mappati a uno o più Microsoft 365 gruppi. Agli utenti membri del Microsoft 365 verrà applicato il tema al gruppo. È possibile [creare e aggiungere nuovi](../create-groups/create-groups.md) membri a un Microsoft 365 gruppo di Impostazioni ****   >  **nell'interfaccia** di amministrazione.You can create and add new members to a Microsoft 365 Group by going to the Impostazioni Groups in the admin center.
 
 ### <a name="what-happens-if-a-user-is-assigned-to-multiple-group-themes"></a>Cosa succede se un utente viene assegnato a più temi di gruppo?  
 
@@ -144,18 +144,18 @@ Il tema predefinito può essere eliminato solo dopo l'eliminazione di tutti i te
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Perché viene visualizzato un messaggio di errore ogni volta che si carica un URL del logo.  
 
-Assicurati che il logo che stai usando sia specificato come URL indirizzabile pubblicamente. Seguire questa procedura per [caricare i logo in Archiviazione BLOB](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) di Azure o nella rete di recapito del contenuto di Office [365 con SharePoint Online.](../../enterprise/use-microsoft-365-cdn-with-spo.md)
+Assicurati che il logo che stai usando sia specificato come URL indirizzabile pubblicamente. Segui questi passaggi per [caricare logo in Azure BLOB Archiviazione](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) o Office 365 rete per la distribuzione di contenuti con SharePoint [Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>Perché viene visualizzato il messaggio "Non soddisfa il rapporto minimo di contrasto del colore di 4,5:1"?
 
 Il rapporto di contrasto consigliato tra il testo, il colore dell'icona o del pulsante e il colore di sfondo è 4,5:1. Puoi ignorare questo suggerimento e salvare comunque il tema perché non è un requisito.
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Se si definisce un tema, quali posizioni verranno utilizzate in Microsoft 365?
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Se si definisce un tema, quali Microsoft 365 verrà usato?
 
-Qualsiasi tema verrà visualizzato nella barra di spostamento superiore per tutti gli utenti dell'organizzazione come parte dell'intestazione della famiglia di prodotti Microsoft 365.  
+Qualsiasi tema verrà visualizzato nella barra di spostamento superiore per tutti gli utenti dell'organizzazione come parte dell'intestazione Microsoft 365 suite.  
   
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Aggiungere riquadri personalizzati alla pagina Mie app e all'icona di avvio delle app](../manage/customize-the-app-launcher.md)
+[Aggiungere riquadri personalizzati alla pagina App personali e all'icona di avvio](../manage/customize-the-app-launcher.md) delle app (articolo)
 
-[Panoramica dei gruppi di Microsoft 365 per gli amministratori](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups)
+[Panoramica dei Microsoft 365 per gli amministratori](../create-groups/office-365-groups.md) (articolo)

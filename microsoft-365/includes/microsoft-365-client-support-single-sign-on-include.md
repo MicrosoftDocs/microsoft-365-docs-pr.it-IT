@@ -26,7 +26,7 @@
 |STICKY NOTES|N/D|N/D|N/D|N/D|✔|
 |STREAM|Pianificato|Pianificato|N/D|N/D|N/D|
 |SWAY|N/D|N/D|N/D|N/D|✔|
-|TEAMS|✔|✔|Pianificato|✔|N/D|
+|TEAMS|✔|✔|✔|✔|N/D|
 |TO-DO|✔|✔|N/D|N/D|✔|
 |VISIO|N/D|✔|N/D|✔|N/D|
 |LAVAGNA|✔|✔|N/D|N/D|✔|

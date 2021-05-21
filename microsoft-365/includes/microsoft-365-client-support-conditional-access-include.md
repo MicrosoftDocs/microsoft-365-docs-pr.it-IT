@@ -30,7 +30,7 @@
 |STICKY NOTES|N/D|N/D|N/D|N/D|Pianificato|
 |STREAM|Pianificato|Pianificato|N/D|N/D|N/D|
 |SWAY|N/D|N/D|N/D|N/D|Pianificato|
-|TEAMS|✔|✔|✔|Pianificato|N/D|
+|TEAMS|✔|✔|✔|✔|N/D|
 |TO-DO|Pianificato|Pianificato|Pianificato|N/D|Pianificato|
 |VISIO|N/D|✔|N/D|Pianificato|N/D|
 |LAVAGNA|✔|Pianificato|N/D|N/D|Pianificato|

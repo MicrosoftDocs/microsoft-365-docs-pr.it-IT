@@ -21,31 +21,31 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
-description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: d3692f2e1cca58fec81f2ad492b9232d5576f99b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Informazioni su come configurare l'opzione di rilascio per i nuovi aggiornamenti di prodotti e funzionalità nell'Microsoft 365 di amministrazione.
+ms.openlocfilehash: 5060e2dc99355d89928ec91c96b7d25e2016c7c4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579255"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593946"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurare le opzioni di rilascio Standard o Mirato
 
 > [!IMPORTANT]
-> Gli aggiornamenti di Microsoft 365 descritti in questo articolo si applicano a Microsoft 365, SharePoint Online ed Exchange Online. Queste opzioni di rilascio sono modi mirati e più efficaci per rilasciare le modifiche a Microsoft 365, ma non possono essere garantite in qualsiasi momento o per tutti gli aggiornamenti. Non si applicano alle app di Microsoft 365, Skype for Business, Microsoft Teams e ai servizi correlati. Per informazioni sulle opzioni di rilascio per Microsoft 365 Apps, vedere Panoramica dei canali di [aggiornamento per Microsoft 365 Apps.](/deployoffice/overview-update-channels)
+> Gli Microsoft 365 descritti in questo articolo si applicano Microsoft 365, SharePoint Online e Exchange Online. Queste opzioni di rilascio sono modi mirati e più efficaci per rilasciare le modifiche Microsoft 365 ma non possono essere garantite in qualsiasi momento o per tutti gli aggiornamenti. Non si applicano a Microsoft 365 Apps, Skype for Business, Microsoft Teams e ai servizi correlati. Per informazioni sulle opzioni di rilascio per Microsoft 365 Apps, vedere [Panoramica dei canali di aggiornamento per Microsoft 365 Apps](/deployoffice/overview-update-channels).
 
-Con Microsoft 365, si ricevono nuovi aggiornamenti di prodotti e funzionalità non appena diventano disponibili invece di eseguire aggiornamenti costosi ogni pochi anni. È possibile gestire il modo in cui l'organizzazione riceve questi aggiornamenti. Ad esempio, è possibile iscriversi a un rilascio anticipato in modo che l'organizzazione riceva prima gli aggiornamenti. È possibile specificare che solo determinati utenti ricevano gli aggiornamenti. In caso contrario, è possibile rimanere in base alla pianificazione di rilascio predefinita e ricevere gli aggiornamenti in un secondo momento. In questo articolo vengono illustrate le diverse opzioni di rilascio e viene spiegato come utilizzarle per l'organizzazione.
+Con Microsoft 365, si ricevono nuovi aggiornamenti e funzionalità di prodotto non appena diventano disponibili invece di eseguire aggiornamenti costosi ogni pochi anni. È possibile gestire il modo in cui l'organizzazione riceve questi aggiornamenti. Ad esempio, è possibile iscriversi a un rilascio anticipato in modo che l'organizzazione riceva prima gli aggiornamenti. È possibile specificare che solo determinati utenti ricevano gli aggiornamenti. In caso contrario, è possibile rimanere in base alla pianificazione di rilascio predefinita e ricevere gli aggiornamenti in un secondo momento. In questo articolo vengono illustrate le diverse opzioni di rilascio e viene spiegato come utilizzarle per l'organizzazione.
 
 ## <a name="how-it-works---release-validation"></a>Funzionamento - Convalida dei rilasci
 
-Qualsiasi nuova versione viene prima testata e convalidata dal team delle funzionalità, quindi dall'intero team delle funzionalità di Microsoft 365, seguito da tutti i microsoft. Dopo il test e la convalida interni, il passaggio successivo è il rilascio **Targeted Release** (precedentemente noto come First Release) per i clienti che hanno acconsentito esplicitamente. A ogni anello di rilascio, Microsoft raccoglie feedback dagli utenti e convalida ulteriormente la qualità monitorando le metriche di utilizzo principali. Questa serie di convalide progressive viene applicata per garantire che la versione risulti quanto più stabile possibile in tutto il mondo. I rilasci sono illustrati nella figura seguente. 
+Qualsiasi nuova versione viene prima testata e convalidata dal team delle funzionalità, quindi dall'intero team Microsoft 365 funzionalità, seguito da tutti i team microsoft. Dopo il test e la convalida interni, il passaggio successivo è il rilascio **Targeted Release** (precedentemente noto come First Release) per i clienti che hanno acconsentito esplicitamente. A ogni anello di rilascio, Microsoft raccoglie feedback dagli utenti e convalida ulteriormente la qualità monitorando le metriche di utilizzo principali. Questa serie di convalide progressive viene applicata per garantire che la versione risulti quanto più stabile possibile in tutto il mondo. I rilasci sono illustrati nella figura seguente. 
   
-![Rilasciare gli anelli di convalida per Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Rilasciare anelli di convalida per Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-Per gli aggiornamenti significativi, i clienti vengono inizialmente informati dalla roadmap di [Microsoft 365.](https://products.office.com/business/office-365-roadmap) Quando un aggiornamento si avvicina alla distribuzione, viene comunicato tramite il Centro messaggi di [Microsoft 365.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
+Per gli aggiornamenti significativi, i clienti vengono inizialmente informati dalla roadmap [Microsoft 365.](https://products.office.com/business/office-365-roadmap) Quando un aggiornamento si avvicina alla distribuzione, viene comunicato tramite il centro messaggi [Microsoft 365 messaggi.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
 > [!NOTE]
-> È necessario un account Microsoft 365 o Azure AD per accedere al Centro messaggi tramite [l'interfaccia di amministrazione.](/office365/admin/admin-overview/about-the-admin-center) Gli utenti del piano home di Microsoft 365 non dispongono di un'interfaccia di amministrazione.
+> È necessario un Microsoft 365 o un account Azure AD per accedere al Centro messaggi tramite [l'interfaccia di amministrazione.](/office365/admin/admin-overview/about-the-admin-center) Microsoft 365 gli utenti del piano principale non dispongono di un'interfaccia di amministrazione.
 
 
 ## <a name="standard-release"></a>Standard Release
@@ -74,7 +74,7 @@ Se si [configura l'opzione di](#set-up-the-release-option-in-the-admin-center) r
   
 ## <a name="benefits-of-targeted-release"></a>Vantaggi della versione Targeted Release
 
-Il rilascio mirato consente agli amministratori, ai responsabili delle modifiche o a chiunque altro responsabile degli aggiornamenti di Microsoft 365 di prepararsi per le modifiche future consentendo loro di:
+Il rilascio mirato consente agli amministratori, ai responsabili delle modifiche o a chiunque altro responsabile Microsoft 365 aggiornamenti di prepararsi per le modifiche future consentendo loro di:
   
 - Testare e convalidare i nuovi aggiornamenti prima che vengano rilasciate a tutti gli utenti dell'organizzazione.
     
@@ -88,12 +88,12 @@ Il rilascio mirato consente agli amministratori, ai responsabili delle modifiche
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>Configurare l'opzione di rilascio nell'interfaccia di amministrazione
 
-È possibile modificare il modo in cui l'organizzazione riceve gli aggiornamenti di Microsoft 365 seguendo questa procedura. Devi essere un amministratore globale in Microsoft 365 per acconsentire esplicitamente.
+È possibile modificare il modo in cui l'organizzazione riceve Microsoft 365 aggiornamenti seguendo questi passaggi. Devi essere un amministratore globale in Microsoft 365 per acconsentire esplicitamente.
   
 > [!IMPORTANT]
-> L'applicazione delle modifiche seguenti in Microsoft 365 può richiedere fino a 24 ore. Se si disattiva l'opzione Targeted Release dopo averla abilitata, è possibile che gli utenti non possano più accedere alle funzionalità non ancora inserite nel rilascio pianificato. 
+> Possono essere necessarie fino a 24 ore prima che le modifiche riportate di seguito possano essere applicate Microsoft 365. Se si disattiva l'opzione Targeted Release dopo averla abilitata, è possibile che gli utenti non possano più accedere alle funzionalità non ancora inserite nel rilascio pianificato. 
   
-1. Nell'interfaccia di amministrazione passare a Impostazioni Impostazione organizzazione e nella scheda  >   **Profilo organizzazione** scegliere Preferenze **di rilascio.**
+1. Nell'interfaccia di amministrazione, passare alla Impostazioni organizzazione e nella scheda Profilo organizzazione  >  scegliere Preferenze **di rilascio.** 
 
 5. Per disabilitare la versione di destinazione, selezionare **Rilascio standard,** quindi **selezionare Salva modifiche.** 
     
@@ -101,16 +101,14 @@ Il rilascio mirato consente agli amministratori, ai responsabili delle modifiche
     
 7. Per abilitare il rilascio mirato per alcune persone dell'organizzazione, selezionare **Rilascio mirato per** gli utenti selezionati, quindi selezionare Salva **modifiche.** 
     
-8. Scegliere **Seleziona utenti** per aggiungere gli utenti uno alla volta oppure Carica **utenti** per aggiungerli in blocco.
+8. Scegliere **Seleziona utenti** per aggiungere gli utenti uno alla volta o Upload utenti **per** aggiungerli in blocco.
     
 9. Dopo aver aggiunto gli utenti, selezionare **Salva modifiche.**
-
-
   
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="next-steps"></a>Passaggi successivi
 
-Scopri come gestire [i messaggi nel](/office365/admin/manage/message-center) centro messaggi di Microsoft [365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) per ricevere notifiche sui prossimi aggiornamenti e rilasci di Microsoft 365.
+Scopri come gestire [i messaggi nel](/office365/admin/manage/message-center) centro Microsoft 365 messaggi per ricevere notifiche sugli aggiornamenti e le versioni Microsoft 365 imminenti. [](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Office Insider](https://insider.office.com/join/windows)
+[Partecipare al Office Insider Program](https://insider.office.com/join/windows) (articolo)

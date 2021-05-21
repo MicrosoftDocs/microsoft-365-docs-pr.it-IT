@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 6d3f1e2b0986fe12f0bf318b53100ca31f1ed700
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 92dfc279344b003ab651110375982b0f065dfb0d
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538376"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594170"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Passare a Microsoft Defender per Endpoint - Fase 1: preparare
 
@@ -43,11 +43,8 @@ ms.locfileid: "52538376"
 Questa fase di migrazione include i passaggi seguenti:
 
 1. [Ottenere e distribuire gli aggiornamenti nei dispositivi dell'organizzazione](#get-and-deploy-updates-across-your-organizations-devices)
-
 2. [Ottenere Defender per Endpoint](#get-microsoft-defender-for-endpoint).
-
 3. [Concedere l'accesso al Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
-
 4. [Configurare le impostazioni di connettività Internet e proxy del dispositivo](#configure-device-proxy-and-internet-connectivity-settings).
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Ottenere e distribuire gli aggiornamenti nei dispositivi dell'organizzazione
@@ -84,14 +81,14 @@ Dopo aver aggiornato i dispositivi dell'organizzazione, il passaggio successivo 
 
 4. Se gli endpoint (ad esempio i dispositivi) nell'organizzazione usano un proxy per accedere a Internet, vedi [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
  
-A questo punto, si è pronti a concedere l'accesso agli amministratori della sicurezza e agli operatori di sicurezza che utilizzeranno il Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
+A questo punto, si è pronti a concedere l'accesso agli amministratori della sicurezza e agli operatori di sicurezza che utilizzeranno il Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). 
 
 > [!NOTE]
-> Il Microsoft Defender Security Center viene talvolta definito portale defender per endpoint ed è possibile accedervi all'indirizzo [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) . 
+> Il Microsoft Defender Security Center viene talvolta definito portale defender per endpoint ed è possibile accedervi all'indirizzo [https://securitycenter.windows.com](https://securitycenter.windows.com) . 
 
 ## <a name="grant-access-to-the-microsoft-defender-security-center"></a>Concedere l'accesso al Microsoft Defender Security Center
 
-Il Microsoft Defender Security Center ( ) consente di accedere e configurare funzionalità [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) di Defender per Endpoint. Per ulteriori informazioni, vedere [Overview of the Microsoft Defender Security Center](use.md).
+Il Microsoft Defender Security Center ( ) consente di accedere e configurare funzionalità [https://securitycenter.windows.com](https://securitycenter.windows.com) di Defender per Endpoint. Per ulteriori informazioni, vedere [Overview of the Microsoft Defender Security Center](use.md).
 
 Le autorizzazioni per il Microsoft Defender Security Center possono essere concesse utilizzando le autorizzazioni di base o il controllo di accesso basato sui ruoli(RBAC). È consigliabile usare RBAC in modo da avere un controllo più granulare sulle autorizzazioni.
 
@@ -102,9 +99,7 @@ Le autorizzazioni per il Microsoft Defender Security Center possono essere conce
     Se l'organizzazione richiede un metodo diverso da Intune, scegliere una delle opzioni seguenti:
 
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
-
     - [Gestion avancée des stratégies de groupe](/microsoft-desktop-optimization-pack/agpm)
-
     - [Windows Interfaccia di amministrazione](/windows-server/manage/windows-admin-center/overview)
 
 3. Concedere l'accesso al Microsoft Defender Security Center. (Serve assistenza? Vedere [Manage portal access using RBAC](rbac.md).
@@ -113,14 +108,14 @@ Le autorizzazioni per il Microsoft Defender Security Center possono essere conce
 
 Per abilitare la comunicazione tra i dispositivi e Defender for Endpoint, configura le impostazioni proxy e Internet. Nella tabella seguente sono inclusi i collegamenti alle risorse che è possibile utilizzare per configurare le impostazioni proxy e Internet per diversi sistemi operativi e funzionalità:
 
-|Funzionalità  | Sistema operativo | Risorse |
-|--|--|--|
-|[Rilevamento e risposta degli endpoint](overview-endpoint-detection-response.md) (EDR) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Server 1803 o versione successiva](/windows-server/get-started/whats-new-in-windows-server-1803)  |[Configurare le impostazioni di connettività Internet e proxy del computer](configure-proxy-internet.md) |
-|EDR |[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configurare le impostazioni di connettività Proxy e Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS: <p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave)   |[Defender for Endpoint in macOS: Connessioni di rete](microsoft-defender-endpoint-mac.md#network-connections)  |
-|[Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Server 1803 o versione successiva](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[Configurare e convalidare le connessioni di rete di Windows Defender Antivirus](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
-|Antivirus |macOS: <p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave) |[Defender for Endpoint in macOS: Connessioni di rete](microsoft-defender-endpoint-mac.md#network-connections) |
-|Antivirus |Linux: <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o superiore<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |[Defender per Endpoint in Linux: connessioni di rete](microsoft-defender-endpoint-linux.md#network-connections) |
+| Funzionalità  | Sistema operativo | Risorse |
+|:--|:--|:--|
+| [Rilevamento e risposta degli endpoint](overview-endpoint-detection-response.md) (EDR) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Server 1803 o versione successiva](/windows-server/get-started/whats-new-in-windows-server-1803)  | [Configurare le impostazioni di connettività Internet e proxy del computer](configure-proxy-internet.md) |
+| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configurare le impostazioni di connettività Proxy e Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+| EDR  | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave)   | [Defender for Endpoint in macOS: Connessioni di rete](microsoft-defender-endpoint-mac.md#network-connections)  |
+| [Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Server 1803 o versione successiva](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Configurare e convalidare le connessioni di rete di Windows Defender Antivirus](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
+| Antivirus | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave) | [Defender for Endpoint in macOS: Connessioni di rete](microsoft-defender-endpoint-mac.md#network-connections) |
+| Antivirus | Linux: <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o superiore<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Defender per Endpoint in Linux: connessioni di rete](microsoft-defender-endpoint-linux.md#network-connections) |
 
 ## <a name="next-step"></a>Passaggio successivo
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo da poter utilizzare la distribuzione centralizzata per distribuire Office componenti aggiuntivi.
-ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464406"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593922"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -43,7 +43,7 @@ La distribuzione centralizzata supporta tre piattaforme desktop Windows, Mac e O
 
 La visualizzazione di un componente aggiuntivo per tutti gli utenti può richiedere fino a 24 ore.
   
-## <a name="requirements"></a>Requisiti
+## <a name="before-you-begin"></a>Prima di iniziare
 
 La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino SKU Microsoft 365 Enterprise: E3/E5/F3 o SKU aziendali: Business Basic, Business Standard, Business Premium (e hanno eseguito l'accesso a Office usando l'ID dell'organizzazione) e disporre di cassette postali Exchange Online e Exchange Online attive. La directory di sottoscrizione deve essere in o federata per Azure Active Directory.
 È possibile visualizzare i requisiti specifici per Office e Exchange di seguito oppure usare Verifica compatibilità [distribuzione centralizzata.](#centralized-deployment-compatibility-checker)
@@ -158,7 +158,7 @@ Se l'utente o gli utenti riscontrano problemi durante il caricamento del compone
 |Office  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. Visualizzare l'origine di una delle pagine di Office e cercare il valore id correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich client (Windows, Mac)  <br/> | Log di Charles/Fiddler  <br/>  Numeri di build dell'app client (preferibilmente come screenshot da **File/Account)**  <br/> |
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Distribuire componenti aggiuntivi nell'interfaccia di amministrazione](../manage/manage-deployment-of-add-ins.md) (articolo)
 

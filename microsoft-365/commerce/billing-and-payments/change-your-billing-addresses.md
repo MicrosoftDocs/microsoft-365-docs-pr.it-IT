@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Informazioni su come aggiornare gli indirizzi di fatturazione per Microsoft 365 per le aziende. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
+description: Scopri come aggiornare gli indirizzi di fatturazione o l'indirizzo e-mail usato per ricevere le notifiche di fatturazione per Microsoft 365 per le aziende.
 ms.date: 04/07/2021
-ms.openlocfilehash: 8bff090353c409f4364aed63e3b48a831608be2b
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 77ccb7b7ff9927736c1adaadfd2dea6b64a084f0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332170"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594110"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiare gli indirizzi di fatturazione
 
@@ -123,7 +123,7 @@ Per ulteriori informazioni sulla fattura, vedere [View your bill or invoice](vie
 
 Per impostazione predefinita, le notifiche di fatturazione dell'organizzazione vengono inviate all'indirizzo di posta elettronica Microsoft e all'indirizzo di posta elettronica alternativo di ogni amministratore globale e di fatturazione dell'organizzazione. Ogni amministratore può cambiare l'indirizzo alternativo aggiornando le informazioni del suo profilo.
   
-1. Accedere a Microsoft 365 con l'account aziendale o dell'istituto di istruzione come amministratore [globale. Informazioni su come accedere.](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+1. Accedi a Microsoft 365 con il tuo account aziendale o dell'istituto di istruzione come amministratore [globale. Scopri come accedere](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Seleziona **l'icona Utente,** quindi seleziona **Il mio account.**
   
@@ -159,9 +159,9 @@ Per impostazione predefinita, le notifiche di fatturazione dell'organizzazione v
 
 3. Nel riquadro **Modifica ruoli utente** digitare l'indirizzo di posta elettronica alternativo che si desidera utilizzare, quindi selezionare **Salva**.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Visualizzare la fattura o la fattura](view-your-bill-or-invoice.md)\
-[Comprendere la fattura o la fattura](understand-your-invoice2.md)\
-[Pagare l'abbonamento](pay-for-your-subscription.md)\
-[Sottoscrizioni e fatturazione - Guida per gli amministratori](../index.yml)
+[Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\
+[Comprendere la fattura o la fattura](understand-your-invoice2.md) (articolo)\
+[Pagare l'abbonamento](pay-for-your-subscription.md) (articolo)\
+[Sottoscrizioni e fatturazione - Guida per l'amministratore](../index.yml) (pagina dei collegamenti)

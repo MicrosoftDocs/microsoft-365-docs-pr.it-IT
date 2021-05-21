@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Come interpretare i dati su addebiti, fatturazione e pagamenti nell’estratto conto o fattura di Microsoft 365 per le aziende e come cambiare il numero di ordine d'acquisto.
+description: Interpretare le informazioni su addebiti, fatturazione e pagamento Microsoft 365 fattura o fattura aziendale e come modificare il numero di un ordine di acquisto.
 ms.date: 05/04/2021
-ms.openlocfilehash: febcbdee563c18b3f17ee35b98f2d68b15f456d8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aa898f570fb17f2d9e2ebba769e285cb9d507c31
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535687"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593526"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendi l’estratto conto o la fattura per Microsoft 365 per le aziende
 
@@ -134,6 +134,6 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 [Modificare l'indirizzo dell'organizzazione, l'indirizzo di](../../admin/manage/change-address-contact-and-more.md) posta elettronica del contatto tecnico e altre informazioni (articolo)
 
-[Pagare l'abbonamento Microsoft 365 per le aziende](pay-for-your-subscription.md) (articolo)\
+[Pagare l'abbonamento Microsoft 365 per le aziende](pay-for-your-subscription.md) (articolo)
 
 [Minecraft: opzioni di pagamento di Education Edition](/education/windows/school-get-minecraft) (articolo)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9cb3cc67c3992773897ea8178f261d25dcd87da0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530839"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594152"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gestire gli eventi imprevisti in Microsoft 365 Defender
 
@@ -47,7 +47,7 @@ Ecco i modi in cui è possibile gestire gli eventi imprevisti:
 
 - [Modificare il nome dell'evento imprevisto](#edit-the-incident-name)
 - [Aggiungere tag agli eventi](#add-incident-tags)
-- [Assegnare l'evento imprevisto a un account utente](#assign-incidents)
+- [Assegnare l'evento imprevisto a se stessi](#assign-incidents)
 - [Risolverli](#resolve-an-incident)
 - [Impostare la classificazione e la determinazione](#set-the-classification-and-determination)
 - [Aggiungere commenti](#add-comments)
@@ -80,7 +80,15 @@ Quando si inizia a digitare, è possibile selezionare da un elenco di tag selezi
 
 ## <a name="assign-incidents"></a>Assegnare gli eventi imprevisti
 
-Se non è stato ancora assegnato un evento imprevisto, è possibile selezionare **Assegna a** e specificare l'account utente. In questo modo viene assegnata la proprietà dell'evento imprevisto e tutti gli avvisi ad esso associati.
+Per assegnare un evento imprevisto, **selezionare Assegna a me**. In questo modo viene assegnata la proprietà dell'evento imprevisto e tutti gli avvisi associati all'account utente.
+
+È possibile ottenere un elenco di eventi imprevisti assegnati filtrando la coda degli eventi imprevisti. 
+
+1. Nella coda degli eventi imprevisti selezionare **Filtri**.
+2. nella sezione **Assegnazione evento** imprevisto deselezionare **Seleziona tutto** e selezionare Assegnato **a me.**
+3. Selezionare **Applica** e quindi chiudere il **riquadro** Filtri.
+
+È quindi possibile salvare l'URL risultante nel browser come segnalibro per visualizzare rapidamente l'elenco degli eventi imprevisti assegnati all'utente.
 
 ## <a name="resolve-an-incident"></a>Risolvere un evento imprevisto
 
