@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e7148e666b7d96d6de328089fccc4bb444b9f502
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583669"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594006"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 
@@ -63,9 +63,9 @@ Per ottenere il tempo necessario per eseguire queste attività, è consigliabile
 ||[Applicare la protezione dei dati dei criteri di protezione delle applicazioni (APP)](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 o E5|
 ||[Richiedere app approvate e protezione delle app](#require-approved-apps-and-app-protection)|Applica la protezione delle app per dispositivi mobili per telefoni e tablet con iOS, iPadOS o Android.|Microsoft 365 E3 o E5|
 ||[Definire i criteri di conformità dei dispositivi](#define-device-compliance-policies)|Un criterio per ogni piattaforma.|Microsoft 365 E3 o E5|
-||[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applica la gestione di Intune dei PC Windows o MacOS.|Microsoft 365 E3 o E5|
+||[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applica la gestione di Intune dei PC Windows o macOS.|Microsoft 365 E3 o E5|
 |**Sensibili**|[Richiedi autenticazione a più fattori quando il rischio di accesso è *basso,* *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con il componente aggiuntivo E5 Security|
-||[Richiedere PC e *dispositivi* mobili conformi](#require-compliant-pcs-and-mobile-devices)|Applica la gestione di Intune per PC (Windows o MacOS) e telefoni o tablet (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
+||[Richiedere PC e *dispositivi* mobili conformi](#require-compliant-pcs-and-mobile-devices)|Applica la gestione di Intune per PC (Windows o macOS) e telefoni o tablet (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
 |**Riservatezza elevata**|[*Richiedi* sempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
 |
 

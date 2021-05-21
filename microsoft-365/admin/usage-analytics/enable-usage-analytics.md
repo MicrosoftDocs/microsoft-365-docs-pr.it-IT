@@ -19,33 +19,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: Informazioni su come iniziare a raccogliere dati per il tenant usando l'app modello Analisi di utilizzo di Microsoft 365 in Power BI.
-ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+description: Scopri come iniziare a raccogliere dati per il tenant usando l'app Microsoft 365 modello Analisi di utilizzo in Power BI.
+ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957516"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593370"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
 
-L'analisi dell'utilizzo di Microsoft 365 non è ancora disponibile per Microsoft 365 US Government Community.
+Microsoft 365'analisi dei dati di utilizzo non è ancora disponibile per Microsoft 365 per il governo Community.
   
 ## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Passaggi per abilitare l'analisi dell'utilizzo di Microsoft 365
 
-Per iniziare a usare l'analisi dell'utilizzo di Microsoft 365, è necessario prima rendere disponibili i dati nell'interfaccia di amministrazione di Microsoft 365, quindi avviare l'app modello in Power BI.
+Per iniziare a usare Microsoft 365 di utilizzo, devi prima rendere disponibili i dati nell'interfaccia di amministrazione di Microsoft 365, quindi avviare l'app modello in Power BI.
   
 ### <a name="get-power-bi"></a>Ottenere Power BI
 
-Se non si dispone già di Power BI, è possibile iscriversi [a Power BI Pro.](https://go.microsoft.com/fwlink/p/?linkid=845347) Selezionare **Prova gratuitamente** per iscriversi a una versione di valutazione o Acquista **ora** per ottenere Power BI Pro.
+Se non si dispone già di Power BI, è possibile iscriversi [a Power BI Pro](https://go.microsoft.com/fwlink/p/?linkid=845347). Seleziona **Prova gratuitamente** per iscriverti a una versione di valutazione o Acquista ora per ottenere Power BI Pro. 
   
   
 È anche possibile espandere **Prodotti** per acquistare una versione di Power BI. 
 
 > [!NOTE]
-> È necessaria una licenza di Power BI Pro per installare, personalizzare e distribuire un'app modello. Per ulteriori informazioni, vedere [Prerequisiti](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
+> È necessaria una licenza Power BI Pro per installare, personalizzare e distribuire un'app modello. Per ulteriori informazioni, vedere [Prerequisiti](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
 
-Per condividere i dati, sia l'utente che le persone con cui si condividono i dati, è necessaria una licenza di Power BI Pro o il contenuto deve essere in un'area di lavoro in un servizio [Power BI premium.](/power-bi/service-premium-what-is) 
+Per condividere i dati, sia l'utente che le persone con cui si condividono i dati, è necessaria una licenza di Power BI Pro o il contenuto deve essere in un'area di lavoro in un servizio [premium di Power BI](/power-bi/service-premium-what-is). 
   
 ### <a name="enable-the-template-app"></a>Abilitare l'app modello
 
@@ -53,46 +53,54 @@ Per abilitare l'app modello, devi essere un **amministratore globale.**
   
 Per [ulteriori informazioni, vedere](../add-users/about-admin-roles.md) Sui ruoli di amministratore. 
   
-1. Nell'interfaccia di amministrazione passare alla scheda **Impostazioni** \> **organizzazione** \> **Servizi.** 
+1. Nell'interfaccia di amministrazione passare alla scheda **Impostazioni** \> **Impostazioni organizzazione** \> **Servizi.** 
     
 2. Nella scheda **Servizi** selezionare  **Report**.
     
-3. Nel riquadro Report visualizzato impostare Rendi disponibili i dati dei report per l'analisi di utilizzo di **Microsoft 365** per Power BI su **Al** \> **salvataggio.** 
+3. Nel riquadro Report che si apre imposta Rendi disponibili i dati del **report** Microsoft 365 analisi di utilizzo per Power BI su **Al** \> **salvataggio.** 
   
 Il processo di raccolta dei dati verrà completato in due-48 ore a seconda delle dimensioni del tenant. Il **pulsante Vai a Power BI** verrà abilitato (non più grigio) al termine della raccolta dei dati. 
     
 ### <a name="start-the-template-app"></a>Avviare l'app modello
 
-Per avviare l'app modello, è necessario essere un amministratore **globale,** un lettore di **report,** un amministratore di **Exchange,** un amministratore **di Skype for Business** o un amministratore di **SharePoint.** 
+Per avviare l'app modello, devi essere un amministratore **globale,** un lettore di **report,** Exchange **amministratore,** Skype for Business **amministratore** o SharePoint **amministratore.** 
   
 1. Copiare l'ID tenant e **selezionare Vai a Power BI**.
     
 2.  Dopo aver scaricato Power BI, eseguire l'accesso. Seleziona **Quindi App** Ottieni -> **app** dal menu di spostamento.    
   
-3. Nella scheda **App** digita Microsoft 365 nella casella di ricerca e quindi seleziona Analisi di utilizzo di **Microsoft 365** \> **Scarica ora**.
+3. Nella scheda **App** digita Microsoft 365 nella casella di ricerca e quindi seleziona Microsoft 365 analisi di **utilizzo** \> **Scarica ora**.
 
     [![Seleziona Scarica ora](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
 4.  Dopo l'installazione dell'app. Seleziona il riquadro per aprirlo.
 
-5.  Seleziona **Esplora app per** visualizzare l'app con dati di esempio. Scegliere **Connetti** per connettere l'app ai dati dell'organizzazione.
+5.  Seleziona **Esplora app per** visualizzare l'app con dati di esempio. Scegli **Connessione** per connettere l'app ai dati dell'organizzazione.
 
-6.  Scegliere **Connetti**, nella schermata **Connect to Microsoft 365 usage analytics,** quindi digitare l'ID tenant (senza trattini) copiato nel passaggio (1) e selezionare **Avanti**.
+6.  Scegliere **Connessione**, nella  schermata Connessione per Microsoft 365 analisi di utilizzo, quindi digitare l'ID tenant (senza trattini) copiato nel passaggio (1) e selezionare **Avanti**.
     
 7. Nella schermata successiva, selezionare **OAuth2 come** **metodo di autenticazione** \> **Accedi.** Se scegli un altro metodo di autenticazione, la connessione all'app modello avrà esito negativo.
     
     ![Scegliere l'account Microsoft come metodo di autenticazione](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
   
-8. Dopo aver creato un'istanza dell'app modello, il dashboard di analisi di utilizzo di Microsoft 365 sarà disponibile in Power BI sul Web. Il caricamento iniziale del dashboard avrà un tempo compreso tra 2 e 30 minuti.
+8. Dopo aver creato un'istanza dell'app modello, Microsoft 365 dashboard di analisi dell'utilizzo sarà disponibile in Power BI sul Web. Il caricamento iniziale del dashboard avrà un tempo compreso tra 2 e 30 minuti.
   
-Le aggregazioni a livello di tenant saranno disponibili in tutti i report dopo aver acconsentto esplicitamente. I dettagli a livello di utente saranno disponibili solo il **5 del mese di calendario successivo dopo aver scelto**. Ciò inciderà su tutti i report in Attività utente (vedere Esplorare e utilizzare i report nell'analisi dell'utilizzo di [Microsoft 365](navigate-and-utilize-reports.md) per suggerimenti su come visualizzare e usare questi report).
+Le aggregazioni a livello di tenant saranno disponibili in tutti i report dopo aver acconsentto esplicitamente. I dettagli a livello di utente saranno disponibili solo il **5 del mese di calendario successivo dopo aver scelto**. Ciò inciderà su tutti i report in Attività utente (vedere Esplorare e utilizzare i report [in](navigate-and-utilize-reports.md) analisi di utilizzo di Microsoft 365 per suggerimenti su come visualizzare e usare questi report).
     
 ## <a name="make-the-collected-data-anonymous"></a>Rendere anonimi i dati raccolti
 
 Per rendere anonimi i dati raccolti per tutti i report è necessario essere un amministratore globale. In questo modo si nasconderanno informazioni identificabili come i nomi di utenti, gruppi e siti nei report e nell'app modello.
   
-1. Nell'interfaccia di amministrazione  passare a Impostazioni Impostazioni organizzazione e nella scheda \>  **Servizi** scegliere **Report.**
+1. Nell'interfaccia di amministrazione  passare alla Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
     
 2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo che all'app modello.
   
 3. Selezionare **Salva modifiche**.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Informazioni sull'analisi dei dati](usage-analytics.md) di utilizzo (articolo)
+
+[Ottenere la versione più recente dell'analisi dei dati di utilizzo](get-the-latest-version-of-usage-analytics.md) (articolo)
+
+[Esplorare e utilizzare i report nell'Microsoft 365 di utilizzo](navigate-and-utilize-reports.md) (articolo)

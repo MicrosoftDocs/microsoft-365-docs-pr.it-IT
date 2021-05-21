@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere l'organizzazione da phishing e altri attacchi che usano URL dannosi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583581"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593570"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -54,7 +54,7 @@ La protezione collegamenti sicuri è disponibile nei percorsi seguenti:
   Per ulteriori informazioni sulla protezione dei collegamenti sicuri per i messaggi di posta elettronica, vedere la sezione Impostazioni collegamenti sicuri per i messaggi [di](#safe-links-settings-for-email-messages) posta elettronica più avanti in questo articolo.
   
   > [!NOTE]
-  > I collegamenti vendita non funzionano sulle cartelle pubbliche abilitate alla posta elettronica.
+  > Collegamenti sicuri non funziona nelle cartelle pubbliche abilitate alla posta elettronica.
 
 - **Microsoft Teams** (attualmente in anteprima TAP): la protezione dei collegamenti sicuri per i collegamenti nelle conversazioni Teams, nelle chat di gruppo o dai canali è controllata anche dai criteri collegamenti sicuri. Non esiste un criterio collegamenti sicuri predefinito, quindi per ottenere la protezione dei collegamenti sicuri in Teams, è necessario creare uno o più criteri **collegamenti sicuri.**
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a3b6edda36d2872177d9a88f3259220dcf2e76f3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: dba96a43f976353251b5530233667933088f6f29
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291316"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594086"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli eventi imprevisti in Microsoft 365 Defender
 
@@ -87,7 +87,7 @@ In questa tabella sono elencati i nomi dei filtri disponibili.
 
 Dopo aver determinato quale evento imprevisto richiede la priorità più alta, selezionarlo e:
 
-- [Gestire](manage-incidents.md) le proprietà dell'evento imprevisto per tag, assegnazione a un analista della sicurezza e commenti.
+- [Gestire](manage-incidents.md) le proprietà dell'evento imprevisto per tag, assegnazione, risoluzione immediata per incidenti falsi positivi e commenti.
 - Iniziare [l'indagine](investigate-incidents.md).
 
 ## <a name="see-also"></a>Vedere anche

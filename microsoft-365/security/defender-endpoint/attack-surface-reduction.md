@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: da4b7fce66a6c51da61edd7c44216ee268c3156a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0852cc5af2de6767e202e3a839c498e7e008eef3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538664"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593854"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -49,7 +49,7 @@ Per ulteriori informazioni sulla configurazione delle regole di riduzione della 
 
 ## <a name="assess-rule-impact-before-deployment"></a>Valutare l'impatto delle regole prima della distribuzione
 
-È possibile valutare l'impatto di una regola di riduzione della superficie di attacco sulla rete aprendo il suggerimento per la sicurezza per tale regola in [gestione di minacce e vulnerabilità](https://docs.microsoft.com/windows/security/threat-protection/#tvm).
+È possibile valutare l'impatto di una regola di riduzione della superficie di attacco sulla rete aprendo il suggerimento per la sicurezza per tale regola in [gestione di minacce e vulnerabilità](/windows/security/threat-protection/#tvm).
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Sicurezza per la regola di riduzione della superficie di attacco":::
 
@@ -69,12 +69,12 @@ La modalità avviso consente all'organizzazione di disporre di regole di riduzio
 
 La modalità avviso è supportata nei dispositivi che eseguono le seguenti versioni di Windows:
 
-- [Windows 10 versione 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) o successiva
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) o successiva
+- [Windows 10 versione 1809](/windows/whats-new/whats-new-windows-10-version-1809) o successiva
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809) o successiva
 
-Antivirus Microsoft Defender deve essere in esecuzione con protezione in tempo reale in [modalità attiva.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
+Antivirus Microsoft Defender deve essere in esecuzione con protezione in tempo reale in [modalità attiva.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
 
-Assicurarsi inoltre che siano [installati Antivirus Microsoft Defender e antimalware.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
+Assicurarsi inoltre che siano [installati Antivirus Microsoft Defender e antimalware.](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
 
 - Requisito minimo di rilascio della piattaforma: `4.18.2008.9`
 - Requisito minimo di rilascio del motore: `1.1.17400.5`
@@ -111,12 +111,12 @@ Per ulteriori informazioni sulla ricerca avanzata, vedere Ricerca proattiva [per
 
 Puoi impostare regole di riduzione della superficie di attacco per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
 
-- Windows 10 Pro versione [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
-- Windows 10 Enterprise versione [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
-- Windows Server, [versione 1803 (Canale semestraale)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- Windows 10 Pro versione [1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- Windows 10 Enterprise versione [1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- Windows Server, [versione 1803 (Canale semestraale)](/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Anche se le regole di riduzione della superficie di attacco non richiedono una licenza [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](microsoft-defender-endpoint.md)nonché funzionalità di creazione di report e configurazione nel centro sicurezza [Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Queste funzionalità avanzate non sono disponibili con una licenza Windows Professional o Windows E3. Tuttavia, se si dispone di tali licenze, è possibile utilizzare visualizzatore eventi e registri Antivirus Microsoft Defender per esaminare gli eventi delle regole di riduzione della superficie di attacco.
+Anche se le regole di riduzione della superficie di attacco non richiedono una licenza [Windows E5,](/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](microsoft-defender-endpoint.md)nonché funzionalità di creazione di report e configurazione nel centro sicurezza [Microsoft 365.](/microsoft-365/security/defender/overview-security-center) Queste funzionalità avanzate non sono disponibili con una licenza Windows Professional o Windows E3. Tuttavia, se si dispone di tali licenze, è possibile utilizzare visualizzatore eventi e registri Antivirus Microsoft Defender per esaminare gli eventi delle regole di riduzione della superficie di attacco.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Esaminare gli eventi di riduzione della superficie di attacco nella Microsoft Defender Security Center
 
@@ -148,7 +148,6 @@ DeviceEvents
 |5007|Evento quando vengono modificate le impostazioni|
 |1121|Evento quando la regola viene attivata in modalità blocco|
 |1122|Evento quando la regola viene attivata in modalità di controllo|
-|
 
 La "versione del motore" elencata per gli eventi di riduzione della superficie di attacco nel registro eventi, viene generata da Defender per Endpoint, non dal sistema operativo. Defender for Endpoint è integrato con Windows 10, quindi questa funzionalità funziona su tutti i dispositivi Windows 10 installati.
 
@@ -160,22 +159,22 @@ Se si configurano regole di riduzione della superficie di attacco tramite Criter
 
 |Nome della regola|GUID|Esclusioni di & file|Sistema operativo minimo supportato|
 |---|:---:|---|---|
-|[Bloccare l'abuso di driver firmati vulnerabili sfruttati](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva) |
+|[Bloccare l'abuso di driver firmati vulnerabili sfruttati](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva) |
 |[Impedire ad Adobe Reader di creare processi figlio](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
 |[Impedire a Office applicazioni di creare processi figlio](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Bloccare il furto delle credenziali dal sottosistema Windows autorità di sicurezza locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Bloccare il contenuto eseguibile dal client di posta elettronica e dalla webmail](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Bloccare l'esecuzione dei file eseguibili a meno che non soddisfino un criterio di prevalenza, età o elenco attendibile](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Bloccare l'esecuzione di script potenzialmente offuscati](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Impedire a JavaScript o VBScript di avviare il contenuto eseguibile scaricato](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Impedire Office applicazioni di creare contenuto eseguibile](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Bloccare Office applicazioni dall'inserimento di codice in altri processi](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Impedire Office'applicazione di comunicazione di creare processi figlio](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Bloccare la persistenza tramite la sottoscrizione di eventi WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Non supportato|[Windows 10 versione 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) o successiva|
-|[Bloccare le creazioni di processi originate dai comandi PSExec e WMI](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Bloccare i processi non attendibili e non firmati eseguiti da USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Bloccare le chiamate API Win32 Office macro](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|[Usare la protezione avanzata contro ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Supportato|[Windows 10 versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Bloccare il furto delle credenziali dal sottosistema Windows autorità di sicurezza locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Bloccare il contenuto eseguibile dal client di posta elettronica e dalla webmail](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Bloccare l'esecuzione dei file eseguibili a meno che non soddisfino un criterio di prevalenza, età o elenco attendibile](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Bloccare l'esecuzione di script potenzialmente offuscati](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Impedire a JavaScript o VBScript di avviare il contenuto eseguibile scaricato](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Impedire Office applicazioni di creare contenuto eseguibile](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Bloccare Office applicazioni dall'inserimento di codice in altri processi](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Impedire Office'applicazione di comunicazione di creare processi figlio](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Bloccare la persistenza tramite la sottoscrizione di eventi WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Non supportato|[Windows 10 versione 1903](/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) o successiva|
+|[Bloccare le creazioni di processi originate dai comandi PSExec e WMI](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Bloccare i processi non attendibili e non firmati eseguiti da USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Bloccare le chiamate API Win32 Office macro](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
+|[Usare la protezione avanzata contro ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
 |
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloccare l'abuso di driver firmati vulnerabili sfruttati
@@ -194,10 +193,10 @@ Questa regola non blocca il caricamento di un driver già esistente nel sistema.
 
 Questa regola è supportata in tutte le versioni in cui è supportato il controllo del codice asr. che è:
 
-- [Windows 10 Pro versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
-- [Windows 10 Enterprise versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o successiva
-- [Windows Server, versione 1803 (Canale semestraale)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10 Pro versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- [Windows 10 Enterprise versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
+- [Windows Server, versione 1803 (Canale semestraale)](/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nome Intune: `Block abuse of exploited vulnerable signed drivers`
 
@@ -211,9 +210,9 @@ Tramite social engineering o exploit, il malware può scaricare e avviare payloa
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10, versione 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nome Intune: `Process creation from Adobe Reader (beta)`
 
@@ -229,10 +228,10 @@ La creazione di processi figlio dannosi è una strategia antimalware comune. I m
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `Office apps launching child processes`
 
@@ -251,10 +250,10 @@ LSASS autentica gli utenti che a loro Windows computer. Microsoft Defender Crede
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -271,10 +270,10 @@ Questa regola impedisce l'avvio dei seguenti tipi di file dalla posta elettronic
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Microsoft Endpoint Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
@@ -298,7 +297,7 @@ Questa regola blocca l'avvio dei tipi di file seguenti, a meno che non soddisfin
 L'avvio di file eseguibili non attendibili o sconosciuti può essere rischioso, poiché inizialmente potrebbe non essere chiaro se i file sono dannosi.
 
 > [!IMPORTANT]
-> Per usare [questa regola, è necessario](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) abilitare la protezione recapitata nel cloud.
+> Per usare [questa regola, è necessario](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) abilitare la protezione recapitata nel cloud.
 >
 > La regola **Blocca l'esecuzione dei** file eseguibili a meno che non soddisfino un criterio di prevalenza, età o elenco attendibile con GUID sia di proprietà di Microsoft e non sia specificato `01443614-cd74-433a-b99e-2ecdc07bfc25` dagli amministratori. Questa regola usa la protezione recapitata nel cloud per aggiornare regolarmente l'elenco attendibile.
 >
@@ -306,10 +305,10 @@ L'avvio di file eseguibili non attendibili o sconosciuti può essere rischioso, 
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `Executables that don't meet a prevalence, age, or trusted list criteria`
 
@@ -325,10 +324,10 @@ L'offuscamento degli script è una tecnica comune utilizzata dagli autori di mal
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `Obfuscated js/vbs/ps/macro code`
 
@@ -344,10 +343,10 @@ Anche se non è comune, le applicazioni line-of-business a volte usano script pe
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `js/vbs executing payload downloaded from Internet (no exceptions)`
 
@@ -363,10 +362,10 @@ Il malware che Office come vettore può tentare di uscire dall'Office e salvare 
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM è ora Microsoft Endpoint Configuration Manager)
+- [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [System Center Configuration Manager](/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM è ora Microsoft Endpoint Configuration Manager)
 
 Nome Intune: `Office apps/macros creating executable content`
 
@@ -386,10 +385,10 @@ Questa regola si applica a Word, Excel e PowerPoint.
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `Office apps injecting code into other processes (no exceptions)`
 
@@ -404,13 +403,13 @@ Questa regola impedisce Outlook di creare processi figlio, pur consentendo funzi
 Questa regola protegge dagli attacchi di social engineering e impedisce allo sfruttamento del codice di sfruttare le vulnerabilità in Outlook. Protegge inoltre dalle regole Outlook e dagli [exploit](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) dei moduli che gli utenti malintenzionati possono utilizzare quando le credenziali di un utente vengono compromesse.
 
 > [!NOTE]
-> Questa regola si applica solo Outlook e Outlook.com.
+> Questa regola blocca le descrizioni comandi e le descrizioni comandi dei criteri DLP in Outlook. Questa regola si applica solo Outlook e Outlook.com. 
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10, versione 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nome Intune: `Process creation from Office communication products (beta)`
 
@@ -429,8 +428,8 @@ Le minacce senza file utilizzano diverse tattiche per rimanere nascoste, per evi
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows 10, versione 1903](/windows/whats-new/whats-new-windows-10-version-1903)
+- [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Nome Intune: Non disponibile
 
@@ -440,16 +439,16 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Bloccare le creazioni di processi originate dai comandi PSExec e WMI
 
-Questa regola blocca l'esecuzione dei processi creati [tramite PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) [e WMI.](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) Sia PsExec che WMI possono eseguire codice in remoto, quindi esiste il rischio che malware abuso di questa funzionalità a scopo di comando e controllo o per diffondere un'infezione in tutta la rete di un'organizzazione.
+Questa regola blocca l'esecuzione dei processi creati [tramite PsExec](/sysinternals/downloads/psexec) [e WMI.](/windows/win32/wmisdk/about-wmi) Sia PsExec che WMI possono eseguire codice in remoto, quindi esiste il rischio che malware abuso di questa funzionalità a scopo di comando e controllo o per diffondere un'infezione in tutta la rete di un'organizzazione.
 
 > [!WARNING]
-> Usa questa regola solo se gestisci i dispositivi con [Intune](https://docs.microsoft.com/intune) o un'altra soluzione MDM. Questa regola non è compatibile con la gestione [tramite Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) perché questa regola blocca i comandi WMI utilizzati dal client di Configuration Manager per funzionare correttamente.
+> Usa questa regola solo se gestisci i dispositivi con [Intune](/intune) o un'altra soluzione MDM. Questa regola non è compatibile con la gestione [tramite Microsoft Endpoint Configuration Manager](/configmgr) perché questa regola blocca i comandi WMI utilizzati dal client di Configuration Manager per funzionare correttamente.
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nome Intune: `Process creation from PSExec and WMI commands`
 
@@ -463,10 +462,10 @@ Con questa regola, gli amministratori possono impedire l'esecuzione di file eseg
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `Untrusted and unsigned processes that run from USB`
 
@@ -482,10 +481,10 @@ Office VBA abilita le chiamate API Win32. Il malware può usare in modo impropri
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `Win32 imports from Office macro code`
 
@@ -504,14 +503,14 @@ Questa regola fornisce un ulteriore livello di protezione contro i ransomware. U
 La regola tende a errare sul lato della cautela per evitare ransomware.
 
 > [!NOTE]
-> Per usare [questa regola, è necessario](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) abilitare la protezione recapitata nel cloud.
+> Per usare [questa regola, è necessario](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) abilitare la protezione recapitata nel cloud.
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, versione 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Nome Intune: `Advanced ransomware protection`
 
@@ -524,4 +523,4 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 - [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction-faq.md)
 - [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
 - [Rilevare regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
-- [Compatibilità di Antivirus Microsoft Defender con altre soluzioni antivirus/antimalware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- [Compatibilità di Antivirus Microsoft Defender con altre soluzioni antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
