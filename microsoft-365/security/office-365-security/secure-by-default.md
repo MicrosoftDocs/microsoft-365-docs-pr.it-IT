@@ -17,12 +17,12 @@ ms.collection:
 description: Ulteriori informazioni sull'impostazione di protezione per impostazione predefinita in Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 957ca3b563d4f1466dd537c3ae974a4fd61aa6f2
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346317"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624050"
 ---
 # <a name="secure-by-default-in-office-365"></a>Protezione per impostazione predefinita in Office 365
 
@@ -77,7 +77,7 @@ Per dirla in un altro modo: come servizio di sicurezza, microsoft agisce per con
 > [!NOTE]
 > A luglio 2021, la protezione per impostazione predefinita verrà estesa Exchange regole del flusso di posta (note anche come regole di trasporto). Se si utilizzano regole del flusso di posta per consentire simulazioni di phishing di terze parti o il [](configure-advanced-delivery.md) recapito non filtrato alle cassette postali delle operazioni di sicurezza, è infine necessario eliminare queste regole e passare all'utilizzo dei criteri di recapito avanzati quando la funzionalità è _disponibile._
 
-L'unico override che consente ai messaggi di phishing ad alta probabilità di ignorare il filtro sono le regole del flusso di posta. Per utilizzare le regole del flusso di posta per ignorare il filtro, vedere [Use mail flow rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+L'unico override che consente ai messaggi di phishing ad alta probabilità di ignorare il filtro sono le regole del flusso di posta. Per utilizzare le regole del flusso di posta per ignorare il filtro, vedere [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 È consigliabile utilizzare le sostituzioni solo negli scenari seguenti:
 

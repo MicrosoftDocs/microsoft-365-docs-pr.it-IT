@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Documentazione di Microsoft Defender per Office 365
-summary: Informazioni sulle soluzioni di sicurezza affidabili in Defender per Office 365 per proteggere meglio la posta elettronica e gli strumenti di collaborazione.
+title: Documentazione di Microsoft Defender Office 365
+summary: Informazioni sulle soluzioni di sicurezza affidabili in Defender per Office 365 proteggere meglio la posta elettronica e gli strumenti di collaborazione.
 metadata:
-  title: Documentazione sulla sicurezza di Microsoft Defender per Office 365
-  description: Informazioni sulle soluzioni di sicurezza affidabili in Defender per Office 365 per proteggere meglio la posta elettronica e gli strumenti di collaborazione.
+  title: Documentazione di Microsoft Defender per Office 365 sicurezza
+  description: Informazioni sulle soluzioni di sicurezza affidabili in Defender per Office 365 proteggere meglio la posta elettronica e gli strumenti di collaborazione.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 04/13/2021
   localization_priority: Priority
-  ms.openlocfilehash: a646d52b903a1ab16d2f552b456793492462c44b
-  ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+  ms.openlocfilehash: b379b42ae3c01c8359003407f3fb58834a8c074e
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/14/2021
-  ms.locfileid: "51760261"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52623566"
 landingContent:
 - title: Defender per Office 365 & Exchange Online Protection
   linkLists:
@@ -26,7 +26,7 @@ landingContent:
     links:
     - text: Panoramica sulla sicurezza di Office 365
       url: overview.md
-    - text: Configurare con criteri di sicurezza predefiniti in EOP e Defender per Office 365
+    - text: Configurare con Criteri di sicurezza predefiniti in EOP e Defender per Office 365
       url: preset-security-policies.md
 - title: Introduzione a Defender per Office 365
   linkLists:
@@ -62,7 +62,7 @@ landingContent:
     links:
     - text: Panoramica su Exchange Online Protection
       url: exchange-online-protection-overview.md
-    - text: Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365 per la configurazione
+    - text: Impostazioni consigliate per EOP e Microsoft Defender per Office 365 sicurezza per la configurazione
       url: recommended-settings-for-eop-and-office365.md
 - title: Prevenire
   linkLists:
@@ -78,13 +78,13 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Regole del flusso di posta (regole di trasporto) in Exchange Online Protection autonomo
-      url: mail-flow-rules-transport-rules-0.md
+    - text: Regole del flusso di posta (regole di trasporto) in Exchange Online
+      url: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
     - text: Tracker delle minacce
       url: threat-trackers.md
     - text: Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
       url: reports-and-insights-in-security-and-compliance.md
-- title: Investigare
+- title: Indagine
   linkLists:
   - linkListType: overview
     links:
@@ -92,9 +92,9 @@ landingContent:
       url: threat-explorer-views.md
     - text: Visualizzazioni della campagna in Microsoft Defender per Office 365
       url: campaigns.md
-    - text: Analizzare la posta elettronica dannosa recapitata in Office 365
+    - text: Analizzare i messaggi di posta elettronica dannosi recapitati in Office 365
       url: investigate-malicious-email-that-was-delivered.md
-    - text: Visualizzare i report di Defender per Office 365
+    - text: Visualizzazione report di Microsoft Defender per Office 365
       url: view-reports-for-mdo.md
 - title: Analizzare in EOP
   linkLists:
@@ -102,8 +102,8 @@ landingContent:
     links:
     - text: Creazione di report e traccia dei messaggi in EOP
       url: reporting-and-message-trace-in-exchange-online-protection.md
-    - text: Visualizzare un log di controllo dell'amministratore in Exchange Online Protection autonomo
-      url: view-the-admin-audit-log-eop.md
+    - text: Visualizzare il log di controllo dell'amministratore
+      url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
 - title: Risposta
   linkLists:
   - linkListType: overview
@@ -112,7 +112,7 @@ landingContent:
       url: remediate-malicious-email-delivered-office-365.md
     - text: Rispondere a un account di posta elettronica compromesso
       url: responding-to-a-compromised-email-account.md
-    - text: Correggere le regole di Outlook e gli attacchi iniezioni di moduli personalizzati
+    - text: Correggere le Outlook e gli attacchi iniezioni di moduli personalizzati
       url: detect-and-remediate-outlook-rules-forms-attack.md
     - text: Invia falsi positivi/falsi negativi
       url: admin-submission.md
@@ -122,7 +122,7 @@ landingContent:
     links:
     - text: Funzionamento di AIR (Automated Investigation and Response) in Defender per Office 365
       url: automated-investigation-response-office.md
-    - text: Introduzione a AIR in Defender per Office 365
+    - text: Informazioni di base con AIR in Defender per Office 365
       url: office-365-air.md
     - text: Risolvere gli account utente compromessi con AIR
       url: address-compromised-users-quickly.md

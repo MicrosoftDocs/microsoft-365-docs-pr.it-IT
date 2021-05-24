@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono conoscere il livello di probabilità di posta indesiderata (SCL) applicato ai messaggi in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 951bbcb5fcbcc7b7916ee1c34c4ab489d54b6667
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 55e64c72cc472e98baa8eb71e23dafb6b276ba01
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205164"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625282"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Livello di probabilità di posta indesiderata (SCL) in EOP
 
@@ -35,7 +35,7 @@ ms.locfileid: "51205164"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o in organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, i messaggi in ingresso passano attraverso il filtro della posta indesiderata in EOP e vengono assegnati un punteggio di posta indesiderata. Tale punteggio viene mappato a un singolo livello di probabilità di posta indesiderata (SCL) che viene aggiunto al messaggio in un X-header. Un livello di probabilità di posta indesiderata più alto indica che è più probabile che un messaggio sia posta indesiderata. EOP adotta un'azione sul messaggio in base al SCL.
+Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, i messaggi in ingresso passano attraverso il filtro della posta indesiderata in EOP e vengono assegnati un punteggio di posta indesiderata. Tale punteggio viene mappato a un singolo livello di probabilità di posta indesiderata (SCL) che viene aggiunto al messaggio in un X-header. Un livello di probabilità di posta indesiderata più alto indica che è più probabile che un messaggio sia posta indesiderata. EOP adotta un'azione sul messaggio in base al SCL.
 
 Il significato del livello di probabilità di posta elettronica (SCL) e le azioni predefinite eseguite sui messaggi sono descritti nella tabella seguente. Per ulteriori informazioni sulle azioni che è possibile eseguire sui messaggi in base al verdetto del filtro posta indesiderata, vedere [Configure anti-spam policies in EOP.](configure-your-spam-filter-policies.md)
 
@@ -51,10 +51,10 @@ Il significato del livello di probabilità di posta elettronica (SCL) e le azion
 
 Si noterà che SCL 2, 3, 4, 7 e 8 non vengono utilizzati dal filtro posta indesiderata.
 
-È possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per impostare il livello di probabilità di posta indesiderata sui messaggi. Se si utilizza una regola del flusso di posta per impostare il livello di probabilità di posta indesiderata, i valori 5 o 6 attivano l'azione di filtro della posta indesiderata per Posta indesiderata e i valori 7, 8 o 9 attivano l'azione di filtro della posta indesiderata per Posta indesiderata alta **confidenza.** Per ulteriori informazioni, vedere [Use mail flow rules to set the spam confidence level (SCL) in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+È possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per impostare il livello di probabilità di posta indesiderata sui messaggi. Se si utilizza una regola del flusso di posta per impostare il livello di probabilità di posta indesiderata, i valori 5 o 6 attivano l'azione di filtro della posta indesiderata per Posta indesiderata e i valori 7, 8 o 9 attivano l'azione di filtro della posta indesiderata per Posta indesiderata alta **confidenza.** Per ulteriori informazioni, vedere [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 Analogamente al livello di probabilità di posta indesiderata, il livello di reclamo in blocco (BCL) identifica la posta elettronica in blocco non erta (nota anche come _posta grigia)._ Più il BCL è elevato, maggiore è la probabilità che un messaggio di posta elettronica in blocco generi reclami, ed è quindi più probabile che si tratti di posta indesiderata. Configurare la soglia BCL nei criteri di protezione da posta indesiderata. Per ulteriori informazioni, vedere [Configure anti-spam policies in EOP,](configure-your-spam-filter-policies.md) [Bulk complaint level (BCL) in EOP)](bulk-complaint-level-values.md)e Qual è la differenza tra posta indesiderata e posta [elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 ****
 
-![L'icona breve per LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Scopri i corsi video gratuiti per amministratori di **Microsoft 365** e professionisti IT, che sono stati portati da LinkedIn Learning.
+![L'icona breve per LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Scopri i corsi video gratuiti per Microsoft 365 amministratori e **professionisti IT,** portati da LinkedIn Learning.

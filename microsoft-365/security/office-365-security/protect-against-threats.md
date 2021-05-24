@@ -20,12 +20,12 @@ description: Gli amministratori possono conoscere la protezione dalle minacce in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538724"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624622"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -277,7 +277,7 @@ Oltre a configurare la protezione da malware, URL e file dannosi, phishing e pos
 
 - Le azioni di posta indesiderata sono impostate **su Sposta il messaggio nella cartella Posta indesiderata** nei criteri di protezione da posta [indesiderata.](anti-spam-protection.md)
 
-- Gli utenti hanno mantenuto le impostazioni predefinite [per la](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)posta indesiderata e non hanno disattivato la protezione dalla posta indesiderata.
+- Gli utenti hanno mantenuto le impostazioni predefinite [per la](configure-junk-email-settings-on-exo-mailboxes.md)posta indesiderata e non hanno disattivato la protezione dalla posta indesiderata.
 
 Per ulteriori informazioni, vedere Eliminazione automatica di zero ore - protezione [da posta indesiderata e malware.](zero-hour-auto-purge.md)
 

@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni su come segnalare falsi positivi e falsi negativi in Outlook tramite la funzionalità Segnala messaggio.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e848595035501f5da7b6099efd2700ebac6f17e3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6f8c4fc327bfd467cdd1d0043c454e222e84125c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291164"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625114"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Segnalare i falsi positivi e i falsi negativi in Outlook
 
@@ -55,7 +55,7 @@ Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o cas
 Per i messaggi in Posta in arrivo o qualsiasi altra cartella di posta elettronica ad eccezione della posta indesiderata, utilizzare il metodo seguente per segnalare messaggi di posta indesiderata e phishing:
 
 1. Fare clic **sui puntini** di sospensione Altre azioni nell'angolo superiore destro del messaggio selezionato, fare clic su Segnala messaggio dal menu a discesa e quindi selezionare **Posta** indesiderata o **Phishing.** 
-  
+
    > [!div class="mx-imgBorder"]
    > ![Report Message - More actions](../../media/report-message-more-actions.png)
 
@@ -67,10 +67,10 @@ Per i messaggi in Posta in arrivo o qualsiasi altra cartella di posta elettronic
    - Spostato nella cartella Posta indesiderata se è stato segnalato come posta indesiderata.
 
    - Eliminato se è stato segnalato come phishing.
-   
+
 ### <a name="report-messages-that-are-not-junk"></a>Segnalare messaggi non indesiderati
 
-1. Fare clic **sui puntini** di sospensione Altre azioni nell'angolo superiore destro del messaggio selezionato, scegliere Segnala messaggio dal menu a discesa e quindi fare clic su **Non indesiderato.**   
+1. Fare clic **sui puntini** di sospensione Altre azioni nell'angolo superiore destro del messaggio selezionato, scegliere Segnala messaggio dal menu a discesa e quindi fare clic su **Non indesiderato.** 
 
    > [!div class="mx-imgBorder"]
    > ![Report Message - More actions](../../media/report-message-more-actions.png)
@@ -86,4 +86,4 @@ Per esaminare i messaggi che gli utenti segnalano a Microsoft, sono disponibili 
 
 - Usa il portale per gli invii di amministratori. Per ulteriori informazioni, vedere [View user submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
 
-- Creare una regola del flusso di posta (nota anche come regola di trasporto) per inviare copie dei messaggi segnalati. Per istruzioni, vedere [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+- Creare una regola del flusso di posta (nota anche come regola di trasporto) per inviare copie dei messaggi segnalati. Per istruzioni, vedere [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

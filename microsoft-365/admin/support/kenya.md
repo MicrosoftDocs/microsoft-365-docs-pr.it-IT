@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 58cd84899c2fcf0d16c54f939da40be0ac5703cb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7df4e9f2a9827289ab0bd85c9696e03aac9e3bb3
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295988"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623634"
 ---
 # <a name="contact-support-for-kenya"></a>Contattare il supporto per il Kenya
 
@@ -26,9 +26,9 @@ ms.locfileid: "52295988"
 ## <a name="phone-number"></a>Numero di telefono
 020 286 8800
 
-Selezionare l'opzione 9
+Premere 2 per le aziende
 
-Immettere il codice 7704
+Premere 1 per Microsoft 365
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:

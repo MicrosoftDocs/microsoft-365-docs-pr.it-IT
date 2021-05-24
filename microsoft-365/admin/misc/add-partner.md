@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Informazioni su come aggiungere un partner consulente della sottoscrizione come partner del Microsoft 365 record al momento dell'acquisto, della modifica del partner o dell'eliminazione di un partner da una sottoscrizione.
-ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Aggiungere un partner di record al momento dell'Microsoft 365, modificare il partner o eliminare un partner da una sottoscrizione.
+ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537476"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624526"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Aggiungere, modificare o rimuovere un partner con il ruolo di consulente dell'abbonamento
 
@@ -42,6 +42,8 @@ ms.locfileid: "52537476"
 Un partner Microsoft autorizzato che opera come consulente dell'abbonamento mette a disposizione la sua esperienza in materia di vendite, supporto e assistenza tecnica per aiutare a configurare e gestire l'abbonamento. È possibile aggiungere un partner consulente della sottoscrizione come partner del record quando si acquista Microsoft 365 o in un altro momento. Se attualmente non si lavora con un partner, è anche possibile trovarlo nel sito [Web Microsoft Pinpoint.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
+
+## <a name="before-you-begin"></a>Prima di iniziare
 
 ::: moniker range="o365-worldwide"
 
@@ -218,6 +220,7 @@ Non è possibile rimuovere una relazione come rivenditore autonomamente.
   
 ::: moniker-end
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Trovare il Microsoft 365 partner o rivenditore](../manage/find-your-partner-or-reseller.md)
+[Trovare il Microsoft 365 partner o rivenditore](../manage/find-your-partner-or-reseller.md) (articolo)\
+[Pianificare la configurazione di Microsoft 365 per le aziende](../setup/plan-your-setup.md) (articolo)

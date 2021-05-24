@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
-description: In questo articolo vengono riportati i report e gli strumenti per la risoluzione dei problemi disponibili per gli amministratori di Microsoft Exchange Online Protection (EOP).
+description: In questo articolo vengono riportati i report e gli strumenti di risoluzione dei problemi disponibili per gli amministratori di Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5e5493925a17725bfb9d6698b3f94050960ccc7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ae55ded9d907754161813c9f7bfa7eeb14c558a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205724"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625030"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Creazione di report e traccia dei messaggi in EOP
 
@@ -31,11 +31,11 @@ ms.locfileid: "51205724"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o in organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, EOP offre molti report diversi che consentono di determinare lo stato generale e l'integrità dell'organizzazione. Sono inoltre disponibili strumenti per la risoluzione dei problemi relativi a eventi specifici, ad esempio il mancato recapito di un messaggio ai destinatari desiderati, e report di controllo per assicurare il rispetto dei requisiti di conformità.
+Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, EOP offre molti report diversi che consentono di determinare lo stato generale e l'integrità dell'organizzazione. Sono inoltre disponibili strumenti per la risoluzione dei problemi relativi a eventi specifici, ad esempio il mancato recapito di un messaggio ai destinatari desiderati, e report di controllo per assicurare il rispetto dei requisiti di conformità.
 
 ## <a name="usage-reports"></a>Report sull'uso
 
-**Attività dei gruppi di Microsoft 365**: consente di visualizzare informazioni sul numero di gruppi di Microsoft 365 creati e utilizzati.
+**Microsoft 365 gruppi di** lavoro : consente di visualizzare informazioni sul numero di Microsoft 365 che vengono creati e utilizzati.
 
 **Attività di posta** elettronica : consente di visualizzare informazioni sul numero di messaggi inviati, ricevuti e letti nell'intera organizzazione e da utenti specifici.
 
@@ -45,19 +45,19 @@ Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o 
 
 Per ulteriori informazioni, vedere le risorse seguenti:
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione - Gruppi di Microsoft 365](../../admin/activity-reports/office-365-groups.md)
+- [Microsoft 365 Report nell'interfaccia di amministrazione - Microsoft 365 gruppi](../../admin/activity-reports/office-365-groups.md)
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione - Attività di posta elettronica](../../admin/activity-reports/email-activity.md)
+- [Microsoft 365 Report nell'interfaccia di amministrazione - Attività di posta elettronica](../../admin/activity-reports/email-activity.md)
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione - Utilizzo delle app di posta elettronica](../../admin/activity-reports/email-apps-usage.md)
+- [Microsoft 365 Report nell'interfaccia di amministrazione - Utilizzo delle app di posta elettronica](../../admin/activity-reports/email-apps-usage.md)
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione - Utilizzo delle cassette postali](../../admin/activity-reports/mailbox-usage.md)
+- [Microsoft 365 Report nell'interfaccia di amministrazione - Utilizzo delle cassette postali](../../admin/activity-reports/mailbox-usage.md)
 
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Report di & sicurezza nell'interfaccia di amministrazione di Microsoft 365
+## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Report di & sicurezza nell'interfaccia di amministrazione Microsoft 365 sicurezza
 
 Questi report migliorati offrono un'esperienza di creazione di report interattiva per gli amministratori di EOP, che include informazioni di riepilogo e la possibilità di eseguire il drill-down per ulteriori dettagli.
 
-**Defender for Office 365**: Visualizzare informazioni su Collegamenti sicuri e allegati sicuri che fanno parte di Microsoft Defender per Office 365.
+**Defender for Office 365**: consente di visualizzare informazioni sui collegamenti sicuri e sugli allegati sicuri che fanno parte di Microsoft Defender per Office 365.
 
 **EOP:** consente di visualizzare informazioni sui rilevamenti di malware, posta contraffatta, rilevamenti di posta indesiderata e flusso di posta da e verso l'organizzazione.
 
@@ -65,7 +65,7 @@ Questi report migliorati offrono un'esperienza di creazione di report interattiv
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Report personalizzati con Microsoft Graph
 
-Creare report disponibili nell'interfaccia di amministrazione a livello di programmazione tramite Microsoft Graph. Per ulteriori informazioni, vedere [Overview of Microsoft Graph](/graph/overview) e Working with Office [365 usage reports in Microsoft Graph](/graph/api/resources/report).
+Creare a livello di programmazione report disponibili nell'interfaccia di amministrazione tramite Microsoft Graph. Per ulteriori informazioni, vedere [Overview of Microsoft Graph](/graph/overview) and Working with Office 365 usage reports in Microsoft [Graph](/graph/api/resources/report).
 
 ## <a name="message-trace"></a>Traccia dei messaggi
 
@@ -77,7 +77,7 @@ Vedere [Traccia messaggio nel Centro sicurezza & conformità](message-trace-scc.
 
 ## <a name="audit-logging"></a>Registrazione di controllo
 
-Consente di tenere traccia di modifiche specifiche apportate all'organizzazione dagli amministratori. Questi report consentono di risolvere problemi di configurazione o individuare la causa di problemi relativi alla sicurezza o alla conformità. Vedere [Report di controllo in EOP](auditing-reports-in-eop.md).
+Consente di tenere traccia di modifiche specifiche apportate all'organizzazione dagli amministratori. Questi report consentono di risolvere problemi di configurazione o individuare la causa di problemi relativi alla sicurezza o alla conformità. Vedere [Report di controllo in Exchange Online](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Rapporti e latenza e disponibilità dei dati dei messaggi
 

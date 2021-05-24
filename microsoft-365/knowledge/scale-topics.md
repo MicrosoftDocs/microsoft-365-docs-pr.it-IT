@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Informazioni sulle procedure consigliate per gestire i numerosi argomenti dell'organizzazione tramite Viva Topics.
-ms.openlocfilehash: d5cdae62cdec9193d354e7585364bd842a514a26
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 613c4ed85a62efd22ba104c810420a2d0af015c5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593878"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624838"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Gestire gli argomenti su vasta scala in Microsoft Viva Topics
 
@@ -28,15 +28,16 @@ Innanzitutto, un promemoria delle [quattro fasi per gli argomenti:](manage-topic
 
 - **Consigliati**: un argomento è stato identificato dall'IA e ha risorse di supporto, connessioni e proprietà sufficienti. Questi argomenti sono contrassegnati come **argomento consigliato** nell'interfaccia utente.
 
-- **Confermato:** un argomento suggerito dall'IA deve essere convalidato. La convalida degli argomenti si verifica quando:
+- **Confirmed**: Argomento che è stato individuato dall'IA ed è stato convalidato. La convalida degli argomenti si verifica quando:
 
    - Un responsabile della conoscenza conferma un argomento. Un responsabile [della knowledge base conferma un argomento](manage-topics.md#confirmed-topics) nella pagina **Gestisci** argomenti.
 
    - Più utenti confermano un argomento. Deve essere presente una rete di due voti positivi ricevuti dagli utenti che hanno votato usando il meccanismo di feedback nella scheda dell'argomento. Ad esempio, se un utente ha votato positivo e un utente ha votato negativo per un determinato argomento, sarebbero comunque necessari altri due voti positivi per confermare l'argomento.
  
-- **Published**: Argomento confermato che è stato curato. Sono state apportate modifiche manuali per migliorarne la qualità.
+- **Published**: Argomento che è stato curato. Sono state apportate modifiche manuali per migliorarne la qualità o sono state create da un utente.
 
 - **Rimosso**: argomento rifiutato e non più visibile per i visualizzatori. Un argomento può essere rimosso in qualsiasi stato (suggerito, confermato o pubblicato). La rimozione degli argomenti si verifica quando:
+
    - Un responsabile della conoscenza rimuove un argomento. Un responsabile della knowledge base rimuove un argomento nella **pagina Gestisci** argomenti.
 
    - Più utenti votano negativamente usando il meccanismo di feedback nella scheda dell'argomento. Per rimuovere un argomento, deve essere presente una rete di due voti negativi ricevuti dagli utenti. Ad esempio, se un utente ha votato negativo e un utente ha votato positivo per un determinato argomento, sarebbero comunque necessari altri due voti negativi per rimuovere l'argomento.

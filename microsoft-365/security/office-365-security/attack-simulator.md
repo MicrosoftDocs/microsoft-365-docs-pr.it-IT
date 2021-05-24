@@ -20,12 +20,12 @@ ms.custom:
 description: Gli amministratori possono imparare a usare Il simulatore di attacco per eseguire attacchi simulati di phishing e password nelle organizzazioni Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205425"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624826"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulatore di attacco in Microsoft Defender per Office 365
 
@@ -37,15 +37,15 @@ Se l'organizzazione dispone di Microsoft Defender per Office 365 Piano 2, che in
 
 > [!NOTE]
 >
-> Il simulatore di attacco, come descritto in questo  articolo, è ora di sola lettura ed è stato sostituito dalla formazione di simulazione degli attacchi nel nodo **Collaborazione** & posta elettronica nel Centro sicurezza [Microsoft 365.](https://security.microsoft.com) Per ulteriori informazioni, vedere [Introduzione all'uso del training di simulazione degli attacchi.](attack-simulation-training-get-started.md)
+> Il simulatore di attacco, come descritto in questo [articolo, è ora di sola](https://security.microsoft.com)lettura ed è stato sostituito dal **training** di simulazione degli attacchi nel nodo di collaborazione E-mail **&** nel centro sicurezza Microsoft 365. Per ulteriori informazioni, vedere [Introduzione all'uso del training di simulazione degli attacchi.](attack-simulation-training-get-started.md)
 >
 > La possibilità di avviare nuove simulazioni da questa versione di Attack Simulator è stata disabilitata. Tuttavia, è comunque possibile accedere ai report per un massimo di 90 giorni a partire dal 24 gennaio 2021.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Per aprire il Centro sicurezza e conformità, passare a <https://protection.office.com/>. Il simulatore di attacco è disponibile **in Threat management** Attack \> **simulator**. Vai direttamente al simulatore di attacco, apri <https://protection.office.com/attacksimulator> .
+- Per aprire il Centro sicurezza e conformità, passare a <https://protection.office.com/>. Il simulatore di attacco è disponibile **in Threat management** Attack \> **simulator**. Per passare direttamente al simulatore di attacco, apri <https://protection.office.com/attacksimulator> .
 
-- Per ulteriori informazioni sulla disponibilità di Attack Simulator tra diversi abbonamenti a Microsoft 365, vedere Descrizione del servizio [Microsoft Defender per Office 365.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Per altre informazioni sulla disponibilità di Attack Simulator tra diverse sottoscrizioni Microsoft 365, vedi [Microsoft Defender per](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)la descrizione Office 365 servizio .
 
 - È necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore** sicurezza. Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,7 +55,7 @@ Se l'organizzazione dispone di Microsoft Defender per Office 365 Piano 2, che in
 
 - Le campagne di phishing raccoglieranno ed eelaborare gli eventi per 30 giorni. I dati cronologici della campagna saranno disponibili fino a 90 giorni dopo l'avvio della campagna.
 
-- I dati correlati alla simulazione e alla formazione degli attacchi vengono archiviati con altri dati dei clienti per i servizi di Microsoft 365. Per ulteriori informazioni, vedere Posizioni dei [dati di Microsoft 365.](../../enterprise/o365-data-locations.md)
+- I dati correlati alla simulazione e alla formazione degli attacchi vengono archiviati con altri dati dei clienti Microsoft 365 servizi. Per ulteriori informazioni, [vedere Microsoft 365 di dati](../../enterprise/o365-data-locations.md).
 
 - Non sono disponibili cmdlet di PowerShell corrispondenti per Il simulatore di attacco.
 
@@ -73,7 +73,7 @@ In Attack Simulator sono disponibili due diversi tipi di campagne di spear phish
 
   - Pagina personalizzata (URL) specificata.
 
-- **Spear phishing (allegato):** l'attacco tenta di convincere i destinatari ad aprire un allegato .docx o .pdf nel messaggio. L'allegato contiene lo stesso contenuto del collegamento di phishing predefinito, ma la prima frase inizia con " , questo messaggio viene visualizzato come un messaggio di posta elettronica recente \<Display Name\> aperto...".
+- **Spear phishing (allegato):** l'attacco tenta di convincere i destinatari ad aprire un .docx o .pdf allegato nel messaggio. L'allegato contiene lo stesso contenuto del collegamento di phishing predefinito, ma la prima frase inizia con " , questo messaggio viene visualizzato come un messaggio di posta elettronica recente \<Display Name\> aperto...".
 
 > [!NOTE]
 > Attualmente, le campagne di spear phishing in Attack Simulator non scadono.
@@ -170,7 +170,7 @@ Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di p
 
 4. Nel passaggio **Destinatari di** destinazione eseguire una delle operazioni seguenti:
 
-   - Fare **clic su Rubrica** per selezionare i destinatari (utenti o gruppi) per la campagna. Ogni destinatario di destinazione deve disporre di una cassetta postale di Exchange Online. Se si fa **clic su Filtro** e **Applica** senza immettere criteri di ricerca, tutti i destinatari vengono restituiti e aggiunti alla campagna.
+   - Fare **clic su Rubrica** per selezionare i destinatari (utenti o gruppi) per la campagna. Ogni destinatario di destinazione deve disporre di Exchange Online cassetta postale. Se si fa **clic su Filtro** e **Applica** senza immettere criteri di ricerca, tutti i destinatari vengono restituiti e aggiunti alla campagna.
 
    - Fare **clic su** **Importa, quindi su** Importazione file per importare un valore delimitato da virgole (CSV) o un file di indirizzi di posta elettronica separati da righe. Ogni riga deve contenere l'indirizzo di posta elettronica del destinatario.
 
@@ -207,9 +207,9 @@ Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di p
      >
      > - È necessario selezionare un URL. Per **le campagne di spear phishing (allegato),** è possibile rimuovere il collegamento dal corpo del messaggio nel passaggio successivo (in caso contrario, il messaggio conterrà sia un **collegamento** che un allegato).
 
-   - **Tipo di allegato:** questa impostazione è disponibile solo nelle campagne **di spear phishing (allegato).** Fare clic sull'elenco a discesa e selezionare **. DOCX** o **. PDF** dall'elenco.
+   - **Tipo di allegato:** questa impostazione è disponibile solo nelle campagne **di spear phishing (allegato).** Fare clic sull'elenco a **discesa e.DOCX** o **.PDF** dall'elenco.
 
-   - **Nome allegato**: questa impostazione è disponibile solo nelle campagne **di spear phishing (allegato).** Immettere un nome di file per l'allegato .docx o .pdf.
+   - **Nome allegato**: questa impostazione è disponibile solo nelle campagne **di spear phishing (allegato).** Immettere un nome di file per .docx o .pdf allegato.
 
    - **URL pagina di destinazione personalizzato:** immettere una pagina di destinazione facoltativa in cui vengono presi gli utenti se fanno clic sul collegamento di phishing e immettono le proprie credenziali. Questo collegamento sostituisce la pagina di destinazione predefinita. Ad esempio, se hai un training di sensibilizzazione interno, puoi specificare questo URL qui.
 
@@ -265,7 +265,7 @@ In Attack Simulator sono disponibili due diversi tipi di campagne di attacco del
 
 4. Nel passaggio **Utenti di** destinazione eseguire una delle operazioni seguenti:
 
-   - Fare **clic su Rubrica** per selezionare i destinatari (utenti o gruppi) per la campagna. Ogni destinatario di destinazione deve disporre di una cassetta postale di Exchange Online. Se si fa **clic su Filtro** e **Applica** senza immettere criteri di ricerca, tutti i destinatari vengono restituiti e aggiunti alla campagna.
+   - Fare **clic su Rubrica** per selezionare i destinatari (utenti o gruppi) per la campagna. Ogni destinatario di destinazione deve disporre di Exchange Online cassetta postale. Se si fa **clic su Filtro** e **Applica** senza immettere criteri di ricerca, tutti i destinatari vengono restituiti e aggiunti alla campagna.
 
    - Fare **clic su** **Importa, quindi su** Importazione file per importare un valore delimitato da virgole (CSV) o un file di indirizzi di posta elettronica separati da righe. Ogni riga deve contenere l'indirizzo di posta elettronica del destinatario.
 
@@ -277,7 +277,7 @@ In Attack Simulator sono disponibili due diversi tipi di campagne di attacco del
 
      - **Immettere manualmente le password:** nella **casella Premere INVIO per aggiungere** una password digitare una password e quindi premere INVIO. Ripetere questo passaggio tutte le volte necessarie.
 
-     - **Caricare le password da un file di dizionario:** fare **clic** su Carica per importare un file di testo esistente contenente una password in ogni riga e un'ultima riga vuota. Le dimensioni del file di testo devono essere pari o inferiori a 10 MB e non possono contenere più di 30000 password.
+     - **Upload password da** un file di  dizionario: fare clic su Upload per importare un file di testo esistente contenente una password in ogni riga e un'ultima riga vuota. Le dimensioni del file di testo devono essere pari o inferiori a 10 MB e non possono contenere più di 30000 password.
 
    - **Attacco con spray per la** password : in Le password da usare nella casella **di** attacco immettere una password.
 
@@ -335,7 +335,7 @@ Nella pagina Dettagli attacco  per ogni campagna sono disponibili le informazion
 
   - L'indirizzo IP del client.
 
-  - Dettagli sulla versione di Windows e web browser dell'utente.
+  - Dettagli sulla versione dell'utente di Windows web browser.
 
   È possibile fare **clic su Esporta** per esportare i risultati in un file CSV.
 

@@ -18,14 +18,14 @@ ms.custom:
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
 search.appverid: MET150
-description: Scopri come chiudere l'account con Microsoft.
+description: Quando chiudi l'account con Microsoft, tutte le informazioni relative al tuo account vengono eliminate, incluse le licenze, gli utenti e i dati degli utenti.
 ms.date: 04/02/2021
-ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537296"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624326"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 
@@ -52,7 +52,7 @@ Se l'organizzazione usa Active Directory che si sincronizza con Microsoft Azure 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Passaggio 2: Annullare tutte le sottoscrizioni attive
 
 1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **Prodotti** trovare un abbonamento attivo. Seleziona i tre punti (altre azioni), quindi seleziona **Annulla sottoscrizione.**
+2. Nella scheda **Prodotti** trovare un abbonamento attivo. Selezionare i tre puntini (Altre azioni) e quindi **Annulla abbonamento**.
 3. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Se si vuole, inviare un feedback.
 4. Selezionare **Salva**.
 5. Ripetere i passaggi da 1 a 4 per annullare tutte le sottoscrizioni attive.
@@ -88,3 +88,9 @@ Se l'organizzazione usa Active Directory che si sincronizza con Microsoft Azure 
 5. Se l'organizzazione non supera uno o più controlli, viene visualizzato un collegamento a ulteriori informazioni su come superare i controlli. Dopo aver superato tutti i controlli, selezionare **Elimina** per completare il processo.
 
 Dopo aver completato questo passaggio finale, l'account con Microsoft viene chiuso ed eliminato.
+
+## <a name="related-content"></a>Contenuto correlato 
+
+[Comprendere la fattura o la fattura per Microsoft 365 per le aziende](./billing-and-payments/understand-your-invoice2.md) (articolo)\
+[Annullare l'abbonamento](./subscriptions/cancel-your-subscription.md) (articolo)
+

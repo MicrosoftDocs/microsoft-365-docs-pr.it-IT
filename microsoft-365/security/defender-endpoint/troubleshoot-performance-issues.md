@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 1a969b6430914eb2dd667a906dc071d3cd49be8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995082"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625330"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Risolvere i problemi di prestazioni correlati alla protezione in tempo reale
 
@@ -33,7 +33,7 @@ ms.locfileid: "51995082"
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-Se il sistema presenta un utilizzo elevato della CPU o problemi di prestazioni correlati al servizio di protezione in tempo reale in Microsoft Defender for Endpoint, è possibile inviare un ticket al supporto Tecnico Microsoft. Seguire i passaggi descritti in [Raccogliere i dati di diagnostica di Microsoft Defender Antivirus.](collect-diagnostic-data.md)
+Se il sistema presenta un utilizzo elevato della CPU o problemi di prestazioni correlati al servizio di protezione in tempo reale in Microsoft Defender for Endpoint, è possibile inviare un ticket al supporto Tecnico Microsoft. Seguire i passaggi descritti in [Collect Antivirus Microsoft Defender diagnostic data](collect-diagnostic-data.md).
 
 In quanto amministratore, puoi anche risolvere questi problemi da solo. 
 
@@ -43,7 +43,7 @@ In caso contrario, è possibile identificare il software correlato al problema d
 
 Puoi anche fornire ulteriori log per l'invio al supporto Microsoft seguendo la procedura descritta in:
 - [Acquisire i registri dei processi con Process Monitor](#capture-process-logs-using-process-monitor)
-- [Acquisire i registri delle prestazioni con Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) 
+- [Acquisire i registri delle prestazioni Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) 
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>Rivolgersi al fornitore per le esclusioni antivirus
 
@@ -67,9 +67,9 @@ In **MPLog-xxxxxxxx-xxxxxx.log** è possibile trovare le informazioni stimate su
 | MaxTimeFile | Percorso del file a cui accede questo processo per il quale è stata registrata l'analisi più `MaxTime` lunga della durata |
 | EstimatedImpact | Percentuale di tempo impiegato nelle analisi per i file a cui accede questo processo al di fuori del periodo in cui questo processo ha riscontrato l'attività di analisi |
 
-Se l'impatto sulle prestazioni è elevato, provare ad aggiungere il processo alle esclusioni percorso/processo seguendo la procedura descritta in Configurare e convalidare le esclusioni per le analisi di [Microsoft Defender Antivirus.](collect-diagnostic-data.md)
+Se l'impatto sulle prestazioni è elevato, provare ad aggiungere il processo alle esclusioni percorso/processo seguendo la procedura descritta in [Configure and validate exclusions for Antivirus Microsoft Defender scans](collect-diagnostic-data.md).
 
-Se il passaggio precedente non risolve il problema, puoi raccogliere ulteriori informazioni tramite [Process Monitor](#capture-process-logs-using-process-monitor) o Windows [Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) nelle sezioni seguenti.
+Se il passaggio precedente non risolve il problema, è possibile raccogliere ulteriori informazioni tramite [Process Monitor](#capture-process-logs-using-process-monitor) o Windows [Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) nelle sezioni seguenti.
      
 ## <a name="capture-process-logs-using-process-monitor"></a>Acquisire i registri dei processi con Process Monitor
 
@@ -87,7 +87,7 @@ Process Monitor (ProcMon) è uno strumento di monitoraggio avanzato che può mos
 
 3. Decomprimere il file in in `C:\temp` modo che il percorso della cartella sia `C:\temp\ProcessMonitor` . 
 
-4. Copia **ProcMon.exe**  nel client Windows o nel server Windows che stai risoluzione dei problemi.  
+4. Copiare **ProcMon.exe** nel client Windows o Windows server che si sta risoluzione dei problemi.  
 
 5. Prima di eseguire ProcMon, assicurati che tutte le altre applicazioni non correlate al problema di utilizzo elevato della CPU siano chiuse. In questo modo si riduce al minimo il numero di processi da controllare.
 
@@ -122,7 +122,7 @@ Process Monitor (ProcMon) è uno strumento di monitoraggio avanzato che può mos
         > 
         >![Ridurre al minimo Procmon](images/procmon-minimize.png)
     
-7. Dopo aver seguito una delle procedure del passaggio 6, verrà visualizzata un'opzione per impostare i filtri. Seleziona **OK**. Puoi sempre filtrare i risultati al termine dell'acquisizione.
+7. Dopo aver seguito una delle procedure del passaggio 6, verrà visualizzata un'opzione per impostare i filtri. Selezionare **OK**. Puoi sempre filtrare i risultati al termine dell'acquisizione.
  
     ![Filter out Process Name is System Exclude](images/procmon-filter-options.png) 
 
@@ -150,15 +150,15 @@ Process Monitor (ProcMon) è uno strumento di monitoraggio avanzato che può mos
 13. Comprimere il file pml e inviarlo al supporto tecnico Microsoft.
 
 
-## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Acquisire i registri delle prestazioni con Windows Performance Recorder
+## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Acquisire i registri delle prestazioni Windows Performance Recorder
 
-Puoi usare Windows Performance Recorder (WPR) per includere informazioni aggiuntive nell'invio al supporto Microsoft. WPR è un potente strumento di registrazione che crea Traccia eventi per le registrazioni di Windows. 
+Puoi usare Windows Performance Recorder (WPR) per includere informazioni aggiuntive nell'invio al supporto Microsoft. WPR è un potente strumento di registrazione che crea Event Tracing per Windows registrazioni. 
 
-WPR fa parte di Windows Assessment and Deployment Kit (Windows ADK) e può essere scaricato da Scaricare e [installare Windows ADK.](/windows-hardware/get-started/adk-install) Puoi anche scaricarlo come parte di Windows 10 Software Development Kit in [Windows 10 SDK.](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
+WPR fa parte di Windows Assessment and Deployment Kit (Windows ADK) e può essere scaricato da [Download and install the Windows ADK](/windows-hardware/get-started/adk-install). Puoi anche scaricarlo come parte di Windows 10 Software Development Kit [all'indirizzo Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
 
 Puoi usare l'interfaccia utente WPR seguendo la procedura descritta in Acquisire i log [delle prestazioni usando l'interfaccia utente WPR.](#capture-performance-logs-using-the-wpr-ui) 
 
-In alternativa, puoi anche usare lo strumento da riga di comando *wpr.exe*, disponibile in Windows 8 e versioni successive seguendo la procedura descritta in [Capture performance logs using the WPR CLI.](#capture-performance-logs-using-the-wpr-cli)
+In alternativa, è anche possibile utilizzare lo strumento da riga di comando *wpr.exe*, disponibile in Windows 8 e versioni successive seguendo la procedura descritta in [Capture performance logs using the WPR CLI.](#capture-performance-logs-using-the-wpr-cli)
 
 
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>Acquisire i log delle prestazioni con l'interfaccia utente WPR
@@ -168,7 +168,7 @@ In alternativa, puoi anche usare lo strumento da riga di comando *wpr.exe*, disp
 
 1. Scaricare e installare WPR.
 
-2. In *Windows Kit fare* clic con il pulsante destro del mouse su **Registratore prestazioni Windows.** 
+2. In *Windows kit fare* clic con il pulsante destro del mouse su Windows Performance **Recorder.** 
 
     ![Menu Start](images/wpr-01.png)
 
@@ -178,20 +178,20 @@ In alternativa, puoi anche usare lo strumento da riga di comando *wpr.exe*, disp
 
     ![Controllo dell'account utente](images/wpt-yes.png)
 
-4. Scarica quindi il profilo [di analisi di Microsoft Defender for Endpoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) e salva con nome in una cartella come `WD.wprp` `C:\temp` . 
+4. Scarica quindi il profilo [di analisi di Microsoft Defender for Endpoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) e salva con nome in una cartella come `MDAV.wprp` `C:\temp` . 
      
 5. Nella finestra di dialogo WPR selezionare **Altre opzioni.**
 
     ![Selezionare altre opzioni](images/wpr-03.png)
 
-6. Seleziona **Aggiungi profili...** e seleziona il percorso del `WD.wprp` file.
+6. Seleziona **Aggiungi profili...** e seleziona il percorso del `MDAV.wprp` file.
 
 7. Dopo di che, dovresti vedere un nuovo set di profili in *Misurazioni* personalizzate denominato *Microsoft Defender per l'analisi endpoint* sotto di esso.
 
     ![in-file](images/wpr-infile.png)
 
     >[!WARNING]
-    >Se windows Server dispone di almeno 64 GB di RAM, usa la misura personalizzata `Microsoft Defender for Endpoint analysis for large servers` invece di `Microsoft Defender for Endpoint analysis` . In caso contrario, il sistema potrebbe consumare una quantità elevata di memoria o buffer del pool non di paging che può causare instabilità del sistema. È possibile scegliere i profili da aggiungere espandendo **Analisi risorse.** Questo profilo personalizzato fornisce il contesto necessario per un'analisi approfondita delle prestazioni.
+    >Se il Windows Server dispone di almeno 64 GB di RAM, utilizzare la misura personalizzata `Microsoft Defender for Endpoint analysis for large servers` anziché `Microsoft Defender for Endpoint analysis` . In caso contrario, il sistema potrebbe consumare una quantità elevata di memoria o buffer del pool non di paging che può causare instabilità del sistema. È possibile scegliere i profili da aggiungere espandendo **Analisi risorse.** Questo profilo personalizzato fornisce il contesto necessario per un'analisi approfondita delle prestazioni.
  
 8. Per usare il profilo di analisi dettagliata di Microsoft Defender for Endpoint per la misurazione personalizzata nell'interfaccia utente WPR:
 
@@ -247,7 +247,7 @@ In alternativa, puoi anche usare lo strumento da riga di comando *wpr.exe*, disp
 
 Lo strumento da riga di *comandowpr.exe* parte del sistema operativo a partire da Windows 8. Per raccogliere una traccia WPR tramite lo strumento da riga di comando wpr.exe:
 
-1. Scaricare **[il profilo di analisi di Microsoft Defender for Endpoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** per le tracce delle prestazioni in un file denominato in una directory `WD.wprp` locale, ad esempio `C:\traces` .
+1. Scaricare **[il profilo di analisi di Microsoft Defender for Endpoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** per le tracce delle prestazioni in un file denominato in una directory `MDAV.wprp` locale, ad esempio `C:\traces` .
 
 3. Fai clic con il pulsante **destro del mouse** sull'icona Del menu Start e scegli Windows PowerShell **(Amministratore)** o Prompt dei comandi **(amministratore)** per aprire una finestra del prompt dei comandi dell'amministratore.
 
@@ -256,11 +256,11 @@ Lo strumento da riga di *comandowpr.exe* parte del sistema operativo a partire d
 5. Al prompt con privilegi elevati, eseguire il comando seguente per avviare una traccia delle prestazioni di Microsoft Defender for Endpoint:
 
     ```console
-    wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
+    wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
     
     >[!WARNING]
-    >Se windows Server dispone di almeno 64 GB di RAM, usa i profili e invece `WDForLargeServers.Light` di profili e , `WDForLargeServers.Verbose` `WD.Light` `WD.Verbose` rispettivamente. In caso contrario, il sistema potrebbe consumare una quantità elevata di memoria o buffer del pool non di paging che può causare instabilità del sistema.
+    >Se il Windows Server dispone di almeno 64 GB di RAM, utilizzare rispettivamente i profili e anziché `WDForLargeServers.Light` `WDForLargeServers.Verbose` i profili e `WD.Light` `WD.Verbose` . In caso contrario, il sistema potrebbe consumare una quantità elevata di memoria o buffer del pool non di paging che può causare instabilità del sistema.
 
 6. Riprodurre il problema.
 
@@ -279,5 +279,5 @@ Lo strumento da riga di *comandowpr.exe* parte del sistema operativo a partire d
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Raccogliere i dati di diagnostica di Microsoft Defender Antivirus](collect-diagnostic-data.md)
-- [Configurare e convalidare le esclusioni per le analisi di Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Raccogliere Antivirus Microsoft Defender di diagnostica](collect-diagnostic-data.md)
+- [Configurare e convalidare le esclusioni per Antivirus Microsoft Defender analisi](configure-exclusions-microsoft-defender-antivirus.md)

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eef1b091b2b705a5ae83cba8dc7d5c22bd021856
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: bc500ff4418787648ee213d6f0f28bdda194e2ca
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297933"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623846"
 ---
 # <a name="contact-support-for-nigeria"></a>Contattare il supporto per la Nigeria
 
@@ -26,9 +26,9 @@ ms.locfileid: "52297933"
 ## <a name="phone-number"></a>Numero di telefono
 01 912 5070
 
-Selezionare l'opzione 9
+Premere 2 per le aziende
 
-Immettere il codice 7705
+Premere 1 per Microsoft 365
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:

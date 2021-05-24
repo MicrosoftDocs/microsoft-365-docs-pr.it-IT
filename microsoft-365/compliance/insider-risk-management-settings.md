@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259512"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624694"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introduzione alle impostazioni di gestione dei rischi insider
 
@@ -60,7 +60,7 @@ Gli avvisi vengono attivati dai criteri quando gli utenti eseguono attività cor
 Gli indicatori dei criteri sono suddivisi nelle aree seguenti. Puoi scegliere gli indicatori per attivare e personalizzare i limiti degli eventi degli indicatori per ogni livello di indicatore quando crei un criterio di rischio insider:
 
 - **Office:** includono indicatori dei criteri per i siti SharePoint, Microsoft Teams messaggi di posta elettronica.
-- **Indicatori di dispositivo:** includono indicatori dei criteri per attività come la condivisione di file in rete o con dispositivi. Gli indicatori includono attività Microsoft Office file, .csv (valori delimitati da virgole) e .pdf (formato documento portatile). Se si **seleziona** Indicatori di dispositivo , l'attività viene elaborata solo per i dispositivi con Windows 10 Build 1809 o versione successiva ed è necessario prima eseguire l'onboardboard dei dispositivi nel Centro conformità. Per altre informazioni sulla configurazione dei dispositivi per l'integrazione con i rischi insider, vedi la sezione Seguente Abilitare gli indicatori di dispositivo e i dispositivi [di onboarding](insider-risk-management-settings.md#OnboardDevices) in questo articolo.
+- **Indicatori di dispositivo:** includono indicatori dei criteri per attività come la condivisione di file in rete o con dispositivi. Gli indicatori includono attività che coinvolgono tutti i tipi di file, escludendo l'attività di file eseguibile (.exe) e di libreria di collegamento dinamico (.dll). Se si **seleziona** Indicatori di dispositivo , l'attività viene elaborata solo per i dispositivi con Windows 10 Build 1809 o versione successiva ed è necessario prima eseguire l'onboardboard dei dispositivi nel Centro conformità. Per altre informazioni sulla configurazione dei dispositivi per l'integrazione con i rischi insider, vedi la sezione Seguente Abilitare gli indicatori di dispositivo e i dispositivi [di onboarding](insider-risk-management-settings.md#OnboardDevices) in questo articolo.
 - **Indicatore di violazione dei criteri** di sicurezza (anteprima): sono inclusi gli indicatori di Microsoft Defender for Endpoint correlati all'installazione di software non approvato o dannoso o all'esclusione dei controlli di sicurezza. Per ricevere avvisi nella gestione dei rischi insider, devi avere una licenza di Defender for Endpoint attiva e l'integrazione dei rischi insider abilitata. Per altre informazioni sulla configurazione di Defender per Endpoint per l'integrazione della gestione dei rischi insider, vedi [Configurare le funzionalità avanzate in Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)
 - **Indicatori di accesso fisico (anteprima):** includono indicatori dei criteri per l'accesso fisico agli asset sensibili. Ad esempio, i tentativi di accesso a un'area con restrizioni nei log di sistema di badging fisico possono essere condivisi con i criteri di gestione dei rischi insider. Per ricevere questi tipi di avvisi nella gestione dei rischi insider, è necessario che gli asset fisici con priorità siano abilitati nella gestione dei rischi insider e che sia configurato il connettore dati di [badging](import-physical-badging-data.md) fisico. Per ulteriori informazioni sulla configurazione dell'accesso fisico, vedere la sezione [Priorità di accesso fisico](#priority-physical-assets-preview) in questo articolo.
 - **Microsoft Cloud App Security (anteprima):** sono inclusi gli indicatori dei criteri degli avvisi condivisi Cloud App Security. Il rilevamento delle anomalie abilitato automaticamente in Cloud App Security avvia immediatamente il rilevamento e la raccolta dei risultati, individuando numerose anomalie comportamentali tra gli utenti e i computer e i dispositivi connessi alla rete. Per includere queste attività negli avvisi dei criteri di gestione dei rischi insider, selezionare uno o più indicatori in questa sezione. Per altre informazioni sull'analisi Cloud App Security e il rilevamento di anomalie, vedi Ottenere l'analisi comportamentale e [il rilevamento di anomalie.](/cloud-app-security/anomaly-detection-policy)
@@ -191,7 +191,7 @@ Alle attività degli utenti rilevate dai criteri di rischio insider viene assegn
 A seconda dei tipi di segnali che ti interessano, puoi scegliere di importare gli avvisi nella gestione dei rischi insider in base allo stato di valutazione degli avvisi defender per endpoint. È possibile definire uno o più degli stati di triage degli avvisi seguenti nelle impostazioni globali da importare:
 
 - Unknown
-- Nuovo
+- New
 - In corso
 - Risolti
 

@@ -25,24 +25,24 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Scopri come usare Windows AutoPilot per configurare nuovi dispositivi Windows 10 per la tua azienda in modo che siano pronti per l'uso da parte dei dipendenti.
-ms.openlocfilehash: cd8777e6ae2e395506d2bf308c99309de1e24805
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cc5495f42214b222a70b281a713be782b1bf5c4f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578528"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623674"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usare la guida dettagliata per aggiungere profili e dispositivi Autopilot
 
-Puoi usare Windows AutoPilot per configurare nuovi dispositivi **Windows** 10 per la tua azienda in modo che siano pronti per l'uso quando li forni ai dipendenti.
+Puoi usare Windows AutoPilot per configurare nuovi dispositivi **Windows 10** per la tua azienda in modo che siano pronti per l'uso quando li forni ai dipendenti.
   
 ## <a name="device-requirements"></a>Requisiti dei dispositivi
 
 I dispositivi devono soddisfare questi requisiti:
   
-- Windows 10, versione 1703 o successiva
+- Windows 10 versione 1703 o successiva
     
-- Nuovi dispositivi che non hanno mai visto l'esperienza di Windows
+- Nuovi dispositivi che non sono stati Windows'esperienza out-of-box
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Creare dispositivi e profili con la guida dettagliata
 
@@ -60,7 +60,7 @@ Se non hai ancora creato gruppi di dispositivi o profili, il modo migliore per i
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. Nella pagina **Carica file CSV con elenco di dispositivi** passare a un percorso in cui è stato preparato . CSV, quindi **Apri** \> **avanti**. Il file deve avere tre intestazioni:
+3. Nella pagina Upload .csv file con **l'elenco** dei dispositivi passare a un percorso in cui si dispone del file .CSV preparato, quindi **aprire** \> **Avanti**. Il file deve avere tre intestazioni:
     
     - Colonna A: numero di serie del dispositivo
     
@@ -73,7 +73,7 @@ Se non hai ancora creato gruppi di dispositivi o profili, il modo migliore per i
     Per altre informazioni, vedere [File CSV dell'elenco dei dispositivi](../admin/misc/device-list.md). È anche possibile scaricare un file di esempio nella pagina **Carica file CSV con l'elenco dei dispositivi**. 
     
 > [!NOTE]
-> Questo script usa WMI per recuperare le proprietà necessarie a un cliente per registrare un dispositivo con Windows Autopilot. Tieni presente che è normale che il file CSV risultante non raccogli un valore PKID (Windows Product ID), poiché non è necessario registrare un dispositivo e il valore PKID è NULL nel file CSV di output. Verranno popolati solo il numero di serie e l'hash hardware.
+> Questo script utilizza WMI per recuperare le proprietà necessarie a un cliente per registrare un dispositivo con Windows Autopilot. Tenere presente che è normale che il file CSV risultante non raccogli un valore PKID (Product ID) di Windows poiché non è necessario registrare un dispositivo e il valore PKID null nel file CSV di output è completamente valido. Verranno popolati solo il numero di serie e l'hash hardware.
     
 4. Nella pagina **Assegna un profilo** è possibile selezionare un profilo esistente o crearne uno nuovo. Se non ne hai ancora uno, ti verrà richiesto di crearne uno. 
     
@@ -85,7 +85,7 @@ Se non hai ancora creato gruppi di dispositivi o profili, il modo migliore per i
     
     - È necessario creare un'esperienza di accesso con il marchio della società.
     
-    - Connettere i dispositivi agli account di Azure Active Directory e registrarli automaticamente per essere gestiti da Microsoft 365 Business Premium.
+    - Connessione i dispositivi per Azure Active Directory account e registrarli automaticamente per essere gestiti da Microsoft 365 Business Premium.
     
     Per ulteriori informazioni, vedere [Informazioni sulle impostazioni del profilo AutoPilot.](autopilot-profile-settings.md) 
     
@@ -94,3 +94,8 @@ Se non hai ancora creato gruppi di dispositivi o profili, il modo migliore per i
     Scegliere **Avanti**.
     
 6. Il termine indica che il profilo creato (o scelto) verrà applicato al gruppo di dispositivi creato caricando **l'elenco** dei dispositivi. Le impostazioni saranno effettive al successivo accesso degli utenti del dispositivo. Scegliere **Chiudi**.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Informazioni sulle impostazioni del profilo AutoPilot](autopilot-profile-settings.md) (articolo)\
+[Opzioni per proteggere i dispositivi e i dati dell'app](../admin/devices/choose-device-security.md) (articolo)

@@ -17,12 +17,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583713"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624610"
 ---
 # <a name="user-submissions-policy"></a>Criteri per gli invii di utenti
 
@@ -39,22 +39,18 @@ Nelle Microsoft 365 con cassette postali Exchange Online, è possibile specifica
 
 - [Componente aggiuntivo Segnala phishing](enable-the-report-phish-add-in.md)
 
-- [Report incorporati in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (in precedenza noto come Outlook Web App)
+- [Strumenti di creazione di report di terze parti](#third-party-reporting-tools)
 
-- [Report incorporati in Outlook per iOS e Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
+Il recapito dei messaggi segnalati dall'utente a una cassetta postale personalizzata anziché direttamente a Microsoft consente agli amministratori di segnalare in modo selettivo e manuale i messaggi a Microsoft utilizzando [l'invio da amministratore.](admin-submission.md)
 
   > [!NOTE]
   > Se i report sono stati [disabilitati in Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)sul Web, l'abilitazione degli invii degli utenti qui avrà la precedenza su tale impostazione e consentirà agli utenti di segnalare di nuovo i messaggi Outlook sul Web.
-
-È inoltre possibile configurare gli strumenti di segnalazione dei messaggi di terze parti per inoltrare i messaggi alla cassetta postale specificata.
-
-Il recapito dei messaggi segnalati dall'utente a una cassetta postale personalizzata anziché direttamente a Microsoft consente agli amministratori di segnalare in modo selettivo e manuale i messaggi a Microsoft utilizzando [l'invio da amministratore.](admin-submission.md)
 
 ## <a name="custom-mailbox-prerequisites"></a>Prerequisiti per le cassette postali personalizzate
 
 Utilizzare gli articoli seguenti per configurare i prerequisiti necessari in modo che i messaggi segnalati dall'utente vadano alla cassetta postale personalizzata:
 
-- Ignorare il filtro della posta indesiderata sulla cassetta postale personalizzata creando una regola del flusso di posta di Exchange per impostare il livello di probabilità di posta indesiderata. Vedere [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to Bypass spam **filtering**.
+- Ignorare il filtro della posta indesiderata sulla cassetta postale personalizzata creando una regola del flusso di posta di Exchange per impostare il livello di probabilità di posta indesiderata. Vedere [Use the EAC to create a mail flow rule that sets the SCL of a message](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to Bypass spam **filtering**.
 
 - Disattivare l'analisi degli allegati per la ricerca di malware nella cassetta postale personalizzata. Usa [Configurare i criteri allegati sicuri in Defender per Office 365](set-up-safe-attachments-policies.md) per creare un criterio Allegati sicuri con l'impostazione **Disattivato** per allegati sicuri risposta **malware sconosciuto.**
 
@@ -141,9 +137,17 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 
        Al termine, fare clic su **Conferma**.
 
+## <a name="third-party-reporting-tools"></a>Strumenti di creazione di report di terze parti
+
+È possibile configurare gli strumenti di segnalazione dei messaggi di terze parti per inviare i messaggi segnalati alla cassetta postale personalizzata. L'unico requisito è che il messaggio originale sia incluso come allegato nel messaggio inviato alla cassetta postale personalizzata (non inoltrare semplicemente il messaggio originale alla cassetta postale personalizzata).
+
+I requisiti di formattazione dei messaggi sono descritti nella sezione successiva.
+
 ## <a name="message-submission-format"></a>Formato invio messaggio
 
-I messaggi inviati a cassette postali personalizzate devono seguire un formato di posta di invio specifico. L'oggetto (titolo della busta) dell'invio deve essere nel formato seguente:
+Per identificare correttamente i messaggi allegati originali, i messaggi inviati alla cassetta postale personalizzata richiedono una formattazione specifica. Se i messaggi non utilizzano questo formato, i messaggi allegati originali vengono sempre identificati come invii di phishing.
+
+Per una corretta identificazione dei messaggi allegati originali, i messaggi inviati alla cassetta postale personalizzata devono utilizzare la sintassi seguente per l'oggetto (titolo busta):
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -153,7 +157,7 @@ dove SafetyAPIAction è uno dei seguenti valori interi:
 - 2: Non indesiderato
 - 3: Phishing
 
-Nell'esempio seguente:
+In questo esempio vengono utilizzati i seguenti valori:
 
 - Il messaggio viene segnalato come phishing.
 - L'ID messaggio di rete è 49871234-6dc6-43e8-abcd-08d797f20abe.

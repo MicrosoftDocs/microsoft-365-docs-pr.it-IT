@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 2c29cdb6823e695cb9c96a4f51ef7b1c41642ac9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333627"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625402"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Gestire gli argomenti nel Centro argomenti in Microsoft Viva Topics
 
@@ -38,13 +38,23 @@ I knowledge manager aiutano a guidare gli argomenti individuati nelle varie fasi
 
    ![Grafico ciclo di vita degli argomenti](../media/knowledge-management/topic-lifecycle.png) 
 
-- **Consigliato:** un argomento è stato identificato dall'IA e dispone di risorse, connessioni e proprietà di supporto sufficienti. Questi argomenti sono contrassegnati come **argomento consigliato** nell'interfaccia utente.
+- **Consigliati**: un argomento è stato identificato dall'IA e ha risorse di supporto, connessioni e proprietà sufficienti. Questi argomenti sono contrassegnati come **argomento consigliato** nell'interfaccia utente.
 
-- **Confermata:** viene convalidato un argomento suggerito dall'IA. La convalida dell'argomento deve essere confermata da un responsabile della conoscenza. Per confermare un argomento, è necessario che vi sia una rete di due voti positivi ricevuti dagli utenti che hanno votato usando il meccanismo di feedback nella scheda dell'argomento. Ad esempio, se un utente ha votato positivo e un utente ha votato negativo per un determinato argomento, sarebbero comunque necessari altri due voti positivi per confermare l'argomento.
+- **Confirmed**: Argomento che è stato individuato dall'IA ed è stato convalidato. La convalida degli argomenti si verifica quando:
+
+   - Un responsabile della conoscenza conferma un argomento. Un responsabile [della knowledge base conferma un argomento](manage-topics.md#confirmed-topics) nella pagina **Gestisci** argomenti.
+
+   - Più utenti confermano un argomento. Deve essere presente una rete di due voti positivi ricevuti dagli utenti che hanno votato usando il meccanismo di feedback nella scheda dell'argomento. Ad esempio, se un utente ha votato positivo e un utente ha votato negativo per un determinato argomento, sarebbero comunque necessari altri due voti positivi per confermare l'argomento.
  
-- **Published**: argomento confermato che è stato curato: sono state apportate modifiche manuali per migliorarne la qualità.
+- **Published**: Argomento che è stato curato. Sono state apportate modifiche manuali per migliorarne la qualità o sono state create da un utente.
 
-- **Rimosso**: un argomento viene rifiutato da un responsabile della conoscenza e non sarà più visibile ai visualizzatori. Un argomento può essere rimosso in qualsiasi stato (suggerito, confermato o pubblicato). Per rimuovere un argomento, deve essere presente una rete di due voti negativi ricevuti dagli utenti che hanno votato usando i meccanismi di feedback nella scheda dell'argomento. Ad esempio, se un utente ha votato negativo e un utente ha votato positivo per un determinato argomento, sarebbero comunque necessari altri due voti negativi per rimuovere l'argomento. Quando un argomento pubblicato viene rimosso, la pagina con i dettagli curati dovrà essere eliminata manualmente tramite la raccolta pagine del Centro argomenti.
+- **Rimosso**: argomento rifiutato e non più visibile per i visualizzatori. Un argomento può essere rimosso in qualsiasi stato (suggerito, confermato o pubblicato). La rimozione degli argomenti si verifica quando:
+
+   - Un responsabile della conoscenza rimuove un argomento. Un responsabile della knowledge base rimuove un argomento nella **pagina Gestisci** argomenti.
+
+   - Più utenti votano negativamente usando il meccanismo di feedback nella scheda dell'argomento. Per rimuovere un argomento, deve essere presente una rete di due voti negativi ricevuti dagli utenti. Ad esempio, se un utente ha votato negativo e un utente ha votato positivo per un determinato argomento, sarebbero comunque necessari altri due voti negativi per rimuovere l'argomento.
+
+  Quando un argomento pubblicato viene rimosso, la pagina con i dettagli curati dovrà essere eliminata manualmente tramite la raccolta pagine del Centro argomenti.
 
 > [!Note] 
 > Nella pagina **Gestisci argomenti,** ogni knowledge manager potrà visualizzare solo gli argomenti in cui hanno accesso ai file e alle pagine sottostanti connessi all'argomento. Questa limitazione delle autorizzazioni verrà riflessa nell'elenco degli argomenti visualizzati nelle schede Suggerite, **Confermate,** **Pubblicate** **e Rimosse.** Il conteggio degli argomenti, tuttavia, mostra i conteggi totali nell'organizzazione indipendentemente dalle autorizzazioni.
@@ -52,17 +62,17 @@ I knowledge manager aiutano a guidare gli argomenti individuati nelle varie fasi
 ## <a name="requirements"></a>Requisiti
 
 Per gestire gli argomenti nel Centro argomenti, è necessario:
-- Avere una licenza Viva Topics.
+- Avere una licenza di Viva Topics.
 
-- Disporre [**dell'autorizzazione Chi può gestire gli**](./topic-experiences-user-permissions.md) argomenti. Gli amministratori della knowledge base possono concedere agli utenti questa autorizzazione nelle impostazioni delle autorizzazioni dell'argomento Viva Topics. 
+- Disporre [**dell'autorizzazione Who gestire gli argomenti.**](./topic-experiences-user-permissions.md) Gli amministratori delle conoscenze possono assegnare questa autorizzazione nelle impostazioni delle autorizzazioni per gli argomenti di Viva Topics. 
 
-Non sarà possibile visualizzare  la pagina Gestisci argomenti nel Centro argomenti a meno che non si dispone dell'autorizzazione Chi **può gestire gli** argomenti.
+Non sarà possibile visualizzare  la pagina Gestisci argomenti nel Centro argomenti a meno che non si dispone dell'autorizzazione Who **gestire gli** argomenti.
 
 Nel Centro argomenti, un responsabile della conoscenza può esaminare gli argomenti identificati nelle posizioni di origine specificate e può confermarli o rimuoverli. Un responsabile della conoscenza può anche creare e pubblicare nuove pagine di argomento se non ne è stata trovata una nell'individuazione degli argomenti o modificare quelle esistenti se è necessario aggiornarne una.
 
 ## <a name="review-suggested-topics"></a>Esaminare gli argomenti suggeriti
 
-Nella pagina **Gestisci argomenti** gli argomenti individuati nei percorsi di origine di SharePoint specificati verranno elencati nella **scheda Suggeriti.** Se necessario, un responsabile della knowledge base può esaminare gli argomenti non confermati e scegliere di confermarli o rimuoverli.
+Nella pagina **Gestisci argomenti** gli argomenti individuati nei percorsi di origine SharePoint specificati verranno elencati nella **scheda Suggeriti.** Se necessario, un responsabile della knowledge base può esaminare gli argomenti non confermati e scegliere di confermarli o rimuoverli.
 
    ![Argomenti suggeriti](../media/knowledge-management/quality-score.png) 
 
@@ -72,7 +82,7 @@ Per esaminare un argomento consigliato:
 
 2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **Modifica** se è necessario apportare modifiche alla pagina. La pubblicazione di eventuali modifiche sposterà questo argomento nella **scheda Published.**
 
-3. Dopo aver esaminato l'argomento, tornare alla **pagina Gestisci** argomenti. Per l'argomento selezionato, è possibile:
+3. Dopo aver esaminato l'argomento, tornare alla **pagina Gestisci** argomenti. Per l'argomento selezionato è possibile:
 
    - Selezionare il segno di spunta per confermare l'argomento.
     
@@ -86,7 +96,7 @@ Per esaminare un argomento consigliato:
 
 A ogni argomento visualizzato nella **pagina Argomenti** suggeriti è assegnato un punteggio di qualità. Il punteggio di qualità è un riflesso della quantità di informazioni che l'utente medio visualizza per le informazioni sull'argomento, tenendo presente che ogni utente potrebbe visualizzare più o meno informazioni a causa delle autorizzazioni che potrebbero o meno avere sulle informazioni in un argomento. 
 
-Il punteggio di qualità può contribuire a fornire informazioni approfondite sugli argomenti con la maggior parte delle informazioni e può essere utile per trovare argomenti che potrebbero essere modificati manualmente. Ad esempio, un argomento con un punteggio di qualità inferiore potrebbe essere il risultato di alcuni utenti che non hanno autorizzazioni di SharePoint per i file o i siti pertinenti inclusi nell'argomento. Un collaboratore può quindi modificare l'argomento in modo da includere le informazioni (se appropriato), che saranno quindi visualizzabili per tutti gli utenti che possono visualizzare l'argomento.
+Il punteggio di qualità può contribuire a fornire informazioni approfondite sugli argomenti con la maggior parte delle informazioni e può essere utile per trovare argomenti che potrebbero essere modificati manualmente. Ad esempio, un argomento con un punteggio di qualità inferiore potrebbe essere il risultato di alcuni utenti che non hanno autorizzazioni SharePoint per i file o i siti pertinenti inclusi nell'argomento. Un contributore potrebbe quindi modificare l'argomento in modo da includere le informazioni (se appropriato), che saranno poi visualizzabili a tutti gli utenti autorizzati a visualizzare l'argomento.
 
 ### <a name="impressions"></a>Impression
 
@@ -94,11 +104,11 @@ Nella **colonna Impressions** viene visualizzato il numero di volte in cui un ar
 
 ## <a name="confirmed-topics"></a>Argomenti confermati
 
-Nella  pagina Gestisci argomenti, gli argomenti individuati nelle posizioni di origine di SharePoint specificate e confermati da un knowledge manager o "crowdsourced" confermati da due o più persone nette (bilanciamento dei voti negativi degli utenti rispetto ai voti degli utenti positivi) tramite il meccanismo di feedback della scheda saranno elencati nella **scheda Confermata.** Se necessario, un utente con autorizzazioni per gestire gli argomenti può esaminare gli argomenti confermati e scegliere di rifiutarli.
+Nella  pagina Gestisci argomenti, gli argomenti individuati nelle posizioni di origine SharePoint specificate e confermati da un responsabile della conoscenza o "crowdsourced" confermati da due o più persone nette (bilanciamento dei voti negativi degli utenti rispetto ai voti degli utenti positivi) tramite il meccanismo di feedback della scheda saranno elencati nella **scheda Confermata.** Se necessario, un utente con autorizzazioni per gestire gli argomenti può esaminare gli argomenti confermati e scegliere di rifiutarli.
 
-Per esaminare un argomento confermato:
+Per rivedere un argomento confermato:
 
-1. Nella scheda **Confermata** selezionare l'argomento per aprire la pagina dell'argomento.
+1. Nella scheda **Confermati** selezionare l'argomento per aprire la pagina dell'argomento.
 
 2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **Modifica** se è necessario apportare modifiche alla pagina.
 
@@ -106,6 +116,6 @@ Tieni presente che puoi comunque scegliere di rifiutare un argomento confermato.
 
 ## <a name="published-topics"></a>Argomenti pubblicati
 
-Gli argomenti pubblicati sono stati modificati in modo che informazioni specifiche vengano sempre visualizzate a chiunque incontri la pagina. Anche gli argomenti creati manualmente sono elencati qui.
+Gli argomenti pubblicati sono stati modificati in modo che informazioni specifiche vengano sempre visualizzate a chiunque incontri la pagina. Qui sono elencati anche gli argomenti creati manualmente.
 
    ![Gestire gli argomenti](../media/knowledge-management/manage-topics-new.png)

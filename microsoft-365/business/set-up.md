@@ -30,14 +30,16 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Scopri i passaggi di configurazione per Microsoft 365 Business Premium, tra cui l'aggiunta di un dominio e di utenti, la configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245045"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624390"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurare i Microsoft 365 Business Premium nella configurazione guidata
+
+## <a name="watch-overview-of-microsoft-365-setup"></a>Watch: Overview of Microsoft 365 setup
 
 Guarda questo video per una panoramica dell'Microsoft 365 Business Premium configurazione.<br><br>
 
@@ -62,7 +64,7 @@ Quando acquisti Microsoft 365 Business Premium, hai la possibilità di usare un 
 4. Nel passaggio **Aggiungi dominio** immettere il nome del dominio che si vuole usare (ad esempio contoso.com).
 
     > [!IMPORTANT]
-    > Se un dominio è stato acquistato durante l’iscrizione, il passaggio **Aggiungi un dominio** non comparirà. Proseguire al passaggio [Aggiungi utenti](#add-users-and-assign-licenses).
+    > Se un dominio è stato acquistato durante l'iscrizione, il passaggio **Aggiungi un dominio** non comparirà. In alternativa, andare a [Aggiungi utenti](#add-users-and-assign-licenses).
 
     ![Screenshot della pagina Personalizza l'accesso.](../media/adddomain.png)
 
@@ -85,7 +87,7 @@ A tutti gli utenti aggiunti nella procedura guidata viene assegnata automaticame
 
 1. Se la sottoscrizione Microsoft 365 Business Premium ha utenti esistenti (ad esempio, se hai usato Azure AD Connessione), ottieni un'opzione per assegnare le licenze a loro ora. Procedere aggiungendo le licenze anche per questi utenti.
 
-2. Una volta aggiunti gli utenti, sarà disponibile un’opzione per condividere le credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
+2. Dopo aver aggiunto gli utenti, sarà disponibile anche un'opzione per la condivisione delle credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
 
 ### <a name="connect-your-domain"></a>Connettere il proprio dominio
 
@@ -97,7 +99,7 @@ Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o 
 1. La configurazione guidata rileva in genere il registrar e offre un collegamento a istruzioni dettagliate per l'aggiornamento dei record NS presso il suo sito Web. In caso contrario, modificare i server dei nomi per [configurare Microsoft 365 con qualsiasi registrar .](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) 
 
     - Se si dispone di record DNS esistenti, ad esempio un sito Web, ma il proprio host DNS è abilitato per [Domain Connect](/office365/admin/get-help-with-domains/domain-connect), scegliere **Aggiungi record per me**. Nella pagina **Scegli i tuoi servizi online**, accettare tutti i predefiniti, scegliere **Successivo**, e scegliere **Autorizza** nella pagina del proprio host DNS.
-    - Se si dispone di record DNS esistenti con altri host DNS (non abilitati per il protocollo Domain Connect), è possibile gestire i propri record DNS per assicurarsi che i servizi esistenti restino connessi. Vedere [Informazioni di base sul dominio](/office365/admin/get-help-with-domains/dns-basics) per maggiori dettagli.
+    - Se si dispone di record DNS esistenti con altri host DNS (non abilitati per il protocollo Domain Connect), è possibile gestire i propri record DNS per assicurarsi che i servizi esistenti restino connessi. Vedere [dati principali domini](/office365/admin/get-help-with-domains/dns-basics) per altre informazioni.
 
         ![Pagina Attiva record.](../media/activaterecords.png)
 
@@ -131,6 +133,6 @@ Per installare Office dispositivi mobili iOS o Android, vedi [Configurare i disp
 
 È inoltre possibile installare Office singolarmente. Vedi [installare Office su un PC o mac per](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) istruzioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-content"></a>Contenuto correlato
 
-[Video di formazione su Microsoft 365 per le aziende](../business-video/index.yml)
+[video Microsoft 365 formazione su Microsoft 365](../business-video/index.yml) per le aziende (pagina dei collegamenti)

@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come usare la prevenzione della perdita dei dati di Microsoft 365 nello scanner locale per analizzare i dati inattivi e implementare azioni di protezione per le condivisioni di file locali e le cartelle e raccolte documenti di SharePoint locali.
-ms.openlocfilehash: e81b48560a8011e955e6508daf27e96f9fdb70fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8247315721041c3d5be5e4548bfe080b69375ed4
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538088"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623858"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Usare lo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)
 

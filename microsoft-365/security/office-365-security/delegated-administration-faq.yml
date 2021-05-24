@@ -16,26 +16,26 @@ metadata:
   description: Gli amministratori possono visualizzare le domande frequenti e le risposte sulle attività di amministrazione delegate in Microsoft 365 per i partner e i rivenditori Microsoft.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 836e52139ef2e6191bda26d6fdb92da521dff6bd
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334078"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624090"
 title: Domande frequenti sull'amministrazione delegata
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 
-  In questo articolo vengono fornite domande frequenti e risposte sulle attività di amministrazione delegate in Microsoft 365 per i partner e i rivenditori Microsoft. L'amministrazione delegata include la possibilità di gestire le impostazioni di Exchange Online Protection (EOP) per altri tenant (società).
+  In questo articolo vengono fornite domande frequenti e risposte sulle attività di amministrazione delegate in Microsoft 365 per i partner e i rivenditori Microsoft. L'amministrazione delegata include la possibilità di gestire le impostazioni Exchange Online Protection (EOP) per altri tenant (società).
 sections:
 - name: Ignorato
   questions:
   - question: >
       Sono un rivenditore e devo gestire i tenant dei clienti. Funzionamento.
     answer: >
-      Se si è un partner o un rivenditore Microsoft e si è  effettuato l'accesso come consulente Microsoft, è possibile richiedere funzionalità di amministrazione delegate nell'organizzazione microsoft 365 del cliente.
+      Se sei un partner o un rivenditore Microsoft e ti sei sottoscritto  come consulente Microsoft, puoi richiedere funzionalità di amministrazione delegata nell'organizzazione di Microsoft 365 del cliente.
 
 
       L'amministrazione delegata consente di gestire Microsoft 365 (incluse le impostazioni EOP) come se si fosse un amministratore all'interno dell'organizzazione. I passaggi per configurare l'amministrazione delegata sono descritti nell'elenco seguente:
@@ -54,11 +54,11 @@ sections:
   - question: >
       Sono un cliente, non un rivenditore. In che modo è possibile configurare l'amministratore delegato per i subtenant?
     answer: >
-      L'amministrazione delegata è disponibile solo per rivenditori e partner. Tuttavia, è presente uno script di PowerShell di esempio che consente di applicare i criteri ai subtenants (società). Per ulteriori informazioni, vedi [Script di esempio per l'applicazione delle impostazioni EOP a più tenant](sample-script-for-applying-eop-settings-to-multiple-tenants.md).
+      L'amministrazione delegata è disponibile solo per rivenditori e partner. Tuttavia, è presente uno script di PowerShell di esempio che consente di applicare i criteri ai subtenants (società). Per ulteriori informazioni, vedi [Script di esempio per l'applicazione delle impostazioni EOP a più tenant](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
   - question: >
       È possibile impedire all'amministratore secondario di modificare i criteri?
     answer: >
       No. Microsoft 365 non dispone attualmente di questa funzionalità.
   - question: >
       È possibile ottenere report consolidati tra tutti i subtenant?
-    answer: I report consolidati tra le società gestite non sono disponibili nei report dell'interfaccia di amministrazione di Microsoft 365. È tuttavia possibile ottenere report utilizzando [Microsoft Graph.](/graph/overview)
+    answer: I report consolidati tra le società gestite non sono disponibili nei report Microsoft 365'interfaccia di amministrazione. Tuttavia, è possibile ottenere report utilizzando [Microsoft Graph](/graph/overview).

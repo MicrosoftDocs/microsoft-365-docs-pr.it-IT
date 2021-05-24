@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Informazioni su come ripristinare gli account utente eliminati e tutti i dati associati.
-ms.openlocfilehash: b7d98c1f49f8252ea9fdda2d863b5b77ac5bea9d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: Entro 30 giorni dall'eliminazione di un account utente, è possibile ripristinare l'account e tutti i dati e l'utente può accedere con lo stesso account.
+ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291068"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623822"
 ---
 # <a name="restore-a-user"></a>Ripristinare un utente
    
@@ -91,6 +91,8 @@ A tale [scopo,](about-admin-roles.md) è necessario disporre Microsoft 365 autor
     
 4. Esaminare i risultati e quindi scegliere **Chiudi**.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Eliminare un utente](delete-a-user.md)
+[Eliminare un utente](delete-a-user.md) (articolo)\
+[Assegnare ruoli di amministratore](assign-admin-roles.md) (video)\
+[Assegnare licenze agli utenti](../manage/assign-licenses-to-users.md) (articolo)

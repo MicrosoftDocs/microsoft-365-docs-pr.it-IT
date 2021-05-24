@@ -21,12 +21,12 @@ ms.custom:
 description: Gli amministratori possono conoscere le impostazioni e i filtri di protezione da posta indesiderata che consentono di impedire la posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6a4113925956c67e80a5239b8f9823acaf7f75b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 52e891a86e75309dadd445736738a3f25584823e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538316"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624862"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protezione da posta indesiderata in EOP
 
@@ -60,7 +60,7 @@ Le impostazioni di protezione da posta indesiderata in EOP sono effettuate con l
 - **Filtro posta indesiderata (filtro contenuto):** EOP utilizza i verdetti del filtro della posta indesiderata **Spam,** **High confidence spam,** **Bulk email,** **Phishing email** and High confidence **phishing email** to classify messages. È possibile configurare le azioni da eseguire in base a questi verdetti ed è possibile configurare le opzioni di notifica dell'utente finale per i messaggi messi in quarantena anziché recapitati. Per ulteriori informazioni, vedere [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
-  > Per impostazione predefinita, il filtro posta indesiderata è configurato per inviare messaggi contrassegnati come posta indesiderata alla cartella Posta indesiderata del destinatario. Tuttavia, negli ambienti ibridi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare due regole del flusso di posta (note anche come regole di trasporto) nell'organizzazione Exchange locale per riconoscere le intestazioni di posta indesiderata di EOP aggiunte ai messaggi. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+  > Per impostazione predefinita, il filtro posta indesiderata è configurato per inviare messaggi contrassegnati come posta indesiderata alla cartella Posta indesiderata del destinatario. Tuttavia, negli ambienti ibridi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare due regole del flusso di posta (note anche come regole di trasporto) nell'organizzazione Exchange locale per riconoscere le intestazioni di posta indesiderata di EOP aggiunte ai messaggi. Per informazioni dettagliate, [vedere Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - **Filtro posta indesiderata** in uscita : EOP verifica inoltre che gli utenti non inviino posta indesiderata, né nel contenuto dei messaggi in uscita né superando i limiti dei messaggi in uscita. Per ulteriori informazioni, vedere [Configure outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md).
 
@@ -100,7 +100,7 @@ Ecco alcune procedure consigliate che si applicano a entrambi gli scenari:
 
 - **Annullare la sottoscrizione alla posta elettronica in blocco** Se il messaggio è qualcosa a cui l'utente si è iscritto (newsletter, annunci di prodotti e così via) e contiene un link di annullamento della sottoscrizione da una fonte affidabile, è consigliabile chiedere loro semplicemente di annullare la sottoscrizione.
 
-- EOP autonomo: creare regole del flusso di posta in un Exchange locale per i verdetti del filtro della posta indesiderata di **EOP:** negli ambienti EOP autonomi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare le regole del flusso di posta (note anche come regole di trasporto) in Exchange locale per tradurre il verdetto del filtro posta indesiderata di EOP in modo che la regola di posta indesiderata possa spostare il messaggio nella cartella Posta indesiderata. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- EOP autonomo: creare regole del flusso di posta nel Exchange locale per i verdetti del filtro della posta indesiderata di **EOP:** negli ambienti EOP in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare le regole del flusso di posta (note anche come regole di trasporto) in Exchange locale per tradurre il verdetto del filtro posta indesiderata di EOP in modo che la regola di posta indesiderata possa spostare il messaggio nella cartella Posta indesiderata. Per informazioni dettagliate, [vedere Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>Impedire che la posta elettronica venga identificata come posta indesiderata
 
@@ -118,7 +118,7 @@ Ecco alcuni passaggi che è possibile eseguire per evitare falsi positivi:
 
 - **Verificare che gli utenti siano entro i limiti di invio** e ricezione, come descritto in [Limiti](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) di ricezione e invio nella descrizione Exchange Online servizio.
 
-- **EOP autonomo:** utilizzare la sincronizzazione della directory : se si utilizza EOP autonomo per proteggere l'organizzazione Exchange locale, è consigliabile sincronizzare le impostazioni utente con il servizio utilizzando la sincronizzazione della directory. In questo modo, si ha la certezza che gli elenchi dei Mittenti attendibili vengano rispettati da Exchange Online Protection. Per ulteriori informazioni, vedere [Utilizzare la sincronizzazione della directory per gestire gli utenti di posta](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users).
+- **EOP autonomo:** utilizzare la sincronizzazione della directory : se si utilizza EOP autonomo per proteggere l'organizzazione Exchange locale, è consigliabile sincronizzare le impostazioni utente con il servizio utilizzando la sincronizzazione della directory. In questo modo, si ha la certezza che gli elenchi dei Mittenti attendibili vengano rispettati da Exchange Online Protection. Per ulteriori informazioni, vedere [Utilizzare la sincronizzazione della directory per gestire gli utenti di posta](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect).
 
 ## <a name="anti-spam-legislation"></a>Legislazione antispam
 

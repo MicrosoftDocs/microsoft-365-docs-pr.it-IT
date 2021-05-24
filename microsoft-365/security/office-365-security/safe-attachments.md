@@ -20,12 +20,12 @@ ms.collection:
 description: Gli amministratori possono ottenere informazioni sulla funzionalità Allegati sicuri in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab3fd89c02186dfbdb6c9a3d754a4902d8b945f8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246381"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625006"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Allegati sicuri in Microsoft Defender per Office 365
 
@@ -73,7 +73,7 @@ In questa sezione vengono descritte le impostazioni dei criteri allegati sicuri:
 
   |Opzione|Effetto|Utilizzare quando si desidera:|
   |---|---|---|
-  |**Off**|Gli allegati non vengono analizzati per la ricerca di malware dagli allegati sicuri. I messaggi vengono ancora analizzati per la ricerca di malware [dalla protezione antimalware in EOP.](anti-malware-protection.md)|Disattivare l'analisi per i destinatari selezionati. <p> Evitare ritardi non necessari nel routing della posta interna. <p> **Questa opzione non è consigliata per la maggior parte degli utenti. È consigliabile utilizzare questa opzione solo per disattivare l'analisi degli allegati sicuri per i destinatari che ricevono solo messaggi da mittenti attendibili.**|
+  |**Disattivato**|Gli allegati non vengono analizzati per la ricerca di malware dagli allegati sicuri. I messaggi vengono ancora analizzati per la ricerca di malware [dalla protezione antimalware in EOP.](anti-malware-protection.md)|Disattivare l'analisi per i destinatari selezionati. <p> Evitare ritardi non necessari nel routing della posta interna. <p> **Questa opzione non è consigliata per la maggior parte degli utenti. È consigliabile utilizzare questa opzione solo per disattivare l'analisi degli allegati sicuri per i destinatari che ricevono solo messaggi da mittenti attendibili.**|
   |**Monitor**|Recapita i messaggi con allegati e quindi tiene traccia di ciò che accade con il malware rilevato. <p> Il recapito dei messaggi sicuri potrebbe essere ritardato a causa dell'analisi degli allegati sicuri.|Vedere dove viene rilevato malware nell'organizzazione.|
   |**Blocca**|Impedisce il recapito dei messaggi con allegati malware rilevati. <p> I messaggi [vengono messi in](manage-quarantined-messages-and-files.md) quarantena dove solo gli amministratori (non gli utenti finali) possono rivedere, rilasciare o eliminare i messaggi. <p> Blocca automaticamente le istanze future dei messaggi e degli allegati. <p> Il recapito dei messaggi sicuri potrebbe essere ritardato a causa dell'analisi degli allegati sicuri.|Protegge l'organizzazione da attacchi ripetuti utilizzando gli stessi allegati di malware. <p> Questo è il valore predefinito e il valore consigliato nei criteri di sicurezza predefiniti Standard [e Strict.](preset-security-policies.md)|
   |**Sostituisce**|Rimuove gli allegati di malware rilevati. <p> Notifica ai destinatari che gli allegati sono stati rimossi. <p>  I messaggi [vengono messi in](manage-quarantined-messages-and-files.md) quarantena dove solo gli amministratori (non gli utenti finali) possono rivedere, rilasciare o eliminare i messaggi. <p> Il recapito dei messaggi sicuri potrebbe essere ritardato a causa dell'analisi degli allegati sicuri.|Aumentare la visibilità per i destinatari che gli allegati sono stati rimossi a causa di malware rilevato.|
@@ -124,7 +124,7 @@ Esistono scenari in cui il recapito dinamico non è in grado di sostituire gli a
 - Messaggi eliminati.
 - La cartella di ricerca delle cassette postali dell'utente si trova in uno stato di errore.
 - Exchange Online le organizzazioni in cui Exclaimer è abilitato. Per risolvere questo problema, vedere [KB4014438](https://support.microsoft.com/help/4014438).
-- [S/MIME)](s-mime-for-message-signing-and-encryption.md) messaggi crittografati.
+- [S/MIME)](/exchange/security-and-compliance/smime-exo/smime-exo) messaggi crittografati.
 - L'azione Recapito dinamico è stata configurata in un criterio Allegati sicuri, ma il destinatario non supporta il recapito dinamico(ad esempio, il destinatario è una cassetta postale in un'organizzazione Exchange locale). Tuttavia, [Collegamenti sicuri in Microsoft Defender per Office 365](set-up-safe-links-policies.md) è in grado di analizzare Office file allegati che contengono URL (a seconda di come sono configurate le impostazioni globali per i collegamenti sicuri). [](configure-global-settings-for-safe-links.md)
 
 ## <a name="submitting-files-for-malware-analysis"></a>Invio di file per l'analisi malware

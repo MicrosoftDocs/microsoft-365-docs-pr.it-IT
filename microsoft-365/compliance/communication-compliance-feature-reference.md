@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 87f5e414a13d966ba2fbb30d84d7d4adae7a1d13
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583485"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624350"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni
 
@@ -187,9 +187,9 @@ I classificatori predefiniti disponibili per il training e i classificatori glob
 
 Per informazioni sui classificatori addestrabili in Microsoft 365, vedere [Introduzione ai classificatori addestrabili.](classifier-get-started-with.md)
 
-### <a name="optical-character-recognition-ocr-preview"></a>Riconoscimento ottico dei caratteri (OCR) (anteprima)
+### <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico dei caratteri (OCR)
 
-Configurare criteri di conformità delle comunicazioni incorporati o personalizzati per analizzare e identificare il testo stampato o scritto a mano da immagini che potrebbero non essere appropriati nell'organizzazione. Servizi cognitivi di Azure integrati e il supporto per l'analisi ottica per identificare il testo nelle immagini consentono ad analisti e investigatori di rilevare e agire su casi in cui una condotta inappropriata potrebbe non essere rilevata nelle comunicazioni principalmente non testuali.
+Configurare criteri di conformità delle comunicazioni incorporati o personalizzati per analizzare e identificare il testo stampato o scritto a mano da immagini che potrebbero non essere appropriati nell'organizzazione. Servizi cognitivi di [Azure](/azure/cognitive-services/computer-vision/overview-ocr) integrati e il supporto per l'analisi ottica per identificare il testo nelle immagini consentono ad analisti e investigatori di rilevare e agire su casi in cui una condotta inappropriata potrebbe non essere rilevata nelle comunicazioni principalmente non testuali.
 
 È possibile abilitare il riconoscimento ottico dei caratteri (OCR) nei nuovi criteri da modelli, criteri personalizzati o aggiornare i criteri esistenti per espandere il supporto per l'elaborazione di immagini e allegati incorporati. Se abilitata in un criterio creato da un modello di criteri, l'analisi automatica è supportata per le immagini incorporate o allegate nei messaggi di posta elettronica Microsoft Teams messaggi di chat. Per i criteri personalizzati, una o più impostazioni condizionali associate a parole chiave, classificatori incorporati o tipi di informazioni riservate devono essere configurate nel criterio per abilitare la selezione dell'analisi OCR.
 
@@ -477,6 +477,17 @@ Il **dashboard Report** contiene i seguenti widget di report e collegamenti dett
     - Caso creato
 
     Utilizzare *l'opzione* Esporta per creare un .csv contenente i dettagli del report.
+
+- **Tipo di informazioni riservate per report** dettagliato sulla posizione (anteprima): esaminare ed esportare informazioni sul rilevamento dei tipi di informazioni riservate e delle origini associate nei criteri di conformità delle comunicazioni. Include il totale complessivo e la suddivisione specifica delle istanze del tipo di informazioni riservate nelle origini configurate nell'organizzazione. Di seguito sono riportati alcuni esempi:
+
+    - **Posta** elettronica: tipi di informazioni riservate rilevati nei Exchange di posta elettronica.
+    - **Teams**: tipi di informazioni riservate rilevati nei Microsoft Teams e nei messaggi di chat.
+    - **Skype for Business**: tipi di informazioni riservate rilevati in Skype per le comunicazioni aziendali.
+    - **Yammer**: tipi di informazioni riservate rilevati in Yammer posta in arrivo, post, chat e risposte.
+    - **Origini di terze parti:** rilevati tipi di informazioni riservate per le attività associate a connettori di terze parti configurati nell'organizzazione. Per visualizzare la suddivisione delle origini di terze parti per uno specifico tipo di informazioni riservate nel report, posizionare il puntatore del mouse sul valore per il tipo di informazioni riservate nella colonna Origine di terze parti.
+    - **Altro**: Tipi di informazioni riservate utilizzati per l'elaborazione interna del sistema. La selezione o la deselezione di questa origine per il report non influirà sui valori.
+
+    Utilizzare *l'opzione* Esporta per creare un .csv contenente i dettagli del report. I valori per ogni origine di terze parti vengono visualizzati in colonne separate nel file .csv file.
 
 ## <a name="audit"></a>Audit
 

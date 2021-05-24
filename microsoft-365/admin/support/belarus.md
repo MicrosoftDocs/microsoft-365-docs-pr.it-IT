@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c536987035743f9a640d427375efaedfce21fbb8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 455959c8b11a3cfaf293052d2c23251771ac7456
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296552"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623578"
 ---
 # <a name="contact-support-for-belarus"></a>Contattare il supporto per la Bielorussia
 
@@ -26,9 +26,9 @@ ms.locfileid: "52296552"
 ## <a name="phone-number"></a>Numero di telefono
 8 820 0071 0003
 
-Selezionare l'opzione 9
+Premere 2 per le aziende
 
-Immettere il codice 7707
+Premere 1 per Microsoft 365
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:

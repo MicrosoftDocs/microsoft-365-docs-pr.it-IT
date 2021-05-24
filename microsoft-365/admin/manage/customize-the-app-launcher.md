@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: "Creare collegamenti rapidi alla posta elettronica, ai documenti, alle app, ai siti di SharePoint, ai siti esterni e ad altre risorse aggiungendo riquadri personalizzati all'icona di avvio delle app. "
-ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: Crea collegamenti rapidi a posta elettronica, documenti, app, siti SharePoint, siti esterni e altre risorse aggiungendo riquadri personalizzati all'icona di avvio delle app.
+ms.openlocfilehash: 47f871d66f180225e877a521ef159fc745960507
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327211"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623774"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Aggiungere riquadri personalizzati all'icona di avvio delle app
 
-In Microsoft 365 puoi accedere rapidamente e facilmente alla posta elettronica, ai calendari, ai documenti e alle app usando l'icona di avvio delle app ([altre informazioni](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Si tratta di app che si ottengono con Microsoft 365 e app personalizzate che si aggiungono da [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) o [Azure AD.](/previous-versions/office/office-365-api/)
+In Microsoft 365, puoi accedere rapidamente e facilmente alla posta elettronica, ai calendari, ai documenti e alle app usando l'icona di avvio delle app ([altre informazioni](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Si tratta di app che si ottengono con Microsoft 365 e app personalizzate che si aggiungono da [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) o [Azure AD.](/previous-versions/office/office-365-api/)
   
 Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano a siti di SharePoint, siti esterni, app legacy e altro ancora. Il riquadro personalizzato appare dopo tutte le app in **Tutte** nell'icona di avvio delle app, ma puoi spostarlo in **Home** e indicare agli utenti di fare lo stesso. In questo modo è più facile trovare i siti, le app e le risorse rilevanti per svolgere il tuo lavoro. Nell'esempio seguente viene usato un riquadro personalizzato, "Portale Contoso", per accedere al sito Intranet di SharePoint dell'organizzazione. 
   
@@ -40,7 +40,7 @@ Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Aggiungere un riquadro personalizzato all'icona di avvio delle app
 
-1. Accedere all'interfaccia di amministrazione come amministratore globale, passare a Impostazioni  >  **Impostazioni organizzazione** e scegliere la scheda Profilo **organizzazione.**
+1. Accedi all'interfaccia di amministrazione come amministratore globale, vai a Impostazioni  >  **Org Impostazioni** e scegli la scheda Profilo **organizzazione.**
     
 2. Nella scheda **Profilo organizzazione** scegliere Riquadri di avvio delle **app personalizzati.**
   
@@ -69,7 +69,7 @@ Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Nell'interfaccia di amministrazione passare alla scheda **Impostazioni**  >  **organizzazione Profilo**  >  **organizzazione.**
+1. Nell'interfaccia di amministrazione passare alla **scheda** Impostazioni  >  **Org Impostazioni**  >  **Profilo organizzazione.**
     
 2. Nella pagina **Profilo organizzazione,** accanto a **Aggiungi riquadri personalizzati per l'organizzazione,** selezionare **Modifica.**
 
@@ -79,6 +79,12 @@ Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano
     
 Per eliminare un riquadro personalizzato, nella **finestra Riquadri** personalizzati seleziona il riquadro e seleziona **Rimuovi riquadro**  >  **Elimina.** 
   
-## <a name="whats-next"></a>Operazioni successive
+## <a name="next-steps"></a>Passaggi successivi
 
-Oltre ad aggiungere riquadri all'icona di avvio delle app, puoi aggiungere riquadri di avvio delle app alla barra di spostamento ([altre informazioni](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Per personalizzare l'aspetto di Microsoft 365 in base al marchio dell'organizzazione, vedere [Personalizzare il tema di Microsoft 365.](../setup/customize-your-organization-theme.md)
+Oltre ad aggiungere riquadri all'icona di avvio delle app, puoi aggiungere riquadri di avvio delle app alla barra di spostamento ([altre informazioni](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Per personalizzare l'aspetto del Microsoft 365 in base al marchio dell'organizzazione, vedere Personalizzare il tema [Microsoft 365.](../setup/customize-your-organization-theme.md)
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Aggiungere app all'icona di avvio delle app](pin-apps-to-app-launcher.md) degli utenti (articolo)\
+[Aggiornare il Microsoft 365 per gli utenti aziendali al client Office](../setup/upgrade-users-to-latest-office-client.md) più recente (articolo)\
+[Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](../manage/manage-addins-in-the-admin-center.md) (articolo)

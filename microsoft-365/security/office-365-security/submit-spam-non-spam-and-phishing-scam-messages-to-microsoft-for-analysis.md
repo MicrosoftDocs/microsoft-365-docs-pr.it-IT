@@ -18,12 +18,12 @@ description: Gli amministratori e gli utenti finali possono imparare a inviare m
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0a6f564d82750c5ab8156680854c2453cda6971
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9c3a02c710472a996245a38d996ff4485efd1748
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206502"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624026"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Inviare manualmente i messaggi a Microsoft per l'analisi
 
@@ -35,7 +35,7 @@ ms.locfileid: "51206502"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Se si è un amministratore di un'organizzazione con cassette postali di Exchange Online, è consigliabile utilizzare il portale invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Se si è un amministratore di un'organizzazione con Exchange Online cassette postali, è consigliabile utilizzare il portale invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi di posta indesiderata (posta indesiderata) o phishing nella posta in arrivo o se non ricevono un messaggio di posta elettronica legittimo perché è contrassegnato come posta indesiderata. Stiamo costantemente per ottimizzare i filtri per la posta indesiderata per essere più accurati.
 
@@ -47,14 +47,13 @@ L'utente e gli utenti possono contribuire a questo processo inviando falsi posit
 ## <a name="submit-false-negatives-to-microsoft"></a>Inviare falsi negativi a Microsoft
 
 > [!TIP]
-> Anziché utilizzare le procedure seguenti per segnalare falsi negativi, gli utenti in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) possono utilizzare il componente aggiuntivo Segnala messaggio o Segnala phishing. Per informazioni su come installare e utilizzare questi strumenti, vedere [Enable the Report Message add-in](enable-the-report-message-add-in.md) e Enable the Report Phishing [add-in.](enable-the-report-phish-add-in.md)
+> Anziché utilizzare le procedure seguenti per segnalare falsi negativi, gli utenti di Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) possono utilizzare il componente aggiuntivo Segnala messaggio o Segnala phishing. Per informazioni su come installare e utilizzare questi strumenti, vedere [Enable the Report Message add-in](enable-the-report-message-add-in.md) e Enable the Report Phishing [add-in.](enable-the-report-phish-add-in.md)
 
 Se si riceve un messaggio che passa attraverso il filtro posta indesiderata che dovrebbe essere stato identificato come posta indesiderata o phishing, è possibile inviare il messaggio ai team di analisi della posta indesiderata Microsoft e analisi di phishing Microsoft in base alle esigenze. Gli analisti rivedranno il messaggio e lo aggiungeranno ai filtri a livello di servizio se soddisfano i criteri di classificazione.
 
 1. Creare un nuovo messaggio di posta elettronica vuoto con uno dei seguenti destinatari:
 
    - **Posta indesiderata**: `junk@office365.microsoft.com`
-
    - **Phishing**: `phish@office365.microsoft.com`
 
 2. Trascinare e rilasciare il messaggio di posta indesiderata o phishing nel nuovo messaggio. In questo modo il messaggio di posta indesiderata o phishing verrà salvato come allegato nel nuovo messaggio. Non copiare e incollare il contenuto del messaggio o inoltrare il messaggio (è necessario il messaggio originale in modo da poter esaminare le intestazioni del messaggio).
@@ -62,10 +61,8 @@ Se si riceve un messaggio che passa attraverso il filtro posta indesiderata che 
    > [!NOTE]
    >
    > - È possibile allegare più messaggi nel nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo: messaggi di phishing o messaggi di posta indesiderata.
-   >
    > - Lasciare vuoto il corpo del nuovo messaggio.
-   >
-   > - Utilizzare i formati .msg (formato predefinito di Outlook) o .eml (formato predefinito di Outlook sul Web) per i messaggi allegati.
+   > - Usa i formati .msg (formato Outlook predefinito) o .eml (formato Outlook predefinito nel formato Web) per i messaggi allegati.
 
 3. Al termine, fare clic su **Invia**.
 
@@ -75,22 +72,19 @@ Se si riceve un messaggio che passa attraverso il filtro posta indesiderata che 
 ## <a name="submit-false-positives-to-microsoft"></a>Inviare falsi positivi a Microsoft
 
 > [!TIP]
-> Anziché utilizzare le procedure seguenti per segnalare falsi positivi, gli utenti in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) possono utilizzare il componente aggiuntivo Segnala messaggio o Segnala phishing. Per informazioni su come installare e utilizzare questi strumenti, vedere [Enable the Report Message add-in](enable-the-report-message-add-in.md) e Enable the Report Phishing [add-in.](enable-the-report-phish-add-in.md)
-
+> Anziché utilizzare le procedure seguenti per segnalare falsi positivi, gli utenti di Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) possono utilizzare il componente aggiuntivo Segnala messaggio o Segnala phishing. Per informazioni su come installare e utilizzare questi strumenti, vedere [Enable the Report Message add-in](enable-the-report-message-add-in.md) e Enable the Report Phishing [add-in.](enable-the-report-phish-add-in.md)
 
 Se un messaggio è stato erroneamente identificato come posta indesiderata, è possibile inviarlo al team di analisi della posta indesiderata di Microsoft. Gli analisti valuteranno il messaggio e, a seconda dei risultati dell'analisi, i filtri a livello di servizio possono essere modificati per consentire l'invio del messaggio.
 
-1. Creare un nuovo messaggio di posta elettronica vuoto con `not_junk@office365.microsoft.com` come destinatario:
+1. Creare un nuovo messaggio di posta elettronica vuoto con `not_junk@office365.microsoft.com` come destinatario.
 
 2. Trascinare il messaggio non identificato nel nuovo messaggio. In questo modo il messaggio non identificato verrà salvato come allegato nel nuovo messaggio. Non copiare e incollare il contenuto del messaggio o inoltrare il messaggio (è necessario il messaggio originale in modo da poter esaminare le intestazioni del messaggio).
 
    > [!NOTE]
    >
    > - È possibile allegare più messaggi nel nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo: messaggi di phishing o messaggi di posta indesiderata.
-   >
    > - Lasciare vuoto il corpo del nuovo messaggio.
-   >
-   > - Utilizzare i formati .msg (formato predefinito di Outlook) o .eml (formato predefinito di Outlook sul Web) per i messaggi allegati.
+   > - Usa i formati .msg (formato Outlook predefinito) o .eml (formato Outlook predefinito nel formato Web) per i messaggi allegati.
 
 3. Al termine, fare clic su **Invia**.
 
@@ -99,8 +93,8 @@ Se un messaggio è stato erroneamente identificato come posta indesiderata, è p
 
 ## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>Dove vengono archiviati i dati degli invii a Microsoft?
 
-I dati si trovano nel limite di conformità di Office 365 nei data center nordamericani. I dati vengono esaminati dagli analisti del team di progettazione per migliorare l'efficacia dei filtri.
+I dati si trovano nel Office 365 di conformità nei data center nordamericani. I dati vengono esaminati dagli analisti del team di progettazione per migliorare l'efficacia dei filtri.
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Creare una regola del flusso di posta per ricevere copie dei messaggi segnalati a Microsoft
 
-Per istruzioni, vedere [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+Per istruzioni, vedere [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

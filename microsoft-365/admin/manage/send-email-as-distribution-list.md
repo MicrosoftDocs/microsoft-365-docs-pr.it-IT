@@ -20,23 +20,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: Informazioni su come inviare posta elettronica come lista di distribuzione in Microsoft 365.
-ms.openlocfilehash: bb1d5a62d2b1a3bbfae87849e8aa96cef14c173e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Inviare messaggi di posta elettronica come lista di distribuzione in Microsoft 365 in modo che quando un membro risponde a un messaggio venga visualizzato dalla lista di distribuzione.
+ms.openlocfilehash: 01bff7e1d2515670c5a6faa199355e7de591f1fb
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332427"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624538"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Inviare messaggi di posta elettronica come lista di distribuzione
 
 In Microsoft 365, è possibile inviare posta elettronica come lista di distribuzione. Quando una persona membro della lista di distribuzione risponde a un messaggio inviato alla lista di distribuzione, il messaggio di posta elettronica viene visualizzato dalla lista di distribuzione e non dal singolo utente. In questo argomento viene illustrato come eseguire questa operazione.
   
-## <a name="send-email-as-a-distribution-list"></a>Inviare messaggi di posta elettronica come lista di distribuzione
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di eseguire questa procedura, assicurarsi di essere stati aggiunti a una lista di distribuzione di Microsoft 365 e di avere ottenuto l'autorizzazione Invia come su di essa.
   
- **Amministratori:** assicurarsi di aver seguito i passaggi descritti negli argomenti Aggiungere un utente o un contatto di [Microsoft 365 a](../email/add-user-or-contact-to-distribution-list.md) un elenco e Consentire ai membri di inviare messaggi di posta elettronica come gruppo di [Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) e aggiungere le persone corrette alla lista di distribuzione.
+ **Amministratori:** assicurarsi di aver seguito i passaggi descritti negli argomenti Aggiungere un utente o un contatto [di Microsoft 365 a](../email/add-user-or-contact-to-distribution-list.md) un elenco e Consenti ai membri di inviare messaggi di posta elettronica come gruppo di [Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) e di aver aggiunto le persone corrette alla lista di distribuzione.
   
 ## <a name="outlook-on-the-web"></a>Outlook sul Web
 
@@ -54,10 +54,16 @@ Prima di eseguire questa procedura, assicurarsi di essere stati aggiunti a una l
 
 ## <a name="outlook"></a>Outlook
 
-1. Aprire il client desktop di Outlook.
+1. Aprire Outlook client desktop.
 
 2. Comporre un nuovo messaggio di posta elettronica. Fare clic **sul campo** Da e selezionare Altro indirizzo di **posta elettronica.** Se il campo Da non è visualizzato, passare a **Opzioni** e selezionare **Da** nella sezione Mostra campi.
 
 3. Selezionare **l'indirizzo della lista** di distribuzione nell'elenco indirizzi globale.
 
 4. Inviare il messaggio di posta elettronica.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Creare, modificare o eliminare un gruppo di sicurezza nell'Microsoft 365 di amministrazione](../email/create-edit-or-delete-a-security-group.md) (articolo)\
+[Collaborazione tramite posta](../email/email-collaboration.md) elettronica (articolo)\
+[Aggiungere un utente o un contatto a un gruppo di distribuzione](../email/add-user-or-contact-to-distribution-list.md)

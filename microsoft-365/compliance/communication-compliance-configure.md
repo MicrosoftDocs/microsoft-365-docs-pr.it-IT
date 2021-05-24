@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e84c3266dd802fb6cab12db0c20773838b4e2a9
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077189"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624270"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -66,13 +66,13 @@ A seconda di come si desidera gestire i criteri di comunicazione e gli avvisi, �
 
 Scegliere tra queste opzioni del gruppo di ruoli per la configurazione della conformità delle comunicazioni:
 
-| Ruolo | Autorizzazioni di ruolo |
+| Ruolo | Autorizzazioni del ruolo |
 |:-----|:-----|
 | **Conformità delle comunicazioni** | Utilizzare questo gruppo di ruoli per gestire la conformità delle comunicazioni per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e visualizzatori designati, è possibile configurare le autorizzazioni di conformità delle comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità delle comunicazioni. Questa configurazione è il modo più semplice per iniziare rapidamente a utilizzare la conformità delle comunicazioni ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti distinti. |
-| **Communication Compliance Admin** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità delle comunicazioni e successivamente per separare gli amministratori di conformità delle comunicazioni in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare criteri di conformità delle comunicazioni, impostazioni globali e assegnazioni di gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
+| **Amministratore per la conformità delle comunicazioni** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità delle comunicazioni e successivamente per separare gli amministratori di conformità delle comunicazioni in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare criteri di conformità delle comunicazioni, impostazioni globali e assegnazioni di gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
 | **Communication Compliance Analyst** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che fungeranno da analisti della conformità delle comunicazioni. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i criteri in cui sono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare ad altri revisori o inviare notifiche agli utenti. Gli analisti non possono risolvere gli avvisi in sospeso. |
 | **Communication Compliance Investigator** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che agiranno come investigatori della conformità delle comunicazioni. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto dei messaggi, inoltrare a revisori aggiuntivi, inoltrare a un caso di Advanced eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
-| **Visualizzatore conformità comunicazioni** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che gestiranno i report di comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono accedere a tutti i widget di report nella home page di conformità delle comunicazioni e possono visualizzare tutti i report di conformità delle comunicazioni. |
+| **Visualizzatore della conformità delle comunicazioni** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che gestiranno i report di comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono accedere a tutti i widget di report nella home page di conformità delle comunicazioni e possono visualizzare tutti i report di conformità delle comunicazioni. |
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Opzione 1: assegnare tutti gli utenti di conformità al gruppo di ruoli Conformità comunicazione
 
@@ -86,7 +86,7 @@ Scegliere tra queste opzioni del gruppo di ruoli per la configurazione della con
 
 5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al *gruppo di* ruoli Conformità comunicazioni.
 
-6. Selezionare **Aggiungi** e quindi **Fare clic su Fine.**
+6. Selezionare **Aggiungi**, quindi **Fine**.
 
 7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli. Selezionare **Chiudi** per completare la procedura
 
@@ -104,7 +104,7 @@ Utilizzare questa opzione per assegnare utenti a gruppi di ruoli specifici per s
 
 5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruoli.
 
-6. Selezionare **Aggiungi** e quindi **Fare clic su Fine.**
+6. Selezionare **Aggiungi**, quindi **Fine**.
 
 7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli.
 
@@ -116,9 +116,9 @@ Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [A
 
 ## <a name="step-2-required-enable-the-audit-log"></a>Passaggio 2 (obbligatorio): abilitare il log di controllo
 
-La conformità delle comunicazioni richiede che i log di controllo mostrino avvisi e monitorino le azioni di correzione intraprese dai revisori. I log di controllo sono un riepilogo di tutte le attività associate a un criterio organizzativo definito o ogni volta che viene modificato un criterio di conformità della comunicazione.
+Conformità delle comunicazioni richiede log di audit per visualizzare gli avvisi e tenere traccia delle azioni di correzione intraprese dai revisori. I log di audit sono un riepilogo di tutte le attività associate a un criterio aziendale definito o delle modifiche apportate ai criteri di conformità delle comunicazioni.
 
-Per istruzioni dettagliate su come attivare o disattivare il controllo, vedere Attivare o [disattivare la ricerca nel log di controllo.](turn-audit-log-search-on-or-off.md) Dopo l'abilitazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. È necessario eseguire questa azione una sola volta. Per ulteriori informazioni sull'utilizzo del log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+Per istruzioni dettagliate su come attivare o disattivare il controllo, vedere Attivare o [disattivare la ricerca nel log di controllo.](turn-audit-log-search-on-or-off.md) Dopo l'abilitazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. Questa procedura deve essere eseguita una sola volta. Per ulteriori informazioni sull'utilizzo del log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Passaggio 3 (facoltativo): configurare i gruppi per la conformità delle comunicazioni
 
@@ -181,13 +181,13 @@ Per altre informazioni sulla configurazione di Yammer in modalità nativa, vedi:
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Passaggio 5 (obbligatorio): creare un criterio di conformità delle comunicazioni
   
 >[!Important]
->L'uso di PowerShell per creare e gestire i criteri di conformità delle comunicazioni non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella soluzione di conformità Microsoft 365 [comunicazione.](https://compliance.microsoft.com/supervisoryreview)
+>L'utilizzo di PowerShell per creare e gestire i criteri di conformità delle comunicazioni non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella soluzione di conformità Microsoft 365 [comunicazione.](https://compliance.microsoft.com/supervisoryreview)
 
 1. Accedere usando [https://compliance.microsoft.com](https://compliance.microsoft.com) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
 
 2. Nel Centro Microsoft 365 conformità selezionare **Conformità comunicazioni**.
   
-3. Selezionare la **scheda** Criteri.
+3. Selezionare la scheda **Criteri**.
 
 4. Selezionare **Crea criterio** per creare e configurare un nuovo criterio da un modello o per creare e configurare un criterio personalizzato.
 
@@ -202,35 +202,35 @@ Per altre informazioni sulla configurazione di Yammer in modalità nativa, vedi:
     - Scegli un campo condizione limitato, in genere un tipo di informazioni riservate o un dizionario parole chiave da applicare al criterio.
 
     >[!NOTE]
-    >Se si desidera abilitare il riconoscimento ottico dei caratteri [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) per analizzare le immagini incorporate o allegate nei messaggi per il testo stampato o scritto a mano che soddisfa le condizioni dei criteri, selezionare Personalizza condizioni e percentuale dei criteri e abilitare Estrai testo stampato o scritto a mano dalle immagini per la  >   valutazione. 
+    >Se si desidera abilitare il riconoscimento ottico dei caratteri [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) per analizzare le immagini incorporate o allegate nei messaggi per il testo stampato o scritto a mano che soddisfa le condizioni dei criteri, selezionare Personalizza condizioni e percentuale dei criteri e abilitare Estrai testo stampato o scritto a mano dalle immagini per la  >   valutazione. 
 
     Se si sceglie di utilizzare la procedura guidata dei criteri per creare un criterio personalizzato, sarà necessario:
 
-    - Assegnare un nome e una descrizione al criterio. I nomi dei criteri non possono essere modificati dopo la creazione del criterio.
+    - Assegnare un nome e una descrizione al criterio. Non è possibile modificare i nomi dei criteri dopo la loro creazione.
 
     - Scegliere gli utenti o i gruppi da supervisionare, inclusi tutti gli utenti dell'organizzazione, utenti e gruppi specifici o altri utenti e gruppi che si desidera escludere.
 
     - Scegliere i revisori per il criterio. I revisori sono singoli utenti e tutti i revisori devono disporre di cassette postali ospitate Exchange Online. I revisori aggiunti qui sono i revisori tra cui è possibile scegliere quando si esegue l'escalation di un avviso nel flusso di lavoro di analisi e correzione. Quando i revisori vengono aggiunti a un criterio, ricevono automaticamente un messaggio di posta elettronica che li informa dell'assegnazione al criterio e fornisce collegamenti a informazioni sul processo di revisione.
 
-    - Scegliere i canali di comunicazione da analizzare, inclusi Exchange, Microsoft Teams, Yammer o Skype for Business. È inoltre possibile scegliere di analizzare le origini di terze parti se è stato configurato un connettore in Microsoft 365.
+    - Scegliere i canali di comunicazione da analizzare, inclusi Exchange, Microsoft Teams, Yammer o Skype for Business. Si può anche scegliere di analizzare le origini di terze parti se è stato configurato un connettore in Microsoft 365.
 
     - Scegliere la direzione di comunicazione da monitorare, incluse le comunicazioni in ingresso, in uscita o interne.
 
-    - Definire le condizioni dei criteri di [conformità delle comunicazioni](communication-compliance-feature-reference.md#ConditionalSettings). Puoi scegliere tra l'indirizzo del messaggio, la parola chiave, i tipi di file e le condizioni di corrispondenza delle dimensioni.
+    - Definire le condizioni dei criteri di [conformità delle comunicazioni](communication-compliance-feature-reference.md#ConditionalSettings). È possibile scegliere tra l'indirizzo del messaggio, la parola chiave, i tipi di file e le condizioni di corrispondenza delle dimensioni.
 
     - Scegliere se si desidera includere tipi di informazioni riservate. Questo passaggio consente di selezionare i tipi di informazioni riservate predefiniti e personalizzati. Scegli tra tipi di informazioni riservate o dizionari parole chiave personalizzati esistenti nella procedura guidata dei criteri di conformità delle comunicazioni. È possibile creare questi elementi prima di eseguire la procedura guidata, se necessario. È inoltre possibile creare nuovi tipi di informazioni riservate dall'interno della procedura guidata dei criteri di conformità delle comunicazioni.
 
     - Scegli se vuoi abilitare i classificatori. I classificatori possono rilevare la lingua e le immagini inappropriati inviate o ricevute nel corpo dei messaggi di posta elettronica o di altri tipi di testo. È possibile scegliere i classificatori predefiniti seguenti: *Threat,* *Profanity,* *Targeted harassment,* *Adult images,* *Racy images* e *Gory images.*
 
-    - Abilita il riconoscimento ottico dei caratteri [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) per analizzare le immagini incorporate o allegate nei messaggi per trovare testo stampato o scritto a mano che corrisponda alle condizioni dei criteri. Per i criteri personalizzati, una o più impostazioni condizionali associate a testo, parole chiave, classificatori o tipi di informazioni riservate devono essere configurate nel criterio per abilitare la selezione dell'analisi del riconoscimento ottico dei caratteri.
+    - Abilita il riconoscimento ottico dei caratteri [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) per analizzare le immagini incorporate o allegate nei messaggi per trovare testo stampato o scritto a mano che corrisponda alle condizioni dei criteri. Per i criteri personalizzati, una o più impostazioni condizionali associate a testo, parole chiave, classificatori o tipi di informazioni riservate devono essere configurate nel criterio per abilitare la selezione dell'analisi del riconoscimento ottico dei caratteri.
 
-    - Definire la percentuale di comunicazioni da esaminare.
+    - Definire la percentuale di comunicazioni da rivedere.
 
     - Esaminare le selezioni dei criteri e creare il criterio.
 
 5. Selezionare **Crea criterio quando** si usano i modelli o **Invia** quando si usa la procedura guidata per i criteri personalizzati.
 
-6. La **pagina Il criterio è stato** creato viene visualizzata con linee guida su quando verrà attivato il criterio e quali comunicazioni verranno acquisite.
+6. Viene visualizzata la pagina **Il criterio è stato creato** con una guida sulla data di attivazione del criterio e sulle comunicazioni che verranno acquisite.
 
 ## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>Passaggio 6 (facoltativo): creare modelli di avviso e configurare l'anonimizzazione degli utenti
 

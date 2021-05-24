@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto quando si utilizza una revisione per l'eliminazione o gli elementi segnati come record vengono eliminati automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583473"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594074"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -30,7 +30,7 @@ ms.locfileid: "52583473"
 Utilizzare la pagina **Eliminazione** dalla **Gestione record** nel Centro conformità Microsoft 365 per gestire le revisioni per l'eliminazione e visualizzare i metadati dei [record](records-management.md#records) eliminati automaticamente al termine del periodo di conservazione.
 
 > [!NOTE]
-> Implementare in anteprima: **revisione per l'eliminazione a più fasi**
+> In anteprima: **revisione eliminazione a più fasi**
 > 
 > Un amministratore adesso può aggiungere fino a cinque fasi consecutive di revisione per l'eliminazione in un'etichetta di conservazione e i revisori possono aggiungere altri utenti alla fase di revisione per l'eliminazione. È anche possibile personalizzare le notifiche e i promemoria tramite posta elettronica. Le seguenti sezioni forniscono altre informazioni relative alle modifiche apportate in questa anteprima.
 >
