@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: 'Stiamo rilasciando nuovi criteri degli avvisi per Microsoft Defender per Office 365. Stiamo anche ritirando due criteri degli avvisi esistenti, che sono stati sostituiti da nuovi criteri. '
-ms.openlocfilehash: 7074002a78d6e776f24395bf6492177c1d789033
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 4a433a5357a524f396935151e2c5895213c6524c
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086772"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583317"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nuove funzionalità di Microsoft Defender per Office 365
 
@@ -37,10 +37,10 @@ La tabella seguente include i nuovi criter di avviso e criteri di avviso esisten
 
 | Criterio di avviso nuovo o esistente | Nome criterio di avviso | ID criterio di avviso|
 |:-----------------------------|:----------------|:--------------|
-| Nuovo| **Dei messaggi di posta elettronica contenenti URL dannosi sono stati rimossi dopo il recapito**   | 0179B3F7-3FDA-40C3-8F24-278563978DBB |
-| Nuovo| **Dei messaggi di posta elettronica contenenti file dannosi sono stati rimossi dopo il recapito**  | 8E6BA277-EF39-404E-AAF1-294F6D9A2B88 |
-| Nuovo| **Dei messaggi di posta elettronica della campagna sono stati recapitati e rimossi in seguito** | ef850570-5624-42b2-ff0a-08d8d899d578 |
-| Nuovo|**Dei messaggi dannosi sono stati recapitati e rimossi in seguito**                | a1f563cc-fb1f-466b-1fb5-08d8d71a3050 |
+| Nuovo| **Dei messaggi di posta elettronica contenenti URL dannosi sono stati rimossi dopo il recapito**   | 8e6ba277-ef39-404e-aaf1-294f6d9a2b88 |
+| Nuovo| **Dei messaggi di posta elettronica contenenti file dannosi sono stati rimossi dopo il recapito**  | 4b1820ec-39dc-45f3-abf6-5ee80df51fd2 |
+| Nuovo| **Dei messaggi di posta elettronica della campagna sono stati recapitati e rimossi in seguito** | c8522cbb-9368-4e25-4ee9-08d8d899dfab |
+| New|**Messaggi di posta elettronica rimossi dopo il recapito**                | b8f6b088-5487-4c70-037c-08d8d71a43fe |
 | Esistente (verrà rimosso)| **Dei messaggi di posta elettronica contenenti URL di phishing sono stati rimossi dopo il recapito**| EA8169FA-0678-4751-8854-AEBEA7ADECEB |
 | Esistente (verrà rimosso)| **Messaggi di posta elettronica contenenti malware rimossi dopo il recapito**| 0179B3F7-3FDA-40C3-8F24-278563978DBB |
 ||||
@@ -67,17 +67,17 @@ La tabella seguente identifica quando i nuovi criteri di avviso inizieranno ad a
 |:------------|:-----|
 | **Dei messaggi di posta elettronica contenenti URL dannosi sono stati rimossi dopo il recapito** (nuovo) | Gli avvisi inizieranno a essere attivati il giorno 11 aprile 2021|
 | **Dei messaggi di posta elettronica contenenti file dannosi sono stati rimossi dopo il recapito** (nuovo) | Gli avvisi inizieranno a essere attivati il giorno 11 aprile 2021 |
-| **Dei messaggi di posta elettronica della campagna sono stati recapitati e rimossi in seguito** (nuovo) | Gli avvisi inizieranno a essere attivati il giorno 14 maggio 2021|
-| **Dei messaggi dannosi sono stati recapitati e rimossi in seguito** (nuovo) | Gli avvisi inizieranno a essere attivati il giorno 14 maggio 2021|
-| **Dei messaggi di posta elettronica contenenti URL di phishing sono stati rimossi dopo il recapito** (nuovo)| Il criterio di avviso verrà rimosso il 14 maggio 2021. Visita la sezione [Cosa devi fare per prepararti per queste modifiche](#what-you-need-to-do-to-prepare-for-these-changes).|
-| **Dei messaggi di posta elettronica contenenti URL di phishing sono stati rimossi dopo il recapito** (esistente, sarà  rimosso) | Il criterio di avviso verrà rimosso il 14 maggio 2021. Visita la sezione [Cosa devi fare per prepararti per queste modifiche](#what-you-need-to-do-to-prepare-for-these-changes). |
+| **Dei messaggi di posta elettronica della campagna sono stati recapitati e rimossi in seguito** (nuovo) | Gli avvisi inizieranno a essere attivati il giorno 28 maggio 2021|
+| **Messaggi dannosi sono stati rimossi in seguito al recapito** (nuovo) | Gli avvisi inizieranno a essere attivati il giorno 28 maggio 2021|
+| **Messaggi di posta elettronica contenenti URL di phishing sono stati rimossi in seguito al recapito** (esistente, verrà rimosso)| Il criterio di avviso verrà rimosso il 28 maggio 2021. Visita la sezione [Cosa devi fare per prepararti per queste modifiche](#what-you-need-to-do-to-prepare-for-these-changes).|
+| **Dei messaggi di posta elettronica contenenti URL di phishing sono stati rimossi dopo il recapito** (esistente, sarà  rimosso) | Il criterio di avviso verrà rimosso il 28 maggio 2021. Visita la sezione [Cosa devi fare per prepararti per queste modifiche](#what-you-need-to-do-to-prepare-for-these-changes). |
 |||
 
 Le modifiche del livello di gravità degli avvisi verranno implementate in tutte le organizzazioni entro il 14 maggio 2021.
 
 ## <a name="how-this-will-affect-your-organization"></a>Conseguenze per l'organizzazione
 
-I nuovi avvisi inizieranno ad attivarsi, avviando le indagini AIR nell'organizzazione nelle date indicate sopra. Per ridurre l'impatto sulle organizzazioni di sicurezza che hanno reso operativi i due avvisi che devono essere rimossi, saranno mostrati avvisi attivati dai criteri di avviso esistenti *e* avvisi attivati dai nuovi criteri di avviso tra il 5 aprile 2021 e il 14 maggio 2021. Ciò è finalizzato a offrire ai team di sicurezza il tempo di gestire le modifiche richieste. Per aiutare i team di sicurezza con l'aumento del volume di avvisi durante questo breve periodo, sia l'avviso esistente che quelli nuovi saranno correlati alla stessa indagine AIR e allo stesso incidente. Più specificamente, ciò include i seguenti comportamenti relativi ad avvisi, indagini AIR e incidenti:
+I nuovi avvisi inizieranno ad attivarsi, avviando le indagini AIR nell'organizzazione nelle date indicate sopra. Per ridurre l'impatto sulle organizzazioni di sicurezza che hanno reso operativi i due avvisi che devono essere rimossi, saranno mostrati avvisi attivati dai criteri di avviso esistenti *e* avvisi attivati dai nuovi criteri di avviso tra il 5 aprile 2021 e il 28 maggio 2021. Ciò è finalizzato a offrire ai team di sicurezza il tempo di gestire le modifiche richieste. Per aiutare i team di sicurezza con l'aumento del volume di avvisi durante questo breve periodo, sia l'avviso esistente che quelli nuovi saranno correlati alla stessa indagine AIR e allo stesso incidente. Più specificamente, ciò include i seguenti comportamenti relativi ad avvisi, indagini AIR e incidenti:
 
 - **Avvisi**: per impostazione predefinita,  le seguenti coppie di avvisi saranno mostrate per gli avvisi esistenti e nuovi:
 
@@ -109,11 +109,11 @@ Il modo in cui l'organizzazione utilizza questi avvisi determina ciò che devi f
 
   - **Messaggi di posta elettronica contenenti malware rimossi dopo il recapito**
 
-- Non fare nulla. Disabiliteremo i criteri di avviso esistenti il 14 maggio 2021.
+- Non intervenire. I criteri di avviso esistenti verranno disabilitati il 28 maggio 2021.
 
-**Se hai reso operativi questi avvisi:**
+**Se sono stati resi operativi questi avvisi:**
 
-- Inizia a consumare i nuovi avvisi nell'ambito dei tuoi flussi di lavoro, anticipando la rimozione dei criteri di avviso esistenti prevista per il 14 maggio 2021. Se hai logiche personalizzate per il tuo sistema di gestione dei ticket, cassette postali di sicurezza in cui ricevi i messaggi di notifica, o soluzioni SIEM che dipendono dal nome dell'avviso o dall'ID del criterio di avviso (CorrelationId), dovrai modificare la logica per applicare la modifica.
+- Iniziare a utilizzare i nuovi avvisi nell'ambito dei flussi di lavoro, anticipando la rimozione dei criteri di avviso esistenti prevista per il 28 maggio 2021. Se hai logiche personalizzate per il tuo sistema di gestione dei ticket, cassette postali di sicurezza in cui ricevi i messaggi di notifica, o soluzioni SIEM che dipendono dal nome dell'avviso o dall'ID del criterio di avviso (CorrelationId), dovrai modificare la logica per applicare la modifica.
 
   > [!NOTE]
   > Le informazioni di avvisi, indagini e incideti non sono cambiate. Infatti, queste informazioni sono state aggiornate con ulteriori dettagli sulle minacce associate.
@@ -124,4 +124,4 @@ Il modo in cui l'organizzazione utilizza questi avvisi determina ciò che devi f
 
   - **Messaggi di posta elettronica contenenti malware rimossi dopo il recapito**
 
-  In alternativa, puoi lasciare abilitate questi criteri di avviso fino a quando le avremo cancellate il 14 maggio 2021.
+  In alternativa, è possibile lasciare abilitati questi criteri di avviso fino alla loro eliminazione del 28 maggio 2021.

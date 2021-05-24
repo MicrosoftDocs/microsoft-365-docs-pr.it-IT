@@ -16,7 +16,7 @@ productDirectory:
   title: Proteggere il lavoro remoto con Microsoft 365 Business Premium
   items:
     - title: Guarda
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
       summary: I cinque vantaggi principali di Microsoft 365 Business Premium.
       url: 'https://aka.ms/M365BPvideo'
     - title: Ottenere il kit partner gratuito

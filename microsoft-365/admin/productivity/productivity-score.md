@@ -18,13 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: Panoramica del punteggio della produttività Microsoft.
-ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+description: Informazioni su come il punteggio della produttività Microsoft riflette le misurazioni delle persone e delle esperienze tecnologiche e confronta le organizzazioni con dimensioni simili.
+ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345239"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593842"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio della produttività Microsoft 
 
@@ -44,35 +44,9 @@ Forniamo metriche, approfondimenti e consigli in due aree:
 
 - **Esperienze con la tecnologia:** l'organizzazione dipende da una tecnologia affidabile con prestazioni elevate, nonché dall'uso efficiente di Microsoft 365. [L'analisi degli endpoint](https://aka.ms/endpointanalytics) consente di comprendere in che modo l'organizzazione può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software. L'integrità di Microsoft  365 Apps consente di comprendere se i dispositivi nell'organizzazione eseguono Microsoft 365 Apps sui canali consigliati.
 
+## <a name="before-you-begin"></a>Prima di iniziare
+
 Per una panoramica e dettagli sui prerequisiti, vedere [Informazioni sull'analisi degli endpoint](/mem/analytics/overview). Per altre informazioni sugli approfondimenti della connettività di rete di Microsoft 365, vedere [Panoramica sulla connettività di rete](../../enterprise/microsoft-365-networking-overview.md).
-  
-
-## <a name="how-the-score-is-calculated"></a>Come viene calcolato il punteggio
-
-Il Punteggio di produttività è basato sui punteggi combinati delle categorie di persone ed esperienze con la tecnologia. Ogni categoria viene misurata proporzionalmente, con un totale di 100 punti. Il punteggio di produttività più alto possibile è 800.
-
-### <a name="score-categories"></a>Categorie di punteggio 
-
-- Comunicazione (100 punti)
-- Riunioni (100 punti)
-- Collaborazione sui contenuti (100 punti)
-- Lavoro in team (100 punti)
-- Mobilità (100 punti)
-- Analisi endpoint (100 punti)
-- Connettività di rete (100 punti)
-- Integrità di Microsoft 365 Apps (100 punti)
-- **Totale possibile= 800 punti**
- 
-In ogni categoria di punteggio, quantifichiamo gli indicatori chiave su come l'organizzazione sta utilizzando Microsoft 365 nel suo percorso verso la trasformazione digitale. Sono disponibili panoramiche sulle attività chiave di 28 giorni e 180 giorni. Sono inoltre disponibili metriche di supporto che non fanno parte del calcolo del punteggio, ma sono importanti per identificare le statistiche sull'utilizzo sottostante e le configurazioni da risolvere.
-
-### <a name="products-included-in-productivity-score"></a>Prodotti inclusi nel punteggio della produttività 
-
-Il punteggio della produttività include i dati di Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer e Skype.
-
-Il punteggio dell'organizzazione viene aggiornato ogni giorno e riflette le azioni dell'utente completate negli ultimi 28 giorni (compreso il giorno corrente).
-
-
-## <a name="prerequisites"></a>Prerequisiti 
 
 I dati sulle esperienze degli utente richiedono un abbonamento a Microsoft 365 for business o Office 365 per aziende. Per i dati di analisi degli endpoint per il tenant è necessario aggiungere Microsoft Intune all'abbonamento. Intune consente di proteggere i dati dell'organizzazione con la gestione di dispositivi e app. Dopo aver aggiunto Intune, è possibile attivare la funzione analisi endpoint nell'esperienza di Intune. Per ulteriori informazioni su Microsoft Intune, vedere la documentazione [Microsoft Intune](/mem/intune/). 
 
@@ -98,6 +72,30 @@ Il modello di controllo degli accessi in base al ruolo per Punteggio della produ
 Microsoft si impegna a proteggere la privacy di tutti gli utenti. Questo [documento sulla privacy](privacy.md) spiega i controlli che forniamo, in quanto amministratori IT della tua organizzazione, per garantire che le informazioni siano utilizzabili senza compromettere la fiducia riposta in Microsoft.
 
 È possibile accedere all'esperienza dalla home page di Amministrazione Microsoft 365 in **report** > **Punteggio della produttività**.
+  
+## <a name="how-the-score-is-calculated"></a>Come viene calcolato il punteggio
+
+Il Punteggio di produttività è basato sui punteggi combinati delle categorie di persone ed esperienze con la tecnologia. Ogni categoria viene misurata proporzionalmente, con un totale di 100 punti. Il punteggio di produttività più alto possibile è 800.
+
+### <a name="score-categories"></a>Categorie di punteggio 
+
+- Comunicazione (100 punti)
+- Riunioni (100 punti)
+- Collaborazione sui contenuti (100 punti)
+- Lavoro in team (100 punti)
+- Mobilità (100 punti)
+- Analisi endpoint (100 punti)
+- Connettività di rete (100 punti)
+- Integrità di Microsoft 365 Apps (100 punti)
+- **Totale possibile= 800 punti**
+ 
+In ogni categoria di punteggio, quantifichiamo gli indicatori chiave su come l'organizzazione sta utilizzando Microsoft 365 nel suo percorso verso la trasformazione digitale. Sono disponibili panoramiche sulle attività chiave di 28 giorni e 180 giorni. Sono inoltre disponibili metriche di supporto che non fanno parte del calcolo del punteggio, ma sono importanti per identificare le statistiche sull'utilizzo sottostante e le configurazioni da risolvere.
+
+### <a name="products-included-in-productivity-score"></a>Prodotti inclusi nel punteggio della produttività 
+
+Il punteggio della produttività include i dati di Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer e Skype.
+
+Il punteggio dell'organizzazione viene aggiornato ogni giorno e riflette le azioni dell'utente completate negli ultimi 28 giorni (compreso il giorno corrente).
 
 ## <a name="interpreting-your-organizations-productivity-score"></a>Interpretare il punteggio della produttività dell'organizzazione 
 
@@ -161,6 +159,6 @@ Questo report aiuta le organizzazioni a capire:
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Monitorare l'attività Microsoft 365 utilizzando i report](/microsoft-365/admin/activity-reports/activity-reports) (articolo)\
-[Abilitare l'analisi dell'utilizzo di Microsoft 365](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (articolo)\
-[Informazioni generali sull'interfaccia di amministrazione di Microsoft 365](/microsoft-365/business-video/admin-center-overview) (video)
+[Monitorare l'attività Microsoft 365 utilizzando i report](../../admin/activity-reports/activity-reports.md) (articolo)\
+[Abilitare l'analisi dell'utilizzo di Microsoft 365](../../admin/usage-analytics/enable-usage-analytics.md) (articolo)\
+[Informazioni generali sull'interfaccia di amministrazione di Microsoft 365](../../business-video/admin-center-overview.md) (video)

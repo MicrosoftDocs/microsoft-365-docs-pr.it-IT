@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Scopri come rinnovare Microsoft 365 attivando o disattivando la fatturazione ricorrente.
+description: Scopri come rinnovare la maggior parte degli abbonamenti a Microsoft 365 attivando o disattivando la fatturazione ricorrente.
 ms.date: 05/04/2021
-ms.openlocfilehash: 7421bb59a26d3c88114ebd9145dcbfe3916e7472
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 43dd467d83375f74c7650262c40021ba631e3c72
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344639"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594038"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Rinnovare Microsoft 365 per le aziende
 

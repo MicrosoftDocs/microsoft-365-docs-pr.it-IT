@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Come distribuire team con la protezione dei dati sensibili.
-ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572718"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583653"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurare team con la protezione dei dati sensibili
 
@@ -108,28 +108,18 @@ Ogni volta che si crea un nuovo team con l'etichetta per i dati sensibili, occor
 - Aggiorna le impostazioni di condivisione guest per il sito nell'interfaccia di amministrazione di SharePoint in modo da aggiornare il collegamento di condivisione predefinito *Utenti specifici*.
 - Aggiornare le impostazioni di condivisione del sito nel sito stesso per impedire ai membri di condividerlo.
 
-### <a name="site-guest-sharing-settings"></a>Impostazioni di condivisione guest del sito
+### <a name="site-default-sharing-link-settings"></a>Impostazioni collegamento di condivisione predefinito del sito
 
-L'impostazione di condivisione guest che si sceglie durante la creazione dell'etichetta (che influisce solo sull'appartenenza al team) deve corrispondere alle impostazioni di condivisione guest per il sito di SharePoint associato, come indicato di seguito:
+Per aggiornare il tipo di collegamento di condivisione predefinito del sito
 
-|Impostazione etichetta|Impostazione del sito di SharePoint|
-|:------------|:----------------------|
-|**Consentire ai proprietari del gruppo Office 365 di aggiungere al gruppo persone esterne all'organizzazione** selezionata|**Guest nuovi ed esistenti** (impostazione predefinita per i nuovi team)|
-|**Consentire ai proprietari del gruppo Office 365 di aggiungere al gruppo persone esterne all'organizzazione** non selezionata|**Solo persone nell'organizzazione**|
-
-Per aggiornare le impostazioni dei siti
 1. Aprire l'[interfaccia di amministrazione di SharePoint](https://admin.microsoft.com/sharepoint).
 2. In **Siti** fare clic su **Siti attivi**.
 3. Fare clic sul sito associato al team.
 4. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
-5. Se la condivisione guest è stata consentita al momento della creazione dell'etichetta di riservatezza, assicurarsi che sia selezionata l'opzione **Guest nuovi ed esistenti**. In caso contrario, scegliere **Solo persone nell'organizzazione**.
-6. In Tipo di collegamento di condivisione predefinito deselezionare la casella di controllo **Uguale all'impostazione a livello di organizzazione** e selezionare **Persone specifiche (solo le persone specificate dall'utente)**.
-7. Fare clic su **Salva**.
+5. In Tipo di collegamento di condivisione predefinito deselezionare la casella di controllo **Uguale all'impostazione a livello di organizzazione** e selezionare **Persone specifiche (solo le persone specificate dall'utente)**.
+6. Fare clic su **Salva**.
 
-Se si vuole creare uno script per questa operazione come parte del processo di creazione del team, è possibile usare [set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con i parametri seguenti:
-
-- `-SharingCapability Disabled` per disattivare la condivisione guest (per impostazione predefinita è attivata)
-- `-DefaultSharingLinkType Internal` per impostare il collegamento di condivisione predefinito su *Persone specifiche*
+Se si vuole creare uno script per questa operazione come parte del processo di creazione del team, è possibile usare [set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con i parametri `-DefaultSharingLinkType Direct` per modificare il collegamento di condivisione predefinito in *Utenti specifici*
 
 #### <a name="private-channels"></a>Canali privati
 

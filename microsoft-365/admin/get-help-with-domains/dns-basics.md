@@ -23,13 +23,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: Informazioni sui domini e sui record DNS associati per gestire più facilmente i propri domini.
-ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Il Domain Name System mappa i nomi host del computer agli indirizzi IP e la comprensione dei concetti fondamentali relativi al DNS e ai registrar faciliterà la gestione dei domini.
+ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915663"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582945"
 ---
 # <a name="dns-basics"></a>Informazioni di base sul DNS
 
@@ -142,7 +142,7 @@ Il file di zona del dominio può infatti essere archiviato in una posizione dive
 
 ::: moniker range="o365-21vianet"
 
-Il file di zona del dominio può infatti essere archiviato in una posizione diversa dal registrar. Ad esempio, si può registrare il proprio dominio presso un registrar come HiChina e affidare la gestione dei record DNS a un altro provider di hosting DNS o di hosting Web. I record NS del dominio archiviano tali informazioni in modo che tutti i server DNS sappiano dove cercare.
+Il file di zona del dominio può infatti essere archiviato in una posizione diversa dal registrar. Ad esempio, si può registrare il proprio dominio presso un registrar come HiChina e affidare la gestione dei record DNS a un altro provider di hosting DNS o di hosting Web. Queste informazioni sono archiviate nei record NS del dominio in modo da indirizzare tutti i server DNS ai percorsi corretti.
 
 ::: moniker-end
 
@@ -196,5 +196,13 @@ In alternativa, se si prevede una distribuzione, è consigliabile rivedere un el
 
 Vedere una delle opzioni seguenti: 
   
-- Non si conosce dov'è registrato il dominio? [Ottenere assistenza per conoscere il registrar.](find-your-domain-registrar.md)
+- Per verificare dove è registrato il dominio, vedere [Trovare il registrar di dominio o il provider di hosting DNS](find-your-domain-registrar.md).
 - Scoprire [perché occorre completare i passaggi della procedura guidata](../setup/add-domain.md) prima di usare il dominio con Microsoft 365.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Domande frequenti sui domini](../setup/domains-faq.yml) (articolo)
+
+[Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)
+
+[Gestire i domini](index.yml) (pagina di collegamento)

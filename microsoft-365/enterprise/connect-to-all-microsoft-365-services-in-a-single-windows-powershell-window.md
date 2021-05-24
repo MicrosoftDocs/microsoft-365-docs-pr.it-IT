@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell."
-ms.openlocfilehash: 18ff8e1789242b4dde3b4b31aaccf2462e4c5d74
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 923e4bc39ae4391d4deaa2c232e19b9479c2efbe
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905129"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583125"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell
 
@@ -109,18 +109,7 @@ Seguire questa procedura per connettersi a tutti i servizi in una singola finest
    Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $Credential
    ```
 
-5. Eseguire questi comandi per connettersi a Skype for Business Online. La prima volta che ci si connette, verrà visualizzato un messaggio di avviso relativo all'aumento del valore `WSMan NetworkDelayms`. Ignorarlo.
-     
-   > [!Note]
-   > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
-   
-   ```powershell
-   Import-Module MicrosoftTeams
-   $credential = Get-Credential
-   Connect-MicrosoftTeams -Credential $credential
-   ```
-
-6. Eseguire i comandi seguenti per la connessione a Exchange Online.
+5. Eseguire i comandi seguenti per la connessione a Exchange Online.
     
    ```powershell
    Import-Module ExchangeOnlineManagement
@@ -130,7 +119,7 @@ Seguire questa procedura per connettersi a tutti i servizi in una singola finest
    > [!Note]
    > Per connettersi a Exchange Online per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-7. Eseguire i comandi seguenti per connettersi al Centro sicurezza &amp; conformità.
+6. Eseguire i comandi seguenti per connettersi al Centro sicurezza &amp; conformità.
     
    ```powershell
    $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -140,7 +129,7 @@ Seguire questa procedura per connettersi a tutti i servizi in una singola finest
    > [!Note]
    > Per connettersi al Centro sicurezza &amp; conformità per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi al Centro sicurezza e conformità di PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-8. Eseguire i comandi seguenti per connettersi a PowerShell di Teams.
+7. Eseguire questi comandi per connettersi a Teams PowerShell (e Skype for Business Online).
     
    ```powershell
    Import-Module MicrosoftTeams
@@ -149,9 +138,11 @@ Seguire questa procedura per connettersi a tutti i servizi in una singola finest
    ```
   
    > [!Note]
+   > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
+  
+   > [!Note]
    > Per connettersi a cloud di Microsoft Teams diversi da quello ** internazionale, vedere [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams).
   
-
 
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Modulo di Azure Active Directory PowerShell per Graph
@@ -167,15 +158,12 @@ Connect-AzureAD -Credential $credential
 #SharePoint Online
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-#Skype for Business Online
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
 #Security & Compliance Center
 Connect-IPPSSession -UserPrincipalName $acctName
-#Teams
+#Teams and Skype for Business Online
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
@@ -193,15 +181,12 @@ Connect-MsolService -Credential $credential
 #SharePoint Online
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-#Skype for Business Online
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
 #Security & Compliance Center
 Connect-IPPSSession -UserPrincipalName $acctName
-#Teams
+#Teams and Skype for Business Online
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
@@ -219,15 +204,12 @@ $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 Connect-AzureAD
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
-#Skype for Business Online
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 #Security & Compliance Center
 Connect-IPPSSession -UserPrincipalName $acctName
-#Teams
+#Teams and Skype for Business Online
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
@@ -242,15 +224,12 @@ $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
-#Skype for Business Online
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 #Security & Compliance Center
 Connect-IPPSSession -UserPrincipalName $acctName
-#Teams
+#Teams and Skype for Business Online
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```

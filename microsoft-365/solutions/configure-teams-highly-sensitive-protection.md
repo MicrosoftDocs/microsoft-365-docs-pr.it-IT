@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Come distribuire team con la protezione dei dati altamente sensibili.
-ms.openlocfilehash: d83c10df50d02f47a6d70ee80b2ddbf89fff37d0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7c5485a008434b351eebbec3ea1f20b10d82278a
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538196"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583689"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurare team con la protezione dei dati altamente sensibili
 
@@ -115,31 +115,19 @@ Per limitare la creazione di canali privati
 
 Ogni volta che si crea un nuovo team con l'etichetta per i dati altamente sensibili, occorre eseguire due passaggi in SharePoint:
 
-- Aggiornare le impostazioni di condivisione guest per il sito nell'interfaccia di amministrazione di SharePoint in base a ciò che è stato scelto al momento della creazione dell'etichetta e aggiornare il collegamento di condivisione predefinito in *Persone con accesso esistente*.
+- Aggiorna le impostazioni di condivisione guest per il sito nell'interfaccia di amministrazione di SharePoint per aggiornare il collegamento di condivisione predefinito *Utenti con accesso*.
 - Aggiornare le impostazioni di condivisione del sito nel sito stesso per impedire ai membri di condividere file, cartelle o siti e disattivare le richieste di accesso.
 
-### <a name="site-guest-sharing-settings"></a>Impostazioni di condivisione guest del sito
+### <a name="site-default-sharing-link-settings"></a>Impostazioni collegamento di condivisione predefinito del sito
 
-L'impostazione di condivisione guest che si sceglie durante la creazione dell'etichetta (che influisce solo sull'appartenenza al team) deve corrispondere alle impostazioni di condivisione guest per il sito di SharePoint associato, come indicato di seguito:
+Per aggiornare il tipo di collegamento di condivisione predefinito del sito
 
-|Impostazione etichetta|Impostazione del sito di SharePoint|
-|:------------|:----------------------|
-|**Consentire ai proprietari del gruppo Office 365 di aggiungere al gruppo persone esterne all'organizzazione** selezionata|**Guest nuovi ed esistenti** (impostazione predefinita per i nuovi team)|
-|**Consentire ai proprietari del gruppo Office 365 di aggiungere al gruppo persone esterne all'organizzazione** non selezionata|**Solo persone nell'organizzazione**|
-
-Per aggiornare le impostazioni dei siti
 1. Aprire l'[interfaccia di amministrazione di SharePoint](https://admin.microsoft.com/sharepoint).
 2. In **Siti** fare clic su **Siti attivi**.
 3. Fare clic sul sito associato al team.
 4. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
-5. Se la condivisione guest è stata consentita al momento della creazione dell'etichetta per i dati altamente sensibili, assicurarsi che sia selezionata l'opzione **Guest nuovi ed esistenti**. In caso contrario, scegliere **Solo persone nell'organizzazione**.
-6. In Tipo di collegamento di condivisione predefinito deselezionare la casella di controllo **Uguale all'impostazione a livello di organizzazione** e selezionare **Persone con accesso esistente**.
-7. Fare clic su **Salva**.
-
-Se si vuole creare uno script per questa operazione come parte del processo di creazione del team, è possibile usare [set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con i parametri seguenti:
-
-- `-SharingCapability Disabled` per disattivare la condivisione guest (per impostazione predefinita è attivata)
-- `-DefaultSharingLinkType Internal` per impostare il collegamento di condivisione predefinito su *Persone specifiche*
+5. In Tipo di collegamento di condivisione predefinito deselezionare la casella di controllo **Uguale all'impostazione a livello di organizzazione** e selezionare **Persone con accesso esistente**.
+6. Fare clic su **Salva**.
 
 #### <a name="private-channels"></a>Canali privati
 

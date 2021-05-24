@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: Informazioni sull'autenticazione a più fattori in Microsoft 365.
-ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: L'autenticazione a più fattori (MFA) utilizza sia una password, che dovrebbe essere complessa, sia un metodo di verifica aggiuntivo.
+ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050667"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623690"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
 
@@ -43,24 +43,24 @@ Il metodo di verifica aggiuntivo viene utilizzato solo dopo la verifica della pa
 
 ## <a name="mfa-support-in-microsoft-365"></a>Supporto MFA in Microsoft 365
 
-Per impostazione predefinita, Microsoft 365 e Office 365 supportano la MFA per gli account utente usando:
+Per impostazione predefinita, sia Microsoft 365 che Office 365 supportano l'autenticazione a più fattori per gli account utente che usano:
 
 - Sms inviato a un telefono che richiede all'utente di digitare un codice di verifica.
 - Una telefonata.
-- App Microsoft Authenticator per smart phone.
+- L Microsoft Authenticator app per smart phone.
 
-In entrambi i casi, l'accesso MFA utilizza il metodo "qualcosa che non è facilmente duplicato" per la verifica aggiuntiva. Esistono diversi modi in cui è possibile abilitare l'autenticazione a più fattori per Microsoft 365 e Office 365:
+In entrambi i casi, l'accesso MFA utilizza il metodo "qualcosa che non è facilmente duplicato" per la verifica aggiuntiva. Esistono diversi modi in cui è possibile abilitare la MFA per Microsoft 365 e Office 365:
 
 - Con le impostazioni predefinite di sicurezza
 - Con criteri di accesso condizionale
 - Per ogni singolo account utente (scelta non consigliata)
 
-Questi modi si basano sul piano di Microsoft 365.
+Questi modi si basano sul piano Microsoft 365 pianificazione.
 
 |Piano|Consiglio|Tipo di cliente|
 |---|---|---|
-|Tutti i piani di Microsoft 365|Usa le impostazioni predefinite di sicurezza, che richiedono l'autenticazione a più fattori per tutti gli account utente. <p> È anche possibile configurare l'autenticazione a più fattori per utente per singoli account utente, ma questa operazione non è consigliata.|Azienda di piccole dimensioni|
-|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Licenze di Azure Active Directory (Azure AD) Premium P1|Usa i criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli account utente in base all'appartenenza a gruppi, alle app o ad altri criteri.|Da piccole aziende a imprese|
+|Tutti Microsoft 365 piani|Usa le impostazioni predefinite di sicurezza, che richiedono l'autenticazione a più fattori per tutti gli account utente. <p> È anche possibile configurare l'autenticazione a più fattori per utente per singoli account utente, ma questa operazione non è consigliata.|Azienda di piccole dimensioni|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1|Usa i criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli account utente in base all'appartenenza a gruppi, alle app o ad altri criteri.|Da piccole aziende a imprese|
 |Microsoft 365 E5 <p> Licenze di Azure AD Premium P2|Usare Azure AD Identity Protection per richiedere l'autenticazione a più fattori in base ai criteri di rischio di accesso.|Grandi aziende|
 ||||
 
@@ -68,7 +68,7 @@ Questi modi si basano sul piano di Microsoft 365.
 
 Le impostazioni predefinite di sicurezza sono una nuova funzionalità per gli abbonamenti a pagamento o di valutazione di Microsoft 365 e Office 365 creati dopo il 21 ottobre 2019. Per queste sottoscrizioni sono attivate le impostazioni predefinite di sicurezza, che:
 
-- Richiede a tutti gli utenti di usare l'autenticazione a più fattori con l'app Microsoft Authenticator.
+- Richiede a tutti gli utenti di usare l'autenticazione a più fattori con l Microsoft Authenticator app.
 - Blocca l'autenticazione legacy.
 
 Gli utenti hanno 14 giorni per registrarsi per la MFA con l'app Microsoft Authenticator dai propri smartphone, periodo che inizia dalla prima volta che accedono dopo aver abilitato le impostazioni predefinite di sicurezza. Trascorsi 14 giorni, l'utente non sarà in grado di accedere fino al completamento della registrazione della MFA.
@@ -79,7 +79,7 @@ Le impostazioni predefinite di sicurezza vengono abilitate o disabilitate dal **
 
 ![Immagine della pagina Proprietà directory.](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
-È possibile utilizzare le impostazioni predefinite di sicurezza con qualsiasi piano di Microsoft 365.
+È possibile utilizzare le impostazioni predefinite di sicurezza con qualsiasi Microsoft 365 piano.
 
 Per altre informazioni, vedere questa [panoramica delle impostazioni predefinite di sicurezza](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
@@ -127,7 +127,7 @@ Per altre informazioni, vedere questa [panoramica dell'accesso condizionale](/az
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Con Azure AD Identity Protection, è possibile creare criteri di accesso condizionale aggiuntivi per richiedere [l'autenticazione](../../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)a più fattori quando il rischio di accesso è medio o elevato.
+Con Azure AD Identity Protection, è possibile creare criteri di accesso condizionale aggiuntivi per richiedere [l'autenticazione](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)a più fattori quando il rischio di accesso è medio o elevato.
 
 È possibile usare Azure AD Identity Protection e i criteri di accesso condizionale basati sui rischi con:
 
@@ -140,7 +140,7 @@ Per ulteriori informazioni, vedere questa [panoramica di Azure AD Identity Prote
 
 È consigliabile utilizzare le impostazioni predefinite di sicurezza o i criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli accessi dell'account utente. Tuttavia, se uno di questi non può essere utilizzato, Microsoft consiglia vivamente L'autenticazione a più fattori per gli account utente con ruoli di amministratore, in particolare il ruolo di amministratore globale, per qualsiasi sottoscrizione di dimensione.
 
-L'autenticazione a più fattori per i singoli account utente viene abilitata dal riquadro **Utente** attivo dell'interfaccia di amministrazione di Microsoft 365.
+L'autenticazione a più fattori  per i singoli account utente viene abilitata dal riquadro Utenti attivi dell'Microsoft 365 di amministrazione.
 
 ![Immagine dell'opzione Autenticazione a più fattori nella pagina Utenti attivi](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
@@ -168,14 +168,13 @@ Nel portale di Azure è possibile:
 - Abilitare e disabilitare le impostazioni predefinite di sicurezza
 - Configurare i criteri di accesso condizionale
 
-Nell'interfaccia di amministrazione di Microsoft 365 è possibile configurare le impostazioni MFA per utente e servizio.
+Nell'Microsoft 365 di amministrazione è possibile configurare le impostazioni MFA per utente e servizio.
 
 ## <a name="your-next-step"></a>Passaggio successivo
 
-[Configurare MFA per Microsoft 365](set-up-multi-factor-authentication.md)
+[Configurare l'autenticazione a più fattori per Microsoft 365](set-up-multi-factor-authentication.md)
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Video: Attivare l'autenticazione a più fattori](../../business-video/turn-on-mfa.md)
-
-[Video: Attivare l'autenticazione a più fattori per il telefono](../../business-video/set-up-mfa.md)
+[Attivare l'autenticazione a più fattori](../../business-video/turn-on-mfa.md) (video)\
+[Attivare l'autenticazione a più fattori per il telefono](../../business-video/set-up-mfa.md) (video)

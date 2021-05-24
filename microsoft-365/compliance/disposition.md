@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto quando si utilizza una revisione per l'eliminazione o gli elementi segnati come record vengono eliminati automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532179"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583473"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -33,6 +33,8 @@ Utilizzare la pagina **Eliminazione** dalla **Gestione record** nel Centro confo
 > Implementare in anteprima: **revisione per l'eliminazione a più fasi**
 > 
 > Un amministratore adesso può aggiungere fino a cinque fasi consecutive di revisione per l'eliminazione in un'etichetta di conservazione e i revisori possono aggiungere altri utenti alla fase di revisione per l'eliminazione. È anche possibile personalizzare le notifiche e i promemoria tramite posta elettronica. Le seguenti sezioni forniscono altre informazioni relative alle modifiche apportate in questa anteprima.
+>
+> Per leggere l'annuncio sulla versione, vedere il post del blog [Annuncio sull'eliminazione multi-stage nella Gestione record di Microsoft](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-multi-stage-disposition-in-microsoft-records/ba-p/2361849).
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Prerequisiti per la visualizzazione delle eliminazioni di contenuto
 
