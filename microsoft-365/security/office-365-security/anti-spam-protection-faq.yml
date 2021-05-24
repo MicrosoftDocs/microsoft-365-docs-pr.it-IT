@@ -20,12 +20,12 @@ metadata:
   description: Gli amministratori possono visualizzare le domande frequenti e le risposte sulla protezione da posta indesiderata in Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: e632ab1183c43cd50da7c2cf7832a5a18fa64d50
-  ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "52583617"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624910"
 title: Domande frequenti sulla protezione da posta indesiderata
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > Nelle distribuzioni ibride in cui EOP protegge le cassette postali locali, è necessario configurare due regole del flusso di posta Exchange (note anche come regole di trasporto) nell'organizzazione Exchange locale per rilevare le intestazioni del filtro posta indesiderata di EOP aggiunte ai messaggi. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+      > Nelle distribuzioni ibride in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare due regole del flusso di posta Exchange (note anche come regole di trasporto) nell'organizzazione Exchange locale per rilevare le intestazioni del filtro posta indesiderata di EOP aggiunte ai messaggi. Per informazioni dettagliate, [vedere Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
        **Per i messaggi in uscita:** Il messaggio viene instradato attraverso il [pool](high-risk-delivery-pool-for-outbound-messages.md) di recapito ad alto rischio o viene restituito al mittente in un rapporto di mancato recapito (noto anche come rapporto di mancato recapito o messaggio di mancato recapito). Per ulteriori informazioni sulla protezione da posta indesiderata in uscita, vedere [Outbound spam controls](outbound-spam-controls.md).
   - question: >
