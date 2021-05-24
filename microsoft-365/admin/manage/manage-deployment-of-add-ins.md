@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire componenti aggiuntivi a utenti e gruppi dell'organizzazione tramite distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: 2d3b90a75f38a2c1146c0b0e5470c80b0af2c63f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572274"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636023"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -131,12 +131,7 @@ Gli aggiornamenti per i componenti aggiuntivi vengono eseguiti come segue:
   
 ## <a name="related-content"></a>Contenuto correlato
 
-[Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](manage-addins-in-the-admin-center.md) (articolo)
-
-[Creare il primo componente aggiuntivo riquadro attività di Word](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (articolo)
-
-[Minorenni e acquisizione di componenti aggiuntivi dallo Store](minors-and-acquiring-addins-from-the-store.md) (articolo)
-  
-[Utilizzare i cmdlet di PowerShell per la distribuzione centralizzata per gestire i componenti aggiuntivi](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (articolo)
-  
+[Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](manage-addins-in-the-admin-center.md) (articolo)\
+[Creare il primo componente aggiuntivo del riquadro attività di Word](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (articolo\
+[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)\ [Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)\  
 [Risoluzione dei problemi: l'utente non vede i componenti aggiuntivi](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (articolo)

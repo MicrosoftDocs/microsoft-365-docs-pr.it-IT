@@ -20,22 +20,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Altre informazioni sull'interfaccia Microsoft 365'interfaccia di amministrazione.
-ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Usa la visualizzazione semplificata in Microsoft 365 per gestire le attività comuni o la visualizzazione dashboard per le impostazioni e le attività più complesse.
+ms.openlocfilehash: bca3aa7bb071d9334f7a5162a78db89690421f1a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537392"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635891"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Informazioni generali sull'interfaccia di amministrazione di Microsoft 365
 
-- [Interfaccia di amministrazione in visualizzazione semplificata](#the-admin-center-in-simplified-view)
-- [Interfaccia di amministrazione nella visualizzazione dashboard](#the-admin-center-in-dashboard-view)
+- [Interfaccia di amministrazione in visualizzazione semplificata](#watch-the-admin-center-in-simplified-view)
+- [Interfaccia di amministrazione nella visualizzazione dashboard](#watch-the-admin-center-in-dashboard-view)
 
 L Microsoft 365'interfaccia di amministrazione ha due visualizzazioni: la visualizzazione semplificata consente alle organizzazioni più piccole di gestire le attività più comuni. La visualizzazione Dashboard include attività e impostazioni più complesse. Puoi passare da un pulsante all'altro nella parte superiore dell'interfaccia di amministrazione.
 
-## <a name="the-admin-center-in-simplified-view"></a>Interfaccia di amministrazione in visualizzazione semplificata
+## <a name="watch-the-admin-center-in-simplified-view"></a>Guarda: Interfaccia di amministrazione in visualizzazione semplificata
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -57,7 +57,7 @@ Nella scheda **Informazioni,** sfogliare video e articoli sull'interfaccia di am
 
 Per assistenza, selezionare **Guida & supporto**. Cercare l'argomento desiderato e visualizzare la soluzione consigliata oppure selezionare l'auricolare per contattare il supporto, quindi immettere la domanda e le informazioni di contatto. 
 
-## <a name="the-admin-center-in-dashboard-view"></a>Interfaccia di amministrazione nella visualizzazione dashboard
+## <a name="watch-the-admin-center-in-dashboard-view"></a>Watch: The admin center in dashboard view
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -188,4 +188,10 @@ L'Microsoft 365 di amministrazione è completamente localizzata in 40 lingue.
 |Vietnamita | vi |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Che cos'è un Microsoft 365 amministratore?](what-is-admin.md) (video)\
+[Aggiungere un amministratore](add-admin.md) (video)\
+[Personalizzare il Microsoft 365 tema per l'organizzazione](../admin/setup/customize-your-organization-theme.md) (articolo)
   

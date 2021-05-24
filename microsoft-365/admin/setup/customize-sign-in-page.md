@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personalizzare la Microsoft 365 di accesso tramite il Azure Active Directory. Puoi aggiungere un'illustrazione, un logo e testo alla pagina di accesso.
-ms.openlocfilehash: dba75d5178f3c4a879ae2cdc9694697df45f6b8b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6c873409a06d824c7b63f5ea02e178e22337a345
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624442"
+ms.locfileid: "52635939"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Aggiungere il marchio aziendale alla pagina Di accesso
 
@@ -49,6 +49,8 @@ La figura seguente illustra le parti della pagina di accesso che possono essere 
     
 Oltre alla pagina di accesso, è possibile personalizzare la pagina del riquadro di accesso in Azure.
   
+## <a name="next-steps"></a>Passaggi successivi
+
 Se si è pronti per aggiungere il marchio, esplorare le opzioni di personalizzazione del set di contenuti di Azure: [Aggiungere il marchio dell'azienda alla pagina di accesso e alle pagine del riquadro di accesso](/azure/active-directory/fundamentals/customize-branding).
 
 ## <a name="related-content"></a>Contenuto correlato

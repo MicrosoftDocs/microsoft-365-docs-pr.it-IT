@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come impostare un criterio per consentire agli utenti di reimpostare le proprie password utilizzando lo strumento di reimpostazione delle password in modalità self-service.
-ms.openlocfilehash: 2c79d5611ab2db00f4de5f227b0ec2f411955558
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571854"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634269"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
@@ -74,8 +74,6 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)
-
-[Impostare la password di un singolo utente in modo che non scada mai](set-password-to-never-expire.md) (articolo)
-
+[Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)\
+[Impostare la password di un singolo utente](set-password-to-never-expire.md) in modo che non scada mai (articolo)\
 [Microsoft 365 Business video di formazione (pagina](../../business-video/index.yml) di collegamento)

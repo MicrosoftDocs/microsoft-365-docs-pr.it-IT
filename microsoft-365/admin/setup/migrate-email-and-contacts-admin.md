@@ -28,12 +28,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Informazioni su come importare contatti, calendari e messaggi di posta elettronica da Gmail o da un altro provider di posta elettronica ed eseguirne la migrazione a Microsoft 365.
-ms.openlocfilehash: 56075c19e15621755a1500d37513430842ac99e8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 9f775135e739c91a0fb48a060136728f901159f5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297045"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635915"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Eseguire la migrazione di posta elettronica e contatti a Microsoft 365
 
@@ -52,6 +52,8 @@ Seguire questa procedura per importare o eseguire la migrazione di posta elettro
 - [Importare contatti in Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 - [Importare da Google Calendar](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
+
+## <a name="watch-import-calendars"></a>Watch: Import calendars
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
@@ -90,3 +92,9 @@ Serve una procedura più dettagliata? Vedere [Aggiungere un account](https://sup
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Più cassette postali: gli amministratori possono importare in blocco posta elettronica, contatti e calendari Microsoft 365
 
 A seconda del sistema di posta elettronica di origine, è possibile scegliere tra diversi metodi di migrazione in blocco. Leggere [Modi per eseguire la migrazione di](/Exchange/mailbox-migration/mailbox-migration) più account di posta Microsoft 365 per decidere quale metodo è più appropriato.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Pianificare la configurazione di Microsoft 365 per le aziende](plan-your-setup.md) (articolo)\
+[Installare Office applicazioni (pagina](install-applications.md) di collegamento)\
+[Informazioni generali sull'interfaccia di amministrazione di Microsoft 365](../../business-video/admin-center-overview.md) (video)

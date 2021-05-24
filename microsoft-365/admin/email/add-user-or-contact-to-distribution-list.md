@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Informazioni su come aggiungere un utente Microsoft 365 o un contatto, ad esempio un dipendente, un partner o un fornitore, a un gruppo di distribuzione di posta elettronica.
-ms.openlocfilehash: 69dea710554b344de4bc221b17d5d8f929b964a5
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: c512e1da805fca5e46d7978620f34b825d0289a0
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593490"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635547"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Aggiungere un utente o un contatto a un gruppo di distribuzione
 
@@ -55,7 +55,6 @@ Informazioni su [come inviare posta elettronica come gruppo di distribuzione in 
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Gestire messaggi secondari per l'organizzazione](configure-clutter.md) (articolo)
-
+[Gestire messaggi secondari per l'organizzazione](configure-clutter.md) (articolo)\
 [Creare una cassetta postale condivisa](create-a-shared-mailbox.md) (articolo)
 

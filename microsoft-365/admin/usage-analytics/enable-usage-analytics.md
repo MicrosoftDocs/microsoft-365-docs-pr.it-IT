@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Scopri come iniziare a raccogliere dati per il tenant usando l'app Microsoft 365 modello Analisi di utilizzo in Power BI.
-ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 01923887b4af143d1490e14d59a6174700e6ae93
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593370"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635415"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
 
 Microsoft 365'analisi dei dati di utilizzo non è ancora disponibile per Microsoft 365 per il governo Community.
   
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Passaggi per abilitare l'analisi dell'utilizzo di Microsoft 365
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Per iniziare a usare Microsoft 365 di utilizzo, devi prima rendere disponibili i dati nell'interfaccia di amministrazione di Microsoft 365, quindi avviare l'app modello in Power BI.
   
-### <a name="get-power-bi"></a>Ottenere Power BI
+## <a name="get-power-bi"></a>Ottenere Power BI
 
 Se non si dispone già di Power BI, è possibile iscriversi [a Power BI Pro](https://go.microsoft.com/fwlink/p/?linkid=845347). Seleziona **Prova gratuitamente** per iscriverti a una versione di valutazione o Acquista ora per ottenere Power BI Pro. 
   
@@ -47,7 +47,7 @@ Se non si dispone già di Power BI, è possibile iscriversi [a Power BI Pro](htt
 
 Per condividere i dati, sia l'utente che le persone con cui si condividono i dati, è necessaria una licenza di Power BI Pro o il contenuto deve essere in un'area di lavoro in un servizio [premium di Power BI](/power-bi/service-premium-what-is). 
   
-### <a name="enable-the-template-app"></a>Abilitare l'app modello
+## <a name="enable-the-template-app"></a>Abilitare l'app modello
 
 Per abilitare l'app modello, devi essere un **amministratore globale.**
   
@@ -61,7 +61,7 @@ Per [ulteriori informazioni, vedere](../add-users/about-admin-roles.md) Sui ruol
   
 Il processo di raccolta dei dati verrà completato in due-48 ore a seconda delle dimensioni del tenant. Il **pulsante Vai a Power BI** verrà abilitato (non più grigio) al termine della raccolta dei dati. 
     
-### <a name="start-the-template-app"></a>Avviare l'app modello
+## <a name="start-the-template-app"></a>Avviare l'app modello
 
 Per avviare l'app modello, devi essere un amministratore **globale,** un lettore di **report,** Exchange **amministratore,** Skype for Business **amministratore** o SharePoint **amministratore.** 
   
@@ -99,8 +99,6 @@ Per rendere anonimi i dati raccolti per tutti i report è necessario essere un a
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Informazioni sull'analisi dei dati](usage-analytics.md) di utilizzo (articolo)
-
-[Ottenere la versione più recente dell'analisi dei dati di utilizzo](get-the-latest-version-of-usage-analytics.md) (articolo)
-
+[Informazioni sull'analisi dei](usage-analytics.md) dati di utilizzo (articolo)\
+[Ottenere la versione più recente dell'analisi di utilizzo](get-the-latest-version-of-usage-analytics.md) (articolo)\
 [Esplorare e utilizzare i report nell'Microsoft 365 di utilizzo](navigate-and-utilize-reports.md) (articolo)

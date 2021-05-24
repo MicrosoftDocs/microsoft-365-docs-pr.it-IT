@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Devi essere un amministratore per un abbonamento aziendale per ottenere assistenza per l'amministratore o supporto online o telefonico in Microsoft 365 Business Premium.
-ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535711"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635903"
 ---
 # <a name="get-support"></a>Ottieni supporto
+
+## <a name="watch-get-help-or-support"></a>Watch: Get help or support 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -256,8 +258,6 @@ Inoltre, è possibile [effettuare ricerche nei forum della community di Microsof
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Trovare documenti e formazione](find-help-answers.md) (articolo)
-
-[Configurazione rapida dei dipendenti](employee-quick-setup.md) (articolo)
-
+[Trovare documenti e formazione](find-help-answers.md) (articolo)\
+[Configurazione rapida dei dipendenti](employee-quick-setup.md) (articolo)\
 [Panoramica della Microsoft 365 Business Premium configurazione](setup-overview.md) (video)

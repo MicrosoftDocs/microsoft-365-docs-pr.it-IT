@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare utenti e gruppi in un altro dominio o annullare l'abbonamento.
-ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a8e636059a84a2086844a8ff139d240268ee5b19
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582933"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635703"
 ---
 # <a name="remove-a-domain"></a>Rimuovere un dominio
   
@@ -207,7 +207,7 @@ La rimozione di un dominio può richiedere fino a Microsoft 365 5 minuti se non 
   
 Se ci sono centinaia o migliaia di utenti, usare PowerShell per eseguire query per tutti gli utenti e spostarli in un altro dominio. In caso contrario, alcuni utenti potrebbero risultare mancanti nell'interfaccia utente e quindi, quando si rimuove il dominio, non sarà possibile spostarli e non si riuscirà a individuare la causa del problema. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
-## <a name="still-need-help"></a>Serve ulteriore assistenza?
+## <a name="still-need-help"></a>Ulteriore assistenza
 
 ::: moniker range="o365-worldwide"
 
@@ -220,8 +220,6 @@ Il problema persiste? Potrebbe essere necessario rimuovere manualmente il domini
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Domande frequenti sui](../setup/domains-faq.yml) domini (articolo)
-
-[Passare a un piano Microsoft 365 per le aziende](../../commerce/subscriptions/switch-to-a-different-plan.md) diverso (articolo)
-
+[Domande frequenti](../setup/domains-faq.yml) sui domini (articolo)\
+[Passare a un piano Microsoft 365 per le aziende](../../commerce/subscriptions/switch-to-a-different-plan.md) diverso (articolo)\
 [Annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md) (articolo)

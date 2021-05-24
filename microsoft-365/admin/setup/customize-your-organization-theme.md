@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Informazioni su come modificare il tema predefinito per la parte superiore della barra di spostamento in Microsoft 365 e personalizzarlo in base al logo o al colore della società.
-ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593830"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635927"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
@@ -152,10 +152,9 @@ Il rapporto di contrasto consigliato tra il testo, il colore dell'icona o del pu
 
 ### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Se si definisce un tema, quali Microsoft 365 verrà usato?
 
-Qualsiasi tema verrà visualizzato nella barra di spostamento superiore per tutti gli utenti dell'organizzazione come parte dell'intestazione Microsoft 365 suite.  
+Qualsiasi tema viene visualizzato nella barra di spostamento superiore per tutti gli utenti dell'organizzazione come parte dell'intestazione Microsoft 365 suite.  
   
 ## <a name="related-content"></a>Contenuto correlato
 
-[Aggiungere riquadri personalizzati alla pagina App personali e all'icona di avvio](../manage/customize-the-app-launcher.md) delle app (articolo)
-
+[Aggiungere riquadri personalizzati alla pagina App personali e all'icona di avvio](../manage/customize-the-app-launcher.md) delle app (articolo)\
 [Panoramica dei Microsoft 365 per gli amministratori](../create-groups/office-365-groups.md) (articolo)

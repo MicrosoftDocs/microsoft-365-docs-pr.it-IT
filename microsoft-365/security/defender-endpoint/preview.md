@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea37ad4302eedf7d43e3ad03e94357a146c2216c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4612fbb2005145feae7bbcf9309c1ec9559a5a0d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245577"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636071"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Funzionalità di anteprima di Microsoft Defender per Endpoint
 
@@ -65,7 +65,7 @@ Nella versione di anteprima sono incluse le funzionalità seguenti:
 - [Device discovery](device-discovery.md) <br> Consente di individuare i dispositivi non gestiti connessi alla rete aziendale senza la necessità di dispositivi aggiuntivi o modifiche di processo ingombranti. Usando i dispositivi onboarded, puoi trovare dispositivi non gestiti nella rete e valutare vulnerabilità e rischi. Puoi quindi eseguire l'onboardboard dei dispositivi individuati per ridurre i rischi associati alla presenza di endpoint non gestiti nella rete.
 
    > [!IMPORTANT]
-   > L'individuazione standard sarà la modalità predefinita per tutti i clienti di anteprima a partire dal 10 maggio 2021. Puoi scegliere di mantenere la modalità di base tramite la pagina delle impostazioni. 
+   > L'individuazione standard sarà la modalità predefinita per tutti i clienti a partire dal 19 luglio 2021. Puoi scegliere di mantenere la modalità di base tramite la pagina delle impostazioni. 
 
 
 - [Filtro contenuto Web](web-content-filtering.md) <br> Il filtro contenuto Web fa parte delle funzionalità di protezione Web in Microsoft Defender for Endpoint. Consente all'organizzazione di tenere traccia e regolare l'accesso ai siti Web in base alle categorie di contenuto. Molti di questi siti Web, sebbene non dannosi, potrebbero essere problematici a causa delle normative di conformità, dell'utilizzo della larghezza di banda o di altri problemi.

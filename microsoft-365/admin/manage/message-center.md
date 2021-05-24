@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Ottieni una panoramica di Microsoft 365 Centro messaggi e del suo ruolo nel tenere traccia delle funzionalità nuove e modificate e di altri importanti annunci.
-ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 51cdf1924b3aaa507a6b41f903a6aea5d81d68f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593958"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636047"
 ---
 # <a name="message-center"></a>Centro messaggi
 
@@ -303,8 +303,6 @@ Per una panoramica del Centro messaggi, vedere [Centro messaggi in Microsoft 365
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Configurare le opzioni di rilascio Standard o Mirato](../manage/release-options-in-office-365.md) (articolo)
-
-[Gestire le Office funzionalità visualizzate in Novità](../manage/show-hide-new-features.md) (articolo)
-
-[Sottoscrizioni aziendali e documentazione relativa alla fatturazione](../../commerce/index.yml) (collegamenti)
+[Configurare le opzioni di rilascio Standard o Mirato](../manage/release-options-in-office-365.md) (articolo)\
+[Gestire le Office funzionalità visualizzate in Novità](../manage/show-hide-new-features.md) (articolo)\
+[Sottoscrizioni aziendali e documentazione relativa alla fatturazione](../../commerce/index.yml) (pagina dei collegamenti)

@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Informazioni su come convertire una cassetta postale privata in una cassetta postale condivisa accessibile da più persone anziché da una sola persona. '
-ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0beb85e5a69b72bcd244cd654c399e91ded06ba7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537620"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635475"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertire una cassetta postale utente in una cassetta postale condivisa
 
 Quando si converte la cassetta postale di un utente in cassetta condivisa, vengono mantenuti tutti gli elementi di posta elettronica e del calendario esistenti. L'unica differenza è che ora si trovano in una cassetta postale condivisa, cui potranno accedere diversi utenti invece di uno solo. In un secondo momento, è possibile riconvertire una cassetta postale condivisa in una cassetta postale utente (privata).
+
+## <a name="before-you-begin"></a>Prima di iniziare
 
 **Ecco alcuni aspetti importanti da conoscere:**
 
@@ -59,7 +61,6 @@ Per tutte le altre informazioni sulle cassette postali condivise, vedere [Inform
 > [!NOTE]
 > Le cassette postali condivise non richiedono una licenza separata. Tuttavia, se si desidera attivare un'archiviazione sul posto oppure sottoporre una cassetta postale a blocco sul posto o blocco per controversia legale, è necessario assegnare alla cassetta postale una licenza di Exchange Online, piano 1 con Archiviazione Exchange Online o Exchange Online, piano 2.
 
-
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Convertire la cassetta postale di un utente eliminato
 
 Si supponga di aver eliminato un account utente e di volerne convertire la vecchia cassetta postale in cassetta postale condivisa. Ecco cosa fare:
@@ -77,7 +78,6 @@ Si supponga di aver eliminato un account utente e di volerne convertire la vecch
 6. Al termine, è possibile rimuovere la licenza dalla cassetta postale dell'utente. Non eliminare la vecchia cassetta postale dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa.
     
 7. Aggiungere membri alla cassetta postale condivisa.
-
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>Convertire di nuovo una cassetta postale condivisa in una cassetta postale (privata) di un utente
 
@@ -104,12 +104,8 @@ Per ulteriori informazioni sulla conversione di una cassetta postale utente in u
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) (articolo)
-
-[Creare una cassetta postale condivisa](create-a-shared-mailbox.md) (articolo)
-
-[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md) (articolo)
-
-[Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md) (articolo)
-
+[Informazioni sulle cassette postali](about-shared-mailboxes.md) condivise (articolo)\
+[Creare una cassetta postale condivisa](create-a-shared-mailbox.md) (articolo)\
+[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md) (articolo)\
+[Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md) (articolo)\
 [Risolvere i problemi relativi alle cassette postali condivise](resolve-issues-with-shared-mailboxes.md) (articolo)

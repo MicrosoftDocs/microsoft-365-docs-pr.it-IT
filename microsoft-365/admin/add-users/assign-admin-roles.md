@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Informazioni su come assegnare ruoli di amministratore a uno o più utenti dell'azienda in modo che possano eseguire attività specifiche nell'interfaccia di amministrazione.
-ms.openlocfilehash: f23a30cfd1be53982572d745d476558c3be615e6
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8a9da12a8ebc01a02e4362f09ccaa9e92c21b7e9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571866"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634173"
 ---
 # <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore
 
@@ -42,7 +42,7 @@ Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](about-
 
 Quando si aggiungono nuovi utenti, se non si assegna loro  un ruolo di amministratore, questi sono nel ruolo utente e non hanno privilegi di amministratore per nessuna delle centri di amministrazione Microsoft. Tuttavia, se hai bisogno di assistenza per eseguire le operazioni, puoi assegnare un ruolo di amministratore a un utente. Ad esempio, se è necessario che qualcuno aiuti a reimpostare le password, non è consigliabile assegnare loro il ruolo di amministratore globale, è consigliabile assegnare loro il ruolo di amministratore delle password. La presenza di troppi amministratori globali, con accesso illimitato ai dati e all'azienda online, rappresenta un rischio per la sicurezza.
 
-## <a name="watch-add-an-adminbrbr"></a>Guarda: Aggiungere un amministratore.<br><br>
+## <a name="watch-add-an-adminbrbr"></a>Watch: Add an admin<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -121,10 +121,7 @@ Usare le istruzioni seguenti per assegnare i ruoli a decine di utenti.
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Informazioni Microsoft 365 ruoli di amministratore](about-admin-roles.md) (articolo)
-
-[Autorizzazioni del ruolo amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (articolo)
-
-[Assegnare ruoli agli account utente con PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (articolo)
-
+[Informazioni Microsoft 365 ruoli di amministratore](about-admin-roles.md) (articolo)\
+[Autorizzazioni del ruolo amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (articolo)\
+[Assegnare ruoli agli account utente con PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (articolo)\
 [Autorizzare o rimuovere relazioni con i partner](../misc/add-partner.md) (articolo)

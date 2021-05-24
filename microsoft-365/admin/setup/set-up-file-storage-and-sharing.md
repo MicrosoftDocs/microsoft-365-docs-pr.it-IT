@@ -29,18 +29,18 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Informazioni su come usare un OneDrive e un sito del team per Microsoft 365 e Microsoft 365 file condivisi.
-ms.openlocfilehash: 9e739b1f90296167fc47bdd5f19bacd73c43f9e2
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572178"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635643"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurare l'archiviazione e la condivisione di file in Microsoft 365
 
 Uno dei modi migliori per configurare l'archiviazione e la condivisione dei file per l'azienda è quello di usare OneDrive e un sito del team insieme. Questa soluzione è ideale per le piccole aziende con pochi dipendenti.
 
-Guarda un breve video sull'archiviazione di file nel cloud Microsoft 365 cloud.<br><br>
+## <a name="watch-where-to-store-files-in-office-365"></a>Watch: Where to store files in Office 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
@@ -207,8 +207,6 @@ Sebbene sia possibile caricare quasi tutti i tipi di file, alcuni nomi di file e
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Aggiungere spazio di archiviazione per la sottoscrizione](../../commerce/add-storage-space.md) (articolo)
-
-[Condividere file e cartelle con Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (video)
-
+[Aggiungere spazio di archiviazione per la sottoscrizione](../../commerce/add-storage-space.md) (articolo)\
+[Condividere file e cartelle con Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (video)\
 [Personalizzare il sito del team per l'archiviazione e la condivisione di file](customize-team-site.md) (articolo)

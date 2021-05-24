@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Aggiungi spazio di archiviazione file nella sottoscrizione Microsoft 365 abbonamento. Con l'archiviazione di file aggiuntiva, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: b573205c7053aba0339d1f32deb2996ef80f8754
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572322"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635859"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
@@ -104,4 +104,4 @@ Office 365 Extra File Storage è disponibile per gli abbonamenti seguenti:
 ## <a name="related-content"></a>Contenuto correlato
 
 [Gestire i limiti di archiviazione del sito](/sharepoint/manage-site-collection-storage-limits) (articolo)\
-[Impostare lo spazio di archiviazione predefinito per OneDrive utenti](/onedrive/set-default-storage-space)(articolo)
+[Impostare lo spazio di archiviazione predefinito per OneDrive utenti](/onedrive/set-default-storage-space) (articolo)

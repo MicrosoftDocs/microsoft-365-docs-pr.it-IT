@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere guest a un Microsoft 365, visualizzare gli utenti guest e usare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: c52f0094e724040b71d5d72cded049fed57e3969
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 00a6353f02ae7f3675961c3ee2ee31e3715652f2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571938"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635763"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gestire l'accesso guest in Microsoft 365 gruppi
 
@@ -69,10 +69,7 @@ Se si desidera modificare le informazioni di un guest, è possibile aggiungere o
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Bloccare gli utenti guest da un gruppo specifico](../../solutions/per-group-guest-access.md) (articolo)
-
-[Gestire l'appartenenza ai gruppi nell'Microsoft 365 di amministrazione](add-or-remove-members-from-groups.md) (articolo)
-  
-[Azure Active Directory access review](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (articolo)
-
+[Bloccare gli utenti guest da un gruppo specifico](../../solutions/per-group-guest-access.md) (articolo)\
+[Gestire l'appartenenza ai gruppi nell'Microsoft 365 di amministrazione](add-or-remove-members-from-groups.md) (articolo)\
+[Azure Active Directory access review](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (articolo)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (articolo)

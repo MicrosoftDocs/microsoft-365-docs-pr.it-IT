@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Seguire i passaggi descritti in questo articolo per concedere a un altro dipendente l'accesso ai dati OneDrive e Outlook dell'ex dipendente.
-ms.openlocfilehash: cb5c27cbc7f1c184af8f0d1ad32b822660e93791
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582693"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634257"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Passaggio 4 - Concedere a un altro dipendente l'accesso OneDrive e Outlook dati
 
@@ -163,8 +163,6 @@ Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle at
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Aggiungere e rimuovere amministratori in un account OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (articolo)
-
-[Ripristinare un'OneDrive](/onedrive/restore-deleted-onedrive) eliminata (articolo)
-  
+[Aggiungere e rimuovere amministratori in un account OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (articolo)\
+[Ripristinare un OneDrive](/onedrive/restore-deleted-onedrive) eliminato (articolo)\
 [OneDrive conservazione ed eliminazione (articolo)](/onedrive/retention-and-deletion)

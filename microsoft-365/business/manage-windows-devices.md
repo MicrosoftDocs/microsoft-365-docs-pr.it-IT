@@ -24,24 +24,26 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come abilitare Microsoft 365 per proteggere i dispositivi Windows 10 aggiunti ad Active Directory in pochi passaggi.
-ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593894"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636087"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Abilitare i dispositivi Windows 10 aggiunti a un dominio per essere gestiti da Microsoft 365 Business Premium
 
 Se l'organizzazione usa Windows Server Active Directory locale, è possibile configurare Microsoft 365 Business Premium per proteggere i dispositivi Windows 10, mantenendo comunque l'accesso alle risorse locali che richiedono l'autenticazione locale.
 Per configurare questa protezione, è possibile implementare dispositivi aggiunti **ad Azure AD ibridi.** Questi dispositivi vengono aggiunti sia ad Active Directory locale che all'Azure Active Directory.
 
+## <a name="watch-configure-hybrid-azure-active-directory-join"></a>Watch: Configure Hybrid Azure Active Directory join
+
 In questo video vengono descritti i passaggi per configurare questo scenario per lo scenario più comune, descritto anche nei passaggi seguenti.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
+## <a name="before-you-begin"></a>Prima di iniziare
 
-## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>Prima di iniziare, assicurati di completare questi passaggi:
 - Sincronizzare gli utenti con Azure AD con Azure AD Connessione.
 - Completare la sincronizzazione Connessione unità organizzativa (OU) di Azure AD.
 - Assicurati che tutti gli utenti di dominio sincronizzati siano in grado di Microsoft 365 Business Premium.
@@ -119,8 +121,6 @@ A questo punto dovrebbe essere possibile visualizzare il criterio Abilita regist
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Sincronizzare gli utenti di dominio con Microsoft 365](manage-domain-users.md) (articolo)
-
-[Creare un gruppo nell'interfaccia di amministrazione](../admin/create-groups/create-groups.md) (articolo)
-
+[Sincronizzare gli utenti di dominio Microsoft 365](manage-domain-users.md) (articolo)\
+[Creare un gruppo nell'interfaccia di amministrazione](../admin/create-groups/create-groups.md) (articolo)\
 [Esercitazione: Configurare l'Azure Active Directory ibrida per i domini gestiti](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (articolo)

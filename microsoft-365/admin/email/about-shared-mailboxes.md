@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Le cassette postali condivise vengono utilizzate quando più persone devono accedere alla stessa cassetta postale. Informazioni su cosa è necessario sapere prima di creare una cassetta postale condivisa.
-ms.openlocfilehash: 156ba100cb2c51d1e54a2ee82c45db20845931f9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 601636f03bee93224025d286b7a74fa0f24782fb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535855"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635535"
 ---
 # <a name="about-shared-mailboxes"></a>Informazioni sulle cassette postali condivise
 
@@ -67,12 +67,8 @@ Prima di [creare una cassetta postale condivisa,](create-a-shared-mailbox.md)ecc
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Creare una cassetta postale condivisa](create-a-shared-mailbox.md) (articolo)
-
-[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md) (articolo)
-
-[Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md) (articolo)
-
-[Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md) (articolo)
-
+[Creare una cassetta postale condivisa](create-a-shared-mailbox.md) (articolo)\
+[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md) (articolo)\
+[Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md) (articolo)\
+[Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md) (articolo)\
 [Risolvere i problemi relativi alle cassette postali condivise](resolve-issues-with-shared-mailboxes.md) (articolo)

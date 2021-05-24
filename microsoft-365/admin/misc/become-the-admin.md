@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Informazioni su come verificare la proprietà della posta elettronica e del dominio per assumere il controllo di un tenant non gestito creato da un utente in modalità self-service Microsoft 365.
-ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593934"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635987"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Eseguire l'acquisizione di un amministratore interno
 
@@ -68,10 +68,7 @@ Se sei un amministratore e vuoi assumere un tenant non gestito creato da un'iscr
   
 ## <a name="related-content"></a>Contenuto correlato
 
-YouTube: [3 passaggi per eseguire l'acquisizione](https://www.youtube.com/watch?v=xt5EsrQBZZk) di un amministratore IT per Power BI e Microsoft 365 (video)
-
-[Acquisizione dell'amministratore in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (articolo)
-
-[Uso dell'iscrizione in modalità self-service nell'organizzazione](self-service-sign-up.md) (articolo)
-  
+YouTube: [3 passaggi per eseguire un'acquisizione](https://www.youtube.com/watch?v=xt5EsrQBZZk) da amministratore IT per Power BI e Microsoft 365 (video)\
+[Acquisizione dell'amministratore in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (articolo)\
+[Uso dell'iscrizione in modalità self-service nell'organizzazione](self-service-sign-up.md) (articolo)\
 [Informazioni sul ruolo Power BI amministratore del servizio](/power-bi/service-admin-role) (articolo)

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Raccogliere i valori/informazioni necessari per creare record DNS per connettere il dominio all'Microsoft 365 sottoscrizione.
-ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e65d53269f5fb8625b12c4eb22f78516818045be
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582957"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635727"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Raccogliere le informazioni necessarie per creare record DNS
 
@@ -100,8 +100,6 @@ ms.locfileid: "52582957"
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Domande frequenti sui](../setup/domains-faq.yml) domini (articolo)
-
-[Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)
-
+[Domande frequenti](../setup/domains-faq.yml) sui domini (articolo)\
+[Individuare e risolvere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)\
 [Gestire i domini](index.yml) (pagina di collegamento)

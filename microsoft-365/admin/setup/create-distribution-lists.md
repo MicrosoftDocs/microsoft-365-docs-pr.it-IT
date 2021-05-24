@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Creare gruppi di distribuzione o elenchi nell'Microsoft 365 di amministrazione per poter inviare messaggi di posta elettronica a un gruppo senza digitare il nome di ogni destinatario.
-ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572250"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635667"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Creare gruppi di distribuzione nell'Microsoft 365 di amministrazione
   
@@ -76,8 +76,6 @@ Per informazioni sui [problemi relativi alle liste di](/office365/troubleshoot/g
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Impostazioni di posta elettronica dell'utente](../email/office-365-user-email-settings.md) (articolo)
-
-[Creare, modificare o eliminare un gruppo di sicurezza nell'Microsoft 365 di amministrazione](../email/create-edit-or-delete-a-security-group.md) (articolo)
-
+[Impostazioni di posta elettronica utente](../email/office-365-user-email-settings.md) (articolo)\
+[Creare, modificare o eliminare un gruppo di sicurezza nell'Microsoft 365 di amministrazione](../email/create-edit-or-delete-a-security-group.md) (articolo)\
 [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) (articolo)

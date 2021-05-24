@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: eed486120673abc513490f4892069ee8fd9bba21
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624270"
+ms.locfileid: "52636159"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -128,7 +128,7 @@ Utilizzare il grafico seguente per configurare i gruppi nell'organizzazione per 
 
 | **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
 |:-----|:-----|:-----|
-|Utenti con supervisione <br> Utenti non supervisionati | Gruppi di distribuzione <br> Gruppi di Microsoft 365 | Gruppi di distribuzione dinamici <br> Gruppi di distribuzione annidati <br> Gruppi di sicurezza abilitati alla posta elettronica <br> Microsoft 365 gruppi con appartenenza dinamica |
+|Utenti con supervisione <br> Utenti esclusi | Gruppi di distribuzione <br> Gruppi di Microsoft 365 | Gruppi di distribuzione dinamici <br> Gruppi di distribuzione annidati <br> Gruppi di sicurezza abilitati alla posta elettronica <br> Microsoft 365 gruppi con appartenenza dinamica |
 | Revisori | Nessuno | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici <br> Gruppi di distribuzione annidati <br> Gruppi di sicurezza abilitati alla posta elettronica |
   
 Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora tutti i messaggi di posta elettronica Teams chat di ogni utente nel gruppo di distribuzione. Quando si assegna un gruppo di Microsoft 365 nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Teams inviate a tale gruppo, non i singoli messaggi di posta elettronica e chat ricevuti da ogni membro del gruppo.

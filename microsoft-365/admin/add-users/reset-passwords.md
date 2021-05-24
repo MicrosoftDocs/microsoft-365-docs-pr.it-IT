@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Accedi con il tuo account Microsoft 365 amministratore per reimpostare le password per gli utenti in Microsoft 365 per le aziende.
-ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571974"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635571"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -120,14 +120,10 @@ Vedere questo interessante post di blog da Vasil Michev, MVP Microsoft: [Forzare
 
 Leggere questo articolo: [Si è dimenticato l'account o la password per l'account usato con Office](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
   
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
   
-[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)
-
-[Reimpostare la password](../add-users/reset-passwords.md) (articolo)
-
-[Impostare la password di un singolo utente in modo che non scada mai](set-password-to-never-expire.md) (articolo)
-
-[Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)
-
+[Consentire agli utenti di reimpostare le proprie password](../add-users/let-users-reset-passwords.md) (articolo)\
+[Reimpostare le password](../add-users/reset-passwords.md) (articolo)\
+[Impostare la password di un singolo utente](set-password-to-never-expire.md) in modo che non scada mai (articolo)\
+[Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)\
 [video Microsoft 365 formazione su Microsoft 365](../../business-video/index.yml) per le aziende (pagina dei collegamenti)

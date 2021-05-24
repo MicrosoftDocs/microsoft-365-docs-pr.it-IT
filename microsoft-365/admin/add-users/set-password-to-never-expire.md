@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Accedi al tuo account Microsoft 365 amministratore per impostare alcune password utente individuali in modo che non scada mai usando Windows PowerShell.
-ms.openlocfilehash: 0747e0bfe8a7389db554d5d6a7f685605e013306
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 12c717d8d625b0135f185b1af131db00e9762c73
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571926"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635559"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Impostare la password di un singolo utente in modo che non scada mai
 
@@ -126,8 +126,8 @@ Eseguire uno dei comandi riportati di seguito:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)
-
-[Reimpostare la password](../add-users/reset-passwords.md) (articolo)
+[Consentire agli utenti di reimpostare le proprie password](../add-users/let-users-reset-passwords.md) (articolo)\
+[Reimpostare le password](../add-users/reset-passwords.md) (articolo)\
+[Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)

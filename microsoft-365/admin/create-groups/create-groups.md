@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Informazioni su come creare ed eliminare Microsoft 365, aggiungere e rimuovere membri del gruppo e personalizzare il funzionamento del gruppo.
-ms.openlocfilehash: b3fb637867229489a3e3abe93373cc46fbce365f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b8cbd194825ef114fa8e4ce999355248a61e7830
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241725"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635583"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Creare un gruppo nell'Microsoft 365 di amministrazione
   
@@ -80,14 +80,12 @@ Un membro può eliminare una conversazione di posta elettronica dalla Posta in a
   
 Quando un messaggio di posta elettronica viene eliminato dalla cassetta postale del gruppo, non viene eliminato da nessuna delle cassette postali personali dei membri del gruppo.
 
-## <a name="next-step-manage-your-group"></a>Passaggio successivo: gestire il gruppo
+## <a name="next-steps"></a>Passaggi successivi
 
 Dopo aver creato un nuovo gruppo e aver aggiunto membri, è possibile configurare ulteriormente il gruppo, ad esempio modificando il nome o la descrizione del gruppo, modificando proprietari o membri e specificando se i mittenti esterni possono inviare un messaggio di posta elettronica al gruppo e se inviare copie delle conversazioni di gruppo ai membri. Per [informazioni, vedere Manage a Microsoft 365 group.](manage-groups.md)
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Gestire l'accesso guest Microsoft 365 gruppi](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) di utenti (articolo)
-
-[Scegliere il dominio da utilizzare per la creazione di Microsoft 365 gruppi](../../solutions/choose-domain-to-create-groups.md) (articolo)
-
+[Gestire l'accesso guest Microsoft 365 gruppi](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) di utenti (articolo)\
+[Scegliere il dominio da usare per la creazione Microsoft 365 gruppi](../../solutions/choose-domain-to-create-groups.md) (articolo)\
 [Aggiornare le liste di distribuzione Microsoft 365 gruppi](../manage/upgrade-distribution-lists.md) di distribuzione (articolo)

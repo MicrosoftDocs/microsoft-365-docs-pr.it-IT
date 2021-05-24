@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Inviare messaggi di posta elettronica come lista di distribuzione in Microsoft 365 in modo che quando un membro risponde a un messaggio venga visualizzato dalla lista di distribuzione.
-ms.openlocfilehash: 01bff7e1d2515670c5a6faa199355e7de591f1fb
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: eb5ce4a08fae13ee0d2631499a8df1724ef3ef66
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624538"
+ms.locfileid: "52635715"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Inviare messaggi di posta elettronica come lista di distribuzione
 
@@ -66,4 +66,4 @@ Prima di eseguire questa procedura, assicurarsi di essere stati aggiunti a una l
 
 [Creare, modificare o eliminare un gruppo di sicurezza nell'Microsoft 365 di amministrazione](../email/create-edit-or-delete-a-security-group.md) (articolo)\
 [Collaborazione tramite posta](../email/email-collaboration.md) elettronica (articolo)\
-[Aggiungere un utente o un contatto a un gruppo di distribuzione](../email/add-user-or-contact-to-distribution-list.md)
+[Aggiungere un utente o un contatto a un gruppo di distribuzione](../email/add-user-or-contact-to-distribution-list.md) (articolo)

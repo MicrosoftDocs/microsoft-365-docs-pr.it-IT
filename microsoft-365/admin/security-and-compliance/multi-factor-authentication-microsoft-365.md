@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'autenticazione a più fattori (MFA) utilizza sia una password, che dovrebbe essere complessa, sia un metodo di verifica aggiuntivo.
-ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6e1c43bdd66849a0043c0a1a927f48d925e0806e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623690"
+ms.locfileid: "52635775"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
 
@@ -170,7 +170,7 @@ Nel portale di Azure è possibile:
 
 Nell'Microsoft 365 di amministrazione è possibile configurare le impostazioni MFA per utente e servizio.
 
-## <a name="your-next-step"></a>Passaggio successivo
+## <a name="next-steps"></a>Passaggi successivi
 
 [Configurare l'autenticazione a più fattori per Microsoft 365](set-up-multi-factor-authentication.md)
 

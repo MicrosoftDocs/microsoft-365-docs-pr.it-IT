@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo da poter utilizzare la distribuzione centralizzata per distribuire Office componenti aggiuntivi.
-ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593922"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635451"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -160,11 +160,8 @@ Se l'utente o gli utenti riscontrano problemi durante il caricamento del compone
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Distribuire componenti aggiuntivi nell'interfaccia di amministrazione](../manage/manage-deployment-of-add-ins.md) (articolo)
-
-[Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](manage-addins-in-the-admin-center.md) (articolo)
-
-[Domande frequenti sulla distribuzione centralizzata](../manage/centralized-deployment-faq.md) (articolo)
-
+[Distribuire componenti aggiuntivi nell'interfaccia di amministrazione](../manage/manage-deployment-of-add-ins.md) (articolo)\
+[Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](manage-addins-in-the-admin-center.md) (articolo)\
+[Domande frequenti sulla distribuzione centralizzata](../manage/centralized-deployment-faq.md) (articolo)\
 [Aggiornare il Microsoft 365 per gli utenti aziendali al client Office](../setup/upgrade-users-to-latest-office-client.md) più recente (articolo)
  

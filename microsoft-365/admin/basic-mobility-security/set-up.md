@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configura Dispositivi mobili e sicurezza di base per proteggere e gestire i dispositivi mobili degli utenti eseguendo azioni come la pulizia remota di un dispositivo.
-ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593418"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634293"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Impostare Basic Mobility + Security
 
@@ -129,6 +129,5 @@ Gli utenti con dispositivi Android o iOS devono installare l'app Portale azienda
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Funzionalità di base per dispositivi mobili e sicurezza](capabilities.md) (articolo)
-
+[Funzionalità di base per dispositivi mobili e sicurezza](capabilities.md) (articolo)\
 [Creare criteri di sicurezza dei dispositivi in Dispositivi mobili e sicurezza di base](create-device-security-policies.md) (articolo)

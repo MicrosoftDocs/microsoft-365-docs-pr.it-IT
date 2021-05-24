@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245949"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636243"
 ---
 # <a name="device-discovery-overview"></a>Panoramica di Device discovery
 
@@ -62,7 +62,7 @@ Esistono due modalità di individuazione:
 
 
 > [!IMPORTANT]
-> L'individuazione è impostata sulla modalità di base. Puoi scegliere di mantenere questa configurazione tramite la pagina delle impostazioni. L'individuazione standard sarà la modalità predefinita per tutti i clienti di anteprima a partire dal 10 maggio 2021, a meno che non venga modificata tramite la pagina delle impostazioni prima di questa data.
+> L'individuazione è impostata sulla modalità di base. Puoi scegliere di mantenere questa configurazione tramite la pagina delle impostazioni. L'individuazione standard sarà la modalità predefinita per tutti i clienti a partire dal 19 luglio 2021, a meno che non venga modificata tramite la pagina delle impostazioni prima di questa data.
 
 ### <a name="basic-discovery"></a>Individuazione di base 
 

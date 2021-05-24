@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Abilitare la condivisione dei calendari nell'Microsoft 365 di amministrazione per consentire agli utenti di condividere i propri calendari con chiunque all'interno o all'esterno dell'organizzazione.
-ms.openlocfilehash: 6f4c215403e16ac6658619e50e6115606f106397
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582717"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635811"
 ---
 # <a name="share-calendars-with-external-users"></a>Condividere calendari con utenti esterni
 
@@ -50,12 +50,10 @@ A volte è necessario che gli utenti pianificano riunioni con persone esterne al
 
 ## <a name="invite-people-to-access-calendars"></a>Invitare utenti ad accedere ai calendari
 
-Una volta abilitata la condivisione, i proprietari del calendario possono estendere gli inviti a utenti specifici. Per istruzioni, vedere [Condivisione del calendario in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
+Una volta abilitata la condivisione, i proprietari del calendario possono estendere gli inviti a utenti specifici. Per istruzioni, vedere [Condivisione del calendario in Outlook Web App.](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Attivare o disattivare la condivisione esterna per un sito](/sharepoint/change-external-sharing-site) (articolo)
-
-[Informazioni generali sull'interfaccia di amministrazione di Microsoft 365](../../business-video/admin-center-overview.md) (video)
-
+[Attivare o disattivare la condivisione esterna per un sito](/sharepoint/change-external-sharing-site) (articolo)\
+[Panoramica dell'Microsoft 365 di amministrazione](../../business-video/admin-center-overview.md) (video)\
 [Gestire la posta elettronica e i calendari](../email/index.yml) (pagina dei collegamenti)

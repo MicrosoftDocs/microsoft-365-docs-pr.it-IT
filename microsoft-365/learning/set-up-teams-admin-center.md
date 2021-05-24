@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: 05/24/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Informazioni su come configurare Microsoft Viva Learning (Anteprima) nell'Teams di amministrazione.
-ms.openlocfilehash: e5af676752064738e26f9b934a60973cb9b0200d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a96a2f3ecf7d4e1ee0c136ae155868218f08aaf4
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625299"
+ms.locfileid: "52636135"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurare Microsoft Viva Learning (anteprima) nell'Teams di amministrazione
 
@@ -29,7 +29,7 @@ ms.locfileid: "52625299"
 
 L Teams admin installa Viva Learning (Preview) e applica i criteri di autorizzazione tramite l'Teams di amministrazione.
 
-1. Per l'anteprima pubblica, devi prima impostare i criteri di aggiornamento. Per ulteriori dettagli, vedere il sito Teams e [Microsoft Teams Public Preview.](/MicrosoftTeams/public-preview-doc-updates)
+1. Per Viva Learning (Anteprima), devi prima impostare i criteri di aggiornamento in Teams. Per ulteriori informazioni, vedere [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates).
 
     1. Accedere all'interfaccia Teams di amministrazione.
 
@@ -39,17 +39,17 @@ L Teams admin installa Viva Learning (Preview) e applica i criteri di autorizzaz
 
     4. Assegnare un nome al criterio di aggiornamento, aggiungere un criterio e attivare **Mostra funzionalità di anteprima.**
 
-2. L'amministratore deve informare gli utenti dell'aggiornamento dei criteri in modo che spostino la build in Anteprima pubblica per Teams. 
+2. L'amministratore deve informare gli utenti dell'aggiornamento dei criteri in modo che spostino la build nell'anteprima pubblica per Teams. 
 
-    1. L'utente deve selezionare l'immagine del profilo --> Informazioni su --> Anteprima pubblica.
+    1. Gli utenti devono selezionare l'immagine del > **informazioni**  >  **sull'anteprima pubblica.**
    
         ![Spostamento superiore nell'Teams che mostra il profilo dell'utente](../media/learning/learning-app-select-profile-teams.png)
     
-    2. L'utente deve accettare i termini dell'anteprima pubblica.
+    2. Gli utenti devono accettare i **termini e le condizioni di anteprima** pubblica.
 
         ![Passare alla build di anteprima pubblica](../media/learning/learning-app-switch-to-public-preview.png)
  
-3. Per le organizzazioni che dispongono di criteri restrittivi e che devono abilitare Viva Learning, seguire il processo nella sezione successiva.
+3. Per le organizzazioni che hanno criteri restrittivi e devono abilitare Viva Learning (Preview), seguire il processo nella sezione successiva.
 
 ## <a name="manage-settings-for-viva-learning-preview"></a>Gestire le impostazioni per Viva Learning (anteprima)
 

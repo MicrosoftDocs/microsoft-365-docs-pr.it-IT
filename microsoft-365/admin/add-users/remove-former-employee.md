@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Seguire i passaggi descritti in questa soluzione per rimuovere un ex dipendente Microsoft 365 e proteggere i dati dell'organizzazione.
-ms.openlocfilehash: 44741382a84cca15277308a44b3fd20470aa3a08
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: a613d4931c730dffe195954da97af86c683041bf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572046"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634245"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Panoramica: rimuovere un ex dipendente e proteggere i dati
 
@@ -61,4 +61,7 @@ Per completare i passaggi di questa soluzione, è necessario essere un amministr
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Ripristinare un utente](restore-user.md) (articolo)
+[Ripristinare un utente](restore-user.md) (articolo)\
+[Aggiungere un nuovo dipendente a Microsoft 365](add-new-employee.md) (articolo)\
+[Assegnare licenze agli utenti](../manage/assign-licenses-to-users.md) (articolo)\
+[Annullare l'assegnazione delle licenze dagli utenti](../manage/remove-licenses-from-users.md) (articolo)

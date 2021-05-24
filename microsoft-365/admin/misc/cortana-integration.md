@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Gli utenti con account aziendali o dell'istituto di istruzione validi possono ottenere Cortana in Microsoft 365 esperienze che soddisfano Office 365 promesse di sicurezza a livello aziendale.
-ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582777"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635799"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -187,8 +187,6 @@ Per i servizi disciplinati dal [Contratto di servizi Microsoft](https://go.micro
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Assistenza vocale Cortana in Teams](/microsoftteams/cortana-in-teams) (articolo)
-
-[Configurare Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (articolo)
-
+[Assistenza vocale Cortana in Teams](/microsoftteams/cortana-in-teams) (articolo)\
+[Configurare Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (articolo)\
 [Cosa puoi fare con Riproduci i miei messaggi di posta elettronica da Cortana?](https://support.microsoft.com/help/4558256)
