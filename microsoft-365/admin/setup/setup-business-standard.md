@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Quando si acquista Microsoft 365 Business Standard, si può scegliere di usare un dominio di cui si è proprietari o di acquistarne uno al momento dell'iscrizione.
-ms.openlocfilehash: cee91edaab09506dca90cf5ed64ee9bc669c98cf
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ca9cc359aaabfc16a5d0c57a75362c7826dea0db
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624418"
+ms.locfileid: "52635631"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Configurare Microsoft Business Standard
 
@@ -103,6 +103,8 @@ Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o 
 
 3. Immettere il proprio indirizzo di posta elettronica Microsoft e selezionare **Connetti**.
 
+## <a name="watch-set-up-outlook-for-email"></a>Video: Configurare Outlook per la posta elettronica
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
 Per altre informazioni, vedere [Configurare Outlook per la posta elettronica](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
@@ -123,6 +125,8 @@ Se si stava usando Outlook con un altro account di posta elettronica, è possibi
 
     Questa volta, selezionare **Importa dati da altri programmi o file** e seguire le istruzioni per importare il file di backup creato al momento dell'esportazione dei vecchi messaggi di posta elettronica.
 
+## <a name="watch-import-and-redirect-email"></a>Video: Importare e reindirizzare la posta elettronica
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
   
 Per altre informazioni, vedere [Importare la posta elettronica con Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
@@ -136,6 +140,8 @@ Microsoft 365 non include un sito Web pubblico che possa essere usato dall'azien
 1. Nell'interfaccia di amministrazione passare a **Risorse** e quindi selezionare **Sito Web pubblico**.
 
 2. Selezionare **Altre informazioni** sotto una delle opzioni, quindi effettuare l'iscrizione con un partner di siti Web e usare i suoi strumenti per configurare e progettare il sito.
+
+## <a name="watch-create-your-business-website"></a>Video: Creare il sito Web dell'azienda
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
