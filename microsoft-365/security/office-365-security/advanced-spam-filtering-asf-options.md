@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sulle impostazioni asf (Advanced Spam Filter) disponibili nei criteri di protezione da posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ade36086d1503b89b506730b98ac7965845e86b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3639b12c0003c958681671fce6bb2b857b3931b8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206723"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651201"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Impostazioni avanzate del filtro posta indesiderata (ASF) in EOP
 
@@ -38,7 +38,7 @@ ms.locfileid: "51206723"
 > [!NOTE]
 > Le impostazioni ASF attualmente disponibili nei criteri di protezione da posta indesiderata stanno per essere deprecate. Si consiglia di non utilizzare queste impostazioni nei criteri di protezione da posta indesiderata. La funzionalità di queste impostazioni ASF viene incorporata in altre parti dello stack di filtro. Per ulteriori informazioni, vedere Impostazioni dei criteri di protezione da posta indesiderata [di EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
-In tutte le organizzazioni di Microsoft 365, le impostazioni asf (Advanced Spam Filter) nei criteri di protezione da posta indesiderata in EOP consentono agli amministratori di contrassegnare i messaggi come posta indesiderata in base a specifiche proprietà dei messaggi. ASF si rivolge in modo specifico a queste proprietà perché si trovano comunemente nella posta indesiderata. A seconda della proprietà, i rilevamenti ASF contrassegneranno il messaggio come **Posta** indesiderata o **Alta probabilità di posta indesiderata.**
+In tutte Microsoft 365, le impostazioni asf (Advanced Spam Filter) nei criteri di protezione da posta indesiderata in EOP consentono agli amministratori di contrassegnare i messaggi come posta indesiderata in base a proprietà dei messaggi specifiche. ASF si rivolge in modo specifico a queste proprietà perché si trovano comunemente nella posta indesiderata. A seconda della proprietà, i rilevamenti ASF contrassegneranno il messaggio come **Posta** indesiderata o **Alta probabilità di posta indesiderata.**
 
 > [!NOTE]
 > L'abilitazione di una o più impostazioni ASF è un approccio aggressivo al filtro posta indesiderata. Non è possibile segnalare i messaggi filtrati da ASF come falsi positivi. È possibile identificare i messaggi filtrati da ASF in base a:
@@ -81,6 +81,8 @@ Per ogni impostazione ASF, nei criteri di protezione da posta indesiderata sono 
 
 Le impostazioni ASF seguenti impostano il livello di probabilità di posta indesiderata (SCL) dei messaggi rilevati su 5 o 6, che corrisponde al verdetto del filtro posta indesiderata e all'azione corrispondente nei criteri di protezione da posta indesiderata. 
 
+<br>
+
 ****
 
 |Impostazione dei criteri di protezione da posta indesiderata|Descrizione|X-header aggiunto|
@@ -94,6 +96,8 @@ Le impostazioni ASF seguenti impostano il livello di probabilità di posta indes
 ## <a name="mark-as-spam-settings"></a>Contrassegnare come impostazioni di posta indesiderata
 
 Le impostazioni ASF seguenti impostano il livello di probabilità di posta indesiderata dei messaggi rilevati su 9, che corrisponde al verdetto **del** filtro di protezione da posta indesiderata ad alta probabilità e all'azione corrispondente nei criteri di protezione da posta indesiderata.
+
+<br>
 
 ****
 
@@ -109,5 +113,5 @@ Le impostazioni ASF seguenti impostano il livello di probabilità di posta indes
 |**Applica elenco parole sensibili** <p> *MarkAsSpamSensitiveWordList*|Microsoft gestisce un elenco dinamico ma non modificabile di parole associate a messaggi potenzialmente offensivi. <p> I messaggi che contengono parole dell'elenco di parole riservate nell'oggetto o nel corpo del messaggio vengono contrassegnati come posta indesiderata con alta probabilità.|`X-CustomSpam: Sensitive word in subject/body`|
 |**Record SPF: non riuscito** <p> *MarkAsSpamSpfRecordHardFail*|I messaggi inviati da un indirizzo IP non specificato nel record SPF Sender Policy Framework (SPF) in DNS per il dominio di posta elettronica di origine vengono contrassegnati come posta indesiderata con alta probabilità. <p> La modalità test non è disponibile per questa impostazione.|`X-CustomSpam: SPF Record Fail`|
 |**Filtro dell'ID mittente condizionale: non riuscito** <p> *MarkAsSpamFromAddressAuthFail*|I messaggi che non riescono a eseguire un controllo dell'ID mittente condizionale vengono contrassegnati come posta indesiderata. <p> Questa impostazione combina un controllo SPF con un controllo dell'ID mittente per proteggere le intestazioni dei messaggi che contengono mittenti contraffatti. <p> La modalità test non è disponibile per questa impostazione.|`X-CustomSpam: SPF From Record Fail`|
-|**Posta indesiderata costituita da falsi rapporti di mancato recapito di NDR** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* è un inutile rapporto di mancato recapito (noto anche come rapporti di mancato recapito o messaggi di mancato recapito) causato dai mittenti contraffatti nei messaggi di posta elettronica. Per ulteriori informazioni, vedere [Backscatter messages ed EOP.](backscatter-messages-and-eop.md) <p> Non è necessario configurare questa impostazione negli ambienti seguenti, perché vengono recapitati IndR legittimi e il backscatter è contrassegnato come posta indesiderata: <ul><li>Organizzazioni di Microsoft 365 con cassette postali di Exchange Online.</li><li>Organizzazioni di posta elettronica locali in cui instradare la posta elettronica *in* uscita tramite EOP.</li></ul> <p> Negli ambienti EOP autonomi che proteggono la posta elettronica in ingresso nelle cassette postali locali, l'attivazione o la disattivazione di questa impostazione ha il risultato seguente: <ul><li> **On**: I nomi di mancato recapito legittimi vengono recapitati e il backscatter viene contrassegnato come posta indesiderata.</li><li>**Disattivato:** i messaggi di mancato recapito legittimi e i backscatter passano attraverso il normale filtro della posta indesiderata. La maggior parte dei nomi di mancato recapito legittimi verrà recapitata al mittente del messaggio originale. Alcuni, ma non tutti, i backscatter sono contrassegnati come posta indesiderata ad alta probabilità. Per definizione, il backscatter può essere recapitato solo al mittente contraffatto, non al mittente originale.</li></ul> <p> La modalità test non è disponibile per questa impostazione.|`X-CustomSpam: Backscatter NDR`|
+|**Posta indesiderata costituita da falsi rapporti di mancato recapito di NDR** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* è un inutile rapporto di mancato recapito (noto anche come rapporti di mancato recapito o messaggi di mancato recapito) causato dai mittenti contraffatti nei messaggi di posta elettronica. Per ulteriori informazioni, vedere [Backscatter messages ed EOP.](backscatter-messages-and-eop.md) <p> Non è necessario configurare questa impostazione negli ambienti seguenti, perché vengono recapitati IndR legittimi e il backscatter è contrassegnato come posta indesiderata: <ul><li>Microsoft 365 le organizzazioni con Exchange Online cassette postali.</li><li>Organizzazioni di posta elettronica locali in cui instradare la posta elettronica *in* uscita tramite EOP.</li></ul> <p> Negli ambienti EOP autonomi che proteggono la posta elettronica in ingresso nelle cassette postali locali, l'attivazione o la disattivazione di questa impostazione ha il risultato seguente: <ul><li> **On**: I nomi di mancato recapito legittimi vengono recapitati e il backscatter viene contrassegnato come posta indesiderata.</li><li>**Disattivato:** i messaggi di mancato recapito legittimi e i backscatter passano attraverso il normale filtro della posta indesiderata. La maggior parte dei nomi di mancato recapito legittimi verrà recapitata al mittente del messaggio originale. Alcuni, ma non tutti, i backscatter sono contrassegnati come posta indesiderata ad alta probabilità. Per definizione, il backscatter può essere recapitato solo al mittente contraffatto, non al mittente originale.</li></ul> <p> La modalità test non è disponibile per questa impostazione.|`X-CustomSpam: Backscatter NDR`|
 |

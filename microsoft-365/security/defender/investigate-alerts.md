@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297129"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651351"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Analizzare gli avvisi in Microsoft 365 Defender
 
@@ -59,7 +59,7 @@ Dalla coda degli avvisi predefinita, è  possibile selezionare **Filtri** per vi
 - Categoria
 - Origine di rilevamento
 - Tag
-- Criteri
+- Criterio
 - Asset influenzati
 
 ## <a name="analyze-an-alert"></a>Analizzare un avviso
@@ -72,14 +72,12 @@ Per visualizzare la pagina di avviso principale, selezionare il nome dell'avviso
 
 Una pagina di avviso è composta da queste sezioni: 
 
-- Alert story
-- Azioni intraprese (incluse le risorse influenzate)
-- Eventi correlati
+- Alert story, ovvero la catena di eventi e avvisi correlati a questo avviso in ordine cronologico
 - Dettagli di riepilogo
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel centro sicurezza Microsoft 365 sicurezza":::
 
-In tutta una pagina di avviso, puoi selezionare i puntini di sospensione (**...**) accanto a qualsiasi entità per visualizzare le azioni disponibili, ad esempio l'apertura della pagina di asset specifica o la procedura di correzione specifica.
+In tutta una pagina di avviso, è possibile selezionare i puntini di sospensione (**...**) accanto a qualsiasi entità per visualizzare le azioni disponibili, ad esempio l'apertura della pagina di avviso o il collegamento dell'avviso a un altro evento imprevisto.
 
 ### <a name="analyze-affected-assets"></a>Analizzare gli asset interessati
 

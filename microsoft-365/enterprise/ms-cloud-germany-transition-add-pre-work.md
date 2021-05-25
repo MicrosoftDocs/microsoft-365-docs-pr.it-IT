@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: pre-lavorare quando si esegue il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a Office 365 servizi nella nuova area data center tedesca.'
-ms.openlocfilehash: f872a75ed11bfd53c2100f1370a4e22426437bff
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344699"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651021"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Attività di pre-migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -205,7 +205,7 @@ Se si usa un servizio di terze parti o app line-of-business integrate con Office
 Se si utilizza la stessa partizione di identità di Azure Active Directory per Office 365 e Microsoft Azure nell'istanza di Microsoft Cloud Deutschland, assicurarsi di prepararsi per la migrazione guidata dal cliente dei servizi Microsoft Azure.
 
 > [!NOTE]
-> La migrazione dei servizi Microsoft Azure deve essere avviata prima che il tenant di Office 365 raggiunga la fase di migrazione 3 e deve essere completato prima del completamento della fase di migrazione 8.
+> La migrazione dei servizi Microsoft Azure potrebbe non essere avviata prima che il tenant di Office 365 raggiunga la fase di migrazione 9 e deve essere completato prima del completamento della fase di migrazione 10.
 
 I clienti che usano Office 365 e le risorse di Azure (ad esempio, rete, calcolo e archiviazione) eseguiranno la migrazione delle risorse all'istanza Office 365 services. Questa migrazione è responsabilità del cliente. I post del Centro messaggi segnaleranno l'inizio. La migrazione deve essere completata prima della finalizzazione dell'organizzazione di Azure AD nell'ambiente Office 365 services. Per le migrazioni di Azure, vedere il playbook sulla migrazione di Azure, [Panoramica delle indicazioni per la migrazione per Azure Germania.](https://docs.microsoft.com/azure/germany/germany-migration-main)
 
@@ -234,7 +234,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 

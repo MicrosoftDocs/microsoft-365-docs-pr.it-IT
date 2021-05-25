@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: comprendere le azioni e gli impatti delle fasi di migrazione del passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a servizi Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: a99103083c8fabae3934a6622acc55a59ff5c9a0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346293"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651112"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Azioni e impatti delle fasi di migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -305,12 +305,15 @@ Nel caso di app line-of-business, assicurati di aver completato la procedura pre
 
 **Si applica a:** Tutti i clienti
 
-Quando il tenant Office 365 completa il passaggio finale della migrazione (Azure AD Finalization (Fase 9)) tutti i servizi vengono transitati a livello mondiale. Nessuna applicazione o utente deve accedere alle risorse per il tenant in uno qualsiasi degli endpoint di Microsoft Cloud Deutschland. Automaticamente, 30 giorni dopo il completamento della finalizzazione, il servizio Microsoft Cloud Deutschland Azure AD interromperà l'accesso degli endpoint per il tenant di transizione. Le richieste degli endpoint, ad esempio l'autenticazione, avranno esito negativo da questo punto in avanti nel servizio Microsoft Cloud Deutschland. 
+Quando il tenant Office 365 completa il passaggio finale della migrazione (Fase 9: Finalizzazione di Azure AD), tutti i servizi vengono transitati a livello mondiale. Nessuna applicazione o utente deve accedere alle risorse per il tenant in uno qualsiasi degli endpoint di Microsoft Cloud Deutschland. Automaticamente, 30 giorni dopo il completamento della finalizzazione, il servizio Microsoft Cloud Deutschland Azure AD interromperà l'accesso degli endpoint per il tenant di transizione. Le richieste degli endpoint, ad esempio l'autenticazione, avranno esito negativo da questo punto in avanti nel servizio Microsoft Cloud Deutschland.  
+
+Microsoft Azure i clienti devono eseguire la transizione dei carichi di lavoro di Azure seguendo i passaggi descritti nel [playbook](/azure/germany/germany-migration-main) di migrazione di Azure non appena il tenant completa la migrazione a livello mondiale (Fase 9).  
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
 | Aggiornare gli endpoint utente | Verificare che tutti gli utenti accertano il servizio utilizzando gli endpoint Microsoft in tutto il mondo adeguati |30 giorni dopo la finalizzazione della migrazione, gli endpoint di Microsoft Cloud Deutschland smetteranno di rispettare le richieste; il traffico del client o dell'applicazione avrà esito negativo.  |
 | Aggiornare gli endpoint dell'applicazione Azure AD | È necessario aggiornare gli endpoint di autenticazione, Azure Active Directory (Azure AD) Graph e MS Graph per le applicazioni a quelli del servizio Microsoft Worldwide. | 30 giorni dopo la finalizzazione della migrazione, gli endpoint di Microsoft Cloud Deutschland smetteranno di rispettare le richieste; il traffico del client o dell'applicazione avrà esito negativo. |
+| Eseguire la migrazione dei carichi di lavoro di Azure | I clienti dei servizi di Azure devono effettuare il provisioning di nuove sottoscrizioni a livello mondiale per i servizi di Azure ed eseguire la migrazione in base al [playbook di migrazione di Azure.](/azure/germany/germany-migration-main) | Quando si esegue la transizione completa al servizio globale (fase 10), i clienti non saranno più in grado di accedere ai carichi di lavoro di Azure presenti nel portale di Azure di Microsoft Cloud Deutschland. |
 ||||
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect

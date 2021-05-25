@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 865aa9dc34a91be251d6f7772da5cc686f9641a4
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300086"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651315"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Analizzare gli eventi imprevisti in Microsoft 365 Defender
 
@@ -86,7 +86,19 @@ Di seguito viene riportato un esempio.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Esempio di pagina Avvisi per un evento imprevisto":::
 
-Per impostazione predefinita, gli avvisi vengono ordinati cronologicamente per consentire di vedere come si è verificata l'evento imprevisto nel tempo. La selezione di ogni avviso consente di accedere alla pagina principale dell'avviso, in cui è possibile eseguire un'analisi approfondita dell'avviso. 
+Per impostazione predefinita, gli avvisi vengono ordinati cronologicamente per consentire di vedere come si è verificata l'evento imprevisto nel tempo. Quando si seleziona un avviso all'interno di un evento imprevisto, Microsoft 365 Defender visualizza le informazioni di avviso specifiche per il contesto dell'evento imprevisto complessivo. 
+
+È possibile visualizzare gli eventi dell'avviso, che altri avvisi attivati hanno causato l'avviso corrente, e tutte le entità e le attività interessate dall'attacco, inclusi file, utenti e cassette postali.
+
+Di seguito viene riportato un esempio.
+
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Esempio di pagina dei dettagli di un avviso all'interno di un evento imprevisto":::
+
+Questa pagina di avviso per gli eventi imprevisti è composta dalle sezioni seguenti:
+
+- Alert story, che include un riepilogo dell'accaduto
+- Eventi e avvisi correlati
+- Dettagli di riepilogo
 
 Informazioni su come usare le pagine di avviso e coda di avviso in [Analizzare gli avvisi.](investigate-alerts.md)
 
@@ -112,6 +124,9 @@ Nella **scheda Utenti** sono elencati tutti gli utenti identificati come parte o
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Esempio di pagina Utenti per un evento imprevisto":::
 
 È possibile selezionare il segno di spunta per un utente per visualizzare i dettagli della minaccia, dell'esposizione e delle informazioni di contatto dell'account utente. Selezionare il nome utente per visualizzare ulteriori dettagli sull'account utente.
+
+Informazioni su come visualizzare informazioni aggiuntive sugli utenti e gestire gli utenti di un evento imprevisto in [Analizzare gli utenti](investigate-users.md).
+
 
 ## <a name="mailboxes"></a>Cassette postali
 

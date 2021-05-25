@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994998"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651273"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novità di Microsoft Defender per Endpoint su Mac
 
@@ -37,6 +37,14 @@ ms.locfileid: "51994998"
 
 > [!IMPORTANT]
 > In macOS 11 (Big Sur), Microsoft Defender for Endpoint richiede profili di configurazione aggiuntivi. Se sei un cliente esistente che esegue l'aggiornamento da versioni precedenti di macOS, assicurati di distribuire i profili di configurazione aggiuntivi elencati [in questa pagina.](mac-sysext-policies.md)
+
+## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0)
+
+- A partire da questa versione, le minacce rilevate durante le analisi antivirus su richiesta attivate tramite il client della riga di comando vengono corretti automaticamente. Le minacce rilevate durante le analisi attivate tramite l'interfaccia utente richiedono comunque un'azione manuale.
+- `mdatp diagnostic real-time-protection-statistics` ora supporta due opzioni aggiuntive:
+  - `--sort`: ordina l'output in ordine decrescente in base al numero totale di file analizzati
+  - `--top N`: visualizza i primi N risultati (funziona solo se `--sort` viene specificato anche)
+- Miglioramenti delle prestazioni (in particolare per l'utilizzo di YARN) & correzioni di bug
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
 
@@ -114,7 +122,7 @@ ms.locfileid: "51994998"
 
 ## <a name="1010723"></a>101.07.23
 
-- Sono stati aggiunti nuovi campi all'output di `mdatp --health` per controllare lo stato della modalità passiva e l'ID gruppo EDR
+- Sono stati aggiunti nuovi campi all'output di per controllare lo stato della modalità passiva e `mdatp --health` l'ID EDR gruppo di lavoro
 
   > [!NOTE]
   > `mdatp --health` verrà sostituito con `mdatp health` in un aggiornamento futuro del prodotto.
@@ -178,9 +186,9 @@ ms.locfileid: "51994998"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> Per garantire la protezione più completa per i dispositivi macOS e in linea con l'interruzione della distribuzione di aggiornamenti della sicurezza nativa di Apple a versioni del sistema operativo precedenti a [current – 2], la distribuzione e gli aggiornamenti di MDATP per Mac non saranno più supportati in macOS Sierra [10.12]. Gli aggiornamenti e i miglioramenti di MDATP per Mac verranno recapitati ai dispositivi che eseguono versioni Catalina [10.15], Mojave [10.14] e High Sierra [10.13]. 
+> Per garantire la protezione più completa per i dispositivi macOS e in linea con l'interruzione della distribuzione di aggiornamenti della sicurezza nativa di Apple a versioni del sistema operativo precedenti a [corrente – 2], la distribuzione e gli aggiornamenti di MDATP per Mac non saranno più supportati in macOS Sierra [10.12]. MDATP aggiornamenti e miglioramenti per Mac verranno recapitati ai dispositivi che eseguono versioni Catalina [10.15], Mojave [10.14] e High Sierra [10.13]. 
 >
-> Se nei dispositivi Sierra [10.12] è già stato distribuito MDATP per Mac, eseguire l'aggiornamento alla versione più recente di macOS per eliminare i rischi di perdita della protezione.
+> Se hai già distribuito MDATP per Mac nei dispositivi Sierra [10.12], eseguire l'aggiornamento alla versione più recente di macOS per eliminare i rischi di perdita di protezione.
 
 - Miglioramenti delle prestazioni & correzioni di bug
 
@@ -231,6 +239,6 @@ ms.locfileid: "51994998"
   > Il meccanismo per concedere questo consenso dipende dalla modalità di distribuzione di Microsoft Defender per Endpoint:
   >
   > - Per le distribuzioni manuali, vedere le istruzioni aggiornate [nell'argomento Distribuzione](mac-install-manually.md#how-to-allow-full-disk-access) manuale.
-  > - Per le distribuzioni gestite, vedere le istruzioni aggiornate negli argomenti sulla distribuzione basata su [JAMF](mac-install-with-jamf.md) e sulla distribuzione basata [su Microsoft Intune.](mac-install-with-intune.md#create-system-configuration-profiles)
+  > - Per le distribuzioni gestite, vedere le istruzioni aggiornate negli argomenti sulla distribuzione basata su [JAMF](mac-install-with-jamf.md) [Microsoft Intune e sulla distribuzione basata su](mac-install-with-intune.md#create-system-configuration-profiles) Microsoft Intune.
 
 - Miglioramenti delle prestazioni & correzioni di bug

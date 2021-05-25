@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4be0960e8ba868df2acb313b171a08f667c287a7
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933338"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651333"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacy per Microsoft Defender per Endpoint su Linux
 
@@ -135,7 +135,8 @@ Vengono raccolti i campi seguenti:
 | cloud_service.service_uri                           | URI usato per comunicare con il cloud. |
 | cloud_service.diagnostic_level                      | Livello di diagnostica del dispositivo (obbligatorio, facoltativo). |
 | cloud_service.automatic_sample_submission           | Livello di invio di esempio automatico del dispositivo (nessuno, sicuro, tutti). |
-| edr.early_preview                                   | Indica se il dispositivo deve eseguire le funzionalità di anteprima anticipata edR. |
+| cloud_service.automatic_definition_update_enabled   | Indica se l'aggiornamento automatico delle definizioni è attivato o meno. |
+| edr.early_preview                                   | Indica se il dispositivo deve essere eseguito EDR funzionalità di anteprima anticipata. |
 | edr.group_id                                        | Identificatore di gruppo utilizzato dal componente di rilevamento e risposta. |
 | edr.tags                                            | Tag definiti dall'utente. |
 | funzionalità. \[ nome funzionalità facoltativo\]                  | Elenco delle funzionalità di anteprima, insieme al fatto che siano abilitate o meno. |
@@ -173,7 +174,7 @@ Vengono raccolti i campi seguenti:
 
 #### <a name="support-data"></a>Dati di supporto
 
-**Log di diagnostica**
+**Registri diagnostici**
 
 I log di diagnostica vengono raccolti solo con il consenso dell'utente come parte della funzionalità di invio del feedback. I file seguenti vengono raccolti come parte dei registri di supporto:
 
@@ -207,6 +208,7 @@ Vengono raccolti i campi seguenti:
 | antivirus_engine.scan_cache_maximum                | Dimensioni della cache del prodotto. |
 | antivirus_engine.maximum_scan_threads              | Numero massimo di thread utilizzati per l'analisi. |
 | antivirus_engine.threat_restoration_exclusion_time | Timeout prima che un file ripristinato dalla quarantena possa essere rilevato di nuovo. |
+| antivirus_engine.threat_type_settings              | Configurazione per la modalità di gestione dei diversi tipi di minacce da parte del prodotto. |
 | filesystem_scanner.full_scan_directory             | Directory di analisi completa. |
 | filesystem_scanner.quick_scan_directories          | Elenco delle directory utilizzate per l'analisi rapida. |
 | edr.latency_mode                                   | Modalità di latenza utilizzata dal componente di rilevamento e risposta. |

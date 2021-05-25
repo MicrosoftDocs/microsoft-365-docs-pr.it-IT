@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40d86f9f3a4896bbe788f0a9894a7e08efe3a690
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301729"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651381"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>Reindirizzamento degli account da Microsoft Defender per Office 365 al centro sicurezza Microsoft 365 sicurezza
 
@@ -64,13 +64,13 @@ Per avviare l'instradamento degli account al centro sicurezza Microsoft 365 in s
 > Dopo aver abilitato il reindirizzamento, gli account nelle sessioni attive mentre questa impostazione viene applicata non verranno espulsi dalla sessione e verranno instradati al Centro sicurezza Microsoft 365 solo dopo aver terminare la sessione corrente e aver effettuato di nuovo l'accesso.
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>È possibile tornare a usare il portale precedente?
-Se qualcosa non funziona per te o se c'è qualcosa che non puoi completare tramite il portale del centro sicurezza Microsoft 365, vogliamo sentirlo usando l'opzione di feedback del portale. Se hai riscontrato problemi con il reindirizzamento, ti invitiamo a contattare il tuo amico pm direttamente tramite l'anteprima privata o contattarci tramite il modulo Invia feedback.
+Se qualcosa non funziona per te o se c'è qualcosa che non puoi completare tramite il portale del centro sicurezza Microsoft 365, vogliamo sentirlo usando l'opzione di feedback del portale. Se si sono verificati problemi con il reindirizzamento, contattaci.
 
 Per ripristinare il portale precedente:
 
 1. [Accedere al](https://security.microsoft.com/) Centro sicurezza Microsoft 365 come amministratore globale oppure usare e account con autorizzazioni di amministratore della sicurezza in Azure Active Directory.
 
-2. Passare a **Impostazioni**  >  **endpoint di**  >  **reindirizzamento**  >  **del portale generale**.  
+2. Passare **a** Impostazioni  >  **e-mail & reindirizzamento del** portale  >  **di collaborazione**.   
 
 3. Attivare o disattivare l'impostazione Reindirizzamento **automatico**.
 

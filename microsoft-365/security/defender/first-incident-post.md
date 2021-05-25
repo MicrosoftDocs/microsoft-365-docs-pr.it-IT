@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297153"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651369"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Passaggio 3. Eseguire una revisione post-incidente del primo evento imprevisto
 
@@ -36,7 +36,7 @@ ms.locfileid: "52297153"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Il National Institute of Standards and Technology (NIST) consiglia che, dopo aver intrapreso tutti i passaggi per il ripristino dall'attacco, le organizzazioni devono esaminare l'incidente per imparare da esso e imparare e migliorare la postura o i processi di sicurezza. La valutazione dei diversi aspetti della gestione degli eventi imprevisti diventa importante nella preparazione per l'evento imprevisto successivo.
+Il National Institute of Standards and Technology (NIST) consiglia che dopo aver intrapreso tutti i passaggi per il ripristino dall'attacco, le organizzazioni devono esaminare l'incidente per imparare da esso e migliorare la sicurezza o i processi. La valutazione dei diversi aspetti della gestione degli eventi imprevisti diventa importante nella preparazione per l'evento imprevisto successivo.
 
 Microsoft 365 Defender può assistere nell'esecuzione di attività post-incidente fornendo a un'organizzazione avvisi in linea con [MITRE ATT&CK Framework.](https://attack.mitre.org/) Tutte le soluzioni Microsoft Defender etichettano gli attacchi in conformità con una tecnica o una tattica ATT&CK. 
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2e47b35646a1cd6e1075d80f9ed0550e8e1e819f
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299965"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651393"
 ---
 # <a name="get-incident-notifications-by-email"></a>Ricevere notifiche di eventi imprevisti tramite posta elettronica
 
@@ -72,7 +72,7 @@ Seguire questa procedura per creare una nuova regola e personalizzare le imposta
 
 Per modificare una regola esistente, selezionarla nell'elenco delle regole. Nel riquadro con il nome  della regola selezionare Modifica regola e apportare le modifiche nelle pagine Nozioni di **base,** Impostazioni di **notifica** **e** Destinatari.
 
-Per modificare una regola esistente, selezionarla nell'elenco delle regole. Nel riquadro con il nome della regola selezionare **Elimina.**
+Per eliminare una regola, selezionarla dall'elenco delle regole. Nel riquadro con il nome della regola selezionare **Elimina.**
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica sugli incidenti](incidents-overview.md)

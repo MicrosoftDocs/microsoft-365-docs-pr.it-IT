@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625402"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651159"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Gestire gli argomenti nel Centro argomenti in Microsoft Viva Topics
 
@@ -64,7 +64,7 @@ I knowledge manager aiutano a guidare gli argomenti individuati nelle varie fasi
 Per gestire gli argomenti nel Centro argomenti, è necessario:
 - Avere una licenza di Viva Topics.
 
-- Disporre [**dell'autorizzazione Who gestire gli argomenti.**](./topic-experiences-user-permissions.md) Gli amministratori delle conoscenze possono assegnare questa autorizzazione nelle impostazioni delle autorizzazioni per gli argomenti di Viva Topics. 
+- Disporre [**dell'autorizzazione Who gestire gli argomenti.**](./topic-experiences-user-permissions.md) Gli amministratori delle informazioni possono assegnare questa autorizzazione nelle impostazioni delle autorizzazioni per gli argomenti di Viva Topics. 
 
 Non sarà possibile visualizzare  la pagina Gestisci argomenti nel Centro argomenti a meno che non si dispone dell'autorizzazione Who **gestire gli** argomenti.
 
@@ -119,3 +119,11 @@ Tieni presente che puoi comunque scegliere di rifiutare un argomento confermato.
 Gli argomenti pubblicati sono stati modificati in modo che informazioni specifiche vengano sempre visualizzate a chiunque incontri la pagina. Qui sono elencati anche gli argomenti creati manualmente.
 
    ![Gestire gli argomenti](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="topic-count-dashboard"></a>Dashboard conteggio argomenti
+
+Questo grafico nella visualizzazione dashboard consente di visualizzare il numero di argomenti nel centro argomenti Viva Topics. Il grafico mostra i conteggi degli argomenti per ogni fase del ciclo di vita dell'argomento e mostra anche l'andamento dei conteggi degli argomenti nel tempo. I knowledge manager possono monitorare visivamente la frequenza con cui i nuovi argomenti vengono individuati dall'IA e la frequenza con cui gli argomenti vengono confermati o pubblicati dal knowledge manager o dalle azioni degli utenti.
+
+I knowledge manager potrebbero visualizzare un numero diverso di argomenti rappresentati nell'elenco degli argomenti nella pagina **Gestisci** argomenti rispetto a quelli visualizzati nel dashboard. Ciò è dovuto al fatto che un responsabile della conoscenza potrebbe non avere accesso a tutti gli argomenti. Il conteggio presentato nella visualizzazione dashboard viene effettuato prima di applicare la limitazione delle autorizzazioni. 
+
+   ![Screenshot del dashboard per il conteggio degli argomenti](../media/knowledge-management/topic-count-dashboard.png)
