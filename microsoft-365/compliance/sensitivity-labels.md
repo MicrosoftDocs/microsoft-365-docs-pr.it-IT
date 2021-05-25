@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bd3cc0a71fab9f2ceb6d3219a371bb4d5c030744
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 171f449a8b73ff42113358d50dbe8bde909f5d4d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297249"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625186"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -209,7 +209,7 @@ Quando si configura un criterio di etichetta, è possibile:
 
 Quando si crea un criterio di etichetta che assegna nuove etichette di riservatezza a utenti e gruppi, gli utenti iniziano a vedere le etichette nelle app di Office. Possono essere necessarie fino a 24 ore perché le ultime modifiche siano replicate in tutta l’organizzazione.
 
-Non esiste un numero limite di etichette di riservatezza che è possibile creare e pubblicare, con un'eccezione: se l'etichetta applica la crittografia, è possibile creare un massimo di 500 etichette. Tuttavia, come procedura consigliata per ridurre al minimo i sovraccarichi per gli amministratori e le difficoltà per gli utenti, cercare di creare un numero limitato di etichette. Le distribuzioni nel mondo reale hanno evidenziato un'efficacia notevolmente ridotta nei casi in cui gli utenti hanno più di cinque etichette principali, oppure più di cinque sottoetichette per ogni etichetta principale.
+Non c'è limite al numero di etichette di riservatezza che è possibile creare e pubblicare, salvo un'eccezione: se l'etichetta applica la crittografia che specifica gli utenti e le autorizzazioni, sono supportate un massimo di 500 etichette. Tuttavia, come procedura consigliata per ridurre al minimo i sovraccarichi per gli amministratori e le difficoltà per gli utenti, cercare di creare un numero limitato di etichette. Le distribuzioni nel mondo reale hanno evidenziato un'efficacia notevolmente ridotta nei casi in cui gli utenti hanno più di cinque etichette principali, oppure più di cinque sottoetichette per ogni etichetta principale.
 
 ### <a name="label-policy-priority-order-matters"></a>Priorità dei criteri di etichetta (l’ordine è importante)
 
@@ -253,7 +253,7 @@ Se non si ha familiarità con Azure Information Protection o se l’utente è un
 > [!NOTE]
 > La gestione delle etichette di Azure Information Protection nel portale di Azure è stata deprecata il **31 marzo 2021**. Per altre informazioni, vedere l'avviso ufficiale di [funzionalità deprecata](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-Se il tenant non è ancora presente nella [piattaforma di etichettatura unificata](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), è necessario prima attivare l'etichettatura unificata per poter usare le etichette di riservatezza. Per istruzioni, vedere [Come eseguire la migrazione di etichette di Azure Information Protection a etichette di riservatezza unificate](/azure/information-protection/configure-policy-migrate-labels). 
+Se il tenant non è ancora presente nella [piattaforma di etichettatura unificata](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), è necessario prima attivare l'etichettatura unificata per poter usare le etichette di riservatezza. Per istruzioni, vedere [Come eseguire la migrazione di etichette di Azure Information Protection a etichette di riservatezza unificate](/azure/information-protection/configure-policy-migrate-labels). 
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Etichette di riservatezza e Microsoft Information Protection SDK
 

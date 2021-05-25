@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Per informazioni su come eseguire il pilota della funzionalità di posta elettronica dal dominio personalizzato a una cassetta postale di Microsoft 365 usando solo due account di test.
-ms.openlocfilehash: bdcf86474a7f2edb458075e884c20e56d231df6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2017da30aba3b48b51de26b7907167dc5dd3e6e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197840"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623646"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Eseguire il pilota Microsoft 365 dal dominio personalizzato
 
@@ -60,7 +60,7 @@ Seguire i passaggi seguenti per configurare un progetto pilota di Microsoft 365:
 
 3. Selezionare i servizi che si desidera testare con il dominio, ad esempio la posta elettronica e la messaggistica istantanea.
 
-5. Nella pagina **Verifica** dominio, seguire le istruzioni dettagliate e quindi selezionare **Verificare**.
+4. Nella pagina **Verifica** dominio, seguire le istruzioni dettagliate e quindi selezionare **Verificare**.
 
     L'applicazione delle modifiche apportate al DNS richiede da pochi minuti a 72 ore.
 
@@ -70,7 +70,7 @@ Seguire i passaggi seguenti per configurare un progetto pilota di Microsoft 365:
 
 1. Nell'interfaccia di amministrazione di Exchange, nella sezione **Flusso di posta**, selezionare **Domini accettati** e quindi selezionare il dominio da modificare.
 
-2. Fare doppio clic per aprire la finestra e quindi selezionare **Inoltro interno**. 
+2. Fare doppio clic per aprire la finestra e quindi selezionare **Inoltro interno**.
 
 3. Seleziona **Salva**.
 
@@ -85,7 +85,7 @@ Microsoft 365 usa Exchange Online Protection (EOP) per la protezione dalla posta
 
 1. Nel riquadro di spostamento dell'interfaccia di amministrazione di Exchange, selezionare **Protezione**, e poi **Filtro connessioni**.
 
-2. In **Elenco indirizzi IP consentiti**, selezionare **+** e quindi aggiungere l'indirizzo IP del server della posta per il provider di posta elettronica corrente. 
+2. In **Elenco indirizzi IP consentiti**, selezionare **+** e quindi aggiungere l'indirizzo IP del server della posta per il provider di posta elettronica corrente.
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>Passaggio 5: Creare gli account utente e impostare l'indirizzo primario per le risposte
 
@@ -97,9 +97,9 @@ Microsoft 365 usa Exchange Online Protection (EOP) per la protezione dalla posta
 
     Per assicurarsi che la posta elettronica di un utente rimanga invariata, il campo **nome utente** deve corrispondere all'indirizzo di posta elettronica corrente dell'utente.
 
-3. Scegliere la licenza appropriata, fare clic su **Avanti** e quindi fare clic su **Completa l'aggiunta**. 
+3. Scegliere la licenza appropriata, fare clic su **Avanti** e quindi fare clic su **Completa l'aggiunta**.
 
-4. Accanto a **Nome utente** selezionare il nome di dominio personalizzato nell'elenco a discesa. 
+4. Accanto a **Nome utente** selezionare il nome di dominio personalizzato nell'elenco a discesa.
 
 5. Selezionare **Crea** > **Chiudi**.
 
@@ -115,7 +115,7 @@ Esistono due procedure:
 
 Assicurarsi di aver completato le operazioni seguenti in Microsoft 365 o Office 365:
 
-1. Per configurare i connettori, è necessario ricevere le autorizzazioni prima di iniziare. Per sapere quali sono le autorizzazioni necessarie, vedere la voce relativa ai connettori Microsoft 365 e Office 365 nell'argomento[Autorizzazioni di funzionalità in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop).
+1. Per configurare i connettori, è necessario ricevere le autorizzazioni prima di iniziare. Per sapere quali sono le autorizzazioni necessarie, vedere la voce relativa ai connettori di Microsoft 365 e Office 365 nell'argomento [Autorizzazioni per le funzionalità in Exchange Online](/exchange/permissions-exo/feature-permissions).
 
 2. Se si desidera che EOP o Exchange Online inoltrino i messaggi dai server di posta elettronica a Internet, scegliere tra:
 
@@ -156,7 +156,7 @@ Accedere al sito Web del proprio provider di hosting DNS e seguire le istruzioni
 
     Ad esempio, "v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all".
 
-    Se non si dispone ancora di un record SPF, modificare quello consigliato da Microsoft 365 in modo da includere il dominio del provider di posta elettronica corrente e aggiungere spf.protection.outlook.com. In questo modo vengono autorizzati i messaggi in uscita da entrambi i sistemi di posta elettronica. 
+    Se non si dispone di un record SPF, modificare quello consigliato da Microsoft 365 in modo da includere il dominio del provider di posta elettronica corrente e spf.protection.outlook.com. In questo modo vengono autorizzati i messaggi in uscita da entrambi i sistemi di posta elettronica. 
 
 ### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>Passaggio 8: Configurare l'inoltro della posta elettronica presso il provider corrente
 

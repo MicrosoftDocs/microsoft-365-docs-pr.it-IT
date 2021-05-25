@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: 448f3e8e2ab827527b02263fea2b07de4b345dc1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 90e94f4ff94b65860890ab65b451107d1d02963f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919772"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625246"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -72,14 +72,12 @@ Per conservare tali contenuti quando un utente tenta di modificarli o eliminarli
   
 Un processo timer pulisce periodicamente la raccolta di archiviazione. Per i contenuti rimasti nella raccolta di archiviazione per più di 30 giorni, questo processo confronta i contenuti con tutte le query usate dalle impostazioni di conservazione per tali contenuti. I contenuti che superano il periodo di conservazione configurato vengono eliminati dalla raccolta di archiviazione e dalla posizione originale, se ancora presenti. Questo processo timer viene eseguito ogni sette giorni. Ciò significa che, oltre al periodo minimo di 30 giorni, possono essere necessari fino a 37 giorni perché il contenuto sia eliminato dalla raccolta di archiviazione.
 
-Nel momento in cui i file vengono mantenuti nella raccolta di archiviazione, gli amministratori non potranno eliminare il sito SharePoint o l'account OneDrive dei contenuti.
-
 Il comportamento correlato alla copia dei file nella raccolta di archiviazione si applica ai contenuti che esistono al momento dell'applicazione dei criteri di conservazione. Inoltre, per i criteri di conservazione, i nuovi contenuti creati o aggiunti al sito in seguito all'inclusione nei criteri, verranno mantenuti nella raccolta di archiviazione. Tuttavia, i nuovi contenuti non vengono copiati nella raccolta di archiviazione al momento della prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il [controllo delle versioni](#how-retention-works-with-document-versions).
   
 Se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetti a conservazione, viene visualizzato un messaggio di errore. È possibile eliminare una cartella se prima di tutto si spostano o si eliminano eventuali file soggetti a conservazione presenti nella cartella.
 
 > [!NOTE]
-> Poiché la Raccolta di archiviazione viene creata solo quando è necessaria e non quando si applicano criteri di conservazione o un’etichetta di conservazione, per consentire questa operazione è necessario innanzitutto modificare o eliminare un elemento soggetto a conservazione. Quindi, passare alla Raccolta di archiviazione per visualizzare la copia conservata.
+> Poiché la raccolta di archiviazione viene creata solo quando è necessaria e non quando si applicano criteri di conservazione o un’etichetta di conservazione, per consentire questa operazione è necessario modificare o eliminare un elemento soggetto a conservazione. Quindi, passare alla Raccolta di archiviazione per visualizzare la copia conservata.
   
 Dopo che le impostazioni di conservazione vengono assegnate ai contenuti di OneDrive o a un sito di SharePoint, i percorsi del contenuto variano in base al fatto che le impostazioni di conservazione siano Conserva ed elimina, Conserva solo o Elimina solo.
 
@@ -118,9 +116,9 @@ Il controllo delle versioni è una caratteristica di tutte gli elenchi e raccolt
   
 Quando un documento con versioni è soggetto a impostazioni di conservazione per conservare tale contenuto, le versioni che vengono copiate nella libreria di conservazione esistono come elemento distinto. Se le impostazioni di conservazione sono configurate per l'eliminazione al termine del periodo di conservazione:
 
-- Se il periodo di conservazione si basa sulla data di creazione del contenuto, ciascuna versione ha la stessa data di scadenza del documento originale.  Il documento originale e le sue versioni scadono tutti allo stesso tempo.
+- Se i criteri di conservazione si basano sulla data di creazione del contenuto, ciascuna versione ha la stessa data di scadenza del documento originale. Il documento originale e le sue versioni scadono tutti allo stesso tempo.
 
-- Se il periodo di conservazione si basa sulla data dell'ultima modifica del contenuto, ciascuna versione ha la propria data di scadenza in base a quando il documento originale è stato modificato per creare quella versione.  i documenti originali e le relative versioni scadono indipendentemente l'uno dall'altro.
+- Se il periodo di conservazione si basa sulla data dell'ultima modifica del contenuto, ciascuna versione ha la propria data di scadenza in base a quando il documento originale è stato modificato per creare quella versione. I documenti originali e le relative versioni scadono indipendentemente l'uno dall'altro.
 
 > [!NOTE]
 > le versioni conservate dei documenti di SharePoint e OneDrive non sono disponibili per la ricerca da parte degli strumenti di eDiscovery.

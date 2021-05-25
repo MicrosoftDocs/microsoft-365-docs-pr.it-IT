@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365 che possono influire sulla condivisione con persone esterne all'organizzazione.
-ms.openlocfilehash: 60ebff4f564e7046a54cb707781acc0151aa8ad9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538112"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625441"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
@@ -38,7 +38,7 @@ Azure Active Directory è il servizio directory utilizzato da Microsoft 365. Le 
 > [!NOTE]
 > Queste impostazioni influiscono su SharePoint solo se è stata configurata [l'integrazione di SharePoint e OneDrive con Azure AD B2B ](/sharepoint/sharepoint-azureb2b-integration-preview). Nella tabella seguente si presuppone che sia stata configurata.
 
-### <a name="organizational-relationships-settings"></a>Impostazioni delle relazioni aziendali
+### <a name="external-collaboration-settings"></a>Impostazioni di collaborazione esterna
 
 **Navigazione:** [Interfaccia di amministrazione di Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Identità esterne > Impostazioni collaborazione esterna
 
@@ -46,11 +46,9 @@ Azure Active Directory è il servizio directory utilizzato da Microsoft 365. Le 
 
 | Impostazione | Impostazione predefinita | Descrizione |
 |:-----|:-----|:-----|
-|Le autorizzazioni degli utenti guest sono limitate|Sì|Questa impostazione interessa le attività della directory che un utente guest può eseguire.|
-|Gli amministratori e gli utenti nel ruolo Mittente dell'invito guest possono inviare inviti|Sì|Se l'impostazione è su **Sì**, gli amministratori possono invitare utenti guest tramite Azure AD e tramite le esperienze di condivisione di Microsoft 365, come Teams e SharePoint; se l'impostazione è su **No**, non possono farlo.|
-|I membri possono invitare|Sì|Se l'impostazione è su **Sì**, i membri di Azure AD possono invitare utenti guest tramite Azure AD; se l'impostazione è su **No**, non possono farlo. Se l'impostazione è su **Sì**, i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari; se l'impostazione è su **No**, i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari ma i proprietari devono essere amministratori globali per concedere l'approvazione. <br><br>Tenere presente che **I membri possono invitare** si riferisce ai membri di Azure AD (anziché agli utenti guest) e non ai membri di siti o gruppi in Microsoft 365. <br><br>È identica all'impostazione **Consenti agli utenti di aggiungere nuovi utenti guest all'organizzazione** in Sicurezza e protezione di Microsoft 365.|
-|Gli utenti guest possono invitare|Sì|Se l'impostazione è su **Sì**, gli utenti guest nella directory possono invitare altri utenti guest a collaborare su risorse di Azure AD e su file e cartelle in SharePoint e OneDrive; se l'impostazione è su **No**, non possono farlo. <br><br>Tenere presente che **Consentire agli utenti esterni di trovare gli account utente nella directory digitando le corrispondenze esatte degli indirizzi di posta elettronica** deve essere attivata nell'interfaccia di amministrazione di SharePoint affinché gli utenti guest possano condividere file e cartelle con altri utenti guest.|
-|Abilita passcode monouso tramite posta elettronica per gli utenti guest (anteprima)|No|Se l'impostazione è su **Sì**, gli utenti guest senza un account del servizio gestito o un account aziendale o dell'istituto di istruzione possono [eseguire l'autenticazione con Azure AD utilizzando un passcode monouso](/azure/active-directory/b2b/one-time-passcode); se l'impostazione è su **No**, gli utenti dovranno creare un account Microsoft per eseguire l'autenticazione. Questa impostazione deve essere su **Sì** affinché [Integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](/sharepoint/sharepoint-azureb2b-integration-preview) funzioni.|
+|Accesso degli utenti guest|Gli utenti guest hanno accesso limitato alle proprietà e alle appartenenze degli oggetti directory|Determina le [autorizzazioni che un utente guest ha in Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
+|Impostazioni per gli inviti degli utenti guest|Tutti gli utenti dell'organizzazione possono invitare gli utenti guest, inclusi gli utenti guest e gli utenti non amministratori|Determina se gli utenti guest, i membri e gli amministratori possono invitare utenti guest nell'organizzazione.<br><br> Questa impostazione influisce sulle esperienze di condivisione di Microsoft 365, ad esempio Teams e SharePoint.|
+|Abilita la registrazione self-service degli utenti guest tramite i flussi utente|No|Determina se è possibile creare flussi utenti che consentono a un utente di registrarsi a un'app e creare un nuovo account guest.|
 |Restrizioni di collaborazione|Consenti l'invio di inviti a qualsiasi dominio|Questa impostazione consente di specificare un elenco di domini autorizzati o bloccati per la condivisione. Se si specificano domini autorizzati, gli inviti di condivisione possono essere inviati solo a tali domini. Se si specificano domini non autorizzati, gli inviti di condivisione non possono essere inviati a tali domini.<br><br> Questa impostazione interessa le esperienze di condivisione di Microsoft 365 come Teams e SharePoint. È possibile autorizzare o bloccare i domini a un livello più granulare utilizzando i filtri per i domini in SharePoint o Teams.|
 
 Questa impostazione influisce sul modo in cui gli utenti sono invitati nella directory. Non influisce sulla condivisione con gli utenti guest già presenti nella directory.

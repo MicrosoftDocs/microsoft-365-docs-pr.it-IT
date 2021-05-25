@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f6fff2bc595e9317ef037929a8a6828935b15bbf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532087"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624682"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -427,6 +427,10 @@ Prima di utilizzare la crittografia, potrebbe essere necessario eseguire alcune 
 - Attivazione della protezione di Azure Information Protection
     
     Per la crittografia nelle etichette di riservatezza, il servizio di protezione (Azure Rights Management) di Azure Information Protection deve essere attivato per il tenant. Nei tenant più recenti, questa è l'impostazione predefinita, ma potrebbe essere necessario attivare il servizio manualmente. Per altre informazioni, vedere [Attivazione del servizio di protezione di Azure Information Protection](/azure/information-protection/activate-service).
+
+- Verificare i requisiti di rete
+    
+    Potrebbe essere necessario apportare alcune modifiche nei dispositivi di rete, ad esempio ai firewall. Per maggiori dettagli, vedere [Firewall e infrastruttura di rete](/azure/information-protection/requirements#firewalls-and-network-infrastructure) dalla documentazione di Azure Information Protection.
 
 - Configurare Exchange per Azure Information Protection
     

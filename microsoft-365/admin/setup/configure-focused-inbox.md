@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
-description: "Informazioni su come configurare Posta in arrivo evidenziata per tutti gli utenti o per utenti specifici dell'organizzazione. "
-ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+description: Se si è responsabili della configurazione delle impostazioni di posta elettronica per tutti gli utenti aziendali, questo articolo spiega come configurare la Posta in arrivo evidenziata per gli utenti.
+ms.openlocfilehash: ddd0886988072139a199bfc3f6e8adbbf25ad58b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644513"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623702"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurare Posta in arrivo evidenziata per tutti gli utenti nell'organizzazione
 
@@ -206,5 +206,10 @@ Sono disponibili due cmdlet per il controllo di Posta in arrivo evidenziata. Qua
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>È possibile eseguire uno script per vedere chi ha attivato la Posta in arrivo evidenziata?
 
-No e si tratta di un comportamento da progettazione. L'abilitazione della Posta in arrivo evidenziata è un'impostazione sul lato client, quindi il cmdlet può solo indicare se la cassetta postale dell'utente è idonea per l'esperienza client. Questa funzionalità potrebbe essere abilitata in alcuni client e disabilitata in altri allo stesso momento, ad esempio abilitata nell'app Outlook e in Outlook Mobile, ma disabilitata in Outlook sul Web.
+No e si tratta di un comportamento da progettazione. L'abilitazione della Posta in arrivo evidenziata è un'impostazione sul lato client, quindi il cmdlet può solo indicare se la cassetta postale dell'utente è idonea per l'esperienza client. Questa funzionalità potrebbe essere abilitata in alcuni client e disabilitata in altri allo stesso momento, ad esempio abilitata nell'app Outlook e in Outlook Mobile, ma disabilitata in Outlook sul web.
 
+## <a name="related-content"></a>Contenuto correlato
+
+[Configurare Messaggi secondari per l'organizzazione](../email/configure-clutter.md) (articolo)\
+[Configurare le impostazioni della cassetta postale condivisa](../email/configure-a-shared-mailbox.md) (articolo)\
+[Creare firme e dichiarazioni di non responsabilità](create-signatures-and-disclaimers.md) (video)
