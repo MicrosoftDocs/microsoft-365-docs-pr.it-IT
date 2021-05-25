@@ -92,14 +92,12 @@
               href: incident-queue.md
             - name: Gestire
               href: manage-incidents.md
-            - name: Investigare
-              items:
-                - name: Panoramica
-                  href: investigate-incidents.md
-                - name: Avvisi
-                  href: investigate-alerts.md
-                - name: Utenti
-                  href: investigate-users.md
+            - name: Indagine
+              href: investigate-incidents.md
+            - name: Avvisi di eventi imprevisti
+              href: investigate-alerts.md
+            - name: Utenti di eventi imprevisti
+              href: investigate-users.md
             - name: Rispondere al primo evento imprevisto
               items:
                 - name: Introduzione
