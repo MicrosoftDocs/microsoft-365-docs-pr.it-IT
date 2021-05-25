@@ -21,12 +21,12 @@ description: 'L Microsoft 365 di amministrazione: informazioni sulle funzionalit
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535747"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639544"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia Microsoft 365 di amministrazione
 
@@ -49,6 +49,24 @@ E se si desidera sapere quali sono le novità con altri servizi cloud Microsoft:
 - [Novità nell'interfaccia SharePoint di amministrazione](/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](/OfficeUpdates/)
 - [Come verificare l'integrità Windows rilascio](/windows/deployment/update/check-release-health)
+
+## <a name="may-2021"></a>Maggio 2021
+
+### <a name="admin-mobile-app"></a>App Admin per dispositivi mobili
+
+### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>Tenere traccia degli aggiornamenti dei ticket di supporto tramite l'app Admin per dispositivi mobili
+
+Per tutte le richieste di servizio create nel tenant è ora possibile tenere traccia dello stato del ticket, visualizzare i dettagli del ticket e fornire/ richiedere informazioni aggiuntive aggiungendo note & allegati. 
+
+:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="Screenshot: Track support ticket updates":::
+
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Tieniti aggiornato su tutti gli aggiornamenti principali per l'app e l'Microsoft 365 abbonamento 
+
+- Tieniti aggiornato su tutti gli aggiornamenti principali dell'abbonamento Microsoft 365 tramite le notifiche push del Centro messaggi (ora abilitate per impostazione predefinita). 
+
+- Tieni traccia delle funzionalità più recenti disponibili **nell'app** usando la sezione Novità. Vai a **Impostazioni**  >  **Novità?**
+
+:::image type="content" source="../media/whats-new-updates.png" alt-text="Screenshot: Track major updates and features":::
 
 ## <a name="april-2021"></a>Aprile 2021
 

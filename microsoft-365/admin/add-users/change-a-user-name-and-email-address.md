@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Informazioni su come un amministratore globale di Microsoft 365 può modificare il nome visualizzato e l'indirizzo di posta elettronica di un utente quando cambia nome. "
-ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535987"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634221"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiare un nome utente e un indirizzo e-mail
 
 Potrebbe essere necessario modificare l'indirizzo e-mail e il nome visualizzato di una persona che, ad esempio, si è sposata e ha cambiato cognome.
 
-Guardare un breve video su come modificare l'indirizzo di posta elettronica di un utente. <br><br>
+## <a name="watch-change-a-users-name-or-email-address"></a>Guarda: cambiare il nome o l'indirizzo di posta elettronica di un utente
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
@@ -253,8 +253,6 @@ Per informazioni su come cambiare il nome di un utente in Active Directory, vede
   
 ## <a name="related-content"></a>Contenuto correlato
 
-[Amministratori: Reimpostare la password di uno o più utenti](reset-passwords.md) (articolo)
-  
-[Aggiungere un altro indirizzo di posta elettronica a un utente](../email/add-another-email-alias-for-a-user.md) (articolo)
-
+[Amministratori: Reimpostare la password di uno o più utenti](reset-passwords.md) (articolo)\
+[Aggiungere un altro indirizzo di posta elettronica a un utente](../email/add-another-email-alias-for-a-user.md) (articolo)\
 [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) (articolo)

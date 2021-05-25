@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537608"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635499"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
@@ -200,12 +200,8 @@ Il calendario della cassetta postale condivisa viene in genere preferito a un ca
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) (articolo)
-
-[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md) (articolo)
-
-[Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md) (articolo)
-
-[Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md) (articolo)
-
+[Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) (articolo)\
+[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md) (articolo)\
+[Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md) (articolo)\
+[Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md) (articolo)\
 [Risolvere i problemi relativi alle cassette postali condivise](resolve-issues-with-shared-mailboxes.md) (articolo)

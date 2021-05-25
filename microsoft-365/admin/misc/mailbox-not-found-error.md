@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: L'errore **Non è stato possibile trovare una cassetta postale per** indica che l'account usato per connettersi a Outlook sul web non ha una licenza di Exchange Online.
-ms.openlocfilehash: 5ae850da3b9a4022c01f8bf4469f5e86f44b10bd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: cb82f917adca8f1fc183fd9516321a524c63eb69
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537440"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635787"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>Si sta ricevendo l'errore "Non è stato possibile trovare una cassetta postale per" in Outlook sul web?
 
@@ -37,8 +37,6 @@ L'amministratore può assegnare una licenza all'account seguendo questa procedur
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Aggiungere un altro alias di posta elettronica per un utente](../email/add-another-email-alias-for-a-user.md) (articolo)
-
-[Configurare l'inoltro della posta elettronica in Microsoft 365](../email/configure-email-forwarding.md) (articolo)
-
+[Aggiungere un altro alias di posta elettronica per un utente](../email/add-another-email-alias-for-a-user.md) (articolo)\
+[Configurare l'inoltro della posta elettronica in Microsoft 365](../email/configure-email-forwarding.md) (articolo)\
 [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) (articolo)
