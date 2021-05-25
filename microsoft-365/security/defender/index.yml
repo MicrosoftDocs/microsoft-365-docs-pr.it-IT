@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft 365 Defender
-summary: Informazioni sulle soluzioni di sicurezza affidabili in Microsoft 365 Defender, in modo da poter proteggere meglio l'azienda dalle superfici di attacco.
+summary: Scopri le soluzioni di sicurezza affidabili in Microsoft 365 Defender per proteggere meglio la tua azienda dalle superfici di attacco.
 metadata:
-  title: Documentazione di Microsoft 365 Defender
-  description: Informazioni sulle soluzioni di sicurezza affidabili in Microsoft 365 Defender, in modo da poter proteggere meglio l'azienda dalle superfici di attacco.
+  title: Microsoft 365 Documentazione di Defender
+  description: Scopri le soluzioni di sicurezza affidabili in Microsoft 365 Defender per proteggere meglio la tua azienda dalle superfici di attacco.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 1085b54a4b879a316b57cad89e138a73c871370e
-  ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+  ms.openlocfilehash: b10d9eebf8ed98e06e98c1e73722f7b3b0d7ba87
+  ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/20/2021
-  ms.locfileid: "51904177"
+  ms.lasthandoff: 05/25/2021
+  ms.locfileid: "52639392"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -28,7 +28,7 @@ landingContent:
       url: ../defender/microsoft-365-defender.md
   - linkListType: whats-new
     links:
-    - text: Novità di iMicrosoft 365 Defender
+    - text: Novità di Microsoft 365 Defender
       url: ../defender/whats-new.md
   - linkListType: video
     links:
@@ -90,7 +90,7 @@ landingContent:
     links:
     - text: Panoramica del Centro sicurezza Microsoft 365
       url: overview-security-center.md
-    - text: Microsoft Defender for Endpoint nel Centro sicurezza Microsoft 365
+    - text: Microsoft Defender for Endpoint nel centro sicurezza Microsoft 365 sicurezza
       url: microsoft-365-security-center-mde.md
     - text: Microsoft Defender per Office 365 nel Centro sicurezza Microsoft 365
       url: ../defender/microsoft-365-security-center-mdo.md
@@ -118,5 +118,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: API di Microsoft 365 Defender (anteprima)
+    - text: Microsoft 365 API Defender (anteprima)
       url: api-overview.md
