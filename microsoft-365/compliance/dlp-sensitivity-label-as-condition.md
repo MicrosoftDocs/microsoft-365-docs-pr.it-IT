@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: informazioni sui servizi e sui tipi di elementi che è possibile usare nelle etichette di riservatezza come condizioni per i criteri di prevenzione della perdita dei dati
-ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876295"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651093"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Usare le etichette di riservatezza come condizioni per i criteri di prevenzione della perdita dei dati
 
@@ -54,7 +54,7 @@ Le etichette di riservatezza sono mostrate come opzioni dell'elenco **Il contenu
 |Servizio  |Tipo di elemento  |Disponibile per suggerimento per i criteri  |Applicabile  |
 |---------|---------|---------|---------|
 |Exchange    |messaggio di posta elettronica         |sì         |sì         |
-|Exchange    |allegato di posta elettronica         |no *         |sì*         |
+|Exchange    |allegato di posta elettronica         |no         |sì*         |
 |SharePoint Online     |elementi di SharePoint Online         |sì         |sì         |
 |OneDrive for Business     |elementi         |sì         |sì         |
 |Teams     |Messaggi di Teams e dei canali         |non applicabile         |non applicabile         |
@@ -62,7 +62,7 @@ Le etichette di riservatezza sono mostrate come opzioni dell'elenco **Il contenu
 |Dispositivi Windows 10     |elementi         |sì         |sì         |
 |MCAS (anteprima) |elementi         |sì         |sì         |
 
-\* Il rilevamento dei criteri di prevenzione della perdita dei dati e l'applicazione delle etichette di riservatezza nei messaggi di posta elettronica e negli allegati sono supportati durante il trasferimento. I suggerimenti per i criteri di prevenzione della perdita dei dati per le etichette di riservatezza degli allegati dei messaggi non sono supportati.
+\* Il rilevamento dei criteri di prevenzione della perdita dei dati per gli allegati di posta elettronica con etichette è supportato solo per i tipi di file di Office.
 
 \** Gli allegati inviati in Teams tramite chat individuali o canali sono caricati automaticamente su OneDrive for Business e SharePoint. Perciò, se SharePoint Online o OneDrive for Business sono inclusi come posizioni del criteri di prevenzione della perdita dei dati, gli allegati etichettai inviati in Teams saranno inclusi automaticamente nell'ambito di questa condizione. Teams non deve essere selezionato come posizione nel criteri di prevenzione della perdita dei dati.
 

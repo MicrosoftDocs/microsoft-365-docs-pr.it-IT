@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332811"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651009"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introduzione alla prevenzione della perdita di dati degli endpoint
 
@@ -102,7 +102,11 @@ Verificare che i dispositivi Windows 10 in cui si prevede di distribuire Endpoin
     - Per Windows 10 2004 - KB4568831, KB4577063
     - Per i dispositivi che eseguono Office 2016 (e non qualsiasi altra versione di Office) - KB4577063 
 
-4. Tutti i dispositivi devono essere [aggiunti ad Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join), aggiunti ad Active Directory, aggiunti a Azure AD ibrido o registrati a AAD.
+4. Tutti i dispositivi devono essere uno dei seguenti:
+- [Aggiunto ad Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
+- Aggiunto ad Azure AD
+- [Aggiunto ad Azure AD ibrido](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [Registrato ad Azure AD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Installare il browser Microsoft Edge Chromium nel dispositivo endpoint per applicare azioni dei criteri per l'attività di caricamento nel cloud. Vedere [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
