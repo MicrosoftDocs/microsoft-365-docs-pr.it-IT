@@ -1,6 +1,6 @@
 ---
 title: Novità di Microsoft Secure Score
-description: Descrive le nuove modifiche in arrivo in Microsoft Secure Score nel Centro sicurezza Microsoft 365.
+description: Descrive quali nuove modifiche verranno apportate a Microsoft Secure Score nel centro sicurezza Microsoft 365 sicurezza.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,26 +18,28 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d23ec690194f87046e6c5f2ab859201bbf2dede9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 8880f045202fd1c4374e9cec3076144f81eb68d2
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569804"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657718"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Novità di Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score è disponibile nel Centro sicurezza https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+Microsoft Secure Score è disponibile nel centro sicurezza https://security.microsoft.com/securescore [Microsoft 365 sicurezza.](overview-security-center.md)
 
 ## <a name="proposed-changes"></a>Modifiche proposte
 
 Stiamo apportando alcune modifiche nel prossimo futuro per rendere [Microsoft Secure Score](microsoft-secure-score.md) un migliore rappresentante della tua posizione di sicurezza e migliorare l'usabilità. Il punteggio e il punteggio massimo possibile possono cambiare.
 
-### <a name="no-planned-changes"></a>Nessuna modifica pianificata
+### <a name="june-2021"></a>Giugno 2021
 
-Al momento non sono previste modifiche.
+#### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>Rimuovere l'azione di miglioramento correlata Microsoft Cloud App Security
+
+- Usare Cloud App Security per rilevare un comportamento anomalo
 
 ## <a name="related-resources"></a>Risorse correlate
 
