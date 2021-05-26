@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Assegnare a un utente i diritti di accesso alla cassetta postale di un altro utente, per poter leggere e inviare e-mail dalla cassetta postale di quest'ultimo.
-ms.openlocfilehash: 3514be02f2ef82b727edfcf86c0bd3f6b8515510
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e5f7b154fa37ae9775e7208574b2a5395e7c239
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535963"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634281"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Assegnare le autorizzazioni della cassetta postale a un altro utente - Guida per l'amministratore
 
@@ -207,9 +207,7 @@ Dopo la concessione dell'accesso, è possibile accedere a una cassetta postale i
 
 ## <a name="related-content"></a>Contenuto correlato
   
-[Gestire gli elementi di posta e di calendario di un altro utente](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (articolo)
-    
-[Inviare un messaggio di posta elettronica da un altro utente o gruppo](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (articolo)
-
+[Gestire gli elementi di posta e di calendario di un altro utente](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (articolo)\   
+[Inviare un messaggio di posta elettronica da un altro utente o gruppo](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (articolo)\
 [Cambiare un nome utente e un indirizzo e-mail](../add-users/change-a-user-name-and-email-address.md) (video) 
 

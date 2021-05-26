@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Il Domain Name System mappa i nomi host del computer agli indirizzi IP e la comprensione dei concetti fondamentali relativi al DNS e ai registrar faciliterà la gestione dei domini.
-ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582945"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635427"
 ---
 # <a name="dns-basics"></a>Informazioni di base sul DNS
 
@@ -38,6 +38,8 @@ ms.locfileid: "52582945"
 ::: moniker range="o365-worldwide"
 
 I nomi di dominio, ad esempio contoso.com, vengono gestiti mediante un sistema internazionale di registrar e database. Il Domain Name System (DNS) fornisce un mapping tra i nomi host dei computer leggibili e gli indirizzi IP usati dalle apparecchiature di rete. La comprensione dei concetti fondamentali relativi al DNS e ai registrar faciliterà la gestione dei domini.
+
+## <a name="watch-domains--dns-an-overview"></a>Guarda: Domini e DNS: una panoramica
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -46,6 +48,8 @@ I nomi di dominio, ad esempio contoso.com, vengono gestiti mediante un sistema i
 ::: moniker range="o365-germany"
 
 I nomi di dominio, ad esempio contoso.com, vengono gestiti mediante un sistema internazionale di registrar e database. Il Domain Name System (DNS) fornisce un mapping tra i nomi host dei computer leggibili e gli indirizzi IP usati dalle apparecchiature di rete. La comprensione dei concetti fondamentali relativi al DNS e ai registrar faciliterà la gestione dei domini.
+
+## <a name="watch-domains--dns-an-overview"></a>Guarda: Domini e DNS: una panoramica
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -190,9 +194,9 @@ I record DNS necessari per far funzionare Microsoft 365 con il proprio dominio s
   
 È possibile [trovare un elenco dei valori](information-for-dns-records.md) per configurare il dominio. Sono disponibili nell'interfaccia di amministrazione di Microsoft 365. 
   
-In alternativa, se si prevede una distribuzione, è consigliabile rivedere un elenco di tutti i record DNS necessari per Microsoft 365, con la relativa funzione ed esempi di valori. Vedere [Record DNS (Domain Name System) esterni per Microsoft 365](../../enterprise/external-domain-name-system-records.md).
+In alternativa, se si prevede una distribuzione, è consigliabile rivedere un elenco di tutti i record DNS necessari per Microsoft 365, con la relativa funzione ed esempi di valori. Vedere [Record DNS esterno per Office 365](../../enterprise/external-domain-name-system-records.md).
   
-## <a name="how-can-i-learn-more"></a>Altre informazioni
+## <a name="next-steps"></a>Passaggi successivi
 
 Vedere una delle opzioni seguenti: 
   
@@ -201,8 +205,6 @@ Vedere una delle opzioni seguenti:
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Domande frequenti sui domini](../setup/domains-faq.yml) (articolo)
-
-[Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)
-
+[Domande frequenti sui domini](../setup/domains-faq.yml) (articolo)\
+[Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)\
 [Gestire i domini](index.yml) (pagina di collegamento)

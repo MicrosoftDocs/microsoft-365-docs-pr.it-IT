@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: I ruoli di amministratore, quale Amministratore dei servizi, sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione.
-ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3163b7a4037a923122d2da170ac5ea9e8c2d0185
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536011"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634197"
 ---
 # <a name="about-admin-roles"></a>Informazioni sui ruoli di amministratore
 
-L'abbonamento a Office 365 o Microsoft 365 include un set di ruoli di amministratore che possono essere assegnati a determinati utenti all'interno dell'organizzazione tramite l'interfaccia di amministrazione di Microsoft 365. Ogni ruolo di amministratore è associato a funzioni aziendali comuni e assegna le autorizzazioni per eseguire determinate attività nelle interfacce di amministrazione.
+L'abbonamento a Microsoft 365 o a Office 365 include un set di ruoli di amministratore che possono essere assegnati a determinati utenti all'interno dell'organizzazione utilizzando l'interfaccia di amministrazione di Microsoft 365. Ogni ruolo di amministratore è associato a funzioni aziendali comuni e fornisce alle persone le autorizzazioni per eseguire determinate attività nelle interfacce di amministrazione.
 
 L'interfaccia di amministrazione di Microsoft 365 consente di gestire i ruoli di Azure Active Directory e i ruoli di Microsoft Intune. Questi ruoli, tuttavia, sono un sottoinsieme dei ruoli disponibili nel portale di Azure AD e nell'interfaccia di amministrazione di Intune.
 
@@ -83,7 +83,7 @@ Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazio
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Amministrazione con delega per partner Microsoft
 
-Se si collabora con un partner Microsoft, è possibile assegnargli un ruolo di amministratore. Il partner a sua volta può assegnare un ruolo di amministratore ad altri utenti della propria azienda o di quella con cui collabora. Questo può essere utile, ad esempio, se al partner viene affidata la configurazione e la gestione dell'organizzazione online.
+Se si collabora con un partner Microsoft, è possibile assegnargli un ruolo di amministratore. Il partner a sua volta può assegnare un ruolo di amministratore ad altri utenti della propria azienda o di quella con cui collabora. È ad esempio consigliabile assegnare un ruolo di amministratore a un partner a cui è stata affidata la configurazione e la gestione dell'organizzazione online.
   
 Un partner può assegnare questi ruoli:
   
@@ -95,10 +95,6 @@ Prima che il partner possa assegnare questi ruoli agli utenti, è necessario agg
   
 ## <a name="related-content"></a>Contenuto correlato
 
-[Assegnare ruoli di amministratore](assign-admin-roles.md) (articolo)
-
-[Ruoli di Azure AD nell'interfaccia di amministrazione di Microsoft 365](azure-ad-roles-in-the-mac.md) (articolo)
-
-[Ruolo di amministratore di Exchange Online](about-exchange-online-admin-role.md) (articolo)
-  
-[Report sulle attività nell'interfaccia di amministrazione di Microsoft 365](../activity-reports/activity-reports.md) (aticolo)
+[Assegnare ruoli di amministratore](assign-admin-roles.md) (articolo)\
+[Ruoli di Azure AD nell'interfaccia di amministrazione di Microsoft 365](azure-ad-roles-in-the-mac.md) (articolo)\
+[Ruolo di amministratore di Exchange Online](about-exchange-online-admin-role.md) (articolo)\ [Report sulle attività nell'interfaccia di amministrazione di Microsoft 365](../activity-reports/activity-reports.md) (articolo)

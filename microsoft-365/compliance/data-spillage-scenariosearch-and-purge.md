@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare eDiscovery e gli strumenti di ricerca per gestire e rispondere a un incidente di fuoriuscita di dati nell'organizzazione.
-ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051978"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653524"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie di soluzioni eDiscovery: scenario di fuoriuscita di dati - Ricerca ed eliminazione
 
@@ -64,7 +64,7 @@ Ecco come gestire un evento imprevisto di fuoriuscita di dati:
 
 A seconda della pratica dell'organizzazione, è necessario controllare chi può accedere al caso di eDiscovery utilizzato per analizzare un evento imprevisto di sversamento dei dati e impostare i limiti di conformità. Il modo più semplice per eseguire questa operazione è aggiungere gli investigatori come membri di un gruppo di ruoli esistente nel Centro sicurezza & Conformità e quindi aggiungere il gruppo di ruoli come membro del caso di eDiscovery. Per informazioni sui gruppi di ruoli eDiscovery incorporati e su come aggiungere membri a un caso di eDiscovery, vedere [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-È inoltre possibile creare un nuovo gruppo di ruoli in linea con le esigenze dell'organizzazione. Ad esempio, è possibile che un gruppo di investigatori della fuoriuscita di dati nell'organizzazione possa accedere e collaborare a tutti i casi di fuoriuscita di dati. A tale scopo, è possibile creare un gruppo di ruoli "Investigatore perdita dati", assegnare i ruoli appropriati (Export, RMS Decrypt, Review, Preview, Compliance Search e Case Management), aggiungere gli investigatori per la fuoriuscita di dati al gruppo di ruoli e quindi aggiungere il gruppo di ruoli come membro del caso di eDiscovery per la fuoriuscita di dati. Per istruzioni dettagliate su come eseguire questa operazione, vedere Set [up compliance boundaries for eDiscovery investigations in Office 365.](tagging-and-assessment-in-advanced-ediscovery.md) 
+È inoltre possibile creare un nuovo gruppo di ruoli in linea con le esigenze dell'organizzazione. Ad esempio, è possibile che un gruppo di investigatori della fuoriuscita di dati nell'organizzazione possa accedere e collaborare a tutti i casi di fuoriuscita di dati. A tale scopo, è possibile creare un gruppo di ruoli "Investigatore perdita dati", assegnare i ruoli appropriati (Export, RMS Decrypt, Review, Preview, Compliance Search e Case Management), aggiungere gli investigatori per la fuoriuscita di dati al gruppo di ruoli e quindi aggiungere il gruppo di ruoli come membro del caso di eDiscovery per la fuoriuscita di dati. Per istruzioni dettagliate su come eseguire questa operazione, vedere [Set up compliance boundaries for eDiscovery investigations in Office 365.](tagging-and-assessment-in-advanced-ediscovery.md) 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Passaggio 2: Creare un caso di eDiscovery
 
@@ -87,11 +87,11 @@ Dopo aver creato una ricerca di contenuto, è necessario esaminare e convalidare
   
 Se si dispone di più di 1.000 cassette postali o più di 100 messaggi di posta elettronica per ogni cassetta postale da esaminare, è possibile dividere la ricerca iniziale in più ricerche utilizzando parole chiave o condizioni aggiuntive, ad esempio intervallo di date o mittente/destinatario, ed esaminare i risultati di ogni ricerca singolarmente. Annotare tutte le query di ricerca da utilizzare quando si eliminano i messaggi [nel passaggio 7.](#step-7-permanently-delete-the-spilled-data)
 
-Se a un responsabile o a un utente finale viene assegnata una licenza di Office 365 E5, è possibile esaminare fino a 10.000 risultati di ricerca contemporaneamente tramite Advanced eDiscovery. Se sono presenti più di 10.000 messaggi di posta elettronica da esaminare, è possibile dividere la query di ricerca per intervallo di date ed esaminare ogni risultato singolarmente quando i risultati della ricerca vengono ordinati in base alla data. In Advanced eDiscovery, è possibile contrassegnare i risultati della ricerca utilizzando la funzionalità **Etichetta** come nel riquadro di anteprima e filtrare il risultato della ricerca in base al tag etichettato. Ciò è utile quando si collabora con un revisore secondario. Utilizzando strumenti di analisi aggiuntivi in Advanced eDiscovery, ad esempio il riconoscimento ottico dei caratteri, il threading della posta elettronica e la codifica predittiva, è possibile elaborare e rivedere rapidamente migliaia di messaggi e contrassegnarli per un'ulteriore revisione. Vedere [Configurazione rapida per Advanced eDiscovery.](./get-started-with-advanced-ediscovery.md)
+Se a un responsabile o a un utente finale viene assegnata una licenza Office 365 E5, è possibile esaminare fino a 10.000 risultati di ricerca contemporaneamente usando Advanced eDiscovery. Se sono presenti più di 10.000 messaggi di posta elettronica da esaminare, è possibile dividere la query di ricerca per intervallo di date ed esaminare ogni risultato singolarmente quando i risultati della ricerca vengono ordinati in base alla data. In Advanced eDiscovery, puoi contrassegnare i risultati della ricerca usando la funzionalità **Etichetta** come nel pannello di anteprima e filtrare il risultato della ricerca in base al tag etichettato. Ciò è utile quando si collabora con un revisore secondario. Utilizzando strumenti di analisi aggiuntivi in Advanced eDiscovery, ad esempio il riconoscimento ottico dei caratteri, il threading della posta elettronica e la codifica predittiva, è possibile elaborare e rivedere rapidamente migliaia di messaggi e contrassegnarli per un'ulteriore revisione. Vedi [Configurazione rapida per Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
 
-Quando si trova un messaggio di posta elettronica contenente dati riversati, controllare i destinatari del messaggio per determinare se è stato condiviso esternamente. Per tracciare ulteriormente un messaggio, è possibile raccogliere le informazioni sul mittente e l'intervallo di date in modo da poter utilizzare i registri di traccia dei messaggi, descritti [nel passaggio 5.](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)
+Quando si trova un messaggio di posta elettronica contenente dati riversati, controllare i destinatari del messaggio per determinare se è stato condiviso esternamente. Per tracciare ulteriormente un messaggio, è possibile raccogliere informazioni sul mittente e intervalli di date in modo da poter utilizzare i registri di traccia dei messaggi. Questo processo è descritto nel [passaggio 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
-Dopo aver verificato i risultati della ricerca, è possibile condividere i risultati con altri utenti per una revisione secondaria. Gli utenti assegnati al caso nel passaggio 1 possono esaminare il contenuto del caso sia in eDiscovery che in Advanced eDiscovery e approvare i risultati del caso. È inoltre possibile generare un report senza esportare il contenuto effettivo. È inoltre possibile utilizzare questo stesso report come prova di eliminazione, descritta [nel passaggio 8.](#step-8-verify-provide-a-proof-of-deletion-and-audit)
+Dopo aver verificato i risultati della ricerca, è possibile condividere i risultati con altri utenti per una revisione secondaria. Gli utenti assegnati al caso nel passaggio 1 possono esaminare il contenuto del caso sia in eDiscovery che Advanced eDiscovery e approvare i risultati del caso. È inoltre possibile generare un report senza esportare il contenuto effettivo. È inoltre possibile utilizzare questo stesso report come prova di eliminazione, descritta [nel passaggio 8.](#step-8-verify-provide-a-proof-of-deletion-and-audit)
   
  **Per generare un report statistico:**
   
@@ -105,7 +105,7 @@ Dopo aver verificato i risultati della ricerca, è possibile condividere i risul
     
 3. Selezionare **Tutti gli elementi,** inclusi quelli con formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi e quindi fare clic su Genera **report.**
 
-4. Nel caso di eDiscovery, fare clic su **Esporta** per visualizzare l'elenco dei processi di esportazione. Potrebbe essere necessario fare clic **su Aggiorna** per aggiornare l'elenco per visualizzare il processo di esportazione appena creato.
+4. Nel caso di eDiscovery, fare clic su **Esporta** per visualizzare l'elenco dei processi di esportazione. Potrebbe essere necessario fare clic **su Aggiorna** per aggiornare l'elenco per visualizzare il processo di esportazione creato.
 
 5. Fare clic sul processo di esportazione e quindi su **Scarica** report nella pagina a comparsa.
  
@@ -117,17 +117,17 @@ Per ulteriori informazioni sull'esportazione di report, vedere [Export a Content
     
 ## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>Passaggio 5: Utilizzare il registro di traccia dei messaggi per verificare la modalità di condivisione dei dati riversati
 
-Per analizzare ulteriormente se la posta elettronica con dati sversati è stata condivisa, è possibile facoltativamente eseguire una query nei registri di traccia dei messaggi con le informazioni sul mittente e sull'intervallo di date raccolte nel passaggio 4. Si noti che il periodo di conservazione per la traccia dei messaggi è di 30 giorni per i dati in tempo reale e di 90 giorni per i dati cronologici.
+Per analizzare ulteriormente se la posta elettronica con dati sversati è stata condivisa, è possibile facoltativamente eseguire una query nei registri di traccia dei messaggi con le informazioni sul mittente e sull'intervallo di date raccolte nel passaggio 4. Il periodo di conservazione per la traccia dei messaggi è di 30 giorni per i dati in tempo reale e di 90 giorni per i dati cronologici.
   
-È possibile utilizzare Traccia messaggi nel Centro sicurezza e conformità oppure utilizzare i cmdlet corrispondenti in PowerShell di Exchange Online. È importante notare che l'analisi dei messaggi non offre garanzie complete sulla completezza dei dati restituiti. Per ulteriori informazioni sull'utilizzo di Traccia messaggi, vedere: 
+È possibile utilizzare Traccia messaggi nel Centro sicurezza e conformità o i cmdlet corrispondenti in Exchange Online PowerShell. È importante notare che l'analisi dei messaggi non offre garanzie complete sulla completezza dei dati restituiti. Per ulteriori informazioni sull'utilizzo di Traccia messaggi, vedere: 
   
-- [Traccia dei messaggi nel Centro sicurezza e conformità](../security/defender-365-security/message-trace-scc.md)
+- [Traccia dei messaggi nel Centro sicurezza e conformità](../security/office-365-security/message-trace-scc.md)
     
 - [Nuova traccia dei messaggi nel Centro sicurezza & conformità](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Passaggio 6: Preparare le cassette postali
 
-Dopo aver esaminato e verificato che i risultati della ricerca contengano solo i messaggi che devono essere eliminati, è necessario raccogliere un elenco degli indirizzi di posta elettronica delle cassette postali influenzate da utilizzare nel passaggio 7 quando si eliminano i dati sversati. Potrebbe inoltre essere necessario preparare le cassette postali prima di poter eliminare definitivamente i messaggi di posta elettronica a seconda che sia abilitato il ripristino di un singolo elemento nelle cassette postali che contengono i dati versati o se una di queste cassette postali è in attesa.
+Dopo aver esaminato e verificato che i risultati della ricerca contengano solo i messaggi che devono essere eliminati, è necessario raccogliere un elenco degli indirizzi di posta elettronica delle cassette postali in cui è stato generato l'impatto da utilizzare nel passaggio 7 quando si eliminano i dati sversati. Potrebbe inoltre essere necessario preparare le cassette postali prima di poter eliminare definitivamente i messaggi di posta elettronica a seconda che sia abilitato il ripristino di un singolo elemento nelle cassette postali che contengono i dati versati o se una di queste cassette postali è in attesa.
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Ottenere un elenco di indirizzi di cassette postali con dati riversati
 
@@ -174,14 +174,20 @@ Assicurarsi di ripristinare le configurazioni precedenti della cassetta postale 
 
 Utilizzando le posizioni delle cassette postali raccolte e preparate nel passaggio 6 e la query di ricerca creata e perfezionata nel passaggio 3 per trovare i messaggi di posta elettronica che contengono i dati sversati, è ora possibile eliminare definitivamente i dati versati.  Come spiegato in precedenza, per eliminare i messaggi, è necessario essere membri del gruppo di ruoli Gestione organizzazione o essere assegnati al ruolo di gestione Ricerca ed eliminazione. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](./assign-ediscovery-permissions.md).
 
-Per eliminare i messaggi riversati, vedere i passaggi 2 & 3 in [Cercare ed eliminare i messaggi di posta elettronica](./search-for-and-delete-messages-in-your-organization.md)
+Per eliminare i messaggi sversati, vedere [Cercare ed eliminare i messaggi di posta elettronica.](search-for-and-delete-messages-in-your-organization.md)
+
+Quando si eliminano dati riversati, tenere presenti i seguenti limiti:
+
+- Il numero massimo di cassette postali in una ricerca che è possibile utilizzare per eliminare elementi eseguendo un'azione di ricerca ed eliminazione è 50.000. Se la ricerca creata nel passaggio 3 cerca più di 50.000 cassette postali, l'azione di eliminazione avrà esito negativo. La ricerca in più di 50.000 cassette postali in un'unica operazione può in genere verificarsi quando si configura la ricerca in modo da includere tutte le cassette postali dell'organizzazione. Questa restrizione si applica inoltre quando meno di 50.000 cassette postali contengono elementi che corrispondono alla query di ricerca.
+
+- È possibile rimuovere un massimo di 10 elementi per ogni cassetta postale alla volta. Poiché la possibilità di cercare e rimuovere i messaggi è uno strumento di intervento, questo limite garantisce che i messaggi vengano rimossi rapidamente dalle cassette postali. Questa funzionalità non ha lo scopo di pulizia delle cassette postali degli utenti.
 
 > [!IMPORTANT]
-> Gli elementi di posta elettronica in un caso di Advanced eDiscovery non possono essere eliminati usando le procedure descritte in questo articolo. Questo perché gli elementi in un set di revisione sono copie di elementi nel servizio live copiati e archiviati in un percorso di archiviazione di Azure. Ciò significa che non verranno restituiti da una ricerca di contenuto creata nel passaggio 3. Per eliminare elementi in un insieme da rivedere, è necessario eliminare il caso di Advanced eDiscovery che contiene l'insieme da rivedere. Per altre informazioni, vedere [Chiudere o eliminare un caso di Advanced eDiscovery](close-or-delete-case.md).
+> Gli elementi di posta elettronica in un caso di Advanced eDiscovery non possono essere eliminati usando le procedure descritte in questo articolo. Ciò è dovuto al fatto che gli elementi in un set di revisione sono copie di elementi nel servizio live copiati e archiviati in un percorso Archiviazione di Azure revisione. Ciò significa che non verranno restituiti da una ricerca di contenuto creata nel passaggio 3. Per eliminare elementi in un insieme da rivedere, è necessario eliminare il caso di Advanced eDiscovery che contiene l'insieme da rivedere. Per altre informazioni, vedere [Chiudere o eliminare un caso di Advanced eDiscovery](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Passaggio 8: verificare, fornire una prova di eliminazione e controllare
 
-Il passaggio finale del flusso di lavoro per gestire un evento imprevisto di fuoriuscita di dati consiste nel verificare che i dati sversati siano stati rimossi definitivamente dalla cassetta postale andando al caso eDiscovery ed eseguendo di nuovo la stessa query di ricerca utilizzata per eliminare tali dati per verificare che non venga restituito alcun risultato. Dopo aver confermato che i dati sversati sono stati rimossi definitivamente, è possibile esportare un report e includerlo (insieme al report originale) come prova di eliminazione. È quindi [possibile chiudere il caso](close-reopen-delete-core-ediscovery-cases.md) che consentirà di ria aprirlo se si fa riferimento a esso in futuro. Inoltre, è anche possibile ripristinare lo stato precedente delle cassette postali, eliminare la query di ricerca utilizzata per trovare i dati versati e cercare i record di controllo delle attività eseguite durante la gestione dell'evento imprevisto di fuoriuscita di dati.
+Il passaggio finale del flusso di lavoro per gestire un evento imprevisto di fuoriuscita di dati consiste nel verificare che i dati sversati siano stati rimossi definitivamente dalla cassetta postale andando al caso eDiscovery e rieseguindo la stessa query di ricerca utilizzata per eliminare tali dati per verificare che non venga restituito alcun risultato. Dopo aver confermato che i dati sversati sono stati rimossi definitivamente, è possibile esportare un report e includerlo (insieme al report originale) come prova di eliminazione. È quindi possibile [chiudere il caso](close-reopen-delete-core-ediscovery-cases.md) che consentirà di riaprirlo se è necessario fare riferimento a esso in futuro. Inoltre, è anche possibile ripristinare lo stato precedente delle cassette postali, eliminare la query di ricerca utilizzata per trovare i dati versati e cercare i record di controllo delle attività eseguite durante la gestione dell'evento imprevisto di fuoriuscita di dati.
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Ripristino dello stato precedente delle cassette postali
 
@@ -192,11 +198,11 @@ Se è stata modificata una configurazione delle cassette postali nel passaggio 6
 Se le parole chiave nella query di ricerca creata e utilizzata nel passaggio 3 contengono alcuni di tutti i dati effettivamente sversati, è consigliabile eliminare la query di ricerca per evitare ulteriori perdite di dati.
   
 1. Nel Centro sicurezza e conformità aprire il caso eDiscovery, passare alla pagina **Ricerca** e selezionare la ricerca di contenuto appropriata.
-    
+
 2. Nella pagina a comparsa fare clic su **Elimina.**
 
     ![Selezionare la ricerca e quindi fare clic su Elimina nella pagina a comparsa](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
-    
+
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Controllo del processo di indagine sulla fuoriuscita di dati
 
 È possibile cercare nel log di controllo le attività di eDiscovery eseguite durante l'indagine. È inoltre possibile eseguire una ricerca nel log di controllo per restituire i record di controllo per il comando **New-ComplianceSearchAction -Purge** eseguito nel passaggio 7 per eliminare i dati sversati. Per ulteriori informazioni, vedere:

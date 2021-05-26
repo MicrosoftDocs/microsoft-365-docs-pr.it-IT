@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprendere perché i risultati della ricerca stimati ed effettivi possono variare nelle ricerche eseguite con gli strumenti di eDiscovery in Office 365.
-ms.openlocfilehash: d530b083b2353b66ee5d4fd4bb72b175aef28be8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532117"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653512"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Differenze tra i risultati della ricerca eDiscovery stimati ed effettivi
 
@@ -81,7 +81,7 @@ Ecco alcuni motivi per queste differenze:
 
 - **Deduplicazione degli elementi Exchange durante l'esportazione.** Per Exchange elementi, la deduplicazione riduce il numero di elementi esportati. È possibile de-duplicare i risultati della ricerca durante l'esportazione. Per Exchange messaggi, ciò significa che viene esportata una sola istanza di un messaggio, anche se tale messaggio potrebbe essere presente in più cassette postali. I risultati della ricerca stimati includono ogni istanza di un messaggio. Pertanto, se si sceglie l'opzione di deduplicazione durante l'esportazione dei risultati della ricerca, il numero effettivo di elementi esportati potrebbe essere notevolmente inferiore al numero stimato di elementi.
 
-    Un altro aspetto da tenere presente se si sceglie l'opzione di deduplicazione è che tutti gli elementi Exchange vengono esportati in un singolo file PST e la struttura delle cartelle dalle cassette postali di origine non viene mantenuta. Il file PST esportato contiene solo gli elementi di posta elettronica. Tuttavia, un report dei risultati della ricerca contiene una voce per ogni messaggio esportato che identifica la cassetta postale di origine in cui si trova il messaggio. In questo modo è possibile identificare tutte le cassette postali che contengono un messaggio duplicato. Se invece non si attiva la deduplicazione, viene esportato un file PST separato per ciascuna cassetta postale inclusa nella ricerca.
+Il report dei risultati della ricerca (Results.csv file) contiene una voce per ogni messaggio duplicato e identifica la cassetta postale di origine in cui si trova un messaggio duplicato. In questo modo è possibile identificare tutte le cassette postali che contengono un messaggio duplicato.
 
 > [!NOTE]
 > Se non si seleziona  l'opzione Includi elementi crittografati o con un formato non riconosciuto quando si esportano i risultati della ricerca o si scaricano semplicemente i report, le segnalazioni degli errori dell'indice vengono scaricate ma non dispongono di alcuna voce. Questo non significa che non siano presenti errori di indicizzazione. Significa solo che gli elementi non indicizzati non sono stati inclusi nell'esportazione.

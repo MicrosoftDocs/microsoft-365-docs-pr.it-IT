@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Esportare i risultati della ricerca da una ricerca contenuto nel Centro Microsoft 365 conformità in un computer locale. I risultati della posta elettronica vengono esportati come file PST. Il contenuto SharePoint e OneDrive for Business siti vengono esportati come documenti Office nativi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536059"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653536"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati della ricerca contenuto
 
 Dopo aver eseguito correttamente una ricerca contenuto, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da SharePoint e OneDrive for Business, vengono esportate copie di documenti Office nativi. I risultati della ricerca esportati includono altri documenti e report.
   
-L'esportazione dei risultati di una ricerca contenuto implica la preparazione dei risultati e il loro download in un computer locale.
+L'esportazione dei risultati di una ricerca contenuto implica la preparazione dei risultati e il loro download in un computer locale. Questi passaggi per l'esportazione dei risultati della ricerca si applicano anche all'esportazione dei risultati di una ricerca associata ai casi di eDiscovery di base.
   
 ## <a name="before-you-export-search-results"></a>Prima di esportare i risultati della ricerca
 
@@ -57,6 +57,8 @@ L'esportazione dei risultati di una ricerca contenuto implica la preparazione de
   > <sup>1</sup> Microsoft non produce estensioni o componenti aggiuntivi di terze parti per ClickOnce applicazioni. L'esportazione dei risultati della ricerca con un browser non supportato con estensioni o componenti aggiuntivi di terze parti non è supportata.<br/>
   > <sup>2</sup> In seguito alle recenti modifiche apportate al Microsoft Edge, il ClickOnce non è più abilitato per impostazione predefinita. Per istruzioni sull'abilitazione del ClickOnce in Edge, vedere [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
+- Lo strumento di esportazione di eDiscovery utilizzato nel passaggio 2 per scaricare i risultati della ricerca non supporta l'automazione (tramite uno script o l'esecuzione di cmdlet). È consigliabile non automatizzare il processo di preparazione nel passaggio 1 o il processo di download nel passaggio 2. Se si automatizza uno di questi processi, il supporto Tecnico Microsoft non fornirà assistenza in caso di problemi.
+
 - È consigliabile scaricare i risultati della ricerca in un computer locale. Per evitare che il firewall o l'infrastruttura proxy dell'azienda possa causare problemi durante il download dei risultati della ricerca, è consigliabile scaricare i risultati della ricerca in un desktop virtuale esterno alla rete. Ciò può ridurre i timeout che si verificano nelle connessioni dati di Azure durante l'esportazione di un numero elevato di file. Per ulteriori informazioni sui desktop virtuali, vedere [Windows Desktop virtuale](https://azure.microsoft.com/services/virtual-desktop).
 
 - Per migliorare le prestazioni durante il download dei risultati di ricerca, è consigliabile suddividere le ricerche che restituiscono un set di risultati di grandi dimensioni in ricerche più piccole. È ad esempio possibile utilizzare intervalli di date nelle query di ricerca per restituire un set più piccolo di risultati che possono essere scaricati più velocemente.
@@ -82,7 +84,7 @@ L'esportazione dei risultati di una ricerca contenuto implica la preparazione de
     </system.net>
     ```
 
-- Se i risultati di una ricerca contenuto sono precedenti a 7 giorni e si invia un processo di esportazione, viene visualizzato un messaggio di errore in cui viene richiesto di eseguire di nuovo la ricerca per aggiornare i risultati della ricerca. In questo caso, annullare l'esportazione, eseguire di nuovo la ricerca e quindi avviare di nuovo l'esportazione.
+- Se i risultati di una ricerca sono precedenti a 7 giorni e si invia un processo di esportazione, viene visualizzato un messaggio di errore che richiede di eseguire di nuovo la ricerca per aggiornare i risultati della ricerca. In questo caso, annullare l'esportazione, eseguire di nuovo la ricerca e quindi avviare di nuovo l'esportazione.
 
 ## <a name="step-1-prepare-search-results-for-export"></a>Passaggio 1: Preparare i risultati della ricerca per l'esportazione
 
@@ -169,11 +171,11 @@ Il passaggio successivo consiste nel scaricare i risultati della ricerca dal per
       >- Disabilitare l'analisi antivirus per la cartella in cui si scarica il risultato della ricerca.<br/>
       >- Scaricare i risultati della ricerca in cartelle diverse per i processi di download simultanei.
 
-6. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer.
+7. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer.
   
     Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Ecco altre informazioni sull'esportazione dei risultati della ricerca.
   

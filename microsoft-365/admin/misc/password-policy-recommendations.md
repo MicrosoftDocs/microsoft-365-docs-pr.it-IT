@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Rendere più sicura l'organizzazione da attacchi alle password, bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593910"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635975"
 ---
 # <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
 
@@ -128,7 +128,9 @@ Per altre informazioni, vedere [Configurare l'autenticazione a più fattori](../
 
 Con l'autenticazione a più fattori basata sul rischio, quando il sistema rileva un'attività sospetta richiede all'utente di provare di essere il legittimo proprietario dell'account. 
   
-## <a name="want-to-know-more-recommended-reading"></a>Servono altre informazioni? Letture consigliate
+## <a name="next-steps"></a>Passaggi successivi
+
+Per saperne di più sulla gestione delle password: ecco alcune letture consigliate.
 
 - [Le password Web complesse sono davvero utili?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
@@ -144,10 +146,7 @@ Con l'autenticazione a più fattori basata sul rischio, quando il sistema rileva
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Reimpostare la password](../add-users/reset-passwords.md) (articolo)
-
-[Impostare la password di un singolo utente in modo che non scada mai](../add-users/set-password-to-never-expire.md) (articolo)
-
-[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)
-
+[Reimpostare la password](../add-users/reset-passwords.md) (articolo)\
+[Impostare la password di un singolo utente in modo che non scada mai](../add-users/set-password-to-never-expire.md) (articolo)\
+[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)\
 [Inviare nuovamente la password utente - Guida per amministratori](../add-users/resend-user-password.md) (articolo)
