@@ -798,7 +798,7 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: 'Esportare, configurare e visualizzare i record del log di controllo'
           href: export-view-audit-log-records.md
-        - name: Abilitare o disabilitare la ricerca dei log di controllo
+        - name: Attivare o disattivare il controllo
           href: turn-audit-log-search-on-or-off.md
         - name: Usare il log di controllo per individuare i problemi più comuni
           href: auditing-troubleshooting-scenarios.md
