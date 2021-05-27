@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ottieni l Microsoft 365'app Admin e scopri come gestire l'organizzazione online dal telefono o dal tablet.
-ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f8834aca0835a209a4df32a934eca736c5f7808f
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244021"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683236"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'Microsoft 365 per dispositivi mobili di amministrazione
 
@@ -50,6 +50,10 @@ Se sei un amministratore e sei responsabile di più organizzazioni Microsoft 365
   
 > [!IMPORTANT]
 > In caso di problemi durante l'uso dell'app Admin per dispositivi mobili su iOS o Android, [inviaci](mailto:feedback365@microsoft.com) un'e-mail all'indirizzo feedback365@microsoft.com per contattarci.
+
+## <a name="before-you-begin"></a>Informazioni preliminari
+
+Devi essere un amministratore di un'Microsoft 365 per usare l'app per dispositivi mobili di amministrazione.
   
 ## <a name="download-the-admin-mobile-app"></a>Scaricare l'app Admin per dispositivi mobili
 
@@ -115,7 +119,11 @@ Dal menu di spostamento a sinistra passare a **Impostazioni**  >  **Notifiche**.
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>Cosa si può fare se non è presente alcuna risposta alla propria domanda?
 
 Invia [feedback365@microsoft.com](mailto:feedback365@microsoft.com) un messaggio di posta elettronica per segnalare un problema con l'app. Oppure puoi fornire commenti e suggerimenti nella parte inferiore di questo articolo.
-  
-## <a name="related-content"></a>Contenuti correlati 
 
-[video Microsoft 365 formazione su Microsoft 365](../../business-video/index.yml) per le aziende (pagina dei collegamenti)
+## <a name="next-steps"></a>Passaggi successivi
+
+Dopo aver scaricato l'amministratore per dispositivi mobili, puoi aggiungere utenti per iniziare.
+  
+## <a name="related-content"></a>Contenuto correlato
+
+[Video di formazione su Microsoft 365 per le aziende](../../business-video/index.yml)
