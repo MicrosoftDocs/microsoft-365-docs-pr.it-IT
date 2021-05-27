@@ -1,7 +1,7 @@
 ---
 title: Esportare proprietà e metodi di valutazione per dispositivo
-description: Fornisce informazioni sulle API che estraeno i gestione di minacce e vulnerabilità". Esistono diverse chiamate API per ottenere diversi tipi di dati. In generale, ogni chiamata API contiene i dati dei requisiti per i dispositivi dell'organizzazione. Poiché la quantità di dati può essere molto grande, esistono due modi per recuperarlo
-keywords: api, api, valutazione dell'esportazione, valutazione per dispositivo, report di valutazione delle vulnerabilità, valutazione della vulnerabilità del dispositivo, report di vulnerabilità del dispositivo, valutazione della configurazione sicura, report di configurazione sicura, valutazione delle vulnerabilità software, report di vulnerabilità software, report sulle vulnerabilità in base al computer,
+description: Fornisce informazioni sulle API che estraeno i gestione di minacce e vulnerabilità". Esistono diverse chiamate API per ottenere diversi tipi di dati. In generale, ogni chiamata API contiene i dati dei requisiti per i dispositivi dell'organizzazione. Poiché la quantità di dati può essere di grandi dimensioni, è possibile recuperarla in due modi
+keywords: api, api, valutazione dell'esportazione, valutazione per dispositivo, valutazione per computer, report di valutazione delle vulnerabilità, valutazione della vulnerabilità del dispositivo, report di vulnerabilità del dispositivo, valutazione della configurazione sicura, report di configurazione sicura, valutazione delle vulnerabilità software, report di vulnerabilità software, report di vulnerabilità per computer,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 851c792265375e5905c0c427bfc77a2366bc962d
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: e820875a3350761824c3e4e67311e55507a9cb6f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653657"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689202"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Esportare proprietà e metodi di valutazione per dispositivo
 
@@ -44,19 +44,25 @@ Fornisce metodi e dettagli sulle proprietà sulle API che estrae gestione di min
 >
 > Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
 
-Esistono diverse chiamate API per ottenere diversi tipi di dati. Poiché la quantità di dati può essere di grandi dimensioni, è possibile recuperarla in due modi:
+Esistono tre metodi API che puoi usare per recuperare (esportare) diversi tipi di informazioni:
 
-- **OData**  L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per _organizzazioni di piccole dimensioni con meno di 100.000 dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
+1. Esportare la valutazione delle configurazioni sicure
 
-- **tramite file** Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100.000 dispositivi. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
+2. Esportare valutazioni di inventario software
+
+3. Esportare valutazioni delle vulnerabilità dei software
+
+Per ogni metodo, esistono diverse chiamate API per ottenere tipi diversi di dati. Poiché la quantità di dati può essere di grandi dimensioni, è possibile recuperarla in due modi:
+
+- **OData**  L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale _per organizzazioni di piccole dimensioni con meno di 100 K dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
+
+- **tramite file** Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
 
   - Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione.
 
   - Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
 
-I dati raccolti (per _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
-
-Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
+I dati raccolti (tramite _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
 
 ## <a name="1-export-secure-configurations-assessment"></a>1. Esportare la valutazione delle configurazioni sicure
 
@@ -66,8 +72,8 @@ Restituisce tutte le configurazioni e il relativo stato, in base al dispositivo.
 
 Metodo | Tipo di dati | Descrizione
 :---|:---|:---
-[Esportare la valutazione della configurazione sicura (OData)](get-assessmnt-secure-cfg.md#1-export-secure-configuration-assessment-odata) | Configurazione sicura in base alla raccolta di dispositivi. Vedere: [1.2 Properties (OData)](#12-properties-odata) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, ConfigurationId. I dati raccolti (per _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
-[Esportare la valutazione della configurazione sicura (tramite file)](get-assessmnt-secure-cfg.md#2-export-secure-configuration-assessment-via-files) | configurazione sicura in base ai file del dispositivo. Vedi: [1.3 Proprietà (tramite file)](#13-properties-via-files) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, ConfigurationId. Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100.000 dispositivi. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come segue: 1.  Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione. 2.  Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
+Esportare la valutazione della **configurazione sicura (OData)** | Configurazione sicura in base alla raccolta di dispositivi. Vedere: [1.2 Properties (OData)](#12-properties-odata) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, ConfigurationId. L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per organizzazioni di piccole dimensioni con meno di 100 K dispositivi. La risposta viene impaginata, quindi è possibile utilizzare il campo @odata.nextLink dalla risposta per recuperare i risultati successivi.
+Esportare la valutazione della **configurazione sicura (tramite file)** | Configurazione sicura in base alla raccolta di dispositivi. Vedere: [1.2 Properties (OData)](#12-properties-odata) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, ConfigurationId. Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come segue: 1.  Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione. 2.  Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
 
 ### <a name="12-properties-odata"></a>1.2 Proprietà (OData)
 
@@ -103,8 +109,8 @@ Restituisce tutto il software installato e i relativi dettagli in ogni dispositi
 
 Metodo | Tipo di dati | Descrizione
 :---|:---|:---
-[Esportare la valutazione dell'inventario software (OData)](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | Inventario software per raccolta dispositivi. Vedere: [2.2 Properties (OData)](#22-properties-odata) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. I dati raccolti (per _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
-[Esportare la valutazione dell'inventario software (tramite file)](get-assessmnt-software-inventory.md#2-export-software-inventory-assessment-via-files) | Inventario software in base ai file del dispositivo. Vedere: [2.3 Proprietà (tramite file)](#23-properties-via-files) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100.000 dispositivi. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come segue: 1.  Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione. 2.  Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
+Esportare la valutazione dell'inventario software **(OData)** | Inventario software per raccolta dispositivi. Vedere: [2.2 Properties (OData)](#22-properties-odata) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per organizzazioni di piccole dimensioni con meno di 100 K dispositivi. La risposta viene impaginata, quindi è possibile utilizzare il campo @odata.nextLink dalla risposta per recuperare i risultati successivi.
+Esportare la valutazione dell'inventario **software (tramite file)** | Inventario software in base ai file del dispositivo. Vedere: [2.3 Proprietà (tramite file)](#23-properties-via-files) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come segue: 1.  Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione. 2.  Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
 
 ### <a name="22-properties-odata"></a>2.2 Proprietà (OData)
 
@@ -132,7 +138,7 @@ Proprietà (ID) | Tipo di dati | Descrizione
 Esportare file | stringa \[ di matrice\] | Elenco di URL di download per i file che tengono lo snapshot corrente dell'organizzazione.
 GeneratedTime | stringa | Ora in cui è stata generata l'esportazione.
 
-## <a name="3-export-software-vulnerabilities-assessment-per-device"></a>3. Esportare la valutazione delle vulnerabilità software per dispositivo
+## <a name="3-export-software-vulnerabilities-assessment"></a>3. Esportare la valutazione delle vulnerabilità software
 
 Restituisce tutte le vulnerabilità note in un dispositivo e i relativi dettagli, per tutti i dispositivi.
 
@@ -140,8 +146,8 @@ Restituisce tutte le vulnerabilità note in un dispositivo e i relativi dettagli
 
 Metodo | Tipo di dati | Descrizione
 :---|:---|:---
-[Valutazione delle vulnerabilità del software di esportazione (OData)](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | Insieme Investigation Vedere: [3.2 Properties (OData)](#32-properties-odata) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. I dati raccolti (per _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
-[Esportare la valutazione delle vulnerabilità software (tramite file)](get-assessmnt-software-vulnerabilities.md#2-export-software-vulnerabilities-assessment-via-files) | Entità di indagine Vedere: [3.3 Proprietà (tramite file)](#33-properties-via-files) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100.000 dispositivi. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come segue: 1.  Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione. 2.  Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
+Valutazione delle vulnerabilità del software di esportazione **(OData)** | Insieme Investigation Vedere: [3.2 Properties (OData)](#32-properties-odata) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per organizzazioni di piccole dimensioni con meno di 100 K dispositivi. La risposta viene impaginata, quindi è possibile utilizzare il campo @odata.nextLink dalla risposta per recuperare i risultati successivi.
+Esportare la valutazione delle vulnerabilità software **(tramite file)** | Entità di indagine Vedere: [3.3 Proprietà (tramite file)](#33-properties-via-files) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come segue: 1.  Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione. 2.  Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
 
 ### <a name="32-properties-odata"></a>3.2 Proprietà (OData)
 

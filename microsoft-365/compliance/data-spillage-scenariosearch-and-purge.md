@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare eDiscovery e gli strumenti di ricerca per gestire e rispondere a un incidente di fuoriuscita di dati nell'organizzazione.
-ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: f92887018a7ab1cec35526c2a36cce4b0889172e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653524"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683776"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie di soluzioni eDiscovery: scenario di fuoriuscita di dati - Ricerca ed eliminazione
 
@@ -52,7 +52,7 @@ Ecco come gestire un evento imprevisto di fuoriuscita di dati:
 
 - Quando una cassetta postale è in attesa, un messaggio eliminato rimane nella cartella Elementi ripristinabili fino alla scadenza del periodo di conservazione o al rilascio del blocco. [Il passaggio 6](#step-6-prepare-the-mailboxes) descrive come rimuovere il blocco dalle cassette postali. Prima di rimuovere il blocco, rivolgersi alla gestione dei record o ai reparti legali. L'organizzazione potrebbe avere un criterio che definisce se una cassetta postale in attesa o un evento imprevisto di perdita dei dati ha la priorità. 
     
-- Per controllare quali cassette postali degli utenti un investigatore per la fuoriuscita di dati può cercare e gestire chi può accedere al caso, è possibile impostare i limiti di conformità e creare un gruppo di ruoli personalizzato, descritto nel [passaggio 1.](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries) A tale scopo, è necessario essere membri del gruppo di ruoli Gestione organizzazione o essere assegnati al ruolo di gestione dei ruoli. Se l'utente o l'amministratore dell'organizzazione ha già impostato limiti di conformità, è possibile ignorare il passaggio 1.
+- Per controllare quali cassette postali degli utenti un investigatore per la fuoriuscita di dati può cercare e gestire chi può accedere al caso, è possibile impostare i limiti di conformità e creare un gruppo di ruoli personalizzato, descritto nel [passaggio 1.](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries) A tale scopo, è necessario essere membri del gruppo di ruoli Gestione organizzazione o essere assegnati al ruolo di gestione dei ruoli. Se l'utente o un amministratore dell'organizzazione ha già impostato i limiti di conformità, è possibile ignorare il passaggio 1.
     
 - Per creare un caso, è necessario essere membri del gruppo di ruoli Manager eDiscovery o essere membri di un gruppo di ruoli personalizzato a cui è assegnato il ruolo Gestione casi. If you're not a member, ask a Microsoft 365 administrator to [add you to the eDiscovery manager role group](assign-ediscovery-permissions.md).
     
@@ -64,7 +64,7 @@ Ecco come gestire un evento imprevisto di fuoriuscita di dati:
 
 A seconda della pratica dell'organizzazione, è necessario controllare chi può accedere al caso di eDiscovery utilizzato per analizzare un evento imprevisto di sversamento dei dati e impostare i limiti di conformità. Il modo più semplice per eseguire questa operazione è aggiungere gli investigatori come membri di un gruppo di ruoli esistente nel Centro sicurezza & Conformità e quindi aggiungere il gruppo di ruoli come membro del caso di eDiscovery. Per informazioni sui gruppi di ruoli eDiscovery incorporati e su come aggiungere membri a un caso di eDiscovery, vedere [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-È inoltre possibile creare un nuovo gruppo di ruoli in linea con le esigenze dell'organizzazione. Ad esempio, è possibile che un gruppo di investigatori della fuoriuscita di dati nell'organizzazione possa accedere e collaborare a tutti i casi di fuoriuscita di dati. A tale scopo, è possibile creare un gruppo di ruoli "Investigatore perdita dati", assegnare i ruoli appropriati (Export, RMS Decrypt, Review, Preview, Compliance Search e Case Management), aggiungere gli investigatori per la fuoriuscita di dati al gruppo di ruoli e quindi aggiungere il gruppo di ruoli come membro del caso di eDiscovery per la fuoriuscita di dati. Per istruzioni dettagliate su come eseguire questa operazione, vedere [Set up compliance boundaries for eDiscovery investigations in Office 365.](tagging-and-assessment-in-advanced-ediscovery.md) 
+È inoltre possibile creare un nuovo gruppo di ruoli in linea con le esigenze dell'organizzazione. Ad esempio, è possibile che un gruppo di investigatori della fuoriuscita di dati nell'organizzazione possa accedere e collaborare a tutti i casi di fuoriuscita di dati. A tale scopo, è possibile creare un gruppo di ruoli "Investigatore perdita dati", assegnare i ruoli appropriati (Export, RMS Decrypt, Review, Preview, Compliance Search e Case Management), aggiungere gli investigatori per la fuoriuscita di dati al gruppo di ruoli e quindi aggiungere il gruppo di ruoli come membro del caso di eDiscovery per la fuoriuscita di dati. Per istruzioni dettagliate su come eseguire questa operazione, vedere [Set up compliance boundaries for eDiscovery investigations in Office 365.](set-up-compliance-boundaries.md) 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Passaggio 2: Creare un caso di eDiscovery
 
@@ -123,7 +123,7 @@ Per analizzare ulteriormente se la posta elettronica con dati sversati è stata 
   
 - [Traccia dei messaggi nel Centro sicurezza e conformità](../security/office-365-security/message-trace-scc.md)
     
-- [Nuova traccia dei messaggi nel Centro sicurezza & conformità](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Nuova traccia dei messaggi nel Centro sicurezza & conformità](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-message-trace-in-office-365-security-038-compliance-center/ba-p/607893)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Passaggio 6: Preparare le cassette postali
 
@@ -205,7 +205,7 @@ Se le parole chiave nella query di ricerca creata e utilizzata nel passaggio 3 c
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Controllo del processo di indagine sulla fuoriuscita di dati
 
-È possibile cercare nel log di controllo le attività di eDiscovery eseguite durante l'indagine. È inoltre possibile eseguire una ricerca nel log di controllo per restituire i record di controllo per il comando **New-ComplianceSearchAction -Purge** eseguito nel passaggio 7 per eliminare i dati sversati. Per ulteriori informazioni, vedere:
+È possibile cercare nel log di controllo le attività di eDiscovery eseguite durante l'indagine. È inoltre possibile eseguire una ricerca nel log di controllo per restituire i record di controllo per il comando **New-ComplianceSearchAction -Purge** eseguito nel passaggio 7 per eliminare i dati sversati. Per altre informazioni, vedere:
 
 - [Eseguire ricerche nel log di controllo](search-the-audit-log-in-security-and-compliance.md)
 

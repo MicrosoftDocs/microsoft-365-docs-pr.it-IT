@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651351"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689014"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Analizzare gli avvisi in Microsoft 365 Defender
 
@@ -78,6 +78,23 @@ Una pagina di avviso è composta da queste sezioni:
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel centro sicurezza Microsoft 365 sicurezza":::
 
 In tutta una pagina di avviso, è possibile selezionare i puntini di sospensione (**...**) accanto a qualsiasi entità per visualizzare le azioni disponibili, ad esempio l'apertura della pagina di avviso o il collegamento dell'avviso a un altro evento imprevisto.
+
+### <a name="alert-sources"></a>Origini degli avvisi
+Microsoft 365 Gli avvisi defender possono derivare da soluzioni come Microsoft Defender for Endpoint, Microsoft Defender per Office 365 e Microsoft Cloud App Security. Potresti notare avvisi con caratteri anteposti nell'avviso. Nella tabella seguente vengono fornite indicazioni per comprendere il mapping delle origini degli avvisi in base al carattere anteposto nell'avviso.
+
+> [!NOTE]
+> - I GUID anteposti sono specifici solo per le esperienze unificate, ad esempio la coda degli avvisi unificati, la pagina degli avvisi unificati, l'indagine unificata e l'incidente unificato.<br>
+> - Il carattere anteposto non modifica il GUID dell'avviso. L'unica modifica apportata al GUID è il componente anteposto.<br>
+
+
+Origine avviso | Carattere anteposto 
+:---|:---
+Microsoft Defender per Office 365 | `fa{GUID}` <br> Esempio: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender per endpoint | `da` o `ed` per avvisi di rilevamento personalizzati <br> 
+Microsoft Defender per identità | `aa{GUID}` <br> Esempio: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> Esempio: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+
+
 
 ### <a name="analyze-affected-assets"></a>Analizzare gli asset interessati
 

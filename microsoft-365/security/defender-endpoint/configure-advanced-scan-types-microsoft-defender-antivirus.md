@@ -14,19 +14,16 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.date: 05/06/2021
+ms.date: 05/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 1942531b77df1c2bd9408815d3ad54b4b7211e8b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 34f423222068236271afdda13afb95cffa58b709
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538400"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683812"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurare le opzioni di analisi di Microsoft Defender Antivirus
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Si applica a:**
 
@@ -34,67 +31,75 @@ ms.locfileid: "52538400"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Utilizzare Microsoft Intune per configurare le opzioni di analisi
 
-Per altre informazioni, vedere [Configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune](/intune/device-restrictions-configure) e [Impostazioni relative alle restrizioni dei dispositivi di Antivirus Microsoft Defender per Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+Vedere le risorse seguenti: 
+
+- [Configurare le impostazioni di restrizione dei dispositivi in Microsoft Intune](/intune/device-restrictions-configure) 
+- [Antivirus Microsoft Defender impostazioni di restrizione del dispositivo per Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Utilizzare Microsoft Endpoint Manager per configurare le opzioni di analisi
 
-Per informazioni dettagliate sulla configurazione di Microsoft Endpoint Manager (current branch), vedere How [to create and deploy antimalware policies: Scan settings.](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)
+Vedere [Come creare e distribuire criteri antimalware: Impostazioni di analisi.](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Utilizzare Criteri di gruppo per configurare le opzioni di analisi
 
-Per configurare le impostazioni di Criteri di gruppo descritte nella tabella seguente:
+1. Nel computer di gestione dei Criteri di gruppo aprire la [Console Gestione Criteri di gruppo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-1. Nel computer di gestione di Criteri di gruppo, aprire console Gestione Criteri di [gruppo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
+2. Fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e quindi scegliere **Modifica**.
 
-2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione computer **e** fare clic su **Modelli amministrativi.**
+3. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione computer **e** fare clic su **Modelli amministrativi.**
 
-3. Espandere l'albero **Windows componenti > Antivirus Microsoft Defender** e quindi il **percorso** specificato nella tabella seguente.
+4. Espandere l'albero **Windows componenti** Antivirus Microsoft Defender e quindi selezionare un percorso (vedere Impostazioni  >   [e posizioni](#settings-and-locations) in questo articolo).
 
-4. Fai doppio clic **sull'impostazione del** criterio come specificato nella tabella seguente e imposta l'opzione sulla configurazione desiderata. Fare **clic su OK** e ripetere l'operazione per tutte le altre impostazioni.
+5. Modificare l'oggetto criterio. 
 
-| Descrizione | Posizione e impostazione | Impostazione predefinita (se non configurata) | Parametro di PowerShell `Set-MpPreference` o proprietà WMI per la `MSFT_MpPreference` classe |
-|---|---|---|---|
-| Analisi della posta elettronica Vedere [Limitazioni dell'analisi della posta elettronica](#ref1)| Analisi > Attivare l'analisi della posta elettronica | Disabilitato | `-DisableEmailScanning` |
-|Analisi [dei reparse point](/windows/win32/fileio/reparse-points) | Analisi > Attiva analisi reparse point | Disabilitato | Non disponibile |
-| Analisi delle unità di rete mappate | Analisi > eseguire l'analisi completa sulle unità di rete mappate | Disabilitato | `-DisableScanningMappedNetworkDrivesForFullScan`|
- Analizzare i file di archivio (ad esempio .zip o .rar file). [L'elenco di esclusione delle](configure-extension-file-exclusions-microsoft-defender-antivirus.md) estensioni avrà la precedenza su questa impostazione. | Analisi > analizzare i file di archivio | Abilitato | `-DisableArchiveScanning` |
-| Analizzare i file in rete | Analisi > file di rete | Disabilitato | `-DisableScanningNetworkFiles` |
-| Eseguire l'analisi di file eseguibili imballati | Analisi > eseguire l'analisi di file eseguibili imballati | Abilitato | Non disponibile |
-| Analizzare le unità rimovibili solo durante le analisi complete | Analisi > eseguire l'analisi delle unità rimovibili | Disabilitato | `-DisableRemovableDriveScanning` |
-| Specificare il livello di sottocartelle all'interno di una cartella di archiviazione da analizzare | Analisi > Specificare la profondità massima per l'analisi dei file di archivio | 0 | Non disponibile |
-| Specifica il carico massimo della CPU (come percentuale) durante un'analisi. Nota: non si tratta di un limite rigido, ma di una guida che il motore di analisi non superi in media questo limite massimo. Le analisi eseguite manualmente ignoreranno questa impostazione e verranno eseguite senza limiti di CPU. | Analisi > Specificare la percentuale massima di utilizzo della CPU durante un'analisi | 50 |  `-ScanAvgCPULoadFactor` |
-| Specificare le dimensioni massime, in kilobyte, dei file di archivio da analizzare. Il valore **predefinito, 0**, non applica alcun limite | Analisi > Specificare la dimensione massima dei file di archivio da analizzare | Nessun limite | Non disponibile |
-| Configurare la priorità della CPU bassa per le analisi pianificate | Analisi > La priorità della CPU bassa per le analisi pianificate | Disabilitato | Non disponibile |
+6. Fare **clic su OK** e ripetere l'operazione per tutte le altre impostazioni.
+
+### <a name="settings-and-locations"></a>Impostazioni e posizioni
+
+| Elemento e percorso dei criteri | Impostazione predefinita (se non configurata) | Parametro di PowerShell `Set-MpPreference` o proprietà WMI per la `MSFT_MpPreference` classe |
+|---|---|---|
+| Analisi della posta elettronica <p> **Analisi**  >  **Attivare l'analisi della posta elettronica**<p>Vedere [Limitazioni dell'analisi della posta](#email-scanning-limitations) elettronica (in questo articolo) | Disabilitato | `-DisableEmailScanning` |
+|Analisi [dei reparse point](/windows/win32/fileio/reparse-points) <p> **Analisi**  >  **Attivare l'analisi dei reparse point** | Disabilitato | Non disponibile <p>Vedere [Reparse points](/windows/win32/fileio/reparse-points)  |
+| Analisi delle unità di rete mappate <p> **Analisi**  >  **Eseguire l'analisi completa sulle unità di rete mappate** | Disabilitato | `-DisableScanningMappedNetworkDrivesForFullScan`|
+| Analizzare i file di archivio (ad esempio .zip o .rar file).  <p> **Analisi**  >  **Analizzare i file di archivio** | Enabled | `-DisableArchiveScanning` <p>[L'elenco di esclusione delle](configure-extension-file-exclusions-microsoft-defender-antivirus.md) estensioni avrà la precedenza su questa impostazione.|
+| Analizzare i file in rete <p> **Analisi**  >  **Analizzare i file di rete** | Disabilitato | `-DisableScanningNetworkFiles` |
+| Eseguire l'analisi di file eseguibili imballati <p> **Analisi**  >  **Eseguire l'analisi di file eseguibili imballati** | Enabled | Non disponibile |
+| Analizzare le unità rimovibili solo durante le analisi complete <p> **Analisi**  >  **Analisi delle unità rimovibili** | Disabilitato | `-DisableRemovableDriveScanning` |
+| Specificare il livello di sottocartelle all'interno di una cartella di archiviazione da analizzare <p>**Analisi**  >  **Specificare la profondità massima per l'analisi dei file di archivio** | 0 | Non disponibile |
+| Specifica il carico massimo della CPU (come percentuale) durante un'analisi. <p> **Analisi**  >  **Specificare la percentuale massima di utilizzo della CPU durante un'analisi** | 50 |  `-ScanAvgCPULoadFactor` <p>**NOTA:** il carico massimo della CPU non è un limite rigido, ma è una guida per il motore di analisi per non superare il massimo in media. Le analisi eseguite manualmente ignoreranno questa impostazione e verranno eseguite senza limiti di CPU. |
+| Specificare le dimensioni massime, in kilobyte, dei file di archivio da analizzare. <p> **Analisi**  >  **Specificare la dimensione massima dei file di archivio da analizzare** | Nessun limite | Non disponibile <p>Il valore predefinito 0 non applica alcun limite |
+| Configurare la priorità della CPU bassa per le analisi pianificate <p> **Analisi**  >  **Configurare la priorità della CPU bassa per le analisi pianificate** | Disabilitato | Non disponibile |
  
 > [!NOTE]
 > Se la protezione in tempo reale è attivata, i file vengono analizzati prima dell'accesso e dell'esecuzione. L'ambito di analisi include tutti i file, inclusi i file su supporti rimovibili montati, ad esempio unità USB. Se il dispositivo che esegue l'analisi ha la protezione in tempo reale o la protezione all'accesso attivata, l'analisi includerà anche condivisioni di rete.
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>Utilizzare PowerShell per configurare le opzioni di analisi
 
-Vedere [Manage Antivirus Microsoft Defender with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus Microsoft Defender.
+Vedere le risorse seguenti:
+
+- [Gestire Antivirus Microsoft Defender con i cmdlet di PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [Cmdlet defender](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Utilizzare WMI per configurare le opzioni di analisi
 
-Per l'uso delle classi WMI, [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
-
-<a id="ref1"></a>
+Vedi [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 ## <a name="email-scanning-limitations"></a>Limitazioni dell'analisi della posta elettronica
 
-L'analisi della posta elettronica consente di analizzare i file di posta elettronica utilizzati da Outlook e da altri client di posta elettronica durante le analisi su richiesta e pianificate. Vengono analizzati anche gli oggetti incorporati all'interno di un file di posta elettronica, ad esempio allegati e file archiviati. È possibile analizzare e correggere i seguenti tipi di formato di file:
+L'analisi della posta elettronica consente di analizzare i file di posta elettronica utilizzati da Outlook e da altri client di posta elettronica durante le analisi su richiesta e pianificate. Vengono analizzati anche gli oggetti incorporati all'interno della posta elettronica, ad esempio allegati e file archiviati. È possibile analizzare e correggere i seguenti tipi di formato di file:
 
 - DBX
 - MBX
 - MIME
 
-Verranno analizzati anche i file PST utilizzati da Outlook 2003 o versioni precedenti (in cui il tipo di archivio è impostato su non Unicode), ma Windows Defender non può correggere le minacce rilevate all'interno dei file PST.
+Vengono analizzati anche i file PST utilizzati da Outlook 2003 o versioni precedenti (in cui il tipo di archivio è impostato su non Unicode), ma Antivirus Microsoft Defender non è in grado di correggere le minacce rilevate all'interno dei file PST.
 
 Se Antivirus Microsoft Defender rileva una minaccia all'interno di un messaggio di posta elettronica, verranno visualizzate le informazioni seguenti per facilitare l'identificazione della posta elettronica compromessa, in modo da poter correggere manualmente la minaccia:
 
 - Oggetto e-mail
 - Nome allegato
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare, avviare ed esaminare i risultati di Antivirus Microsoft Defender analisi e correzione](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configurare ed eseguire analisi di Microsoft Defender Antivirus su richiesta](run-scan-microsoft-defender-antivirus.md)

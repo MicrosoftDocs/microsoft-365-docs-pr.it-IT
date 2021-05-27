@@ -18,21 +18,14 @@ search.appverid:
 - MET150
 description: Gli utenti possono imparare a gestire gli acquisti in modalità self-service.
 ms.date: 03/17/2021
-ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536083"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683668"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gestire acquisti in modalità self-service (utenti)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Gli utenti possono acquistare sottoscrizioni a determinati prodotti e assegnare licenze per tali sottoscrizioni agli utenti del team. L'utente è responsabile del pagamento di eventuali acquisti self-service. È possibile gestire le sottoscrizioni nell'Microsoft 365 di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
@@ -42,12 +35,42 @@ L'amministratore ha una visualizzazione di sola lettura in tutte le sottoscrizio
 
 È possibile visualizzare un elenco di tutte le sottoscrizioni acquistate in self-service acquistate.
 
-1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
+::: moniker-end
 2. Nella scheda **Prodotti** selezionare l'icona del filtro, quindi **selezionare Self-service**.
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Come acquistare altre licenze o ridurne le licenze
 
-1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
+::: moniker-end
 2. Nella scheda **Prodotti** selezionare l'abbonamento per cui si desidera acquistare altre licenze o ridurre le licenze.
 3. Scegliere **Acquista licenze** o Rimuovi **licenze.**
 4. Nel riquadro destro, nella casella **Totale** licenze, immettere il numero totale di licenze desiderate per l'abbonamento, quindi scegliere **Salva**. Ad esempio, se si dispone di 100 licenze e si desidera aggiungervi altre 5, immettere 105.
@@ -56,7 +79,23 @@ L'amministratore ha una visualizzazione di sola lettura in tutte le sottoscrizio
 
 ### <a name="to-assign-licenses"></a>Per assegnare licenze
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Licenze**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">di</a> fatturazione.
+:: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenze</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenze</a>.
+
+::: moniker-end
 2. Scegliere l'abbonamento a cui si desidera assegnare le licenze.
 3. Scegliere **Assegna licenze**.
 4. Nel riquadro **Assegna licenze agli utenti** iniziare a digitare un nome, quindi selezionarlo nei risultati per aggiungerlo all'elenco. È possibile aggiungere fino a 20 utenti per volta.
@@ -66,7 +105,23 @@ L'amministratore ha una visualizzazione di sola lettura in tutte le sottoscrizio
 
 ### <a name="to-unassign-licenses"></a>Per annullare l'assegnazione delle licenze
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Licenze**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">di</a> fatturazione.
+:: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenze</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenze</a>.
+
+::: moniker-end
 2. Scegli il prodotto per cui vuoi annullare l'assegnazione delle licenze.
 3. Scegliere gli utenti da cui si desidera annullare l'assegnazione delle licenze.
 4. Scegliere **Annulla assegnazione licenze**.
@@ -74,8 +129,23 @@ L'amministratore ha una visualizzazione di sola lettura in tutte le sottoscrizio
 
 ## <a name="cancel-a-subscription"></a>Annullare una sottoscrizione
 
-1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **Prodotti**, trovare l'abbonamento da annullare. Seleziona i tre punti (altre azioni), quindi seleziona **Annulla sottoscrizione.**
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
+::: moniker-end
+2. Nella scheda **Prodotti**, trovare l'abbonamento da annullare. Selezionare i tre puntini (Altre azioni) e quindi **Annulla abbonamento**.
 3. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Facoltativamente, fornire eventuali commenti e suggerimenti.
 4. Selezionare **Salva**.
 

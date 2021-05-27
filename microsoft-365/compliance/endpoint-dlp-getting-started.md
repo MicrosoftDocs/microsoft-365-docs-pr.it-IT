@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 34355a25283207929a12a7bc504b929fbf3041a0
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651009"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683656"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introduzione alla prevenzione della perdita di dati degli endpoint
 
@@ -104,7 +104,6 @@ Verificare che i dispositivi Windows 10 in cui si prevede di distribuire Endpoin
 
 4. Tutti i dispositivi devono essere uno dei seguenti:
 - [Aggiunto ad Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
-- Aggiunto ad Azure AD
 - [Aggiunto ad Azure AD ibrido](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - [Registrato ad Azure AD](/azure/active-directory/user-help/user-help-register-device-on-network)
 

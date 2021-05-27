@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Scopri come aggiornare gli indirizzi di fatturazione o l'indirizzo e-mail usato per ricevere le notifiche di fatturazione per Microsoft 365 per le aziende.
 ms.date: 04/07/2021
-ms.openlocfilehash: 77ccb7b7ff9927736c1adaadfd2dea6b64a084f0
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: afc23134f85995a5e8d7db0fb956635ceb6ea629
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594110"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683608"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiare gli indirizzi di fatturazione
 
@@ -45,7 +45,7 @@ Per ulteriori informazioni sulla fattura, vedere [View your bill or invoice](vie
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Account** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">di fatturazione.</a>
+1. Nell'interfaccia di amministrazione passare alla pagina **Account** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**di fatturazione.**</a>
 
 ::: moniker-end
 

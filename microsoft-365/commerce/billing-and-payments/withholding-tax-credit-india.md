@@ -20,18 +20,18 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 4866bcd07cb4a54088d230166f9b04f8258d7185
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331791"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689026"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Richiedere un credito per la ritenuta d'acconto sul tuo account (clienti India)
 
 I clienti in India ricevono fatture Web Direct (Azure e Microsoft 365) fatturate da Microsoft Regional Sales Pte Ltd. Singapore (MRS) e effettuano pagamenti transfrontalieri a Singapore per liquidare la fattura. Se hai trattenuto le imposte al momento del pagamento, questo articolo spiega la procedura per richiedere un credito per la ritenuta d'acconto (WHT) nel tuo account con MRS.
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-and-wire"></a>Per i clienti che pagano tramite assegno e bonifico
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Per i clienti che pagano tramite assegno o bonifico bancario
 
 Se l'imposta è stata trattenuta al momento del pagamento alla MRS e l'imposta trattenuta è stata depositata all'Ufficio imposte sul reddito, è necessario inviare una richiesta WHT per liquidare l'importo dell'imposta trattenuto nel tuo account.
 
@@ -44,7 +44,7 @@ Inviare la richiesta WHT aprendo un ticket con il supporto Tecnico Microsoft.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Per i clienti che pagano con carta di credito
 
-Se il metodo di pagamento è una carta di credito e hai effettuato un pagamento completo a MRS e hai pagato WHT all'Ufficio imposte sul reddito, devi inviare una richiesta WHT per richiedere il rimborso dell'importo dell'imposta.
+Se il metodo di pagamento è una carta di credito e hai effettuato un pagamento completo a MRS e hai anche pagato WHT all'Ufficio imposte sul reddito, devi inviare una richiesta WHT per richiedere il rimborso dell'importo dell'imposta.
 
 La richiesta WHT deve includere gli elementi seguenti:
 
@@ -68,11 +68,11 @@ Nella tabella seguente vengono mostrate le date di scadenza e le tempistiche per
 >
 > - I clienti possono inviare una richiesta di rimborso dell'importo wht solo dopo aver pagato la fattura.
 > - L'importo della fattura nel modulo Credito ritenuta d'acconto deve corrispondere all'importo della fattura identificato nel certificato TDS. Se l'importo della fattura è diverso tra i due moduli, è necessario specificare il motivo della differenza nel modulo Credito d'imposta alla fonte. Queste informazioni vengono controllate dal team di revisione, che potrebbe porre domande chiare, se necessario.
-> - I file di certificato TDS devono essere in uno dei formati di file seguenti: .PDF o Solo immagine (. JPEG, .PNG e .GIF). Inoltre, i nomi di file non devono contenere spazi o caratteri speciali. Le dimensioni del file non possono superare 1 MB.
+> - I file di certificato TDS devono essere in uno dei formati di file seguenti: .PDF o Solo immagine (. JPEG, .PNG o .GIF). Inoltre, i nomi di file non devono contenere spazi o caratteri speciali. Le dimensioni del file non possono superare 1 MB.
 
 Dopo l'invio, la richiesta passa al processo di approvazione in cui viene approvata per il completamento o viene inviata di nuovo all'utente per la correzione.
 
-Se si verifica un problema con la richiesta, il team di revisione potrebbe richiedere correzioni all'importo della trattenuta o alla sostituzione del certificato TDS. Devi inviare di nuovo la richiesta prima che venga approvata. Il team di revisione approverà la richiesta o richiederà altre modifiche.
+Se si verifica un problema con la richiesta, il team di revisione potrebbe richiedere correzioni all'importo della trattenuta o alla sostituzione del certificato TDS. È necessario inviare di nuovo la richiesta prima che possa essere approvata. Il team di revisione approverà la richiesta o richiederà altre modifiche.
 
 ## <a name="approved-requests"></a>Richieste approvate
 

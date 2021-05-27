@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Informazioni su come usare i filtri per creare, modificare o eliminare una visualizzazione utente personalizzata in Microsoft 365.
-ms.openlocfilehash: 4bd4ea351612c2ae5175cd27fa7a689d671a8b62
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: b4177a561d13d76f6d5a0a1077fe8037d469ee48
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759931"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683224"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Creazione, modifica o eliminazione di una visualizzazione utente personalizzata
 
-Se si è un amministratore globale o di gestione utenti di un abbonamento a Microsoft 365 per le aziende, è possibile creare visualizzazioni utente personalizzate per visualizzare un sottoinsieme specifico di utenti. Queste visualizzazioni sono in aggiunta al set standard di visualizzazioni. È possibile creare, modificare o eliminare le visualizzazioni utente personalizzate e quelle create dall'utente sono disponibili per tutti gli amministratori.
+Se si è un amministratore globale o di gestione utenti di un abbonamento Microsoft 365 per le aziende, è possibile creare visualizzazioni utente personalizzate per visualizzare un sottoinsieme specifico di utenti. Queste visualizzazioni sono in aggiunta al set standard di visualizzazioni. È possibile creare, modificare o eliminare le visualizzazioni utente personalizzate e quelle create dall'utente sono disponibili per tutti gli amministratori.
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Visualizzazioni utente personalizzate nell'interfaccia di amministrazione
 
@@ -66,12 +66,12 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
     
 - **Utenti senza licenza:** selezionare questa casella per trovare tutti gli utenti a cui non è stata assegnata una licenza. I risultati di questa visualizzazione possono anche includere utenti che hanno una cassetta postale di Exchange ma non una licenza. Per individuare tali utenti, usare il filtro **Utenti senza licenza con cassette postali o archivi di Exchange**. I risultati di questa visualizzazione possono includere anche utenti che hanno un archivio di Exchange, ma non una licenza.
     
-- **Utenti senza licenza con cassette postali o archivi di Exchange** Selezionare questa casella per visualizzare gli account utente creati in Exchange Online e con una cassetta postale di Exchange, ma a cui non è stata assegnata una licenza di Microsoft 365. I risultati di questo filtro includono gli utenti a cui è stato assegnato o che dispongono di un Exchange archivio. 
+- **Utenti senza licenza con Exchange cassette postali o archivi** Selezionare questa casella per visualizzare gli account utente creati in Exchange Online e con una cassetta postale Exchange, ma a cui non è stata assegnata una Microsoft 365 licenza. I risultati di questo filtro includono gli utenti a cui è stato assegnato o che dispongono di un Exchange archivio. 
 
 > [!NOTE]
-> Il **filtro Utenti senza licenza con cassette postali di Exchange** funziona quando:
+> Il filtro Utenti senza licenza con Exchange cassette postali funziona quando:The **Unlicensed users with Exchange mailboxes** filter works when:
 1. La cassetta postale è stata recentemente convertita **da condivisa** **a utente** e non dispone di licenza.
-2. La cassetta postale è stata migrata di recente a Microsoft 365, ma non è stata assegnata una licenza.
+2. La cassetta postale è stata migrata di recente a Microsoft 365 ma non è stata assegnata una licenza.
 3. La cassetta postale è stata creata con PowerShell e non è stata assegnata una licenza.
 4. Viene eseguito il provisioning di una nuova cassetta postale creata in locale con New-RemoteMailbox cmdlet per l'utente.
     
@@ -83,40 +83,44 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-    
-2. Nella pagina **Utenti attivi** selezionare **Filtri e** selezionare **Nuovo filtro.**
   
-3. Nella pagina **Filtro personalizzato** immettere il nome del filtro, scegliere le condizioni per il filtro personalizzato e quindi selezionare **Aggiungi**. La visualizzazione personalizzata è ora inclusa nell'elenco a discesa dei filtri.
-    
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
-
-2. Nella pagina **Utenti attivi** selezionare **Visualizzazioni** e **selezionare Aggiungi visualizzazione personalizzata.**
-  
-3. Nella pagina **Visualizzazione personalizzata** immettere il nome del filtro, scegliere le condizioni per il filtro personalizzato e quindi selezionare **Aggiungi**. La visualizzazione personalizzata è ora inclusa nell'elenco a discesa dei filtri.
+1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>. 
 
 ::: moniker-end
-
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
-
-2. Nella pagina **Utenti attivi** selezionare **Visualizzazioni** e **selezionare Aggiungi visualizzazione personalizzata.**
-  
-3. Nella pagina **Visualizzazione personalizzata** immettere il nome del filtro, scegliere le condizioni per il filtro personalizzato e quindi selezionare **Aggiungi**. La visualizzazione personalizzata è ora inclusa nell'elenco a discesa dei filtri.
+1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.  
 
 ::: moniker-end
     
+2. Nella pagina **Utenti attivi** selezionare **Filtri e** selezionare **Nuovo filtro.**
+  
+3. Nella pagina **Filtro personalizzato** immettere il nome del filtro, scegliere le condizioni per il filtro personalizzato e quindi selezionare **Aggiungi**. La visualizzazione personalizzata è ora inclusa nell'elenco a discesa dei filtri.
 
 ## <a name="edit-or-delete-a-custom-user-view"></a>Modificare o eliminare una visualizzazione utente personalizzata
 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>. 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
+
+::: moniker-end 
     
 2. Nella pagina **Utenti attivi** selezionare **Filtro,** selezionare il filtro che si desidera modificare e quindi selezionare **Modifica filtro.** 
     
@@ -124,34 +128,12 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
     > È possibile modificare solo le visualizzazioni personalizzate. 
   
 3. Nella pagina **Filtro personalizzato** modificare le informazioni in base alle esigenze e quindi selezionare **Salva**. In caso contrario, per eliminare il filtro, nella parte inferiore della pagina selezionare **Elimina.** 
-    
-::: moniker-end
 
-::: moniker range="o365-germany"
+## <a name="related-content"></a>Contenuto correlato
 
-1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
-
-2. Nella pagina **Utenti attivi** selezionare **Visualizzazioni,** selezionare il filtro che si desidera modificare e quindi selezionare **Modifica visualizzazione.** 
-    
-    > [!TIP]
-    > È possibile modificare solo le visualizzazioni personalizzate. 
-  
-3. Nella pagina **Visualizzazione personalizzata** modificare le informazioni in base alle esigenze e quindi selezionare **Salva.** In caso contrario, per eliminare il filtro, nella parte inferiore della pagina selezionare **Elimina visualizzazione personalizzata.** 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Nell'interfaccia di amministrazione passare a **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
-
-2. Nella pagina **Utenti attivi** selezionare **Visualizzazioni,** selezionare il filtro che si desidera modificare e quindi selezionare **Modifica visualizzazione.** 
-    
-    > [!TIP]
-    > È possibile modificare solo le visualizzazioni personalizzate. 
-  
-3. Nella pagina **Visualizzazione personalizzata** modificare le informazioni in base alle esigenze e quindi selezionare **Salva.** In caso contrario, per eliminare il filtro, nella parte inferiore della pagina selezionare **Elimina visualizzazione personalizzata.** 
-
-::: moniker-end
+[Panoramica dell'Microsoft 365 di amministrazione](../../business-video/admin-center-overview.md) (video)\
+[Informazioni sui ruoli di](../add-users/about-admin-roles.md) amministratore (video)\
+[Personalizzare il Microsoft 365 tema per l'organizzazione](../setup/customize-your-organization-theme.md) (articolo)
 
 
      

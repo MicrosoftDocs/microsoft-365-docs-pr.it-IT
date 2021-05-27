@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Scopri come eliminare un account utente e cosa fare con la posta elettronica e il contenuto OneDrive dell'utente e se mantenere la licenza del prodotto.
-ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 43a57a69ce0d810af2b029f49c15d32d75a4dc33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634209"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683140"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Eliminare un utente dall'organizzazione
   
 **Per informazioni su come eliminare il *proprio* Microsoft 365 utente che si usa a scuola o al lavoro? Per eseguire questa procedura, contattare il supporto tecnico presso il proprio lavoro o l'università.**
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Solo le persone che dispongono [Microsoft 365 amministratore](about-admin-roles.md) globale o autorizzazioni di gestione degli utenti per l'azienda o l'istituto di istruzione possono eliminare gli account utente.
 - Si hanno a disposizione 30 giorni per [ripristinare](restore-user.md) l'account prima che i dati dell'utente vengano eliminati definitivamente.
@@ -87,19 +87,11 @@ Poiché l'esperienza guidata illustra i passaggi per eliminare un utente, ecco c
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.  
 
-2. Selezionare i nomi degli utenti che si desidera eliminare, selezionare i tre punti (altre azioni), quindi scegliere  **Elimina utente**.
-
-   Anche se hai eliminato l'account **dell'utente, stai ancora pagando per la licenza**. Per interrompere il pagamento della licenza, vedere la procedura successiva.  In caso contrario, è possibile assegnare la licenza a un altro utente. Non verrà assegnato automaticamente a un utente.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
-
-2. Selezionare i nomi degli utenti che si desidera eliminare e nel riquadro **Azioni** in blocco scegliere **Elimina utenti**.
-
-   Anche se hai eliminato l'account **dell'utente, stai ancora pagando per la licenza**. Per interrompere il pagamento della licenza, vedere la procedura successiva.  In caso contrario, è possibile assegnare la licenza a un altro utente. Non verrà assegnato automaticamente a un utente.
 
 ::: moniker-end
 
@@ -107,11 +99,11 @@ Poiché l'esperienza guidata illustra i passaggi per eliminare un utente, ecco c
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
 
-2. Selezionare i nomi degli utenti che si desidera eliminare e nel riquadro **Azioni** in blocco scegliere **Elimina utenti**.
+::: moniker-end
+
+2. Selezionare i nomi degli utenti che si desidera eliminare, selezionare i tre punti (altre azioni), quindi scegliere  **Elimina utente**.
 
    Anche se hai eliminato l'account **dell'utente, stai ancora pagando per la licenza**. Per interrompere il pagamento della licenza, vedere la procedura successiva.  In caso contrario, è possibile assegnare la licenza a un altro utente. Non verrà assegnato automaticamente a un utente.
-
-::: moniker-end
 
 ### <a name="stop-paying-for-the-license"></a>Interrompere il pagamento per la licenza
 
@@ -119,7 +111,19 @@ La riduzione del numero di licenze è un passaggio separato che può essere eseg
   
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>. Se non vedi questa opzione, non sei un amministratore globale o un amministratore della fatturazione e non puoi eseguire questo passaggio.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
+::: moniker-end
 
 2. Nella scheda **Prodotti** selezionare l'abbonamento per cui si desidera rimuovere le licenze.
 
@@ -130,28 +134,6 @@ La riduzione del numero di licenze è un passaggio separato che può essere eseg
 5. Selezionare **Salva**.
 
 In seguito, quando si esegue la procedura per aggiungere un'altra persona all'azienda, verrà richiesto di acquistare una licenza contemporaneamente, con un solo passaggio.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>. Se non vedi questa opzione, non sei un amministratore globale o un amministratore della fatturazione e non puoi eseguire questo passaggio.
-
-2. Seleziona la sottoscrizione (se ne hai più di una) e quindi seleziona **Aggiungi/Rimuovi** licenze per eliminare la licenza in modo da non pagare finché non assumi un'altra persona.  
-
-   In seguito, quando si esegue la procedura per aggiungere un'altra persona all'azienda, verrà richiesto di acquistare una licenza contemporaneamente, con un solo passaggio.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>. Se non vedi questa opzione, non sei un amministratore globale o un amministratore della fatturazione e non puoi eseguire questo passaggio.
-
-2. Seleziona la sottoscrizione (se ne hai più di una) e quindi seleziona **Aggiungi/Rimuovi** licenze per eliminare la licenza in modo da non pagare finché non assumi un'altra persona.  
-
-   In seguito, quando si esegue la procedura per aggiungere un'altra persona all'azienda, verrà richiesto di acquistare una licenza contemporaneamente, con un solo passaggio.
-
-::: moniker-end
 
 ## <a name="delete-many-users-at-the-same-time"></a>Eliminare più utenti contemporaneamente
 

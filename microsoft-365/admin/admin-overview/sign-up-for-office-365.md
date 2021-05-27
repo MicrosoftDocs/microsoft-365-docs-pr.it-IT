@@ -23,37 +23,27 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: Informazioni su cosa è necessario sapere prima di eseguire la procedura di registrazione per Office 365.
+description: Comprendere cosa è necessario sapere prima di eseguire la procedura di iscrizione per Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 12262a2165392b9dca699605f0b86fd7f3129ef0
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 393c1304ba4e699c6bf7d09bf51f6c81bb7389d9
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332691"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683104"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Come iscriversi - Guida per gli amministratori
 
-::: moniker range="o365-worldwide"
-
-Iscriversi a Microsoft 365 per le aziende in modo che il team possa iniziare a usare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office.
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Iscriversi a Microsoft 365 per le aziende in modo che il team possa iniziare a usare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office.
-  
-::: moniker-end
+Iscriversi a Microsoft 365 per le aziende in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altri programmi Office.
 
 ::: moniker range="o365-21vianet"
 
-Office 365 gestito da 21Vianet è pensato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina. Il servizio è dotato di una tecnologia che Microsoft ha concesso in licenza a 21Vianet. Microsoft non gestisce il servizio stesso. 21Vianet gestisce, fornisce e gestisce il recapito del servizio. 21Vianet è il più grande provider di servizi di data center Internet indipendente dal gestore in Cina, che fornisce servizi di hosting, di rete gestita e di infrastruttura di cloud computing. Grazie alla licenza delle tecnologie Microsoft, 21Vianet gestisce data center Microsoft locali per offrire all'utente la possibilità di utilizzare i servizi Microsoft mantenendo i dati in Cina. 21Vianet fornisce anche l'abbonamento e i servizi di fatturazione, oltre al supporto.
+Se sei in Cina, Office 365 gestito da 21Vianet è progettato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina. Il servizio è dotato di una tecnologia che Microsoft ha concesso in licenza a 21Vianet. Microsoft non gestisce il servizio stesso. 21Vianet gestisce, fornisce e gestisce il recapito del servizio. 21Vianet è il più grande provider di servizi di data center Internet indipendente dal gestore in Cina, che fornisce servizi di hosting, di rete gestita e di infrastruttura di cloud computing. Grazie alle licenze per le tecnologie Microsoft, 21Vianet gestisce data center Microsoft locali per offrire la possibilità di usare servizi Microsoft mantenendo i dati in Cina. 21Vianet fornisce anche l'abbonamento e i servizi di fatturazione, oltre al supporto.
   
 > [!NOTE]
 > Questi servizi sono soggetti alle leggi vigenti in Cina.
   
-Iscriversi a Office 365 gestito da 21Vianet in modo che il team possa iniziare a usare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office.
+Iscriversi a Office 365 gestito da 21Vianet in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altri programmi Office.
   
 Sei pronto per iscriverti? [Selezionare un piano](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
   
@@ -64,7 +54,7 @@ Sei pronto per iscriverti? [Selezionare un piano](https://products.office.com/zh
 
 Prima di acquistare, pensa al piano a cui ti i iscriviti. Si eviteranno problemi in futuro.
 
-Guarda un breve video sulla scelta di un piano di Microsoft 365 per le aziende.<br><br>
+## <a name="watch-choose-a-microsoft-365-subscription"></a>Watch: Choose a Microsoft 365 subscription
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -92,7 +82,7 @@ Se inizi con una versione di valutazione gratuita, puoi [acquistarla in un secon
   
 Non è necessario annullare la versione di valutazione. Se la sottoscrizione di valutazione non viene acquistata, scade automaticamente alla fine del periodo di valutazione e tutte le informazioni vengono eliminate definitivamente.
 
-Guarda un breve video che mostra il processo di registrazione.<br><br>
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Set up Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -118,9 +108,9 @@ Non è necessario annullare la versione di valutazione. Se la sottoscrizione di 
   - **Indirizzo di posta elettronica** e **numero di telefono** per poter essere contattati in merito all'abbonamento, se necessario. Se ad esempio si dimentica la password, Microsoft può usare queste informazioni per inviarne una temporanea. Inoltre, le informazioni sulla fatturazione vengono inviate all'indirizzo specificato.
 
     > [!NOTE]
-    > L'indirizzo di posta elettronica immesso qui è diverso dall'indirizzo di posta elettronica di Microsoft 365 (il nome di accesso, di seguito). Poiché a questo indirizzo vengono inviate anche le informazioni sulla fatturazione, è consigliabile usare un indirizzo appropriato per la ricezione di posta elettronica aziendale.
+    > L'indirizzo di posta elettronica immesso qui è diverso Microsoft 365 indirizzo di posta elettronica (il nome di accesso, di seguito). Poiché a questo indirizzo vengono inviate anche le informazioni sulla fatturazione, è consigliabile usare un indirizzo appropriato per la ricezione di posta elettronica aziendale.
   
-- **Un nome di accesso (ID utente):** Questo ID utente diventa l'indirizzo di posta elettronica iniziale di Microsoft 365, solo per iniziare rapidamente.
+- **Un nome di accesso (ID utente):** Questo ID utente diventa l'indirizzo Microsoft 365 di posta elettronica iniziale, solo per iniziare rapidamente.
 
     Questo ID utente è l'indirizzo di posta elettronica utilizzato per accedere. Ad esempio, se il nome dell'azienda è Fourth Coffee, è possibile scegliere roberto@fourthcoffee.onmicrosoft.com come ID utente.
 
@@ -133,6 +123,6 @@ Non è necessario annullare la versione di valutazione. Se la sottoscrizione di 
     > [!IMPORTANT]
     >  Al momento dell'iscrizione, assicurati di scegliere l'opzione di pagamento migliore per la tua organizzazione. Per modificare le opzioni di pagamento è necessario chiamare il servizio di supporto per la fatturazione.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Video di formazione su Microsoft 365 per le](../../business-video/index.yml) aziende (pagina dei collegamenti)
+[video Microsoft 365 formazione su Microsoft 365](../../business-video/index.yml) per le aziende (pagina dei collegamenti)

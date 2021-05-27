@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Informazioni su come assegnare ruoli di amministratore a uno o più utenti dell'azienda in modo che possano eseguire attività specifiche nell'interfaccia di amministrazione.
-ms.openlocfilehash: 8a9da12a8ebc01a02e4362f09ccaa9e92c21b7e9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e53d1a414d081ddb74a1c4784adcd982b6194691
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634173"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683212"
 ---
 # <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore
 
@@ -46,11 +46,9 @@ Quando si aggiungono nuovi utenti, se non si assegna loro  un ruolo di amministr
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 ## <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore 
-
-::: moniker range="o365-worldwide"
 
 È possibile assegnare gli utenti a un ruolo in due modi diversi:
 
@@ -61,18 +59,16 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 1. Nell'interfaccia di amministrazione passare a **Ruoli**. Scegliere le **schede Azure AD** o **Intune** per visualizzare i ruoli di amministratore disponibili per l'organizzazione.
 2. Selezionare il ruolo di amministratore a cui si desidera assegnare l'utente.
-3. Selezionare **Amministratori assegnati** > **Aggiungi**.
+3. Selezionare **Amministratori assegnati**  >  **Aggiungi**.
 4. Digitare il nome visualizzato o il **nome** **utente** dell'utente e quindi selezionare l'utente nell'elenco dei suggerimenti.
 5. Aggiungi più utenti finché non hai finito.
 6. Selezionare **Salva** e quindi l'utente verrà aggiunto all'elenco degli amministratori assegnati.
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Assegnare un utente a un ruolo di amministratore tramite l'opzione Utenti attivi
 
+::: moniker range="o365-worldwide"
+
 1. Nell'interfaccia di amministrazione passare alla **pagina Utenti** > [utenti](https://go.microsoft.com/fwlink/p/?linkid=834822) attivi.
-
-2. Nella pagina **Utenti attivi** selezionare l'utente di cui si desidera modificare il ruolo di amministratore. Nel riquadro a comparsa, in **Ruoli,** selezionare **Gestisci ruoli.**
-
-3. Selezionare il ruolo di amministratore da assegnare all'utente. Se il ruolo che si sta cercando non è visualizzato, selezionare **Mostra tutto** nella parte inferiore dell'elenco.
 
 ::: moniker-end
 
@@ -80,33 +76,23 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
 
-2. Nella pagina **Utenti attivi** selezionare l'utente di cui si desidera modificare il ruolo di amministratore. Nel riquadro a comparsa, accanto a **Ruoli,** selezionare **Modifica.** 
-
-    Se l'opzione Modifica  non è visualizzata, non si dispone dell'autorizzazione per la modifica e non è possibile assegnare ruoli di amministratore ad altri utenti. Chiedere a un amministratore globale dell'azienda di assegnare automaticamente i ruoli. In una piccola azienda, il proprietario dell'azienda (la persona che ha acquistato l'abbonamento) è un amministratore globale. In un'azienda di grandi dimensioni, le persone chiave del reparto IT sono amministratori globali.
-
-3. Selezionare **Amministratore personalizzato** per visualizzare un elenco dei ruoli personalizzati. Per una descrizione di ogni ruolo, vedere [Informazioni sui ruoli di amministratore.](about-admin-roles.md)
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
 
-2. Nella pagina **Utenti attivi** selezionare l'utente di cui si desidera modificare il ruolo di amministratore. Nel riquadro a comparsa, accanto a **Ruoli,** selezionare **Modifica.**
-
-    Se l'opzione Modifica  non è visualizzata, non si dispone dell'autorizzazione per la modifica e non è possibile assegnare ruoli di amministratore ad altri utenti. Chiedere a un amministratore globale dell'azienda di assegnare automaticamente i ruoli. In una piccola azienda, il proprietario dell'azienda (la persona che ha acquistato l'abbonamento) è un amministratore globale. In un'azienda di grandi dimensioni, le persone chiave del reparto IT sono amministratori globali.
-
-3. Selezionare **Amministratore personalizzato** per visualizzare un elenco dei ruoli personalizzati. Per una descrizione di ogni ruolo, vedere [Informazioni sui ruoli di amministratore.](about-admin-roles.md)
-
 ::: moniker-end
+
+2. Nella pagina **Utenti attivi** selezionare l'utente di cui si desidera modificare il ruolo di amministratore. Nel riquadro a comparsa, in **Ruoli,** selezionare **Gestisci ruoli.**
+
+3. Selezionare il ruolo di amministratore da assegnare all'utente. Se il ruolo che si sta cercando non è visualizzato, selezionare **Mostra tutto** nella parte inferiore dell'elenco.
 
 ## <a name="assign-admin-roles-to-multiple-users"></a>Assegnare ruoli di amministratore a più utenti
 
 Se si conosce PowerShell, vedere [Assegnare ruoli agli account utente con PowerShell.](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) È la soluzione ideale per assegnare i ruoli a centinaia di utenti.
   
 Usare le istruzioni seguenti per assegnare i ruoli a decine di utenti.
-
-::: moniker range="o365-worldwide"
 
 ## <a name="check-admin-roles-in-your-organization"></a>Controllare i ruoli di amministratore nell'organizzazione
 
@@ -116,8 +102,6 @@ Usare le istruzioni seguenti per assegnare i ruoli a decine di utenti.
 
 - Puoi accedere ai dettagli dell'utente e guardare in **Ruoli** nella **pagina Account.**
 - In caso contrario, è **possibile passare a Ruoli** e selezionare il ruolo di amministratore e selezionare gli amministratori assegnati per vedere quali utenti sono assegnati.
-
-::: moniker-end
 
 ## <a name="related-content"></a>Contenuto correlato
 

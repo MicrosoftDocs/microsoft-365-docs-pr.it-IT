@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Informazioni su come un amministratore globale di Microsoft 365 può modificare il nome visualizzato e l'indirizzo di posta elettronica di un utente quando cambia nome. "
-ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 4f65bade32b2998f395c3b4eab7a1d2a2e5f3f33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634221"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683116"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiare un nome utente e un indirizzo e-mail
 
@@ -46,26 +46,13 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 ::: moniker range="o365-worldwide"
  
-1. Nell'interfaccia di amministrazione, passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-    
-2. Selezionare il nome dell'utente e quindi, nella scheda **Account**, selezionare **Gestisci nome utente**.
-    
-3. Nella prima casella, digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile sceglierlo per il nuovo alias usando l'elenco a discesa. 
+1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
-4. Selezionare **Salva modifiche**.
-
-   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
-
-2. Selezionare l'utente. Nel riquadro a comparsa, accanto a **Nome utente/Indirizzo di posta elettronica**, selezionare **Modifica**.
-
-3. Nella prima casella, digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile sceglierlo per il nuovo alias usando l'elenco a discesa.
-
-4. Selezionare **Salva**.
 
 ::: moniker-end
 
@@ -73,13 +60,13 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
 
-2. Selezionare l'utente. Nel riquadro a comparsa, accanto a **Nome utente/Indirizzo di posta elettronica**, selezionare **Modifica**.
-
-3. Nella prima casella, digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile sceglierlo per il nuovo alias usando l'elenco a discesa.
-
-4. Selezionare **Salva**.
-
 ::: moniker-end
+
+1. Selezionare il nome dell'utente e quindi, nella scheda **Account**, selezionare **Gestisci nome utente**.
+    
+1. Nella prima casella, digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile sceglierlo per il nuovo alias usando l'elenco a discesa. 
+
+1. Selezionare **Salva modifiche**.
 
 > [!IMPORTANT]
 > Se si riceve un messaggio di errore, consultare [Risolvere messaggi di errore](#resolve-error-messages).
@@ -89,6 +76,20 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>. 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.  
+
+::: moniker-end
     
 2. Selezionare il nome dell'utente e quindi, nella scheda **Account**, selezionare **Gestisci alias di posta elettronica**.
 
@@ -113,34 +114,17 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
   
    - Se è stata cambiata anche la password, informarlo che gli verrà chiesto di immettere la nuova password nel dispositivo mobile, altrimenti non verrà sincronizzato.
   
+## <a name="change-a-users-display-name"></a>Cambiare il nome visualizzato di un utente
+
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
-
-2. Selezionare l'utente. Nel riquadro a comparsa, accanto a **Nome utente/Indirizzo di posta elettronica**, selezionare **Modifica**.
-
-3. Selezionare **Imposta come principale** per l'indirizzo di posta elettronica da impostare come indirizzo principale per la persona specificata. 
-    
-   > [!IMPORTANT]
-   > L'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
-   > 
-   > Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
-  
-4. Viene visualizzato un grande simbolo di avvertenza giallo che segnala che si stanno per modificare le informazioni di accesso dell'utente. Selezionare **Salva**, quindi **Chiudi**.
-    
-5. Comunicare le informazioni seguenti:
- 
-   - L'applicazione di questa modifica può richiedere un po' di tempo.
-  
-   - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
-    
-   - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le vecchie informazioni di contatto.
-
-   - Se l'utente usa OneDrive, informarlo che l'URL di questa posizione è stata modificata. Se l'utente dispone di blocchi appunti di OneNote in OneDrive, potrebbe doverli chiudere e riaprire in OneNote. Se l'utente dispone di file condivisi da OneDrive, i collegamenti ai file potrebbero non funzionare e l'utente può ricondividere i file.    
-  
-   - Se è stata cambiata anche la password, informarlo che gli verrà chiesto di immettere la nuova password nel dispositivo mobile, altrimenti non verrà sincronizzato.
+1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>. 
 
 ::: moniker-end
 
@@ -148,36 +132,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
 
-2. Selezionare l'utente. Nel riquadro a comparsa, accanto a **Nome utente/Indirizzo di posta elettronica**, selezionare **Modifica**.
-
-3. Selezionare **Imposta come principale** per l'indirizzo di posta elettronica da impostare come indirizzo principale per la persona specificata. 
-    
-   > [!IMPORTANT]
-   > L'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
-   >  
-   > Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
-  
-4. Viene visualizzato un grande simbolo di avvertenza giallo che segnala che si stanno per modificare le informazioni di accesso dell'utente. Selezionare **Salva**, quindi **Chiudi**.
-    
-5. Comunicare le informazioni seguenti:
- 
-   - L'applicazione di questa modifica può richiedere un po' di tempo.
-  
-   - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
-    
-   - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le vecchie informazioni di contatto.
-
-   - Se l'utente usa OneDrive, informarlo che l'URL di questa posizione è stata modificata. Se l'utente dispone di blocchi appunti di OneNote in OneDrive, potrebbe doverli chiudere e riaprire in OneNote. Se l'utente dispone di file condivisi da OneDrive, i collegamenti ai file potrebbero non funzionare e l'utente può ricondividere i file.    
-  
-   - Se è stata cambiata anche la password, informarlo che gli verrà chiesto di immettere la nuova password nel dispositivo mobile, altrimenti non verrà sincronizzato.
-
 ::: moniker-end
-  
-## <a name="change-a-users-display-name"></a>Cambiare il nome visualizzato di un utente
-
-::: moniker range="o365-worldwide"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
 2. Selezionare il nome dell'utente e quindi, nella scheda **Account**, selezionare **Gestisci informazioni sul contatto**.
 
@@ -186,37 +141,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
    Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
 
 Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effettiva per tutti i servizi. Dopo l'applicazione della modifica, l'utente dovrà accedere a Outlook, Skype for Business e SharePoint con il nome utente aggiornato.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
-
-2. Selezionare l'utente. Nel riquadro a comparsa, accanto a **Informazioni contatto**, selezionare **Modifica**.
-
-3. Nella casella **Nome visualizzato**, digitare un nuovo nome per l'utente, quindi selezionare **Salva**.
-
-   Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
-
-Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effettiva per tutti i servizi. Dopo l'applicazione della modifica, l'utente dovrà accedere a Outlook, Skype for Business e SharePoint con il nome utente aggiornato. Assicurarsi quindi di comunicare la modifica all'utente.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
-
-2. Selezionare l'utente. Nel riquadro a comparsa, accanto a **Informazioni contatto**, selezionare **Modifica**.
-
-3. Nella casella **Nome visualizzato**, digitare un nuovo nome per l'utente, quindi selezionare **Salva**.
-
-   Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
-
-Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effettiva per tutti i servizi. Dopo l'applicazione della modifica, l'utente dovrà accedere a Outlook, Skype for Business e SharePoint con il nome utente aggiornato. Assicurarsi quindi di comunicare la modifica all'utente.
-
-::: moniker-end
-
+ 
 ## <a name="resolve-error-messages"></a>Risolvere messaggi di errore
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Non è possibile trovare un parametro corrispondente al nome 'EmailAddresses'"

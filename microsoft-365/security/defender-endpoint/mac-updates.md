@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934502"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684208"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuire gli aggiornamenti per Microsoft Defender per Endpoint in macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "51934502"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint su macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -48,7 +48,7 @@ Se decidi di distribuire gli aggiornamenti usando gli strumenti di distribuzione
 
 ## <a name="use-msupdate"></a>Utilizzare msupdate
 
-MAU include uno strumento da riga di comando, denominato *msupdate,* progettato per gli amministratori IT in modo che abbia un controllo più preciso sulla modalità di applicazione degli aggiornamenti. Le istruzioni per l'utilizzo di questo strumento sono disponibili in [Update Office for Mac by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
+MAU include uno strumento da riga di comando, denominato *msupdate,* progettato per gli amministratori IT in modo che abbia un controllo più preciso sulla modalità di applicazione degli aggiornamenti. Le istruzioni per l'utilizzo di questo strumento sono disponibili in [Aggiornamento Office per Mac tramite msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
 
 In MAU, l'identificatore dell'applicazione per Microsoft Defender per Endpoint in macOS è *WDAV00*. Per scaricare e installare gli aggiornamenti più recenti per Microsoft Defender for Endpoint in macOS, eseguire il comando seguente da una finestra del terminale:
 
@@ -125,12 +125,12 @@ Modificare se gli utenti locali potranno fare clic sull'opzione "Controlla aggio
 | **Dominio** | `com.microsoft.autoupdate2` |
 | **Chiave** | EnableCheckForUpdatesButton |
 | **Data type** | Booleano |
-| **Valori possibili** | True (impostazione predefinita) <br/> False |
+| **Valori possibili** | True (impostazione predefinita) <br/> Falso |
 
 
 ### <a name="disable-insider-checkbox"></a>Casella di controllo Disattiva Insider
 
-Impostare su true per rendere "Partecipa al programma Office Insider..." casella di controllo non disponibile/ disattivata per gli utenti.
+Impostare su true per rendere "Partecipa al programma Insider Office insider..." casella di controllo non disponibile/ disattivata per gli utenti.
 
 |Sezione|Valore|
 |:--|:--|
@@ -149,16 +149,23 @@ Impostare su false per inviare dati heartbeat minimi, nessun utilizzo dell'appli
 | **Dominio** | `com.microsoft.autoupdate2` |
 | **Chiave** | SendAllTelemetryEnabled |
 | **Data type** | Booleano |
-| **Valori possibili** | True (impostazione predefinita) <br/> False |
+| **Valori possibili** | True (impostazione predefinita) <br/> Falso |
 
 
 ## <a name="example-configuration-profile"></a>Profilo di configurazione di esempio
 
 Viene utilizzato il profilo di configurazione seguente per:
-- Posizionare il dispositivo nel canale Beta
+- Posizionare il dispositivo nel canale Di produzione
 - Scaricare e installare automaticamente gli aggiornamenti
 - Abilitare il pulsante "Controlla aggiornamenti" nell'interfaccia utente
 - Consenti agli utenti nel dispositivo di registrarsi nei canali Insider
+
+
+>[!WARNING]
+>La configurazione seguente è una configurazione di esempio e non deve essere utilizzata in produzione senza un'adeguata revisione delle impostazioni e la personalizzazione delle configurazioni.
+
+>[!TIP]
+>Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipato, è consigliabile configurare alcuni dispositivi dell'organizzazione in `Beta` o `Preview` .
 
 ### <a name="jamf"></a>JAMF
 
@@ -168,7 +175,7 @@ Viene utilizzato il profilo di configurazione seguente per:
 <plist version="1.0">
 <dict>
     <key>ChannelName</key>
-    <string>Beta</string>
+    <string>Production</string>
     <key>HowToCheck</key>
     <string>AutomaticDownload</string>
     <key>EnableCheckForUpdatesButton</key>
@@ -228,7 +235,7 @@ Viene utilizzato il profilo di configurazione seguente per:
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Beta</string>
+            <string>Production</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>

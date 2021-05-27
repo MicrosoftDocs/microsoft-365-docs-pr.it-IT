@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Seguire il percorso di un messaggio in arrivo tramite lo stack di filtro delle minacce in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538688"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683296"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Procedura dettagliata per la protezione dalle minacce in Microsoft Defender per Office 365
 
@@ -111,13 +111,13 @@ L'ultima fase si verifica dopo il recapito della posta o dei file, agendo sulla 
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="La fase 4 del filtro in Defender per Office 365 è la protezione post-recapito.":::
 
-1. **Collegamenti sicuri** è la protezione basata sul clic di MDO. Ogni URL in ogni messaggio viene racchiuso in modo che punti ai server Collegamenti sicuri Microsoft. Quando si fa clic su un URL, viene controllato rispetto alla reputazione più recente, prima che l'utente venga reindirizzato al sito di destinazione. L'URL viene in modalità sandbox asincrona per aggiornarne la reputazione.
+1. **Collegamenti sicuri** è Defender per Office 365 protezione con il tempo di clic. Ogni URL in ogni messaggio viene racchiuso in modo che punti ai server Collegamenti sicuri Microsoft. Quando si fa clic su un URL, viene controllato rispetto alla reputazione più recente, prima che l'utente venga reindirizzato al sito di destinazione. L'URL viene in modalità sandbox asincrona per aggiornarne la reputazione.
 
-2. **Phish Zero-Hour Auto-Purge (ZAP)** rileva e neutralizza retroattivamente i messaggi di phishing dannosi già recapitati Exchange Online cassette postali.
+2. **Zero-Hour Auto-purge (ZAP)** per il phishing rileva e neutralizza retroattivamente i messaggi di phishing dannosi che sono già stati recapitati a Exchange Online cassette postali.
 
-3. **Malware ZAP** rileva e neutralizza retroattivamente i messaggi di malware dannosi già recapitati Exchange Online cassette postali.
+3. **ZAP per il malware** rileva e neutralizza retroattivamente i messaggi di malware dannosi già recapitati Exchange Online cassette postali.
 
-4. **Spam ZAP** rileva e neutralizza retroattivamente i messaggi di posta indesiderata dannosi già recapitati Exchange Online cassette postali.
+4. **ZAP per il phishing** rileva e neutralizza retroattivamente i messaggi di posta indesiderata dannosi già recapitati Exchange Online cassette postali.
 
 5. **Le visualizzazioni** della campagna consentono agli amministratori di vedere il quadro generale di un attacco, più velocemente e completamente, di quanto possa fare qualsiasi team senza automazione. Microsoft sfrutta le grandi quantità di dati anti-phishing, posta indesiderata e antimalware nell'intero servizio per identificare le campagne e quindi consente agli amministratori di analizzarle dall'inizio alla fine, inclusi obiettivi, impatti e flussi, disponibili anche in una scrittura di campagna scaricabile.
 
@@ -129,14 +129,13 @@ L'ultima fase si verifica dopo il recapito della posta o dei file, agendo sulla 
 
 9. Quando si seleziona un URL che punta a un file dopo il recapito, la **detonazione** del contenuto collegato visualizza una pagina di avviso fino al completamento della sandbox del file e l'URL viene trovato sicuro.
 
-
 ## <a name="the-filtering-stack-diagram"></a>Diagramma dello stack di filtro
 
 Il diagramma finale (come tutte le parti del diagramma che lo compone) è soggetto a modifiche man mano che il prodotto cresce *e si sviluppa.* Aggiungi un segnalibro a questa pagina e usa l'opzione **di feedback** che troverai in basso se devi chiedere dopo gli aggiornamenti. Per i record, questo è lo stack con tutte le fasi nell'ordine:
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Tutte le fasi del filtro in MDO nell'ordine da 1 a 4.":::
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 È necessario configurare Microsoft Defender per Office 365 ***in questo momento** _? Usa questo stack, _now*, con questa procedura dettagliata per [iniziare](protect-against-threats.md) a proteggere l'organizzazione.
 

@@ -20,12 +20,12 @@ description: Gli amministratori possono conoscere la protezione dalle minacce in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624622"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683332"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -78,27 +78,26 @@ Per configurare Defender per Office 365, è necessario disporre di un ruolo appr
 
 Per ulteriori informazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md)
 
-## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Prima di iniziare, attivare la registrazione di controllo per la creazione di report e l'analisi
+### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Attivare la registrazione di controllo per la creazione di report e indagini
 
-Avviare la registrazione di controllo in anticipo. Sarà necessario che il controllo sia **ON** per alcuni dei passaggi seguenti. La registrazione di controllo è disponibile nelle sottoscrizioni che [includono Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Per visualizzare i dati nei report di protezione dalle minacce, ad esempio il [dashboard](security-dashboard.md)di [sicurezza,](view-email-security-reports.md)i report di sicurezza della posta elettronica e [Esplora](threat-explorer.md)risorse, la registrazione di controllo deve essere *attivata.* Per ulteriori informazioni, vedere Attivare o disattivare la ricerca nel [log di controllo.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Avviare la registrazione di controllo in anticipo. È necessario che il controllo sia **ON** per alcuni dei passaggi seguenti. La registrazione di controllo è disponibile nelle sottoscrizioni che [includono Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Per visualizzare i dati nei report di protezione dalle minacce, ad esempio il [dashboard](security-dashboard.md)di [sicurezza,](view-email-security-reports.md)i report di sicurezza della posta elettronica e [Esplora](threat-explorer.md)risorse, la registrazione di controllo deve essere *attivata.* Per ulteriori informazioni, vedere Attivare o disattivare la ricerca nel [log di controllo.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="part-1---anti-malware-protection"></a>Parte 1 - Protezione antimalware
 
-[La protezione antimalware](anti-malware-protection.md) è disponibile nelle sottoscrizioni che includono [EOP.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Per ulteriori informazioni sulle impostazioni consigliate per l'antimalware, vedere [Impostazioni dei criteri antimalware EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere Criteri di **gestione** delle minacce \>  \> **Antimalware.**
+1. Aprire <https://security.microsoft.com/antimalwarev2> .
 
-2. Fare doppio clic sul **criterio Predefinito** e quindi scegliere **impostazioni**.
+2. Selezionare il criterio Predefinito facendo clic sul nome del criterio.
 
-3. Specificare le impostazioni seguenti:
+3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic su Modifica impostazioni **di protezione** e quindi configurare le impostazioni seguenti:
+   - Selezionare **Abilita il filtro allegati comuni** per attivare il filtro allegati comuni. Fare **clic su Personalizza tipi di file** per aggiungere altri tipi di file.
+   - Verificare che **l'opzione Abilita eliminazione automatica** a zero ore per il malware sia selezionata.
+   - Verificare che nessuna delle impostazioni nella **sezione Notifica** sia selezionata.
 
-    - Nella sezione **Risposta rilevamento** malware mantenere l'impostazione predefinita **No**.
+   Al termine, fare clic su **Salva**
 
-    - Nella sezione **Filtro tipi di allegati** comuni scegliere **Sì.**
-
-4. Fare clic su **Salva**.
-
-Per ulteriori informazioni sulle opzioni dei criteri antimalware, vedere [Configure anti-malware policies](configure-anti-malware-policies.md).
+Per istruzioni dettagliate sulla configurazione dei criteri antimalware, vedere [Configure anti-malware policies in EOP.](configure-anti-malware-policies.md)
 
 ## <a name="part-2---anti-phishing-protection"></a>Parte 2 - Protezione anti-phishing
 

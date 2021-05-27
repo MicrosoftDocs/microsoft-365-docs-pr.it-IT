@@ -9,20 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità.
+description: Informazioni su come creare, modificare, rimuovere e testare tipi di informazioni riservate personalizzati per DLP nel Centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908490"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683844"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introduzione ai tipi di informazione sensibile personalizzati
 
@@ -61,10 +61,10 @@ Segui questa procedura per creare un nuovo tipo di informazione sensibile che pu
 2. Compila i campi **Nome** e **Descrizione** e seleziona **Avanti**.
 3. Seleziona **Crea configurazione**. Puoi creare più configurazioni, ciascuna con differenti elementi e livelli di confidenza, mentre definisci il tuo nuovo tipo di informazione sensibile.
 4. Scegli il livello di confidenza predefinito per la configurazione. I valori sono **Bassa confidenza**, **Media confidenza**, e **Alta confidenza**.
-5. Scegli e definisci l'**elemento primario**. L'elemento primario può essere una **espressione regolare** con una convalida facoltativa, un **elenco di parole chiave**, un **dizionario di parole chiave**, oppure una delle **funzioni** preconfigurate. Per altre informazioni sulle funzioni DLP, vedere [Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md).
+5. Scegli e definisci l'**elemento primario**. L'elemento primario può essere una **espressione regolare** con una convalida facoltativa, un **elenco di parole chiave**, un **dizionario di parole chiave**, oppure una delle **funzioni** preconfigurate. Per altre informazioni sulle funzioni DLP, vedere [Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md). Per ulteriori informazioni sulla data e sui validator di checksum, vedere [More information on regular expression validators](#more-information-on-regular-expression-validators).
 6. Immetti un valore per **Prossimità caratteri**.
-7. (Facoltativo) Aggiungi gli elementi di supporto, se disponibili. Gli elementi di supporto possono essere espressioni regolari con una convalida facoltativa, elenchi o dizionari di parole chiave, oppure una delle funzioni preconfigurate. 
-8.  (Facoltativo) Aggiungi eventuali [**altri controlli**](#more-information-on-additional-checks) dall'elenco dei controlli disponibili.
+7. (Facoltativo) Aggiungi gli elementi di supporto, se disponibili. Gli elementi di supporto possono essere espressioni regolari con una convalida facoltativa, elenchi o dizionari di parole chiave, oppure una delle funzioni preconfigurate. Gli elementi di supporto possono avere una propria **configurazione di prossimità del** carattere. 
+8. (Facoltativo) Aggiungi eventuali [**altri controlli**](#more-information-on-additional-checks) dall'elenco dei controlli disponibili.
 9. Scegli **Crea**.
 10. Scegli **Avanti**.
 11. Scegli il **livello di confidenza consigliato** per questo tipo di informazione sensibile.
@@ -122,6 +122,47 @@ Usa questa procedura per creare un nuovo tipo di informazione sensibile basato s
 È anche possibile creare tipi di informazioni sensibili personalizzati usando PowerShell e le funzionalità del classificatore Exact Data Match. Per altre informazioni su questi metodi, vedere:
 - [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Creare un tipo di informazioni sensibili personalizzato per DLP con Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+## <a name="more-information-on-regular-expression-validators"></a>Ulteriori informazioni sui validator delle espressioni regolari
+
+### <a name="checksum-validator"></a>Checksum validator
+
+Se è necessario eseguire un checksum su una cifra in un'espressione regolare, è possibile utilizzare *il validator del checksum.* Ad esempio, si supponga di dover creare un codice SIT per un numero di licenza a otto cifre in cui l'ultima cifra è una cifra di checksum convalidata utilizzando un calcolo mod 9. L'algoritmo di checksum è stato configurato in questo modo:
+ 
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
+
+1. Definisci l'elemento primario con questa espressione regolare:
+
+`\d{8}`
+
+2. Aggiungi quindi il validator del checksum.
+3. Aggiungi i valori di peso separati da virgole, la posizione della cifra di controllo e il valore Mod. Per ulteriori informazioni sull'operazione Modulo, vedere [Operazione modulo](https://en.wikipedia.org/wiki/Modulo_operation).
+
+> [!NOTE]
+> Se la cifra di controllo non fa parte del calcolo del checksum, utilizzare 0 come peso per la cifra di controllo. Ad esempio, nel caso precedente il peso 8 sarà uguale a 0 se la cifra di controllo non deve essere utilizzata per calcolare la cifra di controllo.  Modulo_operation).
+
+![Screenshot of configured checksum validator](../media/checksum-validator.png)
+
+### <a name="date-validator"></a>Convalida data
+
+Se un valore di data incorporato nell'espressione regolare fa parte di  un nuovo modello che si sta creando, è possibile utilizzare la convalida della data per verificare che soddisfi i criteri specificati. Ad esempio, si supponga di voler creare un SIT per un numero di identificazione del dipendente di nove cifre. Le prime sei cifre sono la data di assunzione in formato DDMMYY e le ultime tre sono numeri generati casualmente. Per verificare che le prime sei cifre siano nel formato corretto. 
+
+1. Definisci l'elemento primario con questa espressione regolare:
+
+`\d{9}`
+
+2. Aggiungi quindi il validator della data.
+3. Selezionare il formato della data e lo scostamento iniziale. Poiché la stringa della data è la prima sei cifre, l'offset è `0` .
+
+![Screenshot of configured date validator](../media/date-validator.png)
+
+### <a name="functional-processors-as-validators"></a>Processori funzionali come validator
+
+È possibile utilizzare i processori di funzioni per alcuni dei SIT più comunemente usati come validator. In questo modo è possibile definire un'espressione regolare personalizzata assicurandosi che superino i controlli aggiuntivi richiesti dal sit. Ad esempio, Func_India_Aadhar che l'espressione regolare personalizzata definita dall'utente passi la logica di convalida necessaria per la scheda Aadhar indiana. Per ulteriori informazioni sulle funzioni DLP che possono essere utilizzate come validator, vedere [What the DLP functions look for](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for). 
+
+### <a name="luhn-check-validator"></a>Convalida controllo Luhn
+
+È possibile utilizzare il validator di controllo Luhn se si dispone di un tipo di informazioni riservate personalizzato che include un'espressione regolare che deve passare [l'algoritmo Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm).
 
 ## <a name="more-information-on-additional-checks"></a>Maggiori informazioni sugli altri controlli
 

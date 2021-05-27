@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ecfeaa10eda6b3832b7196c0598d6584783bb5ff
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 5663a17de2e601c506b4d1b9ac44eaab6ae6245f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653649"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689190"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Esportare la valutazione dell'inventario software per dispositivo
 
@@ -39,17 +39,19 @@ ms.locfileid: "52653649"
 >
 Esistono diverse chiamate API per ottenere diversi tipi di dati. Poiché la quantità di dati può essere molto grande, è possibile recuperarla in due modi:
 
-- **OData**  L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per _organizzazioni di piccole dimensioni con meno di 100 K dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
+- [Esportare OData di valutazione **dell'inventario software**](#1-export-software-inventory-assessment-odata)  L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per _organizzazioni di piccole dimensioni con meno di 100 K dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
 
-- **tramite file** Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
+- [Esportare la valutazione dell'inventario **software tramite file**](#2-export-software-inventory-assessment-via-files)  Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
 
   - Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione.
 
   - Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
 
-I dati raccolti (per _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
+I dati raccolti (tramite _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
 
-Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
+> [!Note]
+>
+> Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
 
 ## <a name="1-export-software-inventory-assessment-odata"></a>1. Esportare la valutazione dell'inventario software (OData)
 
@@ -90,11 +92,11 @@ GET /api/machines/SoftwareInventoryByMachine
 >
 >-Ogni record è di circa 0,5 KB di dati. È consigliabile prendere in considerazione questo parametro quando si sceglie il parametro pageSize corretto.
 
->-Le proprietà definite nella tabella seguente sono elencate alfanumericamente in base all'ID proprietà. Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in queste tabelle.
+>-Le proprietà definite nella tabella seguente sono elencate in ordine alfabetico, in base all'ID proprietà. Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in questa tabella.
 >
 >-Alcune colonne aggiuntive potrebbero essere restituite nella risposta. Queste colonne sono temporanee e potrebbero essere rimosse, utilizzare solo le colonne documentate.
 
-Proprietà (id) | Tipo di dati | Descrizione | Esempio di valore restituito
+Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 :---|:---|:---|:---
 DeviceId | stringa | Identificatore univoco del dispositivo nel servizio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName | stringa | Nome di dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com
@@ -252,7 +254,7 @@ GET /api/machines/SoftwareInventoryExport
 >
 >_ Per la massima velocità di download dei dati, puoi assicurarti di eseguire il download dalla stessa area di Azure in cui si trovano i dati.
 >
-Proprietà (id) | Tipo di dati | Descrizione | Esempio di valore restituito
+Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 :---|:---|:---|:---
 Esportare file | stringa \[ di matrice\] | Elenco degli URL di download per i file che tengono lo snapshot corrente dell'organizzazione | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
 GeneratedTime | stringa | Ora in cui è stata generata l'esportazione. | 2021-05-20T08:00:00Z ]

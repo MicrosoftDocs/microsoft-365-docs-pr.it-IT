@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: be21be07758c1123cdde38e3750cafe739bfb66a
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 951f78ba361a12e404a5cce2071f931eab30c43f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653654"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689214"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Esportare la valutazione delle vulnerabilità software per dispositivo
 
@@ -37,21 +37,23 @@ ms.locfileid: "52653654"
 [!include[Prerelease information](../../includes/prerelease.md)]
 >
 >
-Restituisce tutte le vulnerabilità note e i relativi dettagli per tutti i dispositivi, in base al dispositivo.
+Restituisce tutte le vulnerabilità software note e i relativi dettagli per tutti i dispositivi, in base al dispositivo.
 
 Esistono diverse chiamate API per ottenere diversi tipi di dati. Poiché la quantità di dati può essere molto grande, è possibile recuperarla in due modi:
 
-- **OData**  L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per _organizzazioni di piccole dimensioni con meno di 100.000 dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
+- [Valutazione delle vulnerabilità del software di esportazione OData](#1-export-software-vulnerabilities-assessment-odata)  L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per _organizzazioni di piccole dimensioni con meno di 100 K dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
 
-- **tramite file** Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100.000 dispositivi. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
+- [Esportare la valutazione delle vulnerabilità software tramite file](#2-export-software-vulnerabilities-assessment-via-files) Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
 
   - Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione.
 
   - Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
 
-I dati raccolti (per _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
+I dati raccolti (tramite _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
 
-Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
+> [!Note]
+>
+> Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
 
 ## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. Esportare la valutazione delle vulnerabilità software (OData)
 
@@ -93,10 +95,10 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >
 >- Nella risposta potrebbero essere restituite alcune colonne aggiuntive. Queste colonne sono temporanee e potrebbero essere rimosse, utilizzare solo le colonne documentate.
 >
->- Le proprietà definite nella tabella seguente sono elencate alfanumericamente in base all'ID proprietà.  Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in queste tabelle.
+>- Le proprietà definite nella tabella seguente sono elencate in ordine alfabetico in base all'ID proprietà.  Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in questa tabella.
 >
 
-Proprietà (id) | Tipo di dati | Descrizione | Esempio di valore restituito
+Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 :---|:---|:---|:---
 CveId | stringa | Identificatore univoco assegnato alla vulnerabilità della sicurezza nel sistema CVE (Common Vulnerabilities and Exposures). | CVE-2020-15992
 CvssScore | stringa | Punteggio CVSS del CVE. | 6.2
@@ -304,10 +306,8 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >
 >- Nella risposta potrebbero essere restituite alcune colonne aggiuntive. Queste colonne sono temporanee e potrebbero essere rimosse, utilizzare solo le colonne documentate.
 >
->- Le proprietà definite nella tabella seguente sono elencate in ordine alfabetico in base all'ID proprietà.  Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in queste tabelle.
->
 
-Proprietà (id) | Tipo di dati | Descrizione | Esempio di valore restituito
+Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 :---|:---|:---|:---
 Esportare file | stringa \[ di matrice\]  | Elenco di URL di download per i file che tengono lo snapshot corrente dell'organizzazione. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
 GeneratedTime | stringa | Ora in cui è stata generata l'esportazione. | 2021-05-20T08:00:00Z

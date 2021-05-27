@@ -17,12 +17,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 906048609ce70c761bb014961e02c86f912cd638
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624610"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683500"
 ---
 # <a name="user-submissions-policy"></a>Criteri per gli invii di utenti
 
@@ -64,9 +64,9 @@ Utilizzare gli articoli seguenti per configurare i prerequisiti necessari in mod
 
 Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti applicabili, utilizzare il Centro sicurezza [&](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) conformità per configurare la cassetta postale di invio degli utenti (in questo articolo).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla **pagina Invii utente,** usa <https://protection.office.com/userSubmissionsReportMessage> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla **pagina Invii utente,** usa <https://protection.office.com/userSubmissionsReportMessage> .
 
 - Per modificare la configurazione per gli invii di utenti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
@@ -141,7 +141,7 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 
 È possibile configurare gli strumenti di segnalazione dei messaggi di terze parti per inviare i messaggi segnalati alla cassetta postale personalizzata. L'unico requisito è che il messaggio originale sia incluso come allegato nel messaggio inviato alla cassetta postale personalizzata (non inoltrare semplicemente il messaggio originale alla cassetta postale personalizzata).
 
-I requisiti di formattazione dei messaggi sono descritti nella sezione successiva.
+I requisiti di formattazione dei messaggi sono descritti nella sezione successiva. La formattazione è facoltativa, ma se non segue il formato specificato, i report verranno sempre inviati come phish.
 
 ## <a name="message-submission-format"></a>Formato invio messaggio
 

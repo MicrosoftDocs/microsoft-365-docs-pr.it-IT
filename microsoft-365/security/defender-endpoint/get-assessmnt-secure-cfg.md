@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f2e20415cb64903e8dfe2c82646c1970036b8f6b
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: ab33db7fb7acf1969973a7af8f80ea97ef3d378f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653646"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689098"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Esportare la valutazione della configurazione sicura per dispositivo
 
@@ -39,19 +39,21 @@ ms.locfileid: "52653646"
 >
 Restituisce tutte le configurazioni e il relativo stato, in base al dispositivo.
 
-Esistono diverse chiamate API per ottenere diversi tipi di dati. Poiché la quantità di dati può essere molto grande, è possibile recuperarla in due modi:
+Esistono diverse chiamate API per ottenere diversi tipi di dati. Poiché la quantità di dati può essere di grandi dimensioni, è possibile recuperarla in due modi:
 
-- **OData**  L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per _organizzazioni di piccole dimensioni con meno di 100.000 dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
+- [Export secure configuration assessment **OData**](#1-export-secure-configuration-assessment-odata): L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per _organizzazioni di piccole dimensioni con meno di 100 K dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
 
-- **tramite file** Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100.000 dispositivi. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
+- [Esportare la valutazione della configurazione sicura tramite **file:**](#2-export-secure-configuration-assessment-via-files)questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
 
   - Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione.
 
   - Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
 
-I dati raccolti (per _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
+I dati raccolti (tramite _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
 
-Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
+> [!Note]
+>
+> Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
 
 ## <a name="1-export-secure-configuration-assessment-odata"></a>1. Esportare la valutazione della configurazione sicura (OData)
 
@@ -90,12 +92,12 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 >[!Note]
 >
->- Le proprietà definite nella tabella seguente sono elencate alfanumericamente in base all'ID proprietà.  Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in queste tabelle.
+>- Le proprietà definite nella tabella seguente sono elencate in ordine alfabetico in base all'ID proprietà.  Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in questa tabella.
 >
 >- Nella risposta potrebbero essere restituite alcune colonne aggiuntive. Queste colonne sono temporanee e potrebbero essere rimosse, utilizzare solo le colonne documentate.
 >
 
-Proprietà (id) | Tipo di dati | Descrizione | Esempio di valore restituito
+Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 :---|:---|:---|:---
 ConfigurationCategory | stringa | Categoria o raggruppamento a cui appartiene la configurazione: Applicazione, Sistema operativo, Rete, Account, Controlli di sicurezza | Controlli di sicurezza
 ConfigurationId | stringa | Identificatore univoco di una configurazione specifica | scid-10000
@@ -255,7 +257,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 >
 >- Per ottenere la massima velocità di download dei dati, puoi assicurarti di eseguire il download dalla stessa area di Azure in cui si trovano i dati.
 >
-Proprietà (id) | Tipo di dati | Descrizione | Esempio di valore restituito
+Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 :---|:---|:---|:---
 Esportare file | stringa \[ di matrice\] | Elenco degli URL di download per i file che tengono lo snapshot corrente dell'organizzazione | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
 GeneratedTime | stringa | Ora in cui è stata generata l'esportazione. | 2021-05-20T08:00:00Z ]

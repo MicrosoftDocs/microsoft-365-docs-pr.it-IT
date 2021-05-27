@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come gestire i casi di eDiscovery di base. Ciò include la chiusura di un caso, la riapertura di un caso chiuso e l'eliminazione di un caso.
-ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d729c91d4e81ad12d0b4b16574aa4edad8e239a3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532447"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684100"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Chiudere, riaprire ed eliminare un caso di Core eDiscovery
 
@@ -92,7 +92,7 @@ Prima di poter eliminare un caso ,sia esso attivo  o chiuso, è necessario elimi
 
 Per eliminare un blocco di eDiscovery:
 
-1. Passare alla **scheda** Esenzioni nel caso in cui si desidera eliminare.
+1. Passare alla **scheda Esenzioni** nel caso in cui si desidera eliminare.
 
 2. Selezionare l'esenzione che si desidera eliminare.
 

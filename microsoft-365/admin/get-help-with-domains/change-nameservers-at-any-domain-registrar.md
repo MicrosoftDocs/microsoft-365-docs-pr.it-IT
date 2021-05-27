@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come posta elettronica e Skype for Business Online utilizzino il proprio nome di dominio.
-ms.openlocfilehash: c6394b505e025c565713aae753879601f5a6aecf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635439"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683128"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 
@@ -43,7 +43,6 @@ Seguire queste istruzioni per aggiungere e configurare il dominio in Microsoft 3
 - Si desidera Microsoft 365 gestire i record DNS. Se si preferisce, è possibile [gestire personalmente i propri record DNS](../setup/add-domain.md).
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>Aggiungere un record TXT o MX a scopo di verifica
-<a name="BKMK_verify"> </a>
 
 > [!NOTE]
 > È necessario creare solo uno di questi record. Il record TXT è solitamente il tipo preferito, ma non è supportato da alcuni provider di hosting DNS. In questi casi è possibile creare un record MX. 
@@ -94,17 +93,13 @@ Quando Microsoft 365 trova il record TXT corretto, il dominio è verificato.
   
 3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
  
-    
   
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
-    
-    
   
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record dei server dei nomi del dominio
-<a name="BKMK_nameservers"> </a>
 
 Quando si arriva all'ultimo passaggio della configurazione guidata dei domini in Microsoft 365, è rimasta un'attività. Per configurare il dominio con i servizi di Microsoft 365, ad esempio la posta elettronica, è necessario modificare i record del server dei nomi (o NS) del dominio presso il registrar in modo che puntino ai server dei nomi primario e secondario di Microsoft 365. Quindi, poiché Microsoft 365 dns, i record DNS necessari per i servizi vengono impostati automaticamente. È possibile aggiornare i record dei server dei nomi manualmente seguendo i passaggi eventualmente disponibili nella Guida del sito Web del registrar. Se non si ha familiarità con il DNS, contattare il supporto del registrar.
 
@@ -199,5 +194,5 @@ Dopo l'aggiornamento dei record del server dei nomi in modo che puntino a Micros
 ## <a name="related-content"></a>Contenuto correlato
 
 [Aggiungere record DNS per connettere il dominio](create-dns-records-at-any-dns-hosting-provider.md) (articolo)\
-[Individuare e risolvere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)\
+[Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)\
 [Gestire i domini](index.yml) (pagina di collegamento)
