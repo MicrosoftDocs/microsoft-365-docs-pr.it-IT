@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934286"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694474"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Informazioni sulla privacy - Microsoft Defender for Endpoint su iOS
 
@@ -39,6 +39,9 @@ ms.locfileid: "51934286"
 Defender for Endpoint in iOS raccoglie le informazioni dai dispositivi iOS configurati e le archivia nello stesso tenant in cui si dispone di Defender per Endpoint. Le informazioni vengono raccolte per mantenere Defender for Endpoint su iOS sicuro, aggiornato, che funzioni come previsto e per supportare il servizio.
 
 Per altre informazioni sull'archiviazione dei dati, vedi [Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint.](data-storage-privacy.md)
+
+
+Per altre informazioni sulle domande più comuni sulla privacy su Microsoft Defender per Endpoint su dispositivi mobili Android e iOS, vedi Microsoft Defender per Endpoint e la tua privacy su dispositivi mobili Android e [iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
 
 ## <a name="required-data"></a>Dati obbligatori 
 
@@ -60,9 +63,9 @@ Ecco un elenco dei tipi di dati raccolti:
 
 - Informazioni su tenant, dispositivo e utente 
 
-    - ID dispositivo di Azure Active Directory (AD) e ID utente di Azure - Identifica in modo univoco il dispositivo, rispettivamente Utente in Azure Active Directory. 
+    - Azure Active Directory (AD) ID dispositivo e ID utente di Azure - Identifica in modo univoco il dispositivo, rispettivamente Utente in Azure Active Directory. 
 
-    - ID tenant di Azure - GUID che identifica l'organizzazione all'interno di Azure Active Directory. 
+    - ID tenant di Azure - GUID che identifica l'organizzazione all'interno Azure Active Directory. 
 
     - ID organizzazione di Microsoft Defender for Endpoint - Identificatore univoco associato all'organizzazione a cui appartiene il dispositivo. Consente a Microsoft di identificare se vi sono problemi che interessano un set selezionato di aziende e il numero di aziende che ne sono state influenzate. 
 

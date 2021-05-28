@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare gli elementi consentiti e i blocchi nell'elenco Consenti/Blocca tenant nel portale di sicurezza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 270e38d65857de2f4d06460fb3bb77f72a165ecf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538964"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694486"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gestire l'elenco di tenant consentiti/bloccati
 
@@ -44,14 +44,13 @@ L'elenco Tenant consentiti/bloccati nel Centro sicurezza & conformità consente 
 
 - URL da bloccare.
 - File da bloccare.
-- Domini del mittente della posta in blocco da consentire. Per ulteriori informazioni sulla posta in blocco, sul livello di probabilità in blocco (BCL) e sul filtro della posta in blocco in base ai criteri di protezione da posta indesiderata, vedere Livello di reclamo in blocco [(BCL) in EOP.](bulk-complaint-level-values.md)
 - Mittenti contraffatti per consentire o bloccare. Se si esegue l'override del verdetto consenti o blocca nell'analisi [di spoofing](learn-about-spoof-intelligence.md)intelligence, il mittente contraffatto diventa una voce di autorizzazione o blocco manuale che viene visualizzata solo nella scheda **Spoofing** nell'elenco tenant consentiti/bloccati. È inoltre possibile creare manualmente voci consentite o bloccate per i mittenti falsificati prima che siano rilevate dall'intelligence di spoofing.
 
 In questo articolo viene descritto come configurare le voci nell'elenco consenti/blocca tenant nel Centro sicurezza e conformità di & o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **Elenco tenant consentiti/bloccati,** utilizzare <https://protection.office.com/tenantAllowBlockList> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Elenco tenant consentiti/bloccati,** utilizzare <https://protection.office.com/tenantAllowBlockList> .
 
 - È possibile specificare i file utilizzando il valore hash SHA256 del file. Per trovare il valore hash SHA256 di un file in Windows, eseguire il comando seguente in un prompt dei comandi:
 
@@ -76,7 +75,7 @@ In questo articolo viene descritto come configurare le voci nell'elenco consenti
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Prima di eseguire le procedure descritte in questo articolo, occorre disporre delle autorizzazioni in Exchange Online:
-  - **URL, file e consenti mittenti in blocco:**
+  - **URL e file**:
     - Per aggiungere e rimuovere valori dall'elenco tenant consentiti/bloccati, è necessario essere membri dei gruppi **di** ruoli Gestione organizzazione o Amministratore **sicurezza.**
     - Per l'accesso in sola lettura all'elenco tenant consentiti/bloccati, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
   - **Spoofing**: una delle seguenti combinazioni:
@@ -135,26 +134,6 @@ In questo articolo viene descritto come configurare le voci nell'elenco consenti
 
 4. Al termine, fare clic su **Aggiungi**.
 
-## <a name="use-the-security--compliance-center-to-create-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Utilizzare il Centro sicurezza & conformità per creare voci del dominio del mittente della posta in blocco nell'elenco tenant consentiti/bloccati
-
-1. Nel Centro sicurezza & conformità passare **a** Gestione minacce Criteri \>  \> **Tenant Consenti/Blocca elenchi**.
-
-2. Nella pagina **Elenco tenant consentiti/bloccati** selezionare la scheda Domini mittente **per bypass BCL** e quindi fare clic su **Aggiungi**.
-
-3. Nel riquadro **a comparsa Aggiungi dominio mittente per BCL bypass** visualizzato, configurare le impostazioni seguenti:
-
-   - **Aggiungere domini mittente per bypass BCL**: immettere un dominio di origine di buona posta in blocco per riga, fino a un massimo di 20.
-
-   - **Non scadere mai:** eseguire una delle operazioni seguenti:
-
-     - Verificare che l'impostazione sia disattivata ( Interruttore disattivato ) e utilizzare la casella Scadenza per specificare la data di scadenza ![ ](../../media/scc-toggle-off.png) per le voci. 
-
-     oppure
-
-     - Spostare l'interruttore a destra per configurare le voci in modo che non scada mai: ![Attiva](../../media/scc-toggle-on.png).
-
-4. Al termine, fare clic su **Aggiungi**.
-
 ## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Usare il Centro sicurezza & conformità per creare voci di mittente contraffatte consentite o bloccate nell'elenco tenant consentiti/bloccati
 
 **Note**:
@@ -198,11 +177,6 @@ In questo articolo viene descritto come configurare le voci nell'elenco consenti
      - **Data ultimo aggiornamento**
      - **Data di scadenza**
      - **Nota**
-
-   - **Domini mittente per bypass BCL**
-     - **Valore**: dominio del mittente della posta in blocco.
-     - **Data ultimo aggiornamento**
-     - **Data di scadenza**
 
    - **Spoofing**
      - **Utente contraffatto**
@@ -312,23 +286,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-TenantAllowBlockListItems.](/powershell/module/exchange/new-tenantallowblocklistitems)
 
-### <a name="use-powershell-to-add-allow-bulk-mail-sender-domain-entries-to-the-tenant-allowblock-list"></a>Utilizzare PowerShell per aggiungere voci di dominio del mittente di posta in blocco all'elenco tenant consentiti/bloccati
-
-Per aggiungere voci di dominio consenti mittente di posta in blocco nell'elenco tenant consentiti/bloccati, utilizzare la sintassi seguente:
-
-```powershell
-New-TenantAllowBlockListItems -ListType BulkSender -Block:$false -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-In questo esempio viene aggiunta una voce del mittente in blocco consentita per il dominio specificato che non scade mai.
-
-```powershell
-New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-TenantAllowBlockListItems.](/powershell/module/exchange/new-tenantallowblocklistitems)
-
 ### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>Usare PowerShell per aggiungere voci di mittente spoofing consentite o bloccate all'elenco tenant consentiti/bloccati
 
 Per aggiungere voci di mittente contraffatto nell'elenco tenant consentiti/bloccati, utilizzare la sintassi seguente:
@@ -357,28 +314,6 @@ In questo esempio vengono restituiti tutti gli URL bloccati.
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
-### <a name="use-powershell-to-view-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Utilizzare PowerShell per visualizzare le voci del dominio del mittente della posta in blocco nell'elenco tenant consentiti/bloccati
-
-Per visualizzare le voci del dominio del mittente della posta in blocco nell'elenco tenant consentiti/bloccati, utilizzare la sintassi seguente:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender [-Entry <BulkSenderDomainValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-In questo esempio vengono restituiti tutti i domini di mittenti di posta in blocco consentiti.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender
-```
-
-In questo esempio vengono restituite le informazioni per il dominio del mittente in blocco specificato.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "contosodailydeals.com"
 ```
 
 Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
@@ -427,22 +362,6 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-TenantAllowBlockListItems.](/powershell/module/exchange/set-tenantallowblocklistitems)
 
-### <a name="use-powershell-to-modify-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Utilizzare PowerShell per modificare le voci del dominio del mittente della posta in blocco nell'elenco tenant consentiti/bloccati
-
-Per modificare le voci del dominio del mittente della posta in blocco nell'elenco tenant consentiti/bloccati, utilizzare la sintassi seguente:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-In questo esempio viene modificata la scadenza della voce di dominio Consenti mittente di posta in blocco specificata in modo che non scada mai.
-
-```powershell
-Set-TenantAllowBlockListItems -ListType BulkSender -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -NoExpiration
-```
-
-Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
 ### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Utilizzare PowerShell per modificare le voci del mittente spoofing consentite o bloccate nell'elenco tenant consentiti/bloccati
 
 Per modificare le voci del mittente spoofing consentite o bloccate nell'elenco tenant consentiti/bloccati, utilizzare la sintassi seguente:
@@ -459,12 +378,12 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-TenantAllowBlockListSpoofItems.](/powershell/module/exchange/set-tenantallowblocklistspoofitems)
 
-### <a name="use-powershell-to-remove-bulk-mail-sender-domain-file-and-domain-entries-from-the-tenant-allowblock-list"></a>Utilizzare PowerShell per rimuovere le voci di dominio, file e dominio del mittente della posta in blocco dall'elenco tenant consentiti/bloccati
+### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Utilizzare PowerShell per rimuovere voci di URL o file dall'elenco tenant consentiti/bloccati
 
-Per rimuovere le voci di dominio consenti posta in blocco del mittente, bloccare le voci di file e bloccare le voci URL dall'elenco tenant consentiti/bloccati, utilizzare la sintassi seguente:
+Per rimuovere le voci di file e URL dall'elenco tenant consentiti/bloccati, utilizzare la sintassi seguente:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <BulkSender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 In questo esempio viene rimossa la voce dell'URL di blocco specificata dall'elenco tenant consentiti/bloccati.

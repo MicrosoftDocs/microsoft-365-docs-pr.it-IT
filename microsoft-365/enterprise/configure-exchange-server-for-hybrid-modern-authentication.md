@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un Exchange Server locale per l'utilizzo dell'autenticazione moderna ibrida (HMA, Hybrid Modern Authentication), offrendo un'autenticazione e un'autorizzazione degli utenti più sicure.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae7a09387b62abc9e8c74f4a38c2fe8750bab19
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f52b7c011b717c5dcb91270ab0a7dd2015131c0e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244552"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694450"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 
@@ -140,7 +140,7 @@ Se OAuth non è presente in alcun server e in una delle quattro directory virtua
 Tornare alla shell di Exchange locale per l'ultimo comando. A questo punto è possibile verificare che l'utente locale abbia una voce per il provider di autenticazione evoSTS:
 
 ```powershell
-Get-AuthServer | where {$_.Name -eq "EvoSts"}
+Get-AuthServer | where {$_.Name -like "EvoSts"}
 ```
 
 L'output dovrebbe mostrare un AuthServer con nome EvoSts e lo stato "Enabled" deve essere True. In caso contrario, è consigliabile scaricare ed eseguire la versione più recente della procedura guidata di configurazione ibrida.
@@ -162,7 +162,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 Se la versione EXCH è Exchange 2016 (CU18 o versione successiva) o Exchange 2019 (CU7 o versione successiva) e la distribuzione ibrida è stata configurata con HCW scaricato dopo settembre 2020, eseguire il comando seguente in Exchange Management Shell, locale:
 
 ```powershell
-Set-AuthServer -Identity "EvoSTS - {GUID}" -Domain "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
+Set-AuthServer -Identity "EvoSTS - {GUID}" -DomainName "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 

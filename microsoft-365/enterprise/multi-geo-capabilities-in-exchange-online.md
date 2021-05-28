@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Informazioni sulle funzionalità multi-geografiche in Exchange Online, ad esempio limitazioni delle funzionalità e posizionamento delle cassette postali.
-ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923733"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694306"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Funzionalità Multi-Geo in Exchange Online
 
@@ -43,7 +43,7 @@ Exchange Online sincronizza la proprietà **PreferredDataLocation** di Azure AD 
 
 - Se **PreferredDataLocation** non è specificato per un utente, quando si effettua il provisioning, questi sarà effettuato nella posizione geografica specificata.
 
-- Se il codice **PreferredDataLocation** non è corretto, ad esempio un tipo di NAN anziché NAM, verrà effettuato il provisioning della cassetta postale nella posizione geografica centrale.
+- Se il **codice PreferredDataLocation** non è corretto (ad esempio, un errore di digitazione di NAN anziché NAM), verrà eseguito il provisioning della cassetta postale nella posizione geografica centrale.
 
 **Nota**: le funzionalità Multi-Geo e le riunioni di Skype for Business online ospitate a livello regionale usano la proprietà **PreferredDataLocation** per gli oggetti utente per individuare i servizi. Se si configurano i valori di **PreferredDataLocation** per gli oggetti utente per le riunioni ospitate a livello regionale, la cassetta postale di tali utenti verrà spostata automaticamente nella posizione geografica specificata dopo che il Multi-Geo è abilitato nel tenant di Microsoft 365.
 

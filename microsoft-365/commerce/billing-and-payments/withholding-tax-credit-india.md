@@ -18,16 +18,21 @@ description: Scopri come richiedere un credito sul tuo account per la ritenuta d
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689026"
+ms.locfileid: "52694222"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Richiedere un credito per la ritenuta d'acconto sul tuo account (clienti India)
+
+> [!NOTE]
+>
+> Se l'organizzazione non ha sede in India, vedere Richiedere un credito per la ritenuta d'acconto sul proprio [account (clienti globali).](withholding-tax-credit-global.md)
 
 I clienti in India ricevono fatture Web Direct (Azure e Microsoft 365) fatturate da Microsoft Regional Sales Pte Ltd. Singapore (MRS) e effettuano pagamenti transfrontalieri a Singapore per liquidare la fattura. Se hai trattenuto le imposte al momento del pagamento, questo articolo spiega la procedura per richiedere un credito per la ritenuta d'acconto (WHT) nel tuo account con MRS.
 

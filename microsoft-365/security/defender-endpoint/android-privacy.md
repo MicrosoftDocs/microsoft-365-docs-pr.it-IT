@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: c72e9491303d3f14ddb184e6a302a518643f709d
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939625"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694342"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender per Endpoint su Android - Informazioni sulla privacy
 
@@ -38,6 +38,8 @@ Per altre informazioni sull'archiviazione dei dati, vedi [Microsoft Defender per
 
 Vengono raccolte informazioni per mantenere Defender for Endpoint per Android sicuro, aggiornato, che funzioni come previsto e supporti il servizio.
 
+Per altre informazioni sulle domande più comuni sulla privacy su Microsoft Defender per Endpoint su dispositivi mobili Android e iOS, vedi Microsoft Defender per Endpoint e la tua privacy su dispositivi mobili Android e [iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
+
 ## <a name="required-data"></a>Dati obbligatori 
 
 I dati necessari sono costituiti dai dati necessari per far funzionare Defender for Endpoint per Android come previsto. Questi dati sono essenziali per il funzionamento del servizio e possono includere dati relativi all'utente finale, all'organizzazione, al dispositivo e alle app. Ecco un elenco dei tipi di dati raccolti:
@@ -47,7 +49,7 @@ I dati necessari sono costituiti dai dati necessari per far funzionare Defender 
 Informazioni sui **pacchetti di** applicazioni Android dannosi (APK) nel dispositivo, tra cui
 
 -  Origine installazione
--  Percorso di archiviazione (percorso file) dell'APK
+-  Archiviazione percorso (percorso file) dell'APK
 -  Tempo di installazione, dimensioni di APK e autorizzazioni
 
 ### <a name="web-page--network-information"></a>Pagina Web / Informazioni di rete
@@ -66,7 +68,7 @@ Informazioni sui **pacchetti di** applicazioni Android dannosi (APK) nel disposi
     - Identificatore univoco globale (GUID) generato in modo casuale
 
 - Informazioni su tenant, dispositivo e utente
-    -   ID dispositivo di Azure Active Directory (AD) e ID utente di Azure: identifica in modo univoco il dispositivo, rispettivamente Utente in Azure Active Directory.
+    -   Azure Active Directory (AD) ID dispositivo e ID utente di Azure: identifica in modo univoco il dispositivo, rispettivamente Utente in Azure Active Directory.
 
     -   ID tenant di Azure - GUID che identifica l'organizzazione all'interno di Azure Active Directory
 

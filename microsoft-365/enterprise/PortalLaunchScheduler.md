@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: In questo articolo viene descritto come avviare il portale tramite l'utilità di pianificazione di avvio del portale
-ms.openlocfilehash: d7ea64b3a9fef25ddfde43e61624e49d2b7d4352
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280971"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694354"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Avviare il portale usando l'utilità di SharePoint di avvio del portale
 
@@ -95,7 +95,7 @@ In precedenza, gli avvii del portale potevano essere pianificati solo SharePoint
     - Meno di 10.000 utenti: due onde
     - Da 10.000 a 30.000 utenti: tre onde 
     - Da 30.000 a 100.000 utenti: cinque onde
-    - Più di 100.000 utenti: cinque onde e contatta il team dell'account Microsoft
+    - Più di 100.000 utenti: cinque onde e contatta Microsoft tramite i passaggi elencati nella sezione Portale di avvio con più di 100.000 utenti. 
 
 5.  Quindi, determinare **il tipo di reindirizzamento** necessario:
 
@@ -118,6 +118,26 @@ In precedenza, gli avvii del portale potevano essere pianificati solo SharePoint
 
 8.  Confermare i dettagli di avvio del portale e selezionare **Pianifica**. Dopo la pianificazione dell'avvio, tutte le modifiche apportate alla home page del portale di SharePoint dovranno ricevere un risultato di diagnostica integro prima della ripresa dell'avvio del portale.
 
+### <a name="launch-portal-with-over-100k-users"></a>Portale di avvio con oltre 100.000 utenti
+
+Se si prevede di eseguire una migrazione superiore a 100 TB, inviare una richiesta di supporto seguendo la procedura indicata di seguito. Assicurarsi di includere tutte le informazioni richieste.
+
+Eseguire la procedura seguente:
+1. Accedere a https://admin.microsoft.com
+2. Assicurarsi che si stia usando l’anteprima della nuova interfaccia di amministrazione.
+3. Nel riquadro di spostamento sinistro, selezionare **Supporto** e quindi **Nuova richiesta di servizio**. 
+
+
+   Verrà attivato il riquadro **Serve aiuto?** nel lato destro dello schermo.
+
+4.  Nell'area **Descrivere brevemente il problema** immettere "Launch SharePoint Portal with 100k users".</br>
+5. Selezionare **Contatta il supporto**.
+6. In **Descrizione** immettere "Launch SharePoint Portal with 100k users". 
+7. Compilare le informazioni rimanenti e selezionare **Contatti**.
+8. Dopo la creazione del ticket, assicurarsi di fornire all'agente di supporto le informazioni seguenti:
+- URL del portale di avvio 
+- Numero di utenti previsto
+- Tempo stimato di avvio 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>Apportare modifiche a un avvio pianificato del portale
 
@@ -247,7 +267,7 @@ Il reindirizzamento temporaneo delle pagine deve essere utilizzato quando non Sh
 
 2. Verificare che non si verifica alcun reindirizzamento per tutti gli utenti.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 [Pianificazione del piano di implementazione dell'avvio del portale in SharePoint Online](./planportallaunchroll-out.md)
 
