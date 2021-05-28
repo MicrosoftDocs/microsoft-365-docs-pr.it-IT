@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Configurazione della comprensione dei contenuti in Project Cortex
-ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994702"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683554"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurazione di SharePoint Syntex
 
@@ -31,7 +31,7 @@ Prima di iniziare, prendere in considerazione quanto segue:
 
 È possibile cambiare le impostazioni dopo la configurazione iniziale nell'interfaccia di amministrazione di Microsoft 365.
 
-Prima di procedere, assicurarsi di pianificare in modo ottimale la configurazione della comprensione dei contenuti nel proprio ambiente. Ad esempio, è necessario prendere le decisioni seguenti:
+Prima di eseguire la configurazione, assicurarsi di pianificare il modo migliore per configurare e impostare la comprensione dei contenuti nel proprio ambiente. Ad esempio, è necessario prendere le decisioni seguenti:
 
 - I siti di SharePoint in cui si vuole abilitare l'elaborazione dei moduli: tutti, alcuni o determinati siti.
 - Il nome e gli amministratori del centro contenuti
@@ -42,6 +42,8 @@ Prima di procedere, assicurarsi di pianificare in modo ottimale la configurazion
 > È necessario disporre delle autorizzazioni di amministratore globale o amministratore di SharePoint per poter accedere all'interfaccia di amministrazione di Microsoft 365 e configurare SharePoint Syntex.
 
 Gli amministratori possono anche modificare le impostazioni selezionate in qualsiasi momento dopo la configurazione, nonché le impostazioni di gestione della comprensione dei contenuti nell'interfaccia di amministrazione di Microsoft 365.
+
+Se si prevede di usare un ambiente di Power Platform personalizzato, è necessario [installare l'app *AI Builder per Project Cortex* in questo ambiente](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) e [allocare crediti di AI Builder](/power-platform/admin/capacity-add-on) prima di poter creare modelli di elaborazione dei moduli.
 
 ### <a name="licensing"></a>Licenze
 
@@ -67,9 +69,9 @@ Passare all'[interfaccia di amministrazione di Power Platform](https://admin.pow
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, selezionare **Configura** e poi visualizzare la sezione **File e contenuti**.
 
-2. Nella sezione **File e contenuti**, selezionare **Comprensione dei contenuti automatica**.<br/>
+2. Nella sezione **File e contenuti**, selezionare **Comprensione dei contenuti automatica**. Notare che la disponibilità di crediti di AI Builder corrente è illustrata nella sezione **In breve**.<br/>
 
-3. Nella pagina **Comprensione dei contenuti automatica**, fare clic su **Inizia** e seguire le istruzioni per completare il processo di configurazione.<br/>
+3. Nella pagina **Comprensione dei contenuti automatica**, fare clic su **Inizia** e seguire le istruzioni per completare il processo di configurazione. <br/>
 
     > [!div class="mx-imgBorder"]
     > ![Avviare la configurazione](../media/content-understanding/admin-content-understanding-get-started.png)</br>
@@ -93,7 +95,7 @@ Passare all'[interfaccia di amministrazione di Power Platform](https://admin.pow
 
     Per l'**ambiente di Power Platform**, è possibile selezionare:
     - **Usare l'ambiente predefinito** per usare l'ambiente Power Platform predefinito.
-    - **Usare un ambiente personalizzato** per utilizzare un ambiente personalizzato. Scegliere l'ambiente che si desidera usare dall'elenco. È necessario installare l'app *AI Builder per Project Cortex* in questo ambiente e allocare crediti AI Builder prima di creare modelli di elaborazione moduli.
+    - **Usare un ambiente personalizzato** per utilizzare un ambiente personalizzato. Scegliere l'ambiente che si desidera usare dall'elenco. [Vedere i requisiti per un ambiente personalizzato](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements).
 
     Fare clic su **Avanti**.
 

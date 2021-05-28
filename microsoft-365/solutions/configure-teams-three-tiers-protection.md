@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Come configurare Teams per una maggiore sicurezza della condivisione dei file con tre livelli di protezione, in modo da bilanciare la sicurezza con la facilità di collaborazione.
-ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539216"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683404"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurare Teams con tre livelli di protezione
 
@@ -117,6 +117,14 @@ Vedere i riferimenti seguenti per creare un ambiente di condivisione guest sicur
 Per i livelli dei dati sensibili e altamente sensibili, l'accesso al contenuto di SharePoint viene limitato mediante l'applicazione di etichette di riservatezza. L'accesso condizionale di Azure Active Directory offre numerose opzioni per determinare il modo in cui gli utenti accedono a Microsoft 365, incluse limitazioni basate su luogo, rischio, conformità dei dispositivi e altri fattori. Si consiglia di leggere l'articolo [Informazioni sull'accesso condizionale](/azure/active-directory/conditional-access/overview) e valutare quali altri criteri potrebbero essere appropriati per l'organizzazione.
 
 Gli utenti guest spesso non hanno dispositivi gestiti dall'organizzazione. Se si ammettono gli utenti guest in uno qualsiasi dei livelli, valutare i tipi di dispositivi che useranno per accedere ai team e ai siti e impostare i criteri appropriati per i dispositivi non gestiti.
+
+### <a name="control-device-access-across-microsoft-365"></a>Controllare l'accesso del dispositivo in Microsoft 365
+
+Le impostazioni dei dispositivi non gestiti nelle etichette di riservatezza influiscono solo sull'accesso a SharePoint. Se si vuole allargare il controllo ai dispositivi non gestiti oltre SharePoint, è possibile in alternativa [Creare un criterio di accesso condizionale di Azure Active Directory per tutte le app e i servizi dell'organizzazione](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device).  Per configurare questo criterio in modo specifico per i [servizi di Microsoft 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), selezionare l'app cloud di **Office 365** in **App cloud o azioni**.
+
+![Screenshot dell'app cloud di Office 365 in un criterio di accesso condizionale di Azure Active Directory](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+
+L'uso di criteri che influiscono su tutti i servizi di Microsoft 365 può migliorare la sicurezza e l'esperienza degli utenti. Ad esempio, quando si blocca l'accesso ai dispositivi non gestiti solo in SharePoint, gli utenti possono accedere alla chat in un team con un dispositivo non gestito, ma perderanno l'accesso quando provano ad accedere alla scheda **File**. L'uso dell'app cloud di Office 365 consente di evitare problemi con le [dipendenze dei servizi](/azure/active-directory/conditional-access/service-dependencies).
 
 ## <a name="next-step"></a>Passaggio successivo
 

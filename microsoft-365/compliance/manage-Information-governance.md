@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implementare le funzionalità di Governance delle informazioni Microsoft per gestire i dati in base ai requisiti di conformità o normativi.
-ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a62b1a20aa07c8b5d147fd24e3867c4d4c50174e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244565"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683536"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Governance delle informazioni Microsoft in Microsoft 365
 
@@ -32,7 +32,7 @@ Usare le funzionalità di Governance delle informazioni Microsoft, a volte abbre
 
 Si vuole proteggere i propri dati? Vedere [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
-Per consentire il rispetto delle normative sulla privacy dei dati, è stato progettato un flusso di lavoro che fornisce una guida attraverso il processo end-to end di pianificazione e implementazione delle funzionalità in Microsoft 365, tra cui accesso sicuro, protezione dalla minacce, protezione delle informazioni e governance dei dati. Per altre informazioni, vedere [Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+Per rispettare le norme sulla privacy dei dati, Microsoft ha progettato un flusso di lavoro che illustra all'utente le operazioni da eseguire nelle varie fasi di un processo end-to-end per pianificare e implementare funzionalità in Microsoft 365, come l'accesso sicuro, la protezione dalle minacce, la protezione delle informazioni e la governance dei dati. Per altre informazioni, vedere [Implementare la protezione delle informazioni per le norme sulla privacy dei dati con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## <a name="information-governance"></a>Governance delle informazioni
 
@@ -52,3 +52,7 @@ Per gestire contenuti di valore elevato per obblighi legali, aziendali o normati
 |Funzionalità|Che problemi risolve?|Per iniziare|
 |:------|:------------|---------------------|:----------------------------|
 |[Gestione record](records-management.md)| Un'unica soluzione per la posta elettronica e i documenti che incorpora pianificazione e requisiti di conservazione in un piano di archiviazione che supporta l'intero ciclo di vita del contenuto con dichiarazioni, conservazione ed eliminazione dei record <br /><br />Scenario di esempio: [Eliminazione dei record](disposition.md#disposition-of-records)|[Introduzione alla gestione dei record](get-started-with-records-management.md) |
+
+## <a name="licensing-requirements"></a>Requisiti di licenza
+
+I requisiti di licenza per la governance delle informazioni Microsoft dipendono dagli scenari e dalle funzionalità in uso, invece che sull'impostazione dei requisiti di licenza per ogni funzionalità elencata in questa pagina. Per informazioni sui requisiti e le opzioni di licenza, vedere le sezioni [Governance delle informazioni](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) e [Gestione record](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) della documentazione sulle licenze di Microsoft 365 e scaricare il relativo PDF o Excel.
