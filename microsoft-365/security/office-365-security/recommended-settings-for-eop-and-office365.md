@@ -19,12 +19,12 @@ ms.collection:
 description: Quali sono le procedure consigliate per Exchange Online Protection (EOP) e Defender per Office 365 sicurezza? Quali sono i consigli correnti per la protezione standard? Cosa deve essere usato se si desidera essere più rigidi? E quali extra ottieni se usi anche Defender per Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: b6661c31d0cc05a1bdfd51de986af1e7b22c9d70
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683272"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696527"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Impostazioni consigliate per EOP e Microsoft Defender per Office 365 sicurezza
 
@@ -44,7 +44,7 @@ Per applicare automaticamente le impostazioni Standard o Strict agli utenti, ved
 > [!NOTE]
 > Per il corretto funzionamento del filtro, è necessario che la regola di posta indesiderata sia abilitata per le cassette postali. È abilitato per impostazione predefinita, ma è consigliabile controllarlo se il filtro non sembra funzionare. Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-In questo articolo vengono descritte le impostazioni predefinite e le impostazioni Standard e Strict consigliate per proteggere gli utenti.
+In questo articolo vengono descritte le impostazioni predefinite e le impostazioni Standard e Strict consigliate per proteggere gli utenti. Le tabelle contengono le impostazioni nel Centro sicurezza Microsoft 365 e PowerShell (Exchange Online PowerShell o powershell Exchange Online Protection autonomo per le organizzazioni senza cassette postali Exchange Online).
 
 > [!TIP]
 > Il Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) per PowerShell consente agli amministratori di trovare i valori correnti di queste impostazioni. In particolare, il cmdlet **Get-ORCAReport** genera una valutazione della protezione da posta indesiderata, anti-phishing e altre impostazioni di igiene dei messaggi. È possibile scaricare il modulo ORCA all'indirizzo <https://www.powershellgallery.com/packages/ORCA/> .
@@ -65,26 +65,26 @@ Per creare e configurare criteri di protezione da posta indesiderata, vedere [Co
 |---|:---:|:---:|:---:|---|
 |**Azione di** rilevamento della posta indesiderata <p> _SpamAction_|**Sposta messaggio nella cartella Posta indesiderata** <p> `MoveToJmf`|**Sposta messaggio nella cartella Posta indesiderata** <p> `MoveToJmf`|**Metti in quarantena messaggio** <p> `Quarantine`||
 |**Azione di rilevamento della posta indesiderata ad** alta probabilità <p> _HighConfidenceSpamAction_|**Sposta messaggio nella cartella Posta indesiderata** <p> `MoveToJmf`|**Metti in quarantena messaggio** <p> `Quarantine`|**Metti in quarantena messaggio** <p> `Quarantine`||
-|**Azione di rilevamento della posta** elettronica di phishing <p> _PhishSpamAction_|**Sposta messaggio nella cartella Posta indesiderata** <p> `MoveToJmf`|**Metti in quarantena messaggio** <p> `Quarantine`|**Metti in quarantena messaggio** <p> `Quarantine`||
-|**Azione di rilevamento della posta elettronica di phishing** ad alta sicurezza <p> _HighConfidencePhishAction_|**Metti in quarantena messaggio** <p> `Quarantine`|**Metti in quarantena messaggio** <p> `Quarantine`|**Metti in quarantena messaggio** <p> `Quarantine`||
-|**Azione di rilevamento della posta** elettronica in blocco <p> _BulkSpamAction_|**Sposta messaggio nella cartella Posta indesiderata** <p> `MoveToJmf`|**Sposta messaggio nella cartella Posta indesiderata** <p> `MoveToJmf`|**Metti in quarantena messaggio** <p> `Quarantine`||
-|Soglia posta elettronica in blocco <p> _BulkThreshold_|7 |6 |4 |Per informazioni dettagliate, vedere [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).|
-|Periodo di conservazione della quarantena <p> _QuarantineRetentionPeriod_|15 giorni|30 giorni|30 giorni||
-|**Sicurezza Suggerimenti** <p> _InlineSafetyTipsEnabled_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`||
+|**Azione di rilevamento** phishing <p> _PhishSpamAction_|**Sposta messaggio nella cartella Posta indesiderata** <p> `MoveToJmf`|**Metti in quarantena messaggio** <p> `Quarantine`|**Metti in quarantena messaggio** <p> `Quarantine`||
+|**Azione di rilevamento di phishing ad** alta probabilità <p> _HighConfidencePhishAction_|**Metti in quarantena messaggio** <p> `Quarantine`|**Metti in quarantena messaggio** <p> `Quarantine`|**Metti in quarantena messaggio** <p> `Quarantine`||
+|**Azione di** rilevamento in blocco <p> _BulkSpamAction_|**Sposta messaggio nella cartella Posta indesiderata** <p> `MoveToJmf`|**Sposta messaggio nella cartella Posta indesiderata** <p> `MoveToJmf`|**Metti in quarantena messaggio** <p> `Quarantine`||
+|**Soglia posta elettronica in blocco** <p> _BulkThreshold_|7 |6 |4 |Per informazioni dettagliate, vedere [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|_MarkAsSpamBulkMail_|Attivato|Attivato|Attivato|Questa impostazione è disponibile solo in PowerShell.|
+|**Conservare la posta indesiderata in quarantena per molti giorni** <p> _QuarantineRetentionPeriod_|15 giorni|30 giorni|30 giorni||
+|**Abilitare i suggerimenti per la sicurezza della posta indesiderata** <p> _InlineSafetyTipsEnabled_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`||
 |Mittenti consentiti <p> _AllowedSenders_|Nessuno|Nessuno|Nessuno||
-|Domini mittente consentiti <p> _AllowedSenderDomains_|Nessuno|Nessuno|Nessuno|L'aggiunta di domini all'elenco dei mittenti consentiti è una pessima idea. Gli utenti malintenzionati potrebbero inviare messaggi di posta elettronica che altrimenti verrebbero filtrati. <p> Usare le informazioni [di spoofing](learn-about-spoof-intelligence.md) intelligence e l'elenco tenant [consenti/blocca](tenant-allow-block-list.md) nel Centro sicurezza & conformità per esaminare tutti i mittenti che effettuano lo spoofing degli indirizzi di posta elettronica dei mittenti nei domini di posta elettronica dell'organizzazione o lo spoofing degli indirizzi di posta elettronica dei mittenti nei domini esterni.|
+|Domini mittente consentiti <p> _AllowedSenderDomains_|Nessuno|Nessuno|Nessuno|L'aggiunta di domini all'elenco dei mittenti consentiti è una pessima idea. Gli utenti malintenzionati potrebbero inviare messaggi di posta elettronica che altrimenti verrebbero filtrati. <p> Utilizzare le informazioni di intelligence per [lo spoofing](learn-about-spoof-intelligence.md) e l'elenco tenant [consenti/blocca](tenant-allow-block-list.md) per esaminare tutti i mittenti che effettuano lo spoofing degli indirizzi di posta elettronica dei mittenti nei domini di posta elettronica dell'organizzazione o lo spoofing degli indirizzi di posta elettronica dei mittenti in domini esterni.|
 |Mittenti bloccati <p> _BlockedSenders_|Nessuno|Nessuno|Nessuno||
 |Domini mittente bloccati <p> _BlockedSenderDomains_|Nessuno|Nessuno|Nessuno||
 |**Abilita le notifiche di spam all'utente finale** <p> _EnableEndUserSpamNotifications_|Disabilitato <p> `$false`|Enabled <p> `$true`|Enabled <p> `$true`||
 |**Invia notifiche di spam agli utenti finali ogni (giorni)** <p> _EndUserSpamNotificationFrequency_|3 giorni|3 giorni|3 giorni||
-|**ZaP di posta indesiderata** <p> _SpamZapEnabled_|Enabled <p> `$true`|Enabled <p> `$true`|Enabled <p> `$true`||
-|**Phish ZAP** <p> _PhishZapEnabled_|Enabled <p> `$true`|Enabled <p> `$true`|Enabled <p> `$true`||
-|_MarkAsSpamBulkMail_|Attivato|Attivato|Attivato|Questa impostazione è disponibile solo in PowerShell.|
+|Abilitare l'eliminazione automatica a zero ore (ZAP) per i messaggi di phishing <p> _PhishZapEnabled_|Enabled <p> `$true`|Enabled <p> `$true`|Enabled <p> `$true`||
+|Abilitare ZAP per i messaggi di posta indesiderata <p> _SpamZapEnabled_|Enabled <p> `$true`|Enabled <p> `$true`|Enabled <p> `$true`||
 |
 
-Esistono diverse altre impostazioni asf (Advanced Spam Filter) nei criteri di protezione da posta indesiderata che sono in fase di deprecazione. Ulteriori informazioni sulle sequenze temporali per l'ammortamento di queste funzionalità verranno comunicate all'esterno di questo articolo.
+Esistono molte impostazioni asf (Advanced Spam Filter) nei criteri di protezione da posta indesiderata che sono in fase di deprecazione. Ulteriori informazioni sulle sequenze temporali per l'ammortamento di queste funzionalità verranno comunicate all'esterno di questo articolo.
 
-È consigliabile disattivare queste impostazioni ASF **per** i **livelli Standard** **e Strict.** Per ulteriori informazioni sulle impostazioni ASF, vedere [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+È consigliabile lasciare disattivate le impostazioni ASF seguenti **per** i **livelli Standard** **e Strict.** Per ulteriori informazioni sulle impostazioni ASF, vedere [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
 <br>
 

@@ -20,12 +20,12 @@ description: Gli amministratori possono conoscere la protezione dalle minacce in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683332"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696551"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -50,6 +50,8 @@ Le funzionalità di protezione dalle minacce sono incluse in *tutte le* sottoscr
 > [!TIP]
 > Si noti che, oltre alle indicazioni per attivare il *controllo,* i passaggi avviano l'antimalware, anti-phishing e la posta indesiderata, contrassegnati come parte di Office 365 Exchange Online Protection (**EOP**). Questo può sembrare strano in un articolo di Defender per Office 365, fino a quando non si ricorda (**Defender per Office 365**) contiene e si basa su EOP.
 
+<br>
+
 ****
 
 |Tipo di protezione|Requisito dell'abbonamento|
@@ -67,6 +69,8 @@ Le funzionalità di protezione dalle minacce sono incluse in *tutte le* sottoscr
 
 Per configurare Defender per Office 365, è necessario disporre di un ruolo appropriato nel [Centro sicurezza & conformità.](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) Esaminare la tabella seguente per i ruoli che possono eseguire queste azioni.
 
+<br>
+
 ****
 
 |Ruolo o gruppo di ruoli|Dove trovare altre informazioni|
@@ -82,20 +86,22 @@ Per ulteriori informazioni, vedere [Autorizzazioni nel Centro sicurezza & confor
 
 - Avviare la registrazione di controllo in anticipo. È necessario che il controllo sia **ON** per alcuni dei passaggi seguenti. La registrazione di controllo è disponibile nelle sottoscrizioni che [includono Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Per visualizzare i dati nei report di protezione dalle minacce, ad esempio il [dashboard](security-dashboard.md)di [sicurezza,](view-email-security-reports.md)i report di sicurezza della posta elettronica e [Esplora](threat-explorer.md)risorse, la registrazione di controllo deve essere *attivata.* Per ulteriori informazioni, vedere Attivare o disattivare la ricerca nel [log di controllo.](../../compliance/turn-audit-log-search-on-or-off.md)
 
-## <a name="part-1---anti-malware-protection"></a>Parte 1 - Protezione antimalware
+## <a name="part-1---anti-malware-protection-in-eop"></a>Parte 1 - Protezione antimalware in EOP
 
 Per ulteriori informazioni sulle impostazioni consigliate per l'antimalware, vedere [Impostazioni dei criteri antimalware EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)
 
 1. Aprire <https://security.microsoft.com/antimalwarev2> .
 
-2. Selezionare il criterio Predefinito facendo clic sul nome del criterio.
+2. Nella pagina **Antimalware** selezionare il criterio denominato **Criterio** predefinito facendo clic sul nome.
 
 3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic su Modifica impostazioni **di protezione** e quindi configurare le impostazioni seguenti:
    - Selezionare **Abilita il filtro allegati comuni** per attivare il filtro allegati comuni. Fare **clic su Personalizza tipi di file** per aggiungere altri tipi di file.
    - Verificare che **l'opzione Abilita eliminazione automatica** a zero ore per il malware sia selezionata.
    - Verificare che nessuna delle impostazioni nella **sezione Notifica** sia selezionata.
 
-   Al termine, fare clic su **Salva**
+   Al termine, scegliere **Salva**.
+
+4. Tornare al riquadro a comparsa dei dettagli del criterio, fare clic su **Chiudi.**
 
 Per istruzioni dettagliate sulla configurazione dei criteri antimalware, vedere [Configure anti-malware policies in EOP.](configure-anti-malware-policies.md)
 
@@ -135,23 +141,23 @@ La procedura seguente descrive come configurare un criterio anti-phishing in Mic
 
 Per ulteriori informazioni sulle opzioni dei criteri anti-phishing, vedere [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-## <a name="part-3---anti-spam-protection"></a>Parte 3 - Protezione da posta indesiderata
+## <a name="part-3---anti-spam-protection-in-eop"></a>Parte 3 - Protezione da posta indesiderata in EOP
 
-[La protezione da posta indesiderata](anti-spam-protection.md) è disponibile nelle sottoscrizioni che includono [EOP.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Per ulteriori informazioni sulle impostazioni consigliate per la protezione da posta indesiderata, vedere Impostazioni dei criteri di protezione da posta indesiderata di [EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere Criteri di **gestione** delle minacce \>  \> **Protezione da posta indesiderata.**
+1. Aprire <https://security.microsoft.com/antispam> .
 
-2. Nella scheda **Personalizzata** attiva Impostazioni personalizzate.
+2. Nella pagina **Criteri di protezione** da posta indesiderata selezionare nell'elenco il criterio denominato Criterio di protezione da posta indesiderata **in** ingresso facendo clic sul nome.
 
-3. Espandere **Criterio predefinito filtro posta indesiderata,** fare clic su Modifica **criterio** e quindi specificare le impostazioni seguenti:
+3. Nel riquadro a comparsa dei dettagli del criterio visualizzato, fare clic **su** Modifica la soglia e le proprietà della posta indesiderata nella sezione Soglia di posta elettronica in blocco & proprietà di **posta indesiderata.**
 
-   - Nella sezione **Azioni di posta indesiderata e in** blocco imposta la soglia su un valore pari a 5 o 6.
+4. Nel riquadro **a comparsa della soglia e delle** proprietà della posta indesiderata visualizzato, imposta il valore di **Soglia** posta elettronica in blocco su 5 (Strict) o 6 (Standard). Al termine, fare clic su **Salva**
 
-   - Nella sezione **Elenchi consentiti** esaminare (e/o modificare) i mittenti e i domini consentiti.
+5. Tornare al riquadro a comparsa dei  dettagli del criterio, passare alla sezione Mittenti e domini consentiti e bloccati ed esaminare o modificare i mittenti consentiti e i domini consentiti.
 
-4. Fare clic su **Salva**.
+6. Al termine, fare clic su **Chiudi**.
 
-Per ulteriori informazioni sulle opzioni dei criteri di protezione da posta indesiderata, vedere [Configure anti-spam policies in EOP.](configure-your-spam-filter-policies.md)
+Per istruzioni dettagliate sulla configurazione dei criteri di protezione da posta indesiderata, vedere [Configure anti-spam policies in EOP.](configure-your-spam-filter-policies.md)
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4 - Protezione da URL e file dannosi (collegamenti sicuri e allegati sicuri in Defender per Office 365)
 
