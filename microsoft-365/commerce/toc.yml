@@ -66,6 +66,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Informazioni su Payment Services Directive 2 e Strong Customer Authentication
       href: billing-and-payments/psd2.md
+    - name: Richiedere un credito per la ritenuta d'acconto dell'account
+      href: billing-and-payments/withholding-tax-credit-global.md
 - name: Account di fatturazione
   items:
     - name: Informazioni sugli account di fatturazione
