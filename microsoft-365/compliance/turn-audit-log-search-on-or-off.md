@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Come attivare o disattivare la funzionalità di ricerca dei log di controllo nel Centro conformità Microsoft 365 per abilitare o disabilitare la capacità degli amministratori di eseguire ricerche nel log di controllo.
-ms.openlocfilehash: 091331a40a2ab6bf3c05bb289d49f63ab2dd2794
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657734"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706665"
 ---
 # <a name="turn-auditing-on-or-off"></a>Attivare o disattivare il controllo
 
@@ -63,7 +63,7 @@ Se il controllo non è attivato per l'organizzazione, è possibile attivarlo nel
 
    Se il controllo non è attivato per l'organizzazione, viene visualizzato un banner in cui viene richiesto di avviare la registrazione delle attività degli utenti e degli amministratori.
 
-   ![Banner nella pagina di controllo](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+   ![Banner nella pagina di controllo](../media/AuditingBanner.png)
 
 3. Fai clic sul **banner Avvia registrazione attività utente e** amministratore.
 

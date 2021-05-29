@@ -18,20 +18,20 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa dispositivi mobili e sicurezza di base incorporati per rimuovere le informazioni dai dispositivi registrati.
-ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023858"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706143"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Cancellare un dispositivo mobile in Dispositivi mobili e sicurezza di base
 
-È possibile utilizzare la funzionalità di sicurezza e mobilità di base predefinita per Microsoft 365 per rimuovere solo le informazioni dell'organizzazione o per eseguire una reimpostazione di fabbrica per eliminare tutte le informazioni da un dispositivo mobile e ripristinarlo nelle impostazioni di fabbrica.
+Puoi usare Dispositivi mobili e sicurezza di base predefiniti per Microsoft 365 per rimuovere solo le informazioni dell'organizzazione o per eseguire una reimpostazione di fabbrica per eliminare tutte le informazioni da un dispositivo mobile e ripristinarlo nelle impostazioni di fabbrica.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-I dispositivi mobili possono archiviare informazioni riservate dell'organizzazione e fornire l'accesso alle risorse di Microsoft 365 dell'organizzazione. Per proteggere le informazioni dell'organizzazione, è possibile eseguire la reimpostazione o la rimozione dei dati aziendali:
+I dispositivi mobili possono archiviare informazioni riservate dell'organizzazione e fornire l'accesso alle risorse Microsoft 365 dell'organizzazione. Per proteggere le informazioni dell'organizzazione, è possibile eseguire la reimpostazione o la rimozione dei dati aziendali:
 
 - **Reimpostazione in** fabbrica: elimina tutti i dati nel dispositivo mobile di un utente, incluse le applicazioni installate, le foto e le informazioni personali. Al termine della cancellazione, il dispositivo viene ripristinato con le impostazioni di fabbrica.
 
@@ -45,7 +45,7 @@ I dispositivi mobili possono archiviare informazioni riservate dell'organizzazio
 
 ## <a name="wipe-a-mobile-device"></a>Cancellare un dispositivo mobile
 
-1. Accedere all'interfaccia di amministrazione di [Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. Passare [all'Microsoft 365 di amministrazione .](../../admin/admin-overview/about-the-admin-center.md)
 
 2. Digita Gestione dispositivi mobili nel campo di ricerca e seleziona **Gestione dispositivi mobili** nell'elenco dei risultati.
 
@@ -60,7 +60,7 @@ I dispositivi mobili possono archiviare informazioni riservate dell'organizzazio
 6. Selezionare il tipo di cancellazione remota da eseguire.
 
     - Per eseguire una cancellazione completa e ripristinare le impostazioni di fabbrica del dispositivo, seleziona **Reimpostazione in fabbrica.**
-    - Per eseguire una cancellazione selettiva ed eliminare solo le informazioni dell'organizzazione di Microsoft 365, selezionare **Rimuovi dati aziendali.**
+    - Per eseguire una cancellazione selettiva ed eliminare solo le Microsoft 365 dell'organizzazione, selezionare **Rimuovi dati aziendali.**
     - Per rimuovere il dispositivo dall'organizzazione, seleziona **Rimuovi dispositivo.**
 
 7. Selezionare **Sì** per confermare.
@@ -83,12 +83,8 @@ La cancellazione viene inviata immediatamente al dispositivo mobile e il disposi
 
 |**Impatto sul contenuto**|**iOS 10 e versioni successive**|**Android 5 e versioni successive**|
 |:-----|:-----|:-----|
-|I dati delle app di Microsoft 365 vengono cancellati se il dispositivo è protetto dai criteri di Protezione app di Intune. Le app non vengono rimosse. Per i dispositivi non protetti dai criteri DIM (Mobile Application Management), Outlook e OneDrive non rimuovono i dati memorizzati nella cache.<br/>**Nota** Per l'applicazione dei criteri di protezione delle app di Intune è necessario disporre di una licenza di Intune.|Sì|Sì|
+|Microsoft 365 dati dell'app vengono cancellati se il dispositivo è protetto dai criteri di Intune App Protection. Le app non vengono rimosse. Per i dispositivi non protetti dai criteri DIM (Mobile Application Management), Outlook e OneDrive non rimuove i dati memorizzati nella cache.<br/>**Nota** Per l'applicazione dei criteri di protezione delle app di Intune è necessario disporre di una licenza di Intune.|Sì|Sì|
 |Le impostazioni dei criteri applicate da Dispositivi mobili e sicurezza di base ai dispositivi non vengono più applicate. gli utenti possono modificare le impostazioni.|Sì|Sì|
 |I profili di posta elettronica creati da Dispositivi mobili e sicurezza di base vengono rimossi e la posta elettronica memorizzata nella cache nel dispositivo viene eliminata.|Sì|N/D|
 >[!NOTE]
->L'app Portale aziendale è disponibile nell'App Store per iOS e nel Play Store per dispositivi Android.
-
-## <a name="related-topics"></a>Argomenti correlati
-
-[Impostare Basic Mobility + Security](set-up.md)
+>Portale aziendale app è disponibile nell'App Store per iOS e nel Play Store per dispositivi Android.

@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS per Microsoft con DNS basato su Windows
+title: Creare record DNS per Microsoft Windows DNS basato su Windows
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,26 +20,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in DNS basato su Windows per Microsoft.
-ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in DNS Windows per Microsoft.
+ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876350"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706114"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Creare record DNS per Microsoft con DNS basato su Windows
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Creare record DNS per Microsoft Windows DNS basato su Windows
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
    
 Se si ospitano i record DNS con il DNS basato su Windows, seguire i passaggi descritti in questo articolo per configurare i record per la posta elettronica, Skype for Business online e così via.
   
-Per iniziare, è necessario trovare i record [DNS nel DNS](#find-your-dns-records-in-windows-based-dns) basato su Windows in modo da poterli aggiornare. Inoltre, se si prevede di sincronizzare Active Directory locale con Microsoft, vedere Indirizzo di posta elettronica non instradabile utilizzato come [UPN in Active Directory locale.](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)
+Per iniziare, è necessario trovare i record [DNS nel DNS Windows](#find-your-dns-records-in-windows-based-dns) in modo da poterli aggiornare. Inoltre, se si prevede di sincronizzare Active Directory locale con Microsoft, vedere Indirizzo di posta elettronica non instradabile utilizzato come [UPN in Active Directory locale.](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)
   
 Problemi con il flusso di posta o altri problemi dopo l'aggiunta di record DNS, vedere Risolvere i problemi dopo la modifica del nome [di dominio o dei record DNS.](../get-help-with-domains/find-and-fix-issues.md) 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Trovare i record DNS in un server DNS basato su Windows
-<a name="BKMK_find_your_dns_1"></a> Passare alla pagina contenente i record DNS per il dominio. Se si sta lavorando in Windows Server 2008, andare a **Start**  >  **Esegui**. Se si sta lavorando in Windows Server 2012, premere il tasto Windows e **r**. Digitare **dnsmgmnt.msc** e quindi selezionare **OK.** In Gestore DNS espandere **\<DNS server name\> \> Zone di ricerca diretta**. Selezionare il dominio. A questo punto è possibile creare i record DNS.
+<a name="BKMK_find_your_dns_1"></a> Passare alla pagina contenente i record DNS per il dominio. Se si sta lavorando in Windows Server 2008, passare a **Avvia**  >  **Esecuzione**. Se si sta lavorando in Windows Server 2012, premere il tasto Windows e **r**. Digitare **dnsmgmnt.msc** e quindi selezionare **OK.** In Gestore DNS espandere **\<DNS server name\> \> Zone di ricerca diretta**. Selezionare il dominio. A questo punto è possibile creare i record DNS.
    
 ## <a name="add-mx-record"></a>Aggiungere il record MX
 <a name="BKMK_add_MX"> </a>
@@ -47,7 +47,7 @@ Problemi con il flusso di posta o altri problemi dopo l'aggiunta di record DNS, 
 Aggiungere un record MX in modo che la posta elettronica per il dominio venga inviata a Microsoft.
 - Il record MX da aggiungere include  un valore (il valore indirizzo puntamento) simile al seguente: .mail.protection.outlook.com, dove è un valore come \<MX token\> \<MX token\> MSxxxxxxxxx. 
 - Dalla riga MX nella sezione Exchange Online della pagina Aggiungi record DNS in Microsoft, copiare il valore elencato in Indirizzo di puntamento. Questo valore verrà utilizzato nel record che si sta creando in questa attività. 
-- Nella pagina Dns Manager per il dominio, andare a **Azione**  >  **Mail Exchanger (MX)**. Per trovare questa pagina per il dominio, vedere [Trovare i record DNS in DNS basato su Windows.](#find-your-dns-records-in-windows-based-dns)  
+- Nella pagina Dns Manager per il dominio, andare a **Azione**  >  **Mail Exchanger (MX)**. Per trovare questa pagina per il dominio, vedere [Find your DNS records in Windows-based DNS](#find-your-dns-records-in-windows-based-dns).  
 - Nella finestra **di dialogo Nuovo record** di risorse verificare che i campi siano impostati esattamente sui valori seguenti: 
     - Nome host:  
     - @Address: incollare qui il valore indirizzo di puntamento copiato da Microsoft.  
@@ -119,7 +119,7 @@ Aggiungere il record TXT SPF per il dominio per proteggerlo dalla posta indeside
 - Nella pagina Gestore DNS per il dominio passare a **Testo** \> **azione (TXT)**. 
 -  Nella finestra **di dialogo Nuovo record** di risorse verificare che i campi siano impostati esattamente sui valori seguenti. 
  > [!IMPORTANT]
-> In alcune versioni di Gestione DNS di Windows, il dominio potrebbe essere stato configurato in modo che quando si crea un record txt, il nome principale per impostazione predefinita sia il dominio padre. In questo caso, quando si aggiunge un record TXT, impostare il nome host su vuoto (nessun valore) invece che su @ o sul nome di dominio. 
+> In alcune versioni di Windows DNS Manager, è possibile che il dominio sia stato configurato in modo che, quando si crea un record txt, il nome principale venga impostato per impostazione predefinita sul dominio padre. In questo caso, quando si aggiunge un record TXT, impostare il nome host su vuoto (nessun valore) invece che su @ o sul nome di dominio. 
 
 -  Tipo host: @
 -  Tipo di record: TXT
@@ -160,7 +160,7 @@ Aggiungere il record SRV SIP per la federazione di Skype for Business online.
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Aggiungere un record per verificare che si è proprietari del dominio
 <a name="BKMK_verify"> </a>
 
-Prima di aggiungere i record DNS per configurare i servizi Microsoft, Microsoft deve confermare di essere proprietari del dominio che si sta aggiungendo. A questo scopo occorre aggiungere un record seguendo la procedura descritta di seguito.
+Prima di aggiungere i record DNS per configurare il servizi Microsoft, Microsoft deve confermare di essere proprietari del dominio che si sta aggiungendo. A questo scopo occorre aggiungere un record seguendo la procedura descritta di seguito.
   
 > [!NOTE]
 > Questo record viene utilizzato esclusivamente per verificare che si possiede il dominio, e non influisce su altro. 
@@ -179,7 +179,7 @@ Aggiungere un record TXT.
 -  Nell'area **Nomi host** personalizzati della finestra di dialogo Nuovo **record** di risorse verificare che i campi siano impostati esattamente sui valori seguenti. 
 
 > [!IMPORTANT] 
-> In alcune versioni di Gestione DNS di Windows, il dominio potrebbe essere stato configurato in modo che quando si crea un record txt, il nome principale per impostazione predefinita sia il dominio padre. In questo caso, quando si aggiunge un record TXT, impostare il nome host su vuoto (nessun valore) invece che su @ o sul nome di dominio. 
+> In alcune versioni di Windows DNS Manager, è possibile che il dominio sia stato configurato in modo che, quando si crea un record txt, il nome principale venga impostato per impostazione predefinita sul dominio padre. In questo caso, quando si aggiunge un record TXT, impostare il nome host su vuoto (nessun valore) invece che su @ o sul nome di dominio. 
 
 - Nome host: @
 - Tipo: TXT
@@ -206,10 +206,8 @@ Se si prevede di sincronizzare Active Directory locale con Microsoft, è necessa
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Trasferire un dominio da Micrsoft 365 a un altro host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (articolo)
-
-[Pilotare Microsoft 365 dal dominio personalizzato](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (articolo)
-
-[Domande frequenti sui](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) domini (articolo)
+[Trasferire un dominio da Micrsoft 365 a un altro host](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (articolo)\
+[Pilota Microsoft 365 dal mio dominio personalizzato](../misc/pilot-microsoft-365-from-my-custom-domain.md) (articolo)\
+[Domande frequenti sui domini](../setup/domains-faq.yml) (articolo)

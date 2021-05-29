@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come interrompere l'inoltro automatico dei messaggi di posta elettronica.
-ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Scopri come interrompere l'inoltro automatico dei messaggi di posta elettronica creando una regola del flusso di posta per evitare il furto di informazioni proprietarie.
+ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903683"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706475"
 ---
 # <a name="stop-email-auto-forward"></a>Arrestare l'inoltro automatico della posta elettronica
+
+## <a name="watch-stop-auto-forwarding-emails"></a>Watch: Stop auto-forwarding emails
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
@@ -36,7 +38,7 @@ Se un pirata informatico ottiene l'accesso alla cassetta postale di un utente, p
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare  **Exchange,** flusso di posta **e** nella scheda regole selezionare il segno più e scegliere crea una **nuova regola.**
+1. Nell'Microsoft 365 di amministrazione selezionare **Exchange ,** flusso di posta  **e** nella scheda regole selezionare il segno più e scegliere crea una nuova **regola**.
 1. Selezionare **Altre opzioni.** Assegnare un nome alla nuova regola.
 1. Aprire quindi l'elenco a discesa per **applicare questa regola se**, selezionare **il** mittente e quindi è **interno esterno.**
 1. Selezionare **All'interno dell'organizzazione** e quindi **OK.**
@@ -50,4 +52,6 @@ Se un pirata informatico ottiene l'accesso alla cassetta postale di un utente, p
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Aggiungere un altro alias](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) di posta elettronica per un utente (articolo) Configurare l'inoltro della posta [elettronica in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (articolo) Trovare e risolvere i problemi di recapito della posta elettronica come amministratore di [Office 365 per le](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) aziende (articolo)
+[Aggiungere un altro alias di posta elettronica per un utente](../admin/email/add-another-email-alias-for-a-user.md) (articolo)\
+[Configurare l'inoltro della posta elettronica in Microsoft 365](../admin/email/configure-email-forwarding.md) (articolo)\
+[Trovare e risolvere i problemi di recapito della posta elettronica come Office 365 per le aziende](/exchange/troubleshoot/email-delivery/email-delivery-issues) (articolo)

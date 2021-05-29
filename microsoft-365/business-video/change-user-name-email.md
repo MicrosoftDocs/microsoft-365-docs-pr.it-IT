@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come modificare il nome o l'indirizzo di posta elettronica di un utente.
-ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Informazioni su come modificare il nome o l'indirizzo di posta elettronica di un utente modificando un nome visualizzato, un alias o un indirizzo di posta elettronica.
+ms.openlocfilehash: e012923ebe12a04b07c9236f5ebbd30623cd2dd5
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903731"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706419"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Modificare il nome o l'indirizzo di posta elettronica di un utente
+
+## <a name="watch-change-a-users-name-or-email-address"></a>Guarda: cambiare il nome o l'indirizzo di posta elettronica di un utente
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
@@ -38,23 +40,23 @@ In alcuni casi, potrebbe essere necessario modificare il nome o l'indirizzo di p
 
 ### <a name="change-a-users-display-name"></a>Cambiare il nome visualizzato di un utente
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi**.
+1. Nell'Microsoft 365 di amministrazione selezionare **Utenti** e quindi **Utenti attivi**.
 1. Selezionare l'utente dall'elenco degli utenti attivi.
 1. Selezionare **Gestisci informazioni di contatto**.
 1. Modificare il nome visualizzato e selezionare **Salva modifiche**.
 
-    Il nuovo nome verrà visualizzato in Outlook e in altre app di Microsoft 365.
+    Il nuovo nome verrà ora visualizzato in Outlook e altre Microsoft 365 app.
 
 ### <a name="add-an-email-alias"></a>Aggiungere un alias di posta elettronica
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi**.
+1. Nell'Microsoft 365 di amministrazione selezionare **Utenti** e quindi **Utenti attivi**.
 1. Selezionare l'utente dall'elenco degli utenti attivi.
 1. Selezionare **Gestisci alias di posta elettronica**.
 1. Immettere il nuovo alias, verificare il dominio e selezionare **Salva modifiche**.
 
 ### <a name="change-a-username"></a>Modificare un nome utente
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi**.
+1. Nell'Microsoft 365 di amministrazione selezionare **Utenti** e quindi **Utenti attivi**.
 1. Selezionare l'utente dall'elenco degli utenti attivi.
 1. Selezionare **Gestisci nome utente**.
 1. Immettere il nuovo nome utente, verificare il dominio e selezionare **Salva modifiche**.
@@ -63,4 +65,6 @@ In alcuni casi, potrebbe essere necessario modificare il nome o l'indirizzo di p
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Assegnare le autorizzazioni della cassetta postale](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) a un altro utente (articolo) Convertire una cassetta postale utente in una cassetta [postale](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) condivisa (articolo) Impostazioni di posta elettronica [utente](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (articolo)
+[Assegnare le autorizzazioni della cassetta postale a un altro utente](../admin/add-users/give-mailbox-permissions-to-another-user.md) (articolo)\
+[Convertire una cassetta postale utente in una cassetta postale condivisa](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (articolo)\
+[Impostazioni di posta elettronica dell'utente](../admin/email/office-365-user-email-settings.md) (articolo)

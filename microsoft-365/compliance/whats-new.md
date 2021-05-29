@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Che si tratta dell'aggiunta di nuove soluzioni al Centro conformità, dell'aggiornamento delle funzionalità esistenti in base al feedback dell'utente o dell'implementazione di documentazione aggiornata e aggiornata, Microsoft 365 consente di rimanere al top del panorama di conformità in continua evoluzione. Scopri cosa abbiamo fatto fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698953"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706619"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -48,7 +48,7 @@ E visitare la roadmap [Microsoft 365](https://www.microsoft.com/microsoft-365/ro
 
 ### <a name="data-connectors"></a>Connettori dati
 
-- [Configurare un connettore per archiviare Cisco Jabber sui dati Oracle]/microsoft-365/compliance/archive-ciscojanoracle-data)
+- [Configurare un connettore per archiviare Cisco Jabber nei dati Oracle](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
 - [Configurare un connettore per archiviare Cisco Jabber nei dati PostgreSQL](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
 
 ### <a name="data-loss-prevention"></a>Prevenzione della perdita di dati
@@ -59,14 +59,15 @@ E visitare la roadmap [Microsoft 365](https://www.microsoft.com/microsoft-365/ro
 
 ### <a name="retention-policies-and-retention-label-policies"></a>Criteri di conservazione e criteri di etichetta di conservazione
 
-- Il percorso Microsoft 365 Groups ora supporta l'applicazione delle impostazioni di conservazione solo alle cassette postali di Microsoft 365 o solo ai siti SharePoint connessi utilizzando il cmdlet [Set-RetentionCompliancePolicy di PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) con il parametro Applications.
+- La posizione Microsoft 365 Groups ora supporta l'applicazione delle impostazioni di conservazione solo alle cassette postali di Microsoft 365 o solo ai siti SharePoint connessi utilizzando il cmdlet [Set-RetentionCompliancePolicy di PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) con il parametro *Applications.*
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
 Outlook e aggiornamenti:
-- In precedenza supportato solo dal client di etichettatura unificato AIP, l'etichettatura incorporata ora supporta impostazioni diverse per l'etichetta predefinita e [l'etichettatura obbligatoria](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
-- Encrypt-Only è ora supportato da macOS, iOS e Android
-- Gestire le etichette di riservatezza nell'argomento delle app di [Office](/microsoft-365/compliance/sensitivity-labels-office-apps) aggiornato [](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling) con le nuove voci nella tabella delle funzionalità di [Outlook](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook) per Impostazioni diverse per l'etichetta predefinita e l'etichettatura obbligatoria per la nuova versione della funzionalità di Outlook per l'etichettatura incorporata per supportare un'etichetta predefinita diversa ed esenzione dall'etichettatura obbligatoria. Inoltre, l'opzione Encrypt-Only è ora supportata da macOS/iOS/Android e tutti i contrassegni dinamici con variabili sono ora supportati in tutti Outlook client. L'etichettatura obbligatoria è ora disponibile per le piattaforme rimanenti.
+- [Impostazioni diverse per l'etichetta predefinita e](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) l'etichettatura obbligatoria sono ora supportate per l'etichettatura predefinita. In precedenza, queste impostazioni erano supportate solo dal client di etichettatura unificato AIP.
+- [Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions) è ora supportato da macOS, iOS e Android.
+- [L'etichettatura](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) obbligatoria è in distribuzione nelle piattaforme rimanenti.
+- [I contrassegni dinamici con tutte le variabili](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) sono supportati in tutti Outlook client.
 
 ## <a name="march-2021"></a>Marzo 2021
 

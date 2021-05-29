@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come creare una firma di posta elettronica a livello aziendale.
-ms.openlocfilehash: a1a85826be2a799b56cf3d06b6416778470a116f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 669c61d17784641d1ecc88ac0952a46575c7898b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578952"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706263"
 ---
 # <a name="create-a-company-wide-email-signature"></a>Creare una firma di posta elettronica a livello aziendale
+
+## <a name="watch-create-a-company-wide-email-signature"></a>Watch: Create a company-wide email signature
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
@@ -36,7 +38,7 @@ In ogni messaggio di posta elettronica inviato dagli utenti dell'organizzazione 
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Exchange**.
+1. Nell'Microsoft 365 di amministrazione selezionare **Exchange**.
 1. Selezionare **Flusso di posta**.
 1. Selezionare **Aggiungi +** e quindi Applica dichiarazioni di non **responsabilità.**
 1. Nella pagina **Nuova** regola:

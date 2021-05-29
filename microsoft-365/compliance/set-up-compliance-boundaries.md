@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Informazioni su come utilizzare i limiti di conformità per creare limiti logici che controllano le posizioni del contenuto degli utenti in cui un responsabile di eDiscovery può eseguire ricerche in Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b19347ad8e1c87d5b66cb49ed2af152b4765c37
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311917"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706607"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurare i limiti di conformità per le indagini di eDiscovery
 
@@ -38,13 +38,13 @@ Usiamo l'esempio nella figura seguente per spiegare come funzionano i limiti di 
   
 In questo esempio, Contoso LTD è un'organizzazione costituita da due filiali, Fourth Coffee e Coho Winery. L'azienda richiede che i manager e gli investigatori di eDiscovery possano eseguire ricerche solo nelle cassette postali di Exchange, negli account OneDrive e nei siti SharePoint nell'agenzia. Inoltre, i responsabili e gli investigatori di eDiscovery possono visualizzare solo i casi di eDiscovery nell'agenzia e possono accedere solo ai casi di cui sono membri. Inoltre, in questo scenario, gli investigatori non possono mettere in attesa i percorsi di contenuto o esportare il contenuto da un caso. Ecco come i limiti di conformità soddisfano questi requisiti.
   
-- La funzionalità di filtro delle autorizzazioni di ricerca in Ricerca contenuto controlla i percorsi di contenuto in cui i responsabili e gli investigatori di eDiscovery possono eseguire ricerche. Ciò significa che i responsabili e gli investigatori di eDiscovery nell'agenzia Fourth Coffee possono cercare solo le posizioni dei contenuti nella filiale Fourth Coffee. La stessa restrizione si applica alla filiale Coho Winery.
+- La funzionalità di filtro delle autorizzazioni di ricerca in Ricerca contenuto controlla i percorsi di contenuto in cui i responsabili e gli investigatori di eDiscovery possono eseguire ricerche. Ciò significa che investigatori e manager di eDiscovery nell'agenza Fourth Coffee possono cercare solo i percorsi dei contenuti nella filiale Fourth Coffee. La stessa limitazione vale per la filiale di Coho Winery.
 
 - I gruppi di ruoli forniscono le funzioni seguenti per i limiti di conformità:
 
-  - Controllare chi può visualizzare i casi di eDiscovery nel Centro sicurezza & conformità. Ciò significa che i responsabili e gli investigatori di eDiscovery possono visualizzare solo i casi di eDiscovery nell'agenzia.
+  - Controllare chi può visualizzare i casi di eDiscovery nel Centro sicurezza & conformità. Ciò significa che investigatori e manager di eDiscovery possono visualizzare solo i casi eDiscovery nella propria agenzia.
 
-  - Controllare chi può assegnare membri a un caso di eDiscovery. Ciò significa che i responsabili e gli investigatori di eDiscovery possono assegnare membri solo ai casi di cui sono membri.
+  - Controllare chi può assegnare membri a un caso di eDiscovery. Ciò significa che investigatori e manager di eDiscovery possono assegnare membri solo ai casi di cui loro stessi sono membri.
 
   - Controllare le attività correlate a eDiscovery che i membri possono eseguire aggiungendo o rimuovendo ruoli che assegnano autorizzazioni specifiche.
 
@@ -110,19 +110,19 @@ Dopo aver apportato la modifica di progettazione e aver sincronizzato l'attribut
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Passaggio 3: Creare un gruppo di ruoli per ogni agenzia
 
-Il passaggio successivo consiste nel creare i gruppi di ruoli nel Centro sicurezza & conformità che verranno allineati con le agenzie. È consigliabile creare un gruppo di ruoli copiando il gruppo eDiscovery Managers predefinito, aggiungendo i membri appropriati e rimuovendo i ruoli che potrebbero non essere applicabili alle proprie esigenze. Per ulteriori informazioni sui ruoli correlati a eDiscovery, vedere [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+Il passaggio successivo consiste nel creare i gruppi di ruoli nel Centro sicurezza & conformità che verranno allineati con le agenzie. Consigliamo di creare un gruppo di ruoli copiando il gruppo Manager di eDiscovery integrato, aggiungendo i membri adatti e rimuovendo i ruoli che potrebbero non essere applicabili alle proprie esigenze. Per ulteriori informazioni sui ruoli correlati a eDiscovery, vedere [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-Per creare i gruppi di  ruoli, passare alla pagina Autorizzazioni nel Centro sicurezza e conformità & e creare un gruppo di ruoli per ogni team di ogni agenzia che utilizzerà i limiti di conformità e i casi di eDiscovery per gestire le indagini.
+Per creare gruppi di ruoli, accedere alla pagina **Autorizzazioni** nel Centro sicurezza e conformità e creare un gruppo di ruoli per ogni team in ogni agenzia che utilizzerà limiti di conformità e casi di eDiscovery per gestire le indagini.
   
 Utilizzando lo scenario Dei limiti di conformità di Contoso, è necessario creare quattro gruppi di ruoli e aggiungere i membri appropriati a ognuno di essi.
   
-- Responsabili di eDiscovery di Fourth Coffee
+- Manager di eDiscovery di Fourth Coffee
 
-- Investigatori del quarto caffè
+- Investigatori di Fourth Coffee
 
-- Coho Winery eDiscovery Managers
+- Manager di eDiscovery di Coho Winery
 
-- Coho Winery Investigators
+- Investigatori di Coho Winery
   
 Per soddisfare i requisiti dello scenario dei limiti di  conformità  di Contoso, è inoltre necessario rimuovere i ruoli di archiviazione ed esportazione dai gruppi di ruoli degli investigatori per impedire agli investigatori di inserire blocchi nelle posizioni dei contenuti ed esportare il contenuto da un caso.
 
@@ -157,7 +157,7 @@ Ecco una descrizione di ogni parametro nel comando:
 
     Per un elenco delle azioni di ricerca, vedere la sezione "New-ComplianceSecurityFilter" in [Configure permissions filtering for Content Search.](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)
 
-Ecco alcuni esempi dei due filtri delle autorizzazioni di ricerca che verrebbero creati per supportare lo scenario dei limiti di conformità di Contoso. Entrambi questi esempi includono un elenco di filtri delimitati da virgole, in cui i filtri delle cassette postali e dei siti sono inclusi nello stesso filtro delle autorizzazioni di ricerca e sono separati da una virgola.
+Ecco gli esempi dei due filtri di ricerca delle autorizzazioni che verrebbero creati per supportare lo scenario dei limiti di conformità di Contoso. Entrambi questi esempi includono un elenco di filtri separati da virgole, in cui i filtri relativi a cassetta postale e sito sono inclusi nello stesso filtro di ricerca delle autorizzazioni e sono separati da una virgola.
   
 ### <a name="fourth-coffee"></a>Fourth Coffee
 
@@ -202,7 +202,7 @@ I filtri delle autorizzazioni di ricerca consentono inoltre di controllare dove 
 
     Utilizzare il **parametro Region** per i cmdlet **New-ComplianceSecurityFilter** o **Set-ComplianceSecurityFilter** per creare o modificare il datacenter attraverso cui verrà instradata l'esportazione.
   
-    |**Valore parametro**|**Posizione del datacenter**|
+    |**Valore parametro**|**Posizione del data center**|
     |:-----|:-----|
     |NAM  <br/> |Nord America (data center negli Stati Uniti)  <br/> |
     |EUR  <br/> |Europa  <br/> |
@@ -283,13 +283,15 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 Tenere presenti le limitazioni seguenti quando si gestiscono casi eDiscovery e indagini che utilizzano i limiti di conformità.
   
-- Durante la creazione e l'esecuzione di una ricerca, è possibile selezionare i percorsi di contenuto esterni all'agenzia. Tuttavia, a causa del filtro delle autorizzazioni di ricerca, il contenuto di tali posizioni non viene incluso nei risultati della ricerca.
+- Quando si crea e si esegue una ricerca, è possibile selezionare i percorsi dei contenuti che si trovano all'esterno dell'agenzia. Tuttavia, a causa del filtro di ricerca delle autorizzazioni, i contenuti di tali posizioni non vengono inclusi nei risultati della ricerca.
 
-- I limiti di conformità non si applicano ai blocchi nei casi di eDiscovery. Ciò significa che un responsabile di eDiscovery in un'agenzia può mettere in attesa un utente in un'agenzia diversa. Tuttavia, il limite di conformità verrà applicato se il responsabile di eDiscovery esegue una ricerca nei percorsi di contenuto dell'utente che è stato messo in attesa. Ciò significa che il manager di eDiscovery non sarà in grado di eseguire ricerche nei percorsi dei contenuti dell'utente, anche se è stato in grado di mettere l'utente in attesa.
+- I limiti di conformità non si applicano ai blocchi nei casi di eDiscovery. Ciò significa che un manager di eDiscovery di un'agenzia può bloccare un utente in un'altra agenzia. Tuttavia, i limiti di conformità verranno applicati se il manager di eDiscovery cerca le posizioni dei contenuti dell'utente che è stato bloccato. Ciò significa che il manager di eDiscovery non potrà cercare le posizioni dei contenuti dell'utente, anche se è stato in grado di bloccare l'utente.
 
-    Inoltre, le statistiche sulla conservazione verranno applicate solo alle posizioni dei contenuti nell'agenzia.
+    Inoltre, le statistiche dei blocchi si applicheranno solo alle posizioni dei contenuti nell'agenzia.
 
-- I filtri delle autorizzazioni di ricerca non vengono applicati Exchange cartelle pubbliche.
+- Se è stato assegnato un filtro delle autorizzazioni di ricerca (una cassetta postale o un filtro sito) e si tenta di esportare gli elementi non indicizzati per una ricerca che include tutti i siti SharePoint nell'organizzazione, verrà visualizzato il seguente messaggio di errore: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied` . Se è stato assegnato un filtro delle autorizzazioni di ricerca e si desidera esportare gli elementi non indicizzati da SharePoint, sarà necessario eseguire di nuovo la ricerca e includere siti SharePoint specifici per la ricerca. In caso contrario, sarà possibile esportare solo gli elementi indicizzati da una ricerca che include tutti SharePoint siti. Per ulteriori informazioni sulle opzioni per l'esportazione dei risultati della ricerca, vedere [Export Content search results](export-search-results.md#step-1-prepare-search-results-for-export).
+
+- I filtri di ricerca delle autorizzazioni non vengono applicati alle cartelle pubbliche di Exchange.
 
 ## <a name="more-information"></a>Ulteriori informazioni
 

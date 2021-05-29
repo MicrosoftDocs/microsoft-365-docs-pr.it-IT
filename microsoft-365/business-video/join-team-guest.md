@@ -19,36 +19,40 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come partecipare a un team come guest in Microsoft Teams.
-ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Scopri come entrare a far parte di un team come guest in Microsoft Teams.
+ms.openlocfilehash: 04ee1a32e63c6cbff1f6352362ed04b06a9791fa
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903719"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706239"
 ---
 # <a name="join-a-team-as-a-guest"></a>Partecipare a un team come Guest
+
+## <a name="watch-join-a-team-as-a-guest"></a>Watch: Join a team as a guest
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys?autoplay=false]
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Se si riceve un invito di Microsoft Teams a partecipare a un team, è necessario eseguire un paio di passaggi per accettare l'invito.
+Se si riceve un Microsoft Teams di partecipare a un team, è necessario eseguire un paio di passaggi per accettare l'invito.
 
-1. Aprire l'invito tramite posta elettronica e  **selezionare Apri Microsoft Teams**. Se l'invito non viene visualizzato, controllare la cartella posta indesiderata.
+1. Aprire l'invito tramite posta elettronica e selezionare **Apri Microsoft Teams**. Se l'invito non viene visualizzato, controllare la cartella posta indesiderata.
   1. Se l'indirizzo di posta elettronica non è stato utilizzato in precedenza per creare un account Microsoft, è necessario crearne uno.
 
      Nella finestra  **di dialogo Crea account**  selezionare  **Avanti** , creare una password e selezionare  **Avanti**.
   1. Per verificare l'indirizzo di posta elettronica, aprire l'e-mail di verifica e copiare il codice di sicurezza.
   1. Immetti il codice di sicurezza **nella** finestra di dialogo Verifica e-mail,  seleziona **Avanti,** immetti CAPTCHA nella riga **Immettere** i caratteri visualizzati, seleziona **Avanti,** quindi Accetta .
-1. Se non vuoi scaricare l'app Microsoft Teams, seleziona **Usa l'app Web.**
-1. Nell'app Web Teams è possibile visualizzare o rispondere ai post oppure creare post personalizzati e selezionare la scheda  **File**  per visualizzare o modificare i documenti del team.
+1. Se non vuoi scaricare l'app Microsoft Teams, seleziona **Usa invece l'app Web.**
+1. Nell'Teams web app puoi visualizzare o rispondere ai post o creare post personalizzati e selezionare la scheda **File** per visualizzare o modificare i documenti del team.
 
-    Se usi già l'app Teams nella tua organizzazione per entrare a far parte di un team come guest, è molto più semplice.
+    Se usi già l'app Teams nell'organizzazione entrare a far parte di un team come guest è molto più semplice.
 
-1. Basta aprire l'app Microsoft Teams e scegliere  **Sì**  per passare al team a cui si è invitati.  A questo punto è possibile collaborare al progetto in Teams.
-2. Per tornare al team dell'azienda, selezionarlo  **nell'elenco a**  discesa Organizzazione.
+1. Basta aprire Microsoft Teams app e scegliere **Sì** per passare al team a cui si è invitati.  Ora puoi collaborare al progetto in Teams.
+1. Per tornare al team dell'azienda, selezionarlo  **nell'elenco a**  discesa Organizzazione.
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Esperienza guest in Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (articolo) Gestire le impostazioni di [Microsoft Teams](https://docs.microsoft.com/microsoftteams/enable-features-office-365) per l'organizzazione (articolo) Usare l'accesso [guest](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) e l'accesso esterno per collaborare con persone esterne all'organizzazione (articolo)
+[Esperienza guest in Teams](/microsoftteams/guest-experience) (articolo)\
+[Gestire Microsoft Teams per l'organizzazione](/microsoftteams/enable-features-office-365) (articolo)\
+[Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione](/microsoftteams/communicate-with-users-from-other-organizations) (articolo)

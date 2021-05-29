@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Ulteriori informazioni sulle Office 365 gestite da 21Vianet progettate per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 00710d53033648764ed0e55eeb51ee66518e36f7
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: bc416ca253d26cc5d391d226039223eac02720b0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297057"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706371"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 gestito da 21Vianet
 
@@ -236,8 +236,6 @@ Per informazioni dettagliate e istruzioni, vedere Richieste dell'oggetto dei dat
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Provare o acquistare un abbonamento Microsoft 365 per le aziende](../../commerce/try-or-buy-microsoft-365.md) (articolo)
-
-[Supporto di Azure Information Protection Office 365 gestito da 21Vianet](parity-between-azure-information-protection.md) (articolo)
-
+[Provare o acquistare un abbonamento Microsoft 365 per le aziende](../../commerce/try-or-buy-microsoft-365.md) (articolo)\
+[Supporto di Azure Information Protection Office 365 gestito da 21Vianet](parity-between-azure-information-protection.md) (articolo)\
 [Visualizzare la fattura o ottenere un Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (articolo)

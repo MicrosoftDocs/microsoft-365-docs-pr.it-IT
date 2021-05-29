@@ -18,17 +18,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come usare lo switcher tenant e sulle visualizzazioni multi-tenant.
-ms.openlocfilehash: d59760b8a143acc33747aff9f7deaa0b6dd3e711
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+description: Informazioni su come usare il commutatore tenant e le visualizzazioni multi-tenant che offrono la possibilità di gestire i tenant da un'unica posizione.
+ms.openlocfilehash: e0bf6c872d4998c0cd0263fd8474ac5e9c99ef14
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943030"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706155"
 ---
 # <a name="multi-tenant-management"></a>Gestione multi-tenant
 
-La gestione multi-tenant offre una forma unificata di gestione che consente agli amministratori dei partner di Microsoft 365 di amministrare tutti i tenant gestiti da un'unica posizione. Se sei un partner che gestisce più tenant, puoi:
+La gestione multi-tenant offre una forma unificata di gestione che consente agli amministratori Microsoft 365 partner di amministrare tutti i tenant gestiti da un'unica posizione. Se sei un partner che gestisce più tenant, puoi:
 
 - Spostarsi rapidamente tra i tenant gestiti.
 - Valutare l'integrità del servizio, i prodotti e la fatturazione in più tenant.
@@ -36,7 +36,7 @@ La gestione multi-tenant offre una forma unificata di gestione che consente agli
 
 ## <a name="move-between-tenants"></a>Spostarsi tra tenant
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare il nome dell'organizzazione.
+1. Nell'Microsoft 365 di amministrazione selezionare il nome dell'organizzazione.
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="Commutatore multi-tenant.":::
 
@@ -46,7 +46,7 @@ La gestione multi-tenant offre una forma unificata di gestione che consente agli
 
 ## <a name="view-all-tenants-page"></a>Pagina Visualizza tutti i tenant
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 selezionare **Tutti i tenant.**
+1. Nel riquadro Microsoft 365 di amministrazione selezionare Tutti i tenant nel riquadro di spostamento **sinistro.**
 - Nella pagina **Tutti i tenant** è possibile
   - Valutare l'integrità del servizio
   - Esaminare l'utilizzo delle licenze
@@ -59,7 +59,7 @@ Se un tenant è stato contrassegnato come preferito, viene espanso automaticamen
 
 La visualizzazione integrità del servizio mostra se eventuali eventi imprevisti o avvisi influiscono sui tenant. Ti dirà anche quanti tenant gestiti sono interessati.
 
-1. Nella visualizzazione multi-tenant dell'interfaccia di amministrazione di Microsoft 365 selezionare **Integrità servizio**.
+1. Nell'Microsoft 365 di amministrazione, nella visualizzazione multi-tenant, selezionare **Integrità servizio**.
 2. Nella  visualizzazione aggregata della pagina Integrità servizio è inoltre possibile visualizzare il numero totale di eventi imprevisti, il numero totale di avvisi che interessano uno dei tenant gestiti e il numero di servizi con eventi imprevisti attivi. È anche possibile vedere quanti tenant sono interessati da eventi imprevisti e avvisi.
 
     - È possibile utilizzare l'opzione di filtro per visualizzare i problemi in base al tipo di problema o al servizio
@@ -73,9 +73,9 @@ La visualizzazione integrità del servizio mostra se eventuali eventi imprevisti
 
 L'elenco dei tenant interessati può essere esportato in formato CSV in modo che gli amministratori possano condividerlo con i team di supporto.
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Visualizzare un singolo tenant nell'interfaccia di amministrazione di Microsoft 365
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Visualizzare un singolo tenant nell'Microsoft 365 di amministrazione
 
-È possibile tornare all'interfaccia di amministrazione di Microsoft 365 per qualsiasi tenant dalla **pagina Tutti i tenant.**
+È possibile tornare all'Microsoft 365 di amministrazione per uno qualsiasi dei tenant dalla **pagina Tutti i tenant.**
 
 1. Nella pagina **Tutti i tenant** selezionare il nome del tenant di cui si desidera visualizzare l'interfaccia di amministrazione.
 2. Si viene indirizzati all'interfaccia di amministrazione per il tenant.

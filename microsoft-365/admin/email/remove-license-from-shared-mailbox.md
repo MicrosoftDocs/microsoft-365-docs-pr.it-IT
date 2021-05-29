@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 'Rimuovere la licenza da una cassetta postale condivisa per assegnarla a un altro utente. '
-ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 'Rimuovere una licenza da una cassetta postale condivisa per assegnarla a un altro utente o restituire la licenza in modo da non pagarla. '
+ms.openlocfilehash: d33487879506402c5f0de2f7942c3299c5698b73
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537584"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706287"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Rimuovere una licenza da una cassetta postale condivisa
 
@@ -74,14 +74,10 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire ques
 
 6. Stai ancora pagando la licenza. Per interrompere il pagamento, [rimuovi la licenza dall'abbonamento.](../../commerce/licenses/buy-licenses.md)
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Informazioni sulle cassette postali condivise](about-shared-mailboxes.md)
-
-[Creare una cassetta postale condivisa](create-a-shared-mailbox.md)
-
-[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md)
-
-[Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md)
-
-[Risolvere i problemi relativi alle cassette postali condivise](resolve-issues-with-shared-mailboxes.md)
+[Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) (articolo)\
+[Creare una cassetta postale condivisa](create-a-shared-mailbox.md) (articolo)\
+[Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md) (articolo)\
+[Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md) (articolo)\
+[Risolvere i problemi relativi alle cassette postali condivise](resolve-issues-with-shared-mailboxes.md) (articolo)
