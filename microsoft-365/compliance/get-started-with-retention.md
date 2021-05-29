@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd3ed5e354ee80831cb1af073b6da6f277418b51
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244589"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689038"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -88,4 +88,4 @@ La maggior parte dei criteri di conservazione funzionano in modo discreto in bac
 
 Poiché le etichette di conservazione sono presenti nelle app di Microsoft 365, assicurarsi di fornire indicazioni agli utenti finali e all'help desk prima di distribuire le etichette alla rete di produzione. Per aiutare gli utenti ad applicare le etichette di conservazione in SharePoint e OneDrive, vedere [Applicare etichette di conservazione ai file in SharePoint o OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-Tuttavia, la documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post di blog seguente: [Formazione dell’utente finale sulle etichette di conservazione in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
+Tuttavia, la documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Vedere la pagina seguente e i download da usare per formare gli utenti: [Formazione per l'utente finale sulle etichette di conservazione](https://microsoft.github.io/ComplianceCxE/enduser/retention/).
