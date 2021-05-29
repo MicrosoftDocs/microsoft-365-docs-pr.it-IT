@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere l'organizzazione da phishing e altri attacchi che usano URL dannosi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 675de13410ac98e18a8b72125c2226d2c9c62821
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593570"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698989"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -74,7 +74,7 @@ In questo articolo sono incluse descrizioni dettagliate dei seguenti tipi di imp
   - [Impostazioni collegamenti sicuri per Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - [Elenchi "Non riscrivere gli URL seguenti" nei criteri collegamenti sicuri](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Impostazioni globali collegamenti sicuri**: queste impostazioni sono configurate a livello globale, non nei criteri collegamenti sicuri. Tuttavia, le impostazioni si applicano solo agli utenti inclusi nei criteri collegamenti sicuri attivi. Queste impostazioni includono:
+- **Impostazioni globali collegamenti sicuri**: queste impostazioni sono configurate a livello globale, non nei criteri collegamenti sicuri. Queste impostazioni includono:
 
   - [Impostazioni collegamenti sicuri per Office 365 app](#safe-links-settings-for-office-365-apps)
   - [Elenco "Blocca gli URL seguenti" per i collegamenti sicuri](#block-the-following-urls-list-for-safe-links)
