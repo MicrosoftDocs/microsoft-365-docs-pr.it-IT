@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Informazioni su come aggiornare una o più liste di distribuzione Microsoft 365 gruppi in Outlook e su come usare PowerShell per aggiornare più liste di distribuzione contemporaneamente.
-ms.openlocfilehash: 7e1fc4e971a22ec785662f684a4f9e08970c808a
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: d4686e7f2ec305194130b60fbacab24c9cf7f4e9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636011"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698941"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Aggiornare le liste di distribuzione Microsoft 365 gruppi in Outlook
 
@@ -86,10 +86,10 @@ Se si ha esperienza nell'uso di PowerShell, potrebbe essere utile scegliere ques
 Per aggiornare una singola dll, eseguire il comando seguente:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>
+Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
 ```
 
-Ad esempio, se si desidera aggiornare una DLL con indirizzo SMTP dl1@contoso.com, eseguire il comando seguente:
+Ad esempio, se si desidera aggiornare una DL con indirizzo SMTP dl1@contoso.com, eseguire il comando seguente:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
@@ -103,8 +103,8 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 Puoi anche passare più DLL come batch e aggiornarle insieme:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-\< DL SMTP address3\>, \< DL SMTP address 4\>
+Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
+<DL SMTP address3>, <DL SMTP address4>
 ```
 
 Ad esempio, se si desidera aggiornare cinque DLL con indirizzo SMTP `dl1@contoso.com` e , e , eseguire il comando `dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` seguente:
@@ -159,7 +159,7 @@ Get-DistributionGroup| Foreach-Object{
 
 Se si desidera verificare se una dll è idonea o meno, è possibile eseguire il comando seguente:
 
-`Get-DistributionGroup \<DL SMTP address\> | Get-EligibleDistributionGroupForMigration`
+`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
 
 Se si desidera verificare quali DLL sono idonee per l'aggiornamento, eseguire il comando seguente:
 
