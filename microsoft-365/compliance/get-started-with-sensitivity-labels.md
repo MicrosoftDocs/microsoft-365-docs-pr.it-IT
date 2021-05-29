@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per distribuire le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: c87289fc7017e75db3b8a5b84a8af3a42dc16a10
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302113"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689122"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -102,7 +102,7 @@ La documentazione per gli utenti finali più efficace è costituita dalle indica
 - Per le etichette incorporate: opzione di menu **Altre informazioni**.
 - Per il client di etichettatura unificata di Azure Information Protection **: Guida e feedback** Opzione di menu > **Collegamento Altre informazioni** nella finestra di dialogo Microsoft Azure Information Protection.
 
-Per supportare la scrittura di documentazioni personalizzate, questo post di blog include un pacchetto scaricabile che può essere usato per formare gli utenti e promuovere l'adozione: [Formazione per l'utente finale sulle etichette di riservatezza di M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+Per fornire la documentazione personalizzata, vedere la pagina seguente e i download da usare per formare gli utenti: [Formazione dell'utente finale sulle etichette di riservatezza](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/). 
 
 È possibile anche utilizzare le risorse seguenti per le istruzioni di base:
 
@@ -110,7 +110,7 @@ Per supportare la scrittura di documentazioni personalizzate, questo post di blo
     - [Problemi noti relativi alle etichette di riservatezza in Office](https://support.microsoft.com/it-IT/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [Applicare automaticamente o consigliare l'applicazione di etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
-    - [Problemi noti con l'applicazione automatica o consigliata delle etichette di riservatezza](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+    - [Problemi noti con l'applicazione automatica o la raccomandazione delle etichette di riservatezza](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
 - [Manuale dell’utente per l’etichettatura unificata di Azure Information Protection](/azure/information-protection/rms-client/clientv2-user-guide)
 

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Informazioni su come personalizzare, organizzare e gestire il sito SharePoint team con raccolte documenti, elenchi e hub.
-ms.openlocfilehash: aca2b2ff147fdb030540712133b27eba706b0985
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244516"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706347"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizzare il sito del team per l'archiviazione e la condivisione di file
 
@@ -103,15 +103,15 @@ Anche se l'archiviazione dei file e la gestione dei documenti sono un inizio, la
 
 Durante la gestione del sito del team, potrebbe essere necessario aggiungere o rimuovere utenti. Ecco informazioni utili per comprendere, aggiungere e gestire gli utenti nel sito del team.
   
-Visualizzare un video sui gruppi con [Informazioni e gestire i gruppi](https://docs.microsoft.com/learn/m365/). 
+Visualizzare un video sui gruppi con [Informazioni e gestire i gruppi](/learn/m365/). 
   
 Per aggiungere utenti a un Microsoft 365, vedere [Aggiungere utenti e assegnare licenze contemporaneamente.](../add-users/add-users.md)
   
 Informazioni su come gestire le richieste di accesso [con Configurare e gestire le richieste di accesso.](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)
   
-## <a name="here-are-more-articles-you-might-be-interested-in"></a>Ecco altri articoli che potrebbero interessarti
+## <a name="next-steps"></a>Passaggi successivi
 
-- **Configurare le app di Office su tablet e telefoni**. È necessario eseguire questa operazione per poter modificare i file archiviati nel sito del team dal tablet o dal telefono. Se non si installano le app di Office per tablet o telefono, sarà possibile visualizzare i file sul sito del team ma non modificarli. 
+Devi configurare app Office nei dispositivi in modo da poter modificare i file archiviati nel sito del team dal tablet o dal telefono. Se non si installano le app di Office per tablet o telefono, sarà possibile visualizzare i file sul sito del team ma non modificarli. 
     
   - [Installare e configurare Office su un dispositivo Android con Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     
