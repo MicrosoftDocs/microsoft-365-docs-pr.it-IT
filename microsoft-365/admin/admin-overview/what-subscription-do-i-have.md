@@ -21,30 +21,27 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come verificare le sottoscrizioni dell'organizzazione andando alla pagina I tuoi prodotti.
 ms.date: 01/21/2021
-ms.openlocfilehash: c33ba799880e6c687a08c2d49b17cbae8e80552c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535891"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706299"
 ---
-# <a name="what-subscription-do-i-have"></a><span data-ttu-id="43159-103">Qual è l'abbonamento corrente?</span><span class="sxs-lookup"><span data-stu-id="43159-103">What subscription do I have?</span></span>
+# <a name="what-subscription-do-i-have"></a><span data-ttu-id="f4bb4-103">Qual è l'abbonamento corrente?</span><span class="sxs-lookup"><span data-stu-id="f4bb4-103">What subscription do I have?</span></span>
 
-<span data-ttu-id="43159-104">Se si è un amministratore, è possibile verificare le sottoscrizioni dell'organizzazione andando all'interfaccia di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="43159-104">If you're an admin, you can verify which subscriptions your organization has by going to the admin center.</span></span>
+<span data-ttu-id="f4bb4-104">Se si è un amministratore, è possibile verificare le sottoscrizioni dell'organizzazione andando all'interfaccia di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="f4bb4-104">If you're an admin, you can verify which subscriptions your organization has by going to the admin center.</span></span>
   
-<span data-ttu-id="43159-105">**Se non si è un amministratore**</span><span class="sxs-lookup"><span data-stu-id="43159-105">**Not an admin?**</span></span> <span data-ttu-id="43159-106">Vedere Quali Microsoft 365 prodotto o licenza per le [aziende sono in uso?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)</span><span class="sxs-lookup"><span data-stu-id="43159-106">See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)</span></span>
+<span data-ttu-id="f4bb4-105">**Se non si è un amministratore**</span><span class="sxs-lookup"><span data-stu-id="f4bb4-105">**Not an admin?**</span></span> <span data-ttu-id="f4bb4-106">Vedere Quali Microsoft 365 prodotto o licenza per le [aziende sono in uso?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)</span><span class="sxs-lookup"><span data-stu-id="f4bb4-106">See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)</span></span>
 
-1. <span data-ttu-id="43159-107">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.</span><span class="sxs-lookup"><span data-stu-id="43159-107">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
-2. <span data-ttu-id="43159-108">Nella scheda **Prodotti** vengono visualizzati tutti gli abbonamenti.</span><span class="sxs-lookup"><span data-stu-id="43159-108">On the **Products** tab, you see all your subscriptions.</span></span> <span data-ttu-id="43159-109">Ogni riga di sottoscrizione include informazioni sulle licenze, sullo stato della sottoscrizione e sulla fatturazione.</span><span class="sxs-lookup"><span data-stu-id="43159-109">Each subscription line includes information about licenses, subscription status, and billing.</span></span>
-3. <span data-ttu-id="43159-110">Se si desidera modificare le colonne visualizzate nell'elenco, selezionare **Scegli colonne**.</span><span class="sxs-lookup"><span data-stu-id="43159-110">If you want to change the columns that appear in the list, select **Choose columns**.</span></span> <span data-ttu-id="43159-111">Modificare la selezione delle colonne, quindi selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="43159-111">Change the selection of columns, then select **Save**.</span></span>
-4. <span data-ttu-id="43159-112">Per visualizzare altri dettagli per una singola sottoscrizione, selezionare tale sottoscrizione.</span><span class="sxs-lookup"><span data-stu-id="43159-112">To see more details for a single subscription, select that subscription.</span></span>
+1. <span data-ttu-id="f4bb4-107">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.</span><span class="sxs-lookup"><span data-stu-id="f4bb4-107">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+2. <span data-ttu-id="f4bb4-108">Nella scheda **Prodotti** vengono visualizzati tutti gli abbonamenti.</span><span class="sxs-lookup"><span data-stu-id="f4bb4-108">On the **Products** tab, you see all your subscriptions.</span></span> <span data-ttu-id="f4bb4-109">Ogni riga di sottoscrizione include informazioni sulle licenze, sullo stato della sottoscrizione e sulla fatturazione.</span><span class="sxs-lookup"><span data-stu-id="f4bb4-109">Each subscription line includes information about licenses, subscription status, and billing.</span></span>
+3. <span data-ttu-id="f4bb4-110">Se si desidera modificare le colonne visualizzate nell'elenco, selezionare **Scegli colonne**.</span><span class="sxs-lookup"><span data-stu-id="f4bb4-110">If you want to change the columns that appear in the list, select **Choose columns**.</span></span> <span data-ttu-id="f4bb4-111">Modificare la selezione delle colonne, quindi selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="f4bb4-111">Change the selection of columns, then select **Save**.</span></span>
+4. <span data-ttu-id="f4bb4-112">Per visualizzare altri dettagli per una singola sottoscrizione, selezionare tale sottoscrizione.</span><span class="sxs-lookup"><span data-stu-id="f4bb4-112">To see more details for a single subscription, select that subscription.</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="43159-113">Contenuto correlato</span><span class="sxs-lookup"><span data-stu-id="43159-113">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="f4bb4-113">Contenuto correlato</span><span class="sxs-lookup"><span data-stu-id="f4bb4-113">Related content</span></span>
   
-<span data-ttu-id="43159-114">[Sottoscrizioni e fatturazione](../../commerce/index.yml) (collegamenti)</span><span class="sxs-lookup"><span data-stu-id="43159-114">[Subscriptions and billing](../../commerce/index.yml) (links)</span></span>
-
-<span data-ttu-id="43159-115">[Visualizzare la fattura o la fattura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="43159-115">[View your bill or invoice](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)</span></span>
-
-<span data-ttu-id="43159-116">[Pagamento dell'abbonamento](../../commerce/billing-and-payments/pay-for-your-subscription.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="43159-116">[Paying for your subscription](../../commerce/billing-and-payments/pay-for-your-subscription.md) (article)</span></span>
-
-<span data-ttu-id="43159-117">[Modificare gli indirizzi di fatturazione](../../commerce/billing-and-payments/change-your-billing-addresses.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="43159-117">[Change your billing addresses](../../commerce/billing-and-payments/change-your-billing-addresses.md) (article)</span></span>
+<span data-ttu-id="f4bb4-114">[Abbonamenti e fatturazione](../../commerce/index.yml) (collegamenti)</span><span class="sxs-lookup"><span data-stu-id="f4bb4-114">[Subscriptions and billing](../../commerce/index.yml) (links)</span></span>\
+<span data-ttu-id="f4bb4-115">[Visualizzare l'estratto conto o la fattura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="f4bb4-115">[View your bill or invoice](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)</span></span>\
+<span data-ttu-id="f4bb4-116">[Pagamento dell'abbonamento](../../commerce/billing-and-payments/pay-for-your-subscription.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="f4bb4-116">[Paying for your subscription](../../commerce/billing-and-payments/pay-for-your-subscription.md) (article)</span></span>\
+<span data-ttu-id="f4bb4-117">[Modificare gli indirizzi di fatturazione](../../commerce/billing-and-payments/change-your-billing-addresses.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="f4bb4-117">[Change your billing addresses](../../commerce/billing-and-payments/change-your-billing-addresses.md) (article)</span></span>
