@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: L'inoltro della posta elettronica consente di inoltrare i messaggi di posta elettronica inviati a una Microsoft 365 utente a un'altra cassetta postale all'interno o all'esterno dell'organizzazione.
-ms.openlocfilehash: eb72204211a8eff929c024fbcede66dfe1f4b879
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635487"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698917"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurare l'inoltro della posta elettronica in Microsoft 365
 
@@ -40,6 +40,8 @@ L'amministratore di un'organizzazione potrebbe avere requisiti aziendali per con
 ## <a name="configure-email-forwarding"></a>Configurare l'inoltro della posta elettronica
 
 Prima di configurare l'inoltro della posta elettronica, tenere presente quanto segue:
+
+- Consenti l'invio automatico dei messaggi inoltrati agli utenti del dominio remoto. Per [informazioni dettagliate, vedere](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) Manage remote domains.
 
 - Dopo aver configurato l'inoltro della posta elettronica, **verranno** inoltrati solo i nuovi messaggi di posta elettronica inviati alla cassetta postale di origine. 
 
@@ -104,4 +106,3 @@ Per eseguire questa Microsoft 365, è necessario essere un amministratore Exchan
 [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) (articolo)\
 [Inviare messaggi di posta elettronica da un indirizzo diverso](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (articolo)\
 [Modificare un nome utente e un indirizzo di posta elettronica](../add-users/change-a-user-name-and-email-address.md) (articolo)
-

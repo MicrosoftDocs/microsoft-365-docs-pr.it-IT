@@ -1,5 +1,5 @@
 ---
-title: Pianificare una riunione di Teams con utenti guest
+title: Pianificare una Teams riunione con utenti esterni
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,30 +19,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come pianificare una riunione di Teams con gli utenti guest.
-ms.openlocfilehash: 1a48fa290211507453004c54637e588ad9ad6759
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Informazioni su come pianificare una riunione Teams con utenti esterni.
+ms.openlocfilehash: e4fec84613dc968298569284c7f026de47005ce3
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578700"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698893"
 ---
-# <a name="schedule-a-teams-meeting-with-guests"></a>Pianificare una riunione di Teams con utenti guest
+# <a name="schedule-a-teams-meeting-with-external-users"></a>Pianificare una Teams riunione con utenti esterni
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-È possibile invitare persone esterne all'organizzazione a una riunione senza doverle aggiungere a Microsoft Teams. Ecco come funziona per i clienti o i partner quando aderiscono [a una riunione senza un account Teams.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)
+È possibile invitare persone esterne all'organizzazione a una riunione senza doverle aggiungere a Microsoft Teams. Ecco come funziona per i clienti o i partner quando aderiscono a una riunione senza un [Teams account](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508).
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Con Microsoft Teams, è possibile creare nuovi team quando si avviano nuovi progetti o si aggiungono clienti.
+Per pianificare riunioni con dipendenti, clienti, utenti esterni e altri utenti guest, utilizzare Microsoft Teams. 
 
-1. Nella scheda **Teams** seleziona Partecipa o **crea un team,** **Crea team,** **Crea un team da zero** e quindi **Privato.**
-2. Immettere un nome per il team, una descrizione e quindi selezionare  **Crea**.
-3. Nella pagina  **Aggiungi membri**  aggiungere i membri interni cercandoli e selezionandoli, quindi aggiungere i membri guest immettendo l'indirizzo di posta elettronica e quindi selezionare  **Aggiungi**.
-
-    Se viene visualizzato  **Non è stata individuata alcuna corrispondenza,** è necessario abilitare la condivisione guest. Passare all'interfaccia di amministrazione di Microsoft 365, scegliere l'interfaccia di amministrazione di Teams, scegliere **Impostazioni** a livello di organizzazione, **Accesso guest** e attivare Consenti accesso **guest in Teams.** Questa modifica può richiedere fino a 24 ore.
-
-1. Selezionare  **Chiudi**. Gli utenti guest e i membri riceveranno inviti al team.
-2. Nel canale Generale immettere un messaggio di saluto per tutti gli utenti e selezionare **Invia.**
-3. Nella scheda  **File** aggiungere i documenti su cui si desidera lavorare insieme. Puoi crearli qui o trascinare i file dal computer.
+1. In Microsoft Teams, nel riquadro di spostamento sinistro scegliere **Riunioni.**
+2. Scegliere **Pianifica riunione**.
+3. Nella casella **Nuova riunione** immettere un titolo **e** una **posizione** per la riunione.
+4. Immettere data **e ora** **di** inizio e fine.
+5. Nella casella **Dettagli** immettere una descrizione della riunione e tutti gli altri dettagli che si desidera aggiungere, ad esempio l'agenda di una riunione.
+6. In **Invita persone** immettere i nomi dei dipendenti o dei client che si desidera invitare.
+7. Se sotto i  **nomi viene** visualizzato Provvisorio  o Occupato, scegliere uno dei tempi disponibili oppure fare clic **su** Assistente Pianificazione per altre opzioni.
+8. Scegliere **Pianifica riunione**.

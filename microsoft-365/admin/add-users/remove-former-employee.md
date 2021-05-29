@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Seguire i passaggi descritti in questa soluzione per rimuovere un ex dipendente Microsoft 365 e proteggere i dati dell'organizzazione.
-ms.openlocfilehash: a613d4931c730dffe195954da97af86c683041bf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3fb41ea393e98c1492553941a2b6208524377166
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634245"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698929"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Panoramica: rimuovere un ex dipendente e proteggere i dati
 
@@ -54,8 +54,8 @@ Per completare i passaggi di questa soluzione, è necessario essere un amministr
 |[Passaggio 1 - Impedire a un ex dipendente di accedere e bloccare l'accesso Microsoft 365 servizi](remove-former-employee-step-1.md) <br/> |Questo impedisce all'ex dipendente di accedere a Microsoft 365 e impedisce all'utente di accedere Microsoft 365 servizi. <br/> |
 |[Passaggio 2 - Salvare il contenuto della cassetta postale di un ex dipendente](remove-former-employee-step-2.md) <br/> |Ciò è utile per la persona che prenderà il controllo del lavoro del dipendente o in caso di controversia legale. <br/> |
 |[Passaggio 3 - Inoltrare la posta elettronica di un ex dipendente a un altro dipendente o convertirlo in una cassetta postale condivisa](remove-former-employee-step-3.md) <br/> |Consente di mantenere attivo l'indirizzo di posta elettronica dell'ex dipendente. Se i clienti o i partner continuano a inviare la posta elettronica all'indirizzo dell'ex dipendente, questa operazione consente di inoltrare i messaggi alla persona che ne prende il posto. <br/> |
-|[Passaggio 4 - Concedere a un altro dipendente l'accesso OneDrive e Outlook dati](remove-former-employee-step-6.md) <br/> |Se si rimuove solo la licenza di un utente, senza eliminare l'account, il contenuto del suo OneDrive rimarrà accessibile anche dopo i 30 giorni. <br/><br/> Prima di eliminare l'account, è consigliabile concedere l'accesso OneDrive e Outlook a un altro utente. Dopo aver eliminato l'account di un dipendente, il contenuto OneDrive e Outlook viene conservato per **30** giorni. Durante questi 30 giorni, tuttavia, è possibile ripristinare l'account dell'utente e ottenere l'accesso al contenuto. Se si ripristina l'account dell'utente, il contenuto OneDrive e Outlook rimarrà accessibile anche dopo 30 giorni. <br/> |
-|[Passaggio 5 - Cancellare e bloccare il dispositivo mobile di un ex dipendente](remove-former-employee-step-4.md) <br/> |Rimuove i dati aziendali dal telefono o dal tablet.  <br/> |
+|[Passaggio 4 - Concedere a un altro dipendente l'accesso OneDrive e Outlook dati](remove-former-employee-step-4.md) <br/> |Se si rimuove solo la licenza di un utente, senza eliminare l'account, il contenuto del suo OneDrive rimarrà accessibile anche dopo i 30 giorni. <br/><br/> Prima di eliminare l'account, è consigliabile concedere l'accesso OneDrive e Outlook a un altro utente. Dopo aver eliminato l'account di un dipendente, il contenuto OneDrive e Outlook viene conservato per **30** giorni. Durante questi 30 giorni, tuttavia, è possibile ripristinare l'account dell'utente e ottenere l'accesso al contenuto. Se si ripristina l'account dell'utente, il contenuto OneDrive e Outlook rimarrà accessibile anche dopo 30 giorni. <br/> |
+|[Passaggio 5 - Cancellare e bloccare il dispositivo mobile di un ex dipendente](remove-former-employee-step-5.md) <br/> |Rimuove i dati aziendali dal telefono o dal tablet.  <br/> |
 |[Passaggio 6 - Rimuovere ed eliminare la licenza Microsoft 365 da un ex dipendente](remove-former-employee-step-7.md) <br/> |Quando si rimuove una licenza, è possibile assegnarla a un'altra persona. In alternativa, è possibile eliminare la licenza in modo da interromperne il pagamento finché non si assume un'altra persona.  <br/><br/> Quando si rimuove o si elimina una licenza, la posta elettronica, i contatti e il calendario dell'utente vengono conservati per **30 giorni**, quindi eliminati definitivamente. Se si rimuove o si elimina la licenza di un utente, senza eliminare l'account, il contenuto del suo OneDrive rimarrà accessibile anche dopo i 30 giorni.  <br/> |
 |[Passaggio 7 - Eliminare l'account utente di un ex dipendente](remove-former-employee-step-7.md) <br/> |In questo modo l'account viene rimosso dall'interfaccia di amministrazione. Consente di tenere tutto in ordine. <br/> |
 
