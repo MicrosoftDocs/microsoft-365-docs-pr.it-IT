@@ -197,7 +197,7 @@ Condivisione Exchange dati di contatto su dispositivi mobili Apple su iCloud App
 |Integrazione del riquadro di ricerca Bing servizi  <br/> |Non disponibile.  <br/> |
 |Verifica accessibilità  <br/> |Non disponibile.  <br/> |
 |Blocco appunti per la classe  <br/> |Non disponibile.  <br/> |
-|Moduli  <br/> |Non disponibile.  <br/> |
+|Forms  <br/> |Non disponibile.  <br/> |
 |Lettore immersivo  <br/> |Non disponibile.  <br/> |
 |Inserire un'immagine online  <br/> |Non disponibile.  <br/> |
 |Dettagli riunione  <br/> |Non disponibile.  <br/> |

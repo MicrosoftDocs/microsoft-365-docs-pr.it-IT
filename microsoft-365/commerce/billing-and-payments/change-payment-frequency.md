@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come modificare la frequenza di fatturazione per l'abbonamento aziendale.
 ms.date: 04/02/2021
-ms.openlocfilehash: 010857d9092ef62d11e1b7c6019f2fe0eaafb58f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 529003210e37897f8c1e0d30a692a6f3a1464a80
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537344"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705571"
 ---
 # <a name="change-your-billing-frequency"></a>Modificare la frequenza di fatturazione
 
@@ -39,10 +39,7 @@ Quando si acquista un abbonamento, si sceglie la fatturazione mensile o annuale.
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Visualizzare la fattura o la fattura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (articolo)
-
-[Pagamento dell'abbonamento](../../commerce/billing-and-payments/pay-for-your-subscription.md) (articolo)
-
-[Informazioni su come trovare e visualizzare la fattura o la fattura](view-your-bill-or-invoice.md) (articolo)
-
+[Visualizzare l'estratto conto o la fattura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (articolo)\
+[Pagamento dell'abbonamento](../../commerce/billing-and-payments/pay-for-your-subscription.md) (articolo)\
+[Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md) o la fattura (articolo)\
 [Modificare gli indirizzi di fatturazione](change-your-billing-addresses.md) (articolo)
