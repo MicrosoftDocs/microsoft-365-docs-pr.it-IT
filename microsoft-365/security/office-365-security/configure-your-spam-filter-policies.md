@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1241e6ebb838938f82fce5dc08ea93a3038f4ace
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: fb4ba4f48d6f336444861b4407461efd4c8862d0
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624234"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694510"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -214,7 +214,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
    - **Blocca dominio**: fare clic su **Modifica**. Nel riquadro a comparsa **Elenco di domini bloccati** visualizzato:
 
-      a. Immettere il dominio. È possibile specificare più domini separati da punto e virgola (;). Caratteri jolly (*) non consentiti.
+      a. Immettere il dominio. È possibile specificare più domini separati da punto e virgola (;). I caratteri jolly (*) non sono consentiti.
 
       b. Scegliere ![Icona Aggiungi](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) per aggiungere i domini.
 

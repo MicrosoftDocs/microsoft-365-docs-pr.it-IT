@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531043"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694402"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -138,7 +138,7 @@ Dato che la funzionalità di SharePoint può essere configurata indipendentement
 
 Per essere visualizzati nell'elenco a discesa per la selezione, i contesti di autenticazione devono essere creati, configurati e pubblicati come parte della configurazione dell'accesso condizionale di Azure Active Directory. Per altre informazioni e istruzioni, vedere la sezione [Configurare i contesti di autenticazione](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) nella documentazione dell'accesso condizionale di Azure AD.
 
-Non tutte le app supportano i contesti di autenticazione. Se un utente con un'app non supportata si connette al sito configurato per un contesto di autenticazione, viene visualizzato un messaggio di accesso negato oppure gli verrà richiesto di eseguire l'autenticazione ma questa verrà rifiutato. Le app che al momento supportano i contesti di autenticazione sono:
+Se un utente con un'app non supportata si connette al sito configurato per un contesto di autenticazione, viene visualizzato un messaggio di accesso negato oppure gli verrà richiesto di eseguire l'autenticazione ma questa verrà rifiutato. Le app che al momento supportano i contesti di autenticazione sono:
 
 - Office per il Web, che include Outlook per il Web
 
@@ -163,6 +163,20 @@ Non tutte le app supportano i contesti di autenticazione. Se un utente con un'ap
     - Android: non ancora supportato
 
 Limitazioni note di questa anteprima:
+
+- Questa nuova scheda è ancora in fase di distribuzione nei tenant. Se i criteri di accesso condizionale con il contesto di autenticazione selezionato non vengono applicati quando un utente accede al sito, è possibile usare PowerShell per verificare che la configurazione sia corretta e che siano soddisfatti tutti i prerequisiti. Sarà necessario rimuovere l'etichetta di riservatezza dal sito e quindi configurare il sito per il contesto di autenticazione usando il cmdlet[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite)dell'attuale [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online). Se il metodo funziona, attendere alcuni giorni prima di provare di nuovo ad applicare l'etichetta di riservatezza.
+    
+    Per testare il contesto di autenticazione con PowerShell:
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
+    ```
+    
+    Per rimuovere il contesto di autenticazione in modo da provare di nuovo ad applicare l'etichetta di riservatezza:
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
+    ```
 
 - Per l'app sincronizzazione OneDrive, viene supportato solo OneDrive e non gli altri siti.
 
