@@ -17,20 +17,21 @@ ms.custom:
 - adminvideo
 search.appverid:
 - MET150
-description: Informazioni sulle funzionalità di Microsoft 365 Business Premium.
+description: Scopri Microsoft 365 Business Premium, un servizio in abbonamento che si occupa dell'IT.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f0c184cd0e0e6392f66d049b46930031e054bbe
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245181"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705667"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Video: che cos'è Microsoft 365 Business Premium
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 
 Microsoft 365 Business Premium è un servizio in abbonamento che ti consente di gestire la tua organizzazione nel cloud mentre Microsoft si prende cura dell'IT per te, gestendo i dispositivi, proteggendo dalle minacce del mondo reale e fornendo alla tua organizzazione il software aziendale più recente.
 

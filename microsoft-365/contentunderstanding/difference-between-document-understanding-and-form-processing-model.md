@@ -1,8 +1,9 @@
 ---
 title: Differenza tra i modelli di analisi dei documenti e dell’elaborazione dei moduli
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: lauriellis
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,15 +13,14 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Descrive la differenza principale tra i modelli di analisi dei documenti e dell’elaborazione dei moduli
-ms.openlocfilehash: f12cc46e1ffcbc610f50ba327e22ad46a2591521
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222270"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706511"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Differenza tra i modelli di analisi dei documenti e dell’elaborazione dei moduli 
-
 
 La comprensione dei contenuti in Microsoft SharePoint Syntex consente di identificare e classificare i documenti caricati nelle raccolte documenti di SharePoint, nonché di estrarre informazioni pertinenti da ogni file.  Ad esempio, quando i file vengono caricati in una raccolta documenti di SharePoint, tutti i file identificati come *Ordini di acquisto* vengono classificati come tali e quindi mostrati in una visualizzazione raccolta documenti personalizzata. È inoltre possibile recuperare informazioni specifiche da ogni file, ad esempio *Numero ordine di acquisto* e *Totale*, e visualizzarlo come colonna nella visualizzazione della raccolta documenti. 
 
@@ -36,16 +36,14 @@ Anche se vengono usati in genere per lo stesso scopo, le differenze principali e
 > [!NOTE]
 > Per altri esempi sugli scenari dell’elaborazione dei moduli e sull’analisi dei documenti, vedere[Adozione di SharePoint Syntex: guida introduttiva](./adoption-getstarted.md).
 
-
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenuti strutturati contro non strutturati e semi-strutturati
 
 Usare i modelli di analisi dei documenti per identificare ed estrarre dati da documenti non strutturati, ad esempio lettere o contratti, in cui le entità di testo che si vogliono estrarre sono presenti in frasi o specifiche aree del documento. Ad esempio, un documento non strutturato potrebbe essere una lettera di rinnovo contrattuale che può essere scritta in modi diversi. Tuttavia, le informazioni esistono in modo coerente nel corpo di ogni documento di rinnovo del contratto, come la stringa di testo *Data di inizio servizio* seguita da una data effettiva.
 
-Usare i modelli di elaborazione moduli per identificare i file ed estrarre dati da documenti strutturati o semistrutturati, ad esempio moduli o fatture. I modelli di elaborazione dei moduli sono strutturati in modo da comprendere il layout del modulo da documenti di esempio e imparare a cercare i dati che è necessario estrarre da posizioni simili. I moduli hanno in genere un layout più strutturato in cui le entità si trovano nella stessa posizione, ad esempio un numero di previdenza sociale in un modulo fiscale.
+Usare i modelli di elaborazione moduli per identificare i file ed estrarre dati da documenti strutturati o semistrutturati, ad esempio moduli e fatture. I modelli di elaborazione dei moduli vengono formati per comprendere il layout del modulo dai documenti di esempio e apprendere a cercare i dati che è necessario estrarre da posizioni simili. I moduli hanno abitualmente un layout più strutturato in cui le entità si trovano nella stessa posizione (ad esempio, un numero di previdenza sociale in un modulo fiscale).
 
 > [!NOTE]
 > È necessario avere accesso a un sito del centro contenuti per creare un modello di comprensione del documento o per applicarne uno a una raccolta documenti di SharePoint. 
-
 
 ## <a name="where-models-are-created"></a>Dove vengono creati i modelli
 
@@ -78,7 +76,7 @@ Usare la tabella seguente per comprendere quando usare l'elaborazione dei moduli
 | Posizioni | Formato per una singola raccolta documenti.| Può essere applicato a più raccolte.|
 | Tipi di file supportati| Formazione su formati PDF, JPG e PNG, un totale di 50 MB e 500 pagine.| Formazione su 5-10 file PDF, Office o di posta elettronica, inclusi gli esempi negativi.<br>I file di Office sono troncati a 64.000 caratteri. I file analizzati con OCR hanno un limite di 20 pagine.|
 | Integrazione con i metadati gestiti | No | Sì, addestrando l'estrattore di entità facendo riferimento a un campo di metadati gestiti configurato.|
-| Integrazione delle funzionalità di conformità quando Microsoft Information Protection è abilitato | Impostare le etichette di conservazione pubblicate.<br>L'impostazione delle etichette di riservatezza sarà disponibile a breve. | Impostare le etichette di conservazione pubblicate.<br>L'impostazione delle etichette di riservatezza sarà disponibile a breve. |
+| Integrazione delle funzionalità di conformità quando Microsoft Information Protection è abilitato | Impostare le etichette di conservazione pubblicate.<br>L'impostazione delle etichette di riservatezza sarà disponibile a breve. | Impostare le etichette di conservazione pubblicate.<br>Impostare le etichette di riservatezza pubblicate. |
 | Aree geografiche supportate| L'elaborazione dei moduli si basa su Power Platform. Per informazioni sulla disponibilità globale di Power Platform e AI Builder, vedere [Disponibilità di Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Disponibile in tutte le aree geografiche.|
 | Costo transazionale | Usa crediti di AI Builder.<br>I crediti possono essere acquistati in batch da 1 milione.<br>Con l'acquisto di più di 300 licenze Syntex di SharePoint, viene incluso 1 milione di crediti.<br>1 milione di crediti consentirà l'elaborazione di 2000 pagine di file.<br>| N/D |
 | Capacità | Usa l'ambiente Power Platform predefinito (ambienti personalizzati con database Dataverse supportato). | Nessuna limitazione delle capacità.|

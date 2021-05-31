@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Usare il monitoraggio di Exchange Online per informazioni sugli incidenti di posta elettronica o gli avvisi in Microsoft 365.
-ms.openlocfilehash: 53dc7f990f57fd8d4da68bd424947676cbf0e85d
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
+ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572876"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52707297"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Monitoraggio di Exchange Online per Microsoft 365
 
@@ -49,9 +49,9 @@ Nella pagina di monitoraggio di **Exchange Online** è possibile verificare l’
 
 Questa anteprima è abilitata per i clienti che soddisfano i requisiti seguenti: 
 
-- L'organizzazione deve avere almeno 10.000 licenze per uno o una combinazione dei prodotti seguenti: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- L'organizzazione deve avere almeno 5.000 licenze per uno o una combinazione dei prodotti seguenti: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
 
-  Ad esempio, l'organizzazione può avere 3.000 licenze di Office 365 E3 e 8.500 Microsoft 365 E5, per un totale di 11.500 licenze dei prodotti idonei.
+  Ad esempio, l'organizzazione può avere 3.000 licenze di Office 365 E3 e 2.500 Microsoft 365 E5, per un totale di 5.500 licenze dei prodotti idonei.
 
 - L’organizzazione deve avere almeno 50 utenti Exchange Online attivi al mese
 
@@ -95,10 +95,10 @@ Verificare prima di tutto che la nuova interfaccia di amministrazione sia stata 
 
 Quindi, verificare che siano soddisfatti i requisiti seguenti: 
 
-- L'organizzazione deve avere almeno 10.000 licenze per uno o una combinazione dei prodotti seguenti: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
-- L’organizzazione deve avere almeno 50 utenti Exchange Online attivi al mese
+- L'organizzazione deve avere almeno 5.000 licenze per uno o una combinazione dei prodotti seguenti: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- L’organizzazione deve avere almeno 50 utenti Exchange Online attivi al mese.
 
-Se il numero di licenze dell'organizzazione è inferiore ai 10.000 utenti e gli utenti attivi mensili sono meno di 50, il monitoraggio di Exchange Online non viene abilitato finché non vengono soddisfatti questi requisiti.
+Se il numero di licenze dell'organizzazione è inferiore ai 5.000 utenti e gli utenti attivi mensili sono meno di 50, il monitoraggio di Exchange Online non viene abilitato finché non vengono soddisfatti questi requisiti.
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. Il numero di utenti attivi nel dashboard per ogni client sembra basso. Abbiamo molte licenze attive assegnate agli utenti. Che cosa significa? 
 
