@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendere il numero massimo di criteri ed elementi per criterio in relazione ai criteri di conservazione e ai criteri per le etichette di conservazione
-ms.openlocfilehash: 007ca6eec50b243e1b820938ffa67553d7882c7b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107658"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698965"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limiti per i criteri di conservazione e i criteri per le etichette di conservazione
 
@@ -33,13 +33,15 @@ Quando si utilizzano [criteri di conservazione e criteri per le etichette di con
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Numero massimo di criteri nel tenant
 
-Un tenant singolo può avere al massimo 10.000 criteri (con qualsiasi configurazione).  Questo numero massimo include i differenti criteri di conservazione e altri criteri di conformità, ad esempio i criteri di prevenzione della perdita dei dati.
+Un tenant singolo può avere al massimo 10.000 criteri (con qualsiasi configurazione).  Il numero massimo include i diversi criteri per la conservazione e altri criteri per la conformità, come i criteri per prevenzione della perdita dei dati, barriere informative, blocchi di eDiscovery ed etichette di riservatezza.
 
-Numero massimo di criteri di conservazione per carico di lavoro:
+Nel limite di 10.000 criteri, sono presente anche alcuni limiti al numero massimo di criteri di conservazione per carico di lavoro:
 
 - Exchange Online (con qualsiasi configurazione): 1.800
 - SharePoint o OneDrive (tutti i siti inclusi automaticamente): 13
 - SharePoint o OneDrive (specifici percorsi inclusi o esclusi): 2.600
+
+Sebbene i criteri di conservazione per Microsoft Teams e Yammer usino le cassette postali per archiviare i dati a scopo di conservazione, il numero massimo di criteri per Exchange Online esclude i criteri di conservazione per Teams e Yammer.
 
 ## <a name="maximum-number-of-items-per-policy"></a>Numero massimo di elementi per criterio
 

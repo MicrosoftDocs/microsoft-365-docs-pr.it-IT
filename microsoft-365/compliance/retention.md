@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625222"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710719"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -64,7 +64,7 @@ Usare le sezioni seguenti per scoprire ulteriori informazioni su come funzionano
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Funzionamento delle impostazioni di conservazione con i contenuti in locale
 
-Quando al contenuto è assegnata un'impostazione di conservazione, rimane nella posizione originale. Gli utenti possono continuare a lavorare normalmente con i propri documenti o messaggi di posta elettronica. Tuttavia, se modificano o eliminano il contenuto incluso nel criterio di conservazione, verrà conservata automaticamente una copia del contenuto.
+Quando al contenuto è assegnata un’impostazione di conservazione, nei criteri di conservazione, tale contenuto rimane nella posizione originale. Gli utenti possono continuare a lavorare normalmente con i propri documenti o messaggi di posta elettronica. Tuttavia, se modificano o eliminano il contenuto incluso nei criteri di conservazione, una copia del contenuto viene automaticamente conservata.
   
 - Per i siti di SharePoint e OneDrive, la copia viene conservata nella **raccolta di archiviazione**.
 
@@ -116,7 +116,7 @@ Diversamente dai criteri di conservazione, le impostazioni di conservazione dell
 - Messaggi del canale di Teams
 - Chat di Teams
 - Messaggi della community di Yammer
-- Messaggi privati di Yammer
+- Messaggi utente di Yammer
 
 È possibile applicare in modo efficiente un singolo criterio a più posizioni oppure a posizioni o utenti specifici.
 
@@ -308,7 +308,7 @@ Spiegazione per i quattro diversi livelli:
     
     I documenti in questo sito Marketing SharePoint sono conservati per dieci anni perché è il periodo più lungo di conservazione.
 
-3. **L'esplicito prevale sull'implicito.** Applicabile per determinare quando gli elementi saranno cancellati: 
+3. **L'esplicito prevale sull'implicito per le eliminazioni.** Ora che sono stati risolti i conflitti per la conservazione, rimangono solo i conflitti per le eliminazioni: 
     
     1. Un’etichetta di conservazione (comunque sia applicata) fornisce una conservazione esplicita se comparata ai criteri di conservazione, perché le impostazioni di conservazione sono applicate ad un singolo elemento piuttosto che assegnate implicitamente da un contenitore. Questo significa che un’azione di cancellazione da un’etichetta di conservazione ha sempre la precedenza rispetto ad un’azione di cancellazione proveniente da un criterio di conservazione.
         

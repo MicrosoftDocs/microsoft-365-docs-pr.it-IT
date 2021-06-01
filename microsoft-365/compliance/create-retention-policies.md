@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280428"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710695"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -54,7 +54,7 @@ Anche se i criteri di conservazione possono supportare più servizi identificati
 - Messaggi del canale di Teams
 - Chat di Teams
 - Messaggi della community di Yammer
-- Messaggi privati di Yammer
+- Messaggi utente di Yammer
 
 Se si selezionano le posizioni di Teams o Yammer quando si crea un criterio di conservazione, le altre posizioni vengono automaticamente escluse. Ciò significa che le istruzioni da seguire variano in base alla necessità di includere le posizioni di Teams o Yammer:
 
@@ -130,11 +130,11 @@ Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessar
     
     Non selezionare **Usa le impostazioni di conservazione avanzate**, perché questa opzione non è supportata per le posizioni di Yammer. 
 
-4. Nella pagina **Scegli posizioni** selezionare **Consenti la scelta di posizioni specifiche**. Quindi, attivare una o entrambe le posizioni di Yammer: **Messaggi della community di Yammer** e **Messaggi privati di Yammer**.
+4. Nella pagina **Scegli posizioni** selezionare **Consenti la scelta di posizioni specifiche**. Quindi, attivare una o entrambe le posizioni di Yammer: **Messaggi della community di Yammer** e **Messaggi utente di Yammer**.
     
     Per impostazione predefinita, vengono selezionate tutte le community e tutti gli utenti, ma si può modificare la selezione specificando community e utenti da includere o escludere.
     
-    Per i messaggi privati di Yammer: 
+    Per i messaggi utente di Yammer: 
     - Se si lascia il valore predefinito, **Tutti**, i guest di Azure B2B non sono inclusi. 
     - Se si seleziona **Scegli utente**, si può applicare un criterio di conservazione agli utenti esterni, se il loro account è noto.
 

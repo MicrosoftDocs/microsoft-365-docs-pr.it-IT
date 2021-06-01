@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Yammer.
-ms.openlocfilehash: 0426fdf04090e535a99f8acd3bf376adfb016796
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b99d0915cfb159f821818fb1425d7191a011351
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917802"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710707"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Informazioni sulla conservazione per Yammer
 
@@ -49,7 +49,7 @@ Le reazioni degli altri utenti sotto forma di emoticon non sono incluse in quest
 
 È possibile usare i criteri di conservazione per conservare ed eliminare i messaggi della community e i messaggi privati di Yammer. I messaggi privati sono archiviati in una cartella nascosta all'interno della cassetta postale di ogni utente incluso nel messaggio, e i messaggi della community sono archiviati in un'analoga cartella nascosta all'interno della cassetta postale di gruppo della community.
 
-I messaggi di Yammer non sono interessati dai criteri di conservazione configurati per le cassette postali di utenti o gruppi. Benché i messaggi di Yammer siano archiviati in Exchange, questi dati di Yammer vengono inclusi solo da un criterio di conservazione configurato per le posizioni **Messaggi della community di Yammer** e **Messaggi privati di Yammer**.
+I messaggi di Yammer non sono interessati dai criteri di conservazione configurati per le cassette postali di utenti o gruppi. Benché i messaggi di Yammer siano archiviati in Exchange, questi dati di Yammer vengono inclusi solo da un criterio di conservazione configurato per le posizioni **Messaggi della community di Yammer** e **Messaggi utente di Yammer**.
 
 > [!NOTE]
 > Se un utente è incluso in un criterio di conservazione attivo che conserva i dati di Yammer e si eliminata una cassetta postale di un utente incluso in tale criterio, per conservare i dati di Yammer la cassetta postale viene convertita in una [cassetta postale inattiva](inactive-mailboxes-in-office-365.md). Se non è necessario conservare i dati di Yammer per l'utente, escludere l'account utente dal criterio di conservazione prima di eliminare la relativa cassetta postale.
@@ -88,13 +88,13 @@ Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi
 
 ## <a name="messages-and-external-users"></a>Messaggi e utenti esterni
 
-Per impostazione predefinita, i criteri di conservazione dei messaggi privati di Yammer si applicano a tutti gli utenti dell'organizzazione, ma non agli utenti esterni. Si può applicare un'etichetta di conservazione a utenti esterni selezionando **Scegli utente** e specificando il loro account. 
+Per impostazione predefinita, i criteri di conservazione dei messaggi utente di Yammer si applicano a tutti gli utenti dell'organizzazione, ma non agli utenti esterni. Si può applicare un'etichetta di conservazione a utenti esterni selezionando **Scegli utente** e specificando il loro account. 
 
 Al momento, gli utenti guest di Azure B2B non sono supportati.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l’organizzazione 
 
-Se un utente lascia l’organizzazione e il suo account di Microsoft 365 viene eliminato, i suoi messaggi di Yammer soggetti alla conservazione vengono archiviati in una cassetta postale inattiva. I messaggi restano sottoposti ai criteri di conservazione applicati all’utente prima della disattivazione della sua cassetta postale, e sono disponibili per la ricerca eDiscovery. Per altre informazioni, vedere [Cassette postali inattive in Exchange Online](inactive-mailboxes-in-office-365.md). 
+Se un utente lascia l’organizzazione e il suo account di Microsoft 365 viene eliminato, i suoi messaggi utente di Yammer soggetti alla conservazione vengono archiviati in una cassetta postale inattiva. I messaggi restano sottoposti ai criteri di conservazione applicati all’utente prima della disattivazione della sua cassetta postale, e sono disponibili per la ricerca eDiscovery. Per altre informazioni, vedere [Cassette postali inattive in Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 Se l’utente ha archiviato dei file in Yammer, vedere la [sezione corrispondente](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) per SharePoint e OneDrive.
 
@@ -102,7 +102,7 @@ Se l’utente ha archiviato dei file in Yammer, vedere la [sezione corrispondent
 
 I criteri di conservazione di Yammer sono attualmente in anteprima, e stiamo lavorando continuamente all'ottimizzazione della funzionalità di conservazione. Nel frattempo, notare le limitazioni seguenti quando si usa la conservazione per i messaggi della community e i messaggi privati di Yammer:
 
-- Quando si seleziona **Scegli utenti** per la posizione **Messaggi privati di Yammer**, potrebbero essere visualizzati utenti non della cassetta postale e guest. I criteri di conservazione non sono pensati per questi utenti, quindi non selezionarli.
+- Quando si seleziona **Scegli utenti** per la posizione **Messaggi utente di Yammer**, potrebbero essere visualizzati utenti non della cassetta postale e guest. I criteri di conservazione non sono pensati per questi utenti, quindi non selezionarli.
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione
 
