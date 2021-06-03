@@ -96,7 +96,7 @@
               href: incidents-overview.md
             - name: Assegnazione della priorità
               href: incident-queue.md
-            - name: Gestione
+            - name: Gestire
               href: manage-incidents.md
             - name: Investigare
               href: investigate-incidents.md
@@ -296,6 +296,8 @@
           items:
             - name: Panoramica sulle API supportate da Microsoft 365 Defender (anteprima)
               href: api-overview.md
+            - name: API supportate di Microsoft 365 Defender
+              href: api-supported.md
             - name: Introduzione alle API per Microsoft 365 Defender (anteprima)
               items:
                 - name: Licenza e condizioni di utilizzo per le API di Microsoft 365 Defender
@@ -314,19 +316,25 @@
                   href: api-articles.md
             - name: API supportate da Microsoft 365 Defender e schema (anteprima)
               items:
-                - name: API supportate di Microsoft 365 Defender
-                  href: api-supported.md
                 - name: Codici di errore API REST comuni
                   href: api-error-codes.md
+                - name: Streaming API
+                  items:
+                    - name: Microsoft 365 Streaming API
+                      href: ../defender-endpoint/raw-data-export.md
+                    - name: Trasmettere eventi di rilevazione avanzata all'hub Eventi di Azure
+                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                    - name: Trasmettere eventi di rilevazione avanzata agli account di archiviazione
+                      href: ../defender-endpoint/raw-data-export-storage.md
                 - name: Rilevazione avanzata API
                   href: api-advanced-hunting.md
-                - name: Incidenti delle API
+                - name: API per eventi imprevisti
                   items:
-                    - name: Metodi e proprietà d’incidente
+                    - name: Metodi e proprietà degli eventi imprevisti
                       href: api-incident.md
                     - name: Elencare incidenti
                       href: api-list-incidents.md
-                    - name: Aggiornare incidente
+                    - name: Eventi imprevisti di aggiornamento
                       href: api-update-incidents.md
     - name: Microsoft Defender per Office 365
       href: ../office-365-security/index.yml

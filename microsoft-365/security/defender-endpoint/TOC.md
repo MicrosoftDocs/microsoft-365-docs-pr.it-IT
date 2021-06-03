@@ -593,11 +593,6 @@
 ###### [Rilevazione avanzata con PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Uso di query OData](exposed-apis-odata-samples.md)
 
-#### [API di streaming di dati non elaborati]()
-##### [Streaming di dati non elaborati](raw-data-export.md)
-##### [Trasmettere eventi di rilevazione avanzata all'hub Eventi di Azure](raw-data-export-event-hub.md)
-##### [Trasmettere eventi di rilevazione avanzata agli account di archiviazione](raw-data-export-storage.md)
-
 #### [Integrazione SIEM]()
 ##### [Informazioni sui concetti di Threat Intelligence](threat-indicator-concepts.md)
 ##### [Informazioni sui diversi modi per eseguire il pull dei rilevamenti](configure-siem.md)

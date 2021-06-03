@@ -1,5 +1,5 @@
 ---
-title: Eseguire query sui dati in un insieme da rivedere
+title: Eseguire query sul contenuto di un set di recensioni
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,55 +15,104 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Informazioni su come creare ed eseguire una query in un set di revisione per organizzare i dati per una revisione più efficiente in un Advanced eDiscovery caso.
+description: Informazioni su come creare ed eseguire una query in un set di recensioni per organizzare il contenuto per una revisione più efficiente in un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 64dbeb8ad68f4188e5768a0a7e0e80ca6c22760b
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345801"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736421"
 ---
-# <a name="query-the-data-in-a-review-set"></a><span data-ttu-id="303ae-103">Eseguire query sui dati in un insieme da rivedere</span><span class="sxs-lookup"><span data-stu-id="303ae-103">Query the data in a review set</span></span>
+# <a name="query-and-filter-content-in-a-review-set"></a><span data-ttu-id="f4d83-103">Eseguire query e filtrare il contenuto in un set di recensioni</span><span class="sxs-lookup"><span data-stu-id="f4d83-103">Query and filter content in a review set</span></span>
 
-<span data-ttu-id="303ae-104">Nella maggior parte dei casi, sarà utile essere in grado di approfondire i dati in un set di recensioni e organizzare tali dati per facilitare una revisione più efficiente.</span><span class="sxs-lookup"><span data-stu-id="303ae-104">In most cases, it will be useful to be able to dig deeper into the data in a review set and organize that data to facilitate a more efficient review.</span></span> <span data-ttu-id="303ae-105">L'utilizzo di query in un set di revisione consente di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri della revisione.</span><span class="sxs-lookup"><span data-stu-id="303ae-105">Using Queries in a review set helps you focus on a subset of documents that meet the criteria of your review.</span></span>
+<span data-ttu-id="f4d83-104">Nella maggior parte dei casi, sarà utile approfondire il contenuto di un set di recensioni e organizzarlo per facilitare una revisione più efficiente.</span><span class="sxs-lookup"><span data-stu-id="f4d83-104">In most cases, it will be useful to dig deeper into the content in a review set and organize it to facilitate a more efficient review.</span></span> <span data-ttu-id="f4d83-105">L'utilizzo di filtri e query in un set di revisioni consente di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri della revisione.</span><span class="sxs-lookup"><span data-stu-id="f4d83-105">Using filters and queries in a review set helps you focus on a subset of documents that meet the criteria of your review.</span></span>
 
-## <a name="creating-and-running-a-query-in-a-review-set"></a><span data-ttu-id="303ae-106">Creazione ed esecuzione di una query in un set di revisione</span><span class="sxs-lookup"><span data-stu-id="303ae-106">Creating and running a query in a review set</span></span>
+## <a name="default-filters"></a><span data-ttu-id="f4d83-106">Filtri predefiniti</span><span class="sxs-lookup"><span data-stu-id="f4d83-106">Default filters</span></span>
 
-<span data-ttu-id="303ae-107">Per creare ed eseguire una query sui documenti di un set di revisioni, selezionare **Nuova query** nel set di revisioni.</span><span class="sxs-lookup"><span data-stu-id="303ae-107">To create and run a query on the documents in a review set, select **New query** in the review set.</span></span> <span data-ttu-id="303ae-108">Dopo aver definito la query e aver definito le condizioni, selezionare **Salva** per salvare ed eseguire la query.</span><span class="sxs-lookup"><span data-stu-id="303ae-108">After you name your query and define the conditions, select **Save** to save and run the query.</span></span> <span data-ttu-id="303ae-109">Per eseguire una query salvata in precedenza, selezionare una query salvata.</span><span class="sxs-lookup"><span data-stu-id="303ae-109">To run a query that has been previously saved, select a saved query.</span></span>
+<span data-ttu-id="f4d83-107">In un set di recensioni sono presenti cinque filtri predefiniti precaricati nel set di recensioni:</span><span class="sxs-lookup"><span data-stu-id="f4d83-107">In a review set, there are five default filters that are pre-loaded in the review set:</span></span>
 
-![Esaminare le query impostate](../media/AeDReviewSetQueries.png)
+- <span data-ttu-id="f4d83-108">Parole chiave</span><span class="sxs-lookup"><span data-stu-id="f4d83-108">Keywords</span></span>
+- <span data-ttu-id="f4d83-109">Data</span><span class="sxs-lookup"><span data-stu-id="f4d83-109">Date</span></span>
+- <span data-ttu-id="f4d83-110">Mittente/Autore</span><span class="sxs-lookup"><span data-stu-id="f4d83-110">Sender/Author</span></span>
+- <span data-ttu-id="f4d83-111">Oggetto/Titolo</span><span class="sxs-lookup"><span data-stu-id="f4d83-111">Subject/Title</span></span>
+- <span data-ttu-id="f4d83-112">Tag</span><span class="sxs-lookup"><span data-stu-id="f4d83-112">Tags</span></span>
 
-## <a name="building-a-review-set-query"></a><span data-ttu-id="303ae-111">Creazione di una query del set di revisione</span><span class="sxs-lookup"><span data-stu-id="303ae-111">Building a review set query</span></span>
+![Tipi di filtro predefiniti](../media/DefaultFilterTypes.png)
 
-<span data-ttu-id="303ae-112">È possibile creare una query utilizzando una combinazione di parole chiave, proprietà e condizioni nella condizione Parole chiave.</span><span class="sxs-lookup"><span data-stu-id="303ae-112">You can build a query by using a combination of keywords, properties, and conditions in the Keywords condition.</span></span> <span data-ttu-id="303ae-113">È inoltre possibile raggruppare le condizioni come blocco ( denominato gruppo *di condizioni*) per creare una query più complessa.</span><span class="sxs-lookup"><span data-stu-id="303ae-113">You can also group conditions as a block (called a *condition group*) to build a more complex query.</span></span> <span data-ttu-id="303ae-114">Per un elenco e una descrizione delle proprietà dei metadati che è possibile cercare, vedere [Campi dei metadati del documento in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).</span><span class="sxs-lookup"><span data-stu-id="303ae-114">For a list and description of metadata properties that you can search, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).</span></span>
+<span data-ttu-id="f4d83-114">Fare clic su ogni filtro per espanderlo e assegnare un valore.</span><span class="sxs-lookup"><span data-stu-id="f4d83-114">Click each filter to expand it and assign a value.</span></span> <span data-ttu-id="f4d83-115">Fare clic all'esterno del filtro per applicare automaticamente il filtro al set di revisioni.</span><span class="sxs-lookup"><span data-stu-id="f4d83-115">Click outside the filter to automatically apply the filter to the review set.</span></span> <span data-ttu-id="f4d83-116">Lo screenshot seguente mostra il filtro Data configurato per visualizzare i documenti in un intervallo di date.</span><span class="sxs-lookup"><span data-stu-id="f4d83-116">The following screenshot shows the Date filter configured to show documents within a date range.</span></span>
 
-### <a name="conditions"></a><span data-ttu-id="303ae-115">Condizioni</span><span class="sxs-lookup"><span data-stu-id="303ae-115">Conditions</span></span>
+![Filtro predefinito espanso](../media/ExpandedFilter.png)
 
-<span data-ttu-id="303ae-116">Ogni campo ricercabile in un set di revisione ha una condizione corrispondente che è possibile utilizzare per creare la query.</span><span class="sxs-lookup"><span data-stu-id="303ae-116">Every searchable field in a review set has a corresponding condition that you can use to build your query.</span></span>
+## <a name="add-or-remove-filters"></a><span data-ttu-id="f4d83-118">Aggiungere o rimuovere filtri</span><span class="sxs-lookup"><span data-stu-id="f4d83-118">Add or remove filters</span></span>
 
-<span data-ttu-id="303ae-117">Esistono più tipi di condizioni:</span><span class="sxs-lookup"><span data-stu-id="303ae-117">There are multiple types of conditions:</span></span>
+<span data-ttu-id="f4d83-119">Per aggiungere o rimuovere i filtri visualizzati per il set di recensioni, selezionare **Filtri** per aprire il riquadro dei filtri, visualizzato in una pagina a comparsa.</span><span class="sxs-lookup"><span data-stu-id="f4d83-119">To add or remove filters that are displayed for the review set, select **Filters** to open the filter panel, which is displayed on a flyout page.</span></span> 
 
-- <span data-ttu-id="303ae-118">Testo libero: per i campi di testo, ad esempio l'oggetto, viene utilizzata una condizione di testo libero.</span><span class="sxs-lookup"><span data-stu-id="303ae-118">Freetext: A freetext condition is used for text fields such as subject.</span></span> <span data-ttu-id="303ae-119">È possibile elencare più termini di ricerca separandoli con una virgola.</span><span class="sxs-lookup"><span data-stu-id="303ae-119">You can list multiple search terms by separating them out with a comma.</span></span>
+![Pannello filtro](../media/FilterPanel.png)
 
-- <span data-ttu-id="303ae-120">Data: per i campi data, ad esempio la data dell'ultima modifica, viene utilizzata una condizione di data.</span><span class="sxs-lookup"><span data-stu-id="303ae-120">Date: A date condition is used for date fields such as last modified date.</span></span>
+<span data-ttu-id="f4d83-121">I filtri disponibili sono organizzati in quattro sezioni:</span><span class="sxs-lookup"><span data-stu-id="f4d83-121">The available filters are organized in four sections:</span></span>
 
-- <span data-ttu-id="303ae-121">Opzioni di ricerca: una condizione delle opzioni di ricerca fornirà un elenco dei valori possibili per il campo specifico nel set di recensioni.</span><span class="sxs-lookup"><span data-stu-id="303ae-121">Search options: A search options condition will provide a list of possible values for the particular field in your review set.</span></span> <span data-ttu-id="303ae-122">Viene utilizzato per i campi, ad esempio il mittente, in cui è presente un numero limitato di valori possibili nel set di revisioni.</span><span class="sxs-lookup"><span data-stu-id="303ae-122">This is used for fields, such as sender, where there is a finite number of possible values in your review set.</span></span>
+- <span data-ttu-id="f4d83-122">**Ricerca:** filtri che forniscono funzionalità di ricerca diverse.</span><span class="sxs-lookup"><span data-stu-id="f4d83-122">**Search**: Filters that provide different search capabilities.</span></span>
 
-- <span data-ttu-id="303ae-123">Parola chiave: una condizione di parola chiave è un'istanza specifica della condizione di testo libero che puoi usare per cercare termini o usare un linguaggio di query simile a KQL.</span><span class="sxs-lookup"><span data-stu-id="303ae-123">Keyword: A keyword condition is a specific instance of freetext condition that you can use to search for terms, or use KQL-like query language in.</span></span> <span data-ttu-id="303ae-124">Vedi di seguito per altri dettagli.</span><span class="sxs-lookup"><span data-stu-id="303ae-124">See below for more detail.</span></span>
+- <span data-ttu-id="f4d83-123">**Analisi &** codifica predittiva : Filtri per le proprietà generate e aggiunte ai documenti quando si esegue il processo analitico di document **& tramite posta** elettronica o si utilizzano modelli di codifica predittivi.</span><span class="sxs-lookup"><span data-stu-id="f4d83-123">**Analytics & predictive coding**: Filters for properties generated and added to documents when you run the **Document & email analytic** job or use predictive coding models.</span></span>
 
-### <a name="query-language"></a><span data-ttu-id="303ae-125">Linguaggio di query</span><span class="sxs-lookup"><span data-stu-id="303ae-125">Query language</span></span>
+- <span data-ttu-id="f4d83-124">**ID: filtri** per tutte le proprietà ID dei documenti.</span><span class="sxs-lookup"><span data-stu-id="f4d83-124">**IDs**: Filters for all ID properties of documents.</span></span>
 
-<span data-ttu-id="303ae-126">Oltre alle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella condizione Keywords per creare la query.</span><span class="sxs-lookup"><span data-stu-id="303ae-126">In addition to conditions, you can use a KQL-like query language in the Keywords condition to build your query.</span></span> <span data-ttu-id="303ae-127">Il linguaggio di query per le query di set di revisione supporta gli operatori Boolean standard, ad **esempio AND**, **OR**, **NOT** e **NEAR.**</span><span class="sxs-lookup"><span data-stu-id="303ae-127">The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**.</span></span> <span data-ttu-id="303ae-128">Supporta inoltre un carattere jolly a carattere singolo (?) e un carattere jolly a più caratteri (\*).</span><span class="sxs-lookup"><span data-stu-id="303ae-128">It also supports a single-character wildcard (?) and a multi-character wildcard (\*).</span></span>
+- <span data-ttu-id="f4d83-125">**Proprietà elemento**: Filtri per le proprietà del documento.</span><span class="sxs-lookup"><span data-stu-id="f4d83-125">**Item properties**: Filters for document properties.</span></span> 
 
-## <a name="filters"></a><span data-ttu-id="303ae-129">Filtri</span><span class="sxs-lookup"><span data-stu-id="303ae-129">Filters</span></span>
+<span data-ttu-id="f4d83-126">Espandi ogni sezione e seleziona o deseleziona i filtri per aggiungerli o rimuoverli nel set di filtri.</span><span class="sxs-lookup"><span data-stu-id="f4d83-126">Expand each section and select or deselect filters to add or remove them in the filter set.</span></span> <span data-ttu-id="f4d83-127">Quando si aggiunge un filtro, questo viene visualizzato nel set di filtri.</span><span class="sxs-lookup"><span data-stu-id="f4d83-127">When you add a filter, it's displayed in the filter set.</span></span> 
 
-<span data-ttu-id="303ae-130">Oltre alle query che è possibile salvare, è possibile utilizzare i filtri dei set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione.</span><span class="sxs-lookup"><span data-stu-id="303ae-130">In addition to queries that you can save, you can use review set filters to quickly apply additional conditions to a review set query.</span></span> <span data-ttu-id="303ae-131">L'utilizzo dei filtri consente di perfezionare ulteriormente i risultati visualizzati da una query del set di revisione.</span><span class="sxs-lookup"><span data-stu-id="303ae-131">Using filters help you further refine the results displayed by a review set query.</span></span>
+![Elenco delle sezioni e delle proprietà del filtro nel riquadro dei filtri](../media/FilterPanel2.png)
 
-![Esaminare i filtri impostati](../media/AeDReviewSetFilters.png)
+> [!NOTE]
+> <span data-ttu-id="f4d83-129">Quando espandi una sezione nel riquadro dei filtri, noterai che sono selezionati i tipi di filtro predefiniti.</span><span class="sxs-lookup"><span data-stu-id="f4d83-129">When you expand a section in the filter panel, you'll notice that the default filter types are selected.</span></span> <span data-ttu-id="f4d83-130">Puoi mantenerle selezionate o deselezionarle e rimosse dal set di filtri.</span><span class="sxs-lookup"><span data-stu-id="f4d83-130">You can keep these selected or deselect them and removed them from the filter set.</span></span> 
 
-<span data-ttu-id="303ae-133">I filtri differiscono dalle query in due modi significativi:</span><span class="sxs-lookup"><span data-stu-id="303ae-133">Filters differ from queries in two significant ways:</span></span>
+## <a name="filter-types"></a><span data-ttu-id="f4d83-131">Tipi di filtro</span><span class="sxs-lookup"><span data-stu-id="f4d83-131">Filter types</span></span>
 
-- <span data-ttu-id="303ae-134">I filtri sono temporanei.</span><span class="sxs-lookup"><span data-stu-id="303ae-134">Filters are transient.</span></span> <span data-ttu-id="303ae-135">Non vengono mantenuti oltre la sessione esistente.</span><span class="sxs-lookup"><span data-stu-id="303ae-135">They don't persist beyond the existing session.</span></span> <span data-ttu-id="303ae-136">In altre parole, non è possibile salvare un filtro.</span><span class="sxs-lookup"><span data-stu-id="303ae-136">In other words, you can't save a filter.</span></span> <span data-ttu-id="303ae-137">Le query vengono salvate nel set di revisione e vi accedono ogni volta che si apre il set di revisioni.</span><span class="sxs-lookup"><span data-stu-id="303ae-137">Queries are saved to the review set, and access them whenever you open the review set.</span></span>
+<span data-ttu-id="f4d83-132">Ogni campo ricercabile in un set di recensioni dispone di un filtro corrispondente che è possibile utilizzare per filtrare gli elementi in base a un campo specifico.</span><span class="sxs-lookup"><span data-stu-id="f4d83-132">Every searchable field in a review set has a corresponding filter that you can use for filter items based on a specific field.</span></span>
 
-- <span data-ttu-id="303ae-138">I filtri sono sempre additivi.</span><span class="sxs-lookup"><span data-stu-id="303ae-138">Filters are always additive.</span></span> <span data-ttu-id="303ae-139">I filtri vengono applicati in aggiunta alla query corrente dell'insieme da rivedere.</span><span class="sxs-lookup"><span data-stu-id="303ae-139">Filters are applied in addition to the current review set query.</span></span> <span data-ttu-id="303ae-140">L'applicazione di una query diversa sostituirà i risultati restituiti dalla query corrente.</span><span class="sxs-lookup"><span data-stu-id="303ae-140">Applying a different query will replace the results returned by the current query.</span></span>
+<span data-ttu-id="f4d83-133">Esistono più tipi di filtri:</span><span class="sxs-lookup"><span data-stu-id="f4d83-133">There are multiple types of filters:</span></span>
+
+- <span data-ttu-id="f4d83-134">**Testo libero**: viene applicato un filtro a testo libero ai campi di testo, ad esempio "Subject".</span><span class="sxs-lookup"><span data-stu-id="f4d83-134">**Freetext**: A freetext filter is applied to text fields such as "Subject".</span></span> <span data-ttu-id="f4d83-135">È possibile elencare più termini di ricerca separandoli con una virgola.</span><span class="sxs-lookup"><span data-stu-id="f4d83-135">You can list multiple search terms by separating them with a comma.</span></span>
+
+- <span data-ttu-id="f4d83-136">**Date**: viene utilizzato un filtro data per i campi data, ad esempio "Data ultima modifica".</span><span class="sxs-lookup"><span data-stu-id="f4d83-136">**Date**: A date filter is used for date fields such as "Last modified date".</span></span>
+
+- <span data-ttu-id="f4d83-137">**Opzioni di** ricerca : un filtro delle opzioni di ricerca fornisce un elenco di valori possibili (ogni valore viene visualizzato con una casella di controllo che è possibile selezionare) per campi specifici nella revisione.</span><span class="sxs-lookup"><span data-stu-id="f4d83-137">**Search options**: A search options filter provides a list of possible values (each value is displayed with a checkbox that you can select) for particular fields in the review.</span></span> <span data-ttu-id="f4d83-138">Questo filtro viene utilizzato per i campi, ad esempio "Sender", in cui è presente un numero limitato di valori possibili nel set di revisione.</span><span class="sxs-lookup"><span data-stu-id="f4d83-138">This filter is used for fields, such as "Sender", where there is a finite number of possible values in the review set.</span></span>
+
+- <span data-ttu-id="f4d83-139">**Parola** chiave: una condizione di parola chiave è un'istanza specifica della condizione a testo libero che è possibile utilizzare per cercare termini.</span><span class="sxs-lookup"><span data-stu-id="f4d83-139">**Keyword**: A keyword condition is a specific instance of freetext condition that you can use to search for terms.</span></span> <span data-ttu-id="f4d83-140">È inoltre possibile utilizzare un linguaggio di query simile a KQL in questo tipo di filtro.</span><span class="sxs-lookup"><span data-stu-id="f4d83-140">You can also use KQL-like query language in this type of filter.</span></span> <span data-ttu-id="f4d83-141">Per ulteriori informazioni, vedere le sezioni Linguaggio query e Generatore di query avanzato in questo argomento.</span><span class="sxs-lookup"><span data-stu-id="f4d83-141">For more information, see the Query language and Advanced query builder sections in this topic.</span></span>
+
+## <a name="include-and-exclude-filter-relationships"></a><span data-ttu-id="f4d83-142">Includere ed escludere relazioni filtro</span><span class="sxs-lookup"><span data-stu-id="f4d83-142">Include and exclude filter relationships</span></span>
+
+<span data-ttu-id="f4d83-143">È possibile modificare la relazione di inclusione ed esclusione per un determinato filtro.</span><span class="sxs-lookup"><span data-stu-id="f4d83-143">You have the option to change the include and exclude relationship for a particular filter.</span></span> <span data-ttu-id="f4d83-144">Ad esempio, nel filtro Tag puoi escludere gli elementi contrassegnati  con un tag specifico selezionando Uguale a nessuno nel filtro a discesa.</span><span class="sxs-lookup"><span data-stu-id="f4d83-144">For example, in the Tag filter, you can exclude items that are tagged with a particular tag by selecting **Equals none of** in the dropdown filter.</span></span> 
+
+![Escludi filtro tag](../media/TagFilterExclude.png)
+
+## <a name="save-filters-as-queries"></a><span data-ttu-id="f4d83-146">Salvare i filtri come query</span><span class="sxs-lookup"><span data-stu-id="f4d83-146">Save filters as queries</span></span>
+
+<span data-ttu-id="f4d83-147">Dopo aver soddisfatto i filtri, è possibile salvare la combinazione di filtri come query di filtro.</span><span class="sxs-lookup"><span data-stu-id="f4d83-147">After you are satisfied with your filters, you can save the filter combination as a filter query.</span></span> <span data-ttu-id="f4d83-148">In questo modo è possibile applicare il filtro nelle sessioni di revisione future.</span><span class="sxs-lookup"><span data-stu-id="f4d83-148">This lets you apply the filter in the future review sessions.</span></span>
+
+<span data-ttu-id="f4d83-149">Per salvare un filtro, selezionare **Salva la query e** assegnare un nome.</span><span class="sxs-lookup"><span data-stu-id="f4d83-149">To save a filter, select **Save the query** and name it.</span></span> <span data-ttu-id="f4d83-150">È possibile eseguire query di filtro salvate  in precedenza selezionando l'elenco a discesa Query di filtro salvate e selezionando una query di filtro da applicare per esaminare i documenti impostati.</span><span class="sxs-lookup"><span data-stu-id="f4d83-150">You or other reviewers can run previously saved filter queries by selecting the **Saved filter queries** dropdown and selecting a filter query to apply to review set documents.</span></span> 
+
+![Salvare una query di filtro](../media/SaveFilterQuery.png)
+
+<span data-ttu-id="f4d83-152">Per eliminare una query di filtro, aprire il riquadro dei filtri e selezionare l'icona cestino accanto alla query.</span><span class="sxs-lookup"><span data-stu-id="f4d83-152">To delete a filter query, open the filter panel and select the trashcan icon next to the query.</span></span>
+
+![Eliminare una query di filtro](../media/DeleteFilterQuery.png)
+
+## <a name="query-language"></a><span data-ttu-id="f4d83-154">Linguaggio di query</span><span class="sxs-lookup"><span data-stu-id="f4d83-154">Query language</span></span>
+
+<span data-ttu-id="f4d83-155">Oltre a utilizzare i filtri, è anche possibile utilizzare un linguaggio di query simile a KQL nel filtro Parole chiave per creare la query di ricerca del set di recensioni.</span><span class="sxs-lookup"><span data-stu-id="f4d83-155">In addition to using filters, you can also use a KQL-like query language in the Keywords filter to build your review set search query.</span></span> <span data-ttu-id="f4d83-156">Il linguaggio di query per le query di set di revisione supporta gli operatori Boolean standard, ad **esempio AND**, **OR**, **NOT** e **NEAR.**</span><span class="sxs-lookup"><span data-stu-id="f4d83-156">The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**.</span></span> <span data-ttu-id="f4d83-157">Supporta inoltre un carattere jolly a carattere singolo (?) e un carattere jolly a più caratteri (\*).</span><span class="sxs-lookup"><span data-stu-id="f4d83-157">It also supports a single-character wildcard (?) and a multi-character wildcard (\*).</span></span>
+
+## <a name="advanced-query-builder"></a><span data-ttu-id="f4d83-158">Generatore di query avanzato</span><span class="sxs-lookup"><span data-stu-id="f4d83-158">Advanced query builder</span></span>
+
+<span data-ttu-id="f4d83-159">È inoltre possibile creare query più avanzate per cercare documenti in un set di revisioni.</span><span class="sxs-lookup"><span data-stu-id="f4d83-159">You can also build more advanced queries to search for documents in a review set.</span></span>
+
+1. <span data-ttu-id="f4d83-160">Apri il pannello dei filtri, seleziona **Filtri** ed espandi la **sezione** Ricerca.</span><span class="sxs-lookup"><span data-stu-id="f4d83-160">Open the filter panel, select **Filters**, and expand the **Search** section.</span></span>
+
+  ![Aggiungere un filtro KQL](../media/AddKQLFilter.png)
+
+2. <span data-ttu-id="f4d83-162">Selezionare il **filtro KQL** e fare clic **su Apri generatore di query.**</span><span class="sxs-lookup"><span data-stu-id="f4d83-162">Select the **KQL** filter and click **Open query builder**.</span></span>
+
+   <span data-ttu-id="f4d83-163">In questo pannello è possibile creare query KQL complesse utilizzando il generatore di query.</span><span class="sxs-lookup"><span data-stu-id="f4d83-163">In this panel, you can create complex KQL queries by using the query builder.</span></span> <span data-ttu-id="f4d83-164">È possibile aggiungere condizioni o gruppi di condizioni che sono costituito da più condizioni connesse logicamente da **relazioni AND** **o OR.**</span><span class="sxs-lookup"><span data-stu-id="f4d83-164">You can add conditions or add condition groups that are made up of multiple conditions that are logically connected by **AND** or **OR** relationships.</span></span>
+
+   ![Utilizzare il generatore di query per configurare query di filtro complesse](../media/ComplexQuery.png)
