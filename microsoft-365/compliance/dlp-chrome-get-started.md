@@ -1,5 +1,5 @@
 ---
-title: Introduzione all'estensione per la conformità Microsoft (anteprima)
+title: Introduzione all'estensione per Conformità Microsoft
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Preparare e distribuire l'estensione per la conformità Microsoft.
-ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Preparare e distribuire l'estensione per Conformità Microsoft.
+ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113864"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730511"
 ---
-# <a name="get-started-with-microsoft-compliance-extension-preview"></a>Introduzione all'estensione per la conformità Microsoft (anteprima)
+# <a name="get-started-with-microsoft-compliance-extension"></a>Introduzione all'estensione per Conformità Microsoft
 
 Usare queste procedure per implementare l'estensione di conformità Microsoft.
 
@@ -261,9 +261,8 @@ Dopo aver rimosso Chrome dall'elenco di browser o app non autorizzati, è possib
 
 ### <a name="known-issues-and-limitations"></a>Problemi noti e limitazioni
 
-1. L’imposizione del trascinamento della selezione per il caricamento della cartella non è supportato.
-2. L'imposizione del blocco override per l’uscita dal cloud non è supportata.
-3. La modalità Incognito non è supportata e deve essere disabilitata.
+1. L'imposizione del blocco override per l’uscita dal cloud non è supportata.
+2. La modalità Incognito non è supportata e deve essere disabilitata.
 
 ## <a name="next-steps"></a>Passaggi successivi
 Ora che si è eseguito l'onboarding dei dispositivi e che è possibile visualizzare i dati sulle attività in Esplora attività, è possibile procedere con il passaggio successivo, in cui si creano criteri di prevenzione della perdita dei dati per proteggere gli elementi sensibili.

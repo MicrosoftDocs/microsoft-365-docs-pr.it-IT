@@ -122,7 +122,7 @@
           href: get-started/get-started-devices.md
         - name: Esperienza iniziale con Autopilot e pagina stato registrazione
           href: get-started/esp-first-run.md
-        - name: "Servizi di posizione di Windows\_10"
+        - name: Servizi di posizione di Windows 10
           href: get-started/device-location.md
         - name: Introduzione al controllo delle applicazioni
           href: get-started/get-started-app-control.md
@@ -147,14 +147,6 @@
           items:
             - name: Report inventario dei dispositivi
               href: working-with-managed-desktop/device-inventory-report.md
-            - name: Dati analitici sull'utilizzo
-              href: working-with-managed-desktop/usage-insights.md
-            - name: Dati analitici sull'affidabilità
-              href: working-with-managed-desktop/reliability-insights.md
-            - name: Dati analitici sulle batterie
-              href: working-with-managed-desktop/battery-insights.md
-            - name: Dati analitici sugli aggiornamenti della sicurezza di Windows
-              href: working-with-managed-desktop/security-update-insights.md
         - name: Supporto amministratori
           href: working-with-managed-desktop/admin-support.md
         - name: Supporto agli utenti

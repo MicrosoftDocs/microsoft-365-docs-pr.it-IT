@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per dichiarare i record.
-ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925662"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730547"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usare le etichette di conservazione per dichiarare i record
 
@@ -54,7 +54,7 @@ Se si cambia idea in merito alla configurazione di questa opzione nella procedur
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurare le etichette di conservazione per dichiarare i record
 
-Quando si crea o modifica un'etichetta di conservazione tramite la soluzione **Records Management** nel Centro conformità di Microsoft 365, è possibile contrassegnare gli elementi come record. Se il comando di PowerShell è stato eseguito nella sezione precedente, in alternativa si può contrassegnare gli elementi come record normativi.
+Quando si crea o modifica un'etichetta di conservazione tramite la soluzione **Gestione record** nel Centro conformità Microsoft 365, è possibile contrassegnare gli elementi come record. Se il comando di PowerShell è stato eseguito nella sezione precedente, in alternativa si può contrassegnare gli elementi come record normativi.
 
 Ad esempio:
 

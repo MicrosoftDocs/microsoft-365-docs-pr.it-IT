@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995058"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730535"
 ---
 # <a name="create-indicators-for-files"></a>Creare indicatori per file.
 
@@ -47,19 +47,19 @@ Esistono tre modi per creare indicatori per i file:
 
 Prima di creare indicatori per i file, è importante comprendere i prerequisiti seguenti:
 
-- Questa funzionalità è disponibile se l'organizzazione usa **Microsoft Defender Antivirus (in** modalità attiva) e la protezione basata su cloud è **abilitata.** Per ulteriori informazioni, vedere [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Questa funzionalità è disponibile se l'organizzazione usa **Antivirus Microsoft Defender (in** modalità attiva) e la **protezione basata su cloud è abilitata.** Per ulteriori informazioni, vedere [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - La versione del client Antimalware deve essere 4.18.1901.x o successiva. Vedi [Versioni mensili di piattaforme e motori](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Supportato nei dispositivi con Windows 10, versione 1703 o successiva, Windows Server 2016 e 2019.
+- Supportato nei dispositivi con Windows 10 versione 1703 o successiva, Windows Server 2016 2019.
 
-- Per iniziare a bloccare i file, devi prima attivare [la funzionalità "blocca](advanced-features.md) o consenti" in Impostazioni.
+- Per iniziare a bloccare i file, devi innanzitutto attivare la funzionalità "blocca o [consenti"](advanced-features.md) in Impostazioni.
 
-Questa funzionalità è progettata per impedire il download di malware sospetti (o file potenzialmente dannosi) dal Web. Attualmente supporta file eseguibili portabili (PE), inclusi i file EXE e DLL. La copertura verrà estesa nel tempo.
+Questa funzionalità è progettata per impedire il download di malware sospetti (o file potenzialmente dannosi) dal Web. Attualmente supporta file eseguibili portabili (PE), inclusi .exe e .dll file. La copertura verrà estesa nel tempo.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Creare un indicatore per i file dalla pagina delle impostazioni
 
-1. Nel riquadro di spostamento selezionare **Impostazioni > indicatori**.
+1. Nel riquadro di spostamento selezionare Impostazioni > **indicatori**.
 
 2. Selezionare la **scheda Hash file.**  
 
@@ -89,13 +89,13 @@ I file bloccati automaticamente da un indicatore non verranno visualizzati nel c
 
 I conflitti di gestione dei criteri Cert e File IoC seguiranno l'ordine seguente:
 
-- Se il file non è consentito Windows Defender criteri/criteri della modalità di imposizione di Controllo applicazione e AppLocker, **blocca**
+- Se il file non è consentito Windows Defender criteri/criteri della modalità di imposizione di Controllo applicazioni e AppLocker, **blocca**
 
-- Else se il file è consentito da Defender Anti-Virus Exclusion, allora **Allow**
+- Else se il file è consentito dall'Antivirus Microsoft Defender, allora **Allow**
 
 - Else se il file è bloccato o avvisato da un blocco o avvisa file IoC, **quindi Blocca/Avvisa**
 
-- Else se il file è consentito da un criterio IOC consenti file, quindi **Consenti**
+- Else se il file è consentito da un criterio IoC consenti file, quindi **Consenti**
 
 - Else se il file è bloccato dalle regole asr, CFA, AV, SmartScreen, quindi **Block**  
 
@@ -103,7 +103,7 @@ I conflitti di gestione dei criteri Cert e File IoC seguiranno l'ordine seguente
 
 Se sono presenti criteri IoC di file in conflitto con lo stesso tipo di imposizione e destinazione, verrà applicato il criterio dell'hash più sicuro (ovvero più lungo). Ad esempio, un criterio IoC hash di file SHA-256 vincerà un criterio IoC hash di file MD5 se entrambi i tipi di hash definiscono lo stesso file.
 
-Tieni presente che le funzionalità delle applicazioni vulnerabili di gestione delle minacce e delle vulnerabilità utilizzano gli ioC dei file per l'applicazione e seguiranno l'ordine di gestione dei conflitti precedente.
+Tieni presente gestione di minacce e vulnerabilità delle funzionalità delle applicazioni vulnerabili di blocco usa gli ioC dei file per l'imposizione e seguirà l'ordine di gestione dei conflitti precedente.
 
 ### <a name="examples"></a>Esempi
 
@@ -113,7 +113,7 @@ Tieni presente che le funzionalità delle applicazioni vulnerabili di gestione d
 |Regola di riduzione della superficie di attacco |Blocca |Consenti |Consenti
 |Controllo di applicazioni di Windows Defender |Consenti |Blocca |Consenti |
 |Controllo di applicazioni di Windows Defender |Blocca |Consenti |Blocca
-|Esclusione di Microsoft Defender Antivirus |Consenti |Blocca |Consenti
+|Antivirus Microsoft Defender esclusione |Consenti |Blocca |Consenti
 
 ## <a name="see-also"></a>Vedere anche
 

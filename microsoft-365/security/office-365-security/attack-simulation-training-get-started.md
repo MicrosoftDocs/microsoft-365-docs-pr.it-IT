@@ -20,12 +20,12 @@ ms.custom:
 description: Gli amministratori possono imparare a usare la formazione di simulazione degli attacchi per eseguire attacchi simulati di phishing e password nelle organizzazioni Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e344153ef433bc13b16136e584ec4da73fcef6a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a5986bbeebd49223ebfd74773346f27fc5297243
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205215"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730917"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Introduzione alla formazione sull’uso di Simulatore di attacchi
 
@@ -34,15 +34,15 @@ ms.locfileid: "51205215"
 Se l'organizzazione dispone di Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 2, che include funzionalità di analisi delle minacce e [risposta,](office-365-ti.md)è possibile utilizzare la formazione sulla simulazione di attacchi nel Centro sicurezza Microsoft per eseguire scenari di attacco realistici nell'organizzazione. Questi attacchi simulati consentono di identificare e individuare gli utenti vulnerabili prima che un attacco reale influisca sulla linea di fondo. Leggi questo articolo per altre informazioni.
 
 > [!NOTE]
-> Il training della simulazione di attacco sostituisce la vecchia esperienza di Simulatore di attacco v1 descritta in Simulatore di attacco [in Microsoft Defender per Office 365.](attack-simulator.md)
+> Il training della simulazione di attacco sostituisce la vecchia esperienza di Simulatore di attacco v1 descritta in [Simulatore](attack-simulator.md)di attacco in Microsoft Defender per Office 365 .
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per aprire il Centro sicurezza Microsoft, passare a <https://security.microsoft.com/> . Formazione sulla simulazione di attacchi è disponibile in **Formazione sulla simulazione di attacchi tramite posta elettronica e** \> **collaborazione.** Per passare direttamente alla formazione sulla simulazione di attacco, aprire <https://security.microsoft.com/attacksimulator> .
 
-- Per ulteriori informazioni sulla disponibilità del training di simulazione degli attacchi tra diversi abbonamenti a Microsoft 365, vedere Descrizione del servizio [Microsoft Defender per Office 365.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Per ulteriori informazioni sulla disponibilità del training di simulazione degli attacchi tra diverse sottoscrizioni Microsoft 365, vedi [Microsoft Defender per](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)la descrizione Office 365 servizio .
 
-- Per eseguire le procedure descritte & in questo articolo, è necessario disporre delle autorizzazioni nel Centro sicurezza e conformità o in Azure Active Directory. In particolare, è necessario essere membri di **Gestione** organizzazione, **Amministratore sicurezza** o uno dei ruoli seguenti:
+- È necessario disporre delle autorizzazioni nel Centro sicurezza & conformità o in Azure Active Directory prima di eseguire le procedure descritte in questo articolo. In particolare, è necessario essere membri di **Gestione** organizzazione, **Amministratore sicurezza** o uno dei ruoli seguenti:
   - **Amministratori simulatore di attacco**: creare e gestire tutti gli aspetti delle campagne di simulazione degli attacchi.
   - **Autori payload simulatore di** attacco : creare payload di attacco che un amministratore può avviare in un secondo momento.
 
@@ -50,7 +50,12 @@ Se l'organizzazione dispone di Microsoft 365 E5 o Microsoft Defender per Office 
 
 - Non sono disponibili cmdlet di PowerShell corrispondenti per il training della simulazione di attacco.
 
-- I dati correlati alla simulazione e alla formazione degli attacchi vengono archiviati con altri dati dei clienti per i servizi di Microsoft 365. Per ulteriori informazioni, vedere Posizioni dei [dati di Microsoft 365.](../../enterprise/o365-data-locations.md) La simulazione di attacco è disponibile nelle seguenti aree geografiche: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN e KOR.
+- I dati correlati alla simulazione e alla formazione degli attacchi vengono archiviati con altri dati dei clienti Microsoft 365 servizi. Per ulteriori informazioni, [vedere Microsoft 365 di dati](../../enterprise/o365-data-locations.md). La simulazione di attacco è disponibile nelle seguenti aree geografiche: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN e KOR.
+
+- A partire dal 15 giugno 2021, il training di simulazione degli attacchi è disponibile in GCC. Se l'organizzazione ha Office 365 G5 GCC o Microsoft Defender for Office 365 (Piano 2) per enti pubblici, è possibile utilizzare la formazione sulla simulazione di attacchi nel Centro sicurezza Microsoft per eseguire scenari di attacco realistici nell'organizzazione, come descritto in questo articolo. Il training della simulazione di attacchi non è ancora disponibile in GCC High o DoD.
+
+> [!NOTE]
+> La formazione sulla simulazione di attacchi offre un sottoinsieme di funzionalità ai clienti E3 come versione di prova. L'offerta di valutazione contiene la possibilità di usare un payload di raccolta delle credenziali e la possibilità di selezionare esperienze di formazione "PHISHING ISA" o "Phishing di massa sul mercato". Nessuna altra funzionalità fa parte dell'offerta di valutazione E3.
 
 ## <a name="simulations"></a>Simulazioni
 
@@ -64,7 +69,7 @@ Nella formazione sulla simulazione di attacchi sono disponibili diversi tipi di 
 
 - **Collegamento nell'allegato:** si tratta di un ibrido di un raccolto di credenziali. Un utente malintenzionato invia al destinatario un messaggio contenente un URL all'interno di un allegato. Quando il destinatario apre l'allegato e fa clic sull'URL, viene visualizzato un sito Web in cui in genere viene visualizzata una finestra di dialogo che richiede all'utente nome utente e password. In genere, la pagina di destinazione è a base di un'applicazione che rappresenta un sito Web noto per creare una relazione di trust con l'utente.
 
-- **Collegamento al malware:** un utente malintenzionato invia al destinatario un messaggio contenente un collegamento a un allegato in un sito noto per la condivisione di file (ad esempio, SharePoint Online o Dropbox). Quando il destinatario fa clic sull'URL, l'allegato si apre e sul dispositivo dell'utente viene eseguito codice arbitrario (ad esempio una macro) per consentire all'autore dell'attacco di installare codice aggiuntivo o consolidare ulteriormente se stessi.
+- **Collegamento al malware**: un utente malintenzionato invia al destinatario un messaggio contenente un collegamento a un allegato in un sito noto per la condivisione di file (ad esempio, SharePoint Online o Dropbox). Quando il destinatario fa clic sull'URL, l'allegato si apre e sul dispositivo dell'utente viene eseguito codice arbitrario (ad esempio una macro) per consentire all'autore dell'attacco di installare codice aggiuntivo o consolidare ulteriormente se stessi.
 
 - **Unità per url**: un utente malintenzionato invia al destinatario un messaggio contenente un URL. Quando il destinatario fa clic sull'URL, viene visualizzato un sito Web che tenta di eseguire codice in background. Questo codice in background tenta di raccogliere informazioni sul destinatario o di distribuire codice arbitrario nel dispositivo. In genere, il sito Web di destinazione è un sito Web noto compromesso o un clone di un sito Web noto. La familiarità con il sito Web consente di convincere l'utente che il collegamento è sicuro da fare clic. Questa tecnica è nota anche come _attacco del foro di annaffiatura._
 
@@ -111,4 +116,4 @@ Per istruzioni dettagliate su come creare un payload da usare all'interno di una
 Per istruzioni dettagliate su come ottenere informazioni dettagliate con la creazione di report, vedi Acquisire informazioni dettagliate tramite la formazione [sulla simulazione di attacchi.](attack-simulation-training-insights.md)
 
 > [!NOTE]
-> Il simulatore di attacco usa collegamenti sicuri in Defender per Office 365 per tenere traccia in modo sicuro dei  dati dei clic per l'URL nel messaggio payload inviato ai destinatari mirati di una campagna di phishing, anche se l'impostazione Non tenere traccia dei clic degli utenti nei criteri Collegamenti sicuri è attivata.
+> Attack Simulator usa Collegamenti sicuri in Defender per Office 365 per tenere traccia in modo sicuro dei dati dei clic per  l'URL nel messaggio payload inviato ai destinatari mirati di una campagna di phishing, anche se l'impostazione Non tenere traccia dei clic degli utenti nei criteri Collegamenti sicuri è attivata.

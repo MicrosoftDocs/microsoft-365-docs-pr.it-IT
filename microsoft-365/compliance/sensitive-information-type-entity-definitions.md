@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: La prevenzione della perdita dei dati (DLP) nel Centro sicurezza e conformità include oltre 200 tipi di informazioni riservate pronti per l'uso &amp; nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo.
-ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086729"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730475"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -38,18 +38,17 @@ nove cifre che possono essere formattate o non formattate
 
 ### <a name="pattern"></a>Criterio
 
-Formattato:
-- quattro cifre che iniziano con 0, 1, 2, 3, 6, 7 o 8
-- un trattino
+- due cifre negli intervalli 00-12, 21-32, 61-72 o 80
+- due cifre
+- un trattino facoltativo
 - quattro cifre
-- un trattino
+- un trattino facoltativo
 - una cifra
 
-Non formattato: nove cifre consecutive che iniziano con 0, 1, 2, 3, 6, 7 o 8 
 
 ### <a name="checksum"></a>Checksum
 
-No
+Sì
 
 ### <a name="definition"></a>Definizione
 
@@ -619,11 +618,12 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 ### <a name="format"></a>Formato
 
-Una lettera seguita da sette cifre
+otto o nove caratteri alfanumerici 
 
 ### <a name="pattern"></a>Criterio
 
-Una lettera (senza distinzione tra maiuscole e minuscole) seguita da sette cifre
+- una lettera (N, E, D, F, A, C, U, X) seguita da 7 cifre o
+- 2 lettere (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) seguite da 7 cifre.
 
 ### <a name="checksum"></a>Checksum
 
@@ -632,60 +632,48 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione regolare Regex_australia_passport_number restituisce contenuti che corrispondono al modello.
-- Viene trovata una Keyword_passport o Keyword_australia_passport_number parola chiave.
+- L'espressione `Regex_australia_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una parola `Keyword_australia_passport_number` chiave from.
+
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione `Regex_australia_passport_number` regolare trova contenuto che corrisponde al modello.
 
 ```xml
-<!-- Australia Passport Number -->
-<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- Australia Passport Number -->
+    <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_australia_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_australia_passport_number" />
-        </Any>
-   </Pattern>
-</Entity>   
+        <Match idRef="Keyword_australia_passport_number" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_australia_passport_number" />
+      </Pattern>
+    </Entity>  
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keyword_passport"></a>Keyword_passport
-
-- Passport Number
-- Passport No
-- Passport#
-- Passport #
-- PassportID
-- Passportno
-- passportnumber
-- パスポート
-- パスポート番号
-- パスポートのNum
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport Non
-- Passeport#
-- Passeport #
-- PasseportNon
-- Passeportn °
-
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- passport
+- passport #
+- passport #
+- passportid
+- passaporti
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- numeri di passaporto
 - passport details
 - immigration and citizenship
 - commonwealth of australia
 - department of immigration
-- residential address
-- department of immigration and citizenship
-- visa
 - national identity card
-- passport number
 - travel document
 - issuing authority
-   
+
+
 ## <a name="australia-tax-file-number"></a>Numero di file fiscale australia
 
 ### <a name="format"></a>Formato
@@ -8665,7 +8653,7 @@ Il modello deve includere tutti gli elementi seguenti:
 
 Il formato per ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN riguarda questi 60 paesi:
 
-ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tn, tr, vg
+ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, si sk , sm, tn, tr, vg
 
 ### <a name="checksum"></a>Checksum
 

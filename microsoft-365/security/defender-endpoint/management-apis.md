@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 78ab364f8a261b1201fad17ebf86adc1a7456a46
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934457"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730840"
 ---
 # <a name="overview-of-management-and-apis"></a>Panoramica di gestione e API 
 
@@ -71,16 +71,17 @@ Guarda questo video per una breve panoramica delle API di Defender for Endpoint.
 
 **L'API** di risposta espone la possibilità di eseguire azioni nel servizio e nei dispositivi, consentendo ai clienti di inserire indicatori, gestire le impostazioni, lo stato degli avvisi, nonché eseguire azioni di risposta su dispositivi a livello di programmazione, ad esempio isolare i dispositivi dalla rete, i file di quarantena e altri. 
 
-## <a name="raw-data-streaming-api"></a>API di streaming di dati non elaborati 
-Defender for Endpoint raw data streaming API offre ai clienti la possibilità di spedire eventi e avvisi in tempo reale dalle loro istanze quando si verificano all'interno di un singolo flusso di dati, fornendo un meccanismo di recapito a bassa latenza e velocità effettiva elevata.
+## <a name="streaming-api"></a>Streaming API 
+L'API di streaming offre ai clienti la possibilità di spedire eventi e avvisi in tempo reale dalle loro istanze quando si verificano all'interno di un singolo flusso di dati, fornendo un meccanismo di recapito a bassa latenza e velocità effettiva elevata.
 
-Le informazioni sull'evento Defender for Endpoint vengono spinte direttamente nell'archiviazione di Azure per la conservazione dei dati a lungo termine o in Hub eventi di Azure per l'utilizzo da parte di servizi di visualizzazione o motori di elaborazione dati aggiuntivi. 
+Le informazioni sugli eventi vengono spinte direttamente nell'archiviazione di Azure per la conservazione dei dati a lungo termine o in Hub eventi di Azure per l'utilizzo da parte di servizi di visualizzazione o motori di elaborazione dati aggiuntivi. 
 
-Per altre informazioni, vedi [API di streaming di dati non elaborati.](raw-data-export.md)
+>[!NOTE]
+>L'API di streaming è stata spostata Microsoft 365 Defender. Per altre informazioni, vedi [Streaming API.](raw-data-export.md)
 
 
 ## <a name="siem-api"></a>SIEM API
-Quando abiliti l'integrazione delle informazioni di sicurezza e della gestione degli eventi (SIEM), ti consente di estrarre i rilevamenti da Microsoft Defender Security Center usando la soluzione SIEM o connettendoti direttamente all'API REST dei rilevamenti. In questo modo viene attivata la sezione dei dettagli di accesso del connettore SIEM con valori precompilato e viene creata un'applicazione nel tenant di Azure Active Directory (Azure AD). Per ulteriori informazioni, vedere [Integrazione SIEM.](enable-siem-integration.md)
+Quando abiliti l'integrazione delle informazioni di sicurezza e della gestione degli eventi (SIEM), ti consente di estrarre i rilevamenti da Microsoft Defender Security Center usando la soluzione SIEM o connettendoti direttamente all'API REST dei rilevamenti. In questo modo viene attivata la sezione dei dettagli di accesso al connettore SIEM con valori precompilato e viene creata un'applicazione nel tenant di Azure Active Directory (Azure AD). Per ulteriori informazioni, vedere [Integrazione SIEM.](enable-siem-integration.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Accedere alle API di Microsoft Defender for Endpoint ](apis-intro.md)

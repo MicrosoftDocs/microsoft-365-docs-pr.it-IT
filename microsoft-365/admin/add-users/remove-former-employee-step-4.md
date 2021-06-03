@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Seguire i passaggi descritti in questo articolo per concedere a un altro dipendente l'accesso ai dati OneDrive e Outlook dell'ex dipendente.
-ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634257"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730199"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Passaggio 4 - Concedere a un altro dipendente l'accesso OneDrive e Outlook dati
 
@@ -52,6 +52,30 @@ Per conservare i file di OneDrive di un utente precedente, concedere innanzitutt
 > [!NOTE]
 > È possibile spostare o copiare fino a 500 MB di file e cartelle alla volta.<br/>
 > Quando si spostano o copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
+
+È inoltre possibile concedere l'accesso a un altro utente per accedere alla OneDrive di un ex dipendente.
+
+1. Accedi <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">all'interfaccia di amministrazione</a> come amministratore globale o amministratore SharePoint amministratore.
+
+    Se viene visualizzato un messaggio che indica che non si dispone dell'autorizzazione per accedere all'interfaccia di amministrazione, non si dispone delle autorizzazioni di amministratore nell'organizzazione.
+
+2. Nel riquadro sinistro selezionare **Interfaccia di amministrazione** \> **SharePoint**. Potrebbe essere necessario selezionare **Mostra tutto** per vedere l'elenco di interfacce di amministrazione.
+
+3. Se viene visualizzata SharePoint'interfaccia di  amministrazione classica, selezionare Apri ora nella parte superiore della pagina per aprire l'SharePoint di amministrazione.
+
+4. Nel riquadro sinistro selezionare **Altre funzionalità.**
+
+5. In **Profili utente** selezionare **Apri.**
+
+6. In **Utenti** selezionare **Gestisci profili utente.**
+
+7. Immettere il nome dell'ex dipendente e selezionare **Trova**.
+
+8. Fare clic con il pulsante destro del mouse sull'utente e quindi **scegliere Gestisci proprietari raccolta siti**.
+
+9. Aggiungere l'utente agli **amministratori della raccolta siti** e selezionare **OK.**
+
+10. L'utente potrà ora accedere alla OneDrive dell'ex dipendente usando l'URL OneDrive lavoro. 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>Revocare l'accesso dell'amministratore alla OneDrive
 

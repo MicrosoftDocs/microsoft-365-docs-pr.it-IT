@@ -1,5 +1,5 @@
 ---
-title: Campi metadati documento in Advanced eDiscovery
+title: Campi dei metadati dei documenti in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo vengono definiti i campi di metadati per i documenti in un set di revisioni in un caso in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244601"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730499"
 ---
-# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi metadati documento in Advanced eDiscovery
+# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati dei documenti in Advanced eDiscovery
 
 Nella tabella seguente sono elencati i campi di metadati per i documenti in un insieme di revisioni in un caso in Advanced eDiscovery. Nella tabella sono disponibili le informazioni seguenti:
 
@@ -50,7 +50,7 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |Content*|Contenuto||Testo estratto dell'elemento.|
 |Corpo conversazione|Corpo conversazione||Corpo della conversazione dell'elemento.|
 |Argomento conversazione|Argomento conversazione||Argomento di conversazione dell'elemento.|
-|ID conversazione|ConversationId|Email_conversation_ID|ID conversazione dal messaggio.|
+|ID conversazione|ConversationId|Conversation_ID|ID conversazione dal messaggio.|
 |Indice conversazione||Conversation_index|Indice della conversazione dal messaggio.|
 |Tempo pdf conversazione|ConversationPdfTime||Data di creazione della versione PDF della conversazione.|
 |Tempo di masterizzazione redazione conversazione|ConversationRedactionBurnTime||Data in cui è stata creata la versione PDF della conversazione per Chat.|
@@ -73,12 +73,12 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |Tema dominante|DominantTheme|Dominant_theme|Tema dominante calcolato per l'analisi.|
 |Sottoinsieme duplicato||Duplicate_subset|ID gruppo per duplicati esatti.|
 |EmailAction*||Email_action|I valori **sono None,** **Reply** o **Forward;** in base all'oggetto di un messaggio.|
-|Conferma di recapito e-mail richiesta||Email_delivery_receipt_requested|Indirizzo di posta elettronica fornito nelle intestazioni Internet per la conferma di recapito.|
+|Conferma di recapito e-mail richiesta||Email_delivery_receipt|Indirizzo di posta elettronica fornito nelle intestazioni Internet per la conferma di recapito.|
 |Priorità|EmailImportance|Email_importance|Importanza del messaggio: **0** - Basso; **1** - Normale; **2** - Alta|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Set completo di intestazioni di posta elettronica dal messaggio di posta elettronica|
 |EmailLevel*||Email_level|Indica il livello di un messaggio all'interno del thread di posta elettronica a cui appartiene. gli allegati ereditano il valore del messaggio padre.|
 |ID messaggio di posta elettronica||Email_message_ID|ID messaggio Internet dal messaggio.|
-|EmailReadReceiptRequested||Email_read_receipt_requested|Indirizzo di posta elettronica fornito nelle intestazioni Internet per la conferma di lettura.|
+|EmailReadReceiptRequested||Email_read_receipt|Indirizzo di posta elettronica fornito nelle intestazioni Internet per la conferma di lettura.|
 |Sicurezza della posta elettronica|EmailSecurity|Email_security|Impostazione di sicurezza del messaggio: **0** - Nessuno; **1** - Firmato; **2** - Crittografato; **3** - Crittografato e firmato.|
 |Riservatezza della posta elettronica|EmailSensitivity|email_sensitivity|Impostazione di riservatezza del messaggio: **0** - Nessuno; **1** Personale; **2** - Privato; **3** - CompanyConfidential.|
 |Set di messaggi di posta elettronica|EmailSet|Email_set|ID gruppo per tutti i messaggi nello stesso set di posta elettronica.|
@@ -119,7 +119,7 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |Data fine riunione|MeetingEndDate|Meeting_end_date|Data di fine riunione per le riunioni.|
 |Data inizio riunione|MeetingStartDate|Meeting_start_date|Data di inizio della riunione per le riunioni.|
 |Tipo di messaggio|MessageKind|Message_kind|Tipo di messaggio da cercare. Valori possibili: contatti docs e-mail dati esterni fax im journals riunioni **<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> microsoftteams** (restituisce elementi da chat, riunioni e chiamate in Microsoft Teams) note post **<br /> <br /> <br /> rssfeeds <br /> <br />** attività segreteria telefonica| 
-|ModernAttachment_ParentId||ModernAttachment_ParentId||
+|ID padre allegato moderno||ModernAttachment_ParentId|ID non modificabile dell'elemento padre del documento.|
 |Estensione nativa|NativeExtension|Native_extension|Estensione nativa dell'elemento.|
 |Nome file nativo|NativeFileName|Native_file_name|Nome file nativo dell'elemento.|
 |NativeMD5||Native_MD5|Hash MD5 (valore hash a 128 bit) del flusso di file.|
@@ -131,7 +131,7 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |Data di creazione di O365||O365_date_created|Data di creazione SharePoint.|
 |Data di modifica di O365||O365_date_modified|Data dell'ultima modifica SharePoint.|
 |O365 modificato da||O365_modified_by|Modificato da da SharePoint.|
-|ID padre|ParentId|Container_ID|ID dell'elemento padre dell'elemento.|
+|ID padre|ParentId|Parent_ID|ID dell'elemento padre dell'elemento.|
 |ParentNode||Parent_node|Il messaggio di posta elettronica precedente più vicino nel thread di posta elettronica.|
 |Domini partecipanti|ParticipantDomains|Email_participant_domains|Elenco di tutti i domini dei partecipanti di un messaggio.|
 |Partecipanti|Partecipanti|Email_participants|Elenco di tutti i partecipanti di un messaggio; ad esempio Mittente, A, Cc, Ccn.|
@@ -164,6 +164,7 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |Titolo|Titolo|Doc_title|Titolo dai metadati del documento.|
 |A|A|Email_to|Campo A per i tipi di messaggio. Il formato è **DisplayName \<SmtpAddress>**|
 |Univoco nel set di posta elettronica|UniqueInEmailSet||**False** se è presente un duplicato dell'allegato nel relativo set di posta elettronica.|
+|ID gruppo versione||Version_Group_Id|Raggruppa le diverse versioni dello stesso documento.|
 |È stato corretti|WasRemediated|Was_Remediated|**True** se l'elemento è stato corretti, in caso contrario **False**.|
 |Word count|WordCount|Word_count|Numero di parole nell'elemento.|
 |||||

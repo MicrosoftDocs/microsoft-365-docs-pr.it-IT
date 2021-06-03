@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f0c92371e7e9b7a3348f90df788ee8c3a46374b
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572154"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730883"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API elenca eventi imprevisti in Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572154"
 
 **Si applica a:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Alcune informazioni fanno riferimento alle caratteristiche del prodotto prima del rilascio, e possono essere modificate sostanzialmente prima della distribuzione al pubblico. Microsoft non fornisce alcuna garanzia, esplicita o implicita, in relazione alle informazioni contenute in questo documento.
@@ -127,7 +127,7 @@ firstActivity | Ora in cui l'avviso ha segnalato per la prima volta che l'attivi
 title | Breve valore stringa di identificazione disponibile per ogni avviso. | Attività ransomware
 descrizione | Valore stringa che descrive ogni avviso. | L'utente Test User2 (testUser2@contoso.com) ha modificato 99 file con più estensioni che terminano con l'estensione non comune *herunterladen*. Si tratta di un numero insolito di manipolazioni di file ed è indicativo di un potenziale attacco ransomware.
 category | Visual and numeric view of how far the attack has progressed along the kill chain. Allineato al framework [MITRE ATT&CK™](https://attack.mitre.org/). | Impatto
-status | Categorizzare gli avvisi *(come Nuovo,* *Attivo* o *Risolto).* Può essere utile per organizzare e gestire la risposta agli avvisi. | Nuovo
+status | Categorizzare gli avvisi *(come Nuovo,* *Attivo* o *Risolto).* Può essere utile per organizzare e gestire la risposta agli avvisi. | New
 gravità | Indica il possibile impatto sulle risorse. Maggiore è la gravità, maggiore sarà l'impatto. In genere, gli elementi di gravità superiore richiedono l'attenzione più immediata.<br>Uno dei valori seguenti: *Informational,* *Low,**Medium e *High.* | Medio
 investigationId | ID dell'indagine automatizzata attivato da questo avviso. | 1234
 investigationState | Informazioni sullo stato corrente dell'indagine. Uno dei valori seguenti: *Unknown,* *Terminated,* *SuccessfullyRemediated,* *Benign,* *Failed,* *PartiallyRemediated,* *Running,* *PendingApproval,* *PendingResource,* *PartiallyInvestigated,* *TerminatedByUser,* *TerminatedBySystem,* *Queued,* *InnerFailure,* *PreexistingAlert,* *UnsupportedOs,* *UnsupportedAlertType,* *SuppressedAlert.* | UnsupportedAlertType

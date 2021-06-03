@@ -1,6 +1,6 @@
 ---
-title: Onboard delle versioni precedenti di Windows in Microsoft Defender for Endpoint
-description: Onboard ha supportato le versioni precedenti dei dispositivi Windows in modo che possano inviare i dati del sensore al sensore Microsoft Defender for Endpoint
+title: Onboard delle versioni precedenti di Windows in Microsoft Defender per Endpoint
+description: Onboard le versioni precedenti dei dispositivi Windows in modo che possano inviare i dati del sensore al sensore Microsoft Defender for Endpoint
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, livello inferiore
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ed7390f67747d176145bb051d8b1633a7146a23
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861360"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730811"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Aggiungere versioni precedenti di Windows
 
@@ -41,25 +41,25 @@ ms.locfileid: "51861360"
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
-Defender for Endpoint estende il supporto per includere sistemi operativi di livello inferiore, fornendo funzionalità avanzate di rilevamento e analisi degli attacchi nelle versioni di Windows supportate.
+Defender for Endpoint estende il supporto per includere sistemi operativi di livello inferiore, fornendo funzionalità avanzate di rilevamento e analisi degli attacchi nelle versioni Windows supportate.
 
-Per eseguire l'onboard degli endpoint client Windows di livello inferiore in Defender for Endpoint, dovrai:
-- Configurare e aggiornare i client di System Center Endpoint Protection.
-- Installare e configurare Microsoft Monitoring Agent (MMA) per segnalare i dati del sensore a Defender per Endpoint, come indicato di seguito.
+Per eseguire l'onboard Windows endpoint client di livello inferiore in Defender for Endpoint, dovrai:
+- Configurare e aggiornare i System Center Endpoint Protection client.
+- Installa e configura Microsoft Monitoring Agent (MMA) per segnalare i dati del sensore a Defender per Endpoint come indicato di seguito.
 
 > [!TIP]
 > Dopo l'onboarding del dispositivo, puoi scegliere di eseguire un test di rilevamento per verificare che sia stato correttamente eseguito l'onboarding nel servizio. Per altre informazioni, vedi Eseguire un test di rilevamento su un defender appena [onboarded per endpoint](run-detection-test.md)endpoint.
 
-## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Configurare e aggiornare i client di System Center Endpoint Protection
+## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Configurare e aggiornare i System Center Endpoint Protection client
 > [!IMPORTANT]
-> Questo passaggio è obbligatorio solo se l'organizzazione usa System Center Endpoint Protection (SCEP).
+> Questo passaggio è obbligatorio solo se l'organizzazione utilizza System Center Endpoint Protection (SCEP).
 
 Defender for Endpoint si integra con System Center Endpoint Protection per fornire visibilità ai rilevamenti di malware e per interrompere la propagazione di un attacco nell'organizzazione vietando file potenzialmente dannosi o malware sospetto. 
 
 Per abilitare questa integrazione, sono necessari i passaggi seguenti: 
-- Installare l'aggiornamento della piattaforma antimalware di gennaio [2017 per i client di Endpoint Protection](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+- Installare l'aggiornamento della piattaforma antimalware di gennaio [2017 per Endpoint Protection client](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configurare l'appartenenza del servizio di protezione cloud del client SCEP **all'impostazione** Avanzate
-- Configurare la rete per consentire le connessioni al cloud Microsoft Defender Antivirus. Per ulteriori informazioni, vedere [Allow connections to the Microsoft Defender Antivirus cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
+- Configurare la rete per consentire le connessioni al cloud Antivirus Microsoft Defender locale. Per ulteriori informazioni, vedere [Allow connections to the Antivirus Microsoft Defender cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>Installare e configurare Microsoft Monitoring Agent (MMA) per segnalare i dati del sensore a Microsoft Defender per Endpoint
 
@@ -78,20 +78,20 @@ Esaminare i dettagli seguenti per verificare i requisiti minimi di sistema:
     > Applicabile solo per Windows 7 SP1 Enterprise e Windows 7 SP1 Pro.
     > Non installare .NET Framework 4.0.x, poiché nega l'installazione precedente.
 
-- Soddisfare i requisiti minimi di sistema dell'agente Azure Log Analytics. Per altre informazioni, vedi [Raccogliere dati dai computer dell'ambiente con Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
+- Soddisfare i requisiti minimi di sistema dell'agente Azure Log Analytics. Per ulteriori informazioni, vedere [Raccogliere dati dai computer dell'ambiente con Log Analytics.](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 
 
-1. Scaricare il file di installazione dell'agente: [agente di Windows a 64 bit](https://go.microsoft.com/fwlink/?LinkId=828603) o agente windows a [32 bit.](https://go.microsoft.com/fwlink/?LinkId=828604)
+1. Scaricare il file di installazione [dell'agente: Windows](https://go.microsoft.com/fwlink/?LinkId=828603) agente a 64 bit [o Windows agente a 32 bit](https://go.microsoft.com/fwlink/?LinkId=828604).
 
 2. Ottenere l'ID area di lavoro:
-   - Nel riquadro di spostamento Defender for Endpoint seleziona **Impostazioni > Gestione > onboarding**
+   - Nel riquadro di spostamento Defender for Endpoint seleziona Impostazioni > **gestione dei dispositivi > onboarding**
    - Selezionare **Windows 7 SP1 e 8.1** come sistema operativo
    - Copiare l'ID dell'area di lavoro e la chiave dell'area di lavoro
 
 3. Utilizzando l'ID area di lavoro e la chiave Workspace scegliere uno dei metodi di installazione seguenti per installare l'agente:
     - [Installare manualmente l'agente utilizzando il programma di installazione](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). <br>
-      Nella pagina **Opzioni di installazione agente** selezionare Connetti **l'agente ad Azure Log Analytics (OMS)**
+      Nella pagina **Opzioni di installazione agente** selezionare **Connessione'agente in Azure Log Analytics (OMS)**
     - [Installare l'agente utilizzando la riga di comando](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
     - [Configurare l'agente utilizzando uno script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
 
@@ -104,11 +104,10 @@ Al termine, gli endpoint onboarded dovrebbero essere visualizzati nel portale en
 
 ### <a name="configure-proxy-and-internet-connectivity-settings"></a>Configurare le impostazioni di connettività Proxy e Internet
  
-- Ogni endpoint di Windows deve essere in grado di connettersi a Internet tramite HTTPS. Questa connessione può essere diretta, tramite un proxy o tramite il [gateway OMS.](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)
+- Ogni Windows endpoint deve essere in grado di connettersi a Internet tramite HTTPS. Questa connessione può essere diretta, tramite un proxy o tramite il [gateway OMS.](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)
 - Se un proxy o un firewall blocca tutto il traffico per impostazione predefinita e consente solo domini specifici tramite o l'analisi HTTPS (ispezione SSL), assicurati di abilitare l'accesso a Defender per gli URL del servizio [endpoint.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)
 
 ## <a name="offboard-client-endpoints"></a>Endpoint client offboard
 Per eseguire l'offboard, puoi disinstallare l'agente MMA dall'endpoint o scollegarlo dalla segnalazione nell'area di lavoro defender per endpoint. Dopo l'offboarding dell'agente, l'endpoint non invierà più i dati del sensore a Defender per Endpoint. 
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)
-

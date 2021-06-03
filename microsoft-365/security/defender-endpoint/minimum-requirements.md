@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ed9b8648630428c6da347252d077521d859482
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6607d5029e45c77754a431c87eb61cd281e013c1
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245709"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730727"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisiti minimi per Microsoft Defender per Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
+
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +41,8 @@ Esistono alcuni requisiti minimi per l'onboarding dei dispositivi nel servizio. 
 > - Informazioni sui miglioramenti più recenti in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint ha dimostrato le funzionalità di ottica e rilevamento leader del settore nella recente valutazione MITRE. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
-## <a name="licensing-requirements"></a>Requisiti per la licenza
+## <a name="licensing-requirements"></a>Requisiti di licenza
+
 Microsoft Defender for Endpoint richiede una delle seguenti offerte di contratti multilicenza Microsoft:
 
 - Windows 10 Enterprise E5
@@ -76,6 +78,7 @@ Per ulteriori informazioni sulla matrice di funzionalità nelle Windows 10, vede
 Per una tabella di confronto dettagliata di Windows 10 edizione commerciale, vedere il [PDF di confronto](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).
 
 ## <a name="browser-requirements"></a>Requisiti per il browser
+
 L'accesso a Defender for Endpoint viene eseguito tramite un browser, che supporta i browser seguenti:
 
 - Microsoft Edge
@@ -88,8 +91,9 @@ L'accesso a Defender for Endpoint viene eseguito tramite un browser, che support
 ## <a name="hardware-and-software-requirements"></a>Requisiti hardware e software
 
 ### <a name="supported-windows-versions"></a>Versioni Windows supportate
-- Windows 7 SP1 Enterprise ([Richiede ESU per il supporto](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq). )
-- Windows 7 SP1 Pro ([Richiede ESU per il supporto](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
+
+- Windows 7 SP1 Enterprise ([Richiede ESU per il supporto](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq). )
+- Windows 7 SP1 Pro ([Richiede ESU per il supporto](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
 - Windows 10 Enterprise
@@ -118,17 +122,19 @@ I requisiti hardware per Defender per Endpoint nei dispositivi sono gli stessi p
 
 
 ### <a name="other-supported-operating-systems"></a>Altri sistemi operativi supportati
+
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
 - [Linux](microsoft-defender-endpoint-linux.md)
 - [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
-> Dovrai confermare le distribuzioni Linux e le versioni di Android, iOS e macOS che hai compatibile con Defender for Endpoint per il funzionamento dell'integrazione.
+> Dovrai verificare che le distribuzioni Linux e le versioni di Android, iOS e macOS siano compatibili con Defender for Endpoint per il funzionamento dell'integrazione.
 
 
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Requisiti di archiviazione e configurazione di rete e dati
+
 Quando esegui l'onboarding guidato per la prima volta, devi scegliere dove archiviare le informazioni relative a Microsoft Defender for Endpoint: nell'Unione Europea, nel Regno Unito o nel datacenter degli Stati Uniti.
 
 > [!NOTE]
@@ -188,6 +194,7 @@ Dovrai impostare l'avvio automatico del servizio  se il START_TYPE non è impost
 
 
 #### <a name="internet-connectivity"></a>Connessione Internet
+
 La connettività Internet nei dispositivi è necessaria direttamente o tramite proxy.
 
 Il sensore Defender for Endpoint può usare una larghezza di banda media giornaliera di 5 MB per comunicare con il servizio cloud Defender for Endpoint e segnalare i dati informatici. Le attività una-off come i caricamenti di file e la raccolta di pacchetti di analisi non sono incluse in questa larghezza di banda media giornaliera.
@@ -198,26 +205,29 @@ Prima di eseguire l'onboard di dispositivi, è necessario che il servizio dati d
 
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Antivirus Microsoft Defender di configurazione
+
 L'agente Defender for Endpoint dipende dalla capacità Antivirus Microsoft Defender di analizzare i file e fornire informazioni su di essi.
 
-Configura gli aggiornamenti di Security intelligence nel Defender per i dispositivi endpoint Antivirus Microsoft Defender è l'antimalware attivo o meno. Per ulteriori informazioni, vedere [Manage Antivirus Microsoft Defender updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+Configura gli aggiornamenti di Security intelligence nel Defender per i dispositivi endpoint Antivirus Microsoft Defender è l'antimalware attivo o meno. Per ulteriori informazioni, vedere [Manage Antivirus Microsoft Defender updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
 Quando Antivirus Microsoft Defender non è l'antimalware attivo nell'organizzazione e usi defender per il servizio endpoint, Antivirus Microsoft Defender attiva la modalità passiva.
 
 Se l'organizzazione ha disattivato Antivirus Microsoft Defender tramite Criteri di gruppo o altri metodi, i dispositivi di cui è stato fatto l'onboarded devono essere esclusi da questi criteri di gruppo.
 
-Se si stanno onboarding dei server e Antivirus Microsoft Defender non è l'antimalware attivo nei server, Antivirus Microsoft Defender dovrà essere configurato per passare alla modalità passiva o disinstallato. La configurazione dipende dalla versione del server. Per ulteriori informazioni, vedere [Antivirus Microsoft Defender compatibilità.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)
+Se si stanno onboarding dei server e Antivirus Microsoft Defender non è l'antimalware attivo nei server, Antivirus Microsoft Defender dovrà essere configurato per passare alla modalità passiva o disinstallato. La configurazione dipende dalla versione del server. Per ulteriori informazioni, vedere [Antivirus Microsoft Defender compatibilità.](/security/defender-endpoint/microsoft-defender-antivirus-compatibility)
 
 > [!NOTE]
 > I criteri di gruppo normali non si applicano a Protezione da manomissione e le modifiche alle impostazioni Antivirus Microsoft Defender verranno ignorate quando Protezione manomissione è impostata su Protezione da manomissione.
 
 
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Antivirus Microsoft Defender Il driver antimalware ad avvio anticipato (ELAM) è abilitato
+
 Se stai eseguendo Antivirus Microsoft Defender come prodotto antimalware principale nei dispositivi, l'onboard dell'agente Defender for Endpoint verrà eseguito correttamente.
 
 Se stai eseguendo un client antimalware di terze parti e usi soluzioni di gestione dei dispositivi mobili o Microsoft Endpoint Manager (ramo corrente), dovrai assicurarti che il driver ELAM Antivirus Microsoft Defender sia abilitato. Per ulteriori informazioni, vedere [Ensure that Antivirus Microsoft Defender is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Configurare Microsoft Defender per la distribuzione degli endpoint](production-deployment.md)
-- [Dispositivi onboard](onboard-configure.md)
+- [Eseguire l'onboarding dei dispositivi](onboard-configure.md)

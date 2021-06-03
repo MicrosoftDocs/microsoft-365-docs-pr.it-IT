@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22ff42cb399b3d07c0ebd8ec4f947352eb6f44aa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9b7699b1a24e7e1d74a48389d02518e814911ecc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934766"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730871"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Pianificare un aggiornamento di Microsoft Defender per Endpoint (Linux)
 
-Per eseguire un aggiornamento in Microsoft Defender for Endpoint su Linux, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Linux.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)
+Per eseguire un aggiornamento in Microsoft Defender for Endpoint su Linux, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Linux.](/microsoft-365/security/defender-endpoint/linux-updates)
 
 Linux (e Unix) dispongono di uno strumento denominato **crontab** (simile all'Utilità di pianificazione) per poter eseguire attività pianificate.
 
@@ -84,7 +84,7 @@ CRON_TZ=America/Los_Angeles
 
 > #<a name="ubuntu-and-debian-systems"></a>! Sistemi Ubuntu e Debian
 
-`06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
+`0 6 * * sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
 > [!NOTE]
 > Negli esempi precedenti, viene impostato su 00 minuti, alle 6.00 (ora in formato 24 ore), qualsiasi giorno del mese, qualsiasi mese, la domenica. [$(date + d) -le 15] == Non verrà eseguito a meno che non sia uguale o inferiore al \% 15° giorno (terza settimana). Questo significa che verrà eseguito ogni 3 domeniche(7) del mese alle 6.00. Pacifico (UTC -8).
@@ -127,7 +127,7 @@ Automazione con Puppet: processi Cron e attività pianificate
 
 Per altre informazioni, vedere [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).
 
-## <a name="additional-information"></a>Ulteriori informazioni
+## <a name="additional-information"></a>Informazioni aggiuntive
 
 **Per ottenere assistenza con crontab**
 

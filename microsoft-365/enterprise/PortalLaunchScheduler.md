@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: In questo articolo viene descritto come avviare il portale tramite l'utilità di pianificazione di avvio del portale
-ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694354"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730259"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Avviare il portale usando l'utilità di SharePoint di avvio del portale
 
@@ -120,7 +120,7 @@ In precedenza, gli avvii del portale potevano essere pianificati solo SharePoint
 
 ### <a name="launch-portal-with-over-100k-users"></a>Portale di avvio con oltre 100.000 utenti
 
-Se si prevede di eseguire una migrazione superiore a 100 TB, inviare una richiesta di supporto seguendo la procedura indicata di seguito. Assicurarsi di includere tutte le informazioni richieste.
+Se si prevede di avviare un portale con più di 100.000 utenti, inviare una richiesta di supporto seguendo i passaggi elencati di seguito. Assicurarsi di includere tutte le informazioni richieste.
 
 Eseguire la procedura seguente:
 1. Accedere a https://admin.microsoft.com
@@ -136,8 +136,8 @@ Eseguire la procedura seguente:
 7. Compilare le informazioni rimanenti e selezionare **Contatti**.
 8. Dopo la creazione del ticket, assicurarsi di fornire all'agente di supporto le informazioni seguenti:
 - URL del portale di avvio 
-- Numero di utenti previsto
-- Tempo stimato di avvio 
+- Numero di utenti previsti
+- Tempo stimato per l'avvio 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>Apportare modifiche a un avvio pianificato del portale
 

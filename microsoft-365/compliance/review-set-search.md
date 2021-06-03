@@ -1,5 +1,5 @@
 ---
-title: Eseguire query sui dati in un insieme da rivedere
+title: Eseguire query sul contenuto di un set di recensioni
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,55 +15,104 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Informazioni su come creare ed eseguire una query in un set di revisione per organizzare i dati per una revisione più efficiente in un Advanced eDiscovery caso.
+description: Informazioni su come creare ed eseguire una query in un set di recensioni per organizzare il contenuto per una revisione più efficiente in un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 64dbeb8ad68f4188e5768a0a7e0e80ca6c22760b
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345801"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736421"
 ---
-# <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
+# <a name="query-and-filter-content-in-a-review-set"></a>Eseguire query e filtrare il contenuto in un set di recensioni
 
-Nella maggior parte dei casi, sarà utile essere in grado di approfondire i dati in un set di recensioni e organizzare tali dati per facilitare una revisione più efficiente. L'utilizzo di query in un set di revisione consente di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri della revisione.
+Nella maggior parte dei casi, sarà utile approfondire il contenuto di un set di recensioni e organizzarlo per facilitare una revisione più efficiente. L'utilizzo di filtri e query in un set di revisioni consente di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri della revisione.
 
-## <a name="creating-and-running-a-query-in-a-review-set"></a>Creazione ed esecuzione di una query in un set di revisione
+## <a name="default-filters"></a>Filtri predefiniti
 
-Per creare ed eseguire una query sui documenti di un set di revisioni, selezionare **Nuova query** nel set di revisioni. Dopo aver definito la query e aver definito le condizioni, selezionare **Salva** per salvare ed eseguire la query. Per eseguire una query salvata in precedenza, selezionare una query salvata.
+In un set di recensioni sono presenti cinque filtri predefiniti precaricati nel set di recensioni:
 
-![Esaminare le query impostate](../media/AeDReviewSetQueries.png)
+- Parole chiave
+- Data
+- Mittente/Autore
+- Oggetto/Titolo
+- Tag
 
-## <a name="building-a-review-set-query"></a>Creazione di una query del set di revisione
+![Tipi di filtro predefiniti](../media/DefaultFilterTypes.png)
 
-È possibile creare una query utilizzando una combinazione di parole chiave, proprietà e condizioni nella condizione Parole chiave. È inoltre possibile raggruppare le condizioni come blocco ( denominato gruppo *di condizioni*) per creare una query più complessa. Per un elenco e una descrizione delle proprietà dei metadati che è possibile cercare, vedere [Campi dei metadati del documento in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+Fare clic su ogni filtro per espanderlo e assegnare un valore. Fare clic all'esterno del filtro per applicare automaticamente il filtro al set di revisioni. Lo screenshot seguente mostra il filtro Data configurato per visualizzare i documenti in un intervallo di date.
 
-### <a name="conditions"></a>Condizioni
+![Filtro predefinito espanso](../media/ExpandedFilter.png)
 
-Ogni campo ricercabile in un set di revisione ha una condizione corrispondente che è possibile utilizzare per creare la query.
+## <a name="add-or-remove-filters"></a>Aggiungere o rimuovere filtri
 
-Esistono più tipi di condizioni:
+Per aggiungere o rimuovere i filtri visualizzati per il set di recensioni, selezionare **Filtri** per aprire il riquadro dei filtri, visualizzato in una pagina a comparsa. 
 
-- Testo libero: per i campi di testo, ad esempio l'oggetto, viene utilizzata una condizione di testo libero. È possibile elencare più termini di ricerca separandoli con una virgola.
+![Pannello filtro](../media/FilterPanel.png)
 
-- Data: per i campi data, ad esempio la data dell'ultima modifica, viene utilizzata una condizione di data.
+I filtri disponibili sono organizzati in quattro sezioni:
 
-- Opzioni di ricerca: una condizione delle opzioni di ricerca fornirà un elenco dei valori possibili per il campo specifico nel set di recensioni. Viene utilizzato per i campi, ad esempio il mittente, in cui è presente un numero limitato di valori possibili nel set di revisioni.
+- **Ricerca:** filtri che forniscono funzionalità di ricerca diverse.
 
-- Parola chiave: una condizione di parola chiave è un'istanza specifica della condizione di testo libero che puoi usare per cercare termini o usare un linguaggio di query simile a KQL. Vedi di seguito per altri dettagli.
+- **Analisi &** codifica predittiva : Filtri per le proprietà generate e aggiunte ai documenti quando si esegue il processo analitico di document **& tramite posta** elettronica o si utilizzano modelli di codifica predittivi.
 
-### <a name="query-language"></a>Linguaggio di query
+- **ID: filtri** per tutte le proprietà ID dei documenti.
 
-Oltre alle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella condizione Keywords per creare la query. Il linguaggio di query per le query di set di revisione supporta gli operatori Boolean standard, ad **esempio AND**, **OR**, **NOT** e **NEAR.** Supporta inoltre un carattere jolly a carattere singolo (?) e un carattere jolly a più caratteri (*).
+- **Proprietà elemento**: Filtri per le proprietà del documento. 
 
-## <a name="filters"></a>Filtri
+Espandi ogni sezione e seleziona o deseleziona i filtri per aggiungerli o rimuoverli nel set di filtri. Quando si aggiunge un filtro, questo viene visualizzato nel set di filtri. 
 
-Oltre alle query che è possibile salvare, è possibile utilizzare i filtri dei set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione. L'utilizzo dei filtri consente di perfezionare ulteriormente i risultati visualizzati da una query del set di revisione.
+![Elenco delle sezioni e delle proprietà del filtro nel riquadro dei filtri](../media/FilterPanel2.png)
 
-![Esaminare i filtri impostati](../media/AeDReviewSetFilters.png)
+> [!NOTE]
+> Quando espandi una sezione nel riquadro dei filtri, noterai che sono selezionati i tipi di filtro predefiniti. Puoi mantenerle selezionate o deselezionarle e rimosse dal set di filtri. 
 
-I filtri differiscono dalle query in due modi significativi:
+## <a name="filter-types"></a>Tipi di filtro
 
-- I filtri sono temporanei. Non vengono mantenuti oltre la sessione esistente. In altre parole, non è possibile salvare un filtro. Le query vengono salvate nel set di revisione e vi accedono ogni volta che si apre il set di revisioni.
+Ogni campo ricercabile in un set di recensioni dispone di un filtro corrispondente che è possibile utilizzare per filtrare gli elementi in base a un campo specifico.
 
-- I filtri sono sempre additivi. I filtri vengono applicati in aggiunta alla query corrente dell'insieme da rivedere. L'applicazione di una query diversa sostituirà i risultati restituiti dalla query corrente.
+Esistono più tipi di filtri:
+
+- **Testo libero**: viene applicato un filtro a testo libero ai campi di testo, ad esempio "Subject". È possibile elencare più termini di ricerca separandoli con una virgola.
+
+- **Date**: viene utilizzato un filtro data per i campi data, ad esempio "Data ultima modifica".
+
+- **Opzioni di** ricerca : un filtro delle opzioni di ricerca fornisce un elenco di valori possibili (ogni valore viene visualizzato con una casella di controllo che è possibile selezionare) per campi specifici nella revisione. Questo filtro viene utilizzato per i campi, ad esempio "Sender", in cui è presente un numero limitato di valori possibili nel set di revisione.
+
+- **Parola** chiave: una condizione di parola chiave è un'istanza specifica della condizione a testo libero che è possibile utilizzare per cercare termini. È inoltre possibile utilizzare un linguaggio di query simile a KQL in questo tipo di filtro. Per ulteriori informazioni, vedere le sezioni Linguaggio query e Generatore di query avanzato in questo argomento.
+
+## <a name="include-and-exclude-filter-relationships"></a>Includere ed escludere relazioni filtro
+
+È possibile modificare la relazione di inclusione ed esclusione per un determinato filtro. Ad esempio, nel filtro Tag puoi escludere gli elementi contrassegnati  con un tag specifico selezionando Uguale a nessuno nel filtro a discesa. 
+
+![Escludi filtro tag](../media/TagFilterExclude.png)
+
+## <a name="save-filters-as-queries"></a>Salvare i filtri come query
+
+Dopo aver soddisfatto i filtri, è possibile salvare la combinazione di filtri come query di filtro. In questo modo è possibile applicare il filtro nelle sessioni di revisione future.
+
+Per salvare un filtro, selezionare **Salva la query e** assegnare un nome. È possibile eseguire query di filtro salvate  in precedenza selezionando l'elenco a discesa Query di filtro salvate e selezionando una query di filtro da applicare per esaminare i documenti impostati. 
+
+![Salvare una query di filtro](../media/SaveFilterQuery.png)
+
+Per eliminare una query di filtro, aprire il riquadro dei filtri e selezionare l'icona cestino accanto alla query.
+
+![Eliminare una query di filtro](../media/DeleteFilterQuery.png)
+
+## <a name="query-language"></a>Linguaggio di query
+
+Oltre a utilizzare i filtri, è anche possibile utilizzare un linguaggio di query simile a KQL nel filtro Parole chiave per creare la query di ricerca del set di recensioni. Il linguaggio di query per le query di set di revisione supporta gli operatori Boolean standard, ad **esempio AND**, **OR**, **NOT** e **NEAR.** Supporta inoltre un carattere jolly a carattere singolo (?) e un carattere jolly a più caratteri (*).
+
+## <a name="advanced-query-builder"></a>Generatore di query avanzato
+
+È inoltre possibile creare query più avanzate per cercare documenti in un set di revisioni.
+
+1. Apri il pannello dei filtri, seleziona **Filtri** ed espandi la **sezione** Ricerca.
+
+  ![Aggiungere un filtro KQL](../media/AddKQLFilter.png)
+
+2. Selezionare il **filtro KQL** e fare clic **su Apri generatore di query.**
+
+   In questo pannello è possibile creare query KQL complesse utilizzando il generatore di query. È possibile aggiungere condizioni o gruppi di condizioni che sono costituito da più condizioni connesse logicamente da **relazioni AND** **o OR.**
+
+   ![Utilizzare il generatore di query per configurare query di filtro complesse](../media/ComplexQuery.png)

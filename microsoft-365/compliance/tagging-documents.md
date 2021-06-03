@@ -15,78 +15,124 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: L'aggiunta di tag ai documenti in un insieme da rivedere consente di rimuovere il contenuto non necessario e di identificare il contenuto pertinente in un caso di Advanced eDiscovery.
+description: L'aggiunta di tag ai documenti in un set di revisioni consente di rimuovere il contenuto non necessario e di identificare il contenuto pertinente in Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 83e7a3c9c097968c4d773e6e2092bb3c50154cc3
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 6d6a933f24a034aced99a8eaa70c6ee951765ca0
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285282"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736273"
 ---
-# <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Contrassegnare i documenti in una recensione impostata in Advanced eDiscovery
+# <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Contrassegnare i documenti in un set di revisioni in Advanced eDiscovery
 
-L'organizzazione del contenuto in un insieme da rivedere è importante per completare vari flussi di lavoro nel processo di eDiscovery. Ciò include:
+L'organizzazione del contenuto in un set di revisione è importante per completare vari flussi di lavoro nel processo di eDiscovery. Tra questi vi sono anche:
 
-- Eliminare contenuti non necessari
+- Eliminare contenuto non necessario
 
 - Identificazione del contenuto pertinente
- 
-- Identificazione dei contenuti che devono essere esaminati da un esperto o da un avvocato
 
-Quando esperti, avvocati o altri utenti esaminano il contenuto in un insieme di recensioni, le loro opinioni relative al contenuto possono essere acquisite tramite tag. Ad esempio, se lo scopo è eliminare il contenuto non necessario, un utente può contrassegnare i documenti con un tag, ad esempio "non reattivo". Dopo che il contenuto è stato esaminato e contrassegnato, è possibile creare una ricerca di insieme da rivedere per escludere qualsiasi contenuto contrassegnato come "non reattivo", eliminando questo contenuto dai passaggi successivi del flusso di lavoro di eDiscovery. Il pannello di tag può essere personalizzato per ogni caso in modo che i tag possano supportare il flusso di lavoro di revisione previsto.
+- Identificazione del contenuto che deve essere esaminato da un esperto o da un avvocato
+
+Quando esperti, avvocati o altri utenti esaminano il contenuto in un set di recensioni, le loro opinioni relative al contenuto possono essere acquisite utilizzando tag. Ad esempio, se lo scopo è eliminare il contenuto non necessario, un utente può contrassegnare i documenti con un tag, ad esempio "non reattivo". Dopo aver esaminato e taggato il contenuto, è possibile creare una ricerca nel set di recensioni per escludere qualsiasi contenuto contrassegnato come "non reattivo". Questo processo elimina il contenuto non reattivo dai passaggi successivi del flusso di lavoro di eDiscovery. Il riquadro di tagging in un set di revisione può essere personalizzato per ogni caso in modo che i tag supportino il flusso di lavoro di revisione previsto per il caso.
+
+> [!NOTE]
+> L'ambito dei tag è un Advanced eDiscovery caso. Ciò significa che un caso può avere un solo set di tag che i revisori possono usare per contrassegnare i documenti del set di revisione. Non è possibile configurare un set diverso di tag da utilizzare in set di revisione diversi nello stesso caso.
 
 ## <a name="tag-types"></a>Tipi di tag
 
-Advanced eDiscovery offre due tipi di tag:
+Advanced eDiscovery fornisce due tipi di tag:
 
-- **Tag a scelta singola:** limita gli utenti a selezionare un singolo tag all'interno di un gruppo. Ciò può essere utile per garantire che gli utenti non selezionano tag in conflitto, ad esempio "reattivi" e "non reattivi". Questi elementi verranno visualizzati come pulsanti di opzione.
+- **Tag a scelta** singola : limita i revisori alla selezione di un singolo tag all'interno di un gruppo. Questi tipi di tag possono essere utili per garantire che i revisori non selezionano tag in conflitto, ad esempio "reattivi" e "non reattivi". I tag a scelta singola vengono visualizzati come pulsanti di opzione.
 
-- **Tag a scelta multipla:** consente agli utenti di selezionare più tag all'interno di un gruppo. Questi elementi verranno visualizzati come caselle di controllo.
+- **Tag a scelta multipla**: consente alle recensioni di selezionare più tag all'interno di un gruppo. Questi tipi di tag vengono visualizzati come caselle di controllo.
 
 ## <a name="tag-structure"></a>Struttura tag
 
-Oltre ai tipi di tag, è possibile usare la struttura di organizzazione dei tag nel pannello tag per rendere più intuitivo il tagging dei documenti. I tag sono raggruppati per sezioni. La ricerca di set di recensioni supporta la possibilità di eseguire ricerche in base al tag e alla sezione tag. Ciò significa che è possibile creare una ricerca di insieme da rivedere per recuperare i documenti contrassegnati con qualsiasi tag in una sezione.
+Oltre ai tipi di tag, la struttura dell'organizzazione dei tag nel pannello tag può essere usata per rendere più intuitivo l'applicazione di tag ai documenti. I tag sono raggruppati per sezioni. La ricerca dei set di recensioni supporta la possibilità di eseguire ricerche per tag e per sezione tag. Ciò significa che puoi creare una ricerca di set di recensioni per recuperare i documenti contrassegnati con qualsiasi tag in una sezione.
 
-![Sezioni tag nel pannello tag](../media/Tagtypes.png)
+![Sezioni di tag nel pannello tag](../media/TagTypes.png)
 
-I tag possono essere ulteriormente organizzati annidandoli all'interno di una sezione. Ad esempio, se lo scopo è identificare e contrassegnare il contenuto con privilegi, la annidamento può essere usata per chiarire che un utente può contrassegnare un documento come "Privilegiato" e selezionare il tipo di privilegio controllando il tag annidato appropriato.
+Puoi organizzare ulteriormente i tag annidandoli all'interno di una sezione. Ad esempio, se lo scopo è identificare e contrassegnare il contenuto con privilegi, è possibile utilizzare la annidamento per chiarire che un revisore può contrassegnare un documento come "privilegiato" e selezionare il tipo di privilegio controllando il tag annidato appropriato.
 
-![Tag annidati all'interno di una sezione tag](../media/Nestingtags.png)
+![Tag annidati all'interno di una sezione tag](../media/NestingTags.png)
+
+## <a name="create-tags"></a>Creare tag
+
+Prima di applicare tag ai documenti nel set di revisioni, è necessario creare una struttura di tag.
+
+1. Aprire un set di revisioni e passare alla barra dei comandi e selezionare **Tag per query.**
+
+2. Nel pannello di tagging seleziona **Gestisci opzioni tag**
+
+3. Seleziona **Aggiungi sezione tag.**
+
+4. Digitare il titolo di un gruppo di tag e una descrizione facoltativa e quindi fare clic su **Salva.**
+
+5. Seleziona il menu a discesa con tre puntini accanto al titolo del gruppo di tag e fai clic **sulla casella di** controllo Aggiungi o sul pulsante di opzione **Aggiungi.**
+
+6. Digitare un nome e una descrizione per la casella di controllo o il pulsante di opzione.
+
+7. Ripeti questo processo per creare nuove sezioni di tag, opzioni di tag e caselle di controllo.
+
+   ![Configurare la struttura dei tag](../media/ManageTagOptions3.png)
 
 ## <a name="applying-tags"></a>Applicazione di tag
 
-Esistono diversi modi per applicare un tag al contenuto.
+Con la struttura dei tag impostata, i revisori possono applicare tag ai documenti di un set di revisioni. Esistono due modi diversi per applicare i tag:
 
-### <a name="tagging-a-single-document"></a>Applicazione di tag a un singolo documento
+- Tag file
 
-Quando si visualizza un documento in un insieme di revisioni, è possibile visualizzare i tag che possono essere utilizzati da una revisione facendo clic sul **pannello Tagging.**
+- Tag per query
 
-![Fare clic sul pannello Tag per visualizzare il pannello tag](../media/Singledoctag.png)
+### <a name="tag-files"></a>Tag file
 
-In questo modo sarà possibile applicare tag al documento visualizzato nel visualizzatore.
+Indipendentemente dal fatto che si selezioni un singolo elemento o più elementi in un set di revisioni, è possibile applicare tag alla selezione facendo clic su **Tag file** nella barra dei comandi. Nel pannello di tagging puoi selezionare un tag e applicarlo automaticamente ai documenti selezionati.
 
-### <a name="bulk-tagging"></a>Aggiunta di tag in blocco
-
-Il tagging in blocco può essere eseguito selezionando più file nella griglia dei risultati e quindi usando i tag nel pannello Tagging in modo simile al **tagging** di singoli documenti. L'annullamento del tagging in blocco può essere eseguito selezionando i tag due volte. Il primo clic applica il tag e la seconda selezione garantisce che il tag sia cancellato per tutti i file selezionati.
-
-![Screenshot della descrizione di un telefono cellulare generata automaticamente](../media/Bulktag.png)
+![Contrassegnare i file selezionati](../media/TagFile2.png)
 
 > [!NOTE]
-> Quando si esegue il tagging in blocco, il pannello di tagging visualizza un conteggio dei file contrassegnati per ogni tag nel pannello.
+> I tag verranno applicati solo agli elementi selezionati nell'elenco di elementi.
 
-### <a name="tagging-in-other-review-panels"></a>Aggiunta di tag in altri pannelli delle recensioni
+### <a name="tag-by-query"></a>Tag per query
 
-Durante la revisione dei documenti, è possibile utilizzare gli altri pannelli delle revisioni per esaminare altre caratteristiche dei documenti nella griglia dei risultati. Ciò include la revisione di altri documenti correlati, thread di posta elettronica, quasi duplicati e duplicati hash. Ad esempio, quando si rivendono documenti  correlati (utilizzando il riquadro revisione della famiglia di documenti), è possibile ridurre significativamente i tempi di revisione contrassegnando in blocco i documenti correlati. Ad esempio, se un messaggio di posta elettronica contiene diversi allegati e si desidera garantire che l'intera famiglia sia contrassegnata in modo coerente.
+L'applicazione di tag tramite query consente di applicare tag a tutti gli elementi visualizzati da una query di filtro attualmente applicata nel set di revisioni.
 
-Ad esempio, ecco come visualizzare il pannello **Tagging** quando si usa il pannello **Revisione famiglia** di documenti:
+1. Deselezionare tutti gli elementi nel set di revisione e passare alla barra dei comandi e selezionare **Contrassegna per query**.
 
-1. Con il riquadro delle revisioni aperto per un documento selezionato(ad  esempio, visualizzando l'elenco dei contenuti correlati nel riquadro revisione della famiglia di documenti, fare clic su Tag **documenti** nel riquadro di revisione della famiglia di documenti.
+2. Nel riquadro di tagging seleziona il tag che vuoi applicare.
 
-   Il riquadro di tagging viene visualizzato come finestra popup.
+3. **Nell'elenco a discesa Selezione tag** sono disponibili tre opzioni che determinano a quali elementi applicare il tag.
 
-2. Scegliere uno o più tag per applicare il documento selezionato. 
+   - **Elementi che corrispondono a query applicata**: applica tag a elementi specifici che soddisfano le condizioni della query di filtro.
 
-3. Per contrassegnare tutti i documenti, selezionare tutti i documenti nel riquadro Famiglia di documenti, fare clic su Tag documenti e quindi scegliere i tag da applicare all'intera famiglia di documenti. 
+   - **Includi elementi famiglia associati**: applica tag a elementi specifici che soddisfano le condizioni della query di filtro e gli elementi della famiglia associati. *Gli elementi della* famiglia sono elementi che condividono lo stesso valore di metadati FamilyId.  
 
-![Screenshot di un post di social media Descrizione generata automaticamente](../media/Relatedtag.png)
+   - **Includi elementi di conversazione associati**: applica tag agli elementi che soddisfano le condizioni di query del filtro e agli elementi di conversazione associati. *Gli elementi di* conversazione sono elementi che condividono gli stessi valori dei metadati ConversationId.
+
+   ![Selezione tag](../media/TagByQuery2.png)
+
+4. Fare **clic su Avvia processo di tagging** per attivare il processo di tagging.
+
+## <a name="tag-filter"></a>Filtro tag
+
+Utilizzare il filtro tag nel set di revisione per trovare o escludere rapidamente elementi dai risultati della query in base alla modalità di applicazione di tag a un elemento. 
+
+1. Seleziona **Filtri** per espandere il pannello dei filtri.
+
+2. Selezionare ed espandere **Proprietà elemento**.
+
+3. Scorrere verso il basso per trovare il filtro denominato **Tag,** selezionare la casella di controllo e quindi fare clic su **Fine.**
+
+4. Per includere o escludere elementi con un tag specifico da una query, eseguire una delle operazioni seguenti:
+
+   - **Includi elementi:** seleziona il valore del tag e seleziona Uguale a **uno qualsiasi** nel menu a discesa.
+
+      Oppure
+
+   - **Escludi** elementi : seleziona il valore del tag e seleziona Uguale **a nessuno nel** menu a discesa.
+
+     ![Elementi di esclusione filtro tag](../media/TagFilterExclude.png)
+
+> [!NOTE]
+> Assicurati di aggiornare la pagina per assicurarti che il filtro tag visualizzi le modifiche più recenti alla struttura dei tag.

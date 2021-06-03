@@ -22,12 +22,12 @@ ms.custom:
 description: Gli amministratori possono scoprire come l'eliminazione automatica di zero ore (ZAP) può spostare retroattivamente i messaggi recapitati in una cassetta postale di Exchange Online nella cartella Posta indesiderata o in quarantena che si trovano retroattivamente come posta indesiderata o phishing.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee5a3fee8e189ff9cc08f187971e728670766d6d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9612f6267a0786b6f81f1c9a3f2ac270e344d0a8
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684196"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730679"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Eliminazione automatica a zero ore (ZAP) in Exchange Online
 
@@ -72,6 +72,12 @@ Per **i** messaggi letti o non letti identificati come phishing dopo il recapito
 Per impostazione predefinita, ZAP per il phishing è abilitato nei  criteri di protezione da posta indesiderata e l'azione predefinita per il verdetto Filtro posta elettronica di phishing è **Messaggio** di quarantena, il che significa che ZAP per il phishing quarantena il messaggio per impostazione predefinita.
 
 Per ulteriori informazioni sulla configurazione dei verdetti di filtro della posta indesiderata, vedere [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+
+### <a name="zap-for-high-confidence-phishing"></a>ZAP per phishing ad alta probabilità 
+
+Per **i messaggi letti o non** letti identificati come phishing ad alta probabilità dopo il recapito, ZAP metta in quarantena il messaggio. Solo gli amministratori possono visualizzare e gestire i messaggi di phish ad alta probabilità dalla quarantena. 
+
+ZAP per il phish ad alta probabilità è abilitato per impostazione predefinita. Per ulteriori informazioni, vedere [Secure by Default in Office 365](secure-by-default.md).
 
 ### <a name="zap-for-spam"></a>ZAP per la posta indesiderata
 
@@ -119,6 +125,6 @@ ZAP funziona ancora finché il messaggio non è stato eliminato o finché l'azio
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>In che modo ZAP influisce sulle cassette postali in attesa?
 
-ZAP non mettere in quarantena i messaggi dalle cassette postali in attesa. ZAP può spostare i messaggi nella cartella Posta indesiderata in base all'azione configurata per un verdetto di posta indesiderata o phishing nei criteri di protezione da posta indesiderata.
+ZAP mettere in quarantena i messaggi dalle cassette postali in attesa. ZAP può spostare i messaggi nella cartella Posta indesiderata in base all'azione configurata per un verdetto di posta indesiderata o phishing nei criteri di protezione da posta indesiderata.
 
 Per ulteriori informazioni sui blocchi in Exchange Online, vedere Blocco sul posto e [conservazione per controversia legale in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).

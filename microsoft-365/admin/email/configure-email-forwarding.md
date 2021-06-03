@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: L'inoltro della posta elettronica consente di inoltrare i messaggi di posta elettronica inviati a una Microsoft 365 utente a un'altra cassetta postale all'interno o all'esterno dell'organizzazione.
-ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: dfea738f5d786b6e476dd02dc92fd0aef452d62f
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698917"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730139"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurare l'inoltro della posta elettronica in Microsoft 365
 
@@ -57,7 +57,16 @@ Per eseguire questa Microsoft 365, è necessario essere un amministratore Exchan
 
 4. Nella pagina inoltro della posta elettronica, selezionare Inoltra tutti i messaggi di posta elettronica inviati a questa cassetta **postale,** immettere l'indirizzo di inoltro e scegliere se si desidera conservare una copia dei messaggi di posta elettronica inoltrati. Se non vedi questa opzione, assicurati che all'account utente sia assegnata una licenza. Selezionare **Salva modifiche**.
 
-    **Per inoltrare a più indirizzi di** posta elettronica, è possibile chiedere all'utente di configurare una regola in Outlook inoltrare agli indirizzi. Per ulteriori informazioni, vedere [Use rules to automatically forward messages](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+    **Per inoltrare a più indirizzi di** posta elettronica, è possibile chiedere all'utente di configurare una regola in Outlook inoltrare agli indirizzi. 
+    
+    1.  Aprire **Regole home** di Outlook  >    >   **>** **Selezionare Gestisci regole & avvisi**
+    1. Selezionare **Nuova regola** Selezionare Applica regola al messaggio ricevuto che si trova nella parte inferiore dell'elenco, quindi fare clic su  >   **Avanti.**
+    1. Fare **clic su Sì** quando richiesto Questa regola verrà applicata a ogni messaggio ricevuto. 
+    1. Nell'elenco successivo selezionare le azioni **reindirizzarlo a utenti o gruppi pubblici** e interrompere **l'elaborazione di altre regole**
+    1. Fare clic sulla frase sottolineata **persone o gruppi pubblici** nella parte inferiore della finestra.
+    1. Digitare **l'indirizzo di posta** elettronica a cui inoltrare la posta nel campo A, quindi fare clic su **OK.**
+    1. Seleziona **Fine**
+    
 
      Oppure, nell'interfaccia di amministrazione, crea un gruppo di [distribuzione,](add-user-or-contact-to-distribution-list.md)aggiungi gli indirizzi e quindi configura l'inoltro in modo che punti [alla](../setup/create-distribution-lists.md)DL usando le istruzioni in questo articolo.
 

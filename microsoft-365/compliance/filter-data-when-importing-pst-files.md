@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
-description: Informazioni su come filtrare i dati utilizzando la funzionalità di importazione intelligente nel servizio di importazione Office 365 quando si importano file PST in Office 365.
-ms.openlocfilehash: fb978332f70495044a457147d29d8cdcf1194264
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+description: Informazioni su come filtrare i dati utilizzando la funzionalità di importazione intelligente nel servizio Microsoft 365 importazione quando si importano file PST in Microsoft 365.
+ms.openlocfilehash: fc89467e3ea9c0af86ec6b9ef6a9d7d61079e116
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684058"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730571"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrare i dati durante l'importazione dei file PST
 
-Utilizzare la nuova funzionalità di importazione intelligente nel servizio di importazione Office 365 per filtrare gli elementi nei file PST che vengono effettivamente importati nelle cassette postali di destinazione. Tenere presente quanto segue:
+Utilizzare la nuova funzionalità importazione intelligente nel servizio di importazione Microsoft 365 per filtrare gli elementi nei file PST che vengono effettivamente importati nelle cassette postali di destinazione. Tenere presente quanto segue:
   
 - Dopo aver creato e inviato un processo di importazione PST, i file PST vengono caricati in un'area di archiviazione di Azure nel cloud Microsoft.
   
@@ -66,7 +66,7 @@ Dopo aver creato un processo di importazione PST, eseguire la procedura seguente
   
 1. Passare a <https://compliance.microsoft.com> e accedere con le credenziali di un account amministratore dell'organizzazione.
     
-2. Nel riquadro sinistro del Centro Microsoft 365 conformità fare clic su **Importa governance** \> **delle informazioni**.
+2. Nel riquadro sinistro del Centro conformità Microsoft 365 fare clic su **Governance delle informazioni** \> **Importa**.
     
     I processi di importazione per l'organizzazione sono elencati nella **scheda** Importa. Il **valore Analisi** completata nella colonna **Stato** indica i processi di importazione analizzati da Microsoft 365 e pronti per l'importazione.
     
