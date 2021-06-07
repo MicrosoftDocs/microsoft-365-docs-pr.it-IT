@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Come distribuire team con la protezione dei dati sensibili.
-ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583653"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788343"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurare team con la protezione dei dati sensibili
 
@@ -33,6 +33,13 @@ Questo articolo illustra la configurazione di un team per un livello di protezio
 - Un'etichetta di riservatezza per il team che consente di attivare o disattivare la condivisione guest e limitare l'accesso al contenuto di SharePoint al solo Web per i dispositivi non gestiti. L'etichetta può essere usata anche per classificare i file.
 - Tipo di collegamento di condivisione predefinito più restrittivo
 - Solo i proprietari del team possono creare canali privati.
+
+## <a name="video-demonstration"></a>Dimostrazione video
+
+Guardare questo video per una procedura dettagliata con le procedure descritte in questo articolo.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NMS6]
 
 ## <a name="guest-sharing"></a>Condivisione con gli utenti guest
 

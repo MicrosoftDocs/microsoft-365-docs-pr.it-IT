@@ -1,5 +1,5 @@
 ---
-title: "Passaggio 6: formare i lavoratori remoti e rispondere al feedback sull'utilizzo"
+title: "Passaggio 6: formare i lavoratori e rispondere al feedback sull'utilizzo"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Formare gli utenti e garantire che i problemi vengano gestiti in modo rapido.
-ms.openlocfilehash: 66091269e4bb4844456feac1b8cfa28718b0ca36
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: b6581533983c2e00ab8b29d73326deebda52599f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028928"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788824"
 ---
-# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Passaggio 6: formare i lavoratori remoti e rispondere al feedback sull'utilizzo
+# <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Passaggio 6: formare i lavoratori e rispondere al feedback sull'utilizzo
 
-Formare i lavoratori remoti su:
+Formare i lavoratori ibridi su:
 
 - Corrette procedure di accesso tramite MFA, inclusa la registrazione di un metodo di verifica aggiuntivo.
 - Uso dei dispositivi e modo in cui è possibile usare i criteri di gestione degli endpoint per bloccare l'accesso per dispositivi non conformi o non gestiti.
@@ -38,15 +38,15 @@ Formare i lavoratori remoti su:
 
 Questa formazione dovrebbe includere esercizi pratici in modo che i lavoratori possano sperimentare queste funzionalità e i loro risultati.
 
-Creare un forum in cui i lavoratori remoti possono fare domande o risolvere i problemi, ad esempio un team o un gruppo di Yammer.
+Creare un forum in cui i lavoratori possono fare domande o risolvere i problemi, ad esempio un team o un gruppo di Yammer.
 
 Nelle settimane successive alla formazione:
 
-- Rispondere rapidamente ai feedback dei lavoratori remoti nel forum e correggere i criteri e le configurazioni dei lavoratori remoti, se necessario.
+- Rispondere rapidamente ai feedback dei lavoratori nel forum e correggere i criteri e le configurazioni dei lavoratori, se necessario.
 - Analizzare l'utilizzo di Teams, posta elettronica, siti di SharePoint e cartelle di OneDrive e confrontarlo con le aspettative di adozione degli utenti.
 
 Ripetere quindi la formazione degli utenti se necessario.
 
 ## <a name="results-of-step-6"></a>Risultati del Passaggio 6
 
-I lavoratori remoti hanno ricevuto la formazione e hanno a disposizione un forum aperto e reattivo per fornire feedback e pubblicare problemi con accesso remoto e app di produttività.
+I lavoratori ibridi hanno ricevuto la formazione e hanno a disposizione un forum aperto e reattivo per fornire feedback e pubblicare problemi con sicurezza, conformità, accesso remoto e app di produttività.
