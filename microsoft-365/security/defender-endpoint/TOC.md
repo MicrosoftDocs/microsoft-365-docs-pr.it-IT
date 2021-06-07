@@ -244,17 +244,14 @@
 
 ### [Riduzione della superficie di attacco]()
 #### [Panoramica della riduzione della superficie di attacco](overview-attack-surface-reduction.md)
-#### [Rilevare regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
-#### [Impostazioni di configurazione della riduzione delle superficie di attacco](configure-attack-surface-reduction.md)
-#### [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction-faq.md)
-
-#### [Controlli per la riduzione della superficie d'attacco]()
-##### [Regole per la riduzione della superficie di attacco](attack-surface-reduction.md)
-##### [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
-##### [Personalizzare regole per la riduzione della superficie di attacco](customize-attack-surface-reduction.md)
-##### [Visualizzare eventi per la riduzione della superficie di attacco](event-views.md)
-
-#### [Usare la modalità di controllo](audit-windows-defender.md)
+#### [Configurare le funzionalità per la riduzione della superficie di attacco](configure-attack-surface-reduction.md)
+#### [Informazioni sulle regole per la riduzione della superficie di attacco](attack-surface-reduction.md)
+#### [Valutare le regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
+#### [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
+#### [Personalizzare regole per la riduzione della superficie di attacco](customize-attack-surface-reduction.md)
+#### [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction-faq.md)
+#### [Visualizzare eventi per la riduzione della superficie di attacco](event-views.md)
+#### [Usare la modalità di controllo per la riduzione della superficie di attacco](audit-windows-defender.md)
 
 ### Protezione di nuova generazione
 #### [Panoramica di Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
@@ -592,6 +589,13 @@
 ###### [Rilevazione avanzata con Python](run-advanced-query-sample-python.md)
 ###### [Rilevazione avanzata con PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Uso di query OData](exposed-apis-odata-samples.md)
+
+
+#### [API di streaming di dati non elaborati]()
+##### [Streaming di dati non elaborati](raw-data-export.md)
+##### [Trasmettere eventi di rilevazione avanzata all'hub Eventi di Azure](raw-data-export-event-hub.md)
+##### [Trasmettere eventi di rilevazione avanzata agli account di archiviazione](raw-data-export-storage.md)
+
 
 #### [Integrazione SIEM]()
 ##### [Informazioni sui concetti di Threat Intelligence](threat-indicator-concepts.md)
