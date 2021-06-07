@@ -20,12 +20,12 @@ description: Gli amministratori possono conoscere la protezione dalle minacce in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: ac90aa853769b239386d422e0b196a1f6140bf95
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696551"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793197"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -101,45 +101,57 @@ Per ulteriori informazioni sulle impostazioni consigliate per l'antimalware, ved
 
    Al termine, scegliere **Salva**.
 
-4. Tornare al riquadro a comparsa dei dettagli del criterio, fare clic su **Chiudi.**
+4. Tornare al riquadro a comparsa dei dettagli sui criteri, fare clic su **chiudi**.
 
 Per istruzioni dettagliate sulla configurazione dei criteri antimalware, vedere [Configure anti-malware policies in EOP.](configure-anti-malware-policies.md)
 
-## <a name="part-2---anti-phishing-protection"></a>Parte 2 - Protezione anti-phishing
+## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>Parte 2 - Protezione anti-phishing in EOP e Defender per Office 365
 
 [La protezione anti-phishing](anti-phishing-protection.md) è disponibile nelle sottoscrizioni che includono [EOP.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) La protezione anti-phishing avanzata è disponibile in [Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-La procedura seguente descrive come configurare un criterio anti-phishing in Microsoft Defender per Office 365. I passaggi sono simili per la configurazione di un criterio anti-phishing in EOP.
+Per ulteriori informazioni sulle impostazioni consigliate per i criteri anti-phishing, vedere Impostazioni dei criteri [anti-phishing EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) e Impostazioni dei criteri [anti-phishing in Microsoft Defender per Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere Criteri di **gestione** delle minacce \>  \> **Anti-phishing.**
+La procedura seguente descrive come configurare il criterio anti-phishing predefinito. Impostazioni disponibili solo in Defender per Office 365 sono chiaramente contrassegnati.
 
-2. Fare **clic su Criterio predefinito.**
+1. Aprire <https://security.microsoft.com/antiphishing> .
 
-3. Nella sezione **Rappresentazione** fare clic **su Modifica** e quindi specificare le impostazioni seguenti:
+2. Nella pagina **Anti-phishing** selezionare il criterio **denominato Office365 AntiPhish Default (Default)** facendo clic sul nome.
 
-   - Nella scheda **Aggiungi utenti da proteggere** attivare *la* protezione. Aggiungi quindi gli utenti, ad esempio i membri del consiglio di amministrazione dell'organizzazione, il CEO, il CFO e altri dirigenti senior. È possibile digitare un singolo indirizzo di posta elettronica oppure fare clic per visualizzare un elenco.
+3. Nel riquadro a comparsa dei dettagli del criterio visualizzato configurare le impostazioni seguenti:
 
-   - Nella scheda **Aggiungi domini da proteggere** attivare Includi **automaticamente i domini di cui sono proprietario.** Se si dispone di domini personalizzati, aggiungerli ora.
+   - **Soglia di & di phishing:** fare **clic** su Modifica impostazioni  di protezione e configurare le impostazioni seguenti nel riquadro a comparsa Modifica impostazioni di protezione che si apre:
+     - **Soglia posta elettronica di phishing**: selezionare <sup>\*</sup> **2 - Aggressivo** (Standard) o **3 - Più aggressivo** (rigido).
+     - **Sezione Rappresentazione:** <sup>\*</sup> configurare i valori seguenti:
+       - Selezionare Consenti agli utenti di proteggere, fare clic sul collegamento Gestisci **(nn)** mittenti visualizzato e quindi aggiungere mittenti interni ed esterni per proteggere dalla rappresentazione, ad esempio i membri del consiglio di amministrazione dell'organizzazione, il CEO, il CFO e altri dirigenti senior.
+       - Selezionare **Abilita domini per proteggere** e quindi configurare le impostazioni seguenti visualizzate:
+         - Selezionare **Includi domini di cui sono proprietario** per proteggere i mittenti interni nei domini accettati (visibili facendo clic su Visualizza i **miei** domini ) dalla rappresentazione.
+         - Per proteggere i mittenti in altri domini, selezionare Includi domini **personalizzati,** fare clic sul collegamento Gestisci **(nn)** domini personalizzati visualizzato e quindi aggiungere altri domini per proteggere dalla rappresentazione.
+     - **Sezione Aggiungi mittenti** e domini attendibili : fare clic su Gestisci (nn) mittenti attendibili e domini per configurare le eccezioni del dominio del mittente e del mittente per la protezione della <sup>\*</sup>  rappresentazione, se necessario.
+     - Impostazioni di intelligence delle cassette postali : verificare che siano selezionate le opzioni Abilita intelligence cassetta postale e Abilita intelligence per la protezione <sup>\*</sup> **della rappresentazione.** 
+     - **Sezione Spoof:** verificare che **l'opzione Abilita spoof intelligence** sia selezionata.
 
-   - Nella scheda **Azioni** selezionare Metti **in quarantena** il messaggio sia per l'utente rappresentato che per le opzioni del dominio **rappresentato.**  Inoltre, attiva i suggerimenti per la sicurezza per la rappresentazione.
+     Al termine, scegliere **Salva**.
 
-   - Nella scheda **Mailbox intelligence,** verificare che l'intelligence delle cassette postali sia attivata e attivare la protezione della rappresentazione basata sull'intelligence delle cassette postali. Nell'elenco Se il messaggio di posta elettronica viene inviato da **un utente rappresentato,** scegliere **Metti in quarantena il messaggio**.
+   - **Sezione** Azioni: fare **clic su Modifica**  azioni e configurare le impostazioni seguenti nel riquadro a comparsa Modifica azioni visualizzato:
+     - **Sezione Azioni** messaggio: configurare le impostazioni seguenti:
+       - **Se il messaggio viene rilevato come utente rappresentato:** <sup>\*</sup> selezionare Metti in quarantena il **messaggio**.
+       - **If message is detected as an impersonated domain** <sup>\*</sup> : Select Quarantine the **message**.
+       - **If mailbox intelligence detects an impersonated user** <sup>\*</sup> : Select Move message to the **recipients' Junk Email folders** (Standard) or Quarantine the **message** (Strict).
+       - **If message is detected as spoof**: Select Move message to the **recipients' Junk Email folders** (Standard) or Quarantine the **message** (Strict).
+     - **Sezione Suggerimenti per &** sicurezza: configurare le impostazioni seguenti:
+       - **Show user impersonation suggerimento per la sicurezza** <sup>\*</sup> : Select (turn on).
+       - **Show domain impersonation suggerimento per la sicurezza** <sup>\*</sup> : Select (turn on).
+       - **Show user impersonation unusual characters suggerimento per la sicurezza** <sup>\*</sup> : Select (turn on).
+       - **Show (?) for unauthenticated senders for spoof**: Select (turn on).
+       - **Mostra tag "via":** seleziona (attiva) se questa impostazione è disponibile.
 
-   - Nella scheda **Aggiungi mittenti e domini** attendibili specificare eventuali mittenti o domini attendibili che si desidera aggiungere.
+     Al termine, scegliere **Salva**.
 
-   - **Salva** nella **scheda Rivedi le impostazioni** dopo aver esaminato le impostazioni.
+   <sup>\*</sup>Questa impostazione è disponibile solo in Defender per Office 365.
 
-4. Nella sezione **Spoof** fare clic **su Modifica** e quindi specificare le impostazioni seguenti:
+4. Fare **clic su** Salva e quindi su **Chiudi**
 
-   - Nella scheda **Impostazioni filtro spoofing** verificare che la protezione anti-spoofing sia attivata.
-
-   - Nella scheda **Azioni** scegliere Metti **in quarantena il messaggio.**
-
-   - **Salva** nella **scheda Rivedi le impostazioni** dopo aver esaminato le modifiche. Se non sono state apportate modifiche, **annulla**.
-
-5. Chiudere la pagina delle impostazioni dei criteri predefinite.
-
-Per ulteriori informazioni sulle opzioni dei criteri anti-phishing, vedere [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+Per istruzioni dettagliate sulla configurazione dei criteri anti-phishing, vedere [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) e [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>Parte 3 - Protezione da posta indesiderata in EOP
 
@@ -147,15 +159,13 @@ Per ulteriori informazioni sulle impostazioni consigliate per la protezione da p
 
 1. Aprire <https://security.microsoft.com/antispam> .
 
-2. Nella pagina **Criteri di protezione** da posta indesiderata selezionare nell'elenco il criterio denominato Criterio di protezione da posta indesiderata **in** ingresso facendo clic sul nome.
+2. Nella pagina **Criteri di protezione** da posta indesiderata selezionare nell'elenco il criterio denominato Criterio di protezione da posta indesiderata in ingresso **(predefinito)** facendo clic sul nome.
 
-3. Nel riquadro a comparsa dei dettagli del criterio visualizzato, fare clic **su** Modifica la soglia e le proprietà della posta indesiderata nella sezione Soglia di posta elettronica in blocco & proprietà di **posta indesiderata.**
+3. Nel riquadro a comparsa dei dettagli del criterio visualizzato eseguire la procedura seguente:
+   - **Soglia di posta elettronica in blocco & proprietà della posta indesiderata:** fare clic **su Modifica soglia e proprietà della posta indesiderata**. Nel riquadro **a comparsa della soglia e delle** proprietà della posta indesiderata visualizzato, imposta il valore di **Soglia** posta elettronica in blocco su 5 (Strict) o 6 (Standard). Al termine, scegliere **Salva**.
+   - **Sezione Mittenti e domini consentiti e** bloccati: esaminare o modificare i mittenti consentiti e i domini consentiti.
 
-4. Nel riquadro **a comparsa della soglia e delle** proprietà della posta indesiderata visualizzato, imposta il valore di **Soglia** posta elettronica in blocco su 5 (Strict) o 6 (Standard). Al termine, fare clic su **Salva**
-
-5. Tornare al riquadro a comparsa dei  dettagli del criterio, passare alla sezione Mittenti e domini consentiti e bloccati ed esaminare o modificare i mittenti consentiti e i domini consentiti.
-
-6. Al termine, fare clic su **Chiudi**.
+4. Al termine, fare clic su **Chiudi**.
 
 Per istruzioni dettagliate sulla configurazione dei criteri di protezione da posta indesiderata, vedere [Configure anti-spam policies in EOP.](configure-your-spam-filter-policies.md)
 

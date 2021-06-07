@@ -19,12 +19,12 @@ description: Gli amministratori possono imparare a usare i criteri di spoof inte
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 821488f79186e1b5c306b587764377989346eea5
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530887"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793209"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Gestire i mittenti contraffatti utilizzando i criteri di spoof intelligence e informazioni di spoof intelligence in EOP
 
@@ -45,7 +45,7 @@ Il criterio di **spoof intelligence** predefinito (e solo) garantisce che i mess
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>.
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>.
   - Per passare direttamente alla pagina **Impostazioni protezione da** posta indesiderata per il criterio di spoofing intelligence, utilizzare <https://protection.office.com/antispam> .
   - Per passare direttamente alla pagina **Dashboard di sicurezza** per le informazioni di spoofing intelligence, utilizzare <https://protection.office.com/searchandinvestigation/dashboard> .
 
@@ -69,7 +69,7 @@ Il criterio di **spoof intelligence** predefinito (e solo) garantisce che i mess
   - [Configurare i criteri anti-phishing in EOP](configure-anti-phishing-policies-eop.md).
   - [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md).
 
-- Per le impostazioni consigliate per spoof intelligence, vedere [Impostazioni dei criteri anti-phishing predefiniti di EOP.](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)
+- Per le impostazioni consigliate per spoof intelligence, vedere [Impostazioni dei criteri anti-phishing EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)
 
 ## <a name="manage-spoofed-senders"></a>Gestire mittenti contraffatti
 
@@ -96,7 +96,7 @@ Esistono due modi per consentire e bloccare i mittenti contraffatti:
    - **Domini:** mittenti che effettuano spoofing degli utenti nei domini interni.
    - **Domini esterni:** mittenti che effettuano lo spoofing di utenti in domini esterni.
 
-5. Fare ![ clic ](../../media/scc-expand-icon.png) sull'icona Espandi nella colonna Consenti **spoofing?** . Scegliere **Sì** per consentire il mittente contraffatto oppure **No** per contrassegnare il messaggio come contraffatto. L'azione è controllata dal criterio anti-phishing predefinito o dai criteri anti-phishing personalizzati (il valore predefinito è Sposta il messaggio **nella cartella Posta indesiderata**). Per ulteriori informazioni, vedere [Spoofing settings in anti-phishing policies.](set-up-anti-phishing-policies.md#spoof-settings)
+5. Fare ![ clic ](../../media/scc-expand-icon.png) sull'icona Espandi nella colonna Consenti **spoofing?** . Scegliere **Sì** per consentire il mittente contraffatto oppure **No** per contrassegnare il messaggio come contraffatto. L'azione è controllata dal criterio anti-phishing predefinito o dai criteri anti-phishing personalizzati (il valore predefinito è Sposta il messaggio **nella cartella Posta indesiderata**). Per altre informazioni, vedere [Impostazioni di spoofing nei criteri anti-phishing](set-up-anti-phishing-policies.md#spoof-settings).
 
    ![Screenshot che mostra il riquadro a comparsa dei mittenti contraffatti e se il mittente è autorizzato a effettuare lo spoofing](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 

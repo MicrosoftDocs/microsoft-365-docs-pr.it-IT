@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: pre-lavorare quando si esegue il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a Office 365 servizi nella nuova area data center tedesca.'
-ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5eefa56b96eb616c694b26c374b235ccd95c3ee9
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770379"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796019"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Attività di pre-migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -201,7 +201,7 @@ Se si usa un servizio di terze parti o app line-of-business integrate con Office
 Se si utilizza la stessa partizione di identità di Azure Active Directory per Office 365 e Microsoft Azure nell'istanza di Microsoft Cloud Deutschland, assicurarsi di prepararsi per la migrazione guidata dal cliente dei servizi Microsoft Azure.
 
 > [!NOTE]
-> La migrazione dei servizi Microsoft Azure potrebbe non essere avviata prima che il tenant di Office 365 raggiunga la fase di migrazione 9 e deve essere completato prima del completamento della fase di migrazione 10.
+> La migrazione dei servizi di Microsoft Azure potrebbe non essere avviata prima che il tenant di Office 365 raggiunga la fase di migrazione 9 e deve essere completata prima dell'avvio della fase 10.
 
 I clienti che usano Office 365 e le risorse di Azure (ad esempio, rete, calcolo e archiviazione) eseguiranno la migrazione delle risorse all'istanza Office 365 services. Questa migrazione è responsabilità del cliente. I post del Centro messaggi segnaleranno l'inizio. La migrazione deve essere completata prima della finalizzazione dell'organizzazione di Azure AD nell'ambiente Office 365 services. Per le migrazioni di Azure, vedere il playbook sulla migrazione di Azure, [Panoramica delle indicazioni per la migrazione per Azure Germania.](https://docs.microsoft.com/azure/germany/germany-migration-main)
 
