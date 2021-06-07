@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Informazioni sul reindirizzamento automatico Office 365 utenti del Centro sicurezza e conformità al Centro Microsoft 365 conformità..
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb667e8f19b26cbe229b3aceffe194a86133c261
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772480"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782838"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Reindirizzare gli utenti Office 365 centro sicurezza e conformità al Centro Microsoft 365 conformità
 
@@ -51,7 +51,7 @@ Per tornare al Centro sicurezza Office 365 conformità (protection.microsoft.com
 1. Accedere al Centro [Microsoft 365 conformità](https://compliance.microsoft.com) come amministratore globale o usando qualsiasi account con autorizzazioni di amministratore di conformità in Azure Active Directory.
 2. Passare **a** Impostazioni  >  **reindirizzamento del Centro conformità**.
 3. Attivare o disattivare l'impostazione Reindirizzamento **automatico**.
-4. Seleziona **Disabilita** e condividi feedback quando richiesto.
+4. Seleziona **Disattiva e** condividi feedback quando richiesto.
 
 Una volta disabilitati, gli utenti non verranno più instradati a compliance.microsoft.com e verranno indirizzati al Centro sicurezza e conformità di Office 365 (protection.microsoft.com). Questa impostazione può essere nuovamente abilitata in qualsiasi momento dagli amministratori globali o di conformità.
 

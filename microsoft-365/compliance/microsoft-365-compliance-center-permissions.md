@@ -1,5 +1,5 @@
 ---
-title: Autorizzazioni nel Centro Microsoft 365 conformità
+title: Autorizzazioni nel Centro conformità Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,14 +11,14 @@ ms.topic: article
 localization_priority: Normal
 description: Informazioni sulla gestione delle autorizzazioni nel Centro Microsoft 365 conformità.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 72575fce5f7d43354715c77016a8f444e539887f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7038863c0cbcaf99cf07072445a3b001e7b8ca0b
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772485"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782850"
 ---
-# <a name="permissions-in-the-microsoft-365-compliance-center"></a>Autorizzazioni nel Centro Microsoft 365 conformità
+# <a name="permissions-in-the-microsoft-365-compliance-center"></a>Autorizzazioni nel Centro conformità Microsoft 365
 
 Il Microsoft 365 conformità è stato aggiornato di recente e ora supporta la gestione diretta delle autorizzazioni per gli utenti che eseguono attività di conformità in Microsoft 365. Questo aggiornamento significa che non sarà più necessario utilizzare il Centro sicurezza & Office 365 conformità per gestire le autorizzazioni per le soluzioni di conformità. Utilizzando la  nuova pagina Autorizzazioni nel Centro conformità di Microsoft 365, è possibile gestire le autorizzazioni per gli utenti per le attività di conformità in funzionalità come la gestione dei dispositivi, la prevenzione della perdita dei dati, eDiscovery, la gestione dei rischi insider, la conservazione e molti altri. Gli utenti possono eseguire solo le attività di conformità a cui si concede esplicitamente l'accesso.
 
@@ -26,7 +26,7 @@ Per visualizzare la scheda Autorizzazioni nel Centro conformità Microsoft 365, 
 
 ![Pagina Autorizzazioni nel Centro Microsoft 365 conformità](../media/m365-compliance-center-permissions.png)
 
-Le autorizzazioni nel Microsoft 365 conformità si basano sul modello di autorizzazioni RBAC (Role-Based Access Control). RBAC è lo stesso modello di autorizzazioni utilizzato dalla maggior parte dei servizi Microsoft 365, quindi se si ha familiarità con la struttura delle autorizzazioni in questi servizi, la concessione delle autorizzazioni nel Centro conformità di Microsoft 365 sarà familiare. È importante ricordare che le autorizzazioni gestite nel centro Microsoft 365 conformità non coprono la gestione di tutte le autorizzazioni necessarie in ogni singolo servizio. Sarà comunque necessario gestire determinate autorizzazioni specifiche del servizio nell'interfaccia di amministrazione per il servizio specifico. Ad esempio, se è necessario assegnare le autorizzazioni per l'archiviazione, il controllo e i criteri di conservazione, è necessario gestire queste autorizzazioni nell'interfaccia di amministrazione di Exchange.
+Le autorizzazioni nel Microsoft 365 conformità si basano sul modello di autorizzazioni RBAC (Role-Based Access Control). RBAC è lo stesso modello di autorizzazioni utilizzato dalla maggior parte dei servizi Microsoft 365, quindi se si ha familiarità con la struttura delle autorizzazioni in questi servizi, la concessione delle autorizzazioni nel Centro conformità di Microsoft 365 sarà familiare. È importante ricordare che le autorizzazioni gestite nel centro Microsoft 365 conformità non coprono la gestione di tutte le autorizzazioni necessarie in ogni singolo servizio. Sarà comunque necessario gestire determinate autorizzazioni specifiche del servizio nell'interfaccia di amministrazione per il servizio specifico. Ad esempio, se è necessario assegnare le autorizzazioni per l'archiviazione, il controllo e i criteri di conservazione di Gestione messaggistica, è necessario gestire queste autorizzazioni nell'interfaccia di amministrazione di Exchange.
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relazione tra membri, ruoli e gruppi di ruoli
 
@@ -55,8 +55,8 @@ I ruoli visualizzati nella sezione **Ruoli di Azure AD** della pagina Autorizzaz
 |**Ruolo con autorizzazioni di lettura per la sicurezza**|Può visualizzare, analizzare e rispondere alle minacce attive a utenti, dispositivi e contenuti di Microsoft 365 ma, a differenza del ruolo di Operatore della sicurezza, non ha le autorizzazioni necessarie per intervenire. Per altre informazioni, vedere [Ruolo con autorizzazioni di lettura per la sicurezza](/azure/active-directory/roles/permissions-reference#security-reader).|
 |**Amministratore della sicurezza**|Può controllare la sicurezza complessiva dell'organizzazione gestendo i criteri di sicurezza, esaminando l'analisi e i report della sicurezza nei prodotti di Microsoft 365 e tenendosi informato sul panorama delle minacce. Per altre informazioni, vedere [Amministratore di sicurezza](/azure/active-directory/roles/permissions-reference#security-administrator).|
 |**Ruolo con autorizzazioni di lettura globali**|La versione di sola lettura del ruolo **Amministratore globale**. Può visualizzare tutte le impostazioni e le informazioni amministrative in Microsoft 365. Per altre informazioni, vedere [Ruolo con autorizzazioni di lettura globali](/azure/active-directory/roles/permissions-reference#global-reader).|
-|**Amministratore della simulazione di attacco**|Creare e gestire tutti gli aspetti della creazione della simulazione di attacco, dell'avvio/pianificazione di una simulazione e della revisione dei risultati della simulazione. Per ulteriori informazioni, vedere [Attack Simulation Administrator.](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)|
-|**Autore payload di attacco**|Crea payload di attacco ma non avviali o pianificali. Per ulteriori informazioni, vedere [Autore payload di attacco.](/azure/active-directory/roles/permissions-reference#attack-payload-author)|
+|**Amministratore della simulazione di attacco**|Può creare e gestire tutti gli aspetti della creazione di simulazioni di attacchi, dell'avvio e della pianificazione di una simulazione e dell'analisi dei risultati della simulazione. Per altre informazioni, vedere [Amministratore della simulazione di attacco](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
+|**Autore payload dell'attacco**|Può payload di attacco, ma non avviarli o pianificarli. Per altre informazioni, vedere [Autore payload dell'attacco](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 
 ## <a name="add-users-to-a-compliance-role-group"></a>Aggiungere utenti a un gruppo di ruoli di conformità

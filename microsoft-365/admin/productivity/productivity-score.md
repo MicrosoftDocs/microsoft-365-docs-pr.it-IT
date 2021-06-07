@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come il punteggio della produttività Microsoft riflette le misurazioni delle persone e delle esperienze tecnologiche e confronta le organizzazioni con dimensioni simili.
-ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: af0e8583bec00b1ddfd62145a4757a4e568108e8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779675"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789040"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio della produttività Microsoft 
 
@@ -53,7 +53,7 @@ I dati sulle esperienze degli utente richiedono un abbonamento a Microsoft 365 f
 > [!NOTE]
 > Non è necessaria una licenza per Workplace Analytics per ottenere le funzionalità del punteggio della produttività.
 
-Il punteggio della produttività è disponibile solo nell'interfaccia di amministrazione di Microsoft 365 e solo i professionisti IT he dispongono dei ruoli seguenti vi possono accedere:  
+Il punteggio della produttività è disponibile solo nell'interfaccia di amministrazione di Microsoft 365 e solo i professionisti IT che dispongono dei seguenti ruoli vi possono accedere:  
 
 - Amministratore globale
 - Amministratori di Exchange
@@ -116,13 +116,13 @@ Per la connettività di rete, il benchmark consigliato è 80 punti.
 
 La sezione **Dettaglio punteggio** include un’analisi dettagliata del punteggio della produttività con benchmark per persona e aree di esperienza con la tecnologia.
 
-La cronologia del punteggi mostra il modo in cui il punteggio di ogni categoria è cambiato negli ultimi 6 mesi.
+La cronologia del punteggio mostra il modo in cui il punteggio di ogni categoria è cambiato negli ultimi sei mesi.
 
-Le aree dell’**esperienze degli utenti** e le **esperienze con la tecnologia** contengono i dati analitici delle categorie in queste aree. È possibile fare clic su ogni categoria per visualizzare i dati analitici.
+Le aree dell'**esperienze degli utenti** e le **esperienze con la tecnologia** contengono i dati analitici delle categorie in queste aree. È possibile selezionare ogni categoria per visualizzare i dati analitici.
 
 ## <a name="category-details-pages"></a>Pagine dettagli categoria
 
-Ogni pagina dei dettagli della categoria illustra le metriche principali e di supporto, oltre a ricerche correlate e azioni che è possibile eseguire per la modifica delle unità nell'organizzazione. La ricerca supporta l'importanza e la logica alla base delle intuizioni primarie per ciascuna categoria. Per altre informazioni, [leggere il report Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Ogni pagina dei dettagli della categoria illustra le metriche principali e di supporto, oltre a ricerche correlate e azioni che è possibile eseguire per la modifica delle unità nell'organizzazione. La ricerca supporta l'importanza e la logica alla base delle intuizioni primarie per ciascuna categoria. Per altre informazioni, [leggere il report Forrester](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb).
 
 Le pagine dei dettagli sono:
 - [Collaborazione sui contenuti: esperienze delle persone](content-collaboration.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: c785dbb759afe77b14f41985b9f451a4ec52e29f
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730632"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778234"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio di valutazione di Microsoft Defender for Endpoint
 
@@ -118,17 +118,17 @@ Il dispositivo verrà automaticamente onboarded nel tenant con i componenti di s
 
 I componenti di sicurezza seguenti sono preconfigurato nei dispositivi di test:
 
-- [Riduzione della superficie di attacco](attack-surface-reduction.md)
-- [Blocco al primo avvistamento](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [Accesso controllato alle cartelle](controlled-folders.md)
-- [Protezione dagli exploit](enable-exploit-protection.md)
-- [Protezione di rete](network-protection.md)
-- [Rilevamento di applicazioni potenzialmente indesiderate](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [Protezione basata sul cloud](cloud-protection-microsoft-defender-antivirus.md)
-- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+- [Riduzione della superficie di attacco](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [Blocco al primo avvistamento](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [Accesso controllato alle cartelle](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [Protezione dagli exploit](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [Protezione di rete](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
+- [Rilevamento di applicazioni potenzialmente indesiderate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [Protezione basata sul cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
-> Antivirus Microsoft Defender sarà attivata (non in modalità di controllo). Se Antivirus Microsoft Defender l'esecuzione della simulazione, puoi disattivare la protezione in tempo reale nel dispositivo tramite Sicurezza di Windows. Per ulteriori informazioni, vedere [Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Antivirus Microsoft Defender sarà attivata (non in modalità di controllo). Se Antivirus Microsoft Defender l'esecuzione della simulazione, puoi disattivare la protezione in tempo reale nel dispositivo tramite Sicurezza di Windows. Per ulteriori informazioni, vedere [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
 Le impostazioni di analisi automatizzate dipendono dalle impostazioni del tenant. Verrà configurata per essere semiautomizzata per impostazione predefinita. Per ulteriori informazioni, vedere [Overview of Automated investigations](automated-investigations.md).
 
@@ -190,7 +190,7 @@ Puoi simulare scenari di attacco usando:
 - Scenari di attacco ["Fai da te"](https://securitycenter.windows.com/tutorials)
 - Simulatori di minacce
 
-È inoltre possibile utilizzare [la ricerca avanzata per](advanced-hunting-overview.md) eseguire query sui dati e [sull'analisi](threat-analytics.md) delle minacce per visualizzare i report sulle minacce emergenti.
+È inoltre possibile utilizzare [la ricerca avanzata per](advanced-hunting-query-language.md) eseguire query sui dati e [sull'analisi](threat-analytics.md) delle minacce per visualizzare i report sulle minacce emergenti.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Scenari di attacco fai-da-te
 Se stai cercando una simulazione predefinita, puoi usare i nostri scenari di attacco "Fai da [te".](https://securitycenter.windows.com/tutorials) Questi script sono sicuri, documentati e facili da usare. Questi scenari rifletteranno le funzionalità di Defender for Endpoint e illustrano l'esperienza di analisi.

@@ -1,5 +1,5 @@
 ---
-title: Informazioni di intelligence spoofing
+title: Dati analitici di spoof intelligence
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.custom:
 description: Gli amministratori possono conoscere le informazioni di spoof intelligence in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37c5bcb6f2c15c3814fafa198f2905e23b12ba01
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 45ecbe68072441b40477d1b27953b957aeffa9e3
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538748"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793173"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informazioni di intelligence di spoofing in EOP
 
@@ -63,7 +63,7 @@ Il resto di questo articolo spiega come usare le informazioni di spoof intellige
 
 > [!NOTE]
 >
-> - Solo i mittenti falsificati rilevati dalla spoof intelligence vengono visualizzati nell'analisi di spoof intelligence. Quando si sostituisce il verdetto consenti o blocca nelle informazioni dettagliate, il mittente falsificato diventa una voce di autorizzazione o blocco manuale che viene visualizzata solo nella scheda **Spoofing** nell'elenco tenant consentiti/bloccati. È inoltre possibile creare manualmente voci consentite o bloccate per i mittenti contraffatti prima che siano rilevate dall'intelligence di spoofing. Per ulteriori informazioni, vedere [Manage the Tenant Allow/Block List in EOP.](tenant-allow-block-list.md)
+> - Solo i mittenti falsificati rilevati dalla spoof intelligence vengono visualizzati nell'analisi di spoof intelligence. Quando si sostituisce il verdetto consenti o blocca nelle informazioni dettagliate, il mittente falsificato diventa una voce di autorizzazione o blocco manuale che viene visualizzata solo nella scheda **Spoofing** nell'elenco tenant consentiti/bloccati. È inoltre possibile creare manualmente voci consentite o bloccate per i mittenti contraffatti prima che siano rilevate dall'intelligence di spoofing. Per altre informazioni, vedere [Gestire il tenant Elenco consentiti/blcocati in EOP](tenant-allow-block-list.md).
 >
 > - Le informazioni di spoof intelligence e la scheda **Spoofing** nell'elenco Tenant Allow/Block sostituiscono le funzionalità del criterio di spoof intelligence disponibile nella pagina dei criteri di protezione da posta indesiderata nel Centro sicurezza & conformità.
 >
@@ -71,7 +71,7 @@ Il resto di questo articolo spiega come usare le informazioni di spoof intellige
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **Anti-phishing,** utilizzare <https://protection.office.com/antiphishing> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Anti-phishing,** utilizzare <https://protection.office.com/antiphishing> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -88,7 +88,7 @@ Il resto di questo articolo spiega come usare le informazioni di spoof intellige
 
 - Abiliti e disabiliti l'intelligence di spoofing nei criteri anti-phishing in EOP e Microsoft Defender per Office 365. L'intelligence di spoofing è abilitata per impostazione predefinita. Per ulteriori informazioni, vedere [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) o [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-- Per le impostazioni consigliate per spoof intelligence, vedere [Impostazioni dei criteri anti-phishing predefiniti di EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)
+- Per le impostazioni consigliate per spoof intelligence, vedere [Impostazioni dei criteri anti-phishing EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Aprire le informazioni dettagliate sulla spoof intelligence nel Centro sicurezza & conformità
 

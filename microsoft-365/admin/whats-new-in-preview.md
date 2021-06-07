@@ -21,12 +21,12 @@ description: 'L Microsoft 365 di amministrazione: informazioni sulle funzionalit
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769079"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779892"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia Microsoft 365 di amministrazione
 
@@ -49,6 +49,18 @@ E se si desidera sapere quali sono le novità con altri servizi cloud Microsoft:
 - [Novità nell'interfaccia SharePoint di amministrazione](/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](/OfficeUpdates/)
 - [Come verificare l'integrità Windows rilascio](/windows/deployment/update/check-release-health)
+
+## <a name="june-2021"></a>Giugno 2021
+
+### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 dell'interfaccia di amministrazione
+
+Abbiamo aggiunto un paio di nuove categorie alla funzionalità di ricerca.
+
+- È ora possibile cercare Microsoft 365 di amministratore nella ricerca globale e visualizzare e gestire rapidamente le assegnazioni di ruolo da qualsiasi pagina. Ad esempio, cercare amministratore **di Intune**.
+
+- È ora possibile trovare esperienze di installazione semplificate tramite la ricerca globale. Questo può aiutare l'utente e il team a iniziare rapidamente a usare le nuove funzionalità. Ad esempio, cercare **imposta password in modo che non scada mai**.
+
+Per ulteriori informazioni sulla ricerca nell'interfaccia di amministrazione, vedere [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).
 
 ## <a name="may-2021"></a>Maggio 2021
 

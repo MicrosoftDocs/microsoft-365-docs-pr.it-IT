@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Altre informazioni sui tipi di spiegazione in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 515fd8af289ec7c64e14eb6d54b236ba3a8aa9f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Altre informazioni sui tipi di spiegazione Elenco frasi, Espressione regolare e Prossimità in Microsoft SharePoint Syntex.
+ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706563"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770866"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Informazioni sui tipi di spiegazione in Microsoft SharePoint Syntex
 
@@ -93,7 +93,7 @@ Questa espressione è costituita da cinque parti, in questo ordine:
 
    b. Numeri da 0 a 9
 
-   c. Punto, trattino basso, percentuale o trattino
+   c. Punto, carattere di sottolineatura, percentuale o trattino
 
 2. Il simbolo @
 
@@ -114,6 +114,15 @@ Per aggiungere un tipo di spiegazione di espressione regolare:
    Quando si aggiunge un'espressione regolare usando un modello, il nome e l'espressione regolare vengono aggiunti automaticamente alla casella di testo. Ad esempio, se si sceglie il modello **Indirizzo di posta elettronica**, il pannello **Crea una spiegazione** verrà popolato.
 
    ![Screenshot che mostra il pannello Crea una spiegazione con il modello Indirizzo di posta elettronica applicato.](../media/content-understanding/create-regular-expression-email.png)
+
+### <a name="limitations"></a>Limitazioni
+
+La tabella seguente mostra le opzioni relative ai caratteri in linea attualmente non disponibili per l'utilizzo nei modelli di espressioni regolari. 
+
+|Opzione  |Stato  |Funzionalità corrente  |
+|---------|---------|---------|
+|Distinzione tra maiuscole e minuscole | Attualmente non supportato. | Per le corrispondenze non viene fatta distinzione tra maiuscole e minuscole.  |
+|Ancoraggi di riga     | Attualmente non supportato. | Non è possibile specificare una posizione specifica in una stringa in cui deve essere trovata una corrispondenza.   |
 
 ## <a name="proximity"></a>Prossimità 
 

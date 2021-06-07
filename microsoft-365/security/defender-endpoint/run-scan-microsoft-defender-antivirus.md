@@ -11,21 +11,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 124ebde48c008743a486a4454e7772fd93f9eca7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fdca059633ab0993e07b5b1be0c6f33cfe327fcf
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275361"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789172"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurare ed eseguire analisi di Microsoft Defender Antivirus su richiesta
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
 
@@ -40,14 +38,12 @@ L'analisi rapida esamina tutti i percorsi in cui potrebbe essere registrato malw
 > [!IMPORTANT]
 > Antivirus Microsoft Defender viene eseguito nel contesto dell'account [LocalSystem](/windows/win32/services/localsystem-account) quando si esegue un'analisi locale. Per le analisi di rete, usa il contesto dell'account del dispositivo. Se l'account del dispositivo di dominio non dispone delle autorizzazioni appropriate per accedere alla condivisione, l'analisi non funzionerà. Assicurati che il dispositivo abbia le autorizzazioni per la condivisione di rete di accesso.
 
-In [](configure-real-time-protection-microsoft-defender-antivirus.md)combinazione con la funzionalità di protezione sempre in tempo reale, che rivede i file quando vengono aperti e chiusi e ogni volta che un utente passa a una cartella, un'analisi rapida consente di fornire una copertura avanzata sia per il malware che inizia con il sistema che con il malware a livello di kernel.  
+In combinazione con la funzionalità di protezione in [tempo](configure-real-time-protection-microsoft-defender-antivirus.md)reale sempre in uso, un'analisi rapida consente di fornire una copertura avanzata sia per il malware che inizia con il sistema che con il malware a livello di kernel. La protezione sempre in tempo reale rivede i file quando vengono aperti e chiusi e ogni volta che un utente passa a una cartella. Per impostazione predefinita, le analisi rapide vengono eseguite su dispositivi rimovibili montati, ad esempio unità USB. Nella maggior parte dei casi, un'analisi rapida è adeguata per individuare malware non raccolto dalla protezione in tempo reale.
 
-Nella maggior parte dei casi, un'analisi rapida è adeguata per individuare malware non raccolto dalla protezione in tempo reale.
+Un'analisi completa può essere utile quando una minaccia malware viene segnalata in un endpoint. L'analisi può identificare se sono presenti componenti inattivi che richiedono una pulizia più approfondita. Tuttavia, Microsoft consiglia in genere di utilizzare analisi rapide anziché analisi complete. Il completamento di un'analisi completa può richiedere alcune ore o giorni, a seconda della quantità e del tipo di dati da analizzare. 
 
-Un'analisi completa può essere utile per gli endpoint che hanno segnalato una minaccia malware. L'analisi può identificare se sono presenti componenti inattivi che richiedono una pulizia più approfondita. Questo è l'ideale se l'organizzazione esegue analisi su richiesta.
-
-> [!NOTE]
-> Per impostazione predefinita, le analisi rapide vengono eseguite su dispositivi rimovibili montati, ad esempio unità USB.
+> [!TIP]
+> Per ulteriori informazioni sulle differenze tra analisi rapida e completa, vedere Analisi rapida e analisi [completa e analisi personalizzata.](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan)
 
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>Utilizzare Microsoft Endpoint Manager per eseguire un'analisi
 

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Le applicazioni e i servizi ricevuti dipendono dal Microsoft 365 prodotto acquistato, ad esempio Microsoft 365 Apps for business.
 ms.date: 07/01/2020
-ms.openlocfilehash: 4e93a84df106475417289da168ca472ed5a07475
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 817ea454bf471fdc2f175658af9030925d29189a
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582729"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779880"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Informazioni su abbonamenti e licenze in Microsoft 365 per le aziende
 
@@ -67,8 +67,6 @@ Non è necessario assegnare licenze a cassette postali di risorse o sale e casse
 - [Creare una cassetta postale condivisa](../../admin/email/create-a-shared-mailbox.md)
 - [Rimuovere una licenza da una cassetta postale condivisa](../../admin/email/remove-license-from-shared-mailbox.md)
 - [Cassette postali condivise in Exchange Online](/exchange/collaboration-exo/shared-mailboxes) per tutti gli altri Microsoft 365 piani.
-- [Creare e gestire cassette postali sala](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [Gestire le cassette postali attrezzatura](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
 
 ## <a name="who-can-assign-licenses"></a>Who assegnare licenze?
 

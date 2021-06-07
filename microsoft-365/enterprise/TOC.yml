@@ -164,13 +164,13 @@
                   href: upgrade-from-office-2010-servers-and-products.md
                 - name: Desktop di Office 2010
                   href: /DeployOffice/endofsupport/office-2010-end-support-roadmap
-                - name: "Exchange\_2010"
+                - name: Exchange 2010
                   href: exchange-2010-end-of-support.md
                 - name: SharePoint 2010
                   href: upgrade-from-sharepoint-2010.md
                 - name: Lync Server 2010
                   href: /skypeforbusiness/plan-your-deployment/upgrade
-                - name: "Project Server\_2010"
+                - name: Project Server 2010
                   href: project-server-2010-end-of-support.md
         - name: Isolamento del tenant in Microsoft 365
           href: microsoft-365-tenant-isolation-overview.md
@@ -405,13 +405,13 @@
               href: upgrade-from-office-2010-servers-and-products.md
             - name: Desktop di Office 2010
               href: /DeployOffice/office-2010-end-support-roadmap
-            - name: "Exchange\_2010"
+            - name: Exchange 2010
               href: exchange-2010-end-of-support.md
             - name: SharePoint 2010
               href: upgrade-from-sharepoint-2010.md
             - name: Lync Server 2010
               href: /skypeforbusiness/plan-your-deployment/upgrade
-            - name: "Project Server\_2010"
+            - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 - name: Conformità
   href: ../compliance/index.yml
@@ -606,6 +606,8 @@
           href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: Gestire i componenti aggiuntivi con la distribuzione centralizzata di PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
+- name: Lab Kit di distribuzione di Windows 10 e Office 365
+  href: modern-desktop-deployment-and-management-lab.md
 - name: Guide all'ambiente di test
   href: m365-enterprise-test-lab-guides.md
   items:

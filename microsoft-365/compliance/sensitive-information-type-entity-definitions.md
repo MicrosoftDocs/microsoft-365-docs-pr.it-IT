@@ -18,17 +18,17 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: La prevenzione della perdita dei dati (DLP) nel Centro sicurezza e conformità include oltre 200 tipi di informazioni riservate pronti per l'uso &amp; nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo.
-ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+description: Sono disponibili 200 tipi di informazioni riservate che possono essere utilizzati nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo.
+ms.openlocfilehash: 4efa411f7cc34b4116cc418e328e5c3f7545f788
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730475"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789220"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
-La prevenzione della perdita dei dati (DLP) nel Centro conformità include molti tipi di informazioni riservate pronti per l'uso nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo. Per ulteriori informazioni sui tipi di informazioni riservate, vedere [Tipi di informazioni riservate](sensitive-information-type-learn-about.md)
+In questo articolo vengono elencate tutte le definizioni di entità del tipo di informazioni riservate. Ogni definizione mostra cosa cerca un criterio DLP per rilevare ogni tipo. Per ulteriori informazioni sui tipi di informazioni riservate, vedere [Tipi di informazioni riservate](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>Numero di routing ABA
 
@@ -147,11 +147,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ### <a name="format"></a>Formato
 
-Undici cifre con trattino
+11 cifre con trattino
 
 ### <a name="pattern"></a>Criterio
 
-Undici cifre con un trattino:
+11 cifre con un trattino:
 - due cifre in 20, 23, 24, 27, 30, 33 o 34
 - un trattino (-)
 - otto cifre
@@ -230,7 +230,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ### <a name="format"></a>Formato
 
-da sei a dieci cifre con o senza un numero di filiale dello stato della banca
+da sei a 10 cifre con o senza un numero di filiale dello stato della banca
 
 ### <a name="pattern"></a>Criterio
 
@@ -573,7 +573,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 10-11 cifre:
 - La prima cifra è compresa nell'intervallo 2-6
-- Nove cifre è una cifra di controllo
+- La nona cifra è una cifra di controllo
 - La decima cifra è la cifra del problema
 - L'undicesima cifra (facoltativa) è il numero singolo
 
@@ -622,8 +622,8 @@ otto o nove caratteri alfanumerici
 
 ### <a name="pattern"></a>Criterio
 
-- una lettera (N, E, D, F, A, C, U, X) seguita da 7 cifre o
-- 2 lettere (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) seguite da 7 cifre.
+- una lettera (N, E, D, F, A, C, U, X) seguita da sette cifre o
+- Due lettere (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) seguite da sette cifre.
 
 ### <a name="checksum"></a>Checksum
 
@@ -2745,7 +2745,17 @@ Varia in base alla provincia
 
 ### <a name="pattern"></a>Criterio
 
-Vari modelli per Alberta, Columbia Britannica, Manitoba, Nuovo Brunswick, Terranova e Labrador, Nuova Scozia, Ontario, Isola del Principe Edoardo, Quebec e Saskatchewan
+Vari modelli che coprono:
+- Alberta
+- British Columbia
+- Manitoba
+- New Brunswick
+- Terranova/Labrador
+- Nova Scotia
+- Ontario
+- Prince Edward Island
+- Québec
+- Saskatchewan
 
 ### <a name="checksum"></a>Checksum
 
@@ -3166,7 +3176,7 @@ Sì
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_canadian_sin restituisce contenuti che corrispondono al modello.
-- Almeno due delle seguenti combinazioni:
+- Almeno due dei modelli seguenti:
     - Viene trovata una parola chiave da Keyword_sin.
     - Viene trovata una parola chiave da Keyword_sin_collaborative.
     - La funzione Func_eu_date rileva una data nel formato corretto.
@@ -3376,7 +3386,7 @@ Da 14 a 16 cifre che possono essere formattate o non formattate (dddddddd) e che
 
 ### <a name="pattern"></a>Criterio
 
-Modello complesso e affidabile che rileva le carte di tutte le principali marche in tutto il mondo, tra cui Visa, MasterCard, Discover Card, JCB, American Express, carte regalo e carte da pranzo.
+Rileva le carte di tutte le principali marche in tutto il mondo, tra cui Visa, MasterCard, Discover Card, JCB, American Express, carte regalo e carte da pranzo.
 
 ### <a name="checksum"></a>Checksum
 
@@ -3835,7 +3845,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 
 ## <a name="croatia-identity-card-number"></a>Numero di carta d'identità della Croazia
-Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFICAZIONE NAZIONALE UE. È disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFICAZIONE NAZIONALE UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
 ### <a name="format"></a>Formato
 
@@ -6349,7 +6359,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="finland-passport-number"></a>Numero di passaporto finlandia
 
-Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di passaporto UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità è disponibile nel tipo di informazioni riservate Numero di passaporto UE ed è disponibile come entità di tipo di informazioni riservate autonoma.
 
 ### <a name="format"></a>Formato
 combinazione di nove lettere e cifre
@@ -6429,7 +6439,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="france-drivers-license-number"></a>Francia - Numero di patente di guida
 
-Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità è disponibile nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
 ### <a name="format"></a>Formato
 
@@ -6688,7 +6698,7 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
    
 ## <a name="france-passport-number"></a>Francia - numero di passaporto
-Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di passaporto UE. È disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità è disponibile nel tipo di informazioni riservate Numero di passaporto UE. È disponibile anche come entità di tipo di informazioni riservate autonomo.
 
 ### <a name="format"></a>Formato
 
@@ -7002,7 +7012,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="germany-drivers-license-number"></a>Germania - Numero di patente di guida
 
-Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE. È disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE. È disponibile anche come entità di tipo di informazioni riservate autonomo.
 
 ### <a name="format"></a>Formato
 
@@ -7248,7 +7258,7 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ## <a name="germany-passport-number"></a>Germania - Numero di passaporto
 
-Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di passaporto UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità è inclusa nel tipo di informazioni riservate NUMERO PASSAPORTO UE ed è disponibile come entità di tipo di informazioni riservate autonoma.
 
 ### <a name="format"></a>Formato
 
@@ -7465,7 +7475,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ## <a name="greece-drivers-license-number"></a>Numero di patente di guida in Grecia
 
-Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità è inclusa nel tipo di informazioni riservate numero di patente ue. È inoltre disponibile come entità di tipo di informazioni riservate autonomo.
 
 ### <a name="format"></a>Formato
 
@@ -7769,12 +7779,12 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 ### <a name="format"></a>Formato
 
-Undici cifre senza spazi e delimitatori
+11 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Criterio
 
-- 6 cifre come data di nascita AAMMDD
-- 4 cifre
+- Sei cifre come data di nascita AAMMDD
+- Quattro cifre
 - una cifra di controllo
   
 ### <a name="checksum"></a>Checksum
@@ -8153,7 +8163,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 11 cifre:
   
-- Una cifra che corrisponde al sesso (1-maschile, 2-femminile, altri numeri sono possibili anche per i cittadini nati prima del 1900 o i cittadini con doppia cittadinanza) 
+- Una cifra che corrisponde al sesso, 1 per il maschio, 2 per la donna. Altri numeri sono possibili anche per i cittadini nati prima del 1900 o per i cittadini con doppia cittadinanza.
 - Sei cifre che corrispondono alla data di nascita (AAMMDD)
 - Tre cifre che corrispondono a un numero seriale
 - Una cifra di controllo
@@ -8653,7 +8663,66 @@ Il modello deve includere tutti gli elementi seguenti:
 
 Il formato per ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN riguarda questi 60 paesi:
 
-ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, si sk , sm, tn, tr, vg
+- annuncio
+- ae
+- al
+- at
+- az
+- ba
+- be
+- bg
+- bh
+- ch
+- cr
+- cy
+- cz
+- de
+- dk
+- do
+- ee
+- es
+- fi
+- fo
+- fr
+- gb
+- ge
+- gi
+- gl
+- gr
+- hr
+- hu
+- ie
+- il
+- is
+- it
+- kw
+- kz
+- lb
+- li
+- lt
+- lu
+- lv
+- mc
+- md
+- me
+- mk
+- mr
+- mt
+- mu
+- nl
+- no
+- pl
+- pt
+- ro
+- rs
+- sa
+- se
+- si
+- sk
+- sm
+- tn
+- tr
+- vg
 
 ### <a name="checksum"></a>Checksum
 
@@ -9278,7 +9347,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
    
 ## <a name="italy-drivers-license-number"></a>Numero di patente di guida italiana
 
-Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità di tipo è inclusa nel tipo di informazioni riservate numero di patente ue. È inoltre disponibile come entità di tipo di informazioni riservate autonomo.
 
 ### <a name="format"></a>Formato
 
@@ -9466,7 +9535,7 @@ Una combinazione di 16 caratteri di lettere e cifre:
 - tre lettere che corrispondono alla prima, alla terza e alla quarta consonanti nel nome
 - due cifre che corrispondono alle ultime cifre dell'anno di nascita
 - una lettera che corrisponde alla lettera del mese di nascita: le lettere vengono utilizzate in ordine alfabetico, ma vengono utilizzate solo le lettere da A a E, H, L, M, P, R a T (quindi, gennaio è A e ottobre è R)
-- due cifre che corrispondono al giorno del mese di nascita: per distinguere i sessi, vengono aggiunti 40 al giorno di nascita per le donne
+- due cifre che corrispondono al giorno del mese di nascita per distinguere i generi, 40 viene aggiunto al giorno di nascita per le donne
 - quattro cifre che corrispondono al codice di area specifico del comune in cui è nata la persona (i codici a livello nazionale vengono utilizzati per i paesi esterni)
 - una cifra di parità
     
@@ -11769,7 +11838,7 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ### <a name="format"></a>Formato
 
-formato alfanumerico di undici caratteri
+Motivo alfanumerico a 11 caratteri
   
 ### <a name="pattern"></a>Criterio
 
@@ -11956,11 +12025,11 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 ### <a name="format"></a>Formato
 
-dieci cifre senza spazi e delimitatori
+10 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Criterio
 
-dieci cifre
+10 cifre
   
 ### <a name="checksum"></a>Checksum
 
@@ -12695,7 +12764,7 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 ### <a name="pattern"></a>Criterio
 
 11 cifre:
-- sei cifre nel formato DDMMYY che rappresentano la data di nascita 
+- sei cifre nel formato DDMMYY, ovvero la data di nascita 
 - numero individuale a tre cifre 
 - due cifre di controllo
 
@@ -13053,7 +13122,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
    
 ## <a name="poland-passport-number"></a>Numero di passaporto polonia
-Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di passaporto UE. È disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di passaporto UE. È disponibile anche come entità di tipo di informazioni riservate autonomo.
 
 ### <a name="format"></a>Formato
 
@@ -14401,7 +14470,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 ### <a name="format"></a>Formato
 
-nove o dieci cifre contenenti barra rovesciata facoltativa
+nove o 10 cifre contenenti barra rovesciata facoltativa
   
 ### <a name="pattern"></a>Criterio
 
@@ -14747,7 +14816,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
   
 - sette cifre che corrispondono alla data di nascita (DDMMLLL), dove "LLL" corrisponde alle ultime tre cifre dell'anno di nascita 
 - due cifre che corrispondono all'area di nascita "50"
-- tre cifre che corrispondono a una combinazione di sesso e numero di serie per le persone nate nello stesso giorno (000-499 per gli uomini e 500-999 per le donne)
+- tre cifre che corrispondono a una combinazione di sesso e numero di serie per le persone nate nello stesso giorno. 000-499 per gli uomini e 500-999 per le femmine.
 - una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
@@ -15636,7 +15705,7 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
-Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
+Questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - Password o pwd seguiti da 0-2 spazi, un segno di uguale (=), 0-2 spazi e un asterisco (*) -OR-
 - Password o pwd seguito da:
@@ -15647,7 +15716,7 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
+Questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - contoso
 - fabrikam
@@ -15663,11 +15732,11 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ### <a name="format"></a>Formato
 
-dieci cifre contenenti un trattino
+10 cifre contenenti una lineetta
   
 ### <a name="pattern"></a>Criterio
 
-dieci cifre contenenti un trattino:
+10 cifre contenenti un trattino:
   
 - sei cifre 
 - un trattino
@@ -16750,7 +16819,7 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - Birth Date 
    
 ## <a name="uk-national-insurance-number-nino"></a>Regno Unito national insurance number (NINO)
-Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFICAZIONE NAZIONALE UE. È disponibile come entità di tipo di informazioni riservate autonomo.
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFICAZIONE NAZIONALE UE. È disponibile anche come entità di tipo di informazioni riservate autonomo.
 
 ### <a name="format"></a>Formato
 

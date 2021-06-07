@@ -1,6 +1,6 @@
 ---
 title: Azioni di correzione in Microsoft 365 Defender
-description: Panoramica delle azioni di correzione che seguono indagini automatizzate in Microsoft 365 Defender
+description: Ottenere una panoramica delle azioni di correzione che seguono indagini automatizzate in Microsoft 365 Defender
 keywords: automatizzata, indagine, avviso, attivare, azione, correzione
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 80546d44bc1ba222c736b397a272f9f1f1a01d4a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f025f23242c28f698e6f67755cc59d21c4463914
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269469"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782946"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Azioni di correzione in Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "52269469"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Durante e dopo un'indagine automatizzata in Microsoft 365 Defender, vengono identificate azioni di correzione per elementi dannosi o sospetti. Alcuni tipi di azioni di correzione vengono eseguite nei dispositivi, definiti anche endpoint. Altre azioni di correzione vengono eseguite sul contenuto della posta elettronica. Le indagini automatizzate vengono completate dopo l'esecuzione, l'approvazione o il rifiuto di azioni correttive.
+Durante e dopo un'indagine automatizzata in Microsoft 365 Defender, le azioni di correzione vengono identificate per elementi dannosi o sospetti. Alcuni tipi di azioni di correzione vengono eseguite nei dispositivi, definiti anche endpoint. Altre azioni di correzione vengono eseguite sul contenuto della posta elettronica. Le indagini automatizzate vengono completate dopo l'esecuzione, l'approvazione o il rifiuto di azioni correttive.
 
 > [!IMPORTANT]
 > Il fatto che le azioni di correzione siano eseguite automaticamente o solo dopo l'approvazione dipende da determinate impostazioni, ad esempio il modo in cui i livelli di automazione. Per ulteriori informazioni, vedere gli articoli seguenti:
@@ -50,7 +50,7 @@ Nella tabella seguente sono riepilogate le azioni di correzione attualmente supp
 |:---------|:---------|
 |- Raccogliere il pacchetto di indagine <br/>- Isolare il dispositivo (questa azione può essere annullata)<br/>- Computer offboard <br/>- Esecuzione del codice di rilascio <br/>- Rilascio dalla quarantena <br/>- Esempio di richiesta <br/>- Limitare l'esecuzione del codice (questa azione può essere annullata) <br/>- Eseguire l'analisi antivirus <br/>- Arrestare e mettere in quarantena      |- URL di blocco (ora del clic)<br/>- Eliminazione recidiva dei messaggi di posta elettronica o dei cluster<br/>- Posta elettronica in quarantena<br/>- Mettere in quarantena un allegato di posta elettronica<br/>- Disattivare l'inoltro della posta esterna          |
 
-Le azioni di correzione, in attesa di approvazione o già completate, possono essere visualizzate nel [Centro notifiche.](m365d-action-center.md)
+Le azioni di correzione, in attesa di approvazione o già completate, possono essere visualizzate nel [centro notifiche.](m365d-action-center.md)
 
 ## <a name="remediation-actions-that-follow-automated-investigations"></a>Azioni correttive che seguono indagini automatizzate
 

@@ -1,6 +1,6 @@
 ---
-title: Configurare la riduzione della superficie di attacco
-description: Usa Microsoft Intune, Microsoft Endpoint Configuration Manager, cmdlet di PowerShell e Criteri di gruppo per configurare la riduzione della superficie di attacco.
+title: Configurare le funzionalità di riduzione della superficie di attacco
+description: Utilizzare Microsoft Intune, Microsoft Endpoint Configuration Manager, i cmdlet di PowerShell e Criteri di gruppo per configurare la riduzione della superficie di attacco.
 keywords: asr, riduzione della superficie di attacco, windows defender, microsoft defender, antivirus, av
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,45 +8,57 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: deniseb
+author: denisebmsft
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6129fb889e2bd42f177c4e3be30f676854119f91
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.date: 06/02/2021
+ms.openlocfilehash: d2f984e21338e2f9a4ed579cde2d74339031d649
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166164"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770962"
 ---
-# <a name="configure-attack-surface-reduction"></a>Configurare la riduzione della superficie di attacco
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# <a name="configure-attack-surface-reduction-capabilities"></a>Configurare le funzionalità di riduzione della superficie di attacco
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Puoi configurare la riduzione della superficie di attacco con molti strumenti, tra cui:
+Defender for Endpoint include diverse funzionalità di riduzione della superficie di attacco. Per altre informazioni, vedi [Panoramica delle funzionalità di riduzione della superficie di attacco.](overview-attack-surface-reduction.md) Per configurare la riduzione della superficie di attacco nell'ambiente, attenersi alla seguente procedura: 
 
-* Microsoft Intune
-* Microsoft Endpoint Configuration Manager
-* Criteri di gruppo
-* Cmdlet di PowerShell
+1. [Abilitare l'isolamento basato su hardware per Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
-Articolo | Descrizione
--|-
-[Abilitare l'isolamento basato su hardware per Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard) | Come preparare e installare Application Guard, inclusi i requisiti hardware e software
-[Abilitare il controllo dell'applicazione](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)|Come controllare le applicazioni eseguite dagli utenti e proteggere i processi in modalità kernel
-[Protezione da exploit](./enable-exploit-protection.md)|Come applicare automaticamente tecniche di mitigazione degli exploit sia nei processi del sistema operativo che nelle singole app
-[Protezione di rete](./enable-network-protection.md)|Come impedire agli utenti di usare app per accedere a domini pericolosi
-[Accesso controllato alle cartelle](./enable-controlled-folders.md)|Come proteggere dati importanti da app dannose
-[Riduzione della superficie d'attacco](./enable-attack-surface-reduction.md)|Come impedire azioni e app in genere usate da malware per la ricerca di exploit
-[Firewall di rete](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)|Come proteggere i dispositivi e i dati in una rete
+2. Abilita il controllo dell'applicazione. 
 
+   1. Esaminare i criteri di base in Windows. Vedere [criteri di base di esempio.](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)
+   2. Vedere la [guida alla progettazione dei controlli dell'applicazione](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
+   3. Fare riferimento alla guida [alla progettazione dei controlli dell'applicazione](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+
+3. [Abilitare l'accesso controllato alle cartelle](enable-controlled-folders.md).
+
+4. [Attivare Protezione di rete](enable-network-protection.md).
+
+5. [Abilita protezione da exploit](enable-exploit-protection.md).
+
+6. [Configurare le regole di riduzione della superficie di attacco](enable-attack-surface-reduction.md).
+
+7. Configurare il firewall di rete.
+
+   1. Ottieni una panoramica di [Windows Defender Firewall sicurezza avanzata.](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+   2. Usa la [Windows Defender Firewall di progettazione per](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) decidere come progettare i criteri firewall.
+   3. Utilizzare la [Windows Defender Firewall di distribuzione per](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) configurare il firewall dell'organizzazione con sicurezza avanzata. 
+
+> [!TIP]
+> Nella maggior parte dei casi, quando si configurano le funzionalità di riduzione della superficie di attacco, è possibile scegliere tra diversi metodi:
+> - Microsoft Endpoint Manager (che ora include Microsoft Intune e Microsoft Endpoint Configuration Manager)
+> - Criteri di gruppo
+> - Cmdlet di PowerShell

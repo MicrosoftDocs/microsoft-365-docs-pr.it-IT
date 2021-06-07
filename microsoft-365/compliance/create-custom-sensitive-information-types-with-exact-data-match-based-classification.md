@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b729cb8a4c30ec13e22f36f9721cb55ecc93942d
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769462"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779868"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match
 
@@ -377,7 +377,7 @@ Se non si vuole esporre file dati di testo sensibili non crittografati, è possi
 > Se si usa lo schema Exact Data Match e la procedura guidata per il tipo di informazioni sensibili per creare il proprio schema e i file modello, è ***necessario*** scaricare lo schema per questa procedura.
 
 > [!NOTE]
-> Se l'organizzazione ha configurato [Customer Key per Microsoft 365 a livello di tenant (anteprima pubblica)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact Data Match userà automaticamente la relativa funzionalità di crittografia. Questa opzione è disponibile solo per i tenant con licenza E5 nel cloud commerciale.
+> Se l'organizzazione ha configurato [il codice "Customer Key"](customer-key-overview.md)per Microsoft 365 a livello di tenant, l'esatta corrispondenza dei dati utilizzerà automaticamente la funzionalità di crittografia. Questa opzione è disponibile solo per i tenant con licenza E5 nel cloud commerciale.
 
 #### <a name="prerequisites"></a>Prerequisiti
 

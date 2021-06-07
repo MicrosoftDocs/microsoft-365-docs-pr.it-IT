@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 9e82f1c5de9fe1f4a03385458338edf18c4f35bd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 95c82f815c794662f7eb0ffaabcfb5f81df3e828
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538844"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782994"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visualizzare e gestire le azioni nel centro notifiche
 
@@ -36,7 +36,7 @@ ms.locfileid: "52538844"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Le funzionalità di protezione dalle minacce in Microsoft 365 Defender possono comportare determinate azioni di correzione. Ecco alcuni esempi:
+Le funzionalità di protezione dalle minacce in Microsoft 365 Defender possono comportare determinate azioni di correzione. Di seguito vengono descritti alcuni esempi:
 
 - [Le indagini automatizzate](m365d-autoir.md) possono comportare azioni di correzione che vengono eseguite automaticamente o in attesa dell'approvazione.
 - Antivirus, antimalware e altre funzionalità di protezione dalle minacce possono comportare azioni di correzione, ad esempio il blocco di un file, un URL o un processo o l'invio di un artefatto in quarantena.
@@ -51,9 +51,9 @@ Le funzionalità di protezione dalle minacce in Microsoft 365 Defender possono c
 
 1. Andare su [https://security.microsoft.com](https://security.microsoft.com) ed eseguire l'accesso. 
 
-2. Nel riquadro di spostamento fare clic su **Centro notifiche**. 
+2. Nel riquadro di spostamento, scegliere **Centro notifiche**. 
 
-3. Nel centro notifiche, nella scheda **In sospeso**, selezionare un elemento dall’elenco. Verrà visualizzato il riquadro a comparsa. Di seguito viene riportato un esempio.
+3. Nel centro notifiche, nella scheda **In** sospeso, selezionare un elemento nell'elenco. Verrà visualizzato il riquadro a comparsa. Di seguito viene riportato un esempio.
 
    ![Approvare o rifiutare un’azione](../../media/air-actioncenter-itemselected.png)
 

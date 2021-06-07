@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/03/2021
-ms.openlocfilehash: e67f783552cca5cc36c1563f5e5557796028ea18
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.date: 06/04/2021
+ms.openlocfilehash: 264a3b7a4a24c446048d6cfc6863f1ae9765566f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772018"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789184"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base
 
@@ -83,6 +83,21 @@ Tutti gli aggiornamenti contengono
 - miglioramenti all'integrazione (Cloud, Microsoft 365 Defender).
 <br/>
 <details>
+<summary> Maggio-2021 (Piattaforma: 4.18.2105.4 | Motore: 1.1.18200.4)</summary>
+
+&ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.341.8.0**  
+&ensp;Rilasciato: **4 giugno 2021**  
+&ensp;Piattaforma: **4.18.2105.4**  
+&ensp;Motore: **1.1.18200.4**  
+&ensp;Fase di supporto: **sicurezza e aggiornamenti critici**
+    
+### <a name="whats-new"></a>Novità
+- Miglioramenti al monitoraggio del comportamento 
+
+### <a name="known-issues"></a>Problemi noti
+Nessun problema noto  
+<br/>
+</details><details>
 <summary> Aprile 2021 (piattaforma: 4.18.2104.14 | Motore: 1.1.18100.5)</summary>
 
 &ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.337.2.0**  
@@ -98,9 +113,7 @@ Tutti gli aggiornamenti contengono
 ### <a name="known-issues"></a>Problemi noti
 Nessun problema noto  
 <br/>
-</details>
-
-<details>
+</details><details>
 <summary> Marzo-2021 (Piattaforma: 4.18.2103.7 | Motore: 1.1.18000.5)</summary>
 
 &ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.335.36.0**  
@@ -118,14 +131,20 @@ Nessun problema noto
 ### <a name="known-issues"></a>Problemi noti
 Nessun problema noto  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Aggiornamenti della versione precedente: solo supporto tecnico per gli aggiornamenti
+
+Dopo il rilascio di una nuova versione del pacchetto, il supporto per le due versioni precedenti viene ridotto solo al supporto tecnico. Le versioni precedenti a quelle elencate in questa sezione vengono fornite solo per il supporto tecnico degli aggiornamenti. 
+<br/><br/>
+<details>
 <summary> Febbraio-2021 (Piattaforma: 4.18.2102.3 | Motore: 1.1.17900.7)</summary>
 
 &ensp;Versione dell'aggiornamento di Security Intelligence: **1.333.7.0**  
 &ensp;Rilasciato: **9 marzo 2021**  
 &ensp;Piattaforma: **4.18.2102.3**  
 &ensp;Motore: **1.1.17900.7**  
-&ensp;Fase di supporto: **sicurezza e aggiornamenti critici**
+&ensp;Fase di supporto: **supporto tecnico per l'aggiornamento (solo)**
     
 ### <a name="whats-new"></a>Novità
 
@@ -135,13 +154,7 @@ Nessun problema noto
 ### <a name="known-issues"></a>Problemi noti
 Nessun problema noto  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Aggiornamenti della versione precedente: solo supporto tecnico per gli aggiornamenti
-
-Dopo il rilascio di una nuova versione del pacchetto, il supporto per le due versioni precedenti viene ridotto solo al supporto tecnico. Le versioni precedenti a quelle elencate in questa sezione vengono fornite solo per il supporto tecnico degli aggiornamenti. 
-<br/><br/>
-<details>
+</details><details>
 <summary> Gennaio-2021 (Piattaforma: 4.18.2101.9 | Motore: 1.1.17800.5)</summary>
 
 &ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.327.1854.0**  

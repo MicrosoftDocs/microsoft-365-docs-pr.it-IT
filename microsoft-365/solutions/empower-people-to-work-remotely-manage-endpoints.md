@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Usare Microsoft Endpoint Manager per gestire dispositivi, PC e altri endpoint.
-ms.openlocfilehash: 116f2a92ccae43a36a8a4ceafcd598c532a852c3
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ef43f447b819a6e5d9d0de1d979d7d30887e30fb
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028993"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789107"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Passaggio 4. Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint
 
-Con i lavoratori remoti, è necessario supportare un numero crescente di dispositivi personali. La gestione degli endpoint è un approccio alla sicurezza basato su criteri che richiede che i dispositivi siano conformi a criteri specifici prima che gli venga consentito l'accesso alle risorse. Microsoft Endpoint Manager offre strumenti moderni per la gestione che garantiscono la sicurezza dei dati sia nel cloud sia in locale. 
+Con i lavoratori ibridi, è necessario supportare un numero crescente di dispositivi personali. La gestione degli endpoint è un approccio alla sicurezza basato su criteri che richiede che i dispositivi siano conformi a criteri specifici prima che gli venga consentito l'accesso alle risorse. Microsoft Endpoint Manager offre strumenti moderni per la gestione che garantiscono la sicurezza dei dati sia nel cloud sia in locale. 
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) include servizi e strumenti che consentono di gestire dispositivi mobili, computer desktop, macchine virtuali, dispositivi incorporati e server combinando i servizi seguenti, probabilmente già noti e usati.
 
@@ -38,7 +38,7 @@ Microsoft Intune è un servizio basato sul cloud che è incentrato sulla gestion
 
 - **MDM:** per i dispositivi di proprietà dell'organizzazione, è possibile esercitare un controllo completo che include impostazioni, caratteristiche e sicurezza. I dispositivi sono "registrati" in Intune, dove ricevono criteri di Intune con regole e impostazioni. Ad esempio, è possibile impostare PIN e password, creare una connessione VPN, configurare la protezione contro le minacce e così via.
 
-- **MAM:** i lavoratori remoti potrebbero non voler concedere il controllo completo sui propri dispositivi personali, noti anche come dispositivi di BYOD (bring-your-own). È possibile fornire opzioni ai lavoratori remoti e continuare a proteggere l'organizzazione. Ad esempio, i lavoratori remoti possono registrare i propri dispositivi, per avere accesso completo alle risorse dell'organizzazione. In alternativa, se desiderano accedere solo alla posta elettronica o a Microsoft Teams, gli utenti possono usare i criteri di protezione delle app che richiedono l'autenticazione a più fattori (MFA) per l'uso di queste app.
+- **MAM:** i lavoratori remoti potrebbero non voler concedere il controllo completo sui propri dispositivi personali, noti anche come dispositivi di BYOD (bring-your-own). È possibile fornire opzioni ai lavoratori ibridi e continuare a proteggere l'organizzazione. Ad esempio, i lavoratori ibridi possono registrare i propri dispositivi per avere accesso completo alle risorse dell'organizzazione. In alternativa, se desiderano accedere solo alla posta elettronica o a Microsoft Teams, gli utenti possono usare i criteri di protezione delle app che richiedono l'autenticazione a più fattori (MFA) per l'uso di queste app.
 
 Per altre informazioni, vedere questa [panoramica di Microsoft Intune](/intune/fundamentals/what-is-intune).
 
@@ -95,4 +95,4 @@ Si usano le caratteristiche e le funzionalità di Endpoint Manager per gestire d
 
 [![Passaggio 5: distribuire le app e i servizi per la produttività dei lavoratori remoti](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
-Proseguire con il [Passaggio 5](empower-people-to-work-remotely-teams-productivity-apps.md) per incoraggiare i lavoratori remoti a utilizzare le app di produttività Microsoft 365, come Microsoft Teams.
+Proseguire con il [Passaggio 5](empower-people-to-work-remotely-teams-productivity-apps.md) per incoraggiare i lavoratori ibridi a utilizzare le app di produttività Microsoft 365, come Microsoft Teams.

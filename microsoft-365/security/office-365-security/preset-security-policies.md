@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare ad applicare le impostazioni dei criteri Standard e Strict tra le funzionalità di protezione di Exchange Online Protection (EOP) e Microsoft Defender per Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca65f003b0c206b0f7e23f3498a4ef0d0bc03fa6
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788980"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771226"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Criteri di sicurezza predefiniti in EOP e Microsoft Defender per Office 365
 
@@ -103,7 +103,7 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
 ## <a name="assign-preset-security-policies-to-users"></a>Assegnare criteri di sicurezza predefiniti agli utenti
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Si apre il centro Microsoft 365 sicurezza all'indirizzo <https://security.microsoft.com/> . Per passare direttamente alla pagina **Criteri di sicurezza predefiniti,** utilizzare <https://security.microsoft.com/presetSecurityPolicies> .
 
@@ -119,7 +119,7 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Usare il Centro sicurezza per assegnare criteri di sicurezza predefiniti agli utenti
 
-1. Nel Centro sicurezza passare a Criteri di **&** di collaborazione & regole Criteri di minaccia \>  \>  \> **Sezione** \> **Criteri** di sicurezza predefiniti .
+1. Nel Centro sicurezza, andare a Criteri di & di **collaborazione** & regole Criteri di sicurezza \>  \>  \> **preimpostati**.
 
 2. In **Protezione standard o** Protezione **rigida** fare clic su **Modifica.**
 

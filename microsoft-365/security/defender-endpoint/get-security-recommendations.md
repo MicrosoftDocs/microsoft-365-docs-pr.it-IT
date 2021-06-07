@@ -1,7 +1,7 @@
 ---
 title: Ottenere consigli sulla sicurezza
 description: Recupera una raccolta di suggerimenti per la sicurezza correlati a un DETERMINATO ID dispositivo.
-keywords: api, api del grafico, api supportate, ottenere, elenco, file, informazioni, suggerimenti per la sicurezza per dispositivo, api di gestione delle minacce & vulnerabilità, Api tvm di Microsoft Defender for Endpoint
+keywords: api, api del grafico, api supportate, ottenere, elenco, file, informazioni, suggerimenti per la sicurezza per dispositivo, api & gestione delle vulnerabilità per le minacce, Api di Microsoft Defender per Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bc209687d51b3e05bfcfd6028042ba5912b877f6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 44f64334d08d8d0d6a5ed1e8e06baa2880859ad2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935306"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771130"
 ---
 # <a name="get-security-recommendations"></a>Ottenere consigli sulla sicurezza
 

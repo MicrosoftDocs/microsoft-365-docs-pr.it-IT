@@ -16,19 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee2a5e1815dd552753ac7f3dee30df11ac4332e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.custom: api
+ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068570"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770770"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Recuperare gli avvisi dal tenant del cliente MSSP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
@@ -56,7 +57,7 @@ Dovrai creare un'applicazione e concedervi le autorizzazioni per recuperare gli 
 
 1. Accedere al portale [di Azure AD](https://aad.portal.azure.com/).
 
-2. Selezionare **Registrazioni app Azure Active Directory**  >  .
+2. Seleziona **Azure Active Directory**  >  **registrazioni app**.
  
 3. Fare **clic su Nuova registrazione**.
 
@@ -85,7 +86,7 @@ Dovrai creare un'applicazione e concedervi le autorizzazioni per recuperare gli 
  
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>Passaggio 2: ottenere i token di accesso e aggiornamento dal tenant del cliente
-Questa sezione illustra come usare uno script di PowerShell per ottenere i token dal tenant del cliente. Questo script usa l'applicazione del passaggio precedente per ottenere i token di accesso e aggiornamento usando il flusso del codice di autorizzazione OAuth.
+Questa sezione illustra come usare uno script di PowerShell per ottenere i token dal tenant del cliente. Questo script usa l'applicazione del passaggio precedente per ottenere i token di accesso e aggiornamento usando il codice di autorizzazione OAuth Flow.
 
 Dopo aver fornito le credenziali, dovrai concedere il consenso all'applicazione in modo che l'applicazione sia disponibile nel tenant del cliente.
 
@@ -166,7 +167,7 @@ Per consentire l'applicazione,  è necessario disporre dell'autorizzazione Gesti
 
 1. Passare a `https://securitycenter.windows.com?tid=<customer_tenant_id>` (sostituire \<customer_tenant_id\> con l'ID tenant del cliente.
 
-2. Fare **clic su Impostazioni**  >  **SIEM**. 
+2. Fare **clic Impostazioni**  >  **SIEM**. 
 
 3. Selezionare la **scheda MSSP.**
 
@@ -188,5 +189,5 @@ Per informazioni su come recuperare gli avvisi con l'API REST, vedi [Eseguire il
 
 ## <a name="see-also"></a>Vedere anche
 - [Concedere a MSSP l'accesso al portale](grant-mssp-access.md)
-- [Accedere al portale dei clienti MSSP](access-mssp-portal.md)
+- [Accedere al portale clienti MSSP](access-mssp-portal.md)
 - [Configurare le notifiche di avviso](configure-mssp-notifications.md)

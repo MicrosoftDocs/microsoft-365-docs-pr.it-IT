@@ -1,10 +1,10 @@
 ---
-title: 'Presto disponibile: Configurare SharePoint come origine di contenuto didattico per Microsoft Viva Learning (anteprima)'
+title: Configurare SharePoint come origine di contenuto di apprendimento per Microsoft Viva Learning (anteprima)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: ''
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -14,127 +14,132 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: Informazioni su come configurare SharePoint come origine di contenuto didattico per Microsoft Viva Learning (Anteprima).
-ms.openlocfilehash: 2bed3a42d62e2aab2165ee38379eb07503807e6e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Informazioni su come configurare SharePoint come origine di contenuto di apprendimento per Microsoft Viva Learning (Preview).
+ms.openlocfilehash: 29ac15abe3a915213306ebfdf8ebab8f89730f20
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333579"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782778"
 ---
-# <a name="coming-soon-configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>Presto disponibile: Configurare SharePoint come origine di contenuto didattico per Microsoft Viva Learning (anteprima)
+# <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>Configurare SharePoint come origine di contenuto di apprendimento per Microsoft Viva Learning (anteprima)
 
 > [!NOTE]
-> Le informazioni contenute in questo articolo si riferiscono a un prodotto di anteprima che potrebbe essere sostanzialmente modificato prima che venga rilasciato commercialmente. 
+> Questa funzionalità non è ancora disponibile nell'anteprima del prodotto. 
 
-È possibile configurare SharePoint come origine di contenuto didattico per rendere disponibile il contenuto dell'organizzazione in Viva Learning (Preview).
 
-## <a name="overview"></a>Panoramica
 
-L'amministratore della knowledge base (o amministratore globale) fornisce un URL del sito in cui il servizio di apprendimento può creare una posizione centralizzata vuota, ovvero l'archivio contenuto app di apprendimento, sotto forma di elenco strutturato di SharePoint. Questo elenco può essere utilizzato dall'organizzazione per ospitare collegamenti a cartelle di SharePoint tra società che contengono contenuto didattico. Gli amministratori sono responsabili della raccolta e della cura di un elenco di URL per le cartelle. Queste cartelle devono includere solo il contenuto che può essere reso disponibile in Viva Learning (Anteprima).
+<!---
 
-Viva Learning (Anteprima) supporta i tipi di documento seguenti:
+You can configure SharePoint as a learning content source to make your organization's own content available in Viva Learning (Preview).
+
+## Overview
+
+The knowledge admin (or global administrator) provides a site URL to where the Learning Service can create an empty centralized location—the Learning App Content Repository—in the form of a structured SharePoint list. This list can be used by your organization to house links to cross-company SharePoint folders that contain learning content. Admins are responsible for collecting and curating a list of URLs for folders. These folders should only include content that can be made available in Viva Learning (Preview).
+
+Viva Learning (Preview) supports the following document types:
 
 - Word, PowerPoint, Excel, PDF
 - Audio (.m4a)
 - Video (.mov, .mp4, .avi)
 
-Per ulteriori informazioni, vedere [Limiti di SharePoint.](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498) 
+For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
 
-## <a name="permissions"></a>Autorizzazioni
+## Permissions
 
-Gli URL delle cartelle della raccolta documenti possono essere raccolti da qualsiasi sito di SharePoint nell'organizzazione. Viva Learning (Anteprima) segue tutte le autorizzazioni di contenuto esistenti. Di conseguenza, solo il contenuto per cui un utente dispone dell'autorizzazione di accesso è disponibile per la ricerca e visibile all'interno di Viva Learning (Anteprima). Qualsiasi contenuto all'interno di queste cartelle sarà disponibile per la ricerca, ma è possibile utilizzare solo il contenuto per cui il singolo dipendente dispone delle autorizzazioni.
+Document library folder URLs can be collected from any SharePoint site in the organization. Viva Learning (Preview) follows all existing content permissions. Therefore, only content for which a user has permission to access is searchable and visible within Viva Learning (Preview). Any content within these folders will be searchable, but only content to which the individual employee has permissions can be used.
 
-L'eliminazione del contenuto dall'archivio dell'organizzazione non è attualmente supportata.
+Content deletion from your organization’s repository is not currently supported.
 
-Per rimuovere il contenuto inavvicinatamente in superficie, attenersi alla seguente procedura:
+To remove unintentionally surfaced content, follow these steps:
 
-1.  Per limitare l'accesso alla raccolta documenti, selezionare **l'opzione Mostra** azioni e quindi selezionare **Gestisci accesso.**
+1.  To restrict access to the document library, select the **Show actions** option, and then select **Manage access**.
      
-     ![Pagina raccolta documenti in SharePoint con l'opzione Mostra azioni con l'opzione Gestisci accesso elevato.](../media/learning/learning-sharepoint-permissions2.png)
+     ![Document library page in SharePoint showing Show actions option with Manage access highligted.](../media/learning/learning-sharepoint-permissions2.png)
 
-2.  Eliminare il documento originale all'interno della raccolta documenti.
+2.  Delete the original document within the document library.
 
-Per ulteriori informazioni, vedere [Condivisione e autorizzazioni nell'esperienza moderna di SharePoint.](/sharepoint/modern-experience-sharing-permissions) 
+For more information, see [Sharing and permissions in the SharePoint modern experience](/sharepoint/modern-experience-sharing-permissions). 
 
-## <a name="learning-service"></a>Learning Service
+## Learning Service
 
-Il servizio di apprendimento usa gli URL delle cartelle forniti per ottenere i metadati da tutto il contenuto archiviato in tali cartelle. Entro 24 ore dalla fornitura dell'URL della cartella nel repository centralizzato, i dipendenti possono cercare e utilizzare il contenuto dell'organizzazione all'interno di Viva Learning (Anteprima). Tutte le modifiche apportate al contenuto, inclusi i metadati e le autorizzazioni aggiornati, verranno applicate anche nel servizio di apprendimento entro 24 ore.
+The Learning Service uses the provided folder URLs to get metadata from all content stored in those folders. Within 24 hours of supplying the folder URL in the centralized repository, employees can search for and use your organization’s content within Viva Learning (Preview). All changes to content, including updated metadata and permissions, will also be applied in the Learning Service within 24 hours.
 
-## <a name="configure-sharepoint-as-a-source"></a>Configurare SharePoint come origine
+## Configure SharePoint as a source
 
-Per eseguire queste attività, è necessario essere un amministratore globale, un amministratore di SharePoint o un amministratore della knowledge base di Microsoft 365.
+You must be a Microsoft 365 global administrator, SharePoint administrator, or knowledge admin to perform these tasks.
 
-Per configurare SharePoint come origini di contenuto di apprendimento in Viva Learning (Anteprima), attenersi alla seguente procedura:
+To configure SharePoint as a learning content sources in for Viva Learning (Preview), follow these steps:
 
-1.  Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 passare a **Impostazioni**  >  **Impostazioni organizzazione.**
+1.  In the left navigation of the Microsoft 365 admin center, go to **Settings** > **Org settings**.
  
-2.  Nella scheda **Servizi della**  pagina Impostazioni organizzazione selezionare Viva **Learning (anteprima).**
+2.  On the **Org settings** page, on the **Services** tab, select **Viva Learning (Preview)**.
 
-     ![Pagina Impostazioni nell'interfaccia di amministrazione di Microsoft 365 che mostra Viva Learning elencato.](../media/learning/learning-sharepoint-configure1.png)
+     ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/learning-sharepoint-configure1.png)
 
-3.  Nel riquadro **Viva Learning (Anteprima),** in SharePoint, fornisce l'URL del sito di SharePoint in cui si desidera che Viva Learning (Anteprima) crei un archivio centralizzato.
+3.  On the **Viva Learning (Preview)** panel, under SharePoint, provides the site URL to the SharePoint site where you want Viva Learning (Preview) to create a centralized repository.
 
-     ![Riquadro di apprendimento nell'interfaccia di amministrazione di Microsoft 365 che mostra SharePoint selezionato.](../media/learning/learning-sharepoint-configure2.png)
+     ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/learning-sharepoint-configure2.png)
 
-4.  Un elenco di SharePoint viene creato automaticamente all'interno del sito di SharePoint specificato.
+4.  A SharePoint list is created automatically within the provided SharePoint site.
 
-     ![Elenco di SharePoint appena creato all'interno del sito di SharePoint.](../media/learning/learning-sharepoint-configure3.png)
+     ![Newly created SharePoint list within the SharePoint site.](../media/learning/learning-sharepoint-configure3.png)
 
-     Nel riquadro di spostamento sinistro del sito di SharePoint selezionare **Contenuto** del sito  >  **Learning App Content Repository**. 
+     In the left navigation of the SharePoint site, select **Site contents** > **Learning App Content Repository**. 
 
-     ![Elenco di SharePoint che mostra la struttura di spostamento contenuto del sito e la sezione Archivio contenuto app di apprendimento.](../media/learning/learning-sharepoint-configure4.png) 
+     ![SharePoint list showing the Site contents navigation and the Learning App Content Repository section.](../media/learning/learning-sharepoint-configure4.png) 
 
-5. Nella pagina **Archivio contenuto app di** apprendimento popolare l'elenco di SharePoint con gli URL nelle cartelle del contenuto di apprendimento.
+5. On the **Learning App Content Repository** page, populate the SharePoint list with URLs to the learning content folders.
 
-   1. Seleziona **Nuovo** per visualizzare il **pannello Nuovo** elemento. 
+   1. Select **New** to view the **New item** panel. 
 
-       ![Pagina Learning Content Repository in SharePoint con l'opzione New.](../media/learning/learning-sharepoint-configure5.png)
+       ![Learning Content Repository page in SharePoint showing the New option.](../media/learning/learning-sharepoint-configure5.png)
  
-   2. Nel campo **Titolo del**  riquadro Nuovo elemento aggiungere un nome di directory di propria scelta. Nel campo **URL cartella** aggiungere l'URL alla cartella del contenuto di apprendimento. Selezionare **Salva**.
+   2. On the **New item** panel, in the **Title** field, add a directory name of your choice. In the **Folder URL** field, add the URL to the learning content folder. Select **Save**.
 
-       ![Riquadro Nuovo elemento in SharePoint che mostra i campi Titolo e URL cartella.](../media/learning/learning-sharepoint-configure6.png)
+       ![New item panel in SharePoint showing the Title and Folder URL fields.](../media/learning/learning-sharepoint-configure6.png)
 
-   3. La **pagina Archivio contenuto app di** apprendimento viene aggiornata con il nuovo contenuto di apprendimento.
+   3. The **Learning App Content Repository** page is updated with the new learning content.
 
-       ![Pagina Learning Content Repository in SharePoint che mostra le informazioni aggiornate.](../media/learning/learning-sharepoint-configure7.png)
+       ![Learning Content Repository page in SharePoint showing the updated information.](../media/learning/learning-sharepoint-configure7.png)
 
 > [!NOTE]
-> Per consentire un accesso più ampio all'archivio di contenuto app di apprendimento, presto sarà disponibile un collegamento all'elenco nell'interfaccia Viva Learning (anteprima), in cui gli utenti possono richiedere l'accesso e, in ultima analisi, aiutare a popolare l'elenco. I proprietari del sito e gli amministratori globali saranno tenuti a concedere l'accesso all'elenco. Access è specifico solo per l'elenco e non si applica al sito in cui è archiviato l'elenco. Per ulteriori informazioni, vedere [Fornire il contenuto dell'organizzazione](#provide-your-own-organizations-content) più avanti in questo articolo.
+> To allow for broader access to the Learning App Content Repository, a link to the list soon will be available in the Viva Learning (Preview) interface where users can request access and ultimately help populate the list. Site owners and global administrators will be required to grant access to the list. Access is specific to the list only and does not apply to the site where the list is stored. For more information, see [Provide your own organization's content](#provide-your-own-organizations-content) later in this article.
 
-### <a name="folder-url-document-library-curation"></a>Gestione raccolta documenti URL cartella
+### Folder URL document library curation
 
-I metadati predefiniti ,ad esempio la data di modifica, creati da, il nome del documento, il tipo di contenuto e il nome dell'organizzazione, vengono automaticamente estratti in Viva Learning (Anteprima) dall'API di Microsoft Graph.
+Default metadata (such as modified date, created by, document name, content type, and organization name) is automatically pulled into Viva Learning (Preview) by the Microsoft Graph API.
  
-Per migliorare l'individuazione complessiva e la pertinenza della ricerca del contenuto, è consigliabile aggiungere una **colonna Descrizione.**
+To improve overall discovery and search relevance of the content, we recommend adding a **Description** column.
 
-Per aggiungere una **colonna Description** alla pagina della raccolta documenti, attenersi alla seguente procedura:
+To add a **Description** column to the document library page, follow these steps:
 
-1.  Nella pagina **Documenti** selezionare **Aggiungi colonna.**
+1.  On the **Documents** page, select **Add column**.
 
-2. Selezionare **l'opzione** Mostra azioni e quindi selezionare **Riga di testo singola.**
+2. Select the **Show actions** option, and then select **Single line of text**.
 
-     ![Pagina Documenti in SharePoint che mostra le opzioni Mostra azioni con l'opzione Riga di testo singola evidenziata.](../media/learning/learning-sharepoint-curation1.png)
+     ![Documents page in SharePoint showing the Show actions options with Single line of text highlighted.](../media/learning/learning-sharepoint-curation1.png)
 
-3. Nel campo **Nome del** riquadro  Crea colonna aggiungere un nome descrittivo per la colonna. Selezionare **Salva**.
+3. On the **Create a column** panel, in the **Name** field, add a descriptive name for the column. Select **Save**.
 
-     ![Creare un pannello a colonne in SharePoint che mostra il nome e altri campi.](../media/learning/learning-sharepoint-curation2.png)
+     ![Create a column panel in SharePoint showing the Name and other fields.](../media/learning/learning-sharepoint-curation2.png)
  
-4. Nella **colonna** Descrizione della **pagina** Documenti aggiungere descrizioni personalizzate per ogni elemento. Se non viene fornita alcuna descrizione, Viva Learning (Anteprima) fornirà un messaggio predefinito che evidenzia il contenuto come dalla raccolta di SharePoint. 
+4. On the **Documents** page, in the **Description** column, add custom descriptions for each item. If no description is supplied, Viva Learning (Preview) will provide a default message that highlights the content as being from your own SharePoint library. 
 
-     ![Pagina Documenti in SharePoint che mostra le descrizioni nella colonna Descrizione.](../media/learning/learning-sharepoint-curation3.png)
+     ![Documents page in SharePoint showing the descriptions in the Description column.](../media/learning/learning-sharepoint-curation3.png)
  
-### <a name="provide-your-own-organizations-content"></a>Fornire il contenuto dell'organizzazione
+### Provide your own organization's content
 
-Gli amministratori della knowledge base possono accedere all'archivio di contenuto app di apprendimento dell'organizzazione in SharePoint, dove possono fornire riferimenti a raccolte documenti tra organizzazioni. Il contenuto all'interno di queste raccolte verrà quindi visualizzato come contenuto di apprendimento in Viva Learning (Anteprima).
+Knowledge admins can access their organization’s Learning App Content Repository in SharePoint, where they can provide references to cross-organization document libraries. Content within these libraries will be then surfaced as learning content in Viva Learning (Preview).
 
-1. In Viva Learning (Anteprima) seleziona **Altre opzioni** (**...**) e quindi seleziona **Impostazioni.**
+1. In Viva Learning (Preview), select **More options** (**...**), and then select **Settings**.
 
-     ![Pagina raccolta di SharePoint con l'opzione Altre opzioni e impostazioni.](../media/learning/learning-sharepoint-library-1.png)
+     ![SharePoint library page showing the More options and Settings option.](../media/learning/learning-sharepoint-library-1.png)
      
-2. In **Impostazioni** selezionare **Autorizzazioni.**
+2. Under **Settings**, select **Permissions**.
 
-     ![Pagina dell'opzione Impostazioni in SharePoint che mostra le opzioni Autorizzazioni e Controlla accesso.](../media/learning/learning-sharepoint-library-2.png)
+     ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
 
-3. Selezionare **Controlla accesso** per connettersi alla raccolta centralizzata dell'organizzazione.
+3. Select **Check access** to connect to your organization’s centralized library.
      
+--->

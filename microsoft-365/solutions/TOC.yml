@@ -13,7 +13,7 @@
       href: architecture-icons-templates.md
 - name: Soluzioni di Microsoft 365 Foundation
   items:
-    - name: Configurare l’infrastruttura per il lavoro remoto
+    - name: Configurare l'infrastruttura per il lavoro ibrido
       items:
         - name: Panoramica
           href: empower-people-to-work-remotely.md
@@ -23,11 +23,11 @@
           href: empower-people-to-work-remotely-remote-access.md
         - name: 'Passaggio 3: Distribuire sicurezza e conformità'
           href: empower-people-to-work-remotely-security-compliance.md
-        - name: Passaggio 4. Distribuire la gestione endpoint
+        - name: 'Passaggio 4: Distribuire la gestione degli endpoint'
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: Passaggio 5. Distribuire le app e i servizi per la produttività
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 'Passaggio 6: Formare i lavoratori remoti'
+        - name: 'Passaggio 6: Formare i lavoratori'
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Proteggere la collaborazione con Microsoft 365
       items:
@@ -225,7 +225,7 @@
       items:
         - name: Soluzioni di Microsoft 365 per Contoso Corporation
           href: contoso-case-study-solutions.md
-        - name: Risposta al COVID-19 e supporto per il lavoro da remoto e in sede
+        - name: Risposta al COVID-19 e supporto per il lavoro ibrido
           href: contoso-remote-onsite-work.md
         - name: Team isolato per un progetto interno
           href: contoso-team-for-top-secret-project.md

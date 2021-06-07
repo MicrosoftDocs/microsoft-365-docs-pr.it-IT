@@ -16,24 +16,24 @@ ms.collection:
 description: Gli amministratori possono imparare a identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 Piano 2. Il filtro dei tag è disponibile tra avvisi, report e indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti con tag.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 44b925840700c00c6b2d28c445ac26abd6624d1c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943012"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782862"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
 > [!NOTE]
-> La funzionalità tag utente è disponibile in Anteprima, non è disponibile per tutti gli utenti ed è soggetta a modifiche. Per informazioni sulla pianificazione dei rilasci, consultare la roadmap di [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
+> La funzionalità tag utente è disponibile in Anteprima, non è disponibile per tutti gli utenti ed è soggetta a modifiche. Per informazioni sulla pianificazione dei rilasci, vedere la roadmap [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
 
-I tag utente sono identificatori per gruppi specifici di utenti in [Microsoft Defender per Office 365.](defender-for-office-365.md) Esistono due tipi di tag utente:
+I tag utente sono identificatori per gruppi specifici di utenti in [Microsoft Defender per Office 365](defender-for-office-365.md). Esistono due tipi di tag utente:
 
 - **Tag di** sistema: attualmente, [gli account Priority](../../admin/setup/priority-accounts.md) sono l'unico tipo di tag di sistema.
 - **Tag personalizzati**: questi tag utente vengono creati manualmente.
 
-Se l'organizzazione dispone di Defender per Office 365 Piano 2 (incluso nell'abbonamento o come componente aggiuntivo), è possibile creare tag utente personalizzati oltre a usare il tag degli account di priorità.
+Se l'organizzazione ha Defender per Office 365 Piano 2 (incluso nell'abbonamento o come componente aggiuntivo), puoi creare tag utente personalizzati oltre a usare il tag degli account di priorità.
 
 > [!NOTE]
 > Attualmente, è possibile applicare i tag utente solo agli utenti delle cassette postali.
@@ -44,18 +44,18 @@ Dopo aver applicato tag di sistema o tag personalizzati agli utenti, è possibil
 - [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md)
 - [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report)
 - [Visualizzazioni campagna](campaigns.md)
-- Per gli account con priorità, è possibile utilizzare il [report Problemi di posta elettronica](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) per gli account con priorità nell'interfaccia di amministrazione di Exchange (EAC).
+- Per gli account con priorità, è possibile utilizzare il [report Problemi](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) di posta elettronica per gli account di priorità nell'interfaccia di amministrazione di Exchange (EAC).
 
 In questo articolo viene illustrato come configurare i tag utente nel Centro sicurezza & conformità. Non sono disponibili cmdlet nel Centro sicurezza & conformità per gestire i tag utente.
 
-Per informazioni su come i tag utente fanno parte della strategia per proteggere gli account utente ad alto impatto, vedere Consigli per la sicurezza per gli account con priorità [in Microsoft 365.](security-recommendations-for-priority-accounts.md)
+Per informazioni su come i tag utente fanno parte della strategia per proteggere gli account utente ad alto [impatto,](security-recommendations-for-priority-accounts.md)vedere Suggerimenti per la sicurezza per gli account con priorità in Microsoft 365 .
 
 > [!NOTE]
-> Se si utilizza il Centro sicurezza Microsoft 365 unificato, è possibile impostare i tag qui: https://security.microsoft.com/userTags .
+> Se si utilizza il Centro sicurezza Microsoft 365 unificata, è possibile impostare i tag qui: https://security.microsoft.com/securitysettings/userTags .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla **pagina Tag** utente, aprire <https://protection.office.com/userTags> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla **pagina Tag** utente, aprire <https://protection.office.com/userTags> .
 
 - Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per creare, modificare ed eliminare tag utente, è necessario essere membri dei gruppi **di** ruoli Gestione organizzazione o Amministratore **sicurezza.**
@@ -64,12 +64,13 @@ Per informazioni su come i tag utente fanno parte della strategia per proteggere
 
   Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-  **Note**:
+  > [!NOTE]
+  >
+  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  >
+  > - La gestione dei tag utente è controllata dai **ruoli Lettore tag** **e Gestione** tag.
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
-  - La gestione dei tag utente è controllata dai **ruoli Lettore tag** **e Gestione** tag.
-
-- È inoltre possibile gestire e monitorare gli account con priorità nell'interfaccia di amministrazione di Microsoft 365. Per istruzioni, vedere [Gestire e monitorare gli account con priorità.](../../admin/setup/priority-accounts.md)
+- È inoltre possibile gestire e monitorare gli account di priorità nell'Microsoft 365 di amministrazione. Per istruzioni, vedere [Gestire e monitorare gli account con priorità.](../../admin/setup/priority-accounts.md)
 
 - Per informazioni sulla protezione degli _account con privilegi_ (account amministratore), vedere questo [argomento.](/azure/architecture/framework/security/critical-impact-accounts)
 
@@ -126,7 +127,8 @@ Per informazioni su come i tag utente fanno parte della strategia per proteggere
 
 ## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>Usare il Centro sicurezza & conformità per rimuovere i tag utente
 
-**Nota:** non è possibile rimuovere il tag predefinito **dell'account Priority.**
+> [!NOTE]
+> Non è possibile rimuovere il tag **dell'account Priority** predefinito.
 
 1. Nel Centro sicurezza & conformità passare a **Gestione minacce** \> **Tag utente**.
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 62a917b36355335c8eb52d83caecdbba691f8175
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242133"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770979"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender per Office 365 nel Centro sicurezza Microsoft 365
 
@@ -33,7 +33,33 @@ ms.locfileid: "52242133"
 - [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-Il centro sicurezza [Microsoft 365 ](./overview-security-center.md) [https://security.microsoft.com](https://security.microsoft.com)implementato combina le funzionalità di sicurezza degli attuali portali di sicurezza Microsoft, tra cui Microsoft Defender Security Center e il Centro sicurezza e conformità di Office 365. Questo centro implementato aiuta i team di sicurezza a proteggere l'organizzazione dalle minacce in modo più efficace.
+## <a name="quick-reference"></a>Riferimento rapido
+
+L'immagine e la tabella seguente elencano le modifiche nello spostamento tra Office 365 Centro sicurezza & conformità e il Centro sicurezza Microsoft 365 sicurezza.
+
+> [!div class="mx-imgBorder"]
+> ![Immagine di ciò che è stato spostato nel punto in cui è stato spostato](../../media/mdo-m3d-security-center.png)
+
+<br>
+
+****
+
+|Office 365 Conformità & sicurezza|Centro sicurezza Microsoft 365|Centro conformità Microsoft 365|Interfaccia di amministrazione di Exchange|
+|---|---|---|---|
+|Avvisi|Posta elettronica e collaborazione|||
+|Classificazione||Vedere [centro Microsoft 365 conformità](https://compliance.microsoft.com/homepage)||
+|Prevenzione della perdita dei dati||Vedere [centro Microsoft 365 conformità](https://compliance.microsoft.com/homepage)||
+|Gestione dei record||Vedere [centro Microsoft 365 conformità](https://compliance.microsoft.com/homepage) ||
+|Governance delle informazioni||Vedere [centro Microsoft 365 conformità](https://compliance.microsoft.com/homepage)||
+|Gestione dei rischi|Posta elettronica e collaborazione|||
+|Flusso di posta|||Vedere [Exchange di amministrazione](https://admin.exchange.microsoft.com/#/)|
+|Privacy dei dati||Vedere [centro Microsoft 365 conformità](https://compliance.microsoft.com/homepage)||
+|Ricerca|Ricerca|||
+|Report|Report|||
+|Garanzia del servizio|Impostazioni|||
+|
+
+Il centro sicurezza [Microsoft 365 ](./overview-security-center.md) <https://security.microsoft.com>implementato combina le funzionalità di sicurezza degli attuali portali di sicurezza Microsoft, tra cui Microsoft Defender Security Center e il Centro sicurezza e conformità di Office 365. Questo centro implementato aiuta i team di sicurezza a proteggere l'organizzazione dalle minacce in modo più efficace.
 
 Se si ha familiarità con il portale per la sicurezza e la conformità di Office 365 (protection.office.com), questo articolo descrive alcune modifiche e migliorie apportate al Centro sicurezza e conformità di Microsoft 365.
 
@@ -69,7 +95,7 @@ Nessuna modifica a queste aree:
 Vedere anche la sezione **Informazioni correlate** in fondo all'articolo.
 
 > [!IMPORTANT]
-> Il portale di sicurezza di Microsoft 365 (https://security.microsoft.com) combina le caratteristiche di sicurezza di https://securitycenter.windows.come https://protection.office.com. Tuttavia, i dati visualizzati dipendono dall'abbonamento. Se si ha Solo Microsoft Defender per Office 365 piano 1 o 2 come abbonamenti autonomi, ad esempio, le funzionalità relative alla sicurezza per gli endpoint e a Defender per i clienti di Office piano 1 non saranno disponibili per elementi come Threat Analytics.
+> Il Microsoft 365 security portal ( <https://security.microsoft.com> ) combina le funzionalità di sicurezza in , e <https://securitycenter.windows.com> <https://protection.office.com> . Tuttavia, i dati visualizzati dipendono dall'abbonamento. Se si ha Solo Microsoft Defender per Office 365 piano 1 o 2 come abbonamenti autonomi, ad esempio, le funzionalità relative alla sicurezza per gli endpoint e a Defender per i clienti di Office piano 1 non saranno disponibili per elementi come Threat Analytics.
 
 > [!TIP]
 > Tutte Exchange Online Protection (EOP) verranno incluse nel Centro sicurezza Microsoft 365, poiché EOP è un elemento di base di Defender per Office 365.
@@ -147,15 +173,15 @@ Iniziare a cercare le minacce tramite posta elettronica con la ricerca avanzata?
 
 La [guida introduttiva](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) dell'articolo [Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) include blocchi di configurazione iniziali logici simili ai seguenti:
 
-1. Configurare tutto con "anti" nel nome.
-   - anti-malware
-   - anti-phishing
-   - anti-spam
-2. Configurare tutto con "sicuri" nel nome.
-   - collegamenti sicuri
-   - allegati sicuri
-3. Difendere i carichi di lavoro (ad esempio SharePoint Online, OneDrive e Teams)
-4. Proteggere con Zero-Hour Auto Purge
+1. Configura tutto con "Anti" nel nome.
+   - Antimalware
+   - Anti-phishing
+   - Protezione da posta indesiderata
+2. Configura tutto con "Sicuro" nel nome.
+   - Collegamenti sicuri
+   - Allegati sicuri
+3. Difendere i carichi di lavoro (ad esempio SharePoint Online, OneDrive e Teams).
+4. Proteggi con eliminazione automatica a zero ore.
 
 Oltre a un [collegamento](../office-365-security/protect-against-threats.md) per iniziare subito a eseguire la configurazione il primo giorno.
 
@@ -181,7 +207,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="La pagina Rilevazione avanzata (sotto a Rilevazione) con Query selezionata nella parte superiore del pannello di query ed eseguendo una query Kusto per acquisire le azioni di ZAP negli ultimi 7 giorni.":::
+:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="La pagina Ricerca avanzata (in Ricerca) con query selezionata nella parte superiore del pannello di query ed esecuzione di una query Kusto per acquisire le azioni ZAP negli ultimi 7 giorni.":::
 
 I dati di questa query verranno visualizzati nel pannello Risultati sotto la query stessa. I risultati includono informazioni come 'DeviceName', 'AccountDisplayName' e 'ZapTime' in un set di risultati personalizzabile. È anche possibile esportare i risultati per i record. Se la query è di nuovo necessaria, selezionare **Salva** > **Salva con nome** e aggiungere la query all'elenco di query, condivise o della community.
 

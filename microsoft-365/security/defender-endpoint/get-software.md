@@ -1,7 +1,7 @@
 ---
 title: Elencare il software
 description: Recupera un elenco di inventario software
-keywords: api, api del grafico, api supportate, ottenere, elenco, file, informazioni, inventario software, api di gestione delle minacce & vulnerabilità, Api di Microsoft Defender for Endpoint tvm
+keywords: api, api del grafico, api supportate, ottenere, elenco, file, informazioni, inventario software, api & gestione delle vulnerabilità minacce, Api di Microsoft Defender per Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6522b546dfde7447a03b3c417be93d288e261908
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: f7e71c58396fd4b3ed40ba88aab5c2757ae41a41
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934010"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771082"
 ---
 # <a name="list-software-inventory-api"></a>API di inventario software elenco
 

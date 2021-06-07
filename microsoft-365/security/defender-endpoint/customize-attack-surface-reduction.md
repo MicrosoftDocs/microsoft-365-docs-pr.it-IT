@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 232f7133f177e3d0aa93fcb2835fb86bcfd0d37c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769324"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782874"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personalizzare regole per la riduzione della superficie di attacco
 
@@ -46,8 +46,14 @@ Puoi impostare regole di riduzione della superficie di attacco per i dispositivi
 
 È possibile scegliere di escludere file e cartelle dalla valutazione da parte delle regole di riduzione della superficie di attacco. Una volta escluso, l'esecuzione del file non verrà bloccata anche se una regola di riduzione della superficie di attacco rileva che il file contiene comportamenti dannosi.
 
+Ad esempio, considera la regola ransomware:
+
+La regola ransomware è progettata per aiutare i clienti aziendali a ridurre i rischi di attacchi ransomware garantendo al contempo la continuità aziendale. Per impostazione predefinita, la regola ransomware avrà un errore di cautela e proteggerà dai file che non hanno ancora raggiunto una reputazione e un'attendibilità sufficienti. Per rievolgimento, la regola ransomware si attiva solo sui file che non hanno acquisito una reputazione e una diffusione abbastanza positivi, in base alle metriche di utilizzo di milioni di clienti. In genere, i blocchi vengono risolti automaticamente, perché i valori di "reputazione e attendibilità" di ogni file vengono aggiornati in modo incrementale con l'aumento dell'utilizzo non problematico.
+
+Nei casi in cui i blocchi non vengono risolti automaticamente in modo appropriato, i clienti _possono,_ a proprio rischio, utilizzare il meccanismo self-service o una funzionalità "elenco consenti" basata su Indicatore di compromissione (IOC) per sbloccare i file stessi.  
+
 > [!WARNING]
-> Ciò potrebbe potenzialmente consentire l'esecuzione di file non sicuri e infettare i dispositivi. L'esclusione di file o cartelle può ridurre in modo grave la protezione fornita dalle regole di riduzione delle superficie di attacco. L'esecuzione dei file che sarebbero stati bloccati da una regola sarà consentita e non verrà registrato alcun report o evento.
+> L'esclusione o lo sblocco di file o cartelle potrebbe potenzialmente consentire l'esecuzione di file non sicuri e infettare i dispositivi. L'esclusione di file o cartelle può ridurre in modo grave la protezione fornita dalle regole di riduzione delle superficie di attacco. L'esecuzione dei file che sarebbero stati bloccati da una regola sarà consentita e non verrà registrato alcun report o evento.
 
 Un'esclusione si applica a tutte le regole che consentono le esclusioni. È possibile specificare un singolo file, un percorso di cartella o il nome di dominio completo per una risorsa. Tuttavia, non è possibile limitare un'esclusione a una regola specifica.
 
@@ -57,7 +63,7 @@ La riduzione della superficie di attacco supporta variabili di ambiente e caratt
 Se si verificano problemi con le regole che rilevano file che ritieni non debbano essere rilevati, usa la modalità di controllo [per testare la regola.](evaluate-attack-surface-reduction.md)
 
 | Descrizione delle regole | GUID |
-|:----|:----|:----|
+|:----|:----|
 | Impedire a Office applicazioni di creare processi figlio | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | Bloccare l'esecuzione di script potenzialmente offuscati | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
 | Bloccare le chiamate API Win32 da Office macro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |

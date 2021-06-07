@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 1748a33be2c27123eb0437784dcdb2cb7905616a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f1344026878b7fbd6242d82b1afb0e6671c32073
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274689"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789269"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurare analisi pianificate rapide o complete di Microsoft Defender Antivirus
 
@@ -73,8 +73,8 @@ Utilizzare la tabella seguente per scegliere un tipo di analisi.
 |Scenario  |Tipo di analisi consigliato  |
 |---------|---------|
 |Si desidera configurare analisi regolari e pianificate     | Analisi rapida <p>Un'analisi rapida controlla i processi, la memoria, i profili e alcune posizioni nel dispositivo. In combinazione con la protezione [in tempo](configure-real-time-protection-microsoft-defender-antivirus.md)reale sempre on, un'analisi rapida consente di fornire una copertura avanzata sia per il malware che inizia con il sistema che con il malware a livello di kernel. La protezione in tempo reale esamina i file quando vengono aperti e chiusi e ogni volta che un utente passa a una cartella.         |
-|Le minacce, ad esempio malware, vengono rilevate in un dispositivo     | Analisi completa <p>Un'analisi completa consente di identificare se sono presenti componenti inattivi che richiedono una pulizia più approfondita.         |
-|Si desidera eseguire [un'analisi su richiesta](run-scan-microsoft-defender-antivirus.md)     | Analisi completa  <p>Un'analisi completa esamina tutti i file sul disco del dispositivo, inclusi i file non obsoleti, archiviati e non accessibili ogni giorno.      |
+|Minacce, ad esempio malware, vengono rilevate in un singolo dispositivo     | Analisi rapida <p>Nella maggior parte dei casi, un'analisi rapida rileva e pulisce il malware rilevato.   |
+|Si desidera eseguire [un'analisi su richiesta](run-scan-microsoft-defender-antivirus.md)     | Analisi rapida       |
 | Si desidera verificare che un dispositivo portatile, ad esempio un'unità USB, non contenga malware | Analisi personalizzata <p>Un'analisi personalizzata consente di selezionare percorsi, cartelle o file specifici ed esegue un'analisi rapida. |
 
 ### <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>Altre informazioni sulle analisi rapide e complete
@@ -155,7 +155,7 @@ Utilizzare i cmdlet seguenti:
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-Per ulteriori informazioni, vedere [Use PowerShell cmdlets to configure and run Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/).
+Per altre informazioni, vedere [Usare i cmdlet di PowerShell per configurare ed eseguire Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) e [Cmdlet di Defender](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi"></a>Utilizzare Windows Management Instruction (WMI)
 

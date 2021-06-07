@@ -1,7 +1,7 @@
 ---
 title: Accedere al centro notifiche per visualizzare e approvare le indagini automatizzate e le attività di correzione
-description: Utilizzare il centro notifiche per visualizzare dettagli relativi alle indagini automatizzate e approvare le azioni in sospeso
-keywords: Centro notifiche, protezione dalla minacce, indagine, avviso, in sospeso, automatizzata, rilevamento
+description: Usare il centro notifiche per visualizzare i dettagli sull'indagine automatizzata e approvare le azioni in sospeso
+keywords: Centro notifiche, protezione dalle minacce, indagine, avviso, in sospeso, automatizzato, rilevamento
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7bea9a1632e7a9ed9d394c2c411123d0601a9397
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: df3ea2d4df0b7a5bedbbabf19e97d4fddc4c2646
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274581"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782982"
 ---
 # <a name="the-action-center"></a>Centro operativo
 
@@ -51,15 +51,15 @@ Nel centro notifiche unificato ( ) sono elencate le azioni di correzione in sosp
 
 Ad esempio: 
 
-- Se in precedenza si usava il Centro sicurezza & e conformità di Office 365 ( ), provare il Centro notifiche unificato nel Centro sicurezza [https://protection.office.com](https://protection.office.com) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Se si usa il Centro notifiche nel Microsoft Defender Security Center ( ), provare il Centro notifiche unificato nel Centro sicurezza [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Se si usava già il Centro sicurezza Microsoft 365 ( ), nel Centro notifiche saranno disponibili diversi miglioramenti [https://security.microsoft.com](https://security.microsoft.com) ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Se in precedenza si usava Office 365 Centro sicurezza & conformità ( ), provare il Centro notifiche unificato nel centro sicurezza Microsoft 365 [https://protection.office.com](https://protection.office.com) sicurezza ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Se si usava il centro notifiche nella Microsoft Defender Security Center ( ), provare il centro notifiche unificato nel centro sicurezza Microsoft 365 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) sicurezza ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Se si usava già il centro Microsoft 365 sicurezza ( ), verranno visualizzati diversi miglioramenti nel [https://security.microsoft.com](https://security.microsoft.com) Centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 
 Il centro notifiche unificato riunisce le azioni di correzione in Defender for Endpoint e Defender per Office 365. Definisce un linguaggio comune per tutte le azioni di correzione e offre un'esperienza di indagine unificata. Il team delle operazioni di sicurezza ha un'esperienza di "singolo riquadro di vetro" per visualizzare e gestire le azioni di correzione.  
 
 È possibile utilizzare il centro notifiche unificato se si dispone delle autorizzazioni appropriate e di una o più delle sottoscrizioni seguenti:
 
-- [Defender per endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
+- [Defender per Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
@@ -114,7 +114,7 @@ Oltre alle azioni di correzione eseguite automaticamente [](m365d-autoir.md)a se
 | **Azione manuale del dispositivo** | Azione manuale eseguita su un dispositivo. Alcuni esempi includono [l'isolamento del dispositivo](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) [o la quarantena dei file.](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files) |
 | **Azione manuale per la posta elettronica** | Un'azione manuale eseguita sulla posta elettronica. Un esempio include l'eliminazione recidiva dei messaggi di posta elettronica [o la correzione di un messaggio di posta elettronica.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Azione automatica del dispositivo** | Azione automatizzata eseguita su un'entità, ad esempio un file o un processo. Esempi di azioni automatizzate includono l'invio di un file in quarantena, l'arresto di un processo e la rimozione di una chiave del Registro di sistema. (Vedere [Azioni di correzione in Microsoft Defender per Endpoint).](../defender-endpoint/manage-auto-investigation.md#remediation-actions) |
-| **Azione di posta elettronica automatizzata** | Azione automatizzata eseguita sul contenuto della posta elettronica, ad esempio un messaggio di posta elettronica, un allegato o un URL. Esempi di azioni automatizzate includono l'eliminazione recisa dei messaggi di posta elettronica, il blocco degli URL e la disattivazione dell'inoltro della posta esterna. Vedere [Azioni di correzione in Microsoft Defender per Office 365.](../office-365-security/air-remediation-actions.md) |
+| **Azione di posta elettronica automatizzata** | Azione automatizzata eseguita sul contenuto della posta elettronica, ad esempio un messaggio di posta elettronica, un allegato o un URL. Esempi di azioni automatizzate includono l'eliminazione recisa dei messaggi di posta elettronica, il blocco degli URL e la disattivazione dell'inoltro della posta esterna. (Vedi [Azioni di correzione in Microsoft Defender per Office 365](../office-365-security/air-remediation-actions.md).) |
 | **Azione di ricerca avanzata** | Azioni eseguite su dispositivi o posta elettronica con [ricerca avanzata.](./advanced-hunting-overview.md) |
 | **Azione Esplora risorse** | Azioni eseguite sul contenuto della posta elettronica con [Explorer](../office-365-security/threat-explorer.md). |
 | **Azione di risposta in tempo reale manuale** | Azioni eseguite su un dispositivo con [risposta in tempo reale.](../defender-endpoint/live-response.md) Alcuni esempi includono l'eliminazione di un file, l'interruzione di un processo e la rimozione di un'attività pianificata. |
@@ -126,8 +126,8 @@ Per eseguire attività quali l'approvazione o il rifiuto di azioni in sospeso ne
 
 |Azione correttiva |Ruoli e autorizzazioni necessari |
 |--|----|
-|Microsoft Defender for Endpoint remediation (dispositivi) |**Ruolo amministratore** della sicurezza assegnato in Azure Active Directory (Azure AD) ( ) o nell'interfaccia di amministrazione di [https://portal.azure.com](https://portal.azure.com) Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- o ---<br/>**Ruolo azioni di correzione attive** assegnato in Microsoft Defender per Endpoint <br/> <br/> Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Creare e gestire ruoli per il controllo dell'accesso basato sui ruoli (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
-|Correzione di Microsoft Defender per Office 365 (contenuto di Office e posta elettronica)  |**Ruolo amministratore** della sicurezza assegnato in Azure AD ( ) o nell'interfaccia di amministrazione di [https://portal.azure.com](https://portal.azure.com) Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- e --- <br/>**Ruolo di ricerca ed eliminazione** assegnato nel Centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANTE:** se il  ruolo Amministratore della sicurezza è assegnato solo nel Centro conformità di Office 365 Security & ( ), non sarà possibile accedere al Centro notifiche o alle funzionalità di [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. È necessario disporre del **ruolo amministratore della** sicurezza assegnato in Azure AD o nell'interfaccia di amministrazione di Microsoft 365. <br/><br/>Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorizzazioni nel Centro sicurezza & conformità](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint remediation (dispositivi) |**Ruolo amministratore** della sicurezza assegnato in Azure Active Directory (Azure AD) ( ) o nell'Microsoft 365 [https://portal.azure.com](https://portal.azure.com) di amministrazione ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- o ---<br/>**Ruolo azioni di correzione attive** assegnato in Microsoft Defender per Endpoint <br/> <br/> Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Creare e gestire ruoli per il controllo dell'accesso basato sui ruoli (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender for Office 365 remediation (Office contenuto e posta elettronica)  |**Ruolo amministratore** della sicurezza assegnato in Azure AD ( ) o nell'Microsoft 365 [https://portal.azure.com](https://portal.azure.com) di amministrazione ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- e --- <br/>**Ruolo di ricerca ed eliminazione** assegnato nel Centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANTE:** se il  ruolo amministratore della sicurezza è assegnato solo nel Centro sicurezza & e conformità di Office 365 ( ), non sarà possibile accedere al Centro notifiche o alle funzionalità di [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. È necessario disporre del **ruolo amministratore della** sicurezza assegnato in Azure AD o nell'Microsoft 365 di amministrazione. <br/><br/>Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorizzazioni nel Centro sicurezza & conformità](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Gli utenti a cui è **assegnato il ruolo amministratore** globale in Azure AD possono approvare o rifiutare qualsiasi azione in sospeso nel centro notifiche. Tuttavia, come procedura consigliata, l'organizzazione deve limitare il numero di persone a cui è assegnato il **ruolo amministratore** globale. È consigliabile utilizzare i ruoli **Amministratore** **sicurezza,** Azioni di correzione attive e Ricerca ed eliminazione elencati nella tabella precedente per le autorizzazioni del centro notifiche. 

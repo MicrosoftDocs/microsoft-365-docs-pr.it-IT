@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams chat e canali supporta i criteri di prevenzione della perdita dei dati (DLP).
-ms.openlocfilehash: e55bfa34b2495465f573bcede3ebda2308dbbbbc
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6467ae7fdfc9c8636bd306efde5cb89c100e5e6c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583389"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782562"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita dei dati e Microsoft Teams
 
@@ -59,15 +59,12 @@ La protezione DLP viene applicata in modo diverso Teams entità.
 |---------|---------|---------|
 |singoli account utente     |1:1/n chat         |sì         |
 |     |chat generali         |no         |
-|     |canali condivisi         |no         |
 |     |canali privati         |sì         |
 |gruppi di sicurezza/liste di distribuzione  | 1:1/n chat         |sì         |
 |     |chat generali         |no         |
-|     |canali condivisi         |no      |
 |     |canali privati         |sì        |
 |Microsoft 365 gruppo    |1:1/n chat          |no         |
 |     |chat generali          |sì        |
-|     |canali condivisi|sì |
 |     |canali privati|no| 
 
 

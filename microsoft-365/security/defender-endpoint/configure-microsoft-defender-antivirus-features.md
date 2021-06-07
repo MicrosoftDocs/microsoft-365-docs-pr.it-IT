@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/18/2020
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4408d5e788449c0d094008261f5e7db9bfe38758
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6ef9a2c34a88d7c9f5506c681088db9dc84cb0cc
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275109"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789028"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurare la funzionalità di Microsoft Defender Antivirus
 
@@ -32,27 +32,24 @@ ms.locfileid: "52275109"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-È possibile configurare Antivirus Microsoft Defender con una serie di strumenti, tra cui:
+È possibile configurare Antivirus Microsoft Defender con diversi strumenti, ad esempio:
 
-- Microsoft Intune
-- Microsoft Endpoint Configuration Manager
+- Microsoft Endpoint Manager (che include Microsoft Intune e Microsoft Endpoint Configuration Manager)
 - Criteri di gruppo
 - Cmdlet di PowerShell
 - Strumentazione gestione Windows (WMI)
 
 È possibile configurare le seguenti ampie categorie di funzionalità:
 
-- Protezione fornita dal cloud
-- Protezione sempre in tempo reale, tra cui protezione comportamentale, euristica e basata sull'apprendimento automatico
-- Interazione degli utenti finali con il client su singoli endpoint
+- Protezione basata sul cloud. Vedi [Protezione e Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+ 
+- Protezione sempre in tempo reale, inclusa la protezione comportamentale, euristica e basata sull'apprendimento automatico. Vedi [Configurare la protezione comportamentale, euristica](configure-protection-features-microsoft-defender-antivirus.md)e in tempo reale.
 
-Gli articoli seguenti descrivono come eseguire attività chiave durante la configurazione Antivirus Microsoft Defender. Ogni articolo include istruzioni per lo strumento o gli strumenti di configurazione applicabili.
+- Modalità di interazione degli utenti finali con il client su singoli endpoint. Vedere le risorse seguenti:
+   
+   - [Impedire agli utenti di visualizzare o interagire con l'Antivirus Microsoft Defender utente](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
-|Articolo  |Descrizione  |
-|---------|---------|
-|[Utilizzare la protezione basata Antivirus Microsoft Defender cloud Microsoft](cloud-protection-microsoft-defender-antivirus.md)     | Usa la protezione basata sul cloud per un rilevamento antivirus avanzato, veloce e affidabile.        |
-|[Configurare la protezione comportamentale, euristica e in tempo reale](configure-protection-features-microsoft-defender-antivirus.md)     |Abilitare la protezione antivirus basata sul comportamento, euristica e in tempo reale.         |
-|[Configurare l'interazione dell'utente finale con Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md) | Configurare il modo in cui gli utenti finali dell'organizzazione interagiscono con Antivirus Microsoft Defender, quali notifiche visualizzano e se possono ignorare le impostazioni. |
+   - [Impedire o consentire agli utenti di modificare localmente Antivirus Microsoft Defender impostazioni dei criteri](configure-local-policy-overrides-microsoft-defender-antivirus.md) 
 
 > [!TIP]
-> È inoltre possibile consultare gli argomenti [di riferimento](configuration-management-reference-microsoft-defender-antivirus.md) per gli strumenti di gestione e configurazione per una panoramica di ogni strumento e collegamenti a ulteriori informazioni.
+> Esaminare [gli argomenti di riferimento per gli strumenti di gestione e configurazione.](configuration-management-reference-microsoft-defender-antivirus.md)

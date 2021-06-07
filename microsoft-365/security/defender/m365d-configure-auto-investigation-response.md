@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 685c23f4e8daac4f00e0bbd90dcaca9a80703559
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: 48d299f2318b0a1be251132a4b50a333a1a0c7a8
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696515"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782958"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurare le funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Dopo aver configurato tutto, è possibile visualizzare e gestire le azioni di co
 |---|---|
 |Requisiti dell'abbonamento|Una di queste sottoscrizioni: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 con il Microsoft 365 E5 Security aggiuntivo</li><li>Microsoft 365 A3 con il Microsoft 365 A5 Security</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> Vedi [i Microsoft 365 di licenza di Microsoft 365 Defender](./prerequisites.md#licensing-requirements).|
 |Requisiti di rete|<ul><li>[Microsoft Defender per l'identità](/azure-advanced-threat-protection/what-is-atp) abilitato</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configurato</li><li>[Integrazione di Microsoft Defender for Identity](/cloud-app-security/mdi-integration)</li></ul>|
-|Requisiti di computer Windows|<ul><li>Windows 10 versione 1709 o successiva installata (vedere Windows 10 [sulla versione](/windows/release-information/))</li><li>Sono stati configurati i seguenti servizi di protezione dalle minacce:<ul><li>[Microsoft Defender ATP](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
+|Requisiti di computer Windows|<ul><li>Windows 10 versione 1709 o successiva installata (vedere Windows 10 [sulla versione](/windows/release-information/))</li><li>Sono stati configurati i seguenti servizi di protezione dalle minacce:<ul><li>[Microsoft Defender per endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protezione del contenuto della posta elettronica e dei Office di posta elettronica|[Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configurato|
 |Autorizzazioni|Per configurare le funzionalità di analisi e risposta automatizzate, è necessario disporre del ruolo amministratore globale o amministratore della sicurezza assegnato Azure Active Directory ( ) o nell'interfaccia di amministrazione di <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ). <p> Per ottenere le autorizzazioni necessarie per utilizzare le funzionalità di analisi e risposta automatizzate, ad esempio la revisione, l'approvazione o il rifiuto di azioni in sospeso, vedere Autorizzazioni necessarie per le attività del [centro notifiche.](m365d-action-center.md#required-permissions-for-action-center-tasks)|
 |
@@ -73,8 +73,8 @@ Le impostazioni di sicurezza in Office 365 proteggere la posta elettronica e il 
 
 1. Nel centro Microsoft 365 sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) ), passare a Criteri & Regole **Criteri** \> **di minaccia**.
 2. Verificare che siano configurati tutti i criteri seguenti. Per ottenere assistenza e suggerimenti, vedere [Protezione dalle minacce.](/microsoft-365/security/office-365-security/protect-against-threats)
-   - [Antimalware)](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-   - [Anti-phishing)](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Antimalware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+   - [Anti-phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
    - [Allegati sicuri](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Collegamenti sicuri](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Protezione da posta indesiderata](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)

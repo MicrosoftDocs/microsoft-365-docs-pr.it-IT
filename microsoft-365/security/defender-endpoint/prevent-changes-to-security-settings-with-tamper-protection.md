@@ -17,12 +17,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 05/17/2021
-ms.openlocfilehash: ed9eb425d718a2dbdaa2cdb3ab1e6899c9870124
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2d212bedf9033b0824d32e7f42afea3944d9ca67
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538887"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782814"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Proteggere le impostazioni di sicurezza con protezione antimanomissione
 
@@ -50,7 +50,7 @@ Con la protezione dalle manomissioni, alle app dannose non viene impedito di ese
 - Disabilitazione della protezione recapitata nel cloud
 - Rimozione degli aggiornamenti delle funzionalità di intelligence per la sicurezza
 
-### <a name="how-it-works"></a>Funzionamento
+### <a name="how-it-works"></a>Come funziona
 
 La protezione anti-manomissione blocca essenzialmente Antivirus Microsoft Defender e impedisce che le impostazioni di sicurezza vengano modificate tramite app e metodi come:
 
@@ -257,7 +257,7 @@ Se si è un'organizzazione che usa [Microsoft Defender for Endpoint,](/microsoft
 
 - [Gestire la protezione contro le manomissioni con Intune](#manage-tamper-protection-for-your-organization-using-intune)
 - [Gestire la protezione contro le manomissioni con Configuration Manager, versione 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [Gestire la protezione contro le manomissioni Microsoft Defender Security Center](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) (attualmente in anteprima)
+- [Gestire la protezione contro le manomissioni con il Microsoft Defender Security Center](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) 
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-through-my-group-policy"></a>In che modo la configurazione della protezione da manomissioni in Intune influisce sulla modalità di gestione Antivirus Microsoft Defender tramite i criteri di gruppo?
 

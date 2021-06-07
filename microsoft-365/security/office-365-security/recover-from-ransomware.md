@@ -12,15 +12,15 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Gli amministratori di Microsoft 365 possono imparare a eseguire il ripristino da un attacco ransomware.
+description: Microsoft 365 amministratori possono imparare a eseguire il ripristino da un attacco ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 242a4a2f43bd91d75caeaeaa0488f23a5ba4319d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205761"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789052"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Ripristino da un attacco ransomware in Microsoft 365
 
@@ -49,11 +49,11 @@ Se si dispone di backup offline, è  probabile che sia possibile ripristinare i 
 
 Se non si dispone di backup o se i backup sono stati interessati anche dal ransomware, è possibile ignorare questo passaggio.
 
-## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Passaggio 2: Disabilitare la Exchange ActiveSync e la sincronizzazione di OneDrive
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Passaggio 2: Disabilitare Exchange ActiveSync e OneDrive sincronizzazione
 
 Il punto chiave è arrestare la diffusione della crittografia dei dati da parte del ransomware.
 
-Se si sospetta che la posta elettronica sia una destinazione della crittografia ransomware, disabilitare temporaneamente l'accesso utente alle cassette postali. Exchange ActiveSync sincronizza i dati tra i dispositivi e le cassette postali di Exchange Online.
+Se si sospetta che la posta elettronica sia una destinazione della crittografia ransomware, disabilitare temporaneamente l'accesso utente alle cassette postali. Exchange ActiveSync sincronizza i dati tra dispositivi e Exchange Online cassette postali.
 
 Per disabilitare Exchange ActiveSync per una cassetta postale, vedere [How to disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303).
 
@@ -63,7 +63,7 @@ Per disabilitare altri tipi di accesso a una cassetta postale, vedere:
 
 - [Abilitare o disabilitare l'accesso POP3 o IMAP4 per un utente](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-La sospensione della sincronizzazione di OneDrive consente di proteggere i dati cloud dall'aggiornamento da dispositivi potenzialmente infetti. Per ulteriori informazioni, vedere [Come sospendere e riprendere la sincronizzazione in OneDrive.](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
+La sospensione OneDrive sincronizzazione consente di proteggere i dati cloud dall'aggiornamento da dispositivi potenzialmente infetti. Per ulteriori informazioni, vedere Come sospendere e riprendere la [sincronizzazione in OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Passaggio 3: rimuovere il malware dai dispositivi interessati
 
@@ -75,21 +75,21 @@ Non dimenticare di analizzare i dispositivi che sincronizzano i dati o le destin
 
 Un'alternativa che consente anche di rimuovere ransomware o malware è lo Strumento di rimozione [di software dannoso (MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
 
-Se queste opzioni non funzionano, è possibile provare a Windows Defender [offline](https://support.microsoft.com/help/17466) o risolvere i problemi relativi al rilevamento e [alla rimozione di malware.](https://support.microsoft.com/help/4466982)
+Se queste opzioni non funzionano, è possibile provare a Windows Defender [offline](https://support.microsoft.com/help/17466) o risolvere i problemi relativi al rilevamento e alla [rimozione di malware.](https://support.microsoft.com/help/4466982)
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Passaggio 4: Ripristinare i file in un computer o un dispositivo pulito
 
-Dopo aver completato il passaggio precedente per rimuovere il payload ransomware dall'ambiente (che impedirà al ransomware di crittografare o rimuovere i file), puoi usare Cronologia file [in](https://support.microsoft.com/help/17128) Windows 10 e Windows 8.1 o Protezione di sistema in Windows 7 per tentare di recuperare i file e le cartelle locali.
+Dopo aver completato il passaggio precedente per rimuovere il payload ransomware dall'ambiente (che impedirà al ransomware di crittografare o rimuovere i file), è possibile utilizzare Cronologia file [in](https://support.microsoft.com/help/17128) Windows 10 e Windows 8.1 o Protezione del sistema in Windows 7 per tentare di ripristinare i file e le cartelle locali.
 
 **Note**:
 
-- Alcuni ransomware crittograferanno o elimineranno anche le versioni di backup, quindi non puoi usare Cronologia file o Protezione del sistema per ripristinare i file. In questo caso, è necessario utilizzare backup su unità esterne o dispositivi che non sono stati interessati dal ransomware o OneDrive, come descritto nella sezione successiva.
+- Alcuni ransomware crittograferanno o elimineranno anche le versioni di backup, quindi non puoi usare Cronologia file o Protezione del sistema per ripristinare i file. In questo caso, è necessario utilizzare backup su unità esterne o dispositivi che non sono stati interessati dal ransomware o OneDrive come descritto nella sezione successiva.
 
 - Se una cartella è sincronizzata con OneDrive e non si utilizza la versione più recente di Windows, è possibile che l'utilizzo di Cronologia file presenti alcune limitazioni.
 
-## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Passaggio 5: Ripristinare i file in OneDrive for Business
+## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Passaggio 5: Ripristinare i file nel OneDrive for Business
 
-Il ripristino dei file in OneDrive for Business consente di ripristinare l'intero OneDrive a un punto precedente nel tempo negli ultimi 30 giorni. Per ulteriori informazioni, vedere [Restore your OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
+File Restore in OneDrive for Business consente di ripristinare l'intero OneDrive a un punto precedente nel tempo negli ultimi 30 giorni. Per ulteriori informazioni, vedere [Ripristinare OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>Passaggio 6: Recuperare la posta elettronica eliminata
 
@@ -99,13 +99,13 @@ Nel raro caso in cui il ransomware ha eliminato tutti i messaggi di posta elettr
 
 - [Ripristinare gli elementi eliminati in Outlook per Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Passaggio 7: Ri-abilitare la sincronizzazione Exchange ActiveSync e OneDrive
+## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Passaggio 7: Ri abilitare la sincronizzazione Exchange ActiveSync e OneDrive sincronizzazione
 
-Dopo aver pulito i computer e i dispositivi e aver ripristinato i dati, è possibile ri-abilitare la sincronizzazione di Exchange ActiveSync e OneDrive precedentemente disabilitata nel [passaggio 2.](#step-2-disable-exchange-activesync-and-onedrive-sync)
+Dopo aver pulito i computer e i dispositivi e aver ripristinato i dati, è possibile abilitare nuovamente la sincronizzazione Exchange ActiveSync e OneDrive precedentemente disabilitata nel [passaggio 2.](#step-2-disable-exchange-activesync-and-onedrive-sync)
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Passaggio 8 (facoltativo): bloccare la sincronizzazione di OneDrive per estensioni di file specifiche
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Passaggio 8 (facoltativo): bloccare OneDrive sincronizzazione per estensioni di file specifiche
 
-Dopo il ripristino, è possibile impedire ai client di OneDrive for Business di sincronizzare i tipi di file interessati da questo ransomware. Per ulteriori informazioni, [vedere Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
+Dopo il ripristino, è possibile impedire OneDrive for Business client di sincronizzare i tipi di file interessati da questo ransomware. Per ulteriori informazioni, [vedere Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
 ## <a name="report-the-attack"></a>Segnalare l'attacco
 
@@ -129,6 +129,8 @@ I siti Web di segnalazione delle truffe forniscono informazioni su come prevenir
 
 - Nuova Zelanda: [truffe agli affari dei consumatori](http://www.consumeraffairs.govt.nz/scams)
 
+- Svizzera [Nazionali Zentrum für Cybersicherheit NCSC](https://www.ncsc.admin.ch/ncsc/de/home.html)
+
 - Regno Unito: [frode d'azione](http://www.actionfraud.police.uk/)
 
 - Stati Uniti: [On Guard Online](http://www.onguardonline.gov/)
@@ -147,15 +149,15 @@ Se il paese non è elencato, chiedere alle forze dell'ordine locali o federali.
 
 - [Norsk Hydro risponde agli attacchi ransomware con trasparenza](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [Rilevamento e ripristino di file ransomware in OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [Rilevamento ransomware e ripristino dei file in OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
-- [Report Di Intelligence per la sicurezza Microsoft](https://www.microsoft.com/securityinsights/)
+- [Intelligence di sicurezza Microsoft Report](https://www.microsoft.com/securityinsights/)
 
-- [Abilitare o disabilitare le macro nei file di Office](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
+- [Abilitare o disabilitare le macro nei Office file](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365](recommended-settings-for-eop-and-office365.md)
+- [Impostazioni consigliate per EOP e Microsoft Defender per Office 365 sicurezza](recommended-settings-for-eop-and-office365.md)
 
-- [Un aggiornamento degno: la sicurezza di nuova generazione in Windows 10 si dimostra resiliente contro gli attacchi ransomware nel 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+- [Un aggiornamento degno: la sicurezza di nuova generazione Windows 10 dimostra resiliente contro gli attacchi ransomware nel 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
 - [No mas, Samas: What's in this ransomware's modus operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
 

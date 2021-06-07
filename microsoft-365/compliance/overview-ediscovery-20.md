@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 description: Informazioni sulla soluzione Advanced eDiscovery in Microsoft 365. In questo articolo viene fornita una panoramica delle Advanced eDiscovery in Microsoft 365, uno strumento che consente di gestire le indagini interne ed esterne. Vengono inoltre incorniciati i motivi aziendali per l'Advanced eDiscovery per gestire le indagini legali.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16d18d04c0bb45f0a9328dcebae866c16a575812
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860965"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782790"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Panoramica di Microsoft 365 Advanced eDiscovery
 
-La Advanced eDiscovery in Microsoft 365 si basa sulle funzionalità di analisi e eDiscovery di Microsoft esistenti. Advanced eDiscovery fornisce un flusso di lavoro end-to-end per conservare, raccogliere, analizzare, esaminare, analizzare ed esportare il contenuto che risponde alle indagini interne ed esterne dell'organizzazione. Consente anche ai team legali di gestire l'intero flusso di lavoro per le notifiche di blocco a fini giudiziari per comunicare con i responsabili coinvolti in un caso.
+La Advanced eDiscovery in Microsoft 365 si basa sulle funzionalità di analisi e eDiscovery di Microsoft esistenti. Advanced eDiscovery fornisce un flusso di lavoro end-to-end per conservare, raccogliere, analizzare, esaminare ed esportare contenuto reattivo alle indagini interne ed esterne dell'organizzazione. Consente anche ai team legali di gestire l'intero flusso di lavoro per le notifiche di blocco a fini giudiziari per comunicare con i responsabili coinvolti in un caso.
 
 ## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery funzionalità
 

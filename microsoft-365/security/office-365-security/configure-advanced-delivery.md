@@ -17,12 +17,12 @@ ms.custom: ''
 description: Gli amministratori possono imparare a utilizzare i criteri di recapito avanzati in Exchange Online Protection (EOP) per identificare i messaggi che non devono essere filtrati in scenari supportati specifici (simulazioni di phishing di terze parti e messaggi recapitati alle cassette postali secOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e4e230fdca7fe29fc1c7a1bc68085454ba883b9
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a9c1c6f7635b87e25adcb121db79f67d4ec1988f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624790"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788998"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurare il recapito di simulazioni di phishing di terze parti agli utenti e messaggi non filtrati alle cassette postali secOps
 
@@ -34,15 +34,15 @@ ms.locfileid: "52624790"
 > [!NOTE]
 > La funzionalità descritta in questo articolo è disponibile in Anteprima, non è disponibile per tutti gli utenti ed è soggetta a modifiche.
 
-Per proteggere [l'organizzazione](secure-by-default.md)per impostazione predefinita, Exchange Online Protection (EOP) non consente elenchi attendibili o bypass di filtro per i messaggi che causano malware o verdetti di phishing ad alta confidenza. Esistono tuttavia scenari specifici che richiedono il recapito di messaggi non filtrati. Ad esempio:
+Per proteggere [l'organizzazione](secure-by-default.md)per impostazione predefinita, Exchange Online Protection (EOP) non consente elenchi attendibili o bypass di filtro per i messaggi identificati come malware o phishing ad alta probabilità. Esistono tuttavia scenari specifici che richiedono il recapito di messaggi non filtrati. Ad esempio:
 
 - **Simulazioni di phishing di terze** parti: gli attacchi simulati consentono di identificare gli utenti vulnerabili prima che un attacco reale influisca sull'organizzazione.
 - Cassette postali delle operazioni di sicurezza **(SecOps):** cassette postali dedicate utilizzate dai team di sicurezza per raccogliere e analizzare i messaggi non filtrati (buoni e non).
 
-È possibile utilizzare _i criteri di_ recapito avanzati in Microsoft 365 per impedire che questi messaggi in questi scenari _specifici_ vengano <sup>\*</sup> filtrati. Il criterio di recapito avanzato garantisce che i messaggi in questi scenari non siano filtrati:
+È possibile utilizzare _i criteri di_ recapito avanzati in Microsoft 365 per impedire che questi messaggi in questi scenari _specifici_ vengano filtrati. <sup>\*</sup> Il criterio di recapito avanzato garantisce che i messaggi in questi scenari raggiunga i risultati seguenti:
 
 - I filtri in EOP e Microsoft Defender per Office 365 non esempre alcuna azione su questi messaggi.<sup>\*</sup>
-- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing takes no action on these messages.<sup>\*</sup>
+- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages.<sup>\*</sup>
 - [Gli avvisi di](alerts.md) sistema predefiniti non vengono attivati per questi scenari.
 - [AIR e clustering in Defender per Office 365](office-365-air.md) ignora questi messaggi.
 - In particolare per simulazioni di phishing di terze parti:
@@ -60,46 +60,63 @@ I messaggi identificati dal criterio di recapito avanzato non sono minacce alla 
 - [Ricerca avanzata in Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md)
 - [Visualizzazioni campagna](campaigns.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla **pagina Recapito avanzato,** aprire <https://protection.office.com/advanceddelivery> .
+- Aprire il Centro sicurezza a <https://security.microsoft.com>. Per passare direttamente alla **pagina Recapito avanzato,** aprire <https://security.microsoft.com/advanceddelivery> .
 
 - Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
-  - Per creare, modificare o rimuovere le impostazioni configurate nel criterio di  recapito avanzato, è necessario essere membri del gruppo  di ruoli Amministratore della sicurezza nel Centro sicurezza **&** conformità e membri del gruppo di ruoli Gestione organizzazione in **Exchange Online**.  
+  - Per creare, modificare o rimuovere le impostazioni configurate nel criterio di  recapito avanzato,  è necessario essere membri  del gruppo di ruoli Amministratore sicurezza nel Centro sicurezza e membri del gruppo di ruoli Gestione organizzazione in **Exchange Online**.  
   - Per l'accesso in sola lettura ai criteri di recapito avanzati, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
 
-  Per ulteriori informazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md) e Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 security center](permissions-microsoft-365-security-center.md) e Permissions in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-## <a name="use-the-security--compliance-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Usare il Centro sicurezza & conformità per configurare simulazioni di phishing di terze parti nei criteri di recapito avanzati
+  > [!NOTE]
+  > L'aggiunta di utenti al ruolo di Azure Active Directory assegna agli  utenti le autorizzazioni necessarie nel Centro sicurezza e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
-1. Nel Centro sicurezza & conformità passare a **Gestione** delle minacce \> **Criteri** \> **Recapito avanzato.**
+## <a name="use-the-security-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utilizzare il Centro sicurezza per configurare le cassette postali SecOps nel criterio di recapito avanzato
 
-2. Nella pagina **Recapito avanzato** selezionare la scheda **Simulazione di phishing** e quindi fare clic su **Modifica.**
+1. Nel centro sicurezza passare a Criteri di **collaborazione** & posta elettronica & regole Criteri di minaccia \>  \>  \> **Sezione** \> **Regole recapito avanzato**.
 
-3. Nel riquadro **a comparsa Simulazione di phishing** di terze parti che si apre, configurare le impostazioni seguenti:
+2. Nella pagina **Recapito avanzato** verificare che la scheda Cassetta postale **SecOps** sia selezionata e quindi eseguire una delle operazioni seguenti:
+   - Fare ![ clic su Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica**.
+   - Se non sono presenti simulazioni di phishing configurate, fare clic su **Aggiungi.**
 
-   - **Dominio di invio:** è necessario almeno un dominio di indirizzo di posta elettronica (ad esempio, contoso.com). È possibile aggiungere fino a 10 voci.
-   - **IP di** invio: è necessario almeno un indirizzo IPv4 valido. È possibile aggiungere fino a 10 voci. I valori validi sono:
-     - IP singolo: ad esempio, 192.168.1.1.
-     - Intervallo IP: ad esempio, 192.168.0.1-192.168.0.254.
-     - IP CIDR: ad esempio, 192.168.0.1/25.
-   - **URL di simulazione per consentire:** facoltativamente, immettere URL specifici che fanno parte della campagna di simulazione di phishing che non devono essere bloccati o detonati. È possibile aggiungere fino a 10 voci.
+3. Nel riquadro a comparsa Modifica cassette postali **SecOps** visualizzato, immettere una cassetta postale di Exchange Online esistente che si desidera designare come cassetta postale SecOps eseguendo una delle operazioni seguenti:
+   - Fare clic nella casella, lasciare che l'elenco delle cassette postali si risolva e quindi selezionare la cassetta postale.
+   - Fare clic nella casella iniziare a digitare un identificatore per la cassetta postale (nome, nome visualizzato, alias, indirizzo di posta elettronica, nome account e così via) e selezionare la cassetta postale (nome visualizzato) dai risultati.
 
-4. Al termine, fare clic su **Salva.**
+     Ripetere questo passaggio tutte le volte necessarie. I gruppi di distribuzione non sono consentiti.
 
-Le voci di simulazione di phishing di terze parti configurate vengono visualizzate nella **scheda Simulazione di** phishing. Per apportare modifiche, **fare clic su** Modifica nella scheda.
-
-## <a name="use-the-security--compliance-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utilizzare il Centro sicurezza & conformità per configurare le cassette postali SecOps nel criterio di recapito avanzato
-
-1. Nel Centro sicurezza & conformità passare a Criteri di **gestione** delle minacce \>  \> **Recapito avanzato.**
-
-2. Nella pagina **Recapito avanzato** selezionare la scheda Cassetta **postale SecOps** e quindi fare clic su **Modifica.**
-
-3. Nel riquadro a comparsa della cassetta postale **SecOps** che si apre, immettere gli indirizzi di posta elettronica delle cassette postali Exchange Online esistenti che si desidera designare come cassette postali SecOps. I gruppi di distribuzione non sono consentiti.
+     Per rimuovere un valore esistente, fare clic su Rimuovi ![Icona Rimuovi](../../media/m365-cc-sc-remove-selection-icon.png) accanto al valore.
 
 4. Al termine, scegliere **Salva**.
 
-Le voci della cassetta postale SecOps configurate vengono visualizzate nella scheda Cassetta postale **SecOps.** Per apportare modifiche, **fare clic su** Modifica nella scheda.
+Le voci della cassetta postale SecOps configurate vengono visualizzate nella scheda Cassetta postale **SecOps.** Per apportare modifiche, fare ![ clic su Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica** nella scheda.
+
+## <a name="use-the-security-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Usare il Centro sicurezza per configurare simulazioni di phishing di terze parti nel criterio di recapito avanzato
+
+1. Nel centro sicurezza passare a Criteri di **collaborazione** & posta elettronica & regole Criteri di minaccia \>  \>  \> **Sezione** \> **Regole recapito avanzato**.
+
+2. Nella pagina **Recapito avanzato** selezionare la scheda **Simulazione di phishing** e quindi eseguire una delle operazioni seguenti:
+   - Fare ![ clic su Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica**.
+   - Se non sono presenti simulazioni di phishing configurate, fare clic su **Aggiungi.**
+
+3. Nel riquadro **a comparsa Modifica simulazione di phishing** di terze parti visualizzato configurare le impostazioni seguenti:
+
+   - **Dominio di** invio: espandere questa impostazione e immettere almeno un dominio dell'indirizzo di posta elettronica (ad esempio, contoso.com) facendo clic nella casella, immettendo un valore e quindi premendo INVIO o selezionando il valore visualizzato sotto la casella. Ripetere questo passaggio tutte le volte necessarie. È possibile aggiungere fino a 10 voci.
+   - **IP** di invio: espandere questa impostazione e immettere almeno un indirizzo IPv4 valido facendo clic nella casella, immettendo un valore e quindi premendo INVIO o selezionando il valore visualizzato sotto la casella. Ripetere questo passaggio tutte le volte necessarie. È possibile aggiungere fino a 10 voci. I valori validi sono:
+     - IP singolo: ad esempio, 192.168.1.1.
+     - Intervallo IP: ad esempio, 192.168.0.1-192.168.0.254.
+     - IP CIDR: ad esempio, 192.168.0.1/25.
+   - URL di simulazione da **consentire:** espandere questa impostazione e facoltativamente immettere URL specifici che fanno parte della campagna di simulazione di phishing che non devono essere bloccati o detonati facendo clic nella casella, immettendo un valore e quindi premendo INVIO o selezionando il valore visualizzato sotto la casella. È possibile aggiungere fino a 10 voci.
+
+   Per rimuovere un valore esistente, fare clic su Rimuovi ![Icona Rimuovi](../../media/m365-cc-sc-remove-selection-icon.png) accanto al valore.
+
+4. Al termine, eseguire una delle operazioni seguenti:
+   - **Prima volta**: fare **clic su Aggiungi** e quindi su **Chiudi.**
+   - **Modifica esistente**: fare clic **su Salva** e quindi su **Chiudi.**
+
+Le voci di simulazione di phishing di terze parti configurate vengono visualizzate nella **scheda Simulazione di** phishing. Per apportare modifiche, fare ![ clic su Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica** nella scheda.
 
 ## <a name="additional-scenarios-that-require-filtering-bypass"></a>Scenari aggiuntivi che richiedono il bypass del filtro
 
@@ -107,6 +124,6 @@ Oltre ai due scenari che possono essere utili per i criteri di recapito avanzati
 
 - **Filtri di terze parti:** se il *record* MX del dominio non punta a Office 365 (i messaggi vengono instradati da un'altra [parte),](secure-by-default.md) la protezione per impostazione predefinita non *è disponibile.*
 
-  Per ignorare il filtro Microsoft per i messaggi che sono già stati valutati dal filtro di terze parti, utilizzare le regole del flusso di posta (note anche come regole di trasporto), vedere [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md).
+  Per ignorare il filtro Microsoft per i messaggi che sono già stati valutati dal filtro di terze parti, utilizzare le regole del flusso di posta (note anche come regole di trasporto). Per ulteriori informazioni, vedere [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md).
 
-- **Falsi positivi in** esame: è possibile consentire temporaneamente a Determinati messaggi ancora [](admin-submission.md) analizzati da Microsoft tramite invii da parte dell'amministratore di segnalare a Microsoft messaggi positivi noti erroneamente contrassegnati come non corretti (falsi positivi). Come per tutte le sostituzioni, è **_consigliabile_** che tali quote siano effettuate temporaneamente.
+- **Falsi positivi in** esame: è possibile consentire temporaneamente a Determinati messaggi ancora [](admin-submission.md) analizzati da Microsoft tramite invii da parte dell'amministratore di segnalare a Microsoft messaggi positivi noti erroneamente contrassegnati come non corretti (falsi positivi). Come per tutte le sostituzioni, è **_consigliabile_** che queste quote siano temporanee.

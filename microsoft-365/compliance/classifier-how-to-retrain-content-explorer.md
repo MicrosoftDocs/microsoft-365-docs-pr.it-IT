@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Scopri come fornire feedback a un classificatore addestrabile in Esplora contenuto.
-ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918102"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793065"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Come ripetere il training di un classificatore in Esplora contenuto
 
-Un classificatore di Microsoft 365 addestrabile è uno strumento che è possibile addestrare a riconoscere vari tipi di contenuto fornendogli esempi da esaminare. Una volta addestrato, è possibile utilizzarlo per identificare l'elemento per l'applicazione delle etichette di riservatezza di Office, dei criteri di conformità delle comunicazioni e dei criteri delle etichette di conservazione.
+Un Microsoft 365 classificatore di cui è possibile eseguire il training è uno strumento che è possibile formare per riconoscere vari tipi di contenuto fornendogli esempi da esaminare. Una volta addestrato, è Office possibile utilizzarlo per identificare l'elemento per l'applicazione di etichette di riservatezza, criteri di conformità delle comunicazioni e criteri di etichetta di conservazione.
 
 Questo articolo illustra come migliorare le prestazioni dei classificatori addestrabili personalizzati e di alcuni classificatori pre-addestrati fornendo loro un feedback aggiuntivo.
 
@@ -39,7 +39,7 @@ Guarda questo video per un breve riepilogo del processo di ottimizzazione e riqu
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per accedere ai classificatori nel Centro conformità Microsoft 365:
+Per accedere ai classificatori nel Centro Microsoft 365 conformità:
 
 - il ruolo di amministratore della conformità o l'amministratore dei dati di conformità è necessario per formare un classificatore
 
@@ -50,7 +50,7 @@ Per usare i classificatori in questi scenari, sono necessari account con queste 
 ## <a name="overall-workflow"></a>Flusso di lavoro complessivo
 
 > [!IMPORTANT]
-> È possibile fornire commenti e suggerimenti in Esplora contenuto per applicare automaticamente i criteri delle etichette di conservazione agli elementi di Exchange e utilizzare il classificatore come condizione. **Se non si dispone di un criterio di conservazione che applica automaticamente un'etichetta di conservazione agli elementi di Exchange e utilizza un classificatore come condizione, arrestarsi qui.**
+> È possibile fornire commenti e suggerimenti in Esplora contenuto per applicare automaticamente i criteri delle etichette di conservazione Exchange elementi e utilizzare il classificatore come condizione. **Se non si dispone di un criterio di conservazione che applica automaticamente un'etichetta di conservazione agli elementi Exchange e usa un classificatore come condizione, arrestarsi qui.**
 
 Quando usi i classificatori, potresti voler aumentare la precisione delle classificazioni che stanno effettuando. A tale scopo, valutare la qualità delle classificazioni effettuate per gli elementi identificati come corrispondenti o meno. Dopo aver fatto 30 valutazioni per un classificatore, è necessario ricevere tale feedback e riqualificare automaticamente se stesso.
 
@@ -61,7 +61,7 @@ Per ulteriori informazioni sul flusso di lavoro complessivo di riqualificazione 
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Come ripetere il training di un classificatore in Esplora contenuto
 
-1. Accedere al Centro conformità Microsoft 365 con l'accesso al ruolo amministratore della conformità o amministratore della sicurezza e aprire Microsoft **365 Compliance Center**  >  **Data classification Content**  >  **explorer**. 
+1. Accedere al Centro Microsoft 365 conformità con l'accesso al ruolo amministratore della conformità o amministratore della sicurezza e aprire Microsoft 365 Centro conformità  >  **Gestione**  >  **contenuto**. 
 2. **Nell'elenco Filtra in base a etichette, tipi** di informazioni o categorie espandi **Classificatori sotto forma di classificatori.**
 
 > [!IMPORTANT]
@@ -96,7 +96,7 @@ Per ulteriori informazioni sul flusso di lavoro complessivo di riqualificazione 
 
 12. Esaminare l'azione consigliata e i confronti di previsione delle versioni di cui è stato eseguito il training e attualmente pubblicate del classificatore.
 13. Se si è soddisfatti dei risultati della riqualificazione, scegliere **Ri publish**.
-14. Se non si è soddisfatti dei risultati della riqualificazione, è possibile scegliere di fornire ulteriore feedback al classificatore nell'interfaccia di conformità delle comunicazioni e avviare un altro ciclo di riqualificazione o non eseguire alcuna operazione nel qual caso la versione attualmente pubblicata del classificatore continuerà a essere utilizzata. 
+14. Se non si è soddisfatti dei risultati della riqualificazione, è possibile scegliere di fornire ulteriore feedback al classificatore nell'interfaccia di Esplora contenuto e avviare un altro ciclo di riqualificazione o non eseguire alcuna operazione nel qual caso la versione attualmente pubblicata del classificatore continuerà a essere utilizzata. 
 
 ## <a name="details-on-republishing-recommendations"></a>Dettagli sulla ripubblicazione dei suggerimenti
 
