@@ -52,7 +52,7 @@
 
 ## [Configurare ed aggiungere dispositivi]()
 ### [Microsoft Defender per Endpoint su Windows e Server Windows]()
-#### [Aggiungere dispositivi a Microsoft Defender for Endpoint](onboard-configure.md)
+#### [Aggiungere dispositivi a Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Aggiungere versioni precedenti di Windows](onboard-downlevel.md)
 #### [Aggiungere di dispositivi Windows 10]()
 ##### [Aggiungere strumenti e metodi](configure-endpoints.md)
@@ -288,6 +288,9 @@
 ##### [Usare PowerShell cmdlets per gestire Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [Usare Strumentazione gestione Windows (WMI) per gestire Microsoft Defender Antivirus](use-wmi-microsoft-defender-antivirus.md)
 ##### [Usare lo strumento mpcmdrun.exe per gestire Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md)
+##### [Configurare le notifiche che vengono visualizzate negli endpoint](configure-notifications-microsoft-defender-antivirus.md)
+##### [Specificare se gli utenti possono modificare localmente le impostazioni dei criteri di Windows Defender Antivirus](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [Specificare se gli utenti possono vedere o interagire con l'interfaccia utente di Windows Defender Antivirus](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [Distribuire e creare report in Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Distribuire e abilitare in Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
@@ -456,13 +459,13 @@
 #### [Note sulla versione dell'API](api-release-notes.md)
 #### [API Microsoft Defender per endpointI]()
 ##### [Introduzione]()
-###### [Licenza e termini per API di Microsoft Defender for Endpoint](api-terms-of-use.md)
+###### [Licenza e termini per API di Microsoft Defender for Endpoint](api-terms-of-use.md)
 ###### [Accedere a API di Microsoft Defender per endpoint .](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Ottenere l'accesso con il contesto delle applicazioni](exposed-apis-create-app-webapp.md)
 ###### [Ottenere l'accesso con il contesto utente](exposed-apis-create-app-nativeapp.md)
 ###### [Ottenere l'accesso alle applicazioni partner](exposed-apis-create-app-partners.md)
-##### [Schema API Microsoft Defender per Endpoint]()
+##### [Schema API Microsoft Defender per Endpoint]()
 ###### [Accedere a API di Microsoft Defender per endpoint](exposed-apis-list.md)
 ###### [Codici di errore API REST comuni](common-errors.md)
 ###### [Rilevazione avanzata](run-advanced-query-api.md)
@@ -480,10 +483,10 @@
 ####### [Ottenere informazioni sugli utenti correlati agli avvisi](get-alert-related-user-info.md)
 
 ###### [Valutazione delle vulnerabilità e configurazioni sicure]()
-####### [Esportare metodi e proprietà di valutazione](get-assessmnt-1methods-properties.md)
-####### [Esportare valutazioni di configurazioni sicure](get-assessmnt-secure-cfg.md)
-####### [Esportare valutazioni di inventario software](get-assessmnt-software-inventory.md)
-####### [Esportare valutazioni delle vulnerabilità dei software](get-assessmnt-software-vulnerabilities.md)
+####### [Esportare metodi e proprietà di valutazione](get-assessment-methods-properties.md)
+####### [Esportare valutazioni di configurazioni sicure](get-assessment-secure-config.md)
+####### [Esportare valutazioni di inventario software](get-assessment-software-inventory.md)
+####### [Esportare valutazioni delle vulnerabilità dei software](get-assessment-software-vulnerabilities.md)
 
 ###### [Indagini automatizzate]()
 ####### [Metodi e proprietà di indagine](investigation.md)
@@ -602,7 +605,7 @@
 ##### [Informazioni sui diversi modi per eseguire il pull dei rilevamenti](configure-siem.md)
 ##### [Abilitare integrazione SIEM](enable-siem-integration.md)
 ##### [Configurare Micro Focus ArcSight per il pull dei rilevamenti](configure-arcsight.md)
-##### [Campi di rilevamento di Microsoft Defender for Endpoint ](api-portal-mapping.md)
+##### [Campi di rilevamento di Microsoft Defender for Endpoint ](api-portal-mapping.md)
 ##### [Pull dei rilevamenti con l'API REST SIEM](pull-alerts-using-rest-api.md)
 ##### [Recuperare gli avvisi dal tenant del cliente](fetch-alerts-mssp.md)
 ##### [Risolvere i problemi di integrazione degli strumenti SIEM](troubleshoot-siem.md)
@@ -633,14 +636,14 @@
 #### [Diventare un partner di Microsoft Defender per endpoint](get-started-partner-integration.md)
 
 ### [Integrazioni]()
-#### [Integrazioni Microsoft Defender for Endpoint](threat-protection-integration.md)
+#### [Integrazioni Microsoft Defender for Endpoint](threat-protection-integration.md)
 #### [Proteggere utenti, dati e dispositivi con l'accesso condizionale](conditional-access.md)
 #### [Panoramica integrazione di Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)
 
 ### [Panoramica di protezione delle informazioni in Windows]()
 #### [Integrazione di Windows](information-protection-in-windows-overview.md)
 
-### [Accedere a Microsoft Defender for Endpoint Community Center](community.md)
+### [Accedere a Microsoft Defender for Endpoint Community Center](community.md)
 
 ### [Risorse utili](helpful-resources.md)
 
