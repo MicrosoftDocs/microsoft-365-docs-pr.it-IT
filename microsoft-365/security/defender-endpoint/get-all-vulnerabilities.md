@@ -14,23 +14,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bfce003f586c5bfa32d65c834bb244ac13f6cf31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e9dd7e7d87e9343b0aae93e7ba47d89f9ed4bf41
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935090"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769006"
 ---
-# <a name="list-vulnerabilities"></a><span data-ttu-id="89694-104">Elencare vulnerabilità</span><span class="sxs-lookup"><span data-stu-id="89694-104">List vulnerabilities</span></span>
+# <a name="list-vulnerabilities"></a><span data-ttu-id="1843d-104">Elencare vulnerabilità</span><span class="sxs-lookup"><span data-stu-id="1843d-104">List vulnerabilities</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="89694-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="89694-105">**Applies to:**</span></span>
-- [<span data-ttu-id="89694-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="89694-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="89694-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="89694-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="1843d-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="1843d-105">**Applies to:**</span></span>
+- [<span data-ttu-id="1843d-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="1843d-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="1843d-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="1843d-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="89694-108">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="89694-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="89694-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="89694-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="1843d-108">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="1843d-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="1843d-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="1843d-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,48 +39,48 @@ ms.locfileid: "51935090"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-<span data-ttu-id="89694-110">Recupera un elenco di tutte le vulnerabilità che interessano l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="89694-110">Retrieves a list of all the vulnerabilities affecting the organization.</span></span>
+<span data-ttu-id="1843d-110">Recupera un elenco di tutte le vulnerabilità che interessano l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="1843d-110">Retrieves a list of all the vulnerabilities affecting the organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="89694-111">Autorizzazioni</span><span class="sxs-lookup"><span data-stu-id="89694-111">Permissions</span></span>
-<span data-ttu-id="89694-112">Per chiamare questa API è necessaria una delle autorizzazioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="89694-112">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="89694-113">Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi Usare Le API di [Microsoft Defender per endpoint](apis-intro.md) per i dettagli.</span><span class="sxs-lookup"><span data-stu-id="89694-113">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1843d-111">Autorizzazioni</span><span class="sxs-lookup"><span data-stu-id="1843d-111">Permissions</span></span>
+<span data-ttu-id="1843d-112">Per chiamare questa API è necessaria una delle autorizzazioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="1843d-112">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="1843d-113">Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi Usare Le API di [Microsoft Defender per endpoint](apis-intro.md) per i dettagli.</span><span class="sxs-lookup"><span data-stu-id="1843d-113">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
 
-<span data-ttu-id="89694-114">Tipo di autorizzazione</span><span class="sxs-lookup"><span data-stu-id="89694-114">Permission type</span></span> |   <span data-ttu-id="89694-115">Autorizzazione</span><span class="sxs-lookup"><span data-stu-id="89694-115">Permission</span></span>  |   <span data-ttu-id="89694-116">Nome visualizzato autorizzazione</span><span class="sxs-lookup"><span data-stu-id="89694-116">Permission display name</span></span>
+<span data-ttu-id="1843d-114">Tipo di autorizzazione</span><span class="sxs-lookup"><span data-stu-id="1843d-114">Permission type</span></span> |   <span data-ttu-id="1843d-115">Autorizzazione</span><span class="sxs-lookup"><span data-stu-id="1843d-115">Permission</span></span>  |   <span data-ttu-id="1843d-116">Nome visualizzato autorizzazione</span><span class="sxs-lookup"><span data-stu-id="1843d-116">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="89694-117">Applicazione</span><span class="sxs-lookup"><span data-stu-id="89694-117">Application</span></span> |   <span data-ttu-id="89694-118">Vulnerability.Read.All</span><span class="sxs-lookup"><span data-stu-id="89694-118">Vulnerability.Read.All</span></span> |    <span data-ttu-id="89694-119">"Leggere le informazioni sulla vulnerabilità di Gestione delle minacce e delle vulnerabilità"</span><span class="sxs-lookup"><span data-stu-id="89694-119">'Read Threat and Vulnerability Management vulnerability information'</span></span>
-<span data-ttu-id="89694-120">Delegato (account aziendale o dell'istituto di istruzione)</span><span class="sxs-lookup"><span data-stu-id="89694-120">Delegated (work or school account)</span></span> | <span data-ttu-id="89694-121">Vulnerability.Read</span><span class="sxs-lookup"><span data-stu-id="89694-121">Vulnerability.Read</span></span> |   <span data-ttu-id="89694-122">"Leggere le informazioni sulla vulnerabilità di Gestione delle minacce e delle vulnerabilità"</span><span class="sxs-lookup"><span data-stu-id="89694-122">'Read Threat and Vulnerability Management vulnerability information'</span></span>
+<span data-ttu-id="1843d-117">Applicazione</span><span class="sxs-lookup"><span data-stu-id="1843d-117">Application</span></span> |   <span data-ttu-id="1843d-118">Vulnerability.Read.All</span><span class="sxs-lookup"><span data-stu-id="1843d-118">Vulnerability.Read.All</span></span> |    <span data-ttu-id="1843d-119">"Leggere le informazioni sulla vulnerabilità di Gestione delle minacce e delle vulnerabilità"</span><span class="sxs-lookup"><span data-stu-id="1843d-119">'Read Threat and Vulnerability Management vulnerability information'</span></span>
+<span data-ttu-id="1843d-120">Delegato (account aziendale o dell'istituto di istruzione)</span><span class="sxs-lookup"><span data-stu-id="1843d-120">Delegated (work or school account)</span></span> | <span data-ttu-id="1843d-121">Vulnerability.Read</span><span class="sxs-lookup"><span data-stu-id="1843d-121">Vulnerability.Read</span></span> |   <span data-ttu-id="1843d-122">"Leggere le informazioni sulla vulnerabilità di Gestione delle minacce e delle vulnerabilità"</span><span class="sxs-lookup"><span data-stu-id="1843d-122">'Read Threat and Vulnerability Management vulnerability information'</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="89694-123">Richiesta HTTP</span><span class="sxs-lookup"><span data-stu-id="89694-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1843d-123">Richiesta HTTP</span><span class="sxs-lookup"><span data-stu-id="1843d-123">HTTP request</span></span>
 ```
 GET /api/vulnerabilities
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="89694-124">Intestazioni di richiesta</span><span class="sxs-lookup"><span data-stu-id="89694-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1843d-124">Intestazioni di richiesta</span><span class="sxs-lookup"><span data-stu-id="1843d-124">Request headers</span></span>
 
-<span data-ttu-id="89694-125">Name</span><span class="sxs-lookup"><span data-stu-id="89694-125">Name</span></span> | <span data-ttu-id="89694-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="89694-126">Type</span></span> | <span data-ttu-id="89694-127">Descrizione</span><span class="sxs-lookup"><span data-stu-id="89694-127">Description</span></span>
+<span data-ttu-id="1843d-125">Name</span><span class="sxs-lookup"><span data-stu-id="1843d-125">Name</span></span> | <span data-ttu-id="1843d-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="1843d-126">Type</span></span> | <span data-ttu-id="1843d-127">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1843d-127">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="89694-128">Autorizzazione</span><span class="sxs-lookup"><span data-stu-id="89694-128">Authorization</span></span> | <span data-ttu-id="89694-129">Stringa</span><span class="sxs-lookup"><span data-stu-id="89694-129">String</span></span> | <span data-ttu-id="89694-130">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="89694-130">Bearer {token}.</span></span> <span data-ttu-id="89694-131">**Obbligatorio**.</span><span class="sxs-lookup"><span data-stu-id="89694-131">**Required**.</span></span>
+<span data-ttu-id="1843d-128">Autorizzazione</span><span class="sxs-lookup"><span data-stu-id="1843d-128">Authorization</span></span> | <span data-ttu-id="1843d-129">Stringa</span><span class="sxs-lookup"><span data-stu-id="1843d-129">String</span></span> | <span data-ttu-id="1843d-130">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="1843d-130">Bearer {token}.</span></span> <span data-ttu-id="1843d-131">**Obbligatorio**.</span><span class="sxs-lookup"><span data-stu-id="1843d-131">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="89694-132">Corpo della richiesta</span><span class="sxs-lookup"><span data-stu-id="89694-132">Request body</span></span>
-<span data-ttu-id="89694-133">Vuoto</span><span class="sxs-lookup"><span data-stu-id="89694-133">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="1843d-132">Corpo della richiesta</span><span class="sxs-lookup"><span data-stu-id="1843d-132">Request body</span></span>
+<span data-ttu-id="1843d-133">Vuoto</span><span class="sxs-lookup"><span data-stu-id="1843d-133">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="89694-134">Risposta</span><span class="sxs-lookup"><span data-stu-id="89694-134">Response</span></span>
-<span data-ttu-id="89694-135">Se ha esito positivo, questo metodo restituisce 200 OK con l'elenco delle vulnerabilità nel corpo.</span><span class="sxs-lookup"><span data-stu-id="89694-135">If successful, this method returns 200 OK with the list of vulnerabilities in the body.</span></span>
+## <a name="response"></a><span data-ttu-id="1843d-134">Risposta</span><span class="sxs-lookup"><span data-stu-id="1843d-134">Response</span></span>
+<span data-ttu-id="1843d-135">Se ha esito positivo, questo metodo restituisce 200 OK con l'elenco delle vulnerabilità nel corpo.</span><span class="sxs-lookup"><span data-stu-id="1843d-135">If successful, this method returns 200 OK with the list of vulnerabilities in the body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="89694-136">Esempio</span><span class="sxs-lookup"><span data-stu-id="89694-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1843d-136">Esempio</span><span class="sxs-lookup"><span data-stu-id="1843d-136">Example</span></span>
 
-<span data-ttu-id="89694-137">**Richiesta**</span><span class="sxs-lookup"><span data-stu-id="89694-137">**Request**</span></span>
+<span data-ttu-id="1843d-137">**Richiesta**</span><span class="sxs-lookup"><span data-stu-id="1843d-137">**Request**</span></span>
 
-<span data-ttu-id="89694-138">Ecco un esempio della richiesta.</span><span class="sxs-lookup"><span data-stu-id="89694-138">Here is an example of the request.</span></span>
+<span data-ttu-id="1843d-138">Ecco un esempio della richiesta.</span><span class="sxs-lookup"><span data-stu-id="1843d-138">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
-<span data-ttu-id="89694-139">**Risposta**</span><span class="sxs-lookup"><span data-stu-id="89694-139">**Response**</span></span>
+<span data-ttu-id="1843d-139">**Risposta**</span><span class="sxs-lookup"><span data-stu-id="1843d-139">**Response**</span></span>
 
-<span data-ttu-id="89694-140">Ecco un esempio di risposta.</span><span class="sxs-lookup"><span data-stu-id="89694-140">Here is an example of the response.</span></span>
+<span data-ttu-id="1843d-140">Ecco un esempio di risposta.</span><span class="sxs-lookup"><span data-stu-id="1843d-140">Here is an example of the response.</span></span>
 
 
 ```json
@@ -107,6 +108,6 @@ GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="89694-141">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="89694-141">See also</span></span>
-- [<span data-ttu-id="89694-142">Gestione delle vulnerabilità basata sui rischi & rischio</span><span class="sxs-lookup"><span data-stu-id="89694-142">Risk-based Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [<span data-ttu-id="89694-143">Vulnerabilità nell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="89694-143">Vulnerabilities in your organization</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+## <a name="see-also"></a><span data-ttu-id="1843d-141">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="1843d-141">See also</span></span>
+- [<span data-ttu-id="1843d-142">Gestione delle vulnerabilità basata sui rischi & rischio</span><span class="sxs-lookup"><span data-stu-id="1843d-142">Risk-based Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="1843d-143">Vulnerabilità nell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="1843d-143">Vulnerabilities in your organization</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

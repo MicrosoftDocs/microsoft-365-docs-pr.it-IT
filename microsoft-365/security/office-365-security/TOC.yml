@@ -66,6 +66,8 @@
           href: protect-against-threats.md
         - name: Integrare Defender per Office 365 con Defender per endpoint
           href: integrate-office-365-ti-with-mde.md
+        - name: Autorizzazioni nel Centro sicurezza Microsoft 365
+          href: permissions-microsoft-365-security-center.md
         - name: Autorizzazioni nel Centro sicurezza e conformità
           href: permissions-in-the-security-and-compliance-center.md
         - name: Integrazione del server SIEM
