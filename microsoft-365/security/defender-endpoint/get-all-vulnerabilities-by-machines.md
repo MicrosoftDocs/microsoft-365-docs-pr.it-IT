@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 229c1f9e77a0cb85744155e82934b48dd63052b2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3aa58f3df4a4c3562cbd4dfbf6113c30816e2a0f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933410"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769208"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Elencare le vulnerabilità per computer e software
 
@@ -43,7 +44,7 @@ Recupera un elenco di tutte le vulnerabilità che interessano l'organizzazione p
 - OData ```$filter``` è supportato in tutte le proprietà.
 
 >[!Tip]
->Si tratta di un'API ideale per [l'integrazione di Power BI.](api-power-bi.md)
+>Si tratta di un'API ideale per [Power BI integrazione .](api-power-bi.md)
 
 ## <a name="permissions"></a>Autorizzazioni
 Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi Usare Le API di [Microsoft Defender per endpoint](apis-intro.md) per i dettagli.
@@ -119,5 +120,5 @@ Ecco un esempio di risposta.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Gestione delle minacce e delle vulnerabilità basate sui rischi](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Rischi basati su gestione di minacce e vulnerabilità](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilità nell'organizzazione](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

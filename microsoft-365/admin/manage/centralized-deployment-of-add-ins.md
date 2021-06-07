@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo da poter utilizzare la distribuzione centralizzata per distribuire Office componenti aggiuntivi.
-ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635451"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782488"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -84,13 +84,13 @@ Contattare l'amministratore di Exchange dell'organizzazione per sapere quale con
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Verifica compatibilità distribuzione centralizzata
 
-Utilizzando Verifica compatibilità distribuzione centralizzata, è possibile verificare se gli utenti del tenant sono impostati per l'utilizzo della distribuzione centralizzata per Word, Excel e PowerPoint. Verifica compatibilità non è necessario per il supporto di Outlook. Scaricare Verifica compatibilità [qui](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Utilizzando Verifica compatibilità distribuzione centralizzata, è possibile verificare se gli utenti del tenant sono impostati per l'utilizzo della distribuzione centralizzata per Word, Excel e PowerPoint. Verifica compatibilità non è necessario per il supporto di Outlook. Scarica verifica [compatibilità](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
   
 #### <a name="run-the-compatibility-checker"></a>Eseguire Verifica compatibilità
   
 1. Avviare una finestra PowerShell.exe elevata.
     
-2. Eseguire il comando riportato di seguito:
+2. Eseguire il comando seguente:
 
    ```powershell
    Import-Module O365CompatibilityChecker
@@ -121,7 +121,7 @@ Al termine dell'esecuzione dello strumento, viene generato un file di output in 
 - Cassetta postale supportata: se la cassetta postale è abilitata per OAuth
 
 > [!NOTE]
-> L'autenticazione a più fattori non è supportata quando si utilizza il modulo PowerShell per la distribuzione centrale.
+> L'autenticazione a più fattori non è supportata quando si utilizza il modulo PowerShell per la distribuzione centrale. Il modulo funziona solo con l'autenticazione di base.
   
 ## <a name="user-and-group-assignments"></a>Assegnazioni di utenti e gruppi
 
@@ -155,7 +155,7 @@ Se l'utente o gli utenti riscontrano problemi durante il caricamento del compone
   
 |**Piattaforma**|**Informazioni di debug**|
 |:-----|:-----|
-|Office  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. Visualizzare l'origine di una delle pagine di Office e cercare il valore id correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Visualizzare l'origine di una delle pagine di Office e cercare il valore id correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich client (Windows, Mac)  <br/> | Log di Charles/Fiddler  <br/>  Numeri di build dell'app client (preferibilmente come screenshot da **File/Account)**  <br/> |
 
 ## <a name="related-content"></a>Contenuto correlato

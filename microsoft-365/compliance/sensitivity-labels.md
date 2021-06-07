@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 171f449a8b73ff42113358d50dbe8bde909f5d4d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625186"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730247"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -174,7 +174,7 @@ Se si modifica un'etichetta di riservatezza, sarà applicata al contenuto la ver
 
 ## <a name="what-label-policies-can-do"></a>Operazioni eseguibili dai criteri di etichetta
 
-Dopo aver creato le etichette di riservatezza, è necessario pubblicarle per renderle disponibili a utenti e servizi dell'organizzazione. Sarà quindi possibile applicare le etichette di riservatezza a messaggi di posta elettronica e documenti di Office e ad altri elementi che le supportano. 
+Dopo aver creato le etichette di riservatezza, è necessario pubblicarle per renderle disponibili agli utenti e ai servizi dell'organizzazione. Sarà quindi possibile applicare le etichette di riservatezza a messaggi di posta elettronica e documenti di Office e ad altri elementi che le supportano. 
 
 A differenza delle etichette di conservazione, che vengono pubblicate in posizioni, ad esempio tutte le cassette postali di Exchange, le etichette di riservatezza vengono pubblicate a utenti o gruppi. Le app che supportano le etichette di riservatezza possono quindi mostrarle a tali utenti e gruppi come etichette applicate oppure come etichette che possono essere applicate.
 
@@ -182,7 +182,7 @@ Quando si configura un criterio di etichetta, è possibile:
 
 - **Scegliere gli utenti e i gruppi che vedranno le etichette.** Le etichette possono essere pubblicate per qualsiasi utente specifico, gruppo di sicurezza abilitato per la posta elettronica, gruppo di distribuzione o gruppo di Microsoft 365, che può avere [appartenenza dinamica](/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD.
 
-- **Applicare un’etichetta predefinita** a tutti i nuovi documenti e messaggi di posta elettronica creati dagli utenti e dai gruppi inclusi nel criterio dell’etichetta e la stessa o una differente etichetta predefinita ai contenitori (se sono state [abilitate le etichette di riservatezza per Microsoft Teams, i gruppi di Microsoft 365 e i siti di SharePoint](sensitivity-labels-teams-groups-sites.md)). Con questa impostazione, il client di etichettatura unificata di Azure Information Protection applica l'etichetta predefinita anche ai documenti esistenti senza etichetta. Gli utenti possono sempre modificare l'etichetta predefinita, se non è quella giusta per il documento o la posta elettronica.
+- **Specificare un'etichetta predefinita** per nuovi documenti, messaggi di posta elettronica senza etichetta e nuovi contenitori (dopo aver [abilitato etichette di riservatezza per Microsoft Teams, Gruppi di Microsoft 365 e siti SharePoint](sensitivity-labels-teams-groups-sites.md)). È possibile specificare la stessa etichetta per tutti e tre i tipi di elementi oppure etichette diverse. Quando si specifica un'etichetta predefinita per i documenti, il client di etichettatura unificata di Azure Information Protection la applica anche ai documenti esistenti senza etichetta. Gli utenti possono sempre modificare l'etichetta predefinita, se non è quella giusta per il documento o la posta elettronica.
     
     Considerare l'uso di un'etichetta predefinita per impostare un livello di impostazioni di sicurezza di base da applicare a tutto il contenuto. Tuttavia, in mancanza di formazione per gli utenti e di altri controlli, questa impostazione può anche risultare nell'applicazione di etichette non corrette. In genere non è consigliabile selezionare un'etichetta che applica la crittografia come etichetta predefinita dei documenti. Ad esempio, molte organizzazioni devono inviare e condividere documenti con utenti esterni che potrebbero non avere app che supportano la crittografia o che potrebbero non usare un  account che può essere autorizzato. Per altre informazioni su questo scenario, vedere [Condivisione di documenti crittografati con utenti esterni](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 
@@ -190,7 +190,7 @@ Quando si configura un criterio di etichetta, è possibile:
 
     ![Finestra in cui gli utenti immettono una motivazione](../media/Sensitivity-label-justification-required.png)
 
-- **Richiedere agli utenti di applicare un'etichetta** con un'opzione per i messaggi di posta elettronica e documenti e un'altra per i contenitori. Questa opzione, nota anche come etichettatura obbligatoria, assicura l'applicazione di un'etichetta prima che gli utenti possano salvare documenti, inviare messaggi di posta elettronica e creare nuovi gruppi o siti.
+- **Richiedere agli utenti di applicare un'etichetta** per documenti e messaggi di posta elettronica, solo documenti e per contenitori. Questa opzione, nota anche come etichettatura obbligatoria, assicura l'applicazione di un'etichetta prima che gli utenti possano salvare documenti, inviare messaggi di posta elettronica e creare nuovi gruppi o siti.
     
     Per i documenti e i messaggi di posta elettronica, l'etichetta può essere assegnata manualmente dall'utente, automaticamente in seguito a una condizione configurata oppure assegnata per impostazione predefinita ( l'opzione per l'etichetta predefinita descritta in precedenza). Esempio di messaggio di richiesta mostrato in Outlook quando un utente deve assegnare un'etichetta:
 

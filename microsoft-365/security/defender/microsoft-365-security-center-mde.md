@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 487fc87c613d7321e3ae608097d98d2c90f8874e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639408"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771910"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender for Endpoint nel centro sicurezza Microsoft 365 sicurezza
 
@@ -177,6 +177,10 @@ Se usi [l'API Defender for Endpoint SIEM,](../defender-endpoint/enable-siem-inte
 ### <a name="email-alerts"></a>Avvisi tramite posta elettronica
 
 Puoi continuare a usare gli avvisi di posta elettronica per Defender per Endpoint. Sono stati aggiunti nuovi collegamenti nei messaggi di posta elettronica che puntano alla pagina di avviso o alla pagina dell'evento imprevisto nel centro sicurezza Microsoft 365 sicurezza. Per altre informazioni, vedi [Reindirizzamento degli account da Microsoft Defender per Endpoint](./microsoft-365-security-mde-redirection.md)al centro sicurezza Microsoft 365 sicurezza .
+
+### <a name="managed-security-service-providers-mssp"></a>Provider di servizi di sicurezza gestiti (MSSP)
+
+L'accesso a più tenant contemporaneamente nella stessa sessione di esplorazione non è attualmente supportato nel portale unificato. Puoi rifiutare esplicitamente il reindirizzamento automatico ripristinando l'ex [portale di Microsoft Defender for Endpoint](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal)per mantenere questa funzionalità fino a quando il problema non viene risolto.
 
 ## <a name="related-information"></a>Informazioni correlate
 

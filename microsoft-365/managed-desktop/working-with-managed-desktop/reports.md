@@ -1,7 +1,7 @@
 ---
 title: Usare i report
 description: I vari report disponibili in Microsoft Managed Desktop
-keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 28035a9f0a669c1daa7526d0b1fefac52a77c81a
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b37ce09a0781aa83970502224ddbb3658ed07d69
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52729969"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771886"
 ---
 # <a name="work-with-reports"></a>Usare i report
 
-Microsoft Managed Desktop fornisce diversi report e dashboard che gli amministratori IT dell'organizzazione possono usare per comprendere diversi aspetti della popolazione di dispositivi.I report sono disponibili in due posizioni: in [Microsoft Endpoint Manager](https://endpoint.microsoft.com) e nell'Microsoft 365 [admin center.](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop) 
+Microsoft Managed Desktop fornisce diversi report e dashboard che gli amministratori IT dell'organizzazione possono usare per comprendere diversi aspetti della popolazione di dispositivi. 
 
 ## <a name="reports-in-microsoft-endpoint-manager"></a>Report in Microsoft Endpoint Manager
 
@@ -37,6 +37,13 @@ Inoltre, in diverse posizioni in Microsoft Endpoint Manager è possibile filtrar
 > [!NOTE]
 > I Microsoft Managed Desktop personalizzati garantiscono l'accesso solo ai Microsoft Managed Desktop report. Per accedere ad altre parti di Microsoft Endpoint Manager, ad esempio **Tutti** i dispositivi, vedi Controllo dell'accesso basato sui ruoli [con](/mem/intune/fundamentals/role-based-access-control)Microsoft Intune . 
 
+## <a name="endpoint-analytics"></a>Endpoint analytics
+Microsoft Managed Desktop è ora integrato con [Endpoint Analytics.](/mem/analytics/overview) Questi report offrono informazioni dettagliate per la misurazione del funzionamento dell'organizzazione e della qualità dell'esperienza consegnata agli utenti. Endpoint Analytics è disponibile nel menu **Report** di [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Per eseguire il pivot di un punteggio per includere solo i  dispositivi gestiti da Microsoft Managed Desktop passare a qualsiasi report, selezionare l'elenco a discesa Filtro e quindi selezionare Microsoft Managed Desktop **dispositivi**.
+
+Se Endpoint Analytics non è stato configurato automaticamente per l'organizzazione di Azure AD ("tenant") durante la registrazione, è possibile farlo manualmente. Per altre informazioni, vedi [Onboard nel portale di endpoint analytics.](/mem/analytics/enroll-intune#bkmk_onboard) Puoi registrare tutti i dispositivi o, se vuoi includere solo  i dispositivi Microsoft Managed Desktop, seleziona i gruppi moderni di dispositivi aziendali per Test, First, Fast e Broad. Questi report potrebbero richiedere autorizzazioni diverse. Per ulteriori informazioni, vedere [Autorizzazioni per](/mem/analytics/overview#permissions) assicurarsi che i ruoli siano assegnati in modo appropriato.
+
+> [!NOTE]
+> Per rispettare meglio la privacy degli utenti, devono essere presenti più di 10 Microsoft Managed Desktop registrati con Endpoint Analytics per usare questo filtro.
 
  ## <a name="inventory-data"></a>Dati di inventario
 

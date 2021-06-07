@@ -16,13 +16,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3872976717a5b472ab8d471db7eff9975dbc2258
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 252b273995d48d523604802c0c4365a613d86dbe
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587684"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771730"
 ---
 # <a name="investigation-resource-type"></a>Tipo di risorsa di indagine
 

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bfce003f586c5bfa32d65c834bb244ac13f6cf31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e9dd7e7d87e9343b0aae93e7ba47d89f9ed4bf41
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935090"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769006"
 ---
 # <a name="list-vulnerabilities"></a>Elencare vulnerabilità
 

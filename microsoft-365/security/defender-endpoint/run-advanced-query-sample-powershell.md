@@ -15,15 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 20c63daaf61b85f35aaceccb540b6d50824c801d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 9192662b8d4ed23a5903dddb555f07bf182ab17f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198672"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771502"
 ---
-# <a name="advanced-hunting-using-powershell"></a>Ricerca avanzata tramite PowerShell
+# <a name="advanced-hunting-using-powershell"></a>Rilevazione avanzata con PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -129,4 +130,4 @@ $results | ConvertTo-Json | Set-Content file1.json
 ## <a name="related-topic"></a>Argomento correlato
 - [API di Microsoft Defender per endpoint](apis-intro.md)
 - [Rilevazione avanzata API](run-advanced-query-api.md)
-- [Ricerca avanzata con Python](run-advanced-query-sample-python.md)
+- [Rilevazione avanzata con Python](run-advanced-query-sample-python.md)

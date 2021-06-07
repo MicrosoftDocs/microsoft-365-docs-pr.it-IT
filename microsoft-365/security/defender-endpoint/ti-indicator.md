@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bbd908c15f4d65d4923c088261c92de6d2d3cc35
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 75b62f1bada67c30dc05237a284f8b64c3c7072d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187208"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771382"
 ---
 # <a name="indicator-resource-type"></a>Tipo di risorsa indicatore
 
@@ -42,8 +43,8 @@ ms.locfileid: "51187208"
 
 Metodo|Tipo restituito |Descrizione
 :---|:---|:---
-[Indicatori elenco](get-ti-indicators-collection.md) | [Indicatore](ti-indicator.md) Raccolta | Entità [indicatore](ti-indicator.md) elenco.
-[Indicatore di invio](post-ti-indicator.md) | [Indicatore](ti-indicator.md) | Inviare o aggiornare [l'entità Indicatore.](ti-indicator.md)
+[Elenca indicatori](get-ti-indicators-collection.md) | [Indicatore](ti-indicator.md) Raccolta | Entità [indicatore](ti-indicator.md) elenco.
+[Invia indicatore](post-ti-indicator.md) | [Indicatore](ti-indicator.md) | Inviare o aggiornare [l'entità Indicatore.](ti-indicator.md)
 [Indicatori di importazione](import-ti-indicators.md) | [Indicatore](ti-indicator.md) Raccolta | Inviare o aggiornare [entità](ti-indicator.md) Indicatori.
 [Elimina indicatore](delete-ti-indicator-by-id.md) | Nessun contenuto | Elimina [l'entità Indicatore.](ti-indicator.md)
 

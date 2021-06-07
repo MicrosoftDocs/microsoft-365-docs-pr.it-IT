@@ -1,5 +1,5 @@
 ---
-title: Proprietà e metodi software
+title: Metodi e proprietà di software
 description: Recupera gli avvisi recenti principali.
 keywords: api, api del grafico, api supportate, ottenere, avvisi, recenti
 search.product: eADQiWindows 10XVcnh
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9bfec2c4e65a390189556c14347eaf17236fb95e
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 14291cbbba2272d268a8e79b6df7bd87992885db
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187200"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771406"
 ---
 # <a name="software-resource-type"></a>Tipo di risorsa software
 
@@ -45,12 +46,12 @@ ms.locfileid: "51187200"
 
 Metodo |Tipo restituito |Descrizione
 :---|:---|:---
-[Software elenco](get-software.md) | Raccolta software | Elencare l'inventario software dell'organizzazione.
-[Ottenere il software in base all'ID](get-software-by-id.md) | Software | Ottenere un software specifico in base al relativo ID software.
-[List software version distribution](get-software-ver-distribution.md)| Raccolta di distribuzione | Elencare la distribuzione delle versioni software in base all'ID software.
-[Elencare i computer in base al software](get-machines-by-software.md)| Insieme MachineRef | Recupera un elenco di dispositivi associati all'ID software.
-[Elencare le vulnerabilità in base al software](get-vuln-by-software.md) | [Raccolta di vulnerabilità](vulnerability.md) | Recuperare un elenco di vulnerabilità associate all'ID software.
-[Ottenere gli indicatori KPI mancanti](get-missing-kbs-software.md) | Raccolta KB | Ottenere un elenco di indicatori KPI mancanti associati all'ID software
+[Elencare il software](get-software.md) | Raccolta software | Elencare l'inventario software dell'organizzazione.
+[Ottenere il software per Id](get-software-by-id.md) | Software | Ottenere un software specifico in base al relativo ID software.
+[Elencare distribuzione versione software](get-software-ver-distribution.md)| Raccolta di distribuzione | Elencare la distribuzione delle versioni software in base all'ID software.
+[Elencare i computer per software](get-machines-by-software.md)| Insieme MachineRef | Recupera un elenco di dispositivi associati all'ID software.
+[Elencare le vulnerabilità per software](get-vuln-by-software.md) | [Raccolta di vulnerabilità](vulnerability.md) | Recuperare un elenco di vulnerabilità associate all'ID software.
+[Recuperare i KB mancanti](get-missing-kbs-software.md) | Raccolta KB | Ottenere un elenco di indicatori KPI mancanti associati all'ID software
 
 ## <a name="properties"></a>Proprietà
 

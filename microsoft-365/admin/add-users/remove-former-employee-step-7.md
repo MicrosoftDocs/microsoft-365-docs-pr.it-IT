@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Seguire questa procedura per eliminare l'account utente di un ex dipendente.
-ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535939"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782382"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Passaggio 7 - Eliminare l'account utente di un ex dipendente
 
@@ -48,7 +48,7 @@ Quando si elimina un utente, il suo account diventa inattivo per circa 30 giorni
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 ## <a name="does-your-organization-use-active-directory"></a>L'organizzazione usa Active Directory?
 
@@ -56,7 +56,7 @@ Se l'organizzazione sincronizza gli account utente Microsoft 365 da un ambiente 
 
 Per informazioni su come eliminare e ripristinare un account utente in Active Directory, vedere [Delete a User Account.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
   
-Se si usa Azure Active Directory, vedere il cmdlet [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) di PowerShell.
+Se si usa Azure Active Directory, vedere il cmdlet [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) di PowerShell.
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>Cosa occorre sapere sulla chiusura delle sessione di posta elettronica di un dipendente
 
@@ -84,8 +84,6 @@ Le operazioni precedenti possono essere eseguite in tre posizioni:
   
  **Metodo più rapido per utenti con presenza locale e nel data center di Exchange**: terminare la sessione con l'interfaccia di amministrazione di Exchange o di Azure Active Directory E apportare le modifiche anche nell'ambiente locale. In caso contrario, le modifiche nell'interfaccia di amministrazione di Exchange o di Azure Active Directory verranno sovrascritte da DirSync.
   
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Ripristinare un utente](restore-user.md)
-
-[Reimpostare password](reset-passwords.md)
+[Ripristinare un utente](restore-user.md) (articolo)/ [Reimpostare le password](reset-passwords.md) (articolo)

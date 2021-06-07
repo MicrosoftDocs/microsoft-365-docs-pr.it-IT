@@ -9,22 +9,21 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b3460e2c9b6073c518bea46147be69d4b89cd96a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/02/2021
+ms.openlocfilehash: 5bdb7ed46bdf01d4fb6075f310b98dcdb98a5a7f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538640"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771922"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Abilitare regole per la riduzione della superficie di attacco
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
 
@@ -55,7 +54,7 @@ Ogni regola asr contiene una delle quattro impostazioni seguenti:
 > [!IMPORTANT]
 > Attualmente, la modalità avviso non è supportata per tre regole asr quando si configurano le regole di ripristino asr in Microsoft Endpoint Manager (MEM). Per altre informazioni, vedi [Casi in cui la modalità avviso non è supportata.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-È consigliabile usare le regole asr con una licenza di Windows E5 (o SKU di licenza simile) per sfruttare le funzionalità avanzate di monitoraggio e creazione di report disponibili in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender for Endpoint). Tuttavia, per altre licenze come Windows Professional o E3 che non hanno accesso alle funzionalità avanzate di monitoraggio e creazione di report, è possibile sviluppare strumenti di monitoraggio e creazione di report personalizzati oltre agli eventi generati in ogni endpoint quando vengono attivate le regole di ripristino del codice "AsR" (ad esempio, Inoltro eventi).
+È consigliabile usare le regole asr con una licenza di Windows E5 (o una SKU di licenza simile) per sfruttare le funzionalità avanzate di monitoraggio e creazione di report disponibili in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). Tuttavia, se si dispone di un'altra licenza, ad esempio Windows Professional o Windows E3 che non include funzionalità avanzate di monitoraggio e creazione di report, è possibile sviluppare strumenti di monitoraggio e creazione di report personalizzati oltre agli eventi generati in ogni endpoint quando vengono attivate le regole asr (ad esempio, Inoltro eventi).
 
 > [!TIP]
 > Per ulteriori informazioni sulle licenze Windows, vedere [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) e ottenere la guida per contratti [multilicenza per Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -74,7 +73,7 @@ Enterprise è consigliata la gestione a livello di Microsoft Endpoint Manager, a
 
 È possibile escludere file e cartelle dalla maggior parte delle regole di riduzione della superficie di attacco. Ciò significa che, anche se una regola asr determina che il file o la cartella contiene comportamenti dannosi, non blocchi l'esecuzione del file. Ciò potrebbe potenzialmente consentire l'esecuzione di file non sicuri e infettare i dispositivi.
 
-Puoi anche escludere le regole asr dall'attivazione in base agli hash di certificati e file consentendo a Defender per gli indicatori di certificato e file dell'endpoint specificati. (Vedere [Gestire gli indicatori](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators).)
+Puoi anche escludere le regole asr dall'attivazione in base agli hash di certificati e file consentendo a Defender per gli indicatori di certificato e file dell'endpoint specificati. (Vedere [Gestire gli indicatori](manage-indicators.md).)
 
 > [!IMPORTANT]
 > L'esclusione di file o cartelle può ridurre notevolmente la protezione fornita dalle regole asr. L'esecuzione dei file esclusi sarà consentita e non verrà registrato alcun report o evento.
@@ -82,7 +81,7 @@ Puoi anche escludere le regole asr dall'attivazione in base agli hash di certifi
 
 È possibile specificare singoli file o cartelle (utilizzando percorsi di cartelle o nomi di risorse completi), ma non è possibile specificare le regole a cui si applicano le esclusioni. Un'esclusione viene applicata solo all'avvio dell'applicazione o del servizio escluso. Ad esempio, se si aggiunge un'esclusione per un servizio di aggiornamento già in esecuzione, il servizio di aggiornamento continuerà a attivare eventi finché il servizio non viene arrestato e riavviato.
 
-Le regole asr supportano variabili di ambiente e caratteri jolly. Per informazioni sull'utilizzo dei caratteri jolly, vedere [Use wildcards in the file name and folder path or extension exclusion lists](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+Le regole asr supportano variabili di ambiente e caratteri jolly. Per informazioni sull'utilizzo dei caratteri jolly, vedere [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
 Le procedure seguenti per l'abilitazione delle regole asr includono istruzioni su come escludere file e cartelle.
 
@@ -180,7 +179,7 @@ Puoi usare l'URI OMA Microsoft Endpoint Manager (MEM) per configurare regole asr
 
 ## <a name="mdm"></a>MDM
 
-Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) per abilitare e impostare singolarmente la modalità per ogni regola.
+Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) per abilitare e impostare singolarmente la modalità per ogni regola.
 
 Di seguito è riportato un esempio di riferimento, utilizzando [i valori GUID per le regole asr.](attack-surface-reduction.md#attack-surface-reduction-rules)
 
@@ -195,7 +194,7 @@ I valori da abilitare (blocca), disabilitare, avvisare o abilitare in modalità 
 - 2 : Controllo (valutare l'impatto della regola asr sull'organizzazione se abilitata)
 - 6 : avvisa (abilita la regola asr ma consenti all'utente finale di ignorare il blocco). La modalità avviso è ora disponibile per la maggior parte delle regole asr.
 
-Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) per aggiungere esclusioni.
+Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) per aggiungere esclusioni.
 
 Esempio:
 
@@ -275,7 +274,7 @@ Esempio:
     Per abilitare AsR Bloccare l'abuso di driver firmati vulnerabili sfruttati, utilizzare il cmdlet seguente:
 
    ```PowerShell
-   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled
    ```
 
     Per disattivare le regole asr, utilizzare il cmdlet seguente:

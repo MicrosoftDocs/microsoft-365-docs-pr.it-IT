@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Con Microsoft 365 gruppi, è possibile guidare il lavoro di team Microsoft 365 offrendo a un gruppo di persone l'accesso a una raccolta di risorse condivise.
-ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635751"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782394"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Panoramica dei gruppi di Microsoft 365 per gli amministratori
 
@@ -45,7 +45,7 @@ Microsoft 365 I gruppi sono il servizio di appartenenza di base che guida tutto 
 
 Con un Microsoft 365, non è necessario assegnare manualmente le autorizzazioni a ognuna di queste risorse. L'aggiunta automatica di persone al gruppo offre loro le autorizzazioni necessarie.
 
-Qualsiasi utente può creare un gruppo a meno che non si limiti la creazione [del gruppo a un set specifico di persone.](../../solutions/manage-creation-of-groups.md) Se si limita la creazione di gruppi, gli utenti che non possono creare gruppi non potranno creare SharePoint siti, planner o team. Questi servizi richiedono che gli utenti che li creano siano in grado di creare un gruppo. Gli utenti possono comunque partecipare ad attività di gruppo, ad esempio la creazione di attività in Planner o Teams chat, purché siano membri del gruppo.
+Qualsiasi utente può creare un gruppo a meno che non si limiti la creazione [del gruppo a un set specifico di persone.](../../solutions/manage-creation-of-groups.md) Se si limita la creazione di gruppi, gli utenti che non possono creare gruppi non potranno creare siti di SharePoint, planner, team, calendari di gruppi di Outlook, gruppi di flusso, gruppi di Yammer, raccolte condivise in OneDrive o aree di lavoro Power BI condivise. Questi servizi richiedono che gli utenti che li creano siano in grado di creare un gruppo. Gli utenti possono comunque partecipare ad attività di gruppo, ad esempio la creazione di attività in Planner o Teams chat, purché siano membri del gruppo.
 
 I gruppi hanno i ruoli seguenti:
 

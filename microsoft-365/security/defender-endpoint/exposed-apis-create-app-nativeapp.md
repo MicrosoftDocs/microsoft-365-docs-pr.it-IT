@@ -1,7 +1,7 @@
 ---
 title: Usare Microsoft Defender per le API degli endpoint
 ms.reviewer: ''
-description: Scopri come progettare un'app nativa di Windows per ottenere l'accesso a livello di programmazione a Microsoft Defender per Endpoint senza un utente.
+description: Scopri come progettare un'app Windows nativa per ottenere l'accesso a livello di codice a Microsoft Defender per Endpoint senza un utente.
 keywords: api, api del grafico, api supportate, attore, avvisi, dispositivo, utente, dominio, ip, file, ricerca avanzata, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 5e59ff75a7933cf52af857f1a41b0925aa7bb47a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8f23a0b269986f4caa199ad3744c563fcc6ff6b2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198914"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769102"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Usare Microsoft Defender per le API degli endpoint
 
@@ -43,7 +44,7 @@ Se è necessario accedere a livello di codice a Microsoft Defender for Endpoint 
 
 Se non si è certi dell'accesso necessario, leggere la [pagina Introduzione.](apis-intro.md)
 
-Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti consentiranno di automatizzare i flussi di lavoro e innovare in base alle funzionalità di Microsoft Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere Flusso del codice di autorizzazione [OAuth 2.0.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti consentiranno di automatizzare i flussi di lavoro e innovare in base alle funzionalità di Microsoft Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In generale, dovrai eseguire la procedura seguente per usare le API:
 - Creare un'applicazione AAD
@@ -63,9 +64,9 @@ Questa pagina spiega come creare un'applicazione AAD, ottenere un token di acces
 
 1. Accedere ad [Azure](https://portal.azure.com) con un account utente con il **ruolo amministratore** globale.
 
-2. Passare ad **Azure Active Directory** App  >  **registrations** Nuova  >  **registrazione**. 
+2. Passare **a** Azure Active Directory  >  **app Nuove**  >  **registrazioni**. 
 
-   ![Immagine di Microsoft Azure e spostamento nella registrazione dell'applicazione](images/atp-azure-new-app2.png)
+   ![Immagine dell'Microsoft Azure e della navigazione per la registrazione dell'applicazione](images/atp-azure-new-app2.png)
 
 3. Quando viene **visualizzata la pagina Registra** un'applicazione, immettere le informazioni di registrazione dell'applicazione:
 

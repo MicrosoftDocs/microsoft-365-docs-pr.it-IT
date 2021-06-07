@@ -694,7 +694,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: Visualizzare i documenti in un insieme da rivedere
               href: view-documents-in-review-set.md
-            - name: Eseguire query sui dati in un insieme da rivedere
+            - name: Query e contenuto del filtro in un insieme da rivedere
               href: review-set-search.md
             - name: Contrassegnare i documenti in un insieme da rivedere
               href: tagging-documents.md

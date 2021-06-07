@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.custom: api
+ms.openlocfilehash: 6716b0eb029b49ec08cb52ebefc23e50b19036ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903119"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771670"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Eseguire il pull dei rilevamenti di Microsoft Defender per endpoint con l'API REST SIEM
 
@@ -52,7 +53,7 @@ In generale, il protocollo OAuth 2.0 supporta quattro tipi di flussi:
 
 Per ulteriori informazioni sulle specifiche OAuth, vedere il sito Web [OAuth.](http://www.oauth.net)
 
-Microsoft Defender for Endpoint  supporta il flusso di concessione dell'autorizzazione e il flusso delle credenziali _client_ per ottenere l'accesso ai rilevamenti di pull, con Azure Active Directory (AAD) come server di autorizzazione.
+Microsoft Defender for Endpoint  supporta il flusso di concessione dell'autorizzazione e il flusso delle credenziali _client_ per ottenere l'accesso ai rilevamenti pull, con Azure Active Directory (AAD) come server di autorizzazione.
 
 Il _flusso di concessione dell'autorizzazione_ usa le credenziali utente per ottenere un codice di autorizzazione, che viene quindi usato per ottenere un token di accesso.
 
@@ -64,7 +65,7 @@ Usa il metodo seguente nell'API di Microsoft Defender for Endpoint per estrarre 
 >Microsoft Defender Security Center unisce rilevamenti di avvisi simili in un singolo avviso. Questa API esegue il pull dei rilevamenti degli avvisi nella forma non elaborata in base ai parametri di query impostati, consentendo di applicare il proprio raggruppamento e filtro. 
 
 ## <a name="before-you-begin"></a>Prima di iniziare
-- Prima di chiamare l'endpoint di Microsoft Defender for Endpoint per il pull dei rilevamenti, è necessario abilitare l'applicazione di integrazione SIEM in Azure Active Directory (AAD). Per altre informazioni, vedi [Abilitare l'integrazione SIEM in Microsoft Defender per Endpoint.](enable-siem-integration.md)
+- Prima di chiamare l'endpoint di Microsoft Defender per Endpoint per il pull dei rilevamenti, devi abilitare l'applicazione di integrazione SIEM in Azure Active Directory (AAD). Per altre informazioni, vedi [Abilitare l'integrazione SIEM in Microsoft Defender per Endpoint.](enable-siem-integration.md)
 
 - Prendere nota dei valori seguenti nella registrazione dell'applicazione Azure. Sono necessari questi valori per configurare il flusso OAuth nel servizio o nell'app daemon:
   - ID applicazione (univoco per l'applicazione)
@@ -127,7 +128,7 @@ ago | stringa | Estrae gli avvisi nel seguente intervallo di tempo: `(current_ti
 limite | int | Definisce il numero di avvisi da recuperare. Gli avvisi più recenti verranno recuperati in base al numero definito.<br><br> **NOTA:** se non specificato, verranno recuperati tutti gli avvisi disponibili nell'intervallo di tempo.
 machinegroups | stringa | Specifica i gruppi di dispositivi da cui estrarre gli avvisi. <br><br> **NOTA:** se non specificato, verranno recuperati gli avvisi di tutti i gruppi di dispositivi. <br><br> Esempio: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | stringa | Tag dispositivo singolo dal Registro di sistema.
-CloudCreatedMachineTags | stringa | Tag del dispositivo creati in Microsoft Defender Security Center.
+CloudCreatedMachineTags | stringa | Tag dispositivo creati in Microsoft Defender Security Center.
 
 ### <a name="request-example"></a>Esempio di richiesta
 Nell'esempio seguente viene illustrato come recuperare tutti i rilevamenti nell'organizzazione.

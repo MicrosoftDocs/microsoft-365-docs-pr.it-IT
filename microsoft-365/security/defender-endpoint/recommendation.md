@@ -1,5 +1,5 @@
 ---
-title: Proprietà e metodi consigliati
+title: Metodi e proprietà di consiglio
 description: Recupera gli avvisi recenti principali.
 keywords: api, api del grafico, api supportate, ottenere, avvisi, recenti
 search.product: eADQiWindows 10XVcnh
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 6ab4d4e1acab0e4b837195f64c369057d7ceb417
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: bd7aa2af2c7500bbe02108bb8aa5dee452ff2998
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198234"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771598"
 ---
 # <a name="recommendation-resource-type"></a>Tipo di risorsa consigliata
 
@@ -41,8 +42,8 @@ ms.locfileid: "51198234"
 ## <a name="methods"></a>Metodi
 Metodo |Tipo restituito |Descrizione
 :---|:---|:---
-[Elencare tutti i suggerimenti](get-all-recommendations.md) | Raccolta elementi consigliati | Recupera un elenco di tutti i suggerimenti per la sicurezza che interessano l'organizzazione
-[Ottenere suggerimenti tramite ID](get-recommendation-by-id.md) | Consiglio | Recupera un suggerimento di sicurezza in base al relativo ID
+[Elencare tutti i consigli](get-all-recommendations.md) | Raccolta elementi consigliati | Recupera un elenco di tutti i suggerimenti per la sicurezza che interessano l'organizzazione
+[Ottenere consigli in base all’Id](get-recommendation-by-id.md) | Consiglio | Recupera un suggerimento di sicurezza in base al relativo ID
 [Ottenere il software consigliato](get-recommendation-software.md)| [Software](software.md) | Recupera un suggerimento di sicurezza relativo a un software specifico
 [Ottenere dispositivi consigliati](get-recommendation-machines.md)|Insieme MachineRef | Recupera un elenco di dispositivi associati al suggerimento per la sicurezza
 [Ottenere vulnerabilità dei suggerimenti](get-recommendation-vulnerabilities.md) | [Raccolta di vulnerabilità](vulnerability.md) | Recupera un elenco di vulnerabilità associate al suggerimento per la sicurezza

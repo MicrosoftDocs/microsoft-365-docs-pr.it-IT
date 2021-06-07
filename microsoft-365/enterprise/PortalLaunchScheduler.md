@@ -17,19 +17,19 @@ search.appverid:
 - SPO160
 - MET150
 description: In questo articolo viene descritto come avviare il portale tramite l'utilità di pianificazione di avvio del portale
-ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: e77668b3c21b43de1a2e30dc7181842770a24784
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730259"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769204"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Avviare il portale usando l'utilità di SharePoint di avvio del portale
 
 Un portale è un sito di comunicazione SharePoint sulla rete Intranet con traffico elevato, un sito che ha da 10.000 a oltre 100.000 visitatori nel corso di diverse settimane. Usa l'utilità di pianificazione di avvio del portale per avviare il portale per garantire agli utenti un'esperienza di visualizzazione ottimale quando accedono al nuovo SharePoint portale.
 <br>
 <br>
-L'utilità di pianificazione per l'avvio del portale è progettata per consentire di seguire un approccio di implementazione in più fasi, tramite l'invio in batch dei visualizzatori e la gestione dei reindirizzamenti DEGLI URL per il nuovo portale. Durante l'avvio di ogni ondata, è possibile raccogliere il feedback degli utenti, monitorare le prestazioni del portale e sospendere l'avvio per risolvere i problemi prima di procedere con l'onda successiva. Altre informazioni su come pianificare [l'avvio di un portale in SharePoint](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
+L'utilità di pianificazione per l'avvio del portale è progettata per consentire di seguire un approccio di implementazione in più fasi, tramite l'invio in batch dei visualizzatori e la gestione dei reindirizzamenti DEGLI URL per il nuovo portale. Durante l'avvio di ogni ondata, è possibile raccogliere il feedback degli utenti, monitorare le prestazioni del portale e sospendere l'avvio per risolvere i problemi prima di procedere con l'onda successiva. Altre informazioni su come pianificare [l'avvio di un portale in SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
 
 **Esistono due tipi di reindirizzamenti:**
 
@@ -116,28 +116,30 @@ In precedenza, gli avvii del portale potevano essere pianificati solo SharePoint
 
 7. Determinare chi deve visualizzare immediatamente il sito e immettere le informazioni nel **campo Utenti esenti da ondate.** Questi utenti sono esclusi dalle ondate e non verranno reindirizzati prima, durante o dopo l'avvio.
 
+    >[!NOTE]
+    > È possibile aggiungere fino a 50 utenti o gruppi di sicurezza distinti. Utilizzare i gruppi di sicurezza quando sono necessari più di 50 utenti per accedere al portale prima dell'avvio delle ondate. 
+
 8.  Confermare i dettagli di avvio del portale e selezionare **Pianifica**. Dopo la pianificazione dell'avvio, tutte le modifiche apportate alla home page del portale di SharePoint dovranno ricevere un risultato di diagnostica integro prima della ripresa dell'avvio del portale.
 
-### <a name="launch-portal-with-over-100k-users"></a>Portale di avvio con oltre 100.000 utenti
+### <a name="launch-a-portal-with-over-100k-users"></a>Avviare un portale con oltre 100.000 utenti
 
-Se si prevede di avviare un portale con più di 100.000 utenti, inviare una richiesta di supporto seguendo i passaggi elencati di seguito. Assicurarsi di includere tutte le informazioni richieste.
+Se si prevede di avviare un portale con più di 100.000 utenti, inviare una richiesta di supporto seguendo i passaggi elencati di seguito. Assicurati di includere tutte le informazioni richieste.
 
-Eseguire la procedura seguente:
-1. Accedere a https://admin.microsoft.com
-2. Assicurarsi che si stia usando l’anteprima della nuova interfaccia di amministrazione.
-3. Nel riquadro di spostamento sinistro, selezionare **Supporto** e quindi **Nuova richiesta di servizio**. 
-
+**Eseguire la procedura seguente:**
+1. Passare a https://admin.microsoft.com.
+2. Assicurati di usare la nuova anteprima dell'interfaccia di amministrazione
+3. Nel riquadro di spostamento sinistro selezionare **Supporto** e quindi nuova **richiesta di servizio**
 
    Verrà attivato il riquadro **Serve aiuto?** nel lato destro dello schermo.
 
-4.  Nell'area **Descrivere brevemente il problema** immettere "Launch SharePoint Portal with 100k users".</br>
-5. Selezionare **Contatta il supporto**.
-6. In **Descrizione** immettere "Launch SharePoint Portal with 100k users". 
-7. Compilare le informazioni rimanenti e selezionare **Contatti**.
+4. Per **descrivere brevemente il problema,** immettere "Launch SharePoint Portal with 100k users"</br>
+5. Quindi, selezionare **Contatta il supporto**
+6. In **Descrizione** immetti "Avvia SharePoint Portal con 100.000 utenti"
+7. Compilare le informazioni rimanenti e quindi selezionare **Contattami**
 8. Dopo la creazione del ticket, assicurarsi di fornire all'agente di supporto le informazioni seguenti:
-- URL del portale di avvio 
-- Numero di utenti previsti
-- Tempo stimato per l'avvio 
+   - URL portale 
+   - Numero di utenti previsti
+   - Pianificazione stimata dell'avvio
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>Apportare modifiche a un avvio pianificato del portale
 

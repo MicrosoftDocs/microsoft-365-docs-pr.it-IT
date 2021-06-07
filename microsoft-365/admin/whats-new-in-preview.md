@@ -21,12 +21,12 @@ description: 'L Microsoft 365 di amministrazione: informazioni sulle funzionalit
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639544"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769079"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia Microsoft 365 di amministrazione
 
@@ -56,17 +56,17 @@ E se si desidera sapere quali sono le novità con altri servizi cloud Microsoft:
 
 ### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>Tenere traccia degli aggiornamenti dei ticket di supporto tramite l'app Admin per dispositivi mobili
 
-Per tutte le richieste di servizio create nel tenant è ora possibile tenere traccia dello stato del ticket, visualizzare i dettagli del ticket e fornire/ richiedere informazioni aggiuntive aggiungendo note & allegati. 
+Per tutte le richieste di servizio create nel tenant è ora possibile tenere traccia dello stato del ticket, visualizzare i dettagli del ticket e fornire/ richiedere informazioni aggiuntive aggiungendo note & allegati.
 
-:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="Screenshot: Track support ticket updates":::
+:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="Screenshot: Track support ticket updates":::
 
-### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Tieniti aggiornato su tutti gli aggiornamenti principali per l'app e l'Microsoft 365 abbonamento 
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Tieniti aggiornato su tutti gli aggiornamenti principali per l'app e l'Microsoft 365 abbonamento
 
-- Tieniti aggiornato su tutti gli aggiornamenti principali dell'abbonamento Microsoft 365 tramite le notifiche push del Centro messaggi (ora abilitate per impostazione predefinita). 
+- Tieniti aggiornato su tutti gli aggiornamenti principali dell'abbonamento Microsoft 365 tramite le notifiche push del Centro messaggi (ora abilitate per impostazione predefinita).
 
 - Tieni traccia delle funzionalità più recenti disponibili **nell'app** usando la sezione Novità. Vai a **Impostazioni**  >  **Novità?**
 
-:::image type="content" source="../media/whats-new-updates.png" alt-text="Screenshot: Track major updates and features":::
+:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Screenshot: Track major updates and features":::
 
 ## <a name="april-2021"></a>Aprile 2021
 

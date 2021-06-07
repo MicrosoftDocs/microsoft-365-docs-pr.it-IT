@@ -8,22 +8,22 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Utilizzare questa pagina per creare l'elenco del personale e per gestire i dettagli dei membri del personale, ad esempio nome, numero di telefono e indirizzo di posta elettronica.
-ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 23757c492986936125eff1203e6a99231164da22
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683320"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768946"
 ---
 # <a name="add-staff-to-bookings"></a>Aggiungere personale a Bookings
 
 La pagina Personale in Bookings consente di creare l'elenco di personale e gestire i dettagli dei membri del personale, ad esempio nome, numero di telefono e indirizzo di posta elettronica. Da qui è anche possibile impostare l'orario di lavoro per ogni membro del personale.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Sebbene Bookings sia una funzionalità di Microsoft 365, non tutti i membri del personale devono disporre di un account Microsoft 365 personale. Tutti i membri del personale devono avere un indirizzo di posta elettronica valido per poter ricevere prenotazioni e pianificare le modifiche.
 
-## <a name="watch-add-your-staff-in-microsoft-bookings"></a>Watch: Add your staff in Microsoft Bookings
+## <a name="watch-add-your-staff-to-bookings"></a>Watch: Add your staff to Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
@@ -67,14 +67,39 @@ Sebbene Bookings sia una funzionalità di Microsoft 365, non tutti i membri del 
     > [!NOTE]
     > Solo i primi 31 membri del personale aggiunti alla pagina del personale verranno visualizzati quando si assegnano membri del personale a un servizio.
 
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Impostare un utente di Bookings come utente con privilegi super senza aggiungerli come personale in Bookings
 
-Dopo aver aggiunto i membri del personale, è possibile pianificare [le chiusure](schedule-closures-time-off-vacation.md) aziendali e i tempi di inazione e [impostare i criteri di pianificazione.](set-scheduling-policies.md)
+Potresti voler aggiungere una persona all'elenco del personale in Bookings senza renderla disponibile per i clienti o i clienti. Dopo essere diventato un utente con privilegi di amministratore, diventerà un amministratore della cassetta postale di prenotazione. Essere un amministratore di una cassetta postale di prenotazione è definito come disporre di autorizzazioni di accesso completo e di invio come per la cassetta postale di prenotazione.
 
-## <a name="related-content"></a>Contenuto correlato
+> [!NOTE]
+> Questi passaggi funzionano solo se all'utente aggiunto non è già assegnato **un** ruolo visualizzatore in Bookings.
 
-[Microsoft Bookings](bookings-overview.md)
+1. [Connessione per Microsoft 365 con PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-[Pianificare chiusure aziendali, permessi e ferie](schedule-closures-time-off-vacation.md)
+2. Usando PowerShell, assegnare l'accesso completo con i comandi seguenti:
 
-[Impostare i criteri di pianificazione](set-scheduling-policies.md)
+    ```powershell
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+    ```
+
+3. Eseguire quindi questo comando per assegnare le autorizzazioni send-as.
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+Ecco un esempio di comando di PowerShell per aggiungere Allie Bellew alla cassetta postale di prenotazione dell'assistenza all'infanzia di Contoso.
+
+1. Eseguire innanzitutto questo comando:
+
+    ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
+    ```
+
+2. Eseguire quindi questo comando:
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+**Allie Bellew** ora ha accesso come amministratore, ma non viene visualizzato come personale prenotabile in Bookings.

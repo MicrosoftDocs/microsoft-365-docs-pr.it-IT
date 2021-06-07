@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d0db45daa786c1a44272e4d02153af3fe658e781
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3df703fd84c87a2bd34bb2a81f8c83063e468b17
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200210"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771450"
 ---
 # <a name="run-antivirus-scan-api"></a>Eseguire l'API di analisi antivirus
 
@@ -35,7 +36,7 @@ ms.locfileid: "51200210"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Descrizione API
-Avviare l'analisi di Microsoft Defender Antivirus in un dispositivo.
+Avviare Antivirus Microsoft Defender'analisi in un dispositivo.
 
 
 ## <a name="limitations"></a>Limitazioni
