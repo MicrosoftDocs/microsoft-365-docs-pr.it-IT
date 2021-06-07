@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 43a136bb3432adcd47589d29aa5de8f8f6299ba8
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7b95fc487a8ee3e82e0f215b34aa564e063534af
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683068"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772078"
 ---
 # <a name="machine-resource-type"></a>Tipo di risorsa computer
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a7ac7415ce5e7f88b21128846b7cff957e388fd5
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 3da3d971a1ef55d343ac1b61e6457981022c4c92
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730379"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770382"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -88,11 +88,11 @@ I numeri elencati indicano la versione minima delle applicazioni di Office neces
 |[Contrassegni dinamici con variabili](#dynamic-markings-with-variables).                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Assegnare ora le autorizzazioni](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Consentire agli utenti di assegnare le autorizzazioni <br /> - Non inoltrare](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
-|[Consentire agli utenti di assegnare le autorizzazioni <br /> - Solo crittografia](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | Sì |
+|[Consentire agli utenti di assegnare le autorizzazioni <br /> - Solo crittografia](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Sì |
 |[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Sì                |
 |[Controllare le attività degli utenti correlate alle etichette](data-classification-activity-explorer.md) | 2011+ | In revisione | In revisione           | In revisione               | In revisione |
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | In revisione           | In revisione               | Sì |
-|[Impostazioni diverse per l'etichetta predefinita e l'etichetta obbligatoria](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Sì |
+|[Impostazioni diverse per l'etichetta predefinita e l'etichetta obbligatoria](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sì |
 |
 
 **Note a piè di pagina:**

@@ -1,5 +1,5 @@
 ---
-title: Passaggio 5. Distribuire le app e i servizi per la produttività dei lavoratori remoti
+title: Passaggio 5. Distribuire le app e i servizi per la produttività dei lavoratori ibridi
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Consentire agli utenti di essere produttivi con Teams, Exchange, SharePoint e altri servizi di Microsoft 365.
-ms.openlocfilehash: 749719afdfa7c9f5796ff839d1743ffd697c27e4
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ed35f06f3dcee9c7981a086278040fc0a44519b3
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029005"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788902"
 ---
-# <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Passaggio 5. Distribuire le app e i servizi per la produttività dei lavoratori remoti
+# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Passaggio 5. Distribuire le app e i servizi per la produttività dei lavoratori ibridi
 
 Per essere produttivi, le persone devono comunicare e collaborare tra loro. Devono partecipare a riunioni, chattare tramite voce e testo, creare nuovi contenuti e condividere informazioni e file, scambiare messaggi di posta elettronica e gestire calendari e attività. Microsoft 365 include servizi basati sul cloud per tutte queste funzionalità principali:
 
@@ -40,11 +40,11 @@ Per essere produttivi, le persone devono comunicare e collaborare tra loro. Devo
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Mantenere le persone in contatto con Microsoft Teams
 
-Teams consente di chattare, fare riunioni, chiamate e collaborare in un'unica posizione. Milioni di persone svolgono il proprio lavoro ogni giorno in Teams perché riunisce tutto il necessario per lavorare in remoto in un hub per il lavoro di in team. 
+Teams consente di chattare, fare riunioni, chiamate e collaborare in un'unica posizione. Milioni di persone svolgono il proprio lavoro ogni giorno in Teams perché riunisce tutto il necessario per lavorare in sede o da remoto in un hub per il lavoro di in team. 
 
 Per istruzioni dettagliate, vedere [Supporto per i lavoratori remoti con Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
 
-Guarda il video [Abilitare il lavoro ibrido con i webcast di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) per linee guida e demo sull'uso di Teams per il lavoro remoto.
+Guarda il video [Abilitare il lavoro ibrido con i webcast di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) per linee guida e demo sull'uso di Teams per il lavoro ibrido.
 
 ### <a name="chat-and-conversations"></a>Chat e conversazioni
 
@@ -52,27 +52,27 @@ Le chat e le conversazioni in thread rappresentano la parte principale di Teams 
 
 ### <a name="meetings-and-conferencing"></a>Riunioni e conferenze 
 
-Teams può sicuramente aiutare a mantenere vive le comunicazioni e la condivisione delle informazioni con i lavoratori remoti, in particolare tramite riunioni che supportano fino a 250 persone. Le riunioni di Teams consentono riunioni interattive e collaborative con persone all'interno e all'esterno dell'organizzazione. I lavoratori remoti possono utilizzare le riunioni di Teams per le attività quotidiane, tra cui checkpoint ricorrenti del progetto, recupero con i colleghi, sessioni di brainstorming e promozione delle conversazioni con i clienti. 
+Teams può sicuramente aiutare a mantenere vive le comunicazioni e la condivisione delle informazioni con i lavoratori ibridi, in particolare tramite riunioni che supportano fino a 250 persone. Le riunioni di Teams consentono riunioni interattive e collaborative con persone all'interno e all'esterno dell'organizzazione. I lavoratori remoti possono utilizzare le riunioni di Teams per le attività quotidiane, tra cui checkpoint ricorrenti del progetto, recupero con i colleghi, sessioni di brainstorming e promozione delle conversazioni con i clienti. 
 
 ### <a name="calling"></a>Chiamate
 
-Teams supporta chiamate VoIP dirette tra utenti e anche altre organizzazioni che utilizzano la federazione. Utilizza gli stessi codec delle riunioni e fornisce un audio eccezionale a livello mondiale senza costi PSTN aggiuntivi. Tuttavia, alcuni utenti potrebbero aver bisogno di un numero di telefono apposito per rispondere alle chiamate esterne quando lavorano in remoto. Teams può fornire rapidamente un servizio telefonico cloud per questi utenti in modo che possano effettuare e ricevere chiamate telefoniche.
+Teams supporta chiamate VoIP dirette tra utenti e anche altre organizzazioni che utilizzano la federazione. Utilizza gli stessi codec delle riunioni e fornisce un audio eccezionale a livello mondiale senza costi PSTN aggiuntivi. Tuttavia, alcuni utenti potrebbero aver bisogno di un numero di telefono apposito per rispondere alle chiamate esterne quando lavorano in sede o da remoto. Teams può fornire rapidamente un servizio telefonico cloud per questi utenti in modo che possano effettuare e ricevere chiamate telefoniche.
 
 ### <a name="apps-and-workflows"></a>App e flussi di lavoro
 
 Teams offre una piattaforma per app e flussi di lavoro a cui è possibile accedere dalle versioni desktop, Web e per dispositivi mobili di Teams. Teams offre centinaia di app pubblicate da Microsoft e di terze parti per coinvolgere gli utenti, supportare la produttività e integrare i servizi commerciali di uso comune in Teams. Gli utenti e gli amministratori possono anche creare app personalizzate e flussi di lavoro automatizzati per Teams utilizzando gli strumenti di sviluppo low code Power Apps e Power Automate.
 
-Le app e i flussi di lavoro consentono ai lavoratori remoti di essere più produttivi in Teams, perché consente di raccogliere e condividere informazioni importanti, automatizzare le attività ripetitive e di chattare con i bot interattivi. L'aggiunta di app su un canale o sulla barra dell'app Teams è un ottimo modo per gli utenti per renderle facilmente accessibili in uno spazio pertinente e gli amministratori possono aggiungere app per favorire la consapevolezza e l'adozione delle app che tutti dovrebbero usare.
+Le app e i flussi di lavoro consentono ai lavoratori ibridi di essere più produttivi in Teams, perché consente di raccogliere e condividere informazioni importanti, automatizzare le attività ripetitive e di chattare con bot interattivi. L'aggiunta di app su un canale o sulla barra dell'app Teams è un ottimo modo per gli utenti per renderle facilmente accessibili in uno spazio pertinente e gli amministratori possono aggiungere app per favorire la consapevolezza e l'adozione delle app che tutti dovrebbero usare.
 
 ## <a name="exchange-email-and-manage-calendars-contacts-and-tasks-with-exchange-online-and-outlook"></a>Scambiare messaggi di posta elettronica e gestire calendari, contatti e attività con Exchange Online e Outlook
 
-Grazie a Outlook, i lavoratori remoti possono rimanere connessi e organizzati con posta elettronica, calendari, contatti, attività e altro ancora insieme in un unico posto. Outlook aiuta a tenere sotto controllo la giornata in base ai contenuti interessati. Outlook consente di condividere gli allegati direttamente da OneDrive, pianificare e partecipare alle riunioni di Teams, visualizzare e condividere calendari e fornire autorizzazioni delegate ad altri. Conoscere ciò che accadrà in seguito negli impegni lavorativi e personali e in ciò che richiede attenzione può aiutare i lavoratori remoti a concentrarsi su ciò che conta. Outlook offre ai lavoratori remoti modi utili per gestire il proprio tempo e trovare facilmente ciò di cui hanno bisogno, inclusi file, persone nell'organizzazione e altro. 
+Grazie ad Outlook, i lavoratori ibridi possono rimanere connessi e organizzati con posta elettronica, calendari, contatti, attività e altro ancora insieme in un unico posto. Outlook aiuta a tenere sotto controllo la giornata in base ai contenuti interessati. Outlook consente di condividere gli allegati direttamente da OneDrive, pianificare e partecipare alle riunioni di Teams, visualizzare e condividere calendari e fornire autorizzazioni delegate ad altri. Conoscere ciò che accadrà in seguito nell'ambito degli impegni lavorativi e personali e ciò che richiede attenzione può aiutare i lavoratori ibridi a concentrarsi su ciò che conta. Outlook offre ai lavoratori ibridi modi utili per gestire il proprio tempo e trovare facilmente ciò di cui hanno bisogno, inclusi file, persone nell'organizzazione e altro. 
 
 Vedere [questo articolo](../security/office-365-security/secure-email-recommended-policies.md) per informazioni sui criteri di identità e accesso ai dispositivi consigliati per proteggere la posta elettronica dell'organizzazione e i client di posta elettronica che supportano l'autenticazione moderna e l'accesso condizionale.
 
 ## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>Archiviare e collaborare ai file con SharePoint e OneDrive
 
-Per la collaborazione sui contenuti, i lavoratori remoti possono utilizzare le cartelle di SharePoint e OneDrive come posizione centrale nel cloud per archiviare e condividere file, creare in modalità condivisa, comunicare e collaborare. I lavoratori remoti possono lavorare in sicurezza da qualsiasi luogo da un browser Web, da Teams e dalle app di Office.
+Per la collaborazione sui contenuti, i lavoratori ibridi possono utilizzare le cartelle di SharePoint e OneDrive come posizione centrale nel cloud per archiviare e condividere file, collaborare con più persone e comunicare. I lavoratori remoti possono lavorare in sicurezza da qualsiasi luogo da un browser Web, da Teams e dalle app di Office.
 
 Potrebbe essere necessario eseguire la migrazione dei documenti in SharePoint o OneDrive da:
 

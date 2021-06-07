@@ -1,5 +1,5 @@
 ---
-title: Passaggio 1. Aumentare la sicurezza di accesso per i lavoratori remoti con la MFA.
+title: Passaggio 1. Aumentare la sicurezza di accesso per i lavoratori ibridi con la MFA.
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,21 +16,21 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: È necessario che l'utente remoto acceda con l'autenticazione a più fattori (MFA).
-ms.openlocfilehash: 1c69f2ee7520a554a726bc0ffd9e2d7ebca64261
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: È necessario che l'utente ibrido acceda con l'autenticazione a più fattori (MFA).
+ms.openlocfilehash: 105c2f7170b4bea648427b0fda57ad081cb99a86
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028969"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788962"
 ---
-# <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Passaggio 1. Aumentare la sicurezza di accesso per i lavoratori remoti con la MFA.
+# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Passaggio 1. Aumentare la sicurezza di accesso per i lavoratori ibridi con la MFA.
 
-Per aumentare la sicurezza degli accessi dei lavoratori remoti, utilizzare l'autenticazione a più fattori (MFA). La MFA richiede che gli accessi utente siano soggetti a un'ulteriore verifica oltre alla password dell'account utente. Anche se un utente malintenzionato determina una password dell'account utente, deve anche essere in grado di rispondere a un'ulteriore verifica, ad esempio un SMS inviato a uno smartphone prima che venga concesso l'accesso.
+Per aumentare la sicurezza degli accessi dei lavoratori ibridi, utilizzare l'autenticazione a più fattori (MFA). La MFA richiede che gli accessi utente siano soggetti a un'ulteriore verifica oltre alla password dell'account utente. Anche se un utente malintenzionato determina una password dell'account utente, deve anche essere in grado di rispondere a un'ulteriore verifica, ad esempio un SMS inviato a uno smartphone prima che venga concesso l'accesso.
 
 ![L'inserimento della password corretta e un'ulteriore verifica permettono di accedere](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Per tutti gli utenti, inclusi i lavoratori remoti e in particolare gli amministratori, Microsoft consiglia vivamente la MFA.
+Per tutti gli utenti, inclusi i lavoratori ibridi e in particolare gli amministratori, Microsoft consiglia vivamente la MFA.
 
 Sono disponibili tre modi per richiedere agli utenti di utilizzare la MFA in base al piano Microsoft 365.
 
@@ -101,7 +101,7 @@ La reimpostazione della password self-service consente agli utenti di reimpostar
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Accedere alle app SaaS con Azure AD
 
-Oltre a fornire agli utenti l'autenticazione basata sul cloud, Azure AD può anche essere il modo più semplice per proteggere tutte le app, che si trovino in locale, nel cloud di Microsoft o in un altro cloud. [Integrando le app in Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration), i lavoratori remoti possono individuare facilmente le applicazioni di cui hanno bisogno e accedere in tutta sicurezza.
+Oltre a fornire agli utenti l'autenticazione basata sul cloud, Azure AD può anche essere il modo più semplice per proteggere tutte le app, che si trovino in locale, nel cloud di Microsoft o in un altro cloud. [Integrando le app in Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration), i lavoratori ibridi possono individuare facilmente le applicazioni di cui hanno bisogno e accedere in tutta sicurezza.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Risorse tecniche per amministratori per MFA e identità
 

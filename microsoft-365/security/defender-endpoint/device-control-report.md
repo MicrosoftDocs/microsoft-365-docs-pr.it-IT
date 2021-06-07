@@ -6,19 +6,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.reviewer: dansimp
 ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: ee8e7be20076bde41867981008e53a70c134e47e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 47eb80af58c948db5997dc9f5edfa5737a796837
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893798"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772366"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>Proteggere i dati dell'organizzazione con il controllo del dispositivo
 
@@ -39,11 +39,11 @@ Con il report di controllo del dispositivo puoi visualizzare gli eventi correlat
 Gli eventi di controllo includono:
 
 - **Montaggio e smontare unità USB:** Eventi di controllo generati quando un'unità USB viene montata o disinstallata.
-- **PnP:** Gli eventi di controllo Plug and Play vengono generati quando viene connessa una stampante o un Bluetooth rimovibile.
+- **PnP:** Gli eventi di controllo Plug and Play vengono generati quando viene connessa un'archiviazione rimovibile, una stampante o Bluetooth supporto.
 
 ## <a name="monitor-device-control-security"></a>Monitorare la sicurezza del controllo dei dispositivi
 
-Il controllo dei dispositivi in Microsoft Defender for Endpoint offre agli amministratori della sicurezza strumenti che consentono loro di tenere traccia della sicurezza del controllo dei dispositivi dell'organizzazione tramite i report. È possibile trovare il report di controllo del dispositivo nel Centro sicurezza Microsoft 365 andando a **Report > Protezione del dispositivo**.
+Il controllo dei dispositivi in Microsoft Defender for Endpoint offre agli amministratori della sicurezza strumenti che consentono loro di tenere traccia della sicurezza del controllo dei dispositivi dell'organizzazione tramite i report. Puoi trovare il report di controllo del dispositivo nel centro sicurezza Microsoft 365 sicurezza andando a **Report > Protezione del dispositivo**.
 
 La scheda Protezione dispositivo nel dashboard **Report** mostra il numero di eventi di controllo generati dal tipo di supporto negli ultimi 180 giorni.
 
@@ -61,7 +61,7 @@ Quando si seleziona un evento, viene visualizzato un riquadro a comparsa che mos
 
 - **Dettagli generali:** Data, modalità azione e i criteri di questo evento.
 - **Informazioni multimediali:** Le informazioni multimediali includono Nome supporto, Nome classe, GUID classe, ID dispositivo, ID fornitore, Volume, Numero di serie e Tipo di bus.
-- **Dettagli percorso:** Nome dispositivo e ID dispositivo MDATP.
+- **Dettagli percorso:** Nome del dispositivo e MDATP dispositivo.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ff0bb9a6f17b8d4dc6432292ec98743d3eaf952c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e1adf28823d6b86417c32578a89480958946c50d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929098"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770561"
 ---
 # <a name="list-devices-by-software"></a>Elencare i dispositivi in base al software
 

@@ -1,5 +1,5 @@
 ---
-title: Tipo di risorsa utente
+title: Tipo di risorsa User
 description: Recuperare gli avvisi recenti di Microsoft Defender for Endpoint relativi agli utenti.
 keywords: api, api del grafico, api supportate, ottenere, avvisi, recenti
 search.product: eADQiWindows 10XVcnh
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e3b2a567a953883d1d0ecd062159bfee4135dc85
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 39b73772bcc626590aa784bb5b21357f66229816
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51197958"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772138"
 ---
-# <a name="user-resource-type"></a>Tipo di risorsa utente
+# <a name="user-resource-type"></a>Tipo di risorsa User
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

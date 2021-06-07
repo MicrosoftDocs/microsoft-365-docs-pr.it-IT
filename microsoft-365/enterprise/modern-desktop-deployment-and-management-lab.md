@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736349"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770674"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 e Office 365 lab kit di distribuzione
 
@@ -28,7 +28,7 @@ Il Windows 10 e Office 365 deployment kit è progettato per facilitare la pianif
 
 Questo kit è altamente consigliato per le organizzazioni che si preparano Windows 8.1 aggiornamenti a Windows 10. Si applica anche se si sta usando Windows 10, Microsoft 365 Apps for enterprise (in precedenza Office 365 ProPlus) o Office 2019. In quanto ambiente isolato, il lab risultante è ideale per esplorare gli aggiornamenti degli strumenti di distribuzione e testare l'automazione correlata alla distribuzione.
 
-[Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
+[Scarica il lab kit Windows 10 e Office 365 distribuzione .](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 ## <a name="a-complete-lab-environment"></a>Un ambiente lab completo
 
@@ -36,7 +36,7 @@ Il kit fornisce un ambiente lab virtuale di cui è stato eseguito il provisionin
 
   - NOVITÀ! Windows 10 Enterprise, versione 21H1
   - Windows 7 Enterprise
-  - NOVITÀ! Microsoft Endpoint Configuration Manager, versione 2103*
+  - NOVITÀ! Microsoft Endpoint Configuration Manager, versione 2103
   - Windows Assessment and Deployment Kit per Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)

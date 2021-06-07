@@ -1,7 +1,7 @@
 ---
 title: Individuare le vulnerabilità
 description: Recupera una raccolta di vulnerabilità individuate correlate a un DETERMINATO ID dispositivo.
-keywords: api, api del grafico, api supportate, ottenere, elenco, file, informazioni, vulnerabilità individuate, api di gestione delle minacce &, Api di gestione delle vulnerabilità di Microsoft Defender per Endpoint tvm
+keywords: api, api del grafico, api supportate, ottenere, elenco, file, informazioni, vulnerabilità individuate, api & gestione delle vulnerabilità minacce, Api di Microsoft Defender per Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 133a8525a2e561062a492f7148de97a77d37444e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ac7a9ef932f2640bbc5325f0154c0ceb48ae3018
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934322"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772294"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Individuare le vulnerabilità
 

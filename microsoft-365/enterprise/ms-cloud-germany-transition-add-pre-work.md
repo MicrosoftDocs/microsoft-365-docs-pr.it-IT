@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: pre-lavorare quando si esegue il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a Office 365 servizi nella nuova area data center tedesca.'
-ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651021"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770379"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Attività di pre-migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -98,16 +98,12 @@ La OCCT può essere distribuita Windows client in qualsiasi momento prima della 
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (ADFS)
 
-<!-- before phase 4 -->
-
 **Si applica a**: I clienti che usano AD FS in locale per autenticare gli utenti che si connettono a Microsoft Office 365<br>
-**Se applicato:** ogni volta che inizia la fase 4
+**Se applicata:** qualsiasi momento prima dell'inizio della fase 2
 
 Leggere e applicare i [passaggi di migrazione adfs](ms-cloud-germany-transition-add-adfs.md)
 
 ## <a name="sharepoint-online"></a>SharePoint Online
-
-<!-- before phase 4 -->
 
 **Si applica a:** Clienti che SharePoint 2013 locale<br>
 **Se applicato:** ogni volta che inizia la fase 4

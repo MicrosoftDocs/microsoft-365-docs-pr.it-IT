@@ -1,5 +1,5 @@
 ---
-title: Ottenere informazioni sull'utente correlate all'avviso
+title: Ottenere informazioni sugli utenti correlati agli avvisi
 description: Scopri come usare l'API Ottieni informazioni utente correlate agli avvisi per recuperare l'utente correlato a un avviso specifico in Microsoft Defender per Endpoint.
 keywords: api, api del grafico, api supportate, ottenere, avviso, informazioni, correlate, utente
 search.product: eADQiWindows 10XVcnh
@@ -14,20 +14,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: aee3c6fb381341c6823fbcb6766c0b761cb3413d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e895885a638c60a845ed4857c682cd472e42615c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166982"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772318"
 ---
 # <a name="get-alert-related-user-information-api"></a>API per ottenere informazioni utente correlate agli avvisi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

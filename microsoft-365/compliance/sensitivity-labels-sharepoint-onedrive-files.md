@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file di Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 16186bd1e5c4cd2ca5b1ccd81c24ec81bfd33597
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 8007f085e7bcba7f055f616954e2f0549f6f125a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684028"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770398"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -87,6 +87,8 @@ Usa l'app di sincronizzazione OneDrive versione 19.002.0121.0008 o successiva su
     - Viene selezionata una **Crittografia a chiave doppia**.
     
     Per le etichette con una di queste configurazioni di crittografia, le etichette non vengono visualizzate agli utenti in Office per il Web. Inoltre, le nuove funzionalità non possono essere usate con documenti etichettati che già dispongono di queste impostazioni di crittografia. Ad esempio, questi documenti non verranno restituiti nei risultati della ricerca, anche se vengono aggiornati.
+
+- Per motivi di prestazioni, quando si carica o si salva un documento in SharePoint  e l'etichetta del file non applica la crittografia, la colonna Riservatezza nella raccolta documenti può richiedere del tempo per visualizzare il nome dell'etichetta. Fattore in questo ritardo se si utilizzano script o automazione che dipendono dal nome dell'etichetta in questa colonna.
 
 - Gli utenti potrebbero subire ritardi nell'apertura di documenti crittografati nel seguente scenario Salva con nome: utilizzando una versione desktop di Office, un utente sceglie Salva con nome per un documento con un'etichetta di riservatezza che applica la crittografia. L'utente seleziona SharePoint o OneDrive per il percorso e quindi tenta immediatamente di aprire il documento in Office per il Web. Se il servizio sta ancora elaborando la crittografia, l'utente visualizza un messaggio che indica che il documento deve essere aperto nell'app desktop. Se si riprova tra un paio di minuti, il documento verrà aperto Office per il Web. 
 
@@ -169,7 +171,8 @@ Per abilitare le nuove funzionalità, utilizzare il cmdlet [Set-SPOTenant](/powe
 
 1. Usando un account aziendale o dell'istituto di istruzione con privilegi di amministratore globale o SharePoint amministratore in Microsoft 365, connettersi a SharePoint. Per informazioni in merito, vedere [Guida introduttiva a SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Nota: se si dispone di Microsoft 365 Multi-Geo, utilizzare il parametro -Url con [Connessione-SPOService](/powershell/module/sharepoint-online/connect-sposervice)e specificare l'URL del sito dell'interfaccia di amministrazione di SharePoint Online per una delle posizioni geografiche.
+    > [!NOTE]
+    > Se si dispone di Microsoft 365 Multi-Geo, utilizzare il parametro -Url con [Connessione-SPOService](/powershell/module/sharepoint-online/connect-sposervice)e specificare l'URL del sito Dell'interfaccia di amministrazione di SharePoint Online per una delle posizioni geografiche.
 
 2. Eseguire il comando seguente e premere **Y** per confermare:
 

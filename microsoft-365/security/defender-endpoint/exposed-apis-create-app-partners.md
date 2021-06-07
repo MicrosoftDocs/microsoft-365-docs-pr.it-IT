@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bc58241be69a1d8e1a78abc583b2c87dbef9cfa7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 6182b4cb0d1f648f33c3a7fc4da4c648d8996bcd
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199397"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770614"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Accesso partner tramite LE API di Microsoft Defender for Endpoint
 
@@ -36,10 +37,10 @@ ms.locfileid: "51199397"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Questa pagina descrive come creare un'applicazione Azure Active Directory (Azure AD) per ottenere l'accesso programmatico a Microsoft Defender per Endpoint per conto dei clienti.
+Questa pagina descrive come creare un'applicazione Azure Active Directory (Azure AD) per ottenere l'accesso programmatico a Microsoft Defender for Endpoint per conto dei clienti.
 
 
-Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti aiuteranno ad automatizzare i flussi di lavoro e a innovare in base alle funzionalità di Microsoft Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere Flusso del codice di autorizzazione [OAuth 2.0.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti aiuteranno ad automatizzare i flussi di lavoro e a innovare in base alle funzionalità di Microsoft Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In generale, dovrai eseguire la procedura seguente per usare le API:
 - Creare un'applicazione Azure AD **multi-tenant.**
@@ -53,9 +54,9 @@ La procedura seguente illustra come creare un'applicazione Azure AD, ottenere un
 
 1. Accedere al [tenant di Azure](https://portal.azure.com) con l'utente con **ruolo amministratore** globale.
 
-2. Passare ad **Azure Active Directory** App  >  **registrations** Nuova  >  **registrazione**. 
+2. Passare **a** Azure Active Directory  >  **app Nuove**  >  **registrazioni**. 
 
-   ![Immagine di Microsoft Azure e spostamento nella registrazione dell'applicazione](images/atp-azure-new-app2.png)
+   ![Immagine dell'Microsoft Azure e della navigazione per la registrazione dell'applicazione](images/atp-azure-new-app2.png)
 
 3. Nel modulo di registrazione:
 
@@ -65,7 +66,7 @@ La procedura seguente illustra come creare un'applicazione Azure AD, ottenere un
 
     - URI di reindirizzamento - tipo: Web, URI: https://portal.azure.com
 
-    ![Immagine della registrazione dell'applicazione partner di Microsoft Azure](images/atp-api-new-app-partner.png)
+    ![Immagine della registrazione Microsoft Azure applicazione partner](images/atp-api-new-app-partner.png)
 
 
 4. Consenti all'applicazione di accedere a Microsoft Defender per Endpoint e assegnarla con il set minimo di autorizzazioni necessarie per completare l'integrazione.
@@ -200,7 +201,7 @@ Fare riferimento [a Get token using Python](run-advanced-query-sample-python.md#
 ### <a name="using-curl"></a>Uso di Curl
 
 > [!NOTE]
-> Nel computer è già installata la procedura seguente:
+> La procedura seguente dovrebbe Essere arricciata per Windows è già installata nel computer
 
 - Aprire una finestra di comando
 - Impostare CLIENT_ID l'ID applicazione Azure
@@ -248,5 +249,5 @@ Verifica della sanità mentale per assicurarti di avere un token corretto:
     ```
 
 ## <a name="see-also"></a>Vedere anche
-- [API di Microsoft Defender per endpoint supportate](exposed-apis-list.md)
+- [Accedere a API di Microsoft Defender per endpoint](exposed-apis-list.md)
 - [Accedere a Microsoft Defender for Endpoint per conto di un utente](exposed-apis-create-app-nativeapp.md)
