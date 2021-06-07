@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 48d299f2318b0a1be251132a4b50a333a1a0c7a8
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e25fab99718c791c64b583283237815736c450ae
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782958"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793185"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurare le funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender
 
@@ -74,7 +74,7 @@ Le impostazioni di sicurezza in Office 365 proteggere la posta elettronica e il 
 1. Nel centro Microsoft 365 sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) ), passare a Criteri & Regole **Criteri** \> **di minaccia**.
 2. Verificare che siano configurati tutti i criteri seguenti. Per ottenere assistenza e suggerimenti, vedere [Protezione dalle minacce.](/microsoft-365/security/office-365-security/protect-against-threats)
    - [Antimalware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-   - [Anti-phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Anti-phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
    - [Allegati sicuri](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Collegamenti sicuri](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Protezione da posta indesiderata](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)

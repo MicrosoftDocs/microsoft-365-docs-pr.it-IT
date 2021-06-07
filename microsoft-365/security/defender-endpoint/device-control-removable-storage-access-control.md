@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 46ea74d11f9c54cd1d967058433a74ef4c1ead19
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 018bc3549cd7a25df5bdd86d98d351e19027c31f
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300175"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796031"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Control
 
@@ -32,7 +32,7 @@ Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Co
 
 |Privilegio |Autorizzazione  |
 |---------|---------|
-|Access    |  Lettura, scrittura ed esecuzione       |
+|Accesso    |  Lettura, scrittura ed esecuzione       |
 |Modalità azione    |    Controllo, Consenti, Impedisci     |
 |Supporto CSP   |   Sì      |
 |Supporto oggetti Criteri di gruppo    |   Sì      |
@@ -68,7 +68,7 @@ Per ogni proprietà del dispositivo, vedi **la sezione Proprietà dispositivo** 
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId
+    - InstancePathId: InstancePathId è una stringa che identifica in modo univoco il dispositivo nel sistema, ad esempio USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Il numero alla fine (ad esempio **&0)** rappresenta lo slot disponibile e può cambiare da dispositivo a dispositivo. Per ottenere risultati ottimali, utilizzare un carattere jolly alla fine. Ad esempio, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - VID
@@ -170,7 +170,7 @@ Per acquisire familiarità con Microsoft Defender for Endpoint Removable Archivi
     > [!NOTE]
     > È necessario sostituire `&` con `&amp;` nel valore.
 
-2. Creare criteri
+2. Creazione di un criterio
     1. Criterio 1: bloccare l'accesso in scrittura ed esecuzione, ma consentire gli USB approvati. Un esempio per questo caso d'uso è: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** nell'esempio [Scenario 1 Block Write and Execute Access but allow approved USBs .xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Criterio 2: controlla l'accesso in scrittura ed esecuzione agli USB consentiti. Un esempio per questo caso di utilizzo è: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** nell'esempio [Scenario 1 Audit Write and Execute access to approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
@@ -185,7 +185,7 @@ Per acquisire familiarità con Microsoft Defender for Endpoint Removable Archivi
     > [!NOTE]
     > È necessario sostituire `&` con `&amp;` nel valore.
 
-2. Creare criteri
+2. Creazione di un criterio
     1. Criterio 1: Bloccare l'accesso in scrittura ed esecuzione a tutti gli USB non approvati specifici. Un esempio di questo caso di utilizzo è: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98 nell'esempio** [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Criterio 2: controllare l'accesso in scrittura ed esecuzione ad altri utenti. Un esempio di questo caso di utilizzo è: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48 nell'esempio** [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
@@ -196,7 +196,7 @@ La funzionalità Controllo di Archiviazione rimovibili consente di applicare i c
 
 ### <a name="licensing"></a>Licenze
 
-Prima di iniziare a utilizzare Removable Archiviazione Access Control, è necessario confermare [l'Microsoft 365 abbonamento.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Per accedere a Removable Archiviazione Access Control, è necessario disporre di Microsoft 365 E5.
+Prima di iniziare a utilizzare Removable Archiviazione Access Control, è necessario confermare [l'Microsoft 365 abbonamento.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Per accedere a Removable Archiviazione Access Control, è necessario disporre di Microsoft 365 E3.
 
 ### <a name="deploying-policy-via-group-policy"></a>Distribuzione dei criteri tramite Criteri di gruppo
 
@@ -243,7 +243,7 @@ Per la distribuzione dei criteri in Intune, l'account deve disporre delle autori
 1. Per ogni gruppo, crea una regola URI OMA:
     - OMA-URI: 
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b **GroupGUID**%7d/GroupData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b **GroupGUID**%7d/GroupData
 
       Ad esempio, per qualsiasi gruppo di archiviazione rimovibile e **CD/DVD** nell'esempio, il collegamento deve essere:
 
@@ -257,7 +257,7 @@ Per la distribuzione dei criteri in Intune, l'account deve disporre delle autori
 
     - OMA-URI: 
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
       Ad esempio, per la regola Blocca scrittura ed esecuzione accesso ma consenti le **usbs** approvate nell'esempio, il collegamento deve essere: 
 

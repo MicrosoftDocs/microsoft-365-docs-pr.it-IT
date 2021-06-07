@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni su come abilitare i componenti aggiuntivi Segnala messaggio o Segnala phishing per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25c4f7d67fd4fa876544a17df0f4bc1abfd7b3e7
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: ff91cf4c99c9552ab5f5fecd7c6d2efee8d2d9a8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782934"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789257"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Abilitare i componenti aggiuntivi Segnala messaggio o Segnala phishing
 
@@ -50,10 +50,9 @@ Se si è un singolo utente, è possibile abilitare entrambi i componenti aggiunt
 
 Se si è un amministratore globale o un amministratore di Exchange Online e Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile abilitare il componente aggiuntivo Segnala messaggio e il componente aggiuntivo Segnala phishing per l'organizzazione. Entrambi i componenti aggiuntivi sono ora disponibili tramite [distribuzione centralizzata.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Sia il componente aggiuntivo Segnala messaggio che il componente aggiuntivo Segnala phishing funzionano con la maggior parte delle sottoscrizioni Microsoft 365 e i prodotti seguenti:
-
   - Outlook sul Web
   - Outlook 2013 SP1 o versione successiva
   - Outlook 2016 per Mac
@@ -69,6 +68,9 @@ Se si è un amministratore globale o un amministratore di Exchange Online e Exch
 - Gli amministratori devono essere membri del gruppo di ruoli Amministratori globali. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
 - Per ulteriori informazioni su come segnalare un messaggio utilizzando la funzionalità Segnala messaggio, vedere Segnalare falsi positivi e falsi negativi [in Outlook](report-false-positives-and-false-negatives.md).
+
+> [!IMPORTANT]
+> Non è consigliabile l'esperienza di creazione di report incorporata in Outlook perché non può usare i criteri di invio [degli utenti.](./user-submission.md) È consigliabile usare invece il componente aggiuntivo Segnala messaggio o Segnala phishing.
 
 ## <a name="get-the-report-message-add-in"></a>Ottenere il componente aggiuntivo Segnala messaggio
 

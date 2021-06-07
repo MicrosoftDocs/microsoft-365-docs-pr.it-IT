@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Informazioni su come cercare argomenti in Microsoft Viva.
-ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301717"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795995"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utilizzare Microsoft Search per trovare argomenti in Microsoft Viva Topics
 
@@ -26,9 +26,9 @@ Anche se gli utenti di Viva Topics possono trovare argomenti attraverso le evide
 Quando si cerca un argomento specifico in Microsoft Search ,ad esempio "Saturno", se un argomento esiste e viene trovato, il risultato verrà visualizzato nel formato di suggerimento Risposte.
 
 Verrà visualizzata la risposta all'argomento:
-- Nome argomento
-- Nomi alternativi: nomi alternativi o acronimi per l'argomento.
-- Definizione: Descrizione dell'argomento fornito dall'IA o aggiunto manualmente da una persona.
+- Nome dell'argomento
+- Nomi alternativi: nomi alternativi o acronimi dell'argomento.
+- Definizione: descrizione dell'argomento fornito dalla IA o aggiunto manualmente da una persona.
 - Persone suggerite o aggiunte: persone suggerite dall'IA o aggiunte all'argomento da una persona
 - Risorse suggerite o aggiunte: file, pagine o siti suggeriti dall'IA o aggiunti all'argomento da una persona. 
 
@@ -55,8 +55,5 @@ Per gli utenti che cercano informazioni sulla prenotazione di un viaggio di lavo
 - Per gli utenti che in genere ricercano "viaggi", crea un argomento su "Viaggi" con le informazioni che si aspettano di visualizzare. Prendere in considerazione l'aggiunta di un collegamento al sito esterno Concur nella descrizione dell'argomento. Se invece il collegamento è a un sito di prenotazione viaggi interno ospitato nel tenant di Microsoft 365, puoi aggiungerlo alle "Risorse aggiunte".
  
 ### <a name="search-results-priority"></a>Priorità dei risultati della ricerca 
- 
-Nell'esperienza di ricerca degli utenti, quando un utente cerca un termine come "viaggio", i risultati della ricerca verranno visualizzati con la priorità seguente in Microsoft Search
-1. Argomenti pubblicati o confermati 
-2. Segnalibri
-3. Argomenti suggeriti
+
+Nell'esperienza di ricerca dell'utente, quando un utente cerca un termine come "viaggio", un segnalibro verrà visualizzato prima di un argomento, se è disponibile un segnalibro.

@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare a creare, modificare ed eliminare i criteri anti-phishing avanzati disponibili nelle organizzazioni con Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cbe517ef2a702e3e4fd7f6af4ee1d7ed1dd13d2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 9af3824b245cd976d1e859d6ebc4efcda47325e0
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789164"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793089"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri anti-phishing in Microsoft Defender per Office 365
 
@@ -164,7 +164,7 @@ La creazione di un criterio anti-phishing personalizzato nel Centro sicurezza cr
 
        Tornare al **riquadro a** comparsa Gestisci domini personalizzati per la rappresentazione, è possibile rimuovere le voci selezionando una o più voci dall'elenco. È possibile cercare voci utilizzando la casella Di ricerca ![ icona ](../../media/m365-cc-sc-create-icon.png) **di** ricerca.
 
-       Dopo aver selezionato almeno una voce, viene visualizzata l'icona Elimina icona Elimina, che può essere utilizzata per ![ rimuovere le voci ](../../media/m365-cc-sc-delete-icon.png)  selezionate.
+       Dopo aver selezionato almeno una voce, viene visualizzata l'icona Elimina l'icona Elimina domini, che può essere utilizzata per ![ rimuovere le voci ](../../media/m365-cc-sc-delete-icon.png)  selezionate.
 
    - **Aggiungere mittenti e** domini attendibili : : specificare le eccezioni di protezione della rappresentazione per il criterio facendo clic su Gestisci **(nn)** mittenti attendibili e domini. Nel riquadro **a comparsa Gestisci domini personalizzati** per la protezione della rappresentazione visualizzato configurare le impostazioni seguenti:
       - **Mittenti:** verificare che la **scheda Mittente** sia selezionata e fare clic ![ su Aggiungi mittenti icona ](../../media/m365-cc-sc-create-icon.png) . Nel riquadro **a comparsa Aggiungi mittenti** attendibili visualizzato immettere un indirizzo di posta elettronica nella casella e quindi fare clic su **Aggiungi.** Ripetere questo passaggio tutte le volte necessarie. Per rimuovere una voce esistente, fare clic ![ sull'icona Elimina ](../../media/m365-cc-sc-close-icon.png) per la voce.
@@ -243,7 +243,7 @@ La creazione di un criterio anti-phishing personalizzato nel Centro sicurezza cr
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-7. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione.
+7. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare **clic su Indietro** o selezionare la pagina specifica della procedura guidata.
 
    Al termine, fare clic su **Invia.**
 

@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Informazioni sui numeri di registrazione e sulle notifiche sotto-revisione quando si acquistano prodotti o servizi Microsoft.
 ms.date: 03/17/2021
-ms.openlocfilehash: 8ec97356f9859e928a8ee435f406c15f4f17a4c4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 93cba6c1eebf0b41a94d6a6e3aac83693218f407
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332223"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795971"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Informazioni sui numeri di registrazione e sulle notifiche in fase di revisione
 
@@ -69,7 +69,7 @@ Lo screenshot seguente mostra la notifica visualizzata nella pagina dei dettagli
 
 La tabella seguente contiene esempi dei numeri di registrazione raccolti per ogni paese.  Nei casi in cui sono elencati più ID, ne è necessario uno solo.
 
-| Paese/area geografica | Dettagli |  |  |  |  |
+| Paese o area geografica | Dettagli |  |  |  |  |
 |:--|:--|:--|:--|:--|:--|
 | **Armenia** | INN - Codice fiscale<br>Partita IVA: nota anche come partita IVA. Si tratta del numero univoco che identifica una persona imponibile (azienda) o una persona giuridica non tassabile registrata per l'IVA.<br>Numero di servizio pubblico |  |  | |  |
 | **Azerbaigian**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) - Codice fiscale<br>INN - Codice fiscale |  |  |  |  |
@@ -86,7 +86,7 @@ La tabella seguente contiene esempi dei numeri di registrazione raccolti per ogn
 | **Polonia**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) - Codice fiscale<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) - Numero di identificazione nazionale utilizzato in Polonia (Polacco Powszechny Elektroniczny System Ewidencji Ludności, Universal Electronic System for Registration of the Population) |  |  |  |  |
 | **Russia**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) - Codice fiscale (russo "Individualiy Nomer Nalogoplatelshika") |  |  |  |  |
 | **Arabia Saudita** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) - Codice fiscale |  |  |  |  |
-| **Sudafrica** | TRN - Numero di registrazione del traffico |  |  |  |  |
+| **Sudafrica** | TRN - Numero di riferimento fiscale |  |  |  |  |
 | **Sud Sudan** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) - Codice fiscale |  |  |  |  |
 | **Tagikistan**  | INN - Codice fiscale<br>EIN - Numero di identificazione del datore di lavoro<br>KPP: si tratta di un codice che riflette il motivo della registrazione dell'organizzazione. |  |  |  |  |
 | **Tailandia** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) - Codice fiscale |  |  |  |  |

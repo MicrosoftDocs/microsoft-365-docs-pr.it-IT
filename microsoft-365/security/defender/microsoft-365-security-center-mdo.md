@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ec5d22caa52ffaa061637cb8c510a0efaf566b6a
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770979"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782898"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender per Office 365 nel Centro sicurezza Microsoft 365
 
@@ -139,7 +139,7 @@ Cercare proattivamente minacce, software dannosi e attività dannose in endpoint
 
 Il centro notifiche mostra le indagini create da funzionalità automatizzate di indagine e risposta. Questo strumento automatizzato e self-healing di Microsoft 365 Defender può aiutare i team addetti alla sicurezza a rispondere automaticamente a eventi specifici.
 
-[Altre informazioni sul centro notifiche](m365d-action-center.md)
+[Altre informazioni sul Centro notifiche](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>Analisi delle minacce
 
