@@ -1,7 +1,7 @@
 ---
-title: Ottenere consigli dal software
+title: Ottenere consigli in base al software
 description: Recupera un suggerimento di sicurezza relativo a un software specifico.
-keywords: api, api del grafico, api supportate, ottenere, suggerimenti per la sicurezza, suggerimenti per la sicurezza per software, gestione delle minacce e delle vulnerabilità, api di gestione delle minacce e delle vulnerabilità
+keywords: api, api del grafico, api supportate, ottenere, suggerimenti per la sicurezza, suggerimenti per la sicurezza per software, gestione di minacce e vulnerabilità, gestione di minacce e vulnerabilità api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 82479b0248ceee95321d269e3f48a4eeea3ad193
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 68bc53f2ae0b44567530cc1dd733c9dd37d380ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199502"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769594"
 ---
-# <a name="get-recommendation-by-software"></a>Ottenere consigli dal software
+# <a name="get-recommendation-by-software"></a>Ottenere consigli in base al software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

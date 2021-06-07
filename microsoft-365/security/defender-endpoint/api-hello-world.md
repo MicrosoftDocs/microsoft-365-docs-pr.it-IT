@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 08188acf1209ea2247a0eb09d722ce74c4540254
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 385227dc67039fb3666d3b9518af5be8eb01dc7a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939613"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769762"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API di Microsoft Defender per endpoint - Hello World 
 
@@ -47,15 +48,15 @@ L'operazione richiede solo 5 minuti in due passaggi:
 - Esempi di utilizzo: richiede solo copia/incolla di uno script di PowerShell breve
 
 ### <a name="do-i-need-a-permission-to-connect"></a>È necessaria un'autorizzazione per connettersi?
-Per la fase di registrazione dell'applicazione, è necessario disporre di un **ruolo di** amministratore globale nel tenant di Azure Active Directory (Azure AD).
+Per la fase di registrazione dell'applicazione, è necessario disporre di un **ruolo** di amministratore globale nel tenant di Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Passaggio 1 - Creare un'app in Azure Active Directory
 
 1. Accedere ad [Azure con](https://portal.azure.com) l'utente **amministratore** globale.
 
-2. Passare ad **Azure Active Directory** App  >  **registrations** Nuova  >  **registrazione**. 
+2. Passare **a** Azure Active Directory  >  **app Nuove**  >  **registrazioni**. 
 
-   ![Immagine di Microsoft Azure e spostamento nella registrazione dell'applicazione](images/atp-azure-new-app2.png)
+   ![Immagine dell'Microsoft Azure e della navigazione per la registrazione dell'applicazione](images/atp-azure-new-app2.png)
 
 3. Nel modulo di registrazione scegliere un nome per l'applicazione e quindi fare clic su **Registra.**
 

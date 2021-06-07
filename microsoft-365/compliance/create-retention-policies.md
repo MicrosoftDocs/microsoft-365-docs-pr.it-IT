@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710695"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769430"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -221,11 +221,11 @@ Per tornare al valore predefinito sia della cassetta postale sia del sito di Sha
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informazioni di configurazione per Skype for Business
 
-A differenza della posta elettronica di Exchange, non è possibile attivare lo stato della posizione Skype per includere automaticamente tutti gli utenti ma quando si attiva la posizione, sarà necessario scegliere manualmente gli utenti di cui si desidera conservare le conversazioni:
+A differenza di altre posizioni, non è possibile attivare lo stato della posizione Skype per includere automaticamente tutti gli utenti. Quando si attiva questa posizione, è invece necessario selezionare l'opzione **Modifica** per scegliere manualmente gli utenti di cui si vogliono conservare le conversazioni:
 
-![Scegliere il percorso Skype per i criteri di conservazione](../media/skype-location-retention-policies.png)
+![Modificare la posizione Skype per i criteri di conservazione](../media/skype-location-retention-policies.png)
 
-Quando si seleziona **Scegli utente**, si possono includere rapidamente tutti gli utenti selezionando la casella **Seleziona tutto**. È necessario considerare, però, che ciascun utente viene conteggiato come specifica inclusione nei criteri. Quindi, se si includono 1.000 utenti selezionando la casella **Seleziona tutto**, ciò corrisponde all'inclusione manuale di 1.000 utenti, ossia il numero massimo di utenti supportato da Skype for Business.  
+Dopo aver selezionato questa opzione **Modifica**, nel riquadro **Skype for Business** è possibile includere rapidamente tutti gli utenti selezionando la casella nascosto prima della colonna **Nome**. È necessario considerare, però, che ciascun utente viene conteggiato come specifica inclusione nei criteri. Quindi, includere 1.000 utenti selezionando questa casella è analogo a includere manualmente 1.000 utenti, ossia il numero massimo supportato da Skype for Business.
 
 Si noti che **Cronologia conversazioni**, una cartella di Outlook, è una caratteristica che non ha nulla a che fare con l'archiviazione di Skype. **Cronologia conversazioni** può essere disattivata dall'utente finale, mentre l'archiviazione per Skype avviene memorizzando una copia delle conversazioni di Skype in una cartella nascosta che è inaccessibile all'utente ma disponibile per eDiscovery.
 

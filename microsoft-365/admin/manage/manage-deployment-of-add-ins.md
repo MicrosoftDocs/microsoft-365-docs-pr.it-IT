@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire componenti aggiuntivi a utenti e gruppi dell'organizzazione tramite distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 796517ba13a4718c38d5200fcf9cbe38b5dc62d0
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636023"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779639"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -38,7 +38,7 @@ Per ulteriori informazioni su come determinare se l'organizzazione è in grado d
 Per ulteriori informazioni sulla gestione dei componenti aggiuntivi dopo la distribuzione, vedere [Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Per Word, Excel e PowerPoint utilizzano un Catalogo app [di SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) per distribuire componenti aggiuntivi agli utenti in un ambiente locale senza alcuna connessione a Microsoft 365 e/o supporto per i componenti aggiuntivi di SharePoint necessari. Ad Outlook usare Exchange pannello di controllo per la distribuzione in un ambiente locale senza una connessione a Microsoft 365.
+>  Per Word, Excel e PowerPoint utilizzano un Catalogo app [di SharePoint](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) per distribuire componenti aggiuntivi agli utenti in un ambiente locale senza alcuna connessione a Microsoft 365 e/o supporto per i componenti aggiuntivi di SharePoint necessari. Ad Outlook usare Exchange pannello di controllo per la distribuzione in un ambiente locale senza una connessione a Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approccio consigliato per la distribuzione dei componenti aggiuntivi per Office
 

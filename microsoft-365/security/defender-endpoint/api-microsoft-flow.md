@@ -1,5 +1,5 @@
 ---
-title: Connettore Microsoft Defender for Endpoint Flow
+title: Microsoft Defender for Endpoint Flow connector
 ms.reviewer: ''
 description: Usa Microsoft Defender for Endpoint Flow connector per automatizzare la sicurezza e creare un flusso che verrà attivato ogni volta che si verifica un nuovo avviso nel tenant.
 keywords: flusso, api supportate, api, flusso Microsoft, query, automazione
@@ -15,15 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 33a7c7b1907ac761dfdde43a70bfb8f515235150
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: dd0cc3c2da134750f905b1f80746d6ec65cc70b2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929300"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769705"
 ---
-# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (in precedenza Microsoft Flow) e funzioni di Azure
+# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (in precedenza Microsoft Flow) e Funzioni di Azure
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +37,7 @@ ms.locfileid: "51929300"
 
 L'automazione delle procedure di sicurezza è un requisito standard per ogni centro operativo di sicurezza moderno. La mancanza di cyber defender professionali obbliga SOC a lavorare nel modo più efficiente e l'automazione è un must. Microsoft Power Automate supporta connettori diversi che sono stati creati esattamente per questo. È possibile creare un'automazione di routine end-to-end entro pochi minuti.
 
-Microsoft Defender API ha un connettore di flusso ufficiale con molte funzionalità.
+Microsoft Defender API ha un connettore Flow con molte funzionalità.
 
 ![Immagine delle credenziali di modifica1](images/api-flow-0.png)
 
@@ -46,7 +47,7 @@ Microsoft Defender API ha un connettore di flusso ufficiale con molte funzionali
 
 ## <a name="usage-example"></a>Esempio di utilizzo
 
-L'esempio seguente illustra come creare un flusso che viene attivato ogni volta che si verifica un nuovo avviso nel tenant.
+L'esempio seguente illustra come creare un Flow che viene attivato ogni volta che si verifica un nuovo avviso nel tenant.
 
 1. Accedere a [Microsoft Power Automate](https://flow.microsoft.com).
 
@@ -54,11 +55,11 @@ L'esempio seguente illustra come creare un flusso che viene attivato ogni volta 
 
     ![Immagine delle credenziali di modifica2](images/api-flow-1.png)
 
-3. Scegli un nome per il flusso, cerca "Microsoft Defender ATP Triggers" come trigger e quindi seleziona il nuovo trigger Avvisi.
+3. Scegli un nome per il Flow, cerca "Trigger Microsoft Defender ATP" come trigger e quindi seleziona il nuovo trigger Avvisi.
 
     ![Immagine delle credenziali di modifica3](images/api-flow-2.png)
 
-Ora hai un flusso che viene attivato ogni volta che si verifica un nuovo avviso.
+Ora si dispone di Flow che viene attivato ogni volta che si verifica un nuovo avviso.
 
 ![Immagine delle credenziali di modifica4](images/api-flow-3.png)
 
@@ -68,7 +69,7 @@ Il trigger Avviso fornisce solo l'ID avviso e l'ID computer. È possibile utiliz
 
 ### <a name="get-the-alert-entity-using-the-connector"></a>Ottenere l'entità Alert usando il connettore
 
-1. Scegli **Microsoft Defender ATP** per il nuovo passaggio.
+1. Scegliere **Microsoft Defender ATP** per il nuovo passaggio.
 
 2. Scegliere **Avvisi - Api per il singolo avviso.**
 

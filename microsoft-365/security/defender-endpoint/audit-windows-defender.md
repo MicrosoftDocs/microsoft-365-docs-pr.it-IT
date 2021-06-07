@@ -9,19 +9,21 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 7ce652d58be2d9ff28d82c088d5471a7bffdf6dc
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.date: 06/02/2021
+ms.topic: article
+ms.openlocfilehash: 10351d97ba72945f929e042dc72a37724a1df291
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570973"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769606"
 ---
-# <a name="test-how-microsoft-defender-for-endpoint-features-work-in-audit-mode"></a>Verificare il funzionamento delle funzionalità di Microsoft Defender for Endpoint in modalità di controllo
+# <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Testare la riduzione della superficie di attacco in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,21 +31,20 @@ ms.locfileid: "51570973"
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-Puoi abilitare le regole di riduzione della superficie di attacco, la protezione degli exploit, la protezione di rete e l'accesso controllato alle cartelle in modalità di controllo. La modalità di controllo consente di visualizzare un record di ciò *che* sarebbe successo se fosse stata abilitata la funzionalità.
+Se si fa parte del team di sicurezza dell'organizzazione, è possibile configurare le funzionalità di riduzione della superficie di attacco per l'esecuzione in modalità di controllo per vedere come funzionano nell'organizzazione. In particolare, è possibile abilitare le regole di riduzione della superficie di attacco, la protezione degli exploit, la protezione di rete e l'accesso controllato alle cartelle in modalità di controllo. La modalità di controllo consente di visualizzare un record di ciò *che* sarebbe successo se fosse stata abilitata la funzionalità.
 
 È possibile abilitare la modalità di controllo durante il test del funzionamento delle funzionalità nell'organizzazione. In questo modo puoi assicurarti che le app line-of-business non siano interessate. Puoi anche avere un'idea del numero di tentativi sospetti di modifica dei file in un determinato periodo di tempo.
 
-Le funzionalità non bloccano o impediscono la modifica di app, script o file. Tuttavia, il registro eventi di Windows registrerà gli eventi come se le funzionalità fossero completamente abilitate. Con la modalità di controllo, è possibile esaminare il registro eventi per verificare l'impatto che la funzionalità avrebbe avuto se fosse stata abilitata.
+Le funzionalità non bloccano o impediscono la modifica di app, script o file. Tuttavia, il Windows eventi registra gli eventi come se le funzionalità fossero completamente abilitate. Con la modalità di controllo, è possibile esaminare il registro eventi per verificare l'impatto che la funzionalità avrebbe avuto se fosse stata abilitata.
 
-Per trovare le voci controllate, passare a **Applicazioni e** servizi  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >  **Operational**.
+Per trovare le voci verificate, passare a **Applicazioni** e servizi  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >  **Operativo**.
 
 Puoi usare Defender for Endpoint per ottenere maggiori dettagli per ogni evento, in particolare per analizzare le regole di riduzione della superficie di attacco. L'uso della console defender per endpoint consente di analizzare i problemi nell'ambito della sequenza temporale degli avvisi e [degli scenari di indagine.](investigate-alerts.md)
 
 È possibile usare Criteri di gruppo, PowerShell e provider di servizi di configurazione (CSP) per abilitare la modalità di controllo.
 
 > [!TIP]
-> Puoi anche visitare il sito Web Windows Defender Testground all'indirizzo [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) verificare che le funzionalità funzionino e vedere come funzionano.
+> È inoltre possibile visitare il sito Windows Defender Testground all'indirizzo [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) verificare che le funzionalità funzionino e vedere come funzionano.
 
  **Opzioni di controllo** | **Come abilitare la modalità di controllo** | **Come visualizzare gli eventi**
 |---------|---------|---------|
@@ -52,9 +53,4 @@ Puoi usare Defender for Endpoint per ottenere maggiori dettagli per ogni evento,
 | Il controllo si applica a tutti gli eventi | [Abilitare la protezione di rete](enable-network-protection.md) | [Eventi di protezione di rete](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
 | Il controllo si applica alle singole mitigazioni | [Abilitare la protezione dagli exploit](enable-exploit-protection.md) | [Eventi di protezione da exploit](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
-## <a name="related-topics"></a>Argomenti correlati
 
-* [Proteggere i dispositivi dagli exploit](exploit-protection.md)
-* [Ridurre le superfici di attacco con le regole di riduzione della superficie di attacco](attack-surface-reduction.md)
-* [Proteggere la rete](network-protection.md)
-* [Proteggere le cartelle importanti](controlled-folders.md)

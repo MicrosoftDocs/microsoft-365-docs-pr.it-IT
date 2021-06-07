@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538538"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769294"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -93,7 +93,7 @@ Nella tabella seguente sono riportate le differenze di comportamento tra i due m
 |Verifica delle condizioni negli allegati di Exchange|No | Sì|
 |Applicazione di contrassegni visivi |Sì |Sì (solo posta elettronica) |
 |Override della crittografia IRM applicata senza etichetta|Sì, se l'utente dispone del diritto minimo di utilizzo per l'esportazione |Sì (solo posta elettronica) |
-|Etichettatura della posta in arrivo|No |Sì (crittografia non applicata) |
+|Etichettatura della posta in arrivo|No |Sì|
 
 \* L'applicazione automatica di etichette non è attualmente disponibile in tutte le aree geografiche. Se il tenant non supporta questa funzionalità, la scheda di applicazione automatica delle etichette non è visibile nell'interfaccia di amministrazione relativa all’applicazione delle etichette.
 

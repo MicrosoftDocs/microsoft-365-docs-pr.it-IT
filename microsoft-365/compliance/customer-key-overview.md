@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: In questo articolo verranno informazioni sul funzionamento della crittografia del servizio con customer key in Microsoft 365.
-ms.openlocfilehash: 3d0c86dbca02a66547f0ade643b745ecfc8f92cd
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344771"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769450"
 ---
 # <a name="service-encryption-with-customer-key"></a>Crittografia del servizio con Customer Key
 
@@ -52,8 +52,11 @@ Un criterio di crittografia dei dati definisce la gerarchia di crittografia. Que
 - Teams di stato
 - Informazioni sull'utente e sul segnale Exchange Online
 - Exchange Online cassette postali che non sono già crittografate dai DEP delle cassette postali
-- Dati EDM (Exact Data Match) MIP : (schemi di file di dati, pacchetti di regole e salt utilizzati per eseguire l'hashing dei dati sensibili).
-  Per la corrispondenza esatta dei dati MIP (EDM) e Microsoft Teams, protezione esecuzione programmi multi-carico di lavoro crittografa i nuovi dati dal momento in cui si assegna la funzionalità Protezione esecuzione programmi al tenant. Ad Exchange Online, Customer Key crittografa tutti i dati esistenti e nuovi.
+- Microsoft Information Protection:
+
+  - Dati edM (Exact Data Match), inclusi schemi di file di dati, pacchetti di regole e salt utilizzati per eseguire l'hashing dei dati sensibili. Per EDM e Microsoft Teams, protezione esecuzione programmi multi-carico di lavoro crittografa i nuovi dati dal momento in cui si assegna la protezione esecuzione programmi al tenant. Ad Exchange Online, Customer Key crittografa tutti i dati esistenti e nuovi.
+
+  - Configurazione delle etichette per le etichette di riservatezza
 
 I DEP multi-carico di lavoro non crittografano i tipi di dati seguenti. Al contrario, Microsoft 365 altri tipi di crittografia per proteggere questi dati.
 

@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: ab33db7fb7acf1969973a7af8f80ea97ef3d378f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689098"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778367"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Esportare la valutazione della configurazione sicura per dispositivo
 

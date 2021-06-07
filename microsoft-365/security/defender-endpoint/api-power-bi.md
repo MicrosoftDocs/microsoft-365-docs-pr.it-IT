@@ -1,5 +1,5 @@
 ---
-title: Connessione delle API di Microsoft Defender for Endpoint a Power BI
+title: Connessione delle API di Microsoft Defender per endpoint a Power BI
 ms.reviewer: ''
 description: Crea un report power business intelligence (BI) sopra le API di Microsoft Defender per endpoint.
 keywords: api, api supportate, Power BI, report
@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 5c76784d78837c324922ffc25539746a4921e426
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935042"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769714"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Creare report personalizzati con Power BI
 
@@ -38,11 +39,11 @@ ms.locfileid: "51935042"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-In questa sezione imparerai a creare un report di Power BI in Defender per le API endpoint.
+In questa sezione scoprirai come creare un report Power BI informazioni su Defender per le API endpoint.
 
-Nel primo esempio viene illustrato come connettere Power BI all'API Advanced Hunting e nel secondo esempio viene illustrata una connessione alle API OData, ad esempio azioni del computer o avvisi.
+Il primo esempio illustra come connettersi Power BI'API Advanced Hunting e il secondo esempio mostra una connessione alle API OData, ad esempio azioni del computer o avvisi.
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a>Connettere Power BI all'API advanced hunting
+## <a name="connect-power-bi-to-advanced-hunting-api"></a>Connessione Power BI api di ricerca avanzata
 
 - Aprire Microsoft Power BI
 
@@ -107,7 +108,7 @@ Nel primo esempio viene illustrato come connettere Power BI all'API Advanced Hun
 
 - Immettere le credenziali e attendere l'accesso
 
-- Fare clic **su Connetti**
+- Fare **clic Connessione**
 
     ![Immagine del set di credenziali2](images/power-bi-set-credentials-organizational-cont.png)
 
@@ -115,7 +116,7 @@ Nel primo esempio viene illustrato come connettere Power BI all'API Advanced Hun
 
 - È possibile duplicare la tabella, rinominarla e modificare la query ricerca avanzata all'interno per ottenere i dati che si desidera.
 
-## <a name="connect-power-bi-to-odata-apis"></a>Connettere Power BI alle API OData
+## <a name="connect-power-bi-to-odata-apis"></a>Connessione Power BI alle API OData
 
 - L'unica differenza rispetto all'esempio precedente è la query all'interno dell'editor. 
 
@@ -137,11 +138,11 @@ Nel primo esempio viene illustrato come connettere Power BI all'API Advanced Hun
 - È inoltre possibile utilizzare query OData per filtri di query, vedere [Utilizzo di query OData](exposed-apis-odata-samples.md)
 
 
-## <a name="power-bi-dashboard-samples-in-github"></a>Esempi di dashboard di Power BI in GitHub
-Per ulteriori informazioni, vedere Modelli [di report di Power BI.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
+## <a name="power-bi-dashboard-samples-in-github"></a>Power BI di dashboard in GitHub
+Per ulteriori informazioni, vedere i [modelli Power BI report.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
 
 ## <a name="sample-reports"></a>Report di esempio
-Visualizzare gli esempi di report di Microsoft Defender per Endpoint Power BI. Per ulteriori informazioni, vedere [Sfogliare gli esempi di codice.](https://docs.microsoft.com/samples/browse/?products=mdatp)
+Visualizza gli esempi di report di Microsoft Defender for Endpoint Power BI. Per ulteriori informazioni, vedere [Sfogliare gli esempi di codice.](https://docs.microsoft.com/samples/browse/?products=mdatp)
 
 
 ## <a name="related-topic"></a>Argomento correlato

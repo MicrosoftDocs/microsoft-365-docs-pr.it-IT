@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Entro 30 giorni dall'eliminazione di un account utente, è possibile ripristinare l'account e tutti i dati e l'utente può accedere con lo stesso account.
-ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f849fe8e403aa9a72eccb4dd65665ec9f33618d1
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623822"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779651"
 ---
 # <a name="restore-a-user"></a>Ripristinare un utente
    
@@ -38,7 +38,7 @@ Ecco un paio di suggerimenti:
   
 - Assicurati che le licenze siano disponibili per l'assegnazione all'account.
     
-- Se l'azienda usa Active Directory, vedere [Risoluzione dei problemi relativi agli account utente eliminati in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts.md) per istruzioni sul ripristino di un account utente. 
+- Se l'azienda utilizza Active Directory, per le instrusioni sul ripristino di un account utente, vedere Come risolvere i problemi relativi agli account utente eliminati [in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Ripristinare uno o più account utente
 

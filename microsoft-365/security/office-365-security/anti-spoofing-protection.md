@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17228f634dc4aee9cfd416ca676920a5b4e0fba2
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537968"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779495"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -54,7 +54,7 @@ In EOP sono disponibili le tecnologie anti-spoofing seguenti:
 
 - **Consentire o bloccare i mittenti di spoofing nel tenant Elenco consentiti/bloccati**: quando si esegue l'override del verdetto nei dati analitici di spoof intelligence, il mittente di spoofing diventa una voce nell'Elenco consentiti/bloccati manuale che compare unicamente nella scheda **Spoofing** nel tenant Elenco consentiti/bloccati. Inoltre, è possibile creare, consentire o bloccare manualmente le voci per i mittenti di spoofing prima che vengano rilevati da spoof intelligence. Per altre informazioni, vedere [Gestire il tenant Elenco consentiti/blcocati in EOP](tenant-allow-block-list.md).
 
-- **Criteri anti-phishing**: in EOP, i criteri anti-phishing contengono le seguenti impostazioni anti-spoofing:
+- **Criteri anti-phishing**: in EOP e Microsoft Defender per Office 365, i criteri anti-phishing contengono le seguenti impostazioni anti-spoofing:
   - Attivare o disattivare spoof intelligence.
   - Attivare o disattivare l'identificazione dei mittenti non autenticati in Outlook.
   - Specificare l'azione per i mittenti di spoofing bloccati.

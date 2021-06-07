@@ -1,7 +1,7 @@
 ---
-title: API di ricerca avanzata di Microsoft 365 Defender
-description: Informazioni su come eseguire query di ricerca avanzate con l'API di ricerca avanzata di Microsoft 365 Defender
-keywords: Advanced Hunting, APIs, api, M365 Defender, Microsoft 365 Defender
+title: Microsoft 365 API di ricerca avanzata defender
+description: Informazioni su come eseguire query di ricerca avanzate Microsoft 365'API di ricerca avanzata di Defender
+keywords: Advanced Hunting, API, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932894"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769587"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>API di ricerca avanzata di Microsoft 365 Defender
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 API di ricerca avanzata defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51932894"
 > [!IMPORTANT]
 > Alcune informazioni fanno riferimento alle caratteristiche del prodotto prima del rilascio, e possono essere modificate sostanzialmente prima della distribuzione al pubblico. Microsoft non fornisce alcuna garanzia, esplicita o implicita, in relazione alle informazioni contenute in questo documento.
 
-[La ricerca](advanced-hunting-overview.md) avanzata è uno [](advanced-hunting-query-language.md) strumento di ricerca delle minacce che usa query appositamente costruite per esaminare gli ultimi 30 giorni di dati degli eventi in Microsoft 365 Defender. È possibile utilizzare query di ricerca avanzate per esaminare attività insolite, rilevare possibili minacce e persino rispondere agli attacchi. L'API di ricerca avanzata consente di eseguire query a livello di programmazione sui dati degli eventi.
+[La ricerca](advanced-hunting-overview.md) avanzata è uno [](advanced-hunting-query-language.md) strumento di ricerca delle minacce che usa query appositamente costruite per esaminare i dati degli ultimi 30 giorni dell'evento in Microsoft 365 Defender. È possibile utilizzare query di ricerca avanzate per esaminare attività insolite, rilevare possibili minacce e persino rispondere agli attacchi. L'API di ricerca avanzata consente di eseguire query a livello di programmazione sui dati degli eventi.
 
 ## <a name="quotas-and-resource-allocation"></a>Quote e allocazione delle risorse
 
@@ -47,17 +47,16 @@ Le condizioni seguenti sono correlate a tutte le query.
 1. Le query esplorano e restituiscono dati degli ultimi 30 giorni.
 2. I risultati possono restituire fino a 100.000 righe.
 3. È possibile effettuare fino a 15 chiamate al minuto per tenant.
-4. Hai 10 minuti di tempo di esecuzione all'ora per ogni tenant.
-5. Hai quattro ore totali di tempo di esecuzione al giorno per tenant.
-6. Se una singola richiesta viene eseguita per più di 10 minuti, si verifica il timeout e viene restituito un errore.
-7. Un codice di risposta HTTP indica che hai raggiunto una quota, in base al numero di richieste inviate o al tempo `429` di esecuzione assegnato. Leggere il corpo della risposta per comprendere il limite raggiunto. 
+4. Le query vengono bloccate se il tenant ha raggiunto il 100% fino al successivo ciclo di 15 minuti.
+5. Se una singola richiesta viene eseguita per più di 10 minuti, si verifica il timeout e viene restituito un errore.
+6. Un codice di risposta HTTP indica che hai raggiunto una quota, in base al numero di richieste inviate o al tempo `429` di esecuzione assegnato. Leggere il corpo della risposta per comprendere il limite raggiunto. 
 
 > [!NOTE]
 > Tutte le quote elencate sopra (ad esempio 15 chiamate al min) sono per dimensione del tenant. Queste quote sono minime.
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Una delle autorizzazioni seguenti è necessaria per chiamare l'API di ricerca avanzata. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi Accedere alle API di [Microsoft 365 Defender Protection](api-access.md)
+Una delle autorizzazioni seguenti è necessaria per chiamare l'API di ricerca avanzata. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi [Accedere alle API Microsoft 365 Defender Protection](api-access.md)
 
 Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 -|-|-

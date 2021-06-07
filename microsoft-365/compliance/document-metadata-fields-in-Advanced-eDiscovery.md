@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo vengono definiti i campi di metadati per i documenti in un set di revisioni in un caso in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730499"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769570"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati dei documenti in Advanced eDiscovery
 
@@ -75,6 +75,7 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |EmailAction*||Email_action|I valori **sono None,** **Reply** o **Forward;** in base all'oggetto di un messaggio.|
 |Conferma di recapito e-mail richiesta||Email_delivery_receipt|Indirizzo di posta elettronica fornito nelle intestazioni Internet per la conferma di recapito.|
 |Priorità|EmailImportance|Email_importance|Importanza del messaggio: **0** - Basso; **1** - Normale; **2** - Alta|
+|Errori di elaborazione ignorati|ErrorIgnored|Error_Ignored|Errore ignorato e non corretti.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Set completo di intestazioni di posta elettronica dal messaggio di posta elettronica|
 |EmailLevel*||Email_level|Indica il livello di un messaggio all'interno del thread di posta elettronica a cui appartiene. gli allegati ereditano il valore del messaggio padre.|
 |ID messaggio di posta elettronica||Email_message_ID|ID messaggio Internet dal messaggio.|
@@ -88,14 +89,14 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |||Extracted_text_path|Percorso del file di testo estratto nell'esportazione.|
 |ExtractedTextLength*||Extracted_text_length|Numero di caratteri nel testo estratto.|
 |FamilyDuplicateSet*||Family_duplicate_set|Identificatore numerico per le famiglie che sono duplicati esatti l'uno dell'altro (stesso contenuto e tutti gli stessi allegati).|
-|ID famiglia|FamilyId|Family_ID|Id famiglia raggruppa tutti gli elementi; per la posta elettronica, include il messaggio e tutti gli allegati; per i documenti, include il documento e tutti gli elementi incorporati.|
+|ID famiglia|FamilyId|Family_ID|Raggruppa tutti gli elementi per la posta elettronica. Sono inclusi il messaggio e tutti gli allegati e gli elementi estratti.|
 |Dimensioni famiglia||Family_size|Numero di documenti della famiglia.|
 |Classe File|FileClass|File_class|Per il contenuto di SharePoint e OneDrive: **Document**; per il contenuto da Exchange: **Posta elettronica** o **Allegato.**|
 |File ID|FileId|File_ID|Identificatore del documento univoco all'interno del caso.|
 |Data di creazione del file system||File_system_date_created|Data di creazione dal file system (si applica solo ai dati non Office 365 dati).|
 |Data di modifica del file system||File_system_date_modified|Data di modifica dal file system (si applica solo ai dati non Office 365 dati).|
 |Tipo di file|FileType||Tipo di file dell'elemento in base all'estensione di file.|
-|ID gruppo|GroupID||ID gruppo per il contenuto raggruppato.|
+|ID gruppo|ID gruppo|Group_ID|Raggruppa tutti gli elementi per la posta elettronica e i documenti. Per la posta elettronica, questo include il messaggio e tutti gli allegati e gli elementi estratti. Per i documenti, include il documento e tutti gli elementi incorporati.|
 |Ha allegato|HasAttachment|Email_has_attachment|Indica se il messaggio contiene allegati.|
 |Ha avvocato|HasAttorney||**True** quando almeno uno dei partecipanti viene trovato nell'elenco degli avvocati. in caso contrario, il valore è **False**.|
 |HasText*||Has_text|Indica se l'elemento contiene testo. i valori possibili **sono True** e **False.**|
@@ -126,6 +127,7 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |NativeSHA256||Native_SHA_256|Hash SHA256 (valore hash a 256 bit) del flusso di file.|
 |ND/ET Sort: esclusione degli allegati|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenazione del set di thread di posta elettronica (ET) e dell'insieme ND (Near-duplicate). Questo campo viene utilizzato per un ordinamento efficiente al momento della revisione. Una **D** è preceduta da set ND e **un E** è preceduto da set ET.|
 |ND/ET Sort: inclusione di allegati|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenazione di un set di thread di posta elettronica (ET) e di un set di ND (near-duplicate). Questo campo viene utilizzato per un ordinamento efficiente al momento della revisione. Una **D** è preceduta da set ND e **un E** è preceduto da set ET. Ogni elemento di posta elettronica in un insieme ET è seguito dai relativi allegati appropriati.|
+|Set quasi duplicato||ND_set|Gli elementi simili al documento pivot condividono lo stesso ND_set.|
 |Autori di O365||O365_authors|Autore da SharePoint.|
 |O365 creato da||O365_created_by|Creato da SharePoint.|
 |Data di creazione di O365||O365_date_created|Data di creazione SharePoint.|
@@ -155,6 +157,7 @@ Nella tabella seguente sono elencati i campi di metadati per i documenti in un i
 |Dominio del mittente|SenderDomain|Email_sender_domain|Dominio del mittente.|
 |Inviato|Inviato|Email_date_sent|Data di invio del messaggio.|
 |Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|Campo di ordinamento - posta elettronica e allegati: anti-cronologico; documents: pivot first then by descending similarity score.|
+|IMPOSTA ID||Set_ID|I documenti con contenuto simile (ND_set) o posta elettronica all'interno dello stesso thread di posta elettronica (Email_set) condividono lo stesso Set_ID.|
 |SimilarityPercent||Similarity_percent|Indica quanto è simile un documento al pivot del set duplicato vicino.|
 |Dimensioni native del file|Dimensioni|Native_size|Numero di byte dell'elemento nativo.|
 |Oggetto|Oggetto|Email_subject|Oggetto del messaggio.|

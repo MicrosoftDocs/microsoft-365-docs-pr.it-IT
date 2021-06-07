@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: informazioni sui servizi e sui tipi di elementi che è possibile usare nelle etichette di riservatezza come condizioni per i criteri di prevenzione della perdita dei dati
-ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 94d5e9f53471f6113dcc755995a3f94e95a58e53
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651093"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779844"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Usare le etichette di riservatezza come condizioni per i criteri di prevenzione della perdita dei dati
 
@@ -65,6 +65,9 @@ Le etichette di riservatezza sono mostrate come opzioni dell'elenco **Il contenu
 \* Il rilevamento dei criteri di prevenzione della perdita dei dati per gli allegati di posta elettronica con etichette è supportato solo per i tipi di file di Office.
 
 \** Gli allegati inviati in Teams tramite chat individuali o canali sono caricati automaticamente su OneDrive for Business e SharePoint. Perciò, se SharePoint Online o OneDrive for Business sono inclusi come posizioni del criteri di prevenzione della perdita dei dati, gli allegati etichettai inviati in Teams saranno inclusi automaticamente nell'ambito di questa condizione. Teams non deve essere selezionato come posizione nel criteri di prevenzione della perdita dei dati.
+
+> [!NOTE]
+> L'abilità di DLP di rilevare le etichette di riservatezza in SharePoint e OneDrive for Business è limitata. Per altre informazioni, vedere [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations).
 
 ### <a name="supported-scenarios"></a>Scenari supportati
 

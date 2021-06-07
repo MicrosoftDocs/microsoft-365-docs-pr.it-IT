@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare etichette di conservazione e criteri di etichettatura automatica in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 0324f988402d407e30d10a725aa5acebb0a69964
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107638"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788399"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -132,21 +132,19 @@ Dopo aver applicato l’etichetta al contenuto tramite un criterio di applicazio
 > [!WARNING]
 > Questa configurazione attualmente ha una limitazione nota per cui a tutti i messaggi di posta elettronica senza etichetta viene sempre applicata l’etichetta di conservazione selezionata, quando vi è una corrispondenza per i tipi di informazioni riservate scelte. Ad esempio, anche se il criterio di applicazione automatica viene riservato a specifici utenti oppure vengono selezionati percorsi diversi da Exchange per i criteri, l’etichetta viene sempre applicata ai messaggi di posta elettronica senza etichetta quando vi è una corrispondenza.
 
-Quando si creano criteri di conservazione ad applicazione automatica per le informazioni riservate, viene visualizzato lo stesso elenco di modelli di criteri mostrato quando si creano criteri di prevenzione della perdita dei dati (DLP). Ogni modello è preconfigurato in modo da cercare specifici tipi di informazioni riservate. Ad esempio, il modello mostrato di seguito cerca i numeri ITIN, SSN e di passaporto nella categoria **Privacy**, e nel modello **Dati personali (PII) degli Stati Uniti**:
+Quando si creano criteri di conservazione ad applicazione automatica per le informazioni riservate, viene visualizzato lo stesso elenco di modelli di criteri mostrato quando si creano criteri di prevenzione della perdita dei dati (DLP). Ogni modello è preconfigurato in modo da cercare specifici tipi di informazioni riservate. Nell'esempio seguente, i tipi di informazioni sensibili appartengono alla categoria **Privacy** e al modello dei **dati relativi alle Informazioni personali statunitense**:
 
 ![Modelli di criteri con le tipologie di informazioni sensibili](../media/sensitive-info-configuration.png)
 
 Per altre informazioni sui tipi di informazioni sensibili, vedere [Definizioni delle entità tipo di informazione sensibile](sensitive-information-type-entity-definitions.md). Attualmente, le [corrispondenze esatte dei dati](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) e la [creazione dell'impronta digitale dei documenti](document-fingerprinting.md) non sono supportate per questo scenario.
 
-Dopo aver selezionato un modello di criteri, è possibile aggiungere o rimuovere qualunque tipo di informazioni sensibili e modificare il numero di istanze e l'accuratezza della corrispondenza. Nello screenshot di esempio mostrato di seguito, verrà applicata automaticamente un'etichetta di conservazione solo quando:
+Dopo aver selezionato un modello di criteri, è possibile aggiungere o rimuovere qualsiasi tipo di informazioni e cambiare il livello di confidenza e il numero di istanze. Nello screenshot dell'esempio precedente, queste opzioni sono state modificate in modo da poter applicare un'etichetta di conservazione solo quando:
   
-- Il tipo di informazioni sensibili rilevate ha un'accuratezza della corrispondenza (o livello di attendibilità) di almeno 75. Molti tipi di informazioni sensibili sono definiti con più criteri. I criteri con un livello di accuratezza della corrispondenza superiore richiedono l'individuazione di ulteriori elementi di prova (ad esempio parole chiave, date o indirizzi), mentre i criteri con un livello di accuratezza della corrispondenza inferiore richiedono meno elementi di prova. Più basso è il valore di accuratezza della corrispondenza **min**, più facile sarà che il contenuto soddisfi la condizione.
+- Il tipo di informazioni sensibili che presentano un'accuratezza (o un [livello di confidenza](sensitive-information-type-learn-about.md#more-on-confidence-levels)) di almeno **Media confidenza** per due dei tipi di informazioni sensibili e **Alta confidenza** per uno. Molti tipi di informazioni sensibili sono definiti con più criteri. I criteri con un livello di accuratezza della corrispondenza superiore richiedono l'individuazione di ulteriori elementi di prova (ad esempio parole chiave, date o indirizzi), mentre i criteri con un livello di accuratezza della corrispondenza inferiore richiedono meno elementi di prova. Un livello di confidenza più basso corrisponde a una maggiore corrispondenza dei contenuti alla condizione, ma anche a un maggior numero di potenziali falsi positivi.
 
-- Il contenuto include tra 1 e 9 istanze di qualsiasi di questi tre tipi di informazioni riservate. È possibile eliminare il valore **a** in modo che diventi **Qualsiasi**.
+- Il contenuto include tra 1 e 9 istanze di qualsiasi di questi tre tipi di informazioni riservate. L'impostazione predefinita per il valore **a** è **Qualsiasi**.
 
 Per altre informazioni su queste opzioni, vedere le indicazioni seguenti della documentazione sulla prevenzione della perdita dei dati [Modificare le regole per rendere più facili o difficili le corrispondenze](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
-    
-![Opzioni per l'identificazione dei tipi di informazioni riservate](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
 
 Per considerare quando si usano tipi di informazioni riservate per applicare automaticamente etichette di conservazione:
 

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 98dd513cc66683ff1b95f66d6d7b89916ce54bab
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3818fc0050790b2c3b307f95ee0760c516cbf893
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199777"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769822"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>API Per aggiungere o rimuovere tag computer
 

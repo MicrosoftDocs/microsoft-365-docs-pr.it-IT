@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come il punteggio della produttività Microsoft riflette le misurazioni delle persone e delle esperienze tecnologiche e confronta le organizzazioni con dimensioni simili.
-ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593842"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779675"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio della produttività Microsoft 
 
@@ -40,7 +40,7 @@ Forniamo metriche, approfondimenti e consigli in due aree:
 
 - **Esperienze delle persone:** Quantifica come lavora l'organizzazione utilizzando le categorie di Microsoft 365 quali collaborazione ai contenuti, mobilità, riunioni e lavoro in team.  
 
-    Per ognuna delle categorie menzionate, consultiamo le ricerche pubbliche per identificare alcune procedure consigliate e i vantaggi associati sotto forma di efficacia organizzativa. Ad esempio, una ricerca di [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) ha mostrato che quando le persone collaborano e condividono contenuti nel cloud (invece di inviare contenuti per posta elettronica), possono risparmiare fino a 100 minuti a settimana. Inoltre, quantifichiamo l'utilizzo di queste best practice nell'organizzazione per verificare la propria posizione nel percorso verso la trasformazione digitale. 
+    Per ognuna delle categorie menzionate, consultiamo le ricerche pubbliche per identificare alcune procedure consigliate e i vantaggi associati sotto forma di efficacia organizzativa. Ad esempio, una ricerca di Forrester ha mostrato che quando le persone collaborano e condividono contenuti nel cloud (invece di inviare contenuti per posta elettronica), possono risparmiare fino a 100 minuti a settimana. Inoltre, quantifichiamo l'utilizzo di queste best practice nell'organizzazione per verificare la propria posizione nel percorso verso la trasformazione digitale. 
 
 - **Esperienze con la tecnologia:** l'organizzazione dipende da una tecnologia affidabile con prestazioni elevate, nonché dall'uso efficiente di Microsoft 365. [L'analisi degli endpoint](https://aka.ms/endpointanalytics) consente di comprendere in che modo l'organizzazione può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software. L'integrità di Microsoft  365 Apps consente di comprendere se i dispositivi nell'organizzazione eseguono Microsoft 365 Apps sui canali consigliati.
 

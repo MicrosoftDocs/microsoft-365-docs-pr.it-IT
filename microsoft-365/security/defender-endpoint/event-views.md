@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.topic: article
+ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569744"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769330"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Visualizzare eventi per la riduzione della superficie di attacco
 
@@ -28,7 +29,8 @@ ms.locfileid: "51569744"
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> [!TIP]
+> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Esaminare gli eventi di riduzione della superficie di attacco nel Visualizzatore eventi per monitorare le regole o le impostazioni in uso. Puoi anche determinare se le impostazioni sono troppo "rumorose" o influiscono sul flusso di lavoro quotidiano.
 
@@ -36,17 +38,17 @@ La revisione degli eventi è utile quando si valutano le funzionalità. Puoi abi
 
 In questo articolo vengono elencati tutti gli eventi, la funzionalità o l'impostazione associata e viene descritto come creare visualizzazioni personalizzate da filtrare in base a eventi specifici.
 
-Ottieni report dettagliati su eventi e blocchi come parte di Windows Security se hai una sottoscrizione E5 e usi [Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+Ottieni report dettagliati su eventi e blocchi come parte di Sicurezza di Windows se hai una sottoscrizione E5 e usi [Microsoft Defender for Endpoint.](microsoft-defender-endpoint.md)
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Usare visualizzazioni personalizzate per esaminare le funzionalità di riduzione della superficie di attacco
 
-Crea visualizzazioni personalizzate nel Visualizzatore eventi di Windows per visualizzare solo gli eventi per funzionalità e impostazioni specifiche. Il modo più semplice è importare una visualizzazione personalizzata come file XML. È possibile copiare il codice XML direttamente da questa pagina.
+Crea visualizzazioni personalizzate nel Visualizzatore Windows eventi per visualizzare solo gli eventi per funzionalità e impostazioni specifiche. Il modo più semplice è importare una visualizzazione personalizzata come file XML. È possibile copiare il codice XML direttamente da questa pagina.
 
 Puoi anche passare manualmente all'area dell'evento corrispondente alla funzionalità.
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importare una visualizzazione personalizzata XML esistente
 
-1. Creare un file txt vuoto e copiare il codice XML per la visualizzazione personalizzata che si desidera utilizzare nel file txt. Eseguire questa operazione per ognuna delle visualizzazioni personalizzate che si desidera utilizzare. Rinominare i file come indicato di seguito (assicurarsi di modificare il tipo da txt a xml):
+1. Creare un file .txt vuoto e copiare il codice XML per la visualizzazione personalizzata che si desidera utilizzare nel file .txt file. Eseguire questa operazione per ognuna delle visualizzazioni personalizzate che si desidera utilizzare. Rinominare i file come segue (assicurarsi di modificare il tipo da .txt a .xml):
     - Visualizzazione personalizzata degli eventi di accesso controllato alle *cartelle:cfa-events.xml*
     - Visualizzazione personalizzata degli eventi di protezione degli *exploit:ep-events.xml*
     - Visualizzazione personalizzata degli eventi di riduzione della superficie di *attacco:asr-events.xml*
@@ -66,7 +68,7 @@ Puoi anche passare manualmente all'area dell'evento corrispondente alla funziona
 
 ### <a name="copy-the-xml-directly"></a>Copiare direttamente il codice XML
 
-1. Digita **Visualizzatore** eventi nel menu Start e apri il Visualizzatore **eventi di** Windows.
+1. Digitare **Visualizzatore** eventi nel menu Start e aprire il visualizzatore Windows **eventi.**
 
 2. Nel riquadro sinistro, in **Azioni,** selezionare **Crea visualizzazione personalizzata...**
 
@@ -76,7 +78,7 @@ Puoi anche passare manualmente all'area dell'evento corrispondente alla funziona
 
 4. Incollare il codice XML per la funzionalità da cui si desidera filtrare gli eventi nella sezione XML.
 
-5. Selezionare **OK**. Specificare un nome per il filtro.
+5. Seleziona **OK**. Specificare un nome per il filtro.
 
 6. Verrà creata una visualizzazione personalizzata che filtra solo gli eventi correlati a tale funzionalità.
 
@@ -135,12 +137,12 @@ Puoi anche passare manualmente all'area dell'evento corrispondente alla funziona
 
 ## <a name="list-of-attack-surface-reduction-events"></a>Elenco degli eventi di riduzione della superficie di attacco
 
-Tutti gli eventi di riduzione della superficie di attacco si trovano in Registri applicazioni e servizi **> Microsoft > Windows** e quindi nella cartella o nel provider come indicato nella tabella seguente.
+Tutti gli eventi di riduzione della superficie di attacco si trovano in Registri applicazioni e servizi **> Microsoft > Windows** e quindi nella cartella o nel provider elencati nella tabella seguente.
 
-Puoi accedere a questi eventi nel Visualizzatore eventi di Windows:
+Puoi accedere a questi eventi nel Visualizzatore Windows eventi:
 
 1. Apri il menu **Start** e digita **Visualizzatore eventi** e quindi seleziona il **risultato visualizzatore** eventi.
-2. Espandere **Registri applicazioni e servizi > Microsoft > Windows** e quindi passare alla cartella elencata in **Provider/origine** nella tabella seguente.
+2. Espandere **Registri applicazioni e servizi > Microsoft > Windows** quindi passare alla cartella elencata in **Provider/origine** nella tabella seguente.
 3. Fai doppio clic sull'elemento secondario per visualizzare gli eventi. Scorrere gli eventi per trovare quello che si sta cercando.
 
    ![Animazione che mostra l'utilizzo del Visualizzatore eventi](/windows/security/threat-protection/images/event-viewer)
@@ -157,11 +159,11 @@ Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità uten
 Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 8  | Bloccare il blocco di immagini remote
 Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 9  | Disabilitare il controllo delle chiamate di sistema win32k
 Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 10   | Disabilitare il blocco delle chiamate di sistema win32k
-Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 11  | Controllo di Protezione dell'integrità del codice
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 11 | Controllo di Protezione dell'integrità del codice
 Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 12  | Blocco di protezione dell'integrità del codice
 Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 13 | Controllo EAF
 Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 14  | Imposizione EAF
-Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 15  | Controllo EAF+
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 15 | Controllo EAF+
 Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 16  | Imposizione EAF+
 Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 17  | Controllo IAF
 Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 18  | Imposizione IAF

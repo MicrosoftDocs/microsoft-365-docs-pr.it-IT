@@ -1,5 +1,5 @@
 ---
-title: Piattaforme e funzionalità dei sistemi operativi supportati
+title: Piattaforme dei sistemi operativi e funzionalità supportate
 description: Assicurati di soddisfare i requisiti del sistema operativo o della piattaforma per gestione di minacce e vulnerabilità, in modo che le attività in tutti i dispositivi siano adeguatamente contabili.
 keywords: threat & gestione delle vulnerabilità, gestione di minacce e vulnerabilità, sistema operativo, requisiti della piattaforma, prerequisiti, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm, supported operating systems, supported platforms, linux support, mac support
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72dc9d448a6170cbacc71d37a60bdd059ef6ec3e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a037b9070fff2a208e7ee0a0602ce60cf3e042bf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333795"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770014"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemi operativi, piattaforme e funzionalità supportati - per gestione di minacce e vulnerabilità
 
@@ -32,7 +32,7 @@ ms.locfileid: "52333795"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -60,11 +60,12 @@ macOS 10.14 "Mojave" e successive | Sì | Sì | Sì (anteprima) | Sì (anteprima
 Red Hat Enterprise Linux 7.2 o versione successiva **(anteprima) (vedere** \* l'avviso "Importante" di seguito) | Sì | Sì | Sì | Sì | Sì
 CentOS 7.2 o versione successiva **(anteprima)** | Sì | Sì | Sì | Sì | Sì
 Ubuntu 16.04 LTS o versione successiva **(anteprima)** | Sì | Sì | Sì | Sì | Sì
+Oracle Linux 7.2 o versione successiva | Sì | Sì | Sì | Sì | Sì
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux: "I dati di vulnerabilità forniti e visualizzati come parte dei servizi Microsoft Defender for Endpoint sono resi disponibili nella sua forma non elaborata, "AS IS", di Red Hat, Inc., e potrebbero non essere aggiornati. I dati accessibili nell'API Red Hat Security Data sono concessi in licenza con la licenza internazionale Creative Commons Attribution 4.0. L'utilizzo di questi dati è rischioso. Microsoft e i suoi fornitori di terze parti non rilascino alcuna responsabilità per danni indiretti e indiretti e garanzie implicite, incluse garanzie implicite di non violazione, com commercializzabilità e idoneità per uno scopo specifico. © 2020 Red Hat. Tutti i diritti riservati. © 2020 Microsoft. Tutti i diritti riservati."
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Prerequisiti per & autorizzazioni](tvm-prerequisites.md)

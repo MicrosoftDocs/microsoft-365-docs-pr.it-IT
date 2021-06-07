@@ -13,23 +13,51 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 6b18de29b339c3367bfacb8bdc8ec9725481e3e4
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730739"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779856"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
 In questo articolo sono elencati gli articoli nuovi e aggiornati [nella documentazione Microsoft Managed Desktop.](index.yml) Gli articoli "Aggiornati" hanno apportato correzioni o aggiunte di materiale. Le correzioni secondarie, ad esempio la correzione di errori di digitazione, stile o formattazione, non sono elencate. È sempre possibile visualizzare la cronologia di commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repo in GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="may-2021"></a>Maggio 2021
+Articolo nuovo o modificato | Descrizione
+--- | ---
+[Configurare dispositivi Microsoft Managed Desktop](get-started/set-up-devices.md) | Articolo aggiornato
+[Report inventario dei dispositivi](working-with-managed-desktop/device-inventory-report.md) | Articolo aggiornato
+[Configurazione rete in Microsoft Managed Desktop](get-ready/network.md) | Articolo aggiornato
+[Registri diagnostici](service-description/diagnostic-logs.md) | Nuovo articolo
+[Tecnologie Microsoft Managed Desktop](intro/technologies.md) | Articolo aggiornato
+[Prerequisiti per gli account Guest](get-ready/guest-accounts.md) | Articolo aggiornato
+[Usare i report](working-with-managed-desktop/reports.md) | Articolo aggiornato
+
+## <a name="april-2021"></a>Aprile 2021
+Articolo nuovo o modificato | Descrizione
+--- | ---
+[Profili dei dispositivi](service-description/profiles.md) | Nuovo articolo
+[Procedura per i partner per la registrazione dei dispositivi](get-started/register-devices-partner.md) | Articolo aggiornato
+[Registrare manualmente i nuovi dispositivi](get-started/register-devices-self.md) | Articolo aggiornato
+[Registrare manualmente i dispositivi già presenti](get-started/register-reused-devices-self.md) | Articolo aggiornato
+[Dipendenza nome dispositivo indirizzo](get-ready/address-device-names.md) | Nuovo articolo
+[Nomi dei dispositivi](service-description/device-names.md) | Nuovo articolo
+[Rimuovere i dispositivi](working-with-managed-desktop/remove-devices.md) | Nuovo articolo
+[Prerequisiti per Microsoft Managed Desktop](get-ready/prerequisites.md) | Articolo aggiornato
+[App in Microsoft Managed Desktop](get-ready/apps.md) | Articolo aggiornato
+[Convalidare nuovi dispositivi](get-started/validate-device.md) | Nuovo articolo
+[Configurare dispositivi Microsoft Managed Desktop](get-started/set-up-devices.md) | Articolo aggiornato
+[Microsoft Managed Desktop ciclo di vita del prodotto](service-description/device-lifecycle.md) | Articolo aggiornato
+[Microsoft Managed Desktop dispositivi](service-description/device-list.md) |Articolo aggiornato
 
 ## <a name="march-2021"></a>Marzo 2021
 Articolo nuovo o modificato | Descrizione
 --- | ---
 [Supporto amministratore per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Articolo aggiornato
 [Esperienza iniziale con Autopilot e pagina stato registrazione](get-started/esp-first-run.md) | Articolo aggiornato
-[Servizi di posizione di Windows 10](get-started/device-location.md) | Nuovo articolo
+[Servizi di posizione di Windows 10](get-started/device-location.md) | Nuovo articolo
 [Immagini dispositivo](service-description/device-images.md) | Nuovo articolo
 [Microsoft Managed Desktop aree supportate](service-description/regions-languages.md) | Articolo aggiornato
 [Localizzare l'esperienza utente](get-started/localization.md) | Nuovo articolo

@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 8f480a148d72428c6346930a91358d1e8b674ee7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 4742a32fd899f41d4e7772c52415891cdd8895bf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200006"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769522"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Creare un'app per accedere a Microsoft Defender for Endpoint senza un utente
 
@@ -38,10 +39,10 @@ ms.locfileid: "51200006"
 
 Questa pagina descrive come creare un'applicazione per ottenere l'accesso a livello di codice a Defender per Endpoint senza un utente. Se hai bisogno dell'accesso a livello di codice a Defender for Endpoint per conto di un utente, vedi [Ottenere l'accesso con il contesto utente.](exposed-apis-create-app-nativeapp.md) Se non si è certi dell'accesso necessario, vedere [Introduzione.](apis-intro.md)
 
-Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti aiuteranno ad automatizzare i flussi di lavoro e a innovare in base alle funzionalità di Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere Flusso del codice di autorizzazione [OAuth 2.0.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti aiuteranno ad automatizzare i flussi di lavoro e a innovare in base alle funzionalità di Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In generale, dovrai eseguire la procedura seguente per usare le API:
-- Creare un'applicazione Azure Active Directory (Azure AD).
+- Creare un'Azure Active Directory (Azure AD).
 - Ottieni un token di accesso usando questa applicazione.
 - Usa il token per accedere a Defender for Endpoint API.
 
@@ -51,9 +52,9 @@ Questo articolo spiega come creare un'applicazione Azure AD, ottenere un token d
 
 1. Accedere ad [Azure](https://portal.azure.com) con un utente con il **ruolo amministratore** globale.
 
-2. Passare ad **Azure Active Directory** App  >  **registrations** Nuova  >  **registrazione**. 
+2. Passare **a** Azure Active Directory  >  **app Nuove**  >  **registrazioni**. 
 
-   ![Immagine di Microsoft Azure e spostamento nella registrazione dell'applicazione](images/atp-azure-new-app2.png)
+   ![Immagine dell'Microsoft Azure e della navigazione per la registrazione dell'applicazione](images/atp-azure-new-app2.png)
 
 3. Nel modulo di registrazione scegliere un nome per l'applicazione e quindi selezionare **Registra**.
 
@@ -117,7 +118,7 @@ Questo articolo spiega come creare un'applicazione Azure AD, ottenere un token d
 
 Per altre informazioni sui token di Azure AD, vedi l'esercitazione [su Azure AD.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
-### <a name="use-powershell"></a>Usare PowerShell
+### <a name="use-powershell"></a>Usare PowerShell.
 
 ```powershell
 # This script acquires the App Context Token and stores it in the variable $token for later use in the script.
@@ -175,12 +176,12 @@ Vedi [Ottenere token con Python.](run-advanced-query-sample-python.md#get-token)
 ### <a name="use-curl"></a>Usare l'arricciatura
 
 > [!NOTE]
-> La procedura seguente presuppone che Nel computer sia già installato Curl per Windows.
+> Nella procedura seguente si presuppone che l'Windows sia già installato nel computer.
 
 1. Aprire un prompt dei comandi e impostare CLIENT_ID'ID applicazione di Azure.
 1. Impostare CLIENT_SECRET sul segreto dell'applicazione Azure.
 1. Imposta TENANT_ID'ID tenant di Azure del cliente che vuole usare la tua app per accedere a Defender per Endpoint.
-1. Eseguire il comando qui riportato:
+1. Eseguire il comando seguente:
 
 ```
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
@@ -222,5 +223,5 @@ Di seguito è riportato un esempio di invio di una richiesta per ottenere un ele
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [API di Microsoft Defender per endpoint supportate](exposed-apis-list.md)
+- [Accedere a API di Microsoft Defender per endpoint](exposed-apis-list.md)
 - [Accedere a Microsoft Defender for Endpoint per conto di un utente](exposed-apis-create-app-nativeapp.md)

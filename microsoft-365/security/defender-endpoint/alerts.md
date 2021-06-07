@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4997d7118b139d993ed94ed917137ca107940e46
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199622"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769810"
 ---
 # <a name="alert-resource-type"></a>Tipo di risorsa avviso
 
@@ -41,7 +42,7 @@ ms.locfileid: "51199622"
 Metodo |Tipo restituito |Descrizione
 :---|:---|:---
 [Ottenere un avviso](get-alert-info-by-id.md) | [Avviso](alerts.md) | Ottenere un singolo [oggetto](alerts.md) avviso.
-[Avvisi elenco](get-alerts.md) | [Raccolta avvisi](alerts.md) | Raccolta [avvisi elenco.](alerts.md)
+[Elencare avvisi](get-alerts.md) | [Raccolta avvisi](alerts.md) | Raccolta [avvisi elenco.](alerts.md)
 [Avviso di aggiornamento](update-alert.md) | [Avviso](alerts.md) | Aggiorna avviso [specifico](alerts.md).
 [Avvisi di aggiornamento in batch](batch-update-alerts.md) | | Aggiornare un batch di [avvisi](alerts.md).
 [Creare un avviso](create-alert-by-reference.md)|[Avviso](alerts.md)|Crea un avviso in base ai dati dell'evento ottenuti da [Advanced Hunting.](run-advanced-query-api.md)
@@ -78,7 +79,7 @@ threatFamilyName | Stringa | Famiglia di minacce.
 threatName | Stringa | Nome della minaccia.
 machineId | Stringa | ID di [un'entità](machine.md) computer associata all'avviso.
 computerDnsName | Stringa | [nome](machine.md) completo del computer.
-aadTenantId | Stringa | ID di Azure Active Directory.
+aadTenantId | Stringa | ID Azure Active Directory.
 detectorId | Stringa | ID del rilevatore che ha attivato l'avviso.
 commenti | Elenco dei commenti degli avvisi | L'oggetto Alert Comment contiene: stringa di commento, stringa createdBy e createTime date time.
 Prove | Elenco delle prove di avviso | Prova relativa all'avviso. Vedere l'esempio che segue.

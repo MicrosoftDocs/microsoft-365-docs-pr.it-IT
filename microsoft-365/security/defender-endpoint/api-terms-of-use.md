@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f737f5a9aeb9bc45e0cf40c3be0cfdde2bde3779
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 6f0fcf101388f9cae08655117caa5380af1242c2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933614"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769666"
 ---
 # <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>Licenza e condizioni per l'uso di Microsoft Defender for Endpoint API
 
@@ -45,6 +46,6 @@ Chiamate API per connessione | 100 | 60 secondi
 
 Microsoft e tutti i collaboratori ti concedono una licenza per la documentazione Microsoft e altri contenuti in questo archivio in Creative Commons Attribution 4.0 International Public License, vedi il file LICENSE.
 
-Microsoft, Windows, Microsoft Azure e/o altri prodotti e servizi Microsoft a cui viene fatto riferimento nella documentazione possono essere marchi o marchi registrati di Microsoft negli Stati Uniti e/o in altri paesi. Le licenze per questo progetto non concedono all'utente diritti di utilizzo di nomi, logo o marchi Microsoft. Le linee guida generali per i marchi di Microsoft sono disponibili all'indirizzo https://go.microsoft.com/fwlink/?LinkID=254653 .
+Microsoft, Windows, Microsoft Azure e/o altri prodotti e servizi Microsoft a cui si fa riferimento nella documentazione possono essere marchi o marchi registrati di Microsoft negli Stati Uniti e/o in altri paesi. Le licenze per questo progetto non concedono all'utente diritti di utilizzo di nomi, logo o marchi Microsoft. Le linee guida generali per i marchi di Microsoft sono disponibili all'indirizzo https://go.microsoft.com/fwlink/?LinkID=254653 .
 
 Le informazioni sulla privacy sono disponibili presso Microsoft e i collaboratori si riservano tutti gli altri diritti, in base ai rispettivi diritti d'autore, brevetti o marchi, per https://privacy.microsoft.com/en-us/ implicazione, estoppel o altro.
