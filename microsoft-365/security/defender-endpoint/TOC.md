@@ -242,6 +242,8 @@
 
 ### [Dispositivi di rete](network-devices.md)
 
+### [Ospitare la creazione di report dei firewall in Microsoft Defender per endpoint](host-firewall-reporting.md)
+
 ### [Riduzione della superficie di attacco]()
 #### [Panoramica della riduzione della superficie di attacco](overview-attack-surface-reduction.md)
 #### [Configurare le funzionalità per la riduzione della superficie di attacco](configure-attack-surface-reduction.md)
@@ -278,6 +280,8 @@
 #### [Ottenere gli aggiornamenti antivirus e antimalware](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Gestire le origini per gli aggiornamenti di protezione di Microsoft Defender Antivirus](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Gestire la pianificazione del momento in cui devono essere scaricati e applicati gli aggiornamenti della protezione](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+#####  [Gestire il processo graduale di implementazione per gli aggiornamenti di Microsoft Defender](updates.md)
+#####  [Configurare il processo graduale di implementazione per gli aggiornamenti di Microsoft Defender](configure-updates.md)
 ##### [Gestire gli aggiornamenti e le analisi di Microsoft Defender Antivirus per gli endpoint non aggiornati](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Gestire gli aggiornamenti forzati basati su eventi](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Gestire gli aggiornamenti per dispositivi mobili e macchine virtuali (VMS)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -351,6 +355,7 @@
 ##### [Controllo dispositivi USB](control-usb-devices-using-intune.md)
 ##### [Protezione risorsa di archiviazione rimovibile](device-control-removable-storage-protection.md)
 ##### [Controllo accesso risorsa di archiviazione rimovibile](device-control-removable-storage-access-control.md)
+##### [Protezione stampante controllo dispositivo](printer-protection.md)
 
 #### [Blocco e contenimento comportamentale]()
 ##### [Blocco e contenimento comportamentale](behavioral-blocking-containment.md)
