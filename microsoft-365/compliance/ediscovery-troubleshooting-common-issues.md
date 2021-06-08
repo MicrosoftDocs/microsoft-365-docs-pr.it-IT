@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Informazioni sui passaggi di base per la risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni in Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060991"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809120"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Analizzare, risolvere e risolvere i problemi comuni di eDiscovery
 
@@ -89,6 +89,20 @@ Quando si esegue una ricerca eDiscovery che include posizioni di SharePoint Onli
 1. Controllare il percorso identificato nella ricerca per verificare che il percorso del file sia corretto e aggiunto nei percorsi di ricerca.
 
 2. Utilizzare le procedure descritte in Richiedere manualmente la ricerca per indicizzazione e la reindicizzazione di un [sito,](/sharepoint/crawl-site-content) di una raccolta o di un elenco per reindicizzare il sito.
+
+## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>Errore/problema: il file non è stato esportato perché non esiste più. Il file è stato incluso nel conteggio dei risultati di ricerca stimati perché è ancora elencato nell'indice. Il file verrà rimosso dall'indice e non causerà un errore in futuro.
+
+È possibile che venga visualizzato questo errore quando si esegue una ricerca eDiscovery che include SharePoint online e one drive for business. eDiscovery si basa sull'indice di SpO per identificare i percorsi dei file. Se il file è stato eliminato ma l'indice di SpO non è stato ancora aggiornato, è possibile che si verifichi questo errore.
+
+### <a name="resolution"></a>Risoluzione 
+Aprire il percorso di SpO e verificare che il file non sia effettivamente presente.
+La soluzione suggerita consiste nel reindicizzare manualmente il sito o attendere la reindicizzazione del sito in base al processo automatico in background.
+
+
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Errore/problema: questo risultato della ricerca non è stato scaricato perché si tratta di una cartella o di un altro artefatto che non può essere scaricato da solo, verranno scaricati tutti gli elementi all'interno della cartella o della raccolta.
+
+È possibile che venga visualizzato questo errore quando si esegue una ricerca eDiscovery che include SharePoint online e one drive for business. Significa che si stava provando ad esportare l'elemento riportato nell'indice, ma si è scoperto che si tratta di una cartella, quindi non è stata esportata. Come accennato nell'errore, non esportiamo gli elementi delle cartelle, ma ne esportiamo il contenuto.
+
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Errore/problema: la ricerca ha esito negativo perché il destinatario non è stato trovato
 

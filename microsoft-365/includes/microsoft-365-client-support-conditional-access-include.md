@@ -13,7 +13,7 @@
 |MICROSOFT ROOMS|Pianificato|Pianificato|N/D|N/D|N/D|
 |AMMINISTRATORE DI OFFICE 365|Pianificato|N/D|N/D|N/D|N/D|
 |OFFICE LENS|Pianificato|Pianificato|N/D|N/D|N/D|
-|OFFICE MOBILE|Pianificato|Pianificato|N/D|N/D|N/D|
+|OFFICE MOBILE|✔|Pianificato|N/D|N/D|N/D|
 |OFFICE.COM|N/D|N/D|N/D|N/D|Pianificato|
 |ONEDRIVE|✔|✔|✔|✔|Pianificato|
 |ONENOTE|✔|Pianificato|Pianificato|Pianificato|Pianificato|

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Informazioni su come modificare il tema predefinito per la parte superiore della barra di spostamento in Microsoft 365 e personalizzarlo in base al logo o al colore della società.
-ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635927"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809048"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
@@ -39,7 +39,7 @@ L'amministratore dell'organizzazione può creare più temi per le persone dell'o
 
 1. Nell'interfaccia di amministrazione passare alla **Impostazioni** \> **org Impostazioni** e quindi scegliere la **scheda Profilo** organizzazione.
 
-2. Nella scheda **Profilo organizzazione** selezionare **Tema organizzazione.**
+2. Nella scheda **Profilo organizzazione** selezionare **Temi personalizzati.**
 
 Tutti i temi possono essere personalizzati utilizzando le schede seguenti.
 

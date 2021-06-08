@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536047"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809144"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -158,7 +158,7 @@ Ecco il processo per la ricerca nel log di controllo in Office 365.
 1. Passare a [https://protection.office.com](https://protection.office.com).
 
     > [!TIP]
-    > Usare una sessione di esplorazione privata (invece di una normale) per accedere al Centro sicurezza e conformità, per impedire che le credenziali con cui si è attualmente connessi vengano utilizzate. Per aprire una finestra InPrivate Browsing in Internet Explorer o in Microsoft Edge, premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (denominata finestra di navigazione in incognito), premere CTRL + MAIUSC + N.
+    > Usare una sessione di esplorazione privata (invece di una normale) per accedere al Centro sicurezza e conformità per impedire l'uso delle credenziali con cui si è attualmente connessi. Per aprire una sessione InPrivate Browsing in Internet Explorer o Microsoft Edge, premere CTRL+MAIUSC+P. Per aprire una sessione di esplorazione privata in Google Chrome (chiamata finestra di navigazione in incognito), premere CTRL+MAIUSC+N.
 
 2. Accedere usando l'account aziendale o dell'istituto di istruzione.
 
@@ -446,7 +446,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |Stato del record modificato in bloccato|LockRecord|Lo stato del record di un'etichetta di conservazione che classifica un documento come record è stato bloccato. Ciò significa che non è possibile modificare o eliminare il documento. Solo gli utenti a cui è assegnata almeno l'autorizzazione di collaboratore per un sito possono cambiare lo stato di un documento.|
 |Stato del record modificato in sbloccato|UnlockRecord|Lo stato del record di un'etichetta di conservazione che classifica un documento come record è stato sbloccato. Ciò significa che è possibile modificare o eliminare il documento. Solo gli utenti a cui è assegnata almeno l'autorizzazione di collaboratore per un sito possono cambiare lo stato di un documento.|
 |File archiviato|FileCheckedIn|Un utente archivia un documento estratto da una raccolta documenti.|
-|File estratto|FileCheckedOut|Un utente estrae un documento da una raccolta documenti. Gli utenti possono estrarre e apportare modifiche ai documenti condivisi con loro.|
+|File estratto|FileCheckedOut|Un utente estrae un documento da una raccolta documenti. Gli utenti possono estrarre e modificare i documenti che sono stati condivisi con loro.|
 |File copiato|FileCopied|Un utente copia un documento da un sito. Il file copiato può essere salvato in un'altra cartella nel sito.|
 |File eliminato|FileDeleted|Un utente elimina un documento da un sito.|
 |File eliminato dal Cestino|FileDeletedFirstStageRecycleBin|L'utente elimina un file dal Cestino di un sito.|

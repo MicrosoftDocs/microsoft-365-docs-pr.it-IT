@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: cbd95ed3ee70b69b395f73c83852a9f37a269f0b
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 1a0297271c3e0e8fb94a476982f146aa8c221e7a
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259488"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809132"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso della prevenzione della perdita di dati degli endpoint
 
@@ -70,6 +70,9 @@ Quando l'impostazione **Accesso da app e browser non consentiti** di un criterio
 > [!IMPORTANT]
 > Non includere il percorso del file eseguibile, ma solo il nome (ad esempio browser.exe).
 
+### <a name="unallowed-bluetooth-apps"></a>App Bluetooth non consentite
+
+Impedire agli utenti di trasferire file protetti dai criteri tramite specifiche app Bluetooth.
 
 ### <a name="browser-and-domain-restrictions"></a>Restrizioni del browser e del dominio
 Limitare la condivisione dei file riservati che corrispondono ai criteri, con i domini del servizio cloud senza restrizioni.
@@ -97,6 +100,11 @@ Se la modalità elenco è impostata su **Consenti**, gli utenti possono caricare
 - Gli utenti possono solo selezionare una motivazione predefinita.
 - Gli utenti possono immettere solo la propria motivazione.
 
+### <a name="always-audit-file-activity-for-devices"></a>Controllare sempre le attività sui file per i dispositivi
+
+Per impostazione predefinita, quando è stato eseguito l'onboarding dei dispositivi, l'attività per i file Office, PDF e CSV viene controllata automaticamente ed è resa disponibile per la revisione in Activity Explorer. Disattivare questa funzionalità se si vuole che tale attività sia verificata solo quando i dispositivi integrati siano inclusi nei criteri attivi.
+
+Le attività relative ai file saranno sempre controllate per i dispositivi caricati, indipendentemente dal fatto che siano inclusi in un criterio attivo.
 
 ## <a name="tying-dlp-settings-together"></a>Unione di impostazioni DLP
 
@@ -123,7 +131,7 @@ Per acquisire familiarità con le funzionalità di Endpoint DLP e su come vengon
 > [!IMPORTANT]
 > Questi scenari di Endpoint DLP non sono le procedure ufficiali per la creazione e l'ottimizzazione di criteri DLP. Vedere gli argomenti seguenti quando è necessario usare i criteri di prevenzione della perdita dei dati in situazioni generiche:
 
->- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
+>- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 >- [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)
 >- [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
 >- [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)

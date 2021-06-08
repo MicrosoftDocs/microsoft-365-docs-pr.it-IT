@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte delle persone dell'organizzazione e analizzare ogni grafico per altri dati analitici.
-ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530971"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809000"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Report di Microsoft 365 nell'interfaccia di amministrazione
 
@@ -33,7 +33,7 @@ ms.locfileid: "52530971"
   
 I report sono disponibili per gli ultimi 7, 30, 90 e 180 giorni. I dati per tutti i periodi di riferimento non saranno subito disponibili. I report diventeranno disponibili entro 48 ore.
   
-Guardare questo video per una panoramica sull'uso dei report:
+## <a name="watch-act-on-a-usage-report-in-office-365"></a>Guardare: Usare un report sull'utilizzo in Office 365
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
@@ -88,52 +88,30 @@ In base all'abbonamento, questi sono i report disponibili.
 - [Utilizzo del browser Microsoft](browser-usage-report.md) 
   
 - [Attività di posta elettronica](email-activity-ww.md)
-
-- [Attività di posta elettronica per il Governo degli Stati Uniti](email-activity.md)
     
 - [Utilizzo delle cassette postali](mailbox-usage.md)
     
 - [Attivazioni di Office](microsoft-office-activations-ww.md)
 
-- [Attivazioni di Office per il Governo degli Stati Uniti](microsoft-office-activations.md)
-
 - [Utenti attivi](active-users-ww.md)
-
-- [Utenti attivi per il Governo degli Stati Uniti](active-users.md)
   
 - [Utilizzo delle applicazioni di posta elettronica](email-apps-usage-ww.md)
 
-- [Utilizzo delle applicazioni di posta elettronica per il Governo degli Stati Uniti](email-apps-usage.md)
-
 - [Attività di Forms](forms-activity-ww.md)
 
-- [Attività di Forms per il Governo degli Stati Uniti](forms-activity.md)
-
 - [Attività Dynamics 365 Customer Voice](forms-pro-activity-ww.md)
-  
-- [Attività Dynamics 365 Customer Voice per il Governo degli Stati Uniti](forms-pro-activity.md)
 
 - [Gruppi di Microsoft 365](office-365-groups-ww.md)
-
-- [Gruppi di Microsoft 365 per il Governo degli Stati Uniti](office-365-groups.md)
   
 - [Attività degli utenti di OneDrive for Business](onedrive-for-business-activity-ww.md)
 
-- [Attività degli utenti di OneDrive for Business per US Government ](onedrive-for-business-activity.md)
-
 - [Utilizzo di OneDrive for Business](onedrive-for-business-usage-ww.md)
-
-- [Utilizzo di OneDrive for Business per US Government ](onedrive-for-business-usage.md)
 
 - [Utilizzo di Microsoft 365 Apps](microsoft365-apps-usage-ww.md)
   
 - [Utilizzo dei sito di SharePoint](sharepoint-site-usage-ww.md)
-
-- [Utilizzo del sito di SharePoint per US Government](sharepoint-site-usage.md)
   
 - [Attività di SharePoint](sharepoint-activity-ww.md)
-
-- [Attività di SharePoint per US Government](sharepoint-activity.md)
   
 - [Attività in Skype for Business Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -145,23 +123,13 @@ In base all'abbonamento, questi sono i report disponibili.
 
 - [Attività in Yammer](yammer-activity-report-ww.md)
 
-- [Attività di Yammer per il Governo degli Stati Uniti](yammer-activity-report.md)
-
 - [Utilizzo di dispositivi Yammer](yammer-device-usage-report-ww.md)
-
-- [Utilizzo dei dispositivi Yammer per il Governo degli Stati Uniti](yammer-device-usage-report.md)
 
 - [Report delle attività dei gruppi di Yammer](yammer-groups-activity-report-ww.md)
 
-- [Report delle attività dei gruppi di Yammer per il Governo degli Stati Uniti](yammer-groups-activity-report.md)
-
 - [Attività degli utenti di Microsoft Teams](microsoft-teams-user-activity-preview.md)
 
-- [Attività degli utenti di Microsoft Teams per il Governo degli Stati Uniti](microsoft-teams-user-activity.md)
-
 - [Utilizzo di dispositivi Microsoft Teams](microsoft-teams-device-usage-preview.md)
-
-- [Uso dei dispositivi di Microsoft Teams per il Governo degli Stati Uniti](microsoft-teams-device-usage.md)
 
 ## <a name="how-to-view-licensing-information"></a>Come visualizzare le informazioni sulle licenze
 
@@ -201,8 +169,6 @@ Tuttavia, quando si seleziona un giorno specifico (vedere numero 3), fino a 28 g
   
 ## <a name="related-content"></a>Contenuto correlato
 
-[Report nel Centro sicurezza &amp; e conformità](../../compliance/reports-in-security-and-compliance.md) (articolo)
-
-[Analisi dell'utilizzo di Microsoft 365](../usage-analytics/usage-analytics.md) (articolo)
-
+[Report nel Centro sicurezza &amp; e conformità](../../compliance/reports-in-security-and-compliance.md) (articolo)\
+[Analisi di utilizzo di Microsoft 365](../usage-analytics/usage-analytics.md) (articolo)\
 [Personalizzare i report nell'analisi dell'utilizzo di Microsoft 365](../usage-analytics/customize-reports.md) (articolo)

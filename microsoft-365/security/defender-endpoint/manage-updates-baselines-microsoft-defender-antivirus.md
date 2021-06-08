@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/04/2021
-ms.openlocfilehash: a1b7891e9e397e7345eb73a94d6298a9da781d98
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.date: 06/07/2021
+ms.openlocfilehash: 33170d4706ed53f4de687c34806bb0492a08836e
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795983"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809108"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base
 
@@ -440,7 +440,7 @@ Fase di supporto: **nessun supporto**
 - aggiungere log MRT ai file di supporto
    
 ### <a name="known-issues"></a>Problemi noti
-Quando questo aggiornamento è installato, il dispositivo deve avere il pacchetto jump 4.10.2001.10 per poter eseguire l'aggiornamento alla versione più recente della piattaforma.
+Quando questo aggiornamento è installato, il dispositivo deve avere il pacchetto jump 4.18.2001.10 per poter eseguire l'aggiornamento alla versione più recente della piattaforma.
 <br/>
 </details>
 
