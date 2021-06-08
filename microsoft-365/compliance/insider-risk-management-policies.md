@@ -380,7 +380,7 @@ ms.locfileid: "51445686"
 7. <span data-ttu-id="cd987-599">Per importare un elenco di utenti da aggiungere ai criteri, selezionare **Importa** per importare un file CSV (valori delimitati da virgole).</span><span class="sxs-lookup"><span data-stu-id="cd987-599">To import a list of users to add to the policies, select **Import** to import a .csv (comma-separated values) file.</span></span> <span data-ttu-id="cd987-600">Il file deve essere nel formato seguente ed è necessario elencare i nomi di accesso UPN nel file:</span><span class="sxs-lookup"><span data-stu-id="cd987-600">The file must be in the following format and you must list the user principal names in the file:</span></span>
 
     ```csv
-    user principal name
+    nome di accesso UPN
     user1@domain.com
     user2@domain.com
     ```
