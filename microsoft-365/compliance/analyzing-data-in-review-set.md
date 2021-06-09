@@ -1,5 +1,5 @@
 ---
-title: Analizzare i dati in una recensione impostata in Advanced eDiscovery
+title: Analizzare i dati in un set di recensioni in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Informazioni sugli strumenti disponibili per organizzare i set di documenti durante l'analisi di un caso di Advanced eDiscovery.
+description: Informazioni sugli strumenti disponibili per organizzare i set di documenti durante l'analisi di un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
@@ -24,52 +24,52 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49751371"
 ---
-# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a><span data-ttu-id="03351-103">Analizzare i dati in una recensione impostata in Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="03351-103">Analyze data in a review set in Advanced eDiscovery</span></span>
+# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a><span data-ttu-id="e5aa6-103">Analizzare i dati in un set di recensioni in Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="e5aa6-103">Analyze data in a review set in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="03351-104">Quando il numero di documenti raccolti è elevato, può essere difficile esaminarli tutti.</span><span class="sxs-lookup"><span data-stu-id="03351-104">When the number of collected documents is large, it can be difficult to review them all.</span></span> <span data-ttu-id="03351-105">Advanced eDiscovery offre una serie di strumenti per analizzare i documenti per ridurre il volume di documenti da rivedere senza perdita di informazioni e per organizzare i documenti in modo coerente.</span><span class="sxs-lookup"><span data-stu-id="03351-105">Advanced eDiscovery provides a number of tools to analyze the documents to reduce the volume of documents to be reviewed without any loss in information, and to help you organize the documents in a coherent manner.</span></span> <span data-ttu-id="03351-106">Per altre informazioni su queste funzionalità, vedi:</span><span class="sxs-lookup"><span data-stu-id="03351-106">To learn more about these capabilities, see:</span></span>
+<span data-ttu-id="e5aa6-104">Quando il numero di documenti raccolti è elevato, può essere difficile esaminarli tutti.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-104">When the number of collected documents is large, it can be difficult to review them all.</span></span> <span data-ttu-id="e5aa6-105">Advanced eDiscovery fornisce una serie di strumenti per analizzare i documenti per ridurre il volume di documenti da rivedere senza alcuna perdita di informazioni e per organizzare i documenti in modo coerente.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-105">Advanced eDiscovery provides a number of tools to analyze the documents to reduce the volume of documents to be reviewed without any loss in information, and to help you organize the documents in a coherent manner.</span></span> <span data-ttu-id="e5aa6-106">Per ulteriori informazioni su queste funzionalità, vedere:</span><span class="sxs-lookup"><span data-stu-id="e5aa6-106">To learn more about these capabilities, see:</span></span>
 
-- [<span data-ttu-id="03351-107">Rilevamento dei documenti simili</span><span class="sxs-lookup"><span data-stu-id="03351-107">Near duplicate detection</span></span>](near-duplicate-detection-in-advanced-ediscovery.md)
+- [<span data-ttu-id="e5aa6-107">Rilevamento dei documenti simili</span><span class="sxs-lookup"><span data-stu-id="e5aa6-107">Near duplicate detection</span></span>](near-duplicate-detection-in-advanced-ediscovery.md)
 
-- [<span data-ttu-id="03351-108">Threading posta elettronica</span><span class="sxs-lookup"><span data-stu-id="03351-108">Email threading</span></span>](email-threading-in-advanced-ediscovery.md)
+- [<span data-ttu-id="e5aa6-108">Threading posta elettronica</span><span class="sxs-lookup"><span data-stu-id="e5aa6-108">Email threading</span></span>](email-threading-in-advanced-ediscovery.md)
 
-- [<span data-ttu-id="03351-109">Temi</span><span class="sxs-lookup"><span data-stu-id="03351-109">Themes</span></span>](themes-in-advanced-ediscovery.md)
+- [<span data-ttu-id="e5aa6-109">Temi</span><span class="sxs-lookup"><span data-stu-id="e5aa6-109">Themes</span></span>](themes-in-advanced-ediscovery.md)
 
-<span data-ttu-id="03351-110">Per analizzare i dati in un insieme da rivedere:</span><span class="sxs-lookup"><span data-stu-id="03351-110">To analyze data in a review set:</span></span>
+<span data-ttu-id="e5aa6-110">Per analizzare i dati in un set di recensioni:</span><span class="sxs-lookup"><span data-stu-id="e5aa6-110">To analyze data in a review set:</span></span>
 
-1. <span data-ttu-id="03351-111">Configurare le impostazioni di analisi per il caso.</span><span class="sxs-lookup"><span data-stu-id="03351-111">Configure analytics settings for your case.</span></span> <span data-ttu-id="03351-112">Per ulteriori informazioni, vedere [Configurare le impostazioni di ricerca e analisi.](configure-search-and-analytics-settings-in-advanced-ediscovery.md)</span><span class="sxs-lookup"><span data-stu-id="03351-112">For more information, see [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md).</span></span>
+1. <span data-ttu-id="e5aa6-111">Configurare le impostazioni di analisi per il caso.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-111">Configure analytics settings for your case.</span></span> <span data-ttu-id="e5aa6-112">Per ulteriori informazioni, vedere [Configure search and analytics settings.](configure-search-and-analytics-settings-in-advanced-ediscovery.md)</span><span class="sxs-lookup"><span data-stu-id="e5aa6-112">For more information, see [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md).</span></span>
 
-2. <span data-ttu-id="03351-113">Aprire il set di recensioni che si desidera analizzare.</span><span class="sxs-lookup"><span data-stu-id="03351-113">Open the review set you want to analyze.</span></span>
+2. <span data-ttu-id="e5aa6-113">Aprire il set di recensioni che si desidera analizzare.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-113">Open the review set you want to analyze.</span></span>
 
-3. <span data-ttu-id="03351-114">Fare clic **su Gestisci insieme revisione.**</span><span class="sxs-lookup"><span data-stu-id="03351-114">Click **Manage review set**.</span></span>
+3. <span data-ttu-id="e5aa6-114">Fare clic **su Gestisci set di revisioni.**</span><span class="sxs-lookup"><span data-stu-id="e5aa6-114">Click **Manage review set**.</span></span>
 
-4. <span data-ttu-id="03351-115">Fare **clic su Esegui analisi per il set di revisioni.**</span><span class="sxs-lookup"><span data-stu-id="03351-115">Click **Run analytics for the review set**.</span></span>
+4. <span data-ttu-id="e5aa6-115">Fare **clic su Esegui analisi per il set di revisione.**</span><span class="sxs-lookup"><span data-stu-id="e5aa6-115">Click **Run analytics for the review set**.</span></span>
 
-<span data-ttu-id="03351-116">È possibile controllare lo stato di avanzamento dell'analisi **nella scheda Processi** del caso.</span><span class="sxs-lookup"><span data-stu-id="03351-116">You can check the progress of analysis on the **Jobs** tab of the case.</span></span>
+<span data-ttu-id="e5aa6-116">È possibile controllare lo stato di avanzamento dell'analisi nella **scheda Processi** del caso.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-116">You can check the progress of analysis on the **Jobs** tab of the case.</span></span>
 
- <span data-ttu-id="03351-117">Al termine dell'analisi, è possibile visualizzare il report analitico, eseguire query all'interno del set di revisioni sugli output dell'analisi (vedere Query all'interno del [set](review-set-search.md)di revisioni) e vedere i documenti correlati di un determinato documento (vedere Revisione dei dati [nel set da](reviewing-data-in-review-set.md)rivedere).</span><span class="sxs-lookup"><span data-stu-id="03351-117">After analysis is completed, you can view the analytics report, run queries within your review set on outputs of the analysis (see [Query within your review set](review-set-search.md)), and see related documents of a given document (see [Reviewing data in review set](reviewing-data-in-review-set.md)).</span></span>
+ <span data-ttu-id="e5aa6-117">Al termine dell'analisi, è possibile visualizzare il report di analisi, eseguire query all'interno del set di revisioni sugli output dell'analisi (vedere Query all'interno del [set](review-set-search.md)di revisioni ) e visualizzare i documenti correlati di un determinato documento (vedere Revisione dei dati nel set di [revisioni](reviewing-data-in-review-set.md)).</span><span class="sxs-lookup"><span data-stu-id="e5aa6-117">After analysis is completed, you can view the analytics report, run queries within your review set on outputs of the analysis (see [Query within your review set](review-set-search.md)), and see related documents of a given document (see [Reviewing data in review set](reviewing-data-in-review-set.md)).</span></span>
 
-## <a name="analytics-report"></a><span data-ttu-id="03351-118">Report di analisi</span><span class="sxs-lookup"><span data-stu-id="03351-118">Analytics report</span></span>
+## <a name="analytics-report"></a><span data-ttu-id="e5aa6-118">Report analitico</span><span class="sxs-lookup"><span data-stu-id="e5aa6-118">Analytics report</span></span>
 
-<span data-ttu-id="03351-119">Per visualizzare un report di analisi per un insieme da rivedere:</span><span class="sxs-lookup"><span data-stu-id="03351-119">To view an analytics report for a review set:</span></span>
+<span data-ttu-id="e5aa6-119">Per visualizzare un report di analisi per un set di recensioni:</span><span class="sxs-lookup"><span data-stu-id="e5aa6-119">To view an analytics report for a review set:</span></span>
 
-1. <span data-ttu-id="03351-120">Apri il set di recensioni.</span><span class="sxs-lookup"><span data-stu-id="03351-120">Open the review set.</span></span>
+1. <span data-ttu-id="e5aa6-120">Apri il set di recensioni.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-120">Open the review set.</span></span>
 
-2. <span data-ttu-id="03351-121">Fare clic **su Gestisci insieme revisione.**</span><span class="sxs-lookup"><span data-stu-id="03351-121">Click **Manage review set**.</span></span>
+2. <span data-ttu-id="e5aa6-121">Fare clic **su Gestisci set di revisioni.**</span><span class="sxs-lookup"><span data-stu-id="e5aa6-121">Click **Manage review set**.</span></span>
 
-3. <span data-ttu-id="03351-122">Fare **clic su Visualizza report.**</span><span class="sxs-lookup"><span data-stu-id="03351-122">Click **View report**.</span></span>
+3. <span data-ttu-id="e5aa6-122">Fare **clic su Visualizza report.**</span><span class="sxs-lookup"><span data-stu-id="e5aa6-122">Click **View report**.</span></span>
 
-<span data-ttu-id="03351-123">Il report include sette componenti dell'analisi:</span><span class="sxs-lookup"><span data-stu-id="03351-123">The report has seven components from analysis:</span></span>
+<span data-ttu-id="e5aa6-123">Il report include sette componenti dell'analisi:</span><span class="sxs-lookup"><span data-stu-id="e5aa6-123">The report has seven components from analysis:</span></span>
 
-- <span data-ttu-id="03351-124">**Popolazione di destinazione:** Numero di messaggi di posta elettronica, allegati e documenti non stampati trovati nel set di revisioni.</span><span class="sxs-lookup"><span data-stu-id="03351-124">**Target population:** The number of email messages, attachments, and loose documents found in the review set.</span></span>
+- <span data-ttu-id="e5aa6-124">**Popolazione di destinazione:** Numero di messaggi di posta elettronica, allegati e documenti liberi trovati nel set di revisioni.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-124">**Target population:** The number of email messages, attachments, and loose documents found in the review set.</span></span>
 
-- <span data-ttu-id="03351-125">**Documenti (allegati esclusi):** Il numero di documenti non ancorati che sono pivot, univoci quasi duplicati di un pivot o un duplicato esatto di un altro documento.</span><span class="sxs-lookup"><span data-stu-id="03351-125">**Documents (excluding attachments):** The number of loose documents that are pivots, unique near duplicates of a pivot, or an exact duplicate of another document.</span></span>
+- <span data-ttu-id="e5aa6-125">**Documenti (allegati esclusi):** Il numero di documenti liberi che sono pivot, univoci quasi duplicati di un pivot o un duplicato esatto di un altro documento.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-125">**Documents (excluding attachments):** The number of loose documents that are pivots, unique near duplicates of a pivot, or an exact duplicate of another document.</span></span>
 
-- <span data-ttu-id="03351-126">**Messaggi di posta elettronica:** Numero di messaggi di posta elettronica inclusi, copie inclusive, meno inclusivi o nessuno dei precedenti.</span><span class="sxs-lookup"><span data-stu-id="03351-126">**Emails:** The number of email messages that are inclusives, inclusive copies, inclusive minuses, or none of the above.</span></span>
+- <span data-ttu-id="e5aa6-126">**Messaggi di posta elettronica:** Numero di messaggi di posta elettronica inclusivi, copie incluse, meno inclusivi o nessuno dei precedenti.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-126">**Emails:** The number of email messages that are inclusives, inclusive copies, inclusive minuses, or none of the above.</span></span>
 
-- <span data-ttu-id="03351-127">**Allegati:** Numero di allegati di posta elettronica univoci o duplicati di un altro allegato di posta elettronica nel set di revisioni.</span><span class="sxs-lookup"><span data-stu-id="03351-127">**Attachments:** The number of email attachments that are unique or duplicates of another email attachment in the review set.</span></span>
+- <span data-ttu-id="e5aa6-127">**Allegati:** Numero di allegati di posta elettronica univoci o duplicati di un altro allegato di posta elettronica nel set di revisioni.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-127">**Attachments:** The number of email attachments that are unique or duplicates of another email attachment in the review set.</span></span>
 
-- <span data-ttu-id="03351-128">**Numero di file per tipo:** Numero di file, identificati dall'estensione di file.</span><span class="sxs-lookup"><span data-stu-id="03351-128">**Number of files by type:** The number of files, identified by file extension.</span></span>
+- <span data-ttu-id="e5aa6-128">**Numero di file per tipo:** Numero di file, identificati dall'estensione di file.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-128">**Number of files by type:** The number of files, identified by file extension.</span></span>
 
-- <span data-ttu-id="03351-129">**Documenti in base all'origine:** Riepilogo del contenuto in base all'origine dati originale.</span><span class="sxs-lookup"><span data-stu-id="03351-129">**Documents by source:** A summary of content by its original data source.</span></span>
+- <span data-ttu-id="e5aa6-129">**Documenti per origine:** Riepilogo del contenuto in base all'origine dati originale.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-129">**Documents by source:** A summary of content by its original data source.</span></span>
 
-- <span data-ttu-id="03351-130">**Documenti aggregati per processo:** Riepilogo del contenuto in base ai processi impostati per la revisione.</span><span class="sxs-lookup"><span data-stu-id="03351-130">**Documents aggregated by process:** A summary of content by review set processes.</span></span> 
+- <span data-ttu-id="e5aa6-130">**Documenti aggregati per processo:** Riepilogo del contenuto in base ai processi del set di revisione.</span><span class="sxs-lookup"><span data-stu-id="e5aa6-130">**Documents aggregated by process:** A summary of content by review set processes.</span></span> 

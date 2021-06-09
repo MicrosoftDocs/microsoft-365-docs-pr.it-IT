@@ -20,6 +20,6 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46691208"
 ---
-# <a name="placeholder-article"></a><span data-ttu-id="b1280-103">Articolo segnaposto</span><span class="sxs-lookup"><span data-stu-id="b1280-103">Placeholder article</span></span>
+# <a name="placeholder-article"></a><span data-ttu-id="09047-103">Articolo segnaposto</span><span class="sxs-lookup"><span data-stu-id="09047-103">Placeholder article</span></span>
 
-<span data-ttu-id="b1280-104">Questo articolo è un segnaposto per il momento.</span><span class="sxs-lookup"><span data-stu-id="b1280-104">This article is a placeholder for now.</span></span>
+<span data-ttu-id="09047-104">Questo articolo è un segnaposto per il momento.</span><span class="sxs-lookup"><span data-stu-id="09047-104">This article is a placeholder for now.</span></span>
