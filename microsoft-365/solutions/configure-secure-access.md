@@ -1,5 +1,5 @@
 ---
-title: Configurare l'accesso sicuro ai servizi di Microsoft 365
+title: Configurare l'accesso sicuro Microsoft 365 servizi
 description: "Trova indicazioni prescrittive per l'implementazione di MFA, accesso condizionale e criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili."
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050887"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="47733-103">Configurare l'accesso sicuro ai servizi di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="47733-103">Configure secure access to Microsoft 365 services</span></span>
+# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="83acf-103">Configurare l'accesso sicuro Microsoft 365 servizi</span><span class="sxs-lookup"><span data-stu-id="83acf-103">Configure secure access to Microsoft 365 services</span></span>
 
-<span data-ttu-id="47733-104">Questa soluzione si basa sulla "[configurazione D'oro M365](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- indicazioni prescrittive per l'implementazione di MFA, accesso condizionale e criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili.</span><span class="sxs-lookup"><span data-stu-id="47733-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
+<span data-ttu-id="83acf-104">Questa soluzione si basa sulla "[configurazione D'oro M365](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- indicazioni prescrittive per l'implementazione di MFA, accesso condizionale e criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili.</span><span class="sxs-lookup"><span data-stu-id="83acf-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>

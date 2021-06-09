@@ -1,5 +1,5 @@
 ---
-title: Usare lo strumento di esportazione di eDiscovery in Microsoft Edge
+title: Utilizzare lo strumento di esportazione di eDiscovery in Microsoft Edge
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,44 +20,44 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 09/12/2020
 ms.locfileid: "47546820"
 ---
-# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a><span data-ttu-id="5552f-103">Usare lo strumento di esportazione di eDiscovery in Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="5552f-103">Use the eDiscovery Export Tool in Microsoft Edge</span></span>
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a><span data-ttu-id="7ff28-103">Utilizzare lo strumento di esportazione di eDiscovery in Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="7ff28-103">Use the eDiscovery Export Tool in Microsoft Edge</span></span>
 
-<span data-ttu-id="5552f-104">A seguito delle modifiche recenti apportate alla versione più recente di Microsoft Edge, il ClickOnce non è più abilitato per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="5552f-104">As a result of recent changes to the newest version of Microsoft Edge, ClickOnce support is no longer enabled by default.</span></span> <span data-ttu-id="5552f-105">Per continuare a usare lo strumento di esportazione di eDiscovery per scaricare i risultati della ricerca contenuto o di eDiscovery, è necessario utilizzare [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o abilitare il supporto di ClickOnce nella versione più recente di Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="5552f-105">To continue using the eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in the newest version of Microsoft Edge.</span></span>
+<span data-ttu-id="7ff28-104">In seguito alle recenti modifiche apportate alla versione più recente di Microsoft Edge, il ClickOnce non è più abilitato per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="7ff28-104">As a result of recent changes to the newest version of Microsoft Edge, ClickOnce support is no longer enabled by default.</span></span> <span data-ttu-id="7ff28-105">Per continuare a utilizzare lo strumento di esportazione eDiscovery per scaricare i risultati della ricerca contenuto o di eDiscovery, è necessario utilizzare [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o abilitare il supporto di ClickOnce nella versione più recente di Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="7ff28-105">To continue using the eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in the newest version of Microsoft Edge.</span></span>
 
-## <a name="enable-clickonce-support-in-microsoft-edge"></a><span data-ttu-id="5552f-106">Abilitare ClickOnce supporto in Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="5552f-106">Enable ClickOnce support in Microsoft Edge</span></span>
+## <a name="enable-clickonce-support-in-microsoft-edge"></a><span data-ttu-id="7ff28-106">Abilitare ClickOnce supporto in Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="7ff28-106">Enable ClickOnce support in Microsoft Edge</span></span>
 
-1. <span data-ttu-id="5552f-107">In Microsoft Edge vai a **edge://flags/#edge-click-once.**</span><span class="sxs-lookup"><span data-stu-id="5552f-107">In Microsoft Edge, go to **edge://flags/#edge-click-once**.</span></span>
+1. <span data-ttu-id="7ff28-107">In Microsoft Edge passare a **edge://flags/#edge-click-once**.</span><span class="sxs-lookup"><span data-stu-id="7ff28-107">In Microsoft Edge, go to **edge://flags/#edge-click-once**.</span></span>
 
-2. <span data-ttu-id="5552f-108">Se il valore esistente è impostato su **Predefinito** o **Disabilitato** nell'elenco a discesa, impostarlo su **Abilitato.**</span><span class="sxs-lookup"><span data-stu-id="5552f-108">If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.</span></span>
+2. <span data-ttu-id="7ff28-108">Se il valore esistente è impostato su **Predefinito** o **Disabilitato** nell'elenco a discesa, modificarlo in **Abilitato**.</span><span class="sxs-lookup"><span data-stu-id="7ff28-108">If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.</span></span>
 
-   ![Select Enabled from dropdown list](../media/ClickOnceimage1.png)
+   ![Seleziona Abilitato dall'elenco a discesa](../media/ClickOnceimage1.png)
 
-3. <span data-ttu-id="5552f-110">Scorrere verso il basso fino alla parte inferiore della finestra del browser e fare clic su **Riavvia** per riavviare Edge.</span><span class="sxs-lookup"><span data-stu-id="5552f-110">Scroll down to the bottom of the browser window and click **Restart** to restart Edge.</span></span>
+3. <span data-ttu-id="7ff28-110">Scorri verso il basso fino alla parte inferiore della finestra del browser e fai clic su **Riavvia** per riavviare Edge.</span><span class="sxs-lookup"><span data-stu-id="7ff28-110">Scroll down to the bottom of the browser window and click **Restart** to restart Edge.</span></span>
 
    ![Fare clic su Riavvia](../media/ClickOnceimage2.png)
 
-<span data-ttu-id="5552f-112">**Nota:** Le organizzazioni possono usare Criteri di gruppo per disabilitare ClickOnce supporto.</span><span class="sxs-lookup"><span data-stu-id="5552f-112">**Note:** Organizations can use Group Policy to disable ClickOnce support.</span></span> <span data-ttu-id="5552f-113">Per verificare se è disponibile un criterio dell'organizzazione ClickOnce supporto, passare a **edge://policy**.</span><span class="sxs-lookup"><span data-stu-id="5552f-113">To check if there is an organizational policy for ClickOnce support, go to **edge://policy**.</span></span> <span data-ttu-id="5552f-114">Lo screenshot seguente mostra che ClickOnce è abilitata nell'intera organizzazione.</span><span class="sxs-lookup"><span data-stu-id="5552f-114">The following screenshot shows that ClickOnce is enabled across the entire organization.</span></span> <span data-ttu-id="5552f-115">Se il valore di questo criterio è impostato su **false,** sarà necessario contattare un amministratore dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="5552f-115">If this policy value is set to **false**, you will need to contact an admin in your organization.</span></span>
+<span data-ttu-id="7ff28-112">**Nota:** Le organizzazioni possono usare Criteri di gruppo per disabilitare ClickOnce supporto.</span><span class="sxs-lookup"><span data-stu-id="7ff28-112">**Note:** Organizations can use Group Policy to disable ClickOnce support.</span></span> <span data-ttu-id="7ff28-113">Per verificare se esiste un criterio dell'organizzazione per ClickOnce supporto, passare a **edge://policy**.</span><span class="sxs-lookup"><span data-stu-id="7ff28-113">To check if there is an organizational policy for ClickOnce support, go to **edge://policy**.</span></span> <span data-ttu-id="7ff28-114">Lo screenshot seguente mostra che ClickOnce è abilitata nell'intera organizzazione.</span><span class="sxs-lookup"><span data-stu-id="7ff28-114">The following screenshot shows that ClickOnce is enabled across the entire organization.</span></span> <span data-ttu-id="7ff28-115">Se questo valore del criterio è impostato su **false,** sarà necessario contattare un amministratore dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="7ff28-115">If this policy value is set to **false**, you will need to contact an admin in your organization.</span></span>
 
-![Elenco dei criteri dell'organizzazione perimetrali](../media/ClickOnceimage3.png)
+![Elenco dei criteri organizzativi di Edge](../media/ClickOnceimage3.png)
 
-## <a name="install-and-run-the-ediscovery-export-tool"></a><span data-ttu-id="5552f-117">Installare ed eseguire lo strumento di esportazione di eDiscovery</span><span class="sxs-lookup"><span data-stu-id="5552f-117">Install and run the eDiscovery Export Tool</span></span>
+## <a name="install-and-run-the-ediscovery-export-tool"></a><span data-ttu-id="7ff28-117">Installare ed eseguire lo strumento di esportazione di eDiscovery</span><span class="sxs-lookup"><span data-stu-id="7ff28-117">Install and run the eDiscovery Export Tool</span></span>
 
-1. <span data-ttu-id="5552f-118">Fare **clic su Scarica** risultati nella pagina a comparsa di un'esportazione in Ricerca contenuto o in un caso di eDiscovery.</span><span class="sxs-lookup"><span data-stu-id="5552f-118">Click **Download results** on the flyout page of an export in Content Search or an eDiscovery case.</span></span>
+1. <span data-ttu-id="7ff28-118">Fare **clic su** Scarica risultati nella pagina a comparsa di un'esportazione in Ricerca contenuto o in un caso di eDiscovery.</span><span class="sxs-lookup"><span data-stu-id="7ff28-118">Click **Download results** on the flyout page of an export in Content Search or an eDiscovery case.</span></span>
 
    ![Fare clic su Scarica risultati nella pagina a comparsa per scaricare i risultati della ricerca](../media/ClickOnceExport1.png)
 
-2. <span data-ttu-id="5552f-120">Ti verrà chiesto di confermare l'avvio dello strumento, fai clic su **Apri.**</span><span class="sxs-lookup"><span data-stu-id="5552f-120">You will be prompted with a confirmation to launch the tool, Click **Open**.</span></span>
+2. <span data-ttu-id="7ff28-120">Verrà richiesto di confermare l'avvio dello strumento, fare clic su **Apri.**</span><span class="sxs-lookup"><span data-stu-id="7ff28-120">You will be prompted with a confirmation to launch the tool, Click **Open**.</span></span>
 
    ![Fare clic su Apri per avviare lo strumento di esportazione di eDiscovery](../media/ClickOnceimage4.png)
 
-   <span data-ttu-id="5552f-122">Se lo strumento di esportazione di eDiscovery non è installato, verrà visualizzato un avviso di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="5552f-122">If the eDiscovery Export Tool isn't installed, you will be prompted with a Security Warning,</span></span> 
+   <span data-ttu-id="7ff28-122">Se lo strumento di esportazione di eDiscovery non è installato, verrà visualizzato un avviso di sicurezza,</span><span class="sxs-lookup"><span data-stu-id="7ff28-122">If the eDiscovery Export Tool isn't installed, you will be prompted with a Security Warning,</span></span> 
 
    ![Fare clic su Installa per installare lo strumento di esportazione di eDiscovery](../media/ClickOnceimage5.png)
 
-3. <span data-ttu-id="5552f-124">Fare clic su **Installa**.</span><span class="sxs-lookup"><span data-stu-id="5552f-124">Click **Install**.</span></span> <span data-ttu-id="5552f-125">Dopo l'installazione, lo strumento di esportazione verrà avviato automaticamente.</span><span class="sxs-lookup"><span data-stu-id="5552f-125">After it's installed, the export tool will launch automatically.</span></span>
+3. <span data-ttu-id="7ff28-124">Fare clic su **Installa**.</span><span class="sxs-lookup"><span data-stu-id="7ff28-124">Click **Install**.</span></span> <span data-ttu-id="7ff28-125">Dopo l'installazione, lo strumento di esportazione verrà avviato automaticamente.</span><span class="sxs-lookup"><span data-stu-id="7ff28-125">After it's installed, the export tool will launch automatically.</span></span>
 
-<span data-ttu-id="5552f-126">Per ulteriori informazioni, vedere i seguenti argomenti:</span><span class="sxs-lookup"><span data-stu-id="5552f-126">For more information, see the following topics:</span></span>
+<span data-ttu-id="7ff28-126">Per ulteriori informazioni, vedere i seguenti argomenti:</span><span class="sxs-lookup"><span data-stu-id="7ff28-126">For more information, see the following topics:</span></span>
 
-- [<span data-ttu-id="5552f-127">Esportare i risultati della Ricerca contenuto</span><span class="sxs-lookup"><span data-stu-id="5552f-127">Export Content Search results</span></span>](export-search-results.md)
+- [<span data-ttu-id="7ff28-127">Esportare i risultati della Ricerca contenuto</span><span class="sxs-lookup"><span data-stu-id="7ff28-127">Export Content Search results</span></span>](export-search-results.md)
 
-- [<span data-ttu-id="5552f-128">Come abilitare i flag dell'esperimento in Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="5552f-128">How to enable experiment flags in Microsoft Edge</span></span>](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [<span data-ttu-id="7ff28-128">Come abilitare i flag dell'esperimento in Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="7ff28-128">How to enable experiment flags in Microsoft Edge</span></span>](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
