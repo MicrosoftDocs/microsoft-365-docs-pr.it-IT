@@ -84,7 +84,7 @@ landingContent:
       url: threat-trackers.md
     - text: Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
       url: reports-and-insights-in-security-and-compliance.md
-- title: Indagine
+- title: Investigare
   linkLists:
   - linkListType: overview
     links:
@@ -102,7 +102,7 @@ landingContent:
     links:
     - text: Creazione di report e traccia dei messaggi in EOP
       url: reporting-and-message-trace-in-exchange-online-protection.md
-    - text: Visualizzare il log di controllo dell'amministratore
+    - text: Visualizzare il log di controllo di amministrazione
       url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
 - title: Risposta
   linkLists:

@@ -19,26 +19,26 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52623578"
 ---
-# <a name="contact-support-for-belarus"></a><span data-ttu-id="0fbe8-103">Contattare il supporto per la Bielorussia</span><span class="sxs-lookup"><span data-stu-id="0fbe8-103">Contact support for Belarus</span></span>
+# <a name="contact-support-for-belarus"></a><span data-ttu-id="f4e56-103">Contattare il supporto per la Bielorussia</span><span class="sxs-lookup"><span data-stu-id="f4e56-103">Contact support for Belarus</span></span>
 
-<span data-ttu-id="0fbe8-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="0fbe8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="f4e56-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="f4e56-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="0fbe8-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="0fbe8-105">Phone number</span></span>
-<span data-ttu-id="0fbe8-106">8 820 0071 0003</span><span class="sxs-lookup"><span data-stu-id="0fbe8-106">8 820 0071 0003</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f4e56-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="f4e56-105">Phone number</span></span>
+<span data-ttu-id="f4e56-106">8 820 0071 0003</span><span class="sxs-lookup"><span data-stu-id="f4e56-106">8 820 0071 0003</span></span>
 
-<span data-ttu-id="0fbe8-107">Premere 2 per le aziende</span><span class="sxs-lookup"><span data-stu-id="0fbe8-107">Press 2 for business</span></span>
+<span data-ttu-id="f4e56-107">Premere 2 per le aziende</span><span class="sxs-lookup"><span data-stu-id="f4e56-107">Press 2 for business</span></span>
 
-<span data-ttu-id="0fbe8-108">Premere 1 per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="0fbe8-108">Press 1 for Microsoft 365</span></span>
+<span data-ttu-id="f4e56-108">Premere 1 per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="f4e56-108">Press 1 for Microsoft 365</span></span>
 
-## <a name="hours"></a><span data-ttu-id="0fbe8-109">Ore</span><span class="sxs-lookup"><span data-stu-id="0fbe8-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="0fbe8-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="0fbe8-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f4e56-109">Ore</span><span class="sxs-lookup"><span data-stu-id="f4e56-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f4e56-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="f4e56-110">Billing Support:</span></span>
 
-<span data-ttu-id="0fbe8-111">Russo: Mon-Fri 10:00-19:00 a Mosca</span><span class="sxs-lookup"><span data-stu-id="0fbe8-111">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
+<span data-ttu-id="f4e56-111">Russo: Mon-Fri 10:00-19:00 a Mosca</span><span class="sxs-lookup"><span data-stu-id="f4e56-111">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
 
-<span data-ttu-id="0fbe8-112">Inglese: Mon-Fri 9.00-17.00 Londra</span><span class="sxs-lookup"><span data-stu-id="0fbe8-112">English: Mon-Fri 9 AM-5 PM London</span></span>
+<span data-ttu-id="f4e56-112">Inglese: Mon-Fri 9.00-17.00 Londra</span><span class="sxs-lookup"><span data-stu-id="f4e56-112">English: Mon-Fri 9 AM-5 PM London</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="0fbe8-113">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="0fbe8-113">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f4e56-113">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="f4e56-113">Technical Support:</span></span>
 
-<span data-ttu-id="0fbe8-114">Russo: Mon-Fri dalle 7.00 alle 20.00 a Mosca</span><span class="sxs-lookup"><span data-stu-id="0fbe8-114">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
+<span data-ttu-id="f4e56-114">Russo: Mon-Fri dalle 7.00 alle 20.00 a Mosca</span><span class="sxs-lookup"><span data-stu-id="f4e56-114">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
 
-<span data-ttu-id="0fbe8-115">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="0fbe8-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f4e56-115">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="f4e56-115">English: 24 hours a day, 7 days a week</span></span>
