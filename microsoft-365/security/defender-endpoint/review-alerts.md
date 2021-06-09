@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: b791f2b62cb4a3f8062c80ceeb04ccfa72f704bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b17af7931b181a5fa30271a3eee07c7abf10a010
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062133"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844023"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Esaminare gli avvisi in Microsoft Defender for Endpoint
 
@@ -30,7 +30,7 @@ ms.locfileid: "51062133"
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
@@ -46,7 +46,7 @@ Selezionando il nome di un avviso in Defender for Endpoint, verrà visualizzata 
 
 1. **Il titolo dell'avviso** mostra il nome dell'avviso ed è presente per ricordarti quale avviso ha avviato l'indagine corrente indipendentemente da ciò che hai selezionato nella pagina.
 2. [**Gli asset interessati elencano**](#review-affected-assets) le schede dei dispositivi e degli utenti interessati da questo avviso che possono essere selezionate per ulteriori informazioni e azioni.
-3. La **storia dell'avviso** visualizza tutte le entità correlate all'avviso, interconnesse da una visualizzazione albero. L'avviso nel titolo sarà quello attivo quando si atterra per la prima volta nella pagina dell'avviso selezionato. Le entità nella storia dell'avviso sono espandibili e selezionabili, per fornire informazioni aggiuntive e accelerare la risposta consentendoti di eseguire azioni direttamente nel contesto della pagina di avviso. Usa la storia di avviso per avviare l'indagine. Scopri come analizzare [gli avvisi in Microsoft Defender for Endpoint.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts)
+3. La **storia dell'avviso** visualizza tutte le entità correlate all'avviso, interconnesse da una visualizzazione albero. L'avviso nel titolo sarà quello attivo quando si atterra per la prima volta nella pagina dell'avviso selezionato. Le entità nella storia dell'avviso sono espandibili e selezionabili, per fornire informazioni aggiuntive e accelerare la risposta consentendoti di eseguire azioni direttamente nel contesto della pagina di avviso. Usa la storia di avviso per avviare l'indagine. Scopri come analizzare [gli avvisi in Microsoft Defender for Endpoint.](/microsoft-365/security/defender-endpoint/investigate-alerts)
 4. Il **riquadro dei** dettagli mostrerà i dettagli dell'avviso selezionato in un primo momento, con i dettagli e le azioni correlati a questo avviso. Se si seleziona una delle risorse o entità interessate nella storia di avviso, il riquadro dei dettagli verrà modificato per fornire informazioni contestuali e azioni per l'oggetto selezionato.
 
 Prendere nota dello stato di rilevamento dell'avviso. 

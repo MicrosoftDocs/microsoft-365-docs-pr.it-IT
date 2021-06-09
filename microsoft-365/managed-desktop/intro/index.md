@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259668"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841367"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
@@ -61,7 +61,7 @@ Microsoft Managed Desktop gestisce i dispositivi registrati e il software Micros
 
 - **Aggiornamenti:** Microsoft Managed Desktop consente di configurare e gestire tutti gli aspetti dei [gruppi di distribuzione](../service-description/updates.md) per quanto riguarda aggiornamenti di qualità e funzionalità di Windows 10, driver, firmware, definizioni antivirus e app Microsoft 365 per gli aggiornamenti aziendali. Questo include test e verifica approfonditi di tutti gli aggiornamenti, assicurando che i dispositivi registrati siano sempre aggiornati, riducendo al minimo i disservizi, così da liberare il tuo reparto IT.
 
-- **App:** nell'ambito di Microsoft 365 Enterprise, Microsoft include (e gestisce) diverse app Microsoft fondamentali. Probabilmente ti occorrono anche altre app per la tua azienda. Il programma [FastTrack](https://www.microsoft.com/FastTrack) di Microsoft consente di distribuire facilmente tali app evitando di rivolgersi al reparto IT per testarle, crearne i pacchetti e distribuirle. Il programma [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) di Microsoft è inoltre utile per risolvere i problemi di compatibilità delle app che si verificano quando si esegue la migrazione alle versioni più recenti dei prodotti. Ulteriori informazioni su [App in Microsoft Managed Desktop](../get-ready/apps.md).
+- **App:** nell'ambito di Microsoft 365 Enterprise, Microsoft include (e gestisce) diverse app Microsoft fondamentali. Probabilmente ti occorrono anche altre app per la tua azienda. Il programma [FastTrack](https://www.microsoft.com/FastTrack) di Microsoft consente di distribuire facilmente tali app evitando di rivolgersi al reparto IT per testarle, crearne i pacchetti e distribuirle. Il programma [App Assure](/fasttrack/products-and-capabilities#app-assuree) di Microsoft è inoltre utile per risolvere i problemi di compatibilità delle app che si verificano quando si esegue la migrazione alle versioni più recenti dei prodotti. Ulteriori informazioni su [App in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
 ## <a name="device-monitoring"></a>Monitoraggio del dispositivo

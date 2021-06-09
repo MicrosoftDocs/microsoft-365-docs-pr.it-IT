@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 25b70f91824db2a6d05db5d3981dd50f4f2b477a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c58d7d4192afd0aa13a5ffb0c7f3204b4eaf0315
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934742"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844407"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Configurare e gestire le funzionalità di Microsoft Defender for Endpoint
 
@@ -45,9 +45,9 @@ Per consigli pratici sulla connessione di nuovi dispositivi nell'organizzazione,
 
 Argomento | Descrizione
 :---|:---
-[Configurare le impostazioni di Microsoft Defender Security Center](preferences-setup.md) | Configurare le impostazioni correlate al portale, ad esempio impostazioni generali, funzionalità avanzate o abilitare l'esperienza di anteprima.
-[Configurare le funzionalità di riduzione della superficie di attacco](configure-attack-surface-reduction.md) | Configurare le funzionalità di riduzione della superficie di attacco, per garantire che le impostazioni siano applicate correttamente e che le tecniche di mitigazione degli exploit siano impostate.
-[Configurare la protezione di nuova generazione](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Configurare la protezione di nuova generazione per rilevare tutti i tipi di minacce emergenti.
-[Configurare le funzionalità di Microsoft Threat Experts](configure-microsoft-threat-experts.md) | Configurare e gestire l'intelligence sulle minacce per la sicurezza informatica di Microsoft Threat Experts.
-[Configurare l'integrazione di Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Configurare altre soluzioni che si integrano con Defender per Endpoint.
-[Gestione e supporto api](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | Pull alerts to your Security Information and Event Management (SIEM) or use APIs to create custom alerts. Creare e creare report di Power BI.
+[Configurare Microsoft Defender Security Center impostazioni](preferences-setup.md) | Configurare le impostazioni correlate al portale, ad esempio impostazioni generali, funzionalità avanzate o abilitare l'esperienza di anteprima.
+[Configurare le funzionalità per la riduzione della superficie di attacco](configure-attack-surface-reduction.md) | Configurare le funzionalità di riduzione della superficie di attacco, per garantire che le impostazioni siano applicate correttamente e che le tecniche di mitigazione degli exploit siano impostate.
+[Configurare la protezione di nuova generazione](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Configurare la protezione di nuova generazione per rilevare tutti i tipi di minacce emergenti.
+[Configurare Microsoft Threat Experts funzionalità](configure-microsoft-threat-experts.md) | Configurare e gestire l'intelligence sulle minacce per la sicurezza informatica da Microsoft Threat Experts.
+[Configurare l'integrazione Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/threat-protection-integration) | Configurare altre soluzioni che si integrano con Defender per Endpoint.
+[Gestione e supporto api](/microsoft-365/security/defender-endpoint/management-apis) | Pull alerts to your Security Information and Event Management (SIEM) or use APIs to create custom alerts. Creare e compilare Power BI report.

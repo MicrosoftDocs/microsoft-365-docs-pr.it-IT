@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ae8b08ce3d5bcc34e91f031223108fca053348ce
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: aab9c191e590b0717a0f1be62ed88a699d3b5b57
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572394"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844048"
 ---
 # <a name="take-response-actions-on-a-device"></a>Intraprendere azioni di risposta su un dispositivo
 
@@ -51,9 +51,9 @@ Le azioni di risposta vengono eseguite nella parte superiore di una pagina speci
  Puoi trovare le pagine del dispositivo da una delle visualizzazioni seguenti:
 
 - **Dashboard delle operazioni di** sicurezza: selezionare un nome di dispositivo dalla scheda Dispositivi a rischio.
-- **Coda avvisi:** selezionare il nome del dispositivo accanto all'icona del dispositivo dalla coda degli avvisi.
+- **Coda degli avvisi**: selezionare il nome del dispositivo accanto all'icona del dispositivo dalla coda degli avvisi.
 - **Elenco dispositivi:** selezionare l'intestazione del nome del dispositivo nell'elenco dei dispositivi.
-- **Casella di ricerca:** seleziona Dispositivo dal menu a discesa e immetti il nome del dispositivo.
+- **Casella di ricerca**: selezionare Dispositivo dal menu a discesa e inserire il nome del dispositivo.
 
 >[!IMPORTANT]
 > - Queste azioni di risposta sono disponibili solo per i dispositivi Windows 10 versione 1703 o successiva. 
@@ -61,7 +61,7 @@ Le azioni di risposta vengono eseguite nella parte superiore di una pagina speci
 
 ## <a name="manage-tags"></a>Gestire i tag
 
-Aggiungere o gestire tag per creare un'affiliazione di gruppo logico. I tag dispositivo supportano il mapping corretto della rete, consentendo di collegare tag diversi per acquisire il contesto e abilitare la creazione dinamica dell'elenco come parte di un evento imprevisto.
+Aggiungere o gestire tag per creare un'affiliazione di gruppo logico. I tag del dispositivo supportano la mappatura corretta della rete, consentendo di collegare tag diversi per acquisire il contesto e consentire la creazione di elenchi dinamici come parte di un incidente.
 
 Per altre informazioni sul tagging dei dispositivi, vedi [Creare e gestire tag dispositivo.](machine-tags.md)
 
@@ -124,7 +124,7 @@ Come parte del processo di indagine o di risposta, è possibile avviare in remot
 
 >[!IMPORTANT]
 >- Questa azione è disponibile per i dispositivi Windows 10 versione 1709 o successiva.
->- Un'Antivirus Microsoft Defender (Microsoft Defender AV) può essere eseguita insieme ad altre soluzioni antivirus, indipendentemente dal fatto che Microsoft Defender AV sia o meno la soluzione antivirus attiva. Microsoft Defender AV può essere in modalità passiva. Per ulteriori informazioni, vedere [Antivirus Microsoft Defender compatibilità.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
+>- Un'Antivirus Microsoft Defender (Microsoft Defender AV) può essere eseguita insieme ad altre soluzioni antivirus, indipendentemente dal fatto che Microsoft Defender AV sia o meno la soluzione antivirus attiva. Microsoft Defender AV può essere in modalità passiva. Per ulteriori informazioni, vedere [Antivirus Microsoft Defender compatibilità.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
 
 Uno è stato selezionato Esegui analisi **antivirus,** selezionare il tipo di analisi che si desidera eseguire (rapido o completo) e aggiungere un commento prima di confermare l'analisi.
 
@@ -134,7 +134,7 @@ Il centro notifiche mostrerà le informazioni di analisi e la sequenza temporale
 
 >[!NOTE]
 >Quando si attiva un'analisi con Defender per l'azione di risposta endpoint, il valore "ScanAvgCPULoadFactor" dell'antivirus di Microsoft Defender si applica e limita l'impatto della CPU dell'analisi.<br> Se ScanAvgCPULoadFactor non è configurato, il valore predefinito è un limite del carico massimo della CPU del 50% durante un'analisi.<br>
->Per ulteriori informazioni, vedere [configure-advanced-scan-types-microsoft-defender-antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
+>Per ulteriori informazioni, vedere [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
 ## <a name="restrict-app-execution"></a>Limitare l'esecuzione dell'app
 
@@ -143,7 +143,7 @@ Oltre a contenere un attacco arrestando processi dannosi, puoi anche bloccare un
 >[!IMPORTANT]
 > - Questa azione è disponibile per i dispositivi Windows 10 versione 1709 o successiva.
 > - Questa funzionalità è disponibile se l'organizzazione utilizza Antivirus Microsoft Defender.
-> - Questa azione deve soddisfare i requisiti di firma e i Windows Defender criteri di integrità del codice di Controllo applicazione. Per ulteriori informazioni, vedere Formati e firma [dei criteri di integrità del codice.](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)
+> - Questa azione deve soddisfare i requisiti di firma e i Windows Defender criteri di integrità del codice di Controllo applicazione. Per ulteriori informazioni, vedere Formati e firma [dei criteri di integrità del codice.](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)
 
 Per limitare l'esecuzione di un'applicazione, vengono applicati criteri di integrità del codice che consentono l'esecuzione dei file solo se sono firmati da un certificato rilasciato da Microsoft. Questo metodo di restrizione può aiutare a impedire a un utente malintenzionato di controllare i dispositivi compromessi ed eseguire ulteriori attività dannose.
 
@@ -191,7 +191,7 @@ Quando un dispositivo viene isolato, viene visualizzata la notifica seguente per
 
 Puoi consultare un esperto di minacce Microsoft per ulteriori informazioni su un dispositivo potenzialmente compromesso o già compromesso. Microsoft Threat Experts essere coinvolti direttamente dall'interno del Microsoft Defender Security Center per una risposta accurata e immediata. Gli esperti forniscono informazioni dettagliate non solo su un dispositivo potenzialmente compromesso, ma anche per comprendere meglio le minacce complesse, le notifiche di attacco mirate che si ottengono o se sono necessarie ulteriori informazioni sugli avvisi o un contesto di intelligence per le minacce visualizzato nel dashboard del portale.
 
-Per [informazioni dettagliate, vedere Consultare un esperto](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) delle minacce Microsoft.
+Per [informazioni dettagliate, vedere Consultare un esperto](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) delle minacce Microsoft.
 
 
 ## <a name="check-activity-details-in-action-center"></a>Controllare i dettagli delle attività nel Centro operativo
@@ -209,4 +209,4 @@ Vengono visualizzati anche tutti gli altri dettagli correlati, ad esempio data/o
 
 ## <a name="related-topic"></a>Argomento correlato
 - [Intraprendere azioni di risposta su un file](respond-file-alerts.md)
-- [Imprecisione dei report](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
+- [Imprecisione dei report](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

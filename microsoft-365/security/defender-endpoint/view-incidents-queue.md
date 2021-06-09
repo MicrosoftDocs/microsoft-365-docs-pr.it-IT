@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 56fd5aa10cf30e7bdcad213a68430b460e65647c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499929"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844227"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Visualizzare e organizzare la coda eventi imprevisti di Microsoft Defender per endpoint
 
@@ -57,10 +57,10 @@ Nella barra di spostamento superiore è possibile:
 
 Gravità evento imprevisto | Descrizione
 :---|:---
-Alta </br>(Rosso) | Minacce spesso associate a minacce persistenti avanzate (APT). Questi eventi imprevisti indicano un rischio elevato a causa della gravità dei danni che possono infliggere ai dispositivi.
+Fortemente </br>(Rosso) | Minacce spesso associate a minacce persistenti avanzate (APT). Questi eventi imprevisti indicano un rischio elevato a causa della gravità dei danni che possono infliggere ai dispositivi.
 Medio </br>(Arancione) | Minacce raramente osservate nell'organizzazione, ad esempio modifiche anomali del Registro di sistema, esecuzione di file sospetti e comportamenti osservati tipici delle fasi di attacco.
 Bassa </br>(Giallo) | Minacce associate a malware e strumenti di hacking prevalenti che non indicano necessariamente una minaccia avanzata per l'organizzazione.
-Informativo </br>(Grigio) | Gli incidenti in informazioni potrebbero non essere considerati dannosi per la rete, ma potrebbero essere utili da tenere traccia.
+Informativa </br>(Grigio) | Gli incidenti in informazioni potrebbero non essere considerati dannosi per la rete, ma potrebbero essere utili da tenere traccia.
 
 ## <a name="assigned-to"></a>Assegnata a
 Puoi scegliere di filtrare l'elenco selezionando gli eventi assegnati a un altro utente o quelli assegnati a te.
@@ -85,7 +85,7 @@ Ad esempio: *evento imprevisto a più fasi in più endpoint segnalati da più or
 
 
 ## <a name="see-also"></a>Vedere anche
-- [Coda incidenti](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Coda incidenti](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Gestire gli incidenti](manage-incidents.md)
 - [Indagare sugli incidenti](investigate-incidents.md)
 

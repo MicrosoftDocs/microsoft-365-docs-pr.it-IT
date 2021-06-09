@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 018bc3549cd7a25df5bdd86d98d351e19027c31f
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796031"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841187"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Control
 
@@ -32,7 +32,7 @@ Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Co
 
 |Privilegio |Autorizzazione  |
 |---------|---------|
-|Accesso    |  Lettura, scrittura ed esecuzione       |
+|Access    |  Lettura, scrittura ed esecuzione       |
 |Modalità azione    |    Controllo, Consenti, Impedisci     |
 |Supporto CSP   |   Sì      |
 |Supporto oggetti Criteri di gruppo    |   Sì      |
@@ -196,7 +196,7 @@ La funzionalità Controllo di Archiviazione rimovibili consente di applicare i c
 
 ### <a name="licensing"></a>Licenze
 
-Prima di iniziare a utilizzare Removable Archiviazione Access Control, è necessario confermare [l'Microsoft 365 abbonamento.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Per accedere a Removable Archiviazione Access Control, è necessario disporre di Microsoft 365 E3.
+Prima di iniziare a utilizzare Removable Archiviazione Access Control, è necessario confermare [l'Microsoft 365 abbonamento.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Per accedere a Removable Archiviazione Access Control, è necessario disporre di Microsoft 365 E3 o Microsoft 365 E5.
 
 ### <a name="deploying-policy-via-group-policy"></a>Distribuzione dei criteri tramite Criteri di gruppo
 
@@ -226,7 +226,7 @@ La funzionalità Controllo di Archiviazione rimovibili consente di applicare i c
 
 ### <a name="licensing"></a>Licenze
 
-Prima di iniziare a utilizzare Removable Archiviazione Access Control, è necessario confermare [l'Microsoft 365 abbonamento.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Per accedere a Removable Archiviazione Access Control, è necessario disporre di Microsoft 365 E3.
+Prima di iniziare a utilizzare Removable Archiviazione Access Control, è necessario confermare [l'Microsoft 365 abbonamento.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Per accedere a Removable Archiviazione Access Control, è necessario disporre di Microsoft 365 E3 o Microsoft 365 E5.
 
 ### <a name="permission"></a>Autorizzazione
 
@@ -265,11 +265,11 @@ Per la distribuzione dei criteri in Intune, l'account deve disporre delle autori
 
     - Tipo di dati: String (file XML)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" alt-text="Visualizzazione del file XML per il tipo di dati STRING":::
+      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="Visualizzazione del file XML per il tipo di dati STRING":::
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Distribuzione e gestione dei criteri tramite l'interfaccia utente di Intune
 
-Questa funzionalità non è ancora disponibile. 
+Questa funzionalità (nell'interfaccia di amministrazione di Microsoft Endpoint Manager ( > https://endpoint.microsoft.com/) Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) non è ancora disponibile. 
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Visualizzare i dati di controllo Archiviazione di accesso rimovibili in Microsoft Defender per Endpoint
 
@@ -277,7 +277,7 @@ Il portale Microsoft 365 sicurezza mostra l'archiviazione rimovibile bloccata da
 
 - Microsoft 365 per la creazione di report E5
 
-```
+```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
 | where ActionType == &quot;RemovableStoragePolicyTriggered&quot; 

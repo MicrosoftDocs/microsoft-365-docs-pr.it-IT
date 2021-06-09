@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come importare dati di terze parti da piattaforme di social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione documenti Microsoft 365 cassette postali.
-ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764111"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822154"
 ---
 # <a name="archive-third-party-data"></a>Archiviare i dati di terze parti
 
@@ -86,7 +86,7 @@ Nella tabella seguente sono elencati i connettori di dati di terze parti disponi
 ||||||||
 
 > [!NOTE]
-> <sup>1</sup> Connettore dati fornito da TeleMessage. Prima di poter archiviare i dati in Microsoft 365, è necessario collaborare con TeleMessage per configurare il servizio di archiviazione per l'organizzazione. Per ulteriori informazioni, vedere la sezione relativa ai prerequisiti nelle istruzioni dettagliate per questo tipo di dati.<br/><br/><sup>2</sup> Connettore dati fornito da Veritas. Prima di poter archiviare i dati in Microsoft 365, è necessario collaborare con Veritas per configurare il servizio di archiviazione per l'organizzazione. Per ulteriori informazioni, vedere la sezione relativa ai prerequisiti nelle istruzioni dettagliate per questo tipo di dati.
+> <sup>1</sup> Connettore dati fornito da TeleMessage. Prima di poter archiviare i dati in Microsoft 365, è necessario collaborare con TeleMessage per configurare il servizio di archiviazione per l'organizzazione. Per ulteriori informazioni, vedere la sezione relativa ai prerequisiti nelle istruzioni dettagliate per questo tipo di dati. I connettori di dati TeleMessage sono disponibili anche in GCC nel cloud Microsoft 365 us government. Per ulteriori informazioni, vedere la sezione [Connettori di dati](#data-connectors-in-the-us-government-cloud) nel cloud del governo statunitense in questo articolo. <br/><br/><sup>2</sup> Connettore dati fornito da Veritas. Prima di poter archiviare i dati in Microsoft 365, è necessario collaborare con Veritas per configurare il servizio di archiviazione per l'organizzazione. Per ulteriori informazioni, vedere la sezione relativa ai prerequisiti nelle istruzioni dettagliate per questo tipo di dati.
 
 I dati di terze parti elencati nella tabella precedente (ad eccezione dei dati delle risorse umane e dei dati fisici di badging) vengono importati nelle cassette postali degli utenti. Le soluzioni di conformità corrispondenti che supportano i dati di terze parti vengono applicate alla cassetta postale dell'utente in cui sono archiviati i dati.
 
@@ -125,6 +125,22 @@ La [funzionalità di gestione](records-management.md) dei record in Microsoft 36
 ### <a name="insider-risk-management"></a>Gestione dei rischi Insider
 
 I segnali provenienti da dati di terze parti, come i dati selettivi sulle risorse umane, possono essere utilizzati dalla soluzione di gestione dei rischi [Insider](insider-risk-management.md) per ridurre al minimo i rischi interni consentendoti di rilevare, analizzare e agire su attività rischiose nell'organizzazione. Ad esempio, i dati importati dal connettore di dati hr vengono utilizzati come indicatori di rischio per rilevare il furto di dati dei dipendenti in partenza.
+
+## <a name="data-connectors-in-the-us-government-cloud"></a>Connettori dati nel cloud per enti pubblici statunitensi
+
+Come accennato in precedenza, i connettori dati forniti da TeleMessage sono disponibili nel cloud del governo statunitense. Nella tabella seguente sono indicati gli ambienti governativi specifici che supportano ogni connettore di dati TeleMessage. Per ulteriori informazioni sui cloud del governo statunitense, [vedere Microsoft 365 US Government.](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)
+
+|Connettore dati TeleMessage  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|Android Archiver | Sì | No | No |
+|AT&T SMS/MMS Network Archiver | Sì | No | No |
+|Bell SMS/MMS Network Archiver | Sì | No | No |
+|Enterprise Number Archiver | Sì | No | No |
+|O2 SMS e Voice Network Archiver | Sì         | No | No |
+|TELUS SMS Network Archiver | Sì | No | No |
+|Verizon SMS/MMS Network Archiver | Sì | No | No |
+|WhatsApp Archiver | Sì | No | No |
+|||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Collaborazione con un partner Microsoft per archiviare dati di terze parti
 

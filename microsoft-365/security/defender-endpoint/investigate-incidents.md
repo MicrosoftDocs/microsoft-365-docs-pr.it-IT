@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1d8f4452273047684a30db3b18d1281f40f46378
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0b52b6f9b457dbe1a5984c3d68c7077f7037d498
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903299"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845079"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Analizzare gli eventi imprevisti in Microsoft Defender for Endpoint
 
@@ -83,7 +83,7 @@ Ognuna delle entità analizzate verrà contrassegnata come infetta, correttiva o
 Microsoft Defender for Endpoint aggrega le informazioni sulle minacce in un evento imprevisto in modo da poter visualizzare i modelli e le correlazioni provenienti da diversi punti dati. È possibile visualizzare tale correlazione tramite il grafico degli eventi imprevisti.
 
 ### <a name="incident-graph"></a>Grafico degli eventi imprevisti
-Il **grafico** narra la storia dell'attacco di cybersecurity. Ad esempio, mostra qual era il punto di ingresso, quale indicatore di compromissione o attività è stato osservato su quale dispositivo. ecc.
+Il **Graph** racconta la storia dell'attacco di cybersecurity. Ad esempio, mostra qual era il punto di ingresso, quale indicatore di compromissione o attività è stato osservato su quale dispositivo. ecc.
 
 ![Immagine del grafico degli eventi imprevisti](images/atp-incident-graph-tab.png)
 
@@ -92,6 +92,6 @@ Il **grafico** narra la storia dell'attacco di cybersecurity. Ad esempio, mostra
 ![Immagine dei dettagli dell'evento imprevisto](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Coda incidenti](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [Analizzare gli eventi imprevisti in Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-incidents)
-- [Gestire gli eventi imprevisti di Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-incidents)
+- [Coda incidenti](/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Analizzare gli eventi imprevisti in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/investigate-incidents)
+- [Gestire gli eventi imprevisti di Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-incidents)

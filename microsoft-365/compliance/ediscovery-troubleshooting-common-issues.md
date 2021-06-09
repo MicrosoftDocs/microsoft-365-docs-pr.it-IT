@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Informazioni sui passaggi di base per la risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni in Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809120"
+ms.locfileid: "52822239"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Analizzare, risolvere e risolvere i problemi comuni di eDiscovery
 
@@ -226,7 +226,7 @@ Si tratta di un problema sul lato client e per risolvere il problema, provare a 
 
 1. Prova a usare un altro client/computer per il download.
 
-2. Rimuovere le ricerche precedenti non più necessarie utilizzando il cmdlet [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch].
+2. Rimuovere le ricerche precedenti non più necessarie utilizzando il cmdlet [Remove-ComplianceSearch.](/powershell/module/exchange/remove-compliancesearch)
 
 3. Assicurati di eseguire il download in un'unità locale.
 

@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 23d6c8c87a6cbcc7b8060440ba2c0cae6182767d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bd86458749db4019bb247a3664748b9891965754
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274545"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841333"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurare le funzionalità di analisi e correzione automatizzate in Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "52274545"
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Se l'organizzazione usa [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) (Defender for Endpoint), le funzionalità di analisi e correzione automatizzate possono risparmiare tempo e fatica per il team delle operazioni di sicurezza. [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) Come descritto in questo [post di blog,](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)queste funzionalità simulano i passaggi ideali che un analista della sicurezza adotta per analizzare e correggere le minacce. [Ulteriori informazioni sull'analisi e la correzione automatizzate.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) 
+Se l'organizzazione usa [Microsoft Defender for Endpoint](/windows/security/threat-protection/) (Defender for Endpoint), le funzionalità di analisi e correzione automatizzate possono risparmiare tempo e fatica per il team delle operazioni di sicurezza. [](/microsoft-365/security/defender-endpoint/automated-investigations) Come descritto in questo [post di blog,](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)queste funzionalità simulano i passaggi ideali che un analista della sicurezza adotta per analizzare e correggere le minacce. [Ulteriori informazioni sull'analisi e la correzione automatizzate.](/microsoft-365/security/defender-endpoint/automated-investigations) 
 
 Per configurare l'analisi e la correzione automatizzate,
 1. [Attivare le funzionalità](#turn-on-automated-investigation-and-remediation); e 
@@ -43,26 +43,26 @@ Per configurare l'analisi e la correzione automatizzate,
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>Attivare l'analisi e la correzione automatizzate
 
-1. Come amministratore globale o amministratore della sicurezza, passare a Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) ed eseguire l'accesso.
-2. Nel riquadro di spostamento scegliere **Impostazioni.**
+1. Come amministratore globale o amministratore della sicurezza, passare alla Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) ed eseguire l'accesso.
+2. Nel riquadro di spostamento scegliere **Impostazioni**.
 3. Nella sezione **Generale** selezionare **Funzionalità avanzate**.
 4. Attivare sia **Analisi automatizzata che** Risolvi **automaticamente gli avvisi**.
 
 ## <a name="set-up-device-groups"></a>Configurare gruppi di dispositivi
 
-1. In Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ), nella pagina **Impostazioni,** in **Autorizzazioni,** selezionare **Gruppi di dispositivi.**
+1. Nella Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ), nella pagina **Impostazioni,** in **Autorizzazioni,** selezionare **Gruppi di dispositivi.**
 2. Seleziona **+ Aggiungi gruppo di dispositivi**.
 3. Creare almeno un gruppo di dispositivi, come indicato di seguito:
    - Specificare un nome e una descrizione per il gruppo di dispositivi.
    - **Nell'elenco Livello di automazione** selezionare un livello, ad esempio **Completo, per correggere automaticamente le minacce.** Il livello di automazione determina se le azioni di correzione vengono eseguite automaticamente o solo dopo l'approvazione. Per ulteriori informazioni, vedere Livelli di automazione in analisi e [correzione automatizzate.](automation-levels.md)
    - Nella sezione **Membri** usa una o più condizioni per identificare e includere i dispositivi.
-   - Nella scheda **Accesso utente** selezionare i gruppi di Azure [Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) che devono avere accesso al gruppo di dispositivi che si sta creando.
+   - Nella scheda **Accesso utente** [](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) seleziona i gruppi Azure Active Directory che devono avere accesso al gruppo di dispositivi che stai creando.
 4. Seleziona **Fatto** al termine della configurazione del gruppo di dispositivi.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Visitare il Centro notifiche per visualizzare le azioni di correzione in sospeso e completate](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
-- [Rivedere e approvare le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)
+- [Visitare il Centro notifiche per visualizzare le azioni di correzione in sospeso e completate](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
+- [Rivedere e approvare le azioni in sospeso](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
 ## <a name="see-also"></a>Vedere anche
 

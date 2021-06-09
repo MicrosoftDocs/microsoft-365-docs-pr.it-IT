@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare ad applicare le impostazioni dei criteri Standard e Strict tra le funzionalità di protezione di Exchange Online Protection (EOP) e Microsoft Defender per Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771226"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822287"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Criteri di sicurezza predefiniti in EOP e Microsoft Defender per Office 365
 
@@ -105,7 +105,7 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Si apre il centro Microsoft 365 sicurezza all'indirizzo <https://security.microsoft.com/> . Per passare direttamente alla pagina **Criteri di sicurezza predefiniti,** utilizzare <https://security.microsoft.com/presetSecurityPolicies> .
+- Si apre il centro Microsoft 365 sicurezza all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla pagina **Criteri di sicurezza predefiniti,** utilizzare <https://security.microsoft.com/presetSecurityPolicies> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -119,7 +119,7 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Usare il Centro sicurezza per assegnare criteri di sicurezza predefiniti agli utenti
 
-1. Nel Centro sicurezza, andare a Criteri di & di **collaborazione** & regole Criteri di sicurezza \>  \>  \> **preimpostati**.
+1. Nel Centro sicurezza passare a Criteri di **&** di collaborazione & regole Criteri di minaccia \>  \>  \> **Sezione** \> **Criteri** di sicurezza predefiniti .
 
 2. In **Protezione standard o** Protezione **rigida** fare clic su **Modifica.**
 

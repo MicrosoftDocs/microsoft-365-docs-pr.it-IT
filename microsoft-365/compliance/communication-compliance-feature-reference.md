@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: da88bc2aa0e001d714d4317948e28cdca633d17d
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: 5a9f5a6b218ec7a0e1fe9b05524ea1898b03e370
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736361"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822130"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni
 
@@ -37,7 +37,7 @@ ms.locfileid: "52736361"
 >[!NOTE]
 >I criteri di supervisione creati nel Centro sicurezza & conformità per Office 365 sottoscrizioni non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da una sottoscrizione Office 365 a una sottoscrizione Microsoft 365, è necessario creare nuovi criteri di conformità delle comunicazioni per sostituire i criteri di supervisione esistenti.
 
-## <a name="policy-templates"></a>Modelli di criteri
+## <a name="policy-templates"></a>Modelli dei criteri
 
 I modelli di criteri sono impostazioni predefinite che è possibile utilizzare per creare rapidamente criteri per affrontare scenari di conformità comuni. Ognuno di questi modelli presenta differenze nelle condizioni e nell'ambito e tutti i modelli usano gli stessi tipi di segnali di scansione. È possibile scegliere tra i modelli di criteri seguenti:
 
@@ -130,7 +130,7 @@ Con i criteri di conformità delle comunicazioni, è possibile scegliere di anal
 
     - **Per Teams chat:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di conformità delle comunicazioni. Questa impostazione è per le relazioni utente/chat uno-a-uno o uno-a-molti.
     - **Per le comunicazioni Teams Channel:** Assegnare Microsoft Teams canale o Microsoft 365 che si desidera analizzare che contiene un utente specifico ai criteri di conformità delle comunicazioni. Se ai aggiunge lo stesso utente ad altri canali di Microsoft Teams o gruppi di Microsoft 365, assicurarsi di aggiungere questi nuovi canali e gruppi ai criteri di conformità delle comunicazioni. Se un membro del canale è un utente con supervisione all'interno di un criterio e la direzione *in* ingresso è configurata in un criterio, tutti i messaggi inviati all'interno del canale sono soggetti alla revisione e alle possibili corrispondenze dei criteri (anche per gli utenti nel canale che non sono supervisionati esplicitamente). Ad esempio, l'utente A è il proprietario o un membro di un canale. L'utente B e l'utente C sono membri dello stesso canale e utilizzano un linguaggio corrispondente ai criteri di lingua offensivi che controllano solo l'utente A. L'utente B e l'utente C creano corrispondenze dei criteri per le conversazioni all'interno del canale anche se non sono direttamente controllati nei criteri di linguaggio offensivo. Teams conversazioni tra l'utente B e l'utente C che si trova all'esterno del canale che include l'utente A non sarebbero soggette ai criteri della lingua offensiva che includono l'utente A. Per escludere i membri del canale dalla supervisione quando altri membri del canale vengono supervisionati in modo esplicito, disattivare l'impostazione Direzione di comunicazione *in* ingresso nei criteri di conformità delle comunicazioni applicabili.
-    - Per **Teams comunicazioni chat** con ambienti di posta elettronica ibridi: la conformità delle comunicazioni può monitorare i messaggi di chat per gli utenti delle organizzazioni con una distribuzione locale di Exchange o un provider di posta elettronica esterno che ha abilitato Microsoft Teams. È necessario creare un gruppo di distribuzione per gli utenti con cassette postali locali o esterne da monitorare. Quando si crea un criterio di conformità delle  comunicazioni, si assegna questo gruppo di distribuzione come selezione Di utenti e gruppi supervisionati nella procedura guidata dei criteri.
+    - Per **Teams comunicazioni chat** con ambienti di posta elettronica ibridi: la conformità delle comunicazioni può monitorare i messaggi di chat per gli utenti delle organizzazioni con una distribuzione locale di Exchange o un provider di posta elettronica esterno che ha abilitato Microsoft Teams. È necessario creare un gruppo di distribuzione per gli utenti con cassette postali locali o esterne da monitorare. Quando si crea un criterio di conformità delle  comunicazioni, si assegna questo gruppo di distribuzione come selezione Di utenti e gruppi supervisionati nella procedura guidata dei criteri. Per ulteriori informazioni sui requisiti e sulle limitazioni per abilitare l'archiviazione basata su cloud e il supporto Teams per gli utenti locali, vedere [Search for Teams chat data for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 - **Exchange posta elettronica**: le cassette postali ospitate Exchange Online nell'ambito della sottoscrizione Microsoft 365 o Office 365 sono tutte idonee per l'analisi dei messaggi. Exchange l'elaborazione dei messaggi di posta elettronica e degli allegati corrispondenti alle condizioni dei criteri di conformità delle comunicazioni può richiedere fino a 24 ore. I tipi di allegati supportati per la conformità delle comunicazioni sono gli stessi dei [tipi di file supportati per le ispezioni del contenuto delle regole del flusso di posta di Exchange](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
@@ -321,7 +321,7 @@ I filtri di conformità delle comunicazioni consentono di filtrare e ordinare i 
 | **Classe File** | Classe del messaggio in base al tipo di messaggio, *messaggio* o *allegato.* |
 | **Ha allegato** | Presenza dell'allegato nel messaggio. |
 | **Classe Item** | Origine del messaggio in base al tipo di messaggio, alla posta elettronica, alla chat di Microsoft Team, a Bloomberg e così via. Per ulteriori informazioni sui tipi di elemento comuni e sulle classi messaggio, vedere [Tipi di elemento e classi messaggio](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
-| **Domini destinatari** | Dominio a cui è stato inviato il messaggio. Questo dominio è in genere il dominio di sottoscrizione di Microsoft 365 per impostazione predefinita. |
+| **Domini destinatari** | Dominio a cui è stato inviato il messaggio. Questo dominio è in genere il dominio Microsoft 365 di sottoscrizione per impostazione predefinita. |
 | **Destinatario** | Utente a cui è stato inviato il messaggio. |
 | **Mittente** | Persona che ha inviato il messaggio. |
 | **Dominio del mittente** | Dominio che ha inviato il messaggio. |
@@ -353,11 +353,11 @@ Per i criteri di conformità delle comunicazioni, i seguenti valori dei criteri 
 
 Se si desidera modificare il livello di gravità assegnato in un criterio di avviso per uno specifico criterio di conformità delle comunicazioni, completare la procedura seguente:
 
-1. Accedere usando [https://compliance.microsoft.com](https://compliance.microsoft.com) le credenziali per un account amministratore nell'organizzazione di Microsoft 365.
+1. Accedere usando [https://compliance.microsoft.com](https://compliance.microsoft.com) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
 
-2. Nel Centro conformità Microsoft 365 passare a **Criteri**.
+2. Nel Centro Microsoft 365 conformità passare a **Criteri**.
 
-3. Selezionare **Avviso di Office 365** nella  pagina Criteri per aprire la pagina Criteri avvisi nel Centro sicurezza & e conformità di Office **365.** 
+3. Selezionare **Office 365 avviso** nella **pagina** Criteri per  aprire la pagina Criteri avvisi nel Centro sicurezza Office 365 **& conformità**.
 
 4. Seleziona la casella di controllo per i criteri di conformità delle comunicazioni che vuoi aggiornare, quindi seleziona **Modifica criterio.**
 
@@ -367,48 +367,48 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 7. Selezionare **Chiudi per** uscire dalla pagina dei dettagli dei criteri di avviso.
 
-## <a name="power-automate-flows"></a>Power Automate flows
+## <a name="power-automate-flows"></a>Power Automate flussi
 
-[Microsoft Power Automate è](/power-automate/getting-started) un servizio di flusso di lavoro che automatizza le azioni tra applicazioni e servizi. Utilizzando i flussi dei modelli o creati manualmente, è possibile automatizzare le attività comuni associate a tali applicazioni e servizi. Quando si abilita Power Automate flows per la conformità delle comunicazioni, è possibile automatizzare attività importanti per avvisi e utenti. È possibile configurare i flussi di Power Automate per inviare notifiche ai responsabili quando gli utenti hanno avvisi di conformità alle comunicazioni e altre applicazioni.
+[Microsoft Power Automate](/power-automate/getting-started) è un servizio di flusso di lavoro che automatizza le azioni tra applicazioni e servizi. Utilizzando i flussi dei modelli o creati manualmente, è possibile automatizzare le attività comuni associate a tali applicazioni e servizi. Quando si abilitano Power Automate per la conformità delle comunicazioni, è possibile automatizzare attività importanti per avvisi e utenti. È possibile configurare i flussi Power Automate per inviare notifiche ai responsabili quando gli utenti hanno avvisi di conformità alle comunicazioni e altre applicazioni.
 
-I clienti con abbonamenti a Microsoft 365 che includono la conformità alle comunicazioni non necessitano di licenze di Power Automate aggiuntive per usare il modello power automate di conformità alle comunicazioni predefinito consigliato. Il modello predefinito può essere personalizzato per supportare l'organizzazione e coprire gli scenari di conformità delle comunicazioni di base. Se si sceglie di usare le funzionalità di Power Automate premium in questi modelli, creare un modello personalizzato utilizzando il connettore di conformità di Microsoft 365 o utilizzare i modelli power automate per altre aree di conformità in Microsoft 365, potrebbero essere necessarie licenze di Power Automate aggiuntive.
+I clienti con Microsoft 365 che includono la conformità alle comunicazioni non necessitano di licenze aggiuntive Power Automate per usare il modello di conformità di comunicazione predefinito Power Automate consigliato. Il modello predefinito può essere personalizzato per supportare l'organizzazione e coprire gli scenari di conformità delle comunicazioni di base. Se si sceglie di utilizzare le funzionalità di Power Automate premium in questi modelli, creare un modello personalizzato utilizzando il connettore di conformità di Microsoft 365 o utilizzare modelli Power Automate per altre aree di conformità in Microsoft 365, potrebbero essere necessarie licenze Power Automate aggiuntive.
 
 >[!IMPORTANT]
->Si ricevono richieste di convalida delle licenze aggiuntive durante il test dei flussi di Power Automate? L'organizzazione potrebbe non aver ancora ricevuto gli aggiornamenti del servizio per questa funzionalità di anteprima. Gli aggiornamenti vengono distribuiti e tutte le organizzazioni con abbonamenti a Microsoft 365 che includono la conformità alle comunicazioni devono disporre del supporto delle licenze per i flussi creati dai modelli power automate consigliati entro il 30 ottobre 2020.
+>Si ricevono richieste di convalida delle licenze aggiuntive durante il test dei flussi Power Automate licenze? L'organizzazione potrebbe non aver ancora ricevuto gli aggiornamenti del servizio per questa funzionalità di anteprima. Gli aggiornamenti vengono distribuiti e tutte le organizzazioni con sottoscrizioni Microsoft 365 che includono la conformità alle comunicazioni devono disporre del supporto delle licenze per i flussi creati dai modelli di Power Automate consigliati entro il 30 ottobre 2020.
 
 ![Conformità delle comunicazioni Power Automate](../media/communication-compliance-power-automate.png)
 
-Il modello Power Automate seguente viene fornito ai clienti per supportare l'automazione dei processi per gli avvisi di conformità alle comunicazioni:
+Il modello di Power Automate seguente viene fornito ai clienti per supportare l'automazione dei processi per gli avvisi di conformità alle comunicazioni:
 
 - **Notifica al responsabile quando un utente ha un avviso** di conformità della comunicazione: alcune organizzazioni potrebbero dover avere una notifica di gestione immediata quando un utente ha un avviso di conformità della comunicazione. Quando questo flusso viene configurato e selezionato, al responsabile del caso all'utente viene inviato un messaggio di posta elettronica con le informazioni seguenti su tutti gli avvisi:
     - Criteri applicabili per l'avviso
     - Data/ora dell'avviso
     - Livello di gravità dell'avviso
 
-### <a name="create-a-power-automate-flow"></a>Creare un flusso power automate
+### <a name="create-a-power-automate-flow"></a>Creare un Power Automate flusso
 
-Per creare un flusso di Power Automate da un  modello predefinito consigliato, userai l'opzione Gestisci flussi automatici di alimentazione del controllo **Automatizza** quando lavori direttamente in un avviso. Per creare un flusso di Power Automate con **Manage Power Automate flows,** è necessario essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
+Per creare un flusso di Power Automate da un modello predefinito consigliato, si userà l'opzione Gestisci flussi di Power Automate dal controllo **Automate** quando si lavora direttamente in un avviso.  Per creare un flusso Power Automate con Gestisci flussi Power Automate **,** è necessario essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
 
-Completare la procedura seguente per creare un flusso power automate da un modello predefinito:
+Completare la procedura seguente per creare un Power Automate flusso di lavoro da un modello predefinito:
 
-1. Nel Centro conformità Microsoft 365 passare a **Criteri** di conformità delle comunicazioni e selezionare il criterio  >   con l'avviso che si desidera esaminare.
+1. Nel Centro Microsoft 365 conformità passare a **Criteri** di conformità delle comunicazioni e selezionare il criterio con  >   l'avviso che si desidera rivedere.
 2. Dal criterio, selezionare la scheda **In** sospeso e selezionare un avviso in sospeso.
-3. Seleziona **Power Automate dal** menu dell'azione di avviso.
-4. Nella pagina **Power Automate** selezionare un  modello predefinito nella sezione Modelli di conformità per le comunicazioni che potrebbero piacerti nella pagina.
+3. Seleziona **Power Automate** dal menu dell'azione di avviso.
+4. Nella pagina **Power Automate,** selezionare un modello  predefinito nella sezione Modelli di conformità di comunicazione che potrebbero piacerti nella pagina.
 5. Il flusso elenca le connessioni incorporate necessarie per il flusso e viene visualizzato se gli stati della connessione sono disponibili. Se necessario, aggiornare tutte le connessioni che non vengono visualizzate come disponibili. Selezionare **Continua.**
-6. Per impostazione predefinita, i flussi consigliati sono preconfigurato con la conformità alle comunicazioni consigliata e i campi dati dei servizi di Microsoft 365 necessari per completare l'attività assegnata per il flusso. Se necessario, personalizzare i componenti del flusso utilizzando il **controllo Mostra** opzioni avanzate e configurando le proprietà disponibili per il componente di flusso.
+6. Per impostazione predefinita, i flussi consigliati sono preconfigurato con i campi di dati di servizio Microsoft 365 conformità alle comunicazioni consigliati necessari per completare l'attività assegnata per il flusso. Se necessario, personalizzare i componenti del flusso utilizzando il **controllo Mostra** opzioni avanzate e configurando le proprietà disponibili per il componente di flusso.
 7. Se necessario, aggiungere ulteriori passaggi al flusso selezionando il **pulsante Nuovo** passaggio. Nella maggior parte dei casi, questa modifica non deve essere necessaria per i modelli predefiniti consigliati.
 8. Selezionare **Salva bozza** per salvare il flusso per ulteriori configurazioni in un secondo momento oppure selezionare **Salva** per completare la configurazione per il flusso.
-9. Selezionare **Chiudi** per tornare alla pagina del flusso Power Automate. Il nuovo modello verrà elencato  come flusso nella scheda Flussi personali ed è automaticamente disponibile dal controllo Power Automate per l'utente che ha creato il flusso quando utilizza gli avvisi di conformità delle comunicazioni.
+9. Selezionare **Chiudi** per tornare alla pagina Power Automate flusso di lavoro. Il nuovo modello verrà elencato  come flusso nella scheda Flussi personali ed è automaticamente disponibile dal controllo Power Automate per l'utente che ha creato il flusso quando utilizza gli avvisi di conformità alle comunicazioni.
 
-### <a name="share-a-power-automate-flow"></a>Condividere un flusso power automate
+### <a name="share-a-power-automate-flow"></a>Condividere un Power Automate flusso
 
-Per impostazione predefinita, i flussi di Power Automate creati da un utente sono disponibili solo per tale utente. Per consentire ad altri utenti di conformità delle comunicazioni di accedere e usare un flusso, il flusso deve essere condiviso dall'autore del flusso. Per condividere un flusso, userai il controllo **Power Automate** quando lavori direttamente in un avviso.
+Per impostazione predefinita, Power Automate flussi creati da un utente sono disponibili solo per tale utente. Per consentire ad altri utenti di conformità delle comunicazioni di accedere e usare un flusso, il flusso deve essere condiviso dall'autore del flusso. Per condividere un flusso, userai il controllo Power Automate quando lavori direttamente in un avviso. 
 
-Per condividere un flusso power automate, è necessario essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
-Completare la procedura seguente per condividere un flusso power automate:
+Per condividere un flusso Power Automate, è necessario essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
+Completare la procedura seguente per condividere un Power Automate flusso:
 
-1. Nel Centro conformità Microsoft 365 passare a **Criteri** di conformità delle comunicazioni e selezionare il criterio  >   con l'avviso che si desidera esaminare.
+1. Nel Centro Microsoft 365 conformità passare a **Criteri** di conformità delle comunicazioni e selezionare il criterio con  >   l'avviso che si desidera rivedere.
 2. Dal criterio, selezionare la scheda **In** sospeso e selezionare un avviso in sospeso.
 3. Seleziona **Power Automate** dal menu dell'azione di avviso.
 4. Nella pagina **Power Automate flussi** di lavoro selezionare la scheda **Flussi del** team o Flussi **del** team.

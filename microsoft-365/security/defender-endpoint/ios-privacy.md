@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: a232bd8d600df37d5b9b01921859556476ced345
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694474"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822371"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Informazioni sulla privacy - Microsoft Defender for Endpoint su iOS
 
@@ -51,7 +51,7 @@ Ecco un elenco dei tipi di dati raccolti:
 
 ### <a name="web-page-or-network-information"></a>Pagina Web o Informazioni di rete 
 
-- Nome di dominio del sito Web solo quando viene rilevata una connessione o una pagina Web dannosa. 
+- Nome di dominio e indirizzo IP del sito Web solo quando viene rilevata una connessione o una pagina Web dannosa. 
 
 ### <a name="device-and-account-information"></a>Informazioni su dispositivi e account 
 

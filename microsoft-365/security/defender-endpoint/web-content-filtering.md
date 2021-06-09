@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302065"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822323"
 ---
 # <a name="web-content-filtering"></a>Filtro contenuti Web
 
@@ -57,15 +57,15 @@ L'esperienza di blocco per i browser supportati da terze parti è fornita da Pro
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prima di provare questa funzionalità, verificare di disporre dei requisiti seguenti:
+Prima di provare questa funzionalità, assicurarsi di soddisfare i requisiti seguenti:
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security componente aggiuntivo o la licenza autonoma di Microsoft Defender for Endpoint. 
 - Accesso a Microsoft Defender Security Center portale ( https://securitycenter.windows.com) .
-- Dispositivi che Windows 10'aggiornamento dell'anniversario (versione 1607) o successiva con l'aggiornamento MoCAMP più recente.
+- Dispositivi che Windows 10'aggiornamento dell'anniversario (versione 1607) o successiva con l'aggiornamento del motore antimalware più recente di Microsoft Defender.
 
-## <a name="data-handling"></a>Gestione dei dati
+## <a name="data-handling"></a>Gestione dati
 
-Seguiremo qualsiasi area geografica hai scelto di usare come parte delle impostazioni di gestione dei dati di [Microsoft Defender for Endpoint.](data-storage-privacy.md) I dati non lasceranno il data center in tale area. Inoltre, i dati non verranno condivisi con terze parti, inclusi i provider di dati.
+I dati vengono archiviati nell'area selezionata come parte delle impostazioni di gestione dei dati di [Microsoft Defender for Endpoint.](data-storage-privacy.md) I dati non lasceranno il data center in tale area. Inoltre, i dati non verranno condivisi con terze parti, inclusi i provider di dati.
 
 ## <a name="turn-on-web-content-filtering"></a>Attivare il filtro contenuto Web
 
@@ -91,14 +91,10 @@ Per aggiungere un nuovo criterio:
 
 5. Esaminare il riepilogo e salvare il criterio. L'aggiornamento dei criteri può richiedere fino a 2 ore per l'applicazione ai dispositivi selezionati.
 
-> [!TIP]
-> Puoi distribuire un criterio senza selezionare alcuna categoria in un gruppo di dispositivi. Questa azione creerà un criterio solo di controllo, per aiutarti a comprendere il comportamento dell'utente prima di creare un criterio di blocco.
-
->[!NOTE]
->Se stai rimuovendo un criterio o modificando i gruppi di dispositivi contemporaneamente, questo potrebbe causare un ritardo nella distribuzione dei criteri.
-
->[!IMPORTANT]
->Il blocco della categoria "Non classificato" può causare risultati imprevisti e indesiderati.  
+> [!NOTE]
+> - Puoi distribuire un criterio senza selezionare alcuna categoria in un gruppo di dispositivi. Questa azione creerà un criterio solo di controllo, per aiutarti a comprendere il comportamento dell'utente prima di creare un criterio di blocco.
+> - Se stai rimuovendo un criterio o modificando i gruppi di dispositivi contemporaneamente, questo potrebbe causare un ritardo nella distribuzione dei criteri.
+> - Il blocco della categoria "Non classificato" può causare risultati imprevisti e indesiderati.  
 
 ### <a name="allow-specific-websites"></a>Consentire siti Web specifici
 
@@ -120,7 +116,7 @@ Verrà aperto un pannello in cui è possibile selezionare la priorità e aggiung
 
 ## <a name="web-content-filtering-cards-and-details"></a>Schede e dettagli del filtro contenuto Web
 
-Selezionare **Report > protezione Web** per visualizzare schede con informazioni sul filtro contenuto Web e sulla protezione dalle minacce Web. Nelle schede seguenti vengono fornite informazioni di riepilogo sul filtro contenuto Web.
+Selezionare **Report**  >  **Protezione Web per** visualizzare le schede con informazioni sul filtro contenuto Web e sulla protezione dalle minacce Web. Nelle schede seguenti vengono fornite informazioni di riepilogo sul filtro contenuto Web.
 
 ### <a name="web-activity-by-category"></a>Attività Web per categoria
 
@@ -166,9 +162,4 @@ Usa il filtro dell'intervallo di tempo nella parte superiore sinistra della pagi
 
 - I report filtro contenuto Web sono attualmente limitati alla visualizzazione dei primi 5.000 record. Ad esempio, il report Domini mostrerà solo un massimo di 5000 domini principali per una determinata query di filtro, se applicabile. 
 
-## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica protezione Web](web-protection-overview.md)
-- [Protezione dalle minacce sul Web](web-threat-protection.md)
-- [Monitorare la sicurezza sul Web](web-protection-monitoring.md)
-- [Rispondere alle minacce sul Web](web-protection-response.md)

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8f23a0b269986f4caa199ad3744c563fcc6ff6b2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 876dddf7a68b9844dea6a30ff4ebbbe3c2b75b69
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769102"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844551"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Usare Microsoft Defender per le API degli endpoint
 
@@ -44,7 +44,7 @@ Se è necessario accedere a livello di codice a Microsoft Defender for Endpoint 
 
 Se non si è certi dell'accesso necessario, leggere la [pagina Introduzione.](apis-intro.md)
 
-Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti consentiranno di automatizzare i flussi di lavoro e innovare in base alle funzionalità di Microsoft Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti consentiranno di automatizzare i flussi di lavoro e innovare in base alle funzionalità di Microsoft Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In generale, dovrai eseguire la procedura seguente per usare le API:
 - Creare un'applicazione AAD
@@ -122,7 +122,7 @@ Questa pagina spiega come creare un'applicazione AAD, ottenere un token di acces
 
 ## <a name="get-an-access-token"></a>Ottenere un token di accesso
 
-Per altre informazioni sui token AAD, vedi Esercitazione [su Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Per altre informazioni sui token AAD, vedi Esercitazione [su Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-c"></a>Utilizzo di C #
 

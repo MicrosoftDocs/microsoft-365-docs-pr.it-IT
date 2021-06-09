@@ -1,7 +1,7 @@
 ---
 title: Utilizzare Microsoft Search per trovare argomenti in Microsoft Viva Topics
-ms.author: efrene
-author: efrene
+ms.author: chuckedmonson
+author: chucked
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Informazioni su come cercare argomenti in Microsoft Viva.
-ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795995"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844732"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utilizzare Microsoft Search per trovare argomenti in Microsoft Viva Topics
 
@@ -23,7 +23,7 @@ Anche se gli utenti di Viva Topics possono trovare argomenti attraverso le evide
 
 ## <a name="topic-answer"></a>Risposta argomento
 
-Quando si cerca un argomento specifico in Microsoft Search ,ad esempio "Saturno", se un argomento esiste e viene trovato, il risultato verrà visualizzato nel formato di suggerimento Risposte.
+Quando si cerca un argomento specifico in Microsoft Search ,ad esempio "Saturno", se un argomento esiste e viene trovato, il risultato verrà visualizzato nel formato di suggerimento per la risposta all'argomento.
 
 Verrà visualizzata la risposta all'argomento:
 - Nome dell'argomento
@@ -56,4 +56,4 @@ Per gli utenti che cercano informazioni sulla prenotazione di un viaggio di lavo
  
 ### <a name="search-results-priority"></a>Priorità dei risultati della ricerca 
 
-Nell'esperienza di ricerca dell'utente, quando un utente cerca un termine come "viaggio", un segnalibro verrà visualizzato prima di un argomento, se è disponibile un segnalibro.
+Nell'esperienza di ricerca dell'utente, quando un utente cerca un termine come "viaggio", viene visualizzato un segnalibro al posto di un argomento, se è disponibile un segnalibro.

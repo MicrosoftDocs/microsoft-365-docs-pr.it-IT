@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba48adcf93c5b768b2280729b33a1a7d361919cb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066194"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844071"
 ---
-# <a name="take-response-actions-on-a-file"></a>Eseguire azioni di risposta su un file
+# <a name="take-response-actions-on-a-file"></a>Intraprendere azioni di risposta su un file
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -60,16 +60,16 @@ Alcune azioni richiedono determinate autorizzazioni. Nella tabella seguente veng
 
 Per ulteriori informazioni sui ruoli, vedere [Create and manage roles for role-based access control](user-roles.md).
 
-## <a name="stop-and-quarantine-files-in-your-network"></a>Arrestare e mettere in quarantena i file nella rete
+## <a name="stop-and-quarantine-files-in-your-network"></a>Interrompere e mettere in quarantena i file nella rete
 
 È possibile contenere un attacco nell'organizzazione interrompendo il processo dannoso e la messa in quaranta del file in cui è stato osservato.
 
 > [!IMPORTANT]
 > È possibile eseguire questa azione solo se:
 >
-> - Il dispositivo su cui stai eseguendo l'azione esegue Windows 10 versione 1703 o successiva
+> - Il dispositivo su cui stai eseguendo l'azione Windows 10 versione 1703 o successiva
 > - Il file non appartiene a autori di terze parti attendibili o non è firmato da Microsoft
-> - Microsoft Defender Antivirus deve essere in esecuzione almeno in modalità passiva. Per ulteriori informazioni, vedere [Compatibilità con Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+> - Antivirus Microsoft Defender deve essere almeno in esecuzione in modalità passiva. Per ulteriori informazioni, vedere [Antivirus Microsoft Defender compatibilità.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 **L'azione Interrompi e metti** in quarantena i file include l'interruzione dei processi in esecuzione, la messa in quarantena dei file e l'eliminazione di dati permanenti come le chiavi del Registro di sistema.
 
@@ -116,7 +116,7 @@ Nella sequenza temporale del dispositivo viene aggiunto un nuovo evento per ogni
 
 Prima dell'implementazione dell'azione per i file ampiamente utilizzati in un'organizzazione, viene visualizzato un avviso. È necessario verificare che l'operazione sia progettata.
 
-## <a name="restore-file-from-quarantine"></a>Ripristinare il file dalla quarantena
+## <a name="restore-file-from-quarantine"></a>Ripristinare un file dalla quarantena
 
 È possibile eseguire il rollback e rimuovere un file dalla quarantena se si è stabilito che è pulito dopo un'indagine. Esegui il comando seguente in ogni dispositivo in cui il file è stato messo in quarantena.
 
@@ -142,7 +142,7 @@ Prima dell'implementazione dell'azione per i file ampiamente utilizzati in un'or
 
 ## <a name="download-or-collect-file"></a>Scaricare o raccogliere file
 
-Se **si seleziona Scarica file** dalle azioni di risposta, è possibile scaricare un archivio zip protetto da password locale contenente il file. Verrà visualizzato un riquadro a comparsa in cui è possibile registrare un motivo per il download del file e impostare una password.
+Se **si seleziona Scarica file** dalle azioni di risposta, è possibile scaricare un archivio locale protetto da password .zip contenente il file. Verrà visualizzato un riquadro a comparsa in cui è possibile registrare un motivo per il download del file e impostare una password.
 
 Per impostazione predefinita, non sarà possibile scaricare i file in quarantena.
 
@@ -160,11 +160,11 @@ Impedire l'ulteriore propagazione di un attacco nell'organizzazione vietando fil
 
 > [!IMPORTANT]
 >
-> - Questa funzionalità è disponibile se l'organizzazione usa Microsoft Defender Antivirus e la protezione consegnata dal cloud è abilitata. Per ulteriori informazioni, vedere [Manage cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Questa funzionalità è disponibile se l'organizzazione usa Antivirus Microsoft Defender e la protezione consegnata dal cloud è abilitata. Per ulteriori informazioni, vedere [Manage cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - La versione del client Antimalware deve essere 4.18.1901.x o successiva.
-> - Questa funzionalità è progettata per impedire il download di malware sospetti (o file potenzialmente dannosi) dal Web. Attualmente supporta file eseguibili portabili (PE), inclusi i file _EXE_ _e DLL._ La copertura verrà estesa nel tempo.
-> - Questa azione di risposta è disponibile per i dispositivi in Windows 10 versione 1703 o successiva.
+> - Questa funzionalità è progettata per impedire il download di malware sospetti (o file potenzialmente dannosi) dal Web. Attualmente supporta file eseguibili portabili (PE), _inclusi_.exee _.dll_ file. La copertura verrà estesa nel tempo.
+> - Questa azione di risposta è disponibile per i dispositivi Windows 10 versione 1703 o successiva.
 > - La funzione consenti o blocca non può essere eseguita sui file se la classificazione del file esiste nella cache del dispositivo prima dell'azione consenti o blocca.
 
 > [!NOTE]
@@ -174,7 +174,7 @@ Impedire l'ulteriore propagazione di un attacco nell'organizzazione vietando fil
 
 ### <a name="enable-the-block-file-feature"></a>Abilitare la funzionalità blocca file
 
-Per iniziare a bloccare i file, devi prima attivare [la **funzionalità Blocca**](advanced-features.md) o consenti in Impostazioni.
+Per iniziare a bloccare i file, devi prima attivare [la **funzionalità**](advanced-features.md) Blocca o consenti in Impostazioni.
 ### <a name="allow-or-block-file"></a>Consenti o blocca file
 
 Quando aggiungi un hash indicatore per un file, puoi scegliere di generare un avviso e bloccare il file ogni volta che un dispositivo dell'organizzazione tenta di eseguirlo.
@@ -185,15 +185,15 @@ Vedi [gestire gli indicatori](manage-indicators.md) per ulteriori dettagli sul b
 
 Per interrompere il blocco di un file, rimuovi l'indicatore. Puoi farlo tramite **l'azione Modifica** indicatore nella pagina del profilo del file. Questa azione sarà visibile nella stessa posizione **dell'azione** Aggiungi indicatore, prima di aggiungere l'indicatore.
 
-È inoltre possibile modificare gli indicatori dalla **pagina Impostazioni,** in **Indicatori**  >  **delle regole.** Gli indicatori sono elencati in quest'area in base all'hash del file.
+È inoltre possibile modificare gli indicatori dalla pagina **Impostazioni,** in **Indicatori**  >  **regole**. Gli indicatori sono elencati in quest'area in base all'hash del file.
 
 ## <a name="consult-a-threat-expert"></a>Consultare un esperto di minacce
 
-Consultare un esperto di minacce Microsoft per ulteriori informazioni su un dispositivo potenzialmente compromesso o su dispositivi già compromessi. Microsoft Threat Experts è impegnato direttamente dall'interno di Microsoft Defender Security Center per una risposta accurata e immediata. Gli esperti forniscono informazioni dettagliate su un dispositivo potenzialmente compromesso e consentono di comprendere minacce complesse e notifiche di attacchi mirati. Possono inoltre fornire informazioni sugli avvisi o su un contesto di intelligence per le minacce visualizzato nel dashboard del portale.
+Consultare un esperto di minacce Microsoft per ulteriori informazioni su un dispositivo potenzialmente compromesso o su dispositivi già compromessi. Microsoft Threat Experts sono impegnati direttamente dall'interno del Microsoft Defender Security Center per una risposta accurata e immediata. Gli esperti forniscono informazioni dettagliate su un dispositivo potenzialmente compromesso e consentono di comprendere minacce complesse e notifiche di attacchi mirati. Possono inoltre fornire informazioni sugli avvisi o su un contesto di intelligence per le minacce visualizzato nel dashboard del portale.
 
-Per [informazioni dettagliate, vedere Consultare un esperto](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) delle minacce Microsoft.
+Per [informazioni dettagliate, vedere Consultare un esperto](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) delle minacce Microsoft.
 
-## <a name="check-activity-details-in-action-center"></a>Controllare i dettagli dell'attività nel centro notifiche
+## <a name="check-activity-details-in-action-center"></a>Controllare i dettagli delle attività nel Centro operativo
 
 Il **centro notifiche** fornisce informazioni sulle azioni eseguite su un dispositivo o un file. È possibile visualizzare i dettagli seguenti:
 
@@ -211,7 +211,7 @@ Vengono visualizzati anche tutti gli altri dettagli correlati, ad esempio data/o
 Le indagini sulla sicurezza informatica vengono in genere attivate da un avviso. Gli avvisi sono correlati a uno o più file osservati spesso nuovi o sconosciuti. La selezione di un file consente di accedere alla visualizzazione dei file in cui è possibile visualizzare i metadati del file. Per arricchire i dati relativi al file, è possibile inviare il file per un'analisi approfondita.
 
 La funzionalità di analisi approfondita esegue un file in un ambiente cloud sicuro e completamente instrumentato. I risultati dell'analisi approfondita mostrano le attività, i comportamenti osservati e gli elementi associati del file, ad esempio i file eliminati, le modifiche al Registro di sistema e la comunicazione con gli IP.
-L'analisi approfondita attualmente supporta un'analisi approfondita dei file eseguibili portabili (PE, Portable Executable) (inclusi i file con estensione _exe_ _e dll)._
+L'analisi approfondita attualmente supporta un'analisi approfondita dei file eseguibili portabili (PE, Portable Executable) (inclusi.exe _e_ _.dll_ file).
 
 L'analisi approfondita di un file richiede alcuni minuti. Al termine dell'analisi dei file, la scheda Analisi approfondita verrà aggiornata per visualizzare un riepilogo e la data e l'ora degli ultimi risultati disponibili.
 
@@ -224,12 +224,12 @@ Utilizzare la funzionalità di analisi approfondita per analizzare i dettagli di
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
 
-**L'invio** per l'analisi approfondita è abilitato quando il file è disponibile nella raccolta di esempi back-end defender per endpoint o se è stato osservato in un dispositivo Windows 10 che supporta l'invio a un'analisi approfondita.
+**L'invio** per l'analisi approfondita è abilitato quando il file è disponibile nella raccolta di esempi back-end Defender for Endpoint o se è stato osservato in un dispositivo Windows 10 che supporta l'invio all'analisi approfondita.
 
 > [!NOTE]
-> Solo i file di Windows 10 possono essere raccolti automaticamente.
+> Solo i file Windows 10 possono essere raccolti automaticamente.
 
-Puoi anche inviare un esempio tramite il portale del Centro sicurezza [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) se il file  non è stato osservato in un dispositivo Windows 10 e attendere che il pulsante Invia per l'analisi approfondita diventi disponibile.
+Puoi anche inviare un esempio tramite il portale del Centro sicurezza [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) se il file  non è stato osservato in un dispositivo Windows 10 e attendere che il pulsante Invia per analisi approfondita diventi disponibile.
 
 > [!NOTE]
 > A causa dei flussi di elaborazione back-end nel portale del Centro sicurezza Microsoft, potrebbero essere presenti fino a 10 minuti di latenza tra l'invio di file e la disponibilità della funzionalità di analisi approfondita in Defender for Endpoint.
@@ -249,12 +249,12 @@ Quando l'esempio viene raccolto, Defender for Endpoint esegue il file in un ambi
    ![È possibile inviare solo file PE nella sezione dei dettagli del file](images/submit-file.png)
 
    > [!NOTE]
-   > Sono supportati solo i file PE, inclusi i file _exe_ _e dll._
+   > Sono supportati solo i file PE, _inclusi.exe_ e _.dll_ file.
 
 Viene visualizzata una barra di stato e vengono fornite informazioni sulle diverse fasi dell'analisi. È quindi possibile visualizzare il report al termine dell'analisi.
 
 > [!NOTE]
-> A seconda della disponibilità del dispositivo, il tempo di raccolta dei campioni può variare. È presente un timeout di 3 ore per la raccolta di campioni. La raccolta avrà esito negativo e l'operazione verrà interrotta se in quel momento non è disponibile alcuna segnalazione di dispositivi Windows 10 online. È possibile inviare di nuovo i file per l'analisi approfondita per ottenere dati nuovi nel file.
+> A seconda della disponibilità del dispositivo, il tempo di raccolta dei campioni può variare. È presente un timeout di 3 ore per la raccolta di campioni. La raccolta avrà esito negativo e l'operazione verrà interrotta se non è disponibile Windows 10 dei dispositivi online in quel momento. È possibile inviare di nuovo i file per l'analisi approfondita per ottenere dati nuovi nel file.
 
 ### <a name="view-deep-analysis-reports"></a>Visualizzare report di analisi approfondita
 
@@ -276,7 +276,7 @@ I dettagli forniti consentono di analizzare se sono presenti indicazioni su un p
 
 Se si verifica un problema durante il tentativo di inviare un file, provare a eseguire una delle operazioni seguenti per la risoluzione dei problemi.
 
-1. Verificare che il file in questione sia un file PE. I file PE hanno in _genere estensioni exe_ o _dll_ (applicazioni o programmi eseguibili).
+1. Verificare che il file in questione sia un file PE. I file PE in _genere.exe_ _o.dll_ (applicazioni o programmi eseguibili).
 2. Verificare che il servizio abbia accesso al file, che esista ancora e che non sia stato danneggiato o modificato.
 3. Attendere un breve periodo di tempo e provare a inviare di nuovo il file. La coda potrebbe essere piena o si è verificato un errore di connessione o di comunicazione temporaneo.
 4. Se il criterio di raccolta di esempio non è configurato, il comportamento predefinito è consentire la raccolta di esempi. Se è configurato, verificare che l'impostazione dei criteri consenta la raccolta di campioni prima di inviare di nuovo il file. Quando è configurata la raccolta di esempi, controllare il valore del Registro di sistema seguente:
@@ -295,5 +295,5 @@ Se si verifica un problema durante il tentativo di inviare un file, provare a es
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Eseguire azioni di risposta in un dispositivo](respond-machine-alerts.md)
-- [Analizzare i file](investigate-files.md)
+- [Intraprendere azioni di risposta su un dispositivo](respond-machine-alerts.md)
+- [Esaminare i file](investigate-files.md)

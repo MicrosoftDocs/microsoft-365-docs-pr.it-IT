@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0276f0464f898d3675e4cc1d6b69185e7e390a87
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 7956c1454cd7bd962eda984cc9d93be9824d7458
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572670"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822106"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender per endpoint per clienti del governo degli Stati Uniti
 
@@ -104,7 +104,7 @@ Le versioni del sistema operativo seguenti sono supportate quando si usa [Azure 
 
 Versione del sistema operativo | GCC | GCC High | DoD
 :---|:---|:---|:---
-Windows Server 2019 | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
+Windows Server 2019 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows Server 2016 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
@@ -164,7 +164,7 @@ Nome della funzionalità | GCC | GCC High | DoD
 Gestione e API: API di streaming | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Filtro contenuti Web | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
 Integrazioni: Azure Sentinel | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) Avvisi <br /> ![No](images/svg/check-no.svg) Eventi imprevisti & dati non elaborati: in fase di sviluppo | ![Sì](images/svg/check-yes.svg) Avvisi <br /> ![No](images/svg/check-no.svg) Eventi imprevisti & dati non elaborati: in fase di sviluppo
-Integrazioni: Microsoft Cloud App Security | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
+Integrazioni: Microsoft Cloud App Security | ![Sì](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
 Integrazioni: Microsoft Compliance Manager | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
 Integrazioni: Microsoft Defender for Identity | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
 Integrazioni: MICROSOFT Endpoint DLP | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo

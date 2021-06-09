@@ -1,7 +1,7 @@
 ---
 title: Tecnologie Microsoft Managed Desktop
 description: Questo articolo elenca le tecnologie e le app usate in Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e653ff84602a5e5546ef9a4c0aca2559b77e43c1
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 7c1f768e69fa65c76529e641f095e13fc7ad67c8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683512"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841341"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologie Microsoft Managed Desktop
 
@@ -52,8 +52,8 @@ Funzionalità incluse e gestite nell'ambito di Microsoft Managed Desktop:
  |
  --- | ---
 BitLocker Crittografia unità | BitLocker Crittografia unità viene utilizzata per crittografare tutte le unità di sistema. Per ulteriori informazioni, vedere [BitLocker Drive Encryption](/windows/security/information-protection/bitlocker/bitlocker-overview).
-Windows Defender System Guard | Protegge l'integrità del sistema all'avvio e verifica che l'integrità del sistema sia stata effettivamente mantenuta. Per ulteriori informazioni, vedere [Windows Defender System Guard.]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
-Windows Defender Credential Guard | Windows Defender Credential Guard la sicurezza basata su virtualizzazione per isolare i segreti in modo che solo il software di sistema con privilegi possa accedervi. Per ulteriori informazioni, vedere [Windows Defender System Guard.]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+Windows Defender System Guard | Protegge l'integrità del sistema all'avvio e verifica che l'integrità del sistema sia stata effettivamente mantenuta. Per ulteriori informazioni, vedere [Windows Defender System Guard.](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+Windows Defender Credential Guard | Windows Defender Credential Guard la sicurezza basata su virtualizzazione per isolare i segreti in modo che solo il software di sistema con privilegi possa accedervi. Per ulteriori informazioni, vedere [Windows Defender System Guard.](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 Microsoft Defender per endpoint - Rilevamento e risposta degli endpoint | Microsoft Managed Desktop Le operazioni di sicurezza rispondono agli avvisi ed esigino per correggere le minacce usando il rilevamento e la risposta degli endpoint. Per altre informazioni, vedi [Microsoft Defender for Endpoint - Endpoint Detection and Response](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response).
 Microsoft Defender for Endpoint - Esperti di minacce | Microsoft Managed Desktop si integra con informazioni e dati degli esperti di minacce tramite notifiche di attacco mirate. Sarà necessario fornire il consenso aggiuntivo prima che questo servizio sia abilitato. Per altre informazioni, vedi [Microsoft Defender for Endpoint - Threat Experts.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)
 Microsoft Defender for Endpoint - Gestione delle minacce e delle vulnerabilità | Obbligatorio per l'utilizzo futuro nel piano Microsoft Managed Desktop servizio. Per ulteriori informazioni, vedere [Microsoft Defender for Endpoint - Threat and Vulnerability Management.](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
@@ -61,7 +61,7 @@ Microsoft Defender per endpoint - Riduzione della superficie di attacco | La rid
 Microsoft Defender per endpoint - Protezione da exploit | Protegge da malware che usa exploit per infettare i dispositivi e diffondersi applicando automaticamente tecniche di mitigazione degli exploit sia ai processi del sistema operativo che alle app. Per altre informazioni, vedi [Microsoft Defender for Endpoint - Exploit Protection.](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)
 Microsoft Defender per endpoint - Protezione di rete | Protezione di rete espande l'ambito di Microsoft Defender SmartScreen per bloccare tutto il traffico HTTP e HTTPS in uscita che tenta di connettersi a origini con reputazione scarsa. Per altre informazioni, vedi [Microsoft Defender for Endpoint - Network Protection.](/windows/security/threat-protection/microsoft-defender-atp/network-protection)
 Microsoft Defender Tamper Protection | Windows Protezione da manomissione viene utilizzata per impedire la modifica delle impostazioni di protezione, ad esempio la protezione antivirus. Per altre informazioni, vedi [Microsoft Defender Tamper Protection.](/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)
-Antivirus Microsoft Defender Protezione antivirus basata sul comportamento, euristica e in tempo reale | Sempre attiva la ricerca di minacce di file ed elabora che potrebbero non essere rilevate come malware. Per ulteriori informazioni, vedere Antivirus Microsoft Defender antivirus basata sul [comportamento, euristica e in]( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)tempo reale.
+Antivirus Microsoft Defender Protezione antivirus basata sul comportamento, euristica e in tempo reale | Sempre attiva la ricerca di minacce di file ed elabora che potrebbero non essere rilevate come malware. Per ulteriori informazioni, vedere Antivirus Microsoft Defender antivirus basata sul [comportamento, euristica e in](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)tempo reale.
 Antivirus Microsoft Defender Protezione con distribuzione cloud | Fornisce una protezione automatica e quasi istantanea dinamica dalle minacce nuove ed emergenti. Per ulteriori informazioni, vedere [Antivirus Microsoft Defender protezione con distribuzione cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 Microsoft Defender "Blocca al primo sguardo" | Fornisce il rilevamento e il blocco di nuovo malware Windows rileva un file sospetto o sconosciuto. Per altre informazioni, vedi [Blocco di Microsoft Defender al primo sguardo.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 Microsoft Defender AV Applicazioni potenzialmente indesiderate | Le applicazioni potenzialmente indesiderate vengono usate per bloccare le app che possono causare l'esecuzione lenta del computer, visualizzare annunci imprevisti o, nel peggiore dei casi, installare altro software che potrebbe essere imprevisto o indesiderato. Per ulteriori informazioni, vedere [Microsoft Defender AV Potentially Unwanted Applications.](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)

@@ -19,16 +19,16 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: e51cc1d613e6f9e7ab96653692362ed7fe239e3e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: cc806678bbb5ac19f7c4e035efb52b6ba7d1edb1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274845"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844911"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitare il centro notifiche per visualizzare le azioni di correzione
 
-Durante e dopo un'indagine automatizzata, vengono identificate le azioni di correzione per i rilevamenti delle minacce. A seconda della minaccia specifica e della configurazione di [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) per l'organizzazione, alcune azioni di correzione vengono eseguite automaticamente e altre richiedono l'approvazione. Se si fa parte del team delle operazioni di sicurezza dell'organizzazione, è possibile visualizzare le azioni di correzione [in](manage-auto-investigation.md#remediation-actions) sospeso e completate nel **centro notifiche.** 
+Durante e dopo un'indagine automatizzata, vengono identificate le azioni di correzione per i rilevamenti delle minacce. A seconda della minaccia specifica e della configurazione di [Microsoft Defender for Endpoint](/windows/security/threat-protection) per l'organizzazione, alcune azioni di correzione vengono eseguite automaticamente e altre richiedono l'approvazione. Se si fa parte del team delle operazioni di sicurezza dell'organizzazione, è possibile visualizzare le azioni di correzione [in](manage-auto-investigation.md#remediation-actions) sospeso e completate nel **centro notifiche.** 
 
 
 **Si applica a:**
@@ -40,30 +40,30 @@ Durante e dopo un'indagine automatizzata, vengono identificate le azioni di corr
 
 Siamo lieti di annunciare un nuovo centro notifiche unificato ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) )!
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="Centro notifiche nel centro sicurezza Microsoft 365":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="Centro notifiche nel centro Microsoft 365 sicurezza":::
 
 Nella tabella seguente viene confrontato il nuovo centro notifiche unificato con il centro notifiche precedente.
 
 |Il nuovo centro notifiche unificato  |Centro notifiche precedente  |
 |---------|---------|
-|Elenca le azioni in sospeso e completate per i dispositivi e la posta elettronica in un'unica posizione <br/>([Microsoft Defender per Endpoint](microsoft-defender-endpoint.md) più Microsoft Defender per Office [365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp))|Elenca le azioni in sospeso e completate per i dispositivi <br/> ([Solo Microsoft Defender per Endpoint)](microsoft-defender-endpoint.md)   |
+|Elenca le azioni in sospeso e completate per i dispositivi e la posta elettronica in un'unica posizione <br/>([Microsoft Defender per Endpoint](microsoft-defender-endpoint.md) più Microsoft Defender per [Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Elenca le azioni in sospeso e completate per i dispositivi <br/> ([Solo Microsoft Defender per Endpoint)](microsoft-defender-endpoint.md)   |
 |Si trova in:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Si trova in:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| Nel Centro sicurezza Microsoft 365 scegliere **Centro notifiche.** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Passaggio al Centro notifiche nel Centro sicurezza Microsoft 365"::: | In Microsoft Defender Security Center scegli **Centro notifiche** indagini  >  **automatizzate.** <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Passaggio al centro notifiche dal Microsoft Defender Security Center":::  |
+| Nel centro Microsoft 365 sicurezza scegliere **Centro notifiche.** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Passaggio al Centro notifiche nel centro sicurezza Microsoft 365 sicurezza"::: | Nel riquadro Microsoft Defender Security Center, scegliere **Analisi automatizzate**  >  **Centro notifiche.** <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Spostamento nel centro notifiche dalla Microsoft Defender Security Center":::  |
 
 Il centro notifiche unificato riunisce le azioni di correzione in Defender for Endpoint e Defender per Office 365. Definisce un linguaggio comune per tutte le azioni di correzione e offre un'esperienza di indagine unificata. 
 
 È possibile utilizzare il centro notifiche unificato se si dispone delle autorizzazioni appropriate e di una o più delle sottoscrizioni seguenti:
-- [Defender per endpoint](microsoft-defender-endpoint.md)
-- [Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
+- [Defender per Endpoint](microsoft-defender-endpoint.md)
+- [Defender per Office 365](/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection) 
 
 > [!TIP]
-> Per ulteriori informazioni, vedere [Requisiti](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
+> Per ulteriori informazioni, vedere [Requisiti](/microsoft-365/security/mtp/prerequisites).
 
 ## <a name="using-the-action-center"></a>Utilizzo del centro notifiche
 
-Per accedere al centro notifiche unificato nel Centro sicurezza Microsoft 365 migliorato:
-1. Accedere al Centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedere.
+Per accedere al centro notifiche unificato nel centro sicurezza Microsoft 365 sicurezza:
+1. Accedere al centro Microsoft 365 sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) ) ed eseguire l'accesso.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.** 
 
 Quando si visita il centro notifiche, vengono visualizzate due schede: **Azioni in sospeso** e **Cronologia.** Nella tabella seguente sono riepilogati gli elementi che verranno visualizzati in ogni scheda:
@@ -71,7 +71,7 @@ Quando si visita il centro notifiche, vengono visualizzate due schede: **Azioni 
 |Scheda  |Descrizione  |
 |---------|---------|
 |**In sospeso**     | Visualizza un elenco di azioni che richiedono attenzione. È possibile approvare o rifiutare le azioni una alla volta oppure selezionare più azioni se hanno lo stesso tipo di azione ( ad esempio **File quarantena**). <br/>**SUGGERIMENTO:** verificare e approvare [(o rifiutare)](manage-auto-investigation.md) le azioni in sospeso il prima possibile in modo che le indagini automatizzate possano essere completate in modo rapido. |
-|**Cronologia**     | Funge da log di controllo per le azioni eseguite, ad esempio: <br/>- Azioni correttive intraprese a seguito di indagini automatizzate <br>- Azioni di correzione approvate dal team delle operazioni di sicurezza  <br/>- Comandi eseguiti e azioni di correzione applicate durante le sessioni di Live Response  <br/>- Azioni di correzione eseguite dalle funzionalità di protezione dalle minacce in Microsoft Defender Antivirus  <p>Consente di annullare determinate azioni (vedere [Annullare le azioni completate).](manage-auto-investigation.md#undo-completed-actions)       |
+|**Cronologia**     | Funge da log di controllo per le azioni eseguite, ad esempio: <br/>- Azioni correttive intraprese a seguito di indagini automatizzate <br>- Azioni di correzione approvate dal team delle operazioni di sicurezza  <br/>- Comandi eseguiti e azioni di correzione applicate durante le sessioni di Live Response  <br/>- Azioni di correzione eseguite dalle funzionalità di protezione dalle minacce in Antivirus Microsoft Defender  <p>Consente di annullare determinate azioni (vedere [Annullare le azioni completate).](manage-auto-investigation.md#undo-completed-actions)       |
 
 È possibile personalizzare, ordinare, filtrare ed esportare i dati nel centro notifiche.
 

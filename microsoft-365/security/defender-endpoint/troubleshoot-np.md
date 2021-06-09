@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f77ce94fda63a9e7e8a9484a67a22eeec136d619
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 481a8f15d6a41bda8dc866ce40d98c4f3717223d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935882"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844059"
 ---
 # <a name="troubleshoot-network-protection"></a>Risolvere i problemi di protezione di rete
 
@@ -51,13 +51,13 @@ Per risolvere questi problemi, è necessario eseguire quattro passaggi:
 La protezione di rete funzionerà solo nei dispositivi con le condizioni seguenti:
 
 >[!div class="checklist"]
-> - Gli endpoint eseguono Windows 10 Pro o Enterprise Edition, versione 1709 o successiva.
-> - Gli endpoint usano Microsoft Defender Antivirus come unica app di protezione antivirus. [Vedere cosa succede quando si utilizza una soluzione antivirus non Microsoft.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
-> - [La protezione in tempo reale](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) è abilitata.
-> - [La protezione consegnata dal cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) è abilitata.
+> - Gli endpoint eseguono Windows 10 Pro o Enterprise edition, versione 1709 o successiva.
+> - Gli endpoint usano il Antivirus Microsoft Defender come unica app di protezione antivirus. [Vedere cosa succede quando si utilizza una soluzione antivirus non Microsoft.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+> - [La protezione in tempo reale](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) è abilitata.
+> - [La protezione consegnata dal cloud](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) è abilitata.
 > - La modalità di controllo non è abilitata. Utilizzare [Criteri di gruppo](enable-network-protection.md#group-policy) per impostare la regola su **Disabilitato** (valore: **0**).
 
-## <a name="use-audit-mode"></a>Usare modalità di controllo
+## <a name="use-audit-mode"></a>Usare la modalità di controllo
 
 È possibile abilitare la protezione di rete in modalità di controllo e quindi visitare un sito Web creato per la dimostrazione della funzionalità. Tutte le connessioni al sito Web saranno consentite dalla protezione di rete, ma verrà registrato un evento per indicare qualsiasi connessione che sarebbe stata bloccata se la protezione di rete fosse stata abilitata.
 

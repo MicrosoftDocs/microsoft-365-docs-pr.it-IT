@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come consentire agli utenti di reimpostare le proprie password in Microsoft 365 Business Premium.
-ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Scopri come consentire agli utenti di reimpostare le proprie password in Microsoft 365 Business Premium.
+ms.openlocfilehash: b3cdd388c27b0f75bddb2544e36bd3ade210955b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903707"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841319"
 ---
 # <a name="set-up-self-service-password-reset"></a>Configurare la reimpostazione self-service della password
 
@@ -36,13 +36,17 @@ Per consentire agli utenti di reimpostare le proprie password senza doverti cont
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento sinistro, selezionare **Impostazioni** e quindi Sicurezza **& privacy**.
+1. Nell'Microsoft 365 di amministrazione, nel riquadro di spostamento sinistro, selezionare Impostazioni **e** quindi Sicurezza **& privacy**.
 1. In **Consenti agli utenti di reimpostare le proprie password** selezionare Interfaccia di amministrazione di Azure **AD.**
 1. Nel riquadro di spostamento sinistro selezionare **Utenti** e quindi nella pagina **Utenti - tutti** gli utenti selezionare **Reimpostazione password.**
 1. Selezionare **Tutto** per abilitare la reimpostazione della password in modalità self-service e quindi selezionare **Salva.**
 
 La volta successiva che un utente accede al proprio account, viene richiesto l'ID utente e la password. Seleziona **Avanti** e quindi scegli se eseguire l'autenticazione con il telefono, la posta elettronica o entrambi. Immettono il codice che ricevono, **selezionano Verifica** e quindi **selezionaNo Fine.** Al termine, possono reimpostare la propria password.
 
-## <a name="related-content"></a>Contenuto correlato 
+## <a name="related-content"></a>Contenuto correlato
 
-[Impostare i criteri di](https://docs.microsoft.com/microsoft-365/admin/manage/set-password-expiration-policy) scadenza delle password per [l'organizzazione](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire) (articolo) Impostare la password di un singolo utente in modo che non scada mai (articolo) [Disattivare](https://docs.microsoft.com/microsoft-365/admin/add-users/strong-password) i requisiti di password complessa per gli utenti (articolo)
+[Impostare i criteri di scadenza delle password per l'organizzazione](/microsoft-365/admin/manage/set-password-expiration-policy) (articolo)
+
+[Impostare la password di un singolo utente in modo che non scada mai](/microsoft-365/admin/add-users/set-password-to-never-expire) (articolo)
+
+[Disattivare i requisiti di password complessa per gli utenti](/microsoft-365/admin/add-users/strong-password) (articolo)

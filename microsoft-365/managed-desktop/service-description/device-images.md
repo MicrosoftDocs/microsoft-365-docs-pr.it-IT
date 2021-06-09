@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 00943eb85abbfd2d237ae5544eb69d3ec4d9f875
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245505"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841283"
 ---
 # <a name="device-images"></a>Immagini dispositivo
 
@@ -79,13 +79,13 @@ I PC commerciali HP forniti con l'immagine HP Corporate Ready includono un file 
 
 Questi passaggi rimuoveranno tutti i dati nel dispositivo, quindi prima di iniziare dovresti eseguire il backup di tutti i dati che vuoi conservare.
 
-1. [Crea un'unità USB di avvio](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) con WinPE.
+1. [Crea un'unità USB di avvio](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) con WinPE.
 2. Copiare questi file da C: \\ SOURCES nell'unità USB:
     - Il file WIM di ripristino in fabbrica (ad esempio, HP \_ EliteBook \_ 840 \_ G7 \_ Notebook PC \_ \_ CR \_ 2004.wim)
     - DEPLOY. CMD
     - ReCreatePartitions.txt
 3. [Avviare il dispositivo in WinPE](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) Unità USB.
-4. In un prompt dei comandi eseguire [Diskpart.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/diskpart#additional-references).
+4. In un prompt dei comandi eseguire [Diskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references).
 5. In Diskpart, eseguire e quindi prendere nota del numero del disco di `list disk` archiviazione primario (in genere, Disco 0).
 6. Uscire da Diskpart digitando `exit` .
 7. Al prompt dei comandi eseguire , dove sys_disk è il numero di disco del disco di archiviazione primario appena determinato e recovery_wim è il nome del file `deploy.cmd <sys_disk> <recovery_wim>` .   File WIM copiato in precedenza.

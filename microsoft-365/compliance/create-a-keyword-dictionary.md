@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sulla procedura di base per la creazione di un dizionario di parole chiave nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: 24f6bb636c702438be8ca9520c6523031f297410
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1e1aa45c3bf4d31e4c969b0bc0949109fa716467
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683764"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841163"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
@@ -31,7 +31,7 @@ La prevenzione della perdita dei dati consente di identificare, monitorare e pro
 
 ## <a name="keyword-dictionary-limits"></a>Limiti dizionario di parole chiave
 
-Esiste un limite di 50 tipi di informazioni sensibili basati su dizionario di parole chiave che possono essere creati per tenant. Per informazioni sul numero di dizionari di parole chiave disponibili nel tenant, utilizzare le procedure descritte in [Connettersi a PowerShell nel Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) per connettersi al tenant ed eseguire questo script di PowerShell.
+Esiste un limite di 50 tipi di informazioni sensibili basati su dizionario di parole chiave che possono essere creati per tenant. Per informazioni sul numero di dizionari di parole chiave disponibili nel tenant, utilizzare le procedure descritte in [Connettersi a PowerShell nel Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell) per connettersi al tenant ed eseguire questo script di PowerShell.
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"

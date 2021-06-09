@@ -10,51 +10,51 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 033826a7f82278f6e36b422284a1076cba57d584
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921979"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822251"
 ---
-# <a name="new-microsoft-edge-app"></a>Nuova app Microsoft Edge
+# <a name="new-microsoft-edge-app"></a>Nuova Microsoft Edge app
 
 Il nuovo [browser Microsoft Edge](https://www.microsoft.com/edge) offre prestazioni di livello mondiale con maggiore privacy, maggiore produttività e più valore durante l'esplorazione. Microsoft Managed Desktop offre un'anteprima pubblica della distribuzione del nuovo browser Edge nell'ambiente.
 
 ## <a name="initial-deployment"></a>Distribuzione iniziale
 
-Per eseguire la migrazione dei dispositivi Microsoft Managed Desktop al nuovo browser Microsoft Edge, è possibile stentarne un ticket di supporto IT tramite Microsoft Managed Desktop Portal. Il canale Edge Stable verrà distribuito al gruppo di test quando si esegue il file del ticket e quindi lo si distribuirà in ogni gruppo di distribuzione successivo ogni 24 ore. Per sospendere la distribuzione, file un altro ticket che richiede operazioni di conservazione.
+Per eseguire la migrazione Microsoft Managed Desktop dispositivi nel nuovo browser Microsoft Edge, è possibile stentarne un ticket di supporto IT tramite Microsoft Managed Desktop Portal. Il canale Edge Stable verrà distribuito al gruppo di test quando si esegue il file del ticket e quindi lo si distribuirà in ogni gruppo di distribuzione successivo ogni 24 ore. Per sospendere la distribuzione, file un altro ticket che richiede operazioni di conservazione.
 
-Il [Canale beta è](/deployedge/microsoft-edge-channels#beta-channel) disponibile anche su richiesta di convalida rappresentativa all'interno dell'organizzazione. Microsoft Managed Desktop distribuirà l'applicazione in base alle esigenze ai gruppi Test e First in modo che tutti gli utenti disertino il Canale Beta oltre al Canale Stable. Per tutti gli altri utenti che necessitano dell'accesso al Canale beta, aggiungerli al gruppo **Modern Workplace - Edge Beta Users** e installarlo dal portale aziendale
+Il [Canale beta è](/deployedge/microsoft-edge-channels#beta-channel) disponibile anche su richiesta di convalida rappresentativa all'interno dell'organizzazione. Microsoft Managed Desktop distribuirà l'applicazione in base alle esigenze ai gruppi Test e First in modo che tutti gli utenti hanno il Canale Beta oltre al Canale Stable. Per tutti gli altri utenti che necessitano dell'accesso al canale Beta, aggiungerli al gruppo **Modern Workplace - Edge Beta Users** e installarlo dal Portale aziendale
 
 ## <a name="updates-to-microsoft-edge"></a>Aggiornamenti a Microsoft Edge
 
-Microsoft Managed Desktop distribuisce il [canale Stable](/deployedge/microsoft-edge-channels#stable-channel) di Microsoft Edge, che viene aggiornato automaticamente ogni sei settimane. Gli aggiornamenti nel canale Stable vengono evasi [progressivamente](/deployedge/microsoft-edge-update-progressive-rollout) dal gruppo di prodotti Microsoft Edge per garantire la migliore esperienza per i clienti. 
+Microsoft Managed Desktop distribuisce il [canale Stable](/deployedge/microsoft-edge-channels#stable-channel) di Microsoft Edge, che viene aggiornato automaticamente circa ogni sei settimane. Gli aggiornamenti nel canale Stable [](/deployedge/microsoft-edge-update-progressive-rollout) vengono evasi progressivamente dal Microsoft Edge per garantire ai clienti la migliore esperienza possibile. 
 
 Il [canale Beta viene](/deployedge/microsoft-edge-channels#beta-channel) distribuito ai dispositivi nei gruppi Test e First per la convalida rappresentativa all'interno dell'organizzazione. Questo canale è completamente supportato e viene aggiornato automaticamente con nuove funzionalità circa ogni sei settimane.
 
-Per assicurarsi che Microsoft Edge venga aggiornato correttamente, non modificare i criteri di aggiornamento [di](/deployedge/microsoft-edge-update-policies)Microsoft Edge.
+Per assicurarsi che Microsoft Edge aggiornamenti corretti, non modificare i criteri di Microsoft Edge [di aggiornamento.](/deployedge/microsoft-edge-update-policies)
 
 
 
-## <a name="settings-managed-by-microsoft-managed-desktop"></a>Impostazioni gestite da Microsoft Managed Desktop
+## <a name="settings-managed-by-microsoft-managed-desktop"></a>Impostazioni gestito da Microsoft Managed Desktop
 
-Microsoft Managed Desktop ha creato un set predefinito di criteri per Microsoft Edge per proteggere il browser. Le impostazioni predefinite del browser sono le seguenti:
+Microsoft Managed Desktop ha creato un set predefinito di criteri per Microsoft Edge proteggere il browser. Le impostazioni predefinite del browser sono le seguenti:
 
-### <a name="microsoft-edge-extensions"></a>Estensioni di Microsoft Edge
+### <a name="microsoft-edge-extensions"></a>Microsoft Edge estensioni
 
-La linea di base della sicurezza per Microsoft Edge nei dispositivi Microsoft Managed Desktop imposta due criteri per disabilitare tutte le estensioni di Chrome e proteggere gli utenti. Per abilitare e distribuire le estensioni nell'ambiente, vedere Impostazioni gestite. 
+La linea di base per la Microsoft Edge nei dispositivi Microsoft Managed Desktop imposta due criteri per disabilitare tutte le estensioni di Chrome e proteggere gli utenti. Per abilitare e distribuire le estensioni nell'ambiente, vedere Impostazioni gestione. 
 
 #### <a name="extension-installation-blocklist"></a>Elenco dei blocchi di installazione delle estensioni
 **Valore predefinito:** All
 
-Microsoft Managed Desktop imposta questo criterio per impedire l'installazione delle estensioni di Chrome in endpoint gestiti. Esistono rischi noti associati al modello di estensione Chromium, tra cui la protezione della perdita di dati, la privacy e altri rischi che possono compromettere i dispositivi. 
+Microsoft Managed Desktop questo criterio per impedire l'installazione delle estensioni di Chrome in endpoint gestiti. Esistono rischi noti associati al modello di estensione Chromium, tra cui protezione della perdita dei dati, privacy e altri rischi che possono compromettere i dispositivi. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Consenti host di messaggistica nativi a livello di utente (installati senza autorizzazioni di amministratore)
 
 **Valore predefinito:** Disabilitato
 
-Disabilitando questo criterio, Microsoft Edge utilizzerà solo host di messaggistica nativi installati a livello di sistema. Gli host di messaggistica nativa fanno parte delle estensioni di Chrome, che consentono al browser di interagire con altre parti dell'endpoint dell'utente, creando una serie di problemi di sicurezza.  
+Disabilitando questo criterio, Microsoft Edge solo gli host di messaggistica nativi installati a livello di sistema. Gli host di messaggistica nativa fanno parte delle estensioni di Chrome, che consentono al browser di interagire con altre parti dell'endpoint dell'utente, creando una serie di problemi di sicurezza.  
 
 ### <a name="secure-sockets-layer-tlsssl"></a>Secure Sockets Layer (TLS/SSL)
 
@@ -78,7 +78,7 @@ Non è consigliabile abilitare questa impostazione poiché consente agli utenti 
 
 Abilitata per impostazione predefinita per proteggere gli utenti.
 
-#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender smartscreen per i siti
+#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender Prompt SmartScreen per i siti
 
 **Valore predefinito:** Abilitato
 
@@ -104,20 +104,20 @@ Non è consigliabile usare Flash a causa dei rischi di sicurezza associati. Se h
 
 **Valore predefinito:** Disabilitato
 
-Non è consigliabile consentire agli utenti di salvare le password nel dispositivo.
+La gestione delle password è disabilitata per impostazione predefinita. Se questa funzionalità è abilitata, determinare una richiesta di supporto e i tecnici del servizio possono abilitare l'impostazione nel proprio ambiente. 
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Modalità Internet Explorer in Microsoft Edge
-La modalità IE in Microsoft Edge semplifica l'uso di tutti i siti di cui l'organizzazione ha bisogno in un unico browser. Usa il motore Chromium integrato per i siti compatibili con il motore di rendering Chromium e usa il motore MSHTML Trident di Internet Explorer 11 (IE11) per i siti che non sono o hanno dipendenze dalla funzionalità Internet Explorer. [Ulteriori informazioni] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
+La modalità IE Microsoft Edge consente di usare facilmente tutti i siti di cui l'organizzazione ha bisogno in un unico browser. Usa il motore Chromium integrato per i siti compatibili con il motore di rendering di Chromium e usa il motore MSHTML Trident di Internet Explorer 11 (IE11) per i siti che non sono o hanno dipendenze dalla funzionalità Internet Explorer. [Altre informazioni](/DeployEdge/edge-ie-mode) 
 
-Microsoft Managed Desktop abilita la modalità Internet Explorer per i dispositivi per impostazione predefinita 
+Microsoft Managed Desktop la modalità Internet Explorer per i dispositivi per impostazione predefinita 
 
 #### <a name="internet-explorer-mode-integration"></a>Integrazione in modalità Internet Explorer
 **Valore predefinito:** Modalità Internet Explorer
 
 Per impostazione predefinita, i dispositivi sono impostati per l'uso della modalità Internet Explorer, ma puoi impostarli per aprire i siti in una finestra autonoma di Internet Explorer 11. Per modificare questo comportamento, stendiamo una richiesta di supporto.
 
-#### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Aggiungere siti all'elenco Siti in modalità Enterprise
-Per l'apertura dei siti in modalità Internet Explorer, è necessario includerli [nell'elenco Siti organizzazione.](/DeployEdge/edge-ie-mode-sitelist) La gestione e la distribuzione dell'elenco dei siti aziendali è responsabilità dell'utente. Per informazioni dettagliate, vedere [Configure using the Configure Enterprise Mode Site List policy](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
+#### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Aggiungere siti all'elenco Enterprise modalità sito
+Per l'apertura dei siti in modalità Internet Explorer, è necessario includerli [nell'Enterprise sito.](/DeployEdge/edge-ie-mode-sitelist) La gestione e la distribuzione dell'Enterprise sito è responsabilità dell'utente. Per informazioni dettagliate, vedere [Configure using the Configure Enterprise Mode Site List policy](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>Altre impostazioni
 
@@ -140,26 +140,26 @@ Microsoft Managed Desktop non supporta gli schemi di autenticazione di base o di
 Con questo criterio applicato, la prima esperienza di esecuzione ignora la sezione di importazione, riducendo al minimo l'interazione dell'utente. I dati del browser delle versioni precedenti di Microsoft Edge verranno sempre migrati automaticamente alla prima esecuzione, indipendentemente da questa impostazione. 
 
 
-## <a name="settings-you-manage"></a>Impostazioni gestite
+## <a name="settings-you-manage"></a>Impostazioni si gestisce
 
-È possibile distribuire tutte le impostazioni di Microsoft Edge non descritte in precedenza usando il profilo Modelli amministrativi in Microsoft Intune. Per informazioni dettagliate, vedere [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune). Se si desidera valutare un criterio attualmente non incluso nei modelli amministrativi di Microsoft Edge in Intune, è possibile usare impostazioni personalizzate per i dispositivi Windows 10 in Intune.
+È possibile distribuire qualsiasi impostazione Microsoft Edge non descritta in precedenza utilizzando il profilo Modelli amministrativi in Microsoft Intune. Per informazioni dettagliate, vedere [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune). Se si desidera valutare un criterio attualmente non incluso nei modelli amministrativi di Microsoft Edge in Intune, è possibile usare le impostazioni personalizzate per i dispositivi Windows 10 in Intune.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Abilitazione di estensioni di Chrome specifiche
 
-Il modello amministrativo offre un'impostazione per distribuire specifiche estensioni di Chrome con Microsoft Intune. È possibile trovarlo in **Configurazione computer > Microsoft Edge > estensioni > Consenti** l'installazione di estensioni specifiche .
+Il modello amministrativo offre un'impostazione per distribuire specifiche estensioni di Chrome con Microsoft Intune. È possibile trovarlo in **Configurazione computer > Microsoft Edge > estensioni > consenti l'installazione di estensioni specifiche**.
 
 ### <a name="install-extensions-silently"></a>Installare le estensioni in modo invisibile all'utente
 
-Puoi anche usare il modello amministrativo per impostare Microsoft Edge in modo che installi le estensioni senza avvisare l'utente. È possibile trovarlo in Configurazione computer > Microsoft Edge > Extensions > Controllare quali estensioni vengono installate in **modo invisibile all'utente.**
+È inoltre possibile utilizzare il modello amministrativo per impostare Microsoft Edge installare le estensioni senza avvisare l'utente. Puoi trovarlo in Configurazione computer > Microsoft Edge > Estensioni > controllare quali **estensioni vengono installate automaticamente.**
 
-### <a name="microsoft-edge-update-policies"></a>Criteri di aggiornamento di Microsoft Edge
-Per assicurarsi che Microsoft Edge venga aggiornato correttamente, non modificare i criteri di aggiornamento [di](/deployedge/microsoft-edge-update-policies)Microsoft Edge.
+### <a name="microsoft-edge-update-policies"></a>Microsoft Edge criteri di aggiornamento
+Per assicurarsi che Microsoft Edge aggiornamenti corretti, non modificare i criteri di Microsoft Edge [di aggiornamento.](/deployedge/microsoft-edge-update-policies)
 
 ### <a name="other-common-enterprise-policies"></a>Altri criteri aziendali comuni
 
 Microsoft Edge offre molti altri criteri. Di seguito sono riportati alcuni dei più comuni:
  
-- [Configurare i siti nell'elenco di siti aziendali e in modalità IE](/deployedge/edge-ie-mode-sitelist)
+- [Configurare i siti nell'Enterprise siti e in modalità IE](/deployedge/edge-ie-mode-sitelist)
 - [Configurare le impostazioni della pagina iniziale, della home page e delle nuove schede](/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
 - [Configurare l'impostazione del gioco Surf](/deployedge/microsoft-edge-policies#allowsurfgame)
 - [Configurare le impostazioni del server proxy](/deployedge/microsoft-edge-policies#proxy-server)

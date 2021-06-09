@@ -15,12 +15,12 @@ ms.custom:
 description: In questo articolo vengono riportati i report e gli strumenti di risoluzione dei problemi disponibili per gli amministratori di Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae55ded9d907754161813c9f7bfa7eeb14c558a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625030"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841439"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Creazione di report e traccia dei messaggi in EOP
 
@@ -46,11 +46,8 @@ Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o in 
 Per ulteriori informazioni, vedere le risorse seguenti:
 
 - [Microsoft 365 Report nell'interfaccia di amministrazione - Microsoft 365 gruppi](../../admin/activity-reports/office-365-groups.md)
-
 - [Microsoft 365 Report nell'interfaccia di amministrazione - Attività di posta elettronica](../../admin/activity-reports/email-activity.md)
-
 - [Microsoft 365 Report nell'interfaccia di amministrazione - Utilizzo delle app di posta elettronica](../../admin/activity-reports/email-apps-usage.md)
-
 - [Microsoft 365 Report nell'interfaccia di amministrazione - Utilizzo delle cassette postali](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Report di & sicurezza nell'interfaccia di amministrazione Microsoft 365 sicurezza

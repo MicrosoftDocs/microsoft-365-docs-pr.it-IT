@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee06f927579445825a2b2813e483c24357d2ed78
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ed33f67695fddc78c0bac646f72ca0c48887bb04
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934922"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844419"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Onboard dei dispositivi senza accesso a Internet a Microsoft Defender for Endpoint
 
@@ -39,24 +39,24 @@ ms.locfileid: "51934922"
 Per eseguire l'onboardboard dei dispositivi senza accesso a Internet, è necessario eseguire la procedura generale seguente:
 
 > [!IMPORTANT] 
-> I passaggi seguenti sono applicabili solo ai dispositivi che eseguono versioni precedenti di Windows, ad esempio: Windows Server 2016 e versioni precedenti o Windows 8.1 e versioni precedenti.
+> I passaggi seguenti sono applicabili solo ai dispositivi che eseguono versioni precedenti di Windows, ad esempio: Windows Server 2016 precedenti o precedenti o Windows 8.1 e versioni precedenti.
 
 > [!NOTE]
-> - Un server gateway OMS non può essere utilizzato come proxy per i dispositivi Windows 10 o Windows Server 2019 disconnessi quando configurato tramite il Registro di sistema o l'oggetto Criteri di gruppo "TelemetryProxyServer".
-> - Per Windows 10 o Windows Server 2019- anche se puoi usare TelemetryProxyServer, deve puntare a un dispositivo proxy standard o a un dispositivo.
-> - Inoltre, Windows 10 o Windows Server 2019 in ambienti disconnessi devono essere in grado di aggiornare gli elenchi di certificati attendibili offline tramite un file interno o un server Web.
-> - Per ulteriori informazioni sull'aggiornamento dei CTL offline, vedere [Configure a file or web server to download the CTL files](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).
+> - Non è possibile utilizzare un server gateway OMS come proxy per i dispositivi Windows 10 o Windows Server 2019 disconnessi se configurati tramite il Registro di sistema o l'oggetto Criteri di gruppo "TelemetryProxyServer".
+> - Per Windows 10 o Windows Server 2019- anche se è possibile usare TelemetryProxyServer, deve puntare a un dispositivo proxy standard o un dispositivo.
+> - Inoltre, Windows 10 o Windows Server 2019 in ambienti disconnessi deve essere in grado di aggiornare gli elenchi di certificati attendibili offline tramite un file interno o un server Web.
+> - Per ulteriori informazioni sull'aggiornamento dei CTL offline, vedere [Configure a file or web server to download the CTL files](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).
 
 Per ulteriori informazioni sui metodi di onboarding, vedere gli articoli seguenti:
-- [Aggiungere versioni precedenti di Windows](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
-- [Onboard dei server al servizio Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
-- [Configurare le impostazioni del proxy del dispositivo e della connettività Internet](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
+- [Aggiungere versioni precedenti di Windows](/microsoft-365/security/defender-endpoint/onboard-downlevel)
+- [Onboard dei server al servizio Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
+- [Configurare le impostazioni di connettività Proxy e Internet del dispositivo](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
 ## <a name="on-premise-devices"></a>Dispositivi locali
 
 - Configurare Azure Log Analytics (in precedenza noto come gateway OMS) per agire come proxy o hub:
-  - [Agente di analisi dei log di Azure](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [Installare e configurare Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) punta a Defender per endpoint workspace & ID
+  - [Agente di analisi dei log di Azure](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+  - [Installare e configurare Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) puntano a Defender per l'ID & Endpoint Workspace
 
 - Dispositivi offline nella stessa rete di Azure Log Analytics
   -  Configurare MMA in modo che punti a:
@@ -64,17 +64,17 @@ Per ulteriori informazioni sui metodi di onboarding, vedere gli articoli seguent
      - ID & dell'area di lavoro di Defender for Endpoint
 
 ## <a name="azure-virtual-machines"></a>Macchine virtuali di Azure
-- Configurare e abilitare [l'area di lavoro di Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/gateway)
+- Configurare e abilitare [l'area di lavoro di Azure Log Analytics](/azure/azure-monitor/platform/gateway)
 
     - Configurare Azure Log Analytics Gateway (in precedenza noto come gateway OMS) per agire come proxy o hub:
-      - [Azure Log Analytics Gateway](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-      - [Installare e configurare Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) punta a Defender per endpoint workspace & ID
+      - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+      - [Installare e configurare Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) puntano a Defender per l'ID & Endpoint Workspace
     - Macchine virtuali di Azure offline nella stessa rete del gateway OMS
       - Configurare l'IP di Azure Log Analytics come proxy
       - ID chiave dell'area di lavoro & di Azure Log Analytics
 
     - Azure Defender
-      - [Area di lavoro \> analisi log criteri di sicurezza](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-      - [Rilevamento delle minacce \> Consenti a Defender per Endpoint di accedere ai miei dati](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+      - [Area di lavoro \> analisi log criteri di sicurezza](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+      - [Rilevamento delle minacce \> Consenti a Defender per Endpoint di accedere ai miei dati](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
-        Per ulteriori informazioni, vedere [Utilizzo dei criteri di sicurezza.](https://docs.microsoft.com/azure/security-center/tutorial-security-policy)
+        Per ulteriori informazioni, vedere [Utilizzo dei criteri di sicurezza.](/azure/security-center/tutorial-security-policy)

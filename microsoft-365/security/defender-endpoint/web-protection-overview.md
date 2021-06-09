@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a985719663ec23d41ce4da57aea9aa5e0cf7674c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: eed208da92f7e196cc71dab4e9d32e5666f3f6a4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688970"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844203"
 ---
 # <a name="web-protection"></a>Protezione sul Web
 
@@ -34,7 +34,7 @@ ms.locfileid: "51688970"
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-La protezione Web in Microsoft Defender for Endpoint è una funzionalità di protezione dalle minacce [Web](web-threat-protection.md) e filtro [contenuto Web.](web-content-filtering.md) La protezione Web consente di proteggere i dispositivi dalle minacce Web e consente di regolare i contenuti indesiderati. È possibile trovare i report di protezione Web in Microsoft Defender Security Center andando a **Report > Protezione Web**.
+La protezione Web in Microsoft Defender for Endpoint è una funzionalità di protezione dalle minacce [Web](web-threat-protection.md) e filtro [contenuto Web.](web-content-filtering.md) La protezione Web consente di proteggere i dispositivi dalle minacce Web e consente di regolare i contenuti indesiderati. È possibile trovare i report di protezione Web Microsoft Defender Security Center in Report **> Protezione Web**.
 
 ![Immagine di tutte le schede di protezione Web](images/web-protection.png)
 
@@ -53,7 +53,7 @@ Le schede che costituiscono il filtro contenuto Web sono **Attività Web per cat
 
 Il filtro contenuto Web include:
 - Agli utenti viene impedito l'accesso ai siti Web in categorie bloccate, indipendentemente dal fatto che si esezionino in locale o fuori sede
-- Puoi distribuire in modo pratico diversi criteri a vari set di utenti usando i gruppi di dispositivi definiti nelle impostazioni di controllo di accesso basato sui ruoli di [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
+- Puoi distribuire in modo pratico diversi criteri a vari set di utenti usando i gruppi di dispositivi definiti nelle impostazioni di controllo di accesso basato sui ruoli di [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/rbac)
 - È possibile accedere ai report Web nella stessa posizione centrale, con visibilità sui blocchi effettivi e sull'utilizzo web
 
 ## <a name="in-this-section"></a>Contenuto della sezione

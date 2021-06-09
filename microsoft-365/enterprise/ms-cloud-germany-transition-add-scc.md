@@ -18,41 +18,43 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: passaggi di migrazione di eDiscovery per la migrazione da Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 16da6e6d1994ae107b62ff1f915454568a35344d
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 0128c8563b2043e4ec41d2c5ab1b208bd3977511
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592136"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844251"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>Informazioni sull'esperienza di eDiscovery durante la migrazione da Microsoft Cloud Deutschland
-Nelle sezioni seguenti vengono fornite ulteriori informazioni sull'esperienza di eDiscovery durante il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.
+Nelle sezioni seguenti vengono fornite ulteriori informazioni sull'esperienza di eDiscovery durante il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi Office 365 nella nuova area data center tedesca.
 
 ## <a name="ediscovery-administration-until-phase-4"></a>Amministrazione di eDiscovery fino alla fase 4
 Fino alla fase 4, il Centro sicurezza e conformità sarà completamente disponibile. Tutto il contenuto rimane ancora in Microsoft Cloud Germania ed è gestibile dal Centro sicurezza e conformità di Microsoft Cloud Germania ( https://protection.office.de/) .
 
 ## <a name="ediscovery-experience-between-phase-4-until-the-the-end-of-phase-9"></a>Esperienza di eDiscovery tra la fase 4 e la fine della fase 9
-Dall'inizio della fase 4 fino al completamento della fase 9, le ricerche eDiscovery avranno esito negativo o restituiranno 0 risultati per i percorsi di SharePoint Online, OneDrive for Business ed Exchange Online migrati.
+Dall'inizio della fase 4 fino al completamento della fase 9, le ricerche eDiscovery avranno esito negativo o restituiranno 0 risultati per i percorsi di SharePoint Online, OneDrive for Business e Exchange Online migrati.
 
 > [!NOTE]
-> Durante la migrazione, i clienti possono continuare a creare casi, blocchi, ricerche ed esportazioni nel [Centro sicurezza & conformità,](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)inclusa [ricerca contenuto.](https://docs.microsoft.com/microsoft-365/compliance/search-for-content) Tuttavia, le ricerche nei percorsi di SharePoint Online, OneDrive for Business ed Exchange Online di cui è stata eseguita la migrazione restituiranno 0 risultati o genereranno un errore.
+> Durante la migrazione, i clienti possono continuare a creare casi, blocchi, ricerche ed esportazioni nel [Centro sicurezza & conformità,](/microsoft-365/compliance/manage-legal-investigations)inclusa [ricerca contenuto.](/microsoft-365/compliance/search-for-content) Tuttavia, le ricerche in SharePoint online, OneDrive for Business e Exchange Online di cui è stata eseguita la migrazione restituiranno 0 risultati o genereranno un errore.
 
-Nel caso in cui una ricerca restituisca zero risultati o un errore durante la migrazione, eseguire l'azione seguente per SharePoint Online: 
-- Scaricare i siti direttamente dal sito di SharePoint Online o OneDrive for Business seguendo le istruzioni in Scaricare file e cartelle [da OneDrive o SharePoint.](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05) Questo metodo richiede autorizzazioni di amministratore di SharePoint Online o autorizzazioni di sola lettura per il sito.
-- Se vengono superati i limiti, come illustrato in Scaricare file e cartelle da OneDrive o [SharePoint,](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)i clienti possono utilizzare il client di sincronizzazione di OneDrive for Business seguendo le indicazioni in Sincronizzare i file di SharePoint e Teams con il [computer.](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)
+Nel caso in cui una ricerca restituisca zero risultati o un errore durante la migrazione, eseguire l'azione seguente per SharePoint Online:
 
-- Per ulteriori informazioni, vedere  [eDiscovery sul posto in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery).
+- Scaricare i siti direttamente dal sito SharePoint Online o OneDrive for Business seguendo le istruzioni in Scaricare file e cartelle da OneDrive [o SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05). Questo metodo richiederà SharePoint di amministratore online o autorizzazioni di sola lettura per il sito.
+- Se vengono superati i limiti, come illustrato in Scaricare file e cartelle da OneDrive o [SharePoint,](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)i clienti possono utilizzare il client di sincronizzazione di OneDrive for Business seguendo le indicazioni in Sincronizzare i file [di SharePoint](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)e Teams con il computer .
+
+- Per ulteriori informazioni, vedere [eDiscovery sul posto in Exchange Server](/Exchange/policy-and-compliance/ediscovery/ediscovery).
 
 
 ## <a name="ediscovery-administration-after-phase-9"></a>Amministrazione di eDiscovery dopo la fase 9
 
 **Si applica a:** Tutti i clienti che utilizzano eDiscovery
 
-Nella fase 9 verranno completati i passaggi finali per il passaggio alla nuova area data center tedesca. In questa fase verrà eseguita la migrazione di tutti i componenti del servizio rimanenti. Dopo la fase 9, l'uso del Centro sicurezza e conformità in Microsoft Cloud Germania (protection.office.de) non è più supportato. Usa invece il nuovo [Centro sicurezza](https://security.microsoft.com/) o [Centro](https://compliance.microsoft.com/) conformità. Tutti i dati sono stati migrati nei nuovi portali di amministrazione. 
+Nella fase 9 verranno completati i passaggi finali per il passaggio alla nuova area data center tedesca. In questa fase verrà eseguita la migrazione di tutti i componenti del servizio rimanenti.
+Dopo la fase 9, l'uso del Centro sicurezza e conformità in Microsoft Cloud Germania (protection.office.de) non è più supportato. Usa invece il nuovo [Centro sicurezza](https://security.microsoft.com/) o [Centro](https://compliance.microsoft.com/) conformità. Tutti i dati sono stati migrati nei nuovi portali di amministrazione.
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
-|  Tutte le posizioni di SharePoint Online, OneDrive for Business ed Exchange Online sono state migrate insieme al Centro sicurezza e conformità (SCC). | Tutte le attività di eDiscovery devono essere eseguite dal tenant globale. Le ricerche avranno ora esito positivo al 100%. Eventuali errori o errori devono seguire i normali canali di supporto. | Nessuno |
+|  Tutte le SharePoint online, OneDrive for Business e Exchange Online sono state migrate insieme al Centro sicurezza e conformità (SCC). | Tutte le attività di eDiscovery devono essere eseguite dal tenant globale. Le ricerche avranno ora esito positivo al 100%. Eventuali errori o errori devono seguire i normali canali di supporto. | Nessuno |
 ||||
 
 ### <a name="ediscovery-retention-policy"></a>Criteri di conservazione di eDiscovery

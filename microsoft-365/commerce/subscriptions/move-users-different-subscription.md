@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Informazioni su come spostare gli utenti tra sottoscrizioni.
 ms.date: 07/01/2020
-ms.openlocfilehash: 0261ee15d16e895cb2552320097d8e6b396d5220
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333207"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822082"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Trasferire gli utenti a un abbonamento diverso
 
@@ -67,10 +67,10 @@ Per assegnare le licenze è necessario essere un amministratore globale, delle l
 
 Se non si desidera [riassegnare](../../managed-desktop/get-started/assign-licenses.md)le licenze non utilizzate [](../../commerce/licenses/buy-licenses.md) ad altri utenti, è consigliabile rimuovere le licenze dall'abbonamento in modo da non pagare più licenze di quelle necessarie.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\
 [Rimuovere licenze dall'abbonamento](../licenses/buy-licenses.md) (articolo)\
 [Modificare i piani manualmente](change-plans-manually.md) (articolo)\
 [Informazioni su abbonamenti e licenze in Microsoft 365 per le aziende](../licenses/subscriptions-and-licenses.md) (articolo)\
-[Acquistare un altro abbonamento a Microsoft 365 per le aziende](../try-or-buy-microsoft-365.md) (articolo)
+[Acquistare un altro Microsoft 365 per le aziende](../try-or-buy-microsoft-365.md) (articolo)

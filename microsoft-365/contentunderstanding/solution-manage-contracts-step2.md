@@ -12,34 +12,34 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Informazioni su come usare Microsoft Teams per creare il canale di gestione dei contratti usando una Microsoft 365 soluzione.
-ms.openlocfilehash: 81d5fe34383453b187363b13c21ef47844948193
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636183"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841175"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Passaggio 2. Usare Microsoft Teams per creare il canale di gestione dei contratti
 
-Quando l'organizzazione configura una soluzione di gestione dei contratti, è necessaria una posizione centrale in cui le parti interessate possano esaminare e gestire i contratti. A questo scopo, è possibile [usare](https://docs.microsoft.com/microsoftteams/) Microsoft Teams per configurare un canale Teams e usare le funzionalità di Teams per:
+Quando l'organizzazione configura una soluzione di gestione dei contratti, è necessaria una posizione centrale in cui le parti interessate possano esaminare e gestire i contratti. A questo scopo, è possibile [usare](/microsoftteams/) Microsoft Teams per configurare un canale Teams e usare le funzionalità di Teams per:
 
 - **Creare un percorso per le parti interessate per visualizzare facilmente tutti i contratti che richiedono un'azione.** Ad esempio, in Teams puoi creare  una scheda Contratti nel canale Gestione contratti in cui i membri possono visualizzare una visualizzazione riquadro utile di tutti i contratti che necessitano di approvazione. È inoltre possibile configurare la visualizzazione in modo che ogni "carta" elenchi i dati importanti di cui si è a cuore (ad esempio *Cliente,* Appaltatore e *Importo commissione).*
 
      ![Scheda Contratti.](../media/content-understanding/tile-view.png)
 
-- **Avere una posizione in cui i membri possono interagire tra loro e visualizzare eventi importanti.** Ad esempio, in Teams, la scheda **Post** può essere usata per avere conversazioni, ottenere aggiornamenti e visualizzare azioni (ad esempio, un membro che rifiuta un contratto). Quando si è verificato un problema, ad esempio un nuovo contratto inviato per l'approvazione, la scheda **Post** può essere utilizzata non solo per annunciarlo, ma anche per conservare un record. Se i membri sottoscrivano le notifiche, verranno avvisati ogni volta che è disponibile un aggiornamento. 
+- **Avere una posizione in cui i membri possono interagire tra loro e visualizzare eventi importanti.** Ad esempio, in Teams, la scheda **Post** può essere usata per avere conversazioni, ottenere aggiornamenti e visualizzare azioni (ad esempio, un membro che rifiuta un contratto). Quando si è verificato un problema, ad esempio un nuovo contratto inviato per l'approvazione, la scheda **Post** può essere utilizzata non solo per annunciarlo, ma anche per conservare un record. Se i membri sottoscrivano le notifiche, verranno avvisati ogni volta che è disponibile un aggiornamento.
 
-     ![Scheda Post.](../media/content-understanding/posts.png)</br> 
+     ![Scheda Post.](../media/content-understanding/posts.png)
 
-- **Avere una posizione in cui i membri possano visualizzare i contratti approvati per sapere quando possono essere inviati per il pagamento.** In Teams, è possibile creare un canale <b>Per</b> pagamento che elenca tutti i contratti che dovranno essere inviati al pagamento. È possibile estendere facilmente questa soluzione per scrivere queste informazioni direttamente in un'applicazione finanziaria di terze parti, ad esempio Dynamics CRM.
+- **Avere una posizione in cui i membri possano visualizzare i contratti approvati per sapere quando possono essere inviati per il pagamento.** In Teams, è possibile creare un canale **Per** pagamento che elenca tutti i contratti che dovranno essere inviati al pagamento. È possibile estendere facilmente questa soluzione per scrivere queste informazioni direttamente in un'applicazione finanziaria di terze parti, ad esempio Dynamics CRM.
 
-## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Allegare SharePoint raccolta documenti alla scheda Contratti 
+## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Allegare SharePoint raccolta documenti alla scheda Contratti
 
 Dopo aver creato una **scheda** Contratti nel canale Gestione contratti, è necessario allegarvi SharePoint raccolta [documenti.](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) La SharePoint documento che si desidera allegare è quella a cui è stato applicato il modello di SharePoint syntex nella sezione precedente.
 
 Dopo aver collegato SharePoint raccolta documenti, sarà possibile visualizzare eventuali contratti classificati tramite una visualizzazione elenco predefinita.
 
-   ![Visualizzazione elenco.](../media/content-understanding/list-view.png) 
+   ![Visualizzazione elenco.](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Personalizzare la visualizzazione del riquadro della scheda Contratti
 
@@ -54,7 +54,7 @@ La visualizzazione riquadro personalizzata usata richiede di apportare modifiche
 
 Se vuoi visualizzare o apportare modifiche al codice JSON per la visualizzazione nel canale Teams, nel canale Teams seleziona il menu a discesa della visualizzazione e quindi seleziona **Formatta visualizzazione corrente.**
 
-   ![formato json.](../media/content-understanding/jason-format.png) 
+   ![formato json.](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>Dimensioni e forma della scheda
 
@@ -81,7 +81,6 @@ Nel file [ContractTileFormatting.js,](https://github.com/pnp/syntex-samples/blob
                       }
 ```
 
-
 ## <a name="contract-status"></a>Stato contratto
 
 Il codice seguente consente di definire lo stato di ogni scheda titolo. Si noti che ogni valore di stato (*New*, *In review*, *Approved* e *Rejected*) visualizza un codice di colore diverso per ognuno. Nel file [ContractTileFormatting.js,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) esaminare la sezione che definisce lo stato.
@@ -104,10 +103,9 @@ Il codice seguente consente di definire lo stato di ogni scheda titolo. Si noti 
               }
 ```
 
-
 ## <a name="extracted-fields"></a>Campi estratti
 
-In ogni scheda contratto verranno visualizzati tre campi estratti per ogni contratto (*Cliente,* Appaltatore e Importo *commissione*). Inoltre, vuoi anche visualizzare l'ora/data in cui il file è stato classificato dal modello syntex SharePoint usato per identificarlo. 
+In ogni scheda contratto verranno visualizzati tre campi estratti per ogni contratto (*Cliente,* Appaltatore e Importo *commissione*). Inoltre, vuoi anche visualizzare l'ora/data in cui il file è stato classificato dal modello syntex SharePoint usato per identificarlo.
 
 Nel file [ContractTileFormatting.js,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) le sezioni seguenti definiscono ognuna di queste.
 
@@ -159,7 +157,6 @@ Questa sezione definisce la modalità di visualizzazione del "Terzista" sulla sc
 },
 ```
 
-
 ### <a name="fee-amount"></a>Importo commissione
 
 Questa sezione definisce la modalità di visualizzazione dell'"Importo commissione" sulla scheda e utilizza il valore per il contratto specifico.
@@ -183,8 +180,6 @@ Questa sezione definisce la modalità di visualizzazione dell'"Importo commissio
                         "txtContent": "[$FeeAmount]"
                       },
 ```
-
-
 
 ### <a name="classification-date"></a>Data classificazione
 

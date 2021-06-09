@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b6b664d471e238e2feb1e1aedd100c1299fc5bbe
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861156"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844263"
 ---
 # <a name="protect-your-network"></a>Proteggere la rete
 
@@ -33,9 +33,9 @@ ms.locfileid: "51861156"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-La protezione di rete consente di ridurre la superficie di attacco dei dispositivi da eventi basati su Internet. Impedisce ai dipendenti di utilizzare qualsiasi applicazione per accedere a domini pericolosi che potrebbero ospitare tentativi di phishing, exploit e altri contenuti dannosi su Internet. La protezione di rete espande l'ambito di [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) per bloccare tutto il traffico HTTP in uscita che tenta di connettersi a origini con reputazione scarsa (in base al dominio o al nome host).
+La protezione di rete consente di ridurre la superficie di attacco dei dispositivi da eventi basati su Internet. Impedisce ai dipendenti di utilizzare qualsiasi applicazione per accedere a domini pericolosi che potrebbero ospitare tentativi di phishing, exploit e altri contenuti dannosi su Internet. Protezione di rete espande l'ambito di [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) per bloccare tutto il traffico HTTP in uscita che tenta di connettersi a origini con reputazione scarsa (in base al dominio o al nome host).
 
-La protezione di rete è supportata in Windows, a partire da Windows 10 versione 1709. La protezione di rete non è ancora supportata in altri sistemi operativi, ma la protezione Web è supportata tramite il nuovo Microsoft Edge basato su Chromium. Per ulteriori informazioni, vedere [Protezione Web.](web-protection-overview.md)
+La protezione di rete è supportata Windows, a partire da Windows 10 versione 1709. La protezione di rete non è ancora supportata in altri sistemi operativi, ma la protezione Web è supportata utilizzando il nuovo Microsoft Edge basato su Chromium. Per ulteriori informazioni, vedere [Protezione Web.](web-protection-overview.md)
 
 La protezione di rete estende la protezione della [protezione Web](web-protection-overview.md) al livello del sistema operativo. Fornisce funzionalità di protezione Web in Edge ad altri browser supportati e applicazioni non browser. Inoltre, la protezione di rete fornisce visibilità e blocco degli indicatori di compromissione (I/O) se usati con il rilevamento [e la risposta degli endpoint.](overview-endpoint-detection-response.md) Ad esempio, la protezione di rete funziona con [gli indicatori personalizzati](manage-indicators.md).
 
@@ -52,11 +52,11 @@ Quando la protezione di rete blocca una connessione, viene visualizzata una noti
 
 ## <a name="requirements"></a>Requisiti
 
-La protezione di rete richiede Windows 10 Pro o Enterprise e microsoft Defender Antivirus in tempo reale.
+La protezione di rete Windows 10 Pro o Enterprise e Antivirus Microsoft Defender in tempo reale.
 
-| Versione di Windows | Microsoft Defender Antivirus |
+| Versione di Windows | Antivirus Microsoft Defender |
 |:---|:---|
-| Windows 10 versione 1709 o successiva <p>Windows Server 1803 o versione successiva | [La protezione in tempo reale](configure-real-time-protection-microsoft-defender-antivirus.md) di Microsoft Defender Antivirus e la protezione con distribuzione [cloud](enable-cloud-protection-microsoft-defender-antivirus.md) devono essere abilitate |
+| Windows 10 versione 1709 o successiva <p>Windows Server 1803 o versione successiva | [Antivirus Microsoft Defender la protezione in tempo](configure-real-time-protection-microsoft-defender-antivirus.md) reale e la protezione basata sul [cloud](enable-cloud-protection-microsoft-defender-antivirus.md) devono essere abilitate |
 
 Dopo aver abilitato i servizi, potrebbe essere necessario configurare la rete o il firewall per consentire le connessioni tra i servizi e i dispositivi (denominati anche endpoint).  
 
@@ -76,13 +76,13 @@ DeviceEvents
 | where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Esaminare gli eventi di protezione di rete nel Visualizzatore eventi di Windows
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Esaminare gli eventi di protezione di rete nel Visualizzatore Windows eventi
 
-È possibile esaminare il registro eventi di Windows per visualizzare gli eventi creati quando la protezione di rete blocca (o controlla) l'accesso a un IP o a un dominio dannoso:
+È possibile esaminare il Windows eventi per visualizzare gli eventi creati quando la protezione di rete blocca (o controlla) l'accesso a un IP o a un dominio dannoso:
 
 1. [Copiare il codice XML direttamente](event-views.md).
 
-2. Seleziona **OK**.
+2. Selezionare **OK**.
 
 Questa procedura crea una visualizzazione personalizzata che filtra in modo da visualizzare solo gli eventi seguenti correlati alla protezione di rete:
 
@@ -92,15 +92,15 @@ Questa procedura crea una visualizzazione personalizzata che filtra in modo da v
 | 1125 | Evento quando viene attivata la protezione di rete in modalità di controllo |
 | 1126 | Evento quando viene attivata la protezione di rete in modalità blocco |
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Considerazioni sul desktop virtuale Windows che esegue Windows 10 Enterprise Multi-Session
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Considerazioni per Windows desktop virtuale che esegue Windows 10 Enterprise multi-sessione
 
-A causa della natura multi-utente di Windows 10 Enterprise, tenere presenti i punti seguenti:
+A causa della natura multi-utente Windows 10 Enterprise, tenere presente quanto segue:
 
 1. La protezione di rete è una funzionalità a livello di dispositivo e non può essere destinata a sessioni utente specifiche.
 
 2. Anche i criteri di filtro del contenuto Web sono a livello di dispositivo.
 
-3. Se è necessario distinguere i gruppi di utenti, prendere in considerazione la creazione di pool host Desktop virtuale Windows e assegnazioni separati.
+3. Se è necessario distinguere i gruppi di utenti, prendere in considerazione la creazione di Windows pool host desktop virtuale e assegnazioni.
 
 4. Testare la protezione di rete in modalità di controllo per valutarne il comportamento prima dell'implementazione. 
 
@@ -108,7 +108,7 @@ A causa della natura multi-utente di Windows 10 Enterprise, tenere presenti i pu
 
 ### <a name="alternative-option-for-network-protection"></a>Opzione alternativa per la protezione di rete
 
-Per Windows 10 Enterprise Multi-Session 1909 e versione successiva, usata in Desktop virtuale Windows in Azure, la protezione di rete per Microsoft Edge può essere abilitata usando il metodo seguente:
+Ad Windows 10 Enterprise Multi-Session 1909 e versione successiva, usata in Windows Virtual Desktop in Azure, la protezione di rete per Microsoft Edge può essere abilitata usando il metodo seguente:
 
 1. Usa [Attiva protezione di rete](enable-network-protection.md) e segui le istruzioni per applicare i criteri.
 

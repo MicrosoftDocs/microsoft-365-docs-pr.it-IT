@@ -1,5 +1,5 @@
 ---
-title: Usare le autorizzazioni di base per accedere a Microsoft Defender Security Center
+title: Usare le autorizzazioni di base per accedere Microsoft Defender Security Center
 description: Scopri come usare le autorizzazioni di base per accedere al portale di Microsoft Defender for Endpoint.
 keywords: assegnare ruoli utente, assegnare l'accesso in lettura e scrittura, assegnare l'accesso di sola lettura, utente, ruoli utente, ruoli
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb5762d2a9e4b62432aba6dacd1033ddc3c7daf2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163672"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844659"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Usare le autorizzazioni di base per accedere al portale
 
@@ -29,7 +29,7 @@ ms.locfileid: "51163672"
 
 **Si applica a:**
 - Azure Active Directory
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
@@ -42,19 +42,19 @@ Fare riferimento alle istruzioni seguenti per utilizzare la gestione delle autor
 
 Per un controllo granulare sulle autorizzazioni, [passare al controllo di accesso basato sui ruoli.](rbac.md)
 
-## <a name="assign-user-access-using-azure-powershell"></a>Assegnare l'accesso utente tramite Azure PowerShell
+## <a name="assign-user-access-using-azure-powershell"></a>Assegnare l'accesso utente Azure PowerShell
 È possibile assegnare agli utenti uno dei seguenti livelli di autorizzazioni:
 - Accesso completo (lettura e scrittura)
 - Accesso in sola lettura
 
 ### <a name="before-you-begin"></a>Prima di iniziare
 
-- Installare Azure PowerShell. Per ulteriori informazioni, vedere [Come installare e configurare Azure PowerShell.](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)<br>
+- Installare Azure PowerShell. Per ulteriori informazioni, vedere [Come installare e configurare Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
 
     > [!NOTE]
     > È necessario eseguire i cmdlet di PowerShell in una riga di comando con privilegi elevati.
 
-- Connettersi ad Azure Active Directory. Per ulteriori informazioni, vedere [Connect-MsolService](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
+- Connessione al Azure Active Directory. Per ulteriori informazioni, vedere [Connessione-MsolService](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
 
 **Accesso completo** <br>
 Gli utenti con accesso completo possono accedere, visualizzare tutte le informazioni di sistema e risolvere gli avvisi, inviare file per l'analisi approfondita e scaricare il pacchetto di onboarding.
@@ -79,12 +79,12 @@ Per assegnare ruoli di sicurezza, eseguire la procedura seguente:
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-Per ulteriori informazioni, vedere [Aggiungere o rimuovere membri del gruppo con Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
+Per ulteriori informazioni, vedere [Add or remove group members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>Assegnare l'accesso utente tramite il portale di Azure
 
-Per ulteriori informazioni, vedere [Assegnare ruoli di amministratore e non amministratore agli utenti con Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
+Per ulteriori informazioni, vedere [Assegnare ruoli di amministratore](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)e non amministratore agli utenti con Azure Active Directory .
 
 ## <a name="related-topic"></a>Argomento correlato
 
-- [Gestire l'accesso al portale tramite RBAC](rbac.md)
+- [Gestire l'accesso al portale con RBAC](rbac.md)
