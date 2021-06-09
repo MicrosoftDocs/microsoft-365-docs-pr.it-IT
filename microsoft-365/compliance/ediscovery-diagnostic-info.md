@@ -39,7 +39,7 @@ Per eseguire i cmdlet seguenti, [connettersi a PowerShell </span> & Centro sicur
 Dopo aver esaminato il file di testo generato e aver redatto le informazioni riservate, inviarle al tecnico del supporto Tecnico Microsoft che sta lavorando al caso.
 
 > [!NOTE]
-> È inoltre possibile eseguire i comandi in questa sezione per raccogliere  informazioni di diagnostica per le ricerche e le esportazioni elencate nella pagina Ricerca contenuto nel Centro conformità Microsoft 365.
+> È inoltre possibile eseguire i comandi di questa sezione per raccogliere  informazioni di diagnostica per le ricerche e le esportazioni elencate nella pagina Ricerca contenuto nel Centro Microsoft 365 conformità.
 
 ### <a name="collect-information-about-searches"></a>Raccogliere informazioni sulle ricerche
 
@@ -67,7 +67,7 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>Raccogliere tutte le informazioni sul caso
 
-A volte, non è evidente quali informazioni sono necessarie al supporto tecnico Microsoft per analizzare il problema. In questo caso, è possibile raccogliere tutte le informazioni di diagnostica per un caso di eDiscovery di base. Il nome del caso core **di eDiscovery** nel comando seguente corrisponde al nome di un caso visualizzato nella pagina Core *eDiscovery* nel Centro conformità Microsoft 365.
+A volte, non è evidente quali informazioni sono necessarie al supporto tecnico Microsoft per analizzare il problema. In questo caso, è possibile raccogliere tutte le informazioni di diagnostica per un caso di eDiscovery di base. Il nome del caso core **di eDiscovery** nel comando seguente corrisponde al nome di un caso visualizzato nella pagina Core *eDiscovery* nel Centro Microsoft 365 conformità.
 
 ```powershell
 Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
@@ -75,17 +75,17 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==
 
 ## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>Raccogliere informazioni di diagnostica per Advanced eDiscovery
 
-La **scheda Impostazioni** in un caso advanced eDiscovery consente di copiare rapidamente le informazioni di diagnostica per il caso. Le informazioni di diagnostica vengono salvate negli Appunti in modo da poter essere incollate in un file di testo e inviate al supporto tecnico Microsoft.
+La **Impostazioni** in un caso Advanced eDiscovery consente di copiare rapidamente le informazioni di diagnostica per il caso. Le informazioni di diagnostica vengono salvate negli Appunti in modo da poter essere incollate in un file di testo e inviate al supporto tecnico Microsoft.
 
 1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su Mostra > **eDiscovery > Avanzate**.
 
-2. Selezionare un caso e quindi fare clic **sulla scheda** Impostazioni.
+2. Selezionare un caso e quindi fare clic sulla **Impostazioni.**
 
 3. In **Informazioni caso** fare clic su **Seleziona.**
 
 4. Nella pagina a comparsa fai clic su **Copia informazioni di** diagnostica per copiare le informazioni negli Appunti.
 
-5. Aprire un file di testo (nel Blocco note) e quindi incollare le informazioni nel file di testo.
+5. Aprire un file di testo (in Blocco note) e quindi incollare le informazioni nel file di testo.
 
 6. Salvare il file di testo e assegnare un nome simile `AeD Diagnostic Info YYYY.MM.DD` (ad esempio, `AeD Diagnostic Info 2020.11.03` ).
 

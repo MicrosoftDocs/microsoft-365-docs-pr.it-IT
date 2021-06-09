@@ -21,11 +21,11 @@ ms.locfileid: "51574548"
 
 Quando si è pronti per la registrazione a Microsoft Managed Desktop, è consigliabile valutare i requisiti di stampa e determinare l'approccio giusto per l'ambiente. Sono disponibili tre opzioni:
  
-- Distribuire la soluzione Microsoft Universal Print per semplificare l'individuazione delle stampanti da parte dei dispositivi Microsoft Managed Desktop. Per ulteriori informazioni, vedere [What is Universal Print.](/universal-print/fundamentals/universal-print-whatis)
+- Distribuire la soluzione Microsoft Universal Print per semplificare l'individuazione delle stampanti Microsoft Managed Desktop dispositivi. Per ulteriori informazioni, vedere [What is Universal Print.](/universal-print/fundamentals/universal-print-whatis)
 - Distribuire le stampanti direttamente utilizzando uno script di PowerShell personalizzato. Seguire i passaggi descritti nella [sezione Configurare le stampanti](#set-up-local-printers) locali.
-- Usa una soluzione di stampa cloud non Microsoft compatibile con i dispositivi Windows 10 aggiunti a un dominio di Azure Active Directory. La soluzione deve soddisfare i requisiti software per Microsoft Managed Desktop. Per altre informazioni, vedi [Requisiti dell'app Desktop gestito Microsoft.](../service-description/mmd-app-requirements.md)
+- Usa una soluzione di stampa cloud non Microsoft compatibile con i dispositivi Windows 10 aggiunti a un Azure Active Directory dominio. La soluzione deve soddisfare i requisiti software per Microsoft Managed Desktop. Per altre informazioni, vedi requisiti [Microsoft Managed Desktop'app](../service-description/mmd-app-requirements.md).
  
-In tutti i casi, se i driver della stampante non sono disponibili da Microsoft Update o microsoft Store, dovrai ottenerli autonomamente e averli in pacchetto per la distribuzione nei dispositivi Microsoft Managed Desktop con Microsoft Intune. Per altre informazioni, vedere [Intune Autonomo - Gestione app Win32](/mem/intune/apps/apps-win32-app-management)
+In tutti i casi, se i driver della stampante non sono disponibili da Microsoft Update o dal Microsoft Store, dovrai ottenerli manualmente e averli in pacchetto per la distribuzione nei dispositivi Microsoft Managed Desktop con Microsoft Intune. Per altre informazioni, vedere [Intune Autonomo - Gestione app Win32](/mem/intune/apps/apps-win32-app-management)
 
 ## <a name="set-up-local-printers"></a>Configurare stampanti locali
 
@@ -33,7 +33,7 @@ Se si è deciso di distribuire le stampanti utilizzando uno script di PowerShell
 
 1.  Passare al portale Microsoft Managed Desktop.
 2.  Inviare una richiesta con etichetta *Distribuzione* stampante nella sezione **Richieste >** supporto tecnico del portale di amministrazione, fornendo questi dettagli:
-    - Tutti i percorsi UNC delle stampanti condivise che dovranno essere distribuiti per i dispositivi Desktop gestito Microsoft
+    - Tutti i percorsi UNC per i percorsi delle stampanti condivise che dovranno essere distribuiti per Microsoft Managed Desktop dispositivi
     - Gruppi di utenti che richiedono l'accesso a queste stampanti condivise
 3.  Usando il portale di amministrazione, ti inseriamo quando la richiesta è stata completata. Inizialmente la configurazione verrà distribuita solo nei dispositivi nel gruppo di distribuzione Test.
 4.  È necessario verificare e verificare se la configurazione funziona come previsto. Rispondi usando la **scheda Discussione** nella richiesta di supporto per far sapere quando hai completato il test.

@@ -12,7 +12,7 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: Guida di orientamento all'uso di PowerShell per Microsoft 365.
+description: Guida di orientamento per l'utilizzo di PowerShell per Microsoft 365.
 ms.openlocfilehash: 76a7fe72d6ba640d6dcea240310ae3f6efdba477
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

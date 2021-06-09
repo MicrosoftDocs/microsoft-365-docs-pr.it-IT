@@ -96,7 +96,7 @@ Il passaggio successivo consiste nel creare profili di configurazione di sistema
 Questo profilo contiene informazioni sulla licenza per Microsoft Defender for Endpoint, senza di esso verrà segnalata la non licenza.
 
 1. Selezionare **Crea profilo** in Profili di **configurazione**.
-1. Seleziona **Piattaforma** = **macOS**, **Tipo di profilo** = **Modelli**. **Nome modello** = **Personalizzato**. Fare clic su **Crea**.
+1. Seleziona **Piattaforma** = **macOS**, **Tipo di profilo** = **Modelli**. **Nome modello** = **Personalizzato**. Fai clic su **Crea**.
 
     > [!div class="mx-imgBorder"]
     > ![Creazione di profili di configurazione personalizzati](images/mdatp-6-systemconfigurationprofiles-1.png)
@@ -129,7 +129,7 @@ Questo profilo contiene informazioni sulla licenza per Microsoft Defender for En
 Questo profilo è necessario per macOS 10.15 (Catalina) o versione più recente. Verrà ignorato in macOS precedente.
 
 1. Selezionare **Crea profilo** in Profili di **configurazione**.
-1. Seleziona **Piattaforma** = **macOS**, **Tipo di profilo** = **Modelli**. **Nome modello** = **Estensioni**. Fare clic su **Crea**.
+1. Seleziona **Piattaforma** = **macOS**, **Tipo di profilo** = **Modelli**. **Nome modello** = **Estensioni**. Fai clic su **Crea**.
 1. Nella scheda **Nozioni** di base assegnare un nome al nuovo profilo.
 1. Nella scheda **Impostazioni di** configurazione espandere **Estensioni di** sistema aggiungere le voci seguenti nella sezione Estensioni **di sistema** consentite:
 
@@ -152,7 +152,7 @@ Questo profilo è necessario per macOS 10.15 (Catalina) o versioni precedenti. V
 > I dispositivi Apple Silicon (M1) non supportano KEXT. L'installazione di un profilo di configurazione costituito da criteri KEXT avrà esito negativo in questi dispositivi.
 
 1. Selezionare **Crea profilo** in Profili di **configurazione**.
-1. Seleziona **Piattaforma** = **macOS**, **Tipo di profilo** = **Modelli**. **Nome modello** = **Estensioni**. Fare clic su **Crea**.
+1. Seleziona **Piattaforma** = **macOS**, **Tipo di profilo** = **Modelli**. **Nome modello** = **Estensioni**. Fai clic su **Crea**.
 1. Nella scheda **Nozioni** di base assegnare un nome al nuovo profilo.
 1. Nella scheda **Impostazioni di** configurazione espandi **Estensioni kernel.**
 1. Impostare **l'identificatore del** team **su UBF8T346G9** e fare clic su **Avanti.**

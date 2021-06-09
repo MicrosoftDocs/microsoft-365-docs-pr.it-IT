@@ -1,5 +1,5 @@
 ---
-title: Usare le classi di Microsoft Teams nel sistema di gestione dell'apprendimento
+title: Usare Microsoft Teams classi con Blackboard
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,26 +12,26 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: Integrare le classi di Microsoft Teams nel sistema di gestione dell'apprendimento
-ms.openlocfilehash: 18d33225dd57932af20421c6b3b5dc4fe3b397b8
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: Integrare Microsoft Teams nel sistema di gestione dell'apprendimento
+ms.openlocfilehash: 287b9f1cadfdcf3adafdca91f4a351865bbcf3bc
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327786"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821272"
 ---
-# <a name="use-microsoft-teams-classes-in-your-learning-management-system"></a>Usare le classi di Microsoft Teams nel sistema di gestione dell'apprendimento
+# <a name="use-microsoft-teams-classes-with-blackboard"></a>Usare Microsoft Teams classi con Blackboard
 
 > [!IMPORTANT]
 > Alcune informazioni fanno riferimento alle caratteristiche del prodotto prima del rilascio, e possono essere modificate sostanzialmente prima della distribuzione al pubblico. Microsoft non fornisce alcuna garanzia, esplicita o implicita, in relazione alle informazioni contenute in questo documento.
 
-I team di classe di Microsoft Teams sono un'app LTI (Learning Tools Interoperability) che consente a docenti e studenti di spostarsi facilmente tra il sistema di gestione dell'apprendimento (LMS) e Teams. Gli utenti possono accedere ai team di classe associati al corso direttamente dall'LMS.
+Microsoft Teams è un'app LTI (Learning Tools Interoperability) che consente a docenti e studenti di spostarsi facilmente tra il sistema di gestione dell'apprendimento (LMS) e il Teams. Gli utenti possono accedere ai team di classe associati al corso direttamente dall'LMS.
 
-## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>Approvare l'app nel tenant di Microsoft Azure
+## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>Approvare l'app nel tenant Microsoft Azure app
 
 Le attività seguenti vengono completate dall'amministratore Microsoft Office 365 e dall'amministratore di Blackboard Learn Ultra.
 
-Prima di gestire l'integrazione all'interno di Blackboard Learn Ultra, l'amministratore di Microsoft Office 365 deve approvare l'app Blackboard **MSFT Teams for Learn Ultra Azure** per il tenant di Microsoft Azure dell'istituto.
+Prima di gestire l'integrazione all'interno di Blackboard Learn Ultra, l'amministratore di Microsoft Office 365 deve approvare la blackboard **MSFT Teams for Learn Ultra Azure** app for the institution's Microsoft Azure tenant.
 
 1. Trovare l'ID tenant Microsoft. Vedere [come trovare il tenant](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
 
@@ -46,9 +46,9 @@ Prima di gestire l'integrazione all'interno di Blackboard Learn Ultra, l'amminis
 
 Come amministratore di Blackboard Learn Ultra, dovrai registrare 2 app di integrazione LTI 1.3 nell'ambiente di testing:
 
-- Integrazione di Blackboard Learn Class Teams per supportare la sincronizzazione dell'elenco
+- La blackboard Learn Class Teams integrazione per supportare la sincronizzazione dell'elenco
 
-- App LTI del team di classe di Microsoft Teams
+- App LTI Microsoft Teams team di classe
 
 1. Prendere nota degli ID client LTI seguenti per entrambe le app:
 
@@ -104,19 +104,19 @@ Completare le operazioni seguenti per configurare l'applicazione REST
 
 6. Selezionare **Invia** al termine.
 
-## <a name="enable-class-teams-in-blackboard-learn"></a>Abilitare Class Teams in Blackboard Learn
+## <a name="enable-class-teams-in-blackboard-learn"></a>Enable Class Teams in Blackboard Learn
 
-Dopo aver abilitato gli strumenti LTI, il passaggio successivo consisterà nel configurare l'integrazione di Microsoft Class Teams dal proprio tenant Microsoft Office 365. Puoi farlo seguendo questi passaggi come amministratore di Blackboard Learn Ultra.
+Dopo aver abilitato gli strumenti LTI, il passaggio successivo consisterà nel configurare l'integrazione di Microsoft Class Teams dal tenant Microsoft Office 365 proprio. Puoi farlo seguendo questi passaggi come amministratore di Blackboard Learn Ultra.
 
 1. In **Learn Admin** Tools and  >  **Utilities** selezionare Microsoft Teams Integration **Admin.**
 
    ![finestra di dialogo strumenti e utilità con un elenco degli strumenti disponibili](../media/lti-media/tools-utilities.png)
 
-2. Selezionare la casella di controllo **Abilita Microsoft Teams.**
+2. Selezionare la casella di controllo **Abilita Microsoft Teams**.
 
 3. Immetti l'ID tenant come riferimento nella sezione in Amministratore di Microsoft O365
 
  > [!NOTE]
- > Non potrai salvare le impostazioni finché l'app non viene approvata dall'amministratore di O365. Vedi [Approvare l'app nel tenant di Microsoft Azure.](#approve-the-app-in-the-microsoft-azure-tenant)
+ > Non potrai salvare le impostazioni finché l'app non viene approvata dall'amministratore di O365. Vedi [Approvare l'app in Microsoft Azure tenant](#approve-the-app-in-the-microsoft-azure-tenant).
 
-4. Quando l'amministratore globale di O365 ha approvato l'applicazione Blackboard Teams nel tenant Microsoft, selezionare **Invia**.
+4. Quando l'amministratore globale di O365 ha approvato l'applicazione blackboard Teams nel tenant Microsoft, selezionare **Invia**.

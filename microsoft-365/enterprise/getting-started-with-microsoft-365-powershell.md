@@ -28,29 +28,29 @@ ms.locfileid: "48754457"
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-È possibile usare comandi e script in PowerShell per Microsoft 365 per gestire Microsoft 365 e semplificare il lavoro quotidiano. Usare le informazioni seguenti per scoprire perché PowerShell per Microsoft 365 è fondamentale per la gestione di Microsoft 365, come connettersi all'abbonamento a Microsoft 365 e creare report e dove ottenere ulteriori informazioni dalla community di Microsoft 365.
+È possibile usare comandi e script in PowerShell per Microsoft 365 gestire Microsoft 365 e semplificare il lavoro quotidiano. Utilizzare le informazioni seguenti per scoprire perché PowerShell per Microsoft 365 è fondamentale per la gestione di Microsoft 365, come connettersi alla sottoscrizione di Microsoft 365 e creare report e dove ottenere ulteriori informazioni dalla community di Microsoft 365.
   
 Selezionare uno dei seguenti argomenti:
   
 - [**Perché è necessario usare PowerShell per Microsoft 365**](why-you-need-to-use-microsoft-365-powershell.md)
     
-    Iniziare da qui se non si ha una nuova versione di PowerShell per Microsoft 365. Informazioni sui motivi per cui usare PowerShell per Microsoft 365.
+    Iniziare da qui se non si ha una nuova versione di PowerShell per Microsoft 365. Informazioni sul motivo per cui è consigliabile usare PowerShell Microsoft 365.
     
 - [**Connettersi a Microsoft 365 con PowerShell**](connect-to-microsoft-365-powershell.md)
     
-    Iniziare da qui per connettersi all'abbonamento a Microsoft 365 usando PowerShell per Microsoft 365 ed eseguire attività amministrative dalla riga di comando.
+    Iniziare da qui per connettersi alla sottoscrizione Microsoft 365 usando PowerShell per Microsoft 365 ed eseguire attività amministrative dalla riga di comando.
     
 - [**Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell**](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
     
-    È possibile gestire Microsoft 365 in finestre separate per gli account e le licenze di Skype for Business online, SharePoint Online, Microsoft Exchange Online e Microsoft 365. In caso contrario, è possibile gestirli tutti da un'unica finestra. Questo articolo spiega come.
+    È possibile gestire Microsoft 365 in finestre separate per Skype for Business Online, SharePoint Online, Microsoft Exchange Online e Microsoft 365 e licenze. In caso contrario, è possibile gestirli tutti da una singola finestra. Questo articolo spiega come.
     
 - [**Usare PowerShell per creare report in Microsoft 365**](use-windows-powershell-to-create-reports-in-microsoft-365.md)
     
-    Iniziare da qui se sono stati installati i moduli di PowerShell per Microsoft 365 e si desiderano informazioni sull'uso dei comandi di automazione per creare rapidamente report.
+    Inizia da qui se hai installato PowerShell per i moduli Microsoft 365 e vuoi informazioni sull'uso dei comandi di automazione per creare rapidamente report.
     
 - [**Riferimenti cmdlet per i servizi di Microsoft 365**](cmdlet-references-for-microsoft-365-services.md)
     
-    Informazioni sui cmdlet per i moduli di PowerShell per Microsoft 365.
+    Informazioni sui cmdlet per PowerShell per Microsoft 365 moduli.
     
 - [**Risorse della community di Microsoft 365 per PowerShell**](microsoft-365-powershell-community-resources.md)
     

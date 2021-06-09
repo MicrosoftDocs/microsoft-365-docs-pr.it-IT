@@ -1,5 +1,5 @@
 ---
-title: Statistiche della ricerca in Advance eDiscovery
+title: Statistiche di ricerca in Advance eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,32 +22,32 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49750777"
 ---
-# <a name="search-statistics-in-advanced-ediscovery"></a>Statistiche della ricerca in Advanced eDiscovery
+# <a name="search-statistics-in-advanced-ediscovery"></a>Statistiche di ricerca in Advanced eDiscovery
 
-Un modo per convalidare i risultati della ricerca è quello di esaminare le statistiche relative ai risultati per assicurarsi che siano allineati alle aspettative. Al termine di una ricerca, le statistiche di alto livello vengono visualizzate nel riquadro a comparsa dei dettagli della ricerca:
+Un modo per convalidare i risultati della ricerca è esaminare le statistiche relative ai risultati per assicurarsi che siano allineati alle aspettative. Al termine di una ricerca, le statistiche di alto livello vengono visualizzate nel riquadro a comparsa dei dettagli della ricerca:
 
 - Numero e volume di elementi recuperati dalla ricerca
 
 - Numero e volume di elementi parzialmente indicizzati o non indicizzati trovati nei percorsi di ricerca
 
-- Numero di cassette postali e percorsi ricercati.
+- Numero di cassette postali e posizioni ricercate.
 Per visualizzare statistiche più dettagliate, fai clic su "Statistiche" dal riquadro a comparsa dei dettagli della ricerca.
 
 ## <a name="summary-view"></a>Visualizzazione Riepilogo
 
-Nella visualizzazione Riepilogo, è possibile visualizzare i risultati della ricerca suddivisi per tipo di posizione (ad esempio Exchange). Per ogni tipo di posizione, è possibile vedere:
+Nella visualizzazione Riepilogo è possibile visualizzare i risultati della ricerca suddivisi per tipo di posizione (ad esempio, Exchange). Per ogni tipo di posizione, è possibile visualizzare:
 
-- Numero di posizioni in cui sono presenti elementi che soddisfano le condizioni di ricerca
+- Numero di posizioni con elementi corrispondenti alle condizioni di ricerca
 
-- Numero di elementi da questi percorsi che soddisfano le condizioni di ricerca
+- Numero di elementi di queste posizioni che soddisfano le condizioni di ricerca
 
 - Volume totale di elementi che soddisfano le condizioni di ricerca.
 
 ## <a name="top-locations-view"></a>Visualizzazione Posizioni principali
 
-Nella visualizzazione Posizioni principali vengono visualizzate le singole posizioni con il maggior numero di corrispondenze. Per ogni posizione, verranno visualizzati:
+Nella visualizzazione Posizioni principali vengono visualizzate le singole posizioni con il maggior numero di corrispondenze. Per ogni posizione, verrà visualizzato:
 
-- Nome percorso (ad esempio URL di SharePoint)
+- Nome percorso (ad esempio, SHAREPOINT URL)
 
 - Tipo di posizione
 
@@ -57,22 +57,22 @@ Nella visualizzazione Posizioni principali vengono visualizzate le singole posiz
 
 ## <a name="queries-view"></a>Visualizzazione Query
 
-Se nella query sono state utilizzate righe di parole chiave o parole chiave (c:s), è possibile visualizzare la suddivisione della query nella visualizzazione Query per tipo di posizione. Per ogni tipo di posizione, verrà visualizzato:
+Se nella query sono state utilizzate parole chiave (c:s) o righe di parole chiave, è possibile visualizzare la suddivisione della query nella visualizzazione Query per tipo di posizione. Per ogni tipo di posizione, verranno visualizzati:
 
-- Parte: questa colonna avrà la parola "Primary" o "Keyword". "Primary" indica che la riga presenta le statistiche sull'intera query, mentre "Keyword" indica uno dei componenti della query.
+- Parte: questa colonna avrà la parola "Primary" o "Keyword". "Primaria" indica che la riga presenta statistiche sull'intera query, mentre "Parola chiave" indica uno dei componenti della query.
 
-- Query: il componente di query effettivo a cui fa riferimento la riga. Se Part è "Primary", questa sarà l'intera query. Se part era "Keyword", verrà visualizzato uno dei componenti di query qui.
+- Query: componente di query effettivo a cui fa riferimento la riga. Se Part è "Primary", questa sarà l'intera query. se Part era "Keyword", verrà visualizzato uno dei componenti di query qui.
   
   - Quando si esegue una ricerca in tutto il contenuto nelle cassette postali (senza specificare alcuna parola chiave), la query effettiva è (dimensione >= 0) in modo che tutti gli elementi siano restituiti
   
-  - Quando si esegue una ricerca nei siti di SharePoint Online e OneDrive for Business, vengono aggiunti i due componenti seguenti:
+  - Quando si esegue una SharePoint online e OneDrive for Business siti web, vengono aggiunti i due componenti seguenti:
     
-    - NOT IsExternalContent:1 - esclude qualsiasi contenuto da un'organizzazione di SharePoint locale
+    - NOT IsExternalContent:1 - Esclude qualsiasi contenuto da un'organizzazione SharePoint locale
     
-    - NOT isOneNotePage: 1 - esclude tutti i file di OneNote perché si tratta di duplicati di qualsiasi documento che corrisponde alla query di ricerca.
+    - NOT isOneNotePage: 1 - Esclude tutti i OneNote perché si tratta di duplicati di qualsiasi documento corrispondente alla query di ricerca.
 
 - Numero di posizioni in cui sono presenti elementi che soddisfano le condizioni di ricerca.
 
-- Numero di elementi di questi percorsi che soddisfano le condizioni di ricerca.
+- Numero di elementi di queste posizioni che soddisfano le condizioni di ricerca.
 
 - Volume totale di elementi che soddisfano le condizioni di ricerca.

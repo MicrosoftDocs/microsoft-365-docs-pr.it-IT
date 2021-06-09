@@ -20,7 +20,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come usare i criteri di gestione delle informazioni per controllare e tenere traccia di elementi come la durata della conservazione del contenuto o le azioni che gli utenti possono eseguire con tale contenuto.
+description: Informazioni su come usare i criteri di gestione delle informazioni per controllare e tenere traccia di elementi quali la durata della conservazione del contenuto o le azioni che gli utenti possono eseguire con tale contenuto.
 ms.openlocfilehash: dfb1aeb3dbd3a2b17f18bbd03d5f4d3e198e4c47
 ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT

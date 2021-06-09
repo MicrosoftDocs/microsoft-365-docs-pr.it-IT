@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come Advanced eDiscovery in Microsoft 365 supporta le lingue cinese, giapponese e coreano (CJK), che utilizzano un set di caratteri a byte doppio.
+description: Informazioni su Advanced eDiscovery in Microsoft 365 lingue cinese, giapponese e coreano (CJK), che utilizzano un set di caratteri a byte doppio.
 ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "50926602"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>Supporto del linguaggio CJK per Advanced eDiscovery
 
-Advanced eDiscovery supporta le lingue dei set di caratteri a due byte (tra cui cinese semplificato, cinese tradizionale, giapponese e coreano, note collettivamente come lingue *CJK)* per i seguenti scenari avanzati in un set di recensioni:
+Advanced eDiscovery supporta le lingue del set di caratteri a byte doppio (tra cui cinese semplificato, cinese tradizionale, giapponese e coreano, note collettivamente come lingue *CJK)* per i seguenti scenari avanzati in un set di recensioni:
 
 - Quando si [esegue una query sui dati in un set di revisione](review-set-search.md).
 
@@ -37,7 +37,7 @@ Advanced eDiscovery supporta le lingue dei set di caratteri a due byte (tra cui 
 
 **Come si crea una ricerca per raccogliere elementi che contengono caratteri CJK?**
 
-È possibile utilizzare i caratteri CJK per [le](building-search-queries.md#keyword-searches)ricerche con parole chiave, le query con [parole chiave](keyword-queries-and-search-conditions.md) e le condizioni di ricerca durante la ricerca di contenuto in Advanced eDiscovery. La ricerca di caratteri CJK è supportata anche durante la ricerca di contenuto in Core eDiscovery e ricerca contenuto.
+È possibile utilizzare i caratteri CJK per [le](building-search-queries.md#keyword-searches)ricerche con parole chiave, le [query](keyword-queries-and-search-conditions.md) con parole chiave e le condizioni di ricerca durante la ricerca di contenuto in Advanced eDiscovery. La ricerca di caratteri CJK è supportata anche durante la ricerca di contenuto in Core eDiscovery e ricerca contenuto.
 
 È disponibile il supporto CJK per tutti [gli](keyword-queries-and-search-conditions.md#search-operators) operatori di ricerca e le condizioni di [ricerca,](keyword-queries-and-search-conditions.md#search-conditions)inclusi gli operatori **booleani AND**, **OR**, **NOT** e **NEAR**.
 
@@ -47,7 +47,7 @@ Se si è certi che i percorsi di contenuto o gli elementi contengano caratteri C
 
 Dipende dallo scenario di ricerca.
 
-- Quando si [esegue una query sui dati in un set di](review-set-search.md) revisione in Advanced eDiscovery, è possibile cercare più lingue.
+- Quando si [esegue una query sui dati in un set](review-set-search.md) di Advanced eDiscovery, è possibile cercare più lingue.
 
 - Quando [crei una ricerca per raccogliere dati,](create-search-to-collect-data.md)crea una ricerca separata per ogni lingua di destinazione. Ad esempio, se si sta cercando un documento contenente sia cinese che coreano, selezionare Cinese per la prima query e coreano per la seconda query.
 
@@ -69,7 +69,7 @@ No, nessuna delle ricerche e dei set di revisioni esistenti verrà cambiata. Non
 
 **Come si modifica la lingua di visualizzazione in cinese, giapponese o coreano?**
 
-Per informazioni su come modificare la lingua di visualizzazione e il fuso orario, vedere Come impostare le impostazioni di lingua [e area geografica per Office 365.](/office365/troubleshoot/access-management/set-language-and-region)
+Per informazioni su come modificare la lingua di visualizzazione e il fuso orario, vedere Come impostare le impostazioni di lingua e [area geografica per Office 365](/office365/troubleshoot/access-management/set-language-and-region).
 
 ## <a name="known-issues"></a>Problemi noti
 

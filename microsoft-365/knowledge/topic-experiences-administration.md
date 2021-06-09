@@ -19,33 +19,33 @@ ms.locfileid: "50107724"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Modificare il nome del Centro argomenti in Microsoft Viva Topics
 
-È possibile modificare il nome del Centro argomenti [nell'interfaccia di amministrazione di Microsoft 365.](https://admin.microsoft.com) Per eseguire queste attività, è necessario essere un amministratore globale o un amministratore di SharePoint.
+È possibile modificare il nome del centro argomenti [nell'Microsoft 365 di amministrazione.](https://admin.microsoft.com) Per eseguire queste attività, è SharePoint amministratore globale o amministratore globale.
 
 ## <a name="to-access-topics-management-settings"></a>Per accedere alle impostazioni di gestione degli argomenti:
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Impostazioni** e **quindi su Impostazioni organizzazione.**
+1. Nell'Microsoft 365 di amministrazione fare clic su **Impostazioni** e quindi **su Impostazioni organizzazione.**
 2. Nella scheda **Servizi** fare clic su **Esperienze argomento.**
 
-    ![Connettere le persone alle conoscenze](../media/admin-org-knowledge-options-completed.png) 
+    ![Connessione persone alla conoscenza](../media/admin-org-knowledge-options-completed.png) 
 
 3. Selezionare la **scheda Centro** argomenti. Per informazioni su ogni impostazione, vedere le sezioni seguenti.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
-##  <a name="update-your-topic-center-name"></a>Aggiornare il nome del Centro argomenti
+##  <a name="update-your-topic-center-name"></a>Aggiornare il nome del centro argomenti
 
 Per modificare il nome del Centro argomenti
 
 1. Nella scheda **Centro argomenti,** in **Nome centro argomenti,** selezionare **Modifica.**
-2. Nella casella **Nome centro argomenti**  della pagina Modifica nome centro argomenti digitare il nuovo nome per il centro argomenti.
+2. Nella casella **Nome centro argomenti**  della pagina Modifica nome centro argomenti digitare il nuovo nome per il Centro argomenti.
 3. Selezionare **Salva**
 
     ![Modificare il nome del centro argomenti](../media/manage-topic-center-name.png)  
 
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire l'individuazione degli argomenti negli argomenti di Microsoft Viva](topic-experiences-discovery.md)
+[Gestire l'individuazione degli argomenti in Microsoft Viva Topics](topic-experiences-discovery.md)
 
-[Gestire la visibilità degli argomenti negli argomenti di Microsoft Viva](topic-experiences-knowledge-rules.md)
+[Gestire la visibilità degli argomenti in Microsoft Viva Topics](topic-experiences-knowledge-rules.md)
 
-[Gestire le autorizzazioni per gli argomenti negli argomenti di Microsoft Viva](topic-experiences-user-permissions.md)
+[Gestire le autorizzazioni per gli argomenti in Microsoft Viva Topics](topic-experiences-user-permissions.md)

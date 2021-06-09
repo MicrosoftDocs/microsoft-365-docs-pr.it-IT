@@ -78,7 +78,7 @@ Puoi anche passare manualmente all'area dell'evento corrispondente alla funziona
 
 4. Incollare il codice XML per la funzionalità da cui si desidera filtrare gli eventi nella sezione XML.
 
-5. Seleziona **OK**. Specificare un nome per il filtro.
+5. Selezionare **OK**. Specificare un nome per il filtro.
 
 6. Verrà creata una visualizzazione personalizzata che filtra solo gli eventi correlati a tale funzionalità.
 

@@ -1,5 +1,5 @@
 ---
-title: Visualizzare gli utenti di Microsoft 365 con licenza e senza licenza con PowerShell
+title: Visualizzare utenti con licenza e Microsoft 365 senza licenza con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: Questo articolo spiega come usare PowerShell per visualizzare gli account utente di Microsoft 365 con e senza licenza.
+description: In questo articolo viene illustrato come usare PowerShell per visualizzare gli account utente Microsoft 365 con licenza e senza licenza.
 ms.openlocfilehash: b38ee7674abaea6b63d0661ba79a9814f8c54229
 ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48651385"
 ---
-# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Visualizzare gli utenti di Microsoft 365 con licenza e senza licenza con PowerShell
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Visualizzare utenti con licenza e Microsoft 365 senza licenza con PowerShell
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Gli account utente nell'organizzazione di Microsoft 365 potrebbero avere alcune, tutte o nessuna delle licenze disponibili assegnate dai piani di gestione delle licenze disponibili nell'organizzazione. È possibile usare PowerShell per Microsoft 365 per trovare rapidamente gli utenti con licenza e senza licenza nell'organizzazione.
+Gli account utente nell'organizzazione Microsoft 365 possono avere alcune, tutte o nessuna delle licenze disponibili assegnate dai piani di licenza disponibili nell'organizzazione. È possibile usare PowerShell per Microsoft 365 trovare rapidamente gli utenti con licenza e senza licenza nell'organizzazione.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Prima di [tutto, connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
  
 Per visualizzare l'elenco di tutti gli account utente dell'organizzazione a cui NON è stato assegnato alcun piano di licenza (utenti senza licenza), eseguire il comando seguente:
   
@@ -50,12 +50,12 @@ Get-AzureAdUser | ForEach { $licensed=$True ; For ($i=0; $i -le ($_.AssignedLice
 ```
 
 >[!Note]
->Per elencare tutti gli utenti dell'abbonamento, utilizzare il `Get-AzureAdUser -All $true` comando.
+>Per elencare tutti gli utenti nella sottoscrizione, utilizzare il `Get-AzureAdUser -All $true` comando.
 >
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Prima di [tutto, connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Per visualizzare l'elenco di tutti gli account utente e il relativo stato di licenza nell'organizzazione, eseguire il comando seguente in PowerShell:
   

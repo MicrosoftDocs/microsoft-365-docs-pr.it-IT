@@ -32,7 +32,7 @@ ms.locfileid: "51571033"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Secure Score](microsoft-secure-score.md) è una misurazione del livello di sicurezza di un'organizzazione, con un numero maggiore che indica più azioni di miglioramento intraprese. È disponibile nel Centro sicurezza https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+[Microsoft Secure Score](microsoft-secure-score.md) è una misurazione del livello di sicurezza di un'organizzazione, con un numero maggiore che indica più azioni di miglioramento intraprese. È disponibile nel centro sicurezza https://security.microsoft.com/securescore [Microsoft 365 sicurezza.](overview-security-center.md)
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Acquisire informazioni dettagliate sulle attività che hanno influenzato il punteggio
 

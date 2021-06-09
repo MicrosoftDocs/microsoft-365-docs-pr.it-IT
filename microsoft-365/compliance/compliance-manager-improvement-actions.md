@@ -58,7 +58,7 @@ Dopo aver identificato l'assegnatare appropriato, assicurarsi che dispongano di 
 
 3. Selezionare **Salva e chiudi**. L'utente assegnato riceverà un messaggio di posta elettronica in cui viene spiegato che l'azione di miglioramento è stata assegnata, con un collegamento diretto all'azione di miglioramento. 
 > [!NOTE]
-> I clienti della US Government Community (GCC) High and Department of Defense (DoD) non riceveranno un messaggio di posta elettronica quando vengono assegnate azioni di miglioramento.
+> I clienti Community (GCC) High and Department of Defense (DoD) non riceveranno un messaggio di posta elettronica quando vengono assegnate azioni di miglioramento.
 
 L'utente assegnato può quindi eseguire le azioni consigliate.
 

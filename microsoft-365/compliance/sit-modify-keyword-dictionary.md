@@ -1,5 +1,5 @@
 ---
-title: Modificare un dizionario parole chiave
+title: Modificare un dizionario di parole chiave
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -25,7 +25,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/27/2021
 ms.locfileid: "52685211"
 ---
-# <a name="modify-a-keyword-dictionary"></a>Modificare un dizionario parole chiave
+# <a name="modify-a-keyword-dictionary"></a>Modificare un dizionario di parole chiave
 
 Può essere necessario modificare le parole chiave in uno dei dizionari di parole chiave o modificare uno dei dizionari predefiniti. A tale scopo, è possibile utilizzare PowerShell o il Centro conformità.
 

@@ -39,7 +39,7 @@ Questo articolo consente di valutare la protezione di rete abilitando la funzion
 
 Abilitare la protezione di rete in modalità di controllo per vedere quali indirizzi IP e domini sarebbero stati bloccati. Puoi assicurarti che non influisca sulle app line-of-business o avere un'idea della frequenza con cui si verificano i blocchi.
 
-1. Digitare **powershell** nel menu Start, fare clic con il pulsante destro del mouse Windows PowerShell **e** selezionare Esegui come **amministratore**
+1. Digita **powershell** nel menu Start, fai clic con il pulsante destro **del** mouse Windows PowerShell e scegli Esegui **come amministratore**
 2. Immettere il cmdlet seguente:
 
     ```PowerShell
@@ -54,11 +54,11 @@ Abilitare la protezione di rete in modalità di controllo per vedere quali indir
 
 La connessione di rete sarà consentita e verrà visualizzato un messaggio di prova.
 
-![Notifica di esempio che indica connessione bloccata: l'amministratore IT ha causato il blocco di questa connessione di rete da parte della sicurezza di Windows. Contattare l'help desk IT.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Notifica di esempio che indica connessione bloccata: l'amministratore IT ha Sicurezza di Windows bloccare questa connessione di rete. Contattare l'help desk IT.](/microsoft-365/security/defender-endpoint/images/np-notif)
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Esaminare gli eventi di protezione di rete nel Visualizzatore eventi di Windows
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Esaminare gli eventi di protezione di rete nel Visualizzatore Windows eventi
 
-Per esaminare le app che sarebbero state bloccate, aprire il Visualizzatore eventi e filtrare l'ID evento 1125 nel registro Microsoft-Windows-Windows-Defender/Operational. Nella tabella seguente sono elencati tutti gli eventi di protezione di rete.
+Per esaminare le app che sarebbero state bloccate, aprire il Visualizzatore eventi e filtrare l'ID evento 1125 nel registro microsoft-Windows-Windows-Defender/Operativo. Nella tabella seguente sono elencati tutti gli eventi di protezione di rete.
 
 | ID evento | Provide/Source | Descrizione |
 |-|-|-|

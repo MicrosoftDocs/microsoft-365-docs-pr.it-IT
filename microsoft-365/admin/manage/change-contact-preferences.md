@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
-description: Aggiornare le informazioni di contatto dell'organizzazione e scegliere le comunicazioni correlate al prodotto Microsoft 365 che si desidera ricevere.
+description: Aggiornare le informazioni di contatto dell'organizzazione e scegliere Microsoft 365 comunicazioni correlate al prodotto che si desidera ricevere.
 ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
 ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
@@ -26,15 +26,15 @@ ms.locfileid: "44407933"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Modificare le preferenze di contatto per le comunicazioni Microsoft
 
-Usare la **pagina Preferenze** di contatto per aggiornare le informazioni di contatto dell'organizzazione e scegliere le comunicazioni correlate al prodotto Microsoft 365 che si desidera ricevere.
+Utilizzare la **pagina Preferenze** contatto per aggiornare le informazioni di contatto dell'organizzazione e scegliere Microsoft 365 comunicazioni correlate al prodotto che si desidera ricevere.
   
-Leggere Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore [in Microsoft 365](update-phone-number-and-email-address.md) per informazioni su come modificare il numero di telefono cellulare e l'indirizzo di posta elettronica dell'amministratore.
+Leggere [Aggiornare il numero di telefono e l'indirizzo di](update-phone-number-and-email-address.md) posta elettronica dell'amministratore in Microsoft 365 per informazioni su come modificare il numero di telefono cellulare e l'indirizzo di posta elettronica dell'amministratore.
   
 Per sapere come cambiare le informazioni del profilo dell'azienda, ad esempio il nome, l'indirizzo e il numero di telefono della società e i dati del contatto tecnico, vedere [Cambiare l'indirizzo dell'organizzazione, l'indirizzo di posta elettronica del contatto tecnico e altre informazioni](change-address-contact-and-more.md).
   
 ## <a name="to-update-your-information"></a>Per aggiornare le informazioni
   
-1. Nell'interfaccia di amministrazione, selezionare **l'icona** Impostazioni in alto a destra dell'intestazione.
+1. Nell'interfaccia di amministrazione seleziona **l'icona Impostazioni** in alto a destra dell'intestazione.
 
 2. Selezionare **Preferenze contatto.**
 
@@ -45,7 +45,7 @@ Per sapere come cambiare le informazioni del profilo dell'azienda, ad esempio il
 
 5. Scegliere **Salva**.
   
-Per Office 365 Enterprise, Microsoft 365 Business Standard e Microsoft 365 Business Basic, la prima volta che ci si è registrati come amministratore di Microsoft 365, a seconda del paese o dell'area geografica degli utenti dell'organizzazione, gli utenti potrebbero essere automaticamente registrati per ricevere comunicazioni correlate al prodotto.
+Per Office 365 Enterprise, Microsoft 365 Business Standard e Microsoft 365 Business Basic, la prima volta che si è effettuato l'accesso come amministratore di Microsoft 365, a seconda del paese o dell'area geografica degli utenti dell'organizzazione, gli utenti potrebbero essere automaticamente registrati per ricevere le comunicazioni correlate al prodotto.
   
 In caso di domande sulla fatturazione, vedere:
   
