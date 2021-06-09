@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: Fornisce un elenco di collegamenti a informazioni utili per la distribuzione dei carichi di lavoro di Office Server in Microsoft Azure.
+description: Fornisce un elenco di collegamenti a informazioni utili per la distribuzione dei carichi di lavoro Office Server in Microsoft Azure.
 ms.openlocfilehash: 47e885d3db7d9211b917414d03efdc5b716dcd1e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,13 +27,13 @@ ms.locfileid: "50907493"
 ---
 # <a name="hybrid-solutions"></a>Soluzioni ibride
 
-Con Microsoft Azure, è possibile distribuire alcuni carichi di lavoro di Office Server che in genere sono stati distribuiti in locale nei servizi infrastruttura di Azure.
+Con Microsoft Azure, è possibile distribuire alcuni carichi di lavoro di Office Server in genere distribuiti in locale nei servizi di infrastruttura di Azure.
   
-Per l'infrastruttura di identità di Microsoft 365 in Azure:
+Per Microsoft 365'infrastruttura di identità in Azure:
 
 - [Utilizzare Azure AD per l'autenticazione di SharePoint Server](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
-- [Distribuire la sincronizzazione della directory di Microsoft 365 in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Distribuire Microsoft 365 sincronizzazione della directory in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Connettere una rete locale a una rete virtuale di Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     

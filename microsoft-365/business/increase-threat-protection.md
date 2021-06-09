@@ -89,7 +89,7 @@ Per creare una regola di trasporto della posta:
 |Eseguire le operazioni seguenti. . .|Invia una notifica al destinatario tramite messaggio|
 |Fornire il testo del messaggio|Non aprire questi tipi di file da persone che non si conoscono perché potrebbero contenere macro con codice dannoso.|
 
-Per ulteriori informazioni, vedere:
+Per altre informazioni, vedere:
 
 - [Ransomware: come ridurre i rischi](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 

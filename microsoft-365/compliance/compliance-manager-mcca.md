@@ -111,7 +111,7 @@ Seguire queste istruzioni per eseguire un report in base a un percorso specifico
   | 8  | Corea del Sud |
   | 9  | Nord America (canada escluso) |
   | 10   | Sud America |
-  | 11  | Sudafrica |
+  | 11 | Sudafrica |
   | 12  | Svizzera |
   | 13 | Emirati Arabi Uniti |
   | 14  | Regno Unito |

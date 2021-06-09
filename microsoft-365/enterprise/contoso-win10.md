@@ -23,7 +23,7 @@ ms.locfileid: "50907687"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Distribuzione di Windows 10 Enterprise per Contoso
 
-Prima dell'implementazione di Microsoft 365 per le aziende, Contoso aveva PC e dispositivi compatibili con Windows che eseguono una combinazione di Windows 7 (10%), Windows 8.1 (65%) e Windows 10 (25%). Contoso desiderava aggiornare i PROPRI PC per Windows 10 Enterprise sfruttando la sicurezza avanzata e abbassando il sovraccarico IT dovuto alle distribuzioni automatizzate degli aggiornamenti. 
+Prima dell'implementazione di Microsoft 365 per le aziende, Contoso aveva PC e dispositivi compatibili con Windows che eseguono una combinazione di Windows 7 (10%), Windows 8.1 (65%) e Windows 10 (25%). Contoso desiderava aggiornare i propri PC per Windows 10 Enterprise la sicurezza avanzata e ridurre il sovraccarico IT dovuto alle distribuzioni automatizzate degli aggiornamenti. 
 
 Dopo aver valutato la propria infrastruttura e le proprie esigenze aziendali, Contoso ha identificato i seguenti requisiti chiave per la distribuzione:
 
@@ -62,10 +62,10 @@ Per completare la distribuzione degli aggiornamenti sul posto di Windows 10 Ente
 
 1. Abilitazione della cache peer per Configuration Manager.
 2. Creazione di pacchetti di Windows personalizzati basati sulle immagini del Volume Licensing Service Center.
-3. Usato Configuration Manager per distribuire i pacchetti di Windows nei punti di distribuzione nella rete e distribuire le build ai tre gruppi di gestione temporanea di convalida e distribuzione.
+3. È stato usato Configuration Manager per distribuire i pacchetti Windows ai punti di distribuzione nella rete e le build distribuite nei tre gruppi di gestione temporanea di convalida e distribuzione.
 4. Esecuzione della valutazione della riuscita per i computer e i dispositivi negli anelli di gestione temporanea della convalida e della distribuzione mediante soluzioni Integrità del dispositivo e Conformità aggiornamenti di Windows Analytics.
-5. In base alle informazioni di Windows Analytics, Contoso ha determinato la versione di Windows 10 Enterprise da distribuire nel gruppo di distribuzione generale.
-6. Ha eseguito le sequenze di attività di distribuzione di Configuration Manager per distribuire il pacchetto di Windows selezionato nel gruppo di distribuzione generale.
+5. In base alle informazioni Windows Analytics, Contoso ha determinato la versione di Windows 10 Enterprise da distribuire nel gruppo di distribuzione generale.
+6. Ha eseguito le sequenze di attività di distribuzione di Configuration Manager per distribuire il pacchetto Windows selezionato nel gruppo di distribuzione generale.
 7. Pc e dispositivi monitorati nel gruppo di distribuzione generale usando le soluzioni Device Health e Update Compliance per risolvere i problemi.
 
 Ecco l'architettura di distribuzione degli aggiornamenti sul posto e degli aggiornamenti continui di Contoso.
@@ -78,11 +78,11 @@ Questa infrastruttura è costituita da:
   - Ottiene le immagini per i pacchetti di Windows 10 Enterprise da Microsoft Volume Licensing Center in Microsoft Network.
   - Si tratta del punto di amministrazione centrale per i pacchetti di distribuzione.
 - Punti di distribuzione regionali che in genere si trovano negli hub regionali di Contoso.
-- PC e dispositivi Windows in varie posizioni che ricevono e installano i pacchetti di distribuzione per l'aggiornamento sul posto o gli aggiornamenti in corso in base all'appartenenza ai gruppi.
+- Windows PC e dispositivi in varie posizioni che ricevono e installano i pacchetti di distribuzione per l'aggiornamento sul posto o gli aggiornamenti in corso in base all'appartenenza ai gruppi.
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Informazioni su come Contoso sta sfruttando l'infrastruttura di Configuration Manager per distribuire e mantenere le app di [Microsoft 365 per le aziende](contoso-o365pp.md) correnti all'interno dell'organizzazione. 
+Informazioni su come Contoso sta sfruttando [](contoso-o365pp.md) l'infrastruttura di Configuration Manager per distribuire e mantenere i dati Microsoft 365 Apps for enterprise all'interno dell'organizzazione. 
 
 ## <a name="see-also"></a>Vedere anche
 

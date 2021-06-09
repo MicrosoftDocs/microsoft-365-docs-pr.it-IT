@@ -44,7 +44,7 @@ Ai dispositivi inclusi nell'elenco **Azioni dispositivo** (home page di amminist
 |**Stato**|**Descrizione**|
 |:-----|:-----|
 |Gestito da Intune  <br/> |Gestito da Microsoft 365 Business Premium.  <br/> |
-|Disattivazione in sospeso  <br/> |Microsoft 365 Business Premium si prepara a rimuovere i dati aziendali dal dispositivo.  <br/> |
+|Disattivazione in sospeso  <br/> |Microsoft 365 Business Premium si sta preparando per rimuovere i dati aziendali dal dispositivo.  <br/> |
 |Disattivazione in corso  <br/> |Microsoft 365 Business Premium sta attualmente rimuovendo i dati aziendali dal dispositivo.  <br/> |
 |Disattivazione non riuscita  <br/> | L'azione di rimozione dei dati aziendali non è riuscita.  <br/> |
 |Ritiro annullato  <br/> |L'azione di ritiro è stata annullata.  <br/> |

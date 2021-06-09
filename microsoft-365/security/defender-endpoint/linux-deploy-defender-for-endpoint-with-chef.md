@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/20/2021
 ms.locfileid: "51903929"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Distribuire Defender per endpoint su Linux con Chef
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Distribuire Defender per Endpoint su Linux con Chef
 
 Informazioni preliminari:
 
@@ -37,7 +37,7 @@ Dopo aver creato il manuale di cucina, crea una cartella di file all'interno del
 
 `mkdir mdatp/files`
 
-Trasferire il file ZIP di onboarding di Linux Server che può essere scaricato dal portale di Microsoft Defender Security Center in questa nuova cartella di file.
+Trasferire il file ZIP di onboarding di Linux Server che può essere scaricato dal portale Microsoft Defender Security Center in questa nuova cartella di file.
 
 In Workstation di Chef passare alla cartella mdatp/recipes. Questa cartella viene creata al momento della generazione del manuale di cucina. Usa l'editor di testo preferito (ad esempio vi o nano) per aggiungere le istruzioni seguenti alla fine del file default.rb:
 -   include_recipe '::onboard_mdatp'
@@ -127,7 +127,7 @@ end
 Per includere questo passaggio come parte della ricetta basta aggiungere include_recipe ':: settings_mdatp' al file default.rb all'interno della cartella della ricetta.
 Puoi anche usare crontab per pianificare gli aggiornamenti automatici [Pianificare un aggiornamento di Microsoft Defender for Endpoint (Linux).](linux-update-MDE-Linux.md)
 
-Uninstall MDATP cookbook:
+Disinstallare MDATP manuale di cucina:
 
 ```powershell
 #Uninstall the Defender package

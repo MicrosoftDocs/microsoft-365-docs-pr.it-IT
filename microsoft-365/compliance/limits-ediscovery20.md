@@ -50,7 +50,7 @@ Nella tabella seguente sono elencati i limiti per i blocchi associati a un Advan
 
 | Descrizione del limite | Limite |
 |:-----|:-----|
-|Numero massimo di cassette postali in un singolo caso di blocco. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate Microsoft 365 gruppi, Microsoft Teams e Yammer gruppi. <br/> |1,000  <br/> |
+|Numero massimo di cassette postali in un singolo caso di blocco. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate Microsoft 365 gruppi, Microsoft Teams e Yammer gruppi. <br/> |1.000  <br/> |
 |Numero massimo di siti in un singolo caso di blocco. Questo limite include il totale combinato di OneDrive for Business, siti SharePoint e siti associati a Microsoft 365 Groups, Microsoft Teams e Yammer Groups.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Limiti di indicizzazione
@@ -76,12 +76,12 @@ I limiti descritti in questa sezione sono correlati all'utilizzo dello strumento
 |Numero massimo di ricerche che possono essere eseguite contemporaneamente. |Nessun limite |
 |Numero massimo di ricerche che un singolo utente può avviare contemporaneamente. |10   | 
 |Numero massimo di caratteri per una query di ricerca (inclusi gli operatori e le condizioni). |10.000 &nbsp; <sup>2</sup>|
-|Numero massimo di caratteri per una query di ricerca per SharePoint e OneDrive for Business siti (inclusi operatori e condizioni). |10,000<br>4.000 con caratteri jolly &nbsp; <sup>2</sup>|
+|Numero massimo di caratteri per una query di ricerca per SharePoint e OneDrive for Business siti (inclusi operatori e condizioni). |10.000<br>4.000 con caratteri jolly &nbsp; <sup>2</sup>|
 |Numero minimo di caratteri alfa per i caratteri jolly del prefisso. ad esempio, **uno \* *_ o _* set \***.|3 |  
 |Numero massimo di varianti restituite quando si utilizza il carattere jolly prefisso per cercare una frase esatta o quando si utilizza un carattere jolly prefisso e l'operatore **booleano NEAR.** |10.000 &nbsp; <sup>3</sup>|
 |Numero massimo di elementi per cassetta postale utente visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti. |100|
-|Numero massimo di elementi di tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.|1,000|
-|Numero massimo di cassette postali che possono essere visualizzate in anteprima per i risultati della ricerca.  Se sono presenti più di 1000 cassette postali che contengono elementi che corrispondono alla query di ricerca, solo le prime 1.000 cassette postali con il maggior numero di risultati sono disponibili per l'anteprima.|1,000|
+|Numero massimo di elementi di tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.|1.000|
+|Numero massimo di cassette postali che possono essere visualizzate in anteprima per i risultati della ricerca.  Se sono presenti più di 1000 cassette postali che contengono elementi che corrispondono alla query di ricerca, solo le prime 1.000 cassette postali con il maggior numero di risultati sono disponibili per l'anteprima.|1.000|
 |Numero massimo di elementi da SharePoint siti OneDrive for Business visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti. |200|
 |Numero massimo di SharePoint e OneDrive for Business che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 200 siti che contengono elementi che corrispondono alla query di ricerca, solo i 200 siti principali con il maggior numero di risultati sono disponibili per l'anteprima.|200|
 |Numero massimo di elementi per cassetta postale delle cartelle pubbliche visualizzato nella pagina di anteprima per le ricerche. |100|

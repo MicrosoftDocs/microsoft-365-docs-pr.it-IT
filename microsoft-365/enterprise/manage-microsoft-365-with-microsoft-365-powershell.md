@@ -18,7 +18,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: Informazioni su come gestire utenti, licenze e app di Microsoft 365 con PowerShell.
+description: Informazioni su come gestire Microsoft 365 utenti, licenze e app 365 con PowerShell.
 ms.openlocfilehash: dee8fbce03e38a954ddea5a8ec86248f9209d96c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,15 +28,15 @@ ms.locfileid: "50905105"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Gestire Microsoft 365 con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-PowerShell per Microsoft 365 è un potente strumento di gestione che integra l'interfaccia di amministrazione di Microsoft 365. Ad esempio, è possibile utilizzare l'automazione di PowerShell per gestire facilmente più account utente e licenze e per creare report.
+PowerShell per Microsoft 365 è un potente strumento di gestione che integra l'interfaccia Microsoft 365 di amministrazione. Ad esempio, è possibile utilizzare l'automazione di PowerShell per gestire facilmente più account utente e licenze e per creare report.
 
-Selezionare uno degli argomenti seguenti per informazioni su come usare PowerShell per gestire Microsoft 365:
+Selezionare uno degli argomenti seguenti per informazioni su come usare PowerShell per gestire i Microsoft 365:Select from the following topics to learn how to use PowerShell to manage Microsoft 365:
   
-- [**Introduzione**](getting-started-with-microsoft-365-powershell.md)
+- [**Per iniziare**](getting-started-with-microsoft-365-powershell.md)
 
-    Iniziare da qui se non si ha familiarità con PowerShell per Microsoft 365 e si desidera installare i moduli di Microsoft 365 e connettersi all'abbonamento.
+    Iniziare da qui se non si ha familiarità con PowerShell per Microsoft 365 e si desidera installare i moduli Microsoft 365 e connettersi all'abbonamento.
 
 - [**Account utente, licenze e gruppi**](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
@@ -44,7 +44,7 @@ Selezionare uno degli argomenti seguenti per informazioni su come usare PowerShe
 
 - [**SharePoint**](manage-sharepoint-online-with-microsoft-365-powershell.md)
 
-    Iniziare da qui se si desidera utilizzare i comandi di automazione per gestire SharePoint.
+    Iniziare da qui se si desidera utilizzare i comandi di automazione per gestire i SharePoint.
 
 - [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
 
@@ -60,8 +60,8 @@ Selezionare uno degli argomenti seguenti per informazioni su come usare PowerShe
 
 - [**Partner di autorizzazioni di accesso delegato (DAP)**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    Iniziare da qui se si desidera utilizzare i partner Syndication e Cloud Solution Provider (CSP) per gestire i tenant dei clienti di Microsoft 365.
+    Iniziare da qui se si desidera utilizzare i partner syndication e Cloud Solution Provider (CSP) per gestire i tenant Microsoft 365 clienti.
 
 - [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
-    Iniziare da qui per gestire Skype for Business online.
+    Iniziare da qui per gestire Skype for Business Online.

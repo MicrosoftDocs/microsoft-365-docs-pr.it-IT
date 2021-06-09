@@ -56,14 +56,14 @@ Tutte le attività monitorate DLP vengono registrate nel Microsoft 365 di contro
 
 Un'implementazione DLP in genere segue queste fasi principali.
 
-- [Pianificare la prevenzione della perdita dei dati](#plan-for-dlp)
+- [Piano per la prevenzione della perdita dei dati](#plan-for-dlp)
 - [Preparare la prevenzione della perdita dei dati](#prepare-for-dlp)
 - [Distribuire i criteri nell'ambiente di produzione](#deploy-your-policies-in-production)
 
 
 <!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
 
-### <a name="plan-for-dlp"></a>Pianificare la prevenzione della perdita dei dati
+### <a name="plan-for-dlp"></a>Piano per la prevenzione della perdita dei dati
 
 Microsoft 365 Il monitoraggio e la protezione DLP sono nativi delle applicazioni che gli utenti usano ogni giorno. Ciò consente di proteggere gli elementi sensibili delle organizzazioni dalle attività rischiose anche se gli utenti non sono abituati a pensare e pratiche di prevenzione della perdita di dati. Se l'organizzazione e gli utenti sono nuovi delle procedure di prevenzione della perdita dei dati, l'adozione della prevenzione della perdita dei dati potrebbe richiedere una modifica ai processi aziendali e vi sarà un cambiamento di cultura per gli utenti. Tuttavia, con una pianificazione, un test e un'ottimizzazione adeguati, i criteri DLP proteggono gli elementi sensibili riducendo al minimo eventuali interruzioni del processo aziendale.
 
@@ -86,7 +86,7 @@ Un'implementazione DLP corretta dipende tanto dal fatto che gli utenti vengono a
 È possibile applicare i criteri DLP ai dati in fase di riposo, ai dati in uso e ai dati in movimento nelle posizioni, ad esempio:
 
 - Exchange Online posta elettronica
-- Siti SharePoint Online
+- Siti di SharePoint Online
 - Account di OneDrive
 - Messaggi di chat e canali di Teams
 - Microsoft Cloud App Security

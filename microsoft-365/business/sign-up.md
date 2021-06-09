@@ -54,7 +54,7 @@ Guarda questo video per una breve panoramica del processo di iscrizione.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Per iscriverti e acquistare Microsoft 365 per la tua azienda, completa i passaggi seguenti:
 

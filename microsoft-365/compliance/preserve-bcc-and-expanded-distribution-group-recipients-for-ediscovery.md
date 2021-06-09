@@ -11,7 +11,7 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: In-Place conservazione, conservazione per controversia legale e criteri di conservazione di Microsoft 365 consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità e eDiscovery normativi.
+description: In-Place conservazione, conservazione per controversia legale e Microsoft 365 di conservazione consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità e eDiscovery normativi.
 ms.openlocfilehash: f00ed951fb68778b9c62ae874c2cca964bd6cb5c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "50927942"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservazione dei destinatari Ccn e del gruppo di destinazione esteso per eDiscovery
   
-In-Place conservazione, conservazione per controversia legale e criteri di conservazione di [Microsoft 365](./retention.md) (creati nel Centro sicurezza & conformità) consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità e eDiscovery normativi. Per impostazione predefinita, le informazioni sui destinatari indirizzati direttamente nei campi A e Cc di un messaggio sono incluse in tutti i messaggi. Tuttavia, l'organizzazione potrebbe richiedere la possibilità di cercare e riprodurre dettagli su tutti i destinatari di un messaggio. Ciò include:
+In-Place conservazione, conservazione per controversia legale e criteri di conservazione Microsoft 365 [(creati](./retention.md) nel Centro sicurezza & conformità) consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità e eDiscovery normativi. Per impostazione predefinita, le informazioni sui destinatari indirizzati direttamente nei campi A e Cc di un messaggio sono incluse in tutti i messaggi. Tuttavia, l'organizzazione potrebbe richiedere la possibilità di cercare e riprodurre dettagli su tutti i destinatari di un messaggio. Tra questi vi sono anche:
   
 - **Destinatari indirizzati utilizzando il campo Ccn di un messaggio:** I destinatari Ccn vengono archiviati nel messaggio nella cassetta postale del mittente, ma non sono inclusi nelle intestazioni del messaggio recapitato ai destinatari. 
     
@@ -33,13 +33,13 @@ Exchange Online e Exchange Server 2013 (aggiornamento cumulativo 7 e versioni su
 
 Come già indicato, le informazioni sui destinatari Ccn vengono archiviate con il messaggio nella cassetta postale del mittente. Queste informazioni sono indicizzate e disponibili per i blocchi e le ricerche eDiscovery. 
   
-Le informazioni relative ai destinatari del gruppo di distribuzione espanso vengono archiviate con il messaggio dopo aver abilitato il blocco sul posto o il blocco per controversia legale per una cassetta postale. In Office 365, queste informazioni vengono archiviate anche quando un criterio di conservazione di Microsoft 365 viene applicato a una cassetta postale. L'appartenenza al gruppo di distribuzione viene determinata al momento dell'invio del messaggio. L'elenco dei destinatari espanso archiviato con il messaggio non viene influenzato dalle modifiche apportate all'appartenenza del gruppo dopo l'invio del messaggio. 
+Le informazioni relative ai destinatari del gruppo di distribuzione espanso vengono archiviate con il messaggio dopo aver abilitato il blocco sul posto o il blocco per controversia legale per una cassetta postale. In Office 365, queste informazioni vengono archiviate anche quando un criterio Microsoft 365 di conservazione viene applicato a una cassetta postale. L'appartenenza al gruppo di distribuzione viene determinata al momento dell'invio del messaggio. L'elenco dei destinatari espanso archiviato con il messaggio non viene influenzato dalle modifiche apportate all'appartenenza del gruppo dopo l'invio del messaggio. 
   
 | Informazioni su... | Sono archiviati in... | Sono archiviati per impostazione predefinita? | Sono accessibili a... |
 |:-----|:-----|:-----|:-----|
 |Destinatari A e Cc  <br/> |Proprietà del messaggio nelle cassette postali del mittente e dei destinatari.  <br/> |Sì  <br/> |Mittente, destinatari e responsabili della conformità  <br/> |
 |Destinatari Ccn  <br/> |Proprietà del messaggio nella cassetta postale del mittente.  <br/> |Sì  <br/> |Mittente e responsabili della conformità  <br/> |
-|Destinatari del gruppo di distribuzione espanso  <br/> |Proprietà del messaggio nella cassetta postale del mittente.  <br/> |No. Le informazioni sui destinatari del gruppo di distribuzione espanso vengono archiviate dopo che una cassetta postale è stata messa In-Place blocco per controversia legale o assegnata a un criterio di conservazione di Microsoft 365.  <br/> |Responsabili della conformità  <br/> |
+|Destinatari del gruppo di distribuzione espanso  <br/> |Proprietà del messaggio nella cassetta postale del mittente.  <br/> |No. Le informazioni espanse sul destinatario del gruppo di distribuzione vengono archiviate dopo che una cassetta postale è stata In-Place conservazione per controversia legale o assegnata a un criterio Microsoft 365 conservazione.  <br/> |Responsabili della conformità  <br/> |
    
 ## <a name="searching-for-messages-sent-to-bcc-and-expanded-distribution-group-recipients"></a>Cercare i messaggi inviati a destinatari Ccn e del gruppo di distribuzione espanso
 
@@ -72,11 +72,11 @@ Scenario 2: Bob invia un'e-mail a John (A/Cc) e Jack (Ccn direttamente o indiret
 
  **D. Quando e dove vengono archiviate le informazioni dei destinatari Ccn?**
   
-R. Per impostazione predefinita, le informazioni dei destinatari Ccn vengono mantenute nel messaggio originale nella cassetta postale del mittente. Se il destinatario Ccn è un gruppo di distribuzione, l'appartenenza al gruppo di distribuzione viene espansa solo se la cassetta postale del mittente è in attesa o assegnata a un criterio di conservazione di Microsoft 365.
+R. Per impostazione predefinita, le informazioni dei destinatari Ccn vengono mantenute nel messaggio originale nella cassetta postale del mittente. Se il destinatario Ccn è un gruppo di distribuzione, l'appartenenza al gruppo di distribuzione viene espansa solo se la cassetta postale del mittente è in attesa o è assegnata a un Microsoft 365 di conservazione.
   
  **D. Quando e dove viene archiviato l'elenco dei destinatari del gruppo di distribuzione espanso?**
   
-R. L'appartenenza al gruppo viene espansa al momento dell'invio del messaggio. L'elenco dei membri del gruppo di distribuzione espanso viene archiviato nel messaggio originale nella cassetta postale del mittente. La cassetta postale del mittente deve essere In-Place blocco, conservazione per controversia legale o assegnata a un criterio di conservazione di Microsoft 365.
+R. L'appartenenza al gruppo viene espansa al momento dell'invio del messaggio. L'elenco dei membri del gruppo di distribuzione espanso viene archiviato nel messaggio originale nella cassetta postale del mittente. La cassetta postale del mittente deve essere In-Place blocco, conservazione per controversia legale o assegnata a un criterio Microsoft 365 conservazione.
   
  **D. I destinatari A/Cc sono in grado di visualizzare quali destinatari sono stati inclusi come Ccn?**
   
@@ -84,7 +84,7 @@ R. No. Queste informazioni non sono incluse nelle intestazioni dei messaggi e no
   
  **D. Come è possibile garantire che i destinatari del gruppo di distribuzione espanso siano sempre conservati?**
   
-R. Per garantire che i membri del gruppo di distribuzione espanso siano sempre conservati con un [messaggio,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) conservare tutte le cassette postali o creare un criterio di conservazione di Microsoft 365 a livello di organizzazione. 
+R. Per garantire che i membri del gruppo di distribuzione espanso siano sempre conservati con un [messaggio,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) conservare tutte le cassette postali o creare un criterio di conservazione Microsoft 365 a livello di organizzazione. 
   
  **D. Quali tipi di gruppi sono supportati?**
   

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Manager
+title: Compliance Manager di Microsoft
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52244396"
 ---
-# <a name="microsoft-compliance-manager"></a>Microsoft Compliance Manager
+# <a name="microsoft-compliance-manager"></a>Compliance Manager di Microsoft
 
 **In questo articolo:** Scopri cos'è Compliance Manager, come semplifica la conformità e riduce i rischi e i relativi componenti chiave.
 
@@ -51,7 +51,7 @@ Compliance Manager consente di semplificare la conformità e ridurre i rischi fo
 
 - Valutazioni predefinite per standard e normative comuni del settore e regionali o valutazioni personalizzate per soddisfare le esigenze di conformità specifiche (le valutazioni disponibili dipendono dal contratto di licenza; [per ulteriori informazioni](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance), vedere .
 
-- Funzionalità del flusso di lavoro che consentono di completare in modo efficiente le valutazioni dei rischi tramite un singolo strumento.
+- Funzionalità del flusso di lavoro che consentono di completare in modo efficiente la valutazione dei rischi tramite uno singolo strumento.
 
 - Istruzioni dettagliate sulle azioni di miglioramento suggerite per garantire la conformità agli standard e alle normative più rilevanti per l'organizzazione. Per le azioni gestite da Microsoft, vedrai i dettagli dell'implementazione e i risultati del controllo.
 
@@ -166,4 +166,4 @@ Per informazioni su come accedere, assegnare autorizzazioni e ruoli, configurare
 
 Iniziare quindi a personalizzare Compliance Manager per garantire la conformità agli standard di settore più importanti per l'organizzazione [configurando valutazioni](compliance-manager-assessments.md).
 
-Per aiutarti a rispettare le normative sulla privacy dei dati, abbiamo progettato un flusso di lavoro per guidare l'utente attraverso un processo end-to-end per pianificare e implementare funzionalità in Microsoft 365, incluso l'utilizzo di Compliance Manager. Per ulteriori informazioni, vedere [Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+Per aiutarti a rispettare le normative sulla privacy dei dati, abbiamo progettato un flusso di lavoro per guidare l'utente attraverso un processo end-to-end per pianificare e implementare funzionalità in Microsoft 365, incluso l'utilizzo di Compliance Manager. Per altre informazioni, vedere [Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 

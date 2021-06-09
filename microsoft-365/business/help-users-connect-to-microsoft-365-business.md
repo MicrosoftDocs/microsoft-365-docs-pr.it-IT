@@ -1,5 +1,5 @@
 ---
-title: Aiutare gli utenti a connettersi a Microsoft 365 Business Premium
+title: Aiutare gli utenti a connettersi Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -35,14 +35,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578448"
 ---
-# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Aiutare gli utenti a connettersi a Microsoft 365 Business Premium
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Aiutare gli utenti a connettersi Microsoft 365 Business Premium
 
-Dopo aver completato l'installazione, i criteri dei dispositivi predefiniti sono pronti per l'applicazione. Nei dispositivi mobili, gli utenti scaricano le app di Office. I criteri vengono quindi applicati quando l'utente accede con il proprio account aziendale o dell'istituto di istruzione. Prima di applicare i criteri a PC Windows, ad esempio per un aggiornamento sul posto, sono necessarie altre operazioni. Vedi e condividi gli argomenti seguenti per aiutare gli utenti a configurarsi e a essere connessi:
+Dopo aver completato l'installazione, i criteri dei dispositivi predefiniti sono pronti per l'applicazione. Nei dispositivi mobili, gli utenti scaricano Office app. I criteri vengono quindi applicati quando l'utente accede con il proprio account aziendale o dell'istituto di istruzione. Prima di applicare i criteri a PC Windows, ad esempio per un aggiornamento sul posto, sono necessarie altre operazioni. Vedi e condividi gli argomenti seguenti per aiutare gli utenti a configurarsi e a essere connessi:
   
-[Configurare i dispositivi Windows per gli utenti di Microsoft 365 Business Premium](set-up-windows-devices.md)
+[Configurare dispositivi Windows per Microsoft 365 Business Premium utenti](set-up-windows-devices.md)
   
 [Usare la guida dettagliata per aggiungere profili e dispositivi Autopilot](add-autopilot-devices-and-profile.md)
   
-[Configurare i dispositivi mobili per gli utenti di Microsoft 365 Business Premium](set-up-mobile-devices.md)
+[Configurare i dispositivi mobili per Microsoft 365 Business Premium utenti](set-up-mobile-devices.md)
   
 

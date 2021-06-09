@@ -32,11 +32,11 @@ Per informazioni su come rimuovere le dipendenze da TLS 1.0 e 1.1, vedere il seg
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-Abbiamo già iniziato la deprecazione di TLS 1.0 e 1.1 a partire da gennaio 2020. Tutti i client, i dispositivi o i servizi che si connettono a Office 365 tramite TLS 1.0 o 1.1 nelle istanze DoD o GCC High non sono supportati. Per i clienti commerciali di Office 365, la deprecazione di TLS 1.0 e 1.1 inizierà il 15 ottobre 2020 e l'implementazione continuerà nelle settimane e nei mesi seguenti. 
+Abbiamo già iniziato la deprecazione di TLS 1.0 e 1.1 a partire da gennaio 2020. Tutti i client, i dispositivi o i servizi che si connettono a Office 365 tramite TLS 1.0 o 1.1 nelle istanze DoD o GCC High non sono supportati. Per i clienti commerciali di Office 365, la deprecazione di TLS 1.0 e 1.1 inizierà il 15 ottobre 2020 e l'implementazione continuerà nelle settimane e nei mesi successivi. 
 
 Assicurarsi che tutte le combinazioni client-server e browser-server utilizzino TLS 1.2 (o versione successiva) per garantire una connessione ai servizi di Office 365. A tale scopo, potrebbe essere necessario aggiornare determinate combinazioni client-server e browser-server.
 
-Dovrai aggiornare le applicazioni che chiamano le API di Microsoft 365 su TLS 1.0 o TLS 1.1 per usare TLS 1.2. .NET 4.5 per impostazione predefinita è TLS 1.1. Per aggiornare la configurazione .NET, vedere [How to enable Transport Layer Security (TLS) 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+Dovrai aggiornare le applicazioni che chiamano Microsoft 365 API su TLS 1.0 o TLS 1.1 per usare TLS 1.2. .NET 4.5 per impostazione predefinita è TLS 1.1. Per aggiornare la configurazione .NET, vedere [How to enable Transport Layer Security (TLS) 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
 I client seguenti non sono in grado di utilizzare TLS 1.2. Aggiornare tali client per garantire l'accesso continuo al servizio.
 

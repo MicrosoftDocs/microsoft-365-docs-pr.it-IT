@@ -41,15 +41,15 @@ Per una [descrizione](#more-information) dettagliata delle informazioni incluse 
 
 - Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
 
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Passaggio 1: connettersi a PowerShell & Centro sicurezza e conformità
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Passaggio 1: Connessione a PowerShell del Centro sicurezza & conformità
 
-Il primo passaggio consiste nel connettersi a PowerShell & Centro sicurezza e conformità per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
+Il primo passaggio consiste nel connettersi a PowerShell in Centro sicurezza e conformità per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Passaggio 2: eseguire lo script per segnalare i blocchi associati ai casi di eDiscovery
 
 Dopo aver eseguito la connessione & PowerShell al Centro sicurezza e conformità, il passaggio successivo consiste nel creare ed eseguire lo script che raccoglie informazioni sui casi di eDiscovery nell'organizzazione.
 
-1. Salvare il testo seguente in un file Windows PowerShell script utilizzando il suffisso del nome di file ps1. ad esempio, CaseHoldsReport.ps1.
+1. Salvare il testo seguente in un file Windows PowerShell script utilizzando un suffisso di nome file di .ps1; ad esempio, CaseHoldsReport.ps1.
 
    ```powershell
    #script begin
@@ -178,7 +178,7 @@ Il report di conservazione dei casi creato quando si esegue lo script in questo 
 
 - Se un caso è chiuso, l'utente che lo ha chiuso e l'ora e la data in cui è stato chiuso.
 
-- Le cassette postali di Exchange e i percorsi dei siti di SharePoint in attesa.
+- Le Exchange cassette postali e SharePoint siti che sono in attesa.
 
 - Se il blocco è basato su query, la sintassi della query.
 

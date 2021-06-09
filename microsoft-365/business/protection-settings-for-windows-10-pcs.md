@@ -1,5 +1,5 @@
 ---
-title: Modificare o creare le impostazioni di protezione dei dispositivi per i PC Windows 10
+title: Modificare o creare le impostazioni di protezione dei dispositivi Windows 10 PC
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Informazioni sulle impostazioni disponibili in Microsoft 365 per le aziende per proteggere i dispositivi Windows 10.
+description: Informazioni sulle impostazioni disponibili in Microsoft 365 per le aziende per proteggere Windows 10 dispositivi.
 ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -30,15 +30,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578228"
 ---
-# <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modificare o creare le impostazioni di protezione dei dispositivi per i PC Windows 10
+# <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modificare o creare le impostazioni di protezione dei dispositivi Windows 10 PC
 
 Questo articolo si applica a Microsoft 365 Business Premium.
 
-Dopo aver configurato le impostazioni di protezione predefinite di Windows nella pagina Installazione, puoi aggiungerne di nuove che si applicano a tutti gli utenti o a un set di utenti. Puoi anche modificare uno qualsiasi di quelli che hai creato.
+Dopo aver configurato le impostazioni di protezione Windows predefinite nella pagina Installazione, è possibile aggiungerne di nuove che si applicano a tutti gli utenti o a un set di utenti. Puoi anche modificare uno qualsiasi di quelli che hai creato.
 
-## <a name="create-protection-settings-for-windows-10-devices"></a>Creare impostazioni di protezione per i dispositivi Windows 10
+## <a name="create-protection-settings-for-windows-10-devices"></a>Creare impostazioni di protezione per Windows 10 dispositivi
 
-Guarda un video su come proteggere i dispositivi Windows 10 con Microsoft 365 Business Premium:
+Guarda un video su come proteggere Windows 10 dispositivi con Microsoft 365 Business Premium:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
@@ -55,18 +55,18 @@ Guarda un video su come proteggere i dispositivi Windows 10 con Microsoft 365 Bu
 6. In **Chi otterrà queste impostazioni?** specificare i destinatari. Se non si vuole usare il gruppo di sicurezza predefinito **Tutti gli utenti**, scegliere **Modifica**, cercare il gruppo di sicurezza che riceverà queste impostazioni \> **Seleziona**.
 7. Infine, scegliere **Fatto** per salvare il criterio e assegnarlo ai dispositivi. 
 
-## <a name="edit-windows-10-protection-settings"></a>Modificare le impostazioni di protezione di Windows 10
+## <a name="edit-windows-10-protection-settings"></a>Modificare Windows 10 di protezione
  
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
 2. Nel riquadro di spostamento sinistro scegliere **Criteri** \> **dispositivi.**
-1. Scegli un criterio dispositivo Windows esistente e quindi **Modifica**.
+1. Scegli un criterio Windows dispositivo esistente e quindi **Modifica**.
 1. Scegliere **Modifica** accanto a un'impostazione che si desidera modificare e quindi **Salva.**
 
 ## <a name="available-settings"></a>Impostazioni disponibili
 
 Per impostazione predefinita, tutte le impostazioni sono **attivate**. Sono disponibili le impostazioni seguenti.
   
-Per ulteriori informazioni, vedere Come eseguire il mapping delle funzionalità [di protezione in Microsoft 365 Premium alle impostazioni di Intune.](map-protection-features-to-intune-settings.md) 
+Per ulteriori informazioni, vedere [How do protection features in Microsoft 365 Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
   
 |||
 |:-----|:-----|
@@ -75,7 +75,7 @@ Per ulteriori informazioni, vedere Come eseguire il mapping delle funzionalità 
 |Protegge i PC dalle minacce del Web in Microsoft Edge  <br/> |Attiva le impostazioni di Microsoft Edge che consentono di proteggere gli utenti da siti e download dannosi.  <br/> |
 |Usa regole per ridurre la superficie di attacco dei dispositivi  <br/> |Quando è attivata, la riduzione della superficie di attacco consente di bloccare azioni e app generalmente usate dal malware per infettare i dispositivi. Questa impostazione è disponibile solo se Windows Defender Antivirus è attivato. Per altre informazioni, vedere [Ridurre le superfici di attacco con le regole di riduzione della superficie di attacco](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |
 |Protegge le cartelle da minacce come il ransomware  <br/> |Questa impostazione usa l'accesso controllato alle cartelle per proteggere i dati aziendali dalle modifiche effettuate da app sospette o pericolose, come il ransomware. A questi tipi di app viene impedito di apportare modifiche nelle cartelle protette. Questa impostazione è disponibile solo se Windows Defender Antivirus è attivato. Per [ulteriori informazioni, vedere Proteggere le cartelle con accesso](/mem/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) controllato alle cartelle.  <br/> |
-|Impedisce l'accesso alla rete a contenuti potenzialmente pericolosi su Internet  <br/> |Utilizzare questa impostazione per bloccare le connessioni degli utenti in uscita a posizioni Internet con reputazione bassa che potrebbero ospitare tentativi di phishing, exploit o altro contenuto dannoso. Questa impostazione è disponibile solo se Windows Defender antivirus è impostato su **On.** Per ulteriori informazioni, vedere [Proteggere la rete.](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)  <br/> |
+|Impedisce l'accesso alla rete a contenuti potenzialmente pericolosi su Internet  <br/> |Utilizzare questa impostazione per bloccare le connessioni degli utenti in uscita a posizioni Internet con reputazione bassa che potrebbero ospitare tentativi di phishing, exploit o altro contenuto dannoso. Questa impostazione è disponibile solo se Windows Defender Antivirus è impostato su **On.** Per ulteriori informazioni, vedere [Proteggere la rete.](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)  <br/> |
 |Proteggi file e cartelle dei PC dall'accesso non autorizzato con BitLocker  <br/> |Bitlocker protegge i dati crittografando le unità disco rigido del computer e impedisce l'esposizione dei dati in caso di furto o smarrimento di un computer. Per altre informazioni, vedi Domande [frequenti su Bitlocker.](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)  <br/> |
 |Consenti agli utenti di scaricare app da Microsoft Store  <br/> |Consente agli utenti di scaricare e installare app da Microsoft Store. Le app possono essere di qualsiasi tipo, da giochi a strumenti per la produttività, quindi questa impostazione viene lasciata **attivata**, ma è possibile disattivarla per rafforzare la sicurezza.  <br/> |
 |Consenti agli utenti di accedere a Cortana  <br/> |Cortana può essere molto utile! Cortana può attivare o disattivare automaticamente le impostazioni, fornire indicazioni stradali e assicurarsi  di essere in tempo per gli appuntamenti, quindi questa impostazione viene conservata per impostazione predefinita.  <br/> |

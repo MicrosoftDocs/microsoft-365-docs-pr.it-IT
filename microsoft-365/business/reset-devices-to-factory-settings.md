@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Scopri come usare Microsoft 365 per le aziende per reimpostare in fabbrica i dispositivi Windows 10 gestiti, ripristinando le impostazioni originali al momento dell'acquisto.
+description: Scopri come usare Microsoft 365 per le aziende per reimpostare in fabbrica Windows 10 dispositivi gestiti, ripristinando le impostazioni originali al momento dell'acquisto.
 ms.openlocfilehash: 29d5b8758ef7d86c7ac283460d0a1a87bffaf5f3
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "51578208"
 
 Questo articolo si applica a Microsoft 365 Business Premium.
 
-Il ripristino delle impostazioni predefinite ripristina le impostazioni originali di un dispositivo, ossia quelle disponibili al momento dell'acquisto. Tutte le app e i dati aggiunti nel dispositivo dopo l'acquisto vengono rimossi. Puoi usare Microsoft 365 per le aziende per reimpostare in fabbrica i dispositivi Windows 10 che gestisci.
+Il ripristino delle impostazioni predefinite ripristina le impostazioni originali di un dispositivo, ossia quelle disponibili al momento dell'acquisto. Tutte le app e i dati aggiunti nel dispositivo dopo l'acquisto vengono rimossi. Puoi usare Microsoft 365 per le aziende per reimpostare in fabbrica Windows 10 dispositivi gestiti.
   
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     

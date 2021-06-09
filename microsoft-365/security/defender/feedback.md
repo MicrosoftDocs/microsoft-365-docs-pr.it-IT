@@ -1,6 +1,6 @@
 ---
-title: Inviare commenti e suggerimenti su Microsoft 365 Defender
-description: Fornire commenti e suggerimenti sul prodotto su Microsoft 365 Defender
+title: Fornire feedback su Microsoft 365 Defender
+description: Fornire feedback sul prodotto su Microsoft 365 Defender
 keywords: feedback, sicurezza m365, sicurezza, 365, funzionalità
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/20/2021
 ms.locfileid: "51899341"
 ---
-# <a name="provide-feedback-on-microsoft-365-defender"></a>Inviare commenti e suggerimenti su Microsoft 365 Defender
+# <a name="provide-feedback-on-microsoft-365-defender"></a>Fornire feedback su Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

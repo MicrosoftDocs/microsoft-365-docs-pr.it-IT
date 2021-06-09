@@ -15,7 +15,7 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: In questo articolo sono disponibili informazioni sull'autenticazione moderna ibrida e sui prerequisiti per l'utilizzo con i server Skype for Business ed Exchange locali.
+description: In questo articolo sono disponibili informazioni sull'autenticazione moderna ibrida e sui prerequisiti per l'utilizzo con server Skype for Business e Exchange locali.
 ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -48,7 +48,7 @@ La gestione delle identità utente con l'autenticazione moderna offre agli ammin
 
 Tenere presente che, poiché il funzionamento di Skype for Business è strettamente correlato a quello di Exchange, l’approccio di accesso degli utenti client di Skype for Business sarà influenzato dallo stato di autenticazione moderna di Exchange. Ciò si applica anche se si ha un’architettura ibrida dei _domini separati_ di Skype for Business in cui si ha sia Skype for Business Online che Skype for Business in locale, con utenti ospitati in entrambe le posizioni.
 
-Per ulteriori informazioni sull'autenticazione moderna in Office 365, vedere Supporto delle app client di [Office 365 - Autenticazione a più fattori.](microsoft-365-client-support-multi-factor-authentication.md)
+Per ulteriori informazioni sull'autenticazione moderna in Office 365, [vedere Office 365 Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
 > [!IMPORTANT]
 > Dal mese di agosto 2017 tutti i nuovi tenant di Office 365 che includono Skype for Business Online ed Exchange Online hanno l'autenticazione moderna abilitata per impostazione predefinita. I tenant preesistenti non cambiano lo stato autenticazione moderna predefinito, tutti i nuovi tenant invece supportano automaticamente il set espanso delle funzionalità d’identità elencate in precedenza. Per controllare lo stato di autenticazione moderna, vedere la sezione [Verifica dello stato di autenticazione moderna in ambiente locale](hybrid-modern-auth-overview.md#BKMK_CheckStatus).

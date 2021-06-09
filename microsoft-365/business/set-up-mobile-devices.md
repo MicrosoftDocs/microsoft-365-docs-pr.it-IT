@@ -47,7 +47,7 @@ Guarda un breve video su come configurare app Office su dispositivi iOS con Micr
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
 Accedere all' **App Store** e digitare Microsoft Outlook nel campo di ricerca.
   
@@ -79,7 +79,7 @@ Guarda un video sull'installazione di Outlook e Office nei dispositivi Android.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
 Per iniziare la configurazione sul tuo telefono Android, vai al Play Store.
   

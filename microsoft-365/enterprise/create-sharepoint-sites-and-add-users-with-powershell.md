@@ -1,5 +1,5 @@
 ---
-title: Creare siti di SharePoint Online e aggiungere utenti con PowerShell
+title: Creare SharePoint online e aggiungere utenti con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Riepilogo: utilizzare PowerShell per creare nuovi siti di SharePoint Online e quindi aggiungere utenti e gruppi a tali siti.'
+description: 'Riepilogo: utilizzare PowerShell per creare nuovi siti SharePoint Online e quindi aggiungere utenti e gruppi a tali siti.'
 ms.openlocfilehash: eb6c2817c8760ca222da8a7c2b14cbfcda4eb4b8
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,21 +26,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907619"
 ---
-# <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Creare siti di SharePoint Online e aggiungere utenti con PowerShell
+# <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Creare SharePoint online e aggiungere utenti con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Quando si utilizza PowerShell per Microsoft 365 per creare siti di SharePoint Online e aggiungere utenti, è possibile eseguire attività in modo rapido e ripetuto molto più velocemente di quanto sia possibile nell'interfaccia di amministrazione di Microsoft 365. È inoltre possibile eseguire attività che non è possibile eseguire nell'interfaccia di amministrazione di Microsoft 365. 
+Quando si utilizza PowerShell per Microsoft 365 per creare siti di SharePoint Online e aggiungere utenti, è possibile eseguire rapidamente e ripetutamente attività molto più velocemente di quanto sia possibile nell'interfaccia di amministrazione di Microsoft 365. È inoltre possibile eseguire attività che non è possibile eseguire nell'Microsoft 365 di amministrazione. 
 
 ## <a name="connect-to-sharepoint-online"></a>Connessione a SharePoint Online
 
-Le procedure descritte in questo argomento richiedono la connessione a SharePoint Online. Per istruzioni, vedere [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Le procedure descritte in questo argomento richiedono la connessione a SharePoint Online. Per istruzioni, vedere [Connessione to SharePoint PowerShell online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>Passaggio 1: Creare nuove raccolte siti tramite PowerShell
 
-Creare più siti con PowerShell e un file CSV creato utilizzando il codice di esempio fornito e blocco note. Per questa procedura, l'utente dovrà sostituire le informazioni del segnaposto tra parentesi con quelle specifiche del proprio sito e tenant. Questo processo consente di creare un singolo file ed eseguire un singolo comando di PowerShell che usa tale file. Ciò rende le azioni intraprese ripetibili e portatili ed elimina molti, se non tutti, gli errori che possono provenire dal digitare lunghi comandi in SharePoint Online Management Shell. La procedura è divisa in due parti. Prima di tutto si creerà un file CSV e quindi si farà riferimento a tale file csv tramite PowerShell, che utilizzerà il relativo contenuto per creare i siti.
+Creare più siti con PowerShell e un file .csv creato utilizzando il codice di esempio fornito e Blocco note. Per questa procedura, l'utente dovrà sostituire le informazioni del segnaposto tra parentesi con quelle specifiche del proprio sito e tenant. Questo processo consente di creare un singolo file ed eseguire un singolo comando di PowerShell che usa tale file. Ciò rende le azioni intraprese ripetibili e portatili ed elimina molti, se non tutti, gli errori che possono provenire dal digitare lunghi comandi in SharePoint Online Management Shell. La procedura è divisa in due parti. Prima di tutto si creerà un file .csv e quindi si farà riferimento .csv file usando PowerShell, che utilizzerà il relativo contenuto per creare i siti.
 
-Il cmdlet PowerShell importa il file CSV e lo esegue tramite pipe in un ciclo all'interno delle parentesi graffe che leggono la prima riga del file come intestazioni di colonna. Il cmdlet PowerShell quindi scorre i record rimanenti, crea una nuova raccolta siti per ogni record e assegna le proprietà della raccolta siti in base alle intestazioni di colonna.
+Il cmdlet PowerShell importa il file .csv e lo esegue tramite pipe in un ciclo all'interno delle parentesi graffe che leggono la prima riga del file come intestazioni di colonna. Il cmdlet PowerShell quindi scorre i record rimanenti, crea una nuova raccolta siti per ogni record e assegna le proprietà della raccolta siti in base alle intestazioni di colonna.
 
 ### <a name="create-a-csv-file"></a>Creare un file .csv
 
@@ -56,12 +56,12 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>Dove *tenant* è il nome del tenant e *proprietario* è il nome utente dell'utente nel tenant a cui si desidera concedere il ruolo di amministratore principale della raccolta siti.<br/>È possibile premere CTRL+H quando si utilizza il Blocco note per eseguire la sostituzione in blocco più velocemente.<br/>
+<br/>Dove *tenant* è il nome del tenant e *proprietario* è il nome utente dell'utente nel tenant a cui si desidera concedere il ruolo di amministratore principale della raccolta siti.<br/>È possibile premere CTRL+H quando si utilizza Blocco note sostituzione in blocco più velocemente.<br/>
 
 2. Salvare il file sul desktop **comeSiteCollections.csv**.<br/>
 
 > [!TIP]
-> Prima di utilizzare questo o qualsiasi altro file con estensione csv o Windows PowerShell script, è consigliabile verificare che non siano presenti caratteri estranei o non stampabili. Aprire il file in Word e, nella barra multifunzione, fare clic sull'icona del paragrafo per mostrare i caratteri non stampabili. Non dovrebbero esserci caratteri estranei non stampabili. Ad esempio, non dovrebbe esserci alcun segno di paragrafo oltre quello finale alla fine del file.
+> Prima di utilizzare questo o qualsiasi altro file di script .csv o Windows PowerShell, è consigliabile verificare che non siano presenti caratteri estranei o non stampabili. Aprire il file in Word e, nella barra multifunzione, fare clic sull'icona del paragrafo per mostrare i caratteri non stampabili. Non dovrebbero esserci caratteri estranei non stampabili. Ad esempio, non dovrebbe esserci alcun segno di paragrafo oltre quello finale alla fine del file.
 
 ### <a name="run-the-windows-powershell-command"></a>Eseguire il comando di Windows PowerShell:
 
@@ -82,7 +82,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 4. Notare la nuova raccolta di siti nell'elenco. Utilizzando il file CSV di esempio, vengono mostrate le raccolte siti seguenti: **TeamSite01,** **Blog01,** **Project01** e **Community01**
 
-Questo è tutto. Sono state create più raccolte siti utilizzando il file CSV creato e un singolo Windows PowerShell comando. L'utente è ora pronto a creare e assegnare utenti a questi siti.
+Questo è tutto. Sono state create più raccolte siti utilizzando il file .csv creato e un singolo Windows PowerShell comando. L'utente è ora pronto a creare e assegnare utenti a questi siti.
 
 ## <a name="step-2-add-users-and-groups"></a>Passaggio 2: aggiungere utenti e gruppi
 
@@ -162,7 +162,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [Connettersi a PowerShell per SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Gestire i gruppi del sito di SharePoint Online con PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+[Gestire SharePoint gruppi del sito di SharePoint Online con PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
 [Gestire Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   

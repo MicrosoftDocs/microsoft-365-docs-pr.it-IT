@@ -75,5 +75,5 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
 ## <a name="related-content"></a>Contenuto correlato
 
 [Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)\
-[Impostare la password di un singolo utente](set-password-to-never-expire.md) in modo che non scada mai (articolo)\
+[Impostare la password di un singolo utente in modo che non scada mai](set-password-to-never-expire.md) (articolo)\
 [Microsoft 365 Business video di formazione (pagina](../../business-video/index.yml) di collegamento)

@@ -72,6 +72,6 @@ Formattare una colonna per evidenziare i dettagli in essa:
 
 - Fai doppio clic su un elemento per aprirlo e aggiorna lo stato dell'ordine.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Creare un elenco dall'app Elenchi](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)

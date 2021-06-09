@@ -40,12 +40,12 @@ Questo articolo si applica a Microsoft 365 Business Premium.
 
 I criteri creati sono specifici per il tipo di dispositivo e possono essere applicati a gruppi di utenti specifici. È quindi possibile creare un criterio applicabile ai dirigenti e un altro per tutti gli altri utenti.
   
-Per i dispositivi Android e iOS, è possibile aggiungere o modificare criteri di applicazione che proteggono le app di Office e i file di lavoro usati dalle app di Office. Siamo in grado di controllare un po' di più i dispositivi Windows 10, in modo che i criteri delle applicazioni possano includere più impostazioni, come la crittografia e la protezione per le posizioni di rete e cloud. Puoi anche creare criteri dispositivo per i dispositivi Windows 10 che applicano impostazioni come la protezione da virus e gli aggiornamenti automatici. Ti consigliamo di attenerti ai criteri creati durante l'installazione, ma se vuoi ottimizzare i criteri o aggiungere altri criteri, vedi questi articoli:
+Per i dispositivi Android e iOS, puoi aggiungere o modificare criteri di applicazione che proteggono le app Office e i file di lavoro usati Office app. Siamo in grado di controllare i dispositivi Windows 10 un po' di più, in modo che i criteri delle applicazioni possano includere più impostazioni, come la crittografia e la protezione per le posizioni di rete e cloud. Puoi anche creare criteri dispositivo per i dispositivi Windows 10 che applicano impostazioni come la protezione da virus e gli aggiornamenti automatici. Ti consigliamo di attenerti ai criteri creati durante l'installazione, ma se vuoi ottimizzare i criteri o aggiungere altri criteri, vedi questi articoli:
   
 [Impostare le configurazioni delle app per dispositivi Android o iOS](app-protection-settings-for-android-and-ios.md)
   
 [Impostare le configurazioni dei dispositivi per PC Windows 10](protection-settings-for-windows-10-pcs.md)
   
-[Configurare le impostazioni di protezione delle app per i dispositivi Windows 10](protection-settings-for-windows-10-devices.md)
+[Configurare le impostazioni di protezione delle app Windows 10 dispositivi](protection-settings-for-windows-10-devices.md)
   
 

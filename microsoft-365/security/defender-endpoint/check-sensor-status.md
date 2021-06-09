@@ -34,7 +34,7 @@ ms.locfileid: "51904165"
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-checksensor-abovefoldlink)
 
-Il **riquadro Dispositivi con problemi del** sensore è disponibile nel dashboard Operazioni di sicurezza. Questo riquadro fornisce informazioni sulla capacità del singolo dispositivo di fornire dati del sensore e comunicare con il servizio Defender for Endpoint. Segnala il numero di dispositivi che richiedono attenzione e ti aiuta a identificare i dispositivi problematici e a intervenire per correggere i problemi noti.
+Il **riquadro Dispositivi con problemi del** sensore è disponibile nel dashboard Operazioni di sicurezza. Questo riquadro fornisce informazioni sulla capacità del singolo dispositivo di fornire dati sul sensore e comunicare con il servizio Defender per endpoint. Segnala quanti dispositivi richiedono attenzione e aiuta a identificare i dispositivi problematici per intraprendere le azioni volte a correggere i problemi noti.
 
 Nel riquadro sono presenti due indicatori di stato che forniscono informazioni sul numero di dispositivi che non segnalano correttamente al servizio:
 - **Configurazione errata: questi** dispositivi potrebbero segnalare parzialmente i dati del sensore al servizio Defender for Endpoint e potrebbero avere errori di configurazione che devono essere corretti.
@@ -46,9 +46,9 @@ Se fai clic su uno dei gruppi, viene visualizzato **l'elenco Dispositivi,** filt
 
 **Nell'elenco Dispositivi** è possibile filtrare l'elenco degli stati di integrità in base allo stato seguente:
 - **Active** - Dispositivi che segnalano attivamente al servizio Defender for Endpoint.
-- **Configurazione errata: questi** dispositivi potrebbero segnalare parzialmente i dati del sensore al servizio Defender for Endpoint, ma potrebbero avere errori di configurazione che devono essere corretti. I dispositivi non configurati correttamente possono avere uno o una combinazione dei seguenti problemi:
-  - **Nessun dato del sensore:** i dispositivi hanno smesso di inviare i dati del sensore. Gli avvisi limitati possono essere attivati dal dispositivo.
-  - **Comunicazioni con problemi** - La capacità di comunicare con il dispositivo è compromessa. L'invio di file per l'analisi approfondita, il blocco dei file, l'isolamento del dispositivo dalla rete e altre azioni che richiedono la comunicazione con il dispositivo potrebbero non funzionare.
+- **Configurazione errata: questi** dispositivi potrebbero segnalare parzialmente i dati del sensore al servizio Defender for Endpoint, ma potrebbero avere errori di configurazione che devono essere corretti. Nei dispositivi non configurati correttamente possono verificarsi uno o più dei seguenti problemi:
+  - **Nessun dato del sensore:** i dispositivi hanno smesso di inviare i dati del sensore. Il dispositivo può generare avvisi limitati.
+  - **Comunicazioni con problemi** - La capacità di comunicare con il dispositivo è compromessa. L'invio di file per un'analisi approfondita, il blocco dei file, l'isolamento del dispositivo dalla rete e altre azioni che richiedono la comunicazione con il dispositivo potrebbero non funzionare.
 - **Inattivo:** dispositivi che hanno interrotto la segnalazione al servizio Defender for Endpoint.
 
 Puoi anche scaricare l'intero elenco in formato CSV usando la **funzionalità Esporta.** Per altre informazioni sui filtri, vedi [Visualizzare e organizzare l'elenco Dispositivi.](machines-view-overview.md)

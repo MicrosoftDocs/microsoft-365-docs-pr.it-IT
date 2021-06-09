@@ -31,7 +31,7 @@ ms.locfileid: "50907709"
 
 Una rete virtuale di Azure cross-premise è connessa alla rete locale, ampliando quest'ultima affinché includa subnet e macchine virtuali ospitate nei servizi dell'infrastruttura di Azure. Questa connessione consente ai computer su rete locale di accedere direttamente alle macchine virtuali in Azure e viceversa. 
 
-Ad esempio, un server di sincronizzazione della directory in esecuzione in una macchina virtuale di Azure deve eseguire una query sui controller di dominio locali per le modifiche apportate agli account e sincronizzare tali modifiche con l'abbonamento a Microsoft 365. In questo articolo viene illustrato come configurare una rete virtuale di Azure cross-premise utilizzando una connessione VPN (Virtual Private Network) da sito a sito pronta per ospitare macchine virtuali di Azure.
+Ad esempio, un server di sincronizzazione della directory in esecuzione in una macchina virtuale di Azure deve eseguire una query sui controller di dominio locali per le modifiche apportate agli account e sincronizzare tali modifiche con la sottoscrizione Microsoft 365 locale. In questo articolo viene illustrato come configurare una rete virtuale di Azure cross-premise utilizzando una connessione VPN (Virtual Private Network) da sito a sito pronta per ospitare macchine virtuali di Azure.
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>Configurare una rete virtuale di Azure cross-premise
 
@@ -128,7 +128,7 @@ Per determinare il numero di indirizzi necessari per la subnet, contare le macch
   
 |**Numero di macchine virtuali necessarie**|**Numero di host necessari**|**Dimensioni della subnet**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3   <br/> |/29  <br/> |
+|1-3  <br/> |3  <br/> |/29  <br/> |
 |4-11  <br/> |4   <br/> |/28  <br/> |
 |12-27  <br/> |5   <br/> |/27  <br/> |
 |28-59  <br/> |6   <br/> |/26  <br/> |
@@ -336,4 +336,4 @@ Di seguito è riportata la configurazione risultante.
   
 ## <a name="next-step"></a>Passaggio successivo
   
-[Distribuire la sincronizzazione della directory di Microsoft 365 in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Distribuire Microsoft 365 sincronizzazione della directory in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

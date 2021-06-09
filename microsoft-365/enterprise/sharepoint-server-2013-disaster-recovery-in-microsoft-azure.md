@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Deployment
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: In questo articolo viene descritto come usare Azure per creare un ambiente di ripristino di emergenza per la farm di SharePoint locale.
+description: In questo articolo viene descritto come usare Azure per creare un ambiente di ripristino di emergenza per la farm SharePoint locale.
 ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -232,7 +232,7 @@ Questa guida di orientamento presuppone che si disponga già di una farm SharePo
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>Fase 1: Progettare l'ambiente di ripristino di emergenza
 
-Utilizzare le istruzioni in [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) per progettare l'ambiente di ripristino di emergenza, inclusa la farm di ripristino di SharePoint. È possibile utilizzare gli elementi grafici nella soluzione di ripristino di emergenza di [SharePoint nel](https://go.microsoft.com/fwlink/p/?LinkId=392554) file di Visio di Azure per avviare il processo di progettazione. È consigliabile progettare l'intero ambiente prima di iniziare qualsiasi lavoro nell'ambiente Azure.
+Utilizzare le istruzioni in [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) per progettare l'ambiente di ripristino di emergenza, inclusa la farm di ripristino di SharePoint. Puoi usare la grafica nella soluzione di SharePoint di ripristino [di emergenza in Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio file per avviare il processo di progettazione. È consigliabile progettare l'intero ambiente prima di iniziare qualsiasi lavoro nell'ambiente Azure.
   
 Oltre al materiale sussidiario fornito in [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) per la progettazione della rete virtuale, la connessione VPN, Active Directory e la farm di SharePoint, assicurarsi di aggiungere un ruolo di condivisione file per l'ambiente di Azure.
   
@@ -273,7 +273,7 @@ Questa fase include la distribuzione di Windows Server Active Directory e DNS al
   
 **Figura: Configurazione del dominio ibrido Active Directory**
 
-![Due macchine virtuali distribuite nella rete virtuale di Azure e nella subnet della farm di SharePoint sono controller di dominio di replica e server DNS](../media/AZarch-HyADdomainConfig.png)
+![Due macchine virtuali distribuite nella rete virtuale di Azure e la subnet SharePoint farm sono controller di dominio di replica e server DNS](../media/AZarch-HyADdomainConfig.png)
   
 Nella figura, nella stessa sottorete vengono distribuite due macchine virtuali. Ognuna delle macchine virtuali ospita due ruoli: Active Directory e DNS
   
@@ -460,7 +460,7 @@ Da qui è possibile incorrere in scenari di ripristino di emergenza diversi:
   
  **Scenario di esempio: il centro dati locale viene perso completamente.** Questo scenario potrebbe verificarsi a causa di un disastro naturale, ad esempio un incendio o un'alluvione. In tal caso, è probabile che un'azienda disponga di un centro dati secondario ospitato in un'altra area geografica, nonché una subnet Azure con servizi directory e DNS propri. Come illustrato nello scenario di emergenza precedente, è possibile reindirizzare i record DNS interni ed esterni in modo che puntino alla farm di SharePoint di Azure. Anche in questo caso, prendere nota che la propagazione dei record DNS può richiedere un po' di tempo.
   
-Se si utilizzano raccolte siti con nome host, come consigliato in Architettura e distribuzione delle raccolte siti con nome host [(SharePoint 2013),](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)è possibile che nella farm di SharePoint siano ospitate più raccolte siti dalla stessa applicazione Web, con nomi DNS univoci , ad esempio `https://sales.contoso.com` e `https://marketing.contoso.com` . In questo caso, è possibile creare record DNS per ogni raccolta siti che punta all'indirizzo IP del cluster. Quando una richiesta raggiunge i server Web front-end di SharePoint, questi gestiscono il routing di ogni richiesta alla raccolta siti appropriata.
+Se si utilizzano raccolte siti con nome host, come consigliato in Architettura e distribuzione di raccolte siti con nome host [(SharePoint 2013),](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)è possibile che nella farm di SharePoint siano ospitate più raccolte siti, con nomi DNS univoci, ad esempio `https://sales.contoso.com` e `https://marketing.contoso.com` . In questo caso, è possibile creare record DNS per ogni raccolta siti che punta all'indirizzo IP del cluster. Quando una richiesta raggiunge i server Web front-end di SharePoint, questi gestiscono il routing di ogni richiesta alla raccolta siti appropriata.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Ambiente del modello di verifica di Microsoft
 

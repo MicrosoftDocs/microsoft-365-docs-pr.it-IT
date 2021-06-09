@@ -169,7 +169,7 @@ La creazione di un criterio di protezione da posta indesiderata in uscita person
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-6. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare **clic su Indietro** o selezionare la pagina specifica della procedura guidata.
+6. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare clic su **Indietro** o selezionare la pagina specifica della procedura guidata.
 
    Al termine, fare clic su **Crea**.
 

@@ -53,7 +53,7 @@ La scelta della Microsoft 365 di abbonamento è fondamentale per ottenere il mas
 | **Archivio file** | OneDrive for Business | 1 TB per utente | 1 TB per utente | Illimitati |
 | **Social, video, siti** | Stream, Yammer, Planner, SharePoint \* Online, PowerApps, \* Microsoft Flow\* | Sì | Sì | Sì |
 | **App aziendali** | Pianificazione delle app - Prenotazioni\*\* | Sì | Sì | Sì |
-| **Protezione dalle minacce** | Office 365 Advanced Threat Protection | No | Sì | No |
+| **Threat Protection** | Office 365 Advanced Threat Protection | No | Sì | No |
  | Windows Applicazione di Exploit Guard| | No | Sì | No |
 | **Identity Management** | Reimpostazione della password self-service per gli account Azure Active Directory ibridi | No | Sì | No |
  | Azure Multi-Factor Authentication, criteri di accesso condizionale | | No | Sì | No |

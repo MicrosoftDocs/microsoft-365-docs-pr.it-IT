@@ -17,7 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Riepilogo: attività post-migrazione dopo il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.'
+description: 'Riepilogo: attività post-migrazione dopo il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a servizi Office 365 nella nuova area data center tedesca.'
 ms.openlocfilehash: ee8dedf7ffaf6bfc4246b1a8cc2522c15d763cd1
 ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "51899365"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Attività post-migrazione per la migrazione da Microsoft Cloud Deutschland
 
-Le sezioni seguenti forniscono attività post-migrazione per più servizi dopo il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.
+Le sezioni seguenti forniscono attività post-migrazione per più servizi dopo il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a servizi Office 365 nella nuova area data center tedesca.
 
 ## <a name="azure-ad"></a>Azure AD
 <!-- This AAD Endpoints comparison table could be added to the documentation, not finally decided.
@@ -53,7 +53,7 @@ The following table provides an overview about which endpoints will replace the 
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
-| Rimuovere attendibilità relying party da Microsoft Cloud Deutschland AD FS. | Al termine del cut-over ad Azure AD, l'organizzazione usa completamente i servizi di Office 365 e non è più connessa a Microsoft Cloud Deutschland. A questo punto, il cliente deve rimuovere l'attendibilità del relying party per gli endpoint di Microsoft Cloud Deutschland. Questa operazione può essere eseguita solo quando nessuna delle applicazioni del cliente punta agli endpoint di Microsoft Cloud Deutschland quando Azure AD viene utilizzato come provider di identità (IdP). | Organizzazioni con autenticazione federata | Nessuna. |
+| Rimuovere attendibilità relying party da Microsoft Cloud Deutschland AD FS. | Al termine del cut-over ad Azure AD, l'organizzazione usa completamente i servizi Office 365 e non è più connessa a Microsoft Cloud Deutschland. A questo punto, il cliente deve rimuovere l'attendibilità del relying party per gli endpoint di Microsoft Cloud Deutschland. Questa operazione può essere eseguita solo quando nessuna delle applicazioni del cliente punta agli endpoint di Microsoft Cloud Deutschland quando Azure AD viene utilizzato come provider di identità (IdP). | Organizzazioni con autenticazione federata | Nessuna. |
 ||||
 
 <!--
@@ -77,29 +77,29 @@ The following table provides an overview about which endpoints will replace the 
 
 | Step(s) | Descrizione | Impatto |
 |:------|:-------|:-------|
-| Aggiornare i servizi DNS locali per gli endpoint dei servizi di Office 365. | Le voci DNS gestite dal cliente che puntano a Microsoft Cloud Deutschland devono essere aggiornate per puntare agli endpoint dei servizi globali di Office 365. | L'esito negativo di questa operazione può causare un errore del servizio o dei client software. |
+| Aggiornare i servizi DNS locali per Office 365 endpoint dei servizi locali. | Le voci DNS gestite dal cliente che puntano a Microsoft Cloud Deutschland devono essere aggiornate in modo che puntino Office 365 endpoint dei servizi globali. | L'esito negativo di questa operazione può causare un errore del servizio o dei client software. |
 ||||
 
 ## <a name="third-party-services"></a>Servizi di terze parti
-**Si applica a:** Clienti che usano servizi di terze parti per gli endpoint dei servizi di Office 365
+**Si applica a:** Clienti che usano servizi di terze parti per Office 365 endpoint dei servizi
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
-| Aggiornare i partner e i servizi di terze parti per gli endpoint dei servizi di Office 365. | <ul><li>I servizi di terze parti e i partner che puntano a Office 365 Germany devono essere aggiornati per puntare agli endpoint dei servizi di Office 365. Esempio: registrare di nuovo, in linea con i fornitori e i partner, la versione dell'app raccolta delle applicazioni, se disponibile. </li><li>Puntare tutte le applicazioni personalizzate che sfruttano l'API Graph da `graph.microsoft.de` a `graph.microsoft.com` . Anche altre API con endpoint modificati devono essere aggiornate, se sfruttate. </li><li>Modificare tutte le applicazioni aziendali non di prima parte in modo che reindirizzano agli endpoint globali. </li></ul>| Azione obbligatoria. L'esito negativo di questa operazione può causare un errore del servizio o dei client software. |
+| Aggiornare i partner e i servizi di terze parti per Office 365 endpoint. | <ul><li>I servizi e i partner di terze parti che puntano a Office 365 Germania devono essere aggiornati per puntare agli endpoint Office 365 services. Esempio: registrare di nuovo, in linea con i fornitori e i partner, la versione dell'app raccolta delle applicazioni, se disponibile. </li><li>Puntare tutte le applicazioni personalizzate che sfruttano Graph API da `graph.microsoft.de` a `graph.microsoft.com` . Anche altre API con endpoint modificati devono essere aggiornate, se sfruttate. </li><li>Modificare tutte le applicazioni aziendali non di prima parte in modo che reindirizzano agli endpoint globali. </li></ul>| Azione obbligatoria. L'esito negativo di questa operazione può causare un errore del servizio o dei client software. |
 ||||
 
 ## <a name="sharepoint-online"></a>SharePoint Online
-**Si applica a:** Clienti che utilizzano flussi di lavoro di SharePoint 2013
+**Si applica a:** Clienti che utilizzano SharePoint 2013
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
-| Ripubblicare i flussi di lavoro di SharePoint 2013. | Nel lavoro di pre-migrazione, è stato ridotto il numero di flussi di lavoro di SharePoint 2013. Al termine della migrazione, il cliente può ripubblicare i flussi di lavoro. | Si tratta di un'azione obbligatoria. La mancata operazione può causare confusione per l'utente e le chiamate all'help desk. |
-| Condividere elementi tramite Outlook | La condivisione di elementi in SharePoint Online e OneDrive for Business tramite Outlook non funziona più dopo il cutover del tenant. |<ul><li>In SharePoint Online e OneDrive for Business, è possibile condividere elementi tramite Outlook. Dopo aver premuto il pulsante di Outlook, viene creato un collegamento condivisibile e inserito in un nuovo messaggio in Outlook Web App.</li><li>Dopo il cutover del tenant, questo metodo di condivisione non funzionerà. Riconosciamo che si tratta di un problema noto. Tuttavia, poiché questa funzionalità di Outlook è nel percorso della deprecazione, la correzione del problema non è pianificata fino a quando non viene implementazione della deprecazione. </li></ul>|
+| Ripubblicare SharePoint 2013. | Nel lavoro di pre-migrazione, è stato ridotto il numero di flussi di lavoro SharePoint 2013. Al termine della migrazione, il cliente può ripubblicare i flussi di lavoro. | Si tratta di un'azione obbligatoria. La mancata operazione può causare confusione per l'utente e le chiamate all'help desk. |
+| Condividere elementi tramite Outlook | La condivisione di elementi in SharePoint Online e OneDrive for Business tramite Outlook non funziona più dopo il cutover del tenant. |<ul><li>In SharePoint Online e OneDrive for Business, è possibile condividere elementi tramite Outlook. Dopo aver premuto il Outlook, viene creato un collegamento condivisibile e inserito in un nuovo messaggio nel Outlook Web App.</li><li>Dopo il cutover del tenant, questo metodo di condivisione non funzionerà. Riconosciamo che si tratta di un problema noto. Tuttavia, poiché questa Outlook è nel percorso della deprecazione, la correzione del problema non è pianificata fino all'implementazione della deprecazione. </li></ul>|
 ||||
 
 ## <a name="exchange-online"></a>Exchange Online
-**Si applica a**: Clienti che utilizzano una configurazione ibrida di Exchange
+**Si applica a:** Clienti che usano una configurazione Exchange ibrida
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
-| Eseguire di nuovo la procedura guidata di configurazione ibrida (HCW) nei servizi di Office 365. | La configurazione HCW esistente è destinata a supportare Microsoft Cloud Deutschland. Al termine della migrazione dei servizi di Exchange, la configurazione locale viene disaccodata da Microsoft Cloud Deutschland. |<ul><li>Azione obbligatoria. L'esito negativo di questa operazione può causare un errore del servizio o dei client software. Prima dell'inizio della migrazione delle cassette postali di Exchange (con 5 o più giorni di preavviso), informare i client che devono interrompere ed eliminare eventuali spostamenti di onboarding o offboarding delle proprie cassette postali.  In caso contrario, verranno visualizzati errori nelle richieste di spostamento. </li><li>Al termine della migrazione delle cassette postali di Exchange, informare i client che possono riprendere l'onboarding e gli spostamenti di offboarding. <br> **L'esecuzione di Test-MigrationServerAvailabiilty**, un cmdlet di PowerShell, durante la migrazione di Exchange da Microsoft Cloud Deutschland ai servizi di Office 365 potrebbe non funzionare. Tuttavia, funzionerà correttamente al termine della migrazione. </li><li>Se i client si verificano problemi con le credenziali o l'autorizzazione dopo la migrazione delle cassette postali, gli utenti possono reim annotarsi le proprie credenziali di amministratore locale nell'endpoint di migrazione eseguendo o impostando lo stesso utilizzando il Pannello di controllo `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` di Exchange. </li></ul>|
+| Eseguire di nuovo la procedura guidata di configurazione ibrida (HCW) Office 365 servizi. | La configurazione HCW esistente è destinata a supportare Microsoft Cloud Deutschland. Con la migrazione dei Exchange completa, disaccodiamo la configurazione locale da Microsoft Cloud Deutschland. |<ul><li>Azione obbligatoria. L'esito negativo di questa operazione può causare un errore del servizio o dei client software. Prima Exchange la migrazione delle cassette postali (con 5 o più giorni di preavviso), informare i client che devono interrompere ed eliminare eventuali spostamenti di onboarding o offboarding delle cassette postali.  In caso contrario, verranno visualizzati errori nelle richieste di spostamento. </li><li>Dopo Exchange migrazione delle cassette postali, informare i client che possono riprendere l'onboarding e gli spostamenti di offboarding. <br> L'esecuzione di **Test-MigrationServerAvailabiilty**, un cmdlet di PowerShell, durante la migrazione di Exchange da Microsoft Cloud Deutschland ai servizi Office 365 potrebbe non funzionare. Tuttavia, funzionerà correttamente al termine della migrazione. </li><li>Se i client si verificano problemi con le credenziali o l'autorizzazione dopo la migrazione delle cassette postali, gli utenti possono reimmigare le proprie credenziali di amministratore locale nell'endpoint di migrazione eseguendo o impostando lo stesso utilizzando il Pannello di controllo di `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` Exchange .ECP. </li></ul>|

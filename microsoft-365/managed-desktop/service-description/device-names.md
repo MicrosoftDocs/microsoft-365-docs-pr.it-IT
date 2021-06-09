@@ -1,6 +1,6 @@
 ---
 title: Nomi dei dispositivi
-description: Modalità di gestione dei nomi dei dispositivi da parte di Microsoft Managed Desktop
+description: Come Microsoft Managed Desktop i nomi dei dispositivi
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -20,7 +20,7 @@ ms.locfileid: "51893891"
 ---
 # <a name="device-names"></a>Nomi dei dispositivi
 
-Microsoft Managed Desktop usa Windows Autopilot, Azure Active Directory e Microsoft Intune. Perché questi servizi funzionino senza problemi, i dispositivi necessitano di nomi coerenti e standardizzati. Microsoft Managed Desktop applica un formato di nome standardizzato (nel formato *MMD-%RAND11)* quando i dispositivi vengono registrati. Windows Autopilot assegna questi nomi. Per ulteriori informazioni su Autopilot, vedere [First-run experience with Autopilot and the Enrollment Status Page.](../get-started/esp-first-run.md)
+Microsoft Managed Desktop utilizza Windows Autopilot, Azure Active Directory e Microsoft Intune. Perché questi servizi funzionino senza problemi, i dispositivi necessitano di nomi coerenti e standardizzati. Microsoft Managed Desktop applica un formato di nome standardizzato (nel formato *MMD-%RAND11)* quando i dispositivi vengono registrati. Windows Autopilot assegna questi nomi. Per ulteriori informazioni su Autopilot, vedere [First-run experience with Autopilot and the Enrollment Status Page.](../get-started/esp-first-run.md)
 
 ## <a name="automated-name-changes"></a>Modifiche automatiche al nome
 

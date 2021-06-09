@@ -1,5 +1,5 @@
 ---
-title: Creare account utente di Microsoft 365 con PowerShell
+title: Creare Microsoft 365 account utente con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Come usare PowerShell per creare singoli o più account utente di Microsoft 365.
+description: Come usare PowerShell per creare singoli o più Microsoft 365 utente.
 ms.openlocfilehash: c3676acdec3bbba328809ee1528206bbc44f94f1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,33 +26,33 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907565"
 ---
-# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Creare account utente di Microsoft 365 con PowerShell
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Creare Microsoft 365 account utente con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-È possibile utilizzare PowerShell per Microsoft 365 per creare in modo efficiente account utente, inclusi più account.
+È possibile utilizzare PowerShell per Microsoft 365 creare in modo efficiente account utente, inclusi più account.
 
 Quando si creano account utente in PowerShell, alcune proprietà dell'account sono sempre necessarie. Altre proprietà non sono necessarie, ma sono importanti. Vedere la tabella seguente.
   
 |**Nome della proprietà**|**Obbligatorio?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |Sì  <br/> |Questo è il nome visualizzato utilizzato nei servizi di Microsoft 365. Ad esempio, *Caleb Sills*. <br/> |
-|**UserPrincipalName** <br/> |Sì  <br/> |Questo è il nome dell'account utilizzato per accedere ai servizi di Microsoft 365. Ad esempio, *CalebS \@ contoso.onmicrosoft.com*.  <br/> |
+|**DisplayName** <br/> |Sì  <br/> |Questo è il nome visualizzato utilizzato nei Microsoft 365 servizi. Ad esempio, *Caleb Sills*. <br/> |
+|**UserPrincipalName** <br/> |Sì  <br/> |Questo è il nome dell'account utilizzato per accedere ai Microsoft 365 servizi. Ad esempio, *CalebS \@ contoso.onmicrosoft.com*.  <br/> |
 |**FirstName** <br/> |No  <br/> ||
 |**LastName** <br/> |No  <br/> ||
-|**LicenseAssignment** <br/> |No  <br/> |Si tratta del piano di licenza (noto anche come piano di licenza o SKU) da cui viene assegnata una licenza disponibile all'account utente. La licenza definisce i servizi di Microsoft 365 disponibili per l'account. Non è necessario assegnare una licenza a un utente quando si crea l'account, ma l'account deve disporre di una licenza per accedere ai servizi di Microsoft 365. Dopo aver creato l'account utente, è necessario disporre di 30 giorni per la licenza. |
+|**LicenseAssignment** <br/> |No  <br/> |Si tratta del piano di licenza (noto anche come piano di licenza o SKU) da cui viene assegnata una licenza disponibile all'account utente. La licenza definisce i Microsoft 365 disponibili per l'account. Non è necessario assegnare una licenza a un utente quando si crea l'account, ma l'account deve disporre di una licenza per accedere Microsoft 365 servizi. Dopo aver creato l'account utente, è necessario disporre di 30 giorni per la licenza. |
 |**Password** <br/> |No  <br/> | Se non si specifica una password, all'account utente ne viene assegnata una casuale, visibile nei risultati del comando. Se si specifica una password, la password deve contenere da 8 a 16 caratteri di testo ASCII dei seguenti tipi: lettere minuscole, lettere maiuscole, numeri e simboli.<br/> |
-|**UsageLocation** <br/> |No  <br/> |Si tratta di un codice paese ISO 3166-1 alfa-2 valido. Ad esempio, *US* per gli Stati Uniti e *FR* per la Francia. È importante fornire questo valore, perché alcuni servizi di Microsoft 365 non sono disponibili in alcuni paesi. Non è possibile assegnare una licenza a un account utente a meno che l'account non abbia configurato questo valore. Per ulteriori informazioni, vedere [Informazioni sulle restrizioni di licenza.](https://go.microsoft.com/fwlink/p/?LinkId=691730)<br/> |
+|**UsageLocation** <br/> |No  <br/> |Si tratta di un codice paese ISO 3166-1 alfa-2 valido. Ad esempio, *US* per gli Stati Uniti e *FR* per la Francia. È importante fornire questo valore, perché alcuni servizi Microsoft 365 non sono disponibili in alcuni paesi. Non è possibile assegnare una licenza a un account utente a meno che l'account non abbia configurato questo valore. Per ulteriori informazioni, vedere [Informazioni sulle restrizioni di licenza.](https://go.microsoft.com/fwlink/p/?LinkId=691730)<br/> |
 
 >[!Note]
->[Informazioni su come creare account utente tramite](../admin/add-users/add-users.md) l'interfaccia di amministrazione di Microsoft 365.
+>[Informazioni su come creare account utente tramite](../admin/add-users/add-users.md) l'Microsoft 365 di amministrazione.
 > 
 > Per un elenco delle risorse aggiuntive, vedere [Manage users and groups](../admin/add-users/index.yml).
 >   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Dopo la connessione, utilizzare la sintassi seguente per creare un singolo account:
   
@@ -72,7 +72,7 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="create-an-individual-user-account"></a>Creare un account utente singolo
 
@@ -83,7 +83,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con *Msol* nel nome. Eseguire questi cmdlet da Windows PowerShell.
+>PowerShell Core non supporta il modulo Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con *Msol* nel nome. Eseguire questi cmdlet da Windows PowerShell.
 >
 
 Per elencare i nomi dei piani di gestione delle licenze disponibili, usare il seguente comando:
@@ -110,7 +110,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
      ```
 
    >[!NOTE]
-   >I nomi delle colonne e il relativo ordine nella prima riga del file CSV sono arbitrari. Verificare tuttavia che l'ordine dei dati nel resto del file corrisponda all'ordine dei nomi delle colonne. E usare i nomi delle colonne per i valori dei parametri nel comando PowerShell per Microsoft 365.
+   >I nomi delle colonne e il relativo ordine nella prima riga del file CSV sono arbitrari. Verificare tuttavia che l'ordine dei dati nel resto del file corrisponda all'ordine dei nomi delle colonne. E usare i nomi delle colonne per i valori dei parametri in PowerShell per Microsoft 365 comando.
     
 2. Usare la sintassi seguente:
     
@@ -124,7 +124,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
     Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
     ```
 
-3. Esaminare il file di output per visualizzare i risultati. Non sono state specificate password, quindi le password casuali generate da Microsoft 365 sono visibili nel file di output.
+3. Esaminare il file di output per visualizzare i risultati. Non sono state specificate password, quindi le password casuali generate Microsoft 365 sono visibili nel file di output.
     
 ## <a name="see-also"></a>Vedere anche
 

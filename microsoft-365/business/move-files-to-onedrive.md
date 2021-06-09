@@ -37,7 +37,7 @@ Guarda un breve video sullo spostamento di file in OneDrive for Business.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business

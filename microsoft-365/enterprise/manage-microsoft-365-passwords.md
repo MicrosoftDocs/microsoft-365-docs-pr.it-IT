@@ -1,5 +1,5 @@
 ---
-title: Gestire le password degli account utente di Microsoft 365
+title: Gestire le Microsoft 365 account utente
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Informazioni su come gestire le password degli account utente di Microsoft 365.
+description: Informazioni su come gestire le password Microsoft 365 account utente.
 ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905093"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>Gestire le password degli account utente di Microsoft 365
+# <a name="manage-microsoft-365-user-account-passwords"></a>Gestire le Microsoft 365 account utente
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-È possibile gestire le password degli account utente di Microsoft 365 in diversi modi, a seconda della configurazione dell'identità. È possibile gestire gli account utente nell'interfaccia di amministrazione di [Microsoft 365,](../admin/add-users/index.yml)in Servizi di dominio Active Directory o nell'interfaccia di amministrazione di Azure Active Directory (Azure AD).
+È possibile gestire Microsoft 365 password degli account utente in diversi modi, a seconda della configurazione dell'identità. È possibile gestire gli account utente nell'interfaccia di amministrazione di [Microsoft 365](../admin/add-users/index.yml), in Servizi di dominio Active Directory o nell'interfaccia di amministrazione di Azure Active Directory (Azure AD).
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Pianificare dove e come gestire le password degli account utente
 
-La posizione e la modalità di gestione degli account utente dipendono dal modello di identità che si desidera utilizzare per Microsoft 365. I due modelli sono solo cloud e ibridi.
+La posizione e la modalità di gestione degli account utente dipendono dal modello di identità che si desidera utilizzare per l'Microsoft 365. I due modelli sono solo cloud e ibridi.
   
 ### <a name="cloud-only"></a>Solo cloud
 
@@ -46,7 +46,7 @@ La posizione e la modalità di gestione degli account utente dipendono dal model
 - [L'interfaccia di amministrazione di Microsoft 365](../admin/add-users/index.yml)
 - Interfaccia di amministrazione di Azure AD
     
-### <a name="hybrid"></a>Ibrido
+### <a name="hybrid"></a>Configurazione ibrida
 
 Con l'identità ibrida, le password vengono archiviate in Servizi di dominio Active Directory, quindi è necessario utilizzare gli strumenti di Servizi di dominio Active Directory locali per gestire le password degli account utente. Anche quando si usa la sincronizzazione dell'hash delle password (PHS), in cui Azure AD archivia una versione con hash della versione già con hash in Servizi di dominio Active Directory, è necessario gestire le password in Servizi di dominio Active Directory.
 

@@ -76,14 +76,14 @@ Aggiungere il record CNAME SIP.
     - Nome host: sip
     - Tipo: CNAME
     - Indirizzo: sipdir.online.lync.com
-- Seleziona **OK**.
+- Selezionare **OK**.
 
 Aggiungere il record CNAME Autodiscover di Skype for Business online.  
 - Nella pagina Gestore DNS per il dominio, andare a **Azione** \> **CNAME (CNAME)**. Nella finestra **di dialogo Nuovo record** di risorse verificare che i campi siano impostati esattamente sui valori seguenti:  
     - Nome host: lyncdiscover
     - Tipo: CNAME
     - Indirizzo: webdir.online.lync.com
-- Seleziona **OK**.
+- Selezionare **OK**.
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Aggiungere due record CNAME per Gestione dispositivi mobili (MDM) per Microsoft
 
@@ -97,7 +97,7 @@ Aggiungere il record CNAME Enterpriseregistration di MDM.
 - Nome host: enterpriseregistration
 - Tipo: CNAME
 - Indirizzo: enterpriseregistration.windows.net
-- Seleziona **OK**. 
+- Selezionare **OK**. 
 
 Aggiungere il record CNAME Enterpriseenrollment di MDM. 
 -  Nella pagina Gestore DNS per il dominio, andare a **Azione** \> **CNAME (CNAME)**. 
@@ -105,7 +105,7 @@ Aggiungere il record CNAME Enterpriseenrollment di MDM.
     - Nome host: enterpriseenrollment
     - Tipo: CNAME
     - Indirizzo: enterpriseenrollment-s.manage.microsoft.com
-- Seleziona **OK**.
+- Selezionare **OK**.
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
@@ -125,7 +125,7 @@ Aggiungere il record TXT SPF per il dominio per proteggerlo dalla posta indeside
 -  Tipo di record: TXT
 -  Indirizzo: v=spf1 include:spf.protection.outlook.com -all 
          
--  Seleziona **OK**.
+-  Selezionare **OK**.
    
 ## <a name="add-srv-records"></a>Aggiungere i record SRV
 <a name="BKMK_add_SRV"> </a>
@@ -142,7 +142,7 @@ Aggiungere il record SRV SIP per le conferenze Web di Skype for Business online.
     -  Peso: 1
     -  Porta: 443
     -  Destinazione (hostname): sipdir.online.lync.com
--  Seleziona **OK**. 
+-  Selezionare **OK**. 
 
 
 Aggiungere il record SRV SIP per la federazione di Skype for Business online.  
@@ -155,7 +155,7 @@ Aggiungere il record SRV SIP per la federazione di Skype for Business online.
     -  Peso: 1
     -  Porta: 5061
     -  Destinazione (hostname): sipfed.online.lync.com
--  Seleziona **OK**. 
+-  Selezionare **OK**. 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Aggiungere un record per verificare che si è proprietari del dominio
 <a name="BKMK_verify"> </a>

@@ -1,5 +1,5 @@
 ---
-title: Windows 10 e Office 365 lab kit di distribuzione
+title: Lab Kit di distribuzione di Windows 10 e Office 365
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -22,7 +22,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770674"
 ---
-# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 e Office 365 lab kit di distribuzione
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows 10 e Office 365
 
 Il Windows 10 e Office 365 deployment kit è progettato per facilitare la pianificazione, il test e la convalida della distribuzione e della gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for enterprise. I laboratori del kit coprono Microsoft Endpoint Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 

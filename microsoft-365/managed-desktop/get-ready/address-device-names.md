@@ -20,7 +20,7 @@ ms.locfileid: "51893901"
 ---
 # <a name="address-device-name-dependency"></a>Dipendenza nome dispositivo indirizzo
 
-Microsoft Managed Desktop applica un formato di nome standardizzato quando i dispositivi vengono registrati e rinomina automaticamente i dispositivi se il nome viene modificato in un secondo momento. Per altre info, vedi [Nomi dei dispositivi.](../service-description/device-names.md)
+Microsoft Managed Desktop un formato di nome standardizzato quando i dispositivi vengono registrati e rinominano automaticamente i dispositivi se il nome viene modificato in un secondo momento. Per altre info, vedi [Nomi dei dispositivi.](../service-description/device-names.md)
 
 > [!IMPORTANT]
 > Se l'ambiente dipende da nomi di dispositivi specifici ,ad esempio per supportare una particolare configurazione di rete, è consigliabile analizzare le opzioni per rimuovere tale dipendenza prima di eseguire la registrazione in Microsoft Managed Desktop. Se devi mantenere la dipendenza del nome, puoi [](../working-with-managed-desktop/admin-support.md) inviare una richiesta tramite il portale di amministrazione per disabilitare la funzione di ridenominazione e usare il formato del nome desiderato.
