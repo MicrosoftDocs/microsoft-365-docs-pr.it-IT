@@ -1,7 +1,7 @@
 ---
 title: Log di controllo per la gestione dei rischi Insider
-description: Informazioni sul log di controllo della gestione dei rischi insider in Microsoft 365
-keywords: Microsoft 365, gestione dei rischi insider, gestione dei rischi, conformità
+description: Informazioni sul log di controllo per la gestione dei rischi insider Microsoft 365
+keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -39,7 +39,7 @@ Le aree incluse nel monitoraggio delle attività includono:
 Per visualizzare ed esportare i dati dal log di controllo, gli utenti devono essere assegnati ai gruppi di ruoli *Insider Risk Management* o Insider Risk Management *Auditors.* Per ulteriori informazioni sui gruppi di ruoli di gestione dei rischi insider, vedere Introduzione alla gestione dei rischi [insider Passaggio 1: abilitazione delle autorizzazioni.](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)
 
 >[!NOTE]
->Il log di controllo della gestione dei rischi insider non è associato al log di controllo di Microsoft 365, ma è un sistema di controllo indipendente e acquisisce informazioni su attività separate. La disabilitazione del controllo di Microsoft 365 non influisce sul controllo delle attività all'interno della gestione dei rischi insider.
+>Il log di controllo per la gestione dei rischi insider non è associato al log di controllo Microsoft 365, sono sistemi di controllo indipendenti e acquisiscono informazioni su attività separate. La disabilitazione Microsoft 365 controllo non influisce sul controllo delle attività all'interno della gestione dei rischi insider.
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Visualizzare le attività nel log di controllo dei rischi insider
 
@@ -60,17 +60,17 @@ Per aggiungere o rimuovere intestazioni di colonna per la coda attività, utiliz
 
 ## <a name="audit-log-export"></a>Esportazione log di controllo
 
-Gli utenti assegnati ai gruppi di ruolo *Insider Risk Management* o Insider Risk Management *Auditors* possono esportare tutte le attività nel log di controllo in un file CSV (valori delimitati da virgole) selezionando **Esporta** nella pagina Del log di controllo dei rischi **Insider.** A seconda dell'attività, alcuni campi di un'attività potrebbero non essere applicabili all'attività e questi campi verranno visualizzati come vuoti nel file esportato.
+Gli utenti assegnati ai gruppi di ruolo *Insider Risk Management* o Insider Risk Management *Auditors* possono esportare tutte le attività nel log di controllo in un file .csv (valori delimitati da virgole) selezionando **Esporta** nella pagina Del registro di controllo dei rischi **Insider.** A seconda dell'attività, alcuni campi di un'attività potrebbero non essere applicabili all'attività e questi campi verranno visualizzati come vuoti nel file esportato.
 
 Il file contiene informazioni sulle attività per i campi seguenti:
 
 - **Attività eseguita da:** Nome utente dell'utente che modifica un valore di elemento. Gli utenti elencati qui sono stati assegnati a uno o più dei seguenti gruppi di ruoli insider risk [management](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management): *Insider Risk Management,* *Insider Risk Management Admins,* Insider Risk Management *Analysts,* *Insider Risk Management Investigators*. Ogni gruppo di ruoli dispone di livelli di autorizzazione diversi per la gestione delle funzionalità di rischio insider.
-- **Attività:** Attività eseguita su un elemento. I valori *sono Viewed, Deleted, Added, Edited policy, Case, User, Alert* e *Settings.*
+- **Attività:** Attività eseguita su un elemento. I valori *sono Viewed, Deleted, Added, Edited policy, Case, User, Alert* *e Impostazioni.*
 - **Added**: oggetti aggiunti durante l'attività, ad esempio utenti, tipi di file o domini.
 - **Volume avviso:** livello di volume di avviso definito nelle impostazioni di gestione dei rischi insider.
 - **Amount:** gli importi dell'indicatore personalizzato attualmente selezionato per un criterio.
 - **ID risorsa**: ID risorsa dell'asset fisico con priorità su cui è stata eseguita l'attività.
-- **Categoria:** Categoria dell'elemento modificato. I valori *sono Criteri, Casi, Utenti, Avvisi, Impostazioni* e *Modelli di avviso.*
+- **Categoria:** Categoria dell'elemento modificato. I valori *sono Criteri, Casi, Utenti, Avvisi, Impostazioni e* Modelli di *avviso.*
 - **Data:** Data e ora, elencate nella data e ora locali dell'organizzazione.
 - **Descrizione:** l'input di descrizione da parte dell'utente per l'oggetto su cui si agisce (ad esempio un criterio o un gruppo di utenti con priorità).
 - **Criterio DLP:** il criterio di prevenzione della perdita dei dati (DLP) selezionato per attivare l'inclusione in un criterio di gestione dei rischi insider.

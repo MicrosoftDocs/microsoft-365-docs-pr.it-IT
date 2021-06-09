@@ -64,7 +64,7 @@ Logo |Nome partner   | Descrizione
 ![Immagine del logo Di Micro Focus ArcSight](images/arcsight-logo.png) | [Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | Usare Micro Focus ArcSight per eseguire il pull di Defender per i rilevamenti degli endpoint
 ![Immagine del logo RSA NetWitness](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Defender for Endpoint Alerts to RSA NetWitness using Microsoft Graph Security API
 ![Immagine del logo SafeBreach](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| Acquisire visibilità in Defender for Endpoint security events che vengono automaticamente correlati alle simulazioni SafeBreach
-![Immagine del logo di Skybox Vulnerability Control](images/skybox-logo.png) | [Controllo vulnerabilità Skybox](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control taglia il rumore della gestione delle vulnerabilità, correlando business, rete e contesto delle minacce per scoprire le vulnerabilità più rischiose
+![Immagine del logo di Skybox Vulnerability Control](images/skybox-logo.png) | [Controllo vulnerabilità Skybox](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control taglia il rumore di gestione delle vulnerabilità, correlando business, rete e contesto di minacce per scoprire le vulnerabilità più rischiose
 ![Immagine del logo Splunk](images/splunk-logo.png) | [Splunk](https://go.microsoft.com/fwlink/?linkid=2129805) | Il componente aggiuntivo Defender for Endpoint consente agli utenti di Splunk di inserire tutti gli avvisi e le informazioni di supporto nel proprio Splunk
 ![Immagine del logo XM Cyber](images/xmcyber-logo.png) | [XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700) | Assegnare priorità alla risposta a un avviso in base ai fattori di rischio e alle risorse di valore elevato
 
@@ -76,9 +76,9 @@ Logo |Nome partner   | Descrizione
 ![Immagine del logo CyberSponse CyOps](images/cybersponse-logo.png) | [CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943) | CyOps si integra con Defender for Endpoint per automatizzare i playbook di risposta agli incidenti ad alta velocità dei clienti
 ![Immagine del logo Delta Risk ActiveEye](images/delta-risk-activeeye-logo.png) | [Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468) | Delta Risk, un provider leader di servizi SOC-as-a-Service e di sicurezza, integra Defender for Endpoint con la piattaforma SOAR nativa del cloud, ActiveEye.
 ![Immagine di Demisto, logo di Palo Alto Networks Company](images/demisto-logo.png) | [Demisto, un'azienda di Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2108414) | Demisto si integra con Defender for Endpoint per consentire ai team di sicurezza di orchestrare e automatizzare il monitoraggio, l'arricchimento e la risposta della sicurezza degli endpoint
-![Immagine del logo di Microsoft Flow & Funzioni di Azure](images/ms-flow-logo.png) | [Funzioni di Microsoft Flow & Azure](https://go.microsoft.com/fwlink/?linkid=2114300) | Usare Defender for Endpoint connectors for Azure Logic Apps & Microsoft Flow per automatizzare le procedure di sicurezza
+![Immagine del logo Microsoft Flow & funzioni di Azure](images/ms-flow-logo.png) | [Microsoft Flow & azure](https://go.microsoft.com/fwlink/?linkid=2114300) | Usare Defender per i connettori endpoint per App per la logica di Azure & Microsoft Flow per automatizzare le procedure di sicurezza
 ![Immagine del logo Rapid7 InsightConnect](images/rapid7-logo.png) | [Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040) | InsightConnect si integra con Defender for Endpoint per accelerare, semplificare e integrare i processi di sicurezza che richiedono molto tempo
-![Immagine del logo ServiceNow](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | Inserire avvisi nella soluzione ServiceNow Security Operations basata sull'integrazione delle API di Microsoft Graph
+![Immagine del logo ServiceNow](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | Inserire avvisi nella soluzione ServiceNow Security Operations in base all'integrazione delle API di Microsoft Graph
 ![Immagine del logo di Corsia](images/swimlane-logo.png) | [Corsia per il nuoto](https://go.microsoft.com/fwlink/?linkid=2113902) | Ottimizzare le funzionalità di risposta agli incidenti utilizzando Insieme Swimlane e Defender for Endpoint
 
 
@@ -92,7 +92,7 @@ Logo |Nome partner   | Descrizione
 
 
 
-### <a name="network-security"></a>Sicurezza di rete
+### <a name="network-security"></a>Sicurezza della rete
 Logo |Nome partner   | Descrizione 
 :---|:---|:---
 ![Immagine del logo di Aruba ClearPass Policy Manager](images/aruba-logo.png) | [Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544) | Assicurati che Defender for Endpoint sia installato e aggiornato in ogni endpoint prima di consentire l'accesso alla rete
@@ -110,7 +110,7 @@ Logo |Nome partner   | Descrizione
 ![Immagine del logo Corrata](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | Soluzione mobile: proteggere i dispositivi mobili con visibilità granulare e controllo da Corrata 
 ![Immagine del logo Lookout](images/lookout-logo.png)| [Lookout](https://go.microsoft.com/fwlink/?linkid=866935)| Ottenere la telemetria di Lookout Mobile Threat Protection per dispositivi mobili Android e iOS
 ![Immagine del logo Symantec Endpoint Protection Mobile](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile aiuta le aziende a prevedere, rilevare e prevenire minacce alla sicurezza e vulnerabilità nei dispositivi mobili 
-![Immagine del logo Zimperium](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Estendere Defender for Endpoint a iOS e Android con Machine Learning Mobile Threat Defense
+![Immagine del logo Zimperium](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Estendere Defender for Endpoint a iOS e Android con Machine Learning mobile threat defense basata su dispositivi mobili
 
 
 
@@ -153,4 +153,4 @@ Defender for Endpoint ti consente di integrarti con queste soluzioni e agire sug
 Defender for Endpoint attualmente supporta la corrispondenza e la correzione IOC per gli indicatori di file e di rete. Il blocco è supportato per gli indicatori di file.  
 
 ## <a name="support-for-non-windows-platforms"></a>Supporto per piattaforme non Windows
-Defender for Endpoint offre un'esperienza operativa di sicurezza centralizzata per le piattaforme Windows e non Windows, inclusi i dispositivi mobili. Sarà possibile visualizzare gli avvisi di vari sistemi operativi supportati nel portale e proteggere meglio la rete dell'organizzazione. 
+Defender for Endpoint offre un'esperienza operativa di sicurezza centralizzata per Windows e non Windows, inclusi i dispositivi mobili. Sarà possibile visualizzare gli avvisi di vari sistemi operativi supportati nel portale e proteggere meglio la rete dell'organizzazione. 

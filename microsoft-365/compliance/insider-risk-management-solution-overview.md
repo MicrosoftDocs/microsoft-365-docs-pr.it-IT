@@ -1,6 +1,6 @@
 ---
 title: Gestione dei rischi insider in Microsoft 365
-description: Informazioni su come configurare la gestione dei rischi insider in Microsoft 365.
+description: Scopri come configurare la gestione dei rischi insider in Microsoft 365.
 keywords: Microsoft 365, rischio insider, conformità
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -27,7 +27,7 @@ ms.locfileid: "50819748"
 
 Sempre più spesso i dipendenti hanno più accesso per creare, gestire e condividere dati su un'ampia gamma di piattaforme e servizi. Nella maggior parte dei casi, le organizzazioni dispongono di risorse e strumenti limitati per identificare e ridurre i rischi a livello di organizzazione, oltre a soddisfare i requisiti di conformità e gli standard di privacy dei dipendenti. Questi rischi possono includere il furto di dati allontanando i dipendenti e le perdite di dati di informazioni esterne all'organizzazione per oversharing accidentale o intento dannoso.
 
-La gestione dei rischi insider in Microsoft 365 usa l'intera gamma di indicatori di servizio e di terze parti per identificare, eseguire il triage e agire rapidamente sulle attività degli utenti rischiose. Utilizzando i log di Microsoft 365 e Microsoft Graph, la gestione dei rischi insider consente di definire criteri specifici per identificare gli indicatori di rischio e di intervenire per attenuare questi rischi.
+La gestione dei rischi insider in Microsoft 365 utilizza l'intera gamma di indicatori di servizio e di terze parti per aiutarti a identificare, triage e agire rapidamente sulle attività degli utenti rischiose. Utilizzando i log di Microsoft 365 e Microsoft Graph, la gestione dei rischi insider consente di definire criteri specifici per identificare gli indicatori di rischio e di intervenire per mitigare questi rischi.
 
 ## <a name="configure-insider-risk-management-for-microsoft-365"></a>Configurare la gestione dei rischi insider per Microsoft 365
 

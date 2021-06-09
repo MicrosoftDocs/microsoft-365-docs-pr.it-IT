@@ -1,7 +1,7 @@
 ---
 title: Dashboard utenti per la gestione dei rischi Insider
 description: Informazioni sulla gestione dei rischi insider Dashboard utenti in Microsoft 365
-keywords: Microsoft 365, gestione dei rischi insider, gestione dei rischi, conformità
+keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -46,7 +46,7 @@ Il **dashboard Utenti include** gli utenti aggiunti ai criteri di gestione dei r
 Quando un utente viene aggiunto manualmente a un criterio, le attività utente per i 90 giorni precedenti vengono classificate e aggiunte alla sequenza temporale **attività** utente. Ad esempio, si dispone di un utente attualmente non assegnato punteggi di rischio per un criterio di rischio insider e l'utente ha attività di perdita di dati segnalate al reparto legale dell'organizzazione. L'ufficio legale consiglia di configurare nuovi requisiti di monitoraggio a breve termine per l'utente. È possibile assegnare temporaneamente l'utente al *criterio* perdite di dati per un periodo di tempo designato (finestra di attivazione). Tutti gli utenti aggiunti temporaneamente vengono visualizzati nel **dashboard** Utenti perché i requisiti di attivazione degli eventi non sono più necessari.
 
 >[!NOTE]
->La visualizzazione dei nuovi utenti aggiunti manualmente nel dashboard Utenti può richiedere **diverse ore.** La visualizzazione delle attività per i 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **dashboard** Utenti e aprire la **scheda Attività** utente nel riquadro dei dettagli.
+>La visualizzazione dei nuovi utenti aggiunti manualmente nel dashboard Utenti può richiedere **diverse ore.** La visualizzazione delle attività dei 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **dashboard** Utenti e aprire la **scheda Attività** utente nel riquadro dei dettagli.
 
 L'utente viene rimosso automaticamente dal **dashboard** Utenti e il  punteggio si interrompe alla scadenza del tempo definito nella finestra Di attivazione se:
 
@@ -64,7 +64,7 @@ Nello scenario opposto in  cui l'impostazione  della finestra di attivazione glo
 Ogni utente visualizzato nel **dashboard Utenti** dispone delle informazioni seguenti:
 
 - **Utenti**: nome utente per un utente. Questo campo viene anonimizzato se è abilitata l'impostazione di anonimizzazione globale per la gestione dei rischi insider.
-- **Livello di rischio**: Livello di rischio calcolato corrente dell'utente. Questo punteggio viene calcolato ogni 24 ore e utilizza i punteggi di rischio degli avvisi di tutti gli avvisi attivi associati all'utente. Per gli utenti con solo indicatori di attivazione, il livello di rischio è zero.
+- **Livello di rischio**: Livello di rischio calcolato corrente dell'utente. Questo punteggio viene calcolato ogni 24 ore e utilizza i punteggi del rischio di avviso di tutti gli avvisi attivi associati all'utente. Per gli utenti con solo indicatori di attivazione, il livello di rischio è zero.
 - **Avvisi attivi**: numero di avvisi attivi per tutti i criteri.
 - **Violazioni confermate:** numero di casi risolti come violazione del criterio *confermata* per l'utente.
 - **Case**: il caso attivo corrente per l'utente.
@@ -96,22 +96,22 @@ In alcuni scenari potrebbe essere necessario interrompere l'assegnazione dei pun
 
 Per rimuovere manualmente gli utenti dallo stato nell'ambito in tutti i criteri di gestione dei rischi insider, eseguire la procedura seguente:
 
-1. Nel Centro [conformità Microsoft 365](https://compliance.microsoft.com)passare a **Gestione dei** rischi Insider e selezionare la **scheda** Utenti.
+1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a **Gestione dei rischi Insider** e selezionare la **scheda** Utenti.
 2. Nel **dashboard Utenti selezionare** l'utente o gli utenti che si desidera rimuovere dall'ambito nei criteri di gestione dei rischi insider.
 3. Selezionare **Rimuovi utenti**.
 4. Nel riquadro **Rimuovi utente** selezionare **Rimuovi** o **Annulla** per ignorare le modifiche e chiudere la finestra di dialogo.
 5. Selezionare **Rimuovi** nel riquadro di conferma per rimuovere l'utente.
 
-## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Eseguire attività automatizzate con Power Automate flows per un utente
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Eseguire attività automatizzate con Power Automate per un utente
 
-Utilizzando i flussi di Power Automate consigliati, gli investigatori e gli analisti dei rischi possono agire rapidamente per:
+Utilizzando i flussi Power Automate di rischio consigliati, gli investigatori e gli analisti del rischio possono agire rapidamente per:
 
 - Notificare agli utenti quando vengono aggiunti a un criterio di rischio insider
 
-Per eseguire, gestire o creare flussi di Power Automate per un utente insider di gestione dei rischi:
+Per eseguire, gestire o creare flussi Power Automate per un utente insider di gestione dei rischi:
 
 1. Seleziona **Automatizza sulla** barra degli strumenti delle azioni dell'utente.
-2. Scegliere il flusso Power Automate da eseguire, quindi selezionare **Esegui flusso.**
+2. Scegliere il Power Automate da eseguire, quindi selezionare **Esegui flusso.**
 3. Al termine del flusso, selezionare **Fatto.**
 
-Per ulteriori informazioni su Power Automate flows for insider risk management, vedere [Getting started with insider risk management settings.](insider-risk-management-settings.md#power-automate-flows-preview)
+Per ulteriori informazioni sui flussi Power Automate per la gestione dei rischi insider, vedere Introduzione alle impostazioni di gestione dei rischi [insider.](insider-risk-management-settings.md#power-automate-flows-preview)

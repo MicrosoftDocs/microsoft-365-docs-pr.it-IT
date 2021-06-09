@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Informazioni sulle attività da eseguire se si dispone di un dominio non instradabile associato agli account utente locali prima di sincronizzarli con il tenant di Microsoft 365.
+description: Informazioni sulle attività da eseguire se si dispone di un dominio non instradabile associato agli account utente locali prima di sincronizzarli con il tenant Microsoft 365 locale.
 ms.openlocfilehash: e4d0e020c5792c610d501c33e8f3d5131b7a1ff0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,13 +33,13 @@ ms.locfileid: "50927397"
 
 Quando si sincronizza la directory locale con Microsoft 365, è necessario disporre di un dominio verificato in Azure Active Directory (Azure AD). Vengono sincronizzati solo i nomi delle entità utente (UPN) associati al dominio di Servizi di dominio Active Directory locale. Tuttavia, qualsiasi UPN contenente un dominio non instradabile, ad esempio ".local" (ad esempio: billa@contoso.local), verrà sincronizzato con un dominio .onmicrosoft.com (ad esempio: billa@contoso.onmicrosoft.com). 
 
-Se attualmente si utilizza un dominio ".local" per gli account utente in Servizi di dominio Active Directory, è consigliabile modificarli per utilizzare un dominio verificato, ad esempio billa@contoso.com, per sincronizzare correttamente con il dominio di Microsoft 365.
+Se attualmente si utilizza un dominio ".local" per gli account utente in Servizi di dominio Active Directory, è consigliabile modificarli in modo che utilizzino un dominio verificato, ad esempio billa@contoso.com, per la corretta sincronizzazione con il dominio di Microsoft 365.
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Cosa succede se si dispone solo di un dominio locale ".local"?
 
-Si usa Azure AD Connect per sincronizzare Servizi di dominio Active Directory con il tenant di Azure AD del tenant di Microsoft 365. Per ulteriori informazioni, vedere Integrazione delle identità [locali con Azure AD.](/azure/architecture/reference-architectures/identity/azure-ad)
+È possibile usare Azure AD Connessione per sincronizzare Servizi di dominio Active Directory con il tenant di Azure AD del tenant Microsoft 365 tenant. Per ulteriori informazioni, vedere Integrazione delle identità [locali con Azure AD.](/azure/architecture/reference-architectures/identity/azure-ad)
   
-Azure AD Connect sincronizza l'UPN e la password degli utenti in modo che gli utenti possano accedere con le stesse credenziali usate in locale. Tuttavia, Azure AD Connect sincronizza solo gli utenti con i domini verificati da Microsoft 365. Ciò significa che il dominio viene verificato anche da Azure AD perché le identità di Microsoft 365 sono gestite da Azure AD. In altre parole, il dominio deve essere un dominio Internet valido (ad esempio, .com, .org, .net, .us). Se servizi di dominio Active Directory interni usa solo un dominio non instradabile ,ad esempio ".local", non può corrispondere al dominio verificato per il tenant di Microsoft 365. È possibile risolvere questo problema modificando il dominio principale in Servizi di dominio Active Directory locale oppure aggiungendo uno o più suffissi UPN.
+Azure AD Connessione sincronizza l'UPN e la password degli utenti in modo che gli utenti possano accedere con le stesse credenziali che usano in locale. Tuttavia, Azure AD Connessione sincronizza solo gli utenti con i domini verificati da Microsoft 365. Ciò significa che il dominio viene verificato anche da Azure AD perché Microsoft 365 identità sono gestite da Azure AD. In altre parole, il dominio deve essere un dominio Internet valido (ad esempio, .com, .org, .net, .us). Se servizi di dominio Active Directory interni usa solo un dominio non instradabile ,ad esempio ".local", questo non può corrispondere al dominio verificato per il tenant di Microsoft 365. È possibile risolvere questo problema modificando il dominio principale in Servizi di dominio Active Directory locale oppure aggiungendo uno o più suffissi UPN.
   
 ### <a name="change-your-primary-domain"></a>Modificare il dominio principale
 
@@ -47,9 +47,9 @@ Modificare il dominio principale in un dominio verificato in Microsoft 365, ad e
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>Aggiungere suffissi UPN e aggiornarvi gli utenti
 
-È possibile risolvere il problema ".local" registrando nuovi suffissi UPN o suffissi in Servizi di dominio Active Directory in modo che corrispondano al dominio (o ai domini) verificati in Microsoft 365. Dopo aver registrato il nuovo suffisso, si aggiornano gli UPN degli utenti per sostituire ".local" con il nuovo nome di dominio, ad esempio, in modo che un account utente sia simile a billa@contoso.com.
+È possibile risolvere il problema ".local" registrando nuovi suffissi UPN o suffissi in Servizi di dominio Active Directory in modo che corrispondano al dominio (o ai domini) verificato in Microsoft 365. Dopo aver registrato il nuovo suffisso, si aggiornano gli UPN degli utenti per sostituire ".local" con il nuovo nome di dominio, ad esempio, in modo che un account utente sia simile a billa@contoso.com.
   
-Dopo aver aggiornato gli UPN per usare il dominio verificato, si è pronti per sincronizzare Servizi di dominio Active Directory locale con Microsoft 365.
+Dopo aver aggiornato gli UPN per l'utilizzo del dominio verificato, si è pronti per sincronizzare Servizi di dominio Active Directory locale con Microsoft 365.
   
 #### <a name="step-1-add-the-new-upn-suffix"></a>Passaggio 1: Aggiungere il nuovo suffisso UPN**
   
@@ -57,7 +57,7 @@ Dopo aver aggiornato gli UPN per usare il dominio verificato, si è pronti per s
     
     **In caso contrario, se non si dispone di Windows Server 2012**
     
-    Premere **il tasto Windows + R** per aprire la finestra di dialogo **Esegui,** quindi digitare Domain.msc e quindi scegliere **OK**.
+    Premere **Windows tasto + R** per aprire la finestra di dialogo **Esegui,** quindi digitare Domain.msc e quindi scegliere **OK**.
     
     ![Scegliere Domini e trust di Active Directory.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
@@ -77,7 +77,7 @@ Dopo aver aggiornato gli UPN per usare il dominio verificato, si è pronti per s
     
     **In caso contrario, se non si dispone di Windows Server 2012**
     
-    Premere **il tasto Windows + R** per aprire la finestra di dialogo **Esegui,** quindi digitare Dsa.msc e quindi fare clic su **OK**
+    Premere **Windows tasto + R** per aprire la finestra di dialogo **Esegui,** quindi digitare Dsa.msc e quindi fare clic su **OK**
     
 2. Selezionare un utente, fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
     

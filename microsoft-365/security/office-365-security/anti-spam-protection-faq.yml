@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > Nelle distribuzioni ibride in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare due regole del flusso di posta Exchange (note anche come regole di trasporto) nell'organizzazione Exchange locale per rilevare le intestazioni del filtro posta indesiderata di EOP aggiunte ai messaggi. Per informazioni dettagliate, [vedere Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+      > Nelle distribuzioni ibride in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare due regole del flusso di posta Exchange (note anche come regole di trasporto) nell'organizzazione Exchange locale per rilevare le intestazioni del filtro posta indesiderata di EOP aggiunte ai messaggi. Per dettagli, vedere [Configurare EOP per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
        **Per i messaggi in uscita:** Il messaggio viene instradato attraverso il [pool](high-risk-delivery-pool-for-outbound-messages.md) di recapito ad alto rischio o viene restituito al mittente in un rapporto di mancato recapito (noto anche come rapporto di mancato recapito o messaggio di mancato recapito). Per ulteriori informazioni sulla protezione da posta indesiderata in uscita, vedere [Outbound spam controls](outbound-spam-controls.md).
   - question: >

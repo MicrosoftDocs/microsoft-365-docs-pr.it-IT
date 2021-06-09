@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Utilizzare le raccolte in Advanced eDiscovery per cercare e raccogliere contenuto relativo al caso o all'indagine.
+description: Usa raccolte in Advanced eDiscovery per cercare e raccogliere contenuti relativi al caso o all'indagine.
 ms.openlocfilehash: e3f383fab31ec39f22bd781fc84644e3eeee57bb
 ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "50838938"
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>Informazioni sulle raccolte in Advanced eDiscovery
 
 > [!NOTE]
-> Stiamo implementazione di una nuova esperienza di raccolta in Advanced eDiscovery, descritta in questo articolo. Questa implementazione avrà un certo numero di settimane prima che sia disponibile per tutte le organizzazioni. Se la nuova esperienza di raccolta non è disponibile nell'organizzazione, è comunque possibile raccogliere il contenuto del caso con lo strumento di ricerca [avanzata di eDiscovery.](create-search-to-collect-data.md)
+> Stiamo implementazione di una nuova esperienza di raccolta in Advanced eDiscovery, descritta in questo articolo. Questa implementazione avrà un certo numero di settimane prima che sia disponibile per tutte le organizzazioni. Se la nuova esperienza di raccolta non è disponibile nell'organizzazione, è comunque possibile raccogliere il contenuto del caso con lo Advanced eDiscovery [di ricerca.](create-search-to-collect-data.md)
 
 Quando le organizzazioni devono raccogliere le comunicazioni e i contenuti che possono essere rilevanti per un'indagine o un potenziale contenzioso, devono affrontare una sfida significativa nelle migliori circostanze. Nell'ambiente di lavoro moderno di oggi, il volume, la varietà e la velocità dei contenuti consentono l'innovazione e il lavoro remoto, espandendo allo stesso tempo i requisiti e il processo di gestione delle raccolte per le indagini di eDiscovery.
 
@@ -38,13 +38,13 @@ Dopo aver definito la raccolta, i responsabili di eDiscovery possono salvare la 
 
 Quando il responsabile è soddisfatto dell'ambito della raccolta e della quantità stimata di  contenuto che potrebbe rispondere, il responsabile può aggiungere o confermare il contenuto in un set di recensioni. Quando si esegue il commit di una raccolta in un set di revisioni, tale responsabile ha anche le opzioni per includere conversazioni in chat, allegati cloud e versioni di documenti. Il contenuto della raccolta passa anche attraverso un altro livello di elaborazione durante l'inserimento nel set di revisione. e la raccolta verrà aggiornata con il riepilogo finale della raccolta. Dopo l'aggiunta del contenuto al set di revisione, i responsabili di eDiscovery possono continuare a eseguire query, raggruppare e perfezionare il contenuto per facilitare la minimizzazione e la revisione. Inoltre, la raccolta viene aggiornata con informazioni e statistiche sul contenuto di cui è stato eseguito il commit nel set di revisioni. In questo modo viene fornito un riferimento cronologico sul contenuto dell'insieme.
 
-Con il rilascio delle raccolte in  advanced eDiscovery, la scheda Ricerche è stata rinominata **Raccolte** in un caso advanced eDiscovery nel Centro conformità Microsoft 365. I passaggi per definire l'ambito e le dimensioni della raccolta seguono lo stesso processo della ricerca per definire posizioni e condizioni. Salva come bozza e ottieni stime di anteprima consente di convalidare rapidamente l'ambito di destinazione delle raccolte prima di eseguire una ricerca e una raccolta complete nel set di revisione. In questo modo è possibile migliorare la gestione dei processi e le iterazioni mirate per iniziare a ridurre al minimo il contenuto durante il processo di ricerca e raccolta.
+Con il rilascio delle raccolte in  un Advanced eDiscovery, la scheda Ricerche è stata rinominata **Raccolte** in un caso Advanced eDiscovery nel Centro Microsoft 365 conformità. I passaggi per definire l'ambito e le dimensioni della raccolta seguono lo stesso processo della ricerca per definire posizioni e condizioni. Salva come bozza e ottieni stime di anteprima consente di convalidare rapidamente l'ambito di destinazione delle raccolte prima di eseguire una ricerca e una raccolta complete nel set di revisione. In questo modo è possibile migliorare la gestione dei processi e le iterazioni mirate per iniziare a ridurre al minimo il contenuto durante il processo di ricerca e raccolta.
 
 ## <a name="collections-workflow"></a>Flusso di lavoro raccolte
 
 Per iniziare a usare le raccolte in Advanced eDiscovery, ecco un flusso di lavoro di base e le descrizioni di ogni passaggio del processo.
 
-![Flusso di lavoro delle raccolte in Advanced eDiscovery](../media/CollectionsWorkflow.png)
+![Flusso di lavoro raccolte in Advanced eDiscovery](../media/CollectionsWorkflow.png)
 
 1. **Creare ed eseguire una bozza di raccolta**. Il primo passaggio consiste nel creare una bozza di raccolta e definire le origini dati di custodia e non di custodia in cui eseguire la ricerca. È inoltre possibile eseguire ricerche in altre origini dati che non sono state aggiunte al caso. Dopo aver aggiunto le origini dati, configurare la query di ricerca per cercare nelle origini dati il contenuto rilevante per il caso. È possibile utilizzare parole chiave, proprietà e condizioni per creare query di ricerca che restituiscono contenuto probabilmente più rilevante per il caso. Per ulteriori informazioni, vedere [Create a draft collection.](create-draft-collection.md)
 

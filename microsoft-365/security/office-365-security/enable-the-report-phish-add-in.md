@@ -43,7 +43,7 @@ Se si è un singolo utente, è possibile abilitare il componente aggiuntivo Segn
 
 Se si è un amministratore globale o un amministratore di Exchange Online e Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile abilitare il componente aggiuntivo Segnala phishing per [l'organizzazione.](#get-and-enable-the-report-phishing-add-in-for-your-organization) L'Add-In di phishing dei report è ora disponibile tramite [distribuzione centralizzata.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Il componente aggiuntivo Segnala phishing funziona con la maggior parte Microsoft 365 sottoscrizioni e i prodotti seguenti:
 

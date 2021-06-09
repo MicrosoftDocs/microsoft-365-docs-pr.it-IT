@@ -1,5 +1,5 @@
 ---
-title: Gestire le indagini legali in Microsoft 365
+title: Gestione di indagini legali in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Usare i casi di eDiscovery nel Centro sicurezza & conformità in Office 365 per gestire l'indagine legale dell'organizzazione.
+description: Utilizzare i casi di eDiscovery nel Centro sicurezza & conformità in Office 365 per gestire l'indagine legale dell'organizzazione.
 ms.openlocfilehash: c052daab8de33e21cccc3c638ab4995a007f60fb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50903460"
 ---
-# <a name="manage-legal-investigations-in-microsoft-365"></a>Gestire le indagini legali in Microsoft 365
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Gestione di indagini legali in Microsoft 365
 
 Le organizzazioni hanno molti motivi per rispondere a un caso legale che coinvolge alcuni dirigenti o altri dipendenti dell'organizzazione. Ciò potrebbe comportare la ricerca e la conservazione rapidamente per ulteriori informazioni specifiche dell'indagine nei messaggi di posta elettronica, nei documenti, nelle conversazioni di messaggistica istantanea e in altri percorsi di contenuto utilizzati dagli utenti nelle attività lavorative quotidiane. È possibile eseguire queste e molte altre attività simili utilizzando gli strumenti del caso di eDiscovery nel Centro sicurezza e conformità.
   
@@ -48,19 +48,19 @@ Come nella sezione precedente in cui sono elencati gli script per gli scenari di
   
 - [Creare un report di blocco di eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) contenente informazioni su tutti i blocchi associati ai casi di eDiscovery nell'organizzazione.
 
-- [Aggiungere cassette postali e percorsi di OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) per un elenco di utenti a un blocco di eDiscovery.
+- [Aggiungere cassette postali e OneDrive per](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) un elenco di utenti a un blocco di eDiscovery.
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Gestire indagini legali con la soluzione Advanced eDiscovery in Microsoft 365
+## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Gestire le indagini legali con la soluzione Advanced eDiscovery in Microsoft 365
 
-La soluzione Advanced eDiscovery in Microsoft 365 si basa sulle funzionalità esistenti di eDiscovery e analisi in Office 365. Questa nuova soluzione, denominata *Advanced eDiscovery,* offre un flusso di lavoro end-to-end per conservare, raccogliere, esaminare, analizzare ed esportare contenuto reattivo alle indagini interne ed esterne dell'organizzazione. Consente inoltre ai team legali di gestire l'intero flusso di lavoro di notifica di blocco legale per comunicare con i custodi coinvolti in un caso.
+La Advanced eDiscovery in Microsoft 365 si basa sulle funzionalità di eDiscovery e di analisi esistenti in Office 365. Questa nuova soluzione, denominata *Advanced eDiscovery*, offre un flusso di lavoro end-to-end per conservare, raccogliere, esaminare, analizzare ed esportare contenuto reattivo alle indagini interne ed esterne dell'organizzazione. Consente anche ai team legali di gestire l'intero flusso di lavoro per le notifiche di blocco a fini giudiziari per comunicare con i responsabili coinvolti in un caso.
 
-Advanced eDiscovery richiede una sottoscrizione E5 per l'organizzazione di Microsoft 365 o Office 365. Per ulteriori informazioni sulle licenze, vedere [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+Advanced eDiscovery richiede una sottoscrizione E5 per l'Microsoft 365 o Office 365'organizzazione. Per ulteriori informazioni sulle licenze, vedere [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Ecco una breve panoramica del flusso di lavoro incorporato in Advanced eDiscovery. Per ulteriori informazioni, vedere [Manage the Advanced eDiscovery workflow.](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)
+Ecco una breve panoramica del flusso di lavoro incorporato in Advanced eDiscovery. Per ulteriori informazioni, vedere [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
 
 - [Crea un caso](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) per iniziare.
 
-- [Gestire i custodi](managing-custodians.md) aggiungendoli a un caso e mettendo un blocco legale sul contenuto nella cassetta postale, nell'account OneDrive e in Microsoft Teams di cui sono membri.
+- [Gestire i custodi](managing-custodians.md) aggiungendoli a un caso e mettendo un blocco legale sul contenuto nella propria cassetta postale, OneDrive account e Microsoft Teams di cui sono membri.
 
 - [Gestire le comunicazioni](managing-custodian-communications.md) con i custodi automatizzando il processo di notifica del blocco legale.
 
@@ -74,4 +74,4 @@ Ecco una breve panoramica del flusso di lavoro incorporato in Advanced eDiscover
 
 - [Esportare i dati del caso](exporting-data-ediscover20.md) per la revisione da parte di consulenti esterni.
 
-- [Gestire i processi a esecuzione avanzata](managing-jobs-ediscovery20.md) in Advanced eDiscovery.
+- [Gestire processi a esecuzione lunga](managing-jobs-ediscovery20.md) in Advanced eDiscovery.

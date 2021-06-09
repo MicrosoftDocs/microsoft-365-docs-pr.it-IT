@@ -1,5 +1,5 @@
 ---
-title: Statistiche e report di raccolta
+title: Statistiche e report di raccolte
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Informazioni su come accedere e utilizzare statistiche e report per bozze di raccolte e raccolte che sono state impegnate in un set di revisione in Advanced eDiscovery.
+description: Informazioni su come accedere e usare statistiche e report per bozze di raccolte e raccolte di cui è stato eseguito il commit in un set di revisioni in Advanced eDiscovery.
 ms.openlocfilehash: 5edbd4a3b7212e027c777ed6ce5284f4e9cf595c
 ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/17/2021
 ms.locfileid: "50838930"
 ---
-# <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Statistiche e report di raccolta in Advanced eDiscovery
+# <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Statistiche di raccolta e report in Advanced eDiscovery
 
 Dopo aver creato una bozza di raccolta, è possibile visualizzare le statistiche sugli elementi recuperati, ad esempio le posizioni del contenuto che contengono la maggior parte degli elementi corrispondenti ai criteri di ricerca e il numero di elementi restituiti dalla query di ricerca. È inoltre possibile visualizzare un'anteprima di un sottoinsieme dei risultati.
 
@@ -49,7 +49,7 @@ In questa sezione viene visualizzato un riepilogo grafico degli elementi stimati
 
 In questa sezione vengono visualizzate le statistiche relative alla query di ricerca di raccolta e al numero di elementi stimati corrispondenti a parti diverse della query di ricerca. È possibile utilizzare queste statistiche per analizzare il numero di elementi che corrispondono a ogni componente della query di ricerca. In questo modo è possibile perfezionare i criteri di ricerca per la raccolta e, se necessario, limitare l'ambito della raccolta.
 
-- **Tipo di percorso**: Tipo di percorso del contenuto a cui sono applicabili le statistiche della query. Il valore di **Exchange indica** la posizione di una cassetta postale. il valore **SharePoint indica** la posizione di un sito.
+- **Tipo di percorso**: Tipo di percorso del contenuto a cui sono applicabili le statistiche della query. Il valore di **Exchange** indica la posizione di una cassetta postale; il valore **SharePoint** indica la posizione di un sito.
 
 - **Parte**: parte della query di ricerca a cui sono applicabili le statistiche. **Primary** indica l'intera query di ricerca. **Keyword** indica che le statistiche nella riga sono relative a una parola chiave specifica. Se si utilizza un elenco di parole chiave per la query di ricerca nell'insieme, le statistiche per ogni componente della query vengono incluse in questa tabella.
 
@@ -128,16 +128,16 @@ Quando si esegue una bozza di raccolta, nella scheda Riepilogo e nella sezione S
 
 - **Opzioni di configurazione della raccolta**. Quando si esegue il commit di una raccolta di bozze in un insieme di revisioni, è necessario scegliere di includere thread di conversazione, allegati cloud e versioni di documenti. Uno di questi elementi aggiunti al set di revisione non è incluso nelle stime della raccolta di bozze. Vengono identificati e raccolti solo quando si esegue il commit della raccolta. La selezione di queste opzioni probabilmente aumenterà il numero di elementi aggiunti al set di recensioni. 
 
-    Ad esempio, più versioni dei documenti di SharePoint non sono incluse nella stima per la raccolta bozze. Tuttavia, se si seleziona l'opzione per includere tutte le versioni dei documenti quando si esportano i risultati della ricerca, il numero effettivo (e la dimensione totale) degli elementi aggiunti al set di revisioni aumenta. 
+    Ad esempio, più versioni SharePoint documenti non sono incluse nella stima per la raccolta bozze. Tuttavia, se si seleziona l'opzione per includere tutte le versioni dei documenti quando si esportano i risultati della ricerca, il numero effettivo (e la dimensione totale) degli elementi aggiunti al set di revisioni aumenta. 
 
     Per ulteriori informazioni su queste opzioni, vedere [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery). 
 
 Ecco altri motivi per cui i risultati stimati di una bozza di raccolta possono essere diversi rispetto ai risultati effettivi di cui è stato eseguito il commit.
 
-- **Il modo in cui i risultati vengono stimati per le bozze delle raccolte**. Una stima dei risultati della ricerca restituiti da una bozza di raccolta è semplicemente una stima (e non un conteggio effettivo) degli elementi che soddisfano i criteri di query di raccolta. Per compilare la stima degli elementi di posta elettronica, dal database di Exchange viene richiesto un elenco degli ID dei messaggi che soddisfano i criteri di ricerca. Tuttavia, quando si esegue il commit della raccolta in un insieme di revisione, la raccolta viene rieseguita e i messaggi effettivi vengono recuperati dal database di Exchange. Di conseguenza, le differenze potrebbero derivare dal modo in cui vengono determinati il numero stimato di elementi e il numero effettivo di elementi.
+- **Il modo in cui i risultati vengono stimati per le bozze delle raccolte**. Una stima dei risultati della ricerca restituiti da una bozza di raccolta è semplicemente una stima (e non un conteggio effettivo) degli elementi che soddisfano i criteri di query di raccolta. Per compilare la stima degli elementi di posta elettronica, viene richiesto un elenco degli ID dei messaggi che soddisfano i criteri di ricerca dal database Exchange di posta elettronica. Tuttavia, quando si esegue il commit della raccolta in un insieme di revisioni, la raccolta viene rieseguita e i messaggi effettivi vengono recuperati dal database Exchange revisione. Di conseguenza, le differenze potrebbero derivare dal modo in cui vengono determinati il numero stimato di elementi e il numero effettivo di elementi.
 
 - **Modifiche che si verificano tra il momento in cui si esegue la stima e il commit delle raccolte di bozze.** Quando si esegue il commit di una bozza di raccolta in un set di revisione, la ricerca viene rieseguita per raccogliere gli elementi più recenti nell'indice di ricerca che soddisfano i criteri di ricerca. È possibile che altri elementi sono stati creati, inviati o eliminati che soddisfano i criteri di ricerca nel periodo compreso tra l'ultima esecuzione della raccolta bozze e il commit della raccolta bozze in un set di revisione. È inoltre possibile che gli elementi presenti nell'indice di ricerca quando sono stati stimati i risultati della bozza della raccolta non siano più presenti perché sono stati eliminati da un'origine dati prima di eseguire il commit della raccolta. Un modo per ovviare a questo problema è specificare un intervallo di date per una raccolta. Un altro modo è quello di conservare i percorsi del contenuto in modo che gli elementi siano conservati e non possano essere eliminati.
 
-- **Elementi non indicizzati**. Se la raccolta di bozze includeva la ricerca in tutte le cassette postali di Exchange o in tutti i siti di SharePoint, solo gli elementi non indicizzati delle posizioni di contenuto contenenti elementi che soddisfano i criteri di raccolta verranno aggiunti al set di revisione. In altre parole, se non vengono trovati risultati in una cassetta postale o in un sito, gli eventuali elementi non indicizzati in tale cassetta postale o sito non verranno aggiunti al set di revisione. Tuttavia, gli elementi non indicizzati da tutti i percorsi di contenuto (anche quelli che non contengono elementi che corrispondono alla query di raccolta) verranno inclusi nei risultati stimati della raccolta.
+- **Elementi non indicizzati**. Se la raccolta di bozze includeva la ricerca in tutte le cassette postali di Exchange o in tutti i siti di SharePoint, solo gli elementi non indicizzati delle posizioni di contenuto contenenti elementi che soddisfano i criteri di raccolta verranno aggiunti al set di revisioni. In altre parole, se non vengono trovati risultati in una cassetta postale o in un sito, gli eventuali elementi non indicizzati in tale cassetta postale o sito non verranno aggiunti al set di revisione. Tuttavia, gli elementi non indicizzati da tutti i percorsi di contenuto (anche quelli che non contengono elementi che corrispondono alla query di raccolta) verranno inclusi nei risultati stimati della raccolta.
 
     In alternativa, se la raccolta di bozze include percorsi di contenuto  specifici (ovvero cassette postali o siti specifici in cui è specificato nella pagina Percorsi aggiuntivi nella procedura guidata di raccolta delle bozze), verranno esportati gli elementi non indicizzati (non esclusi dai criteri di raccolta) dai percorsi di contenuto specificati nella ricerca. In questo caso, il numero stimato di elementi non indicizzati e il numero di elementi non indicizzati aggiunti al set di revisioni devono essere uguali.

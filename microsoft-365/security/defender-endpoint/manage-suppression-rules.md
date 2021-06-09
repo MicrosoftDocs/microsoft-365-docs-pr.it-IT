@@ -40,7 +40,7 @@ Potrebbero essere presenti scenari in cui è necessario eliminare la visualizzaz
 È possibile visualizzare un elenco di tutte le regole di eliminazione e gestirle in un'unica posizione. È inoltre possibile attivare o disattivare una regola di eliminazione degli avvisi.
 
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Eliminazione avviso.** Viene visualizzato l'elenco delle regole di eliminazione create dagli utenti dell'organizzazione.
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **avviso.** Viene visualizzato l'elenco delle regole di eliminazione create dagli utenti dell'organizzazione.
 
 2. Selezionare una regola facendo clic sulla casella di controllo accanto al nome della regola.
 
@@ -49,7 +49,7 @@ Potrebbero essere presenti scenari in cui è necessario eliminare la visualizzaz
 
 ## <a name="view-details-of-a-suppression-rule"></a>Visualizzare i dettagli di una regola di eliminazione
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Eliminazione avviso.** Viene visualizzato l'elenco delle regole di eliminazione create dagli utenti dell'organizzazione.
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **avviso.** Viene visualizzato l'elenco delle regole di eliminazione create dagli utenti dell'organizzazione.
 
 2. Fare clic sul nome di una regola. Vengono visualizzati i dettagli della regola. Verranno visualizzati i dettagli della regola, ad esempio stato, ambito, azione, numero di avvisi corrispondenti, creati da e data di creazione della regola. È inoltre possibile visualizzare gli avvisi associati e le condizioni della regola.
 

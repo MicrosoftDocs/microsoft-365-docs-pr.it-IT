@@ -1,7 +1,7 @@
 ---
 title: Impostazioni di gestione dei rischi Insider
 description: Informazioni sulle impostazioni di gestione dei rischi insider in Microsoft 365
-keywords: Microsoft 365, gestione dei rischi insider, gestione dei rischi, conformità
+keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -71,7 +71,7 @@ In alcuni casi, è possibile limitare gli indicatori dei criteri di rischio insi
 Per definire gli indicatori dei criteri di rischio insider abilitati in tutti i criteri di rischio insider, passare a **Impostazioni di** rischio Insider Indicatori e selezionare uno o più indicatori di  >   criteri. Gli indicatori selezionati nella pagina Impostazioni indicatori non possono essere configurati singolarmente durante la creazione o la modifica di un criterio di rischio insider nella procedura guidata dei criteri.
 
 >[!NOTE]
->La visualizzazione dei nuovi utenti aggiunti manualmente nel dashboard Utenti può richiedere **diverse ore.** La visualizzazione delle attività per i 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **dashboard** Utenti e aprire la **scheda Attività** utente nel riquadro dei dettagli.
+>La visualizzazione dei nuovi utenti aggiunti manualmente nel dashboard Utenti può richiedere **diverse ore.** La visualizzazione delle attività dei 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **dashboard** Utenti e aprire la **scheda Attività** utente nel riquadro dei dettagli.
 
 ### <a name="enable-device-indicators-and-onboard-devices"></a>Abilitare gli indicatori di dispositivo e i dispositivi di onboard
 <a name="OnboardDevices"> </a>
@@ -200,7 +200,7 @@ Gli avvisi di Defender per Endpoint vengono importati ogni giorno. A seconda del
 Ad esempio, se si seleziona *Nuovo,* *In* corso e Risolto per questa impostazione, quando viene generato un avviso di Microsoft Defender per endpoint e lo stato è *Nuovo*, viene importata un'attività di avviso iniziale per l'utente a rischio insider.  Quando lo stato di valutazione di Defender for Endpoint viene modificato *in In* corso, viene importata una seconda attività per questo avviso per l'utente a rischio insider. Quando lo stato finale di valutazione defender per endpoint è impostato su *Risolto,* viene importata una terza attività per questo avviso per l'utente a rischio insider. Questa funzionalità consente agli investigatori di seguire la progressione degli avvisi di Defender for Endpoint e di scegliere il livello di visibilità richiesto dall'indagine.
 
 >[!IMPORTANT]
->Dovrai configurare Microsoft Defender for Endpoint nell'organizzazione e abilitare Defender for Endpoint per l'integrazione della gestione dei rischi insider nel Defender Security Center per importare gli avvisi di violazione della sicurezza. Per altre informazioni sulla configurazione di Defender per Endpoint per l'integrazione della gestione dei rischi insider, vedi [Configurare le funzionalità avanzate in Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)
+>Per importare gli avvisi di violazione della sicurezza è necessario configurare Microsoft Defender for endpoint nell'organizzazione e abilitarlo per l'integrazione della gestione dei rischi Insider in Defender Security Center. Per altre informazioni sulla configurazione di Defender per Endpoint per l'integrazione della gestione dei rischi Insider, vedere [Configurare le funzionalità avanzate in Defender per endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### <a name="domains-preview"></a>Domini (anteprima)
 
@@ -494,7 +494,7 @@ A seconda del numero di utenti assegnati ai gruppi di ruoli di gestione dei risc
 
 ## <a name="analytics-preview"></a>Analisi (anteprima)
 
-L'analisi dei rischi Insider consente di eseguire una valutazione dei potenziali rischi insider nell'organizzazione senza configurare criteri di rischio insider. Questa valutazione può aiutare l'organizzazione a identificare le potenziali aree con un rischio maggiore per gli utenti e a determinare il tipo e l'ambito dei criteri di gestione dei rischi insider che è possibile configurare. Le analisi analitiche offrono i vantaggi seguenti per l'organizzazione:
+L'analisi del rischio Insider consente di condurre una valutazione dei potenziali rischi insider nell'organizzazione senza configurare criteri di rischio Insider. Questa valutazione può aiutare l'organizzazione a identificare le potenziali aree con rischio utente più elevato e a determinare il tipo e l'ambito dei criteri di gestione dei rischi Insider che può essere opportuno configurare. Le analisi analitiche offrono i vantaggi seguenti per l'organizzazione:
 
 - Facile da configurare: per iniziare a usare le analisi analitiche, è possibile selezionare Esegui analisi quando richiesto dal suggerimento di analisi o passare > Impostazioni rischio Insider e abilitare l'analisi.
 - Requisiti minimi per la privacy: i risultati dell'analisi e le informazioni dettagliate vengono restituiti come attività degli utenti anonimi, i singoli nomi utente non sono identificabili dai revisori.

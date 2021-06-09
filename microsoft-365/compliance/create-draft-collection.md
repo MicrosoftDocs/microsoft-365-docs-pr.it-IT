@@ -1,5 +1,5 @@
 ---
-title: Creare una raccolta di bozze
+title: Creare una raccolta bozza
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Una bozza di raccolta è una ricerca eDiscovery di origini dati depositario e non depositario in un caso advanced eDiscovery che restituisce una stima di ricerca corrispondente alla query di ricerca della raccolta. È possibile esaminare le statistiche di ricerca, visualizzare in anteprima un campionamento di elementi e rivedere ed eseguire di nuovo la raccolta prima di confermare i risultati in un set di revisione.
+description: Una bozza di raccolta è una ricerca eDiscovery di origini dati depositario e non depositario in un caso di Advanced eDiscovery che restituisce una stima di ricerca corrispondente alla query di ricerca della raccolta. È possibile esaminare le statistiche di ricerca, visualizzare in anteprima un campionamento di elementi e rivedere ed eseguire di nuovo la raccolta prima di confermare i risultati in un set di revisione.
 ms.openlocfilehash: 18f018a5e00f355c3f320a963135e76ecc51f086
 ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/17/2021
 ms.locfileid: "50838895"
 ---
-# <a name="create-a-draft-collection-in-advanced-ediscovery"></a>Creare una bozza di raccolta in Advanced eDiscovery
+# <a name="create-a-draft-collection-in-advanced-ediscovery"></a>Creare una raccolta di bozze in Advanced eDiscovery
 
 Dopo aver identificato i custodi e qualsiasi origine dati non depositario per il caso, sei pronto per identificare e individuare un set di documenti rilevanti. A tale scopo, utilizzare lo strumento Raccolte per cercare contenuto pertinente nelle origini dati. A tale scopo, creare una raccolta che esegue la ricerca di contenuto corrispondente ai criteri di ricerca specificati nelle origini dati specificate. È possibile creare una bozza di *raccolta,* che è una stima degli elementi trovati oppure è possibile creare una raccolta che aggiunge automaticamente gli elementi a un insieme di recensioni. Quando si crea una bozza di raccolta, è possibile visualizzare informazioni sui risultati stimati corrispondenti alla query di ricerca, ad esempio il numero totale e le dimensioni degli elementi trovati, le diverse origini dati in cui sono stati trovati e le statistiche relative alla query di ricerca. È inoltre possibile visualizzare in anteprima un esempio di elementi restituiti dall'insieme. Utilizzando queste statistiche, è possibile modificare la query di ricerca ed eseguire di nuovo la bozza di raccolta per limitare i risultati. Dopo aver soddisfatto i risultati della raccolta, puoi confermare la raccolta in un set di revisione. Quando si esegue il commit di una bozza di raccolta, gli elementi restituiti dalla raccolta vengono aggiunti a un insieme di revisione per la revisione, l'analisi e l'esportazione.
 
@@ -35,11 +35,11 @@ Dopo aver identificato i custodi e qualsiasi origine dati non depositario per il
 
   - [Aggiungere origini dati non correlate ai responsabili a un caso](non-custodial-data-sources.md)
 
-- È possibile cercare in una raccolta di bozze altre origini dati(quelle che non sono state aggiunte al caso come posizioni di custodia o non depositario) per trovare contenuti che potrebbero essere rilevanti per il caso. Queste origini dati possono includere cassette postali, siti di SharePoint e Teams. Se questa situazione è applicabile al caso, compilare un elenco di queste origini dati in modo da poterle aggiungere alla raccolta.
+- È possibile cercare in una raccolta di bozze altre origini dati(quelle che non sono state aggiunte al caso come posizioni di custodia o non depositario) per trovare contenuti che potrebbero essere rilevanti per il caso. Queste origini dati possono includere cassette postali, SharePoint siti e Teams. Se questa situazione è applicabile al caso, compilare un elenco di queste origini dati in modo da poterle aggiungere alla raccolta.
 
-## <a name="create-a-draft-collection"></a>Creare una raccolta di bozze
+## <a name="create-a-draft-collection"></a>Creare una raccolta bozza
 
-1. Nel Centro conformità Microsoft 365 aprire il caso Advanced eDiscovery e quindi selezionare la **scheda** Raccolte.
+1. Nel Centro Microsoft 365 conformità aprire il Advanced eDiscovery e quindi selezionare la **scheda** Raccolte.
 
 2. Nella pagina **Raccolte** selezionare **Nuovo insieme**  >  **Standard.**
 
@@ -59,16 +59,16 @@ Dopo aver identificato i custodi e qualsiasi origine dati non depositario per il
 
 6. Nella pagina **Origini dati aggiuntive** è possibile selezionare altre cassette postali e siti in cui eseguire la ricerca nell'ambito della raccolta. Questi tipi di origini dati non sono stati aggiunti come posizioni di dati depositario o non depositario nel caso. Sono inoltre disponibili due opzioni per la ricerca di origini dati aggiuntive:
 
-   - Per cercare in tutti i percorsi di contenuto un servizio specifico (cassette postali di Exchange, siti di SharePoint e OneDrive o cartelle pubbliche di Exchange), fare clic sull'interruttore **Seleziona** tutto corrispondente nella **colonna** Stato. Questa opzione consente di cercare tutti i percorsi di contenuto nel servizio selezionato.
+   - Per cercare in tutti i percorsi di contenuto un servizio specifico (cassette postali di Exchange, siti  SharePoint e OneDrive o cartelle pubbliche di Exchange), fare clic sull'interruttore Seleziona tutto corrispondente nella colonna **Stato.** Questa opzione consente di cercare tutti i percorsi di contenuto nel servizio selezionato.
 
-   - Per cercare un percorso di contenuto  specifico per un  servizio, fare clic sull'interruttore Seleziona tutto  corrispondente nella colonna Stato e quindi fare clic su **Utenti,** gruppi o team (per le cassette postali di Exchange) o Scegli siti per (siti di SharePoint e OneDrive) per cercare percorsi di contenuto specifici.
+   - Per cercare un percorso di contenuto  specifico per un  servizio, fare clic sull'interruttore Seleziona tutto corrispondente nella  colonna Stato e quindi fare clic su **Utenti,** gruppi o team (per le cassette postali di Exchange) o Scegli siti per (siti di SharePoint e OneDrive) per cercare percorsi di contenuto specifici.
 
 7. Nella pagina **Condizioni** è possibile creare la query di ricerca utilizzata per raccogliere gli elementi dalle origini dati identificate nelle pagine precedenti della procedura guidata. Puoi cercare parole chiave, coppie property:value o usare un elenco di parole chiave. È inoltre possibile aggiungere diverse condizioni di ricerca per restringere l'ambito della raccolta. Per ulteriori informazioni, vedere [Creare query di ricerca per raccolte.](building-search-queries.md)
 
 8. Nella pagina **Salva come bozza o aggiungi a revisione set** selezionare Salva raccolta come **bozza.**
 
    > [!NOTE]
-   > L'altra opzione in questa pagina ti consente di raccogliere elementi e aggiungerli direttamente a un set di recensioni. Invece di creare una bozza di raccolta per cui è possibile esaminare le statistiche e visualizzare in anteprima un campione dei risultati della raccolta, questa opzione ignora tale processo e aggiunge automaticamente la raccolta a un set di recensioni. Se si seleziona la seconda opzione per aggiungere la raccolta a un set di revisione, sono disponibili ulteriori impostazioni da configurare, ad esempio la raccolta di interi thread di conversazione di chat in Microsoft Teams e Yammer e la raccolta di allegati cloud (denominati anche allegati *moderni).* Per ulteriori informazioni su queste impostazioni, vedere [Commit a draft collection to a review set](commit-draft-collection.md).
+   > L'altra opzione in questa pagina ti consente di raccogliere elementi e aggiungerli direttamente a un set di recensioni. Invece di creare una bozza di raccolta per cui è possibile esaminare le statistiche e visualizzare in anteprima un campione dei risultati della raccolta, questa opzione ignora tale processo e aggiunge automaticamente la raccolta a un set di recensioni. Se si seleziona la seconda opzione per aggiungere la raccolta a un set di revisioni, sono disponibili ulteriori impostazioni da configurare, ad esempio la raccolta di interi thread di conversazione di chat in Microsoft Teams e Yammer e la raccolta di allegati cloud (denominati anche allegati *moderni).* Per ulteriori informazioni su queste impostazioni, vedere [Commit a draft collection to a review set](commit-draft-collection.md).
 
 9. Nella pagina **Rivedi raccolta** è possibile esaminare e aggiornare le impostazioni di raccolta configurate nelle pagine precedenti.
 
@@ -82,7 +82,7 @@ Dopo aver identificato i custodi e qualsiasi origine dati non depositario per il
 
 Dopo aver creato una raccolta di  bozze, questa viene elencata nella pagina Raccolte nel caso e lo stato indica che è in corso. Un processo denominato **Preparazione dell'anteprima della** ricerca e delle stime viene inoltre creato e visualizzato nella **pagina** Processi nel caso.
 
-Durante il processo di raccolta delle bozze, Advanced eDiscovery esegue una stima della ricerca utilizzando i criteri di ricerca e le origini dati specificati nella raccolta. Advanced eDiscovery prepara anche un campionamento di elementi che è possibile visualizzare in anteprima. Al termine dell'insieme, vengono aggiornate le colonne seguenti e i valori corrispondenti nella **pagina** Raccolta:
+Durante il processo di raccolta delle bozze, Advanced eDiscovery una stima della ricerca utilizzando i criteri di ricerca e le origini dati specificati nella raccolta. Advanced eDiscovery prepara anche un campionamento di elementi che puoi visualizzare in anteprima. Al termine dell'insieme, vengono aggiornate le colonne seguenti e i valori corrispondenti nella **pagina** Raccolta:
 
 ![Stati di stato per una bozza di raccolta](../media/DraftCollectionStatus.png)
 
@@ -132,7 +132,7 @@ Ecco le descrizioni delle opzioni di gestione.
   
   - Dimensione totale, in byte, degli elementi in ogni percorso di contenuto.
 
-  - Servizio (ad esempio Exchange o SharePoint) in cui si trova il percorso del contenuto.
+  - Servizio (ad esempio, Exchange o SharePoint) in cui si trova il percorso del contenuto.
 
 - **Copia raccolta:** crea una nuova raccolta di bozze copiando le impostazioni da una raccolta esistente. È necessario utilizzare un nome diverso per la nuova raccolta. È inoltre possibile modificare le impostazioni prima di inviare la nuova raccolta. Dopo l'invio, viene eseguita la query di ricerca e vengono generate nuove stime e statistiche. È un buon modo per creare rapidamente ulteriori bozze di raccolta e quindi modificare le impostazioni selezionate in base alle esigenze conservando comunque le informazioni nella raccolta originale. In questo modo puoi anche confrontare facilmente i risultati di due raccolte simili.
 

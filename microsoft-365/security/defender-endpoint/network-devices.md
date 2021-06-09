@@ -32,7 +32,7 @@ ms.locfileid: "51862068"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
@@ -45,9 +45,9 @@ ms.locfileid: "51862068"
 > [!NOTE]  
 > Il Blog [sulle](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) valutazioni dell'individuazione e della vulnerabilità dei dispositivi di rete pubblicato \( 04-13-2021 fornisce informazioni dettagliate sulle nuove funzionalità di individuazione dei dispositivi di rete \) in Defender for Endpoint.  Questo articolo fornisce una panoramica  della sfida progettata per l'individuazione dei dispositivi di rete e informazioni dettagliate su come iniziare a usare queste nuove funzionalità.
 
-Le funzionalità di individuazione della rete sono disponibili nella sezione **Inventario** dispositivi del Centro sicurezza Microsoft 365 e delle console di Microsoft Defender Security Center.  
+Le funzionalità di individuazione della rete sono disponibili nella sezione **Inventario** dispositivi del centro sicurezza Microsoft 365 e Microsoft Defender Security Center console.  
 
-Un dispositivo Microsoft Defender for Endpoint designato verrà usato in ogni segmento di rete per eseguire analisi periodiche autenticate di dispositivi di rete preconfigurati. Una volta individuate, le funzionalità di gestione delle minacce e delle vulnerabilità di Defender for Endpoint forniscono flussi di lavoro integrati per proteggere commutatori, router, controller WLAN, firewall e gateway VPN individuati.  
+Un dispositivo Microsoft Defender for Endpoint designato verrà usato in ogni segmento di rete per eseguire analisi periodiche autenticate di dispositivi di rete preconfigurati. Una volta individuate, le funzionalità gestione di minacce e vulnerabilità di Defender for Endpoint forniscono flussi di lavoro integrati per proteggere commutatori, router, controller WLAN, firewall e gateway VPN individuati.  
 
 Una volta individuati e classificati i dispositivi di rete, gli amministratori della sicurezza saranno in grado di ricevere i consigli più recenti sulla sicurezza ed esaminare le vulnerabilità individuate di recente nei dispositivi di rete distribuiti nelle organizzazioni.
 
@@ -105,12 +105,12 @@ Il primo passaggio consiste nel selezionare un dispositivo che eseguirà le anal
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per configurare i processi di valutazione, è necessaria l'opzione di autorizzazione utente seguente: **Gestire le impostazioni di sicurezza nel Centro sicurezza.** Per trovare l'autorizzazione, accedere a **Impostazioni**  >  **Ruoli.** Per ulteriori informazioni, vedere [Create and manage roles for role-based access control](user-roles.md).
+Per configurare i processi di valutazione, è necessaria l'opzione di autorizzazione utente seguente: **Gestire le impostazioni di sicurezza nel Centro sicurezza.** Per trovare l'autorizzazione, andare a **Impostazioni**  >  **ruoli**. Per ulteriori informazioni, vedere [Create and manage roles for role-based access control](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Installare lo scanner di rete
 
-1. Passare a **Impostazioni di sicurezza di Microsoft 365** Processi di valutazione degli  >    >  **endpoint**  >   (in Valutazioni **di rete**).
-    1. In Microsoft Defender Security Center passare a Impostazioni > processi di valutazione.
+1. Vai a **Microsoft 365 sicurezza Impostazioni** processi di valutazione degli  >    >  **endpoint**  >   (in Valutazioni **di rete**).
+    1. Nel Microsoft Defender Security Center, passare alla pagina Impostazioni > processi di valutazione.
 
 2. Scarica lo scanner di rete e installalo nel dispositivo di valutazione Defender for Endpoint designato.
 
@@ -134,7 +134,7 @@ Per completare il processo di registrazione dello scanner di rete:
 
 ## <a name="configure-a-new-assessment-job"></a>Configurare un nuovo processo di valutazione  
 
-Nella pagina Processi di valutazione in **Impostazioni** selezionare **Aggiungi processo di valutazione di rete.** Segui il processo di configurazione per scegliere i dispositivi di rete da analizzare regolarmente e aggiungere all'inventario dei dispositivi.
+Nella pagina Processi di valutazione in **Impostazioni** selezionare **Aggiungi processo di valutazione di rete**. Segui il processo di configurazione per scegliere i dispositivi di rete da analizzare regolarmente e aggiungere all'inventario dei dispositivi.
 
 Per impedire la duplicazione dei dispositivi nell'inventario dei dispositivi di rete, assicurati che ogni indirizzo IP sia configurato una sola volta tra più dispositivi di valutazione.
 
@@ -193,7 +193,7 @@ Se non si ottengono ancora risultati dopo 5 minuti, riavviare il servizio.
 
 Verificare che lo scanner sia in esecuzione correttamente. Passare quindi alla definizione di analisi e selezionare "Esegui test". Controllare quali messaggi di errore vengono restituiti dagli indirizzi IP pertinenti.
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>Autorizzazione utente necessaria per la gestione delle minacce e delle vulnerabilità
+### <a name="required-threat-and-vulnerability-management-user-permission"></a>Autorizzazione gestione di minacce e vulnerabilità'utente
 
 Registrazione completata con un errore: "Sembra che non si disponga di autorizzazioni sufficienti per l'aggiunta di un nuovo agente. L'autorizzazione necessaria è "Gestire le impostazioni di sicurezza nel Centro sicurezza".
 

@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/03/2021
 ms.locfileid: "52736421"
 ---
-# <a name="query-and-filter-content-in-a-review-set"></a>Eseguire query e filtrare il contenuto in un set di recensioni
+# <a name="query-and-filter-content-in-a-review-set"></a>Query e contenuto del filtro in un insieme da rivedere
 
 Nella maggior parte dei casi, sarà utile approfondire il contenuto di un set di recensioni e organizzarlo per facilitare una revisione più efficiente. L'utilizzo di filtri e query in un set di revisioni consente di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri della revisione.
 

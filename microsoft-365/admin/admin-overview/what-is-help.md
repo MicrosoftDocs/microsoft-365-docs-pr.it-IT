@@ -1,5 +1,5 @@
 ---
-title: Come ottenere assistenza nell'interfaccia di amministrazione di Microsoft 365
+title: Come ottenere assistenza nell'interfaccia Microsoft 365 di amministrazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,7 +20,7 @@ search.appverid:
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: Informazioni su tutti i modi in cui è possibile ottenere assistenza con l'interfaccia di amministrazione di Microsoft 365.
+description: Informazioni su tutti i modi in cui è possibile ottenere assistenza tramite l'Microsoft 365 di amministrazione.
 ms.openlocfilehash: fdf88c59c640798469a00d17d0c23efe5fe1ce2b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,9 +30,9 @@ ms.locfileid: "50904337"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
-# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Come ottenere assistenza nell'interfaccia di amministrazione di Microsoft 365
+# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Come ottenere assistenza nell'interfaccia Microsoft 365 di amministrazione
 
-Se sei un amministratore, [admin.microsoft.com](https://admin.microsoft.com) è il luogo ideale per gestire e utilizzare al meglio l'abbonamento a Microsoft 365. A volte potresti non trovare l'attività giusta, avere bisogno di più contesto prima di intraprendere un flusso di attività o semplicemente non essere sicuro dell'ambito e dell'impatto delle tue azioni come amministratore. Per coprire queste situazioni, forniamo assistenza moderna e assistenza intelligente in tutta l'interfaccia di amministrazione di Microsoft 365 nei modi seguenti:
+Se sei un [amministratore,](https://admin.microsoft.com) admin.microsoft.com è la tua posizione di accesso per gestire e utilizzare al meglio la tua Microsoft 365 abbonamento. A volte potresti non trovare l'attività giusta, avere bisogno di più contesto prima di intraprendere un flusso di attività o semplicemente non essere sicuro dell'ambito e dell'impatto delle tue azioni come amministratore. Per coprire queste situazioni, forniamo assistenza moderna e assistenza intelligente in tutta l Microsoft 365 interno di amministrazione nei modi seguenti:
 
 * **Guida integrata** - Guida nell'interfaccia di amministrazione
 
@@ -48,7 +48,7 @@ La Guida è integrata in tutta l'interfaccia di amministrazione, quindi è propr
 
 ## <a name="modern-self-help-powered-by-ai"></a>Self-help moderno basato sull'IA
 
-Per aprire l'esperienza self-help moderna basata sull'intelligenza artificiale, selezionare il pulsante **Serve** aiuto nell'interfaccia di amministrazione di Microsoft 365. Ad esempio, se si cerca "verificare il dominio", si otterrà la procedura più alcuni articoli che pensiamo saranno utili. Usiamo l'apprendimento automatico per trovare la soluzione più vicina che ha aiutato altri amministratori che hanno immesso query simili.
+Per aprire l'esperienza self-help moderna basata sull'intelligenza artificiale, seleziona il pulsante Serve aiuto nell'Microsoft 365 di amministrazione.  Ad esempio, se si cerca "verificare il dominio", si otterrà la procedura più alcuni articoli che pensiamo saranno utili. Usiamo l'apprendimento automatico per trovare la soluzione più vicina che ha aiutato altri amministratori che hanno immesso query simili.
 
 In altri casi in cui non si sa come eseguire un'operazione nella propria situazione specifica, utilizzare l'Assistente supporto tecnico. Attualmente, questa esperienza è disponibile solo in inglese. Per attivare l'Assistente supporto, usa l'interruttore nella parte superiore del **riquadro Serve** aiuto. L'Assistente supporto fornisce un'interfaccia conversazionale per aiutarti. Dopo aver immesso la query, il chatbot pone domande chiare per ottenere la risposta giusta per la propria situazione specifica. Pensalo come il tuo helper virtuale per individuare soluzioni e completare attività.
 
@@ -58,4 +58,4 @@ Naturalmente, a volte gli umani rispondono meglio alle domande. Se il nostro sel
 
 ## <a name="guides-and-articles"></a>Guide e articoli
 
-Inoltre, se si desiderano guide complete alla distribuzione, procedure dettagliate rapide o cmdlet di PowerShell, cercare microsoft sul Web. Aggiorniamo spesso il contenuto e tentiamo di fornirti le informazioni più recenti. Consultare gli articoli e le guide disponibili nel sito [Documentazione di Microsoft 365.](../../index.yml)
+Inoltre, se si desiderano guide complete alla distribuzione, procedure dettagliate rapide o cmdlet di PowerShell, cercare microsoft sul Web. Aggiorniamo spesso il contenuto e tentiamo di fornirti le informazioni più recenti. Consultare gli articoli e le guide disponibili [nel sito Microsoft 365 documentazione.](../../index.yml)

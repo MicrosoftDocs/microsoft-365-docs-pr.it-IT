@@ -36,7 +36,7 @@ ms.locfileid: "51861084"
 
 Attivare l'opzione esperienza di anteprima per essere tra i primi a provare le funzionalità che saranno introdotte.
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Funzionalità avanzate**.
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **funzionalità avanzate.**
 
     ![Immagine delle impostazioni e dell'esperienza di anteprima](images/atp-preview-features.png)
 

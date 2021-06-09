@@ -1,7 +1,7 @@
 ---
 title: Prerequisiti per gli account Guest
 description: Linee guida di configurazione per gli account guest e come regolarli
-keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
