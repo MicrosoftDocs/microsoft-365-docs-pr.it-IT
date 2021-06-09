@@ -43,7 +43,7 @@ Per rispondere a questa richiesta, i provider di servizi di sicurezza gestiti of
 
 Defender for Endpoint aggiunge opportunità di partnership per questo scenario e consente agli MSSP di eseguire le azioni seguenti:
 
-- Ottenere l'accesso al portale di Microsoft Defender Security Center del cliente MSSP
+- Ottenere l'accesso al portale Microsoft Defender Security Center clienti MSSP
 - Ricevere notifiche tramite posta elettronica e 
 - Recuperare gli avvisi tramite gli strumenti di gestione degli eventi e delle informazioni di sicurezza
 

@@ -1,6 +1,6 @@
 ---
 title: Report sull'integrità e la conformità dei dispositivi in Microsoft Defender for Endpoint
-description: Tenere traccia dei rilevamenti dello stato di integrità dei dispositivi, dello stato antivirus, della piattaforma del sistema operativo e delle versioni di Windows 10 usando il report di conformità e integrità del dispositivo
+description: Tenere traccia dei rilevamenti dello stato di integrità dei dispositivi, dello stato antivirus, della piattaforma del sistema operativo e delle Windows 10 usando il report di conformità e integrità del dispositivo
 keywords: stato di integrità, antivirus, piattaforma del sistema operativo, versione di Windows 10, versione, integrità, conformità, stato
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51860292"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Il rapporto sullo stato dei dispositivi fornisce informazioni di alto livello sui dispositivi dell'organizzazione. Il report include informazioni sulle tendenze che mostrano lo stato di integrità del sensore, lo stato antivirus, le piattaforme del sistema operativo e le versioni di Windows 10.
+Il rapporto sullo stato dei dispositivi fornisce informazioni di alto livello sui dispositivi dell'organizzazione. Il report include informazioni sulle tendenze che mostrano lo stato di integrità del sensore, lo stato antivirus, le piattaforme del sistema operativo e Windows 10 versioni.
 
 Il dashboard è strutturato in due sezioni: ![ Immagine del report del dispositivo](images/device-reports.png)
  
@@ -72,11 +72,11 @@ Il report è costituito da schede che visualizzano gli attributi del dispositivo
  
 - **Stato di** integrità : mostra informazioni sullo stato del sensore nei dispositivi, fornendo una visualizzazione aggregata dei dispositivi attivi, con comunicazioni compromesse, inattive o in cui non vengono visualizzati dati del sensore.
   
-- **Stato antivirus per i dispositivi Windows 10 attivi**: mostra il numero di dispositivi e lo stato di Microsoft Defender Antivirus.
+- **Stato antivirus per i dispositivi Windows 10**: mostra il numero di dispositivi e lo stato di Antivirus Microsoft Defender.
     
 - **Piattaforme del sistema operativo**: mostra la distribuzione delle piattaforme del sistema operativo esistenti all'interno dell'organizzazione. 
  
-- **Versioni di Windows 10**: mostra la distribuzione dei dispositivi Windows 10 e delle relative versioni nell'organizzazione.
+- **Windows 10:** mostra la distribuzione dei dispositivi Windows 10 e delle relative versioni nell'organizzazione.
  
  
  
@@ -89,10 +89,10 @@ Puoi selezionare più filtri da applicare dagli attributi del dispositivo.
 >[!NOTE]
 >Questi filtri si **applicano a** tutte le schede del report.
  
-Ad esempio, per mostrare i dati sui dispositivi Windows 10 con stato di integrità del sensore Attivo:
+Ad esempio, per visualizzare i dati sui dispositivi Windows 10 con stato di integrità del sensore attivo:
  
 1. In **Filtri > stato di integrità sensore > Attivo**.
-2. Seleziona quindi **Piattaforme del sistema operativo > Windows 10.**
+2. Seleziona quindi **Piattaforme del sistema operativo > Windows 10**.
 3. Selezionare **Applica**.
 
 

@@ -56,7 +56,7 @@ Insieme a queste MICROSOFT 365 specifiche di Defender, ognuno dei nostri [](api-
 > La transizione al portale unificato non deve influire sui dashboard di PowerBi basati sulle API di Microsoft Defender for Endpoint. Puoi continuare a usare le API esistenti indipendentemente dalla transizione interattiva del portale.
 
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
 | **Informazioni su come accedere alle API** |
 |-|

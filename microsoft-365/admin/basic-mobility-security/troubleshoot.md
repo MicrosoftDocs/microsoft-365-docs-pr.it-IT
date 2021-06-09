@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi relativi alla mobilità e alla sicurezza di base
+title: Risolvere i problemi relativi alla mobilità e alla sicurezza di base
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -21,11 +21,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/15/2021
 ms.locfileid: "49876853"
 ---
-# <a name="troubleshoot-basic-mobility-and-security"></a>Risoluzione dei problemi relativi alla mobilità e alla sicurezza di base
+# <a name="troubleshoot-basic-mobility-and-security"></a>Risolvere i problemi relativi alla mobilità e alla sicurezza di base
 
-Se si verificano problemi quando si tenta di registrare un dispositivo in Basic Mobility and Security, provare i passaggi qui per tenere traccia del problema. Se la procedura generale non risolve il problema, vedi una delle sezioni successive con passaggi specifici per il tipo di dispositivo.
+Se si verificano problemi quando si tenta di registrare un dispositivo in Dispositivi mobili e sicurezza di base, provare la procedura qui per rilevare il problema. Se la procedura generale non consente di risolvere il problema, vedi una delle sezioni successive con passaggi specifici per il tipo di dispositivo.
 
-## <a name="steps-to-try-first"></a>Procedura da provare per prima
+## <a name="steps-to-try-first"></a>Passaggi da provare per primi
 
 Per iniziare, controllare quanto segue:
 
@@ -35,13 +35,13 @@ Per iniziare, controllare quanto segue:
 
 - Passare a una rete WIFI o cellulare diversa nel dispositivo.
 
-- Per i dispositivi Android o iOS, disinstalla e reinstalla l'app Portale aziendale Intune nel dispositivo. 
+- Per i dispositivi Android o iOS, disinstalla e reinstalla l Portale aziendale Intune app nel dispositivo. 
 
 ## <a name="ios-phone-or-tablet"></a>Telefono o tablet iOS
 
 - Assicurati di aver configurato un certificato APNs. Per altre info, vedi [Creare un certificato APNs per i dispositivi iOS.](create-an-apns-certificate-for-ios-devices.md)
 
-- In **Impostazioni**   >  **profilo**   >  **generale (o Gestione dispositivi)** verificare che un profilo di gestione non sia già installato. In caso contrario, rimuoverlo.
+- In **Impostazioni**   >  **profilo**   >  **generale (o Gestione dispositivi)** assicurati che un profilo di gestione non sia già installato. In caso contrario, rimuoverlo.
 
 - Se viene visualizzato il messaggio di errore "Impossibile registrare il dispositivo", accedere a Microsoft 365 e assicurarsi che all'utente che ha eseguito l'accesso al dispositivo sia stata assegnata una licenza che include Exchange Online.
 
@@ -49,26 +49,26 @@ Per iniziare, controllare quanto segue:
 
     - Assicurati che Safari sia il browser predefinito nel dispositivo e che i cookie non siano disabilitati.
 
-    - Riavvia il dispositivo e quindi passa a portal.manage.microsoft.com. Accedere con l'ID utente e la password di Microsoft 365 e tentare di installare il profilo manualmente.
+    - Riavvia il dispositivo e quindi passa a portal.manage.microsoft.com. Accedi con l'ID Microsoft 365 utente e la password e prova a installare il profilo manualmente.
 
 ## <a name="windows-rt"></a>Windows RT
 
-- Assicurarsi che il dominio sia configurato in Microsoft 365 per l'utilizzo con Sicurezza e mobilità di base. Per altre info, vedi [Configurare dispositivi mobili e sicurezza di base.](set-up.md)
+- Assicurati che il dominio sia configurato in Microsoft 365 per l'utilizzo con Dispositivi mobili e sicurezza di base. Per altre info, vedi [Configurare dispositivi mobili e sicurezza di base.](set-up.md)
     
-- Assicurati che l'utente choosing **Turn On** invece di   scegliere **Join.**
+- Assicurati che l'utente scegli **Attiva invece** di   scegliere **Partecipa.**
 
 ## <a name="windows-10-pc"></a>Windows 10 PC
 
-- Assicurarsi che il dominio sia configurato in Microsoft 365 per l'utilizzo con Sicurezza e mobilità di base. Per altre info, vedi [Configurare dispositivi mobili e sicurezza di base.](set-up.md)
+- Assicurati che il dominio sia configurato in Microsoft 365 per l'utilizzo con Dispositivi mobili e sicurezza di base. Per altre info, vedi [Configurare dispositivi mobili e sicurezza di base.](set-up.md)
     
-- A meno che tu non abbia Azure Active Directory Premium, assicurati che l'utente criva **registrarsi solo in Gestione** dispositivi   invece di scegliere **Connetti.**
+- A meno che non Azure Active Directory Premium, assicurati che l'utente scegli Registra **solo in** Gestione dispositivi invece di   scegliere **Connessione**.
 
 ## <a name="android-phone-or-tablet"></a>Telefono o tablet Android
 
-- Assicurati che nel dispositivo sia in esecuzione Android 4.4 o versione successiva.
+- Assicurati che il dispositivo eserciti Android 4.4 o versione successiva.
 
 - Assicurati che Chrome sia aggiornato e sia impostato come browser predefinito.
 
 - Se viene visualizzato il messaggio di errore "Impossibile registrare questo dispositivo", accedere a Microsoft 365 e assicurarsi che all'utente che ha eseguito l'accesso al dispositivo sia stata assegnata una licenza che include Exchange Online.
 
-- Controlla l'area di notifica nel dispositivo per verificare se sono in sospeso le azioni necessarie per l'utente finale e, in caso contrario, completa le azioni.
+- Controlla l'area di notifica nel dispositivo per verificare se sono in sospeso eventuali azioni dell'utente finale necessarie e, in caso contrario, completa le azioni.

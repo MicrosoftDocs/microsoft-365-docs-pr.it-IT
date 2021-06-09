@@ -46,7 +46,7 @@ Nella figura seguente, ogni punto rappresenta una pagina che richiede un utente 
   
 ![Mostra i risultati di memorizzazione nella cache degli oggetti in SharePoint Online](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
-Come si può notare dal diagramma, le possibilità di un determinato utente di accedere a un server con la versione memorizzata nella cache sono limitate. Inoltre, a causa della velocità effettiva elevata e del fatto che i server sono condivisi tra molti siti, la cache non dura molto perché è disponibile solo così tanto spazio per la memorizzazione nella cache.
+Come si può notare dal diagramma, le possibilità di un determinato utente di accedere a un server con la versione memorizzata nella cache sono limitate. Inoltre, a causa dell'elevata velocità effettiva e del fatto che i server sono condivisi tra molti siti, la cache non dura a lungo poiché è disponibile solo così tanto spazio per la memorizzazione nella cache.
   
 Per tutti i motivi fin qui citati, basarsi su utenti con oggetti memorizzati nella cache non è un modo efficace per garantire un'esperienza utente e dei tempi di caricamento delle pagine di qualità in SharePoint Online.
   

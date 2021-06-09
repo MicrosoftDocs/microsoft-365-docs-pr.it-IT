@@ -107,7 +107,7 @@ lastUpdateTime | Ora dell'ultimo aggiornamento dell'evento imprevisto nel back-e
 assignedTo | Proprietario dell'evento imprevisto oppure *null se* non è assegnato alcun proprietario. | secop2@contoso.com
 classificazione | Specifica per l'evento imprevisto. I valori delle proprietà *sono: Unknown,* *FalsePositive,* *TruePositive* | Unknown
 determinazione | Specifica la determinazione dell'evento imprevisto. I valori delle proprietà sono: *NotAvailable,* *Apt,* *Malware,* *SecurityPersonnel,* *SecurityTesting,* *UnwantedSoftware,* *Other* | NotAvailable
-status | Categorizzare gli eventi imprevisti *(come Active* o *Resolved).* Può essere utile per organizzare e gestire la risposta agli eventi imprevisti. | Attivo
+status | Categorizzare gli eventi imprevisti *(come Active* o *Resolved).* Può essere utile per organizzare e gestire la risposta agli eventi imprevisti. | Attivazione
 gravità | Indica il possibile impatto sulle risorse. Maggiore è la gravità, maggiore sarà l'impatto. In genere, gli elementi di gravità superiore richiedono l'attenzione più immediata.<br /><br />Uno dei valori seguenti: *Informational,* *Low,**Medium e *High.* | Medio
 tag | Matrice di tag personalizzati associati a un evento imprevisto, ad esempio per contrassegnare un gruppo di eventi imprevisti con una caratteristica comune. | \[\]
 commenti | Matrice di commenti creati da secop durante la gestione dell'evento imprevisto, ad esempio informazioni aggiuntive sulla selezione della classificazione. | \[\]
@@ -150,8 +150,8 @@ osPlatform | Piattaforma del sistema operativo in esecuzione nel dispositivo.| W
 osBuild | Versione della build per il sistema operativo in esecuzione nel dispositivo. | 14393
 rbacGroupName | Gruppo [di controllo di accesso](/azure/role-based-access-control/overview) basato sui ruoli associato al dispositivo. | WDATP-Ring0
 firstSeen | Ora in cui il dispositivo è stato visualizzato per la prima volta. | 2020-02-06T14:16:01.9330135Z
-healthStatus | Stato di integrità del dispositivo. | Attivo
-riskScore | Punteggio di rischio per il dispositivo. | Alta
+healthStatus | Stato di integrità del dispositivo. | Attivazione
+riskScore | Punteggio di rischio per il dispositivo. | Fortemente
 entità | Tutte le entità identificate come parte o correlate a un determinato avviso. | \[\] (vedi i dettagli sui campi dell'entità di seguito)
 
 ### <a name="entity-format"></a>Formato entità

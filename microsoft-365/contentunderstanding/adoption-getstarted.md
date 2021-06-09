@@ -70,7 +70,7 @@ Usa gli [scenari di esempio e i casi](adoption-scenarios.md) d'uso per richieder
 
 Determinare chi nell'organizzazione costruirà e gestirà i modelli? Potrebbero essere coinvolti i ruoli seguenti:
 
-| SharePoint/Knowledge Admin | Amministratore di Power Platform | Responsabile delle conoscenze | Proprietario modello |
+| SharePoint/Knowledge Admin | Amministratore di Power Platform | Responsabile delle informazioni | Proprietario modello |
 |:-------|:-------|:-------|:-------|
 | Ruolo AAD| Ruolo AAD | Ruolo AAD | Promotori |
 | Configurare l'elaborazione moduli | Configurare l'ambiente del servizio dati comune per l'elaborazione dei moduli | Raccogliere casi d'uso | Raccogliere casi d'uso aziendali |

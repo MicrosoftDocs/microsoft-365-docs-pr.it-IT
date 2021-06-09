@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come acquistare il componente aggiuntivo Microsoft 365 Business Voice.
+description: Scopri come acquistare il Microsoft 365 Business Voice aggiuntivo.
 ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -36,15 +36,15 @@ Con Microsoft 365 Business Voice, è possibile effettuare e ricevere chiamate, u
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare a **Fatturazione** e selezionare **Acquisto di servizi.**
-1. Scorrere verso il basso e scegliere **Componenti aggiuntivi.** 
-1. Selezionare **Microsoft 365 Business Voice.**
+1. Nell'Microsoft 365 di amministrazione, andare a **Fatturazione** e selezionare **Acquista servizi.**
+1. Scorrere verso il basso e **scegliere Componenti aggiuntivi**. 
+1. Selezionare **Microsoft 365 Business Voice**.
 
-    Se non viene visualizzato, è necessario prima acquistare un abbonamento aziendale che includa Microsoft Teams.
+    Se non viene visualizzato, è necessario prima acquistare un abbonamento aziendale che include Microsoft Teams.
 1. Immettere il numero di utenti per cui si desiderano licenze e selezionare **Estrai ora.**
-1. Selezionare **Ricarica automatica per** acquistare crediti comunicazioni se necessario ed evitare interruzioni del servizio.
+1. Selezionare **Ricarica automatica per acquistare** crediti di comunicazione se necessario ed evitare interruzioni del servizio.
 
-    I crediti comunicazioni vengono utilizzati per le chiamate internazionali, i numeri verde e i minuti di chiamata aggiuntivi.
+    I crediti di comunicazione vengono utilizzati per le chiamate internazionali, i numeri verde e i minuti di chiamata aggiuntivi.
 1. Selezionare **Avanti**.
 1. Verifica la modalità di pagamento.
 1. Selezionare **Ordine di esecuzione** e **Continua.**

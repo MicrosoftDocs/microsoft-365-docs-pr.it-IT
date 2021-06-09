@@ -1,5 +1,5 @@
 ---
-title: Recuperare i dati di report del tenant dei clienti con Windows PowerShell per i partner DAP
+title: Recuperare i dati dei report dei tenant dei clienti con Windows PowerShell per i partner DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -24,13 +24,13 @@ ms.locfileid: "50927217"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Recuperare i dati di report dei tenant dei clienti con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 Usare le Windows PowerShell remote per Microsoft Exchange Online per recuperare i report dai tenant dei singoli clienti.
   
-I partner syndication e Cloud Solution Provider (CSP) possono accedere ai dati che costituisce i report dei tenant dei clienti direttamente tramite Windows PowerShell per PowerShell di Exchange Online. Ciò consente ai partner di raccogliere e salvare i dati di report, per poi eseguire operazioni su di essi. Dopo avere aperto una connessione remota, il recupero dei dati di report relativi al tenancy di un cliente è identico all'esecuzione di qualsiasi cmdlet per il tenancy di un cliente.
+I partner di syndication e Cloud Solution Provider (CSP) possono accedere ai dati che costituisce i report del tenant dei clienti direttamente tramite Windows PowerShell remoto per Exchange Online PowerShell. Ciò consente ai partner di raccogliere e salvare i dati di report, per poi eseguire operazioni su di essi. Dopo avere aperto una connessione remota, il recupero dei dati di report relativi al tenancy di un cliente è identico all'esecuzione di qualsiasi cmdlet per il tenancy di un cliente.
   
-In questo articolo viene utilizzato il servizio Windows PowerShell per Exchange Online per connettersi a una tenancy di un singolo cliente e recuperare un report. Per impostazione predefinita, Windows PowerShell non supporta l'aggregazione dei dati di report dai tenancy di più clienti. I report recuperati con questa procedura sono solo per il  _DelegatedOrg_ al quale ci si connette.
+In questo articolo si utilizza l'Windows PowerShell per Exchange Online per connettersi a una tenancy di un singolo cliente e recuperare un report. Per impostazione predefinita, Windows PowerShell non supporta l'aggregazione dei dati di report dai tenancy di più clienti. I report recuperati con questa procedura sono solo per il  _DelegatedOrg_ al quale ci si connette.
   
  
 ## <a name="before-you-begin"></a>Prima di iniziare

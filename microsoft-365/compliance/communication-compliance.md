@@ -60,9 +60,9 @@ I criteri di conformità delle comunicazioni possono essere utili per esaminare 
 
     Le organizzazioni sono responsabili di tutte le comunicazioni distribuite nell'intera infrastruttura e nei sistemi di rete aziendali. L'utilizzo dei criteri di conformità delle comunicazioni per identificare e gestire potenziali rischi e esposizione legale può contribuire a ridurre al minimo i rischi prima che possano danneggiare le operazioni aziendali. Ad esempio, è possibile analizzare i messaggi dell'organizzazione alla ricerca di comunicazioni non autorizzate e conflitti di interesse relativi a progetti riservati, ad esempio acquisizioni imminenti, fusioni, divulgazioni di utili, riorganizzazioni o modifiche al team di leadership.
 
-- **Conformità normativa**
+- **Conformità alle normative**
 
-    La maggior parte delle organizzazioni deve rispettare alcuni tipi di standard di conformità normativi nell'ambito delle normali procedure operative. Queste normative spesso richiedono alle organizzazioni di implementare un tipo di processo di supervisione o supervisione per la messaggistica appropriata per il proprio settore. La regola 3110 della Financial Industry Regulatory Authority (FINRA) è un buon esempio di un requisito per le organizzazioni di disporre di procedure di supervisione per analizzare le comunicazioni degli utenti e i tipi di aziende in cui si impegna. Un altro esempio potrebbe essere la necessità di esaminare le comunicazioni broker-rivenditori nell'organizzazione per proteggersi da potenziali attività di riciclaggio di denaro, insider trading, collusione o corruzione. I criteri di conformità delle comunicazioni possono aiutare l'organizzazione a soddisfare questi requisiti fornendo un processo di analisi e creazione di report sulle comunicazioni aziendali. Per ulteriori informazioni sul supporto per le organizzazioni finanziarie, vedere [Key compliance and security considerations for US banking and capital markets](../solutions/financial-services-secure-collaboration.md).
+    La maggior parte delle organizzazioni deve rispettare alcuni tipi di standard di conformità normativi nell'ambito delle normali procedure operative. Queste normative spesso richiedono alle organizzazioni di implementare un tipo di processo di supervisione o supervisione per la messaggistica appropriata per il proprio settore. La regola 3110 della Financial Industry Regulatory Authority (FINRA) è un buon esempio di un requisito per le organizzazioni di disporre di procedure di supervisione per analizzare le comunicazioni degli utenti e i tipi di aziende in cui si impegna. Un altro esempio può essere la necessità di esaminare le comunicazioni di broker-rivenditori dell'organizzazione per proteggersi da potenziali attività di riciclaggio, insider trading, collusione o corruzione. I criteri di conformità delle comunicazioni possono aiutare l'organizzazione a soddisfare questi requisiti fornendo un processo di analisi e creazione di report sulle comunicazioni aziendali. Per ulteriori informazioni sul supporto per le organizzazioni finanziarie, vedere [Key compliance and security considerations for US banking and capital markets](../solutions/financial-services-secure-collaboration.md).
 
 ## <a name="key-feature-areas"></a>Aree principali delle funzionalità
 
@@ -70,7 +70,7 @@ La conformità delle comunicazioni in Microsoft 365 offre diverse funzionalità 
 
 - Modelli personalizzabili intelligenti
 - Flussi di lavoro di correzione flessibili
-- Informazioni dettagliate utili
+- Informazioni dettagliate di utilità pratica
 
 ![Home page conformità comunicazione](../media/communication-compliance-home.png)
 
@@ -88,21 +88,21 @@ I flussi di lavoro di correzione incorporati consentono di identificare ed esegu
 
 - **Flusso** di lavoro di correzione flessibile: il nuovo flusso di lavoro di correzione consente di intervenire rapidamente sulle corrispondenze dei criteri, incluse nuove opzioni per inoltrare i messaggi ad altri revisori e inviare notifiche tramite posta elettronica agli utenti con corrispondenze dei criteri.
 - **Corrispondenza dei criteri di** conversazione: i messaggi nelle conversazioni sono raggruppati in base alle corrispondenze dei criteri per fornire maggiore visibilità sul modo in cui le conversazioni sono correlate ai criteri di comunicazione. Ad esempio, la corrispondenza  dei criteri di conversazione nella visualizzazione Avvisi in sospeso mostrerà automaticamente tutti i messaggi in un canale Teams che hanno corrispondenze per il criterio lingua offensiva. Gli altri messaggi della conversazione che non corrispondono al criterio Lingua offensiva non verranno visualizzati.
-- **Evidenziazione parole chiave:** le condizioni dei criteri di corrispondenza dei termini sono evidenziate nella visualizzazione del testo del messaggio per consentire ai revisori di individuare e correggere rapidamente gli avvisi dei criteri.
+- **Evidenziazione delle parole chiave**: i termini che corrispondono alle condizioni dei criteri sono evidenziati nella visualizzazione testo del messaggio per consentire ai revisori di individuare e correggere rapidamente gli avvisi per i criteri.
 - **Rilevamento esatto** e quasi duplicato: oltre alla ricerca di termini esatti che corrispondono ai criteri di conformità della comunicazione, vicino ai gruppi di rilevamento duplicati vengono visualizzati messaggi e termini testualmente simili per velocizzare il processo di revisione.
 - Riconoscimento ottico dei caratteri **(OCR) (anteprima):** consente di analizzare, rilevare e analizzare il testo stampato e scritto a mano all'interno di immagini incorporate o allegate a messaggi di posta elettronica o Microsoft Teams messaggi di chat.
 - **Nuovi filtri:** analizzare e correggere più rapidamente gli avvisi dei criteri con i filtri dei messaggi per diversi campi, tra cui mittente, destinatario, data, domini e molti altri.
 - **Visualizzazioni dei messaggi** migliorate: le azioni di analisi e correzione sono ora più rapide con nuove visualizzazioni di origine, testo e annotazione del messaggio. Gli allegati dei messaggi sono ora visualizzabili per fornire il contesto completo quando si esere azioni correttive.
-- **Visualizzazione cronologia utente**: la visualizzazione cronologica di tutte le attività di correzione dei messaggi utente, ad esempio le notifiche passate e le escalation per le corrispondenze dei criteri, ora fornisce ai revisori un maggiore contesto durante il processo del flusso di lavoro di correzione. Le istanze delle corrispondenze dei criteri per la prima volta o ripetute per gli utenti sono ora archiviate e facilmente visualizzabili.
+- **Visualizzazione della cronologia utenti**: la visualizzazione cronologica di tutte le attività di correzione dei messaggi utente, ad esempio notifiche precedenti ed escalation per le corrispondenze ai criteri, ora offre ai revisori un maggiore contesto durante il processo di correzione. Le istanze delle corrispondenze dei criteri per la prima volta o ripetute per gli utenti sono ora archiviate e facilmente visualizzabili.
 - **Notifica rilevata** dal modello : molte azioni di molesto e bullismo si verificano nel tempo e comportano la ripetizione di istanze dello stesso comportamento da parte di un utente. Il nuovo modello di notifica rilevata visualizzato nei dettagli dell'avviso aiuta a attirare l'attenzione su questi avvisi e questo tipo di comportamento.
 - **Mostra visualizzazione Traduzione:** consente di analizzare rapidamente i dettagli dei messaggi in otto lingue utilizzando il supporto per la traduzione nel flusso di lavoro di correzione. I messaggi in altre lingue vengono convertiti automaticamente nella lingua di visualizzazione del revisore.
 
-### <a name="actionable-insights"></a>Informazioni dettagliate utili
+### <a name="actionable-insights"></a>Informazioni dettagliate di utilità pratica
 
-I nuovi dashboard interattivi per avvisi, corrispondenze dei criteri, azioni e tendenze consentono di visualizzare rapidamente lo stato degli avvisi in sospeso e risolti nell'organizzazione.
+I nuovi dashboard interattivi per avvisi, corrispondenze ai criteri, azioni e tendenze consentono di visualizzare rapidamente lo stato degli avvisi in sospeso e risolti nell'organizzazione.
 
-- **Avvisi intelligenti proattivi**: gli avvisi per le corrispondenze dei criteri che richiedono un'attenzione immediata includono nuovi dashboard per gli elementi in sospeso ordinati in base alla gravità e nuove notifiche di posta elettronica automatiche inviate ai revisori designati.
-- **Dashboard interattivi:** i nuovi dashboard visualizzano le corrispondenze dei criteri, le azioni in sospeso e risolte e le tendenze degli utenti e dei criteri.
+- **Avvisi intelligenti proattivi**: gli avvisi per corrispondenze ai criteri che richiedono un'attenzione immediata includono nuovi dashboard per gli elementi in sospeso ordinati per gravità e nuove notifiche automatiche tramite posta elettronica inviate ai revisori designati.
+- **Dashboard interattivi**: i nuovi dashboard visualizzano le corrispondenze dei criteri, le azioni in sospeso e risolte e le tendenze di utenti e criteri.
 - **Supporto controllo:** un registro completo delle attività di revisione e criteri viene esportato facilmente dal Centro conformità Microsoft 365 per supportare le richieste di revisione di controllo.
 
 ## <a name="integration-with-microsoft-365-services"></a>Integrazione con Microsoft 365 servizi
@@ -111,7 +111,7 @@ I criteri di conformità delle comunicazioni analizzano e acquisiscono i messagg
 
 - **Microsoft Teams**: le comunicazioni chat [](/MicrosoftTeams/Teams-overview) per canali Microsoft Teams pubblici e privati e singole chat sono supportate nella conformità delle comunicazioni come origine di canale autonoma o con altri Microsoft 365 servizi. Sarà necessario aggiungere manualmente singoli utenti, gruppi di distribuzione o canali di Microsoft Teams specifici quando si selezionano utenti e gruppi da supervisionare in un criterio di conformità delle comunicazioni.
 - **Exchange Online**: tutte le cassette [](/Exchange/exchange-online) postali ospitate Exchange Online nell'organizzazione Microsoft 365 sono idonee per l'analisi. I messaggi di posta elettronica e gli allegati corrispondenti alle condizioni dei criteri di conformità delle comunicazioni sono immediatamente disponibili per il monitoraggio e nei report di conformità. Exchange Online è ora un canale di origine facoltativo e non è più necessario nei criteri di conformità delle comunicazioni.
-- **Yammer**: i messaggi privati e le conversazioni della community [pubblica](/yammer/yammer-landing-page) Yammer sono supportati nei criteri di conformità delle comunicazioni. Yammer è un canale facoltativo e deve essere in [modalità nativa](/yammer/configure-your-yammer-network/overview-native-mode) per supportare l'analisi di messaggi e allegati.
+- **Yammer**: i messaggi privati e le conversazioni della community pubblica in [Yammer](/yammer/yammer-landing-page) sono supportati nei criteri di conformità delle comunicazioni. Yammer è un canale facoltativo e deve essere in [modalità nativa](/yammer/configure-your-yammer-network/overview-native-mode) per supportare l'analisi di messaggi e allegati.
 - **Skype for Business Online:** i criteri di conformità delle comunicazioni supportano l'analisi delle comunicazioni chat e degli allegati associati in [Skype for Business Online.](/SkypeForBusiness/skype-for-business-online)
 - **Origini di terze parti:** è [](archiving-third-party-data.md) possibile analizzare i messaggi provenienti da origini di terze parti per i dati importati nelle cassette postali dell'Microsoft 365 organizzazione. La conformità delle comunicazioni supporta le connessioni a diverse piattaforme popolari, tra cui Instant Bloomberg e altre.
 
@@ -123,16 +123,16 @@ La conformità delle comunicazioni consente di risolvere i problemi comuni assoc
 
 L'identificazione e la risoluzione dei problemi di conformità con la conformità delle comunicazioni in Microsoft 365 il flusso di lavoro seguente:
 
-![Flusso di lavoro di conformità delle comunicazioni](../media/communication-compliance-workflow.png)
+![Flusso di lavoro di Conformità delle comunicazioni](../media/communication-compliance-workflow.png)
 
 ### <a name="configure"></a>Configurazione
 
-In questo passaggio del flusso di lavoro si identificano i requisiti di conformità e si configurano i criteri di conformità delle comunicazioni applicabili. I modelli di criteri sono un ottimo modo non solo per configurare rapidamente un nuovo criterio di conformità, ma anche per modificare e aggiornare rapidamente i criteri quando cambiano i requisiti. Ad esempio, è possibile testare rapidamente un criterio per il linguaggio offensivo e anti-molestie sulle comunicazioni per un piccolo gruppo di utenti prima di configurare un criterio per tutti gli utenti dell'organizzazione.
+In questo passaggio del flusso di lavoro si identificano i requisiti di conformità e si configurano i criteri di conformità delle comunicazioni applicabili. I modelli di criteri sono un ottimo modo non solo per configurare rapidamente un nuovo criterio di conformità, ma anche per modificare e aggiornare rapidamente i criteri quando cambiano i requisiti. È possibile, ad esempio, scegliere di testare rapidamente un criterio per il linguaggio offensivo e la comunicazione anti-molestie per un piccolo gruppo di utenti prima di configurare un criterio per tutti gli utenti dell'organizzazione.
 
 >[!Important]
 >Per impostazione predefinita, gli amministratori globali non hanno accesso alle funzionalità di conformità delle comunicazioni. Per abilitare le autorizzazioni per le funzionalità di conformità delle comunicazioni, vedere [Rendere disponibile la conformità delle comunicazioni nell'organizzazione.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
-È possibile scegliere uno dei modelli di criteri seguenti nel Centro Microsoft 365 conformità:
+Nel Centro conformità Microsoft 365 è possibile scegliere tra i seguenti modelli di criteri:
 
 - **Linguaggio offensivo** o minaccioso: usa questo modello per creare rapidamente un criterio che usa classificatori incorporati per rilevare automaticamente contenuti che possono essere considerati offensivi o offensivi.
 - **Informazioni riservate**: utilizzare questo modello per creare rapidamente un criterio per analizzare le comunicazioni contenenti parole chiave o tipi di informazioni riservate definiti per assicurarsi che i dati importanti non siano condivisi con persone che non dovrebbero avere accesso.
@@ -140,13 +140,13 @@ In questo passaggio del flusso di lavoro si identificano i requisiti di conformi
 - **Conflitto di interesse**: utilizzare questo modello per creare rapidamente un criterio per monitorare le comunicazioni tra due gruppi o due utenti per evitare conflitti di interesse.
 - **Criteri personalizzati:** utilizzare questo modello per configurare canali di comunicazione specifici, singole condizioni di rilevamento e la quantità di contenuto da monitorare e rivedere nell'organizzazione.
 
-### <a name="investigate"></a>Investigare
+### <a name="investigate"></a>Indagine
 
-In questo passaggio vengono approfonditi i problemi rilevati come corrispondenti ai criteri di conformità delle comunicazioni. Questo passaggio include le azioni seguenti disponibili nel Centro Microsoft 365 conformità:
+In questa fase, vengono esaminati attentamente i problemi rilevati come corrispondenti ai criteri di conformità delle comunicazioni. Questo passaggio include le azioni seguenti disponibili nel Centro Microsoft 365 conformità:
 
 - **Avvisi**: quando un messaggio corrisponde a una condizione del criterio, viene generato automaticamente un avviso. Per ogni avviso, è possibile visualizzare lo stato, la gravità, l'ora rilevata e se viene assegnato Advanced eDiscovery caso e il relativo stato. I nuovi avvisi vengono visualizzati nella home page di conformità delle comunicazioni e nella **pagina Avvisi** e sono elencati in ordine di gravità.
-- **Gestione dei problemi:** per ogni avviso, è possibile eseguire azioni investigative per risolvere il problema rilevato nel messaggio.
-- **Revisione del** documento: durante l'analisi di un problema, è possibile utilizzare diverse visualizzazioni del messaggio per valutare correttamente il problema rilevato. Le visualizzazioni includono un riepilogo della conversazione, solo testo, note e visualizzazioni dettagliate della conversazione di comunicazione.
+- **Gestione dei problemi**: per ogni avviso è possibile eseguire azioni di verifica per correggere il problema rilevato nel messaggio.
+- **Revisione del** documento: durante l'analisi di un problema, è possibile utilizzare diverse visualizzazioni del messaggio per valutare correttamente il problema rilevato. Le viste includono un riepilogo della conversazione, solo testo, con annotazioni e dettagli della conversazione di comunicazione.
 - **Revisione della cronologia attività utente**: consente di visualizzare la cronologia delle attività dei messaggi utente e delle azioni di correzione, ad esempio notifiche passate e escalation, per le corrispondenze dei criteri.
 - **Filtri**: utilizzare filtri quali mittente, destinatario, data e oggetto per limitare rapidamente gli avvisi dei messaggi che si desidera esaminare.
 
@@ -154,15 +154,15 @@ In questo passaggio vengono approfonditi i problemi rilevati come corrispondenti
 
 Il passaggio successivo consiste nel correggere i problemi di conformità delle comunicazioni esaminati utilizzando le opzioni seguenti:
 
-- **Risolvere**: dopo aver esaminato un problema, è possibile risolvere l'avviso. La risoluzione di un avviso lo rimuove dalla coda degli avvisi in sospeso e l'azione viene mantenuta come voce nella coda Risolta per il criterio di corrispondenza. Gli avvisi vengono risolti automaticamente dopo il contrassegno dell'avviso come falso positivo, l'invio di un avviso a un utente sull'avviso o l'apertura di un nuovo caso per l'avviso.
-- **Contrassegnare** un messaggio: nell'ambito della risoluzione di un problema, è possibile contrassegnare il messaggio rilevato come conforme, non conforme o come discutibile in relazione ai criteri e agli standard per l'organizzazione. Il tagging può aiutare gli avvisi dei criteri di filtro micro per le escalation o come parte di altri processi di revisione interni.
-- **Notifica all'utente:** spesso, gli utenti violano accidentalmente o accidentalmente un criterio di conformità delle comunicazioni. È possibile utilizzare la funzionalità di notifica per fornire un avviso all'utente e per risolvere il problema.
-- **Inoltrare a un altro revisore:** a volte, il revisore iniziale di un problema richiede l'input di altri revisori per risolvere l'evento imprevisto. È possibile inoltrare facilmente i problemi dei messaggi ai revisori in altre aree dell'organizzazione nell'ambito del processo di risoluzione.
-- **Contrassegna come falso positivo:** i messaggi erroneamente rilevati come corrispondenze dei criteri di conformità vengono a volte inviati al processo di revisione. È possibile contrassegnare questi tipi di avvisi come falsi positivi e risolvere automaticamente il problema.
+- **Risolvi**: dopo aver esaminato un problema, è possibile correggerlo risolvendo l'avviso. La risoluzione di un avviso consente di rimuoverlo dalla coda degli avvisi in sospeso; l'azione viene mantenuta come voce nella coda di Risolto per i criteri di corrispondenza. Gli avvisi vengono risolti automaticamente dopo il contrassegno dell'avviso come falso positivo, l'invio di un avviso a un utente sull'avviso o l'apertura di un nuovo caso per l'avviso.
+- **Contrassegnare un messaggio**: come parte della risoluzione di un problema, è possibile contrassegnare il messaggio rilevato come conforme, non conforme o dubbio in base ai criteri e agli standard dell'organizzazione. L'utilizzo di un contrassegno consente filtrare gli avvisi dei criteri per le escalation o come parte di altri processi di revisione interni.
+- **Notifica all'utente:** spesso, gli utenti violano accidentalmente o accidentalmente un criterio di conformità delle comunicazioni. È possibile usare la funzionalità di notifica per fornire un avviso all'utente e per risolvere il problema.
+- **Eseguire l'escalation a un altro revisore**: a volte il revisore iniziale di un problema richiede l'input di altri revisori per risolvere l'incidente. È possibile eseguire facilmente l'escalation i problemi dei messaggi ai revisori di altre aree dell'organizzazione nell'ambito del processo di risoluzione.
+- **Contrassegnare come falso positivo**: i messaggi rilevati in modo non corretto come corrispondenze dei criteri di conformità occasionalmente vengono ignorati durante il processo di revisione. È possibile contrassegnare questi tipi di avvisi come falsi positivi e risolvere automaticamente il problema.
 - **Rimuovi messaggio in Teams (anteprima):** i messaggi inappropriati potrebbero essere rimossi dalla visualizzazione nei canali Microsoft Teams o nei messaggi personali e di chat di gruppo. I messaggi inappropriati rimossi vengono sostituiti da una notifica che indica che il messaggio è stato rimosso per una violazione dei criteri.
-- **Escalation per l'indagine:** nelle situazioni più gravi potrebbe essere necessario condividere le informazioni sulla conformità delle comunicazioni con altri revisori dell'organizzazione. La conformità delle comunicazioni è strettamente integrata con altre Microsoft 365 di conformità per facilitare la risoluzione dei rischi end-to-end. L'escalation di un caso per l'indagine consente di trasferire i dati e la gestione del caso ad Advanced eDiscovery in Microsoft 365. Advanced eDiscovery fornisce un flusso di lavoro end-to-end per conservare, raccogliere, esaminare, analizzare ed esportare contenuto reattivo alle indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro di notifica di blocco legale. Per maggiori informazioni sui casi di Advanced eDiscovery, consultare la [Panoramica di Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+- **Escalation per l'indagine:** nelle situazioni più gravi potrebbe essere necessario condividere le informazioni sulla conformità delle comunicazioni con altri revisori dell'organizzazione. Conformità delle comunicazioni è strettamente integrata ad altre funzionalità di Centro conformità Microsoft 365 per la gestione della risoluzione dei rischi end-to-end. L'escalation di un caso per l'indagine consente di trasferire i dati e la gestione del caso ad Advanced eDiscovery in Microsoft 365. La soluzione Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rilevanti per le indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro per le notifiche di blocco a fini giudiziari. Per maggiori informazioni sui casi di Advanced eDiscovery, consultare la [Panoramica di Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
-### <a name="monitor"></a>Monitorare
+### <a name="monitor"></a>Monitoraggio
 
 Tenere traccia e gestire i problemi di conformità identificati dai criteri di conformità delle comunicazioni si estende all'intero processo del flusso di lavoro. Quando vengono generati avvisi e vengono implementate azioni di analisi e correzione, potrebbe essere necessario rivedere e aggiornare i criteri esistenti e creare nuovi criteri.
 

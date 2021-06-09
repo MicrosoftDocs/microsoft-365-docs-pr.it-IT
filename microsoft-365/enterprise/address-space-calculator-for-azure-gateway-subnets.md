@@ -1,5 +1,5 @@
 ---
-title: Strumento di calcolo dello spazio indirizzo per subnet gateway di Azure
+title: Strumento di calcolo dello spazio degli indirizzi per le subnet gateway di Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - seo-marvel-apr2020
-description: 'Riepilogo: calcolare lo spazio di indirizzi di una subnet gateway di Azure con C3, Python o PowerShell.'
+description: 'Riepilogo: calcolare lo spazio degli indirizzi di una subnet gateway di Azure con C3, Python o PowerShell.'
 ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
 ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
@@ -23,18 +23,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "49780569"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Strumento di calcolo dello spazio indirizzo per le subnet del gateway di Azure
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Strumento di calcolo dello spazio degli indirizzi per le subnet gateway di Azure
 
-Una rete virtuale (VNet) nei servizi infrastruttura di Azure connessa ad altre reti deve avere una subnet gateway. Le procedure consigliate per definire la subnet del gateway sono le seguenti:
+Una rete virtuale (VNet) nei servizi infrastruttura di Azure connessa ad altre reti deve avere una subnet gateway. Le procedure consigliate per la definizione della subnet del gateway sono:
 
-- La lunghezza del prefisso della subnet del gateway può avere una lunghezza massima di prefisso pari a 29 (ad esempio, 10.119.255.248/29), ma è consigliabile utilizzare una lunghezza di prefisso pari a 27 (ad esempio, 10.119.255.224/27).
+- La lunghezza del prefisso della subnet gateway può avere una lunghezza massima di prefisso pari a 29 (ad esempio, 10.119.255.248/29), ma la lunghezza del prefisso corrente è 27, ad esempio 10.119.255.224/27.
 - Quando si definisce lo spazio di indirizzi della subnet del gateway, utilizzare l'ultima parte dello spazio di indirizzi della rete virtuale.
 
-Per la seconda indicazione, è possibile determinare lo spazio di indirizzi della subnet del gateway impostando i bit utilizzati per la subnet del gateway su 0 e i bit rimanenti nello spazio di indirizzi della rete virtuale su 1. Per calcolare rapidamente lo spazio degli indirizzi della subnet del gateway senza dover eseguire la conversione in binario e tornare a decimale, è possibile utilizzare un'applicazione console scritta in C# o Python o con un blocco di comandi di PowerShell.
+Per la seconda indicazione, è possibile determinare lo spazio di indirizzi della subnet gateway impostando i bit utilizzati per la subnet gateway su 0 e i bit rimanenti nello spazio di indirizzi della rete virtuale su 1. Per calcolare rapidamente lo spazio degli indirizzi della subnet del gateway senza dover convertire in binario e tornare a decimale, è possibile utilizzare un'applicazione console scritta in C# o Python o con un blocco di comandi di PowerShell.
 
-Questo articolo contiene blocchi di codice C#, Python e PowerShell che calcolano lo spazio di indirizzi della subnet del gateway in base ai valori di w.x.y.z/n per il prefisso dell'indirizzo della rete virtuale e la lunghezza del prefisso della subnet del gateway.
+Questo articolo contiene blocchi di codice C#, Python e PowerShell che calcolano lo spazio degli indirizzi della subnet del gateway in base ai valori di w.x.y.z/n per il prefisso dell'indirizzo della rete virtuale e la lunghezza del prefisso della subnet gateway.
 
-## <a name="c-code-block"></a>Blocco di codice C#
+## <a name="c-code-block"></a>C# blocco di codice
 
 Usa questo blocco di codice per creare un'app console in C#.
 
