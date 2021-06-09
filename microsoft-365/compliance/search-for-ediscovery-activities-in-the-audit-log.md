@@ -46,7 +46,7 @@ Per ulteriori informazioni sulla ricerca nel log di controllo, sulle autorizzazi
 
 Attualmente, è necessario eseguire alcune operazioni specifiche per visualizzare le attività di eDiscovery nel log di controllo. Ecco come fare.
   
-1. Vai a <https://compliance.microsoft.com> e accedi usando il tuo account aziendale o dell'istituto di istruzione.
+1. Passare a <https://compliance.microsoft.com> e accedere usando l'account aziendale o dell'istituto di istruzione.
 
 2. Nel riquadro di spostamento sinistro del Centro Microsoft 365 conformità fare clic **su Mostra tutto** e quindi su **Controlla.**
 
@@ -67,7 +67,7 @@ Attualmente, è necessario eseguire alcune operazioni specifiche per visualizzar
 
     Viene **visualizzata** una pagina a comparsa Dettagli contenente le proprietà dettagliate del record dell'evento. Per visualizzare ulteriori dettagli, fare clic **su Altre informazioni.** Per una descrizione di queste proprietà, vedere la [sezione Proprietà dettagliate per le attività di eDiscovery.](#detailed-properties-for-ediscovery-activities)
 
-9. Se lo si desidera, è possibile esportare i risultati della ricerca nei log di controllo in un file CSV e quindi utilizzare la funzionalità power query di Excel per formattare e filtrare questi record. Per ulteriori informazioni, vedi [Esportare, configurare e visualizzare i record del log di audit](export-view-audit-log-records.md).
+9. Se lo si desidera, è possibile esportare i risultati della ricerca nei log di controllo in un file CSV e quindi utilizzare la funzionalità power query di Excel per formattare e filtrare questi record. Per ulteriori informazioni, vedere [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>Attività di eDiscovery
 

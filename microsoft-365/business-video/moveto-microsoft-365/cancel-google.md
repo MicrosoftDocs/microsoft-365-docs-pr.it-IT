@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come annullare l'abbonamento a Google Workspace ma mantenere il dominio.
+description: Scopri come annullare l'abbonamento a Google Workspace ma mantenere il dominio.
 ms.openlocfilehash: 1ad7e4ae3583063281ac5b5e9510be539b1378dd
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -31,12 +31,12 @@ ms.locfileid: "49928259"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Annullare l'abbonamento a Google Workspace
 
-1. Accedi a [Google Admin e](https://admin.google.com/) passa a **Fatturazione.**
-1. **Nell'elenco Abbonamenti** scegliere l'abbonamento a G Suite, **Annulla abbonamento** e quindi **scegliere Continua.**
+1. Accedi a [Google Admin e](https://admin.google.com/) vai a **Fatturazione**.
+1. **Nell'elenco Abbonamenti** scegliere l'abbonamento A G Suite, **Annulla sottoscrizione** e quindi **scegliere Continua.**
 
     > [!IMPORTANT]
-    > l'abbonamento verrà annullato immediatamente e non sarà possibile annullare l'azione.
+    > l'abbonamento verrà annullato immediatamente e non è possibile annullare questa azione.
 
     :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Screenshot della pagina Fatturazione dell'amministratore di Google.":::
 
-Tenere presente che la registrazione del dominio potrebbe non essere visualizzata nell'elenco delle sottoscrizioni se il provider host DNS non è google.
+Tieni presente che la registrazione del dominio potrebbe non essere visualizzata nell'elenco Abbonamenti se il provider host DNS non è google domains.

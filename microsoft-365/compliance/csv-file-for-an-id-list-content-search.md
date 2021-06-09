@@ -35,7 +35,7 @@ Ecco una breve panoramica del processo di creazione di una ricerca nell'elenco i
 
 1. Creare ed eseguire una nuova ricerca nel Centro Microsoft 365 conformità.
 
-2. Esportare i risultati della ricerca contenuto o il report di ricerca contenuto. Per ulteriori informazioni, vedere:
+2. Esportare i risultati della ricerca contenuto o il report di ricerca contenuto. Per altre informazioni, vedere:
 
     - [Esportare i risultati della Ricerca contenuto](export-search-results.md)
 

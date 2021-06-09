@@ -25,39 +25,39 @@ ms.locfileid: "42077083"
 ---
 # <a name="create-tag-groups"></a>Creare gruppi di tag
 
-Prima che l'utente o gli altri utenti possano contrassegnare i documenti in un set di revisione, è necessario creare i tag. A tale scopo, è possibile creare gruppi di tag che contengono tag figlio. I tag vengono visualizzati nel riquadro di tagging quando si esaminano i documenti in un set di revisione.
+Prima di poter aggiungere tag ai documenti in un set di revisioni, è necessario creare i tag. A tale scopo, è possibile creare gruppi di tag contenenti tag figlio. I tag vengono visualizzati nel pannello di tagging durante la revisione dei documenti in un set di revisioni.
 
-Per creare un gruppo di Tag:
+Per creare un gruppo di tag:
 
-1.  In un set di Revisione fare clic su **Gestisci Revisione set**.
+1.  In un set di recensioni fare clic **su Gestisci set di revisioni.**
 
-    ![Fare clic su Manage Review set](../media/ED-managews.png)
+    ![Fare clic su Gestisci set di revisioni](../media/ED-managews.png)
 
-2.  Nel riquadro **tag** fare clic su **Gestisci Tag**.
+2.  Nel riquadro **Tag** fare clic **su Gestisci tag.**
 
-    ![Fare clic su Gestisci tag nel riquadro Tag](../media/ED-managetags.png)
+    ![Fai clic su Gestisci tag nel riquadro Tag](../media/ED-managetags.png)
 
-Una volta all'interno della gestione dei tag, è possibile creare i tag per soddisfare i requisiti del caso. È possibile iniziare con la creazione di un gruppo di tag.
+Una volta all'interno della gestione dei tag, è possibile creare tag per soddisfare i requisiti del caso. Puoi iniziare creando un gruppo di tag.
 
-1.  Fare clic su **Aggiungi sezione**.
+1.  Fare **clic su Aggiungi sezione**.
 
     ![Aggiunta di un gruppo di tag](../media/ED-addtagsection.png)
 
-    La schermata di anteprima verrà aggiornata quando si salva in modo che sia possibile visualizzare in anteprima il riquadro dei tag senza dover chiudere la schermata di gestione dei tag e tornare al working set.
+    La schermata di anteprima si aggiornerà al salvataggio in modo da poter visualizzare in anteprima il pannello tag senza dover chiudere la schermata di gestione dei tag e tornare al working set.
 
 2. Immettere un titolo e una descrizione facoltativa. 
 
-3. Per creare un tag all'interno di tale gruppo, fare clic sui puntini di ellissi del nuovo gruppo di tag per creare i tag nella nuova sezione.
+3. Per creare un tag all'interno di tale gruppo, fai clic sui puntini di sospensione nel nuovo gruppo di tag per creare tag nella nuova sezione.
     
     ![Creazione di tag in un gruppo di tag](../media/ED-createtag.png)
 
-   - I **tag di opzione** costringeranno gli utenti a selezionare un tag da un gruppo di tag.
+   - **I tag opzione** forzano gli utenti a selezionare un tag da un gruppo di tag.
    
-   - La **casella di controllo tag** consentirà agli utenti di selezionare qualsiasi combinazione di tag. |
+   - **I tag delle caselle** di controllo consentiranno agli utenti di selezionare qualsiasi combinazione di tag. |
 
 ## <a name="nested-tags"></a>Tag annidati
 
-Per annidare i tag, fare clic sui puntini di ellissi accanto a un tag e quindi selezionare un nuovo tag da aggiungere.
+Per annidare i tag, fai clic sui puntini di sospensione accanto a un tag e quindi seleziona un nuovo tag da aggiungere.
 
-![Nidificazione di tag](../media/ED-tagnesting.png)
+![Tag di annidamento](../media/ED-tagnesting.png)
 

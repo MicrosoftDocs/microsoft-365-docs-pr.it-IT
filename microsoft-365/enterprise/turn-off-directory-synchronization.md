@@ -29,14 +29,14 @@ ms.lasthandoff: 03/30/2021
 ms.locfileid: "51445709"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Disattivare la sincronizzazione della directory per Microsoft 365
-È possibile utilizzare PowerShell per disattivare la sincronizzazione della directory e convertire gli utenti sincronizzati in solo cloud. Tuttavia, non è consigliabile disattivare la sincronizzazione della directory come passaggio di risoluzione dei problemi. Per assistenza nella risoluzione dei problemi di sincronizzazione della directory, vedere l'articolo Risolvere i problemi di [sincronizzazione della directory per Microsoft 365.](fix-problems-with-directory-synchronization.md) 
+È possibile utilizzare PowerShell per disattivare la sincronizzazione della directory e convertire gli utenti sincronizzati in solo cloud. Tuttavia, non è consigliabile disattivare la sincronizzazione della directory come passaggio di risoluzione dei problemi. Se è necessaria assistenza per la risoluzione dei problemi di sincronizzazione della directory, vedere l'articolo Risolvere i [problemi di sincronizzazione della directory per Microsoft 365.](fix-problems-with-directory-synchronization.md) 
   
 [Se necessario,](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) contattare il supporto per i prodotti aziendali.
   
 ## <a name="turn-off-directory-synchronization"></a>Disattivare la sincronizzazione della directory  
 Per disattivare la sincronizzazione della directory:
   
-1. Innanzitutto, installare il software necessario e connettersi all'abbonamento a Microsoft 365. Per istruzioni, vedere [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. Innanzitutto, installare il software necessario e connettersi all'Microsoft 365 abbonamento. Per istruzioni, vedere [Connessione con il modulo Microsoft Azure Active Directory per Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
 2. Utilizzare [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) per disabilitare la sincronizzazione della directory: 
     

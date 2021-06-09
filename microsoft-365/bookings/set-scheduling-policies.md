@@ -18,24 +18,24 @@ ms.locfileid: "47419737"
 ---
 # <a name="set-your-scheduling-policies"></a>Impostare i criteri di pianificazione
 
-Non tutti gli appuntamenti sono uguali. Alcuni richiedono solo pochi minuti, mentre altri possono durare una o più ore. In Microsoft Bookings, la pagina di prenotazione consente di impostare i criteri di pianificazione per l'azienda. I criteri di pianificazione includono la durata degli appuntamenti, i tempi di anticipo e annullamento accettabili e le notifiche automatiche per le modifiche alle prenotazioni. È possibile aggiungere ulteriori personalizzazioni per ogni servizio all'interno della pagina Servizi, con impostazioni e criteri di durata aggiuntivi che si applicano solo a tale servizio.
+Non tutti gli appuntamenti sono uguali. Alcuni richiedono solo pochi minuti, mentre altri possono durare una o più ore. In Microsoft Bookings, la pagina di prenotazione consente di impostare i criteri di pianificazione per l'azienda. I criteri di pianificazione includono la durata degli appuntamenti, i tempi di anticipo e annullamento accettabili e le notifiche automatiche per le modifiche alle prenotazioni. È possibile aggiungere ulteriori personalizzazioni per ogni servizio nella pagina Servizi, con impostazioni e criteri di durata aggiuntivi che si applicano solo a tale servizio.
 
-I criteri impostati in questa posizione sono criteri di primo livello. Vengono applicati automaticamente a tutti i servizi offerti, a meno che non si scelga di modificarli per un singolo servizio. Si supponga, ad esempio, che per la maggior parte dei servizi, ad esempio le consultazioni iniziali, sia accettabile un preavviso di un giorno per le cancellazioni. Ma per i servizi che richiedono la prenotazione di strutture o il pagamento di quote, ad esempio le lezioni golf, potrebbe essere necessario un preavviso di tre giorni. È possibile impostare questi criteri a livello di servizio nella pagina Servizi. Per istruzioni, vedere [Definire le offerte di servizi](define-service-offerings.md).
+I criteri impostati in questa posizione sono criteri di primo livello. Vengono applicati automaticamente a tutti i servizi offerti, a meno che non si scelga di modificarli per un singolo servizio. Si supponga ad esempio che per la maggior parte dei servizi, ad esempio le consultazioni iniziali, sia accettabile un avviso di un giorno per le cancellazioni. Ma per i servizi che richiedono la prenotazione di strutture o il pagamento di quote, ad esempio le lezioni golf, potrebbe essere necessario un preavviso di tre giorni. È possibile impostare questi criteri a livello di servizio nella pagina Servizi. Per istruzioni, vedere [Definire le offerte di servizi](define-service-offerings.md).
 
 ## <a name="types-of-scheduling-policies"></a>Tipi di criteri di pianificazione
 
 In questa tabella vengono illustrati i vari criteri di pianificazione disponibili nella pagina di prenotazione.
 
-| Criteri | Spiegazione |
+| Criterio | Spiegazione |
 |---|---|
-| Incrementi di tempo | Determina gli intervalli tra gli appuntamenti. È possibile impostare incrementi di tempo da 5 minuti a 4 ore. Puoi anche impostare incrementi di tempo personalizzati. Un intervallo di 15 minuti, ad esempio, significa che un cliente può pianificare un appuntamento di 60 minuti alle 8:00, 8:15, 8:30 e così via. Un intervallo di 60 minuti indica invece che gli appuntamenti sono disponibili solo all'inizio di ogni ora. Per impostare la durata dei servizi, vedere [Definire le offerte di servizi](define-service-offerings.md). |
-| Tempo di anticipo in ore | Il piano delle risorse viene creato in base agli appuntamenti pianificati, quindi è importante sapere in anticipo quanti clienti sono previsti per un determinato servizio in un giorno specifico. I criteri di lead time consentono di specificare il numero di ore di anticipo che i clienti devono prenotare o annullare per un appuntamento. |
+| Incrementi di tempo | Determina gli intervalli tra gli appuntamenti. Puoi impostare incrementi di tempo da 5 minuti a 4 ore. Puoi anche impostare incrementi di tempo personalizzati. Un intervallo di 15 minuti, ad esempio, significa che un cliente può pianificare un appuntamento di 60 minuti alle 8:00, 8:15, 8:30 e così via. Un intervallo di 60 minuti indica invece che gli appuntamenti sono disponibili solo all'inizio di ogni ora. Per impostare la durata dei servizi, vedere [Definire le offerte di servizi](define-service-offerings.md). |
+| Tempo di anticipo in ore | Il piano delle risorse viene creato in base agli appuntamenti pianificati, quindi è importante sapere in anticipo quanti clienti sono previsti per un determinato servizio in un giorno specifico. I criteri di lead time consentono di specificare il numero di ore di anticipo che i clienti devono prenotare o annullare un appuntamento. |
 | Numero massimo di giorni in anticipo | Questa impostazione consente di limitare l'anticipo con cui i clienti possono prenotare gli appuntamenti. È possibile impostare il numero massimo consentito su 365 o più giorni. |
 | Notifica in caso di prenotazione o modifica di una prenotazione | Selezionare questa opzione se si vuole ricevere un messaggio di posta elettronica quando un cliente prenota un appuntamento o ne modifica uno esistente. Il messaggio di posta elettronica verrà inviato alla cassetta postale specificata nella pagina delle informazioni aziendali. Per informazioni dettagliate, vedere [Immettere le informazioni aziendali](enter-business-information.md).   |
 
 ## <a name="set-your-policies"></a>Impostare i criteri
 
-1. In Microsoft 365, selezionare l'icona di avvio delle app e quindi selezionare Prenotazioni.
+1. In Microsoft 365, seleziona l'icona di avvio delle app e quindi seleziona Prenotazioni.
 
 1. Nel riquadro di spostamento selezionare **Pagina di prenotazione**.
 
@@ -45,4 +45,4 @@ In questa tabella vengono illustrati i vari criteri di pianificazione disponibil
 
 ## <a name="publish-the-booking-page"></a>Pubblicare la pagina di prenotazione
 
-Quando si è pronti per pubblicare la pagina di prenotazione, selezionare **Salva e pubblica**. Per [ulteriori informazioni, vedere Personalizzare e pubblicare](customize-booking-page.md) la pagina di prenotazione.
+Quando si è pronti per pubblicare la pagina di prenotazione, selezionare **Salva e pubblica**. Per [altre informazioni, vedi Personalizzare e pubblicare la](customize-booking-page.md) pagina di prenotazione.

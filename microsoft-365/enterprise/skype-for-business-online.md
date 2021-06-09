@@ -21,7 +21,7 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Gli amministratori possono trovare assistenza per configurare parti di Skype for Business online, tra cui la rete, le riunioni e la messaggistica istantanea e l'accesso esterno per gli utenti.
+description: Gli amministratori possono trovare assistenza per configurare parti di Skype for Business Online, tra cui la rete, le riunioni e la messaggistica istantanea e l'accesso esterno per gli utenti.
 ms.openlocfilehash: 1e3807199fc83d642399b29870f2cac477d2ec75
 ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
@@ -71,7 +71,7 @@ Vedere anche:
     
 - [Video: Accedere e disconnettersi da Skype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
-- [Impostare le opzioni dei dispositivi audio in Skype for Business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
+- [Impostare le opzioni del dispositivo audio in Skype for Business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [Partecipare a una riunione Skype for Business](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
@@ -89,6 +89,6 @@ Vedere anche:
     
 - [Avviare una conferenza telefonica Skype for Business](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **Per altri articoli per gli utenti, vedere la [Guida di Skype for Business.](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)**
+ **Per altri articoli per gli utenti, vedere [Skype for Business guida.](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)**
   
 

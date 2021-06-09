@@ -58,7 +58,7 @@ Prima di acquistare, pensa al piano a cui ti i iscriviti. Si eviteranno problemi
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 Serve assistenza per la scelta di un piano? I consulenti di vendita sono a disposizione per rispondere a qualsiasi domanda. Vai a [Confronta tutti i prodotti](https://products.office.com/compare-all-microsoft-office-products?tab=2) e scegli una delle opzioni di supporto per i contatti elencate a sinistra della pagina.
   

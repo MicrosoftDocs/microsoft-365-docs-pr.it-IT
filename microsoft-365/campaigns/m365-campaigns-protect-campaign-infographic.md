@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Cosa puoi fare per proteggere la campagna da attacchi digitali.
+description: Cosa è possibile fare per proteggere la campagna dagli attacchi digitali.
 ms.openlocfilehash: ab03e3f8e093855c3c41f461469724c4ecd3b1dd
 ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT

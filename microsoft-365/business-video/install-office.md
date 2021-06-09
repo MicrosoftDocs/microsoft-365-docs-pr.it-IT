@@ -43,7 +43,7 @@ Microsoft Office app sono disponibili nel menu **Start.** Se non&#39;vengono vis
 
 Le Office app installate vengono ora visualizzate nel menu **Start.**
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Eseguire la migrazione del contenuto a Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md) (articolo)
 

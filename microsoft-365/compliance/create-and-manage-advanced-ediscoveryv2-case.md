@@ -32,13 +32,13 @@ Dopo aver impostato Advanced eDiscovery e aver assegnato le autorizzazioni ai re
 
 In questo articolo viene inoltre fornita una panoramica generale dell'utilizzo dei casi per gestire il flusso di lavoro Advanced eDiscovery per un caso legale o altri tipi di indagini.
 
-## <a name="create-a-case"></a>Creare un caso
+## <a name="create-a-case"></a>Crea un caso
 
 Completare la procedura seguente per creare un caso e aggiungere membri. L'utente che crea il caso viene aggiunto automaticamente come membro. I membri del caso possono accedere al caso nel Centro Microsoft 365 conformità ed eseguire Advanced eDiscovery attività.
 
 1. Accedere a <https://compliance.microsoft.com> e accedere utilizzando le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery. I membri del gruppo di ruoli Gestione organizzazione possono anche creare Advanced eDiscovery casi.
 
-2. Nel riquadro di spostamento sinistro del Centro Microsoft 365 conformità fare clic su **Mostra** tutto e quindi su **eDiscovery > Avanzate**.
+2. Nel riquadro di spostamento sinistro del Centro conformità Microsoft 365, fare clic su **Mostra tutto**, quindi su **eDiscovery > Advanced**.
 
 3. Nella pagina **Advanced eDiscovery** fare clic sulla **scheda Casi** e quindi su Crea **un caso.**
 
@@ -56,7 +56,7 @@ Completare la procedura seguente per creare un caso e aggiungere membri. L'utent
 
 9. Dopo aver selezionato le persone da aggiungere come membri del caso, fare clic su **Aggiungi.**
 
-10. Nella pagina **a comparsa Gestisci questo caso** fare clic su **Salva** per salvare il nuovo elenco di membri del caso.
+10. Nella pagina a comparsa **Gestisci questo caso**, fare clic su **Salva** per salvare il nuovo elenco di membri del caso. 
 
 11. Fare clic **sulla scheda Home** per passare alla home page del caso.
 

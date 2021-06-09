@@ -12,30 +12,24 @@ metadata:
   manager: serdars
   audience: Admin
   ms.date: 09/04/2020
-  ms.openlocfilehash: 8c7158c72700a7db866051a4de10bbc890ad4478
-  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
-  ms.translationtype: MT
-  ms.contentlocale: it-IT
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "47419756"
 additionalContent:
   sections:
-  - items:
-    - title: Che cos'è Microsoft Bookings?
-      summary: Pianificare e gestire gli appuntamenti con un calendario e un'app di prenotazione basati sul Web, inclusa l'integrazione di Outlook per il personale e i messaggi di posta elettronica di notifica automatizzati.
-      url: bookings-overview.md
-    - title: Immettere le informazioni aziendali
-      summary: Immetti la tua pagina Informazioni su di Noi, inclusi nome dell'azienda, indirizzo, numero di telefono, URL del sito Web, logo e orario di ufficio in Microsoft Bookings.
-      url: enter-business-information.md
-    - title: Ottenere l'app Microsoft Bookings
-      summary: Modificare il tema a colori e configurare l'aspetto della pagina di prenotazione rivolta al cliente esterno.
-      url: customize-booking-page.md
-    - title: Aggiungere personale a Bookings
-      summary: Creare l'elenco del personale e gestire i dettagli dei membri del personale, ad esempio nome, numero di telefono e indirizzo di posta elettronica.
-      url: add-staff.md
-    - title: Pianificare chiusure aziendali, permessi e ferie
-      summary: Pianificare le chiusure degli uffici e le ore di indisponibilità dei dipendenti dal calendario di Bookings in modo che i dipendenti siano contrassegnati come non disponibili per le prenotazioni negli orari specificati.
-      url: schedule-closures-time-off-vacation.md
-    - title: Orario di lavoro dei dipendenti in Microsoft Bookings
-      summary: Impostare l'orario di lavoro e la disponibilità dei dipendenti in Microsoft Bookings.
-      url: employee-hours.md
+    - items:
+        - title: Che cos'è Microsoft Bookings?
+          summary: 'Pianificare e gestire gli appuntamenti con un calendario e un''app di prenotazione basati sul Web, inclusa l''integrazione Outlook per il personale e i messaggi di posta elettronica di notifica automatizzati.'
+          url: bookings-overview.md
+        - title: Immettere le informazioni aziendali
+          summary: 'Immetti la tua pagina Informazioni su di noi, inclusi nome dell''azienda, indirizzo, numero di telefono, URL del sito Web, logo e orario di ufficio in Microsoft Bookings.'
+          url: enter-business-information.md
+        - title: Ottenere l'app Microsoft Bookings
+          summary: Modificare il tema del colore e configurare l'aspetto della pagina di prenotazione rivolta al cliente esterno.
+          url: customize-booking-page.md
+        - title: Aggiungere personale a Bookings
+          summary: 'Creare l''elenco del personale e gestire i dettagli dei membri del personale, ad esempio nome, numero di telefono e indirizzo di posta elettronica.'
+          url: add-staff.md
+        - title: 'Pianificare chiusure aziendali, permessi e ferie'
+          summary: Pianificare le chiusure degli uffici e le ore di indisponibilità dei dipendenti dal calendario Bookings in modo che i dipendenti siano contrassegnati come non disponibili per le prenotazioni durante gli orari specificati.
+          url: schedule-closures-time-off-vacation.md
+        - title: Orario di lavoro dei dipendenti in Microsoft Bookings
+          summary: Impostare l'orario di lavoro e la disponibilità dei dipendenti in Microsoft Bookings.
+          url: employee-hours.md

@@ -1,6 +1,6 @@
 ---
 title: Avvisi per la gestione dei rischi Insider
-description: Informazioni sugli avvisi di gestione dei rischi insider in Microsoft 365
+description: Informazioni sugli avvisi per la gestione dei rischi insider in Microsoft 365
 keywords: Microsoft 365, rischio insider, gestione dei rischi, conformità
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -75,7 +75,7 @@ Per cercare una parola specifica nel nome dell'avviso, selezionare il controllo 
 
 Per eseguire la valutazione di un avviso di rischio insider, completare i passaggi seguenti:
 
-1. Nel Centro [conformità Microsoft 365](https://compliance.microsoft.com)passare a **Gestione dei** rischi Insider e selezionare la **scheda** Avvisi.
+1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a **Gestione dei rischi Insider** e selezionare la **scheda** Avvisi.
 2. Nel **dashboard Avvisi** selezionare l'avviso che si desidera utilizzare.
 3. Nel riquadro **dei dettagli degli avvisi** è possibile esaminare le schede seguenti e analizzare l'avviso:
     - **Riepilogo:** questa scheda contiene informazioni generali sull'avviso e consente di confermare l'avviso e creare un nuovo caso o di ignorare l'avviso. Include lo stato corrente per l'avviso e il livello di gravità del rischio di avviso, elencato come *Alto,* *Medio* o *Basso.* Il livello di gravità può aumentare o diminuire nel tempo se l'avviso non viene triaged.
@@ -100,7 +100,7 @@ Esplora attività offre agli investigatori e agli analisti dei rischi uno strume
 
 Per usare **Esplora attività,** completare la procedura seguente:
 
-1. Nel Centro conformità Microsoft 365 passare a Gestione dei rischi **Insider** e selezionare la **scheda** Avvisi.
+1. Nel Centro Microsoft 365 conformità, passare a **Gestione dei rischi Insider** e selezionare la **scheda** Avvisi.
 2. Nel **dashboard Avvisi** selezionare l'avviso che si desidera utilizzare.
 3. Nel riquadro **dei dettagli degli avvisi** selezionare Apri visualizzazione **espansa.**
 4. Nella pagina dell'avviso selezionato selezionare la **scheda Esplora** attività.
@@ -113,7 +113,7 @@ Quando si esaminano le attività in Esplora attività, gli investigatori e gli a
 
 Quando l'avviso viene esaminato e esaminato, è possibile creare un nuovo caso per analizzare ulteriormente l'attività di rischio. Per creare un caso per un avviso, attenersi alla seguente procedura:
 
-1. Nel Centro [conformità Microsoft 365](https://compliance.microsoft.com)passare a **Gestione dei** rischi Insider e selezionare la **scheda** Avvisi.
+1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a **Gestione dei rischi Insider** e selezionare la **scheda** Avvisi.
 2. Nel **dashboard Avvisi** selezionare l'avviso per cui si desidera confermare e creare un nuovo caso.
 3. Nel riquadro **Dei dettagli degli avvisi** selezionare Azioni   >  **Confermare gli avvisi & creare il caso.**
 4. Nella finestra **di dialogo Conferma avviso e crea** caso di rischio insider immetti un nome per il caso, seleziona gli utenti da aggiungere come collaboratori e aggiungi commenti come applicabili. I commenti vengono aggiunti automaticamente al caso come nota del caso.

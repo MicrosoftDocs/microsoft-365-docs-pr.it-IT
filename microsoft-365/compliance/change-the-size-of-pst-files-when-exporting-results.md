@@ -24,7 +24,7 @@ ms.locfileid: "43942919"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modificare le dimensioni dei file PST durante l'esportazione dei risultati della ricerca eDiscovery
 
-Quando si utilizza lo strumento di esportazione di eDiscovery per esportare i risultati della posta elettronica di una ricerca eDiscovery dai diversi strumenti di Microsoft eDiscovery, la dimensione predefinita di un file PST che può essere esportato è 10 GB. Se si desidera modificare questa dimensione predefinita, è possibile modificare il Registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Uno dei motivi per eseguire questa operazione è che un file PST può adattarsi a supporti rimovibili, ad esempio un DVD, un compact disc o un'unità USB. 
+Quando si utilizza lo strumento di esportazione di eDiscovery per esportare i risultati di una ricerca eDiscovery dai diversi strumenti di Microsoft eDiscovery, la dimensione predefinita di un file PST che può essere esportato è 10 GB. Se si desidera modificare questa dimensione predefinita, è possibile modificare il Registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Uno dei motivi per eseguire questa operazione è che un file PST possa essere inserito su supporti rimovibili, ad esempio un DVD, un compact disc o un'unità USB. 
   
 > [!NOTE]
 > Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risultati della ricerca quando si utilizza lo strumento Ricerca contenuto nel Centro sicurezza & conformità, In-Place eDiscovery in Exchange Online e centro eDiscovery in SharePoint Online.
@@ -43,7 +43,7 @@ Eseguire la procedura seguente nel computer che verrà utilizzato per esportare 
     "PstSizeLimitInBytes"="1073741824"
     ```
 
-    Nell'esempio precedente il valore è impostato su  `PstSizeLimitInBytes` 1.073.741.824 byte o su circa 1 GB. Ecco alcuni altri valori di esempio per  `PstSizeLimitInBytes` l'impostazione. 
+    Nell'esempio precedente, il  `PstSizeLimitInBytes` valore è impostato su 1.073.741.824 byte o su circa 1 GB. Ecco alcuni altri valori di esempio per  `PstSizeLimitInBytes` l'impostazione. 
     
     |**Dimensioni in GB (circa)**|**Dimensioni in byte**|
     |:-----|:-----|
@@ -52,29 +52,29 @@ Eseguire la procedura seguente nel computer che verrà utilizzato per esportare 
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
    
-3. Modificare il valore sulla dimensione massima desiderata di un file PST quando si esportano i risultati della ricerca `PstSizeLimitInBytes` e quindi salvare il file. 
+3. Modificare il valore in base alle dimensioni massime desiderate di un file PST quando si esportano i risultati della `PstSizeLimitInBytes` ricerca e quindi si salva il file. 
     
-4. In Esplora risorse fare clic o fare doppio clic sul file reg creato nei passaggi precedenti.
+4. In Windows Explorer fare clic o fare doppio clic sul file reg creato nei passaggi precedenti.
     
-5. Nella finestra Controllo di accesso utente fare clic su **Sì** per consentire all'Editor del Registro di sistema di apportare la modifica. 
+5. Nella finestra Controllo di accesso utente fare clic su **Sì** per consentire all'editor del Registro di sistema di apportare la modifica. 
     
 6. Quando viene richiesto di continuare, fare clic su **Sì.**
     
-    Nell'Editor del Registro di sistema viene visualizzato un messaggio che indica che l'impostazione è stata aggiunta correttamente al Registro di sistema.
+    Nell'editor del Registro di sistema viene visualizzato un messaggio che indica che l'impostazione è stata aggiunta correttamente al Registro di sistema.
     
-7. È possibile ripetere i passaggi da 3 a 6 per modificare il valore dell'impostazione del Registro  `PstSizeLimitInBytes` di sistema. 
+7. È possibile ripetere i passaggi da 3 a 6 per modificare il valore dell'impostazione del  `PstSizeLimitInBytes` Registro di sistema. 
   
 ## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Domande frequenti sulla modifica delle dimensioni predefinite dei file PST quando si esportano i risultati della ricerca eDiscovery
 
  **Perché la dimensione predefinita è 10 GB?**
   
-Le dimensioni predefinite di 10 GB si basano sul feedback dei clienti; 10 GB è un buon equilibrio tra la quantità ottimale di contenuto in un singolo file PST e con una minima probabilità di danneggiamento dei file.
+Le dimensioni predefinite di 10 GB si basano sul feedback dei clienti. 10 GB è un buon equilibrio tra la quantità ottimale di contenuto in un singolo FILE PST e con una probabilità minima di danneggiamento dei file.
   
  **È consigliabile aumentare o ridurre le dimensioni predefinite dei file PST?**
   
 I clienti tendono a ridurre il limite di dimensioni in modo che i risultati della ricerca si adattino ai supporti rimovibili che possono spedire fisicamente in altre posizioni dell'organizzazione. Non è consigliabile aumentare le dimensioni predefinite perché i file PST di dimensioni superiori a 10 GB potrebbero avere problemi di danneggiamento.
   
- **Su quale computer è necessario eseguire questa operazione?**
+ **In quale computer è necessario eseguire questa operazione?**
   
 È necessario modificare l'impostazione del Registro di sistema in qualsiasi computer locale in cui si esegue lo strumento di esportazione di eDiscovery.
   
@@ -84,4 +84,4 @@ No, non è necessario riavviare il computer. Tuttavia, se lo strumento di esport
   
  **Una chiave del Registro di sistema esistente viene modificata o viene creata una nuova chiave?**
   
-Una nuova chiave del Registro di sistema viene creata alla prima esecuzione del file reg creato in questa procedura. L'impostazione viene quindi modificata ogni volta che si modifica ed esegue di nuovo il file reg edit.
+Una nuova chiave del Registro di sistema viene creata la prima volta che si esegue il file reg creato in questa procedura. L'impostazione viene quindi modificata ogni volta che si modifica ed esegue di nuovo il file reg edit.

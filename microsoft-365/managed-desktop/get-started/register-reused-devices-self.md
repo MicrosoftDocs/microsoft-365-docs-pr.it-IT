@@ -21,11 +21,11 @@ ms.locfileid: "51893276"
 # <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 
 >[!NOTE]
->In questo argomento vengono descritti i passaggi necessari per riutilizzare i dispositivi già presenti e registrarli in Microsoft Managed Desktop. Se stai lavorando con dispositivi nuovi, segui i passaggi descritti in Registrare i [nuovi dispositivi in Microsoft Managed Desktop.](register-devices-self.md)
+>Questo argomento descrive i passaggi necessari per riutilizzare i dispositivi già presenti e registrarli in Microsoft Managed Desktop. Se stai lavorando con dispositivi nuovi, segui i passaggi descritti [in Registrare](register-devices-self.md) i nuovi dispositivi in Microsoft Managed Desktop te stesso.
 
 Il processo per i partner è documentato in [Passaggi per i partner per registrare i dispositivi](register-devices-partner.md).
 
-Microsoft Managed Desktop può funzionare con dispositivi nuovi o puoi riutilizzare i dispositivi che potresti già avere (che richiederanno di ricrearne l'immagine). Puoi registrare i dispositivi con Microsoft Managed Desktop nel portale di Microsoft Endpoint Manager.
+Microsoft Managed Desktop possono funzionare con dispositivi nuovi o puoi riutilizzare i dispositivi che potresti già avere (che richiederanno di ricrearne l'immagine). Puoi registrare i dispositivi con Microsoft Managed Desktop nel Microsoft Endpoint Manager portale.
 
 ## <a name="prepare-to-register-existing-devices"></a>Preparare la registrazione dei dispositivi esistenti
 
@@ -34,7 +34,7 @@ Per registrare i dispositivi esistenti, segui questi passaggi:
 
 1. [Ottenere l'hash hardware per ogni dispositivo.](#obtain-the-hardware-hash)
 2. [Unire i dati hash](#merge-hash-data)
-3. [Registrare i dispositivi in Microsoft Managed Desktop.](#register-devices-by-using-the-admin-portal)
+3. [Registrare i dispositivi in Microsoft Managed Desktop](#register-devices-by-using-the-admin-portal).
 4. [Verificare che l'immagine sia corretta.](#check-the-image)
 5. [Recapita il dispositivo](#deliver-the-device)
 
@@ -43,24 +43,24 @@ Per registrare i dispositivi esistenti, segui questi passaggi:
 Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo riferimento al relativo hash hardware. Sono disponibili quattro opzioni per ottenere queste informazioni dai dispositivi già in uso:
 
 - Chiedere al fornitore OEM il file di registrazione AutoPilot, che includerà gli hash hardware.
-- Raccogliere informazioni in [Microsoft Endpoint Configuration Manager.](#microsoft-endpoint-configuration-manager)
-- Eseguire uno script Windows PowerShell, utilizzando [Active Directory](#active-directory-powershell-script-method) o [manualmente](#manual-powershell-script-method) in ogni dispositivo, e raccogliere i risultati in un file.
-- Avviare ogni dispositivo, ma non completare l'esperienza di installazione di Windows, e raccogliere gli [hash in un'unità flash rimovibile.](#flash-drive-method)
+- Raccogliere informazioni in [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager).
+- Eseguire uno script Windows PowerShell, utilizzando Active [](#manual-powershell-script-method) [Directory](#active-directory-powershell-script-method) o manualmente in ogni dispositivo, e raccogliere i risultati in un file.
+- Avviare ogni dispositivo, ma non completare l'Windows di installazione, e raccogliere gli hash in un'unità [flash rimovibile.](#flash-drive-method)
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
 Puoi usare Microsoft Endpoint Configuration Manager per raccogliere gli hash hardware dai dispositivi esistenti che vuoi registrare con Microsoft Managed Desktop.
 
 > [!IMPORTANT]
-> Tutti i dispositivi per cui vuoi ottenere queste informazioni devono eseguire Windows 10 versione 1703 o successiva. 
+> Tutti i dispositivi per cui vuoi ottenere queste informazioni devono essere Windows 10 versione 1703 o successiva. 
 
 Se sono stati soddisfatti tutti questi prerequisiti, è possibile raccogliere le informazioni seguendo questi passaggi:
 
 1. Nella console di Configuration Manager selezionare **Monitoraggio**. 
 2. Nell'area di lavoro Monitoraggio espandere il **nodo Report,** espandere **Report** e selezionare il **nodo Hardware - Generale.** 
-3. Eseguire il report, **Windows Autopilot Device Information** e visualizzare i risultati.
+3. Eseguire il report, Windows informazioni sul dispositivo **Autopilot** e visualizzare i risultati.
 4. Nel visualizzatore di report seleziona **l'icona** Esporta e scegli l'opzione **CSV (delimitato da virgole).**
-5. Dopo aver salvato il file, sarà necessario filtrare i risultati solo nei dispositivi che si prevede di registrare in Microsoft Managed Desktop e caricare i dati in Microsoft Managed Desktop. Apri Microsoft Endpoint Manager e passa al menu **Dispositivi,** quindi cerca la sezione Microsoft Managed Desktop e seleziona **Dispositivi**. Seleziona **+ Registra dispositivi**, che apre un fly-in per registrare nuovi dispositivi.
+5. Dopo aver salvato il file, dovrai filtrare i risultati solo nei dispositivi che vuoi registrare con Microsoft Managed Desktop e caricare i dati in Microsoft Managed Desktop. Apri Microsoft Endpoint Manager e passa al menu **Dispositivi,** quindi cerca la Microsoft Managed Desktop e seleziona **Dispositivi**. Seleziona **+ Registra dispositivi**, che apre un fly-in per registrare nuovi dispositivi.
 
 
 Per altre [informazioni, vedere Registrare i dispositivi](#register-devices-by-using-the-admin-portal) tramite il portale di amministrazione.
@@ -75,9 +75,9 @@ In un ambiente Active Directory, è possibile utilizzare il cmdlet PowerShell pe
 - Assicurati di disporre di un parametro delle credenziali di dominio che dispone dell'autorizzazione per l'esecuzione in remoto nei dispositivi.
 - Assicurarsi che Windows Firewall consenta l'accesso a WMI. A tale scopo, attenersi alla seguente procedura:
 
-    1. Apri il **Windows Defender di controllo firewall** e seleziona Consenti **un'app** o una funzionalità tramite Windows Defender Firewall .
+    1. Apri il **Windows Defender Firewall** di controllo e seleziona **Consenti un'app o una funzionalità tramite Windows Defender Firewall**.
     
-    2. Trova **Strumentazione gestione Windows (WMI)** nell'elenco, abilita sia per **Private che per Public** e quindi seleziona **OK.**
+    2. Trova **Windows Strumentazione gestione Windows (WMI)** nell'elenco, abilita sia per **Private che per Public** e quindi seleziona **OK.**
 
 1.  Aprire un prompt di PowerShell con diritti amministrativi.
 
@@ -94,9 +94,9 @@ In un ambiente Active Directory, è possibile utilizzare il cmdlet PowerShell pe
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. Accedere a tutte le directory in cui potrebbero essere presenti voci per i dispositivi. Rimuovere le voci per ogni dispositivo da *tutte le* directory, inclusi Servizi di dominio Active Directory di Windows Server e Azure Active Directory. Tenere presente che l'elaborazione completa della rimozione potrebbe richiedere alcune ore.
+3. Accedere a tutte le directory in cui potrebbero essere presenti voci per i dispositivi. Rimuovere le voci per ogni dispositivo da *tutte le* directory, inclusi Windows Server Servizi di dominio Active Directory e Azure Active Directory. Tenere presente che l'elaborazione completa della rimozione potrebbe richiedere alcune ore.
 
-4. Accedere ai servizi di gestione in cui potrebbero essere presenti voci per i dispositivi. Rimuovi le voci per ogni dispositivo da *tutti i* servizi di gestione, tra cui Microsoft Endpoint Configuration Manager, Microsoft Intune e Windows Autopilot. Tenere presente che l'elaborazione completa della rimozione potrebbe richiedere alcune ore.
+4. Accedere ai servizi di gestione in cui potrebbero essere presenti voci per i dispositivi. Rimuovi le voci per ogni dispositivo da *tutti* i servizi di gestione, inclusi Microsoft Endpoint Configuration Manager, Microsoft Intune e Windows Autopilot. Tenere presente che l'elaborazione completa della rimozione potrebbe richiedere alcune ore.
 
 Ora puoi procedere con la [registrazione dei dispositivi](#register-devices-by-using-the-admin-portal).
 
@@ -138,7 +138,7 @@ Con i dati hash uniti in un unico file CSV, ora puoi procedere alla [registrazio
 
 ## <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
 
-In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)seleziona Dispositivi **nel** riquadro di spostamento a sinistra. Cerca la sezione Microsoft Managed Desktop del menu e seleziona **Dispositivi.** Nell'area di lavoro Dispositivi desktop gestiti Microsoft seleziona **+ Registra dispositivi**, che apre un riquadro a comparsa per registrare nuovi dispositivi.
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **Dispositivi nel** riquadro di spostamento sinistro. Cerca la sezione Microsoft Managed Desktop del menu e seleziona **Dispositivi.** Nell'Microsoft Managed Desktop di lavoro Dispositivi, seleziona **+ Registra dispositivi**, che apre un riquadro a comparsa per registrare nuovi dispositivi.
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -146,7 +146,7 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)seleziona Dispos
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
-Procedere come segue:
+Eseguire la procedura seguente:
 
 1. In **Caricamento file** specificare il percorso del file CSV creato in precedenza.
 2. Seleziona un [profilo di](../service-description/profiles.md) dispositivo nel menu a discesa.
@@ -161,8 +161,8 @@ Puoi monitorare l'avanzamento della registrazione del dispositivo nella pagina p
 |---------------|-------------|
 | Registrazione in sospeso | La registrazione non è ancora stata eseguita. Eseguire il check back in un secondo momento. |
 | Registrazione non riuscita | Impossibile completare la registrazione. Per ulteriori [informazioni, vedere Risoluzione dei](#troubleshooting-device-registration) problemi di registrazione dei dispositivi. |
-| Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente. Microsoft Managed Desktop li guiderà nella configurazione della prima volta, quindi non è necessario eseguire ulteriori operazioni di preparazione. |
-| Attivo | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Questo indica anche che usano regolarmente il dispositivo. |
+| Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente. Microsoft Managed Desktop le guiderà attraverso la prima configurazione, quindi non è necessario eseguire ulteriori operazioni di preparazione. |
+| Attivazione | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Questo indica anche che usano regolarmente il dispositivo. |
 | Inattivo | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Tuttavia, non hanno usato il dispositivo di recente (negli ultimi 7 giorni).  | 
 
 ### <a name="troubleshooting-device-registration"></a>Risoluzione dei problemi di registrazione dei dispositivi
@@ -177,7 +177,7 @@ Puoi monitorare l'avanzamento della registrazione del dispositivo nella pagina p
 
 ## <a name="check-the-image"></a>Controllare l'immagine
 
-Se il dispositivo è stato utilizzato da un fornitore di partner Microsoft Managed Desktop, l'immagine deve essere corretta.
+Se il dispositivo viene da un Microsoft Managed Desktop partner, l'immagine deve essere corretta.
 
 Se preferisci, puoi anche applicare l'immagine da solo. To get started, contact the Microsoft representative you're working with and they will provide you the location and steps for applying the image.
 
@@ -186,7 +186,7 @@ Se preferisci, puoi anche applicare l'immagine da solo. To get started, contact 
 > [!IMPORTANT]
 > Prima di consegnare il dispositivo all'utente, assicurati di aver ottenuto e applicato le [licenze appropriate](../get-ready/prerequisites.md) per tale utente.
 
-Se vengono applicate tutte le licenze, puoi ottenere gli utenti pronti per l'uso dei dispositivi [e](get-started-devices.md)quindi l'utente può avviare il dispositivo e procedere con l'esperienza di installazione di Windows.
+Se vengono applicate tutte le [](get-started-devices.md)licenze, puoi fare in modo che gli utenti siano pronti per l'uso dei dispositivi e quindi l'utente può avviare il dispositivo e procedere con l'Windows di installazione.
 
 
 

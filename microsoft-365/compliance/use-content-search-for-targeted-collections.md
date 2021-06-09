@@ -57,7 +57,7 @@ Lo strumento ricerca contenuto nel Centro conformità Microsoft 365 non fornisce
 
 Lo script eseguito in questo primo passaggio restituirà un elenco di cartelle delle cassette postali o SharePoint e OneDrive for Business e l'ID o il percorso della cartella corrispondente per ogni cartella. Quando si esegue questo script, verranno richieste le informazioni seguenti.
 
-- **Indirizzo di posta elettronica o URL** sito: digitare un indirizzo di posta elettronica del responsabile per restituire un elenco Exchange cartelle e ID cartella della cassetta postale. Oppure digitare l'URL di un SharePoint o di un OneDrive for Business per restituire un elenco di percorsi per il sito specificato. Ecco alcuni esempi:
+- **Indirizzo di posta elettronica o URL** sito: digitare un indirizzo di posta elettronica del responsabile per restituire un elenco Exchange cartelle e ID cartella della cassetta postale. Oppure digitare l'URL di un SharePoint o di un OneDrive for Business per restituire un elenco di percorsi per il sito specificato. Di seguito vengono descritti alcuni esempi:
 
   - **Exchange**: stacig@contoso.onmicrosoft.com <spam> <spam>
 

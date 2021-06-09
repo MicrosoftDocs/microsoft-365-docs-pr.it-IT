@@ -30,7 +30,7 @@ ms.locfileid: "52314360"
 
 Se l'organizzazione dispone di una sottoscrizione e di una licenza per gli utenti finali che supporta il controllo avanzato, eseguire la procedura seguente per configurare e utilizzare le funzionalità aggiuntive in Advanced Audit.
 
-![Flusso di lavoro per la configurazione del controllo avanzato](../media/AdvancedAuditWorkflow.png)
+![Flusso di lavoro per la configurazione di Audit avanzato](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step1-set-up-advanced-audit-for-users"></a>Passaggio 1: Configurare il controllo avanzato per gli utenti
 
@@ -70,7 +70,7 @@ Se il comando per abilitare il controllo delle query di ricerca è stato eseguit
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>Passaggio 3: Configurare i criteri di conservazione dei controlli
 
-Oltre ai criteri predefiniti che conservano i record di controllo di Exchange, SharePoint e Azure AD per un anno, è possibile creare ulteriori criteri di conservazione dei log di controllo per soddisfare i requisiti dei team di sicurezza, IT e conformità dell'organizzazione. Per altre informazioni, vedere [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md).
+Oltre ai criteri predefiniti che conservano i record di controllo di Exchange, SharePoint e Azure AD per un anno, puoi creare altri criteri di conservazione del log di audit per soddisfare i requisiti delle operazioni di sicurezza, dell'IT e dei team di conformità dell'organizzazione. Per altre informazioni, vedere [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md).
 
 ## <a name="step-4-search-for-crucial-events"></a>Passaggio 4: ricerca di eventi cruciali
 

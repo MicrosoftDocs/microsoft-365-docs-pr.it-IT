@@ -1,5 +1,5 @@
 ---
-title: Configurare l'accesso sicuro ai servizi di Microsoft 365
+title: Configurare l'accesso sicuro Microsoft 365 servizi
 description: "Trova indicazioni prescrittive per l'implementazione di MFA, accesso condizionale e criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili."
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050887"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a>Configurare l'accesso sicuro ai servizi di Microsoft 365
+# <a name="configure-secure-access-to-microsoft-365-services"></a>Configurare l'accesso sicuro Microsoft 365 servizi
 
 Questa soluzione si basa sulla "[configurazione D'oro M365](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- indicazioni prescrittive per l'implementazione di MFA, accesso condizionale e criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili.

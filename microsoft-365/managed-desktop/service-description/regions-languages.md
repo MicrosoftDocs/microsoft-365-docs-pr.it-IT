@@ -19,11 +19,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/30/2021
 ms.locfileid: "51445311"
 ---
-# <a name="microsoft-managed-desktop-supported-regions"></a>Aree supportate da Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft Managed Desktop aree supportate
 
-In questo articolo vengono fornite informazioni dettagliate sulle aree geografiche in cui è possibile utilizzare Microsoft Managed Desktop e dove è supportato. Per ulteriori informazioni sulle lingue supportate da Microsoft Managed Desktop per l'esperienza utente, vedi [Localizzare i dispositivi per gli utenti.](../get-started/localization.md)
+In questo articolo vengono fornite informazioni dettagliate sulle aree in cui è possibile Microsoft Managed Desktop e dove è supportata. Per ulteriori informazioni sulle lingue supportate da Microsoft Managed Desktop per l'esperienza utente, vedi [Localizzare i dispositivi per gli utenti.](../get-started/localization.md)
 
-Puoi comunque usare i dispositivi gestiti al di fuori di queste aree senza interrompere il servizio Microsoft Managed Desktop. Ad esempio, un dipendente con sede nel Regno Unito può lavorare in modo sicuro e ricevere aggiornamenti sul dispositivo gestito mentre viaggia in Asia, Europa o Sud America.
+Puoi comunque usare i dispositivi gestiti all'esterno di queste aree senza interrompere il servizio Microsoft Managed Desktop rete. Ad esempio, un dipendente con sede nel Regno Unito può lavorare in modo sicuro e ricevere aggiornamenti sul dispositivo gestito mentre viaggia in Asia, Europa o Sud America.
 
 Per ulteriori informazioni sulle lingue supportate da Microsoft Managed Desktop per le esperienze utente e amministratore, vedere [Localizzare l'esperienza utente.](../get-started/localization.md)
 

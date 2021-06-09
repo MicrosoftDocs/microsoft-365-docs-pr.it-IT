@@ -1,5 +1,5 @@
 ---
-title: Monitorare e segnalare la protezione di Microsoft Defender Antivirus
+title: Monitorare e creare report sulla Antivirus Microsoft Defender protezione
 description: Usa Configuration Manager o gli strumenti siem (Security Information and Event Management) per usare i report e monitorare Microsoft Defender AV con PowerShell e WMI.
 keywords: siem, monitor, report, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
@@ -32,17 +32,17 @@ ms.locfileid: "52269589"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus è integrato in Windows 10, Windows Server 2019 e Windows Server 2016. Microsoft Defender Antivirus è della protezione di nuova generazione in Microsoft Defender for Endpoint. La protezione di nuova generazione consente di proteggere i dispositivi da minacce software come virus, malware e spyware nella posta elettronica, nelle app, nel cloud e nel Web.
+Antivirus Microsoft Defender è incorporato in Windows 10, Windows Server 2019 e Windows Server 2016. Antivirus Microsoft Defender è della protezione di nuova generazione in Microsoft Defender per Endpoint. La protezione di nuova generazione consente di proteggere i dispositivi da minacce software come virus, malware e spyware nella posta elettronica, nelle app, nel cloud e nel Web.
 
-Con Microsoft Defender Antivirus, sono disponibili diverse opzioni per esaminare lo stato di protezione e gli avvisi. Puoi usare Microsoft Endpoint Manager per monitorare [Microsoft Defender Antivirus](/configmgr/protect/deploy-use/monitor-endpoint-protection) o creare avvisi di posta [elettronica.](/configmgr/protect/deploy-use/endpoint-configure-alerts) In caso contrario, è possibile monitorare la protezione [con Microsoft Intune.](/intune/introduction-intune)  
+Con Antivirus Microsoft Defender, sono disponibili diverse opzioni per esaminare lo stato di protezione e gli avvisi. È possibile utilizzare la Microsoft Endpoint Manager [per monitorare Antivirus Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) o creare avvisi di posta [elettronica.](/configmgr/protect/deploy-use/endpoint-configure-alerts) In caso contrario, è possibile monitorare la [protezione Microsoft Intune](/intune/introduction-intune).  
 
-Microsoft Operations Management Suite include un componente aggiuntivo Conformità aggiornamenti [che](/windows/deployment/update/update-compliance-get-started) segnala i principali problemi di Microsoft Defender Antivirus, inclusi gli aggiornamenti della protezione e le impostazioni di protezione in tempo reale.
+Microsoft Operations Management Suite include un componente aggiuntivo [Conformità](/windows/deployment/update/update-compliance-get-started) aggiornamenti che segnala i problemi Antivirus Microsoft Defender, inclusi gli aggiornamenti della protezione e le impostazioni di protezione in tempo reale.
 
-Se si dispone di un server SIEM (Security Information and Event Management) di terze parti, è inoltre possibile utilizzare Windows Defender [eventi client.](/windows/win32/events/windows-events) 
+Se si dispone di un server SIEM (Security Information and Event Management) di terze parti, è anche possibile utilizzare Windows Defender [eventi client.](/windows/win32/events/windows-events) 
 
-Gli eventi di Windows includono diverse origini eventi di sicurezza, tra cui gli eventi [](/windows/device-security/auditing/security-auditing-overview) di Gestione account di sicurezza (SAM, Security Account Manager) (per[Windows 10,](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)vedi anche l'argomento Controllo della sicurezza) e [Windows Defender eventi.](troubleshoot-microsoft-defender-antivirus.md) 
+Windows eventi includono diverse origini eventi di sicurezza, tra cui gli eventi di Gestione [](/windows/device-security/auditing/security-auditing-overview) account di sicurezza (SAM) ( ottimizzati per[Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), vedere anche l'argomento Controllo della sicurezza) e gli eventi [Windows Defender sicurezza](troubleshoot-microsoft-defender-antivirus.md). 
 
-Questi eventi possono essere aggregati centralmente tramite [l'agente di raccolta eventi di Windows.](/windows/win32/wec/windows-event-collector) Spesso, i server SIEM dispongono di connettori per gli eventi di Windows, consentendo di correlare tutti gli eventi di sicurezza nel server SIEM. 
+Questi eventi possono essere aggregati centralmente tramite [l'Windows di eventi.](/windows/win32/wec/windows-event-collector) Spesso, i server SIEM dispongono di connettori per Windows eventi, consentendo di correlare tutti gli eventi di sicurezza nel server SIEM. 
 
 Puoi anche monitorare [gli eventi di malware usando la soluzione di valutazione malware in Log Analytics.](/azure/log-analytics/log-analytics-malware)
 
@@ -50,6 +50,6 @@ Per il monitoraggio o la determinazione dello stato con PowerShell, WMI o Micros
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Antivirus Microsoft Defender in Windows Server 2016 e 2019](microsoft-defender-antivirus-on-windows-server.md)
-- [Distribuire Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Distribuire Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

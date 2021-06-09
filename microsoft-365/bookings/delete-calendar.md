@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
-description: Utilizzare l'interfaccia di amministrazione di Microsoft 365 o Windows PowerShell per eliminare i calendari di Bookings.
+description: Utilizzare l Microsoft 365 di amministrazione o Windows PowerShell per eliminare i calendari di Bookings.
 ms.openlocfilehash: 21fc7b9994ffd7f76ed04000a50bd0ee8f7f167e
 ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
@@ -18,10 +18,10 @@ ms.locfileid: "51034092"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Eliminare un calendario delle prenotazioni in Bookings
 
-Questo articolo spiega come eliminare un calendario di prenotazione indesiderato. È possibile eliminare il calendario delle prenotazioni nell'interfaccia di amministrazione di Microsoft 365 oppure è possibile usare PowerShell. Il calendario di Bookings è una cassetta postale in Exchange Online in modo da eliminare l'account utente corrispondente per eliminare il calendario di prenotazione.
+Questo articolo spiega come eliminare un calendario di prenotazione indesiderato. È possibile eliminare il calendario di prenotazione nell'Microsoft 365 di amministrazione oppure è possibile usare PowerShell. Il calendario bookings è una cassetta postale in Exchange Online in modo da eliminare l'account utente corrispondente per eliminare il calendario di prenotazione.
 
 > [!IMPORTANT]
-> Tutti i calendari di prenotazione creati nella versione 2017 o precedente devono essere eliminati usando le istruzioni di PowerShell in questo argomento. Tutti i calendari di prenotazione creati nel 2018 o dopo possono essere eliminati nell'interfaccia di amministrazione di Microsoft 365.
+> Tutti i calendari di prenotazione creati nella versione 2017 o precedente devono essere eliminati usando le istruzioni di PowerShell in questo argomento. Tutti i calendari di prenotazione creati nel 2018 o dopo possono essere eliminati nell'Microsoft 365 di amministrazione.
 
 Il calendario di prenotazione è il luogo in cui vengono archiviate tutte le informazioni pertinenti sul calendario e i dati della prenotazione, tra cui:
 
@@ -32,21 +32,21 @@ Il calendario di prenotazione è il luogo in cui vengono archiviate tutte le inf
 > [!WARNING]
 > Una volta eliminato un calendario di prenotazione, anche queste informazioni aggiuntive vengono eliminate definitivamente e non possono essere recuperate.
 
-## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>Eliminare un calendario di prenotazione nell'interfaccia di amministrazione di Microsoft 365
+## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>Eliminare un calendario di prenotazione nell'Microsoft 365 di amministrazione
 
 1. Passare all'interfaccia di amministrazione di Microsoft 365.
 
 1. Nell'interfaccia di amministrazione selezionare **Utenti**.
 
-   ![Immagine dell'interfaccia utente degli utenti nell'interfaccia di amministrazione di Microsoft 365](../media/bookings-admin-center-users.png)
+   ![Immagine dell'interfaccia utente degli utenti Microsoft 365'interfaccia di amministrazione](../media/bookings-admin-center-users.png)
 
 1. Nella pagina **Utenti attivi** scegliere i nomi degli utenti da eliminare, quindi selezionare **Elimina utente**.
 
-   ![Immagine dell'interfaccia utente elimina utente nell'interfaccia di amministrazione di Microsoft 365](../media/bookings-delete-user.png)
+   ![Immagine dell'interfaccia utente di eliminazione dell'Microsoft 365 di amministrazione](../media/bookings-delete-user.png)
 
-## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Eliminare un calendario di prenotazione tramite PowerShell di Exchange Online
+## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Eliminare un calendario di prenotazione Exchange Online PowerShell
 
-Per i prerequisiti e le indicazioni per la connessione a [PowerShell di Exchange Online, vedere Connect to Exchange Online PowerShell.](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps)
+Vedere [Connessione per Exchange Online PowerShell per](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) prerequisiti e indicazioni per la connessione a Exchange Online PowerShell.
 
 Per eseguire questi passaggi, è necessario utilizzare una finestra di comando attiva di Microsoft PowerShell eseguita scegliendo l'opzione "Esegui come amministratore".
 
@@ -67,7 +67,7 @@ Per eseguire questi passaggi, è necessario utilizzare una finestra di comando a
 
    - _\<UPN\>_ è il proprio account in formato del nome dell'entità utente, (ad esempio `john@contoso.com`).
 
-3. Quando richiesto, accedere con le credenziali di amministratore tenant al tenant di Microsoft 365 che ospita il calendario di prenotazione che si desidera eliminare definitivamente.
+3. Quando richiesto, accedere con le credenziali di amministratore tenant al tenant Microsoft 365 che ospita il calendario di prenotazione che si desidera eliminare definitivamente.
 
 4. Terminata l'elaborazione di questo comando, immettere il comando seguente per ottenere un elenco delle cassette postali delle prenotazioni nel tenant:
 

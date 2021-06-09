@@ -52,15 +52,15 @@ Per creare un blocco eDiscovery associato a un caso di eDiscovery di base:
 
 6. Nella pagina **Name your hold** wizard assegnare un nome all'esenzione e aggiungere una descrizione facoltativa e quindi fare clic su **Avanti.** Il nome del blocco deve essere univoco nell'organizzazione.
 
-7. Nella pagina **della procedura guidata Scegli** percorsi scegliere i percorsi di contenuto che si desidera mettere in attesa. È possibile mettere in attesa cassette postali, siti e cartelle pubbliche.
+7. Nella pagina **della procedura guidata Scegli** percorsi scegliere i percorsi di contenuto che si desidera mettere in attesa. È possibile piazzare un blocco per cassette postali, siti e cartelle pubbliche.
 
-    ![Scegliere i percorsi dei contenuti da mettere in attesa](../media/eDiscoveryHoldLocations.png)
+    ![Scegliere le posizioni dei contenuti da mettere in attesa](../media/eDiscoveryHoldLocations.png)
   
-   1. **Exchange:** impostare l'interruttore su **Attivato** e quindi fare clic su **Scegli utenti,** gruppi o team per specificare le cassette postali da mettere in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per mettere un blocco sulle cassette postali dei membri del gruppo) da mettere in attesa. È inoltre possibile impostare un blocco sulla cassetta postale associata per un team Microsoft, un Office 365 e un Yammer gruppo. Per ulteriori informazioni sui dati dell'applicazione conservati quando una cassetta postale viene messa in attesa, vedere [Content stored in mailboxes for eDiscovery](what-is-stored-in-exo-mailbox.md).
+   1. **Cassette postali di Exchange**: impostare l'interruttore su **Attivato** e quindi fare clic su **Scegliere utenti, gruppi o team** per specificare le cassette postali da mettere in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione da mettere in attesa (per mettere in attesa le cassette postali dei membri del gruppo). È inoltre possibile impostare un blocco sulla cassetta postale associata per un team Microsoft, un Office 365 e un Yammer gruppo. Per ulteriori informazioni sui dati dell'applicazione conservati quando una cassetta postale viene messa in attesa, vedere [Content stored in mailboxes for eDiscovery](what-is-stored-in-exo-mailbox.md).
 
-   1. **SharePoint siti:** impostare l'interruttore su  **Attivato** e quindi fare clic su Scegli siti per specificare SharePoint siti e OneDrive account da mettere in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL del sito SharePoint per un team Microsoft, un Office 365 gruppo o un Yammer gruppo.
+   1. **Siti di SharePoint**: impostare l'interruttore su **Attivato** quindi fare clic su **Scegli siti** per specificare i siti di SharePoint e gli account di OneDrive da mettere in blocco. Digitare l'URL per ogni sito che si desidera mettere in blocco. È inoltre possibile aggiungere l'URL del sito SharePoint per un team Microsoft, un Office 365 gruppo o un Yammer gruppo.
   
-   1. **Exchange pubbliche**: impostare l'interruttore su **Attivato** per mettere in attesa tutte le cartelle pubbliche nell'Exchange Online organizzazione. Non è possibile scegliere cartelle pubbliche specifiche da mettere in attesa. Lasciare disattivata l'opzione di attivazione/disattivazione se non si desidera attivare un'esenzione per le cartelle pubbliche.
+   1. **Cartelle pubbliche di Exchange**: impostare l'interruttore su **attivato** per mettere in stato di blocco tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Non è possibile scegliere cartelle pubbliche specifiche da mettere in blocco. Lasciare l'interruttore disattivato se non si vuole impostare un blocco sulle cartelle pubbliche.
 
    > [!NOTE]
    > È necessario aggiungere almeno un percorso di contenuto all'esenzione. In caso contrario, le statistiche di blocco di eDiscovery mostreranno che nessun elemento è in attesa.
@@ -220,10 +220,10 @@ Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e i blocc
   | Descrizione del limite | Limite |
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione.  <br/> |Nessun limite  <br/> |
-  |Numero massimo di blocchi di eDiscovery per un'organizzazione.  <br/> |10,000  <br/> |
-  |Numero massimo di cassette postali in un singolo blocco eDiscovery. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate Microsoft 365 gruppi, Microsoft Teams e Yammer gruppi.  <br/> |1,000  <br/> |
+  |Numero massimo di blocchi di eDiscovery per un'organizzazione.  <br/> |10.000  <br/> |
+  |Numero massimo di cassette postali in un singolo blocco eDiscovery. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate Microsoft 365 gruppi, Microsoft Teams e Yammer gruppi.  <br/> |1.000  <br/> |
   |Numero massimo di siti in un singolo blocco eDiscovery. Questo limite include il totale combinato di OneDrive for Business, siti SharePoint e siti associati a Microsoft 365 Groups, Microsoft Teams e Yammer Groups.  <br/> |100  <br/> |
-  |Numero massimo di casi visualizzati nella home page di eDiscovery e numero massimo di elementi visualizzati nelle schede Esenzioni, Ricerche ed Esportazione all'interno di un caso. <sup>1</sup> |1,000|
+  |Numero massimo di casi visualizzati nella home page di eDiscovery e numero massimo di elementi visualizzati nelle schede Esenzioni, Ricerche ed Esportazione all'interno di un caso. <sup>1</sup> |1.000|
   |||
 
    > [!NOTE]

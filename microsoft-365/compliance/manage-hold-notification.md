@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilizzare il flusso di lavoro delle comunicazioni in Advanced eDiscovery per tenere traccia dello stato delle notifiche di conservazione a livello legale e, se necessario, aggiornarle e inviarle di nuovo.
+description: Utilizzare il flusso di lavoro delle comunicazioni in Advanced eDiscovery per tenere traccia dello stato delle notifiche di blocco legale e, se necessario, aggiornarle e inviarle di nuovo.
 ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
 ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
@@ -25,62 +25,62 @@ ms.locfileid: "42280114"
 ---
 # <a name="manage-hold-notifications"></a>Gestire le notifiche di blocco
 
-Dopo aver avviato il flusso di lavoro di notifica di blocco legale, è possibile utilizzare il flusso di lavoro delle comunicazioni in Advanced eDiscovery per tenere traccia dello stato delle comunicazioni. La scheda Comunicazioni contiene un elenco di tutte le notifiche nel caso di Advanced eDiscovery. È possibile visualizzare i dettagli, ad esempio il numero di responsabile che sono stati assegnati o che hanno riconosciuto l'avviso.
+Dopo aver avviato il flusso di lavoro di notifica di blocco legale, è possibile utilizzare il flusso di lavoro delle comunicazioni in Advanced eDiscovery per tenere traccia dello stato delle comunicazioni. La scheda Comunicazioni contiene un elenco di tutte le notifiche nell'Advanced eDiscovery caso. È possibile visualizzare dettagli quali il numero di custodi che sono stati assegnati o che hanno riconosciuto l'avviso.
 
 ## <a name="monitor-acknowledgments"></a>Monitorare i riconoscimenti
 
-Dopo aver selezionato una comunicazione **dalla** scheda Comunicazioni, è possibile visualizzare un elenco di responsabile che hanno confermato un avviso di blocco. 
+Dopo aver selezionato una comunicazione dalla **scheda Comunicazioni,** è possibile visualizzare un elenco di custodi che hanno riconosciuto un avviso di blocco. 
 
-1. Nel Centro conformità passare a **eDiscovery > Advanced eDiscovery.**
+1. Nel Centro conformità passare a **eDiscovery > Advanced eDiscovery**.
 
 2. Selezionare un caso e quindi fare clic **sulla scheda** Comunicazioni.
 
-3. Selezionare una comunicazione per visualizzare la pagina del riquadro a **comparsa** di comunicazione del responsabile.
+3. Selezionare una comunicazione per visualizzare la pagina del riquadro **a comparsa** di comunicazione di Custodian.
 
-Nella pagina del riquadro a comparsa delle comunicazioni viene visualizzato un elenco dei responsabile associati alla comunicazione selezionata. In questa pagina vengono inoltre visualizzate informazioni dettagliate sul numero di riconoscimenti ricevuti e sul numero di riconoscimenti in sospeso. La pagina mostra anche quali responsabile hanno inviato una conferma di aver ricevuto la notifica di blocco.
+Nella pagina a comparsa di comunicazione viene visualizzato un elenco di custodi associati alla comunicazione selezionata. In questa pagina vengono inoltre visualizzate informazioni dettagliate sul numero di riconoscimenti ricevuti e su quanti sono in sospeso. La pagina mostra anche quali custodi hanno inviato un riconoscimento di aver ricevuto la notifica di blocco.
 
 ## <a name="re-send-a-hold-notice"></a>Inviare nuovamente un avviso di blocco
 
-Occasionalmente, i responsabile perdono la traccia dei messaggi di posta elettronica nel loro lavoro quotidiano. Oppure, per un caso di lunga durata per controversia legale, un responsabile può contattare l'utente o altri utenti e richiedere di inviare nuovamente un avviso. Man mano che si gestisce il flusso di lavoro delle comunicazioni per gli avvisi di blocco legale, potrebbe essere necessario inviare nuovamente un avviso per riportarlo nella "parte superiore della cassetta postale di un utente".
+Occasionalmente, i custodi perdono traccia dei messaggi di posta elettronica nel loro lavoro quotidiano. In caso di controversia legale di lunga durata, un responsabile può contattare l'utente o altri utenti e richiedere di inviare di nuovo un avviso. Man mano che si gestisce il flusso di lavoro delle comunicazioni per gli avvisi di blocco legale, potrebbe essere necessario inviare di nuovo un avviso per riportarlo nella "parte superiore della cassetta postale di un utente".
 
-Per inviare nuovamente un avviso di blocco a un responsabile:
+Per inviare di nuovo un avviso di blocco a un responsabile:
 
-1. In Advanced eDiscovery selezionare un caso e quindi fare clic **sulla scheda** Comunicazioni.
+1. In Advanced eDiscovery selezionare un caso e quindi fare clic sulla **scheda** Comunicazioni.
 
-2. Selezionare una comunicazione per visualizzare la pagina del riquadro a **comparsa** di comunicazione del responsabile.
+2. Selezionare una comunicazione per visualizzare la pagina del riquadro **a comparsa** di comunicazione di Custodian.
 
-3. Fare **clic su > nuovo avviso di blocco.**
+3. Fare **clic su Altro > nuovo avviso di blocco.**
 
-4. Nella pagina **a comparsa Invia** di nuovo l'avviso di blocco, selezionare i responsabile a cui inviare di nuovo l'avviso e digitare un motivo facoltativo.
+4. Nella pagina **riquadro a** comparsa Invia nuovamente avviso di blocco, selezionare i custodi a cui inviare di nuovo l'avviso e digitare un motivo facoltativo.
 
-5. Fare **clic su Invia di** nuovo per inviare l'avviso ai responsabile selezionati.
+5. Fare **clic su Invia di** nuovo per inviare l'avviso ai custodi selezionati.
 
-Se un responsabile non ha confermato la notifica di blocco, il flusso di lavoro promemoria e escalation viene riavviato. Se un responsabile ha riconosciuto l'avviso di blocco, il responsabile riceverà una copia dell'avviso di blocco originale.
+Se un responsabile non ha riconosciuto la notifica di blocco, il flusso di lavoro promemoria e escalation viene riavviato. Se un responsabile ha riconosciuto l'avviso di blocco, il responsabile riceverà una copia dell'avviso di blocco originale.
 
 > [!NOTE]
-> È possibile inviare di nuovo solo una notifica di blocco a un responsabile assegnato alla comunicazione. 
+> È possibile inviare di nuovo una notifica di blocco legale solo ai custodi assegnati alla comunicazione. 
 
 ## <a name="update-preservation-requirements"></a>Aggiornare i requisiti di conservazione
   
-Con l'avanzamento del caso, ai depositati potrebbe essere richiesto di conservare dati aggiuntivi o inferiori a quelli precedentemente richiesti. In termini di eDiscovery, è necessario emettere nuovamente l'avviso di blocco con il contenuto aggiornato.
+Con l'avanzamento del caso, i custodi potrebbero essere tenuti a conservare dati aggiuntivi o meno di quelli precedentemente richiesti. In termini di eDiscovery, è necessario riemettere l'avviso di blocco con il contenuto aggiornato.
 
 Per aggiornare il contenuto dell'avviso di blocco iniziale:
 
-1. In Advanced eDiscovery selezionare un caso e quindi fare clic **sulla scheda** Comunicazioni.
+1. In Advanced eDiscovery selezionare un caso e quindi fare clic sulla **scheda** Comunicazioni.
 
-2. Selezionare l'avviso di blocco che si desidera aggiornare e fare clic su **Modifica** nella pagina del riquadro a comparsa di **comunicazione** del responsabile.
+2. Selezionare l'avviso di blocco che si desidera aggiornare e fare clic **su Modifica** **nella** pagina del riquadro a comparsa Comunicazione depositario.
 
-3. Nella procedura **guidata Modifica** comunicazione fare clic **su** Definisci contenuto portale nel riquadro sinistro della procedura guidata e aggiornare il contenuto dell'avviso.
+3. Nella procedura **guidata Modifica** comunicazione fare clic **su Definisci** contenuto portale nel riquadro sinistro della procedura guidata e aggiornare il contenuto dell'avviso.
 
 4. Fare clic su **Salva**.
 
-L'avviso di riemissione verrà inviato a tutti i responsabile assegnati alla notifica di blocco a livello legale. Inoltre, se l'avviso promemoria o escalation è abilitato, i flussi di lavoro per questi tipi di avvisi verranno riavviati.
+L'avviso di riemissione verrà inviato a tutti i custodi assegnati alla notifica di blocco legale. Inoltre, se l'avviso Promemoria o Escalation è abilitato, i flussi di lavoro per questi tipi di avvisi verranno riavviati.
 
-## <a name="update-legal-hold-notifications-and-settings"></a>Aggiornare le notifiche e le impostazioni di conservazione a tempo in sospeso
+## <a name="update-legal-hold-notifications-and-settings"></a>Aggiornare le impostazioni e le notifiche di blocco legale
 
-Quando si aggiornano il contenuto o le impostazioni dell'avviso rilascio, rilascio, emissione, promemoria o escalation, queste modifiche verranno applicate a tutte le comunicazioni future generate dal flusso di lavoro.
+Quando si aggiornano il contenuto o le impostazioni dell'avviso Rilascio, Rilascio, Riemissione, Promemoria o Escalation, queste modifiche verranno applicate a tutte le comunicazioni future generate dal flusso di lavoro.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - [Aggiungere responsabili a un caso](add-custodians-to-case.md)
 

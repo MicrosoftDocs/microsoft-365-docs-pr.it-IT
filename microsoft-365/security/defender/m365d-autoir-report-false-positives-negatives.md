@@ -1,6 +1,6 @@
 ---
 title: Risolvere i falsi positivi o i falsi negativi in Microsoft 365 Defender
-description: È stato rilevato qualcosa di sbagliato o mancato da AIR in Microsoft 365 Defender? Informazioni su come inviare falsi positivi o falsi negativi a Microsoft per l'analisi.
+description: Qualcosa non è stato rilevato o rilevato in modo errato da AIR in Microsoft 365 Defender? Informazioni su come inviare falsi positivi o falsi negativi a Microsoft per l'analisi.
 keywords: automatizzato, indagine, avviso, correzione, falso positivo, falso negativo
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "52269579"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Talvolta possono verificarsi falsi positivi o negativi con qualsiasi soluzione di protezione dalle minacce. Se [le funzionalità di analisi e risposta](m365d-autoir.md) automatizzate in Microsoft 365 Defender hanno perso o rilevato in modo errato qualcosa, il team delle operazioni di sicurezza può eseguire le operazioni seguenti:
+Talvolta possono verificarsi falsi positivi o negativi con qualsiasi soluzione di protezione dalle minacce. Se [le funzionalità di analisi e risposta](m365d-autoir.md) automatizzate in Microsoft 365 Defender hanno perso o rilevato qualcosa in modo errato, il team delle operazioni di sicurezza può eseguire le operazioni seguenti:
 
 - [Segnalare un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Modificare gli avvisi](#adjust-an-alert-to-prevent-false-positives-from-recurring) (se necessario)
@@ -47,14 +47,14 @@ Nelle sezioni seguenti viene descritto come eseguire queste attività.
 
 |Elemento perso o rilevato in modo errato |Servizio  |Soluzione  |
 |---------|---------|---------|
-|- Messaggio di posta elettronica <br/>- Allegato di posta elettronica <br/>- URL in un messaggio di posta elettronica<br/>- URL in un file di Office      |[Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Inviare posta indesiderata sospetta, phish, URL e file a Microsoft per l'analisi](../office-365-security/admin-submission.md)         |
+|- Messaggio di posta elettronica <br/>- Allegato di posta elettronica <br/>- URL in un messaggio di posta elettronica<br/>- URL in un Office file      |[Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Inviare posta indesiderata sospetta, phish, URL e file a Microsoft per l'analisi](../office-365-security/admin-submission.md)         |
 |File o app in un dispositivo    |[Microsoft Defender per endpoint](/windows/security/threat-protection)         |[Inviare un file a Microsoft per l'analisi del malware](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Modificare un avviso per evitare che i falsi positivi si ricorrenti
 
 |Scenario |Servizio |Soluzione |
 |--------|--------|--------|
-|- Un avviso viene attivato da un uso legittimo <br/>- Un avviso non è accurato    |[Microsoft Cloud App Security](/cloud-app-security)<br/> oppure <br/>[Azure Threat Protection](/azure/security/fundamentals/threat-detection)         |[Gestire gli avvisi nel portale di Cloud App Security](/cloud-app-security/managing-alerts)         |
+|- Un avviso viene attivato da un uso legittimo <br/>- Un avviso non è accurato    |[Microsoft Cloud App Security](/cloud-app-security)<br/> oppure <br/>[Azure Threat Protection](/azure/security/fundamentals/threat-detection)         |[Gestire gli avvisi nel Cloud App Security portale](/cloud-app-security/managing-alerts)         |
 |Un file, un indirizzo IP, un URL o un dominio viene considerato come malware in un dispositivo, anche se è sicuro|[Microsoft Defender per endpoint](/windows/security/threat-protection) |[Creare un indicatore personalizzato con un'azione "Consenti"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annullare un'azione di correzione eseguita in un dispositivo

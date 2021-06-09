@@ -1,6 +1,6 @@
 ---
-title: Definire il modo in cui i dispositivi mobili vengono aggiornati da Microsoft Defender Antivirus
-description: Gestire la modalità di aggiornamento dei dispositivi mobili, ad esempio i portatili, con gli aggiornamenti di protezione di Microsoft Defender Antivirus.
+title: Definire la modalità di aggiornamento dei dispositivi mobili Antivirus Microsoft Defender
+description: Gestire la modalità di aggiornamento dei dispositivi mobili, ad esempio i portatili, Antivirus Microsoft Defender aggiornamenti della protezione.
 keywords: aggiornamenti, protezione, pianificazione degli aggiornamenti, batteria, dispositivo mobile, portatile, blocco appunti, consenso esplicito, microsoft update, wsus, override
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -45,7 +45,7 @@ Gli articoli seguenti possono essere utili anche in queste situazioni:
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Acconsentire esplicitamente a Microsoft Update nei computer mobili senza una connessione WSUS
 
-Puoi usare Microsoft Update per mantenere aggiornata l'intelligence per la sicurezza nei dispositivi mobili che eseguono Microsoft Defender Antivirus quando non sono connessi alla rete aziendale o non hanno altrimenti una connessione WSUS. 
+È possibile utilizzare Microsoft Update per mantenere aggiornata l'intelligence per la sicurezza nei dispositivi mobili che eseguono Antivirus Microsoft Defender quando non sono connessi alla rete aziendale o non dispongono altrimenti di una connessione WSUS. 
 
 Ciò significa che gli aggiornamenti della protezione possono essere recapitati ai dispositivi (tramite Microsoft Update) anche se WSUS è stato impostato per sostituire Microsoft Update.
 
@@ -53,7 +53,7 @@ Puoi acconsentire esplicitamente a Microsoft Update nel dispositivo mobile in un
 
 - Modificare l'impostazione con Criteri di gruppo.
 - Utilizzare un VBScript per creare uno script, quindi eseguirlo in ogni computer della rete.
-- Acconsentire manualmente a tutti i computer della rete **tramite** il menu Impostazioni.
+- Acconsentire manualmente a tutti i computer della rete **tramite Impostazioni** menu.
 
 ### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>Usare Criteri di gruppo per acconsentire esplicitamente a Microsoft Update
 
@@ -63,7 +63,7 @@ Puoi acconsentire esplicitamente a Microsoft Update nel dispositivo mobile in un
 
 3. Selezionare **Criteri** e **modelli amministrativi.**
 
-4. Espandere l'albero fino **ai componenti di Windows** Microsoft Defender  >  **Antivirus**  >  **Signature Updates**.
+4. Espandere l'albero per **Windows componenti**  >  **Antivirus Microsoft Defender**  >  **aggiornamenti delle firme**.
 
 5. Impostare **Consenti aggiornamenti di intelligence per la sicurezza da Microsoft Update** su **Abilitato** e quindi selezionare **OK.**
 
@@ -76,15 +76,15 @@ Puoi acconsentire esplicitamente a Microsoft Update nel dispositivo mobile in un
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>Acconsentire manualmente a Microsoft Update
 
-1. Apri **Windows Update** in Update & **di** sicurezza nel computer in cui vuoi acconsentire esplicitamente.
+1. Aprire **Windows Update** in Update & di **sicurezza** nel computer in cui si desidera acconsentire esplicitamente.
 
 2. Selezionare **Opzioni** avanzate.
 
-3. Seleziona la casella di controllo **Dammi aggiornamenti per altri prodotti Microsoft quando aggiorno Windows.**
+3. Seleziona la casella di controllo Dammi aggiornamenti per altri prodotti Microsoft quando **aggiorno Windows**.
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Impedisci aggiornamenti di Intelligence per la sicurezza durante l'esecuzione con alimentazione a batteria
 
-Puoi configurare Microsoft Defender Antivirus per scaricare gli aggiornamenti della protezione solo quando il PC è connesso a una fonte di alimentazione cablata. 
+Puoi configurare il Antivirus Microsoft Defender solo per scaricare gli aggiornamenti di protezione quando il PC è connesso a una fonte di alimentazione cablata. 
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Utilizzare Criteri di gruppo per impedire gli aggiornamenti delle funzionalità di intelligence per la sicurezza nell'alimentazione a batteria
 
@@ -94,11 +94,11 @@ Puoi configurare Microsoft Defender Antivirus per scaricare gli aggiornamenti de
 
 3.  Selezionare **Criteri** e **modelli amministrativi.**
 
-4.  Espandere l'albero fino **ai componenti di Windows** Microsoft Defender Antivirus Signature Updates e quindi impostare Allow security intelligence updates when running on battery  >    >   **power** su **Disabled**. Infine scegliere **OK**. 
+4.  Espandere l'albero per **Windows componenti** Antivirus Microsoft Defender aggiornamenti delle firme e quindi impostare Consenti aggiornamenti di intelligence per la sicurezza quando è in esecuzione l'alimentazione  >    >  a **batteria** su **Disabilitato.** Infine scegliere **OK**. 
 
 Questa azione impedisce il download degli aggiornamenti di protezione quando il PC è alimentato a batteria.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Aggiornare e gestire Microsoft Defender Antivirus in Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Aggiornare e gestire Antivirus Microsoft Defender in Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)
