@@ -21,9 +21,9 @@ ms.locfileid: "51163730"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurare un connettore per archiviare i dati delle riunioni zoom
 
-Utilizzare un connettore Veritas nel Centro conformità Microsoft 365 per importare e archiviare i dati dalle riunioni zoom alle cassette postali degli utenti nell'organizzazione di Microsoft 365. Veritas fornisce un [connettore riunioni zoom](https://globanet.com/zoom/) configurato per acquisire elementi dall'origine dati di terze parti (a intervalli regolari) e importare tali elementi in Microsoft 365. Il connettore converte il contenuto delle riunioni (incluse chat, file registrati e metadati) dall'account Zoom Riunioni in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
+Utilizzare un connettore Veritas nel centro Microsoft 365 conformità per importare e archiviare i dati dalle riunioni zoom alle cassette postali degli utenti nell'Microsoft 365 organizzativa. Veritas fornisce un [connettore riunioni zoom](https://globanet.com/zoom/) configurato per acquisire elementi dall'origine dati di terze parti (a intervalli regolari) e importare tali elementi in Microsoft 365. Il connettore converte il contenuto delle riunioni (incluse chat, file registrati e metadati) dall'account Zoom riunioni in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 
-Dopo aver archiviato i dati delle riunioni zoom nelle cassette postali degli utenti, è possibile applicare le funzionalità di conformità di Microsoft 365, ad esempio conservazione per controversia legale, eDiscovery, criteri di conservazione ed etichette di conservazione e conformità delle comunicazioni. L'utilizzo di un connettore riunioni zoom per importare e archiviare i dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
+Dopo aver archiviato i dati delle riunioni zoom nelle cassette postali degli utenti, è possibile applicare funzionalità di conformità Microsoft 365 quali conservazione per controversia legale, eDiscovery, criteri di conservazione ed etichette di conservazione e conformità delle comunicazioni. L'utilizzo di un connettore riunioni zoom per importare e archiviare i dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
 ## <a name="overview-of-archiving-zoom-meetings-data"></a>Panoramica dell'archiviazione dei dati delle riunioni zoom
 
@@ -35,7 +35,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 2. Una volta ogni 24 ore, gli elementi delle riunioni di Zoom Riunioni vengono copiati nel sito Veritas Merge1. Il connettore converte anche il contenuto delle riunioni in un formato di messaggio di posta elettronica.
 
-3. Il connettore Riunioni zoom creato nel Centro conformità Microsoft 365, si connette ogni giorno a Veritas Merge1 e trasferisce i messaggi di riunione in una posizione sicura di Archiviazione di Azure nel cloud Microsoft.
+3. Il connettore Riunioni zoom creato nel Centro conformità Microsoft 365, si connette ogni giorno a Veritas Merge1 e trasferisce i messaggi di riunione in una posizione Archiviazione di Azure sicura nel cloud Microsoft.
 
 4. Il connettore importa gli elementi delle riunioni convertite nelle cassette postali di utenti specifici utilizzando il valore della proprietà *Email* e il mapping automatico degli utenti, come descritto nel passaggio 3. Nelle cassette postali degli utenti viene creata una nuova sottocartella nella cartella Posta in arrivo denominata **Zoom Riunioni** e gli elementi delle riunioni vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della *proprietà Email.* Ogni elemento della riunione contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante alla riunione.
 
@@ -43,7 +43,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 - Creare un account Veritas Merge1 per i connettori Microsoft. Per creare questo account, contattare il [supporto tecnico Veritas.](https://globanet.com/ms-connectors-contact) Si accederà a questo account quando si crea il connettore nel passaggio 1.
 
-- Ottenere il nome utente e la password per l'account Zoom Business o Zoom Enterprise dell'organizzazione. È necessario accedere a questo account nel passaggio 2 quando si configura il connettore zoom riunioni.
+- Ottenere il nome utente e la password per l'account Zoom Business o Zoom Enterprise'organizzazione. È necessario accedere a questo account nel passaggio 2 quando si configura il connettore zoom riunioni.
 
 - Creare le applicazioni seguenti in [Zoom Marketplace:](https://marketplace.zoom.us)
 
@@ -55,11 +55,11 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
   Per istruzioni dettagliate su come creare le applicazioni OAuth e JWT, vedere [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
-- L'utente che crea il connettore zoom riunioni nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo Esportazione importazione cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina **Connettori dati** nel Centro conformità Microsoft 365. Per impostazione predefinita, questo ruolo non viene assegnato a un gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione importazione cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In caso contrario, è possibile creare un gruppo di ruoli, assegnare il ruolo Importazione/Esportazione cassette postali e quindi aggiungere gli utenti appropriati come membri. Per ulteriori informazioni, vedere le sezioni [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) o Modify role [groups](/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "Manage role groups in Exchange Online".
+- L'utente che crea il connettore zoom riunioni nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo Esportazione importazione cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina **Connettori** dati nel Centro Microsoft 365 conformità. Per impostazione predefinita, questo ruolo non viene assegnato a un gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione importazione cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In caso contrario, è possibile creare un gruppo di ruoli, assegnare il ruolo Importazione/Esportazione cassette postali e quindi aggiungere gli utenti appropriati come membri. Per ulteriori informazioni, vedere le sezioni [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) o Modify role [groups](/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "Manage role groups in Exchange Online".
 
 ## <a name="step-1-set-up-the-zoom-meetings-connector"></a>Passaggio 1: Configurare il connettore zoom riunioni
 
-Il primo passaggio consiste nell'accedere ai **connettori** dati nel Centro conformità Microsoft 365 e creare un connettore riunioni zoom.
+Il primo passaggio consiste  nell'accedere ai connettori di dati nel centro Microsoft 365 conformità e creare un connettore riunioni zoom.
 
 1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su **Connettori dati** Zoom  >  **riunioni**.
 
@@ -75,19 +75,19 @@ Il primo passaggio consiste nell'accedere ai **connettori** dati nel Centro conf
 
 Il secondo passaggio consiste nel configurare il connettore Zoom riunioni nel sito Merge1. Per ulteriori informazioni su come configurare il connettore zoom riunioni nel sito Veritas Merge1, vedere [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
-Dopo aver fatto **clic su Salva & fine,** viene visualizzata la pagina **Mapping** utenti nella procedura guidata del connettore nel Centro conformità Microsoft 365.
+Dopo aver fatto **clic su Salva & fine,** viene visualizzata la pagina **Mapping** utenti nella procedura guidata del connettore nel Centro Microsoft 365 conformità.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Passaggio 3: mappare gli utenti e completare la configurazione del connettore
 
-1. Nella pagina **Mapping utenti esterni a utenti di Microsoft 365** abilitare il mapping automatico degli utenti.
+1. Nella pagina **Mapping utenti esterni a Microsoft 365** utenti, abilitare il mapping automatico degli utenti.
 
-   Gli elementi zoom riunioni includono una proprietà denominata *Posta* elettronica che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente
+   Gli elementi zoom riunioni includono una proprietà denominata *Posta* elettronica che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un Microsoft 365 utente, gli elementi vengono importati nella cassetta postale dell'utente
 
 2. Fare **clic** su Avanti, rivedere le impostazioni e passare alla pagina **Connettori** dati per visualizzare l'avanzamento del processo di importazione per il nuovo connettore.
 
 ## <a name="step-4-monitor-the-zoom-meetings-connector"></a>Passaggio 4: Monitorare il connettore zoom riunioni
 
-Dopo aver creato il connettore Riunioni zoom, è possibile visualizzare lo stato del connettore nel Centro conformità Microsoft 365.
+Dopo aver creato il connettore Riunioni zoom, è possibile visualizzare lo stato del connettore nel Centro Microsoft 365 conformità.
 
 1. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
 

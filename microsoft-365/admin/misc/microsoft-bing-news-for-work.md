@@ -25,15 +25,15 @@ Rimanere aggiornati su ciò che accade nel proprio settore. Ogni mattina, si ott
 
 ## <a name="what-is-it"></a>Di cosa si tratta?
 
-Sfruttando la potenza del motore di ricerca Bing di Microsoft, Industry Updates è una raccolta delle notizie di lavoro più importanti provenienti dal Web, selezionate solo per te.
+Sfruttando la potenza del motore di ricerca microsoft Bing, Industry Updates è una raccolta delle notizie di lavoro più importanti provenienti da tutto il Web, selezionate solo per te.
 
-## <a name="how-does-it-work"></a>Come funziona
+## <a name="how-does-it-work"></a>Come funziona?
 
 Personalizza la tua esperienza seguendo argomenti e interessi. Ottieni notizie sulla tua azienda, tieni traccia delle tendenze del settore ed essere i primi a conoscere i principali lanci di prodotti. Inoltre, ottenere informazioni e competenze necessarie per far crescere la propria carriera.
 
 ## <a name="how-do-i-customize-my-industry-updates-email"></a>Come si personalizza la posta elettronica degli aggiornamenti del settore?
 
-Per personalizzare la tua esperienza, visita la pagina delle impostazioni per seguire gli argomenti e gli interessi importanti per te. Accedi alla pagina delle impostazioni personali con i segnalibri Personalizza il contenuto nella newsletter degli aggiornamenti di [Bing, Edge](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) e del settore o fai clic sul pulsante delle impostazioni nel messaggio di posta elettronica Aggiornamenti del settore.
+Per personalizzare la tua esperienza, visita la pagina delle impostazioni per seguire gli argomenti e gli interessi importanti per te. Accedi alla pagina delle impostazioni personali con i segnalibri Personalizza il contenuto nella newsletter degli aggiornamenti di [Bing, Edge](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) e Del settore o fai clic sul pulsante impostazioni nella tua e-mail degli aggiornamenti del settore.
 
 [Iscriviti](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form=BAWLOG&frb=1) e ricevi la posta elettronica degli aggiornamenti del settore recapitata nella posta in arrivo oggi stesso.
 

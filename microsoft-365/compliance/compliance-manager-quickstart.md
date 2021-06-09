@@ -31,7 +31,7 @@ Sia che tu sia in arrivo a Compliance Manager per la prima volta o che tu sia pr
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>Prima visita: informazioni su Compliance Manager
 
-Compliance Manager si trova nel Centro conformità Microsoft 365 all'indirizzo https://compliance.microsoft.com . L'amministratore globale dell'organizzazione dovrà configurare le autorizzazioni utente e [assegnare i ruoli](compliance-manager-setup.md#set-user-permissions-and-assign-roles) prima di iniziare a usare Compliance Manager.
+Compliance Manager si trova nel Centro Microsoft 365 conformità all'indirizzo https://compliance.microsoft.com . L'amministratore globale dell'organizzazione dovrà configurare le autorizzazioni utente e [assegnare i ruoli](compliance-manager-setup.md#set-user-permissions-and-assign-roles) prima di iniziare a usare Compliance Manager.
 
 La prima volta che visiti Compliance Manager, vedrai un punteggio di conformità per la tua organizzazione. Compliance Manager sta già valutando l'ambiente Microsoft 365 corrente rispetto alla linea di base per la protezione dei dati. Il modo migliore per iniziare a familiarizzare con Compliance Manager è comprendere cosa mostra, i suoi elementi chiave e come personalizzare il dashboard.
 

@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52809261"
 ---
-# <a name="device-control-printer-protection"></a>Device Control Printer Protection 
+# <a name="device-control-printer-protection"></a>Protezione stampante controllo dispositivo 
 
 Microsoft Defender for Endpoint Device Control Printer Protection impedisce agli utenti di stampare tramite stampanti non aziendali o una stampante USB non approvata.
 

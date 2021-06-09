@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
-description: Informazioni su come amministrare le impostazioni multi-geografiche di Exchange Online nell'ambiente Microsoft 365 con PowerShell.
+description: Informazioni su come amministrare Exchange Online multi-geo nell'ambiente Microsoft 365 con PowerShell.
 ms.openlocfilehash: c8f06318313c4192fc2b3a289727933c5a54f3ad
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.locfileid: "50905585"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico
 
-Exchange Online PowerShell è necessario per visualizzare e configurare le proprietà geografiche nell'ambiente Microsoft 365. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell è necessario per visualizzare e configurare più proprietà geografiche nell'Microsoft 365 locale. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 È necessario il [modulo di PowerShell di Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o versione successiva in V1. x per visualizzare la proprietà **PreferredDataLocation** sugli oggetti utente. Gli oggetti utente sincronizzati con AAD Connect in AAD non possono contenere i valori **PreferredDataLocation** modificati direttamente tramite ADD PowerShell. Gli oggetti utente solo cloud possono essere modificati tramite AAD PowerShell. Per connettersi a PowerShell di Azure Active Directory, vedere [Connettersi a PowerShell](connect-to-microsoft-365-powershell.md).
 
-Negli ambienti multi-geografici di Exchange Online, non è necessario eseguire alcuna procedura manuale per aggiungere geo al tenant. Dopo aver ricevuto il post del Centro messaggi che indica che multi-geo è pronto per Exchange Online, tutte le geo disponibili saranno pronte e configurate per l'uso.
+In Exchange Online multi-geo, non è necessario eseguire alcuna procedura manuale per aggiungere geo al tenant. Dopo aver ricevuto il post del Centro messaggi che indica che multi-geo è pronto per Exchange Online, tutte le geo disponibili saranno pronte e configurate per l'uso.
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>È possibile connettersi direttamente a una posizione geografica con PowerShell di Exchange Online.
 
@@ -33,13 +33,13 @@ In genere, PowerShell di Exchange Online si connetterà alla posizione geografic
 
 I requisiti per l'installazione e l'uso del modulo EXO V2 sono descritti in [Installazione e gestione del modulo V2 EXO](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-Per connettere PowerShell di Exchange Online a una posizione geografica specifica, il *parametro ConnectionUri* è diverso rispetto alle normali istruzioni di connessione. Il resto dei comandi e i valori sono uguali.
+Per connettersi Exchange Online PowerShell a una posizione geografica specifica, il *parametro ConnectionUri* è diverso rispetto alle normali istruzioni di connessione. Il resto dei comandi e i valori sono uguali.
 
-In particolare, è necessario aggiungere il `?email=<emailaddress>` valore alla fine del valore _ConnectionUri._ `<emailaddress>` è l'indirizzo di posta **elettronica di qualsiasi** cassetta postale nella posizione geografica di destinazione. Le autorizzazioni per la cassetta postale o la relazione con le credenziali non sono un fattore. l'indirizzo di posta elettronica indica semplicemente a PowerShell di Exchange Online dove connettersi.
+In particolare, è necessario aggiungere il `?email=<emailaddress>` valore alla fine del valore _ConnectionUri._ `<emailaddress>` è l'indirizzo di posta **elettronica di qualsiasi** cassetta postale nella posizione geografica di destinazione. Le autorizzazioni per la cassetta postale o la relazione con le credenziali non sono un fattore. l'indirizzo di posta elettronica indica Exchange Online PowerShell dove connettersi.
 
-I clienti di Microsoft 365 o Microsoft 365 GCC in genere non devono utilizzare il parametro _ConnectionUri_ per connettersi a PowerShell di Exchange Online. Tuttavia, per connettersi a una posizione geografica specifica, è necessario utilizzare il parametro _ConnectionUri_ in modo da poter `?email=<emailaddress>` utilizzare il valore.
+Microsoft 365 o Microsoft 365 GCC clienti in genere non devono utilizzare il parametro _ConnectionUri_ per connettersi a Exchange Online PowerShell. Tuttavia, per connettersi a una posizione geografica specifica, è necessario utilizzare il parametro _ConnectionUri_ in modo da poter `?email=<emailaddress>` utilizzare il valore.
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Connettersi a una posizione geografica in PowerShell di Exchange Online
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Connessione a una posizione geografica in Exchange Online PowerShell
 
 Le istruzioni di connessione seguenti funzionano per gli account che sono o non sono configurati per l'autenticazione a più fattori (MFA).
 
@@ -150,25 +150,25 @@ Non è possibile spostare le cassette postali inattive conservate per motivi di 
 
 1. Ripristinare la cassetta postale inattiva. Per istruzioni, vedere [Recover an inactive mailbox](../compliance/recover-an-inactive-mailbox.md).
 
-2. Impedire all'Assistente cartelle gestite di elaborare la cassetta postale recuperata sostituendo con il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente \<MailboxIdentity\> in [PowerShell di Exchange Online:](/powershell/exchange/connect-to-exchange-online-powershell)
+2. Impedire all'Assistente cartelle gestite di elaborare la cassetta postale recuperata sostituendo con il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente \<MailboxIdentity\> [in Exchange Online PowerShell:](/powershell/exchange/connect-to-exchange-online-powershell)
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. Assegnare **una licenza di Exchange Online Piano 2** alla cassetta postale recuperata. Questo passaggio è necessario per impostare nuovamente il blocco per controversia legale per la cassetta postale. Per istruzioni, vedere [Assegnare licenze agli utenti.](../admin/manage/assign-licenses-to-users.md)
+3. Assegnare **una Exchange Online piano 2** alla cassetta postale recuperata. Questo passaggio è necessario per impostare nuovamente il blocco per controversia legale per la cassetta postale. Per istruzioni, vedere [Assegnare licenze agli utenti.](../admin/manage/assign-licenses-to-users.md)
 
 4. Configurare il **valore PreferredDataLocation** nella cassetta postale come descritto nella sezione precedente.
 
 5. Dopo aver confermato che la cassetta postale è stata spostata nella nuova posizione geografica, ripostare la cassetta postale recuperata in Conservazione per controversia legale. Per istruzioni, vedere [Place a mailbox on Litigation Hold](../compliance/create-a-litigation-hold.md#place-a-mailbox-on-litigation-hold).
 
-6. Dopo aver verificato che sia in corso il blocco per controversia legale, consentire all'Assistente cartelle gestite di elaborare di nuovo la cassetta postale sostituendo con il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente in PowerShell di \<MailboxIdentity\> [Exchange Online:](/powershell/exchange/connect-to-exchange-online-powershell)
+6. Dopo aver verificato che sia in corso il blocco per controversia legale, consentire all'Assistente cartelle gestite di elaborare di nuovo la cassetta postale sostituendo con il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente \<MailboxIdentity\> [in Exchange Online PowerShell:](/powershell/exchange/connect-to-exchange-online-powershell)
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
     ```
 
-7. Rendere di nuovo inattiva la cassetta postale rimuovendo l'account utente associato alla cassetta postale. Per istruzioni, vedere [Eliminare un utente dall'organizzazione.](../admin/add-users/delete-a-user.md) Questo passaggio rilascia anche la licenza di Exchange Online Piano 2 per altri utilizzi.
+7. Rendere di nuovo inattiva la cassetta postale rimuovendo l'account utente associato alla cassetta postale. Per istruzioni, vedere [Eliminare un utente dall'organizzazione.](../admin/add-users/delete-a-user.md) Questo passaggio rilascia anche la licenza Exchange Online Piano 2 per altri usi.
 
 **Nota:** quando si sposta una cassetta postale inattiva in una posizione geografica diversa, è possibile che si influisca sui risultati della ricerca di contenuto o sulla possibilità di eseguire ricerche nella cassetta postale dalla posizione geografica precedente. Per ulteriori informazioni, vedere [Ricerca ed esportazione di contenuto in ambienti multi-geografici.](../compliance/set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)
 
@@ -176,7 +176,7 @@ Non è possibile spostare le cassette postali inattive conservate per motivi di 
 
 Per creare una nuova cassetta postale in una posizione geografica specifica, è necessario procedere come segue:
 
-- Configurare il **valore PreferredDataLocation** come descritto nella sezione precedente Spostare una  cassetta postale esistente solo [cloud](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) in una posizione geografica specifica prima di creare la cassetta postale in Exchange Online. Ad esempio, configurare il **valore PreferredDataLocation** per un utente prima di assegnare una licenza.
+- Configurare il **valore PreferredDataLocation** come [](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) descritto nella precedente sezione Spostare una  cassetta postale esistente solo cloud in una posizione geografica specifica prima di creare la cassetta postale in Exchange Online. Ad esempio, configurare il **valore PreferredDataLocation** per un utente prima di assegnare una licenza.
 
 - Assegnare una licenza contemporaneamente all’impostazione del valore **PreferredDataLocation**.
 

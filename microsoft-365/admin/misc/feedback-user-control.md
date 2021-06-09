@@ -31,7 +31,7 @@ ms.locfileid: "51650066"
 Il feedback degli utenti è un segnale critico per Microsoft per comprendere le esperienze degli utenti con i prodotti Microsoft. Microsoft valoria le opinioni degli utenti. Il feedback degli utenti va direttamente ai nostri tecnici e ci aiuta a modellare il futuro dei prodotti e dei servizi Microsoft per tutti gli utenti.  
 In questo argomento troverai informazioni sui tipi di feedback esistenti, su come vengono raccolti, su cosa raccogliamo e su come gestiamo i dati.
 
-Gli amministratori possono gestire il segnale di feedback per l'organizzazione. Stiamo introducendo un nuovo set di impostazioni dei criteri per aiutarti a gestire la raccolta dei commenti e suggerimenti degli utenti all'interno delle applicazioni di Microsoft 365 per la tua organizzazione. Queste impostazioni dei criteri consentono di scegliere come target i gruppi di Azure Active Directory e configurare l'esperienza di raccolta dei commenti e suggerimenti per l'organizzazione. Il feedback degli utenti va direttamente ai nostri tecnici e ci aiuta a modellare il futuro dei prodotti e dei servizi Microsoft per tutti gli utenti. Per ulteriori informazioni su queste impostazioni dei criteri, sulle applicazioni a cui si applicano e sulle procedure consigliate, vedere [Manage Microsoft feedback for your organization.](../manage/manage-feedback-ms-org.md)
+Gli amministratori possono gestire il segnale di feedback per l'organizzazione. Stiamo introducendo un nuovo set di impostazioni dei criteri per aiutarti a gestire la raccolta di feedback degli utenti all'interno delle Microsoft 365 per l'organizzazione. Queste impostazioni dei criteri consentono di scegliere come destinazione Azure Active Directory gruppi e configurare l'esperienza di raccolta dei commenti e suggerimenti per l'organizzazione. Il feedback degli utenti va direttamente ai nostri tecnici e ci aiuta a modellare il futuro dei prodotti e dei servizi Microsoft per tutti gli utenti. Per ulteriori informazioni su queste impostazioni dei criteri, sulle applicazioni a cui si applicano e sulle procedure consigliate, vedere [Manage Microsoft feedback for your organization.](../manage/manage-feedback-ms-org.md)
 
 ## <a name="feedback-types"></a>Tipi di feedback
 
@@ -42,12 +42,12 @@ Se gli utenti usano una delle app di Microsoft e desiderano fornire commenti e s
 #### <a name="in-product-feedback-examples"></a>Esempi di feedback nel prodotto
 
 :::image type="content" source="../../media/In-appfeedbackbackstage.png" alt-text="Screenshot: Esempio di feedback nel prodotto":::
-:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="Screenshot: Windows in-product feedback example ":::
-:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="Screenshot: Teams in-product feedback example":::
+:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="Screenshot: Windows di feedback nel prodotto":::
+:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="Screenshot: Teams di feedback nel prodotto":::
 
 ### <a name="in-product-surveys"></a>Sondaggi all'in-product
 
-Gli utenti possono anche valutare la propria esperienza e fornire informazioni aggiuntive sulla propria esperienza tramite richieste di sondaggio avviate dal sistema. Queste istruzioni si verificano nei prodotti Microsoft 365 di tanto in tanto. Quando richiesto, gli utenti possono scegliere se inviare commenti e suggerimenti. I prompt del sondaggio in genere vengono visualizzati nella parte inferiore destra dell'app. Se l'utente decide di fornire commenti e suggerimenti, ignora il prompt o lascia che il prompt scompaia da solo, l'utente non sarà più in grado di visualizzare il sondaggio per un certo periodo di tempo. Microsoft sfrutta inoltre un processo di governance per limitare il numero di sondaggi avviati dal sistema.  Lo scopo della governance è garantire che gli utenti non siano sovraccaricati dal numero di richieste di sondaggio.
+Gli utenti possono anche valutare la propria esperienza e fornire informazioni aggiuntive sulla propria esperienza tramite richieste di sondaggio avviate dal sistema. Questi prompt si verificano all'interno Microsoft 365 prodotti di tanto in tanto. Quando richiesto, gli utenti possono scegliere se inviare commenti e suggerimenti. I prompt del sondaggio in genere vengono visualizzati nella parte inferiore destra dell'app. Se l'utente decide di fornire commenti e suggerimenti, ignora il prompt o lascia che il prompt scompaia da solo, l'utente non sarà più in grado di visualizzare il sondaggio per un certo periodo di tempo. Microsoft sfrutta inoltre un processo di governance per limitare il numero di sondaggi avviati dal sistema.  Lo scopo della governance è garantire che gli utenti non siano sovraccaricati dal numero di richieste di sondaggio.
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Example of in-product feedback request":::
 
@@ -57,7 +57,7 @@ Gli utenti possono anche valutare la propria esperienza e fornire informazioni a
 
 Un feedback dettagliato e utilizzabile è fondamentale per apportare modifiche e miglioramenti ai prodotti Microsoft. Se gli utenti hanno problemi o suggerimenti su come possiamo migliorare, vogliamo sentirlo. Di seguito sono riportati alcuni suggerimenti ed esempi sul feedback utilizzabile inviato a Microsoft.
 
-- **Titolo conciso e descrittivo**   Titoli descrittivi e specifici ci aiutano a comprendere il problema segnalato. Esempio: l'elenco **File recenti** di Excel non include i file di OneDrive aggiunti di recente.
+- **Titolo conciso e descrittivo**   Titoli descrittivi e specifici ci aiutano a comprendere il problema segnalato. Esempio: **Excel'elenco File recenti** di OneDrive non include i file OneDrive recenti.
 - **Concentrarsi su un problema alla volta**   Fornire un feedback per un problema o un suggerimento un elemento alla volta. In questo modo i log e i dati corretti vengono ricevuti con ogni invio e possono essere assegnati per il follow-up. In caso di più problemi, inviare una nuova richiesta di feedback per ogni problema. Questo ci aiuta a identificare il volume di feedback che riceviamo su un determinato problema.
 - **Scrivere i dettagli nella casella Descrizione**   Le informazioni sul dispositivo, sul sistema operativo e sulle app vengono incluse automaticamente in ogni feedback segnalato. Aggiungi altre info su un problema che pensi sia importante. Ad esempio, includere la procedura dettagliata per riprodurre il problema.
 
@@ -93,4 +93,4 @@ Abbiamo il controllo della privacy con strumenti facili da usare e scelte chiare
 
 ## <a name="how-can-i-see-my-users-feedback"></a>Come posso vedere il feedback dell'utente?
 
-Presto, verranno condivisi i dati di feedback raccolti per i prodotti Microsoft. Stiamo lavorando a una nuova esperienza nell'interfaccia di amministrazione di Microsoft 365 che consente di visualizzare, eliminare ed esportare i dati di feedback per l'organizzazione. Ciò offre trasparenza diretta e informazioni utili sulle esperienze degli utenti con i prodotti Microsoft 365.
+Presto, verranno condivisi i dati di feedback raccolti per i prodotti Microsoft. Stiamo lavorando a una nuova esperienza nell'Microsoft 365 di amministrazione che consente di visualizzare, eliminare ed esportare i dati di feedback per l'organizzazione. Ciò offre trasparenza diretta e informazioni utili sulle esperienze degli utenti con Microsoft 365 prodotti.

@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
-description: In questo articolo viene illustrato come esportare, configurare e visualizzare i record del log di controllo di Microsoft 365.
+description: In questo articolo viene illustrato come esportare, configurare e visualizzare i record Microsoft 365 log di controllo.
 ms.openlocfilehash: 4cea867b46d3bda7d3b3a8cd38f3d01938da8764
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50906867"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Esportare, configurare e visualizzare i record del log di controllo
 
-Dopo aver cercato nel log di controllo e scaricato i risultati della ricerca in un file CSV, il file contiene una colonna denominata **AuditData** che contiene informazioni aggiuntive su ogni evento. I dati in questa colonna sono formattati come oggetto JSON, che contiene più proprietà configurate come *coppie property:value* separate da virgole. È possibile utilizzare la funzionalità di trasformazione JSON in Power Query Editor in Excel per dividere ogni proprietà nell'oggetto JSON nella **colonna AuditData** in più colonne in modo che ogni proprietà abbia una propria colonna. In questo modo è possibile ordinare e filtrare in base a una o più di queste proprietà, che consentono di individuare rapidamente i dati di controllo specifici che si stanno cercando.
+Dopo aver cercato nel log di controllo e scaricato i risultati della ricerca in un file CSV, il file contiene una colonna denominata **AuditData** che contiene informazioni aggiuntive su ogni evento. I dati in questa colonna sono formattati come oggetto JSON, che contiene più proprietà configurate come *coppie property:value* separate da virgole. Puoi usare la funzionalità di trasformazione JSON nell'editor di Power Query in Excel per dividere ogni proprietà nell'oggetto JSON nella colonna **AuditData** in più colonne in modo che ogni proprietà abbia una propria colonna. In questo modo è possibile ordinare e filtrare in base a una o più di queste proprietà, che consentono di individuare rapidamente i dati di controllo specifici che si stanno cercando.
 
 ## <a name="step-1-export-audit-log-search-results"></a>Passaggio 1: Esportare i risultati della ricerca nei log di controllo
 
@@ -52,7 +52,7 @@ Il primo passaggio consiste nel cercare il log di controllo e quindi esportare i
 
 ## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>Passaggio 2: Formattare il log di controllo esportato utilizzando l'editor di Power Query
 
-Il passaggio successivo consiste nell'usare la funzionalità di trasformazione JSON nell'editor di Power Query in Excel per dividere ogni proprietà nell'oggetto JSON nella **colonna AuditData** nella relativa colonna. Le colonne vengono quindi filtrate per visualizzare i record in base ai valori di proprietà specifiche. Ciò consente di individuare rapidamente i dati di controllo specifici che si stanno cercando.
+Il passaggio successivo consiste nell'usare la funzionalità di trasformazione JSON nell'editor di Power Query in Excel per dividere ogni proprietà nell'oggetto JSON nella **colonna AuditData** nella propria colonna. Le colonne vengono quindi filtrate per visualizzare i record in base ai valori di proprietà specifiche. Ciò consente di individuare rapidamente i dati di controllo specifici che si stanno cercando.
 
 1. Aprire una cartella di lavoro vuota in Excel per Office 365, Excel 2019 o Excel 2016.
 
@@ -98,15 +98,15 @@ Il passaggio successivo consiste nell'usare la funzionalità di trasformazione J
 
 9. Fare clic su **OK**.
 
-    La **colonna AuditData** è suddivisa in più colonne. Ogni nuova colonna corrisponde a una proprietà nell'oggetto JSON AuditData. Ogni riga della colonna contiene il valore della proprietà. Se la proprietà non contiene un valore, *verrà* visualizzato il valore Null. In Excel le celle con valori Null sono vuote.
+    La **colonna AuditData** è suddivisa in più colonne. Ogni nuova colonna corrisponde a una proprietà nell'oggetto JSON AuditData. Ogni riga della colonna contiene il valore della proprietà. Se la proprietà non contiene un valore, *verrà* visualizzato il valore Null. In Excel celle con valori Null sono vuote.
   
-10. Nella scheda **Home** fare clic su **Chiudi & Carica** per chiudere l'Editor di Power Query e aprire il file CSV trasformato in una cartella di lavoro di Excel.
+10. Nella scheda **Home** fare clic su **Chiudi & Carica** per chiudere l'Editor di Power Query e aprire il file CSV trasformato in una cartella Excel cartella di lavoro.
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Utilizzare PowerShell per cercare ed esportare i record del log di controllo
 
-Anziché utilizzare lo strumento di ricerca dei log di controllo nel Centro sicurezza & conformità, è possibile utilizzare il cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) in PowerShell di Exchange Online per esportare i risultati di una ricerca nei log di controllo in un file CSV. È quindi possibile seguire la stessa procedura descritta nel passaggio 2 per formattare il log di controllo utilizzando l'editor di Power Query. Uno dei vantaggi dell'utilizzo del cmdlet PowerShell è che è possibile cercare eventi da un servizio specifico utilizzando il *parametro RecordType.* Ecco alcuni esempi di utilizzo di PowerShell per esportare i record di controllo in un file CSV, in modo da poter usare l'editor di Power Query per trasformare l'oggetto JSON nella **colonna AuditData** come descritto nel passaggio 2.
+Anziché utilizzare lo strumento di ricerca dei log di controllo nel Centro sicurezza & e conformità, è possibile utilizzare il cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell per esportare i risultati di una ricerca nei log di controllo in un file CSV. È quindi possibile seguire la stessa procedura descritta nel passaggio 2 per formattare il log di controllo utilizzando l'editor di Power Query. Uno dei vantaggi dell'utilizzo del cmdlet PowerShell è che è possibile cercare eventi da un servizio specifico utilizzando il *parametro RecordType.* Ecco alcuni esempi di utilizzo di PowerShell per esportare i record di controllo in un file CSV, in modo da poter usare l'editor di Power Query per trasformare l'oggetto JSON nella **colonna AuditData** come descritto nel passaggio 2.
 
-In questo esempio, eseguire i comandi seguenti per restituire tutti i record correlati alle operazioni di condivisione di SharePoint.
+In questo esempio, eseguire i comandi seguenti per restituire tutti i record correlati alle SharePoint di condivisione.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
@@ -118,9 +118,9 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 I risultati della ricerca vengono esportati in un file CSV denominato *PowerShellAuditlog* contenente quattro colonne: CreationDate, UserIds, RecordType, AuditData.
 
-È inoltre possibile utilizzare il nome o il valore di enumerazione per il tipo di record come valore per il *parametro RecordType.* Per un elenco dei nomi dei tipi di record e dei valori di enumerazione corrispondenti, vedere la tabella *AuditLogRecordType* nello schema dell'API attività di gestione di [Office 365.](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)
+È inoltre possibile utilizzare il nome o il valore di enumerazione per il tipo di record come valore per il *parametro RecordType.* Per un elenco dei nomi dei tipi di record e dei valori di enumerazione corrispondenti, vedere la tabella *AuditLogRecordType* in [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
 
-È possibile includere un solo valore per il *parametro RecordType.* Per cercare record di controllo per altri tipi di record, è necessario eseguire di nuovo i due comandi precedenti per specificare un tipo di record diverso e accodare tali risultati al file CSV originale. Ad esempio, è necessario eseguire i due comandi seguenti per aggiungere attività di file di SharePoint dallo stesso intervallo di date al file PowerShellAuditlog.csv file.
+È possibile includere un solo valore per il *parametro RecordType.* Per cercare record di controllo per altri tipi di record, è necessario eseguire di nuovo i due comandi precedenti per specificare un tipo di record diverso e accodare tali risultati al file CSV originale. Ad esempio, è necessario eseguire i due comandi seguenti per aggiungere attività SharePoint file dallo stesso intervallo di date al file PowerShellAuditlog.csv file.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
@@ -134,6 +134,6 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 Ecco alcuni suggerimenti ed esempi di esportazione e visualizzazione del log di controllo prima e dopo l'uso della funzionalità di trasformazione JSON per dividere la **colonna AuditData** in più colonne.
 
-- Filtrare **la colonna RecordType** per visualizzare solo i record di un servizio o di un'area funzionale specifica. Ad esempio, per visualizzare gli eventi correlati alla condivisione di SharePoint, è necessario selezionare **14** (il valore di enumerazione per i record attivati dalle attività di condivisione di SharePoint). Per un elenco dei servizi che corrispondono ai valori di enumerazione visualizzati nella colonna **RecordType,** vedere [Detailed properties in the audit log.](detailed-properties-in-the-office-365-audit-log.md)
+- Filtrare **la colonna RecordType** per visualizzare solo i record di un servizio o di un'area funzionale specifica. Ad esempio, per visualizzare gli eventi correlati SharePoint condivisione, è necessario selezionare **14** (il valore di enumerazione per i record attivati SharePoint attività di condivisione). Per un elenco dei servizi che corrispondono ai valori di enumerazione visualizzati nella colonna **RecordType,** vedere [Detailed properties in the audit log.](detailed-properties-in-the-office-365-audit-log.md)
 
 - Filtrare **la colonna** Operazioni per visualizzare i record per attività specifiche. Per un elenco della maggior parte delle operazioni che corrispondono a un'attività ricercabile nello strumento di ricerca dei log di controllo nel Centro sicurezza & conformità, vedere la sezione "Attività di controllo" in Ricerca nel log di controllo nel Centro [sicurezza & conformità.](search-the-audit-log-in-security-and-compliance.md#audited-activities)

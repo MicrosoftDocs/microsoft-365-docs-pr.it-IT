@@ -58,7 +58,7 @@ Se viene visualizzato un messaggio di errore dopo l'immissione del codice promoz
 - **Il codice promozionale è scaduto.** Le campagne promozionali sono valide per periodi di tempo limitati. I codici promozionali hanno una data di scadenza. Un codice promozionale non sarà più utilizzabile in caso di superamento della data di scadenza. Non esiste alcun modo per accettare o sostituire i codici promozionali scaduti, ma è comunque possibile acquistare un abbonamento senza codice promozionale.
 - **Il codice promozionale in uso non è valido per l'area geografica di appartenenza.** Alcuni codici promozionali sono validi sono in aree geografiche o paesi specifici. I codici promozionali sono validi solo nel paese o nell'area geografica in cui sono stati creati.
   
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Acquistare un abbonamento dalla versione di valutazione gratuita](./try-or-buy-microsoft-365.md) (articolo)\  
 [Acquistare un altro abbonamento](./try-or-buy-microsoft-365.md) (articolo)\  

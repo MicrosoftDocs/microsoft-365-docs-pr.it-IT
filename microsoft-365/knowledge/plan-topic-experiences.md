@@ -82,7 +82,7 @@ I knowledge manager supervisionano la qualità delle informazioni, il modo in cu
 
 Sebbene sia possibile specificare singoli responsabili degli argomenti, è consigliabile creare un gruppo di sicurezza (o utilizzarne uno esistente) contenente le persone che si desidera siano responsabili della conoscenza. È possibile specificare questo gruppo di sicurezza durante il processo di installazione.
 
-*Creare e modificare argomenti*
+*Creare e modificare gli argomenti*
 
 I collaboratori degli argomenti sono i campioni e gli esperti in materia nell'organizzazione. Possono creare e modificare argomenti. 
 

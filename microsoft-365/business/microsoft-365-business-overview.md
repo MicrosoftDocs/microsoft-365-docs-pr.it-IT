@@ -42,7 +42,7 @@ ms.locfileid: "52705523"
 
 Microsoft 365 Business Premium (in precedenza Microsoft 365 Business) è un servizio in abbonamento completo per le aziende con meno di 300 dipendenti. Integra le app e i servizi di produttività di Office più usati e strumenti di collaborazione come Microsoft Teams, con funzionalità avanzate per la sicurezza e la gestione dei dispositivi.
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>Watch: What is Microsoft 365 Business Premium
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Video: che cos'è Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   

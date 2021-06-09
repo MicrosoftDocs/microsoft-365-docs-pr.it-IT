@@ -136,7 +136,7 @@ Puoi usare l'Microsoft 365 di amministrazione per riassegnare le licenze per un 
 
 Dopo che tutti gli utenti sono stati riassegnati al nuovo abbonamento, annullare l'abbonamento [Office 365 E4](cancel-your-subscription.md).
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Eseguire l'aggiornamento a un piano diverso](upgrade-to-different-plan.md) (articolo)\
 [Acquistare o rimuovere licenze di sottoscrizione](../licenses/buy-licenses.md) (articolo)\

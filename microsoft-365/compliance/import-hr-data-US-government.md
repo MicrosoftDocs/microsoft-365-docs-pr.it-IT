@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: Gli amministratori nel cloud us government possono configurare un connettore dati per importare i dati dei dipendenti dal sistema delle risorse umane dell'organizzazione in Microsoft 365. In questo modo è possibile utilizzare i dati delle risorse umane nei criteri di gestione dei rischi insider per rilevare le attività di utenti specifici che potrebbero rappresentare una minaccia interna per l'organizzazione.
+description: Gli amministratori nel cloud us government possono configurare un connettore dati per importare i dati dei dipendenti dal sistema delle risorse umane dell'organizzazione per Microsoft 365. In questo modo è possibile utilizzare i dati delle risorse umane nei criteri di gestione dei rischi insider per rilevare le attività di utenti specifici che potrebbero rappresentare una minaccia interna per l'organizzazione.
 ms.openlocfilehash: 16d6d72d557744e30d41795d5f8c8a17db81c6a3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "50905928"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurare un connettore per importare i dati delle risorse umane in US Government
 
-È possibile configurare un connettore dati nel Centro conformità Microsoft 365 per importare i dati delle risorse umane nell'organizzazione del governo statunitense. I dati relativi alle risorse umane includono la data in cui un dipendente ha inviato le proprie dimissioni e la data dell'ultimo giorno del dipendente. Questi dati sulle risorse umane possono quindi essere utilizzati dalle soluzioni di protezione delle informazioni Microsoft, ad esempio la soluzione di gestione dei rischi [insider,](insider-risk-management.md)per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione. La configurazione di un connettore hr consiste nella creazione di un'app in Azure Active Directory usata per l'autenticazione da parte del connettore, nella creazione di un file di mapping CSV contenente i dati delle risorse umane, nella creazione di un connettore dati nel Centro conformità e quindi nell'esecuzione di uno script (su base pianificata) che inserisce i dati delle risorse umane nel file CSV nel cloud Microsoft. Il connettore dati viene quindi utilizzato dallo strumento di gestione dei rischi insider per accedere ai dati delle risorse umane importati nell'organizzazione di Microsoft 365 US Government.
+È possibile configurare un connettore di dati nel centro Microsoft 365 conformità per importare i dati delle risorse umane nell'organizzazione del governo degli Stati Uniti. I dati relativi alle risorse umane includono la data in cui un dipendente ha inviato le proprie dimissioni e la data dell'ultimo giorno del dipendente. Questi dati sulle risorse umane possono quindi essere utilizzati dalle soluzioni di protezione delle informazioni Microsoft, ad esempio la soluzione di gestione dei rischi [insider,](insider-risk-management.md)per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione. La configurazione di un connettore HR consiste nella creazione di un'app in Azure Active Directory usata per l'autenticazione da parte del connettore, nella creazione di un file di mapping CSV contenente i dati delle risorse umane, nella creazione di un connettore dati nel Centro conformità e quindi nell'esecuzione di uno script (su base pianificata) che inserisce i dati delle risorse umane nel file CSV nel cloud Microsoft. Il connettore dati viene quindi utilizzato dallo strumento di gestione dei rischi insider per accedere ai dati delle risorse umane importati nell'organizzazione Microsoft 365 us government.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -44,7 +44,7 @@ Il primo passaggio consiste nel creare e registrare una nuova app in Azure Activ
 
 - ID tenant (denominato anche *ID directory)*
 
-Per istruzioni dettagliate sulla creazione di un'app in Azure AD, vedi [Registrare un'applicazione con la piattaforma di identità Microsoft.](/azure/active-directory/develop/quickstart-register-app)
+Per istruzioni dettagliate sulla creazione di un'app in Azure AD, vedi [Registrare un'applicazione con](/azure/active-directory/develop/quickstart-register-app)il Microsoft Identity Platform .
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Passaggio 2: Preparare un file CSV con i dati delle risorse umane
 
@@ -71,7 +71,7 @@ Dopo aver creato il file CSV con i dati delle risorse umane necessari, archiviar
 
 ## <a name="step-3-create-the-hr-connector"></a>Passaggio 3: Creare il connettore risorse umane
 
-Il passaggio successivo consiste nel creare un connettore hr nel Centro conformità Microsoft 365. Dopo aver eseguito lo script nel passaggio 4, il connettore HR creato ingestirà i dati delle risorse umane dal file CSV all'organizzazione di Microsoft 365. In questo passaggio, assicurarsi di copiare l'ID processo generato quando si crea il connettore. L'ID processo verrà utilizzato quando si esegue lo script.
+Il passaggio successivo consiste nel creare un connettore hr nel centro Microsoft 365 conformità. Dopo aver eseguito lo script nel passaggio 4, il connettore HR creato ingestirà i dati delle risorse umane dal file CSV all'Microsoft 365 organizzazione. In questo passaggio, assicurarsi di copiare l'ID processo generato quando si crea il connettore. L'ID processo verrà utilizzato quando si esegue lo script.
 
 1. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com) e quindi fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
 
@@ -97,9 +97,9 @@ Il passaggio successivo consiste nel creare un connettore hr nel Centro conformi
 
    1. **ID processo.** Questo ID processo sarà necessario per eseguire lo script nel passaggio successivo. È possibile copiarlo da questa pagina o dalla pagina del riquadro a comparsa del connettore.
    
-   1. **Collegamento allo script di esempio.** Fai clic **sul** collegamento qui per accedere al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta questa finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo da poterlo accedere di nuovo nel passaggio 4. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
+   1. **Collegamento allo script di esempio.** Fare clic **sul** collegamento qui per accedere al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta questa finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo da poterlo accedere di nuovo nel passaggio 4. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
 
-7. Fare clic su **Fatto**.
+7. Fai clic su **Fine**.
 
    Il nuovo connettore viene visualizzato nell'elenco nella **scheda Connettori.** 
 
@@ -113,9 +113,9 @@ Il passaggio successivo consiste nel creare un connettore hr nel Centro conformi
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Passaggio 4: Eseguire lo script di esempio per caricare i dati delle risorse umane
 
-L'ultimo passaggio per configurare un connettore HR consiste nell'eseguire uno script di esempio che carichi i dati delle risorse umane nel file CSV (creato nel passaggio 2) nel cloud Microsoft. In particolare, lo script carica i dati nel connettore HR. Dopo aver eseguito lo script, il connettore HR creato nel passaggio 3 importa i dati delle risorse umane nell'organizzazione di Microsoft 365 a cui possono accedere altri strumenti di conformità, ad esempio la soluzione di gestione dei rischi Insider. Dopo aver eseguito lo script, è consigliabile pianificare un'attività per eseguirla automaticamente ogni giorno in modo che i dati più aggiornati sulla risoluzione dei dipendenti vengono caricati nel cloud Microsoft. Vedere [Pianificare l'esecuzione automatica dello script.](#optional-step-6-schedule-the-script-to-run-automatically)
+L'ultimo passaggio per configurare un connettore HR consiste nell'eseguire uno script di esempio che carichi i dati delle risorse umane nel file CSV (creato nel passaggio 2) nel cloud Microsoft. In particolare, lo script carica i dati nel connettore HR. Dopo aver eseguito lo script, il connettore HR creato nel passaggio 3 importa i dati sulle risorse umane nell'organizzazione di Microsoft 365 a cui possono accedere altri strumenti di conformità, ad esempio la soluzione di gestione dei rischi Insider. Dopo aver eseguito lo script, è consigliabile pianificare un'attività per eseguirla automaticamente ogni giorno in modo che i dati più aggiornati sulla risoluzione dei dipendenti vengono caricati nel cloud Microsoft. Vedere [Pianificare l'esecuzione automatica dello script.](#optional-step-6-schedule-the-script-to-run-automatically)
 
-1. Vai alla finestra lasciata aperta dal passaggio precedente per accedere al sito GitHub con lo script di esempio. In alternativa, aprire il sito con segnalibri o utilizzare l'URL copiato.
+1. Passare alla finestra lasciata aperta dal passaggio precedente per accedere al sito GitHub con lo script di esempio. In alternativa, aprire il sito con segnalibri o utilizzare l'URL copiato.
 
 2. Fare clic **sul pulsante** Non elaborato per visualizzare lo script in visualizzazione testo.
 
@@ -123,7 +123,7 @@ L'ultimo passaggio per configurare un connettore HR consiste nell'eseguire uno s
 
 4. Modificare lo script di esempio per l'organizzazione, se necessario.
 
-5. Salvare il file di testo come Windows PowerShell di script utilizzando il suffisso del nome del file `.ps1` ; ad esempio, `HRConnector.ps1` .
+5. Salvare il file di testo come Windows PowerShell di script utilizzando il suffisso del nome di `.ps1` file ; ad esempio, `HRConnector.ps1` .
 
 6. Aprire un prompt dei comandi nel computer locale e passare alla directory in cui è stato salvato lo script.
 
@@ -137,8 +137,8 @@ L'ultimo passaggio per configurare un connettore HR consiste nell'eseguire uno s
 
    | Parametro | Descrizione |
    |:-----|:-----|:-----|
-   |`tenantId`|ID per l'organizzazione di Microsoft 365 ottenuta nel passaggio 1. È anche possibile ottenere l'ID tenant per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure AD. Viene utilizzato per identificare l'organizzazione.|
-   |`appId` |ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Viene usato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione di Microsoft 365. |
+   |`tenantId`|ID dell'organizzazione Microsoft 365 che hai ottenuto nel passaggio 1. È anche possibile ottenere l'ID tenant per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure AD. Viene utilizzato per identificare l'organizzazione.|
+   |`appId` |ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Viene usato da Azure AD per l'autenticazione quando lo script tenta di accedere all'Microsoft 365 organizzazione. |
    |`appSecret`|Segreto dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Utilizzato anche per l'autenticazione.|
    |`jobId`|ID processo per il connettore HR creato nel passaggio 3. Viene usato per associare i dati delle risorse umane caricati nel cloud Microsoft al connettore HR.|
    |`csvFilePath`|Percorso del file CSV (archiviato nello stesso sistema dello script) creato nel passaggio 2. Cercare di evitare spazi nel percorso del file. in caso contrario, utilizzare virgolette singole.|
@@ -150,14 +150,14 @@ L'ultimo passaggio per configurare un connettore HR consiste nell'eseguire uno s
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   Se il caricamento ha esito positivo, lo script visualizza il **messaggio Caricamento** completato.
+   Se il caricamento ha esito positivo, lo script visualizza il Upload **messaggio Operazione** completata.
 
    > [!NOTE]
    > In caso di problemi durante l'esecuzione del comando precedente a causa dei criteri di esecuzione, vedere [Informazioni](/powershell/module/microsoft.powershell.core/about/about_execution_policies) sui criteri di esecuzione e [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) per indicazioni sull'impostazione dei criteri di esecuzione.
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Passaggio 5: Monitorare il connettore HR
 
-Dopo aver creato il connettore HR ed eseguito lo script per caricare i dati delle risorse umane, è possibile visualizzare il connettore e lo stato di caricamento nel Centro conformità Microsoft 365. Se si pianifica l'esecuzione automatica dello script a intervalli regolari, è anche possibile visualizzare lo stato corrente dopo l'ultima esecuzione dello script.
+Dopo aver creato il connettore HR ed eseguito lo script per caricare i dati delle risorse umane, è possibile visualizzare il connettore e caricarne lo stato nel Centro Microsoft 365 conformità. Se si pianifica l'esecuzione automatica dello script a intervalli regolari, è anche possibile visualizzare lo stato corrente dopo l'ultima esecuzione dello script.
 
 1. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
 
@@ -177,9 +177,9 @@ Se lo script non è stato eseguito nel passaggio 4, viene visualizzato un colleg
 
 Per assicurarsi che i dati sulle risorse umane più recenti dell'organizzazione siano disponibili per strumenti come la soluzione di gestione dei rischi insider, è consigliabile pianificare l'esecuzione automatica dello script su base ricorrente, ad esempio una volta al giorno. È inoltre necessario aggiornare i dati delle risorse umane nel file CSV in base a una pianificazione simile (se non la stessa) in modo che contenga le informazioni più recenti sui dipendenti che lasciano l'organizzazione. L'obiettivo è caricare i dati delle risorse umane più correnti in modo che il connettore HR possa renderli disponibili per la soluzione di gestione dei rischi insider.
 
-Puoi usare l'app Utilità di pianificazione in Windows per eseguire automaticamente lo script ogni giorno.
+Puoi usare l'app Utilità di pianificazione Windows eseguire automaticamente lo script ogni giorno.
 
-1. Nel computer locale fare clic sul pulsante **Start** di Windows e quindi digitare **Utilità di pianificazione.**
+1. Nel computer locale fare clic sul pulsante Windows **Start** e quindi digitare **Utilità di pianificazione.**
 
 2. Fai clic **sull'app Utilità** di pianificazione per aprirla.
 

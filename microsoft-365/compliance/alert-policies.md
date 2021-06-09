@@ -209,7 +209,7 @@ Tenere presente quanto segue sull'aggregazione degli avvisi:
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Autorizzazioni RBAC necessarie per visualizzare gli avvisi
 
-Le autorizzazioni RBAC (Role Based Access Control) assegnate agli utenti dell'organizzazione determinano quali avvisi possono essere visualizzati da un utente nella **pagina Visualizza** avvisi. Come viene eseguita questa operazione? I ruoli di gestione assegnati agli utenti (in base all'appartenenza ai gruppi di ruoli nel Centro sicurezza & conformità) determinano le categorie di avviso che un utente può visualizzare nella pagina Visualizza **avvisi.** Ecco alcuni esempi:
+Le autorizzazioni RBAC (Role Based Access Control) assegnate agli utenti dell'organizzazione determinano quali avvisi possono essere visualizzati da un utente nella **pagina Visualizza** avvisi. Come viene eseguita questa operazione? I ruoli di gestione assegnati agli utenti (in base all'appartenenza ai gruppi di ruoli nel Centro sicurezza & conformità) determinano le categorie di avviso che un utente può visualizzare nella pagina Visualizza **avvisi.** Di seguito vengono descritti alcuni esempi:
 
 - I membri del gruppo di ruoli Gestione record possono visualizzare solo gli avvisi generati dai criteri di avviso assegnati alla **categoria Governance delle** informazioni.
 

@@ -46,7 +46,7 @@ Quando si aggiungono nuovi utenti, se non si assegna loro  un ruolo di amministr
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 ## <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore 
 

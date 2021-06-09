@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Informazioni su Documenti sicuri in Microsoft 365 E5 o Microsoft 365 E5 Security.
+description: Informazioni sui documenti sicuri in Microsoft 365 E5 o Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
@@ -30,15 +30,15 @@ ms.locfileid: "51644753"
 **Si applica a**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Documenti sicuri è una funzionalità di Microsoft 365 E5 o Microsoft 365 E5 Security che utilizza [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per analizzare documenti e file aperti in [Visualizzazione](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) protetta o Application Guard [per Office.](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)
+Documenti sicuri è una funzionalità di Microsoft 365 E5 o Microsoft 365 E5 Security che usa [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per analizzare documenti e file aperti in [Visualizzazione](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) protetta o Application Guard per [Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Documenti sicuri è disponibile solo per gli utenti con *licenze microsoft 365 E5* o *Microsoft 365 E5 Security.* Queste licenze non sono incluse nei piani di Microsoft Defender per Office 365.
+- Documenti sicuri è disponibile solo per gli utenti con *Microsoft 365 E5* o *Microsoft 365 E5 Security* licenze. Queste licenze non sono incluse in Microsoft Defender per Office 365 piani.
 
 - Documenti sicuri è supportato in Microsoft 365 Apps for enterprise (in precedenza noto come Office 365 ProPlus) versione 2004 o successiva.
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com>. Per passare direttamente alla pagina Allegati sicuri **ATP,** aprire <https://protection.office.com/safeattachmentv2> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com>. Per passare direttamente alla pagina Allegati sicuri **ATP,** aprire <https://protection.office.com/safeattachmentv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -66,15 +66,15 @@ I file inviati da Documenti sicuri non vengono conservati in Defender oltre il t
 
 2. Nel **riquadro a comparsa** Impostazioni globali visualizzato configurare le impostazioni seguenti:
 
-   - **Attivare Documenti sicuri per i client di Office**: spostare l'interruttore a destra per attivare la funzionalità: ![ Attiva/ ](../../media/scc-toggle-on.png) attiva.
+   - **Attivare Documenti sicuri per Office** client : spostare l'interruttore a destra per attivare la funzionalità: ![ Attiva/ ](../../media/scc-toggle-on.png) attiva.
 
    - **Consentire agli** utenti di fare clic su Visualizzazione protetta anche se Documenti sicuri identifica il file come dannoso: è consigliabile lasciare disattivata questa opzione (lasciare l'interruttore a sinistra: ![ Interruttore ](../../media/scc-toggle-off.png) disattivato).
 
-   Al termine, fare clic su **Salva**.
+   Al termine, scegliere **Salva**.
 
    ![Impostazioni documenti sicuri dopo aver selezionato Impostazioni globali nella pagina Allegati sicuri.](../../media/safe-docs.png)
 
-### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Utilizzare PowerShell di Exchange Online per configurare documenti sicuri
+### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Usare Exchange Online PowerShell per configurare Documenti sicuri
 
 Usare la sintassi seguente:
 
@@ -103,9 +103,9 @@ Per ulteriori informazioni, vedere [Onboard to the Microsoft Defender for Endpoi
 
 Per verificare di aver abilitato e configurato Documenti sicuri, eseguire una delle operazioni seguenti:
 
-- Nel Centro sicurezza & conformità passare  a Criteri di gestione delle minacce Allegati sicuri \>  \> **ATP,** fare  clic su Impostazioni globali e verificare l'opzione Attiva documenti sicuri per i client **di Office** e Consenti agli utenti di fare clic su Visualizzazione protetta anche se Documenti sicuri identifica il file come impostazioni dannose.
+- Nel Centro sicurezza & conformità passare  a Criteri di gestione delle minacce Allegati sicuri \>  \> **ATP,**   fare clic su  Impostazioni globali e verificare l'opzione Attiva documenti sicuri per i client Office e Consenti agli utenti di fare clic su Visualizzazione protetta anche se Documenti sicuri identifica il file come impostazioni dannose.
 
-- Eseguire il comando seguente in PowerShell di Exchange Online e verificare i valori delle proprietà:
+- Eseguire il comando seguente in Exchange Online PowerShell e verificare i valori delle proprietà:
 
   ```powershell
   Get-AtpPolicyForO365 | Format-List *SafeDocs*

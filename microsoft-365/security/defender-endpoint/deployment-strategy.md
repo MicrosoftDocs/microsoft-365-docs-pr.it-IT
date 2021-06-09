@@ -27,7 +27,7 @@ ms.locfileid: "51163576"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
@@ -62,7 +62,7 @@ Nella tabella seguente sono elencati gli endpoint supportati e lo strumento di d
 
 | Endpoint     | Strumento di distribuzione                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script locale (fino a 10 dispositivi)](configure-endpoints-script.md) <br>  [Criteri di gruppo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Script VDI](configure-endpoints-vdi.md)   |
+| **Windows**  |  [Script locale (fino a 10 dispositivi)](configure-endpoints-script.md) <br>  [Criteri di gruppo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestione dispositivi mobili](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Script VDI](configure-endpoints-vdi.md)   |
 | **macOS**    | [Script locale](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestione di dispositivi mobili](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Script locale](linux-install-manually.md) <br> [Pupazzo](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Basato su app](ios-install.md)                                |
@@ -75,9 +75,9 @@ Dopo gli endpoint di onboarding, configura le funzionalità di sicurezza in Defe
 
 - Rilevamento endpoint e risposta
 - Protezione di nuova generazione
-- Riduzione della superficie d'attacco
+- La riduzione della superficie di attacco
 
 
   
 ## <a name="related-topics"></a>Argomenti correlati
-- [Fasi di distribuzione](deployment-phases.md)
+- [Fasi della distribuzione](deployment-phases.md)

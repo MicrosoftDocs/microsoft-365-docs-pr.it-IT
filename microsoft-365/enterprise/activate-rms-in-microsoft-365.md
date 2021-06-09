@@ -26,7 +26,7 @@ ms.locfileid: "50905645"
 ---
 # <a name="activate-rights-management-in-the-admin-center"></a>Attivare Rights Management nell'interfaccia di amministrazione
 
-È necessario attivare il servizio Rights Management (RMS) prima di poter utilizzare le funzionalità IRM (Information Rights Management) delle applicazioni e dei servizi di Microsoft 365. Dopo aver attivato RMS, l'organizzazione può iniziare a proteggere documenti e messaggi di posta elettronica importanti tramite Azure RMS. Questa soluzione di protezione delle informazioni può proteggere tutti i tipi di file e integrarsi con applicazioni client come Excel, Microsoft Word e altri, Exchange Online e SharePoint Online e server come Microsoft Exchange e Microsoft SharePoint.
+È necessario attivare il servizio Rights Management (RMS) prima di poter utilizzare le funzionalità IRM (Information Rights Management) di Microsoft 365 applicazioni e servizi. Dopo aver attivato RMS, l'organizzazione può iniziare a proteggere documenti e messaggi di posta elettronica importanti tramite Azure RMS. Questa soluzione di protezione delle informazioni può proteggere tutti i tipi di file e integrarsi con applicazioni client come Excel, Microsoft Word e altri, Exchange Online e SharePoint Online e server quali Microsoft Exchange e Microsoft SharePoint.
   
 > [!TIP]
 > Se non si è certi della necessità di Rights Management, verificare se l'organizzazione ha uno o più di questi problemi o [requisiti aziendali.](/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management) 
@@ -39,4 +39,4 @@ Utilizzare questi collegamenti per ulteriori informazioni su RMS:
 
 - Per una panoramica dei passaggi di distribuzione, vedere la road map per la distribuzione [di Azure Rights Management.](/rights-management/plan-design/deployment-roadmap)
 
-- Per istruzioni sull'attivazione di RMS per Microsoft 365, vedere Attivazione del servizio di [protezione da Azure Information Protection.](/azure/information-protection/activate-service)
+- Per istruzioni sull'attivazione di RMS per Microsoft 365, vedere [Attivazione del servizio di protezione da Azure Information Protection.](/azure/information-protection/activate-service)

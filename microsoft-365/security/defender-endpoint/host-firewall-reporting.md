@@ -1,5 +1,5 @@
 ---
-title: Creazione di report del firewall host in Microsoft Defender for Endpoint
+title: Ospitare la creazione di report dei firewall in Microsoft Defender per endpoint
 description: Ospitare e visualizzare i report del firewall Microsoft 365 centro sicurezza.
 keywords: windows defender, firewall
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52809307"
 ---
-# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Creazione di report del firewall host in Microsoft Defender for Endpoint
+# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Ospitare la creazione di report dei firewall in Microsoft Defender per endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

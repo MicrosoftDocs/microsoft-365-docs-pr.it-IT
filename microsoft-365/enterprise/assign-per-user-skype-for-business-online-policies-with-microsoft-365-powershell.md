@@ -1,5 +1,5 @@
 ---
-title: Assegnare criteri di Skype for Business online per utente con PowerShell per Microsoft 365
+title: Assegnare criteri Skype for Business online per utente con PowerShell per Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Riepilogo: usare PowerShell per Microsoft 365 per assegnare impostazioni di comunicazione per utente con i criteri di Skype for Business online.'
+description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per assegnare impostazioni di comunicazione per utente con Skype for Business criteri online.'
 ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905405"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Assegnare criteri di Skype for Business online per utente con PowerShell per Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Assegnare criteri Skype for Business online per utente con PowerShell per Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-L'uso di PowerShell per Microsoft 365 è un modo efficiente per assegnare impostazioni di comunicazione per utente con i criteri di Skype for Business online.
+L'uso di PowerShell Microsoft 365 è un modo efficiente per assegnare le impostazioni di comunicazione per utente con i criteri Skype for Business Online.
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>Preparare l'esecuzione dei comandi di PowerShell
 

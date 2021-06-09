@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come usare Advanced eDiscovery per inviare e monitorare le notifiche di blocco a livello legale tramite posta elettronica, nonché monitorare lo stato degli obblighi.
+description: Informazioni su come usare le Advanced eDiscovery per inviare e seguire le notifiche di blocco legale tramite posta elettronica, nonché monitorare lo stato dell'obbligo.
 ms.openlocfilehash: 393d8884a4d4d39056267666fdce6a2754cb582b
 ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
@@ -27,24 +27,24 @@ ms.locfileid: "44034886"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confermare la ricezione di una notifica di blocco
 
-Quando si risponde a una richiesta o a un'indagine normativa, potrebbe essere richiesto di informare i responsabile dell'obbligo di conservare le informazioni archiviate elettronicamente (ESI) e di qualsiasi materiale che possa essere rilevante per una questione legale attiva o imminente. Una volta inviato, i team legali devono sapere che ogni responsabile ha ricevuto, letto, compreso e accettato di seguire le istruzioni fornite.
+Quando si risponde a una richiesta o a un'indagine normativa, potrebbe essere necessario informare i custodi dell'obbligo di conservare le informazioni archiviate elettronicamente (ESI) e qualsiasi materiale che possa essere rilevante per una questione legale attiva o imminente. Una volta inviato, i team legali devono sapere che ogni responsabile ha ricevuto, letto, compreso e accettato di seguire le istruzioni fornite.
 
-Per ridurre il tempo, i costi e lo sforzo di seguire i propri amministratori, Advanced eDiscovery consente di inviare e seguire le notifiche di blocco a livello legale tramite posta elettronica. Oltre agli avvisi tramite posta elettronica, ogni responsabile avrà accesso a un portale di conformità individualizzato, che consente ai responsabile di essere informati delle modifiche apportate al loro stato di obbligo.
+Per ridurre il tempo, i costi e gli sforzi per seguire i tuoi custodi, Advanced eDiscovery consente di inviare e seguire le notifiche di blocco legale tramite posta elettronica. Oltre agli avvisi tramite posta elettronica, ogni responsabile avrà accesso a un portale di conformità individualizzato, consentendo ai custodi di essere informati delle modifiche apportate al loro stato di obbligo.
 
 ## <a name="email-notifications"></a>Notifiche tramite posta elettronica
 
 Dopo l'emissione di una notifica di blocco legale, ogni responsabile riceverà un'e-mail univoca e personalizzata contenente l'avviso di blocco legale definito e le istruzioni aggiunte. 
 
 > [!TIP]
-> Scopri come puoi usare  [l'editor](using-communications-editor.md) di comunicazione predefinito per consentire ai tuoi manager di confermare l'avviso o accedere al portale di conformità direttamente dalla posta elettronica.
+> Scopri come puoi usare  [l'editor](using-communications-editor.md) di comunicazione incorporato per consentire ai tuoi custodi di confermare l'avviso o accedere al portale di conformità direttamente dalla posta elettronica.
 
-In base alla configurazione della notifica di blocco legale, i tuoi responsabile possono ricevere le seguenti notifiche: 
+In base alla configurazione della notifica di blocco legale, i tuoi custodi potrebbero ricevere le seguenti notifiche: 
 
 - **Avviso di rilascio:** Il primo avviso inviato al tuo responsabile. Questo avviso conterrà le istruzioni di rilascio e l'avviso di blocco aggiunto alla fine del messaggio.
 
-- **Avviso promemoria:** Se abilitata, verrà inviato un avviso di promemoria ai tuoi responsabile in base alla frequenza e all'intervallo specificati. I promemoria continueranno a essere inviati fino a quando il responsabile non riconoscerà l'avviso o finché il numero di promemoria non sarà esaurito.
+- **Avviso promemoria:** Se abilitata, ai tuoi custodi verrà inviata una notifica di promemoria in base alla frequenza e all'intervallo specificati. I promemoria continueranno a essere inviati fino a quando il custode non avrà riconosciuto l'avviso o finché il numero di promemoria non sarà esaurito.
 
-- **Avviso di escalation:** Se abilitata, verrà inviato un avviso di escalation al responsabile e al relativo responsabile dopo che gli avvisi di promemoria sono stati esauriti. Il sistema invierà automaticamente avvisi di escalation fino al completamento del numero specificato di escalation o fino a quando il responsabile non riconosce la notifica di blocco.
+- **Avviso di escalation:** Se abilitata, una notifica di escalation verrà inviata al responsabile e al responsabile dopo che le notifiche di promemoria sono state esaurite. Il sistema invierà automaticamente avvisi di escalation fino al completamento del numero specificato di escalation o fino a quando il responsabile non riconosce la notifica di blocco.
 
 - **Avviso di riemissione:** Nel corso di un'indagine, se il contenuto dell'avviso di blocco viene aggiornato, l'avviso aggiornato verrà inviato automaticamente al responsabile.
 

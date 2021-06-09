@@ -39,7 +39,7 @@ ms.locfileid: "52705555"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
 ## <a name="upgrade-to-windows-10-pro"></a>Eseguire l'aggiornamento a Windows 10 Pro
   

@@ -18,7 +18,7 @@ ms.locfileid: "47962526"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Orario di lavoro dei dipendenti in Microsoft Bookings
 
-L'impostazione dell'orario di lavoro dei dipendenti garantisce che la loro disponibilità sia mostrata in modo accurato quando i clienti provano a prenotarli. Per impostazione predefinita, l'orario di lavoro di ogni dipendente corrisponde all'orario di ufficio definito nell'app Prenotazioni Microsoft (vedere l'argomento relativo alla Impostare gli orari di ufficio). Vedere la sezione "Impostare l'orario di ufficio" in [Immettere le informazioni aziendali.](enter-business-information.md#set-your-business-hours)
+L'impostazione dell'orario di lavoro dei dipendenti garantisce che la loro disponibilità sia mostrata in modo accurato quando i clienti provano a prenotarli. Per impostazione predefinita, l'orario di lavoro di ogni dipendente corrisponde all'orario di ufficio definito nell'app Prenotazioni Microsoft (vedere l'argomento relativo alla Impostare gli orari di ufficio). Vedere la sezione "Impostare l'orario di ufficio" di [Immettere informazioni aziendali.](enter-business-information.md#set-your-business-hours)
 
 Nella pagina **Personale** è possibile personalizzare l'orario di lavoro dei dipendenti in base alle esigenze dell'azienda e dei dipendenti.
 
@@ -26,11 +26,11 @@ Per impostare gli orari in cui i membri del personale non sono disponibili, in m
 
 ## <a name="customize-employee-working-hours"></a>Personalizzare l'orario di lavoro dei dipendenti
 
-Guardare questo video o seguire i passaggi seguenti per impostare l'orario di lavoro di un dipendente.
+Guarda questo video o segui i passaggi seguenti per impostare l'orario di lavoro di un dipendente.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-1. In Microsoft 365, selezionare l'icona di avvio delle app e quindi **selezionare Prenotazioni.**
+1. In Microsoft 365, seleziona l'icona di avvio delle app e quindi seleziona **Prenotazioni.**
 
 1. Nel riquadro di spostamento selezionare **Personale** e quindi selezionare il membro del personale per cui si vuole impostare l'orario.
 
@@ -42,7 +42,7 @@ Guardare questo video o seguire i passaggi seguenti per impostare l'orario di la
 
    ![Immagine della schermata dell'orario di lavoro del personale di Bookings](../media/bookings-staff-hours.png)
 
-1. Fare **+** clic per aggiungere selettori dell'ora di inizio e di fine.
+1. Fare **+** clic per aggiungere selettori di inizio e ora di fine.
 
 1. Selezionare Salva.
 
@@ -50,11 +50,11 @@ Guardare questo video o seguire i passaggi seguenti per impostare l'orario di la
 
 Quando si pianifica un giorno libero per un dipendente, il dipendente risulterà non disponibile nella pagina di prenotazione. I clienti che usano la pagina di prenotazione non potranno pianificare quel dipendente per un servizio in quella giornata.
 
-1. Nella schermata dell'orario di lavoro, selezionare **la x** accanto al giorno in cui il dipendente sarà libero.
+1. Nella schermata dell'orario di lavoro, selezionare **la x** accanto al giorno di riposo del dipendente.
 
    ![Immagine della schermata dell'orario di lavoro del personale di Bookings con il mouse sul pulsante x](../media/bookings-staff-time-off.png)
 
-1. Se si desidera pianificare un giorno contrassegnato in precedenza come giorno libero, selezionare il segno accanto al giorno **+** che si desidera pianificare.
+1. Se si desidera pianificare un giorno contrassegnato in precedenza come giorno libero, selezionare il segno accanto al **+** giorno che si desidera pianificare.
 
 > [!TIP]
-> Se si pianificano le ferie dei dipendenti o altri blocchi di ferie di grandi dimensioni, vedere la sezione "Pianificare le ferie dei dipendenti" in Pianificare chiusure aziendali, ferie e periodi [di ferie.](schedule-closures-time-off-vacation.md#schedule-employee-time-off)
+> Se si pianificano le ferie dei dipendenti o altri blocchi di tempo libero, vedere la sezione "Pianificare le ferie dei dipendenti" in Pianificare chiusure aziendali, periodi di ferie e [periodi di ferie.](schedule-closures-time-off-vacation.md#schedule-employee-time-off)
