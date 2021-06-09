@@ -17,45 +17,45 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5c76784d78837c324922ffc25539746a4921e426
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 0ddb38e713f08c101639976b9f2c8c1ee32e63a3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769714"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843783"
 ---
-# <a name="create-custom-reports-using-power-bi"></a><span data-ttu-id="5fbb3-104">Creare report personalizzati con Power BI</span><span class="sxs-lookup"><span data-stu-id="5fbb3-104">Create custom reports using Power BI</span></span>
+# <a name="create-custom-reports-using-power-bi"></a><span data-ttu-id="1f836-104">Creare report personalizzati con Power BI</span><span class="sxs-lookup"><span data-stu-id="1f836-104">Create custom reports using Power BI</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="5fbb3-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="5fbb3-105">**Applies to:**</span></span>
-- [<span data-ttu-id="5fbb3-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="5fbb3-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="5fbb3-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="5fbb3-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="1f836-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="1f836-105">**Applies to:**</span></span>
+- [<span data-ttu-id="1f836-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="1f836-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="1f836-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="1f836-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- <span data-ttu-id="5fbb3-108">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="5fbb3-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="5fbb3-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="5fbb3-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="1f836-108">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="1f836-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="1f836-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="1f836-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="5fbb3-110">In questa sezione scoprirai come creare un report Power BI informazioni su Defender per le API endpoint.</span><span class="sxs-lookup"><span data-stu-id="5fbb3-110">In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.</span></span>
+<span data-ttu-id="1f836-110">In questa sezione scoprirai come creare un report Power BI informazioni su Defender per le API endpoint.</span><span class="sxs-lookup"><span data-stu-id="1f836-110">In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.</span></span>
 
-<span data-ttu-id="5fbb3-111">Il primo esempio illustra come connettersi Power BI'API Advanced Hunting e il secondo esempio mostra una connessione alle API OData, ad esempio azioni del computer o avvisi.</span><span class="sxs-lookup"><span data-stu-id="5fbb3-111">The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.</span></span>
+<span data-ttu-id="1f836-111">Il primo esempio illustra come connettersi Power BI'API Advanced Hunting e il secondo esempio mostra una connessione alle API OData, ad esempio azioni del computer o avvisi.</span><span class="sxs-lookup"><span data-stu-id="1f836-111">The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.</span></span>
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a><span data-ttu-id="5fbb3-112">Connessione Power BI api di ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="5fbb3-112">Connect Power BI to Advanced Hunting API</span></span>
+## <a name="connect-power-bi-to-advanced-hunting-api"></a><span data-ttu-id="1f836-112">Connessione Power BI api di ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="1f836-112">Connect Power BI to Advanced Hunting API</span></span>
 
-- <span data-ttu-id="5fbb3-113">Aprire Microsoft Power BI</span><span class="sxs-lookup"><span data-stu-id="5fbb3-113">Open Microsoft Power BI</span></span>
+- <span data-ttu-id="1f836-113">Aprire Microsoft Power BI</span><span class="sxs-lookup"><span data-stu-id="1f836-113">Open Microsoft Power BI</span></span>
 
-- <span data-ttu-id="5fbb3-114">Fare **clic su Ottieni query** vuota  >  **dati**</span><span class="sxs-lookup"><span data-stu-id="5fbb3-114">Click **Get Data** > **Blank Query**</span></span>
+- <span data-ttu-id="1f836-114">Fare **clic su Ottieni query** vuota  >  **dati**</span><span class="sxs-lookup"><span data-stu-id="1f836-114">Click **Get Data** > **Blank Query**</span></span>
 
     ![Immagine della creazione di una query vuota](images/power-bi-create-blank-query.png)
 
-- <span data-ttu-id="5fbb3-116">Fare clic **su Editor avanzato**</span><span class="sxs-lookup"><span data-stu-id="5fbb3-116">Click **Advanced Editor**</span></span>
+- <span data-ttu-id="1f836-116">Fare clic **su Editor avanzato**</span><span class="sxs-lookup"><span data-stu-id="1f836-116">Click **Advanced Editor**</span></span>
 
     ![Immagine dell'editor avanzato aperto](images/power-bi-open-advanced-editor.png)
 
-- <span data-ttu-id="5fbb3-118">Copiare quanto segue e incollarlo nell'editor:</span><span class="sxs-lookup"><span data-stu-id="5fbb3-118">Copy the below and paste it in the editor:</span></span>
+- <span data-ttu-id="1f836-118">Copiare quanto segue e incollarlo nell'editor:</span><span class="sxs-lookup"><span data-stu-id="1f836-118">Copy the below and paste it in the editor:</span></span>
 
 ```
     let 
@@ -96,31 +96,31 @@ ms.locfileid: "52769714"
 
 ```
 
-- <span data-ttu-id="5fbb3-119">Fare clic **su Fine**</span><span class="sxs-lookup"><span data-stu-id="5fbb3-119">Click **Done**</span></span>
+- <span data-ttu-id="1f836-119">Fare clic **su Fine**</span><span class="sxs-lookup"><span data-stu-id="1f836-119">Click **Done**</span></span>
 
-- <span data-ttu-id="5fbb3-120">Fare **clic su Modifica credenziali**</span><span class="sxs-lookup"><span data-stu-id="5fbb3-120">Click **Edit Credentials**</span></span>
+- <span data-ttu-id="1f836-120">Fare **clic su Modifica credenziali**</span><span class="sxs-lookup"><span data-stu-id="1f836-120">Click **Edit Credentials**</span></span>
 
     ![Immagine delle credenziali di modifica0](images/power-bi-edit-credentials.png)
 
-- <span data-ttu-id="5fbb3-122">Seleziona **Account organizzazione**  >  **Accedi**</span><span class="sxs-lookup"><span data-stu-id="5fbb3-122">Select **Organizational account** > **Sign in**</span></span>
+- <span data-ttu-id="1f836-122">Seleziona **Account organizzazione**  >  **Accedi**</span><span class="sxs-lookup"><span data-stu-id="1f836-122">Select **Organizational account** > **Sign in**</span></span>
 
     ![Immagine del set di credenziali1](images/power-bi-set-credentials-organizational.png)
 
-- <span data-ttu-id="5fbb3-124">Immettere le credenziali e attendere l'accesso</span><span class="sxs-lookup"><span data-stu-id="5fbb3-124">Enter your credentials and wait to be signed in</span></span>
+- <span data-ttu-id="1f836-124">Immettere le credenziali e attendere l'accesso</span><span class="sxs-lookup"><span data-stu-id="1f836-124">Enter your credentials and wait to be signed in</span></span>
 
-- <span data-ttu-id="5fbb3-125">Fare **clic Connessione**</span><span class="sxs-lookup"><span data-stu-id="5fbb3-125">Click **Connect**</span></span>
+- <span data-ttu-id="1f836-125">Fare **clic Connessione**</span><span class="sxs-lookup"><span data-stu-id="1f836-125">Click **Connect**</span></span>
 
     ![Immagine del set di credenziali2](images/power-bi-set-credentials-organizational-cont.png)
 
-- <span data-ttu-id="5fbb3-127">Ora i risultati della query verranno visualizzati come tabella ed è possibile iniziare a creare visualizzazioni sopra di essa.</span><span class="sxs-lookup"><span data-stu-id="5fbb3-127">Now the results of your query will appear as table and you can start build visualizations on top of it!</span></span>
+- <span data-ttu-id="1f836-127">Ora i risultati della query verranno visualizzati come tabella ed è possibile iniziare a creare visualizzazioni sopra di essa.</span><span class="sxs-lookup"><span data-stu-id="1f836-127">Now the results of your query will appear as table and you can start build visualizations on top of it!</span></span>
 
-- <span data-ttu-id="5fbb3-128">È possibile duplicare la tabella, rinominarla e modificare la query ricerca avanzata all'interno per ottenere i dati che si desidera.</span><span class="sxs-lookup"><span data-stu-id="5fbb3-128">You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.</span></span>
+- <span data-ttu-id="1f836-128">È possibile duplicare la tabella, rinominarla e modificare la query ricerca avanzata all'interno per ottenere i dati che si desidera.</span><span class="sxs-lookup"><span data-stu-id="1f836-128">You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.</span></span>
 
-## <a name="connect-power-bi-to-odata-apis"></a><span data-ttu-id="5fbb3-129">Connessione Power BI alle API OData</span><span class="sxs-lookup"><span data-stu-id="5fbb3-129">Connect Power BI to OData APIs</span></span>
+## <a name="connect-power-bi-to-odata-apis"></a><span data-ttu-id="1f836-129">Connessione Power BI alle API OData</span><span class="sxs-lookup"><span data-stu-id="1f836-129">Connect Power BI to OData APIs</span></span>
 
-- <span data-ttu-id="5fbb3-130">L'unica differenza rispetto all'esempio precedente è la query all'interno dell'editor.</span><span class="sxs-lookup"><span data-stu-id="5fbb3-130">The only difference from the above example is the query inside the editor.</span></span> 
+- <span data-ttu-id="1f836-130">L'unica differenza rispetto all'esempio precedente è la query all'interno dell'editor.</span><span class="sxs-lookup"><span data-stu-id="1f836-130">The only difference from the above example is the query inside the editor.</span></span> 
 
-- <span data-ttu-id="5fbb3-131">Copia quanto segue e incollalo nell'editor per estrarre tutte **le azioni del computer** dall'organizzazione:</span><span class="sxs-lookup"><span data-stu-id="5fbb3-131">Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:</span></span>
+- <span data-ttu-id="1f836-131">Copia quanto segue e incollalo nell'editor per estrarre tutte **le azioni del computer** dall'organizzazione:</span><span class="sxs-lookup"><span data-stu-id="1f836-131">Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:</span></span>
 
 ```
     let
@@ -133,19 +133,19 @@ ms.locfileid: "52769714"
 
 ```
 
-- <span data-ttu-id="5fbb3-132">È possibile eseguire la stessa operazione per **Avvisi** e **computer.**</span><span class="sxs-lookup"><span data-stu-id="5fbb3-132">You can do the same for **Alerts** and **Machines**.</span></span>
+- <span data-ttu-id="1f836-132">È possibile eseguire la stessa operazione per **Avvisi** e **computer.**</span><span class="sxs-lookup"><span data-stu-id="1f836-132">You can do the same for **Alerts** and **Machines**.</span></span>
 
-- <span data-ttu-id="5fbb3-133">È inoltre possibile utilizzare query OData per filtri di query, vedere [Utilizzo di query OData](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="5fbb3-133">You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)</span></span>
-
-
-## <a name="power-bi-dashboard-samples-in-github"></a><span data-ttu-id="5fbb3-134">Power BI di dashboard in GitHub</span><span class="sxs-lookup"><span data-stu-id="5fbb3-134">Power BI dashboard samples in GitHub</span></span>
-<span data-ttu-id="5fbb3-135">Per ulteriori informazioni, vedere i [modelli Power BI report.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)</span><span class="sxs-lookup"><span data-stu-id="5fbb3-135">For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).</span></span>
-
-## <a name="sample-reports"></a><span data-ttu-id="5fbb3-136">Report di esempio</span><span class="sxs-lookup"><span data-stu-id="5fbb3-136">Sample reports</span></span>
-<span data-ttu-id="5fbb3-137">Visualizza gli esempi di report di Microsoft Defender for Endpoint Power BI.</span><span class="sxs-lookup"><span data-stu-id="5fbb3-137">View the Microsoft Defender for Endpoint Power BI report samples.</span></span> <span data-ttu-id="5fbb3-138">Per ulteriori informazioni, vedere [Sfogliare gli esempi di codice.](https://docs.microsoft.com/samples/browse/?products=mdatp)</span><span class="sxs-lookup"><span data-stu-id="5fbb3-138">For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).</span></span>
+- <span data-ttu-id="1f836-133">È inoltre possibile utilizzare query OData per filtri di query, vedere [Utilizzo di query OData](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="1f836-133">You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)</span></span>
 
 
-## <a name="related-topic"></a><span data-ttu-id="5fbb3-139">Argomento correlato</span><span class="sxs-lookup"><span data-stu-id="5fbb3-139">Related topic</span></span>
-- [<span data-ttu-id="5fbb3-140">API defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="5fbb3-140">Defender for Endpoint APIs</span></span>](apis-intro.md)
-- [<span data-ttu-id="5fbb3-141">Rilevazione avanzata API</span><span class="sxs-lookup"><span data-stu-id="5fbb3-141">Advanced Hunting API</span></span>](run-advanced-query-api.md)
-- [<span data-ttu-id="5fbb3-142">Uso di query OData</span><span class="sxs-lookup"><span data-stu-id="5fbb3-142">Using OData Queries</span></span>](exposed-apis-odata-samples.md)
+## <a name="power-bi-dashboard-samples-in-github"></a><span data-ttu-id="1f836-134">Power BI di dashboard in GitHub</span><span class="sxs-lookup"><span data-stu-id="1f836-134">Power BI dashboard samples in GitHub</span></span>
+<span data-ttu-id="1f836-135">Per ulteriori informazioni, vedere i [modelli Power BI report.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)</span><span class="sxs-lookup"><span data-stu-id="1f836-135">For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).</span></span>
+
+## <a name="sample-reports"></a><span data-ttu-id="1f836-136">Report di esempio</span><span class="sxs-lookup"><span data-stu-id="1f836-136">Sample reports</span></span>
+<span data-ttu-id="1f836-137">Visualizza gli esempi di report di Microsoft Defender for Endpoint Power BI.</span><span class="sxs-lookup"><span data-stu-id="1f836-137">View the Microsoft Defender for Endpoint Power BI report samples.</span></span> <span data-ttu-id="1f836-138">Per ulteriori informazioni, vedere [Sfogliare gli esempi di codice.](/samples/browse/?products=mdatp)</span><span class="sxs-lookup"><span data-stu-id="1f836-138">For more information, see [Browse code samples](/samples/browse/?products=mdatp).</span></span>
+
+
+## <a name="related-topic"></a><span data-ttu-id="1f836-139">Argomento correlato</span><span class="sxs-lookup"><span data-stu-id="1f836-139">Related topic</span></span>
+- [<span data-ttu-id="1f836-140">API defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="1f836-140">Defender for Endpoint APIs</span></span>](apis-intro.md)
+- [<span data-ttu-id="1f836-141">Rilevazione avanzata API</span><span class="sxs-lookup"><span data-stu-id="1f836-141">Advanced Hunting API</span></span>](run-advanced-query-api.md)
+- [<span data-ttu-id="1f836-142">Uso di query OData</span><span class="sxs-lookup"><span data-stu-id="1f836-142">Using OData Queries</span></span>](exposed-apis-odata-samples.md)
