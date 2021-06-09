@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f2b9a1365a27bb7397aea51dcd5bc9e2631afe2
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 371208433cbb0f65ab5a2808318c03dae6bb6d8b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624706"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842289"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Distribuire Microsoft Defender per Endpoint in iOS
 
@@ -44,7 +44,7 @@ Questo argomento descrive la distribuzione di Defender for Endpoint in iOS Porta
 - Verificare che la registrazione iOS sia stata eseguita per gli utenti. Gli utenti devono disporre di una licenza defender per endpoint assegnata per poter usare Defender per Endpoint in iOS. Per istruzioni [su come assegnare licenze, vedere](/azure/active-directory/users-groups-roles/licensing-groups-assign) Assegnare licenze agli utenti.
 
 > [!NOTE]
-> Microsoft Defender per Endpoint su iOS è ora disponibile [nell'App Store di Apple.](https://aka.ms/mdatpiosappstore)
+> Microsoft Defender per Endpoint su iOS è disponibile [nell'Apple App Store.](https://aka.ms/mdatpiosappstore)
 
 ## <a name="deployment-steps"></a>Fasi di distribuzione
 
@@ -78,13 +78,10 @@ Distribuire Defender per Endpoint in iOS tramite Portale aziendale Intune.
 
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Onboarding automatico del profilo VPN (onboarding semplificato)
 
-> [!NOTE]
-> L'onboarding automatico del profilo VPN è attualmente in anteprima e i passaggi indicati in questa sezione potrebbero essere sostanzialmente modificati prima che venga rilasciato commercialmente.
-
 Gli amministratori possono configurare la configurazione automatica del profilo VPN. In questo modo verrà automaticamente creato il profilo VPN defender per endpoint senza che l'utente lo faccia durante l'onboarding. Si noti che la VPN viene utilizzata per fornire la funzionalità di protezione Web. Non si tratta di una NORMALE VPN ed è una VPN locale/con looping che non porta traffico all'esterno del dispositivo.
 
 1. [Nell'interfaccia di amministrazione di Microsoft Endpoint manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vai a **Profili** di configurazione  ->  **dei dispositivi**  ->  **Crea profilo.**
-1. Scegli **Piattaforma** come **iOS/iPadOS** e **Tipo di profilo** come **VPN.** Fare clic su **Crea**.
+1. Scegli **Piattaforma** come **iOS/iPadOS** e **Tipo di profilo** come **VPN.** Fai clic su **Crea**.
 1. Digitare un nome per il profilo e fare clic su **Avanti.**
 1. Seleziona **VPN personalizzata** per Tipo di connessione e nella sezione Vpn di **base** immetti quanto segue:
     - Connection Name = Microsoft Defender for Endpoint
@@ -107,7 +104,7 @@ Gli amministratori possono configurare la configurazione automatica del profilo 
 
     ![Schermata di uno smart phone Descrizione generata automaticamente](images/41627a709700c324849bf7e13510c516.png)
 
-2. Tocca l'icona dell'app Defender for Endpoint e segui le istruzioni visualizzate per completare la procedura di onboarding. I dettagli includono l'accettazione da parte dell'utente finale delle autorizzazioni iOS richieste da Defender per Endpoint in iOS.
+2. Tocca l'icona dell'app Defender for Endpoint (MSDefender) e segui le istruzioni visualizzate per completare la procedura di onboarding. I dettagli includono l'accettazione da parte dell'utente finale delle autorizzazioni iOS richieste da Defender per Endpoint in iOS.
 
 3. Al completamento dell'onboarding, il dispositivo inizierà a essere visualizzato nell'elenco Dispositivi Microsoft Defender Security Center.
 
@@ -133,7 +130,7 @@ Intune consente di configurare l'app Defender per iOS tramite un criterio di con
 1. Nella pagina *Crea criteri di configurazione* app fornire le informazioni seguenti:
     - Nome criterio
     - Piattaforma: seleziona iOS/iPadOS
-    - App di destinazione: **seleziona Microsoft Defender ATP** dall'elenco
+    - App di destinazione: seleziona **Microsoft Defender Endpoint** dall'elenco
 
     > [!div class="mx-imgBorder"]
     > ![Immagine di Microsoft Endpoint Manager Admin Center5](images/ios-deploy-5.png)

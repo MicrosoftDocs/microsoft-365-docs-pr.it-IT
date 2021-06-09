@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: e919f697048840b0eb7bffd34914328fe233f823
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d827fb89a082286b1b7b77ea0a14e588ce171161
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935162"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842195"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Onboarding di dispositivi Windows 10 con Configuration Manager
 
@@ -32,7 +32,7 @@ ms.locfileid: "51935162"
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Ramo corrente di Microsoft Endpoint Configuration Manager
+- Microsoft Endpoint Configuration Manager corrente
 - System Center Configuration Manager 2012 R2
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -53,42 +53,42 @@ A partire da Configuration Manager versione 2002, è possibile eseguire l'onboar
 - Windows 10
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server 2016, versione 1803 o successiva
+- Windows Server 2016 versione 1803 o successiva
 - Windows Server 2019
 
 >[!NOTE]
->Per ulteriori informazioni su come eseguire l'onboardazione di Windows Server 2012 R2, Windows Server 2016 e Windows Server 2019, vedere [Onboard Windows servers.](configure-server-endpoints.md)
+>Per ulteriori informazioni su come eseguire l'onboard Windows Server 2012 R2, Windows Server 2016 e Windows Server 2019, vedere [Onboard Windows servers](configure-server-endpoints.md).
 
 
 
-### <a name="onboard-devices-using-system-center-configuration-manager"></a>Onboardare i dispositivi con System Center Configuration Manager
+### <a name="onboard-devices-using-system-center-configuration-manager"></a>Onboard dei dispositivi con System Center Configuration Manager
 
 
 [![Immagine del PDF che mostra i vari percorsi di distribuzione](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
 
-Consultare il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per visualizzare i vari percorsi nella distribuzione di Microsoft Defender per Endpoint. 
+Consulta il [pdf o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) il [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per vedere i vari percorsi nella distribuzione di Microsoft Defender per Endpoint. 
 
 
 
-1. Aprire il file ZIP del pacchetto di configurazione di Configuration Manager (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1. Aprire il file del pacchetto di .zip configuration manager (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Onboarding.**
+    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **onboarding**.
     
     1. Seleziona Windows 10 come sistema operativo.
 
-    1. Nel campo **Metodo di** distribuzione selezionare System Center Configuration **Manager 2012/2012 R2/1511/1602.**
+    1. Nel campo **Metodo di** distribuzione selezionare **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    1. Seleziona **Scarica pacchetto** e salva il file ZIP.
+    1. Seleziona **Scarica pacchetto** e salva il file .zip file.
 
-2. Estrarre il contenuto del file ZIP in un percorso condiviso di sola lettura accessibile dagli amministratori di rete che distribuiranno il pacchetto. Dovresti avere un file denominato *WindowsDefenderATPOnboardingScript.cmd.*
+2. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dagli amministratori di rete che distribuiranno il pacchetto. Dovresti avere un file denominato *WindowsDefenderATPOnboardingScript.cmd.*
 
-3. Distribuire il pacchetto seguendo la procedura descritta nell'articolo Pacchetti e programmi [in System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
+3. Distribuire il pacchetto seguendo la procedura descritta nell'articolo [Packages and Programs in System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
 
     a. Scegli una raccolta di dispositivi predefinita in cui distribuire il pacchetto.
 
 > [!NOTE]
-> Defender for Endpoint non supporta l'onboarding durante la [fase out-of-box experience (OOBE).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Assicurarsi che gli utenti completino la Configurazione guidata dopo l'esecuzione dell'installazione o dell'aggiornamento di Windows.
+> Defender for Endpoint non supporta l'onboarding durante la [fase out-of-box experience (OOBE).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Assicurarsi che gli utenti completino la Procedura guidata dopo l'Windows o l'aggiornamento.
 
 >[!TIP]
 > Dopo l'onboarding del dispositivo, puoi scegliere di eseguire un test di rilevamento per verificare che un dispositivo sia stato correttamente onboarding nel servizio. Per altre informazioni, vedi Eseguire un test di rilevamento in un dispositivo [Defender per endpoint appena onboarded.](run-detection-test.md)
@@ -98,7 +98,7 @@ Consultare il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/pu
 > 
 > Questo comportamento può essere ottenuto creando una regola di rilevamento che controlla se il valore del Registro di sistema "OnboardingState" (di tipo REG_DWORD) = 1.
 > Questo valore del Registro di sistema si trova in "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
-Per ulteriori informazioni, vedere [Configure Detection Methods in System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
+Per ulteriori informazioni, vedere [Configure Detection Methods in System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
 
 ### <a name="configure-sample-collection-settings"></a>Configurare le impostazioni della raccolta di esempio
 
@@ -127,7 +127,7 @@ I valori possibili sono:
 
 Il valore predefinito nel caso in cui la chiave del Registro di sistema non esista è 1.
 
-Per ulteriori informazioni sulla conformità di System Center Configuration Manager, vedere Introduzione alle impostazioni di [conformità in System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))
+Per ulteriori informazioni sulla System Center Configuration Manager conformità, vedere Introduzione alle impostazioni di [conformità in System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))
 
 
 ## <a name="other-recommended-configuration-settings"></a>Altre impostazioni di configurazione consigliate
@@ -175,23 +175,23 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 
 ### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Offboard devices using Microsoft Endpoint Manager current branch
 
-Se usi il ramo corrente di Microsoft Endpoint Manager, vedi [Creare un file di configurazione di offboarding.](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
+Se usi il Microsoft Endpoint Manager corrente, vedi Creare un file di [configurazione di offboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivi offboard con System Center 2012 R2 Configuration Manager
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Ottenere il pacchetto di offboarding da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1. Ottenere il pacchetto di offboarding [da Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >   **Offboarding.**
+    1. Nel riquadro di spostamento selezionare **Impostazioni**  >   **offboarding**.
 
     1. Seleziona Windows 10 come sistema operativo.
 
-    1. Nel campo **Metodo di** distribuzione selezionare System Center Configuration **Manager 2012/2012 R2/1511/1602.**
+    1. Nel campo **Metodo di** distribuzione selezionare **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    1. Seleziona **Scarica pacchetto** e salva il file ZIP.
+    1. Seleziona **Scarica pacchetto** e salva il file .zip file.
 
-2. Estrarre il contenuto del file ZIP in un percorso condiviso di sola lettura accessibile dagli amministratori di rete che distribuiranno il pacchetto. Dovresti avere un file denominato *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dagli amministratori di rete che distribuiranno il pacchetto. Dovresti avere un file denominato *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Distribuire il pacchetto seguendo la procedura descritta nell'articolo Pacchetti e programmi [in System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
+3. Distribuire il pacchetto seguendo la procedura descritta nell'articolo [Packages and Programs in System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
 
     a. Scegli una raccolta di dispositivi predefinita in cui distribuire il pacchetto.
 
@@ -201,7 +201,7 @@ Se usi il ramo corrente di Microsoft Endpoint Manager, vedi [Creare un file di c
 
 ## <a name="monitor-device-configuration"></a>Monitorare la configurazione del dispositivo
 
-Se usi il ramo corrente di Microsoft Endpoint Manager, usa il dashboard predefinito di Defender for Endpoint nella console di Configuration Manager. Per altre informazioni, vedi [Defender for Endpoint - Monitor.](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
+Se usi il ramo Microsoft Endpoint Manager corrente, usa il dashboard predefinito di Defender for Endpoint nella console di Configuration Manager. Per altre informazioni, vedi [Defender for Endpoint - Monitor.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
 
 Se si usa System Center 2012 R2 Configuration Manager, il monitoraggio è costituito da due parti:
 
@@ -237,10 +237,10 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-Per ulteriori informazioni, vedere [Introduzione alle impostazioni di conformità in System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))
+Per ulteriori informazioni, vedere [Introduction to compliance settings in System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Onboardare dispositivi Windows 10 con Criteri di gruppo](configure-endpoints-gp.md)
+- [Onboardare Windows 10 dispositivi con Criteri di gruppo](configure-endpoints-gp.md)
 - [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](configure-endpoints-mdm.md)
 - [Onboarding di dispositivi Windows 10 con uno script locale](configure-endpoints-script.md)
 - [Aggiungere dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](configure-endpoints-vdi.md)

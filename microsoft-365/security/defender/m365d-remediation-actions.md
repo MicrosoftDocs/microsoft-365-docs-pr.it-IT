@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f025f23242c28f698e6f67755cc59d21c4463914
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: c8d3838194c25ba49b2611dc355b21e228291b01
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782946"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842529"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Azioni di correzione in Microsoft 365 Defender
 
@@ -74,7 +74,7 @@ Oltre alle azioni di correzione che seguono indagini automatizzate, il team dell
 - Azione manuale della posta elettronica, ad esempio l'eliminazione recidiva dei messaggi di posta elettronica 
 - [Azione di ricerca](../defender-endpoint/advanced-hunting-overview.md) avanzata su dispositivi o posta elettronica
 - [Azione di Explorer](../office-365-security/threat-explorer.md) sul contenuto della posta elettronica, ad esempio lo spostamento della posta elettronica nella posta indesiderata, l'eliminazione recisa della posta elettronica o l'eliminazione permanente della posta elettronica
-- Azione [di risposta in tempo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) reale manuale, ad esempio l'eliminazione di un file, l'arresto di un processo e la rimozione di un'attività pianificata
+- Azione [di risposta in tempo](/windows/security/threat-protection/microsoft-defender-atp/live-response) reale manuale, ad esempio l'eliminazione di un file, l'arresto di un processo e la rimozione di un'attività pianificata
 - Azione di risposta in tempo reale con Le API di [Microsoft Defender per endpoint,](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)ad esempio isolare un dispositivo, eseguire un'analisi antivirus e ottenere informazioni su un file
 
 ## <a name="next-steps"></a>Passaggi successivi

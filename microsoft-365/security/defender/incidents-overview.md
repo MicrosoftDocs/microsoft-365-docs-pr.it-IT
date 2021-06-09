@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cc2fcd7410c2f3122fb3ce49a40e93bfa0767331
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9970bb6d410f39ff5d796dec678a750342f0f599
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539024"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842027"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Eventi imprevisti in Microsoft 365 Defender
 
@@ -185,5 +185,5 @@ Le attività giornaliere, mensili, trimestrali e annuali possono essere utilizza
 
   - Eseguire [indagini](investigate-incidents.md) su eventi imprevisti.
 
-- Vedi questi [playbook di risposta agli eventi imprevisti](https://docs.microsoft.com/security/compass/incident-response-playbooks) per indicazioni dettagliate su phishing, spray per password e attacchi di concessione del consenso delle app.
+- Vedi questi [playbook di risposta agli eventi imprevisti](/security/compass/incident-response-playbooks) per indicazioni dettagliate su phishing, spray per password e attacchi di concessione del consenso delle app.
 

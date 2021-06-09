@@ -1,7 +1,7 @@
 ---
 title: Aggiungere dispositivi Windows 10 multi-sessione in Windows Virtual Desktop
-description: Altre informazioni in questo articolo sull'onboarding di dispositivi Windows 10 multi-sessione in Desktop virtuale Windows
-keywords: Desktop virtuale Windows, WVD, microsoft defender, endpoint, onboard
+description: Altre informazioni in questo articolo sull'onboarding Windows 10 dispositivi multi-sessione in Windows Desktop virtuale
+keywords: Windows Desktop virtuale, WVD, microsoft defender, endpoint, onboard
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,30 +15,30 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764318"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841847"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Aggiungere dispositivi Windows 10 multi-sessione in Windows Virtual Desktop 
 6 minuti per leggere 
 
 Si applica a: 
-- Windows 10 multi-sessione in esecuzione su Desktop virtuale Windows (WVD) 
+- Windows 10 multi-sessione in esecuzione Windows Virtual Desktop (WVD) 
 
-Microsoft Defender for Endpoint supporta il monitoraggio sia delle sessioni VDI che di Desktop virtuale Windows. A seconda delle esigenze dell'organizzazione, potrebbe essere necessario implementare sessioni VDI o Desktop virtuale Windows per consentire ai dipendenti di accedere ai dati aziendali e alle app da un dispositivo non gestito, da una posizione remota o da uno scenario simile. Con Microsoft Defender per Endpoint, puoi monitorare queste macchine virtuali per individuare attività anomase.
+Microsoft Defender for Endpoint supporta il monitoraggio di sessioni VDI Windows virtual desktop. A seconda delle esigenze dell'organizzazione, potrebbe essere necessario implementare sessioni VDI o desktop virtuale Windows per consentire ai dipendenti di accedere ai dati aziendali e alle app da un dispositivo non gestito, da una posizione remota o da uno scenario simile. Con Microsoft Defender per Endpoint, puoi monitorare queste macchine virtuali per individuare attività anomase.
 
  ## <a name="before-you-begin"></a>Prima di iniziare
-Acquisire familiarità con le considerazioni [relative a VDI non persistente.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Desktop [virtuale Windows](https://docs.microsoft.com/azure/virtual-desktop/overview) non offre opzioni di non persistenza, ma offre modi per usare un'immagine Windows dorata che può essere usata per effettuare il provisioning di nuovi host e ridistribuire i computer. Ciò aumenta la volatilità nell'ambiente e influisce quindi sulle voci create e gestite nel portale di Microsoft Defender for Endpoint, riducendo potenzialmente la visibilità per gli analisti della sicurezza.
+Acquisire familiarità con le considerazioni [relative a VDI non persistente.](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Anche [Windows Desktop](/azure/virtual-desktop/overview) virtuale non fornisce opzioni di non persistenza, offre modi per usare un'immagine Windows dorata che può essere usata per effettuare il provisioning di nuovi host e ridistribuire i computer. Ciò aumenta la volatilità nell'ambiente e influisce quindi sulle voci create e gestite nel portale di Microsoft Defender for Endpoint, riducendo potenzialmente la visibilità per gli analisti della sicurezza.
 
 > [!NOTE]
 > A seconda del metodo di onboarding scelto, i dispositivi possono essere visualizzati nel portale di Microsoft Defender per endpoint come uno dei seguenti: 
 > - Voce singola per ogni desktop virtuale 
 > - Più voci per ogni desktop virtuale 
 
-Microsoft consiglia l'onboarding di Desktop virtuale Windows come singola voce per ogni desktop virtuale. Ciò garantisce che l'esperienza di indagine nel portale di Microsoft Defender Endpoint sia nel contesto di un dispositivo basato sul nome del computer. Le organizzazioni che eliminano e ridistribuino frequentemente gli host WVD devono prendere in considerazione l'uso di questo metodo perché impedisce la creazione di più oggetti per lo stesso computer nel portale di Microsoft Defender for Endpoint. Ciò può causare confusione durante l'analisi degli eventi imprevisti. Per ambienti di test o non volatili, è possibile scegliere in modo diverso. 
+Microsoft consiglia l'onboarding Windows desktop virtuale come singola voce per ogni desktop virtuale. Ciò garantisce che l'esperienza di indagine nel portale di Microsoft Defender Endpoint sia nel contesto di un dispositivo basato sul nome del computer. Le organizzazioni che eliminano e ridistribuino frequentemente gli host WVD devono prendere in considerazione l'uso di questo metodo perché impedisce la creazione di più oggetti per lo stesso computer nel portale di Microsoft Defender for Endpoint. Ciò può causare confusione durante l'analisi degli eventi imprevisti. Per ambienti di test o non volatili, è possibile scegliere in modo diverso. 
 
 Microsoft consiglia di aggiungere lo script di onboarding di Microsoft Defender for Endpoint all'immagine D'oro WVD. In questo modo, è possibile assicurarsi che questo script di onboarding venga eseguito immediatamente al primo avvio. Viene eseguito come script di avvio al primo avvio in tutti i computer WVD di cui viene eseguito il provisioning dall'immagine D'oro WVD. Tuttavia, se si utilizza una delle immagini della raccolta senza modifiche, posizionare lo script in un percorso condiviso e chiamarlo da Criteri di gruppo locali o di dominio. 
 
@@ -63,14 +63,14 @@ In questo scenario viene utilizzato uno script situato centralmente ed eseguito 
 
 **Scaricare il file WindowsDefenderATPOnboardingPackage.zip dal Centro sicurezza Windows Defender sicurezza**
 
-1. Aprire il file ZIP del pacchetto di configurazione VDI (WindowsDefenderATPOnboardingPackage.zip)  
+1. Aprire il file del pacchetto .zip VDI (WindowsDefenderATPOnboardingPackage.zip)  
 
-    1. Nel riquadro di spostamento di Microsoft Defender Security Center seleziona  >  **Impostazioni Onboarding.** 
+    1. Nel riquadro Microsoft Defender Security Center di spostamento selezionare **Impostazioni**  >  **onboarding**. 
     1. Seleziona Windows 10 come sistema operativo. 
     1. Nel campo **Metodo di distribuzione** selezionare Gli script di onboarding VDI per gli endpoint non persistenti. 
-    1. Fai **clic su Scarica** pacchetto e salva il file ZIP. 
+    1. Fai **clic su Scarica pacchetto** e salva il file .zip file. 
 
-2. Estrarre il contenuto del file ZIP in un percorso condiviso di sola lettura accessibile dal dispositivo. Dovresti avere una cartella denominata **OptionalParamsPolicy** e i file **WindowsDefenderATPOnboardingScript.cmd** **eOnboard-NonPersistentMachine.ps1**.
+2. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dal dispositivo. Dovresti avere una cartella denominata **OptionalParamsPolicy** e i file **WindowsDefenderATPOnboardingScript.cmd** **eOnboard-NonPersistentMachine.ps1**.
 
 **Utilizzare la console Gestione Criteri di gruppo per eseguire lo script all'avvio della macchina virtuale**
 
@@ -78,7 +78,7 @@ In questo scenario viene utilizzato uno script situato centralmente ed eseguito 
 
 2. Nell'Editor Gestione Criteri di gruppo, vai a **Configurazione computer** Preferenze \> **Impostazioni pannello** di \> **controllo**. 
 
-3. Fai clic con il **pulsante destro del mouse** su Attività pianificate, fai clic su Nuovo e quindi su **Attività** immediata (almeno Windows 7).  
+3. Fare clic con il **pulsante destro del mouse** su Attività pianificate, scegliere Nuovo e quindi Attività immediata (almeno Windows 7).   
 
 4. Nella finestra Attività visualizzata passare alla **scheda** Generale. In **Opzioni di sicurezza fare** clic su Cambia utente o **gruppo** e digitare SISTEMA. Fare **clic su Controlla nomi** e quindi su OK. NT AUTHORITY\SYSTEM viene visualizzato come account utente con cui verrà eseguita l'attività. 
 
@@ -98,7 +98,7 @@ In questo scenario viene utilizzato uno script situato centralmente ed eseguito 
 
 Se si prevede di gestire i computer con uno strumento di gestione, è possibile eseguire l'onboardboard dei dispositivi con Microsoft Endpoint Configuration Manager.
 
-Per altre informazioni, vedi [Onboard di dispositivi Windows 10 con Configuration Manager.](configure-endpoints-sccm.md)
+Per altre informazioni, vedi [Onboard Windows 10 dispositivi con Configuration Manager.](configure-endpoints-sccm.md)
 
 > [!WARNING]
 > Se si prevede di utilizzare le regole di riduzione della superficie di [attacco,](attack-surface-reduction.md)tenere presente che la regola " Bloccare le creazioni di processi originate dai[comandi PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)e WMI " non deve essere utilizzata, perché tale regola non è compatibile con la gestione tramite Microsoft Endpoint Configuration Manager. La regola blocca i comandi WMI utilizzati dal client di Configuration Manager per funzionare correttamente. 
@@ -144,7 +144,7 @@ Inoltre, se si utilizzano profili utente FSlogix, è consigliabile escludere i f
 
 `%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
 
-#### <a name="licensing-requirements"></a>Requisiti per la licenza 
+#### <a name="licensing-requirements"></a>Requisiti di licenza 
 
-Nota sulle licenze: quando si usa Windows 10 Enterprise multi-sessione, a seconda dei requisiti, è possibile scegliere di disporre della licenza di tutti gli utenti tramite Microsoft Defender for Endpoint (per utente), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5 oppure disporre della macchina virtuale con licenza tramite Azure Defender.
+Nota sulle licenze: quando si usa Windows 10 Enterprise più sessioni, Windows 10 Enterprise base alle proprie esigenze, è possibile scegliere di disporre della licenza per tutti gli utenti tramite Microsoft Defender for Endpoint (per utente), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5 oppure disporre della licenza per la macchina virtuale tramite Azure Defender.
 I requisiti di licenza per Microsoft Defender per endpoint sono disponibili all'indirizzo: [Licensing requirements](minimum-requirements.md#licensing-requirements).

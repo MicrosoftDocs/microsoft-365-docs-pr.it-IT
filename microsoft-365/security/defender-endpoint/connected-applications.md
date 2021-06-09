@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893498"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845583"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Applicazioni connesse in Microsoft Defender for Endpoint
 
@@ -37,9 +37,9 @@ ms.locfileid: "51893498"
 
 Le applicazioni connesse si integrano con la piattaforma Defender for Endpoint usando le API. 
 
-Le applicazioni usano il protocollo OAuth 2.0 standard per autenticare e fornire token da usare con le API di Microsoft Defender for Endpoint.  Inoltre, le applicazioni di Azure Active Directory (Azure AD) consentono agli amministratori tenant di impostare un controllo esplicito sulle API a cui è possibile accedere usando l'app corrispondente.
+Le applicazioni usano il protocollo OAuth 2.0 standard per autenticare e fornire token da usare con le API di Microsoft Defender for Endpoint.  Inoltre, le Azure Active Directory (Azure AD) consentono agli amministratori tenant di impostare un controllo esplicito sulle API a cui è possibile accedere usando l'app corrispondente.
  
-Dovrai seguire questi [passaggi](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) per usare le API con l'applicazione connessa.
+Dovrai seguire questi [passaggi](/microsoft-365/security/defender-endpoint/apis-intro) per usare le API con l'applicazione connessa.
  
 ## <a name="access-the-connected-application-page"></a>Accedere alla pagina dell'applicazione connessa
 Nel menu di spostamento a sinistra seleziona **Partner & API Applicazioni**  >  **AAD connesse.**

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892842"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845631"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contattare il supporto di Microsoft Defender per endpoint
 
@@ -46,9 +46,9 @@ Il nuovo widget consente ai clienti di:
 Come minimo, è necessario disporre di un ruolo di amministratore del supporto **tecnico o** dell'helpdesk.
 
 
-Per ulteriori informazioni sui ruoli che dispongono dell'autorizzazione, vedere [Autorizzazioni di amministratore della sicurezza](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). I ruoli che includono `microsoft.office365.supportTickets/allEntities/allTasks` l'azione possono inviare un caso.
+Per ulteriori informazioni sui ruoli che dispongono dell'autorizzazione, vedere [Autorizzazioni di amministratore della sicurezza](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). I ruoli che includono `microsoft.office365.supportTickets/allEntities/allTasks` l'azione possono inviare un caso.
 
-Per informazioni generali sui ruoli di amministratore, vedere [Informazioni sui ruoli di amministratore.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
+Per informazioni generali sui ruoli di amministratore, vedere [Informazioni sui ruoli di amministratore.](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
 
 
 ## <a name="access-the-widget"></a>Accedere al widget
@@ -58,7 +58,7 @@ L'accesso al nuovo widget di supporto può essere eseguito in due modi:
 
     ![Immagine del widget quando è selezionato il punto interrogativo](images/support-widget.png)
 
-2. Fare clic sul **pulsante Serve aiuto?**  in basso a destra di Microsoft Defender Security Center:
+2. Fare clic sul **pulsante Serve aiuto?**  nella parte inferiore destra del Microsoft Defender Security Center:
 
 
     ![Immagine del pulsante Serve aiuto](images/need-help.png)

@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: fdaa4d7cbc24ae2ebe28d0856b413f4982fe6b01
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929050"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845643"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocco e contenimento comportamentale
 
@@ -38,19 +38,19 @@ ms.locfileid: "51929050"
 
 ## <a name="overview"></a>Panoramica
 
-Il panorama delle minacce di oggi è invaso da [malware senza file](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) e che vive fuori dalla terra, minacce altamente polimorfiche che mutano più velocemente rispetto alle soluzioni tradizionali possono tenere il passo e attacchi gestiti dall'uomo che si adattano a ciò che gli avversari trovano nei dispositivi compromessi. Le soluzioni di sicurezza tradizionali non sono sufficienti per arrestare tali attacchi; sono necessarie funzionalità supportate dall'intelligenza artificiale (AI) e dall'apprendimento dei dispositivi (ML), ad esempio il blocco comportamentale e il contenimento, incluse in [Defender for Endpoint.](https://docs.microsoft.com/windows/security) 
+Il panorama delle minacce di oggi è invaso da [malware senza file](/windows/security/threat-protection/intelligence/fileless-threats) e che vive fuori dalla terra, minacce altamente polimorfiche che mutano più velocemente rispetto alle soluzioni tradizionali possono tenere il passo e attacchi gestiti dall'uomo che si adattano a ciò che gli avversari trovano nei dispositivi compromessi. Le soluzioni di sicurezza tradizionali non sono sufficienti per arrestare tali attacchi; hai bisogno di funzionalità supportate dall'intelligenza artificiale (AI) e dall'apprendimento dei dispositivi (ML), come il blocco comportamentale e il contenimento, incluse in [Defender for Endpoint.](/windows/security) 
 
-Le funzionalità di blocco e contenimento comportamentali possono aiutare a identificare e arrestare le minacce, in base ai comportamenti e agli alberi di processo, anche quando la minaccia ha iniziato l'esecuzione. I componenti e le funzionalità di protezione di nuova generazione, EDR e Defender per endpoint funzionano insieme nelle funzionalità di blocco e contenimento comportamentali. 
+Le funzionalità di blocco e contenimento comportamentali possono aiutare a identificare e arrestare le minacce, in base ai comportamenti e agli alberi di processo, anche quando la minaccia ha iniziato l'esecuzione. I componenti e le funzionalità di protezione, EDR e Defender for Endpoint di nuova generazione funzionano insieme nelle funzionalità di blocco e contenimento comportamentali. 
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Blocco e contenimento comportamentale":::
 
 Le funzionalità di blocco e contenimento comportamentali funzionano con più componenti e funzionalità di Defender for Endpoint per arrestare immediatamente gli attacchi e impedire l'avanzamento degli attacchi.
 
-- [La protezione di nuova generazione](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (che include Microsoft Defender Antivirus) può rilevare le minacce analizzando i comportamenti e arrestare le minacce avviate.
+- [La protezione di nuova generazione](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (che include Antivirus Microsoft Defender) può rilevare le minacce analizzando i comportamenti e arrestare le minacce avviate.
 
-- [Il rilevamento e la risposta degli endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) ricevono segnali di sicurezza attraverso la rete, i dispositivi e il comportamento del kernel. Quando vengono rilevate minacce, vengono creati avvisi. Più avvisi dello stesso tipo vengono aggregati in eventi imprevisti, semplificando l'analisi e la risposta del team delle operazioni di sicurezza.
+- [Il rilevamento e la risposta](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) degli endpoint (EDR) ricevono segnali di sicurezza in rete, dispositivi e comportamento del kernel. Quando vengono rilevate minacce, vengono creati avvisi. Più avvisi dello stesso tipo vengono aggregati in eventi imprevisti, semplificando l'analisi e la risposta del team delle operazioni di sicurezza.
 
-- [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) ha un'ampia gamma di ottica tra identità, posta elettronica, dati e app, oltre ai segnali di comportamento di rete, endpoint e kernel ricevuti tramite EDR. Un componente di [Microsoft 365 Defender,](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)Defender for Endpoint elabora e correla questi segnali, genera avvisi di rilevamento e connette gli avvisi correlati negli eventi imprevisti.
+- [Defender for Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) ha un'ampia gamma di ottica tra identità, posta elettronica, dati e app, oltre ai segnali di comportamento di rete, endpoint e kernel ricevuti tramite EDR. Un componente di [Microsoft 365 Defender,](/microsoft-365/security/defender/microsoft-threat-protection)Defender for Endpoint elabora e correla questi segnali, genera avvisi di rilevamento e connette gli avvisi correlati negli eventi imprevisti.
 
 Con queste funzionalità, è possibile impedire o bloccare più minacce, anche se iniziano a essere eseguite. Ogni volta che viene rilevato un comportamento sospetto, la minaccia viene contenuta, vengono creati avvisi e le minacce vengono arrestate nelle loro tracce. 
 
@@ -60,15 +60,15 @@ L'immagine seguente mostra un esempio di un avviso attivato dalle funzionalità 
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Componenti del blocco comportamentale e del contenimento
 
-- **Regole di riduzione della [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction) superficie** di attacco basata su criteri sul client L'esecuzione di comportamenti di attacco comuni predefiniti non è consentita, in base alle regole di riduzione della superficie di attacco. Quando questi comportamenti tentano di essere eseguiti, possono essere visualizzati in Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) come avvisi informativi. Le regole di riduzione della superficie di attacco non sono abilitate per impostazione predefinita, ma devi configurare i criteri in Microsoft Defender Security Center.
+- **Regole di riduzione della [](/microsoft-365/security/defender-endpoint/attack-surface-reduction) superficie** di attacco basata su criteri sul client L'esecuzione di comportamenti di attacco comuni predefiniti non è consentita, in base alle regole di riduzione della superficie di attacco. Quando questi comportamenti tentano di essere eseguiti, possono essere visualizzati nel Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) come avvisi informativi. Per impostazione predefinita, le regole di riduzione della superficie di attacco non sono abilitate; i criteri vengono configurati nella Microsoft Defender Security Center.
 
 - **[Blocco comportamentale client](client-behavioral-blocking.md)** Le minacce sugli endpoint vengono rilevate tramite machine learning e quindi vengono bloccate e corretti automaticamente. Il blocco comportamentale del client è abilitato per impostazione predefinita. 
 
 - **[Il blocco del ciclo di feedback](feedback-loop-blocking.md)** (noto anche come protezione rapida) I rilevamenti delle minacce vengono osservati tramite l'intelligenza comportamentale. Le minacce vengono arrestate e impedite l'esecuzione su altri endpoint. Il blocco del ciclo di feedback è abilitato per impostazione predefinita. 
 
-- **[Rilevamento e risposta degli endpoint (EDR) in modalità blocco](edr-in-block-mode.md)** Gli artefatti o i comportamenti dannosi osservati tramite la protezione post-violazione sono bloccati e contenuti. EdR in modalità blocco funziona anche se Microsoft Defender Antivirus non è la soluzione antivirus principale. La funzionalità EDR in modalità blocco non è abilitata per impostazione predefinita, ma viene attivata in Microsoft Defender Security Center. 
+- **[Rilevamento e risposta degli endpoint (EDR) in modalità blocco](edr-in-block-mode.md)** Gli artefatti o i comportamenti dannosi osservati tramite la protezione post-violazione sono bloccati e contenuti. EDR in modalità blocco funziona anche se Antivirus Microsoft Defender non è la soluzione antivirus principale. La EDR in modalità blocco non è abilitata per impostazione predefinita, ma viene attivata nel Microsoft Defender Security Center. 
 
-Ci si aspetta di più nell'area del blocco comportamentale e del contenimento, poiché Microsoft continua a migliorare le funzionalità e le funzionalità di protezione dalle minacce. Per vedere cosa è pianificato e in distribuzione ora, visitare la roadmap [di Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
+Ci si aspetta di più nell'area del blocco comportamentale e del contenimento, poiché Microsoft continua a migliorare le funzionalità e le funzionalità di protezione dalle minacce. Per vedere cosa è pianificato e in implementazione ora, visitare la roadmap [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
 
 ## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>Esempi di blocco comportamentale e contenimento in azione
 
@@ -96,9 +96,9 @@ I modelli di apprendimento dei dispositivi basati sul comportamento in Defender 
 - Il primo livello di protezione ha rilevato il comportamento di exploit. I classificatori di apprendimento dei dispositivi nel cloud hanno identificato correttamente la minaccia come e hanno immediatamente indicato al dispositivo client di bloccare l'attacco.
 - Il secondo livello di protezione, che ha consentito di arrestare i casi in cui l'attacco è passato al primo livello, ha rilevato la cavità del processo, ha interrotto il processo e rimosso i file corrispondenti (ad esempio Lokibot). 
 
-Mentre l'attacco è stato rilevato e arrestato, gli avvisi, ad esempio un "avviso di accesso iniziale", sono stati attivati e visualizzati in Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ):
+Mentre l'attacco è stato rilevato e arrestato, gli avvisi, ad esempio un "avviso di accesso iniziale", sono stati attivati e visualizzati nel Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ):
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Avviso di accesso iniziale in Microsoft Defender Security Center":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Avviso di accesso iniziale nella Microsoft Defender Security Center":::
 
 Questo esempio mostra come i modelli di apprendimento dei dispositivi basati sul comportamento nel cloud aggiungono nuovi livelli di protezione dagli attacchi, anche dopo l'avvio dell'esecuzione.
 
@@ -120,12 +120,12 @@ Questo esempio mostra che con le funzionalità di blocco e contenimento comporta
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Altre informazioni su Defender per Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [Altre informazioni su Defender per Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 
 - [Configurare le regole di riduzione della superficie di attacco](attack-surface-reduction.md)
 
-- [Abilitare EDR in modalità blocco](edr-in-block-mode.md)
+- [Abilita EDR in modalità blocco](edr-in-block-mode.md)
 
 - [Vedere attività recenti sulle minacce globali](https://www.microsoft.com/wdsi/threats)
 
-- [Panoramica di Microsoft 365 Defender ](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- [Panoramica di Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9da87dcb64f8c62966382e3a2888f03c49149a09
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 071b0e7597d334fe06d5045e06a5c4d82dd65609
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770432"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845391"
 ---
 # <a name="get-exposure-score"></a>Ottenere punteggio di esposizione
 
@@ -99,5 +99,5 @@ Ecco un esempio di risposta.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Gestione delle vulnerabilità basata sui rischi & rischio](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Punteggio di esposizione & rischio di vulnerabilità](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Gestione delle vulnerabilità basata sui rischi & rischio](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Punteggio di esposizione & rischio di vulnerabilità](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

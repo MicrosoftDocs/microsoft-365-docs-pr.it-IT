@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a107c6364e6766094724972e931606003e0c87f7
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 3346f6b4d05eb514bf680f87eb8452d9fd4bab38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445197"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841991"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Descrizione del servizio Microsoft Managed Desktop
 
@@ -27,7 +27,7 @@ Microsoft Managed Desktop è un servizio che offre agli utenti un'esperienza mod
 - Configurazione dei dispositivi
 - Funzionalità per proteggere utenti e dispositivi, inclusi Windows Hello, BitLocker, SecureBoot e sicurezza basata sulla virtualizzazione secondo le migliori pratiche Microsoft
 - Monitoraggio della sicurezza dei dispositivi e servizi di correzione
-- Compatibilità delle app tramite [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure)
+- Compatibilità delle app tramite [App Assure](/fasttrack/products-and-capabilities#app-assure)
 - Gestione degli aggiornamenti per Windows 10 e delle app di Microsoft 365 Apps for enterprise
 - Dati analitici sull'utilizzo di dispositivi e app
 - Supporto IT per utenti

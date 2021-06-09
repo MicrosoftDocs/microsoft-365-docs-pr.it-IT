@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 81a3b41fb8e38a224a030571093b2145d2efb3d4
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593430"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841835"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboardare Windows 10 dispositivi con Criteri di gruppo 
 
@@ -62,7 +62,7 @@ Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/m
 
 2. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dal dispositivo. Dovresti avere una cartella denominata *OptionalParamsPolicy* e il file *WindowsDefenderATPOnboardingScript.cmd.*
 
-3. Aprire console [Gestione Criteri di](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) gruppo, fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
+3. Aprire console [Gestione Criteri di](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) gruppo, fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
 
 4. **Nell'Editor Gestione Criteri di gruppo** vai a Configurazione **computer,** quindi **Preferenze** e quindi impostazioni del Pannello **di controllo.**
 
@@ -97,7 +97,7 @@ Per ogni dispositivo, puoi indicare se i campioni possono essere raccolti dal di
 
     - Copiare _AtpConfiguration.adml_ in _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions \\ en-US_
 
-2.  Aprire la [Console Gestione Criteri di gruppo,](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
+2.  Aprire la [Console Gestione Criteri di gruppo,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
 
 3.  **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer**.
 
@@ -148,7 +148,7 @@ Inviare esempi di file quando è necessaria un'ulteriore analisi | Enabled, Send
 
 Criterio | Impostazione 
 :---|:---
-Disattivare la protezione in tempo reale|Disabilitato
+Disattivare la protezione in tempo reale|Disattivato
 Attivare il monitoraggio del comportamento|Abilitato
 Analizzare tutti i file e gli allegati scaricati|Abilitato
 Monitorare le attività di file e programmi nel computer|Abilitato
@@ -208,7 +208,7 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 
 2. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dal dispositivo. Dovresti avere un file denominato *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Aprire console [Gestione Criteri di](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) gruppo, fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
+3. Aprire console [Gestione Criteri di](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) gruppo, fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
 
 4. **Nell'Editor Gestione Criteri di gruppo** vai a Configurazione **computer,** Quindi **Preferenze** e quindi Impostazioni pannello **di controllo.**
 

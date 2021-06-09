@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b937dd41f0296f2cf4102f41f8ab10bd55e1c35d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200282"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845571"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteggere le cartelle importanti con l'accesso controllato alle cartelle
 
@@ -36,10 +36,10 @@ ms.locfileid: "51200282"
 
 ## <a name="what-is-controlled-folder-access"></a>Che cos'è l'accesso controllato alle cartelle?
 
-L'accesso controllato alle cartelle consente di proteggere i dati importanti da app e minacce dannose, ad esempio ransomware. L'accesso controllato alle cartelle protegge i dati controllando le app da un elenco di app note e attendibili. Supportato nei client Windows Server 2019 e Windows 10, l'accesso controllato alle cartelle può essere attivato tramite App di sicurezza di Windows, Microsoft Endpoint Configuration Manager o Intune (per i dispositivi gestiti). 
+L'accesso controllato alle cartelle consente di proteggere i dati importanti da app e minacce dannose, ad esempio ransomware. L'accesso controllato alle cartelle protegge i dati controllando le app da un elenco di app note e attendibili. Supportato nei client Windows Server 2019 e Windows 10, l'accesso controllato alle cartelle può essere attivato tramite l'app Sicurezza di Windows, Microsoft Endpoint Configuration Manager o Intune (per i dispositivi gestiti). 
 
 > [!NOTE]
-> I motori di script non sono attendibili e non è possibile consentire loro l'accesso alle cartelle protette controllate.  Ad esempio, PowerShell non è considerato attendibile dall'accesso controllato alle cartelle, anche se si consente con [indicatori di file e certificati.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates) 
+> I motori di script non sono attendibili e non è possibile consentire loro l'accesso alle cartelle protette controllate.  Ad esempio, PowerShell non è considerato attendibile dall'accesso controllato alle cartelle, anche se si consente con [indicatori di file e certificati.](/microsoft-365/security/defender-endpoint/indicator-certificates) 
 
 L'accesso controllato alle cartelle funziona meglio con [Microsoft Defender for Endpoint,](microsoft-defender-endpoint.md)che fornisce report dettagliati sugli eventi di accesso controllato alle cartelle e sui blocchi nell'ambito dei soliti scenari di analisi [degli avvisi.](investigate-alerts.md)
 
@@ -65,12 +65,12 @@ Le [cartelle protette](#review-controlled-folder-access-events-in-windows-event-
 È possibile utilizzare [la modalità di controllo](audit-windows-defender.md) per valutare l'impatto dell'accesso controllato alle cartelle nell'organizzazione se fosse abilitato. È inoltre possibile visitare il sito Web Windows Defender test di base [all'indirizzo demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) per verificare che la funzionalità funzioni e vedere come funziona.
 
 L'accesso controllato alle cartelle è supportato nelle seguenti versioni di Windows:
-- [Windows 10, versione 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) e successive
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) e successive
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Le cartelle di sistema di Windows sono protette per impostazione predefinita
+## <a name="windows-system-folders-are-protected-by-default"></a>Windows cartelle di sistema sono protette per impostazione predefinita
 
-Le cartelle di sistema di Windows sono protette per impostazione predefinita, insieme a diverse altre cartelle: 
+Windows cartelle di sistema sono protette per impostazione predefinita, insieme a diverse altre cartelle: 
 
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
@@ -83,17 +83,17 @@ Le cartelle di sistema di Windows sono protette per impostazione predefinita, in
 - `c:\Users\<username>\Favorites`
 
 > [!NOTE]
-> È possibile configurare cartelle aggiuntive come protette, ma non è possibile rimuovere le cartelle di sistema di Windows protette per impostazione predefinita.
+> È possibile configurare cartelle aggiuntive come protette, ma non è possibile rimuovere Windows di sistema protette per impostazione predefinita.
 
 ## <a name="requirements-for-controlled-folder-access"></a>Requisiti per l'accesso controllato alle cartelle
 
-L'accesso controllato alle cartelle richiede [l'abilitazione](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)della protezione in tempo reale di Microsoft Defender Antivirus.
+L'accesso controllato alle cartelle [richiede Antivirus Microsoft Defender protezione in tempo reale.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>Esaminare gli eventi di accesso controllato alle cartelle in Microsoft Defender Security Center
+## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>Esaminare gli eventi di accesso controllato alle cartelle nella Microsoft Defender Security Center
 
 Defender for Endpoint fornisce report dettagliati su eventi e blocchi nell'ambito degli scenari di [analisi degli avvisi.](investigate-alerts.md)
 
-Puoi eseguire una query su Microsoft Defender per i dati dell'endpoint usando [Ricerca avanzata.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection) Se usi la modalità [di](audit-windows-defender.md)controllo, puoi usare la ricerca avanzata per vedere in che modo le impostazioni di accesso controllato alle cartelle influirebbero sull'ambiente se fossero abilitate. [](advanced-hunting-overview.md)
+Puoi eseguire una query su Microsoft Defender per i dati dell'endpoint usando [Ricerca avanzata.](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection) Se usi la modalità [di](audit-windows-defender.md)controllo, puoi usare la ricerca avanzata per vedere in che modo le impostazioni di accesso controllato alle cartelle influirebbero sull'ambiente se fossero abilitate. [](advanced-hunting-overview.md)
 
 Query di esempio:
 
@@ -102,12 +102,12 @@ DeviceEvents
 | where ActionType in ('ControlledFolderAccessViolationAudited','ControlledFolderAccessViolationBlocked')
 ```
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Esaminare gli eventi di accesso controllato alle cartelle nel Visualizzatore eventi di Windows
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Esaminare gli eventi di accesso controllato alle cartelle nel Visualizzatore Windows eventi
 
-Puoi esaminare il registro eventi di Windows per visualizzare gli eventi che vengono creati quando un'app controlla o blocca l'accesso controllato alle cartelle:
+Puoi esaminare il registro Windows eventi per visualizzare gli eventi che vengono creati quando un'app controlla o blocca l'accesso controllato alle cartelle:You can review the Windows event log to see events that are created when controlled folder access blocks (or audits) an app:
 
 1. Scarica il [pacchetto di valutazione](https://aka.ms/mp7z2w) ed estrai il file *cfa-events.xml* in un percorso facilmente accessibile nel dispositivo.
-2. Digita **Visualizzatore** eventi nel menu Start per aprire il Visualizzatore eventi di Windows.
+2. Digita **Visualizzatore eventi** nel menu Start per aprire il Visualizzatore Windows eventi.
 3. Nel riquadro sinistro, in **Azioni,** selezionare **Importa visualizzazione personalizzata...**.
 4. Passare al punto in cui è stato *cfa-events.xml* e selezionarlo. In alternativa, [copiare il codice XML direttamente](event-views.md).
 5. Selezionare **OK**.
@@ -124,19 +124,19 @@ La tabella seguente mostra gli eventi correlati all'accesso controllato alle car
 
 Puoi usare l'app Sicurezza di Windows per visualizzare l'elenco delle cartelle protette dall'accesso controllato alle cartelle. 
 
-1. Nel dispositivo Windows 10 apri l'app Sicurezza di Windows.
-2. Selezionare **Protezione da & virus**.
+1. Nel dispositivo Windows 10, apri l'app Sicurezza di Windows app.
+2. Selezionare **Protezione da virus e minacce**.
 3. In **Protezione ransomware** seleziona Gestisci protezione **ransomware.**
 4. Se l'accesso controllato alle cartelle è disattivato, è necessario attivarlo. Selezionare **cartelle protette**.
-5. Eseguire una delle operazioni seguenti:
+5. Esegui uno dei seguenti passaggi:
    - Per aggiungere una cartella, selezionare **+ Aggiungi una cartella protetta.**
    - Per rimuovere una cartella, selezionarla e quindi **selezionare Rimuovi.** 
 
 > [!NOTE]
-> [Le cartelle di sistema](#windows-system-folders-are-protected-by-default) di Windows sono protette per impostazione predefinita e non è possibile rimuoverle dall'elenco.
+> [Windows cartelle di](#windows-system-folders-are-protected-by-default) sistema sono protette per impostazione predefinita e non è possibile rimuoverle dall'elenco.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Valutare l'accesso controllato alle cartelle](evaluate-controlled-folder-access.md)
-- [Personalizzare l'accesso controllato alle cartelle](customize-controlled-folders.md)
+- [Valutare l’accesso controllato alle cartelle](evaluate-controlled-folder-access.md)
+- [Personalizzare l’accesso controllato alle cartelle](customize-controlled-folders.md)
 - [Proteggere più cartelle](customize-controlled-folders.md#protect-additional-folders)

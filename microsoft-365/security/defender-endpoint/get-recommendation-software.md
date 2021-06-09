@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 68bc53f2ae0b44567530cc1dd733c9dd37d380ca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9227987544e1cee1eeb4b65b5ae6bbf719558dd4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769594"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845211"
 ---
 # <a name="get-recommendation-by-software"></a>Ottenere consigli in base al software
 
@@ -96,5 +96,5 @@ Ecco un esempio di risposta.
 ```
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Gestione delle vulnerabilità basata sui rischi & rischio](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Raccomandazione per la sicurezza & rischio di vulnerabilità](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Gestione delle vulnerabilità basata sui rischi & rischio](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Raccomandazione per la sicurezza & rischio di vulnerabilità](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: d4f62acde4e7d790c7a7c8635f51c99f0823687d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259416"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842771"
 ---
 # <a name="create-and-manage-device-groups"></a>Creazione e gestione di gruppi di dispositivi
 
@@ -75,7 +75,7 @@ Come parte del processo di creazione di un gruppo di dispositivi, dovrai:
     >[!NOTE]
     >È possibile concedere l'accesso solo ai gruppi di utenti di Azure AD assegnati ai ruoli RBAC.
 
-6. Fare clic su **Chiudi**. Le modifiche alla configurazione vengono applicate.
+6. Scegliere **Chiudi**. Le modifiche alla configurazione vengono applicate.
 
 ## <a name="manage-device-groups"></a>Gestire i gruppi di dispositivi
 
@@ -111,4 +111,4 @@ Per altre informazioni sul collegamento alle definizioni dei gruppi di dispositi
 
 - [Gestire l'accesso al portale tramite il controllo dell'accesso basato sui ruoli](rbac.md)
 - [Creare e gestire tag di dispositivi](machine-tags.md)
-- [Ottenere l'elenco dei gruppi di dispositivi tenant usando l Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [Ottenere l'elenco dei gruppi di dispositivi tenant usando l Graph API](/graph/api/device-list-memberof)

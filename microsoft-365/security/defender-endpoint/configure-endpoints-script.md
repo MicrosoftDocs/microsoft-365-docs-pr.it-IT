@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 056268ed093d371d39a6136dd0b272c12ab6f9d7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933914"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842171"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Onboarding di dispositivi Windows 10 con uno script locale
 
@@ -37,28 +37,28 @@ Puoi anche eseguire manualmente l'onboard di singoli dispositivi in Defender for
 > [!IMPORTANT]
 > Questo script è stato ottimizzato per l'uso su un massimo di 10 dispositivi.
 >
-> Per eseguire la distribuzione su larga scala, [utilizzare altre opzioni di distribuzione.](configure-endpoints.md) Ad esempio, puoi distribuire uno script di onboarding a più di 10 dispositivi in produzione con lo script disponibile nei dispositivi [Windows 10](configure-endpoints-gp.md)con Criteri di gruppo.
+> Per eseguire la distribuzione su larga scala, [utilizzare altre opzioni di distribuzione.](configure-endpoints.md) Ad esempio, puoi distribuire uno script di onboarding in più di 10 dispositivi in produzione con lo script disponibile in Onboard Windows 10 dispositivi usando [Criteri di gruppo.](configure-endpoints-gp.md)
 
-## <a name="onboard-devices"></a>Dispositivi onboard 
+## <a name="onboard-devices"></a>Eseguire l'onboarding dei dispositivi 
 
 [![Immagine del PDF che mostra i vari percorsi di distribuzione](images/onboard-script.png)](images/onboard-script.png#lightbox)
 
 
-Consultare il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per visualizzare i vari percorsi nella distribuzione di Defender per Endpoint. 
+Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) il [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per vedere i vari percorsi nella distribuzione di Defender per Endpoint. 
 
 
-1.  Aprire il file ZIP del pacchetto di configurazione criteri *di gruppo*(WindowsDefenderATPOnboardingPackage.zip) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1.  Aprire il file del pacchetto .zip criteri di gruppo (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Onboarding.**
+    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **onboarding**.
 
     1. Seleziona Windows 10 come sistema operativo.
 
     1. Nel campo **Metodo di** distribuzione selezionare **Script locale**.
 
-    1. Fai **clic su Scarica** pacchetto e salva il file ZIP.
+    1. Fai **clic su Scarica pacchetto** e salva il file .zip file.
 
   
-2.  Estrai il contenuto del pacchetto di configurazione in una posizione nel dispositivo che vuoi eseguire l'onboard(ad esempio, desktop). Dovresti avere un file denominato *WindowsDefenderATPOnboardingScript.cmd.*
+2.  Estrai il contenuto del pacchetto di configurazione in una posizione nel dispositivo che vuoi eseguire l'onboard(ad esempio, desktop). Dovresti avere un file denominato *WindowsDefenderATPLocalOnboardingScript.cmd.*
 
 3.  Apri un prompt della riga di comando con privilegi elevati nel dispositivo ed esegui lo script:
 
@@ -68,7 +68,7 @@ Consultare il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/pu
 
         ![Menu Start finestra che punta a Esegui come amministratore](images/run-as-admin.png)
 
-4.  Digitare il percorso del file script. Se il file è stato copiato sul desktop, digitare: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+4.  Digitare il percorso del file script. Se il file è stato copiato sul desktop, digitare: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
 5.  Premere INVIO **o** fare clic su **OK.**
 
@@ -105,17 +105,17 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 > [!NOTE]
 > I criteri di onboarding e offboarding non devono essere distribuiti nello stesso dispositivo contemporaneamente, altrimenti ciò causerà collisioni imprevedibili.
 
-1. Ottenere il pacchetto di offboarding da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1. Ottenere il pacchetto di offboarding [da Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Offboarding.**
+    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **offboarding**.
 
     1. Seleziona Windows 10 come sistema operativo.
 
     1. Nel campo **Metodo di** distribuzione selezionare **Script locale**.
 
-    1. Fai **clic su Scarica** pacchetto e salva il file ZIP.
+    1. Fai **clic su Scarica pacchetto** e salva il file .zip file.
 
-2. Estrarre il contenuto del file ZIP in un percorso condiviso di sola lettura accessibile dai dispositivi. Dovresti avere un file denominato *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dai dispositivi. Dovresti avere un file denominato *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3.  Apri un prompt della riga di comando con privilegi elevati nel dispositivo ed esegui lo script:
 
@@ -139,7 +139,7 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 Il monitoraggio può essere eseguito anche direttamente nel portale o utilizzando i diversi strumenti di distribuzione.
 
 ### <a name="monitor-devices-using-the-portal"></a>Monitorare i dispositivi tramite il portale
-1. Passare a Microsoft Defender Security Center.
+1. Vai a Microsoft Defender Security Center.
 
 2. Fare **clic su Elenco dispositivi**.
 
@@ -147,8 +147,8 @@ Il monitoraggio può essere eseguito anche direttamente nel portale o utilizzand
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Onboardare dispositivi Windows 10 con Criteri di gruppo](configure-endpoints-gp.md)
-- [Onboard dei dispositivi Windows 10 con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboardare Windows 10 dispositivi con Criteri di gruppo](configure-endpoints-gp.md)
+- [Onboard Windows 10 dispositivi con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](configure-endpoints-mdm.md)
 - [Aggiungere dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](configure-endpoints-vdi.md)
 - [Eseguire un test di rilevamento in un dispositivo Microsoft Defender for Endpoint appena onboarded](run-detection-test.md)

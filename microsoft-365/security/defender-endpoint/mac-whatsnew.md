@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6348d688103c51176fbed36c923a660c77a2258d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651273"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842783"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novità di Microsoft Defender per Endpoint su Mac
 
@@ -163,7 +163,7 @@ ms.locfileid: "52651273"
 
 ## <a name="1010031"></a>101.00.31
 
-- Esperienza [di onboarding dei prodotti migliorata per gli utenti di Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
+- Esperienza [di onboarding dei prodotti migliorata per gli utenti di Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Le [esclusioni antivirus ora supportano i caratteri jolly](mac-exclusions.md#supported-exclusion-types)
 - È stata aggiunta la possibilità di attivare le analisi antivirus dal menu contestuale di macOS. Ora puoi fare clic con il pulsante destro del mouse su un file o una cartella nel Finder e selezionare **Analizza con Microsoft Defender for Endpoint**
 - I downgrade sul posto dei prodotti sono ora esplicitamente non consentiti dal programma di installazione. Se devi eseguire il downgrade, disinstalla prima la versione esistente e riconfigura il dispositivo

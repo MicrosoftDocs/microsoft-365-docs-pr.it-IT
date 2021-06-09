@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e0d5a13b0c33516209bd2d18361a1de6ab9245c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7798f3b6bd2f99d48a8fa85ecf088023f4629b7b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932942"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841571"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Eseguire l'onboarded dei dispositivi in Microsoft Defender per Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "51932942"
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Ogni dispositivo onboarded aggiunge un sensore edR (Endpoint Detection and Response) aggiuntivo e aumenta la visibilità sull'attività di violazione nella rete. L'onboarding garantisce inoltre che un dispositivo possa essere controllato alla ricerca di componenti vulnerabili e problemi di configurazione della sicurezza e possa ricevere azioni di correzione critiche durante gli attacchi.
+Ogni dispositivo onboarded aggiunge un ulteriore sensore di rilevamento e risposta degli endpoint (EDR) e aumenta la visibilità sull'attività di violazione nella rete. L'onboarding garantisce inoltre che un dispositivo possa essere controllato alla ricerca di componenti vulnerabili e problemi di configurazione della sicurezza e possa ricevere azioni di correzione critiche durante gli attacchi.
 
 Prima di poter tenere traccia e gestire l'onboarding dei dispositivi:
 - [Registrare i dispositivi nella gestione di Intune](configure-machines.md#enroll-devices-to-intune-management)
@@ -41,17 +41,17 @@ Prima di poter tenere traccia e gestire l'onboarding dei dispositivi:
 
 ## <a name="discover-and-track-unprotected-devices"></a>Individuare e tenere traccia dei dispositivi non protetti
 
-La scheda **di onboarding** offre una panoramica generale della frequenza di onboarding confrontando il numero di dispositivi Windows 10 effettivamente onboarding in Defender per Endpoint con il numero totale di dispositivi Windows 10 gestiti da Intune.
+La scheda **di onboarding** offre una panoramica generale della frequenza di onboarding confrontando il numero di dispositivi Windows 10 che sono stati effettivamente onboarding in Defender per Endpoint con il numero totale di dispositivi Windows 10 gestiti da Intune.
 
 ![Scheda di onboarding per la gestione della configurazione dei dispositivi](images/secconmgmt_onboarding_card.png)<br>
-*Scheda che mostra i dispositivi onboarded rispetto al numero totale di dispositivi Windows 10 gestiti da Intune*
+*Scheda che mostra i dispositivi onboarded rispetto al numero totale di dispositivi Windows 10 Intune*
 
 >[!NOTE]
 >Se hai usato Gestione configurazione Centro sicurezza, lo script di onboarding o altri metodi di onboarding che non usano profili intune, potresti riscontrare discrepanze di dati. Per risolvere queste discrepanze, crea un profilo di configurazione intune corrispondente per Defender per l'onboarding dell'endpoint e assegna il profilo ai dispositivi.
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Onboardare più dispositivi con profili intune
 
-Defender for Endpoint offre diverse opzioni convenienti per [l'onboarding di dispositivi Windows 10.](onboard-configure.md) Per i dispositivi gestiti da Intune, tuttavia, puoi sfruttare i profili di Intune per distribuire comodamente il sensore Defender for Endpoint per selezionare i dispositivi, in modo efficace l'onboarding di questi dispositivi nel servizio.
+Defender for Endpoint offre diverse opzioni convenienti per [l'onboarding Windows 10 dispositivi](onboard-configure.md). Per i dispositivi gestiti da Intune, tuttavia, puoi sfruttare i profili di Intune per distribuire comodamente il sensore Defender for Endpoint per selezionare i dispositivi, in modo efficace l'onboarding di questi dispositivi nel servizio.
 
 Nella scheda **Onboarding** seleziona **Onboarding di altri** dispositivi per creare e assegnare un profilo in Intune. Il collegamento consente di accedere alla pagina di conformità del dispositivo in Intune, che fornisce una panoramica simile dello stato di onboarding.
 
@@ -59,7 +59,7 @@ Nella scheda **Onboarding** seleziona **Onboarding di altri** dispositivi per cr
    *Pagina conformità dispositivo Microsoft Defender for Endpoint nella gestione dei dispositivi intune*
 
 >[!TIP]
->In alternativa, è possibile passare alla pagina Conformità onboarding di Defender for Endpoint nel portale di [Microsoft Azure](https://portal.azure.com/) da Tutti i servizi > Intune > Conformità dei dispositivi **> Microsoft Defender ATP**.
+>In alternativa, è possibile passare alla pagina Conformità onboarding di Defender for Endpoint nel portale [di Microsoft Azure](https://portal.azure.com/) da Tutti i servizi **> Intune > Conformità dispositivo > Microsoft Defender ATP**.
 
 >[!NOTE]
 > Se vuoi visualizzare i dati del dispositivo più aggiornati, fai clic su Elenco di dispositivi senza sensore **ATP.**
@@ -69,7 +69,7 @@ Dalla pagina conformità del dispositivo, crea un profilo di configurazione spec
 - Seleziona Crea un profilo di configurazione del dispositivo per configurare il sensore **ATP** in modo che inizi con un profilo di configurazione del dispositivo predefinito.
 - Crea il profilo di configurazione del dispositivo da zero.
 
-Per altre informazioni, leggi l'uso dei profili di configurazione dei dispositivi [intune per eseguire l'onboardmento dei dispositivi in Defender per Endpoint.](https://docs.microsoft.com/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)
+Per altre informazioni, leggi l'uso dei profili di configurazione dei dispositivi [intune per eseguire l'onboardmento dei dispositivi in Defender per Endpoint.](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 

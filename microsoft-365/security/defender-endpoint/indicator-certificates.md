@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf611e38bc781c2302f70f6491bb827410235b0
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164682"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845452"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Creare indicatori in base ai certificati
 
@@ -30,7 +30,7 @@ ms.locfileid: "51164682"
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -46,9 +46,9 @@ ms.locfileid: "51164682"
 
 Prima di creare indicatori per i certificati, è importante comprendere i requisiti seguenti:
 
-- Questa funzionalità è disponibile se l'organizzazione usa Windows Defender antivirus e la protezione basata su cloud è abilitata. Per ulteriori informazioni, vedere [Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Questa funzionalità è disponibile se l'organizzazione usa Windows Defender Antivirus e la protezione basata su cloud è abilitata. Per ulteriori informazioni, vedere [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - La versione del client Antimalware deve essere 4.18.1901.x o successiva.
-- Supportato nei computer con Windows 10, versione 1703 o successiva, Windows Server 2016 e 2019.
+- Supportato nei computer Windows 10 versione 1703 o successiva, Windows server 2016 e 2019.
 - Le definizioni di protezione da virus e minacce devono essere aggiornate.
 - Questa funzionalità attualmente supporta l'immissione di . CER o . Estensioni di file PEM.
 
@@ -62,7 +62,7 @@ Prima di creare indicatori per i certificati, è importante comprendere i requis
 >[!IMPORTANT]
 > La creazione e la rimozione di un certificato IoC possono richiedere fino a 3 ore.
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Indicatori**.  
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **indicatori**.  
 
 2. Selezionare la **scheda** Certificato.
 
@@ -77,6 +77,6 @@ Prima di creare indicatori per i certificati, è importante comprendere i requis
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Creare indicatori](manage-indicators.md)
-- [Creare indicatori per i file](indicator-file.md)
+- [Creare indicatori per file](indicator-file.md).
 - [Creare indicatori per IP e URL/domini](indicator-ip-domain.md)
-- [Gestire gli indicatori](indicator-manage.md)
+- [Gestire indicatori](indicator-manage.md)

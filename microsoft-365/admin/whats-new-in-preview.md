@@ -21,12 +21,12 @@ description: 'L Microsoft 365 di amministrazione: informazioni sulle funzionalit
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 5bb8377dd45714dcdf25533055159f8964acc558
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779892"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841967"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia Microsoft 365 di amministrazione
 
@@ -291,7 +291,7 @@ Molti amministratori hanno sentito dire che devono condividere informazioni sui 
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 Solution and Architecture Center
 
-Proprio questo mese è stato rilasciato un nuovo sito denominato centro soluzioni e architettura [https://docs.microsoft.com]() [di Microsoft 365,](../solutions/index.yml)che riunisce le indicazioni tecniche necessarie per comprendere, pianificare e implementare soluzioni Microsoft 365 integrate per una collaborazione sicura e conforme. In questo centro troverai:
+Proprio questo mese è stato rilasciato un nuovo sito su docs.microsoft.com denominato centro soluzioni e architettura [di Microsoft 365,](../solutions/index.yml)che riunisce le indicazioni tecniche necessarie per comprendere, pianificare e implementare soluzioni Microsoft 365 integrate per una collaborazione sicura e conforme. In questo centro troverai:
 
 - Linee guida per le soluzioni di base
 - Soluzioni del carico di lavoro e indicazioni per gli scenari

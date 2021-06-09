@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 64a96256ff4bb4b77ec634195f6d89b92252142a
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 894b628575c0788b6a5d4bb23a8fe512d7c467bc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301765"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845607"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novità di Microsoft Defender per Endpoint su iOS
 
@@ -34,6 +34,12 @@ ms.locfileid: "52301765"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1117240101"></a>1.1.17240101
+- Il supporto per Gestione applicazioni mobili (MAM) tramite Intune è generalmente disponibile con questa versione. Per altre informazioni, vedi [Microsoft Defender for Endpoint risk signals available for your App protection policies](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)
+- **Il rilevamento jailbreak** è in genere disponibile. Per ulteriori informazioni, vedere [Setup Conditional Access Policy based on device risk signals.](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- **La configurazione automatica del profilo VPN** per i dispositivi registrati tramite Microsoft Endpoint Manager (Intune) è in genere disponibile. Per altre informazioni, vedi Configurazione automatica del profilo [VPN per i dispositivi iOS registrati.](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
+- Correzione dei bug.
 
 ## <a name="1115140101"></a>1.1.15140101
 

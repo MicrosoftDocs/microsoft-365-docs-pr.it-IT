@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6182b4cb0d1f648f33c3a7fc4da4c648d8996bcd
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5546b69fa924025491e1762d199678fa549a9c7c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770614"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842147"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Accesso partner tramite LE API di Microsoft Defender for Endpoint
 
@@ -40,7 +40,7 @@ ms.locfileid: "52770614"
 Questa pagina descrive come creare un'applicazione Azure Active Directory (Azure AD) per ottenere l'accesso programmatico a Microsoft Defender for Endpoint per conto dei clienti.
 
 
-Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti aiuteranno ad automatizzare i flussi di lavoro e a innovare in base alle funzionalità di Microsoft Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API ti aiuteranno ad automatizzare i flussi di lavoro e a innovare in base alle funzionalità di Microsoft Defender for Endpoint. L'accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In generale, dovrai eseguire la procedura seguente per usare le API:
 - Creare un'applicazione Azure AD **multi-tenant.**
@@ -139,9 +139,9 @@ La procedura seguente illustra come creare un'applicazione Azure AD, ottenere un
 
 **Nota:** Per ottenere il token di accesso per conto del cliente, usa l'ID tenant del cliente nelle acquisizioni di token seguenti.
 
-<br>Per altre informazioni sul token AAD, vedi Esercitazione [su AAD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+<br>Per altre informazioni sul token AAD, vedi Esercitazione [su AAD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
-### <a name="using-powershell"></a>Utilizzo di PowerShell
+### <a name="using-powershell"></a>Usare PowerShell
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory

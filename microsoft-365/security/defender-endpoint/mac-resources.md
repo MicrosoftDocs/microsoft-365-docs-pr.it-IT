@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fa5d5b4470644e1ff50af46a8dd3f035cd9b3184
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346391"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842867"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Risorse per Microsoft Defender per Endpoint in macOS
 
@@ -119,7 +119,7 @@ Le attività importanti, ad esempio il controllo delle impostazioni del prodotto
 |Protezione   |Eseguire un'analisi completa                             |`mdatp scan full`                                                                 |
 |Protezione   |Annullare un'analisi su richiesta in corso           |`mdatp scan cancel`                                                               |
 |Protezione   |Richiedere un aggiornamento di security intelligence     |`mdatp definitions update`                                                        |
-|EDR          |Aggiungi tag di gruppo al dispositivo. EDR vengono usati per la gestione dei gruppi di dispositivi. Per ulteriori informazioni, visitare https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|EDR          |Aggiungi tag di gruppo al dispositivo. EDR vengono usati per la gestione dei gruppi di dispositivi. Per ulteriori informazioni, visitare /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Rimuovere il tag di gruppo dal dispositivo               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |Aggiungere l'ID gruppo                               |`mdatp edr group-ids --group-id [group]`                                          |
 

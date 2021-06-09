@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 1d09eaf04999478a0cd0b4907667a522a23fb39f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571009"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841979"
 ---
 # <a name="enable-controlled-folder-access"></a>Abilitare l’accesso controllato alle cartelle
 
@@ -31,11 +31,11 @@ ms.locfileid: "51571009"
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[L'accesso controllato](controlled-folders.md) alle cartelle consente di proteggere i dati importanti da minacce e app dannose, ad esempio ransomware. L'accesso controllato alle cartelle è incluso in Windows 10 e Windows Server 2019.
+[L'accesso controllato](controlled-folders.md) alle cartelle consente di proteggere i dati importanti da minacce e app dannose, ad esempio ransomware. L'accesso controllato alle cartelle è incluso Windows 10 e Windows Server 2019.
 
 È possibile abilitare l'accesso controllato alle cartelle utilizzando uno dei metodi seguenti:
 
-* [App Sicurezza di Windows](#windows-security-app)
+* [Sicurezza di Windows app](#windows-security-app)
 * [Microsoft Intune](#intune)
 * [Gestione di dispositivi mobili (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -46,14 +46,14 @@ ms.locfileid: "51571009"
 
 Le impostazioni di Criteri di gruppo che disabilitano l'unione degli elenchi di amministratori locali avranno la precedenza su impostazioni di accesso controllato alle cartelle. Ignorano anche le cartelle protette e le app consentite impostate dall'amministratore locale tramite l'accesso controllato alle cartelle. Questi criteri includono:
 
-* Microsoft Defender Antivirus **Configurare il comportamento di unione dell'amministratore locale per gli elenchi**
-* System Center Endpoint Protection **Consenti agli utenti di aggiungere esclusioni e sostituzioni**
+* Antivirus Microsoft Defender comportamento **di unione dell'amministratore locale per gli elenchi**
+* System Center Endpoint Protection consentire **agli utenti di aggiungere esclusioni e sostituzioni**
 
-Per ulteriori informazioni sulla disabilitazione dell'unione di elenchi locali, vedere Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri [di Microsoft Defender AV.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)
+Per ulteriori informazioni sulla disabilitazione dell'unione di elenchi locali, vedere Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri [di Microsoft Defender AV.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)
 
-## <a name="windows-security-app"></a>App Sicurezza di Windows
+## <a name="windows-security-app"></a>Sicurezza di Windows app
 
-1. Apri l'app Sicurezza di Windows selezionando l'icona scudo nella barra delle applicazioni. Puoi anche cercare Defender nel menu **Start.**
+1. Apri l Sicurezza di Windows app selezionando l'icona scudo nella barra delle applicazioni. Puoi anche cercare Defender nel menu **Start.**
 
 2. Seleziona il **riquadro Protezione da &** virus (o l'icona scudo sulla barra dei menu sinistra) e quindi seleziona Protezione **ransomware.**
 
@@ -61,8 +61,8 @@ Per ulteriori informazioni sulla disabilitazione dell'unione di elenchi locali, 
 
 > [!NOTE]
 > Se l'accesso controllato alle cartelle è configurato con Criteri di gruppo, PowerShell o CSP MDM, lo stato cambierà nell'app Sicurezza di Windows dopo un riavvio del dispositivo.
-> Se la funzionalità è impostata sulla **modalità** di controllo con uno di questi strumenti, l'app Sicurezza di Windows mostrerà lo stato come **Disattivato.**
-> Se stai proteggendo i dati del profilo utente, ti consigliamo di usare il profilo utente nell'unità di installazione predefinita di Windows.
+> Se la funzionalità è impostata sulla **modalità** di controllo con uno di questi strumenti, l Sicurezza di Windows app mostrerà lo stato **come Disattivato.**
+> Se si proteggono i dati del profilo utente, è consigliabile che il profilo utente si presenti nell'unità di Windows di installazione predefinita.
 
 ## <a name="intune"></a>Intune
 
@@ -70,7 +70,7 @@ Per ulteriori informazioni sulla disabilitazione dell'unione di elenchi locali, 
 
 2. Vai a **Profili di configurazione** dei  >  **dispositivi**  >  **Crea profilo**.
 
-3. Assegnare un nome al profilo, **scegliere Windows 10 e versioni successive** e Endpoint **protection.** <br/> ![Creare il profilo di endpoint protection](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. Assegnare un nome al **profilo, scegliere Windows 10 e versioni successive** e Endpoint **protection**. <br/> ![Creare il profilo di endpoint protection](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
 
 4. Vai a **Configura Windows Defender** accesso controllato alla cartella di  >  **Exploit Guard**  >    >  **Abilita**.
 
@@ -85,11 +85,11 @@ Per ulteriori informazioni sulla disabilitazione dell'unione di elenchi locali, 
 
 ## <a name="mobile-device-management-mdm"></a>Gestione di dispositivi mobili (MDM)
 
-Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) per consentire alle app di apportare modifiche alle cartelle protette.
+Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) per consentire alle app di apportare modifiche alle cartelle protette.
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, vai a **Assets and Compliance**  >  **Endpoint Protection**  >  **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, andare a **Assets and Compliance**  >  **Endpoint Protection** Windows Defender  >  **Exploit Guard**.
 
 2. Selezionare **Home**  >  **Create Exploit Guard Policy**.
 
@@ -107,16 +107,16 @@ Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/Contro
 
 1. Nel dispositivo di gestione di Criteri di gruppo, aprire la [Console](https://technet.microsoft.com/library/cc731212.aspx)Gestione Criteri di gruppo, fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
 
-2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer** e selezionare **Modelli amministrativi.**
+2. Nell **'Editor Gestione Criteri di gruppo** passare a **Configurazione computer** e selezionare **Modelli amministrativi**.
 
-3. Espandi l'albero fino ai componenti **di Windows > Microsoft Defender Antivirus > Windows Defender Exploit Guard > accesso controllato alle cartelle.**
+3. Espandi l'albero per **Windows componenti > Antivirus Microsoft Defender > Windows Defender Exploit Guard > accesso controllato alle cartelle**.
 
 4. Fare doppio clic **sull'impostazione Configura accesso controllato alle** cartelle e impostare l'opzione su **Abilitato.** Nella sezione opzioni è necessario specificare una delle opzioni seguenti:
-    * **Abilita:** le app dannose e sospette non possono apportare modifiche ai file nelle cartelle protette. Nel registro eventi di Windows verrà fornita una notifica.
+    * **Abilita:** le app dannose e sospette non possono apportare modifiche ai file nelle cartelle protette. Una notifica verrà fornita nel registro Windows eventi.
     * **Disabilita (impostazione predefinita):** la funzionalità Accesso controllato alle cartelle non funzionerà. Tutte le app possono apportare modifiche ai file nelle cartelle protette.
     * **Modalità di controllo:** le modifiche saranno consentite se un'app dannosa o sospetta tenta di apportare una modifica a un file in una cartella protetta. Tuttavia, verrà registrato nel registro eventi di Windows in cui è possibile valutare l'impatto sull'organizzazione.
-    * **Blocca solo la modifica del disco:** i tentativi da parte di app non attendibili di scrivere nei settori del disco verranno registrati nel registro eventi di Windows. Questi registri sono disponibili in **Registri** applicazioni e servizi > Microsoft > Windows > Windows Defender > Operational > ID 1123.
-    * **Controlla solo** la modifica del disco: solo i tentativi di scrittura nei settori del disco protetti verranno registrati nel registro eventi di Windows (in Registri applicazioni e servizi Microsoft Windows Windows Defender ID operativo  >    >    >    >    >  **1124**). I tentativi di modifica o eliminazione di file nelle cartelle protette non verranno registrati.
+    * **Blocca solo la modifica del disco:** i tentativi da parte di app non attendibili di scrivere nei settori del disco verranno registrati Windows registro eventi. Questi registri sono disponibili in **Registri applicazioni** e servizi > Microsoft > Windows > Windows Defender > operativo > ID 1123.
+    * **Controlla** solo la modifica del disco: solo i tentativi di scrittura nei settori del disco protetti verranno registrati nel registro eventi di Windows (in Registri applicazioni e servizi Microsoft Windows Windows Defender ID operativo  >    >    >    >    >  **1124).** I tentativi di modifica o eliminazione di file nelle cartelle protette non verranno registrati.
 
       ![Screenshot of the group policy option Enabled and Audit Mode selected in the drop-down](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
 
@@ -125,7 +125,7 @@ Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/Contro
 
 ## <a name="powershell"></a>PowerShell
 
-1. Digita **powershell** nel menu Start, fai clic con il pulsante destro **del** mouse Windows PowerShell e scegli Esegui **come amministratore.**
+1. Digitare **powershell** nel menu Start, fare clic con il pulsante destro **del** mouse Windows PowerShell e scegliere Esegui **come amministratore.**
 
 2. Immettere il cmdlet seguente:
 

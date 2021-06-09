@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f868570fccf9b30cde5f16aa8e71292fb8b09497
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 5a4beaefb2fcc12d46cf61c22644217dce1807a6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933134"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845367"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Pianificare le analisi con Microsoft Defender for Endpoint (Linux)
 
-Per eseguire un'analisi per Linux, vedi [Comandi supportati.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)
+Per eseguire un'analisi per Linux, vedi [Comandi supportati.](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)
 
 Linux (e Unix) dispongono di uno strumento denominato **crontab** (simile all'Utilità di pianificazione) per poter eseguire attività pianificate.
 
@@ -115,7 +115,7 @@ Automazione con Puppet: processi Cron e attività pianificate
 
 Per altre informazioni, vedere [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).
 
-## <a name="additional-information"></a>Ulteriori informazioni
+## <a name="additional-information"></a>Informazioni aggiuntive
 
 **Per ottenere assistenza con crontab**
 

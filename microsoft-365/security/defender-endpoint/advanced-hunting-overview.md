@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 906ae4bdebcc46e210fa9c5dcb5387c880fdbb38
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 9f1934de8f710a21bc362e735bb6f1eab7a2d287
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939661"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845421"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Ricerca proattiva di minacce con ricerca avanzata
 
@@ -44,7 +44,7 @@ Guarda questo video per una breve panoramica della ricerca avanzata e una breve 
 
 >[!TIP]
 >Usa [la ricerca avanzata in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) per cercare minacce usando i dati di Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity. [Attivare Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
-Per altre informazioni su come spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender, vedere [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+Per altre informazioni su come spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender, vedere Eseguire la migrazione di query di ricerca avanzate [da Microsoft Defender for Endpoint.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="get-started-with-advanced-hunting"></a>Introduzione alla ricerca avanzata
 
@@ -54,7 +54,7 @@ Eseguire i passaggi seguenti per aumentare le conoscenze di ricerca avanzate.
 
 | Obiettivo di formazione | Descrizione | Risorsa |
 |--|--|--|
-| **Informazioni sulla lingua** | La ricerca avanzata si basa [sul linguaggio di query Kusto,](https://docs.microsoft.com/azure/kusto/query/)che supporta la stessa sintassi e gli stessi operatori. Iniziare ad apprendere il linguaggio di query eseguendone la prima. | [Informazioni generali sul linguaggio di query](advanced-hunting-query-language.md) |
+| **Informazioni sulla lingua** | La ricerca avanzata si basa [sul linguaggio di query Kusto,](/azure/kusto/query/)che supporta la stessa sintassi e gli stessi operatori. Iniziare ad apprendere il linguaggio di query eseguendone la prima. | [Informazioni generali sul linguaggio di query](advanced-hunting-query-language.md) |
 | **Informazioni su come utilizzare i risultati della query** | Informazioni sui grafici e sui vari modi in cui è possibile visualizzare o esportare i risultati. Scopri come modificare rapidamente le query ed eseguire il drill-down per ottenere informazioni più dettagliate. | [Usare i risultati delle query](advanced-hunting-query-results.md) |
 | **Comprensione dello schema** | È possibile ottenere una conoscenza buona e approfondita delle tabelle nello schema e delle relative colonne. Informazioni su dove cercare i dati durante la creazione delle query. | [Informazioni di riferimento sullo schema](advanced-hunting-schema-reference.md) |
 | **Utilizzare le query predefinite** | Esplorare le raccolte di query predefinite che coprono diversi scenari di ricerca delle minacce. | [Query condivise](advanced-hunting-shared-queries.md) |

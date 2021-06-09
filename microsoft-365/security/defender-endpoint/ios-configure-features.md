@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dab72da02927c3fff6025eb2d0fa9ed0fdf1d0d7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245277"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842255"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurare Microsoft Defender per le funzionalità di Endpoint in iOS
 
@@ -40,10 +40,10 @@ ms.locfileid: "52245277"
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>Accesso condizionale con Defender per Endpoint in iOS  
 Microsoft Defender for Endpoint su iOS insieme a Microsoft Intune e Azure Active Directory consente di far rispettare la conformità dei dispositivi e i criteri di accesso condizionale in base al punteggio di rischio del dispositivo. Defender for Endpoint è una soluzione Mobile Threat Defense (MTD) che puoi distribuire per sfruttare questa funzionalità tramite Intune.
 
-Per altre informazioni su come configurare l'accesso condizionale con Defender per Endpoint in iOS, vedi [Defender per Endpoint e Intune.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
+Per altre informazioni su come configurare l'accesso condizionale con Defender per Endpoint in iOS, vedi [Defender per Endpoint e Intune.](/mem/intune/protect/advanced-threat-protection)
 
-> [!NOTE]
-> **Il rilevamento jailbreak di Microsoft Defender per Endpoint su iOS è attualmente in anteprima.** Se un dispositivo viene rilevato come jailbroken da Microsoft Defender for Endpoint, verrà segnalato al Centro sicurezza e se l'accesso condizionale viene installato in base al punteggio di rischio del dispositivo, al dispositivo verrà impedito l'accesso ai dati aziendali.
+### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Rilevamento jailbreak da parte di Microsoft Defender per Endpoint
+Microsoft Defender for Endpoint è in grado di rilevare i dispositivi gestiti e non gestiti che sono jailbroken. Se viene rilevato che un dispositivo è jailbroken, verrà segnalato un avviso ad alto rischio al Centro sicurezza e se l'accesso condizionale viene configurazione in base al punteggio di rischio del dispositivo, al dispositivo verrà impedito l'accesso ai dati aziendali.
 
 ## <a name="web-protection-and-vpn"></a>Protezione Web e VPN
 
@@ -71,7 +71,7 @@ Apple iOS non supporta più VPN a livello di dispositivo per essere attive conte
 Per proteggere l'accesso ai dati aziendali nei dispositivi iOS jailbroken, è consigliabile configurare i criteri di conformità seguenti in Intune.
 
 > [!NOTE]
-> Al momento il rilevamento del jailbreak da parte di Microsoft Defender per Endpoint su iOS è in anteprima. Ti consigliamo di configurare questo criterio come ulteriore livello di difesa contro gli scenari di jailbreak.
+> Il rilevamento jailbreak è una funzionalità fornita da Microsoft Defender per Endpoint in iOS. Tuttavia, ti consigliamo di configurare questo criterio come un ulteriore livello di difesa contro gli scenari di jailbreak.
 
 Segui i passaggi seguenti per creare un criterio di conformità per i dispositivi jailbroken.
 
@@ -96,7 +96,7 @@ Segui i passaggi seguenti per creare un criterio di conformità per i dispositiv
 
 ## <a name="configure-custom-indicators"></a>Configurare indicatori personalizzati
 
-Defender for Endpoint su iOS consente agli amministratori di configurare indicatori personalizzati anche nei dispositivi iOS. Per ulteriori informazioni su come configurare gli indicatori personalizzati, vedere [Manage indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators).
+Defender for Endpoint su iOS consente agli amministratori di configurare indicatori personalizzati anche nei dispositivi iOS. Per ulteriori informazioni su come configurare gli indicatori personalizzati, vedere [Manage indicators](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 > [!NOTE]
 > Defender for Endpoint in iOS supporta la creazione di indicatori personalizzati solo per indirizzi IP e URL/domini.
@@ -105,8 +105,3 @@ Defender for Endpoint su iOS consente agli amministratori di configurare indicat
 
 I siti Web di phishing rappresentano siti Web attendibili allo scopo di ottenere informazioni personali o finanziarie. Visitare la [pagina Fornire commenti e](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) suggerimenti sulla protezione di rete se si desidera segnalare un sito Web che potrebbe essere un sito di phishing.
 
-## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>Problemi di consumo della batteria in iOS quando è installato Microsoft Defender for Endpoint
-
-L'utilizzo della batteria da parte di un'app viene calcolato da Apple in base a numerosi fattori, tra cui l'utilizzo della CPU e della rete. Microsoft Defender for Endpoint usa una VPN locale/loop-back in background per controllare il traffico Web per eventuali siti Web o connessioni dannose. I pacchetti di rete da qualsiasi app passano attraverso questo controllo e questo causa il calcolo impreciso dell'utilizzo della batteria di Microsoft Defender per Endpoint. Questo dà una falsa impressione all'utente. Il consumo effettivo della batteria di Microsoft Defender for Endpoint è inferiore a quello visualizzato nella pagina Batteria Impostazioni nel dispositivo. Si basa sui test eseguiti nell'app Microsoft Defender for Endpoint per comprendere il consumo della batteria.
-
-Anche la VPN utilizzata è una VPN locale e, a differenza delle VPN tradizionali, il traffico di rete non viene inviato all'esterno del dispositivo.

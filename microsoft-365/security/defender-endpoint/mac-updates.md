@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 6447aa4182846020312e9be870c5548d9415ac71
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684208"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842831"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuire gli aggiornamenti per Microsoft Defender per Endpoint in macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "52684208"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint su macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -48,7 +48,7 @@ Se decidi di distribuire gli aggiornamenti usando gli strumenti di distribuzione
 
 ## <a name="use-msupdate"></a>Utilizzare msupdate
 
-MAU include uno strumento da riga di comando, denominato *msupdate,* progettato per gli amministratori IT in modo che abbia un controllo più preciso sulla modalità di applicazione degli aggiornamenti. Le istruzioni per l'utilizzo di questo strumento sono disponibili in [Aggiornamento Office per Mac tramite msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
+MAU include uno strumento da riga di comando, denominato *msupdate,* progettato per gli amministratori IT in modo che abbia un controllo più preciso sulla modalità di applicazione degli aggiornamenti. Le istruzioni per l'utilizzo di questo strumento sono disponibili in [Aggiornamento Office per Mac tramite msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
 In MAU, l'identificatore dell'applicazione per Microsoft Defender per Endpoint in macOS è *WDAV00*. Per scaricare e installare gli aggiornamenti più recenti per Microsoft Defender for Endpoint in macOS, eseguire il comando seguente da una finestra del terminale:
 
@@ -256,4 +256,4 @@ Per configurare MAU, è possibile distribuire questo profilo di configurazione d
 
 ## <a name="resources"></a>Risorse
 
-- [riferimento msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
+- [riferimento msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c50efb11ee7f884be6788b90c14e7fc639d9b8ca
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281006"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841793"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint su Linux
 
@@ -328,7 +328,7 @@ Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Tenere presente che potrebbe essere necessario configurare un proxy anche dopo aver completato l'installazione iniziale. Vedi [Configurare Defender per Endpoint su Linux per l'individuazione di proxy statici: configurazione post-installazione.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
+    > Tenere presente che potrebbe essere necessario configurare un proxy anche dopo aver completato l'installazione iniziale. Vedi [Configurare Defender per Endpoint su Linux per l'individuazione di proxy statici: configurazione post-installazione.](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
 
 5. Eseguire un test di rilevamento per verificare che il dispositivo sia correttamente onboarded e che il servizio sia segnalato. Eseguire la procedura seguente nel dispositivo appena onboarded:
 
@@ -409,4 +409,4 @@ Durante l'aggiornamento del sistema operativo a una nuova versione principale, d
 Vedi [Disinstallare](linux-resources.md#uninstall) per informazioni dettagliate su come rimuovere Defender per Endpoint su Linux dai dispositivi client.
 
 ## <a name="see-also"></a>Vedere anche
-- [Analizzare i problemi di integrità degli agenti](health-status.md)
+- [Esaminare i problemi di integrità dell'agente](health-status.md)

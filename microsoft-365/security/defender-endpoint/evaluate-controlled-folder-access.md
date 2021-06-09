@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 15ea4696052a6c987314e3c7b0dd282a49ed4df8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569906"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842915"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Valutare l’accesso controllato alle cartelle
 
@@ -31,7 +31,7 @@ ms.locfileid: "51569906"
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[L'accesso controllato](controlled-folders.md) alle cartelle è una funzionalità che consente di proteggere i documenti e i file da modifiche da app sospette o dannose. L'accesso controllato alle cartelle è supportato nei client Windows Server 2019 e Windows 10.
+[L'accesso controllato](controlled-folders.md) alle cartelle è una funzionalità che consente di proteggere i documenti e i file da modifiche da app sospette o dannose. L'accesso controllato alle cartelle è supportato Windows Server 2019 e Windows 10 client.
 
 È particolarmente utile per proteggere da [ransomware](https://www.microsoft.com/wdsi/threats/ransomware) che tenta di crittografare i file e tenerli in ostaggio.
 
@@ -54,9 +54,9 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 > Se si desidera controllare completamente il funzionamento dell'accesso controllato alle cartelle nell'organizzazione, è necessario utilizzare uno strumento di gestione per distribuire questa impostazione nei dispositivi della rete.
 Puoi anche usare Criteri di gruppo, Intune, gestione dei dispositivi mobili (MDM) o Microsoft Endpoint Manager per configurare e distribuire l'impostazione, come descritto nell'argomento principale accesso controllato [alle cartelle.](controlled-folders.md)
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Esaminare gli eventi di accesso controllato alle cartelle nel Visualizzatore eventi di Windows
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Esaminare gli eventi di accesso controllato alle cartelle nel Visualizzatore Windows eventi
 
-I seguenti eventi di accesso controllato alle cartelle vengono visualizzati nel Visualizzatore eventi di Windows nella cartella Microsoft/Windows/Windows Defender/Operational.
+I seguenti eventi di accesso controllato alle cartelle vengono visualizzati Windows visualizzatore eventi in Microsoft/Windows/Windows Defender/Operational.
 
 ID evento | Descrizione
 -|-
@@ -65,7 +65,7 @@ ID evento | Descrizione
  1123 | Evento di accesso controllato alla cartella bloccato
 
 > [!TIP]
-> È possibile configurare una sottoscrizione di [Inoltro eventi di Windows per](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) raccogliere i registri in modo centralizzato. 
+> È possibile configurare una sottoscrizione [Windows inoltro eventi per](/windows/win32/wec/setting-up-a-source-initiated-subscription) raccogliere i registri in modo centralizzato. 
 
 ## <a name="customize-protected-folders-and-apps"></a>Personalizzare le app e le cartelle protette
 
@@ -77,4 +77,4 @@ Vedi [Proteggere le cartelle importanti con](controlled-folders.md) accesso cont
 
 * [Proteggere le cartelle importanti con l'accesso controllato alle cartelle](controlled-folders.md)
 * [Valutare Microsoft Defender per endpoint.](evaluate-mde.md)
-* [Usare modalità di controllo](audit-windows-defender.md)
+* [Usare la modalità di controllo](audit-windows-defender.md)

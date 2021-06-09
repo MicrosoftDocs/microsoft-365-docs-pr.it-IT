@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: fb87f36c5289d622df2615046c5bb2fd8fad9543
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470894"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842243"
 ---
 # <a name="create-indicators"></a>Creare indicatori
 
@@ -40,7 +40,7 @@ La corrispondenza degli indicatori di compromissione (IoC) è una funzionalità 
 
 Creare indicatori che definiscono il rilevamento, la prevenzione e l'esclusione delle entità. Puoi definire l'azione da eseguire, nonché la durata per l'applicazione dell'azione e l'ambito del gruppo di dispositivi a cui applicarla.
 
-Le origini attualmente supportate sono il motore di rilevamento cloud di Defender for Endpoint, il motore di analisi e correzione automatizzato e il motore di prevenzione degli endpoint (Microsoft Defender Antivirus).
+Le origini attualmente supportate sono il motore di rilevamento cloud di Defender for Endpoint, il motore di analisi e correzione automatizzato e il motore di prevenzione degli endpoint (Antivirus Microsoft Defender).
 
 **Motore di rilevamento cloud**<br>
 Il motore di rilevamento cloud di Defender for Endpoint analizza regolarmente i dati raccolti e cerca di corrispondere agli indicatori impostati. In caso di corrispondenza, verrà eseguita un'azione in base alle impostazioni specificate per l'IoC.
@@ -68,7 +68,7 @@ Le azioni attualmente supportate sono:
 
 
 > [!NOTE]
-> Esiste un limite di 15.000 indicatori per tenant. Gli indicatori di file e certificati non [bloccano le esclusioni definite per Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Gli indicatori non sono supportati in Microsoft Defender Antivirus quando è in modalità passiva. 
+> Esiste un limite di 15.000 indicatori per tenant. Gli indicatori di file e certificati non [bloccano le esclusioni definite per Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Gli indicatori non sono supportati in Antivirus Microsoft Defender quando è in modalità passiva. 
 
 
 ## <a name="related-topics"></a>Argomenti correlati

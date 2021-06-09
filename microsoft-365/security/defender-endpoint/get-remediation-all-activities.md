@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b95fa2da177a3ecb93bcf3e2085be6111c2c641e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 60f80e78a5f5c7da44a218c30f4b0173d4ecc829
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770518"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845134"
 ---
 # <a name="list-all-remediation-activities"></a>Elencare tutte le attività correttive
 
@@ -55,7 +55,7 @@ Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per alt
 Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 :---|:---|:---
 Applicazione | RemediationTask.Read.All | \'Leggere informazioni sulla vulnerabilità di Gestione minacce e vulnerabilità\'
-Delegato (account aziendale o dell'istituto di istruzione) | RemediationTask.Read.Read | \'Leggere informazioni sulla vulnerabilità di Gestione minacce e vulnerabilità\'
+Delegato (account aziendale o dell'istituto di istruzione) | RemediationTask.Read | \'Leggere informazioni sulla vulnerabilità di Gestione minacce e vulnerabilità\'
 
 ## <a name="properties"></a>Proprietà
 
@@ -71,7 +71,7 @@ dueOn | DateTime | Data di scadenza impostata dal creatore per questa attività 
 fixedDevices | . | Il numero di dispositivi che sono stati corretti | 2
 id | Stringa | ID di questa attività di correzione | 097d9735-5479-4899-b1b7-77398899df92
 nameId | Stringa | Nome prodotto correlato | Microsoft Silverlight
-priority | Stringa | Priorità impostata dal creatore per questa attività di correzione (High\Medium\Low) | Alta
+priority | Stringa | Priorità impostata dal creatore per questa attività di correzione (High\Medium\Low) | Fortemente
 productId | Stringa | ID prodotto correlato | microsoft-_-silverlight
 productivityImpactRemediationType | Stringa | Alcune modifiche alla configurazione potrebbero essere richieste solo per i dispositivi senza alcun impatto sull'utente. Questo valore indica la selezione tra "tutti i dispositivi esposti" o "solo i dispositivi senza impatto sull'utente". | AllExposedAssets
 rbacGroupNames | Stringa | Nomi dei gruppi di dispositivi correlati | [ "Windows Servers", "Windows 10" ]
@@ -83,7 +83,7 @@ requesterEmail | Stringa | Indirizzo di posta elettronica creatore | globaladmin
 requesterId | Stringa | ID oggetto creatore | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | Stringa | Note (testo libero) aggiunte dall'autore per questa attività di correzione | null
 scid | Stringa | SCID della raccomandazione relativa alla sicurezza | null
-status | Stringa | Stato attività di correzione (Attivo/Completato) | Attivo
+status | Stringa | Stato attività di correzione (Attivo/Completato) | Attivazione
 statusLastModifiedOn | DateTime | Data in cui il campo stato è stato aggiornato | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Numero di dispositivi esposti a cui è applicabile questa correzione | 43
 title | Stringa | Titolo di questa attività di correzione | Aggiornare Microsoft Silverlight

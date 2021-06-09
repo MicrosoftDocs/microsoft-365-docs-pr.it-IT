@@ -1,7 +1,7 @@
 ---
-title: Onboard dei dispositivi non Windows nel servizio Microsoft Defender for Endpoint
-description: Configura i dispositivi non Windows in modo che possano inviare i dati del sensore al servizio Microsoft Defender for Endpoint.
-keywords: onboard non Windows devices, macos, linux, device management, configure Microsoft Defender for Endpoint devices
+title: Onboard di dispositivi non Windows al servizio Microsoft Defender for Endpoint
+description: Configurare dispositivi non Windows in modo che possano inviare i dati del sensore al servizio Microsoft Defender for Endpoint.
+keywords: onboard non Windows dispositivi, macos, linux, gestione dei dispositivi, configurare Microsoft Defender per dispositivi endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1c10576b72793ab3833f2e9027e3814a449334ee
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 265a7e9093638caa2111c7d1d82e51c8c2437d12
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933926"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845463"
 ---
 # <a name="onboard-non-windows-devices"></a>Aggiungere dispositivi non Windows
 
@@ -38,34 +38,34 @@ ms.locfileid: "51933926"
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-Defender for Endpoint offre un'esperienza operativa di sicurezza centralizzata per Windows e per le piattaforme non Windows. Potrai visualizzare gli avvisi di vari sistemi operativi supportati in Microsoft Defender Security Center e proteggere meglio la rete dell'organizzazione. 
+Defender for Endpoint offre un'esperienza operativa di sicurezza centralizzata per Windows e piattaforme non Windows. Sarà possibile visualizzare gli avvisi di vari sistemi operativi supportati in Microsoft Defender Security Center e proteggere meglio la rete dell'organizzazione. 
 
-Per il funzionamento dell'integrazione, devi conoscere esattamente le versioni di Linux e macOS compatibili con Defender for Endpoint. Per ulteriori informazioni, vedere:
+Per il funzionamento dell'integrazione, devi conoscere esattamente le versioni di Linux e macOS compatibili con Defender for Endpoint. Per altre informazioni, vedere:
 - [Requisiti di sistema di Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
 - Requisiti di sistema di [Microsoft Defender per Endpoint su macOS](microsoft-defender-endpoint-mac.md#system-requirements).
 
 ## <a name="onboarding-non-windows-devices"></a>Onboarding di dispositivi non Windows
-Dovrai eseguire la procedura seguente per eseguire l'onboard di dispositivi non Windows:
+Dovrai eseguire la procedura seguente per eseguire l'onboard di dispositivi non Windows dispositivo:
 1. Seleziona il metodo di onboarding preferito:
 
-   - Per i dispositivi macOS, puoi scegliere di eseguire l'onboard tramite Microsoft Defender for Endpoint o tramite una soluzione di terze parti. Per altre informazioni, vedi [Microsoft Defender per Endpoint su Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - Per i dispositivi macOS, puoi scegliere di eseguire l'onboard tramite Microsoft Defender for Endpoint o tramite una soluzione di terze parti. Per altre informazioni, vedi [Microsoft Defender per Endpoint su Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
-   - Per altri dispositivi non Windows scegli **Onboard di dispositivi non Windows tramite l'integrazione di terze parti.**   
+   - Per altri dispositivi non Windows scegliere Onboard non Windows dispositivi **tramite l'integrazione di terze parti.**   
     1. Nel riquadro di spostamento selezionare **Partner di**  >  **interoperabilità**. Verificare che la soluzione di terze parti sia elencata.
-    2. Nella scheda **Applicazioni partner** seleziona il partner che supporta i dispositivi non Windows.
+    2. Nella scheda **Applicazioni partner** seleziona il partner che supporta i dispositivi non Windows partner.
     3. Seleziona **Apri pagina partner** per aprire la pagina del partner. Segui le istruzioni fornite nella pagina.
     4. Dopo aver creato un account o aver accettato la sottoscrizione alla soluzione partner, è consigliabile arrivare a una fase in cui a un amministratore globale tenant dell'organizzazione viene richiesto di accettare una richiesta di autorizzazione dall'applicazione partner. Leggere attentamente la richiesta di autorizzazione per assicurarsi che sia allineata al servizio richiesto. 
 
         
 2. Eseguire un test di rilevamento seguendo le istruzioni della soluzione di terze parti.
 
-## <a name="offboard-non-windows-devices"></a>Offboard di dispositivi non Windows
+## <a name="offboard-non-windows-devices"></a>Offboard non Windows dispositivi
 
 1. Seguire la documentazione di terze parti per disconnettere la soluzione di terze parti da Microsoft Defender per Endpoint.
 
 2. Rimuovere le autorizzazioni per la soluzione di terze parti nel tenant di Azure AD.
    1. Accedere al [portale di Azure](https://portal.azure.com).
-   2. Selezionare **Azure Active Directory > Enterprise Applications**.
+   2. Selezionare **Azure Active Directory > Enterprise applicazioni**.
    3. Seleziona l'applicazione che vuoi offboard.
    4. Selezionare il **pulsante** Elimina.
 
