@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 ms.assetid: d3adf0cf-d581-4452-a5b3-6e0d16a34daa
 ROBOTS: NOINDEX
-description: Ottenere un elenco dei provider di soluzioni cloud Microsoft in Russia.
+description: Ottenere un elenco dei provider microsoft cloud solutions in Russia.
 ms.openlocfilehash: 4c9a466f946e502cace0588e0d90706965a70140
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -26,11 +26,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44399243"
 ---
-# <a name="microsoft-cloud-solution-provider-partners-in-russia"></a><span data-ttu-id="a8087-103">Partner Microsoft Cloud Solution Provider in Russia</span><span class="sxs-lookup"><span data-stu-id="a8087-103">Microsoft Cloud Solution Provider Partners in Russia</span></span>
-<span data-ttu-id="a8087-104">[]Ecco un elenco di Microsoft Cloud Solution Provider in Russia.</span><span class="sxs-lookup"><span data-stu-id="a8087-104">Here is a list of Microsoft Cloud Solution Providers in Russia.</span></span>
+# <a name="microsoft-cloud-solution-provider-partners-in-russia"></a><span data-ttu-id="76f27-103">Partner Microsoft Cloud Solution Provider in Russia</span><span class="sxs-lookup"><span data-stu-id="76f27-103">Microsoft Cloud Solution Provider Partners in Russia</span></span>
+<span data-ttu-id="76f27-104">[]Ecco un elenco di Microsoft Cloud Solution Provider in Russia.</span><span class="sxs-lookup"><span data-stu-id="76f27-104">Here is a list of Microsoft Cloud Solution Providers in Russia.</span></span>
   
-- [<span data-ttu-id="a8087-105">Mont</span><span class="sxs-lookup"><span data-stu-id="a8087-105">Mont</span></span>](https://www.mont.com/ru-ru/)
+- [<span data-ttu-id="76f27-105">Mont</span><span class="sxs-lookup"><span data-stu-id="76f27-105">Mont</span></span>](https://www.mont.com/ru-ru/)
     
-- [<span data-ttu-id="a8087-106">Softline</span><span class="sxs-lookup"><span data-stu-id="a8087-106">Softline</span></span>](https://softline.ru/)
+- [<span data-ttu-id="76f27-106">Softline</span><span class="sxs-lookup"><span data-stu-id="76f27-106">Softline</span></span>](https://softline.ru/)
     
 
