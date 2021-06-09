@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Informazioni sulla soluzione Advanced eDiscovery in Microsoft 365. In questo articolo viene fornita una panoramica delle Advanced eDiscovery in Microsoft 365, uno strumento che consente di gestire le indagini interne ed esterne. Vengono inoltre incorniciati i motivi aziendali per l'Advanced eDiscovery per gestire le indagini legali.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782790"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840839"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Panoramica di Microsoft 365 Advanced eDiscovery
 
@@ -105,7 +105,7 @@ Le licenze per Advanced eDiscovery richiedono l'abbonamento all'organizzazione a
 
   - Microsoft 365 Education Sottoscrizione A5 o Office 365 Education A5
 
-   Se non si dispone di un piano di Microsoft 365 E5 esistente e si desidera provare Advanced eDiscovery, è possibile aggiungere [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) all'abbonamento esistente o iscriversi [per](https://www.microsoft.com/microsoft-365/enterprise) una versione di valutazione di Microsoft 365 E5.
+   Se non si dispone di un piano di Microsoft 365 E5 esistente e si desidera provare Advanced eDiscovery, è possibile aggiungere [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) all'abbonamento esistente o iscriversi [per](https://www.microsoft.com/microsoft-365/enterprise) una versione di valutazione di Microsoft 365 E5.
 
 - **Licenze per utente:** Per aggiungere un utente come responsabile in un caso di Advance eDiscovery, a tale utente deve essere assegnata una delle licenze seguenti, a seconda dell'abbonamento all'organizzazione:
 
@@ -113,7 +113,7 @@ Le licenze per Advanced eDiscovery richiedono l'abbonamento all'organizzazione a
 
   - Office 365: agli utenti deve essere assegnata una Office 365 E5 o Office 365 Education A5.
 
-   Per informazioni su come assegnare licenze, vedere [Assegnare licenze agli utenti.](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
+   Per informazioni su come assegnare licenze, vedere [Assegnare licenze agli utenti.](/microsoft-365/admin/manage/assign-licenses-to-users)
 
 > [!NOTE]
 > Gli utenti necessitano solo di una licenza E5 o A5 (o della licenza del componente aggiuntivo appropriata) da aggiungere come depositario a un Advanced eDiscovery caso. Gli amministratori IT, i responsabili di eDiscovery, gli avvocati, i paralegali o gli investigatori che utilizzano Advanced eDiscovery per gestire i casi e esaminare i dati dei casi non necessitano di una licenza E5, A5 o add-on.

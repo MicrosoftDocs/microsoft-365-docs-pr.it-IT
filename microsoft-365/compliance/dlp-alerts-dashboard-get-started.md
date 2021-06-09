@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Introduzione alla definizione e alla gestione degli avvisi per i criteri di prevenzione della perdita di dati.
-ms.openlocfilehash: 7f070dd960cc00ad7899c75117cd2a3fcf679973
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760771"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843867"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Introduzione alla dashboard degli avvisi per la prevenzione delle perdita dei dati
 
-I criteri di prevenzione della perdita dei dati (DLP) possono intraprendere azioni di protezione per impedire la condivisione involontaria di elementi sensibili. Quando viene eseguita un'azione su un elemento sensibile, è possibile ricevere una notifica configurando gli avvisi per DLP. In questo articolo viene illustrato come definire criteri di avviso rtf collegati ai criteri di prevenzione della perdita dei dati (DLP). Vedrai come usare il dashboard di gestione degli avvisi [DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) nel Centro conformità [Microsoft 365](https://compliance.microsoft.com/) per visualizzare avvisi, eventi e metadati associati per le violazioni dei criteri DLP.
+I criteri di prevenzione della perdita dei dati (DLP) possono intraprendere azioni di protezione per impedire la condivisione involontaria di elementi sensibili. Quando viene eseguita un'azione su un elemento sensibile, è possibile ricevere una notifica configurando gli avvisi per DLP. In questo articolo viene illustrato come definire criteri di avviso rtf collegati ai criteri di prevenzione della perdita dei dati (DLP). Vedrai come usare il dashboard di gestione [](https://compliance.microsoft.com/) degli avvisi [DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) nel Centro conformità Microsoft 365 per visualizzare avvisi, eventi e metadati associati per le violazioni dei criteri DLP.
 
 Se non si ha la novità degli avvisi DLP, vedere Informazioni sul dashboard degli avvisi di [prevenzione della perdita dei dati](dlp-alerts-dashboard-learn.md)
 
@@ -43,9 +43,9 @@ Prima di iniziare, verificare di disporre dei prerequisiti necessari:
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Gestione delle licenze per il dashboard di gestione degli avvisi DLP
 
-Tutti i tenant idonei per la prevenzione della perdita dei dati di Office 365 possono accedere al dashboard di gestione degli avvisi DLP. To get started, you should be eligible for Office 365 DLP for Exchange Online, SharePoint Online, and OneDrive for Business. Per ulteriori informazioni sui requisiti di licenza per la prevenzione della perdita dei dati di Office 365, vedere Quali licenze forniscono a un utente i diritti a [beneficiare del servizio?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+Tutti i tenant idonei per Office 365 DLP possono accedere al dashboard di gestione degli avvisi DLP. To get started, you should be eligible for Office 365 DLP for Exchange Online, SharePoint Online, and OneDrive for Business. Per ulteriori informazioni sui requisiti di licenza per Office 365 DLP, vedere Quali licenze forniscono a un utente i diritti a [beneficiare del servizio?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-I clienti che usano [ENDPOINT DLP](endpoint-dlp-learn-about.md) idonei per DLP di [Teams](dlp-microsoft-teams.md) visualizzano gli avvisi dei criteri DLP degli endpoint e gli avvisi dei criteri DLP di Teams nel dashboard di gestione degli avvisi DLP.
+I clienti che usano [Endpoint DLP](endpoint-dlp-learn-about.md) idonei per [Teams DLP](dlp-microsoft-teams.md) visualizzano gli avvisi dei criteri DLP degli endpoint e Teams gli avvisi dei criteri DLP nel dashboard di gestione degli avvisi DLP.
 
 La **funzionalità di anteprima** del contenuto è disponibile solo per queste licenze:
 
@@ -65,14 +65,14 @@ Configurazione degli avvisi a evento **singolo**: le organizzazioni con una sott
 - Una sottoscrizione E1, F1 o G1 o una sottoscrizione E3 o G3 che include una delle funzionalità seguenti:
     - Office 365 Advanced Threat Protection (Piano 2)
     - Conformità Microsoft 365 E5
-    - Licenza del componente aggiuntivo eDiscovery e controllo di Microsoft 365
+    - Microsoft 365 licenza del componente aggiuntivo eDiscovery e controllo
 
 ### <a name="roles"></a>Ruoli
 
 
 Se si desidera visualizzare il dashboard di gestione degli avvisi DLP o modificare le opzioni di configurazione degli avvisi in un criterio DLP, è necessario essere membri di uno di questi gruppi di ruoli:
 
-- Amministratore conformità
+- Amministratore di conformità
 - Amministratore dei dati di conformità
 - Amministratore della sicurezza
 - Operatore della sicurezza
@@ -115,7 +115,7 @@ Se l'organizzazione ha una licenza per [le opzioni](#licensing-for-alert-configu
 
 Per utilizzare il dashboard di gestione degli avvisi DLP:
 
-1. Nel Centro [conformità Microsoft 365](https://www.compliance.microsoft.com)passare a **Prevenzione della perdita di dati**.
+1. Nel Centro [Microsoft 365 conformità](https://www.compliance.microsoft.com)passare a Prevenzione della perdita **di dati**.
 2. Selezionare la **scheda Avvisi** per visualizzare il dashboard degli avvisi DLP.
 3. Selezionare un avviso per visualizzare i dettagli:
 

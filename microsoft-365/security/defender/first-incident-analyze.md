@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8eb36ca630a9748de07c5cbe84f0e43ef23a47cf
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297225"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841079"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Passaggio 1. Analizzare e analizzare il primo evento imprevisto
 
@@ -45,10 +45,10 @@ Una volta rilevato un evento imprevisto di sicurezza, Microsoft 365 Defender pre
 Microsoft 365 Defender riceve avvisi ed eventi da più piattaforme di sicurezza Microsoft come origini di rilevamento per creare un quadro olistico e un contesto di attività dannose. Queste sono le possibili origini di rilevamento:
 
 - [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) è una soluzione di rilevamento e risposta degli endpoint (EDR) che usa l'antivirus di Microsoft Defender e una protezione avanzata dalle minacce abilitata per il cloud con Microsoft Security Graph. Defender for Endpoint è una piattaforma unificata per la protezione preventiva, il rilevamento post-violazione, l'indagine automatizzata e la risposta. Protegge gli endpoint dalle minacce informatiche, rileva attacchi avanzati e violazioni dei dati, automatizza gli incidenti di sicurezza e migliora la sicurezza. 
-- [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is) è una soluzione di sicurezza basata sul cloud che utilizza i segnali di Servizi di dominio Active Directory (AD DS) locali per identificare, rilevare e analizzare minacce avanzate, identità compromesse e azioni insider dannose indirizzate all'organizzazione. 
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) funge da gatekeeper per mediare l'accesso in tempo reale tra gli utenti aziendali e le risorse cloud che usano, ovunque gli utenti si trovino e indipendentemente dal dispositivo in uso. 
+- [Microsoft Defender for Identity](/defender-for-identity/what-is) è una soluzione di sicurezza basata sul cloud che utilizza i segnali di Servizi di dominio Active Directory (AD DS) locali per identificare, rilevare e analizzare minacce avanzate, identità compromesse e azioni insider dannose indirizzate all'organizzazione. 
+- [Microsoft Cloud App Security](/cloud-app-security/) funge da gatekeeper per mediare l'accesso in tempo reale tra gli utenti aziendali e le risorse cloud che usano, ovunque gli utenti si trovino e indipendentemente dal dispositivo in uso. 
 - [Microsoft Defender per Office 365](../office-365-security/overview.md) protegge l'organizzazione da minacce dannose nei messaggi di posta elettronica, nei collegamenti (URL) e negli strumenti di collaborazione. 
-- [Il Centro](https://docs.microsoft.com/azure/security-center/security-center-introduction) sicurezza di Azure è un sistema di gestione della sicurezza dell'infrastruttura unificato che rafforza la sicurezza dei data center e fornisce una protezione avanzata dalle minacce nei carichi di lavoro ibridi nel cloud e in locale. 
+- [Il Centro](/azure/security-center/security-center-introduction) sicurezza di Azure è un sistema di gestione della sicurezza dell'infrastruttura unificato che rafforza la sicurezza dei data center e fornisce una protezione avanzata dalle minacce nei carichi di lavoro ibridi nel cloud e in locale. 
 
 In Microsoft 365 Defender, [gli eventi imprevisti](incidents-overview.md) vengono identificati correlando gli avvisi provenienti da queste diverse origini di rilevamento. Invece di spendere risorse per stringere o distinguere più avvisi nei rispettivi eventi imprevisti, puoi iniziare subito con la coda degli eventi imprevisti in Microsoft 365 Defender. In questo modo è possibile eseguire il triage degli incidenti in modo efficiente tra endpoint, identità, posta elettronica e applicazioni e ridurre i danni causati da un attacco.
 
@@ -99,7 +99,7 @@ La comprensione del contesto che circonda gli avvisi è altrettanto importante. 
 
 Esistono diversi modi per leggere e analizzare i dati con Microsoft 365 Defender, ma l'obiettivo finale per gli analisti è quello di rispondere agli incidenti il più rapidamente possibile. Sebbene Microsoft 365 Defender possa ridurre in modo significativo il tempo medio per la [](m365d-autoir.md) correzione [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) tramite la funzionalità di analisi e risposta automatizzata leader del settore, esistono sempre casi che richiedono un'analisi manuale. 
 
-Ecco un esempio:
+Di seguito viene riportato un esempio:
 
 1. Dopo aver determinato la priorità di analisi, un analista inizia un'analisi approfondita selezionando il nome dell'evento imprevisto. In questa pagina viene visualizzato il **riepilogo degli** eventi imprevisti in cui i dati vengono visualizzati nelle schede per facilitare l'analisi. Nella scheda **Avvisi** viene visualizzato il tipo di avvisi. Gli analisti possono fare clic su ogni avviso per eseguire il drill-down nella rispettiva origine di rilevamento. 
 

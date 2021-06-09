@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7dc11fe709a6d04b6309706df90f0ebbc177e25
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198484"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841067"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Creare indicatori per IP e URL/domini 
 
@@ -38,7 +38,7 @@ ms.locfileid: "51198484"
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-Defender for Endpoint può bloccare ciò che Microsoft ritiene ip/URL dannosi, tramite Windows Defender SmartScreen per i browser Microsoft e tramite Protezione di rete per browser non Microsoft o chiamate effettuate all'esterno di un browser.
+Defender for Endpoint può bloccare ciò che Microsoft ritiene ip/URL dannosi, tramite Windows Defender SmartScreen per i browser Microsoft e tramite Protezione di rete per i browser non Microsoft o le chiamate effettuate all'esterno di un browser.
 
 Il set di dati di intelligence per le minacce per questo è stato gestito da Microsoft.
 
@@ -51,14 +51,14 @@ Creando indicatori per INDIRIZZI IP e URL o domini, ora puoi consentire o blocca
 È importante comprendere i prerequisiti seguenti prima di creare indicatori per IPS, URL o domini:
 - L'url/ip consentiti e il blocco si basa su Defender per l'attivazione di Network Protection del componente endpoint in modalità blocco. Per ulteriori informazioni su Protezione di rete e istruzioni di configurazione, vedere [Enable network protection](enable-network-protection.md).
 - La versione del client Antimalware deve essere 4.18.1906.x o successiva. 
-- Supportato nei computer con Windows 10 versione 1709 o successiva. 
-- Assicurati che **gli indicatori di rete personalizzati** siano abilitati in Microsoft Defender Security Center > impostazioni > funzionalità **avanzate.** Per ulteriori informazioni, vedere [Funzionalità avanzate.](advanced-features.md)
-- Per il supporto degli indicatori in iOS, vedi [Configurare indicatori personalizzati.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
+- Supportato nei computer Windows 10 versione 1709 o successiva. 
+- Verificare che **gli indicatori di rete personalizzati** siano abilitati Microsoft Defender Security Center > Impostazioni > funzionalità **avanzate.** Per ulteriori informazioni, vedere [Funzionalità avanzate.](advanced-features.md)
+- Per il supporto degli indicatori in iOS, vedi [Configurare indicatori personalizzati.](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
 
 
 > [!IMPORTANT]
 > Solo gli INDIRIZZI IP esterni possono essere aggiunti all'elenco degli indicatori. Non è possibile creare indicatori per gli IP interni.
-> Per gli scenari di protezione Web, è consigliabile usare le funzionalità incorporate in Microsoft Edge. Microsoft Edge sfrutta Protezione di [rete per](network-protection.md) controllare il traffico di rete e consente blocchi per TCP, HTTP e HTTPS (TLS). Se sono presenti criteri indicatore URL in conflitto, viene applicato il percorso più lungo. Ad esempio, il criterio indicatore URL `https:\\support.microsoft.com/en-us/office` ha la precedenza sul criterio indicatore URL `https:\\support.microsoft.com` .
+> Per gli scenari di protezione Web, è consigliabile usare le funzionalità incorporate in Microsoft Edge. Microsoft Edge si avvale [di Protezione di rete](network-protection.md) per esaminare il traffico di rete e consente blocchi per TCP, HTTP e HTTPS (TLS). Se sono presenti criteri indicatore URL in conflitto, viene applicato il percorso più lungo. Ad esempio, il criterio indicatore URL `https:\\support.microsoft.com/en-us/office` ha la precedenza sul criterio indicatore URL `https:\\support.microsoft.com` .
 
 > [!NOTE]
 > Per tutti gli altri processi, gli scenari di protezione Web sfruttano Protezione di rete per l'ispezione e l'applicazione: 
@@ -73,7 +73,7 @@ Creando indicatori per INDIRIZZI IP e URL o domini, ora puoi consentire o blocca
 
 ### <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Creare un indicatore per IP, URL o domini dalla pagina delle impostazioni
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Indicatori**.  
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **indicatori**.  
 
 2. Selezionare la **scheda Indirizzi IP o URL/Domini.**
 
@@ -88,6 +88,6 @@ Creando indicatori per INDIRIZZI IP e URL o domini, ora puoi consentire o blocca
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Creare indicatori](manage-indicators.md)
-- [Creare indicatori per i file](indicator-file.md)
+- [Creare indicatori per file](indicator-file.md).
 - [Creare indicatori in base ai certificati](indicator-certificates.md)
-- [Gestire gli indicatori](indicator-manage.md)
+- [Gestire indicatori](indicator-manage.md)

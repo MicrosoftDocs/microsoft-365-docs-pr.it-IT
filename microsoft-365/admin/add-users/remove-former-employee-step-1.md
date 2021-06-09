@@ -24,20 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Impedire a un ex dipendente di accedere e bloccare l'accesso Microsoft 365 servizi.
-ms.openlocfilehash: 84852e9bccb1d4370db07492baf7ccaed7f6db3d
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698905"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840851"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Passaggio 1 - Impedire a un ex dipendente di accedere e bloccare l'accesso Microsoft 365 servizi
 
 Se è necessario impedire immediatamente l'accesso di un utente, è consigliabile reimpostare la password. In questo passaggio forzare la disconnessione dell'utente da Microsoft 365.
 
 > [!NOTE]
-> È necessario essere un amministratore globale per avviare la disconnessione per altri amministratori. Per gli utenti non amministratori, è possibile utilizzare un amministratore utente o un utente amministratore dell'helpdesk per eseguire questa azione.
-> Ulteriori informazioni sui ruoli di amministratore <a href="https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles">sui ruoli di amministratore</a>
+> È necessario essere un amministratore globale per avviare la disconnessione per altri amministratori. Per gli utenti non amministratori, è possibile utilizzare un amministratore utente o un utente amministratore dell'helpdesk per eseguire questa azione. [Altre informazioni sui ruoli di amministratore](about-admin-roles.md)
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 2. Selezionare la casella accanto al nome dell'utente e quindi selezionare **Reimposta password.**

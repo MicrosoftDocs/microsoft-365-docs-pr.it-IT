@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 410972bd823c3a3c4fda53cacc225014d83f3457
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274929"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844011"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Esaminare le azioni di correzione dopo un'indagine automatizzata
 
@@ -39,7 +39,7 @@ A seconda
 
 - il tipo di minaccia, 
 - il verdetto risultante e 
-- come vengono configurati i gruppi [di dispositivi dell'organizzazione,](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) 
+- come vengono configurati i gruppi [di dispositivi dell'organizzazione,](/microsoft-365/security/defender-endpoint/machine-groups) 
 
 le azioni di correzione possono essere eseguite automaticamente o solo dopo l'approvazione da parte del team delle operazioni di sicurezza dell'organizzazione. 
 
@@ -49,7 +49,7 @@ Ecco alcuni esempi:
 
 - **Esempio 2:** i dispositivi di Contoso sono inclusi in un gruppo di dispositivi impostato per Semi - richiede l'approvazione per **qualsiasi correzione.** In questo caso, il team delle operazioni di sicurezza di Contoso deve esaminare e approvare tutte le azioni di correzione dopo un'indagine automatizzata (vedere [Review pending actions](#review-pending-actions)).
 
-- **Esempio 3:** i gruppi di dispositivi di Tailspin Toys sono impostati su **Nessuna risposta automatica** (scelta non consigliata). In questo caso, non si verificano indagini automatizzate. Nessuna azione di correzione viene eseguita o in sospeso [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) e nessuna azione viene registrata nel centro notifiche per i dispositivi (vedere [Gestire i gruppi di dispositivi](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
+- **Esempio 3:** i gruppi di dispositivi di Tailspin Toys sono impostati su **Nessuna risposta automatica** (scelta non consigliata). In questo caso, non si verificano indagini automatizzate. Nessuna azione di correzione viene eseguita o in sospeso [](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) e nessuna azione viene registrata nel centro notifiche per i dispositivi (vedere [Gestire i gruppi di dispositivi](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
 
 Se eseguita automaticamente o dopo l'approvazione, un'indagine automatizzata può comportare una o più azioni di correzione:
 - Mettere in quarantena un file
@@ -111,8 +111,8 @@ I livelli di automazione influiscono sul fatto che determinate azioni di correzi
 |**Semi - Richiede l'approvazione per la correzione delle cartelle principali** |Viene raggiunto un verdetto *di Sospetto* per un elemento di prova. <br/><br/>Le azioni di correzione sono in attesa di approvazione.  |[Approvare (o rifiutare) le azioni in sospeso.](#review-pending-actions)|
 |**Semi - Richiede l'approvazione per la correzione delle cartelle non temporanee** |Viene raggiunto un verdetto *di Dannoso* per una prova. <br/><br/>Se l'elemento è un file o un file eseguibile che non si trova in una cartella temporanea, ad esempio la cartella di download o la cartella temporanea dell'utente, le azioni di correzione sono in attesa di approvazione. <br/><br/>Se l'elemento è un file o un file *eseguibile* in una cartella temporanea, le azioni di correzione vengono eseguite automaticamente.  |1. [Approvare (o rifiutare) le azioni in sospeso](#review-pending-actions)<br/><br/>2. [Rivedere le azioni completate](#review-completed-actions)  |
 |**Semi - Richiede l'approvazione per la correzione delle cartelle non temporanee** |Viene raggiunto un verdetto *di Sospetto* per un elemento di prova. <br/><br/>Le azioni di correzione sono in attesa di approvazione. |[Approvare (o rifiutare) le azioni in sospeso](#review-pending-actions)  | 
-|Qualsiasi livello **di automazione completo** o **semiautorizzazione** |Viene raggiunto il verdetto *Nessuna minaccia* trovata per un elemento di prova. <br/><br/>Non vengono eseguite azioni di correzione e nessuna azione è in attesa di approvazione. |[Visualizzare dettagli e risultati delle indagini automatizzate](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
-|**Nessuna risposta automatica** (scelta non consigliata)|Non vengono eseguite indagini automatizzate, quindi non vengono raggiunti verdetti e non vengono intraprese azioni di correzione o in attesa di approvazione. |[Valuta la possibilità di configurare o modificare i gruppi di dispositivi per usare **l'automazione** completa **o semiautonotica**](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) |
+|Qualsiasi livello **di automazione completo** o **semiautorizzazione** |Viene raggiunto il verdetto *Nessuna minaccia* trovata per un elemento di prova. <br/><br/>Non vengono eseguite azioni di correzione e nessuna azione è in attesa di approvazione. |[Visualizzare dettagli e risultati delle indagini automatizzate](/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
+|**Nessuna risposta automatica** (scelta non consigliata)|Non vengono eseguite indagini automatizzate, quindi non vengono raggiunti verdetti e non vengono intraprese azioni di correzione o in attesa di approvazione. |[Valuta la possibilità di configurare o modificare i gruppi di dispositivi per usare **l'automazione** completa **o semiautonotica**](/microsoft-365/security/defender-endpoint/machine-groups) |
 
 In Microsoft Defender per Endpoint, tutti i verdetti vengono monitorati nel [centro notifiche.](auto-investigation-action-center.md#new-a-unified-action-center)
 

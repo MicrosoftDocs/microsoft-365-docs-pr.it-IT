@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3bab9d0248a2ed8e83807f3c38215e653cba26eb
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935930"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843555"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender per endpoint
 
@@ -33,19 +33,19 @@ ms.locfileid: "51935930"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Per altre info sulle funzionalità e sulle funzionalità di Windows 10 Enterprise Edition, vedi [Windows 10 Enterprise Edition.](https://www.microsoft.com/WindowsForBusiness/buy)
+> Per altre info sulle funzionalità Windows 10 Enterprise Edition, vedi [Windows 10 Enterprise Edition.](https://www.microsoft.com/WindowsForBusiness/buy)
 
 Microsoft Defender for Endpoint è una piattaforma di sicurezza degli endpoint aziendale progettata per aiutare le reti aziendali a prevenire, rilevare, analizzare e rispondere alle minacce avanzate.
 <p></p>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
-Defender for Endpoint usa la seguente combinazione di tecnologia integrata in Windows 10 e nel solido servizio cloud di Microsoft:
+Defender for Endpoint usa la seguente combinazione di tecnologia incorporata Windows 10 e il solido servizio cloud di Microsoft:
 
 -   **Sensori comportamentali** endpoint: incorporati in Windows 10, questi sensori raccolgono ed elaborano i segnali comportamentali dal sistema operativo e inviano i dati del sensore all'istanza cloud privata, isolata di Microsoft Defender for Endpoint.
 
 
--   Analisi della sicurezza **cloud:** utilizzo di big data, apprendimento dei dispositivi e ottica Microsoft univoca nell'ecosistema Windows, prodotti cloud aziendali (come Office 365) e asset online, i segnali comportamentali vengono tradotti in dati analitici, rilevamenti e risposte consigliate alle minacce avanzate.
+-   Analisi della sicurezza **cloud:** utilizzo di big data, apprendimento dei dispositivi e ottica Microsoft univoca nell'ecosistema di Windows, prodotti cloud aziendali (ad esempio Office 365) e asset online, i segnali comportamentali vengono tradotti in dati analitici, rilevamenti e risposte consigliate alle minacce avanzate.
 
 -   **Intelligence** per le minacce: generata da microsoft, team di sicurezza e aumentata dall'intelligence per le minacce fornita dai partner, l'intelligence per le minacce consente a Defender for Endpoint di identificare strumenti, tecniche e procedure dell'utente malintenzionato e generare avvisi quando vengono osservati nei dati dei sensori raccolti.
 
@@ -57,7 +57,7 @@ Defender for Endpoint usa la seguente combinazione di tecnologia integrata in Wi
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Protezione di nuova generazione</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Rilevamento e risposta degli endpoint</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>Analisi e correzione automatizzate</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Esperti di microsoft threat</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
@@ -89,7 +89,7 @@ Il set di funzionalità di riduzione della superficie di attacco fornisce la pri
 
 <a name="ngp"></a>
 
-**[Protezione di nuova generazione](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[Protezione di nuova generazione](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 Per rafforzare ulteriormente il perimetro di sicurezza della rete, Microsoft Defender for Endpoint usa una protezione di nuova generazione progettata per rilevare tutti i tipi di minacce emergenti.
 
 <a name="edr"></a>
@@ -99,7 +99,7 @@ Le funzionalità di rilevamento e risposta degli endpoint vengono messe in atto 
 
 <a name="ai"></a>
 
-**[Indagine e correzione automatizzate](automated-investigations.md)**<br>
+**[Analisi e correzione automatizzate](automated-investigations.md)**<br>
 Oltre a essere in grado di rispondere rapidamente agli attacchi avanzati, Microsoft Defender for Endpoint offre funzionalità di analisi e correzione automatiche che consentono di ridurre il volume di avvisi in minuti su larga scala. 
 
 <a name="ss"></a>
@@ -114,8 +114,8 @@ Defender for Endpoint include Microsoft Secure Score for Devices per aiutarti a 
 Il nuovo servizio di ricerca delle minacce gestite di Microsoft Defender for Endpoint fornisce la ricerca proattiva, la definizione delle priorità e ulteriori informazioni e contesto che consentono ai Centri operazioni di sicurezza (SOC) di identificare e rispondere alle minacce in modo rapido e accurato.
 
 >[!IMPORTANT]
->I clienti di Defender for Endpoint devono richiedere il servizio di ricerca delle minacce gestito da Microsoft Threat Experts per ricevere notifiche di attacco mirato proattive e collaborare con esperti su richiesta. Experts on Demand è un servizio di componenti aggiuntivi. Le notifiche di attacco mirato vengono sempre incluse dopo l'accettazione nel servizio di ricerca delle minacce gestito da Microsoft Threat Experts.<p>
-><p>Se non si è ancora registrati e si desidera sperimentarne i vantaggi, passare <b>a</b> Impostazioni > <b>Funzionalità</b> > <b></b> avanzate generali > <b>Microsoft Threat Experts</b> da applicare. Una volta accettato, potrai ottenere i vantaggi delle notifiche di attacco mirato e avviare una versione di valutazione di 90 giorni di Experts on Demand. Contattare il rappresentante Microsoft per ottenere un abbonamento completo a Experts on Demand.
+>I clienti di Defender for Endpoint devono richiedere il servizio Microsoft Threat Experts di ricerca delle minacce gestite per ottenere notifiche di attacco mirato proattive e collaborare con esperti su richiesta. Experts on Demand è un servizio di componenti aggiuntivi. Le notifiche di attacco mirato vengono sempre incluse dopo essere state accettate Microsoft Threat Experts servizio di ricerca delle minacce gestite.<p>
+><p>Se non si è ancora registrati e si desidera <b></b> sperimentarne i vantaggi, passare a Impostazioni > <b>funzionalità</b> > <b></b> > <b>avanzate Microsoft Threat Experts</b> da applicare. Una volta accettato, potrai ottenere i vantaggi delle notifiche di attacco mirato e avviare una versione di valutazione di 90 giorni di Experts on Demand. Contattare il rappresentante Microsoft per ottenere un abbonamento completo a Experts on Demand.
 
 <a name="apis"></a>
 
@@ -134,7 +134,7 @@ Defender for Endpoint si integra direttamente con varie soluzioni Microsoft, tra
 - Microsoft Defender per Office
 - Skype for Business
 
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
 Con Microsoft 365 Defender, Defender for Endpoint e varie soluzioni di sicurezza Microsoft formano una famiglia di prodotti di difesa aziendale unificata pre e post-violazione che si integra in modo nativo tra endpoint, identità, posta elettronica e applicazioni per rilevare, prevenire, analizzare e rispondere automaticamente ad attacchi sofisticati.
 
 

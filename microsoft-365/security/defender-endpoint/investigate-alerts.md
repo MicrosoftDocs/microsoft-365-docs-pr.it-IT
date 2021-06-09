@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 8b3b864e716957c24893d2097249440b0a90f10a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 626be9e949170fcda1f0bcf2a88e1b9780bbe764
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186102"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841091"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Analizzare gli avvisi in Microsoft Defender for Endpoint
 
@@ -40,7 +40,7 @@ Analizzare gli avvisi che interessano la rete, comprenderne il significato e com
 
 Selezionare un avviso dalla coda degli avvisi per passare alla pagina di avviso. Questa visualizzazione contiene il titolo dell'avviso, gli asset interessati, il riquadro laterale dei dettagli e la storia dell'avviso.
 
-Nella pagina di avviso iniziare l'indagine selezionando le risorse interessate o una delle entità nella visualizzazione albero della storia di avviso. Il riquadro dei dettagli viene popolato automaticamente con ulteriori informazioni sugli elementi selezionati. Per sapere quali tipi di informazioni è possibile visualizzare qui, vedere [Esaminare gli avvisi in Microsoft Defender per Endpoint.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/review-alerts)
+Nella pagina di avviso iniziare l'indagine selezionando le risorse interessate o una delle entità nella visualizzazione albero della storia di avviso. Il riquadro dei dettagli viene popolato automaticamente con ulteriori informazioni sugli elementi selezionati. Per sapere quali tipi di informazioni è possibile visualizzare qui, vedere [Esaminare gli avvisi in Microsoft Defender per Endpoint.](/microsoft-365/security/defender-endpoint/review-alerts)
 
 ## <a name="investigate-using-the-alert-story"></a>Analizzare usando la storia di avviso
 

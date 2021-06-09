@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Preparare e distribuire l'estensione per Conformità Microsoft.
-ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730511"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843831"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introduzione all'estensione per Conformità Microsoft
 
@@ -55,7 +55,7 @@ Prima di iniziare, è necessario verificare l'[abbonamento a Microsoft 365](http
 - Microsoft 365 E5 Information Protection and Governance
 - Microsoft 365 A5 Information Protection and Governance
 
-Per indicazioni dettagliate sulle licenze, vedere [Indicazioni dettagliate sulle licenze di Microsoft 365 per la sicurezza e la conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Per indicazioni dettagliate sulle licenze, vedere [Indicazioni dettagliate sulle licenze di Microsoft 365 per la sicurezza e la conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 - L'organizzazione deve disporre di una licenza per la prevenzione della perdita dei dati degli endpoint
 - I dispositivi devono eseguire Windows 10 x64, build 1809 o successiva.
@@ -169,7 +169,7 @@ Prima di aggiungere l'estensione per la conformità Microsoft all'elenco delle e
 
 Se non si desidera usare Microsoft Endpoint Manager, è possibile usare i criteri di gruppo per distribuire l'estensione per la conformità Microsoft nell'intera organizzazione
 
-1. I dispositivi devono essere gestibili tramite Criteri di gruppo e occorre importare tutti i file ADMX di Chrome nell'archivio centrale dei Criteri di gruppo. Per altre informazioni, vedere [Come creare e gestire l'archivio centrale per i modelli amministrativi di Criteri di gruppo in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
+1. I dispositivi devono essere gestibili tramite Criteri di gruppo e occorre importare tutti i file ADMX di Chrome nell'archivio centrale dei Criteri di gruppo. Per altre informazioni, vedere [Come creare e gestire l'archivio centrale per i modelli amministrativi di Criteri di gruppo in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
 2.  Creare uno script di PowerShell con il comando PowerShell:
 
@@ -276,8 +276,8 @@ Ora che si è eseguito l'onboarding dei dispositivi e che è possibile visualizz
 - [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
-- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender ATP](/windows/security/threat-protection/)
+- [Strumenti e metodi di onboarding per i dispositivi Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Abbonamento a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Dispositivi aggiunti ad Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Dispositivi aggiunti ad Azure AD](/azure/active-directory/devices/concept-azure-ad-join)
 - [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

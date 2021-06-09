@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 951b0f33356ab99485f09ccc4147691e13ed3c6e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 45aa406212fe39f088f58bf311b1aed3fed16498
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935006"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843435"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
 
@@ -38,31 +38,31 @@ Puoi usare soluzioni di gestione dei dispositivi mobili (MDM) per configurare i 
 Per altre informazioni sull'uso di Defender per CSP endpoint, vedi [CSP WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) e [File DDF di WindowsAdvancedThreatProtection.](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)
 
 ## <a name="before-you-begin"></a>Prima di iniziare
-Se si usa Microsoft Intune, è necessario che il dispositivo MDM sia registrato. In caso contrario, le impostazioni non verranno applicate correttamente. 
+Se stai usando un Microsoft Intune, devi registrare il dispositivo MDM. In caso contrario, le impostazioni non verranno applicate correttamente. 
 
-Per altre informazioni sull'abilitazione di MDM con Microsoft Intune, vedi [Registrazione dei dispositivi (Microsoft Intune)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
+Per altre informazioni sull'abilitazione di MDM Microsoft Intune, vedi [Registrazione dei dispositivi (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
-## <a name="onboard-devices-using-microsoft-intune"></a>Onboardare i dispositivi con Microsoft Intune
+## <a name="onboard-devices-using-microsoft-intune"></a>Onboard dei dispositivi con Microsoft Intune
 
-[![Immagine del PDF che mostra i dispositivi di onboarding in Defender for Endpoint con Microsoft Intune ](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
+[![Immagine del PDF che mostra i dispositivi di onboarding in Defender for Endpoint usando Microsoft Intune ](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
 
-Consultare il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per visualizzare i vari percorsi nella distribuzione di Defender per Endpoint. 
+Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) il [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per vedere i vari percorsi nella distribuzione di Defender per Endpoint. 
 
-Seguire le istruzioni di [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
+Seguire le istruzioni di [Intune](/intune/advanced-threat-protection).
 
 Per altre informazioni sull'uso di Defender per CSP endpoint, vedi [CSP WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) e [File DDF di WindowsAdvancedThreatProtection.](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)
 
 
 > [!NOTE]
 > - Il **criterio Stato integrità per i dispositivi onboarded** usa proprietà di sola lettura e non può essere corretti.
-> - La configurazione della frequenza di segnalazione dei dati di diagnostica è disponibile solo per i dispositivi in Windows 10 versione 1703.
+> - La configurazione della frequenza di segnalazione dei dati di diagnostica è disponibile solo per i dispositivi Windows 10 versione 1703.
 
 
 >[!TIP]
 > Dopo l'onboarding del dispositivo, puoi scegliere di eseguire un test di rilevamento per verificare che un dispositivo sia stato correttamente onboarding nel servizio. Per altre informazioni, vedi [Eseguire un test di rilevamento su un dispositivo Microsoft Defender for Endpoint appena onboarded.](run-detection-test.md)
 
 
-Consultare il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per visualizzare i vari percorsi nella distribuzione di Microsoft Defender per Endpoint.
+Consulta il [pdf o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) il [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per vedere i vari percorsi nella distribuzione di Microsoft Defender per Endpoint.
 
 ## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Offboard e monitora i dispositivi con gli strumenti di gestione dei dispositivi mobili
 Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 30 giorni dopo la data di download. I pacchetti di offboarding scaduti inviati a un dispositivo verranno rifiutati. Durante il download di un pacchetto di offboarding, ti verrà notificata la data di scadenza dei pacchetti e verrà incluso anche nel nome del pacchetto.
@@ -70,25 +70,25 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 > [!NOTE]
 > I criteri di onboarding e offboarding non devono essere distribuiti nello stesso dispositivo contemporaneamente, altrimenti ciò causerà collisioni imprevedibili.
 
-1. Ottenere il pacchetto di offboarding da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1. Ottenere il pacchetto di offboarding [da Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-   1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Offboarding.**
+   1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **offboarding**.
 
    1. Seleziona Windows 10 come sistema operativo.
 
-   1. Nel campo **Metodo di distribuzione** seleziona Gestione dispositivi mobili / Microsoft **Intune.**
+   1. Nel campo **Metodo di distribuzione** selezionare Gestione dispositivi mobili / **Microsoft Intune**.
     
-   1. Fai **clic su Scarica** pacchetto e salva il file ZIP.
+   1. Fai **clic su Scarica pacchetto** e salva il file .zip file.
 
-2. Estrarre il contenuto del file ZIP in un percorso condiviso di sola lettura accessibile dagli amministratori di rete che distribuiranno il pacchetto. Dovresti avere un file denominato *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
+2. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dagli amministratori di rete che distribuiranno il pacchetto. Dovresti avere un file denominato *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 
-3. Usa i criteri di configurazione personalizzati di Microsoft Intune per distribuire le seguenti impostazioni URI OMA supportate.
+3. Usa il Microsoft Intune di configurazione personalizzato per distribuire le seguenti impostazioni URI OMA supportate.
 
       URI OMA: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding<br/>
       Tipo di data: String<br/>
       Valore: [Copiare e incollare il valore dal contenuto del file WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding]
 
-Per altre informazioni sulle impostazioni dei criteri di Microsoft Intune, vedi Impostazioni dei criteri [di Windows 10 in Microsoft Intune.](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+Per ulteriori informazioni sulle Microsoft Intune dei criteri, vedere Windows 10 [impostazioni dei criteri in Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
 
 > [!NOTE]
@@ -98,8 +98,8 @@ Per altre informazioni sulle impostazioni dei criteri di Microsoft Intune, vedi 
 > L'offboarding fa sì che il dispositivo interrompi l'invio dei dati del sensore al portale, ma i dati dal dispositivo, incluso il riferimento a eventuali avvisi che ha avuto, verranno conservati per un massimo di 6 mesi.
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Onboardare dispositivi Windows 10 con Criteri di gruppo](configure-endpoints-gp.md)
-- [Onboard dei dispositivi Windows 10 con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboardare Windows 10 dispositivi con Criteri di gruppo](configure-endpoints-gp.md)
+- [Onboard Windows 10 dispositivi con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding di dispositivi Windows 10 con uno script locale](configure-endpoints-script.md)
 - [Aggiungere dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](configure-endpoints-vdi.md)
 - [Eseguire un test di rilevamento in un dispositivo Microsoft Defender for Endpoint appena onboarded](run-detection-test.md)

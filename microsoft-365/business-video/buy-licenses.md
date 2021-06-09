@@ -22,23 +22,24 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come acquistare nuove licenze di Microsoft 365 per le aziende.
-ms.openlocfilehash: c9077dbb4c653d162df97e7f7bda47d929eb67ce
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Scopri come acquistare nuove licenze Microsoft 365 per le aziende.
+ms.date: 05/11/2021
+ms.openlocfilehash: 239d650bdb765875b60669a4d556f47bcd06dc92
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332211"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821416"
 ---
-# <a name="buy-microsoft-365-licenses"></a>Acquistare licenze di Microsoft 365
+# <a name="buy-microsoft-365-licenses"></a>Acquistare Microsoft 365 licenze
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-Quando si aggiungono nuovi utenti, sarà necessario acquistare altre licenze di Microsoft 365 per tali utenti.
+Quando si aggiungono nuovi utenti, sarà necessario acquistare più Microsoft 365 licenze per tali utenti.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Fatturazione**, **Prodotti** e quindi selezionare l'abbonamento.
+1. Nell'Microsoft 365 di amministrazione scegliere **Fatturazione**, **Prodotti** e quindi selezionare l'abbonamento.
 1. Scegliere **Acquista licenze**.
 1. Immetti il numero di licenze che vuoi acquistare.
 1. Selezionare **Salva**.

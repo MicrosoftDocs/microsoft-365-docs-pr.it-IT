@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c028289a58247075c33e85d6d6f3797b3ddad7b4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 204530b8b4a87215053ddcb0434e40e45271da3d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297189"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841007"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Esempio di attacco basato su identità
 
@@ -44,7 +44,7 @@ Microsoft 365 Defender consente agli analisti di filtrare gli avvisi in base all
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Esempio di filtro dell'origine di rilevamento per Defender for Identity":::
 
-Selezionando **l'avviso sospetto di attacco overpass-the-hash** viene visualizzata una pagina in Microsoft Cloud App Security in cui vengono visualizzate informazioni più dettagliate. Per ulteriori informazioni su un avviso o  un attacco, selezionare Ulteriori [](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) informazioni su questo tipo di avviso per leggere una descrizione dell'attacco e suggerimenti di correzione.
+Selezionando **l'avviso sospetto di attacco overpass-the-hash** viene visualizzata una pagina in Microsoft Cloud App Security in cui vengono visualizzate informazioni più dettagliate. Per ulteriori informazioni su un avviso o  un attacco, selezionare Ulteriori [](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) informazioni su questo tipo di avviso per leggere una descrizione dell'attacco e suggerimenti di correzione.
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Esempio di avviso di attacco overpass-the-hash sospetto"::: 
 

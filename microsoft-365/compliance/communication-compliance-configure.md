@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: eed486120673abc513490f4892069ee8fd9bba21
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e258a7fec21bd3499553fe726730ac685ff990b5
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636159"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821380"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -133,7 +133,7 @@ Utilizzare il grafico seguente per configurare i gruppi nell'organizzazione per 
   
 Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora tutti i messaggi di posta elettronica Teams chat di ogni utente nel gruppo di distribuzione. Quando si assegna un gruppo di Microsoft 365 nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Teams inviate a tale gruppo, non i singoli messaggi di posta elettronica e chat ricevuti da ogni membro del gruppo.
 
-Se si è un'organizzazione con una distribuzione locale di Exchange o un provider di posta elettronica esterno e si desidera monitorare le chat di Microsoft Teams per gli utenti, è necessario creare un gruppo di distribuzione per gli utenti con cassette postali locali o esterne da monitorare. Più avanti in questi passaggi, questo gruppo  di distribuzione verrà assegnato come selezione Di utenti e gruppi supervisionati nella procedura guidata dei criteri.
+Se si è un'organizzazione con una distribuzione locale di Exchange o un provider di posta elettronica esterno e si desidera monitorare le chat di Microsoft Teams per gli utenti, è necessario creare un gruppo di distribuzione per gli utenti con cassette postali locali o esterne da monitorare. Più avanti in questi passaggi, questo gruppo  di distribuzione verrà assegnato come selezione Di utenti e gruppi supervisionati nella procedura guidata dei criteri. Per ulteriori informazioni sui requisiti e sulle limitazioni per abilitare l'archiviazione basata su cloud e il supporto Teams per gli utenti locali, vedere [Search for Teams chat data for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Per gestire gli utenti supervisionati nelle organizzazioni aziendali di grandi dimensioni, potrebbe essere necessario monitorare tutti gli utenti in gruppi di grandi dimensioni. È possibile utilizzare PowerShell per configurare un gruppo di distribuzione per un criterio di conformità delle comunicazioni globale per il gruppo assegnato. In questo modo è possibile monitorare migliaia di utenti con un singolo criterio e mantenere aggiornati i criteri di conformità delle comunicazioni quando i nuovi dipendenti aderiscono all'organizzazione.
 

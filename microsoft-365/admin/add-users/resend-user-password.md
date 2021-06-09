@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: Informazioni su come reimpostare la password e inviare un messaggio di posta elettronica a un nuovo Microsoft 365 utente.
-ms.openlocfilehash: 17db9a61dc12c349f0aea032655b56c2a448653f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 916ac2f92f8cd6a7236525c733d4b5061368b0ef
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244045"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840863"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Inviare nuovamente la password utente - Guida per amministratori
 
@@ -33,7 +33,7 @@ Questo articolo spiega come inviare di nuovo il messaggio di posta elettronica d
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
+Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](/microsoft-365/business-video/admin-center-overview).
 
 Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un amministratore globale o un amministratore delle password.
 

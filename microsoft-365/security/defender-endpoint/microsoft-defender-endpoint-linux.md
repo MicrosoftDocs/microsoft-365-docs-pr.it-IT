@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender per Endpoint su Linux
+title: Microsoft Defender per endpoint su Linux
 ms.reviewer: ''
 description: Descrive come installare e usare Microsoft Defender per Endpoint in Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2242d195f4a4ea4b8f0c345d82fa0ad1f947bfa2
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: bd9d42ed85e9a489107a72ccbe841537a7e524d4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730763"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843519"
 ---
-# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender per Endpoint su Linux
+# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender per endpoint su Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -140,7 +140,7 @@ Nel seguente foglio di calcolo scaricabile sono elencati i servizi e gli URL ass
 |![Immagine di scorrimento per il foglio di calcolo degli URL di Microsoft Defender for Endpoint](images/mdatp-urls.png)<br/>  | Foglio di calcolo di record DNS specifici per le posizioni dei servizi, le posizioni geografiche e il sistema operativo. <br><br>[Scaricare il foglio di calcolo qui.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 > [!NOTE]
-> Per un elenco di URL più specifico, vedere [Configure proxy and internet connectivity settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+> Per un elenco di URL più specifico, vedere [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 Defender for Endpoint può individuare un server proxy utilizzando i metodi di individuazione seguenti:
 - Proxy trasparente
@@ -159,7 +159,7 @@ Per la procedura di risoluzione dei problemi, vedi Risolvere i problemi [di conn
 
 Microsoft pubblica regolarmente aggiornamenti software per migliorare le prestazioni, la sicurezza e offrire nuove funzionalità. Per aggiornare Microsoft Defender per Endpoint su Linux, fare riferimento [a Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Linux.](linux-updates.md)
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Come configurare Microsoft Defender per Endpoint su Linux
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Come configurare Microsoft Defender per endpoint su Linux
 
 Le indicazioni su come configurare il prodotto in ambienti aziendali sono disponibili in Impostare le preferenze [per Microsoft Defender per Endpoint su Linux.](linux-preferences.md)
 

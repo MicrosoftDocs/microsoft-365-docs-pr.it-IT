@@ -14,28 +14,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3db1517d87a47aae254d36cfb28f6c057830ef3e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934934"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840995"
 ---
 # <a name="threat-protection"></a>Protezione dalle minacce
-[Microsoft Defender per endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) è una piattaforma unificata per la protezione preventiva, il rilevamento post-violazione, l'indagine automatizzata e la risposta. Defender for Endpoint protegge gli endpoint dalle minacce informatiche, rileva attacchi avanzati e violazioni dei dati, automatizza gli incidenti di sicurezza e migliora la sicurezza.
+[Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) è una piattaforma unificata per la protezione preventiva, il rilevamento post-violazione, l'indagine automatizzata e la risposta. Defender for Endpoint protegge gli endpoint dalle minacce informatiche, rileva attacchi avanzati e violazioni dei dati, automatizza gli incidenti di sicurezza e migliora la sicurezza.
 
 > [!TIP]
-> Consentire agli utenti di accedere ai servizi cloud e alle applicazioni locali con facilità e abilitare funzionalità di gestione moderne per tutti i dispositivi. Per ulteriori informazioni, vedere [Proteggere la forza lavoro remota.](https://docs.microsoft.com/enterprise-mobility-security/remote-work/) 
+> Consentire agli utenti di accedere ai servizi cloud e alle applicazioni locali con facilità e abilitare funzionalità di gestione moderne per tutti i dispositivi. Per ulteriori informazioni, vedere [Proteggere la forza lavoro remota.](/enterprise-mobility-security/remote-work/) 
 
 <center><h2>Microsoft Defender per Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Gestione delle & delle minacce</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Minaccia & gestione delle vulnerabilità</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>Riduzione della superficie di attacco</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="next generation protection icon"><br> <b>Protezione di nuova generazione</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="endpoint detection and response icon"><br> <b>Rilevamento e risposta degli endpoint</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="automated investigation and remediation icon"><br> <b>Analisi e correzione automatizzate</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Esperti di microsoft threat</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
@@ -55,7 +55,7 @@ ms.locfileid: "51934934"
 **[Gestione di minacce e vulnerabilità.](next-gen-threat-and-vuln-mgt.md)**<br>
 Questa funzionalità incorporata usa un approccio basato sul rischio che cambia il gioco per l'individuazione, la definizione delle priorità e la correzione delle vulnerabilità degli endpoint e delle configurazioni erre.
 
-- [Panoramica & gestione delle vulnerabilità delle minacce](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica & gestione delle vulnerabilità minacce](next-gen-threat-and-vuln-mgt.md)
 - [Introduzione](tvm-prerequisites.md)
 - [Accedere al proprio ruolo di sicurezza](tvm-dashboard-insights.md)
 - [Migliorare la sicurezza e ridurre i rischi](tvm-security-recommendation.md)
@@ -67,24 +67,24 @@ Questa funzionalità incorporata usa un approccio basato sul rischio che cambia 
 Il set di funzionalità di riduzione della superficie di attacco fornisce la prima linea di difesa nello stack. Assicurandosi che le impostazioni di configurazione siano impostate correttamente e che le tecniche di mitigazione degli exploit siano applicate, questo set di funzionalità resiste agli attacchi e allo sfruttamento.
 
 - [Isolamento basato su hardware](overview-hardware-based-isolation.md)
-- [Controllo delle applicazioni](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
-- [Controllo dispositivo](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+- [Controllo delle applicazioni](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [Controllo dispositivo](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Protezione dagli exploit](exploit-protection.md)
 - [Protezione di rete](network-protection.md), [protezione Web](web-protection-overview.md)
 - [Accesso controllato alle cartelle](controlled-folders.md)
-- [Firewall di rete](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [Firewall di rete](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [Regole per la riduzione della superficie di attacco](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
-**[Protezione di nuova generazione](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[Protezione di nuova generazione](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 Per rafforzare ulteriormente il perimetro di sicurezza della rete, Microsoft Defender for Endpoint usa una protezione di nuova generazione progettata per rilevare tutti i tipi di minacce emergenti.
 
-- [Monitoraggio del comportamento](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
-- [Protezione basata su cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
-- [Apprendimento automatico](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Protezione URL](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
-- [Servizio sandbox automatizzato](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [Monitoraggio del comportamento](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+- [Protezione basata su cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
+- [Apprendimento automatico](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Protezione URL](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [Servizio sandbox automatizzato](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 
@@ -93,7 +93,7 @@ Vengono messe in atto funzionalità di rilevamento e risposta degli endpoint per
 
 - [Avvisi](alerts-queue.md)
 - [Dati cronologici degli endpoint](investigate-machines.md#timeline)
-- [Orchestrazione della risposta](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
+- [Orchestrazione della risposta](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
 - [Raccolta forense](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [Intelligence per le minacce](threat-indicator-concepts.md)
 - [Servizio di detonazione e analisi avanzato](respond-file-alerts.md#deep-analysis)
@@ -102,10 +102,10 @@ Vengono messe in atto funzionalità di rilevamento e risposta degli endpoint per
 
 <a name="ai"></a>
 
-**[Indagine e correzione automatizzate](automated-investigations.md)**<br>
+**[Analisi e correzione automatizzate](automated-investigations.md)**<br>
 Oltre a rispondere rapidamente agli attacchi avanzati, Microsoft Defender for Endpoint offre funzionalità di analisi e correzione automatiche che consentono di ridurre il volume di avvisi in minuti su larga scala.
 
-- [Indagine e correzione automatizzate](automated-investigations.md)
+- [Analisi e correzione automatizzate](automated-investigations.md)
 - [Visualizzare dettagli e risultati delle indagini automatizzate](auto-investigation-action-center.md)
 - [Visualizzare e approvare le azioni correttive](manage-auto-investigation.md)
 
@@ -116,7 +116,7 @@ Il nuovo servizio di ricerca delle minacce gestite di Microsoft Defender for End
 
 - [Notifica di attacco mirato](microsoft-threat-experts.md)
 - [Esperti su richiesta](microsoft-threat-experts.md)
-- [Configurare il servizio di ricerca gestito di Microsoft 365 Defender](configure-microsoft-threat-experts.md)
+- [Configurare il servizio Microsoft 365 di ricerca gestita di Microsoft 365 Defender](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
@@ -139,5 +139,5 @@ Integrare Microsoft Defender for Endpoint nei flussi di lavoro esistenti.
 - Microsoft Cloud App Security
 
 <a name="mtp"></a>
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
  Con Microsoft 365 Defender, Microsoft Defender for Endpoint e varie soluzioni di sicurezza Microsoft formano una famiglia di prodotti di difesa aziendale unificata pre e post-violazione che si integra in modo nativo tra endpoint, identità, posta elettronica e applicazioni per rilevare, prevenire, analizzare e rispondere automaticamente ad attacchi sofisticati.

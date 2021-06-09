@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e9dd7e7d87e9343b0aae93e7ba47d89f9ed4bf41
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4be87e296739020c80babb864c57bc803f10d3e0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769006"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843687"
 ---
 # <a name="list-vulnerabilities"></a>Elencare vulnerabilità
 
@@ -109,5 +109,5 @@ Ecco un esempio di risposta.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Gestione delle vulnerabilità basata sui rischi & rischio](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnerabilità nell'organizzazione](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Gestione delle vulnerabilità basata sui rischi & rischio](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnerabilità nell'organizzazione](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

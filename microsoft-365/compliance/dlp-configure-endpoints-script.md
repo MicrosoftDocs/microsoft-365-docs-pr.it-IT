@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Usa uno script locale per distribuire il pacchetto di configurazione nei dispositivi in modo che siano onboarded nel servizio.
-ms.openlocfilehash: e9efa76af72f9169bdec1acf35d72066ac0a776e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 55109d8fda52db6651d4398cd84ffd6668b4d871
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893307"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843447"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Onboarding di dispositivi Windows 10 con uno script locale
 
@@ -34,7 +34,7 @@ Puoi anche eseguire manualmente l'onboardboard dei singoli dispositivi per Micro
 >
 > Per eseguire la distribuzione su larga scala, [utilizzare altre opzioni di distribuzione.](dlp-configure-endpoints.md) Ad esempio, puoi distribuire uno script di onboarding in più di 10 dispositivi in produzione con lo script disponibile in Onboard Windows 10 dispositivi usando [Criteri di gruppo.](dlp-configure-endpoints-gp.md)
 
-## <a name="onboard-devices"></a>Dispositivi onboard
+## <a name="onboard-devices"></a>Eseguire l'onboarding dei dispositivi
  
 1.  Aprire il file del pacchetto .zip criteri di gruppo (*DeviceComplianceOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. È anche possibile ottenere il pacchetto dal [Centro conformità Microsoft](https://compliance.microsoft.com)
 
@@ -93,7 +93,7 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 
 
 ## <a name="monitor-device-configuration"></a>Monitorare la configurazione del dispositivo
-Puoi seguire i diversi passaggi di verifica in [Risolvere i problemi di onboarding](( per verificare che lo script sia stato completato correttamente e https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) che l'agente sia in esecuzione.
+Puoi seguire i diversi passaggi di verifica in [Risolvere i problemi di onboarding]((/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) per verificare che lo script sia stato completato correttamente e che l'agente sia in esecuzione.
 
 Il monitoraggio può essere eseguito anche direttamente nel portale o utilizzando i diversi strumenti di distribuzione.
 

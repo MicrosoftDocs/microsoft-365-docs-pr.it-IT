@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams chat e canali supporta i criteri di prevenzione della perdita dei dati (DLP).
-ms.openlocfilehash: 6467ae7fdfc9c8636bd306efde5cb89c100e5e6c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fa7e0967e24d8fa5e64b84fbccf54ff8cf45d1d6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782562"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843543"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita dei dati e Microsoft Teams
 
@@ -46,7 +46,7 @@ Office 365 e Microsoft 365 E3 includono la protezione DLP per SharePoint Online,
 
 Il supporto per la protezione DLP in Teams Chat richiede E5.
 
-Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 > [!IMPORTANT]
 > DLP si applica solo ai messaggi effettivi nel thread di chat o canale. Le notifiche di attività, che includono un'anteprima breve dei  messaggi e vengono visualizzate in base alle impostazioni di notifica di un utente, non sono incluse in Teams DLP. Tutte le informazioni riservate presenti nella parte del messaggio visualizzata nell'anteprima rimarranno visibili nella notifica anche dopo l'applicazione del criterio DLP e la rimozione delle informazioni riservate del messaggio stesso.

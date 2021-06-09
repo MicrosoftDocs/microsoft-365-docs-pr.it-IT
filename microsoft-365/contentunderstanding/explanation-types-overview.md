@@ -13,40 +13,40 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Altre informazioni sui tipi di spiegazione Elenco frasi, Espressione regolare e Prossimità in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: cfc217d9e671f2a3a9daa89f80e7d932adeac2c0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770866"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843351"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Informazioni sui tipi di spiegazione in Microsoft SharePoint Syntex
 
 Le spiegazioni vengono usate per definire meglio le informazioni da etichettare ed estrarre nei modelli di analisi dei documenti in Microsoft SharePoint Syntex. Quando si crea una spiegazione, è necessario selezionare un tipo di spiegazione. Questo articolo contiene informazioni utili per comprendere i diversi tipi di spiegazione e come vengono usati.
 
-![Screenshot del pannello Crea una spiegazione che mostra i tre tipi di spiegazione.](../media/content-understanding/explanation-types.png) 
-   
+![Screenshot del pannello Crea una spiegazione che mostra i tre tipi di spiegazione.](../media/content-understanding/explanation-types.png)
+
 Sono disponibili questi tipi di spiegazione:
 
 - [**Elenco frasi**](#phrase-list): elenco di parole, frasi, numeri o altri caratteri che è possibile usare nel documento o nelle informazioni che si stanno estraendo. Ad esempio, la stringa di testo *medico richiedente* è inclusa in tutti i documenti di richiesta di visita specialistica che si stanno identificando. Oppure il *numero di telefono* del medico richiedente da tutti i documenti di richiesta di visita specialistica che si stanno identificando.
 
 - [**Espressione regolare**](#regular-expression): usa una notazione di corrispondenza dei criteri per trovare modelli di carattere specifici. Ad esempio, è possibile usare un'espressione regolare per trovare tutte le istanze di un criterio *indirizzo di posta elettronica di* in un set di documenti.
 
-- [**Prossimità**](#proximity): descrive la relazione di prossimità tra le spiegazioni. Ad esempio, un elenco frasi *numero civico* precede immediatamente l'elenco frasi *nome della via*, senza token intermedi (i token verranno illustrati più avanti in questo articolo). Se si usa il tipo di prossimità, il modello deve includere almeno due spiegazioni, altrimenti l'opzione verrà disabilitata. 
+- [**Prossimità**](#proximity): descrive la relazione di prossimità tra le spiegazioni. Ad esempio, un elenco frasi *numero civico* precede immediatamente l'elenco frasi *nome della via*, senza token intermedi (i token verranno illustrati più avanti in questo articolo). Se si usa il tipo di prossimità, il modello deve includere almeno due spiegazioni, altrimenti l'opzione verrà disabilitata.
 
 ## <a name="phrase-list"></a>Elenco frasi
 
 Il tipo di spiegazione elenco frasi viene usato generalmente per identificare e classificare un documento tramite il modello. Come descritto nell'esempio di etichetta *medico richiedente*, si tratta di una stringa di parole, frasi, numeri o caratteri presente costantemente nei documenti che si stanno identificando.
 
-Anche se non è necessario, la spiegazione risulta più efficace se la frase acquisita si trova in una posizione ricorrente nel documento. Ad esempio, l'etichetta *medico richiedente* potrebbe essere situata sempre nel primo paragrafo del documento. È possibile inoltre usare l'impostazione avanzata **[Configurare la posizione delle frasi nel documento](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#configure-where-phrases-occur-in-the-document)** per selezionare aree specifiche in cui è posizionata la frase, soprattutto se la frase può essere presente in più posizioni nel documento.
+Anche se non è necessario, la spiegazione risulta più efficace se la frase acquisita si trova in una posizione ricorrente nel documento. Ad esempio, l'etichetta *medico richiedente* potrebbe essere situata sempre nel primo paragrafo del documento. È possibile inoltre usare l'impostazione avanzata **[Configurare la posizione delle frasi nel documento](explanation-types-overview.md#configure-where-phrases-occur-in-the-document)** per selezionare aree specifiche in cui è posizionata la frase, soprattutto se la frase può essere presente in più posizioni nel documento.
 
 Se la distinzione tra maiuscole e minuscole è un requisito per identificare l'etichetta, il tipo elenco frasi consente di specificarlo nella spiegazione selezionando la casella di controllo **Solo le maiuscole esatte**.
 
-![Distinzione tra maiuscole e minuscole](../media/content-understanding/case-sensitivity.png) 
+![Distinzione tra maiuscole e minuscole](../media/content-understanding/case-sensitivity.png)
 
-Un tipo di frase è utile soprattutto quando si crea una spiegazione che identifichi ed estragga informazioni in formati diversi, come date, numeri di telefono e numeri di carte di credito. Ad esempio, una data può essere visualizzata in molti formati (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020 o 1 gen 2020). La definizione di un elenco frasi rende più efficace la spiegazione attraverso l'acquisizione di tutte le possibili varianti nei dati che si sta provando a identificare ed estrarre. 
+Un tipo di frase è utile soprattutto quando si crea una spiegazione che identifichi ed estragga informazioni in formati diversi, come date, numeri di telefono e numeri di carte di credito. Ad esempio, una data può essere visualizzata in molti formati (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020 o 1 gen 2020). La definizione di un elenco frasi rende più efficace la spiegazione attraverso l'acquisizione di tutte le possibili varianti nei dati che si sta provando a identificare ed estrarre.
 
-Per l'esempio relativo al *numero di telefono*, estrarre il numero di telefono per ogni medico richiedente da tutti i documenti di richiesta di visita specialistica identificati dal modello. Quando si crea la spiegazione, digitare i vari formati in cui può essere visualizzato un numero di telefono nel documento, così da poter acquisire tutte le possibili variabili. 
+Per l'esempio relativo al *numero di telefono*, estrarre il numero di telefono per ogni medico richiedente da tutti i documenti di richiesta di visita specialistica identificati dal modello. Quando si crea la spiegazione, digitare i vari formati in cui può essere visualizzato un numero di telefono nel documento, così da poter acquisire tutte le possibili variabili.
 
 ![Modelli di frasi per il numero di telefono](../media/content-understanding/pattern-list.png)
 
@@ -71,7 +71,7 @@ Se l'elenco frasi prevede requisiti per le maiuscole, è possibile selezionare l
 ![Solo le maiuscole esatte](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Anziché creare manualmente una spiegazione elenco frasi, usare la [raccolta spiegazioni](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) per usare modelli di elenchi frasi per elenchi frasi comuni, quali *data*, *numero di telefono* o *numero di carta di credito*.
+> Anziché creare manualmente una spiegazione elenco frasi, usare la [raccolta spiegazioni](explanation-types-overview.md#use-explanation-templates) per usare modelli di elenchi frasi per elenchi frasi comuni, quali *data*, *numero di telefono* o *numero di carta di credito*.
 
 ## <a name="regular-expression"></a>Espressione regolare
 
@@ -81,7 +81,7 @@ Un tipo di spiegazione di espressione regolare consente di creare criteri che co
 - Convalidare il testo per assicurarsi che corrisponda a un criterio predefinito, ad esempio un indirizzo di posta elettronica.
 - Estrazione, modifica, sostituzione o eliminazione di sottostringhe di testo.
 
-Un’espressione regolare è utile soprattutto quando si crea una spiegazione che identifichi ed estragga informazioni in formati simili, ad esempio indirizzi di posta elettronica, numeri di conto corrente bancario o URL. Ad esempio, un indirizzo di posta elettronica, come megan@contoso.com, viene visualizzato con un determinato modello ("megan" è la prima parte e "com" è l'ultima parte). 
+Un’espressione regolare è utile soprattutto quando si crea una spiegazione che identifichi ed estragga informazioni in formati simili, ad esempio indirizzi di posta elettronica, numeri di conto corrente bancario o URL. Ad esempio, un indirizzo di posta elettronica, come megan@contoso.com, viene visualizzato con un determinato modello ("megan" è la prima parte e "com" è l'ultima parte).
 
 L'espressione regolare per un indirizzo di posta elettronica è: **[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+. [A-Za-z]{2,6}**.
 
@@ -117,18 +117,18 @@ Per aggiungere un tipo di spiegazione di espressione regolare:
 
 ### <a name="limitations"></a>Limitazioni
 
-La tabella seguente mostra le opzioni relative ai caratteri in linea attualmente non disponibili per l'utilizzo nei modelli di espressioni regolari. 
+La tabella seguente mostra le opzioni relative ai caratteri in linea attualmente non disponibili per l'utilizzo nei modelli di espressioni regolari.
 
 |Opzione  |Stato  |Funzionalità corrente  |
 |---------|---------|---------|
 |Distinzione tra maiuscole e minuscole | Attualmente non supportato. | Per le corrispondenze non viene fatta distinzione tra maiuscole e minuscole.  |
 |Ancoraggi di riga     | Attualmente non supportato. | Non è possibile specificare una posizione specifica in una stringa in cui deve essere trovata una corrispondenza.   |
 
-## <a name="proximity"></a>Prossimità 
+## <a name="proximity"></a>Prossimità
 
-Il tipo di spiegazione prossimità consente al modello di identificare i dati definendo il rapporto di prossimità rispetto ad altri dati. Nel modello, ad esempio, sono state definite due spiegazioni che etichettano il *Numero civico* e il *Numero di telefono* del cliente. 
+Il tipo di spiegazione prossimità consente al modello di identificare i dati definendo il rapporto di prossimità rispetto ad altri dati. Nel modello, ad esempio, sono state definite due spiegazioni che etichettano il *Numero civico* e il *Numero di telefono* del cliente.
 
-Si nota anche che i numeri di telefono del cliente vengono sempre visualizzati sempre prima del numero civico. 
+Si nota anche che i numeri di telefono del cliente vengono sempre visualizzati sempre prima del numero civico.
 
 Davide Milano<br>
 555-555-5555<br>
@@ -141,7 +141,7 @@ Usare la spiegazione di prossimità per definire quanto è lontana la spiegazion
 
 #### <a name="what-are-tokens"></a>Che cosa sono i token?
 
-Per usare il tipo di spiegazione di prossimità, è necessario comprendere che cos'è un token. Il numero di token è il sistema usato dalla spiegazione di prossimità per misurare la distanza tra una spiegazione e l'altra. Un token è una serie continua di lettere e numeri, senza spazi o punteggiatura. 
+Per usare il tipo di spiegazione di prossimità, è necessario comprendere che cos'è un token. Il numero di token è il sistema usato dalla spiegazione di prossimità per misurare la distanza tra una spiegazione e l'altra. Un token è una serie continua di lettere e numeri, senza spazi o punteggiatura.
 
 Nella tabella seguente sono illustrati alcuni esempi per determinare il numero di token in una frase.
 
@@ -207,8 +207,8 @@ Per questa impostazione è possibile scegliere le opzioni seguenti:
 
    ![Intervallo personalizzato](../media/content-understanding/custom-file.png)
 
-    Nel visualizzatore è possibile modificare manualmente la casella di selezione in modo da includere la posizione in cui si trova la fase. Per questa impostazione è necessario selezionare una posizione di **Inizio** e di **Fine**. Questi valori rappresentano il numero di token dall'inizio del documento. Anche se è possibile immettere manualmente questi valori, è più facile modificare manualmente la casella di selezione nel visualizzatore. 
-   
+    Nel visualizzatore è possibile modificare manualmente la casella di selezione in modo da includere la posizione in cui si trova la fase. Per questa impostazione è necessario selezionare una posizione di **Inizio** e di **Fine**. Questi valori rappresentano il numero di token dall'inizio del documento. Anche se è possibile immettere manualmente questi valori, è più facile modificare manualmente la casella di selezione nel visualizzatore.
+
 ## <a name="use-explanation-templates"></a>Usare modelli di spiegazione
 
 Anche se è possibile aggiungere manualmente vari valori dell'elenco frasi per la spiegazione, può essere più semplice usare i modelli disponibili nella raccolta di spiegazioni.
@@ -216,34 +216,34 @@ Anche se è possibile aggiungere manualmente vari valori dell'elenco frasi per l
 Ad esempio, invece di aggiungere manualmente tutte le varianti per *data*, è possibile usare il modello con l’elenco frasi per *data*, poiché include già molti valori:
 
 ![Raccolta di spiegazioni](../media/content-understanding/explanation-template.png)
- 
+
 La raccolta di spiegazioni include spiegazioni di *elenchi frasi* di uso comune, tra cui:
 
 - Data: date del Calendario, tutti i formati. Include testo e numeri, ad esempio "9 dic 2020".
 - Data (numerica): date del Calendario, tutti i formati. Include numeri, (ad esempio 1-11-2020).
 - Ora: formati a 12 e 24 ore.
-- Numero: numeri positivi e negativi fino a 2 cifre decimali. 
+- Numero: numeri positivi e negativi fino a 2 cifre decimali.
 - Percentuale: un elenco di criteri che rappresentano una percentuale. Ad esempio, 1%, 11%, 100%, o 11.11%.
 - Numero di telefono: formati comuni degli Stati Uniti e internazionali. Ad esempio, 000 000 0000, 000-000-0000, (000)000-0000, o (000) 000-0000.
 - Codice postale ZIP: formati di codice postale ZIP degli Stati Uniti. Ad esempio: 11111, 11111-1111.
-- Prima parola della frase: criteri comuni per parole con un massimo di nove caratteri. 
+- Prima parola della frase: criteri comuni per parole con un massimo di nove caratteri.
 - Fine della frase: punteggiatura comune per terminare una frase.
-- Carta di credito: formati comuni per i numeri di carta di credito. Ad esempio: 1111-1111-1111-1111. 
-- Numero di previdenza sociale: formato del numero di previdenza sociale degli Stati Uniti, ad esempio 111-11-1111. 
+- Carta di credito: formati comuni per i numeri di carta di credito. Ad esempio: 1111-1111-1111-1111.
+- Numero di previdenza sociale: formato del numero di previdenza sociale degli Stati Uniti, ad esempio 111-11-1111.
 - Casella di controllo: un elenco frasi che rappresenta le varianti di una casella di controllo spuntata. Ad esempio: _X_, _ _X_.
-- Valuta: principali simboli internazionali. Ad esempio: $. 
+- Valuta: principali simboli internazionali. Ad esempio: $.
 - Cc del messaggio di posta elettronica: un elenco frasi con il termine "Cc:", spesso collocato accanto ai nomi o agli indirizzi di posta elettronica di altre persone o gruppi a cui è stato inviato il messaggio.
 - Data del messaggio di posta elettronica: un elenco frasi con il termine "Inviato il:", spesso collocato accanto alla data di invio del messaggio.
 - Saluto del messaggio di posta elettronica: formule di apertura comuni per i messaggi di posta elettronica.
-- Destinatario del messaggio di posta elettronica: un elenco frasi con il termine "A:", spesso collocato accanto ai nomi o agli indirizzi di posta elettronica delle persone o dei gruppi a cui è stato inviato il messaggio. 
-- Mittente del messaggio di posta elettronica: un elenco frasi con il termine "Da:", spesso collocato accanto al nome o all'indirizzo di posta elettronica del mittente. 
+- Destinatario del messaggio di posta elettronica: un elenco frasi con il termine "A:", spesso collocato accanto ai nomi o agli indirizzi di posta elettronica delle persone o dei gruppi a cui è stato inviato il messaggio.
+- Mittente del messaggio di posta elettronica: un elenco frasi con il termine "Da:", spesso collocato accanto al nome o all'indirizzo di posta elettronica del mittente.
 - Oggetto del messaggio di posta elettronica: un elenco frasi con il termine "Oggetto:", spesso collocato accanto all'oggetto del messaggio.
 
 La raccolta di spiegazioni include anche spiegazioni di *espressioni regolari* di uso comune, tra cui:
 
 - Numeri da 6 a 17 cifre: corrisponde a un numero qualsiasi di lunghezza compresa tra 6 e 17 cifre. I numeri di conto corrente bancario statunitense sono adatti a questo criterio.
 - Indirizzo di posta elettronica: corrisponde a un tipo comune di indirizzo di posta elettronica come meganb@contoso.com.
-- Codice identificativo del contribuente statunitense: corrisponde a un numero di tre cifre che inizia con 9 seguito da un numero di 6 cifre che inizia con 7 o 8. 
+- Codice identificativo del contribuente statunitense: corrisponde a un numero di tre cifre che inizia con 9 seguito da un numero di 6 cifre che inizia con 7 o 8.
 - Indirizzo Web (URL): corrisponde al formato di un indirizzo Web, a partire http:// o https://.
 
 Inoltre, la raccolta di spiegazioni include tre tipi di modello automatico che funzionano con i dati etichettati nei file di esempio:
@@ -263,7 +263,7 @@ Quando si seleziona il modello di spiegazione Prima dell'etichetta, questo cerca
 È possibile selezionare **Aggiungi** per creare una spiegazione del modello.  Man mano che si aggiungono altri file di esempio, vengono identificate e aggiunte altre parole all'elenco frasi.
 
 ![Aggiungere l'etichetta](../media/content-understanding/before-label-add.png)
- 
+
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Per usare un modello dalla raccolta di spiegazioni
 
 1. Nella sezione **Spiegazioni** della pagina **Avvia training** del modello selezionare **Nuovo**, quindi **Da un modello**.
@@ -274,7 +274,7 @@ Quando si seleziona il modello di spiegazione Prima dell'etichetta, questo cerca
 
     ![Selezionare un modello](../media/content-understanding/phone-template.png)
 
-3. Le informazioni relative al modello selezionato sono visualizzate nella pagina **Crea spiegazione**. Se necessario, modificare il nome della spiegazione e aggiungere o rimuovere le voci dall'elenco frasi.  
+3. Le informazioni relative al modello selezionato sono visualizzate nella pagina **Crea spiegazione**. Se necessario, modificare il nome della spiegazione e aggiungere o rimuovere le voci dall'elenco frasi.
 
     ![Modifica modello](../media/content-understanding/phone-template-live.png)
 

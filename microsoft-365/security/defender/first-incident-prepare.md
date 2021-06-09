@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4fc124bf8787d5880d78a4f5208bd66329da07a0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: da9147955c5da9ea727854420b3d4d160583ef73
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539036"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840935"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparare la posizione di sicurezza per il primo incidente
 
@@ -40,14 +40,14 @@ La preparazione per la gestione degli eventi imprevisti prevede la configurazion
 
 Microsoft 365 Defender può aiutare a risolvere diversi aspetti della prevenzione degli incidenti: 
 
-- Implementazione di un framework [zero trust](https://docs.microsoft.com/security/zero-trust/)
+- Implementazione di un framework [zero trust](/security/zero-trust/)
 - Determinare la posizione di sicurezza assegnando un punteggio con [Microsoft Secure Score](microsoft-secure-score.md)
 - Prevenzione delle minacce tramite valutazioni delle vulnerabilità in [Threat and Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Informazioni sulle minacce alla sicurezza più recenti in modo da poterle preparare
 
 ## <a name="step-1-implement-zero-trust"></a>Passaggio 1. Implementare zero trust
 
-[Zero Trust](https://docs.microsoft.com/security/zero-trust/) è una filosofia di sicurezza integrata e una strategia end-to-end che considera la natura complessa di qualsiasi ambiente moderno, inclusa la forza lavoro mobile e gli utenti, i dispositivi, le applicazioni e i dati, ovunque si trovino. Fornendo un singolo riquadro di vetro per gestire tutti i rilevamenti in modo coerente, Microsoft 365 Defender [](https://docs.microsoft.com/security/zero-trust/#guiding-principles-of-zero-trust) può semplificare l'implementazione dei principi guida di Zero Trust da parte del team delle operazioni di sicurezza. 
+[Zero Trust](/security/zero-trust/) è una filosofia di sicurezza integrata e una strategia end-to-end che considera la natura complessa di qualsiasi ambiente moderno, inclusa la forza lavoro mobile e gli utenti, i dispositivi, le applicazioni e i dati, ovunque si trovino. Fornendo un singolo riquadro di vetro per gestire tutti i rilevamenti in modo coerente, Microsoft 365 Defender [](/security/zero-trust/#guiding-principles-of-zero-trust) può semplificare l'implementazione dei principi guida di Zero Trust da parte del team delle operazioni di sicurezza. 
 
 I componenti di Microsoft 365 Defender possono visualizzare le violazioni delle regole implementate per stabilire criteri di accesso condizionale per Zero Trust integrando i dati di Microsoft Defender for Endpoint (MDE) o di altri fornitori di sicurezza per dispositivi mobili come origine di informazioni per i criteri di conformità dei dispositivi e l'implementazione di criteri di accesso condizionale basati su dispositivo. 
 

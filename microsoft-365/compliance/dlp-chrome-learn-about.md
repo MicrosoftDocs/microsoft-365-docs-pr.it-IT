@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: L'estensione per Conformità Microsoft estende il monitoraggio e il controllo delle attività sui file e sulle azioni di protezione nel browser Google Chrome
-ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: cf7a3cd2e26f2e7d7a116e4a609f98aeea78be19
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730487"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843807"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>Informazioni sull'estensione per Conformità Microsoft
 
@@ -63,5 +63,5 @@ Per le procedure e gli scenari di distribuzione completi, vedere [Introduzione a
 - [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
-- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender ATP](/windows/security/threat-protection/)
 - [Gestione dei rischi Insider](insider-risk-management.md)

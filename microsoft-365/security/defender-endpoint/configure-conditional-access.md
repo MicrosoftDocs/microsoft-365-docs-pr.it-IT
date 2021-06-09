@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903779"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843975"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurare l'accesso condizionale in Microsoft Defender per Endpoint
 
@@ -44,49 +44,49 @@ In questa sezione vengono descritti tutti i passaggi necessari per implementare 
 È necessario assicurarsi che tutti i dispositivi siano registrati in Intune. Puoi usare una delle opzioni seguenti per registrare i dispositivi in Intune:
 
 
-- Amministratore IT: per ulteriori informazioni su come abilitare la registrazione automatica, vedere [Registrazione di Windows](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- Utente finale: per altre informazioni su come registrare il dispositivo Windows 10 in Intune, vedere Registrare il dispositivo [Windows 10 in Intune](https://docs.microsoft.com/intune/quickstart-enroll-windows-device)
-- Alternativa per l'utente finale: per ulteriori informazioni sull'aggiunta a un dominio di Azure AD, vedere [Procedura: Pianificare l'implementazione dell'aggiunta ad Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)
+- Amministratore IT: per ulteriori informazioni su come abilitare la registrazione automatica, vedere Windows [Enrollment](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+- Utente finale: per ulteriori informazioni su come registrare il dispositivo Windows 10 in Intune, vedere [Registrare il](/intune/quickstart-enroll-windows-device) dispositivo Windows 10 in Intune
+- Alternativa per l'utente finale: per ulteriori informazioni sull'aggiunta a un dominio di Azure AD, vedere [Procedura: Pianificare l'implementazione dell'aggiunta ad Azure AD.](/azure/active-directory/devices/azureadjoin-plan)
 
 
 
 È necessario eseguire alcuni passaggi in Microsoft Defender Security Center, nel portale di Intune e nel portale di Azure AD.
 
 È importante notare i ruoli necessari per accedere a questi portali e implementare l'accesso condizionale:
-- **Microsoft Defender Security Center:** dovrai accedere al portale con un ruolo di amministratore globale per attivare l'integrazione.
+- **Microsoft Defender Security Center:** è necessario accedere al portale con un ruolo di amministratore globale per attivare l'integrazione.
 - **Intune:** è necessario accedere al portale con diritti di amministratore della sicurezza con autorizzazioni di gestione. 
 - **Portale di Azure AD:** è necessario accedere come amministratore globale, amministratore della sicurezza o amministratore di accesso condizionale.
 
 
 > [!NOTE]
-> Avrai bisogno di un ambiente Microsoft Intune, con Intune gestito e i dispositivi Windows 10 aggiunti ad Azure AD.
+> Avrai bisogno di un ambiente Microsoft Intune, con Intune gestito e Azure AD aggiunto Windows 10 dispositivi.
 
 Eseguire la procedura seguente per abilitare l'accesso condizionale:
-- Passaggio 1: attivare la connessione a Microsoft Intune da Microsoft Defender Security Center
+- Passaggio 1: attivare la connessione Microsoft Intune da Microsoft Defender Security Center
 - Passaggio 2: attivare l'integrazione di Defender for Endpoint in Intune
 - Passaggio 3: Creare i criteri di conformità in Intune
 - Passaggio 4: Assegnare il criterio 
 - Passaggio 5: Creare un criterio di accesso condizionale di Azure AD
 
 
-### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>Passaggio 1: attivare la connessione a Microsoft Intune
-1. Nel riquadro di spostamento, selezionare **Impostazioni**  >  **Funzionalità avanzate** Connessione di Microsoft  >  **Intune.**
-2. Attiva l'impostazione di Microsoft **Intune.**
+### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>Passaggio 1: attivare la Microsoft Intune connessione
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **funzionalità avanzate**  >  **Microsoft Intune connessione.**
+2. Attivare o disattivare Microsoft Intune'impostazione **di configurazione su Attivato.**
 3. Fare **clic su Salva preferenze.**
 
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Passaggio 2: attivare l'integrazione di Defender for Endpoint in Intune
 1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Conformità dispositivo** Microsoft Defender  >  **ATP**.
-3. Imposta **Connetti dispositivi Windows 10.0.15063+** a Microsoft Defender Advanced Threat Protection su **On.**
+2. Selezionare **Conformità dispositivo**  >  **Microsoft Defender ATP**.
+3. Imposta **Connessione Windows 10.0.15063+ dispositivi su Microsoft Defender Advanced Threat Protection** su **On**.
 4. Fare clic su **Salva**.
 
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>Passaggio 3: Creare i criteri di conformità in Intune
-1. Nel portale [di Azure](https://portal.azure.com)seleziona Tutti **i servizi,** filtra **in Intune** e seleziona **Microsoft Intune.**
+1. Nel portale [di Azure,](https://portal.azure.com)selezionare **Tutti i servizi,** filtrare **intune** e selezionare **Microsoft Intune**.
 2. Selezionare **Criteri di conformità** dei  >  **dispositivi** Crea  >  **criterio**.
 3. Immettere un **nome** e una **descrizione.**
-4. In **Piattaforma** seleziona **Windows 10 e versioni successive.**
+4. In **Piattaforma** selezionare Windows 10 **e versioni successive.**
 5. Nelle impostazioni **integrità dispositivo** imposta Richiedi che **il** dispositivo sia al livello di minaccia del dispositivo o al livello di minaccia del dispositivo al livello preferito:
 
    - **Protetto**: questo livello è il più sicuro. Il dispositivo non può avere minacce esistenti e accedere comunque alle risorse aziendali. Se vengono rilevate minacce, il dispositivo viene valutato come non conforme.
@@ -97,16 +97,16 @@ Eseguire la procedura seguente per abilitare l'accesso condizionale:
 6. Selezionare **OK** e **Crea** per salvare le modifiche e creare il criterio.
 
 ### <a name="step-4-assign-the-policy"></a>Passaggio 4: Assegnare il criterio
-1. Nel portale [di Azure](https://portal.azure.com)seleziona Tutti **i servizi,** filtra **in Intune** e seleziona **Microsoft Intune.**
+1. Nel portale [di Azure,](https://portal.azure.com)selezionare **Tutti i servizi,** filtrare **intune** e selezionare **Microsoft Intune**.
 2. Seleziona **Criteri di conformità**  >  **dei** dispositivi> i criteri di conformità di Microsoft Defender for Endpoint.
 3. Selezionare **Attività**.
 4. Includi o escludi i gruppi di Azure AD per assegnare loro il criterio.
 5. Per distribuire il criterio ai gruppi, selezionare **Salva.** I dispositivi utente destinati ai criteri vengono valutati per la conformità.
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>Passaggio 5: Creare un criterio di accesso condizionale di Azure AD
-1. Nel portale [di Azure,](https://portal.azure.com)aprire **Azure Active Directory** Conditional  >  **Access**  >  **New policy**.
+1. Nel portale [di Azure](https://portal.azure.com)aprire **Azure Active Directory**  >  **Nuovo** criterio di accesso  >  **condizionale.**
 2. Immettere un nome **di** criterio e selezionare **Utenti e gruppi**. Utilizzare le opzioni Includi o Escludi per aggiungere i gruppi per il criterio e selezionare **Fatto.**
-3. Seleziona **App cloud** e scegli le app da proteggere. Ad esempio, scegliere **Seleziona app** e selezionare **Office 365 SharePoint Online** ed Office **365 Exchange Online.** Selezionare **Fine** per salvare le modifiche.
+3. Seleziona **App cloud** e scegli le app da proteggere. Ad esempio, scegli **Seleziona app** e seleziona **Office 365 SharePoint Online** e **Office 365 Exchange Online**. Selezionare **Fine** per salvare le modifiche.
 
 4. Seleziona **Condizioni**  >  **App client** per applicare il criterio ad app e browser. Ad esempio, selezionare **Sì** e quindi abilitare **le app browser** e per dispositivi mobili e i client **desktop.** Selezionare **Fine** per salvare le modifiche.
 
@@ -114,6 +114,6 @@ Eseguire la procedura seguente per abilitare l'accesso condizionale:
 
 6. Selezionare **Abilita criterio** e quindi Crea **per** salvare le modifiche.
 
-Per altre informazioni, vedi [Applicare la conformità per Microsoft Defender per Endpoint con accesso condizionale in Intune.](https://docs.microsoft.com/intune/advanced-threat-protection)
+Per altre informazioni, vedi [Applicare la conformità per Microsoft Defender per Endpoint con accesso condizionale in Intune.](/intune/advanced-threat-protection)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

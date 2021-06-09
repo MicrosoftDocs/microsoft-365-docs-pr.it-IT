@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5c76784d78837c324922ffc25539746a4921e426
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 0ddb38e713f08c101639976b9f2c8c1ee32e63a3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769714"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843783"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Creare report personalizzati con Power BI
 
@@ -142,7 +142,7 @@ Il primo esempio illustra come connettersi Power BI'API Advanced Hunting e il se
 Per ulteriori informazioni, vedere i [modelli Power BI report.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
 
 ## <a name="sample-reports"></a>Report di esempio
-Visualizza gli esempi di report di Microsoft Defender for Endpoint Power BI. Per ulteriori informazioni, vedere [Sfogliare gli esempi di codice.](https://docs.microsoft.com/samples/browse/?products=mdatp)
+Visualizza gli esempi di report di Microsoft Defender for Endpoint Power BI. Per ulteriori informazioni, vedere [Sfogliare gli esempi di codice.](/samples/browse/?products=mdatp)
 
 
 ## <a name="related-topic"></a>Argomento correlato

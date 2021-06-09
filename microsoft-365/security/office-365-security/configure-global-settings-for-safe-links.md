@@ -18,12 +18,12 @@ ms.collection:
 description: Gli amministratori possono imparare a visualizzare e configurare le impostazioni globali (l'elenco "Blocca gli URL seguenti" e la protezione per le app Office 365) per i collegamenti sicuri in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 623b1bcd670f42c7c6b49c06cacfa31cb8adfd49
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 4e77373657d3167ca8f5bafa544923ab3a2320ce
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792993"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821986"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurare le impostazioni globali per i collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -47,11 +47,11 @@ Tuttavia, collegamenti sicuri utilizza anche le impostazioni globali seguenti co
 
 È possibile configurare le impostazioni globali dei collegamenti sicuri nel Centro sicurezza Microsoft 365 o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi di Microsoft Defender per Office 365).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Non è disponibile alcun criterio collegamenti sicuri predefinito o predefinito, quindi è necessario creare almeno un criterio Collegamenti sicuri affinché l'elenco Blocca gli **URL** seguenti sia attivo. Per istruzioni, vedi [Configurare i criteri collegamenti sicuri in Microsoft Defender per Office 365](set-up-safe-links-policies.md).
 
-- Aprire il Centro sicurezza a <https://security.microsoft.com/>. Per passare direttamente alla **pagina Collegamenti sicuri,** utilizzare <https://security.microsoft.com/safelinksv2> .
+- Aprire il Centro sicurezza a <https://security.microsoft.com>. Per passare direttamente alla **pagina Collegamenti sicuri,** utilizzare <https://security.microsoft.com/safelinksv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 

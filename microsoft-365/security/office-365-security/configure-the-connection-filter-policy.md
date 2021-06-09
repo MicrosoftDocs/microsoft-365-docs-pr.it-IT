@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server di posta elettronica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 27c8cbbc70a4844e11bf85003215d2798a57a7ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: b5eb24377dd9f9ac304e1df7b2902d29e4a738b9
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792981"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821962"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
@@ -51,7 +51,7 @@ In questo articolo viene descritto come configurare i criteri di filtro delle co
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza a <https://security.microsoft.com/>. Per passare direttamente alla pagina **Criteri di protezione dalla posta indesiderata**, usare <https://security.microsoft.com/antispam>.
+- Aprire il Centro sicurezza a <https://security.microsoft.com>. Per passare direttamente alla pagina **Criteri di protezione dalla posta indesiderata**, usare <https://security.microsoft.com/antispam>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -74,7 +74,7 @@ In questo articolo viene descritto come configurare i criteri di filtro delle co
 
 ## <a name="use-the-security-center-to-modify-the-default-connection-filter-policy"></a>Utilizzare il Centro sicurezza per modificare il criterio di filtro delle connessioni predefinito
 
-1. Nel centro sicurezza passare a Criteri di **collaborazione** & posta elettronica & regole Criteri di minaccia \>  \>  \>  sezione Protezione da \> **posta indesiderata**.
+1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di protezione** da posta indesiderata selezionare Criterio filtro connessioni **(impostazione predefinita)** nell'elenco facendo clic sul nome del criterio.
 
@@ -105,7 +105,7 @@ In questo articolo viene descritto come configurare i criteri di filtro delle co
 
 ## <a name="use-the-security-center-to-view-the-default-connection-filter-policy"></a>Utilizzare il Centro sicurezza per visualizzare i criteri di filtro delle connessioni predefiniti
 
-1. Nel centro sicurezza passare a Criteri di **collaborazione** & posta elettronica & regole Criteri di minaccia \>  \>  \>  sezione Protezione da \> **posta indesiderata**.
+1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di protezione** da posta indesiderata vengono visualizzate le proprietà seguenti nell'elenco dei criteri:
 

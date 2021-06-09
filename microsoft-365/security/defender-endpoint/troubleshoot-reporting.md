@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ca62db922a13ab2cb3226eaf0efb92bfaf8c572b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ab987089c20d0a1d0baed152e7ddcfdd2878cc65
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274893"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843459"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Risolvere i problemi relativi alla creazione di report di Microsoft Defender Antivirus nella procedura di aggiornamento per la conformità
 
@@ -66,7 +66,7 @@ Per fare in modo che i dispositivi siano visualizzati correttamente in Conformit
 > - Se l'endpoint è Windows 10 versione 1607 o precedente, Windows 10 dati di diagnostica devono essere impostati [sul livello avanzato](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - Sono 3 giorni che tutti i requisiti sono stati soddisfatti
 
-"È possibile utilizzare Antivirus Microsoft Defender conformità degli aggiornamenti. Vedrai lo stato per le licenze E3, B, F1, VL e Pro licenze. Tuttavia, per le licenze E5, devi usare il portale di Microsoft Defender for Endpoint ( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) . Per ulteriori informazioni sulle opzioni di licenza, vedere Windows 10 opzioni di licenza del prodotto"
+"È possibile utilizzare Antivirus Microsoft Defender conformità degli aggiornamenti. Vedrai lo stato per le licenze E3, B, F1, VL e Pro licenze. Tuttavia, per le licenze E5, devi usare il portale di Microsoft Defender for Endpoint (/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Per ulteriori informazioni sulle opzioni di licenza, vedere Windows 10 opzioni di licenza del prodotto"
 
 Se tutti i prerequisiti precedenti sono stati soddisfatti, potrebbe essere necessario procedere al passaggio successivo per raccogliere informazioni di diagnostica e inviarle a Microsoft.
 

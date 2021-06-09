@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestire il feedback che gli utenti possono inviare a Microsoft sui prodotti Microsoft.
-ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657008"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840671"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Gestire il feedback Microsoft per l'organizzazione
 
-In quanto amministratore di un'organizzazione di Microsoft 365, ora sono disponibili diversi criteri che consentono di gestire la raccolta di commenti e suggerimenti e l'esperienza di coinvolgimento dei clienti degli utenti quando si usano le applicazioni di Microsoft 365. È possibile creare e usare gruppi di Azure Active Directory esistenti nell'organizzazione per ognuno di questi criteri. Con questi criteri, è possibile controllare il modo in cui diversi reparti dell'organizzazione possono inviare commenti e suggerimenti a Microsoft. Microsoft rivede tutti i feedback inviati dai clienti e usa questo feedback per migliorare il prodotto. Mantenere attivata  l'esperienza di feedback ti consente di vedere cosa stanno dicendo gli utenti sui prodotti Microsoft che stanno usando. Il feedback raccolto dagli utenti sarà presto disponibile nell'interfaccia di amministrazione di Microsoft 365.
+In quanto amministratore di un'organizzazione Microsoft 365, ora sono disponibili diversi criteri che consentono di gestire la raccolta di commenti e suggerimenti e l'esperienza di coinvolgimento dei clienti degli utenti quando si usano Microsoft 365 applicazioni. È possibile creare e usare gruppi di Azure Active Directory esistenti nell'organizzazione per ognuno di questi criteri. Con questi criteri, è possibile controllare il modo in cui diversi reparti dell'organizzazione possono inviare commenti e suggerimenti a Microsoft. Microsoft rivede tutti i feedback inviati dai clienti e usa questo feedback per migliorare il prodotto. Mantenere attivata  l'esperienza di feedback ti consente di vedere cosa stanno dicendo gli utenti sui prodotti Microsoft che stanno usando. Il feedback raccolto dagli utenti sarà presto disponibile nell'Microsoft 365 di amministrazione.
 
 Per altre informazioni sui tipi di feedback e su come Microsoft usa il feedback degli utenti, vedi Informazioni sui commenti e suggerimenti [Microsoft per l'organizzazione.](../misc/feedback-user-control.md)
 
@@ -51,7 +51,7 @@ La tabella seguente rappresenta le app e i servizi attualmente connessi ai crite
 |**Visio**|Sì|Sì|Sì|Sì|
 |**Yammer**|Sì|Sì|Sì|Sì|
 
-[Vedi qui per alcuni esempi di sondaggi e feedback nel prodotto.](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
+[Vedi qui per alcuni esempi di sondaggi e feedback nel prodotto.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
 **Raccolta metadati**
 
@@ -80,9 +80,9 @@ Per usare questi criteri, i dispositivi devono avere un numero di build minimo. 
 |:-----|:-----|:-----|
 |Consenti agli utenti di inviare commenti e suggerimenti a Microsoft|Attivato|Controlla i punti di ingresso di feedback tra le applicazioni|
 |Consentire agli utenti di ricevere e rispondere ai sondaggi nel prodotto da Microsoft|Attivato|Controlla le richieste di sondaggio all'interno del prodotto|
-|Consentire agli utenti di includere screenshot e allegati quando inviano commenti e suggerimenti a Microsoft|Off|Determina i metadati che l'utente può decidere di inviare con feedback/sondaggio|
-|Consenti a Microsoft di seguire il feedback inviato dagli utenti|Off|Determina se l'utente può condividere le informazioni di contatto con feedback/sondaggio|
-|Consentire agli utenti di includere file di registro ed esempi di contenuto quando viene inviato un feedback a Microsoft|Off|Determina i metadati che l'utente può decidere di inviare con feedback/sondaggio|
+|Consentire agli utenti di includere screenshot e allegati quando inviano commenti e suggerimenti a Microsoft|Disattivato|Determina i metadati che l'utente può decidere di inviare con feedback/sondaggio|
+|Consenti a Microsoft di seguire il feedback inviato dagli utenti|Disattivato|Determina se l'utente può condividere le informazioni di contatto con feedback/sondaggio|
+|Consentire agli utenti di includere file di registro ed esempi di contenuto quando viene inviato un feedback a Microsoft|Disattivato|Determina i metadati che l'utente può decidere di inviare con feedback/sondaggio|
 
 ## <a name="configure-policies"></a>Configurare i criteri
 
@@ -94,7 +94,7 @@ Per usare questi criteri, i dispositivi devono avere un numero di build minimo. 
 1. Cercare **feedback** e **sondaggio.**
 1. Per ogni criterio elencato, impostare il valore desiderato.
 
-Per ulteriori informazioni, vedere [Overview of the Office cloud policy service.](/deployoffice/overview-office-cloud-policy-service)
+Per ulteriori informazioni, vedere [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service).
 
 Queste impostazioni dei criteri sono disponibili anche se si utilizza Criteri di gruppo. Per utilizzare queste impostazioni dei criteri, scaricare almeno la versione 5146.1000 dei file dei modelli amministrativi [(ADMX/ADML),](https://www.microsoft.com/download/details.aspx?id=49030)rilasciata il 22 marzo 2021.
 
