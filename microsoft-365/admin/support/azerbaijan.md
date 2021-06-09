@@ -19,28 +19,28 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52624302"
 ---
-# <a name="contact-support-for-azerbaijan"></a><span data-ttu-id="4654c-103">Contattare il supporto per l'Azerbaigian</span><span class="sxs-lookup"><span data-stu-id="4654c-103">Contact support for Azerbaijan</span></span>
+# <a name="contact-support-for-azerbaijan"></a><span data-ttu-id="801b5-103">Contattare il supporto per l'Azerbaigian</span><span class="sxs-lookup"><span data-stu-id="801b5-103">Contact support for Azerbaijan</span></span>
 
-<span data-ttu-id="4654c-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="4654c-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="801b5-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="801b5-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="4654c-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="4654c-105">Phone number</span></span>
-<span data-ttu-id="4654c-106">01 24 37 35 55</span><span class="sxs-lookup"><span data-stu-id="4654c-106">01 24 37 35 55</span></span>
+## <a name="phone-number"></a><span data-ttu-id="801b5-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="801b5-105">Phone number</span></span>
+<span data-ttu-id="801b5-106">01 24 37 35 55</span><span class="sxs-lookup"><span data-stu-id="801b5-106">01 24 37 35 55</span></span>
 
-<span data-ttu-id="4654c-107">Premere 2 per le aziende</span><span class="sxs-lookup"><span data-stu-id="4654c-107">Press 2 for business</span></span>
+<span data-ttu-id="801b5-107">Premere 2 per le aziende</span><span class="sxs-lookup"><span data-stu-id="801b5-107">Press 2 for business</span></span>
 
-<span data-ttu-id="4654c-108">Premere 1 per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="4654c-108">Press 1 for Microsoft 365</span></span>
+<span data-ttu-id="801b5-108">Premere 1 per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="801b5-108">Press 1 for Microsoft 365</span></span>
 
-## <a name="hours"></a><span data-ttu-id="4654c-109">Ore</span><span class="sxs-lookup"><span data-stu-id="4654c-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="4654c-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="4654c-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="801b5-109">Ore</span><span class="sxs-lookup"><span data-stu-id="801b5-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="801b5-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="801b5-110">Billing Support:</span></span>
 
-<span data-ttu-id="4654c-111">Russo: Mon-Fri 10:00-19:00 a Mosca</span><span class="sxs-lookup"><span data-stu-id="4654c-111">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
+<span data-ttu-id="801b5-111">Russo: Mon-Fri 10:00-19:00 a Mosca</span><span class="sxs-lookup"><span data-stu-id="801b5-111">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
 
-<span data-ttu-id="4654c-112">Inglese: Mon-Fri 9.00-17.00 Londra</span><span class="sxs-lookup"><span data-stu-id="4654c-112">English: Mon-Fri 9 AM-5 PM London</span></span>
+<span data-ttu-id="801b5-112">Inglese: Mon-Fri 9.00-17.00 Londra</span><span class="sxs-lookup"><span data-stu-id="801b5-112">English: Mon-Fri 9 AM-5 PM London</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="4654c-113">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="4654c-113">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="801b5-113">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="801b5-113">Technical Support:</span></span>
 
-<span data-ttu-id="4654c-114">Russo: Mon-Fri dalle 7.00 alle 20.00 a Mosca</span><span class="sxs-lookup"><span data-stu-id="4654c-114">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
+<span data-ttu-id="801b5-114">Russo: Mon-Fri dalle 7.00 alle 20.00 a Mosca</span><span class="sxs-lookup"><span data-stu-id="801b5-114">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
 
-<span data-ttu-id="4654c-115">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="4654c-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="801b5-115">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="801b5-115">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="4654c-116">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="4654c-116">Local call charges apply</span></span>
+<span data-ttu-id="801b5-116">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="801b5-116">Local call charges apply</span></span>
