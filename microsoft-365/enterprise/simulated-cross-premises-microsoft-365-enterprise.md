@@ -26,7 +26,7 @@ ms.locfileid: "50926033"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Rete virtuale cross-premise simulata in un ambiente di testing di Microsoft 365
 
-*Questa guida al laboratorio di testing può essere usata sia per gli ambienti di testing di Microsoft 365 per le aziende che per gli ambienti di testing di Office 365 Enterprise.*
+*Questa guida al laboratorio di testing può essere usata sia per gli ambienti Microsoft 365 aziendali che per Office 365 Enterprise test.*
 
 In questo articolo viene mostrato come creare un ambiente basato su cloud con Microsoft Azure usando due reti virtuali Azure. Di seguito è riportata la configurazione risultante.   
   
@@ -59,12 +59,12 @@ Le fasi principali della configurazione dell'ambiente di testing sono tre:
 > [!NOTE]
 > Questa configurazione richiede una sottoscrizione a pagamento di Azure. 
 
-È possibile utilizzare l'ambiente risultante per testare le caratteristiche e le funzionalità di [Microsoft 365 per](https://www.microsoft.com/microsoft-365/enterprise) le aziende con ulteriori guide al laboratorio di [testing](m365-enterprise-test-lab-guides.md) o da soli.
+È possibile utilizzare l'ambiente risultante per testare le caratteristiche [](m365-enterprise-test-lab-guides.md) e le funzionalità di [Microsoft 365 per](https://www.microsoft.com/microsoft-365/enterprise) le aziende con ulteriori guide al laboratorio di testing o per conto proprio.
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Passare a [Microsoft 365 per enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) per una mappa visiva a tutti gli articoli nello stack di Guide ai laboratori di testing di Microsoft 365 per le aziende.
+> Passare a Microsoft 365 per enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) per una mappa visiva a tutti gli articoli nello stack Microsoft 365 per enterprise Test Lab Guide.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fase 1: configurare la rete virtuale TestLab
 

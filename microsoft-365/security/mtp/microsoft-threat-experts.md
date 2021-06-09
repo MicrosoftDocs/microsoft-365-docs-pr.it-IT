@@ -1,8 +1,8 @@
 ---
-title: Panoramica di Microsoft Threat Experts in Microsoft 365 Defender
+title: Microsoft Threat Experts in Microsoft 365 Panoramica di Defender
 ms.reviewer: ''
 description: Microsoft Threat Experts offre un ulteriore livello di competenza per Microsoft 365 Defender.
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR), MTE, Microsoft Threat Experts
+keywords: servizio di ricerca delle minacce gestite, ricerca di minacce gestite, servizio MDR (Managed Detection and Response), MTE, Microsoft Threat Experts
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -22,7 +22,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "51764424"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Panoramica di Microsoft Threat Experts in Microsoft 365
+# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft Threat Experts in Microsoft 365 panoramica
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -33,27 +33,27 @@ ms.locfileid: "51764424"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Esperti di minacce Microsoft- Notifiche di attacco mirato è un servizio di ricerca delle minacce gestito. Dopo aver applicato e accettato, riceverai notifiche di attacco mirate da esperti di minacce Microsoft, in modo da non perdere le minacce critiche per l'ambiente. Queste notifiche consentono di proteggere gli endpoint, la posta elettronica e le identità dell'organizzazione.
-Esperti microsoft sulle minacce: gli esperti su richiesta ti consentono di ricevere consigli esperti sulle minacce che l'organizzazione sta affrontando. È possibile contattare l'utente per ottenere assistenza sulle minacce che l'organizzazione deve affrontare. È disponibile come servizio di sottoscrizione.
+Microsoft Threat Experts - Le notifiche di attacco mirato sono un servizio di ricerca delle minacce gestito. Dopo aver applicato e accettato, riceverai notifiche di attacco mirate da esperti di minacce Microsoft, in modo da non perdere le minacce critiche per l'ambiente. Queste notifiche consentono di proteggere gli endpoint, la posta elettronica e le identità dell'organizzazione.
+Microsoft Threat Experts: gli esperti su richiesta ti consentono di ricevere consigli esperti sulle minacce che l'organizzazione deve affrontare. È possibile contattare l'utente per ottenere assistenza sulle minacce che l'organizzazione deve affrontare. È disponibile come servizio di sottoscrizione.
 
-## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>Richiedere gli esperti di Microsoft Threat – Notifiche di attacco mirato
+## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>Richiedere l'Microsoft Threat Experts - Notifiche di attacco mirato
 
 > [!IMPORTANT]
-> Prima di candidarti, assicurati di discutere i requisiti di idoneità per gli esperti di Microsoft Threat – Notifiche di attacco mirato con il tuo provider di servizi tecnici Microsoft e il team di account.
+> Prima di candidarti, assicurati di discutere i requisiti di idoneità per Microsoft Threat Experts – Notifiche di attacco mirato con il tuo provider di servizi tecnici Microsoft e il team di account.
 
-Se hai già Microsoft Defender per Endpoint e Microsoft 365 Defender, puoi richiedere gli esperti di Microsoft Threat – Notifiche di attacco mirato tramite il portale di Microsoft 365 Defender. Vai a Impostazioni > endpoint > generale > funzionalità avanzate **> Microsoft Threat Experts – Notifiche di** attacco mirato e seleziona **Applica.** Per [una descrizione completa, vedere](./configure-microsoft-threat-experts.md) Configure Microsoft Threat Experts capabilities.
+Se hai già Microsoft Defender per Endpoint e Microsoft 365 Defender, puoi richiedere le notifiche di attacco mirato Microsoft Threat Experts - Microsoft Threat Experts tramite il portale Microsoft 365 Defender. Vai a Impostazioni > endpoint > generale > **funzionalità avanzate > Microsoft Threat Experts – Notifiche di** attacco mirato e seleziona **Applica**. Per [una descrizione completa, vedere Configure Microsoft Threat Experts capabilities.](./configure-microsoft-threat-experts.md)
 
 ![Screenshot della pagina dell'applicazione MTE](../../media/mte/mte-collaboratewithmte.png)
 
 Dopo l'approvazione dell'applicazione, inizierai a ricevere notifiche di attacco mirate ogni volta che gli esperti delle minacce rilevano una minaccia per l'ambiente.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Abbonati a Microsoft Threat Experts - Esperti su richiesta
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Sottoscrizione a Microsoft Threat Experts - Esperti su richiesta
 
 Contattare il proprio rappresentante Microsoft per sottoscrivere esperti su richiesta.  Per [informazioni dettagliate, vedere Configure Microsoft Threat Experts capabilities.](./configure-microsoft-threat-experts.md)
 
 ## <a name="receive-targeted-attack-notification"></a>Ricevere una notifica di attacco mirato
 
-La funzionalità Microsoft Threat Experts – Targeted Attack Notification offre una ricerca proattiva delle minacce più importanti per la rete. I nostri esperti di minacce sono a caccia di intrusioni umane, attacchi hands-on-keyboard e attacchi avanzati, ad esempio cyberspionage. Queste notifiche verranno mostrate come nuovo avviso. Il servizio di ricerca gestito include:
+La Microsoft Threat Experts – Notifica di attacco mirato offre una ricerca proattiva delle minacce più importanti per la rete. I nostri esperti di minacce sono a caccia di intrusioni umane, attacchi hands-on-keyboard e attacchi avanzati, ad esempio cyberspionage. Queste notifiche verranno mostrate come nuovo avviso. Il servizio di ricerca gestito include:
 
 - Monitoraggio e analisi delle minacce, riducendo i tempi di attività e i rischi per l'azienda
 - Intelligenza artificiale addestrata da Hunter per individuare e mirare sia gli attacchi noti che le minacce emergenti
@@ -62,7 +62,7 @@ La funzionalità Microsoft Threat Experts – Targeted Attack Notification offre
 
 ## <a name="collaborate-with-experts-on-demand"></a>Collaborare con esperti su richiesta
 
-È inoltre possibile contattare esperti di minacce Microsoft direttamente all'interno del portale di sicurezza di Microsoft 365 per una risposta alle minacce rapida e accurata.  Gli esperti possono fornire informazioni approfondite per comprendere meglio le minacce complesse che l'organizzazione potrebbe affrontare.  Consultare un esperto per:
+È inoltre possibile contattare esperti di minacce Microsoft direttamente all'interno del portale Microsoft 365 sicurezza, per una risposta rapida e accurata alle minacce.  Gli esperti possono fornire informazioni approfondite per comprendere meglio le minacce complesse che l'organizzazione potrebbe affrontare.  Consultare un esperto per:
 
 - Raccogliere informazioni aggiuntive sugli avvisi e gli eventi imprevisti, incluse le cause radice e l'ambito
 - Acquisire chiarezza in dispositivi, avvisi o eventi imprevisti sospetti e ottenere i passaggi successivi se si trova di fronte a un utente malintenzionato avanzato
@@ -86,7 +86,7 @@ L'opzione **Consulta un esperto di minacce** è disponibile in diversi punti del
 ![Screenshot dell'opzione di menu MTE-EOD nella pagina inventario eventi imprevisti](../../media/mte/incidents-inventory-mte-highlighted.png)
 
 > [!NOTE]
-> Se si dispone di un abbonamento al supporto Premier mappato alla licenza di Microsoft Defender per Office 365, è possibile tenere traccia dello stato dei casi esperti su richiesta tramite Hub dei servizi Microsoft.
+> Se si dispone di un abbonamento al supporto Premier mappato alla licenza di Microsoft Defender per Office 365, è possibile tenere traccia dello stato dei casi esperti su richiesta tramite Microsoft Services Hub.
 
 Guarda questo video per una breve panoramica dell'hub dei servizi Microsoft.
 
@@ -94,4 +94,4 @@ Guarda questo video per una breve panoramica dell'hub dei servizi Microsoft.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Configurare le funzionalità di Microsoft Threat Experts](./configure-microsoft-threat-experts.md)
+- [Configurare Microsoft Threat Experts funzionalità](./configure-microsoft-threat-experts.md)

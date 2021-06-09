@@ -35,7 +35,7 @@ Quando i criteri in un criterio di prevenzione della perdita dei dati (DLP) veng
 
 ## <a name="workloads"></a>Carichi di lavoro
 
-Il dashboard di gestione degli avvisi [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)nel Centro conformità [Microsoft 365,](https://compliance.microsoft.com/)mostra gli avvisi per i criteri DLP su questi carichi di lavoro:
+Il dashboard di gestione degli avvisi [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)nel [centro Microsoft 365 conformità,](https://compliance.microsoft.com/)mostra gli avvisi per i criteri DLP su questi carichi di lavoro:
 
 - Exchange
 - SharePoint
@@ -44,7 +44,7 @@ Il dashboard di gestione degli avvisi [DLP,](https://compliance.microsoft.com/da
 - Dispositivi Windows 10 
 
 > [!TIP]
-> I clienti che usano [ENDPOINT DLP](endpoint-dlp-learn-about.md) idonei per DLP di [Teams](dlp-microsoft-teams.md) visualizzano gli avvisi dei criteri DLP degli endpoint e gli avvisi dei criteri DLP di Teams nel dashboard di gestione degli avvisi DLP.
+> I clienti che usano [Endpoint DLP](endpoint-dlp-learn-about.md) idonei per [Teams DLP](dlp-microsoft-teams.md) visualizzano gli avvisi dei criteri DLP degli endpoint e Teams gli avvisi dei criteri DLP nel dashboard di gestione degli avvisi DLP.
 
 ## <a name="single-alert-and-aggregate-alert"></a>Avviso singolo e avviso aggregato
 
@@ -75,18 +75,18 @@ Ecco alcuni degli eventi associati a un avviso. Nell'interfaccia utente puoi sce
 |Indirizzo IP | Indirizzo IP del computer in cui si è verificata la corrispondenza del criterio DLP | eventi dispositivo|
 |sha1 |Hash SHA-1 del file | eventi dispositivo|
 |sha256 | Hash SHA-256 del file | eventi dispositivo|
-|ID dispositivo MDATP | ID MDATP dispositivo endpoint|
-|dimensioni del file | dimensioni del file| Eventi di SharePoint, OneDrive e dispositivi|
-|percorso file | il percorso assoluto dell'elemento coinvolto nella corrispondenza del criterio DLP | Eventi di SharePoint, OneDrive e dispositivi|
-|destinatari di posta elettronica |se un messaggio di posta elettronica era l'elemento sensibile corrispondente al criterio DLP, questo campo include i destinatari del messaggio di posta elettronica| Eventi di Exchange|
-|oggetto della posta elettronica |oggetto del messaggio di posta elettronica corrispondente al criterio DLP |Eventi di Exchange|
-|allegati di posta elettronica | nomi degli allegati nel messaggio di posta elettronica corrispondenti al criterio DLP| Eventi di Exchange|
-|proprietario del sito |nome del proprietario del sito| Eventi di SharePoint e OneDrive|
-|URL sito |completo dell'URL del sito di SharePoint o OneDrive in cui si è verificata la corrispondenza del criterio DLP |Eventi di SharePoint e OneDrive|
-|file creato |ora di creazione del file corrispondente al criterio DLP |Eventi di SharePoint e OneDrive|
-|ultima modifica del file | l'ultima volta che il file corrispondente al criterio DLP è stato modificato | Eventi di SharePoint e OneDrive|
-|dimensioni del file | dimensioni del file corrispondente al criterio DLP |Eventi di SharePoint e OneDrive|
-|proprietario del file |proprietario del file corrispondente al criterio DLP |Eventi di SharePoint e OneDrive|  
+|MDATP dispositivo | ID MDATP dispositivo endpoint|
+|dimensioni del file | dimensioni del file| SharePoint, OneDrive e dispositivi|
+|percorso file | il percorso assoluto dell'elemento coinvolto nella corrispondenza del criterio DLP | SharePoint, OneDrive e dispositivi|
+|destinatari di posta elettronica |se un messaggio di posta elettronica era l'elemento sensibile corrispondente al criterio DLP, questo campo include i destinatari del messaggio di posta elettronica| Exchange eventi|
+|oggetto della posta elettronica |oggetto del messaggio di posta elettronica corrispondente al criterio DLP |Exchange eventi|
+|allegati di posta elettronica | nomi degli allegati nel messaggio di posta elettronica corrispondenti al criterio DLP| Exchange eventi|
+|proprietario del sito |nome del proprietario del sito| SharePoint e OneDrive eventi|
+|URL sito |completo dell'URL del sito SharePoint o OneDrive in cui si è verificata la corrispondenza del criterio DLP |SharePoint e OneDrive eventi|
+|file creato |ora di creazione del file corrispondente al criterio DLP |SharePoint e OneDrive eventi|
+|ultima modifica del file | l'ultima volta che il file corrispondente al criterio DLP è stato modificato | SharePoint e OneDrive eventi|
+|dimensioni del file | dimensioni del file corrispondente al criterio DLP |SharePoint e OneDrive eventi|
+|proprietario del file |proprietario del file corrispondente al criterio DLP |SharePoint e OneDrive eventi|  
 
 ### <a name="policy-details"></a>Dettagli criteri
 

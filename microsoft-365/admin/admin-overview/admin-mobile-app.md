@@ -51,7 +51,7 @@ Se sei un amministratore e sei responsabile di più organizzazioni Microsoft 365
 > [!IMPORTANT]
 > In caso di problemi durante l'uso dell'app Admin per dispositivi mobili su iOS o Android, [inviaci](mailto:feedback365@microsoft.com) un'e-mail all'indirizzo feedback365@microsoft.com per contattarci.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Devi essere un amministratore di un'Microsoft 365 per usare l'app per dispositivi mobili di amministrazione.
   

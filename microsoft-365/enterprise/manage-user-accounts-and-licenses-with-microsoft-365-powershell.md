@@ -16,7 +16,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: Informazioni su come gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell.
+description: Informazioni su come gestire Microsoft 365 utenti, licenze e gruppi con PowerShell.
 ms.openlocfilehash: d3745b9365c67615efe32881408d1a717b8dbbed
 ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.locfileid: "49371537"
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Gli amministratori di Microsoft 365 devono gestire account utente, licenze e gruppi. Anche se è possibile eseguire la maggior parte di queste attività nell'interfaccia di amministrazione di Microsoft 365, alcune sono più semplici in PowerShell.
+Microsoft 365 amministratori devono gestire account utente, licenze e gruppi. Sebbene sia possibile eseguire la maggior parte di queste attività nell'Microsoft 365 di amministrazione, alcune sono più semplici in PowerShell.
 
 Per ulteriori informazioni, vedere gli articoli seguenti:
 

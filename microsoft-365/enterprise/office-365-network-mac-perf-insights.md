@@ -54,7 +54,7 @@ Questa panoramica è abbreviata come "Egress" in alcune visualizzazioni di riepi
 > [!div class="mx-imgBorder"]
 > ![Uscita di rete con backhauled](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
-### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
+### <a name="what-does-this-mean"></a>Che cosa significa?
 
 Ciò identifica che la distanza tra la sede dell'ufficio e l'uscita di rete è superiore a 500 miglia (800 chilometri). La posizione dell'ufficio è identificata da una posizione offuscata del computer client e la posizione di uscita dalla rete viene identificata utilizzando l'indirizzo IP inverso per i database delle località. La posizione dell'ufficio potrebbe non essere corretta se Windows è disabilitato nei computer. Il percorso di uscita della rete potrebbe non essere accurato se le informazioni del database degli indirizzi IP inversa non sono accurate.
 
@@ -72,7 +72,7 @@ Questa panoramica verrà visualizzata se sono stati rilevati dispositivi tra gli
 
 Un'analisi intermedia di rete mostrata è l'interruzione e l'ispezione SSL quando gli endpoint di rete Office 365 critici per Exchange, SharePoint e Teams vengono intercettati e decrittografati dai dispositivi di intermediazione di rete.
 
-### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
+### <a name="what-does-this-mean"></a>Che cosa significa?
 
 I dispositivi intermedi di rete, ad esempio server proxy, VPN e dispositivi di prevenzione della perdita di dati, possono influire sulle prestazioni e sulla stabilità dei client Microsoft 365 in cui il traffico è intermedio.
 
@@ -89,7 +89,7 @@ Questa panoramica è abbreviata come "Peers" in alcune visualizzazioni di riepil
 > [!div class="mx-imgBorder"]
 > ![Prestazioni di rete relative](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
 
-### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
+### <a name="what-does-this-mean"></a>Che cosa significa?
 
 Questa panoramica esamina le prestazioni aggregate dei clienti Microsoft 365 nella stessa città di questa sede. Questa panoramica viene visualizzata se la latenza media degli utenti è superiore del 10% alla latenza media dei tenant vicini.
 
@@ -106,7 +106,7 @@ Questa panoramica è abbreviata come "Routing" in alcune visualizzazioni di riep
 > [!div class="mx-imgBorder"]
 > ![Porta anteriore EXO non ottimale](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
-### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
+### <a name="what-does-this-mean"></a>Che cosa significa?
 
 Sono elencate Exchange Online porte anteriori del servizio adatte per l'uso dalla città della sede dell'ufficio con buone prestazioni. Se il test corrente mostra l'uso di una porta Exchange Online di servizio non in questo elenco, questa raccomandazione viene chiamata.
 
@@ -123,7 +123,7 @@ Questa panoramica è abbreviata come "Afd" in alcune visualizzazioni di riepilog
 > [!div class="mx-imgBorder"]
 > ![Porta anteriore spo non ottimale](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
-### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
+### <a name="what-does-this-mean"></a>Che cosa significa?
 
 Identifi SharePoint porta principale del servizio online a cui si connette il client di test. Quindi, per la città della sede si confronta con la porta d'ingresso del servizio SharePoint online prevista per quella città. Se non corrisponde, questo consiglio viene fatto.
 
@@ -137,7 +137,7 @@ Questa panoramica verrà visualizzata se il servizio informazioni dettagliate di
 
 Questa panoramica è abbreviata come "Velocità effettiva" in alcune visualizzazioni di riepilogo.
 
-### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
+### <a name="what-does-this-mean"></a>Che cosa significa?
 
 La velocità di download che un utente può ottenere da SharePoint Online e OneDrive for Business front doors del servizio è misurata in megabyte al secondo (MBps). Se questo valore è inferiore a 1 MBps, forniamo queste informazioni.
 
@@ -149,7 +149,7 @@ Per migliorare la velocità di download, potrebbe essere necessario aumentare la
 
 Questa panoramica verrà visualizzata se l'organizzazione ha utenti in Cina che si connettono al tenant Microsoft 365 in altre posizioni geografiche. 
 
-### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
+### <a name="what-does-this-mean"></a>Che cosa significa?
 
 Se l'organizzazione dispone di connettività WAN privata, è consigliabile configurare un circuito WAN di rete dalle posizioni dell'ufficio in Cina con uscita di rete verso Internet in una delle posizioni seguenti:
 
@@ -170,7 +170,7 @@ Per ulteriori informazioni su come ridurre i problemi di prestazioni correlati a
 
 Questa panoramica mostrerà quando il 50% o più delle connessioni campionate sono influenzate. L'impatto è definito dalla valutazione Exchange inferiore al 60% per ogni campione.
 
-### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
+### <a name="what-does-this-mean"></a>Che cosa significa?
 
 Si tratta di un'indicazione del fatto che la maggior parte degli utenti probabilmente riscontra problemi di esperienza utente Outlook connettersi a Exchange Online. La percentuale di campioni rappresenta probabilmente la percentuale di utenti che mostrano meno di 60 punti.  
 
@@ -182,7 +182,7 @@ Abilitare la visibilità della connettività di rete della posizione dell'uffici
 
 Questa panoramica mostrerà quando il 50% o più delle connessioni campionate sono influenzate. L'impatto è definito dalla valutazione SharePoint inferiore al 40% per ogni campione.
 
-### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
+### <a name="what-does-this-mean"></a>Che cosa significa?
 
 È un'indicazione che la maggior parte degli utenti probabilmente riscontra problemi di esperienza utente con SharePoint e OneDrive. La percentuale di campioni rappresenta probabilmente la percentuale di utenti che mostrano meno di 40 punti.  
 

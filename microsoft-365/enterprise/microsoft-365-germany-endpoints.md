@@ -1,5 +1,5 @@
 ---
-title: Endpoint di Office 365 per la Germania
+title: Office 365 endpoint per la Germania
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -29,13 +29,13 @@ ms.locfileid: "51759895"
 ---
 # <a name="office-365-germany-endpoints"></a>Endpoint di Office 365 Germany
 
- *Si applica a: Office 365 Admin*
+ *Si applica a: Amministrazione di Office 365*
 
-Office 365 richiede la connettività a Internet. Gli endpoint seguenti devono essere raggiungibili solo per i clienti che usano **piani di Office 365 Germany.**
+Office 365 richiede connettività a Internet. Gli endpoint riportati di seguito devono essere raggiungibili solo per i clienti **che Office 365 solo i piani germania.**
 
 > [!NOTE]
-> Per i clienti, che sono in fase di transizione alla nuova area data center di Microsoft 365 in Germania, gli endpoint cambieranno.
-> Per ulteriori informazioni, vedere Migrazione da Microsoft Cloud Deutschland ai servizi [di Office 365 nelle nuove aree data center tedesche.](ms-cloud-germany-transition.md)
+> Per i clienti, che sono in fase di transizione alla nuova area Microsoft 365 datacenter in Germania, gli endpoint cambieranno.
+> Per ulteriori informazioni, fare riferimento alla migrazione da Microsoft Cloud Deutschland ai servizi Office 365 nelle nuove aree [data center tedesche.](ms-cloud-germany-transition.md)
   
  **Endpoint di Office 365:** [Worldwide (compreso GCC)](urls-and-ip-address-ranges.md)  | [Office 365 gestito da 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany* | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   

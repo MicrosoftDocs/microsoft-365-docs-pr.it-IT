@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Utilizzare lo strumento Ricerca contenuto di eDiscovery per cercare gli elementi importati nelle cassette postali di Microsoft 365 da un'origine dati di terze parti creando query.
+description: Utilizzare lo strumento eDiscovery ricerca contenuto per cercare gli elementi importati nelle cassette postali in Microsoft 365 da un'origine dati di terze parti creando query.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 24ca63cf78b85f7b8b5181d5babd16058b641128
 ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
@@ -26,28 +26,28 @@ ms.locfileid: "47324572"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Utilizzare Ricerca contenuto per cercare dati di terze parti importati da un connettore partner personalizzato
 
-È possibile utilizzare lo strumento Ricerca contenuto [eDiscovery](content-search.md) nel Centro sicurezza & conformità per cercare gli elementi importati nelle cassette postali di Microsoft 365 da un'origine dati di terze parti. È possibile creare una query per eseguire ricerche in tutti gli elementi di dati di terze parti importati oppure creare una query per cercare elementi di dati di terze parti specifici. È inoltre possibile creare un criterio di conservazione basato su query o un blocco eDiscovery basato su query per conservare i dati di terze parti.
+È possibile utilizzare lo strumento Ricerca contenuto [eDiscovery](content-search.md) nel Centro sicurezza & conformità per cercare gli elementi importati nelle cassette postali in Microsoft 365 da un'origine dati di terze parti. È possibile creare una query per cercare tutti gli elementi di dati di terze parti importati oppure creare una query per cercare elementi di dati di terze parti specifici. È inoltre possibile creare criteri di conservazione basati su query o un blocco eDiscovery basato su query per conservare i dati di terze parti.
   
-Per ulteriori informazioni sull'utilizzo di un partner per importare dati di terze parti e un elenco dei tipi di dati di terze parti che è possibile importare in Microsoft 365, vedere Collaborare con un partner per archiviare dati di terze parti [in Office 365.](work-with-partner-to-archive-third-party-data.md)
+Per ulteriori informazioni sull'utilizzo di un partner per importare dati di terze parti e un elenco dei tipi di dati di terze parti che è possibile importare in Microsoft 365, vedere Collaborare con un partner per archiviare dati di terze parti [in Office 365](work-with-partner-to-archive-third-party-data.md).
 
 > [!IMPORTANT]
-> Le indicazioni fornite in questo articolo si applicano solo ai dati di terze parti importati da un connettore partner personalizzato. Questo articolo non si applica ai dati di terze [](archiving-third-party-data.md#third-party-data-connectors) parti importati tramite i connettori di dati di terze parti nel Centro conformità Microsoft.
+> Le indicazioni fornite in questo articolo si applicano solo ai dati di terze parti importati da un connettore partner personalizzato. Questo articolo non si applica ai dati di terze parti importati tramite i connettori di [dati](archiving-third-party-data.md#third-party-data-connectors) di terze parti nel Centro conformità Microsoft.
   
-## <a name="creating-a-query-to-search-all-third-party-data"></a>Creazione di una query per la ricerca di tutti i dati di terze parti
+## <a name="creating-a-query-to-search-all-third-party-data"></a>Creazione di una query per cercare tutti i dati di terze parti
 
-Per cercare (o mettere in attesa) qualsiasi tipo di dati di terze parti importati in Office 365, è possibile usare la coppia proprietà-valore del messaggio nella casella delle parole chiave per una ricerca di contenuto o durante la creazione di un'esenzione basata su  `kind:externaldata` query. Ad esempio, per cercare gli elementi importati da qualsiasi origine dati di terze parti e contenere la parola "contoso" nella proprietà Subject dell'elemento importato, è necessario utilizzare la query seguente: 
+Per cercare (o mettere in attesa) qualsiasi tipo di dati di terze parti importati in Office 365, è possibile utilizzare la coppia proprietà-valore del messaggio nella casella parola chiave per una ricerca contenuto o quando si crea un'esenzione basata su `kind:externaldata` query. Ad esempio, per cercare gli elementi importati da qualsiasi origine dati di terze parti e contenere la parola "contoso" nella proprietà Subject dell'elemento importato, è necessario utilizzare la query seguente: 
   
 ```powershell
 kind:externaldata AND subject:contoso
 ```
 
-L'esempio di query con parole chiave precedente include la proprietà subject. Per un elenco di altre proprietà per gli elementi di dati di terze parti che possono essere incluse in una query con parole chiave, vedere la sezione "Ulteriori informazioni" in Collaborare con un partner per archiviare dati di terze parti [in Office 365.](work-with-partner-to-archive-third-party-data.md#more-information)
+L'esempio di query con parole chiave precedente include la proprietà subject. Per un elenco di altre proprietà per elementi di dati di terze parti che possono includere in una query con parole chiave, vedere la sezione "Ulteriori informazioni" in Collaborare con un partner per archiviare dati di terze parti [in Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
   
-Quando si creano query per cercare e contenere dati di terze parti, è inoltre possibile utilizzare le condizioni per restringere i risultati della ricerca. Per ulteriori informazioni sulla creazione di query di Ricerca contenuto, vedere [Query con parole chiave e condizioni di ricerca per Ricerca contenuto.](keyword-queries-and-search-conditions.md)
+Quando si creano query per cercare e contenere dati di terze parti, è inoltre possibile utilizzare le condizioni per restringere i risultati della ricerca. Per ulteriori informazioni sulla creazione di query di ricerca contenuto, vedere Query con parole chiave e condizioni [di ricerca per Ricerca contenuto](keyword-queries-and-search-conditions.md).
   
 ## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>Creazione di una query per la ricerca di tipi specifici di dati di terze parti
 
-Anziché cercare tutti i tipi di dati di terze parti, è possibile creare query che cercano solo un tipo specifico di dati di terze parti utilizzando la seguente proprietà del *messaggio:* coppia di valori nella casella delle parole chiave per una ricerca di contenuto:
+Anziché cercare tutti i tipi di dati di terze parti, è possibile creare query che cercano solo un tipo specifico di dati di terze parti utilizzando la proprietà messaggio *seguente:* coppia valore nella casella parola chiave per una ricerca contenuto:
   
 ```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
@@ -61,7 +61,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 
 Nella tabella seguente sono elencati i tipi di dati di terze parti che è possibile cercare e il valore da utilizzare per la proprietà del messaggio per cercare in modo specifico tale tipo di  `itemclass:` dati di terze parti. La sintassi della query non fa distinzione tra maiuscole e minuscole. 
   
-|**Tipo di dati di terze parti**|**Valore della  `itemclass:` proprietà**|
+|**Tipo di dati di terze parti**|**Valore per  `itemclass:` la proprietà**|
 |:-----|:-----|
 |AIM  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -71,13 +71,13 @@ Nella tabella seguente sono elencati i tipi di dati di terze parti che è possib
 |Axs Encrypted  <br/> | `ipm.externaldata.AxsEncrypted*` <br/> |
 |Axs Exchange  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
 |Axs Local Archive  <br/> | `ipm.externaldata.AxsLocalArchive*` <br/> |
-|Segnaposto per assi  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
+|Segnaposto assi  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
 |Axs Signed  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
 |Bazaarvoice  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
 |Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
 |BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |Blackberry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
-|Registri chiamate BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
+|Log delle chiamate BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
 |BlackBerry PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
@@ -114,7 +114,7 @@ Nella tabella seguente sono elencati i tipi di dati di terze parti che è possib
 |LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
 |MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
-|Allineamento della mente  <br/> | `ipm.externaldata.MindAlign*` <br/> |
+|Mind Align  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
 |MSN  <br/> | `ipm.externaldata.MSN*` <br/> |
 |MySpace  <br/> | `ipm.externaldata.MySpace*` <br/> |

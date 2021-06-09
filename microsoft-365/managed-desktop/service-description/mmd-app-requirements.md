@@ -1,7 +1,7 @@
 ---
-title: Requisiti dell'app Microsoft Managed Desktop
+title: Microsoft Managed Desktop'app
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -16,23 +16,23 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49659715"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a>Requisiti dell'app Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Managed Desktop'app
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-Microsoft Managed Desktop richiede di gestire i dispositivi con un approccio specifico per garantire le prestazioni, l'affidabilità e la gestibilità dei dispositivi.
+Microsoft Managed Desktop è necessario gestire i dispositivi con un approccio specifico per garantire le prestazioni, l'affidabilità e la gestibilità dei dispositivi.
 
 
-|Area di gestione  |Approccio microsoft Managed Desktop  |
+|Area di gestione  |Microsoft Managed Desktop approccio  |
 |---------|---------|
 |Configurazione dei dispositivi o gestione dei criteri     |  Microsoft Intune       |
-|Gestione delle applicazioni     | Microsoft Intune e portale aziendale        |
-|Distribuzione dei driver     |  Driver inclusi con il dispositivo, Windows Update o Intune       |
-|Sicurezza dei dispositivi     | Vedere [Sicurezza del dispositivo](security.md#device-security)      |
+|Gestione delle applicazioni     | Microsoft Intune e Portale aziendale        |
+|Distribuzione driver     |  Driver inclusi nel dispositivo, Windows Update o Intune       |
+|Sicurezza dei dispositivi     | Vedi [Sicurezza del dispositivo](security.md#device-security)      |
 |Gestione delle identità e degli accessi     | Vedere [Gestione di identità e accessi](security.md#identity-and-access-management)        |
-|Sicurezza di rete     | Vedere [Sicurezza di rete](security.md#network-security)        |
+|Sicurezza della rete     | Vedere [Sicurezza di rete](security.md#network-security)        |
 |Sicurezza delle informazioni     |  Vedere [Sicurezza delle informazioni](security.md#information-security)       |
 |Ripristino dei dati     | OneDrive for Business        |
 |Produttività di base     | Microsoft 365 Apps for enterprise    |
@@ -41,4 +41,4 @@ Microsoft Managed Desktop richiede di gestire i dispositivi con un approccio spe
 
 
 
-Microsoft Managed Desktop potrebbe monitorare altro software in esecuzione su dispositivi gestiti. Se influisce negativamente sulla gestione dei dispositivi, sulla sicurezza, sulle prestazioni o sull'affidabilità dei dispositivi, potrebbe essere necessario richiedere un'eccezione [al piano di servizio.](customizing.md)
+Microsoft Managed Desktop altro software in esecuzione nei dispositivi gestiti. Se influisce negativamente sulla gestione dei dispositivi, sulla sicurezza, sulle prestazioni o sull'affidabilità dei dispositivi, potrebbe essere necessario richiedere [un'eccezione al piano di servizio.](customizing.md)

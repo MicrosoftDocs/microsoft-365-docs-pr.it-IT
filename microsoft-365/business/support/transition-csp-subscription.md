@@ -1,6 +1,6 @@
 ---
 title: Transizione di un abbonamento Microsoft 365 Business CSP
-description: Informazioni su come eseguire la transizione di un abbonamento CSP Di Microsoft 365 Business dall'anteprima alla disponibilità generale.
+description: Informazioni su come eseguire la transizione di una Microsoft 365 Business CSP dall'anteprima alla disponibilità generale.
 author: jasongroce
 f1.keywords:
 - NOCSH
@@ -27,15 +27,15 @@ Se hai un abbonamento Microsoft 365 Business Preview CSP, segui questa guida per
 
 **Come eseguire la transizione a un abbonamento in anteprima su GA**
 
-1. Accedi al <a href="https://partnercenter.microsoft.com" target="_blank">Centro per i partner.</a>
+1. Accedi al <a href="https://partnercenter.microsoft.com" target="_blank">Centro per i partner</a>.
 2. Dal dashboard seleziona **Clienti**, quindi trova e seleziona il nome della società.
 
     Visualizzerai un elenco degli abbonamenti della società.
 
     ![Abbonamenti dei clienti nel Centro per i partner](../../media/pc_customer_subscriptions_1.png)
     
-3. Nella pagina Abbonamenti **della** società selezionare Aggiungi **sottoscrizione.**
-4. Nella pagina **Nuovo abbonamento** selezionare **Small Business** e quindi Selezionare **Microsoft 365 Business** nell'elenco.
+3. Nella pagina Abbonamenti **della** società selezionare **Aggiungi sottoscrizione.**
+4. Nella pagina **Nuova sottoscrizione** selezionare **Small business** e quindi **selezionare** Microsoft 365 Business dall'elenco.
 5. Aggiungi il numero di licenze, quindi seleziona **Successivo: Revisione** per esaminare l'abbonamento, poi seleziona **Inoltra**.
 
     ![Esaminare la nuova sottoscrizione a Microsoft 365 Business](../../media/pc_customer_reviewnewsubscription.png)
@@ -43,26 +43,26 @@ Se hai un abbonamento Microsoft 365 Business Preview CSP, segui questa guida per
     **Sottoscrizioni basate su licenza** mostrerà **Microsoft 365 Business Preview** e **Microsoft 365 Business**. La sottoscrizione di anteprima verrà sospesa successivamente.
 
 6. Seleziona **Microsoft 365 Business Preview**.
-7. Nella pagina **Anteprima di Microsoft 365 Business** selezionare **Sospeso** per sospendere l'abbonamento all'anteprima.
+7. Nella pagina **Microsoft 365 Business Anteprima** selezionare **Sospeso per sospendere** la sottoscrizione di anteprima.
 
     ![Sospendere la nuova sottoscrizione a Microsoft 365 Business](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Seleziona **Invia** per confermare.
 
-    Nella pagina **Abbonamenti** verificare che lo stato di **Anteprima di Microsoft 365 Business** sia **Sospeso.**
+    Nella pagina **Sottoscrizioni** verificare che lo stato dell Microsoft 365 Business **Preview** sia **Sospeso.**
 
     ![Conferma che lo stato della sottoscrizione dell'anteprima sia sospeso](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Facoltativamente, puoi convalidare il contratto di licenza. A tale scopo, attieniti alla seguente procedura:
     1. Seleziona **Utenti e licenze** dalla pagina **Sottoscrizioni** dell'azienda.
     2. Nella pagina **Utenti e licenze** selezionare un utente.
-    3. Nella pagina dell'utente, controllare la sezione **Assegnare** licenze e verificare che sia visualizzato **Microsoft 365 Business.**
+    3. Nella pagina dell'utente, controlla la **sezione Assegna licenze** e verifica che sia visualizzata **Microsoft 365 Business**.
 
         ![Conferma che la licenza di Microsoft 365 Business è assegnata all'utente](../../media/pc_customer_userslicenses_m365b_validate.png)
 
 ## <a name="impact-to-customers-and-users-during-and-after-transition"></a>Conseguenze per clienti e utenti durante e dopo la transizione
 
-Non c'è alcun impatto su clienti e utenti durante la transizione e la post-transizione.
+Non c'è alcun impatto per i clienti e gli utenti durante la transizione e la transizione post.
 
 ## <a name="impact-to-customers-who-dont-transition"></a>Conseguenze per i clienti che non effettuano la transizione
 
@@ -90,9 +90,9 @@ La tabella seguente riepiloga l'impatto sui criteri di gestione delle app sui di
 | **Crittografare i file di lavoro** | I file di lavoro sono crittografati | I file di lavoro non sono più crittografati.</br> Vengono rimossi i criteri di sicurezza e i dati di Office sulle app. |
 | **Richiedere PIN o impronta digitale per accedere alle app di Office** | Accesso limitato alle app | Nessuna restrizione di accesso a livello di app |
 | **Reimpostare il PIN in caso di errore di accesso** | Accesso limitato alle app | Nessuna restrizione di accesso a livello di app |
-| **Richiedere agli utenti di accedere nuovamente dopo un periodo di inattività delle app di Office** | Accesso richiesto | Nessun accesso necessario |
+| **Richiedere agli utenti di accedere nuovamente dopo un periodo di inattività delle app di Office** | Accesso richiesto | Non è richiesto alcun accesso |
 | **Negare l'accesso ai file in dispositivi jailbroken o rooted di lavoro** | Non è possibile accedere ai file di lavoro nei dispositivi jailbroken/rooted | L'accesso ai file di lavoro è consentito solo da dispositivi jailbroken/rooted |
-| **Consentire agli utenti di copiare il contenuto da app di Office in App personali** | Copia/Incolla limitato alle app disponibili come parte dell'abbonamento a Microsoft 365 | Copia/Incolla disponibile per tutte le app |
+| **Consentire agli utenti di copiare il contenuto da app di Office in App personali** | Copia/Incolla limitato alle app disponibili come parte dell'Microsoft 365 abbonamento | Copia/Incolla disponibile per tutte le app |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>Impatto dei PC Windows 10 dopo la scadenza della sottoscrizione
 
@@ -100,10 +100,10 @@ La tabella seguente riepiloga l'impatto sui criteri di configurazione del dispos
 
 |                            | Licenza completa                      | T+60 giorni dopo la scadenza          |
 |----------------------------|------------------------------------------------|------------------------------------|
-| **Proteggere il PC da minacce con Windows Defender** | Attiva/Disattiva è fuori controllo utente | L'utente può attivare/disattivare Windows Defender nel PC Windows 10 |
+| **Proteggere il PC da minacce con Windows Defender** | Attiva/Disattiva è fuori controllo utente | L'utente può attivare/disattivare Windows Defender sul PC Windows 10 pc |
 | **Proteggere il PC da minacce basate sul Web in Microsoft Edge** | Protezione del PC in Microsoft Edge | L'utente può attivare/disattivare la protezione del PC in Microsoft Edge |
 | **Disattivare lo schermo del dispositivo quando è inattivo** | L'amministratore definisce i criteri di intervallo di timeout dello schermo | Il timeout dello schermo può essere configurato dall'utente finale |
 | **Consentire agli utenti di scaricare app da Microsoft Store** | L'amministratore stabilisce se un utente può scaricare app da Microsoft Store | L'utente può scaricare app da Microsoft Store in qualsiasi momento |
 | **Consentire agli utenti di accedere a Cortana** | L'amministratore definisce i criteri di accesso utente a Cortana | Dispositivi utente per attivare/disattivare Cortana |
 | **Consentire agli utenti di ricevere suggerimenti e annunci da Microsoft** | L'amministratore definisce i criteri utente per ricevere suggerimenti e annunci da Microsoft | L'utente può attivare/disattivare suggerimenti e annunci da Microsoft |
-| **Consentire agli utenti di copiare il contenuto da app di Office in App personali** | L'amministratore definisce i criteri per mantenere aggiornati i dispositivi Windows 10 | Gli utenti possono decidere quando aggiornare Windows |
+| **Consentire agli utenti di copiare il contenuto da app di Office in App personali** | L'amministratore definisce i criteri per mantenere aggiornati Windows 10 dispositivi | Gli utenti possono decidere quando aggiornare Windows |

@@ -1,6 +1,6 @@
 ---
-title: Configurare l'individuazione dei dispositivi
-description: Informazioni su come configurare l'individuazione dei dispositivi in Microsoft 365 Defender usando l'individuazione di base o standard
+title: Configurare device discovery
+description: Scopri come configurare l'individuazione dei dispositivi in Microsoft 365 Defender usando l'individuazione di base o standard
 keywords: basic, standard, configure endpoint discovery, device discovery
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -27,7 +27,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "51765252"
 ---
-# <a name="configure-device-discovery"></a>Configurare l'individuazione dei dispositivi
+# <a name="configure-device-discovery"></a>Configurare device discovery
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,15 +40,15 @@ ms.locfileid: "51765252"
 
 L'individuazione può essere configurata per essere in modalità standard o di base. Usa l'opzione standard per trovare attivamente i dispositivi nella rete, in modo da garantire meglio l'individuazione degli endpoint e fornire una classificazione dei dispositivi più completa. 
 
-Puoi personalizzare l'elenco dei dispositivi usati per eseguire l'individuazione standard. Puoi abilitare l'individuazione standard in tutti i dispositivi onboarded che supportano anche questa funzionalità (attualmente solo dispositivi Windows 10) oppure selezionare un sottoinsieme o sottoinsiemi dei dispositivi specificandone i tag. 
+Puoi personalizzare l'elenco dei dispositivi usati per eseguire l'individuazione standard. Puoi abilitare l'individuazione standard in tutti i dispositivi onboarded che supportano anche questa funzionalità (attualmente - solo dispositivi Windows 10) oppure selezionare un sottoinsieme o sottoinsiemi dei dispositivi specificando i tag del dispositivo. 
 
 
 > [!IMPORTANT]
 > Per l'anteprima, devi prima attivare le funzionalità di anteprima in Microsoft Defender Security Center.
-> È quindi possibile accedere alla configurazione di individuazione dei dispositivi nel Centro sicurezza Microsoft 365. L'elenco dei dispositivi non gestiti e i suggerimenti per la sicurezza saranno disponibili sia in Microsoft Defender Security Center che nel Centro sicurezza Microsoft 365, mentre i riquadri del dashboard saranno disponibili solo nel Centro sicurezza Microsoft 365.
+> Puoi quindi accedere alla configurazione di individuazione dei dispositivi nel centro sicurezza Microsoft 365 sicurezza. L'elenco dei dispositivi non gestiti e i suggerimenti per la sicurezza saranno disponibili sia nel Centro sicurezza Microsoft Defender Security Center che Microsoft 365, mentre i riquadri del dashboard saranno disponibili solo nel centro sicurezza Microsoft 365.
 
 
-Eseguire i passaggi di configurazione seguenti nel Centro sicurezza Microsoft 365:
+Eseguire i passaggi di configurazione seguenti nel Centro sicurezza Microsoft 365 sicurezza:
 
 1.  Passare a **Impostazioni > individuazione dei dispositivi**.
 2.  Seleziona la modalità di individuazione da usare nei dispositivi onboarded. 
@@ -86,7 +86,7 @@ Puoi controllare dove avviene l'individuazione dei dispositivi. Le reti monitora
 
 Scegliere la classificazione di individuazione iniziale significa applicare lo stato di Network Monitor predefinito. Se si seleziona lo stato predefinito di Network Monitor creato dal sistema, le reti identificate come aziendali, verranno monitorate e quelle identificate come non aziendali verranno ignorate automaticamente.
  
-1. Seleziona **Impostazioni > Individuazione dispositivi.**
+1. Selezionare **Impostazioni > individuazione dei dispositivi**.
 2. Selezionare **Reti monitorate.** 
 3. Visualizzare l'elenco delle reti. 
 4. Selezionare i tre puntini accanto al nome di rete. 
@@ -104,5 +104,5 @@ Scegliere la classificazione di individuazione iniziale significa applicare lo s
 
 
 ## <a name="see-also"></a>Vedere anche
-- [Panoramica dell'individuazione dei dispositivi](device-discovery.md)
+- [Panoramica di Device discovery](device-discovery.md)
 - [Domande frequenti su Individuazione dispositivi](device-discovery-faq.md)

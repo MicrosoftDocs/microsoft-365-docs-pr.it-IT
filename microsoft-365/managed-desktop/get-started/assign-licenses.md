@@ -1,5 +1,5 @@
 ---
-title: Assegna le licenze
+title: Assegnazione delle licenze
 description: Come parte della registrazione, è necessario assegnare licenze già ottenute agli utenti
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
@@ -16,9 +16,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50925794"
 ---
-# <a name="assign-licenses"></a>Assegna le licenze
+# <a name="assign-licenses"></a>Assegnazione delle licenze
 
-Come parte della preparazione per la registrazione a Microsoft Managed Desktop, è necessario assicurarsi di aver ottenuto le licenze necessarie. Se non hai già ottenuto le licenze, vedi Ulteriori [informazioni](../get-ready/prerequisites.md#more-about-licenses) sulle licenze per informazioni dettagliate sulle licenze necessarie.
+Come parte della preparazione per la registrazione a Microsoft Managed Desktop, devi essere sicuro di aver ottenuto le licenze necessarie. Se non hai già ottenuto le licenze, vedi Ulteriori [informazioni](../get-ready/prerequisites.md#more-about-licenses) sulle licenze per informazioni dettagliate sulle licenze necessarie.
 
 
 Se le licenze sono tutte allineate, è il momento di assegnarle agli utenti. Per assegnare licenze, è consigliabile sfruttare la funzionalità di gestione delle licenze basata su [gruppo](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) di Azure Active Directory.

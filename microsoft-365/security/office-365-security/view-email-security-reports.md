@@ -523,7 +523,7 @@ Per visualizzare e utilizzare i report descritti in questo articolo, è necessar
 
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
-- **Ruolo con autorizzazioni di lettura per la sicurezza**
+- **Lettore sicurezza**
 - **Lettore globale**
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).

@@ -154,7 +154,7 @@ La rimozione di un dominio può richiedere fino a Microsoft 365 5 minuti se non 
   
 Se ci sono centinaia o migliaia di utenti, usare PowerShell per eseguire query per tutti gli utenti e spostarli in un altro dominio. In caso contrario, alcuni utenti potrebbero risultare mancanti nell'interfaccia utente e quindi, quando si rimuove il dominio, non sarà possibile spostarli e non si riuscirà a individuare la causa del problema. Per altre informazioni, vedere [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true). Per impostare il dominio predefinito, usare [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true).
   
-## <a name="still-need-help"></a>Ulteriore assistenza
+## <a name="still-need-help"></a>Serve ulteriore assistenza?
 
 ::: moniker range="o365-worldwide"
 

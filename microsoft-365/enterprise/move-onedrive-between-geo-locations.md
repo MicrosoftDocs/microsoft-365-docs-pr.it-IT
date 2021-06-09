@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Informazioni sullo spostamento di un sito di OneDrive in una posizione geografica diversa, tra cui come pianificare gli spostamenti del sito e comunicare le aspettative agli utenti.
+description: Informazioni sullo spostamento di un OneDrive in una posizione geografica diversa, inclusa la pianificazione degli spostamenti del sito e la comunicazione delle aspettative agli utenti.
 ms.openlocfilehash: 59b3fb47fd195967e7af056c7a71fb4e736471d1
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -24,9 +24,9 @@ ms.locfileid: "46690929"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Spostare un sito OneDrive in un'altra posizione geografica 
 
-Con lo spostamento geografico di OneDrive, è possibile spostare OneDrive di un utente in una posizione geografica diversa. Lo spostamento geografico di OneDrive viene eseguito dall'amministratore di SharePoint Online o dall'amministratore globale di Microsoft 365. Prima di avviare uno spostamento geografico di OneDrive, assicurarsi di informare l'utente il cui OneDrive viene spostato e consigliare di chiudere tutti i file per tutta la durata dello spostamento. Se durante lo spostamento l'utente ha aperto un documento utilizzando il client di Office, al termine dello spostamento sarà necessario salvare il documento nel nuovo percorso. Lo spostamento può essere pianificato per un orario futuro, se lo si desidera.
+Con OneDrive geo, puoi spostare la posizione geografica di un OneDrive utente in una posizione geografica diversa. OneDrive lo spostamento geografico viene eseguito dall'amministratore di SharePoint Online o dall Microsoft 365 amministratore globale. Prima di avviare un OneDrive geografico, assicurati di informare l'utente il cui OneDrive viene spostato e consiglia di chiudere tutti i file per tutta la durata dello spostamento. Se l'utente ha aperto un documento utilizzando il client Office durante lo spostamento, al termine dello spostamento il documento dovrà essere salvato nel nuovo percorso. Lo spostamento può essere pianificato per un'ora futura, se lo si desidera.
 
-Il servizio OneDrive usa Archiviazione BLOB di Azure per archiviare il contenuto. Il BLOB di archiviazione associato a OneDrive dell'utente verrà spostato dall'origine alla posizione geografica di destinazione entro 40 giorni dalla disponibilità di OneDrive di destinazione per l'utente. L'accesso a OneDrive dell'utente verrà ripristinato non appena sarà disponibile il OneDrive di destinazione.
+Il servizio OneDrive usa i blob di Azure Archiviazione per archiviare il contenuto. Il Archiviazione BLOB associato al OneDrive dell'utente verrà spostato dall'origine alla posizione geografica di destinazione entro 40 giorni dalla disponibilità dell'OneDrive di destinazione per l'utente. L'accesso al OneDrive dell'utente verrà ripristinato non appena sarà disponibile OneDrive destinazione.
 
 Durante il periodo dello spostamento geografico di OneDrive (circa 2-6 ore), OneDrive dell'utente è in sola lettura. L'utente può comunque accedere ai propri file attraverso il client di sincronizzazione di OneDrive oppure il sito OneDrive in SharePoint Online. Al termine dello spostamento geografico di OneDrive, l'utente verrà automaticamente connesso al proprio OneDrive nella posizione geografica di destinazione quando accederà a OneDrive dall'icona di avvio dell'app di Microsoft 365. Il client di sincronizzazione inizierà automaticamente la sincronizzazione dalla nuova posizione.
 
@@ -54,13 +54,13 @@ Quando si effettua lo spostamento dei siti di OneDrive tra le posizioni geografi
 
 ## <a name="moving-a-onedrive-site"></a>Spostamento di un sito OneDrive
 
-Per eseguire uno spostamento geografico di OneDrive, l'amministratore tenant deve innanzitutto impostare la posizione dati preferita dell'utente sulla posizione geografica appropriata. Una volta impostata la posizione geografica, attendere almeno 24 ore per la sincronizzazione dell'aggiornamento PDL tra le posizioni geografiche prima di avviare lo spostamento geografico di OneDrive.
+Per eseguire un OneDrive geografico, l'amministratore tenant deve innanzitutto impostare la posizione geografica preferita dell'utente sulla posizione geografica appropriata. Dopo aver impostato il file PDL, attendere almeno 24 ore per la sincronizzazione dell'aggiornamento PDL tra le posizioni geografiche prima di avviare lo spostamento OneDrive geo.
 
-Quando si utilizzano i cmdlet di spostamento geografico, connettersi al servizio SPO nella posizione geografica corrente di OneDrive dell'utente, utilizzando la sintassi seguente:
+Quando si utilizzano i cmdlet di spostamento geografico, connettersi al servizio SpO nella posizione geografica OneDrive corrente dell'utente, utilizzando la sintassi seguente:
 
 `Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
 
-Ad esempio: per spostare OneDrive dell'utente "Matt@contosoenergy.onmicrosoft.com", connettersi all'interfaccia di amministrazione di SharePoint EUR perché OneDrive dell'utente si trova nella posizione geografica EUR:
+Ad esempio: per spostare OneDrive'utente "Matt@contosoenergy.onmicrosoft.com", connettersi all'interfaccia di amministrazione di EUR SharePoint in quanto l'OneDrive dell'utente si trova nella posizione geografica EUR:
 
 `Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
@@ -92,7 +92,7 @@ Con questi parametri:
 
 -   _UserPrincipalName_ – UPN dell'utente il cui OneDrive viene spostato.
 
--   _DestinationDataLocation:_ Geo-Location in cui è necessario spostare OneDrive. Deve essere uguale alla posizione dati preferita dell'utente.
+-   _DestinationDataLocation:_ Geo-Location in cui è necessario spostare OneDrive'oggetto. Deve essere uguale alla posizione dati preferita dell'utente.
 
 Ad esempio, per spostare OneDrive di matt@contosoenergy.onmicrosoft.com da EUR a AUS, eseguire:
 
@@ -108,7 +108,7 @@ Per pianificare lo spostamento geografica in un secondo momento, utilizzare uno 
 
 ## <a name="cancel-a-onedrive-geo-move"></a>Annullare uno spostamento geografico di OneDrive 
 
-È possibile interrompere lo spostamento geografico di OneDrive di un utente, purché lo spostamento non sia in corso o completato utilizzando il cmdlet:
+È possibile interrompere lo spostamento geografico dell'OneDrive utente, purché lo spostamento non sia in corso o completato utilizzando il cmdlet:
 
 `Stop-SPOUserAndContentMove – UserPrincipalName <UserPrincipalName>`
 
@@ -116,7 +116,7 @@ Dove _UserPrincipalName_ è il nome dell'entità utente (UPN) dell'utente titola
 
 ## <a name="determining-current-status"></a>Determinare lo stato corrente
 
-È possibile controllare lo stato di uno spostamento geografico di OneDrive all'inizio o all'uscita dalla posizione geografica a cui si è connessi utilizzando il cmdlet Get-SPOUserAndContentMoveState.
+È possibile controllare lo stato di un OneDrive geo in o fuori dalla posizione geografica a cui si è connessi utilizzando il cmdlet Get-SPOUserAndContentMoveState.
 
 Gli stati dello spostamento sono descritti nella seguente tabella.
 
@@ -151,7 +151,7 @@ Per trovare lo stato dello spostamento di un utente specifico, utilizzare il par
 
 `Get-SPOUserAndContentMoveState -UserPrincipalName <UPN>`
 
-Per trovare lo stato di tutti gli spostamenti in ingresso o in uscita dalla posizione geografica a cui si è connessi, utilizzare il parametro MoveState con uno dei seguenti valori: NotStarted, InProgress, Success, Failed, All.
+Per trovare lo stato di tutti gli spostamenti in ingresso o in uscita dalla posizione geografica a cui si è connessi, utilizzare il parametro MoveState con uno dei valori seguenti: NotStarted, InProgress, Success, Failed, All.
 
 `Get-SPOUserAndContentMoveState -MoveState <value>`
 
@@ -163,11 +163,11 @@ Gli utenti di OneDrive dovrebbero riscontrare un'interruzione minima del proprio
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-Mentre lo spostamento è in corso, OneDrive dell'utente è impostato come di sola lettura. Una volta completato lo spostamento, l'utente viene indirizzato a OneDrive nella nuova posizione geografica quando passa a OneDrive l'icona di avvio delle app di Microsoft 365 o un Web browser.
+Mentre lo spostamento è in corso, la OneDrive dell'utente è impostata su sola lettura. Una volta completato lo spostamento, l'utente viene indirizzato al OneDrive nella nuova posizione geografica quando passa OneDrive'icona di avvio delle app di Microsoft 365 o a un Web browser.
 
 ### <a name="permissions-on-onedrive-content"></a>Autorizzazioni per il contenuto di OneDrive
 
-Gli utenti con autorizzazioni per il contenuto di OneDrive continueranno ad avere accesso al contenuto durante lo spostamento e dopo il completamento.
+Gli utenti con autorizzazioni OneDrive contenuto continueranno ad avere accesso al contenuto durante lo spostamento e dopo il completamento.
 
 ### <a name="onedrive-sync-client"></a>Client di sincronizzazione di OneDrive 
 
@@ -199,8 +199,8 @@ Al termine dello spostamento geografico di OneDrive, l'utente deve uscire e acce
 
 ### <a name="existing-followed-groups-and-sites"></a>I gruppi e siti seguiti esistenti
 
-I siti e i gruppi seguiti verranno visualizzati in OneDrive dell'utente, indipendentemente dalla posizione geografica. I siti e i gruppi ospitati in un'altra posizione geografica verranno aperti in una scheda separata.
+I siti e i gruppi seguiti verranno visualizzati nella posizione dell'OneDrive indipendentemente dalla posizione geografica. I siti e i gruppi ospitati in un'altra posizione geografica verranno aperti in una scheda separata.
 
-### <a name="delve-geo-url-updates"></a>Aggiornamenti degli URL geografici di Delve
+### <a name="delve-geo-url-updates"></a>Delve Aggiornamenti degli URL geografici
 
-Gli utenti verranno inviati alla posizione geografica di Delve corrispondente al PDL solo dopo che OneDrive è stato spostato nella nuova posizione geografica.
+Gli utenti verranno inviati al Delve geo corrispondente al PDL solo dopo che il OneDrive è stato spostato nella nuova posizione geografica.

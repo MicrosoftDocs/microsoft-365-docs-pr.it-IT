@@ -49,7 +49,7 @@ Un partner Microsoft autorizzato che opera come consulente dell'abbonamento mett
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 ::: moniker range="o365-worldwide"
 

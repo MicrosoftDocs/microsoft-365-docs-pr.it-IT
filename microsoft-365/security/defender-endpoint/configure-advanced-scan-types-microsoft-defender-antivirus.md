@@ -58,17 +58,17 @@ Vedere [Come creare e distribuire criteri antimalware: Impostazioni di analisi.]
 
 | Elemento e percorso dei criteri | Impostazione predefinita (se non configurata) | Parametro di PowerShell `Set-MpPreference` o proprietà WMI per la `MSFT_MpPreference` classe |
 |---|---|---|
-| Analisi della posta elettronica <p> **Analisi**  >  **Attivare l'analisi della posta elettronica**<p>Vedere [Limitazioni dell'analisi della posta](#email-scanning-limitations) elettronica (in questo articolo) | Disabilitato | `-DisableEmailScanning` |
-|Analisi [dei reparse point](/windows/win32/fileio/reparse-points) <p> **Analisi**  >  **Attivare l'analisi dei reparse point** | Disabilitato | Non disponibile <p>Vedere [Reparse points](/windows/win32/fileio/reparse-points)  |
-| Analisi delle unità di rete mappate <p> **Analisi**  >  **Eseguire l'analisi completa sulle unità di rete mappate** | Disabilitato | `-DisableScanningMappedNetworkDrivesForFullScan`|
-| Analizzare i file di archivio (ad esempio .zip o .rar file).  <p> **Analisi**  >  **Analizzare i file di archivio** | Enabled | `-DisableArchiveScanning` <p>[L'elenco di esclusione delle](configure-extension-file-exclusions-microsoft-defender-antivirus.md) estensioni avrà la precedenza su questa impostazione.|
-| Analizzare i file in rete <p> **Analisi**  >  **Analizzare i file di rete** | Disabilitato | `-DisableScanningNetworkFiles` |
-| Eseguire l'analisi di file eseguibili imballati <p> **Analisi**  >  **Eseguire l'analisi di file eseguibili imballati** | Enabled | Non disponibile |
-| Analizzare le unità rimovibili solo durante le analisi complete <p> **Analisi**  >  **Analisi delle unità rimovibili** | Disabilitato | `-DisableRemovableDriveScanning` |
+| Analisi della posta elettronica <p> **Analisi**  >  **Attivare l'analisi della posta elettronica**<p>Vedere [Limitazioni dell'analisi della posta](#email-scanning-limitations) elettronica (in questo articolo) | Disattivato | `-DisableEmailScanning` |
+|Analisi [dei reparse point](/windows/win32/fileio/reparse-points) <p> **Analisi**  >  **Attivare l'analisi dei reparse point** | Disattivato | Non disponibile <p>Vedere [Reparse points](/windows/win32/fileio/reparse-points)  |
+| Analisi delle unità di rete mappate <p> **Analisi**  >  **Eseguire l'analisi completa sulle unità di rete mappate** | Disattivato | `-DisableScanningMappedNetworkDrivesForFullScan`|
+| Analizzare i file di archivio (ad esempio .zip o .rar file).  <p> **Analisi**  >  **Analizzare i file di archivio** | Abilitato | `-DisableArchiveScanning` <p>[L'elenco di esclusione delle](configure-extension-file-exclusions-microsoft-defender-antivirus.md) estensioni avrà la precedenza su questa impostazione.|
+| Analizzare i file in rete <p> **Analisi**  >  **Analizzare i file di rete** | Disattivato | `-DisableScanningNetworkFiles` |
+| Eseguire l'analisi di file eseguibili imballati <p> **Analisi**  >  **Eseguire l'analisi di file eseguibili imballati** | Abilitato | Non disponibile |
+| Analizzare le unità rimovibili solo durante le analisi complete <p> **Analisi**  >  **Analisi delle unità rimovibili** | Disattivato | `-DisableRemovableDriveScanning` |
 | Specificare il livello di sottocartelle all'interno di una cartella di archiviazione da analizzare <p>**Analisi**  >  **Specificare la profondità massima per l'analisi dei file di archivio** | 0 | Non disponibile |
 | Specifica il carico massimo della CPU (come percentuale) durante un'analisi. <p> **Analisi**  >  **Specificare la percentuale massima di utilizzo della CPU durante un'analisi** | 50 |  `-ScanAvgCPULoadFactor` <p>**NOTA:** il carico massimo della CPU non è un limite rigido, ma è una guida per il motore di analisi per non superare il massimo in media. Le analisi eseguite manualmente ignoreranno questa impostazione e verranno eseguite senza limiti di CPU. |
 | Specificare le dimensioni massime, in kilobyte, dei file di archivio da analizzare. <p> **Analisi**  >  **Specificare la dimensione massima dei file di archivio da analizzare** | Nessun limite | Non disponibile <p>Il valore predefinito 0 non applica alcun limite |
-| Configurare la priorità della CPU bassa per le analisi pianificate <p> **Analisi**  >  **Configurare la priorità della CPU bassa per le analisi pianificate** | Disabilitato | Non disponibile |
+| Configurare la priorità della CPU bassa per le analisi pianificate <p> **Analisi**  >  **Configurare la priorità della CPU bassa per le analisi pianificate** | Disattivato | Non disponibile |
  
 > [!NOTE]
 > Se la protezione in tempo reale è attivata, i file vengono analizzati prima dell'accesso e dell'esecuzione. L'ambito di analisi include tutti i file, inclusi i file su supporti rimovibili montati, ad esempio unità USB. Se il dispositivo che esegue l'analisi ha la protezione in tempo reale o la protezione all'accesso attivata, l'analisi includerà anche condivisioni di rete.

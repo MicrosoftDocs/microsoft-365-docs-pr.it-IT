@@ -30,15 +30,15 @@ ms.locfileid: "49073213"
 
 È possibile usare PowerShell per Microsoft 365 come alternativa all'interfaccia di amministrazione di Microsoft 365 per gestire le password in Microsoft 365. 
 
-Quando un blocco di comandi in questo articolo richiede di specificare i valori delle variabili, seguire questa procedura.
+Quando un blocco di comandi in questo articolo richiede di specificare valori variabili, eseguire la procedura seguente.
 
-1. Copiare il blocco di comandi negli Appunti e incollarlo nel Blocco note o in PowerShell Integrated Script Environment (ISE).
+1. Copiare il blocco di comandi negli Appunti e incollarlo in Blocco note o in PowerShell Integrated Script Environment (ISE).
 2. Compilare i valori delle variabili e rimuovere i caratteri "<" e ">".
 3. Eseguire i comandi nella finestra di PowerShell o in PowerShell ISE.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Prima di [tutto, connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 ### <a name="set-a-password"></a>Impostare una password
 
@@ -50,7 +50,7 @@ $newPassword="<new password>"
 $secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
 Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword
 ```
-### <a name="force-a-user-to-change-their-password"></a>Forzare la modifica della password da parte di un utente
+### <a name="force-a-user-to-change-their-password"></a>Forzare un utente a modificare la password
 
 Utilizzare questi comandi per impostare una password e forzare un utente a modificare la nuova password.
 
@@ -72,7 +72,7 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -ForceChangeP
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Prima di [tutto, connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="set-a-password"></a>Impostare una password
 
@@ -84,9 +84,9 @@ $newPassword="<new password>"
 Set-MsolUserPassword -UserPrincipalName $userUPN -NewPassword $newPassword
 ```
 
-### <a name="force-a-user-to-change-their-password"></a>Forzare la modifica della password da parte di un utente
+### <a name="force-a-user-to-change-their-password"></a>Forzare un utente a modificare la password
 
-Utilizzare questi comandi per forzare un utente a modificare la password.
+Usa questi comandi per forzare un utente a modificare la password.
 
 ```powershell
 $userUPN="<user account sign in name>"

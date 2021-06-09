@@ -35,9 +35,9 @@ ms.locfileid: "51759823"
 
 Microsoft 365 Defender è un'esperienza unificata in cui è possibile monitorare e gestire la sicurezza nell'organizzazione. Con gli avvisi integrati tra identità, endpoint, dati, app, posta elettronica e strumenti di collaborazione, l'analisi e la risposta alle minacce si verificano ora in una posizione centrale. 
 
-Che tu non abbia familiarità con la famiglia di prodotti microsoft per la sicurezza o abbia familiarità con i singoli flussi di lavoro, questo argomento ti guiderà nei semplici passaggi da eseguire per iniziare a usare Microsoft 365 Defender.
+Sia che tu non abbia familiarità con la famiglia di prodotti microsoft per la sicurezza o abbia familiarità con i singoli flussi di lavoro, questo argomento ti guiderà nei semplici passaggi da eseguire per iniziare a usare Microsoft 365 Defender.
 
-![Immagine della guida introduttiva ai passaggi di Microsoft 365 Defender](../../media/mtp/get-started-m365d.png)
+![Immagine della guida introduttiva Microsoft 365 Defender](../../media/mtp/get-started-m365d.png)
 
 In generale, è necessario eseguire la procedura seguente per iniziare:
 
@@ -50,15 +50,15 @@ In generale, è necessario eseguire la procedura seguente per iniziare:
     Dopo aver completato i passaggi iniziali, dovrai distribuire i servizi supportati disponibili con Microsoft 365 Defender. La distribuzione dei servizi aumenta in modo efficace la visibilità dei segnali provenienti dagli asset nella rete.
 
 
-## <a name="key-capabilities"></a>Caratteristiche chiave
-L'attivazione di Microsoft 365 Defender e la distribuzione dei servizi consentono di accedere alle funzionalità chiave seguenti:
+## <a name="key-capabilities"></a>Funzionalità chiave
+L'attivazione Microsoft 365 Defender e la distribuzione dei servizi ti permetteranno di accedere alle funzionalità chiave seguenti:
 
 
 | Funzionalità | Descrizione |
 | ------ | ------ |
 | Microsoft Defender per endpoint | Suite di endpoint protection basata su potenti sensori comportamentali, analisi cloud e intelligence per le minacce |
 |Microsoft Defender per Office 365 | Protezione avanzata per le app e i dati in Office 365, inclusi la posta elettronica e altri strumenti di collaborazione |
-| Che cosa è Microsoft Defender per identità? | Difendersi da minacce avanzate, identità compromesse e utenti malintenzionati che usano segnali di Active Directory correlati |
+| Microsoft Defender per identità | Difendersi da minacce avanzate, identità compromesse e utenti malintenzionati che usano segnali di Active Directory correlati |
 | Microsoft Cloud App Security | Identificare e contrastare le minacce informatiche nei servizi cloud Microsoft e di terze parti |
 
 

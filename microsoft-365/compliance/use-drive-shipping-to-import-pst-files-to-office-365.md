@@ -79,7 +79,7 @@ Per le domande frequenti sull'utilizzo della spedizione unità per importare i f
     
 - La spedizione di unità è disponibile tramite un microsoft Enterprise Agreement (EA). La spedizione unità non è disponibile con un contratto Microsoft Products and Services Agreement (MPSA).
     
-- Il costo per importare i file PST Microsoft 365 cassette postali utilizzando la spedizione unità è di $ 2 USD per GB di dati. Se ad esempio si spedisce un'unità disco rigido contenente 1000 GB (1 TB) di file PST, il costo sarà 2000 dollari USA. È possibile collaborare con un partner per il pagamento delle spese di importazione. Per informazioni su come trovare un partner, vedere [Trovare un partner o rivenditore di Microsoft](../admin/manage/find-your-partner-or-reseller.md).
+- Il costo per l'importazione dei file PST nelle cassette postali di Microsoft 365 mediante la spedizione delle unità ammonta a $ 2 (dollari USA) per GB di dati. Se ad esempio si spedisce un'unità disco rigido contenente 1000 GB (1 TB) di file PST, il costo sarà 2000 dollari USA. È possibile collaborare con un partner per il pagamento delle spese di importazione. Per informazioni su come trovare un partner, vedere [Trovare un partner o rivenditore di Microsoft](../admin/manage/find-your-partner-or-reseller.md).
     
 - L'utente o la relativa organizzazione deve disporre di un account FedEx o DHL. 
     
@@ -124,7 +124,7 @@ Il primo passaggio consiste nel scaricare la chiave di archiviazione sicura e lo
     > [!NOTE]
     > Come indicato in precedenza, è necessario disporre delle autorizzazioni appropriate per accedere alla pagina **Importa** nel Centro Microsoft 365 conformità. 
   
-3. Nella scheda **Importa** fare clic su ![ Aggiungi icona Nuovo processo di ](../media/ITPro-EAC-AddIcon.gif) **importazione.**
+3. Nella scheda **Importa**, fare clic sull'icona ![Aggiungi](../media/ITPro-EAC-AddIcon.gif)**Nuovo processo di importazione**.
     
 4. Nella procedura guidata di importazione digitare un nome per il processo di importazione PST e quindi fare clic su **Avanti.** Usare lettere minuscole, numeri, trattini e caratteri di sottolineatura. Il nome non può contenere lettere maiuscole o spazi.
     
@@ -255,7 +255,7 @@ Il passaggio successivo consiste nel creare il processo di importazione PST nel 
 
 2. Nel riquadro di spostamento sinistro del Centro Microsoft 365 conformità fare clic su **Importa governance** \> **delle informazioni**.
 
-3. Nella scheda **Importa** fare clic su ![ Aggiungi icona Nuovo processo di ](../media/ITPro-EAC-AddIcon.gif) **importazione.**
+3. Nella scheda **Importa**, fare clic sull'icona ![Aggiungi](../media/ITPro-EAC-AddIcon.gif)**Nuovo processo di importazione**.
 
     > [!NOTE]
     > Come indicato in precedenza, è necessario disporre delle autorizzazioni appropriate per accedere alla pagina **Importa** nel Centro Microsoft 365 conformità.
@@ -402,9 +402,9 @@ Per installare Azure Storage Explorer e connettersi all'area di Archiviazione di
 
 1. Passare a <https://compliance.microsoft.com> e accedere con le credenziali di un account amministratore dell'organizzazione.
 
-2. Nel riquadro sinistro del Centro Microsoft 365 conformità fare clic su **Governance delle informazioni > Importa**.
+2. Nel riquadro sinistro del Centro conformità Microsoft 365, fare clic su **Governance delle informazioni > Importa**.
 
-3. Nella scheda **Importa** fare clic su ![ Aggiungi icona Nuovo processo di ](../media/ITPro-EAC-AddIcon.gif) **importazione.**
+3. Nella scheda **Importa**, fare clic sull'icona ![Aggiungi](../media/ITPro-EAC-AddIcon.gif)**Nuovo processo di importazione**.
 
 4. Nella procedura guidata di importazione digitare un nome per il processo di importazione PST e quindi fare clic su **Avanti.** Usare lettere minuscole, numeri, trattini e caratteri di sottolineatura. Il nome non può contenere lettere maiuscole o spazi.
 

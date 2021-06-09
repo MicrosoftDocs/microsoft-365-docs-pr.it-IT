@@ -27,7 +27,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644868"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Il dominio potrebbe essere in uso se un altro utente lo ha sottoscritto
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Il dominio potrebbe essere in uso se qualcun altro lo ha sottoscritto
 
 Gli utenti con un account aziendale o dell'istituto di istruzione possono [iscriversi a uno dei servizi online Microsoft](self-service-sign-up.md) senza chiedere assistenza al reparto IT. Ad esempio, possono iscriversi a servizi come Office 365, Power BI e Rights Management Services. Completando l'iscrizione self-service, che viene eseguita fornendo il proprio indirizzo di posta elettronica aziendale o dell'istituto di istruzione, gli utenti avranno accesso alle funzionalità incluse nel servizio ma non potranno amministrare il servizio, vale a dire aggiungere utenti e licenze, gestire il dominio e così via. 
   
