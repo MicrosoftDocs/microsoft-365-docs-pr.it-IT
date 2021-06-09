@@ -28,26 +28,26 @@ summary: >
 sections:
 - name: Ignorato
   questions:
-  - question: Che cos'è La crittografia dei messaggi di Office 365 ??
+  - question: Che cos'è Office 365 Message Encryption (OME)?
     answer: OME combina la crittografia della posta elettronica e le funzionalità di rights management. Le funzionalità di Rights management si basano sulla tecnologia Azure Information Protection.
   - question: >
-      Chi può usare OME?
-    answer: "È possibile utilizzare le nuove funzionalità per OME nelle condizioni seguenti:\n  \n- Se non è mai stato configurato OME o IRM per Exchange Online in Office 365.\n\n- Se sono stati impostati OME e IRM, è possibile utilizzare questi passaggi se si utilizza il servizio Azure Rights Management da Azure Information Protection.\n\n- Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare subito queste nuove funzionalità. È invece necessario eseguire prima [la migrazione di AD RMS ad Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) Al termine della migrazione, è possibile configurare correttamente OME.\n\n  Se si sceglie di continuare a usare AD RMS locale con Exchange Online anziché eseguire la migrazione ad Azure Information Protection, non sarà possibile utilizzare queste nuove funzionalità.\n"
+      Who possibile usare OME?
+    answer: "È possibile utilizzare le nuove funzionalità per OME nelle condizioni seguenti:\n  \n- Se non è mai stato configurato OME o IRM per Exchange Online in Office 365.\n\n- Se sono stati impostati OME e IRM, è possibile utilizzare questi passaggi se si utilizza il servizio Azure Rights Management da Azure Information Protection.\n\n- Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare subito queste nuove funzionalità. È invece necessario eseguire prima [la migrazione di AD RMS ad Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) Al termine della migrazione, è possibile configurare correttamente OME.\n\n  Se si sceglie di continuare a usare AD RMS locale con Exchange Online anziché eseguire la migrazione ad Azure Information Protection, non sarà possibile usare queste nuove funzionalità.\n"
   - question: >
       Quali sottoscrizioni sono necessarie per usare le nuove funzionalità OME?
-    answer: "Per usare le nuove funzionalità OME, è necessario uno dei piani seguenti:\n  \n- La crittografia dei messaggi di Office 365 è disponibile nell'ambito di Office 365 Enterprise E3 ed E5, Microsoft Enterprise E3 ed E5, Microsoft 365 Business Premium, Office 365 A1, A3 e A5 e Office 365 Government G3 e G5. I clienti non necessitano di licenze aggiuntive per ricevere le nuove funzionalità di protezione basate su Azure Information Protection.\n\n- È inoltre possibile aggiungere Azure Information Protection Piano 1 ai piani seguenti per ricevere le nuove funzionalità di crittografia dei messaggi di Office 365: Exchange Online Piano 1, Exchange Online Piano 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard o Office 365 Enterprise E1.\n\n- Ogni utente che beneficia della crittografia dei messaggi di Office 365 deve essere concesso in licenza per essere coperto dalla funzionalità.\n\n- Per l'elenco completo, vedere le [descrizioni del](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) servizio Exchange Online per la crittografia dei messaggi di Office 365.\n"
+    answer: "Per usare le nuove funzionalità OME, è necessario uno dei piani seguenti:\n  \n- Office 365 Message Encryption è disponibile come parte di Office 365 Enterprise E3 ed E5, Microsoft Enterprise E3 ed E5, Microsoft 365 Business Premium, Office 365 A1, A3 e A5 e Office 365 Government G3 e G5. I clienti non hanno bisogno di licenze aggiuntive per usufruire delle nuove funzionalità di protezione con tecnologia Azure Information Protection.\n\n- È inoltre possibile aggiungere Azure Information Protection Piano 1 ai piani seguenti per ricevere le nuove funzionalità di Office 365 Message Encryption: Exchange Online Piano 1, Exchange Online Piano 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard o Office 365 Enterprise E1.\n\n- Ogni utente che beneficia Office 365 Message Encryption deve essere concesso in licenza per essere coperto dalla funzionalità.\n\n- Per l'elenco completo, vedere le [Exchange Online dei servizi per](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) Office 365 Message Encryption.\n"
   - question: >
-      Posso usare Exchange Online con bring your own key (BYOK) in Azure Information Protection?
+      È possibile usare Exchange Online con bring your own key (BYOK) in Azure Information Protection?
     answer: "Sì. Microsoft consiglia di completare la procedura per configurare BYOK prima di configurare OME.\n  \nPer ulteriori informazioni su BYOK, vedere [Planning and implementing your Azure Information Protection tenant key.](/information-protection/plan-design/plan-implement-tenant-key)\n  \n"
   - question: >
       OME e BYOK con Azure Information Protection modificano l'approccio di Microsoft alle richieste di dati di terze parti, ad esempio i mandati di comparizione?
     answer: "No. OME e l'opzione per fornire e controllare le proprie chiavi di crittografia, denominate BYOK, da Azure Information Protection non sono state progettate per rispondere alle richieste di comparizione delle forze dell'ordine. OME, con BYOK per Azure Information Protection, è stato progettato per i clienti incentrati sulla conformità. Microsoft prende sul serio le richieste di terze parti per i dati dei clienti. In qualità di provider di servizi cloud, sosteniamo sempre la privacy dei dati dei clienti. Nel caso in cui riceviamo un mandato di comparizione, tentiamo sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il blog di Brad Smith: [Protezione dei dati dei clienti dallo snooping governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Microsoft pubblica periodicamente informazioni dettagliate sulla richiesta ricevuta. Per ulteriori informazioni sulle richieste di dati di terze parti, vedere [Risposta alle](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) richieste del governo e delle forze dell'ordine per accedere ai dati dei clienti nel Centro protezione Microsoft. Vedere anche \"Divulgazione dei dati dei clienti\" nelle Condizioni [dei servizi online (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
   - question: >
-      In che modo questa funzionalità è correlata alle funzionalità legacy di Crittografia messaggi di Office 365 (OME) e Information Rights Management (IRM) ?
-    answer: "Le nuove funzionalità per la crittografia dei messaggi di Office 365 sono un'evoluzione delle soluzioni IRM e OME legacy esistenti. Nella tabella seguente sono disponibili ulteriori dettagli.\n  \n**Confronto tra OME legacy, IRM e nuove funzionalità OME**\n\n| Funzionalità | Versioni precedenti di OME | IRM | Nuove funzionalità OME |\n|:-----|:-----|:-----|:-----|\n|**Invio di un messaggio di posta elettronica crittografato**|Solo tramite le regole del flusso di posta di Exchange|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul Web; o tramite le regole del flusso di posta di Exchange|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul Web; o tramite regole del flusso di posta|\n|**Gestione dei diritti**|-|Opzione Non inoltrare e modelli personalizzati|Opzione Non inoltrare, opzione di sola crittografia, modelli predefiniti e personalizzati|\n|**Tipo di destinatario supportato**|Solo destinatari esterni|Solo destinatari interni|Destinatari interni ed esterni|\n|**Esperienza per il destinatario**|I destinatari esterni hanno ricevuto un messaggio HTML che hanno scaricato e aperto in un browser o in un'app per dispositivi mobili scaricata.|I destinatari interni hanno ricevuto solo messaggi di posta elettronica crittografati in Outlook per Windows, Outlook per Mac e Outlook sul Web.|I destinatari interni ed esterni ricevono messaggi di posta elettronica in Outlook per Windows, Outlook per Mac, Outlook sul Web, Outlook per Android e Outlook per iOS o tramite un portale Web, indipendentemente dal fatto che siano o meno nella stessa organizzazione o in qualsiasi organizzazione. Il portale OME non richiede alcun download separato.|\n|**Supporto per Bring Your Own Key**|Non disponibile|Non disponibile| BYOK supportato|\n"
+      In che modo questa funzionalità è correlata alle funzionalità legacy Office 365 Message Encryption (OME) e Information Rights Management (IRM) ?
+    answer: "Le nuove funzionalità per Office 365 Message Encryption sono un'evoluzione delle soluzioni IRM e OME legacy esistenti. Nella tabella seguente sono disponibili ulteriori dettagli.\n  \n**Confronto tra OME legacy, IRM e nuove funzionalità OME**\n\n| Funzionalità | Versioni precedenti di OME | IRM | Nuove funzionalità OME |\n|:-----|:-----|:-----|:-----|\n|**Invio di un messaggio di posta elettronica crittografato**|Solo tramite regole Exchange flusso di posta elettronica|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul Web; o tramite regole Exchange flusso di posta|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul Web; o tramite regole del flusso di posta|\n|**Gestione dei diritti**|-|Opzione Non inoltrare e modelli personalizzati|Opzione Non inoltrare, opzione di sola crittografia, modelli predefiniti e personalizzati|\n|**Tipo di destinatario supportato**|Solo destinatari esterni|Solo destinatari interni|Destinatari interni ed esterni|\n|**Esperienza per il destinatario**|I destinatari esterni hanno ricevuto un messaggio HTML che hanno scaricato e aperto in un browser o in un'app per dispositivi mobili scaricata.|I destinatari interni hanno ricevuto solo messaggi di posta elettronica crittografati Outlook per Windows, Outlook per Mac e Outlook sul Web.|I destinatari interni ed esterni ricevono messaggi di posta elettronica in Outlook per Windows, Outlook per Mac, Outlook sul Web, Outlook per Android e Outlook per iOS o tramite un portale Web, indipendentemente dal fatto che siano o meno nella stessa organizzazione o in qualsiasi organizzazione. Il portale OME non richiede alcun download separato.|\n|**Supporto per Bring Your Own Key**|Non disponibile|Non disponibile| BYOK supportato|\n"
   - question: >
       Come si abilitano le nuove funzionalità OME per l'organizzazione?
-    answer: "Vedere [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md).\n  \n"
+    answer: "Vedi [Configurare nuove funzionalità Office 365 Message Encryption.](set-up-new-message-encryption-capabilities.md)\n  \n"
   - question: >
       La versione precedente di OME verrà deprecata?
     answer: >
@@ -56,39 +56,39 @@ sections:
       L'organizzazione utilizza Active Directory Rights Management, è possibile utilizzare questa funzionalità?
     answer: "No. Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare subito queste nuove funzionalità. È invece necessario eseguire prima [la migrazione di AD RMS ad Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)\n  \n"
   - question: >
-      L'organizzazione ha una distribuzione ibrida di Exchange. È possibile utilizzare questa funzionalità?
-    answer: "Gli utenti locali possono inviare posta crittografata utilizzando le regole del flusso di posta di Exchange Online. A tale scopo, è necessario instradare la posta elettronica tramite Exchange Online. Per ulteriori informazioni, vedere [Part 2: Configure mail to flow from your email server to Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).\n  \n"
+      L'organizzazione ha una Exchange ibrida. È possibile utilizzare questa funzionalità?
+    answer: "Gli utenti locali possono inviare posta crittografata Exchange Online regole del flusso di posta. A tale scopo, è necessario instradare la posta elettronica tramite Exchange Online. Per ulteriori informazioni, vedere [Part 2: Configure mail to flow from your email server to Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).\n  \n"
   - question: >
       Quale client di posta elettronica è necessario utilizzare per creare un messaggio crittografato OME? Quali applicazioni sono supportate per l'invio di messaggi protetti?
-    answer: "È possibile creare messaggi protetti da Outlook 2016, Outlook 2013 per Windows e Mac e da Outlook sul Web. Per ulteriori informazioni sull'invio di messaggi crittografati, vedere [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us).\n  \n"
+    answer: "Puoi creare messaggi protetti da Outlook 2016, Outlook 2013 per Windows e Mac e da Outlook sul Web. Per ulteriori informazioni sull'invio di messaggi crittografati, vedere [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us).\n  \n"
   - question: >
       Quali client di posta elettronica sono supportati per leggere e rispondere ai messaggi di posta elettronica protetti?
     answer: >
-      Gli utenti di Microsoft 365 possono leggere e rispondere da Outlook per Windows e Mac (2013 e 2016), Outlook sul Web e Outlook mobile (Android e iOS). È inoltre possibile utilizzare il client di posta nativo iOS se l'organizzazione lo consente. Se non si è un utente di Microsoft 365, è possibile leggere e rispondere ai messaggi crittografati sul Web tramite il Web browser.
+      Microsoft 365 utenti possono leggere e rispondere da Outlook per Windows e Mac (2013 e 2016), Outlook sul Web e Outlook mobile (Android e iOS). È inoltre possibile utilizzare il client di posta nativo iOS se l'organizzazione lo consente. Se non si è un Microsoft 365, è possibile leggere e rispondere ai messaggi crittografati sul Web tramite il Web browser.
   - question: >
       Quali client di posta elettronica supportano i messaggi di posta elettronica protetti solo con crittografia?
     answer: >
-      Gli utenti di Microsoft 365 possono utilizzare Outlook per PC versioni 2019 e Microsoft 365 per creare posta protetta con il criterio di sola crittografia.  Ciò significa che i messaggi a cui è applicato il nuovo criterio di sola crittografia possono essere letti direttamente in Outlook sul Web, in Outlook per iOS e Android e ora outlook per PC versioni 2019 e Microsoft 365.
+      Microsoft 365 utenti possono usare Outlook per le versioni pc 2019 e Microsoft 365 per creare posta protetta con il criterio di sola crittografia.  Ciò significa che i messaggi a cui è applicato il nuovo criterio di sola crittografia possono essere letti direttamente in Outlook sul Web, in Outlook per iOS e Android e ora Outlook per PC versioni 2019 e Microsoft 365.
   - question: >
       Esiste un limite di dimensione per i messaggi che è possibile inviare con OME?
     answer: >
       Sì. La dimensione massima dei messaggi che è possibile inviare con OME, inclusi gli allegati, è di 25 MB. Per ulteriori informazioni, vedere [Limiti dei messaggi](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
   - question: >
       Quali tipi di file sono supportati come allegati nei messaggi di posta elettronica protetti? Gli allegati ereditano i criteri di protezione associati ai messaggi di posta elettronica protetti?
-    answer: "È possibile allegare qualsiasi tipo di file a un messaggio di posta elettronica protetto. Con un'eccezione, i criteri di protezione vengono applicati solo ai formati di file indicati in [Tipi di file supportati dal client Azure Information Protection.](/information-protection/rms-client/client-admin-guide-file-types) OME non supporta le versioni 97-2003 delle seguenti applicazioni di Office: Word (doc), Excel (xls) e PowerPoint (ppt).\n\nSe è supportato un formato di file, ad esempio un file di Word, Excel o PowerPoint, il file è sempre protetto, anche dopo che l'allegato è stato scaricato dal destinatario. Si supponga ad esempio che un allegato sia protetto da Non inoltrare. Il destinatario originale scarica il file, crea un messaggio a un nuovo destinatario e allega il file. Quando il nuovo destinatario riceve il file, il destinatario non sarà in grado di aprire il file protetto.\n  \n"
+    answer: "È possibile allegare qualsiasi tipo di file a un messaggio di posta elettronica protetto. Con un'eccezione, i criteri di protezione vengono applicati solo ai formati di file indicati in [Tipi di file supportati dal client Azure Information Protection.](/information-protection/rms-client/client-admin-guide-file-types) OME non supporta le versioni 97-2003 dei seguenti programmi Office: Word (.doc), Excel (.xls) e PowerPoint (.ppt).\n\nSe è supportato un formato di file, ad esempio un file di Word, Excel o PowerPoint, il file viene sempre protetto, anche dopo il download dell'allegato da parte del destinatario. Si supponga ad esempio che un allegato sia protetto da Non inoltrare. Il destinatario originale scarica il file, crea un messaggio a un nuovo destinatario e allega il file. Quando il nuovo destinatario riceve il file, il destinatario non sarà in grado di aprire il file protetto.\n  \n"
   - question: >
       I file allegati PDF sono supportati?
     answer: >
-      La risposta breve è sì! Se abilitata, la crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni protette o collaborazione sicura. Quando si invia un messaggio di posta elettronica, il servizio Office 365 crittografa gli allegati di file PDF. Il client Outlook non crittografa i file allegati PDF.
+      La risposta breve è sì! Se abilitata, la crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni protette o collaborazione sicura. Quando si invia un messaggio di posta elettronica, il Office 365 crittografa i file allegati PDF. Il Outlook non crittografa i file allegati PDF.
 
 
-      Per Outlook sul Web, Outlook per iOS e Outlook per Android, è possibile crittografare i PDF inviati senza ulteriori passaggi. Questi client supportano in modo nativo la crittografia PDF.
+      Ad Outlook sul Web, Outlook per iOS e Outlook per Android, è possibile crittografare i PDF inviati senza ulteriori passaggi. Questi client supportano in modo nativo la crittografia PDF.
 
 
-      Il desktop di Outlook non supporta in modo nativo la crittografia dei file allegati PDF. Sarà invece necessario configurare le regole del flusso di posta di Exchange o DLP per applicare prima la crittografia agli allegati PDF. Quando si invia la posta da Outlook Desktop con un allegato PDF, il client invia prima il messaggio con l'allegato al servizio. Quando il servizio riceve il file, il servizio applica la protezione OME del criterio di prevenzione della perdita dei dati (DLP) o della regola del flusso di posta in Exchange Online. Successivamente, Exchange Online invia il messaggio con il file PDF protetto allegato.
+      Outlook desktop non supporta in modo nativo la crittografia dei file allegati PDF. Sarà invece necessario configurare le regole del flusso di posta Exchange dlp per applicare prima la crittografia agli allegati PDF. Quando si invia la posta da Outlook Desktop con un allegato PDF, il client invia prima il messaggio con l'allegato al servizio. Quando il servizio riceve il file, il servizio applica la protezione OME del criterio di prevenzione della perdita dei dati (DLP) o della regola del flusso di posta in Exchange Online. Successivamente, Exchange Online il messaggio con il file PDF protetto allegato.
 
 
-      Per abilitare la crittografia per gli allegati PDF, eseguire il comando seguente in [PowerShell di Exchange Online:](/powershell/exchange/connect-to-exchange-online-powershell)
+      Per abilitare la crittografia per gli allegati PDF, eseguire il comando seguente in [Exchange Online PowerShell:](/powershell/exchange/connect-to-exchange-online-powershell)
 
 
       ```powershell
@@ -98,26 +98,26 @@ sections:
       ```
 
 
-      La crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni protette o collaborazione sicura. Per tutti i client Outlook, i messaggi e gli allegati PDF non protetti ereditano la protezione OME del criterio di prevenzione della perdita dei dati (DLP) o della regola del flusso di posta in Exchange Online. Inoltre, se un utente di Outlook sul Web allega un documento PDF non protetto e applica la protezione al messaggio, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire gli allegati crittografati solo in applicazioni che supportano PDF protetti (ad esempio, il portale OME e il visualizzatore di Azure Information Protection).
+      La crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni protette o collaborazione sicura. Per tutti Outlook, i messaggi e gli allegati PDF non protetti ereditano la protezione OME del criterio di prevenzione della perdita dei dati (DLP) o della regola del flusso di posta in Exchange Online. Inoltre, se un Outlook sul Web allega un documento PDF non protetto e applica la protezione al messaggio, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire gli allegati crittografati solo in applicazioni che supportano PDF protetti (ad esempio, il portale OME e il visualizzatore di Azure Information Protection).
 
 
       > [!IMPORTANT]
 
-      > Il client desktop di Outlook non supporta la crittografia PDF.
+      > Outlook client desktop non supporta la crittografia PDF.
   - question: >
-      Gli allegati di OneDrive for Business sono supportati?
+      Gli OneDrive for Business sono supportati?
     answer: >
-      Not yet. Gli allegati di OneDrive for Business non sono supportati e gli utenti finali non possono crittografare un messaggio contenente un allegato di OneDrive for Business cloud.
+      Not yet. OneDrive for Business allegati non sono supportati e gli utenti finali non possono crittografare un messaggio contenente un allegato OneDrive for Business cloud.
   - question: >
       Quali client di posta elettronica supportano l'anteprima degli allegati crittografati nei messaggi di posta elettronica protetti?
-    answer: "Quando gli allegati sono protetti con un messaggio di posta elettronica protetto, i client Outlook offrono la possibilità di visualizzare direttamente l'anteprima del documento. Outlook supporta l'anteprima dei documenti di Office (docx, xlsx, pptx, doc, xls, ppt). Outlook sul Web supporta l'anteprima dei documenti di Office (docx, xlsx, pptx) e PDF.  \n"
+    answer: "Quando gli allegati sono protetti con un messaggio di posta elettronica protetto, Outlook client offrono la possibilità di visualizzare direttamente l'anteprima del documento. Outlook supporta l'anteprima Office documenti (docx, xlsx, pptx, doc, xls, ppt). Outlook sul Web supporta l'anteprima Office documenti (docx, xlsx, pptx) e PDF.  \n"
   - question: >
       Quali client di posta elettronica supportano la revoca dei messaggi di posta elettronica protetti?
     answer: >
       Outlook sul Web supporta la revoca della posta protetta.  Per [informazioni dettagliate, vedere Come](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) revocare un messaggio crittografato inviato.
   - question: >
       È possibile crittografare automaticamente i messaggi impostando criteri?
-    answer: "Sì. Utilizzare le regole del flusso di posta in Exchange Online per crittografare automaticamente un messaggio in base a determinate condizioni. Ad esempio, è possibile creare criteri basati sull'ID destinatario, sul dominio del destinatario o sul contenuto nel corpo o nell'oggetto del messaggio. Vedere [Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365.](define-mail-flow-rules-to-encrypt-email.md)\n  \n"
+    answer: "Sì. Utilizzare le regole del flusso di posta Exchange Online per crittografare automaticamente un messaggio in base a determinate condizioni. Ad esempio, è possibile creare criteri basati sull'ID destinatario, sul dominio del destinatario o sul contenuto nel corpo o nell'oggetto del messaggio. Vedere [Definire le regole del flusso di posta per crittografare i](define-mail-flow-rules-to-encrypt-email.md)messaggi di posta elettronica in Office 365 .\n  \n"
   - question: >
       È possibile rimuovere automaticamente la crittografia della posta in arrivo e in uscita?
     answer: >
@@ -125,7 +125,7 @@ sections:
   - question: >
       È possibile crittografare automaticamente i messaggi impostando criteri in Prevenzione della perdita dei dati (DLP) tramite il Centro &amp; sicurezza e conformità?
     answer: >
-      Sì. È possibile configurare le regole del flusso di posta in Exchange Online o tramite DLP nel Centro &amp; sicurezza e conformità.
+      Sì. È possibile configurare le regole del flusso di posta Exchange Online o tramite DLP nel Centro &amp; sicurezza e conformità.
   - question: >
       È possibile personalizzare i messaggi crittografati con il marchio aziendale?
     answer: "Sì. Per informazioni sulla personalizzazione dei messaggi di posta elettronica e del portale OME, vedere Aggiungere il marchio dell'organizzazione ai messaggi crittografati. Vedere [Aggiungere il marchio dell'organizzazione ai messaggi crittografati.](add-your-organization-brand-to-encrypted-messages.md)\n  \n"
@@ -135,7 +135,7 @@ sections:
   - question: >
       È possibile utilizzare la crittografia dei messaggi con funzionalità di conformità come eDiscovery?
     answer: >
-      Sì. Tutti i messaggi di posta elettronica crittografati sono individuabili dalle funzionalità di conformità di Microsoft 365.
+      Sì. Tutti i messaggi di posta elettronica crittografati sono individuabili Microsoft 365 funzionalità di conformità.
   - question: >
       È possibile rimuovere la crittografia dalla posta elettronica?
     answer: >
@@ -157,7 +157,7 @@ sections:
       - Gli utenti possono aprire i messaggi protetti in una cassetta postale condivisa in cui la cassetta postale condivisa ha ricevuto una posta protetta come parte di un gruppo di distribuzione.
 
 
-      - Gli utenti possono visualizzare gli allegati che ereditano la protezione dalla posta elettronica quando utilizzano Outlook per Windows, Outlook per Mac e Outlook sul Web.
+      - Gli utenti possono visualizzare gli allegati che ereditano la protezione dalla posta elettronica quando usano Outlook per Windows, Outlook per Mac e Outlook sul Web.
 
 
       Nella tabella seguente sono elencati i client supportati per le cassette postali condivise.
@@ -186,13 +186,13 @@ sections:
       - Non è possibile aprire allegati ai messaggi di posta elettronica ricevuti nei dispositivi mobili utilizzando Outlook mobile.
 
 
-      - Non supportiamo l'assegnazione tramite un gruppo di sicurezza abilitato alla posta elettronica. Supportiamo solo l'accesso fornito dall'assegnazione diretta degli utenti alla cassetta postale condivisa e che il mapping automatico è abilitato per Exchange Online. Il mapping automatico è abilitato per impostazione predefinita per Exchange Online.
+      - Non supportiamo l'assegnazione tramite un gruppo di sicurezza abilitato alla posta elettronica. Supportiamo solo l'accesso fornito dall'assegnazione diretta degli utenti alla cassetta postale condivisa e il mapping automatico è abilitato per Exchange Online. Il mapping automatico è abilitato per impostazione predefinita per Exchange Online.
 
 
       **Per assegnare un utente alla cassetta postale condivisa**
 
 
-      1. [Connettersi a Exchange Online utilizzando Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150).aspx).
+      1. [Connessione per Exchange Online usare Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150).aspx).
 
 
       2. Eseguire il cmdlet Add-MailboxPermission con il parametro Automapping. In questo esempio a Ayla vengono concesse autorizzazioni di accesso completo a una cassetta postale di supporto.
