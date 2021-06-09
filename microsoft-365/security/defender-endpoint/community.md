@@ -1,6 +1,6 @@
 ---
-title: Accedere a Microsoft Defender for Endpoint Community Center
-description: Accedi a Microsoft Defender for Endpoint Community Center per condividere esperienze, interagire e conoscere il prodotto.
+title: Accedere a Microsoft Defender for Endpoint Community Center
+description: Accedi a Microsoft Defender per Endpoint Community Center per condividere esperienze, interagire e informazioni sul prodotto.
 keywords: community, community center, community tech, conversazione, annunci
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/20/2021
 ms.locfileid: "51893426"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Accedere a Microsoft Defender for Endpoint Community Center
+# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Accedere a Microsoft Defender for Endpoint Community Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,11 +42,11 @@ Per informazioni su informazioni specifiche, è possibile esplorare diversi spaz
 - Intelligence per le minacce
 
 
-È possibile accedere al Centro community in diversi modi:
-- Nel riquadro di spostamento di Microsoft Defender Security Center selezionare **Centro community.**  Viene visualizzata una nuova scheda del browser che consente di accedere alla pagina Defender for Endpoint Tech Community. 
+È possibile accedere al Centro Community diversi modi:
+- Nel riquadro Microsoft Defender Security Center di spostamento selezionare Community **centro.**  Viene aperta una nuova scheda del browser che consente di accedere alla pagina Defender for Endpoint Tech Community. 
 - Accedere alla community tramite la [pagina Microsoft Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)
 
 
 È possibile visualizzare e leggere istantaneamente le conversazioni pubblicate nella community. 
 
-Per ottenere l'esperienza completa all'interno della community, ad esempio la possibilità di commentare i post, è necessario unirsi alla community. Per ulteriori informazioni su come iniziare a usare microsoft tech community, vedere [Microsoft Tech Community: Getting Started.](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15)
+Per ottenere l'esperienza completa all'interno della community, ad esempio la possibilità di commentare i post, è necessario unirsi alla community. Per ulteriori informazioni su come iniziare a usare Microsoft Tech Community, vedere [Microsoft Tech Community: Getting Started](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15).

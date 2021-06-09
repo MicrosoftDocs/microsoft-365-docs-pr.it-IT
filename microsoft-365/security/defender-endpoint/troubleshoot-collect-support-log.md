@@ -45,7 +45,7 @@ In questo argomento vengono fornite istruzioni su come eseguire lo strumento tra
  
 2.  Avviare una [sessione di Risposta](live-response.md#initiate-a-live-response-session-on-a-device) in tempo reale nel computer che è necessario analizzare.
 
-3.  Selezionare **Carica file nella raccolta**.
+3.  Selezionare **Upload file da raccolta.**
 
     ![Immagine del file di caricamento](images/upload-file.png)
 

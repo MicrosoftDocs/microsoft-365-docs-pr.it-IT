@@ -27,22 +27,22 @@ ms.locfileid: "50927501"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Pianificare i dispositivi di rete che si connettono ai servizi di Office 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
   
-Alcuni componenti hardware di rete potrebbero avere limitazioni sul numero di sessioni simultanee supportate. Per le organizzazioni con più di 2.000 utenti, è consigliabile monitorare i dispositivi di rete per assicurarsi di essere in grado di gestire il traffico aggiuntivo del servizio Office 365. Il software di monitoraggio SNMP (Simple Network Management Protocol) consente di eseguire questa operazione.
+Alcuni componenti hardware di rete potrebbero avere limitazioni sul numero di sessioni simultanee supportate. Per le organizzazioni che hanno più di 2.000 utenti, è consigliabile monitorare i dispositivi di rete per assicurarsi che siano in grado di gestire il traffico aggiuntivo Office 365 servizio. Il software di monitoraggio SNMP (Simple Network Management Protocol) consente di eseguire questa operazione.
 
-Questo articolo fa parte della [pianificazione della rete e dell'ottimizzazione delle prestazioni per Office 365.](./network-planning-and-performance.md)
+Questo articolo fa parte della pianificazione [della rete e dell'ottimizzazione delle prestazioni per Office 365](./network-planning-and-performance.md).
 
-Le impostazioni del proxy Internet in uscita locale influiscono anche sulla connettività ai servizi di Office 365 per le applicazioni client. È inoltre necessario configurare i dispositivi proxy di rete per consentire le connessioni per gli URL e le applicazioni dei servizi cloud Microsoft. Ogni organizzazione è diversa. Per avere un'idea di come Microsoft gestisce questo processo e la quantità di larghezza di banda di cui viene effettuato il provisioning, [leggere il case study](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+Le impostazioni del proxy Internet in uscita locale influiscono anche sulla connettività Office 365 servizi per le applicazioni client. È inoltre necessario configurare i dispositivi proxy di rete per consentire le connessioni per gli URL e le applicazioni dei servizi cloud Microsoft. Ogni organizzazione è diversa. Per avere un'idea di come Microsoft gestisce questo processo e la quantità di larghezza di banda di cui viene effettuato il provisioning, [leggere il case study](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
   
-I seguenti articoli della Guida di Skype for Business hanno altre informazioni sulle impostazioni di Skype for Business:
+Gli articoli Skype for Business della Guida sono disponibili ulteriori informazioni sulle Skype for Business seguenti:
   
-- [Risoluzione dei problemi di accesso a Skype for Business Online per gli amministratori](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
+- [Risoluzione Skype for Business errori di accesso online per gli amministratori](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
-- [Non è possibile connettersi a Skype for Business o alcune funzionalità non funzionano perché un firewall locale blocca la connessione](https://go.microsoft.com/fwlink/p/?LinkID=243625)
+- [Non è possibile connettersi Skype for Business o alcune funzionalità non funzionano, perché un firewall locale blocca la connessione](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
 > [!NOTE]
-> Sebbene molte di queste impostazioni siano specifiche di Skype for Business, le indicazioni generali sulla configurazione di rete sono utili per tutti i servizi di Office 365.
+> Anche se molte di queste impostazioni Skype for Business specifiche, le indicazioni generali sulla configurazione di rete sono utili per tutti i Office 365 servizi.
   
 ## <a name="determining-network-capacity"></a>Determinazione della capacità di rete
 
@@ -54,22 +54,22 @@ Per testare la capacità di rete, monitorare l'attività di rete nell'interfacci
   
 ## <a name="wan-accelerators"></a>Acceleratori WAN
 
-Se l'organizzazione utilizza appliance proxy di accelerazione WAN ( Wide Area Network), è possibile che si verifichino problemi quando si accede ai servizi di Office 365. Potrebbe essere necessario ottimizzare il dispositivo o i dispositivi di rete per garantire agli utenti un'esperienza coerente quando accedono a Office 365. Ad esempio, i servizi di Office 365 crittografano alcuni contenuti di Office 365 e l'intestazione TCP. Il dispositivo potrebbe non essere in grado di gestire questo tipo di traffico.
+Se l'organizzazione utilizza dispositivi proxy di accelerazione WAN (Wide Area Network), è possibile che si verifichino problemi quando si accede ai Office 365 internet. Potrebbe essere necessario ottimizzare il dispositivo o i dispositivi di rete per garantire agli utenti un'esperienza coerente durante l'accesso Office 365. Ad esempio, i Office 365 crittografare alcuni Office 365 e l'intestazione TCP. Il dispositivo potrebbe non essere in grado di gestire questo tipo di traffico.
   
-Leggere la dichiarazione di supporto [sull'uso del controller di ottimizzazione WAN o dei dispositivi di traffico/ispezione con Office 365.](https://support.microsoft.com/kb/2690045)
+Leggi la nostra dichiarazione di supporto [sull'uso del controller di ottimizzazione WAN o dei dispositivi di traffico/ispezione con Office 365](https://support.microsoft.com/kb/2690045).
   
 ## <a name="hardware-and-software-load-balancing-devices"></a>Dispositivi hardware e software di bilanciamento del carico
 
-L'organizzazione deve utilizzare un bilanciamento del carico hardware (HLB) o una soluzione di bilanciamento del carico di rete (NLB) per distribuire le richieste ai server Active Directory Federation Services (AD FS) e/o ai server ibridi di Exchange. I dispositivi di bilanciamento del carico controllano il traffico di rete verso i server locali. Questi server sono fondamentali per garantire la disponibilità della distribuzione single sign-on e ibrida di Exchange.
+L'organizzazione deve utilizzare un bilanciamento del carico hardware (HLB) o una soluzione di bilanciamento del carico di rete (NLB) per distribuire le richieste ai server Active Directory Federation Services (AD FS) e/o ai server ibridi Exchange. I dispositivi di bilanciamento del carico controllano il traffico di rete verso i server locali. Questi server sono fondamentali per garantire la disponibilità di single sign-on e Exchange distribuzione ibrida.
   
-Forniamo una soluzione NLB basata su software integrata in Windows Server. Office 365 supporta questa soluzione per ottenere il bilanciamento del carico.
+Forniamo una soluzione NLB basata su software integrata in Windows Server. Office 365 questa soluzione per ottenere il bilanciamento del carico.
   
 ## <a name="firewalls-and-proxies"></a>Firewall e proxy
 
-Per ulteriori informazioni sulla configurazione di firewall e proxy per la connessione a Office 365, vedere [Managing Office 365 endpoints,](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a) [Assessing Office 365 network connectivity](assessing-network-connectivity.md)e Domande frequenti sugli endpoint di Office [365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) per ulteriori informazioni sulla selezione di dispositivi e circuiti.
+Per ulteriori informazioni sulla configurazione di firewall e proxy per la connessione a Office 365, vedere [Managing Office 365 endpoints,](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a) [Assessing Office 365 network connectivity](assessing-network-connectivity.md), and Office 365 [endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) to learn more about devices and circuit selection.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Guide all'installazione per i servizi di Office 365](setup-guides-for-microsoft-365.md)
+[Guide all'installazione per Office 365 servizi](setup-guides-for-microsoft-365.md)
 
 [Panoramica di Microsoft 365 Enterprise](microsoft-365-overview.md)

@@ -39,7 +39,7 @@ Per diventare un partner della soluzione Defender for Endpoint, dovrai seguire e
 Sottoscrivi la [licenza di Microsoft Defender for Endpoint Developer.](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9) La sottoscrizione consente di usare un tenant di Microsoft Defender for Endpoint con un massimo di 10 dispositivi per sviluppare soluzioni che si integrano con Microsoft Defender for Endpoint. 
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>Passaggio 2: soddisfare i requisiti di convalida e certificazione della soluzione
-Il modo migliore per i partner tecnologici per certificare che l'integrazione funziona è fare in modo che un cliente comune approvi la progettazione dell'integrazione suggerita (il cliente può usare l'opzione Consiglia un **partner** nella pagina Applicazione partner [in](https://securitycenter.microsoft.com/interoperability/partners) Microsoft Defender Security Center) e farlo testare ed eseguire la demo nel team di Microsoft Defender for Endpoint.
+Il modo migliore per i partner tecnologici per certificare che l'integrazione funziona è fare in modo che [](https://securitycenter.microsoft.com/interoperability/partners) un cliente comune approvi la progettazione dell'integrazione suggerita (il cliente può usare l'opzione Consiglia un **partner** nella pagina Applicazione partner nel Microsoft Defender Security Center) e farlo testare ed eseguire la demo nel team di Microsoft Defender for Endpoint.
 
 Dopo che il team di Microsoft Defender for Endpoint ha esaminato e approvato l'integrazione, microsoft ti insedierà come partner di Microsoft Intelligent Security Association.
 
@@ -56,9 +56,9 @@ Per fare in modo che l'azienda sia elencata come partner nella pagina partner ne
 3. Fornire una descrizione del prodotto di 15 parole.
 4. Collegamento alla pagina di destinazione per il cliente per completare l'integrazione o il post di blog che includerà informazioni sufficienti per i clienti. Qualsiasi comunicato stampa, incluso il nome del prodotto Microsoft Defender for Endpoint, deve essere esaminato dai team di marketing e progettazione. Attendere almeno 10 giorni per l'esecuzione del processo di revisione.
 5.  Se si usa un approccio azure AD multi-tenant, sarà necessario il nome dell'applicazione Azure AD per tenere traccia dell'utilizzo dell'applicazione.
-6. Includi il User-Agent campo in ogni chiamata API effettuata a Microsoft Defender per il set pubblico di API o API graph security di Microsoft Defender for Endpoint. Verrà usato per scopi statistici, per la risoluzione dei problemi e per il riconoscimento dei partner. Inoltre, questo passaggio è un requisito per l'appartenenza a Microsoft Intelligent Security Association (MISA).
+6. Includi il campo User-Agent campo in ogni chiamata API effettuata a Microsoft Defender per il set pubblico di API o api di sicurezza Graph Endpoint. Verrà usato per scopi statistici, per la risoluzione dei problemi e per il riconoscimento dei partner. Inoltre, questo passaggio è un requisito per l'appartenenza a Microsoft Intelligent Security Association (MISA).
 
-    Procedere come segue:
+    Eseguire la procedura seguente:
     
     - Impostare il User-Agent campo in ogni intestazione della richiesta HTTP sul formato seguente.
 

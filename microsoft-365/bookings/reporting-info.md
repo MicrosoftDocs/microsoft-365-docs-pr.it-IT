@@ -20,7 +20,7 @@ ms.locfileid: "51887228"
 
 Ora puoi visualizzare una visualizzazione di quattro mesi del calendario di Bookings in un file TSV. Il file TSV mostrerà quattro mesi di dati, ma è possibile selezionare diversi periodi di quattro mesi nel corso di un anno.
 
-Queste informazioni sul livello di appuntamento possono essere utilizzate per visualizzare l'attività del cliente attorno al calendario bookings. I file TSV sono file con valori separati da tabulazioni. È possibile visualizzare o modificare un file come questo con qualsiasi editor di testo o programma di foglio di calcolo, ad esempio Excel.
+Queste informazioni sul livello di appuntamento possono essere utilizzate per visualizzare l'attività del cliente attorno al calendario bookings. I file TSV sono file con valori separati da tabulazioni. Puoi visualizzare o modificare un file come questo con qualsiasi editor di testo o programma di foglio di calcolo, ad esempio Excel.
 
 ## <a name="see-four-months-of-booking-activity"></a>Vedi quattro mesi di attività di Booking
 
@@ -28,7 +28,7 @@ Queste informazioni sul livello di appuntamento possono essere utilizzate per vi
 
 :::image type="content" source="../media/bookings-activities.png" alt-text="Screenshot: 4 mesi di attività bookings":::
 
-1. Salvare il file con un nuovo nome e specificare il formato xls o xlsx.
+1. Salvare il file con un nuovo nome e specificare .xls o xlsx.
 
 1. Apri il file per visualizzare la visualizzazione di quattro mesi del calendario di Bookings.
 
@@ -43,7 +43,7 @@ Il report include i campi seguenti.
  - **Data e ora**
 - **Nome cliente**
 - **Posta elettronica cliente**
-- **Telefono cliente**
+- **Cliente Telefono**
 - **Indirizzo cliente**
 - **Personale**
 - **Servizio**
@@ -58,6 +58,6 @@ Il report migliorato ora contiene i campi seguenti.
 - **Valuta**   Tipo di valuta impostato per un'azienda.
 - **Partecipanti Cc**   Destinatari che riceveranno le notifiche di posta elettronica per una prenotazione. Questo può essere specificato dall'app Teams durante la creazione di una prenotazione.
 - **Conteggio partecipanti sottoscritti**   Numero di clienti che hanno prenotato un servizio di prenotazione di gruppo.
-- **Notifiche di testo abilitate**   Indica se i clienti possono ricevere notifiche sms correlate al testo.
+- **Notifiche di testo abilitate**   Indica se i clienti possono SMS notifiche correlate al testo.
 - **Campi personalizzati**   In questo campo vengono combinate tutte le domande e le risposte relative a una singola prenotazione.
 - **ID prenotazione**   Ciò è utile per identificare le stesse prenotazioni di un servizio di gruppo.

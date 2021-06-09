@@ -1,5 +1,5 @@
 ---
-title: 'Supporto app client Microsoft 365: accesso condizionale'
+title: 'Microsoft 365 Supporto app client: accesso condizionale'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: In questo articolo sono disponibili informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano l'accesso condizionale per Microsoft 365.
+description: In questo articolo, scopri quali piattaforme, client e moduli di PowerShell supportano l'Access per Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: c7b0b65ea25091aad01fd8741f9925f2b545e9c4
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,17 +23,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50904967"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Supporto app client Microsoft 365: accesso condizionale
+# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 Supporto app client: accesso condizionale
 
 Nell'ambiente di lavoro moderno, gli utenti possono accedere alle risorse dell'organizzazione usando vari dispositivi e app da qualsiasi luogo. Di conseguenza, concentrarsi solo su chi può accedere a una risorsa non è più sufficiente. L'organizzazione deve inoltre supportare come e dove si accede a una risorsa nell'infrastruttura di controllo di accesso.
 
-Con il dispositivo, la posizione e l'accesso condizionale basato sull'autenticazione a più fattori di Azure Active Directory, è possibile soddisfare questo nuovo requisito. L'accesso condizionale è una funzionalità di Azure Active Directory che consente di applicare controlli sull'accesso alle app nell'ambiente, il tutto in base a condizioni specifiche e gestito da una posizione centrale.
+Con Azure Active Directory, la posizione e l'accesso condizionale basato sull'autenticazione a più fattori, è possibile soddisfare questo nuovo requisito. L'accesso condizionale è una funzionalità di Azure Active Directory che consente di applicare controlli sull'accesso alle app nell'ambiente, il tutto in base a condizioni specifiche e gestito da una posizione centrale.
 
-Ulteriori informazioni [sull'accesso condizionale di Azure Active Directory.](/azure/active-directory/conditional-access/)
+Ulteriori informazioni [sull'Azure Active Directory condizionale](/azure/active-directory/conditional-access/).
 
 ## <a name="supported-clients--platforms"></a>Client supportati & piattaforme
 
-Le versioni più recenti dei client e delle piattaforme seguenti supportano l'accesso condizionale. Per ulteriori informazioni sul supporto della piattaforma in Microsoft 365, vedere [Requisiti di sistema per Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
+Le versioni più recenti dei client e delle piattaforme seguenti supportano l'accesso condizionale. Per ulteriori informazioni sul supporto della piattaforma in Microsoft 365, vedere [Requisiti di sistema per Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 

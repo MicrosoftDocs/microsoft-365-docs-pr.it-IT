@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
-description: Descrive la sincronizzazione della directory con Microsoft 365, pulizia di Servizi di dominio Active Directory e lo strumento Azure Active Directory Connect.
+description: Descrive la sincronizzazione della directory Microsoft 365, la pulizia di Servizi di dominio Active Directory e lo strumento Azure Active Directory Connessione directory.
 ms.openlocfilehash: 7b717f65bb434918a5eb0ab2bf4a5acab2d08eea
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,12 +28,12 @@ ms.locfileid: "50927545"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Identità ibrida e sincronizzazione della directory per Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-A seconda delle esigenze aziendali e dei requisiti tecnici, il modello di identità ibrido e la sincronizzazione della directory sono la scelta più comune per i clienti aziendali che adottano Microsoft 365. La sincronizzazione della directory consente di gestire le identità in Servizi di dominio Active Directory e tutti gli aggiornamenti ad account utente, gruppi e contatti vengono sincronizzati con il tenant di Azure Active Directory (Azure AD) dell'abbonamento a Microsoft 365.
+A seconda delle esigenze aziendali e dei requisiti tecnici, il modello di identità ibrido e la sincronizzazione della directory sono la scelta più comune per i clienti aziendali che adottano Microsoft 365. La sincronizzazione della directory consente di gestire le identità in Servizi di dominio Active Directory e tutti gli aggiornamenti agli account utente, ai gruppi e ai contatti vengono sincronizzati con il tenant di Azure Active Directory (Azure AD) della sottoscrizione di Microsoft 365.
 
 >[!Note]
->Quando gli account utente di Servizi di dominio Active Directory vengono sincronizzati per la prima volta, non vengono assegnati automaticamente una licenza di Microsoft 365 e non possono accedere ai servizi di Microsoft 365, ad esempio la posta elettronica. È innanzitutto necessario assegnare loro una posizione di utilizzo. Assegnare quindi una licenza a questi account utente, singolarmente o dinamicamente tramite l'appartenenza al gruppo.
+>Quando gli account utente di Servizi di dominio Active Directory vengono sincronizzati per la prima volta, non vengono assegnati automaticamente a una licenza Microsoft 365 e non possono accedere ai servizi Microsoft 365, ad esempio la posta elettronica. È innanzitutto necessario assegnare loro una posizione di utilizzo. Assegnare quindi una licenza a questi account utente, singolarmente o dinamicamente tramite l'appartenenza al gruppo.
 >
 
 ## <a name="authentication-for-hybrid-identity"></a>Autenticazione per l'identità ibrida
@@ -77,7 +77,7 @@ PTA fornisce una semplice convalida delle password per i servizi di autenticazio
 
 ![Autenticazione pass-through (PTA)](../media/plan-for-directory-synchronization/pta-authentication.png)
 
-PTA consente agli utenti di accedere alle risorse e alle applicazioni locali e Microsoft 365 usando l'account e la password locali. Questa configurazione convalida le password degli utenti direttamente rispetto a Servizi di dominio Active Directory locale senza archiviare gli hash delle password in Azure AD. 
+PTA consente agli utenti di accedere alle risorse e alle Microsoft 365 locali e alle applicazioni usando l'account e la password locali. Questa configurazione convalida le password degli utenti direttamente rispetto a Servizi di dominio Active Directory locale senza archiviare gli hash delle password in Azure AD. 
 
 PTA è anche per le organizzazioni con un requisito di sicurezza per applicare immediatamente gli stati degli account utente locali, i criteri password e le ore di accesso. 
   
@@ -99,42 +99,42 @@ Per altre informazioni, [vedi l'elenco di compatibilità](/azure/active-director
   
 ## <a name="ad-ds-preparation"></a>Preparazione di Servizi di dominio Active Directory
 
-Per garantire una transizione senza problemi a Microsoft 365 tramite la sincronizzazione, è necessario preparare la foresta di Servizi di dominio Active Directory prima di iniziare la distribuzione della sincronizzazione della directory di Microsoft 365.
+Per garantire una transizione senza problemi a Microsoft 365 tramite la sincronizzazione, è necessario preparare la foresta di Servizi di dominio Active Directory prima di iniziare la Microsoft 365 di sincronizzazione della directory.
   
 La preparazione della directory deve concentrarsi sulle attività seguenti:
 
 - Rimuovere gli **attributi proxyAddress** e **userPrincipalName** duplicati.
 - Aggiornare gli attributi **userPrincipalName vuoti** e non validi con **attributi userPrincipalName** validi.
-- Rimuovere i caratteri non validi e discutibile negli attributi **givenName**, surname ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses,** **mailNickname** e **userPrincipalName.** Per informazioni dettagliate sulla preparazione degli attributi, vedere Elenco degli attributi sincronizzati dallo strumento di sincronizzazione [di Azure Active Directory.](https://go.microsoft.com/fwlink/p/?LinkId=396719)
+- Rimuovere i caratteri non validi e discutibile negli attributi **givenName**, surname ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses,** **mailNickname** e **userPrincipalName.** Per informazioni dettagliate sulla preparazione degli attributi, vedere [List of attributes that are synced by the Azure Active Directory Sync Tool](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
-    > Si tratta degli stessi attributi sincronizzati da Azure AD Connect. 
+    > Questi sono gli stessi attributi che Azure AD Connessione sincronizza. 
   
 ## <a name="multi-forest-deployment-considerations"></a>Considerazioni sulla distribuzione a più foreste
 
-Per più foreste e opzioni SSO, usare [un'installazione personalizzata di Azure AD Connect.](/azure/active-directory/hybrid/how-to-connect-install-custom)
+Per più foreste e opzioni SSO, usare [un'installazione personalizzata di Azure AD Connessione](/azure/active-directory/hybrid/how-to-connect-install-custom).
   
 Se l'organizzazione dispone di più foreste per l'autenticazione (foreste di accesso), è consigliabile eseguire le operazioni seguenti:
   
 - **Valutare la possibilità di consolidare le foreste.** In generale, è necessario un maggiore sovraccarico per la gestione di più foreste. A meno che l'organizzazione non abbia vincoli di sicurezza che impongono la necessità di foreste separate, è consigliabile semplificare l'ambiente locale.
-- **Utilizzare solo nella foresta di accesso principale.** Prendere in considerazione la distribuzione di Microsoft 365 solo nella foresta di accesso principale per l'implementazione iniziale di Microsoft 365. 
+- **Utilizzare solo nella foresta di accesso principale.** Prendere in considerazione la Microsoft 365 solo nella foresta di accesso principale per l'implementazione iniziale di Microsoft 365. 
 
 Se non è possibile consolidare la distribuzione di Servizi di dominio Active Directory a più foreste o si utilizzano altri servizi directory per gestire le identità, è possibile sincronizzarli con l'aiuto di Microsoft o di un partner.
   
-Per [ulteriori informazioni, vedere Topologie per Azure AD Connect.](/azure/active-directory/hybrid/plan-connect-topologies)
+Per ulteriori informazioni, vedere [Topologies for Azure AD Connessione.](/azure/active-directory/hybrid/plan-connect-topologies)
   
 ## <a name="features-that-are-dependent-on-directory-synchronization"></a>Funzionalità che dipendono dalla sincronizzazione della directory
   
 La sincronizzazione della directory è necessaria per le caratteristiche e le funzionalità seguenti:
   
 - Azure AD Seamless Single Sign-On (SSO)
-- Coesistenza skype
-- Distribuzione ibrida di Exchange, tra cui:
+- Skype coesistenza
+- Exchange distribuzione ibrida, tra cui:
   - Elenco indirizzi globale (GAL) completamente condiviso tra l'ambiente Exchange locale e Microsoft 365.
   - Sincronizzazione delle informazioni dell'elenco indirizzi globale da sistemi di posta diversi.
-  - Possibilità di aggiungere e rimuovere utenti dalle offerte di servizi di Microsoft 365. A tale scopo, è necessario quanto segue:
-  - La sincronizzazione bidirezionale deve essere configurata durante l'installazione della sincronizzazione della directory. Per impostazione predefinita, gli strumenti di sincronizzazione della directory scrivono le informazioni della directory solo nel cloud. Quando si configura la sincronizzazione bidirezionale, si abilita la funzionalità di write-back in modo che un numero limitato di attributi dell'oggetto viene copiato dal cloud e quindi li si scrive di nuovo nel Servizio di dominio Active Directory locale. Il write-back viene anche definito modalità ibrida di Exchange. 
-  - Una distribuzione ibrida di Exchange locale
+  - Possibilità di aggiungere e rimuovere utenti da Microsoft 365 offerte di servizi. A tale scopo, è necessario quanto segue:
+  - La sincronizzazione bidirezionale deve essere configurata durante l'installazione della sincronizzazione della directory. Per impostazione predefinita, gli strumenti di sincronizzazione della directory scrivono le informazioni della directory solo nel cloud. Quando si configura la sincronizzazione bidirezionale, si abilita la funzionalità di write-back in modo che un numero limitato di attributi dell'oggetto viene copiato dal cloud e quindi li si scrive di nuovo nel Servizio di dominio Active Directory locale. Il write-back viene anche definito Exchange ibrida. 
+  - Una distribuzione ibrida Exchange locale
   - Possibilità di spostare alcune cassette postali utente in Microsoft 365 mantenendo altre cassette postali utente in locale.
   - I mittenti attendibili e i mittenti bloccati in locale vengono replicati in Microsoft 365.
   - Delega di base e funzionalità di invio per conto di posta elettronica.
