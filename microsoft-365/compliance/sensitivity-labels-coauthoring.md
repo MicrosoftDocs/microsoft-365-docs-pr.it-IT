@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332727"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796055"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
@@ -48,7 +48,7 @@ Per leggere l'annuncio sul rilascio, vedere il post di blog [Annuncio della crea
 
 Prima di abilitare l'impostazione per supportare la creazione condivisa per le app desktop di Office, è importante tenere presente che questa azione apporta modifiche ai metadati delle etichette salvati e letti dai file di Office.
 
-I metadati delle etichette includono informazioni che identificano il tenant e l'etichetta di riservatezza applicata. La modifica apportata da questa impostazione riguarda il formato e il percorso dei metadati per i file non crittografati per Word, Excel e PowerPoint. Non vengono apportate modifiche ai metadati delle etichette per i file crittografati o i messaggi di posta elettronica.
+I metadati delle etichette includono informazioni che identificano il tenant e l'etichetta di riservatezza applicata. La modifica apportata da questa impostazione riguarda il formato e posizione dei metadati per i file di Word, Excel e PowerPoint. Non hai bisogno di eseguire alcuna azione per i file o i messaggi crittografati; la modifica dei metadati per i file crittografati è compatibile con le versioni precedenti e non sono state apportate modifiche per i messaggi. Tuttavia, devi essere consapevole delle modifiche dei metadati per i file crittografati che possono essere aggiornati automaticamente ma non compatibili con le versioni precedenti.
 
 Questa modifica interessa sia i file con sono stati etichettati di recente che quelli già etichettati. Quando si usano app e servizi che supportano l'impostazione di creazione condivisa:
 - Per i file etichettati di recente, viene usato solo il nuovo formato e il percorso per i metadati delle etichette.
