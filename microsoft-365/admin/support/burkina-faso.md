@@ -19,24 +19,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296841"
 ---
-# <a name="contact-support-for-burkina-faso"></a><span data-ttu-id="a6141-103">Contattare il supporto per il Burkina Faso</span><span class="sxs-lookup"><span data-stu-id="a6141-103">Contact support for Burkina Faso</span></span>
+# <a name="contact-support-for-burkina-faso"></a><span data-ttu-id="08195-103">Contattare il supporto per il Burkina Faso</span><span class="sxs-lookup"><span data-stu-id="08195-103">Contact support for Burkina Faso</span></span>
 
-<span data-ttu-id="a6141-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="a6141-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="08195-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="08195-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a6141-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="a6141-105">Phone number</span></span>
-<span data-ttu-id="a6141-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="a6141-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="08195-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="08195-105">Phone number</span></span>
+<span data-ttu-id="08195-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="08195-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a6141-107">Ore</span><span class="sxs-lookup"><span data-stu-id="a6141-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a6141-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="a6141-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="08195-107">Ore</span><span class="sxs-lookup"><span data-stu-id="08195-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="08195-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="08195-108">Billing Support:</span></span>
 
-<span data-ttu-id="a6141-109">Francese: Mon-Fri dalle 8.00 alle 16.00</span><span class="sxs-lookup"><span data-stu-id="a6141-109">French: Mon-Fri 8AM-4 PM</span></span>
+<span data-ttu-id="08195-109">Francese: Mon-Fri dalle 8.00 alle 16.00</span><span class="sxs-lookup"><span data-stu-id="08195-109">French: Mon-Fri 8AM-4 PM</span></span>
 
-<span data-ttu-id="a6141-110">Inglese: Mon-Fri dalle 8.00 alle 16.00</span><span class="sxs-lookup"><span data-stu-id="a6141-110">English: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="08195-110">Inglese: Mon-Fri dalle 8.00 alle 16.00</span><span class="sxs-lookup"><span data-stu-id="08195-110">English: Mon-Fri 8 AM-4 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a6141-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="a6141-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="08195-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="08195-111">Technical Support:</span></span>
 
-<span data-ttu-id="a6141-112">Francese: Mon-Fri dalle 7.00 alle 20.00</span><span class="sxs-lookup"><span data-stu-id="a6141-112">French: Mon-Fri 7 AM-8 PM</span></span>
+<span data-ttu-id="08195-112">Francese: Mon-Fri dalle 7.00 alle 20.00</span><span class="sxs-lookup"><span data-stu-id="08195-112">French: Mon-Fri 7 AM-8 PM</span></span>
 
-<span data-ttu-id="a6141-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="a6141-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="08195-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="08195-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="a6141-114">Si applicano i costi delle chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="a6141-114">International call charges apply</span></span>
+<span data-ttu-id="08195-114">Si applicano i costi delle chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="08195-114">International call charges apply</span></span>

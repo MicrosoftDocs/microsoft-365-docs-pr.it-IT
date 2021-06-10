@@ -19,18 +19,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296540"
 ---
-# <a name="contact-support-for-belize"></a><span data-ttu-id="cc972-103">Contattare il supporto per il Belize</span><span class="sxs-lookup"><span data-stu-id="cc972-103">Contact support for Belize</span></span>
+# <a name="contact-support-for-belize"></a><span data-ttu-id="366a1-103">Contattare il supporto per il Belize</span><span class="sxs-lookup"><span data-stu-id="366a1-103">Contact support for Belize</span></span>
 
-<span data-ttu-id="cc972-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="cc972-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="366a1-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="366a1-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="cc972-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="cc972-105">Phone number</span></span>
-<span data-ttu-id="cc972-106">001 212 497 6305</span><span class="sxs-lookup"><span data-stu-id="cc972-106">001 212 497 6305</span></span>
+## <a name="phone-number"></a><span data-ttu-id="366a1-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="366a1-105">Phone number</span></span>
+<span data-ttu-id="366a1-106">001 212 497 6305</span><span class="sxs-lookup"><span data-stu-id="366a1-106">001 212 497 6305</span></span>
 
-## <a name="hours"></a><span data-ttu-id="cc972-107">Ore</span><span class="sxs-lookup"><span data-stu-id="cc972-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="cc972-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="cc972-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="366a1-107">Ore</span><span class="sxs-lookup"><span data-stu-id="366a1-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="366a1-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="366a1-108">Billing Support:</span></span>
 
-<span data-ttu-id="cc972-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="cc972-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="366a1-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="366a1-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="cc972-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="cc972-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="366a1-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="366a1-110">Technical Support:</span></span>
 
-<span data-ttu-id="cc972-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="cc972-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="366a1-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="366a1-111">English: 24 hours a day, 7 days a week</span></span>
