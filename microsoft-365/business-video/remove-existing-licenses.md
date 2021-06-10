@@ -1,5 +1,5 @@
 ---
-title: Rimuovere licenze esistenti
+title: Rimuovere le licenze esistenti
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -28,15 +28,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51064594"
 ---
-# <a name="remove-existing-licenses"></a><span data-ttu-id="ca846-103">Rimuovere licenze esistenti</span><span class="sxs-lookup"><span data-stu-id="ca846-103">Remove existing licenses</span></span>
+# <a name="remove-existing-licenses"></a><span data-ttu-id="f01cf-103">Rimuovere le licenze esistenti</span><span class="sxs-lookup"><span data-stu-id="f01cf-103">Remove existing licenses</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r?autoplay=false]
 
-<span data-ttu-id="ca846-104">Se si dispone di un numero di licenze superiore a quello necessario per l'abbonamento, è possibile ridurre il numero di licenze e i costi mensili.</span><span class="sxs-lookup"><span data-stu-id="ca846-104">If you have more licenses than you need for your subscription, you can reduce the number of licenses and your monthly costs.</span></span> 
+<span data-ttu-id="f01cf-104">Se si dispone di un numero di licenze superiore a quello necessario per l'abbonamento, è possibile ridurre il numero di licenze e i costi mensili.</span><span class="sxs-lookup"><span data-stu-id="f01cf-104">If you have more licenses than you need for your subscription, you can reduce the number of licenses and your monthly costs.</span></span> 
 
-## <a name="try-it"></a><span data-ttu-id="ca846-105">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="ca846-105">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="f01cf-105">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="f01cf-105">Try it!</span></span>
  
-1. <span data-ttu-id="ca846-106">[Nell'interfaccia di amministrazione](https://admin.microsoft.com)scegliere **Fatturazione**  >  **prodotti** e quindi selezionare l'abbonamento.</span><span class="sxs-lookup"><span data-stu-id="ca846-106">In the [admin center](https://admin.microsoft.com), choose **Billing** > **Your products**, and then select your subscription.</span></span>
-1. <span data-ttu-id="ca846-107">Scegliere **Rimuovi licenze**.</span><span class="sxs-lookup"><span data-stu-id="ca846-107">Choose **Remove licenses**.</span></span>
-1. <span data-ttu-id="ca846-108">Usa la freccia giù per ridurre il numero di licenze.</span><span class="sxs-lookup"><span data-stu-id="ca846-108">Use the down arrow to reduce the number of licenses.</span></span>
-1. <span data-ttu-id="ca846-109">Selezionare **Salva** e quindi chiudere la finestra.</span><span class="sxs-lookup"><span data-stu-id="ca846-109">Select **Save**, and then close the window.</span></span>
+1. <span data-ttu-id="f01cf-106">[Nell'interfaccia di amministrazione](https://admin.microsoft.com)scegliere **Fatturazione**  >  **prodotti** e quindi selezionare l'abbonamento.</span><span class="sxs-lookup"><span data-stu-id="f01cf-106">In the [admin center](https://admin.microsoft.com), choose **Billing** > **Your products**, and then select your subscription.</span></span>
+1. <span data-ttu-id="f01cf-107">Scegliere **Rimuovi licenze**.</span><span class="sxs-lookup"><span data-stu-id="f01cf-107">Choose **Remove licenses**.</span></span>
+1. <span data-ttu-id="f01cf-108">Usa la freccia giù per ridurre il numero di licenze.</span><span class="sxs-lookup"><span data-stu-id="f01cf-108">Use the down arrow to reduce the number of licenses.</span></span>
+1. <span data-ttu-id="f01cf-109">Selezionare **Salva** e quindi chiudere la finestra.</span><span class="sxs-lookup"><span data-stu-id="f01cf-109">Select **Save**, and then close the window.</span></span>

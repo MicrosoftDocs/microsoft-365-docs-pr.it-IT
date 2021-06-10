@@ -27,18 +27,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51064701"
 ---
-# <a name="whats-new-in-microsoft-365-security"></a><span data-ttu-id="48d91-104">Novità di Sicurezza Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="48d91-104">What's new in Microsoft 365 Security</span></span>
+# <a name="whats-new-in-microsoft-365-security"></a><span data-ttu-id="79382-104">Novità di Sicurezza Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="79382-104">What's new in Microsoft 365 Security</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="48d91-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="48d91-105">**Applies to:**</span></span>
-- <span data-ttu-id="48d91-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="48d91-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="79382-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="79382-105">**Applies to:**</span></span>
+- <span data-ttu-id="79382-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="79382-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="48d91-107">Questo argomento descrive le funzionalità disponibili a livello generale nella versione più recente di Sicurezza Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="48d91-107">This topic will cover capabilities that are generally available (GA) in the latest release of Microsoft 365 Security.</span></span> 
+<span data-ttu-id="79382-107">Questo argomento descrive le funzionalità disponibili a livello generale nella versione più recente di Sicurezza Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="79382-107">This topic will cover capabilities that are generally available (GA) in the latest release of Microsoft 365 Security.</span></span> 
 
-<span data-ttu-id="48d91-108">Per altre informazioni sulle funzionalità di anteprima, vedere [Funzionalità di anteprima](preview.md)</span><span class="sxs-lookup"><span data-stu-id="48d91-108">For more information on preview features, see [Preview features](preview.md)</span></span>
+<span data-ttu-id="79382-108">Per altre informazioni sulle funzionalità di anteprima, vedere [Funzionalità di anteprima](preview.md)</span><span class="sxs-lookup"><span data-stu-id="79382-108">For more information on preview features, see [Preview features](preview.md)</span></span>
 
 
