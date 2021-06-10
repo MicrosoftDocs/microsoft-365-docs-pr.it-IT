@@ -1,5 +1,5 @@
 ---
-title: Analizzare i problemi di integrità degli agenti
+title: Esaminare i problemi di integrità dell'agente
 description: Informazioni sui valori restituiti quando si esegue il comando di integrità mdatp
 keywords: integrità mdatp, comando, integrità, stato, comando, stato di onboarding
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52281177"
 ---
-# <a name="investigate-agent-health-issues"></a>Analizzare i problemi di integrità degli agenti
+# <a name="investigate-agent-health-issues"></a>Esaminare i problemi di integrità dell'agente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: Risorse utili per Microsoft Defender per endpoint
 description: Accedere a risorse utili, ad esempio collegamenti a blog e altre risorse correlate a Microsoft Defender per Endpoint
-keywords: Microsoft Defender Security Center, breve prodotto, breve, funzionalità, licenze
+keywords: Microsoft Defender Security Center, breve, breve, funzionalità, licenze
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 727576ab75d77d12be0595c081586f411887da49
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165442"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843068"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>Risorse utili per Microsoft Defender per endpoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "51165442"
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -37,7 +37,7 @@ ms.locfileid: "51165442"
 Accedi a risorse utili, ad esempio collegamenti a blog e altre risorse correlate a Microsoft Defender per Endpoint.
 
 ## <a name="endpoint-protection-platform"></a>Piattaforma endpoint protection
-- [Punteggio superiore nei test del settore](https://docs.microsoft.com/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
+- [Punteggio superiore nei test del settore](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
 
 - [Inside out: informazioni sulle tecnologie avanzate alla base della protezione di Defender for Endpoint di nuova generazione](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 
@@ -61,4 +61,4 @@ Accedi a risorse utili, ad esempio collegamenti a blog e altre risorse correlate
 
 - [In che modo l'automazione apporta valore ai team di sicurezza](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 
-- [Risolvere i falsi positivi/negativi in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint](defender-endpoint-false-positives-negatives.md)

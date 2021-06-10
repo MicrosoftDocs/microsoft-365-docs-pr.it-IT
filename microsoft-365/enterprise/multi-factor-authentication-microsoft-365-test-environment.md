@@ -1,5 +1,5 @@
 ---
-title: Autenticazione a più fattori dell'ambiente di testing di Microsoft 365 per le aziende
+title: Microsoft 365 per l'autenticazione a più fattori dell'ambiente di testing aziendale
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,7 +15,7 @@ ms.custom:
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
-description: Configurare l'autenticazione a più fattori utilizzando i messaggi di testo inviati a uno smart phone nell'ambiente di testing di Microsoft 365 per le aziende.
+description: Configurare l'autenticazione a più fattori utilizzando i messaggi di testo inviati a uno smart phone nel Microsoft 365 per l'ambiente di testing aziendale.
 ms.openlocfilehash: aeb8940a9499909b8c568d1230f9aa45aee07b3d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,27 +23,27 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923757"
 ---
-# <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 per le aziende
+# <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing Microsoft 365 per l'organizzazione
 
-*Questa guida al laboratorio di testing può essere usata sia per gli ambienti di testing di Microsoft 365 per le aziende che per gli ambienti di testing di Office 365 Enterprise.*
+*Questa guida al laboratorio di testing può essere usata sia per gli ambienti Microsoft 365 aziendali che per Office 365 Enterprise test.*
 
-Per un ulteriore livello di sicurezza per l'accesso a Microsoft 365 o a qualsiasi servizio o applicazione che utilizza il tenant di Azure AD per la sottoscrizione, è possibile abilitare l'autenticazione a più fattori di Azure AD, che richiede più di un nome utente e una password per verificare un account.
+Per un ulteriore livello di sicurezza per l'accesso a Microsoft 365 o a qualsiasi servizio o applicazione che usa il tenant di Azure AD per la sottoscrizione, è possibile abilitare l'autenticazione a più fattori di Azure AD, che richiede più di un nome utente e una password per verificare un account.
 
 Con l'autenticazione a più fattori, gli utenti devono confermare una chiamata telefonica, digitare un codice di verifica inviato in un SMS o verificare l'autenticazione con un'app sui propri smartphone dopo aver immesso correttamente le password. Possono accedere solo dopo che questo secondo fattore di autenticazione è soddisfatto.
   
 In questo articolo viene descritto come abilitare e testare l'autenticazione basata su SMS per un account utente specifico.
   
-La configurazione dell'autenticazione a più fattori per un account nell'ambiente di testing di Microsoft 365 per le aziende prevede due fasi e una terza fase facoltativa:
-- [Fase 1: creare l'ambiente di testing di Microsoft 365 per le aziende](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+La configurazione dell'autenticazione a più fattori per un account nell'ambiente di testing Microsoft 365 enterprise prevede due fasi e una terza fase facoltativa:
+- [Fase 1: creare l'ambiente di testing Microsoft 365 per le aziende](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fase 2: Abilitare e testare l'autenticazione a più fattori per l'account User 2](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
 - [Fase 3: abilitare e testare l'autenticazione a più fattori con un criterio di accesso condizionale](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Per una mappa visiva a tutti gli articoli nello stack guida del laboratorio di testing di Microsoft 365 per le aziende, passare a [Microsoft 365 per enterprise Test Lab Guide Stack.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+> Per una mappa visiva a tutti gli articoli dello stack Microsoft 365 per enterprise Test Lab Guide, passare a [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 per le aziende
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing Microsoft 365 per le aziende
 
 Se si desidera solo testare l'autenticazione a più fattori in modo leggero con i requisiti minimi, seguire le istruzioni in [Configurazione di base leggera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -56,7 +56,7 @@ Se si desidera testare l'autenticazione a più fattori in un'organizzazione simu
 
 Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel modo seguente:
   
-1. Aprire un'istanza privata separata del browser, passare all'interfaccia di amministrazione di Microsoft 365 ( ) e quindi accedere [https://portal.microsoft.com](https://portal.microsoft.com) con l'account di amministratore globale.
+1. Apri un'istanza privata separata del browser, passa all'interfaccia di amministrazione di Microsoft 365 ( ) e quindi accedi [https://portal.microsoft.com](https://portal.microsoft.com) con l'account amministratore globale.
     
 2. Nel riquadro di spostamento sinistro selezionare **Utenti**  >  **Utenti attivi**.
     
@@ -70,7 +70,7 @@ Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel mo
     
 7. Nella finestra **di dialogo** Aggiornamenti riusciti selezionare **Chiudi**.
     
-8. Nella scheda Interfaccia di amministrazione di **Microsoft 365** selezionare l'icona dell'account utente in alto a destra e quindi **selezionare Disconnetto**.
+8. Nella scheda **Microsoft 365 interfaccia di amministrazione** selezionare l'icona dell'account utente in alto a destra e quindi selezionare **Disconnetto**.
     
 9. Chiudere l'istanza del browser.
    
@@ -78,7 +78,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 1. Apri una nuova istanza privata del browser.
     
-2. Accedere all'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com) e accedere con il nome account utente 2 e la password.
+2. Accedere [all'Microsoft 365 di amministrazione](https://admin.microsoft.com) e accedere con il nome account utente 2 e la password.
     
 3. Dopo l'accesso, viene richiesto di configurare l'account per ulteriori informazioni. Selezionare **Avanti**.
     
@@ -98,17 +98,17 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
 8. Se è la prima volta che si accede con l'account User 2, viene richiesto di modificare la password. Immettere la password originale e una nuova password due volte, quindi selezionare **Aggiorna password e accedi.** Annotare nome e password in una posizione sicura.
     
-    Dovrebbe essere visualizzato il portale di Office per l'utente 2 **nella Microsoft Office Home** del browser.
+    Verrà visualizzato il portale Office per l'utente 2 **nella Microsoft Office Home** del browser.
 
 ## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>Fase 3: abilitare e testare l'autenticazione a più fattori con un criterio di accesso condizionale
 
-*Questa fase può essere utilizzata solo per un ambiente di testing di Microsoft 365 per le aziende.*
+*Questa fase può essere utilizzata solo per un ambiente di Microsoft 365 per l'ambiente di testing aziendale.*
 
 In questa fase, si abilita l'autenticazione a più fattori per l'account Utente 3 utilizzando un gruppo e un criterio di accesso condizionale.
 
 Successivamente, crea un nuovo gruppo denominato MFAUsers e aggiungi l'account User 3.
 
-1. Nella scheda Interfaccia di amministrazione di **Microsoft 365** selezionare **Gruppi** nel riquadro di spostamento sinistro e **quindi** gruppi .
+1. Nella scheda **Microsoft 365 dell'interfaccia** di amministrazione selezionare **Gruppi** nel riquadro di spostamento sinistro e quindi selezionare **Gruppi**.
 2. Selezionare **Aggiungi un gruppo**.
 3. Nel riquadro **Scegliere un tipo di gruppo** selezionare **Sicurezza** e quindi fare clic su **Avanti.**
 4. Nel riquadro **Configura le nozioni di** base selezionare Crea **gruppo** e quindi fare clic su **Chiudi.**
@@ -120,7 +120,7 @@ Successivamente, crea un nuovo gruppo denominato MFAUsers e aggiungi l'account U
 Creare quindi un criterio di accesso condizionale per richiedere l'autenticazione a più fattori per i membri del gruppo MFAUsers.
 
 1. In una nuova scheda del browser passare a [https://portal.azure.com](https://portal.azure.com) .
-2. Selezionare **Azure Active Directory**  >  **Security** Conditional  >  **Access**.
+2. Selezionare **Azure Active Directory**  >  **Sicurezza**  >  **accesso condizionale**.
 3. Nel riquadro **Accesso condizionale - Criteri** selezionare Nuovo **criterio.**
 4. Nel riquadro **Nuovo** immettere **MFA per gli account utente** nella **casella** Nome.
 5. Nella sezione **Assegnazioni** selezionare **Utenti e gruppi**.
@@ -129,7 +129,7 @@ Creare quindi un criterio di accesso condizionale per richiedere l'autenticazion
 8. Nella sezione **Controlli di** accesso del **riquadro Nuovo** selezionare **Concedi**.
 9. Nel riquadro **Concedi** selezionare **Richiedi autenticazione a più fattori** e quindi selezionare **Seleziona.**
 10. Nel riquadro **Nuovo** selezionare **Attivato** per **Abilita criterio** e quindi selezionare **Crea**.
-11. Chiudere il **portale di Azure e** le schede dell'interfaccia di amministrazione di Microsoft **365.**
+11. Chiudere il **portale di Azure e** Microsoft 365 schede **dell'interfaccia di amministrazione.**
 
 Per testare questo criterio, disconnettersi e accedere con l'account Utente 3. Dovrebbe essere richiesto di configurare l'autenticazione a più fattori. Ciò dimostra che viene applicato il criterio MFAUsers.
 

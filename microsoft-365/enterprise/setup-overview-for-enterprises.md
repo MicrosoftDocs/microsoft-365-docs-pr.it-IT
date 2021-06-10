@@ -34,19 +34,19 @@ Sei pronto per distribuire Microsoft 365 Enterprise, integrarlo con l'infrastrut
 
 In questo articolo vengono descritte due opzioni di distribuzione, indipendentemente dal fatto che si desideri o si desideri eseguire questa operazione in modo personalizzato. In ogni caso, Microsoft fornisce un percorso guidato da seguire per il successo della distribuzione.
 
-## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Processo di installazione guidata di Microsoft 365 Enterprise con FastTrack
+## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Processo di Microsoft 365 Enterprise guidata con FastTrack
 
 **[FastTrack per Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** è il metodo migliore per la distribuzione di Microsoft 365. Illustra i passaggi per le configurazioni di distribuzione più comuni e può offrire una risposta alle domande lungo il percorso. 
 
-Per accedere a una serie di guide all'installazione, accedere all'abbonamento a Microsoft 365 e quindi passare a [Guida all'installazione](https://aka.ms/o365fasttrack).
+Per accedere a una serie di guide all'installazione, accedere all'Microsoft 365 e quindi passare a [Guida all'installazione.](https://aka.ms/o365fasttrack)
 
 >[!Note]
 >È inoltre possibile ottenere assistenza da un [partner Microsoft.](https://www.microsoft.com/solution-providers/home)
 >
 
-## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Distribuzione guidata fai-da-te di Microsoft 365 Enterprise
+## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Distribuzione guidata fai da te di Microsoft 365 Enterprise
 
-La distribuzione di Microsoft 365 Enterprise in modo personalizzato richiede l'esecuzione di ricerche dettagliate per prendere le decisioni di progettazione che semplificano la configurazione dei servizi di Microsoft 365 e l'adozione da parte degli utenti. Iniziare la pianificazione [qui](get-your-organization-ready-for-office-365.md).
+La distribuzione Microsoft 365 Enterprise in modo personalizzato richiede l'esecuzione di ricerche dettagliate per prendere le decisioni di progettazione che semplificano Microsoft 365 configurazione dei servizi e l'adozione da parte degli utenti. Iniziare la pianificazione [qui](get-your-organization-ready-for-office-365.md).
 
 Per distribuire Microsoft 365 Enterprise da soli dopo aver completato la pianificazione, questi sono i passaggi consigliati.
 
@@ -56,7 +56,7 @@ Per distribuire Microsoft 365 Enterprise da soli dopo aver completato la pianifi
  
 2. [Configurare le identità](protect-your-global-administrator-accounts.md)
 
-   Include la determinazione di un modello di identità (solo cloud o ibrido) e per l'identità ibrida, la configurazione della sincronizzazione della directory tra Servizi di dominio Active Directory locale e l'abbonamento a Microsoft 365.
+   Include la determinazione di un modello di identità (solo cloud o ibrido) e per l'identità ibrida, la configurazione della sincronizzazione della directory tra Servizi di dominio Active Directory locale e la sottoscrizione Microsoft 365 locale.
 
 3. [Implementare la sicurezza](/office365/securitycompliance/security-roadmap)
 
@@ -64,7 +64,7 @@ Per distribuire Microsoft 365 Enterprise da soli dopo aver completato la pianifi
  
 4. [Distribuire il software client](/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Include la distribuzione di Microsoft 365 Apps for enterprise (in precedenza denominata Office 365 ProPlus), la versione aggiornata nel cloud e sempre aggiornata della famiglia di prodotti Office (Word, Excel, PowerPoint e altri) nei dispositivi. Ogni licenza client di Microsoft 365 include una licenza per Microsoft 365 Apps for enterprise.
+   Include la distribuzione di Microsoft 365 Apps for enterprise (in precedenza denominato Office 365 ProPlus), la versione aggiornata nel cloud e sempre aggiornata della famiglia di prodotti Office (Word, Excel, PowerPoint e altri) nei dispositivi. Ogni Microsoft 365 client include una licenza per Microsoft 365 Apps for enterprise.
  
 5. [Configurare la gestione dei dispositivi mobili](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
@@ -72,13 +72,13 @@ Per distribuire Microsoft 365 Enterprise da soli dopo aver completato la pianifi
  
 6. [Configurare servizi e applicazioni](configure-services-and-applications.md)
 
-   Include informazioni sulla migrazione dei dati e collegamenti ad articoli introduttivi sulle principali app di produttività di Microsoft 365, ad esempio Exchange Online, SharePoint Online e Teams.
+   Include informazioni sulla migrazione dei dati e collegamenti ad articoli introduttivi sulle principali app di produttività di Microsoft 365 come Exchange Online, SharePoint Online e Teams.
  
 7. [Formazione degli utenti](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-   Include brevi video che consentono agli utenti di ottenere rapidamente il massimo da Microsoft 365.
+   Include brevi video che consentono agli utenti di ottenere il massimo Microsoft 365 rapidamente.
  
 
 >[!Note]
->Questi passaggi sono anche per le aziende [e le organizzazioni no profit](https://go.microsoft.com/fwlink/?LinkId=627221) che desiderano iniziare con una distribuzione personalizzata di Microsoft 365 Enterprise. 
+>Questi passaggi sono anche per le aziende [e le organizzazioni no](https://go.microsoft.com/fwlink/?LinkId=627221) profit che vogliono iniziare con una distribuzione personalizzata di Microsoft 365 Enterprise. 
 >

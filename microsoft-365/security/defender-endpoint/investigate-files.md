@@ -117,4 +117,4 @@ Nella **scheda Nomi** file sono elencati tutti i nomi che il file è stato osser
 - [Analizzare un indirizzo IP associato a un avviso di Microsoft Defender for Endpoint](investigate-ip.md)
 - [Analizzare un dominio associato a un avviso di Microsoft Defender for Endpoint](investigate-domain.md)
 - [Analizzare un account utente in Microsoft Defender for Endpoint](investigate-user.md)
-- [Eseguire azioni di risposta su un file](respond-file-alerts.md)
+- [Intraprendere azioni di risposta su un file](respond-file-alerts.md)

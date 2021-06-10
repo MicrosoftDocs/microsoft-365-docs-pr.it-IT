@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 337eb28b7e4b4a7c57b63ff45fb1cea81db43604
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 87078bb7bfc6b38788fea2a6a4c3c9108be1d5b4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068205"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842963"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Abilitare l'integrazione SIEM in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
@@ -54,18 +54,18 @@ Abilita l'integrazione delle informazioni di sicurezza e della gestione degli ev
 ## <a name="enabling-siem-integration"></a>Abilitazione dell'integrazione SIEM 
 1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **SIEM.**
 
-    ![Immagine dell'integrazione SIEM dal menu Impostazioni1](images/enable_siem.png)
+    ![Immagine dell'integrazione SIEM Impostazioni menu1](images/enable_siem.png)
 
     >[!TIP]
     >Se si verifica un errore durante il tentativo di abilitare l'applicazione connettore SIEM, controllare le impostazioni di blocco popup del browser. È possibile che la nuova finestra venga aperta quando si abilita la funzionalità. 
 
-2. Selezionare **Abilita integrazione SIEM.** In questo modo viene attivata la sezione dei dettagli di accesso del connettore **SIEM** con valori precompilato e viene creata un'applicazione nel tenant di Azure Active Directory (Azure AD).
+2. Selezionare **Abilita integrazione SIEM.** In questo modo viene attivata la sezione dei dettagli di accesso al connettore **SIEM** con valori precompilato e viene creata un'applicazione nel tenant di Azure Active Directory (Azure AD).
 
     > [!WARNING]
     >Il segreto client viene visualizzato una sola volta. Assicurarsi di conservare una copia in un luogo sicuro.<br>
      
 
-    ![Immagine dell'integrazione SIEM dal menu Impostazioni2](images/siem_details.png)
+    ![Immagine dell'integrazione SIEM Impostazioni menu2](images/siem_details.png)
 
 3. Scegliere il tipo di SIEM utilizzato nell'organizzazione.
 
@@ -83,7 +83,7 @@ Abilita l'integrazione delle informazioni di sicurezza e della gestione degli ev
    > [!NOTE]
    > Dovrai generare un nuovo token Refresh ogni 90 giorni. 
 
-6. Segui le istruzioni per la [creazione di una registrazione dell'app Azure AD](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) per Microsoft Defender per Endpoint e assegna le autorizzazioni corrette per leggere gli avvisi.
+6. Segui le istruzioni per la [creazione di una registrazione dell'app Azure AD](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) per Microsoft Defender per Endpoint e assegna le autorizzazioni corrette per leggere gli avvisi.
 
 Ora puoi procedere con la configurazione della soluzione SIEM o la connessione all'API REST dei rilevamenti tramite l'accesso programmatico. Dovrai usare i token durante la configurazione della soluzione SIEM per consentirla di ricevere i rilevamenti da Microsoft Defender Security Center.
 

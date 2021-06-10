@@ -34,25 +34,25 @@ Se è stato integrato Servizi di dominio Active Directory locale con Azure Activ
   
 ## <a name="view-directory-synchronization-status"></a>Visualizzare lo stato della sincronizzazione della directory
 
-- Accedi all'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com) e scegli **Stato DirSync** nella home page.
+- Accedi all'interfaccia [Microsoft 365 e](https://admin.microsoft.com) scegli **Stato DirSync** nella home page.
 - In alternativa, è possibile passare a **Utenti** Utenti attivi e nella pagina \>  **Utenti** attivi scegliere **Altro** \> **Sincronizzazione directory.** Nel riquadro **Sincronizzazione directory** scegliere **Vai a Gestione DirSync.**
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Informazioni nella pagina Gestisci sincronizzazione directory
 
 Nella tabella seguente sono elencate le funzionalità su cui è possibile ottenere informazioni nella pagina.
   
-Se si verifica un problema con la sincronizzazione della directory, gli errori sono elencati anche in questa pagina. Per ulteriori informazioni sui diversi errori che possono verificarsi, vedere Identificare gli errori di [sincronizzazione della directory in Microsoft 365.](identify-directory-synchronization-errors.md)
+Se si verifica un problema con la sincronizzazione della directory, gli errori sono elencati anche in questa pagina. Per ulteriori informazioni sui diversi errori che possono verificarsi, vedere Identificare gli errori di [sincronizzazione della directory in Microsoft 365](identify-directory-synchronization-errors.md).
   
 |Elemento|Scopo|
 |:-----|:-----|
-|**Domini verificati** | Numero di domini nel tenant di Microsoft 365 di cui si è verificato il proprio proprietario. |
+|**Domini verificati** | Numero di domini nel Microsoft 365 tenant verificato di cui si è proprietari. |
 |**Domini non verificati** | Domini aggiunti, ma non verificati. |
 |**Sincronizzazione directory abilitata** |Vero o Falso. Specifica se è stata abilitata la sincronizzazione della directory. |
 |**Sincronizzazione directory più recente** | Data e ora dell'ultima esecuzione della sincronizzazione della directory. Se l'ultima sincronizzazione è stata più di tre giorni fa, verranno visualizzati un avviso e un collegamento a uno strumento di risoluzione dei problemi. |
-|**Sincronizzazione password abilitata** | Vero o Falso. Specifica se si dispone della sincronizzazione dell'hash delle password tra il tenant locale e il tenant di Microsoft 365. |
+|**Sincronizzazione password abilitata** | Vero o Falso. Specifica se si dispone della sincronizzazione dell'hash delle password tra il tenant locale e Microsoft 365 tenant. |
 |**Ultima sincronizzazione password** | Data e ora dell'ultima esecuzione della sincronizzazione dell'hash delle password. Se l'ultima sincronizzazione è stata più di tre giorni fa, verranno visualizzati un avviso e un collegamento a uno strumento di risoluzione dei problemi. |
-|**Versione client di sincronizzazione della directory** | Contiene un collegamento di download se è stata rilasciata una nuova versione di Azure AD Connect. |
-|**Account del servizio di sincronizzazione della directory** | Visualizza il nome dell'account del servizio di sincronizzazione della directory di Microsoft 365. |
+|**Versione client di sincronizzazione della directory** | Contiene un collegamento di download se è stata rilasciata una nuova Connessione di Azure AD. |
+|**Account del servizio di sincronizzazione della directory** | Visualizza il nome dell'account Microsoft 365 servizio di sincronizzazione della directory. |
 |||
 
 ## <a name="monitor-synchronization-health"></a>Monitorare l'integrità della sincronizzazione

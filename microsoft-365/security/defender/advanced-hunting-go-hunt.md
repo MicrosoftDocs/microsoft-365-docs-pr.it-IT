@@ -109,7 +109,7 @@ Oltre a modificare la query per ottenere risultati più rilevanti, è anche poss
 - [Creare una regola di rilevamento personalizzata](custom-detection-rules.md)
 
 >[!NOTE]
->Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender](m365d-enable.md) per cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in [Migrate advanced hunting queries from Microsoft Defender for Endpoint.](advanced-hunting-migrate-from-mde.md)
+>Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender per](m365d-enable.md) cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in Eseguire la migrazione di query di ricerca avanzate da [Microsoft Defender per Endpoint.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)

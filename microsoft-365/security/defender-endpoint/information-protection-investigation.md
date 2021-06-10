@@ -1,5 +1,5 @@
 ---
-title: Usare le etichette di riservatezza per definire la priorità della risposta agli eventi imprevisti
+title: Usare le etichette di riservatezza per classificare in ordine di priorità le risposte agli incidenti
 description: Informazioni su come usare le etichette di riservatezza per definire la priorità e analizzare gli eventi imprevisti
 keywords: informazioni, protezione, dati, perdita, prevenzione,etichette, dlp, incidente, indagare, indagine
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51186126"
 ---
-# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Usare le etichette di riservatezza per definire la priorità della risposta agli eventi imprevisti  
+# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Usare le etichette di riservatezza per classificare in ordine di priorità le risposte agli incidenti  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ Informazioni su come usare le etichette di riservatezza dei dati per definire la
 >[!NOTE]
 >Vengono rilevate etichette per Windows 10 versione 1809 o successiva.
 
-1. In Microsoft Defender Security Center seleziona **Eventi imprevisti.** 
+1. In Microsoft Defender Security Center selezionare **Eventi imprevisti**. 
 
 2. Scorrere verso destra per visualizzare la **colonna Riservatezza dati.** Questa colonna riflette le etichette di riservatezza che sono state osservate nei dispositivi correlati agli eventi imprevisti, fornendo un'indicazione se i file sensibili potrebbero essere influenzati dall'incidente.
 

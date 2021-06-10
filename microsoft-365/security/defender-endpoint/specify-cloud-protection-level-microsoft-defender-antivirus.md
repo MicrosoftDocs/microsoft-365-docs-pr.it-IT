@@ -92,5 +92,5 @@ Puoi specificare il livello di protezione offerto dal cloud offerto da Antivirus
 ## <a name="related-articles"></a>Articoli correlati
 
 - [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Abilitare la protezione basata sul cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [Abilitare la protezione fornita dal cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Come creare e distribuire criteri antimalware: servizio di protezione cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

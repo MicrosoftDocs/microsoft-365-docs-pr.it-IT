@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Seguire questa procedura per eliminare l'account utente di un ex dipendente.
-ms.openlocfilehash: e9f87f68650394a81c735346db929bf592e91d18
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779832"
+ms.locfileid: "52782382"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Passaggio 7 - Eliminare l'account utente di un ex dipendente
 
@@ -84,8 +84,6 @@ Le operazioni precedenti possono essere eseguite in tre posizioni:
   
  **Metodo più rapido per utenti con presenza locale e nel data center di Exchange**: terminare la sessione con l'interfaccia di amministrazione di Exchange o di Azure Active Directory E apportare le modifiche anche nell'ambiente locale. In caso contrario, le modifiche nell'interfaccia di amministrazione di Exchange o di Azure Active Directory verranno sovrascritte da DirSync.
   
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Ripristinare un utente](restore-user.md)
-
-[Reimpostare password](reset-passwords.md)
+[Ripristinare un utente](restore-user.md) (articolo)/ [Reimpostare le password](reset-passwords.md) (articolo)

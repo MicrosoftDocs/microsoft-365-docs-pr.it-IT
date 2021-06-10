@@ -20,7 +20,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: In questo articolo vengono descritti i siti delle opzioni di spostamento con Pubblicazione SharePoint abilitata in SharePoint Online.
+description: In questo articolo vengono descritti i siti delle opzioni di spostamento SharePoint la pubblicazione abilitata in SharePoint Online.
 ms.openlocfilehash: b5989bf26ebf7bb1452f983af89a6e6739821d53
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,14 +30,14 @@ ms.locfileid: "50923625"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opzioni di spostamento per SharePoint Online
 
-In questo articolo vengono descritti i siti delle opzioni di spostamento con Pubblicazione SharePoint abilitata in SharePoint Online. La scelta e la configurazione dell'esplorazione influiscono in modo significativo sulle prestazioni e sulla scalabilità dei siti in SharePoint Online. Il modello di sito Pubblicazione SharePoint deve essere utilizzato solo se necessario per un portale centralizzato e la caratteristica di pubblicazione deve essere abilitata solo in siti specifici e solo quando assolutamente necessaria perché può influire sulle prestazioni se utilizzata in modo non corretto.
+In questo articolo vengono descritti i siti delle opzioni di spostamento SharePoint la pubblicazione abilitata in SharePoint Online. La scelta e la configurazione dell'esplorazione influiscono in modo significativo sulle prestazioni e sulla scalabilità dei siti in SharePoint Online. Il modello di sito Pubblicazione SharePoint deve essere utilizzato solo se necessario per un portale centralizzato e la caratteristica di pubblicazione deve essere abilitata solo in siti specifici e solo se assolutamente necessaria perché può influire sulle prestazioni se utilizzata in modo non corretto.
 
 >[!NOTE]
->Se si usano opzioni di spostamento moderne di SharePoint, ad esempio menu mega, spostamento a catena o spostamento hub, questo articolo non si applica al sito. Le architetture moderne dei siti di SharePoint sfruttano una gerarchia di siti più appiattita e un modello hub-and-spoke. In questo modo è possibile ottenere molti scenari che NON richiedono l'utilizzo della funzionalità Pubblicazione SharePoint.
+>Se si usano opzioni di spostamento SharePoint come menu mega, spostamento a catena o spostamento hub, questo articolo non si applica al sito. Le SharePoint moderne sfruttano una gerarchia di siti più appiattita e un modello hub-and-spoke. In questo modo è possibile ottenere molti scenari che NON richiedono l'utilizzo della funzionalità SharePoint pubblicazione.
 
 ## <a name="overview-of-navigation-options"></a>Panoramica delle opzioni di spostamento
 
-La configurazione del provider di spostamento può influire in modo significativo sulle prestazioni per l'intero sito ed è necessario prestare particolare attenzione per scegliere un provider di esplorazione e una configurazione che si adatta in modo efficace ai requisiti di un sito di SharePoint. Sono disponibili due provider di spostamento predefiniti e implementazioni di spostamento personalizzate.
+La configurazione del provider di spostamento può influire in modo significativo sulle prestazioni per l'intero sito ed è necessario prestare particolare attenzione per scegliere un provider di spostamento e una configurazione che si adattano in modo efficace ai requisiti di un sito SharePoint struttura. Sono disponibili due provider di spostamento predefiniti e implementazioni di spostamento personalizzate.
 
 La prima opzione, [**Struttura**](#using-structural-navigation-in-sharepoint-online)di spostamento , è l'opzione di spostamento consigliata in SharePoint Online per i siti di Sharepoint classici, se si attiva la memorizzazione nella cache dell'esplorazione strutturale **per il sito.** Questo provider di spostamento visualizza gli elementi di spostamento al di sotto del sito corrente e, facoltativamente, il sito corrente e i relativi elementi di pari livello. Offre funzionalità aggiuntive, ad esempio la limitazione per motivi di sicurezza e l'enumerazione della struttura del sito. Se la memorizzazione nella cache è disabilitata, ciò inciderà negativamente sulle prestazioni e sulla scalabilità e potrebbe essere soggetta a limitazioni.
 
@@ -45,7 +45,7 @@ La seconda opzione, [**Esplorazione gestita (metadati),**](#using-managed-naviga
 
 Oltre ai provider di spostamento predefiniti, molti clienti hanno implementato correttamente implementazioni di spostamento personalizzate alternative. Vedere [Script sul lato client](#using-search-driven-client-side-scripting) basato sulla ricerca in questo articolo.
   
-## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Pro e contro delle opzioni di spostamento di SharePoint Online
+## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Pro e contro di SharePoint navigazione online
 
 Nella tabella seguente sono riepilogati i pro e i contro di ogni opzione.
 
@@ -57,15 +57,15 @@ Nella tabella seguente sono riepilogati i pro e i contro di ogni opzione.
 L'opzione più appropriata per il sito dipende dai requisiti del sito e dalle proprie capacità tecniche. Se si desidera un provider di spostamento facile da configurare che si anteeni automaticamente quando viene modificato il contenuto, l'esplorazione strutturale con la memorizzazione nella [cache](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) abilitata è una buona opzione.
 
 >[!NOTE]
->L'applicazione dello stesso principio dei siti di SharePoint moderni semplificando la struttura complessiva dei siti a una struttura più piatta e non gerarchica migliora le prestazioni e semplifica lo spostamento nei siti di SharePoint moderni. Ciò significa che invece di disporre di una singola raccolta siti con centinaia di siti (web secondari), un approccio migliore consiste nell'avere molte raccolte siti con pochi siti secondari (web secondari).
+>L'applicazione dello stesso principio dei siti SharePoint moderni semplificando la struttura generale del sito a una struttura più piatta e non gerarchica migliora le prestazioni e semplifica il passaggio ai siti SharePoint moderni. Ciò significa che invece di disporre di una singola raccolta siti con centinaia di siti (web secondari), un approccio migliore consiste nell'avere molte raccolte siti con pochi siti secondari (web secondari).
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Analisi delle prestazioni di spostamento in SharePoint Online
 
-Lo [strumento Diagnostica pagine per SharePoint](./page-diagnostics-for-spo.md) è un'estensione del browser per i browser Microsoft Edge e Chrome che analizza sia il portale moderno di SharePoint Online che le pagine classiche del sito di pubblicazione. Questo strumento funziona solo per SharePoint Online e non può essere utilizzato in una pagina di sistema di SharePoint.
+Lo [strumento Diagnostica pagine per SharePoint](./page-diagnostics-for-spo.md) è un'estensione del browser per i browser Microsoft Edge e Chrome che analizza sia il portale moderno SharePoint Online che le pagine classiche del sito di pubblicazione. Questo strumento funziona solo per SharePoint Online e non può essere utilizzato in una SharePoint di sistema.
 
-Lo strumento genera un report per ogni pagina analizzata che mostra le prestazioni della pagina rispetto a un set predefinito di regole e visualizza informazioni dettagliate quando i risultati di un test non rientrano nel valore di base. Gli amministratori e i progettisti di SharePoint Online possono utilizzare lo strumento per risolvere i problemi di prestazioni per garantire che le nuove pagine siano ottimizzate prima della pubblicazione.
+Lo strumento genera un report per ogni pagina analizzata che mostra le prestazioni della pagina rispetto a un set predefinito di regole e visualizza informazioni dettagliate quando i risultati di un test non rientrano nel valore di base. SharePoint Gli amministratori e i progettisti online possono utilizzare lo strumento per risolvere i problemi di prestazioni per garantire che le nuove pagine siano ottimizzate prima della pubblicazione.
 
-**SPRequestDuration** in particolare è il tempo necessario per l'elaborazione della pagina da parte di SharePoint. L'esplorazione complessa , ad esempio l'inclusione di pagine nella struttura di spostamento, gerarchie di siti complesse e altre opzioni di configurazione e topologia, può contribuire in modo significativo a durare più a lungo.
+**SPRequestDuration** in particolare è il tempo necessario per SharePoint elaborare la pagina. L'esplorazione complessa , ad esempio l'inclusione di pagine nella struttura di spostamento, gerarchie di siti complesse e altre opzioni di configurazione e topologia, può contribuire in modo significativo a durare più a lungo.
 
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>Utilizzo dell'esplorazione strutturale in SharePoint Online
 
@@ -73,19 +73,19 @@ Questa è la struttura di spostamento predefinita utilizzata per impostazione pr
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Come implementare la memorizzazione nella cache dell'esplorazione strutturale
 
-In **Impostazioni sito** Aspetto struttura di spostamento è possibile verificare se l'esplorazione strutturale è selezionata per l'esplorazione globale o  >    >  corrente. La **selezione di Mostra** pagine avrà un impatto negativo sulle prestazioni.
+In **Visualizzazione Impostazioni** sito è possibile verificare se l'esplorazione strutturale è selezionata per l'esplorazione globale o  >    >  corrente. La **selezione di Mostra** pagine avrà un impatto negativo sulle prestazioni.
 
 ![Struttura di spostamento con l'opzione Mostra siti secondari selezionata](../media/SPONavOptionsStructuredShowSubsites.png)
 
-La memorizzazione nella cache può essere abilitata o disabilitata a livello di raccolta siti e a livello di sito ed è abilitata per entrambi per impostazione predefinita. Per abilitarla a livello di raccolta siti, **in** Impostazioni sito Struttura di spostamento raccolta siti Amministrazione raccolta siti selezionare la casella di controllo  >    >   **Abilita memorizzazione nella cache.**
+Caching può essere abilitato o disabilitato a livello di raccolta siti e a livello di sito ed è abilitato per entrambi per impostazione predefinita. Per abilitarla a livello di raccolta siti, in Spostamento raccolta **siti Impostazioni** raccolta siti Amministrazione raccolta siti selezionare la casella di controllo  >    >   **Abilita memorizzazione nella cache**.
 
 ![Abilitare la memorizzazione nella cache a livello di sito](../media/structural-nav/structural-nav-caching-site-coll.png)
 
-Per abilitarla a livello di sito, in Navigazione impostazioni **sito** selezionare la casella di controllo  >  Abilita **memorizzazione nella cache.**
+Per abilitarla a livello di sito, in **Navigazione Impostazioni** sito selezionare la casella di controllo Abilita  >   **memorizzazione nella cache**.
 
 ![Abilitare la memorizzazione nella cache a livello di sito](../media/structural-nav/structural-nav-caching-site.png)
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Utilizzo dell'esplorazione gestita e dei metadati in SharePoint Online
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Uso dell'esplorazione gestita e dei metadati in SharePoint Online
 
 L'esplorazione gestita è un'altra opzione predefinita che è possibile utilizzare per ricreare la maggior parte delle stesse funzionalità dell'esplorazione strutturale. I metadati gestiti possono essere configurati in modo che la limitazione per motivi di sicurezza sia abilitata o disabilitata. Se configurata con la limitazione per motivi di sicurezza disabilitata, l'esplorazione gestita è piuttosto efficiente poiché carica tutti i collegamenti di spostamento con un numero costante di chiamate al server. L'abilitazione della limitazione per motivi di sicurezza, tuttavia, nega alcuni dei vantaggi in termini di prestazioni dell'esplorazione gestita.
 
@@ -99,11 +99,11 @@ Molti siti non richiedono la limitazione per motivi di sicurezza, poiché la str
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Come implementare l'esplorazione gestita e i risultati
 
-Sono disponibili diversi articoli docs.microsoft.com sui dettagli dell'esplorazione gestita. Ad esempio, vedere [Overview of managed navigation in SharePoint Server.](/sharepoint/administration/overview-of-managed-navigation)
+Sono disponibili diversi articoli docs.microsoft.com sui dettagli dell'esplorazione gestita. Ad esempio, vedere [Panoramica dell'esplorazione gestita in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
 Per implementare l'esplorazione gestita, è necessario impostare termini con URL corrispondenti alla struttura di spostamento del sito. L'esplorazione gestita può anche essere curata manualmente per sostituire l'esplorazione strutturale in molti casi. Ad esempio:
 
-![Struttura del sito di SharePoint Online](../media/SPONavOptionsListOfSites.png))
+![SharePoint Struttura del sito online](../media/SPONavOptionsListOfSites.png))
 
 ## <a name="using-search-driven-client-side-scripting"></a>Utilizzo di script sul lato client basato sulla ricerca
 
@@ -117,7 +117,7 @@ Questi provider di spostamento hanno un paio di vantaggi principali:
 
 Un esempio di provider di dati è l'utilizzo di uno spostamento basato sulla **ricerca,** che consente di enumerare i nodi di spostamento e di gestire in modo efficiente la limitazione per motivi di sicurezza.
 
-Esistono altre opzioni popolari per creare provider **di spostamento personalizzati.** Per ulteriori informazioni sulla creazione di un provider di spostamento personalizzato, vedere Soluzioni di spostamento per i portali di [SharePoint Online.](/sharepoint/dev/solution-guidance/portal-navigation)
+Esistono altre opzioni popolari per creare provider **di spostamento personalizzati.** Per ulteriori informazioni sulla creazione di un provider di spostamento [personalizzato, vedere](/sharepoint/dev/solution-guidance/portal-navigation) Soluzioni di spostamento per SharePoint portali online.
 
 Utilizzando la ricerca è possibile utilizzare gli indici sviluppati in background tramite la ricerca per indicizzazione continua. I risultati della ricerca vengono recuperati dall'indice di ricerca e i risultati sono limitati per motivi di sicurezza. Questa operazione è in genere più veloce rispetto ai provider di spostamento predefiniti quando è necessaria la limitazione per motivi di sicurezza. Utilizzando la ricerca per l'esplorazione strutturale, soprattutto se si dispone di una struttura di siti complessa, è possibile velocizzare notevolmente tempi di caricamento delle pagine. Il principale vantaggio di questa esplorazione gestita è che è possibile beneficiare della limitazione per motivi di sicurezza.
 
@@ -221,7 +221,7 @@ Nell'esempio di spostamento complesso, un nuovo carico di pagina senza la memori
 ### <a name="about-the-javascript-file"></a>Informazioni sul file JavaScript...
 
 >[!NOTE]
->Se si usa JavaScript personalizzato, verificare che la rete CDN pubblica sia abilitata e che il file si trova in un percorso CDN.
+>Se si usa JavaScript personalizzato, verificare che l'rete CDN pubblica sia abilitata e che il file si trova in rete CDN locale.
 
 Di seguito è riportato l'intero file JavaScript:
 

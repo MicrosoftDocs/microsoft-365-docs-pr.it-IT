@@ -40,7 +40,7 @@ Ricerca avanzata si basa sul [linguaggio delle query in Esplora dati](/azure/kus
 
 ## <a name="try-your-first-query"></a>Provare la prima query
 
-Nel Centro sicurezza Microsoft 365 passare a **Ricerca per** eseguire la prima query. Usare l'esempio seguente:
+Nel Microsoft 365 sicurezza, andare a **Ricerca per** eseguire la prima query. Usare l'esempio seguente:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -176,14 +176,14 @@ La sezione **Introduzione** presenta alcune semplici query che impiegano operato
 ![Immagine della finestra di Ricerca avanzata](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Oltre agli esempi di query di base, è anche possibile accedere [query condivise](advanced-hunting-shared-queries.md) per specifici scenari di ricerca delle minacce. Esplorare le query condivise sul lato sinistro della pagina o [nell'archivio di query GitHub.](https://aka.ms/hunting-queries)
+>Oltre agli esempi di query di base, è anche possibile accedere [query condivise](advanced-hunting-shared-queries.md) per specifici scenari di ricerca delle minacce. Esplorare le query condivise sul lato sinistro della pagina o nell GitHub [repository di query.](https://aka.ms/hunting-queries)
 
 ## <a name="access-query-language-documentation"></a>Documentazione sulle query
 
 Per altre informazioni sul linguaggio delle query di Esplora dati e sugli operatori supportati, vedere [Documentazione sul linguaggio delle query di Esplora dati](/azure/kusto/query/).
 
 >[!NOTE]
->Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender](m365d-enable.md) per cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in [Migrate advanced hunting queries from Microsoft Defender for Endpoint.](advanced-hunting-migrate-from-mde.md)
+>Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender per](m365d-enable.md) cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in Eseguire la migrazione di query di ricerca avanzate da [Microsoft Defender per Endpoint.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)

@@ -1,6 +1,6 @@
 ---
 title: Estendere la copertura di ricerca avanzata con le impostazioni giuste
-description: Controlla le impostazioni di controllo nei dispositivi Windows e altre impostazioni per assicurarti di ottenere i dati più completi nella ricerca avanzata
+description: Controllare le impostazioni di controllo Windows dispositivi e altre impostazioni per assicurarsi di ottenere i dati più completi nella ricerca avanzata
 keywords: ricerca avanzata, incidente, pivot, entità, impostazioni di controllo, gestione degli account utente, gestione dei gruppi di sicurezza, ricerca delle minacce, ricerca di minacce informatiche, ricerca, query, telemetria, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -36,9 +36,9 @@ ms.locfileid: "51952669"
 - Microsoft 365 Defender
 - Microsoft Defender per endpoint
 
-[La ricerca avanzata](advanced-hunting-overview.md) si basa sui dati provenienti da varie origini, inclusi i dispositivi, le aree di lavoro di Office 365, Azure AD e Microsoft Defender for Identity. Per ottenere i dati più completi possibili, verificare di disporre delle impostazioni corrette nelle origini dati corrispondenti.
+[La ricerca](advanced-hunting-overview.md) avanzata si basa sui dati provenienti da varie origini, inclusi i dispositivi, le Office 365 di lavoro, Azure AD e Microsoft Defender for Identity. Per ottenere i dati più completi possibili, verificare di disporre delle impostazioni corrette nelle origini dati corrispondenti.
 
-## <a name="advanced-security-auditing-on-windows-devices"></a>Controllo di sicurezza avanzato nei dispositivi Windows
+## <a name="advanced-security-auditing-on-windows-devices"></a>Controllo di sicurezza avanzato nei Windows mobili
 Attiva queste impostazioni di controllo avanzate per assicurarti di ottenere dati sulle attività nei dispositivi, tra cui la gestione degli account locali, la gestione dei gruppi di sicurezza locali e la creazione dei servizi.
 
 | Dati | Descrizione | Tabella schema | Configurazione |
@@ -52,10 +52,10 @@ Se si esegue Active Directory in locale, è necessario installare il sensore Mic
 
 | Dati | Descrizione | Tabella schema | Configurazione |
 | --- | --- | --- | --- |
-| Controller di dominio | Dati da Active Directory locale inviati a Microsoft Defender per l'identità, arricchendo le informazioni relative all'identità, ad esempio i dettagli dell'account, l'attività di accesso e le query di Active Directory | Più tabelle, tra [cui IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)e [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installare il sensore Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step4)<br>- [Attivare gli eventi di Windows pertinenti](/azure-advanced-threat-protection/configure-event-collection) |
+| Controller di dominio | Dati da Active Directory locale inviati a Microsoft Defender per l'identità, arricchendo le informazioni relative all'identità, ad esempio i dettagli dell'account, l'attività di accesso e le query di Active Directory | Più tabelle, tra [cui IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)e [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installare il sensore Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step4)<br>- [Attivare eventi Windows pertinenti](/azure-advanced-threat-protection/configure-event-collection) |
 
 >[!NOTE]
->Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender](m365d-enable.md) per cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in [Migrate advanced hunting queries from Microsoft Defender for Endpoint.](advanced-hunting-migrate-from-mde.md)
+>Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender per](m365d-enable.md) cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in Eseguire la migrazione di query di ricerca avanzate da [Microsoft Defender per Endpoint.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)

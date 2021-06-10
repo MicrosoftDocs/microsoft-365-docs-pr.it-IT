@@ -361,7 +361,7 @@ Per ulteriori informazioni, vedere gli argomenti seguenti:
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -433,7 +433,7 @@ Antivirus Microsoft Defender ha intrapreso azioni per proteggere il computer da 
 <dt> minaccia: &lt; Gravità, ad &gt; esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -485,7 +485,7 @@ Antivirus Microsoft Defender si è verificato un errore durante l'azione su malw
 <dt> minaccia: &lt; Gravità, ad &gt; esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -539,7 +539,7 @@ Antivirus Microsoft Defender ha ripristinato un elemento dalla quarantena. Per u
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -581,7 +581,7 @@ Antivirus Microsoft Defender si è verificato un errore durante il tentativo di 
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -625,7 +625,7 @@ Antivirus Microsoft Defender ha eliminato un elemento dalla quarantena.<br/>Per 
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -668,7 +668,7 @@ Per ulteriori informazioni, vedere gli argomenti seguenti:
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -774,7 +774,7 @@ Antivirus Microsoft Defender ha rilevato un comportamento sospetto.<br/>Per ulte
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -849,7 +849,7 @@ Antivirus Microsoft Defender ha rilevato malware o altro software potenzialmente
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -928,7 +928,7 @@ Antivirus Microsoft Defender ha intrapreso azioni per proteggere il computer da 
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -1050,7 +1050,7 @@ Antivirus Microsoft Defender si è verificato un errore non critico quando si es
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -1142,7 +1142,7 @@ Antivirus Microsoft Defender si è verificato un errore critico durante l'azione
 <dt> minaccia: &lt; &gt; Gravità, ad esempio:<ul>
 <li>Bassa</li>
 <li>Moderato</li>
-<li>Alta</li>
+<li>Fortemente</li>
 <li>Grave</li>
 </ul>
 </dt>
@@ -1352,20 +1352,20 @@ Descrizione:
 <td >
 Rapporto integrità client antivirus.
 <dl>
-<dt>Versione piattaforma: &lt; &gt;</dt>Versione corrente della piattaforma Versione motore
-<dt> &lt; Antimalware Engine: &gt; </dt>versione del motore di ispezione in tempo reale di
-<dt>rete: &lt; &gt; </dt>versione del motore di ispezione in tempo reale di rete Versione firma
-<dt>antivirus: &lt; &gt; </dt>versione firma antivirus Versione firma
-<dt> &lt; antispyware: &gt; </dt>versione firma antispyware Versione firma Network
-<dt>Realtime Inspection: &lt; &gt; </dt>Stato RTP versione firma ispezione in tempo reale di rete: Stato OA in tempo reale
-<dt> &lt; &gt; (abilitato</dt>o disabilitato): stato di
-<dt>IE (Abilitato o &lt; &gt; Disabilitato)</dt>Download e stato Outlook Express Attachments (Abilitato o
-<dt> &lt; &gt; Disabilitato)</dt>
-<dt>Stato BM: Stato monitoraggio del comportamento (Abilitato o &lt; &gt; Disabilitato)</dt>Validità firma antivirus: validità firma antivirus
-<dt> &lt; &gt; (in giorni)</dt>Validità firma antispyware: Validità firma
-<dt> &lt; antispyware &gt; (in giorni)</dt>Durata ultima analisi rapida: Validità ultima analisi rapida
-<dt> &lt; &gt; (in giorni)</dt>Validità ultima analisi completa: Validità ultima analisi
-<dt>completa &lt; &gt; (in giorni)</dt>Durata creazione firma
+<dt>Versione piattaforma: &lt; Versione corrente &gt; </dt>della piattaforma Versione
+<dt>motore: &lt; Antimalware Engine &gt; </dt>versione Network Realtime Inspection engine
+<dt>version: Network &lt; Realtime &gt; Inspection</dt>engine version Antivirus signature
+<dt>version: Antivirus signature &lt; version &gt; </dt>
+<dt>Antispyware signature version: &lt; Antispyware signature version &gt; </dt>Network
+<dt>Realtime Inspection signature version: Network &lt; Realtime Inspection signature version &gt; </dt>
+<dt>RTP state: Realtime Stato di protezione (Abilitato o &lt; &gt; Disabilitato)</dt>Stato
+<dt>OA: Stato di accesso (Abilitato o &lt; &gt; Disabilitato)</dt>Stato IOAV: Stato IE Download e allegati di Outlook Express (abilitato o
+<dt> &lt; &gt; disabilitato):</dt>stato monitoraggio del comportamento (abilitato o
+<dt> &lt; &gt; disabilitato)</dt>Validità della firma antivirus: validità della firma antivirus
+<dt> &lt; &gt; (in giorni) </dt>Validità firma antispyware: validità firma 
+<dt> &lt; antispyware &gt; (in giorni)</dt>Validità ultima analisi rapida: Validità ultima analisi rapida
+<dt> &lt; &gt; (in giorni)</dt>Validità ultima analisi completa: Validità ultima analisi completa
+<dt> &lt; &gt; (in giorni)</dt>Ora creazione firma
 <dt>antivirus: ? &lt; Tempo creazione &gt; firma antivirus</dt>
 <dt>Tempo creazione firma Antispyware: ? &lt; Ora creazione firma &gt; antispyware</dt>Ultima ora di avvio
 <dt>dell'analisi rapida: ? &lt; Ora ultima inizio &gt; analisi rapida</dt>

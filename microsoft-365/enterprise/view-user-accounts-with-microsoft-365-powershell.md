@@ -1,5 +1,5 @@
 ---
-title: Visualizzare gli account utente di Microsoft 365 con PowerShell
+title: Visualizzare Microsoft 365 account utente con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: Informazioni su come visualizzare, elencare o visualizzare gli account utente di Microsoft 365 in modi diversi con PowerShell.
+description: Informazioni su come visualizzare, elencare o visualizzare Microsoft 365 account utente in modi diversi con PowerShell.
 ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924649"
 ---
-# <a name="view-microsoft-365-user-accounts-with-powershell"></a>Visualizzare gli account utente di Microsoft 365 con PowerShell
+# <a name="view-microsoft-365-user-accounts-with-powershell"></a>Visualizzare Microsoft 365 account utente con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-È possibile usare l'interfaccia di amministrazione di Microsoft 365 per visualizzare gli account per il tenant di Microsoft 365. PowerShell per Microsoft 365 abilita questa funzionalità, ma offre anche funzionalità aggiuntive.
+È possibile usare l'Microsoft 365 di amministrazione per visualizzare gli account per il tenant Microsoft 365 tenant. PowerShell per Microsoft 365 abilita questa funzionalità, ma offre anche funzionalità aggiuntive.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 ### <a name="view-all-accounts"></a>Visualizzare tutti gli account
 
@@ -76,7 +76,7 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 Per impostazione predefinita, il cmdlet **Get-AzureADUser** visualizza solo le *proprietà ObjectID,* *DisplayName* e *UserPrincipalName* degli account.
 
-Per essere più selettivi sulle proprietà da visualizzare, utilizzare il cmdlet **Select** in combinazione con il cmdlet **Get-AzureADUser.** Per combinare i due cmdlet, utilizzare il carattere "pipe" ("|"), che indica ad Azure Active Directory PowerShell per Graph di ottenere i risultati di un comando e inviarlo al comando successivo. Ecco un comando di esempio che visualizza *DisplayName,* *Department* e *UsageLocation* per ogni account utente:
+Per essere più selettivi sulle proprietà da visualizzare, utilizzare il cmdlet **Select** in combinazione con il cmdlet **Get-AzureADUser.** Per combinare i due cmdlet, utilizzare il carattere "pipe" ("|"), che indica Azure Active Directory PowerShell per Graph di ottenere i risultati di un comando e inviarlo al comando successivo. Ecco un comando di esempio che visualizza *DisplayName,* *Department* e *UsageLocation* per ogni account utente:
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -106,7 +106,7 @@ Gli account utente hanno due origini:
 
 - Windows Server Active Directory (AD), ovvero account sincronizzati da Active Directory locale al cloud.
 
-- Account Di Azure Active Directory (Azure AD), creati direttamente nel cloud.
+- Azure Active Directory (Azure AD), creati direttamente nel cloud.
 
 
 Il comando seguente indica a PowerShell di ottenere tutti gli utenti con l'attributo *DirSyncEnabled* impostato su *True.* Puoi usarlo per trovare gli account che si sincronizzano da Active Directory locale.
@@ -123,13 +123,13 @@ Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
 
 ### <a name="view-accounts-based-on-a-common-property"></a>Visualizzare gli account in base a una proprietà comune
 
-Per essere più selettivi sull'elenco di account da visualizzare, è possibile utilizzare il cmdlet **Where** in combinazione con il cmdlet **Get-AzureADUser.** Per combinare i due cmdlet, utilizzare il carattere "pipe" ("|"), che indica ad Azure Active Directory PowerShell per Graph di ottenere i risultati di un comando e inviarlo al comando successivo. Ecco un comando di esempio che visualizza solo gli account utente con un percorso di utilizzo non specificato:
+Per essere più selettivi sull'elenco di account da visualizzare, è possibile utilizzare il cmdlet **Where** in combinazione con il cmdlet **Get-AzureADUser.** Per combinare i due cmdlet, utilizzare il carattere "pipe" ("|"), che indica Azure Active Directory PowerShell per Graph di ottenere i risultati di un comando e inviarlo al comando successivo. Ecco un comando di esempio che visualizza solo gli account utente con un percorso di utilizzo non specificato:
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-Questo comando indica ad Azure Active Directory PowerShell per Graph di:
+Questo comando indica Azure Active Directory PowerShell per Graph eseguire le Graph seguenti:
   
 1. Ottenere tutte le informazioni sugli account utente (**Get-AzureADUser**) e inviarle al comando successivo ( **|** ).
     
@@ -153,7 +153,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="view-all-accounts"></a>Visualizzare tutti gli account
 
@@ -259,7 +259,7 @@ Per impostazione predefinita, il cmdlet **Get-MsolUser** visualizza queste tre p
     
 - isLicensed
     
-Se sono necessarie proprietà aggiuntive, ad esempio il reparto in cui lavora l'utente e il paese/area geografica in cui utilizzano i servizi di Microsoft 365, è possibile eseguire **Get-MsolUser** in combinazione con il cmdlet **Select** per specificare l'elenco delle proprietà dell'account utente. Di seguito viene riportato un esempio:
+Se sono necessarie proprietà aggiuntive, ad esempio il reparto in cui lavora l'utente e il paese/area geografica in cui utilizzano i servizi Microsoft 365, è possibile eseguire **Get-MsolUser** in combinazione con il cmdlet **Select** per specificare l'elenco delle proprietà dell'account utente. Di seguito viene riportato un esempio:
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -313,9 +313,9 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-Se si utilizza la sincronizzazione della directory per creare e gestire gli utenti di Microsoft 365, è possibile visualizzare l'account locale da cui è stato proiettato un utente di Microsoft 365. Nell'esempio seguente si presuppone che:
+Se si utilizza la sincronizzazione della directory per creare e gestire gli utenti Microsoft 365, è possibile visualizzare l'account locale da cui è stato proiettato un Microsoft 365 utente. Nell'esempio seguente si presuppone che:
 
-- Azure AD Connect è configurato per usare l'ancoraggio di origine predefinito di ObjectGUID. Per ulteriori informazioni sulla configurazione di un ancoraggio di origine, vedere [Azure AD Connect: Concetti di progettazione.](/azure/active-directory/hybrid/plan-connect-design-concepts)
+- Azure AD Connessione è configurato per usare l'ancoraggio di origine predefinito di ObjectGUID. Per ulteriori informazioni sulla configurazione di un ancoraggio di origine, vedere [Azure AD Connessione: Concetti di progettazione](/azure/active-directory/hybrid/plan-connect-design-concepts).
 - Il modulo Servizi di dominio Active Directory per PowerShell è stato installato (vedere [Strumenti RSAT](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)).
 
 ```powershell

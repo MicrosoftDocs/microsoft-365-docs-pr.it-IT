@@ -154,7 +154,7 @@ Il passaggio successivo consiste nel creare un connettore di badging fisico nel 
 
    La pagina di stato contiene anche un collegamento allo script. Fai riferimento a questo script per informazioni su come inserire il file JSON nell'endpoint API.
 
-7. Fare clic su **Fatto**.
+7. Fai clic su **Fine**.
 
    Il nuovo connettore viene visualizzato nell'elenco nella **scheda Connettori.**
 

@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per la ricerca avanzata di query in Microsoft 365 Defender
+title: Procedure consigliate per le query di ricerca avanzate in Microsoft 365 Defender
 description: Informazioni su come creare query di ricerca delle minacce veloci, efficienti e senza errori con la ricerca avanzata
 keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, schema, kusto, evitare timeout, righe di comando, ID processo, ottimizzare, procedure consigliate, analizzare, partecipare, riepilogare
 search.product: eADQiWindows 10XVcnh
@@ -61,7 +61,7 @@ I clienti che eseguono più query regolarmente devono tenere traccia del consumo
 - **Analizza, non estrarre:** se possibile, usa [l'operatore di](/azure/data-explorer/kusto/query/parseoperator) analisi o una funzione di analisi come [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). Evitare `matches regex` l'operatore stringa o la [funzione extract(),](/azure/data-explorer/kusto/query/extractfunction)che utilizzano entrambe l'espressione regolare. Riservare l'uso dell'espressione regolare per scenari più complessi. [Altre informazioni sulle funzioni di analisi](#parse-strings)
 - **Filtra tabelle non espressioni:** non filtrare in base a una colonna calcolata se è possibile filtrare in base a una colonna di tabella.
 - **Nessun termine di tre caratteri:** evita di confrontare o filtrare usando termini con un massimo di tre caratteri. Questi termini non sono indicizzati e la corrispondenza richiederà più risorse.
-- **Progetto in modo** selettivo: semplifica la comprensione dei risultati proiettando solo le colonne necessarie. L'esecuzione di colonne specifiche prima dell'esecuzione di [operazioni di join](/azure/data-explorer/kusto/query/joinoperator) o simili consente inoltre di migliorare le prestazioni.
+- **Project in modo** selettivo: semplifica la comprensione dei risultati proiettando solo le colonne necessarie. L'esecuzione di colonne specifiche prima dell'esecuzione di [operazioni di join](/azure/data-explorer/kusto/query/joinoperator) o simili consente inoltre di migliorare le prestazioni.
 
 ## <a name="optimize-the-join-operator"></a>Ottimizzare `join` l'operatore
 [L'operatore join](/azure/data-explorer/kusto/query/joinoperator) unisce le righe di due tabelle in base ai valori corrispondenti nelle colonne specificate. Applicare questi suggerimenti per ottimizzare le query che utilizzano questo operatore.
@@ -265,7 +265,7 @@ Esistono diverse funzioni che è possibile utilizzare per gestire in modo effici
 Per informazioni su tutte le funzioni di analisi supportate, [vedere Funzioni stringa Kusto.](/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
 
 >[!NOTE]
->Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender](m365d-enable.md) per cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in [Migrate advanced hunting queries from Microsoft Defender for Endpoint.](advanced-hunting-migrate-from-mde.md)
+>Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender per](m365d-enable.md) cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in Eseguire la migrazione di query di ricerca avanzate da [Microsoft Defender per Endpoint.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Documentazione del linguaggio di query Kusto](/azure/data-explorer/kusto/query/)

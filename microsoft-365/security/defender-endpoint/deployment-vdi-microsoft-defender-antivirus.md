@@ -161,7 +161,7 @@ Vedere [Pianificare le analisi per](scheduled-catch-up-scans-microsoft-defender-
 
 4. Selezionare **OK**. 
 
-5. Distribuisci l'oggetto Criteri di gruppo come di solito.
+5. Distribuire l'oggetto Criteri di gruppo come di consueto.
 
 ## <a name="prevent-notifications"></a>Impedisci notifiche
 
@@ -173,7 +173,7 @@ A volte, Antivirus Microsoft Defender notifiche possono essere inviate o mantenu
 
 3. Impostare il criterio su **Abilitato** e quindi selezionare **OK.**
 
-4. Distribuisci l'oggetto Criteri di gruppo come di solito.
+4. Distribuire l'oggetto Criteri di gruppo come di consueto.
 
 L'eliminazione delle notifiche impedisce Antivirus Microsoft Defender notifiche di essere visualizzate nel centro notifiche in Windows 10 quando vengono eseguite analisi o vengono eseguite azioni di correzione. Tuttavia, il team delle operazioni di sicurezza visualizza i risultati dell'analisi nel Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
@@ -198,7 +198,7 @@ La disabilitazione di un'analisi dopo un aggiornamento impedirà l'esecuzione di
 
 4. Selezionare **OK**.
 
-5. Distribuisci l'oggetto Criteri di gruppo come di solito.
+5. Distribuire l'oggetto Criteri di gruppo come di consueto.
 
 Questo criterio impedisce l'esecuzione di un'analisi immediatamente dopo un aggiornamento.
 

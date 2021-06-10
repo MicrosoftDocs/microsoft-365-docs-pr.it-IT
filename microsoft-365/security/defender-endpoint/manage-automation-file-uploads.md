@@ -1,5 +1,5 @@
 ---
-title: Gestire i caricamenti di file di automazione
+title: Gestire il caricamento di file di automazione
 description: Abilitare l'analisi del contenuto e configurare l'estensione di file e le estensioni degli allegati di posta elettronica che verranno inviate per l'analisi
 keywords: automazione, file, caricamenti, contenuto, analisi, file, estensione, posta elettronica, allegato
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185850"
 ---
-# <a name="manage-automation-file-uploads"></a>Gestire i caricamenti di file di automazione
+# <a name="manage-automation-file-uploads"></a>Gestire il caricamento di file di automazione
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Ad esempio, se si aggiungono *exe* e *bat* come nomi di estensione di file o all
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>Aggiungere i nomi delle estensioni di file e i nomi delle estensioni degli allegati.
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Caricamenti file di automazione**. 
+1. Nel riquadro di spostamento seleziona **Impostazioni**  >  **caricamenti di file di automazione**. 
 
 2. Attiva e disattiva l'impostazione **di** analisi **del contenuto.**
 
@@ -50,4 +50,4 @@ Ad esempio, se si aggiungono *exe* e *bat* come nomi di estensione di file o all
   
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Gestire le esclusioni delle cartelle di automazione](manage-automation-folder-exclusions.md)
+- [Gestione le esclusioni delle cartelle di automazione](manage-automation-folder-exclusions.md)

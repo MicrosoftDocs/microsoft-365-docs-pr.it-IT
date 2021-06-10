@@ -1,5 +1,5 @@
 ---
-title: Ulteriori informazioni su Azure Active Directory per la migrazione da Microsoft Cloud Deutschland
+title: Ulteriori Azure Active Directory per la migrazione da Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,7 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Riepilogo: informazioni aggiuntive su Azure Active Directory durante il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.'
+description: 'Riepilogo: informazioni Azure Active Directory aggiuntive per il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a servizi Office 365 nella nuova area data center tedesca.'
 ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,9 +25,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923851"
 ---
-# <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ulteriori informazioni su Azure Active Directory per la migrazione da Microsoft Cloud Deutschland
+# <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ulteriori Azure Active Directory per la migrazione da Microsoft Cloud Deutschland
 
-Per completare lo spostamento dal cloud tedesco di Azure al cloud pubblico di Azure, è consigliabile che gli endpoint di autenticazione, Azure Active Directory (Azure AD) Graph e MS Graph per le applicazioni siano aggiornati a quelli del cloud commerciale quando l'endpoint OpenID Connect (OIDC) inizia a segnalare gli `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` endpoint cloud commerciali. 
+Per completare lo spostamento dal cloud tedesco di Azure al cloud pubblico di Azure, è consigliabile che l'endpoint di autenticazione, Azure Active Directory (Azure AD) Graph e gli endpoint ms Graph per le applicazioni siano aggiornati a quelli del cloud commerciale quando l'endpoint OpenID Connessione (OIDC) avvia la segnalazione degli `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` endpoint cloud commerciali. 
  
 **Quando è consigliabile apportare questa modifica?**
 
@@ -37,7 +37,7 @@ Esistono tre condizioni preliminari per aggiornare l'autorità di accesso:
 
  - L'endpoint di individuazione OIDC per il tenant `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` restituisce gli endpoint cloud pubblici di Azure AD.
 
- - Se il tenant è configurato per la federazione, Active Directory Federation Services (AD FS) viene aggiornato per la sincronizzazione con Azure AD Public. È possibile seguire le istruzioni per aggiornare le impostazioni di Azure AD Connect per apportare questa modifica.
+ - Se il tenant è configurato per la federazione, Active Directory Federation Services (AD FS) viene aggiornato per la sincronizzazione con Azure AD Public. Puoi seguire le istruzioni per aggiornare le impostazioni Connessione Azure AD per apportare questa modifica.
 
  - Le applicazioni di risorse, se presenti, usate dalle applicazioni vengono modificate per accettare token firmati sia da Azure AD Germany che da Azure AD Public.
  
@@ -59,14 +59,14 @@ Un'applicazione può essere una delle seguenti:
 
 **Cosa è necessario aggiornare?**
 
-1. Se si ospita un'applicazione in Azure Germania usata per autenticare gli utenti di Azure Germania o Office 365 Germany, assicurarsi che sia usata come autorità nel contesto `https://login.microsoftonline.com` di autenticazione.
+1. Se stai ospitando un'applicazione in Azure Germania usata per autenticare gli utenti di Azure Germania o Office 365 Germany, assicurati che sia usata come autorità nel contesto `https://login.microsoftonline.com` di autenticazione.
 
     - Vedere Contesti di autenticazione di Azure AD.
-    - Questo vale sia per l'autenticazione per l'applicazione, sia per l'autenticazione a qualsiasi API che l'applicazione potrebbe chiamare (ovvero Microsoft Graph, Azure AD Graph, Azure Resource Manager).
+    - Questo vale sia per l'autenticazione per l'applicazione che per tutte le API che l'applicazione potrebbe chiamare (ovvero Microsoft Graph, Azure AD Graph, Azure Resource Manager).
 
-2. Aggiornare l'endpoint di Azure AD Graph su `https://graph.windows.net` .
+2. Aggiornare l'endpoint Graph Azure AD in modo che sia `https://graph.windows.net` .
 
-3. Aggiornare l'endpoint di MS Graph su `https://graph.microsoft.com` .
+3. Aggiornare MS Graph endpoint su `https://graph.microsoft.com` .
 
 4. Aggiornare gli endpoint cloud tedeschi (ad esempio quelli per Exchange Online e SharePoint Online) utilizzati dalle applicazioni per essere quelli del cloud pubblico.
 
@@ -95,35 +95,35 @@ Ecco alcune considerazioni aggiuntive per Azure AD:
 
   - La creazione di reti con nome IPv6 non funziona nel portale di Azure, `http://portal.microsoftazure.de/` . Usare il portale di Azure in per creare reti con `https://portal.azure.com` nome IPv6.
  
-   - Non è possibile creare intervalli di indirizzi IP attendibili per le impostazioni del servizio Azure Multi-Factor Authentication (MFA) dal portale Microsoft Cloud Deutschland. Usare il portale di Azure AD per i servizi di Office 365 per creare intervalli di indirizzi IP attendibili MFA di Azure.
+   - Non è possibile creare intervalli di indirizzi IP attendibili per le impostazioni del servizio Azure Multi-Factor Authentication (MFA) dal portale Microsoft Cloud Deutschland. Usare il portale di Azure AD per Office 365 per creare intervalli di indirizzi IP attendibili di Azure MFA.
 
 
 - Per l'accesso condizionale: 
 
-  - I criteri di accesso condizionale con i controlli di concessione seguenti non sono supportati fino al completamento della migrazione ai servizi di Office 365 (dopo la fase di migrazione [finalizzare Azure AD):](ms-cloud-germany-transition.md#how-is-the-migration-organized)
+  - I criteri di accesso condizionale con i controlli di concessione seguenti non sono supportati fino al completamento della migrazione ai servizi Office 365 (dopo la fase di finalizzazione della migrazione di [Azure AD):](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
     - Richiedi dispositivo conforme
     - Richiedi app approvata
     - Richiedi criteri di protezione app
     
-  - L'interfaccia dei criteri di accesso condizionale fornisce un falso avviso sull'attivazione delle impostazioni predefinite di sicurezza per il tenant anche quando è disabilitato e i criteri di accesso condizionale esistono già per il tenant. È consigliabile ignorare l'avviso o usare il portale dei servizi di Office 365 per gestire i criteri di accesso condizionale. 
+  - L'interfaccia dei criteri di accesso condizionale fornisce un falso avviso sull'attivazione delle impostazioni predefinite di sicurezza per il tenant anche quando è disabilitato e i criteri di accesso condizionale esistono già per il tenant. È consigliabile ignorare l'avviso o utilizzare il portale dei Office 365 per gestire i criteri di accesso condizionale. 
 
 - Gli scenari di Intune sono supportati solo negli endpoint globali dopo il completamento della migrazione del tenant, incluse tutte le migrazioni dei carichi di lavoro di Office.
 
-- Gli utenti di Microsoft Cloud Deutschland che usano il metodo di notifica delle app per dispositivi mobili per le richieste MFA visualizzano l'ObjectId (un GUID) dell'utente anziché il nome dell'entità utente (UPN) nell'app Microsoft Authenticator. Una volta completata la migrazione del tenant di Azure AD e ospitata nei servizi di Office 365, le nuove attivazioni di Microsoft Authenticator visualizzano gli UPN degli utenti. Gli account Microsoft Authenticator esistenti continueranno a visualizzare l'ObjectId dell'utente, ma continueranno a funzionare per le notifiche delle app per dispositivi mobili. 
+- Gli utenti di Microsoft Cloud Deutschland che usano il metodo di notifica app per dispositivi mobili per le richieste MFA visualizzano l'ObjectId (un GUID) dell'utente anziché il nome dell'entità utente (UPN) nell'app Microsoft Authenticator. Dopo che la migrazione del tenant di Azure AD è stata completata e ospitata nei servizi Office 365, le nuove Microsoft Authenticator degli utenti visualizzano gli UPN degli utenti. Gli Microsoft Authenticator esistenti continueranno a visualizzare l'ObjectId dell'utente, ma continueranno a funzionare per le notifiche delle app per dispositivi mobili. 
 
 - Per i tenant creati dopo il 22 ottobre 2019, le impostazioni predefinite di sicurezza possono essere abilitate automaticamente per il tenant quando viene migrato nel servizio Office 365. Gli amministratori tenant possono scegliere di lasciare abilitate le impostazioni predefinite di sicurezza e di registrarsi per la MFA oppure possono disabilitare la funzionalità. Per ulteriori informazioni, vedere [Disabling security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults). 
 
   > [!NOTE]
-  > Le organizzazioni che non sono abilitate automaticamente durante la migrazione potrebbero comunque essere registrate automaticamente in futuro poiché la funzionalità per abilitare le impostazioni predefinite di sicurezza è stata implementare nel servizio Office 365. Gli amministratori che scelgono di disabilitare o abilitare in modo esplicito le impostazioni predefinite di sicurezza possono farlo aggiornando la funzionalità in **Azure Active Directory > Proprietà**. Dopo che la funzionalità è stata abilitata in modo esplicito dall'amministratore, non verrà abilitata automaticamente.
+  > Le organizzazioni che non sono abilitate automaticamente durante la migrazione potrebbero comunque essere registrate automaticamente in futuro in quanto la funzionalità per abilitare le impostazioni predefinite di sicurezza viene implementazione nel servizio Office 365. Gli amministratori che scelgono di disabilitare o abilitare in modo esplicito le impostazioni predefinite di sicurezza possono farlo aggiornando la funzionalità in **Azure Active Directory > proprietà**. Dopo che la funzionalità è stata abilitata in modo esplicito dall'amministratore, non verrà abilitata automaticamente.
 
-- Verrà visualizzato un avviso sulla versione di Azure AD Connect nel portale di Office 365 Germany e nel portale di Office 365 dopo la migrazione del tenant. Può essere ignorato se l'avviso versione non mostra più l'avviso al termine della migrazione. Se è presente un avviso, prima o dopo la migrazione, in uno dei portali, Azure AD Connect deve essere aggiornato. Il messaggio di avviso indica: "È stato rilevato che si sta utilizzando uno strumento di sincronizzazione della directory non obsoleto. Ti consigliamo di accedere all'Area download Microsoft per ottenere la versione più recente di Azure AD Connect."
+- Verrà visualizzato un avviso sulla versione di Azure AD Connessione nel portale di Office 365 Germany e nel portale di Office 365 dopo la migrazione del tenant. Può essere ignorato se l'avviso versione non mostra più l'avviso al termine della migrazione. Se è presente un avviso, prima o dopo la migrazione, in uno dei portali, è necessario aggiornare Connessione azure AD. Il messaggio di avviso indica: "È stato rilevato che si sta utilizzando uno strumento di sincronizzazione della directory non obsoleto. Ti consigliamo di accedere all'Area download Microsoft per ottenere la versione più recente di Azure AD Connessione."
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 
-- [Migrazione da Microsoft Cloud Deutschland ai servizi di Office 365 nelle nuove aree data center tedesche](ms-cloud-germany-transition.md)
+- [Migrazione da Microsoft Cloud Deutschland ai servizi Office 365 nelle nuove aree data center tedesche](ms-cloud-germany-transition.md)
 - [Assistenza per la migrazione di Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
 - [Come acconsentire esplicitamente a eseguire la migrazione](ms-cloud-germany-migration-opt-in.md)
 - [Esperienza del cliente durante la migrazione](ms-cloud-germany-transition-experience.md)

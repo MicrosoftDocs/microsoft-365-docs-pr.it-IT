@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 3872be343e51c4e28f946192256932b048a23791
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933902"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843211"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti
 
@@ -63,17 +63,17 @@ I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicher
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>Per Windows 10 o Windows Server 2019
 
-1.  Aprire il file ZIP del pacchetto di configurazione VDI (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1.  Apri il pacchetto di configurazione VDI .zip file (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
 
-    1.  Nel riquadro di spostamento selezionare **Impostazioni**  >  **Onboarding.**
+    1.  Nel riquadro di spostamento selezionare **Impostazioni**  >  **onboarding**.
 
     1. Seleziona Windows 10 come sistema operativo.
 
     1.  Nel campo **Metodo di** distribuzione selezionare Script **di onboarding VDI per gli endpoint non persistenti.**
 
-    1. Fai **clic su Scarica** pacchetto e salva il file ZIP.
+    1. Fai **clic su Scarica pacchetto** e salva il file .zip file.
 
-2. Copiare i file dalla cartella WindowsDefenderATPOnboardingPackage estratta dal file ZIP nell'immagine `golden/master` nel percorso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
+2. Copiare i file dalla cartella WindowsDefenderATPOnboardingPackage estratta dal file .zip nell'immagine `golden/master` nel percorso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
 
     1. Se non stai implementando una singola voce per ogni dispositivo, copia WindowsDefenderATPOnboardingScript.cmd.
 
@@ -82,7 +82,7 @@ I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicher
     > [!NOTE]
     > Se la cartella non è `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` visualizzata, è possibile che sia nascosta. Dovrai scegliere l'opzione Mostra **cartelle e file** nascosti da Esplora file.
 
-3. Aprire una finestra Editor Criteri di gruppo locali e passare a **Configurazione computer** Impostazioni di  >  **Windows Script**  >    >  **Avvio**.
+3. Aprire una finestra Editor Criteri di gruppo locali e passare a **Configurazione computer**  >  **Windows Impostazioni**  >  **Script di**  >  **avvio**.
 
    > [!NOTE]
    > I Criteri di gruppo di dominio possono essere utilizzati anche per l'onboarding di dispositivi VDI non persistenti.
@@ -91,11 +91,11 @@ I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicher
 
    - Per una singola voce per ogni dispositivo:
    
-     Seleziona la **scheda Script di PowerShell,** quindi fai clic su **Aggiungi** (Esplora risorse si aprirà direttamente nel percorso in cui hai copiato lo script di onboarding in precedenza). Passare a script di PowerShell di `Onboard-NonPersistentMachine.ps1` onboarding. Non è necessario specificare l'altro file, perché verrà attivato automaticamente.
+     Selezionare la **scheda Script di PowerShell,** quindi fare clic **su** Aggiungi (Windows Explorer si aprirà direttamente nel percorso in cui è stato copiato lo script di onboarding in precedenza). Passare a script di PowerShell di `Onboard-NonPersistentMachine.ps1` onboarding. Non è necessario specificare l'altro file, perché verrà attivato automaticamente.
    
    - Per più voci per ogni dispositivo:
    
-     Seleziona la **scheda Script,** quindi fai clic su **Aggiungi** (Esplora risorse si aprirà direttamente nel percorso in cui hai copiato lo script di onboarding in precedenza). Passare allo script di onboarding bash `WindowsDefenderATPOnboardingScript.cmd` .
+     Seleziona la **scheda Script,** quindi fai clic su **Aggiungi** (Windows Explorer si aprirà direttamente nel percorso in cui hai copiato lo script di onboarding in precedenza). Passare allo script di onboarding bash `WindowsDefenderATPOnboardingScript.cmd` .
 
 5. Testare la soluzione:
 
@@ -111,7 +111,7 @@ I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicher
    
       - Per una singola voce per ogni dispositivo: 
     
-        Controlla solo una voce in Microsoft Defender Security Center.
+        Controllare solo una voce in Microsoft Defender Security Center.
 
       - Per più voci per ogni dispositivo: 
        
@@ -155,9 +155,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 Per ulteriori informazioni sui comandi di Gestione e manutenzione immagini distribuzione e sulla manutenzione offline, fare riferimento agli articoli seguenti:
-- [Modificare un'immagine Windows con Gestione e manutenzione immagini distribuzione](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [Gestione e manutenzione immagini distribuzione Command-Line opzioni](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Ridurre le dimensioni dell'archivio componenti in un'immagine Windows offline](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [Modificare un'Windows immagine con Gestione e manutenzione immagini distribuzione](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Gestione e manutenzione immagini distribuzione Command-Line opzioni](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [Ridurre le dimensioni dell'archivio componenti in un'immagine Windows offline](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 Se la manutenzione offline non è un'opzione valida per l'ambiente VDI non persistente, è necessario eseguire le operazioni seguenti per garantire la coerenza e l'integrità dei sensori:
 
@@ -184,8 +184,8 @@ Se la manutenzione offline non è un'opzione valida per l'ambiente VDI non persi
 5. Re-seal the golden/master image as you normally would.
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Onboardare dispositivi Windows 10 con Criteri di gruppo](configure-endpoints-gp.md)
-- [Onboard dei dispositivi Windows 10 con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboardare Windows 10 dispositivi con Criteri di gruppo](configure-endpoints-gp.md)
+- [Onboard Windows 10 dispositivi con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](configure-endpoints-mdm.md)
 - [Onboarding di dispositivi Windows 10 con uno script locale](configure-endpoints-script.md)
 - [Risolvere i problemi di onboarding di Microsoft Defender per endpoint](troubleshoot-onboarding.md)

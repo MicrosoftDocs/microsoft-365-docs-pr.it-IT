@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint per piattaforme non-Windows
-description: Informazioni sulle funzionalità di Microsoft Defender for Endpoint per piattaforme non Windows
+description: Informazioni sulle funzionalità di Microsoft Defender for Endpoint per le piattaforme non Windows desktop
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -39,15 +39,15 @@ Microsoft è in viaggio per estendere le funzionalità di sicurezza degli endpoi
 
 Le organizzazioni devono affrontare minacce su un'ampia gamma di piattaforme e dispositivi. I nostri team si sono impegnati a creare soluzioni di sicurezza non solo per *Microsoft,* ma anche da *Microsoft* per consentire ai clienti di proteggere e proteggere i propri ambienti eterogenei. Stiamo ascoltando il feedback dei clienti e stiamo collaborando a stretto contatto con i nostri clienti per creare soluzioni che soddisfino le loro esigenze.
 
-Con Microsoft Defender for Endpoint, i clienti possono usufruire di una visualizzazione unificata di tutte le minacce e gli avvisi in Microsoft Defender Security Center, su piattaforme Windows e non Windows, consentendo loro di ottenere un quadro completo di ciò che accade nel loro ambiente, consentendo loro di valutare e rispondere più rapidamente alle minacce.
+Con Microsoft Defender for Endpoint, i clienti possono usufruire di una visualizzazione unificata di tutte le minacce e gli avvisi nel Microsoft Defender Security Center, su piattaforme Windows e non Windows, consentendo loro di ottenere un quadro completo di ciò che accade nel loro ambiente, consentendo loro di valutare e rispondere più rapidamente alle minacce.
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender per endpoint su macOS 
 
-Microsoft Defender for Endpoint su macOS offre funzionalità di rilevamento e risposta (EDR) antivirus ed endpoint per le tre versioni più recenti rilasciate di macOS. I clienti possono distribuire e gestire la soluzione tramite Microsoft Endpoint Manager e Jamf. Come per le Microsoft Office in macOS, Microsoft Auto Update viene usato per gestire Gli aggiornamenti di Microsoft Defender for Endpoint su Mac. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)
+Microsoft Defender for Endpoint su macOS offre funzionalità di rilevamento e risposta (EDR) antivirus e degli endpoint per le tre versioni più recenti rilasciate di macOS. I clienti possono distribuire e gestire la soluzione Microsoft Endpoint Manager e Jamf. Come per le Microsoft Office in macOS, Microsoft Auto Update viene usato per gestire Gli aggiornamenti di Microsoft Defender per Endpoint su Mac. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)
 
 Per altri dettagli su come iniziare, visita la documentazione di Defender for Endpoint su [macOS.](microsoft-defender-endpoint-mac.md)
 
-## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender per Endpoint su Linux
+## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender per endpoint su Linux
 
 Microsoft Defender per Endpoint su Linux offre funzionalità preventive (AV) per i server Linux. Ciò include un'esperienza completa della riga di comando per configurare e gestire l'agente, avviare analisi e gestire le minacce. Sono supportate le versioni recenti delle sei distribuzioni più comuni di Linux Server: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS o versioni successive, SLES 12+, Debian 9+e Oracle Linux 7.2. Microsoft Defender for Endpoint su Linux può essere distribuito e configurato con Puppet, Ansible o con lo strumento di gestione della configurazione linux esistente. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
 
@@ -55,7 +55,7 @@ Per altri dettagli su come iniziare, visita la documentazione di Microsoft Defen
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender per Endpoint su Android
 
-Microsoft Defender per Endpoint su Android è la soluzione di difesa dalle minacce mobili per i dispositivi che eseguono Android 6.0 e versioni successive. Sono supportate entrambe le modalità Android Enterprise (Profilo di lavoro) e Amministratore dispositivo. In Android, microsoft offre protezione Web, che include anti-phishing, blocco delle connessioni non sicure e impostazione di indicatori personalizzati. La soluzione analizza il malware e le applicazioni potenzialmente indesiderate e offre ulteriori funzionalità di prevenzione delle violazioni tramite l'integrazione con Microsoft Endpoint Manager e Accesso condizionale. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)
+Microsoft Defender per Endpoint su Android è la soluzione di difesa dalle minacce mobili per i dispositivi che eseguono Android 6.0 e versioni successive. Sono supportate entrambe Enterprise Android (profilo di lavoro) e amministratore del dispositivo. In Android, microsoft offre protezione Web, che include anti-phishing, blocco delle connessioni non sicure e impostazione di indicatori personalizzati. La soluzione analizza il malware e le applicazioni potenzialmente indesiderate (PUA) e offre ulteriori funzionalità di prevenzione delle violazioni tramite l'integrazione con Microsoft Endpoint Manager e accesso condizionale. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)
 
 Per altri dettagli su come iniziare, visita la documentazione di Microsoft Defender per Endpoint [su](microsoft-defender-endpoint-android.md)Android.
 
@@ -65,9 +65,9 @@ Microsoft Defender for Endpoint su iOS è la soluzione di difesa dalle minacce m
 
 Per altri dettagli su come iniziare, visita la documentazione di Microsoft Defender for Endpoint su [iOS.](microsoft-defender-endpoint-ios.md)
 
-## <a name="licensing-requirements"></a>Requisiti per la licenza 
+## <a name="licensing-requirements"></a>Requisiti di licenza 
 
-Gli utenti con licenza idonea possono usare Microsoft Defender per Endpoint su un massimo di cinque dispositivi simultanei. Microsoft Defender for Endpoint è disponibile anche per l'acquisto da un provider di soluzioni cloud (CSP).
+Gli utenti con licenza idonea possono usare Microsoft Defender per Endpoint su un massimo di cinque dispositivi simultanei. Microsoft Defender for Endpoint è disponibile anche per l'acquisto da un Cloud Solution Provider (CSP).
 
 I clienti possono ottenere Microsoft Defender per Endpoint su macOS tramite una licenza autonoma di Microsoft Defender for Endpoint, come parte di Microsoft 365 A5/E5 o Microsoft 365 Security.
 

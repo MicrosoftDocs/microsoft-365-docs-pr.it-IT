@@ -1,5 +1,5 @@
 ---
-title: Creare una regola di notifica onboarding o offboarding
+title: Creare una regola di notifica di onboarding o offboarding
 description: Ricevere una notifica quando viene utilizzato uno script di onboarding o offboarding locale.
 keywords: onboarding, offboarding, locale, script, notifica, regola
 search.product: eADQiWindows 10XVcnh
@@ -44,8 +44,8 @@ Creare una regola di notifica in modo che quando viene utilizzato uno script di 
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 Dovrai avere accesso a:
- - Microsoft Flow (piano di flusso 1 come minimo). Per ulteriori informazioni, vedere [Flow pricing page.](https://flow.microsoft.com/pricing/)
- - Tabella di Azure o elenco o raccolta di SharePoint/SQL database
+ - Microsoft Flow (Flow piano 1 come minimo). Per ulteriori informazioni, vedere Flow [prezzi.](https://flow.microsoft.com/pricing/)
+ - Azure Table o SharePoint list or Library /SQL DB
 
 ## <a name="create-the-notification-flow"></a>Creare il flusso di notifica
 
@@ -63,7 +63,7 @@ Dovrai avere accesso a:
 
     ![Immagine del flusso di notifica](images/build-flow.png)
 
-4. Seleziona il pulsante + per aggiungere una nuova azione. La nuova azione sarà una richiesta HTTP all'API del Centro sicurezza Defender per endpoint. Puoi anche sostituirlo con il "connettore WDATP" (azione: "Machines - Get list of machines"). 
+4. Seleziona il pulsante + per aggiungere una nuova azione. La nuova azione sarà una richiesta HTTP all'API del Centro sicurezza Defender per endpoint. Puoi anche sostituirlo con il "connettore WDATP&quot; (azione: &quot;Machines - Get list of machines"). 
 
     ![Immagine della ricorrenza e dell'azione di aggiunta](images/recurrence-add.png)
 
@@ -73,11 +73,11 @@ Dovrai avere accesso a:
    - Metodo: "GET" come valore per ottenere l'elenco dei dispositivi.
    - URI: immettere `https://api.securitycenter.microsoft.com/api/machines` .
    - Autenticazione: selezionare "Active Directory OAuth".
-   - Tenant: accedi ad Azure Active Directory e passa ad https://portal.azure.com Azure Active Directory > **registrazioni delle app** e ottieni il valore dell'ID tenant.
+   - Tenant: accedi a e https://portal.azure.com passa a Azure Active Directory > app **e** ottieni il valore ID tenant.
    - Gruppo di destinatari: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - ID client: accedere ad Azure Active Directory > app e ottenere il https://portal.azure.com valore ID client. 
+   - ID client: accedi a e passa a Azure Active Directory > https://portal.azure.com **app e** ottieni il valore ID client.
    - Tipo di credenziale: selezionare "Segreto".
-   - Segreto: accedi ad Azure Active Directory e https://portal.azure.com passa ad Azure Active Directory > **registrazioni delle app** e ottieni il valore dell'ID tenant.
+   - Segreto: accedi a e https://portal.azure.com passa a Azure Active Directory > **registrazioni app** e ottieni il valore id tenant.
 
     ![Immagine delle condizioni HTTP](images/http-conditions.png)
 
@@ -176,9 +176,9 @@ Dovrai avere accesso a:
 
     ```
 
-10.  Estrarre i valori dalla chiamata JSON e verificare se i dispositivi onboarded sono già registrati nell'elenco di SharePoint come esempio:
+10.  Estrai i valori dalla chiamata JSON e verifica se i dispositivi onboarded sono già registrati nell'elenco SharePoint come esempio:
 - In caso affermativa, non verrà attivata alcuna notifica
-- Se no, registrerà i nuovi dispositivi onboarded nell'elenco di SharePoint e verrà inviata una notifica al Defender per l'amministratore dell'endpoint
+- In caso contrario, registrerà i nuovi dispositivi onboarded nell'elenco SharePoint e verrà inviata una notifica al Defender per l'amministratore dell'endpoint
 
     ![Immagine di applica a ogni](images/flow-apply.png)
 

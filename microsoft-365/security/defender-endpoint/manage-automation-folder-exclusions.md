@@ -1,5 +1,5 @@
 ---
-title: Gestire le esclusioni delle cartelle di automazione
+title: Gestione le esclusioni delle cartelle di automazione
 description: Aggiungi esclusioni di cartelle di automazione per controllare i file esclusi da un'indagine automatizzata.
 keywords: gestire, automazione, esclusione, bloccare, pulire, dannoso
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185838"
 ---
-# <a name="manage-automation-folder-exclusions"></a>Gestire le esclusioni delle cartelle di automazione 
+# <a name="manage-automation-folder-exclusions"></a>Gestione le esclusioni delle cartelle di automazione 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -59,7 +59,7 @@ Le esclusioni delle cartelle di automazione consentono di specificare le cartell
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>Aggiungere un'esclusione di cartella di automazione
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Esclusioni cartella automazione**.  
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **cartelle di automazione**.  
 
 2. Fare **clic su Esclusione nuova cartella.**  
 
@@ -77,17 +77,17 @@ Le esclusioni delle cartelle di automazione consentono di specificare le cartell
 > I comandi di Live Response per raccogliere o esaminare i file esclusi avranno esito negativo con l'errore: "File escluso". Inoltre, le indagini automatizzate ignoreranno gli elementi esclusi.
 
 ## <a name="edit-an-automation-folder-exclusion"></a>Modificare l'esclusione di una cartella di automazione 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Esclusioni cartella automazione**. 
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **cartelle di automazione**. 
 
 2. Fare **clic su** Modifica nell'esclusione della cartella.  
 
 3. Aggiornare i dettagli della regola e fare clic su **Salva.**
 
 ## <a name="remove-an-automation-folder-exclusion"></a>Rimuovere un'esclusione di cartelle di automazione 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Esclusioni cartella automazione**.  
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **cartelle di automazione**.  
 2. Fare clic **su Rimuovi esclusione.** 
 
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Gestire gli elenchi di automazione consentiti/bloccati](manage-indicators.md)
-- [Gestire i caricamenti di file di automazione](manage-automation-file-uploads.md)
+- [Gestire il caricamento di file di automazione](manage-automation-file-uploads.md)

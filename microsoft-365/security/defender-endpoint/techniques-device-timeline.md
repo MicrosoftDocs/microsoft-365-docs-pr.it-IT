@@ -96,7 +96,7 @@ Per visualizzare solo gli eventi o le tecniche, seleziona **Filtri** dalla seque
 
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzare e organizzare l'elenco Dispositivi](machines-view-overview.md)
+- [Visualizzare e organizzare l’elenco dispositivi](machines-view-overview.md)
 - [Flag di evento della sequenza temporale del dispositivo Microsoft Defender for Endpoint](device-timeline-event-flag.md) 
 
 

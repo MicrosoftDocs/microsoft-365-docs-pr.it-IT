@@ -1,7 +1,7 @@
 ---
 title: Gestione dei rischi insider Esplora contenuto
 description: Informazioni sulla gestione dei rischi insider Esplora contenuto in Microsoft 365
-keywords: Microsoft 365, gestione dei rischi insider, gestione dei rischi, conformità
+keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 311903cdd1409f4ab997641cc842ff199ce2500d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932752"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843107"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Concedere l'accesso msSP (Managed Security Service Provider) (anteprima)
 
@@ -41,9 +41,9 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
 
 1. Abilitare [il controllo dell'accesso](rbac.md) basato sui ruoli in Defender for Endpoint e connettersi ai gruppi di Active Directory (AD).
 
-2. Configurare i [pacchetti di accesso di](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) governance per la richiesta di accesso e il provisioning.
+2. Configurare i [pacchetti di accesso di](/azure/active-directory/governance/identity-governance-overview) governance per la richiesta di accesso e il provisioning.
 
-3. Gestire le richieste di accesso e i controlli in [Microsoft Myaccess.](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve)
+3. Gestire le richieste di accesso e i controlli in [Microsoft Myaccess.](/azure/active-directory/governance/entitlement-management-request-approve)
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint"></a>Abilitare i controlli di accesso basati sui ruoli in Microsoft Defender for Endpoint
 
@@ -58,7 +58,7 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
 
 2. Creare ruoli defender per endpoint per i livelli di accesso appropriati in Customer Defender for Endpoint.
 
-    Per abilitare RBAC nel cliente Microsoft Defender Security Center, accedere a Impostazioni **> Autorizzazioni > Ruoli** e "Attiva ruoli", da un account utente con diritti di amministratore globale o amministratore della sicurezza.
+    Per abilitare il controllo degli accessi in base al ruolo Microsoft Defender Security Center, accedere Impostazioni > Autorizzazioni > Ruoli e **"Attiva** ruoli" da un account utente con diritti di amministratore globale o amministratore della sicurezza.
 
     ![Immagine dell'accesso MSSP](images/mssp-access.png)
 
@@ -92,7 +92,7 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
 
     ![Immagine del nuovo catalogo](images/goverance-catalog.png)
 
-    Per ulteriori informazioni, vedere [Create a catalog of resources](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create).
+    Per ulteriori informazioni, vedere [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
 
 3. **Creare pacchetti di accesso per le risorse MSSP Customer AAD: Identity Governance**
@@ -109,7 +109,7 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
     > [!div class="mx-imgBorder"]
     > ![Immagine del nuovo pacchetto di accesso](images/new-access-package.png)
 
-    Per ulteriori informazioni, vedere [Create a new access package](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create).
+    Per ulteriori informazioni, vedere [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
 
 4. **Fornire il collegamento della richiesta di accesso alle risorse MSSP da Customer AAD: Identity Governance**
@@ -132,7 +132,7 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
     Esempio:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Approvare o rifiutare le richieste nella **sezione Approvazioni** dell'interfaccia utente.
 
-    A questo punto, è stato effettuato il provisioning dell'accesso degli analisti e ogni analista dovrebbe essere in grado di accedere al Microsoft Defender Security Center del cliente: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    A questo punto, è stato effettuato il provisioning dell'accesso dell'analista e ogni analista deve essere in grado di accedere ai dati del cliente Microsoft Defender Security Center:`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Accedere al portale clienti MSSP](access-mssp-portal.md)

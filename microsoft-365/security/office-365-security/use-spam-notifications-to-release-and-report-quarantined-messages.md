@@ -56,7 +56,7 @@ Una notifica di posta indesiderata dell'utente finale contiene le informazioni s
 
 - **Date**: data e ora (in UTC) in cui il messaggio è stato messo in quarantena.
 
-- **Blocca mittente:** fare clic su questo collegamento per aggiungere il mittente all'elenco Mittenti bloccati nella cassetta postale. Per ulteriori informazioni, vedere [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- **Blocca mittente:** fare clic su questo collegamento per aggiungere il mittente all'elenco Mittenti bloccati nella cassetta postale. Per ulteriori informazioni, vedere [Blocca mittente di posta](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Rilascio**: per i messaggi di posta indesiderata (non di phishing), è possibile rilasciare il messaggio qui senza andare in quarantena nel Centro sicurezza & conformità.
 

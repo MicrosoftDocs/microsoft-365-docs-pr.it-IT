@@ -31,11 +31,11 @@ ms.locfileid: "50924905"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurare la sincronizzazione della directory per Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Microsoft 365 usa un tenant di Azure Active Directory (Azure AD) per archiviare e gestire le identità per l'autenticazione e le autorizzazioni per accedere alle risorse basate sul cloud. 
+Microsoft 365 usa un tenant Azure Active Directory (Azure AD) per archiviare e gestire le identità per l'autenticazione e le autorizzazioni per accedere alle risorse basate sul cloud. 
 
-Se si dispone di un dominio o una foresta di Servizi di dominio Active Directory (AD DS) locale, è possibile sincronizzare gli account utente, i gruppi e i contatti di Servizi di dominio Active Directory con il tenant di Azure AD dell'abbonamento a Microsoft 365. Si tratta di un'identità ibrida per Microsoft 365. i cui componenti sono descritti di seguito.
+Se si dispone di un dominio o di una foresta di Servizi di dominio Active Directory locale, è possibile sincronizzare gli account utente, i gruppi e i contatti di Servizi di dominio Active Directory con il tenant di Azure AD della sottoscrizione di Microsoft 365. Si tratta di un'identità ibrida per Microsoft 365. i cui componenti sono descritti di seguito.
 
 ![Componenti della sincronizzazione della directory per Microsoft 365](../media/about-microsoft-365-identity/hybrid-identity.png)
 
@@ -57,12 +57,12 @@ Per altre informazioni, vedere [Identità ibride](plan-for-directory-synchroniza
   
 ## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Esaminare i prerequisiti per Azure AD Connect
 
-Ottieni un abbonamento gratuito ad Azure AD con l'abbonamento a Microsoft 365. Quando si configura la sincronizzazione della directory, si installa Azure AD Connect in uno dei server locali.
+Ottieni un abbonamento gratuito ad Azure AD con l'Microsoft 365 abbonamento. Quando si configura la sincronizzazione della directory, si installa Azure AD Connect in uno dei server locali.
   
 Per Microsoft 365 è necessario:
   
 - Verificare il dominio locale. La procedura guidata di Azure AD Connect illustra i passaggi necessari per questa operazione.
-- Ottenere i nomi utente e le password per gli account di amministratore del tenant di Microsoft 365 e di Servizi di dominio Active Directory.
+- Ottenere i nomi utente e le password per gli account di amministratore del tenant Microsoft 365 e servizi di dominio Active Directory.
 
 Per il server locale in cui si installa Azure AD Connect, sono necessari:
   
@@ -80,7 +80,7 @@ Per informazioni dettagliate sui requisiti hardware, software, per account e aut
 
 Prima di iniziare, eseguire le operazioni seguenti:
 
-- Nome utente e password di un amministratore globale di Microsoft 365
+- Nome utente e password di un amministratore Microsoft 365 globale
 - Assicurarsi di disporre del nome utente e della password di un amministratore del dominio di AD DS
 - Scegliere il metodo di autenticazione, tra PHS, PTA e federata
 - Indicare se si intende usare [Accesso Single Sign-On facile di Azure AD](/azure/active-directory/hybrid/how-to-connect-sso)
@@ -90,12 +90,12 @@ Eseguire la procedura seguente:
 1. Accedere all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) (https://admin.microsoft.com) e scegliere **Utenti** \> **Utenti attivi** nel riquadro di spostamento sinistro.
 2. Nella pagina **Utenti attivi** scegliere **Altro** (tre puntini) \> **Sincronizzazione della directory.**
   
-3. Nella pagina **Preparazione di Azure Active Directory** selezionare il collegamento Vai all'Area download per iniziare a usare lo strumento Azure AD **Connect.** 
+3. Nella pagina **Azure Active Directory preparazione** selezionare il collegamento Vai all'Area download per iniziare con lo strumento di Connessione **Azure AD.** 
 4. Seguire la procedura in [Roadmap di installazione di Azure AD Connect e Azure AD Connect Health](/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## <a name="3-finish-setting-up-domains"></a>3. Completare la configurazione dei domini
 
-Seguire i passaggi descritti in [Creare record DNS per Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) quando si gestiscono i record DNS per completare la configurazione dei domini.
+Seguire i passaggi descritti in [Create DNS records for Microsoft 365 when you manage your DNS records](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to finish setting up your domains.
 
 ## <a name="next-step"></a>Passaggio successivo
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Che si tratta dell'aggiunta di nuove soluzioni al Centro conformità, dell'aggiornamento delle funzionalità esistenti in base al feedback dell'utente o dell'implementazione di documentazione aggiornata e aggiornata, Microsoft 365 consente di rimanere al top del panorama di conformità in continua evoluzione. Scopri cosa abbiamo fatto fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: d312b3ac3c2cb43e05a09936f1e5c07b32c22ef1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706619"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843247"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -75,7 +75,7 @@ Ecco alcune delle modifiche apportate alle soluzioni Microsoft 365 conformità e
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- **Advanced eDiscovery raccolte ora** supporta il nuovo strumento [di raccolta e flusso di lavoro.](/microsoft-365/compliance/collections-overview) Altri nuovi argomenti includono [la creazione di una bozza di](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)raccolta, il commit di una bozza di raccolta in un insieme [di](/microsoft-365/compliance/commit-draft-collection)revisione e le statistiche e i report [di raccolta.](/microsoft-365/compliance/collection-statistics-reports)
+- **Advanced eDiscovery raccolte ora** supporta il nuovo strumento [di raccolta e flusso di lavoro.](/microsoft-365/compliance/collections-overview) Altri nuovi argomenti includono [la creazione di una bozza di](/microsoft-365/compliance/create-draft-collection)raccolta, il commit di una bozza di raccolta in un insieme [di](/microsoft-365/compliance/commit-draft-collection)revisione e le statistiche e i report [di raccolta.](/microsoft-365/compliance/collection-statistics-reports)
 - **Esportare documenti** in un set di revisione in [un](/microsoft-365/compliance/download-export-jobs) Archiviazione di Azure account.
 - **Modulo di codifica predittiva per Advanced eDiscovery**. Prima di tutto, esaminare la nuova funzionalità di [codifica predittiva](/microsoft-365/compliance/predictive-coding-overview) che sostituisce il modulo Pertinenza ritirato.
 
@@ -169,22 +169,22 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 
 Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 
-- [Informazioni su Endpoint DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [Informazioni sullo scanner locale Microsoft 365 prevenzione della perdita di dati](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [Introduzione allo scanner locale per la prevenzione della perdita di dati](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
-- [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](https://docs.microsoft.com/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [Uso di Prevenzione della perdita di dati degli endpoint](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-using)
-- [Introduzione alla prevenzione della perdita di dati degli endpoint](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [Informazioni su Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati](/microsoft-365/compliance/use-notifications-and-policy-tips)
+- [Informazioni sullo scanner locale Microsoft 365 prevenzione della perdita di dati](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [Introduzione allo scanner locale per la prevenzione della perdita di dati](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
+- [Uso di Prevenzione della perdita di dati degli endpoint](/microsoft-365/compliance/endpoint-dlp-using)
+- [Introduzione alla prevenzione della perdita di dati degli endpoint](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>eDiscovery
 
 Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 
-- [Decrittografia in Microsoft 365 eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-decryption)
-- [Query con parole chiave e condizioni di ricerca](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Ritiro del modulo Pertinenza in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/relevance-module-retirement)
-- [Utilizzare uno script per aggiungere utenti a un'esenzione in un caso di eDiscovery di base](https://docs.microsoft.com/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
+- [Decrittografia in Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery-decryption)
+- [Query con parole chiave e condizioni di ricerca](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
+- [Ritiro del modulo Pertinenza in Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
+- [Utilizzare uno script per aggiungere utenti a un'esenzione in un caso di eDiscovery di base](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### <a name="encryption"></a>Crittografia
 
@@ -192,30 +192,30 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 
 #### <a name="azure-rights-management-service-rms"></a>Azure Rights Management Service (RMS)
 
-- [Funzionalità di crittografia gestite dai clienti](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Exchange Online della posta elettronica con AD RMS](https://docs.microsoft.com/microsoft-365/compliance/information-rights-management-in-exchange-online). Il supporto per questo servizio è deprecato. Non è più possibile utilizzare AD RMS in un ambiente Exchange ibrido. Eseguire invece la migrazione ad Azure RMS.
+- [Funzionalità di crittografia gestite dai clienti](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
+- [Exchange Online della posta elettronica con AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). Il supporto per questo servizio è deprecato. Non è più possibile utilizzare AD RMS in un ambiente Exchange ibrido. Eseguire invece la migrazione ad Azure RMS.
 
 #### <a name="customer-key"></a>Customer Key
 
-- [Customer Key per Microsoft 365 a livello di tenant](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level)
-- [Panoramica di sicurezza e conformità](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+- [Customer Key per Microsoft 365 a livello di tenant](/microsoft-365/compliance/customer-key-tenant-level)
+- [Panoramica di sicurezza e conformità](/microsoftteams/security-compliance-overview)
 
 #### <a name="information-rights-management-irm"></a>Information Rights Management (IRM)
 
-- [Applicare Information Rights Management (IRM) a un elenco o a una raccolta.](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) Questi cloud nazionali non supportano questa impostazione:
+- [Applicare Information Rights Management (IRM) a un elenco o a una raccolta.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) Questi cloud nazionali non supportano questa impostazione:
     - Microsoft Cloud for US Government
     - Microsoft Cloud Germania
     - Azure e Microsoft 365 gestiti da 21Vianet in Cina)
-- [Configurare IRM per l'utilizzo di un server AD RMS locale.](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) Il supporto per questo servizio in un ambiente Exchange ibrido è deprecato.
+- [Configurare IRM per l'utilizzo di un server AD RMS locale.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) Il supporto per questo servizio in un ambiente Exchange ibrido è deprecato.
 
 ### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
 
 Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 
-- [Informazioni sui tipi di informazioni riservate](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [Creare un tipo di informazione riservata personalizzata usando PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Creare tipi di informazioni riservate personalizzati con classificazione basata su Corrispondenza esatta dati](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Definizioni delle entità tipo di informazioni sensibili](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [Informazioni sui tipi di informazioni riservate](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [Creare un tipo di informazione riservata personalizzata usando PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [Creare tipi di informazioni riservate personalizzati con classificazione basata su Corrispondenza esatta dati](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [Definizioni delle entità tipo di informazioni sensibili](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza

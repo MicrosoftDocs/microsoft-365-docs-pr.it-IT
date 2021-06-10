@@ -1,5 +1,5 @@
 ---
-title: Gestire gli indicatori
+title: Gestire indicatori
 ms.reviewer: ''
 description: Gestire gli indicatori per un hash di file, un indirizzo IP, url o domini che definiscono il rilevamento, la prevenzione e l'esclusione delle entità.
 keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185946"
 ---
-# <a name="manage-indicators"></a>Gestire gli indicatori
+# <a name="manage-indicators"></a>Gestire indicatori
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "51185946"
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Indicatori**.
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **indicatori**.
 
 2. Seleziona la scheda del tipo di entità che vuoi gestire.  
 
@@ -49,7 +49,7 @@ Puoi anche scegliere di caricare un file CSV che definisce gli attributi degli i
 
 Scarica il file CSV di esempio per conoscere gli attributi di colonna supportati.
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Indicatori**.
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **indicatori**.
 
 2. Seleziona la scheda del tipo di entità per cui vuoi importare gli indicatori.
 
@@ -57,7 +57,7 @@ Scarica il file CSV di esempio per conoscere gli attributi di colonna supportati
 
 4. Selezionare **Importa**. Eseguire questa operazione per tutti i file che si desidera importare. 
 
-5. Scegliere **Fatto**.
+5. Scegliere **Fine**.
 
 Nella tabella seguente sono illustrati i parametri supportati.
 
@@ -73,13 +73,13 @@ gravità | Enum | Gravità dell'indicatore. I valori possibili sono: "Informatio
 recommendedActions | Stringa | Azioni consigliate per l'avviso dell'indicatore TI. **Facoltativo**
 rbacGroupNames | Stringa | Elenco delimitato da virgole di nomi di gruppi RBAC a cui verrà applicato l'indicatore. **Facoltativo**
 category | Stringa | Categoria dell'avviso. Alcuni esempi sono l'esecuzione e l'accesso alle credenziali. **Facoltativo**
-mitretechniques| Stringa | MiTRE techniques code/id (comma separated). Per ulteriori informazioni, vedere [Tattiche aziendali.](https://attack.mitre.org/tactics/enterprise/) **Facoltativo** È consigliabile aggiungere un valore nella categoria quando si utilizza una tecnica MITRE.
+mitretechniques| Stringa | MiTRE techniques code/id (comma separated). Per ulteriori informazioni, vedere [Enterprise tattiche](https://attack.mitre.org/tactics/enterprise/). **Facoltativo** È consigliabile aggiungere un valore nella categoria quando si utilizza una tecnica MITRE.
 
 Per altre informazioni, vedi Le categorie di avviso di Microsoft Defender per endpoint sono ora allineate a [MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
 
 ## <a name="see-also"></a>Vedere anche
 - [Creare indicatori](manage-indicators.md)
-- [Creare indicatori per i file](indicator-file.md)
+- [Creare indicatori per file](indicator-file.md).
 - [Creare indicatori per IP e URL/domini](indicator-ip-domain.md)
 - [Creare indicatori in base ai certificati](indicator-certificates.md)

@@ -1,6 +1,6 @@
 ---
-title: Nascondere l'interfaccia di Microsoft Defender Antivirus
-description: Puoi nascondere il riquadro protezione da virus e minacce nell'app Sicurezza di Windows.
+title: Nascondere l Antivirus Microsoft Defender interno
+description: Puoi nascondere il riquadro protezione da virus e minacce nell Sicurezza di Windows app.
 keywords: blocco dell'interfaccia utente, modalità headless, nascondere l'app, nascondere le impostazioni, nascondere l'interfaccia
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274917"
 ---
-# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedire agli utenti di visualizzare o interagire con l'interfaccia utente di Microsoft Defender Antivirus
+# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedire agli utenti di visualizzare o interagire con l'Antivirus Microsoft Defender utente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,22 +32,22 @@ ms.locfileid: "52274917"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Puoi usare Criteri di gruppo per impedire agli utenti degli endpoint di visualizzare l'interfaccia di Microsoft Defender Antivirus. È inoltre possibile impedire loro di sospendere le analisi.
+È possibile usare Criteri di gruppo per impedire agli utenti degli endpoint di visualizzare l Antivirus Microsoft Defender interno. È inoltre possibile impedire loro di sospendere le analisi.
 
-## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Nascondere l'interfaccia di Microsoft Defender Antivirus
+## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Nascondere l Antivirus Microsoft Defender interno
 
-In Windows 10, versione 1703, nascondere l'interfaccia nasconde le notifiche di Microsoft Defender Antivirus e impedire la visualizzazione del riquadro Protezione dalle minacce di Virus & nell'app Sicurezza di Windows.
+In Windows 10 versione 1703 nascondere l'interfaccia nasconderà le notifiche Antivirus Microsoft Defender e impedirà la visualizzazione del riquadro Protezione dalle minacce di Virus & nell'app Sicurezza di Windows.
 
 Con l'impostazione impostata su **Abilitato**:
 
-![Screenshot of Windows Security without the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-1703.png)
+![Screenshot di Sicurezza di Windows senza l'icona scudo e la sezione protezione da virus e minacce](images/defender/wdav-headless-mode-1703.png)
 
 Con l'impostazione impostata **su Disabilitato** o non configurata:
 
-![Screenshot of Windows Security showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
+![Screenshot del Sicurezza di Windows che mostra l'icona scudo e la sezione protezione da virus e minacce](images/defender/wdav-headless-mode-off-1703.png)
 
 >[!NOTE]
->Nascondere l'interfaccia impedirà anche la visualizzazione delle notifiche di Microsoft Defender Antivirus nell'endpoint. Verranno comunque visualizzate le notifiche di Microsoft Defender for Endpoint. Puoi anche configurare [singolarmente le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md)
+>Nascondere l'interfaccia impedirà inoltre Antivirus Microsoft Defender notifiche sull'endpoint. Verranno comunque visualizzate le notifiche di Microsoft Defender for Endpoint. Puoi anche configurare [singolarmente le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md)
 
 Nelle versioni precedenti di Windows 10, l'impostazione nasconde l'Windows Defender client. Se l'utente tenta di aprirla, riceverà un avviso che indica che l'amministratore di sistema ha limitato l'accesso a questa app.
 
@@ -61,7 +61,7 @@ Nelle versioni precedenti di Windows 10, l'impostazione nasconde l'Windows Defen
 
 3. Fare clic **su Modelli amministrativi**.
 
-4. Espandi l'albero **fino a visualizzare i componenti di Windows >'interfaccia > Client di Microsoft Defender Antivirus.**
+4. Espandere l'albero per **Windows componenti > Antivirus Microsoft Defender >'interfaccia client**.
 
 5. Fai doppio clic sull'impostazione Abilita modalità interfaccia utente **headless** e imposta l'opzione su **Abilitato.** Fare clic su **OK**. 
 
@@ -82,14 +82,14 @@ Vedi [Impedire agli utenti di modificare localmente le impostazioni dei criteri]
 
 3. Fare clic **su Modelli amministrativi**.
 
-4. Espandere l'albero fino **ai componenti di Windows** Microsoft Defender  >  **Antivirus**  >  **Scan.**
+4. Espandere l'albero per **Windows componenti**  >  **Antivirus Microsoft Defender**  >  **scan**.
 
 5. Fare doppio clic **sull'impostazione Consenti agli utenti di sospendere l'analisi** e impostare l'opzione su **Disabilitato.** Fare clic su **OK**. 
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Configurare le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md)
+- [Configurare le notifiche che vengono visualizzate negli endpoint](configure-notifications-microsoft-defender-antivirus.md)
 
-- [Configurare l'interazione dell'utente finale con Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Configurare l'interazione dell'utente finale con Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

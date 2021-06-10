@@ -59,7 +59,7 @@ Per abilitare e configurare la protezione always-on:
        | Impostazione | Descrizione | Impostazione predefinita |
        |-----------------------------|------------------------|-------------------------------|
        | Consenti avvio del servizio antimalware con priorità normale | È possibile ridurre la priorità del motore di Antivirus Microsoft Defender, che può essere utile nelle distribuzioni leggere in cui si desidera disporre di un processo di avvio il più snello possibile. Ciò può influire sulla protezione dell'endpoint. | Abilitato
-       | Consenti al servizio antimalware di rimanere sempre in esecuzione | Se gli aggiornamenti della protezione sono stati disabilitati, è possibile impostare Antivirus Microsoft Defender'esecuzione. In questo modo si riduce la protezione nell'endpoint. | Disabilitato |
+       | Consenti al servizio antimalware di rimanere sempre in esecuzione | Se gli aggiornamenti della protezione sono stati disabilitati, è possibile impostare Antivirus Microsoft Defender'esecuzione. In questo modo si riduce la protezione nell'endpoint. | Disattivato |
     
     1. Configurare l'impostazione in base alle esigenze e fare clic su **OK.**
     
@@ -92,15 +92,15 @@ Per abilitare e configurare la protezione always-on:
 
 5. Configurare l'impostazione Antivirus Microsoft Defender criteri di analisi dei dati. Per eseguire l'operazione:  
 
-    1. Nel riquadro **sinistro dell'albero di Microsoft Defender Antivirus** fai clic su **Analizza.**
+    1. Nel riquadro **Antivirus Microsoft Defender** albero a sinistra fare clic su **Analizza.**
     
-       ![Opzioni di analisi di Microsoft Defender Antivirus](images/gpedit-windows-defender-antivirus-scan.png)
+       ![Antivirus Microsoft Defender Opzioni di analisi](images/gpedit-windows-defender-antivirus-scan.png)
 
     1. Nel riquadro **Dei** dettagli analisi a destra fare doppio clic sull'impostazione del criterio come specificato nella tabella seguente:
 
        | Impostazione | Descrizione | Impostazione predefinita |
        |-----------------------------|------------------------|-------------------------------|    
-       | Attivare l'euristica | La protezione euristica disabiliterà o blocleverà le attività sospette immediatamente prima che al motore di Microsoft Defender Antivirus venga richiesto di rilevare l'attività. | Abilitato |
+       | Attivare l'euristica | La protezione euristica disabiliterà o blocleverà le attività sospette immediatamente prima che al motore Antivirus Microsoft Defender venga richiesto di rilevare l'attività. | Abilitato |
 
     1. Configurare l'impostazione in base alle esigenze e fare clic su **OK.**
     
@@ -118,11 +118,11 @@ Per disabilitare la protezione in tempo reale in Criteri di gruppo:
 
 1. Aprire **Editor Criteri di gruppo locali.**
 
-   1. Nella casella di ricerca della barra delle applicazioni di Windows 10 digita **gpedit.**
+   1. Nella casella di Windows 10 della barra delle applicazioni digitare **gpedit**.
    
    1. In **Corrispondenza ottimale** fare clic su Modifica Criteri di **gruppo** per avviare Editor Criteri di **gruppo locali.**
 
-2.  Nel riquadro sinistro dell'Editor Criteri di **gruppo locali** espandere l'albero fino a Configurazione **computer** Modelli amministrativi Componenti  >    >  **di**  >  **Windows Microsoft Defender Antivirus**  >  **Real-time Protection**.
+2.  Nel riquadro sinistro dell'Editor Criteri di gruppo **locali** espandere l'albero fino a Configurazione computer Modelli amministrativi  >    >  **Windows componenti**  >  **Antivirus Microsoft Defender**  >  **Protezione in tempo reale**.
 
 3. Nel riquadro **dei dettagli protezione** in tempo reale a destra fare doppio clic su Disattiva protezione in tempo **reale.**
 
@@ -139,4 +139,4 @@ Per disabilitare la protezione in tempo reale in Criteri di gruppo:
 ## <a name="related-articles"></a>Articoli correlati
 
 - [Configurare la protezione comportamentale, euristica e in tempo reale](configure-protection-features-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

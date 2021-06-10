@@ -1,7 +1,7 @@
 ---
 title: Eseguire azioni sui risultati delle query di ricerca avanzate in Microsoft 365 Defender
 description: Affrontare rapidamente le minacce e gli asset interessati nei risultati delle query di ricerca avanzate
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, azione
+keywords: ricerca avanzata, ricerca di minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, agire
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -46,7 +46,7 @@ Puoi contenere rapidamente minacce o affrontare asset compromessi che trovi nell
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 Per essere in grado di eseguire azioni tramite la ricerca avanzata, è necessario un ruolo in Microsoft Defender per Endpoint con autorizzazioni per inviare azioni di correzione [nei dispositivi](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Se non è possibile eseguire un'azione, contattare un amministratore globale per ottenere l'autorizzazione seguente:
 
-*Azioni di correzione attive > gestione delle minacce e delle vulnerabilità - Gestione delle correzioni*
+*Azioni di correzione attive > minacce e gestione delle vulnerabilità - Gestione delle correzioni*
 
 ## <a name="take-various-actions-on-devices"></a>Eseguire varie azioni sui dispositivi
 Puoi eseguire le azioni seguenti nei dispositivi identificati dalla `DeviceId` colonna nei risultati delle query:
@@ -72,7 +72,7 @@ Per ulteriori informazioni su come vengono eseguite le azioni di quarantena e su
 >[!NOTE]
 >Per individuare i file e mettereli in quarantena, i risultati della query devono includere `DeviceId` anche valori come identificatori di dispositivo.  
 
-## <a name="take-action"></a>Eseguire un'azione
+## <a name="take-action"></a>Entra in azione
 Per eseguire una delle azioni descritte, selezionare uno o più record nei risultati della query e quindi fare clic **su Azioni.** Una procedura guidata ti guiderà nel processo di selezione e invio delle azioni preferite.
 
 ![Immagine del record selezionato con il pannello per l'ispezione del record](../../media/mtp-ah/ah-take-actions.png)
@@ -81,7 +81,7 @@ Per eseguire una delle azioni descritte, selezionare uno o più record nei risul
 Ogni azione viene registrata singolarmente nel centro notifiche [in](m365d-action-center.md) **Cronologia centro** notifiche (  >   [security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Passare al centro notifiche per controllare lo stato di ogni azione.
  
 >[!NOTE]
->Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender](m365d-enable.md) per cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in [Migrate advanced hunting queries from Microsoft Defender for Endpoint.](advanced-hunting-migrate-from-mde.md)
+>Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender per](m365d-enable.md) cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in Eseguire la migrazione di query di ricerca avanzate da [Microsoft Defender per Endpoint.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)

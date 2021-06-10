@@ -48,7 +48,7 @@ L Sicurezza di Windows app è un'interfaccia client Windows 10 versione 1703 e s
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Esaminare le impostazioni di protezione da virus e minacce nell Sicurezza di Windows app
 
-![Screenshot dell'etichetta Impostazioni di protezione da & virus nell'app Sicurezza di Windows virus](images/defender/wdav-protection-settings-wdsc.png)
+![Screenshot dell'etichetta Impostazioni di Protezione da virus e minacce nell'app Sicurezza di Windows](images/defender/wdav-protection-settings-wdsc.png)
 
 1. Apri l Sicurezza di Windows app facendo clic sull'icona scudo nella barra delle applicazioni o cercando Defender nel menu **Start.**
 
@@ -57,7 +57,7 @@ L Sicurezza di Windows app è un'interfaccia client Windows 10 versione 1703 e s
 Le sezioni seguenti descrivono come eseguire alcune delle attività più comuni durante la revisione o l'interazione con la protezione dalle minacce fornita da Antivirus Microsoft Defender nell'app Sicurezza di Windows sicurezza.
 
 > [!NOTE]
-> Se queste impostazioni vengono configurate e distribuite tramite Criteri di gruppo, le impostazioni descritte in questa sezione saranno disattivate e non saranno disponibili per l'utilizzo nei singoli endpoint. Le modifiche apportate tramite un oggetto Criteri di gruppo devono prima essere distribuite a singoli endpoint prima che l'impostazione venga aggiornata in Windows Impostazioni. [L'argomento Configure end-user interaction with Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md) descrive come configurare le impostazioni di sostituzione dei criteri locali.
+> Se queste impostazioni vengono configurate e distribuite tramite Criteri di gruppo, le impostazioni descritte in questa sezione saranno disattivate e non saranno disponibili per l'utilizzo nei singoli endpoint. Le modifiche apportate tramite un oggetto Criteri di gruppo devono essere distribuite nei singoli endpoint prima che l'impostazione venga aggiornata nelle impostazioni di Windows. [L'argomento Configure end-user interaction with Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md) descrive come configurare le impostazioni di sostituzione dei criteri locali.
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>Eseguire un'analisi con l Sicurezza di Windows app
 

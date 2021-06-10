@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ca429ca1fea125450fdbb8d1f3a0e3a745513d8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 56d4ac95ab49310cc5fc74168158672e7a0d65d1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245697"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843223"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Domande frequenti sulla riduzione della superficie di attacco
 
@@ -127,7 +127,7 @@ Mantenere la regola in modalità di controllo per circa 30 giorni per ottenere u
 
 ## <a name="im-making-the-switch-from-a-third-party-security-solution-to-defender-for-endpoint-is-there-an-easy-way-to-export-rules-from-another-security-solution-to-asr"></a>Sto passando da una soluzione di sicurezza di terze parti a Defender for Endpoint. Esiste un modo "semplice" per esportare le regole da un'altra soluzione di sicurezza a AsR?
 
-Nella maggior parte dei casi, è più facile e meglio iniziare con i suggerimenti di base suggeriti da [Defender per Endpoint](https://docs.microsoft.com/windows/security/threat-protection) piuttosto che tentare di importare regole da un'altra soluzione di sicurezza. Usa quindi strumenti come la modalità di controllo, il monitoraggio e l'analisi per configurare la nuova soluzione in base alle tue esigenze specifiche. 
+Nella maggior parte dei casi, è più facile e meglio iniziare con i suggerimenti di base suggeriti da [Defender per Endpoint](/windows/security/threat-protection) piuttosto che tentare di importare regole da un'altra soluzione di sicurezza. Usa quindi strumenti come la modalità di controllo, il monitoraggio e l'analisi per configurare la nuova soluzione in base alle tue esigenze specifiche. 
 
 La configurazione predefinita per la maggior parte delle regole asr, combinata con la protezione in tempo reale di Defender for Endpoint, proteggerà da un gran numero di exploit e vulnerabilità.
 
@@ -135,7 +135,7 @@ Da Defender for Endpoint puoi aggiornare le difese con indicatori personalizzati
 
 ## <a name="does-asr-support-file-or-folder-exclusions-that-include-system-variables-and-wildcards-in-the-path"></a>Il ripristino del servizio di ripristino dei dati supporta le esclusioni di file o cartelle che includono variabili di sistema e caratteri jolly nel percorso?
 
-Sì. Per ulteriori informazioni sull'utilizzo di variabili di sistema e caratteri jolly nei [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) percorsi di file esclusi, vedere Esclusione di file e cartelle dalle regole di Ripristino configurazione guidata. Per ulteriori informazioni sull'utilizzo di variabili di sistema e caratteri jolly nei percorsi di file esclusi, vedere Esclusione di file e cartelle dalle regole [asr.](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)
+Sì. Per ulteriori informazioni sull'utilizzo di variabili di sistema e caratteri jolly nei [](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) percorsi di file esclusi, vedere Esclusione di file e cartelle dalle regole di Ripristino configurazione guidata. Per ulteriori informazioni sull'utilizzo di variabili di sistema e caratteri jolly nei percorsi di file esclusi, vedere Esclusione di file e cartelle dalle regole [asr.](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)
 
 ## <a name="do-asr-rules-cover-all-applications-by-default"></a>Le regole asr coprono tutte le applicazioni per impostazione predefinita?
 
@@ -175,14 +175,14 @@ Poiché molti processi legittimi durante un giorno tipico chiameranno il lsass.e
 
 ## <a name="is-it-a-good-idea-to-enable-the-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-alongside-lsa-protection"></a>È una buona idea abilitare la regola Block *credential stealing from the Windows local security authority subsystem (lsass.exe)* insieme alla protezione LSA?
 
-L'abilitazione di questa regola non offre ulteriore protezione se è abilitata anche la protezione [LSA.](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Sia la regola che la protezione LSA funzionano in modo molto identico, quindi avere entrambi in esecuzione contemporaneamente sarebbe ridondante. Tuttavia, a volte potrebbe non essere possibile abilitare la protezione LSA. In questi casi, è possibile abilitare questa regola per fornire una protezione equivalente contro il malware di destinazione lsass.exe.
+L'abilitazione di questa regola non offre ulteriore protezione se è abilitata anche la protezione [LSA.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Sia la regola che la protezione LSA funzionano in modo molto identico, quindi avere entrambi in esecuzione contemporaneamente sarebbe ridondante. Tuttavia, a volte potrebbe non essere possibile abilitare la protezione LSA. In questi casi, è possibile abilitare questa regola per fornire una protezione equivalente contro il malware di destinazione lsass.exe.
 
 ## <a name="see-also"></a>Vedere anche
 
 * [Panoramica della riduzione della superficie di attacco](attack-surface-reduction.md)
-* [Rilevare regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
+* [Valutare le regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
 * [Personalizzare regole per la riduzione della superficie di attacco](customize-attack-surface-reduction.md)
 * [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
-* [Compatibilità di Microsoft Defender con altri antivirus/antimalware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+* [Compatibilità di Microsoft Defender con altri antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 

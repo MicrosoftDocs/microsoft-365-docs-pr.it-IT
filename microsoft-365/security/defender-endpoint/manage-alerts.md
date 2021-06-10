@@ -98,7 +98,7 @@ Creare regole personalizzate per controllare quando gli avvisi vengono eliminati
 
 #### <a name="view-the-list-of-suppression-rules"></a>Visualizzare l'elenco delle regole di eliminazione
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Eliminazione avviso.**
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **avviso.**
 
 2. L'elenco delle regole di eliminazione mostra tutte le regole create dagli utenti dell'organizzazione.
 

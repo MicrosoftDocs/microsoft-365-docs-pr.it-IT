@@ -147,7 +147,7 @@ I passaggi seguenti possono essere utilizzati per risolvere e attenuare questi p
 
 5. Configurare Microsoft Defender per Endpoint su Linux con esclusioni per i processi o i percorsi del disco che contribuiscono ai problemi di prestazioni e ri-abilitare la protezione in tempo reale.
 
-    Per altre informazioni, vedi [Configurare e convalidare le esclusioni per Microsoft Defender per Endpoint su Linux.](linux-exclusions.md)
+    Per ulteriori informazioni, vedere [Configurare e convalidare le esclusioni per Microsoft Defender per endpoint su Linux](linux-exclusions.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Analizzare i problemi di integrità degli agenti](health-status.md)
+- [Esaminare i problemi di integrità dell'agente](health-status.md)

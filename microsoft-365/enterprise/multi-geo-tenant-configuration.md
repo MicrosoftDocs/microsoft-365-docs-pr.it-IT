@@ -110,7 +110,7 @@ La procedura contenuta in questa sezione richiede il [modulo di Microsoft Azure 
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Provisioning di OneDrive e l'effetto della posizione dati preferita
 
-Se l'utente ha già un sito OneDrive creato nel tenant, impostare il PDL non sposterà automaticamente il OneDrive esistente. Per spostare OneDrive di un utente, vedere [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md).
+Se l'utente ha già un sito OneDrive creato nel tenant, impostare il PDL non sposterà automaticamente il OneDrive esistente. Per spostare la posizione di un utente OneDrive, vedere OneDrive for Business [Geo Move](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
 > Exchange Online sposta automaticamente la cassetta postale dell'utente se il PLD cambia e MailboxRegion non corrisponde più al codice di posizione geografica del database delle cassette postali. Per ulteriori informazioni, vedere [Administering Exchange Online mailboxes in a multi-geo environment](./administering-exchange-online-multi-geo.md).
