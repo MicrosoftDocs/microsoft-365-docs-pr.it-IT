@@ -1,6 +1,6 @@
 ---
-title: API REST hello world per Microsoft 365 Defender
-description: Scopri come creare un'app e usare un token per accedere alle API di Microsoft 365 Defender
+title: Hello World per l'API REST Microsoft 365 Defender
+description: Scopri come creare un'app e usare un token per accedere alle API Microsoft 365 Defender
 keywords: app, token, accesso, aad, app, registrazione dell'applicazione, powershell, script, amministratore globale, autorizzazione, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51064717"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>API REST hello world per Microsoft 365 Defender
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World per l'API REST Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -46,13 +46,13 @@ Il completamento del progetto dovrebbe richiedere da 5 a 10 minuti. Questa stima
 
 1. Accedere ad [Azure](https://portal.azure.com) come utente con il **ruolo amministratore** globale.
 
-2. Passare ad **Azure Active Directory** App  >  **registrations** Nuova  >  **registrazione**.
+2. Passare **a** Azure Active Directory  >  **app Nuove**  >  **registrazioni**.
 
-   ![Immagine di Microsoft Azure e spostamento nella registrazione dell'applicazione](../../media/atp-azure-new-app2.png)
+   ![Immagine dell'Microsoft Azure e della navigazione per la registrazione dell'applicazione](../../media/atp-azure-new-app2.png)
 
 3. Nel modulo di registrazione scegliere un nome per l'applicazione, quindi selezionare **Registra.** La selezione di un URI di reindirizzamento è facoltativa. Non è necessario per completare questo esempio.
 
-4. Nella pagina dell'applicazione seleziona **Autorizzazioni API** Aggiungi le API di autorizzazione che l'organizzazione usa >, digita  >    >   Microsoft **Threat Protection** e seleziona Microsoft **Threat Protection.** La tua app ora può accedere a Microsoft 365 Defender.
+4. Nella pagina dell'applicazione seleziona **Autorizzazioni API** Aggiungi API di autorizzazione che l'organizzazione usa  >    >   >, digita **Microsoft Threat Protection** e seleziona **Microsoft Threat Protection**. La tua app può ora accedere Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* è un ex nome di Microsoft 365 Defender e non verrà visualizzato nell'elenco originale. È necessario iniziare a scrivere il nome nella casella di testo per visualizzarlo.
@@ -79,7 +79,7 @@ Il completamento del progetto dovrebbe richiedere da 5 a 10 minuti. Questa stima
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Ottieni un token usando l'app e usa il token per accedere all'API
 
-Per altre informazioni sui token di Azure Active Directory, vedi l'esercitazione [su Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Per altre informazioni sui token Azure Active Directory, vedi l'esercitazione [su Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 > [!IMPORTANT]
 > Anche se l'esempio in questa app demo ti incoraggia a incollare il valore segreto a scopo di test, non dovresti mai codificare i segreti in modo **hardcoded** in un'applicazione in esecuzione in produzione. Una terza parte potrebbe usare il segreto per accedere alle risorse. Puoi proteggere i segreti dell'app usando [Azure Key Vault.](/azure/key-vault/general/about-keys-secrets-certificates) Per un esempio pratico di come proteggere la tua app, vedi Gestire i segreti [nelle app server con Azure Key Vault.](/learn/modules/manage-secrets-with-azure-key-vault/)
@@ -172,10 +172,10 @@ Hai finito. Hai avuto esito positivo:
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Panoramica delle API di Microsoft 365 Defender](api-overview.md)
+- [Microsoft 365 Panoramica delle API defender](api-overview.md)
 - [Accedere alle API di Microsoft 365 Defender](api-access.md)
-- [Creare un'app per accedere a Microsoft 365 Defender senza un utente](api-create-app-web.md)
-- [Creare un'app per accedere alle API di Microsoft 365 Defender per conto di un utente](api-create-app-user-context.md)
-- [Creare un'app con accesso partner multi-tenant alle API di Microsoft 365 Defender](api-partner-access.md)
+- [Creare un'app per accedere Microsoft 365 Defender senza un utente](api-create-app-web.md)
+- [Creare un'app per accedere Microsoft 365 DEFENDER API per conto di un utente](api-create-app-user-context.md)
+- [Creare un'app con accesso partner multi-tenant alle API Microsoft 365 Defender](api-partner-access.md)
 - [Gestire i segreti nelle app server con Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [Autorizzazione OAuth 2.0 per l'accesso utente e l'accesso api](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

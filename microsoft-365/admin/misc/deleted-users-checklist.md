@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: Seguire questo elenco di controllo durante l'eliminazione dell'account Microsoft 365 di un utente.
+description: Seguire questo elenco di controllo durante l'eliminazione dell'account Microsoft 365 utente.
 ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50914763"
 
 A volte può rendersi necessario eliminare un utente dall'organizzazione, ad esempio quando un dipendente lascia l'azienda. Prima e dopo l'eliminazione dell'utente è necessario eseguire alcune operazioni, descritte in questo breve elenco di controllo.
   
-## <a name="remove-the-microsoft-365-license-from-the-user"></a>Rimuovere la licenza di Microsoft 365 dall'utente
+## <a name="remove-the-microsoft-365-license-from-the-user"></a>Rimuovere la Microsoft 365 dall'utente
 
 È possibile rimuovere una licenza da un utente cercando l'utente nella home page o nella pagina **Utenti** attivi e quindi selezionandoli. Nella scheda **Licenze e app** deselezionare la casella di controllo per la licenza che si desidera rimuovere dall'utente. [Leggere l'articolo completo](../manage/remove-licenses-from-users.md).
   
@@ -50,7 +50,7 @@ A volte può rendersi necessario eliminare un utente dall'organizzazione, ad ese
   
 ## <a name="what-to-do-with-the-unassigned-license"></a>Cosa fare con la licenza rimossa
 
-Se si dispone di un nuovo dipendente o di una persona che si unisce all'organizzazione, è possibile assegnargli questa licenza in modo che possa usare Microsoft 365. Cercare l'utente nella home page o nella pagina **Utenti attivi** e selezionarlo. Nella scheda **Licenze e app** selezionare la casella di controllo per la licenza che si desidera aggiungere al nuovo utente. [Leggere l'articolo completo](../manage/assign-licenses-to-users.md).
+Se si dispone di un nuovo dipendente o di una persona che si unisce all'organizzazione, è possibile assegnare loro questa licenza in modo che possano usare Microsoft 365. Cercare l'utente nella home page o nella pagina **Utenti attivi** e selezionarlo. Nella scheda **Licenze e app** selezionare la casella di controllo per la licenza che si desidera aggiungere al nuovo utente. [Leggere l'articolo completo](../manage/assign-licenses-to-users.md).
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>Rimuovere la licenza per interromperne il pagamento
 

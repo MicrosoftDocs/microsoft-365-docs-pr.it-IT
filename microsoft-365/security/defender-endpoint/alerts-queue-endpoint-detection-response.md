@@ -30,7 +30,7 @@ ms.locfileid: "51067402"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -39,13 +39,13 @@ Informazioni su come visualizzare e gestire la coda in modo da analizzare in mod
 ## <a name="in-this-section"></a>Contenuto della sezione
 Argomento | Descrizione 
 :---|:---
-[Visualizzare e organizzare la coda avvisi](alerts-queue.md) | Mostra un elenco di avvisi contrassegnati nella rete.
+[Visualizzare e organizzare la coda di avvisi](alerts-queue.md) | Mostra un elenco di avvisi contrassegnati nella rete.
 [Gestire gli avvisi](manage-alerts.md) | Informazioni su come gestire gli avvisi, ad esempio modificarne lo stato, assegnarlo a un membro delle operazioni di sicurezza e visualizzare la cronologia di un avviso.
 [Esaminare gli avvisi](investigate-alerts.md)| Analizzare gli avvisi che interessano la rete, comprenderne il significato e come risolverli.
-[Analizzare i file](investigate-files.md)| Analizzare i dettagli di un file associato a un avviso, un comportamento o un evento specifico. 
-[Analizzare i dispositivi](investigate-machines.md)| Analizzare i dettagli di un dispositivo associato a un avviso, un comportamento o un evento specifico. 
-[Analizzare un indirizzo IP](investigate-ip.md) | Esaminare le possibili comunicazioni tra i dispositivi della rete e gli indirizzi IP (Internet Protocol) esterni.
-[Analizzare un dominio](investigate-domain.md) | Analizzare un dominio per verificare se i dispositivi e i server della rete comunicano con un dominio dannoso noto. 
-[Analizzare un account utente](investigate-user.md) | Identificare gli account utente con gli avvisi più attivi e analizzare i casi di potenziali credenziali compromesse.  
+[Esaminare i file](investigate-files.md)| Analizzare i dettagli di un file associato a un avviso, un comportamento o un evento specifico. 
+[Esaminare i dispositivi](investigate-machines.md)| Analizzare i dettagli di un dispositivo associato a un avviso, un comportamento o un evento specifico. 
+[Esaminare un indirizzo IP](investigate-ip.md) | Esaminare le possibili comunicazioni tra i dispositivi della rete e gli indirizzi IP (Internet Protocol) esterni.
+[Esaminare un dominio](investigate-domain.md) | Analizzare un dominio per verificare se i dispositivi e i server della rete comunicano con un dominio dannoso noto. 
+[Esaminare un account utente](investigate-user.md) | Identificare gli account utente con gli avvisi più attivi e analizzare i casi di potenziali credenziali compromesse.  
 
 

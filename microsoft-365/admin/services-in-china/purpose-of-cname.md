@@ -39,8 +39,8 @@ Dettagli tecnici: quando si esegue un'applicazione client che funziona con Offic
   
 Se tale record CNAME non è presente per il proprio dominio, queste applicazioni useranno un endpoint di autenticazione predefinito negli Stati Uniti, il che potrebbe rallentare l'autenticazione. Se il record CNAME non è configurato in modo corretto, ad esempio se il campo **Indirizzo di puntamento** contiene un errore di digitazione, queste applicazioni non verranno autenticate.
   
- **Se Office 365 gestisce i record DNS del dominio,** Office 365 configura automaticamente questo record CNAME. 
+ **Se Office 365 i record DNS** del dominio, Office 365 il record CNAME automaticamente. 
   
  **Se si gestiscono record DNS per il** dominio nell'host DNS, è possibile creare manualmente questo record seguendo le istruzioni [per l'host DNS.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
   
-Se si sta pianificando una distribuzione di Office 365 e si desiderano ulteriori informazioni su tutti i record DNS che potrebbe essere necessario aggiungere o aggiornare, vedere Informazioni su di essi in Riferimento: record di Domain Name System esterni per [Office 365](../../enterprise/external-domain-name-system-records.md).
+Se si sta pianificando una distribuzione di Office 365 e si desiderano ulteriori informazioni su tutti i record DNS che potrebbe essere necessario aggiungere o aggiornare, vedere Informazioni su di essi in [Riferimento:](../../enterprise/external-domain-name-system-records.md)record del sistema dei nomi di dominio esterno per Office 365 .

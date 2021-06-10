@@ -99,13 +99,13 @@ Vai alla sezione **Report analista** per leggere la dettagliata scrittura di esp
 Nella sezione **Mitigazioni** esaminare l'elenco di suggerimenti specifici che consentono di aumentare la resilienza dell'organizzazione contro la minaccia. L'elenco delle mitigazioni rilevate include:
 
 - **Aggiornamenti della sicurezza:** distribuzione di aggiornamenti della sicurezza o patch per le vulnerabilità
-- **Impostazioni di Microsoft Defender Antivirus**
+- **Antivirus Microsoft Defender impostazioni**
   - Versione di Security Intelligence
-  - Protezione basata sul cloud  
+  - Protezione fornita dal cloud  
   - Protezione delle applicazioni potenzialmente indesiderate
   - Protezione in tempo reale
  
-Le informazioni di mitigazione contenute in questa sezione incorporano i dati della gestione delle minacce e delle [vulnerabilità,](next-gen-threat-and-vuln-mgt.md)che forniscono inoltre informazioni dettagliate di drill-down da vari collegamenti nel report.
+Le informazioni di mitigazione contenute in questa sezione incorporano i dati di [gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md), che forniscono inoltre informazioni dettagliate sul drill-down da vari collegamenti nel report.
 
 ![Immagine della sezione mitigazioni di un report di analisi delle minacce ](images/ta-mitigations.png)
  _Sezione Mitigazioni di un report di analisi delle minacce_
@@ -117,7 +117,7 @@ Quando si utilizzano i report, tenere presente quanto segue:
 - I grafici riflettono solo le mitigazioni rilevate. Controllare la panoramica del report per ulteriori mitigazioni che non vengono visualizzate nei grafici.
 - Le mitigazioni non garantiscono resilienza completa. Le mitigazioni fornite riflettono le migliori azioni possibili necessarie per migliorare la resilienza.
 - I dispositivi vengono conteggiati come "non disponibili" se non hanno trasmesso dati al servizio.
-- Le statistiche relative all'antivirus si basano sulle impostazioni di Microsoft Defender Antivirus. I dispositivi con soluzioni antivirus di terze parti possono apparire come "esposti".
+- Le statistiche relative all'antivirus si basano Antivirus Microsoft Defender impostazioni. I dispositivi con soluzioni antivirus di terze parti possono apparire come "esposti".
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Trovare in modo proattivo le minacce con la ricerca avanzata](advanced-hunting-overview.md) 

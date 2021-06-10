@@ -35,7 +35,7 @@ ms.locfileid: "51932584"
 **Si applica a:**
 - Microsoft 365 Defender
 
-La tabella nello schema di ricerca avanzata contiene informazioni su varie entità, ad esempio file, indirizzi IP, URL, utenti o dispositivi, associate agli avvisi di `AlertEvidence` Microsoft Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni su varie entità, ad esempio file, indirizzi IP, URL, utenti o dispositivi, associate agli avvisi di `AlertEvidence` Microsoft Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for [](advanced-hunting-overview.md) Identity. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 

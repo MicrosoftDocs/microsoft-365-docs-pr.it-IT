@@ -1,6 +1,6 @@
 ---
 title: Creare e gestire ruoli per il controllo dell'accesso basato sui ruoli
-description: Creare ruoli e definire le autorizzazioni assegnate al ruolo come parte dell'implementazione del controllo di accesso basato sui ruoli in Microsoft Defender Security Center
+description: Creare ruoli e definire le autorizzazioni assegnate al ruolo nell'ambito dell'implementazione del controllo di accesso basato sui ruoli nel Microsoft Defender Security Center
 keywords: ruoli utente, ruoli, controllo degli accessi in base al ruolo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,20 +28,20 @@ ms.locfileid: "51065949"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Creare ruoli e assegnare il ruolo a un gruppo di Azure Active Directory
+## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Creare ruoli e assegnare il ruolo a un Azure Active Directory gruppo
 
-La procedura seguente illustra come creare ruoli in Microsoft Defender Security Center. Si presuppone che siano già stati creati gruppi di utenti di Azure Active Directory.
+La procedura seguente illustra come creare ruoli in Microsoft Defender Security Center. Si presuppone che siano già stati creati Azure Active Directory gruppi di utenti.
 
-1. Accedere a [Microsoft Defender Security Center con](https://securitycenter.windows.com/) un account con un amministratore della sicurezza o un ruolo amministratore globale assegnato.
+1. Accedere a [Microsoft Defender Security Center](https://securitycenter.windows.com/) con un account con un ruolo amministratore della sicurezza o amministratore globale assegnato.
 
-2. Nel riquadro di spostamento selezionare **Impostazioni > ruoli**.
+2. Nel riquadro di spostamento selezionare Impostazioni > **ruoli**.
 
 3. Selezionare **Aggiungi elemento**.
 
@@ -62,12 +62,12 @@ La procedura seguente illustra come creare ruoli in Microsoft Defender Security 
 
 - **Visualizzare i dati**
     - **Operazioni di sicurezza** - Visualizzare tutti i dati relativi alle operazioni di sicurezza nel portale
-    - **Gestione delle minacce e delle vulnerabilità** - Visualizzare i dati di gestione delle minacce e delle vulnerabilità nel portale
+    - **Minacce e gestione delle vulnerabilità** - Visualizzare gestione di minacce e vulnerabilità dati nel portale
 
 - **Azioni di correzione attive**
     - **Operazioni di sicurezza:** eseguire azioni di risposta, approvare o ignorare le azioni di correzione in sospeso, gestire gli elenchi consentiti/bloccati per l'automazione e gli indicatori
-    - **Gestione delle minacce e delle vulnerabilità - Gestione delle eccezioni** - Creare nuove eccezioni e gestire le eccezioni attive
-    - **Gestione delle minacce e delle** vulnerabilità - Gestione delle correzioni - Inviare nuove richieste di correzione, creare ticket e gestire le attività di correzione esistenti
+    - **Minacce e gestione delle vulnerabilità - Gestione delle eccezioni** - Creare nuove eccezioni e gestire le eccezioni attive
+    - **Minacce e gestione delle vulnerabilità - Gestione** delle correzioni - Inviare nuove richieste di correzione, creare ticket e gestire le attività di correzione esistenti
 
 - **Analisi degli** avvisi- Gestire gli avvisi, avviare indagini automatizzate, eseguire analisi, raccogliere pacchetti di analisi, gestire tag del dispositivo e scaricare solo file eseguibili portatili (PE) 
 
@@ -85,7 +85,7 @@ La procedura seguente illustra come creare ruoli in Microsoft Defender Security 
     - **Comandi** avanzati:
         - Scaricare un file dal dispositivo remoto tramite risposta live
         - Scaricare file PE e non PE dalla pagina dei file
-        - Caricare un file nel dispositivo remoto
+        - Upload un file nel dispositivo remoto
         - Visualizzare uno script dalla raccolta file
         - Eseguire uno script nel dispositivo remoto dalla raccolta file
 
@@ -93,9 +93,9 @@ Per altre informazioni sui comandi disponibili, vedi [Analizzare i dispositivi c
   
 ## <a name="edit-roles"></a>Modificare i ruoli
 
-1. Accedere a [Microsoft Defender Security Center con](https://securitycenter.windows.com/) l'account con il ruolo amministratore della sicurezza o amministratore globale assegnato.
+1. Accedere a [Microsoft Defender Security Center](https://securitycenter.windows.com/) account con il ruolo amministratore della sicurezza o amministratore globale assegnato.
 
-2. Nel riquadro di spostamento selezionare **Impostazioni > ruoli**.
+2. Nel riquadro di spostamento selezionare Impostazioni > **ruoli**.
 
 3. Seleziona il ruolo che vuoi modificare.
 
@@ -107,9 +107,9 @@ Per altre informazioni sui comandi disponibili, vedi [Analizzare i dispositivi c
 
 ## <a name="delete-roles"></a>Eliminare ruoli
 
-1. Accedere a [Microsoft Defender Security Center con](https://securitycenter.windows.com/) l'account con il ruolo amministratore della sicurezza o amministratore globale assegnato.
+1. Accedere a [Microsoft Defender Security Center](https://securitycenter.windows.com/) account con il ruolo amministratore della sicurezza o amministratore globale assegnato.
 
-2. Nel riquadro di spostamento selezionare **Impostazioni > ruoli**.
+2. Nel riquadro di spostamento selezionare Impostazioni > **ruoli**.
 
 3. Selezionare il ruolo che si desidera eliminare.
 
@@ -118,4 +118,4 @@ Per altre informazioni sui comandi disponibili, vedi [Analizzare i dispositivi c
 ## <a name="related-topic"></a>Argomento correlato
 
 - [Autorizzazioni di base dell'utente per accedere al portale](basic-permissions.md)
-- [Creare e gestire gruppi di dispositivi](machine-groups.md)
+- [Creazione e gestione di gruppi di dispositivi](machine-groups.md)

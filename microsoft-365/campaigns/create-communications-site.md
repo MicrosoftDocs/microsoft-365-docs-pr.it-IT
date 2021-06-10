@@ -44,7 +44,7 @@ Includere gli elementi seguenti nel sito Comunicazioni:
 4. Aggiungere eventi a una **web part Eventi** in modo che tutti possano vedere cosa sta per arrivare.
 5. Aggiungere foto che gli utenti possono usare o condividere in una **web part Raccolta immagini.**
 
-![Diagramma di una pagina comunicazioni di SharePoint con spazio per gli elementi comuni necessari per una campagna](../media/m365-democracy-comms-site.png)
+![Diagramma di una pagina SharePoint comunicazioni con spazio per gli elementi comuni necessari per una campagna](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>Infografica: Creare un'infografica sito di comunicazione
 
@@ -57,11 +57,11 @@ I collegamenti seguenti per PowerPoint e PDF possono essere scaricati e stampati
 ## <a name="set-it-up"></a>Configurazione
 
 1. Accedere a https://Office.com.
-2. Nell'angolo superiore sinistro della pagina selezionare l'icona di avvio delle app e quindi il **riquadro di SharePoint.** Se il riquadro di **SharePoint** non è visualizzato, fare clic sul riquadro **Siti** o **su Tutti** se SharePoint non è visibile.
-3. Nella parte superiore della home page di SharePoint fare clic su **+ Crea sito** e scegliere l'opzione Sito **di** comunicazione.
+2. Nell'angolo in alto a sinistra della pagina seleziona l'icona di avvio delle app e quindi seleziona il SharePoint **riquadro.** Se non viene visualizzato il **riquadro** SharePoint,  fare clic  sul riquadro Siti o su Tutti se SharePoint non è visibile.
+3. Nella parte superiore della home page SharePoint fare clic su **+ Crea sito** e scegliere l'opzione Sito **di** comunicazione.
 
-Informazioni sui [siti di comunicazione](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) e su come creare un sito di comunicazione in [SharePoint Online.](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)
+Informazioni sui [siti di comunicazione](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) e su come creare un sito di comunicazione in SharePoint [Online.](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)
 
 ## <a name="admin-settings"></a>Impostazioni amministratore
 
-Se il collegamento **+** Crea sito non è visualizzato, la creazione di siti in modalità self-service potrebbe non essere disponibile in Microsoft 365. Per creare un sito del team, contattare la persona che amministra Microsoft 365 nell'organizzazione. Se si è un amministratore di Microsoft 365, vedere Gestire la creazione di siti [in SharePoint Online](/sharepoint/manage-site-creation) per abilitare la creazione di siti in modalità self-service per l'organizzazione o Gestire i siti nella nuova interfaccia di amministrazione di [SharePoint](/sharepoint/manage-sites-in-new-admin-center) per creare un sito dall'interfaccia di amministrazione di SharePoint Online.
+Se il collegamento +  Crea sito non è visualizzato, la creazione di siti in modalità self-service potrebbe non essere disponibile in Microsoft 365. Per creare un sito del team, contattare la persona che amministra Microsoft 365 nell'organizzazione. Se si è un amministratore di Microsoft 365, vedere Gestire la creazione di siti [in SharePoint Online](/sharepoint/manage-site-creation) per abilitare la creazione di siti in modalità self-service per l'organizzazione o Gestire i siti nella nuova interfaccia di amministrazione di [SharePoint](/sharepoint/manage-sites-in-new-admin-center) per creare un sito dall'interfaccia di amministrazione di SharePoint Online.

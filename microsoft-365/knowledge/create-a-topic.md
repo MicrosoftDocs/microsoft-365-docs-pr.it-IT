@@ -32,8 +32,8 @@ In Viva Topics puoi creare un nuovo argomento se non ne viene individuato uno tr
 ## <a name="requirements"></a>Requisiti
 
 Per creare un nuovo argomento, è necessario:
-- Avere una licenza Viva Topics.
-- Disporre delle autorizzazioni [**per gli utenti che possono creare o modificare argomenti.**](./topic-experiences-user-permissions.md) Gli amministratori della knowledge base possono concedere agli utenti questa autorizzazione nelle impostazioni delle autorizzazioni dell'argomento Viva Topics. 
+- Avere una licenza di Viva Topics.
+- Disporre delle autorizzazioni per [**Who creare o modificare argomenti.**](./topic-experiences-user-permissions.md) Gli amministratori delle informazioni possono assegnare questa autorizzazione nelle impostazioni delle autorizzazioni per gli argomenti di Viva Topics. 
 
 > [!Note] 
 > Gli utenti che dispongono dell'autorizzazione per gestire gli argomenti nel Centro argomenti (responsabili della knowledge base) dispongono già delle autorizzazioni per creare e modificare gli argomenti.
@@ -42,23 +42,23 @@ Per creare un nuovo argomento, è necessario:
 
 È possibile creare un nuovo argomento da due posizioni:
 
-- Home page del Centro argomenti:  qualsiasi utente con licenza con autorizzazione Chi può creare o modificare argomenti (collaboratori) può creare un nuovo argomento dal Centro argomenti selezionando il **menu** Nuovo e selezionando **Pagina Argomento.** 
+- Home page del Centro argomenti: qualsiasi utente con licenza con il **Who** può creare o modificare l'autorizzazione per gli argomenti (collaboratori) può creare un nuovo argomento dal Centro argomenti selezionando il **menu** Nuovo e selezionando Pagina **Argomento.** 
 
     ![Nuovo argomento dal Centro argomenti](../media/knowledge-management/new-topic.png)  
 
-- Pagina Gestisci argomenti: qualsiasi  utente con licenza che dispone dell'autorizzazione Chi può gestire gli argomenti (responsabili della knowledge base) può creare un nuovo argomento dalla pagina Gestisci argomenti nel Centro argomenti selezionando Pagina Nuovo **argomento.** 
+- Pagina Gestisci argomenti: qualsiasi  utente con licenza Who può gestire l'autorizzazione degli argomenti (responsabili della conoscenza) può creare un nuovo argomento dalla pagina Gestisci argomenti nel Centro argomenti selezionando Pagina Nuovo **argomento.** 
 
     ![Nuovo argomento da gestire gli argomenti](../media/knowledge-management/new-topic-topic-center.png)  
 
 ### <a name="to-create-a-new-topic"></a>Per creare un nuovo argomento:
 
-1. Selezionare l'opzione per creare una nuova pagina argomento dalla barra multifunzione nella pagina Gestisci argomenti.
+1. Selezionare l'opzione per creare una nuova pagina dell'argomento dalla barra multifunzione della pagina Gestisci argomenti.
 
-2.  Nella sezione **Assegnare un nome all'argomento** digitare il nome del nuovo argomento.
+2.  Nella sezione **Assegna un nome all'argomento** digitare il nome del nuovo argomento.
 
     ![Assegnare un nome a questo argomento](../media/knowledge-management/k-new-topic-page.png)  
 
-3. Nella sezione **Nomi alternativi** digitare eventuali altri nomi a cui potrebbe fare riferimento l'argomento. 
+3. Nella sezione **Nomi alternativi** digitare altri nomi a cui l'argomento potrebbe fare riferimento. 
 
     ![Nomi alternativi](../media/knowledge-management/alt-names.png)  
 
@@ -66,23 +66,23 @@ Per creare un nuovo argomento, è necessario:
 
     ![Descrizione dell'argomento](../media/knowledge-management/description.png)
 
-4. Nella sezione **Persone** aggiunte puoi "aggiungere" una persona per mostrargli di avere una connessione all'argomento (ad esempio, un proprietario di una risorsa connessa). Iniziare digitando il nome o  l'indirizzo di posta elettronica nella casella Aggiungi un nuovo utente e quindi selezionare l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "sbloccarli" selezionando l'icona Rimuovi **dall'elenco** nella scheda utente. Puoi anche trascinare la persona in un'altra posizione dell'elenco.
+4. Nella sezione **Persone** aggiunte puoi "aggiungere" una persona per mostrargli di avere una connessione all'argomento (ad esempio, un proprietario di una risorsa connessa). Per iniziare, digitare il nome o l'indirizzo di posta elettronica nella casella **Aggiungi un nuovo utente**, quindi selezionare l'utente da aggiungere dai risultati della ricerca. Puoi anche "sbloccarli" selezionando l'icona Rimuovi **dall'elenco** nella scheda utente. Puoi anche trascinare la persona in un'altra posizione dell'elenco.
  
     ![Persone aggiunte](../media/knowledge-management/pinned-people.png)
 
-5. Nella sezione **File e** pagine aggiunti è possibile aggiungere o aggiungere un file o una pagina del sito di SharePoint associata all'argomento.
+5. Nella sezione **File e pagine aggiunti** è possibile aggiungere un file o una pagina del sito di SharePoint associata all'argomento.
 
    ![File e pagine aggiunti](../media/knowledge-management/pinned-files-and-pages.png)
  
-    Per aggiungere un nuovo file, **selezionare** Aggiungi , selezionare il sito di SharePoint dai siti frequenti o seguiti e quindi selezionare il file dalla raccolta documenti del sito.
+    Per aggiungere un nuovo file, selezionare **Aggiungi,** selezionare il sito SharePoint dai siti frequenti o seguiti e quindi selezionare il file dalla raccolta documenti del sito.
 
-    Puoi anche usare **l'opzione Da un collegamento** per aggiungere un file o una pagina specificando l'URL. 
+    È anche possibile usare l'opzione **Da un collegamento** per aggiungere un file o una pagina fornendo l'URL. 
 
     > [!Note] 
-    > I file e le pagine aggiunti devono trovarsi nello stesso tenant di Microsoft 365. Se vuoi aggiungere un collegamento a una risorsa esterna nell'argomento, puoi aggiungerlo tramite l'icona canvas nel passaggio 8.
+    > I file e le pagine aggiunti devono trovarsi nello stesso tenant Microsoft 365 tenant. Se vuoi aggiungere un collegamento a una risorsa esterna nell'argomento, puoi aggiungerlo tramite l'icona canvas nel passaggio 8.
 
 
-6.  La **sezione Siti correlati** mostra i siti che dispongono di informazioni sull'argomento. 
+6.  La sezione **Siti correlati** mostra i siti con informazioni sull'argomento. 
 
     ![Sezione Siti correlati](../media/knowledge-management/related-sites.png)
 
@@ -90,7 +90,7 @@ Per creare un nuovo argomento, è necessario:
     
     ![Seleziona sito](../media/knowledge-management/sites.png)
 
-7. La **sezione Argomenti correlati** mostra le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il pulsante Connetti **a** un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
+7. La **sezione Argomenti correlati** mostra le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il **pulsante Connessione a** un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
 
    ![Argomenti correlati](../media/knowledge-management/related-topic.png)  
 
@@ -110,13 +110,13 @@ Per creare un nuovo argomento, è necessario:
 
    ![Conferma rimozione](../media/knowledge-management/remove-related-confirm.png) 
 
-8. Puoi anche aggiungere elementi statici alla pagina (ad esempio testo, immagini o collegamenti) selezionando l'icona dell'area di disegno, che puoi trovare sotto la breve descrizione. Selezionandolo verrà aperta la casella degli strumenti di SharePoint da cui è possibile scegliere l'elemento che si desidera aggiungere alla pagina.
+8. Puoi anche aggiungere elementi statici alla pagina (ad esempio testo, immagini o collegamenti) selezionando l'icona dell'area di disegno, che puoi trovare sotto la breve descrizione. Selezionandolo si aprirà SharePoint casella degli strumenti da cui è possibile scegliere l'elemento che si desidera aggiungere alla pagina.
 
    ![Icona Canvas](../media/knowledge-management/webpart-library.png) 
 
 9. Selezionare **Pubblica** per salvare le modifiche. 
 
-Dopo aver pubblicato la pagina, il nome dell'argomento, il nome alternativo, la descrizione e gli utenti aggiunti verranno visualizzati per tutti gli utenti con licenza che visualizzano l'argomento. File, pagine e siti specifici verranno visualizzati nella pagina dell'argomento solo se il visualizzatore dispone delle autorizzazioni di Office 365 per l'elemento. 
+Dopo aver pubblicato la pagina, il nome dell'argomento, il nome alternativo, la descrizione e gli utenti aggiunti verranno visualizzati da tutti gli utenti con licenza che visualizzano l'argomento. Alcuni file, pagine e siti verranno visualizzati nella pagina dell'argomento solo se l'utente dispone delle autorizzazioni di Office 365 per l'elemento. 
 
 
 

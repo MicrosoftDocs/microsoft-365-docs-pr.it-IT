@@ -315,4 +315,4 @@ Esempio:
 
 - [Valutare la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
 
-- [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction.md)
+- [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction.md)

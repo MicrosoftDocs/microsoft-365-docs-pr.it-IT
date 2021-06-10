@@ -1,6 +1,6 @@
 ---
-title: Impostazioni del fuso orario di Microsoft Defender Security Center
-description: Usa le informazioni contenute qui per configurare le impostazioni del fuso orario di Microsoft Defender Security Center e visualizzare le informazioni sulla licenza.
+title: Microsoft Defender Security Center fuso orario
+description: Usa le informazioni contenute qui per configurare le impostazioni Microsoft Defender Security Center fuso orario e visualizzare le informazioni sulla licenza.
 keywords: impostazioni, Microsoft Defender, cybersecurity threat intelligence, Microsoft Defender for Endpoint, fuso orario, utc, ora locale, licenza
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932632"
 ---
-# <a name="microsoft-defender-security-center-time-zone-settings"></a>Impostazioni del fuso orario di Microsoft Defender Security Center
+# <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender Security Center fuso orario
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -73,7 +73,7 @@ Per applicare formati di data diversi per Microsoft Defender for Endpoint, usa l
 
 **Internet Explorer (IE) e Microsoft Edge**
 
-IE e Microsoft Edge usano **le impostazioni area** geografica configurate nell'opzione **Orologi,** lingua e area geografica nel Pannello di controllo. 
+IE e Microsoft Edge le **impostazioni area** geografica configurate nell'opzione **Orologi,** lingua e area geografica nel Pannello di controllo. 
 
 
 #### <a name="known-issues-with-regional-formats"></a>Problemi noti con i formati regionali

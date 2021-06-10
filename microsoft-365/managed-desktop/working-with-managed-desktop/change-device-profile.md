@@ -28,7 +28,7 @@ Puoi modificare i [profili dispositivo](../service-description/profiles.md) asse
 
 Il profilo del dispositivo selezionato verrà applicato a tutti i dispositivi selezionati nel primo passaggio. Per spostare dispositivi separati in profili diversi, dovrai ripetere questo processo per ogni profilo di dispositivo. 
 
-1. In Microsoft Endpoint Manager seleziona **Dispositivi**   nel riquadro sinistro. Nella sezione **Microsoft Managed Desktop** del menu seleziona  **Dispositivi.**  
+1. In Microsoft Endpoint Manager selezionare **Dispositivi**   nel riquadro sinistro. Nella sezione **Microsoft Managed Desktop** del menu seleziona  **Dispositivi.**  
 2. Selezionare le caselle di controllo per i dispositivi che si desidera modificare. 
 3. Selezionare **Cambia profilo dispositivo**; viene aperto un riquadro a comparsa.
 4. Usa il menu a discesa per selezionare il nuovo profilo del dispositivo.

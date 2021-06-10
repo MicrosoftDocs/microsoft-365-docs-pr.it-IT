@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
-description: Informazioni su come accedere a Microsoft Bookings in Microsoft 365.
+description: Scopri come accedere a Microsoft Bookings in Microsoft 365.
 ms.openlocfilehash: 7b1582a480ac4fdcd5a131febcc59450aa13e299
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.locfileid: "50913767"
 Le prenotazioni possono essere attivate o disattivate per l'intera organizzazione o per utenti specifici. Quando attivi Bookings per gli utenti, può creare una pagina Prenotazioni, creare un calendario e consentire ad altre persone di prenotare tempo con loro.
 
 > [!NOTE]
-> I controlli di amministrazione descritti in queste sezioni non sono disponibili per i clienti di Office 365 Gestito da 21Vianet (Cina).
+> I controlli di amministrazione descritti in queste sezioni non sono disponibili per Office 365 clienti gestiti da 21Vianet (Cina).
 
-## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Attivare o disattivare Prenotazioni per l'organizzazione tramite l'interfaccia di amministrazione di Microsoft 365
+## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Attivare o disattivare Bookings per l'organizzazione tramite l'Microsoft 365 di amministrazione
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 come amministratore globale.
+1. Accedi all'Microsoft 365 di amministrazione come amministratore globale.
 
-2. Nell'interfaccia di amministrazione, andare a  **Impostazioni**   \> **Impostazioni organizzazione** e selezionare **Prenotazioni.**
+2. Nell'interfaccia di amministrazione passare a  **Impostazioni**   \> **organizzazione Impostazioni** e selezionare **Prenotazioni**.
 
 3. Seleziona la casella di controllo **Consenti all'organizzazione di usare Bookings** per abilitare o disabilitare Bookings per l'organizzazione.
 
@@ -38,7 +38,7 @@ Le prenotazioni possono essere attivate o disattivate per l'intera organizzazion
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>Attivare o disattivare Bookings per l'organizzazione tramite PowerShell
 
-Per attivare o disattivare Bookings per l'organizzazione utilizzando il cmdlet [PowerShell Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), connettersi a [PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) ed eseguire il comando seguente:
+Per attivare o disattivare Bookings per l'organizzazione utilizzando il cmdlet [PowerShell Set-OrganizationConfig,](/powershell/module/exchange/set-organizationconfig)Connessione per Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ed eseguire il comando seguente:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
@@ -48,7 +48,7 @@ Per attivare o disattivare Bookings per l'organizzazione utilizzando il cmdlet [
 
 È possibile disabilitare Bookings per singoli utenti.
 
-1. Passare all'interfaccia di amministrazione di Microsoft 365, quindi selezionare **Utenti** \> **Utenti attivi**.
+1. Passare all'Microsoft 365 di amministrazione, quindi selezionare **Utenti** \> **Utenti attivi**.
 
 1. Seleziona l'utente desiderato, quindi **seleziona Licenze e app.**
 
@@ -56,17 +56,17 @@ Per attivare o disattivare Bookings per l'organizzazione utilizzando il cmdlet [
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Richiedere l'approvazione del personale prima di condividere le informazioni sulla disponibilità
 
-Gli amministratori possono richiedere ai dipendenti dell'organizzazione di acconsentire esplicitamente prima che le informazioni sulla disponibilità siano condivise tramite Bookings e prima che possano essere prenotabili tramite una pagina di prenotazione. Questa impostazione è disponibile nell'interfaccia di amministrazione di Microsoft 365 in **Impostazioni** \> **Impostazioni** \> **Prenotazioni.**
+Gli amministratori possono richiedere ai dipendenti dell'organizzazione di acconsentire esplicitamente prima che le informazioni sulla disponibilità siano condivise tramite Bookings e prima che possano essere prenotabili tramite una pagina di prenotazione. Questa impostazione è disponibile nell'interfaccia Microsoft 365 di amministrazione in **Impostazioni** \> **Impostazioni** \> **Bookings**.
 
 Quando questa impostazione è abilitata, i dipendenti aggiunti come personale nei calendari di prenotazione troveranno un collegamento Approva/Rifiuta nella notifica di posta elettronica che ricevono.
 
-Questa funzionalità viene gradualmente ampliata a livello mondiale per i clienti di Microsoft 365. Se non vedi questa opzione nell'interfaccia di amministrazione di Microsoft 365, torna presto.
+Questa funzionalità viene gradualmente ampliata a livello mondiale per Microsoft 365 clienti. Se questa opzione non è disponibile nell'interfaccia Microsoft 365, tornare presto.
 
 ## <a name="block-social-sharing-options"></a>Bloccare le opzioni di condivisione di social network
 
-Gli amministratori possono controllare la modalità di condivisione delle pagine di prenotazione sui social network. Questa impostazione è disponibile nell'interfaccia di amministrazione di Microsoft 365 in **Impostazioni** \> **Impostazioni** \> **Prenotazioni.**
+Gli amministratori possono controllare la modalità di condivisione delle pagine di prenotazione sui social network. Questa impostazione è disponibile nell'interfaccia Microsoft 365 di amministrazione in **Impostazioni** \> **Impostazioni** \> **Bookings**.
 
-Questa funzionalità viene gradualmente ampliata a livello mondiale per i clienti di Microsoft 365. Se non vedi questa opzione nell'interfaccia di amministrazione di Microsoft 365, torna presto.
+Questa funzionalità viene gradualmente ampliata a livello mondiale per Microsoft 365 clienti. Se questa opzione non è disponibile nell'interfaccia Microsoft 365, tornare presto.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Consenti solo agli utenti selezionati di creare calendari di Bookings
 
@@ -74,10 +74,10 @@ Utilizzando le restrizioni dei criteri, è possibile impedire agli utenti con li
 
 Gli utenti inclusi in questo criterio possono creare nuovi calendari di Bookings e possono essere aggiunti come personale in qualsiasi capacità (incluso il ruolo di amministratore) ai calendari esistenti di Bookings. Gli utenti che non sono inclusi in questo criterio non potranno creare nuovi calendari di Bookings e riceveranno un messaggio di errore se tentano di farlo.
 
-È necessario eseguire i comandi seguenti utilizzando PowerShell di Exchange Online. Per ulteriori informazioni sull'esecuzione dei cmdlet di Exchange Online, vedere [Connect to Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+Dovrai eseguire i comandi seguenti usando Exchange Online PowerShell. Per ulteriori informazioni sull'esecuzione Exchange Online cmdlet, [vedere Connessione to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 > [!IMPORTANT]
-> I passaggi seguenti presuppongono che non siano stati creati altri criteri cassetta postale di Outlook Web App (OWA) nell'organizzazione.
+> I passaggi seguenti presuppongono che non siano stati creati altri Outlook Web App (OWA) nell'organizzazione.
 
 1. Creare un nuovo criterio cassetta postale per gli utenti a cui dovrebbe essere consentito creare calendari di Bookings. La creazione del calendario bookings è consentita per impostazione predefinita dai nuovi criteri cassetta postale.
 
@@ -105,6 +105,6 @@ Gli utenti inclusi in questo criterio possono creare nuovi calendari di Bookings
 
 Per ulteriori informazioni sui criteri OWA cassetta postale, vedere i seguenti argomenti:
 
-- [Creare un criterio cassetta postale di Outlook sul Web in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Creare un Outlook sul criterio cassetta postale Web in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
-- [Applicare o rimuovere un criterio cassetta postale di Outlook sul Web su una cassetta postale in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Applicare o rimuovere un Outlook sul criterio cassetta postale Web in una cassetta postale in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)

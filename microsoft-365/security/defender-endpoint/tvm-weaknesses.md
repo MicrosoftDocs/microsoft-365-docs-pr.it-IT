@@ -1,7 +1,7 @@
 ---
-title: Vulnerabilità nell'organizzazione - gestione delle minacce e delle vulnerabilità
-description: Elenca l'ID CVE (Common Vulnerabilities and Exposures) dei punti deboli rilevati nel software in esecuzione nell'organizzazione. Individuata dalla funzionalità di gestione delle minacce e delle vulnerabilità di Microsoft Defender for Endpoint.
-keywords: Microsoft Defender for Endpoint threat & vulnerability management, threat and vulnerability management, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
+title: Vulnerabilità nell'organizzazione - gestione di minacce e vulnerabilità
+description: Elenca l'ID CVE (Common Vulnerabilities and Exposures) dei punti deboli rilevati nel software in esecuzione nell'organizzazione. Individuato dalla funzionalità microsoft Defender per endpoint gestione di minacce e vulnerabilità funzionalità.
+keywords: Pagina microsoft Defender for Endpoint threat & gestione delle vulnerabilità, gestione di minacce e vulnerabilità, Microsoft Defender for Endpoint tvm weaknesses, trovando punti deboli tramite tvm, elenco di vulnerabilità tvm, dettagli sulla vulnerabilità in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,23 +25,23 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933074"
 ---
-# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilità nell'organizzazione - gestione delle minacce e delle vulnerabilità
+# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilità nell'organizzazione - gestione di minacce e vulnerabilità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-La gestione delle minacce e delle vulnerabilità usa gli stessi segnali in Defender per la protezione degli endpoint per analizzare e rilevare le vulnerabilità.
+Threat and gestione delle vulnerabilità usa gli stessi segnali in Defender for Endpoint's Endpoint protection per analizzare e rilevare le vulnerabilità.
 
 Nella **pagina Punti** deboli sono elencate le vulnerabilità software a cui sono esposti i dispositivi elencando l'ID CVE (Common Vulnerabilities and Exposures). È inoltre possibile visualizzare la gravità, il sistema di valutazione delle vulnerabilità comuni (CVSS, Common Vulnerability Scoring System), la diffusione nell'organizzazione, la violazione corrispondente, le informazioni dettagliate sulle minacce e altro ancora.
 
 >[!NOTE]
->Se non esiste un CVE-ID ufficiale assegnato a una vulnerabilità, il nome della vulnerabilità viene assegnato dalla gestione delle minacce e delle vulnerabilità.
+>Se non esiste un CVE-ID ufficiale assegnato a una vulnerabilità, il nome della vulnerabilità viene assegnato da gestione di minacce e vulnerabilità.
 
 >[!TIP]
 >Per ricevere messaggi di posta elettronica sui nuovi eventi di vulnerabilità, vedere Configurare le notifiche di posta elettronica relative alla vulnerabilità [in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
@@ -50,12 +50,12 @@ Nella **pagina Punti** deboli sono elencate le vulnerabilità software a cui son
 
 Accedere alla pagina Punti deboli in diversi modi:
 
-- Selezione **di punti** di debolezza dal menu di spostamento per la gestione delle minacce e delle vulnerabilità in Microsoft Defender Security [Center](portal-overview.md)
+- Selezionando **Punti di** debolezza dal menu gestione di minacce e vulnerabilità navigazione nella [Microsoft Defender Security Center](portal-overview.md)
 - Ricerca globale
 
 ### <a name="navigation-menu"></a>Menu di spostamento
 
-Vai al menu di spostamento per la gestione delle minacce e delle vulnerabilità e seleziona **Debolezze** per aprire l'elenco di CVE.
+Vai al menu gestione di minacce e vulnerabilità navigazione e seleziona **Debolezze** per aprire l'elenco di CVE.
 
 ### <a name="vulnerabilities-in-global-search"></a>Vulnerabilità nella ricerca globale
 
@@ -97,7 +97,7 @@ Se si seleziona un CVE, verrà aperto un riquadro a comparsa con ulteriori infor
 
 ### <a name="software-that-isnt-supported"></a>Software non supportato
 
-CvEs per software attualmente non supportato dalle minacce & la gestione delle vulnerabilità è ancora presente nella pagina Punti deboli. Poiché il software non è supportato, saranno disponibili solo dati limitati.
+CvEs per il software attualmente non supportato dalla & gestione delle vulnerabilità è ancora presente nella pagina Debolezze. Poiché il software non è supportato, saranno disponibili solo dati limitati.
 
 Le informazioni sui dispositivi esposti non saranno disponibili per i CVE con software non supportato. Filtra per software non supportato selezionando l'opzione "Non disponibile" nella sezione "Dispositivi esposti".
 
@@ -107,7 +107,7 @@ Le informazioni sui dispositivi esposti non saranno disponibili per i CVE con so
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>Software più vulnerabile nel dashboard
 
-1. Vai al [dashboard di gestione delle minacce e delle](tvm-dashboard-insights.md) vulnerabilità e scorri verso il basso fino al widget Software più **vulnerabile.** Verrà visualizzato il numero di vulnerabilità riscontrate in ogni software, insieme alle informazioni sulle minacce e a una visualizzazione di alto livello dell'esposizione dei dispositivi nel tempo.
+1. Vai al dashboard [gestione di minacce e vulnerabilità e](tvm-dashboard-insights.md) scorri verso il basso fino al widget Software **più vulnerabile.** Verrà visualizzato il numero di vulnerabilità riscontrate in ogni software, insieme alle informazioni sulle minacce e a una visualizzazione di alto livello dell'esposizione dei dispositivi nel tempo.
 
     ![Scheda software più vulnerabile con quattro colonne: software, punti deboli, minacce, dispositivi esposti.](images/tvm-top-vulnerable-software500.png)
 
@@ -115,13 +115,13 @@ Le informazioni sui dispositivi esposti non saranno disponibili per i CVE con so
 3. Selezionare la **scheda Vulnerabilità individuate.**
 4. Selezionare la vulnerabilità che si desidera analizzare per ulteriori informazioni sui dettagli della vulnerabilità
 
-    ![Panoramica del drill-down di Windows Server 2019.](images/windows-server-drilldown.png)
+    ![Windows Panoramica del drill-down di Server 2019.](images/windows-server-drilldown.png)
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>Individuare le vulnerabilità nella pagina del dispositivo
 
 Visualizza le informazioni sui punti deboli correlati nella pagina del dispositivo.
 
-1. Vai alla barra dei menu di spostamento di Microsoft Defender Security Center, quindi seleziona l'icona del dispositivo. Verrà **visualizzata la pagina elenco** Dispositivi.
+1. Vai alla barra Microsoft Defender Security Center menu di spostamento, quindi seleziona l'icona del dispositivo. Verrà **visualizzata la pagina elenco** Dispositivi.
 2. Nella pagina **elenco Dispositivi** seleziona il nome del dispositivo che vuoi analizzare.
 
     ![Elenco dei dispositivi con il dispositivo selezionato da analizzare.](images/tvm_machinetoinvestigate.png)
@@ -148,11 +148,11 @@ Segnalare un falso positivo quando vengono visualizzate informazioni vaghe, impr
 1. Aprire CVE nella pagina Punti deboli.
 2. Selezionare **Report inaccuracy e** verrà aperto un riquadro a comparsa.
 3. Seleziona la categoria di imprecisione dal menu a discesa e inserisci l'indirizzo di posta elettronica e i dettagli dell'imprecisione.
-4. Selezionare **Invia**. Il feedback viene inviato immediatamente agli esperti di gestione delle minacce e delle vulnerabilità.
+4. Selezionare **Invia**. Il feedback viene inviato immediatamente agli gestione di minacce e vulnerabilità esperti.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)
 - [Inventario software](tvm-software-inventory.md)
 - [Dashboard Dati analitici](tvm-dashboard-insights.md)

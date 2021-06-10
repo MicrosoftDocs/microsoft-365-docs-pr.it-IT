@@ -21,7 +21,7 @@ ms.locfileid: "51689234"
 # <a name="steps-for-partners-to-register-devices"></a>Procedura per i partner per la registrazione dei dispositivi
 
 
-Questo articolo descrive i passaggi da seguire per i partner per registrare i dispositivi. Il processo di registrazione dei dispositivi è documentato in [Registrare i dispositivi in Microsoft Managed Desktop.](register-devices-self.md)
+Questo articolo descrive i passaggi da seguire per i partner per registrare i dispositivi. Il processo di registrazione dei dispositivi è documentato in [Registrare](register-devices-self.md)i dispositivi in Microsoft Managed Desktop te stesso.
 
 
 
@@ -30,7 +30,7 @@ Prima di completare la registrazione per un cliente, devi prima stabilire una re
 
 
 > [!NOTE]
-> Questa documentazione è solo per i partner e gli OEM. Il processo di autoregistrazione è documentato in Registrare manualmente i dispositivi [in Microsoft Managed Desktop.](register-devices-self.md)
+> Questa documentazione è solo per i partner e gli OEM. Il processo di autoregistrazione è documentato in [Register devices in Microsoft Managed Desktop yourself](register-devices-self.md).
 
 
 ## <a name="register-devices-by-using-partner-center"></a>Registrare i dispositivi tramite il Centro per i partner
@@ -41,7 +41,7 @@ Dopo aver stabilito la relazione con i clienti, puoi usare il Centro per i partn
 2. Seleziona **Clienti** dal menu Del Centro per i partner e quindi seleziona il cliente di cui vuoi gestire i dispositivi.
 3. Nella pagina dei dettagli del cliente seleziona **Dispositivi.**
 4. In **Applica profili** ai dispositivi seleziona Aggiungi **dispositivi.**
-5. Immetti il tag di gruppo appropriato per il profilo del dispositivo selezionato (come illustrato nella tabella seguente) e quindi seleziona **Sfoglia** per caricare l'elenco del cliente (in formato csv) nel Centro per i partner.
+5. Immetti il tag di gruppo appropriato per il profilo del dispositivo selezionato  (come illustrato nella tabella seguente) e quindi seleziona Sfoglia per caricare l'elenco del cliente (in formato di file .csv) nel Centro per i partner.
 
 |[Profilo dispositivo](../service-description/profiles.md)  |Tag gruppo  |
 |---------|---------|
@@ -50,12 +50,12 @@ Dopo aver stabilito la relazione con i clienti, puoi usare il Centro per i partn
 |Standard     | **Microsoft365Managed \_ Standard**        |
 
 > [!IMPORTANT]
-> Il nome del gruppo deve corrispondere esattamente a quelli elencati nella tabella, inclusi i caratteri maiuscoli e speciali. In questo modo i nuovi dispositivi registrati verranno assegnati con il profilo Microsoft Managed Desktop Autopilot.
+> Il nome del gruppo deve corrispondere esattamente a quelli elencati nella tabella, inclusi i caratteri maiuscoli e speciali. In questo modo i nuovi dispositivi registrati verranno assegnati con il Microsoft Managed Desktop Autopilot.
 
 >[!NOTE]
-> Dovresti aver ricevuto questo file CSV con l'acquisto del dispositivo. Se non hai ricevuto un file CSV, puoi crearne uno manualmente seguendo la procedura descritta in Aggiunta di [dispositivi a Windows Autopilot.](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell) Lo script Windows PowerShell è diverso da quello utilizzato per il portale di amministrazione [di Microsoft Managed Desktop.](./register-devices-self.md#obtain-the-hardware-hash) I partner devono [usare Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) per registrare i dispositivi per i dispositivi Microsoft Managed Desktop nel Centro per i partner.
+> Dovresti aver ricevuto questo file .csv con l'acquisto del dispositivo. Se non hai ricevuto un file .csv, puoi crearne uno manualmente seguendo la procedura descritta in Aggiunta di dispositivi Windows [Autopilot.](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell) Lo script Windows PowerShell è diverso da quello utilizzato per il portale di Microsoft Managed Desktop [admin](./register-devices-self.md#obtain-the-hardware-hash). I partner devono [usare Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) per registrare i dispositivi Microsoft Managed Desktop dispositivi nel Centro per i partner.
 
-Se viene visualizzato un messaggio di errore durante il tentativo di caricare il file CSV, controllare il formato del file. Assicurati che l'ordine delle colonne corrisponda a quello descritto in [Use Windows Autopilot profiles on new devices to customize a customer's out-of-box experience.](/partner-center/autopilot#add-devices-to-a-customers-account) Puoi anche usare il file CSV di esempio fornito dal collegamento accanto ad **Aggiungi dispositivi** per creare un elenco di dispositivi. 
+Se viene visualizzato un messaggio di errore durante il tentativo di caricare .csv file, controllare il formato del file. Assicurati che l'ordine delle colonne corrisponda a quello descritto in [Use Windows Autopilot profiles on new devices to customize a customer's out-of-box experience](/partner-center/autopilot#add-devices-to-a-customers-account). Puoi anche usare il file di .csv di esempio fornito dal collegamento accanto ad **Aggiungi dispositivi** per creare un elenco di dispositivi. 
 
 Per altre informazioni su Autopilot negli scenari per i partner, vedi [Aggiungere dispositivi all'account di un cliente.](/partner-center/autopilot#add-devices-to-a-customers-account)
 
@@ -74,4 +74,4 @@ Dopo aver stabilito la relazione, puoi iniziare a registrare i dispositivi per i
 |Standard     | **Microsoft365Managed \_ Standard**      |
 
 > [!IMPORTANT]
-> I tag di gruppo devono corrispondere esattamente a quelli elencati nella tabella, inclusi i caratteri maiuscoli e speciali. In questo modo i nuovi dispositivi registrati verranno assegnati con il profilo Microsoft Managed Desktop Autopilot.
+> I tag di gruppo devono corrispondere esattamente a quelli elencati nella tabella, inclusi i caratteri maiuscoli e speciali. In questo modo i nuovi dispositivi registrati verranno assegnati con il Microsoft Managed Desktop Autopilot.

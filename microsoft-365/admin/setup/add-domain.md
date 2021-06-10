@@ -136,7 +136,7 @@ Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare d
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Domande frequenti](domains-faq.yml) sui domini (articolo)\
+[Domande frequenti sui domini](domains-faq.yml) (articolo)\
 [Che cosa è un dominio?](../get-help-with-domains/what-is-a-domain.md) (articolo)\
 [Acquistare un nome di dominio in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (articolo)\
 [Configurare il dominio](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (articolo)

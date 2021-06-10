@@ -1,6 +1,6 @@
 ---
-title: Codici di errore comuni dell'API REST di Microsoft 365 Defender
-description: Informazioni sui codici di errore comuni dell'API REST di Microsoft 365 Defender
+title: Codici di errore comuni Microsoft 365'API REST di Defender
+description: Informazioni sui codici di errore comuni Microsoft 365'API REST di Defender
 keywords: api, error, codes, common errors, Microsoft 365 Defender, api error codes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932882"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codici di errore comuni dell'API REST di Microsoft 365 Defender
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codici di errore comuni Microsoft 365'API REST di Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51932882"
 > [!IMPORTANT]
 > Alcune informazioni fanno riferimento alle caratteristiche del prodotto prima del rilascio, e possono essere modificate sostanzialmente prima della distribuzione al pubblico. Microsoft non fornisce alcuna garanzia, esplicita o implicita, in relazione alle informazioni contenute in questo documento.
 
-I codici di errore possono essere restituiti da un'operazione su una delle API di Microsoft 365 Defender. Ogni risposta di errore conterrà un messaggio di errore che consente di risolvere il problema. Nella colonna messaggio di errore nella sezione tabella sono disponibili alcuni messaggi di esempio. Il contenuto dei messaggi effettivi varia in base ai fattori che hanno attivato la risposta. Il contenuto delle variabili è indicato nella tabella da parentesi angolari.
+I codici di errore possono essere restituiti da un'operazione in una delle API Microsoft 365 Defender. Ogni risposta di errore conterrà un messaggio di errore che consente di risolvere il problema. Nella colonna messaggio di errore nella sezione tabella sono disponibili alcuni messaggi di esempio. Il contenuto dei messaggi effettivi varia in base ai fattori che hanno attivato la risposta. Il contenuto delle variabili è indicato nella tabella da parentesi angolari.
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -99,7 +99,7 @@ Ogni risposta di errore contiene un parametro ID univoco per il rilevamento. Il 
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Panoramica delle API di Microsoft 365 Defender](api-overview.md)
+- [Microsoft 365 Panoramica delle API defender](api-overview.md)
 - [API supportate di Microsoft 365 Defender](api-supported.md)
 - [Accedere alle API di Microsoft 365 Defender](api-access.md)
 - [Informazioni sui limiti delle API e sulle licenze](api-terms.md)

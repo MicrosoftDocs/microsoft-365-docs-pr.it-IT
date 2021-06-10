@@ -44,7 +44,7 @@ Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano
 
 Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano in Delve ottengono risultati da tutte le posizioni geografiche.
 
-Il feed di Delve e la scheda profilo mostrano solo le anteprime dei file archiviati in una posizione centrale. Per i file archiviati nelle posizioni satellite, verrà visualizzata l'icona del tipo di file.
+Il feed e la scheda profilo di Delve mostrano solo le anteprime dei file archiviati nella posizione centrale. Per i file archiviati in una posizione satellite, verrà invece visualizzata l'icona del tipo di file.
 
 ### <a name="the-sharepoint-home-page"></a>Home page di SharePoint
 
@@ -131,7 +131,7 @@ Alcune delle funzionalità di ricerca già note non sono supportate in un ambien
 
 Tutti i client di ricerca usano le API REST del servizio di ricerca di SharePoint per interagire con gli indici di ricerca.
 
-![Diagramma che mostra l'interazione delle API REST del servizio di ricerca di SharePoint con gli indici di ricerca](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramma che mostra SharePoint le API REST di ricerca interagiscono con gli indici di ricerca](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un client di ricerca chiama l'endpoint REST Ricerca con la proprietà di query EnableMultiGeoSearch= true.
 2. La query viene inviata a tutte le posizioni geografiche del tenant.
@@ -168,7 +168,7 @@ Ogni Centro ricerche dispone di diverse verticali ed è necessario configurarle 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Fare in modo che le applicazioni di ricerca personalizzate mostrino risultati di tutte o di alcune posizioni geografiche
 
-Le applicazioni di ricerca personalizzate ottengono risultati da tutte o da alcune posizioni geografiche specificando parametri di query con la richiesta all'API REST di ricerca di SharePoint. A seconda dei parametri di query, la query viene impostata su tutte le posizioni geografiche o su alcune posizioni geografiche. Ad esempio, se devi solo eseguire una query su un sottoinsieme di posizioni geografiche per trovare informazioni rilevanti, puoi controllare la ventola solo su queste. Se la richiesta ha esito positivo, l'API REST di ricerca di SharePoint restituisce i dati di risposta.
+Per ottenere i risultati di tutte o alcune posizioni geografiche nelle applicazioni di ricerca personalizzate, è necessario specificare i parametri di query con la richiesta all'API REST del servizio di ricerca di SharePoint. A seconda dei parametri della query, la query viene inviata a tutte le posizioni geografiche o solo ad alcune. Ad esempio, se serve inviare la query solo a un sottoinsieme di posizioni geografiche per trovare informazioni pertinenti, è possibile estendere la query solo ad esse. Se la richiesta ha esito positivo, l'API REST del servizio di ricerca di SharePoint restituisce i dati della risposta.
 
 ### <a name="requirement"></a>Requisito
 

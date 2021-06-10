@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come eseguire la migrazione di posta elettronica, contatti e calendario da Google Workspace a Microsoft 365 per le aziende.
+description: Scopri come eseguire la migrazione di posta elettronica, contatti e calendario da Google Workspace a Microsoft 365 per le aziende.
 ms.openlocfilehash: d6639032b379a2cd632b6ab6ee7e4082b1e7be0b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50913623"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
-È possibile utilizzare una migrazione eseguita dall'amministratore a Exchange Online da Google Workspace. È possibile eseguire la migrazione della posta in una sola volta o in più fasi. La procedura seguente illustra come eseguire la migrazione dei dati di posta elettronica contemporaneamente. Per ulteriori informazioni, vedere [Perform a G Suite migration.](/exchange/mailbox-migration/perform-g-suite-migration)
+Puoi usare una migrazione eseguita dall'amministratore per Exchange Online da Google Workspace. È possibile eseguire la migrazione della posta in una sola volta o in più fasi. La procedura seguente illustra come eseguire la migrazione dei dati di posta elettronica contemporaneamente. Per ulteriori informazioni, vedere [Perform a G Suite migration.](/exchange/mailbox-migration/perform-g-suite-migration)
 
 Il processo di migrazione richiede diversi passaggi e può richiedere da diverse ore a un paio di giorni a seconda della quantità di dati di cui si sta eseguendo la migrazione.
 
@@ -77,7 +77,7 @@ Il processo di migrazione richiede diversi passaggi e può richiedere da diverse
  
 1. Scegliere **Autorizza**. 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Creare un sottodominio per la posta inviata a Microsoft 365
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Creare un sottodominio per la posta da Microsoft 365
 
 1. Torna alla **console di amministrazione di Google Workspace.**
 1. Selezionare **Domini**, **Gestisci domini**, quindi Aggiungi un alias di **dominio**. 
@@ -86,8 +86,8 @@ Il processo di migrazione richiede diversi passaggi e può richiedere da diverse
 
     La verifica del dominio in genere richiede solo pochi minuti, ma può richiedere fino a 48 ore.
 
-1. Accedere all'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com).
-1. Nell'interfaccia di amministrazione di **Microsoft 365,** nel riquadro di spostamento sinistro, selezionare **Mostra** tutto , **Impostazioni**, **Domini** e quindi **Aggiungi dominio**. 
+1. Passare [all'Microsoft 365 di amministrazione .](https://admin.microsoft.com)
+1. **Nell'Microsoft 365 di amministrazione,** nel riquadro di spostamento sinistro, selezionare **Mostra** tutto , **Impostazioni**, **Domini** e quindi **Aggiungi dominio**. 
 1. Immetti il sottodominio creato in precedenza, quindi seleziona **Usa questo dominio.** 
 1. Per connettere il dominio, selezionare **Continua.** 
 1. Scorrere verso il basso e prendere nota dei record MX, CNAME e TXT. 
@@ -99,7 +99,7 @@ Il processo di migrazione richiede diversi passaggi e può richiedere da diverse
 
     L'applicazione di queste modifiche potrebbe richiedere del tempo.  
 
-1. Tornare al punto in cui è stato lasciato nell'interfaccia di amministrazione di **Microsoft 365** e selezionare **Continua.** 
+1. Tornare al punto in cui è stato lasciato **Microsoft 365'interfaccia di amministrazione** e selezionare **Continua.** 
 
 Il dominio è ora configurato.  
 
@@ -107,7 +107,7 @@ Il dominio è ora configurato.
 
 Prima di iniziare la migrazione, è necessario creare alias di posta elettronica per gli utenti con il nuovo sottodominio. 
 
-1. Per avviare il passaggio successivo, nella procedura guidata **Aggiungi** domini nell'interfaccia di amministrazione di Microsoft 365 selezionare **Vai a Utenti attivi**. 
+1. Per avviare il passaggio successivo, nella **procedura** guidata Aggiungi domini nell'Microsoft 365 di amministrazione selezionare Vai a **Utenti attivi**. 
 1. Seleziona un utente, quindi Gestisci nome **utente e posta elettronica**. 
 1. **Nell'elenco a** discesa Domini selezionare il sottodominio creato in precedenza. 
 1. Immetti un nome utente, seleziona **Aggiungi,** **Salva modifiche** e chiudi la finestra. 
@@ -118,8 +118,8 @@ Prima di iniziare la migrazione, è necessario creare alias di posta elettronica
 
 Al termine, è possibile eseguire la migrazione. 
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di **Microsoft 365** scorrere verso il basso fino a **Interfaccia di amministrazione** e selezionare **Exchange.** 
-1. In **destinatari** scegliere **migrazione**, selezionare **Nuovo**, Esegui migrazione a **Exchange Online,** scegliere **Migrazione G Suite** e quindi **Avanti**. 
+1. Nel riquadro di spostamento sinistro **dell'interfaccia di** Microsoft 365, scorrere verso il basso fino a **Interfaccia di amministrazione** e selezionare **Exchange**. 
+1. In **destinatari** **scegliere migrazione,** selezionare **Nuovo,** Migra **a Exchange Online,** scegliere **Migrazione G Suite** e quindi **Avanti**. 
 1. Creare un file CSV con un elenco delle cassette postali di cui si desidera eseguire la migrazione. Assicurarsi che il file segue questo formato: 
 
     ```CSV
@@ -144,5 +144,5 @@ Al termine, è possibile eseguire la migrazione.
 1. Al termine del processo, lo stato verrà modificato in **Completato**. 
 1. Se si desidera, è possibile selezionare **Visualizza dettagli** per ulteriori informazioni sulla migrazione. 
 1. Selezionare **Chiudi**. 
-1. Aprire Outlook per verificare che la migrazione di tutti i messaggi di posta elettronica da Google Workspace sia stata eseguita correttamente.
+1. Apri Outlook per verificare che la migrazione di tutti i messaggi di posta elettronica da Google Workspace sia stata eseguita correttamente.
 È possibile ripetere questa operazione anche per gli elementi del calendario e i contatti.

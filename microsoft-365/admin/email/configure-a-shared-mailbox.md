@@ -144,7 +144,7 @@ Se si sceglie di non visualizzare la cassetta postale condivisa nell'elenco indi
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Informazioni sulle cassette postali](about-shared-mailboxes.md) condivise (articolo)\
+[Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) (articolo)\
 [Creare una cassetta postale condivisa](create-a-shared-mailbox.md) (articolo)\
 [Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md) (articolo)\
 [Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md) (articolo)\

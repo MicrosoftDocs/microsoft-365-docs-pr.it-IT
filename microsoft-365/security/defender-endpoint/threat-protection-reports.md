@@ -61,7 +61,7 @@ Per impostazione predefinita, le tendenze degli avvisi visualizzano le informazi
 ## <a name="alert-summary"></a>Riepilogo degli avvisi
 Mentre le tendenze degli avvisi mostrano informazioni sugli avvisi di tendenza, il riepilogo dell'avviso mostra le informazioni sugli avvisi nell'ambito del giorno corrente.
 
- Il riepilogo degli avvisi consente di eseguire il drill-down in una particolare coda di avvisi a cui è applicato il filtro corrispondente. Ad esempio, facendo clic sulla barra EDR nella scheda Origini di rilevamento verrà visualizzata la coda degli avvisi con i risultati che mostrano solo gli avvisi generati dai rilevamenti EDR. 
+ Il riepilogo degli avvisi consente di eseguire il drill-down in una particolare coda di avvisi a cui è applicato il filtro corrispondente. Ad esempio, facendo clic sulla barra EDR nella scheda Origini di rilevamento verrà visualizzata la coda degli avvisi con i risultati che mostrano solo gli avvisi generati da EDR rilevamento. 
 
 >[!NOTE]
 >L'ambito dei dati visualizzati nella sezione di riepilogo è 180 giorni prima della data corrente. Ad esempio, se la data odierna è il 5 novembre 2019, i dati nella sezione di riepilogo rifletteranno i numeri a partire dal 5 maggio 2019 al 5 novembre 2019.<br>

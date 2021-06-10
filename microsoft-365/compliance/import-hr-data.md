@@ -13,7 +13,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Gli amministratori possono configurare un connettore dati per importare i dati dei dipendenti dal sistema delle risorse umane dell'organizzazione in Microsoft 365. In questo modo è possibile utilizzare i dati delle risorse umane nei criteri di gestione dei rischi insider per rilevare le attività di utenti specifici che potrebbero rappresentare una minaccia interna per l'organizzazione.
+description: Gli amministratori possono configurare un connettore dati per importare i dati dei dipendenti dal sistema delle risorse umane dell'organizzazione per Microsoft 365. In questo modo è possibile utilizzare i dati delle risorse umane nei criteri di gestione dei rischi insider per rilevare le attività di utenti specifici che potrebbero rappresentare una minaccia interna per l'organizzazione.
 ms.openlocfilehash: eb11eb5790ca9c585db8bbb95b41747a72e5c8f1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,13 +23,13 @@ ms.locfileid: "50911376"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurare un connettore per importare i dati sulle risorse umane
 
-È possibile configurare un connettore dati nel Centro conformità Microsoft 365 per importare i dati delle risorse umane correlati a eventi quali le rassegnazioni di un utente o una modifica del livello di lavoro di un utente. I dati delle risorse umane possono quindi essere utilizzati dalla soluzione di gestione dei rischi [insider](insider-risk-management.md) per generare indicatori di rischio che consentono di identità di possibili attività dannose o furti di dati da parte di utenti all'interno dell'organizzazione.
+È possibile configurare un connettore di dati nel Centro conformità di Microsoft 365 per importare i dati delle risorse umane correlati a eventi quali le rassegnazioni di un utente o una modifica del livello di lavoro di un utente. I dati delle risorse umane possono quindi essere utilizzati dalla soluzione di gestione dei rischi [insider](insider-risk-management.md) per generare indicatori di rischio che consentono di identità di possibili attività dannose o furti di dati da parte di utenti all'interno dell'organizzazione.
 
-La configurazione di un connettore per i dati delle risorse umane che i criteri di gestione dei rischi insider possono utilizzare per generare indicatori di rischio consiste nella creazione di un file CSV contenente i dati delle risorse umane, nella creazione di un'app in Azure Active Directory usata per l'autenticazione, nella creazione di un connettore di dati delle risorse umane nel Centro conformità Microsoft 365 e nell'esecuzione di uno script (su base pianificata) che inserisce i dati delle risorse umane nei file CSV nel cloud Microsoft in modo che sia disponibile per l'insider soluzione di gestione dei rischi.
+La configurazione di un connettore per i dati delle risorse umane che i criteri di gestione dei rischi insider possono utilizzare per generare indicatori di rischio consiste nella creazione di un file CSV contenente i dati delle risorse umane, nella creazione di un'app in Azure Active Directory che viene utilizzata per l'autenticazione, nella creazione di un connettore di dati delle risorse umane nel Centro conformità Microsoft 365 e quindi nell'esecuzione di uno script (su base pianificata) che inserisce i dati delle risorse umane nei file CSV nel cloud Microsoft in modo che sia disponibile per la soluzione di gestione dei rischi insider.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Determinare quali scenari e dati delle risorse umane importare in Microsoft 365. Ciò consente di determinare il numero di file CSV e connettori HR necessari per creare e come generare e strutturare i file CSV. I dati delle risorse umane importati sono determinati dai criteri di gestione dei rischi insider che si desidera implementare. Per ulteriori informazioni, vedere Passaggio 1.
+- Determinare gli scenari hr e i dati da importare Microsoft 365. Ciò consente di determinare il numero di file CSV e connettori HR necessari per creare e come generare e strutturare i file CSV. I dati delle risorse umane importati sono determinati dai criteri di gestione dei rischi insider che si desidera implementare. Per ulteriori informazioni, vedere Passaggio 1.
 
 - Determinare come recuperare o esportare i dati dal sistema hr dell'organizzazione (e su base regolare) e aggiungerli ai file CSV creati nel passaggio 1. Lo script eseguito nel passaggio 4 carica i dati delle risorse umane nei file CSV nel cloud Microsoft.
 
@@ -39,7 +39,7 @@ La configurazione di un connettore per i dati delle risorse umane che i criteri 
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Passaggio 1: Preparare un file CSV con i dati delle risorse umane
 
-Il primo passaggio consiste nel creare un file CSV contenente i dati delle risorse umane che il connettore importerà in Microsoft 365. Questi dati verranno utilizzati dalla soluzione di rischio insider per generare potenziali indicatori di rischio. I dati per gli scenari hr seguenti possono essere importati in Microsoft 365:
+Il primo passaggio consiste nel creare un file CSV contenente i dati delle risorse umane che il connettore importerà Microsoft 365. Questi dati verranno utilizzati dalla soluzione di rischio insider per generare potenziali indicatori di rischio. I dati per gli scenari hr seguenti possono essere importati in Microsoft 365:
 
 - Rassegnazione dei dipendenti. Informazioni sugli utenti che hanno lasciato l'organizzazione.
 
@@ -53,12 +53,12 @@ Il tipo di dati sulle risorse umane da importare dipende dal criterio di gestion
 
 |  Modello di criteri |  Tipo di dati HR |
 |:-----------------------------------------------|:---------------------------------------------------------------------|
-| Furto di dati da parte di utenti in partenza                   | Rassegnazione dei dipendenti                                                 |
-| Perdite di dati generali                              | Non applicabile                                                        |
-| Perdite di dati per utenti con priorità                    | Non applicabile                                                        |
+| Furto di dati da parte di utenti che lasciano l'organizzazione                   | Rassegnazione dei dipendenti                                                 |
+| Fughe di dati generali                              | Non applicabile                                                        |
+| Perdita di dati per utenti con priorità                    | Non applicabile                                                        |
 | Perdite di dati da parte di utenti scontenti                 | Modifiche a livello di processo, revisioni delle prestazioni, piani di miglioramento delle prestazioni |
-| Violazioni generali dei criteri di sicurezza              | Non applicabile                                                        |
-| Violazioni dei criteri di sicurezza da parte degli utenti in partenza   | Rassegnazione dei dipendenti                                                 |
+| Violazioni dei criteri di sicurezza generali              | Non applicabile                                                        |
+| Violazioni dei criteri di sicurezza da parte di utenti che lasciano l'organizzazione   | Rassegnazione dei dipendenti                                                 |
 | Violazioni dei criteri di sicurezza per utenti con priorità    | Non applicabile                                                        |
 | Violazioni dei criteri di sicurezza da parte di utenti scontenti | Modifiche a livello di processo, revisioni delle prestazioni, piani di miglioramento delle prestazioni |
 | Linguaggio offensivo nella posta elettronica                     | Non applicabile                                                        |
@@ -207,11 +207,11 @@ Il passaggio successivo consiste nel creare e registrare una nuova app in Azure 
 
 - ID tenant (denominato anche *ID directory)*
 
-Per istruzioni dettagliate sulla creazione di un'app in Azure AD, vedi [Registrare un'applicazione con la piattaforma di identità Microsoft.](/azure/active-directory/develop/quickstart-register-app)
+Per istruzioni dettagliate sulla creazione di un'app in Azure AD, vedi [Registrare un'applicazione con](/azure/active-directory/develop/quickstart-register-app)il Microsoft Identity Platform .
 
 ## <a name="step-3-create-the-hr-connector"></a>Passaggio 3: Creare il connettore risorse umane
 
-Il passaggio successivo consiste nel creare un connettore hr nel Centro conformità Microsoft 365. Dopo aver eseguito lo script nel passaggio 4, il connettore HR creato ingestirà i dati delle risorse umane dal file CSV all'organizzazione di Microsoft 365. Prima di creare un connettore, assicurarsi di disporre di un elenco degli scenari hr e dei nomi delle colonne CSV corrispondenti per ognuno di essi. È necessario mappare i dati necessari per ogni scenario ai nomi di colonna effettivi nel file CSV durante la configurazione del connettore. In alternativa, è possibile caricare un file CSV di esempio durante la configurazione del connettore e la procedura guidata consente di mappare il nome delle colonne ai tipi di dati necessari.
+Il passaggio successivo consiste nel creare un connettore hr nel centro Microsoft 365 conformità. Dopo aver eseguito lo script nel passaggio 4, il connettore HR creato ingestirà i dati delle risorse umane dal file CSV all'Microsoft 365 organizzazione. Prima di creare un connettore, assicurarsi di disporre di un elenco degli scenari hr e dei nomi delle colonne CSV corrispondenti per ognuno di essi. È necessario mappare i dati necessari per ogni scenario ai nomi di colonna effettivi nel file CSV durante la configurazione del connettore. In alternativa, è possibile caricare un file CSV di esempio durante la configurazione del connettore e la procedura guidata consente di mappare il nome delle colonne ai tipi di dati necessari.
 
 Dopo aver completato questo passaggio, assicurarsi di copiare l'ID processo generato quando si crea il connettore. L'ID processo verrà utilizzato quando si esegue lo script.
 
@@ -231,7 +231,7 @@ Dopo aver completato questo passaggio, assicurarsi di copiare l'ID processo gene
 
 6. Nella pagina metodo di mapping dei file selezionare una delle opzioni seguenti e quindi fare clic su **Avanti.**
 
-   - **Caricare un file di esempio**. Se si seleziona questa opzione, fare clic **su Carica file di** esempio per caricare il file CSV preparato nel passaggio 1. Questa opzione consente di selezionare rapidamente i nomi delle colonne nel file CSV da un elenco a discesa per mapparli ai tipi di dati per gli scenari hr selezionati in precedenza.
+   - **Upload un file di esempio**. Se si seleziona questa opzione, **fare clic Upload file di** esempio per caricare il file CSV preparato nel passaggio 1. Questa opzione consente di selezionare rapidamente i nomi delle colonne nel file CSV da un elenco a discesa per mapparli ai tipi di dati per gli scenari hr selezionati in precedenza.
 
    OPPURE
 
@@ -251,9 +251,9 @@ Dopo aver completato questo passaggio, assicurarsi di copiare l'ID processo gene
 
    1. **ID processo.** Questo ID processo sarà necessario per eseguire lo script nel passaggio successivo. È possibile copiarlo da questa pagina o dalla pagina del riquadro a comparsa del connettore.
 
-   1. **Collegamento allo script di esempio.** Fai clic **sul** collegamento qui per accedere al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta questa finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo che sia possibile accedervi di nuovo quando si esegue lo script. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
+   1. **Collegamento allo script di esempio.** Fare clic **sul** collegamento qui per accedere al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta questa finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo che sia possibile accedervi di nuovo quando si esegue lo script. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
 
-9. Fare clic su **Fatto**.
+9. Fai clic su **Fine**.
 
    Il nuovo connettore viene visualizzato nell'elenco nella **scheda Connettori.**
 
@@ -267,9 +267,9 @@ Se non l'hai già fatto, puoi copiare i valori per **l'ID app di Azure** e l'ID 
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Passaggio 4: Eseguire lo script di esempio per caricare i dati delle risorse umane
 
-L'ultimo passaggio della configurazione di un connettore HR consiste nell'eseguire uno script di esempio che carichi i dati delle risorse umane nel file CSV (creato nel passaggio 1) nel cloud Microsoft. In particolare, lo script carica i dati nel connettore HR. Dopo aver eseguito lo script, il connettore HR creato nel passaggio 3 importa i dati delle risorse umane nell'organizzazione di Microsoft 365 a cui possono accedere altri strumenti di conformità, ad esempio la soluzione di gestione dei rischi Insider. Dopo aver eseguito lo script, è consigliabile pianificare un'attività per eseguirla automaticamente ogni giorno in modo che i dati più aggiornati sulla risoluzione dei dipendenti vengono caricati nel cloud Microsoft. Vedere [Pianificare l'esecuzione automatica dello script.](#optional-step-6-schedule-the-script-to-run-automatically)
+L'ultimo passaggio della configurazione di un connettore HR consiste nell'eseguire uno script di esempio che carichi i dati delle risorse umane nel file CSV (creato nel passaggio 1) nel cloud Microsoft. In particolare, lo script carica i dati nel connettore HR. Dopo aver eseguito lo script, il connettore HR creato nel passaggio 3 importa i dati sulle risorse umane nell'organizzazione di Microsoft 365 a cui possono accedere altri strumenti di conformità, ad esempio la soluzione di gestione dei rischi Insider. Dopo aver eseguito lo script, è consigliabile pianificare un'attività per eseguirla automaticamente ogni giorno in modo che i dati più aggiornati sulla risoluzione dei dipendenti vengono caricati nel cloud Microsoft. Vedere [Pianificare l'esecuzione automatica dello script.](#optional-step-6-schedule-the-script-to-run-automatically)
 
-1. Vai alla finestra lasciata aperta dal passaggio precedente per accedere al sito GitHub con lo script di esempio. In alternativa, aprire il sito con segnalibri o utilizzare l'URL copiato.
+1. Passare alla finestra lasciata aperta dal passaggio precedente per accedere al sito GitHub con lo script di esempio. In alternativa, aprire il sito con segnalibri o utilizzare l'URL copiato.
 
 2. Fare clic **sul pulsante** Non elaborato per visualizzare lo script in visualizzazione testo.
 
@@ -277,7 +277,7 @@ L'ultimo passaggio della configurazione di un connettore HR consiste nell'esegui
 
 4. Modificare lo script di esempio per l'organizzazione, se necessario.
 
-5. Salvare il file di testo come Windows PowerShell di script utilizzando il suffisso del nome del file `.ps1` ; ad esempio, `HRConnector.ps1` .
+5. Salvare il file di testo come Windows PowerShell di script utilizzando il suffisso del nome di `.ps1` file ; ad esempio, `HRConnector.ps1` .
 
 6. Aprire un prompt dei comandi nel computer locale e passare alla directory in cui è stato salvato lo script.
 
@@ -291,8 +291,8 @@ L'ultimo passaggio della configurazione di un connettore HR consiste nell'esegui
 
    | Parametro | Descrizione |
    |:-----|:-----|:-----|
-   |`tenantId`|Questo è l'ID per l'organizzazione di Microsoft 365 ottenuta nel passaggio 2. È anche possibile ottenere l'ID tenant per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure AD. Viene utilizzato per identificare l'organizzazione.|
-   |`appId` |Questo è l'ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 2. Viene usato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione di Microsoft 365. | 
+   |`tenantId`|Questo è l'ID dell'Microsoft 365 che hai ottenuto nel passaggio 2. È anche possibile ottenere l'ID tenant per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure AD. Viene utilizzato per identificare l'organizzazione.|
+   |`appId` |Questo è l'ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 2. Viene usato da Azure AD per l'autenticazione quando lo script tenta di accedere all'Microsoft 365 organizzazione. | 
    |`appSecret`|Questo è il segreto dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 2. Utilizzato anche per l'autenticazione.|
    |`jobId`|Questo è l'ID processo per il connettore HR creato nel passaggio 3. Viene usato per associare i dati delle risorse umane caricati nel cloud Microsoft al connettore HR.|
    |`csvFilePath`|Questo è il percorso del file CSV (archiviato nello stesso sistema dello script) creato nel passaggio 1. Cercare di evitare spazi nel percorso del file. in caso contrario, utilizzare virgolette singole.|
@@ -304,14 +304,14 @@ L'ultimo passaggio della configurazione di un connettore HR consiste nell'esegui
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   Se il caricamento ha esito positivo, lo script visualizza il **messaggio Caricamento** completato.
+   Se il caricamento ha esito positivo, lo script visualizza il Upload **messaggio Operazione** completata.
 
    > [!NOTE]
    > In caso di problemi durante l'esecuzione del comando precedente a causa dei criteri di esecuzione, vedere [Informazioni](/powershell/module/microsoft.powershell.core/about/about_execution_policies) sui criteri di esecuzione e [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) per indicazioni sull'impostazione dei criteri di esecuzione.
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Passaggio 5: Monitorare il connettore HR
 
-Dopo aver creato il connettore HR ed eseguito lo script per caricare i dati delle risorse umane, è possibile visualizzare il connettore e lo stato di caricamento nel Centro conformità Microsoft 365. Se si pianifica l'esecuzione automatica dello script a intervalli regolari, è anche possibile visualizzare lo stato corrente dopo l'ultima esecuzione dello script.
+Dopo aver creato il connettore HR ed eseguito lo script per caricare i dati delle risorse umane, è possibile visualizzare il connettore e caricarne lo stato nel Centro Microsoft 365 conformità. Se si pianifica l'esecuzione automatica dello script a intervalli regolari, è anche possibile visualizzare lo stato corrente dopo l'ultima esecuzione dello script.
 
 1. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
 
@@ -331,9 +331,9 @@ Se lo script non è stato eseguito nel passaggio 4, viene visualizzato un colleg
 
 Per assicurarsi che i dati sulle risorse umane più recenti dell'organizzazione siano disponibili per strumenti come la soluzione di gestione dei rischi insider, è consigliabile pianificare l'esecuzione automatica dello script su base ricorrente, ad esempio una volta al giorno. È inoltre necessario aggiornare i dati delle risorse umane nel file CSV in base a una pianificazione simile (se non la stessa) in modo che contenga le informazioni più recenti sui dipendenti che lasciano l'organizzazione. L'obiettivo è caricare i dati delle risorse umane più correnti in modo che il connettore HR possa renderli disponibili per la soluzione di gestione dei rischi insider.
 
-Puoi usare l'app Utilità di pianificazione in Windows per eseguire automaticamente lo script ogni giorno.
+Puoi usare l'app Utilità di pianificazione Windows eseguire automaticamente lo script ogni giorno.
 
-1. Nel computer locale fare clic sul pulsante **Start** di Windows e quindi digitare **Utilità di pianificazione.**
+1. Nel computer locale fare clic sul pulsante Windows **Start** e quindi digitare **Utilità di pianificazione.**
 
 2. Fai clic **sull'app Utilità** di pianificazione per aprirla.
 

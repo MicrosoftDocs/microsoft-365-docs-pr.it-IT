@@ -36,7 +36,7 @@ Gestire la coda degli avvisi, analizzare i dispositivi nell'elenco dei dispositi
 ## <a name="in-this-section"></a>Contenuto della sezione
 Argomento | Descrizione 
 :---|:---
-[Coda avvisi](alerts-queue-endpoint-detection-response.md)| Visualizzare gli avvisi visualizzati in Microsoft Defender Security Center.
+[Coda di avvisi](alerts-queue-endpoint-detection-response.md)| Visualizzare gli avvisi visualizzati in Microsoft Defender Security Center.
 [Elenco dispositivi](machines-view-overview.md) | Scopri come visualizzare e gestire l'elenco dei dispositivi, gestire i gruppi di dispositivi e analizzare gli avvisi correlati ai dispositivi. 
-[Eseguire azioni di risposta](respond-machine-alerts.md)| Eseguire azioni di risposta su dispositivi e file per rispondere rapidamente agli attacchi rilevati e contenere minacce.
+[Intraprendere azioni di risposta](respond-machine-alerts.md)| Eseguire azioni di risposta su dispositivi e file per rispondere rapidamente agli attacchi rilevati e contenere minacce.
 [Eseguire query sui dati utilizzando la ricerca avanzata](advanced-hunting-query-language.md)| Ricerca proattiva di possibili minacce all'interno dell'organizzazione con un potente strumento di ricerca e query.

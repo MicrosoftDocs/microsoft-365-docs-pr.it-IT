@@ -1,5 +1,5 @@
 ---
-title: Dashboard delle operazioni di sicurezza di Microsoft Defender Security Center
+title: Microsoft Defender Security Center Dashboard delle operazioni di sicurezza
 description: Usa il dashboard per identificare i dispositivi a rischio, tenere traccia dello stato del servizio e visualizzare statistiche e informazioni su dispositivi e avvisi.
 keywords: dashboard, avvisi, nuovo, in corso, risolto, rischio, dispositivi a rischio, infezioni, report, statistiche, grafici, grafici, integrità, rilevamenti malware attivi, categoria di minacce, categorie, furto di password, ransomware, exploit, minaccia, bassa gravità, malware attivo
 search.product: eADQiWindows 10XVcnh
@@ -23,13 +23,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51064914"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Dashboard delle operazioni di sicurezza di Microsoft Defender Security Center
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender Security Center Dashboard delle operazioni di sicurezza
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
@@ -126,6 +126,6 @@ Fare clic sull'account utente per visualizzare i dettagli sull'account utente. P
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Informazioni sul portale di Microsoft Defender for Endpoint](use.md)
-- [Panoramica del portale](portal-overview.md)
+- [Panoramica portale](portal-overview.md)
 - [Visualizzare il dashboard di gestione delle & delle minacce](tvm-dashboard-insights.md)
 - [Visualizzare il dashboard di analisi delle minacce ed eseguire le azioni di mitigazione consigliate](threat-analytics.md)

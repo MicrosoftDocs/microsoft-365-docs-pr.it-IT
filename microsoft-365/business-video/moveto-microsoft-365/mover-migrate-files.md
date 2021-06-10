@@ -1,5 +1,5 @@
 ---
-title: 'Eseguire la migrazione dei file di Google a Microsoft 365 per le aziende '
+title: 'Eseguire la migrazione dei file di Google Microsoft 365 per le aziende '
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come eseguire la migrazione dei file di Google a Microsoft 365 per le aziende tramite Mover.
+description: Scopri come eseguire la migrazione dei file di Google Microsoft 365 per le aziende usando Mover.
 ms.openlocfilehash: 6feabff7e36e84f7dba56e74333648325cf43920
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50913575"
 ---
-# <a name="migrate-google-files-to-microsoft-365-for-business"></a>Eseguire la migrazione dei file di Google a Microsoft 365 per le aziende 
+# <a name="migrate-google-files-to-microsoft-365-for-business"></a>Eseguire la migrazione dei file di Google Microsoft 365 per le aziende 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
@@ -39,7 +39,7 @@ Quando si passa a Microsoft 365 per le aziende, è necessario eseguire la migraz
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Tutti gli utenti devono aver eseguito l'accesso a Microsoft 365 per le aziende e aver configurato OneDrive for Business. A tale scopo, passare [a office.com](https://office.com), accedere con le credenziali di Microsoft 365 per le aziende e quindi scegliere OneDrive.
+Tutti gli utenti devono aver eseguito l'accesso a Microsoft 365 per le aziende e aver configurato le proprie OneDrive for Business. A tale scopo, passare [a office.com](https://office.com), accedere con le credenziali Microsoft 365 per le aziende e quindi scegliere OneDrive.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
@@ -66,21 +66,21 @@ Tutti gli utenti devono aver eseguito l'accesso a Microsoft 365 per le aziende e
 
     Mover visualizza il numero di unità del team e unità utente individuate. 
 
-1. In **Seleziona destinazione** scegliere **Autorizza nuovo connettore,** individuare Office **365** e **selezionare Autorizza**.
-1. Per concedere le autorizzazioni per l'app Mover in Azure Active Directory, passare a [aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth).
-1. Selezionare **Office 365 Mover**, **Autorizzazioni**, Concedere il consenso **dell'amministratore per la società**.
+1. In **Seleziona destinazione** scegliere **Autorizza nuovo connettore,** individuare **Office 365** e selezionare **Autorizza**.
+1. Per concedere le autorizzazioni per l'app Mover nel Azure Active Directory, passa a [aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth).
+1. Seleziona **Office 365 Mover**, **Autorizzazioni**, Concedi il **consenso dell'amministratore per la tua azienda**.
 1. Scegliere l'account, esaminare le autorizzazioni e selezionare **Accetta.**
 1. Scegliere **Proprietà** e verificare che **l'assegnazione utente necessaria?** sia attivata.
 1. Tornare all'app Mover, modificare il **nome** visualizzato, se si desidera, scegliere **Autorizza** e quindi selezionare un account di amministratore Microsoft.
 
-    Mover informerà l'utente sul numero di siti di SharePoint Online (o di SharePoint Online) e degli utenti individuati.
+    Mover ti informerà sul numero di siti SharePoint Online (o SPO) e utenti individuati.
 1. Scegliere **Continua l'installazione della** migrazione, selezionare Aggiungi **utenti,** quindi Individua e aggiungi utenti **automaticamente.**
 
     L'app Mover tenterà di mappare le unità dal percorso di origine in Google al percorso di destinazione in Microsoft 365. 
 
-    Se un'unità non viene mappata automaticamente, aggiungere il relativo percorso di destinazione a un file CSV, che verrà utilizzato in seguito per eseguire la migrazione dell'unità condivisa in una raccolta documenti di SharePoint. 
+    Se un'unità non viene mappata automaticamente, aggiungerne il percorso di destinazione a un file CSV, che verrà utilizzato in un secondo momento per eseguire la migrazione dell'unità condivisa in una raccolta documenti SharePoint condivisa. 
 
-1. In questo caso, è stato aggiunto un sito di SharePoint denominato File migrati e preso nota dell'URL per la pagina dei documenti. 
+1. In questo caso, è stato aggiunto un sito SharePoint denominato File migrati e preso nota dell'URL per la pagina dei documenti. 
 1. Abbiamo quindi creato un file CSV usando il formato Percorso di origine, Percorso di destinazione e Tag. 
 
     Per informazioni [dettagliate, vedere aka.ms/movercsv](/sharepointmigration/mover-create-migration-csv).

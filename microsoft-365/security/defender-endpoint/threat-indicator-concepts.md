@@ -23,12 +23,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51066082"
 ---
-# <a name="understand-threat-intelligence-concepts"></a>Comprendere i concetti di intelligence per le minacce
+# <a name="understand-threat-intelligence-concepts"></a>Informazioni sui concetti di Threat Intelligence
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -67,11 +67,11 @@ Argomento | Descrizione
 [Abilitare l'integrazione SIEM in Microsoft Defender for Endpoint](enable-siem-integration.md)| Informazioni sull'abilitazione della funzionalità  di integrazione SIEM nella pagina Impostazioni del portale in modo da poter utilizzare e generare le informazioni necessarie per configurare gli strumenti SIEM supportati.
 [Configurare Splunk per eseguire il pull di Microsoft Defender per i rilevamenti degli endpoint](configure-siem.md)| Scopri come installare l'app di input modulare dell'API REST e altre impostazioni di configurazione per consentire a Splunk di eseguire il pull di Microsoft Defender per i rilevamenti degli endpoint.
 [Configurare HP ArcSight per eseguire il pull dei rilevamenti di Microsoft Defender for Endpoint](configure-arcsight.md)| Informazioni sull'installazione del pacchetto HP ArcSight REST FlexConnector e sui file necessari per configurare ArcSight per eseguire il pull di Microsoft Defender per i rilevamenti degli endpoint.
-[Campi di Microsoft Defender per il rilevamento degli endpoint](api-portal-mapping.md) | Comprendere quali campi dati vengono esposti come parte dell'API degli avvisi e come vengono mappati a Microsoft Defender Security Center.
+[Campi di Microsoft Defender per il rilevamento degli endpoint](api-portal-mapping.md) | Comprendere quali campi dati vengono esposti come parte dell'API degli avvisi e come vengono mappati Microsoft Defender Security Center.
 [Eseguire il pull dei rilevamenti di Microsoft Defender per endpoint con l'API REST](pull-alerts-using-rest-api.md) | Usa il flusso OAuth 2.0 delle credenziali client per estrarre i rilevamenti da Microsoft Defender for Endpoint usando l'API REST.
 [Risolvere i problemi di integrazione degli strumenti SIEM](troubleshoot-siem.md) | Risolvere i problemi che possono verificarsi quando si utilizza la funzionalità di integrazione SIEM.
 
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Gestire gli indicatori](manage-indicators.md)
+- [Gestire indicatori](manage-indicators.md)

@@ -120,10 +120,10 @@ Vedere questo interessante post di blog da Vasil Michev, MVP Microsoft: [Forzare
 
 Leggere questo articolo: [Si è dimenticato l'account o la password per l'account usato con Office](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
   
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
   
-[Consentire agli utenti di reimpostare le proprie password](../add-users/let-users-reset-passwords.md) (articolo)\
-[Reimpostare le password](../add-users/reset-passwords.md) (articolo)\
-[Impostare la password di un singolo utente](set-password-to-never-expire.md) in modo che non scada mai (articolo)\
+[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)\
+[Reimpostare la password](../add-users/reset-passwords.md) (articolo)\
+[Impostare la password di un singolo utente in modo che non scada mai](set-password-to-never-expire.md) (articolo)\
 [Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)\
 [video Microsoft 365 formazione su Microsoft 365](../../business-video/index.yml) per le aziende (pagina dei collegamenti)

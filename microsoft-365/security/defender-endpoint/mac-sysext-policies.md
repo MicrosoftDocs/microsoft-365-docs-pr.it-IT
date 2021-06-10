@@ -69,7 +69,7 @@ Aggiungi il payload JAMF seguente per concedere l'accesso completo al disco a Mi
 
 ### <a name="network-extension-policy"></a>Criteri di estensione di rete
 
-Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender for Endpoint su macOS esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.
+Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender for Endpoint su macOS esamina il traffico socket e segnala queste informazioni al portale Microsoft Defender Security Center remoto. Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.
 
 >[!NOTE]
 >JAMF non dispone del supporto incorporato per i criteri di filtro dei contenuti, che sono un requisito preliminare per l'abilitazione delle estensioni di rete installate da Microsoft Defender per Endpoint su macOS nel dispositivo. Inoltre, JAMF a volte modifica il contenuto dei criteri distribuiti.
@@ -170,7 +170,7 @@ Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microso
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
-5. Dal portale JAMF, accedere a **Profili di configurazione e** fare clic sul pulsante **Carica.** Selezionare `com.microsoft.network-extension.signed.mobileconfig` quando richiesto per il file.
+5. Dal portale JAMF, accedere a **Profili di configurazione e** fare clic sul pulsante **Upload** configurazione. Selezionare `com.microsoft.network-extension.signed.mobileconfig` quando richiesto per il file.
 
 ## <a name="intune"></a>Intune
 
@@ -308,7 +308,7 @@ Per distribuire questo profilo di configurazione personalizzato:
 1.  In Intune apri **Gestisci**  >  **configurazione dispositivo.** Selezionare **Gestisci**  >  **profili**  >  **Crea profilo.**
 2. Scegliere un nome per il profilo. Modificare **Platform=macOS** e **Profile type=Custom**. Selezionare **Configura**.
 3.  Apri il profilo di configurazione e carica **sysext.xml**. Questo file è stato creato nel passaggio precedente.
-4.  Seleziona **OK**.
+4.  Selezionare **OK**.
 
     ![Screenshot dell'estensione di sistema in Intune](images/mac-system-extension-intune.png)
 

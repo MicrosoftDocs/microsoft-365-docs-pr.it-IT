@@ -1,7 +1,7 @@
 ---
 title: Ricerca di minacce su dispositivi, messaggi di posta elettronica, app e identità con ricerca avanzata
 description: Studiare scenari di ricerca comuni e query di esempio che riguardano dispositivi, messaggi di posta elettronica, app e identità.
-keywords: ricerca avanzata, dati di Office365, dispositivi Windows, messaggi di posta elettronica di Office365 normalizzano, messaggi di posta elettronica, app, identità, ricerca delle minacce, ricerca di minacce informatiche, ricerca, query, telemetria, Microsoft 365, Microsoft 365 Defender
+keywords: ricerca avanzata, dati di Office365, dispositivi Windows, messaggi di posta elettronica di Office365 normalizzare, messaggi di posta elettronica, app, identità, ricerca di minacce, ricerca di minacce informatiche, ricerca, query, telemetria, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,10 +35,10 @@ ms.locfileid: "51932966"
 **Si applica a:**
 - Microsoft 365 Defender
 
-[La ricerca avanzata](advanced-hunting-overview.md) in Microsoft 365 Defender consente di cercare in modo proattivo le minacce tra:
+[La ricerca avanzata](advanced-hunting-overview.md) in Microsoft 365 Defender ti consente di cercare in modo proattivo le minacce in:
 - Dispositivi gestiti da Microsoft Defender per Endpoint
 - Messaggi di posta elettronica elaborati da Microsoft 365
-- Attività delle app cloud, eventi di autenticazione e attività del controller di dominio monitorate da Microsoft Cloud App Security e Microsoft Defender for Identity
+- Attività dell'app cloud, eventi di autenticazione e attività del controller di dominio monitorate da Microsoft Cloud App Security e Microsoft Defender for Identity
 
 Con questo livello di visibilità, è possibile cercare rapidamente minacce che attraversano sezioni della rete, incluse intrusioni sofisticate che arrivano sulla posta elettronica o sul Web, elevare privilegi locali, acquisire credenziali di dominio con privilegi e passare lateralmente ai dispositivi. 
 

@@ -104,7 +104,7 @@ Per ulteriori informazioni sulla conversione di una cassetta postale utente in u
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Informazioni sulle cassette postali](about-shared-mailboxes.md) condivise (articolo)\
+[Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) (articolo)\
 [Creare una cassetta postale condivisa](create-a-shared-mailbox.md) (articolo)\
 [Configurare una cassetta postale condivisa](configure-a-shared-mailbox.md) (articolo)\
 [Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md) (articolo)\

@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: "Riepilogo: usare PowerShell per gestire le proprietà dell'account utente di Skype for Business Online con i criteri."
+description: "Riepilogo: utilizzare PowerShell per gestire le proprietà dell'account utente Skype for Business Online con i criteri."
 ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.locfileid: "50916703"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Gestire i criteri di Skype for Business Online con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Per gestire molte proprietà dell'account utente per Skype for Business online, è necessario specificarle come proprietà dei criteri con PowerShell per Microsoft 365.
+Per gestire molte proprietà dell'account utente per Skype for Business Online, è necessario specificarle come proprietà dei criteri con PowerShell per Microsoft 365.
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -66,7 +66,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-Nell'esempio riportato, i valori compresi nei criteri determinano le operazioni di comunicazione con utenti federati che Alex può davvero effettuare o meno. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su True affinché un utente possa comunicare con utenti esterni all'organizzazione. Si noti che questa proprietà non viene visualizzata nell'interfaccia di amministrazione di Microsoft 365. Al contrario, la proprietà viene impostata automaticamente su True o False in base alle altre selezioni effettuate. Le altre due proprietà di interesse sono:
+Nell'esempio riportato, i valori compresi nei criteri determinano le operazioni di comunicazione con utenti federati che Alex può davvero effettuare o meno. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su True affinché un utente possa comunicare con utenti esterni all'organizzazione. Si noti che questa proprietà non viene visualizzata nell'Microsoft 365 di amministrazione. Al contrario, la proprietà viene impostata automaticamente su True o False in base alle altre selezioni effettuate. Le altre due proprietà di interesse sono:
   
 - **EnableFederationAccess** indica se l'utente può comunicare con utenti di domini federati.
     
@@ -88,7 +88,7 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Questo comando consente di individuare il criterio assegnato all'utente, quindi di individuare le funzionalità abilitate o disabilitate all'interno del criterio.
   
-Per gestire i criteri di Skype for Business online con PowerShell, vedere i cmdlet per:
+Per gestire Skype for Business criteri online con PowerShell, vedere i cmdlet per:
 
 - [Criteri client](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
 - [Criteri conferenza](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)

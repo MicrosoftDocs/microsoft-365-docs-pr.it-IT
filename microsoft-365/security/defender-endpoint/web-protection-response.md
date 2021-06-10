@@ -1,7 +1,7 @@
 ---
 title: Rispondere alle minacce Web in Microsoft Defender for Endpoint
-description: Rispondere agli avvisi relativi a siti Web dannosi e indesiderati. Comprendere in che modo Protezione dalle minacce Web informa gli utenti finali tramite i web browser e le notifiche di Windows
-keywords: protezione Web, protezione dalle minacce Web, esplorazione Web, avvisi, risposta, sicurezza, phishing, malware, exploit, siti Web, protezione di rete, Edge, Internet Explorer, Chrome, Firefox, web browser, notifiche, utenti finali, notifiche di Windows, pagina di blocco,
+description: Rispondere agli avvisi relativi a siti Web dannosi e indesiderati. Comprendere in che modo Protezione dalle minacce Web informa gli utenti finali tramite i propri Web browser e Windows notifiche
+keywords: protezione Web, protezione dalle minacce Web, esplorazione Web, avvisi, risposta, sicurezza, phishing, malware, exploit, siti Web, protezione di rete, Edge, Internet Explorer, Chrome, Firefox, web browser, notifiche, utenti finali, notifiche Windows, pagina di blocco,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -66,15 +66,15 @@ Puoi anche controllare il dispositivo che ha tentato di accedere a un URL blocca
 
 [Altre informazioni sulle pagine dell'entità dispositivo](investigate-machines.md)
 
-## <a name="web-browser-and-windows-notifications-for-end-users"></a>Notifiche di Web browser e Windows per gli utenti finali
+## <a name="web-browser-and-windows-notifications-for-end-users"></a>Web browser e notifiche Windows per gli utenti finali
 
-Con la protezione Web in Microsoft Defender for Endpoint, agli utenti finali verrà impedito di visitare siti Web dannosi o indesiderati utilizzando Microsoft Edge o altri browser. Poiché il blocco viene eseguito dalla [protezione di](network-protection.md)rete, verrà visualizzato un errore generico dal Web browser. Verrà inoltre visualizzata una notifica da Windows.
+Con la protezione Web in Microsoft Defender for Endpoint, agli utenti finali verrà impedito di visitare siti Web dannosi o indesiderati Microsoft Edge o altri browser. Poiché il blocco viene eseguito dalla [protezione di](network-protection.md)rete, verrà visualizzato un errore generico dal Web browser. Verrà inoltre visualizzata una notifica da Windows.
 
-![Immagine di Microsoft Edge che mostra un errore 403 e la minaccia Web di notifica di Windows ](images/wtp-browser-blocking-page.png)
- *bloccata in Microsoft Edge*
+![Immagine di Microsoft Edge che mostra un errore 403 e la minaccia Web di Windows di notifica bloccata su ](images/wtp-browser-blocking-page.png)
+ *Microsoft Edge*
 
-![Immagine del web browser Chrome che mostra un avviso di connessione sicura e la minaccia Web di notifica di Windows ](images/wtp-chrome-browser-blocking-page.png)
- *bloccata in Chrome*
+![Immagine del Web browser Chrome che mostra un avviso di connessione sicura e Windows ](images/wtp-chrome-browser-blocking-page.png)
+ *web threat bloccata su Chrome*
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica protezione Web](web-protection-overview.md)

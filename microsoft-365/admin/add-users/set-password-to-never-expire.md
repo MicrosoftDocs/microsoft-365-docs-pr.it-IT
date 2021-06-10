@@ -126,8 +126,8 @@ Eseguire uno dei comandi riportati di seguito:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
-[Consentire agli utenti di reimpostare le proprie password](../add-users/let-users-reset-passwords.md) (articolo)\
-[Reimpostare le password](../add-users/reset-passwords.md) (articolo)\
+[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)\
+[Reimpostare la password](../add-users/reset-passwords.md) (articolo)\
 [Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)
