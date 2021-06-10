@@ -19,7 +19,7 @@ ms.locfileid: "51581035"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Strumento di verifica di valutazione dell’idonietà scaricabile
 
-Per funzionare correttamente con Microsoft Managed Desktop, i dispositivi devono soddisfare determinati requisiti per l'hardware e le impostazioni. Inoltre, ogni dispositivo deve essere in grado di raggiungere gli endpoint chiave. Scaricare ed eseguire questo strumento per ottenere un report HTML, visualizzare i risultati e quindi eseguire un'azione. Dovrai scaricare lo strumento e i file di supporto e quindi eseguirlo manualmente su ogni dispositivo che vuoi registrare in Microsoft Managed Desktop.
+Per funzionare correttamente con Microsoft Managed Desktop, i dispositivi devono soddisfare determinati requisiti per l'hardware e le impostazioni. Inoltre, ogni dispositivo deve essere in grado di raggiungere gli endpoint chiave. Scaricare ed eseguire questo strumento per ottenere un report HTML, visualizzare i risultati e quindi eseguire un'azione. Dovrai scaricare lo strumento e i file di supporto e quindi eseguirlo manualmente in ogni dispositivo che vuoi registrare Microsoft Managed Desktop.
 
 Per ogni controllo, lo strumento segnala uno dei tre possibili risultati:
 
@@ -32,19 +32,19 @@ Per ogni controllo, lo strumento segnala uno dei tre possibili risultati:
 
 ## <a name="obtain-the-checker"></a>Ottenere lo correttore
 
-Scaricare il file ZIP da https://aka.ms/mmddratoolv0 .
+Scaricare il .zip file da https://aka.ms/mmddratoolv0 .
 
 > [!NOTE]
 > L'utente che esegue lo strumento deve disporre dei diritti di amministratore locale nel dispositivo in cui è in esecuzione.
 
  Eseguire quindi lo strumento seguendo questi passaggi:
 
-1. Copia il file ZIP scaricato in ogni dispositivo che vuoi controllare.
+1. Copia il file .zip scaricato in ogni dispositivo che vuoi controllare.
 2. Estrarre tutti i file nel download compresso.
 3. Eseguire **Microsoft.MMD.DeviceReadinessAssessmentTool.exe**.
 4. Quando viene visualizzato il prompt Controllo di accesso utente, selezionare **Sì**. Lo strumento viene eseguito e apre un report nel browser predefinito.
 
-Puoi anche scaricare ed estrarre l'archivio zip  in un percorso condiviso, accedereMicrosoft.MMD.DeviceReadinessAssessmentTool.exeda ogni dispositivo ed eseguirlo in locale.
+Puoi anche scaricare ed estrarre l'.zip in un  percorso condiviso, accedereMicrosoft.MMD.DeviceReadinessAssessmentTool.exefile da ogni dispositivo ed eseguirlo in locale.
 
 
 ## <a name="checks"></a>Controlli
@@ -53,7 +53,7 @@ Lo strumento scaricabile controlla questi elementi correlati al dispositivo e al
 
 ### <a name="hardware"></a>Hardware
 
-I dispositivi devono soddisfare requisiti hardware specifici per l'utilizzo con Microsoft Managed Desktop. Attualmente, solo specifici [dispositivi approvati](../service-description/device-list.md) sono autorizzati a registrare. 
+I dispositivi devono soddisfare requisiti hardware specifici per funzionare con Microsoft Managed Desktop. Attualmente, solo specifici [dispositivi approvati](../service-description/device-list.md) sono autorizzati a registrare. 
 
 Se il dispositivo non supera uno dei controlli, non è compatibile con Microsoft Managed Desktop.
 
@@ -65,17 +65,17 @@ Se lo strumento segnala un **risultato Non** pronto, vedi il report dettagliato 
 
 ### <a name="other-settings"></a>Altre impostazioni
 
-#### <a name="enterprise-wi-fi-profiles"></a>Profili Wi-Fi aziendali
+#### <a name="enterprise-wi-fi-profiles"></a>Enterprise profili Wi-Fi
 
 Un **risultato di advisory** significa che stai usando alcuni profili Wi-Fi che necessitano di certificati e profili per funzionare correttamente. Per altre informazioni, vedi [Distribuire certificati e profilo Wi-Fi/VPN.](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)
 
 #### <a name="lan-profiles"></a>Profili LAN
 
-Un **risultato di advisory** indica che sono disponibili reti LAN che necessitano di certificati e profili per funzionare correttamente. Per ulteriori informazioni, vedere [Prepare certificates and network profiles for Microsoft Managed Desktop.](certs-wifi-lan.md)
+Un **risultato di advisory** indica che sono disponibili reti LAN che necessitano di certificati e profili per funzionare correttamente. Per ulteriori informazioni, vedere [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
 #### <a name="vpn-profiles"></a>Profili VPN
 
-Un **risultato di** advisory indica che stai usando una rete privata virtuale (VPN). Creare un profilo VPN che distribuisca i certificati integrati con Microsoft Intune. Per ulteriori informazioni, vedere [Prepare certificates and network profiles for Microsoft Managed Desktop.](certs-wifi-lan.md)
+Un **risultato di** advisory indica che stai usando una rete privata virtuale (VPN). Creare un profilo VPN che distribuisca i certificati integrati con Microsoft Intune. Per ulteriori informazioni, vedere [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
 #### <a name="mapped-drives"></a>Unità mappate
 
@@ -87,5 +87,5 @@ Un **risultato di advisory** indica che sono disponibili alcune code di stampa i
 
 #### <a name="proxies"></a>Proxy
 
-Un **risultato di advisory** indica che è in uso un server proxy. Per ulteriori informazioni, vedere [Configurazione di rete per Microsoft Managed Desktop.](network.md)
+Un **risultato di advisory** indica che è in uso un server proxy. Per ulteriori informazioni, vedere [Configurazione di rete per Microsoft Managed Desktop](network.md).
 

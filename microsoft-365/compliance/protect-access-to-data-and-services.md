@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Informazioni su come proteggere l'accesso di utenti e dispositivi ai dati e ai servizi di Microsoft 365 e difendersi dalla perdita di dati.
+description: Informazioni su come proteggere l'accesso di utenti e dispositivi Microsoft 365 dati e servizi e difendersi dalla perdita di dati.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 9ff7bd2ff8b4b333eb30a6cc82797a8968941e0b
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
@@ -25,7 +25,7 @@ ms.locfileid: "51051698"
 ---
 # <a name="protect-user-and-device-access"></a>Proteggere l'accesso di utenti e dispositivi
 
-Proteggere l'accesso ai dati e ai servizi di Microsoft 365 è fondamentale per difendersi da attacchi informatici e proteggersi dalla perdita di dati. Le stesse protezioni possono essere applicate ad altre applicazioni SaaS nell'ambiente e anche alle applicazioni locali pubblicate con il proxy di applicazione di Azure Active Directory.
+Proteggere l'accesso ai Microsoft 365 e ai servizi è fondamentale per difendersi da attacchi informatici e proteggersi dalla perdita di dati. Le stesse protezioni possono essere applicate ad altre applicazioni SaaS nell'ambiente e anche alle applicazioni locali pubblicate con Azure Active Directory proxy di applicazione.
   
 ## <a name="step-1-review-recommendations"></a>Passaggio 1: esaminare i suggerimenti
 
@@ -40,7 +40,7 @@ Iniziare utilizzando gli account di amministratore solo per l'amministrazione. G
 
 Proteggere gli account amministratore con l'autenticazione a più fattori e l'accesso condizionale. Per ulteriori informazioni, vedere [Protezione degli account amministratore.](../security/defender-365-security/identity-access-prerequisites.md#protecting-administrator-accounts) 
 
-Configurare quindi la gestione degli accessi con privilegi in Office 365. La gestione degli accessi privilegiati consente il controllo granulare dell'accesso sulle attività di amministrazione con privilegi in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che possono utilizzare account di amministratore con privilegi esistenti con accesso permanente a dati sensibili o accesso a impostazioni di configurazione critiche.
+Configurare quindi la gestione degli accessi con privilegi in Office 365. La gestione degli accessi privilegiati consente il controllo granulare degli accessi sulle attività di amministrazione privilegiate in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che possono utilizzare account di amministratore con privilegi esistenti con accesso permanente a dati sensibili o accesso a impostazioni di configurazione critiche.
 
 - [Panoramica della gestione degli accessi con privilegi](privileged-access-management-overview.md)
 - [Configurare la gestione degli accessi con privilegi](privileged-access-management-configuration.md)
@@ -61,9 +61,9 @@ L'autenticazione a più fattori (MFA) e i criteri di accesso condizionale sono s
 
 L'implementazione della conformità dei dispositivi intune richiede la registrazione del dispositivo. La gestione dei dispositivi consente di verificare che siano integri e conformi prima di consentire loro l'accesso alle risorse nell'ambiente. Vedere [Registrare i dispositivi per la gestione in Intune](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>Passaggio 4: Configurare i criteri di accesso ai dispositivi di SharePoint
+## <a name="step-4-configure-sharepoint-device-access-policies"></a>Passaggio 4: Configurare i criteri di SharePoint di accesso ai dispositivi
 
-Microsoft consiglia di proteggere il contenuto nei siti di SharePoint con contenuti sensibili e altamente regolamentati con controlli di accesso ai dispositivi. Per ulteriori informazioni, vedere [Policy recommendations for securing SharePoint sites and files](../security/defender-365-security/sharepoint-file-access-policies.md).
+Microsoft consiglia di proteggere il contenuto in SharePoint siti con contenuti sensibili e altamente regolamentati con controlli di accesso ai dispositivi. Per ulteriori informazioni, vedere [Policy recommendations for securing SharePoint sites and files](../security/defender-365-security/sharepoint-file-access-policies.md).
 
 
 

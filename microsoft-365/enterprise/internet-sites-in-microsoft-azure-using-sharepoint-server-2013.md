@@ -25,7 +25,7 @@ ms.locfileid: "50909763"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Siti Internet in Microsoft Azure che utilizzano SharePoint Server 2013
 
- I siti Internet che usano SharePoint Server 2013 traggono vantaggio dall'hosting in Servizi infrastruttura di Azure. In questo articolo sono disponibili risorse utili per progettare e implementare questa soluzione.
+ I siti Internet che usano SharePoint Server 2013 sono ospitati in Servizi infrastruttura di Azure. In questo articolo sono disponibili risorse utili per progettare e implementare questa soluzione.
 
 ## <a name="using-azure-infrastructure-services-for-internet-sites"></a>Utilizzare i servizi infrastruttura di Azure per i siti Internet
 
@@ -39,7 +39,7 @@ Microsoft Azure fornisce un'opzione interessante per ospitare siti Internet basa
 
 - Sfruttare Azure Active Directory per gli account cliente.
 
-- Aggiungere funzionalità attualmente non disponibili in Microsoft 365, ad esempio la creazione di report approfonditi e l'analisi.
+- Aggiungi funzionalità attualmente non disponibili in Microsoft 365, ad esempio la creazione di report approfonditi e l'analisi.
 
 ## <a name="resources"></a>Risorse
 

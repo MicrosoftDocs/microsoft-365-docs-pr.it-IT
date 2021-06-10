@@ -26,15 +26,15 @@ ms.locfileid: "50909503"
 ---
 # <a name="manage-security-groups-with-powershell"></a>Gestire i gruppi di sicurezza con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-È possibile usare PowerShell per Microsoft 365 in alternativa all'interfaccia di amministrazione di Microsoft 365 per gestire i gruppi di sicurezza. 
+È possibile usare PowerShell per Microsoft 365 in alternativa all'interfaccia di amministrazione Microsoft 365 per gestire i gruppi di sicurezza. 
 
 Questo articolo descrive la presentazione, la creazione, la modifica delle impostazioni e la rimozione dei gruppi di sicurezza. 
 
 Quando un blocco di comandi in questo articolo richiede di specificare valori variabili, eseguire la procedura seguente.
 
-1. Copiare il blocco di comandi negli Appunti e incollarlo nel Blocco note o in PowerShell Integrated Script Environment (ISE).
+1. Copiare il blocco di comandi negli Appunti e incollarlo in Blocco note o in PowerShell Integrated Script Environment (ISE).
 2. Compilare i valori delle variabili e rimuovere i caratteri "<" e ">".
 3. Eseguire i comandi nella finestra di PowerShell o in PowerShell ISE.
 
@@ -42,7 +42,7 @@ Vedere [Gestire l'appartenenza ai gruppi](maintain-group-membership-with-microso
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 ### <a name="list-your-groups"></a>Elencare i gruppi
 
@@ -126,7 +126,7 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="list-your-groups"></a>Elencare i gruppi
 

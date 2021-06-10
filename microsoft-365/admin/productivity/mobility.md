@@ -28,7 +28,7 @@ ms.locfileid: "51580847"
 ---
 # <a name="mobility--people-experiences"></a>Mobilità - Esperienze utente
 
-Il punteggio di produttività fornisce informazioni dettagliate sul percorso di trasformazione digitale dell'organizzazione attraverso l'uso di Microsoft 365 e le esperienze tecnologiche che la supportano. Il punteggio dell'organizzazione riflette le misurazioni delle persone e dell'esperienza tecnologica e può essere confrontato con i benchmark di organizzazioni simili al tuo. La categoria di mobilità fa parte delle misure dell'esperienza utente. Per ulteriori informazioni, consultare la panoramica [del punteggio di produttività](productivity-score.md) e leggere [l'Informativa sulla privacy di Microsoft.](https://privacy.microsoft.com/privacystatement)
+Il punteggio di produttività fornisce informazioni approfondite sul percorso di trasformazione digitale dell'organizzazione attraverso l'uso di Microsoft 365 e le esperienze tecnologiche che la supportano. Il punteggio dell'organizzazione riflette le misurazioni delle persone e dell'esperienza tecnologica e può essere confrontato con i benchmark di organizzazioni simili al tuo. La categoria di mobilità fa parte delle misure dell'esperienza utente. Per ulteriori informazioni, consultare la panoramica [del punteggio di produttività](productivity-score.md) e leggere [l'Informativa sulla privacy di Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -47,7 +47,7 @@ Dopo che le persone sono state attive nei prodotti di cui sopra almeno una volta
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Perché l'organizzazione&#39;punteggio di mobilità è importante
 
-Un pilastro fondamentale della produttività dell'organizzazione è la capacità delle persone di lavorare in modo flessibile ovunque si trova. Con Microsoft 365, gli utenti possono rimanere connessi con Outlook, Microsoft Teams e Yammer. Gli utenti possono inoltre collaborare senza problemi al contenuto utilizzando Word, Excel, PowerPoint e OneNote da qualsiasi posizione e piattaforme.
+Un pilastro fondamentale della produttività dell'organizzazione è la capacità delle persone di lavorare in modo flessibile ovunque si trova. Con Microsoft 365, le persone possono rimanere in contatto con Outlook, Microsoft Teams e Yammer. Gli utenti possono inoltre collaborare senza problemi al contenuto utilizzando Word, Excel, PowerPoint e OneNote da qualsiasi posizione e piattaforme.
 
 ## <a name="how-we-calculate-the-score"></a>Come calcoliamo il punteggio
 
@@ -59,9 +59,9 @@ Microsoft 365 consente agli utenti di lavorare in modo flessibile tra le app, tr
 
 :::image type="content" source="../../media/primary-mobility.png" alt-text="Grafico che mostra le informazioni principali per la mobilità: il punteggio di produttività delle esperienze degli utenti.":::
 
-1. **Intestazione:** Mostra la percentuale di persone dell'organizzazione che hanno accesso a qualsiasi app di Microsoft 365 e che sono attive in almeno una di queste applicazioni su più piattaforme.
+1. **Intestazione:** Mostra la percentuale di persone dell'organizzazione che hanno accesso a qualsiasi Microsoft 365 Apps e che sono attive in almeno una di queste applicazioni su più piattaforme.
 2. **Corpo:** Fornisce ulteriori informazioni sul modo in cui l'utilizzo di queste applicazioni su più piattaforme può favorire efficienza e soddisfazione.
-3. **Visualizzazione (stato corrente):** Mostra il numero di utenti che usano più di una piattaforma su desktop, dispositivi mobili e Web per almeno un Microsoft 365 (elenco seguente) come segue:
+3. **Visualizzazione (stato corrente):** Mostra il numero di utenti che usano più piattaforme su desktop, dispositivi mobili e Web per almeno un Microsoft 365 (elenco seguente) come segue:
     - **Barra orizzontale** in cui la parte blu (colorata) rappresenta la percentuale espressa nell'intestazione.
     - **La frazione** sulla barra evidenzia il (numeratore/denominatore) utilizzato per calcolare la percentuale nell'intestazione.
         - Numeratore: numero di persone nell'organizzazione che utilizzano qualsiasi applicazione in Microsoft Outlook, Word, Excel, PowerPoint, OneNote e Microsoft Teams, Yammer e Skype su più piattaforme da desktop, Web e dispositivi mobili negli ultimi 28 giorni.
@@ -85,53 +85,53 @@ I punteggi non vengono forniti a livello di singolo utente.
 
 Vengono inoltre fornite informazioni che consentono di ottenere visibilità sul modo in cui le persone dell'organizzazione lavorano su più piattaforme. Queste metriche aggiuntive non contribuiscono direttamente al punteggio di produttività, ma consentono di creare un piano di azione come parte della trasformazione digitale.  
 
-### <a name="use-of-outlook-across-platforms"></a>Utilizzo di Outlook su più piattaforme
+### <a name="use-of-outlook-across-platforms"></a>Uso di Outlook su più piattaforme
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Grafico che mostra il numero di persone che utilizzano Outlook su più piattaforme.":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Grafico che mostra il numero di persone che usano Outlook su più piattaforme.":::
 
-1. **Intestazione:** Indica la percentuale di persone attive in Outlook che utilizzano Outlook su più piattaforme.
+1. **Intestazione:** Mostra la percentuale di persone attive in Outlook che usano Outlook su più piattaforme.
 2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di Outlook su dispositivi mobili per rimanere connessi da qualsiasi luogo della posta elettronica.
-3. **Visualizzazione:** Mostra la percentuale di utenti attivi in Outlook che utilizzano una o più piattaforme:
+3. **Visualizzazione:** Mostra la percentuale di persone attive in Outlook e che usano una o più piattaforme:
       - **Più piattaforme:**
-        - Numeratore: numero di persone che hanno utilizzato Outlook su almeno due piattaforme da desktop, mobile o Web negli ultimi 28 giorni.
-        - Denominatore: numero di persone che hanno utilizzato Outlook almeno una volta negli ultimi 28 giorni.
+        - Numeratore: il numero di persone che hanno usato Outlook su almeno due piattaforme da desktop, mobile o Web negli ultimi 28 giorni.
+        - Denominatore: il numero di persone che hanno usato Outlook almeno una volta negli ultimi 28 giorni.
       - **Solo desktop:**
-        - Numeratore: numero di persone che hanno utilizzato Outlook solo su una piattaforma desktop negli ultimi 28 giorni.
+        - Numeratore: il numero di persone che hanno Outlook solo su una piattaforma desktop negli ultimi 28 giorni.
         - Denominatore: il numero di persone che hanno utilizzato Outlook almeno una volta negli ultimi 28 giorni
       - **Solo Web:**
-        - Numeratore: numero di persone che hanno utilizzato Outlook solo su una piattaforma Web negli ultimi 28 giorni.
-        - Denominatore: numero di persone che hanno utilizzato Outlook almeno una volta negli ultimi 28 giorni.
+        - Numeratore: il numero di persone che hanno Outlook solo su una piattaforma Web negli ultimi 28 giorni.
+        - Denominatore: il numero di persone che hanno usato Outlook almeno una volta negli ultimi 28 giorni.
       - **Solo dispositivi mobili:**
-        - Numeratore: numero di persone che hanno utilizzato Outlook solo su una piattaforma mobile negli ultimi 28 giorni.
-        - *Denominatore: numero di persone che hanno utilizzato Outlook almeno una volta negli ultimi 28 giorni.
+        - Numeratore: numero di persone che hanno Outlook solo su una piattaforma mobile negli ultimi 28 giorni.
+        - *Denominatore: numero di persone che hanno Outlook almeno una volta negli ultimi 28 giorni.
 
-### <a name="use-of-teams-across-platforms"></a>Utilizzo di Teams su più piattaforme
+### <a name="use-of-teams-across-platforms"></a>Uso di Teams su più piattaforme
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Grafico che mostra il numero di persone che usano Teams su più piattaforme o su una singola piattaforma.":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Grafico che mostra il numero di persone che usano Teams su più di una o una singola piattaforma.":::
 
-1. **Intestazione:** Mostra la percentuale di utenti attivi in Microsoft Teams che la usano su più piattaforme.
-2. **Corpo:** Fornisce informazioni sul valore dell'uso di Teams su dispositivi mobili per consentire agli utenti di rimanere aggiornati sui messaggi mentre lavorano da qualsiasi posizione.
+1. **Intestazione:** Mostra la percentuale di utenti attivi Microsoft Teams su più piattaforme.
+2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di Teams su dispositivi mobili per consentire agli utenti di rimanere aggiornati sui messaggi mentre lavorano da qualsiasi posizione.
 3. **Visualizzazione:** Mostra la percentuale di persone attive in Microsoft Teams che la usano in una singola piattaforma o in più: 
     - **Più piattaforme:**
         - Numeratore: numero di persone che hanno utilizzato Teams negli ultimi 28 giorni su 2 o più delle piattaforme seguenti: desktop, mobile o Web.
-        - Denominatore: numero di persone che hanno utilizzato Microsoft Teams almeno una volta negli ultimi 28 giorni.
+        - Denominatore: il numero di persone che hanno usato Microsoft Teams almeno una volta negli ultimi 28 giorni.
     - **Solo desktop:**
-        - Numeratore: numero di persone che hanno utilizzato Microsoft Teams solo su una piattaforma desktop negli ultimi 28 giorni
-        - Denominatore: il numero di persone che hanno utilizzato Teams almeno una volta negli ultimi 28 giorni
+        - Numeratore: il numero di persone che hanno Microsoft Teams solo su una piattaforma desktop negli ultimi 28 giorni
+        - Denominatore: il numero di persone che hanno usato Teams almeno una volta negli ultimi 28 giorni
     - **Solo Web:**
-        - Numeratore: numero di persone che hanno utilizzato Microsoft Teams solo su una piattaforma Web negli ultimi 28 giorni
+        - Numeratore: il numero di persone che hanno Microsoft Teams solo su una piattaforma Web negli ultimi 28 giorni
         - Denominatore: il numero di persone che hanno utilizzato Microsoft Teams almeno una volta negli ultimi 28 giorni
     - **Solo dispositivi mobili:**
-        - Numeratore: numero di persone che hanno utilizzato Microsoft Teams solo su una piattaforma mobile negli ultimi 28 giorni
-        - Denominatore: il numero di persone che hanno utilizzato Teams almeno una volta negli ultimi 28 giorni
+        - Numeratore: il numero di persone che hanno usato Microsoft Teams solo su una piattaforma mobile negli ultimi 28 giorni
+        - Denominatore: il numero di persone che hanno usato Teams almeno una volta negli ultimi 28 giorni
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>Uso di Microsoft 365 Apps su più piattaforme
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Grafico che mostra il numero di persone che usano le app di Microsoft 365 su più piattaforme o singole piattaforme.":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Grafico che mostra il numero di persone che usano Microsoft 365 app su più piattaforme o singole piattaforme.":::
 
-1. **Intestazione:** Mostra la percentuale di utenti attivi in Microsoft 365 Apps (Word, Excel, PowerPoint e OneNote) su più piattaforme.
+1. **Intestazione:** Mostra la percentuale di persone attive in Microsoft 365 Apps (Word, Excel, PowerPoint e OneNote) su più piattaforme.
 2. **Corpo:** Fornisce informazioni sul valore di offrire agli utenti dell'organizzazione la flessibilità di accedere ai propri file da qualsiasi luogo.
-3. **Visualizzazione:** Il verticale raggruppato ha lo scopo di rappresentare il numero di persone che utilizzano ognuna delle app considerate( Word, Excel, PowerPoint e OneNote) su una o più piattaforme. Per ognuna di queste applicazioni, le barre rappresentano quanto segue:
+3. **Visualizzazione:** Il verticale raggruppato ha lo scopo di rappresentare il numero di persone che usano ognuna delle app considerate, ovvero Word, Excel, PowerPoint e OneNote, su una o più piattaforme. Per ognuna di queste applicazioni, le barre rappresentano quanto segue:
       - **Più piattaforme:** Il numero di utenti attivi in un'app su almeno due piattaforme negli ultimi 28 giorni.
       - **Solo desktop:** Il numero di utenti attivi nell'app solo sulla piattaforma desktop negli ultimi 28 giorni.
       - **Solo Web:** Il numero di utenti attivi nell'app solo sulla piattaforma Web negli ultimi 28 giorni.
@@ -142,12 +142,12 @@ Vengono inoltre fornite informazioni che consentono di ottenere visibilità sul 
 :::image type="content" source="../../media/remotework-trend.png" alt-text="Grafico che mostra il numero di persone che lavorano in remoto, in locale o in entrambi i casi.":::
 
 1. **Intestazione:** Mostra la percentuale di persone che lavorano solo da casa o da una posizione esterna alla rete aziendale.
-2. **Corpo:** Evidenzia l'importanza di facilitare il lavoro remoto per le persone senza accesso agli uffici fisici dell'organizzazione.
-3. **Visualizzazione:** Mostra la linea di tendenza per la percentuale giornaliera di persone che lavorano solo in remoto e la percentuale giornaliera di persone che lavorano anche in sede. Gli utenti sono considerati in sede se eseguono almeno tre ore di attività in Microsoft 365 Apps in un giorno.
+2. **Corpo:** Highlights l'importanza di facilitare il lavoro remoto per le persone senza accesso agli uffici fisici dell'organizzazione.
+3. **Visualizzazione:** Mostra la linea di tendenza per la percentuale giornaliera di persone che lavorano solo in remoto e la percentuale giornaliera di persone che lavorano anche in sede. Gli utenti vengono considerati in sede se eseguono almeno tre ore di attività in Microsoft 365 Apps in un giorno.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Integrità delle app di Microsoft 365 - Esperienze tecnologiche](apps-health.md) (articolo)\
+[Microsoft 365 integrità delle app - Esperienze tecnologiche](apps-health.md) (articolo)\
 [Comunicazione - Esperienze degli utenti](communication.md) (articolo)\
 [Collaborazione contenuto - Esperienze utente](content-collaboration.md) (articolo)\
 [Riunioni - Esperienze utente](meetings.md) (articolo)\

@@ -39,7 +39,7 @@ I criteri di prevenzione della perdita dei dati consentono di identificare e pro
 1. Per iniziare, accedere [all'interfaccia di amministrazione](https://admin.microsoft.com)e selezionare **Installazione.**
 1. Scorrere verso il basso **fino a Configurare la prevenzione della perdita di** dati e quindi selezionare **Visualizza** e **quindi Gestisci.**
 1. Per modificare un criterio, selezionarlo, scegliere **Modifica criterio,** quindi selezionare cosa modificare. Ad esempio, selezionare **Posizioni per** modificare gli elementi analizzati.
-1. Per abilitare l'analisi del contenuto in Microsoft  Teams, attivare l'interruttore attiva e quindi selezionare **Salva**.
+1. Per abilitare l'analisi del contenuto in Microsoft Teams,  attivare l'interruttore attiva e quindi selezionare **Salva**.
 1. Per modificare le impostazioni dei criteri, selezionare **Modifica**.
 1. Dovrai impostare regole separate che si applicano a piccole e grandi quantità di contenuto sensibile rilevato. Espandere la regola di volume basso. Scegliere **Modifica regola**.
 1. Rivedere le impostazioni e regolarle in base alle esigenze. Ad esempio, è possibile scegliere di personalizzare **il testo del messaggio di posta elettronica** e personalizzare il testo del **suggerimento per i criteri.** Selezionare **Salva**.

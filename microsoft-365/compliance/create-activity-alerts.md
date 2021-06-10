@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Aggiungere e gestire avvisi attività nel Centro sicurezza & conformità in modo che Microsoft 365 invii notifiche tramite posta elettronica quando gli utenti eseguono attività specifiche
+description: Aggiungere e gestire avvisi attività nel Centro sicurezza & conformità in modo che Microsoft 365 notifiche tramite posta elettronica quando gli utenti eseguono attività specifiche
 ms.openlocfilehash: 0d5133bd46be6a5a548f2b733bae202f3a611646
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "51052094"
 
 È possibile creare un avviso attività che invierà una notifica tramite posta elettronica quando gli utenti eseguono attività specifiche in Office 365. Gli avvisi attività sono simili alla ricerca di eventi nel log di controllo, tranne per il fatto che verrà inviato un messaggio di posta elettronica quando si verifica un evento per un'attività per cui è stato creato un avviso. 
   
- **Perché usare gli avvisi attività invece di cercare nel log di controllo?** Potrebbero essere presenti alcuni tipi di attività o attività eseguite da utenti specifici che si desidera conoscere. Anziché ricordare di cercare tali attività nel log di controllo, è possibile utilizzare gli avvisi attività per fare in modo che Microsoft 365 invii un messaggio di posta elettronica quando gli utenti eseguono tali attività. Ad esempio, è possibile creare un avviso attività per notificare quando un utente elimina i file in SharePoint oppure è possibile creare un avviso per informare l'utente quando un utente elimina definitivamente i messaggi dalla propria cassetta postale. La notifica tramite posta elettronica inviata include informazioni sull'attività eseguita e sull'utente che l'ha eseguita.
+ **Perché usare gli avvisi attività invece di cercare nel log di controllo?** Potrebbero essere presenti alcuni tipi di attività o attività eseguite da utenti specifici che si desidera conoscere. Anziché ricordarsi di cercare tali attività nel log di controllo, è possibile utilizzare gli avvisi attività per fare in modo che Microsoft 365 un messaggio di posta elettronica quando gli utenti eseguono tali attività. Ad esempio, è possibile creare un avviso attività per notificare quando un utente elimina i file in SharePoint oppure è possibile creare un avviso per informare l'utente quando un utente elimina definitivamente i messaggi dalla propria cassetta postale. La notifica tramite posta elettronica inviata include informazioni sull'attività eseguita e sull'utente che l'ha eseguita.
 
 > [!NOTE]
 > Gli avvisi attività sono deprecati. È consigliabile iniziare a usare i criteri di avviso nel Centro sicurezza e conformità invece di creare nuovi avvisi attività. I criteri di avviso offrono funzionalità aggiuntive, ad esempio la possibilità di creare criteri di avviso  che attivano un avviso quando un utente esegue un'attività specificata e visualizzano avvisi nella pagina Visualizza avvisi nel Centro sicurezza e conformità. Per ulteriori informazioni, vedere [Criteri di avviso.](alert-policies.md)
@@ -108,7 +108,7 @@ Per riattivare un avviso attività, ripeti questi passaggi e fai clic sull'inter
     > [!TIP]
     > Potresti voler creare un avviso attività per una sola attività eseguita da qualsiasi utente. Oppure è possibile creare un avviso attività che tiene traccia di più attività eseguite da uno o più utenti. 
   
-    Nella tabella seguente sono elencate alcune attività comuni correlate ai documenti in SharePoint o OneDrive for Business.
+    Nella tabella seguente sono elencate alcune attività comuni correlate ai documenti SharePoint o OneDrive for Business.
     
     |**Quando un utente esegue questa operazione...**|**Creare un avviso per questa attività**|**Gruppo attività**|
     |:-----|:-----|:-----|
@@ -118,7 +118,7 @@ Per riattivare un avviso attività, ripeti questi passaggi e fai clic sull'inter
     |Carica o scarica un documento.  <br/> |File caricato  <br/> E/o  <br/> File scaricato  <br/> |Attività su file e cartelle  <br/> |
     |Modifica le autorizzazioni di accesso a un sito.  <br/> |Autorizzazioni sito modificate  <br/> |Attività di amministrazione siti  <br/> |
 
-    Nella tabella seguente sono elencate alcune attività comuni relative alla posta elettronica in Exchange Online.
+    Nella tabella seguente sono elencate alcune attività comuni correlate alla posta elettronica in Exchange Online.
 
     |**Quando un utente esegue questa operazione...**|**Creare un avviso per questa attività**|**Gruppo attività**|
     |:-----|:-----|:-----|

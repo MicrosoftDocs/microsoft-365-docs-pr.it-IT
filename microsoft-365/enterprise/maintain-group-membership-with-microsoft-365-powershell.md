@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Informazioni su come usare PowerShell per mantenere l'appartenenza ai gruppi di Microsoft 365.
+description: Informazioni su come usare PowerShell per mantenere l'appartenenza Microsoft 365 gruppi.
 ms.openlocfilehash: 9696c9093ae6f24a2edaf544e80794bde45d18d1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,16 +27,16 @@ ms.locfileid: "50909575"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>Mantenere l'appartenenza ai gruppi di sicurezza con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-È possibile usare PowerShell per Microsoft 365 in alternativa all'interfaccia di amministrazione di Microsoft 365 per mantenere l'appartenenza ai gruppi di sicurezza in Microsoft 365. 
+È possibile usare PowerShell per Microsoft 365 come alternativa all'interfaccia di amministrazione di Microsoft 365 per mantenere l'appartenenza al gruppo di sicurezza in Microsoft 365. 
 
 >[!Note]
->[Informazioni su come mantenere l'appartenenza ai gruppi di Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md) con l'interfaccia di amministrazione di Microsoft 365. Per un elenco delle risorse aggiuntive, vedere [Manage users and groups](../admin/add-users/index.yml).
+>[Informazioni su come mantenere l'Microsoft 365 di gruppo](../admin/create-groups/add-or-remove-members-from-groups.md) con l'Microsoft 365 di amministrazione. Per un elenco delle risorse aggiuntive, vedere [Manage users and groups](../admin/add-users/index.yml).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>Aggiungere o rimuovere account utente come membri di un gruppo
 
@@ -74,7 +74,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Aggiungere o rimuovere gruppi come membri di un gruppo
 
-I gruppi di sicurezza possono contenere altri gruppi come membri. I gruppi di Microsoft 365, tuttavia, non possono. Questa sezione contiene i comandi di PowerShell per aggiungere o rimuovere gruppi solo per un gruppo di sicurezza.
+I gruppi di sicurezza possono contenere altri gruppi come membri. Microsoft 365 gruppi, tuttavia, non possono. Questa sezione contiene i comandi di PowerShell per aggiungere o rimuovere gruppi solo per un gruppo di sicurezza.
 
 Per aggiungere un gruppo in base al relativo nome **visualizzato,** immettere il nome visualizzato del gruppo che si desidera aggiungere e il nome visualizzato del gruppo che conterrà il gruppo di membri ed eseguire questi comandi nella finestra di PowerShell o in PowerShell ISE.
 
@@ -94,7 +94,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>Aggiungere o rimuovere account utente come membri di un gruppo
@@ -133,7 +133,7 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayNa
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Aggiungere o rimuovere gruppi come membri di un gruppo
 
-I gruppi di sicurezza possono contenere altri gruppi come membri. I gruppi di Microsoft 365, tuttavia, non possono. Questa sezione contiene i comandi di PowerShell per aggiungere o rimuovere gruppi solo per un gruppo di sicurezza.
+I gruppi di sicurezza possono contenere altri gruppi come membri. Microsoft 365 gruppi, tuttavia, non possono. Questa sezione contiene i comandi di PowerShell per aggiungere o rimuovere gruppi solo per un gruppo di sicurezza.
 
 Per aggiungere un gruppo in base al relativo nome **visualizzato,** immettere il nome visualizzato del gruppo che si desidera aggiungere e il nome visualizzato del gruppo che conterrà il gruppo di membri ed eseguire questi comandi nella finestra di PowerShell o in PowerShell ISE.
 

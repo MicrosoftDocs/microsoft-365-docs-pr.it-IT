@@ -32,7 +32,7 @@ ms.locfileid: "51580631"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
-Microsoft Defender per Office 365, in precedenza denominato Microsoft 365 ATP o Advanced Threat Protection, consente di proteggere l'azienda da siti dannosi quando gli utenti fa clic sui collegamenti nelle app di Office.
+Microsoft Defender per Office 365 , in precedenza denominato Microsoft 365 ATP o Advanced Threat Protection, consente di proteggere l'azienda da siti dannosi quando gli utenti fa clic sui collegamenti nelle Office app.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
@@ -40,7 +40,7 @@ Microsoft Defender per Office 365, in precedenza denominato Microsoft 365 ATP o 
 1. Scorrere verso il basso **fino a Aumentare la protezione dalle minacce avanzate.** Selezionare **Visualizza,** **Gestisci** e quindi **Collegamenti sicuri ATP.**
 1. In **Criteri applicabili all'intera organizzazione** scegliere il **criterio** Predefinito e quindi selezionare **l'icona** Modifica.
 1. Immettere un URL che si desidera bloccare.
-1. Selezionare **Usa collegamenti sicuri nelle app di Office, Office per iOS e Android;** selezionare **Non tenere traccia quando gli utenti fanno clic su collegamenti sicuri**; e selezionare **Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale.** Questi criteri potrebbero essere già selezionati se si configura il criterio predefinito. Selezionare **Salva**.
+1. Seleziona **Usa collegamenti sicuri nelle app Office, Office per iOS e Android**; selezionare **Non tenere traccia quando gli utenti fanno clic su collegamenti sicuri**; e selezionare **Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale.** Questi criteri potrebbero essere già selezionati se si configura il criterio predefinito. Selezionare **Salva**.
 1. In **Criteri applicabili a destinatari specifici** scegliere Regola collegamenti sicuri **consigliati** e quindi selezionare l'icona Modifica. 
 1. Seleziona **impostazioni,** scorri verso il basso, immetti l'URL che non vuoi controllare e quindi seleziona **l'icona** Aggiungi.
 1. Selezionare **applicato a** e quindi selezionare il nome di dominio. Selezionare eventuali domini aggiuntivi a cui si desidera applicare la regola. Selezionare **aggiungi**, **OK** e quindi **Salva**.

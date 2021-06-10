@@ -27,31 +27,31 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580655"
 ---
-# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Connettere il PC a Microsoft 365 Business Premium
+# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Connessione il PC per Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 
 ## <a name="try-it"></a>Perché non provarlo?
 Dopo aver configurato Microsoft 365 Business Premium (in precedenza noto come Microsoft 365 Business), è necessario completare alcuni passaggi per sfruttare al meglio le funzionalità di sicurezza e gestione. Ecco&#39;come.
 
-Prima di tutto, verifica di avere installato Windows 10 Pro:
+Prima di tutto, verificare di aver Windows 10 Pro installato:
 
 1. Scegliere  **Start,** cercare  **Pannello di controllo** e selezionarlo.
-2. Scegli **Sistema e sicurezza**   >   **e** conferma la tua edizione di Windows.
+2. Scegli **Sistema e sistema di**   >   **sicurezza** e conferma la tua Windows edizione.
 
 Successivamente, connettersi a Microsoft 365 Business:
 
-1. Seleziona  **Start** e quindi seleziona  **l'icona** Impostazioni.
-2. Selezionare **Account Accedi**  >   **all'istituto di istruzione o all'istituto di** istruzione   >   **Connect**.
-3. Selezionare **Aggiungi il dispositivo ad Azure Active Directory.**
-4. Immettere l'indirizzo di posta elettronica per l'account Microsoft 365 e selezionare **Avanti.**
+1. Seleziona **Start** e quindi seleziona **l'Impostazioni** icona.
+2. Selezionare **Account Accedere**  >   **all'istituto di istruzione** o   >   **all'Connessione**.
+3. Seleziona **Aggiungi questo dispositivo per Azure Active Directory**.
+4. Immettere l'indirizzo di posta elettronica per Microsoft 365 account e selezionare **Avanti.**
 5. Immettere la password, selezionare  **Accedi** e quindi verificare che si sta entrando nell'organizzazione corretta.
 6. Selezionare **Join** e quindi **Fare clic su Fine.**
 
-A seconda di come l'azienda ha configurato Microsoft 365 Business, potresti visualizzare una notifica per crittografare il PC. Per crittografare il PC:
+A seconda di come la tua azienda ha configurato Microsoft 365 Business, potresti visualizzare una notifica per crittografare il PC. Per crittografare il PC:
 
 1. Selezionare il  **messaggio Crittografia**  necessaria.
-2. Selezionare Non è&#39;installato alcun altro software di crittografia del **disco,** crittografare tutti i dischi e quindi selezionare **Sì.** Verrà visualizzata una finestra  **avvio di BitLocker**  con un indicatore di stato.
+2. Selezionare Non è&#39;installato alcun altro software di crittografia del **disco,** crittografare tutti i dischi e quindi selezionare **Sì.** Verrà visualizzata una finestra **Avvio BitLocker** con un indicatore di stato.
 3. Nella finestra **Scegli come sbloccare l'unità all'avvio** seleziona **Immetti un PIN (scelta consigliata).**
 4. Immetti il PIN e quindi immettilo di nuovo per verificarlo. Selezionare  **Imposta PIN**.
 5. Scegliere un metodo per salvare una chiave di ripristino della crittografia e quindi selezionare **Avanti.**

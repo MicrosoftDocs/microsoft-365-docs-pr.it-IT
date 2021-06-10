@@ -33,7 +33,7 @@ Ecco la foresta contoso con domini regionali per le diverse parti del mondo che 
 
 ![Foresta di Contoso e domini a livello mondiale](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso ha deciso di utilizzare gli account e i gruppi nella foresta contoso com per l'autenticazione e l'autorizzazione per i carichi di lavoro e i servizi di \. Microsoft 365.
+Contoso ha deciso di utilizzare gli account e i gruppi nella foresta contoso com per l'autenticazione e l'autorizzazione per i Microsoft 365 \. e i servizi.
 
 ## <a name="the-contoso-federated-authentication-infrastructure"></a>Infrastruttura di autenticazione federata Contoso
 
@@ -52,13 +52,13 @@ Contoso ha deciso di mantenere questa infrastruttura e dedicarla all'autenticazi
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>Identità ibrida con sincronizzazione dell'hash delle password per l'autenticazione basata su cloud
 
-Contoso desiderava utilizzare la foresta di Servizi di dominio Active Directory locale per l'autenticazione alle risorse cloud di Microsoft 365. Ha deciso di usare la sincronizzazione dell'hash delle password (PHS).
+Contoso desiderava utilizzare la foresta di Servizi di dominio Active Directory locale per l'autenticazione Microsoft 365 risorse cloud. Ha deciso di usare la sincronizzazione dell'hash delle password (PHS).
 
-PHS sincronizza la foresta di Servizi di dominio Active Directory locale con il tenant di Azure AD della sottoscrizione a Microsoft 365 per le aziende, copiando gli account utente e di gruppo e una versione con hash delle password degli account utente.
+PHS sincronizza la foresta di Servizi di dominio Active Directory locale con il tenant di Azure AD della sottoscrizione Microsoft 365 for enterprise, copiando gli account utente e di gruppo e una versione con hash delle password degli account utente.
 
-Per eseguire la sincronizzazione della directory, Contoso ha distribuito lo strumento Azure AD Connect in un server nel datacenter di Parigi.
+Per eseguire la sincronizzazione della directory, Contoso ha distribuito lo strumento azure AD Connessione in un server nel datacenter di Parigi.
 
-Ecco il server che esegue Azure AD Connect che esegue il polling della foresta di Contoso AD DS per le modifiche e quindi la sincronizzazione di tali modifiche con il tenant di Azure AD.
+Ecco il server che esegue Azure AD Connessione polling della foresta di Contoso AD DS per le modifiche e quindi la sincronizzazione di tali modifiche con il tenant di Azure AD.
 
 ![Infrastruttura di sincronizzazione della directory PHS contoso](../media/contoso-identity/contoso-identity-fig4.png)
  
@@ -76,7 +76,7 @@ Ecco il set risultante di criteri di accesso condizionale dell'identità e del d
  
 ## <a name="next-step"></a>Passaggio successivo
 
-Scopri come Contoso usa l'infrastruttura di Microsoft Endpoint Configuration Manager per [distribuire e mantenere Windows 10 Enterprise corrente](contoso-win10.md) all'interno dell'organizzazione.
+Informazioni su come Contoso usa l'Microsoft Endpoint Configuration Manager aziendale per distribuire e mantenere i dati [Windows 10 Enterprise](contoso-win10.md) all'interno dell'organizzazione.
 
 ## <a name="see-also"></a>Vedere anche
 

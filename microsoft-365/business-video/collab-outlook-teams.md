@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come usare Outlook e Microsoft Teams per collaborare.
+description: Informazioni su come usare Outlook e Microsoft Teams collaborare.
 ms.openlocfilehash: dc0eaf1b47796becf62222fb93ccd071cc197a1c
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -45,13 +45,13 @@ Quando si comunica con dipendenti, partner, clienti e altri utenti della piccola
 - Avere conversazioni ricche e in tempo reale con il team e invitare clienti o utenti guest alla conversazione.
 - Avere chat o chiamate private e condividere lo schermo tra loro.
 - Pianificare e partecipare a riunioni con dipendenti e ospiti.
-- Aggiungere o condividere file dal sito di SharePoint associato o da OneDrive for Business.
-- Aggiungere altre app come Planner, Power BI o GitHub a Teams.
+- Aggiungere o condividere file dal sito SharePoint o OneDrive for Business.
+- Aggiungi altre app come Planner, Power BI o GitHub a Teams.
 
-:::image type="content" source="../media/teams-model.png" alt-text="Immagine stilizzata della home page di Microsoft Teams."::: 
+:::image type="content" source="../media/teams-model.png" alt-text="Immagine stilizzata della home page Microsoft Teams pagina iniziale."::: 
 
 ## <a name="related-articles"></a>Articoli correlati
 
 [Che cos'è Outlook?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Panoramica di Teams](/MicrosoftTeams/Teams-overview)
+[Teams panoramica](/MicrosoftTeams/Teams-overview)

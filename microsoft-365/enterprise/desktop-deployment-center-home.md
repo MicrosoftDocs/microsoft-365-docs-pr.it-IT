@@ -26,7 +26,7 @@ Il corpo del contenuto che comprende il Centro distribuzione desktop è deprecat
 
 Usa queste risorse per distribuire desktop moderni:
 
-- [Distribuzione di Windows 10](/windows/deployment/)
+- [Windows 10 distribuzione](/windows/deployment/)
 - [Distribuire Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Criteri di identità e accesso ai dispositivi](../security/defender-365-security/microsoft-365-policies-configurations.md)
@@ -37,6 +37,6 @@ Usa queste risorse per distribuire desktop moderni:
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
-Questo kit consente di pianificare, testare e convalidare la distribuzione e la gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for enterprise. I laboratori coprono l'uso di Microsoft Endpoint Configuration Manager, Desktop Analytics, Strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
+Questo kit consente di pianificare, testare e convalidare la distribuzione e la gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for enterprise. I laboratori coprono Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot e altro ancora.
 
-Per [i dettagli, vedere Windows e Office Deployment Lab Kit.](modern-desktop-deployment-and-management-lab.md)
+Vedi [Windows e Office Deployment Lab Kit](modern-desktop-deployment-and-management-lab.md) per i dettagli.

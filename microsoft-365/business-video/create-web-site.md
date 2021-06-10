@@ -33,11 +33,11 @@ ms.locfileid: "51580643"
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Microsoft 365 non include un sito Web pubblico per l'azienda. Per configurarne una, valuta la possibilità di usare una società di hosting Web come GoDaddy, Wix o WordPress.
+Microsoft 365 non include un sito Web pubblico per la tua azienda. Per configurarne una, valuta la possibilità di usare una società di hosting Web come GoDaddy, Wix o WordPress.
 
 1. Cercare un provider di hosting Web in cui è possibile creare il sito Web.
 
      Potrebbe risultare più semplice scegliere il generatore di siti Web nella stessa società in cui è registrato il nome di dominio.
 1. Progetta il tuo sito Web aziendale, assicurandoti di includere il logo aziendale, lo scopo aziendale, il testo, le immagini e i collegamenti.
-1. Per integrare il sito Web con Microsoft 365, è possibile aggiungere la posta elettronica aziendale al sito Web e un collegamento a Microsoft Teams, SharePoint o altri strumenti di collaborazione.
-1. Assicurati di connettere il sito Web al nome di dominio, che&#39;anche per la posta elettronica in Microsoft 365.
+1. Per integrare il sito Web con Microsoft 365, è possibile aggiungere la posta elettronica aziendale al sito Web e un collegamento a Microsoft Teams, SharePoint o altro strumento di collaborazione.
+1. Assicurati di connettere il sito Web al nome di dominio, che&#39;anche per la posta elettronica Microsoft 365.

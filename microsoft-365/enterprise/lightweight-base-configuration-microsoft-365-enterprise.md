@@ -17,7 +17,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Usare questa guida al laboratorio di testing per creare un ambiente di testing leggero per il testing di Microsoft 365 per le aziende.
+description: Utilizzare questa guida al laboratorio di testing per creare un ambiente di test leggero per i test Microsoft 365 per le aziende.
 ms.openlocfilehash: 2de0760cef7339f62229575b1e0a54b3c67a4e9f
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,32 +27,32 @@ ms.locfileid: "50909707"
 ---
 # <a name="the-lightweight-base-configuration"></a>La configurazione di base
 
-*Questa guida al laboratorio di testing può essere usata sia per gli ambienti di testing di Microsoft 365 per le aziende che per gli ambienti di testing di Office 365 Enterprise.*
+*Questa guida al laboratorio di testing può essere usata sia per gli ambienti Microsoft 365 aziendali che per Office 365 Enterprise test.*
 
-Questo articolo descrive come creare un ambiente semplificato con una sottoscrizione a Microsoft 365 E5 e un computer che esegue Windows 10 Enterprise.
+In questo articolo viene descritto come creare un ambiente semplificato con una sottoscrizione Microsoft 365 E5 e un computer che esegue Windows 10 Enterprise.
 
 ![Ambiente di testing semplificato di Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 La creazione di un ambiente di testing leggero prevede cinque fasi:
-- [Fase 1: creare l'abbonamento a Microsoft 365 E5](#phase-1-create-your-microsoft-365-e5-subscription)
+- [Fase 1: creare la sottoscrizione Microsoft 365 E5 utente](#phase-1-create-your-microsoft-365-e5-subscription)
 - [Fase 2: configurare l'abbonamento di valutazione a Office 365](#phase-2-configure-your-office-365-trial-subscription)
 - [Fase 3: aggiungere un abbonamento di valutazione a Microsoft 365 E5](#phase-3-add-a-microsoft-365-e5-trial-subscription)
 - [Fase 4: creare un computer con Windows 10 Enterprise](#phase-4-create-a-windows-10-enterprise-computer)
 - [Fase 5: aggiungere il proprio computer con Windows 10 ad Azure AD](#phase-5-join-your-windows-10-computer-to-azure-ad)
 
-Utilizzare l'ambiente risultante per testare le caratteristiche e le funzionalità di [Microsoft 365 per le aziende.](https://www.microsoft.com/microsoft-365/enterprise)
+Utilizzare l'ambiente risultante per testare le caratteristiche e le funzionalità [di Microsoft 365 per le aziende.](https://www.microsoft.com/microsoft-365/enterprise)
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Per una mappa visiva a tutti gli articoli dello stack di Guida del laboratorio di testing di Microsoft 365 per le aziende, vedere [Microsoft 365 for enterprise Test Lab Guide Stack.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+> Per una mappa visiva a tutti gli articoli dello stack Microsoft 365 guida del laboratorio di testing aziendale, vedere [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 >[!NOTE]
 >Si consiglia di stampare questo articolo per registrare le informazioni specifiche necessarie per questo ambiente nei 30 giorni dell'abbonamento di valutazione a Office 365. È possibile estendere l'abbonamento di prova per altri 30 giorni. Per un ambiente di testing permanente, creare un nuovo abbonamento a pagamento con un tenant di Azure AD separato e un numero limitato di licenze.
 
-## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>Fase 1: creare l'abbonamento a Microsoft 365 E5
+## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>Fase 1: creare la sottoscrizione Microsoft 365 E5 utente
 
-Iniziamo con una sottoscrizione di valutazione di Microsoft 365 E5 e quindi aggiungiamo l'abbonamento a Microsoft 365 E5.
+Iniziamo con una sottoscrizione di Microsoft 365 E5 di valutazione e quindi aggiungiamo la sottoscrizione Microsoft 365 E5 di valutazione.
 
 >[!NOTE]
 >È consigliabile creare una sottoscrizione di valutazione di Office 365 in modo che l'ambiente di testing abbia un tenant di Azure AD separato da tutte le sottoscrizioni a pagamento attualmente disponibili. Questa separazione significa che è possibile aggiungere e rimuovere utenti e gruppi nel tenant di test senza influire sulle sottoscrizioni di produzione.
@@ -71,7 +71,7 @@ Per avviare l'abbonamento di valutazione a Microsoft 365 E5, è necessario innan
 
 1. Nel browser passare a [https://aka.ms/e5trial](https://aka.ms/e5trial) .
     
-2. Nel passaggio 1 della pagina **Grazie per la scelta di Office 365 E5,** immettere il nuovo indirizzo dell'account di posta elettronica.
+2. Nel passaggio 1 della pagina Grazie per aver scelto Office 365 **E5,** immettere il nuovo indirizzo dell'account di posta elettronica.
 3. Nel passaggio 2 del processo di sottoscrizione trail, immettere le informazioni richieste ed eseguire la verifica.
 4. Nel passaggio 3 immettere un nome di organizzazione e quindi un nome di account che sarà l'amministratore globale per la sottoscrizione.
 5. Per il passaggio 4, registrare la pagina di accesso qui (selezionare e copiare): ![Riga](../media/Common-Images/TableLine.png)
@@ -79,7 +79,7 @@ Per avviare l'abbonamento di valutazione a Microsoft 365 E5, è necessario innan
    Registrare la password immessa in un luogo sicuro.
    Questo valore verrà chiamato **Nome amministratore globale**.
 7. Selezionare **Vai al programma di installazione**.
-8. Nel programma di installazione di Office 365 E5 selezionare Continua a usare il **file .onmicrosoft.com** dell'organizzazione per la posta elettronica e l'accesso, quindi selezionare **Esci e continua in seguito.**
+8. In Office 365 programma di installazione di E5, selezionare Continua a usare il **file .onmicrosoft.com** dell'organizzazione per la posta elettronica e l'accesso, quindi selezionare **Esci e continua in seguito.**
 
 Dovrebbe essere visualizzata l'interfaccia di amministrazione di Microsoft 365.
     
@@ -87,9 +87,9 @@ Dovrebbe essere visualizzata l'interfaccia di amministrazione di Microsoft 365.
 
 In questa fase è possibile configurare l'abbonamento con altri utenti e assegnare questi ultimi le licenze di Office 365 E5.
   
-Per connettersi alla sottoscrizione con il modulo Azure Active Directory PowerShell per Graph dal computer, seguire le istruzioni in Connettersi a [Microsoft 365 con PowerShell.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Per connettersi all'abbonamento con il modulo di Azure Active Directory PowerShell per Graph dal computer, seguire le istruzioni in Connessione per Microsoft 365 [con PowerShell.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
     
-Nella finestra **Windows PowerShell richiesta credenziali** immettere il nome dell'amministratore globale (ad esempio, *jdoe@contosotoycompany.onmicrosoft.com*) e la password.
+Nella finestra **Windows PowerShell richiesta credenziali** immettere il nome dell'amministratore globale (ad esempio, jdoe@contosotoycompany.onmicrosoft.com ) *e* la password.
   
 Compilare il nome dell'organizzazione (ad esempio, *contosotoycompany),* il codice paese a due caratteri per la propria posizione, una password dell'account comune e quindi eseguire i comandi seguenti dal prompt di PowerShell:
 
@@ -157,9 +157,9 @@ Se questi valori non sono già stati registrati, registrarli ora:
    
 ### <a name="using-an-office-365-test-environment"></a>Uso di un ambiente di testing di Office 365
 
-Se è necessario solo un ambiente di testing di Office 365, non è necessario leggere il resto di questo articolo.
+Se è necessario solo un Office 365 di test, non è necessario leggere il resto di questo articolo.
 
-Per ulteriori guide ai laboratori di testing applicabili sia a Office 365 che a Microsoft 365, vedere Guide dei laboratori di testing di [Microsoft 365 per le aziende.](m365-enterprise-test-lab-guides.md)
+Per ulteriori guide ai laboratori di testing che si applicano Office 365 e Microsoft 365, vedere Microsoft 365 per le guide dei laboratori [di testing aziendali.](m365-enterprise-test-lab-guides.md)
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>Fase 3: aggiungere un abbonamento di valutazione a Microsoft 365 E5
 
@@ -167,19 +167,19 @@ In questa fase è possibile sottoscrivere un abbonamento di valutazione a Micros
   
 Prima di tutto, aggiungere l'abbonamento di valutazione a Microsoft 365 E5 e assegnare la nuova licenza di Microsoft 365 all'account di amministratore globale.
   
-1. In una finestra privata del browser Internet, usare le credenziali dell'account amministratore globale per accedere all'interfaccia di amministrazione di Microsoft 365 all'indirizzo [https://admin.microsoft.com](https://admin.microsoft.com) .
+1. In una finestra privata del browser Internet, usa le credenziali dell'account amministratore globale per accedere all'interfaccia Microsoft 365 di amministrazione all'indirizzo [https://admin.microsoft.com](https://admin.microsoft.com) .
     
-2. Nella pagina Dell'interfaccia di amministrazione di **Microsoft 365,** nel riquadro di spostamento sinistro, selezionare **Fatturazione > Acquisto di servizi**.
+2. Nella pagina **Microsoft 365 di amministrazione,** nel riquadro di spostamento sinistro, selezionare **Fatturazione > Acquisto di servizi**.
     
-3. Nella pagina **Acquista servizi** selezionare **Microsoft 365 E5** e quindi selezionare **Ottieni versione di valutazione gratuita.**
+3. Nella pagina **Acquista servizi** selezionare **Microsoft 365 E5** e quindi selezionare Ottieni versione di **valutazione gratuita.**
 
-4. Nella pagina **Di valutazione di Microsoft 365 E5** decidi di ricevere un SMS  o una telefonata, immetti il numero di telefono e quindi seleziona Chiamami o **Chiamami.** Eseguire la verifica.
+4. Nella pagina **Microsoft 365 E5** prova, decidi di ricevere un SMS o una telefonata, immetti il numero di telefono e quindi seleziona Sms **o** **Chiamami.** Eseguire la verifica.
 
 5. Nella pagina **Conferma l'ordine** selezionare **Prova ora.**
 
 6. Nella pagina **Conferma ordine** selezionare **Continua.**
 
-7. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti > utenti attivi**.
+7. Nell'Microsoft 365 di amministrazione selezionare **Utenti > utenti attivi**.
 
 8. In **Utenti attivi** selezionare l'account amministratore.
 
@@ -192,7 +192,7 @@ Prima di tutto, aggiungere l'abbonamento di valutazione a Microsoft 365 E5 e ass
 Successivamente, ripetere i passaggi da 8 a 11 della procedura precedente per tutti gli altri account (Utente 2, Utente 3, Utente 4 e Utente 5).
   
 > [!NOTE]
-> La durata della sottoscrizione di valutazione di Microsoft 365 E5 è di 30 giorni. Per un ambiente di testing permanente, convertire questo abbonamento di valutazione in uno a pagamento con un numero limitato di licenze.
+> La durata della sottoscrizione Microsoft 365 E5 di valutazione è di 30 giorni. Per un ambiente di testing permanente, convertire questo abbonamento di valutazione in uno a pagamento con un numero limitato di licenze.
   
 A questo punto, l'ambiente di test dispone di:
   
@@ -209,11 +209,11 @@ In questa fase è necessario creare un computer autonomo con sistema operativo W
   
 ### <a name="physical-computer"></a>Computer fisico
 
-In un personal computer installa Windows 10 Enterprise. Puoi scaricare la versione di valutazione di Windows 10 Enterprise [qui.](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
+In un personal computer, installare Windows 10 Enterprise. Puoi scaricare la versione Windows 10 Enterprise versione di valutazione [qui](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
   
 ### <a name="virtual-machine"></a>Macchina virtuale
 
-Usa l'hypervisor di tua scelta per creare una macchina virtuale e quindi installa Windows 10 Enterprise su di essa. Puoi scaricare la versione di valutazione di Windows 10 Enterprise [qui.](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
+Usa l'hypervisor di tua scelta per creare una macchina virtuale e quindi installa Windows 10 Enterprise su di essa. Puoi scaricare la versione Windows 10 Enterprise versione di valutazione [qui](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
   
 ### <a name="virtual-machine-in-azure"></a>Macchina virtuale in Azure
 
@@ -288,11 +288,11 @@ Dopo che la macchina virtuale o fisica con Windows 10 Enterprise è stata creata
   
 Successivamente, aggiungere il computer WIN10 al tenant di Azure AD dell'abbonamento a Microsoft 365 E5.
   
-1. Sul desktop del computer WIN10 selezionare **Start > Settings > Accounts > Access work or school > Connect**.
+1. Sul desktop del computer WIN10 seleziona **Start > Impostazioni > Accounts > Access work or school > Connessione**.
     
-2. Nella finestra di dialogo Configura un account aziendale o **dell'istituto** di istruzione selezionare **Aggiungi il dispositivo ad Azure Active Directory.**
+2. Nella finestra **di dialogo Configura un account aziendale** o dell'istituto di istruzione seleziona Aggiungi **questo dispositivo Azure Active Directory**.
     
-3. In **Account aziendale o dell'istituto** di istruzione immettere il nome dell'account amministratore globale dell'abbonamento a Microsoft 365 E5 e quindi selezionare **Avanti**.
+3. In **Account aziendale o dell'istituto** di istruzione immettere il nome dell'account amministratore globale della sottoscrizione Microsoft 365 E5 e quindi selezionare **Avanti.**
     
 4. In **Immetti password** immettere la password per l'account amministratore globale e quindi selezionare **Accedi.**
     
@@ -300,11 +300,11 @@ Successivamente, aggiungere il computer WIN10 al tenant di Azure AD dell'abbonam
     
 6. Chiudere la finestra delle impostazioni.
     
-Installare quindi Microsoft 365 Apps for enterprise nel computer WIN10:
+Successivamente, installare Microsoft 365 Apps for enterprise nel computer WIN10:
   
-1. Aprire il browser Microsoft Edge e accedere all'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com) con le credenziali dell'account amministratore globale.
+1. Apri il Microsoft Edge browser e accedi all'Microsoft 365 [di amministrazione con](https://admin.microsoft.com) le credenziali dell'account amministratore globale.
     
-2. Nella scheda **Microsoft Office Home** selezionare **Installa Office**.
+2. Nella scheda **Microsoft Office Home** selezionare Installa **Office**.
     
 3. Quando viene richiesto di eseguire l'operazione, selezionare **Esegui** e quindi Selezionare **Sì** per **Controllo account utente.**
     

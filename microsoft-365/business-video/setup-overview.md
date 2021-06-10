@@ -1,5 +1,5 @@
 ---
-title: Panoramica della configurazione di Microsoft 365 Business Premium
+title: Panoramica dell'Microsoft 365 Business Premium di installazione
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -27,24 +27,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580403"
 ---
-# <a name="overview-of-microsoft-365-business-premium-setup"></a>Panoramica della configurazione di Microsoft 365 Business Premium
+# <a name="overview-of-microsoft-365-business-premium-setup"></a>Panoramica dell'Microsoft 365 Business Premium di installazione
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
 
-Congratulazioni per la decisione di spostare l'azienda nel cloud con Microsoft 365! Sia che tu abbia una persona nell'azienda o 20, fare una piccola pianificazione ti aiuterà a ottenere il massimo da Microsoft 365 Business Premium.
+Congratulazioni per la decisione di spostare l'azienda nel cloud con Microsoft 365! Sia che tu abbia una persona nell'azienda o 20, fare un po' di pianificazione ti aiuterà a ottenere il massimo da Microsoft 365 Business Premium.
 
 Per iniziare, consenti&#39;di esaminare cosa&#39;ottenere:
 
-- Applicazioni di Office come Word, Excel, PowerPoint e Outlook.
+- Office applicazioni quali Word, Excel, PowerPoint e Outlook.
 - Un indirizzo di posta elettronica personalizzato per l'utente e i dipendenti, ad esempio rob@contoso.com.
-- Archiviazione dei documenti nel cloud (OneDrive e Microsoft Teams) e altro ancora.
+- Archiviazione di documenti nel cloud (OneDrive e Microsoft Teams) e altro ancora.
 - Aggiornamenti a Windows 10 Pro da Windows 7 Professional, Windows 8 Pro o Windows 8.1 Pro.
 - Protezione per i file di lavoro in tutti i dispositivi iOS, Android e Windows 10 con sicurezza di livello aziendale.
 
 Non&#39;le app per la contabilità, le buste paga, CRM o un sito Web pubblico.
 
 > [!NOTE]
-> Se hai Windows 10 Home, devi acquistare Windows 10 Pro.  
+> Se si dispone di Windows 10 Home, è necessario acquistare Windows 10 Pro.  
 
 
 :::image type="content" source="../media/m365-steps-to-set-up.png" alt-text="Grafico che fornisce una panoramica dei passaggi di installazione.":::
@@ -53,16 +53,16 @@ Non&#39;le app per la contabilità, le buste paga, CRM o un sito Web pubblico.
 
 Quando si sceglie un abbonamento cloud per la propria azienda, è possibile scegliere le funzionalità desiderate nell'abbonamento. Informazioni sui piani [microsoft per piccole imprese.](https://www.microsoft.com/microsoft-365/business?rtc=1)
 
-- Scegliere [Office 365 Business Essentials](https://www.microsoft.com/en-us/p/office-365-business-essentials/cfq7ttc0k59v?rtc=1&amp;activetab=pivot:overviewtab) se si desiderano solo app online (app a cui è possibile accedere in un Web browser) per la posta elettronica, la creazione di documenti, la collaborazione e l'archiviazione cloud. Sono inclusi Word Online, Excel Online, PowerPoint Online e SharePoint Online.
-- Scegliere [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) se si desidera che le app di Office, ad esempio Word, Excel e Teams, funzionino direttamente su PC e Mac. Questo è in aggiunta alle app online.
-- Scegliere [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business?rtc=1) se si desiderano tutte le app di Office, oltre alla sicurezza cloud e alla gestione dei dispositivi. Ciò include la protezione da virus, malware, ransomware e altro ancora, nonché la gestione e la crittografia dei dispositivi. Ottieni anche un aggiornamento gratuito a Windows 10 Pro dalle versioni precedenti di Windows Professional.
-- Se hai un'azienda più grande o hai bisogno di app e servizi IT più complessi, scopri i nostri piani [di Microsoft 365 Enterprise.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
+- Scegli [Office 365 Business Essentials](https://www.microsoft.com/en-us/p/office-365-business-essentials/cfq7ttc0k59v?rtc=1&amp;activetab=pivot:overviewtab) se vuoi solo app online (app a cui puoi accedere in un Web browser) per la posta elettronica, la creazione di documenti, la collaborazione e l'archiviazione cloud. Sono inclusi Word Online, Excel Online, PowerPoint Online e SharePoint Online.
+- Scegliere [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) se si desidera che la versione completa di app Office come Word, Excel e Teams sia eseguita direttamente su PC e Mac. Questo è in aggiunta alle app online.
+- Scegli [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business?rtc=1) se vuoi tutte le app Office, oltre alla sicurezza cloud e alla gestione dei dispositivi. Ciò include la protezione da virus, malware, ransomware e altro ancora, nonché la gestione e la crittografia dei dispositivi. Ottieni anche un aggiornamento gratuito a Windows 10 Pro versioni Windows Professional precedenti.
+- Se hai un'azienda più grande o hai bisogno di app e servizi IT più complessi, scopri i nostri piani Microsoft 365 Enterprise [aziendali.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
 
 
 ## <a name="2-add-a-domain-name"></a>2. Aggiungere un nome di dominio
 
-- Un nome di dominio fornisce all'organizzazione un'identità online professionale e facile da ricordare, ad esempio _rob@contoso.com_. Se ne hai già uno, puoi portarlo con te a Microsoft 365 o Microsoft 365: ti&#39;la transizione.
-- Non&#39;un dominio? È&#39;facile ottenerne uno contemporaneamente all'iscrizione a Microsoft 365 o Microsoft 365.
+- Un nome di dominio fornisce all'organizzazione un'identità online professionale e facile da ricordare, ad esempio _rob@contoso.com_. Se ne hai già uno, puoi portarlo con te per Microsoft 365 o Microsoft 365:&#39;ti aiuterà con la transizione.
+- Non&#39;un dominio? È&#39;facile ottenerne uno contemporaneamente all'iscrizione Microsoft 365 o Microsoft 365.
 
 **Nota:**  Oltre alla posta elettronica, puoi usare il dominio con un sito Web in vari host, come WordPress, GoDaddy o Wix.
 
@@ -79,34 +79,34 @@ Quando si sceglie un abbonamento cloud per la propria azienda, è possibile sceg
 
 ## <a name="5-manage-and-secure-your-devices"></a>5. Gestire e proteggere i dispositivi
 
-- Con Microsoft 365 Business Premium, ottieni protezione dai dispositivi, protezione dalle minacce online e protezione da perdita accidentale di dati. Ottieni anche aggiornamenti Windows Defender, BitLocker e aggiornamenti automatici per le app di Windows 10 Pro e Office.
+- Con Microsoft 365 Business Premium, ottieni protezione dai dispositivi, protezione dalle minacce online e protezione da perdita accidentale di dati. Puoi anche ottenere Windows Defender, BitLocker e aggiornamenti automatici per Windows 10 Pro e Office app.
 - È possibile configurare Multi-Factor Authentication (MFA), la crittografia della posta elettronica, la protezione antimalware e la protezione ransomware per impedire l'accesso non autorizzato a dispositivi e dati.
-- È possibile proteggere i dati di lavoro importanti archiviati in locale nel PC, in SharePoint o OneDrive for Business o nel dispositivo mobile. Gestione dei dispositivi mobili (MDM) integrata per Microsoft 365 consente di proteggere e gestire gli utenti&#39; dispositivi mobili come iPhone, iPad, Android e telefoni Windows. Con MDM, puoi creare e gestire i criteri di sicurezza dei dispositivi, cancellare in remoto un dispositivo e visualizzare report dettagliati sul dispositivo.
+- Puoi proteggere i dati di lavoro importanti archiviati localmente nel PC, SharePoint OneDrive for Business o nel dispositivo mobile. Gestione di dispositivi mobili (MDM) integrata per Microsoft 365 consente di proteggere e gestire gli utenti&#39; dispositivi mobili come iPhone, iPad, Android e Windows telefoni. Con MDM è possibile creare e gestire criteri di sicurezza, cancellare tutti i dati in remoto e visualizzare report dettagliati sui dispositivi.
 
 ## <a name="6-upgrade-your-pcs-to-windows-10-pro"></a>6. Aggiornare i PC a Windows 10 Pro
 
-- Iniziare l'aggiornamento dei PC a Windows 10 Professional (gratuito con Microsoft 365 Business Premium se&#39;si esegue Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro) in modo da poter usufruire di tutte le funzionalità di Microsoft 365 Business Premium, come la sicurezza avanzata e la gestione dei dispositivi.
+- Iniziare l'aggiornamento dei PC a Windows 10 Professional (gratuito con Microsoft 365 Business Premium se si esegue&#39;Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro) in modo da poter usufruire di tutte le funzionalità di Microsoft 365 Business Premium, come la sicurezza avanzata e la gestione dei dispositivi.
 - Puoi anche eseguire l'aggiornamento a Windows 10 Pro da una versione consumer o se&#39;eseguire Microsoft 365 Business Standard, ma è necessario un acquisto una sola volta.
 
-## <a name="7-connect-your-pcs-to-microsoft-365"></a>7. Connettere i PC a Microsoft 365
+## <a name="7-connect-your-pcs-to-microsoft-365"></a>7. Connessione i PC da Microsoft 365
 
-- Per ottenere il massimo da Microsoft 365, è&#39;è necessario connettere i PC Windows 10 a Microsoft 365 Business Premium e Azure Active Directory in esecuzione dietro di esso. Ciò consente al PC di essere gestito da Microsoft 365 Business Premium per ottenere aggiornamenti software e protezione dalla perdita di dati e da altre minacce informatiche.
+- Per ottenere il massimo da Microsoft 365, è&#39;collegare i PC Windows 10 a Microsoft 365 Business Premium e Azure Active Directory in esecuzione dietro di esso. In questo modo il PC può essere gestito da Microsoft 365 Business Premium ottenere aggiornamenti software e protezione dalla perdita di dati e da altre minacce informatiche.
 - Quando colleghi il PC, Windows 10 registra il dispositivo nella rete dell'organizzazione&#39;e quindi aggiunge il dispositivo alla rete in modo da poter usare il nome utente e la password dell'organizzazione&#39;per accedere alle risorse.
 - In base ai requisiti&#39;'organizzazione, potrebbe essere richiesto di configurare la verifica in due passaggi, la crittografia e la gestione dei dispositivi mobili, ad esempio Microsoft Intune.
 
-## <a name="8-set-up-and-use-office-apps"></a>8. Configurare e usare le app di Office
+## <a name="8-set-up-and-use-office-apps"></a>8. Configurare e usare Office app
 
-- Iniziare a usare tutte le app di Office disponibili, ad esempio Word, Excel e PowerPoint. Se non&#39;già installato, è possibile installarlo facilmente dal sito [Web Microsoft Office .](https://www.office.com/)
-- Una delle prime operazioni da&#39;è aprire Outlook per la prima volta. È&#39;immettere l'indirizzo di posta elettronica e la password di Microsoft 365 e avere accesso immediato alla posta elettronica, al calendario e ai contatti.
-- Inoltre, è possibile aprire Microsoft Teams, Word, Excel, PowerPoint e il resto delle app di Office. Potrebbe essere richiesto l'indirizzo di posta elettronica e la password la prima volta che apri ogni app.
+- Iniziare a usare tutte le Office disponibili, ad esempio Word, Excel e PowerPoint. Se non&#39;già installato, è possibile installarlo facilmente dal sito [Web Microsoft Office .](https://www.office.com/)
+- Una delle prime operazioni che&#39;fare è aprire Outlook per la prima volta. È&#39;immettere l'indirizzo Microsoft 365 e la password e avere accesso immediato alla posta elettronica, al calendario e ai contatti.
+- Inoltre, è possibile aprire Microsoft Teams, Word, Excel, PowerPoint e il resto delle Office app. Potrebbe essere richiesto l'indirizzo di posta elettronica e la password la prima volta che apri ogni app.
 
 ## <a name="9-migrate-old-email-and-files"></a>9. Eseguire la migrazione di vecchi messaggi di posta elettronica e file
 
 - A un certo punto,&#39;importare i vecchi messaggi di posta elettronica, calendario e contatti, nonché documenti aziendali e altri file in Microsoft 365 Business Premium.
-- Per la posta elettronica, è possibile eseguire questa operazione in Outlook esportando il vecchio messaggio di posta elettronica come PST e quindi importando tale FILE PST nel nuovo account di posta elettronica. Ripetere l'operazione su altri computer. È inoltre possibile usare un partner per eseguire questo passaggio.
-- Per i documenti aziendali, è possibile trascinare e rilasciare i file in OneDrive for Business e, nel caso di file aziendali comuni o condivisi, copiare tali file in SharePoint.
+- Per la posta elettronica, è possibile farlo in Outlook esportando il vecchio messaggio di posta elettronica come PST e quindi importando tale PST nel nuovo account di posta elettronica. Ripetere l'operazione su altri computer. È inoltre possibile usare un partner per eseguire questo passaggio.
+- Per i documenti aziendali, è possibile trascinare e rilasciare i file in OneDrive for Business e, nel caso di file aziendali comuni o condivisi, copiare i file in SharePoint.
 
 ## <a name="10-set-up-your-phones"></a>10. Configurare i telefoni
 
-- Se si prevede di usare i telefoni per rimanere produttivi in viaggio, è&#39;aggiungere app di Office come Outlook, Teams ed Excel ai dispositivi mobili, ad esempio Android e iOS.
-- Con Microsoft 365 Business Premium, la sicurezza viene applicata in ogni dispositivo, quindi quando si installano e aprono le app&#39;, verrà richiesto di creare un pin, creare una seconda forma di autenticazione (MFA) e altre impostazioni per proteggere i dati business sul telefono.
+- Se si prevede di usare i telefoni per rimanere produttivi in viaggio, è possibile&#39;aggiungere app Office come Outlook, Teams e Excel ai dispositivi mobili, come Android e iOS.
+- Con Microsoft 365 Business Premium, la sicurezza viene applicata a ogni dispositivo, quindi quando si installano e aprono le app,&#39;verrà richiesto di creare un pin, creare una seconda forma di autenticazione (MFA) e altre impostazioni per proteggere i dati aziendali sul telefono.

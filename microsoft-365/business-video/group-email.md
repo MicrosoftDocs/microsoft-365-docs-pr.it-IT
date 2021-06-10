@@ -40,5 +40,5 @@ Quando si crea un gruppo, si crea un indirizzo di posta elettronica centrale e u
 3. Apri l'elenco a discesa privacy e scegli **Privato.**
 4. Selezionare la  **casella di controllo Invia tutti i messaggi di posta elettronica**  ed eventi di gruppo alle cartelle Posta in arrivo dei membri.
 5. In  **Aggiungi membri** selezionare i dipendenti che si desidera ricevere i messaggi di posta elettronica e quindi scegliere Aggiungi  **membri**.
-6. Nella scheda  **Home**  di Outlook selezionare  **Impostazioni gruppo**, quindi **Modifica gruppo**.
+6. Nella scheda **Home** in Outlook selezionare Gruppo **Impostazioni**, quindi **Modifica gruppo**.
 7. Nella casella **Modifica gruppo** selezionare la casella di controllo Consenti agli utenti esterni all'organizzazione di inviare **un** messaggio di posta elettronica al gruppo e quindi scegliere **OK.**

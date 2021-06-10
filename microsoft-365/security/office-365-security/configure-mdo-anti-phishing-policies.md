@@ -243,7 +243,7 @@ La creazione di un criterio anti-phishing personalizzato nel Centro sicurezza cr
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-7. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare **clic su Indietro** o selezionare la pagina specifica della procedura guidata.
+7. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare clic su **Indietro** o selezionare la pagina specifica della procedura guidata.
 
    Al termine, fare clic su **Invia.**
 

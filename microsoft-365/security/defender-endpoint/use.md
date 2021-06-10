@@ -46,7 +46,7 @@ Usa il dashboard **di analisi delle** minacce per valutare e controllare continu
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Guida interattiva a Microsoft Defender for Endpoint
 In questa guida interattiva scoprirai come analizzare le minacce per la tua organizzazione con Microsoft Defender for Endpoint. Vedrai come Microsoft Defender for Endpoint può aiutarti a identificare attività sospette, analizzare i rischi per la tua organizzazione e correggere le minacce.
 
-[Consultare la guida interattiva](https://aka.ms/MSDE-IG)
+[Consulta la guida interattiva](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>Contenuto della sezione
 

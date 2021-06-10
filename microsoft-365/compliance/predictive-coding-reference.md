@@ -1,5 +1,5 @@
 ---
-title: Informazioni di riferimento sulla codifica predittiva
+title: Riferimento della codifica predittiva
 f1.keywords:
 - NOCSH
 ms.author: markjjo

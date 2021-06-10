@@ -56,9 +56,9 @@ I dati dicono:
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>Usare un account utente standard per controllare le prestazioni
 
-Un amministratore della raccolta siti, un proprietario del sito, un editor o un collaboratore appartengono a gruppi di sicurezza aggiuntivi, dispongono di autorizzazioni aggiuntive e pertanto dispongono di elementi aggiuntivi caricati da SharePoint in una pagina.
+Un amministratore della raccolta siti, un proprietario del sito, un editor o un collaboratore appartengono a gruppi di sicurezza aggiuntivi, dispongono di autorizzazioni aggiuntive e pertanto dispongono di elementi aggiuntivi che SharePoint caricati in una pagina.
   
-Ciò è applicabile a SharePoint locale e SharePoint Online, ma in uno scenario locale le differenze non saranno così facilmente notate come in SharePoint Online.
+Ciò è applicabile SharePoint locale e SharePoint Online, ma in uno scenario locale le differenze non saranno così facilmente notate come in SharePoint Online.
   
 Per valutare correttamente le prestazioni di una pagina per gli utenti, è consigliabile utilizzare un account utente standard per evitare di caricare i controlli di creazione e modifica e il traffico aggiuntivo correlato ai gruppi di sicurezza.
   
@@ -110,7 +110,7 @@ L'altra operazione che può rallentare le interazioni del server è la mancanza 
   
 ### <a name="network-connection"></a>Connessione di rete
 
-Con SharePoint locale che non utilizza una rete WAN, è possibile utilizzare una connessione ad alta velocità tra datacenter e utenti finali. In genere, le operazioni sono facili da gestire da un punto di vista della rete.
+Con una rete SharePoint locale che non utilizza una rete WAN, è possibile utilizzare una connessione ad alta velocità tra datacenter e utenti finali. In genere, le operazioni sono facili da gestire da un punto di vista della rete.
   
 Con SharePoint Online, esistono alcuni ulteriori fattori da considerare; ad esempio:
   
@@ -140,7 +140,7 @@ L'esplorazione pagine complesse influisce sulle prestazioni. La maggior parte de
   
 Anche la larghezza di banda potrebbe essere un problema. Ad esempio, se un utente sta guardando video in un'altra sessione, ciò influirà sulle prestazioni della pagina SharePoint. Anche se non puoi impedire agli utenti di trasmettere contenuti multimediali, puoi controllare il modo in cui una pagina verrà caricata per gli utenti.
   
-Vedere gli articoli seguenti per le diverse tecniche di personalizzazione delle pagine di SharePoint Online e altre procedure consigliate per ottenere prestazioni ottimali.
+Vedere gli articoli seguenti per diverse tecniche di personalizzazione SharePoint online e altre procedure consigliate per ottenere prestazioni ottimali.
   
 - [Opzioni di spostamento per SharePoint Online](navigation-options-for-sharepoint-online.md)
     

@@ -32,11 +32,11 @@ ms.locfileid: "51580499"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
 
-Microsoft 365 consente di proteggere l'azienda da ransomware impedendo l'apertura di file potenzialmente pericolosi, come JavaScript, batch ed eseguibili, in Outlook. Per aumentare questo livello di protezione aggiungendo regole che bloccano o avvisano l'utente di altri tipi di file, eseguire la procedura seguente.
+Microsoft 365 aiuta a proteggere l'azienda da ransomware impedendo l'apertura di file potenzialmente pericolosi, come JavaScript, batch ed eseguibili, in Outlook. Per aumentare questo livello di protezione aggiungendo regole che bloccano o avvisano l'utente di altri tipi di file, eseguire la procedura seguente.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione di [https://admin.microsoft.com](https://admin.microsoft.com) , scegliere **Exchange** in Interfaccia **di amministrazione**.
+1. Nell'interfaccia di amministrazione in [https://admin.microsoft.com](https://admin.microsoft.com) , scegliere **Exchange** in Interfaccia **di amministrazione**.
 1. Scegliere Flusso di posta dal menu **a sinistra.**
 1. Nella scheda regole scegliere la freccia accanto al simbolo più (+), quindi scegliere **Crea una nuova regola.**
 1. Nella pagina **nuova regola** immettere un nome per la regola, scorrere verso il basso e quindi scegliere **Altre opzioni.**

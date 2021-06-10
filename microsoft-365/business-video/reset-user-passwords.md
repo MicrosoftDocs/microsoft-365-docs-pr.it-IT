@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come reimpostare le password utente in Microsoft 365 per le aziende.
+description: Scopri come reimpostare le password degli utenti in Microsoft 365 per le aziende.
 ms.openlocfilehash: 42832bd48f637589687b75c4995ae58154b62226
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,7 +37,7 @@ In Microsoft 365 per le aziende, è possibile reimpostare le password per gli ut
 ## <a name="try-it"></a>Perché non provarlo?
 
 1. Quando un utente richiede una nuova password, riceverai una richiesta di reimpostazione della password tramite posta elettronica. Per reimpostare la password, apri l'icona di avvio delle app e seleziona **Amministratore.**
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti**  **,** Utenti attivi e quindi selezionare l'icona chiave accanto all'utente che ha richiesto la reimpostazione.
+1. Nell'Microsoft 365 di amministrazione selezionare **Utenti**, Utenti **attivi** e quindi selezionare l'icona chiave accanto all'utente che ha richiesto la reimpostazione.
 1. Selezionare **Genera automaticamente la password** per creare automaticamente una password casuale.
 1. Selezionare **Reimposta**.
 1. Selezionare la **casella di controllo Invia password tramite posta** elettronica.

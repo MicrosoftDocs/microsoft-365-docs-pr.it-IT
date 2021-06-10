@@ -33,14 +33,14 @@ ms.locfileid: "51580535"
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Creare un team a livello di organizzazione in Microsoft Teams di cui tutti gli utenti dell'azienda possono far parte. Quando si aggiungono altri utenti a Microsoft 365, questi verranno aggiunti automaticamente a questo team.
+Creare un team a livello di organizzazione in Microsoft Teams a cui possono far parte tutti gli utenti dell'azienda. Quando si aggiungono altri utenti Microsoft 365, questi verranno aggiunti automaticamente al team.
 
-1. In Microsoft Teams seleziona  **Teams** e quindi **Crea team.**
+1. In Microsoft Teams selezionare **Teams** e quindi **Crea team.**
 2. Scegliere **Crea un team da zero.**
 3. Selezionare **Crea un team a livello di organizzazione.**
 
 > [!NOTE]
-> Per visualizzare questa opzione, è necessario essere un amministratore di Microsoft 365.
+> Per visualizzare questa opzione, è necessario essere Microsoft 365 amministratore.
 
 1. Assegnare un nome al team, aggiungere una descrizione e quindi selezionare  **Crea**.
 
@@ -49,6 +49,6 @@ All'interno del team sono presenti canali. Il canale Generale viene creato autom
 Provare a eseguire una delle operazioni seguenti:
 
 - Utilizzare la  **scheda Post** per le conversazioni e gli annunci a livello di organizzazione, ad esempio un messaggio di benvenuto per tutti gli utenti.
-- Nella scheda  **File** è possibile creare nuovi documenti a cui tutti possono contribuire, ad esempio un documento di Microsoft Word. Oppure trascina e rilascia i documenti esistenti nella  **scheda** File.
+- Nella scheda **File** è possibile creare nuovi documenti a cui tutti possono contribuire, ad esempio un Microsoft Word documento. Oppure trascina e rilascia i documenti esistenti nella  **scheda** File.
 - Utilizzare la  **scheda Wiki** per prendere note rapide. E seleziona il segno più ( **+** ) per aggiungere app o file come schede aggiuntive.
 - Con le schede a sinistra, è possibile visualizzare le attività recenti, chattare con altri membri del team, visualizzare i team a cui si appartiene e il calendario. Puoi effettuare chiamate vocali e video ad altri utenti del team e visualizzare i file su cui hai lavorato di recente.

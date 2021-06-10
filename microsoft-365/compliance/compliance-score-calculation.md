@@ -27,7 +27,7 @@ ms.locfileid: "51052114"
 **In questo articolo:** Informazioni su come Compliance Manager calcola un punteggio di conformità per l'organizzazione. In questo articolo viene illustrato come interpretare il **punteggio,** cosa include la valutazione data **protection baseline,** il monitoraggio continuo e il modo in cui i diversi tipi di azioni vengono **gestiti e classificati.** 
 
 > [!IMPORTANT]
-> I consigli di Compliance Manager non devono essere interpretati come una garanzia di conformità. L'utente deve valutare e convalidare l'efficacia dei controlli dei clienti in base all'ambiente normativo. Questi servizi sono soggetti ai termini e alle condizioni delle Condizioni [dei Servizi online.](https://go.microsoft.com/fwlink/?linkid=2108910) Vedi anche Indicazioni sulla licenza di [Microsoft 365 per la sicurezza e la conformità.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> I consigli di Compliance Manager non devono essere interpretati come una garanzia di conformità. L'utente deve valutare e convalidare l'efficacia dei controlli dei clienti in base all'ambiente normativo. Questi servizi sono soggetti ai termini e alle condizioni delle Condizioni [dei Servizi online.](https://go.microsoft.com/fwlink/?linkid=2108910) Vedi anche le [Microsoft 365 licenze per la sicurezza e la conformità.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ## <a name="how-to-read-your-compliance-score"></a>Come leggere il punteggio di conformità
 
@@ -45,11 +45,11 @@ Un valore di punteggio viene assegnato a tre livelli:
 
 Il punteggio di conformità complessivo viene calcolato usando i punteggi delle azioni, in cui ogni azione Microsoft viene conteggiata una sola volta, ogni azione tecnica che gestisci viene conteggiata una volta e ogni azione non tecnica che gestisci viene conteggiata una volta per gruppo. Questa logica è progettata per fornire la contabilità più accurata di come le azioni vengono implementate e testate nell'organizzazione. È possibile notare che ciò può causare una differenza tra il punteggio di conformità complessivo e la media dei punteggi di valutazione. Altre informazioni di seguito sul [punteggio delle azioni](#action-types-and-points).
 
-## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Punteggio iniziale basato sulla baseline di protezione dei dati di Microsoft 365
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Punteggio iniziale basato sulla base della Microsoft 365 di protezione dei dati
   
-Compliance Manager fornisce un punteggio iniziale basato sulla linea di base per la protezione dei dati di Microsoft 365. Questa linea di base è un insieme di controlli che include normative e standard chiave per la protezione dei dati e la governance generale dei dati. Questa linea di base si basa principalmente su NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), nonché su FedRAMP (Federal Risk and Authorization Management Program) e GDPR (General Data Protection Regulation of the European Union).
+Compliance Manager fornisce un punteggio iniziale in base alla Microsoft 365 di protezione dei dati. Questa linea di base è un insieme di controlli che include normative e standard chiave per la protezione dei dati e la governance generale dei dati. Questa linea di base si basa principalmente su NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), nonché su FedRAMP (Federal Risk and Authorization Management Program) e GDPR (General Data Protection Regulation of the European Union).
 
-Il punteggio iniziale viene calcolato in base alla valutazione di base di protezione dei dati predefinita fornita a tutte le organizzazioni. Al primo passaggio, Compliance Manager sta già raccogliendo segnali dalle soluzioni Microsoft 365. Vedrai a colpo d'occhio le prestazioni dell'organizzazione rispetto agli standard e alle normative di protezione dei dati chiave e vedrai le azioni di miglioramento suggerite da intraprendere.
+Il punteggio iniziale viene calcolato in base alla valutazione di base di protezione dei dati predefinita fornita a tutte le organizzazioni. Al momento della prima visita, Compliance Manager sta già raccogliendo segnali dalle soluzioni Microsoft 365 sicurezza. Vedrai a colpo d'occhio le prestazioni dell'organizzazione rispetto agli standard e alle normative di protezione dei dati chiave e vedrai le azioni di miglioramento suggerite da intraprendere.
 
 Poiché ogni organizzazione ha esigenze specifiche, Compliance Manager si basa su di te per configurare e gestire le valutazioni per ridurre al minimo e ridurre i rischi nel modo più completo possibile.
 
@@ -96,27 +96,27 @@ Alle azioni viene assegnato un valore di punteggio in base al fatto che siano ob
 
 ### <a name="mandatory-and-discretionary-actions"></a>Azioni obbligatorie e discrezionali
 
- - **Le azioni** obbligatorie non possono essere ignorate, intenzionalmente o accidentalmente. Un esempio di azione obbligatoria è un criterio password gestito centralmente che imposta i requisiti per lunghezza, complessità e scadenza delle password. Gli utenti devono attenersi a questi requisiti per accedere al sistema.
+ - **Le azioni** obbligatorie non possono essere ignorate, intenzionalmente o accidentalmente. Un esempio di azione obbligatoria è un criterio password gestito centralmente che imposta i requisiti per lunghezza, complessità e scadenza delle password. Per accedere al sistema, gli utenti devono attenersi a questi requisiti.
   
- - **Le azioni discrezionali** si basano sugli utenti per comprendere e rispettare un criterio. Ad esempio, un criterio che richiede agli utenti di bloccare il computer quando lo abbandona è un'azione discrezionale perché si basa sull'utente.
+ - **Le azioni discrezionali** si basano sugli utenti per comprendere e rispettare un criterio. Ad esempio, un criterio che richiede agli utenti di bloccare il computer quando vanno via è un controllo discrezionale perché dipende dall'utente.
   
 ### <a name="preventative-detective-and-corrective-actions"></a>Azioni preventive, investigative e correttive
   
- - **Le azioni preventive** affrontano rischi specifici. Ad esempio, proteggere le informazioni in stato di inquieto utilizzando la crittografia è un'azione preventiva contro attacchi e violazioni. La separazione dei compiti è un'azione preventiva per gestire il conflitto di interessi e proteggere dalle frodi.
+ - **Le azioni preventive** affrontano rischi specifici. Ad esempio, la protezione delle informazioni archiviate con la crittografia è un’azione preventiva contro attacchi e violazioni. La separazione dei compiti è un’azione preventiva per gestire i conflitti di interesse e prevenire le frodi.
   
  - **Le azioni del** detective monitorano attivamente i sistemi per identificare condizioni o comportamenti irregolari che rappresentano rischi o che possono essere utilizzati per rilevare intrusioni o violazioni. Alcuni esempi includono il controllo dell'accesso al sistema e le azioni amministrative con privilegi. I controlli di conformità normativa sono un tipo di azione investigativa usata per individuare i problemi relativi ai processi.
   
-- **Le azioni correttive** cercano di ridurre al minimo gli effetti negativi di un incidente di sicurezza, di intraprendere azioni correttive per ridurre l'effetto immediato e di annullare il danno, se possibile. La risposta agli incidenti di privacy è un'azione correttiva per limitare i danni e ripristinare i sistemi a uno stato operativo dopo una violazione.
+- **Le azioni correttive** cercano di ridurre al minimo gli effetti negativi di un incidente di sicurezza, di intraprendere azioni correttive per ridurre l'effetto immediato e di annullare il danno, se possibile. La risposta a un incidente relativo alla privacy è un’azione correttiva per limitare i danni e ripristinare i sistemi a uno stato operativo dopo una violazione.
   
 Ogni azione ha un valore assegnato in Compliance Manager in base al rischio rappresentato:
 
 |**Type**|**Punteggio assegnato**|
 |:-----|:-----|
 | Preventivo obbligatorio | 27 |
-| Discrezionale preventivo | 9  |
-| Detective obbligatorio | 3  |
+| Discrezione preventiva | 9  |
+| Detective obbligatorio | 3 |
 | Detective discretionary | 1 |
-| Obbligatorio correttivo | 3  |
+| Obbligatorio correttivo | 3 |
 | Discrezionale correttivo | 1 |
   
 ![Valori del punto di azione di Compliance Manager](../media/compliance-score-action-scoring.png "Valori del punto di azione di Compliance Manager")

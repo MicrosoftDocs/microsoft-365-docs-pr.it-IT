@@ -32,7 +32,7 @@ ms.locfileid: "51580415"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
-Il phishing è un attacco dannoso in cui un messaggio di posta elettronica sembra essere stato inviato da una fonte familiare, ma tenta di raccogliere le informazioni personali. Per impostazione predefinita, Microsoft 365 include una protezione anti-phishing, ma è possibile aumentare tale protezione affinando le impostazioni. Diamo un'occhiata.
+Il phishing è un attacco dannoso in cui un messaggio di posta elettronica sembra essere stato inviato da una fonte familiare, ma tenta di raccogliere le informazioni personali. Per impostazione predefinita, Microsoft 365 protezione anti-phishing, ma è possibile aumentare tale protezione affinando le impostazioni. Diamo un'occhiata.
 
 ## <a name="try-it"></a>Perché non provarlo?
 

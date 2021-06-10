@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come installare l'app per dispositivi mobili di amministrazione di Microsoft 365 nel telefono.
+description: Scopri come installare l'app Microsoft 365 admin sul telefono.
 ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580703"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installare l'app per dispositivi mobili di amministrazione di Microsoft 365 nel telefono
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installare l'app Microsoft 365 admin sul telefono
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-Puoi usare l'app per dispositivi mobili Di amministrazione di Microsoft 365 per gestire gli utenti, monitorare l'integrità dei servizi ed eseguire altre attività di amministrazione dal telefono.
+Puoi usare l'app Microsoft 365 admin per dispositivi mobili per gestire gli utenti, monitorare l'integrità del servizio ed eseguire altre attività di amministrazione dal telefono.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Per ottenere l'app per dispositivi mobili Di amministrazione di  **Microsoft 365, cerca l'amministratore di Microsoft 365**  nell'app store per il dispositivo e installalo.
+1. Per ottenere l'app Microsoft 365 admin per dispositivi mobili, cerca Microsoft 365 **admin** nell'app store per il dispositivo e installala.
 2. Accedi con l'indirizzo di posta elettronica dell'amministratore globale e visualizza il dashboard per visualizzare l'integrità del servizio, monitorare le licenze utente e visualizzare messaggi e richieste di servizio.
 3. Ecco alcune attività comuni che puoi eseguire con l'app:
 
@@ -56,6 +56,6 @@ Puoi usare l'app per dispositivi mobili Di amministrazione di Microsoft 365 per 
 
 ### <a name="turn-on-notifications"></a>Attivare le notifiche
 
-1. Scegliere Impostazioni dal menu **principale.**
+1. Nel menu principale scegliere **Impostazioni**.
 2. In **Impostazioni app** scegliere **Notifiche.**
 3. Selezionare le caselle di controllo accanto **a Integrità servizio** e Centro **messaggi.**
