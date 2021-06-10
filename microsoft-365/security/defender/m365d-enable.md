@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3d7564b5d509190c8c8e799c541bb0ca583097f1
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3f05cc8c9b2509f8c95b802f56905e2859221cd2
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636231"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861600"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Attivare Microsoft 365 Defender
 
@@ -65,7 +65,7 @@ Microsoft 365 Defender archivierà ed eelaborare i dati nella [stessa posizione 
 Selezionare **Serve assistenza?** nel centro sicurezza Microsoft 365 per contattare il supporto Tecnico Microsoft per il provisioning di Microsoft 365 Defender in un'altra posizione del data center.
 
 > [!NOTE]
-> Microsoft Defender for Endpoint effettua automaticamente il provisioning nei data center dell'Unione Europea (UE) quando è attivato tramite Azure Defender. Microsoft 365 Defender eseguirà automaticamente il provisioning nello stesso data center ue per i clienti che hanno effettuato il provisioning di Defender per Endpoint in questo modo.
+> In passato, Microsoft Defender for Endpoint eseguiva automaticamente il provisioning nei data center dell'Unione Europea (UE) quando è attivato tramite Azure Defender. Microsoft 365 Defender eseguirà automaticamente il provisioning nello stesso data center dell'UE per i clienti che hanno effettuato il provisioning di Defender per Endpoint in questo modo in passato.
 
 ### <a name="confirm-that-the-service-is-on"></a>Verificare che il servizio sia attivo
 

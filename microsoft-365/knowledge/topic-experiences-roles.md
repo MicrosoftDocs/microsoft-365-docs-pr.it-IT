@@ -24,64 +24,64 @@ ms.locfileid: "51222768"
 # <a name="microsoft-viva-topics-roles"></a>Ruoli di Microsoft Viva Topics 
 
 Quando usi Viva Topics nell'ambiente Microsoft 365, gli utenti possono avere i ruoli seguenti:
--   Visualizzatore argomenti
--   Collaboratore argomento
--   Knowledge Manager
--   Amministratore della knowledge base
+-   Visualizzatore di argomenti
+-   Autore di argomenti
+-   Responsabile delle informazioni
+-   Amministratore delle informazioni
 
-## <a name="topic-viewer"></a>Visualizzatore argomenti
+## <a name="topic-viewer"></a>Visualizzatore di argomenti
 
 I visualizzatori di argomenti sono utenti dell'organizzazione che possono visualizzare gli argomenti evidenziati nel sito moderno di SharePoint, Microsoft Search tramite SharePoint e Office.com e il Centro argomenti. Possono visualizzare ulteriori dettagli su un argomento nella pagina dell'argomento. 
 
-Perché le evidenziazioni degli argomenti e le relative pagine siano visibili a un visualizzatore di argomenti, l'utente deve:
--   [L'amministratore di](./set-up-topic-experiences.md#assign-licenses) Microsoft 365 deve assegnare una licenza Viva Topics.
--   Essere autorizzati ad avere visibilità per gli argomenti. Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365.
+Affinché gli argomenti e le loro pagine e caratteristiche siano visibili a un visualizzatore di argomenti, l'utente deve:
+-   [Essere assegnato a una licenza Viva Topics](./set-up-topic-experiences.md#assign-licenses) dal Microsoft 365 amministratore.
+-   Essere autorizzati a vedere gli argomenti. Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'Microsoft 365 di amministrazione.
 
 
-## <a name="topic-contributors"></a>Collaboratori di argomenti
+## <a name="topic-contributors"></a>Autori di argomenti
 
-I collaboratori degli argomenti sono utenti dell'organizzazione che non solo dispongono delle autorizzazioni per il visualizzatore di argomenti, ma che possono anche modificare un argomento esistente o creare un nuovo argomento. Hanno un ruolo importante nella "cura" manuale delle informazioni in una pagina dell'argomento (sia ai che forniti manualmente) per garantirne la qualità.
+Gli autori di argomenti sono utenti dell'organizzazione che non solo possono vedere gli argomenti, ma possono anche modificare un argomento esistente o crearne uno nuovo. Hanno un ruolo importante nella "cura" manuale delle informazioni in una pagina dell'argomento (sia ai che forniti manualmente) per garantirne la qualità.
 
 Gli utenti che dispongono delle  autorizzazioni di collaboratore di argomenti visualizzano un pulsante Modifica nelle pagine Argomento, che consente loro di apportare aggiornamenti e pubblicare un argomento.
 
-Un collaboratore di argomenti può anche creare e pubblicare un nuovo argomento tramite il centro argomenti.
+Un autore di argomenti può anche creare e pubblicare un nuovo argomento tramite il proprio centro argomenti.
 
 Per creare e modificare un argomento, l'utente deve:
 
--   [L'amministratore di](./set-up-topic-experiences.md#assign-licenses) Microsoft 365 deve assegnare una licenza Viva Topics.
--   [Assegnare le autorizzazioni per creare e modificare gli argomenti.](./topic-experiences-user-permissions.md) Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365.
+-   [Essere assegnato a una licenza Viva Topics](./set-up-topic-experiences.md#assign-licenses) dal Microsoft 365 amministratore.
+-   [Assegnare le autorizzazioni per creare e modificare gli argomenti.](./topic-experiences-user-permissions.md) Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'Microsoft 365 di amministrazione.
 
-## <a name="knowledge-managers"></a>Knowledge Manager
+## <a name="knowledge-managers"></a>Responsabili delle informazioni
 
-I knowledge manager sono utenti che gestiscono gli argomenti nell'organizzazione.  La gestione degli argomenti viene eseguita tramite la pagina Gestisci argomenti nel Centro argomenti ed è visibile solo ai responsabili della knowledge base.
+I responsabili delle informazioni sono utenti che gestiscono gli argomenti nell'organizzazione.  La gestione degli argomenti viene effettuata tramite la pagina Gestisci argomenti nel centro argomenti ed è visibile solo ai responsabili delle informazioni.
 
-Nella pagina Gestisci argomenti i knowledge manager possono eseguire le attività seguenti:
--   Visualizzare gli argomenti suggeriti dall'IA.
+Nella pagina Gestisci argomenti i responsabili delle informazioni possono svolgere le attività seguenti:
+-   Visualizzare gli argomenti suggeriti dall'intelligenza artificiale.
 -   Esaminare gli argomenti per verificare che siano validi.
 -   Rimuovere gli argomenti che non si desidera siano visibili agli utenti.
 
-Inoltre, un responsabile della knowledge base può modificare gli argomenti esistenti o crearne di nuovi.
+Inoltre, un responsabile delle informazioni può modificare gli argomenti esistenti o crearne di nuovi.
 
 Per gestire gli argomenti, l'utente deve:
--   [L'amministratore di](./set-up-topic-experiences.md#assign-licenses) Microsoft 365 deve assegnare una licenza Viva Topics.
--   [Assegnare le autorizzazioni per gestire gli argomenti](./topic-experiences-user-permissions.md). Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365.
+-   [Essere assegnato a una licenza Viva Topics](./set-up-topic-experiences.md#assign-licenses) dal Microsoft 365 amministratore.
+-   [Assegnare le autorizzazioni per gestire gli argomenti](./topic-experiences-user-permissions.md). Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'Microsoft 365 di amministrazione.
 
 Gli utenti che hanno una buona conoscenza generale dell'azienda possono essere buoni candidati per il ruolo di knowledge manager. Tali persone potrebbero non solo avere la conoscenza di sapere se gli argomenti sono validi o meno, ma potrebbero anche conoscere le persone all'interno dell'azienda che sono correlate a tali argomenti.
 
 
-## <a name="knowledge-admins"></a>Amministratori della knowledge base
+## <a name="knowledge-admins"></a>Amministratori delle informazioni
 
-Gli amministratori della knowledge base sono amministratori che configurano Viva Topics nell'ambiente Microsoft 365. Al termine della configurazione, gestiscono anche le impostazioni di Viva Topics. Il ruolo di amministratore della knowledge base richiede di essere un amministratore globale o di SharePoint di Microsoft 365 poiché l'installazione e la gestione vengono eseguite nell'interfaccia di amministrazione di Microsoft 365.
+Gli amministratori della knowledge base sono amministratori che configurano e configurano Viva Topics nel Microsoft 365 locale. Al termine della configurazione, gestiscono anche le impostazioni di Viva Topics. Il ruolo di amministratore della knowledge base richiede di essere un amministratore Microsoft 365 globale o SharePoint dal momento che la configurazione e la gestione vengono eseguite nell'Microsoft 365 di amministrazione.
 Durante l'installazione, gli amministratori della knowledge base possono configurare Viva Topics per:
 
--   Selezionare quali siti di SharePoint verranno sottoposti a ricerca per indicizzazione per gli argomenti.
--   Selezionare gli utenti con licenza che possono visualizzare gli argomenti (visualizzatori di argomenti).
--   Selezionare gli argomenti da escludere dall'identificazione.
--   Selezionare gli utenti con licenza che possono creare e modificare argomenti (collaboratori di argomenti).
--   Selezionare gli utenti con licenza che possono gestire gli argomenti (responsabili delle conoscenze).
+-   Selezionare quali siti di SharePoint verranno sottoposti a ricerca per indicizzazione per identificare gli argomenti.
+-   Selezionare quali utenti con licenza possono visualizzare gli argomenti (visualizzatori degli argomenti).
+-   Selezionare quali argomenti verranno esclusi dall'identificazione.
+-   Selezionare quali utenti con licenza possono creare e modificare gli argomenti (autori degli argomenti).
+-   Selezionare quali utenti con licenza possono gestire gli argomenti (responsabili delle informazioni).
 -   Assegnare un nome al centro argomenti.
 
-I knowledge manager devono essere in grado di coordinarsi con tutti gli stakeholder viva topics dell'organizzazione per sapere come configurarlo. Ad esempio, se un nuovo progetto contiene informazioni riservate, il responsabile della conoscenza deve essere informato in modo che possa assicurarsi che il sito di SharePoint non sia sottoposto a ricerca per indicizzazione per gli argomenti o che sia necessario escludere nomi di argomenti specifici.
+I responsabili delle informazioni devono essere in grado di coordinarsi con tutti gli stakeholder di Viva Topics nell'organizzazione per sapere come configurarlo. Ad esempio, se un nuovo progetto contiene informazioni riservate, il responsabile della conoscenza deve essere informato in modo che possa assicurarsi che il sito di SharePoint non sia sottoposto a ricerca per indicizzazione per gli argomenti o che sia necessario escludere nomi di argomenti specifici.
 
 
 ## <a name="see-also"></a>Vedere anche

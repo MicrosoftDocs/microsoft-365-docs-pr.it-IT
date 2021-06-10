@@ -38,9 +38,9 @@ Tutte le valutazioni sono elencate nella pagina delle valutazioni. Ulteriori inf
 
 ## <a name="data-protection-baseline-default-assessment"></a>Valutazione predefinita di base per la protezione dei dati
 
-Per iniziare, Microsoft fornisce  una valutazione predefinita in Compliance Manager per la baseline di protezione dei dati di **Microsoft 365.** Questa valutazione di base include una serie di controlli per le normative e gli standard chiave per la protezione dei dati e la governance generale dei dati. Questa linea di base si basa principalmente su NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), nonché su FedRAMP (Federal Risk and Authorization Management Program) e GDPR (General Data Protection Regulation of the European Union).
+Per iniziare, Microsoft fornisce  una valutazione predefinita in Compliance Manager per la Microsoft 365 **di protezione dei dati**. Questa valutazione di base include una serie di controlli per le normative e gli standard chiave per la protezione dei dati e la governance generale dei dati. Questa linea di base si basa principalmente su NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), nonché su FedRAMP (Federal Risk and Authorization Management Program) e GDPR (General Data Protection Regulation of the European Union).
 
-Questa valutazione viene utilizzata per calcolare il punteggio di conformità iniziale la prima volta che si arriva a Compliance Manager, prima di configurare eventuali altre valutazioni. Compliance Manager raccoglie i segnali iniziali dalle soluzioni Microsoft 365. Vedrai a colpo d'occhio le prestazioni dell'organizzazione rispetto agli standard e alle normative di protezione dei dati chiave e vedrai le azioni di miglioramento suggerite da intraprendere.
+Questa valutazione viene utilizzata per calcolare il punteggio di conformità iniziale la prima volta che si arriva a Compliance Manager, prima di configurare eventuali altre valutazioni. Compliance Manager raccoglie i segnali iniziali dalle Microsoft 365 soluzioni. Vedrai a colpo d'occhio le prestazioni dell'organizzazione rispetto agli standard e alle normative di protezione dei dati chiave e vedrai le azioni di miglioramento suggerite da intraprendere.
 
 Compliance Manager diventa più utile durante la creazione e la gestione delle proprie valutazioni per soddisfare le esigenze specifiche dell'organizzazione.
 
@@ -143,7 +143,7 @@ Questo processo verrà completato a partire dalla pagina dei modelli **di** valu
 
 **Prima di iniziare**
 
-Per prepararsi a questo processo, è innanzitutto necessario assemblare un foglio di calcolo di Excel formattato appositamente per importare i dati del modello necessari. Esistono requisiti speciali per i [file di Excel formattati](compliance-manager-templates.md#formatting-your-template-data-with-excel) utilizzati nel processo di estensione. Vedere questi punti aggiuntivi per evitare errori nel processo di importazione:
+Per prepararsi a questo processo, dovrai prima assemblare un foglio di calcolo Excel formato speciale per importare i dati del modello necessari. Esistono requisiti speciali per i [file Excel formattati](compliance-manager-templates.md#formatting-your-template-data-with-excel) utilizzati nel processo di estensione. Vedere questi punti aggiuntivi per evitare errori nel processo di importazione:
 
 - Il foglio di calcolo deve contenere solo le azioni e i controlli che si desidera aggiungere alla valutazione. 
 - Il foglio di calcolo non può contenere controlli o azioni già esistenti nella valutazione che si desidera modificare.
@@ -165,13 +165,13 @@ Dopo aver formattato il foglio di calcolo, eseguire la procedura seguente.
 
 6. Nella schermata successiva viene visualizzato il modello selezionato. Se corretto, selezionare **Avanti**. Se non è corretto, scegliere **Seleziona un modello diverso da** scegliere di nuovo.
 
-7. Nella schermata **Carica file** selezionare **Sfoglia** per trovare e caricare il file di Excel formattato contenente tutti i dati del modello necessari.
+7. Nella schermata **Upload file** selezionare  Sfoglia per trovare e caricare il file Excel contenente tutti i dati del modello necessari.
 
-8. Se non si verificano problemi con il file, nella schermata successiva viene visualizzato il nome del file caricato. Selezionare **Avanti** per continuare (se è necessario modificare il file, selezionare **Carica un altro file**).
+8. Se non si verificano problemi con il file, nella schermata successiva viene visualizzato il nome del file caricato. Selezionare **Avanti** per continuare (se è necessario modificare il file, selezionare Upload **un file diverso).**
 
     - Se si verifica un problema con il file, nella parte superiore viene visualizzato un messaggio di errore che spiega il problema. Dovrai correggere e ricaricare il file. Gli errori si verificano se il foglio di calcolo è formattato in modo non corretto o se sono presenti informazioni non valide in alcuni campi.
  
-9. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando si è pronti per l'approvazione, selezionare **Avanti**. Se è necessario apportare modifiche, selezionare **Carica un file diverso.**
+9. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando si è pronti per l'approvazione, selezionare **Avanti**. Se è necessario apportare modifiche, **selezionare Upload un file diverso.**
 
 10. L'ultima schermata conferma la creazione di un nuovo modello. Selezionare **Fine** per uscire dalla procedura guidata.
 
@@ -179,11 +179,11 @@ Dopo aver formattato il foglio di calcolo, eseguire la procedura seguente.
 
 ## <a name="create-your-own-custom-assessment"></a>Creare una valutazione personalizzata
 
-La creazione di una valutazione personalizzata in Compliance Manager richiede la creazione di un modello personalizzato. Per creare un modello personalizzato, è necessario innanzitutto assemblare un foglio di calcolo di Excel formattato per importare i dati del modello necessari. Aiuta anche a decidere in anticipo a quale gruppo assegnare la valutazione al momento della creazione (ulteriori informazioni sui [gruppi).](#what-are-groups)
+La creazione di una valutazione personalizzata in Compliance Manager richiede la creazione di un modello personalizzato. Per creare un modello personalizzato, dovrai prima assemblare un foglio di calcolo Excel formato per importare i dati del modello necessari. Aiuta anche a decidere in anticipo a quale gruppo assegnare la valutazione al momento della creazione (ulteriori informazioni sui [gruppi).](#what-are-groups)
 
 **Segui i passaggi seguenti per creare la valutazione personalizzata:**
 
-1. **Formattare il file di Excel.** Per iniziare, formattare i dati del modello in un foglio di calcolo di Excel usando [queste istruzioni.](compliance-manager-templates.md#formatting-your-template-data-with-excel)
+1. **Formattare il Excel file.** Per iniziare, formattare i dati del modello in Excel foglio di calcolo usando [queste istruzioni.](compliance-manager-templates.md#formatting-your-template-data-with-excel)
 
 2. **Creare il modello** seguendo [queste istruzioni.](compliance-manager-templates.md#create-a-new-template)
 
@@ -291,7 +291,7 @@ Dopo aver **selezionato Rivedi** aggiornamento dalla pagina dei dettagli della v
 - Panoramica dell'aggiornamento
 - Dettagli specifici sulle modifiche, tra cui l'impatto sul punteggio di conformità, la quantità di progressi verso il completamento della valutazione e il numero specifico di modifiche apportate alle azioni di miglioramento e ai controlli.
 
-Selezionando il **collegamento Modello** aggiornato verrà scaricato un file di Excel contenente i dati di controllo per la versione del modello con gli aggiornamenti in sospeso. Se si **seleziona il collegamento** Modello corrente, viene scaricato un file del modello esistente senza le modifiche.
+Selezionando il **collegamento Modello** aggiornato verrà scaricato un file Excel contenente i dati di controllo per la versione del modello con gli aggiornamenti in sospeso. Se si **seleziona il collegamento** Modello corrente, viene scaricato un file del modello esistente senza le modifiche.
 
 Per accettare l'aggiornamento e apportare le modifiche alla valutazione, selezionare **Accetta aggiornamento**. Le modifiche accettate sono permanenti.
 
@@ -307,6 +307,6 @@ Se si sta completando una valutazione, è possibile assicurarsi di aver completa
 
 ## <a name="export-an-assessment-report"></a>Esportare un report di valutazione
 
-È possibile esportare una valutazione in un file Excel per gli stakeholder di conformità nell'organizzazione o per revisori esterni e regolatori. Nella pagina dei dettagli della valutazione selezionare il pulsante Genera **report** nella parte superiore della pagina, che consente di creare un file di Excel che è possibile salvare e condividere.
+È possibile esportare una valutazione in un file Excel per le parti interessate alla conformità nell'organizzazione o per revisori esterni e autorità di regolamentazione. Nella pagina dei dettagli della valutazione seleziona il pulsante Genera **report** nella parte superiore della pagina, che crea un file Excel che puoi salvare e condividere.
 
 Il report è uno snapshot della valutazione alla data e all'ora dell'esportazione. Contiene i dettagli per i controlli gestiti dall'utente e da Microsoft, inclusi lo stato dell'implementazione, la data del test e i risultati dei test.

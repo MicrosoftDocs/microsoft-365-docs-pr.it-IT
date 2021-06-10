@@ -34,15 +34,15 @@ ms.locfileid: "51205465"
 > [!NOTE]
 > Se al momento non si utilizza il componente aggiuntivo Per [](enable-the-report-message-add-in.md) la segnalazione della posta indesiderata, è consigliabile utilizzare il componente aggiuntivo Segnala messaggio o Segnala [phishing.](enable-the-report-phish-add-in.md) Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Il componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook consente agli utenti di inviare falsi positivi (buona posta elettronica contrassegnata come posta indesiderata), falsi negativi (posta elettronica non consentita) e messaggi di phishing a Microsoft. Se l'organizzazione non utilizza Exchange Online Protection (ad esempio, exchange locale o servizi di posta elettronica diversi da Exchange Online), l'invio del rapporto di posta indesiderata non influisce sul filtro della posta indesiderata.
+Il componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook consente agli utenti di inviare falsi positivi (buona posta elettronica contrassegnata come posta indesiderata), falsi negativi (posta elettronica non consentita) e messaggi di phishing a Microsoft. Se l'organizzazione non utilizza Exchange Online Protection (ad esempio, servizi di posta elettronica Exchange locali diversi da Exchange Online), l'invio del rapporto di posta indesiderata non influisce sul filtro della posta indesiderata.
 
 In questo argomento viene illustrato come installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per installare il componente aggiuntivo per la segnalazione della posta indesiderata, vedere la sezione [Installare il](#install-the-junk-email-reporting-add-in) componente aggiuntivo per la segnalazione della posta indesiderata più avanti in questo articolo.
 
-- Il componente aggiuntivo Per la segnalazione della posta indesiderata funziona con le versioni seguenti di Outlook:
+- Il componente aggiuntivo per la segnalazione della posta indesiderata funziona con le seguenti versioni di Outlook:
 
   - Outlook 2013 o versione successiva
   - Outlook incluso in Microsoft 365 Apps for enterprise
@@ -111,20 +111,20 @@ In questo argomento viene illustrato come installare e utilizzare il componente 
 
 - È necessario disporre dei privilegi di amministratore nel computer in cui si sta installando il componente aggiuntivo.
 
-- Passare a e scaricare il file MSI appropriato per la versione di Office in un percorso facile <https://www.microsoft.com/download/details.aspx?id=18275> da trovare:
+- Passare a e scaricare il file .msi appropriato per la versione di Office in un percorso facile <https://www.microsoft.com/download/details.aspx?id=18275> da trovare:
 
   - **32 bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
   - **64 bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- Per Outlook 2013 o versioni successive, l'unico prerequisito è Microsoft .NET Framework 2.0. In Windows 10 non installi la versione .NET Framework 2.0 da un download.
+- Per Outlook 2013 o versioni successive, l'unico prerequisito è Microsoft .NET Framework 2.0. In Windows 10, non si installa la versione .NET Framework 2.0 da un download.
 
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installare il componente aggiuntivo per la segnalazione della posta indesiderata tramite l'installazione guidata
 
 1. Chiudere Outlook nel proprio computer.
 
-2. In Windows 10, verificare che la .NET Framework 2.0 sia abilitata. Per istruzioni, vedere [Enable the .NET Framework 3.5 nel Pannello di controllo.](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
+2. In Windows 10 verificare che la .NET Framework 2.0 sia abilitata. Per istruzioni, vedere [Enable the .NET Framework 3.5 nel Pannello di controllo.](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
 
-3. Individuare il file MSI scaricato e fare doppio clic su di esso.
+3. Individuare il .msi scaricato e fare doppio clic su di esso.
 
 4. Nella pagina **Installazione del componente aggiuntivo per la segnalazione della posta indesiderata** fare clic su **Avanti**.
 
@@ -142,7 +142,7 @@ Scegliere la freccia in giù accanto a **Posta indesiderata** per visualizzare a
 
 1. Chiudere Outlook nel proprio computer.
 
-2. In Windows 10 installa il .NET Framework 2.0 eseguendo il comando seguente:
+2. In Windows 10 installare il .NET Framework 2.0 eseguendo il comando seguente:
 
    ```dos
    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
@@ -214,19 +214,19 @@ Per verificare di aver installato correttamente il componente aggiuntivo per la 
 
 Dopo aver chiuso Outlook, utilizzare una delle procedure seguenti per disinstallare il componente aggiuntivo per la segnalazione della posta indesiderata:
 
-- **Pannello di** controllo : premere il tasto Windows + R. Nella finestra **di dialogo** Esegui visualizzata immettere e quindi fare clic `control appwiz.cpl` su **OK.**
+- **Pannello di controllo**: premere il Windows + R. Nella finestra **di dialogo** Esegui visualizzata immettere e quindi fare clic `control appwiz.cpl` su **OK.**
 
   Individuare e selezionare Il componente aggiuntivo per la **segnalazione** della posta indesiderata Microsoft nell'elenco e quindi fare clic su **Disinstalla**.
 
-- **Pacchetto di Windows Installer:** trovare o scaricare il file MSI appropriato e fare doppio clic su di esso.
+- **Windows installer :** Trova o scarica il file .msi e fai doppio clic su di esso.
 
   - **32 bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
   - **64 bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  Nella finestra di dialogo visualizzata selezionare **Rimuovi componente aggiuntivo** per la segnalazione della posta indesiderata microsoft per Outlook e quindi fare clic su **Avanti.**
+  Nella finestra di dialogo visualizzata, selezionare Rimuovi componente aggiuntivo per la segnalazione della posta indesiderata Microsoft per Outlook e **quindi** fare clic su **Avanti.**
 
-- **Modalità invisibile** all'utente : trova o scarica il file MSI appropriato. In una finestra del prompt dei comandi sostituire \<PathToFile\> con il percorso del file msi ed eseguire uno dei comandi seguenti:
+- **Modalità invisibile** all'utente : trova o scarica il file .msi appropriato. In una finestra del prompt dei comandi sostituire con il percorso del \<PathToFile\> file .msi ed eseguire uno dei comandi seguenti:
 
   - **32 bit**:
 
@@ -268,7 +268,7 @@ Per altri metodi che è possibile utilizzare per inviare messaggi a Microsoft, v
 
 1. Verificare o impostare la chiave `LoggingLevel` del Registro di sistema sul valore "Verbose":
 
-   - **Outlook a 32 bit in Windows a 32 bit**:
+   - **32 bit Outlook su Windows a 32 bit:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -277,7 +277,7 @@ Per altri metodi che è possibile utilizzare per inviare messaggi a Microsoft, v
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook a 32 bit in Windows a 64 bit**:
+   - **32 bit Outlook su Windows a 64 bit:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -286,7 +286,7 @@ Per altri metodi che è possibile utilizzare per inviare messaggi a Microsoft, v
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook a 64 bit**:
+   - **64 bit Outlook**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -295,7 +295,7 @@ Per altri metodi che è possibile utilizzare per inviare messaggi a Microsoft, v
      "LoggingLevel"="Verbose"
      ```
 
-2. Riavviare Outlook e chiedere agli utenti di segnalare quando viene visualizzato il messaggio di errore.
+2. Riavviare Outlook e chiedere agli utenti di segnalare quando visualizzano il messaggio di errore.
 
 3. Raccogliere i registri nei percorsi seguenti:
 

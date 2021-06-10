@@ -20,12 +20,12 @@ ms.custom:
 description: Gli amministratori possono conoscere le informazioni di spoof intelligence in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fc591bbaf2ecc6f59c2b569acde521453887c2a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 280743e87ce6039f456cec0b89bff57a31d75691
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822353"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877825"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informazioni di intelligence di spoofing in EOP
 
@@ -53,13 +53,13 @@ Quando un mittente effettua lo spoofing di un indirizzo di posta elettronica, se
   - Il mittente si trova in una lista di distribuzione (nota anche come lista di discussione) e la lista di distribuzione inoltra la posta elettronica dal mittente originale a tutti i partecipanti della lista di distribuzione.
   - Una società esterna invia messaggi di posta elettronica per conto di un'altra società (ad esempio, un report automatizzato o una società software-as-a-service).
 
-È possibile utilizzare le informazioni di **spoof intelligence** nel Centro sicurezza Microsoft 365 per identificare rapidamente i mittenti contraffatti che inviano legittimamente messaggi di posta elettronica non autenticati (messaggi provenienti da domini che non superano i controlli SPF, DKIM o DMARC) e consentire manualmente tali mittenti.
+Puoi usare le informazioni di **spoof intelligence** nel portale di Microsoft 365 Defender per identificare rapidamente i mittenti contraffatti che inviano legittimamente messaggi di posta elettronica non autenticati (messaggi provenienti da domini che non superano i controlli SPF, DKIM o DMARC) e consentire manualmente tali mittenti.
 
 Consentendo ai mittenti noti di inviare messaggi falsificati da posizioni note, è possibile ridurre i falsi positivi (buona posta elettronica contrassegnata come non buona). Monitorando i mittenti falsificati consentiti, si fornisce un ulteriore livello di sicurezza per impedire l'arrivo di messaggi non sicuri nell'organizzazione.
 
 Analogamente, è possibile esaminare i mittenti falsificati consentiti dall'intelligence di spoofing e bloccare manualmente tali mittenti dalle informazioni di spoof intelligence.
 
-Il resto di questo articolo spiega come usare le informazioni di spoof intelligence nel centro sicurezza e in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online, PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
+Il resto di questo articolo spiega come usare le informazioni di spoof intelligence nel portale di Microsoft 365 Defender e in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
 
 > [!NOTE]
 >
@@ -69,9 +69,9 @@ Il resto di questo articolo spiega come usare le informazioni di spoof intellige
 >
 >- L'analisi di spoof intelligence mostra 7 giorni di dati. Il cmdlet **Get-SpoofIntelligenceInsight** mostra dati per 30 giorni.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza a <https://security.microsoft.com/>. Per passare direttamente alla pagina **Anti-phishing,** utilizzare <https://security.microsoft.com/antiphishing> . Per passare direttamente alla pagina **Spoof intelligence insight,** utilizzare <https://security.microsoft.com/spoofintelligence> .
+- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/> . Per passare direttamente alla pagina **Anti-phishing,** utilizzare <https://security.microsoft.com/antiphishing> . Per passare direttamente alla pagina **Spoof intelligence insight,** utilizzare <https://security.microsoft.com/spoofintelligence> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -90,9 +90,9 @@ Il resto di questo articolo spiega come usare le informazioni di spoof intellige
 
 - Per le impostazioni consigliate per spoof intelligence, vedere [Impostazioni dei criteri anti-phishing EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)
 
-## <a name="open-the-spoof-intelligence-insight-in-the-security-center"></a>Aprire l'analisi di spoof intelligence nel Centro sicurezza
+## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Aprire le informazioni di spoof intelligence nel portale Microsoft 365 Defender
 
-1. Nel centro sicurezza passare alla sezione Criteri di **&** di collaborazione & regole Criteri di minaccia \>  \>  \>  \> **sezione Anti-phishing.**
+1. Nel portale Microsoft 365 Defender passare a **Criteri** di collaborazione & e-mail & regole Criteri di minaccia \>  \>  \>  sezione \> **Anti-phishing.**
 
 2. Nella pagina **Anti-phishing,** l'analisi di spoof intelligence è simile alla seguente:
 

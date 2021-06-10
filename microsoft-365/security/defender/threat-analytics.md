@@ -2,7 +2,7 @@
 title: Tenere traccia e rispondere alle minacce emergenti con l'analisi delle minacce
 ms.reviewer: ''
 description: Informazioni sulle minacce emergenti e sulle tecniche di attacco e su come arrestarle. Valutarne l'impatto sull'organizzazione e valutare la resilienza dell'organizzazione.
-keywords: analisi delle minacce, valutazione dei rischi, Microsoft 365 Defender, M365D, stato di mitigazione, configurazione sicura, Microsoft Defender per Office 365, Microsoft Defender for Office 365 threat analytics, analisi delle minacce MDO, dati di analisi delle minacce MDE e MDO integrati, integrazione dei dati di analisi delle minacce di Microsoft 365 Defender integrato
+keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics integration, integrated Microsoft 365 Defender threat analytics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -53,7 +53,7 @@ Guarda questo breve video per saperne di più su come l'analisi delle minacce pu
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-È possibile accedere all'analisi delle minacce dal lato superiore sinistro della barra di spostamento del portale di sicurezza di Microsoft 365 o da una scheda del dashboard dedicata che mostra le minacce principali nell'organizzazione. Ottenere visibilità sulle campagne attive o in corso e sapere cosa fare tramite l'analisi delle minacce può aiutare il team delle operazioni di sicurezza a prendere decisioni informate. 
+È Microsoft 365 possibile accedere all'analisi delle minacce dal lato superiore sinistro della barra di spostamento del portale di sicurezza o da una scheda del dashboard dedicata che mostra le minacce principali nell'organizzazione. Ottenere visibilità sulle campagne attive o in corso e sapere cosa fare tramite l'analisi delle minacce può aiutare il team delle operazioni di sicurezza a prendere decisioni informate. 
 
 ![Immagine del dashboard di analisi delle minacce](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
@@ -131,7 +131,7 @@ _Sezione Eventi imprevisti correlati di un report di analisi delle minacce_
 ### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>Asset influenzati: ottenere l'elenco dei dispositivi e delle cassette postali influenzati
 Un asset viene considerato interessato se è interessato da un avviso attivo e non risolto. Nella **scheda Asset influenzati** sono elencati i seguenti tipi di asset influenzati:
 - **Dispositivi influenzati:** endpoint con avvisi di Microsoft Defender for Endpoint irrisolti. Questi avvisi vengono in genere generati da avvistamenti di indicatori di minaccia e attività noti.
-- **Cassette postali influenzate:** cassette postali che hanno ricevuto messaggi di posta elettronica che hanno attivato gli avvisi di Microsoft Defender per Office 365. Sebbene la maggior parte dei messaggi che attivano avvisi sia in genere bloccata, i criteri a livello di utente o di organizzazione possono ignorare i filtri.
+- **Cassette postali influenzate:** cassette postali che hanno ricevuto messaggi di posta elettronica che hanno attivato Microsoft Defender per Office 365 avvisi. Sebbene la maggior parte dei messaggi che attivano avvisi sia in genere bloccata, i criteri a livello di utente o di organizzazione possono ignorare i filtri.
 
 ![Immagine della sezione relativa alle risorse influenzate di un report di analisi delle minacce](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
@@ -140,7 +140,7 @@ _Sezione Asset influenzati di un report di analisi delle minacce_
 ### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>Tentativi di posta elettronica non consentiti: visualizzare i messaggi di posta elettronica di minacce bloccate o indesiderate
 Microsoft Defender per Office 365 in genere blocca i messaggi di posta elettronica con indicatori di minaccia noti, inclusi collegamenti o allegati dannosi. In alcuni casi, i meccanismi di filtro proattivi che controllano la presenza di contenuti sospetti invieranno invece messaggi di posta elettronica di minacce alla cartella posta indesiderata. In entrambi i casi, le probabilità che la minaccia che avvia il codice malware sul dispositivo sia ridotta.
 
-Nella **scheda Tentativi di posta elettronica** non consentiti sono elencati tutti i messaggi di posta elettronica che sono stati bloccati prima del recapito o inviati alla cartella posta indesiderata da Microsoft Defender per Office 365. 
+Nella **scheda Tentativi di posta elettronica** non consentiti sono elencati tutti i messaggi di posta elettronica bloccati prima del recapito o inviati alla cartella posta indesiderata da Microsoft Defender per Office 365. 
 
 ![Immagine della sezione tentativi di posta elettronica non consentiti di un report di analisi delle minacce](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
@@ -151,11 +151,11 @@ Nella sezione **Mitigazioni** esaminare l'elenco di suggerimenti specifici che c
 
 - **Aggiornamenti della sicurezza:** distribuzione degli aggiornamenti della sicurezza software supportati per le vulnerabilità riscontrate nei dispositivi onboarded
 - **Configurazioni di sicurezza supportate**
-  - Protezione basata sul cloud  
+  - Protezione fornita dal cloud  
   - Protezione delle applicazioni potenzialmente indesiderate
   - Protezione in tempo reale
  
-Le informazioni di mitigazione contenute in questa sezione incorporano i dati della gestione delle minacce e delle [vulnerabilità,](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)che forniscono inoltre informazioni dettagliate di drill-down da vari collegamenti nel report.
+Le informazioni di mitigazione contenute in questa sezione incorporano i dati di [gestione di minacce e vulnerabilità](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), che forniscono inoltre informazioni dettagliate sul drill-down da vari collegamenti nel report.
 
 ![Immagine della sezione mitigazioni di un report di analisi delle minacce che mostra i dettagli della configurazione sicura Immagine della sezione mitigazioni di un report di analisi delle minacce che ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ mostra i dettagli della vulnerabilità](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -164,19 +164,19 @@ _Sezione Mitigazioni di un report di analisi delle minacce_
 
 ## <a name="additional-report-details-and-limitations"></a>Ulteriori dettagli e limitazioni del report
 >[!NOTE]
->Come parte dell'esperienza di sicurezza unificata, l'analisi delle minacce è ora disponibile non solo per Microsoft Defender for Endpoint, ma anche per i titolari della licenza di Microsoft Defender per Office E5.
->Se non si utilizza il portale di sicurezza di Microsoft 365 (Microsoft 365 Defender), è anche possibile visualizzare i dettagli del report (senza i dati di Microsoft Defender per Office) nel portale di Microsoft Defender Security Center (Microsoft Defender for Endpoint). 
+>Nell'ambito dell'esperienza di sicurezza unificata, l'analisi delle minacce è ora disponibile non solo per Microsoft Defender for Endpoint, ma anche per Microsoft Defender per i titolari di licenze Office E5.
+>Se non si usa il portale di sicurezza di Microsoft 365 (Microsoft 365 Defender), è anche possibile visualizzare i dettagli del report (senza i dati di Microsoft Defender per Office) nel portale di Microsoft Defender Security Center (Microsoft Defender per endpoint). 
 
-Per accedere al report di analisi delle minacce sono necessari determinati ruoli e autorizzazioni. Per informazioni dettagliate, vedere Ruoli personalizzati nel controllo dell'accesso basato sui ruoli [per Microsoft 365 Defender.](custom-roles.md)
-  - Per visualizzare gli avvisi, gli eventi imprevisti o i dati degli asset a impatto, devi disporre delle autorizzazioni per i dati degli avvisi di Microsoft Defender per Office o Microsoft Defender for Endpoint o entrambi.
-  - Per visualizzare i tentativi di posta elettronica non consentiti, è necessario disporre delle autorizzazioni per i dati di ricerca di Microsoft Defender per Office. 
-  - Per visualizzare le mitigazioni, è necessario disporre delle autorizzazioni per i dati di gestione delle minacce e delle vulnerabilità in Microsoft Defender per Endpoint.
+Per accedere al report di analisi delle minacce sono necessari determinati ruoli e autorizzazioni. Per [informazioni dettagliate,](custom-roles.md) vedi Ruoli personalizzati nel controllo di accesso basato sui ruoli per Microsoft 365 Defender.
+  - Per visualizzare gli avvisi, gli eventi imprevisti o i dati degli asset a impatto, devi disporre delle autorizzazioni per Microsoft Defender per Office o i dati degli avvisi di Microsoft Defender per endpoint o entrambi.
+  - Per visualizzare i tentativi di posta elettronica non consentiti, è necessario disporre delle autorizzazioni per Microsoft Defender per Office dati di ricerca. 
+  - Per visualizzare le mitigazioni, devi disporre delle autorizzazioni per gestione di minacce e vulnerabilità dati in Microsoft Defender per Endpoint.
 
 Quando si esaminano i dati di analisi delle minacce, tenere presente i fattori seguenti:
 - I grafici riflettono solo le mitigazioni rilevate. Controllare la panoramica del report per ulteriori mitigazioni che non vengono visualizzate nei grafici.
 - Le mitigazioni non garantiscono resilienza completa. Le mitigazioni fornite riflettono le migliori azioni possibili necessarie per migliorare la resilienza.
 - I dispositivi vengono conteggiati come "non disponibili" se non hanno trasmesso dati al servizio.
-- Le statistiche relative all'antivirus si basano sulle impostazioni di Microsoft Defender Antivirus. I dispositivi con soluzioni antivirus di terze parti possono apparire come "esposti".
+- Le statistiche relative all'antivirus si basano Antivirus Microsoft Defender impostazioni. I dispositivi con soluzioni antivirus di terze parti possono apparire come "esposti".
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Trovare in modo proattivo le minacce con la ricerca avanzata](advanced-hunting-overview.md) 

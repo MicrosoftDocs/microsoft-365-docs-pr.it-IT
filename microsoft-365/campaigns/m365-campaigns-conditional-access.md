@@ -39,17 +39,17 @@ Per ulteriori informazioni sulle impostazioni predefinite di sicurezza e sui cri
 
 Se l'abbonamento è stato creato il 22 ottobre 2019 o dopo il 22 ottobre 2019, è possibile che siano state abilitate automaticamente le impostazioni per verificare &mdash; le impostazioni.
 
-Per abilitare le impostazioni predefinite di sicurezza in Azure Active Directory (Azure AD) o per verificare se sono già abilitate:
+Per abilitare le impostazioni predefinite di sicurezza nel Azure Active Directory (Azure AD) o per verificare se sono già abilitate:
 
-1. Accedere all'interfaccia di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> con le credenziali di amministratore globale.
+1. Accedi all'interfaccia <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">di Microsoft 365 con</a> le credenziali di amministratore globale.
 
-2. Nel riquadro sinistro selezionare **Mostra tutto e quindi** in Interfaccia di **amministrazione** selezionare Azure **Active Directory.**
+2. Nel riquadro sinistro selezionare **Mostra tutto e quindi** in Interfaccia di **amministrazione** selezionare **Azure Active Directory**.
 
-3. Nel riquadro sinistro dell'interfaccia **di amministrazione di Azure Active Directory selezionare** Azure Active **Directory.**
+3. Nel riquadro sinistro dell'Azure Active Directory **di amministrazione selezionare** **Azure Active Directory**.
 
 4. Nel menu a sinistra del  dashboard seleziona Proprietà nella sezione **Gestisci.**
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot dell'interfaccia di amministrazione di Azure Active Directory che mostra il percorso della voce di menu Proprietà.":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot dell'Azure Active Directory di amministrazione che mostra la posizione della voce di menu Proprietà.":::
 
 5. Nella parte inferiore della **pagina Proprietà** selezionare Gestisci impostazioni **predefinite sicurezza.**
 

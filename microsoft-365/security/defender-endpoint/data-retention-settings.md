@@ -42,13 +42,13 @@ Dopo aver completato l'onboarding, puoi verificare la selezione nella pagina del
 ## <a name="verify-data-storage-location"></a>Verificare il percorso di archiviazione dei dati
 Durante la [fase di configurazione,](production-deployment.md)è necessario selezionare la posizione in cui archiviare i dati. 
 
-È possibile verificare la posizione dei dati accedendo a **Impostazioni**  >  **Conservazione dati.**
+È possibile verificare la posizione dei dati accedendo a **Impostazioni**  >  **conservazione dei dati**.
 
 ## <a name="update-data-retention-settings"></a>Aggiornare le impostazioni di conservazione dei dati
 
 È possibile aggiornare le impostazioni di conservazione dei dati. Per impostazione predefinita, il periodo di conservazione è 180 giorni. 
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Conservazione dati**.
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **conservazione dei dati**.
 
 2. Selezionare la durata di conservazione dei dati nell'elenco a discesa.
 

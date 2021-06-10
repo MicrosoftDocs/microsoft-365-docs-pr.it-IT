@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908175"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861684"
 ---
 # <a name="privacy-and-personal-data"></a>Privacy e dati personali
 
@@ -109,10 +109,8 @@ Per ulteriori informazioni sulla raccolta dei dati di diagnostica di Windows 10,
 L'accesso diretto Microsoft Managed Desktop archivi dati interni di Microsoft Managed Desktop è limitato in diversi modi:
 
 - Richiede l'approvazione del livello di lead di progettazione.
-- Il controllo e il tempo sono limitati.
-- Richiede l'utilizzo di una workstation altamente protetta e con restrizioni.
+- È vincolata al tempo e verificata.
 - Tutti i dati vengono crittografati durante l'archiviazione.
-- Non esiste alcun accesso permanente.
 - L'Microsoft Managed Desktop di gestione interna di Microsoft Managed Desktop richiede una workstation altamente protetta e con restrizioni.
 
 ## <a name="processing-personal-data-in-a-compliant-manner"></a>Trattamento dei dati personali in modo conforme

@@ -33,12 +33,12 @@ ms.locfileid: "51398206"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurare l'autenticazione a più fattori
 
-L'autenticazione a più fattori garantisce maggiore sicurezza per l'azienda. Dopo che l'amministratore ha richiesto l'uso dell'autenticazione a più fattori, puoi configurare l'app Microsoft Authenticator per consentirti di accedere in modo sicuro alle app chiave con il telefono. 
+L'autenticazione a più fattori garantisce maggiore sicurezza per l'azienda. Dopo che l'amministratore ha richiesto l'uso di MFA, puoi configurare l'app Microsoft Authenticator per consentirti di accedere in modo sicuro alle app chiave con il telefono. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Per ulteriori [informazioni, vedere Configurare l'autenticazione a più fattori in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Per ulteriori [informazioni, vedere Configurare l'autenticazione](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225) a più fattori in Microsoft 365
 
-## <a name="use-the-outlook-app-in-your-devices"></a>Usare l'app Outlook nei dispositivi
+## <a name="use-the-outlook-app-in-your-devices"></a>Usare l Outlook app nei dispositivi
 
-Dopo che l'amministratore ha richiesto di usare l'autenticazione a più fattori e aver configurato un'app di autenticazione come seconda forma di autenticazione, è consigliabile installare e usare solo l'app Outlook per accedere alla posta elettronica di Microsoft 365. Per [informazioni su come](../business/set-up-mobile-devices.md) installare le app di Office, incluso Outlook, nel telefono, vedere Configurare i dispositivi mobili.
+Dopo che l'amministratore ha richiesto l'uso dell'autenticazione a più fattori e hai configurato un'app di autenticazione come seconda forma di autenticazione, ti consigliamo di installare e usare solo l'app Outlook per accedere alla posta elettronica di Microsoft 365. Vedi [Configurare i dispositivi mobili](../business/set-up-mobile-devices.md) per informazioni su come installare Office app, Outlook, nel telefono.

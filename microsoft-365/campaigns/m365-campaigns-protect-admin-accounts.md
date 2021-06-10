@@ -36,11 +36,11 @@ Poiché gli account amministratore dispongono di privilegi elevati, sono obietti
 - Come configurare un account amministratore aggiuntivo per le emergenze.
 - Come proteggere questi account.
 
-Quando ti i iscrizione a Microsoft 365 e immetti le informazioni, diventi automaticamente l'amministratore globale. Un amministratore globale ha il controllo finale degli account utente e di tutte le altre impostazioni nell'interfaccia di amministrazione di Microsoft, ma esistono molti tipi diversi di account di amministratore con diversi gradi di accesso. Per informazioni sui diversi livelli di accesso per ogni tipo di ruolo di amministratore, vedere about [admin roles.](/office365/admin/add-users/about-admin-roles)
+Quando ti i sign up for Microsoft 365 e immetti le informazioni, diventi automaticamente l'amministratore globale. Un amministratore globale ha il controllo finale degli account utente e di tutte le altre impostazioni nell'interfaccia di amministrazione di Microsoft, ma esistono molti tipi diversi di account di amministratore con diversi gradi di accesso. Per informazioni sui diversi livelli di accesso per ogni tipo di ruolo di amministratore, vedere about [admin roles.](/office365/admin/add-users/about-admin-roles)
 
 ## <a name="create-additional-admin-accounts"></a>Creare altri account amministratore
 
-Utilizzare gli account amministratore solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per l'uso regolare delle app di Office e usare il proprio account amministrativo solo se necessario per gestire account e dispositivi e mentre lavorano su altre funzioni di amministrazione. È anche buona idea rimuovere la licenza di Microsoft 365 dagli account di amministratore in modo da non doverli pagare.
+Utilizzare gli account amministratore solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per l'uso regolare delle app Office e usare il proprio account amministrativo solo se necessario per gestire account e dispositivi e mentre lavorano su altre funzioni di amministratore. È anche buona idea rimuovere la licenza Microsoft 365 dagli account di amministratore in modo da non doverli pagare.
 
 È necessario configurare almeno un altro account amministratore globale per concedere l'accesso di amministratore a un altro dipendente attendibile. È inoltre possibile creare account amministratore distinti per la gestione degli utenti (questo ruolo è denominato **Amministratore gestione utenti**). Per ulteriori informazioni, vedere [About admin roles](/office365/admin/add-users/about-admin-roles).
 
@@ -57,7 +57,7 @@ Per creare altri account amministratore:
 
     ![Scegliere il ruolo di amministratore](../media/adminroles.png)
 
- 4. Nella sezione **Licenze di prodotto** spostare il selettore per Microsoft **365 Business** su **Disattivato** e l'opzione Crea utente senza licenza **del prodotto** su **Su**.
+ 4. Nella sezione **Licenze prodotto** spostare il selettore per Microsoft 365 Business **su** **Disattivato** e l'opzione Crea utente senza licenza **del** prodotto su **Su**.
 
     ![Scegliere la licenza del prodotto](../media/productlicense.png)
 
@@ -74,7 +74,7 @@ Per creare un nuovo account utente:
 1. Passare <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">all'interfaccia di amministrazione</a> e quindi scegliere **Utenti** \> **Utenti attivi** nel riquadro di spostamento sinistro.
 2. Nella pagina **Utenti attivi** seleziona **Aggiungi** utente nella parte superiore  della pagina e nel riquadro Nuovo utente immetti il nome e altre informazioni.
 3. Espandere la **sezione** Ruoli e scegliere **Utente (nessun accesso amministrativo)**.
-4. Nella sezione **Licenze prodotto** spostare il selettore per **Microsoft 365 Business** su **Su**.
+4. Nella sezione **Licenze prodotto** spostare il selettore **per** Microsoft 365 Business su **Su**.
 
 ## <a name="turn-on-security-defaults"></a>Attivare le impostazioni predefinite di sicurezza
 

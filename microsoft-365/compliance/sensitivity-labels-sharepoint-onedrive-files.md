@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file di Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 8007f085e7bcba7f055f616954e2f0549f6f125a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 695084443ee10de87f091d358b63fad079e03093
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770398"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861516"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -220,7 +220,11 @@ Utilizzare la proprietà gestita **InformationProtectionLabelId** per trovare tu
 
 Ad esempio, per cercare tutti i documenti etichettati come "Riservato" e tale etichetta ha un GUID "8faca7b8-8d20-48a3-8ea2-0f96310a848e", nella casella di ricerca digitare:
 
-`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`    
+```
+InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
+```
+
+La ricerca non troverà documenti etichettati in un file compresso, ad esempio un .zip file.
 
 Per ottenere i GUID per le etichette di riservatezza, utilizzare il cmdlet [Get-Label:](/powershell/module/exchange/get-label)    
 

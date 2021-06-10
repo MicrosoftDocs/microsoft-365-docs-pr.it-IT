@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Informazioni su come usare e gestire i modelli per la creazione di valutazioni in Microsoft Compliance Manager. Creare e modificare modelli utilizzando un file excel formattato.
+description: Informazioni su come usare e gestire i modelli per la creazione di valutazioni in Microsoft Compliance Manager. Creare e modificare modelli utilizzando un file Excel formattato.
 ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
 ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "51499024"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Utilizzo dei modelli di valutazione in Compliance Manager
 
-**In questo articolo:** Comprendere **il funzionamento dei modelli** e come **gestirli** dalla pagina dei modelli di valutazione. Istruzioni per la **creazione di** nuovi modelli, la **modifica dei** modelli esistenti, la formattazione dei dati del modello **con Excel** e l'esportazione di report **modello.**
+**In questo articolo:** Comprendere **il funzionamento dei modelli** e come **gestirli** dalla pagina dei modelli di valutazione. Istruzioni per la **creazione di** nuovi modelli, **la modifica** dei modelli esistenti, la formattazione dei dati del modello **Excel** e l'esportazione dei report **dei modelli.**
 
 > [!IMPORTANT]
 > I modelli di valutazione disponibili per l'organizzazione dipendono dal contratto di licenza. [Esaminare i dettagli](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
@@ -41,7 +41,7 @@ Un modello è un framework di controlli per la creazione di una valutazione in C
 I modelli disponibili per l'utilizzo si basano sul contratto di licenza dell'organizzazione ([visualizzare i dettagli della licenza](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). Esistono due categorie di modelli: incluso e premium.
 
 1. **I modelli inclusi** sono disponibili per l'utilizzo nell'ambito del contratto di licenza dell'organizzazione.
-2. **I modelli** Premium devono essere acquistati per poter creare valutazioni da essi. Dopo l'acquisto, è possibile creare tutte le valutazioni da un modello in base alle esigenze. [Scopri come acquistare modelli premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+2. **Premium modelli** devono essere acquistati per poter creare valutazioni da essi. Dopo l'acquisto, è possibile creare tutte le valutazioni da un modello in base alle esigenze. [Scopri come acquistare modelli premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 #### <a name="active-and-inactive-templates"></a>Modelli attivi e inattivi
 
@@ -66,11 +66,11 @@ Per [ulteriori dettagli, vedere Linee guida](/office365/servicedescriptions/micr
 
 Nella pagina modelli di valutazione in Compliance Manager viene visualizzato un elenco di modelli e dettagli chiave. L'elenco include i modelli forniti da Compliance Manager e tutti i modelli modificati o creati dall'organizzazione. È possibile applicare filtri per trovare un modello basato su certificazione, ambito del prodotto, paese, settore, chi lo ha creato e se il modello è abilitato per la creazione della valutazione.
 
-Selezionare un modello dalla riga corrispondente per visualizzare la relativa pagina dei dettagli. Questa pagina contiene una descrizione del modello e ulteriori informazioni sulla certificazione, l'ambito e i dettagli dei controlli. In questa pagina è possibile selezionare i pulsanti appropriati per creare una valutazione, esportare i dati del modello in Excel o modificare il modello.
+Selezionare un modello dalla riga corrispondente per visualizzare la relativa pagina dei dettagli. Questa pagina contiene una descrizione del modello e ulteriori informazioni sulla certificazione, l'ambito e i dettagli dei controlli. Da questa pagina è possibile selezionare i pulsanti appropriati per creare una valutazione, esportare i dati del modello Excel o modificare il modello.
 
 ## <a name="creating-and-modifying-templates-overview"></a>Panoramica della creazione e della modifica dei modelli
 
-Per modificare un modello esistente o creare un nuovo modello personalizzato, si utilizzerà un foglio di calcolo di Excel formattato appositamente ([scaricare](https://go.microsoft.com/fwlink/?linkid=2124865)un esempio ) per assemblare i dati del controllo necessari. Dopo aver completato il foglio di calcolo, importarlo in Compliance Manager durante il processo di creazione o modifica di un modello.
+Per modificare un modello esistente o creare un nuovo modello, si utilizzerà un foglio di calcolo di Excel formattato in modo specifico ([scaricare](https://go.microsoft.com/fwlink/?linkid=2124865)un esempio ) per assemblare i dati del controllo necessari. Dopo aver completato il foglio di calcolo, importarlo in Compliance Manager durante il processo di creazione o modifica di un modello.
 
 > [!NOTE]
 > Il foglio di calcolo ha un formato e uno schema specifici che devono essere utilizzati oppure non verrà importato correttamente in Compliance Manager. Le [istruzioni di formattazione](#formatting-your-template-data-with-excel) sono riportate di seguito.
@@ -86,8 +86,8 @@ Per creare un nuovo modello personalizzato (usato per la creazione di valutazion
 1. Passare alla pagina **dei modelli di** valutazione in Compliance Manager.
 2. Selezionare **Crea nuovo modello.** Verrà aperta una procedura guidata per la creazione di modelli.
 3. Scegliere il tipo di modello che si desidera creare. In questo caso, selezionare **Crea un modello personalizzato,** quindi selezionare **Avanti.**
-4. Nella schermata **Carica file** selezionare Sfoglia per trovare e caricare il file excel formattato contenente tutti i dati del modello necessari (vedere le istruzioni per formattare [correttamente il file).](#formatting-your-template-data-with-excel) 
-5. In caso di problemi con il file, verrà visualizzato il nome del file caricato. Selezionare **Avanti** per continuare. Se è necessario modificare il file, selezionare **Carica un altro file.**
+4. Nella schermata **Upload file** seleziona  Sfoglia per trovare e caricare il file Excel formattato contenente tutti i dati del modello necessari (vedi le istruzioni per formattare correttamente [il file).](#formatting-your-template-data-with-excel)
+5. In caso di problemi con il file, verrà visualizzato il nome del file caricato. Selezionare **Avanti** per continuare. Se è necessario modificare il file, selezionare Upload **file diverso.**
     - Se si verifica un errore con il file, nella parte superiore viene visualizzato un messaggio di errore che spiega il problema. Dovrai correggere il file e caricarlo di nuovo. Gli errori si verificano se il foglio di calcolo è formattato in modo non corretto o se sono presenti informazioni non valide in determinati campi (fare di nuovo riferimento alle istruzioni [di formattazione).](#formatting-your-template-data-with-excel)  
     
 6. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando sei pronto per l'approvazione, seleziona **Crea modello.** Se è necessario apportare modifiche, selezionare **Indietro.**
@@ -96,7 +96,7 @@ Per creare un nuovo modello personalizzato (usato per la creazione di valutazion
 
 ## <a name="formatting-your-template-data-with-excel"></a>Formattazione dei dati del modello con Excel
 
-Il foglio di calcolo di Excel utilizzato per creare modelli contiene quattro schede, tre delle quali sono necessarie:
+Il Excel foglio di calcolo utilizzato per creare modelli contiene quattro schede, tre delle quali sono necessarie:
 
 1. [Modello](#template-tab) (obbligatorio)
 2. [ControlFamily](#controlfamily-tab) (obbligatorio)
@@ -107,7 +107,7 @@ Quando si compila il foglio di calcolo con i dati del modello, il foglio di calc
 
 ##### <a name="template-tab"></a>Scheda Modello
 
-La **scheda Modello** è obbligatoria. Le informazioni contenute in questa scheda forniscono metadati sul modello. Sono disponibili quattro colonne obbligatorie. Le colonne devono mantenere l'ordine nel foglio di Excel come indicato di seguito. È possibile aggiungere una colonna **personale dopo** le quattro colonne per fornire dimensioni personalizzate. In questo caso, assicurarsi di aggiungerli alla **scheda** Dimensioni usando le [istruzioni riportate di seguito.](#dimensions-tab)
+La **scheda Modello** è obbligatoria. Le informazioni contenute in questa scheda forniscono metadati sul modello. Sono disponibili quattro colonne obbligatorie. Le colonne devono mantenere l'ordine nel foglio Excel come indicato di seguito. È possibile aggiungere una colonna **personale dopo** le quattro colonne per fornire dimensioni personalizzate. In questo caso, assicurarsi di aggiungerli alla **scheda** Dimensioni usando le [istruzioni riportate di seguito.](#dimensions-tab)
 
 - **title**: questo è il titolo del modello, che deve essere univoco. Non può condividere un nome con un altro modello di Compliance Manager, inclusi i propri modelli o un modello di Compliance Manager.
 
@@ -115,7 +115,7 @@ La **scheda Modello** è obbligatoria. Le informazioni contenute in questa sched
 
 - **certification**: si tratta della normativa in uso per il modello.
 
-- **inScopeServices**: Si tratta dei servizi all'interno del prodotto a cui si rivolge questa valutazione (ad esempio, se Office 365 è stato elencato come prodotto, Microsoft Teams potrebbe essere un servizio nell'ambito). È possibile elencare più servizi separati da due punti e virgola.
+- **inScopeServices**: si tratta dei servizi all'interno del prodotto a cui si rivolge questa valutazione (ad esempio, se è stato elencato Office 365 come prodotto, Microsoft Teams potrebbe essere un servizio nell'ambito). È possibile elencare più servizi separati da due punti e virgola.
 
 > [!NOTE]
 > I dati inseriti nelle  celle **del** prodotto e della certificazione non possono essere modificati dopo l'importazione del foglio di calcolo per creare o personalizzare un modello. Inoltre, un gruppo non può contenere due valutazioni con la stessa combinazione **prodotto/certificazione.** Puoi avere più modelli con la stessa combinazione di prodotto/certificazione.
@@ -160,13 +160,13 @@ La **scheda Azioni** è obbligatoria.  Designa le azioni di miglioramento gestit
 La **scheda Dimensioni** è facoltativa. Tuttavia, se si fa riferimento a una dimensione altrove, è necessario specificarla qui se non esiste in un modello già creato o in un modello Microsoft. Le colonne per questa scheda sono elencate di seguito:
 
 - **dimensionKey**: elenco come "prodotto", "certificazioni", "scopo azione"
-- **dimensionValue**: esempi: Office 365, HIPPA, Preventative, Detective
+- **dimensionValue**: esempi: Office 365, HIPPA, Preventivo, Detective
 
 Per visualizzare le dimensioni esistenti, accedere a **Gestione tenant** e selezionare la **scheda** Dimensioni. Inoltre, ogni volta che si esporta un modello esistente, il foglio di calcolo esportato avrà la scheda **Dimensioni,** in cui sono elencate tutte le dimensioni utilizzate nel modello.
 
 ## <a name="modify-a-template"></a>Modificare un modello
 
-Potresti voler modificare un modello già creato, ad esempio aggiungere controlli o aggiungere o rimuovere azioni di miglioramento. Il processo è simile al processo di creazione del modello, in cui si carica il file di Excel formattato con i dati del modello.
+Potresti voler modificare un modello già creato, ad esempio aggiungere controlli o aggiungere o rimuovere azioni di miglioramento. Il processo è simile al processo di creazione del modello, in cui carichi il file Excel file formattato con i dati del modello.
 
 Tuttavia, esistono particolari dettagli da tenere presenti durante la formattazione del file con le modifiche ai dati del modello esistenti. **È consigliabile leggere attentamente queste istruzioni per assicurarsi di non sovrascrivere i dati esistenti che si desidera conservare.**
 
@@ -175,12 +175,12 @@ Tuttavia, esistono particolari dettagli da tenere presenti durante la formattazi
 Per modificare un modello, eseguire la procedura seguente:
 
 1. Nella pagina **dei modelli di** valutazione seleziona il modello che vuoi modificare, che ne visualizza la pagina dei dettagli.
-2. Selezionare **Esporta in Excel**. Verrà scaricato un file di Excel con tutti i dati del modello. Salvare il file nel computer locale.
-3. Apportare le modifiche al modello [modificando il file di Excel utilizzando le istruzioni riportate di seguito.](#formatting-your-excel-file-to-modify-a-template)
-4. Dopo aver apportato modifiche al file di Excel, salvare il file.
+2. Selezionare **Esporta in Excel**. Verrà scaricato Excel file con tutti i dati del modello. Salvare il file nel computer locale.
+3. Apportare le modifiche al modello [modificando il file Excel usando le istruzioni seguenti.](#formatting-your-excel-file-to-modify-a-template)
+4. Dopo aver apportato modifiche al file Excel, salvare il file.
 5. Nella pagina dei dettagli del modello seleziona **Modifica modello** per avviare la procedura guidata di modifica. 
-6. Nella schermata **Carica file** selezionare **Sfoglia per** trovare e caricare il file di Excel.
-7. Se non si verificano problemi con il file, nella schermata successiva viene visualizzato il nome del file caricato. Selezionare **Avanti** per continuare (se è necessario modificare il file, selezionare **Carica un altro file**).
+6. Nella schermata **Upload file** seleziona **Sfoglia** per trovare e caricare il file Excel file.
+7. Se non si verificano problemi con il file, nella schermata successiva viene visualizzato il nome del file caricato. Selezionare **Avanti** per continuare (se è necessario modificare il file, selezionare Upload **un file diverso).**
     - Se si verifica un problema con il file, nella parte superiore viene visualizzato un messaggio di errore che spiega il problema. Dovrai correggere il file e caricarlo di nuovo. Gli errori si verificano se il foglio di calcolo è formattato in modo non corretto o se sono presenti informazioni non valide in alcuni campi.
 
 8. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando si è pronti per l'approvazione, selezionare **Avanti**.
@@ -191,7 +191,7 @@ Il modello includerà le modifiche apportate. Tutte le valutazioni che utilizzan
 > [!NOTE]
 > Se si utilizza Compliance Manager in una lingua diversa dall'inglese, si noterà che parte del testo viene visualizzato in inglese quando si esporta un modello in Excel. I titoli delle azioni (sia le azioni di miglioramento che le azioni microsoft) devono essere in inglese per essere riconosciuti dai controlli. Se si apportano modifiche al titolo di un'azione, assicurarsi di scriverlo in inglese in modo che il file venga importato correttamente.
 
-### <a name="formatting-your-excel-file-to-modify-a-template"></a>Formattazione del file di Excel per modificare un modello
+### <a name="formatting-your-excel-file-to-modify-a-template"></a>Formattazione del Excel file per modificare un modello
 
 Passare a una sezione seguente per trovare rapidamente le istruzioni necessarie:
 
@@ -256,8 +256,8 @@ Quando si importa di nuovo il foglio di calcolo nel modello, il controllo verrà
 
 ## <a name="export-a-template"></a>Esportare un modello
 
-È possibile esportare un file di Excel contenente tutti i dati di un modello. Sarà necessario esportare un modello per modificare il modello, in quanto si tratta del file di Excel modificato e caricato nel processo [di modifica.](#modify-a-template)
+È possibile esportare Excel file contenente tutti i dati di un modello. Dovrai esportare un modello per modificare il modello, poiché questo sarà il file Excel che modificherai e carichi nel processo [di modifica.](#modify-a-template)
 
-Per esportare il modello, passare alla pagina dei dettagli del modello e selezionare il **pulsante Esporta in Excel.**
+Per esportare il modello, passare alla pagina dei dettagli del modello e selezionare il pulsante **Esporta in Excel.**
 
 Si noti che quando si esporta un modello esteso da un modello di Compliance Manager, il file esportato conterrà solo gli attributi aggiunti al modello. Il file esportato non includerà i dati del modello originale forniti da Microsoft. Per ottenere un report di questo tipo, vedere le istruzioni per [l'esportazione di un report di valutazione.](compliance-manager-assessments.md#export-an-assessment-report)

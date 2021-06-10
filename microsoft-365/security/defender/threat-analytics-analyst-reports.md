@@ -54,7 +54,7 @@ Ogni sezione del report degli analisti è progettata per fornire informazioni ut
 | Riepilogo esecutivo | Panoramica della minaccia, incluso il momento in cui è stata vista per la prima volta, le motivazioni, gli eventi importanti, gli obiettivi principali e strumenti e tecniche distinti. È possibile utilizzare queste informazioni per valutare ulteriormente come definire la priorità della minaccia nel contesto del settore, della posizione geografica e della rete. |
 | Analisi | Informazioni tecniche sulle minacce, inclusi i dettagli di un attacco e il modo in cui gli utenti malintenzionati potrebbero utilizzare una nuova tecnica o una nuova superficie di attacco | 
 | MiTRE ATT&CK osservate | Come vengono mappate le tecniche osservate al framework di attacco [MITRE ATT&CK](https://attack.mitre.org/) | 
-| [Mitigazioni](#apply-additional-mitigations) | Suggerimenti che possono arrestare o ridurre l'impatto della minaccia. Questa sezione include anche le mitigazioni che non vengono rilevate in modo dinamico come parte del report di analisi delle minacce. |
+| [Mitigazioni](#apply-additional-mitigations) | Consigli che possono arrestare o ridurre l'impatto della minaccia. Questa sezione include anche le mitigazioni che non vengono rilevate in modo dinamico come parte del report di analisi delle minacce. |
 | [Dettagli rilevamento](#understand-how-each-threat-can-be-detected) | Rilevamenti specifici e generici forniti da soluzioni di sicurezza Microsoft che possono visualizzare attività o componenti associati alla minaccia. | 
 | [Rilevazione avanzata](#find-subtle-threat-artifacts-using-advanced-hunting) | [Query di ricerca avanzate per](advanced-hunting-overview.md) identificare in modo proattivo le possibili attività di minaccia. La maggior parte delle query viene fornita per integrare i rilevamenti, in particolare per individuare componenti o comportamenti potenzialmente dannosi che non possono essere valutati in modo dinamico come dannosi. | 
 | Riferimenti | Pubblicazioni Microsoft e di terze parti a cui fanno riferimento gli analisti durante la creazione del report. Il contenuto dell'analisi delle minacce si basa sui dati convalidati dai ricercatori Microsoft. Le informazioni provenienti da fonti di terze parti disponibili pubblicamente sono chiaramente identificate come tali. | 
@@ -73,16 +73,16 @@ Oltre a queste mitigazioni monitorate, il report degli analisti illustra anche l
 Sebbene sia possibile utilizzare la scheda **Mitigazioni** per valutare la posizione della sicurezza rispetto a una minaccia, questi suggerimenti consentono di adottare ulteriori misure per migliorare la propria posizione di sicurezza. Leggere attentamente tutte le indicazioni di mitigazione nel report degli analisti e applicarle quando possibile.
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprendere in che modo ogni minaccia può essere rilevata
-Il report degli analisti fornisce anche i rilevamenti dalle funzionalità antivirus e di risposta  (EDR) di Microsoft Defender for Endpoint.
+Il report degli analisti fornisce anche i rilevamenti dalle funzionalità antivirus e di risposta _(EDR)_ di Microsoft Defender for Endpoint.
 
 ### <a name="antivirus-detections"></a>Rilevamenti antivirus
-Questi rilevamenti sono disponibili nei dispositivi con [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) attivato. Quando questi rilevamenti si verificano nei dispositivi che sono stati onboarded in Microsoft Defender for Endpoint, attivano anche avvisi che illuminano i grafici nel report.
+Questi rilevamenti sono disponibili nei dispositivi con [Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) attivato. Quando questi rilevamenti si verificano nei dispositivi che sono stati onboarded in Microsoft Defender for Endpoint, attivano anche avvisi che illuminano i grafici nel report.
 
 >[!NOTE]
 >Nel report degli analisti sono inoltre elencati i rilevamenti **generici** in grado di identificare un'ampia gamma di minacce, oltre a componenti o comportamenti specifici della minaccia monitorata. Questi rilevamenti generici non si riflettono nei grafici.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Avvisi di rilevamento e risposta degli endpoint (EDR)
-Gli avvisi EDR vengono generati [per i dispositivi onboarded in Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) Questi avvisi in genere si basano sui segnali di sicurezza raccolti dal sensore Microsoft Defender for Endpoint e su altre funzionalità degli endpoint, ad esempio antivirus, protezione di rete, protezione dalle manomissioni, che fungono da potenti origini del segnale.
+EDR avvisi vengono generati per [i dispositivi onboarded in Microsoft Defender per Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) Questi avvisi in genere si basano sui segnali di sicurezza raccolti dal sensore Microsoft Defender for Endpoint e su altre funzionalità degli endpoint, ad esempio antivirus, protezione di rete, protezione dalle manomissioni, che fungono da potenti origini del segnale.
 
 Come l'elenco dei rilevamenti antivirus, alcuni avvisi EDR sono progettati per contrassegnare genericamente comportamenti sospetti che potrebbero non essere associati alla minaccia rilevata. In questi casi, il report identificherà chiaramente l'avviso come "generico" e non influirà su alcun grafico nel report.
 
@@ -100,7 +100,7 @@ Le query di ricerca avanzate nei report degli analisti sono state controllati da
 
 
 >[!NOTE]
-> L'analisi delle minacce è disponibile anche in [Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Tuttavia, non dispone dell'integrazione dei dati tra Microsoft Defender per Office e Microsoft Defender for Endpoint di Microsoft 365 Defender threat analytics.
+> L'analisi delle minacce è disponibile anche in [Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Tuttavia, non dispone dell'integrazione dei dati tra Microsoft Defender per Office e Microsoft Defender per Endpoint che Microsoft 365 Defender threat analytics.
 
 
 ## <a name="related-topics"></a>Argomenti correlati

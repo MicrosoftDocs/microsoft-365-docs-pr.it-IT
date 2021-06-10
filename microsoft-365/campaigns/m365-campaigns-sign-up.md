@@ -1,5 +1,5 @@
 ---
-title: Iscriversi a Microsoft 365 for Campaigns
+title: Iscriversi per Microsoft 365 campagne
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Registrazione dettagliata per Microsoft 365 per le campagne. Proteggere la campagna dalle minacce alla sicurezza informatica alla posta elettronica, ai dati e alle comunicazioni.
+description: Registrazione dettagliata per l'Microsoft 365 per le campagne. Proteggere la campagna dalle minacce alla sicurezza informatica alla posta elettronica, ai dati e alle comunicazioni.
 ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
 ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
@@ -31,13 +31,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/27/2021
 ms.locfileid: "51398218"
 ---
-# <a name="sign-up-for-microsoft-365-for-campaigns"></a>Iscriversi a Microsoft 365 for Campaigns 
+# <a name="sign-up-for-microsoft-365-for-campaigns"></a>Iscriversi per Microsoft 365 campagne 
 
-Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
+Ecco come completare l'iscrizione per Microsoft 365 per le campagne.
 
 ## <a name="before-you-start"></a>Prima di iniziare:
 
-- Ottenere l'invito a Microsoft 365 per le campagne completando la procedura in [Ottenere Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md#get-microsoft-365-for-campaigns).
+- Per ottenere l'invito Microsoft 365 per le campagne, completare i passaggi descritti in [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md#get-microsoft-365-for-campaigns).
 - Aprire l'invito tramite posta elettronica da Microsoft. L'invito ha un collegamento di iscrizione univoco per l'organizzazione. È necessario questo per ottenere prezzi speciali per le campagne.
 - Avere la carta di credito aziendale e un telefono pronti.
 
@@ -46,14 +46,14 @@ Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
 
 ## <a name="steps-to-sign-up"></a>Passaggi per l'iscrizione
 
-1. Nel messaggio di posta elettronica di invito a Microsoft 365 for Campaigns seleziona **ENROLL YOUR ORGANIZATION >**. In questo modo si accede a Microsoft 365 sign-up.
+1. Nell'invito a Microsoft 365 per la posta elettronica delle campagne, selezionare **REGISTRA ORGANIZZAZIONE >**. In questo modo si Microsoft 365 registrazione.
     > [!NOTE]
-    > Se si dispone già di un abbonamento a Microsoft 365 per le aziende esistente e si desidera aggiungere l'offerta Di Microsoft 365 per le campagne, passare ad aggiungere [Microsoft 365 for Campaigns a](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)un abbonamento esistente.
-1. **Nella pagina Microsoft 365 Business** immetti i dettagli dell'azienda. Per **Indirizzo di posta elettronica aziendale**, utilizzare un indirizzo di posta elettronica corrente. Questo indirizzo è necessario solo per rimanere in contatto con te durante il processo di configurazione. Selezionare **Avanti**.
+    > Se si dispone già di un abbonamento Microsoft 365 per le aziende e si desidera aggiungere l'offerta Microsoft 365 for Campaigns, passare ad aggiungere [Microsoft 365 for Campaigns a](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)una sottoscrizione esistente.
+1. **Nella pagina Microsoft 365 Business,** immettere i dettagli dell'azienda. Per **Indirizzo di posta elettronica aziendale**, utilizzare un indirizzo di posta elettronica corrente. Questo indirizzo è necessario solo per rimanere in contatto con te durante il processo di configurazione. Selezionare **Avanti**.
 1. **Nella pagina Crea l'ID utente**:
     1. In **Nome utente** immettere il nome o l'alias desiderato per l'indirizzo di posta elettronica. Ad esempio, potresti voler essere conosciuto come solo Alice o Rob. In una campagna più grande, AliceC o AliceChavez potrebbero avere più senso.
     2. In **Società** immettere il nome della campagna per cui si lavora. Ad esempio, ContosoCampaign. Se sei già proprietario di un dominio, usa questo nome qui. 
-    3. In **Selezionare un dominio** selezionare **.onmicrosoft.com** per il momento. Microsoft può configurare l'utente con un dominio in un secondo momento o consentire a Microsoft 365 di essere connesso a un dominio già di proprietà dell'utente.
+    3. In **Selezionare un dominio** selezionare **.onmicrosoft.com** per il momento. Possiamo configurarti con un dominio in un secondo momento o aiutarti a Microsoft 365 a un dominio di cui sei già proprietario.
     4. Crea una password e seleziona **Crea il mio account.**
     > [!NOTE]
     > Se la campagna o la parte non è proprietaria di un dominio e hai deciso quale dominio vuoi, puoi acquistarne uno ora selezionandolo.
@@ -72,13 +72,13 @@ Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
 
 I passaggi di iscrizione sono stati completati. Se si desidera continuare con i passaggi successivi, selezionare **Avvia installazione** o tornare in un secondo momento per completare i passaggi. Quando sei pronto, controlla il tuo messaggio di posta elettronica (dal passaggio 2) per trovare il nome utente e la password in modo da poter accedere la volta successiva. Queste credenziali sono denominate credenziali di amministratore o amministratore globale.
 
-## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>Passaggi per aggiungere Microsoft 365 for Campaigns a un abbonamento esistente
+## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>Passaggi per aggiungere Microsoft 365 campagne a una sottoscrizione esistente
 
-Se si dispone già di un abbonamento a Microsoft 365 per le aziende, ad esempio Microsoft 365 Business Standard, è possibile utilizzare l'offerta Microsoft 365 for Campaigns per aggiungervi licenze.
+Se hai già una sottoscrizione a Microsoft 365 per le aziende, ad esempio Microsoft 365 Business Standard, puoi usare l'offerta Microsoft 365 for Campaigns per aggiungervi licenze.
 > [!IMPORTANT]
-> Non è possibile aggiungere l'offerta Di Microsoft 365 per le campagne a un account Microsoft 365 esistente.
+> Non puoi aggiungere l'Microsoft 365 per le campagne a un account Microsoft 365 esistente.
 
-1. Nel messaggio di posta elettronica di invito a Microsoft 365 for Campaigns seleziona **ENROLL YOUR ORGANIZATION >**. In questo modo si accede a Microsoft 365 sign-up.
+1. Nell'invito a Microsoft 365 per la posta elettronica delle campagne, selezionare **REGISTRA ORGANIZZAZIONE >**. In questo modo si Microsoft 365 registrazione.
 2. Nella pagina **Benvenuto, è possibile** conoscere l'utente, fare clic o toccare Vuoi aggiungere questo a **un abbonamento esistente? Accedi**.
     
     ![Scegliere Accedi nell'angolo in alto a destra.](../media/addtoexisting.png)
@@ -90,6 +90,6 @@ Dopo aver completato questi passaggi, sei pronto per assegnare [le nuove licenze
 
 ## <a name="whats-next"></a>Operazioni successive
 
-- [Configurare Microsoft 365 per](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) completare la configurazione di Microsoft 365 per le campagne.
+- [Configura il Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) per completare la configurazione Microsoft 365 per le campagne.
 - [Aggiungere utenti](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) al piano. Includere il candidato alla campagna, tutto il personale senior della campagna e chiunque abbia accesso a informazioni sensibili sulla campagna o sulle parti.
 - [Protezione avanzata per la campagna](m365-campaigns-security-overview.md)

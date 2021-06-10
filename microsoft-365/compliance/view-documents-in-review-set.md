@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i documenti in un set di revisione in Advanced eDiscovery
+title: Visualizzare i documenti in un set di revisioni in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Scegliere la modalità di visualizzazione del contenuto in Advanced eDiscovery, ad esempio testo, annotazione, convertito o visualizzazione nativa.
+description: Scegli come visualizzare il contenuto in Advanced eDiscovery, ad esempio testo, annotazioni, convertite o visualizzazione nativa.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: aa8e8e9ea22469ab6d0b223c1bcc9285e2c2ef40
 ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
@@ -22,34 +22,34 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/31/2021
 ms.locfileid: "51471069"
 ---
-# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Visualizzare i documenti in un set di revisione in Advanced eDiscovery
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Visualizzare i documenti in un set di revisioni in Advanced eDiscovery
 
-Advanced eDiscovery visualizza il contenuto tramite diversi visualizzatori ognuno con scopi diversi. I vari visualizzatori possono essere utilizzati facendo clic su qualsiasi documento all'interno di un set di revisioni. I visualizzatori attualmente forniti sono:
+Advanced eDiscovery visualizza i contenuti tramite diversi visualizzatori con scopi diversi. I diversi visualizzatori possono essere utilizzati facendo clic su un documento qualsiasi in un insieme da rivedere. I visualizzatori attualmente forniti sono:
 
-- Metadati dei file
+- Metadati del file
 - Visualizzazione nativa
 - Visualizzazione testo
-- Visualizzazione Annotazione
+- Visualizzazione annotazione
 
-## <a name="file-metadata"></a>Metadati dei file
+## <a name="file-metadata"></a>Metadati del file
 
-Questo pannello può essere attivato/disattivato per visualizzare vari metadati associati al documento. Anche se la griglia dei risultati di ricerca può essere personalizzata per visualizzare metadati specifici, esistono casi in cui lo scorrimento orizzontale può essere difficile durante la revisione dei dati. Il pannello Metadati file consente all'utente di attivare o disattivare una visualizzazione all'interno del visualizzatore.
+Questo pannello può essere attivato/disattivato per visualizzare vari metadati associati al documento. Anche se la griglia dei risultati della ricerca può essere personalizzata per visualizzare metadati specifici, in alcuni casi può risultare difficile scorrere orizzontalmente durante la revisione dei dati. Il riquadro Metadati del file consente all'utente di attivare una visualizzazione all'interno del visualizzatore.
 
 ![Riquadro metadati file
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Visualizzazione nativa
 
-Il visualizzatore nativo visualizza la visualizzazione più ricca di un documento. Supporta centinaia di tipi di file e ha lo scopo di visualizzare l'esperienza nativa più vera possibile. Per Microsoft Office, il visualizzatore utilizza la versione Web delle app di Office per visualizzare contenuto come commenti a documenti, formule di Excel, righe/colonne nascoste e note di PowerPoint.
+Il visualizzatore nativo visualizza la visualizzazione più ricca di un documento. Supporta centinaia di tipi di file ed è pensato per mostrare l'esperienza più vera e nativa possibile. Per i file di Microsoft Office, il visualizzatore usa la versione Web delle app Office per mostrare i contenuti come i commenti nei documenti, le formule Excel, righe/colonne nascoste e note PowerPoint.
 
 ![Visualizzazione nativa
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Visualizzazione testo
 
-Il visualizzatore di testo fornisce una visualizzazione del testo estratto di un file. Ignora le immagini e la formattazione incorporate, ma è molto efficace se si sta cercando di comprendere rapidamente il contenuto. La visualizzazione testo include anche queste funzionalità:
+Il visualizzatore testo fornisce una visualizzazione del testo estratto di un file. Ignora le immagini e la formattazione incorporate, ma è molto efficace se si vuole comprendere rapidamente il contenuto. La visualizzazione testo include anche le funzionalità seguenti:
 
-  - Il contatore delle righe semplifica il riferimento a parti specifiche di un documento
+  - Il contatore di righe semplifica la ricerca di riferimenti a parti specifiche di un documento
 
   - Evidenziazione dei risultati della ricerca che evidenzia i termini all'interno del documento e la barra di scorrimento
 
@@ -61,7 +61,7 @@ Il visualizzatore di testo fornisce una visualizzazione del testo estratto di un
 ![Visualizzazione Diff
 ](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a>Visualizzazione Annotazione
+## <a name="annotate-view"></a>Visualizzazione annotazione
 
 La visualizzazione Annotazione offre funzionalità che consentono agli utenti di applicare commenti a un documento, tra cui:
 
@@ -85,7 +85,7 @@ La visualizzazione Annotazione offre funzionalità che consentono agli utenti di
 
   - Ricerca: l'utente può eseguire ricerche all'interno di un documento e passare ai vari risultati all'interno del documento
     
-    ![Visualizzazione Annotazione
+    ![Visualizzazione annotazione
     ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Visualizzazione dashboard 

@@ -35,7 +35,7 @@ ms.locfileid: "51205375"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Gli attacchi di phishing sono una minaccia costante per qualsiasi organizzazione di posta elettronica. Oltre a usare indirizzi di posta elettronica mittenti [contraffatti](anti-spoofing-protection.md)(contraffatti), gli utenti malintenzionati spesso utilizzano valori nell'indirizzo mittente che violano gli standard Internet. Per evitare questo tipo di phishing, Exchange Online Protection (EOP) e Outlook.com ora richiedono che i messaggi in ingresso includano un indirizzo Mittente conforme a RFC, come descritto in questo articolo. Questa applicazione è stata abilitata a novembre 2017.
+Gli attacchi di phishing sono una minaccia costante per qualsiasi organizzazione di posta elettronica. Oltre a usare indirizzi di posta elettronica mittenti [contraffatti](anti-spoofing-protection.md)(contraffatti), gli utenti malintenzionati spesso utilizzano valori nell'indirizzo mittente che violano gli standard Internet. Per evitare questo tipo di phishing, Exchange Online Protection (EOP) e Outlook.com richiedono ora che i messaggi in ingresso includano un indirizzo Da conforme a RFC, come descritto in questo articolo. Questa applicazione è stata abilitata a novembre 2017.
 
 **Note**:
 
@@ -130,10 +130,10 @@ Per ulteriori informazioni sulla pubblicazione di un MX null, vedere [RFC 7505](
 
 ## <a name="override-from-address-enforcement"></a>Eseguire l'override dell'imposizione degli indirizzi da
 
-Per ignorare i requisiti dell'indirizzo mittente per la posta elettronica in ingresso, è possibile utilizzare l'elenco indirizzi IP consentiti (filtro connessioni) o le regole del flusso di posta (note anche come regole di trasporto) come descritto [in Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
+Per ignorare i requisiti degli indirizzi mittente per la posta elettronica in ingresso, è possibile utilizzare l'elenco indirizzi IP consentiti (filtro connessioni) o le regole del flusso di posta (note anche come regole di trasporto), come descritto in [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-Non è possibile ignorare i requisiti dell'indirizzo mittente per la posta elettronica in uscita inviata da Microsoft 365. Inoltre, Outlook.com non consentirà sostituzioni di alcun tipo, anche tramite il supporto.
+Non è possibile ignorare i requisiti dell'indirizzo mittente per la posta elettronica in uscita inviata da Microsoft 365. Inoltre, Outlook.com non consentirà sostituzioni di alcun tipo, nemmeno attraverso il supporto.
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Altri modi per prevenire e proteggere da crimini informatici in Microsoft 365
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Altri modi per prevenire e proteggere dai crimini informatici in Microsoft 365
 
-Per ulteriori informazioni su come rafforzare l'organizzazione contro phishing, posta indesiderata, violazioni dei dati e altre minacce, vedere [Top 10 ways to secure Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md).
+Per ulteriori informazioni su come rafforzare l'organizzazione contro phishing, posta indesiderata, violazioni dei dati e altre minacce, vedere [Top 10 ways to](../../admin/security-and-compliance/secure-your-business-data.md)secure Microsoft 365 for business plans .

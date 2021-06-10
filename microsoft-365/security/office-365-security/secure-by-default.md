@@ -17,12 +17,12 @@ ms.collection:
 description: Ulteriori informazioni sull'impostazione di protezione per impostazione predefinita in Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624050"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861528"
 ---
 # <a name="secure-by-default-in-office-365"></a>Protezione per impostazione predefinita in Office 365
 
@@ -58,7 +58,7 @@ Poiché Microsoft vuole proteggere i clienti per impostazione predefinita, alcun
 Per ulteriori informazioni su queste sostituzioni, vedere [Create safe sender lists.](create-safe-sender-lists-in-office-365.md)
 
 > [!NOTE]
-> È in corso il processo  di deprecazione dell'azione Sposta il messaggio nella cartella Posta indesiderata per un verdetto di posta elettronica di **phishing** ad alta probabilità nei criteri di protezione da posta indesiderata di EOP. I criteri di protezione da posta indesiderata che utilizzano questa azione per i messaggi di phishing ad alta probabilità verranno convertiti in **messaggio di quarantena.** **L'azione Reindirizza messaggio all'indirizzo di** posta elettronica per i messaggi di phishing ad alta probabilità non è influenzata.
+> È stata deprecata l'azione Sposta **il messaggio** nella cartella Posta indesiderata per un verdetto di posta elettronica di **phishing** ad alta sicurezza nei criteri di protezione da posta indesiderata di EOP. I criteri di protezione da posta indesiderata che utilizzano questa azione per i messaggi di phishing ad alta probabilità verranno convertiti in **messaggio di quarantena.** **L'azione Reindirizza messaggio all'indirizzo di** posta elettronica per i messaggi di phishing ad alta probabilità non è influenzata.
 
 La protezione per impostazione predefinita non è un'impostazione che può essere attivata o disattivata, ma è il modo in cui il filtro funziona per mantenere i messaggi potenzialmente pericolosi o indesiderati fuori dalle cassette postali. Il malware e i messaggi di phishing ad alta probabilità devono essere messi in quarantena. Solo gli amministratori possono gestire i messaggi messi in quarantena come malware o phishing ad alta probabilità e possono anche segnalare falsi positivi a Microsoft da lì. Per ulteriori informazioni, vedere [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
 

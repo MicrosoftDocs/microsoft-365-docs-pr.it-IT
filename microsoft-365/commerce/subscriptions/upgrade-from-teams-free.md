@@ -74,7 +74,7 @@ Ora che hai un nuovo abbonamento Microsoft 365 per le aziende, puoi assegnare li
 4. Nel riquadro **Sostituisci prodotti esistenti** individuare il prodotto Microsoft 365 per le aziende acquistato e impostare l'interruttore su **Attivato.**
 5. Selezionare **Sostituisci** e quindi **Chiudi.**
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Benvenuto in Microsoft Teams gratuito](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (articolo)\
 [Aggiornare Microsoft Teams gratuitamente alla versione di sottoscrizione](/microsoftteams/upgrade-freemium) (articolo)\

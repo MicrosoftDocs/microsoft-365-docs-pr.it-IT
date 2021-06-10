@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793161"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877885"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Analisi e risposta automatizzate (AIR) in Microsoft Defender per Office 365
 
@@ -46,7 +46,7 @@ In questo articolo viene descritto:
 - Il [flusso complessivo di AIR](#the-overall-flow-of-air);
 - [Come ottenere AIR](#how-to-get-air); e
 - Autorizzazioni [necessarie per](#required-permissions-to-use-air-capabilities) configurare o utilizzare le funzionalità AIR.
-- Modifiche che verranno presto apportate al centro sicurezza
+- Modifiche che verranno presto apportate al portale di Microsoft 365 Defender
 
 In questo articolo sono [inoltre inclusi i passaggi successivi](#next-steps)e le risorse per ulteriori informazioni.
 
@@ -89,7 +89,11 @@ Inoltre, assicurarsi di esaminare i criteri di avviso [dell'organizzazione,](../
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Quali criteri di avviso attivano indagini automatizzate?
 
-Microsoft 365 fornisce molti criteri di avviso incorporati che consentono di identificare l'abuso delle autorizzazioni di amministratore Exchange, l'attività di malware, potenziali minacce esterne ed interne e i rischi di governance delle informazioni. Diversi criteri [di avviso predefiniti possono](../../compliance/alert-policies.md#default-alert-policies) attivare indagini automatizzate. Nella tabella seguente vengono descritti gli avvisi che attivano indagini automatizzate, la gravità nel centro sicurezza Microsoft 365 e il modo in cui vengono generati:
+Microsoft 365 fornisce molti criteri di avviso incorporati che consentono di identificare l'abuso delle autorizzazioni di amministratore Exchange, l'attività di malware, potenziali minacce esterne ed interne e i rischi di governance delle informazioni. Diversi criteri [di avviso predefiniti possono](../../compliance/alert-policies.md#default-alert-policies) attivare indagini automatizzate. Nella tabella seguente vengono descritti gli avvisi che attivano indagini automatizzate, la gravità nel portale di Microsoft 365 Defender e il modo in cui vengono generati:
+
+<br>
+
+****
 
 |Avviso|Gravità|Modalità di generazione dell'avviso|
 |---|---|---|
@@ -108,10 +112,15 @@ Microsoft 365 fornisce molti criteri di avviso incorporati che consentono di ide
 
 Le autorizzazioni vengono concesse tramite determinati ruoli, ad esempio quelli descritti nella tabella seguente:
 
+<br>
+
+****
+
 |Attività|Ruolo(i) obbligatorio|
 |---|---|
 |Configurare le funzionalità AIR|Uno dei ruoli seguenti: <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li></ul> <p> Questi ruoli possono essere assegnati in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).|
 |Avviare un’indagine automatica <p> --- o --- <p> Approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnato in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md): <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li><li>Operatore della sicurezza</li><li>Ruolo con autorizzazioni di lettura per la sicurezza <br> --- e --- </li><li>Ricerca ed eliminazione (questo ruolo viene assegnato solo nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Di ricerca ed eliminazione a tale nuovo gruppo di ruoli.</li></ul>|
+|
 
 ## <a name="required-licenses"></a>Licenze necessarie
 
@@ -121,16 +130,16 @@ Le autorizzazioni vengono concesse tramite determinati ruoli, ad esempio quelli 
 - Team delle operazioni di sicurezza dell'organizzazione (inclusi i lettori di sicurezza e quelli con **il ruolo Di ricerca ed eliminazione)**
 - Utenti finali
 
-## <a name="changes-are-coming-soon-in-your-security-center"></a>Le modifiche saranno presto disponibili nel centro sicurezza
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Le modifiche saranno presto disponibili nel portale Microsoft 365 Defender
 
-Se stai già usando le funzionalità AIR in Microsoft Defender per Office 365, stai per vedere alcune modifiche nel Centro sicurezza Microsoft 365 [sicurezza.](../defender/overview-security-center.md)
+Se stai già usando le funzionalità AIR in Microsoft Defender per Office 365, stai per vedere alcune modifiche nel portale di [Microsoft 365 Defender migliorato.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro notifiche unificato":::
 
-Il centro sicurezza nuovo e migliorato riunisce le funzionalità AIR in [Microsoft Defender per Office 365](defender-for-office-365.md) e in Microsoft Defender per [Endpoint.](../defender-endpoint/automated-investigations.md) Con questi aggiornamenti e migliorie, il team addetto alle operazioni di sicurezza potrà visualizzare dettagli sulle indagini automatizzate e le azioni di correzione per tutta la posta elettronica, i contenuti della collaborazione, gli account utente e i dispositivi, il tutto in un'unica posizione.
+Il nuovo e migliorato portale Microsoft 365 Defender riunisce le funzionalità AIR in [Microsoft Defender per Office 365](defender-for-office-365.md) e in Microsoft Defender per [Endpoint.](../defender-endpoint/automated-investigations.md) Con questi aggiornamenti e migliorie, il team addetto alle operazioni di sicurezza potrà visualizzare dettagli sulle indagini automatizzate e le azioni di correzione per tutta la posta elettronica, i contenuti della collaborazione, gli account utente e i dispositivi, il tutto in un'unica posizione.
 
 > [!TIP]
-> Il nuovo Microsoft 365 di sicurezza ( <https://security.microsoft.com> ) sostituisce i centri seguenti:
+> Il nuovo Microsoft 365 Microsoft 365 Defender Portal ( <https://security.microsoft.com> ) sostituisce i centri seguenti:
 >
 > - Office 365 Centro sicurezza & conformità ( <https://protection.office.com> )
 > - Microsoft Defender Security Center ( <https://securitycenter.windows.com> )
@@ -140,6 +149,10 @@ Il centro sicurezza nuovo e migliorato riunisce le funzionalità AIR in [Microso
 ### <a name="what-to-expect"></a>Cosa aspettarsi
 
 Nella tabella seguente sono elencate le modifiche e i miglioramenti apportati a AIR in Microsoft Defender per Office 365.
+
+<br>
+
+****
 
 |Elemento|Cosa cambia?|
 |---|---|

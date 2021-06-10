@@ -54,7 +54,7 @@ Quando si fa **clic su Visualizza dettagli** nel widget, viene visualizzato un r
 
 ![Riquadro a comparsa Dettagli visualizzato dopo aver fatto clic su Visualizza dettagli nella finestra di dialogo Correggi informazioni sulle regole del flusso di posta lento](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-Per ulteriori informazioni sulle condizioni e sulle eccezioni nelle regole del flusso di posta, vedere [Mail flow rule conditions and exceptions (predicates) in Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+Per ulteriori informazioni sulle condizioni e sulle eccezioni nelle regole del flusso di posta, vedere [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 ## <a name="see-also"></a>Vedere anche
 

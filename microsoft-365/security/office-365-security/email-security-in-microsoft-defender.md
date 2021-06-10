@@ -16,12 +16,12 @@ description: Visualizzare e analizzare i tentativi di phishing di malware.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2a6d3d10cfa21c0ad2da948bff130cb9336ebd8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297624"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877897"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Sicurezza della posta elettronica con Threat Explorer in Microsoft Defender per Office 365
 
@@ -45,7 +45,9 @@ In questo articolo viene illustrato come visualizzare e analizzare i tentativi d
 
 Per visualizzare il malware rilevato nei messaggi di posta [](threat-explorer-views.md#email--malware) elettronica ordinati Microsoft 365 tecnologia, usare la visualizzazione Malware > posta elettronica di Esplora risorse (o rilevamenti in tempo reale). Il malware è la visualizzazione predefinita, quindi potrebbe essere selezionato non appena apri Esplora risorse.
 
-1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione <https://protection.office.com>  \> **delle minacce** (o **Rilevamenti in tempo reale).** In questo esempio viene utilizzato Explorer. Se si è nel Centro sicurezza Microsoft 365 convergente ( scorrere fino a https://security.microsoft.com/) **E-mail &**  >  **collaborazione Explorer**.
+1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione <https://protection.office.com>  \> **delle minacce** (o **Rilevamenti in tempo reale).** In questo esempio viene utilizzato Explorer.
+
+   Se sei nel portale Microsoft 365 Defender convergente ( ) scorri fino a <https://security.microsoft.com> **Email & collaboration**  >  **Explorer**.
 
    Da qui, inizia da View, scegli un determinato intervallo di tempo per analizzare (se necessario) e concentrare i filtri, come da [Explorer walk-through.](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)
 

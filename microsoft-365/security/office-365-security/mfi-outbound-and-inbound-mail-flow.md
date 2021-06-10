@@ -37,9 +37,9 @@ Il widget visualizza la crittografia TLS utilizzata per la connessione quando i 
 
 Le informazioni nel widget sono correlate ai connettori e alla protezione dei messaggi TLS in Microsoft 365. Per ulteriori informazioni, vedere gli argomenti riportati di seguito:
 
-- [Configurare il flusso di posta utilizzando i connettori](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- [Configurare il flusso di posta elettronica usando i connettori](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 - [Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
-- [Dettagli di riferimento tecnico sulla crittografia in Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
+- [Informazioni di riferimento tecniche sulla crittografia in Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
 
 ## <a name="message-protected-in-transit-by-tls"></a>Messaggio protetto in transito (tramite TLS)
 
@@ -51,7 +51,7 @@ Attualmente, TLS 1.2 è la versione più sicura di TLS offerta da Microsoft 365.
 
 Tuttavia, è possibile utilizzare [i connettori](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) per garantire la migliore protezione TLS disponibile per i messaggi inviati tra i server di posta elettronica e Microsoft 365. Il flusso di posta tra Microsoft 365 e i server o i server di posta elettronica che appartengono ai partner è spesso più importante e sensibile dei messaggi normali, quindi è necessario applicare maggiore sicurezza e vigilanza a tali messaggi.
 
-È possibile aggiornare o correggere i propri server di posta elettronica per migliorare la crittografia TLS in uso o contattare i partner per eseguire la stessa operazione. Il **rapporto connettore** visualizza sia il volume del flusso di posta che la crittografia TLS per i messaggi che utilizzano i connettori di Microsoft 365.
+È possibile aggiornare o correggere i propri server di posta elettronica per migliorare la crittografia TLS in uso o contattare i partner per eseguire la stessa operazione. Il **rapporto connettore** visualizza sia il volume del flusso di posta che la crittografia TLS per i messaggi che utilizzano i connettori Microsoft 365 messaggi.
 
 È possibile fare clic sul **collegamento Rapporto** connettore per passare al [report Connettore.](view-mail-flow-reports.md#connector-report) Se la condizione associata è stata rilevata, nella pagina **del report Connettore** potrebbero essere disponibili le informazioni seguenti:
 

@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni sulle considerazioni sulla distribuzione e sulle domande frequenti relative alla simulazione e alla formazione sugli attacchi nelle organizzazioni di Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 2.
+description: Gli amministratori possono ottenere informazioni sulle considerazioni sulla distribuzione e sulle domande frequenti relative alla simulazione e alla formazione sugli attacchi in Microsoft 365 E5 o Microsoft Defender per Office 365 piano 2.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
@@ -43,7 +43,7 @@ Un servizio di reputazione URL potrebbe identificare uno o più URL utilizzati d
 
 ![Avviso del sito ingannescente in Google Chrome](../../media/attack-sim-chrome-deceptive-site-message.png)
 
-Tieni presente che questo problema non influisce su Microsoft Edge.
+Si noti che questo problema non influisce Microsoft Edge.
 
 Nell'ambito della fase di pianificazione, verificare la disponibilità dell'URL nei Web browser supportati prima di utilizzare l'URL in una campagna di phishing. Se gli URL sono bloccati da Google Safe Browsing, segui [queste](https://support.google.com/chrome/a/answer/7532419) indicazioni di Google per consentire l'accesso agli URL.
 
@@ -72,7 +72,7 @@ Anche se abbiamo visto pochi clienti bloccati a questo livello, si verifica. In 
 - Utenti guest.
 - Utenti che non sono più attivi in Azure Active Directory (Azure AD).
 
-Nelle simulazioni verranno inclusi solo gli utenti non guest validi con una cassetta postale valida. Se si utilizzano gruppi di distribuzione o gruppi di sicurezza abilitati alla posta elettronica per gli utenti di destinazione, è possibile utilizzare il cmdlet [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) in [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) di Exchange Online per visualizzare e convalidare i membri del gruppo di distribuzione.
+Nelle simulazioni verranno inclusi solo gli utenti non guest validi con una cassetta postale valida. Se si utilizzano gruppi di distribuzione o gruppi di sicurezza abilitati alla posta elettronica per gli utenti di destinazione, è possibile utilizzare il cmdlet [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) per visualizzare e convalidare i membri del gruppo di distribuzione.
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>Problemi relativi alla creazione di report di formazione sulla simulazione di attacchi
 
@@ -160,7 +160,7 @@ Detto questo, puoi creare il tuo payload nella lingua desiderata usando l'esperi
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>D: Come è possibile passare ad altre lingue per il portale di amministrazione e l'esperienza di formazione?
 
-A: In Microsoft 365 o Office 365, la configurazione della lingua è specifica e centralizzata per ogni account utente. Per istruzioni su come modificare l'impostazione della lingua, vedere Modificare la lingua di visualizzazione e il fuso [orario in Microsoft 365 per le aziende.](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)
+A: In Microsoft 365 o Office 365, la configurazione della lingua è specifica e centralizzata per ogni account utente. Per istruzioni su come modificare l'impostazione della lingua, vedere [Change your display language and time zone in Microsoft 365 for Business.](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)
 
 Si noti che la sincronizzazione della modifica della configurazione potrebbe richiedere fino a 30 minuti tra tutti i servizi.
 

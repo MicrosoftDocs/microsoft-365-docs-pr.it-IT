@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Panoramica di Viva Topics.
-ms.openlocfilehash: c7a5af9d2a038c2b9cc5f26d851eb3776a00c71f
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866692"
+ms.locfileid: "52877813"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Panoramica di Microsoft Viva Topics 
 
@@ -70,7 +70,7 @@ Quando un argomento viene identificato e l'IA determina di avere informazioni su
 
 Gli amministratori delle informazioni possono scegliere di eseguire la ricerca per indicizzazione di tutti i siti di SharePoint nel tenant o di selezionarne solo alcuni.
 
-Vedi [Individuazione e cura degli argomenti](./topic-experiences-discovery-curation.md).
+Per ulteriori informazioni, vedere [Individuazione e cura degli argomenti](./topic-experiences-discovery-curation.md).
 
 ## <a name="roles"></a>Ruoli
 
@@ -80,7 +80,7 @@ Quando utilizzi Viva Topics nel tuo ambiente Microsoft 365, gli utenti avranno i
 
 - Collaboratori: utenti che dispongono dei diritti per modificare argomenti esistenti o crearne di nuovi. Gli amministratori delle informazioni autorizzano gli utenti a collaborare tramite le impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365. Si noti che è possibile anche concedere a tutti i visualizzatori di argomenti l'autorizzazione a modificare e creare argomenti in modo che tutti possano contribuire agli argomenti che vedono.
 
-- Responsabili informazioni: utenti che guidano gli argomenti attraverso il ciclo di vita degli argomenti. I knowledge  manager utilizzano la pagina Gestisci argomenti nel Centro argomenti per confermare gli argomenti suggeriti dall'IA, rimuovere gli argomenti non più rilevanti, nonché modificare gli argomenti esistenti o crearne di nuovi e sono gli unici utenti che hanno accesso ad esso. Gli amministratori delle informazioni autorizzano i responsabili delle informazioni a collaborare tramite le impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365. 
+- Responsabili informazioni: utenti che guidano gli argomenti attraverso il ciclo di vita degli argomenti. I knowledge  manager utilizzano la pagina Gestisci argomenti nel Centro argomenti per confermare gli argomenti suggeriti dall'IA, rimuovere gli argomenti non più rilevanti, nonché modificare gli argomenti esistenti o crearne di nuovi e sono gli unici utenti ad accedervi. Gli amministratori delle informazioni autorizzano i responsabili delle informazioni a collaborare tramite le impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365. 
 
 - Amministratori della knowledge base: gli amministratori configurano Viva Topics e lo gestiscono tramite i controlli di amministrazione nell'Microsoft 365 di amministrazione. Attualmente, un amministratore globale di Microsoft 365 o di SharePoint può fungere da amministratore delle informazioni.
 
@@ -96,7 +96,7 @@ I responsabili informazioni possono:
 
 - Confermare o rimuovere gli argomenti rilevati nel tuo tenant.
 - Creare nuovi argomenti manualmente in base alle necessità (ad esempio, se non sono state fornite informazioni sufficienti per scoprirlo tramite IA).
-- Modificare le pagine degli argomenti esistenti.<br/>
+- Modificare le pagine degli argomenti esistenti.
 
 Per ulteriori informazioni, vedere [Gestire gli argomenti nel Centro argomenti.](manage-topics.md)  
 

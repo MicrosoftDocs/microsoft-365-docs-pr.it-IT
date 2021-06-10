@@ -39,15 +39,15 @@ Se non sei conforme a questi criteri e linee guida, potrebbe non essere possibil
 
 ## <a name="general-microsoft-policies"></a>Criteri generali di Microsoft
 
-La posta elettronica inviata agli utenti di Microsoft 365 deve essere conforme a tutti i criteri Microsoft che regolano la trasmissione e l'uso della posta elettronica di Microsoft 365.
+La posta elettronica inviata Microsoft 365 utenti deve essere conforme a tutti i criteri Microsoft che regolano la trasmissione e l'uso della posta elettronica Microsoft 365.
 
-- Condizioni per i servizi applicabili a Microsoft 365; in particolare, il divieto di utilizzare il servizio per la posta indesiderata o la distribuzione di malware.
+- Condizioni per i servizi applicabili Microsoft 365; in particolare, il divieto di utilizzare il servizio per la posta indesiderata o la distribuzione di malware.
 
 - [Contratto di servizi Microsoft](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Normative governative
 
-I messaggi di posta elettronica inviati agli utenti di Microsoft 365 devono rispettare tutte le leggi e le normative applicabili che disciplinano le comunicazioni di posta elettronica nella giurisdizione applicabile.
+I messaggi inviati Microsoft 365 utenti devono rispettare tutte le leggi e le normative applicabili che disciplinano le comunicazioni di posta elettronica nella giurisdizione applicabile.
 
 - [CAN-SPAM Act: Guida alla conformità per le aziende](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,13 +55,13 @@ I messaggi di posta elettronica inviati agli utenti di Microsoft 365 devono risp
 
 ## <a name="technical-guidelines"></a>Linee guida tecniche
 
-I messaggi di posta elettronica inviati a Microsoft 365 devono essere conformi alle raccomandazioni applicabili elencate nei documenti seguenti (alcuni collegamenti sono disponibili solo in inglese).
+I messaggi inviati Microsoft 365 devono essere conformi alle raccomandazioni applicabili elencate nei documenti seguenti (alcuni collegamenti sono disponibili solo in inglese).
 
-- [RFC 2505: Suggerimenti per la protezione da posta indesiderata per gli MTA SMTP](https://www.ietf.org/rfc/rfc2505.txt)
+- [RFC 2505: Protezione da posta indesiderata Consigli per gli MTA SMTP](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: Estensione del servizio SMTP per il pipelining dei comandi](https://www.ietf.org/rfc/rfc2920.txt)
 
-Inoltre, i server di posta elettronica che si connettono a Microsoft 365 devono rispettare i requisiti seguenti:
+Inoltre, i server di posta elettronica che si connettono Microsoft 365 devono rispettare i requisiti seguenti:
 
 - Il mittente deve rispettare tutti gli standard tecnici per la trasmissione della posta elettronica Internet, come pubblicato dalla Internet Society's Internet Engineering Task Force (IETF), tra cui RFC 5321, RFC 5322 e altri.
 
@@ -81,9 +81,9 @@ Inoltre, i server di posta elettronica che si connettono a Microsoft 365 devono 
 
 I mittenti, gli ISP e altri provider di servizi devono gestire attivamente la reputazione degli indirizzi IP in uscita.
 
-## <a name="microsoft-365-limits"></a>Limiti di Microsoft 365
+## <a name="microsoft-365-limits"></a>Microsoft 365 limiti
 
-I mittenti devono rispettare i limiti di Microsoft 365 elencati in [Exchange Online Protection Limits.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+I mittenti devono rispettare Microsoft 365 limiti elencati in [Exchange Online Protection Limiti](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## <a name="email-delivery-resources-and-organizations"></a>Risorse e organizzazioni per il recapito della posta elettronica
 
@@ -101,4 +101,4 @@ Per segnalare messaggi di posta elettronica illegali, abusivi, indesiderati o da
 
 ## <a name="law-enforcement"></a>Forze dell'ordine
 
-Se si è membri delle forze dell'ordine e si desidera fornire a Microsoft Corporation la documentazione legale relativa a Office 365 o se si hanno domande sulla documentazione legale inviata a Microsoft, chiamare (1) (425) 722-1299.
+Se si è membri delle forze dell'ordine e si desidera fornire a Microsoft Corporation la documentazione legale relativa a Office 365 o per domande relative alla documentazione legale inviata a Microsoft, chiamare il numero (1) (425) 722-1299.

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Informazioni su come utilizzare i limiti di conformità per creare limiti logici che controllano le posizioni del contenuto degli utenti in cui un responsabile di eDiscovery può eseguire ricerche in Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 1a84bc77cb78a9da3cfe873849a4148e55501137
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706607"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878029"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurare i limiti di conformità per le indagini di eDiscovery
 
@@ -92,6 +92,9 @@ Ecco un elenco di attributi utente di Azure AD che puoi usare per i limiti di co
 Anche se sono disponibili più attributi utente, in particolare per Exchange cassette postali, gli attributi elencati in precedenza sono gli unici attualmente supportati da OneDrive.
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Passaggio 2: sincronizzazione dell'attributo utente con gli account OneDrive Microsoft
+
+> [!IMPORTANT]
+> Questo passaggio non è più necessario. A partire da giugno 2021, i filtri delle cassette postali verranno applicati OneDrive for Business. Le richieste di supporto per sincronizzare l'attributo OneDrive verranno rifiutate perché non è più necessario. Questo articolo verrà aggiornato nel prossimo futuro.
 
 Il passaggio successivo consiste nel sincronizzazione dell'attributo di Azure AD scelto nel passaggio 1 con tutti gli account OneDrive dell'organizzazione. Dopo la sincronizzazione, l'attributo e il relativo valore scelto nel passaggio 1 verranno mappati a una proprietà gestita nascosta denominata `ComplianceAttribute` . Questo attributo viene utilizzato per creare il filtro delle autorizzazioni di ricerca per OneDrive nel passaggio 4.
   
@@ -293,7 +296,7 @@ Tenere presenti le limitazioni seguenti quando si gestiscono casi eDiscovery e i
 
 - I filtri di ricerca delle autorizzazioni non vengono applicati alle cartelle pubbliche di Exchange.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Se una cassetta postale è senza licenza o viene eliminata in modo recinto, gli attributi di Azure AD non vengono più sincronizzati con la cassetta postale. Se è stato applicato un blocco alla cassetta postale al momento dell'eliminazione, il contenuto conservato nella cassetta postale è ancora soggetto a un limite di conformità o a un filtro delle autorizzazioni di ricerca in base all'ultima sincronizzazione degli attributi di Azure AD prima dell'eliminazione della cassetta postale. 
 
