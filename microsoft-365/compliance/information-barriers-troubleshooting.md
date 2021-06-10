@@ -27,15 +27,15 @@ ms.locfileid: "50928006"
 Nel caso in cui si verificano problemi imprevisti dopo l'applicazione delle barriere alle informazioni, è possibile eseguire alcuni passaggi per risolverli. Usa questo articolo come guida.
 
 > [!IMPORTANT]
-> Per eseguire le attività descritte in questo articolo, è necessario disporre di un ruolo appropriato, ad esempio uno dei seguenti:<br/>- Amministratore globale dell'organizzazione di Microsoft 365<br/>- Amministratore globale<br/>- Amministratore conformità<br/>- Gestione della conformità IB (questo è un nuovo ruolo!)<p>Per ulteriori informazioni sui prerequisiti per le barriere alle informazioni, vedere [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Assicurarsi di [connettersi a PowerShell & Centro sicurezza e conformità.](/powershell/exchange/connect-to-scc-powershell)
+> Per eseguire le attività descritte in questo articolo, è necessario disporre di un ruolo appropriato, ad esempio uno dei seguenti:<br/>- Microsoft 365 Enterprise amministratore globale<br/>- Amministratore globale<br/>- Amministratore conformità<br/>- Gestione della conformità IB (questo è un nuovo ruolo!)<p>Per ulteriori informazioni sui prerequisiti per le barriere alle informazioni, vedere [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Assicurarsi di [connettersi a PowerShell & Centro sicurezza e conformità.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problema: agli utenti viene impedito in modo imprevisto di comunicare con altri utenti in Microsoft Teams 
 
-In questo caso, gli utenti segnalano problemi imprevisti che comunicano con altri utenti in Microsoft Teams. Ecco alcuni esempi:
+In questo caso, gli utenti segnalano problemi imprevisti che comunicano con altri Microsoft Teams. Ecco alcuni esempi:
 
 - Un utente cerca, ma non è in grado di trovarlo, un altro utente in Microsoft Teams.
 - Un utente può trovare, ma non selezionare, un altro utente in Microsoft Teams.
-- Un utente può visualizzare un altro utente, ma non può inviare messaggi a tale altro utente in Microsoft Teams.
+- Un utente può visualizzare un altro utente, ma non può inviare messaggi a quell'altro utente in Microsoft Teams.
 
 ### <a name="what-to-do"></a>Soluzione
 
@@ -91,7 +91,7 @@ Verificare che gli utenti in questione siano inclusi in un criterio di barriera 
 
     |**Sintassi** _|_ *Esempio**|
     |:----------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> È possibile utilizzare qualsiasi valore che identifichi ogni utente in modo univoco, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan* e *alexw* per *Alex*. |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> È possibile utilizzare qualsiasi valore che identifichi ogni utente in modo univoco, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In questo esempio si fa riferimento a due account utente in Office 365: *meganb* per *Megan* e *alexw* per *Alex*. |
 
     > [!TIP]
     > È inoltre possibile utilizzare questo cmdlet per un singolo utente: `Get-InformationBarrierRecipientStatus -Identity <value>`
@@ -102,7 +102,7 @@ Verificare che gli utenti in questione siano inclusi in un criterio di barriera 
 
     |**Risultati**|**Cosa fare dopo**|
     |:----------|:------------------|
-    | Nessun segmento elencato per gli utenti selezionati | Eseguire una delle operazioni seguenti:<br/>- Assegnare gli utenti a un segmento esistente modificando i profili utente in Azure Active Directory. Vedere [Configurare le proprietà dell'account utente con PowerShell di Office 365.](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- Definire un segmento utilizzando un [attributo supportato per le barriere di informazioni.](information-barriers-attributes.md) Quindi, definisci [un nuovo criterio o](information-barriers-policies.md#part-2-define-information-barrier-policies) modifica un criterio [esistente](information-barriers-edit-segments-policies.md#edit-a-policy) per includere tale segmento. |
+    | Nessun segmento elencato per gli utenti selezionati | Eseguire una delle operazioni seguenti:<br/>- Assegnare gli utenti a un segmento esistente modificando i profili utente in Azure Active Directory. Vedere [Configure user account properties with Office 365 PowerShell.](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- Definire un segmento utilizzando un [attributo supportato per le barriere di informazioni.](information-barriers-attributes.md) Quindi, definisci [un nuovo criterio o](information-barriers-policies.md#part-2-define-information-barrier-policies) modifica un criterio [esistente](information-barriers-edit-segments-policies.md#edit-a-policy) per includere tale segmento. |
     | I segmenti sono elencati, ma non vengono assegnati criteri di barriera delle informazioni a tali segmenti | Eseguire una delle operazioni seguenti:<br/>- [Definire un nuovo criterio di barriera delle](information-barriers-policies.md#part-2-define-information-barrier-policies) informazioni per ogni segmento in questione <br/>- [Modificare un criterio di barriera delle informazioni](information-barriers-edit-segments-policies.md#edit-a-policy) esistente per assegnarlo al segmento corretto |
     | I segmenti sono elencati e ognuno è incluso in un criterio di barriera delle informazioni | - Eseguire il `Get-InformationBarrierPolicy` cmdlet per verificare che i criteri di barriera delle informazioni siano attivi<br/>- Eseguire il `Get-InformationBarrierPoliciesApplicationStatus` cmdlet per verificare che i criteri siano applicati<br/>- Eseguire il `Start-InformationBarrierPoliciesApplication` cmdlet per applicare tutti i criteri di barriera delle informazioni attive |
 
@@ -112,18 +112,18 @@ In questo caso, i criteri di barriera delle informazioni sono in vigore e a uno 
 
 ### <a name="what-to-do"></a>Soluzione
 
-I criteri di barriera delle informazioni vengono assegnati a segmenti di utenti. I segmenti vengono definiti utilizzando determinati attributi [nei profili degli account utente.](information-barriers-attributes.md) Se è necessario rimuovere un criterio da un singolo utente, valutare la possibilità di modificare il profilo dell'utente in Azure Active Directory in modo che l'utente non sia più incluso in un segmento interessato da ostacoli alle informazioni.
+I criteri di barriera delle informazioni vengono assegnati a segmenti di utenti. I segmenti vengono definiti utilizzando determinati attributi [nei profili degli account utente.](information-barriers-attributes.md) Se devi rimuovere un criterio da un singolo utente, valuta la possibilità di modificare il profilo dell'utente in Azure Active Directory in modo che l'utente non sia più incluso in un segmento interessato da barriere di informazioni.
 
 1. Utilizzare il cmdlet **Get-InformationBarrierRecipientStatus** con i parametri Identity. Questo cmdlet restituisce informazioni sugli utenti, ad esempio i valori degli attributi e gli eventuali criteri di barriera delle informazioni applicati.
 
     |**Sintassi**|**Esempio**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> È possibile utilizzare qualsiasi valore che identifichi ogni utente in modo univoco, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan* e *alexw* per *Alex*.          |
-    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> È possibile utilizzare qualsiasi valore che identifichi l'utente in modo univoco, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID.|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> In questo esempio, si fa riferimento a un singolo account in Office 365: *jeanp*. |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> È possibile utilizzare qualsiasi valore che identifichi ogni utente in modo univoco, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In questo esempio si fa riferimento a due account utente in Office 365: *meganb* per *Megan* e *alexw* per *Alex*.          |
+    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> È possibile utilizzare qualsiasi valore che identifichi l'utente in modo univoco, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID.|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> In questo esempio si fa riferimento a un singolo account in Office 365: *jeanp*. |
 
 2. Esaminare i risultati per verificare se sono assegnati criteri di barriera delle informazioni e a quali segmenti appartengono gli utenti.
 
-3. Per rimuovere un utente da un segmento interessato da barriere di informazioni, aggiornare le informazioni [del profilo dell'utente in Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+3. Per rimuovere un utente da un segmento interessato da barriere di informazioni, aggiornare le informazioni del profilo [dell'utente in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 4. Attendere circa 30 minuti perché FwdSync si verifichi. In caso contrario, eseguire il `Start-InformationBarrierPoliciesApplication` cmdlet per applicare tutti i criteri di protezione delle informazioni attivi.
 
@@ -157,15 +157,15 @@ In questo caso, sono stati definiti segmenti, definiti criteri di barriera delle
 
 ### <a name="what-to-do"></a>Soluzione
 
-Verificare che nell'organizzazione non siano presenti criteri [della rubrica di Exchange.](/exchange/address-books/address-book-policies/address-book-policies) Tali criteri impediranno l'applicazione dei criteri di barriera delle informazioni.
+Assicurarsi che l'organizzazione non abbia Exchange [criteri](/exchange/address-books/address-book-policies/address-book-policies) della rubrica. Tali criteri impediranno l'applicazione dei criteri di barriera delle informazioni.
 
-1. Connettersi [a PowerShell di Exchange Online.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Connessione a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Eseguire il cmdlet [Get-AddressBookPolicy](/powershell/module/exchange/get-addressbookpolicy) ed esaminare i risultati.
 
     |**Risultati**|**Passaggio successivo**|
     |:----------|:------------|
-    | I criteri della rubrica di Exchange sono elencati | [Rimuovere i criteri rubrica](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | Exchange sono elencati i criteri della rubrica | [Rimuovere i criteri rubrica](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | Non esistono criteri della rubrica |Esaminare i log di controllo per scoprire perché l'applicazione dei criteri non riesce |
 
 3. [Visualizzare lo stato di account utente, segmenti, criteri o applicazione di criteri.](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)
@@ -211,5 +211,5 @@ Ad esempio:
 
 ## <a name="resources"></a>Risorse
 
-- [Definire i criteri per le barriere alle informazioni in Microsoft Teams](information-barriers-policies.md)
+- [Definire i criteri per le barriere in Microsoft Teams](information-barriers-policies.md)
 - [Barriere informative](information-barriers.md)

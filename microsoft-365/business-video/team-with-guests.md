@@ -33,9 +33,9 @@ ms.locfileid: "51578592"
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-È possibile utilizzare Microsoft Teams per collaborare a un progetto con dipendenti e persone esterne all'azienda, come i clienti.
+Puoi usare Microsoft Teams per collaborare a un progetto con dipendenti e persone esterne all'azienda, come i tuoi clienti.
 
-1. In Teams scegliere **Teams** nel riquadro di spostamento sinistro e quindi **Creare team.**
+1. In Teams, scegliere **Teams** nella barra di spostamento sinistra e quindi scegliere **Crea team.**
 2. Nella casella **Crea team immettere il** nome di un team, fornire una breve descrizione, scegliere un'impostazione di privacy e quindi scegliere **Avanti.**
 3. Nella casella  **Aggiungi membri**  immettere i nomi degli altri dipendenti dell'organizzazione. Per gli utenti guest esterni, immettere il proprio indirizzo di posta elettronica.
 
@@ -44,4 +44,4 @@ ms.locfileid: "51578592"
 1. Scegliere  **Aggiungi** e quindi  **Chiudi**.
 2. Nella parte inferiore della pagina immettere un breve messaggio di benvenuto per il nuovo team e quindi scegliere **Invia** :::image type="icon" source="../media/teams-send-icon.png" border="false"::: .   
 
-Il client riceverà un invito tramite posta elettronica da Teams, che li informerà della necessità di un account Microsoft gratuito per entrare a far parte del team. Possono creare un account usando l'indirizzo di posta elettronica esistente seguendo le istruzioni fornite. Possono quindi usare Teams sul Web o installare l'app Teams nel computer.
+Il client riceverà un invito tramite posta elettronica da Teams, che informerà di avere bisogno di un account Microsoft gratuito per partecipare al team. Possono creare un account usando l'indirizzo di posta elettronica esistente seguendo le istruzioni fornite. Possono quindi usare Teams sul Web o installare l'app Teams nel computer.

@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Informazioni su come caricare dispositivi con AutoPilot in Microsoft 365 Business Premium. Puoi assegnare un profilo a un dispositivo o a un gruppo di dispositivi.
+description: Scopri come caricare i dispositivi usando AutoPilot in Microsoft 365 Business Premium. Puoi assegnare un profilo a un dispositivo o a un gruppo di dispositivi.
 ms.openlocfilehash: 506ff44e3cb6656b19174e82688b5af141ea2b79
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -41,11 +41,11 @@ Puoi usare la [guida dettagliata](add-autopilot-devices-and-profile.md) per cari
   
 I dispositivi devono soddisfare questi requisiti:
   
-- Windows 10, versione 1703 o successiva
+- Windows 10 versione 1703 o successiva
     
-- Nuovi dispositivi che non hanno mai visto l'esperienza di Windows
+- Nuovi dispositivi che non sono stati Windows'esperienza out-of-box
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Dispositivi** \> **AutoPilot.**
+1. Nell'Microsoft 365 di amministrazione scegliere **Dispositivi** \> **AutoPilot.**
   
 2. Nella pagina **AutoPilot** scegliere la **scheda Dispositivi** \> **Aggiungi dispositivi.**
     
@@ -57,7 +57,7 @@ I dispositivi devono soddisfare questi requisiti:
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>Assegnare un profilo a un dispositivo o a un gruppo di dispositivi
 
-1. Nella pagina **Prepara Windows** scegliere la **scheda Dispositivi** e selezionare la casella di controllo accanto a uno o più dispositivi. 
+1. Nella pagina **Prepara Windows** scegliere **la** scheda Dispositivi e selezionare la casella di controllo accanto a uno o più dispositivi. 
     
 2. Nel pannello **Dispositivo** selezionare un profilo dall'elenco a discesa **Profilo assegnato**. 
     

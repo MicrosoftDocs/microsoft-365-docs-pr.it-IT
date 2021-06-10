@@ -32,7 +32,7 @@ ms.locfileid: "52245481"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)

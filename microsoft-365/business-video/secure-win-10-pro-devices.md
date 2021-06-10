@@ -1,5 +1,5 @@
 ---
-title: Gestire i criteri dei dispositivi Windows 10 Pro con Microsoft 365 Business Premium
+title: Gestire Windows 10 Pro criteri dei dispositivi con Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Scopri come gestire i criteri dei dispositivi Windows 10 Pro con Microsoft 365 Business Premium.
+description: Scopri come gestire i criteri Windows 10 Pro dispositivo con Microsoft 365 Business Premium.
 ms.openlocfilehash: 0f7cfff227e1ab4ea992414b513e341adbd9ef22
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578688"
 ---
-# <a name="manage-windows-10-pro-device-policies"></a>Gestire i criteri dei dispositivi Windows 10 Pro
+# <a name="manage-windows-10-pro-device-policies"></a>Gestire i criteri Windows 10 Pro dispositivo
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSL?autoplay=false]
 
@@ -38,10 +38,10 @@ Puoi usare Microsoft 365 Business per assicurarti che Windows Defender Antivirus
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
 1. In **Criteri** scegliere Aggiungi criterio.
-1. Nel riquadro **Aggiungi criterio** immetti un nome in **Nome** criterio e quindi seleziona Configurazione dispositivo **Windows 10** in **Tipo di criterio.**
-1. Scegli **Proteggi i dispositivi Windows 10** per visualizzare le impostazioni secondarie.
-1. Assicurati che La **protezione dei** PC da virus e altre minacce tramite Windows Defender Antivirus e Mantenere automaticamente aggiornati i dispositivi Windows **10** sia attivata.
-1. In **Chi otterrà queste impostazioni?**, tutti gli utenti  sono selezionati per impostazione predefinita, ma è possibile scegliere Cambia per selezionare i gruppi di sicurezza creati.
+1. Nel riquadro **Aggiungi criterio** immetti un nome in **Nome** criterio e quindi seleziona Windows 10 **Configurazione** dispositivo in Tipo **di criterio.**
+1. Scegliere **Protezione Windows 10 dispositivi** per visualizzare le impostazioni secondarie.
+1. Assicurati che l'opzione Aiuta a proteggere i PC da  **virus** e altre minacce usando Windows Defender Antivirus e Mantieni automaticamente aggiornati i dispositivi Windows 10 siano attivati.
+1. In **Who queste impostazioni?**, tutti gli utenti sono selezionati per  impostazione predefinita, ma è possibile scegliere Cambia per selezionare i gruppi di sicurezza creati.
 1. Per completare la creazione del criterio, scegliere **Aggiungi**.
 1. Nella pagina **Aggiungi criterio** scegliere **Chiudi**.
 1. Nella home page dell'interfaccia di amministrazione verificare  che il nuovo criterio sia stato aggiunto scegliendo Criteri ed esaminando i criteri nella **pagina** Criteri.

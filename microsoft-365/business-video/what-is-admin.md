@@ -27,11 +27,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578556"
 ---
-# <a name="what-is-a-microsoft-365-admin"></a>Che cos'è un amministratore di Microsoft 365?
+# <a name="what-is-a-microsoft-365-admin"></a>Che cos'è un Microsoft 365 amministratore?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0?autoplay=false]
 
-In ogni abbonamento a Microsoft 365 Business deve essere presente almeno un account amministratore. L'amministratore gestisce il servizio, gli account utente e i dispositivi. Se sei l'utente che ha effettuato l'iscrizione all'abbonamento, sei l'amministratore globale dell'abbonamento. Puoi anche diventare un amministratore se un altro amministratore ne fa uno.
+In ogni Microsoft 365 Business, deve essere presente almeno un account amministratore. L'amministratore gestisce il servizio, gli account utente e i dispositivi. Se sei l'utente che ha effettuato l'iscrizione all'abbonamento, sei l'amministratore globale dell'abbonamento. Puoi anche diventare un amministratore se un altro amministratore ne fa uno.
 
 Anche se è sempre necessario almeno un ruolo di amministratore per la sottoscrizione, può essere un rischio per la sicurezza se l'account amministratore viene compromesso da una parte esterna. È consigliabile assegnare il ruolo di amministratore solo a coloro che ne hanno realmente bisogno e assegnare il ruolo utente alla maggior parte delle persone.
 
@@ -41,8 +41,8 @@ Anche se è sempre necessario almeno un ruolo di amministratore per la sottoscri
 
 Ecco come modificare un ruolo utente in un ruolo di amministratore:
 
-1. Dopo l'accesso a Microsoft 365, seleziona l'icona di avvio delle app. Se viene visualizzato il pulsante Amministratore, sei un amministratore.
-1. Selezionare **Amministratore** per accedere all'interfaccia di amministrazione di Microsoft 365.
+1. Dopo l'accesso Microsoft 365, seleziona l'icona di avvio delle app. Se viene visualizzato il pulsante Amministratore, sei un amministratore.
+1. Seleziona **Amministratore** per accedere all'Microsoft 365 di amministrazione.
 1. Nel riquadro di spostamento sinistro selezionare **Utenti**, quindi **Utenti attivi**.
 1. Selezionare la persona che si desidera rendere un amministratore. I dettagli dell'utente vengono visualizzati nella finestra di dialogo a destra.
 1. Scegliere **Gestisci ruoli**.
@@ -53,8 +53,8 @@ Ecco come modificare un ruolo utente in un ruolo di amministratore:
 
 Puoi anche creare un account amministratore dedicato per una persona o un servizio IT:
 
-1. Dopo l'accesso a Microsoft 365, seleziona l'icona di avvio delle app.
-1. Selezionare **Amministratore** per accedere all'interfaccia di amministrazione di Microsoft 365.
+1. Dopo l'accesso Microsoft 365, seleziona l'icona di avvio delle app.
+1. Seleziona **Amministratore** per accedere all'Microsoft 365 di amministrazione.
 1. Nel riquadro di spostamento sinistro selezionare **Utenti**, quindi **Utenti attivi**.
 1. Selezionare **Aggiungi utente**.
 1. Immettere nome e cognome  **dell'utente,** **Nome visualizzato** e **Nome utente** e quindi selezionare **Avanti.**

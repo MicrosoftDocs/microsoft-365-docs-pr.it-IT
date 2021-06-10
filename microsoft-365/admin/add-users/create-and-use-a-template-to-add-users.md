@@ -44,7 +44,7 @@ Quando si crea un modello dopo l'aggiunta di un utente, nel modello vengono salv
 - Scelte di licenza
 - Scelte dell'applicazione
 - Ruolo
-- La maggior parte delle informazioni del profilo, ad esempio **Profilo processo,** **Reparto,** **Office,** **Telefono di Office** e Indirizzo **civico** 
+- La maggior parte delle informazioni del profilo, ad esempio **Profilo** processo, **Reparto,** **Office,** **Office telefono** e **indirizzo** 
 
 Le informazioni seguenti sono specifiche dell'utente e non vengono salvate nel modello:
 

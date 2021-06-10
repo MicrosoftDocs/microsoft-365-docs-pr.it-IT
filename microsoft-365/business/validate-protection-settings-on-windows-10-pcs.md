@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Convalidare le impostazioni di protezione delle app di Microsoft 365 Business Premium nei dispositivi Windows 10 e verificare che gli utenti non siano in grado di copiare i dati aziendali in file personali o app non gestite.
+description: Convalida Microsoft 365 Business Premium impostazioni di protezione delle app nei dispositivi Windows 10 e verifica che gli utenti non siano in grado di copiare i dati aziendali in file personali o app non gestite.
 ms.openlocfilehash: e319ffa5149f055b5de45078facc8899acffc223
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,11 +34,11 @@ ms.locfileid: "51579863"
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>Verificare che gli utenti non possano copiare i dati aziendali in file personali sui dispositivi aziendali
 
-Dopo aver [configurato i criteri di protezione delle app](protection-settings-for-windows-10-devices.md), possono essere necessarie alcune ore prima che i criteri siano applicati ai dispositivi degli utenti. Se è  stata attivata l'impostazione Impedisci agli utenti di copiare i dati aziendali nei file personali e di forzarli a salvare i file di lavoro in **OneDrive for Business** per i dispositivi di proprietà dell'azienda, è possibile controllare questa opzione nel dispositivo dell'utente dopo essersi connessi ad Azure AD e aver eseguito l'accesso. 
+Dopo aver [configurato i criteri di protezione delle app](protection-settings-for-windows-10-devices.md), possono essere necessarie alcune ore prima che i criteri siano applicati ai dispositivi degli utenti. Se è  stata attivata l'impostazione Impedisci agli utenti di copiare i dati aziendali nei file personali e di forzarli a salvare i file di lavoro **in OneDrive for Business** per i dispositivi di proprietà dell'azienda, è possibile controllare questa impostazione nel dispositivo dell'utente dopo essersi connessi ad Azure AD e aver eseguito l'accesso. 
   
  **Verificare le impostazioni di connessione**
   
-1. Dopo l'accesso con le credenziali di Microsoft 365 Business Premium e la connessione ad Azure AD come descritto in Configurare i dispositivi Windows per gli utenti di [Microsoft 365 Business Premium,](set-up-windows-devices.md)passare a Impostazioni di **Windows** Account Accesso all'azienda o all'istituto di \>  \> **istruzione.** Scegliere **Connesso ad Azure \<tenant name\> AD** e quindi **Info.**
+1. Dopo l'accesso con le credenziali di Microsoft 365 Business Premium e la connessione ad Azure AD, come descritto [in Configurare](set-up-windows-devices.md)i dispositivi Windows per gli utenti di Microsoft 365 Business Premium , passare a **Windows Impostazioni** Account Accesso all'ambiente di lavoro o all'istituto di \>  \> **istruzione.** Scegliere **Connesso ad Azure \<tenant name\> AD** e quindi **Info.**
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -64,11 +64,11 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
 
  **Verificare le impostazioni di connessione**
   
-1. Nel dispositivo personale di Windows 10 in cui hai effettuato l'accesso come utente locale, vai a Impostazioni di **Windows** e tocca o fai clic **su** Account Accedi all'ambiente di lavoro o \> **all'istituto di istruzione.**
+1. Nel dispositivo Windows 10 in cui si è effettuato l'accesso come utente locale, passare  a **Windows Impostazioni** e toccare o fare clic su Account Accedere all'istituto di istruzione o \> **all'istituto di istruzione.**
     
 2. Scegliere **Connetti** in **Accedi all'azienda o all'istituto di istruzione**.
     
-3. Immetti le credenziali di Microsoft 365 Business Premium nella finestra di dialogo Configura un account aziendale o **dell'istituto di istruzione** \> **Accedi.**
+3. Immetti le credenziali Microsoft 365 Business Premium nella finestra di dialogo Configura un account aziendale **o dell'istituto di istruzione** \> **Accedi.**
     
 4. Nella pagina **Accedi all'azienda o all'istituto di istruzione** scegliere **Account aziendale o dell'istituto di istruzione**, quindi scegliere **Informazioni**.
     
@@ -80,7 +80,7 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
   
  **Verificare che non sia possibile incollare i dati aziendali in un'app non gestita**
   
-1. Aprire Outlook 2016 e aggiungere l'account Microsoft 365 Business Premium, se necessario, e accedere con le credenziali di Microsoft 365 Business Premium.
+1. Apri Outlook 2016 e aggiungi il tuo account Microsoft 365 Business Premium, se necessario, e accedi con le tue Microsoft 365 Business Premium credenziali.
     
 2. Aprire un messaggio di posta elettronica e copiare parte del contenuto del messaggio.
     

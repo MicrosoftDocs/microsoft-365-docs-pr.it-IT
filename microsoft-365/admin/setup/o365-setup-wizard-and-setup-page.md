@@ -34,31 +34,31 @@ Microsoft 365 offre due esperienze di installazione:
 - Configurazione iniziale tramite l'installazione guidata
 - Configurazione continua e avanzata tramite la **pagina Configurazione**
 
-La configurazione guidata fornisce una procedura guidata per configurare la configurazione di base di Microsoft 365. Dopo aver completato la configurazione iniziale, è possibile passare alla pagina **Configurazione** per completare la configurazione e la configurazione dei servizi disponibili con le sottoscrizioni.
+L'installazione guidata fornisce una procedura dettagliata guidata per configurare la configurazione Microsoft 365 di base. Dopo aver completato la configurazione iniziale, è possibile passare alla pagina **Configurazione** per completare la configurazione e la configurazione dei servizi disponibili con le sottoscrizioni.
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Utilizzare la configurazione guidata per completare le attività di installazione iniziale
 
 Per configurare l'account, passare all'interfaccia di [amministrazione,](https://go.microsoft.com/fwlink/p/?linkid=2024339)selezionare **Installazione** nel riquadro di spostamento sinistro e quindi **selezionare** Configurazione guidata nella **pagina Configurazione.**
 
-![Avviare la configurazione guidata di Microsoft 365 Apps for business](../../media/o365b-guided-setup.png)
+![Avviare la configurazione Microsoft 365 Apps for business guidata](../../media/o365b-guided-setup.png)
 
 L'installazione guidata consente di eseguire i passaggi seguenti:
 
-1. Installare le app di Microsoft 365 nel computer.
+1. Installare le Microsoft 365 app nel computer.
 
 2. Scegliere e verificare il dominio, ad esempio contoso.com.
 
-3. Aggiungi nuovi utenti e assegna loro le licenze in modo che possano scaricare e installare le app di Microsoft 365.
+3. Aggiungi nuovi utenti e assegna loro licenze in modo che possano scaricare e installare Microsoft 365 app.
 
-4. Connettere il dominio.
+4. Connessione dominio.
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Utilizzare la pagina Installazione per completare e gestire la configurazione
 
-Per accedere alla **pagina Installazione** nell'interfaccia [di amministrazione,](https://go.microsoft.com/fwlink/p/?linkid=2024339)selezionare **Installazione** nel riquadro di spostamento. In base ai prodotti acquistati, le funzionalità che hai configurato e il ruolo di amministratore, le attività e le informazioni correlate da Microsoft 365 sono eserte qui.
+Per accedere alla **pagina Installazione** nell'interfaccia [di amministrazione,](https://go.microsoft.com/fwlink/p/?linkid=2024339)selezionare **Installazione** nel riquadro di spostamento. In base ai prodotti acquistati, alle funzionalità che hai configurato e al tuo ruolo di amministratore, alle attività e alle informazioni correlate Microsoft 365 vengono visualizzate qui.
 
 Verrà visualizzato l'elenco completo delle attività di installazione disposte in categorie logiche, incluse quelle completate nella configurazione guidata.
 
-![Pagina installazione di Microsoft 365 per le aziende](../../media/o365b-setup-page.png)
+![Microsoft 365 configurazione di Microsoft 365 per le aziende](../../media/o365b-setup-page.png)
 
 Scegliere  Visualizza per qualsiasi attività per ottenere informazioni dettagliate, ad esempio la descrizione dell'attività, l'impatto dell'utente, i prerequisiti, l'impegno per l'implementazione e le statistiche di sicurezza e adozione per comprendere le conseguenze e l'impatto prima di procedere.
 

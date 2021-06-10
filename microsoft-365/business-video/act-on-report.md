@@ -32,15 +32,15 @@ ms.locfileid: "51579014"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 
-Scopri come i dipendenti usano i servizi di Microsoft 365, ad esempio la posta elettronica o OneDrive, ed eseguire un'azione.
+Scopri come i dipendenti usano Microsoft 365 servizi di posta elettronica, ad esempio posta elettronica o OneDrive, ed eseguire un'azione.
 
 [Nell'interfaccia di amministrazione](https://admin.microsoft.com)è possibile visualizzare tutti i report disponibili.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
 1. Passare a **Report** e quindi **a Utilizzo.** Per trovare i dettagli di qualsiasi report, selezionarne uno. Il report Utenti attivi mostra quali servizi vengono utilizzati maggiormente dagli utenti dell'azienda.
-1. Ad esempio, esaminiamo il report di OneDrive. Qui possiamo vedere quante persone hanno un account, puoi anche visualizzare il numero totale e i file attivi, nonché l'archiviazione usata. Per visualizzare tutti gli altri report, passare al menu a discesa.
-1. Qui possiamo dare un'occhiata al report di utilizzo dell'app di posta elettronica e vedere quali metodi usano di più i dipendenti per accedere alla posta elettronica. È inoltre possibile visualizzare informazioni specifiche di un singolo utente, ma i dettagli sono nascosti per impostazione predefinita. Per visualizzare i dettagli dei singoli utenti, passare a **Impostazioni** e quindi servizi **& componenti aggiuntivi.**
+1. Ad esempio, esaminiamo il report OneDrive. Qui possiamo vedere quante persone hanno un account, puoi anche visualizzare il numero totale e i file attivi, nonché l'archiviazione usata. Per visualizzare tutti gli altri report, passare al menu a discesa.
+1. Qui possiamo dare un'occhiata al report di utilizzo dell'app di posta elettronica e vedere quali metodi usano di più i dipendenti per accedere alla posta elettronica. È inoltre possibile visualizzare informazioni specifiche di un singolo utente, ma i dettagli sono nascosti per impostazione predefinita. Per visualizzare i dettagli dei singoli utenti, passare a **Impostazioni** e quindi servizi **& componenti aggiuntivi**.
 1. Nel riquadro del report è possibile attivare l'identificatore anonimo. Chiudiamo ora il pannello e torniamo a **Report,** **Utilizzo** e Attività di **posta elettronica.** Qui possiamo vedere le informazioni specifiche di un individuo.
 
     Tenere presente che, in caso di problemi, è sempre possibile tornare alla Guida che fornisce informazioni sul report specifico visualizzato.

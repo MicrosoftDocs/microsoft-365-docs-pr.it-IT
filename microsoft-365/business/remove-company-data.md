@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: Scopri come usare Microsoft 365 per le aziende per rimuovere i dati aziendali che gli utenti hanno nei propri dispositivi o PC Windows.
+description: Scopri come usare Microsoft 365 per le aziende per rimuovere i dati aziendali che gli utenti hanno nei propri dispositivi o Windows PC.
 ms.openlocfilehash: 2e1af384d83937d65fd5c8ae655d228df48422cd
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,7 +37,7 @@ Questo articolo si applica a Microsoft 365 Business Premium.
 
 ## <a name="remove-company-data"></a>Rimuovere i dati aziendali
 
-Puoi usare Microsoft 365 per le aziende per rimuovere [](app-protection-settings-for-android-and-ios.md) i dati aziendali che gli utenti hanno nei propri dispositivi o PC [Windows](protection-settings-for-windows-10-devices.md) protetti da Microsoft 365. **Se si rimuovono i dati aziendali da un dispositivo, non è più possibile ripristinarli**. 
+Puoi usare Microsoft 365 per le aziende per rimuovere i dati [](app-protection-settings-for-android-and-ios.md) aziendali che gli utenti hanno nei propri dispositivi o Windows [PC](protection-settings-for-windows-10-devices.md) protetti da Microsoft 365. **Se si rimuovono i dati aziendali da un dispositivo, non è più possibile ripristinarli**. 
   
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     

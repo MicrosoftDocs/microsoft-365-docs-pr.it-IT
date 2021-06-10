@@ -32,7 +32,7 @@ ms.locfileid: "51578928"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
-Quando un dipendente lascia l'azienda, è necessario rimuoverlo da Microsoft 365 per le aziende. Prima di eseguire questa operazione, è consigliabile impedire loro di accedere ai file aziendali, conservare i documenti creati ed eseguire diverse altre attività di amministrazione associate alla rimozione di un utente.
+Quando un dipendente lascia l'azienda, dovrai rimuoverlo da Microsoft 365 per le aziende. Prima di eseguire questa operazione, è consigliabile impedire loro di accedere ai file aziendali, conservare i documenti creati ed eseguire diverse altre attività di amministrazione associate alla rimozione di un utente.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
@@ -40,7 +40,7 @@ Quando un dipendente lascia l'azienda, è necessario rimuoverlo da Microsoft 365
 1. Selezionare l'utente che si desidera rimuovere e quindi selezionare **Elimina utente.**
 1. Seleziona la casella per rimuovere la licenza e seleziona la casella per rimuovere gli alias di posta elettronica.
 1. Se l'utente dispone delle autorizzazioni delegate per la cassetta postale, è possibile rimuoverle qui.
-1. Seleziona la casella per concedere a un altro utente l'accesso a OneDrive dell'ex dipendente e cerca tale utente.
+1. Selezionare la casella per concedere a un altro utente l'accesso alla OneDrive dell'ex dipendente e cercare tale utente.
 1. Selezionarne il nome.
 1. Questo utente avrà ora 30 giorni per spostare i file in un nuovo percorso.
 1. Selezionare la casella per concedere a un altro utente l'accesso alla posta elettronica dell'ex dipendente e scegliere Seleziona un **utente e impostare le opzioni di posta elettronica.**

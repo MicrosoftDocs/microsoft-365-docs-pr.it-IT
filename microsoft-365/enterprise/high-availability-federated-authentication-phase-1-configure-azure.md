@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: "Riepilogo: configurare l'infrastruttura di Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Microsoft 365."
+description: "Riepilogo: configurare l'infrastruttura Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Microsoft 365."
 ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "50929109"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure
 
-In questa fase vengono creati i gruppi di risorse, la rete virtuale (VNet) e i set di disponibilità in Azure che ospiteranno le macchine virtuali nelle fasi 2, 3 e 4. È necessario completare questa fase prima di passare a [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Per tutte le fasi, vedere Distribuire l'autenticazione federata a disponibilità elevata per [Microsoft 365 in Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
+In questa fase vengono creati i gruppi di risorse, la rete virtuale (VNet) e i set di disponibilità in Azure che ospiteranno le macchine virtuali nelle fasi 2, 3 e 4. È necessario completare questa fase prima di passare a [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Per [tutte le fasi, vedere Deploy high availability federated authentication for Microsoft 365 in Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 È necessario eseguire il provisioning di Azure con questi componenti di base:
   
@@ -109,7 +109,7 @@ Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L
 Iniziamo ora a creare l'infrastruttura di Azure per ospitare l'autenticazione federata per Microsoft 365.
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione ad Azure PowerShell.](/powershell/azure/get-started-azureps) 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedi [Introduzione a Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 Avviare un prompt dei comandi di Azure PowerShell e accedere al proprio account.
   
@@ -118,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> Per generare blocchi di comandi di PowerShell pronti per l'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di lavoro di configurazione [di Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
+> Per generare blocchi di comandi di PowerShell pronti per l'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di [Microsoft Excel di configurazione.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
 
 Ottenere il nome della sottoscrizione utilizzando il comando seguente.
   
@@ -132,7 +132,7 @@ Per le versioni precedenti di Azure PowerShell, usa invece questo comando.
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Impostare la sottoscrizione di Azure. Sostituire tutto il testo racchiuso tra virgolette, \< and > inclusi i caratteri, con il nome corretto.
+Impostare la sottoscrizione di Azure. Sostituire tutto il testo racchiuso tra virgolette, compresi i caratteri \< and >, con il nome corretto.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -159,25 +159,25 @@ Compilare la tabella seguente per il set di nomi dei gruppi di risorse univoci.
 Creare i nuovi gruppi di risorse con questi comandi.
   
 ```powershell
-$locName="<an Azure location, such as West US>"
-$rgName="<Table R - Item 1 - Name column>"
+$locName="<an Azure location, such as West US>&quot;
+$rgName=&quot;<Table R - Item 1 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 2 - Name column>"
+$rgName=&quot;<Table R - Item 2 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 3 - Name column>"
+$rgName=&quot;<Table R - Item 3 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 4 - Name column>"
+$rgName=&quot;<Table R - Item 4 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 Successivamente, creare la rete virtuale di Azure e le relative subnet.
   
 ```powershell
-$rgName="<Table R - Item 4 - Resource group name column>"
-$locName="<your Azure location>"
-$vnetName="<Table V - Item 1 - Value column>"
-$vnetAddrPrefix="<Table V - Item 4 - Value column>"
-$dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
+$rgName=&quot;<Table R - Item 4 - Resource group name column>&quot;
+$locName=&quot;<your Azure location>&quot;
+$vnetName=&quot;<Table V - Item 1 - Value column>&quot;
+$vnetAddrPrefix=&quot;<Table V - Item 4 - Value column>&quot;
+$dnsServers=@( &quot;<Table D - Item 1 - DNS server IP address column>&quot;, &quot;<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
 $locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
@@ -300,9 +300,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 Questa è la configurazione risultante dal completamento corretto di questa fase.
   
-**Fase 1: Infrastruttura di Azure per l'autenticazione federata a disponibilità elevata per Microsoft 365**
+**Fase 1: infrastruttura di Azure per l'autenticazione federata a disponibilità elevata per Microsoft 365**
 
-![Fase 1 dell'autenticazione federata di Microsoft 365 a disponibilità elevata in Azure con l'infrastruttura di Azure](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Fase 1 dell'autenticazione federata Microsoft 365 a disponibilità elevata in Azure con l'infrastruttura di Azure](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 
@@ -312,8 +312,8 @@ Utilizzare [la fase 2: configurare i controller di](high-availability-federated-
 
 [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Identità federata per l'ambiente di sviluppo/test di Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Identità federata per l'Microsoft 365 di sviluppo/test](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Centro soluzioni e architetture di Microsoft 365](../solutions/index.yml)
 
-[Informazioni sull'identità di Microsoft 365 e Azure Active Directory](about-microsoft-365-identity.md)
+[Informazioni Microsoft 365 identità e Azure Active Directory](about-microsoft-365-identity.md)

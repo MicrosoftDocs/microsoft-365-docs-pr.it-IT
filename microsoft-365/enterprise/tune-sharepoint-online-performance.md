@@ -28,11 +28,11 @@ ms.locfileid: "50909335"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Ottimizzare le prestazioni di SharePoint Online
 
-Questo articolo contiene collegamenti ad altri articoli che illustrano come migliorare le prestazioni dei tempi di download delle pagine per SharePoint Online. Questo articolo fa parte del progetto Pianificazione della rete e ottimizzazione delle prestazioni [per Office 365.](./network-planning-and-performance.md)
+Questo articolo contiene collegamenti ad altri articoli che illustrano come migliorare le prestazioni dei tempi di download delle pagine per SharePoint Online. Questo articolo fa parte di Pianificazione della rete [e ottimizzazione delle](./network-planning-and-performance.md) prestazioni per Office 365 progetto.
 
-## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articoli sull'ottimizzazione delle prestazioni di SharePoint Online
+## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articoli sull'ottimizzazione delle SharePoint online
 
-Utilizzare questi articoli per ottimizzare le prestazioni di SharePoint Online.
+Utilizzare questi articoli per ottimizzare le prestazioni SharePoint Online.
   
 - [Introduzione all'ottimizzazione delle prestazioni per SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 
@@ -60,12 +60,12 @@ Utilizzare questi articoli per ottimizzare le prestazioni di SharePoint Online.
 
 - [Procedura: Evitare la limitazione o il blocco in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
-- [Ottimizzare gli iFrame nelle pagine del portale moderno di SharePoint Online](modern-iframe-optimization.md)
+- [Ottimizzare gli iFrame nelle pagine SharePoint portale moderno di SharePoint Online](modern-iframe-optimization.md)
 
-- [Ottimizzare le prestazioni delle web part nelle pagine del portale moderno di SharePoint Online](modern-web-part-optimization.md)
+- [Ottimizzare le prestazioni delle web part nelle SharePoint portale moderno di SharePoint Online](modern-web-part-optimization.md)
 
-- [Ottimizzare le chiamate di pagina nelle pagine del portale moderno di SharePoint Online](modern-page-call-optimization.md)
+- [Ottimizzare le chiamate di pagina SharePoint pagine del portale moderno di SharePoint Online](modern-page-call-optimization.md)
 
-- [Ottimizzare il peso delle pagine nelle pagine del portale moderno di SharePoint Online](modern-page-weight-optimization.md)
+- [Ottimizzare il peso delle pagine nelle SharePoint del portale moderno online](modern-page-weight-optimization.md)
 
-- [Ottimizzare le immagini nelle pagine del portale moderno di SharePoint Online](modern-image-optimization.md)
+- [Ottimizzare le immagini nelle SharePoint portale moderno di SharePoint Online](modern-image-optimization.md)

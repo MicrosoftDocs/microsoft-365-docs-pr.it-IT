@@ -544,7 +544,7 @@ Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necess
 
 - Per il Centro sicurezza & conformità, è necessario disporre di uno dei ruoli seguenti:
 
-  - Gestione organizzazione
+  - Gestione dell'organizzazione
   - Amministratore della sicurezza (può essere assegnato nell'Azure Active Directory di amministrazione ( <https://aad.portal.azure.com> )
   - Ruolo con autorizzazioni di lettura per la sicurezza
 

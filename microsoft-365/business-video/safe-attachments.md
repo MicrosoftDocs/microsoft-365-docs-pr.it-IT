@@ -32,7 +32,7 @@ ms.locfileid: "51578712"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
-Microsoft Defender per Office 365, in precedenza denominato Microsoft 365 ATP o Advanced Threat Protection, consente di proteggere l'azienda da file che contengono contenuti dannosi in Outlook, OneDrive, SharePoint e Teams.
+Microsoft Defender per Office 365 , in precedenza denominato Microsoft 365 ATP o Advanced Threat Protection, consente di proteggere l'azienda da file che contengono contenuti dannosi in Outlook, OneDrive, SharePoint e Teams.
 
 ## <a name="try-it"></a>Perché non provarlo?
 

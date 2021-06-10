@@ -25,7 +25,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Scopri come verificare che le impostazioni di protezione delle app di Microsoft 365 per le aziende siano effettive sui dispositivi Windows 10 degli utenti.
+description: Scopri come verificare che le impostazioni di Microsoft 365 per le app aziendali siano applicate ai dispositivi Windows 10 degli utenti.
 ms.openlocfilehash: fcb463fd98f692f7d4802689e0c03fe4e3e648a1
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -39,13 +39,13 @@ ms.locfileid: "51579843"
 
 Dopo aver [configurato i criteri per i dispositivi](protection-settings-for-windows-10-pcs.md), possono essere necessarie alcune ore prima che i criteri siano applicati ai dispositivi degli utenti. Per verificare che i criteri siano stati applicati, esaminare le diverse schermate delle impostazioni di Windows sui dispositivi degli utenti. Poiché gli utenti non saranno in grado di modificare le impostazioni di Windows Update e Windows Defender Antivirus nei dispositivi Windows 10, molte opzioni saranno disattivate.
   
-1. Vai a **Impostazioni Aggiorna** \> **&amp; sicurezza** Opzioni di \> **riavvio** di Windows Update e verifica che tutte le impostazioni siano in \>  grigio. 
+1. Vai **a** Impostazioni aggiorna la sicurezza Windows opzioni di riavvio dell'aggiornamento e verifica che tutte le impostazioni \> **&amp;** \>  \>  siano disattivate. 
     
     ![Tutte le opzioni di riavvio sono disattivate.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Vai a **Impostazioni** \> **Aggiorna &amp; sicurezza** \> **Opzioni avanzate di Windows Update** e verifica che tutte le impostazioni siano in \>  grigio. 
+2. Vai a **Impostazioni** aggiornamento della sicurezza Windows Opzioni avanzate di aggiornamento e verifica che tutte le impostazioni \> **&amp;** \>  \>  siano disattivate. 
     
-    ![Le opzioni degli aggiornamenti avanzati di Windows sono tutte disattivate.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Windows Le opzioni degli aggiornamenti avanzati sono tutte disattivate.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
@@ -61,7 +61,7 @@ Dopo aver [configurato i criteri per i dispositivi](protection-settings-for-wind
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Documentazione e risorse di Microsoft 365 per le aziende](./index.yml)
+[Microsoft 365 documentazione e risorse per le aziende](./index.yml)
   
 [Introduzione a Microsoft 365 per le aziende](microsoft-365-business-overview.md)
   

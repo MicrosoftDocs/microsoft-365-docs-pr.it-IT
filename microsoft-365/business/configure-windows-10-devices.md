@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Informazioni sulla configurazione dei criteri dei dispositivi per Windows 10 che si applicano a tutti gli utenti dell'organizzazione, garantendo che si connettano in modo sicuro.
+description: Informazioni sulla configurazione dei criteri dei dispositivi Windows 10 che si applicano a tutti gli utenti dell'organizzazione, garantendo che si connettano in modo sicuro.
 ms.openlocfilehash: c7d27b903734f9348471bb7765b88650caeed9d5
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,7 +37,7 @@ ms.locfileid: "51580275"
 ---
 # <a name="configure-windows-10-devices"></a>Configurare i dispositivi Windows 10
 
-Durante l'installazione, crei un criterio dispositivo per Windows 10 che si applica a tutti gli utenti dell'organizzazione. Quando un utente accede a un'app di Office nel dispositivo Windows 10 con l'account aziendale o dell'istituto di istruzione, le impostazioni configurate vengono applicate automaticamente per assicurarsi che l'utente si connetta in modo sicuro.
+Durante l'installazione, crei un criterio dispositivo per Windows 10 che si applica a tutti gli utenti dell'organizzazione. Quando un utente accede a un app Office nel dispositivo Windows 10 con l'account aziendale o dell'istituto di istruzione, le impostazioni configurate vengono applicate automaticamente per assicurarsi che l'utente si connetta in modo sicuro.
   
 È consigliabile accettare la configurazione predefinita durante l'installazione. Dopo l'installazione, è possibile creare altri criteri e impostarli come destinazione per gruppi specifici di utenti.
   

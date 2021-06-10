@@ -28,11 +28,11 @@ ms.locfileid: "51579171"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Controlli della privacy per il punteggio di produttività
 
-Il punteggio di produttività fornisce informazioni dettagliate sul percorso di trasformazione digitale dell'organizzazione attraverso l'uso di Microsoft 365 e le esperienze tecnologiche che la supportano.  Il punteggio dell'organizzazione riflette le misurazioni delle persone e dell'esperienza tecnologica e può essere confrontato con i benchmark di organizzazioni simili al tuo. Per ulteriori dettagli, vedi panoramica [del punteggio di produttività.](productivity-score.md)
+Il punteggio di produttività fornisce informazioni approfondite sul percorso di trasformazione digitale dell'organizzazione attraverso l'uso di Microsoft 365 e le esperienze tecnologiche che la supportano.  Il punteggio dell'organizzazione riflette le misurazioni delle persone e dell'esperienza tecnologica e può essere confrontato con i benchmark di organizzazioni simili al tuo. Per ulteriori dettagli, vedi panoramica [del punteggio di produttività.](productivity-score.md)
 
 La privacy è importante per Microsoft. Per informazioni su come proteggiamo la tua privacy, vedi [l'informativa sulla privacy di Microsoft.](https://privacy.microsoft.com/privacystatement) Il punteggio di produttività consente all'amministratore IT dell'organizzazione di accedere alle impostazioni di privacy per assicurarsi che le informazioni sul punteggio di produttività visualizzate siano utilizzabili, senza compromettere l'attendibilità dell'organizzazione in Microsoft.
 
-Nell'area esperienze utente, le metriche sono disponibili solo a livello di organizzazione. In quest'area viene illustrato come gli utenti usano Microsoft 365 esaminando le categorie di collaborazione dei contenuti, mobilità, riunioni, lavoro in team e comunicazione. Microsoft ti consente di utilizzare diversi livelli di controlli per soddisfare le tue esigenze di privacy interne.
+Nell'area esperienze utente, le metriche sono disponibili solo a livello di organizzazione. In quest'area viene illustrato il modo Microsoft 365 utenti esaminando le categorie di collaborazione dei contenuti, mobilità, riunioni, lavoro di team e comunicazione. Microsoft ti consente di utilizzare diversi livelli di controlli per soddisfare le tue esigenze di privacy interne.
 I controlli offrono:
 
 - Ruoli di amministratore flessibili per controllare chi può visualizzare le informazioni in Productivity Score.
@@ -51,7 +51,7 @@ Per visualizzare l'intero punteggio di produttività, è necessario essere uno d
 - Amministratore che legge i report
 - Amministratore che legge i report Riepilogo utilizzo
 
-Assegnare il ruolo Lettore report o Lettore report di riepilogo utilizzo a chiunque sia responsabile della gestione e dell'adozione delle modifiche, ma non necessariamente un amministratore IT. Questo ruolo consente loro di accedere all'esperienza completa del punteggio di produttività nell'interfaccia di amministrazione di Microsoft 365.
+Assegnare il ruolo Lettore report o Lettore report di riepilogo utilizzo a chiunque sia responsabile della gestione e dell'adozione delle modifiche, ma non necessariamente un amministratore IT. Questo ruolo consente loro di accedere all'esperienza completa del punteggio di produttività nell Microsoft 365 intervana di amministrazione.
 
 Il ruolo Lettore report di riepilogo utilizzo dovrà essere assegnato tramite i cmdlet di PowerShell finché non diventa assegnabile dall'interfaccia di amministrazione di Microsoft 365 più avanti nel 2020.
 
@@ -77,8 +77,8 @@ Puoi anche rifiutare esplicitamente l'area esperienze utente del punteggio di pr
 
 Per rifiutare esplicitamente:
 
-1. Nell'interfaccia di amministrazione, andare a **Impostazioni**   >   **organizzazione Impostazioni Punteggio** di  >  **produttività**.
-2. Deselezionare la casella Consenti l'uso dei dati di utilizzo di  **Microsoft 365** per le esperienze utente. Per informazioni su come modificare le impostazioni di condivisione dei dati per Endpoint Analytics in Gestione configurazione Intune, selezionare **Altre informazioni.**
+1. Nell'interfaccia di amministrazione, andare a **Impostazioni**   >   **org Impostazioni** produttività  >  **.**
+2. Deseleziona la casella Consenti l'uso Microsoft 365 dati di utilizzo per le **esperienze utente.** Per informazioni su come modificare le impostazioni di condivisione dei dati per Endpoint Analytics in Gestione configurazione Intune, selezionare **Altre informazioni.**
 3. Selezionare  **Salva**.
 
 :::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Pagina Impostazioni organizzazione in cui è possibile rifiutare esplicitamente le esperienze degli utenti.":::

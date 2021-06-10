@@ -89,7 +89,7 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **Di
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
-Procedere come segue:
+Eseguire la procedura seguente:
 
 1. In **Caricamento file** specificare il percorso del file CSV creato in precedenza.
 2. Seleziona un [profilo di](../service-description/profiles.md) dispositivo nel menu a discesa.
@@ -105,7 +105,7 @@ Puoi monitorare l'avanzamento della registrazione del dispositivo nella pagina p
 | Registrazione in sospeso | La registrazione non è ancora stata eseguita. Eseguire il check back in un secondo momento. |
 | Registrazione non riuscita | Impossibile completare la registrazione. Per ulteriori [informazioni, vedere Risoluzione dei](#troubleshooting-device-registration) problemi di registrazione dei dispositivi. |
 | Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente. Microsoft Managed Desktop le guiderà attraverso la prima configurazione, quindi non è necessario eseguire ulteriori operazioni di preparazione. |
-| Attivo | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Questo stato indica anche che usano regolarmente il dispositivo. |
+| Attivazione | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Questo stato indica anche che usano regolarmente il dispositivo. |
 | Inattivo | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Tuttavia, non hanno usato il dispositivo di recente (negli ultimi 7 giorni).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Risoluzione dei problemi di registrazione dei dispositivi

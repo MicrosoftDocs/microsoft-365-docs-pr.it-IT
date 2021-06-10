@@ -148,7 +148,7 @@ Se si fa **clic su Visualizza tabella** dettagli , le informazioni visualizzate 
 - **Visualizzare i dati per: DLP Exchange di trasporto**:
 
   - **Data**
-  - **Criteri DLP**
+  - **Criterio DLP**
   - **Regola di trasporto**
   - **Oggetto**
   - **Indirizzo del mittente**

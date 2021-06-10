@@ -1,5 +1,5 @@
 ---
-title: Ottenere Microsoft 365 Business Premium dal centro per i partner
+title: Ottenere Microsoft 365 Business Premium dal Centro per i partner
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Scopri le opzioni per l'acquisto di Microsoft 365 Business Premium e istruzioni dettagliate per acquistarlo dal Centro per i partner Microsoft.
+description: Scopri le opzioni per l'Microsoft 365 Business Premium e istruzioni dettagliate per acquistarlo dal Centro per i partner Microsoft.
 ms.openlocfilehash: 9e88229f22bdfbfc0b363b5bf56ed2def4db9b8c
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -38,21 +38,21 @@ ms.locfileid: "51580235"
 
 Se non si dispone di un partner e si desidera ottenere Microsoft 365 Business Premium, è possibile [acquistarlo qui.](https://www.microsoft.com/en-US/microsoft-365/business)
 
-Per istruzioni dettagliate, vedere Iscriversi a [Microsoft 365 Business Premium.](sign-up.md)
+Per [istruzioni dettagliate, Microsoft 365 Business Premium](sign-up.md) registrazione.
 
-Puoi anche accedere a un [Microsoft Store per](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) acquistare Microsoft 365 Business Premium e ottenere assistenza per la configurazione.
+Puoi anche andare a [](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) un'Microsoft Store per acquistare Microsoft 365 Business Premium e ottenere assistenza per la configurazione.
   
 ## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Ottenere Microsoft 365 Business Premium dal Centro per i partner Microsoft
 
 1. Accedere al [Centro per i partner Microsoft](https://go.microsoft.com/fwlink/p/?linkid=849910) con le credenziali create al momento della registrazione al programma Cloud Service Provider (CSP). 
     
-2. Nel dashboard del partner scegli **Clienti,** quindi seleziona il cliente o aggiungi un nuovo cliente prima di ottenere Microsoft 365 Business Premium.
+2. Nel dashboard del partner scegli **Clienti,** quindi seleziona il cliente o aggiungi un nuovo cliente prima di Microsoft 365 Business Premium.
     
     ![Nel Centro per i partner Microsoft aggiungi un cliente.](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. Nella pagina Sottoscrizione **del** cliente seleziona Aggiungi **sottoscrizione,** scegli l'opzione Piccole aziende in Catalogo e quindi **scegli Microsoft 365 Business Premium.**
+3. Nella pagina Sottoscrizione **del** cliente selezionare Aggiungi **sottoscrizione,** scegliere l'opzione Piccole imprese in Catalogo e quindi scegliere **Microsoft 365 Business Premium**.
     
-    Selezionare il numero di licenze necessarie (fino a 300). Se hai più di 300 utenti, vedi [Invece Microsoft 365 Enterprise.](../enterprise/index.yml) 
+    Selezionare il numero di licenze necessarie (fino a 300). Se si dispone di più di 300 utenti, vedere [Microsoft 365 Enterprise.](../enterprise/index.yml) 
     
     ![Nella pagina Nuovo abbonamento scegliere small business.](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   

@@ -38,7 +38,7 @@ I tipi di informazioni riservate sono classificatori basati su modelli. Rilevano
 - [Criteri di prevenzione della perdita di dati](dlp-learn-about-dlp.md) 
 - [Etichette di riservatezza](sensitivity-labels.md)
 - [Etichette di conservazione](retention.md)
-- [Gestione dei rischi insider](insider-risk-management.md)
+- [Gestione dei rischi Insider](insider-risk-management.md)
 - [Conformità delle comunicazioni](communication-compliance.md)
 - [Criteri di etichettatura automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -70,7 +70,7 @@ Scopri di più sui livelli di confidenza in questo video
 
 Otto cifre separate da spazi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Otto cifre
 - due cifre

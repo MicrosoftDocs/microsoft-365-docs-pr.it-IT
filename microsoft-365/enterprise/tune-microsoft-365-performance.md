@@ -26,12 +26,12 @@ ms.locfileid: "50909347"
 ---
 # <a name="tune-microsoft-365-performance"></a>Ottimizzare le prestazioni di Microsoft 365
 
-Questo articolo contiene collegamenti a corsi di formazione, blog, articoli e altre risorse che illustrano come migliorare le prestazioni di Microsoft 365.
+Questo articolo contiene collegamenti a corsi di formazione, blog, articoli e altre risorse che illustrano come migliorare le prestazioni dei Microsoft 365.
   
-Questo articolo fa parte del progetto Pianificazione della rete e ottimizzazione delle prestazioni [per Microsoft 365.](./network-planning-and-performance.md)
+Questo articolo fa parte di Pianificazione della rete [e ottimizzazione delle](./network-planning-and-performance.md) prestazioni per Microsoft 365 progetto.
    
-## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>Articoli sull'ottimizzazione delle prestazioni di Microsoft 365 e Office 365
+## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>Articoli sull'ottimizzazione delle Microsoft 365 e Office 365 prestazioni
 
-Dai un'occhiata ai 10 suggerimenti principali per ottimizzare e risolvere i problemi della connettività di rete di [Office 365](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) di Paul Collinge. 
+Dai un'occhiata ai [10](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) suggerimenti principali per ottimizzare e risolvere i problemi della Office 365 di rete di Paul Collinge. 
   
-Per informazioni sull'uso della conversione degli indirizzi di rete con Microsoft 365, vedere [Supporto NAT con Microsoft 365.](nat-support-with-microsoft-365.md)
+Per informazioni sull'utilizzo della conversione degli indirizzi di rete con Microsoft 365, vedere [Supporto NAT con Microsoft 365](nat-support-with-microsoft-365.md).

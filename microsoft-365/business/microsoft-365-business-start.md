@@ -41,7 +41,7 @@ ms.locfileid: "52706459"
 
 Microsoft 365 for business è un insieme completo di strumenti di produttività e collaborazione aziendali, ad esempio Outlook, Word, Excel e altri prodotti Office, sempre aggiornati. Puoi proteggere i file di lavoro in tutti i dispositivi iOS, Android e Windows 10 con una sicurezza di livello aziendale semplice da gestire.
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>Watch: What is Microsoft 365 Business Premium
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Video: che cos'è Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -65,7 +65,7 @@ Nel diagramma seguente viene descritto come gli amministratori configurano Micro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Configurare Microsoft 365 per le aziende (amministratore)

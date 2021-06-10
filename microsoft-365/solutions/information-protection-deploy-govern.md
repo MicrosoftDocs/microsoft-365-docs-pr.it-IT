@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Usare le etichette e i criteri di conservazione di Microsoft 365 per gestire i dati personali nell'ambiente Microsoft 365.
+description: Utilizzare Microsoft 365 etichette e criteri di conservazione per gestire i dati personali nell'Microsoft 365 locale.
 ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -54,7 +54,7 @@ Per la governance delle informazioni, le normative sulla privacy dei dati in gen
 - I dati personali devono essere protetti da trattamento, perdita o alterazione accidentali utilizzando metodi verificabili.
 - Qualsiasi azione eseguita sui dati personali deve essere documentata e tale documentazione deve essere conservata per un periodo specificato.
 
-Poiché le normative sulla privacy dei dati non sono molto specifiche per quanto riguarda la conservazione e l'eliminazione dei dati, è necessario prendere in considerazione altri fattori che potrebbero dettare linee guida sulla governance delle informazioni per le informazioni personali archiviate nell'abbonamento a Microsoft 365. Ecco alcuni esempi:
+Poiché le normative sulla privacy dei dati non sono molto specifiche per quanto riguarda la conservazione e l'eliminazione dei dati, è necessario prendere in considerazione altri fattori che potrebbero dettare linee guida sulla governance delle informazioni per le informazioni personali archiviate nella sottoscrizione Microsoft 365. Ecco alcuni esempi:
 
 - Eliminare gli account utente dopo 5 anni di inattività e richiede l'eliminazione o l'anonimizzazione dei dati dell'account dopo tale punto, richiedendo l'orchestrazione tra il sistema che archivia i dati e i flussi di lavoro correlati alle notifiche e ad altre attività di automazione.
 - Configurazione delle regole per mantenere i criteri e le procedure correlati al GDPR per tre anni dopo che sono state sostituite, in linea con la pianificazione di conservazione dell'organizzazione per i criteri e le procedure.
@@ -68,7 +68,7 @@ Indipendentemente dalle ragioni legali e aziendali per la conservazione o l'elim
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>Gestione della governance delle informazioni in Microsoft 365
 
-Per iniziare, vedere [Manage information governance](../compliance/manage-information-governance.md) and Data [Retention, Deletion and Destruction in Microsoft 365.](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)
+Per iniziare, vedere [Manage information governance](../compliance/manage-information-governance.md) and Data [Retention, Deletion and Destruction in Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Sviluppare pianificazioni di conservazione dei dati per contenitori, posta elettronica e contenuto
 
@@ -84,10 +84,10 @@ Tenere presente quanto segue:
 
 ### <a name="retention-policies-and-retention-labels"></a>Criteri di conservazione ed etichette di conservazione.
 
-Utilizzare [i criteri di conservazione e le etichette](../compliance/retention.md) di conservazione per conservare o eliminare il contenuto in Microsoft 365 che contiene o dovrebbe contenere dati personali.
+Utilizzare [i criteri di conservazione e le etichette](../compliance/retention.md) di conservazione per conservare o eliminare contenuto in Microsoft 365 che contiene o dovrebbe contenere dati personali.
 
 ### <a name="records-management"></a>Gestione dei record
 
-Utilizzare etichette di conservazione che dichiarano contenuto un record per implementare una soluzione di gestione [dei record](../compliance/records-management.md) per i dati in Microsoft 365.
+Utilizzare le etichette di conservazione che dichiarano il contenuto di un record per implementare una soluzione di gestione [dei record](../compliance/records-management.md) per i dati in Microsoft 365.
 
 Per la privacy dei dati, le richieste dell'oggetto dei dati (DSR) ricevute dall'ufficio legale sono dichiarate un record e possono essere archiviate a tempo indeterminato o smaltite con la prova, per rispettare le specifiche di conservazione delle attività normative.

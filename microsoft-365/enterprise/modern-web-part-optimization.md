@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Informazioni su come usare Diagnostica pagine per ottimizzare le prestazioni delle web part nelle pagine di siti moderni di SharePoint Online.
+description: Informazioni su come usare Diagnostica pagine per ottimizzare le prestazioni delle web part in SharePoint pagine moderne del sito online.
 ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

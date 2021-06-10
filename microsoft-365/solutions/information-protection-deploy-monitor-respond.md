@@ -26,9 +26,9 @@ ms.locfileid: "50928425"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Monitorare e rispondere agli incidenti di privacy dei dati nell'organizzazione
 
-Le funzionalità di Microsoft 365 sono disponibili per monitorare, analizzare e rispondere agli incidenti relativi alla privacy dei dati nell'organizzazione durante l'operatività delle funzionalità correlate. La presenza di processi, procedure e altra documentazione per ognuno di questi elementi può essere importante anche per dimostrare la conformità agli organismi normativi.
+Microsoft 365 sono disponibili funzionalità che consentono di monitorare, analizzare e rispondere agli incidenti relativi alla privacy dei dati nell'organizzazione durante l'operatività delle funzionalità correlate. La presenza di processi, procedure e altra documentazione per ognuno di questi elementi può essere importante anche per dimostrare la conformità agli organismi normativi.
 
-Ad esempio: 
+Questi includono: 
 
 - Criteri di controllo e avviso
 - Richieste dell'oggetto dei dati (tra cui ricerca contenuto ed eDiscovery)
@@ -72,7 +72,7 @@ Vedere questi articoli per configurare il controllo, il controllo avanzato e i c
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli soggetti dei dati per il GDPR e il CCPA
 
-Per informazioni su come rispondere a una richiesta DSR in Microsoft 365, vedere Richieste dell'soggetto dei dati per il GDPR e [il CCPA.](/compliance/regulatory/gdpr-dsr-Office365)
+Per informazioni sulla risposta a una richiesta DSR in Microsoft 365, vedere Richieste dell'soggetto dei dati per il GDPR e [il CCPA.](/compliance/regulatory/gdpr-dsr-Office365)
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Gestire gli utenti eliminati in Microsoft Stream
 
@@ -80,4 +80,4 @@ Per Microsoft Stream, quando un utente viene eliminato da Azure Active Directory
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Gestione dei rischi insider come strumento di indagine
 
-La gestione dei rischi insider [in Microsoft 365](../compliance/insider-risk-management.md) è una funzionalità dell'interfaccia di amministrazione di Microsoft Compliance che consente di ridurre al minimo i rischi interni consentendo di rilevare, analizzare e intraprendere azioni in caso di attività rischiose nell'organizzazione.
+[La gestione dei](../compliance/insider-risk-management.md) rischi insider in Microsoft 365 è una funzionalità dell'interfaccia di amministrazione di Conformità Microsoft che consente di ridurre al minimo i rischi interni consentendo di rilevare, analizzare e intervenire sulle attività rischiose nell'organizzazione.

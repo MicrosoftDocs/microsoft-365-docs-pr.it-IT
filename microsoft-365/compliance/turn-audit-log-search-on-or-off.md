@@ -71,7 +71,7 @@ Se il controllo non è attivato per l'organizzazione, è possibile attivarlo nel
 
 ### <a name="use-powershell-to-turn-on-auditing"></a>Usare PowerShell per attivare il controllo
 
-1. [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connettersi a PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Eseguire il comando di PowerShell seguente per attivare il controllo in Office 365.
 
@@ -85,7 +85,7 @@ Se il controllo non è attivato per l'organizzazione, è possibile attivarlo nel
 
 È necessario utilizzare Exchange Online PowerShell per disattivare il controllo.
   
-1. [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connettersi a PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Eseguire il comando di PowerShell seguente per disattivare il controllo.
 

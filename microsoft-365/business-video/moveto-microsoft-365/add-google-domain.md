@@ -32,21 +32,21 @@ ms.locfileid: "51578772"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LWKT?autoplay=false]
 
-Aggiungi il dominio di Google Workspace a Microsoft 365 per le aziende in modo da poter continuare a usare l'indirizzo di posta elettronica aziendale.
+Aggiungi il dominio google workspace a Microsoft 365 per le aziende in modo da poter continuare a usare il tuo indirizzo di posta elettronica aziendale.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Accedere all'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com).
-1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento sinistro, selezionare **Mostra tutto**, **Impostazioni** e quindi **Domini**.
+1. Passare [all'Microsoft 365 di amministrazione .](https://admin.microsoft.com)
+1. Nell'Microsoft 365 admin center, nel riquadro di spostamento sinistro, selezionare **Mostra tutto**, **Impostazioni** e quindi **Domini**.
 1. Scegliere **Aggiungi dominio,** immettere il nome del dominio e quindi **selezionare Usa questo dominio.** 
 1. Scegliere Aggiungi **un record TXT ai** record DNS dei domini, selezionare **Continua** e copiare il valore TXT. 
 1. Torna alla Console di amministrazione [di Google,](https://admin.google.com)scegli **Domini,** Gestisci **domini,** Visualizza **dettagli,** **Gestisci** dominio, **DNS** e quindi scorri verso il basso fino a Record di **risorse personalizzati.** 
 1. Aprire l'elenco a discesa tipo di record, scegliere **TXT,** incollare il valore TXT copiato e quindi **selezionare Aggiungi**. 
 
     L'aggiornamento in genere richiede alcuni minuti, ma può richiedere fino a 48 ore. 
-1. Tornare all'interfaccia di amministrazione di Microsoft 365, selezionare **Verifica** e quindi **Chiudi.** 
+1. Tornare all'Microsoft 365 di amministrazione, selezionare **Verifica** e quindi **Chiudi.** 
 1. Per impostare il dominio come posta elettronica principale per gli utenti, nel riquadro di spostamento sinistro selezionare **Utenti**  >  **Utenti attivi**. 
 1. Scegliere un utente, selezionare **Gestisci nome utente e posta** elettronica , Modifica , selezionare il dominio dall'elenco a discesa, quindi selezionare Fatto e salva le **modifiche**.   
 1. Ripetere questo processo per ogni utente. 
 
-    Al termine, sarà possibile installare le app di Office ed eseguire la migrazione della posta elettronica e degli elementi del calendario a Microsoft 365. 
+    Al termine, sarai pronto per installare le app Office ed eseguire la migrazione della posta elettronica e degli elementi del calendario a Microsoft 365. 

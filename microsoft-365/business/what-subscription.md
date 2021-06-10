@@ -18,7 +18,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Determinare se Office 365 E3, Microsoft 365 Business Standard o Microsoft 365 Business Premium è giusto per la propria azienda.
+description: Determinare se Office 365 E3, Microsoft 365 Business Standard o Microsoft 365 Business Premium è giusto per la tua azienda.
 ms.openlocfilehash: 2f8c59e0af619730060862fc8ee24a702ca00343
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -28,4 +28,4 @@ ms.locfileid: "51579823"
 ---
 # <a name="what-subscription-is-right-for-your-small-business"></a>Qual è l'abbonamento giusto per la tua piccola azienda?
 
-Microsoft offre diversi piani per le piccole imprese. Le sottoscrizioni consigliate sono Microsoft 365 Business Standard o Microsoft 365 Business Premium con un massimo di 300 utenti. Microsoft 365 Business Premium offre più funzionalità di sicurezza rispetto a Microsoft 365 Business Standard a un costo aggiuntivo.
+Microsoft offre diversi piani per le piccole imprese. Le sottoscrizioni consigliate sono Microsoft 365 Business Standard o Microsoft 365 Business Premium fino a 300 utenti. Microsoft 365 Business Premium offre più funzionalità di sicurezza rispetto Microsoft 365 Business Standard a un costo aggiuntivo.

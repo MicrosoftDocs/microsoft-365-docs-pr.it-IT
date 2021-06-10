@@ -28,7 +28,7 @@ Sia che tu sia completamente nuovo Microsoft Managed Desktop o un sottoscrittore
     - [Configurare dispositivi Microsoft Managed Desktop](set-up-devices.md)
     - [Localizzare l'esperienza utente](localization.md)
     - [Esperienza iniziale con Autopilot e pagina stato registrazione](esp-first-run.md)
-    - [Servizi di posizione di Windows 10](device-location.md)
+    - [Servizi di posizione di Windows 10](device-location.md)
     - [Introduzione al controllo delle applicazioni](get-started-app-control.md)
     - [Distribuire le app sui dispositivi](deploy-apps.md)
 2. Verificare che le esperienze seguenti funzionino senza errori, errori o richieste:

@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: Scopri come configurare le impostazioni del criterio dispositivo predefinito che qualsiasi dispositivo Windows 10 riceverà all'accesso al proprio account aziendale o dell'istituto di istruzione.
+description: Informazioni sulla configurazione delle impostazioni del criterio dispositivo predefinito che qualsiasi dispositivo Windows 10 riceverà all'accesso al proprio account aziendale o dell'istituto di istruzione.
 ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT

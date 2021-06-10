@@ -46,13 +46,13 @@ Questo articolo si applica a Microsoft 365 Business Premium.
     
 4. In **Tipo di criterio** scegliere Gestione applicazioni per **Android** o Gestione applicazioni **per iOS,** a seconda del set di criteri che si desidera creare. 
     
-5. Espandi **Proteggi i file di lavoro quando i dispositivi vengono persi o rubati** e Gestisci il modo in cui gli utenti accedono ai **file di Office nei dispositivi mobili.** Configurare le impostazioni come si desidera. **La modalità di accesso degli utenti ai** file di Office nei  dispositivi mobili è disattivata per impostazione predefinita, ma è consigliabile attivarla e accettare i valori predefiniti.  Per ulteriori informazioni, vedere [Impostazioni disponibili.](#available-settings) 
+5. Espandi Proteggi i file di lavoro quando i dispositivi vengono smarriti o **rubati** e Gestisci il modo in cui gli utenti accedono **Office file nei dispositivi mobili.** Configurare le impostazioni come si desidera. **La modalità di** accesso Office ai file  nei dispositivi mobili è disattivata  per impostazione predefinita, ma è consigliabile attivarla e accettare i valori predefiniti. Per ulteriori informazioni, vedere [Impostazioni disponibili.](#available-settings) 
     
     È sempre possibile usare il collegamento **Ripristina impostazioni predefinite** per ripristinare l'impostazione predefinita. 
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Decidere quindi **chi otterrà queste impostazioni?** Se non si desidera utilizzare il gruppo di sicurezza **Predefinito** Tutti gli utenti, scegliere **Cambia**, scegliere i gruppi di sicurezza che ottengono queste \> **impostazioni Selezionare**.
+6. Successivamente **decidi Who queste impostazioni?** Se non si desidera utilizzare il gruppo di sicurezza **Predefinito** Tutti gli utenti, scegliere **Cambia**, scegliere i gruppi di sicurezza che ottengono queste \> **impostazioni Selezionare**.
     
 7. Infine, scegliere **Fatto** per salvare il criterio e assegnarlo ai dispositivi. 
     
@@ -74,9 +74,9 @@ Questo articolo si applica a Microsoft 365 Business Premium.
     
 ## <a name="available-settings"></a>Impostazioni disponibili
 
-Nelle tabelle seguenti vengono fornite informazioni dettagliate sulle impostazioni disponibili per proteggere i file di lavoro nei dispositivi e sulle impostazioni che controllano il modo in cui gli utenti accedono ai file di Office dai dispositivi mobili.
+Nelle tabelle seguenti vengono fornite informazioni dettagliate sulle impostazioni disponibili per proteggere i file di lavoro nei dispositivi e sulle impostazioni che controllano il modo in cui gli utenti accedono Office file dai dispositivi mobili.
   
- Per ulteriori informazioni, vedere Come eseguire il mapping delle funzionalità di [protezione in Microsoft 365 Business Premium alle impostazioni di Intune.](map-protection-features-to-intune-settings.md) 
+ Per ulteriori informazioni, vedere [How do protection features in Microsoft 365 Business Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
   
 ### <a name="settings-that-protect-work-files"></a>Impostazioni per la protezione dei file di lavoro
 
@@ -96,8 +96,8 @@ Le impostazioni seguenti sono disponibili per la gestione della modalità di acc
 |||
 |:-----|:-----|
 |Impostazione  <br/> |Descrizione  <br/> |
-|Richiedi un PIN o l'impronta digitale per accedere alle app di Office  <br/> |Se questa impostazione è **Attivata,** gli utenti devono fornire un'altra forma di autenticazione, oltre al nome utente e alla password, prima di poter usare le app di Office nei dispositivi mobili.<br/> |
+|Richiedi un PIN o l'impronta digitale per accedere alle app di Office  <br/> |Se questa impostazione è **Attivata,** gli utenti devono fornire un'altra forma di autenticazione, oltre al nome utente e alla password, prima di poter usare le app Office nei dispositivi mobili.<br/> |
 |Reimposta il PIN dopo il numero di tentativi di accesso falliti seguente  <br/> |Per impedire a un utente non autorizzato di indovinare casualmente un PIN, il PIN verrà reimpostato dopo il numero specificato di tentativi di immissione non riusciti.  <br/> |
 |Richiedi agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive per  <br/> |Questa impostazione determina per quanto tempo un utente può essere inattivo prima che venga richiesto di eseguire di nuovo l'accesso.  <br/> |
 |Nega l'accesso ai file di lavoro nei dispositivi jailbroken o rooted  <br/> |È possibile che gli utenti esperti abbiano un dispositivo sottoposto a jailbreak o root. L'utente può quindi modificare il sistema operativo, rendendo il dispositivo più vulnerabile a malware. Questi dispositivi sono bloccati quando l'impostazione è **attivata**.  <br/> |
-|Non consentire agli utenti di copiare il contenuto dalle app di Office alle app personali  <br/> |Questa operazione è consentita per impostazione predefinita, ma se l'impostazione è **attivata** l'utente potrebbe copiare le informazioni di un file di lavoro in un file personale. Se l'impostazione è **disattivata**, l'utente non potrà copiare informazioni da un account aziendale a un'app personale o un account personale.  <br/> |
+|Non consentire agli utenti di copiare contenuto da Office app personali  <br/> |Questa operazione è consentita per impostazione predefinita, ma se l'impostazione è **attivata** l'utente potrebbe copiare le informazioni di un file di lavoro in un file personale. Se l'impostazione è **disattivata**, l'utente non potrà copiare informazioni da un account aziendale a un'app personale o un account personale.  <br/> |

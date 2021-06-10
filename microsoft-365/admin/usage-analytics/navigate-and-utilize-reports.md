@@ -65,13 +65,13 @@ L'utente che ha creato un'istanza dell'app modello avrà la possibilità di pers
 
 Per condividere i report, basta selezionare il pulsante Condividi ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) nella parte superiore della pagina.
 
-Per informazioni su come personalizzare i report, vedere [Personalizzazione dei report nell'analisi dell'utilizzo di Microsoft 365.](customize-reports.md)
+Per informazioni su come personalizzare i report, vedere [Customizing the reports in Microsoft 365 usage analytics.](customize-reports.md)
 
 Nella documentazione della Guida di Power BI sono disponibili moltissime altre informazioni:
 
-- [Concetti di base di Power BI](/power-bi/service-basic-concepts)
+- [Power BI concetti di base](/power-bi/service-basic-concepts)
 
-    Informazioni su dashboard, set di dati, report e altri concetti di Power BI.
+    Informazioni su dashboard, set di dati, report e altri Power BI predefiniti.
 
 - [Introduzione a Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 

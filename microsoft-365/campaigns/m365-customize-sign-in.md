@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Personalizzare la pagina di accesso con un avviso di privacy e consenso per Microsoft 365.
+description: Personalizza la pagina di accesso con un avviso di privacy e consenso per Microsoft 365.
 ms.openlocfilehash: 652566ca1caf46cd224e5205da3bebfd7b25cefa
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "51579807"
 
 La tua azienda o la tua campagna può rendere più facile per le forze dell'ordine fare addebiti legali contro criminali online aggiungendo un avviso di privacy e consenso alla tua pagina di accesso.
 
-Puoi personalizzare la pagina di accesso con il tuo marchio. È inoltre possibile aggiungere testo per consentire agli utenti di accedere o per specificare i requisiti legali o le restrizioni per ottenere l'accesso alle risorse di Microsoft 365.
+Puoi personalizzare la pagina di accesso con il tuo marchio. È inoltre possibile aggiungere testo per consentire agli utenti di accedere o per specificare i requisiti legali o le restrizioni per ottenere l'accesso Microsoft 365 risorse.
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>Progettare la personalizzazione del testo nella pagina di accesso
 
