@@ -1,6 +1,6 @@
 ---
 title: Tabella EmailEvents nello schema per ricerca avanzata
-description: Informazioni sugli eventi associati ai messaggi di posta elettronica di Microsoft 365 nella tabella EmailEvents dello schema di ricerca avanzata
+description: Informazioni sugli eventi associati Microsoft 365 messaggi di posta elettronica nella tabella EmailEvents dello schema di ricerca avanzata
 keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, EmailEvents, ID messaggio di rete, mittente, destinatario, ID allegato, nome allegato, verdetto malware, verdetto di phishing, numero di allegati, numero di collegamenti, conteggio url
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51935486"
 
 - Microsoft 365 Defender
 
-La tabella nello schema di ricerca avanzata contiene informazioni sugli eventi che implicano l'elaborazione dei messaggi di posta elettronica `EmailEvents` in Microsoft Defender per Office 365. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni sugli eventi che coinvolgono l'elaborazione dei messaggi di posta elettronica `EmailEvents` in Microsoft Defender per Office 365. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
 > Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza.

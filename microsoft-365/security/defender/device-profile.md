@@ -1,7 +1,7 @@
 ---
-title: Profilo dispositivo nel portale di sicurezza di Microsoft 365
+title: Profilo dispositivo nel portale Microsoft 365 sicurezza
 description: Visualizzare i livelli di rischio ed esposizione per un dispositivo nell'organizzazione. Analizza le minacce passate e presenti e proteggi il dispositivo con gli aggiornamenti più recenti.
-keywords: sicurezza, malware, Microsoft 365, M365, Microsoft 365 Defender, centro sicurezza, Microsoft Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Defender for Identity, pagina del dispositivo, profilo del dispositivo, pagina del computer, profilo computer
+keywords: sicurezza, malware, Microsoft 365, M365, Microsoft 365 Defender, centro sicurezza, Microsoft Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Defender per l'identità, pagina del dispositivo, profilo del dispositivo, pagina del computer, profilo computer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -25,7 +25,7 @@ ms.locfileid: "51935666"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Il portale di sicurezza di Microsoft 365 fornisce pagine del profilo del dispositivo, in modo da poter valutare rapidamente l'integrità e lo stato dei dispositivi nella rete.
+Il Microsoft 365 sicurezza fornisce pagine del profilo del dispositivo, in modo da poter valutare rapidamente l'integrità e lo stato dei dispositivi nella rete.
 
 > [!IMPORTANT]
 > La pagina del profilo del dispositivo potrebbe apparire leggermente diversa, a seconda che il dispositivo sia registrato in Microsoft Defender for Endpoint, Microsoft Defender for Identity o entrambi.
@@ -75,10 +75,10 @@ Le azioni di risposta offrono un modo rapido per difendersi e analizzare le mina
 Le azioni disponibili nella pagina del profilo del dispositivo includono:
 
 * **Gestisci tag:** aggiorna i tag personalizzati applicati a questo dispositivo.
-* **Isola dispositivo:** isola il dispositivo dalla rete dell'organizzazione mantenendolo connesso a Microsoft Defender per Endpoint. Puoi scegliere di consentire l'esecuzione di Outlook, Teams e Skype for Business mentre il dispositivo è isolato, a scopo di comunicazione.
+* **Isola dispositivo:** isola il dispositivo dalla rete dell'organizzazione mantenendolo connesso a Microsoft Defender per Endpoint. Puoi scegliere di consentire Outlook, Teams e Skype for Business mentre il dispositivo è isolato, a scopo di comunicazione.
 * **Centro notifiche:** consente di visualizzare lo stato delle azioni inviate. Disponibile solo se è già stata selezionata un'altra azione.
 * **Limitare l'esecuzione delle** app: impedisce l'esecuzione di applicazioni non firmate da Microsoft.
-* **Eseguire l'analisi antivirus** - Aggiorna Windows Defender definizioni antivirus ed esegue immediatamente un'analisi antivirus. Scegliere tra Analisi rapida o Analisi completa.
+* **Esegui analisi antivirus** : aggiorna Windows Defender Antivirus definizioni ed esegue immediatamente un'analisi antivirus. Scegliere tra Analisi rapida o Analisi completa.
 * **Raccogli pacchetto di analisi:** raccoglie informazioni sul dispositivo. Al termine dell'indagine, è possibile scaricarla.
 * **Initiate Live Response Session** - Carica una shell remota nel dispositivo per indagini [approfondite sulla sicurezza.](/microsoft-365/security/defender-endpoint/live-response)
 * **Avviare un'indagine automatizzata-** Analizza [e correda automaticamente le minacce.](../office-365-security/office-365-air.md) Sebbene sia possibile attivare manualmente l'esecuzione di indagini automatizzate da questa [pagina,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) alcuni criteri di avviso attivano indagini automatiche per conto proprio.
@@ -180,7 +180,7 @@ Se si seleziona un elemento, verrà aperto un riquadro a comparsa che si collega
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-* [Panoramica di Microsoft 365 Defender](microsoft-365-defender.md)
+* [Microsoft 365 Panoramica di Defender](microsoft-365-defender.md)
 * [Attivare Microsoft 365 Defender](m365d-enable.md)
 * [Analizzare le entità nei dispositivi, usando la risposta in tempo reale](../defender-endpoint/live-response.md)
 * [Analisi e risposta automatizzate (AIR) in Office 365](../office-365-security/office-365-air.md)

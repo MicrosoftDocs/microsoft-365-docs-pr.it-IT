@@ -1,7 +1,7 @@
 ---
 title: Punteggio di sicurezza Microsoft per dispositivi
 description: Il punteggio per i dispositivi mostra lo stato di configurazione della sicurezza collettiva dei dispositivi tra applicazioni, sistema operativo, rete, account e controlli di sicurezza.
-keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, threat and vulnerability management, security controls, improvement opportunities, security configuration score over time, security posture, baseline
+keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, gestione di minacce e vulnerabilità, security controls, improvement opportunities, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -32,16 +32,16 @@ ms.locfileid: "51934082"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 >[!NOTE]
-> Il punteggio di configurazione fa ora parte della gestione delle minacce e delle vulnerabilità come Punteggio sicuro Microsoft per i dispositivi.
+> Il punteggio di configurazione fa ora parte gestione di minacce e vulnerabilità microsoft secure score per i dispositivi.
 
-Il punteggio per i dispositivi è visibile nel [dashboard di gestione](tvm-dashboard-insights.md) delle minacce e delle vulnerabilità di Microsoft Defender Security Center. Un punteggio microsoft sicuro più alto per i dispositivi significa che gli endpoint sono più resilienti dagli attacchi di minacce alla cybersecurity. Riflette lo stato di configurazione della sicurezza collettiva dei dispositivi nelle categorie seguenti:
+Il punteggio per i dispositivi è visibile [nel dashboard gestione di minacce e vulnerabilità della](tvm-dashboard-insights.md) Microsoft Defender Security Center. Un punteggio microsoft sicuro più alto per i dispositivi significa che gli endpoint sono più resilienti dagli attacchi di minacce alla cybersecurity. Riflette lo stato di configurazione della sicurezza collettiva dei dispositivi nelle categorie seguenti:
 
 - Applicazione
 - Sistema operativo
@@ -57,13 +57,13 @@ Inoltra i segnali di Microsoft Defender for Endpoint, offrendo a Microsoft Secur
 
 Le modifiche potrebbero richiedere fino a poche ore per riflettere nel dashboard.
 
-1. Nel riquadro di spostamento passare a **Impostazioni**  >  **Caratteristiche avanzate** 
+1. Nel riquadro di spostamento passare a **Impostazioni**  >  **funzionalità avanzate** 
 
 2. Scorrere verso il basso **fino a Microsoft Secure Score** e attivare o disattivare l'impostazione su **Attivato.**
 
 3. Selezionare **Salva preferenze.**
 
-## <a name="how-it-works"></a>Funzionamento
+## <a name="how-it-works"></a>Come funziona
 
 >[!NOTE]
 > Microsoft Secure Score per i dispositivi attualmente supporta le configurazioni impostate tramite Criteri di gruppo. A causa dell'attuale supporto parziale di Intune, le configurazioni che potrebbero essere state impostate tramite Intune potrebbero risultare non configurate correttamente. Contattare l'amministratore IT per verificare lo stato di configurazione effettivo nel caso in cui l'organizzazione utilizzi Intune per la gestione sicura della configurazione.
@@ -79,7 +79,7 @@ I dati nella scheda Microsoft Secure Score for Devices sono il prodotto di un pr
 
 Migliorare la configurazione della sicurezza corredando i problemi dall'elenco dei suggerimenti per la sicurezza. In questo modo, microsoft Secure Score for Devices migliora e l'organizzazione diventa più resiliente alle minacce e alle vulnerabilità di cybersecurity.
 
-1. Nella scheda Microsoft Secure Score for Devices nel dashboard di gestione delle minacce e delle vulnerabilità seleziona una delle categorie. Verrà visualizzato l'elenco dei suggerimenti relativi a tale categoria. Verrà visualizzata la pagina [**Suggerimenti per la**](tvm-security-recommendation.md) sicurezza. Se si desidera visualizzare tutti i suggerimenti per la sicurezza, una volta visualizzata la pagina Suggerimenti per la sicurezza, deselezionare il campo di ricerca.
+1. Nella scheda Microsoft Secure Score for Devices nel dashboard gestione di minacce e vulnerabilità selezionare una delle categorie. Verrà visualizzato l'elenco dei suggerimenti relativi a tale categoria. Verrà visualizzata la pagina [**Suggerimenti per la**](tvm-security-recommendation.md) sicurezza. Se si desidera visualizzare tutti i suggerimenti per la sicurezza, una volta visualizzata la pagina Suggerimenti per la sicurezza, deselezionare il campo di ricerca.
 
 2. Selezionare un elemento nell'elenco. Il riquadro a comparsa si aprirà con i dettagli relativi al suggerimento. Selezionare **Opzioni di correzione.**
 
@@ -110,7 +110,7 @@ Migliorare la configurazione della sicurezza corredando i problemi dall'elenco d
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
 - [Punteggio di esposizione.](tvm-exposure-score.md)
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)

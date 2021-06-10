@@ -1,6 +1,6 @@
 ---
 title: Configurare la correzione per i rilevamenti di Microsoft Defender Antivirus
-description: Configurare l'operazione che Microsoft Defender Antivirus deve eseguire quando rileva una minaccia e per quanto tempo i file in quarantena devono essere conservati nella cartella di quarantena
+description: Configurare le Antivirus Microsoft Defender quando rileva una minaccia e per quanto tempo i file in quarantena devono essere conservati nella cartella di quarantena
 keywords: correzione, correzione, rimozione, minacce, quarantena, analisi, ripristino
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -32,9 +32,9 @@ ms.locfileid: "52274509"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Quando Microsoft Defender Antivirus esegue un'analisi, tenta di correggere o rimuovere le minacce rilevate. Puoi configurare il modo in cui Microsoft Defender Antivirus deve affrontare determinate minacce, se deve essere creato un punto di ripristino prima della correzione e quando le minacce devono essere rimosse.
+Quando Antivirus Microsoft Defender un'analisi, tenta di correggere o rimuovere le minacce rilevate. È possibile configurare il modo Antivirus Microsoft Defender affrontare determinate minacce, se deve essere creato un punto di ripristino prima della correzione e quando le minacce devono essere rimosse.
 
-In questo articolo viene descritto come configurare queste impostazioni utilizzando Criteri di gruppo, ma è anche possibile usare [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) e Microsoft [Intune.](/intune/device-restrictions-configure) 
+In questo articolo viene descritto come configurare queste impostazioni utilizzando Criteri di gruppo, ma è anche possibile utilizzare Microsoft Endpoint Configuration Manager [e](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) [Microsoft Intune](/intune/device-restrictions-configure). 
 
 È inoltre possibile utilizzare il [ `Set-MpPreference` cmdlet PowerShell o](/powershell/module/defender/set-mppreference) la classe [ `MSFT_MpPreference` WMI](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) per configurare queste impostazioni.
 
@@ -44,7 +44,7 @@ In questo articolo viene descritto come configurare queste impostazioni utilizza
 
 2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer** e selezionare **Modelli amministrativi.**
 
-3. Espandere l'albero fino **ai componenti di Windows** Microsoft Defender  >  **Antivirus.** 
+3. Espandere l'albero per **Windows componenti**  >  **Antivirus Microsoft Defender**. 
 
 4. Usando la tabella seguente, selezionare un percorso e quindi modificare il criterio in base alle esigenze. 
 
@@ -52,28 +52,28 @@ In questo articolo viene descritto come configurare queste impostazioni utilizza
 
 |Posizione | Impostazione | Descrizione | Impostazione predefinita (se non configurata) |
 |:---|:---|:---|:---|
-|Analisi | Creare un punto di ripristino del sistema | Verrà creato un punto di ripristino del sistema ogni giorno prima del tentativo di pulizia o analisi | Disabilitato|
+|Analisi | Creare un punto di ripristino del sistema | Verrà creato un punto di ripristino del sistema ogni giorno prima del tentativo di pulizia o analisi | Disattivato|
 |Analisi | Attivare la rimozione di elementi dalla cartella cronologia analisi | Specificare il numero di giorni in cui gli elementi devono essere conservati nella cronologia dell'analisi | 30 giorni |
-|Radice | Disattivare la correzione di routine | Puoi specificare se Microsoft Defender Antivirus consente di correggere automaticamente le minacce o se deve chiedere all'utente dell'endpoint cosa fare. | Disabilitato (le minacce vengono corretti automaticamente) |
+|Radice | Disattivare la correzione di routine | È possibile specificare se Antivirus Microsoft Defender correggere automaticamente le minacce o se deve chiedere all'utente dell'endpoint cosa fare. | Disabilitato (le minacce vengono corretti automaticamente) |
 |Quarantena | Configurare la rimozione degli elementi dalla cartella quarantena | Specificare per quanti giorni gli elementi devono essere mantenuti in quarantena prima di essere rimossi | 90 giorni |
-|Minacce | Specificare i livelli di avviso per le minacce a cui non deve essere eseguita l'azione predefinita quando viene rilevata | A ogni minaccia rilevata da Microsoft Defender Antivirus viene assegnato un livello di minaccia (basso, medio, alto o grave). È possibile utilizzare questa impostazione per definire la modalità di correzione di tutte le minacce per ognuno dei livelli di minaccia (in quarantena, rimosse o ignorate) | Non applicabile |
+|Minacce | Specificare i livelli di avviso per le minacce a cui non deve essere eseguita l'azione predefinita quando viene rilevata | A ogni minaccia rilevata da Antivirus Microsoft Defender viene assegnato un livello di minaccia (basso, medio, alto o grave). È possibile utilizzare questa impostazione per definire la modalità di correzione di tutte le minacce per ognuno dei livelli di minaccia (in quarantena, rimosse o ignorate) | Non applicabile |
 |Minacce | Specificare le minacce su cui non deve essere eseguita l'azione predefinita quando viene rilevata | Specificare la modalità di correzione delle minacce specifiche (usando il relativo ID minaccia). È possibile specificare se la minaccia specifica deve essere messo in quarantena, rimossa o ignorata | Non applicabile |
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus rileva e correggere i file in base a molti fattori. A volte, il completamento di una correzione richiede un riavvio. Anche se il rilevamento viene successivamente determinato come falso positivo, è necessario completare il riavvio per assicurarsi che tutti i passaggi di correzione aggiuntivi siano stati completati.
+> Antivirus Microsoft Defender consente di rilevare e correggere i file in base a molti fattori. A volte, il completamento di una correzione richiede un riavvio. Anche se il rilevamento viene successivamente determinato come falso positivo, è necessario completare il riavvio per assicurarsi che tutti i passaggi di correzione aggiuntivi siano stati completati.
 >
-> Se si è certi che Microsoft Defender Antivirus ha messo in quarantena un file in base a un falso positivo, è possibile ripristinare il file dalla quarantena dopo il riavvio del dispositivo. Vedi [Ripristinare i file in quarantena in Microsoft Defender Antivirus.](restore-quarantined-files-microsoft-defender-antivirus.md)
+> Se si è certi Antivirus Microsoft Defender messo in quarantena un file in base a un falso positivo, è possibile ripristinare il file dalla quarantena dopo il riavvio del dispositivo. Vedere [Restore quarantined files in Antivirus Microsoft Defender](restore-quarantined-files-microsoft-defender-antivirus.md).
 > 
-> Per evitare questo problema in futuro, è possibile escludere i file dalle analisi. Vedi [Configurare e convalidare le esclusioni per le analisi di Microsoft Defender Antivirus.](configure-exclusions-microsoft-defender-antivirus.md)
+> Per evitare questo problema in futuro, è possibile escludere i file dalle analisi. Vedere [Configure and validate exclusions for Antivirus Microsoft Defender scans](configure-exclusions-microsoft-defender-antivirus.md).
 
-Vedi anche Configurare le analisi complete di [Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) pianificate necessarie per la correzione per altre impostazioni correlate alla correzione.
+Vedere anche [Configure remediation-required scheduled full Antivirus Microsoft Defender scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) for more remediation-related settings.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Configurare le opzioni di analisi di Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [Configurare le analisi pianificate di Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Configurare le Antivirus Microsoft Defender pianificate](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Configurare ed eseguire analisi di Microsoft Defender Antivirus su richiesta](run-scan-microsoft-defender-antivirus.md)
-- [Configurare le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md)
-- [Configurare l'interazione di Microsoft Defender Antivirus per l'utente finale](configure-end-user-interaction-microsoft-defender-antivirus.md)
-- [Personalizzare, avviare ed esaminare i risultati delle analisi e delle correzioni di Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Configurare le notifiche che vengono visualizzate negli endpoint](configure-notifications-microsoft-defender-antivirus.md)
+- [Configurare l'interazione degli utenti Antivirus Microsoft Defender finale](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Personalizzare, avviare ed esaminare i risultati di Antivirus Microsoft Defender analisi e correzione](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

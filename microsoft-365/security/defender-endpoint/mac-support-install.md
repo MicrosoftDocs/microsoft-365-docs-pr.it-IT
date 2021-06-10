@@ -58,7 +58,7 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 In questo esempio, il motivo effettivo è preceduto da `[ERROR]` .
 L'installazione non è riuscita perché non è supportato un downgrade tra queste versioni.
 
-## <a name="mdatp-install-log-missing-or-not-updated"></a>Registro di installazione MDATP mancante o non aggiornato
+## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP log di installazione mancante o non aggiornato
 
 In rari casi, l'installazione non lascia traccia nel file /Library/Logs/Microsoft/mdatp/install.log di MDATP.
 Puoi verificare che sia stata eseguita un'installazione e analizzare i possibili errori tramite query sui log macOS (questa operazione è utile nella distribuzione MDM, quando non è disponibile un'interfaccia utente client). È consigliabile utilizzare un intervallo di tempo ristretto per eseguire una query e filtrare in base al nome del processo di registrazione, in quanto saranno disponibili un'enorme quantità di informazioni.

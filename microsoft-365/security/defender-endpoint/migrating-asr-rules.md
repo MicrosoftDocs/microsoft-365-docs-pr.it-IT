@@ -61,33 +61,33 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Operation**- Process Execution
 - **Esempi di file/cartelle, chiavi/valori** del Registro di sistema, processi, servizi - powershell.exe, cmd.exe, regsvr32.exe
 - **Regole di riduzione della superficie** di attacco- Le regole asr non contengono alcuna regola specifica per impedire ai processi figlio di "mshta.exe". Questo controllo rientra nell'ambito di Protezione da exploit o Windows Defender'applicazione.
-- **Altre funzionalità consigliate:** abilitare Windows Defender controllo dell'applicazione per impedire mshta.exe'esecuzione del tutto. Se l'organizzazione richiede "mshta.exe" per le app line-of-business, configura una regola specifica di Windows Defender Exploit Protection per impedire mshta.exe avviare processi figlio.
+- **Altre funzionalità consigliate:** abilita Windows Defender controllo dell'applicazione per impedire mshta.exe'esecuzione del tutto. Se l'organizzazione richiede "mshta.exe" per le app line-of-business, configurare una regola di protezione dagli exploit di Windows Defender specifica per impedire mshta.exe avviare processi figlio.
 
-### <a name="block-outlook-from-launching-child-processes"></a>Impedire a Outlook di avviare processi figlio
+### <a name="block-outlook-from-launching-child-processes"></a>Impedire Outlook l'avvio di processi figlio
 
 - **Si applica a**- Outlook
 - **Processi -** outlook.exe
 - **Operation**- Process Execution
 - **Esempi di file/cartelle, chiavi/valori del Registro di sistema, processi, servizi**- powershell.exe
-- Regole di riduzione della superficie di attacco **-** Le regole asr dispongono di una regola predefinita per impedire alle app di comunicazione di Office (Outlook, Skype e Teams) di avviare processi figlio: "Blocca l'applicazione di comunicazione di Office dalla creazione di processi figlio", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
+- Regole di riduzione della superficie di attacco **-** Le regole asr dispongono di una regola predefinita per impedire alle app di comunicazione Office (Outlook, Skype e Teams) di avviare processi figlio: "Bloccare l'applicazione di comunicazione Office dalla creazione di processi figlio", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
 - **Altre funzionalità consigliate:** è consigliabile abilitare la modalità linguaggio vincolato di PowerShell per ridurre al minimo la superficie di attacco da PowerShell.
 
 
-### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Impedire alle app di Office di avviare processi figlio e di creare contenuto eseguibile
+### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blocca Office app dall'avvio di processi figlio e dalla creazione di contenuto eseguibile
 
 - **Si applica a**- Office  
 - **Processi -** winword.exe, powerpnt.exe, excel.exe
 - **Operation**- Process Execution
 - **Esempi di file/cartelle, chiavi/valori** del Registro di sistema, processi, servizi - powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
-- Regole di riduzione della superficie di attacco **:** le regole asr dispongono di una regola predefinita per impedire alle app di Office di avviare processi figlio: "Blocca la creazione di processi figlio da parte di tutte le applicazioni di Office", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
+- Regole di riduzione della superficie di attacco **:** le regole asr dispongono di una regola predefinita per impedire alle app di Office di avviare processi figlio: "Bloccare tutte le applicazioni Office dalla creazione di processi figlio", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
 - **Altre funzionalità consigliate**- N/D
     
-### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Impedire alle app di Office di avviare processi figlio e di creare contenuto eseguibile
+### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blocca Office app dall'avvio di processi figlio e dalla creazione di contenuto eseguibile
 
 - **Si applica a**- Office
 - **Processi -** winword.exe, powerpnt.exe, excel.exe
 - **Operazione**- Creazione file
-- Esempi di **file/cartelle, chiavi/valori** del Registro di sistema, processi, servizi - C:\Utenti *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop**.exe
+- **Esempi di file/cartelle, chiavi/valori del Registro di sistema, Processi,** servizi - C:\Users *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop****.exe
 - **Regole di riduzione della superficie di** attacco - N/D.
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>Impedire a Wscript di leggere determinati tipi di file
@@ -115,7 +115,7 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Processi -** certutil.exe
 - **Operazione**- Creazione file
 - **Esempi di file/cartelle, chiavi/valori del Registro di sistema, processi, servizi**- *.exe
-- **Regole di riduzione della superficie** di attacco: le regole asr non supportano questi scenari perché fanno parte della protezione antivirus di Microsoft Defender.
+- **Regole di riduzione della superficie** di attacco: le regole asr non supportano questi scenari perché fanno parte della Antivirus Microsoft Defender protezione.
 - **Altre funzionalità consigliate:** Microsoft Defender AV impedisce a CertUtil di creare o scaricare contenuto eseguibile.
 
 
@@ -125,7 +125,7 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Processi -***
 - **Operazione**- Terminazione processo
 - **Esempi di file/cartelle, chiavi/valori** del Registro di sistema, processi, servizi - MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe e altro ancora.
-- **Regole di riduzione della** superficie di attacco: le regole asr non supportano questi scenari perché sono protette con le protezioni di sicurezza predefinite di Windows 10.
+- **Regole di riduzione della** superficie di attacco: le regole asr non supportano questi scenari perché sono protette con Windows 10 di sicurezza predefinite.
 - **Altre funzionalità consigliate:** ELAM (Early Launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light e System Guard.
 
 ### <a name="block-specific-launch-process-attempt"></a>Blocca tentativo di processo di avvio specifico
@@ -137,7 +137,7 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 - **Regole di riduzione della superficie di** attacco - Nel complesso, le regole asr non sono progettate per funzionare come application manager.
 - **Altre funzionalità consigliate:** per impedire agli utenti di avviare processi o programmi specifici, è consigliabile utilizzare Windows Defender Controllo applicazioni. Microsoft Defender for Endpoint File and Cert indicators, può essere usato in uno scenario di risposta a eventi imprevisti (non deve essere visto come un meccanismo di controllo dell'applicazione).
     
-### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloccare le modifiche non autorizzate alle configurazioni di Microsoft Defender Antivirus
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloccare le modifiche non autorizzate alle configurazioni Antivirus Microsoft Defender non autorizzate
 
 - **Si applica a**- Tutti i processi
 - **Processi -***
@@ -148,6 +148,6 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 
 Vedere anche
 
-- [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction-faq.md)
+- [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction-faq.md)
 - [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
-- [Rilevare regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
+- [Valutare le regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)

@@ -86,8 +86,8 @@ Seguire queste azioni per correggere i problemi noti relativi a un dispositivo n
 - [Verificare che il servizio dati di diagnostica sia abilitato](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
 Se i dispositivi non segnalano correttamente, potrebbe essere necessario verificare che il servizio dati di diagnostica di Windows 10 sia impostato per l'avvio automatico e sia in esecuzione nell'endpoint.
 
-- [Verificare che Microsoft Defender Antivirus non sia disabilitato dai criteri](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-Se i dispositivi eseguono un client antimalware di terze parti, l'agente Defender for Endpoint deve essere abilitato il driver Antimalware antimalware (Early Launch Antimalware) di Microsoft Defender Antivirus.
+- [Verificare che la Antivirus Microsoft Defender non sia disabilitata dai criteri](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+Se i dispositivi eseguono un client antimalware di terze parti, l'agente Defender for Endpoint deve essere abilitato il driver antimalware di avvio anticipato (ELAM) di Antivirus Microsoft Defender.
 
 Se hai intrapreso azioni correttive e lo stato del dispositivo non è ancora configurato correttamente, [apri un ticket di supporto.](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)
 

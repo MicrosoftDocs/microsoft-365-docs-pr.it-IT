@@ -3,7 +3,7 @@ title: Panoramica del dashboard di sicurezza
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 description: Usa il nuovo dashboard di sicurezza per esaminare Office 365 stato di Threat Protection e visualizzare e agire sugli avvisi di sicurezza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71c077853c8dbb68b78c8073f650bcb2df4d1b9a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246454"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274413"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 

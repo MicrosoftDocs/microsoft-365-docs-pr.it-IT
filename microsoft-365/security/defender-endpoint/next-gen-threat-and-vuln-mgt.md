@@ -1,7 +1,7 @@
 ---
 title: Gestione di minacce e vulnerabilità
 description: Questa nuova funzionalità usa un approccio basato sul rischio che cambia il gioco per l'individuazione, la definizione delle priorità e la correzione delle vulnerabilità degli endpoint e delle configurazioni erre.
-keywords: gestione delle & delle vulnerabilità, gestione delle minacce e delle vulnerabilità, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestione delle vulnerabilità, valutazione delle vulnerabilità, analisi delle minacce e vulnerabilità, valutazione della configurazione sicura, Microsoft Defender for Endpoint, vulnerabilità degli endpoint, generazione successiva
+keywords: threat & gestione delle vulnerabilità, gestione di minacce e vulnerabilità, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestione delle vulnerabilità, valutazione delle vulnerabilità, analisi delle minacce e vulnerabilità, valutazione della configurazione sicura, Microsoft Defender for Endpoint, vulnerabilità degli endpoint, generazione successiva
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -38,19 +38,19 @@ Identificare, valutare e correggere in modo efficace i punti deboli degli endpoi
 
 Individuare le vulnerabilità e le configurazioni erre in tempo reale con i sensori e senza la necessità di agenti o analisi periodiche. Assegna la priorità alle vulnerabilità in base al panorama delle minacce, ai rilevamenti nell'organizzazione, alle informazioni riservate sui dispositivi vulnerabili e al contesto aziendale.
 
-Guarda questo video per una breve panoramica della gestione delle minacce e delle vulnerabilità.
+Guarda questo video per una breve panoramica di gestione di minacce e vulnerabilità.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
 
 ## <a name="bridging-the-workflow-gaps"></a>Colmare le lacune del flusso di lavoro
 
-La gestione delle minacce e delle vulnerabilità è integrata, in tempo reale e basata sul cloud. È completamente integrato con lo stack di sicurezza degli endpoint Microsoft, Microsoft Intelligent Security Graph e la knowledge base di analisi delle applicazioni.  
+Minacce e gestione delle vulnerabilità sono integrate, in tempo reale e basate sul cloud. È completamente integrato con lo stack di sicurezza degli endpoint Microsoft, il Graph Microsoft Intelligent Security e la knowledge base di analisi delle applicazioni.  
 
-La gestione delle vulnerabilità è la prima soluzione nel settore a colmare il divario tra l'amministrazione della sicurezza e l'amministrazione IT durante il processo di correzione. Crea un'attività o un ticket di sicurezza integrandoti con Microsoft Intune e Microsoft Endpoint Configuration Manager.
+La gestione delle vulnerabilità è la prima soluzione nel settore a colmare il divario tra l'amministrazione della sicurezza e l'amministrazione IT durante il processo di correzione. Crea un'attività o un ticket di sicurezza integrando con Microsoft Intune e Microsoft Endpoint Configuration Manager.
 
 ### <a name="real-time-discovery"></a>Individuazione in tempo reale
 
-Per individuare le vulnerabilità degli endpoint e la configurazione errata, la gestione delle minacce e delle vulnerabilità utilizza lo stesso Defender integrato senza agenti per i sensori endpoint per ridurre le analisi di rete ingombranti e il sovraccarico IT.
+Per individuare le vulnerabilità degli endpoint e la configurazione errata, gestione di minacce e vulnerabilità usa lo stesso defender incorporato senza agenti per i sensori endpoint per ridurre le analisi di rete ingombranti e il sovraccarico IT.
 
 Fornisce inoltre:
 
@@ -61,23 +61,23 @@ Fornisce inoltre:
 
 ### <a name="intelligence-driven-prioritization"></a>Definizione delle priorità basata sull'intelligence
 
-La gestione delle minacce e delle vulnerabilità aiuta i clienti a definire le priorità e a concentrarsi sui punti deboli che rappresentano il rischio più urgente e più elevato per l'organizzazione. Unisce i suggerimenti per la sicurezza con le minacce dinamiche e il contesto aziendale:
+Minacce e gestione delle vulnerabilità aiuta i clienti a definire le priorità e a concentrarsi sui punti di debolezza che rappresentano il rischio più urgente e più alto per l'organizzazione. Unisce i suggerimenti per la sicurezza con le minacce dinamiche e il contesto aziendale:
 
-- **Esposizione di attacchi emergenti in modalità selvaggia-** Allinea dinamicamente la definizione di priorità dei suggerimenti sulla sicurezza. La gestione delle minacce e delle vulnerabilità si concentra sulle vulnerabilità attualmente sfruttate nelle minacce selvagge ed emergenti che rappresentano il rischio più alto.
-- **Pinpointing active breaches** - Correla la gestione delle minacce e delle vulnerabilità e le informazioni edR per dare priorità alle vulnerabilità sfruttate in una violazione attiva all'interno dell'organizzazione.
+- **Esposizione di attacchi emergenti in modalità selvaggia-** Allinea dinamicamente la definizione di priorità dei suggerimenti sulla sicurezza. Threat and gestione delle vulnerabilità si concentra sulle vulnerabilità attualmente sfruttate nelle minacce selvagge ed emergenti che rappresentano il rischio più alto.
+- **Pinpointing active breaches** - Correla le informazioni gestione di minacce e vulnerabilità e EDR per dare priorità alle vulnerabilità sfruttate in una violazione attiva all'interno dell'organizzazione.
 - **Protezione di asset di alto valore-** Identificare i dispositivi esposti con applicazioni business-critical, dati riservati o utenti di alto valore.
 
 ### <a name="seamless-remediation"></a>Correzione senza problemi
 
-La gestione delle minacce e delle vulnerabilità consente agli amministratori della sicurezza e agli amministratori IT di collaborare senza problemi per risolvere i problemi.
+Threat and gestione delle vulnerabilità consente agli amministratori della sicurezza e agli amministratori IT di collaborare senza problemi per risolvere i problemi.
 
-- **Richieste di correzione inviate all'IT** - Creare un'attività di correzione in Microsoft Intune da una specifica raccomandazione di sicurezza. Microsoft prevede di espandere questa funzionalità ad altre piattaforme di gestione della sicurezza IT.
+- **Richieste di correzione inviate all'IT** - Creare un'attività di correzione in Microsoft Intune da un suggerimento di sicurezza specifico. Microsoft prevede di espandere questa funzionalità ad altre piattaforme di gestione della sicurezza IT.
 - **Mitigazioni alternative:** ottenere informazioni dettagliate su ulteriori mitigazioni, ad esempio modifiche alla configurazione che possono ridurre i rischi associati alle vulnerabilità del software.
 - **Stato di correzione in tempo reale** - Monitoraggio in tempo reale dello stato e dello stato delle attività di correzione nell'organizzazione.
 
-## <a name="threat-and-vulnerability-management-walk-through"></a>Procedura di gestione delle minacce e delle vulnerabilità
+## <a name="threat-and-vulnerability-management-walk-through"></a>Minacce e gestione delle vulnerabilità walk-through
 
-Guarda questo video per una panoramica completa della gestione delle minacce e delle vulnerabilità.
+Guarda questo video per una panoramica completa di gestione di minacce e vulnerabilità.
 
 >[!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
 
@@ -94,7 +94,7 @@ Area | Descrizione
 
 ## <a name="apis"></a>API
 
-Eseguire chiamate API correlate alla gestione delle minacce e delle vulnerabilità per automatizzare i flussi di lavoro di gestione delle vulnerabilità. Per ulteriori informazioni, vedere questo [post di blog della community microsoft tech.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
+Esegui gestione di minacce e vulnerabilità api correlate per automatizzare i flussi gestione delle vulnerabilità flussi di lavoro. Per ulteriori informazioni, vedere questo [post di blog di Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 
 Vedi gli articoli seguenti per le API correlate:
 
@@ -109,5 +109,5 @@ Vedi gli articoli seguenti per le API correlate:
 ## <a name="see-also"></a>Vedere anche
 
 - [Sistemi operativi e piattaforme supportati](tvm-supported-os.md)
-- [Dashboard di gestione delle minacce e delle vulnerabilità](tvm-dashboard-insights.md)
+- [Dashboard delle minacce gestione delle vulnerabilità sicurezza](tvm-dashboard-insights.md)
 - [BLOG: Microsoft Threat & Vulnerability Management aiuta ora migliaia di clienti a individuare, definire le priorità e correggere le vulnerabilità in tempo reale](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

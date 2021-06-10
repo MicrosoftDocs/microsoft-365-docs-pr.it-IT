@@ -1,7 +1,7 @@
 ---
-title: Sequenza temporale degli eventi nella gestione delle minacce e delle vulnerabilità
+title: Sequenza temporale degli eventi in gestione di minacce e vulnerabilità
 description: La sequenza temporale degli eventi è un feed di notizie sui rischi che consente di interpretare il modo in cui i rischi vengono introdotti nell'organizzazione e quali mitigazioni si sono verificate per ridurlo.
-keywords: sequenza temporale degli eventi, sequenza temporale degli eventi di Microsoft Defender for Endpoint, sequenza temporale degli eventi di Microsoft Defender for Endpoint tvm, gestione delle minacce e delle vulnerabilità, Microsoft Defender for Endpoint
+keywords: sequenza temporale dell'evento, sequenza temporale degli eventi di Microsoft Defender for Endpoint, sequenza temporale degli eventi di Microsoft Defender for Endpoint tvm, gestione di minacce e vulnerabilità, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933482"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>Sequenza temporale degli eventi - Gestione delle minacce e delle vulnerabilità
+# <a name="event-timeline---threat-and-vulnerability-management"></a>Sequenza temporale evento - gestione di minacce e vulnerabilità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,7 +45,7 @@ La sequenza temporale dell'evento illustra anche la storia del punteggio di espo
 
 ## <a name="navigate-to-the-event-timeline-page"></a>Passare alla pagina Sequenza temporale eventi
 
-Esistono anche tre punti di ingresso dal dashboard di gestione delle [minacce e delle vulnerabilità:](tvm-dashboard-insights.md)
+Ci sono anche tre punti di ingresso dal [dashboard gestione di minacce e vulnerabilità:](tvm-dashboard-insights.md)
 
 - **Scheda punteggio di esposizione** dell'organizzazione : passa il mouse sui punti dell'evento nel grafico "Punteggio di esposizione nel tempo" e seleziona "Vedi tutti gli eventi di questo giorno". Gli eventi rappresentano vulnerabilità software.
 - **Microsoft Secure Score for Devices**: passa il mouse sui punti dell'evento nel grafico "Il punteggio per i dispositivi nel tempo" e seleziona "Vedi tutti gli eventi di questo giorno". Gli eventi rappresentano nuove valutazioni della configurazione.
@@ -53,7 +53,7 @@ Esistono anche tre punti di ingresso dal dashboard di gestione delle [minacce e 
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>Punteggio di esposizione e Microsoft Secure Score per i dispositivi grafici
 
-Nel dashboard di gestione delle minacce e delle vulnerabilità passa il puntatore del mouse sul grafico del punteggio di esposizione per visualizzare i principali eventi di vulnerabilità software di quel giorno che hanno interessato i dispositivi. Passa il puntatore del mouse sul grafico Microsoft Secure Score for Devices per visualizzare le nuove valutazioni della configurazione della sicurezza che influiscono sul punteggio.
+Nel dashboard gestione di minacce e vulnerabilità, posizionare il puntatore del mouse sul grafico del punteggio di esposizione per visualizzare gli eventi di vulnerabilità software principali di quel giorno che hanno interessato i dispositivi. Passa il puntatore del mouse sul grafico Microsoft Secure Score for Devices per visualizzare le nuove valutazioni della configurazione della sicurezza che influiscono sul punteggio.
 
 Se non sono presenti eventi che influiscono sui dispositivi o sul punteggio per i dispositivi, non verrà visualizzato alcun evento.
 
@@ -120,7 +120,7 @@ Da qui, selezionare **Vai a suggerimenti** sulla sicurezza correlati visualizzar
 
 ## <a name="view-event-timelines-in-software-pages"></a>Visualizzazione delle sequenze temporali degli eventi nelle pagine software
 
-Per aprire una pagina software, seleziona un evento > seleziona il nome del software con collegamento ipertestuale (ad esempio Visual Studio 2017) nella sezione denominata "Componente correlato" nel riquadro a comparsa. [Altre informazioni sulle pagine software](tvm-software-inventory.md#software-pages)
+Per aprire una pagina software, selezionare un evento > selezionare il nome del software con collegamento ipertestuale (ad esempio Visual Studio 2017) nella sezione denominata "Componente correlato" nel riquadro a comparsa. [Altre informazioni sulle pagine software](tvm-software-inventory.md#software-pages)
 
 Verrà visualizzata una pagina intera con tutti i dettagli di un software specifico. Passa il mouse sul grafico per visualizzare la sequenza temporale degli eventi per quel software specifico.
 
@@ -132,7 +132,7 @@ Passare alla scheda sequenza temporale dell'evento per visualizzare tutti gli ev
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
 - [Punteggio di esposizione.](tvm-exposure-score.md)
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)

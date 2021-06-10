@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Gli amministratori possono configurare un connettore per importare e archiviare i dati EML da Veritas in Microsoft 365. Questo connettore consente di archiviare dati da origini dati di terze parti in Microsoft 365. Dopo l'archiviazione di questi dati, è possibile utilizzare funzionalità di conformità come il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti.
+description: Gli amministratori possono configurare un connettore per importare e archiviare i dati EML da Veritas Microsoft 365. Questo connettore consente di archiviare i dati da origini dati di terze parti in Microsoft 365. Dopo l'archiviazione di questi dati, è possibile utilizzare funzionalità di conformità come il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti.
 ms.openlocfilehash: 5261c30097cf571062d3c125841ac112e0552822
 ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
@@ -21,9 +21,9 @@ ms.locfileid: "51164367"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>Configurare un connettore per archiviare i dati EML
 
-Utilizzare un connettore Veritas nel Centro conformità Microsoft 365 per importare e archiviare i dati EML nelle cassette postali degli utenti nell'organizzazione di Microsoft 365. EML è l'estensione di un messaggio di posta elettronica salvato in un file. Il connettore converte il contenuto di un elemento dal formato di origine a un formato di messaggio di posta elettronica e quindi importa l'elemento in una cassetta postale utente.
+Utilizzare un connettore Veritas nel Centro Microsoft 365 conformità per importare e archiviare i dati EML nelle cassette postali degli utenti nell'Microsoft 365 organizzativa. EML è l'estensione di un messaggio di posta elettronica salvato in un file. Il connettore converte il contenuto di un elemento dal formato di origine a un formato di messaggio di posta elettronica e quindi importa l'elemento in una cassetta postale utente.
 
-Dopo aver archiviato i messaggi EML nelle cassette postali degli utenti, è possibile applicare le funzionalità di conformità di Microsoft 365, ad esempio conservazione per controversia legale, eDiscovery, criteri di conservazione ed etichette di conservazione. L'uso di un connettore EML per importare e archiviare i dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri normativi e governativi.
+Dopo aver archiviato i messaggi EML nelle cassette postali degli utenti, è possibile applicare Microsoft 365 di conformità, ad esempio conservazione per controversia legale, eDiscovery, criteri di conservazione ed etichette di conservazione. L'uso di un connettore EML per importare e archiviare i dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
 ## <a name="overview-of-archiving-eml-data"></a>Panoramica dell'archiviazione dei dati EML
 
@@ -35,7 +35,7 @@ La panoramica seguente illustra il processo di utilizzo di un connettore per arc
 
 2. Una volta ogni 24 ore, gli elementi di contenuto dall'origine EML vengono copiati nel sito Veritas Merge1. Durante questo processo, il contenuto di un file EML viene convertito in un formato di messaggio di posta elettronica.
 
-3. Il connettore EML creato nel Centro conformità Microsoft 365 si connette ogni giorno al sito Veritas Merge1 e trasferisce i messaggi in una posizione sicura di Archiviazione di Azure nel cloud Microsoft.
+3. Il connettore EML creato nel Centro conformità Microsoft 365 si connette ogni giorno al sito Veritas Merge1 e trasferisce i messaggi in una posizione Archiviazione di Azure sicura nel cloud Microsoft.
 
 4. Il connettore importa gli elementi dei messaggi convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà *Email* del processo di mapping automatico degli utenti descritto nel [passaggio 3.](#step-3-map-users-and-complete-the-connector-setup) Durante questo processo, viene creata una sottocartella nella cartella Posta in arrivo denominata **EML** nelle cassette postali degli utenti e gli elementi EML vengono importati in tale cartella. Il connettore determina in quale cassetta postale importare gli elementi utilizzando il valore della *proprietà Email.* Ogni messaggio contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante dell'elemento di contenuto.
 
@@ -43,7 +43,7 @@ La panoramica seguente illustra il processo di utilizzo di un connettore per arc
 
 - Creare un account Veritas Merge1 per i connettori Microsoft. Per creare un account, contattare il [Supporto clienti Veritas.](https://globanet.com/ms-connectors-contact) Si accederà a questo account quando si crea il connettore nel passaggio 1.
 
-- L'utente che crea il connettore EML nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo Esportazione importazione cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina **Connettori dati** nel Centro conformità Microsoft 365. Per impostazione predefinita, questo ruolo non viene assegnato a un gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione importazione cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In caso contrario, è possibile creare un gruppo di ruoli, assegnare il ruolo Importazione/Esportazione cassette postali e quindi aggiungere gli utenti appropriati come membri. Per ulteriori informazioni, vedere le sezioni [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) o Modify role [groups](/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "Manage role groups in Exchange Online".
+- L'utente che crea il connettore EML nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo Esportazione importazione cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina **Connettori** dati nel Centro Microsoft 365 conformità. Per impostazione predefinita, questo ruolo non viene assegnato a un gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione importazione cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In caso contrario, è possibile creare un gruppo di ruoli, assegnare il ruolo Importazione/Esportazione cassette postali e quindi aggiungere gli utenti appropriati come membri. Per ulteriori informazioni, vedere le sezioni [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) o Modify role [groups](/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "Manage role groups in Exchange Online".
 
 ## <a name="step-1-set-up-an-eml-connector"></a>Passaggio 1: Configurare un connettore EML
 
@@ -63,19 +63,19 @@ Il primo passaggio consiste nell'accedere alla pagina **Connettori** dati nel Ce
 
 Il secondo passaggio consiste nel configurare il connettore EML nel sito Veritas Merge1. Per informazioni sulla configurazione del connettore EML, vedere [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20EML%20User%20Guide%20.pdf).
 
-Dopo aver fatto **clic su Salva & fine,** viene visualizzata la pagina **Mapping** utenti nella procedura guidata del connettore nel Centro conformità Microsoft 365.
+Dopo aver fatto **clic su Salva & fine,** viene visualizzata la pagina **Mapping** utenti nella procedura guidata del connettore nel Centro Microsoft 365 conformità.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Passaggio 3: mappare gli utenti e completare la configurazione del connettore
 
-Per mappare gli utenti e completare la configurazione del connettore nel Centro conformità Microsoft 365, attenersi alla seguente procedura:
+Per mappare gli utenti e completare la configurazione del connettore nel Centro Microsoft 365 conformità, attenersi alla seguente procedura:
 
-1. Nella pagina **Mapping utenti esterni a utenti di Microsoft 365** abilitare il mapping automatico degli utenti. Gli elementi di origine EML includono una proprietà denominata *Email*, che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi EML vengono importati nella cassetta postale dell'utente.
+1. Nella pagina **Mapping utenti esterni a Microsoft 365** utenti, abilitare il mapping automatico degli utenti. Gli elementi di origine EML includono una proprietà denominata *Email*, che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un Microsoft 365, gli elementi EML vengono importati nella cassetta postale dell'utente.
 
 2. Fare **clic** su Avanti, rivedere le impostazioni e quindi passare alla pagina **Connettori** dati per visualizzare l'avanzamento del processo di importazione per il nuovo connettore.
 
 ## <a name="step-4-monitor-the-eml-connector"></a>Passaggio 4: Monitorare il connettore EML
 
-Dopo aver creato il connettore EML, è possibile visualizzare lo stato del connettore nel Centro conformità Microsoft 365.
+Dopo aver creato il connettore EML, è possibile visualizzare lo stato del connettore nel Centro Microsoft 365 conformità.
 
 1. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
 

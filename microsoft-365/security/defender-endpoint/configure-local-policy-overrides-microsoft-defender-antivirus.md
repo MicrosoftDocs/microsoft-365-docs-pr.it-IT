@@ -58,7 +58,7 @@ Per configurare queste impostazioni:
 
 Posizione | Impostazione | Articolo
 ---|---|---|---
-MAPPE | Configurare l'override delle impostazioni locali per la segnalazione a Microsoft MAPS | [Abilitare la protezione basata sul cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+MAPPE | Configurare l'override delle impostazioni locali per la segnalazione a Microsoft MAPS | [Abilitare la protezione fornita dal cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 Quarantena | Configurare l'override dell'impostazione locale per la rimozione degli elementi dalla cartella quarantena | [Configurare la correzione per le analisi](configure-remediation-microsoft-defender-antivirus.md)
 Protezione in tempo reale | Configurare l'override delle impostazioni locali per il monitoraggio dell'attività di file e programmi nel computer | [Abilitare e configurare Antivirus Microsoft Defender protezione e monitoraggio always-on](configure-real-time-protection-microsoft-defender-antivirus.md)
 Protezione in tempo reale | Configurare l'override delle impostazioni locali per il monitoraggio dell'attività dei file in ingresso e in uscita | [Abilitare e configurare Antivirus Microsoft Defender protezione e monitoraggio always-on](configure-real-time-protection-microsoft-defender-antivirus.md)

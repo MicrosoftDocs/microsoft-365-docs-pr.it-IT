@@ -1,5 +1,5 @@
 ---
-title: Log di diagnostica
+title: Registri diagnostici
 description: Log che potrebbero essere raccolti dai dispositivi durante la risoluzione dei problemi e come vengono archiviati
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52272892"
 ---
-# <a name="diagnostic-logs"></a>Log di diagnostica
+# <a name="diagnostic-logs"></a>Registri diagnostici
 
 Quando risolviamo un problema in un dispositivo gestito da Microsoft Managed Desktop, sia che ne sia stato segnalato uno o identificato dal servizio, potrebbe essere necessario raccogliere alcuni log di diagnostica dal dispositivo senza l'intervento dell'utente. Non vengono raccolti contenuti o informazioni generati dall'utente dalle directory degli utenti. Raccogliamo solo i dati di diagnostica e di log che riguardano l'integrità e lo stato del dispositivo.
 

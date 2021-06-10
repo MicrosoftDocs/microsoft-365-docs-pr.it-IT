@@ -51,7 +51,7 @@ La notifica tramite posta elettronica include informazioni di base sull'avviso e
 È possibile creare regole che determinano i dispositivi e la gravità degli avvisi per l'invio di notifiche tramite posta elettronica per i destinatari della notifica.
 
 
-1. Nel riquadro di spostamento selezionare Impostazioni  >  **Notifiche di posta elettronica**.
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **notifiche tramite posta elettronica**.
 
 2. Fare **clic su Aggiungi elemento**.
 

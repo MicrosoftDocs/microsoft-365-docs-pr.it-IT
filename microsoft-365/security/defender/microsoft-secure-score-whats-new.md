@@ -1,6 +1,6 @@
 ---
 title: Novità di Microsoft Secure Score
-description: Descrive le nuove modifiche apportate a Microsoft Secure Score nel Centro sicurezza Microsoft 365.
+description: Descrive le nuove modifiche apportate a Microsoft Secure Score nel centro sicurezza Microsoft 365 sicurezza.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -34,19 +34,19 @@ ms.locfileid: "51933866"
 
 Per rendere Microsoft Secure Score un migliore rappresentante della tua posizione di sicurezza, abbiamo apportato alcune modifiche. Per informazioni sulle modifiche pianificate, vedere [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-Microsoft Secure Score è disponibile nel Centro sicurezza https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+Microsoft Secure Score è disponibile nel centro sicurezza https://security.microsoft.com/securescore [Microsoft 365 sicurezza.](overview-security-center.md)
     
 ## <a name="february-2021"></a>Febbraio 2021
 
-### <a name="compatibility-with-graph-api"></a>Compatibilità con l'API Graph
+### <a name="compatibility-with-graph-api"></a>Compatibilità con Graph API
 
-Gli elementi consigliati di Microsoft Secure Score forniti tramite l'API Graph saranno visualizzati e ponderati come i consigli attualmente visualizzati nel Centro sicurezza Microsoft 365.
+Gli elementi consigliati di Microsoft Secure Score forniti tramite Graph API saranno visualizzati e ponderati come i consigli attualmente visualizzati nel Centro sicurezza Microsoft 365 sicurezza.
 
 ## <a name="january-2021"></a>Gennaio 2021
 
 ### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>È stata aggiunta la prima raccomandazione sulla sicurezza per Microsoft Teams
 
-I clienti di Microsoft Teams potranno vedere "Impedire agli utenti anonimi di partecipare alle riunioni" come nuova azione di miglioramento in Punteggio sicuro.
+Microsoft Teams clienti potranno vedere "Impedire agli utenti anonimi di partecipare alle riunioni" come nuova azione di miglioramento in Punteggio sicuro.
 
 ## <a name="december-2020"></a>Dicembre 2020
 
@@ -67,7 +67,7 @@ La possibilità di creare ticket ServiceNow tramite Secure Score passando a **Sh
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Sono state aggiunte tre azioni di miglioramento correlate ai servizi per Microsoft Defender per Endpoint:
 
-- Correggere il percorso del servizio senza virgolette per i servizi di Windows
+- Correggere il percorso del servizio senza virgolette per Windows servizi
 - Modificare il percorso eseguibile del servizio in un percorso protetto comune
 - Modificare l'account di servizio per evitare la password memorizzata nella cache nel Registro di sistema di Windows
 
@@ -75,7 +75,7 @@ La possibilità di creare ticket ServiceNow tramite Secure Score passando a **Sh
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Rimuovere l'azione di miglioramento correlata a Microsoft Defender for Endpoint
 
-- Impostare il controllo del contenuto Web dell'app di Windows Store per Microsoft Defender SmartScreen in modo da avvisare
+- Impostare il Microsoft Defender SmartScreen Windows del contenuto Web dell'app di Store per avvisare
 
 ## <a name="august-2020"></a>Agosto 2020
 
@@ -91,7 +91,7 @@ Nel tempo, Identity Secure Score adotta il nuovo modello di punteggio. Fino ad a
 
 ## <a name="updated-improvement-actions"></a>Azioni di miglioramento aggiornate
 
-- Sono state aggiunte azioni di miglioramento di Azure Active Directory
+- Sono state aggiunte Azure Active Directory per il miglioramento delle prestazioni
 - Aggiunta di Microsoft Defender per le azioni di miglioramento dell'identità
 - Suggerimenti sulla sicurezza per Microsoft Defender for Endpoint [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
     - Tutti i consigli sulla sicurezza rilasciati forniti da TVM sono ora disponibili

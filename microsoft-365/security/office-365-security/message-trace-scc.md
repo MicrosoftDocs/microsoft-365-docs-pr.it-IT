@@ -30,17 +30,17 @@ ms.locfileid: "52274473"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-La traccia dei messaggi nel Centro sicurezza & conformità segue i messaggi di posta elettronica mentre viaggiano nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, rinviato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
+La traccia dei messaggi nel Centro sicurezza & conformità segue i messaggi di posta elettronica mentre viaggiano nell'organizzazione Exchange Online sicurezza. È possibile determinare se un messaggio è stato ricevuto, rifiutato, rinviato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
 
 È possibile utilizzare le informazioni dalla traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti su cosa è successo ai messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche ai criteri.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Per utilizzare la traccia dei **messaggi,** è necessario essere membri dei gruppi di ruoli **Gestione** organizzazione, Gestione conformità o Help **Desk** in **Exchange Online.** Per ulteriori informazioni, vedere [Autorizzazioni in Exchange Online](/exchange/permissions-exo/permissions-exo).
+- È necessario essere membri dei gruppi di ruoli **Gestione** **organizzazione,** Gestione conformità o Help **Desk** **Exchange Online** utilizzare la traccia dei messaggi. Per altre informazioni, vedere [Autorizzazioni in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Note:** l'appartenenza al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre agli utenti le autorizzazioni e le autorizzazioni necessarie per altre funzionalità di Microsoft 365.  Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  **Note:** l'appartenenza al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione  di Microsoft 365 offre agli utenti le autorizzazioni e le autorizzazioni necessarie per altre funzionalità in Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
-- Il numero massimo di messaggi visualizzati nei risultati di una traccia dei messaggi dipende dal tipo di rapporto selezionato (per informazioni dettagliate, vedere la sezione [Scegliere](#choose-report-type) il tipo di report). Il cmdlet [Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) in PowerShell di Exchange Online o PowerShell EOP autonomo restituisce tutti i messaggi nei risultati.
+- Il numero massimo di messaggi visualizzati nei risultati di una traccia dei messaggi dipende dal tipo di rapporto selezionato (per informazioni dettagliate, vedere la sezione [Scegliere](#choose-report-type) il tipo di report). Il cmdlet [Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) in Exchange Online PowerShell o PowerShell EOP autonomo restituisce tutti i messaggi nei risultati.
 
 ## <a name="open-message-trace"></a>Apri traccia messaggio
 
@@ -114,7 +114,7 @@ Il valore predefinito è **2 giorni,** ma è possibile specificare intervalli di
 
 Questo è l'ID del messaggio Internet (noto anche come ID client) che si trova nel campo di intestazione **Message-ID:** nell'intestazione del messaggio. Gli utenti possono fornire questo valore per analizzare messaggi specifici.
 
-Questo valore rimane immutato per tutta la durata del messaggio. Per i messaggi creati in Microsoft 365 o Exchange, il valore è nel formato , incluse `<GUID@ServerFQDN>` le parentesi angolari ( \< \> ). Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Altri sistemi di messaggistica potrebbero utilizzare valori o sintassi diversi. Questo valore deve essere univoco, ma non tutti i sistemi di posta elettronica seguono rigorosamente questo requisito. Se il **campo di intestazione Message-ID:** non esiste o è vuoto per i messaggi in arrivo da origini esterne, viene assegnato un valore arbitrario.
+Questo valore rimane immutato per tutta la durata del messaggio. Per i messaggi creati in Microsoft 365 o Exchange, il valore è nel formato , incluse le `<GUID@ServerFQDN>` parentesi angolari ( \< \> ). Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Altri sistemi di messaggistica potrebbero utilizzare valori o sintassi diversi. Questo valore deve essere univoco, ma non tutti i sistemi di posta elettronica seguono rigorosamente questo requisito. Se il **campo di intestazione Message-ID:** non esiste o è vuoto per i messaggi in arrivo da origini esterne, viene assegnato un valore arbitrario.
 
 Quando si utilizza **l'ID** messaggio per filtrare i risultati, assicurarsi di includere la stringa completa, incluse le parentesi angolari.
 
@@ -140,7 +140,7 @@ I tipi di report disponibili sono:
 >
 > - Il riepilogo avanzato e i report estesi vengono preparati utilizzando i dati di traccia dei messaggi archiviati e il download del report può richiedere fino a diverse ore. A seconda del numero di altri amministratori che hanno inviato richieste di report nello stesso momento, potresti anche notare un ritardo prima che la richiesta in coda inizi a essere elaborata.
 > - Sebbene sia possibile selezionare un riepilogo avanzato o un report esteso per qualsiasi intervallo di data/ora, in genere le ultime quattro ore di dati archiviati non saranno ancora disponibili per questi due tipi di report.
-> - La dimensione massima per un report scaricabile è 500 MB. Se un report scaricabile supera i 500 MB, non è possibile aprire il report in Excel o blocco note.
+> - La dimensione massima per un report scaricabile è 500 MB. Se un report scaricabile supera i 500 MB, non è possibile aprirlo in Excel o Blocco note.
 
 Quando si fa clic su Avanti **,** viene visualizzata una pagina di riepilogo in cui sono elencate le opzioni di filtro selezionate, un titolo univoco (modificabile) per il report e l'indirizzo di posta elettronica che riceve la notifica al termine della traccia del messaggio (modificabile e deve essere in uno dei domini accettati dell'organizzazione). Fare **clic su Prepara report** per inviare la traccia del messaggio. Nella pagina **principale Traccia messaggi** è possibile visualizzare lo stato del report nella sezione Report **scaricabili.**
 
@@ -228,7 +228,7 @@ I report di riepilogo avanzato disponibili (completati) sono disponibili nella *
 - **network_message_id**: valore ID messaggio univoco che persiste in tutte le copie del messaggio che potrebbero essere create a causa della biforcazione o dell'espansione del gruppo di distribuzione. Un valore di esempio è `1341ac7b13fb42ab4d4408cf7f55890f` .
 - **original_client_ip**: Indirizzo IP del client del mittente.
 - **directionality**: Indica se il messaggio è stato inviato in ingresso (1) all'organizzazione o se è stato inviato in uscita (2) dall'organizzazione.
-- **connector_id**: Nome del connettore di origine o di destinazione. Per ulteriori informazioni sui connettori in Exchange Online, vedere [Configure mail flow using connectors in Office 365.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- **connector_id**: Nome del connettore di origine o di destinazione. Per ulteriori informazioni sui connettori in Exchange Online, vedere [Configure mail flow using connectors in Office 365](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 - **delivery_priority** <sup>*</sup> : indica se il messaggio è stato inviato con **priorità Alta,** Bassa **o** Normale.
 
 <sup>*</sup> Queste proprietà sono disponibili solo nei report di riepilogo avanzato.
@@ -244,7 +244,7 @@ Disponibile (completato) I report estesi sono disponibili nella **sezione Report
 - **source_context**: informazioni aggiuntive associate al **campo di** origine. Ad esempio:
   - `Protocol Filter Agent`
   - `3489061114359050000`
-- **source**: componente di Exchange Online responsabile dell'evento. Ad esempio:
+- **source**: Exchange Online componente responsabile dell'evento. Ad esempio:
   - `AGENT`
   - `MAILBOXRULE`
   - `SMTP`
@@ -262,15 +262,15 @@ Disponibile (completato) I report estesi sono disponibili nella **sezione Report
   - **MAILBOXRULE**: contiene il **internal_message_id** del messaggio in ingresso che ha causato la generazione del messaggio in uscita da parte della regola di Posta in arrivo. Per altri tipi di eventi, questo campo è in genere vuoto.
 - **return_path**: Indirizzo di posta elettronica del mittente specificato dal **comando MAIL FROM** che ha inviato il messaggio. Anche se questo campo non è mai vuoto, il valore dell'indirizzo del mittente null può essere rappresentato come `<>` .
 - **message_info**: Informazioni aggiuntive sul messaggio. Ad esempio:
-  - Data e ora di origine del messaggio in UTC per `DELIVER` ed `SEND` eventi. La data-ora di origine è l'ora in cui il messaggio è entrato per la prima volta nell'organizzazione di Exchange Online. La data-ora UTC è rappresentata nel formato data-ora ISO 8601: , dove = anno, = mese, = giorno, indica l'inizio del componente `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` ora, `hh` = ora, `mm` = minuto, = secondo, `ss` = `fff` `Z` `Zulu` frazioni di secondo e indica , che è un altro modo per indicare UTC.
+  - Data e ora di origine del messaggio in UTC per `DELIVER` ed `SEND` eventi. La data-ora di origine è l'ora in cui il messaggio è entrato per la prima volta nell'Exchange Online organizzazione. La data-ora UTC è rappresentata nel formato data-ora ISO 8601: , dove = anno, = mese, = giorno, indica l'inizio del componente `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` ora, `hh` = ora, `mm` = minuto, = secondo, `ss` = `fff` `Z` `Zulu` frazioni di secondo e indica , che è un altro modo per indicare UTC.
   - Errori di autenticazione. Ad esempio, è possibile visualizzare il valore e il tipo di autenticazione utilizzato quando si è verificato `11a` l'errore di autenticazione.
-- **tenant_id**: Valore GUID che rappresenta l'organizzazione di Exchange Online (ad esempio, `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
+- **tenant_id**: Valore GUID che rappresenta l'organizzazione Exchange Online (ad esempio, `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
 - **original_server_ip**: Indirizzo IP del server originale.
 - **custom_data**: contiene dati correlati a tipi di evento specifici. Per ulteriori informazioni, vedere le sezioni seguenti.
 
 #### <a name="custom_data-values"></a>custom_data valori
 
-Il **custom_data** per un evento viene utilizzato da un'ampia gamma di agenti `AGENTINFO` di Exchange Online per registrare i dettagli dell'elaborazione dei messaggi. Alcuni degli agenti più interessanti sono descritti nelle sezioni seguenti.
+Il **custom_data** per un evento viene utilizzato da un'ampia gamma di agenti Exchange Online per registrare i dettagli `AGENTINFO` di elaborazione dei messaggi. Alcuni degli agenti più interessanti sono descritti nelle sezioni seguenti.
 
 #### <a name="spam-filter-agent"></a>Agente filtro posta indesiderata
 
@@ -344,8 +344,8 @@ Un **custom_data** che inizia con deriva dall'agente della regola di trasporto p
 |---|---|
 |`ETR|ruleId=<guid>`|L'ID regola corrispondente.|
 |`St=<datetime>`|Data e ora in FORMATO UTC in cui si è verificata la corrispondenza della regola.|
-|`Action=<ActionDefinition>`|L'azione che è stata applicata. Per un elenco delle azioni disponibili, vedere [Mail flow rule actions in Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
-|`Mode=<Mode>`|La modalità della regola. I valori validi sono:<ul><li>**Enforce**: tutte le azioni sulla regola verranno applicate.</li><li>**Test con suggerimenti per i criteri:**: verranno inviate tutte le azioni di suggerimento per i criteri, ma non verranno eseguite altre azioni di applicazione.</li><li>**Test senza suggerimenti per i** criteri: le azioni verranno elencate in un file di registro, ma i mittenti non riceveranno alcuna notifica e le azioni di imposizione non verranno eseguite.</li></ul>|
+|`Action=<ActionDefinition>`|L'azione che è stata applicata. Per un elenco delle azioni disponibili, vedere [Mail flow rule actions in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
+|`Mode=<Mode>`|La modalità della regola. I valori validi sono:<ul><li>**Enforce**: tutte le azioni sulla regola verranno applicate.</li><li>**Test con criteri Suggerimenti:**: verranno inviate tutte le azioni di suggerimento per i criteri, ma non verranno eseguite altre azioni di applicazione.</li><li>**Test senza criteri Suggerimenti**: le azioni verranno elencate in un file di registro, ma i mittenti non riceveranno alcuna notifica e le azioni di imposizione non verranno eseguite.</li></ul>|
 |
 
 Un esempio **custom_data** per un messaggio che soddisfa le condizioni di una regola del flusso di posta è simile al seguente:

@@ -59,11 +59,11 @@ Le singole autorizzazioni disponibili e ciò che è incluso o non incluso nei gr
 
 Se non ti piace le autorizzazioni predefinite nei gruppi di autorizzazioni preimpostati, puoi usare autorizzazioni personalizzate quando crei o modifica tag di quarantena personalizzati. Per ulteriori informazioni sulle attività di ogni autorizzazione, vedere la sezione Dettagli sulle autorizzazioni [per i tag](#quarantine-tag-permission-details) di quarantena più avanti in questo articolo.
 
-È possibile creare e assegnare tag di quarantena nel Centro sicurezza & conformità o in PowerShell (PowerShell di Exchange Online per le organizzazioni di Microsoft 365 con cassette postali di Exchange Online; PowerShell EOP autonomo nelle organizzazioni EOP senza cassette postali di Exchange Online).
+È possibile creare e assegnare tag di quarantena nel Centro sicurezza & conformità o in PowerShell (Exchange Online PowerShell per organizzazioni Microsoft 365 con cassette postali di Exchange Online; PowerShell EOP autonomo nelle organizzazioni EOP senza cassette postali di Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **Tag quarantena,** aprire <https://protection.office.com/quarantineTags> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Tag quarantena,** aprire <https://protection.office.com/quarantineTags> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -111,7 +111,7 @@ Ora sei pronto per assegnare il tag di quarantena a una funzionalità di quarant
 
 ### <a name="create-quarantine-tags-in-powershell"></a>Creare tag di quarantena in PowerShell
 
-Se si preferisce utilizzare PowerShell per creare tag di quarantena, connettersi a PowerShell di Exchange Online o PowerShell di Exchange Online Protection e utilizzare il cmdlet **New-QuarantineTag.** Sono disponibili due metodi diversi tra cui scegliere:
+Se si preferisce usare PowerShell per creare tag di quarantena, connettersi Exchange Online PowerShell o Exchange Online Protection PowerShell e utilizzare il cmdlet **New-QuarantineTag.** Sono disponibili due metodi diversi tra cui scegliere:
 
 - Utilizzare il _parametro EndUserQuarantinePermissionsValue._
 - Utilizzare il _parametro EndUserQuarantinePermissions._
@@ -245,7 +245,7 @@ Nelle _funzionalità_ di protezione supportate per mettere in quarantena i messa
 |[Regole del flusso di](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) posta (note anche come regole di trasporto) con l'azione: **Recapita il** messaggio alla quarantena ospitata (_Quarantine_).|No|n/d|
 |
 
-<sup>\*</sup> Le impostazioni di protezione della rappresentazione sono disponibili solo nei criteri anti-phishing in Microsoft Defender per Office 365.
+<sup>\*</sup>Le impostazioni di protezione della rappresentazione sono disponibili solo nei criteri anti-phishing in Microsoft Defender per Office 365.
 
 Se si è soddisfatti delle autorizzazioni dell'utente finale fornite dai tag di quarantena predefiniti, non è necessario eseguire alcun'operazione. Se si desidera personalizzare le funzionalità dell'utente finale (pulsanti disponibili) nelle notifiche di posta indesiderata dell'utente finale o nei dettagli dei messaggi in quarantena, è possibile assegnare un tag di quarantena personalizzato.
 
@@ -269,7 +269,7 @@ Le istruzioni complete per la creazione e la modifica dei criteri di protezione 
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Assegnare tag di quarantena nei criteri di protezione da posta indesiderata in PowerShell
 
-Se si preferisce utilizzare PowerShell per assegnare tag di quarantena nei criteri di protezione da posta indesiderata, connettersi a PowerShell di Exchange Online o PowerShell di Exchange Online Protection e utilizzare la sintassi seguente:
+Se si preferisce utilizzare PowerShell per assegnare tag di quarantena nei criteri di protezione da posta indesiderata, connettersi Exchange Online PowerShell o Exchange Online Protection PowerShell e utilizzare la sintassi seguente:
 
 ```powershell
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
@@ -320,7 +320,7 @@ Le impostazioni globali per i tag di quarantena consentono di personalizzare le 
 
 3. Nel riquadro **a comparsa Impostazioni notifica** quarantena visualizzato configurare alcune o tutte le impostazioni seguenti:
 
-   - **Usa il logo dell'azienda:** selezionare questa opzione per sostituire il logo Microsoft predefinito utilizzato nella parte superiore delle notifiche di posta indesiderata dell'utente finale. Prima di eseguire questa operazione, è necessario seguire le istruzioni in Personalizzare il tema [di Microsoft 365](../../admin/setup/customize-your-organization-theme.md) per l'organizzazione per caricare il logo personalizzato.
+   - **Usa il logo dell'azienda:** selezionare questa opzione per sostituire il logo Microsoft predefinito utilizzato nella parte superiore delle notifiche di posta indesiderata dell'utente finale. Prima di eseguire questa operazione, è necessario seguire le istruzioni in Personalizzare il tema Microsoft 365 [per](../../admin/setup/customize-your-organization-theme.md) l'organizzazione per caricare il logo personalizzato.
 
      Lo screenshot seguente mostra un logo personalizzato in una notifica di posta indesiderata dell'utente finale:
 

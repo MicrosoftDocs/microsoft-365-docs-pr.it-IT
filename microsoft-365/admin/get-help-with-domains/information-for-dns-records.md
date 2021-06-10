@@ -100,6 +100,6 @@ ms.locfileid: "52635727"
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Domande frequenti](../setup/domains-faq.yml) sui domini (articolo)\
-[Individuare e risolvere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)\
+[Domande frequenti sui domini](../setup/domains-faq.yml) (articolo)\
+[Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](find-and-fix-issues.md) (articolo)\
 [Gestire i domini](index.yml) (pagina di collegamento)

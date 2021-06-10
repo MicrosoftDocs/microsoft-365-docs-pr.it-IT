@@ -19,14 +19,14 @@ ms.locfileid: "50917641"
 ---
 # <a name="work-with-app-control"></a>Usare il controllo delle applicazioni
 
-Dopo la distribuzione del controllo dell'app nell'ambiente, sia tu che Microsoft Managed Desktop Operations avete responsabilità continue. Ad esempio, potresti voler aggiungere una nuova app nell'ambiente o aggiungere (o rimuovere) un firmatario attendibile. Per migliorare la sicurezza, tutte le app devono essere firmate con codice prima di rilasciarle agli utenti. I dettagli dell'autore di un'app includono informazioni sul firmatario.
+Dopo la distribuzione del controllo dell'app nell'ambiente, sia tu che Microsoft Managed Desktop le operazioni hanno responsabilità continue. Ad esempio, potresti voler aggiungere una nuova app nell'ambiente o aggiungere (o rimuovere) un firmatario attendibile. Per migliorare la sicurezza, tutte le app devono essere firmate con codice prima di rilasciarle agli utenti. I dettagli dell'autore di un'app includono informazioni sul firmatario.
 
 
 ## <a name="add-a-new-app"></a>Aggiungere una nuova app
 
 Per aggiungere una nuova app, segui questi passaggi:
 
-1. Aggiungere l'app a [Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
+1. Aggiungi l'app a [Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
 2. Distribuisci l'app in qualsiasi dispositivo nell'anello Test. 
 3. Testa la tua app in base ai processi aziendali standard. 
 4. Controlla Visualizzatore eventi in Registri applicazioni e **servizi\Microsoft\Windows\AppLocker,** cercando eventuali eventi **8003** o **8006.** Questi eventi indicano che l'app verrà bloccata. Per altre informazioni su tutti gli eventi di App Locker e sui relativi significati, vedi [Uso del Visualizzatore eventi con AppLocker.](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)
@@ -42,7 +42,7 @@ Quando si apre una richiesta di firmatario, è necessario fornire prima alcuni d
     - Versione dell'applicazione 
     - Descrizione 
     - Tipo di modifica ("aggiungi" o "rimuovi")  
-    - Dettagli dell'autore (ad esempio: "O= <publisher name> ,L= <location> ,S=State,C=Country") 
+    - Publisher dettagli (ad esempio: "O= <publisher name> ,L= <location> ,S=State,C=Country") 
 
 > [!NOTE]
 > Per rimuovere l'attendibilità per un'app, segui gli stessi passaggi, ma imposta **Cambia tipo** su *rimuovi*.
@@ -75,4 +75,4 @@ Per accedere ai dati dell'autore per un'app, segui questi passaggi:
     - Nome applicazione 
     - Versione dell'applicazione 
     - Descrizione 
-    - Dettagli dell'autore (ad esempio: "O= <publisher name> , L= <location> , S=State, C=Country")
+    - Publisher dettagli (ad esempio: "O= <publisher name> , L= <location> , S=State, C=Country")

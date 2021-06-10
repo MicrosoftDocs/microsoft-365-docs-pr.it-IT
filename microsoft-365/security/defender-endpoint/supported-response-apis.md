@@ -47,7 +47,7 @@ Eseguire ricerca del virus | Avviare in remoto un'analisi antivirus per identifi
 Arrestare e mettere in quarantena un file |  Eseguire questa chiamata per interrompere l'esecuzione di processi, file in quarantena ed eliminare la persistenza, ad esempio le chiavi del Registro di sistema.
 Esempio di richiesta | Esegui questa chiamata per richiedere un esempio di file da un dispositivo specifico. Il file verrà raccolto dal dispositivo e caricato in un archivio sicuro.
 Blocca file | Eseguire questa API per impedire l'ulteriore propagazione di un attacco nell'organizzazione vietando file potenzialmente dannosi o malware sospetto. 
-Sblocca file | Consentire l'esecuzione di un file nell'organizzazione tramite Microsoft Defender Antivirus.
+Sblocca file | Consentire l'esecuzione di un file nell'organizzazione usando Antivirus Microsoft Defender.
 Ottenere l'URI di firma di accesso condiviso del pacchetto | Esegui questa API per ottenere un URI che consenta il download di un pacchetto di analisi.
 Get MachineAction object | Esegui questa API per ottenere l'oggetto MachineAction.
 Get MachineActions collection | Esegui questa operazione per ottenere la raccolta MachineAction.

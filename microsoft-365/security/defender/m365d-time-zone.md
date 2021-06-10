@@ -1,7 +1,7 @@
 ---
-title: Impostare il fuso orario per le funzionalità di Microsoft 365 Defender
+title: Impostare il fuso orario per le Microsoft 365 Defender
 description: Informazioni su come scegliere il fuso orario per le informazioni di data e ora associate a incidenti, indagine e correzione automatizzate e ricerca avanzata
-keywords: fuso orario, data, ora, Microsoft 365 Defender, M365, sicurezza, incidenti, analisi e risposta automatizzate, AIR, ricerca avanzata
+keywords: fuso orario, data, ora, Microsoft 365 Defender, M365, sicurezza, incidenti, indagine e risposta automatizzate, AIR, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -37,9 +37,9 @@ ms.locfileid: "51934418"
 
 
 
-Microsoft 365 Defender può visualizzare informazioni su data e ora utilizzando il fuso orario locale o UTC. Il fuso orario selezionato verrà applicato a tutte le informazioni di data e ora visualizzate nelle funzionalità seguenti nel Centro sicurezza Microsoft 365:
+Microsoft 365 Defender può visualizzare informazioni su data e ora usando il fuso orario locale o UTC. Il fuso orario selezionato verrà applicato a tutte le informazioni di data e ora visualizzate nelle funzionalità seguenti nel Centro sicurezza Microsoft 365:
 - Incidenti
 - Indagine e correzione automatizzate, incluso il centro notifiche
 - Ricerca avanzata
 
-Per impostare il fuso orario per queste funzionalità, passare a **Impostazioni** Fuso orario  >  **di Microsoft 365**  >  Defender.
+Per impostare il fuso orario per queste funzionalità, vai a **Impostazioni**  >  Microsoft 365 fuso orario di **Defender.**  >  

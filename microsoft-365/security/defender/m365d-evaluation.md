@@ -1,7 +1,7 @@
 ---
 title: Valutare Microsoft 365 Defender
-description: Configurare il laboratorio di valutazione o l'ambiente pilota di Microsoft 365 Defender per provare e sperimentare la soluzione di sicurezza progettata per proteggere dispositivi, identità, dati e applicazioni nell'organizzazione.
-keywords: Microsoft 365 Defender trial, provare Microsoft 365 Defender, valutare Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+description: Configurare il laboratorio di Microsoft 365 defender o l'ambiente pilota per provare e sperimentare la soluzione di sicurezza progettata per proteggere dispositivi, identità, dati e applicazioni nell'organizzazione.
+keywords: Microsoft 365 Prova defender, prova Microsoft 365 Defender, valuta Microsoft 365 Defender, laboratorio di valutazione di Microsoft 365 Defender, pilota di Microsoft 365 Defender, cyber security, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933170"
 ---
-# <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Creare un ambiente pilota o un laboratorio di valutazione di Microsoft 365 Defender 
+# <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Creare un ambiente pilota o Microsoft 365 di valutazione di Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,9 +37,9 @@ ms.locfileid: "51933170"
 - Microsoft 365 Defender
 
 
-Questa guida consente di configurare un ambiente lab con utenti e gruppi, quindi di illustrare la configurazione delle funzionalità in Microsoft 365 Defender in modo da poter simulare un attacco di minacce e ottenere un risultato di prova significativo. 
+Questa guida consente di configurare un ambiente lab con utenti e gruppi, quindi di illustrare la configurazione delle funzionalità di Microsoft 365 Defender in modo da poter simulare un attacco di minacce e ottenere un risultato di prova significativo. 
 
-Lo scopo della creazione di questo laboratorio di valutazione o ambiente pilota è illustrare le funzionalità complete e integrate di Microsoft 365 Defender. Scopri come questa soluzione di sicurezza intelligente rileva, impedisce, analizza automaticamente e risponde alle minacce avanzate dell'organizzazione. 
+Lo scopo della creazione di questo laboratorio di valutazione o ambiente pilota è illustrare le funzionalità complete e integrate Microsoft 365 Defender. Scopri come questa soluzione di sicurezza intelligente rileva, impedisce, analizza automaticamente e risponde alle minacce avanzate dell'organizzazione. 
 
 
 Verrà illustrata la procedura per avviare la valutazione di Microsoft 365 Defender in base ai percorsi di distribuzione consigliati. L'obiettivo è quello di configurare la soluzione di sicurezza in un ambiente lab con un account di prova o in un ambiente pilota in produzione con una licenza completa. La preparazione del laboratorio di valutazione o dell'ambiente pilota può essere utile per presentare i casi di utilizzo delle operazioni di sicurezza ai decision maker dell'organizzazione. Al termine dell'esecuzione delle simulazioni di attacco e si è soddisfatti dei risultati, è possibile distribuirlo e operarlo completamente nell'organizzazione con l'aiuto di tecnici o esperti dell'organizzazione. 
@@ -47,7 +47,7 @@ Verrà illustrata la procedura per avviare la valutazione di Microsoft 365 Defen
 Questa guida ti aiuterà a:
 - Configurare il server lab e i computer
 - Configurare Active Directory con utenti e gruppi
-- Configurare Microsoft Defender per l'identità, Microsoft Defender per Office 365, Microsoft Defender for Endpoint e Microsoft Cloud App Security
+- Configurare Microsoft Defender per l'identità, Microsoft Defender per Office 365, Microsoft Defender per Endpoint e Microsoft Cloud App Security
 - Configurare criteri locali per il server e i computer
 - Simulare un attacco di minaccia per generare un evento imprevisto o un avviso di test in Microsoft 365 Defender
 
@@ -57,27 +57,27 @@ Questa guida ti aiuterà a:
 
 ## <a name="deployment-phases"></a>Fasi della distribuzione
 
-La creazione di un ambiente lab di valutazione di Microsoft 365 Defender è in tre fasi.
+Esistono tre fasi per la creazione di un ambiente Microsoft 365 lab di valutazione di Defender.
 
 ![Fasi di distribuzione: preparazione, installazione, onboard](../../media/evaluation-guide-phases.png)
 
 |Fase | Descrizione | 
 |:-------|:-----|
-|[Fase 1: preparazione](prepare-m365d-eval.md)| Informazioni su cosa è necessario considerare quando si distribuisce Microsoft 365 Defender in un laboratorio di valutazione o in un ambiente pilota: <br><br>- Parti interessate e disconnessione <br> - Considerazioni sull'ambiente <br>- Accesso <br>- Configurazione di Azure Active Directory <br> - Ordine di configurazione
-|[Fase 2: configurazione](setup-m365deval.md)|  Eseguire i passaggi iniziali per accedere al Centro sicurezza Microsoft 365 per configurare il lab di valutazione o l'ambiente pilota di Microsoft 365 Defender. Sarai guidato a:<br><br>- Iscriversi alla versione di valutazione di Microsoft 365 E5 <br>  - Configurare il dominio<br>- Assegnare le licenze di Microsoft 365 E5<br>- Completare la configurazione guidata nel portale|
-|[Fase 3: configurare & onboard](config-m365d-eval.md) | Configurare ogni pilastro di Microsoft 365 Defender e gli endpoint di onboard. Sarai guidato a:<br><br>- Configurare Microsoft Defender per Office 365<br>- Configurare Microsoft Cloud App Security<br>- Configurare Microsoft Defender per l'identità<br>- Configurare Microsoft Defender per Endpoint
+|[Fase 1: preparazione](prepare-m365d-eval.md)| Informazioni su cosa è necessario considerare quando si distribuisce Microsoft 365 Defender in un laboratorio di valutazione o in un ambiente pilota: <br><br>- Parti interessate e disconnessione <br> - Considerazioni sull'ambiente <br>- Accesso <br>- Azure Active Directory configurazione <br> - Ordine di configurazione
+|[Fase 2: configurazione](setup-m365deval.md)|  Eseguire i passaggi iniziali per accedere Microsoft 365 Security Center per configurare il laboratorio di Microsoft 365 di valutazione o l'ambiente pilota di Microsoft 365 Defender. Sarai guidato a:<br><br>- Iscriversi per la Microsoft 365 E5 prova <br>  - Configurare il dominio<br>- Assegnare Microsoft 365 E5 licenze<br>- Completare la configurazione guidata nel portale|
+|[Fase 3: configurare & onboard](config-m365d-eval.md) | Configura ogni Microsoft 365 pilastro di Defender e gli endpoint di onboard. Sarai guidato a:<br><br>- Configurare Microsoft Defender per Office 365<br>- Configurare Microsoft Cloud App Security<br>- Configurare Microsoft Defender per l'identità<br>- Configurare Microsoft Defender per Endpoint
 
 
-Dopo aver completato questa guida, si sarebbero identificate le parti interessate coinvolte e le approvazioni necessarie, avere le autorizzazioni di accesso corrette, aver effettuato la registrazione per la versione di valutazione, configurato i domini e ognuno dei pilastri di Microsoft 365 Defender e gli endpoint verranno onboarded al servizio.
+Dopo aver completato questa guida, si sarebbero identificate le parti interessate coinvolte e le approvazioni necessarie, avere le autorizzazioni di accesso corrette, aver effettuato la registrazione per la versione di valutazione, i domini configurati e ognuno dei pilastri di Microsoft 365 Defender e gli endpoint verranno onboarded al servizio.
 
-## <a name="key-capabilities"></a>Caratteristiche chiave
+## <a name="key-capabilities"></a>Funzionalità chiave
 
-Mentre Microsoft 365 Defender offre molte funzionalità, lo scopo principale di questa guida alla distribuzione è quello di iniziare a usare i dispositivi di onboarding. Oltre all'onboarding, questa guida ti consente di iniziare con le funzionalità seguenti.
+Anche Microsoft 365 Defender offre molte funzionalità, lo scopo principale di questa guida alla distribuzione è iniziare a usare i dispositivi di onboarding. Oltre all'onboarding, questa guida ti consente di iniziare con le funzionalità seguenti.
 
 
 Funzionalità | Descrizione 
 :---|:---
-Microsoft Defender per Office 365 | Aiuta a proteggere l'intero ambiente di Office 365 dalle minacce odierne
+Microsoft Defender per Office 365 | Aiuta a proteggere l Office 365 intero invidio dalle minacce di oggi
 Microsoft Defender per identità | Identifica e rileva le minacce su identità compromesse e azioni insider dannose.
 Microsoft Cloud App Security | Offre visibilità completa, controlla il viaggio dei dati e rileva le minacce informatiche nei servizi cloud.
 Microsoft Defender per endpoint | Impedisce, rileva e fornisce funzionalità di risposta alle minacce avanzate con una sicurezza completa degli endpoint.
@@ -88,11 +88,11 @@ Microsoft Defender per endpoint | Impedisce, rileva e fornisce funzionalità di 
 Per questa guida sono disponibili le attività seguenti:
 -   Configurare Azure Active Directory
 -   Configurare Microsoft 365 Defender
-    -   Iscriversi alla versione di valutazione di Microsoft 365 E5 o usare la licenza completa se si esegue un progetto pilota
+    -   Iscriversi per Microsoft 365 E5 prova o usare la licenza completa se si esegue un progetto pilota
     -   Configurare il dominio
-    -   Assegnare licenze di Microsoft 365 E5
+    -   Assegnare Microsoft 365 E5 licenze
     -   Completamento dell'installazione guidata all'interno del portale
--   Configurare tutti i pilastri di Microsoft 365 Defender in base alle procedure consigliate
+-   Configurare tutti i Microsoft 365 Defender in base alle procedure consigliate
     -   Microsoft Defender per Office 365
     -   Microsoft Defender per identità
     -   Microsoft Cloud App Security
@@ -107,4 +107,4 @@ Gli elementi seguenti non sono nell'ambito di questa guida alla distribuzione:
 
 ## <a name="next-step"></a>Passaggio successivo
 [Fase 1: preparare](prepare-m365d-eval.md) 
-<br> Preparare il laboratorio di valutazione o l'ambiente pilota di Microsoft 365 Defender
+<br> Preparare il laboratorio di Microsoft 365 o l'ambiente pilota di Defender

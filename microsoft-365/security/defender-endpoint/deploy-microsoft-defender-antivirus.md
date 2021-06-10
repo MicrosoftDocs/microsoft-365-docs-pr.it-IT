@@ -1,7 +1,7 @@
 ---
 title: Distribuire e abilitare in Microsoft Defender Antivirus
-description: Distribuire Microsoft Defender Antivirus per la protezione degli endpoint con Microsoft Intune, Microsoft Endpoint Configuration Manager, Criteri di gruppo, cmdlet di PowerShell o WMI.
-keywords: distribuire, abilitare, Microsoft Defender Antivirus
+description: Distribuire Antivirus Microsoft Defender per la protezione degli endpoint con Microsoft Intune, Microsoft Endpoint Configuration Manager, Criteri di gruppo, cmdlet di PowerShell o WMI.
+keywords: distribuire, abilitare, Antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -32,16 +32,16 @@ ms.locfileid: "52274497"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-A seconda dello strumento di gestione in uso, potrebbe essere necessario abilitare o configurare in modo specifico la protezione di Microsoft Defender Antivirus. 
+A seconda dello strumento di gestione in uso, potrebbe essere necessario abilitare o configurare in modo specifico Antivirus Microsoft Defender protezione. 
 
-Vedere la tabella in [Deploy, manage, and report on Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md#ref2) per istruzioni su come abilitare la protezione con Microsoft Intune, Microsoft Endpoint Configuration Manager, Criteri di gruppo, Active Directory, Microsoft Azure, cmdlet di PowerShell e Windows Management Instruction (WMI).
+Vedere la tabella in [Deploy, manage, and report on Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md#ref2) per istruzioni su come abilitare la protezione con Microsoft Intune, Microsoft Endpoint Configuration Manager, Criteri di gruppo, Active Directory, Microsoft Azure, cmdlet di PowerShell e Windows Management Instruction (WMI).
 
-Alcuni scenari richiedono ulteriori indicazioni su come distribuire o configurare correttamente la protezione di Microsoft Defender Antivirus, ad esempio gli ambienti VDI (Virtual Desktop Infrastructure).
+Alcuni scenari richiedono ulteriori indicazioni su come distribuire o configurare correttamente la protezione Antivirus Microsoft Defender, ad esempio gli ambienti Virtual Desktop Infrastructure (VDI).
 
-Nell'articolo rimanente di questa sezione vengono forniti consigli end-to-end e procedure consigliate per la configurazione di Microsoft Defender Antivirus nelle macchine virtuali in un [ambiente VDI](deployment-vdi-microsoft-defender-antivirus.md)o Servizi Desktop remoto .
+Nell'articolo rimanente di questa sezione vengono forniti consigli end-to-end e procedure consigliate per la configurazione di Antivirus Microsoft Defender in macchine virtuali in un [ambiente VDI](deployment-vdi-microsoft-defender-antivirus.md)o Servizi Desktop remoto .
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Distribuire, gestire gli aggiornamenti e creare report su Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Distribuire, gestire gli aggiornamenti e creare report Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Guida alla distribuzione di Microsoft Defender Antivirus in un ambiente VDI (Virtual Desktop Infrastructure)](deployment-vdi-microsoft-defender-antivirus.md)

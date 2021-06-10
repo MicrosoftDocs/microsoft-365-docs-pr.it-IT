@@ -42,7 +42,7 @@ Queste applicazioni non sono considerate virus, malware o altri tipi di minacce,
 
 Queste applicazioni possono aumentare il rischio che la rete sia infettata da malware, causare infezioni da malware più difficili da identificare e può sprecare risorse IT nella pulizia delle applicazioni.
 
-## <a name="how-it-works"></a>Funzionamento
+## <a name="how-it-works"></a>Come funziona
 
 Microsoft Defender for Endpoint su macOS può rilevare e segnalare i file PUA. Se configurati in modalità di blocco, i file PUA vengono spostati in quarantena.
 
@@ -54,7 +54,7 @@ La protezione dell'applicazione di accesso pubblico in Microsoft Defender per En
 
 - **Disattivato:** la protezione dell'applicazione può essere disabilitata.
 - **Controllo:** i file PUA vengono riportati nei log del prodotto, ma non in Microsoft Defender Security Center. All'utente non viene presentata alcuna notifica e non viene eseguita alcuna azione da parte del prodotto.
-- **Blocca:** i file PUA vengono segnalati nei log del prodotto e in Microsoft Defender Security Center. All'utente viene presentata una notifica e viene eseguita un'azione da parte del prodotto.
+- **Blocca:** i file PUA vengono riportati nei log del prodotto e Microsoft Defender Security Center. All'utente viene presentata una notifica e viene eseguita un'azione da parte del prodotto.
 
 >[!WARNING]
 >Per impostazione predefinita, la protezione puA è configurata in **modalità** di controllo.

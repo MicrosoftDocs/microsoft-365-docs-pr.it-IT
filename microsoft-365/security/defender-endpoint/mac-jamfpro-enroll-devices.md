@@ -50,7 +50,7 @@ Per un elenco completo, vedere [About Computer Enrollment.](https://docs.jamf.co
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>Metodo di registrazione 1: inviti alla registrazione
 
-1. Nel dashboard di Jamf Pro, accedere a **Inviti di registrazione.**
+1. Nel dashboard jamf Pro, passare a **Inviti di registrazione**.
 
     ![Immagine delle impostazioni di configurazione1](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
@@ -80,7 +80,7 @@ Per un elenco completo, vedere [About Computer Enrollment.](https://docs.jamf.co
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>Enrollment Method 2: Prestage Enrollments
 
-1. Nel dashboard di Jamf Pro, passare a **Registrazioni prestage**.
+1. Nel dashboard jamf Pro, passare a **Registrazioni prestage**.
 
     ![Immagine delle impostazioni di configurazione9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 

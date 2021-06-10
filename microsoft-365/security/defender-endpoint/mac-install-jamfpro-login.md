@@ -41,11 +41,11 @@ ms.locfileid: "51935582"
 
 2. Selezionare **Computer**.
 
-    ![Immagine del dashboard di Jamf Pro2](images/jamf-pro-dashboard.png)
+    ![Immagine di Jamf Pro dashboard2](images/jamf-pro-dashboard.png)
 
 3. Verranno visualizzati i criteri disponibili.
 
-     ![Immagine del dashboard di Jamf Pro3](images/jamfpro-settings.png)
+     ![Immagine di Jamf Pro dashboard3](images/jamfpro-settings.png)
 
 
 ## <a name="next-step"></a>Passaggio successivo

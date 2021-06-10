@@ -52,7 +52,7 @@ Se è possibile riprodurre un problema, aumentare innanzitutto il livello di reg
 
 2. Riprodurre il problema.
 
-3. Eseguire il comando seguente per eseguire il backup dei log di Defender for Endpoint. I file verranno archiviati all'interno di un archivio ZIP.
+3. Eseguire il comando seguente per eseguire il backup dei log di Defender for Endpoint. I file verranno archiviati all'interno di un .zip archivio.
 
    ```bash
    sudo mdatp diagnostic create
@@ -79,7 +79,7 @@ Se si verifica un errore durante l'installazione, il programma di installazione 
 
 Il registro dettagliato verrà salvato in `/var/log/microsoft/mdatp_install.log` . Se si verificano problemi durante l'installazione, inviare questo file in modo da poter diagnosticare la causa.
 
-## <a name="uninstall"></a>Uninstall
+## <a name="uninstall"></a>Disinstalla
 
 Esistono diversi modi per disinstallare Defender for Endpoint in Linux. Se stai usando uno strumento di configurazione come Puppet, segui le istruzioni per la disinstallazione del pacchetto per lo strumento di configurazione.
 
@@ -163,8 +163,8 @@ Nel portale defender per endpoint vedrai due categorie di informazioni:
 
 ### <a name="known-issues"></a>Problemi noti
 
-- Potresti vedere "Nessun dato del sensore, comunicazioni compromesse" nella pagina delle informazioni sul computer del portale di Microsoft Defender Security Center, anche se il prodotto funziona come previsto. Stiamo lavorando per risolvere questo problema.
-- Gli utenti connessi non vengono visualizzati nel portale di Microsoft Defender Security Center.
+- Nella pagina delle informazioni del computer del portale di Microsoft Defender Security Center potrebbe essere visualizzato "Nessun dato sensore, comunicazioni compromesse" anche se il prodotto funziona come previsto. Stiamo lavorando per risolvere questo problema.
+- Gli utenti connessi non vengono visualizzati nel Microsoft Defender Security Center portale.
 - Nelle distribuzioni SUSE, se l'installazione di *libatomic1* non riesce, è necessario verificare che il sistema operativo sia registrato:
 
    ```bash

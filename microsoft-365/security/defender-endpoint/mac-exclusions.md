@@ -39,7 +39,7 @@ ms.locfileid: "51935030"
 In questo articolo vengono fornite informazioni su come definire le esclusioni applicabili alle analisi su richiesta e sulla protezione e il monitoraggio in tempo reale.
 
 >[!IMPORTANT]
->Le esclusioni descritte in questo articolo non si applicano ad altre funzionalità di Defender per Endpoint su Mac, tra cui il rilevamento e la risposta degli endpoint (EDR). I file esclusi utilizzando i metodi descritti in questo articolo possono comunque attivare avvisi EDR e altri rilevamenti.
+>Le esclusioni descritte in questo articolo non si applicano ad altre funzionalità di Defender per Endpoint su Mac, tra cui il rilevamento e la risposta degli endpoint (EDR). I file esclusi utilizzando i metodi descritti in questo articolo possono comunque attivare EDR avvisi e altri rilevamenti.
 
 Puoi escludere determinati file, cartelle, processi e file aperti dal processo da analisi di Defender per Endpoint su Mac.
 
@@ -57,7 +57,7 @@ Esclusione | Definizione | Esempi
 Estensione del file | Tutti i file con estensione, in qualsiasi punto del computer | `.test`
 File | Un file specifico identificato dal percorso completo | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Cartella | Tutti i file nella cartella specificata (in modo ricorsivo) | `/var/log/`<br/>`/var/*/`
-Procedura | Un processo specifico (specificato dal percorso completo o dal nome del file) e tutti i file aperti da esso | `/bin/cat`<br/>`cat`<br/>`c?t`
+Processo | Un processo specifico (specificato dal percorso completo o dal nome del file) e tutti i file aperti da esso | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 Le esclusioni di file, cartelle e processi supportano i caratteri jolly seguenti:
 

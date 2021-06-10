@@ -73,19 +73,19 @@ dueOn | DateTime | Data di scadenza impostata dal creatore per questa attività 
 fixedDevices |  | Il numero di dispositivi che sono stati corretti | 2
 id | Stringa | ID di questa attività di correzione | 097d9735-5479-4899-b1b7-77398899df92
 nameId | Stringa | Nome prodotto correlato | Microsoft Silverlight
-priority | Stringa | Priorità impostata dal creatore per questa attività di correzione (High\Medium\Low) | Alta
+priority | Stringa | Priorità impostata dal creatore per questa attività di correzione (High\Medium\Low) | Fortemente
 productId | Stringa | ID prodotto correlato | microsoft-_-silverlight
 productivityImpactRemediationType | Stringa | Alcune modifiche alla configurazione potrebbero essere richieste solo per i dispositivi senza alcun impatto sull'utente. Questo valore indica la selezione tra "tutti i dispositivi esposti" o "solo i dispositivi senza impatto sull'utente". | AllExposedAssets
 rbacGroupNames | Stringa | Nomi dei gruppi di dispositivi correlati | [ "Windows Servers", "Windows 10" ]
 recommendedProgram | Stringa | Programma consigliato a cui eseguire l'aggiornamento | null
 recommendedVendor | Stringa | Fornitore consigliato a cui eseguire l'aggiornamento | null
 recommendedVersion | Stringa | Versione consigliata per l'aggiornamento/aggiornamento | null
-relatedComponent | Stringa | Componente correlato di questa attività di correzione (simile al componente correlato per una raccomandazione sulla sicurezza) | Microsoft Microsoft Silverlight
+relatedComponent | Stringa | Componente correlato di questa attività di correzione (simile al componente correlato per una raccomandazione sulla sicurezza) | Microsoft Microsoft Silverlight
 requesterEmail | Stringa | Indirizzo di posta elettronica creatore | globaladmin@UserName.contoso.com
 requesterId | Stringa | ID oggetto creatore | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | Stringa | Note (testo libero) aggiunte dall'autore per questa attività di correzione | null
 scid | Stringa | SCID della raccomandazione relativa alla sicurezza | null
-status | Stringa | Stato attività di correzione (Attivo/Completato) | Attivo
+status | Stringa | Stato attività di correzione (Attivo/Completato) | Attivazione
 statusLastModifiedOn | DateTime | Data in cui il campo stato è stato aggiornato | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Numero di dispositivi esposti a cui è applicabile questa correzione | 43
 title | Stringa | Titolo di questa attività di correzione | Microsoft Silverlight

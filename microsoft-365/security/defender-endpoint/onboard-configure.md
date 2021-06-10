@@ -1,6 +1,6 @@
 ---
 title: Onboard dei dispositivi al servizio Microsoft Defender for Endpoint
-description: Onboard di dispositivi Windows 10, server, dispositivi non Windows e scopri come eseguire un test di rilevamento.
+description: Onboard Windows 10 dispositivi, server, dispositivi non Windows e scopri come eseguire un test di rilevamento.
 keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, criteri di gruppo, mdm, script locale, test di rilevamento
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -51,7 +51,7 @@ Nella tabella seguente sono elencati gli strumenti disponibili in base all'endpo
 
 | Endpoint     | Opzioni degli strumenti                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script locale (fino a 10 dispositivi)](configure-endpoints-script.md) <br>  [Criteri di gruppo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Script VDI](configure-endpoints-vdi.md)   |
+| **Windows**  |  [Script locale (fino a 10 dispositivi)](configure-endpoints-script.md) <br>  [Criteri di gruppo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestione dispositivi mobili](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Script VDI](configure-endpoints-vdi.md)   |
 | **macOS**    | [Script locali](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestione di dispositivi mobili](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Script locale](linux-install-manually.md) <br> [Pupazzo](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Basato su app](ios-install.md)                                |
@@ -63,10 +63,10 @@ Nella tabella seguente sono elencati gli strumenti disponibili in base all'endpo
 ## <a name="in-this-section"></a>Contenuto della sezione
 Argomento | Descrizione
 :---|:---
-[Aggiungere versioni precedenti di Windows](onboard-downlevel.md)| Onboard di dispositivi Windows 7 e Windows 8.1 a Defender per Endpoint. 
+[Aggiungere versioni precedenti di Windows](onboard-downlevel.md)| Onboard Windows 7 e Windows 8.1 dispositivi a Defender per Endpoint. 
 [Aggiungere di dispositivi Windows 10](configure-endpoints.md) | Dovrai eseguire l'onboardboard dei dispositivi per segnalare al servizio Defender for Endpoint. Scopri gli strumenti e i metodi che puoi usare per configurare i dispositivi nell'organizzazione.
-[Server di onboard](configure-server-endpoints.md) |  Onboarding di Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) versione 1803 e successive, Windows Server 2019 e versioni successive e Windows Server 2019 core edition per Defender for Endpoint.
-[Aggiungere dispositivi non Windows](configure-endpoints-non-windows.md) | Defender for Endpoint offre un'esperienza operativa di sicurezza centralizzata per Windows e per le piattaforme non Windows. Potrai visualizzare gli avvisi di vari sistemi operativi supportati in Microsoft Defender Security Center e proteggere meglio la rete dell'organizzazione. Questa esperienza sfrutta i dati del sensore di prodotti di sicurezza di terze parti. 
+[Server di onboard](configure-server-endpoints.md) |  Onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) versione 1803 e successive, Windows Server 2019 e versioni successive e Windows Server 2019 core edition per Defender per Endpoint.
+[Aggiungere dispositivi non Windows](configure-endpoints-non-windows.md) | Defender for Endpoint offre un'esperienza operativa di sicurezza centralizzata per Windows e piattaforme non Windows. Sarà possibile visualizzare gli avvisi di vari sistemi operativi supportati in Microsoft Defender Security Center e proteggere meglio la rete dell'organizzazione. Questa esperienza sfrutta i dati del sensore di prodotti di sicurezza di terze parti. 
 [Eseguire un test di rilevamento in un dispositivo appena aggiunto](run-detection-test.md) | Esegui uno script su un dispositivo appena onboarded per verificare che sia correttamente segnalato al servizio Defender for Endpoint.
 [Configurare le impostazioni proxy e Internet](configure-proxy-internet.md)| Abilitare la comunicazione con il servizio cloud Defender for Endpoint configurando le impostazioni di connettività Internet e proxy.
 [Risolvere i problemi di onboarding](troubleshoot-onboarding.md) | Informazioni sulla risoluzione dei problemi che potrebbero verificarsi durante l'onboarding.

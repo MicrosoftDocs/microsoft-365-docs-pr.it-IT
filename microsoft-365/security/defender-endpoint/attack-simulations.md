@@ -72,5 +72,5 @@ Leggere il documento della procedura dettagliata fornito con ogni scenario di at
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Dispositivi onboard](onboard-configure.md)
+- [Eseguire l'onboarding dei dispositivi](onboard-configure.md)
 - [Aggiungere di dispositivi Windows 10](configure-endpoints.md)

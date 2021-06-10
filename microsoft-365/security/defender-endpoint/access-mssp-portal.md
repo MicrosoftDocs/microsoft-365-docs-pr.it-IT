@@ -1,6 +1,6 @@
 ---
-title: Accedere al portale dei clienti msSP di Microsoft Defender Security Center
-description: Accedere al portale dei clienti msSP di Microsoft Defender Security Center
+title: Accedere al portale Microsoft Defender Security Center clienti MSSP
+description: Accedere al portale Microsoft Defender Security Center clienti MSSP
 keywords: provider di servizi di sicurezza gestiti, mssp, configurare, integrazione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,10 +23,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164858"
 ---
-# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>Accedere al portale dei clienti msSP di Microsoft Defender Security Center
+# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>Accedere al portale Microsoft Defender Security Center clienti MSSP
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "51164858"
 
 **Si applica a:**
 
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
@@ -44,7 +44,7 @@ ms.locfileid: "51164858"
 >[!NOTE] 
 >Questi set di passaggi sono indirizzati al provider di servizi condivisi. 
 
-Per impostazione predefinita, i clienti MSSP accedono al tenant di Microsoft Defender Security Center tramite l'URL seguente: `https://securitycenter.windows.com` .
+Per impostazione predefinita, i clienti MSSP accedono al proprio tenant Microsoft Defender Security Center tramite l'URL seguente: `https://securitycenter.windows.com` .
  
 
 Gli MSSP, tuttavia, dovranno utilizzare un URL specifico del tenant nel formato seguente:  `https://securitycenter.windows.com?tid=customer_tenant_id` per accedere al portale dei clienti MSSP. 
@@ -58,7 +58,7 @@ Utilizzare la procedura seguente per ottenere l'ID tenant del cliente MSSP e qui
 
 2. Passare dalla directory al tenant del cliente MSSP.
 
-3.  Selezionare **Azure Active Directory > proprietà**. L'ID tenant è presente nel campo ID directory. 
+3.  Selezionare **Azure Active Directory > proprietà.** L'ID tenant è presente nel campo ID directory. 
 
 4. Accedere al portale del cliente MSSP sostituendo il `customer_tenant_id` valore nell'URL seguente: `https://securitycenter.windows.com?tid=customer_tenant_id` .
 

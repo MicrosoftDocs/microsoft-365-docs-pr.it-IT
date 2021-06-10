@@ -49,12 +49,12 @@ Prima di iniziare, vedi la pagina principale di [Microsoft Defender per Endpoint
 
 Scaricare i pacchetti di installazione e onboarding da Microsoft Defender Security Center:
 
-1. In Microsoft Defender Security Center, vai a **Impostazioni > Gestione dispositivi > onboarding**.
+1. In Microsoft Defender Security Center passare a Gestione **Impostazioni > dispositivi > onboarding**.
 2. Nella sezione 1 della pagina imposta il sistema operativo su **macOS** e il metodo di distribuzione su **Script locale.**
 3. Nella sezione 2 della pagina seleziona **Scarica pacchetto di installazione.** Salvarlo come wdav.pkg in una directory locale.
 4. Nella sezione 2 della pagina seleziona **Scarica pacchetto di onboarding.** Salvarlo come WindowsDefenderATPOnboardingPackage.zip nella stessa directory.
 
-    ![Screenshot di Microsoft Defender Security Center](images/atp-portal-onboarding-page.png)
+    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-page.png)
 
 5. Da un prompt dei comandi, verificare di disporre dei due file.
     
@@ -107,11 +107,11 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
 
 5. Ripeti i passaggi 3 & 4 per tutte le estensioni di sistema distribuite con Microsoft Defender per Endpoint su Mac.
 
-6. Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender per Endpoint su Mac esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Quando viene richiesto di concedere a Microsoft Defender le autorizzazioni per Endpoint per filtrare il traffico di rete, selezionare **Consenti**.
+6. Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender per Endpoint su Mac esamina il traffico socket e segnala queste informazioni al portale Microsoft Defender Security Center remoto. Quando viene richiesto di concedere a Microsoft Defender le autorizzazioni per Endpoint per filtrare il traffico di rete, selezionare **Consenti**.
 
     ![Preferenze di sicurezza delle estensioni di sistema2](images/big-sur-install-4.png)
 
-7. Aprire **Preferenze di** sistema Sicurezza & Privacy e passare alla scheda Privacy. Concedere l'autorizzazione Accesso completo al disco a Microsoft Defender  >   **ATP** e  Microsoft Defender **ATP Endpoint Security Extension**. 
+7. Aprire **Preferenze di** sistema Sicurezza & Privacy e passare alla scheda  >   **Privacy.**  Concedere l'autorizzazione Accesso completo al disco a **Microsoft Defender ATP** e Microsoft Defender ATP Endpoint **Security Extension**.
 
     ![Accesso completo al disco](images/big-sur-install-5.png)
 
@@ -170,11 +170,11 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
         mdatp threat list
         ```
 
-3. Eseguire un test di rilevamento EDR per verificare che il dispositivo sia correttamente onboarded e segnalare al servizio. Eseguire la procedura seguente nel dispositivo appena onboarded:
+3. Eseguire un EDR test di rilevamento per verificare che il dispositivo sia correttamente onboarded e segnalare al servizio. Eseguire la procedura seguente nel dispositivo appena onboarded:
 
    1. Nel browser, ad esempio Microsoft Edge per Mac o Safari.
 
-   1. Scarica MDATP MacOS DIY.zip https://aka.ms/mdatpmacosdiy ed estrai.
+   1. Scarica MDATP macOS DIY.zip https://aka.ms/mdatpmacosdiy ed estrai.
 
       Potrebbe essere richiesto:
 
@@ -185,36 +185,36 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
 
 5. Apri **Download**.
 
-6. Dovrebbe essere visualizzato **MDATP MacOS FAI DA TE.**
+6. Dovrebbe essere visualizzato **MDATP fai da te di MacOS.**
 
    > [!TIP]
    > Se si fa doppio clic, verrà visualizzato il messaggio seguente:
    > 
-   > > **"MDATP MacOS DIY" non può essere aperto perché lo sviluppatore non può essere verificatore.**<br/>
+   > > **"MDATP macOS FAI DA FARE" non può essere aperto perché lo sviluppatore non può essere verificatore.**<br/>
    > > macOS non è in grado di verificare che questa app sia libera da malware.<br/>
    > > **\[ Sposta nel \] Cestino** **\[ Annulla \]** 
   
 7. Fare clic su **Annulla**.
 
-8. Fare clic con il pulsante destro del mouse su **MDATP MacOS DIY** e quindi scegliere **Apri**. 
+8. Fare clic con il MDATP clic con il MDATP **macOS fai** clic su **Apri.** 
 
     Il sistema dovrebbe visualizzare il messaggio seguente:
 
-    > **macOS non può verificare lo sviluppatore **di MDATP MacOS FAI DA ME.** Si è certi di volerlo aprire?**<br/>
+    > **macOS non può verificare lo sviluppatore **di MDATP MacOS FAI-DA-TO**. Si è certi di volerlo aprire?**<br/>
     > Aprendo questa app, sovrascrivi la sicurezza del sistema che può esporre il computer e le informazioni personali a malware che potrebbero danneggiare il Mac o compromettere la privacy.
 
 10. Fare clic su **Apri**. 
 
     Il sistema dovrebbe visualizzare il messaggio seguente:
 
-    > Microsoft Defender for Endpoint - file di test fai da toy macOS EDR<br/>
-    > L'avviso corrispondente sarà disponibile nel portale MDATP.
+    > Microsoft Defender for Endpoint - file di test fai da EDR macOS<br/>
+    > L'avviso corrispondente sarà disponibile nel MDATP portale.
 
 11. Fare clic su **Apri**. 
 
     In pochi minuti dovrebbe essere generato un avviso denominato "macOS EDR Test Alert".
 
-12. Passare a Microsoft Defender Security Center ( https://SecurityCenter.microsoft.com) .
+12. Vai a Microsoft Defender Security Center ( https://SecurityCenter.microsoft.com) .
 
 13. Passare alla coda degli avvisi.
 

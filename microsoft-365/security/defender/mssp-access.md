@@ -1,7 +1,7 @@
 ---
 title: Fornire l'accesso msSP (Managed Security Service Provider)
-description: Informazioni sulle modifiche da Microsoft Defender Security Center al Centro sicurezza Microsoft 365
-keywords: Introduzione al Centro sicurezza Microsoft 365, Microsoft Defender per Office 365, Microsoft Defender for Endpoint, MDO, MDE, riquadro singolo di vetro, portale convergente, portale di sicurezza, portale di sicurezza, portale di sicurezza defender
+description: Informazioni sulle modifiche dall'Microsoft Defender Security Center al Centro sicurezza Microsoft 365 sicurezza
+keywords: Introduzione al centro sicurezza Microsoft 365, Microsoft Defender per Office 365, Microsoft Defender for Endpoint, MDO, MDE, riquadro singolo di vetro, portale convergente, portale di sicurezza, portale di sicurezza, portale di sicurezza defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -38,26 +38,26 @@ ms.locfileid: "51935354"
 
 Per implementare una soluzione di accesso delegato multi-tenant, eseguire la procedura seguente:
 
-1. Abilitare [il controllo dell'accesso](/windows/security/threat-protection/microsoft-defender-atp/rbac) basato sui ruoli in Defender for Endpoint nel Centro sicurezza Microsoft 365 e connettersi ai gruppi di Azure Active Directory (Azure AD).
+1. Abilitare [il controllo dell'accesso](/windows/security/threat-protection/microsoft-defender-atp/rbac) basato sui ruoli in Defender for Endpoint nel Centro sicurezza Microsoft 365 e connettersi con Azure Active Directory (Azure AD).
 
 2. Configurare i [pacchetti di accesso di](/azure/active-directory/governance/identity-governance-overview) governance per la richiesta di accesso e il provisioning.
 
 3. Gestire le richieste di accesso e i controlli in [Microsoft Myaccess.](/azure/active-directory/governance/entitlement-management-request-approve)
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>Abilitare i controlli di accesso basati sui ruoli in Microsoft Defender for Endpoint nel Centro sicurezza Microsoft 365
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>Abilitare i controlli di accesso basati sui ruoli in Microsoft Defender for Endpoint nel centro sicurezza Microsoft 365 sicurezza
 
 1. **Creare gruppi di accesso per le risorse MSSP in Customer AAD: Gruppi**
 
-    Questi gruppi verranno collegati ai ruoli creati in Defender for Endpoint nel Centro sicurezza Microsoft 365. A tale scopo, nel tenant AD del cliente creare tre gruppi. Nell'approccio di esempio vengono creati i gruppi seguenti:
+    Questi gruppi verranno collegati ai ruoli creati in Defender per Endpoint nel centro sicurezza Microsoft 365 sicurezza. A tale scopo, nel tenant AD del cliente creare tre gruppi. Nell'approccio di esempio vengono creati i gruppi seguenti:
 
     - Analista di livello 1 
     - Analista di livello 2 
     - Responsabili approvazione analista MSSP  
 
 
-2. Creare ruoli defender per endpoint per livelli di accesso appropriati in Customer Defender for Endpoint nei ruoli e nei gruppi del Centro sicurezza Microsoft 365.
+2. Creare ruoli defender per endpoint per i livelli di accesso appropriati in Customer Defender for Endpoint Microsoft 365 gruppi e ruoli del centro sicurezza.
 
-    Per abilitare RBAC nel Centro sicurezza Microsoft 365 del cliente, accedere a Autorizzazioni **> Endpoints** ruoli & gruppi > Ruoli con un account utente con diritti di amministratore globale o amministratore della sicurezza.
+    Per abilitare RBAC nel Centro sicurezza Microsoft 365 clienti, accedere a Autorizzazioni **> Endpoints** ruoli & gruppi > Ruoli con un account utente con diritti di amministratore globale o amministratore della sicurezza.
 
     ![Immagine dell'accesso MSSP](../../media/mssp-access.png)
 
@@ -130,9 +130,9 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
     Esempio:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Approvare o rifiutare le richieste nella **sezione Approvazioni** dell'interfaccia utente.
 
-     A questo punto, è stato effettuato il provisioning dell'accesso dell'analista e ogni analista deve essere in grado di accedere al Centro sicurezza Microsoft 365 del cliente: 
+     A questo punto, è stato effettuato il provisioning dell'accesso dell'analista e ogni analista dovrebbe essere in grado di accedere al Centro sicurezza Microsoft 365 cliente: 
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` con le autorizzazioni e i ruoli a cui sono stati assegnati.
 
 > [!IMPORTANT]
-> L'accesso delegato a Microsoft Defender for Endpoint nel Centro sicurezza Microsoft 365 attualmente consente l'accesso a un singolo tenant per finestra del browser.
+> L'accesso delegato a Microsoft Defender for Endpoint nel centro sicurezza Microsoft 365 consente attualmente l'accesso a un singolo tenant per finestra del browser.

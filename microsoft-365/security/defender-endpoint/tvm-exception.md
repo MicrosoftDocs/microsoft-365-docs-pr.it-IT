@@ -1,7 +1,7 @@
 ---
-title: Creare e visualizzare le eccezioni per i suggerimenti per la sicurezza - gestione delle minacce e delle vulnerabilità
-description: Creare e monitorare le eccezioni per i suggerimenti sulla sicurezza nella gestione delle minacce e delle vulnerabilità.
-keywords: Microsoft Defender for Endpoint tvm remediation, Microsoft Defender for Endpoint tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
+title: Creare e visualizzare le eccezioni per i suggerimenti sulla sicurezza - gestione di minacce e vulnerabilità
+description: Creare e monitorare le eccezioni per i suggerimenti sulla sicurezza in gestione di minacce e vulnerabilità.
+keywords: Microsoft Defender for Endpoint tvm remediation, Microsoft Defender for Endpoint tvm, gestione di minacce e vulnerabilità, threat & gestione delle vulnerabilità, threat & gestione delle vulnerabilità remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,14 +25,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933746"
 ---
-# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Creare e visualizzare le eccezioni per i suggerimenti per la sicurezza - gestione delle minacce e delle vulnerabilità
+# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Creare e visualizzare le eccezioni per i suggerimenti sulla sicurezza - gestione di minacce e vulnerabilità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -62,9 +62,9 @@ Applica l'eccezione a tutti i gruppi di dispositivi correnti o scegli gruppi di 
 
 #### <a name="filtered-views"></a>Visualizzazioni filtrate
 
-Se hai filtrato per gruppo di dispositivi in una qualsiasi delle pagine di gestione delle minacce e delle vulnerabilità, solo i gruppi di dispositivi filtrati verranno visualizzati come opzioni.
+Se hai filtrato per gruppo di dispositivi in una qualsiasi delle pagine gestione di minacce e vulnerabilità, solo i gruppi di dispositivi filtrati verranno visualizzati come opzioni.
 
-Questo è il pulsante per filtrare in base al gruppo di dispositivi in una delle pagine di gestione delle minacce e delle vulnerabilità: 
+Questo è il pulsante per filtrare in base al gruppo di dispositivi in una delle gestione di minacce e vulnerabilità seguenti: 
 
 ![Visualizzazione del filtro dei gruppi di dispositivi selezionati.](images/tvm-selected-device-groups.png)
 
@@ -128,7 +128,7 @@ Seleziona il gruppo di dispositivi specifico per annullare l'eccezione. Verrà v
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>Impatto della visualizzazione dopo l'applicazione delle eccezioni
 
-Nella pagina Suggerimenti per la sicurezza seleziona **Personalizza** colonne e seleziona le caselle dispositivi esposti **(dopo** le eccezioni) e **Impatto (dopo le eccezioni).**
+Nella pagina Sicurezza Consigli selezionare  Personalizza colonne e selezionare le caselle per Dispositivi esposti **(dopo eccezioni)** e **Impatto (dopo le eccezioni).**
 
 ![Visualizzazione delle opzioni di personalizzazione delle colonne.](images/tvm-after-exceptions.png)
 
@@ -140,7 +140,7 @@ L'impatto (dopo le eccezioni) mostra l'impatto rimanente sul punteggio di esposi
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Correggere le vulnerabilità](tvm-remediation.md)
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)
 - [Punteggio di esposizione.](tvm-exposure-score.md)

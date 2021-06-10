@@ -1,7 +1,7 @@
 ---
-title: Eseguire le simulazioni di attacco di Microsoft 365 Defender
-description: Eseguire simulazioni di attacco per il progetto pilota di Microsoft 365 Defender per vedere come si svolge e viene rapidamente corretti.
-keywords: Simulazione di attacco pilota di Microsoft 365 Defender, eseguire la simulazione di attacco pilota di Microsoft 365 Defender, simulare l'attacco in Microsoft 365 Defender, progetto pilota di Microsoft 365 Defender, sicurezza informatica, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
+title: Eseguire le simulazioni di Microsoft 365 di attacco di Defender
+description: Esegui simulazioni di attacco per il progetto pilota Microsoft 365 Defender per vedere come si svolge e viene rapidamente corretti.
+keywords: Microsoft 365 Simulazione di attacco pilota defender, eseguire la simulazione di attacco pilota di Microsoft 365 Defender, simulare l'attacco in Microsoft 365 Defender, progetto pilota di Microsoft 365 Defender, cyber security, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, indagini e correzioni automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934478"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Eseguire le simulazioni di attacco di Microsoft 365 Defender
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Eseguire le simulazioni di Microsoft 365 di attacco di Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934478"
 
 Si è attualmente in fase di simulazione dell'attacco.
 
-Dopo aver preparato l'ambiente pilota, è il momento di testare la gestione degli incidenti di Microsoft 365 Defender e le funzionalità di analisi e correzione automatizzate. Microsoft ti aiuterà a simulare un attacco sofisticato che sfrutta tecniche avanzate per nasconderti dal rilevamento. L'attacco enumera le sessioni SMB (Server Message Block) aperte nei controller di dominio e recupera gli indirizzi IP recenti dei dispositivi degli utenti. Questa categoria di attacchi in genere non include i file rilasciati nel dispositivo della vittima, ma si verificano esclusivamente in memoria. Usano strumenti di amministrazione e di sistema esistenti e inserisce il codice nei processi di sistema per nasconderne l'esecuzione. Tale comportamento consente loro di evitare il rilevamento e di mantenere il dispositivo.
+Dopo aver preparato l'ambiente pilota, è il momento di testare le funzionalità di gestione degli incidenti di Microsoft 365 Defender e le funzionalità di analisi e correzione automatizzate. Microsoft ti aiuterà a simulare un attacco sofisticato che sfrutta tecniche avanzate per nasconderti dal rilevamento. L'attacco enumera le sessioni SMB (Server Message Block) aperte nei controller di dominio e recupera gli indirizzi IP recenti dei dispositivi degli utenti. Questa categoria di attacchi in genere non include i file rilasciati nel dispositivo della vittima, ma si verificano esclusivamente in memoria. Usano strumenti di amministrazione e di sistema esistenti e inserisce il codice nei processi di sistema per nasconderne l'esecuzione. Tale comportamento consente loro di evitare il rilevamento e di mantenere il dispositivo.
 
 In questa simulazione, lo scenario di esempio inizia con uno script di PowerShell. Un utente potrebbe essere ingannato nell'esecuzione di uno script. Oppure lo script potrebbe essere eseguito da una connessione remota a un altro computer da un dispositivo in precedenza infetto, ovvero l'utente malintenzionato che tenta di spostarsi lateralmente nella rete. Il rilevamento di questi script può essere difficile perché gli amministratori spesso eseguono anche script in remoto per eseguire diverse attività amministrative.
 
@@ -60,16 +60,16 @@ Poiché l'ambiente pilota è già stato configurato durante la fase di preparazi
 
    - Il dispositivo viene eseguito con Windows Server 2008 R2 o versione successiva.
    - Controller di dominio di test per [Microsoft Defender per l'identità e](/azure/security-center/security-center-wdatp) abilitare la gestione [remota.](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)
-   - Verificare che [l'integrazione di Microsoft Defender for Identity e Microsoft Cloud App Security](/cloud-app-security/mdi-integration) sia stata abilitata.
+   - Verificare che [Microsoft Defender for Identity e Microsoft Cloud App Security siano](/cloud-app-security/mdi-integration) stati abilitati.
    - Nel dominio viene creato un utente di prova, non sono necessarie autorizzazioni di amministratore.
 
 3. Verificare la configurazione del dispositivo di test:
 
-   1. Il dispositivo viene eseguito con Windows 10 versione 1903 o versione successiva.
+   1. Il dispositivo viene eseguito Windows 10 versione 1903 o successiva.
 
    1. Il dispositivo di test è aggiunto al dominio di test.
 
-   1. [Attivare Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). In caso di problemi con l'abilitazione Windows Defender Antivirus, vedere questo [argomento per la risoluzione dei problemi.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
+   1. [Attivare Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). In caso di problemi durante l'abilitazione Windows Defender Antivirus, vedere questo [argomento per la risoluzione dei problemi.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
 
    1. Verificare che il dispositivo di test [sia stato onboarded in Microsoft Defender for Endpoint)](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
@@ -81,7 +81,7 @@ Per eseguire la simulazione dello scenario di attacco:
 
 1. Accedere al dispositivo di test con l'account utente di test.
 
-2. Aprire una Windows PowerShell di test nel dispositivo di test.
+2. Apri una Windows PowerShell nel dispositivo di test.
 
 3. Copiare lo script di simulazione seguente:
 
@@ -99,9 +99,9 @@ Per eseguire la simulazione dello scenario di attacco:
 4. Al prompt dei comandi, incollare ed eseguire lo script copiato.
 
 > [!NOTE]
-> Se si esegue PowerShell con RDP (Remote Desktop Protocol), utilizzare il comando Digita testo Appunti nel client RDP perché il tasto di scelta rapida **CTRL-V** o il metodo di incolla con il pulsante destro del mouse potrebbe non funzionare. Anche le versioni recenti di PowerShell a volte non accettano questo metodo, potrebbe essere necessario prima copiarlo nel Blocco note in memoria, copiarlo nella macchina virtuale e quindi incollarlo in PowerShell.
+> Se si esegue PowerShell con RDP (Remote Desktop Protocol), utilizzare il comando Digita testo Appunti nel client RDP perché il tasto di scelta rapida **CTRL-V** o il metodo di incolla con il pulsante destro del mouse potrebbe non funzionare. Anche le versioni recenti di PowerShell a volte non accettano questo metodo, potrebbe essere necessario prima copiarlo in Blocco note in memoria, copiarlo nella macchina virtuale e quindi incollarlo in PowerShell.
 
-Pochi secondi <i> dopo, </i>notepad.exesi aprirà. Un codice di attacco simulato verrà inserito in notepad.exe. Tenere aperta l'istanza del Blocco note generata automaticamente per sperimentare lo scenario completo.
+Pochi secondi <i> dopo, </i>notepad.exesi aprirà. Un codice di attacco simulato verrà inserito in notepad.exe. Mantenere aperta l'Blocco note generata automaticamente per sperimentare lo scenario completo.
 
 Il codice di attacco simulato tenterà di comunicare con un indirizzo IP esterno (simulando il server C2) e quindi tenterà la ricognizione con il controller di dominio tramite SMB.
 
@@ -111,7 +111,7 @@ Quando questo script viene completato, verrà visualizzato un messaggio nella co
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-Per visualizzare la funzionalità Eventi imprevisti e risposte automatizzati in azione, mantenere aperto notepad.exe processo. Vedrai l'arresto automatico di eventi imprevisti e risposta del processo blocco note.
+Per visualizzare la funzionalità Eventi imprevisti e risposte automatizzati in azione, mantenere aperto notepad.exe processo. Vedrai l'arresto automatico degli eventi imprevisti e della risposta Blocco note processo.
 
 ## <a name="investigate-an-incident"></a>Analizzare un incidente
 
@@ -120,13 +120,13 @@ Per visualizzare la funzionalità Eventi imprevisti e risposte automatizzati in 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Passando al punto di vista dell'analista SOC, è ora possibile iniziare a analizzare l'attacco nel portale del Centro sicurezza Microsoft 365.
+Passando al punto di vista dell'analista SOC, è ora possibile iniziare a analizzare l'attacco nel portale del Centro sicurezza Microsoft 365 sicurezza.
 
-1. Aprire la coda degli eventi imprevisti del portale del Centro sicurezza Microsoft [365](https://security.microsoft.com/incidents) da qualsiasi dispositivo.
+1. Apri la coda [Microsoft 365 eventi imprevisti](https://security.microsoft.com/incidents) del portale del Centro sicurezza da qualsiasi dispositivo.
 
 2. Passare a **Eventi imprevisti** dal menu.
 
-    ![Screenshot of incidents as shown on the Microsoft 365 Security Center's left-hand menu](../../media/mtp/fig1.png)
+    ![Screenshot degli eventi imprevisti come mostrato nel menu Microsoft 365 a sinistra del Centro sicurezza](../../media/mtp/fig1.png)
 
 3. Il nuovo evento imprevisto per l'attacco simulato verrà visualizzato nella coda degli eventi imprevisti.
 
@@ -169,7 +169,7 @@ Esamini alcuni degli avvisi generati durante l'attacco simulato.
 
 ![Screenshot degli avvisi generati](../../media/mtp/fig6.png)
 
-#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>Avviso: rilevato inserimento di processi sospetti (Origine: Microsoft Defender per Endpoint EDR)
+#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>Avviso: rilevato inserimento di processi sospetti (Origine: Microsoft Defender per endpoint EDR)
 
 Gli autori di attacchi avanzati usano metodi sofisticati e furtivi per mantenere la memoria e nascondersi dagli strumenti di rilevamento. Una tecnica comune consiste nell'operare dall'interno di un processo di sistema attendibile anziché da un eseguibile dannoso, rendendo difficile per gli strumenti di rilevamento e le operazioni di sicurezza individuare il codice dannoso.
 
@@ -227,7 +227,7 @@ Nella pagina dell'evento imprevisto selezionare la **scheda Utenti** per visuali
 
 Selezionare il nome utente per aprire la pagina del profilo dell'utente in cui è possibile eseguire ulteriori indagini. [Altre informazioni sull'analisi degli utenti rischiosi.](/cloud-app-security/tutorial-ueba#identify)
 
-![Screenshot della pagina utente di Cloud App Security](../../media/mtp/fig13.png)
+![Screenshot della Cloud App Security utente](../../media/mtp/fig13.png)
 
 ## <a name="automated-investigation-and-remediation"></a>Indagine e correzione automatizzate
 
@@ -236,7 +236,7 @@ Selezionare il nome utente per aprire la pagina del profilo dell'utente in cui �
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Tornare all'evento imprevisto nel portale del Centro sicurezza Microsoft 365. La **scheda Indagini** nella pagina **Evento** imprevisto mostra le indagini automatizzate attivate da Microsoft Defender for Identity e Microsoft Defender for Endpoint. Lo screenshot seguente mostra solo l'indagine automatizzata attivata da Defender per Endpoint. Per impostazione predefinita, Defender per Endpoint consente di correggere automaticamente gli elementi trovati nella coda, che richiedono la correzione.
+Tornare all'evento imprevisto nel portale Microsoft 365 Centro sicurezza. La **scheda Indagini** nella pagina **Evento** imprevisto mostra le indagini automatizzate attivate da Microsoft Defender for Identity e Microsoft Defender for Endpoint. Lo screenshot seguente mostra solo l'indagine automatizzata attivata da Defender per Endpoint. Per impostazione predefinita, Defender per Endpoint consente di correggere automaticamente gli elementi trovati nella coda, che richiedono la correzione.
 
 ![Screenshot delle indagini automatizzate relative all'incidente](../../media/mtp/fig14.png)
 
@@ -282,14 +282,14 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
 1. Verificare che il tenant abbia [abilitato Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 2. Identificare una cassetta postale di destinazione da utilizzare per la ricezione della posta elettronica.
     a. Questa cassetta postale deve essere monitorata da Microsoft Defender per Office 365 b. Il dispositivo dal requisito 3 deve accedere a questa cassetta postale
-3. Configurare un dispositivo di test: a. Assicurati di usare Windows 10 versione 1903 o versione successiva.
+3. Configurare un dispositivo di test: a. Assicurati di usare la Windows 10 1903 o versione successiva.
     b. Aggiungere il dispositivo di test al dominio di test.
-    c. [Attivare Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). In caso di problemi con l'abilitazione Windows Defender Antivirus, vedere [questo argomento per la risoluzione dei problemi.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
+    c. [Attivare Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). In caso di problemi durante l'abilitazione Windows Defender Antivirus, vedere [questo argomento per la risoluzione dei problemi.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
     d. [Onboard to Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### <a name="run-the-simulation"></a>Eseguire la simulazione
 
-1. Da un account di posta elettronica esterno, inviare un messaggio di posta elettronica alla cassetta postale identificata nel passaggio 2 della sezione requisiti dell'ambiente di testing. Includere un allegato che sarà consentito tramite i criteri di filtro della posta elettronica esistenti. Questo file non deve essere dannoso o eseguibile. I tipi di file suggeriti <i>sono pdf,</i> <i>exe</i> (se consentito) o documenti di Office, ad esempio un file di Word.
+1. Da un account di posta elettronica esterno, inviare un messaggio di posta elettronica alla cassetta postale identificata nel passaggio 2 della sezione requisiti dell'ambiente di testing. Includere un allegato che sarà consentito tramite i criteri di filtro della posta elettronica esistenti. Questo file non deve essere dannoso o eseguibile. I tipi di file suggeriti <i>.pdf, </i> <i>.exe</i> (se consentito) o Office documento, ad esempio un file di Word.
 2. Aprire il messaggio di posta elettronica inviato dal dispositivo configurato come definito nel passaggio 3 della sezione requisiti dell'ambiente di testing. Aprire l'allegato o salvare il file nel dispositivo.
 
 #### <a name="go-hunting"></a>Andare a caccia
@@ -432,20 +432,20 @@ I rilevamenti personalizzati eseguiranno la query in base alla frequenza imposta
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ulteriori esercizi di ricerca avanzata
 
-Per ulteriori informazioni sulla ricerca avanzata, i webcast seguenti illustrano le funzionalità di ricerca avanzata in Microsoft 365 Defender per creare query tra pilastri, eseguire pivot in entità e creare rilevamenti personalizzati e azioni di correzione.
+Per ulteriori informazioni sulla ricerca avanzata, i webcast seguenti illustrano le funzionalità di ricerca avanzata all'interno di Microsoft 365 Defender per creare query tra pilastri, eseguire pivot in entità e creare rilevamenti e azioni di correzione personalizzati.
 
 > [!NOTE]
 > Prepararsi con il proprio account GitHub per eseguire le query di ricerca nell'ambiente del laboratorio di testing pilota.
 
 |Titolo|Descrizione|Scaricare MP4|Guarda su YouTube|File CSL da utilizzare|
 |---|---|---|---|---|
-|Episodio 1: Nozioni fondamentali su KQL|Verranno trattate le nozioni di base delle funzionalità avanzate di ricerca in Microsoft 365 Defender. Informazioni sui dati di ricerca avanzati disponibili e sulla sintassi e sugli operatori KQL di base.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episodio 1: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
+|Episodio 1: Nozioni fondamentali su KQL|Verranno trattate le nozioni di base sulle funzionalità di ricerca avanzate in Microsoft 365 Defender. Informazioni sui dati di ricerca avanzati disponibili e sulla sintassi e sugli operatori KQL di base.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episodio 1: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |Episodio 2: Join|Continueremo a conoscere i dati nella ricerca avanzata e su come unire le tabelle. Informazioni sui join interni, esterni, univoci e semi e sulle sfumature dell'innerunique join Kusto predefinito.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Episodio 2: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |Episodio 3: Riepilogo, pivot e visualizzazione dei dati|Ora che siamo in grado di filtrare, modificare e unire i dati, è il momento di iniziare a riepilogare, quantificare, eseguire pivot e visualizzare. In questo episodio verrà descritto l'operatore di riepilogo e alcuni dei calcoli che è possibile eseguire durante l'immersione in tabelle aggiuntive nello schema di ricerca avanzata. I set di dati vengono trasformati in grafici che consentono di migliorare l'analisi.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Episodio 3: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|Episodio 4: Diamo la caccia! Applicazione di KQL al rilevamento degli eventi imprevisti|È ora di tenere traccia di alcune attività degli utenti malintenzionati. In questo episodio useremo la nostra migliore comprensione di KQL e ricerca avanzata in Microsoft 365 Defender per tenere traccia di un attacco. Scopri alcuni dei suggerimenti e dei trucchi usati nel campo per tenere traccia dell'attività degli utenti malintenzionati, tra cui gli ABC della cybersecurity e come applicarli alla risposta agli incidenti.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episodio 4: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
+|Episodio 4: Diamo la caccia! Applicazione di KQL al rilevamento degli eventi imprevisti|È ora di tenere traccia di alcune attività degli utenti malintenzionati. In questo episodio useremo la nostra migliore comprensione di KQL e la ricerca avanzata in Microsoft 365 Defender per tenere traccia di un attacco. Scopri alcuni dei suggerimenti e dei trucchi usati nel campo per tenere traccia dell'attività degli utenti malintenzionati, tra cui gli ABC della cybersecurity e come applicarli alla risposta agli incidenti.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episodio 4: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
 
 ## <a name="next-step"></a>Passaggio successivo
 
-|![Fase di chiusura e riepilogo](../../media/mtp/close.png) <br>[Fase di chiusura e riepilogo](m365d-pilot-close.md)|Analizzare il risultato pilota di Microsoft 365 Defender, presentarlo agli stakeholder ed eseguire il passaggio successivo.
+|![Fase di chiusura e riepilogo](../../media/mtp/close.png) <br>[Fase di chiusura e riepilogo](m365d-pilot-close.md)|Analizza il Microsoft 365 pilota di Defender, presentalo agli stakeholder e fai il passaggio successivo.
 |:-----|:-----|

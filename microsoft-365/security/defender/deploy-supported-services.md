@@ -1,7 +1,7 @@
 ---
 title: Distribuire i servizi supportati da Microsoft 365 Defender
 description: Informazioni sui servizi di sicurezza Microsoft che possono essere integrati da Microsoft 365 Defender, sui requisiti di licenza e sulle procedure di distribuzione
-keywords: distribuire, licenze, servizi supportati, provisioning, configurazione Microsoft 365 Defender, M365, idoneità alla licenza, Microsoft Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
+keywords: distribuire, licenze, servizi supportati, provisioning, configurazione Microsoft 365 Defender, M365, idoneità alle licenze, Microsoft Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -42,7 +42,7 @@ ms.locfileid: "51935678"
 [Microsoft 365 Defender](microsoft-365-defender.md) integra vari servizi di sicurezza Microsoft per fornire funzionalità centralizzate di rilevamento, prevenzione e indagine contro attacchi sofisticati. In questo articolo vengono descritti i servizi supportati, i relativi requisiti di licenza, i vantaggi e le limitazioni associati alla distribuzione di uno o più servizi e i collegamenti a come è possibile distribuirli completamente singolarmente.
 
 ## <a name="supported-services"></a>Servizi supportati
-Una licenza di Microsoft 365 E5, E5 Security, A5 o A5 Security o una combinazione valida di licenze consente di accedere ai servizi supportati seguenti e consente di utilizzare Microsoft 365 Defender nel Centro sicurezza Microsoft 365. [Vedere requisiti di licenza](prerequisites.md#licensing-requirements)
+Una licenza Microsoft 365 E5, E5 Security, A5 o A5 Security o una combinazione valida di licenze consente di accedere ai servizi supportati seguenti e consente di usare Microsoft 365 Defender nel centro sicurezza Microsoft 365. [Vedere requisiti di licenza](prerequisites.md#licensing-requirements)
 
 | Servizio supportato | Descrizione |
 | ------ | ------ |
@@ -52,10 +52,10 @@ Una licenza di Microsoft 365 E5, E5 Security, A5 o A5 Security o una combinazion
 | Microsoft Cloud App Security | Identificare e contrastare le minacce informatiche nei servizi cloud Microsoft e di terze parti |
 
 ## <a name="deployed-services-and-functionality"></a>Servizi e funzionalità distribuiti
-Microsoft 365 Defender offre una migliore visibilità, correlazione e correzione quando distribuisci altri servizi supportati.
+Microsoft 365 Defender offre una migliore visibilità, correlazione e correzione quando distribuisci più servizi supportati.
 
 ### <a name="benefits-of-full-deployment"></a>Vantaggi della distribuzione completa
-Per ottenere i vantaggi completi di Microsoft 365 Defender, è consigliabile distribuire tutti i servizi supportati. Ecco alcuni dei principali vantaggi della distribuzione completa:
+Per ottenere i vantaggi completi di Microsoft 365 Defender, ti consigliamo di distribuire tutti i servizi supportati. Ecco alcuni dei principali vantaggi della distribuzione completa:
 - Gli eventi imprevisti vengono identificati e correlati in base agli avvisi e ai segnali di evento di tutti i sensori disponibili e funzionalità di analisi specifiche del servizio
 - I playbook AIR (Automated Investigation and Remediation) si applicano a vari tipi di entità, inclusi dispositivi, cassette postali e account utente
 - È possibile eseguire query su uno schema di ricerca avanzata più completo per i dati di eventi ed entità da dispositivi, cassette postali e altre entità
@@ -68,7 +68,7 @@ La tabella seguente elenca il modo in cui ogni servizio supportato fornisce dati
 | Servizio | Dati (segnali & informazioni correlate) | Remediation & response scope |
 | ------ | ------ | ------ |
 | Microsoft Defender per endpoint | - Stati degli endpoint ed eventi non elaborati<br />- Rilevamenti e avvisi degli endpoint, tra cui antivirus, EDR, riduzione della superficie di attacco<br />- Informazioni su file e altre entità osservate sugli endpoint | Endpoint |
-|Microsoft Defender per Office 365 | - Stati della posta e delle cassette postali ed eventi non elaborati<br />- Rilevamenti di posta elettronica, allegati e collegamenti | - Cassette postali<br />- Account di Microsoft 365 |
+|Microsoft Defender per Office 365 | - Stati della posta e delle cassette postali ed eventi non elaborati<br />- Rilevamenti di posta elettronica, allegati e collegamenti | - Cassette postali<br />- Microsoft 365 account |
 | Microsoft Defender per identità | - Segnali di Active Directory, inclusi gli eventi di autenticazione<br />- Rilevamenti comportamentali correlati all'identità | Identità |
 | Microsoft Cloud App Security | - Rilevamento di app e servizi cloud non sanzionati (IT shadow)<br />- Esposizione dei dati alle app cloud<br />- Attività di minacce associate alle app cloud | App cloud |
 
@@ -82,11 +82,11 @@ La distribuzione di ogni servizio richiede in genere il provisioning nel tenant 
 | Microsoft Defender per identità | [Guida introduttiva: Creare l'istanza di Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step1) | *Vedere le istruzioni per il provisioning* |
 | Microsoft Cloud App Security | *Nessuna* | [Guida introduttiva: Introduzione a Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
 
-Dopo aver distribuito i servizi supportati, [attivare Microsoft 365 Defender](m365d-enable.md).
+Dopo aver distribuito i servizi supportati, [attiva Microsoft 365 Defender.](m365d-enable.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica di Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft 365 Panoramica di Defender](microsoft-365-defender.md)
 - [Attivare Microsoft 365 Defender](m365d-enable.md)
 - [Panoramica di Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Panoramica di Microsoft Defender per Office 365](../office-365-security/defender-for-office-365.md)

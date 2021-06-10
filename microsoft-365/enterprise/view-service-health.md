@@ -151,7 +151,7 @@ Per ulteriori informazioni sull'impegno per il tempo di attività, vedere [Trans
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Report sulle attività nell'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nell'Microsoft 365 di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
 [Preferenze centro messaggi](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
 

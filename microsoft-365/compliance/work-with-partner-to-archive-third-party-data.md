@@ -25,10 +25,10 @@ ms.locfileid: "51164941"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborare con un partner per archiviare i dati di terze parti
 
-È possibile collaborare con un partner Microsoft per importare e archiviare dati da un'origine dati di terze parti in Microsoft 365. Un partner può fornire un connettore personalizzato configurato per estrarre gli elementi dall'origine dati di terze parti (a intervalli regolari) e quindi importare tali elementi. Il connettore partner converte il contenuto di un elemento dall'origine dati in un formato di messaggio di posta elettronica e quindi archivia gli elementi nelle cassette postali. Dopo l'importazione dei dati di terze parti, è possibile applicare a questi dati le funzionalità di conformità di Microsoft 365, ad esempio conservazione per controversia legale, eDiscovery, archiviazione In-Place, controllo e criteri di conservazione di Microsoft 365.
+È possibile collaborare con un partner Microsoft per importare e archiviare i dati da un'origine dati di terze parti per Microsoft 365. Un partner può fornire un connettore personalizzato configurato per estrarre gli elementi dall'origine dati di terze parti (a intervalli regolari) e quindi importare tali elementi. Il connettore partner converte il contenuto di un elemento dall'origine dati in un formato di messaggio di posta elettronica e quindi archivia gli elementi nelle cassette postali. Dopo l'importazione dei dati di terze parti, è possibile applicare a questi dati funzionalità di conformità Microsoft 365 quali conservazione per controversia legale, eDiscovery, archiviazione In-Place, controllo e Microsoft 365.
 
 >[!IMPORTANT]
->La [soluzione di conformità](communication-compliance.md) di comunicazione in Microsoft 365 non può essere applicata ai dati di terze parti importati dai connettori partner menzionati in questo articolo. 
+>La [soluzione di conformità](communication-compliance.md) di Microsoft 365 non può essere applicata ai dati di terze parti importati dai connettori partner menzionati in questo articolo. 
 
 Ecco una panoramica del processo e dei passaggi necessari per collaborare con un partner Microsoft per importare dati di terze parti.
 
@@ -52,11 +52,11 @@ La figura e la descrizione seguenti illustrano il funzionamento del processo di 
     
 2. Il connettore partner si connette a origini dati di terze parti tramite un'API di terze parti (su base pianificata o come configurata) ed estrae gli elementi dall'origine dati. Il connettore partner converte il contenuto di un elemento in un formato di messaggio di posta elettronica. Per una [descrizione](#more-information) dello schema in formato messaggio, vedere la sezione Ulteriori informazioni. 
     
-3. Il connettore partner si connette al servizio Azure in Microsoft 365 utilizzando il servizio Web Exchange (EWS) tramite un punto finale noto.
+3. Il connettore partner si connette al servizio Azure in Microsoft 365 utilizzando Exchange Web Service (EWS) tramite un punto finale noto.
     
 4. Gli elementi vengono importati nella cassetta postale di un utente specifico oppure in una cassetta postale generale di dati di terze parti. Il fatto che un elemento sia importato nella cassetta postale di un utente specifico o nella cassetta postale di dati di terze parti dipende dai seguenti criteri:
     
-   1. **Elementi con un ID utente corrispondente a un account utente:** Se il connettore partner può mappare l'ID utente dell'elemento nell'origine dati di terze parti a  un ID utente specifico in Microsoft 365, l'elemento viene copiato nella cartella Ripuliture nella cartella Elementi ripristinabili dell'utente. Gli utenti non possono accedere agli elementi nella cartella Ripuliture. Tuttavia, è possibile utilizzare gli strumenti di eDiscovery per cercare elementi nella cartella Ripuliture.
+   1. **Elementi con un ID utente corrispondente a un account utente:** Se il connettore partner è in grado di mappare l'ID utente dell'elemento nell'origine dati  di terze parti a un ID utente specifico in Microsoft 365, l'elemento viene copiato nella cartella Ripuliture nella cartella Elementi ripristinabili dell'utente. Gli utenti non possono accedere agli elementi nella cartella Ripuliture. Tuttavia, è possibile utilizzare gli strumenti di eDiscovery per cercare elementi nella cartella Ripuliture.
     
    1. **Elementi che non dispongono di un ID utente corrispondente a un account utente:** Se il connettore partner non è in grado di mappare l'ID  utente di un elemento a un ID utente specifico, l'elemento viene copiato nella cartella Posta in arrivo della cassetta postale dati di terze parti. L'importazione di elementi nella posta in arrivo consente a un utente dell'organizzazione di accedere alla cassetta postale di terze parti per visualizzare e gestire questi elementi e vedere se è necessario prevedere modifiche nella configurazione del connettore partner.
  
@@ -198,7 +198,7 @@ Nelle sezioni seguenti sono elencati i partner Microsoft (e le origini dati di t
     
 - Mobile Guard
     
-- Documento principale
+- Pivot
     
 - Salesforce Chatter
 
@@ -368,11 +368,11 @@ Nelle sezioni seguenti sono elencati i partner Microsoft (e le origini dati di t
     
 - Microsoft 365 Lync dedicato
     
-- Messaggistica istantanea condivisa di Microsoft 365
+- Microsoft 365 Messaggistica istantanea condivisa
     
 - Pinterest
     
-- Documento principale
+- Pivot
     
 - QQ
     
@@ -473,18 +473,18 @@ Nelle sezioni seguenti sono elencati i partner Microsoft (e le origini dati di t
   
 ## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-microsoft-365"></a>Passaggio 2: Creare e configurare una cassetta postale dati di terze parti in Microsoft 365
 
-Ecco i passaggi per la creazione e la configurazione di una cassetta postale dati di terze parti per l'importazione di dati in Microsoft 365. Come spiegato in precedenza, gli elementi vengono importati in questa cassetta postale se il connettore partner non è in grado di mappare l'ID utente dell'elemento a un account utente.
+Ecco i passaggi per la creazione e la configurazione di una cassetta postale dati di terze parti per l'importazione di dati Microsoft 365. Come spiegato in precedenza, gli elementi vengono importati in questa cassetta postale se il connettore partner non è in grado di mappare l'ID utente dell'elemento a un account utente.
   
- **Completare queste attività nell'interfaccia di amministrazione di Microsoft 365**
+ **Completare queste attività nell'Microsoft 365 di amministrazione**
   
-1. Creare un account utente e assegnare una licenza di Exchange Online Piano 2; vedere [Aggiungere utenti a Microsoft 365](../admin/add-users/add-users.md). È necessaria una licenza di Piano 2 per attivare il blocco per controversia legale per la cassetta postale o abilitare una cassetta postale di archiviazione con una quota di archiviazione illimitata.
+1. Creare un account utente e assegnarle una licenza Exchange Online Piano 2; vedere [Aggiungere utenti a Microsoft 365](../admin/add-users/add-users.md). È necessaria una licenza di Piano 2 per attivare il blocco per controversia legale per la cassetta postale o abilitare una cassetta postale di archiviazione con una quota di archiviazione illimitata.
     
-2. Aggiungere l'account utente per la cassetta postale dati di terze parti al ruolo di amministratore di **Exchange** in Microsoft 365; vedere [Assegnare ruoli di amministratore in Microsoft 365.](../admin/add-users/assign-admin-roles.md)
+2. Aggiungere l'account utente per la cassetta postale dati di terze parti **al ruolo Exchange amministratore** in Microsoft 365; vedere [Assegnare ruoli di amministratore in Microsoft 365](../admin/add-users/assign-admin-roles.md).
     
     > [!TIP]
     > Annotare le credenziali per l'account utente. È necessario fornirle al partner, come descritto nel passaggio 4. 
   
- **Completare queste attività nell'interfaccia di amministrazione di Exchange**
+ **Completare queste attività nell'Exchange di amministrazione**
   
 1. Nascondere la cassetta postale dati di terze parti dalla rubrica e da altri elenchi di indirizzi nell'organizzazione; vedere [Gestire le cassette postali degli utenti](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes). In alternativa, è possibile eseguire il comando di PowerShell seguente:
     
@@ -492,13 +492,13 @@ Ecco i passaggi per la creazione e la configurazione di una cassetta postale dat
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. Assegnare **l'autorizzazione FullAccess** alla cassetta postale dati di terze parti in modo che gli amministratori o i responsabili della conformità possano aprire la cassetta postale dati di terze parti nel client desktop di Outlook; vedere [Gestire le autorizzazioni per i destinatari](https://go.microsoft.com/fwlink/p/?LinkId=692104).
+2. Assegnare **l'autorizzazione FullAccess** alla cassetta postale dati di terze parti in modo che gli amministratori o i responsabili della conformità possano aprire la cassetta postale dati di terze parti nel client desktop Outlook di terze parti; vedere [Gestire le autorizzazioni per i destinatari](https://go.microsoft.com/fwlink/p/?LinkId=692104).
     
 3. Abilitare le seguenti funzionalità correlate alla conformità per la cassetta postale dati di terze parti:
     
     - Abilitare la cassetta postale di archiviazione; vedere [Abilitare le cassette postali di](enable-archive-mailboxes.md) archiviazione e Abilitare [l'archiviazione illimitata.](enable-unlimited-archiving.md) Ciò consente di liberare spazio di archiviazione nella cassetta postale principale impostando un criterio di archiviazione che sposta gli elementi di dati di terze parti nella cassetta postale di archiviazione. In questo modo, l'utente può avere uno spazio di archiviazione illimitato per i dati di terze parti.
     
-    - Abilitare il blocco per controversia legale nella cassetta postale di dati di terze parti. È inoltre possibile applicare un criterio di conservazione di Microsoft 365 nel Centro sicurezza e conformità. L'archiviazione di questa cassetta postale mantiene gli elementi di dati di terze parti (a tempo indeterminato o per una durata specificata) e ne impedisce l'eliminazione dalla cassetta postale. Vedere uno dei seguenti argomenti:
+    - Abilitare il blocco per controversia legale nella cassetta postale di dati di terze parti. È inoltre possibile applicare un criterio Microsoft 365 di conservazione nel Centro sicurezza e conformità. L'archiviazione di questa cassetta postale mantiene gli elementi di dati di terze parti (a tempo indeterminato o per una durata specificata) e ne impedisce l'eliminazione dalla cassetta postale. Vedere uno dei seguenti argomenti:
     
       - [Applicare un blocco per controversia legale a una cassetta postale](./create-a-litigation-hold.md)
     
@@ -508,11 +508,11 @@ Ecco i passaggi per la creazione e la configurazione di una cassetta postale dat
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>Passaggio 3: configurare cassette postali degli utenti per i dati di terze parti
 
-Il passaggio successivo consiste nel configurare cassette postali degli utenti per supportare i dati di terze parti. Completare queste attività utilizzando l'interfaccia di amministrazione di Exchange o utilizzando i cmdlet di Windows PowerShell corrispondenti.
+Il passaggio successivo consiste nel configurare cassette postali degli utenti per supportare i dati di terze parti. Completare queste attività utilizzando l'Exchange di amministrazione o utilizzando i cmdlet di Windows PowerShell corrispondenti.
   
 1. Abilitare la cassetta postale di archiviazione per ogni utente; vedere [Abilitare le cassette postali di](enable-archive-mailboxes.md) archiviazione e Abilitare [l'archiviazione illimitata.](enable-unlimited-archiving.md)
     
-2. Applicare un criterio di conservazione di Microsoft 365 alle cassette postali degli utenti in caso di conservazione per controversia legale. vedere uno dei seguenti argomenti: 
+2. Applicare il blocco per controversia legale alle cassette postali degli utenti o applicare un Microsoft 365 di conservazione; vedere uno dei seguenti argomenti: 
     
     - [Applicare un blocco per controversia legale a una cassetta postale](./create-a-litigation-hold.md)
     
@@ -530,13 +530,13 @@ Il passaggio finale consiste nel fornire al partner le informazioni seguenti in 
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
-- Le credenziali di accesso (ID utente e password di Microsoft 365) della cassetta postale dati di terze parti creata nel passaggio 2. Queste credenziali sono necessarie in modo che il connettore partner possa accedere e importare elementi nelle cassette postali degli utenti e nella cassetta postale dati di terze parti.
+- Le credenziali di accesso (Microsoft 365 ID utente e password) della cassetta postale dati di terze parti creata nel passaggio 2. Queste credenziali sono necessarie in modo che il connettore partner possa accedere e importare elementi nelle cassette postali degli utenti e nella cassetta postale dati di terze parti.
  
 ## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Passaggio 5: Registrare il connettore dati di terze parti in Azure Active Directory
 
-A partire dal 30 settembre 2018, il servizio Azure in Microsoft 365 inizierà a utilizzare l'autenticazione moderna in Exchange Online per autenticare i connettori di dati di terze parti che tentano di connettersi all'organizzazione per importare i dati. Il motivo di questa modifica è che l'autenticazione moderna garantisce una maggiore sicurezza rispetto al metodo corrente, basato su un elenco consenti per i connettori di terze parti che usano l'endpoint descritto in precedenza per connettersi al servizio Azure.
+A partire dal 30 settembre 2018, il servizio Azure in Microsoft 365 inizierà a usare l'autenticazione moderna in Exchange Online per autenticare i connettori di dati di terze parti che tentano di connettersi all'organizzazione per importare i dati. Il motivo di questa modifica è che l'autenticazione moderna garantisce una maggiore sicurezza rispetto al metodo corrente, basato su un elenco consenti per i connettori di terze parti che usano l'endpoint descritto in precedenza per connettersi al servizio Azure.
 
-Per consentire a un connettore di dati di terze parti di connettersi a Microsoft 365 utilizzando il nuovo metodo di autenticazione moderno, un amministratore dell'organizzazione deve acconsentire alla registrazione del connettore come applicazione di servizio attendibile in Azure Active Directory. Questa operazione viene eseguita accettando una richiesta di autorizzazione per consentire al connettore di accedere ai dati dell'organizzazione in Azure Active Directory. Dopo aver accettato questa richiesta, il connettore di dati di terze parti viene aggiunto come applicazione aziendale ad Azure Active Directory e rappresentato come entità servizio. Per ulteriori informazioni sul processo di consenso, vedere [Tenant Admin Consent.](/skype-sdk/trusted-application-api/docs/tenantadminconsent)
+Per consentire a un connettore di dati di terze parti di connettersi a Microsoft 365 utilizzando il nuovo metodo di autenticazione moderno, un amministratore dell'organizzazione deve acconsentire alla registrazione del connettore come applicazione di servizio attendibile in Azure Active Directory. Questa operazione viene eseguita accettando una richiesta di autorizzazione per consentire al connettore di accedere ai dati dell'organizzazione in Azure Active Directory. Dopo aver accettato questa richiesta, il connettore di dati di terze parti viene aggiunto come applicazione enterprise Azure Active Directory e rappresentato come entità servizio. Per ulteriori informazioni sul processo di consenso, vedere [Tenant Admin Consent.](/skype-sdk/trusted-application-api/docs/tenantadminconsent)
 
 Ecco i passaggi per accedere e accettare la richiesta di registrazione del connettore:
 
@@ -548,20 +548,20 @@ Ecco i passaggi per accedere e accettare la richiesta di registrazione del conne
 
 2. Fare clic su **Accetta**.
 
-Dopo aver accettato la richiesta, viene visualizzato il portale di [Azure.](https://portal.azure.com) Per visualizzare l'elenco delle applicazioni per l'organizzazione, fare clic su **Azure Active Directory** Enterprise  >  **applications**. Il connettore dati di terze parti di Microsoft 365 è elencato nel **pannello Applicazioni** aziendali.
+Dopo aver accettato la richiesta, viene visualizzato il portale di [Azure.](https://portal.azure.com) Per visualizzare l'elenco delle applicazioni per l'organizzazione, **fare clic su Azure Active Directory** Enterprise  >  **applicazioni**. Il Microsoft 365 di dati di terze parti è elencato nel pannello **Enterprise applicazioni.**
 
 > [!IMPORTANT]
 > Dopo il 30 settembre 2018, i dati di terze parti non verranno più importati nelle cassette postali dell'organizzazione se non si registra un connettore dati di terze parti in Azure Active Directory. Nota I connettori di dati di terze parti esistenti (quelli creati prima del 30 settembre 2018) devono essere registrati anche in Azure Active Directory seguendo la procedura descritta nel passaggio 5.
 
 ### <a name="revoking-consent-for-a-third-party-data-connector"></a>Revoca del consenso per un connettore dati di terze parti
 
-Dopo che l'organizzazione acconsente alla richiesta di autorizzazioni per registrare un connettore di dati di terze parti in Azure Active Directory, l'organizzazione può revocare tale consenso in qualsiasi momento. Tuttavia, revocando il consenso per un connettore, i dati provenienti dall'origine dati di terze parti non verranno più importati in Microsoft 365.
+Dopo che l'organizzazione acconsente alla richiesta di autorizzazione per registrare un connettore di dati di terze parti in Azure Active Directory, l'organizzazione può revocare tale consenso in qualsiasi momento. Tuttavia, revocando il consenso per un connettore, i dati dell'origine dati di terze parti non verranno più importati in Microsoft 365.
 
-Per revocare il consenso per un connettore di dati di terze parti, è possibile eliminare l'applicazione (eliminando l'entità servizio corrispondente) da Azure Active Directory usando il pannello **Applicazioni enterprise** nel portale di Azure o [tramite Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) in Microsoft 365 PowerShell. È inoltre possibile utilizzare il cmdlet [Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) in Azure Active Directory PowerShell.
+Per revocare il consenso per un connettore di dati di terze parti, è possibile eliminare l'applicazione (eliminando l'entità servizio corrispondente) da Azure Active Directory usando il pannello delle applicazioni **Enterprise** nel portale di Azure o tramite [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) in Microsoft 365 PowerShell. È inoltre possibile utilizzare il cmdlet [Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) in Azure Active Directory PowerShell.
   
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- Come illustrato in precedenza, gli elementi provenienti da origini dati di terze parti vengono importati nelle cassette postali di Exchange come messaggi di posta elettronica. Il connettore partner importa l'elemento usando uno schema richiesto dall'API di Microsoft 365. Nella tabella seguente vengono descritte le proprietà del messaggio di un elemento di un'origine dati di terze parti dopo che è stato importato in una cassetta postale di Exchange come messaggio di posta elettronica. Nella tabella viene indicato anche se la proprietà del messaggio è obbligatoria. È necessario popolare le proprietà obbligatorie. Se a un elemento manca una proprietà obbligatoria, non verrà importato in Microsoft 365. Il processo di importazione restituisce un messaggio di errore che spiega perché un elemento non è stato importato e quale proprietà è mancante.<br/><br/>
+- Come illustrato in precedenza, gli elementi provenienti da origini dati di terze parti vengono importati nelle cassette postali di Exchange come messaggi di posta elettronica. Il connettore partner importa l'elemento usando uno schema richiesto dall'API Microsoft 365 partner. Nella tabella seguente vengono descritte le proprietà del messaggio di un elemento di un'origine dati di terze parti dopo che è stato importato in una cassetta postale di Exchange come messaggio di posta elettronica. Nella tabella viene indicato anche se la proprietà del messaggio è obbligatoria. È necessario popolare le proprietà obbligatorie. Se a un elemento manca una proprietà obbligatoria, non verrà importato in Microsoft 365. Il processo di importazione restituisce un messaggio di errore che spiega perché un elemento non è stato importato e quale proprietà è mancante.<br/><br/>
     
     |**Proprietà del messaggio**|**Obbligatorio?**|**Descrizione**|**Valore di esempio**|
     |:-----|:-----|:-----|:-----|
@@ -591,7 +591,7 @@ Per revocare il consenso per un connettore di dati di terze parti, è possibile 
     
   - **`itemclass:ipm.externaldata.<third-party data type>`**: utilizzare questa coppia proprietà-valore per cercare solo un tipo specifico di dati di terze parti. Ad esempio, per cercare solo i dati di Facebook che contengono la parola "contoso" nella proprietà Subject, è necessario utilizzare la query con parola chiave  `itemclass:ipm.externaldata.Facebook* AND subject:contoso` . 
 
-  Per un elenco completo dei valori da utilizzare per i tipi di dati di terze parti per la proprietà, vedere `itemclass` Use Content Search to search [third-party data that was imported to Microsoft 365.](use-content-search-to-search-third-party-data-that-was-imported.md)
+  Per un elenco completo dei valori da utilizzare per i tipi di dati di terze parti per la proprietà, vedere `itemclass` Use Content Search to search [third-party data that was imported to Microsoft 365](use-content-search-to-search-third-party-data-that-was-imported.md).
     
    Per ulteriori informazioni sull'utilizzo di Ricerca contenuto e sulla creazione di query di ricerca con parole chiave, vedere:
     

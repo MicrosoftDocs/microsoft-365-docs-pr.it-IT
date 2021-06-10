@@ -165,7 +165,7 @@ Per creare una regola di trasporto della posta, visualizzare [un breve video di 
 > [!TIP]
 > È inoltre possibile aggiungere i file che si desidera bloccare all'elenco antimalware [nel passaggio 4.](#4-raise-the-level-of-protection-against-malware-in-mail)
 
-Per altre informazioni, vedi:
+Per altre informazioni, vedere:
 
 - [Ransomware: come ridurre i rischi](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 

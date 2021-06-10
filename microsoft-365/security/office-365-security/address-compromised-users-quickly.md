@@ -12,7 +12,7 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: Informazioni su come velocizzare il processo di rilevamento e gestione degli account utente compromessi con funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365 Piano 2.
+description: Scopri come velocizzare il processo di rilevamento e gestione degli account utente compromessi con funzionalità di indagine e risposta automatizzate in Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
@@ -32,7 +32,7 @@ ms.locfileid: "51934694"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) include potenti funzionalità di analisi e risposta [automatizzate](office-365-air.md) (AIR). Tali funzionalità possono risparmiare tempo e fatica al team delle operazioni di sicurezza per affrontare le minacce. Microsoft continua a migliorare le funzionalità di sicurezza. Di recente, le funzionalità AIR sono state migliorate per includere un playbook di sicurezza degli utenti compromesso (attualmente in anteprima). Leggi questo articolo per altre informazioni sul playbook sulla sicurezza degli utenti compromesso. Per ulteriori dettagli, vedere il post di blog Velocizzare il tempo necessario per rilevare e rispondere alla compromissione degli utenti e limitare l'ambito di violazione con [Microsoft Defender per Office 365.](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)
+[Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) include potenti funzionalità air [(Automated Investigation and Response).](office-365-air.md) Tali funzionalità possono risparmiare tempo e fatica al team delle operazioni di sicurezza per affrontare le minacce. Microsoft continua a migliorare le funzionalità di sicurezza. Di recente, le funzionalità AIR sono state migliorate per includere un playbook di sicurezza degli utenti compromesso (attualmente in anteprima). Leggi questo articolo per altre informazioni sul playbook sulla sicurezza degli utenti compromesso. E vedi il post di blog Velocizzare il tempo per rilevare e rispondere alla compromissione degli utenti e limitare l'ambito di violazione con [Microsoft Defender per](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) Office 365 per ulteriori dettagli.
 
 ![Indagine automatizzata per un utente compromesso](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -46,7 +46,7 @@ Il playbook sulla sicurezza degli utenti compromesso consente al team di sicurez
 
 ## <a name="compromised-user-alerts"></a>Avvisi utente compromessi
 
-Quando un account utente viene compromesso, si verificano comportamenti atipici o anomali. Ad esempio, i messaggi di phishing e posta indesiderata potrebbero essere inviati internamente da un account utente attendibile. Defender per Office 365 è in grado di rilevare tali anomalie nei modelli di posta elettronica e nell'attività di collaborazione in Office 365. In questo caso, vengono attivati gli avvisi e inizia il processo di mitigazione delle minacce.
+Quando un account utente viene compromesso, si verificano comportamenti atipici o anomali. Ad esempio, i messaggi di phishing e posta indesiderata potrebbero essere inviati internamente da un account utente attendibile. Defender for Office 365 può rilevare tali anomalie nei modelli di posta elettronica e nell'attività di collaborazione all'interno Office 365. In questo caso, vengono attivati gli avvisi e inizia il processo di mitigazione delle minacce.
 
 Ad esempio, ecco un avviso che è stato attivato a causa di un invio di posta elettronica sospetto:
 
@@ -107,4 +107,4 @@ Per ulteriori informazioni, vedere [Visualizzare i dettagli di un'indagine.](air
 
 - [Informazioni su AIR in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Visitare la roadmap di Microsoft 365 per vedere cosa sarà disponibile a breve e implementazione](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Visitare la Microsoft 365 roadmap per vedere cosa verrà presto e implementazione](https://www.microsoft.com/microsoft-365/roadmap?filters=)

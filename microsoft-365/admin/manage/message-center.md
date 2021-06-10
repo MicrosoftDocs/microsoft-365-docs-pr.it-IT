@@ -227,7 +227,7 @@ Ecco una breve panoramica delle informazioni che vedrai in ogni colonna.
 - Ruoli con autorizzazioni di scrittura nella directory
 - Amministratore del servizio Intune
 - Amministratore dei ruoli con privilegi
-- Ruolo con autorizzazioni di lettura per i report
+- Amministratore che legge i report
 
 ## <a name="give-feedback-on-a-post"></a>Inviare feedback su un post
 

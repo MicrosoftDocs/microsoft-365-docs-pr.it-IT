@@ -41,11 +41,11 @@ Queste applicazioni non sono considerate virus, malware o altri tipi di minacce,
 
 Queste applicazioni possono aumentare il rischio che la rete sia infettata da malware, causare infezioni da malware più difficili da identificare e può sprecare risorse IT nella pulizia delle applicazioni.
 
-## <a name="how-it-works"></a>Funzionamento
+## <a name="how-it-works"></a>Come funziona
 
 Defender per Endpoint su Linux può rilevare e segnalare i file PUA. Se configurati in modalità di blocco, i file PUA vengono spostati in quarantena.
 
-Quando viene rilevata una puA in un endpoint, Defender per Endpoint su Linux mantiene un record dell'infezione nella cronologia delle minacce. La cronologia può essere visualizzato dal portale di Microsoft Defender Security Center o tramite lo `mdatp` strumento da riga di comando. Il nome della minaccia conterrà la parola "Applicazione".
+Quando viene rilevata una puA in un endpoint, Defender per Endpoint su Linux mantiene un record dell'infezione nella cronologia delle minacce. La cronologia può essere visualizzato dal portale Microsoft Defender Security Center o tramite lo `mdatp` strumento da riga di comando. Il nome della minaccia conterrà la parola "Applicazione".
 
 ## <a name="configure-pua-protection"></a>Configurare la protezione puA
 
@@ -53,7 +53,7 @@ La protezione dell'applicazione di accesso basato su accesso pubblico in Defende
 
 - **Disattivato:** la protezione dell'applicazione può essere disabilitata.
 - **Controllo:** i file PUA vengono riportati nei log del prodotto, ma non in Microsoft Defender Security Center. Nella cronologia delle minacce non viene archiviato alcun record dell'infezione e non viene eseguita alcuna azione da parte del prodotto.
-- **Blocca:** i file PUA vengono segnalati nei log del prodotto e in Microsoft Defender Security Center. Un record dell'infezione viene archiviato nella cronologia delle minacce e l'azione viene eseguita dal prodotto.
+- **Blocca:** i file PUA vengono riportati nei log del prodotto e Microsoft Defender Security Center. Un record dell'infezione viene archiviato nella cronologia delle minacce e l'azione viene eseguita dal prodotto.
 
 >[!WARNING]
 >Per impostazione predefinita, la protezione puA è configurata in **modalità** di controllo.

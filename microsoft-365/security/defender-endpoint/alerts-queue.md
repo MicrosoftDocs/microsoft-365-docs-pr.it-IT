@@ -29,7 +29,7 @@ ms.locfileid: "51934334"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender per Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
@@ -58,14 +58,14 @@ Nella barra di spostamento superiore è possibile:
 
 Gravità avviso | Descrizione
 :---|:---
-Alto </br>(Rosso) | Avvisi comunemente visualizzati associati a minacce persistenti avanzate (APT). Questi avvisi indicano un rischio elevato a causa della gravità dei danni che possono infliggere ai dispositivi. Alcuni esempi sono: attività degli strumenti di furto di credenziali, attività ransomware non associate ad alcun gruppo, manomissione di sensori di sicurezza o attività dannose indicative di un avversario umano.
+Fortemente </br>(Rosso) | Avvisi comunemente visualizzati associati a minacce persistenti avanzate (APT). Questi avvisi indicano un rischio elevato a causa della gravità dei danni che possono infliggere ai dispositivi. Alcuni esempi sono: attività degli strumenti di furto di credenziali, attività ransomware non associate ad alcun gruppo, manomissione di sensori di sicurezza o attività dannose indicative di un avversario umano.
 Medio </br>(Arancione) | Avvisi relativi al rilevamento degli endpoint e ai comportamenti di risposta post-violazione che potrebbero far parte di una minaccia persistente avanzata (APT). Ciò include comportamenti osservati tipici delle fasi di attacco, modifiche anomali del Registro di sistema, esecuzione di file sospetti e così via. Anche se alcuni potrebbero essere parte dei test di sicurezza interni, richiede un'indagine perché potrebbe anche essere parte di un attacco avanzato.
-Basso </br>(Giallo) | Avvisi sulle minacce associate al malware prevalente. Ad esempio, strumenti di hacking, strumenti di hacking non malware, come l'esecuzione di comandi di esplorazione, la cancellazione dei registri e così via, che spesso non indicano una minaccia avanzata per l'organizzazione. Potrebbe anche derivare da un test isolato degli strumenti di sicurezza da parte di un utente dell'organizzazione.
+Bassa </br>(Giallo) | Avvisi sulle minacce associate al malware prevalente. Ad esempio, strumenti di hacking, strumenti di hacking non malware, come l'esecuzione di comandi di esplorazione, la cancellazione dei registri e così via, che spesso non indicano una minaccia avanzata per l'organizzazione. Potrebbe anche derivare da un test isolato degli strumenti di sicurezza da parte di un utente dell'organizzazione.
 Informativa </br>(Grigio) | Avvisi che potrebbero non essere considerati dannosi per la rete, ma che possono aumentare la consapevolezza della sicurezza dell'organizzazione su potenziali problemi di sicurezza.
 
 #### <a name="understanding-alert-severity"></a>Informazioni sulla gravità degli avvisi
 
-Le gravità degli avvisi di Microsoft Defender Antivirus (Microsoft Defender AV) e Defender for Endpoint sono diverse perché rappresentano ambiti diversi.
+Antivirus Microsoft Defender (Microsoft Defender AV) e Defender for Endpoint le gravità degli avvisi sono diverse perché rappresentano ambiti diversi.
 
 La gravità della minaccia di Microsoft Defender AV rappresenta la gravità assoluta della minaccia rilevata (malware) e viene assegnata in base al potenziale rischio per il singolo dispositivo, se infetto.
 
@@ -100,7 +100,7 @@ Nella tabella seguente sono elencate le categorie correnti e il modo in cui veng
 | Persistenza          | Persistenza         | Creazione di punti di estendibilità dell'avvio automatico (ASEP) per rimanere attivi e superare i riavvii del sistema                                        |
 | Escalation dei privilegi | PrivilegeEscalation | Ottenere livelli di autorizzazione superiori per il codice eseguendolo nel contesto di un processo o di un account con privilegi                         |
 | Ransomware           | Ransomware          | Malware che crittografa i file ed estorce il pagamento per ripristinare l'accesso                                                                     |
-| Attività sospette  | SuspiciousActivity  | Attività atipiche che potrebbero essere attività di malware o parte di un attacco                                                                 |
+| Attività sospetta  | SuspiciousActivity  | Attività atipiche che potrebbero essere attività di malware o parte di un attacco                                                                 |
 | Software indesiderato    | UnwantedSoftware    | App e app di bassa reputazione che influiscono sulla produttività e sull'esperienza utente; rilevato come applicazioni potenzialmente indesiderate (PUA) |
 
 ### <a name="status"></a>Stato
@@ -121,10 +121,10 @@ Puoi scegliere tra la visualizzazione degli avvisi assegnati all'utente o l'auto
 
 ### <a name="detection-source"></a>Origine di rilevamento
 
-Selezionare l'origine che ha attivato il rilevamento degli avvisi. I partecipanti all'anteprima di Microsoft Threat Experts possono ora filtrare e visualizzare i rilevamenti del nuovo servizio di ricerca gestito da esperti di minacce.
+Selezionare l'origine che ha attivato il rilevamento degli avvisi. Microsoft Threat Experts partecipanti all'anteprima possono ora filtrare e visualizzare i rilevamenti del nuovo servizio di ricerca gestito dagli esperti di minacce.
 
 >[!NOTE]
->Il filtro Antivirus verrà visualizzato solo se i dispositivi usano Microsoft Defender Antivirus come prodotto antimalware di protezione in tempo reale predefinito.
+>Il filtro antivirus verrà visualizzato solo se i dispositivi Antivirus Microsoft Defender come prodotto antimalware di protezione in tempo reale predefinito.
 
 | Origine di rilevamento                  | Valore API                  |
 |-----------------------------------|----------------------------|

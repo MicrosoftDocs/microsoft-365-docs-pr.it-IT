@@ -27,7 +27,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933374"
 ---
-# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Analizzare la posta elettronica dannosa recapitata in Office 365
+# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Analizzare i messaggi di posta elettronica dannosi recapitati in Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51933374"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender per Office 365](defender-for-office-365.md) consente di analizzare le attività che mettono a rischio le persone nell'organizzazione e di intervenire per proteggere l'organizzazione. Ad esempio, se si fa parte del team di sicurezza dell'organizzazione, è possibile individuare e analizzare i messaggi di posta elettronica sospetti recapitati. A tale scopo, puoi usare [Threat Explorer (o rilevamenti in tempo reale).](threat-explorer.md)
+[Microsoft Defender per Office 365](defender-for-office-365.md) consente di analizzare le attività che mettono a rischio le persone nell'organizzazione e di intraprendere azioni per proteggere l'organizzazione. Ad esempio, se si fa parte del team di sicurezza dell'organizzazione, è possibile individuare e analizzare i messaggi di posta elettronica sospetti recapitati. A tale scopo, puoi usare [Threat Explorer (o rilevamenti in tempo reale).](threat-explorer.md)
 
 > [!NOTE]
 > Passare all'articolo di correzione [qui](remediate-malicious-email-delivered-office-365.md).
@@ -45,7 +45,7 @@ ms.locfileid: "51933374"
 
 Verificare che vengano soddisfatti i seguenti requisiti:
 
-- L'organizzazione dispone [di Microsoft Defender per Office 365](defender-for-office-365.md) e le licenze sono assegnate agli [utenti.](../../admin/manage/assign-licenses-to-users.md)
+- L'organizzazione dispone [di Microsoft Defender per Office 365](defender-for-office-365.md) e le licenze vengono assegnate agli [utenti.](../../admin/manage/assign-licenses-to-users.md)
 
 - [la registrazione di](../../compliance/turn-audit-log-search-on-or-off.md) controllo è attivata per l'organizzazione.
 
@@ -67,10 +67,10 @@ Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazion
 |
 
 > [!NOTE]
-> *L'anteprima* è un ruolo e non un gruppo di ruoli. il ruolo Anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365 (all'indirizzo <https://protection.office.com> ). Passare a **Autorizzazioni** e quindi modificare un gruppo di ruoli esistente o aggiungere un nuovo gruppo di ruoli con il **ruolo Anteprima** assegnato.
-> Al ruolo Amministratore globale viene assegnata l'interfaccia di amministrazione di Microsoft 365 ( ) e i ruoli Security Administrator e Security Reader vengono assegnati nel <https://admin.microsoft.com> Centro sicurezza & conformità ( <https://protection.office.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md)
+> *L'anteprima* è un ruolo e non un gruppo di ruoli. il ruolo Anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365 (in <https://protection.office.com> ). Passare a **Autorizzazioni** e quindi modificare un gruppo di ruoli esistente o aggiungere un nuovo gruppo di ruoli con il **ruolo Anteprima** assegnato.
+> Al ruolo Amministratore globale viene assegnata l'interfaccia di amministrazione di Microsoft 365 ( ) e i ruoli Amministratore sicurezza e Lettore sicurezza vengono assegnati nel <https://admin.microsoft.com> Centro sicurezza & conformità ( <https://protection.office.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md)
 
-Sappiamo che l'anteprima e il download della posta elettronica sono attività sensibili e quindi il controllo è abilitato per queste attività. Una volta che un amministratore esegue queste attività sui messaggi di posta elettronica, i log di controllo vengono generati per lo stesso e possono essere visibili nel Centro sicurezza & e conformità di Office 365 ( <https://protection.office.com> ). Passare alla **sezione Ricerca** log di controllo  >  **e** filtrare in base al nome dell'amministratore nella sezione Ricerca. I risultati filtrati mostreranno l'attività **AdminMailAccess.** Selezionare una riga per visualizzare i dettagli nella sezione **Ulteriori informazioni** sulla posta elettronica in anteprima o scaricata.
+Sappiamo che l'anteprima e il download della posta elettronica sono attività sensibili e quindi il controllo è abilitato per queste attività. Una volta che un amministratore esegue queste attività sui messaggi di posta elettronica, i log di controllo vengono generati per lo stesso e possono essere visibili nel Centro sicurezza Office 365 & conformità ( <https://protection.office.com> ). Passare alla **sezione Ricerca** log di controllo  >  **e** filtrare in base al nome dell'amministratore nella sezione Ricerca. I risultati filtrati mostreranno l'attività **AdminMailAccess.** Selezionare una riga per visualizzare i dettagli nella sezione **Ulteriori informazioni** sulla posta elettronica in anteprima o scaricata.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Trovare messaggi di posta elettronica sospetti recapitati
 
@@ -79,7 +79,7 @@ Esplora minacce è un potente report che può servire a più scopi, come trovare
 > [!NOTE]
 > Le ricerche predefinite in Esplora risorse non includono attualmente elementi zapped.  Questo vale per tutte le visualizzazioni, ad esempio malware o phish views. Per includere gli elementi zapped, è necessario aggiungere un set **di** azioni di recapito per includere **Rimosso da ZAP.** Se includi tutte le opzioni, vedrai tutti i risultati dell'azione di recapito, inclusi gli elementi zapped.
 
-1. **Passare a Threat Explorer:** accedere a e accedere usando <https://protection.office.com> l'account aziendale o dell'istituto di istruzione per Office 365. Verrà quindi accedere al Centro sicurezza & conformità.
+1. **Passare a Esplora minacce:** accedere a e accedere usando l'account aziendale o <https://protection.office.com> dell'istituto di istruzione per Office 365. Verrà quindi accedere al Centro sicurezza & conformità.
 
 2. Nella barra di avvio veloce di spostamento a sinistra scegliere **Esplora gestione** \> **minacce.**
 
@@ -93,7 +93,7 @@ Esplora minacce è un potente report che può servire a più scopi, come trovare
 
     La *visualizzazione Malware* è attualmente l'impostazione predefinita e acquisisce i messaggi di posta elettronica in cui viene rilevata una minaccia malware. La *visualizzazione Phish* funziona nello stesso modo, per Phish.
 
-    Tuttavia, *nella visualizzazione Tutti i* messaggi di posta elettronica sono elencati tutti i messaggi ricevuti dall'organizzazione, indipendentemente dal fatto che siano state rilevate o meno minacce. Come puoi immaginare, si tratta di una grande quantità di dati, motivo per cui questa visualizzazione mostra un segnaposto che richiede l'applicazione di un filtro. Questa visualizzazione è disponibile solo per i clienti di Defender per Office 365 P2.
+    Tuttavia, *nella visualizzazione Tutti i* messaggi di posta elettronica sono elencati tutti i messaggi ricevuti dall'organizzazione, indipendentemente dal fatto che siano state rilevate o meno minacce. Come puoi immaginare, si tratta di una grande quantità di dati, motivo per cui questa visualizzazione mostra un segnaposto che richiede l'applicazione di un filtro. Questa visualizzazione è disponibile solo per Defender per Office 365 clienti P2.
 
     *La visualizzazione* Invii mostra tutti i messaggi inviati dall'amministratore o dall'utente segnalati a Microsoft.
 
@@ -122,7 +122,7 @@ Esplora minacce è un potente report che può servire a più scopi, come trovare
     - **Recapitato:** la posta elettronica è stata recapitata nella posta in arrivo o nella cartella di un utente e l'utente può accedervi direttamente.
     - **Posta indesiderata** (recapitata nella posta indesiderata): la posta elettronica è stata inviata alla cartella posta indesiderata o eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica nella cartella Posta indesiderata o Eliminata.
     - **Bloccato:** tutti i messaggi di posta elettronica messi in quarantena, non riusciti o eliminati. Questo è completamente inaccessibile dall'utente.
-    - **Sostituito:** qualsiasi messaggio di posta elettronica in cui gli allegati dannosi vengono sostituiti da file txt che specificano che l'allegato era dannoso
+    - **Sostituito:** qualsiasi messaggio di posta elettronica in cui gli allegati dannosi vengono sostituiti da .txt che indica che l'allegato era dannoso
 
     **Posizione di recapito**: il filtro Percorso di recapito è disponibile per consentire agli amministratori di comprendere dove è stata terminata la posta indesiderata sospetta e quali azioni sono state intraprese su di esso. I dati risultanti possono essere esportati in un foglio di calcolo. I possibili percorsi di recapito sono:
 
@@ -179,7 +179,7 @@ L'azione di recapito è l'azione eseguita su un messaggio di posta elettronica a
 
 - **Bloccato:** tutti i messaggi di posta elettronica messi in quarantena, non riusciti o eliminati. Questo è completamente inaccessibile dall'utente.
 
-- **Sostituito:** qualsiasi messaggio di posta elettronica in cui gli allegati dannosi vengono sostituiti da file txt che specificano che l'allegato era dannoso.
+- **Sostituito:** qualsiasi messaggio di posta elettronica in cui gli allegati dannosi vengono sostituiti da .txt che indica che l'allegato era dannoso.
 
 Percorso di recapito mostra i risultati dei criteri e dei rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione eseguita quando viene trovato un messaggio di posta elettronica problematico. Ecco i valori possibili della posizione di recapito:
 

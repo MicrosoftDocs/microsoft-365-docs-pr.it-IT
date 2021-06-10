@@ -1,6 +1,6 @@
 ---
 title: Rilevare dispositivi esposti
-description: Informazioni su come è possibile utilizzare la gestione delle minacce e delle vulnerabilità per aiutare amministratori della sicurezza, amministratori IT e SecOps a collaborare.
+description: Informazioni su gestione di minacce e vulnerabilità possono essere usate per aiutare amministratori della sicurezza, amministratori IT e SecOps a collaborare.
 keywords: Scenari di Microsoft Defender for Endpoint-tvm, Microsoft Defender for Endpoint, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,14 +25,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934094"
 ---
-# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Ricerca di dispositivi esposti - gestione delle minacce e delle vulnerabilità
+# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Ricerca di dispositivi esposti - gestione di minacce e vulnerabilità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -49,13 +49,13 @@ La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query
 
 - [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - Knowledge base di vulnerabilità divulgate pubblicamente, incluso se il codice di exploit è pubblicamente disponibile.
 
-- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - Eventi di valutazione della gestione delle minacce e delle vulnerabilità, che indicano lo stato di varie configurazioni di sicurezza nei dispositivi.
+- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - Eventi di valutazione delle minacce e gestione delle vulnerabilità, che indicano lo stato di varie configurazioni di sicurezza nei dispositivi.
 
 - [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - Knowledge Base di varie configurazioni di sicurezza utilizzate da Threat & Vulnerability Management per valutare i dispositivi; include mapping a diversi standard e benchmark
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>Verificare quali dispositivi sono coinvolti in avvisi di gravità elevata
 
-1. Vai a **Ricerca avanzata** dal riquadro di spostamento sinistro di Microsoft Defender Security Center.
+1. Passare a **Ricerca avanzata** dal riquadro di spostamento sinistro della Microsoft Defender Security Center.
 
 2. Scorrere verso il basso fino agli schemi di ricerca avanzata TVM per acquisire familiarità con i nomi delle colonne.
 
@@ -77,9 +77,9 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configurare l'accesso ai dati per i ruoli di gestione delle minacce e delle vulnerabilità](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Configurare l'accesso ai dati per gestione di minacce e vulnerabilità ruoli](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [Panoramica della rilevazione avanzata](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [Tutte le tabelle di ricerca avanzate](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)
