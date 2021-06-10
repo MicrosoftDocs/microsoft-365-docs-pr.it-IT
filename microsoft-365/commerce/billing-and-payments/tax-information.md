@@ -168,7 +168,7 @@ Se si è idonei per lo stato di esenzione fiscale nel [mercato,](../../business-
 | Stati Uniti | Certificato di esenzione iva |
 | Portorico | Certificado de Compras Exentas |
   
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
   
 [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\
 [Informazioni sull'estratto conto o la fattura](understand-your-invoice.md) (articolo)

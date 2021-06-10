@@ -27,7 +27,7 @@ ms.locfileid: "50918062"
 ---
 # <a name="clone-a-content-search"></a>Clonare una ricerca contenuto
 
-La creazione di una ricerca contenuto nel Centro conformità in Office 365 o Microsoft 365 che esegue ricerche in molte cassette postali o nei siti di SharePoint e OneDrive for Business può richiedere molto tempo. La specifica dei siti in cui eseguire la ricerca può inoltre essere erta se si specifica un URL in modo erre. Per evitare questi problemi, è possibile utilizzare lo script Windows PowerShell in questo articolo per clonare rapidamente una ricerca contenuto esistente. Quando si clona una ricerca, viene creata una nuova ricerca (con un nome diverso) che contiene le stesse proprietà (ad esempio i percorsi del contenuto e la query di ricerca) della ricerca originale. È quindi possibile modificare la nuova ricerca modificando la query con parole chiave o l'intervallo di date ed eseguirla.
+La creazione di una ricerca contenuto nel Centro conformità in Office 365 o Microsoft 365 che esegue ricerche in molte cassette postali o SharePoint e OneDrive for Business siti può richiedere del tempo. La specifica dei siti in cui eseguire la ricerca può inoltre essere erta se si specifica un URL in modo erre. Per evitare questi problemi, è possibile utilizzare lo script Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente. Quando si clona una ricerca, viene creata una nuova ricerca (con un nome diverso) che contiene le stesse proprietà (ad esempio i percorsi del contenuto e la query di ricerca) della ricerca originale. È quindi possibile modificare la nuova ricerca modificando la query con parole chiave o l'intervallo di date ed eseguirla.
   
 Perché clonare le ricerche contenuto?
   
@@ -61,7 +61,7 @@ Lo script in questo passaggio creerà una nuova ricerca contenuto clonando una e
     
 Per clonare una ricerca:
   
-1. Salvare il testo seguente in un file Windows PowerShell script utilizzando il suffisso del nome di file ps1. ad `CloneSearch.ps1` esempio.
+1. Salvare il testo seguente in un file Windows PowerShell script utilizzando un suffisso di nome file .ps1; ad `CloneSearch.ps1` esempio.
     
   ```powershell
   # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.

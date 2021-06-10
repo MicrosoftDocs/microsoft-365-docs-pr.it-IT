@@ -39,7 +39,7 @@ Attualmente, i requisiti di verifica per questa direttiva che utilizzano l'auten
 
 ### <a name="customer-actions"></a>Azioni dei clienti
 
-La tua banca potrebbe richiedere la verifica tramite l'autenticazione a più fattori. Alcuni esempi includono:
+La tua banca potrebbe richiedere la verifica tramite l'autenticazione a più fattori. Ecco alcuni esempi:
 
 - Iscrizione a una nuova sottoscrizione
 - Aggiunta di licenze a un abbonamento

@@ -28,7 +28,7 @@ ms.locfileid: "51599984"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Quando non è possibile inviare messaggi dall'organizzazione ai server di posta elettronica locali o partner utilizzando i connettori, i messaggi vengono accodati in Microsoft 365. Esempi comuni che causano questa condizione sono:
+Quando non è possibile inviare messaggi dall'organizzazione ai server di posta elettronica locali o partner utilizzando connettori, i messaggi vengono accodati in Microsoft 365. Esempi comuni che causano questa condizione sono:
 
 - Il connettore non è configurato correttamente.
 - Sono state apportate modifiche alla rete o al firewall nell'ambiente locale.
@@ -81,7 +81,7 @@ Anche se il volume dei messaggi in coda non ha superato la  soglia e generato un
 Se si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro **a** comparsa Messaggi accodati con le informazioni seguenti:
 
 - **Numero di messaggi in coda**
-- **Nome connettore**: fare clic sul nome del connettore per gestire il connettore nell'interfaccia di amministrazione di Exchange (EAC).
+- **Nome connettore**: fare clic sul nome del connettore per gestire il connettore nell Exchange ac (EAC).
 - **Ora di inizio coda**
 - **Messaggi meno recenti scaduti**
 - **Server di destinazione**

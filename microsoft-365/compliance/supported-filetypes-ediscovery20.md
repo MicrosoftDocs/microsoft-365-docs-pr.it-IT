@@ -25,7 +25,7 @@ ms.locfileid: "51599831"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipi di file supportati in Advanced eDiscovery
 
-Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di file di supporto sono descritti nelle tabelle seguenti di questo articolo. Questo elenco non è finalizzato e verranno aggiunti nuovi tipi di file mentre si prosegue il test di convalida. Queste tabelle indicano se un tipo di file è supportato per l'estrazione del testo (e riconoscimento ottico dei caratteri o estrazione del testo OCR per i file di immagine), visualizzabile nel visualizzatore nativo e supporto anche nel visualizzatore Annotate in Advanced eDiscovery.
+Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di file di supporto sono descritti nelle tabelle seguenti di questo articolo. Questo elenco non è finalizzato e verranno aggiunti nuovi tipi di file mentre si prosegue il test di convalida. Queste tabelle indicano se un tipo di file è supportato per l'estrazione del testo (e riconoscimento ottico dei caratteri o estrazione del testo OCR per i file di immagine), visualizzabile nel visualizzatore nativo e supportato anche nel visualizzatore Annotate in Advanced eDiscovery.
 
 ## <a name="archive--container"></a>Archivio/Contenitore
 

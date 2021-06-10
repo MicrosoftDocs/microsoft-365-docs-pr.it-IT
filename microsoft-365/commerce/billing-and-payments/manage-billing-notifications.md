@@ -127,7 +127,7 @@ Per ricevere le fatture come allegati alle notifiche delle fatture, eseguire la 
 2. Seleziona la **scheda Profili di** fatturazione, quindi seleziona un profilo di fatturazione dall'elenco.
 3. Nella pagina dei dettagli del profilo di fatturazione, in Ottieni fatture negli allegati di posta **elettronica,** impostare l'interruttore su **Attivato.**
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\
 [Comprendere la fattura o la fattura per Microsoft 365 per le aziende](understand-your-invoice2.md) (articolo)\

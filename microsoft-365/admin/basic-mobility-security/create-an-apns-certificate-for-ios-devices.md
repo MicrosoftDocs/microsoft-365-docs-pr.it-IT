@@ -23,17 +23,17 @@ ms.locfileid: "49877081"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>Creare un certificato APNs per i dispositivi iOS
 
-Per gestire i dispositivi iOS come iPad e iPhone in Basic Mobility and Security, crea un certificato APNs.
+Per gestire dispositivi iOS come iPad e iPhone in Dispositivi mobili e sicurezza di base, crea un certificato APNs.
 
-1. Accedere a Microsoft 365 con l'account di amministratore globale.
+1. Accedi a Microsoft 365 con il tuo account amministratore globale.
 
 2. Nel browser digitare  [https://protection.office.com](https://protection.office.com/) .
 
-3. Selezionare  **Gestione dispositivi per la prevenzione della** perdita dei dati e scegliere Il certificato   >  **** **APNs per i dispositivi iOS.**
+3. Seleziona  **Prevenzione della perdita dei dati** Gestione   >  **dei** dispositivi e scegli Certificato **APNs per i dispositivi iOS.**
 
-4. Nella pagina Impostazioni certificato notifica Push Apple scegliere **Avanti.**
+4. Nella pagina Apple Push Notification Certificate Impostazioni scegliere **Next**.
 
-5. Selezionare Download your CSR file and save the certificate signing request to somewhere on your computer that you'll remember. Selezionare  **Avanti.**
+5. Selezionare Download your CSR file and save the certificate signing request to somewhere on your computer that you'll remember. Selezionare  **Avanti**.
 
 6. Nella pagina Crea un certificato APNs:  
 
@@ -46,17 +46,17 @@ Per gestire i dispositivi iOS come iPad e iPhone in Basic Mobility and Security,
 
     3. Selezionare  **Crea un certificato** e accettare le Condizioni per   l'utilizzo.
 
-    4. Passare alla richiesta di firma del certificato scaricata nel computer da Microsoft 365 e selezionare **Carica.**
+    4. Passare alla richiesta di firma del certificato scaricata nel computer da Microsoft 365 e selezionare **Upload**.
 
         Scarica il certificato APNs creato dal portale dei certificati Push Apple nel computer.
 
        >[!TIP]
        >If you're having trouble downloading the certificate, refresh your browser.
 
-7. Tornare a Microsoft 365  e selezionare Avanti per accedere alla pagina   Carica certificato  **APNS.**  
+7. Torna a Microsoft 365 e seleziona **Avanti** per accedere alla pagina Upload     **certificato APNS.**  
 
 8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 
 9. Selezionare  **Fine.**
 
-Per completare la configurazione, tornare al Centro sicurezza & conformità > **Criteri** di sicurezza   >  **Gestione dispositivi**   >  **Gestire le impostazioni.**
+Per completare la configurazione, tornare al Centro sicurezza & conformità > **Criteri** di sicurezza   >  **Gestione dispositivi**   >  **Gestisci impostazioni**.

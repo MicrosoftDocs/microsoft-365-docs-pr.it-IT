@@ -1,5 +1,5 @@
 ---
-title: Rilevare regole per la riduzione della superficie di attacco
+title: Valutare le regole per la riduzione della superficie di attacco
 description: Scopri come la riduzione della superficie di attacco potrebbe bloccare e impedire gli attacchi con lo strumento demo personalizzato.
 keywords: Riduzione della superficie di attacco, fianchi, sistema di prevenzione delle intrusioni host, regole di protezione, anti-exploit, antiexploit, exploit, prevenzione delle infezioni, valutare, testare, demo
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52771322"
 ---
-# <a name="evaluate-attack-surface-reduction-rules"></a>Rilevare regole per la riduzione della superficie di attacco
+# <a name="evaluate-attack-surface-reduction-rules"></a>Valutare le regole per la riduzione della superficie di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -90,4 +90,4 @@ Vedi [Personalizzare le regole di riduzione della superficie](customize-attack-s
 
 * [Ridurre le superfici di attacco con le regole di riduzione della superficie di attacco](attack-surface-reduction.md)
 * [Usare la modalità di controllo per valutare Windows Defender](audit-windows-defender.md)
-* [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction.md)
+* [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction.md)

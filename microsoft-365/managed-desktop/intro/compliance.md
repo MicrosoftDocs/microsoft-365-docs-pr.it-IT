@@ -18,7 +18,7 @@ ms.locfileid: "50918431"
 ---
 # <a name="compliance"></a>Conformità
 
-Quando si utilizza Microsoft Managed Desktop, Microsoft fornisce un set completo di offerte di conformità. Questo sforzo aiuta l'organizzazione a rispettare i vari requisiti di conformità.
+Quando si usa Microsoft Managed Desktop, Microsoft fornisce un set completo di offerte di conformità. Questo sforzo aiuta l'organizzazione a rispettare i vari requisiti di conformità.
 
 ## <a name="compliance-coverage"></a>Copertura di conformità
 
@@ -42,10 +42,10 @@ Microsoft Managed Desktop ha ottenuto le certificazioni seguenti:
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Report del revisore e certificati di conformità
 
-È possibile trovare informazioni pertinenti, inclusi i requisiti tecnici e di controllo, nel [Service Trust Portal (STP)](https://servicetrust.microsoft.com/), l'archivio centrale per tali informazioni sulle offerte di servizi cloud Microsoft. È possibile scaricare i report dei revisori, i certificati di conformità e altro ancora dalla sezione [Report di](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) controllo dello STP.
+È possibile trovare informazioni pertinenti, inclusi i requisiti tecnici e di controllo, nel [Service Trust Portal (STP)](https://servicetrust.microsoft.com/), l'archivio centrale per tali informazioni sulle Microsoft Cloud Service offerte. È possibile scaricare i report dei revisori, i certificati di conformità e altro ancora dalla sezione [Report di](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) controllo dello STP.
 
 > [!NOTE]
-> Poiché Microsoft Managed Desktop viene eseguito in Azure, i documenti pertinenti in genere hanno nomi di file come "Microsoft Azure, Dynamics 365 e altri Servizi online". In questi documenti, in genere è possibile trovare Microsoft Managed Desktop nella categoria "Microsoft Online Services" o "Monitoraggio e gestione".
+> Poiché Microsoft Managed Desktop in Azure, i documenti pertinenti in genere hanno nomi di file come "Microsoft Azure, Dynamics 365 e altri Servizi online". In questi documenti, in genere è possibile trovare Microsoft Managed Desktop nella categoria "Microsoft Online Services" o "Monitoraggio e gestione".
 
 ## <a name="shared-responsibility"></a>Responsabilità condivisa
 

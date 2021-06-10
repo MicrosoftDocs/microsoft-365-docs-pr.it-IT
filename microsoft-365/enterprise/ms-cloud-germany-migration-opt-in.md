@@ -26,7 +26,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51592073"
 ---
-# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Come acconsentire esplicitamente per la nuova migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche
+# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Come acconsentire esplicitamente per la nuova migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a servizi Office 365 nelle nuove aree data center tedesche
 
 > [!NOTE]
 > Questo articolo si applica solo ai clienti di Microsoft Cloud Germania (Microsoft Cloud Deutschland).
@@ -34,13 +34,13 @@ ms.locfileid: "51592073"
 
 ## <a name="how-to-request-migration"></a>Come richiedere la migrazione
 
-Se si è un cliente idoneo con il servizio di cui è stato effettuato il provisioning in Microsoft Cloud Germania (Microsoft Cloud Deutschland) e si è effettuato l'accesso come amministratore tenant (globale), una pagina nell'interfaccia di amministrazione di Microsoft 365 consente di acconsentire esplicitamente alla migrazione.
+Se sei un cliente idoneo con il servizio di cui è stato effettuato il provisioning in Microsoft Cloud Germania (Microsoft Cloud Deutschland) e hai effettuato l'accesso come amministratore tenant (globale), una pagina nell'interfaccia di amministrazione di Microsoft 365 ti consente di acconsentire esplicitamente alla migrazione.
 
-Per accedere alla pagina, espandere **Impostazioni** nel riquadro di spostamento a sinistra e quindi fare clic su **Profilo organizzazione.**
+Per accedere alla pagina, **espandere** Impostazioni nel riquadro di spostamento a sinistra e quindi fare clic su **Profilo organizzazione.**
 
 Nella pagina **Profilo organizzazione**, scorrere verso il basso fino alla sezione **Migrazione da Microsoft Cloud Germany (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche**.
 
-Se si desidera eseguire la migrazione del servizio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche, fare clic su **Consenso esplicito.**
+Se si desidera eseguire la migrazione del servizio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi Office 365 nelle nuove aree data center tedesche, fare clic su Consenso **esplicito.**
  
 ![Introduzione al consenso esplicito](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
@@ -48,7 +48,7 @@ Sul lato destro dello schermo viene visualizzata una nuova sezione per accettare
  
 ![Accettazione consenso esplicito](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-Dopo aver acconsentito esplicitamente per conto del tenant, tutti gli amministratori visualizzano la conferma in Eseguire la migrazione da **Microsoft Cloud Germania (Microsoft Cloud Deutschland)** ai servizi di Office 365 nella nuova sezione aree data center tedesche, inclusa la data di consenso esplicito. Gli amministratori riceveranno anche una conferma nel Centro messaggi dell'interfaccia di amministrazione di Microsoft 365. 
+Dopo aver acconsentito esplicitamente per conto del tenant, tutti gli amministratori visualizzano la conferma in **Migrate from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions** section, including the date of opt-in. Gli amministratori riceveranno anche una conferma nel Centro messaggi dell'Microsoft 365 di amministrazione. 
  
 ![Conferma del consenso esplicito](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
@@ -58,7 +58,7 @@ Le migrazioni inizieranno all'inizio del 2021 per le organizzazioni che acconsen
 
 ## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Cosa succede se non si acconsente esplicitamente alla migrazione nell'interfaccia di amministrazione?
 
-Le condizioni dei servizi online sono state modificate per includere i termini che consentiranno a Microsoft di eseguire la migrazione dei dati e delle sottoscrizioni di Microsoft 365, Dynamics 365 e Power BI da Microsoft Cloud Deutschland a un nuovo data center. Queste condizioni hanno effetto su qualsiasi abbonamento a Microsoft Cloud Germania (Microsoft Cloud Deutschland) rinnovato dal 1° maggio 2020. 
+Le condizioni dei Servizi online sono state modificate per includere termini che consentiranno a Microsoft di eseguire la migrazione dei dati e delle sottoscrizioni di Microsoft 365, Dynamics 365 e Power BI da Microsoft Cloud Deutschland a un nuovo data center. Queste condizioni hanno effetto su qualsiasi abbonamento a Microsoft Cloud Germania (Microsoft Cloud Deutschland) rinnovato dal 1° maggio 2020. 
 
 L'amministratore tenant del cliente riceverà un avviso tramite posta elettronica e il Centro messaggi che consiglia di acconsentire automaticamente alla migrazione per una migrazione assistita da Microsoft. Questo avviso verrà inviato almeno 30 giorni prima del consenso esplicito automatico. Dopo il consenso esplicito per la migrazione, tutte le comunicazioni e gli aggiornamenti di stato vengono inviati agli amministratori tenant dei clienti nel Centro messaggi.
 
@@ -72,7 +72,7 @@ Gli amministratori tenant di clienti e partner sono invitati a acconsentire espl
 
 Guida introduttiva:
 
-- [Migrazione da Microsoft Cloud Deutschland ai servizi di Office 365 nelle nuove aree data center tedesche](ms-cloud-germany-transition.md)
+- [Migrazione da Microsoft Cloud Deutschland ai servizi Office 365 nelle nuove aree data center tedesche](ms-cloud-germany-transition.md)
 - [Assistenza per la migrazione di Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
 - [Esperienza del cliente durante la migrazione](ms-cloud-germany-transition-experience.md)
 

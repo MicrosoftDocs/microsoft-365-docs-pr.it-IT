@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Gli utenti devono disporre delle autorizzazioni nel Centro sicurezza & e conformità di Microsoft 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità.
+description: Gli utenti devono disporre delle autorizzazioni nel Centro Microsoft 365 sicurezza & conformità prima di poter gestire qualsiasi funzionalità di sicurezza o conformità.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -60,7 +60,7 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile concede
 
 4. Dopo aver selezionato tutti gli utenti che si desidera aggiungere al gruppo di ruoli, fare clic su **aggiungi- \>** e quindi **su OK.**
 
-5. Al termine, fare clic su **Salva**.
+5. Al termine, scegliere **Salva**.
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usare PowerShell & Centro sicurezza e conformità per concedere a un altro utente l'accesso al Centro sicurezza & conformità
 

@@ -29,7 +29,7 @@ ms.locfileid: "51599512"
 > [!NOTE]
 > Le funzionalità descritte in questo articolo sono attualmente disponibili in Anteprima, non sono disponibili per tutti e sono soggette a modifiche.
 
-Gli utenti possono gestire i messaggi in quarantena in cui sono uno dei destinatari, come descritto in Trovare e rilasciare i messaggi in quarantena [come utente in EOP.](find-and-release-quarantined-messages-as-a-user.md) Ma per quanto riguarda le cassette postali condivise in cui l'utente dispone delle autorizzazioni Accesso completo e Invia come o Invia per conto della cassetta postale, come descritto in Cassette postali [condivise in Exchange Online?](/exchange/collaboration-exo/shared-mailboxes)
+Gli utenti possono gestire i messaggi in quarantena in cui sono uno dei destinatari, come descritto in Trovare e rilasciare i messaggi in quarantena [come utente in EOP.](find-and-release-quarantined-messages-as-a-user.md) Ma per quanto riguarda le cassette postali condivise in cui l'utente dispone delle autorizzazioni Accesso completo e Invia come o Invia per conto della cassetta postale, come descritto in Cassette postali condivise [in Exchange Online](/exchange/collaboration-exo/shared-mailboxes)?
 
 In precedenza, la possibilità per gli utenti di gestire i messaggi in quarantena inviati a una cassetta postale condivisa richiedeva agli amministratori di lasciare abilitato il mapping automatico per la cassetta postale condivisa (è abilitato per impostazione predefinita quando un amministratore concede a un utente l'accesso a un'altra cassetta postale). Tuttavia, a seconda delle dimensioni e del numero di cassette postali a cui  l'utente ha accesso, le prestazioni possono risentirne quando Outlook tenta di aprire tutte le cassette postali a cui l'utente ha accesso. Per questo motivo, molti amministratori scelgono di rimuovere [il mapping automatico per le cassette postali condivise.](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)
 
@@ -53,7 +53,7 @@ Indipendentemente dal metodo, gli utenti possono evitare confusione includendo l
 
 - Per quanto riguarda le operazioni di quarantena per le cassette postali condivise, se si utilizzano gruppi di sicurezza annidati per concedere l'accesso a una cassetta postale condivisa, è consigliabile non più di due livelli di gruppi annidati. Ad esempio, il gruppo A è un membro del Gruppo B, membro del Gruppo C. Per assegnare le autorizzazioni a una cassetta postale condivisa, non aggiungere l'utente al gruppo A e quindi assegnare il gruppo C alla cassetta postale condivisa.  
 
-- Per gestire i messaggi in quarantena per la cassetta postale condivisa in PowerShell di [Exchange Online,](/powershell/exchange/connect-to-exchange-online-powershell)l'utente finale dovrà utilizzare il cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) con l'indirizzo di posta elettronica della cassetta postale condivisa per il valore del parametro _RecipientAddress_ per identificare i messaggi. Ad esempio:
+- Per gestire i messaggi in quarantena per la cassetta postale condivisa in [Exchange Online PowerShell,](/powershell/exchange/connect-to-exchange-online-powershell)l'utente finale dovrà utilizzare il cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) con l'indirizzo di posta elettronica della cassetta postale condivisa per il valore del parametro _RecipientAddress_ per identificare i messaggi. Ad esempio:
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com

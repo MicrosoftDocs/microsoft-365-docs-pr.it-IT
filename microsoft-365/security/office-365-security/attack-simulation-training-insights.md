@@ -23,7 +23,7 @@ ms.locfileid: "51600008"
 
 Nell'ambito della formazione sulla simulazione di attacchi, Microsoft fornisce informazioni dettagliate basate sui risultati delle simulazioni e dei corsi di formazione che i dipendenti hanno seguito. Queste informazioni dettagliate consentono di tenere informati sull'avanzamento della preparazione alle minacce dei dipendenti, nonché di consigliare i passaggi successivi per preparare meglio i dipendenti e l'ambiente per gli attacchi.
 
-Stiamo continuamente lavorando per espandere le informazioni dettagliate disponibili. L'impatto sul comportamento e le azioni consigliate sono attualmente disponibili. Per iniziare, vai alla formazione sulla simulazione degli attacchi nel Centro sicurezza [Microsoft 365.](https://security.microsoft.com/attacksimulator?viewid=overview)
+Stiamo continuamente lavorando per espandere le informazioni dettagliate disponibili. L'impatto sul comportamento e le azioni consigliate sono attualmente disponibili. Per iniziare, vai a Formazione sulla simulazione [di attacco nel centro sicurezza Microsoft 365 sicurezza](https://security.microsoft.com/attacksimulator?viewid=overview).
 
 ## <a name="behavior-impact-on-compromise-rate"></a>Impatto del comportamento sulla frequenza di compromissione
 
@@ -31,7 +31,7 @@ Nella scheda **Panoramica del** training di simulazione degli attacchi, è possi
 
 Nel grafico è possibile visualizzare:
 
-- **Tasso di compromissione previsto** che riflette la percentuale media di compromissione per le simulazioni che usano lo stesso tipo di payload in altri tenant di Microsoft 365 che usano la formazione di simulazione degli attacchi.
+- **Tasso di compromissione previsto** che riflette la percentuale media di compromissione per le simulazioni che usano lo stesso tipo di payload in altri tenant di Microsoft 365 che usano la formazione di simulazione di attacco.
 - **Il tasso di compromissione** effettivo riflette la percentuale di dipendenti che sono diminuiti per la simulazione.
 
 Riflette inoltre la differenza tra il numero effettivo di dipendenti compromessi dall'attacco e il `<number> less susceptible to phishing` tasso di compromissione previsto. Questo numero di dipendenti è meno probabile che venga compromesso da attacchi simili in futuro, mentre indica come i dipendenti hanno fatto complessivamente in contrasto con il tasso di compromissione `<percent%> better than predicted rate` previsto.

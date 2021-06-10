@@ -1,5 +1,5 @@
 ---
-title: Configurare le impostazioni di Microsoft Defender Security Center
+title: Configurare Microsoft Defender Security Center impostazioni
 description: Utilizzare la pagina delle impostazioni per configurare le impostazioni generali, le autorizzazioni, le api e le regole.
 keywords: impostazioni, impostazioni generali, autorizzazioni, api, regole
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "51604346"
 ---
-# <a name="configure-microsoft-defender-security-center-settings"></a>Configurare le impostazioni di Microsoft Defender Security Center
+# <a name="configure-microsoft-defender-security-center-settings"></a>Configurare Microsoft Defender Security Center impostazioni
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

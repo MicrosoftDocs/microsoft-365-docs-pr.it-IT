@@ -61,7 +61,7 @@ Microsoft Corporation, in quanto residente fiscale negli Stati Uniti d'America, 
 
 Una fattura generata da entità estere (in questo caso Microsoft Corporation) che include il rispettivo RFC è valida a fini fiscali in Messico. Per ulteriori informazioni, ti consigliamo di consultare il tuo commercialista.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\
 [Comprendere la fattura o la fattura per Microsoft 365 per le aziende](understand-your-invoice2.md) (articolo)

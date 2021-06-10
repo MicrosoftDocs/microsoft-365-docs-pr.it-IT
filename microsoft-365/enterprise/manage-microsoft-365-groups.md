@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Informazioni su come gestire i gruppi di Microsoft 365.
+description: Informazioni su come gestire Microsoft 365 gruppi.
 ms.openlocfilehash: 529bdb874661329497b103a1207b90625ad33a4b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -31,13 +31,13 @@ ms.locfileid: "50911008"
 ---
 # <a name="manage-microsoft-365-groups"></a>Gestire gruppi di Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-È possibile gestire i gruppi di Microsoft 365 in diversi modi, a seconda della configurazione. È possibile gestire gli account utente nell'interfaccia di amministrazione di [Microsoft 365,](../admin/add-users/index.yml)In PowerShell, in Servizi di dominio Active Directory o nell'interfaccia di amministrazione di [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
+È possibile gestire Microsoft 365 gruppi in diversi modi, a seconda della configurazione. È possibile gestire gli account utente nell'interfaccia di amministrazione di [Microsoft 365,](../admin/add-users/index.yml)PowerShell, in Servizi di dominio Active Directory o nell'interfaccia di amministrazione di [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Pianificare dove e come gestire i gruppi
 
-La posizione e la modalità di gestione degli account utente dipendono dal modello di identità che si desidera utilizzare per Microsoft 365. I due modelli globali sono solo cloud e ibridi.
+La posizione e la modalità di gestione degli account utente dipendono dal modello di identità che si desidera utilizzare per l'Microsoft 365. I due modelli globali sono solo cloud e ibridi.
   
 ### <a name="cloud-only"></a>Solo cloud
 
@@ -47,7 +47,7 @@ La posizione e la modalità di gestione degli account utente dipendono dal model
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Interfaccia di amministrazione di Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     
-### <a name="hybrid"></a>Ibrido
+### <a name="hybrid"></a>Configurazione ibrida
 
 I gruppi di Servizi di dominio Active Directory vengono sincronizzati con Microsoft 365 da Servizi di dominio Active Directory, quindi è necessario usare gli strumenti di Servizi di dominio Active Directory locali per gestire questi gruppi.
 

@@ -1,5 +1,5 @@
 ---
-title: Proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 per le aziende
+title: Proteggere gli account di amministratore globale nell'ambiente di testing Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Eseguire questa procedura per proteggere gli account amministratore globale nell'ambiente di testing di Microsoft 365 per le aziende.
+description: Eseguire questa procedura per proteggere gli account di amministratore globale nell'ambiente Microsoft 365 per l'ambiente di testing aziendale.
 ms.openlocfilehash: 3eab538b59e460857e2fa195aaacf51051f94d6b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,24 +22,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50918883"
 ---
-# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 per le aziende
+# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Proteggere gli account di amministratore globale nell'ambiente di testing Microsoft 365 per le aziende
 
-*Questa guida al laboratorio di testing può essere utilizzata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
+*Questa guida al laboratorio di testing può essere utilizzata solo per Microsoft 365 per ambienti di test aziendali.*
 
 È possibile impedire attacchi digitali all'organizzazione assicurando che gli account di amministratore siano il più sicuri possibile. 
 
-Questo articolo descrive come usare i criteri di accesso condizionale di Azure Active Directory (Azure AD) per proteggere gli account di amministratore globale.
+Questo articolo descrive come usare i criteri di accesso condizionale Azure Active Directory (Azure AD) per proteggere gli account di amministratore globale.
 
-La protezione degli account di amministratore globale nell'ambiente di testing di Microsoft 365 per le aziende prevede due fasi:
-- [Fase 1: creare l'ambiente di testing di Microsoft 365 per le aziende](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+La protezione degli account di amministratore globale nell'ambiente Microsoft 365 per l'ambiente di testing aziendale prevede due fasi:
+- [Fase 1: creare l'ambiente di testing Microsoft 365 per le aziende](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fase 2: configurare i criteri di accesso condizionale](#phase-2-configure-conditional-access-policies)
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Per una mappa visiva a tutti gli articoli nello stack guida del laboratorio di testing di Microsoft 365 per le aziende, passare a [Microsoft 365 per enterprise Test Lab Guide Stack.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+> Per una mappa visiva a tutti gli articoli dello stack Microsoft 365 per enterprise Test Lab Guide, passare a [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 per le aziende
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing Microsoft 365 per le aziende
 
 Se si desidera testare la protezione dell'account amministratore globale in modo leggero con i requisiti minimi, seguire le istruzioni in [Configurazione di base leggera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -52,18 +52,18 @@ Se si desidera testare la protezione dell'account amministratore globale in un'o
 
 Creare innanzitutto un nuovo account utente come amministratore globale dedicato.
 
-1. In una scheda separata, aprire l'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/)
+1. In una scheda separata, aprire [l'Microsoft 365 di amministrazione.](https://admin.microsoft.com/)
 2. Selezionare **Utenti**  >  **Utenti attivi** e quindi Aggiungi **utente.**
 3. Nel riquadro **Aggiungi utente** immettere **DedicatedAdmin** nelle caselle **Nome,** **Nome visualizzato** e **Nome utente.**
 4. Selezionare **Password,** selezionare **Consenti la creazione della password** e quindi immettere una password complessa. Registrare la password per il nuovo account in una posizione sicura.
 5. Selezionare **Avanti**.
-6. Nel riquadro **Assegna licenze di prodotto** selezionare Microsoft **365 E5** e quindi selezionare **Avanti**.
+6. Nel riquadro **Assegna licenze di prodotto** selezionare Microsoft 365 E5 e quindi selezionare **Avanti**. 
 7. Nel riquadro **Impostazioni facoltative** selezionare **Ruoli**  >  **Accesso all'interfaccia di amministrazione** Amministratore  >  **globale**  >  **Avanti**.
 8. Nel riquadro **You're almost done** selezionare **Finish adding** e quindi **close**.
 
 Successivamente, creare un nuovo gruppo denominato GlobalAdmins e aggiungerne l'account DedicatedAdmin.
 
-1. Nella scheda Interfaccia di amministrazione di **Microsoft 365** selezionare **Gruppi** nel riquadro di spostamento sinistro e **quindi** gruppi .
+1. Nella scheda **Microsoft 365 dell'interfaccia** di amministrazione selezionare **Gruppi** nel riquadro di spostamento sinistro e quindi selezionare **Gruppi**.
 2. Selezionare **Aggiungi un gruppo**.
 3. Nel riquadro **Scegliere un tipo di gruppo** selezionare **Sicurezza** e quindi fare clic su **Avanti.**
 4. Nel riquadro **Configura le nozioni di** base selezionare Crea **gruppo** e quindi fare clic su **Chiudi.**
@@ -77,7 +77,7 @@ Successivamente, creare criteri di accesso condizionale per richiedere l'autenti
 Questo primo criterio richiede che tutti gli account amministratore globale utilizzino l'autenticazione a più fattori.
 
 1. In una nuova scheda del browser passare a [https://portal.azure.com](https://portal.azure.com) .
-2. Fare **clic su Azure Active Directory**  >  **Security** Conditional  >  **Access**.
+2. Fare **clic Azure Active Directory**  >  **sicurezza** accesso  >  **condizionale**.
 3. Nel riquadro **Accesso condizionale - Criteri** selezionare Criterio di **base: Richiedi MFA per gli amministratori (anteprima).**
 4. Nel riquadro **Criteri di base** selezionare Usa criteri immediatamente > **Salva**.
 
@@ -93,7 +93,7 @@ Questo secondo criterio blocca l'accesso all'autenticazione dell'account amminis
 8. Nella sezione **Controlli di** accesso del **riquadro Nuovo** selezionare **Concedi**.
 9. Nel riquadro **Concedi** seleziona **Blocca accesso** e quindi seleziona **Seleziona.**
 10. Nel riquadro **Nuovo** selezionare **Attivato** per **Abilita criterio** e quindi selezionare **Crea**.
-11. Chiudere il **portale di Azure e** le schede dell'interfaccia di amministrazione di Microsoft **365.**
+11. Chiudere il **portale di Azure e** Microsoft 365 schede **dell'interfaccia di amministrazione.**
 
 Per testare il primo criterio, disconnettersi e accedere con l'account DedicatedAdmin. Dovrebbe essere richiesto di configurare l'autenticazione a più fattori. Questo dimostra che viene applicato il primo criterio.
 

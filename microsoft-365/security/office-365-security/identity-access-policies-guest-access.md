@@ -28,7 +28,7 @@ ms.locfileid: "51615496"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Criteri per consentire l'accesso guest e l'accesso degli utenti esterni B2B
 
-In questo articolo viene illustrata la modifica dei criteri di accesso alle identità e ai dispositivi consigliati per consentire l'accesso a utenti guest ed esterni con un account Business-to-Business (B2B) di Azure Active Directory (Azure AD). Queste indicazioni si basano sui [criteri comuni di identità e accesso ai dispositivi.](identity-access-policies.md)
+In questo articolo viene illustrata la modifica dei criteri di accesso alle identità e ai dispositivi consigliati per consentire l'accesso a utenti guest ed esterni che dispongono di un account business-to-business (B2B) di Azure Active Directory (Azure AD). Queste indicazioni si basano sui [criteri comuni di identità e accesso ai dispositivi.](identity-access-policies.md)
 
 Questi suggerimenti sono progettati per essere applicati al livello **di protezione** di base. Tuttavia, puoi anche modificare i suggerimenti in base alle tue esigenze specifiche per una **protezione sensibile** **e altamente regolamentata.**
 
@@ -42,7 +42,7 @@ Questo diagramma mostra quali criteri aggiungere o aggiornare tra i criteri comu
 
 Nella tabella seguente sono elencati i criteri che è necessario creare e aggiornare. I criteri comuni sono link alle istruzioni di configurazione associate [nell'articolo Criteri di identità](identity-access-policies.md) e accesso ai dispositivi comuni.
 
-|Livello di protezione|Criteri|Altre informazioni|
+|Livello di protezione|Criteri|Ulteriori informazioni|
 |---|---|---|
 |**Protezione di base**|[Richiedi MFA sempre per utenti guest ed esterni](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Creare questo nuovo criterio e configurare: <ul><li>Per **Assegnazioni > utenti** e gruppi > Includi , scegliere **Seleziona** utenti e gruppi e quindi selezionare Tutti gli utenti guest **ed esterni**.</li><li>Per **Assegnazioni > condizioni >** accesso , lasciare deselezionate tutte le opzioni per applicare sempre l'autenticazione a più fattori (MFA).</li></ul>|
 ||[Richiedi autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modificare questo criterio per escludere utenti guest ed utenti esterni.|
@@ -52,7 +52,7 @@ Per includere o escludere utenti guest ed esterni nei criteri di accesso condizi
 
 ![acquisizione dello schermo dei controlli per l'esclusione di utenti guest ed esterni](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Accesso guest e utente esterno con Microsoft Teams
 
@@ -64,7 +64,7 @@ Microsoft Teams definisce gli utenti seguenti:
 
 Per ulteriori informazioni, vedere il confronto [tra gli utenti guest e l'accesso degli utenti esterni per i team.](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)
 
-Per ulteriori informazioni sulla protezione di identità e criteri di accesso ai dispositivi per Teams, vedere Suggerimenti per i criteri per la protezione di chat, gruppi [e file di Teams.](teams-access-policies.md)
+Per ulteriori informazioni sulla protezione dei criteri di identità e di accesso ai dispositivi per Teams, vedere Suggerimenti per i criteri per la protezione Teams chat, gruppi [e file.](teams-access-policies.md)
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Richiedi MFA sempre per utenti guest ed esterni
 
@@ -82,7 +82,7 @@ Solo un'organizzazione può gestire un dispositivo. Se non escludi guest ed uten
 
 ## <a name="next-step"></a>Passaggio successivo
 
-![Passaggio 4: Criteri per le app cloud di Microsoft 365 e Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Passaggio 4: Criteri per Microsoft 365 app cloud e Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurare i criteri di accesso condizionale per:
 

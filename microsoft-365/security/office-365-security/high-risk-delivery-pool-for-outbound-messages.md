@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come vengono utilizzati i pool di recapito per proteggere la reputazione dei server di posta elettronica nei datacenter di Microsoft 365.
+description: Informazioni su come vengono utilizzati i pool di recapito per proteggere la reputazione dei server di posta elettronica nei Microsoft 365 datacenter.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
@@ -33,12 +33,12 @@ ms.locfileid: "51599912"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I server di posta elettronica nei datacenter di Microsoft 365 potrebbero essere temporaneamente responsabili dell'invio di posta indesiderata. Ad esempio, un malware o un attacco di posta indesiderata dannoso in un'organizzazione di posta elettronica locale che invia posta in uscita tramite Microsoft 365 o account Microsoft 365 compromessi. Gli utenti malintenzionati cercano inoltre di evitare il rilevamento inoltrando i messaggi tramite l'inoltro di Microsoft 365.
+I server di posta elettronica nei Microsoft 365 data center potrebbero essere temporaneamente responsabili dell'invio di posta indesiderata. Ad esempio, un malware o un attacco di posta indesiderata dannoso in un'organizzazione di posta elettronica locale che invia posta in uscita tramite Microsoft 365 o account Microsoft 365 compromessi. Gli utenti malintenzionati cercano inoltre di evitare il rilevamento inoltrando i messaggi Microsoft 365 inoltro.
 
-Questi scenari possono comportare la visualizzazione dell'indirizzo IP dei server datacenter di Microsoft 365 interessati negli elenchi di indirizzi di terze parti. Le organizzazioni di posta elettronica di destinazione che utilizzano questi elenchi bloccanti rifiuteranno la posta elettronica da tali origini dei messaggi.
+Questi scenari possono comportare la visualizzazione dell'indirizzo IP Microsoft 365 server datacenter interessati negli elenchi di indirizzi di terze parti. Le organizzazioni di posta elettronica di destinazione che utilizzano questi elenchi bloccanti rifiuteranno la posta elettronica da tali origini dei messaggi.
 
 ## <a name="high-risk-delivery-pool"></a>Pool di recapito ad alto rischio
-Per evitare questo problema, tutti i messaggi in uscita dai server datacenter di Microsoft 365 [](configure-the-outbound-spam-policy.md) che sono determinati come posta indesiderata o che superano i limiti di invio del servizio o dei criteri di posta indesiderata in uscita vengono inviati tramite il _pool_ di recapito ad alto rischio. [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
+Per evitare questo problema, tutti i messaggi Microsoft 365 uscita dai server datacenter che sono [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) determinati come [](configure-the-outbound-spam-policy.md) posta indesiderata o che superano i limiti di invio del servizio o dei criteri di posta indesiderata in uscita vengono inviati tramite il _pool_ di recapito ad alto rischio.
 
 Il pool di recapito ad alto rischio è un pool di indirizzi IP separato per la posta elettronica in uscita che viene utilizzato solo per inviare messaggi di "bassa qualità" (ad esempio, posta indesiderata e [backscatter).](backscatter-messages-and-eop.md) L'utilizzo del pool di recapito ad alto rischio consente di impedire al normale pool di indirizzi IP per la posta elettronica in uscita di inviare posta indesiderata. Il normale pool di indirizzi IP per la posta elettronica in uscita mantiene la reputazione che invia messaggi di "alta qualità", riducendo così la probabilità che questi indirizzi IP vengano visualizzati sugli elenchi indirizzi IP bloccati.
 

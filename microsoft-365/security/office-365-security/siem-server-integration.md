@@ -1,5 +1,5 @@
 ---
-title: Integrazione del server SIEM con applicazioni e servizi di Microsoft 365
+title: Integrazione del server SIEM con Microsoft 365 applicazioni
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,7 +15,7 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 - seo-marvel-apr2020
-description: Panoramica dell'integrazione del server SiEM (Security Information and Event Management) con le applicazioni e i servizi cloud di Microsoft 365
+description: Panoramica dell'integrazione del server SiEM (Security Information and Event Management) con i servizi cloud Microsoft 365 e le applicazioni
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
@@ -25,7 +25,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51599948"
 ---
-# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrazione del server SiEM (Security Information and Event Management) con applicazioni e servizi di Microsoft 365
+# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrazione del server SiEM (Security Information and Event Management) con Microsoft 365 applicazioni e servizi di sicurezza
 
 **Si applica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -36,10 +36,10 @@ ms.locfileid: "51599948"
 
 ## <a name="summary"></a>Riepilogo
 
-L'organizzazione utilizza o pianifica di ottenere un server SiEM (Security Information and Event Management) Potrebbe essere necessario chiedersi come si integra con Microsoft 365 o Office 365. In questo articolo viene fornito un elenco delle risorse che è possibile utilizzare per integrare il server SIEM con i servizi e le applicazioni di Microsoft 365.
+L'organizzazione utilizza o pianifica di ottenere un server SiEM (Security Information and Event Management) Potrebbe essere necessario chiedersi come si integra con Microsoft 365 o Office 365. In questo articolo viene fornito un elenco delle risorse che è possibile utilizzare per integrare il server SIEM con Microsoft 365 e applicazioni.
 
 > [!TIP]
-> Se non si dispone ancora di un server SIEM e si stanno esplorando le opzioni, prendere in considerazione **[Microsoft Azure Sentinel.](/azure/sentinel/overview)**
+> Se non hai ancora un server SIEM e stai esplorando le opzioni, prendi **[in considerazione Microsoft Azure Sentinel.](/azure/sentinel/overview)**
 
 ## <a name="do-i-need-a-siem-server"></a>È necessario un server SIEM?
 
@@ -51,11 +51,11 @@ La necessità di un server SIEM dipende da molti fattori, ad esempio i requisiti
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>Integrazione del server SIEM con Microsoft 365
 
-Un server SIEM può ricevere dati da un'ampia gamma di applicazioni e servizi di Microsoft 365. Nella tabella seguente sono elencati diversi servizi e applicazioni di Microsoft 365, insieme agli input del server SIEM e alle risorse per saperne di più.
+Un server SIEM può ricevere dati da un'ampia gamma di Microsoft 365 e applicazioni. Nella tabella seguente sono elencati diversi Microsoft 365 e applicazioni, insieme agli input e alle risorse del server SIEM per ulteriori informazioni.
 
 ****
 
-|Servizio o applicazione Microsoft 365|Input/metodi del server SIEM|Risorse per approfondire|
+|Microsoft 365 Servizio o applicazione|Input/metodi del server SIEM|Risorse per approfondire|
 |---|---|---|
 |[Microsoft Defender per Office 365](defender-for-office-365.md)|Log di controllo|[Integrazione SIEM con Microsoft Defender per Office 365](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender per endpoint](/windows/security/threat-protection/)|Endpoint HTTPS ospitato in Azure <p> API REST|[Pull degli avvisi agli strumenti SIEM](../defender-endpoint/configure-siem.md)|
@@ -63,13 +63,13 @@ Un server SIEM può ricevere dati da un'ampia gamma di applicazioni e servizi di
 |
 
 > [!TIP]
-> Dai un'occhiata [ad Azure Sentinel.](/azure/sentinel/overview) Azure Sentinel include connettori per soluzioni Microsoft. Questi connettori sono disponibili "out-of-the-box" e consentono l'integrazione in tempo reale. È possibile usare Azure Sentinel con le soluzioni Microsoft 365 Defender e i servizi di Microsoft 365, tra cui Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security e altro ancora.
+> Dai un'occhiata [ad Azure Sentinel.](/azure/sentinel/overview) Azure Sentinel include connettori per soluzioni Microsoft. Questi connettori sono disponibili "out-of-the-box" e consentono l'integrazione in tempo reale. È possibile usare Azure Sentinel con le soluzioni Microsoft 365 Defender e i servizi Microsoft 365, tra cui Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security e altro ancora.
 
 ### <a name="audit-logging-must-be-turned-on"></a>La registrazione di controllo deve essere attivata
 
 Verificare che la registrazione di controllo sia attivata prima di configurare l'integrazione del server SIEM.
 
-- Per SharePoint Online, OneDrive for Business e Azure Active Directory, la registrazione di controllo è attivata nel [Centro sicurezza & conformità](../../compliance/turn-audit-log-search-on-or-off.md).
+- Per SharePoint Online, OneDrive for Business e Azure Active Directory, la registrazione di controllo è [attivata nel Centro sicurezza & conformità](../../compliance/turn-audit-log-search-on-or-off.md).
 
 - Per Exchange Online, vedere [Manage mailbox auditing](../../compliance/enable-mailbox-auditing.md).
 

@@ -27,7 +27,7 @@ ms.locfileid: "52840995"
 > [!TIP]
 > Consentire agli utenti di accedere ai servizi cloud e alle applicazioni locali con facilità e abilitare funzionalità di gestione moderne per tutti i dispositivi. Per ulteriori informazioni, vedere [Proteggere la forza lavoro remota.](/enterprise-mobility-security/remote-work/) 
 
-<center><h2>Microsoft Defender per Endpoint</center></h2>
+<center><h2>Microsoft Defender per endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Minaccia & gestione delle vulnerabilità</b></center></a></td>
