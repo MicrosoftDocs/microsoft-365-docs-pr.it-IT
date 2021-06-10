@@ -1,5 +1,5 @@
 ---
-title: Mettere un In-Place blocco su una cassetta postale eliminata in modo recidiva in Exchange Online
+title: Inserire un In-Place blocco su una cassetta postale eliminata in Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,21 +21,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50925522"
 ---
-# <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Mettere un In-Place blocco su una cassetta postale eliminata in modo recidiva in Exchange Online
+# <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Inserire un In-Place blocco su una cassetta postale eliminata in Exchange Online
 
 Informazioni su come creare un blocco In-Place per una cassetta postale eliminata in modo resciso per renderla inattiva e conservarne il contenuto. È quindi possibile utilizzare gli strumenti di Microsoft eDiscovery per eseguire ricerche nella cassetta postale inattiva.
 
 > [!IMPORTANT]
-> Mentre continuiamo a investire in modi diversi per conservare il contenuto delle cassette postali, stiamo annunciando il ritiro dei blocchi In-Place nell'interfaccia di amministrazione di Exchange (EAC). A partire dal 1° luglio 2020 non sarà possibile creare nuovi blocchi In-Place in Exchange Online. Tuttavia, sarà comunque possibile gestire le In-Place nell'interfaccia di amministrazione di Exchange o utilizzando il cmdlet **Set-MailboxSearch** in PowerShell di Exchange Online. Tuttavia, a partire dal 1° ottobre 2020, non sarà possibile gestire le In-Place esenzioni. Sarà possibile rimuoverli solo nell'interfaccia di amministrazione di Exchange o utilizzando il cmdlet **Remove-MailboxSearch.** Per ulteriori informazioni sul ritiro delle In-Place, vedere [Ritiro degli strumenti di eDiscovery legacy.](legacy-ediscovery-retirement.md)
+> Mentre continuiamo a investire in modi diversi per conservare il contenuto delle cassette postali, annunciamo il ritiro delle esenzioni In-Place nell'interfaccia di amministrazione di Exchange (EAC). A partire dal 1° luglio 2020 non sarà possibile creare nuove esenzioni In-Place in Exchange Online. Tuttavia, sarà comunque possibile gestire In-Place blocchi nell'interfaccia di amministrazione di Exchange o utilizzando il cmdlet **Set-MailboxSearch** in Exchange Online PowerShell. Tuttavia, a partire dal 1° ottobre 2020, non sarà possibile gestire le In-Place esenzioni. Sarà possibile rimuoverli solo nell'interfaccia di amministrazione di Exchange o utilizzando il cmdlet **Remove-MailboxSearch.** Per ulteriori informazioni sul ritiro delle In-Place, vedere [Ritiro degli strumenti di eDiscovery legacy.](legacy-ediscovery-retirement.md)
   
-Potrebbe verificarsi una situazione in cui una persona ha lasciato l'organizzazione e l'account utente e la cassetta postale corrispondenti sono stati eliminati. In seguito, ci si rende conto che nella cassetta postale sono presenti informazioni che devono essere conservate. Cosa potete fare? Se il periodo di conservazione della cassetta postale eliminata non è scaduto, è possibile impostare un blocco In-Place sulla cassetta postale eliminata (denominata cassetta postale eliminata in modo retto) e renderla una cassetta postale inattiva. Una  *cassetta postale inattiva*  viene utilizzata per conservare la posta elettronica di un ex dipendente dopo aver lasciato l'organizzazione. Il contenuto di una cassetta postale inattiva viene conservato per tutta la durata del blocco In-Place che è stato inserito nella cassetta postale eliminata in modo reversivo quando è stata resa inattiva. Dopo aver reso inattiva la cassetta postale, è possibile eseguire ricerche nella cassetta postale utilizzando eDiscovery di In-Place in Exchange Online, Ricerca contenuto nel Centro sicurezza & conformità o centro eDiscovery in SharePoint Online. 
+Potrebbe verificarsi una situazione in cui una persona ha lasciato l'organizzazione e l'account utente e la cassetta postale corrispondenti sono stati eliminati. In seguito, ci si rende conto che nella cassetta postale sono presenti informazioni che devono essere conservate. Cosa potete fare? Se il periodo di conservazione della cassetta postale eliminata non è scaduto, è possibile impostare un blocco In-Place sulla cassetta postale eliminata (denominata cassetta postale eliminata in modo retto) e renderla una cassetta postale inattiva. Una  *cassetta postale inattiva*  viene utilizzata per conservare la posta elettronica di un ex dipendente dopo aver lasciato l'organizzazione. Il contenuto di una cassetta postale inattiva viene conservato per tutta la durata del blocco In-Place che è stato inserito nella cassetta postale eliminata in modo reversivo quando è stata resa inattiva. Dopo aver reso inattiva la cassetta postale, è possibile eseguire ricerche nella cassetta postale utilizzando In-Place eDiscovery in Exchange Online, Ricerca contenuto nel Centro sicurezza & conformità o centro eDiscovery in SharePoint Online. 
   
 > [!NOTE]
 > In Exchange Online, una cassetta postale con eliminazione temporanea è una cassetta postale che è stata eliminata, ma che può essere recuperata entro un periodo di conservazione specifico. Il periodo di conservazione delle cassette postali con eliminazione temporanea in Exchange Online è pari a 30 giorni. Ciò significa che la cassetta postale può essere recuperata (o resa una cassetta postale inattiva) entro 30 giorni dall'eliminazione. Dopo 30 giorni, una cassetta postale eliminata definitivamente viene contrassegnata per l'eliminazione permanente e non può essere ripristinata o resa inattiva. 
   
 ## <a name="requirements-for-in-place-holds"></a>Requisiti per le In-Place di archiviazione
 
-- È necessario utilizzare il cmdlet **New-MailboxSearch** in Windows PowerShell per In-Place blocco su una cassetta postale eliminata in modo recidiva. Non è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o il Centro eDiscovery in SharePoint Online. 
+- È necessario utilizzare il cmdlet **New-MailboxSearch** in Windows PowerShell per In-Place blocco su una cassetta postale eliminata in modo recidiva. Non è possibile utilizzare l'interfaccia Exchange (EAC) o il Centro eDiscovery in SharePoint Online. 
 
 - Per informazioni su come usare Windows PowerShell per connettersi a Exchange Online, vedere [Connessione a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -45,7 +45,7 @@ Potrebbe verificarsi una situazione in cui una persona ha lasciato l'organizzazi
   Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-- Per ulteriori informazioni sulle cassette postali inattive, vedere [Panoramica delle cassette postali inattive in Office 365.](inactive-mailboxes-in-office-365.md)
+- Per ulteriori informazioni sulle cassette postali inattive, vedere [Overview of inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
 
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>Inserire un In-Place blocco su una cassetta postale eliminata in modo resciso per renderla una cassetta postale inattiva
 

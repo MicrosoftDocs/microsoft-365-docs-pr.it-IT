@@ -23,9 +23,9 @@ ms.locfileid: "51199550"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Prerequisiti di accesso di identità e dispositivi solo per cloud nell’ambiente di testing di Microsoft 365
 
-*Questa guida al laboratorio di testing può essere utilizzata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
+*Questa guida al laboratorio di testing può essere utilizzata solo per Microsoft 365 per ambienti di test aziendali.*
 
-[Le configurazioni di identità e](../security/office-365-security/microsoft-365-policies-configurations.md) accesso ai dispositivi sono un set di configurazioni consigliate e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure AD).
+[Le configurazioni di identità](../security/office-365-security/microsoft-365-policies-configurations.md) e accesso ai dispositivi sono un set di configurazioni consigliate e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure AD).
 
 In questo articolo viene descritto come configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti della [configurazione dei prerequisiti solo per cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi.
 
@@ -35,7 +35,7 @@ Le fasi principali della configurazione dell'ambiente di testing sono otto:
 2. Configurare le posizioni specifiche
 3. Configurare la reimpostazione self-service delle password
 4. Configurare l’autenticazione a più fattori
-5. Abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti al dominio
+5. Abilitare la registrazione automatica dei dispositivi dei computer Windows dominio
 6. Configurare la protezione con password di Azure AD 
 7. Abilitare Azure AD Identity Protection
 8. Abilitare l'autenticazione moderna per Exchange Online e Skype for Business Online
@@ -77,9 +77,9 @@ Seguire le istruzioni contenute nella [Fase 2 della guida al lab di test per aut
 
 Testare l'autenticazione a più fattori solo per l'account Utente 2.
 
-## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Fase 5: abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti al dominio 
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Fase 5: abilitare la registrazione automatica dei dispositivi dei computer Windows dominio 
 
-Segui [queste istruzioni per](/azure/active-directory/devices/hybrid-azuread-join-plan) abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti al dominio.
+Segui [queste istruzioni](/azure/active-directory/devices/hybrid-azuread-join-plan) per abilitare la registrazione automatica dei dispositivi dei computer Windows dominio.
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>Fase 6: configurare la protezione con password di Azure AD 
 

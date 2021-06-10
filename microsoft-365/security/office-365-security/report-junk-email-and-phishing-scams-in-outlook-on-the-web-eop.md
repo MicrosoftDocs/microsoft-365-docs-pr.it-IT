@@ -35,7 +35,7 @@ ms.locfileid: "52788308"
 
 Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o cassette postali locali che utilizzano l'autenticazione moderna [ibrida,](../../enterprise/hybrid-modern-auth-overview.md)è possibile inviare falsi positivi (buona posta elettronica contrassegnata come posta indesiderata), falsi negativi (posta elettronica non consentita) e messaggi di phishing a Exchange Online Protection (EOP).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 > [!IMPORTANT]
 > È consigliabile il componente aggiuntivo Segnala messaggio o Segnala phishing per gli invii degli utenti. Per ulteriori informazioni, vedere [Enable the Report Message or the Report Phishing add-ins.](./enable-the-report-message-add-in.md) Non è consigliabile l'esperienza di creazione di report incorporata in Outlook perché non può usare i criteri di invio [degli utenti.](./user-submission.md)
@@ -52,7 +52,7 @@ Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o cas
 
 Per impostazione predefinita, gli utenti possono segnalare falsi positivi, falsi negativi e messaggi di phishing di posta indesiderata a Microsoft per l'analisi in Outlook sul Web. Gli amministratori possono configurare Outlook criteri cassetta postale sul Web in Exchange Online PowerShell per impedire agli utenti di segnalare falsi positivi e falsi negativi di posta indesiderata a Microsoft. Non è possibile disabilitare la possibilità per gli utenti di segnalare messaggi di phishing a Microsoft.
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 

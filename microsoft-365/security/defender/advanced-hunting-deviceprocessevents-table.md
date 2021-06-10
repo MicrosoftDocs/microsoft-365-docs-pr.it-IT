@@ -65,7 +65,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `ProcessVersionInfoFileDescription` | stringa | Descrizione dalle informazioni sulla versione del processo appena creato |
 | `ProcessId` | int | ID processo (PID) del processo appena creato |
 | `ProcessCommandLine` | stringa | Riga di comando utilizzata per creare il nuovo processo |
-| `ProcessIntegrityLevel` | stringa | Livello di integrità del processo appena creato. Windows assegna livelli di integrità ai processi in base a determinate caratteristiche, ad esempio se sono stati avviati da internet scaricati. Questi livelli di integrità influenzano le autorizzazioni per le risorse |
+| `ProcessIntegrityLevel` | stringa | Livello di integrità del processo appena creato. Windows i livelli di integrità ai processi in base a determinate caratteristiche, ad esempio se sono stati avviati da internet scaricati. Questi livelli di integrità influenzano le autorizzazioni per le risorse |
 | `ProcessTokenElevation` | stringa | Indica il tipo di elevazione dei token applicata al processo appena creato. Valori possibili: TokenElevationTypeLimited (con restrizioni), TokenElevationTypeDefault (standard) e TokenElevationTypeFull (con privilegi elevati) |
 | `ProcessCreationTime` | datetime | Data e ora di creazione del processo |
 | `AccountDomain` | stringa | Dominio dell'account |
@@ -80,7 +80,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessAccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountObjectId` | stringa | ID oggetto di Azure AD dell'account utente che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessLogonId` | stringa | Identificatore per una sessione di accesso del processo che ha avviato l'evento. Questo identificatore è univoco nello stesso computer solo tra un riavvio e l'altro. |
-| `InitiatingProcessIntegrityLevel` | stringa | Livello di integrità del processo che ha avviato l'evento. Windows assegna livelli di integrità ai processi in base a determinate caratteristiche, ad esempio se sono stati avviati da un download Internet. Questi livelli di integrità influenzano le autorizzazioni per le risorse |
+| `InitiatingProcessIntegrityLevel` | stringa | Livello di integrità del processo che ha avviato l'evento. Windows i livelli di integrità ai processi in base a determinate caratteristiche, ad esempio se sono stati avviati da un download Internet. Questi livelli di integrità influenzano le autorizzazioni per le risorse |
 | `InitiatingProcessTokenElevation` | stringa | Tipo di token che indica la presenza o l'assenza dell'elevazione dei privilegi UAC (User Access Control) applicata al processo che ha avviato l'evento |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |

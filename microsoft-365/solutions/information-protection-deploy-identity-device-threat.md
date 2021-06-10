@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Impedire violazioni dei dati personali con i servizi di protezione dalle minacce, dei dispositivi e dell'identità di Microsoft 365.
+description: Prevenire violazioni dei dati personali con i servizi di identità, dispositivo e protezione dalle minacce di Microsoft 365.
 ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "51199466"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Usare identità, dispositivo e protezione dalle minacce per la normativa sulla privacy dei dati
 
-Microsoft 365 offre diverse funzionalità di protezione da identità, dispositivi e minacce che le organizzazioni possono utilizzare per garantire la conformità alle normative di conformità relative alla privacy dei dati. In questo articolo vengono descritti i requisiti delle normative sulla privacy dei dati in queste aree e viene fornito un elenco delle funzionalità e dei servizi di Microsoft 365 correlati con collegamenti a ulteriori informazioni utili per soddisfare i requisiti di implementazione.
+Microsoft 365 fornisce una serie di funzionalità di protezione da identità, dispositivi e minacce che le organizzazioni possono utilizzare per garantire la conformità alle normative di conformità relative alla privacy dei dati. In questo articolo vengono descritti i requisiti delle normative sulla privacy dei dati in queste aree e viene fornito un elenco delle funzionalità e dei servizi di Microsoft 365 correlati con collegamenti a ulteriori informazioni che consentono di soddisfare i requisiti di implementazione.
 
 ## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Relazione tra identità, dispositivo e protezione dalle minacce con la normativa sulla privacy dei dati
 
@@ -46,7 +46,7 @@ Compliance Manager include identità, dispositivo e protezione dalle minacce usa
  
 Se queste sono selezionate nell'insieme di esempio di quattro principali normative sulla privacy dei dati, Compliance Manager specifica 90 azioni di miglioramento, la maggior parte delle quali ha un punteggio "27". Dal momento che un numero così elevato viene chiamato da Compliance Manager per queste categorie, alcune delle più comuni sono elencate qui, per riferimento.
 
-Usare [Azure Active Directory (Azure AD) per](https://azure.microsoft.com/services/active-directory/) l'identità e la categoria Controllo **accesso,** con cui è possibile:
+Usa [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) per l'identità e la categoria **Controllo accesso,** con cui puoi:
 
 - Implementare l'autenticazione resistente alla riesecuzione (per impedire attacchi "Man in the middle")
 - Bloccare l'autenticazione legacy.
@@ -58,22 +58,22 @@ Usare [Azure Active Directory (Azure AD) per](https://azure.microsoft.com/servic
 - Controllare gli account utente e le modifiche di stato.
 - Esaminare le modifiche amministrative e del gruppo di ruoli.
 
-Usa [Microsoft Endpoint Manager per](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) i dispositivi e la categoria **Gestisci** dispositivi, con cui puoi:
+Usa [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) per i dispositivi e **la categoria Gestisci dispositivi,** con cui puoi:
 
 - Bloccare i dispositivi mobili interrotti e rooted.
 - Configurare Intune per la gestione dei dispositivi mobili.
-- Creare criteri di conformità per dispositivi Android, iOS, macOS e Windows.
-- Crea un profilo di configurazione del dispositivo per dispositivi Android, iOS, macOS e Windows.
+- Creare criteri di conformità per dispositivi Android, iOS, macOS e Windows dispositivi.
+- Crea un profilo di configurazione del dispositivo per dispositivi Android, iOS, macOS e Windows dispositivi.
 - Creare criteri di protezione delle app per iOS e Windows.
 - Nascondere le informazioni con la schermata di blocco.
 - Implementare criteri password per i dispositivi mobili.
 - Richiedi ai dispositivi mobili di bloccarsi in caso di inattività.
 - Richiedere ai dispositivi mobili di cancellare i dati in caso di più errori di accesso.
 
-Usare [Exchange Online Protection e Microsoft Defender per Office 365](../security/office-365-security/defender-for-office-365.md) per la categoria **Protezione** dalle minacce, con cui è possibile:
+Usa [Exchange Online Protection e Microsoft Defender per Office 365](../security/office-365-security/defender-for-office-365.md) per la **categoria** Protezione dalle minacce, con cui puoi:
 
 - Abilitare l'autenticazione mittente (SPF, DMARC e DKIM).
-- Configurare i criteri anti-phishing di Microsoft Defender per Office 365.
+- Configurare Microsoft Defender per i Office 365 anti-phishing.
 - Implementare allegati sicuri.
 - Implementare collegamenti sicuri.
 - Implementare i criteri di rilevamento e risposta di malware.

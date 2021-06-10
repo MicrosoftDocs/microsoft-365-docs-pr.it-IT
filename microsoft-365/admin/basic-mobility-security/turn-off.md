@@ -55,4 +55,4 @@ Queste opzioni rimuovono l'applicazione di sicurezza e mobilità di base per i d
 3.  Nella finestra di dialogo Avviso selezionare **Sì.**
 
 >[!NOTE]
->Per altri passaggi per sbloccare i dispositivi se i dispositivi dell'organizzazione sono ancora in uno stato bloccato, vedere il post di blog Rimozione del controllo di accesso da Gestione dispositivi mobili [per Office 365.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)
+>Per altri passaggi per sbloccare i dispositivi se i dispositivi dell'organizzazione sono ancora in uno stato [bloccato,](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)vedi il post di blog Rimozione del controllo di accesso da Gestione dispositivi mobili per Office 365 .

@@ -50,7 +50,7 @@ GET /testwdatppreview/machinesecuritystates
 Intestazione | Valore 
 :---|:---
 Autorizzazione | Bearer {token}. **Obbligatorio**.
-Tipo contenuto | application/json
+Tipo di contenuto | application/json
 
 ## <a name="request-body"></a>Corpo della richiesta
 Vuoto

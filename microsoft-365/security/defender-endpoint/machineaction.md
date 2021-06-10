@@ -44,15 +44,15 @@ ms.locfileid: "51187386"
 |:------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------|
 | [Elenco MachineActions](get-machineactions-collection.md)           | [Azione computer](machineaction.md) | Elenca [entità azione](machineaction.md) computer.           |
 | [Get MachineAction](get-machineaction-object.md)                  | [Azione computer](machineaction.md) | Ottenere una singola [entità Machine Action.](machineaction.md)     |
-| [Raccogliere il pacchetto di analisi](collect-investigation-package.md) | [Azione computer](machineaction.md) | Raccogliere il pacchetto di analisi da un [computer](machine.md). |
-| [Ottenere l'URI di firma di accesso condiviso del pacchetto di analisi](get-package-sas-uri.md)       | [Azione computer](machineaction.md) | Ottenere l'URI per il download del pacchetto di analisi.          |
-| [Isola computer](isolate-machine.md)                             | [Azione computer](machineaction.md) | Isolare [il computer](machine.md) dalla rete.                 |
-| [Rilasciare il computer dall'isolamento](unisolate-machine.md)            | [Azione computer](machineaction.md) | Rilasciare [il computer](machine.md) da Isolation.               |
-| [Limitare l'esecuzione delle app](restrict-code-execution.md)              | [Azione computer](machineaction.md) | Limitare l'esecuzione dell'applicazione.                             |
+| [Raccogliere un pacchetto di indagini](collect-investigation-package.md) | [Azione computer](machineaction.md) | Raccogliere il pacchetto di analisi da un [computer](machine.md). |
+| [Ottenere un pacchetto di indagini SAS URI](get-package-sas-uri.md)       | [Azione computer](machineaction.md) | Ottenere l'URI per il download del pacchetto di analisi.          |
+| [Isolare un computer](isolate-machine.md)                             | [Azione computer](machineaction.md) | Isolare [il computer](machine.md) dalla rete.                 |
+| [Rilasciare un computer dall'isolamento](unisolate-machine.md)            | [Azione computer](machineaction.md) | Rilasciare [il computer](machine.md) da Isolation.               |
+| [Limitare l'esecuzione dell'app](restrict-code-execution.md)              | [Azione computer](machineaction.md) | Limitare l'esecuzione dell'applicazione.                             |
 | [Rimuovere la restrizione dell'app](unrestrict-code-execution.md)            | [Azione computer](machineaction.md) | Rimuovere la restrizione di esecuzione dell'applicazione.                   |
-| [Eseguire l'analisi antivirus](run-av-scan.md)                              | [Azione computer](machineaction.md) | Eseguire un'analisi AV usando Windows Defender (se applicabile).    |
-| [Computer offboard](offboard-machine-api.md)                       | [Azione computer](machineaction.md) | Computer [offboard](machine.md) da Microsoft Defender for Endpoint. |
-| [Arrestare e mettere in quarantena il file](stop-and-quarantine-file.md)           | [Azione computer](machineaction.md) | Interrompere l'esecuzione di un file in un computer ed eliminarlo.        |
+| [Eseguire ricerca del virus](run-av-scan.md)                              | [Azione computer](machineaction.md) | Eseguire un'analisi av usando Windows Defender (se applicabile).    |
+| [Dispositivo offboard](offboard-machine-api.md)                       | [Azione computer](machineaction.md) | Computer [offboard](machine.md) da Microsoft Defender for Endpoint. |
+| [Arrestare e mettere in quarantena un file](stop-and-quarantine-file.md)           | [Azione computer](machineaction.md) | Interrompere l'esecuzione di un file in un computer ed eliminarlo.        |
 
 <br>
 

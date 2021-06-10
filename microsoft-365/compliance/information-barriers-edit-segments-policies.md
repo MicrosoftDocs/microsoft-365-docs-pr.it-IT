@@ -27,17 +27,17 @@ Dopo aver definito [i criteri](information-barriers-policies.md)di barriera dell
 
 |**Azione**|**Descrizione**|
 |:---------|:--------------|
-| [Modificare gli attributi dell'account utente](#edit-user-account-attributes) | Compilare gli attributi in Azure Active Directory che possono essere usati per definire i segmenti.<br/>Modificare gli attributi dell'account utente quando gli utenti non sono inclusi nei segmenti che dovrebbero essere, per modificare i segmenti in cui sono gli utenti o per definire i segmenti con attributi diversi. |
-| [Modificare un segmento](#edit-a-segment) | Modificare i segmenti quando si desidera modificare la modalità di definizione di un segmento. <br/>Ad esempio, potresti aver originariamente definito segmenti usando *Department* e ora vuoi usare un altro attributo, ad esempio *MemberOf.* |
-| [Modificare un criterio](#edit-a-policy) | Modificare un criterio di barriera delle informazioni quando si desidera modificare il funzionamento di un criterio.<br/>Ad esempio, invece di bloccare le comunicazioni tra due segmenti, potresti decidere di consentire la comunicazione solo tra determinati segmenti. |
+| [Modificare gli attributi dell'account utente](#edit-user-account-attributes) | Compilare gli attributi Azure Active Directory che possono essere usati per definire i segmenti.<br/>Modificare gli attributi dell'account utente quando i segmenti non includono utenti che dovrebbero esserci, per modificare i segmenti in cui gli utenti sono presenti o per definire i segmenti usando attributi differenti. |
+| [Modificare un segmento](#edit-a-segment) | Modificare i segmenti quando si desidera cambiarne la modalità di definizione. <br/>Ad esempio, potresti aver originariamente definito segmenti usando *Department* e ora vuoi usare un altro attributo, ad esempio *MemberOf.* |
+| [Modificare un criterio](#edit-a-policy) | Modificare un criterio delle barriere informative quando si desidera cambiarne il funzionamento.<br/>Ad esempio, invece di bloccare le comunicazioni tra due segmenti, potresti decidere di consentire la comunicazione solo tra determinati segmenti. |
 | [Impostare un criterio sullo stato inattivo](#set-a-policy-to-inactive-status) |Impostare un criterio sullo stato inattivo quando si desidera apportare modifiche a un criterio o quando non si desidera che un criterio sia attivo. |
 | [Rimuovere un criterio](#remove-a-policy) | Rimuovere un criterio di barriera delle informazioni quando non è più necessario un criterio specifico. |
 | [Arrestare un'applicazione di criteri](#stop-a-policy-application) | Eseguire questa azione quando si desidera interrompere il processo di applicazione dei criteri di barriera delle informazioni.<br/> L'arresto di un'applicazione dei criteri non è istantaneo e non annulla i criteri già applicati agli utenti. |
-| [Definire i criteri per le barriere delle informazioni](information-barriers-policies.md) | Definire un criterio di barriera delle informazioni quando non si dispone già di tali criteri ed è necessario limitare o limitare le comunicazioni tra gruppi specifici di utenti. |
+| [Definire i criteri per le barriere informative](information-barriers-policies.md) | Definire un criterio di barriera delle informazioni quando non si dispone già di tali criteri ed è necessario limitare o limitare le comunicazioni tra gruppi specifici di utenti. |
 | [Risoluzione dei problemi relativi alle barriere informative](information-barriers-troubleshooting.md) | Fare riferimento a questo articolo quando si verificano problemi imprevisti con le barriere alle informazioni. |
 
 > [!IMPORTANT]
-> Per eseguire le attività descritte in questo articolo, è necessario disporre di un ruolo appropriato, ad esempio uno dei seguenti:<br/>- Amministratore globale dell'organizzazione di Microsoft 365<br/>- Amministratore globale<br/>- Amministratore conformità<br/>- Gestione della conformità IB (questo è un nuovo ruolo!)<br><br>Per ulteriori informazioni sui prerequisiti per le barriere alle informazioni, vedere [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Assicurarsi di [connettersi a PowerShell & Centro sicurezza e conformità.](/powershell/exchange/connect-to-scc-powershell)
+> Per eseguire le attività descritte in questo articolo, è necessario disporre di un ruolo appropriato, ad esempio uno dei seguenti:<br/>- Microsoft 365 Enterprise amministratore globale<br/>- Amministratore globale<br/>- Amministratore conformità<br/>- Gestione della conformità IB (questo è un nuovo ruolo!)<br><br>Per ulteriori informazioni sui prerequisiti per le barriere alle informazioni, vedere [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Assicurarsi di [connettersi a PowerShell & Centro sicurezza e conformità.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Modificare gli attributi dell'account utente
 
@@ -47,13 +47,13 @@ Utilizzare questa procedura per modificare gli attributi utilizzati per segmenta
 
     |**Sintassi**|**Esempio**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> È possibile utilizzare qualsiasi valore che identifichi ogni utente in modo univoco, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p> È inoltre possibile utilizzare questo cmdlet per un singolo `Get-InformationBarrierRecipientStatus -Identity <value>` utente: |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan* e *alexw* per *Alex*. |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> È possibile utilizzare qualsiasi valore che identifichi ogni utente in modo univoco, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p> È inoltre possibile utilizzare questo cmdlet per un singolo `Get-InformationBarrierRecipientStatus -Identity <value>` utente: |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In questo esempio si fa riferimento a due account utente in Office 365: *meganb* per *Megan* e *alexw* per *Alex*. |
 
 2. Determinare l'attributo che si desidera modificare per i profili dell'account utente. Per ulteriori informazioni, vedere [Attributi per i criteri di barriera delle informazioni.](information-barriers-attributes.md) 
 
 3. Modificare uno o più account utente per includere i valori per l'attributo selezionato nel passaggio precedente. Per eseguire questa operazione, utilizzare una delle procedure seguenti:
 
-    - Per modificare un singolo account, vedere Aggiungere o aggiornare le informazioni del profilo di un [utente con Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Per modificare un singolo account, vedere [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
     - Per modificare più account (o usare PowerShell per modificare un singolo account), vedere [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
@@ -165,9 +165,9 @@ Dopo aver avviato l'applicazione dei criteri di protezione delle informazioni, s
 ## <a name="resources"></a>Risorse
 
 - [Ottenere una panoramica delle barriere in fatto di informazioni](information-barriers.md)
-- [Definire i criteri per le barriere delle informazioni](information-barriers-policies.md)
-- [Ulteriori informazioni sulle barriere di informazioni in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Definire i criteri per le barriere informative](information-barriers-policies.md)
+- [Ulteriori informazioni sulle barriere di informazione in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Ulteriori informazioni sulle barriere di informazioni in SharePoint Online](/sharepoint/information-barriers)
-- [Ulteriori informazioni sulle barriere di informazioni in OneDrive](/onedrive/information-barriers)
+- [Altre informazioni sulle barriere di informazione in OneDrive](/onedrive/information-barriers)
 - [Attributi per i criteri delle barriere informative](information-barriers-attributes.md)
 - [Risoluzione dei problemi relativi alle barriere informative](information-barriers-troubleshooting.md)

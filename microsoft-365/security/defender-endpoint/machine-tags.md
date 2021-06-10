@@ -1,5 +1,5 @@
 ---
-title: Creare e gestire tag dispositivo
+title: Creare e gestire tag di dispositivi
 description: Usare i tag del dispositivo per raggruppare i dispositivi per acquisire il contesto e abilitare la creazione dinamica dell'elenco come parte di un evento imprevisto
 keywords: tag, tag dispositivo, gruppi di dispositivi, gruppi, correzione, livello, regole, gruppo aad, ruolo, assegnare, classificare
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51187590"
 ---
-# <a name="create-and-manage-device-tags"></a>Creare e gestire tag dispositivo
+# <a name="create-and-manage-device-tags"></a>Creare e gestire tag di dispositivi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,30 +33,30 @@ ms.locfileid: "51187590"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Aggiungi tag nei dispositivi per creare un'affiliazione di gruppo logico. I tag dispositivo supportano il mapping corretto della rete, consentendo di collegare tag diversi per acquisire il contesto e abilitare la creazione dinamica dell'elenco come parte di un evento imprevisto. I tag possono essere usati come filtro nella **visualizzazione elenco** Dispositivi o per raggruppare i dispositivi. Per altre informazioni sul raggruppamento dei dispositivi, vedi [Creare e gestire gruppi di dispositivi.](machine-groups.md)
+Aggiungere tag nei dispositivi per creare un'affiliazione a un gruppo logico. I tag del dispositivo supportano la mappatura corretta della rete, consentendo di collegare tag diversi per acquisire il contesto e consentire la creazione di elenchi dinamici come parte di un incidente. I tag possono essere usati come filtro nella **visualizzazione elenco** Dispositivi o per raggruppare i dispositivi. Per altre informazioni sul raggruppamento dei dispositivi, vedi [Creare e gestire gruppi di dispositivi.](machine-groups.md)
 
 Puoi aggiungere tag nei dispositivi usando i modi seguenti:
 
-- Utilizzo del portale
-- Impostazione di un valore di chiave del Registro di sistema
+- Usando il portale
+- Impostando un valore della chiave del Registro di sistema
 
 > [!NOTE]
 > Potrebbe verificarsi una latenza tra il momento in cui un tag viene aggiunto a un dispositivo e la relativa disponibilità nell'elenco dei dispositivi e nella pagina del dispositivo.  
 
-Per aggiungere tag di dispositivo tramite API, vedi [Aggiungere o rimuovere l'API dei tag di dispositivo.](add-or-remove-machine-tags.md)
+Per aggiungere tag del dispositivo usando l'API, vedere [Aggiungere o rimuovere l'API dei tag del dispositivo](add-or-remove-machine-tags.md).
 
-## <a name="add-and-manage-device-tags-using-the-portal"></a>Aggiungere e gestire tag dispositivo tramite il portale
+## <a name="add-and-manage-device-tags-using-the-portal"></a>Aggiungere e gestire i tag per i dispositivi tramite il portale
 
-1. Seleziona il dispositivo in cui vuoi gestire i tag. Puoi selezionare o cercare un dispositivo da una delle visualizzazioni seguenti:
+1. Selezionare il dispositivo in cui gestire i tag. È possibile selezionare o cercare un dispositivo in una delle seguenti visualizzazioni:
 
    - **Dashboard delle operazioni di** sicurezza: selezionare il nome del dispositivo nella sezione Dispositivi principali con avvisi attivi.
-   - **Coda avvisi:** selezionare il nome del dispositivo accanto all'icona del dispositivo dalla coda degli avvisi.
-   - **Elenco dispositivi:** selezionare il nome del dispositivo nell'elenco dei dispositivi.
-   - **Casella di ricerca:** seleziona Dispositivo dal menu a discesa e immetti il nome del dispositivo.
+   - **Coda degli avvisi**: selezionare il nome del dispositivo accanto all'icona del dispositivo dalla coda degli avvisi.
+   - **Elenco dispositivi**: selezionare il nome del dispositivo nell'elenco dei dispositivi.
+   - **Casella di ricerca**: selezionare Dispositivo dal menu a discesa e inserire il nome del dispositivo.
 
-     Puoi anche accedere alla pagina di avviso tramite il file e le visualizzazioni IP.
+     È anche possibile accedere alla pagina di avviso tramite le visualizzazioni file e IP.
 
-2. Seleziona **Gestisci tag** dalla riga delle azioni di risposta.
+2. Selezionare **Gestisci tag** dalla riga Azioni di risposta.
 
     ![Immagine del pulsante Gestisci tag](images/manage-tags.png)
 
@@ -78,7 +78,7 @@ I tag vengono aggiunti alla visualizzazione del dispositivo e verranno visualizz
 
 >[!NOTE]
 > Applicabile solo nei dispositivi seguenti:
->- Windows 10, versione 1709 o successiva
+>- Windows 10 versione 1709 o successiva
 >- Windows Server, versione 1803 o successiva
 >- Windows Server 2016
 >- Windows Server 2012 R2

@@ -121,5 +121,5 @@ Puoi personalizzare la notifica per l'attivazione di una regola e bloccare un'ap
 
 * [Ridurre le superfici di attacco con le regole di riduzione della superficie di attacco](attack-surface-reduction.md)
 * [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
-* [Rilevare regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
-* [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction.md)
+* [Valutare le regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
+* [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction.md)

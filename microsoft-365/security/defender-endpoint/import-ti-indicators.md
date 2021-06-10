@@ -144,4 +144,4 @@ Ecco un esempio di risposta.
 ```
 
 ## <a name="related-topic"></a>Argomento correlato
-- [Gestire gli indicatori](manage-indicators.md)
+- [Gestire indicatori](manage-indicators.md)

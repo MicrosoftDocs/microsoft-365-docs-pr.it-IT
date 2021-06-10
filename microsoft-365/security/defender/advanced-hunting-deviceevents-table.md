@@ -35,7 +35,7 @@ ms.locfileid: "52023202"
 - Microsoft 365 Defender
 - Microsoft Defender per endpoint
 
-La tabella o gli eventi vari del dispositivo nello schema di ricerca avanzata contengono informazioni su vari tipi di eventi, inclusi gli eventi attivati dai controlli di sicurezza, ad esempio Windows Defender Antivirus e protezione dagli `DeviceEvents` exploit. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella o gli eventi vari del dispositivo nello schema di ricerca avanzata contengono informazioni su vari tipi di eventi, inclusi gli eventi attivati dai controlli di sicurezza, ad esempio Windows Defender Antivirus e protezione `DeviceEvents` dagli exploit. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
 > Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza.
