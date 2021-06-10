@@ -1,0 +1,32 @@
+### YamlMime:Hub
+title: Utilità di pianificazione per Microsoft 365
+summary: Scopri come configurare l'Utilità di pianificazione per Microsoft 365 le riunioni con Cortana.
+brand: m365
+metadata:
+  title: Utilità di pianificazione per Microsoft 365
+  description: Scopri come configurare l'Utilità di pianificazione per Microsoft 365 le riunioni con Cortana.
+  ms.service: exchange-online
+  ms.topic: hub-page
+  author: AshaIyengar21
+  ms.author: v-aiyengar
+  manager: serdars
+  audience: Admin
+  ms.date: 04/23/2021
+additionalContent:
+  sections:
+    - items:
+        - title: Che cos'è l'utilità di Microsoft 365?
+          summary: 'Informazioni sull''utilità di Microsoft 365 e sulle relative funzionalità, su chi e come ne trarranno vantaggio.'
+          url: scheduler-overview.md
+        - title: Attendibilità e privacy
+          summary: Informazioni su come l'Utilità di Microsoft 365 verifica che l'attendibilità e la privacy siano protette.
+          url: scheduler-trust-privacy.md
+        - title: Configurazione dell'utilità di pianificazione per Microsoft 365
+          summary: Scopri cosa è necessario per configurare l'utilità di pianificazione per Microsoft 365.
+          url: scheduler-setup.md
+        - title: Usare l'Utilità di Microsoft 365
+          summary: Informazioni su come usare l'Utilità di Microsoft 365.
+          url: scheduler-using.md
+        - title: Domande frequenti per l'utilità di pianificazione
+          summary: Informazioni sulle domande frequenti sull'utilità di pianificazione per Microsoft 365 risposte.
+          url: scheduler-faqs.md

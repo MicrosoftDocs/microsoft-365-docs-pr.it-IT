@@ -1,7 +1,7 @@
 ---
 title: Isolamento basato su hardware (Windows 10)
 ms.reviewer: ''
-description: Scopri come l'isolamento basato su hardware in Windows 10 aiuta a contrastare il malware.
+description: Informazioni su come l'isolamento basato su hardware in Windows 10 aiuta a contrastare il malware.
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,28 +16,28 @@ ms.topic: conceptual
 ms.author: macapara
 ms.date: 09/07/2018
 ms.technology: mde
-ms.openlocfilehash: 82841ccdb2a6ad09f43d0bf8d12cb54fe44d6dfe
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b3babf858ac19e70119a2dc6a58b25359f1b05c1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186906"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842987"
 ---
-# <a name="hardware-based-isolation-in-windows-10"></a><span data-ttu-id="f32eb-103">Isolamento basato su hardware in Windows 10</span><span class="sxs-lookup"><span data-stu-id="f32eb-103">Hardware-based isolation in Windows 10</span></span>
+# <a name="hardware-based-isolation-in-windows-10"></a><span data-ttu-id="a77ce-103">Isolamento basato su hardware in Windows 10</span><span class="sxs-lookup"><span data-stu-id="a77ce-103">Hardware-based isolation in Windows 10</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="f32eb-104">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="f32eb-104">**Applies to:**</span></span>
-- [<span data-ttu-id="f32eb-105">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="f32eb-105">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="f32eb-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f32eb-106">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="a77ce-104">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="a77ce-104">**Applies to:**</span></span>
+- [<span data-ttu-id="a77ce-105">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="a77ce-105">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="a77ce-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a77ce-106">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="f32eb-107">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="f32eb-107">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f32eb-108">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="f32eb-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="a77ce-107">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="a77ce-107">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="a77ce-108">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="a77ce-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-<span data-ttu-id="f32eb-109">L'isolamento basato su hardware consente di proteggere l'integrità del sistema in Windows 10 ed è integrato con Microsoft Defender for Endpoint.</span><span class="sxs-lookup"><span data-stu-id="f32eb-109">Hardware-based isolation helps protect system integrity in Windows 10 and is integrated with Microsoft Defender for Endpoint.</span></span> 
+<span data-ttu-id="a77ce-109">L'isolamento basato su hardware consente di proteggere l'integrità del sistema Windows 10 ed è integrato con Microsoft Defender for Endpoint.</span><span class="sxs-lookup"><span data-stu-id="a77ce-109">Hardware-based isolation helps protect system integrity in Windows 10 and is integrated with Microsoft Defender for Endpoint.</span></span> 
 
-| <span data-ttu-id="f32eb-110">Funzionalità</span><span class="sxs-lookup"><span data-stu-id="f32eb-110">Feature</span></span> | <span data-ttu-id="f32eb-111">Descrizione</span><span class="sxs-lookup"><span data-stu-id="f32eb-111">Description</span></span> |
+| <span data-ttu-id="a77ce-110">Funzionalità</span><span class="sxs-lookup"><span data-stu-id="a77ce-110">Feature</span></span> | <span data-ttu-id="a77ce-111">Descrizione</span><span class="sxs-lookup"><span data-stu-id="a77ce-111">Description</span></span> |
 |------------|-------------|
-| [<span data-ttu-id="f32eb-112">Windows Defender Application Guard</span><span class="sxs-lookup"><span data-stu-id="f32eb-112">Windows Defender Application Guard</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md) | <span data-ttu-id="f32eb-113">Application Guard protegge il dispositivo da attacchi avanzati, mantenendoti produttivo.</span><span class="sxs-lookup"><span data-stu-id="f32eb-113">Application Guard protects your device from advanced attacks while keeping you productive.</span></span> <span data-ttu-id="f32eb-114">Utilizzando un approccio di isolamento basato su hardware univoco, l'obiettivo è isolare i siti Web e i documenti PDF non attendibili all'interno di un contenitore leggero separato dal sistema operativo tramite l'hypervisor windows nativo.</span><span class="sxs-lookup"><span data-stu-id="f32eb-114">Using a unique hardware-based isolation approach, the goal is to isolate untrusted websites and PDF documents inside a lightweight container that is separated from the operating system via the native Windows Hypervisor.</span></span> <span data-ttu-id="f32eb-115">Se un sito o un documento PDF non attendibile risulta dannoso, rimane comunque contenuto nel contenitore sicuro di Application Guard, mantenendo il PC desktop protetto e l'autore dell'attacco lontano dai dati aziendali.</span><span class="sxs-lookup"><span data-stu-id="f32eb-115">If an untrusted site or PDF document turns out to be malicious, it still remains contained within Application Guard’s secure container, keeping the desktop PC protected and the attacker away from your enterprise data.</span></span> |
-| [<span data-ttu-id="f32eb-116">Windows Defender System Guard</span><span class="sxs-lookup"><span data-stu-id="f32eb-116">Windows Defender System Guard</span></span>](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md) | <span data-ttu-id="f32eb-117">System Guard protegge e mantiene l'integrità del sistema all'avvio e dopo l'esecuzione e convalida l'integrità del sistema utilizzando l'attestazione.</span><span class="sxs-lookup"><span data-stu-id="f32eb-117">System Guard protects and maintains the integrity of the system as it starts and after it's running, and validates system integrity by using attestation.</span></span>  |
+| [<span data-ttu-id="a77ce-112">Windows Defender Application Guard</span><span class="sxs-lookup"><span data-stu-id="a77ce-112">Windows Defender Application Guard</span></span>](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md) | <span data-ttu-id="a77ce-113">Application Guard protegge il dispositivo da attacchi avanzati, mantenendoti produttivo.</span><span class="sxs-lookup"><span data-stu-id="a77ce-113">Application Guard protects your device from advanced attacks while keeping you productive.</span></span> <span data-ttu-id="a77ce-114">Utilizzando un approccio di isolamento basato su hardware univoco, l'obiettivo è isolare i siti Web e i documenti PDF non attendibili all'interno di un contenitore leggero separato dal sistema operativo tramite l'Hypervisor Windows nativo.</span><span class="sxs-lookup"><span data-stu-id="a77ce-114">Using a unique hardware-based isolation approach, the goal is to isolate untrusted websites and PDF documents inside a lightweight container that is separated from the operating system via the native Windows Hypervisor.</span></span> <span data-ttu-id="a77ce-115">Se un sito o un documento PDF non attendibile risulta dannoso, rimane comunque contenuto nel contenitore sicuro di Application Guard, mantenendo il PC desktop protetto e l'autore dell'attacco lontano dai dati aziendali.</span><span class="sxs-lookup"><span data-stu-id="a77ce-115">If an untrusted site or PDF document turns out to be malicious, it still remains contained within Application Guard’s secure container, keeping the desktop PC protected and the attacker away from your enterprise data.</span></span> |
+| [<span data-ttu-id="a77ce-116">Windows Defender System Guard</span><span class="sxs-lookup"><span data-stu-id="a77ce-116">Windows Defender System Guard</span></span>](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md) | <span data-ttu-id="a77ce-117">System Guard protegge e mantiene l'integrità del sistema all'avvio e dopo l'esecuzione e convalida l'integrità del sistema utilizzando l'attestazione.</span><span class="sxs-lookup"><span data-stu-id="a77ce-117">System Guard protects and maintains the integrity of the system as it starts and after it's running, and validates system integrity by using attestation.</span></span>  |
 
