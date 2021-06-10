@@ -20,17 +20,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52535267"
 ---
-# <a name="payment-information-for-romania"></a><span data-ttu-id="55177-103">Informazioni di pagamento per la Romania</span><span class="sxs-lookup"><span data-stu-id="55177-103">Payment information for Romania</span></span>
+# <a name="payment-information-for-romania"></a><span data-ttu-id="1f8ad-103">Informazioni di pagamento per la Romania</span><span class="sxs-lookup"><span data-stu-id="1f8ad-103">Payment information for Romania</span></span>
 
-<span data-ttu-id="55177-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="55177-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="1f8ad-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="1f8ad-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="55177-105">Pagare solo in EUR e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="55177-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="1f8ad-105">Pagare solo in EUR e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="1f8ad-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="55177-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="55177-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="1f8ad-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="1f8ad-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="55177-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="55177-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="55177-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="55177-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="55177-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="55177-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="55177-110">**Sort Code:** 185008</span><span class="sxs-lookup"><span data-stu-id="55177-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="55177-111">**Numero account:** 12207591</span><span class="sxs-lookup"><span data-stu-id="55177-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="55177-112">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="55177-112">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="1f8ad-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="1f8ad-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="1f8ad-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="1f8ad-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="1f8ad-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="1f8ad-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="1f8ad-110">**Sort Code:** 185008</span><span class="sxs-lookup"><span data-stu-id="1f8ad-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="1f8ad-111">**Numero account:** 12207591</span><span class="sxs-lookup"><span data-stu-id="1f8ad-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="1f8ad-112">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="1f8ad-112">**Account Name:** MICROSOFT</span></span>

@@ -20,28 +20,28 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52535303"
 ---
-# <a name="payment-information-for-norway"></a><span data-ttu-id="4ee81-103">Informazioni di pagamento per la Norvegia</span><span class="sxs-lookup"><span data-stu-id="4ee81-103">Payment information for Norway</span></span>
+# <a name="payment-information-for-norway"></a><span data-ttu-id="8342c-103">Informazioni di pagamento per la Norvegia</span><span class="sxs-lookup"><span data-stu-id="8342c-103">Payment information for Norway</span></span>
 
-<span data-ttu-id="4ee81-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="4ee81-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="8342c-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="8342c-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="4ee81-105">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="4ee81-105">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="8342c-105">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="8342c-105">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="4ee81-106">**Pagare in NOK e fare riferimento ai numeri di fattura sulla rimessa di pagamento.**</span><span class="sxs-lookup"><span data-stu-id="4ee81-106">**Please pay in NOK and reference invoice number(s) on your payment remittance.**</span></span>
+<span data-ttu-id="8342c-106">**Pagare in NOK e fare riferimento ai numeri di fattura sulla rimessa di pagamento.**</span><span class="sxs-lookup"><span data-stu-id="8342c-106">**Please pay in NOK and reference invoice number(s) on your payment remittance.**</span></span>
 
-<span data-ttu-id="4ee81-107">Se si dispone di una fattura fatturata da **Microsoft Ireland Operations Limited,** utilizzare queste informazioni bancarie:</span><span class="sxs-lookup"><span data-stu-id="4ee81-107">If you have an invoice billed by **Microsoft Ireland Operations Limited**, use this bank information:</span></span>
+<span data-ttu-id="8342c-107">Se si dispone di una fattura fatturata da **Microsoft Ireland Operations Limited,** utilizzare queste informazioni bancarie:</span><span class="sxs-lookup"><span data-stu-id="8342c-107">If you have an invoice billed by **Microsoft Ireland Operations Limited**, use this bank information:</span></span>
 
-<span data-ttu-id="4ee81-108">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="4ee81-108">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="4ee81-109">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="4ee81-109">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="4ee81-110">**Codice IBAN:** GB94CITI18500812207621</span><span class="sxs-lookup"><span data-stu-id="4ee81-110">**IBAN Code:** GB94CITI18500812207621</span></span>  
-<span data-ttu-id="4ee81-111">**Numero account:** 12207621</span><span class="sxs-lookup"><span data-stu-id="4ee81-111">**Account Number:** 12207621</span></span>  
-<span data-ttu-id="4ee81-112">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="4ee81-112">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="8342c-108">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="8342c-108">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="8342c-109">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="8342c-109">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="8342c-110">**Codice IBAN:** GB94CITI18500812207621</span><span class="sxs-lookup"><span data-stu-id="8342c-110">**IBAN Code:** GB94CITI18500812207621</span></span>  
+<span data-ttu-id="8342c-111">**Numero account:** 12207621</span><span class="sxs-lookup"><span data-stu-id="8342c-111">**Account Number:** 12207621</span></span>  
+<span data-ttu-id="8342c-112">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="8342c-112">**Account Name:** MICROSOFT</span></span>
 
-<span data-ttu-id="4ee81-113">Se si dispone di una fattura fatturata da **Microsoft Norge AS** per gli ordini e il consumo a partire dal 1° marzo 2021, utilizzare le seguenti informazioni bancarie:</span><span class="sxs-lookup"><span data-stu-id="4ee81-113">If you have an invoice billed by **Microsoft Norge AS** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
+<span data-ttu-id="8342c-113">Se si dispone di una fattura fatturata da **Microsoft Norge AS** per gli ordini e il consumo a partire dal 1° marzo 2021, utilizzare le seguenti informazioni bancarie:</span><span class="sxs-lookup"><span data-stu-id="8342c-113">If you have an invoice billed by **Microsoft Norge AS** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
 
-<span data-ttu-id="4ee81-114">**Banca:** Citibank Europe plc</span><span class="sxs-lookup"><span data-stu-id="4ee81-114">**Bank:** Citibank Europe plc</span></span>  
-<span data-ttu-id="4ee81-115">**Codice SWIFT:** CITIIE2X</span><span class="sxs-lookup"><span data-stu-id="4ee81-115">**SWIFT Code:** CITIIE2X</span></span>  
-<span data-ttu-id="4ee81-116">**Codice IBAN:** IE43CITI99005170000129</span><span class="sxs-lookup"><span data-stu-id="4ee81-116">**IBAN Code:** IE43CITI99005170000129</span></span>  
-<span data-ttu-id="4ee81-117">**Numero account:** 70000129</span><span class="sxs-lookup"><span data-stu-id="4ee81-117">**Account Number:** 70000129</span></span>  
-<span data-ttu-id="4ee81-118">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="4ee81-118">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="8342c-114">**Banca:** Citibank Europe plc</span><span class="sxs-lookup"><span data-stu-id="8342c-114">**Bank:** Citibank Europe plc</span></span>  
+<span data-ttu-id="8342c-115">**Codice SWIFT:** CITIIE2X</span><span class="sxs-lookup"><span data-stu-id="8342c-115">**SWIFT Code:** CITIIE2X</span></span>  
+<span data-ttu-id="8342c-116">**Codice IBAN:** IE43CITI99005170000129</span><span class="sxs-lookup"><span data-stu-id="8342c-116">**IBAN Code:** IE43CITI99005170000129</span></span>  
+<span data-ttu-id="8342c-117">**Numero account:** 70000129</span><span class="sxs-lookup"><span data-stu-id="8342c-117">**Account Number:** 70000129</span></span>  
+<span data-ttu-id="8342c-118">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="8342c-118">**Account Name:** MICROSOFT</span></span>
 
-<span data-ttu-id="4ee81-119">Le fatture emesse da una filiale Microsoft locale vengono emesse con l'aliquota standard dell'IVA/IVA/GST e ritenute una fornitura nazionale di servizi ai fini dell'IVA/IVA/GST.</span><span class="sxs-lookup"><span data-stu-id="4ee81-119">Invoices issued from a local Microsoft Subsidiary are issued with the standard rate of VAT/Sales Tax/GST and deemed a domestic supply of services for VAT/Sales Tax/GST purposes.</span></span>
+<span data-ttu-id="8342c-119">Le fatture emesse da una filiale Microsoft locale vengono emesse con l'aliquota standard dell'IVA/IVA/GST e ritenute una fornitura nazionale di servizi ai fini dell'IVA/IVA/GST.</span><span class="sxs-lookup"><span data-stu-id="8342c-119">Invoices issued from a local Microsoft Subsidiary are issued with the standard rate of VAT/Sales Tax/GST and deemed a domestic supply of services for VAT/Sales Tax/GST purposes.</span></span>
