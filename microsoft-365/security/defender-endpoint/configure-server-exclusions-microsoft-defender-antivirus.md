@@ -62,7 +62,7 @@ Poiché le esclusioni predefinite escludono solo i percorsi **predefiniti,** se 
 
 ### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Utilizzare Criteri di gruppo per disabilitare l'elenco delle esclusioni Windows Server 2016 e Windows Server 2019
 
-1. Nel computer di gestione di Criteri di gruppo aprire Console [Gestione Criteri di gruppo.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)) Fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e quindi scegliere **Modifica**.
+1. Nel computer di gestione dei Criteri di gruppo aprire la [Console Gestione Criteri di gruppo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e quindi scegliere **Modifica**.
 2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer** e quindi fare clic su **Modelli amministrativi.**
 3. Espandere l'albero per **Windows componenti**  >  **Antivirus Microsoft Defender**  >  **esclusioni**.
 4. Fare doppio clic **su Disattiva esclusioni automatici** e impostare l'opzione su **Abilitato.** Fare clic su **OK**. 

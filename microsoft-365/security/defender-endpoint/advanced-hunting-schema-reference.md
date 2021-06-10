@@ -54,11 +54,11 @@ Per accedere rapidamente al riferimento allo schema, selezionare l'azione Visual
 
 Il riferimento seguente elenca tutte le tabelle nello schema di ricerca avanzata. Ogni nome di tabella rimanda a una pagina che descrive i nomi delle colonne di quella tabella.
 
-I nomi delle tabelle e delle colonne sono elencati anche in Microsoft Defender Security Center, nella rappresentazione dello schema nella schermata di ricerca avanzata.
+I nomi delle tabelle e delle colonne sono inoltre elencati all'interno del Microsoft Defender Security Center, nella rappresentazione dello schema nella schermata di ricerca avanzata.
 
 | Nome della tabella | Descrizione |
 |------------|-------------|
-| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Avvisi in Microsoft Defender Security Center |
+| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Avvisi su Microsoft Defender Security Center |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Informazioni sul dispositivo, incluse le informazioni sul sistema operativo |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Proprietà di rete dei dispositivi, incluse schede, indirizzi IP e MAC, nonché reti e domini connessi |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Creazione processi ed eventi correlati |
@@ -67,7 +67,7 @@ I nomi delle tabelle e delle colonne sono elencati anche in Microsoft Defender S
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Creazione e modifica di voci del registro di sistema |
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Accessi e altri eventi di autenticazione |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Caricamento eventi DDL |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Più tipi di eventi, inclusi gli eventi attivati da controlli di sicurezza come Microsoft Defender Antivirus e protezione dagli exploit |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Più tipi di eventi, inclusi gli eventi attivati da controlli di sicurezza come Antivirus Microsoft Defender e protezione dagli exploit |
 | **[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)** | Informazioni sui certificati dei file firmati ottenuti dagli eventi di verifica dei certificati sugli endpoint |
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventario del software installato nei dispositivi, incluse le informazioni sulla versione e lo stato di fine del supporto |
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Vulnerabilità software riscontrate nei dispositivi e elenco degli aggiornamenti della sicurezza disponibili che affrontano ogni vulnerabilità |
@@ -77,7 +77,7 @@ I nomi delle tabelle e delle colonne sono elencati anche in Microsoft Defender S
 
 >[!TIP]
 >Usa [la ricerca avanzata in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) per cercare minacce usando i dati di Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity. [Attivare Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)<br><br>
-Per altre informazioni su come spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender, vedere [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+Per altre informazioni su come spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender, vedere Eseguire la migrazione di query di ricerca avanzate [da Microsoft Defender for Endpoint.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)

@@ -1,7 +1,7 @@
 ---
-title: Abilitare e configurare le funzionalità di protezione di Microsoft Defender Antivirus
+title: Abilitare e configurare le Antivirus Microsoft Defender di protezione dei dati
 description: Abilitare la protezione basata sul comportamento, euristica e in tempo reale in Microsoft Defender AV.
-keywords: euristica, machine learning, monitoraggio del comportamento, protezione in tempo reale, always-on, Microsoft Defender Antivirus, antimalware, sicurezza, defender
+keywords: euristica, machine learning, monitoraggio del comportamento, protezione in tempo reale, always-on, Antivirus Microsoft Defender, antimalware, sicurezza, defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -31,21 +31,21 @@ ms.locfileid: "52274609"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus usa diversi metodi per fornire la protezione dalle minacce:
+Antivirus Microsoft Defender diversi metodi per fornire la protezione dalle minacce:
 
 - Protezione basata sul cloud per il rilevamento quasi immediato e il blocco di minacce nuove ed emergenti
 - Analisi sempre attiva, con monitoraggio del comportamento di file e processi e altre euristiche (note anche come "protezione in tempo reale")
 - Aggiornamenti dedicati alla protezione basati sul machine learning, sull'analisi di big data automatica o manuale e sulla ricerca approfondita delle minacce.
 
-È possibile configurare il modo in cui Microsoft Defender Antivirus usa questi metodi con Criteri di gruppo, System Center Configuration Manage, cmdlet di PowerShell e Strumentazione gestione Windows (WMI).
+È possibile configurare il modo Antivirus Microsoft Defender questi metodi con Criteri di gruppo, gestione configurazione System Center, cmdlet di PowerShell e Strumentazione gestione Windows (WMI).
 
 In questa sezione viene illustrata la configurazione per l'analisi sempre attiva, inclusa la modalità di rilevamento e blocco delle app ritenute non sicure, ma che potrebbero non essere rilevate come malware.
 
-Vedi [Usare tecnologie Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) di nuova generazione tramite la protezione basata sul cloud per informazioni su come abilitare e configurare la protezione basata sul cloud di Microsoft Defender Antivirus.
+Vedi [Usare tecnologie di Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) di nuova generazione tramite la protezione basata sul cloud per informazioni su come abilitare e configurare Antivirus Microsoft Defender di protezione cloud.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
  Argomento | Descrizione
 ---|---
 [Rilevare e bloccare applicazioni potenzialmente indesiderate](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Rilevare e bloccare le app che potrebbero essere indesiderate nella rete, ad esempio adware, modificatori del browser e barre degli strumenti e app antivirus non autorizzate o contraffatte
-[Abilitare e configurare le funzionalità di protezione di Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) | Abilitare e configurare la protezione in tempo reale, l'euristica e altre funzionalità di monitoraggio di Microsoft Defender Antivirus sempre disponibili
+[Abilitare e configurare le funzionalità Antivirus Microsoft Defender protezione dei dati](configure-real-time-protection-microsoft-defender-antivirus.md) | Abilitare e configurare la protezione in tempo reale, l'euristica e altre funzionalità di monitoraggio Antivirus Microsoft Defender always-on

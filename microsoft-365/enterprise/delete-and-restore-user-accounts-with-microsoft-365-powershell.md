@@ -1,5 +1,5 @@
 ---
-title: Eliminare gli account utente di Microsoft 365 con PowerShell
+title: Eliminare Microsoft 365 account utente con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Informazioni su come usare moduli diversi in PowerShell per eliminare gli account utente di Microsoft 365.
+description: Informazioni su come usare moduli diversi in PowerShell per eliminare Microsoft 365 account utente.
 ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,19 +27,19 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919141"
 ---
-# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Eliminare gli account utente di Microsoft 365 con PowerShell
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Eliminare Microsoft 365 account utente con PowerShell
 
 È possibile utilizzare PowerShell per Microsoft 365 per eliminare e ripristinare gli account utente.
 
 >[!Note]
->Informazioni su come [ripristinare un account utente](../admin/add-users/restore-user.md) tramite l'interfaccia di amministrazione di Microsoft 365.
+>Informazioni su come [ripristinare un account utente](../admin/add-users/restore-user.md) tramite l'Microsoft 365 di amministrazione.
 >
 >Per un elenco delle risorse aggiuntive, vedere [Manage users and groups](../admin/add-users/index.yml).
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Dopo la connessione, utilizzare la sintassi seguente per rimuovere un singolo account utente:
   
@@ -79,9 +79,9 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Quando si elimina un account utente tramite il modulo di Microsoft Azure Active Directory per Windows PowerShell, l'account non viene eliminato definitivamente. Infatti, si hanno a disposizione 30 giorni di tempo per ripristinare l'account utente eliminato.
+Quando si elimina un account utente tramite il modulo Microsoft Azure Active Directory per Windows PowerShell, l'account non viene eliminato definitivamente. Infatti, si hanno a disposizione 30 giorni di tempo per ripristinare l'account utente eliminato.
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Per eliminare un account utente, utilizzare la sintassi riportata di seguito:
   

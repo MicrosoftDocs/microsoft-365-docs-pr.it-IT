@@ -27,11 +27,11 @@ ms.locfileid: "50921481"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Writeback della password per l'ambiente di testing di Microsoft 365
 
-*Questa guida al laboratorio di testing può essere utilizzata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
+*Questa guida al laboratorio di testing può essere utilizzata solo per Microsoft 365 per ambienti di test aziendali.*
 
-Gli utenti possono usare il writeback delle password per aggiornare le password tramite Azure Active Directory (Azure AD), che viene quindi replicato in Servizi di dominio Active Directory (AD DS) locale. Con il writeback delle password, gli utenti non devono aggiornare le password tramite Servizi di dominio Active Directory locale in cui sono archiviati gli account utente originali. Ciò consente agli utenti mobili o remoti che non dispongono di una connessione di accesso remoto alla rete locale.
+Gli utenti possono usare il writeback delle password per aggiornare le password tramite Azure Active Directory (Azure AD), che viene quindi replicato in Servizi di dominio Active Directory locale. Con il writeback delle password, gli utenti non devono aggiornare le password tramite Servizi di dominio Active Directory locale in cui sono archiviati gli account utente originali. Ciò consente agli utenti mobili o remoti che non dispongono di una connessione di accesso remoto alla rete locale.
 
-In questo articolo viene descritto come configurare l'ambiente di testing di Microsoft 365 per il writeback delle password.
+In questo articolo viene descritto come configurare l'ambiente Microsoft 365 test per il writeback delle password.
 
 La configurazione dell'ambiente di testing per il writeback delle password prevede due fasi:
 - [Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -40,7 +40,7 @@ La configurazione dell'ambiente di testing per il writeback delle password preve
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Per una mappa visiva a tutti gli articoli nello stack guida del laboratorio di testing di Microsoft 365 per le aziende, passare a [Microsoft 365 per enterprise Test Lab Guide Stack.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+> Per una mappa visiva a tutti gli articoli dello stack Microsoft 365 per enterprise Test Lab Guide, passare a [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
@@ -109,9 +109,9 @@ Successivamente, configurare Azure AD Connect su APP1 per il writeback delle pas
 
 4. Nella pagina **Attività aggiuntive** selezionare Personalizza opzioni **di sincronizzazione** e **quindi** avanti .
 
-5. Nella pagina **Connetti ad Azure AD** immetti le credenziali dell'account amministratore globale e quindi seleziona **Avanti.**
+5. Nella pagina **Connessione ad Azure AD** immetti le credenziali dell'account amministratore globale e quindi seleziona **Avanti.**
 
-6. Nelle pagine **Connect directories** and **Domain/OU filtering** selezionare **Next.**
+6. Nelle pagine **Connessione directory** e **filtro dominio/unità** organizzativa selezionare **Avanti.**
 
 7. Nella pagina **Funzionalità facoltative** selezionare **Writeback password** e **quindi** avanti .
 
@@ -127,7 +127,7 @@ La configurazione risultante è simile alla seguente:
 
 Questa configurazione è costituita da:
 
-- Una versione di valutazione di Microsoft 365 E5 o sottoscrizioni a pagamento con il dominio DNS TESTLAB.\<*your domain name*> registrato.
+- Una Microsoft 365 E5 di valutazione o a pagamento con il dominio DNS TESTLAB.\<*your domain name*> registrato.
 - Intranet dell'organizzazione semplificata connessa a Internet, costituita da macchine virtuali DC1, APP1 e CLIENT1 in una subnet di una rete virtuale di Azure.
 - Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant di Azure AD dell'abbonamento a Microsoft 365 al dominio TESTLAB di Active Directory Domain Services.
 - Il writeback delle password è abilitato in modo che gli utenti possono modificare la password tramite Azure AD senza dover essere connessi alla rete intranet semplificata.

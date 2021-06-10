@@ -28,7 +28,7 @@ ms.locfileid: "51166186"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -46,7 +46,7 @@ La configurazione dello strumento Connettore ArcSight micro focus richiede diver
 
 In questa sezione vengono fornite le informazioni necessarie per impostare e utilizzare correttamente i file di configurazione necessari.
 
-- Assicurati di aver abilitato la funzionalità di integrazione SIEM **dal** menu Impostazioni. Per altre informazioni, vedi [Abilitare l'integrazione SIEM in Defender per Endpoint.](enable-siem-integration.md)
+- Assicurati di aver abilitato la funzionalità di integrazione SIEM dal menu **Impostazioni.** Per altre informazioni, vedi [Abilitare l'integrazione SIEM in Defender per Endpoint.](enable-siem-integration.md)
 
 - Prepara il file salvato dall'abilitazione della funzionalità di integrazione SIEM. Dovrai ottenere i valori seguenti:
   - URL aggiornamento token OAuth 2.0
@@ -57,7 +57,7 @@ In questa sezione vengono fornite le informazioni necessarie per impostare e uti
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    Si sarebbe salvato un file ZIP contenente questi due file quando si è scelto Micro Focus ArcSight come tipo SIEM utilizzato nell'organizzazione.
+    Si sarebbe salvato un file .zip che contiene questi due file quando si è scelto Micro Focus ArcSight come tipo SIEM utilizzato nell'organizzazione.
 
 - Assicurati di generare i token seguenti e di averli pronti:
   - Token di accesso
@@ -69,7 +69,7 @@ In questa sezione vengono fornite le informazioni necessarie per impostare e uti
 
 I passaggi seguenti presuppongono che siano stati completati tutti i passaggi necessari in [Prima di iniziare](#before-you-begin).
 
-1. Installare il programma di installazione windows FlexConnector a 32 bit più recente. È possibile trovarlo in HPE Software Center. Lo strumento viene in genere installato nel percorso predefinito seguente: `C:\Program Files\ArcSightFlexConnectors\current\bin` .</br></br>È possibile scegliere dove salvare lo strumento, ad esempio C: \\ *folder_location*\current\bin dove *folder_location* rappresenta il percorso di installazione.
+1. Installare il programma di installazione a 32 bit Windows FlexConnector più recente. È possibile trovarlo in HPE Software Center. Lo strumento viene in genere installato nel percorso predefinito seguente: `C:\Program Files\ArcSightFlexConnectors\current\bin` .</br></br>È possibile scegliere dove salvare lo strumento, ad esempio C: \\ *folder_location*\current\bin dove *folder_location* rappresenta il percorso di installazione.
 
 2. Eseguire l'installazione guidata tramite le attività seguenti:
    - Introduzione
@@ -105,7 +105,7 @@ I passaggi seguenti presuppongono che siano stati completati tutti i passaggi ne
     </tr>
     <tr>
     <td>File di configurazione</td>
-    <td>Digitare il nome del file delle proprietà del client. Il nome deve corrispondere al file fornito nel file ZIP scaricato.
+    <td>Digitare il nome del file delle proprietà del client. Il nome deve corrispondere al file fornito nel .zip scaricato.
 Ad esempio, se il file di configurazione nella directory flexagent è denominato &quot; &quot;WDATP-Connector.jsonparser.properties, è necessario digitare &quot; &quot; &quot; WDATP-Connector &quot; come nome del file delle proprietà client.</td>
     </tr>
     <td>URL eventi</td>
@@ -116,7 +116,7 @@ Ad esempio, se il file di configurazione nella directory flexagent è denominato
     <td>OAuth 2</td>
     </tr>
     <td>File delle proprietà del client OAuth 2</td>
-    <td>Passare al percorso del file <em>wdatp-connector.properties.</em> Il nome deve corrispondere al file fornito nel file ZIP scaricato.</td>
+    <td>Passare al percorso del file <em>wdatp-connector.properties.</em> Il nome deve corrispondere al file fornito nel .zip scaricato.</td>
     <tr>
     <td>Token di aggiornamento</td>
     <td>Puoi ottenere un token di aggiornamento in due modi: generando un token di aggiornamento dalla pagina delle impostazioni <b>SIEM</b> o usando lo strumento restutil. <br><br> Per altre informazioni sulla generazione di un token di aggiornamento dalla configurazione <b>delle</b> preferenze, vedi <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">Abilitare l'integrazione SIEM in Defender for Endpoint.</a> </br> </br><b>Ottieni il token di aggiornamento usando lo strumento restutil:</b> </br> a. Aprire la finestra del prompt dei comandi. Passare a C:\<em>folder_location</em>\current\bin dove <em>folder_location</em> rappresenta il percorso in cui è stato installato lo strumento. </br></br> b. Digitare: <code>arcsight restutil token -config</code> dalla directory bin. Ad esempio: <b>arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> verrà aperta una finestra del Web browser. </br> </br>c. Digita le credenziali e quindi fai clic sul campo della password per consentire il reindirizzamento della pagina. Nel prompt di accesso immetti le credenziali. </br> </br>d. Al prompt dei comandi viene visualizzato un token di aggiornamento. </br></br> e. Copiarlo e incollarlo nel <b>campo Token di</b> aggiornamento.
@@ -177,7 +177,7 @@ Ad esempio, se il file di configurazione nella directory flexagent è denominato
 
 9. Passa a **Set di canali attivi** Nuovo prodotto  >  **dispositivo**  >  **dispositivo**  >  **condizione.**
 
-10. Impostare **Device Product = Microsoft Defender ATP**. Dopo aver verificato che gli eventi fluiranno verso lo strumento, arrestare di nuovo il processo e passare a Servizi di Windows e avviare ArcSight FlexConnector REST.
+10. Impostare **Device Product = Microsoft Defender ATP**. Dopo aver verificato che gli eventi fluiranno verso lo strumento, arrestare di nuovo il processo e passare a Windows Services e avviare ArcSight FlexConnector REST.
 
 È ora possibile eseguire query nella console Di Micro Focus ArcSight.
 

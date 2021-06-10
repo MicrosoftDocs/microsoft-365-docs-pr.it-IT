@@ -1,5 +1,5 @@
 ---
-title: Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Linux
+title: Implementare aggiornamenti per Microsoft Defender per endpoint su Linux
 ms.reviewer: ''
 description: Descrive come distribuire gli aggiornamenti per Microsoft Defender for Endpoint in Linux in ambienti aziendali.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, aggiornamenti, distribuire
@@ -26,7 +26,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274725"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Linux
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Implementare aggiornamenti per Microsoft Defender per endpoint su Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

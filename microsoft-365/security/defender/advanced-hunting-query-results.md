@@ -1,6 +1,6 @@
 ---
 title: Utilizzare i risultati delle query di ricerca avanzata in Microsoft 365 Defender
-description: Ottenere il massimo dai risultati delle query restituiti dalla ricerca avanzata in Microsoft 365 Defender
+description: Utilizzare al meglio i risultati della query restituiti dalla ricerca avanzata in Microsoft 365 Defender
 keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, visualizzazione, grafico, filtri, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -122,7 +122,7 @@ Il grafico a linee seguente evidenzia chiaramente i periodi di tempo con più at
 ## <a name="export-tables-and-charts"></a>Esportare tabelle e grafici
 Dopo aver eseguito una query, selezionare **Esporta** per salvare i risultati nel file locale. La visualizzazione scelta determina la modalità di esportazione dei risultati:
 
-- **Visualizzazione tabella:** i risultati della query vengono esportati in formato tabulare come cartella di lavoro di Microsoft Excel
+- **Visualizzazione tabella:** i risultati della query vengono esportati in formato tabulare come Microsoft Excel cartella di lavoro
 - **Qualsiasi grafico:** i risultati della query vengono esportati come immagine JPEG del grafico sottoposto a rendering
 
 ## <a name="drill-down-from-query-results"></a>Eseguire il drill-down dai risultati della query
@@ -155,7 +155,7 @@ Per affinare la query, selezionare i pulsanti o sui valori che si desidera inclu
 Dopo avere applicato il filtro per modificare la query e aver eseguito la query, i risultati vengono aggiornati di conseguenza.
 
 >[!NOTE]
->Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender](m365d-enable.md) per cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in [Migrate advanced hunting queries from Microsoft Defender for Endpoint.](advanced-hunting-migrate-from-mde.md)
+>Alcune tabelle di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender per](m365d-enable.md) cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in Eseguire la migrazione di query di ricerca avanzate da [Microsoft Defender per Endpoint.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)

@@ -52,9 +52,9 @@ I passaggi descritti in questo articolo configurano un criterio di archiviazione
 
 - Per eseguire i passaggi descritti in questo argomento, è necessario essere un amministratore globale dell'organizzazione. 
 
-- Quando si crea un nuovo account utente e si assegna all'utente una licenza di Exchange Online, viene creata automaticamente una cassetta postale per l'utente. Quando la cassetta postale viene creata, viene automaticamente assegnato un criterio di conservazione predefinito, denominato Criterio di gestione dei messaggistica predefinito. In questo articolo verrà creato un nuovo criterio di conservazione e quindi assegnato alle cassette postali degli utenti, sostituendo il criterio gestione messaggistica predefinito. A una cassetta postale può essere assegnato un solo criterio di conservazione alla volta.
+- Quando si crea un nuovo account utente e si assegna all'utente una Exchange Online, viene creata automaticamente una cassetta postale per l'utente. Quando la cassetta postale viene creata, viene automaticamente assegnato un criterio di conservazione predefinito, denominato Criterio di gestione dei messaggistica predefinito. In questo articolo verrà creato un nuovo criterio di conservazione e quindi assegnato alle cassette postali degli utenti, sostituendo il criterio gestione messaggistica predefinito. A una cassetta postale può essere assegnato un solo criterio di conservazione alla volta.
 
-- Per ulteriori informazioni sui tag di conservazione e sui criteri di conservazione in Exchange Online, vedere [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
+- Per ulteriori informazioni sui tag di conservazione e sui criteri di conservazione in Exchange Online, vedere [Tag di conservazione e criteri di conservazione.](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
 ## <a name="step-1-enable-archive-mailboxes-for-users"></a>Passaggio 1: Abilitare le cassette postali di archiviazione per gli utenti
 
@@ -98,7 +98,7 @@ In questo passaggio verranno creati i tre tag di conservazione personalizzati de
 
 - Alpine House Deleted Items 5 Years Delete and Allow Recovery (tag personalizzato per la cartella Posta eliminata)
 
-Per creare nuovi tag di conservazione, si utilizzerà l'interfaccia di amministrazione di Exchange (EAC) nell'organizzazione di Exchange Online. Assicurarsi di utilizzare la versione classica dell'interfaccia di amministrazione di Exchange.
+Per creare nuovi tag di conservazione, si utilizzerà l'interfaccia di amministrazione di Exchange (EAC) nell'organizzazione Exchange Online locale. Assicurarsi di utilizzare la versione classica dell'interfaccia di amministrazione di Exchange.
   
 1. Accedere a [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) e accedere utilizzando le credenziali.
   
@@ -114,7 +114,7 @@ Innanzitutto, si creerà un tag dei criteri predefiniti di archiviazione persona
 
 2. Nella pagina **Nuovo tag applicato automaticamente all'intera cassetta postale (impostazione predefinita),** completare i seguenti campi: 
 
-    ![Impostazioni per creare un nuovo tag dei criteri predefiniti di archiviazione](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![Impostazioni creare un nuovo tag dei criteri predefiniti di archiviazione](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
    1. **Nome** Digitare un nome per il nuovo tag di conservazione. 
 
@@ -136,7 +136,7 @@ Successivamente, creerai un altro DPT personalizzato, ma questo sarà un criteri
 
 2. Nella pagina **Nuovo tag applicato automaticamente all'intera cassetta postale (impostazione predefinita),** completare i seguenti campi: 
 
-    ![Impostazioni per creare un nuovo tag dei criteri predefiniti di eliminazione](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![Impostazioni creare un nuovo tag dei criteri predefiniti di eliminazione](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
    1. **Nome** Digitare un nome per il nuovo tag di conservazione. 
 
@@ -158,7 +158,7 @@ L'ultimo tag di conservazione che verrà creato è un tag dei criteri di conserv
 
 2. Nella pagina **Nuovo tag applicato automaticamente a una cartella predefinita,** completare i campi seguenti:
 
-    ![Impostazioni per creare un nuovo tag dei criteri di conservazione per la cartella Posta eliminata](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Impostazioni creare un nuovo tag dei criteri di conservazione per la cartella Posta eliminata](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
    1. **Nome** Digitare un nome per il nuovo tag di conservazione. 
 
@@ -231,11 +231,11 @@ Quando viene creata una nuova cassetta postale, per impostazione predefinita vie
 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Facoltativo) Passaggio 5: Eseguire l'Assistente cartelle gestite per applicare le nuove impostazioni
 
-Dopo aver applicato il nuovo criterio di conservazione alle cassette postali nel passaggio 4, possono essere necessario fino a 7 giorni in Exchange Online per applicare le nuove impostazioni di conservazione alle cassette postali. Questo perché un processo denominato *Assistente cartelle gestite* elabora le cassette postali almeno una volta ogni 7 giorni. Anziché attendere l'esecuzione dell'Assistente cartelle gestite, è possibile forzare l'esecuzione eseguendo il cmdlet **Start-ManagedFolderAssistant** in PowerShell di Exchange Online.
+Dopo aver applicato il nuovo criterio di conservazione alle cassette postali nel passaggio 4, possono essere necessario fino a 7 giorni in Exchange Online per applicare le nuove impostazioni di conservazione alle cassette postali. Questo perché un processo denominato *Assistente cartelle gestite* elabora le cassette postali almeno una volta ogni 7 giorni. Anziché attendere l'esecuzione dell'Assistente cartelle gestite, è possibile forzare l'esecuzione eseguendo il cmdlet **Start-ManagedFolderAssistant** in Exchange Online PowerShell.
 
  **Cosa succede quando si esegue l'Assistente cartelle gestite?** Applica le impostazioni nel criterio di conservazione esaminando gli elementi nella cassetta postale e determinando se sono soggetti alla conservazione. Vengono quindi contrassegnati gli elementi soggetti alla conservazione con il tag di conservazione appropriato e quindi viene eseguita l'azione di conservazione specificata sugli elementi che hanno passato il periodo di conservazione.
   
-Ecco i passaggi per connettersi a PowerShell di Exchange Online e quindi eseguire l'Assistente cartelle gestite in ogni cassetta postale dell'organizzazione.
+Ecco i passaggi per connettersi Exchange Online PowerShell e quindi eseguire l'Assistente cartelle gestite in ogni cassetta postale dell'organizzazione.
 
 1. [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
   
@@ -256,7 +256,7 @@ Ecco i passaggi per connettersi a PowerShell di Exchange Online e quindi eseguir
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>(Facoltativo) Passaggio 6: Impostare il nuovo criterio di conservazione come predefinito per l'organizzazione
 
-Nel passaggio 4 è necessario assegnare il nuovo criterio di conservazione alle cassette postali esistenti. È tuttavia possibile configurare Exchange Online in modo che il nuovo criterio di conservazione sia assegnato alle nuove cassette postali create in futuro. A tale scopo, utilizzare PowerShell di Exchange Online per aggiornare il piano delle cassette postali predefinito dell'organizzazione. Un *piano delle cassette* postali è un modello che configura automaticamente le proprietà sulle nuove cassette postali.  In questo passaggio facoltativo, è possibile sostituire il criterio di conservazione corrente assegnato al piano delle cassette postali (per impostazione predefinita, il criterio di gestione record di messaggistica predefinito) con il criterio di conservazione creato nel passaggio 3. Dopo aver aggiornato il piano delle cassette postali, il nuovo criterio di conservazione verrà assegnato alle nuove cassette postali.
+Nel passaggio 4 è necessario assegnare il nuovo criterio di conservazione alle cassette postali esistenti. È tuttavia possibile configurare Exchange Online in modo che il nuovo criterio di conservazione sia assegnato alle nuove cassette postali create in futuro. A tale scopo, utilizzare Exchange Online PowerShell per aggiornare il piano delle cassette postali predefinito dell'organizzazione. Un *piano delle cassette* postali è un modello che configura automaticamente le proprietà sulle nuove cassette postali.  In questo passaggio facoltativo, è possibile sostituire il criterio di conservazione corrente assegnato al piano delle cassette postali (per impostazione predefinita, il criterio di gestione record di messaggistica predefinito) con il criterio di conservazione creato nel passaggio 3. Dopo aver aggiornato il piano delle cassette postali, il nuovo criterio di conservazione verrà assegnato alle nuove cassette postali.
 
 1. [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -294,6 +294,6 @@ Nel passaggio 4 è necessario assegnare il nuovo criterio di conservazione alle 
     |Non eliminare mai  <br/> |Questo tag impedisce l'eliminazione degli elementi da un criterio di conservazione.  <br/> |Built-in  <br/> |Personale; questo tag può essere applicato dagli utenti.  <br/> |
     |Sposta elementi personali in archivio dopo 1 anni  <br/> |Sposta gli elementi nella cassetta postale di archiviazione dopo 1 anno.  <br/> |Built-in  <br/> |Personale; questo tag può essere applicato dagli utenti.  <br/> |
 
-    > <sup>\*</sup> Gli utenti possono utilizzare lo strumento Recupera posta eliminata in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) per recuperare un elemento eliminato entro il periodo di conservazione degli elementi eliminati, che per impostazione predefinita è di 14 giorni in Exchange Online. Un amministratore può utilizzare Windows PowerShell per aumentare il periodo di conservazione degli elementi eliminati a un massimo di 30 giorni. Per ulteriori informazioni, vedere: Recuperare gli [elementi eliminati in Outlook per Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) e Modificare il periodo di conservazione degli elementi eliminati per una cassetta postale in Exchange [Online](https://www.microsoft.com/?ref=go)
+    > <sup>\*</sup>Gli utenti possono utilizzare lo strumento Recupera posta eliminata in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) per ripristinare un elemento eliminato entro il periodo di conservazione degli elementi eliminati, che per impostazione predefinita è di 14 giorni in Exchange Online. Un amministratore può utilizzare Windows PowerShell per aumentare il periodo di conservazione degli elementi eliminati a un massimo di 30 giorni. Per ulteriori informazioni, vedere: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) e Change the deleted item retention period for a mailbox in [Exchange Online](https://www.microsoft.com/?ref=go)
   
 - L'utilizzo del tag di conservazione Sposta in archivio per **14** giorni degli elementi ripristinabili consente di liberare spazio di archiviazione nella cartella Elementi ripristinabili nella cassetta postale principale dell'utente. Ciò è utile quando la cassetta postale di un utente viene messa in attesa, il che significa che non viene mai eliminata definitivamente la cassetta postale dell'utente. Senza spostare gli elementi nella cassetta postale di archiviazione, è possibile che la quota di archiviazione per la cartella Elementi ripristinabili nella cassetta postale principale sia raggiunta. Per ulteriori informazioni su questo e su come evitarlo, vedere [Increase the Recoverable Items quota for mailboxes on hold](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).

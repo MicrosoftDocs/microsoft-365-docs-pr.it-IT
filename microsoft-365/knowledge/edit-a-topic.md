@@ -37,15 +37,15 @@ In Viva Topics è possibile modificare un argomento esistente. Potrebbe essere n
 ## <a name="requirements"></a>Requisiti
 
 Per modificare un argomento esistente, è necessario:
-- Avere una licenza Viva Topics.
-- Disporre delle autorizzazioni [**per gli utenti che possono creare o modificare argomenti.**](./topic-experiences-user-permissions.md) Gli amministratori della knowledge base possono concedere agli utenti questa autorizzazione nelle impostazioni delle autorizzazioni dell'argomento Viva Topics. 
+- Avere una licenza di Viva Topics.
+- Disporre delle autorizzazioni per [**Who creare o modificare argomenti.**](./topic-experiences-user-permissions.md) Gli amministratori delle informazioni possono assegnare questa autorizzazione nelle impostazioni delle autorizzazioni per gli argomenti di Viva Topics. 
 
 > [!Note] 
 > Gli utenti che dispongono dell'autorizzazione per gestire gli argomenti nel Centro argomenti (responsabili della conoscenza) dispongono già delle autorizzazioni per creare e modificare gli argomenti.
 
 ## <a name="how-to-edit-a-topic-page"></a>Come modificare una pagina di argomento
 
-Gli utenti  che dispongono dell'autorizzazione Chi può creare o modificare argomenti possono modificare un <b></b> argomento aprendo la pagina dell'argomento da un'evidenziazione dell'argomento e quindi selezionando il pulsante Modifica in alto a destra nella pagina dell'argomento. La pagina dell'argomento può essere aperta anche dalla home page del Centro argomenti in cui è possibile trovare tutti gli argomenti a cui si dispone di una connessione.
+Gli utenti che dispongono dell'autorizzazione **Who** creare o modificare argomenti possono modificare un argomento aprendo <b></b> la pagina dell'argomento da un'evidenziazione dell'argomento e quindi selezionando il pulsante Modifica in alto a destra nella pagina dell'argomento. La pagina dell'argomento può essere aperta anche dalla home page del Centro argomenti in cui è possibile trovare tutti gli argomenti a cui si dispone di una connessione.
 
    ![Pulsante Modifica](../media/knowledge-management/edit-button.png) </br> 
 
@@ -60,39 +60,39 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
    ![Controllo di modifica](../media/knowledge-management/topic-page-edit.png) </br>  
 
 
-2. Nella sezione <b>Nomi alternativi</b> digitare eventuali altri nomi a cui potrebbe fare riferimento l'argomento. 
+2. Nella sezione <b>Nomi alternativi</b> digitare altri nomi a cui l'argomento potrebbe fare riferimento. 
 
     ![Nomi alternativi](../media/knowledge-management/alt-names.png) </br> 
-3. Nella sezione <b>Descrizione</b> digitare un paio di frasi che descrivono l'argomento. Oppure, se esiste già una descrizione, aggiornarla, se necessario.
+3. Nella sezione <b>Descrizione</b> digitare qualche frase per descrivere l'argomento. Se esiste già una descrizione, aggiornarla se necessario.
 
     ![Sezione Descrizione](../media/knowledge-management/description.png)</br>
 
-4. Nella sezione <b>Persone</b> aggiunte puoi "aggiungere" una persona per mostrargli di avere una connessione all'argomento (ad esempio, un proprietario di una risorsa connessa). Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella <b>Aggiungi</b> un nuovo utente e quindi selezionando l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "sbloccarli" selezionando l'icona Rimuovi <b>dall'elenco</b> nella scheda utente.
+4. Nella sezione <b>Persone aggiunte</b> è possibile "aggiungere" una persona per mostrarle che ha una connessione con l'argomento (ad esempio, un proprietario di una risorsa connessa). Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella <b>Aggiungi</b> un nuovo utente e quindi selezionando l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "sbloccarli" selezionando l'icona Rimuovi <b>dall'elenco</b> nella scheda utente.
  
     ![Aggiungere persone aggiunte](../media/knowledge-management/pinned-people.png)</br>
 
-    La <b>sezione Persone suggerite</b> mostra agli utenti che l'intelligenza artificiale potrebbe essere connessa all'argomento dalla connessione alle risorse sull'argomento. Puoi modificarne lo stato da Suggerito a Aggiunto selezionando l'icona del pin nella scheda utente.
+    La sezione <b>Persone suggerite</b> mostra gli utenti che secondo l'intelligenza artificiale potrebbero essere collegati all'argomento dalla loro connessione alle risorse sull'argomento. È possibile modificare il loro stato da Suggeriti a Aggiunti selezionando l'icona aggiungi sulla scheda utente.
 
    ![Aggiungere un utente consigliato](../media/knowledge-management/suggested-people.png)</br>
 
-5. Nella sezione <b>File e</b> pagine aggiunti è possibile aggiungere o aggiungere un file o una pagina del sito di SharePoint associata all'argomento.
+5. Nella sezione <b>File e pagine aggiunti</b> è possibile aggiungere un file o una pagina del sito di SharePoint associata all'argomento.
 
    ![Sezione File e pagine aggiunti](../media/knowledge-management/pinned-files-and-pages.png)</br>
  
-    Per aggiungere un nuovo file, <b>selezionare</b>Aggiungi , selezionare il sito di SharePoint dai siti frequenti o seguiti e quindi selezionare il file dalla raccolta documenti del sito.
+    Per aggiungere un nuovo file, selezionare <b>Aggiungi,</b>selezionare il sito SharePoint dai siti frequenti o seguiti e quindi selezionare il file dalla raccolta documenti del sito.
 
-    Puoi anche usare <b>l'opzione Da un collegamento</b> per aggiungere un file o una pagina specificando l'URL. 
+    È anche possibile usare l'opzione <b>Da un collegamento</b> per aggiungere un file o una pagina fornendo l'URL. 
 
    > [!Note] 
-   > I file e le pagine aggiunti devono trovarsi nello stesso tenant di Microsoft 365. Se vuoi aggiungere un collegamento a una risorsa esterna nell'argomento, puoi aggiungerlo tramite l'icona canvas nel passaggio 9.
+   > I file e le pagine aggiunti devono trovarsi nello stesso tenant Microsoft 365 tenant. Se vuoi aggiungere un collegamento a una risorsa esterna nell'argomento, puoi aggiungerlo tramite l'icona canvas nel passaggio 9.
 
 6. La <b>sezione File e pagine suggeriti</b> mostra i file e le pagine che l'intelligenza artificiale suggerisce di associare all'argomento.
 
    ![Sezione File e pagine suggeriti](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    Puoi modificare un file o una pagina suggerita in un file o una pagina aggiunti selezionando l'icona aggiunta.
+    È possibile sostituire una pagina o un file suggerito con un file o una pagina bloccata selezionando l'icona aggiungi.
 
-7.  La <b>sezione Siti correlati</b> mostra i siti che dispongono di informazioni sull'argomento. 
+7.  La sezione <b>Siti correlati</b> mostra i siti con informazioni sull'argomento. 
 
     ![Sezione Siti correlati](../media/knowledge-management/related-sites.png)</br>
 
@@ -100,7 +100,7 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
     
     ![Selezionare un sito](../media/knowledge-management/sites.png)</br>
 
-8. La <b>sezione Argomenti correlati</b> mostra le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il pulsante Connetti <b>a</b> un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
+8. La <b>sezione Argomenti correlati</b> mostra le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il <b>pulsante Connessione a</b> un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
 
    ![Sezione Argomenti correlati](../media/knowledge-management/related-topic.png)</br>  
 
@@ -121,7 +121,7 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
    ![Conferma rimozione](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
-9. Puoi anche aggiungere elementi statici alla pagina, ad esempio testo, immagini o collegamenti, selezionando l'icona dell'area di disegno, che puoi trovare sotto la breve descrizione. Selezionandolo verrà aperta la casella degli strumenti di SharePoint da cui è possibile scegliere l'elemento che si desidera aggiungere alla pagina.
+9. È anche possibile aggiungere elementi statici alla pagina, ad esempio testo, immagini o collegamenti, selezionando l'icona dell'area di disegno, disponibile sotto la breve descrizione. Selezionandolo si aprirà SharePoint casella degli strumenti da cui è possibile scegliere l'elemento che si desidera aggiungere alla pagina.
 
    ![Icona Canvas](../media/knowledge-management/webpart-library.png)</br> 
 

@@ -37,7 +37,7 @@ ms.locfileid: "51935870"
 
 
 
-La tabella nello schema di ricerca avanzata contiene informazioni sulle attività in varie app e servizi `CloudAppEvents` cloud trattati da Microsoft Cloud App Security. [](advanced-hunting-overview.md) Per un elenco completo, passare ad [App e servizi trattati](#apps-and-services-covered). Usare questo riferimento per creare query che restituiscono informazioni dalla tabella. 
+La tabella nello schema di ricerca avanzata contiene informazioni sulle attività in varie app e servizi `CloudAppEvents` cloud coperti da Microsoft Cloud App Security. [](advanced-hunting-overview.md) Per un elenco completo, passare ad [App e servizi trattati](#apps-and-services-covered). Usare questo riferimento per creare query che restituiscono informazioni dalla tabella. 
 
 >[!IMPORTANT]
 >In questa tabella sono incluse le informazioni disponibili nella `AppFileEvents` tabella. A partire dal 7 marzo 2021, gli utenti che ricercano le attività correlate ai file nei servizi cloud entro e oltre questa data devono utilizzare la `CloudAppEvents` tabella. <br><br>Assicurarsi di cercare query e regole di rilevamento personalizzate che ancora usano la tabella e `AppFileEvents` modificarle per utilizzare la `CloudAppEvents` tabella. Altre indicazioni sulla conversione delle query interessate sono disponibili in [Hunt across cloud app activities with Microsoft 365 Defender advanced hunting.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
@@ -55,7 +55,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere una combinazione di un nome o di un dato nome, un'iniziazione intermedia e un cognome o un cognome. |
 | `IsAdminOperation` | stringa | Indica se l'attività è stata eseguita da un amministratore |
 | `DeviceType` | stringa | Tipo di dispositivo basato su scopo e funzionalità, ad esempio "Dispositivo di rete", "Workstation", "Server", "Mobile", "Console di gioco" o "Stampante" | 
-| `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione nel dispositivo. Questa colonna indica sistemi operativi specifici, incluse le varianti della stessa famiglia, ad esempio Windows 10 e Windows 7. |
+| `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione nel dispositivo. Questa colonna indica sistemi operativi specifici, incluse le varianti all'interno della stessa famiglia, ad esempio Windows 10 e Windows 7. |
 | `IPAddress` | stringa | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate |
 | `IsAnonymousProxy` | stringa | Indica se l'indirizzo IP appartiene a un proxy anonimo noto |
 | `CountryCode` | stringa | Codice di due lettere che indica il paese in cui l'indirizzo IP del client è geolocale |

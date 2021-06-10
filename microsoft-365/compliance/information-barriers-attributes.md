@@ -1,6 +1,6 @@
 ---
 title: Attributi per i criteri delle barriere informative
-description: Questo articolo è un riferimento per gli attributi dell'account utente di Azure Active Directory che è possibile usare per definire i segmenti di barriera delle informazioni.
+description: Questo articolo è un riferimento per gli attributi Azure Active Directory account utente che è possibile utilizzare per definire i segmenti di barriera delle informazioni.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -27,8 +27,8 @@ Alcuni attributi in Azure Active Directory possono essere usati per segmentare g
 In questo articolo viene descritto come utilizzare gli attributi con le barriere di informazioni e viene fornito un elenco di attributi che è possibile utilizzare. Per ulteriori informazioni sugli ostacoli alle informazioni, vedere le risorse seguenti:
 
 - [Barriere informative](information-barriers.md)
-- [Definire i criteri per le barriere alle informazioni in Microsoft Teams](information-barriers-policies.md)
-- [Modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md)
+- [Definire i criteri per le barriere in Microsoft Teams](information-barriers-policies.md)
+- [Modificare (o rimuovere) i criteri delle barriere informative](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Come usare gli attributi nei criteri di barriera delle informazioni
 
@@ -40,7 +40,7 @@ Gli attributi elencati in questo articolo possono essere utilizzati per definire
 
     - Per modificare più account (o usare PowerShell per modificare un singolo account), vedere [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
-    - Per modificare un singolo account, vedere Aggiungere o aggiornare le informazioni del profilo di un [utente con Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Per modificare un singolo account, vedere [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 3. [Definire i segmenti utilizzando PowerShell](information-barriers-policies.md#define-segments-using-powershell), in modo analogo agli esempi seguenti:
 
@@ -57,7 +57,7 @@ Gli attributi elencati in questo articolo possono essere utilizzati per definire
 
 Nella tabella seguente sono elencati gli attributi che è possibile utilizzare con le barriere di informazioni.
 
-|**Nome proprietà di Azure Active Directory <br/> (nome visualizzato LDAP)**|**Nome proprietà di Exchange**|
+|**Azure Active Directory proprietà <br/> (nome visualizzato LDAP)**|**Exchange proprietà**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
 | Company | Company |
@@ -83,7 +83,7 @@ Nella tabella seguente sono elencati gli attributi che è possibile utilizzare c
 | MSExchExtensionCustomAttribute4 | ExtensionCustomAttribute4 |
 | MSExchExtensionCustomAttribute5 | ExtensionCustomAttribute5 |
 | MailNickname | Alias |
-| PhysicalDeliveryOfficeName | Ufficio |
+| PhysicalDeliveryOfficeName | Office |
 | PostalCode | PostalCode |
 | ProxyAddresses | EmailAddresses |
 | StreetAddress | StreetAddress |
@@ -96,6 +96,6 @@ Nella tabella seguente sono elencati gli attributi che è possibile utilizzare c
 
 ## <a name="resources"></a>Risorse
 
-- [Definire i criteri per le barriere alle informazioni in Microsoft Teams](information-barriers-policies.md)
+- [Definire i criteri per le barriere in Microsoft Teams](information-barriers-policies.md)
 - [Risoluzione dei problemi relativi alle barriere informative](information-barriers-troubleshooting.md)
 - [Barriere informative](information-barriers.md)

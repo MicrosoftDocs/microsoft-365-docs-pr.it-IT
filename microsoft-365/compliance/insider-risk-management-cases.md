@@ -1,7 +1,7 @@
 ---
 title: Casi di gestione dei rischi insider
 description: Informazioni sui casi di gestione dei rischi insider in Microsoft 365
-keywords: Microsoft 365, gestione dei rischi insider, gestione dei rischi, conformità
+keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article

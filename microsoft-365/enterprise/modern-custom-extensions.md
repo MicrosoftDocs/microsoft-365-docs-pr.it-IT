@@ -37,7 +37,7 @@ Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per 
 >[!NOTE]
 >Lo strumento Diagnostica pagine funziona solo per SharePoint Online e non può essere usato in una pagina di sistema di SharePoint.
 
-Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare informazioni  sulle estensioni personalizzate che superano la metrica di base nelle estensioni che influiscono sui tempi di caricamento e/o sul numero di estensioni utilizzate nel riquadro Test di _diagnostica_  
+Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è  possibile visualizzare le informazioni sulle  estensioni personalizzate che superano la metrica di base nelle estensioni che influiscono sui tempi di caricamento e/o sul numero di estensioni utilizzate nel riquadro _Test_ di diagnostica 
 
 I risultati possibili includono:
 

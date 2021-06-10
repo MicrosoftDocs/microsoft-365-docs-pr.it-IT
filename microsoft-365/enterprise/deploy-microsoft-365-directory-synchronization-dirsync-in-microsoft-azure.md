@@ -1,5 +1,5 @@
 ---
-title: Distribuire la sincronizzazione della directory di Microsoft 365 in Microsoft Azure
+title: Distribuire Microsoft 365 sincronizzazione della directory in Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: Informazioni su come distribuire Azure AD Connect in una macchina virtuale in Azure per sincronizzare gli account tra la directory locale e il tenant di Azure AD.
+description: Informazioni su come distribuire azure AD Connessione in una macchina virtuale in Azure per sincronizzare gli account tra la directory locale e il tenant di Azure AD.
 ms.openlocfilehash: 52c1bb2eb53cc4e6753d528e0d82822b2a0eebc5
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919087"
 ---
-# <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Distribuire la sincronizzazione della directory di Microsoft 365 in Microsoft Azure
+# <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Distribuire Microsoft 365 sincronizzazione della directory in Microsoft Azure
 
-Azure Active Directory (Azure AD) Connect (in precedenza noto come strumento di sincronizzazione della directory, strumento di sincronizzazione della directory o strumento DirSync.exe) è un'applicazione che viene installata in un server aggiunto al dominio per sincronizzare gli utenti di Servizi di dominio Active Directory locali con il tenant di Azure AD dell'abbonamento a Microsoft 365. Microsoft 365 usa Azure AD per il servizio directory. L'abbonamento a Microsoft 365 include un tenant di Azure AD. Questo tenant può essere usato anche per la gestione delle identità dell'organizzazione con altri carichi di lavoro cloud, tra cui altre applicazioni SaaS e app in Azure.
+Azure Active Directory (Azure AD) Connessione (in precedenza noto come strumento di sincronizzazione della directory, strumento di sincronizzazione della directory o strumento DirSync.exe) è un'applicazione che viene installata in un server aggiunto al dominio per sincronizzare gli utenti di Servizi di dominio Active Directory locali con il tenant di Azure AD della sottoscrizione di Microsoft 365. Microsoft 365 usa Azure AD per il servizio directory. La sottoscrizione Microsoft 365 include un tenant di Azure AD. Questo tenant può essere usato anche per la gestione delle identità dell'organizzazione con altri carichi di lavoro cloud, tra cui altre applicazioni SaaS e app in Azure.
 
 È possibile installare Azure AD Connect in un server locale, ma è anche possibile installarlo in una macchina virtuale di Azure per questi motivi:
   
@@ -40,33 +40,33 @@ Azure Active Directory (Azure AD) Connect (in precedenza noto come strumento di 
 Questa soluzione richiede che venga stabilita una connessione tra la rete locale e la rete virtuale di Azure. Per altre informazioni, vedere [Connettere una rete locale a una rete virtuale di Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
   
 > [!NOTE]
-> In questo articolo viene descritta la sincronizzazione di un singolo dominio in una foresta singola. Azure AD Connect sincronizza tutti i domini di Servizi di dominio Active Directory nella foresta di Active Directory con Microsoft 365. Se si dispone di più foreste di Active Directory da sincronizzare con Microsoft 365, vedere [Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity). 
+> In questo articolo viene descritta la sincronizzazione di un singolo dominio in una foresta singola. Azure AD Connessione sincronizza tutti i domini di Servizi di dominio Active Directory nella foresta di Active Directory con Microsoft 365. Se si dispone di più foreste di Active Directory da sincronizzare con Microsoft 365, vedere [Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity). 
   
-## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Panoramica della distribuzione della sincronizzazione della directory di Microsoft 365 in Azure
+## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Panoramica della distribuzione della sincronizzazione Microsoft 365 directory in Azure
 
-Il diagramma seguente mostra Azure AD Connect in esecuzione in una macchina virtuale in Azure (il server di sincronizzazione della directory) che sincronizza una foresta di Servizi di dominio Active Directory locale con una sottoscrizione di Microsoft 365.
+Il diagramma seguente mostra azure AD Connessione in esecuzione in una macchina virtuale in Azure (il server di sincronizzazione della directory) che sincronizza una foresta di Servizi di dominio Active Directory locale con una sottoscrizione Microsoft 365 locale.
   
-![Strumento Azure AD Connect in una macchina virtuale in Azure che sincronizza gli account locali con il tenant di Azure AD di una sottoscrizione di Microsoft 365 con flusso di traffico](../media/CP-DirSyncOverview.png)
+![Strumento di Connessione Azure AD in una macchina virtuale in Azure che sincronizza gli account locali con il tenant di Azure AD di una sottoscrizione Microsoft 365 con flusso di traffico](../media/CP-DirSyncOverview.png)
   
 Nel diagramma, sono riportate due reti connesse tramite una VPN da sito a sito o una connessione ExpressRoute. Una è la rete locale in cui si trovano i controller di dominio di AD DS, mentre l'altra è una rete virtuale di Azure con un server di sincronizzazione della directory, una macchina virtuale che esegue [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). I flussi di traffico principali provenienti dal server di sincronizzazione della directory sono due:
   
 -  Azure AD Connect esegue la query a un controller di dominio nella rete locale per apportare modifiche ad account e password.
--  Azure AD Connect invia le modifiche agli account e alle password all'istanza di Azure AD dell'abbonamento a Microsoft 365. Poiché il server di sincronizzazione della directory si trova in una parte estesa della rete locale, queste modifiche vengono inviate tramite il server proxy della rete locale.
+-  Azure AD Connessione invia le modifiche ad account e password all'istanza di Azure AD della sottoscrizione Microsoft 365 sottoscrizione. Poiché il server di sincronizzazione della directory si trova in una parte estesa della rete locale, queste modifiche vengono inviate tramite il server proxy della rete locale.
     
 > [!NOTE]
-> Questa soluzione descrive la sincronizzazione di un singolo dominio di Active Directory, in una foresta Active Directory singola. Azure AD Connect sincronizza tutti i domini di Active Directory nella foresta di Active Directory con Microsoft 365. Se si dispone di più foreste di Active Directory da sincronizzare con Microsoft 365, vedere [Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity). 
+> Questa soluzione descrive la sincronizzazione di un singolo dominio di Active Directory, in una foresta Active Directory singola. Azure AD Connessione sincronizza tutti i domini di Active Directory nella foresta di Active Directory con Microsoft 365. Se si dispone di più foreste di Active Directory da sincronizzare con Microsoft 365, vedere [Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity). 
   
 La distribuzione di questa soluzione comprende due passaggi principali:
   
 1. Creare una rete virtuale Azure e stabilire una connessione VPN da sito a sito verso la rete locale. Per ulteriori informazioni, vedere [Connettere una rete locale a una rete virtuale di Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
     
-2. Installare [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) in una macchina virtuale appartenente a un dominio in Azure e quindi sincronizzare Servizi di dominio Active Directory locale con Microsoft 365. Questa operazione implica:
+2. Installare [Azure AD Connessione](https://www.microsoft.com/download/details.aspx?id=47594) in una macchina virtuale appartenente a un dominio in Azure e quindi sincronizzare Servizi di dominio Active Directory locale con Microsoft 365. Questa operazione implica:
     
     La creazione di una macchina virtuale di Azure per l'esecuzione di Azure AD Connect.
     
     L'installazione e la configurazione di [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594).
     
-    La configurazione di Azure AD Connect richiede le credenziali (nome utente e password) di un account amministratore di Azure AD e di un account amministratore aziendale di Servizi di dominio Active Directory. Azure AD Connect viene eseguito immediatamente e continuamente per sincronizzare la foresta di Servizi di dominio Active Directory locale con Microsoft 365.
+    La configurazione di Azure AD Connessione richiede le credenziali (nome utente e password) di un account amministratore di Azure AD e di un account amministratore aziendale di Servizi di dominio Active Directory. Azure AD Connessione viene eseguito immediatamente e continuamente per sincronizzare la foresta di Servizi di dominio Active Directory locale con Microsoft 365.
     
 Prima di distribuire questa soluzione nell'ambiente di produzione, è possibile seguire le istruzioni contenute in Configurazione di [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) aziendale simulata per configurare questa configurazione come prova di concetto, per dimostrazioni o per sperimentazioni.
   
@@ -87,9 +87,9 @@ Prima di iniziare, rivedere i prerequisiti relativi alla soluzione:
     
 - Assicurarsi che siano soddisfatti tutti i [Prerequisiti](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites) relativi alla configurazione della rete virtuale di Azure.
     
-- Avere un abbonamento a Microsoft 365 che include la funzionalità di integrazione di Active Directory. Per informazioni sugli abbonamenti a Microsoft 365, passare alla pagina [dell'abbonamento a Microsoft 365.](https://products.office.com/compare-all-microsoft-office-products?tab=2)
+- Avere una sottoscrizione Microsoft 365 che include la funzionalità di integrazione di Active Directory. Per informazioni sulle Microsoft 365, passare alla pagina Microsoft 365 [sottoscrizione.](https://products.office.com/compare-all-microsoft-office-products?tab=2)
     
-- Effettuare il provisioning di una macchina virtuale di Azure che esegue Azure AD Connect per sincronizzare la foresta di Servizi di dominio Active Directory locale con Microsoft 365.
+- Effettuare il provisioning di una macchina virtuale di Azure che esegue Azure AD Connessione sincronizzare la foresta di Servizi di dominio Active Directory locale con Microsoft 365.
     
     È necessario disporre delle credenziali (nomi e password) dell'account amministratore dell'organizzazione AD DS e dell'account amministratore di Azure AD.
     
@@ -128,7 +128,7 @@ Per creare e configurare la rete virtuale di Azure, completare la [Fase 1: Prepa
   
 Questa è la configurazione risultante.
   
-![Fase 1 del server di sincronizzazione della directory per Microsoft 365 ospitato in Azure](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Fase 1 del server di sincronizzazione della directory Microsoft 365 ospitata in Azure](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 Nella figura viene illustrata una rete locale connessa a una rete virtuale di Azure tramite una connessione VPN da sito a sito o ExpressRoute.
   
@@ -150,7 +150,7 @@ Affinché Azure AD Connect riesca ad accedere alle risorse di Internet, è neces
   
 Questa è la configurazione risultante.
   
-![Fase 2 del server di sincronizzazione della directory per Microsoft 365 ospitato in Azure](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Fase 2 del server di sincronizzazione della directory Microsoft 365 ospitata in Azure](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 Nella figura viene illustrata la macchina virtuale del server di sincronizzazione della directory nella rete virtuale Azure cross-premise.
   
@@ -160,22 +160,22 @@ Completare la procedura seguente:
   
 1. Eseguire la connessione al server di sincronizzazione della directory utilizzando Connessione Desktop remoto con un account di dominio AD DS dotato dei privilegi di amministratore locale. Vedere [Connettersi e accedere alla macchina virtuale](/azure/virtual-machines/windows/connect-logon).
     
-2. Dal server di sincronizzazione della directory, aprire l'articolo Configurare la sincronizzazione della directory per [Microsoft 365](set-up-directory-synchronization.md) e seguire le istruzioni per la sincronizzazione della directory con la sincronizzazione dell'hash delle password.
+2. Dal server di sincronizzazione della directory, aprire l'articolo Configurare la sincronizzazione della [directory](set-up-directory-synchronization.md) per Microsoft 365 e seguire le istruzioni per la sincronizzazione della directory con la sincronizzazione dell'hash delle password.
     
 > [!CAUTION]
 > Il programma di installazione crea l'account **AAD_xxxxxxxxxxxx** nell'unità organizzativa Utenti locali. Non spostare o eliminare l'account, altrimenti la sincronizzazione avrà esito negativo.
   
 Questa è la configurazione risultante.
   
-![Fase 3 del server di sincronizzazione della directory per Microsoft 365 ospitato in Azure](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Fase 3 del server di sincronizzazione della directory Microsoft 365 ospitata in Azure](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 Nella figura viene illustrato il server di sincronizzazione della directory con Azure AD Connect nella rete virtuale Azure cross-premise.
   
 ### <a name="assign-locations-and-licenses-to-users-in-microsoft-365"></a>Assegnare posizioni e licenze agli utenti in Microsoft 365
 
-Azure AD Connect aggiunge account all'abbonamento a Microsoft 365 da Servizi di dominio Active Directory locale, ma per consentire agli utenti di accedere a Microsoft 365 e usare i relativi servizi, gli account devono essere configurati con una posizione e licenze. Seguire questi passaggi per aggiungere il percorso e attivare le licenze per gli account utente appropriati:
+Azure AD Connessione aggiunge account alla sottoscrizione di Microsoft 365 da Servizi di dominio Active Directory locale, ma per consentire agli utenti di accedere a Microsoft 365 e usare i relativi servizi, gli account devono essere configurati con una posizione e licenze. Seguire questi passaggi per aggiungere il percorso e attivare le licenze per gli account utente appropriati:
   
-1. Accedere all'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com)e quindi fare clic su **Amministratore.**
+1. Accedere all'interfaccia [Microsoft 365 e](https://admin.microsoft.com)quindi fare clic su **Amministratore.**
     
 2. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     

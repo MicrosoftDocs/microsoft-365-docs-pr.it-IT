@@ -27,11 +27,11 @@ ms.locfileid: "50921493"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Reimpostazione della password per l'ambiente di testing di Microsoft 365
 
-*Questa guida al laboratorio di testing può essere utilizzata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
+*Questa guida al laboratorio di testing può essere utilizzata solo per Microsoft 365 per ambienti di test aziendali.*
 
 La reimpostazione self-service (SSPR) di Azure Active Directory (AD Azure) consente agli utenti di reimpostare o sbloccare le proprie password o account.
 
-In questo articolo viene descritto come configurare e testare le reimpostazioni della password nell'ambiente di testing di Microsoft 365.
+In questo articolo viene descritto come configurare e testare le reimpostazioni della password nell'Microsoft 365 di test.
 
 La configurazione di SSPR prevede tre fasi:
 - [Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -41,7 +41,7 @@ La configurazione di SSPR prevede tre fasi:
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Per una mappa visiva a tutti gli articoli nello stack guida del laboratorio di testing di Microsoft 365 per le aziende, passare a [Microsoft 365 per enterprise Test Lab Guide Stack.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+> Per una mappa visiva a tutti gli articoli dello stack Microsoft 365 per enterprise Test Lab Guide, passare a [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
@@ -70,7 +70,7 @@ In questa fase, configurare la reimpostazione della password nel tenant di Azure
 Innanzitutto, abilitare la reimpostazione della password per gli account in un gruppo specifico di Azure AD.
 
 1. Aprire [https://portal.azure.com](https://portal.azure.com) da un'istanza privata del browser, quindi accedere usando le credenziali dell'account di amministratore globale.
-2. Nel portale di Azure, selezionare **Gruppi di Azure Active Directory** Nuovo  >    >  **gruppo**.
+2. Nel portale di Azure, **selezionare** Azure Active Directory  >    >  **Nuovo gruppo**.
 3. Impostare **Tipo di gruppo** su **Sicurezza**, **Nome del gruppo** su **Reimpostazione della password** e **Tipo di appartenenza** su **Assegnato**.
 4. Selezionare **Membri**, trovare e selezionare **Utente 3**, **selezionare Seleziona** e quindi **crea**.
 5. Chiudere il riquadro **Gruppi**.

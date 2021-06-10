@@ -23,12 +23,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51165250"
 ---
-# <a name="configure-managed-security-service-provider-integration"></a>Configurare l'integrazione dei provider di servizi di sicurezza gestiti
+# <a name="configure-managed-security-service-provider-integration"></a>Configurazione integrazione con il provider di servizi di sicurezza gestita
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
@@ -44,20 +44,20 @@ Per abilitare l'integrazione mssp (Managed Security Service Provider) è necessa
 
 L'integrazione consentirà agli MSSP di eseguire le azioni seguenti:
 
-- Ottenere l'accesso al portale di Microsoft Defender Security Center del cliente MSSP
+- Ottenere l'accesso al portale Microsoft Defender Security Center clienti MSSP
 - Ricevere notifiche tramite posta elettronica e 
 - Recuperare gli avvisi tramite gli strumenti di gestione degli eventi e delle informazioni di sicurezza
 
 Prima che gli MSSP possano eseguire queste azioni, il cliente di MSSP dovrà concedere l'accesso al tenant Defender for Endpoint in modo che possa accedere al portale. 
  
 
-In genere, i clienti MSSP esereranno i passaggi di configurazione iniziali per concedere agli MSSP l'accesso al tenant Windows Defender Security Central. Dopo aver concesso l'accesso, il cliente MSSP o il provider mssp può eseguire altri passaggi di configurazione.
+In genere, i clienti MSSP esereranno la procedura di configurazione iniziale per concedere agli MSSP l'accesso al tenant Windows Defender Security Central. Dopo aver concesso l'accesso, il cliente MSSP o il provider mssp può eseguire altri passaggi di configurazione.
 
 
 In generale, è necessario eseguire i passaggi di configurazione seguenti:
 
 
-- **Concedere al provider mssp l'accesso a Microsoft Defender Security Center** <br>
+- **Concedere al provider MSSP l'accesso Microsoft Defender Security Center** <br>
 Questa azione deve essere eseguita dal cliente MSSP. Concede al provider mssp l'accesso al tenant Defender for Endpoint del cliente MSSP.
  
 
@@ -76,7 +76,7 @@ Per informazioni su come implementare un accesso delegato multi-tenant, vedere [
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Concedere a MSSP l'accesso al portale](grant-mssp-access.md)
-- [Accedere al portale dei clienti MSSP](access-mssp-portal.md)
+- [Accedere al portale clienti MSSP](access-mssp-portal.md)
 - [Configurare le notifiche di avviso](configure-mssp-notifications.md)
 - [Recuperare gli avvisi dal tenant del cliente](fetch-alerts-mssp.md)
 

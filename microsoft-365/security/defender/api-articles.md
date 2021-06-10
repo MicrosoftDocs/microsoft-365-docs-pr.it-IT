@@ -38,7 +38,7 @@ ms.locfileid: "51935750"
 > [!IMPORTANT]
 > Alcune informazioni fanno riferimento alle caratteristiche del prodotto prima del rilascio, e possono essere modificate sostanzialmente prima della distribuzione al pubblico. Microsoft non fornisce alcuna garanzia, esplicita o implicita, in relazione alle informazioni contenute in questo documento.
 
-Le risorse seguenti forniscono ulteriori informazioni sulle API disponibili per altre soluzioni di sicurezza Microsoft, oltre all'API di Microsoft 365 Defender.
+Le risorse seguenti forniscono ulteriori informazioni sulle API disponibili per altre soluzioni di sicurezza Microsoft, oltre all'API Microsoft 365 Defender.
 
 - [Microsoft Defender ATP](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [Microsoft Defender per Office 365](/office/office-365-management-api/)

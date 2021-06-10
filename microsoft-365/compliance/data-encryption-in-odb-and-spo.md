@@ -32,7 +32,7 @@ Informazioni sugli elementi di base della crittografia per la sicurezza dati in 
   
 ## <a name="security-and-data-encryption-in-office-365"></a>Sicurezza e crittografia dei dati in Office 365
 
-Microsoft 365 è un ambiente altamente sicuro che offre una protezione estesa su più livelli: sicurezza fisica del data center, sicurezza di rete, sicurezza degli accessi, sicurezza delle applicazioni e sicurezza dei dati. In questo articolo viene illustrato il lato della crittografia in transito e inattiva della sicurezza dati di OneDrive for Business e SharePoint Online.
+Microsoft 365 è un ambiente altamente sicuro che offre una protezione estesa in più livelli: sicurezza fisica del data center, sicurezza di rete, sicurezza degli accessi, sicurezza delle applicazioni e sicurezza dei dati. In questo articolo viene illustrato il lato della crittografia in transito e inattiva della sicurezza dati di OneDrive for Business e SharePoint Online.
   
 Nel seguente video è possibile vedere in che modo funziona la crittografia dei dati.
   

@@ -35,17 +35,17 @@ ms.locfileid: "52274677"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Con Microsoft 365 Defender, quando viene eseguita un'indagine automatizzata, i dettagli su tale indagine sono disponibili sia durante che dopo il processo di indagine automatizzata. [](m365d-autoir.md) Se di dispone delle [autorizzazioni necessarie](m365d-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. Questa visualizzazione offre lo stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
+Con Microsoft 365 Defender, quando [viene](m365d-autoir.md) eseguita un'indagine automatizzata, i dettagli su tale indagine sono disponibili sia durante che dopo il processo di indagine automatizzata. Se di dispone delle [autorizzazioni necessarie](m365d-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. Questa visualizzazione offre lo stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
 
 ![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a>(NEW!) Pagina analisi unificata
 
-La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e Microsoft Defender per Office [365.](../office-365-security/defender-for-office-365.md) Per accedere alla pagina di indagine unificata, seleziona il collegamento nel banner giallo che vedrai in:
+La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e Microsoft Defender per [Office 365](../office-365-security/defender-for-office-365.md). Per accedere alla pagina di indagine unificata, seleziona il collegamento nel banner giallo che vedrai in:
 
-- Qualsiasi pagina di indagine nel Centro sicurezza & e conformità di Office 365 ( [https://protection.office.com](https://protection.office.com) )
-- Qualsiasi pagina di indagine in Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Qualsiasi evento imprevisto o centro notifiche nel Centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Qualsiasi pagina di indagine nel Centro Office 365 sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) )
+- Qualsiasi pagina di indagine nel Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
+- Qualsiasi evento imprevisto o centro notifiche nel centro Microsoft 365 sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>Aprire la visualizzazione dei dettagli dell'indagine
 
@@ -105,7 +105,7 @@ Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informa
 | Scheda | Descrizione |
 |:--------|:--------|
 | **Grafico dell'indagine**   | Fornisce una rappresentazione visiva dell'indagine. Descrive le entità ed elenca le minacce rilevate, insieme agli avvisi e alle eventuali azioni ancora in fase di approvazione.<br/>È possibile selezionare un elemento nel grafico per visualizzare ulteriori dettagli. Ad esempio, selezionando **l'icona**  Prova si visualizza la scheda Prova, in cui è possibile visualizzare le entità rilevate e i relativi verdetti. |
-| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, nelle app di Office, in Microsoft Cloud App Security e in altre funzionalità di Microsoft 365 Defender.|
+| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, in Office app, Microsoft Cloud App Security e altre funzionalità di Microsoft 365 Defender.|
 | **Dispositivi** | Elenca i dispositivi inclusi nell'indagine insieme al relativo livello di correzione. I livelli di correzione corrispondono al [livello di automazione per i gruppi di dispositivi.](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **Cassette postali** |Elenca le cassette postali che sono influenzate dalle minacce rilevate.  |
 | **Utenti**  | Elenca gli account utente che sono influenzati dalle minacce rilevate. |

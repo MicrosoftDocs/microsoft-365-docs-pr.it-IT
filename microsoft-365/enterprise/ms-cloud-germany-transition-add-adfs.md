@@ -28,7 +28,7 @@ ms.locfileid: "51165658"
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Passaggi di migrazione di AD FS per la migrazione da Microsoft Cloud Deutschland
 
 Questa modifica alla configurazione deve essere applicata ogni volta prima dell'avvio della fase 2.
-Una volta completata la fase 2, la modifica della configurazione funzionerà e sarà possibile accedere tramite endpoint globali di Office 365, ad esempio `https://portal.office.com` . Se si implementa la modifica alla configurazione prima della fase 2,  gli endpoint globali di Office 365 non funzionano ancora, ma la nuova relazione di trust della relying party fa ancora parte della configurazione di Active Directory Federation Services (AD FS).
+Una volta completata la fase 2, la modifica della configurazione funzionerà e sarà possibile accedere tramite Office 365 endpoint globali, ad esempio `https://portal.office.com` . Se si implementa la modifica della configurazione prima della fase 2, gli endpoint globali di Office 365 non funzionano ancora, ma la nuova relazione di trust della relying party fa ancora parte della configurazione di Active Directory Federation Services (AD FS). 
 
 I clienti che utilizzano l'autenticazione federata con Active Directory Federation Services (ADFS) non devono apportare modifiche agli URI dell'autorità emittente utilizzati per tutte le autenticazioni con Servizi di dominio Active Directory locale durante la migrazione. La modifica degli URI dell'autorità emittente causa errori di autenticazione per gli utenti nel dominio. Gli URI dell'autorità emittente possono essere modificati direttamente  in AD FS o quando un dominio viene convertito da gestito a _federato_ e viceversa. È consigliabile non aggiungere, rimuovere o convertire un dominio federato nel tenant di Azure AD di cui è stata eseguita la migrazione. Gli URI dell'autorità emittente possono essere modificati al termine della migrazione.
 
@@ -37,13 +37,13 @@ Per preparare la farm AD FS per la migrazione da Microsoft Cloud Deutschland, es
 1. Eseguire il backup delle impostazioni di AD FS, inclusa l'attendibilità del relying party Microsoft Cloud Deutschland esistente, con [questi passaggi.](#backup) Assegnare al backup **il nome MicrosoftCloudDeutschlandOnly** per indicare che contiene solo le informazioni sul tenant di Microsoft Cloud Deutschland.
 
    > [!NOTE]
-   > Il backup conterrà non solo la relying party trust di Office 365 esistente per Microsoft Cloud Deutschland, ma anche tutti gli altri trust relying party presenti nella rispettiva farm AD FS.
+   > Il backup conterrà non solo l'Office 365 Relying Party Trust per Microsoft Cloud Deutschland, ma anche tutti gli altri trust relying party presenti nella rispettiva farm AD FS.
 
 2. Testare il ripristino utilizzando il backup MicrosoftCloudDeutschlandOnly, la farm AD FS deve continuare a funzionare solo come Microsoft Cloud Deutschland.
 
 Dopo aver completato e testato il backup di AD FS, eseguire la procedura seguente per aggiungere un nuovo trust relying party alla configurazione di ADFS:
 
-1. Aprire la console di gestione di AD FS.
+1. Aprire la console di gestione AD FS.
 
 2. Nel riquadro sinistro della console di gestione ADFS passare al menu **Relying Party Trusts.**
 
@@ -53,7 +53,7 @@ Dopo aver completato e testato il backup di AD FS, eseguire la procedura seguent
 
 5. Nella pagina **Seleziona origine dati** selezionare Importa dati sulla **relying party pubblicata online o in una rete locale.** Il **valore dell'indirizzo dei metadati federativi (nome host o URL)** deve essere impostato su `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` . Fare clic su **Avanti**.
 
-6. Nella pagina **Specifica nome visualizzato** digitare il nome visualizzato, ad esempio Microsoft Office **365 Identity Platform WorldWide.** Fare clic su **Avanti**.
+6. Nella pagina **Specifica nome visualizzato** digitare il nome visualizzato, ad esempio Microsoft Office 365 Identity Platform **WorldWide.** Fare clic su **Avanti**.
 
 7. Se si utilizza ADFS in Windows Server 2012, nella pagina della procedura guidata Configurare l'autenticazione a più fattori **ora?** selezionare la scelta appropriata in base ai requisiti di autenticazione. Se si è ancorati all'impostazione predefinita, selezionare Non si desidera configurare le impostazioni di autenticazione a più fattori per questa attendibilità **relying party in questo momento.** Se lo si desidera, è possibile modificare questa impostazione in un secondo momento.
 
@@ -65,12 +65,12 @@ Dopo aver completato e testato il backup di AD FS, eseguire la procedura seguent
 
 11. Fare **clic su** Chiudi nella **pagina** Fine.
 
-Chiudendo la procedura guidata, viene stabilita l'attendibilità relying party con il servizio globale di Office 365. Tuttavia, non sono ancora configurate regole di trasformazione rilascio.
+Chiudendo la procedura guidata, viene stabilita l'attendibilità relying party Office 365 servizio globale. Tuttavia, non sono ancora configurate regole di trasformazione rilascio.
 
 È possibile utilizzare [la Guida di AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) per generare le regole corrette di trasformazione rilascio. Le regole attestazione generate create con la Guida di AD FS possono essere aggiunte manualmente tramite la console di gestione di AD FS o con PowerShell. La Guida di AD FS genererà gli script di PowerShell necessari che devono essere eseguiti.  
 
 > [!NOTE]
-> [La Guida di AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) genererà le regole di trasformazione di rilascio standard che vengono forniti con il prodotto. Tuttavia, se le regole di trasformazione di rilascio personalizzate sono presenti in Microsoft Cloud Deutschland Relying Party Trust (ad esempio, URI dell'autorità emittente personalizzata, ID non standard non modificabili o altre personalizzazioni), le regole generate dalla Guida di AD FS devono essere modificate in modo che si adattino alla logica personalizzata attualmente in uso per l'attendibilità del componente Microsoft Cloud Deutschland. Se queste personalizzazioni non sono integrate nelle regole generate tramite la Guida di [ADFS,](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)l'autenticazione  **a Microsoft Office 365 Identity Platform WorldWide** probabilmente non funzionerà per le identità federate.
+> [La Guida di AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) genererà le regole di trasformazione di rilascio standard che vengono forniti con il prodotto. Tuttavia, se le regole di trasformazione di rilascio personalizzate sono presenti in Microsoft Cloud Deutschland Relying Party Trust (ad esempio, URI dell'autorità emittente personalizzata, ID non standard non modificabili o altre personalizzazioni), le regole generate dalla Guida di AD FS devono essere modificate in modo che si adattino alla logica personalizzata attualmente in uso per l'attendibilità del componente Microsoft Cloud Deutschland. Se queste personalizzazioni non sono integrate nelle regole generate tramite la Guida di [ADFS,](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)l'autenticazione **Microsoft Office 365 Identity Platform WorldWide** probabilmente non funzionerà per le identità federate. 
 
 1. Eseguire **Generate Claims** on AD FS [Help](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) e copiare lo script di PowerShell usando l'opzione **Copy** nell'angolo superiore destro dello script.
 
@@ -88,7 +88,7 @@ Chiudendo la procedura guidata, viene stabilita l'attendibilità relying party c
    Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
    ```
 
-3. Verificare che siano presenti due relying partyTtrust; uno per Microsoft Cloud Deutschland e uno per il servizio Office 365 Global. Il comando seguente può essere utilizzato per il controllo. Deve restituire due righe e i rispettivi nomi e identificatori.
+3. Verificare che siano presenti due relying partyTtrust; uno per Microsoft Cloud Deutschland e uno per il Office 365 Global. Il comando seguente può essere utilizzato per il controllo. Deve restituire due righe e i rispettivi nomi e identificatori.
 
    ```powershell
    Get-AdfsRelyingPartyTrust | Where-Object {$_.Identifier -like 'urn:federation:MicrosoftOnline*'} | Select-Object Name, Identifier
@@ -140,7 +140,7 @@ Se la farm ha avuto completamente esito negativo e non è possibile tornare alla
 
 Guida introduttiva:
 
-- [Migrazione da Microsoft Cloud Deutschland ai servizi di Office 365 nelle nuove aree data center tedesche](ms-cloud-germany-transition.md)
+- [Migrazione da Microsoft Cloud Deutschland ai servizi Office 365 nelle nuove aree data center tedesche](ms-cloud-germany-transition.md)
 - [Assistenza per la migrazione di Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
 - [Come acconsentire esplicitamente a eseguire la migrazione](ms-cloud-germany-migration-opt-in.md)
 - [Esperienza del cliente durante la migrazione](ms-cloud-germany-transition-experience.md)

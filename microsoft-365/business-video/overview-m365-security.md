@@ -34,7 +34,7 @@ ms.locfileid: "52842399"
 
 Microsoft 365 Business Premium offre funzionalità di protezione dalle minacce, protezione dei dati e gestione dei dispositivi per proteggere l'azienda da minacce online e accessi non autorizzati, oltre a proteggere e gestire i dati aziendali su telefoni, tablet e computer.
 
-|![Protezione dalle minacce](../media/m365-business-security-threat-protection.png)<br/>[Protezione dalle minacce](#threat-protection)|![Collaborare con un client](../media/m365-business-security-data-protection.png) <br/>[Protezione dei dati](#data-protection) | ![Gestione dispositivi](../media/m365-business-security-device-management.png) <br/>[Gestione dispositivi](#device-management) |
+|![Protezione dalle minacce](../media/m365-business-security-threat-protection.png)<br/>[Protezione dalle minacce](#threat-protection)|![Collaborare con un client](../media/m365-business-security-data-protection.png) <br/>[Protezione dei dati](#data-protection) | ![Gestione dei dispositivi](../media/m365-business-security-device-management.png) <br/>[Gestione dispositivi](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Protezione dalle minacce

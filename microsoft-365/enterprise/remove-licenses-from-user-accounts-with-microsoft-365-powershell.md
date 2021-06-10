@@ -1,5 +1,5 @@
 ---
-title: Rimuovere le licenze di Microsoft 365 dagli account utente con PowerShell
+title: Rimuovere Microsoft 365 licenze dagli account utente con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: Spiega come usare PowerShell per rimuovere le licenze di Microsoft 365 precedentemente assegnate agli utenti.
+description: Spiega come usare PowerShell per rimuovere Microsoft 365 licenze assegnate in precedenza agli utenti.
 ms.openlocfilehash: 9944d1ab056d109b6bf71a44fe01acef78ce1f14
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,17 +27,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50920669"
 ---
-# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Rimuovere le licenze di Microsoft 365 dagli account utente con PowerShell
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Rimuovere Microsoft 365 licenze dagli account utente con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 >[!Note]
->[Informazioni su come rimuovere licenze dagli account utente con](../admin/manage/remove-licenses-from-users.md) l'interfaccia di amministrazione di Microsoft 365. Per un elenco delle risorse aggiuntive, vedere [Manage users and groups](../admin/add-users/index.yml).
+>[Informazioni su come rimuovere licenze dagli account utente con](../admin/manage/remove-licenses-from-users.md) l'Microsoft 365 di amministrazione. Per un elenco delle risorse aggiuntive, vedere [Manage users and groups](../admin/add-users/index.yml).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Successivamente, elencare i piani di licenza per il tenant con questo comando.
 
@@ -81,7 +81,7 @@ if($userList.Count -ne 0) {
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Prima di [tutto, connettersi al tenant Microsoft 365 .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
    
 Per visualizzare le informazioni relative ai piani di gestione delle licenze (**AccountSkuID**) nell'organizzazione, vedere i seguenti argomenti:
     
@@ -110,7 +110,7 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 ```
 
 >[!Note]
->Non è possibile utilizzare `Set-MsolUserLicense` il cmdlet per annullare l'assegnazione degli utenti dalle licenze *annullate.* È necessario eseguire questa operazione singolarmente per ogni account utente nell'interfaccia di amministrazione di Microsoft 365.
+>Non è possibile utilizzare `Set-MsolUserLicense` il cmdlet per annullare l'assegnazione degli utenti dalle licenze *annullate.* È necessario eseguire questa operazione singolarmente per ogni account utente nell'Microsoft 365 di amministrazione.
 >
 
 Per rimuovere tutte le licenze da un gruppo di utenti con licenza esistenti, utilizzare uno dei metodi seguenti:

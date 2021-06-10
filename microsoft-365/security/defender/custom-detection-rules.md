@@ -42,14 +42,14 @@ Le regole di rilevamento personalizzate sono regole che è possibile progettare 
 
 Per gestire i rilevamenti personalizzati, è necessario disporre di uno di questi ruoli:
 
-- **Amministratore della** sicurezza: gli utenti con questo [ruolo di Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) possono gestire le impostazioni di sicurezza nel Centro sicurezza Microsoft 365 e in altri portali e servizi.
+- **Amministratore della** sicurezza: gli utenti con questo [Azure Active Directory possono](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) gestire le impostazioni di sicurezza nel centro sicurezza Microsoft 365 e in altri portali e servizi.
 
-- **Operatore di** sicurezza: gli utenti con questo ruolo [di Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) possono gestire gli avvisi e avere accesso globale in sola lettura alle funzionalità correlate alla sicurezza, incluse tutte le informazioni nel Centro sicurezza Microsoft 365. Questo ruolo è sufficiente per gestire i rilevamenti personalizzati solo se il controllo di accesso basato sui ruoli (RBAC) è disattivato in Microsoft Defender per Endpoint. Se è stato configurato RBAC, è necessario disporre anche dell'autorizzazione di gestione delle impostazioni **di** sicurezza per Defender per Endpoint.
+- **Operatore** di sicurezza: gli utenti [con](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) questo ruolo Azure Active Directory possono gestire gli avvisi e avere accesso globale in sola lettura alle funzionalità correlate alla sicurezza, incluse tutte le informazioni nel centro sicurezza Microsoft 365 sicurezza. Questo ruolo è sufficiente per gestire i rilevamenti personalizzati solo se il controllo di accesso basato sui ruoli (RBAC) è disattivato in Microsoft Defender per Endpoint. Se è stato configurato RBAC, è necessario disporre anche dell'autorizzazione di gestione delle impostazioni **di** sicurezza per Defender per Endpoint.
 
 Per gestire le autorizzazioni necessarie, un **amministratore globale** può:
 
-- Assegnare **il ruolo di amministratore della** sicurezza o **operatore** di sicurezza nell'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com/) in **Ruoli**  >  **Amministratore sicurezza**.
-- Controllare le impostazioni RBAC per Microsoft Defender for Endpoint in [Microsoft Defender Security Center](https://securitycenter.windows.com/) in **Impostazioni**  >  **Autorizzazioni**  >  **Ruoli**. Selezionare il ruolo corrispondente per assegnare **l'autorizzazione gestisci impostazioni di** sicurezza.
+- Assegnare **il ruolo di amministratore della** sicurezza o **operatore** di sicurezza [Microsoft 365'interfaccia di amministrazione](https://admin.microsoft.com/) in **Ruoli**  >  **Amministratore sicurezza**.
+- Controllare le impostazioni RBAC per Microsoft Defender for Endpoint in [Microsoft Defender Security Center](https://securitycenter.windows.com/) in **Impostazioni**  >    >  **Autorizzazioni.** Selezionare il ruolo corrispondente per assegnare **l'autorizzazione gestisci impostazioni di** sicurezza.
 
 > [!NOTE]
 > Per gestire i rilevamenti **personalizzati,** gli operatori della sicurezza dovranno disporre dell'autorizzazione di gestione delle impostazioni di sicurezza in Microsoft Defender per Endpoint se RBAC è attivato. 
@@ -57,7 +57,7 @@ Per gestire le autorizzazioni necessarie, un **amministratore globale** può:
 ## <a name="create-a-custom-detection-rule"></a>Creare una regola di rilevamento personalizzata
 ### <a name="1-prepare-the-query"></a>1. Preparare la query.
 
-Nel Centro sicurezza Microsoft 365 passare a Ricerca **avanzata** e selezionare una query esistente o creare una nuova query. Quando si utilizza una nuova query, eseguire la query per identificare gli errori e comprendere i possibili risultati.
+Nel Microsoft 365 sicurezza passare a **Ricerca avanzata** e selezionare una query esistente o creare una nuova query. Quando si utilizza una nuova query, eseguire la query per identificare gli errori e comprendere i possibili risultati.
 
 >[!IMPORTANT]
 >Per impedire al servizio di restituire troppi avvisi, ogni regola può generare solo 100 avvisi ogni volta che viene eseguito. Prima di creare una regola, modificare la query per evitare avvisi per le normali attività quotidiane.
@@ -145,7 +145,7 @@ La regola di rilevamento personalizzata può eseguire automaticamente azioni su 
 Queste azioni vengono applicate ai dispositivi nella `DeviceId` colonna dei risultati della query:
 - **Isola dispositivo:** usa Microsoft Defender for Endpoint per applicare l'isolamento di rete completo, impedendo al dispositivo di connettersi a qualsiasi applicazione o servizio. [Altre informazioni sull'isolamento del computer di Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **Raccogli pacchetto di analisi:** raccoglie le informazioni sul dispositivo in un file ZIP. [Altre informazioni sul pacchetto di analisi di Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Esegui analisi antivirus:** esegue un'Windows Defender antivirus completa nel dispositivo
+- **Esegui analisi antivirus:** esegue un'Windows Defender Antivirus completa nel dispositivo
 - **Avvia un'indagine:** avvia [un'indagine](m365d-autoir.md) automatizzata sul dispositivo
 - **Limita l'esecuzione dell'app:** imposta le restrizioni sul dispositivo per consentire l'esecuzione solo dei file firmati con un certificato rilasciato da Microsoft. [Altre informazioni sulle restrizioni per le app con Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
@@ -181,7 +181,7 @@ Dopo aver esaminato la regola, selezionare **Crea** per salvarla. La regola di r
 È possibile visualizzare l'elenco delle regole di rilevamento personalizzate esistenti, controllare le esecuzioni precedenti ed esaminare gli avvisi che hanno attivato. È inoltre possibile eseguire una regola su richiesta e modificarla.
 
 >[!TIP]
-> Gli avvisi generati dai rilevamenti personalizzati sono disponibili per gli avvisi e le API degli eventi imprevisti. Per altre informazioni, vedi [API supportate di Microsoft 365 Defender.](api-supported.md)
+> Gli avvisi generati dai rilevamenti personalizzati sono disponibili per gli avvisi e le API degli eventi imprevisti. Per altre informazioni, vedi [API Microsoft 365 Defender supportate.](api-supported.md)
 
 ### <a name="view-existing-rules"></a>Visualizzare le regole esistenti
 
@@ -222,7 +222,7 @@ Nella schermata dei dettagli della regola (**Ricerca** di rilevamenti personaliz
 >Per visualizzare rapidamente le informazioni ed eseguire azioni su un elemento di una tabella, utilizzare la colonna di selezione [&#10003;] a sinistra della tabella.
 
 >[!NOTE]
->Alcune colonne di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender](m365d-enable.md) per cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in [Migrate advanced hunting queries from Microsoft Defender for Endpoint.](advanced-hunting-migrate-from-mde.md)
+>Alcune colonne di questo articolo potrebbero non essere disponibili in Microsoft Defender per Endpoint. [Attivare Microsoft 365 Defender per](m365d-enable.md) cercare minacce che usano più origini dati. Puoi spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender seguendo la procedura descritta in Eseguire la migrazione di query di ricerca avanzate da [Microsoft Defender per Endpoint.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica dei rilevamenti personalizzati](custom-detections-overview.md)

@@ -1,6 +1,6 @@
 ---
 title: Configurazione delle periferiche
-description: Informazioni sui criteri predefiniti applicati ai dispositivi Microsoft Managed Desktop.
+description: Informazioni sui criteri predefiniti applicati Microsoft Managed Desktop dispositivi.
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -23,35 +23,35 @@ ms.locfileid: "50920493"
 
 <!-- Device configuration and Security Addendum-->
 
-Quando viene configurato un nuovo dispositivo Microsoft Managed Desktop, si garantisce che abbia la configurazione giusta ottimizzata per Microsoft Managed Desktop. Tale configurazione include un set di criteri predefiniti impostati come parte del processo di onboarding. Questi criteri vengono recapitati con Gestione dispositivi mobili (MDM, Mobile Device Management) quando possibile. Per altre informazioni, vedi [Gestione dei dispositivi mobili.](/windows/client-management/mdm/) 
+Quando viene configurato Microsoft Managed Desktop nuovo dispositivo, ci assicuriamo che abbia la configurazione giusta ottimizzata per Microsoft Managed Desktop. Tale configurazione include un set di criteri predefiniti impostati come parte del processo di onboarding. Questi criteri vengono recapitati con Gestione dispositivi mobili (MDM, Mobile Device Management) quando possibile. Per altre informazioni, vedi [Gestione dei dispositivi mobili.](/windows/client-management/mdm/) 
 
 >[!NOTE]
 >Per evitare conflitti, non modificare questi criteri.
 
-I dispositivi arriveranno con un'immagine della firma e quindi si aggiungeranno al dominio di Azure Active Directory quando il primo utente accede. Il dispositivo installerà automaticamente le applicazioni e i criteri necessari senza alcun intervento da parte del personale IT.
+I dispositivi arriveranno con un'immagine della firma e quindi verranno Azure Active Directory dominio quando il primo utente esegue l'accesso. Il dispositivo installerà automaticamente le applicazioni e i criteri necessari senza alcun intervento da parte del personale IT.
 
 ## <a name="default-policies"></a>Criteri predefiniti
 
-Questa tabella evidenzia i criteri predefiniti applicati a tutti i dispositivi Microsoft Managed Desktop durante il provisioning dei dispositivi. Tutte le modifiche rilevate non approvate da Microsoft Managed Desktop Operations Team per gli oggetti gestiti da Microsoft Managed Desktop verranno ripristinate.
+Questa tabella evidenzia i criteri predefiniti applicati a tutti i dispositivi Microsoft Managed Desktop durante il provisioning dei dispositivi. Tutte le modifiche rilevate non approvate dal Microsoft Managed Desktop Operations Team sugli oggetti gestiti Microsoft Managed Desktop verranno ripristinate.
 
-Criteri | Descrizione
+Criterio | Descrizione
 --- | ---
-Baseline di sicurezza | [La baseline di sicurezza Microsoft](/windows/device-security/windows-security-baselines) per MDM è configurata per tutti i dispositivi Microsoft Managed Desktop. Questa linea di base è la configurazione standard del settore. Viene rilasciato pubblicamente, ben testato ed è stato esaminato dagli esperti di sicurezza Microsoft per mantenere sicuri i dispositivi e le app di Microsoft Managed Desktop nell'ambiente di lavoro moderno. <br><br>Per ridurre le minacce nel panorama delle minacce alla sicurezza in continua evoluzione, la linea di base per la sicurezza Microsoft verrà aggiornata e distribuita nei dispositivi Desktop gestiti Microsoft con ogni aggiornamento delle funzionalità di Windows 10.<br><br>Per altre informazioni, vedi Linee [di base per la sicurezza di Windows.](/windows/security/threat-protection/windows-security-baselines)
-Modello di sicurezza consigliato per Microsoft Managed Desktop | Un set di modifiche consigliate alla linea di base della sicurezza che ottimizzano l'esperienza utente.  Queste modifiche sono documentate nel [Security Addendum.](#security-addendum) Gli aggiornamenti al criterio addendum vengono eseguiti in base alle esigenze.  
-Distribuzione degli aggiornamenti | Usa Windows Update for Business per eseguire la distribuzione graduale degli aggiornamenti software. Gli amministratori IT non possono modificare le impostazioni per i criteri di gruppo di distribuzione. Per ulteriori informazioni sulla distribuzione basata su gruppi, vedere Come vengono gestiti gli aggiornamenti [in Microsoft Managed Desktop.](updates.md)
-Connessioni a consumo | Per impostazione predefinita, gli aggiornamenti su connessioni a consumo (ad esempio reti LTE) sono disattivati, anche se ogni utente può attivare in modo indipendente questa funzionalità in Impostazioni **> Aggiornamenti > Opzioni avanzate.** Se vuoi consentire a tutti gli utenti di abilitare gli aggiornamenti su connessioni [a](../working-with-managed-desktop/admin-support.md)consumo, invia una richiesta di modifica che attiverà questa impostazione per tutti i dispositivi.
-| Conformità dispositivo | Questi criteri sono configurati per tutti i dispositivi Microsoft Managed Desktop. Un dispositivo viene segnalato come non conforme quando deriva dalla configurazione di sicurezza necessaria.
+Baseline di sicurezza | [Microsoft security baseline](/windows/device-security/windows-security-baselines) for MDM è configurato per tutti i Microsoft Managed Desktop mobili. Questa linea di base è la configurazione standard del settore. Viene rilasciato pubblicamente, ben testato ed è stato esaminato dagli esperti di sicurezza Microsoft per mantenere sicuri i dispositivi e le app Microsoft Managed Desktop nell'ambiente di lavoro moderno. <br><br>Per ridurre le minacce nel panorama delle minacce alla sicurezza in continua evoluzione, la linea di base della sicurezza Microsoft verrà aggiornata e distribuita nei dispositivi Microsoft Managed Desktop con ogni aggiornamento delle funzionalità Windows 10 sicurezza.<br><br>Per ulteriori informazioni, vedere [Windows di sicurezza](/windows/security/threat-protection/windows-security-baselines).
+Microsoft Managed Desktop di sicurezza consigliato | Un set di modifiche consigliate alla linea di base della sicurezza che ottimizzano l'esperienza utente.  Queste modifiche sono documentate nel [Security Addendum.](#security-addendum) Gli aggiornamenti al criterio addendum vengono eseguiti in base alle esigenze.  
+Distribuzione degli aggiornamenti | Utilizzare Windows Update for Business per eseguire la distribuzione graduale degli aggiornamenti software. Gli amministratori IT non possono modificare le impostazioni per i criteri di gruppo di distribuzione. Per ulteriori informazioni sulla distribuzione basata su gruppi, vedere [Come vengono gestiti](updates.md)gli aggiornamenti in Microsoft Managed Desktop .
+Connessioni a consumo | Per impostazione predefinita, gli aggiornamenti su connessioni a consumo ,ad esempio le reti LTE, sono disattivati, anche se ogni utente può attivare in modo indipendente questa funzionalità in Impostazioni > **Aggiornamenti > Opzioni avanzate**. Se vuoi consentire a tutti gli utenti di abilitare gli aggiornamenti su connessioni [a](../working-with-managed-desktop/admin-support.md)consumo, invia una richiesta di modifica che attiverà questa impostazione per tutti i dispositivi.
+| Conformità dispositivo | Questi criteri sono configurati per tutti Microsoft Managed Desktop dispositivi. Un dispositivo viene segnalato come non conforme quando deriva dalla configurazione di sicurezza necessaria.
 
-## <a name="windows-diagnostic-data"></a>Dati di diagnostica di Windows
+## <a name="windows-diagnostic-data"></a>Windows di diagnostica
 
- I dispositivi verranno impostati per fornire dati di diagnostica avanzata a Microsoft in base a un identificatore commerciale noto. Come parte di Microsoft Managed Desktop, gli amministratori IT non possono modificare queste impostazioni. Per i clienti nelle aree del Regolamento generale sulla protezione dei dati (GDPR), gli utenti possono ridurre il livello di dati di diagnostica forniti, ma si ridurrà il servizio. Ad esempio, Microsoft Managed Desktop non sarà in grado di raccogliere i dati necessari per eseguire un'iterazione delle impostazioni e dei criteri per soddisfare al meglio le esigenze di prestazioni e sicurezza. Per altre informazioni, vedi [Configurare i dati di diagnostica di Windows nell'organizzazione.](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+ I dispositivi verranno impostati per fornire dati di diagnostica avanzata a Microsoft in base a un identificatore commerciale noto. Nell'ambito di Microsoft Managed Desktop, gli amministratori IT non possono modificare queste impostazioni. Per i clienti nelle aree del Regolamento generale sulla protezione dei dati (GDPR), gli utenti possono ridurre il livello di dati di diagnostica forniti, ma si ridurrà il servizio. Ad esempio, Microsoft Managed Desktop non sarà in grado di raccogliere i dati necessari per eseguire un'iterazione delle impostazioni e dei criteri per soddisfare al meglio le esigenze di prestazioni e sicurezza. Per ulteriori informazioni, vedere [Configure Windows diagnostic data in your organization.](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
 ## <a name="security-addendum"></a>Addendum per la sicurezza
 
- In questa sezione vengono descritti i criteri che verranno distribuiti oltre ai criteri standard di Microsoft Managed Desktop elencati in [Criteri predefiniti.](#default-policies) Questa configurazione è progettata tenendo conto dei servizi finanziari e dei settori altamente regolamentati, ottimizzando al tempo stesso la massima sicurezza, mantenendo al contempo la produttività degli utenti.
+ In questa sezione vengono descritti i criteri che verranno distribuiti oltre ai criteri Microsoft Managed Desktop standard elencati in [Criteri predefiniti.](#default-policies) Questa configurazione è progettata tenendo conto dei servizi finanziari e dei settori altamente regolamentati, ottimizzando al tempo stesso la massima sicurezza, mantenendo al contempo la produttività degli utenti.
 
  ### <a name="additional-security-policies"></a>Criteri di sicurezza aggiuntivi
 
  Questi criteri vengono aggiunti per aumentare la sicurezza per i settori altamente regolamentati. 
  - **Monitoraggio della sicurezza:** Microsoft monitorerà i dispositivi [con Microsoft Defender for Endpoint.](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) Se viene rilevata una minaccia, Microsoft invierà una notifica al cliente, isola il dispositivo e correggerà il problema in remoto. 
- - **Disabilitare PowerShell V2:** Microsoft ha rimosso PowerShell V2 nell'agosto 2017. Questa funzionalità è stata disabilitata in tutti i dispositivi Microsoft Managed Desktop. Per ulteriori informazioni su questa modifica, vedere [Windows PowerShell 2.0 Deprecation](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).
+ - **Disabilitare PowerShell V2:** Microsoft ha rimosso PowerShell V2 nell'agosto 2017. Questa funzionalità è stata disabilitata in tutti Microsoft Managed Desktop dispositivi. Per ulteriori informazioni su questa modifica, vedere [Windows PowerShell 2.0 Deprecation](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

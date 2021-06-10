@@ -27,7 +27,7 @@ ms.locfileid: "50921529"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticazione pass-through per l'ambiente di testing di Microsoft 365
 
-*Questa guida al laboratorio di testing può essere usata sia per gli ambienti di testing di Microsoft 365 per le aziende che per gli ambienti di testing di Office 365 Enterprise.*
+*Questa guida al laboratorio di testing può essere usata sia per gli ambienti Microsoft 365 aziendali che per Office 365 Enterprise test.*
 
 Le organizzazioni che vogliono usare direttamente l'infrastruttura di Active Directory Domain Services locale per l'autenticazione per le applicazioni e servizi basati sul cloud di Microsoft, possono usare l'autenticazione pass-through. In questo articolo viene descritto come configurare l'ambiente di testing di Microsoft 365 per l'autenticazione pass-through, con la seguente configurazione come risultato:
   
@@ -51,7 +51,7 @@ Seguire le istruzioni riportate in [sincronizzazione hash delle password per Mic
   
 Questa configurazione è costituita da: 
   
-- Sottoscrizione di valutazione o a pagamento di Microsoft 365 E5.
+- Microsoft 365 E5 di prova o a pagamento.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Fase 2: configurare Azure AD Connect su APP1 per l'autenticazione pass-through
@@ -94,7 +94,7 @@ Di seguito è riportata la configurazione risultante:
  
 Questa configurazione è costituita da:
 
-- Una versione di valutazione di Microsoft 365 E5 o sottoscrizioni a pagamento con il dominio DNS testlab.\<your domain name> registrato.
+- Una Microsoft 365 E5 di valutazione o a pagamento con il testlab del dominio DNS.\<your domain name> registrato.
 - Una intranet dell'organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1, APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Un Agente di autenticazione viene eseguito su APP1 per gestire le richieste di autenticazione pass-through dal tenant di Azure AD dell'abbonamento a Microsoft 365.
 
 ## <a name="next-step"></a>Passaggio successivo

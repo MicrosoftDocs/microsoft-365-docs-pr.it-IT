@@ -1,7 +1,7 @@
 ---
 title: Tabella IdentityInfo nello schema di ricerca avanzata
 description: Informazioni sulle informazioni sull'account utente nella tabella IdentityInfo dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, AccountInfo, IdentityInfo, account
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, AccountInfo, IdentityInfo, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

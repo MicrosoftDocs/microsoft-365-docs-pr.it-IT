@@ -173,7 +173,7 @@ Il passaggio successivo consiste nel scaricare i risultati della ricerca dal per
 
 7. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer.
   
-    Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati.
+    Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Una volta completato il processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati.
 
 ## <a name="more-information"></a>Ulteriori informazioni
 

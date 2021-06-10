@@ -18,7 +18,7 @@ search.appverid:
 - BSA160
 f1.keywords:
 - NOCSH
-description: Utilizzare lo strumento Diagnostica pagine per SharePoint per analizzare il portale moderno di SharePoint Online e le pagine di pubblicazione classiche in base a un set predefinito di criteri di prestazioni.
+description: Utilizzare lo strumento Diagnostica pagine per SharePoint per analizzare il portale moderno SharePoint Online e le pagine di pubblicazione classiche in base a un set predefinito di criteri di prestazioni.
 ms.openlocfilehash: b55e5c04f56bac4e6313284de60753d1beaaaed1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,9 +26,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50921631"
 ---
-# <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usare lo strumento Diagnostica pagine per SharePoint
+# <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usare lo strumento Diagnostica pagine per SharePoint pagina
 
-In questo articolo viene descritto come utilizzare lo strumento Diagnostica pagine per **SharePoint** per analizzare le pagine di sito moderne e classiche di SharePoint Online in base a un set predefinito di criteri di prestazioni.
+In questo articolo viene  descritto come utilizzare lo strumento Diagnostica pagine per SharePoint per analizzare le pagine del sito moderno e classico di SharePoint Online in base a un set predefinito di criteri di prestazioni.
 
 Lo strumento Diagnostica pagine per SharePoint può essere installato per:
 
@@ -38,52 +38,52 @@ Lo strumento Diagnostica pagine per SharePoint può essere installato per:
 >[!TIP]
 >La **versione 2.0.0 e** successive include il supporto per le pagine moderne oltre alle pagine classiche del sito. Se non si è certi della versione dello strumento  in uso, è possibile selezionare il collegamento Informazioni o i puntini di sospensione (...) per verificare la versione. **Aggiorna sempre alla versione più recente quando** utilizzi lo strumento.
 
-Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per il nuovo browser Microsoft Edge (https://www.microsoft.com/edge) e per Chrome che consente di analizzare le pagine del sito di pubblicazione di SharePoint Online sia classiche che dei portali moderni. Questo strumento funziona solo per SharePoint Online e non può essere utilizzato in una pagina di sistema di SharePoint.
+Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per il nuovo browser Microsoft Edge (https://www.microsoft.com/edge) e per Chrome che consente di analizzare le pagine del sito di pubblicazione di SharePoint Online sia classiche che dei portali moderni. Questo strumento funziona solo per SharePoint Online e non può essere utilizzato in una SharePoint di sistema.
 
-Lo strumento genera un report per ogni pagina analizzata che mostra le prestazioni della pagina rispetto a un set predefinito di regole e visualizza informazioni dettagliate quando i risultati di un test non rientrano nel valore di base. Gli amministratori e i progettisti di SharePoint Online possono utilizzare lo strumento per risolvere i problemi di prestazioni e garantire che le nuove pagine siano ottimizzate prima della pubblicazione.
+Lo strumento genera un report per ogni pagina analizzata che mostra le prestazioni della pagina rispetto a un set predefinito di regole e visualizza informazioni dettagliate quando i risultati di un test non rientrano nel valore di base. SharePoint Gli amministratori e i progettisti online possono utilizzare lo strumento per risolvere i problemi di prestazioni e garantire che le nuove pagine siano ottimizzate prima della pubblicazione.
 
-Lo strumento Diagnostica pagine è progettato per analizzare solo le pagine del sito di SharePoint, non le pagine di sistema, ad esempio *allitems.aspx* *o sharepoint.aspx.* Se si tenta di eseguire lo strumento in una pagina di sistema o in qualsiasi altra pagina non del sito, verrà visualizzato un messaggio di errore che indica che non è possibile eseguire lo strumento per quel tipo di pagina.
+Lo strumento Diagnostica pagine è progettato per analizzare solo SharePoint pagine del sito, non le pagine di sistema, ad esempio *allitems.aspx* *o sharepoint.aspx.* Se si tenta di eseguire lo strumento in una pagina di sistema o in qualsiasi altra pagina non del sito, verrà visualizzato un messaggio di errore che indica che non è possibile eseguire lo strumento per quel tipo di pagina.
 
 > [!div class="mx-imgBorder"]
-> ![Deve essere eseguito in una pagina di SharePoint](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
+> ![Deve essere eseguito in una SharePoint pagina](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
 
-Non si tratta di un errore nello strumento perché non vi è alcun valore nella valutazione di raccolte o pagine di sistema. Passare a una pagina del sito di SharePoint per utilizzare lo strumento. Se questo errore si verifica in una pagina di SharePoint, controllare la pagina master per assicurarsi che i metatag di SharePoint non siano stati rimossi.
+Non si tratta di un errore nello strumento perché non vi è alcun valore nella valutazione di raccolte o pagine di sistema. Passare a una pagina SharePoint sito per usare lo strumento. Se questo errore si verifica in SharePoint pagina, controllare la pagina master per assicurarsi che i metatag SharePoint non siano stati rimossi.
 
 Per fornire feedback sullo strumento, selezionare i puntini di sospensione nell'angolo in alto a destra dello strumento e quindi selezionare [Invia feedback.](https://go.microsoft.com/fwlink/?linkid=874109)
 
 > [!div class="mx-imgBorder"]
 > ![Inviare commenti e suggerimenti](../media/page-diagnostics-for-spo/pagediag-feedback.png)
   
-## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>Installare lo strumento Diagnostica pagine per SharePoint
+## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>Installare lo strumento Diagnostica pagine per SharePoint pagina
 
-La procedura di installazione descritta in questa sezione funziona sia per i browser Chrome che per i browser Microsoft Edge.
+La procedura di installazione descritta in questa sezione funziona sia per i browser Chrome che Microsoft Edge browser.
 
 > [!IMPORTANT]
 > Microsoft non legge i dati o il contenuto della pagina analizzato dallo strumento Diagnostica pagine per SharePoint e non acquisisce informazioni personali, siti Web o download. L'unica informazione identificabile registrata a Microsoft dallo strumento è il nome del tenant, i conteggi delle regole non riuscite e la data e l'ora di esecuzione dello strumento. Queste informazioni vengono utilizzate da Microsoft per comprendere meglio le tendenze moderne di utilizzo del portale e del sito di pubblicazione e i problemi comuni relativi alle prestazioni.
 
-1. Installare lo strumento Diagnostica pagine per SharePoint per **Microsoft Edge** [(estensione Edge)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) o **Chrome** [(estensione Chrome).](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) Leggi l'Informativa sulla privacy dell'utente fornita nella pagina di descrizione nello Store. Quando aggiungi lo strumento al browser, viene visualizzato il seguente avviso sulle autorizzazioni.
+1. Installa diagnostica pagine per SharePoint per **Microsoft Edge** [(estensione Edge)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) o **Chrome** [(estensione Chrome).](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) Leggi l'Informativa sulla privacy dell'utente fornita nella pagina di descrizione nello Store. Quando aggiungi lo strumento al browser, viene visualizzato il seguente avviso sulle autorizzazioni.
 
     > [!div class="mx-imgBorder"]
     > ![Autorizzazioni di estensione](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
-    Questa notifica è disponibile perché una pagina può contenere contenuto da posizioni esterne a SharePoint a seconda delle web part e delle personalizzazioni della pagina. Ciò significa che lo strumento leggerà le richieste e le risposte quando si fa clic sul pulsante Start e solo per la scheda di SharePoint attiva in cui è in esecuzione lo strumento. Queste informazioni vengono acquisite localmente dal Web browser ed è disponibile tramite il pulsante  Esporta in **JSON** o Esporta in **HAR** nella scheda Traccia di rete dello strumento. Le informazioni non vengono inviate o acquisite da **Microsoft.** (Lo strumento rispetta l'informativa sulla privacy Microsoft accessibile [qui.)](https://go.microsoft.com/fwlink/p/?linkid=857875)
+    Questa notifica è disponibile perché una pagina può contenere contenuto da posizioni esterne SharePoint a seconda delle web part e delle personalizzazioni della pagina. Ciò significa che lo strumento leggerà le richieste e le risposte quando si fa clic sul pulsante Start e solo per la scheda SharePoint attiva in cui è in esecuzione lo strumento. Queste informazioni vengono acquisite localmente dal Web browser ed è disponibile tramite il pulsante  Esporta in **JSON** o Esporta in **HAR** nella scheda Traccia di rete dello strumento. Le informazioni non vengono inviate o acquisite da **Microsoft.** (Lo strumento rispetta l'informativa sulla privacy Microsoft accessibile [qui.)](https://go.microsoft.com/fwlink/p/?linkid=857875)
 
     _L'autorizzazione Gestisci i download_ illustra l'uso della funzionalità Esporta in **JSON** dello strumento. Seguire le linee guida sulla privacy dell'azienda prima di condividere il file JSON all'esterno dell'organizzazione, poiché i risultati contengono URL e possono essere classificati come informazioni personali (Informazioni personali).
 1. Se vuoi usare lo strumento in modalità Incognito o InPrivate, segui la procedura per il browser:
-    1. In Microsoft Edge, accedere a **Estensioni** o digitare _edge://extensions_ nella barra dell'URL e selezionare **Dettagli** per l'estensione. Nelle impostazioni dell'estensione seleziona la casella di controllo Consenti **in InPrivate.**
+    1. In Microsoft Edge, passare a **Estensioni** o digitare _edge://extensions_ nella barra dell'URL e selezionare **Dettagli** per l'estensione. Nelle impostazioni dell'estensione seleziona la casella di controllo Consenti **in InPrivate.**
     1. In Chrome, accedere a **Estensioni** o digitare _chrome://extensions_ nella barra dell'URL e selezionare **Dettagli** per l'estensione. Nelle impostazioni dell'estensione seleziona il dispositivo di scorrimento consenti **in Incognito.**
-1. Passare alla pagina del sito di SharePoint in SharePoint Online che si desidera esaminare. È stato consentito il "caricamento ritardato" degli elementi nelle pagine. di conseguenza, lo strumento non si arresterà automaticamente (questo è progettato per supportare tutti gli scenari di caricamento delle pagine). Per interrompere la raccolta, selezionare **Interrompi.** Assicurarsi che il caricamento della pagina sia stato completato prima di arrestare la raccolta dati oppure si acquisisce solo una traccia parziale.
-1. Fare clic sul pulsante della barra degli strumenti dell'estensione ![Diagnostica pagine per il logo di SharePoint](../media/page-diagnostics-for-spo/pagediag-icon32.png) per caricare lo strumento e verrà visualizzata la finestra popup di estensione seguente:
+1. Passare alla pagina SharePoint sito di SharePoint online che si desidera esaminare. È stato consentito il "caricamento ritardato" degli elementi nelle pagine. di conseguenza, lo strumento non si arresterà automaticamente (questo è progettato per supportare tutti gli scenari di caricamento delle pagine). Per interrompere la raccolta, selezionare **Interrompi.** Assicurarsi che il caricamento della pagina sia stato completato prima di arrestare la raccolta dati oppure si acquisisce solo una traccia parziale.
+1. Fare clic sul pulsante della barra degli strumenti dell'estensione ![Diagnostica pagine per SharePoint logo](../media/page-diagnostics-for-spo/pagediag-icon32.png) per caricare lo strumento e verrà visualizzata la finestra popup di estensione seguente:
 
     ![Popup dello strumento Diagnostica pagine](../media/page-diagnostics-for-spo/pagediag-Landing.png)
 
 Selezionare **Avvia per** iniziare a raccogliere dati per l'analisi.
 
-## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>Cosa verrà visualizzato nello strumento Diagnostica pagine per SharePoint
+## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>Cosa vedrai nello strumento Diagnostica pagine per SharePoint pagina
 
 1. Fare clic sui puntini di sospensione (...) nell'angolo superiore destro dello strumento per trovare i collegamenti seguenti:
    1. Il **collegamento Risorse** aggiuntive fornisce indicazioni generali e dettagli relativi a questo strumento, incluso un collegamento a questo articolo.
-   1. Il **collegamento Invia commenti** e suggerimenti fornisce un collegamento al sito Di _SharePoint Sites and Collaboration User Voice._
+   1. Il **collegamento Invia commenti** e suggerimenti fornisce un collegamento al sito SharePoint Siti e Collaboration User _Voice._
    1. Il **collegamento** Informazioni include la versione attualmente installata dello strumento e un collegamento diretto all'avviso di terze parti dello strumento.  
 1. L'ID di **correlazione, SPRequestDuration, SPIISLatency,** **il** tempo di caricamento della pagina e i dettagli **dell'URL** sono in formato informativo e possono essere utilizzati per alcuni scopi.
 
@@ -91,8 +91,8 @@ Selezionare **Avvia per** iniziare a raccogliere dati per l'analisi.
     > ![Dettagli di diagnostica delle pagine](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
    - **CorrelationID** è un elemento importante quando si utilizza il supporto Tecnico Microsoft perché consente loro di raccogliere dati di diagnostica aggiuntivi per la pagina specifica.
-   - **SPRequestDuration** è il tempo impiegato da SharePoint per elaborare la pagina. L'esplorazione strutturale, le immagini di grandi dimensioni e molte chiamate API potrebbero contribuire a durate più lunghe.
-   - **SPIISLatency è** il tempo in millisecondi impiegato per l'avvio del caricamento della pagina da parte di SharePoint Online. Questo valore non include il tempo impiegato dall'applicazione Web per rispondere.
+   - **SPRequestDuration** è il tempo necessario SharePoint per elaborare la pagina. L'esplorazione strutturale, le immagini di grandi dimensioni e molte chiamate API potrebbero contribuire a durate più lunghe.
+   - **SPIISLatency è** il tempo in millisecondi impiegato per SharePoint online iniziare a caricare la pagina. Questo valore non include il tempo impiegato dall'applicazione Web per rispondere.
    - **Il tempo di caricamento** della pagina è il tempo totale registrato dalla pagina dal momento della richiesta al momento in cui la risposta è stata ricevuta e sottoposta a rendering nel browser. Questo valore è influenzato da una serie di fattori, tra cui la latenza di rete, le prestazioni del computer e il tempo necessario al browser per caricare la pagina.
    - **L'URL** pagina (Uniform Resource Locator) è l'indirizzo Web della pagina corrente.
 
@@ -111,7 +111,7 @@ Selezionare **Avvia per** iniziare a raccogliere dati per l'analisi.
 
 ## <a name="how-to-use-the-diagnostic-tests-tab"></a>Come usare la scheda Test di diagnostica
 
-Quando si analizza una pagina del portale moderno di SharePoint o una pagina del sito di pubblicazione classica con lo strumento Diagnostica pagine per SharePoint, i risultati vengono analizzati utilizzando regole predefinite che confrontano i risultati con i valori di base e vengono visualizzati nella scheda **Test** di diagnostica. Le regole per determinati test possono utilizzare valori di base diversi per i portali moderni e i siti di pubblicazione classici a seconda di come caratteristiche specifiche delle prestazioni differiscono tra i due.
+Quando si analizza una pagina del portale moderna di SharePoint o una pagina del sito di pubblicazione classica con lo strumento Diagnostica pagine per SharePoint, i risultati vengono analizzati utilizzando regole predefinite che confrontano i risultati con i valori di base e vengono visualizzati nella scheda **Test** di diagnostica. Le regole per determinati test possono utilizzare valori di base diversi per i portali moderni e i siti di pubblicazione classici a seconda di come caratteristiche specifiche delle prestazioni differiscono tra i due.
 
 I risultati dei test visualizzati  nelle categorie **Opportunità** di miglioramento o Attenzione obbligatoria indicano le aree che devono essere esaminate rispetto alle procedure consigliate e possono essere selezionate per visualizzare informazioni aggiuntive sul risultato. I dettagli per ogni elemento includono _un_ collegamento Ulteriori informazioni che consente di accedere direttamente alle indicazioni appropriate relative al test. I risultati dei test visualizzati nella **categoria Nessuna** azione richiesta indicano la conformità alla regola rilevante e non visualizzano ulteriori dettagli quando sono selezionati.
 
@@ -120,14 +120,14 @@ Le informazioni nella scheda Test di diagnostica non illustrano come progettare 
 I risultati in rosso o in giallo possono inoltre indicare web part che aggiornano i dati troppo di frequente. Ad esempio, le notizie aziendali non vengono aggiornate ogni secondo, ma spesso le web part personalizzate vengono create per recuperare le ultime notizie ogni secondo invece di implementare elementi di memorizzazione nella cache che potrebbero migliorare l'esperienza utente complessiva. Quando si includono web part in una pagina, tenere presente che spesso esistono modi semplici per ridurre l'impatto sulle prestazioni valutando il valore di ogni parametro disponibile per assicurarsi che sia impostato in modo appropriato per lo scopo previsto.
 
 >[!NOTE]
->I siti del team classici in cui non è abilitata la caratteristica di pubblicazione non possono utilizzare reti CDN. Quando si esegue lo strumento in questi siti, si prevede che il test della rete CDN avrà esito negativo e può essere ignorato, ma tutti i test rimanenti sono applicabili. Le funzionalità aggiuntive della funzionalità di pubblicazione di SharePoint possono aumentare i tempi di caricamento delle pagine, pertanto non deve essere abilitata solo per consentire la funzionalità cdn.
+>I siti del team classici in cui non è abilitata la caratteristica di pubblicazione non possono utilizzare reti CDN. Quando si esegue lo strumento in questi siti, si prevede che il test di rete CDN avrà esito negativo e può essere ignorato, ma tutti i test rimanenti sono applicabili. Le funzionalità aggiuntive della funzionalità di SharePoint di pubblicazione possono aumentare i tempi di caricamento delle pagine, pertanto non deve essere abilitata solo per consentire rete CDN funzionalità.
 
 >[!IMPORTANT]
 >Le regole di test vengono aggiunte e aggiornate regolarmente, quindi fare riferimento alla versione più recente dello strumento per informazioni dettagliate sulle regole correnti e informazioni specifiche incluse nei risultati dei test. Puoi verificare la versione gestendo le estensioni e l'estensione ti consiglierà se è disponibile un aggiornamento.
 
 ## <a name="how-to-use-the-network-trace-tab-and-how-to-export-a-har-file"></a>Come usare la scheda Network Trace e come esportare un file HAR
 
-Nella **scheda Network Trace** sono disponibili informazioni dettagliate su entrambe le richieste di creazione della pagina e sulle risposte ricevute da SharePoint.
+La **scheda Traccia di** rete fornisce informazioni dettagliate su entrambe le richieste per creare la pagina e sulle risposte ricevute da SharePoint.
 
 1. **Cercare i tempi di caricamento degli elementi contrassegnati come rosso.** Ogni richiesta e risposta è codificata a colori per indicarne l'impatto sulle prestazioni complessive della pagina usando le metriche di latenza seguenti:
     - Verde: \< 500 ms
@@ -162,7 +162,7 @@ Nessuna modifica è visibile, tranne per il fatto che verrà notificato che è s
 
 ### <a name="to-enable-the-microsoft-support-level-feature"></a>Per abilitare la funzionalità livello di supporto Microsoft
 
-1. Aprire lo strumento Diagnostica pagine per SharePoint.
+1. Apri lo strumento Diagnostica pagine per SharePoint pagina.
 2. Sulla tastiera premere **ALT+MAIUSC+L.** Verrà visualizzata la **casella di controllo Abilita registrazione** supporto.
 3. Selezionare la casella di controllo e quindi fare clic su **Avvia** per ricaricare la pagina e generare la registrazione dettagliata.
 

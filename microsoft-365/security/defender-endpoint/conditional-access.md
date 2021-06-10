@@ -28,7 +28,7 @@ ms.locfileid: "51166198"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
@@ -41,7 +41,7 @@ Con l'accesso condizionale puoi controllare l'accesso alle informazioni aziendal
 
 Puoi definire le condizioni di sicurezza in base alle quali i dispositivi e le applicazioni possono eseguire e accedere alle informazioni dalla rete, mediante l'applicazione di criteri per impedire l'esecuzione delle applicazioni fino a quando un dispositivo non torna a uno stato conforme. 
 
-L'implementazione dell'accesso condizionale in Defender for Endpoint si basa sui criteri di conformità dei dispositivi di Microsoft Intune (Intune) e sui criteri di accesso condizionale di Azure Active Directory (Azure AD). 
+L'implementazione dell'accesso condizionale in Defender for Endpoint si basa sui criteri di conformità dei dispositivi Microsoft Intune (Intune) e sui criteri di accesso condizionale Azure Active Directory (Azure AD). 
 
 I criteri di conformità vengono utilizzati con l'accesso condizionale per consentire l'accesso alle applicazioni solo ai dispositivi che soddisfano una o più regole dei criteri di conformità dei dispositivi. 
 
