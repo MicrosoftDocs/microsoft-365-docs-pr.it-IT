@@ -24,7 +24,7 @@ landingContent:
     links:
     - text: Esaminare le opzioni di protezione dei dati di dispositivi e app
       url: choose-device-security.md
-- title: Gestire i dispositivi e i dati delle app con Microsoft Intune
+- title: Gestire dispositivi e dati dell'app con Microsoft Intune
   linkLists:
   - linkListType: overview
     links:
@@ -32,7 +32,7 @@ landingContent:
       url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
-    - text: Configurare la registrazione automatica per i dispositivi Windows 10
+    - text: Configurare la registrazione automatica per Windows 10 dispositivi
       url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: Configurare la registrazione Android
       url: /mem/intune/enrollment/android-enroll
@@ -46,9 +46,9 @@ landingContent:
       url: ../../business/view-policies-and-devices.md
     - text: Rimuovere i dati aziendali dai dispositivi
       url: ../../business/remove-company-data.md
-    - text: Ripristinare le impostazioni predefinite dei dispositivi Windows
+    - text: Reimpostare Windows dispositivi alle impostazioni di fabbrica
       url: ../../business/reset-devices-to-factory-settings.md
-- title: Gestire i dispositivi e i dati delle app con Microsoft 365 per le aziende
+- title: Gestire dispositivi e dati delle app con Microsoft 365 per le aziende
   linkLists:
   - linkListType: overview
     links:
