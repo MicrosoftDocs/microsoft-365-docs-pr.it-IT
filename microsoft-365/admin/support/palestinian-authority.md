@@ -19,30 +19,30 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297897"
 ---
-# <a name="contact-support-for-palestinian-authority"></a><span data-ttu-id="08e0b-103">Contattare il supporto per l'Autorità palestinese</span><span class="sxs-lookup"><span data-stu-id="08e0b-103">Contact support for Palestinian Authority</span></span>
+# <a name="contact-support-for-palestinian-authority"></a><span data-ttu-id="b8bef-103">Contattare il supporto per l'Autorità palestinese</span><span class="sxs-lookup"><span data-stu-id="b8bef-103">Contact support for Palestinian Authority</span></span>
 
-<span data-ttu-id="08e0b-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="08e0b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="b8bef-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b8bef-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="08e0b-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="08e0b-105">Phone number</span></span>
-<span data-ttu-id="08e0b-106">+962 6 5503451</span><span class="sxs-lookup"><span data-stu-id="08e0b-106">+962 6 5503451</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b8bef-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="b8bef-105">Phone number</span></span>
+<span data-ttu-id="b8bef-106">+962 6 5503451</span><span class="sxs-lookup"><span data-stu-id="b8bef-106">+962 6 5503451</span></span>
 
-<span data-ttu-id="08e0b-107">Selezionare l'opzione 1</span><span class="sxs-lookup"><span data-stu-id="08e0b-107">Select option 1</span></span>
+<span data-ttu-id="b8bef-107">Selezionare l'opzione 1</span><span class="sxs-lookup"><span data-stu-id="b8bef-107">Select option 1</span></span>
 
-<span data-ttu-id="08e0b-108">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="08e0b-108">Select option 9</span></span>
+<span data-ttu-id="b8bef-108">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="b8bef-108">Select option 9</span></span>
 
-<span data-ttu-id="08e0b-109">Immettere il codice 7702</span><span class="sxs-lookup"><span data-stu-id="08e0b-109">Enter code 7702</span></span>
+<span data-ttu-id="b8bef-109">Immettere il codice 7702</span><span class="sxs-lookup"><span data-stu-id="b8bef-109">Enter code 7702</span></span>
 
-## <a name="hours"></a><span data-ttu-id="08e0b-110">Ore</span><span class="sxs-lookup"><span data-stu-id="08e0b-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="08e0b-111">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="08e0b-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b8bef-110">Ore</span><span class="sxs-lookup"><span data-stu-id="b8bef-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b8bef-111">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="b8bef-111">Billing Support:</span></span>
 
-<span data-ttu-id="08e0b-112">Arabo: Sun-Thu dalle 10.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="08e0b-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="b8bef-112">Arabo: Sun-Thu dalle 10.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="b8bef-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="08e0b-113">Inglese: Mon-Fri 10.00-18.00</span><span class="sxs-lookup"><span data-stu-id="08e0b-113">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="b8bef-113">Inglese: Mon-Fri 10.00-18.00</span><span class="sxs-lookup"><span data-stu-id="b8bef-113">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="08e0b-114">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="08e0b-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b8bef-114">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="b8bef-114">Technical Support:</span></span>
 
-<span data-ttu-id="08e0b-115">Arabo: Sun-Thu dalle 10.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="08e0b-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="b8bef-115">Arabo: Sun-Thu dalle 10.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="b8bef-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="08e0b-116">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="08e0b-116">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b8bef-116">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="b8bef-116">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="08e0b-117">Si applicano i costi delle chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="08e0b-117">International call charges apply</span></span>
+<span data-ttu-id="b8bef-117">Si applicano i costi delle chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="b8bef-117">International call charges apply</span></span>

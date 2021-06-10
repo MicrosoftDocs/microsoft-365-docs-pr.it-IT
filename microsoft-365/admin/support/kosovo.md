@@ -19,20 +19,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298470"
 ---
-# <a name="contact-support-for-kosovo"></a><span data-ttu-id="42fe4-103">Contattare il supporto per il Kosovo</span><span class="sxs-lookup"><span data-stu-id="42fe4-103">Contact support for Kosovo</span></span>
+# <a name="contact-support-for-kosovo"></a><span data-ttu-id="fb8a2-103">Contattare il supporto per il Kosovo</span><span class="sxs-lookup"><span data-stu-id="fb8a2-103">Contact support for Kosovo</span></span>
 
-<span data-ttu-id="42fe4-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="42fe4-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="fb8a2-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="fb8a2-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="42fe4-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="42fe4-105">Phone number</span></span>
-<span data-ttu-id="42fe4-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="42fe4-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="fb8a2-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="fb8a2-105">Phone number</span></span>
+<span data-ttu-id="fb8a2-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="fb8a2-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="42fe4-107">Ore</span><span class="sxs-lookup"><span data-stu-id="42fe4-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="42fe4-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="42fe4-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="fb8a2-107">Ore</span><span class="sxs-lookup"><span data-stu-id="fb8a2-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="fb8a2-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="fb8a2-108">Billing Support:</span></span>
 
-<span data-ttu-id="42fe4-109">Inglese: Mon-Fri 11.00-19.00</span><span class="sxs-lookup"><span data-stu-id="42fe4-109">English: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="fb8a2-109">Inglese: Mon-Fri 11.00-19.00</span><span class="sxs-lookup"><span data-stu-id="fb8a2-109">English: Mon-Fri 11 AM-7 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="42fe4-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="42fe4-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="fb8a2-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="fb8a2-110">Technical Support:</span></span>
 
-<span data-ttu-id="42fe4-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="42fe4-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="fb8a2-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="fb8a2-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="42fe4-112">Si applicano i costi delle chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="42fe4-112">International call charges apply</span></span>
+<span data-ttu-id="fb8a2-112">Si applicano i costi delle chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="fb8a2-112">International call charges apply</span></span>
