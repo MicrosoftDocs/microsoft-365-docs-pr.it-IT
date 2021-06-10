@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536179"
 ---
-# <a name="payment-information-for-virgin-islands-us"></a><span data-ttu-id="54dfa-103">Informazioni di pagamento per Isole Vergini, Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="54dfa-103">Payment information for Virgin Islands, US</span></span>
+# <a name="payment-information-for-virgin-islands-us"></a><span data-ttu-id="4d958-103">Informazioni di pagamento per Isole Vergini, Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="4d958-103">Payment information for Virgin Islands, US</span></span>
 
-<span data-ttu-id="54dfa-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="54dfa-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="4d958-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="4d958-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="54dfa-105">Pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="54dfa-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="4d958-105">Pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="4d958-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="54dfa-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="54dfa-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="4d958-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="4d958-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="54dfa-107">**Banca:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="54dfa-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="54dfa-108">**Ramo:** Dallas</span><span class="sxs-lookup"><span data-stu-id="54dfa-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="54dfa-109">**Codice SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="54dfa-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="54dfa-110">**Numero account:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="54dfa-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="54dfa-111">**Nome account:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="54dfa-111">**Account Name:** Microsoft</span></span>
+<span data-ttu-id="4d958-107">**Banca:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="4d958-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="4d958-108">**Ramo:** Dallas</span><span class="sxs-lookup"><span data-stu-id="4d958-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="4d958-109">**Codice SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="4d958-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="4d958-110">**Numero account:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="4d958-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="4d958-111">**Nome account:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="4d958-111">**Account Name:** Microsoft</span></span>

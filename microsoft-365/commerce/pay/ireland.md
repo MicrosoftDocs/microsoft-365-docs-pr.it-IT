@@ -20,17 +20,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536611"
 ---
-# <a name="payment-information-for-ireland"></a><span data-ttu-id="39dc6-103">Informazioni di pagamento per l'Irlanda</span><span class="sxs-lookup"><span data-stu-id="39dc6-103">Payment information for Ireland</span></span>
+# <a name="payment-information-for-ireland"></a><span data-ttu-id="aa11f-103">Informazioni di pagamento per l'Irlanda</span><span class="sxs-lookup"><span data-stu-id="aa11f-103">Payment information for Ireland</span></span>
 
-<span data-ttu-id="39dc6-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="39dc6-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="aa11f-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="aa11f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="39dc6-105">Pagare solo in EUR e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="39dc6-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="aa11f-105">Pagare solo in EUR e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="aa11f-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="39dc6-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="39dc6-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="aa11f-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="aa11f-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="39dc6-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="39dc6-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="39dc6-108">**Codice SWIFT/BIC:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="39dc6-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="39dc6-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="39dc6-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="39dc6-110">**Sort Code:** 185008</span><span class="sxs-lookup"><span data-stu-id="39dc6-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="39dc6-111">**Numero account:** 12207591</span><span class="sxs-lookup"><span data-stu-id="39dc6-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="39dc6-112">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="39dc6-112">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="aa11f-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="aa11f-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="aa11f-108">**Codice SWIFT/BIC:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="aa11f-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="aa11f-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="aa11f-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="aa11f-110">**Sort Code:** 185008</span><span class="sxs-lookup"><span data-stu-id="aa11f-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="aa11f-111">**Numero account:** 12207591</span><span class="sxs-lookup"><span data-stu-id="aa11f-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="aa11f-112">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="aa11f-112">**Account Name:** MICROSOFT</span></span>

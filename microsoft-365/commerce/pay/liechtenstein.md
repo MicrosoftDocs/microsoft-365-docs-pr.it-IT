@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536443"
 ---
-# <a name="payment-information-for-liechtenstein"></a><span data-ttu-id="0a049-103">Informazioni di pagamento per Liechtenstein</span><span class="sxs-lookup"><span data-stu-id="0a049-103">Payment information for Liechtenstein</span></span>
+# <a name="payment-information-for-liechtenstein"></a><span data-ttu-id="da507-103">Informazioni di pagamento per Liechtenstein</span><span class="sxs-lookup"><span data-stu-id="da507-103">Payment information for Liechtenstein</span></span>
 
-<span data-ttu-id="0a049-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="0a049-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="da507-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="da507-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="0a049-105">Pagare solo in CHF e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="0a049-105">Please pay in CHF only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="da507-105">Pagare solo in CHF e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="da507-105">Please pay in CHF only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="0a049-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="0a049-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="da507-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="da507-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="0a049-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="0a049-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="0a049-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="0a049-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="0a049-109">**IBAN:** GB44CITI18500812207648</span><span class="sxs-lookup"><span data-stu-id="0a049-109">**IBAN:** GB44CITI18500812207648</span></span>  
-<span data-ttu-id="0a049-110">**Numero account:** 12207648</span><span class="sxs-lookup"><span data-stu-id="0a049-110">**Account Number:** 12207648</span></span>  
-<span data-ttu-id="0a049-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="0a049-111">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="da507-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="da507-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="da507-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="da507-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="da507-109">**IBAN:** GB44CITI18500812207648</span><span class="sxs-lookup"><span data-stu-id="da507-109">**IBAN:** GB44CITI18500812207648</span></span>  
+<span data-ttu-id="da507-110">**Numero account:** 12207648</span><span class="sxs-lookup"><span data-stu-id="da507-110">**Account Number:** 12207648</span></span>  
+<span data-ttu-id="da507-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="da507-111">**Account Name:** MICROSOFT</span></span>

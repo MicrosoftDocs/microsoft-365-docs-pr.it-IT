@@ -20,18 +20,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536563"
 ---
-# <a name="payment-information-for-japan"></a><span data-ttu-id="9e46e-103">Informazioni di pagamento per il Giappone</span><span class="sxs-lookup"><span data-stu-id="9e46e-103">Payment information for Japan</span></span>
+# <a name="payment-information-for-japan"></a><span data-ttu-id="dc2ff-103">Informazioni di pagamento per il Giappone</span><span class="sxs-lookup"><span data-stu-id="dc2ff-103">Payment information for Japan</span></span>
 
-<span data-ttu-id="9e46e-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="9e46e-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="dc2ff-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="dc2ff-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="9e46e-105">Pagare solo in JPY e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="9e46e-105">Please pay in JPY only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="dc2ff-105">Pagare solo in JPY e fare riferimento ai numeri di fattura sulla rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="dc2ff-105">Please pay in JPY only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="9e46e-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="9e46e-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="dc2ff-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="dc2ff-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="9e46e-107">**Banca:** Citibank, N.A</span><span class="sxs-lookup"><span data-stu-id="9e46e-107">**Bank:** Citibank, N.A</span></span>  
-<span data-ttu-id="9e46e-108">**ID banca:** 0401</span><span class="sxs-lookup"><span data-stu-id="9e46e-108">**Bank ID:** 0401</span></span>  
-<span data-ttu-id="9e46e-109">**Ramo:** Filiale di Tokyo</span><span class="sxs-lookup"><span data-stu-id="9e46e-109">**Branch:** Tokyo Branch</span></span>  
-<span data-ttu-id="9e46e-110">**Codice di succursale:** 730</span><span class="sxs-lookup"><span data-stu-id="9e46e-110">**Branch code:** 730</span></span>  
-<span data-ttu-id="9e46e-111">**Codice SWIFT:** CITIJPJT</span><span class="sxs-lookup"><span data-stu-id="9e46e-111">**SWIFT Code:** CITIJPJT</span></span>  
-<span data-ttu-id="9e46e-112">**Numero account:** 160609028</span><span class="sxs-lookup"><span data-stu-id="9e46e-112">**Account Number:** 160609028</span></span>  
-<span data-ttu-id="9e46e-113">**Nome account:** Microsoft Japan Co., Ltd.</span><span class="sxs-lookup"><span data-stu-id="9e46e-113">**Account Name:** Microsoft Japan Co., Ltd.</span></span>
+<span data-ttu-id="dc2ff-107">**Banca:** Citibank, N.A</span><span class="sxs-lookup"><span data-stu-id="dc2ff-107">**Bank:** Citibank, N.A</span></span>  
+<span data-ttu-id="dc2ff-108">**ID banca:** 0401</span><span class="sxs-lookup"><span data-stu-id="dc2ff-108">**Bank ID:** 0401</span></span>  
+<span data-ttu-id="dc2ff-109">**Ramo:** Filiale di Tokyo</span><span class="sxs-lookup"><span data-stu-id="dc2ff-109">**Branch:** Tokyo Branch</span></span>  
+<span data-ttu-id="dc2ff-110">**Codice di succursale:** 730</span><span class="sxs-lookup"><span data-stu-id="dc2ff-110">**Branch code:** 730</span></span>  
+<span data-ttu-id="dc2ff-111">**Codice SWIFT:** CITIJPJT</span><span class="sxs-lookup"><span data-stu-id="dc2ff-111">**SWIFT Code:** CITIJPJT</span></span>  
+<span data-ttu-id="dc2ff-112">**Numero account:** 160609028</span><span class="sxs-lookup"><span data-stu-id="dc2ff-112">**Account Number:** 160609028</span></span>  
+<span data-ttu-id="dc2ff-113">**Nome account:** Microsoft Japan Co., Ltd.</span><span class="sxs-lookup"><span data-stu-id="dc2ff-113">**Account Name:** Microsoft Japan Co., Ltd.</span></span>

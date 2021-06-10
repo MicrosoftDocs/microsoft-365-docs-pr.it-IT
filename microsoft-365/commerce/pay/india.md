@@ -20,8 +20,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536647"
 ---
-# <a name="payment-information-for-india"></a><span data-ttu-id="66f9c-103">Informazioni di pagamento per l'India</span><span class="sxs-lookup"><span data-stu-id="66f9c-103">Payment information for India</span></span>
+# <a name="payment-information-for-india"></a><span data-ttu-id="d9281-103">Informazioni di pagamento per l'India</span><span class="sxs-lookup"><span data-stu-id="d9281-103">Payment information for India</span></span>
 
-<span data-ttu-id="66f9c-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="66f9c-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="d9281-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="d9281-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="66f9c-105">Segui le istruzioni di pagamento sulla fattura e fai riferimento ai numeri di fattura nella rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="66f9c-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="d9281-105">Segui le istruzioni di pagamento sulla fattura e fai riferimento ai numeri di fattura nella rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="d9281-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>
