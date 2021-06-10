@@ -204,7 +204,7 @@ Se il blocco sul posto contiene un numero elevato di cassette postali di origine
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - **Una cassetta postale inattiva è un tipo di cassetta postale con eliminazione temporanea.** In Exchange Online, una cassetta postale con eliminazione temporanea è una cassetta postale che è stata eliminata, ma che può essere recuperata entro un periodo di conservazione specifico. Una cassetta postale in precedenza inattiva sarà disponibile come cassetta postale eliminata in Exchange Online per 183 giorni. Ciò significa che la cassetta postale può essere recuperata entro 183 giorni dall'eliminazione revers. Dopo 183 giorni, una cassetta postale eliminata definitivamente viene contrassegnata per l'eliminazione permanente e non può essere ripristinata.
 

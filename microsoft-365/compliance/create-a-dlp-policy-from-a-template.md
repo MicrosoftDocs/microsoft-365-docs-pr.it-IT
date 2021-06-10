@@ -171,7 +171,7 @@ Di seguito sono riportati i diversi stati e il loro significato.
 |**Test, senza notifiche** <br/> |Il criterio è in modalità test. Le azioni in una regola non sono applicate, ma vengono raccolte le corrispondenze del criterio ed è possibile visualizzarle tramite i report DLP. Le notifiche relative alle corrispondenze del criterio non vengono inviate ai destinatari specificati.  <br/> |
 |**Attivato** <br/> |Il criterio è attivo e applicato. Il criterio è stato distribuito correttamente a tutte le origini del contenuto.  <br/> |
 |**Disattivazione in corso...** <br/> |Il criterio viene rimosso dalle origini del contenuto che include. Il criterio potrebbe essere ancora attivo e applicato in alcune origini. La disattivazione di un criterio potrebbe richiedere fino a 45 minuti.  <br/> |
-|**Off** <br/> |Il criterio non è attivo e non applicato. Le impostazioni del criterio (origini, parole chiave, durata e così via) vengono salvate.  <br/> |
+|**Disattivato** <br/> |Il criterio non è attivo e non applicato. Le impostazioni del criterio (origini, parole chiave, durata e così via) vengono salvate.  <br/> |
 |**Eliminazione in corso...** <br/> |Il criterio è in corso di eliminazione. Il criterio non è attivo e non applicato. In genere, un criterio richiede un'ora per eseguire il delet <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Disattivare un criterio DLP
@@ -184,9 +184,9 @@ Per modificare o disattivare un criterio DLP, nella pagina **Criterio** \> selez
   
 Inoltre, è possibile disattivare ogni regola singolarmente modificando il criterio e quindi disattivando lo **stato** di tale regola, come descritto in precedenza. 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 - [Inviare notifiche e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati](use-notifications-and-policy-tips.md)
 - [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
 - [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)

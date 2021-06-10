@@ -61,7 +61,7 @@ I servizi e le caratteristiche seguenti sono disponibili in alcuni [Piani di abb
     
 - Microsoft 365 Video
     
-- Project per il Web
+- Project per il web
     
 - Visio per il Web
     

@@ -100,7 +100,7 @@ Per istruzioni dettagliate sulla pianificazione e la configurazione della confor
 
 Le etichette di riservatezza, i tipi di informazioni riservate, le etichette e i criteri di conservazione e i classificatori addestrabili possono essere utilizzati per classificare ed etichettare gli elementi sensibili in Exchange, SharePoint e OneDrive come illustrato nelle attività precedenti. L'ultimo passaggio del percorso di attività rapido consiste nel vedere quali elementi sono stati etichettati e quali azioni stanno facendo gli utenti su tali elementi sensibili. [Esplora contenuto ed](data-classification-content-explorer.md) [Esplora attività](data-classification-activity-explorer.md) offrono questa visibilità.
 
-### <a name="content-explorer"></a>Esplora contenuto.
+### <a name="content-explorer"></a>Esplora contenuto
  Esplora contenuto consente di visualizzare, nel formato nativo, tutti gli elementi classificati come tipo di informazioni riservate o appartenenti a una determinata classificazione da un classificatore trainabile, nonché tutti gli elementi a cui è applicata la riservatezza o l'etichetta di conservazione.
 
 Per istruzioni dettagliate sull'uso di Esplora contenuto, vedere [Know your data - data classification overview](data-classification-overview.md)e Get started with content [explorer.](data-classification-content-explorer.md)
@@ -146,7 +146,7 @@ Definire i tipi di informazioni riservate in base al modello contenuto nelle inf
 
 Per istruzioni dettagliate sulla definizione di tipi di informazioni riservate personalizzati, vedere [Create a custom sensitive information type in the Security & Compliance Center.](./create-a-custom-sensitive-information-type.md)
 
-### <a name="prevent-data-loss"></a>Prevenire la perdita di dati
+### <a name="prevent-data-loss"></a>Evitare la perdita di dati
 
 [I criteri di prevenzione della](dlp-learn-about-dlp.md) perdita dei dati consentono di identificare, monitorare e proteggere automaticamente le informazioni riservate nell'Microsoft 365 organizzazione. Utilizzare i criteri DLP per identificare gli elementi sensibili tra servizi Microsoft, impedire la condivisione accidentale di elementi sensibili e aiutare gli utenti a rimanere conformi senza interrompere il flusso di lavoro.
 

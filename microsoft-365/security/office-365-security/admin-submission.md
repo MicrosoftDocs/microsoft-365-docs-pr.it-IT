@@ -51,7 +51,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla **pagina Invio,** usa <https://protection.office.com/reportsubmission> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla **pagina Invio,** usa <https://protection.office.com/reportsubmission> .
 
 - Per inviare messaggi e file a Microsoft, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 

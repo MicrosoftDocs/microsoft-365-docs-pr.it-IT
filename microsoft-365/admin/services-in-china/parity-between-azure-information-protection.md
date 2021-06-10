@@ -137,7 +137,7 @@ Accedere al provider DNS, accedere alle impostazioni DNS per il dominio e quindi
 
 Scaricare e installare il client di etichettatura unificato AIP [dall'Area download Microsoft.](https://www.microsoft.com/download/details.aspx?id=53018)
 
-Per altre informazioni, vedi:
+Per altre informazioni, vedere:
 
 - [Documentazione AIP](/azure/information-protection/)
 - [Cronologia delle versioni AIP e criteri di supporto](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
@@ -281,7 +281,7 @@ Nella tabella seguente sono elencati i cmdlet di PowerShell rilevanti per l'inst
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definisce le impostazioni per un archivio esistente nel processo di analisi del contenuto. |
 | | |
 
-Per altre informazioni, vedi:
+Per altre informazioni, vedere:
 
 - [Che cos'è lo scanner di etichettatura unificato di Azure Information Protection?](/azure/information-protection/deploy-aip-scanner)
 - [Configurazione e installazione dello scanner di etichettatura unificato di Azure Information Protection (AIP)](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=powershell-only)

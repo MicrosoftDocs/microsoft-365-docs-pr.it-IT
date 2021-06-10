@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Gli utenti con account aziendali o dell'istituto di istruzione validi possono ottenere Cortana in Microsoft 365 esperienze che soddisfano Office 365 promesse di sicurezza a livello aziendale.
-ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e4b934a8991837637869074d43df89e70b09924d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635799"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866620"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -89,19 +89,17 @@ L'assistenza vocale di Cortana nell'app Teams per dispositivi mobili e nei dispo
 
 **Controllo amministratore**
 
-L'assistenza vocale di Cortana verrà abilitata per impostazione predefinita per i tenant. Gli amministratori possono controllare chi nel tenant può usare l'assistenza vocale di Cortana Teams tramite un criterio (TeamsCortanaPolicy). Questo criterio può essere impostato a livello di account utente o tenant. Gli amministratori possono anche usare il campo CortanaVoiceInvocationMode all'interno di questo controllo dei criteri per determinare se Cortana è disabilitata, abilitata solo con la chiamata al pulsante push o abilitata anche con la chiamata della parola di riattivazione (applicabile anche ai dispositivi che la supportano, come lo schermo Microsoft Teams). Tieni presente che al momento della versione iniziale per gli utenti di Microsoft 365 Enterprise negli Stati Uniti in inglese, l'app per dispositivi mobili Teams non supporterà l'attivazione delle parole di attivazione, ma sarà supportata in futuro.
+L'assistenza vocale di Cortana verrà abilitata per impostazione predefinita per i tenant. Gli amministratori possono controllare chi nel tenant può usare l'assistenza vocale di Cortana Teams tramite un criterio (TeamsCortanaPolicy). Questo criterio può essere impostato a livello di account utente o tenant. Gli amministratori possono anche usare il campo CortanaVoiceInvocationMode all'interno di questo controllo dei criteri per determinare se Cortana è disabilitata, abilitata solo con la chiamata al pulsante push o abilitata anche con la chiamata della parola di riattivazione (applicabile anche ai dispositivi che la supportano, come lo schermo Microsoft Teams). 
 
 **Controllo utente**
 
-I singoli utenti possono provare l'assistenza vocale di Cortana nell'app Teams per dispositivi mobili facendo clic sul pulsante del microfono. Possono provare l'assistenza vocale di Cortana nei dispositivi di visualizzazione Microsoft Teams semplicemente pronunciando &#8220;Cortana.&#8221; Possono anche controllare se Cortana in Teams è abilitata per il dispositivo tramite un'impostazione nell'app per dispositivi mobili Teams o sullo schermo di Microsoft Teams: 
+I singoli utenti possono provare l'assistenza vocale di Cortana nell'app Teams per dispositivi mobili facendo clic sul pulsante del microfono. Possono provare l'assistenza vocale di Cortana nei dispositivi di visualizzazione Microsoft Teams semplicemente pronunciando &#8220;Cortana.&#8221; Possono anche controllare se Cortana risponde alla chiamata della parola di riattivazione. 
 
-1. Apri l Teams'app per dispositivi mobili o vai alla schermata ambientale (home) del display Microsoft Teams schermo.
+1.  Aprire Teams mobile
+2.  Passare a Impostazioni
+3.  Seleziona Cortana
+4.  Cambiare l'interruttore attivazione vocale
 
-2. Nell'Teams per dispositivi mobili vai a **Impostazioni**. Nella visualizzazione Microsoft Teams, selezionare l'avatar dell'utente e quindi selezionare Impostazioni. Se Cortana è abilitata, ad esempio, &#8220;Cortana, vai a Impostazioni.&#8221;
-
-3. Seleziona **Cortana.**
-
-4. Sposta l'interruttore **su Attivato** **o Disattivato,** a seconda che tu voglia assistenza vocale Cortana nel dispositivo.
 
 [Altre informazioni sull'assistenza vocale di Cortana in Teams](/microsoftteams/cortana-in-teams)
 

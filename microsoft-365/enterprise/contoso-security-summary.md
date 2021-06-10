@@ -52,7 +52,7 @@ Contoso ha seguito questi passaggi per preparare la sicurezza per la distribuzio
 
 Per seguire le procedure consigliate per la sicurezza e Microsoft 365 per i requisiti di distribuzione aziendale, gli amministratori della sicurezza di Contoso e il relativo reparto IT hanno distribuito molte funzionalità e funzionalità di sicurezza, come descritto nelle sezioni seguenti.
 
-## <a name="identity-and-access-management"></a>Gestione di identità e accesso 
+## <a name="identity-and-access-management"></a>Gestione delle identità e degli accessi 
 
 - Account di amministratore globale dedicati con MFA e PIM
 

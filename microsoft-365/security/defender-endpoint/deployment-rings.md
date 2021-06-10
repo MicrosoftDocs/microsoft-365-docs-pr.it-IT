@@ -108,7 +108,7 @@ Usa il materiale seguente per selezionare l'architettura appropriata di Microsof
 ### <a name="windows-endpoints"></a>Windows endpoint
 Per Windows e/o Windows Server, è possibile selezionare più computer da testare in anticipo (prima della patch di martedì) utilizzando il programma Di convalida degli aggiornamenti della sicurezza **(SUVP).**
 
-Per ulteriori informazioni, vedere:
+Per altre informazioni, vedere:
 - [Che cos'è il programma di convalida degli aggiornamenti della sicurezza](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Software Update Validation Program and Microsoft Malware Protection Center Establishment - TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 

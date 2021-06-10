@@ -21,13 +21,13 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sulle proprietà di posta elettronica e file che è possibile cercare utilizzando gli strumenti di ricerca di eDiscovery in Microsoft 365.
-ms.openlocfilehash: 390477012c6a2a57c5e305641ba5b79ff10f4ea7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Informazioni sulle proprietà della posta elettronica e del documento in cui è possibile eseguire ricerche utilizzando gli strumenti di ricerca di eDiscovery in Microsoft 365.
+ms.openlocfilehash: 1e6612d658ff2fbcbee36b64dab9d352663f75b2
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538436"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866704"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Query con parole chiave e condizioni di ricerca per eDiscovery
 
@@ -252,7 +252,7 @@ Creare una condizione utilizzando le proprietà del documento durante la ricerca
 |Titolo|Il titolo del documento. La proprietà Title è rappresentata dai metadati specificati nei documenti di Office. È diverso dal nome del file del documento.|
 |Creato|La data di creazione di un documento.|
 |Data ultima modifica|La data dell'ultima modifica di un documento.|
-|Tipo file|Estensione di un file. ad esempio docx, one, pptx o xlsx. Corrisponde alla proprietà dei siti FileExtension.|
+|Tipo file|Estensione di un file. ad esempio docx, one, pptx o xlsx. Corrisponde alla proprietà dei siti FileExtension. <br/><br/> **Nota:** Se si include una condizione di tipo File utilizzando l'operatore **Equals** o **Equals** di qualsiasi operatore in una query di ricerca, non è possibile utilizzare una ricerca di prefissi (includendo il carattere jolly ( * ) alla fine del tipo di file) per restituire tutte le versioni di un tipo di file. In caso contrario, il carattere jolly verrà ignorato. Se ad esempio si include la condizione , verranno restituiti solo i file con `Equals any of doc*` estensione `.doc` di . I file con estensione di `.docx` non verranno restituiti. Per restituire tutte le versioni di un tipo di file, utilizzare la coppia *property:value* in una query con parole chiave. ad `filetype:doc*` esempio.|
 |||
   
 ### <a name="operators-used-with-conditions"></a>Operatori utilizzati con condizioni
@@ -283,21 +283,21 @@ Quando si aggiunge una condizione, è possibile selezionare un operatore pertine
 
 Tenere presente quanto segue quando si utilizzano le condizioni di ricerca.
   
-- Una condizione è collegata logicamente alla query con parola chiave (specificata nella relativa casella) dall'operatore **AND**. Ciò significa che, per essere inclusi nei risultati, gli elementi devono soddisfare sia la query con parola chiave, sia la condizione. Ecco come le condizioni consentono di circoscrivere i risultati. 
-    
-- Se si aggiungono due o più condizioni univoche a una query di ricerca (condizioni che specificano proprietà diverse), tali condizioni vengono connesse logicamente dall'operatore **AND.** Ciò significa che vengono restituiti solo gli elementi che soddisfano tutte le condizioni (oltre alle query con parole chiave). 
-    
+- Una condizione è collegata logicamente alla query con parola chiave (specificata nella relativa casella) dall'operatore **AND**. Ciò significa che, per essere inclusi nei risultati, gli elementi devono soddisfare sia la query con parola chiave, sia la condizione. Ecco come le condizioni consentono di circoscrivere i risultati.
+  
+- Se si aggiungono due o più condizioni a una query di ricerca (condizioni che specificano proprietà diverse), queste sono collegate logicamente dall'operatore **AND**. Ciò significa che vengono restituiti solo gli elementi che soddisfano tutte le condizioni (oltre alle query con parole chiave).
+  
 - Se si aggiunge più di una condizione per la stessa proprietà, tali condizioni vengono collegate logicamente dall'operatore **OR**. Ciò significa che vengono restituiti gli elementi che soddisfano la query con parola chiave e una delle condizioni. Pertanto, i gruppi con le stesse condizioni vengono collegati tra loro dall'operatore **OR**, quindi gli insiemi di condizioni univoche vengono collegati dall'operatore **AND**. 
-    
-- Se si aggiungono più valori (separati da virgole o punti e virgola) a una singola condizione, tali valori vengono connessi tramite l'operatore **OR.** Ciò significa che gli elementi vengono restituiti se contengono uno dei valori specificati per la proprietà nella condizione. 
-    
-- La query di ricerca creata utilizzando la casella delle  parole chiave e le condizioni viene visualizzata nella pagina Ricerca, nel riquadro dei dettagli per la ricerca selezionata. In una query, tutto a destra della notazione indica le  `(c:c)` condizioni aggiunte alla query. 
-    
-- Le condizioni aggiungono solo le proprietà alla query di ricerca, non gli operatori. Per questo motivo la query visualizzata nel riquadro dei dettagli non mostra gli operatori a destra della  `(c:c)` notazione. KQL aggiunge gli operatori logici (in base alle regole illustrate in precedenza) quando viene eseguita la query. 
-    
+  
+- Se si aggiungono più valori (separati da virgole o due punti) a una singola condizione, tali valori vengono collegati dall'operatore **OR**. Di conseguenza, vengono restituiti elementi se contengono uno qualsiasi dei valori specificati per la proprietà nella condizione. 
+  
+- La query di ricerca creata utilizzando la casella delle  parole chiave e le condizioni viene visualizzata nella pagina Ricerca, nel riquadro dei dettagli per la ricerca selezionata. In una query, tutto a destra della notazione indica le  `(c:c)` condizioni aggiunte alla query.
+  
+- Le condizioni aggiungono solo le proprietà alla query di ricerca, non gli operatori. Per questo motivo la query visualizzata nel riquadro dei dettagli non mostra gli operatori a destra della  `(c:c)` notazione. KQL aggiunge gli operatori logici (in base alle regole illustrate in precedenza) quando viene eseguita la query.
+  
 - È possibile utilizzare il controllo di trascinamento della selezione per rieseguire la sequenza dell'ordine delle condizioni. Fare clic sul controllo per una condizione e spostarlo verso l'alto o verso il basso.
-    
-- Come spiegato in precedenza, alcune proprietà della condizione consentono di digitare più valori (separati da punto e virgola). Ogni valore è connesso logicamente dall'operatore **OR** e restituisce la query `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)` . Nella figura seguente viene illustrato un esempio di condizione con più valori.
+  
+- Come spiegato in precedenza, alcune proprietà della condizione consentono di digitare più valori (separati da punto e virgola). Ogni valore è connesso logicamente dall'operatore **OR** e restituisce la query `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)` . Nella figura seguente viene illustrato un esempio di condizione con più valori.
 
     ![Una condizione con più valori](../media/SearchConditions1.png)
   
@@ -372,7 +372,7 @@ Alcuni caratteri speciali non sono inclusi nell'indice di ricerca e pertanto non
 
 - Un collegamento guest anonimo, che consente a chiunque abbia questo collegamento di accedere alla risorsa senza dover essere autenticato.
 
-Ecco alcuni esempi:
+Di seguito vengono descritti alcuni esempi:
   
 - La query  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` restituisce tutti gli elementi che sono stati condivisi con persone esterne all'organizzazione e contengono un numero di carta di credito.
   

@@ -46,7 +46,7 @@ La **funzionalità di protezione degli account** priority descritta in questo ar
 La **Premium di monitoraggio** Flow posta elettronica descritta in questo argomento è disponibile solo per le organizzazioni che soddisfano i requisiti seguenti:
 
 - L'organizzazione deve disporre di un numero di licenze di almeno 10.000, da uno o da una combinazione dei prodotti seguenti: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Ad esempio, l'organizzazione può avere 3000 licenze Office 365 E3 e 8500 Microsoft 365 E5, per un totale di 11.500 licenze dai prodotti idonei.
-- L’organizzazione deve avere almeno 50 utenti Exchange Online attivi al mese
+- L’organizzazione deve avere almeno 50 utenti Exchange Online attivi al mese.
 
 > [!NOTE]
 > È possibile monitorare fino a 250 account con priorità.

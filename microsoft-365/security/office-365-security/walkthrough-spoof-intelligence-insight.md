@@ -43,7 +43,7 @@ Il criterio di **spoof intelligence** predefinito (e solo) garantisce che i mess
 
 È possibile gestire l'intelligence di spoofing nel Centro sicurezza & e conformità o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online, PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>.
   - Per passare direttamente alla pagina **Impostazioni protezione da** posta indesiderata per il criterio di spoofing intelligence, utilizzare <https://protection.office.com/antispam> .

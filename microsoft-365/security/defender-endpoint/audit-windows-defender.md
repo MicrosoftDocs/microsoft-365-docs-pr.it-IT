@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 06/02/2021
 ms.topic: article
-ms.openlocfilehash: 10351d97ba72945f929e042dc72a37724a1df291
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e78b21b751aa398ed4449fb398f12b60f1929873
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769606"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866680"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Testare la riduzione della superficie di attacco in Microsoft Defender for Endpoint
 
@@ -46,7 +46,7 @@ Puoi usare Defender for Endpoint per ottenere maggiori dettagli per ogni evento,
 > [!TIP]
 > È inoltre possibile visitare il sito Windows Defender Testground all'indirizzo [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) verificare che le funzionalità funzionino e vedere come funzionano.
 
- **Opzioni di controllo** | **Come abilitare la modalità di controllo** | **Come visualizzare gli eventi**
+| Opzioni di controllo | Come abilitare la modalità di controllo | Come visualizzare gli eventi |
 |---------|---------|---------|
 | Il controllo si applica a tutti gli eventi | [Abilitare l’accesso controllato alle cartelle](enable-controlled-folders.md) | [Eventi di accesso controllato alle cartelle](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
 | Il controllo si applica a singole regole | [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md) | [Eventi delle regole di riduzione della superficie di attacco](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)

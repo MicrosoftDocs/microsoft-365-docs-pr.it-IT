@@ -114,5 +114,5 @@ Il valore di comprendere quali azioni vengono intraprese con il contenuto con et
 
 - [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
 - [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
-- [Ulteriori informazioni sui tipi di informazioni riservate](sensitive-information-type-learn-about.md)
+- [Informazioni sui tipi di informazioni riservate](sensitive-information-type-learn-about.md)
 - [Informazioni sulla classificazione dei dati](data-classification-overview.md)

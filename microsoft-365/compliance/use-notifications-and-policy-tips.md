@@ -281,9 +281,9 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo sim
 
 È possibile personalizzare il testo per i suggerimenti sui criteri separatamente dalla notifica tramite posta elettronica. A differenza del testo personalizzato per le notifiche di posta elettronica (vedere la sezione precedente), il testo personalizzato per i suggerimenti per i criteri non accetta html o token. Il testo personalizzato per i suggerimenti per i criteri è invece solo testo normale con un limite di 256 caratteri.
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)    
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)    
 - [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
 - [Condizioni, eccezioni e azioni dei criteri DLP (anteprima)](./dlp-microsoft-teams.md) 
 - [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)

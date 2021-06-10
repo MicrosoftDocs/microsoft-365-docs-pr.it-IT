@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I criteri di conservazione dei log di controllo fanno parte delle nuove funzionalità di Audit avanzato di Microsoft 365. Un criterio di conservazione dei log di controllo consente di specificare quanto a lungo conservare i log di controllo nell'organizzazione.
-ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b3534f5d0572b2656711850b483651270b9e3315
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687359"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822142"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gestire i criteri di conservazione dei log di controllo
 
@@ -77,7 +77,7 @@ Audit avanzato in Microsoft 365 include un criterio di conservazione dei log di 
 
    5. **Durata:** la quantità di tempo per cui conservare i log di audit che soddisfano i criteri del criterio.
 
-   6. **Priorità:** questo valore determina l'ordine con cui vengono elaborati i criteri di conservazione dei log di controllo nell'organizzazione. Un valore più alto indica una priorità più elevata. Ad esempio, un criterio con un valore di priorità **5** avrà la priorità su un criterio con un valore di priorità **0**. Come descritto in precedenza, i criteri di conservazione dei log di controllo personalizzati hanno la precedenza sul criterio predefinito per l'organizzazione.
+   6. **Priorità:** questo valore determina l'ordine con cui vengono elaborati i criteri di conservazione dei log di controllo nell'organizzazione. Un valore più basso indica una priorità più alta. Le priorità valide sono valori numerici compresi tra **1** e **10000**. Il valore **1** ha la priorità più alta e il valore **10000** ha quella più bassa. Ad esempio, un criterio con un valore **5** avrà la priorità su un criterio con un valore **10**. Come descritto in precedenza, i criteri di conservazione dei log di controllo personalizzati hanno la precedenza sul criterio predefinito per l'organizzazione.
 
 5. Fare clic su **Salva** per creare il nuovo criterio di conservazione dei log di controllo.
 

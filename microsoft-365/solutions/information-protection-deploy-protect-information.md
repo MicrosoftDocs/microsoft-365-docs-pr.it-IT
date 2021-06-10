@@ -296,7 +296,7 @@ Una volta determinati questi elementi, è possibile utilizzare i tipi di informa
 
 Ecco alcuni scenari di protezione dei dati che usano le etichette dlp e di riservatezza insieme, come illustrato nella figura.
 
-| Scenario | Procedura |
+| Scenario | Processo |
 |:-------|:-----|
 | A | <ol><li>Le etichette di riservatezza per il contenuto vengono pubblicate da un amministratore per utenti e gruppi per l'applicazione manuale o automatica al contenuto e alla posta elettronica. </li><li>L'utente A applica le etichette manualmente o automaticamente quando interagisce con il contenuto, con la crittografia o altre impostazioni applicate. </li><li>L'utente A invia un messaggio di posta elettronica o un file protetto all'utente B, un utente guest. </li></ol> |
 | B | Il criterio DLP pubblicato da un amministratore per l'utente A impedisce all'utente A di inviare il messaggio di posta elettronica e/o il file all'utente B. |

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: bb4d50c06c123d3d380604ef64b887f4f00f751d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844191"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866668"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novità di Microsoft Defender per Endpoint
 
@@ -45,6 +45,9 @@ Per ulteriori informazioni sulle funzionalità di anteprima, vedere [Funzionalit
 > ```https
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
+
+## <a name="june-2021"></a>Giugno 2021
+- [Le definizioni dei](/microsoft-365/security/defender-endpoint/machine-groups) gruppi di dispositivi possono ora includere più valori per ogni condizione. Puoi impostare più tag, nomi di dispositivi e domini sulla definizione di un singolo gruppo di dispositivi.
 
 ## <a name="march-2021"></a>Marzo 2021
 - [Gestire la protezione contro le manomissioni con il Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> È possibile gestire le impostazioni di protezione dalle manomissioni Windows 10, Windows Server 2016 e Windows Server 2019 utilizzando un metodo denominato *tenant attach*. 

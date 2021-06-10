@@ -20,12 +20,12 @@ ms.custom:
 description: Informazioni su come gli utenti possono visualizzare e gestire i messaggi in quarantena in Exchange Online Protection (EOP) che avrebbero dovuto essere recapitati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68656d21b8c10157ebae5d030e56293ba1ce07f7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4913d0c6fc34d912474bcceac8b1785c4a7e07b3
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539120"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821296"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Trovare e rilasciare i messaggi messi in quarantena come utente di EOP
 
@@ -38,13 +38,26 @@ ms.locfileid: "52539120"
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, la quarantena contiene messaggi potenzialmente pericolosi o indesiderati. Per altre informazioni, vedere [Quarantena in EOP](quarantine-email-messages.md).
 
-L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di cui si è destinatari e che sono stati messi in quarantena come posta indesiderata o posta inviata in blocco. A partire da aprile 2020 è possibile visualizzare o eliminare i messaggi di phishing in quarantena, ad esclusione del phishing con alta confidenza, di cui si è destinatari. È possibile visualizzare e gestire i messaggi in quarantena nel Centro sicurezza e conformità oppure, nel caso in cui un amministratore l'abbia configurato, nelle [notifiche di posta indesiderata per l'utente finale](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+Come destinatario di un messaggio in quarantena, le operazioni che è possibile eseguire per il messaggio sono descritte nella tabella seguente:
+
+<br>
+
+****
+
+|Motivo della quarantena|Visualizzare|Rilascia|Elimina|
+|---|:---:|:---:|:---:|
+|Invio in blocco|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+|Posta indesiderata|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+|Phising (non phishing con alta confidenza)|![Segno di spunta](../../media/checkmark.png)||![Segno di spunta](../../media/checkmark.png)|
+|
+
+È possibile visualizzare e gestire i messaggi in quarantena nel Centro sicurezza Microsoft 365 o, nel caso in cui un amministratore l'abbia configurato, nelle [notifiche di posta indesiderata per l'utente finale](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Per aprire il Centro sicurezza e conformità, passare a <https://protection.office.com>. Per aprire direttamente la pagina della quarantena, passare a <https://protection.office.com/quarantine>.
+- Per aprire il Centro sicurezza andare a <https://security.microsoft.com>. Per aprire direttamente la pagina della quarantena, passare a <https://security.microsoft.com/quarantine>.
 
-- Gli amministratori possono configurare per quanto tempo i messaggi vengono tenuti in quarantena prima di essere eliminati definitivamente (criteri di protezione dalla posta indesiderata). I messaggi scaduti dalla quarantena non sono recuperabili. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
+- Gli amministratori possono configurare per quanto tempo i messaggi vengono tenuti in quarantena prima di essere eliminati definitivamente nei criteri di protezione dalla posta indesiderata. I messaggi scaduti dalla quarantena non sono recuperabili. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
 - Gli amministratori possono anche [abilitare le notifiche di posta indesiderata per l'utente finale](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) nei criteri di protezione dalla posta indesiderata. Gli utenti possono rilasciare messaggi di posta indesiderata in quarantena direttamente da queste notifiche. Gli utenti possono rivedere i messaggi di phishing in quarantena, non messaggi di phishing con probabilità elevata, direttamente da queste notifiche. Per altre informazioni, vedere [Notifiche di posta indesiderata per l'utente finale in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
@@ -54,7 +67,7 @@ L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di 
 
 ## <a name="view-your-quarantined-messages"></a>Visualizzazione dei messaggi in quarantena
 
-1. Nel Centro sicurezza e conformità, passare a **Gestione delle minacce** \> **Rivedi** \> **Quarantena**.
+1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Rivedi** \> **Quarantena**.
 
 2. È possibile ordinare i risultati facendo clic su un'intestazione di colonna disponibile. Fare clic su **Modifica colonne** per visualizzare un massimo di sette colonne. I valori predefiniti sono contrassegnati da un asterisco (<sup>\*</sup>):
 
@@ -89,21 +102,22 @@ L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di 
      - **Phishing**
 
    - **Tipo di criteri**: filtrare i messaggi in base al tipo di criteri:
+     - **Criteri antimalware**
+     - **Criteri Allegati sicuri** (Defender for Office 365)
      - **Criteri anti-phishing**
      - **Criteri filtro contenuti ospitati** (criteri di protezione dalla posta indesiderata)
+     - **Regola di trasporto**
+
+     <sup>\*</sup>
 
    Per cancellare il filtro, fare clic su **Cancella**. Per nascondere il riquadro a comparsa del filtro, fare di nuovo clic su **Filtro**.
 
 4. Utilizzare **Ordina i risultati per** (il pulsante **ID messaggio** per impostazione predefinita) e un valore corrispondente per trovare messaggi specifici. I caratteri jolly non sono supportati. È possibile cercare in base ai seguenti valori:
 
    - **ID messaggio**: identificatore univoco globale del messaggio. Se si seleziona un messaggio nell'elenco, il valore **ID messaggio** viene visualizzato nel riquadro a comparsa **Dettagli**. Gli amministratori possono usare [Traccia messaggio](message-trace-scc.md) per trovare i messaggi e i valori ID messaggio corrispondenti.
-
    - **Indirizzo di posta elettronica del mittente**: indirizzo di posta elettronica di un singolo mittente.
-
    - **Nome dei criteri**: usare l'intero nome dei criteri del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
-
    - **Indirizzo di posta elettronica del destinatario**: indirizzo di posta elettronica di un singolo destinatario.
-
    - **Oggetto**: utilizzare l'intero oggetto del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
 
    Dopo avere immesso i criteri di ricerca, fare clic sul ![pulsante Aggiorna](../../media/scc-quarantine-refresh.png) **Aggiorna** per filtrare i risultati.
@@ -123,21 +137,13 @@ Dopo aver trovato un messaggio in quarantena specifico, selezionarlo per visuali
 Quando si seleziona un messaggio di posta elettronica nell'elenco, i seguenti dettagli del messaggio vengono visualizzati nel riquadro a comparsa **Dettagli**:
 
 - **ID messaggio**: identificatore univoco globale per il messaggio.
-
 - **Indirizzo del mittente**
-
 - **Ricezione**: data/ora di ricezione del messaggio.
-
 - **Oggetto**
-
 - **Motivo quarantena**: indica se un messaggio è stato identificato come **Posta indesiderata**, **Invio in blocco** o **Phishing**.
-
 - **Destinatari**: se il messaggio contiene più destinatari, è necessario fare clic su **Anteprima messaggio** o **Visualizza intestazione messaggio** per visualizzare l'elenco completo dei destinatari.
-
 - **Scadenza**: data/ora in cui il messaggio verrà eliminato automaticamente e definitivamente dalla quarantena.
-
 - **Rilasciato a**: tutti gli eventuali indirizzi di posta elettronica a cui il messaggio è stato rilasciato.
-
 - **Non ancora rilasciato in**: tutti gli eventuali messaggi di posta elettronica in cui il messaggio non è stato ancora rilasciato.
 
 ### <a name="take-action-on-quarantined-email"></a>Eseguire azioni sulla posta elettronica in quarantena
@@ -169,7 +175,6 @@ Se il messaggio non viene rilasciato o rimosso, verrà eliminato dopo la scadenz
 Quando si selezionano più messaggi in quarantena nell'elenco (fino a 100), viene visualizzato il riquadro a comparsa **Azioni in blocco** che consente di eseguire le seguenti azioni:
 
 - **Rilascia messaggi**: le opzioni sono le stesse del rilascio di un singolo messaggio, ma non è possibile selezionare **Rilascia i messaggi a specifici destinatari**; è possibile selezionare solo **Rilascia il messaggio a tutti i destinatari** o **Rilascia i messaggi ad altre persone**.
-
 - **Elimina messaggi**: dopo aver fatto clic su **Sì** nell'avviso visualizzato, i messaggi saranno immediatamente eliminati senza essere inviati ai destinatari originali.
 
 Al termine, fare clic su **Chiudi**.

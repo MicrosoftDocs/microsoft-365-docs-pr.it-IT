@@ -150,9 +150,9 @@ Per altre informazioni, vedere [Richiedere manualmente la ricerca per indicizzaz
 
 2. In **Ricerca** scegliere Ricerca **e disponibilità offline** \> **Reindicizza sito.**
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-- [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
+- [Informazioni sulla prevenzione della perdita dei dati](dlp-learn-about-dlp.md)
 
 - [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
 
