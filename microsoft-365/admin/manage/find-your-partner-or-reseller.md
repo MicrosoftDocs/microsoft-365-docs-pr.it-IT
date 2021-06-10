@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: 'Scopri come trovare un nuovo partner di Microsoft 365 o ottenere informazioni di contatto per un partner con cui hai lavorato in passato. '
+description: 'Scopri come trovare un nuovo Microsoft 365 partner o ottenere informazioni di contatto per un partner con cui hai lavorato in passato. '
 ms.openlocfilehash: 189eda83f3eca957e6f9fa720e2f6ccdd07db171
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -30,37 +30,37 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580943"
 ---
-# <a name="find-your-partner-or-reseller"></a><span data-ttu-id="0c810-103">Trovare il partner o il rivenditore</span><span class="sxs-lookup"><span data-stu-id="0c810-103">Find your partner or reseller</span></span>
+# <a name="find-your-partner-or-reseller"></a><span data-ttu-id="b5a70-103">Trovare il partner o il rivenditore</span><span class="sxs-lookup"><span data-stu-id="b5a70-103">Find your partner or reseller</span></span>
 
-<span data-ttu-id="0c810-104">Gli amministratori possono collaborare con un partner per acquistare, attivare e rinnovare gli abbonamenti a Microsoft 365 tramite un programma Microsoft Open Volume Licensing.</span><span class="sxs-lookup"><span data-stu-id="0c810-104">As an admin, you can work with a partner to purchase, activate, and renew Microsoft 365 subscriptions through a Microsoft Open Volume Licensing program.</span></span> 
+<span data-ttu-id="b5a70-104">Gli amministratori possono collaborare con un partner per acquistare, attivare e rinnovare le sottoscrizioni Microsoft 365 tramite un programma Microsoft Open Volume Licensing.</span><span class="sxs-lookup"><span data-stu-id="b5a70-104">As an admin, you can work with a partner to purchase, activate, and renew Microsoft 365 subscriptions through a Microsoft Open Volume Licensing program.</span></span> 
   
- <span data-ttu-id="0c810-105">**Non si è sicuri che una licenza Open Volume sia adatta?**</span><span class="sxs-lookup"><span data-stu-id="0c810-105">**Not sure if Open Volume Licensing is for you?**</span></span> <span data-ttu-id="0c810-106">Vedere la [panoramica dei programmi Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkId=613298).</span><span class="sxs-lookup"><span data-stu-id="0c810-106">Check out the [Microsoft Open Programs overview](https://go.microsoft.com/fwlink/p/?LinkId=613298).</span></span>
+ <span data-ttu-id="b5a70-p101">**Non si è sicuri che una licenza Open Volume sia adatta?** Vedere la [panoramica dei programmi Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkId=613298).</span><span class="sxs-lookup"><span data-stu-id="b5a70-p101">**Not sure if Open Volume Licensing is for you?** Check out the [Microsoft Open Programs overview](https://go.microsoft.com/fwlink/p/?LinkId=613298).</span></span>
   
-## <a name="find-a-new-partner-or-reseller"></a><span data-ttu-id="0c810-107">Trovare un nuovo partner o rivenditore</span><span class="sxs-lookup"><span data-stu-id="0c810-107">Find a new partner or reseller</span></span>
+## <a name="find-a-new-partner-or-reseller"></a><span data-ttu-id="b5a70-107">Trovare un nuovo partner o rivenditore</span><span class="sxs-lookup"><span data-stu-id="b5a70-107">Find a new partner or reseller</span></span>
 
-<span data-ttu-id="0c810-108">Se si è pronti per acquistare o rinnovare Microsoft 365 tramite Contratti multilicenza Open o se si desiderano altre informazioni sull'utilizzo di un partner, scegliere un'opzione di seguito.</span><span class="sxs-lookup"><span data-stu-id="0c810-108">If you're ready to buy or renew Microsoft 365 through Open Volume Licensing, or you simply want more information about working with a partner, choose an option below.</span></span> 
+<span data-ttu-id="b5a70-108">Se sei pronto per acquistare o rinnovare il Microsoft 365 tramite Contratti multilicenza Open o vuoi semplicemente altre informazioni sull'utilizzo di un partner, scegli un'opzione di seguito.</span><span class="sxs-lookup"><span data-stu-id="b5a70-108">If you're ready to buy or renew Microsoft 365 through Open Volume Licensing, or you simply want more information about working with a partner, choose an option below.</span></span> 
   
-- [<span data-ttu-id="0c810-109">Cercare un partner con Microsoft PinPoint</span><span class="sxs-lookup"><span data-stu-id="0c810-109">Search for a partner using Microsoft PinPoint</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=613304)
+- [<span data-ttu-id="b5a70-109">Cercare un partner con Microsoft PinPoint</span><span class="sxs-lookup"><span data-stu-id="b5a70-109">Search for a partner using Microsoft PinPoint</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
-- [<span data-ttu-id="0c810-110">Chiamare il Centro servizi per contratti multilicenza</span><span class="sxs-lookup"><span data-stu-id="0c810-110">Call Microsoft Volume Licensing</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=613305)
+- [<span data-ttu-id="b5a70-110">Chiamare il Centro servizi per contratti multilicenza</span><span class="sxs-lookup"><span data-stu-id="b5a70-110">Call Microsoft Volume Licensing</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=613305)
     
-## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a><span data-ttu-id="0c810-111">Trovare le informazioni di contatto di un partner con cui si ha lavorato in passato</span><span class="sxs-lookup"><span data-stu-id="0c810-111">Find contact information for a partner you've worked with in the past</span></span>
+## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a><span data-ttu-id="b5a70-111">Trovare le informazioni di contatto di un partner con cui si ha lavorato in passato</span><span class="sxs-lookup"><span data-stu-id="b5a70-111">Find contact information for a partner you've worked with in the past</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0c810-112">In alcuni casi, è possibile trovare informazioni nell'interfaccia di amministrazione di Microsoft 365 per i partner con cui si è lavorato in passato.</span><span class="sxs-lookup"><span data-stu-id="0c810-112">In some cases, you can find information in the Microsoft 365 admin center for partners you've worked with in the past.</span></span> <span data-ttu-id="0c810-113">Tenere presente che queste informazioni potrebbero non essere aggiornate.</span><span class="sxs-lookup"><span data-stu-id="0c810-113">Keep in mind that this information may be out of date.</span></span> <span data-ttu-id="0c810-114">L'approccio migliore consiste nel contattare la persona o il reparto responsabile degli acquisti nell'organizzazione per trovare il partner appropriato.</span><span class="sxs-lookup"><span data-stu-id="0c810-114">As a best practice, we recommend contacting the person or department responsible for purchasing in your organization to find out which partner you should work with.</span></span> 
+> <span data-ttu-id="b5a70-112">In alcuni casi, è possibile trovare informazioni nell'Microsoft 365 di amministrazione per i partner con cui si è lavorato in passato.</span><span class="sxs-lookup"><span data-stu-id="b5a70-112">In some cases, you can find information in the Microsoft 365 admin center for partners you've worked with in the past.</span></span> <span data-ttu-id="b5a70-113">Tenere presente che queste informazioni potrebbero non essere aggiornate.</span><span class="sxs-lookup"><span data-stu-id="b5a70-113">Keep in mind that this information may be out of date.</span></span> <span data-ttu-id="b5a70-114">L'approccio migliore consiste nel contattare la persona o il reparto responsabile degli acquisti nell'organizzazione per trovare il partner appropriato.</span><span class="sxs-lookup"><span data-stu-id="b5a70-114">As a best practice, we recommend contacting the person or department responsible for purchasing in your organization to find out which partner you should work with.</span></span> 
   
-## <a name="get-partner-info-in-the-admin-center"></a><span data-ttu-id="0c810-115">Ottenere informazioni sul partner nell'interfaccia di amministrazione</span><span class="sxs-lookup"><span data-stu-id="0c810-115">Get partner info in the admin center</span></span>
+## <a name="get-partner-info-in-the-admin-center"></a><span data-ttu-id="b5a70-115">Ottenere informazioni sul partner nell'interfaccia di amministrazione</span><span class="sxs-lookup"><span data-stu-id="b5a70-115">Get partner info in the admin center</span></span>
 
-1. <span data-ttu-id="0c810-116">Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Relazioni partner.</a></span><span class="sxs-lookup"><span data-stu-id="0c810-116">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.</span></span>
+1. <span data-ttu-id="b5a70-116">Nell'interfaccia di amministrazione passare alla **pagina** Impostazioni  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relazioni partner.</a></span><span class="sxs-lookup"><span data-stu-id="b5a70-116">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.</span></span>
   
-2. <span data-ttu-id="0c810-117">Se si ha un partner, il nome del partner e la relazione con l'organizzazione sono elencati qui.</span><span class="sxs-lookup"><span data-stu-id="0c810-117">If you have a partner, the partner's name and relationship to your organization will be listed here.</span></span> <span data-ttu-id="0c810-118">Per visualizzare le informazioni di contatto del partner (numero di telefono e indirizzo di posta elettronica), selezionare il nome del partner.</span><span class="sxs-lookup"><span data-stu-id="0c810-118">To view partner contact information (phone number and email address), select the partner name.</span></span>
+2. <span data-ttu-id="b5a70-117">Se si ha un partner, il nome del partner e la relazione con l'organizzazione sono elencati qui.</span><span class="sxs-lookup"><span data-stu-id="b5a70-117">If you have a partner, the partner's name and relationship to your organization will be listed here.</span></span> <span data-ttu-id="b5a70-118">Per visualizzare le informazioni di contatto del partner (numero di telefono e indirizzo di posta elettronica), selezionare il nome del partner.</span><span class="sxs-lookup"><span data-stu-id="b5a70-118">To view partner contact information (phone number and email address), select the partner name.</span></span>
     
-## <a name="more-resources"></a><span data-ttu-id="0c810-119">Altre risorse</span><span class="sxs-lookup"><span data-stu-id="0c810-119">More resources</span></span>
+## <a name="more-resources"></a><span data-ttu-id="b5a70-119">Altre risorse</span><span class="sxs-lookup"><span data-stu-id="b5a70-119">More resources</span></span>
 
-[<span data-ttu-id="0c810-120">Centro servizi per contratti multilicenza e risorse</span><span class="sxs-lookup"><span data-stu-id="0c810-120">Microsoft Volume Licensing Service Center training and resources</span></span>](https://go.microsoft.com/fwlink/?LinkId=613306)
+[<span data-ttu-id="b5a70-120">Centro servizi per contratti multilicenza e risorse</span><span class="sxs-lookup"><span data-stu-id="b5a70-120">Microsoft Volume Licensing Service Center training and resources</span></span>](https://go.microsoft.com/fwlink/?LinkId=613306)
   
- <span data-ttu-id="0c810-121">**Per i partner Microsoft**</span><span class="sxs-lookup"><span data-stu-id="0c810-121">**For Microsoft partners**</span></span>
+ <span data-ttu-id="b5a70-121">**Per i partner Microsoft**</span><span class="sxs-lookup"><span data-stu-id="b5a70-121">**For Microsoft partners**</span></span>
   
-[<span data-ttu-id="0c810-122">Guida per partner</span><span class="sxs-lookup"><span data-stu-id="0c810-122">Help for partners</span></span>](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
+[<span data-ttu-id="b5a70-122">Guida per partner</span><span class="sxs-lookup"><span data-stu-id="b5a70-122">Help for partners</span></span>](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
   
 
