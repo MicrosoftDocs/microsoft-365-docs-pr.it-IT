@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346379"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861552"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Impostare le preferenze per Microsoft Defender per Endpoint su Linux
 
@@ -139,7 +139,7 @@ Utilizzato per escludere il contenuto dall'analisi in base al percorso completo 
 
 **Tipo di percorso (file/directory)**
 
-Indica se la proprietà *path* fa riferimento a un file o a una directory. 
+Indica se la proprietà *path* fa riferimento a un file o a una directory.
 
 |||
 |:---|:---|
@@ -397,7 +397,7 @@ Il profilo di configurazione seguente contiene voci per tutte le impostazioni de
          },
          {
             "$type":"excludedFileExtension",
-            "extension":"pdf"
+            "extension":".pdf"
          },
          {
             "$type":"excludedFileName",
@@ -444,7 +444,7 @@ python -m json.tool mdatp_managed.json
 Se json è ben formato, il comando precedente lo restituisce al terminale e restituisce un codice di uscita di `0` . In caso contrario, viene visualizzato un errore che descrive il problema e il comando restituisce un codice di uscita di `1` .
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Verifica del funzionamento mdatp_managed.jsfile nel modo previsto
-Per verificare che /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfunzioni correttamente, dovrebbe essere visualizzato "[gestito]" accanto a queste impostazioni:  
+Per verificare che /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfunzioni correttamente, dovrebbe essere visualizzato "[gestito]" accanto a queste impostazioni:
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
 - passice_mode_enabled

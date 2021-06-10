@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono conoscere le differenze tra la posta indesiderata (posta indesiderata) e la posta elettronica in blocco (posta grigia) in Exchange Online Protection (EOP).
+description: Gli amministratori possono conoscere le differenze tra posta indesiderata (posta indesiderata) e posta in blocco (posta grigia) in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: fc9c94946c3da2f9a14f45070a86c557a5c7dc85
@@ -35,7 +35,7 @@ ms.locfileid: "51206973"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o in organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, i clienti a volte si chiedono: "Qual è la differenza tra posta indesiderata e posta elettronica in blocco?" In questo argomento viene illustrata la differenza e vengono descritti i controlli disponibili in EOP.
+Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, i clienti a volte si chiedono: "Qual è la differenza tra posta indesiderata e posta elettronica in blocco?" In questo argomento viene illustrata la differenza e vengono descritti i controlli disponibili in EOP.
 
 - **La posta** indesiderata è posta indesiderata, ovvero messaggi indesiderati e universalmente indesiderati (se identificati correttamente). Per impostazione predefinita, EOP rifiuta la posta indesiderata in base alla reputazione del server di posta elettronica di origine. Se un messaggio supera l'ispezione dell'IP di origine, viene inviato al filtro posta indesiderata. Se il messaggio viene classificato come posta indesiderata dal filtro posta indesiderata, il messaggio viene recapitato (per impostazione predefinita) ai destinatari previsti e spostato nella cartella Posta indesiderata.
 

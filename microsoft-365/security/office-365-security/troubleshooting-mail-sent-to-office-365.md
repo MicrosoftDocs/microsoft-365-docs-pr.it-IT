@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi relativi all'invio di posta elettronica alle cartelle Posta in arrivo in Microsoft 365 & procedure consigliate per l'invio di posta in blocco ai clienti di Microsoft 365.
+description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi relativi all'invio di posta elettronica alle Microsoft 365 & nelle procedure consigliate per l'invio di posta in blocco Microsoft 365 clienti.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
@@ -62,7 +62,7 @@ Per istruzioni su come creare e gestire i record DNS, incluso il record MX neces
 
 Alcuni problemi di recapito sono il risultato del blocco dell'indirizzo IP del mittente da parte di Microsoft o perché l'account utente viene identificato come mittente escluso a causa di precedenti attività di posta indesiderata. Se si ritiene di aver ricevuto il rapporto di mancato recapito per errore, seguire innanzitutto le istruzioni nel messaggio del rapporto di mancato recapito per risolvere il problema.
 
-Per ulteriori informazioni sull'errore ricevuto, vedere l'elenco dei codici di errore in Rapporti di mancato recapito della posta [elettronica in Exchange Online.](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
+Per ulteriori informazioni sull'errore ricevuto, vedere l'elenco dei codici di errore in [Rapporti di mancato](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)recapito di posta elettronica in Exchange Online .
 
  Ad esempio, se si riceve il rapporto di mancato recapito seguente, indica che l'indirizzo IP di invio è stato bloccato da Microsoft:
 
@@ -84,11 +84,11 @@ Il rapporto di mancato recapito è stato ricevuto perché sono state rilevate at
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>I can't receive email from senders in Microsoft 365
 
- Per ricevere messaggi dai nostri utenti, assicurati che la rete consenta le connessioni dagli indirizzi IP utilizzati da EOP nei nostri datacenter. Per ulteriori informazioni, vedere [Indirizzi IP di Exchange Online Protection.](../../enterprise/urls-and-ip-address-ranges.md)
+ Per ricevere messaggi dai nostri utenti, assicurati che la rete consenta le connessioni dagli indirizzi IP utilizzati da EOP nei nostri datacenter. Per ulteriori informazioni, vedere [Exchange Online Protection IP](../../enterprise/urls-and-ip-address-ranges.md).
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedure consigliate per l'invio di posta elettronica in blocco agli utenti di Microsoft 365
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedure consigliate per l'invio di posta elettronica in blocco Microsoft 365 utenti
 
-Se spesso si conducono campagne di posta elettronica in blocco agli utenti di Microsoft 365 e si desidera assicurarsi che i messaggi di posta elettronica arrivino in modo sicuro e corretto, seguire i suggerimenti in questa sezione.
+Se spesso si eseguano campagne di posta elettronica in blocco Microsoft 365 utenti e si desidera garantire che i messaggi di posta elettronica arrivino in modo sicuro e corretto, seguire i suggerimenti in questa sezione.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Verificare che il nome del mittente rifletta chi sta inviando il messaggio
 

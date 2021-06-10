@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/08/2021
-ms.openlocfilehash: ccbb57d781196e352e0fed456a1f7cb43eb17300
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.date: 06/09/2021
+ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
+ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822275"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52862148"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base
 
@@ -86,7 +86,7 @@ Tutti gli aggiornamenti contengono
 <summary> Maggio-2021 (Piattaforma: 4.18.2105.4 | Motore: 1.1.18200.4)</summary>
 
 &ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.341.8.0**  
-&ensp;Rilasciato: **4 giugno 2021**  
+&ensp;Rilasciato: **3 giugno 2021**  
 &ensp;Piattaforma: **4.18.2105.4**  
 &ensp;Motore: **1.1.18200.4**  
 &ensp;Fase di supporto: **sicurezza e aggiornamenti critici**
@@ -102,15 +102,13 @@ Nessun problema noto
 <summary> Aprile 2021 (piattaforma: 4.18.2104.14 | Motore: 1.1.18100.5)</summary>
 
 &ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.337.2.0**  
-&ensp;Rilasciato: **1 aprile 2021**  
-&ensp;Piattaforma: **4.18.2104.14**  
+&ensp;Rilasciato: **26 aprile 2021**  (Motore: 1.1.18100.6 rilasciato il 5 maggio 2021) &ensp; Piattaforma: **4.18.2104.14**  
 &ensp;Motore: **1.1.18100.5**  
 &ensp;Fase di supporto: **sicurezza e aggiornamenti critici**
     
 ### <a name="whats-new"></a>Novità
 - Logica di monitoraggio del comportamento aggiuntiva
 - Rilevamento dei keylogger in modalità kernel migliorato
-- Sono stati aggiunti nuovi controlli per gestire il processo di implementazione graduale per [gli aggiornamenti di Microsoft Defender](updates.md)
 
 ### <a name="known-issues"></a>Problemi noti
 Nessun problema noto  
@@ -119,7 +117,7 @@ Nessun problema noto
 <summary> Marzo-2021 (Piattaforma: 4.18.2103.7 | Motore: 1.1.18000.5)</summary>
 
 &ensp;Versione dell'aggiornamento della sicurezza intelligence: **1.335.36.0**  
-&ensp;Rilasciato: **1 aprile 2021**  
+&ensp;Rilasciato: **2 aprile 2021**  
 &ensp;Piattaforma: **4.18.2103.7**  
 &ensp;Motore: **1.1.18000.5**  
 &ensp;Fase di supporto: **sicurezza e aggiornamenti critici**

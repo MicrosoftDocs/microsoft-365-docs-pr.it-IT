@@ -30,9 +30,9 @@ ms.locfileid: "51206333"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Il **report** Dominio non accettato nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza [&](https://protection.office.com) conformità visualizza informazioni sui messaggi dell'organizzazione di posta elettronica locale in cui il dominio del mittente non è configurato come dominio accettato nell'organizzazione di Microsoft 365.
+Il **report** Dominio non accettato nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza [e](https://protection.office.com) conformità & visualizza informazioni sui messaggi dell'organizzazione di posta elettronica locale in cui il dominio del mittente non è configurato come dominio accettato nell'organizzazione di Microsoft 365.
 
-Microsoft 365 potrebbe limitazione di questi messaggi se si dispone di dati per dimostrare che l'intento di questi messaggi è dannoso. Pertanto, è importante comprendere cosa sta succedendo e risolvere il problema.
+Microsoft 365 possibile limitazione di questi messaggi se si dispone di dati per dimostrare che l'intento di questi messaggi è dannoso. Pertanto, è importante comprendere cosa sta succedendo e risolvere il problema.
 
 ![Widget Dominio non accettato nel dashboard del flusso di posta nel Centro sicurezza & conformità](../../media/mfi-non-accepted-domain-report-widget.png)
 

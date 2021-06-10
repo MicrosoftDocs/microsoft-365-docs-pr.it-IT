@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822323"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861696"
 ---
 # <a name="web-content-filtering"></a>Filtro contenuti Web
 
@@ -61,7 +61,9 @@ Prima di provare questa funzionalità, assicurarsi di soddisfare i requisiti seg
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security componente aggiuntivo o la licenza autonoma di Microsoft Defender for Endpoint. 
 - Accesso a Microsoft Defender Security Center portale ( https://securitycenter.windows.com) .
-- Dispositivi che Windows 10'aggiornamento dell'anniversario (versione 1607) o successiva con l'aggiornamento del motore antimalware più recente di Microsoft Defender.
+- Dispositivi che Windows 10'aggiornamento dell'anniversario (versione 1607) o successiva con l'aggiornamento MoCAMP più recente.
+- Windows Defender SmartScreen e Protezione di rete abilitati.
+
 
 ## <a name="data-handling"></a>Gestione dati
 
@@ -162,4 +164,11 @@ Usa il filtro dell'intervallo di tempo nella parte superiore sinistra della pagi
 
 - I report filtro contenuto Web sono attualmente limitati alla visualizzazione dei primi 5.000 record. Ad esempio, il report Domini mostrerà solo un massimo di 5000 domini principali per una determinata query di filtro, se applicabile. 
 
+
+
+- [Panoramica protezione Web](web-protection-overview.md)
+- [Protezione dalle minacce sul Web](web-threat-protection.md)
+- [Monitorare la sicurezza sul Web](web-protection-monitoring.md)
+- [Rispondere alle minacce sul Web](web-protection-response.md)
+- [Requisiti per Protezione di rete](web-content-filtering.md)
 

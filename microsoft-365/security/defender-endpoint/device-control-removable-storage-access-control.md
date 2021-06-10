@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841187"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861720"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Control
 
@@ -42,13 +42,17 @@ Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Co
 ## <a name="prepare-your-endpoints"></a>Preparare gli endpoint
 
 Distribuire Il controllo di accesso Archiviazione rimovibili nei dispositivi Windows 10 con antimalware Client versione **4.18.2103.3 o successiva.**
-1. **4.18.2104 o** versione successiva : Aggiungere SerialNumberId, VID_PID, supporto degli oggetti Criteri di gruppo basati su filepath
+1. **4.18.2104 o** versione successiva : Aggiungere SerialNumberId, VID_PID, supporto dell'oggetto Criteri di gruppo basato su filepath, ComputerSid
 
 2. **4.18.2105 o** versione successiva : Aggiungere il supporto dei caratteri jolly per HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinazione di un utente specifico in un computer specifico, SSD rimovibile (un SSD SanDisk Extreme)/supporto USB Attached SCSI (UAS)
 
 :::image type="content" source="images/powershell.png" alt-text="Interfaccia di PowerShell":::
 
+   > [!NOTE]
+   > Nessuno dei Sicurezza di Windows deve essere attivo, è possibile eseguire Removable Archiviazione Access Control indipendentemente Sicurezza di Windows stato.
+
 ## <a name="policy-properties"></a>Proprietà dei criteri
+
 
 È possibile utilizzare le proprietà seguenti per creare un gruppo di archiviazione rimovibile:
 
@@ -87,6 +91,8 @@ Per ogni proprietà del dispositivo, vedi **la sezione Proprietà dispositivo** 
 
     - MatchAny: gli attributi sotto DescriptorIdList saranno **relazione Or.** Ad esempio, se l'amministratore inserisce DeviceID e InstancePathID, per ogni USB connessa, il sistema farà l'imposizione purché l'USB abbia un **valore DeviceID** o **InstanceID** identico.
 
+
+
 Di seguito sono riportate le proprietà dei criteri di controllo di accesso:
 
 **Nome proprietà: PolicyRuleId**
@@ -108,7 +114,7 @@ Nell'esempio seguente viene illustrato l'utilizzo di GroupID:
 1. Descrizione: i gruppi a cui non verrà applicato il criterio.
 1. Opzioni: l'ID gruppo/GUID deve essere utilizzato in questa istanza.
 
-**Nome proprietà: ID voce**
+**Nome proprietà: Id voce**
 
 1. Descrizione: Un oggetto PolicyRule può avere più voci. ogni voce con un GUID univoco indica a Device Control una restrizione.
 
@@ -124,6 +130,14 @@ Nell'esempio seguente viene illustrato l'utilizzo di GroupID:
     - AuditDenied: definisce la notifica e l'evento quando l'accesso viene negato. deve collaborare con **la voce** Deny.
 
 Quando sono presenti tipi di conflitto per lo stesso supporto, il sistema applierà il primo nel criterio. Un esempio di tipo di conflitto è **Allow** e **Deny.**
+
+**Nome proprietà: Sid**
+
+1. Descrizione: definisce se applicare questo criterio a un utente o a un gruppo di utenti specifico. una voce può avere al massimo un Sid e una voce senza sid significa applicare il criterio sul computer.
+
+**Nome proprietà: ComputerSid**
+
+1. Descrizione: definisce se applicare questo criterio a un computer o a un gruppo di computer specifico. una voce può avere al massimo un ComputerSid e una voce senza ComputerSid significa applicare il criterio sul computer. Se si desidera applicare una voce a un utente specifico e a un computer specifico, aggiungere sia Sid che ComputerSid nella stessa voce.
 
 **Nome proprietà: Opzioni**
 

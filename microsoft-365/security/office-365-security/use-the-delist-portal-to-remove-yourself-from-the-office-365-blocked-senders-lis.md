@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: In questo articolo imparerai a usare il portale di rimozione per rimuovere te stesso dall'elenco dei mittenti bloccati di Microsoft 365.
+description: In questo articolo verrà illustrato come usare il portale di rimozione per rimuovere se stessi dall'Microsoft 365 dei mittenti bloccati.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c4488f5e5607d71da35b2921e863fb02195467e2
@@ -40,11 +40,11 @@ Viene visualizzato un messaggio di errore quando si tenta di inviare un messaggi
 
 ## <a name="what-is-the-blocked-senders-list"></a>Che cos'è l'elenco dei mittenti bloccati?
 
-Microsoft utilizza l'elenco dei mittenti bloccati per proteggere i propri clienti da posta indesiderata, spoofing e attacchi di phishing. L'indirizzo IP del server di posta, cio? l'indirizzo utilizzato dal server di posta per identificarsi su Internet, è stato contrassegnato come potenziale minaccia per Microsoft 365 per una serie di motivi. Quando Microsoft 365 aggiunge l'indirizzo IP all'elenco, impedisce tutte le ulteriori comunicazioni tra l'indirizzo IP e qualsiasi cliente tramite i datacenter.
+Microsoft utilizza l'elenco dei mittenti bloccati per proteggere i propri clienti da posta indesiderata, spoofing e attacchi di phishing. L'indirizzo IP del server di posta, cio? l'indirizzo utilizzato dal server di posta per identificarsi su Internet, è stato contrassegnato come una potenziale minaccia per Microsoft 365 per una serie di motivi. Quando Microsoft 365'indirizzo IP viene aggiunto all'elenco, impedisce tutte le ulteriori comunicazioni tra l'indirizzo IP e qualsiasi cliente tramite i datacenter.
 
 Gli utenti scoprono di essere stati aggiunti all'elenco quando ricevono una risposta a un messaggio di posta elettronica che include un errore simile a quanto segue:
 
-> 550 5.7.606-649 Accesso negato, IP di invio escluso [_indirizzo IP_]; Per richiedere la rimozione da questo elenco, visitare <https://sender.office.com/> e seguire le istruzioni. Per ulteriori informazioni, vedere [Rapporti di mancato recapito della posta elettronica in Exchange Online.](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
+> 550 5.7.606-649 Accesso negato, IP di invio escluso [_indirizzo IP_]; Per richiedere la rimozione da questo elenco, visitare <https://sender.office.com/> e seguire le istruzioni. Per ulteriori informazioni, vedere [Rapporti di mancato recapito della posta elettronica in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di posta.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: 90e94f4ff94b65860890ab65b451107d1d02963f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 14b3bebab8b73b7b45c79a34903fed5d0f6ec9ca
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625246"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861588"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -74,7 +74,7 @@ Un processo timer pulisce periodicamente la raccolta di archiviazione. Per i con
 
 Il comportamento correlato alla copia dei file nella raccolta di archiviazione si applica ai contenuti che esistono al momento dell'applicazione dei criteri di conservazione. Inoltre, per i criteri di conservazione, i nuovi contenuti creati o aggiunti al sito in seguito all'inclusione nei criteri, verranno mantenuti nella raccolta di archiviazione. Tuttavia, i nuovi contenuti non vengono copiati nella raccolta di archiviazione al momento della prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il [controllo delle versioni](#how-retention-works-with-document-versions).
   
-Se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetti a conservazione, viene visualizzato un messaggio di errore. È possibile eliminare una cartella se prima di tutto si spostano o si eliminano eventuali file soggetti a conservazione presenti nella cartella.
+Se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetto a criteri di conservazione, viene visualizzato un messaggio di errore. È possibile eliminare una cartella se prima di tutto si sposta o si elimina gli eventuali file nella cartella soggetta a criteri di conservazione.
 
 > [!NOTE]
 > Poiché la raccolta di archiviazione viene creata solo quando è necessaria e non quando si applicano criteri di conservazione o un’etichetta di conservazione, per consentire questa operazione è necessario modificare o eliminare un elemento soggetto a conservazione. Quindi, passare alla Raccolta di archiviazione per visualizzare la copia conservata.
@@ -91,6 +91,9 @@ Se l'impostazione di conservazione è Conserva ed elimina:
     > Per evitare perdite accidentali di dati, non eliminiamo più definitivamente il contenuto dalla raccolta di archiviazione. Eliminiamo invece definitivamente il contenuto solo dal Cestino in modo che tutto il contenuto della raccolta di archiviazione passi al Cestino di secondo livello.
     
 2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione, il processo timer lo sposta nel Cestino di primo livello alla fine del periodo di conservazione. Se un utente elimina il contenuto da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni. Al termine di questi 93 giorni, il documento viene eliminato definitivamente dal Cestino di primo o di secondo livello. Il Cestino non è indicizzato e quindi non è disponibile per la ricerca. Di conseguenza, una ricerca eDiscovery non può trovare alcun contenuto nel Cestino a cui applicare un blocco.
+
+> [!NOTE]
+> In base al [primo principio di conservazione](retention.md#the-principles-of-retention-or-what-takes-precedence), l'eliminazione permanente viene sempre sospesa se lo stesso elemento deve essere conservato a causa di un altro criterio di conservazione o un'altra etichetta di conservazione oppure è sottoposto a blocchi di eDiscovery per motivi legali o di indagine.
 
 Quando l'impostazione di conservazione è Conserva solo o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed elimina:
 

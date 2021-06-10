@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come usare la procedura guidata per lo schema Exact Data Match e per il tipo di informazioni sensibili.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9d6f870239b963ee7483b9f08e93e40b10f4f0b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5fdf289c403d8c09342a1eac1434c4219bb7b13c
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878005"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861660"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Usare la procedura guidata per lo schema Exact Data Match e per il tipo di informazioni sensibili
 
@@ -42,7 +42,7 @@ passaggi nella [Parte 1: Configurare una classificazione basata su EDM](create-c
 
 1. Acquisire familiarità con i passaggi per creare un tipo di informazioni sensibili con il [flusso di lavoro in breve](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance) EDM.
 
-2. Eseguire la procedura descritta in Salvare i dati [sensibili in .csv o in formato tsv.](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)
+2. Seguire i passaggi nella sezione [Salvare i dati sensibili in formato .csv](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format).
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usare la procedura guidata per lo schema Exact Data Match e per il modello del tipo di informazioni sensibili
 

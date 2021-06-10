@@ -53,7 +53,7 @@ Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riqua
 
 ![Riquadro a comparsa Dettagli per il report Messaggi inoltrati automaticamente nel Centro sicurezza & conformità](../../media/mfi-auto-forwarded-messages-details.png)
 
-## <a name="insights"></a>Approfondimenti
+## <a name="insights"></a>Dati analitici
 
 In base ai dati del report vengono generate due informazioni dettagliate:
 

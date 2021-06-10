@@ -16,7 +16,7 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: Gli amministratori possono imparare ad attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams, incluso come impostare avvisi per i file rilevati.
+description: Gli amministratori possono scoprire come attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams, incluso come impostare gli avvisi per i file rilevati.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -35,33 +35,33 @@ ms.locfileid: "51206142"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams protegge l'organizzazione dalla condivisione accidentale di file dannosi. Per ulteriori informazioni, vedere [Allegati sicuri per SharePoint, OneDrive e Microsoft Teams.](mdo-for-spo-odb-and-teams.md)
+Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams protegge l'organizzazione dalla condivisione accidentale di file dannosi. Per ulteriori informazioni, vedere Allegati sicuri [per SharePoint, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-Questo articolo contiene i passaggi per abilitare e configurare allegati sicuri per SharePoint, OneDrive e Microsoft Teams.
+In questo articolo vengono descritti i passaggi per abilitare e configurare allegati sicuri per SharePoint, OneDrive e Microsoft Teams.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com>. Per passare direttamente alla pagina Allegati sicuri **ATP,** aprire <https://protection.office.com/safeattachmentv2> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com>. Per passare direttamente alla pagina Allegati sicuri **ATP,** aprire <https://protection.office.com/safeattachmentv2> .
 
-- Per attivare Allegati sicuri per SharePoint, OneDrive e Microsoft Teams,  è necessario  essere membri dei gruppi di ruoli Gestione organizzazione o Amministratore sicurezza nel Centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams, è necessario essere membri  dei  gruppi di ruoli Gestione organizzazione o Amministratore sicurezza nel Centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-- Per usare PowerShell di SharePoint Online per impedire agli utenti di scaricare file dannosi, è necessario essere membri dei ruoli [Amministratore](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) globale o Amministratore [di SharePoint](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) in Azure AD.
+- Per usare SharePoint PowerShell online per impedire agli utenti di scaricare file dannosi, [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) è necessario essere membri dei ruoli [Amministratore](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) globale o Amministratore SharePoint in Azure AD.
 
 - Verificare che la registrazione di controllo sia abilitata per l'organizzazione. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](../../compliance/turn-audit-log-search-on-or-off.md).
 
 - Consentire fino a 30 minuti per l'applicazione delle impostazioni.
 
-## <a name="step-1-use-the-security--compliance-center-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Passaggio 1: Usare il Centro sicurezza & conformità per attivare Allegati sicuri per SharePoint, OneDrive e Microsoft Teams
+## <a name="step-1-use-the-security--compliance-center-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Passaggio 1: Usare il Centro sicurezza & conformità per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams
 
 1. Nel Centro sicurezza & conformità passare **a** Criteri di gestione delle minacce Allegati sicuri \>  \> **ATP** e fare clic su **Impostazioni globali.**
 
-2. Nel **riquadro a comparsa** Impostazioni globali visualizzato passare all'impostazione Attiva **Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams.** Spostare l'interruttore sull'interruttore a destra attiva per attivare Allegati sicuri ![ ](../../media/scc-toggle-on.png) per SharePoint, OneDrive e Microsoft Teams.
+2. Nel **riquadro a comparsa** Impostazioni globali visualizzato, vai all'impostazione Attiva Defender per Office 365 **per SharePoint, OneDrive e Microsoft Teams.** Sposta l'interruttore a destra Attiva/Disattiva per attivare Allegati sicuri per ![ ](../../media/scc-toggle-on.png) SharePoint, OneDrive e Microsoft Teams.
 
    Al termine, scegliere **Salva**.
 
-### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Usare PowerShell di Exchange Online per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams
+### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Usare Exchange Online PowerShell per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams
 
-Se si preferisce usare PowerShell per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams, connettersi a [PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) ed eseguire il comando seguente:
+Se si preferisce usare PowerShell per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams, connettersi [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ed eseguire il comando seguente:
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
@@ -69,11 +69,11 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 
 Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-AtpPolicyForO365.](/powershell/module/exchange/set-atppolicyforo365)
 
-## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Passaggio 2: (scelta consigliata) Utilizzare PowerShell di SharePoint Online per impedire agli utenti di scaricare file dannosi
+## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Passaggio 2: (scelta consigliata) Utilizzare SharePoint PowerShell online per impedire agli utenti di scaricare file dannosi
 
 Per impostazione predefinita, gli utenti non possono aprire, spostare, copiare o condividere file dannosi rilevati da ATP. Tuttavia, possono eliminare e scaricare file dannosi.
 
-Per impedire agli utenti di scaricare file dannosi, [connettersi a PowerShell di SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) ed eseguire il comando seguente:
+Per impedire agli utenti di scaricare file dannosi, [connettersi SharePoint PowerShell online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) ed eseguire il comando seguente:
 
 ```powershell
 Set-SPOTenant -DisallowInfectedFileDownload $true
@@ -88,7 +88,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-SPOTena
 
 ## <a name="step-3-recommended-use-the-security--compliance-center-to-create-an-alert-policy-for-detected-files"></a>Passaggio 3 (consigliato) Usare il Centro sicurezza & conformità per creare un criterio di avviso per i file rilevati
 
-È possibile creare un criterio di avviso che informa l'utente e altri amministratori quando allegati sicuri per SharePoint, OneDrive e Microsoft Teams rilevano un file dannoso. Per ulteriori informazioni sugli avvisi, vedere [Create activity alerts in the Security & Compliance Center.](../../compliance/create-activity-alerts.md)
+È possibile creare un criterio di avviso che notifica all'utente e ad altri amministratori quando allegati sicuri per SharePoint, OneDrive e Microsoft Teams rileva un file dannoso. Per ulteriori informazioni sugli avvisi, vedere [Create activity alerts in the Security & Compliance Center.](../../compliance/create-activity-alerts.md)
 
 1. Nel Centro [sicurezza & conformità](https://protection.office.com)passare a **Avvisi** Criteri \> **di avviso** o aprire <https://protection.office.com/alertpolicies> .
 
@@ -137,11 +137,11 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-Activit
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
-- Per verificare di aver attivato correttamente allegati sicuri per SharePoint, OneDrive e Microsoft Teams, eseguire una delle operazioni seguenti:
+- Per verificare di aver attivato correttamente gli allegati sicuri per SharePoint, OneDrive e Microsoft Teams, eseguire una delle operazioni seguenti:
 
-  - Nel Centro sicurezza & conformità passare  [a](https://protection.office.com)Criteri di gestione delle minacce Allegati sicuri ATP, selezionare Impostazioni globali e verificare il valore dell'impostazione Attiva \>  \> Defender per **Office 365 per SharePoint, OneDrive** e Microsoft Teams.
+  - Nel Centro sicurezza [&](https://protection.office.com)conformità passare  a Criteri di gestione delle minacce Allegati sicuri \>  \> **ATP,** selezionare Impostazioni globali e verificare il valore dell'impostazione Attiva Defender per Office 365 per **SharePoint, OneDrive e Microsoft Teams.**
 
-  - In PowerShell di Exchange Online, eseguire il comando seguente per verificare l'impostazione della proprietà:
+  - In Exchange Online PowerShell, eseguire il comando seguente per verificare l'impostazione della proprietà:
 
     ```powershell
     Get-AtpPolicyForO365 | Format-List EnableATPForSPOTeamsODB
@@ -149,7 +149,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-Activit
 
     Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365).
 
-- Per verificare di aver bloccato correttamente il download di file dannosi, aprire PowerShell di SharePoint Online ed eseguire il comando seguente per verificare il valore della proprietà:
+- Per verificare di aver bloccato correttamente il download di file dannosi, aprire SharePoint PowerShell online ed eseguire il comando seguente per verificare il valore della proprietà:
 
   ```powershell
   Get-SPOTenant | Format-List DisallowInfectedFileDownload
@@ -169,4 +169,4 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-Activit
 
     Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-ActivityAlert](/powershell/module/exchange/get-activityalert).
 
-- Utilizzare il [rapporto sullo stato di Protezione](view-email-security-reports.md#threat-protection-status-report) dalle minacce per visualizzare informazioni sui file rilevati in SharePoint, OneDrive e Microsoft Teams. In particolare, puoi usare la **visualizzazione Visualizza dati per: Malware contenuto. \>**
+- Usa il [rapporto sullo stato di Threat Protection](view-email-security-reports.md#threat-protection-status-report) per visualizzare le informazioni sui file rilevati in SharePoint, OneDrive e Microsoft Teams. In particolare, puoi usare la **visualizzazione Visualizza dati per: Malware contenuto. \>**

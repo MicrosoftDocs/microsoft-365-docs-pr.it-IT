@@ -106,7 +106,7 @@ Se si seleziona una riga dalla tabella, **verrà** visualizzato un riquadro a co
 - **Dettagli**
 - **Numero**
 - **Data di inizio**
-- **Consiglio:** da qui è possibile fare clic sul collegamento per gestire l'utente nell'interfaccia di amministrazione di Microsoft 365.
+- **Suggerimento:** da qui è possibile fare clic sul collegamento per gestire l'utente nell'Microsoft 365 di amministrazione.
 
 ![Riquadro a comparsa Dettagli dalla tabella dei dettagli della visualizzazione Nuovi utenti di inoltro nel report Modifiche inoltro](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

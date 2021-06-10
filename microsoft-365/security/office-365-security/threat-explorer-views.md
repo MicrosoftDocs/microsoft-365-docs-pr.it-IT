@@ -37,19 +37,19 @@ ms.locfileid: "51206422"
 
 [Threat Explorer](threat-explorer.md) (e il report sui rilevamenti in tempo reale) è uno strumento potente e quasi in tempo reale per aiutare i team delle operazioni di sicurezza ad analizzare e rispondere alle minacce nel Centro sicurezza & conformità. Explorer (e il report sui rilevamenti in tempo reale) visualizza informazioni su malware e virus sospetti nella posta elettronica e nei file in Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione.
 
-- Se si dispone [di Microsoft Defender per Office 365](defender-for-office-365.md) Piano 2, si dispone di Explorer.
-- Se si dispone di Microsoft Defender per Office 365 Piano 1, si hanno rilevamenti in tempo reale.
+- Se hai [Microsoft Defender per Office 365](defender-for-office-365.md) Piano 2, hai Explorer.
+- Se hai Microsoft Defender per Office 365 Piano 1, hai rilevamenti in tempo reale.
 
-Quando apri Explorer per la prima volta (o il report dei rilevamenti in tempo reale), la visualizzazione predefinita mostra i rilevamenti di malware tramite posta elettronica negli ultimi 7 giorni. Questo report può anche mostrare i rilevamenti di Microsoft Defender per Office 365, ad esempio URL dannosi rilevati da Collegamenti sicuri [e](safe-links.md)file dannosi rilevati da [Allegati sicuri.](safe-attachments.md) Questo report può essere modificato per visualizzare i dati degli ultimi 30 giorni (con un abbonamento a pagamento a Microsoft Defender per Office 365 P2). Le sottoscrizioni di valutazione includeranno solo i dati degli ultimi sette giorni.
+Quando apri Explorer per la prima volta (o il report dei rilevamenti in tempo reale), la visualizzazione predefinita mostra i rilevamenti di malware tramite posta elettronica negli ultimi 7 giorni. Questo report può anche mostrare Microsoft Defender per Office 365, ad esempio URL dannosi rilevati da Collegamenti sicuri [e](safe-links.md)file dannosi rilevati da [Allegati sicuri.](safe-attachments.md) Questo report può essere modificato per visualizzare i dati degli ultimi 30 giorni (con un abbonamento a pagamento di Microsoft Defender Office 365 P2). Le sottoscrizioni di valutazione includeranno solo i dati degli ultimi sette giorni.
 
 ****
 
 |Abbonamento|Utilità|Giorni di dati|
 |---|---|---|
-|Versione di valutazione di Microsoft Defender per Office 365 P1|Rilevamenti in tempo reale|7 |
+|Microsoft Defender per la Office 365 P1|Rilevamenti in tempo reale|7 |
 |Microsoft Defender per Office 365 P1 a pagamento|Rilevamenti in tempo reale|30|
 |Microsoft Defender for Office 365 P1 paid testing Defender for Office 365 P2 trial|Esplora minacce|7 |
-|Versione di valutazione di Microsoft Defender per Office 365 P2|Esplora minacce|7 |
+|Microsoft Defender for Office 365 P2 trial|Esplora minacce|7 |
 |Microsoft Defender per Office 365 P2 a pagamento|Esplora minacce|30|
 |
 
@@ -131,9 +131,9 @@ Sotto il grafico, visualizzare ulteriori dettagli su messaggi di posta elettroni
 
 ## <a name="content--malware"></a>Malware > contenuto
 
-Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** \> **malware contenuto.** \>  Questa visualizzazione mostra i file identificati come dannosi da [Microsoft Defender per Office 365 in SharePoint Online, OneDrive for Business e Microsoft Teams.](mdo-for-spo-odb-and-teams.md)
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** \> **malware contenuto.** \>  Questa visualizzazione mostra i file identificati come dannosi da [Microsoft Defender per Office 365 in SharePoint Online, OneDrive for Business e Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-Visualizzare le informazioni in base alla famiglia di malware, alla tecnologia di rilevamento (come è stato rilevato il malware) e al carico di lavoro (OneDrive, SharePoint o Teams).
+Visualizzare le informazioni per famiglia di malware, tecnologia di rilevamento (come è stato rilevato il malware) e carico di lavoro (OneDrive, SharePoint o Teams).
 
 ![Visualizzare i dati sul malware rilevato](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
 
@@ -147,7 +147,7 @@ Con Explorer (e rilevamenti in tempo reale), puoi applicare un filtro in un clic
 
 Se **si fa clic su Detonazione ATP** in questo grafico, verrà restituita una visualizzazione simile alla seguente:
 
-![Explorer filtrato per visualizzare solo i risultati detonazione di Defender per Office 365](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorer filtrato per visualizzare solo Defender per Office 365 risultati detonazione](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
 In questa visualizzazione vengono ora cercati i dati per i file che sono stati detonati da [Allegati sicuri](safe-attachments.md). Sotto il grafico, è possibile visualizzare i dettagli relativi a messaggi di posta elettronica specifici con allegati rilevati dagli allegati sicuri.
 

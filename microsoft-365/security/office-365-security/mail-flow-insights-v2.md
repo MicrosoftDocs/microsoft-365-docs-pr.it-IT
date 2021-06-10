@@ -69,12 +69,12 @@ Il dashboard del flusso di posta è disponibile per i membri dei gruppi di ruoli
 
 - **Gestione dell'organizzazione** nel Centro sicurezza & conformità (amministratori globali).
 
-- **[Amministratore di Exchange](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
+- **[Exchange amministratore](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
 
-- **MailFlow Administrator** nel Centro sicurezza & conformità. Se l'account non è anche membro dei gruppi di ruoli Gestione organizzazione o Amministratore di Exchange, considerare i seguenti problemi:
+- **MailFlow Administrator** nel Centro sicurezza & conformità. Se l'account non è anche membro dei gruppi di ruoli Gestione organizzazione Exchange amministratore, considerare i problemi seguenti:
   - L'utente deve accedere al Centro sicurezza & conformità direttamente all'indirizzo <https://protection.office.com> .
   - L'utente avrà solo l'autorizzazione di sola lettura per il dashboard del flusso di posta.
-  - L'utente non ha accesso all'interfaccia di amministrazione di Microsoft 365.
+  - L'utente non ha accesso all'Microsoft 365 di amministrazione.
 
 Per ulteriori informazioni sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) e Give users access to the Security & Compliance [Center.](grant-access-to-the-security-and-compliance-center.md)
 

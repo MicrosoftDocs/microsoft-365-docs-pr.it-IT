@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 55171429d3ea447de32eb7e2ec12b8b2c3542e95
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538388"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861708"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender per Endpoint Device Control Removable Archiviazione Protection
 
@@ -35,7 +35,7 @@ Microsoft Defender for Endpoint Device Control Removable Archiviazione Protectio
 
 **Funzionalità:** impedisci l'installazione con o senza esclusione in base a diverse proprietà del dispositivo.
 
-**Descrizione**
+**Windows 10 supporto tecnico**
 - Applicato a livello di computer: lo stesso criterio si applica a qualsiasi utente connesso.
 - Supporta MEM e GPO.
 - Supportato '[Proprietà dispositivo](#device-properties)' come elencato.
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint Device Control Removable Archiviazione Protectio
 
 **Piattaforma supportata** - Windows 10
 
-**Descrizione**
+**Dettagli del supporto macOS**
 - Applicato a livello di computer: lo stesso criterio si applica a qualsiasi utente connesso
 - Per informazioni specifiche su macOS, vedi [Controllo dispositivo per macOS.](mac-device-control-overview.md)
  
@@ -55,7 +55,7 @@ Microsoft Defender for Endpoint Device Control Removable Archiviazione Protectio
 - *Controllo* Accesso in lettura o scrittura o esecuzione all'archiviazione rimovibile in base a diverse proprietà del dispositivo, con o senza esclusione.
 - *Impedisci* Accesso in lettura o scrittura o in esecuzione con o senza esclusione: consentire un dispositivo specifico in base a diverse proprietà del dispositivo.
 
-**Descrizione**
+**Windows 10 supporto tecnico**
 - Applicato a un computer o a un utente o a entrambi: consente solo a utenti specifici che eseguono l'accesso in lettura/scrittura/esecuzione a uno specifico spazio di archiviazione rimovibile in un computer specifico.
 - Supporta l'URI OMA e l'oggetto Criteri di gruppo MEM.
 - Supportato '[Proprietà dispositivo](#device-properties)' come elencato.
@@ -63,7 +63,7 @@ Microsoft Defender for Endpoint Device Control Removable Archiviazione Protectio
 
 **Piattaforma supportata** - Windows 10
 
-**Descrizione**
+**Dettagli del supporto macOS**
 - Applicato a livello di computer: lo stesso criterio si applica a qualsiasi utente connesso.
 - Per informazioni specifiche su macOS, vedi [Controllo dispositivo per macOS.](mac-device-control-overview.md)
  

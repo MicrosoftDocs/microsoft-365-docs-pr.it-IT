@@ -67,7 +67,7 @@ Torna qui ogni mese perché nel tempo verranno aggiunti altri articoli.
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteggere Microsoft 365 come un professionista della sicurezza informatica
 
-L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Usare la guida di orientamento alla sicurezza di Microsoft 365 - Priorità principali per i primi [30 giorni, 90](security-roadmap.md) giorni e oltre per implementare le procedure consigliate da Microsoft per la protezione dell'organizzazione di Microsoft 365.
+L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Utilizzare la roadmap Microsoft 365 sicurezza - Priorità principali per i primi [30 giorni, 90](security-roadmap.md) giorni e oltre per implementare le procedure consigliate da Microsoft per la protezione dell'Microsoft 365 organizzazione.
 
 - Attività da eseguire i primi 30 giorni.  Queste hanno effetto immediato e sono a basso impatto per gli utenti.
 
