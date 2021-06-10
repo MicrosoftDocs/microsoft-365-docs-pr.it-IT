@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come importare dati di terze parti da piattaforme di social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione documenti Microsoft 365 cassette postali.
-ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822154"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861204"
 ---
 # <a name="archive-third-party-data"></a>Archiviare i dati di terze parti
 
@@ -77,6 +77,7 @@ Nella tabella seguente sono elencati i connettori di dati di terze parti disponi
 |[Verizon Network <sup>1</sup>](archive-verizon-network-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Pagine Web <sup>2</sup>](archive-webpagecapture-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
+|[WeChat <sup>1</sup>](archive-wechat-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Workplace da Facebook <sup>2</sup>](archive-workplacefromfacebook-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[XIP <sup>2</sup>](archive-xip-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
@@ -139,6 +140,7 @@ Come accennato in precedenza, i connettori dati forniti da TeleMessage sono disp
 |O2 SMS e Voice Network Archiver | Sì         | No | No |
 |TELUS SMS Network Archiver | Sì | No | No |
 |Verizon SMS/MMS Network Archiver | Sì | No | No |
+|WeChat Archiver | Sì | No | No |
 |WhatsApp Archiver | Sì | No | No |
 |||||
 

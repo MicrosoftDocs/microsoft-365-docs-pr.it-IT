@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52300156"
 ---
-# <a name="threat-explorer-and-real-time-detections-basics"></a>Nozioni di base su Threat Explorer e rilevamento in tempo reale
+# <a name="threat-explorer-and-real-time-detections-basics"></a>Dati principali su Esplora minacce e rilevamenti in tempo reale
 
 Contenuto dell'articolo:
 
@@ -52,7 +52,7 @@ Nel **Centro sicurezza & conformità** passare a **Gestione** delle minacce e qu
 |![Esplora minacce](../../media/threatmgmt-explorer.png)|![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)|
 |
 
-Con questi strumenti, è possibile:
+Con questi strumenti è possibile:
 
 - Vedi malware rilevato dalle Microsoft 365 sicurezza.
 - Visualizzare l'URL di phishing e fare clic su Dati verdetto.
@@ -81,7 +81,7 @@ Per visualizzare e usare Esplora *risorse o* rilevamenti in tempo reale, è nece
 
 - Per il Centro sicurezza & conformità:
 
-  - Gestione organizzazione
+  - Gestione dell'organizzazione
   - Amministratore della sicurezza (può essere assegnato nell'Azure Active Directory di amministrazione ( <https://aad.portal.azure.com> )
   - Ruolo con autorizzazioni di lettura per la sicurezza
 

@@ -4,6 +4,7 @@ keywords: Accesso controllato alle cartelle, Windows 10, windows defender, ranso
 description: Informazioni su come proteggere i file importanti abilitando l'accesso controllato alle cartelle
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1d09eaf04999478a0cd0b4907667a522a23fb39f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841979"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861223"
 ---
 # <a name="enable-controlled-folder-access"></a>Abilitare l’accesso controllato alle cartelle
 
@@ -36,7 +37,7 @@ ms.locfileid: "52841979"
 È possibile abilitare l'accesso controllato alle cartelle utilizzando uno dei metodi seguenti:
 
 * [Sicurezza di Windows app](#windows-security-app)
-* [Microsoft Intune](#intune)
+* [Microsoft Endpoint Manager](#endpoint-manager)
 * [Gestione di dispositivi mobili (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Criteri di gruppo](#group-policy)
@@ -64,24 +65,30 @@ Per ulteriori informazioni sulla disabilitazione dell'unione di elenchi locali, 
 > Se la funzionalità è impostata sulla **modalità** di controllo con uno di questi strumenti, l Sicurezza di Windows app mostrerà lo stato **come Disattivato.**
 > Se si proteggono i dati del profilo utente, è consigliabile che il profilo utente si presenti nell'unità di Windows di installazione predefinita.
 
-## <a name="intune"></a>Intune
+## <a name="endpoint-manager"></a>Endpoint Manager
 
-1. Accedi al portale [di Azure e](https://portal.azure.com) apri Intune.
+1. Accedi al Endpoint Manager [e](https://endpoint.microsoft.com) apri **Endpoint Security.**
 
-2. Vai a **Profili di configurazione** dei  >  **dispositivi**  >  **Crea profilo**.
+2. Vai a **Criteri di riduzione della superficie di**  >  **attacco.**
 
-3. Assegnare un nome al **profilo, scegliere Windows 10 e versioni successive** e Endpoint **protection**. <br/> ![Creare il profilo di endpoint protection](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. Seleziona **Piattaforma,** scegli Windows 10 **e versioni successive** e seleziona il profilo Regole di riduzione della superficie di **attacco**  >  **Crea.**
 
-4. Vai a **Configura Windows Defender** accesso controllato alla cartella di  >  **Exploit Guard**  >    >  **Abilita**.
+4.  Assegnare un nome al criterio e aggiungere una descrizione. Selezionare **Avanti**.
 
-5. Digitare il percorso di ogni applicazione che ha accesso alle cartelle protette e il percorso di qualsiasi cartella aggiuntiva che necessita di protezione. Selezionare **Aggiungi**.<br/> ![Abilitare l'accesso controllato alle cartelle in Intune](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5.  Scorrere verso il basso verso il basso, selezionare l'elenco a discesa **Abilita protezione** cartelle e scegliere **Abilita**.
+
+6.  Selezionare **Elenco di cartelle aggiuntive che devono essere protette** e aggiungere le cartelle che devono essere protette.
+
+7.  Seleziona **Elenco di app che hanno accesso alle cartelle protette** e aggiungi le app che hanno accesso alle cartelle protette.
+
+8.  Seleziona **Escludi file e percorsi dalle regole di** riduzione della superficie di attacco e aggiungi i file e i percorsi che devono essere esclusi dalle regole di riduzione della superficie di attacco.
+
+9.  Selezionare il profilo **Assegnazioni,** assegnare a **Tutti gli & tutti i** dispositivi e selezionare **Salva.**
+
+10.  Selezionare **Avanti** per salvare ogni pannello aperto e quindi **Crea**.
 
    > [!NOTE]
-   > Wilcard è supportato per le applicazioni, ma non per le cartelle. Le sottocartelle non sono protette. Le app consentite continueranno a attivare eventi finché non vengono riavviate.
-
-6. Selezionare **OK** per salvare ogni pannello aperto e **Crea**.
-
-7. Selezionare il profilo **Assegnazioni,** assegnare a **Tutti gli utenti & Tutti i dispositivi** e **Salva**.
+   > I caratteri jolly sono supportati per le applicazioni, ma non per le cartelle. Le sottocartelle non sono protette. Le app consentite continueranno a attivare eventi finché non vengono riavviate.
 
 ## <a name="mobile-device-management-mdm"></a>Gestione di dispositivi mobili (MDM)
 

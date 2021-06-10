@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per Exchange.
-ms.openlocfilehash: 0763b8bdab75ac76197b8c89f187bb573a3e4bb1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922510"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861132"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Informazioni sulla conservazione per Exchange
 
@@ -40,19 +40,22 @@ Gli elementi del calendario con una data di fine sono supportati per i criteri d
 
 I contatti, le attività e gli elementi del calendario che non hanno una data di fine non sono supportati.
 
-Altri elementi archiviati in una cassetta postale, ad esempio i messaggi di Skype e di Teams, non sono inclusi nelle etichette o nei criteri di conservazione per Exchange. Questi elementi hanno criteri di conservazione personalizzati.
+Altri elementi archiviati in una cassetta postale, ad esempio i messaggi di Skype e di Teams, non sono inclusi nelle etichette o nei criteri di conservazione per Exchange. Questi elementi hanno i propri criteri di conservazione.
 
 ## <a name="how-retention-works-for-exchange"></a>Funzionamento della conservazione per Exchange
 
 Le cassette postali e le cartella pubbliche utilizzano la cartella [Elementi ripristinabili](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) per conservare gli elementi. Solo gli utenti a cui sono state assegnate autorizzazioni di eDiscovery possono visualizzare il contenuto di una cartella Elementi ripristinabili di un altro utente.
   
-Quando un utente elimina un messaggio da una cartella (fatta eccezione per la cartella Posta eliminata), per impostazione predefinita il messaggio viene trasferito nella cartella Posta eliminata. Quando un utente elimina un elemento dalla cartella Posta eliminata, il messaggio viene spostato nella cartella Elementi ripristinabili. Tuttavia, un utente può eliminare temporaneamente un elemento (MAIUSC+CANC) di qualsiasi cartella. Con questa operazione la cartella Posta eliminata viene ignorata e l'elemento viene inserito direttamente nella cartella Elementi ripristinabili.
+Quando un utente elimina un messaggio in una cartella diversa dalla cartella Posta eliminata, per impostazione predefinita il messaggio viene spostato nella cartella Posta eliminata. Quando un utente elimina un elemento dalla cartella Posta eliminata, il messaggio viene spostato nella cartella Elementi ripristinabili. Un utente può anche eliminare temporaneamente un elemento (MAIUSC+CANC) in qualsiasi cartella. Con questa operazione la cartella Posta eliminata viene ignorata e l'elemento viene inserito direttamente nella cartella Elementi ripristinabili.
   
 Quando si applicano le impostazioni di conservazione ai dati di Exchange, un processo timer valuta periodicamente gli elementi nella cartella Elementi ripristinabili. Se un elemento non corrisponde alle regole specificate in almeno un criterio o una etichetta di conservazione, viene eliminato definitivamente dalla cartella Elementi ripristinabili.
 
-L’esecuzione del processo timer può richiedere fino a 7 giorni, e il percorso di Exchange deve contenere almeno 10 MB.
+> [!NOTE]
+> In base al [primo principio di conservazione](retention.md#the-principles-of-retention-or-what-takes-precedence), l'eliminazione permanente viene sempre sospesa se lo stesso elemento deve essere conservato a causa di un altro criterio di conservazione o un'altra etichetta di conservazione oppure è sottoposto a blocchi di eDiscovery per motivi legali o di indagine.
+
+L’esecuzione del processo timer può richiedere fino a 7 giorni e il percorso di Exchange deve contenere almeno 10 MB.
   
-Quando un utente prova a modificare le proprietà di un elemento della cassetta postale, ad esempio, l'oggetto, il corpo, gli allegati, i mittenti, i destinatari o la data di invio o di ricezione di un messaggio, una copia dell'elemento originale viene salvata nella cartella Elementi ripristinabili prima che la modifica diventi effettiva. Questo si verifica per ogni modifica successiva. Alla fine del periodo di conservazione, le copie nella cartella Elementi ripristinabili vengono eliminate definitivamente.
+Quando un utente prova a modificare proprietà di un elemento della cassetta postale, ad esempio, l'oggetto, il corpo, gli allegati, i mittenti, i destinatari o la data di invio o di ricezione di un messaggio, una copia dell'elemento originale viene salvata nella cartella Elementi ripristinabili prima che la modifica diventi effettiva. Questa azione viene eseguita per ogni modifica successiva. Al termine del periodo di conservazione, le copie presenti nella cartella Elementi ripristinabili vengono eliminate definitivamente.
 
 Dopo che le impostazioni di conservazione vengono assegnate ai contenuti di Exchange, i percorsi del contenuto variano in base al fatto che le impostazioni di conservazione siano Conserva ed elimina, Conserva solo o Elimina solo.
 
@@ -62,7 +65,7 @@ Se l'impostazione di conservazione è Conserva ed elimina:
 
 1. **Se l'elemento viene modificato o eliminato definitivamente** dall'utente, con MAIUSC+CANC o eliminandolo da Posta eliminata, durante il periodo di conservazione: l'elemento viene spostato o copiato, in caso di modifica, nella cartella Elementi ripristinabili. Lì, a intervalli regolari viene eseguito un processo timer che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni.
 
-2. **Se l'elemento non viene modificato o eliminato** durante il periodo di conservazione: lo stesso processo viene eseguito periodicamente in tutte le cartelle della cassetta postale e identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni. 
+2. **Se l'elemento non viene modificato o eliminato** durante il periodo di conservazione, lo stesso processo viene eseguito periodicamente in tutte le cartelle della cassetta postale e identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni. 
 
 Quando l'impostazione di conservazione è Conserva solo o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed elimina:
 

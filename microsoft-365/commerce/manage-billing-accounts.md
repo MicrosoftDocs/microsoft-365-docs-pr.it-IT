@@ -1,5 +1,5 @@
 ---
-title: Comprendere gli account di fatturazione
+title: Informazioni sugli account di fatturazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,7 +26,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52535639"
 ---
-# <a name="understand-billing-accounts"></a>Comprendere gli account di fatturazione
+# <a name="understand-billing-accounts"></a>Informazioni sugli account di fatturazione
 
 Un account di fatturazione viene creato quando ti is iscriviti per provare o acquistare prodotti Microsoft. L'account di fatturazione viene utilizzato per gestire le impostazioni, le fatture, i metodi di pagamento e gli acquisti dell'account. È possibile avere accesso a più account di fatturazione. Ad esempio, si è effettuato l'Microsoft 365 direttamente o si ha accesso al contratto Enterprise Agreement, ai servizi di & microsoft o al Contratto per i clienti Microsoft dell'organizzazione. Per ognuno di questi scenari, si dispone di un account di fatturazione separato.
 

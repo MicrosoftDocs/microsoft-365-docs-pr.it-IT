@@ -26,7 +26,7 @@ Per ottenere i vantaggi di creatività, lavoro in team e produttività di Micros
 
 Se si dispone di distribuzioni basate su server esistenti per Exchange, SharePoint o Skype for Business e si desidera eseguire la migrazione dell'intera organizzazione a Microsoft 365 per le aziende, vedere la guida di orientamento al software client e [server.](client-server-software-roadmap-microsoft-365.md) Questa roadmap include Microsoft Office client, prodotti Office Server locali e dispositivi basati Windows &ndash; Microsoft.
 
-## <a name="deploy"></a>Distribuzione
+## <a name="deploy"></a>Distribuire
 
 Per distribuire i servizi cloud:
 
@@ -40,7 +40,7 @@ Per distribuire i servizi cloud:
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Formazione degli utenti](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-## <a name="manage"></a>Gestire
+## <a name="manage"></a>Gestione
 
 Per gestire i servizi cloud: 
 

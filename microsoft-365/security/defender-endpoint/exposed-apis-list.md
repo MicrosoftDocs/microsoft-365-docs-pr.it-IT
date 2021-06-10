@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 61c7c8022ed89a4d10e5737e2dcdf92a4375bedd
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770410"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788836"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Accedere a API di Microsoft Defender per endpoint
 
@@ -62,7 +62,7 @@ Argomento | Descrizione
 :---|:---
 [Rilevazione avanzata](run-advanced-query-api.md) | Eseguire query dall'API.
 [Metodi e proprietà di avviso](alerts.md) | Esegui chiamate API come \- ottenere avvisi, creare avvisi, aggiornare avvisi e altro ancora.
-[Esportare proprietà e metodi di valutazione per dispositivo](get-assessmnt-1methods-properties.md) | Eseguire chiamate API come esportare la valutazione della configurazione sicura, esportare la valutazione dell'inventario \- software ed esportare la valutazione delle vulnerabilità del software.
+[Esportare proprietà e metodi di valutazione per dispositivo](get-assessment-methods-properties.md) | Eseguire chiamate API come esportare la valutazione della configurazione sicura, esportare la valutazione dell'inventario \- software ed esportare la valutazione delle vulnerabilità del software.
 [Metodi e proprietà dell'indagine automatizzata](investigation.md) | Esegui chiamate API, ad \- esempio ottieni raccolta di indagini.
 [Ottenere avvisi correlati al dominio](get-domain-related-alerts.md) | Esegui chiamate API come \- ottenere dispositivi correlati al dominio, statistiche del dominio e altro ancora.
 [Metodi e proprietà di file](files.md) | Esegui chiamate API come ottenere informazioni sui file, avvisi correlati ai file, dispositivi correlati \- ai file e statistiche sui file.

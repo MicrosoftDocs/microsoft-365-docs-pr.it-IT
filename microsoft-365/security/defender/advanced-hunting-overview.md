@@ -46,14 +46,14 @@ La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query
 
 È possibile usare le stesse query di ricerca delle minacce per creare regole di rilevamento personalizzate. Queste regole vengono eseguite automaticamente per cercare e quindi rispondere a attività sospette di violazione, computer non configurati correttamente e altri risultati.
 
-Questa funzionalità è simile alla ricerca [avanzata in Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) Disponibile nel Centro sicurezza Microsoft 365, questa funzionalità supporta le query che controllano un set di dati più ampio da:
+Questa funzionalità è simile alla ricerca [avanzata in Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) Disponibile nel centro Microsoft 365 sicurezza, questa funzionalità supporta le query che controllano un set di dati più ampio da:
 
 - Microsoft Defender per endpoint
 - Microsoft Defender per Office 365
 - Microsoft Cloud App Security
 - Microsoft Defender per identità
 
-Per usare la ricerca avanzata, [attivare Microsoft 365 Defender.](m365d-enable.md)
+Per usare la ricerca avanzata, [attiva Microsoft 365 Defender.](m365d-enable.md)
 
 ## <a name="get-started-with-advanced-hunting"></a>Introduzione alla ricerca avanzata
 
@@ -69,7 +69,7 @@ Ti consigliamo di eseguire diversi passaggi per iniziare rapidamente a usare la 
 | **Creare regole di rilevamento personalizzate** | Comprendere come è possibile utilizzare query di ricerca avanzate per attivare avvisi ed eseguire automaticamente azioni di risposta. | - [Panoramica dei rilevamenti personalizzati](custom-detections-overview.md) <br />- [Regole di rilevamento personalizzate](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Ottenere l'accesso
-Per usare la ricerca avanzata o altre funzionalità di [Microsoft 365 Defender,](microsoft-365-defender.md) è necessario un ruolo appropriato in Azure Active Directory. [Informazioni sui ruoli e sulle autorizzazioni necessari per la ricerca avanzata.](custom-roles.md)
+Per usare la ricerca avanzata o altre [Microsoft 365 Defender,](microsoft-365-defender.md) è necessario un ruolo appropriato in Azure Active Directory. [Informazioni sui ruoli e sulle autorizzazioni necessari per la ricerca avanzata.](custom-roles.md)
 
 Inoltre, l'accesso ai dati degli endpoint è determinato dalle impostazioni RBAC (Role-Based Access Control) in Microsoft Defender for Endpoint. [Informazioni sulla gestione dell'accesso a Microsoft 365 Defender](m365d-permissions.md).
 

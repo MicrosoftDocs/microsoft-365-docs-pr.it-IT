@@ -91,7 +91,7 @@ I dispositivi macOS con processori M1 non sono supportati.
 
 Dopo aver abilitato il servizio, potrebbe essere necessario configurare la rete o il firewall per consentire le connessioni in uscita tra il servizio e gli endpoint.
 
-### <a name="licensing-requirements"></a>Requisiti per la licenza
+### <a name="licensing-requirements"></a>Requisiti di licenza
 
 Microsoft Defender per Endpoint su Mac richiede una delle seguenti offerte per contratti multilicenza Microsoft:
 

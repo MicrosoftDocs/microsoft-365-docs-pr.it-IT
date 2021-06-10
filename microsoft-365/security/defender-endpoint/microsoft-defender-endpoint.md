@@ -49,7 +49,7 @@ Defender for Endpoint usa la seguente combinazione di tecnologia incorporata Win
 
 -   **Intelligence** per le minacce: generata da microsoft, team di sicurezza e aumentata dall'intelligence per le minacce fornita dai partner, l'intelligence per le minacce consente a Defender for Endpoint di identificare strumenti, tecniche e procedure dell'utente malintenzionato e generare avvisi quando vengono osservati nei dati dei sensori raccolti.
 
-<center><h2>Microsoft Defender per Endpoint</center></h2>
+<center><h2>Microsoft Defender per endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Gestione delle & delle minacce</b></center></a></td>

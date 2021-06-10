@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c2dea22cc8a0ebb875f83ebd5a3e42f723e5f254
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771322"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861221"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Valutare le regole per la riduzione della superficie di attacco
 
@@ -41,6 +41,9 @@ Impostare le regole di riduzione della superficie di attacco per i dispositivi c
 - Windows 10 Enterprise versione [1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
 - Windows Server, [versione 1803 (Canale semestraale)](/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+
+> [!WARNING]
+> L'abilitazione delle regole di riduzione del servizio di Windows Server 2016 può causare risultati imprevisti e influire sulle prestazioni del server. Non è consigliabile abilitare o distribuire regole di riduzione della superficie di attacco su piattaforme non supportate.
 
 Scopri come valutare le regole di riduzione della superficie di attacco abilitando la modalità di controllo per testare la funzionalità direttamente nell'organizzazione.
 

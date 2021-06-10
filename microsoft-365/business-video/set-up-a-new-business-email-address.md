@@ -34,7 +34,7 @@ ms.locfileid: "52065156"
 
 - [Configurare la posta elettronica aziendale con un dominio esistente](#set-up-business-email-with-an-existing-domain)
 
-Quando si configura Microsoft 365 per la propria azienda, è possibile creare un indirizzo di posta elettronica personalizzato che includa il nome dell'azienda. In questo modo l'indirizzo è più facile da ricordare, offre a te e ai tuoi dipendenti la stessa e-mail aziendale e offre maggiore sicurezza in Microsoft Cloud. 
+Quando si configura un Microsoft 365 per l'azienda, è possibile creare un indirizzo di posta elettronica personalizzato che includa il nome dell'azienda. In questo modo l'indirizzo è più facile da ricordare, offre a te e ai tuoi dipendenti la stessa e-mail aziendale e offre maggiore sicurezza in Microsoft Cloud. 
 
 ## <a name="set-up-business-email-with-a-new-domain"></a>Configurare la posta elettronica aziendale con un nuovo dominio
 
@@ -61,4 +61,4 @@ Usa un nome di dominio già di tua proprietà per un indirizzo di sito Web o per
 1. Personalizzare l'indirizzo di posta elettronica o lasciarlo così come è. 
 1. Disconnettersi da Microsoft 365 e quindi accedere di nuovo con il nuovo indirizzo di posta elettronica. Gli indirizzi di posta elettronica dei dipendenti vengono aggiornati con il nuovo dominio. 
 1. Condividere i nuovi indirizzi di posta elettronica con i dipendenti esportando l'elenco.
-1. Connettere il dominio a Microsoft 365 ripetendo il passaggio 1 precedente. 
+1. Connessione dominio da Microsoft 365 ripetendo il passaggio 1 precedente. 
