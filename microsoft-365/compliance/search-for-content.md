@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: Utilizzare lo strumento Ricerca contenuto eDiscovery nel Centro sicurezza & e conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, nei documenti nei siti di SharePoint e nelle posizioni di OneDrive e nelle conversazioni di messaggistica istantanea in Skype for Business.
+description: Utilizzare lo strumento Ricerca contenuto eDiscovery nel Centro sicurezza & conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, nei documenti nei siti di SharePoint e nelle posizioni di OneDrive e nelle conversazioni di messaggistica istantanea in Skype for Business.
 ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "52333687"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Cercare contenuto tramite lo strumento Ricerca contenuto
 
-Utilizzare lo strumento Ricerca contenuto nel Centro sicurezza & conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, nei documenti nei siti di SharePoint e nelle posizioni di OneDrive e nelle conversazioni di messaggistica istantanea in Skype for Business. È possibile utilizzare lo strumento di ricerca contenuto per cercare messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea in strumenti di collaborazione come Microsoft Teams e Gruppi di Microsoft 365.
+Utilizzare lo strumento Ricerca contenuto nel Centro sicurezza & conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, nei documenti nei siti di SharePoint e nelle posizioni di OneDrive e nelle conversazioni di messaggistica istantanea in Skype for Business. È possibile utilizzare lo strumento di ricerca contenuto per cercare messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea in strumenti di collaborazione come Microsoft Teams e Microsoft 365 gruppi.
   
 ## <a name="search-for-content"></a>Cercare contenuto
 
@@ -38,11 +38,11 @@ Il primo passaggio consiste nell'iniziare a utilizzare lo strumento Ricerca cont
 
 - [Eseguire una ricerca nell'elenco id](csv-file-for-an-id-list-content-search.md) per cercare messaggi di posta elettronica specifici 
 
-- [Cercare cassette postali basate sul cloud ](search-cloud-based-mailboxes-for-on-premises-users.md) per gli utenti locali in Microsoft 365
+- [Cercare le cassette postali basate sul cloud](search-cloud-based-mailboxes-for-on-premises-users.md) per gli utenti locali in Microsoft 365
 
 - [Visualizzare le statistiche sulle](view-keyword-statistics-for-content-search.md) parole chiave per i risultati di una ricerca e quindi perfezionare la query, se necessario
 
-- [Cercare dati di terze parti](use-content-search-to-search-third-party-data-that-was-imported.md) importati dall'organizzazione in Microsoft 365
+- [Cercare dati di terze parti importati](use-content-search-to-search-third-party-data-that-was-imported.md) dall'organizzazione in Microsoft 365
 
 - [Modificare in blocco](bulk-edit-content-searches.md) la query e i percorsi del contenuto per più ricerche
 
@@ -64,7 +64,7 @@ Dopo aver eseguito una ricerca e affinarla in base alle esigenze, il passaggio s
 
 Ricerca contenuto è facile da usare, ma è anche uno strumento potente. Dietro le quinte, c'è molto da fare. Più si conosce e si comprende il comportamento e le limitazioni, maggiore sarà il successo con cui verrà utilizzato per le esigenze di ricerca e indagine dell'organizzazione. Informazioni su:
   
-- [Elementi parzialmente indicizzati in Exchange e SharePoint](partially-indexed-items-in-content-search.md) e come includerli o escluderli quando si esportano e scaricano i risultati della ricerca
+- [Elementi parzialmente indicizzati in](partially-indexed-items-in-content-search.md) Exchange e SharePoint e come includerli o escluderli durante l'esportazione e il download dei risultati della ricerca
 
 - [Analizzare gli elementi parzialmente indicizzati e](investigating-partially-indexed-items-in-ediscovery.md) determinare l'esposizione dell'organizzazione a questi elementi
 
@@ -80,7 +80,7 @@ A volte è necessario eseguire attività di ricerca del contenuto più avanzate,
   
 - [Cercare cartelle specifiche di cassette](use-content-search-for-targeted-collections.md) postali e siti (denominate *raccolta di destinazione) quando si è certi che gli elementi che responsavano a un caso si trovino in tale cartella
 
-- [Cercare un elenco di](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) utenti nella cassetta postale e nel percorso di OneDrive 
+- [Cercare nella cassetta postale e OneDrive un](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) elenco di utenti 
 
 - [Creare, creare report ed eliminare più](create-report-on-and-delete-multiple-content-searches.md) ricerche per identificare ed eliminare in modo rapido ed efficiente i dati di ricerca 
 

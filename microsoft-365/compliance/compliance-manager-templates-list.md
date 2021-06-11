@@ -45,7 +45,7 @@ Di seguito è riportato l'elenco completo dei modelli in Compliance Manager. Ogn
 In Compliance Manager passare alla pagina **Modelli di** valutazione. Verrà visualizzato un elenco di tutti i modelli disponibili per l'organizzazione. È importante comprendere la distinzione tra modelli inclusi e premium:
 
 - **I modelli inclusi** sono inclusi nell'ambito del contratto di licenza dell'organizzazione.
- - **I modelli Premium** visualizzano modelli aggiuntivi che l'organizzazione può scegliere di ottenere (fare riferimento alle [condizioni del servizio).](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+ - **Premium modelli visualizza** modelli aggiuntivi che l'organizzazione può scegliere di ottenere (fare riferimento alle [condizioni del servizio).](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager-templates.md#viewing-and-managing-templates-from-the-assessment-templates-page).
 
@@ -60,9 +60,9 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - NIST 800-53 Revs. 4 e 5
 
 > [!NOTE]
-> Per i clienti us government community (GCC) Moderate, GCC High e Department of Defense (DoD): sono inclusi i modelli CmMC (Cybersecurity Maturity Model Certification) da 1 a 5, oltre ai modelli elencati in precedenza.
+> Per i clienti us government Community (GCC) Moderate, GCC High e Department of Defense (DoD): sono inclusi i modelli CmMC (Cybersecurity Maturity Model Certification) da 1 a 5, oltre ai modelli elencati in precedenza.
 
-## <a name="premium-templates"></a>Modelli Premium
+## <a name="premium-templates"></a>Premium modelli
 
 - AICPA/CICA Generally Accepted Privacy Principles (GAPP) (Microsoft 365)
 - Alabama - Criterio 621: Notifica di violazione dei dati - DRAFT (Microsoft 365)
@@ -78,7 +78,7 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8 (Microsoft 365)
 - Australia - National Archives Act
-- Australia - Public Records Office Victoria Recordkeeping Standards (Microsoft 365)
+- Australia - Record pubblici Office Standard di gestione record (Microsoft 365)
 - Australia - Spam Act 2003 (Microsoft 365)
 - Codice australia privacy (credit reporting) (Microsoft 365)
 - Australia Privacy Act (Microsoft 365)
@@ -90,7 +90,7 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - Barbados - Data Protection Bill 2019 (Microsoft 365)
 - Barbados - Electronic Transactions Act (Microsoft 365)
 - Legge bielorussa sulle informazioni, l'informatizzazione e la protezione delle informazioni (Microsoft 365)
-- Belgio - Act on the Protection of Natural Persons with Regard to the Processing of Personal Data (Microsoft 365)
+- Belgio - Legge sulla protezione delle persone fisiche per quanto riguarda il trattamento dei dati personali (Microsoft 365)
 - [Belgio NBB dicembre 2015](/compliance/regulatory/offering-nbb-fsma-belgium) (Microsoft 365)
 - Bermuda - Electronic Transaction Act (Microsoft 365)
 - Legge bosniaca sulla protezione dei dati personali
@@ -105,9 +105,9 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - California - Privacy delle informazioni SB-327: Dispositivi connessi (Microsoft 365)
 - California Consumer Credit Reporting Agencies Act (Microsoft 365)
 - [California Consumer Privacy Act (CCPA)](/compliance/regulatory/offering-ccpa) (Microsoft 365)
-- Canada - Normative sulla violazione delle misure di sicurezza (Microsoft 365)
+- Canada - Norme sulla violazione delle misure di sicurezza (Microsoft 365)
 - Canada - British Columbia - Information Privacy & Security - FOIPPA (Microsoft 365)
-- [Canada - Office of the Superintendent of Financial Institutions Cyber Security Self-Assessment Guide](/compliance/regulatory/offering-osfi-canada) (Microsoft 365)
+- [Canada - Office del Sovrintendente](/compliance/regulatory/offering-osfi-canada) delle istituzioni finanziarie Cyber Security Self-Assessment Guide (Microsoft 365)
 - Canada - Personal Health Information Protection Act (PHIPA) 2020 (Microsoft 365)
 - Canada - Personal Information Protection and Electronic Documents Act (PIPEDA) (Microsoft 365)
 - Canada - B protetto
@@ -115,13 +115,13 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - CAN-SPAM Act (Microsoft 365)
 - [CDSA Content Protection & Security Standard](/compliance/regulatory/offering-cdsa) (Microsoft 365)
 - Central Bank of Kuwait Cybersecurity Framework (Microsoft 365)
-- [CFR - Codice delle normative federali Titolo 21, parte 11, Record elettronici, firme elettroniche](/compliance/regulatory/offering-fda-cfr-title-21-part-11) (Microsoft 365)
+- [CFR - Codice delle normative federali Titolo 21, parte 11, record elettronici,](/compliance/regulatory/offering-fda-cfr-title-21-part-11) firme elettroniche (Microsoft 365)
 - Regola di protezione della privacy online per bambini (COPPA) (Microsoft 365)
 - Cina - Personal Information Security Specification (Microsoft 365)
 - [CiS Implementation Group 1, Group 2, Group 3](/compliance/regulatory/offering-cis-benchmark)
 - [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM)](/compliance/regulatory/offering-csa-star-attestation)
 - CMMC Livello 1, Livello 2, Livello 3, Livello 4, Livello 5 (Microsoft 365)
-- Informativa sulla sicurezza e sulla privacy di CMS Information Systems (IS2P2) (Microsoft 365)
+- Cms Information Systems Security and Privacy Policy (IS2P2) (Microsoft 365)
 - COBIT 5 (Microsoft 365)
 - Codice del governo dello Stato del Maryland - Protezione delle informazioni da parte delle agenzie governative (Microsoft 365)
 - Colombia - Decreto n. 1377/2013 (Microsoft 365)
@@ -223,10 +223,10 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - Giappone - Modello comune di misure di sicurezza delle informazioni per le agenzie governative e le agenzie correlate (Microsoft 365)
 - Giappone - Standard comuni per le misure di sicurezza delle informazioni per le agenzie governative e le agenzie correlate (Microsoft 365)
 - Japan Privacy Mark - JIS Q 15001 : 2017 (Microsoft 365)
-- Japanese Act on the Protection of Personal Information (Law No. 57 di 2003) (Microsoft 365)
+- Japanese Act on the Protection of Personal Information (Law No. 57 del 2003) (Microsoft 365)
 - Joint Commission Information Management Standard (Microsoft 365)
 - Jordan Cloud Platforms & Services Policy (Microsoft 365)
-- Informazioni sui consumatori del Kansas, Stato di violazione della sicurezza (Microsoft 365)
+- Informazioni sui consumatori del Kansas, Legge sulla violazione della sicurezza (Microsoft 365)
 - Notifica di violazione dei dati del Kentucky (Microsoft 365)
 - Kenya Data Protection Act (Microsoft 365)
 - Korea - Credit Information Use and Protection Act (Microsoft 365)
@@ -242,7 +242,7 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - Malta - Data Protection Act (Microsoft 365)
 - Maryland Personal Information Protection Act - Security Breach Notification Requirements, HB 1154 (Microsoft 365)
 - Legge sulla privacy dei dati degli studenti del Maryland (Microsoft 365)
-- Sezione 1-6 della legge sulla violazione dei dati del Massachusetts 93H (Microsoft 365)
+- Massachusetts Data Breach Notification Law 93H section 1-6 (Microsoft 365)
 - Mauritius Data Protection Act 2004 (Microsoft 365)
 - Messico - Legge federale sulla protezione dei consumatori (Microsoft 365)
 - Messico - Legge federale sulla protezione dei dati personali detenuti da parti private (Microsoft 365)
@@ -251,10 +251,10 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - Notifica di violazione della sicurezza del Mississipi (Microsoft 365)
 - Montana - Impedimento del furto di identità (Microsoft 365)
 - Montenegro - Legge sulla protezione dei dati personali (Microsoft 365)
-- Procedure consigliate per la [sicurezza del contenuto di Motion Picture Association (MPA)](/compliance/regulatory/offering-mpaa) (Microsoft 365)
+- Procedure consigliate per la sicurezza [del contenuto di Motion Picture Association (MPA)](/compliance/regulatory/offering-mpaa) (Microsoft 365)
 - Myanmar - Legge che protegge la privacy e la sicurezza dei cittadini
-- Requisiti ERM (Universal Electronic Records Management) degli archivi nazionali (Microsoft 365)
-- Nebraska's Data Protection and Consumer Notification of Data Security Breach Act (Microsoft 365)
+- National Archives Universal Electronic Records Management (ERM) Requirements (Microsoft 365)
+- Data Protection and Consumer Notification of Data Security Breach Act (Microsoft 365) del Nebraska
 - Nepal - Diritto all'informazione Act
 - [NERC CIP](/compliance/regulatory/offering-nerc-cip) (Microsoft 365)
 - Nevada Chapter 603A - Sicurezza e privacy delle informazioni personali (Microsoft 365)
@@ -263,24 +263,24 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - Divulgazione delle violazioni della sicurezza del New Jersey (Microsoft 365)
 - New Mexico Chapter 57 - Privacy Protection (Articolo da 57-12B-1 a 4) (Microsoft 365)
 - New Mexico Consumer Information Privacy Act (Microsoft 365)
-- New Mexico's Data Breach Notification Act (Microsoft 365)
+- Data Breach Notification Act (Microsoft 365) del New Mexico
 - New York - 23 NYCRR Parte 500 (Microsoft 365)
 - Codice amministrativo di New York City - Notifica di violazione della sicurezza (Microsoft 365)
-- Diritto aziendale generale di New York - Notifica di violazione della sicurezza dei dati e protezioni per la sicurezza dei dati (Microsoft 365)
+- Diritto aziendale generale di New York - Notifica di violazione della sicurezza dei dati e protezione della sicurezza dei dati (Microsoft 365)
 - New York Privacy Act - DRAFT (Microsoft 365)
 - Nuova Zelanda - Privacy Act / 2020 (Microsoft 365)
-- Nuova Zelanda - Public Records Act (Microsoft 365)
-- Nuova Zelanda - Criteri di esternalizzazione della banca di riserva BS11 (Microsoft 365)
+- New Zealand - Public Records Act (Microsoft 365)
+- Nuova Zelanda - Reserve Bank BS11 Outsourcing Policy (Microsoft 365)
 - Nuova Zelanda - Telecommunications Information Privacy Code (Microsoft 365)
 - Criteri di conservazione dei dati sanitari della Nuova Zelanda (Microsoft 365)
-- Codice privacy delle informazioni sanitarie della Nuova Zelanda (Microsoft 365)
+- New Zealand Health Information Privacy Code (Microsoft 365)
 - New Zealand Health Information Security Framework (HISF) (Microsoft 365)
 - Manuale NZISM (New Zealand Information Security Manual)
-- Regolamento sulla protezione dei dati in Nigeria (Microsoft 365)
+- Nigeria Data Protection Regulation (Microsoft 365)
 - NIST 800-37 (Microsoft 365)
 - NIST 800-53 rev.5 (Microsoft 365)
-- Linee guida per le identità digitali NIST 800-63 (Microsoft 365)
-- NIST 800-78-4: algoritmi crittografici e dimensioni delle chiavi per la verifica delle identità personali (Microsoft 365)
+- Linee guida per l'identità digitale NIST 800-63 (Microsoft 365)
+- NIST 800-78-4: algoritmi di crittografia e dimensioni delle chiavi per la verifica dell'identità personale (Microsoft 365)
 - NIST 800-137A - Valutazione dei programmi ISCM (Information Security Continuous Monitoring) (Microsoft 365)
 - [NIST 800-171](/compliance/regulatory/offering-nist-sp-800-171) (Microsoft 365)
 - NIST 800-184: Guida per il ripristino degli eventi di cybersecurity (Microsoft 365)
@@ -291,7 +291,7 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - Pubblicazione speciale NIST 800-128 (Microsoft 365)
 - NIST Special Publication 800-210: General Access Control Guidance for Cloud Systems (Microsoft 365)
 - North Carolina - Identity Theft Protection Act (Microsoft 365)
-- North Dakota Capitolo 51-30 Avviso di violazione della sicurezza per le informazioni personali (Microsoft 365)
+- North Dakota Chapter 51-30 Notice of Security Breach for Personal Information (Microsoft 365)
 - Ohio - Notifica di violazione della sicurezza (Microsoft 365)
 - Legge sulla protezione dei dati dell'Ohio 2018 (Microsoft 365)
 - Oklahoma Security Breach Notification Act (Microsoft 365)
@@ -302,18 +302,18 @@ Altre informazioni [su come visualizzare e gestire i modelli](compliance-manager
 - [PCI DSS v3.2.1](/compliance/regulatory/offering-pci-dss) (Microsoft 365)
 - Legge sulla notifica delle informazioni personali in Pennsylvania (Microsoft 365)
 - Legge sulla legislazione peruviana 29733 sulla protezione della privacy dei dati
-- Linee guida per la gestione della sicurezza delle informazioni BSP filippine (Microsoft 365)
+- Linee guida per la gestione della sicurezza delle informazioni del BSP filippine (Microsoft 365)
 - Legge sulla privacy dei dati delle Filippine del 2012 (Microsoft 365)
 - Privacy of Consumer Financial and Health Information Regulation, NAIC MDL-672, Q2 2017 (Microsoft 365)
 - Portorico - Citizen Information on Data Banks Security Act (Microsoft 365)
 - Criteri di sicurezza del cloud del Qatar
 - Legge della Repubblica di Moldova sulla protezione dei dati personali (Microsoft 365)
 - [Reserve Bank of India Cyber Security Framework](/compliance/regulatory/offering-rbi-irdai-india) (Microsoft 365)
-- Revisioni dei principi per la gestione dei rischi operativi (Rischi operativi di Basilea III) (Microsoft 365)
+- Revisioni dei principi per la gestione dei rischi operativi (rischi operativi di Basilea III) (Microsoft 365)
 - Rhode Island - Identity Theft Protection Act (Microsoft 365)
 - Romania - Data Protection Law 190/2018 (Microsoft 365)
 - Russia - Legge federale 149-FZ su informazioni, tecnologia dell'informazione e sicurezza delle informazioni
-- [Legge federale della Federazione russa sui dati personali](/compliance/regulatory/offering-russia-data-localization) (Microsoft 365)
+- [Legge federale della Federazione Russa sui dati](/compliance/regulatory/offering-russia-data-localization) personali (Microsoft 365)
 - Saint Lucia Data Protection Act (Microsoft 365)
 - [Sarbanes-Oxley Act](/compliance/regulatory/offering-sox)
 - [SEC 17-4(a)](/compliance/regulatory/offering-sec-17a-4) (Microsoft 365)

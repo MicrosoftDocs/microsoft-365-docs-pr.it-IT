@@ -173,4 +173,4 @@ Per altre informazioni sulla personalizzazione della notifica quando viene attiv
 
 - [Proteggere le cartelle importanti con l'accesso controllato alle cartelle](controlled-folders.md)
 - [Abilitare l’accesso controllato alle cartelle](enable-controlled-folders.md)
-- [Rilevare regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
+- [Valutare le regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)

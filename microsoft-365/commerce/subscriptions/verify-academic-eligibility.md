@@ -98,7 +98,7 @@ Per domande sulla decisione di idoneità accademica dell'istituto di istruzione,
 
 Per informazioni su come distribuire Microsoft 365 per l'istituto di istruzione, visitare Microsoft 365 Education [documentazione e risorse.](/microsoft-365/education/deploy/) Successivamente, è possibile [aggiungere utenti e assegnare licenze contemporaneamente.](../../admin/add-users/add-users.md) Se necessario, è anche possibile acquistare [altre licenze per l'abbonamento.](../licenses/buy-licenses.md)
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Microsoft 365 Education documentazione per gli amministratori IT](/education/itadmins) (collegamenti agli articoli)\
 [Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (pagina del prodotto)\

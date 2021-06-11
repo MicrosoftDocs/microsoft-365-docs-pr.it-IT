@@ -19,16 +19,18 @@ ms.custom:
 search.appverid: MET150
 description: Scopri come attivare e gestire le app di terze parti nell'Microsoft 365 di amministrazione.
 ms.date: 04/15/2021
-ms.openlocfilehash: f061137270416d13db1f1cd32aa17f50f2f8c5d2
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 5a486dba03fbd34fe2e409bba8ba41c1f9873141
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866608"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331623"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni di app di terze parti per l'organizzazione
 
 Puoi gestire le licenze e la fatturazione per le app di terze parti nella nuova interfaccia Microsoft 365 di amministrazione. Le funzionalità aggiornate includono una gestione delle sottoscrizioni avanzata, un accesso migliorato alle informazioni di fatturazione e una maggiore flessibilità per la gestione delle fatture. La gestione delle sottoscrizioni si basa sulla piattaforma di commercio aggiornata di Microsoft. Questo vale per le app software-as-a-service acquistate direttamente dai clienti o da un provider di terze parti.
+
+Puoi gestire le licenze e la fatturazione per le app di terze parti nell Microsoft 365 di amministrazione con la modalità di anteprima attivata. Le funzionalità aggiornate includono una gestione delle sottoscrizioni avanzata, un accesso migliorato alle informazioni di fatturazione e una maggiore flessibilità per la gestione delle fatture. La gestione delle sottoscrizioni si basa sulla piattaforma di commercio aggiornata di Microsoft. Questo vale per le app software-as-a-service acquistate direttamente dai clienti o da provider di terze parti.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Come ottenere app software-as-a-service
 

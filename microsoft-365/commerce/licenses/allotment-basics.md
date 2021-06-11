@@ -39,13 +39,13 @@ Puoi anche delegare la gestione delle tue attività. I proprietari di assegnazio
 
 È possibile utilizzare le risorse con qualsiasi prodotto disponibile per gli utenti:
 
-- Famiglia di prodotti Office e prodotti autonomi
-- Prodotti Enterprise e Mobility
+- Office suite e prodotti autonomi
+- Enterprise e Mobility
 - Prodotti Dynamics 365
 
 I prodotti seguenti non possono essere utilizzati con le operazioni di assegnazione:
 
-- App di Microsoft Store
+- Microsoft Store app
 - Software perpetuo o software direttamente assegnato a un utente se non è coinvolta alcuna licenza.
 - Risorse di Azure
 

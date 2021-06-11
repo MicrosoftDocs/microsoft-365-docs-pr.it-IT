@@ -53,7 +53,7 @@ Nel **Centro sicurezza & conformità** passare a **Gestione** delle minacce e qu
 |![Esplora minacce](../../media/threatmgmt-explorer.png)|![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)|
 |
 
-Con questi strumenti, è possibile:
+Con questi strumenti è possibile:
 
 - Vedere malware rilevato dalle Microsoft 365 di sicurezza
 - Visualizzare l'URL di phishing e fare clic su Dati verdetto
@@ -254,7 +254,7 @@ Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necess
 
 - Per il Centro sicurezza & conformità:
 
-  - Gestione organizzazione
+  - Gestione dell'organizzazione
   - Amministratore della sicurezza (può essere assegnato nell'Azure Active Directory di amministrazione ( <https://aad.portal.azure.com> )
   - Ruolo con autorizzazioni di lettura per la sicurezza
 

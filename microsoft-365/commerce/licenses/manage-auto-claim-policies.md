@@ -161,7 +161,7 @@ Se al criterio sono stati assegnati prodotti di backup, puoi modificare l'ordine
 
 È possibile tornare periodicamente alla **scheda** Criteri di attestazione automatica per visualizzare un elenco di utenti che hanno richiesto licenze in base ai criteri creati.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\
 [Acquistare o rimuovere licenze di sottoscrizione](buy-licenses.md) (articolo)\
