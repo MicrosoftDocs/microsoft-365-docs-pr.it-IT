@@ -19,22 +19,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296132"
 ---
-# <a name="contact-support-for-guatemala"></a><span data-ttu-id="4d660-103">Contattare il supporto per il Guatemala</span><span class="sxs-lookup"><span data-stu-id="4d660-103">Contact support for Guatemala</span></span>
+# <a name="contact-support-for-guatemala"></a><span data-ttu-id="0d41c-103">Contattare il supporto per il Guatemala</span><span class="sxs-lookup"><span data-stu-id="0d41c-103">Contact support for Guatemala</span></span>
 
-<span data-ttu-id="4d660-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="4d660-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="0d41c-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="0d41c-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="4d660-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="4d660-105">Phone number</span></span>
-<span data-ttu-id="4d660-106">1 800 300 0069</span><span class="sxs-lookup"><span data-stu-id="4d660-106">1 800 300 0069</span></span>
+## <a name="phone-number"></a><span data-ttu-id="0d41c-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="0d41c-105">Phone number</span></span>
+<span data-ttu-id="0d41c-106">1 800 300 0069</span><span class="sxs-lookup"><span data-stu-id="0d41c-106">1 800 300 0069</span></span>
 
-<span data-ttu-id="4d660-107">Selezionare l'opzione 4</span><span class="sxs-lookup"><span data-stu-id="4d660-107">Select option 4</span></span>
+<span data-ttu-id="0d41c-107">Selezionare l'opzione 4</span><span class="sxs-lookup"><span data-stu-id="0d41c-107">Select option 4</span></span>
 
-<span data-ttu-id="4d660-108">Immettere il codice 5002</span><span class="sxs-lookup"><span data-stu-id="4d660-108">Enter code 5002</span></span>
+<span data-ttu-id="0d41c-108">Immettere il codice 5002</span><span class="sxs-lookup"><span data-stu-id="0d41c-108">Enter code 5002</span></span>
 
-## <a name="hours"></a><span data-ttu-id="4d660-109">Ore</span><span class="sxs-lookup"><span data-stu-id="4d660-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="4d660-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="4d660-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="0d41c-109">Ore</span><span class="sxs-lookup"><span data-stu-id="0d41c-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="0d41c-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="0d41c-110">Billing Support:</span></span>
 
-<span data-ttu-id="4d660-111">Spagnolo: Mon-Fri dalle 9.00 alle 17.00</span><span class="sxs-lookup"><span data-stu-id="4d660-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="0d41c-111">Spagnolo: Mon-Fri dalle 9.00 alle 17.00</span><span class="sxs-lookup"><span data-stu-id="0d41c-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="4d660-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="4d660-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="0d41c-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="0d41c-112">Technical Support:</span></span>
 
-<span data-ttu-id="4d660-113">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="4d660-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="0d41c-113">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="0d41c-113">Spanish: 24 hours a day, 7 days a week</span></span>

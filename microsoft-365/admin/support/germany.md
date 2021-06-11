@@ -19,26 +19,26 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296168"
 ---
-# <a name="contact-support-for-germany"></a><span data-ttu-id="631a1-103">Contattare il supporto per la Germania</span><span class="sxs-lookup"><span data-stu-id="631a1-103">Contact support for Germany</span></span>
+# <a name="contact-support-for-germany"></a><span data-ttu-id="12358-103">Contattare il supporto per la Germania</span><span class="sxs-lookup"><span data-stu-id="12358-103">Contact support for Germany</span></span>
 
-<span data-ttu-id="631a1-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="631a1-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="12358-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="12358-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="631a1-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="631a1-105">Phone number</span></span>
-<span data-ttu-id="631a1-106">0800 589 2332</span><span class="sxs-lookup"><span data-stu-id="631a1-106">0800 589 2332</span></span>
+## <a name="phone-number"></a><span data-ttu-id="12358-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="12358-105">Phone number</span></span>
+<span data-ttu-id="12358-106">0800 589 2332</span><span class="sxs-lookup"><span data-stu-id="12358-106">0800 589 2332</span></span>
 
-## <a name="hours"></a><span data-ttu-id="631a1-107">Ore</span><span class="sxs-lookup"><span data-stu-id="631a1-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="631a1-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="631a1-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="12358-107">Ore</span><span class="sxs-lookup"><span data-stu-id="12358-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="12358-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="12358-108">Billing Support:</span></span>
 
-<span data-ttu-id="631a1-109">Tedesco: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="631a1-109">German: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="12358-109">Tedesco: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="12358-109">German: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="631a1-110">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="631a1-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="12358-110">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="12358-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="631a1-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="631a1-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="12358-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="12358-111">Technical Support:</span></span>
 
-<span data-ttu-id="631a1-112">Tedesco: Mon-Fri dalle 8.00 alle 21.00</span><span class="sxs-lookup"><span data-stu-id="631a1-112">German: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="12358-112">Tedesco: Mon-Fri dalle 8.00 alle 21.00</span><span class="sxs-lookup"><span data-stu-id="12358-112">German: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="631a1-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="631a1-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="12358-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="12358-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="631a1-114">Numero Telefono alternativo: 069 380 789 508</span><span class="sxs-lookup"><span data-stu-id="631a1-114">Alternative Phone Number: 069 380 789 508</span></span>
+<span data-ttu-id="12358-114">Numero Telefono alternativo: 069 380 789 508</span><span class="sxs-lookup"><span data-stu-id="12358-114">Alternative Phone Number: 069 380 789 508</span></span>
 
-<span data-ttu-id="631a1-115">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="631a1-115">Local call charges apply</span></span>
+<span data-ttu-id="12358-115">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="12358-115">Local call charges apply</span></span>

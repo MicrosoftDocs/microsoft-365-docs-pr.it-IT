@@ -39,7 +39,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  In questo articolo vengono fornite domande frequenti e risposte sulla protezione anti-spoofing per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online o organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online.
+  In questo articolo vengono fornite domande frequenti e risposte sulla protezione anti-spoofing per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online o organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali Exchange Online.
 
 
   Per domande e risposte sulla protezione da posta indesiderata, vedere Domande frequenti sulla protezione [da posta indesiderata.](anti-spam-protection-faq.yml)
@@ -61,9 +61,9 @@ sections:
 
       Microsoft ha adottato i nuovi requisiti di autenticazione della posta elettronica diverse settimane prima di distribuirlo ai clienti. Anche se all'inizio si è verificato un problema di disgregazione, ed è diminuito gradualmente.
   - question: >
-      La spoof intelligence è disponibile per i clienti di Microsoft 365 senza Defender per Office 365?
+      L'intelligence di spoofing è disponibile Microsoft 365 clienti senza Defender per Office 365?
     answer: >
-      Sì. A partire da ottobre 2018, la spoof intelligence è disponibile per tutte le organizzazioni con cassette postali in Exchange Online e per le organizzazioni EOP autonome senza cassette postali di Exchange Online.
+      Sì. A partire da ottobre 2018, la spoof intelligence è disponibile per tutte le organizzazioni con cassette postali in Exchange Online e organizzazioni EOP autonome senza Exchange Online cassette postali.
   - question: >
       Come si fa a segnalare messaggi di posta indesiderata o non a Microsoft?
     answer: >
