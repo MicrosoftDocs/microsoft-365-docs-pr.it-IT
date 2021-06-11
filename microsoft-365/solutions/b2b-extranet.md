@@ -73,7 +73,7 @@ Per creare un catalogo
 2. Fare **clic su Cataloghi.**
 3. Fare **clic su Nuovo catalogo.**
 4. Digitare un nome e una descrizione per il catalogo e verificare che **Sia Abilitato** che **Abilitato** per gli utenti esterni siano entrambi impostati su **Sì.**
-5. Fare clic su **Crea**.
+5. Fai clic su **Crea**.
 
    ![Screenshot della pagina dei cataloghi in Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
 

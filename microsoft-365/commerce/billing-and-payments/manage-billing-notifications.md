@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gestire chi riceve messaggi di posta elettronica di notifica di fatturazione e allegati di fattura.
 ms.date: 03/17/2021
-ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 75c75175930434619a01886b1096757bf04111c5
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332139"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888362"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gestire le notifiche di fatturazione e le fatture allegate
 
@@ -58,7 +58,7 @@ Le notifiche di fatturazione dell'organizzazione vengono inviate all'indirizzo d
 3. Nel riquadro destro, nella **scheda Amministratori assegnati,** selezionare **Aggiungi**.
 4. Nel riquadro **Aggiungi amministratori** digitare il nome visualizzato o il nome utente dell'utente e quindi selezionare l'utente nell'elenco dei suggerimenti.
 5. Aggiungi più utenti finché non hai finito.
-6. Selezionare **Salva**. L'utente viene aggiunto all'elenco degli amministratori assegnati.
+6. Seleziona **Salva**. L'utente viene aggiunto all'elenco degli amministratori assegnati.
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Rimuovere i ruoli di amministratore tramite la pagina Notifiche di fatturazione
 
@@ -130,5 +130,6 @@ Per ricevere le fatture come allegati alle notifiche delle fatture, eseguire la 
 ## <a name="related-content"></a>Contenuto correlato
 
 [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\
+[Informazioni di fatturazione per Microsoft 365 per le aziende in Messico](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (articolo) \
 [Comprendere la fattura o la fattura per Microsoft 365 per le aziende](understand-your-invoice2.md) (articolo)\
 [Aggiungere utenti e assegnare licenze contemporaneamente](../../admin/add-users/add-users.md) (articolo)

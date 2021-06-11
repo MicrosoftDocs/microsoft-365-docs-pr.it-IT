@@ -1,5 +1,5 @@
 ---
-title: Dispositivi archiviati di Microsoft Managed Desktop
+title: Microsoft Managed Desktop dispositivi archiviati
 description: Dispositivi in avvicinamento al ritiro che è ancora possibile registrare, ma che avranno una durata del supporto ridotta
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
@@ -18,12 +18,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51218737"
 ---
-# <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati di Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop dispositivi archiviati
 
-Per garantire la migliore esperienza utente, Microsoft Managed Desktop ritira il supporto per i dispositivi in un determinato momento. Questo articolo elenca i dispositivi che si stanno avvicinando al ritiro nei prossimi anni, che chiamiamo "archiviati". Se stai per iniziare a usare Microsoft Managed Desktop usando i dispositivi già presenti, dovresti controllare attentamente questo elenco.
+Per garantire la migliore esperienza utente, Microsoft Managed Desktop ritira il supporto per i dispositivi in un determinato momento. Questo articolo elenca i dispositivi che si stanno avvicinando al ritiro nei prossimi anni, che chiamiamo "archiviati". Se stai per iniziare a usare Microsoft Managed Desktop usando i dispositivi che hai già, dovresti controllare attentamente questo elenco.
 
 >[!IMPORTANT]
->Puoi ancora registrare questi dispositivi oggi, ma avranno una durata del servizio più breve con Microsoft Managed Desktop. Se stai acquistando nuovi dispositivi, devi usare modelli [dall'elenco dei dispositivi attivi.](./device-list.md)
+>Puoi ancora registrare questi dispositivi oggi, ma avranno una durata di servizio più breve con Microsoft Managed Desktop. Se stai acquistando nuovi dispositivi, devi usare modelli [dall'elenco dei dispositivi attivi.](./device-list.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -32,9 +32,9 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 
 
 >[!NOTE]
->In questa tabella, la "data di ritiro" è la data in cui questo modello non sarà più supportato da Microsoft Managed Desktop. In tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
+>In questa tabella, la "data di ritiro" è la data in cui questo modello non sarà più supportato da Microsoft Managed Desktop affatto. In tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
 
-#### <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati di Microsoft Managed Desktop
+#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop dispositivi archiviati
 
 | Modello  | Specifiche minime  | Requisiti aggiuntivi   | Data di ritiro |
 |---------|---------|---------|---------|
@@ -77,8 +77,8 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 Inoltre, il dispositivo deve anche:
 
 - Avere un'immagine approvata da Microsoft Managed Desktop. Quando ordini i dispositivi, assicurati di specificarne l'uso con Microsoft Managed Desktop.
-- L'esperienza di prima esecuzione di Windows non è stata completata.
-- Essere registrati con Microsoft Managed Desktop usando la [funzionalità di registrazione dei](../get-started/register-devices-self.md) dispositivi
+- Non è stata completata Windows'esperienza di prima esecuzione.
+- Essere registrati con Microsoft Managed Desktop tramite la [funzionalità Registrazione](../get-started/register-devices-self.md) dispositivo
 
 #### <a name="more-help"></a>Altre informazioni
 

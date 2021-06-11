@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730931"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888434"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 API eventi imprevisti defender e tipo di risorsa eventi imprevisti
 
@@ -56,6 +56,7 @@ Metodo | Tipo restituito | Descrizione
 -|-|-
 [Elencare incidenti](api-list-incidents.md) | [Elenco operazioni](api-incident.md) non consentite | Ottenere un elenco di eventi imprevisti.
 [Aggiornare incidente](api-update-incidents.md) | [Incidente](api-incident.md) | Aggiornare un evento imprevisto specifico.
+[Ottenere un evento imprevisto](api-get-incident.md) | [Incidente](api-incident.md) | Ottenere un singolo evento imprevisto.
 
 ## <a name="request-body-response-and-examples"></a>Corpo, risposta ed esempi della richiesta
 

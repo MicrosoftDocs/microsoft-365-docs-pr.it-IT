@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572346"
 ---
-# <a name="configure-the-notifications-that-appear-on-endpoints"></a>Configurare le notifiche visualizzate sugli endpoint
+# <a name="configure-the-notifications-that-appear-on-endpoints"></a>Configurare le notifiche che vengono visualizzate negli endpoint
 
 **Si applica a:**
 

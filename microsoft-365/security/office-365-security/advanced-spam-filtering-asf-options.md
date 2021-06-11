@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sulle impostazioni asf (Advanced Spam Filter) disponibili nei criteri di protezione da posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12f193ef61205e8568341c774b957ce4a9dd7988
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779423"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878233"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Impostazioni avanzate del filtro posta indesiderata (ASF) in EOP
 
@@ -47,7 +47,7 @@ In tutte Microsoft 365, le impostazioni asf (Advanced Spam Filter) nei criteri d
 > - Presenza dei messaggi filtrati in quarantena.
 > - Campi `X-CustomSpam:` X-header specifici che vengono aggiunti ai messaggi come descritto in questo articolo.
 
-Nelle sezioni seguenti vengono descritte le impostazioni e le opzioni ASF disponibili nei criteri di protezione da posta indesiderata nel Centro sicurezza Microsoft 365 e in PowerShell di Exchange Online o PowerShell EOP autonomo ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) e [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
+Nelle sezioni seguenti vengono descritte le impostazioni e le opzioni ASF disponibili nei criteri di protezione da posta indesiderata nel portale di Microsoft 365 Defender e in powershell di Exchange Online o PowerShell EOP autonomo ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) e [Set-HostedContentFilterPolicy).](/powershell/module/exchange/set-hostedcontentfilterpolicy) Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Abilitare, disabilitare o testare le impostazioni ASF
 
@@ -58,7 +58,7 @@ Per ogni impostazione ASF, nei criteri di protezione da posta indesiderata sono 
 - **Test**: ASF aggiunge il campo X-header corrispondente al messaggio. Ciò che accade al messaggio è determinato dal **valore della** modalità test (*TestModeAction*):
   - **Nessuno:** il recapito dei messaggi non è interessato dal rilevamento ASF. Il messaggio è ancora soggetto ad altri tipi di filtro e regole in EOP.
   - **Aggiungi testo X-header predefinito (*AddXHeader*):** il valore X-header `X-CustomSpam: This message was filtered by the custom spam filter option` viene aggiunto al messaggio. È possibile utilizzare questo valore nelle regole di Posta in arrivo o nelle regole del flusso di posta (note anche come regole di trasporto) per influire sul recapito del messaggio.
-  - **Invia messaggio Ccn (*BccMessage*):** gli indirizzi di posta elettronica specificati (il valore del parametro *TestModeBccToRecipients* in PowerShell) vengono aggiunti al campo Ccn del messaggio e il messaggio viene recapitato agli altri destinatari Ccn. Nel Centro sicurezza è possibile separare più indirizzi di posta elettronica con un punto e virgola (;). In PowerShell, più indirizzi di posta elettronica vengono separati da virgole.
+  - **Invia messaggio Ccn (*BccMessage*):** gli indirizzi di posta elettronica specificati (il valore del parametro *TestModeBccToRecipients* in PowerShell) vengono aggiunti al campo Ccn del messaggio e il messaggio viene recapitato agli altri destinatari Ccn. Nel portale Microsoft 365 Defender devi separare più indirizzi di posta elettronica con punto e virgola (;). In PowerShell, più indirizzi di posta elettronica vengono separati da virgole.
 
   **Note**:
 

@@ -300,7 +300,7 @@ Queste impostazioni richiedono [l'abilitazione della protezione in tempo reale.]
    > [!div class="mx-imgBorder"]
    > ![Creare il profilo di endpoint protection](images/create-endpoint-protection-profile.png)
 
-4. Fare clic su **Crea**.  
+4. Fai clic su **Crea**.  
 
 5. Per Processi non firmati e non attendibili **eseguiti da USB,** scegliere **Blocca**.
 

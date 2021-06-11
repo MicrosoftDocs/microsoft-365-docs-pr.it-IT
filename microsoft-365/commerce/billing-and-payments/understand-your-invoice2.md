@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Interpretare le informazioni su addebiti, fatturazione e pagamento Microsoft 365 fattura o fattura aziendale e come modificare il numero di un ordine di acquisto.
 ms.date: 05/04/2021
-ms.openlocfilehash: 63d532ddfb86eb80a1cdeb6001fff683c5999146
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635835"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888374"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendi l’estratto conto o la fattura per Microsoft 365 per le aziende
 
@@ -129,6 +129,7 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 ## <a name="related-content"></a>Contenuto correlato
 
 [Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md) o la fattura (articolo)\
+[Informazioni di fatturazione per Microsoft 365 per le aziende in Messico](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (articolo) \
 [Modificare gli indirizzi di fatturazione](change-your-billing-addresses.md) (articolo)\
 [Modificare l'indirizzo dell'organizzazione, l'indirizzo di](../../admin/manage/change-address-contact-and-more.md) posta elettronica del contatto tecnico e altre informazioni (articolo)\
 [Pagare l'abbonamento Microsoft 365 per le aziende](pay-for-your-subscription.md) (articolo)\

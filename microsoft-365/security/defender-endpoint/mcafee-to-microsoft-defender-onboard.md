@@ -54,7 +54,7 @@ ms.locfileid: "52538028"
 
 6. [Assicurati che Defender for Endpoint funzioni correttamente.](#make-sure-defender-for-endpoint-is-working-correctly)
 
-## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Aggiungere dispositivi a Microsoft Defender for Endpoint
+## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Aggiungere dispositivi a Microsoft Defender for Endpoint
 
 1. Vai al Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) e accedi.
 

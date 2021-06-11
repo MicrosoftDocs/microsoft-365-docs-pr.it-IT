@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: materiale di riferimento per la prevenzione della perdita di dati
-ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 7e8494c0199d62951e7b5f01bb1b65e90e8584f2
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572562"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878161"
 ---
 # <a name="data-loss-prevention-reference"></a>Informazioni di riferimento sulla prevenzione della perdita di dati
  
@@ -112,7 +112,7 @@ Se si sceglie di includere o escludere specifici siti di SharePoint, i criteri d
 Se si sceglie di includere o escludere account o gruppi specifici di OneDrive, un criterio di prevenzione della perdita di dati potrà contenere non oltre 100 account utente o 50 gruppi di inclusione o esclusione.
 
 > [!NOTE]
-> L'ambito dei criteri di OneDrive for Business che usa account o gruppi è in anteprima pubblica. Durante questa fase, sarà possibile includere o escludere gli account utente e i gruppi nell'ambito del criterio di prevenzione della perdita dei dati. Sia i processi di inclusione che quelli di esclusione nell'ambito dello stesso criterio non sono supportati.
+> OneDrive l'ambito dei criteri aziendali con account utente o gruppi è in anteprima pubblica. 
   
 ### <a name="rules"></a>Regole
 
@@ -542,7 +542,7 @@ Quando si creano criteri di prevenzione della perdita dei dati che includono Mic
  
 ## <a name="permissions"></a>Autorizzazioni
 
-I membri del team conformità addetti alla creazione dei criteri di prevenzione della perdita dei dati necessitano delle autorizzazioni per accedere al Centro sicurezza e conformità. Per impostazione predefinita, l'amministratore del tenant avrà accesso a questa posizione e potrà fornire ai responsabili della conformità e ad altre persone l'accesso al Centro sicurezza e conformità, senza concedere tutte le autorizzazioni di un amministratore del tenant. Per farlo, è consigliabile:
+Per impostazione predefinita, gli amministratori globali, gli amministratori della sicurezza e gli amministratori di conformità avranno accesso per creare e applicare un criterio DLP. Gli altri membri del team di conformità che creeranno i criteri DLP necessitano delle autorizzazioni per il Centro &amp; sicurezza e conformità. Per impostazione predefinita, l'amministratore tenant avrà accesso a questa posizione e potrà concedere ai responsabili della conformità e ad altre persone l'accesso al Centro sicurezza e conformità, senza concedere loro tutte le autorizzazioni di un &amp; amministratore tenant. A tale scopo, è consigliabile:
   
 1. Creare un gruppo in Microsoft 365 e aggiungervi i responsabili della conformità.
     
