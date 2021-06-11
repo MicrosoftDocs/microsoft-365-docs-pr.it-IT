@@ -86,11 +86,11 @@ Esistono due sottogruppi nel gruppo di ruoli Manager eDiscovery. La differenza t
 
   - Visualizzare tutti i casi elencati nella pagina Core eDiscovery.
   
-  - Gestire qualsiasi caso nell'organizzazione dopo essersi aggiunti come membri del caso.
+  - Gestire i casi nell'organizzazione dopo essersi aggiunto come membro del caso.
 
-  - Accedere ed esportare i dati del caso per qualsiasi caso nell'organizzazione.
+  - Accedere ai dati dei casi ed esportarli per qualsiasi caso nell'organizzazione.
 
-  A causa dell'ampio ambito di accesso, un'organizzazione deve avere solo pochi amministratori membri del sottogruppo Amministratori di eDiscovery.
+  Dato l'ampio ambito di accesso, un'organizzazione deve avere solo alcuni amministratori che sono membri del sottogruppo Amministratori di eDiscovery.
 
 Per ulteriori informazioni sulle autorizzazioni di eDiscovery e una descrizione di ogni ruolo assegnato al gruppo di ruoli Manager eDiscovery, vedere [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 

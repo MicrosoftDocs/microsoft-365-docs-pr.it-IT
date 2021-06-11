@@ -18,12 +18,12 @@ ms.collection:
 description: Gli amministratori possono imparare a visualizzare e configurare le impostazioni globali (l'elenco "Blocca gli URL seguenti" e la protezione per le app Office 365) per i collegamenti sicuri in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e77373657d3167ca8f5bafa544923ab3a2320ce
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5b1bcdaf92412b17b231e3f4849bae8aab72f292
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821986"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878533"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurare le impostazioni globali per i collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -45,13 +45,13 @@ Tuttavia, collegamenti sicuri utilizza anche le impostazioni globali seguenti co
 - **L'elenco Blocca gli URL seguenti.** Questa impostazione si applica a tutti gli utenti inclusi nei criteri collegamenti sicuri attivi. Per ulteriori informazioni, vedere [l'elenco "Bloccare](safe-links.md#block-the-following-urls-list-for-safe-links) gli URL seguenti" per Collegamenti sicuri
 - Protezione dei collegamenti sicuri per Office 365 app. Queste impostazioni si applicano a tutti gli utenti dell'organizzazione con licenza per Defender per Office 365, indipendentemente dal fatto che gli utenti siano inclusi o meno nei criteri collegamenti sicuri attivi. Per altre informazioni, vedi [Impostazioni dei collegamenti sicuri per Office 365 app](safe-links.md#safe-links-settings-for-office-365-apps).
 
-È possibile configurare le impostazioni globali dei collegamenti sicuri nel Centro sicurezza Microsoft 365 o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi di Microsoft Defender per Office 365).
+È possibile configurare le impostazioni globali dei collegamenti sicuri nel portale di Microsoft 365 Defender o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi di Microsoft Defender per Office 365).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Non è disponibile alcun criterio collegamenti sicuri predefinito o predefinito, quindi è necessario creare almeno un criterio Collegamenti sicuri affinché l'elenco Blocca gli **URL** seguenti sia attivo. Per istruzioni, vedi [Configurare i criteri collegamenti sicuri in Microsoft Defender per Office 365](set-up-safe-links-policies.md).
 
-- Aprire il Centro sicurezza a <https://security.microsoft.com>. Per passare direttamente alla **pagina Collegamenti sicuri,** utilizzare <https://security.microsoft.com/safelinksv2> .
+- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla **pagina Collegamenti sicuri,** utilizzare <https://security.microsoft.com/safelinksv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -72,11 +72,11 @@ Tuttavia, collegamenti sicuri utilizza anche le impostazioni globali seguenti co
 
 - [Nuove funzionalità vengono continuamente aggiunte a Microsoft Defender per Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). Quando vengono aggiunte nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri collegamenti sicuri esistenti.
 
-## <a name="configure-the-block-the-following-urls-list-in-the-security-center"></a>Configurare l'elenco "Blocca gli URL seguenti" nel Centro sicurezza
+## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>Configurare l'elenco "Blocca gli URL seguenti" nel portale Microsoft 365 Defender
 
 **L'elenco Blocca gli URL** seguenti identifica i collegamenti che devono essere sempre bloccati dall'analisi dei collegamenti sicuri nelle app supportate. Per ulteriori informazioni, vedere [l'elenco "Bloccare gli URL seguenti" per Collegamenti sicuri.](safe-links.md#block-the-following-urls-list-for-safe-links)
 
-1. Nel centro sicurezza passare a Criteri di collaborazione & **e-mail** & regole Criteri di minaccia \>  \>  \>  sezione \> **Collegamenti sicuri**.
+1. Nel portale Microsoft 365 Defender passare a Email **& Collaboration** Policies \> **& Rules** Threat \> **Policies** \> **section** \> **Safe Links**.
 
 2. Nella pagina **Collegamenti sicuri** fare clic su **Impostazioni globali.** Nel riquadro **a comparsa Dei** collegamenti sicuri per l'organizzazione visualizzato passare alla casella Blocca gli **URL** seguenti.
 
@@ -117,11 +117,11 @@ Per informazioni dettagliate sulla sintassi delle voci, vedere [Entry syntax for
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security-center"></a>Configurare la protezione dei collegamenti sicuri per Office 365 app nel Centro sicurezza
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>Configurare la protezione dei collegamenti sicuri Office 365 app nel portale di Microsoft 365 Defender
 
 La protezione collegamenti sicuri per Office 365 app si applica ai documenti nelle app Office desktop, mobili e Web supportate. Per altre informazioni, vedi [Impostazioni dei collegamenti sicuri per Office 365 app](safe-links.md#safe-links-settings-for-office-365-apps).
 
-1. Nel centro sicurezza passare a Criteri di collaborazione & **e-mail** & regole Criteri di minaccia \>  \>  \>  sezione \> **Collegamenti sicuri**.
+1. Nel portale Microsoft 365 Defender passare a Email **& Collaboration** Policies \> **& Rules** Threat \> **Policies** \> **section** \> **Safe Links**.
 
 2. Nella pagina **Collegamenti sicuri** fare clic su **Impostazioni globali.** Nel riquadro **a comparsa** Collegamenti sicuri per l'organizzazione visualizzato configurare le impostazioni seguenti nel Impostazioni che si applicano al contenuto **nelle** app Office 365 supportate:
 
@@ -157,7 +157,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-AtpPoli
 
 Per verificare di aver configurato correttamente le impostazioni  globali per i collegamenti sicuri (l'elenco Blocca gli URL seguenti e le impostazioni di protezione delle app di Office 365), eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza passare **a** Criteri di collaborazione & posta elettronica & Regole Criteri di minaccia sezione Collegamenti sicuri fare clic su Impostazioni globali e verificare le impostazioni nel riquadro a comparsa \>  \>  \>  \>  \> visualizzato. 
+- Nel portale di Microsoft 365 Defender passare **a** Criteri di collaborazione & e-mail & Criteri di minaccia delle regole sezione Collegamenti sicuri fare clic su Impostazioni globali e verificare le impostazioni nel riquadro a comparsa \>  \>  \>  \>  \> visualizzato. 
 
 - In Exchange Online PowerShell o Exchange Online Protection PowerShell, eseguire il comando seguente e verificare le impostazioni:
 

@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 Piano 2. Il filtro dei tag è disponibile tra avvisi, report e indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti con tag.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44b925840700c00c6b2d28c445ac26abd6624d1c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 1fb948d63f7bc42839d6fae8a2138d4ad48d81f6
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782862"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879169"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
@@ -40,33 +40,30 @@ Se l'organizzazione ha Defender per Office 365 Piano 2 (incluso nell'abbonamento
 
 Dopo aver applicato tag di sistema o tag personalizzati agli utenti, è possibile utilizzare tali tag come filtri in avvisi, report e indagini:
 
-- [Avvisi nel Centro sicurezza & conformità](alerts.md)
+- [Avvisi](alerts.md)
 - [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md)
 - [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report)
 - [Visualizzazioni campagna](campaigns.md)
 - Per gli account con priorità, è possibile utilizzare il [report Problemi](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) di posta elettronica per gli account di priorità nell'interfaccia di amministrazione di Exchange (EAC).
 
-In questo articolo viene illustrato come configurare i tag utente nel Centro sicurezza & conformità. Non sono disponibili cmdlet nel Centro sicurezza & conformità per gestire i tag utente.
+Questo articolo spiega come configurare i tag utente nel portale Microsoft 365 Defender. Non sono disponibili cmdlet in Microsoft 365 Defender Portal per gestire i tag utente.
 
 Per informazioni su come i tag utente fanno parte della strategia per proteggere gli account utente ad alto [impatto,](security-recommendations-for-priority-accounts.md)vedere Suggerimenti per la sicurezza per gli account con priorità in Microsoft 365 .
 
-> [!NOTE]
-> Se si utilizza il Centro sicurezza Microsoft 365 unificata, è possibile impostare i tag qui: https://security.microsoft.com/securitysettings/userTags .
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/> . Per passare direttamente alla **pagina Tag** utente, aprire <https://security.microsoft.com/securitysettings/userTags> .
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla **pagina Tag** utente, aprire <https://protection.office.com/userTags> .
-
-- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni nel portale di Microsoft 365 Defender:
   - Per creare, modificare ed eliminare tag utente, è necessario essere membri dei gruppi **di** ruoli Gestione organizzazione o Amministratore **sicurezza.**
   - Per aggiungere e rimuovere membri dai tag utente esistenti, è necessario essere membri dei gruppi di ruoli **Gestione** **organizzazione,** Amministratore sicurezza o **Operatore** sicurezza
   - Per l'accesso in sola lettura ai tag utente, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
 
-  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
 
   > [!NOTE]
   >
-  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > - L'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   >
   > - La gestione dei tag utente è controllata dai **ruoli Lettore tag** **e Gestione** tag.
 
@@ -74,62 +71,71 @@ Per informazioni su come i tag utente fanno parte della strategia per proteggere
 
 - Per informazioni sulla protezione degli _account con privilegi_ (account amministratore), vedere questo [argomento.](/azure/architecture/framework/security/critical-impact-accounts)
 
-## <a name="use-the-security--compliance-center-to-create-user-tags"></a>Usare il Centro sicurezza & conformità per creare tag utente
+## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Usare il portale Microsoft 365 Defender per creare tag utente
 
-1. Nel Centro sicurezza & conformità passare a **Gestione minacce** \> **Tag utente**.
+1. Nel portale Microsoft 365 Defender passare **a** Impostazioni \> **e-mail & collaborazione** Tag \> **utente**.
 
-2. Nella pagina **Tag utente** visualizzata fare clic su **Crea tag.**
+2. Nella pagina **Tag utente** fare clic su Crea icona tag ![ Crea ](../../media/m365-cc-sc-create-icon.png) **tag**.
 
 3. La **procedura guidata Crea tag** si apre in un nuovo riquadro a comparsa. Nella pagina **Definisci tag** configurare le impostazioni seguenti:
-   - **Nome**: immettere un nome descrittivo univoco per il tag. Questo è il valore che vedrai e userai.
+   - **Nome**: immettere un nome descrittivo univoco per il tag. Questo è il valore che vedrai e userai. Tieni presente che non puoi rinominare un tag dopo averlo creato.
    - **Descrizione:** immettere una descrizione facoltativa per il tag.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-4. Nella pagina **Assegna utenti** eseguire una delle operazioni seguenti:
-
-   - Fare **clic su Aggiungi utenti**. Nel riquadro a comparsa visualizzato eseguire una delle operazioni seguenti per aggiungere singoli utenti o gruppi:
+4. Nella pagina **Assegna membri** eseguire una delle operazioni seguenti:
+   - Fare ![ clic su Aggiungi membri icona Aggiungi ](../../media/m365-cc-sc-create-icon.png) **membri**. Nel riquadro a comparsa visualizzato eseguire una delle operazioni seguenti per aggiungere singoli utenti o gruppi:
      - Fare clic nella casella e scorrere l'elenco per selezionare un utente o un gruppo.
      - Fare clic nella casella e iniziare a digitare per filtrare l'elenco e selezionare un utente o un gruppo.
      - Per aggiungere altri valori, fare clic in un'area vuota della casella.
-     - Per rimuovere singole voci dalla casella, fare clic **su** Rimuovi Icona ![ Rimuovi ](../../media/scc-remove-icon.png) nell'utente o nel gruppo nella casella.
-     - Per rimuovere le voci esistenti dall'elenco sotto la casella, fare clic **su Rimuovi** Rimuovi icona ![ la ](../../media/scc-remove-icon.png) voce.
+     - Per rimuovere singole voci, fare clic su ![Icona Rimuovi voce](../../media/m365-cc-sc-remove-selection-icon.png) accanto alla voce nella casella.
+     - Per rimuovere tutte le voci, fare clic sull'icona Rimuovi voce ![ nell'elemento Utenti e gruppi ](../../media/m365-cc-sc-remove-selection-icon.png) **nn** selezionati sotto la casella.
 
      Al termine, fare clic su **Aggiungi**.
+
+     Nella pagina **Assegna membri** è inoltre possibile rimuovere le voci facendo clic sull'icona Elimina accanto alla ![ ](../../media/m365-cc-sc-delete-icon.png) voce.
 
    - Fare **clic su** Importa per selezionare un file di testo contenente gli indirizzi di posta elettronica degli utenti o dei gruppi. Assicurarsi che il file di testo contenga una voce per riga.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-5. Nella pagina **Rivedi tag** rivedere le impostazioni. È possibile fare **clic su** Modifica nella sezione specifica per apportare modifiche.
+5. Nella pagina **Rivedi tag** visualizzata rivedere le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare clic su **Indietro** o selezionare la pagina specifica della procedura guidata.
 
-   Al termine, fare clic su **Invia.**
+   Al termine, fare clic su **Invia** e quindi su **Fine.**
 
-## <a name="use-the-security--compliance-center-to-view-user-tags"></a>Usare il Centro sicurezza & conformità per visualizzare i tag utente
+## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>Usare il portale Microsoft 365 Defender per visualizzare i tag utente
 
-1. Nel Centro sicurezza & conformità passare a **Gestione minacce** \> **Tag utente**.
+1. Nel portale Microsoft 365 Defender passare **a** Impostazioni \> **e-mail & collaborazione** Tag \> **utente**.
 
-2. Nella **pagina Tag utente** visualizzata selezionare il tag utente che si desidera visualizzare (non fare clic sulla casella di controllo).
+2. Nella **pagina Tag utente** vengono visualizzate le proprietà seguenti nell'elenco dei tag utente:
 
-3. Nel riquadro a comparsa dei dettagli di sola lettura visualizzato, rivedere le impostazioni.
+   - **Tag**: nome del tag utente. Tieni presente che questo include il tag di **sistema dell'account Priority** incorporato.
+   - **Applicato a**: Numero di membri
+   - **Data ultima modifica**
+   - **Creato il**
 
-   Al termine, fare clic su **Chiudi**.
+3. Quando si seleziona un tag utente facendo clic sul nome, i dettagli vengono visualizzati in un riquadro a comparsa.
 
-## <a name="use-the-security--compliance-center-to-modify-user-tags"></a>Utilizzare il Centro sicurezza & conformità per modificare i tag utente
+## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>Usare il portale Microsoft 365 Defender per modificare i tag utente
 
-1. Nel Centro sicurezza & conformità passare a **Gestione minacce** \> **Tag utente**.
+1. Nel portale Microsoft 365 Defender passare **a** Impostazioni \> **e-mail & collaborazione** Tag \> **utente**.
 
-2. Nella **pagina Tag utente** visualizzata selezionare il tag utente che si desidera visualizzare e quindi fare clic su **Modifica tag.**
+2. Nella pagina **Tag utente** selezionare il tag utente nell'elenco e quindi fare clic su Modifica icona tag ![ Modifica ](../../media/m365-cc-sc-edit-icon.png) **tag**.
 
-3. La procedura guidata dei criteri viene aperta in un **riquadro a comparsa** Modifica tag. Fare **clic su** Avanti per rivedere e modificare le impostazioni.
+3. Nel riquadro a comparsa dei dettagli visualizzato, la stessa procedura guidata e le stesse impostazioni sono disponibili come descritto nella sezione Usare il portale [di Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-user-tags) per creare tag utente in precedenza in questo articolo.
 
-   Al termine, fare clic su **Invia.**
+   **Note**:
 
-## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>Usare il Centro sicurezza & conformità per rimuovere i tag utente
+   - La **pagina Definisci tag** non è disponibile per il tag di sistema dell'account **Priority** predefinito, quindi non puoi rinominare questo tag o modificare la descrizione.
+   - Non è possibile rinominare un tag personalizzato, ma è possibile modificare la descrizione.
+
+## <a name="use-the-microsoft-365-defender-portal-to-remove-user-tags"></a>Usare il portale Microsoft 365 Defender per rimuovere i tag utente
 
 > [!NOTE]
-> Non è possibile rimuovere il tag **dell'account Priority** predefinito.
+> Non è possibile rimuovere il tag di sistema **dell'account Priority** predefinito.
 
-1. Nel Centro sicurezza & conformità passare a **Gestione minacce** \> **Tag utente**.
+1. Nel portale Microsoft 365 Defender passare **a** Impostazioni \> **e-mail & collaborazione** Tag \> **utente**.
 
-2. Nella **pagina Tag utente** visualizzata selezionare il tag utente che si desidera rimuovere, fare clic su Elimina **tag** e quindi selezionare **Sì,** rimuovi nell'avviso visualizzato.
+2. Nella pagina **Tag utente** selezionare il tag utente nell'elenco e quindi fare clic su Elimina tag icona ![ Elimina ](../../media/m365-cc-sc-delete-icon.png) **tag**.
+
+3. Leggere l'avviso nella finestra di dialogo di conferma visualizzata e quindi fare clic su **Sì, rimuovi**.

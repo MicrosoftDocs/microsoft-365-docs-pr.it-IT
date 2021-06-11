@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd9d42ed85e9a489107a72ccbe841537a7e524d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843519"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893741"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender per endpoint su Linux
 
@@ -101,7 +101,9 @@ Se si verificano errori di installazione, fare riferimento a Risoluzione dei pro
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon richiede l'autorizzazione eseguibile. Per ulteriori informazioni, vedere "Verificare che il daemon abbia l'autorizzazione eseguibile" in Risolvere i problemi di installazione di [Microsoft Defender per Endpoint su Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
 
-- Memoria: 1 GB
+- Core: minimo 2, 4 preferiti
+
+- Memoria: minimo 1 GB, 4 preferiti
 
     > [!NOTE]
     > Assicurati di avere spazio libero su disco in /var.

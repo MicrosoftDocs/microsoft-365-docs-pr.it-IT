@@ -10,20 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Gli amministratori possono scoprire in che modo la formazione sulla simulazione di attacchi nel centro sicurezza Microsoft 365 influisce sui dipendenti e può ottenere informazioni dettagliate dai risultati della simulazione e della formazione.
+description: Gli amministratori possono scoprire in che modo la formazione sulla simulazione di attacchi nel portale di Microsoft 365 Defender influisce sui dipendenti e può ottenere informazioni dettagliate dai risultati della simulazione e della formazione.
 ms.technology: mdo
-ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: e189864a42d025bb5ce720a6edb6c1c2c8c84623
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51600008"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878377"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Acquisire informazioni approfondite attraverso la formazione del Simulatore di attacchi
 
+**Si applica a** [Microsoft Defender per Office 365 piano 2](defender-for-office-365.md)
+
 Nell'ambito della formazione sulla simulazione di attacchi, Microsoft fornisce informazioni dettagliate basate sui risultati delle simulazioni e dei corsi di formazione che i dipendenti hanno seguito. Queste informazioni dettagliate consentono di tenere informati sull'avanzamento della preparazione alle minacce dei dipendenti, nonché di consigliare i passaggi successivi per preparare meglio i dipendenti e l'ambiente per gli attacchi.
 
-Stiamo continuamente lavorando per espandere le informazioni dettagliate disponibili. L'impatto sul comportamento e le azioni consigliate sono attualmente disponibili. Per iniziare, vai a Formazione sulla simulazione [di attacco nel centro sicurezza Microsoft 365 sicurezza](https://security.microsoft.com/attacksimulator?viewid=overview).
+Stiamo continuamente lavorando per espandere le informazioni dettagliate disponibili. L'impatto sul comportamento e le azioni consigliate sono attualmente disponibili. Per iniziare, vai al training di simulazione degli [attacchi nel portale Microsoft 365 Defender.](https://security.microsoft.com/attacksimulator?viewid=overview)
 
 ## <a name="behavior-impact-on-compromise-rate"></a>Impatto del comportamento sulla frequenza di compromissione
 

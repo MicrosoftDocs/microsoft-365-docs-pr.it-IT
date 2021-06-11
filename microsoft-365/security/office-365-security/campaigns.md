@@ -19,12 +19,12 @@ ms.collection:
 description: Informazioni sulle visualizzazioni della campagna in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779460"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879133"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Visualizzazioni della campagna in Microsoft Defender per Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "52779460"
 **Si applica a**
 - [Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md)
 
-Visualizzazioni campagna è una funzionalità di Microsoft Defender per Office 365 Piano 2 (ad esempio, Microsoft 365 E5 o organizzazioni con un componente aggiuntivo Defender per Office 365 Piano 2). Visualizzazioni campagna nel centro Microsoft 365 sicurezza identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
+Visualizzazioni campagna è una funzionalità di Microsoft Defender per Office 365 Piano 2 (ad esempio, Microsoft 365 E5 o organizzazioni con un componente aggiuntivo Defender per Office 365 Piano 2). Visualizzazioni campagna nel portale Microsoft 365 Defender identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
 
 - Analizzare e rispondere in modo efficiente agli attacchi di phishing.
 - Comprendere meglio la portata dell'attacco.
@@ -54,11 +54,11 @@ Microsoft sfrutta le grandi quantità di dati anti-phishing, posta indesiderata 
 
 Una campagna può essere di breve durata o può estendersi per diversi giorni, settimane o mesi con periodi attivi e inattivi. È possibile che venga avviata una campagna per l'organizzazione specifica oppure che l'organizzazione sia parte di una campagna più ampia tra più società.
 
-## <a name="campaign-views-in-the-security-center"></a>Visualizzazioni campagna nel centro sicurezza
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Visualizzazioni campagna nel portale Microsoft 365 Defender
 
-Visualizzazioni campagna è disponibile nel [centro sicurezza Microsoft 365](https://security.microsoft.com) posta elettronica all'indirizzo Email & **collaboration** \> **Campaigns** o direttamente all'indirizzo <https://security.microsoft.com/campaigns> .
+Visualizzazioni campagna è disponibile nel portale Microsoft 365 Defender ( ) in <https://security.microsoft.com> **Email & collaboration** \> **Campaigns** o direttamente all'indirizzo <https://security.microsoft.com/campaigns> .
 
-![Panoramica delle campagne nel centro Microsoft 365 sicurezza](../../media/campaigns-overview.png)
+![Panoramica delle campagne nel portale Microsoft 365 Defender](../../media/campaigns-overview.png)
 
 Puoi anche accedere a Visualizzazioni campagna da:
 
@@ -67,7 +67,7 @@ Puoi anche accedere a Visualizzazioni campagna da:
 - **Collaborazione & posta elettronica** \> **Explorer** \> **Visualizza** \> **Phish** \> **Scheda** Campagna
 - **Collaborazione & posta elettronica** \> **Explorer** \> **Visualizza** \> **Malware** \> **Scheda** Campagna
 
-Per accedere a Visualizzazioni campagna, è necessario essere membri dei gruppi di ruoli **Gestione** **organizzazione,** Amministratore sicurezza o **Lettore** sicurezza nel Centro sicurezza. Per ulteriori informazioni, vedere Autorizzazioni nel Centro [Microsoft 365 conformità e Microsoft 365 sicurezza.](permissions-microsoft-365-security-center.md)
+Per accedere a Visualizzazioni campagna, è necessario essere membri  dei gruppi di ruoli Gestione **organizzazione,** Amministratore sicurezza o Lettore sicurezza nel portale di Microsoft 365 Defender. Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 
 ## <a name="campaigns-overview"></a>Panoramica delle campagne
 

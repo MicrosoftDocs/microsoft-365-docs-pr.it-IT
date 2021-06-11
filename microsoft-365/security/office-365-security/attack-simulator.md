@@ -20,12 +20,12 @@ ms.custom:
 description: Gli amministratori possono imparare a usare Il simulatore di attacco per eseguire attacchi simulati di phishing e password nelle organizzazioni Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 03e6c0077f13c85bfd20ac0583b64ce29e2535a1
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624826"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878677"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulatore di attacco in Microsoft Defender per Office 365
 
@@ -37,9 +37,9 @@ Se l'organizzazione dispone di Microsoft Defender per Office 365 Piano 2, che in
 
 > [!NOTE]
 >
-> Il simulatore di attacco, come descritto in questo [articolo, è ora di sola](https://security.microsoft.com)lettura ed è stato sostituito dal **training** di simulazione degli attacchi nel nodo di collaborazione E-mail **&** nel centro sicurezza Microsoft 365. Per ulteriori informazioni, vedere [Introduzione all'uso del training di simulazione degli attacchi.](attack-simulation-training-get-started.md)
+> Il simulatore di attacco come descritto in questo articolo è ora di sola lettura ed è stato sostituito dal **training** di simulazione degli attacchi nel nodo di collaborazione **Email &** nel portale di Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per ulteriori informazioni, vedere [Introduzione all'uso del training di simulazione degli attacchi.](attack-simulation-training-get-started.md)
 >
-> La possibilità di avviare nuove simulazioni da questa versione di Attack Simulator è stata disabilitata. Tuttavia, è comunque possibile accedere ai report per un massimo di 90 giorni a partire dal 24 gennaio 2021.
+> La possibilità di avviare nuove simulazioni da questa versione di Attack Simulator è stata disabilitata. È comunque possibile accedere ai report fino al 24 aprile 2021.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 

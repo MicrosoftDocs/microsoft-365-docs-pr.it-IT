@@ -72,7 +72,7 @@ Per configurare la collaborazione sicura, si usano queste funzionalità Microsof
 | Microsoft Teams   | Accesso guest, team privati, canali privati | Microsoft 365 E1, E3 ed E5 |
 | Conformità di Microsoft 365  | Etichette di riservatezza    | Microsoft 365 E3 e E5 |
 
-### <a name="collaboration-governance"></a>Collaborazione di governance
+### <a name="collaboration-governance"></a>Governance collaborativa
 
 Microsoft 365 offre molte opzioni per la gestione della soluzione di collaborazione. È consigliabile utilizzare questo contenuto di distribuzione insieme al contenuto [di governance](collaboration-governance-overview.md) della collaborazione per creare la soluzione di collaborazione migliore per l'organizzazione.
 

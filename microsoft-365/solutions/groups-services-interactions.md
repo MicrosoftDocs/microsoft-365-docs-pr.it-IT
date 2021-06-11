@@ -114,14 +114,14 @@ Nella tabella seguente viene fornita una panoramica delle interazioni Microsoft 
 |:---|:---|:---|:---|:---|
 |Azure AD|Appartenenza, Controlli gruppo, Guest|Sì|Sì|Sì|
 |Exchange|Calendario, cassetta postale|Sì|Sì|Sì|
-|Moduli|Modulo|Sì|No|No|
+|Forms|Modulo|Sì|No|No|
 |OneNote|Blocco appunti|Sì|No|No|
 |Planner|Bacheca attività|No|Sì|Sì|
 |Power Apps app|App|Sì|No|No|
 |Power Automate|Flusso di lavoro|Sì|No|No|
 |Power BI (classico)|Workspace|No|Sì|Sì|
 |Power BI (nuovo)|Workspace|Sì|No|Sì|
-|Project per il Web|Project piano|Sì|Sì|No|
+|Project per il web|Project piano|Sì|Sì|No|
 |Roadmap|Roadmap|Sì|Sì|No|
 |SharePoint|Sito|Sì|Sì|Sì|
 |Stream|Canale, video|Sì|Sì|Sì|
@@ -236,7 +236,7 @@ No, la cassetta postale e il calendario non possono essere modificati in un grup
 
 Sì, l'eliminazione della cassetta postale in Exchange eliminerà il gruppo, nonché i servizi e il contenuto associati al gruppo.
 
-## <a name="forms"></a>Moduli
+## <a name="forms"></a>Forms
 
 I moduli forniscono sondaggi e quiz basati sul Web.
 
@@ -470,7 +470,7 @@ Sì e no. Un'area di Power BI può essere associata a un solo gruppo alla volta,
 
 Sì, l'eliminazione dell'area di lavoro Power BI il contenuto e i servizi associati al gruppo.
 
-## <a name="project-for-the-web"></a>Project per il Web
+## <a name="project-for-the-web"></a>Project per il web
 
 Project web offre la possibilità di creare piani di progetto, diagrammi di Gantt e roadmap.
 Funzionalità principali fornite ai gruppi.

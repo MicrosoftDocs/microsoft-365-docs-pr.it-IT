@@ -31,10 +31,10 @@ Nella tabella seguente sono elencati i limiti per i casi principali di eDiscover
   | Descrizione del limite | Limite |
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione.  <br/> |Nessun limite  <br/> |
-  |Numero massimo di blocchi di maiuscole e minuscole per un'organizzazione.  <br/> |10,000  <br/> |
-  |Numero massimo di cassette postali in un singolo caso di blocco. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate Microsoft 365 gruppi, Microsoft Teams e Yammer gruppi.  <br/> |1,000  <br/> |
+  |Numero massimo di blocchi di maiuscole e minuscole per un'organizzazione.  <br/> |10.000  <br/> |
+  |Numero massimo di cassette postali in un singolo caso di blocco. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate Microsoft 365 gruppi, Microsoft Teams e Yammer gruppi.  <br/> |1.000  <br/> |
   |Numero massimo di siti in un singolo caso di blocco. Questo limite include il totale combinato di OneDrive for Business, siti SharePoint e siti associati a Microsoft 365 Groups, Microsoft Teams e Yammer Groups.  <br/> |100  <br/> |
-  |Numero massimo di casi visualizzati nella home page principale di eDiscovery e numero massimo di elementi visualizzati nelle schede Esenzioni, Ricerche ed Esportazione all'interno di un caso. <sup>1</sup> |1,000|
+  |Numero massimo di casi visualizzati nella home page principale di eDiscovery e numero massimo di elementi visualizzati nelle schede Esenzioni, Ricerche ed Esportazione all'interno di un caso. <sup>1</sup> |1.000|
   |||
 
    > [!NOTE]

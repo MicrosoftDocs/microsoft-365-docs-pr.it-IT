@@ -20,25 +20,27 @@ ms.custom:
 description: Gli amministratori possono imparare a usare la formazione di simulazione degli attacchi per eseguire attacchi simulati di phishing e password nelle organizzazioni Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5d4b77204f207c31f2014df797f6209b92c9ccb
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 182d3d3c1d3b7c0c43caa8a809e993933707af00
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822335"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878785"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Introduzione alla formazione sull’uso di Simulatore di attacchi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Se l'organizzazione dispone di Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 2, che include funzionalità di analisi delle minacce e [risposta,](office-365-ti.md)è possibile utilizzare la formazione sulla simulazione di attacchi nel Centro sicurezza Microsoft per eseguire scenari di attacco realistici nell'organizzazione. Questi attacchi simulati consentono di identificare e individuare gli utenti vulnerabili prima che un attacco reale influisca sulla linea di fondo. Leggi questo articolo per altre informazioni.
+**Si applica a** [Microsoft Defender per Office 365 piano 2](defender-for-office-365.md)
+
+Se l'organizzazione dispone di Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 2, che include funzionalità di analisi delle minacce e [risposta,](office-365-ti.md)è possibile usare la formazione di simulazione degli attacchi nel portale di Microsoft 365 Defender per eseguire scenari di attacco realistici nell'organizzazione. Questi attacchi simulati consentono di identificare e individuare gli utenti vulnerabili prima che un attacco reale influisca sulla linea di fondo. Leggi questo articolo per altre informazioni.
 
 > [!NOTE]
 > Il training della simulazione di attacco sostituisce la vecchia esperienza di Simulatore di attacco v1 descritta in [Simulatore](attack-simulator.md)di attacco in Microsoft Defender per Office 365 .
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Per aprire il Centro sicurezza Microsoft, passare a <https://security.microsoft.com> . Formazione sulla simulazione di attacchi è disponibile in **Formazione sulla simulazione di attacchi tramite posta elettronica e** \> **collaborazione.** Per passare direttamente alla formazione sulla simulazione di attacco, aprire <https://security.microsoft.com/attacksimulator> .
+- Per aprire il portale Microsoft 365 Defender, passare a <https://security.microsoft.com> . Formazione sulla simulazione di attacchi è disponibile in **Formazione sulla simulazione di attacchi tramite posta elettronica e** \> **collaborazione.** Per passare direttamente alla formazione sulla simulazione di attacco, aprire <https://security.microsoft.com/attacksimulator> .
 
 - Per ulteriori informazioni sulla disponibilità del training di simulazione degli attacchi tra diverse sottoscrizioni Microsoft 365, vedi [Microsoft Defender per](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)la descrizione Office 365 servizio .
 
@@ -52,7 +54,7 @@ Se l'organizzazione dispone di Microsoft 365 E5 o Microsoft Defender per Office 
 
 - I dati correlati alla simulazione e alla formazione degli attacchi vengono archiviati con altri dati dei clienti Microsoft 365 servizi. Per ulteriori informazioni, [vedere Microsoft 365 di dati](../../enterprise/o365-data-locations.md). La simulazione di attacco è disponibile nelle seguenti aree geografiche: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN e KOR.
 
-- A partire dal 15 giugno 2021, il training di simulazione degli attacchi è disponibile in GCC. Se l'organizzazione ha Office 365 G5 GCC o Microsoft Defender for Office 365 (Piano 2) per enti pubblici, è possibile utilizzare la formazione sulla simulazione di attacchi nel Centro sicurezza Microsoft per eseguire scenari di attacco realistici nell'organizzazione, come descritto in questo articolo. Il training della simulazione di attacchi non è ancora disponibile in GCC High o DoD.
+- A partire dal 15 giugno 2021, il training di simulazione degli attacchi è disponibile in GCC. Se l'organizzazione ha Office 365 G5 GCC o Microsoft Defender for Office 365 (Piano 2) per enti pubblici, è possibile usare la formazione di simulazione degli attacchi nel portale di Microsoft 365 Defender per eseguire scenari di attacco realistici nell'organizzazione, come descritto in questo articolo. Il training della simulazione di attacchi non è ancora disponibile in GCC High o DoD.
 
 > [!NOTE]
 > La formazione sulla simulazione di attacchi offre un sottoinsieme di funzionalità ai clienti E3 come versione di prova. L'offerta di valutazione contiene la possibilità di usare un payload di raccolta delle credenziali e la possibilità di selezionare esperienze di formazione "PHISHING ISA" o "Phishing di massa sul mercato". Nessuna altra funzionalità fa parte dell'offerta di valutazione E3.

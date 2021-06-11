@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/11/2021
 ms.locfileid: "52310843"
 ---
-# <a name="export-content-from-a-core-ediscovery-case"></a>Esportare contenuto da un caso di eDiscovery di base
+# <a name="export-content-from-a-core-ediscovery-case"></a>Esportare contenuti da un caso di Core eDiscovery
 
 Dopo aver eseguito correttamente una ricerca associata a un caso di eDiscovery di base, è possibile esportare i risultati della ricerca. Quando si esportano i risultati della ricerca, gli elementi delle cassette postali vengono scaricati nei file PST o come singoli messaggi. Quando si esporta contenuto da SharePoint e OneDrive for Business, vengono esportate copie di documenti Office nativi e altri documenti. Viene esportato Results.csv file contenente informazioni su ogni elemento esportato e un file manifesto (in formato XML) contenente informazioni su ogni risultato della ricerca.
   

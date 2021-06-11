@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server di posta elettronica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b5eb24377dd9f9ac304e1df7b2902d29e4a738b9
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 416fbd73d8412cf8697577df19f2fd2893b4ce96
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821962"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878821"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
@@ -44,14 +44,14 @@ Se si è un cliente di Microsoft 365 con cassette postali in Exchange Online o u
 
 - **Elenco indirizzi attendibili:** *l'elenco indirizzi* attendibili è un elenco di indirizzi consentiti dinamico nel datacenter Microsoft che non richiede alcuna configurazione del cliente. Microsoft identifica queste origini di posta elettronica attendibili dalle sottoscrizioni a vari elenchi di terze parti. È possibile abilitare o disabilitare l'utilizzo dell'elenco indirizzi attendibili. non è possibile configurare i server di posta elettronica di origine nell'elenco indirizzi attendibili. Il filtro posta indesiderata viene ignorato nei messaggi in arrivo dai server di posta elettronica nell'elenco indirizzi attendibili.
 
-In questo articolo viene descritto come configurare i criteri di filtro delle connessioni predefiniti nel Centro sicurezza Microsoft 365 o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online, PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online). Per ulteriori informazioni su come EOP utilizza il filtro connessioni fa parte delle impostazioni globali di protezione da posta indesiderata [dell'organizzazione,](anti-spam-protection.md)vedere Protezione da posta indesiderata.
+In questo articolo viene descritto come configurare i criteri di filtro delle connessioni predefiniti nel portale di Microsoft 365 Microsoft 365 Defender o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online, PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online). Per ulteriori informazioni su come EOP utilizza il filtro connessioni fa parte delle impostazioni globali di protezione da posta indesiderata [dell'organizzazione,](anti-spam-protection.md)vedere Protezione da posta indesiderata.
 
 > [!NOTE]
 > L'elenco indirizzi IP consentiti, l'elenco indirizzi attendibili e l'elenco indirizzi IP non consentiti fanno parte della strategia generale per consentire o bloccare la posta elettronica nell'organizzazione. Per ulteriori informazioni, vedere [Create safe sender lists](create-safe-sender-lists-in-office-365.md) e Create blocked sender [lists](create-block-sender-lists-in-office-365.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza a <https://security.microsoft.com>. Per passare direttamente alla pagina **Criteri di protezione dalla posta indesiderata**, usare <https://security.microsoft.com/antispam>.
+- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla pagina **Criteri di protezione dalla posta indesiderata**, usare <https://security.microsoft.com/antispam>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -72,9 +72,9 @@ In questo articolo viene descritto come configurare i criteri di filtro delle co
 
 - L'elenco indirizzi IP consentiti e l'elenco indirizzi IP non consentiti supportano un massimo di 1273 voci, dove una voce è un singolo indirizzo IP, un intervallo di indirizzi IP o un IP CIDR (Classless InterDomain Routing).
 
-## <a name="use-the-security-center-to-modify-the-default-connection-filter-policy"></a>Utilizzare il Centro sicurezza per modificare il criterio di filtro delle connessioni predefinito
+## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>Utilizzare il portale Microsoft 365 Defender per modificare il criterio di filtro connessioni predefinito
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale Microsoft 365 Defender passare alla sezione Criteri di **collaborazione** & e-mail & regole Criteri di \>  \>  \>  minaccia Sezione Protezione da \> **posta indesiderata**.
 
 2. Nella pagina **Criteri di protezione** da posta indesiderata selezionare Criterio filtro connessioni **(impostazione predefinita)** nell'elenco facendo clic sul nome del criterio.
 
@@ -103,9 +103,9 @@ In questo articolo viene descritto come configurare i criteri di filtro delle co
 
 4. Tornare al riquadro a comparsa dei dettagli sui criteri, fare clic su **chiudi**.
 
-## <a name="use-the-security-center-to-view-the-default-connection-filter-policy"></a>Utilizzare il Centro sicurezza per visualizzare i criteri di filtro delle connessioni predefiniti
+## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>Usare il portale Microsoft 365 Defender per visualizzare i criteri di filtro delle connessioni predefiniti
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale Microsoft 365 Defender passare alla sezione Criteri di **collaborazione** & e-mail & regole Criteri di \>  \>  \>  minaccia Sezione Protezione da \> **posta indesiderata**.
 
 2. Nella pagina **Criteri di protezione** da posta indesiderata vengono visualizzate le proprietà seguenti nell'elenco dei criteri:
 
@@ -152,7 +152,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-HostedC
 
 Per verificare la corretta modifica del criterio di filtro delle connessioni predefinito, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza passare **a** Criteri di collaborazione & posta elettronica & Regole Criteri di minaccia sezione Criteri di protezione da posta indesiderata Selezionare Criterio filtro connessioni \>  \>  \>  \>  \> **(predefinito)** nell'elenco facendo clic sul nome del criterio e verificare le impostazioni.
+- Nel portale di Microsoft 365 Defender passare **a** Criteri di collaborazione & posta elettronica & Criteri di minaccia delle regole sezione Criteri di protezione da posta indesiderata Selezionare Criterio filtro connessioni \>  \>  \>  \>  \> **(predefinito)** nell'elenco facendo clic sul nome del criterio e verificare le impostazioni.
 
 - In Exchange Online PowerShell o PowerShell EOP autonomo, eseguire il comando seguente e verificare le impostazioni:
 

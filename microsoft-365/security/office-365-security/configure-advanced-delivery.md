@@ -17,12 +17,12 @@ ms.custom: ''
 description: Gli amministratori possono imparare a utilizzare i criteri di recapito avanzati in Exchange Online Protection (EOP) per identificare i messaggi che non devono essere filtrati in scenari supportati specifici (simulazioni di phishing di terze parti e messaggi recapitati alle cassette postali secOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9c1c6f7635b87e25adcb121db79f67d4ec1988f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: deaad11b6397cd53017c0972a624b67a9623887f
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788998"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879109"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurare il recapito di simulazioni di phishing di terze parti agli utenti e messaggi non filtrati alle cassette postali secOps
 
@@ -60,22 +60,22 @@ I messaggi identificati dal criterio di recapito avanzato non sono minacce alla 
 - [Ricerca avanzata in Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md)
 - [Visualizzazioni campagna](campaigns.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza a <https://security.microsoft.com>. Per passare direttamente alla **pagina Recapito avanzato,** aprire <https://security.microsoft.com/advanceddelivery> .
+- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla **pagina Recapito avanzato,** aprire <https://security.microsoft.com/advanceddelivery> .
 
 - Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
-  - Per creare, modificare o rimuovere le impostazioni configurate nel criterio di  recapito avanzato,  è necessario essere membri  del gruppo di ruoli Amministratore sicurezza nel Centro sicurezza e membri del gruppo di ruoli Gestione organizzazione in **Exchange Online**.  
+  - Per creare, modificare o rimuovere le impostazioni configurate nel criterio di  recapito avanzato, è necessario essere membri del gruppo  di ruoli Amministratore della sicurezza nel portale **di Microsoft 365 Defender** e membri del gruppo di ruoli Gestione organizzazione in **Exchange Online**.  
   - Per l'accesso in sola lettura ai criteri di recapito avanzati, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
 
-  Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 security center](permissions-microsoft-365-security-center.md) e Permissions in [Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender](permissions-microsoft-365-security-center.md) e Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > L'aggiunta di utenti al ruolo di Azure Active Directory assegna agli  utenti le autorizzazioni necessarie nel Centro sicurezza e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente offre agli utenti  le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
-## <a name="use-the-security-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utilizzare il Centro sicurezza per configurare le cassette postali SecOps nel criterio di recapito avanzato
+## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utilizzare il portale Microsoft 365 Defender per configurare le cassette postali SecOps nel criterio di recapito avanzato
 
-1. Nel centro sicurezza passare a Criteri di **collaborazione** & posta elettronica & regole Criteri di minaccia \>  \>  \> **Sezione** \> **Regole recapito avanzato**.
+1. Nel portale Microsoft 365 Defender passare a Posta **elettronica &** criteri di collaborazione & regole criteri di minaccia \>  \>  \> **Sezione** \> **Regole recapito avanzato**.
 
 2. Nella pagina **Recapito avanzato** verificare che la scheda Cassetta postale **SecOps** sia selezionata e quindi eseguire una delle operazioni seguenti:
    - Fare ![ clic su Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica**.
@@ -93,9 +93,9 @@ I messaggi identificati dal criterio di recapito avanzato non sono minacce alla 
 
 Le voci della cassetta postale SecOps configurate vengono visualizzate nella scheda Cassetta postale **SecOps.** Per apportare modifiche, fare ![ clic su Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica** nella scheda.
 
-## <a name="use-the-security-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Usare il Centro sicurezza per configurare simulazioni di phishing di terze parti nel criterio di recapito avanzato
+## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Usare il portale Microsoft 365 Defender per configurare simulazioni di phishing di terze parti nel criterio di recapito avanzato
 
-1. Nel centro sicurezza passare a Criteri di **collaborazione** & posta elettronica & regole Criteri di minaccia \>  \>  \> **Sezione** \> **Regole recapito avanzato**.
+1. Nel portale Microsoft 365 Defender passare a Posta **elettronica &** criteri di collaborazione & regole criteri di minaccia \>  \>  \> **Sezione** \> **Regole recapito avanzato**.
 
 2. Nella pagina **Recapito avanzato** selezionare la scheda **Simulazione di phishing** e quindi eseguire una delle operazioni seguenti:
    - Fare ![ clic su Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica**.

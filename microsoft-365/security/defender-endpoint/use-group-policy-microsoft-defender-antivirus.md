@@ -60,9 +60,9 @@ Nella tabella seguente in questo argomento sono elencate le impostazioni di Crit
 | Posizione | Impostazione | Articolo |
 |:---|:---|:---|
 | Interfaccia client | Abilitare la modalità interfaccia utente headless | [Impedire agli utenti di visualizzare o interagire con l'Antivirus Microsoft Defender utente](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
-| Interfaccia client | Visualizzare testo aggiuntivo ai client quando devono eseguire un'azione | [Configurare le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md) |
-| Interfaccia client | Elimina tutte le notifiche | [Configurare le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md) |
-| Interfaccia client | Elimina le notifiche di riavvio | [Configurare le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md) |
+| Interfaccia client | Visualizzare testo aggiuntivo ai client quando devono eseguire un'azione | [Configurare le notifiche che vengono visualizzate negli endpoint](configure-notifications-microsoft-defender-antivirus.md) |
+| Interfaccia client | Elimina tutte le notifiche | [Configurare le notifiche che vengono visualizzate negli endpoint](configure-notifications-microsoft-defender-antivirus.md) |
+| Interfaccia client | Elimina le notifiche di riavvio | [Configurare le notifiche che vengono visualizzate negli endpoint](configure-notifications-microsoft-defender-antivirus.md) |
 | Esclusioni | Esclusioni di estensione | [Configurare e convalidare le esclusioni Antivirus Microsoft Defender analisi](configure-exclusions-microsoft-defender-antivirus.md) |
 | Esclusioni | Esclusioni percorso | [Configurare e convalidare le esclusioni Antivirus Microsoft Defender analisi](configure-exclusions-microsoft-defender-antivirus.md) |
 | Esclusioni | Esclusioni di processi | [Configurare e convalidare le esclusioni Antivirus Microsoft Defender analisi](configure-exclusions-microsoft-defender-antivirus.md) | 
@@ -94,7 +94,7 @@ Nella tabella seguente in questo argomento sono elencate le impostazioni di Crit
 | Correzione | Configurare l'override delle impostazioni locali per l'ora del giorno per eseguire un'analisi completa pianificata per completare la correzione | [Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Correzione | Specificare il giorno della settimana in cui eseguire un'analisi completa pianificata per completare la correzione | [Configurare le Antivirus Microsoft Defender pianificate](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Correzione | Specificare l'ora del giorno in cui eseguire un'analisi completa pianificata per completare la correzione | [Configurare le Antivirus Microsoft Defender pianificate](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Creazione di report | Disattivare le notifiche avanzate | [Configurare le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md)
+| Creazione di report | Disattivare le notifiche avanzate | [Configurare le notifiche che vengono visualizzate negli endpoint](configure-notifications-microsoft-defender-antivirus.md)
 | Radice | Disattiva Antivirus Microsoft Defender | Non usato (questa impostazione deve essere impostata su **Non configurato** per garantire il corretto funzionamento delle app antivirus di terze parti installate)
 | Radice | Definire gli indirizzi per ignorare il server proxy | Non utilizzato |
 | Radice | Definire la configurazione automatica del proxy (pac) per la connessione alla rete | Non utilizzato |

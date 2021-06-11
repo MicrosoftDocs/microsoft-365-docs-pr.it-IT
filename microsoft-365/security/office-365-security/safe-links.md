@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere l'organizzazione da phishing e altri attacchi che usano URL dannosi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d42d7563b5267f805756125d1764d506f1700e13
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 406450752085817cb49e3cf08a90c0087af3d94b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793029"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879289"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -220,7 +220,7 @@ Le impostazioni seguenti per i collegamenti sicuri sono disponibili per Office 3
 
 - Non consentire agli utenti di fare clic tramite collegamenti sicuri [](#warning-pages-from-safe-links) **all'URL** originale: consente o impedisce agli utenti di fare clic nella pagina di avviso all'URL originale nelle versioni desktop di Word, Excel, PowerPoint e Visio. Il valore predefinito e consigliato è **On**.
 
-Per configurare le impostazioni dei collegamenti sicuri per Office 365, vedere [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security-center).
+Per configurare le impostazioni dei collegamenti sicuri per Office 365, vedere [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
 Per ulteriori informazioni sui valori consigliati per le impostazioni dei criteri Standard e Strict, vedere [Impostazioni globali per collegamenti sicuri.](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links)
 
@@ -257,7 +257,7 @@ A livello di alto livello, ecco come funziona la protezione dei collegamenti sic
 
 Quando un utente in un criterio collegamenti sicuri attivo fa clic su un collegamento bloccato in un'app supportata, viene visualizzato nella [pagina di](#blocked-url-warning) avviso URL bloccati.
 
-L'elenco degli URL viene configurato nelle impostazioni globali per i collegamenti sicuri. Per istruzioni, vedere [Configurare l'elenco "Blocca gli URL seguenti".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security-center)
+L'elenco degli URL viene configurato nelle impostazioni globali per i collegamenti sicuri. Per istruzioni, vedere [Configurare l'elenco "Blocca gli URL seguenti".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)
 
 **Note**:
 

@@ -19,12 +19,12 @@ description: Gli amministratori possono scoprire come funzionano le informazioni
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b539cc50d3cf6ad637a749faa9d2cb5b2033b81
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: e1b99590d7ae96ad8371eb2a2fab5fb7e8f94d07
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821327"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879037"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Informazioni dettagliate sulla rappresentazione in Defender per Office 365
 
@@ -46,27 +46,27 @@ La rappresentazione del dominio è diversa [dallo spoofing del](anti-spoofing-pr
 
 La protezione della rappresentazione fa parte delle impostazioni dei criteri anti-phishing che sono esclusive di Microsoft Defender per Office 365. Per ulteriori informazioni su queste impostazioni, vedere Impostazioni di rappresentazione nei criteri [anti-phishing in Microsoft Defender per Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-È possibile utilizzare le informazioni dettagliate sulla rappresentazione nel Centro sicurezza Microsoft 365 per identificare rapidamente i messaggi provenienti da mittenti o domini mittenti impersonati configurati per la protezione della rappresentazione.
+Puoi usare le informazioni dettagliate sulla rappresentazione nel portale di Microsoft 365 Defender per identificare rapidamente i messaggi provenienti da mittenti o domini mittenti impersonati che hai configurato per la protezione della rappresentazione.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza a <https://security.microsoft.com>. Per passare direttamente alle informazioni dettagliate sulla rappresentazione nella **pagina Anti-phishing,** utilizzare <https://security.microsoft.com/antiphishing> . Per passare direttamente alla pagina **informazioni dettagliate sulla rappresentazione,** utilizzare <https://security.microsoft.com/impersonationinsight> .
+- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alle informazioni dettagliate sulla rappresentazione nella **pagina Anti-phishing,** utilizzare <https://security.microsoft.com/antiphishing> . Per passare direttamente alla pagina **informazioni dettagliate sulla rappresentazione,** utilizzare <https://security.microsoft.com/impersonationinsight> .
 
-- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni nel Centro sicurezza:
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni nel portale di Microsoft 365 Defender:
   - **Gestione organizzazione**
   - **Amministratore della sicurezza**
-  - **Lettore sicurezza**
-  - **Lettore globale**
+  - **Ruolo con autorizzazioni di lettura per la sicurezza**
+  - **Ruolo con autorizzazioni di lettura globali**
 
-  Per ulteriori informazioni, vedere [Autorizzazioni nel Centro sicurezza.](permissions-in-the-security-and-compliance-center.md)
+  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
 
-  **Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione  di Microsoft 365 offre agli utenti le autorizzazioni necessarie nel centro sicurezza e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  **Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 - Abiliti e configura la protezione dalla rappresentazione nei criteri anti-phishing in Microsoft Defender per Office 365. La protezione della rappresentazione non è abilitata per impostazione predefinita. Per ulteriori informazioni, vedere [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-## <a name="open-the-impersonation-insight-in-the-security-center"></a>Aprire le informazioni dettagliate sulla rappresentazione nel Centro sicurezza
+## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Aprire le informazioni dettagliate sulla rappresentazione nel portale Microsoft 365 Defender
 
-1. Nel centro sicurezza passare alla sezione Criteri di **&** di collaborazione & regole Criteri di minaccia \>  \>  \>  \> **sezione Anti-phishing.**
+1. Nel portale Microsoft 365 Defender passare a **Criteri** di collaborazione & e-mail & regole Criteri di minaccia \>  \>  \>  sezione \> **Anti-phishing.**
 
 2. Nella pagina **Anti-phishing,** le informazioni dettagliate sulla rappresentazione sono simili alle seguenti:
 

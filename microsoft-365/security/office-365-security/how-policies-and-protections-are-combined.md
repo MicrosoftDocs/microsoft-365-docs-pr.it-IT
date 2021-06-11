@@ -1,6 +1,6 @@
 ---
 title: Ordine e precedenza della protezione della posta elettronica
-keywords: sicurezza, malware, Microsoft 365, M365, centro sicurezza, portale di Microsoft 365 Defender, Microsoft Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Defender for Identity
+keywords: sicurezza, malware, Microsoft 365, M365, centro sicurezza, Microsoft Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Defender for Identity
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sull'ordine di applicazione delle protezioni in Exchange Online Protection (EOP) e su come il valore di priorità nei criteri di protezione determina quale criterio viene applicato.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7243fd79287e19528e999774dbd0dd018fa86759
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877849"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539012"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 

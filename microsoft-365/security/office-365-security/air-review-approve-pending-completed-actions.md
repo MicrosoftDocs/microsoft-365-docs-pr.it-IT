@@ -19,16 +19,21 @@ description: Informazioni sulle azioni di correzione nelle funzionalità di anal
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275073"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878773"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Esaminare e gestire le azioni di correzione in Office 365
 
+**Si applica a**
+- [Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 Poiché le indagini automatizzate sulla posta elettronica & contenuto di  collaborazione comportano verdetti, ad esempio dannosi o *sospetti,* vengono create determinate azioni di correzione. In Microsoft Defender per Office 365, le azioni di correzione possono includere:
+
 - Blocco di un URL (ora del clic)
 - Eliminazione recisa dei messaggi di posta elettronica o dei cluster
 - Quaranta allegati di posta elettronica o di posta elettronica
@@ -36,13 +41,9 @@ Poiché le indagini automatizzate sulla posta elettronica & contenuto di  collab
 
 Queste azioni di correzione non vengono eseguite a meno che il team delle operazioni di sicurezza non le approvi. È consigliabile rivedere e approvare tutte le azioni in sospeso il prima possibile, in modo che le indagini automatizzate si completino in modo appropriato. In alcuni casi, è possibile annullare un'azione di correzione.
 
-**Si applica a**
-- [Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 ## <a name="approve-or-reject-pending-actions"></a>Approvare (o rifiutare) le azioni in sospeso
 
-1. Accedere al centro Microsoft 365 sicurezza ( <https://security.microsoft.com> ) ed eseguire l'accesso.
+1. Vai al portale Microsoft 365 Defender ( <https://security.microsoft.com> ) e accedi.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In** sospeso esaminare l'elenco delle azioni in attesa di approvazione.
 4. Selezionare un elemento nell'elenco. Verrà visualizzato il riquadro a comparsa. 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebde023db5196117a02a2372784a3110839c51fa
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 956fb591154df374c8010d875645e1122f3419b2
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843531"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879241"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Threat Experts
 
@@ -45,9 +45,9 @@ Questo servizio di ricerca delle minacce gestite fornisce informazioni e dati gu
 > [!NOTE]
 > Discutere i requisiti di idoneità con il provider di servizi tecnici Microsoft e il team dell'account prima di applicare il servizio di ricerca delle minacce gestite.
 
-Se sei un cliente di Microsoft Defender for Endpoint, devi richiedere Microsoft Threat Experts **- Notifiche** di attacco mirato per ottenere informazioni e analisi speciali che consentono di identificare le minacce più critiche nell'ambiente in modo da poterle rispondere rapidamente
+Se sei un cliente di Microsoft Defender for Endpoint, devi richiedere Microsoft Threat Experts - Notifiche di attacco mirate per ottenere informazioni e analisi speciali che consentono di identificare le minacce più critiche nell'ambiente **in** modo da poterle rispondere rapidamente.
 
-Per iscriverti a Microsoft Threat Experts - Vantaggi delle notifiche di **attacco** mirate, vai a Impostazioni Funzionalità avanzate Microsoft Threat Experts - Notifiche di attacco  >    >    >   mirate da applicare. Una volta accettato, si otterrà i vantaggi delle notifiche di attacco mirato.
+Per iscriverti a Microsoft Threat Experts - Vantaggi delle notifiche di attacco mirate, vai **a** Impostazioni  >  **Endpoints**  >  **General**  >  **Advanced features** Microsoft Threat Experts - Targeted Attack  >  **Notifications** to apply. Una volta accettato, si otterrà i vantaggi delle notifiche di attacco mirato.
 
 Contattare il team dell'account o il rappresentante Microsoft per sottoscrivere **Microsoft Threat Experts - Esperti** su richiesta per consultare i nostri esperti di minacce sui rilevamenti e gli avversari rilevanti che l'organizzazione sta affrontando.
 

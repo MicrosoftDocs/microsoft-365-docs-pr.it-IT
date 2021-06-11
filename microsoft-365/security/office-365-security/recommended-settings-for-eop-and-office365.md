@@ -19,12 +19,12 @@ ms.collection:
 description: Quali sono le procedure consigliate per Exchange Online Protection (EOP) e Defender per Office 365 sicurezza? Quali sono i consigli correnti per la protezione standard? Cosa deve essere usato se si desidera essere più rigidi? E quali extra ottieni se usi anche Defender per Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f00e1e2356839e70acafb0f98a5424a1311082e7
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 6c126a777d50fae93efdc618a8ac474dcee7ed75
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793221"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878989"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Impostazioni consigliate per EOP e Microsoft Defender per Office 365 sicurezza
 
@@ -44,7 +44,7 @@ Per applicare automaticamente le impostazioni Standard o Strict agli utenti, ved
 > [!NOTE]
 > Per il corretto funzionamento del filtro, è necessario che la regola di posta indesiderata sia abilitata per le cassette postali. È abilitato per impostazione predefinita, ma è consigliabile controllarlo se il filtro non sembra funzionare. Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
 
-In questo articolo vengono descritte le impostazioni predefinite e le impostazioni Standard e Strict consigliate per proteggere gli utenti. Le tabelle contengono le impostazioni nel Centro sicurezza Microsoft 365 e PowerShell (Exchange Online PowerShell o powershell Exchange Online Protection autonomo per le organizzazioni senza cassette postali Exchange Online).
+In questo articolo vengono descritte le impostazioni predefinite e le impostazioni Standard e Strict consigliate per proteggere gli utenti. Le tabelle contengono le impostazioni nel portale di Microsoft 365 Defender e PowerShell (Exchange Online PowerShell o Exchange Online Protection PowerShell autonomo per le organizzazioni senza Exchange Online cassette postali).
 
 > [!TIP]
 > Il Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) per PowerShell consente agli amministratori di trovare i valori correnti di queste impostazioni. In particolare, il cmdlet **Get-ORCAReport** genera una valutazione della protezione da posta indesiderata, anti-phishing e altre impostazioni di igiene dei messaggi. È possibile scaricare il modulo ORCA all'indirizzo <https://www.powershellgallery.com/packages/ORCA/> .

@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare ad applicare le impostazioni dei criteri Standard e Strict tra le funzionalità di protezione di Exchange Online Protection (EOP) e Microsoft Defender per Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822287"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879013"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Criteri di sicurezza predefiniti in EOP e Microsoft Defender per Office 365
 
@@ -103,9 +103,9 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
 ## <a name="assign-preset-security-policies-to-users"></a>Assegnare criteri di sicurezza predefiniti agli utenti
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Si apre il centro Microsoft 365 sicurezza all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla pagina **Criteri di sicurezza predefiniti,** utilizzare <https://security.microsoft.com/presetSecurityPolicies> .
+- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla pagina **Criteri di sicurezza predefiniti,** utilizzare <https://security.microsoft.com/presetSecurityPolicies> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -117,9 +117,9 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
   **Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di  amministrazione di Microsoft 365 offre agli utenti le autorizzazioni e le autorizzazioni necessarie per altre funzionalità in Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
-### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Usare il Centro sicurezza per assegnare criteri di sicurezza predefiniti agli utenti
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Usare il portale Microsoft 365 Defender per assegnare criteri di sicurezza predefiniti agli utenti
 
-1. Nel Centro sicurezza passare a Criteri di **&** di collaborazione & regole Criteri di minaccia \>  \>  \> **Sezione** \> **Criteri** di sicurezza predefiniti .
+1. Nel portale Microsoft 365 Defender passare **a** Criteri di & di collaborazione & regole Criteri di minaccia \>  \>  \> **Sezione** \> **Criteri** di sicurezza predefiniti .
 
 2. In **Protezione standard o** Protezione **rigida** fare clic su **Modifica.**
 
@@ -144,9 +144,9 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
 5. Nella pagina **Rivedi e conferma le modifiche** verifica le selezioni e quindi fai clic su **Conferma.**
 
-### <a name="use-the-security-center-to-modify-the-assignments-of-preset-security-policies"></a>Utilizzare il Centro sicurezza per modificare le assegnazioni dei criteri di sicurezza preimpostati
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>Usare il portale Microsoft 365 Defender per modificare le assegnazioni dei criteri di sicurezza preimpostati
 
-I passaggi per modificare l'assegnazione dei criteri di protezione **Standard** o Strict **protection** sono gli stessi di quando sono stati inizialmente assegnati i criteri di sicurezza predefiniti [agli utenti.](#use-the-security-center-to-assign-preset-security-policies-to-users)
+I passaggi per modificare l'assegnazione dei criteri di protezione **Standard** o Strict **protection** sono gli stessi di quando sono stati inizialmente assegnati i criteri di sicurezza predefiniti [agli utenti.](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)
 
 Per disabilitare **i criteri di protezione Standard** o Strict **protection** pur mantenendo le condizioni e le eccezioni esistenti, fai scorrere l'interruttore **su Disabled** Toggle ![ ](../../media/scc-toggle-off.png) Off. Per abilitare i criteri, fai scorrere l'interruttore **su** ![ ](../../media/scc-toggle-on.png) Attiva/Disattiva.
 

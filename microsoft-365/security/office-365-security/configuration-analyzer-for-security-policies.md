@@ -18,12 +18,12 @@ ms.collection:
 description: Gli amministratori possono imparare a usare l'analizzatore di configurazione per trovare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di protezione standard e rigidi criteri di sicurezza predefiniti di protezione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d2ad1449730f392adc27c8ed2a8fc8e9ecc7a04
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789317"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878665"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizzatore della configurazione per i criteri di protezione in EOP e Microsoft Defender per Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "52789317"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-L'analizzatore della configurazione nel centro sicurezza Microsoft 365 offre una posizione centrale per trovare e correggere i criteri di sicurezza in cui le impostazioni sono al di sotto delle impostazioni di protezione Standard e Dei profili di protezione rigorosi nei criteri di sicurezza [preimpostati.](preset-security-policies.md)
+L'analizzatore della configurazione nel portale di Microsoft 365 Defender offre una posizione centrale per trovare e correggere i criteri di sicurezza in cui le impostazioni sono al di sotto delle impostazioni di protezione standard e dei profili di protezione rigorosi nei criteri [di sicurezza preimpostati.](preset-security-policies.md)
 
 L'analizzatore di configurazione analizza i seguenti tipi di criteri:
 
@@ -55,29 +55,29 @@ L'analizzatore di configurazione analizza i seguenti tipi di criteri:
 
 I **valori delle** impostazioni dei criteri Standard e **Strict** utilizzati come baseline sono descritti in Impostazioni consigliate per EOP e Microsoft Defender per la Office 365 [sicurezza](recommended-settings-for-eop-and-office365.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza a <https://security.microsoft.com>. Per passare direttamente alla pagina **dell'analizzatore della** configurazione, utilizzare <https://security.microsoft.com/configurationAnalyzer> .
+- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla pagina **dell'analizzatore della** configurazione, utilizzare <https://security.microsoft.com/configurationAnalyzer> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni nel Centro sicurezza:
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni nel portale di Microsoft 365 Defender:
   - Per utilizzare l'analizzatore **della configurazione** e apportare aggiornamenti ai criteri di sicurezza, è necessario essere membri dei gruppi **di** ruoli Gestione organizzazione o Amministratore **sicurezza.**
   - Per l'accesso in sola lettura all'analizzatore di configurazione, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
 
-  Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 security center](permissions-microsoft-365-security-center.md).
+  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 
   > [!NOTE]
   >  
-  > - L'aggiunta di utenti al ruolo di Azure Active Directory assegna agli  utenti le autorizzazioni necessarie nel Centro sicurezza e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente offre agli utenti  le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   >
   > - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
-## <a name="use-the-configuration-analyzer-in-the-security-center"></a>Usare l'analizzatore della configurazione nel Centro sicurezza
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Usare l'analizzatore della configurazione nel portale Microsoft 365 Defender
 
-Nel centro sicurezza passare  a Criteri di collaborazione & posta elettronica & criteri di minaccia Sezione Criteri modello \>  \>  \>  \> **analizzatore di configurazione**.
+Nel portale Microsoft 365 Defender passare alla sezione **Criteri** di collaborazione & di posta elettronica & criteri di minaccia Criteri modello \>  \>  \>  \> .
 
-L'analizzatore della configurazione ha due schede principali:
+La **pagina Analizzatore** configurazione include due schede principali:
 
 - **Impostazioni e suggerimenti**: è possibile selezionare **Standard** o **Strict** e confrontare tali impostazioni con i criteri di sicurezza esistenti. Nei risultati puoi modificare i valori delle impostazioni per portarli allo stesso livello di Standard o Strict.
 - **Analisi e cronologia della deriva della configurazione**: questa visualizzazione consente di tenere traccia delle modifiche apportate ai criteri nel tempo.

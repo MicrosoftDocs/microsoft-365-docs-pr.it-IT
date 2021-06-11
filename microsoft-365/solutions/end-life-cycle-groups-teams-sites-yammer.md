@@ -34,7 +34,7 @@ Nella tabella seguente vengono descritti i servizi associati a gruppi e team e i
 |Servizio|Tipi di contenuto|
 |:------|:---------------|
 |Teams|Conversazioni di canale, file nei canali|
-|Moduli|Struttura e risultati del sondaggio|
+|Forms|Struttura e risultati del sondaggio|
 |OneNote|Blocco appunti|
 |Outlook|Posta e calendario|
 |Planner|Project informazioni sullo stato e sull'attività|
@@ -107,7 +107,7 @@ Mentre le conversazioni di canale del team SharePoint contenuto del sito sono im
 - I video possono comunque essere caricati, modificati ed eliminati in Stream.
 - I flussi Power Automate possono ancora essere creati, modificati, eliminati e continueranno a essere eseguiti. Tuttavia, non riusciranno, se necessario, a inviare un messaggio a un canale del team archiviato.
 
-## <a name="forms"></a>Moduli
+## <a name="forms"></a>Forms
 
 Anche se un modulo può essere spostato da un singolo account a un gruppo, non può essere spostato o copiato da un gruppo a un altro. Quando un team viene eliminato, sono disponibili tre opzioni per un modulo.
 

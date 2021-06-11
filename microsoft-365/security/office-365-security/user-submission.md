@@ -17,12 +17,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 719bd2b86cae1c6a951cb34408ecb9d2b8da699a
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: f4337b29e0718e23f43b441526232ec6ef66be1d
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696587"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879205"
 ---
 # <a name="user-submissions-policy"></a>Criteri per gli invii di utenti
 
@@ -56,15 +56,15 @@ Utilizzare gli articoli seguenti per configurare i prerequisiti necessari in mod
 
 - Disattivare l'analisi degli URL nei messaggi nella cassetta postale personalizzata. Usa Configurare i criteri collegamenti sicuri [in Defender per Office 365](set-up-safe-links-policies.md) per creare un criterio Collegamenti sicuri con l'impostazione **Disattivato** per Selezionare l'azione per URL sconosciuti potenzialmente dannosi **nei messaggi.**
 
-- Creare un criterio antimalware per disattivare l'eliminazione automatica di malware zero ore. Vedere [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) to set Malware **Zero-hour Auto Purge** to **Off.**
+- Creare un criterio antimalware per disattivare l'eliminazione automatica di malware zero ore. Vedere [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) to set Malware **Zero-hour Auto Purge** to **Off.**
 
-- Creare un criterio di filtro della posta indesiderata per disabilitare l'eliminazione automatica di zero ore (ZAP) per la posta indesiderata e il phishing nella cassetta postale personalizzata. Vedere [Use the Security & Compliance Center to create anti-spam policies](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) and clear the **On** checkboxes for **Spam ZAP** and **Phish ZAP.**
+- Creare un criterio di filtro della posta indesiderata per disabilitare l'eliminazione automatica di zero ore (ZAP) per la posta indesiderata e il phishing nella cassetta postale personalizzata. Vedere [Use the Security & Compliance Center to create anti-spam policies](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) and clear the **On** checkboxes for **Spam ZAP** and **Phish ZAP.**
 
 - Disabilitare la regola di posta indesiderata nella cassetta postale personalizzata. Utilizzare [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Una volta disabilitato, EOP non può spostare i messaggi nella cartella Posta indesiderata in base all'azione verdetto filtro posta indesiderata **Spostare** il messaggio nella cartella Posta indesiderata o nella raccolta dell'elenco indirizzi attendibili nella cassetta postale.
 
 Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti applicabili, utilizzare il Centro sicurezza [&](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) conformità per configurare la cassetta postale di invio degli utenti (in questo articolo).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla **pagina Invii utente,** usa <https://protection.office.com/userSubmissionsReportMessage> .
 

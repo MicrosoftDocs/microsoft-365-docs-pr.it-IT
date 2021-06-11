@@ -19,12 +19,12 @@ description: Durante e dopo un'indagine automatizzata in Microsoft 365, è possi
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2923a6375d54c663f20c440b1fa395bd529429d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fc7c61fae83f2d10f8b66cbfce86bcee6e3a5bd6
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275049"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878425"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 
@@ -32,17 +32,21 @@ ms.locfileid: "52275049"
 - [Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Quando si [verifica un'indagine](office-365-air.md) automatizzata in [Microsoft Defender per Office 365](defender-for-office-365.md), i dettagli su tale indagine sono disponibili durante e dopo il processo di indagine automatizzata. Se si dispone delle autorizzazioni necessarie, è possibile visualizzare tali dettagli nel centro sicurezza Microsoft 365 sicurezza. I dettagli dell'indagine forniscono lo stato aggiornato e la possibilità di approvare eventuali azioni in sospeso.
+Quando si [verifica un'indagine](office-365-air.md) automatizzata in [Microsoft Defender per Office 365](defender-for-office-365.md), i dettagli su tale indagine sono disponibili durante e dopo il processo di indagine automatizzata. Se si dispone delle autorizzazioni necessarie, è possibile visualizzare tali dettagli nel portale Microsoft 365 Defender. I dettagli dell'indagine forniscono lo stato aggiornato e la possibilità di approvare eventuali azioni in sospeso.
 
 > [!TIP]
-> Consultare la nuova pagina di indagine unificata nel centro sicurezza Microsoft 365 sicurezza. Per ulteriori informazioni, vedere [(NEW!) Pagina di indagine unificata](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Consulta la nuova pagina di indagine unificata nel portale Microsoft 365 Defender. Per ulteriori informazioni, vedere [(NEW!) Pagina di indagine unificata](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## <a name="investigation-status"></a>Stato dell'indagine
 
 Lo stato dell'indagine indica l'avanzamento dell'analisi e delle azioni. Durante l'esecuzione dell'indagine, lo stato cambia per indicare se sono state trovate minacce e se le azioni sono state approvate.
 
+<br>
+
+****
+
 |Stato|Descrizione|
-|:---|:---|
+|---|---|
 |**In avvio**|L'indagine è stata attivata e in attesa di avviare l'esecuzione.|
 |**In esecuzione**|Il processo di indagine è iniziato ed è in corso. Questo stato si verifica anche quando [le azioni in sospeso](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) vengono approvate.|
 |**Nessuna minaccia trovata**|L'indagine è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <p> **SUGGERIMENTO:** se si sospetta che qualcosa sia stato perso (ad esempio un falso negativo), è possibile eseguire un'azione utilizzando [Esplora minacce.](threat-explorer.md)|
@@ -58,7 +62,7 @@ Lo stato dell'indagine indica l'avanzamento dell'analisi e delle azioni. Durante
 
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 
-1. Accedere al centro Microsoft 365 sicurezza ( <https://security.microsoft.com> ) ed eseguire l'accesso.
+1. Vai al portale Microsoft 365 Defender ( <https://security.microsoft.com> ) e accedi.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In sospeso** o **Cronologia** selezionare un'azione. Verrà visualizzato il riquadro a comparsa.
 4. Nel riquadro a comparsa selezionare Apri **pagina analisi.** 
@@ -68,10 +72,10 @@ Lo stato dell'indagine indica l'avanzamento dell'analisi e delle azioni. Durante
 
 Alcuni tipi di avvisi attivano un'indagine automatizzata in Microsoft 365. Per ulteriori informazioni, vedere [Criteri di avviso che attivano indagini automatizzate.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
 
-1. Accedere al centro Microsoft 365 sicurezza ( <https://security.microsoft.com> ) ed eseguire l'accesso.
+1. Vai al portale Microsoft 365 Defender ( <https://security.microsoft.com> ) e accedi.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In sospeso** o **Cronologia** selezionare un'azione. Verrà visualizzato il riquadro a comparsa.
-4. Nel riquadro a comparsa selezionare Apri **pagina analisi.** 
+4. Nel riquadro a comparsa selezionare Apri **pagina analisi.**
 5. Selezionare la **scheda Avvisi** per visualizzare un elenco di tutti gli avvisi associati all'indagine.
 6. Selezionare un elemento nell'elenco per aprire il riquadro a comparsa. Qui è possibile visualizzare ulteriori informazioni sull'avviso.
 

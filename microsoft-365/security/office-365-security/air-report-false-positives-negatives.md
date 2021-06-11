@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275085"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878881"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Come segnalare falsi positivi/negativi nelle funzionalità di indagine e risposta automatizzate
 
@@ -68,17 +68,21 @@ Nella maggior parte dei casi, se è stata eseguita un'azione di correzione su un
 
 Con Threat Explorer, il team delle operazioni di sicurezza può trovare un messaggio di posta elettronica interessato da un'azione e potenzialmente annullare l'azione.
 
+<br>
+
+****
+
 |Scenario|Opzioni annulla|Altre informazioni|
 |---|---|---|
-|Un messaggio di posta elettronica è stato instradato alla cartella Posta indesiderata di un utente|- Spostare il messaggio nella cartella Posta eliminata dell'utente<br/>- Spostare il messaggio nella cartella Posta in arrivo dell'utente<br/>- Eliminare il messaggio|[Individuare e analizzare i messaggi di posta elettronica dannosi recapitati in Office 365](investigate-malicious-email-that-was-delivered.md)|
-|Un messaggio di posta elettronica o un file è stato messo in quarantena|- Rilasciare il messaggio di posta elettronica o il file<br/>- Eliminare il messaggio di posta elettronica o il file|[Gestire i messaggi in quarantena come amministratore](manage-quarantined-messages-and-files.md)|
+|Un messaggio di posta elettronica è stato instradato alla cartella Posta indesiderata di un utente|<ul><li>Spostare il messaggio nella cartella Posta eliminata dell'utente</li><li>Spostare il messaggio nella cartella Posta in arrivo dell'utente</li><li>Eliminazione del messaggio</li></ul>|[Individuare e analizzare i messaggi di posta elettronica dannosi recapitati in Office 365](investigate-malicious-email-that-was-delivered.md)|
+|Un messaggio di posta elettronica o un file è stato messo in quarantena|<ul><li>Rilasciare il messaggio di posta elettronica o il file</li><li> Eliminare il messaggio di posta elettronica o il file</li></ul>|[Gestire i messaggi in quarantena come amministratore](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-in-the-action-center"></a>Annullare un'azione nel centro notifiche
 
 Nel centro notifiche è possibile visualizzare le azioni di correzione eseguite e potenzialmente annullare l'azione.
 
-1. Accedere al centro Microsoft 365 sicurezza ( <https://security.microsoft.com> ).
+1. Passare al portale Microsoft 365 Defender ( <https://security.microsoft.com> ).
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Selezionare la **scheda Cronologia** per visualizzare l'elenco delle azioni completate.
 4. Selezionare un elemento. Verrà visualizzato il riquadro a comparsa.

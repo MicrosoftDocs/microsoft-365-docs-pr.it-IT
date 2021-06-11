@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come configurare Microsoft Viva Topics
-ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930222"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893765"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurare Gli argomenti di Microsoft Viva
 
@@ -37,7 +37,7 @@ Questo video mostra il processo di configurazione degli argomenti in Microsoft 3
 
 <br>
 
-## <a name="assign-licenses"></a>Assegnazione delle licenze
+## <a name="assign-licenses"></a>Assegnare le licenze
 
 È necessario assegnare licenze per gli utenti che utilizzano Argomenti. Solo gli utenti con una licenza possono visualizzare informazioni su argomenti quali evidenziazioni, schede argomento, pagine di argomenti e il Centro argomenti. 
 
@@ -60,8 +60,10 @@ L'accesso agli argomenti dopo l'assegnazione delle licenze potrebbe richiedere f
 
 ## <a name="set-up-topics"></a>Configurare Argomenti
 
-Per configurare gli argomenti
+> [!Note]
+> La prima volta che l'individuazione degli argomenti è abilitata, potrebbero essere disponibili fino a due settimane prima che tutti gli argomenti suggeriti vengano visualizzati nella visualizzazione Gestisci argomenti. L'individuazione degli argomenti continua quando vengono apportati nuovi contenuti o aggiornamenti al contenuto. È normale avere fluttuazioni nel numero di argomenti suggeriti nell'organizzazione poiché Viva Topics valuta nuove informazioni.
 
+Per configurare gli argomenti
 1. [Nell'Microsoft 365 di amministrazione selezionare](https://admin.microsoft.com) **Installazione** e quindi visualizzare la sezione File **e** contenuto.
 2. Nella sezione **File e contenuto** fare clic su Connessione utenti a **conoscenza.**
 
@@ -69,7 +71,7 @@ Per configurare gli argomenti
 
 3. Nella pagina **Connessione utenti a conoscenza** fare clic su Introduzione per eseguire il processo di installazione. 
 
-    ![Per iniziare](../media/k-get-started.png) 
+    ![Informazioni di base](../media/k-get-started.png) 
 
 4. Nella pagina **Scegliere in che modo Viva Topics può trovare gli** argomenti, si configurerà l'individuazione degli argomenti. Nella sezione **Seleziona SharePoint argomenti** selezionare i siti SharePoint ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegli tra:
     - **Tutti i siti**: tutti i siti di SharePoint nell’organizzazione. Sono inclusi i siti correnti e futuri.
@@ -143,8 +145,6 @@ Per configurare gli argomenti
 12. You'll be returned to your **Connessione people to knowledge** page. In questa pagina è possibile selezionare **Gestisci** per modificare le impostazioni di configurazione. 
 
     ![Impostazioni applicato](../media/ksetup7.png)    
-
-Si noti che la prima volta che l'individuazione degli argomenti è abilitata, potrebbero essere necessario fino a due settimane prima che tutti gli argomenti suggeriti vengano visualizzati nella visualizzazione Gestisci argomenti. L'individuazione degli argomenti continua quando vengono apportati nuovi contenuti o aggiornamenti al contenuto. È normale avere fluttuazioni nel numero di argomenti suggeriti nell'organizzazione poiché Viva Topics valuta nuove informazioni.
 
 ## <a name="manage-topic-experiences"></a>Gestire le esperienze degli argomenti
 

@@ -38,7 +38,7 @@ ms.locfileid: "52538856"
 
 Aumenta rapidamente la tua conoscenza della ricerca avanzata con _Tracking the adversary,_ una serie di webcast per i nuovi analisti della sicurezza e i cacciatori di minacce esperti. La serie illustra le nozioni di base per creare query sofisticate. Inizia con il primo video sulle nozioni fondamentali o passa a video più avanzati adatti al tuo livello di esperienza.
 
-| Titolo | Descrizione | Watch | Query | 
+| Titolo | Descrizione | Guarda | Query | 
 |--|--|--|--|
 | Episodio 1: Nozioni fondamentali su KQL | Questo episodio illustra le nozioni di base della ricerca avanzata in Microsoft 365 Defender. Informazioni sui dati di ricerca avanzati disponibili e sulla sintassi e sugli operatori KQL di base. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [File di testo](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | Episodio 2: Join | Continua a conoscere i dati nella ricerca avanzata e su come unire le tabelle. Informazioni su , , e join e comprendere `inner` `outer` le `unique` `semi` sfumature dell'aggiunta Kusto `innerunique` predefinita. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [File di testo](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
@@ -48,7 +48,7 @@ Aumenta rapidamente la tua conoscenza della ricerca avanzata con _Tracking the a
 
 Ottenere una formazione più esperta con *L33TSP3AK:* ricerca avanzata in Microsoft 365 Defender , una serie di webcast per gli analisti che desiderano espandere le proprie conoscenze tecniche e competenze pratiche nell'condurre indagini di sicurezza usando la ricerca avanzata in Microsoft 365 Defender. 
 
-| Titolo | Descrizione | Watch | Query | 
+| Titolo | Descrizione | Guarda | Query | 
 |--|--|--|--|
 | Episodio 1  | In questo episodio verranno apprese diverse procedure consigliate per l'esecuzione di query di ricerca avanzate. Tra gli argomenti trattati sono: come ottimizzare le query, usare la ricerca avanzata per ransomware, gestire JSON come tipo dinamico e lavorare con gli operatori di dati esterni. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [File di testo](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | Episodio 2 | In questo episodio imparerai a analizzare e rispondere a percorsi di accesso sospetti o insoliti e all'esfiltrazione dei dati tramite regole di inoltro della posta in arrivo. Sebastien Molendijk, Senior Program Manager per Cloud Security CxE, condivide come usare la ricerca avanzata per analizzare gli incidenti in più fasi con Microsoft Cloud App Security dati. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [File di testo](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)

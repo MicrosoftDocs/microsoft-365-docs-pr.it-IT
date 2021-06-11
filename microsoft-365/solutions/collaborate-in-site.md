@@ -96,7 +96,7 @@ Il passaggio successivo consiste nel creare il sito che si prevede di utilizzare
 
 Per creare un sito
 1. Nell'interfaccia di amministrazione di SharePoint, in **Siti** fare clic su **Siti attivi**.
-2. Fare clic su **Crea**.
+2. Fai clic su **Crea**.
 3. Fare clic **su Sito del team**.
 4. Digitare un nome di sito e immettere un nome per il proprietario del gruppo (proprietario del sito).
 5. In **Impostazioni avanzate** scegliere se si desidera che il sito sia pubblico o privato.
@@ -139,7 +139,7 @@ Per invitare utenti guest a un gruppo
 2. Aprire la scheda contatto del gruppo, fare clic **sul** collegamento Membri in alto a destra (il collegamento che indica il numero di membri).
 3. fare **clic su Aggiungi membri**.
 4. Digitare gli indirizzi di posta elettronica degli utenti guest che si desidera invitare e quindi fare clic su **Aggiungi.**
-5. Fare clic su **Chiudi**.
+5. Scegliere **Chiudi**.
 Tenere presente che  è necessario fare clic su Chiudi solo se non si è proprietari del gruppo e, di conseguenza, non è consentito aggiungere il guest al gruppo. In questi casi, la richiesta di aggiungere il guest al gruppo viene trasferita al proprietario del gruppo per l'approvazione.
 
 ## <a name="see-also"></a>Vedere anche

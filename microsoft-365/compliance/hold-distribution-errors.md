@@ -120,7 +120,7 @@ Se viene visualizzato il messaggio di errore seguente quando si mettono in attes
 
 - Verificare se l'URL del sito è cambiato.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Le indicazioni sull'aggiornamento dei criteri di blocco per più utenti nella sezione "Procedure consigliate" derivano dal fatto che il sistema blocca gli aggiornamenti simultanei a un criterio di conservazione. Ciò significa che quando un criterio di conservazione aggiornato viene applicato a nuovi percorsi di contenuto e il criterio di conservazione è in sospeso, non è possibile aggiungere ulteriori percorsi di contenuto al criterio di conservazione. Ecco alcuni aspetti da tenere presenti per ridurre il problema:
   

@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni su come esaminare i messaggi segnalati e inviare commenti e suggerimenti agli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769126"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893729"
 ---
 # <a name="admin-review-for-reported-messages"></a>Revisione amministratore per i messaggi segnalati
 
@@ -37,21 +37,23 @@ Questa funzionalità è progettata per fornire feedback agli utenti, ma non modi
 
 Sarà possibile contrassegnare e notificare agli utenti i risultati della revisione solo se il messaggio è stato segnalato come [falso positivo o falso negativo.](report-false-positives-and-false-negatives.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+
+- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/> . Per passare direttamente alla **pagina Invii,** usa <https://security.microsoft.com/reportsubmission> .
 
 - Per modificare la configurazione per gli invii di utenti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
-  - Gestione dell'organizzazione o amministratore della sicurezza [nel Microsoft 365 sicurezza](permissions-microsoft-365-security-center.md).
-  - Gestione organizzazione in [Exchange Online](/Exchange/permissions-exo/permissions-exo).
+  - Gestione dell'organizzazione o amministratore della sicurezza [nel portale Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
+  - Gestione organizzazione in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Sarà inoltre necessario accedere alla Exchange Online PowerShell. Se l'account che si sta tentando di usare non ha accesso Exchange Online PowerShell, verrà visualizzato un errore che indica Specificare un indirizzo di posta elettronica nel *dominio.* Per ulteriori informazioni sull'abilitazione o disabilitazione dell'accesso Exchange Online PowerShell, vedere gli argomenti seguenti:
+- Sarà inoltre necessario accedere a Exchange Online PowerShell. Se l'account che si sta tentando di usare non ha accesso Exchange Online PowerShell, verrà visualizzato un errore che indica Specificare un indirizzo di posta elettronica nel *dominio.* Per ulteriori informazioni sull'abilitazione o disabilitazione dell'accesso Exchange Online PowerShell, vedere gli argomenti seguenti:
   - [Abilitare o disabilitare l'accesso Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Regole di Accesso client in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>Configurare i messaggi utilizzati per inviare notifiche agli utenti
 
-1. Nel centro [Microsoft 365 sicurezza](../defender/overview-security-center.md), andare a Criteri & **Criteri di** minaccia \> **Impostazioni** messaggio segnalato \> **dall'utente**.
+1. Nel portale di Microsoft 365 Defender, andare a **Email & collaboration** Policies & \> **Threat** \> **policies** \> **Others** section User \> **reported message settings**.
 
-2. Se si desidera specificare il nome visualizzato del mittente, selezionare la casella specifica l'indirizzo di posta elettronica di **Office 365** da utilizzare come mittente nella sezione **Notifiche** di posta elettronica per i risultati della revisione dell'amministratore e immettere il nome che si desidera utilizzare. Questo è l'indirizzo di posta elettronica che sarà visibile Outlook e a cui verranno indirizzate le risposte.
+2. Nella  pagina Invii utente, se si desidera specificare il nome visualizzato del mittente, selezionare la casella specificare l'indirizzo di posta elettronica di **Office 365** da utilizzare come mittente nella sezione **Notifiche** di posta elettronica per i risultati della revisione dell'amministratore e immettere il nome che si desidera utilizzare. Questo è l'indirizzo di posta elettronica che sarà visibile Outlook e a cui verranno indirizzate le risposte.
 
 3. Se si desidera personalizzare uno dei modelli, fare clic su **Personalizza notifica tramite posta elettronica.** In questo riquadro a comparsa sarà possibile personalizzare solo gli elementi seguenti:
     - Phishing

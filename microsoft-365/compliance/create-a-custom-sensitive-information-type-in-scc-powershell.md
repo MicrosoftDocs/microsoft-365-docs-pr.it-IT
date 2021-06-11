@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come creare e importare un tipo di informazione sensibile personalizzato per i criteri nel Centro conformità.
-ms.openlocfilehash: deb29b768c136c9c952d2abe791b310f2fd1dbdd
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878245"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538706"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Creare tipi di informazioni sensibili personalizzati usando PowerShell
 
@@ -38,9 +38,6 @@ Dopo aver creato un file XML ben formato, è possibile caricarlo in Microsoft 36
 Vedere [Possibili problemi di convalida da tenere presenti](#potential-validation-issues-to-be-aware-of) in questo argomento.
 
 Per ulteriori informazioni sul motore Boost.RegEx (in precedenza noto come RegEx++) utilizzato per l'elaborazione del testo, vedere [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
-
-> [!NOTE]
-> Se usi un carattere e commerciale (&) come parte di una parola chiave nel tipo di informazioni riservate personalizzato, tieni presente che esiste un problema noto. È consigliabile aggiungere un termine aggiuntivo con spazi attorno al carattere per assicurarsi che il carattere sia identificato correttamente, ad esempio L & P _non_ L&P.
 
 ## <a name="sample-xml-of-a-rule-package"></a>Esempio di XML di un pacchetto di regole
 
