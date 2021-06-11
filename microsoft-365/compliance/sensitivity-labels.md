@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5c54b9c9b9046a1c410418a9ae5a922bdad9c442
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730247"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878077"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -196,8 +196,7 @@ Quando si configura un criterio di etichetta, è possibile:
 
     ![Messaggio visualizzato in Outlook per richiedere all'utente di applicare l'etichetta obbligatoria](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
-    > [!NOTE]
-    > L'etichettatura obbligatoria per documenti e messaggi di posta elettronica non è disponibile per tutte le app o per tutte le piattaforme. Per altre informazioni, vedere [Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
+    Per altre informazioni sull'etichettatura obbligatoria per documenti e posta elettronica, vedere [Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
     Per i contenitori, l'etichetta deve essere assegnata al momento della creazione del gruppo o del sito.
     

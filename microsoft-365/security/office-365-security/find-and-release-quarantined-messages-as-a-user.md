@@ -20,12 +20,12 @@ ms.custom:
 description: Informazioni su come gli utenti possono visualizzare e gestire i messaggi in quarantena in Exchange Online Protection (EOP) che avrebbero dovuto essere recapitati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4913d0c6fc34d912474bcceac8b1785c4a7e07b3
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 60b319b81362b9d88afcd734021db227969b04d0
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821296"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877873"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Trovare e rilasciare i messaggi messi in quarantena come utente di EOP
 
@@ -51,11 +51,11 @@ Come destinatario di un messaggio in quarantena, le operazioni che è possibile 
 |Phising (non phishing con alta confidenza)|![Segno di spunta](../../media/checkmark.png)||![Segno di spunta](../../media/checkmark.png)|
 |
 
-È possibile visualizzare e gestire i messaggi in quarantena nel Centro sicurezza Microsoft 365 o, nel caso in cui un amministratore l'abbia configurato, nelle [notifiche di posta indesiderata per l'utente finale](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+È possibile visualizzare e gestire i messaggi in quarantena nel Portale di Microsoft 365 Defender o, nel caso in cui un amministratore l'abbia configurato, nelle [notifiche di posta indesiderata per l'utente finale](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni necessarie prima di iniziare
 
-- Per aprire il Centro sicurezza andare a <https://security.microsoft.com>. Per aprire direttamente la pagina della quarantena, passare a <https://security.microsoft.com/quarantine>.
+- Per aprire il portale di Microsoft 365 Defender, andare a <https://security.microsoft.com>. Per aprire direttamente la pagina della quarantena, passare a <https://security.microsoft.com/quarantine>.
 
 - Gli amministratori possono configurare per quanto tempo i messaggi vengono tenuti in quarantena prima di essere eliminati definitivamente nei criteri di protezione dalla posta indesiderata. I messaggi scaduti dalla quarantena non sono recuperabili. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
@@ -67,7 +67,7 @@ Come destinatario di un messaggio in quarantena, le operazioni che è possibile 
 
 ## <a name="view-your-quarantined-messages"></a>Visualizzazione dei messaggi in quarantena
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Rivedi** \> **Quarantena**.
+1. Nel portale di Microsoft 365 Defender, passare a **Posta elettronica e collaborazione** \> **Rivedi**\> **Quarantena**.
 
 2. È possibile ordinare i risultati facendo clic su un'intestazione di colonna disponibile. Fare clic su **Modifica colonne** per visualizzare un massimo di sette colonne. I valori predefiniti sono contrassegnati da un asterisco (<sup>\*</sup>):
 

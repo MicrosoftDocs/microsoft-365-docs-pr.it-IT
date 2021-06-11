@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendere il numero massimo di criteri ed elementi per criterio in relazione ai criteri di conservazione e ai criteri per le etichette di conservazione
-ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698965"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878053"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limiti per i criteri di conservazione e i criteri per le etichette di conservazione
 
@@ -82,3 +82,13 @@ Esempio di SharePoint:
 - **Soluzione**: creare 20 criteri di conservazione per SharePoint con un periodo di conservazione da 10 anni che includa 100 siti specifici, e creare 80 criteri di conservazione per SharePoint con un periodo di conservazione da quattro anni che includa 100 siti specifici.
     
     Poiché non è necessario conservare tutti i siti di SharePoint, bisogna creare criteri di conservazione che specificano i siti. Dato che i criteri di conservazione non supportano più di 100 siti specifici, è necessario creare criteri specifici per i due periodi di conservazione. Questo criterio di conservazione hanno il numero massimo di siti inclusi, perciò un nuovo criterio di conservazione deve essere creato per il prossimo nuovo sito che richiede la conservazione, indipendentemente dal periodo di conservazione.
+
+## <a name="maximum-number-of-items-for-disposition"></a>Numero massimo di elementi per l'eliminazione
+
+Per l'[eliminazioni di contenuti](disposition.md), sono previsti alcuni limiti da prendere in considerazione:
+
+- 1.000.000 elementi con eliminazione in sospeso per fase per ogni etichetta di conservazione
+
+- Prova dell'eliminazione fino a sette anni in seguito all'eliminazione dell'elemento, con un limite di 1.000.000 elementi per etichetta di conservazione per il periodo specifico. 
+    
+    Se si necessita di una prova di eliminazione superiore a questo limite di 1.000.000 per gli elementi contrassegnati come record, contattare il [supporto tecnico Microsoft](../business-video/get-help-support.md).

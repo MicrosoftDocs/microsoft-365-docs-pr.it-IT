@@ -1,5 +1,5 @@
 ---
-title: Autorizzazioni nel Centro sicurezza Microsoft 365
+title: Autorizzazioni nel portale di Microsoft 365 Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Gli amministratori possono imparare a gestire le autorizzazioni nel Centro sicurezza Microsoft 365 per tutte le attività correlate alla sicurezza.
+description: Gli amministratori possono imparare a gestire le autorizzazioni nel portale di Microsoft 365 Defender per tutte le attività correlate alla sicurezza.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c2d28510c25290921084e6a238fa8c781c35624
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e810b0146803d22246db6d4248d7d4a6a203834b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772524"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879025"
 ---
-# <a name="permissions-in-the-microsoft-365-security-center"></a>Autorizzazioni nel Centro sicurezza Microsoft 365
+# <a name="permissions-in-the-microsoft-365-defender-portal"></a>Autorizzazioni nel portale di Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,33 +37,36 @@ ms.locfileid: "52772524"
 
 È necessario gestire gli scenari di sicurezza e conformità che riguardano tutti i servizi di Microsoft 365. Inoltre, è necessaria flessibilità per fornire le corrette autorizzazioni di amministratore alle persone giuste dell'organizzazione.
 
-Il Centro sicurezza Microsoft 365 alla pagina <https://security.microsoft.com> supporta la gestione diretta delle autorizzazioni per gli utenti che eseguono attività di sicurezza in Microsoft 365. Usando il centro sicurezza è possibile gestire in una posizione centralizzata le autorizzazioni per tutte le attività relative alla sicurezza.
+Il portale di Microsoft 365 Defender alla pagina <https://security.microsoft.com> supporta la gestione diretta delle autorizzazioni per gli utenti che eseguono attività di sicurezza in Microsoft 365. Usando il portale di Microsoft 365 Defender è possibile gestire in una posizione centralizzata le autorizzazioni per tutte le attività relative alla sicurezza.
 
-Per gestire le autorizzazioni nel centro sicurezza passare a **Autorizzazioni e ruoli** o <https://security.microsoft.com/securitypermissions>. È necessario essere un **amministratore globale** o un membro del gruppo di ruoli **Gestione organizzazione** nel centro sicurezza. In particolare, il ruolo **Gestione ruoli** consente agli utenti di visualizzare, creare e modificare i gruppi di ruoli nel centro sicurezza e, per impostazione predefinita, questo ruolo è assegnato solo al gruppo di ruoli **Gestione organizzazione**.
+Per gestire le autorizzazioni nel portale di Microsoft 365 Defender passare a **Autorizzazioni e ruoli** o <https://security.microsoft.com/securitypermissions>. È necessario essere un **amministratore globale** o un membro del gruppo di ruoli **Gestione organizzazione** nel portale di Microsoft 365 Defender. In particolare, il ruolo **Gestione ruoli** consente agli utenti di visualizzare, creare e modificare i gruppi di ruoli nel portale di Microsoft 365 Defender e, per impostazione predefinita, questo ruolo è assegnato solo al gruppo di ruoli **Gestione organizzazione**.
+
+> [!NOTE]
+> Per informazioni sulle autorizzazioni nel Centro conformità Microsoft 365, vedere [Autorizzazioni nel Centro conformità Microsoft 365](../../compliance/microsoft-365-compliance-center-permissions.md).
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relazione tra membri, ruoli e gruppi di ruoli
 
-Le autorizzazioni nel centro sicurezza sono basate sul modello di autorizzazioni di Controllo degli accessi in base al ruolo. Controllo degli accessi in base al ruolo è lo stesso modello di autorizzazioni usato dalla maggior parte dei servizi di Microsoft 365, quindi se si ha familiarità con la struttura delle autorizzazioni di questi servizi, concedere le autorizzazioni nel centro sicurezza sarà semplice.
+Le autorizzazioni nel portale di Microsoft 365 Defender sono basate sul modello di autorizzazioni di Controllo degli accessi in base al ruolo. Controllo degli accessi in base al ruolo è lo stesso modello di autorizzazioni usato dalla maggior parte dei servizi di Microsoft 365, quindi se si ha familiarità con la struttura delle autorizzazioni di questi servizi, concedere le autorizzazioni nel portale di Microsoft 365 Defender sarà semplice.
 
 Un **ruolo** concede le autorizzazioni per svolgere una serie di attività.
 
-Un **gruppo di ruoli** è un set di ruoli che consente alle persone di svolgere il proprio lavoro nel centro sicurezza. Ad esempio, il gruppo di ruoli Amministratori simulatore attacchi include il ruolo di Amministratore della simulazione di attacco, per creare e gestire tutti gli aspetti della preparazione alla simulazione di attacchi.
+Un **gruppo di ruoli** è un set di ruoli che consente alle persone di svolgere il proprio lavoro nel portale di Microsoft 365 Defender. Ad esempio, il gruppo di ruoli Amministratori simulatore attacchi include il ruolo di Amministratore della simulazione di attacco, per creare e gestire tutti gli aspetti della preparazione alla simulazione di attacchi.
 
-Il centro sicurezza include gruppi di ruoli predefiniti per le attività e le funzioni più comuni che sarà necessario assegnare. In linea generale, si consiglia di aggiungere semplicemente singoli utenti come **membri** ai gruppi di ruoli predefiniti.
+Il portale di Microsoft 365 Defender include gruppi di ruoli predefiniti per le attività e le funzioni più comuni che sarà necessario assegnare. In linea generale, si consiglia di aggiungere semplicemente singoli utenti come **membri** ai gruppi di ruoli predefiniti.
 
 ![Diagramma che mostra la relazione tra gruppi di ruoli e ruoli e membri](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## <a name="roles-and-role-groups-in-the-security-center"></a>Ruoli e gruppi di ruoli nel centro sicurezza
+## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Ruoli e gruppi di ruoli nel portale di Microsoft 365 Defender
 
-In **Autorizzazioni e ruoli** nel centro sicurezza sono disponibili i tipi di ruoli e gruppi di ruoli seguenti:
+In **Autorizzazioni e ruoli** nel portale di Microsoft 365 Defender sono disponibili i tipi di ruoli e gruppi di ruoli seguenti:
 
-- **Ruoli di Azure AD**: è possibile visualizzare i ruoli e gli utenti assegnati, ma non gestirli direttamente nel centro sicurezza. I ruoli di Azure AD sono ruoli centrali che assegnano autorizzazioni per **tutti** i servizi di Microsoft 365.
+- **Ruoli di Azure AD**: è possibile visualizzare i ruoli e gli utenti assegnati, ma non gestirli direttamente nel portale di Microsoft 365 Defender. I ruoli di Azure AD sono ruoli centrali che assegnano autorizzazioni per **tutti** i servizi di Microsoft 365.
 
-- **Ruoli di posta elettronica e collaborazione**: si tratta degli stessi gruppi di ruoli disponibili nel Centro sicurezza e conformità, ma è possibile gestirli direttamente nel centro sicurezza. Le autorizzazioni assegnate qui sono specifiche per il Centro sicurezza Microsoft 365, il Centro conformità Microsoft 365 e il Centro sicurezza e conformità e non coprono tutte le autorizzazioni necessarie in altri carichi di lavoro di Microsoft 365.
+- **Ruoli di posta elettronica e collaborazione**: si tratta degli stessi gruppi di ruoli disponibili nel Centro sicurezza e conformità, ma è possibile gestirli direttamente nel portale di Microsoft 365 Defender. Le autorizzazioni assegnate qui sono specifiche per il portale di Microsoft 365 Defender, il Centro conformità Microsoft 365 e il Centro sicurezza e conformità e non coprono tutte le autorizzazioni necessarie in altri carichi di lavoro di Microsoft 365.
 
-![Pagina Autorizzazioni e ruoli nel Centro sicurezza Microsoft 365](../../media/m365-sc-permissions-and-roles-page.png)
+![Pagina Autorizzazioni e ruoli nel portale di Microsoft 365 Defender](../../media/m365-sc-permissions-and-roles-page.png)
 
-### <a name="azure-ad-roles-in-the-security-center"></a>Ruoli di Azure AD nel centro sicurezza
+### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Ruoli di Azure AD nel portale di Microsoft 365 Defender
 
 Passando a **Ruoli di posta elettronica e collaborazione** \> **Autorizzazioni e ruoli** \> **Ruoli di Azure AD** \> **Ruoli** (o direttamente a<https://security.microsoft.com/aadpermissions>), verranno visualizzati i ruoli di Azure AD descritti in questa sezione.
 
@@ -90,15 +93,15 @@ Per altre informazioni, vedere [Visualizzare e assegnare i ruoli di amministrato
 |**Autore payload dell'attacco**|Può payload di attacco, ma non avviarli o pianificarli. Per altre informazioni, vedere [Autore payload dell'attacco](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 
-### <a name="email--collaboration-roles-in-the-security-center"></a>Ruoli di posta elettronica e collaborazione nel centro sicurezza
+### <a name="email--collaboration-roles-in-the-microsoft-365-defender-portal"></a>Ruoli di posta elettronica e collaborazione nel portale di Microsoft 365 Defender
 
 Passando a **Ruoli di posta elettronica e collaborazione** \> **Autorizzazioni a ruoli** \> **Ruoli di posta elettronica e collaborazione** \> **Ruoli** (o direttamente a <https://security.microsoft.com/emailandcollabpermissions>), verranno visualizzati gli stessi gruppi di ruoli disponibili nel Centro sicurezza e conformità.
 
 Per informazioni complete su questi gruppi di ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-#### <a name="modify-email--collaboration-role-membership-in-the-security-center"></a>Modificare l'appartenenza ai ruoli di posta elettronica e collaborazione nel centro sicurezza
+#### <a name="modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal"></a>Modificare l'appartenenza ai ruoli di posta elettronica e collaborazione nel portale di Microsoft 365 Defender
 
-1. Nel Centro sicurezza passare a **Ruoli di posta elettronica e collaborazione** \> **Autorizzazioni e ruoli** \> **Ruoli di posta elettronica e collaborazione** \> **Ruoli**.
+1. Nel portale di Microsoft 365 Defender passare a **Ruoli di posta elettronica e collaborazione** \> **Autorizzazioni e ruoli** \> **Ruoli di posta elettronica e collaborazione** \> **Ruoli**.
 
 2. Nella pagina **Autorizzazioni** visualizzata selezionare il gruppo di ruoli da modificare nell'elenco. È possibile fare clic sull'intestazione di colonna **Nome** per ordinare l'elenco in base al nome oppure fare clic su **Cerca** ![Icona ricerca](../../media/m365-cc-sc-search-icon.png) per trovare il gruppo di ruoli.
 

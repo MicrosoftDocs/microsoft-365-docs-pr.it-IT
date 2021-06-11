@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i dati dell'organizzazione."
-ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244625"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878185"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
 
@@ -181,6 +181,9 @@ Per modificare un criterio di etichetta esistente, selezionarlo e quindi sceglie
 Verrà avviata la procedura guidata **Crea criterio**, che consente di modificare le etichette incluse e le impostazioni dell'etichetta. Una volta completata la procedura guidata, le modifiche vengono replicate automaticamente agli utenti e ai servizi selezionati.
 
 Quando si usa l’etichettatura predefinita per le app di Office in Windows, macOS, iOS e Android, gli utenti visualizzano le nuove etichette entro quattro ore ed entro un'ora per Word, Excel e PowerPoint sul web quando si aggiorna il browser. Tuttavia, saranno necessarie fino a 24 ore affinché le modifiche vengano replicate in tutte le app e i servizi.
+
+> [!NOTE]
+> Altri servizi e app che supportano le etichette di riservatezza potrebbero aggiornarsi più spesso di 24 ore, con le proprie pianificazioni di aggiornamento e i propri trigger per gli aggiornamenti dei criteri. Per i dettagli, vedere la relativa documentazione. Ad esempio, per il client di etichettatura unificata di Azure Information Protection, vedere la riga **Aggiornamento criteri** nella tabella dei [confronti dettagliati per i client di Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Impostazioni aggiuntive per i criteri delle etichette con PowerShell per Centro sicurezza e conformità
 

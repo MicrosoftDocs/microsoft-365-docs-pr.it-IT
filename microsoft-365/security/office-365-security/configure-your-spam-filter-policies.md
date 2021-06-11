@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2214baa1c205d4e0f634c5a07f4d55522d2ad6b1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822022"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879097"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -37,14 +37,14 @@ Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o 
 
 Gli amministratori possono visualizzare, modificare e configurare, ma non eliminare, il criterio di protezione dalla posta indesiderata predefinito. Per una maggiore granularità, è anche possibile creare criteri di protezione dalla posta indesiderata personalizzati applicabili a utenti, gruppi o domini specifici nell'organizzazione. I criteri personalizzati hanno sempre la precedenza sul criterio predefinito, ma non è possibile modificarne la priorità (in funzione).
 
-È possibile configurare criteri di protezione dalla posta indesiderata nel Centro sicurezza Microsoft 365 o in PowerShell (PowerShell di Exchange Online per organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell di EOP autonomo per organizzazioni prive di cassette postali di Exchange Online).
+È possibile configurare criteri di protezione dalla posta indesiderata nel portale di Microsoft 365 Defender o in PowerShell (PowerShell di Exchange Online per organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell di EOP autonomo per organizzazioni prive di cassette postali di Exchange Online).
 
 Gli elementi di base del criterio di protezione dalla posta indesiderata sono:
 
 - **Criterio di filtro della posta indesiderata**: specifica le azioni per i verdetti filtro posta indesiderata e le opzioni di notifica.
 - **Regola di filtro della posta indesiderata**: specifica la priorità e i filtri destinatario (a chi si applica il criterio) per un criterio di filtro della posta indesiderata.
 
-La differenza tra questi due elementi non è ovvia quando si gestiscono criteri di protezione dalla posta indesiderata nel Centro sicurezza:
+La differenza tra questi due elementi non è ovvia quando si gestiscono criteri di protezione dalla posta indesiderata nel portale di Microsoft 365 Defender:
 
 - Quando si crea un criterio di protezione dalla posta indesiderata, in contemporanea viene creata una regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata associato, utilizzando lo stesso nome per entrambi.
 - Quando si modifica un criterio di protezione dalla posta indesiderata, le impostazioni relative a nome, priorità, attivazione o disattivazione e filtri destinatari modificano la regola di filtro della posta indesiderata. Tutte le altre impostazioni modificano il criterio di filtro della posta indesiderata associato.
@@ -62,7 +62,7 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza a <https://security.microsoft.com>. Per passare direttamente alla pagina **Criteri di protezione dalla posta indesiderata**, usare <https://security.microsoft.com/antispam>.
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alla pagina **Criteri di protezione dalla posta indesiderata**, usare <https://security.microsoft.com/antispam>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -79,11 +79,11 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
 
 - Per le impostazioni consigliate per i criteri contro la posta indesiderata, vedere [Impostazioni dei criteri di protezione dalla posta indesiderata di EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-## <a name="use-the-security-center-to-create-anti-spam-policies"></a>Utilizzare il Centro sicurezza per creare criteri di protezione dalla posta indesiderata
+## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>Usare il portale di Microsoft 365 Defender per creare criteri di protezione dalla posta indesiderata
 
-La creazione di un criterio di protezione dalla posta indesiderata nel Centro sicurezza permette di creare contemporaneamente una regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata associato, utilizzando lo stesso nome per entrambi.
+La creazione di un criterio di protezione dalla posta indesiderata nel portale di Microsoft 365 Defender permette di creare contemporaneamente una regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata associato, usando lo stesso nome per entrambi.
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri protezione posta indesiderata** fare clic su ![Crea icona](../../media/m365-cc-sc-create-icon.png) **Crea criteri** e quindi selezionare **In ingresso** nell'elenco a discesa.
 
@@ -240,9 +240,9 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
 9. Nel messaggio di conferma visualizzato fare clic su **Fatto**.
 
-## <a name="use-the-security-center-to-view-anti-spam-policies"></a>Utilizzare il Centro sicurezza per visualizzare criteri di protezione dalla posta indesiderata
+## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>Usare il portale di Microsoft 365 Defender per visualizzare i criteri di protezione dalla posta indesiderata
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri filtro posta indesiderata** cercare uno dei valori seguenti:
    - Il valore **Tipo** personalizzato è il **Criterio personalizzato per la posta indesiderata**
@@ -257,15 +257,15 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
 3. Quando si seleziona un criterio di filtro della posta indesiderata facendo clic sul nome, le relative impostazioni vengono visualizzate in un riquadro a comparsa.
 
-## <a name="use-the-security-center-to-modify-anti-spam-policies"></a>Utilizzare il Centro sicurezza e conformità per modificare criteri di protezione dalla posta indesiderata
+## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Usare il portale di Microsoft 365 Defender per modificare i criteri di protezione dalla posta indesiderata
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata** selezionare un criterio di filtro della posta indesiderata nell'elenco facendo clic sul nome:
    - Un criterio personalizzato creato dall'utente in cui il valore nella colonna **Tipo** è **Criterio di protezione dalla posta indesiderata personalizzato**.
    - Il criterio predefinito denominato **Filtro della posta indesiderata in ingresso (Predefinito)**.
 
-3. Nel riquadro a comparsa dei dettagli sui criteri visualizzato selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Per altre informazioni sulle impostazioni, vedere la sezione precedente [Usare il Centro sicurezza per creare criteri di filtro della posta indesiderata](#use-the-security-center-to-create-anti-spam-policies) in questo articolo.
+3. Nel riquadro a comparsa dei dettagli sui criteri visualizzato selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Per altre informazioni sulle impostazioni, vedere la sezione precedente [Usare il portale di Microsoft 365 Defender per creare criteri di protezione dalla posta indesiderata](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) in questo articolo.
 
    Per il criterio di protezione dalla posta indesiderata predefinito, la sezione **Applicato a**, non è disponibile (il criterio si applica a tutti gli utenti) e non è possibile rinominare il criterio.
 
@@ -275,7 +275,7 @@ Per abilitare o disabilitare un criterio, impostare l'ordine di priorità dei cr
 
 Non è possibile disabilitare il criterio di protezione dalla posta indesiderata predefinito.
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata** selezionare un criterio con il **Valore tipo** dei **Criteri di protezione dalla posta indesiderata** dall'elenco facendo clic sul nome:.
 
@@ -293,14 +293,14 @@ Tornare alla pagina dei criteri principale, il valore **Stato** del criterio sar
 
 Per impostazione predefinita, ai criteri di protezione dalla posta indesiderata viene assegnata una priorità che si basa sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto a quelli precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
-Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o **Riduci priorità** nelle proprietà del criterio. (Non è possibile modificare direttamente il numero di **Priorità** nel Centro sicurezza). La modifica di priorità di un criterio è utile solo se si hanno più criteri.
+Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o **Riduci priorità** nelle proprietà del criterio. Non è possibile modificare direttamente il valore **Priorità** nel portale di Microsoft 365 Defender. La modifica di priorità di un criterio è utile solo se si hanno più criteri.
 
  **Note**:
 
-- Nel centro di sicurezza è possibile solo modificare la priorità dei criteri di protezione dalla posta indesiderata dopo averlo creato. In PowerShell, è possibile sovrascrivere la priorità predefinita quando si crea la regola di filtro della posta indesiderata (che può interessare la priorità delle regole esistenti).
+- nel portale di Microsoft 365 Defender è possibile solo modificare la priorità del criterio di protezione dalla posta indesiderata dopo averlo creato. In PowerShell, è possibile sovrascrivere la priorità predefinita quando si crea la regola di filtro della posta indesiderata (che può incidere sulla priorità delle regole esistenti).
 - I criteri di protezione dalla posta indesiderata vengono elaborati nell'ordine in cui sono visualizzati (il primo criterio contiene il valore **Priorità** 0). Il criterio di protezione dalla posta indesiderata predefinito contiene il valore di priorità **Minimo**, che non è possibile modificare.
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata**,selezionare un criterio con il **Valore tipo** dei **Criteri di protezione dalla posta indesiderata** dall'elenco facendo clic sul nome.
 
@@ -317,7 +317,7 @@ Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o
 
 Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, è possibile configurare le notifiche di posta indesiderata per l'utente finale per informare i destinatari su quanto accaduto ai messaggi a loro destinati. Per altre informazioni sulle notifiche, vedere [Notifiche di posta indesiderata per l'utente finale in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata** selezionare un criterio di filtro della posta indesiderata nell'elenco facendo clic sul nome:
    - Un criterio personalizzato creato dall'utente in cui il valore nella colonna **Tipo** è **Criterio di protezione dalla posta indesiderata personalizzato**.
@@ -340,11 +340,11 @@ Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, �
 
 4. Tornare al riquadro a comparsa dei dettagli sui criteri, fare clic su **chiudi**.
 
-## <a name="use-the-security-center-to-remove-custom-anti-spam-policies"></a>Utilizzare il Centro sicurezza per rimuovere criteri di protezione dalla posta indesiderata personalizzati
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>Usare il portale di Microsoft 365 Defender per rimuovere criteri di protezione dalla posta indesiderata
 
-Quando si usa il Centro sicurezza per rimuovere un criterio di filtro della posta indesiderata personalizzato, vengono eliminati sia il criterio di filtro della posta indesiderata che il criterio di filtro della posta indesiderata corrispondente. Non è possibile rimuovere i criteri predefiniti per la posta indesiderata.
+Quando si usa il portale di Microsoft 365 Defender per rimuovere un criterio di filtro della posta indesiderata personalizzato, vengono eliminati sia la regola di filtro della posta indesiderata che il criterio di filtro della posta indesiderata corrispondente. Non è possibile rimuovere il criterio di protezione dalla posta indesiderata predefinito.
 
-1. Nel Centro sicurezza passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata** selezionare un criterio con il **Valore tipo** dei **Criteri di protezione dalla posta indesiderata** dall'elenco facendo clic sul nome:. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato fare clic![ sull'icona Altre azioni](../../media/m365-cc-sc-more-actions-icon.png) **Altre azioni** \> ![Icona Elimina criterio](../../media/m365-cc-sc-delete-icon.png) **Elimina criterio**.
 
@@ -362,7 +362,7 @@ In PowerShell per Exchange Online o PowerShell di EOP autonomo è evidente la di
 
 Le impostazioni dei criteri contro la posta indesiderata seguenti sono disponibili solo in PowerShell:
 
-- Il parametro _MarkAsSpamBulkMail_ è `On` per impostazione predefinita. Gli effetti di questa impostazione sono stati illustrati nella sezione precedente [Utilizzare il Centro sicurezza per creare criteri di protezione dalla posta indesiderata](#use-the-security-center-to-create-anti-spam-policies) in questo articolo.
+- Il parametro _MarkAsSpamBulkMail_ è `On` per impostazione predefinita. Gli effetti di questa impostazione sono stati illustrati nella sezione precedente [Usare il portale di Microsoft 365 Defender per creare criteri di protezione dalla posta indesiderata](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) in questo articolo.
 
 - Le impostazioni seguenti per le notifiche di quarantena della posta indesiderata dell'utente finale:
   - Il parametro _DownloadLink_ che mostra o nasconde il collegamento allo strumento per la segnalazione delle e-mail indesiderate di Outlook.
@@ -378,11 +378,11 @@ La creazione di un criterio di protezione dalla posta indesiderata in PowerShell
  **Note**:
 
 - è possibile creare una nuova regola di filtro della posta indesiderata e assegnarvi un criterio di filtro della posta indesiderata esistente e non associato. Una regola di filtro della posta indesiderata non può essere associata a più di un criterio di filtro della posta indesiderata.
-- È possibile configurare le impostazioni seguenti nei nuovi criteri di filtro della posta indesiderata in PowerShell che non sono disponibili nel Centro sicurezza finché non si crea il criterio:
+- È possibile configurare le impostazioni seguenti nei nuovi criteri di filtro della posta indesiderata in PowerShell che non sono disponibili nel portale di Microsoft 365 Defender finché non si crea il criterio:
   - Creare il nuovo criterio come disabilitato (_Abilitato_ `$false` nel cmdlet **New-HostedContentFilterRule**).
   - Impostare la priorità del criterio durante la creazione (_Priorità_ _\<Number\>_) nel cmdlet **New-HostedContentFilterRule**).
 
-- Il nuovo criterio di filtro della posta indesiderata creato in PowerShell non sarà visibile nel Centro sicurezza finché non vi verrà assegnata una regola di filtro della posta indesiderata.
+- Un nuovo criterio di filtro della posta indesiderata creato in PowerShell non sarà visibile nel portale di Microsoft 365 Defender finché non viene assegnato a una regola di filtro della posta indesiderata.
 
 #### <a name="step-1-use-powershell-to-create-a-spam-filter-policy"></a>Passaggio 1 - Utilizzo di PowerShell per creare criteri di filtro della posta indesiderata
 
@@ -487,7 +487,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentF
 Oltre agli elementi seguenti, le stesse impostazioni sono disponibili quando si modificano i criteri di filtro della posta indesiderata in PowerShell e quando si creano i criteri come descritto nella sezione precedente [Passaggio 1 - Utilizzo di PowerShell per creare criteri di filtro della posta indesiderata](#step-1-use-powershell-to-create-a-spam-filter-policy) in questo articolo.
 
 - Il parametro _MakeDefault_ che trasforma il criterio specificato nel criterio predefinito (si applica a tutti gli utenti, sempre priorità **Lowest** e non è possibile eliminarlo) è disponibile solo quando si modifica un criterio di filtro della posta indesiderata in PowerShell.
-- Non è possibile rinominare un criterio di filtro della posta indesiderata (il cmdlet **Set-HostedContentFilterPolicy** non contiene il parametro _Name_). Quando si rinomina un criterio di protezione dalla posta indesiderata nel Centro sicurezza, si rinomina solamente la _regola_ di filtro della posta indesiderata.
+- Non è possibile rinominare un criterio di filtro della posta indesiderata (il cmdlet **Set-HostedContentFilterPolicy** non contiene il parametro _Name_). Quando si rinomina un criterio di protezione dalla posta indesiderata nel portale di Microsoft 365 Defender, si rinomina solamente la _regola_ di filtro della posta indesiderata.
 
 Per modificare un criterio di filtro della posta indesiderata, utilizzare questa sintassi:
 

@@ -23,12 +23,12 @@ ms.custom:
 - commerce_billing
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
 ms.date: 07/31/2020
-ms.openlocfilehash: 3c41e52803c78cc687134c6c68899466236ceca3
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7e37e296f37583e1fc0b2fc3474609e11c5a5e1f
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331911"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888350"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visualizzare la fattura
 
@@ -105,4 +105,5 @@ Se è presente un saldo e si preferisce pagarlo, è possibile farlo online. Per 
 
 [Pagare con fattura, carta di credito o conto corrente bancario](pay-for-your-subscription.md) (articolo) \
 [Gestire i metodi di pagamento](manage-payment-methods.md) (articolo) \
+[Informazioni di fatturazione per Microsoft 365 per le aziende in Messico](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (articolo) \
 [Minecraft: opzioni di pagamento di Education Edition](/education/windows/school-get-minecraft) (articolo)

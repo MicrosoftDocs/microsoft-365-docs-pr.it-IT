@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto quando si utilizza una revisione per l'eliminazione o gli elementi segnati come record vengono eliminati automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594074"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878125"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -38,7 +38,7 @@ Utilizzare la pagina **Eliminazione** dalla **Gestione record** nel Centro confo
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Prerequisiti per la visualizzazione delle eliminazioni di contenuto
 
-Per gestire le revisioni per l’eliminazione e verificare che i record siano stati eliminati, è necessario avere le autorizzazioni necessarie e che il controllo sia abilitato.
+Per gestire le revisioni per l’eliminazione e verificare che i record siano stati eliminati, è necessario avere le autorizzazioni necessarie e che il controllo sia abilitato. È inoltre necessario essere consapevoli delle [limitazioni](retention-limits.md#maximum-number-of-items-for-disposition) relative all'eliminazione.
 
 ### <a name="permissions-for-disposition"></a>Autorizzazioni per l'eliminazione
 
@@ -215,8 +215,6 @@ Usare la scheda **Eliminazione** della pagina **Gestione record** per identifica
 Questi elementi visualizzano i **record eliminati** nella colonna **Tipo**. Ad esempio:
 
 ![Elementi eliminati senza revisione per l'eliminazione](../media/records-disposed2.png)
-
-Gli elementi visualizzati nella scheda **Elementi eliminati** vengono conservati per un massimo di sette anni dalla data di eliminazione dell'elemento, con un limite di 1 milione di elementi per ogni record per quel periodo. Se la cifra di **Conteggio** visualizzata si avvicina al limite di 1 milione e occorre prova di eliminazione dei record, contattare il [supporto tecnico Microsoft](../business-video/get-help-support.md).
 
 > [!NOTE]
 > Questa funzionalità usa le informazioni provenienti dal [Log di controllo unificato](search-the-audit-log-in-security-and-compliance.md) e, di conseguenza, è necessario che il controllo sia [abilitato e con ricerca consentita](turn-audit-log-search-on-or-off.md) in modo da acquisire gli eventi corrispondenti.

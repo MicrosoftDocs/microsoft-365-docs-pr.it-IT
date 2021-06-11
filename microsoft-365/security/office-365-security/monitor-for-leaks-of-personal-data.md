@@ -19,12 +19,12 @@ search.appverid:
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0976c0d1c0c8d3ebb25ebf423f1d9df2f71fc852
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 05d31ac36fbdc687c60ec3c03efac9be43da9c39
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538280"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878485"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -50,33 +50,27 @@ Dopo aver creato i criteri di prevenzione della perdita dei dati (DLP), è consi
 È possibile utilizzare i report DLP per:
 
 - Concentrare l'attenzione su intervalli di tempo specifici e comprendere i motivi di eventuali impennate e tendenze.
-
 - Individuare i processi aziendali che violano i criteri DLP dell'organizzazione.
-
 - Comprendere l'eventuale impatto aziendale dei criteri DLP.
-
 - Visualizzare le giustificazioni inviate dagli utenti quando risolvono un suggerimento per i criteri ignorando il criterio o segnalando un falso positivo.
-
 - Verificare la conformità con uno specifico criterio DLP mostrando le eventuali corrispondenze per tale criterio.
-
 - Visualizzare un elenco di file con dati riservati corrispondenti ai criteri DLP nel riquadro dei dettagli.
 
 Inoltre, è possibile utilizzare i report DLP per ottimizzare i criteri DLP, quando vengono eseguiti nella modalità test.
 
-I report DPL sono disponibili nel centro sicurezza e nel centro conformità. Passare a Report \> Visualizza report. Sotto Prevenzione della perdita dei dati scegliere Corrispondenze della regola e dei criteri di prevenzione della perdita dei dati o Falsi positivi e override dei criteri di prevenzione della perdita dei dati.
+I report DLP si trovano nel Centro conformità Microsoft 365. Passare alla sezione **Report** \> **Dati organizzazione** per trovare i report **Risultati dei criteri di prevenzione della perdita dei dati**, **Incidenti DLP** e **Criteri di prevenzione della perdita dei dati falsi positivi e ignorati**.
 
 Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della perdita di dati](../../compliance/view-the-dlp-reports.md).
 
 ![Report che mostra le corrispondenze ai criteri DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
-## <a name="audit-log-and-alert-policies"></a>Log di controllo e criteri di avviso
+## <a name="audit-log-and-alert-policies"></a>Log di audit e criteri di avviso
 
 Il log di controllo contiene eventi di Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Power BI, Sway e altri servizi.
 
-Il Centro sicurezza e conformità offre due metodi per il monitoraggio e la creazione di report in merito al log di controllo:
+Il portale di Microsoft 365 Defender e il Centro conformità Microsoft 365 offrono due metodi per il monitoraggio e la creazione di report in merito al log di audit:
 
-- Configurare criteri di avviso, visualizzare avvisi e monitorare le tendenze: utilizzare gli strumenti della dashboard e dei criteri di avviso nel centro sicurezza o nel centro conformità.
-
+- Configurare criteri di avviso, visualizzare avvisi e monitorare le tendenze: utilizzare gli strumenti per i criteri di avviso e il dashboard degli avvisi nel portale di Microsoft 365 Defender o nel Centro conformità Microsoft 365.
 - Cercare direttamente il log di controllo: è possibile ricercare tutti gli eventi in un intervallo di date specificato o filtrare i risultati in base a criteri specifici, come l'utente che ha effettuato l'operazione, l'operazione o l'oggetto di destinazione.
 
 I team di conformità e sicurezza delle informazioni possono usare questi strumenti per analizzare in modo proattivo le attività eseguite dagli utenti finali e dagli amministratori nei servizi. È possibile configurare avvisi automatici per l'invio di notifiche tramite posta elettronica quando si verificano certe attività su specifiche raccolte siti, ad esempio, quando vengono condivisi contenuti da siti contenenti informazioni correlate al GDPR. Ciò consente a questi team di intervenire per assicurarsi che gli utenti rispettino i criteri di sicurezza aziendali o per offrire formazione aggiuntiva.
@@ -88,15 +82,10 @@ Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo un
 Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controllo:
 
 - [Criteri avviso in Microsoft 365](../../compliance/alert-policies.md)
-
 - [Eseguire ricerche nel il log di controllo per le attività di utente e amministratore in Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduzione)
-
 - [Abilitare o disabilitare la ricerca nel log di controllo](../../compliance/turn-audit-log-search-on-or-off.md)
-
 - [Eseguire ricerche nel log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md)
-
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
-
 - [Proprietà dettagliate nel log di controllo](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
@@ -124,16 +113,15 @@ Questi tipi di attributi saranno presto disponibili in Cloud App Security:
 
 Se ancora non si usa Cloud App Security, iniziare a configurarlo. Per accedere a Cloud App Security: <https://portal.cloudappsecurity.com>.
 
-Nota: verificare che "Analizza automaticamente i file per le etichette di classificazione di Azure Information Protection" (nelle impostazioni generali) sia abilitato prima di iniziare a usare Cloud App Security o ad assegnare etichette. Dopo la configurazione, Cloud App Security non ripete l'analisi dei file esistenti finché non vengono modificati.
+> [!NOTE]
+> Verificare che "Analizza automaticamente i file per le etichette di classificazione di Azure Information Protection" (nelle impostazioni generali) sia abilitato prima di iniziare a usare Cloud App Security o ad assegnare etichette. Dopo la configurazione, Cloud App Security non ripete l'analisi dei file esistenti finché non vengono modificati.
 
 ![Dashboard con informazioni sugli avvisi](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Ulteriori informazioni:
 
 - [Distribuzione di Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [Ulteriori informazioni su Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [Blocco dei download di informazioni sensibili tramite il proxy di Microsoft Cloud App Security](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>File di esempio e criteri di attività per rilevare la condivisione di dati personali
@@ -141,6 +129,8 @@ Ulteriori informazioni:
 ### <a name="detect-sharing-of-files-containing-pii--credit-card-number"></a>Individuare la condivisione di file contenenti informazioni personali - Numero di carta di credito
 
 L'avviso relativo a un file contenente un numero di carta di credito viene condiviso da un'app cloud approvata.
+
+<br>
 
 ****
 
@@ -170,6 +160,8 @@ Note:
 
 - Il monitoraggio di Box richiede un connettore configurato con l'SDK API Connector.
 - Questo criterio richiede funzionalità al momento in anteprima privata.
+
+<br>
 
 ****
 
