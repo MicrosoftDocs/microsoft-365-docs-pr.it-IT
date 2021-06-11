@@ -96,7 +96,7 @@
               href: incidents-overview.md
             - name: Assegnazione della priorità
               href: incident-queue.md
-            - name: Gestione
+            - name: Gestire
               href: manage-incidents.md
             - name: Investigare
               href: investigate-incidents.md
@@ -336,6 +336,8 @@
                       href: api-list-incidents.md
                     - name: Eventi imprevisti di aggiornamento
                       href: api-update-incidents.md
+                    - name: Ottieni evento imprevisto
+                      href: api-get-incident.md
     - name: Microsoft Defender per Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender per endpoint
