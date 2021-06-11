@@ -280,8 +280,6 @@
 #### [Ottenere gli aggiornamenti antivirus e antimalware](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Gestire le origini per gli aggiornamenti di protezione di Microsoft Defender Antivirus](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Gestire la pianificazione del momento in cui devono essere scaricati e applicati gli aggiornamenti della protezione](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-#####  [Gestire il processo graduale di implementazione per gli aggiornamenti di Microsoft Defender](updates.md)
-#####  [Configurare il processo graduale di implementazione per gli aggiornamenti di Microsoft Defender](configure-updates.md)
 ##### [Gestire gli aggiornamenti e le analisi di Microsoft Defender Antivirus per gli endpoint non aggiornati](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Gestire gli aggiornamenti forzati basati su eventi](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Gestire gli aggiornamenti per dispositivi mobili e macchine virtuali (VMS)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -513,8 +511,9 @@
 
 ###### [Indicatori]()
 ####### [Metodi e proprietà degli indicatori](ti-indicator.md)
-####### [Invia indicatore](post-ti-indicator.md)
 ####### [Elenca indicatori](get-ti-indicators-collection.md)
+####### [Invia indicatore](post-ti-indicator.md)
+####### [Importa indicatore](import-ti-indicators.md)
 ####### [Elimina indicatore](delete-ti-indicator-by-id.md)
 
 ###### [IP]()
