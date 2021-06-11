@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: I clienti di Microsoft Defender per Office 365 E5 e P1 e P2 ora possono ottenere una visualizzazione a 360 gradi di ogni messaggio di posta elettronica con la pagina dell'entità di posta elettronica.
-ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c45b45101c27e92dd0fa8776ca5d8ee9eb3af5b7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539096"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878461"
 ---
 # <a name="the-email-entity-page"></a>Pagina Entità posta elettronica
 
@@ -34,12 +34,17 @@ Gli amministratori di Microsoft Defender per Office 365 (o MDO) E5 e MDO P1 e P2
 
 ## <a name="reach-the-email-entity-page"></a>Raggiungere la pagina dell'entità di posta elettronica
 
-Il & Centro sicurezza e conformità (protection.office.com) o il nuovo Centro sicurezza Microsoft 365 (security.microsoft.com) consentono di visualizzare e usare la pagina dell'entità di posta elettronica.
+Il Centro sicurezza e conformità & o il nuovo portale Microsoft 365 Defender ti permetterà di visualizzare e usare la pagina dell'entità di posta elettronica.
+
+<br>
+
+****
 
 |Centro|URL|Navigazione|
 |---|---|---|
-|Sicurezza e conformità |protection.office.com|Esplora gestione \> delle minacce|
-|Centro sicurezza Microsoft 365 |security.microsoft.com|Esplora & posta \> elettronica|
+|Centro sicurezza e conformità|<https://protection.office.com>|Esplora gestione \> delle minacce|
+|Microsoft 365 Defender Portal|<https://security.microsoft.com>|Esplora & posta \> elettronica|
+|
 
 In Esplora minacce seleziona l'oggetto di un messaggio di posta elettronica che stai analizzando. Nella parte superiore del riquadro a comparsa della posta elettronica verrà visualizzata una barra d'oro. Questo invito alla nuova pagina, legge "Prova la nostra nuova pagina dell'entità di posta elettronica con dati arricchiti...". Selezionare questa opzione per visualizzare la nuova pagina.
 
@@ -89,17 +94,20 @@ Gli amministratori possono visualizzare in anteprima i messaggi di posta elettro
 
 ### <a name="detonation-details"></a>Dettagli detonazione
 
-Questi dettagli sono specifici per gli url e gli allegati di posta elettronica.
+Questi dettagli sono specifici per gli url e gli allegati di posta elettronica. Gli utenti possono visualizzare questi dettagli andando  in Esplora risorse e applicando il filtro della tecnologia di rilevamento impostato sulla detonazione dei file o sulla detonazione dell'URL. I messaggi di posta elettronica filtrati per la detonazione dei file conterranno un file dannoso con dettagli di detonazione e quelli filtrati per gli URL conterranno un URL dannoso e i relativi dettagli di detonazione.
 
-Gli utenti potranno visualizzare dettagli di detonazione arricchiti per allegati o collegamenti ipertestuali dannosi noti trovati nelle proprie cassette postali, tra cui catena di detonazione, riepilogo detonazione, screenshot e dettagli sul comportamento osservato per aiutare i clienti a capire perché l'allegato o l'URL è stato ritenuto dannoso e detonato.
+Gli utenti visualizzano dettagli di detonazione arricchiti per gli URL o gli allegati dannosi noti trovati nei messaggi di posta elettronica, che sono stati detonati per il tenant specifico. Includerà i dettagli della catena di detonazione, del riepilogo della detonazione, dello screenshot e del comportamento osservato per aiutare i clienti a capire perché l'allegato o l'URL è stato ritenuto dannoso e detonato.
 
-- *Catena di detonazione:* una detonazione di un singolo file o URL può attivare più detonazioni. La catena di detonazione tiene traccia del percorso delle detonazioni, incluso il file o l'URL dannoso originale che ha causato il verdetto, e tutti gli altri file o URL emersi dalla detonazione. Questi URL o file allegati potrebbero non essere direttamente presenti nel messaggio di posta elettronica, ma l'inclusione di tale analisi è importante per determinare perché il file o l'URL è stato trovato dannoso.
-- *Riepilogo detonazione*: fornisce informazioni su:
-  - Intervallo di tempo di detonazione.
-  - Verdetto del file allegato o dell'URL.
-  - Informazioni correlate (numero di file, URL, IP o domini), che sono altre entità esaminate durante la detonazione.
-- *Schermata di detonazione:* mostra gli screenshot emersi durante il processo di detonazione.
-- *Dettagli di detonazione*: questi sono i dettagli esatti del comportamento di ogni processo che ha avuto luogo durante la detonazione.
+1. *Catena di detonazione*. Una detonazione di un singolo file o URL può attivare più detonazioni. La catena di detonazione tiene traccia del percorso delle detonazioni, incluso il file o l'URL dannoso originale che ha causato il verdetto, e tutti gli altri file o URL emersi dalla detonazione. Questi URL o file allegati potrebbero non essere direttamente presenti nel messaggio di posta elettronica, ma l'inclusione di tale analisi è importante per determinare perché il file o l'URL è stato trovato dannoso.  
+    > [!NOTE]
+    > Questo può mostrare solo l'elemento di primo livello se nessuna delle entità collegate ad esso è risultata problematica o è stata detonata.
+
+1. Il riepilogo *della detonazione* fornisce un riepilogo di base per la detonazione, ad esempio il tempo di analisi, l'ora in cui si è verificata la detonazione, il sistema operativo e l'applicazione, il sistema operativo e l'applicazione in cui si è verificata la detonazione, le dimensioni del file e il motivo del verdetto.
+1. *Screenshots* shows the screenshots captured during detonation. Durante la detonazione possono essere presenti più screenshot. Non vengono acquisiti screenshot per
+    - File di tipo contenitore come .zip o .rar.
+    - Se si apre un URL in un collegamento che scarica direttamente un file. Tuttavia, il file scaricato verrà visualizzato nella catena di detonazione.
+1. *Dettagli* comportamento sono un'esportazione che mostra dettagli di comportamento come eventi esatti verificatisi durante la detonazione e oggetti osservabili che contengono URL, IP, domini e file trovati durante la detonazione (e possono essere problematici o benigni). Tenere presente che potrebbero non essere disponibili dettagli sul comportamento per:
+    - I file contenitore .zip o .rar che mandono altri file.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
 
@@ -111,7 +119,7 @@ Gli utenti potranno visualizzare dettagli di detonazione arricchiti per allegati
 
 *Dettagli posta elettronica*: dettagli necessari per una conoscenza approfondita della posta elettronica disponibile nella *scheda* Analisi.
 
-- *Exchange transport rules (ETRs or Mailflow rules):* queste regole vengono applicate a un messaggio a livello di trasporto e hanno la precedenza sui verdetti di phish e spam. Questi possono essere creati e modificati solo nell'interfaccia di amministrazione di Exchange, ma se un ETR si applica a un messaggio, il nome ETR e il GUID verranno visualizzati qui. Informazioni preziose a scopo di monitoraggio.
+- Exchange regole di trasporto *(ETR* o regole del flusso di posta): queste regole vengono applicate a un messaggio a livello di trasporto e hanno la precedenza sui verdetti di phish e posta indesiderata. Questi possono essere creati e modificati solo nell'interfaccia di amministrazione di Exchange, ma se un ETR si applica a un messaggio, il nome ETR e il GUID verranno visualizzati qui. Informazioni preziose a scopo di monitoraggio.
 
 - *Sostituzioni* di sistema: si tratta di un mezzo per fare eccezioni al percorso di recapito destinato a un messaggio ignorando il percorso di recapito fornito dal sistema (in base alla tecnologia di rilevamento e minaccia).
 

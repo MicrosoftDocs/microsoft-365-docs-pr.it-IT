@@ -56,7 +56,7 @@ Esclusione | Definizione | Esempi
 Estensione del file | Tutti i file con estensione, ovunque nel dispositivo | `.test`
 File | Un file specifico identificato dal percorso completo | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Cartella | Tutti i file nella cartella specificata (in modo ricorsivo) | `/var/log/`<br/>`/var/*/`
-Procedura | Un processo specifico (specificato dal percorso completo o dal nome del file) e tutti i file aperti da esso | `/bin/cat`<br/>`cat`<br/>`c?t`
+Processo | Un processo specifico (specificato dal percorso completo o dal nome del file) e tutti i file aperti da esso | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > I percorsi precedenti devono essere collegamenti rigidi, non collegamenti simbolici, per essere esclusi correttamente. È possibile verificare se un percorso è un collegamento simbolico eseguendo `file <path-name>` .

@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni su come esaminare i messaggi segnalati e inviare commenti e suggerimenti agli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 9e6969b6dee38135ee2d1d41bbcdb2561943d1fe
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893729"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878713"
 ---
 # <a name="admin-review-for-reported-messages"></a>Revisione amministratore per i messaggi segnalati
 
@@ -39,13 +39,15 @@ Sarà possibile contrassegnare e notificare agli utenti i risultati della revisi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/> . Per passare direttamente alla **pagina Invii,** usa <https://security.microsoft.com/reportsubmission> .
+
+- Si apre il centro Microsoft 365 sicurezza all'indirizzo <https://security.microsoft.com/> . Per passare direttamente alla **pagina Invii,** usa <https://security.microsoft.com/reportsubmission> .
 
 - Per modificare la configurazione per gli invii di utenti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
-  - Gestione dell'organizzazione o amministratore della sicurezza [nel portale Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
+  - Gestione dell'organizzazione o amministratore della sicurezza [nel Microsoft 365 sicurezza](permissions-microsoft-365-security-center.md).
   - Gestione organizzazione in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Sarà inoltre necessario accedere a Exchange Online PowerShell. Se l'account che si sta tentando di usare non ha accesso Exchange Online PowerShell, verrà visualizzato un errore che indica Specificare un indirizzo di posta elettronica nel *dominio.* Per ulteriori informazioni sull'abilitazione o disabilitazione dell'accesso Exchange Online PowerShell, vedere gli argomenti seguenti:
+
+- Sarà inoltre necessario accedere alla Exchange Online PowerShell. Se l'account che si sta tentando di usare non ha accesso Exchange Online PowerShell, verrà visualizzato un errore che indica Specificare un indirizzo di posta elettronica nel *dominio.* Per ulteriori informazioni sull'abilitazione o disabilitazione dell'accesso Exchange Online PowerShell, vedere gli argomenti seguenti:
   - [Abilitare o disabilitare l'accesso Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Regole di Accesso client in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
