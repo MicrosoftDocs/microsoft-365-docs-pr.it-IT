@@ -11,20 +11,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 02/25/2020
+ms.date: 06/10/2021
 description: Scopri come velocizzare il processo di rilevamento e gestione degli account utente compromessi con funzionalità di indagine e risposta automatizzate in Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934694"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904141"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Risolvere gli account utente compromessi con analisi e risposta automatizzate
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -71,7 +69,7 @@ Quando un account utente viene compromesso, vengono attivati gli avvisi. In alcu
 
 Sono disponibili alcune opzioni per passare a un elenco di utenti con restrizioni. Ad esempio, nel Centro sicurezza & conformità, è possibile passare a **Gestione** delle minacce \> **Rivedere** Utenti \> **con restrizioni**. Nella procedura seguente viene descritto lo spostamento tramite il **dashboard** Avvisi, che rappresenta un ottimo modo per visualizzare vari tipi di avvisi che potrebbero essere stati attivati.
 
-1. Andare su <https://protection.office.com> ed eseguire l'accesso.
+1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso.
 
 2. Nel riquadro di spostamento scegliere **Dashboard** \> **avvisi.**
 

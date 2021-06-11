@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933590"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903829"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint
 
@@ -41,7 +41,7 @@ Nelle soluzioni di protezione degli endpoint, un falso positivo è un'entità, a
 
 ![Definizione di falsi positivi e negativi in Defender for Endpoint](images/false-positives-overview.png)
 
-Fortunatamente, è possibile eseguire operazioni per risolvere e ridurre questo tipo di problemi. Se si verificano falsi positivi/negativi nell'Microsoft Defender Security Center [,](../defender/microsoft-365-security-center-mde.md)le operazioni di sicurezza possono eseguire operazioni per affrontarli utilizzando il processo seguente:
+Fortunatamente, è possibile eseguire operazioni per risolvere e ridurre questo tipo di problemi. Se vengono visualizzati falsi positivi/negativi in [Microsoft 365 Defender](microsoft-defender-security-center.md) (in precedenza Microsoft Defender Security Center), le operazioni di sicurezza possono adottare misure per affrontarli utilizzando il processo seguente:
 
 1.  [Esaminare e classificare gli avvisi](#part-1-review-and-classify-alerts) 
 2.  [Esaminare le azioni di correzione eseguite](#part-2-review-remediation-actions)
@@ -66,7 +66,7 @@ La gestione degli avvisi e la classificazione dei falsi positivi aiuta a formare
 
 Prima di classificare o eliminare un avviso, determinare se l'avviso è accurato, falso positivo o benigno.
 
-1. Vai al Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e accedi.
+1. Vai al portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedi.
 
 2. Nel riquadro di spostamento scegliere **Coda avvisi.**
 
@@ -82,9 +82,9 @@ Prima di classificare o eliminare un avviso, determinare se l'avviso è accurato
 
 ### <a name="classify-an-alert"></a>Classificare un avviso
 
-Gli avvisi possono essere classificati come falsi positivi o veri positivi nella Microsoft Defender Security Center. La classificazione degli avvisi aiuta a formare Microsoft Defender for Endpoint in modo che, nel tempo, si vedano più avvisi veri e meno avvisi falsi.
+Gli avvisi possono essere classificati come falsi positivi o veri positivi in Microsoft 365 Defender. La classificazione degli avvisi aiuta a formare Microsoft Defender for Endpoint in modo che, nel tempo, si vedano più avvisi veri e meno avvisi falsi.
 
-1. Vai al Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e accedi.
+1. Vai al portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedi.
 
 2. Selezionare **Coda avvisi** e quindi selezionare un avviso.
 
@@ -97,9 +97,9 @@ Gli avvisi possono essere classificati come falsi positivi o veri positivi nella
 
 ### <a name="suppress-an-alert"></a>Eliminare un avviso
 
-Se sono presenti avvisi che sono falsi positivi o veri positivi ma per eventi non importanti, è possibile eliminare tali avvisi nel Microsoft Defender Security Center. L'eliminazione degli avvisi consente di ridurre il rumore nel dashboard delle operazioni di sicurezza. 
+Se hai avvisi che sono falsi positivi o veri positivi, ma per eventi non importanti, puoi eliminare tali avvisi in Microsoft 365 Defender. L'eliminazione degli avvisi consente di ridurre il rumore nel dashboard delle operazioni di sicurezza. 
 
-1. Vai al Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e accedi.
+1. Vai al portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedi.
 
 2. Nel riquadro di spostamento selezionare **Coda avvisi.**
 
@@ -135,7 +135,7 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 
 ### <a name="review-completed-actions"></a>Rivedere le azioni completate
 
-1. Vai al centro notifiche ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) e accedi. 
+1. Vai al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e accedi. 
 
 2. Selezionare la **scheda** Cronologia per visualizzare un elenco delle azioni eseguite.  
 
@@ -143,7 +143,7 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>Ripristinare un file in quarantena dal Centro notifiche
 
-1. Vai al centro notifiche ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) e accedi.
+1. Vai al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e accedi. 
 
 2. Nella scheda **Cronologia** selezionare un'azione che si desidera annullare.
 
@@ -151,7 +151,7 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 
 ### <a name="undo-multiple-actions-at-one-time"></a>Annullare più azioni contemporaneamente
 
-1. Vai al centro notifiche ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) e accedi.
+1. Vai al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e accedi. 
 
 2. Nella scheda **Cronologia** selezionare le azioni che si desidera annullare.
 
@@ -162,7 +162,7 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 > [!div class="mx-imgBorder"]
 > ![Quarantena del file](images/autoir-quarantine-file-1.png)
 
-1. Vai al centro notifiche ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) e accedi.
+1. Vai al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e accedi. 
 
 2. Nella scheda **Cronologia** selezionare un file con il tipo di azione **File quarantena.**
 
@@ -184,15 +184,12 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
     "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
     ```
 
-    > [!NOTE]
-    > In alcuni scenari, **ThreatName** può essere visualizzato come: `EUS:Win32/
-CustomEnterpriseBlock!cl` . Defender for Endpoint ripristini tutti i file bloccati personalizzati messi in quarantena su questo dispositivo negli ultimi 30 giorni.
-
     > [!IMPORTANT]
+    > In alcuni scenari, **ThreatName** può essere visualizzato come `EUS:Win32/
+      CustomEnterpriseBlock!cl` . Defender for Endpoint ripristini tutti i file bloccati personalizzati messi in quarantena su questo dispositivo negli ultimi 30 giorni.
     > Un file messo in quarantena come potenziale minaccia di rete potrebbe non essere recuperabile. Se un utente tenta di ripristinare il file dopo la quarantena, tale file potrebbe non essere accessibile. Ciò può essere dovuto al fatto che il sistema non ha più credenziali di rete per accedere al file. In genere, questo è il risultato di un accesso temporaneo a una cartella condivisa o di sistema e i token di accesso sono scaduti.
 
 3. Nel riquadro sul lato destro dello schermo, selezionare Applica a X altre istanze **del file** e quindi scegliere **Annulla.** 
-
 
 ## <a name="part-3-review-or-define-exclusions"></a>Parte 3: Esaminare o definire le esclusioni
 
@@ -212,7 +209,7 @@ Le procedure descritte in questa sezione descrivono come definire esclusioni e i
 In generale, non è necessario definire le esclusioni per Antivirus Microsoft Defender. Assicurarsi di definire le esclusioni con parsimonio e di includere solo i file, le cartelle, i processi e i file aperti dal processo che provocano falsi positivi. Inoltre, assicurati di esaminare regolarmente le esclusioni definite. Ti consigliamo di [usare Microsoft Endpoint Manager](/mem/endpoint-manager-overview) per definire o modificare le esclusioni antivirus; tuttavia, puoi usare altri metodi, ad esempio [Criteri di gruppo](/azure/active-directory-domain-services/manage-group-policy) (vedi Gestire Microsoft Defender per [endpoint).](manage-atp-post-migration.md)
 
 > [!TIP]
-> Serve assistenza per le esclusioni antivirus? Vedere [Configure and validate exclusions for Antivirus Microsoft Defender scans](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
+> Serve assistenza per le esclusioni antivirus? Vedere [Configure and validate exclusions for Antivirus Microsoft Defender scans](configure-exclusions-microsoft-defender-antivirus.md).
 
 #### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>Utilizzare Microsoft Endpoint Manager per gestire le esclusioni antivirus (per i criteri esistenti)
 
@@ -250,7 +247,7 @@ In generale, non è necessario definire le esclusioni per Antivirus Microsoft De
 
 [Gli](/microsoft-365/security/defender-endpoint/manage-indicators) indicatori (in particolare, indicatori di compromissione o ioc) consentono al team delle operazioni di sicurezza di definire il rilevamento, la prevenzione e l'esclusione delle entità. Ad esempio, puoi specificare determinati file da omettere dalle analisi e dalle azioni di correzione in Microsoft Defender per Endpoint. In caso contrario, gli indicatori possono essere utilizzati per generare avvisi per determinati file, indirizzi IP o URL.
 
-Per specificare le entità come esclusioni per Microsoft Defender for Endpoint, crea indicatori "consenti" per tali entità. Tali indicatori "consenti" in Microsoft Defender for Endpoint si applicano alla protezione [di](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)nuova generazione, al rilevamento e alla risposta degli [endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)e alle indagini automatizzate & [correzione](/microsoft-365/security/defender-endpoint/automated-investigations).
+Per specificare le entità come esclusioni per Microsoft Defender for Endpoint, crea indicatori "consenti" per tali entità. Tali indicatori "consenti" in Microsoft Defender for Endpoint si applicano alla protezione [di](microsoft-defender-antivirus-in-windows-10.md)nuova generazione, al rilevamento e alla risposta degli [endpoint](overview-endpoint-detection-response.md)e alle indagini automatizzate & [correzione](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 Gli indicatori "Consenti" possono essere creati per:
 
@@ -279,14 +276,15 @@ Prima di creare indicatori per indirizzi IP, URL o domini, verificare che siano 
 - La versione del client antimalware è 4.18.1906.x o successiva 
 - I dispositivi eseguono Windows 10 versione 1709 o successiva 
 
-Gli indicatori di rete personalizzati sono attivati nella Microsoft Defender Security Center (vedere [Funzionalità avanzate](/microsoft-365/security/defender-endpoint/advanced-features))   
+Gli indicatori di rete personalizzati sono attivati nella [Microsoft 365 Defender.](microsoft-defender-security-center.md) Per ulteriori informazioni, vedere [Funzionalità avanzate.](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-application-certificates"></a>Indicatori per i certificati delle applicazioni 
 
 Quando si [crea un indicatore "Consenti"](/microsoft-365/security/defender-endpoint/indicator-certificates)per un certificato dell'applicazione, si evita che le applicazioni, ad esempio le applicazioni sviluppate internamente, utilizzate dall'organizzazione vengano bloccate. `.CER` o `.PEM` le estensioni di file sono supportate.   
 
 Prima di creare indicatori per i certificati dell'applicazione, verificare che siano soddisfatti i requisiti seguenti:
-- Antivirus Microsoft Defender è configurato con la protezione basata su cloud abilitata (vedere [Gestire la protezione basata su cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
+
+- Antivirus Microsoft Defender è configurato con la protezione basata su cloud abilitata (vedere [Gestire la protezione basata su cloud](deploy-manage-report-microsoft-defender-antivirus.md))
 - La versione del client antimalware è 4.18.1901.x o successiva 
 - I dispositivi eseguono Windows 10 versione 1703 o successiva; Windows Server 2016; o Windows Server 2019 
 - Le definizioni di protezione da virus e minacce sono aggiornate  
@@ -444,7 +442,7 @@ A seconda del [livello di automazione](/microsoft-365/security/defender-endpoint
 
 Se hai seguito tutti i passaggi descritti in questo articolo e hai ancora bisogno di assistenza, contatta il supporto tecnico.
 
-1. Vai al Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e accedi.
+1. Vai a Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedi.
 
 2. Nell'angolo in alto a destra selezionare il punto interrogativo (**?**) e quindi scegliere **Supporto Tecnico Microsoft**.
 
@@ -454,4 +452,4 @@ Se hai seguito tutti i passaggi descritti in questo articolo e hai ancora bisogn
 
 [Gestire Microsoft Defender per Endpoint](manage-atp-post-migration.md)
 
-[Panoramica di Microsoft Defender Security Center ](/microsoft-365/security/defender-endpoint/use) 
+[Panoramica di Microsoft 365 Defender Portal](/microsoft-365/security/defender-endpoint/use) 

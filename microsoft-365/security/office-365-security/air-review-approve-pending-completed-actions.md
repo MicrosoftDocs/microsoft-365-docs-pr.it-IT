@@ -18,13 +18,13 @@ ms.collection:
 description: Informazioni sulle azioni di correzione nelle funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.date: 01/29/2021
-ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.date: 06/10/2021
+ms.openlocfilehash: 7894a9aa38239bf661c809cce96ea2a2a96c3725
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878773"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904129"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Esaminare e gestire le azioni di correzione in Office 365
 
@@ -52,16 +52,16 @@ Queste azioni di correzione non vengono eseguite a meno che il team delle operaz
    - Selezionare **Approva** per avviare un'azione in sospeso.
    - Selezionare **Rifiuta** per impedire l'esecuzione di un'azione in sospeso.
 
-## <a name="undo-one-remediation-action"></a>Annullare un'azione di correzione
+## <a name="change-or-undo-one-remediation-action"></a>Modificare o annullare un'azione di correzione
 
 1. Vai al centro notifiche ( <https://security.microsoft.com/action-center> ) e accedi.
-2. Nella scheda **Cronologia** selezionare un'azione che si desidera annullare.
+2. Nella scheda **Cronologia** selezionare un'azione che si desidera modificare o annullare.
 3. Nel riquadro sul lato destro dello schermo selezionare **Annulla.**
 
-## <a name="undo-multiple-remediation-actions"></a>Annullare più azioni di correzione
+## <a name="change-or-undo-multiple-remediation-actions"></a>Modificare o annullare più azioni di correzione
 
 1. Vai al centro notifiche ( <https://security.microsoft.com/action-center> ) e accedi.
-2. Nella scheda **Cronologia** selezionare le azioni che si desidera annullare. Assicurarsi di selezionare gli elementi con lo stesso tipo di azione. Verrà visualizzato un riquadro a comparsa.
+2. Nella scheda **Cronologia** selezionare le azioni che si desidera modificare o annullare. Assicurarsi di selezionare gli elementi con lo stesso tipo di azione. Verrà visualizzato un riquadro a comparsa.
 3. Nel riquadro a comparsa selezionare Annulla.
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Per rimuovere un file dalla quarantena su più dispositivi

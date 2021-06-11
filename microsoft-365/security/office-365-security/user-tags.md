@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 Piano 2. Il filtro dei tag è disponibile tra avvisi, report e indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti con tag.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fb948d63f7bc42839d6fae8a2138d4ad48d81f6
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 105e927e50f7b1d1217587587b8d7ee3b7d6bd4c
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879169"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904105"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
@@ -41,7 +41,9 @@ Se l'organizzazione ha Defender per Office 365 Piano 2 (incluso nell'abbonamento
 Dopo aver applicato tag di sistema o tag personalizzati agli utenti, è possibile utilizzare tali tag come filtri in avvisi, report e indagini:
 
 - [Avvisi](alerts.md)
+- [Criteri di avviso personalizzati](../../compliance/alert-policies.md#viewing-alerts)
 - [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md)
+- [Pagina Entità posta elettronica](mdo-email-entity-page.md#other-innovations)
 - [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report)
 - [Visualizzazioni campagna](campaigns.md)
 - Per gli account con priorità, è possibile utilizzare il [report Problemi](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) di posta elettronica per gli account di priorità nell'interfaccia di amministrazione di Exchange (EAC).
@@ -50,9 +52,9 @@ Questo articolo spiega come configurare i tag utente nel portale Microsoft 365 D
 
 Per informazioni su come i tag utente fanno parte della strategia per proteggere gli account utente ad alto [impatto,](security-recommendations-for-priority-accounts.md)vedere Suggerimenti per la sicurezza per gli account con priorità in Microsoft 365 .
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/> . Per passare direttamente alla **pagina Tag** utente, aprire <https://security.microsoft.com/securitysettings/userTags> .
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com/>. Per passare direttamente alla **pagina Tag** utente, aprire <https://security.microsoft.com/securitysettings/userTags> .
 
 - Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni nel portale di Microsoft 365 Defender:
   - Per creare, modificare ed eliminare tag utente, è necessario essere membri dei gruppi **di** ruoli Gestione organizzazione o Amministratore **sicurezza.**

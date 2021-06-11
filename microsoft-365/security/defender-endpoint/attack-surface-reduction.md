@@ -16,16 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 55b06ca25047fe615bd0011528fbdbe5112a4533
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844983"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903853"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
 
@@ -97,7 +95,7 @@ Ogni volta che viene attivata una regola di riduzione della superficie di attacc
 
 Inoltre, quando vengono attivate determinate regole di riduzione della superficie di attacco, vengono generati avvisi.
 
-Le notifiche e gli avvisi generati possono essere visualizzati nel Microsoft Defender Security Center ( ) e nel Centro sicurezza Microsoft 365 [https://securitycenter.windows.com](https://securitycenter.windows.com) sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) ).
+Le notifiche e gli avvisi generati possono essere visualizzati nel portale di Microsoft 365 Defender ( ) (in precedenza [https://security.microsoft.com](https://security.microsoft.com) denominato [Microsoft Defender Security Center](microsoft-defender-security-center.md)).
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Eventi avanzati di ricerca e riduzione della superficie di attacco
 
@@ -116,13 +114,13 @@ Puoi impostare regole di riduzione della superficie di attacco per i dispositivi
 - Windows Server, [versione 1803 (Canale semestraale)](/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Anche se le regole di riduzione della superficie di attacco non richiedono una licenza [Windows E5,](/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](microsoft-defender-endpoint.md)nonché funzionalità di creazione di report e configurazione nel centro sicurezza [Microsoft 365.](/microsoft-365/security/defender/overview-security-center) Queste funzionalità avanzate non sono disponibili con una licenza Windows Professional o Windows E3. Tuttavia, se si dispone di tali licenze, è possibile utilizzare visualizzatore eventi e registri Antivirus Microsoft Defender per esaminare gli eventi delle regole di riduzione della superficie di attacco.
+Anche se le regole di riduzione della superficie di attacco non richiedono una licenza [Windows E5,](/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender per Endpoint,](microsoft-defender-endpoint.md)nonché funzionalità di creazione di report e configurazione in [Microsoft 365 Defender.](/microsoft-365/security/defender/overview-security-center) Queste funzionalità avanzate non sono disponibili con una licenza Windows Professional o Windows E3. Tuttavia, se si dispone di tali licenze, è possibile utilizzare visualizzatore eventi e registri Antivirus Microsoft Defender per esaminare gli eventi delle regole di riduzione della superficie di attacco.
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Esaminare gli eventi di riduzione della superficie di attacco nella Microsoft Defender Security Center
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Esaminare gli eventi di riduzione della superficie di attacco nel portale Microsoft 365 Defender
 
 Defender for Endpoint fornisce report dettagliati per eventi e blocchi nell'ambito di scenari di analisi degli avvisi.
 
-Puoi eseguire query su Defender per i dati dell'endpoint usando [la ricerca avanzata.](advanced-hunting-query-language.md) Se si esegue la modalità [di](audit-windows-defender.md)controllo, è possibile utilizzare la ricerca avanzata per comprendere in che modo le regole di riduzione della superficie di attacco potrebbero influire sull'ambiente.
+Puoi eseguire query su Defender per i dati dell'endpoint in [Microsoft 365 Defender](microsoft-defender-security-center.md) usando la [ricerca avanzata.](advanced-hunting-query-language.md) Se si esegue la modalità [di](audit-windows-defender.md)controllo, è possibile utilizzare la ricerca avanzata per comprendere in che modo le regole di riduzione della superficie di attacco potrebbero influire sull'ambiente.
 
 Ecco una query di esempio:
 
@@ -136,9 +134,13 @@ DeviceEvents
 È possibile esaminare il registro eventi Windows eventi per visualizzare gli eventi generati dalle regole di riduzione della superficie di attacco:
 
 1. Scarica il [pacchetto di valutazione](https://aka.ms/mp7z2w) ed estrai il file *cfa-events.xml* in un percorso facilmente accessibile nel dispositivo.
+
 2. Immetti le parole *Visualizzatore eventi* nel menu Start per aprire il Visualizzatore Windows eventi.
+
 3. In **Azioni** selezionare **Importa visualizzazione personalizzata...**.
+
 4. Selezionare *l'cfa-events.xml* file da cui è stato estratto. In alternativa, [copiare il codice XML direttamente](event-views.md).
+
 5. Selezionare **OK**.
 
 È possibile creare una visualizzazione personalizzata che filtra gli eventi in modo da visualizzare solo gli eventi seguenti, tutti correlati all'accesso controllato alle cartelle:
@@ -503,7 +505,7 @@ Questa regola fornisce un ulteriore livello di protezione contro i ransomware. U
 La regola tende a errare sul lato della cautela per evitare ransomware.
 
 > [!NOTE]
-> Per usare [questa regola, è necessario](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) abilitare la protezione recapitata nel cloud.
+> Per usare [questa regola, è necessario](enable-cloud-protection-microsoft-defender-antivirus.md) abilitare la protezione recapitata nel cloud.
 
 Questa regola è stata introdotta in:
 
@@ -518,9 +520,4 @@ Nome di Configuration Manager: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>Vedere anche
 
-- [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction-faq.md)
-- [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
-- [Valutare le regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
-- [Compatibilità di Antivirus Microsoft Defender con altre soluzioni antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

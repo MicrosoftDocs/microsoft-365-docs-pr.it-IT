@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 73e29109a429d8a3fffc69b79939c8dff7ecb087
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 29d52ea4b40cb876c6e8b314ab2f3b07c3123c05
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769270"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904021"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Illustrazioni di Microsoft cloud per architetti IT
 
@@ -68,7 +68,7 @@ Questa serie di argomenti illustra diversi approcci dell'architettura in materia
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento per le migrazioni da tenant a tenant del cloud Microsoft](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>Aggiornato a febbraio 2021    |Questo modello contiene: <ul><li>Un mapping di scenari da quelli aziendali a quelli dettati dagli approcci dell'architettura</li><li>Considerazioni sulla progettazione</li><li>Esempio di flusso di migrazione di un singolo evento</li><li>Esempio di flusso di migrazione in fasi</li><li>Esempio di spostamento del tenant o del flusso diviso</li></ul>|
+|[![Immagine di scorrimento per le migrazioni da tenant a tenant del cloud Microsoft](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| Aggiornato a febbraio 2021    |Questo modello contiene: <ul><li>Un mapping di scenari da quelli aziendali a quelli dettati dagli approcci dell'architettura</li><li>Considerazioni sulla progettazione</li><li>Esempio di flusso di migrazione di un singolo evento</li><li>Esempio di flusso di migrazione in fasi</li><li>Esempio di spostamento del tenant o del flusso diviso</li></ul>|
 
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Attacchi comuni e funzionalità di Microsoft che proteggono l'organizzazione
