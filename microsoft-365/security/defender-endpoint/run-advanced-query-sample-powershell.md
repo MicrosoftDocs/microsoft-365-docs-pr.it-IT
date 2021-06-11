@@ -24,38 +24,38 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52844887"
 ---
-# <a name="advanced-hunting-using-powershell"></a><span data-ttu-id="2db7f-104">Rilevazione avanzata con PowerShell</span><span class="sxs-lookup"><span data-stu-id="2db7f-104">Advanced Hunting using PowerShell</span></span>
+# <a name="advanced-hunting-using-powershell"></a><span data-ttu-id="3db33-104">Rilevazione avanzata con PowerShell</span><span class="sxs-lookup"><span data-stu-id="3db33-104">Advanced Hunting using PowerShell</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="2db7f-105">**Si applica a:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="2db7f-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="3db33-105">**Si applica a:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="3db33-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-> <span data-ttu-id="2db7f-106">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="2db7f-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="2db7f-107">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="2db7f-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="3db33-106">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="3db33-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="3db33-107">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="3db33-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="2db7f-108">Eseguire query avanzate con PowerShell, vedere [Advanced Hunting API.](run-advanced-query-api.md)</span><span class="sxs-lookup"><span data-stu-id="2db7f-108">Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).</span></span>
+<span data-ttu-id="3db33-108">Eseguire query avanzate con PowerShell, vedere [Advanced Hunting API.](run-advanced-query-api.md)</span><span class="sxs-lookup"><span data-stu-id="3db33-108">Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).</span></span>
 
-<span data-ttu-id="2db7f-109">In questa sezione condividiamo esempi di PowerShell per recuperare un token e usarlo per eseguire una query.</span><span class="sxs-lookup"><span data-stu-id="2db7f-109">In this section, we share PowerShell samples to retrieve a token and use it to run a query.</span></span>
+<span data-ttu-id="3db33-109">In questa sezione condividiamo esempi di PowerShell per recuperare un token e usarlo per eseguire una query.</span><span class="sxs-lookup"><span data-stu-id="3db33-109">In this section, we share PowerShell samples to retrieve a token and use it to run a query.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="2db7f-110">Prima di iniziare</span><span class="sxs-lookup"><span data-stu-id="2db7f-110">Before you begin</span></span>
-<span data-ttu-id="2db7f-111">Devi prima creare [un'app](apis-intro.md).</span><span class="sxs-lookup"><span data-stu-id="2db7f-111">You first need to [create an app](apis-intro.md).</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="3db33-110">Prima di iniziare</span><span class="sxs-lookup"><span data-stu-id="3db33-110">Before you begin</span></span>
+<span data-ttu-id="3db33-111">Devi prima creare [un'app](apis-intro.md).</span><span class="sxs-lookup"><span data-stu-id="3db33-111">You first need to [create an app](apis-intro.md).</span></span>
 
-## <a name="preparation-instructions"></a><span data-ttu-id="2db7f-112">Istruzioni per la preparazione</span><span class="sxs-lookup"><span data-stu-id="2db7f-112">Preparation instructions</span></span>
+## <a name="preparation-instructions"></a><span data-ttu-id="3db33-112">Istruzioni per la preparazione</span><span class="sxs-lookup"><span data-stu-id="3db33-112">Preparation instructions</span></span>
 
-- <span data-ttu-id="2db7f-113">Aprire una finestra di PowerShell.</span><span class="sxs-lookup"><span data-stu-id="2db7f-113">Open a PowerShell window.</span></span>
-- <span data-ttu-id="2db7f-114">Se i criteri non consentono di eseguire i comandi di PowerShell, è possibile eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="2db7f-114">If your policy does not allow you to run the PowerShell commands, you can run the below command:</span></span>
+- <span data-ttu-id="3db33-113">Aprire una finestra di PowerShell.</span><span class="sxs-lookup"><span data-stu-id="3db33-113">Open a PowerShell window.</span></span>
+- <span data-ttu-id="3db33-114">Se i criteri non consentono di eseguire i comandi di PowerShell, è possibile eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="3db33-114">If your policy does not allow you to run the PowerShell commands, you can run the below command:</span></span>
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-><span data-ttu-id="2db7f-115">Per altre informazioni, vedi la [documentazione di PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)</span><span class="sxs-lookup"><span data-stu-id="2db7f-115">For more information, see [PowerShell documentation](/powershell/module/microsoft.powershell.security/set-executionpolicy)</span></span>
+><span data-ttu-id="3db33-115">Per altre informazioni, vedi la [documentazione di PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)</span><span class="sxs-lookup"><span data-stu-id="3db33-115">For more information, see [PowerShell documentation](/powershell/module/microsoft.powershell.security/set-executionpolicy)</span></span>
 
-## <a name="get-token"></a><span data-ttu-id="2db7f-116">Get token</span><span class="sxs-lookup"><span data-stu-id="2db7f-116">Get token</span></span>
+## <a name="get-token"></a><span data-ttu-id="3db33-116">Get token</span><span class="sxs-lookup"><span data-stu-id="3db33-116">Get token</span></span>
 
-- <span data-ttu-id="2db7f-117">Eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="2db7f-117">Run the following:</span></span>
+- <span data-ttu-id="3db33-117">Eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="3db33-117">Run the following:</span></span>
 
 ```
 $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID here
@@ -74,14 +74,14 @@ $response = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $body -ErrorActi
 $aadToken = $response.access_token
 ```
 
-<span data-ttu-id="2db7f-118">dove</span><span class="sxs-lookup"><span data-stu-id="2db7f-118">where</span></span>
-- <span data-ttu-id="2db7f-119">$tenantId: ID del tenant per conto del quale si desidera eseguire la query ( ovvero, la query verrà eseguita sui dati di questo tenant)</span><span class="sxs-lookup"><span data-stu-id="2db7f-119">$tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)</span></span>
-- <span data-ttu-id="2db7f-120">$appId: ID dell'app Azure AD (l'app deve disporre dell'autorizzazione "Esegui query avanzate" per Defender per Endpoint)</span><span class="sxs-lookup"><span data-stu-id="2db7f-120">$appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)</span></span>
-- <span data-ttu-id="2db7f-121">$appSecret: Segreto dell'app Azure AD</span><span class="sxs-lookup"><span data-stu-id="2db7f-121">$appSecret: Secret of your Azure AD app</span></span>
+<span data-ttu-id="3db33-118">dove</span><span class="sxs-lookup"><span data-stu-id="3db33-118">where</span></span>
+- <span data-ttu-id="3db33-119">$tenantId: ID del tenant per conto del quale si desidera eseguire la query ( ovvero, la query verrà eseguita sui dati di questo tenant)</span><span class="sxs-lookup"><span data-stu-id="3db33-119">$tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)</span></span>
+- <span data-ttu-id="3db33-120">$appId: ID dell'app Azure AD (l'app deve disporre dell'autorizzazione "Esegui query avanzate" per Defender per Endpoint)</span><span class="sxs-lookup"><span data-stu-id="3db33-120">$appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)</span></span>
+- <span data-ttu-id="3db33-121">$appSecret: Segreto dell'app Azure AD</span><span class="sxs-lookup"><span data-stu-id="3db33-121">$appSecret: Secret of your Azure AD app</span></span>
 
-## <a name="run-query"></a><span data-ttu-id="2db7f-122">Eseguire query</span><span class="sxs-lookup"><span data-stu-id="2db7f-122">Run query</span></span>
+## <a name="run-query"></a><span data-ttu-id="3db33-122">Eseguire query</span><span class="sxs-lookup"><span data-stu-id="3db33-122">Run query</span></span>
 
-<span data-ttu-id="2db7f-123">Eseguire la query seguente:</span><span class="sxs-lookup"><span data-stu-id="2db7f-123">Run the following query:</span></span>
+<span data-ttu-id="3db33-123">Eseguire la query seguente:</span><span class="sxs-lookup"><span data-stu-id="3db33-123">Run the following query:</span></span>
 
 ```
 $query = 'RegistryEvents | limit 10' # Paste your own query here
@@ -99,35 +99,35 @@ $results = $response.Results
 $schema = $response.Schema
 ```
 
-- <span data-ttu-id="2db7f-124">$results i risultati della query</span><span class="sxs-lookup"><span data-stu-id="2db7f-124">$results contain the results of your query</span></span>
-- <span data-ttu-id="2db7f-125">$schema contiene lo schema dei risultati della query</span><span class="sxs-lookup"><span data-stu-id="2db7f-125">$schema contains the schema of the results of your query</span></span>
+- <span data-ttu-id="3db33-124">$results i risultati della query</span><span class="sxs-lookup"><span data-stu-id="3db33-124">$results contain the results of your query</span></span>
+- <span data-ttu-id="3db33-125">$schema contiene lo schema dei risultati della query</span><span class="sxs-lookup"><span data-stu-id="3db33-125">$schema contains the schema of the results of your query</span></span>
 
-### <a name="complex-queries"></a><span data-ttu-id="2db7f-126">Query complesse</span><span class="sxs-lookup"><span data-stu-id="2db7f-126">Complex queries</span></span>
+### <a name="complex-queries"></a><span data-ttu-id="3db33-126">Query complesse</span><span class="sxs-lookup"><span data-stu-id="3db33-126">Complex queries</span></span>
 
-<span data-ttu-id="2db7f-127">Se si desidera eseguire query complesse (o query su più righe), salvare la query in un file e, anziché la prima riga dell'esempio precedente, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="2db7f-127">If you want to run complex queries (or multilines queries), save your query in a file and, instead of the first line in the above sample, run the below command:</span></span>
+<span data-ttu-id="3db33-127">Se si desidera eseguire query complesse (o query su più righe), salvare la query in un file e, anziché la prima riga dell'esempio precedente, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="3db33-127">If you want to run complex queries (or multilines queries), save your query in a file and, instead of the first line in the above sample, run the below command:</span></span>
 
 ```
 $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to your file
 ```
 
-## <a name="work-with-query-results"></a><span data-ttu-id="2db7f-128">Usare i risultati delle query</span><span class="sxs-lookup"><span data-stu-id="2db7f-128">Work with query results</span></span>
+## <a name="work-with-query-results"></a><span data-ttu-id="3db33-128">Usare i risultati delle query</span><span class="sxs-lookup"><span data-stu-id="3db33-128">Work with query results</span></span>
 
-<span data-ttu-id="2db7f-129">È ora possibile utilizzare i risultati della query.</span><span class="sxs-lookup"><span data-stu-id="2db7f-129">You can now use the query results.</span></span>
+<span data-ttu-id="3db33-129">È ora possibile utilizzare i risultati della query.</span><span class="sxs-lookup"><span data-stu-id="3db33-129">You can now use the query results.</span></span>
 
-<span data-ttu-id="2db7f-130">Per eseguire l'output dei risultati della query in formato CSV in formato file file1.csv eseguire le seguenti operazione:</span><span class="sxs-lookup"><span data-stu-id="2db7f-130">To output the results of the query in CSV format in file file1.csv do the below:</span></span>
+<span data-ttu-id="3db33-130">Per eseguire l'output dei risultati della query in formato CSV in formato file file1.csv eseguire le seguenti operazione:</span><span class="sxs-lookup"><span data-stu-id="3db33-130">To output the results of the query in CSV format in file file1.csv do the below:</span></span>
 
 ```
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-<span data-ttu-id="2db7f-131">Per eseguire l'output dei risultati della query in formato JSON in file1.jsfile, eseguire le seguenti operazione:</span><span class="sxs-lookup"><span data-stu-id="2db7f-131">To output the results of the query in JSON format in file file1.json do the below:</span></span>
+<span data-ttu-id="3db33-131">Per eseguire l'output dei risultati della query in formato JSON in file1.jsfile, eseguire le seguenti operazione:</span><span class="sxs-lookup"><span data-stu-id="3db33-131">To output the results of the query in JSON format in file file1.json do the below:</span></span>
 
 ```
 $results | ConvertTo-Json | Set-Content file1.json
 ```
 
 
-## <a name="related-topic"></a><span data-ttu-id="2db7f-132">Argomento correlato</span><span class="sxs-lookup"><span data-stu-id="2db7f-132">Related topic</span></span>
-- [<span data-ttu-id="2db7f-133">API di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="2db7f-133">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
-- [<span data-ttu-id="2db7f-134">Rilevazione avanzata API</span><span class="sxs-lookup"><span data-stu-id="2db7f-134">Advanced Hunting API</span></span>](run-advanced-query-api.md)
-- [<span data-ttu-id="2db7f-135">Rilevazione avanzata con Python</span><span class="sxs-lookup"><span data-stu-id="2db7f-135">Advanced Hunting using Python</span></span>](run-advanced-query-sample-python.md)
+## <a name="related-topic"></a><span data-ttu-id="3db33-132">Argomento correlato</span><span class="sxs-lookup"><span data-stu-id="3db33-132">Related topic</span></span>
+- [<span data-ttu-id="3db33-133">API di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="3db33-133">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
+- [<span data-ttu-id="3db33-134">Rilevazione avanzata API</span><span class="sxs-lookup"><span data-stu-id="3db33-134">Advanced Hunting API</span></span>](run-advanced-query-api.md)
+- [<span data-ttu-id="3db33-135">Rilevazione avanzata con Python</span><span class="sxs-lookup"><span data-stu-id="3db33-135">Advanced Hunting using Python</span></span>](run-advanced-query-sample-python.md)
