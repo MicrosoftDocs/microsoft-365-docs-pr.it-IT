@@ -38,7 +38,7 @@ landingContent:
     links:
     - text: Trasferire un dominio da Microsoft a un altro host
       url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host
-- title: Pilota di Microsoft 365
+- title: Pilota Microsoft 365
   linkLists:
   - linkListType: how-to-guide
     links:

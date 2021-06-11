@@ -19,26 +19,26 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295916"
 ---
-# <a name="contact-support-for-liechtenstein"></a><span data-ttu-id="98026-103">Contattare il supporto per liechtenstein</span><span class="sxs-lookup"><span data-stu-id="98026-103">Contact support for Liechtenstein</span></span>
+# <a name="contact-support-for-liechtenstein"></a><span data-ttu-id="c4027-103">Contattare il supporto per liechtenstein</span><span class="sxs-lookup"><span data-stu-id="c4027-103">Contact support for Liechtenstein</span></span>
 
-<span data-ttu-id="98026-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="98026-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="c4027-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c4027-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="98026-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="98026-105">Phone number</span></span>
-<span data-ttu-id="98026-106">+41 800 000 300</span><span class="sxs-lookup"><span data-stu-id="98026-106">+41 800 000 300</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c4027-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="c4027-105">Phone number</span></span>
+<span data-ttu-id="c4027-106">+41 800 000 300</span><span class="sxs-lookup"><span data-stu-id="c4027-106">+41 800 000 300</span></span>
 
-## <a name="hours"></a><span data-ttu-id="98026-107">Ore</span><span class="sxs-lookup"><span data-stu-id="98026-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="98026-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="98026-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c4027-107">Ore</span><span class="sxs-lookup"><span data-stu-id="c4027-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c4027-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="c4027-108">Billing Support:</span></span>
 
-<span data-ttu-id="98026-109">Tedesco: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="98026-109">German: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c4027-109">Tedesco: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="c4027-109">German: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="98026-110">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="98026-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c4027-110">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="c4027-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="98026-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="98026-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c4027-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="c4027-111">Technical Support:</span></span>
 
-<span data-ttu-id="98026-112">Tedesco: Mon-Fri dalle 8.00 alle 21.00</span><span class="sxs-lookup"><span data-stu-id="98026-112">German: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="c4027-112">Tedesco: Mon-Fri dalle 8.00 alle 21.00</span><span class="sxs-lookup"><span data-stu-id="c4027-112">German: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="98026-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="98026-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c4027-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="c4027-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="98026-114">Numero Telefono alternativo: +41 22 76 141 14</span><span class="sxs-lookup"><span data-stu-id="98026-114">Alternative Phone Number: +41 22 76 141 14</span></span>
+<span data-ttu-id="c4027-114">Numero Telefono alternativo: +41 22 76 141 14</span><span class="sxs-lookup"><span data-stu-id="c4027-114">Alternative Phone Number: +41 22 76 141 14</span></span>
 
-<span data-ttu-id="98026-115">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="98026-115">Local call charges apply</span></span>
+<span data-ttu-id="c4027-115">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="c4027-115">Local call charges apply</span></span>

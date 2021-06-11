@@ -19,24 +19,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295760"
 ---
-# <a name="contact-support-for-mayotte"></a><span data-ttu-id="579ed-103">Contattare il supporto per Mayotte</span><span class="sxs-lookup"><span data-stu-id="579ed-103">Contact support for Mayotte</span></span>
+# <a name="contact-support-for-mayotte"></a><span data-ttu-id="3bd09-103">Contattare il supporto per Mayotte</span><span class="sxs-lookup"><span data-stu-id="3bd09-103">Contact support for Mayotte</span></span>
 
-<span data-ttu-id="579ed-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="579ed-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="3bd09-104">[Trova un altro paese o area geografica](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="3bd09-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="579ed-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="579ed-105">Phone number</span></span>
-<span data-ttu-id="579ed-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="579ed-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="3bd09-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="3bd09-105">Phone number</span></span>
+<span data-ttu-id="3bd09-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="3bd09-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="579ed-107">Ore</span><span class="sxs-lookup"><span data-stu-id="579ed-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="579ed-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="579ed-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="3bd09-107">Ore</span><span class="sxs-lookup"><span data-stu-id="3bd09-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="3bd09-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="3bd09-108">Billing Support:</span></span>
 
-<span data-ttu-id="579ed-109">Francese: Mon-Fri dalle 11.00 alle 19.00</span><span class="sxs-lookup"><span data-stu-id="579ed-109">French: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="3bd09-109">Francese: Mon-Fri dalle 11.00 alle 19.00</span><span class="sxs-lookup"><span data-stu-id="3bd09-109">French: Mon-Fri 11 AM-7 PM</span></span>
 
-<span data-ttu-id="579ed-110">Inglese: Mon-Fri 11.00-19.00</span><span class="sxs-lookup"><span data-stu-id="579ed-110">English: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="3bd09-110">Inglese: Mon-Fri 11.00-19.00</span><span class="sxs-lookup"><span data-stu-id="3bd09-110">English: Mon-Fri 11 AM-7 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="579ed-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="579ed-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="3bd09-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="3bd09-111">Technical Support:</span></span>
 
-<span data-ttu-id="579ed-112">Francese: Mon-Fri 10.00-23.00</span><span class="sxs-lookup"><span data-stu-id="579ed-112">French: Mon-Fri 10 AM-11 PM</span></span>
+<span data-ttu-id="3bd09-112">Francese: Mon-Fri 10.00-23.00</span><span class="sxs-lookup"><span data-stu-id="3bd09-112">French: Mon-Fri 10 AM-11 PM</span></span>
 
-<span data-ttu-id="579ed-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="579ed-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="3bd09-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="3bd09-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="579ed-114">Si applicano i costi delle chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="579ed-114">International call charges apply</span></span>
+<span data-ttu-id="3bd09-114">Si applicano i costi delle chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="3bd09-114">International call charges apply</span></span>
