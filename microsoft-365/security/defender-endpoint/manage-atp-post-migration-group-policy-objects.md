@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 15902e02156c59ec4edaed94f4ba321094bd42ac
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ce204c1a90e57a651cf9c97974a8b35d405878cc
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843023"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908293"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Gestire Microsoft Defender per Endpoint con oggetti Criteri di gruppo
 
@@ -61,9 +61,7 @@ Nella tabella seguente sono elencate le varie attività che è possibile eseguir
 
 ## <a name="configure-your-microsoft-defender-security-center"></a>Configurare il Microsoft Defender Security Center
 
-Se non è già stato fatto, configurare il **Microsoft Defender Security Center** ( ) per visualizzare gli avvisi, configurare le funzionalità di protezione dalle minacce e visualizzare informazioni dettagliate sulla sicurezza complessiva [https://securitycenter.windows.com](https://securitycenter.windows.com) dell'organizzazione. 
-
-È inoltre possibile configurare se e quali funzionalità gli utenti finali possono visualizzare nella Microsoft Defender Security Center.
+Se non l'hai già fatto, configura il portale di Microsoft 365 Defender per visualizzare gli avvisi, configurare le funzionalità di protezione dalle minacce e visualizzare informazioni dettagliate sulla sicurezza complessiva dell'organizzazione. Vedere [Microsoft Defender Security Center](microsoft-defender-security-center.md). Puoi anche configurare se e quali funzionalità possono essere visualizzati dagli utenti finali nel portale Microsoft 365 Defender.
 
 - [Panoramica della Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
 

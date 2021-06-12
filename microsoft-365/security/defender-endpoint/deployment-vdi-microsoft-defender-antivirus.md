@@ -10,22 +10,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/28/2020
+ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ce200ca12bacc3ae8d9f7b48d36274ca54322586
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275253"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908030"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guida alla distribuzione di Microsoft Defender Antivirus in un ambiente VDI (Virtual Desktop Infrastructure)
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Si applica a:**
 
@@ -175,7 +172,7 @@ A volte, Antivirus Microsoft Defender notifiche possono essere inviate o mantenu
 
 4. Distribuire l'oggetto Criteri di gruppo come di consueto.
 
-L'eliminazione delle notifiche impedisce Antivirus Microsoft Defender notifiche di essere visualizzate nel centro notifiche in Windows 10 quando vengono eseguite analisi o vengono eseguite azioni di correzione. Tuttavia, il team delle operazioni di sicurezza visualizza i risultati dell'analisi nel Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+L'eliminazione delle notifiche impedisce Antivirus Microsoft Defender notifiche di essere visualizzate nel centro notifiche in Windows 10 quando vengono eseguite analisi o vengono eseguite azioni di correzione. Tuttavia, il team delle operazioni di sicurezza visualizza i risultati dell'analisi [nel portale Microsoft 365 Defender.](microsoft-defender-security-center.md)
 
 > [!TIP]
 > Per aprire il Centro notifiche in Windows 10, eseguire una delle operazioni seguenti:

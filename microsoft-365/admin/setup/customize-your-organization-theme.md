@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Informazioni su come modificare il tema predefinito per la parte superiore della barra di spostamento in Microsoft 365 e personalizzarlo in base al logo o al colore della società.
-ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841307"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908162"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
@@ -59,7 +59,7 @@ Il tema predefinito è il primo tema visualizzato.
 
 1. Se in precedenza è stato personalizzato un tema per l'organizzazione, selezionare **Tema** predefinito e utilizzare una delle personalizzazioni salvate oppure selezionare **Aggiungi tema.**
 2. Nella pagina **Generale** è possibile impedire agli utenti di ignorare il tema e visualizzare il nome visualizzato dell'utente.
-3. Selezionare **Salva** per salvare le modifiche.  
+3. Seleziona **Salva** per salvare le modifiche.  
 
 > [!IMPORTANT]
 > Il tema predefinito è univoco, non può essere rinominato e si applica a tutti gli utenti dell'organizzazione. Per eliminare il tema predefinito, è necessario eliminare prima tutti gli altri temi.
@@ -74,7 +74,7 @@ Puoi creare fino a quattro temi di gruppo aggiuntivi.
 
 2. In **Gruppi** puoi selezionare fino a 5 Microsoft 365 che possono visualizzare il tema del gruppo, anziché usare il tema predefinito. Puoi anche impedire agli utenti di ignorare il tema e mostrare il nome visualizzato dell'utente.
 
-3. Selezionare **Salva**.
+3. Seleziona **Salva**.
 
 :::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: Scheda Generale che mostra il tema predefinito per un gruppo di utenti nell'organizzazione":::
 
@@ -86,9 +86,12 @@ Nella pagina **Logo puoi** aggiungere i logo e specificare l'URL a cui gli utent
 - **Logo alternativo:** aggiungere un percorso URL che punti al logo. Il logo alternativo deve essere ottimizzato per l'uso in Office temi scuri. Stessi requisiti del logo predefinito.
 - **Collegamento al clic:** aggiungere una posizione URL che punti al logo. È possibile utilizzare il logo come collegamento a qualsiasi risorsa aziendale, ad esempio il sito Web dell'azienda.
 
-Selezionare **Salva** per salvare le modifiche.
+Seleziona **Salva** per salvare le modifiche.
 
 È possibile rimuovere i logo in qualsiasi momento. Torna alla pagina **Logos** e seleziona **Rimuovi.**
+
+> [!NOTE]
+> Per impostazione predefinita, vengono innanzitutto mostrate le selezioni di logo utilizzate dalla maggior parte delle organizzazioni. L'opzione di caricamento è applicabile solo ai temi predefiniti e non ai temi di gruppo.
   
 ## <a name="colors-choose-theme-colors"></a>Colori: scegliere i colori del tema
 

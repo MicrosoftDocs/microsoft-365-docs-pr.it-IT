@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 05/08/2021
+ms.date: 06/11/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 86bb27005365b625ee07feaa067c0ac488c3bb4b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302041"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908342"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Rilevamento e risposta degli endpoint (EDR) in modalità blocco
 
@@ -62,7 +62,7 @@ L'immagine seguente mostra un'istanza di software indesiderato rilevato e blocca
 > [!IMPORTANT]
 > Assicurati che i [requisiti siano](#requirements-for-edr-in-block-mode) soddisfatti prima di attivare EDR in modalità blocco.
 
-1. Vai al Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e accedi. 
+1. Passare al portale [Microsoft 365 Defender ed](microsoft-defender-security-center.md) eseguire l'accesso. 
 
 2. Scegliere **Impostazioni**  >  **funzionalità avanzate.**
 
