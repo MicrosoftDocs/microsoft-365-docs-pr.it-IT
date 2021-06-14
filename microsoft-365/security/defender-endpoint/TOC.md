@@ -273,7 +273,10 @@
 #### [Rilevare e bloccare applicazioni potenzialmente indesiderate](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [Abilitare e configurare la protezione sempre attiva di Microsoft Defender Antivirus in Criteri di gruppo](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Configurare la correzione per i rilevamenti di Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md)
-#### [Configurare analisi pianificate rapide o complete di Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+#### [Configurare l’analisi di Microsoft Defender Antivirus](schedule-antivirus-scans.md)
+##### [Pianificare l’analisi antivirus con Criteri di gruppo](schedule-antivirus-scans-group-policy.md)
+##### [Pianificare l’analisi antivirus con PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Pianificare l’analisi antivirus con Strumentazione gestione Windows (WMI)](schedule-antivirus-scans-wmi.md)
 #### [Usare analisi periodiche limitate in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibilità con altri prodotti per la sicurezza](microsoft-defender-antivirus-compatibility.md)
 
@@ -468,6 +471,8 @@
 ###### [Ottenere l'accesso con il contesto delle applicazioni](exposed-apis-create-app-webapp.md)
 ###### [Ottenere l'accesso con il contesto utente](exposed-apis-create-app-nativeapp.md)
 ###### [Ottenere l'accesso alle applicazioni partner](exposed-apis-create-app-partners.md)
+
+
 ##### [Schema API Microsoft Defender per Endpoint]()
 ###### [Accedere a API di Microsoft Defender per endpoint](exposed-apis-list.md)
 ###### [Codici di errore API REST comuni](common-errors.md)
@@ -520,6 +525,7 @@
 ####### [Ottenere avvisi correlati agli IP](get-ip-related-alerts.md)
 ####### [Ottenere statistiche sugli IP](get-ip-statistics.md)
 
+
 ###### [Computer]()
 ####### [Metodi e proprietà dei computer](machine.md)
 ####### [Elencare i computer](get-machines.md)
@@ -535,19 +541,23 @@
 ####### [Recuperare i KB mancanti](get-missing-kbs-machine.md)
 ####### [Impostare un valore del dispositivo](set-device-value.md)
 
+
 ###### [Azione computer]()
 ####### [Metodi e proprietà di azioni dei computer](machineaction.md)
 ####### [Elenca azioni computer](get-machineactions-collection.md)
 ####### [Ottieni azione dei computer](get-machineaction-object.md)
 ####### [Raccogliere un pacchetto di indagini](collect-investigation-package.md)
 ####### [Ottenere un pacchetto di indagini SAS URI](get-package-sas-uri.md)
+####### [Risultato di risposta in temo reale](get-live-response-result.md)
 ####### [Isolare un computer](isolate-machine.md)
 ####### [Rilasciare un computer dall'isolamento](unisolate-machine.md)
 ####### [Limitare l'esecuzione dell'app](restrict-code-execution.md)
 ####### [Rimuovere la restrizione dell'app](unrestrict-code-execution.md)
 ####### [Eseguire ricerca del virus](run-av-scan.md)
+####### [Eseguire risposta in tempo reale](run-live-response.md) 
 ####### [Dispositivo offboard](offboard-machine-api.md)
 ####### [Arrestare e mettere in quarantena un file](stop-and-quarantine-file.md)
+####### [Annullare azione dei computer](cancel-machine-action.md)
 
 ###### [Consiglio]()
 ####### [Metodi e proprietà di consiglio](recommendation.md)

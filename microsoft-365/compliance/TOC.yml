@@ -566,6 +566,8 @@
               href: configure-edge-to-export-search-results.md
             - name: Modificare in blocco più ricerche di contenuti
               href: bulk-edit-content-searches.md
+            - name: Cercare le attività di eDiscovery nel log di controllo
+              href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: Script di PowerShell per la ricerca contenuto
           items:
             - name: Usare la ricerca contenuto per le raccolte di destinazione
