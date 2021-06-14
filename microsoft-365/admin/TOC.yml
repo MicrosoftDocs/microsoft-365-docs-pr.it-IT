@@ -75,13 +75,13 @@
         - name: Informazioni su Office 365 gestito da 21Vianet
           href: services-in-china/services-in-china.md
         - name: Acquistare o provare abbonamenti
-          href: services-in-china/buy-or-try-subscriptions.md
+          href: ../commerce/try-or-buy-microsoft-365.md?view=o365-21vianet
         - name: Scaricare l'app di Office per Android per Office 365 gestito da 21Vianet
           href: services-in-china/download-office-app-for-Android.md
         - name: Scaricare l'app di Office per iOS per Office 365 gestito da 21Vianet
           href: services-in-china/download-office-app-for-iOS.md
         - name: Visualizzare la fattura o un Fapiao
-          href: services-in-china/view-your-bill-or-get-a-fapiao.md
+          href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md?view=o365-21vianet
         - name: Richiedere un Fapiao
           href: services-in-china/apply-for-a-fapiao.md
         - name: Supporto di Azure Information Protection

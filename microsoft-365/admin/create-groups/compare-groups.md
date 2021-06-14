@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: I membri di un gruppo di Microsoft 365 ottengono un indirizzo e-mail di gruppo e un'area di lavoro condivisa per conversazioni, file ed eventi del calendario, Stream e un Planner.
-ms.openlocfilehash: 3e4fa36520247179b653f799f7b2a061b9d9f4a9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635595"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903841"
 ---
 # <a name="compare-groups"></a>Confrontare i gruppi
 
@@ -89,7 +89,7 @@ Le cassette postali condivise includono un calendario che può essere usato per 
 
 Gli utenti che dispongono delle autorizzazioni per la cassetta postale del gruppo possono inviare o inviare per conto dell'indirizzo di posta elettronica della cassetta postale, se l'amministratore ha concesso tali autorizzazioni. Questa funzione è particolarmente utile per le cassette postali dell'assistenza e del supporto, perché gli utenti possono inviare messaggi di posta elettronica dal "supporto tecnico Contoso" o dalla "reception dell'edificio A".
 
-Attualmente non è possibile eseguire la migrazione di una cassetta postale condivisa a un gruppo di Microsoft 365. L'argomento trattato è interessante? Grazie per la segnalazione. **[Votare qui](https://go.microsoft.com/fwlink/?linkid=871518)**
+Non è possibile eseguire la migrazione di una cassetta postale condivisa a un gruppo di Microsoft 365. 
 
 ## <a name="related-content"></a>Contenuto correlato
 

@@ -265,7 +265,7 @@
         - name: Durante e dopo lo spostamento dati
           href: during-and-after-your-data-move.md
         - name: Domande frequenti sullo spostamento dati
-          href: data-move-faq.md
+          href: data-move-faq.yml
         - name: Dove vengono archiviati i dati dei clienti
           href: o365-data-locations.md
         - name: Posizioni dei dati per l'Unione europea

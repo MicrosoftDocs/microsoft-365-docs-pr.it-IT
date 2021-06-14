@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendere il numero massimo di criteri ed elementi per criterio in relazione ai criteri di conservazione e ai criteri per le etichette di conservazione
-ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878053"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908102"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limiti per i criteri di conservazione e i criteri per le etichette di conservazione
 
@@ -37,7 +37,7 @@ Un tenant singolo può avere al massimo 10.000 criteri (con qualsiasi configuraz
 
 Nel limite di 10.000 criteri, sono presente anche alcuni limiti al numero massimo di criteri di conservazione per carico di lavoro:
 
-- Exchange Online (con qualsiasi configurazione): 1.800
+- Exchange (con qualsiasi configurazione): 1.800
 - SharePoint o OneDrive (tutti i siti inclusi automaticamente): 13
 - SharePoint o OneDrive (specifici percorsi inclusi o esclusi): 2.600
 
@@ -49,10 +49,16 @@ Se si utilizza la configurazione facoltativa per restringere l'ambito delle impo
 
 Numero massimo di elementi per criterio di conservazione:
 
-  - 1.000 cassette postali (degli utenti o di gruppo)
-  - 1.000 gruppi di Microsoft 365
-  - 1.000 utenti per le chat private di Teams
-  - 100 siti (OneDrive o SharePoint)
+- Cassette postali di Exchange: 1.000
+- Gruppi di Microsoft 365: 1.000
+- Messaggi del canale di Teams: 1.000
+- Chat di Teams: 1.000
+- Messaggi della community di Yammer: 1.000
+- Messaggi utente di Yammer: 1.000
+- Siti di SharePoint: 100
+- Account di OneDrive: 100
+
+L'ambito di Skype for Business è definito per utenti specifici e il numero massimo supportato per criterio è 1.000.
 
 Poiché queste limitazioni sono stabilite per criterio, se è necessario usare specifiche inclusioni o esclusioni che determinano un superamento di tali limiti, è possibile creare altri criteri con le stesse impostazioni di conservazione. Vedere la sezione successiva per alcuni[scenari e soluzioni di esempio](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) che usano più criteri di conservazione per tale ragione.
 
@@ -91,4 +97,4 @@ Per l'[eliminazioni di contenuti](disposition.md), sono previsti alcuni limiti d
 
 - Prova dell'eliminazione fino a sette anni in seguito all'eliminazione dell'elemento, con un limite di 1.000.000 elementi per etichetta di conservazione per il periodo specifico. 
     
-    Se si necessita di una prova di eliminazione superiore a questo limite di 1.000.000 per gli elementi contrassegnati come record, contattare il [supporto tecnico Microsoft](../business-video/get-help-support.md).
+Se si necessita di una prova di eliminazione superiore a questo limite di 1.000.000 per gli elementi contrassegnati come record, contattare il [supporto tecnico Microsoft](../business-video/get-help-support.md).

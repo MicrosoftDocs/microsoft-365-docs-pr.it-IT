@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: 607fbdd02cfaccfee79df67c4946c178ff3eb383
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861576"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908270"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -44,9 +44,6 @@ Per altri carichi di lavoro, vedere:
 ## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
 
 Usando i criteri di conservazione per Teams è possibile eliminare i messaggi di chat e i messaggi di canale di Teams. Per motivi di conformità è possibile conservare, oltre al testo nei messaggi, i seguenti elementi: immagini incorporate, tabelle, collegamenti ipertestuali e collegamenti ad altri messaggi e file di Teams nonché il [contenuto della scheda](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Nei messaggi di chat sono inclusi tutti i nomi degli utenti presenti in chat e nei messaggi dei canali sono inclusi il nome del team e il titolo del messaggio (se disponibile). 
-
-> [!NOTE]
-> L'inclusione del contenuto della scheda in un criterio di conservazione per Teams è un'aggiunta abbastanza recente. Per altre informazioni vedere [Funzionalità di conformità di Microsoft 365 ora disponibili per il contenuto delle schede adattive tramite le app in Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 I messaggi di Teams nei canali privati non sono attualmente supportati per i criteri di conservazione. Quando si usano i criteri di conservazione per Teams, non vengono conservati frammenti di codice, memo vocali registrati dal client per dispositivi mobili di Teams, anteprime, immagini di annunci e reazioni di altri utenti sotto forma di emoticon.
 
@@ -71,7 +68,7 @@ Teams usa un servizio di chat con tecnologia Azure come risorsa di archiviazione
 Anche se i dati delle chat e dei messaggi di canale di Teams vengono archiviati nelle cassette postali, è necessario configurare un criterio di conservazione per le posizioni dei **messaggi del canale di Teams** e delle **chat di Teams**. Le chat e i messaggi di canale di Teams non sono inclusi nei criteri di conservazione configurati per le cassette postali di utenti o gruppi di Exchange.
 
 > [!NOTE]
-> Se un utente è incluso in un criterio di conservazione attivo che conserva i messaggi di Teams e si eliminata una cassetta postale di un utente incluso in tale criterio, per conservare i dati di Teams la cassetta postale viene convertita in una [cassetta postale inattiva](inactive-mailboxes-in-office-365.md). Se non è necessario conservare i dati di Teams per l'utente, escludere l'account utente dal criterio di conservazione prima di eliminare la relativa cassetta postale.
+> Se un utente è incluso in un criterio di conservazione attivo che conserva i messaggi di Teams e elimini una cassetta postale di un utente incluso in tale criterio, per conservare i dati di Teams la cassetta postale viene convertita in una [cassetta postale inattiva](inactive-mailboxes-in-office-365.md). Se non è necessario conservare i dati di Teams per l'utente, escludere l'account utente dal criterio di conservazione prima di eliminare la relativa cassetta postale.
 
 Dopo che i criteri di conservazione sono stati configurati per messaggi di chat e canali, un processo timer del servizio Exchange valuterà periodicamente gli elementi nella cartella nascosta in cui vengono archiviati i messaggi di Teams. L'esecuzione del processo timer richiede in genere da 1 a 7 giorni. Quando il periodo di conservazione degli elementi scade, questi vengono spostati nella cartella SubstrateHolds, un'altra cartella nascosta presente in ogni cassetta postale utente o di gruppo in cui vengono archiviati gli elementi "eliminati temporaneamente" prima che vengano eliminati definitivamente. 
 

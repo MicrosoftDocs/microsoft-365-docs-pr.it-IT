@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: I ruoli di amministratore, quale Amministratore dei servizi, sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione.
-ms.openlocfilehash: 68a5c92faa6f5cdbbd56678649441a45a600ed04
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809036"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908054"
 ---
 # <a name="about-admin-roles"></a>Informazioni sui ruoli di amministratore
 
@@ -100,4 +100,5 @@ Prima che il partner possa assegnare questi ruoli agli utenti, è necessario agg
 
 [Assegnare ruoli di amministratore](assign-admin-roles.md) (articolo)\
 [Ruoli di Azure AD nell'interfaccia di amministrazione di Microsoft 365](azure-ad-roles-in-the-mac.md) (articolo)\
-[Ruolo di amministratore di Exchange Online](about-exchange-online-admin-role.md) (articolo)\ [Report sulle attività nell'interfaccia di amministrazione di Microsoft 365](../activity-reports/activity-reports.md) (articolo)
+[Report sulle attività nell'interfaccia di amministrazione di Microsoft 365](../activity-reports/activity-reports.md) (articolo)\
+[Ruolo di amministratore di Exchange Online](about-exchange-online-admin-role.md) (articolo)
