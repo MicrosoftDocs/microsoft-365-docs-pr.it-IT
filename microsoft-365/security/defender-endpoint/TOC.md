@@ -52,7 +52,7 @@
 
 ## [Configurare ed aggiungere dispositivi]()
 ### [Microsoft Defender per Endpoint su Windows e Server Windows]()
-#### [Aggiungere dispositivi a Microsoft Defender for Endpoint](onboard-configure.md)
+#### [Aggiungere dispositivi a Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Aggiungere versioni precedenti di Windows](onboard-downlevel.md)
 #### [Aggiungere di dispositivi Windows 10]()
 ##### [Aggiungere strumenti e metodi](configure-endpoints.md)
@@ -174,7 +174,7 @@
 
 ### [Risolvere i problemi di onboarding]()
 #### [Risolvere i problemi durante l'onboarding](troubleshoot-onboarding.md)
-#### [Risoluzione dei problemi relativi all’abbonamento e all’accesso al portale](troubleshoot-onboarding-error-messages.md).
+#### [Risoluzione dei problemi relativi all’abbonamento e all’accesso al portale](troubleshoot-onboarding-error-messages.md)
 
 
 
@@ -196,9 +196,9 @@
 #### [Regole]()
 ##### [Gestire le regole di eliminazione](manage-suppression-rules.md)
 ##### [Creare indicatori](manage-indicators.md)
-###### [Creare indicatori per file](indicator-file.md).
+###### [Creare indicatori per file](indicator-file.md)
 ###### [Creare indicatori per IP e URL/domini](indicator-ip-domain.md)
-###### [Creare indicatori per certificati](indicator-certificates.md).
+###### [Creare indicatori per certificati](indicator-certificates.md)
 ###### [Gestire indicatori](indicator-manage.md)
 ##### [Gestire il caricamento di file di automazione](manage-automation-file-uploads.md)
 ##### [Gestione le esclusioni delle cartelle di automazione](manage-automation-folder-exclusions.md)
@@ -212,7 +212,7 @@
 #### [Configurare le impostazioni del fuso orario del Microsoft Defender Security Center](time-settings.md)
 
 ## [Rilevare le minacce e proteggere gli endpoints]()
-### [Gestione di minacce e vulnerabilità.]()
+### [Gestione di minacce e vulnerabilità]()
 #### [Panoramica](next-gen-threat-and-vuln-mgt.md)
 #### [Introduzione]()
 ##### [Autorizzazioni e prerequisiti](tvm-prerequisites.md)
@@ -220,12 +220,12 @@
 ##### [Assegnare un valore del dispositivo](tvm-assign-device-value.md)
 #### [Valutazione del profilo di sicurezza]()
 ##### [Dashboard Dati analitici](tvm-dashboard-insights.md)
-##### [Punteggio di esposizione.](tvm-exposure-score.md)
+##### [Punteggio di esposizione](tvm-exposure-score.md)
 ##### [Punteggio di sicurezza Microsoft per dispositivi](tvm-microsoft-secure-score-devices.md)
 #### [Migliorare le impostazioni di sicurezza e ridurre i rischi]()
-##### [Indirizza raccomandazioni di sicurezza.](tvm-security-recommendation.md)
+##### [Indirizza raccomandazioni di sicurezza](tvm-security-recommendation.md)
 ##### [Correggere le vulnerabilità](tvm-remediation.md)
-##### [Eccezioni alle raccomandazioni di sicurezza.](tvm-exception.md)
+##### [Eccezioni alle raccomandazioni di sicurezza](tvm-exception.md)
 ##### [Pianificare la fine del software di supporto](tvm-end-of-support-software.md)
 ##### [Attenuare le vulnerabilità degli attacchi zero-day](tvm-zero-day-vulnerabilities.md)
 #### [Capire le vulnerabilità nei dispositivi]()
@@ -321,7 +321,7 @@
 ##### [Risolvere i problemi relativi a Microsoft Defender Antivirus durante la migrazione da una soluzione di terze parti](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
 
-#### [Isolamento basato su hardware.]()
+#### [Isolamento basato su hardware]()
 ##### [Isolamento basato su hardware in Windows 10](overview-hardware-based-isolation.md)
 
 #### [Protezione dagli exploit]()
@@ -390,7 +390,7 @@
 ##### [Esaminare i dispositivi](investigate-machines.md)
 ##### [Esaminare un indirizzo IP](investigate-ip.md)
 ##### [Esaminare un dominio](investigate-domain.md)
-###### [Esaminare gli eventi di connessione che si verificano dietro i proxy di inoltro](investigate-behind-proxy.md).
+###### [Esaminare gli eventi di connessione che si verificano dietro i proxy di inoltro](investigate-behind-proxy.md)
 ##### [Esaminare un account utente](investigate-user.md)
  
 #### [Elenco dispositivi]()
@@ -403,7 +403,7 @@
 ###### [Azioni di risposta su dispositivi](respond-machine-alerts.md)
 ###### [Gestire i tag](respond-machine-alerts.md#manage-tags)
 ###### [Avviare un’indagine automatica](respond-machine-alerts.md#initiate-automated-investigation)
-###### [Avviare una sessione di risposta in tempo reale.](respond-machine-alerts.md#initiate-live-response-session)
+###### [Avviare una sessione di risposta in tempo reale](respond-machine-alerts.md#initiate-live-response-session)
 ###### [Raccogliere un pacchetto di indagini](respond-machine-alerts.md#collect-investigation-package-from-devices)
 ###### [Eseguire ricerca del virus](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices)
 ###### [Limitare l'esecuzione dell'app](respond-machine-alerts.md#restrict-app-execution)
@@ -459,21 +459,21 @@
 ## Riferimenti
 ### [Configurare l’integrazione con altre soluzioni Microsoft]()
 #### [Configurare l’accesso condizionale](configure-conditional-access.md)
-#### [Configurare l'integrazione di Microsoft Cloud App Security.](microsoft-cloud-app-security-config.md)
+#### [Configurare l'integrazione di Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)
 ### [Gestione e API]()
 #### [Panoramica di gestione e API](management-apis.md)
 #### [Note sulla versione dell'API](api-release-notes.md)
 #### [API Microsoft Defender per endpointI]()
 ##### [Introduzione]()
-###### [Licenza e termini per API di Microsoft Defender for Endpoint](api-terms-of-use.md)
-###### [Accedere a API di Microsoft Defender per endpoint .](apis-intro.md)
+###### [Licenza e termini per API di Microsoft Defender for Endpoint](api-terms-of-use.md)
+###### [Accedere a API di Microsoft Defender per endpoint](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Ottenere l'accesso con il contesto delle applicazioni](exposed-apis-create-app-webapp.md)
 ###### [Ottenere l'accesso con il contesto utente](exposed-apis-create-app-nativeapp.md)
 ###### [Ottenere l'accesso alle applicazioni partner](exposed-apis-create-app-partners.md)
 
 
-##### [Schema API Microsoft Defender per Endpoint]()
+##### [Schema API Microsoft Defender per Endpoint]()
 ###### [Accedere a API di Microsoft Defender per endpoint](exposed-apis-list.md)
 ###### [Codici di errore API REST comuni](common-errors.md)
 ###### [Rilevazione avanzata](run-advanced-query-api.md)
@@ -619,7 +619,7 @@
 ##### [Informazioni sui diversi modi per eseguire il pull dei rilevamenti](configure-siem.md)
 ##### [Abilitare integrazione SIEM](enable-siem-integration.md)
 ##### [Configurare Micro Focus ArcSight per il pull dei rilevamenti](configure-arcsight.md)
-##### [Campi di rilevamento di Microsoft Defender for Endpoint ](api-portal-mapping.md)
+##### [Campi di rilevamento di Microsoft Defender for Endpoint ](api-portal-mapping.md)
 ##### [Pull dei rilevamenti con l'API REST SIEM](pull-alerts-using-rest-api.md)
 ##### [Recuperare gli avvisi dal tenant del cliente](fetch-alerts-mssp.md)
 ##### [Risolvere i problemi di integrazione degli strumenti SIEM](troubleshoot-siem.md)
@@ -650,14 +650,14 @@
 #### [Diventare un partner di Microsoft Defender per endpoint](get-started-partner-integration.md)
 
 ### [Integrazioni]()
-#### [Integrazioni Microsoft Defender for Endpoint](threat-protection-integration.md)
+#### [Integrazioni Microsoft Defender for Endpoint](threat-protection-integration.md)
 #### [Proteggere utenti, dati e dispositivi con l'accesso condizionale](conditional-access.md)
 #### [Panoramica integrazione di Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)
 
 ### [Panoramica di protezione delle informazioni in Windows]()
 #### [Integrazione di Windows](information-protection-in-windows-overview.md)
 
-### [Accedere a Microsoft Defender for Endpoint Community Center](community.md)
+### [Accedere a Microsoft Defender for Endpoint Community Center](community.md)
 
 ### [Risorse utili](helpful-resources.md)
 
@@ -671,7 +671,7 @@
   
 #### [Risolvere i problemi del servizio di Microsoft Defender per endpoint]()
 ##### [Risolvere i problemi dei servizi](troubleshoot-mdatp.md)
-##### [Verificare l'integrità dei servizi](service-status.md).
+##### [Verificare l'integrità dei servizi](service-status.md)
 ##### [Contattare il supporto di Microsoft Defender per endpoint](contact-support.md)
 
 #### [Risolvere i problemi relativi alle risposte in tempo reale](troubleshoot-live-response.md)
