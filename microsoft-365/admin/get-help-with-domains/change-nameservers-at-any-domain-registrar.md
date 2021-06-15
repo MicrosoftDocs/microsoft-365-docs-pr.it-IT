@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come posta elettronica e Skype for Business Online utilizzino il proprio nome di dominio.
-ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9c26f9afcf17857c4b3b8f05b89253272cf20e56
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683128"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924504"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 
@@ -66,18 +66,17 @@ Eseguire una delle operazioni seguenti in base al record da creare, ossia TXT o 
   
 **Se si crea un record TXT, usare questi valori:**
     
-|||||
+
+|Tipo di record<br/> |Alias o nome host <br/> |Valore <br/> |TTL<br/> |
 |:-----|:-----|:-----|:-----|
-|**Tipo di record** <br/> |**Alias** o **nome host** <br/> |**Valore** <br/> |**TTL** <br/> |
 |TXT  <br/> |Eseguire una delle operazioni seguenti: Digitare **@**, lasciare vuoto il campo o immettere il proprio nome di dominio.  <br/> > [!NOTE]> I requisiti di questo campo variano a seconda dell'host DNS.           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Impostare questo valore su **1 ora** o sull'equivalente in minuti ( **60** ), secondi ( **3600** ) e così via.  <br/> |
+|MS=ms *XXXXXXXX*  <br/>**Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Impostare questo valore su **1 ora** o sull'equivalente in minuti ( **60** ), secondi ( **3600** ) e così via.  <br/> |
    
 **Se si crea un record MX, usare questi valori:**
     
-||||||
+|Tipo di record|Alias o nome host|Valore|Priority|TTL|
 |:-----|:-----|:-----|:-----|:-----|
-|**Tipo di record**|**Alias** o **nome host**|**Valore**|**Priorità**|**TTL**|
-|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.yml). |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
+|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* **Nota:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.yml). |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
    
 ### <a name="save-the-record"></a>Salvare il record
 
@@ -110,13 +109,12 @@ Per modificare i server dei nomi del dominio presso il sito Web del registrar, s
 1. Individuare l'area nel sito Web del registrar in cui è possibile modificare i server dei nomi per il dominio o un'area in cui è possibile utilizzare server dei nomi personalizzati.
     
 2. Creare record del server dei nomi o modificare i record del server dei nomi esistenti in modo che corrispondano ai valori seguenti:
-    
-|||
-|:-----|:-----|
-|Primo server dei nomi  <br/> |ns1.bdm.microsoftonline.com  <br/> |
-|Secondo server dei nomi  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Terzo server dei nomi  <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|Quarto server dei nomi  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
+    - First nameserver: ns1.bdm.microsoftonline.com
+    - Secondo server dei nomi: ns2.bdm.microsoftonline.com
+    - Terzo server dei nomi: ns3.bdm.microsoftonline.com
+    - Quarto server dei nomi: ns4.bdm.microsoftonline.com
+      
    
    > [!TIP]
    > È meglio aggiungere tutti e quattro i record, ma se il registrar ne supporta solo **due,** aggiungere ns1.bdm.microsoftonline.com e **ns2.bdm.microsoftonline.com**. 
@@ -133,12 +131,10 @@ Per modificare i server dei nomi del dominio presso il sito Web del registrar, s
 1. Trovare l'area del sito Web del registrar in cui è possibile modificare i server dei nomi per il dominio.
     
 2. Creare due record dei server dei nomi o modificare quelli esistenti, in modo che corrispondano ai valori seguenti:
+
+   - First nameserver: ns1.dns.partner.microsoftonline.cn
+   - Secondo server dei nomi: ns2.dns.partner.microsoftonline.cn
     
-|||
-|:-----|:-----|
-|Primo server dei nomi  <br/> |ns1.dns.partner.microsoftonline.cn  <br/> |
-|Secondo server dei nomi  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
-   
    > [!TIP]
    > È consigliabile utilizzare almeno due record del server dei nomi. Se sono elencati altri server dei nomi, è possibile eliminarli o modificarli in **ns3.dns.partner.microsoftonline.cn** e **ns4.dns.partner.microsoftonline.cn**. 
   
@@ -184,7 +180,7 @@ Ecco, ad esempio, alcune altre operazioni aggiuntive che potrebbero essere neces
 4.  Nella casella **Nome host o Alias** digitare **www**.
 5.  Nella casella **Indirizzo di puntamento** digitare il nome di dominio completo (FQDN) del sito Web. Ad esempio, **contoso.com**.
 6.  Se si desidera modificare l'impostazione TTL per il record, selezionare un nuovo intervallo di tempo nell'elenco a discesa **TTL.** In caso contrario, andare al passaggio 6.
-7.  Selezionare **Salva**.
+7.  Seleziona **Salva**.
 
 Dopo l'aggiornamento dei record del server dei nomi in modo che puntino a Microsoft, la configurazione del dominio è stata completata. La posta elettronica viene instradata a Microsoft e il traffico verso l'indirizzo del sito Web continua a passare all'host del sito Web corrente."
     

@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: Informazioni sui criteri di protezione che consentono di gestire il modo in cui gli utenti accedono alle Office e ai file di lavoro dai dispositivi mobili.
-ms.openlocfilehash: a48aa241c9e70cf087da3f1701e859dae7238024
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7602b712f2dfc3ba369fd76979baaaa8d5da5c5c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578388"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925280"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>Gestire la modalità di accesso ai documenti di Office nei dispositivi mobili
 
@@ -43,10 +43,9 @@ Le impostazioni dei criteri che controllano la modalità di accesso degli utenti
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Impostazioni che controllano la modalità di accesso degli utenti ai file di Office nei dispositivi mobili
 
 Le impostazioni seguenti sono disponibili per la gestione della modalità di accesso degli utenti ai file di lavoro di Office:
-  
-|||
-|:-----|:-----|
+
 |Impostazione  <br/> |Descrizione  <br/> |
+|:-----|:-----|
 |Richiedi un PIN o l'impronta digitale per accedere alle app di Office  <br/> |Se questa impostazione è **attivata,** gli utenti devono fornire un'altra forma di autenticazione, oltre al nome utente e alla password, prima di poter usare le app Office sul dispositivo mobile.  <br/> |
 |Reimposta il PIN dopo il numero di tentativi di accesso falliti seguente  <br/> |Per impedire a un utente non autorizzato di indovinare casualmente un PIN, il PIN verrà reimpostato dopo il numero specificato di tentativi di immissione non riusciti.  <br/> |
 |Richiedi agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive per  <br/> |Questa impostazione determina per quanto tempo un utente può essere inattivo prima che venga richiesto di eseguire di nuovo l'accesso.  <br/> |

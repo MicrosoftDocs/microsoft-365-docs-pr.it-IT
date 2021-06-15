@@ -11,18 +11,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
 ms.date: 05/17/2021
-ms.openlocfilehash: 2d212bedf9033b0824d32e7f42afea3944d9ca67
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: f6217cccf79b951c3103e1024ac74669d68645cd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782814"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925936"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Proteggere le impostazioni di sicurezza con protezione antimanomissione
 

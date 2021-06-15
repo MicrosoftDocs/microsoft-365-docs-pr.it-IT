@@ -6,26 +6,25 @@ description: Windows Il server include esclusioni automatiche in base al ruolo d
 keywords: esclusioni, server, esclusioni automatiche, automatiche, personalizzate, analisi, Antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
-ms.custom: nextgen
-ms.technology: mde
-ms.date: 02/10/2021
 ms.topic: article
-ms.openlocfilehash: f82da8eb0dcba39404c2b7f191e166aa78357cee
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.custom: nextgen
+ms.date: 02/10/2021
+ms.openlocfilehash: 31d5c22d11a28c9604b2be3145ebd46715a6e5b3
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274761"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925516"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurare Antivirus Microsoft Defender esclusioni in Windows Server
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
 

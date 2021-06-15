@@ -7,14 +7,16 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5961ac4eb16928754849f5f32ecd06d4d2e4650d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d93bf492f7cfea5a1ff863205085d853c4bbadb
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917717"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925432"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Modalità di gestione degli aggiornamenti in Microsoft Managed Desktop
 
@@ -38,7 +40,7 @@ Microsoft Managed Desktop quattro gruppi di Azure AD per gestire gli aggiornamen
 - **Generale:** ultimo gruppo in cui sono disponibili aggiornamenti qualitativi e delle funzionalità. Questo gruppo contiene la maggior parte degli utenti nel tenant e quindi favorisce la stabilità rispetto alla velocità nella distribuzione. Il testing delle app deve essere eseguito qui perché l'ambiente è più stabile. 
 
 ### <a name="moving-devices-between-update-groups"></a>Spostamento di dispositivi tra gruppi di aggiornamento
-Potresti volere che alcuni dispositivi ricevano gli aggiornamenti per ultimi e altri che vuoi prima di tutto. Per spostare questi dispositivi nel gruppo di aggiornamento appropriato, [invia una richiesta](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) di supporto dell'amministratore e i dispositivi verranno spostati automaticamente. 
+Potresti volere che alcuni dispositivi ricevano gli aggiornamenti per ultimi e altri che vuoi prima di tutto. Per spostare questi dispositivi nel gruppo di aggiornamento appropriato, [invia una richiesta](../working-with-managed-desktop/admin-support.md) di supporto dell'amministratore e i dispositivi verranno spostati automaticamente. 
 
 > [!NOTE]
 > Se è necessario spostare un utente in un gruppo di aggiornamento diverso, inviare una richiesta di supporto. Non spostare manualmente i dispositivi tra i gruppi di aggiornamento. Ci sono gravi conseguenze se un dispositivo viene spostato in modo errato. Il dispositivo potrebbe essere aggiornato in modo imprevisto e i criteri potrebbero essere in conflitto, modificando la configurazione del dispositivo.

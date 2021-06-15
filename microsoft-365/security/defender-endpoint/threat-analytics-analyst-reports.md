@@ -1,7 +1,7 @@
 ---
-title: Informazioni sulla sezione relativa al report degli analisti nell'analisi delle minacce
+title: Informazioni sulla sezione relativa al report degli analisti nell'analisi delle minacce.
 ms.reviewer: ''
-description: Informazioni sulla sezione relativa al report degli analisti di ogni report di analisi delle minacce. Comprendere come fornisce informazioni su minacce, mitigazioni, rilevamenti, query di ricerca avanzate e altro ancora.
+description: Come la sezione report dei report di analisi delle minacce fornisce informazioni su minacce, mitigazione, rilevamenti, query di ricerca avanzate e altro ancora.
 keywords: report degli analisti, analisi delle minacce, rilevamenti, query di ricerca avanzate, mitigazioni,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2a442a642a71bd6bf3a52dbf3901c4367c2c10d8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e791249418503ada5d98b74c8ae273664851cc8e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844995"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926440"
 ---
-# <a name="understand-the-analyst-report-in-threat-analytics"></a>Informazioni sul report degli analisti nell'analisi delle minacce
+# <a name="the-analyst-report-in-threat-analytics"></a>Report degli analisti nell'analisi delle minacce
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

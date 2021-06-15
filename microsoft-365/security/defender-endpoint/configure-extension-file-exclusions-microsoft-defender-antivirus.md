@@ -4,26 +4,25 @@ description: Escludere i file Antivirus Microsoft Defender analisi in base all'e
 keywords: esclusioni, file, estensione, tipo di file, nome cartella, nome file, analisi
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 3d65275d504ece4ac298558e660fa70c32a76d06
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 71df43639a719acb9436f64deba6b6c5cc9317f5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274533"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924280"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurare e convalidare le esclusioni in base all'estensione di file e al percorso della cartella
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**

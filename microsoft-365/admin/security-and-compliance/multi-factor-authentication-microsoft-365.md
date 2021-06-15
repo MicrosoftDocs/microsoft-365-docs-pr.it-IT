@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'autenticazione a più fattori (MFA) utilizza sia una password, che dovrebbe essere complessa, sia un metodo di verifica aggiuntivo.
-ms.openlocfilehash: 6e1c43bdd66849a0043c0a1a927f48d925e0806e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: d9af486cf5e53609557b519612f185a20729cf76
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635775"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924732"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
 
@@ -150,7 +150,7 @@ Dopo essere stato abilitato, al successivo accesso dell'utente verrà richiesto 
 
 Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni predefinite di sicurezza, criteri di accesso condizionale e impostazioni dell'account per utente.
 
-||Abilitato|Disattivato|Metodo di autenticazione secondario|
+|*Elemento*|Abilitato|Disattivato|Metodo di autenticazione secondario|
 |---|---|---|---|
 |**Impostazioni predefinite per la sicurezza**|Non è possibile utilizzare i criteri di accesso condizionale|È possibile utilizzare i criteri di accesso condizionale|App Microsoft Authenticator|
 |**Criteri di accesso condizionale**|Se sono abilitati, non è possibile abilitare le impostazioni predefinite di sicurezza|Se sono tutti disabilitati, è possibile abilitare le impostazioni predefinite per la sicurezza|Specificato dall'utente durante la registrazione della MFA|

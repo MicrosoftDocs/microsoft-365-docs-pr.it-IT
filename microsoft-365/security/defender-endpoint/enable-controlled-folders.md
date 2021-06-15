@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: ed0859e6018d171b48aac83d394eacbd2163c37b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861223"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924684"
 ---
 # <a name="enable-controlled-folder-access"></a>Abilitare l’accesso controllato alle cartelle
 
@@ -50,7 +50,7 @@ Le impostazioni di Criteri di gruppo che disabilitano l'unione degli elenchi di 
 * Antivirus Microsoft Defender comportamento **di unione dell'amministratore locale per gli elenchi**
 * System Center Endpoint Protection consentire **agli utenti di aggiungere esclusioni e sostituzioni**
 
-Per ulteriori informazioni sulla disabilitazione dell'unione di elenchi locali, vedere Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri [di Microsoft Defender AV.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)
+Per ulteriori informazioni sulla disabilitazione dell'unione di elenchi locali, vedere Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri [di Microsoft Defender AV.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus)
 
 ## <a name="windows-security-app"></a>Sicurezza di Windows app
 
@@ -92,7 +92,7 @@ Per ulteriori informazioni sulla disabilitazione dell'unione di elenchi locali, 
 
 ## <a name="mobile-device-management-mdm"></a>Gestione di dispositivi mobili (MDM)
 
-Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) per consentire alle app di apportare modifiche alle cartelle protette.
+Usa il provider di servizi di configurazione [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) per consentire alle app di apportare modifiche alle cartelle protette.
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 

@@ -4,28 +4,26 @@ description: Configurare le Antivirus Microsoft Defender quando rileva una minac
 keywords: correzione, correzione, rimozione, minacce, quarantena, analisi, ripristino
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 45886b94ec5ea11f01bfe23092eef4bd72691554
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9b765d14e31d6c4890aeace41e4fe79bafdd889e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274509"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925576"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Configurare la correzione per i rilevamenti di Microsoft Defender Antivirus
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**

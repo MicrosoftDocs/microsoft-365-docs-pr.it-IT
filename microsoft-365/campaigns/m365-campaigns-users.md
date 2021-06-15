@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Scopri come questi consigli sulla sicurezza per Microsoft 365 Business Premium influiscono sugli utenti e proteggono i dati.
-ms.openlocfilehash: b8464396887daa408e94cfb6c151d998dd8b1ae2
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: ce64189d721bc3eb356a39f431af01e67973516a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398230"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924256"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>In che modo questi suggerimenti per la sicurezza influiscono sugli utenti
 
@@ -70,9 +70,9 @@ Per [i dispositivi Windows 10 e Mac](m365-campaigns-protect-pcs-macs.md)non gest
 
 **Abilitare le funzionalità di sicurezza di base nei dispositivi BYOD Windows 10 e Mac**
 
-| |**Windows 10**|**Mac**|
-|:-----|:-----|:------|
-|Funzionalità di sicurezza|Attivare la BitLocker dispositivo<p><p> Assicurarsi Windows Defender rimane attivo <p>Attivare Windows firewall| Usare FileVault per crittografare il disco Mac <p><p>Usare un software antivirus affidabile <p>Attivare la protezione firewall|
+|**Windows 10**|**Mac**|
+|:-----|:------|
+|Attivare la BitLocker dispositivo<p><p> Assicurarsi Windows Defender rimane attivo <p>Attivare Windows firewall| Usare FileVault per crittografare il disco Mac <p><p>Usare un software antivirus affidabile <p>Attivare la protezione firewall|
 
 Per altre informazioni su questi suggerimenti, vedi [Proteggere l'account e i dispositivi da hacker e malware.](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)
 

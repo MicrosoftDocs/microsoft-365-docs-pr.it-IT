@@ -4,28 +4,26 @@ description: Abilitare o disabilitare gli utenti dalla modifica locale delle imp
 keywords: sostituzione locale, criteri locali, criteri di gruppo, criteri di gruppo, blocco, unione, elenchi
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 4a35c6717fd7a1834364df32cf5570c83a5b776e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 2d23ca6d98d86666d72b75723a2205fcd83b08d7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274521"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924244"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedire o consentire agli utenti di modificare localmente Antivirus Microsoft Defender impostazioni dei criteri
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**

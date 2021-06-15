@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Informazioni su come usare rendering e sprite per migliorare le prestazioni delle immagini nei siti di pubblicazione classici di SharePoint Online.
-ms.openlocfilehash: 0f0dd078ce28b86fc998b2f83ac19d04b1a3ab02
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15885f1d8803332e24e2656a48b796dab28c665f
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907481"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924576"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Ottimizzazione delle immagini per i SharePoint di pubblicazione classica di SharePoint Online
 
@@ -35,9 +35,14 @@ La velocità di caricamento di una pagina Web dipende dalle dimensioni combinate
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>Uso di sprite per velocizzare il caricamento delle immagini
 
-|||
-|:-----|:-----|
-| Uno sprite immagine contiene molte immagini più piccole. Usando CSS puoi selezionare una parte dell'immagine composita da visualizzare in una determinata parte della pagina con posizionamento assoluto. Fondamentalmente, sposti una singola immagine intorno alla pagina invece di caricare più immagini e rendi visibile una piccola parte dell'immagine attraverso una piccola finestra in cui la parte necessaria dell'immagine sprite viene visualizzata all'utente finale. SharePoint Online utilizza gli sprite per visualizzare le varie icone nello sprite spcommon.png.  <br/>  Cosa è stato trattato qui:  <br/>  Compressione delle immagini  <br/>  Ottimizzazione delle immagini  <br/>  SharePoint rendering di immagini  <br/> |![Screenshot di spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+![Screenshot di spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+
+Uno sprite immagine contiene molte immagini più piccole. Usando CSS puoi selezionare una parte dell'immagine composita da visualizzare in una determinata parte della pagina con posizionamento assoluto. Fondamentalmente, sposti una singola immagine intorno alla pagina invece di caricare più immagini e rendi visibile una piccola parte dell'immagine attraverso una piccola finestra in cui la parte necessaria dell'immagine sprite viene visualizzata all'utente finale. SharePoint Online usa gli sprite per visualizzare le varie icone nel file spcommon.png sprite.
+
+Cosa è stato trattato qui:
+- Compressione delle immagini
+- Ottimizzazione delle immagini
+- SharePoint rendering di immagini
    
 In questo modo è possibile migliorare le prestazioni perché si scarica solo un'immagine anziché più immagini e quindi si memorizza nella cache e si riutilizza l'immagine. Anche se l'immagine non rimane memorizzata nella cache, con una singola immagine anziché più immagini, questo metodo riduce il numero totale di richieste HTTP al server riducendo i tempi di caricamento delle pagine. Ciò rappresenta un vero e proprio tipo di creazione di bundle di immagini. È una tecnica molto utile se le immagini non vengono modificate molto spesso, ad esempio nel caso delle icone, come illustrato nell'esempio di SharePoint fornito in precedenza. Puoi usare [Web Essentials](https://vswebessentials.com/), un progetto di terze parti open source basato sulla community per ottenere questo risultato facilmente in Microsoft Visual Studio. Per ulteriori informazioni, vedere [Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md).
   

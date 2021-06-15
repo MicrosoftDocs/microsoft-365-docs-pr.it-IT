@@ -1,6 +1,6 @@
 ---
 title: Preparare Microsoft Defender per la distribuzione degli endpoint
-description: Preparare l'approvazione delle parti interessate, le tempistiche, le considerazioni sull'ambiente e l'ordine di adozione durante la distribuzione di Microsoft Defender per Endpoint
+description: Preparare l'approvazione delle parti interessate, le tempistiche, le considerazioni sull'ambiente e l'ordine di adozione per la distribuzione di Microsoft Defender per Endpoint
 keywords: distribuire, preparare, stakeholder, sequenza temporale, ambiente, endpoint, server, gestione, adozione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 13748662f6e53db86352b903828978729f78e6a8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842435"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925652"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Preparare Microsoft Defender per la distribuzione degli endpoint
 
@@ -105,7 +105,7 @@ Defender for Endpoint supporta due modi per gestire le autorizzazioni:
 
 Microsoft consiglia di usare RBAC per garantire che solo gli utenti che hanno una giustificazione aziendale possano accedere a Defender for Endpoint.
 
-Per informazioni dettagliate sulle linee guida per le [autorizzazioni, vedere](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
+Per informazioni dettagliate sulle linee guida per le autorizzazioni, vedere Creare ruoli e assegnare il ruolo a un Azure Active Directory [gruppo.](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 
 La tabella di esempio seguente consente di identificare la struttura del Cyber Defense Operations Center nell'ambiente che consente di determinare la struttura RBAC necessaria per l'ambiente.
 
@@ -135,5 +135,6 @@ Scegli il componente di Defender per Endpoint da usare e rimuovi quelli che non 
 
 ## <a name="next-step"></a>Passaggio successivo
 
-![Fase 2: configurazione](images/setup.png) <br>[Fase 2: configurazione |](production-deployment.md) Configurare Microsoft Defender per la distribuzione degli endpoint
-
+|||
+|:-------|:-----|
+|![Fase 2: configurazione](images/setup.png) <br>[Fase 2: configurazione](production-deployment.md) | Configurare Microsoft Defender per la distribuzione degli endpoint |

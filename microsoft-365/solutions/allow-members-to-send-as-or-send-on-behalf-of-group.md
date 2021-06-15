@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Informazioni su come consentire ai membri del gruppo di inviare posta elettronica come Microsoft 365 o inviare messaggi di posta elettronica per conto di un Microsoft 365 gruppo.
-ms.openlocfilehash: 07db8f415da46e6235c051e262237de79e61c8b9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 437040700361c6a09b107a87d8228d2a156375d1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538256"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926140"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Consenti ai membri di inviare come o inviare per conto di un gruppo
 

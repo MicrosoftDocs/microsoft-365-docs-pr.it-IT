@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Panoramica dell’API REST del modello di analisi dei documenti di SharePoint Syntex.
-ms.openlocfilehash: e661df76828db0d05f7c3492880259117b9f8bf1
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 279c624bb818e5d8d33b476f997290269ff634cb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908090"
+ms.locfileid: "52904235"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>API REST del modello di analisi dei documenti di SharePoint Syntex
 
@@ -24,14 +24,14 @@ ms.locfileid: "52908090"
 
 Il servizio REST di SharePoint Online (e SharePoint 2016 e versioni successive locali) supporta la combinazione di più richieste in una singola chiamata al servizio tramite l'opzione di query $batch di OData. 
 
-Per informazioni dettagliate e collegamenti a esempi di codice, vedere [Effettuare richieste di batch con l'API REST](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
+Per informazioni dettagliate e collegamenti a esempi di codice, vedere [Effettuare richieste di batch con l'API REST](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 Prima di iniziare, è indispensabile conoscere e avere dimestichezza con quanto segue:
 
-- [Informazioni sul servizio REST di SharePoint](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service) 
-- [Completare le operazioni di base usando gli endpoint REST di SharePoint](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints)
+- [Informazioni sul servizio REST di SharePoint](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service.md) 
+- [Completare le operazioni di base usando gli endpoint REST di SharePoint](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints.md)
 
 ## <a name="rest-commands"></a>Comandi REST
 

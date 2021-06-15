@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Informazioni su come usare un OneDrive e un sito del team per Microsoft 365 e Microsoft 365 file condivisi.
-ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635643"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924612"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurare l'archiviazione e la condivisione di file in Microsoft 365
 
@@ -56,12 +56,12 @@ Sia i OneDrive che i siti del team forniscono l'accesso ovunque per te e i tuoi 
   
 ![Diagramma che mostra come i Microsoft 365 possono usare OneDrive o siti del team](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
-Ecco alcuni suggerimenti su cosa archiviare in ogni posizione quando si usano siti OneDrive team insieme:
+Ecco alcuni suggerimenti su cosa archiviare in ogni posizione quando si usano siti OneDrive team insieme:<br/>
+
   
-||||
+|Posizione di archiviazione|A cosa si può fare|Cosa archiviare|
 |:-----|:-----|:-----|
-|**Posizione di archiviazione** <br/> |**Scopo** <br/> |**Cosa archiviare** <br/> |
-|**OneDrive** <br/> |Archiviare il contenuto OneDrive è come archiviare i file nel computer; nessun altro può accedervi facilmente.  <br/> Per altre info, vedi [Che cos'è OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |File aziendali a cui gli altri membri del team non devono lavorare o accedere regolarmente.  <br/> |
+|**OneDrive** |Archiviare il contenuto OneDrive è come archiviare i file nel computer; nessun altro può accedervi facilmente.<br/> Per altre info, vedi [Che cos'è OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |File aziendali a cui gli altri membri del team non devono lavorare o accedere regolarmente.<br/> |
 |**Siti del team di SharePoint** <br/> |Collaborazione. Quando si crea un gruppo di Microsoft 365, ad esempio nell'interfaccia di amministrazione di Microsoft 365, in Outlook o creando un team in Microsoft Teams, viene creato un sito del team di SharePoint per tale gruppo. Analogamente, quando si crea un nuovo sito del team di SharePoint dalla home page di SharePoint o dalla nuova interfaccia di amministrazione di SharePoint, viene creato anche un gruppo Microsoft 365. Per altre info, vedi [Che cos'è](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) un sito SharePoint team? e Creare un sito [del team in SharePoint Online.](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)  <br/> |File con proprietà condivisa. È consigliabile separare i siti del team per ogni unità di lavoro dell'organizzazione. Ad esempio, per mantenere privati il personale e i documenti finanziari per un team di piccole dimensioni, creare un sito del team separato.  <br/> |
 
 > [!NOTE]

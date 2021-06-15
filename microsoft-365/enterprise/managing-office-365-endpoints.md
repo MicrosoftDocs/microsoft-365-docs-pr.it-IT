@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Informazioni su come gestire gli endpoint Office 365 in modo che funzionino con l'architettura di rete dell'organizzazione aziendale.
-ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fa727c5c80521b6ff67c50d202d0c11c643b021e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905117"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925864"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestione degli endpoint di Office 365
 
@@ -161,7 +161,7 @@ Questi reindirizzamenti CNAME sono un aspetto normale del DNS, e sono trasparent
 
 Un server proxy convalida l'URL iniziale, che nell'esempio precedente è serviceA.office.com e questo URL viene incluso nella Office 365 pubblicazione. Il server proxy richiede la risoluzione DNS dell'URL a un indirizzo IP, e riceve IP_1 come risposta. Non convalida i record del reindirizzamento CNAME intermediario.
 
-Le configurazioni hard-coded o l'elenco di indirizzi vuoti basati su fqdn Office 365 indiretti non sono consigliati, non sono supportati da Microsoft e sono noti per causare problemi di connettività dei clienti. Le soluzioni DNS che bloccano il reindirizzamento CNAME o che altrimenti risolvono in modo errato le voci DNS Office 365, possono essere risolte tramite server d'inoltro DNS con ricorsione DNS abilitata o utilizzando i suggerimenti radice DNS. Molti prodotti perimetrali di rete di terze parti integrano in modo nativo l'elenco degli endpoint Office 365 consigliato nella configurazione utilizzando il servizio Web Office 365 indirizzo IP e [URL](microsoft-365-ip-web-service.md).
+Le configurazioni hard-coded o l'uso di un elenco di indirizzi consentiti basati su FQDN Office 365 indiretti non sono consigliati, non sono supportati da Microsoft e sono noti per causare problemi di connettività dei clienti. Le soluzioni DNS che bloccano il reindirizzamento CNAME o che altrimenti risolvono in modo errato le voci DNS Office 365, possono essere risolte tramite server d'inoltro DNS con ricorsione DNS abilitata o utilizzando i suggerimenti radice DNS. Molti prodotti perimetrali di rete di terze parti integrano in modo nativo l'endpoint di Office 365 consigliato per includere un elenco di indirizzi consentiti nella configurazione utilizzando il servizio Web url e indirizzo [IP Office 365](microsoft-365-ip-web-service.md).
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Perché tra i nomi di dominio Microsoft sono presenti nomi come nsatc.net o akadns.net?

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Informazioni su come implementare ExpressRoute per Office 365, che fornisce un percorso di routing alternativo a molti servizi di Office 365 Internet.
-ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ad6102193a12325de0e4bb2ff16087738688587
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051367"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924940"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementazione di ExpressRoute per Office 365
 
@@ -103,10 +103,10 @@ Per ogni servizio che richiede una connessione in ingresso, sono necessarie alcu
   
 Le connessioni in ingresso devono essere esaminate indipendentemente dal fatto che si connettono tramite Internet o ExpressRoute per garantire che il routing asimmetrico non sia stato introdotto. In alcuni casi, gli endpoint locali a cui i servizi Office 365 avviano connessioni in ingresso potrebbero dover essere accessibili anche da altri utenti Microsoft e non servizi Microsoft. È fondamentale che l'abilitazione del routing ExpressRoute a questi servizi Office 365 non interrompa altri scenari. In molti casi, i clienti potrebbero dover implementare modifiche specifiche alla propria rete interna, ad esempio NAT basato sull'origine, per garantire che i flussi in ingresso da Microsoft rimangano simmetrici dopo l'attivazione di ExpressRoute.
   
-Ecco un esempio del livello di dettaglio necessario. In questo caso Exchange ibrido instraderebbe al sistema locale tramite ExpressRoute.
+Ecco un esempio del livello di dettaglio necessario. In questo caso Exchange ibrido instraderebbe al sistema locale tramite ExpressRoute. 
 
-|**Connection, proprietà**|**Valore**|
-|:-----|:-----|
+|Connection, proprietà   |Valore  |
+|----------|-----------|
 |**Direzione del traffico di rete** <br/> |In ingresso  <br/> |
 |**Servizio** <br/> |Ambiente Exchange ibrido  <br/> |
 |**Endpoint Office 365 pubblico (origine)** <br/> |Exchange Online (indirizzi IP)  <br/> |
@@ -115,15 +115,15 @@ Ecco un esempio del livello di dettaglio necessario. In questo caso Exchange ibr
 |**Questo endpoint locale verrà usato da altri utenti (non Office 365) servizi Microsoft** <br/> |No  <br/> |
 |**Questo endpoint locale verrà utilizzato da utenti/sistemi su Internet** <br/> |Sì  <br/> |
 |**Sistemi interni pubblicati tramite endpoint pubblici** <br/> |Exchange Server ruolo accesso client (locale) 192.168.101, 192.168.102, 192.168.103  <br/> |
-|**Annuncio IP dell'endpoint pubblico** <br/> |**A Internet**: 5.5.0.0/16  <br/> **To ExpressRoute**: 5.5.5.0/24  <br/> |
-|**Controlli di sicurezza/perimetro** <br/> |**Percorso Internet**: DeviceID_002  <br/> **Percorso ExpressRoute**: DeviceID_003  <br/> |
-|**Disponibilità elevata** <br/> |Attivo/Attivo su 2 con ridondanza geografica  <br/> Circuiti ExpressRoute - Chicago e Dallas  <br/> |
-|**Controllo della simmetria del percorso** <br/> |**Metodo**: NAT di origine  <br/> **Internet path**: Source NAT inbound connections to 192.168.5.5  <br/> |**Percorso ExpressRoute**: connessioni NAT di origine a 192.168.1.0 (Chicago) e 192.168.2.0 (Dallas)  <br/> |
+|**Annuncio IP dell'endpoint pubblico** <br/> |**To Internet**: 5.5.0.0/16 **To ExpressRoute**: 5.5.5.0/24  <br/> |
+|**Controlli di sicurezza/perimetro** <br/> |**Percorso Internet**: DeviceID_002  **ExpressRoute :** DeviceID_003  <br/> |
+|**Disponibilità elevata** <br/> |Active/Active su 2 circuiti ExpressRoute/con ridondanza geografica - Chicago e Dallas  <br/> |
+|**Controllo della simmetria del percorso** <br/> |**Metodo**: Percorso **Internet** NAT di origine : Connessioni NAT di origine in ingresso a 192.168.5.5 **Percorso ExpressRoute**: Connessioni NAT di origine a 192.168.1.0 (Chicago) e 192.168.2.0 (Dallas)  <br/> |
 
 Ecco un esempio di servizio solo in uscita:
 
 |**Connection, proprietà**|**Valore**|
-|:-----|:-----|
+|----------|-----------|
 |**Direzione del traffico di rete** <br/> |In uscita  <br/> |
 |**Servizio** <br/> |SharePoint Online  <br/> |
 |**Endpoint locale (origine)** <br/> |Workstation utente  <br/> |
@@ -189,9 +189,10 @@ Ciò significa che la considerazione più importante da prendere quando si selez
   
 Spesso, ci sono più località di meet-me che possono essere selezionate all'interno di un'area con relativa prossimità agli utenti. Compila la tabella seguente per guidare le tue decisioni.
 
-|**Sedi expressroute meet-me pianificate in California e New York**||
-|:-----|:-----|
+**Sedi expressroute meet-me pianificate in California e New York**
+
 |Posizione  <br/> |Numero di persone  <br/> |Latenza prevista per la rete Microsoft in uscita da Internet  <br/> |Latenza prevista per la rete Microsoft su ExpressRoute  <br/> |
+|----------|-----------|----------|-----------|
 |Roma  <br/> |10.000  <br/> |~15 ms  <br/> |~10ms (tramite Silicon Valley)  <br/> |
 |Washington DC  <br/> |15.000  <br/> |~20ms  <br/> |~10ms (tramite New York)  <br/> |
 |Dallas  <br/> |5.000  <br/> |~15 ms  <br/> |~40ms (tramite New York)  <br/> |
@@ -225,7 +226,7 @@ Il piano di implementazione deve comprendere sia i dettagli tecnici della config
 
 - Decidere fino a dove verranno annunciate le route ExpressRoute nella rete e qual è il meccanismo per i client per selezionare il percorso Internet o ExpressRoute; ad esempio, routing diretto o proxy dell'applicazione.
 
-- Pianificare le modifiche ai record DNS, incluse [le voci di Sender Policy Framework.](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- Pianificare le modifiche ai record DNS, incluse [le voci di Sender Policy Framework.](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
 - Pianificare la strategia NAT tra cui NAT di origine in uscita e in ingresso.
 

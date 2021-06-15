@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Decidi quali funzionalità Office mostrare o nascondere quando un utente sceglie Guida > Novità nel app Office in Windows usando la funzionalità "Novità di Office" nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: b9d20e3df4a2de540316dce0e6a6905c07e65176
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915028"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924836"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gestire le Office funzionalità visualizzate in Novità
 
@@ -60,9 +60,8 @@ Puoi controllare quali di questi messaggi di funzionalità vengono visualizzati 
 
 Le nuove funzionalità vengono visualizzate nella pagina in base alla pianificazione seguente:
 
-||||
+|Canale|Data|Entra in azione|
 |:-----|:-----|:-----|
-|**Canale** <br/> |**Data** <br/> |**Entra in azione** <br/> |
 |**Current** <br/> |15 del mese  <br/> |1 - 3 settimane prima del rilascio mensile <br/> |
 |**Enterprise mensile** <br/> |Primo del mese  <br/> |Due settimane prima del rilascio principale che introduce nuove funzionalità |
 |**Semestra Enterprise (anteprima)** <br/> |1 settembre e 1 marzo <br/> | 2 settimane prima della versione principale che offre nuove funzionalità|

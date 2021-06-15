@@ -1,5 +1,5 @@
 ---
-title: Report di Microsoft 365 nell'interfaccia di amministrazione - Attività degli utenti di Microsoft Teams
+title: Microsoft 365 dell'interfaccia di amministrazione - Microsoft Teams'attività degli utenti
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Informazioni su come ottenere il report attività Microsoft Teams utente e ottenere informazioni dettagliate sull'attività Teams nell'organizzazione.
-ms.openlocfilehash: 1f45cd380813a843ad54e6552578941a9741138e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c824a0ce285a085c9ae8b7326647ad4bcdf5f013
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579603"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924268"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Attività degli utenti di Microsoft Teams
+# <a name="microsoft-365-admin-center-reports---microsoft-teams-user-activity"></a>Microsoft 365 dell'interfaccia di amministrazione - Microsoft Teams'attività degli utenti
 
 Il dashboard Microsoft 365 **report mostra** la panoramica dell'attività tra i prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento introduttivo sui report](activity-reports.md). Nel report Attività degli utenti di Microsoft Teams è possibile ottenere informazioni approfondite sull'attività di Microsoft Teams nell'organizzazione.
   

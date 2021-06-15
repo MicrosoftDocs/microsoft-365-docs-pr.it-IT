@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Informazioni sulle impostazioni disponibili in Microsoft 365 per le aziende per proteggere Windows 10 dispositivi.
-ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4859681d5e71a61b8a5dd58114bce899f485967a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578228"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925320"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modificare o creare le impostazioni di protezione dei dispositivi Windows 10 PC
 
@@ -67,10 +67,10 @@ Guarda un video su come proteggere Windows 10 dispositivi con Microsoft 365 Busi
 Per impostazione predefinita, tutte le impostazioni sono **attivate**. Sono disponibili le impostazioni seguenti.
   
 Per ulteriori informazioni, vedere [How do protection features in Microsoft 365 Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
-  
-|||
-|:-----|:-----|
+
+
 |Impostazione  <br/> |Descrizione  <br/> |
+|:-----|:-----|
 |Protegge i PC da virus e altre minacce tramite Windows Defender Antivirus  <br/> |Richiede l'attivazione di Windows Defender Antivirus per la protezione dei PC dai pericoli derivanti dalla connessione a Internet.  <br/> |
 |Protegge i PC dalle minacce del Web in Microsoft Edge  <br/> |Attiva le impostazioni di Microsoft Edge che consentono di proteggere gli utenti da siti e download dannosi.  <br/> |
 |Usa regole per ridurre la superficie di attacco dei dispositivi  <br/> |Quando è attivata, la riduzione della superficie di attacco consente di bloccare azioni e app generalmente usate dal malware per infettare i dispositivi. Questa impostazione è disponibile solo se Windows Defender Antivirus è attivato. Per altre informazioni, vedere [Ridurre le superfici di attacco con le regole di riduzione della superficie di attacco](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |

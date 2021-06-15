@@ -1,20 +1,22 @@
 ---
 title: Preparare gli utenti a usare i dispositivi
-description: ''
+description: Informazioni che consentono agli utenti di prepararsi per l'uso dei dispositivi.
 keywords: Microsoft Managed Desktop, dispositivo, introduzione, Microsoft 365
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8f0726215c3bad5616882588360703e218bfaab4
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: fd730017a20f121281c0aba2c2ecca4cbd23a8a7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289448"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925720"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Preparare gli utenti a usare i dispositivi
 

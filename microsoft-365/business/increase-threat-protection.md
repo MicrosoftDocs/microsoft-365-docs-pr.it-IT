@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare Microsoft Defender per la Office 365 e proteggere i dati sensibili da phishing, malware e altre minacce.
-ms.openlocfilehash: 4b5142efbf4392f017cd9b96f6a9c36ef2000bb7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a995063cef6fdc42ad62079d49d58edc9d07b52c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245145"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924320"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
@@ -79,10 +79,10 @@ Per creare una regola di trasporto della posta:
 
 5. Applicare le impostazioni nella tabella seguente per la regola. Utilizzare i valori predefiniti per il resto delle impostazioni, a meno che non si desideri modificarli.
 
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
 
-|Impostazione|Avvisare gli utenti prima di aprire allegati Office file||
-|---|---|---|
+|Impostazione|Avvisare gli utenti prima di aprire allegati Office file|
+|---|---|
 |Nome|Regola anti-ransomware: avvisare gli utenti|
 |Applica questa regola se . . .|Qualsiasi allegato . . . l'estensione del file corrisponde a . . .|
 |Specificare parole o frasi|Aggiungi questi tipi di file:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm|
@@ -111,7 +111,7 @@ Per creare una regola di trasporto della posta, guardare [questo breve video](..
 
 5. Applicare le impostazioni nella tabella seguente. Utilizzare i valori predefiniti per il resto delle impostazioni, a meno che non si desideri modificarli.
 
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
 
 |Impostazione|Avvisare gli utenti prima di aprire allegati Office file|
 |---|---|
@@ -130,7 +130,7 @@ Se sono stati configurati uno o più domini personalizzati per l'ambiente Office
 
 Per creare un criterio anti-phishing in Microsoft Defender per Office 365, guardare questo [breve video](../business-video/setup-anti-phishing.md)di formazione o completare la procedura seguente:
 
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Vai a [https://protection.office.com](https://protection.office.com).
 
 2. Nel Riquadro di spostamento sinistro del Centro sicurezza e conformità scegliere Criteri in &amp; **Gestione** **delle minacce.**
 
@@ -207,7 +207,7 @@ Per modificare il criterio predefinito:
 
 2. In **Impostazioni che si applicano al** contenuto ad eccezione della posta **elettronica, selezionare Microsoft 365 Apps for enterprise, Office per iOS e Android.**
 
-3. Selezionare **Salva**.
+3. Seleziona **Salva**.
 
 Per creare un nuovo criterio destinato a tutti i destinatari del dominio:
 
@@ -215,7 +215,7 @@ Per creare un nuovo criterio destinato a tutti i destinatari del dominio:
 
 2. Applicare le impostazioni elencate nella tabella seguente.
 
-3. Selezionare **Salva**.
+3. Seleziona **Salva**.
 
 |Impostazione o opzione|Impostazione consigliata|
 |---|---|

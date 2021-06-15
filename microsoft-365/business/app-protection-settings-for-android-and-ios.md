@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Scopri come creare, modificare o eliminare un criterio di gestione delle app e proteggere i file di lavoro nei dispositivi Android o iOS.
-ms.openlocfilehash: 2e157737990c7aca6e87a676e90f62f0d40ad372
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 92dce1e8761e53b85df85f2a84f30ab307f63e6d
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580295"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925064"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS
 
@@ -81,10 +81,10 @@ Nelle tabelle seguenti vengono fornite informazioni dettagliate sulle impostazio
 ### <a name="settings-that-protect-work-files"></a>Impostazioni per la protezione dei file di lavoro
 
 Le impostazioni seguenti sono disponibili per la protezione dei file di lavoro in caso di perdita o di furto del dispositivo di un utente:
-  
-|||
-|:-----|:-----|
+
+
 |Impostazione  <br/> |Descrizione  <br/> |
+|:-----|:-----|
 |Elimina i file di lavoro dai dispositivi inattivi dopo questo numero di giorni  <br/> |Se un dispositivo non viene utilizzato per il numero di giorni specificato qui, tutti i file di lavoro archiviati nel dispositivo verranno eliminati automaticamente.  <br/> |
 |Forza gli utenti a salvare tutti i file di lavoro in OneDrive for Business  <br/> |Se questa impostazione è **attivata,** l'unico percorso di salvataggio disponibile per i file di lavoro è OneDrive for Business.  <br/> |
 |Crittografa i file di lavoro  <br/> |Mantenere **attivata** questa impostazione in modo che i file di lavoro siano protetti dalla crittografia. Anche se il dispositivo viene perso o rubato, nessuno può leggere i dati aziendali.  <br/> |
@@ -92,10 +92,10 @@ Le impostazioni seguenti sono disponibili per la protezione dei file di lavoro i
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Impostazioni che controllano la modalità di accesso degli utenti ai file di Office nei dispositivi mobili
 
 Le impostazioni seguenti sono disponibili per la gestione della modalità di accesso degli utenti ai file di lavoro di Office:
-  
-|||
-|:-----|:-----|
+
+
 |Impostazione  <br/> |Descrizione  <br/> |
+|:-----|:-----|
 |Richiedi un PIN o l'impronta digitale per accedere alle app di Office  <br/> |Se questa impostazione è **Attivata,** gli utenti devono fornire un'altra forma di autenticazione, oltre al nome utente e alla password, prima di poter usare le app Office nei dispositivi mobili.<br/> |
 |Reimposta il PIN dopo il numero di tentativi di accesso falliti seguente  <br/> |Per impedire a un utente non autorizzato di indovinare casualmente un PIN, il PIN verrà reimpostato dopo il numero specificato di tentativi di immissione non riusciti.  <br/> |
 |Richiedi agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive per  <br/> |Questa impostazione determina per quanto tempo un utente può essere inattivo prima che venga richiesto di eseguire di nuovo l'accesso.  <br/> |

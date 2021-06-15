@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come pianificare la sicurezza e la privacy di Microsoft Viva Topics
-ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114063"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925492"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Sicurezza e privacy di Microsoft Viva Topics
 
@@ -57,6 +57,10 @@ Nella tabella seguente vengono descritti gli elementi che gli utenti, i visualiz
 |File|I file sono visibili solo agli utenti che dispongono delle autorizzazioni per il contenuto di origine.|
 |Pagine|Le pagine sono visibili solo agli utenti che dispongono delle autorizzazioni per il contenuto di origine.|
 |Siti|I siti sono visibili solo agli utenti che dispongono delle autorizzazioni per il contenuto di origine.|
+
+## <a name="users-personal-and-private-data"></a>Dati personali e privati degli utenti
+
+Viva Topics consente di individuare solo gli argomenti SharePoint siti specificati. L'archiviazione personale degli utenti, ad esempio la posta OneDrive, non è inclusa.
 
 ## <a name="best-practices"></a>Procedure consigliate
 

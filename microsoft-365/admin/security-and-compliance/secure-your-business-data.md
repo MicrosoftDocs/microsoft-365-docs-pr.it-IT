@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: Proteggere la posta elettronica aziendale e i dati da minacce informatiche, inclusi ransomware, phishing e allegati dannosi.
-ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Come proteggere la posta elettronica aziendale e i dati da minacce informatiche, tra cui ransomware, phishing e allegati dannosi.
+ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635963"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924624"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>I 10 modi principali per proteggere i Microsoft 365 per le aziende
 
@@ -35,7 +35,7 @@ Se si è un'organizzazione di piccole o medie dimensioni che utilizza uno dei pi
 
 Microsoft consiglia di completare le attività elencate nella tabella seguente che si applicano al piano di servizio.
 
-||Attività|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
+|*Numero*|Attività|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
 |1|[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Formazione degli utenti](secure-your-business-data.md#train)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -152,7 +152,7 @@ Per creare una regola di trasporto della posta, visualizzare [un breve video di 
 
 5. Applicare le impostazioni nella tabella seguente per ogni regola. Lasciare il resto delle impostazioni come predefinito, a meno che non si desideri modificarle.
 
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
     
 | Impostazione | Avvisare gli utenti prima di aprire allegati Office file | Bloccare i tipi di file che potrebbero contenere ransomware o altro codice dannoso |
 |:-----|:-----|:-----|
@@ -188,7 +188,7 @@ Per creare una regola di trasporto della posta:
 
 5. Applicare le impostazioni nella tabella seguente. Lasciare il resto delle impostazioni come predefinito, a meno che non si desideri modificarle.
 
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
 
 |Impostazione|Rifiutare i messaggi di posta elettronica di inoltro automatico ai domini esterni|
 |---|---|
@@ -326,7 +326,7 @@ Per modificare il criterio predefinito:
 
 3. In **Impostazioni** che si applicano **al** contenuto ad eccezione della posta elettronica, selezionare Office 365 applications , Do not track when users click **safe links** e Do not let users click through safe links to original **URL**.
 
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
 
 Per creare un nuovo criterio destinato a tutti i destinatari del dominio:
 
@@ -334,7 +334,7 @@ Per creare un nuovo criterio destinato a tutti i destinatari del dominio:
 
 2. Applicare le impostazioni elencate nella tabella seguente.
 
-3. Selezionare **Salva**.
+3. Seleziona **Salva**.
 
 |Impostazione o opzione|Impostazione consigliata|
 |---|---|

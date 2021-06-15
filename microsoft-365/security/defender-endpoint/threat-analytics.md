@@ -1,7 +1,7 @@
 ---
 title: Tenere traccia e rispondere alle minacce emergenti con Microsoft Defender for Endpoint Threat Analytics
 ms.reviewer: ''
-description: Informazioni sulle minacce emergenti e sulle tecniche di attacco e su come arrestarle. Valutarne l'impatto sull'organizzazione e valutare la resilienza dell'organizzazione.
+description: Comprendere le minacce emergenti e le tecniche di attacco e come arrestarle. Valutarne l'impatto sull'organizzazione e valutare la resilienza dell'organizzazione.
 keywords: analisi delle minacce, valutazione dei rischi, mitigazione del sistema operativo, mitigazione del microcodice, stato di mitigazione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 61b6b0c19730045468c77e5f24bf18470aa5dbd5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 63303f9eacd25a8de1c7154ac66c73578bfd495a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688262"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924456"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Tenere traccia e rispondere alle minacce emergenti con l'analisi delle minacce 
+# <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Tenere traccia e rispondere alle minacce emergenti tramite l'analisi delle minacce
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

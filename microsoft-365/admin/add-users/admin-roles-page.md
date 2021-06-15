@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio apre ticket di supporto presso Microsoft.
-ms.openlocfilehash: c1baf7fcd9189973864929550b19ca6e32d499ae
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: I ruoli di amministratore sono mappati alle funzioni aziendali e forniscono le autorizzazioni per eseguire attività specifiche nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio apre ticket di supporto presso Microsoft.
+ms.openlocfilehash: 4e2b1db207a2a590855f7fb2d0bf2019d4b57ea5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706203"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924564"
 ---
 # <a name="get-started-with-the-roles-page"></a>Introduzione alla pagina dei ruoli
 
@@ -41,11 +41,12 @@ Nella pagina Ruoli è possibile concedere agli utenti le autorizzazioni per eseg
 
 ![Filtrare o importare ruoli di amministratore](../../media/admin-role-page-options.png)
 
-|||
-|:-----|:-----|
-|  <br/> |Usare **Esporta elenco di amministratori** per ottenere un elenco completo di tutti gli utenti amministratori nell'organizzazione. L'elenco viene archiviato in un Excel .csv file.   <br/> |
-|  <br/> |Utilizzare **la** ricerca per cercare un ruolo di amministratore e visualizzare gli utenti assegnati a tale ruolo.   <br/> |
-|  <br/> |Usa **Filtro** per modificare la visualizzazione dei ruoli di amministratore visualizzati.   <br/> |
+- Usare Esporta elenco di amministratori per ottenere un elenco completo di tutti gli utenti amministratori nell'organizzazione. L'elenco viene archiviato in un Excel .csv file.
+
+- Utilizzare la ricerca per cercare un ruolo di amministratore e visualizzare gli utenti assegnati a tale ruolo.
+
+- Usa Filtro per modificare la visualizzazione dei ruoli di amministratore visualizzati.
+
 
 ## <a name="get-the-most-out-of-the-roles"></a>Ottenere il massimo dei ruoli
 

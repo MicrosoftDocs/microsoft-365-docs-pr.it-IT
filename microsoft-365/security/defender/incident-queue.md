@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636267"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925888"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli eventi imprevisti in Microsoft 365 Defender
 
@@ -82,6 +82,23 @@ In questa tabella sono elencati i nomi dei filtri disponibili.
 | Gravità | La gravità di un incidente è indicativa dell'impatto che può avere sulle risorse. Maggiore è la gravità, maggiore è l'impatto e in genere richiede l'attenzione più immediata. |
 | Stato | Puoi scegliere di limitare l'elenco degli eventi imprevisti visualizzati in base al loro stato per vedere quali sono attivi o risolti. |
 |||
+
+## <a name="save-defined-filters-as-urls"></a>Salvare i filtri definiti come URL
+
+Dopo aver configurato un filtro utile nella coda degli eventi imprevisti, è possibile aggiungere un segnalibro all'URL della scheda del browser o salvarlo in altro modo come collegamento in una pagina Web, in un documento di Word o in un punto a scelta. In questo modo sarà possibile accedere con un solo clic alle visualizzazioni chiave della coda degli eventi imprevisti, ad esempio:
+
+- Nuovi eventi imprevisti
+- Eventi imprevisti di gravità elevata
+- Eventi imprevisti non assegnati
+- Eventi imprevisti non assegnati e di gravità elevata
+- Eventi imprevisti assegnati a me
+- Eventi imprevisti assegnati a me e a Microsoft Defender per Endpoint
+- Eventi imprevisti con uno o più tag specifici
+- Eventi imprevisti con una categoria di minacce specifica
+- Eventi imprevisti con una minaccia associata specifica
+- Eventi imprevisti con un attore specifico
+
+Dopo aver compilato e archiviato l'elenco di visualizzazioni filtro utili come URL, è possibile [](manage-incidents.md) utilizzarlo rapidamente per elaborare e definire le priorità degli eventi imprevisti nella coda e gestirli per l'analisi successiva.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

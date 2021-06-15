@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Informazioni sulla configurazione delle impostazioni del criterio dispositivo predefinito che qualsiasi dispositivo Windows 10 riceverà all'accesso al proprio account aziendale o dell'istituto di istruzione.
-ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3f85549e722c9aa4196cf50fc02bee2e89506017
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579975"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925240"
 ---
 # <a name="secure-windows-10-devices"></a>Proteggere i dispositivi Windows 10
 
@@ -44,9 +44,10 @@ Le impostazioni configurate qui fanno parte dei criteri predefiniti per i dispos
 
 Per impostazione predefinita, tutte le impostazioni sono **attivate**. Sono disponibili le impostazioni seguenti:
   
-|||
-|:-----|:-----|
+
+
 |Impostazione  <br/> |Descrizione  <br/> |
+|:-----|:-----|
 |Protegge i PC da virus e altre minacce tramite Windows Defender Antivirus  <br/> |Richiede l'attivazione di Windows Defender Antivirus per la protezione dei PC dai pericoli derivanti dalla connessione a Internet.  <br/> |
 |Protegge i PC dalle minacce del Web in Microsoft Edge  <br/> |Attiva le impostazioni di Microsoft Edge che consentono di proteggere gli utenti da siti e download dannosi.  <br/> |
 |Proteggi file e cartelle dei PC dall'accesso non autorizzato con BitLocker  <br/> |Bitlocker protegge i dati crittografando le unità disco rigido del computer e impedisce l'esposizione dei dati in caso di furto o smarrimento di un computer. Per altre informazioni, vedi Domande [frequenti su Bitlocker.](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)  <br/> |
