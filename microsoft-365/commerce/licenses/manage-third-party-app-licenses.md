@@ -1,5 +1,5 @@
 ---
-title: Gestire le licenze delle app di terze parti nell'Microsoft 365 di amministrazione
+title: Gestire le licenze delle app ISV nell'Microsoft 365 di amministrazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,24 +18,24 @@ ms.custom:
 - commerce_licensing
 search.appverid:
 - MET150
-description: Informazioni su come gestire le licenze per le app di terze parti nell'Microsoft 365 di amministrazione.
-ms.date: 04/30/2021
-ms.openlocfilehash: 2b74c8a43f759ca2cdcecac6a59fca5c0952b44f
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+description: Informazioni su come gestire le licenze per le app isv (Independent Software Vendor) nell'Microsoft 365 di amministrazione.
+ms.date: 06/15/2021
+ms.openlocfilehash: e19277a34c896d918d545cca27b1c435ca221e6f
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821404"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932807"
 ---
-# <a name="manage-third-party-app-licenses-in-the-microsoft-365-admin-center"></a>Gestire le licenze delle app di terze parti nell'Microsoft 365 di amministrazione
+# <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Gestire le licenze delle app ISV nell'Microsoft 365 di amministrazione
 
-Un'app di terze parti è un'app acquistata da un fornitore di software diverso da Microsoft.
+Un'app isv (Independent Software Vendor) è un'app acquistata da un fornitore di software diverso da Microsoft.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 Per assegnare le licenze è necessario essere un amministratore globale, delle licenze o degli utenti. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
-## <a name="assign-third-party-app-licenses-to-users-or-groups"></a>Assegnare licenze di app di terze parti a utenti o gruppi
+## <a name="assign-isv-app-licenses-to-users-or-groups"></a>Assegnare licenze di app ISV a utenti o gruppi
 
 1. Nell'Microsoft 365 di amministrazione passare alla pagina **Licenze**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">di</a> fatturazione.
 2. Seleziona l'app per cui vuoi assegnare le licenze.
@@ -43,24 +43,24 @@ Per assegnare le licenze è necessario essere un amministratore globale, delle l
 4. Nel riquadro **Assegna licenze** iniziare a digitare il nome di un utente o di un gruppo e quindi sceglierlo dai risultati per aggiungerlo all'elenco.
 5. Al termine, selezionare **Assegna**, quindi fare clic su **Chiudi**.
 
-## <a name="unassign-third-party-app-licenses-from-users-or-groups"></a>Annullare l'assegnazione di licenze di app di terze parti da utenti o gruppi
+## <a name="unassign-isv-app-licenses-from-users-or-groups"></a>Annullare l'assegnazione di licenze di app ISV da utenti o gruppi
 
 1. Nell'interfaccia di amministrazione, **pagina**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze di</a> fatturazione.
 2. Seleziona l'app per cui vuoi annullare l'assegnazione delle licenze.
 3. Nella pagina dei dettagli della licenza seleziona gli utenti e i gruppi da cui rimuovere le licenze, quindi seleziona Annulla assegnazione licenze.
 4. Nella finestra di dialogo confermare che si desidera rimuovere le licenze, quindi selezionare Annulla assegnazione.
 
-## <a name="add-or-remove-third-party-app-licenses-for-your-account"></a>Aggiungere o rimuovere licenze di app di terze parti per il tuo account
+## <a name="add-or-remove-isv-app-licenses-for-your-account"></a>Aggiungere o rimuovere licenze per app ISV per il tuo account
 
-Le licenze di app di terze parti sono gestite dal fornitore dell'app. Contatta il fornitore per aggiungere o rimuovere licenze per il tuo account.
+Le licenze delle app ISV sono gestite dal fornitore dell'app. Contatta il fornitore per aggiungere o rimuovere licenze per il tuo account.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-A seconda dell'app di terze parti acquistata, il passaggio successivo potrebbe consistere nell'installare l'app nell'ambiente dell'organizzazione. L'installazione dell'app la rende disponibile per gli utenti. Usa la procedura seguente per installare un'app di terze parti nel tuo ambiente.
+A seconda dell'app ISV acquistata, il passaggio successivo potrebbe consistere nell'installare l'app nell'ambiente dell'organizzazione. L'installazione dell'app la rende disponibile per gli utenti. Usa la procedura seguente per installare un'app ISV nel tuo ambiente.
 
 1. Nell'interfaccia di amministrazione, **pagina**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze di</a> fatturazione.
 2. Seleziona l'app che vuoi installare nel tuo account.
-3. Nella pagina dei dettagli della licenza seleziona Installa il prodotto. Si viene reindirizzati a un altro sito della piattaforma in cui si installa l'app nell'ambiente.
+3. Nella pagina dei dettagli della licenza seleziona **Installa questo prodotto.** Si viene reindirizzati a un altro sito della piattaforma in cui si installa l'app nell'ambiente.
 
 ## <a name="related-content"></a>Contenuto correlato
 

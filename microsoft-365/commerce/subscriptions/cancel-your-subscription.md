@@ -19,14 +19,17 @@ ms.custom:
 search.appverid: MET150
 description: Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende nell'interfaccia di amministrazione.
 ms.date: 04/08/2021
-ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5c4ce1c00bfde4a895710d737fab0836998836c6
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536119"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929456"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
+
+> [!IMPORTANT]
+> Questo articolo si applica solo agli abbonamenti a Microsoft 365 per le aziende. Per gli abbonamenti Microsoft 365 Family o Personal, vedere [Annullare un abbonamento Microsoft 365](https://support.microsoft.com/it-IT/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b).
 
 *Idoneità:* Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se si hanno più di 25 licenze assegnate a utenti, ridurlo a meno di 25 o [contattare il supporto per annullare l'abbonamento](../../business-video/get-help-support.md).
 
@@ -46,7 +49,7 @@ Se si è aggiunto il nome del proprio dominio per usarlo con l’abbonamento, è
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Trovare l'abbonamento da annullare. Selezionare i tre puntini (Altre azioni), quindi **Annulla abbonamento**.
+2. Trovare l'abbonamento da annullare. Selezionare i tre puntini (Altre azioni) e quindi **Annulla abbonamento**.
 3. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Se si vuole, inviare un feedback.
 4. Selezionare **Salva**.
 
@@ -69,7 +72,7 @@ L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità
 ::: moniker-end
 
 2. Selezionare la scheda **Prodotti**.
-3. Trovare l'abbonamento da annullare. Selezionare i tre puntini (Altre azioni), quindi **Annulla abbonamento**.
+3. Trovare l'abbonamento da annullare. Selezionare i tre puntini (Altre azioni) e quindi **Annulla abbonamento**.
 4. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Se si vuole, inviare un feedback.
 5. Selezionare **Salva**.
 

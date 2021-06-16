@@ -20,12 +20,12 @@ description: Informazioni su come SharePoint Online rileva i virus nei file cari
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd38b196c106a36fb1a1bfc0a441620b1c5b8ba5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205334"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932831"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protezione da virus integrata in SharePoint Online, OneDrive e Microsoft Teams
 
@@ -68,7 +68,7 @@ Ecco cosa succede:
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>Cosa succede quando il OneDrive client di sincronizzazione tenta di sincronizzare un file infetto?
 
-OneDrive client di sincronizzazione non scaricano file contenenti virus. Il client di sincronizzazione visualizza una notifica che indica che il file non può essere sincronizzato.
+Quando un file dannoso viene caricato OneDrive, verrà sincronizzato con il computer locale prima di essere contrassegnato come malware. Dopo essere stato contrassegnato come malware, l'utente non può più aprire il file sincronizzato dal computer locale.
 
 ## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Funzionalità estese con Microsoft Defender per Office 365
 

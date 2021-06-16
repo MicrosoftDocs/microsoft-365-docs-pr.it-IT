@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: comprendere le azioni e gli impatti delle fasi di migrazione del passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a servizi Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796043"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930452"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Azioni e impatti delle fasi di migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -102,8 +102,6 @@ Se non si completa questa attività, le richieste di disponibilità ibride potre
 
 **Si applica a:** Tutti i clienti con Office 365 tenant ospitato in Microsoft Cloud Deutschland (MCD)
 
-I tenant di Microsoft Cloud Deutschland partner non verranno migrati. I clienti CSP verranno migrati Office 365 servizi di distribuzione nel nuovo tenant dei Office 365 dello stesso partner. Dopo la migrazione del cliente, il partner può gestire questo cliente solo dal tenant Office 365 services.
-
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
 | Le sottoscrizioni vengono trasferite| La sottoscrizione Microsoft Cloud Deutschland verrà migrata alla sottoscrizione di servizi globali Office 365 corrispondente. <ul><li>L Office 365'offerta di servizi globali di tale sottoscrizione è definita da Microsoft (nota anche come _mapping delle offerte)._</li><li> Le Office 365 servizi globali corrispondenti vengono acquistate nell'Office 365 globale per le sottoscrizioni Microsoft Cloud Deutschland trasferite.</li><li>Le sottoscrizioni legacy di Microsoft Cloud Deutschland vengono rimosse dal tenant dei Office 365 al completamento.</li></ul>| <ul><li>Le modifiche apportate alle sottoscrizioni esistenti verranno bloccate (ad esempio, non verranno apportate modifiche al numero di nuovi abbonamenti o al numero di postazioni) durante questa fase.</li><li>Le modifiche all'assegnazione delle licenze verranno bloccate.</li><li>Al termine della migrazione delle sottoscrizioni, sia i servizi di Office 365 che le sottoscrizioni Microsoft Cloud Deutschland saranno visibili nel portale di Amministrazione di Office 365, con lo stato di sottoscrizioni Microsoft Cloud Deutschland come _deprovisioned_. </li><li>Tutti i processi dei clienti che hanno dipendenze dalle sottoscrizioni Microsoft Cloud Deutschland o dai GUID SKU verranno interrotti e dovranno essere rivisti con l'offerta Office 365 servizi. </li><li>Le nuove sottoscrizioni nei servizi Office 365 verranno acquistate con il nuovo termine (mensile/trimestrale/annuale) e il cliente riceverà un rimborso ricomposizione per il saldo inutilizzato dell'abbonamento a Microsoft Cloud Deutschland. </li></ul> |
@@ -116,6 +114,8 @@ I tenant di Microsoft Cloud Deutschland partner non verranno migrati. I clienti 
 
 Tra la fase 2 e la fase 3, partner Portal potrebbe non essere accessibile. Durante questo periodo, il partner potrebbe non essere in grado di accedere alle informazioni del tenant nel portale per i partner. Poiché ogni migrazione è diversa, la durata dell'accessibilità può essere in ore.
 
+Ulteriori informazioni per i provider di soluzioni cloud sono disponibili nella migrazione [del tenant partner.](ms-cloud-germany-transition-add-csp.md#partner-tenant-migration)
+
 
 ## <a name="phase-4-sharepoint-online"></a>Fase 4: SharePoint Online
 
@@ -126,7 +126,7 @@ Nel caso in cui si utilizzino ancora SharePoint 2013, limitare l'utilizzo dei fl
 | Step(s) | Descrizione | Impatto |
 |:-------|:-----|:-------|
 | SharePoint e OneDrive transizione | SharePoint Online e OneDrive for Business vengono migrati da Microsoft Cloud Deutschland a Office 365 servizi globali in questa fase.<br><ul><li>Gli URL esistenti di Microsoft Cloud Deutschland vengono mantenuti (ad esempio, `contoso.sharepoint.de` ).</li><li>I siti esistenti vengono mantenuti.</li><li>I token di autenticazione sul lato client emessi dal servizio token di sicurezza (STS) nell'istanza dei servizi Microsoft Cloud Deutschland o Office 365 Global sono validi durante la transizione.</li></ul>|<ul><li>Il contenuto sarà di sola lettura per due brevi periodi durante la migrazione. Durante questo periodo, è previsto un banner "non è possibile modificare il contenuto" in SharePoint.</li><li>L'indice di ricerca non verrà conservato e la ricostruzione potrebbe richiedere fino a 10 giorni.</li><li>SharePoint Il contenuto online e OneDrive for Business sarà di sola lettura per due brevi periodi durante la migrazione. Durante questo periodo, gli utenti vedranno un banner "Non è possibile modificare il contenuto".</li><li>Al termine della migrazione SharePoint Online, i risultati della ricerca per il contenuto di SharePoint Online e OneDrive for Business potrebbero non essere disponibili durante la ricostruzione dell'indice. Durante questo periodo, le query di ricerca potrebbero non restituire risultati completi. Le funzionalità che dipendono da indici di ricerca, ad esempio SharePoint Notizie online, potrebbero essere interessate durante il completamento della reindicizzazione.</li><li>SharePoint 2013 i flussi di lavoro verranno interrotti durante la migrazione e devono essere ripubblicati dopo la migrazione.</li></ul>
-|**Amministratore di SharePoint Server**: Ripubblicare SharePoint 2013| Un SharePoint online ripubblica i flussi SharePoint 2013 dopo la migrazione.|SharePoint flussi di lavoro 2013 sono disponibili.
+|**Amministratore di SharePoint Server**: Ripubblicare SharePoint 2013| Un SharePoint online ripubblica i flussi SharePoint 2013 dopo la migrazione.| Si tratta di un'azione obbligatoria. La mancata riuscita di questa operazione può causare confusione dell'utente, chiamate all'help desk e una riduzione della produttività.
 |**Utente di PowerShell**: Aggiornamento al nuovo modulo| Tutti gli utenti del modulo powershell di SharePoint Online devono aggiornare il modulo/Microsoft.SharePointOnline.CSOM alla versione 16.0.20717.12000 o successiva dopo il completamento della migrazione di SharePoint Online. Il completamento viene comunicato nel centro messaggi.| SharePoint Online tramite PowerShell o il modello a oggetti sul lato client non avrà più esito negativo.
 ||||
 
@@ -189,6 +189,8 @@ Considerazioni aggiuntive:
 - Agli utenti di Outlook Web App che accedono a una cassetta postale condivisa nell'altro ambiente (ad esempio, un utente nell'ambiente MCD accede a una cassetta postale condivisa nell'ambiente globale) verrà richiesto di eseguire l'autenticazione una seconda volta. L'utente deve prima autenticare e accedere alla propria cassetta postale in `outlook.office.de` , quindi aprire la cassetta postale condivisa in `outlook.office365.com` . Dovranno eseguire l'autenticazione una seconda volta quando accedono alle risorse condivise ospitate nell'altro servizio.
 - Per i clienti Microsoft Cloud Deutschland esistenti o quelli in transizione, quando una cassetta postale condivisa viene aggiunta a Outlook utilizzando **File > Info > Aggiungi account**, la visualizzazione delle autorizzazioni del calendario potrebbe non riuscire (il client Outlook tenta di utilizzare l'API Rest `https://outlook.office.de/api/v2.0/Me/Calendars` ). I clienti che desiderano aggiungere un account per visualizzare le autorizzazioni del calendario possono aggiungere la chiave del Registro di sistema come descritto in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) per garantire che questa azione abbia esito positivo. Questa chiave del Registro di sistema può essere distribuita a livello di organizzazione tramite Criteri di gruppo.
 - Tutti i clienti che utilizzano una configurazione ibrida di Exchange attiva non sono in grado di spostare le cassette postali da Exchange Server locale a Exchange Online, né a Microsoft Cloud Deutschland né alla nuova area dati in Germania. I clienti devono assicurarsi che gli spostamenti continui delle cassette postali siano stati completati prima della fase 5 e che siano ripresi dopo il completamento di questa fase.
+- L'esecuzione di , un cmdlet di PowerShell, durante la migrazione di Exchange `Test-MigrationServerAvailabiilty` da Microsoft Cloud Deutschland a Office 365 potrebbe non funzionare. Tuttavia, funzionerà correttamente al termine della migrazione.
+- Se i client si verificano problemi con le credenziali o l'autorizzazione dopo la migrazione delle cassette postali, reimmigare le credenziali di amministratore locale nell'endpoint di migrazione eseguendo o impostando la stessa tramite il Pannello di controllo di `Set-MigrationEndpoint -Identity <endpointName> -Credential $(Get-Credential)` Exchange.
 - Assicurarsi che tutti gli utenti che utilizzano protocolli legacy (POP3/IMAP4/SMTP) per i propri dispositivi siano pronti a modificare gli endpoint nel client dopo che la cassetta postale di Exchange è stata spostata nella nuova area del datacenter tedesco, come descritto nei passaggi [di pre-migrazione](ms-cloud-germany-transition-add-pre-work.md#exchange-online)per Exchange Online .
 - La pianificazione Skype for Business riunioni in Outlook Web App non è più disponibile dopo la migrazione della cassetta postale. Se necessario, gli utenti devono usare Outlook utenti.
 
@@ -315,6 +317,11 @@ Microsoft Azure i clienti devono eseguire la transizione dei carichi di lavoro d
 | Aggiornare gli endpoint dell'applicazione Azure AD | È necessario aggiornare gli endpoint di autenticazione, Azure Active Directory (Azure AD) Graph e MS Graph per le applicazioni a quelli del servizio Microsoft Worldwide. | 30 giorni dopo la finalizzazione della migrazione, gli endpoint di Microsoft Cloud Deutschland smetteranno di rispettare le richieste; il traffico del client o dell'applicazione avrà esito negativo. |
 | Eseguire la migrazione dei carichi di lavoro di Azure | I clienti dei servizi di Azure devono effettuare il provisioning di nuove sottoscrizioni a livello mondiale per i servizi di Azure ed eseguire la migrazione in base al [playbook di migrazione di Azure.](/azure/germany/germany-migration-main) | Quando si esegue la transizione completa al servizio globale (fase 10), i clienti non saranno più in grado di accedere ai carichi di lavoro di Azure presenti nel portale di Azure di Microsoft Cloud Deutschland. |
 ||||
+
+**Si applica a:** Clienti con dispositivi registrati o aggiunti ad Azure AD
+
+Al termine della fase 9, i dispositivi registrati e aggiunti ad Azure AD devono essere connessi all'istanza di Azure AD di transizione nella nuova area dati tedesca.
+I dispositivi non aggiunti di nuovo ad Azure AD potrebbero non funzionare più alla fine della fase 10. Per istruzioni dettagliate e ulteriori dettagli, fare riferimento alle [informazioni aggiuntive sui dispositivi](ms-cloud-germany-transition-add-devices.md).
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect
 **Si applica a:** Tutti i clienti che sincronizzano le identità con Azure AD connect

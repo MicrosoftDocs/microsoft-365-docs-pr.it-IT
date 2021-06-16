@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844875"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929696"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Risolvere i problemi di onboarding di Microsoft Defender per endpoint
 
@@ -334,6 +334,8 @@ I passaggi seguenti forniscono indicazioni per lo scenario seguente:
 - Il dispositivo viene disattivato o riavviato prima che l'utente finale esegua il primo accesso
 - In questo scenario, il servizio SENSE non verrà avviato automaticamente anche se il pacchetto di onboarding è stato distribuito
 
+<div class="alert"><b>NOTA:</b> L'accesso utente dopo la configurazione non è più necessario per l'avvio del servizio SENSE nelle versioni di Windows seguenti o più recenti: Windows 10, versione 1809 o Windows Server 2019 con aggiornamento cumulativo del 22 aprile [2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, versione 1909 con aggiornamento cumulativo [di aprile 2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, versione 2004/20H2 con aggiornamento [cumulativo del 28 aprile 2021](https://support.microsoft.com/kb/5001391) </div> 
+<br></br>
 > [!NOTE]
 > I passaggi seguenti sono rilevanti solo quando si usa Microsoft Endpoint Configuration Manager. Per altri dettagli sull'onboarding Microsoft Endpoint Configuration Manager, vedi [Microsoft Defender for Endpoint.](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)
 

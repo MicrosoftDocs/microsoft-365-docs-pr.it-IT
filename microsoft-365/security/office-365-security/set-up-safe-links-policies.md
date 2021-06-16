@@ -18,12 +18,12 @@ ms.collection:
 description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri collegamenti sicuri e le impostazioni globali dei collegamenti sicuri in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61cb4746289a8acbdd9af7f668010604de511902
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 40ae52cfce53c3fa14253a94e72f1a2bccda9a86
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694498"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929828"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -43,7 +43,7 @@ Non esiste un criterio predefinito o predefinito per i collegamenti sicuri. Per 
 > [!NOTE]
 > Le impostazioni globali per la protezione dei collegamenti sicuri vengono configurate **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [Configurare le impostazioni globali per i collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
 
-È possibile configurare i criteri collegamenti sicuri nel Centro sicurezza & conformità o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi di Microsoft Defender per Office 365).
+È possibile configurare i criteri collegamenti sicuri nel portale di Microsoft 365 Defender o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi di Microsoft Defender per Office 365).
 
 Gli elementi di base di un criterio Collegamenti sicuri sono:
 
@@ -53,7 +53,7 @@ Gli elementi di base di un criterio Collegamenti sicuri sono:
 > [!IMPORTANT]
 > Gli amministratori devono considerare le diverse impostazioni di configurazione per SafeLinks. Una delle opzioni disponibili è includere informazioni identificabili dall'utente in SafeLinks. Questa funzionalità consente *ai team di Security Ops di* analizzare potenziali compromissione degli utenti, intraprendere azioni correttive e limitare costose violazioni.
 
-La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri dei collegamenti sicuri nel Centro sicurezza & conformità:
+La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri dei collegamenti sicuri nel portale di Microsoft 365 Defender:
 
 - Quando si crea un criterio Collegamenti sicuri, si crea contemporaneamente una regola per i collegamenti sicuri e il criterio collegamenti sicuri associati utilizzando lo stesso nome per entrambi.
 - Quando si modifica un criterio Collegamenti sicuri, le impostazioni relative al nome, alla priorità, abilitate o disabilitate e ai filtri destinatario modificano la regola dei collegamenti sicuri. Tutte le altre impostazioni modificano il criterio dei collegamenti sicuri associati.
@@ -63,19 +63,19 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla **pagina Collegamenti sicuri,** utilizzare <https://protection.office.com/safelinksv2> .
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com/>. Per passare direttamente alla **pagina Collegamenti sicuri,** utilizzare <https://security.microsoft.com/safelinksv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
-  - Per creare, modificare ed eliminare i criteri collegamenti sicuri,  è necessario essere membri dei gruppi di ruoli Gestione organizzazione  o Amministratore sicurezza nel Centro sicurezza & conformità e membri del gruppo di ruoli Gestione organizzazione in Exchange Online.  
+  - Per creare, modificare ed eliminare i criteri collegamenti sicuri,  è necessario essere membri dei gruppi di ruoli Gestione organizzazione  o Amministratore sicurezza nel portale di Microsoft 365 Defender e membri del gruppo di ruoli Gestione organizzazione in Exchange Online.  
   - Per l'accesso in sola lettura ai criteri collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
 
-  Per ulteriori informazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md) e Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md) e Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   > 
-  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > - L'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   . - Il **gruppo di ruoli Gestione** organizzazione di sola [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) consente inoltre l'accesso in sola lettura alla funzionalità.
 
 - Per le impostazioni consigliate per i criteri collegamenti sicuri, vedere [Impostazioni dei criteri Collegamenti sicuri.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
@@ -84,11 +84,11 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 
 - [Nuove funzionalità vengono continuamente aggiunte a Microsoft Defender per Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). Quando vengono aggiunte nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri collegamenti sicuri esistenti.
 
-## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>Usare il Centro sicurezza & conformità per creare criteri collegamenti sicuri
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per creare criteri collegamenti sicuri
 
-La creazione di un criterio collegamenti sicuri personalizzati nel Centro sicurezza & conformità crea contemporaneamente la regola dei collegamenti sicuri e il criterio collegamenti sicuri associati utilizzando lo stesso nome per entrambi.
+La creazione di un criterio collegamenti sicuri personalizzati nel portale di Microsoft 365 Defender crea contemporaneamente la regola dei collegamenti sicuri e il criterio collegamenti sicuri associati utilizzando lo stesso nome per entrambi.
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce Collegamenti sicuri \>  \> **ATP**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
 
 2. Nella pagina **Collegamenti sicuri** fare clic su **Crea.**
 
@@ -158,29 +158,29 @@ La creazione di un criterio collegamenti sicuri personalizzati nel Centro sicure
 
    Al termine dell'operazione, scegliere **Fine**.
 
-## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Usare il Centro sicurezza & conformità per visualizzare i criteri collegamenti sicuri
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per visualizzare i criteri collegamenti sicuri
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce Collegamenti sicuri \>  \> **ATP**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
 
 2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
    I dettagli dei criteri vengono visualizzati in un riquadro a comparsa
 
-## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>Utilizzare il Centro sicurezza & conformità per modificare i criteri collegamenti sicuri
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per modificare i criteri collegamenti sicuri
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce Collegamenti sicuri \>  \> **ATP**.
+1. Nel portale Microsoft 365 Defender passare a ***Criteri & regole di** \> **minaccia** \> **Collegamenti sicuri**.
 
 2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
 3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic **su Modifica criterio.**
 
-Le impostazioni disponibili nel riquadro a comparsa visualizzato sono identiche a quelle descritte nella sezione Utilizzare il Centro [sicurezza &](#use-the-security--compliance-center-to-create-safe-links-policies) conformità per creare criteri collegamenti sicuri.
+Le impostazioni disponibili nel riquadro a comparsa visualizzato sono identiche a quelle descritte nella sezione Usare il portale [di Microsoft 365 Defender per](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) creare criteri collegamenti sicuri.
 
 Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei criteri, vedere le sezioni seguenti.
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Abilitare o disabilitare i criteri collegamenti sicuri
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce Collegamenti sicuri \>  \> **ATP**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
 
 2. Notare il valore nella **colonna** Stato:
 
@@ -197,11 +197,11 @@ Per altre informazioni sull'ordine di precedenza e su come vengono valutati e ap
 I criteri collegamenti sicuri vengono visualizzati nell'ordine in cui vengono elaborati (il primo criterio ha il **valore Priority** 0).
 
 > [!NOTE]
-> Nel Centro sicurezza & conformità, è possibile modificare la priorità del criterio Collegamenti sicuri solo dopo aver creato il criterio. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola dei collegamenti sicuri (che può influire sulla priorità delle regole esistenti).
+> Nel portale Microsoft 365 Defender puoi modificare la priorità del criterio Collegamenti sicuri solo dopo aver creato il criterio. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola dei collegamenti sicuri (che può influire sulla priorità delle regole esistenti).
 
-Per modificare la priorità di un criterio, spostare il criterio più in alto o più in basso nell'elenco (non è possibile modificare direttamente il numero **Priority** nel Centro sicurezza e conformità).
+Per modificare la priorità di un criterio, spostare il criterio verso l'alto o verso il basso nell'elenco (non è possibile modificare direttamente il numero di priorità nel portale di Microsoft 365 Defender). 
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce Collegamenti sicuri \>  \> **ATP**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
 
 2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -217,9 +217,9 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
 5. Al termine, fare clic su **Chiudi**.
 
-## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>Usare il Centro sicurezza & conformità per rimuovere i criteri collegamenti sicuri
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per rimuovere i criteri collegamenti sicuri
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce Collegamenti sicuri \>  \> **ATP**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
 
 2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -246,12 +246,12 @@ La creazione di un criterio collegamenti sicuri in PowerShell è un processo in 
 > 
 > - È possibile creare una nuova regola per i collegamenti sicuri e assegnarle un criterio di collegamenti sicuri non associazione esistente. Una regola dei collegamenti sicuri non può essere associata a più di un criterio collegamenti sicuri.
 > 
-> - È possibile configurare le impostazioni seguenti nei nuovi criteri dei collegamenti sicuri in PowerShell che non sono disponibili nel Centro sicurezza & conformità fino a quando non si crea il criterio:
+> - È possibile configurare le impostazioni seguenti nei nuovi criteri dei collegamenti sicuri in PowerShell che non sono disponibili nel portale di Microsoft 365 Defender fino a quando non si crea il criterio:
 > 
 >   - Creare il nuovo criterio come disabilitato (_Abilitato_ `$false` nel cmdlet **New-SafeLinksRule).**
 >   - Impostare la priorità del criterio durante la creazione (_Priority_ _\<Number\>_ ) nel cmdlet **New-SafeLinksRule.**
 > 
-> - Un nuovo criterio di collegamenti sicuri creato in PowerShell non è visibile nel Centro sicurezza & conformità finché non si assegna il criterio a una regola dei collegamenti sicuri.
+> - Un nuovo criterio di collegamenti sicuri creato in PowerShell non è visibile nel portale di Microsoft 365 Defender finché non si assegna il criterio a una regola dei collegamenti sicuri.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Passaggio 1: Usare PowerShell per creare un criterio collegamenti sicuri
 
@@ -360,7 +360,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-SafeLin
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>Utilizzare PowerShell per modificare i criteri dei collegamenti sicuri
 
-Non è possibile rinominare un criterio collegamenti sicuri in PowerShell (il cmdlet **Set-SafeLinksPolicy** non dispone di _alcun parametro Name)._ Quando si rinomina un criterio Collegamenti sicuri nel Centro sicurezza & conformità, si rinomina solo la regola dei collegamenti _sicuri._
+Non è possibile rinominare un criterio collegamenti sicuri in PowerShell (il cmdlet **Set-SafeLinksPolicy** non dispone di _alcun parametro Name)._ Quando si rinomina un criterio collegamenti sicuri nel portale di Microsoft 365 Defender, si rinomina solo la regola dei collegamenti _sicuri._
 
 L'unica considerazione aggiuntiva per la modifica dei criteri dei collegamenti sicuri in PowerShell è la sintassi disponibile per il parametro _DoNotRewriteUrls_ (l'elenco "Non riscrivere gli [URL seguenti"):](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
@@ -472,13 +472,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Per verificare che i collegamenti sicuri esempeno l'analisi dei messaggi, controlla microsoft Defender disponibile per Office 365 report. Per ulteriori informazioni, vedere [View reports for Defender for Office 365](view-reports-for-mdo.md) and Use Explorer in the Security & Compliance [Center.](threat-explorer.md)
+Per verificare che i collegamenti sicuri esempeno l'analisi dei messaggi, controlla microsoft Defender disponibile per Office 365 report. Per altre informazioni, vedi [Visualizzare i report per Defender per Office 365](view-reports-for-mdo.md) e Usare Esplora risorse nel portale di Microsoft 365 [Defender.](threat-explorer.md)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
 Per verificare di aver creato, modificato o rimosso correttamente i criteri collegamenti sicuri, eseguire una delle operazioni seguenti:
 
-- Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce Collegamenti sicuri \>  \> **ATP**. Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare altri dettagli, selezionare il criterio nell'elenco e visualizzare i dettagli nel riquadro a comparsa.
+- Nel portale Microsoft 365 Defender passare **a** Criteri & criteri di \> **minaccia** \> **Collegamenti sicuri**. Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare altri dettagli, selezionare il criterio nell'elenco e visualizzare i dettagli nel riquadro a comparsa.
 
 - In Exchange Online PowerShell o Exchange Online Protection PowerShell, sostituire con il nome del criterio o della regola, eseguire il comando seguente e \<Name\> verificare le impostazioni:
 

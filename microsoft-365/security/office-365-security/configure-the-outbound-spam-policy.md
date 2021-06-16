@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri di posta indesiderata in uscita in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13b25300b6e5b42c860c58546f9c084a244b5f1f
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9dadea740267225ff2df316b96ba7ccef92fe01e
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878917"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933132"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurare il filtro posta indesiderata in uscita in EOP
 
@@ -66,9 +66,9 @@ Ogni organizzazione dispone di un criterio di protezione da posta indesiderata i
 
 Per aumentare l'efficacia del filtro posta indesiderata in uscita, è possibile creare criteri di protezione da posta indesiderata in uscita personalizzati con impostazioni più rigorose applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://security.microsoft.com/antispam>.
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://security.microsoft.com/antispam>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -91,7 +91,7 @@ Per aumentare l'efficacia del filtro posta indesiderata in uscita, è possibile 
 
 La creazione di un criterio di posta indesiderata in uscita personalizzato nel portale di Microsoft 365 Defender crea contemporaneamente la regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata associato utilizzando lo stesso nome per entrambi.
 
-1. Nel portale Microsoft 365 Defender passare alla sezione Criteri di **collaborazione** & e-mail & regole Criteri di \>  \>  \>  minaccia Sezione Protezione da \> **posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di protezione da posta indesiderata** fare clic su Crea icona Crea criterio e quindi selezionare In uscita ![ ](../../media/m365-cc-sc-create-icon.png)  dall'elenco a discesa. 
 
@@ -177,7 +177,7 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel p
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>Usare il portale Microsoft 365 Defender per visualizzare i criteri di posta indesiderata in uscita
 
-1. Nel portale Microsoft 365 Defender passare alla sezione Criteri di **collaborazione** & e-mail & regole Criteri di \>  \>  \>  minaccia Sezione Protezione da \> **posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri filtro posta indesiderata** cercare uno dei valori seguenti:
    - Il **valore Type** è Custom outbound spam **policy**
@@ -194,7 +194,7 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel p
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>Utilizzare il portale Microsoft 365 Defender per modificare i criteri di posta indesiderata in uscita
 
-1. Nel portale Microsoft 365 Defender passare alla sezione Criteri di **collaborazione** & e-mail & regole Criteri di \>  \>  \>  minaccia Sezione Protezione da \> **posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di protezione da posta indesiderata** selezionare un criterio di posta indesiderata in uscita dall'elenco facendo clic sul nome:
    - Un criterio personalizzato creato in cui il valore nella colonna **Tipo** è Criterio di posta indesiderata **in uscita personalizzato.**
@@ -210,7 +210,7 @@ Per abilitare o disabilitare un criterio, impostare l'ordine di priorità dei cr
 
 Non è possibile disabilitare il criterio di posta indesiderata in uscita predefinito.
 
-1. Nel portale Microsoft 365 Defender passare alla sezione Criteri di **collaborazione** & e-mail & regole Criteri di \>  \>  \>  minaccia Sezione Protezione da \> **posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di protezione** da posta indesiderata  selezionare un criterio con il valore **Tipo** di Criterio di posta indesiderata in uscita personalizzato dall'elenco facendo clic sul nome.
 
@@ -228,21 +228,21 @@ Tornare alla pagina dei criteri principale, il valore **Stato** del criterio sar
 
 Per impostazione predefinita, ai criteri di posta indesiderata in uscita viene data una priorità basata sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità inferiore rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
-Per modificare la priorità di  un criterio, fai clic su Aumenta priorità o Riduci  priorità nelle proprietà del criterio (non puoi modificare direttamente il numero di priorità nel portale di Microsoft 365 Defender).  La modifica di priorità di un criterio è utile solo se si hanno più criteri.
+Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o **Riduci priorità** nelle proprietà del criterio. Non è possibile modificare direttamente il valore **Priorità** nel portale di Microsoft 365 Defender. La modifica di priorità di un criterio è utile solo se si hanno più criteri.
 
  **Note**:
 
 - Nel portale Microsoft 365 Defender, è possibile modificare la priorità del criterio di posta indesiderata in uscita solo dopo aver creato il criterio. In PowerShell, è possibile sovrascrivere la priorità predefinita quando si crea la regola di filtro della posta indesiderata (che può interessare la priorità delle regole esistenti).
 - I criteri di posta indesiderata in uscita vengono elaborati nell'ordine in cui vengono visualizzati (il primo criterio ha il **valore Priority** 0). Il criterio di posta indesiderata in uscita predefinito ha il valore di priorità **Lowest** e non è possibile modificarlo.
 
-1. Nel portale Microsoft 365 Defender passare alla sezione Criteri di **collaborazione** & e-mail & regole Criteri di \>  \>  \>  minaccia Sezione Protezione da \> **posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di protezione** da posta indesiderata selezionare  un criterio con il valore **Tipo** di Criterio di protezione da posta indesiderata in uscita personalizzato nell'elenco facendo clic sul nome.
 
 3. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato viene visualizzato **Aumenta priorità** o **Riduci priorità** in base al valore di priorità corrente e al numero di criteri personalizzati:
    - Il criterio di posta indesiderata in uscita con **il valore Priority** **0** ha solo l'opzione **Riduci** priorità disponibile.
    - Il criterio di posta indesiderata in uscita con il valore **di priorità** più basso (ad esempio, **3**) ha solo l'opzione **Aumenta** priorità disponibile.
-   - Se si dispone di tre o più criteri di posta indesiderata  in uscita, i criteri tra i valori di priorità più alta e più bassa hanno entrambe le opzioni Aumenta priorità e **Riduci** priorità disponibili.
+   - Se si dispone di tre o più criteri di posta indesiderata  in uscita, i criteri tra i valori di priorità più alta e più bassa hanno entrambe le opzioni Aumenta priorità e Riduci **priorità** disponibili.
 
    Fare clic![ sull’icona Aumenta priorità](../../media/m365-cc-sc-increase-icon.png) **Aumenta priorità** o ![sull’icona Riduci priorità](../../media/m365-cc-sc-decrease-icon.png) **Riduci priorità** per modificare il valore **Priorità**.
 
@@ -252,7 +252,7 @@ Per modificare la priorità di  un criterio, fai clic su Aumenta priorità o Rid
 
 Quando si utilizza il portale di Microsoft 365 Defender per rimuovere un criterio di posta indesiderata in uscita personalizzato, la regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata corrispondente vengono eliminati entrambi. Non è possibile rimuovere il criterio di posta indesiderata in uscita predefinito.
 
-1. Nel portale Microsoft 365 Defender passare alla sezione Criteri di **collaborazione** & e-mail & regole Criteri di \>  \>  \>  minaccia Sezione Protezione da \> **posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di protezione** da posta indesiderata  selezionare un criterio con il valore **Tipo** di Criterio di posta indesiderata in uscita personalizzato dall'elenco facendo clic sul nome. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato fare clic![ sull'icona Altre azioni](../../media/m365-cc-sc-more-actions-icon.png) **Altre azioni** \> ![Icona Elimina criterio](../../media/m365-cc-sc-delete-icon.png) **Elimina criterio**.
 

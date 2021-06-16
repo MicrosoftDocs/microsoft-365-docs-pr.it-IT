@@ -18,17 +18,17 @@ ms.custom:
 - seo-marvel-apr2020
 - Adm_O365
 description: Questo articolo consente di pianificare i requisiti di larghezza di banda di rete per Microsoft 365 e ottimizzare e risolvere i problemi relativi alle prestazioni.
-ms.openlocfilehash: bf05e4128f8ba5ddecce76cb00dc945f43c9c59a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e125011d06ce15218b8602169c08c538f5eec6c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923601"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926704"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Pianificazione della rete e ottimizzazione delle prestazioni per Microsoft 365
 Prima di eseguire la distribuzione per la prima volta o eseguire la migrazione a Microsoft 365, è possibile utilizzare le informazioni contenute in questi argomenti per stimare la larghezza di banda necessaria e quindi testare e verificare di disporre di larghezza di banda sufficiente per la distribuzione o la migrazione a Microsoft 365. Per una panoramica, vedere: [Pianificazione della rete e della migrazione per Microsoft 365](network-and-migration-planning.md).
   
-|||||
+|Categoria |Descrizione |Categoria |Descrizione |
 |:-----|:-----|:-----|:-----|
 |**Pianificazione della rete** <br/> ![Rete](../media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |Vuoi connessioni veloci e pagine che si caricano rapidamente?  <br/> Leggere [Ottenere la connettività e le prestazioni migliori in Microsoft 365](https://aka.ms/o365perfprinciples).<br/>Leggere [Microsoft 365 Panoramica della connettività di rete](microsoft-365-networking-overview.md) per comprendere i concetti.<br/> |**Misurazione della rete** <br/> ![Calcolatrice](../media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |Leggere [Microsoft 365 ottimizzazione delle prestazioni utilizzando le previsioni e la cronologia delle prestazioni](performance-tuning-using-baselines-and-history.md) e Il piano di risoluzione dei problemi delle prestazioni per [Microsoft 365](performance-troubleshooting-plan.md).  <br/> Utilizzare questi strumenti per [valutare la rete esistente.](network-and-migration-planning.md#calculators)  <br/> |
 |**Procedure consigliate** <br/> ![Procedure consigliate](../media/2a659a5c-1007-47d3-a6c6-a19e018ab29b.png)           <br/> |[Procedure consigliate per la pianificazione della rete e il miglioramento delle prestazioni di migrazione per Microsoft 365](network-and-migration-planning.md#BestPractices). Vuoi iniziare subito ad aiutare gli utenti? Vedere [Best practices for using Office 365 on a slow network](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166).  <br/> [Microsoft 365 principi di connettività di](./microsoft-365-network-connectivity-principles.md) rete consentono di comprendere le indicazioni più recenti per ottimizzare in modo sicuro Microsoft 365 connettività di rete.  <br/> |**Riferimenti** <br/> ![Libro o diario](../media/56dff3c1-f605-48d8-811f-7d13ce639ecd.png)           <br/> |Vuoi i dettagli, ad esempio un elenco di indirizzi IP e porte? Vedere informazioni [di riferimento sulla pianificazione della rete per Microsoft 365](network-and-migration-planning.md#NetReference).  <br/> |

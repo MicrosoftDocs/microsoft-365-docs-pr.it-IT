@@ -4,28 +4,25 @@ description: Abilitare e configurare Antivirus Microsoft Defender di protezione 
 keywords: antivirus, protezione in tempo reale, rtp, machine learning, monitoraggio del comportamento, euristica
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.date: 12/16/2019
-ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1e39e42b79a2a767473c4473434da249a0d07228
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 313646c69417082583b27bcfbab540131043ce76
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275133"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926668"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Abilitare e configurare la protezione sempre attiva di Microsoft Defender Antivirus in Criteri di gruppo
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**

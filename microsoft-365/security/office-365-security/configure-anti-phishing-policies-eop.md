@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare a creare, modificare ed eliminare i criteri anti-phishing disponibili nelle organizzazioni di Exchange Online Protection (EOP) con o senza Exchange Online cassette postali.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec944a2bf6fa7600a9970a7354332d140293ab5e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9cd006146d8ae41196b63c658ae54e875d730bcc
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878545"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932855"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurare i criteri anti-phishing in Exchange Online Protection
 
@@ -58,9 +58,9 @@ Ogni organizzazione dispone di un criterio anti-phishing predefinito denominato 
 
 Per aumentare l'efficacia della protezione anti-phishing, è possibile creare criteri anti-phishing personalizzati con impostazioni più rigorose applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla pagina **Anti-phishing,** utilizzare <https://security.microsoft.com/antiphishing> .
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alla pagina **Anti-phishing,** utilizzare <https://security.microsoft.com/antiphishing> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -190,7 +190,7 @@ Tornare alla pagina dei criteri principale, il valore **Stato** del criterio sar
 
 Per impostazione predefinita, ai criteri anti-phishing viene data una priorità basata sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
-Per modificare la priorità di  un criterio, fai clic su Aumenta priorità o Riduci  priorità nelle proprietà del criterio (non puoi modificare direttamente il numero di priorità nel portale di Microsoft 365 Defender).  La modifica di priorità di un criterio è utile solo se si hanno più criteri.
+Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o **Riduci priorità** nelle proprietà del criterio. Non è possibile modificare direttamente il valore **Priorità** nel portale di Microsoft 365 Defender. La modifica di priorità di un criterio è utile solo se si hanno più criteri.
 
  **Note**:
 
@@ -202,9 +202,9 @@ Per modificare la priorità di  un criterio, fai clic su Aumenta priorità o Rid
 2. Nella pagina **Anti-phishing** selezionare un criterio personalizzato nell'elenco facendo clic sul nome.
 
 3. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato viene visualizzato **Aumenta priorità** o **Riduci priorità** in base al valore di priorità corrente e al numero di criteri personalizzati:
-   - Il criterio anti-phishing con **il valore Priority** **0** ha solo l'opzione **Riduci** priorità disponibile.
-   - Il criterio anti-phishing con il valore **priority** più basso (ad esempio, **3**) ha solo l'opzione **Aumenta** priorità disponibile.
-   - Se si dispone di tre o più criteri anti-phishing, i  criteri tra i valori di priorità più alta e più bassa hanno entrambe le opzioni Aumenta priorità e Riduci **priorità** disponibili.
+   - Per il criterio con **valore Priority** **0 è** disponibile solo **l'opzione Riduci** priorità.
+   - Il criterio con il valore **Di priorità** più basso (ad esempio, **3)** ha solo l'opzione **Aumenta** priorità disponibile.
+   - Se si dispone di tre o più criteri, per i  criteri tra i valori di priorità più alta e più bassa sono disponibili le opzioni Aumenta priorità e **Riduci** priorità.
 
    Fare clic![ sull’icona Aumenta priorità](../../media/m365-cc-sc-increase-icon.png) **Aumenta priorità** o ![sull’icona Riduci priorità](../../media/m365-cc-sc-decrease-icon.png) **Riduci priorità** per modificare il valore **Priorità**.
 

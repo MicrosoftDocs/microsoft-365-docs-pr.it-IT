@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 ms.date: ''
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sull'uso di PowerShell per la creazione e la pubblicazione di etichette di conservazione dalla riga di comando, indipendentemente dal centro conformità di Microsoft 365.
-ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918222"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924964"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare etichette di conservazione con PowerShell
 
@@ -43,7 +44,7 @@ Panoramica:
   
 ## <a name="disclaimer"></a>Dichiarazione di non responsabilità
 
-Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Microsoft esclude inoltre qualsiasi garanzia implicita, tra cui, senza limitazioni, tutte le garanzie implicite di commerciabilità o idoneità per uno scopo specifico. L'utente assume tutti i rischi associati all'uso o alle prestazioni degli script di esempio e della documentazione. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
+Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
   
 ## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Passaggio 1: creare un file .csv per le etichette di conservazione
 

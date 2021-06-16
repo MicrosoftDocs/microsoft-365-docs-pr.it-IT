@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: danbrown
 author: DHB-MSFT
-manager: scotv
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Decidi quali funzionalità Office mostrare o nascondere quando un utente sceglie Guida > Novità nel app Office in Windows usando la funzionalità "Novità di Office" nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 395038bebda407771802a61ba5aefc350c7c5cd1
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924836"
+ms.locfileid: "52929480"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gestire le Office funzionalità visualizzate in Novità
 

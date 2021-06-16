@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b1616b39597a90ff8e8f7b4c92f29f75c62fea18
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3219b329c53c32e02cd29acdd41a48cd93b2e8bb
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934430"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930512"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Eseguire il progetto pilota Microsoft 365 Defender 
 
@@ -42,7 +42,7 @@ Questa guida consente di eseguire un progetto pilota fornendo puntatori per gara
 ![Fasi dell'esecuzione di un Microsoft 365 defender pilota](../../media/pilotphases.png)
 
 
-L'esecuzione di un progetto pilota consente di determinare in modo efficace i vantaggi dell'adozione Microsoft 365 Defender. Prima di abilitare Microsoft 365 Defender nell'ambiente di produzione e avviare i casi d'uso, è meglio pianificare le attività da eseguire per il progetto pilota e impostare i criteri di esito positivo. 
+L'esecuzione di un progetto pilota consente di determinare in modo efficace i vantaggi dell'adozione di Microsoft 365 Defender. Prima di abilitare Microsoft 365 Defender nell'ambiente di produzione e avviare i casi d'uso, è meglio pianificare le attività da eseguire per il progetto pilota e impostare i criteri di esito positivo. 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Come usare questo playbook pilota

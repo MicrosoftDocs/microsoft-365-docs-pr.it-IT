@@ -13,16 +13,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Informazioni su come usare Esplora minacce e il report sui rilevamenti in tempo reale per analizzare e rispondere alle minacce nel Centro sicurezza & conformità.
+description: Informazioni su come usare Threat Explorer e il report sui rilevamenti in tempo reale per analizzare e rispondere alle minacce nel portale di Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78c03b45063f4bc34b47ab003bcf00d2befab886
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1c79cc717a2dbe345627f99830590c674fa02f09
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206422"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929636"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
@@ -33,9 +33,9 @@ ms.locfileid: "51206422"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![Esplora minacce](../../media/ThreatExplorerFirstOpened.png)
+![Esplora minacce](../../media/explorer.png)
 
-[Threat Explorer](threat-explorer.md) (e il report sui rilevamenti in tempo reale) è uno strumento potente e quasi in tempo reale per aiutare i team delle operazioni di sicurezza ad analizzare e rispondere alle minacce nel Centro sicurezza & conformità. Explorer (e il report sui rilevamenti in tempo reale) visualizza informazioni su malware e virus sospetti nella posta elettronica e nei file in Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione.
+[Threat Explorer](threat-explorer.md) (e il report sui rilevamenti in tempo reale) è uno strumento potente e quasi in tempo reale che consente ai team di Security Operations di analizzare e rispondere alle minacce nel portale di Microsoft 365 Defender. Explorer (e il report sui rilevamenti in tempo reale) visualizza informazioni su malware e virus sospetti nella posta elettronica e nei file in Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione.
 
 - Se hai [Microsoft Defender per Office 365](defender-for-office-365.md) Piano 2, hai Explorer.
 - Se hai Microsoft Defender per Office 365 Piano 1, hai rilevamenti in tempo reale.
@@ -58,7 +58,7 @@ Quando apri Explorer per la prima volta (o il report dei rilevamenti in tempo re
 
 Utilizzare **il** menu Visualizza per modificare le informazioni visualizzate. Le descrizioni comandi consentono di determinare la visualizzazione da utilizzare.
 
-![Menu Visualizzazione Esplora minacce](../../media/ThreatExplorerViewMenu.png)
+![Menu Visualizzazione Esplora minacce](../../media/all-email.png)
 
 Dopo aver selezionato una visualizzazione, è possibile applicare filtri e configurare le query per eseguire ulteriori analisi. Le sezioni seguenti forniscono una breve panoramica delle varie visualizzazioni disponibili in Esplora risorse (o rilevamenti in tempo reale).
 
@@ -66,7 +66,7 @@ Dopo aver selezionato una visualizzazione, è possibile applicare filtri e confi
 
 Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** \> **malware per posta** \> **elettronica.** Questa visualizzazione mostra informazioni sui messaggi di posta elettronica identificati come contenenti malware.
 
-![Visualizzare i dati sulla posta elettronica identificata come malware](../../media/ExplorerEmailMalwareMenu.png)
+![Visualizzare i dati sulla posta elettronica identificata come malware](../../media/detection-technology.png)
 
 Fare **clic su Mittente** per aprire l'elenco delle opzioni di visualizzazione. Utilizzare questo elenco per visualizzare i dati in base al mittente, ai destinatari, al dominio del mittente, all'oggetto, alla tecnologia di rilevamento, allo stato di protezione e altro ancora.
 
@@ -82,13 +82,13 @@ Sotto il grafico, visualizzare ulteriori dettagli su messaggi specifici. Quando 
 
 Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** \> **e-mail** \> **Phish.** Questa visualizzazione mostra i messaggi di posta elettronica identificati come tentativi di phishing.
 
-![Visualizzare i dati sulla posta elettronica identificata come tentativi di phishing](../../media/ThreatExplorerEmailPhish.png)
+![Visualizzare i dati sulla posta elettronica identificata come tentativi di phishing](../../media/phish.png)
 
 Fare **clic su Mittente** per aprire l'elenco delle opzioni di visualizzazione. Utilizzare questo elenco per visualizzare i dati per mittente, destinatari, dominio mittente, IP mittente, dominio URL, fare clic su verdetto e altro ancora.
 
 Ad esempio, per sapere quali azioni sono state eseguite quando gli utenti hanno fatto clic su URL identificati come tentativi di phishing, scegliere Fare clic su **Verdetto** nell'elenco, selezionare una o più opzioni e quindi fare clic sul pulsante Aggiorna.
 
-![Fare clic su Opzioni verdetto per il report Phish](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![Fare clic su Opzioni verdetto per il report Phish](../../media/click-verdict.png)
 
 Sotto il grafico, visualizza altri dettagli su messaggi specifici, clic su URL, URL e origine della posta elettronica.
 
@@ -135,7 +135,7 @@ Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale
 
 Visualizzare le informazioni per famiglia di malware, tecnologia di rilevamento (come è stato rilevato il malware) e carico di lavoro (OneDrive, SharePoint o Teams).
 
-![Visualizzare i dati sul malware rilevato](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
+![Visualizzare i dati sul malware rilevato](../../media/malware-family.png)
 
 Sotto il grafico, visualizzare ulteriori dettagli su file specifici, ad esempio nome file allegato, carico di lavoro, dimensioni del file, chi ha modificato il file e altro ancora.
 

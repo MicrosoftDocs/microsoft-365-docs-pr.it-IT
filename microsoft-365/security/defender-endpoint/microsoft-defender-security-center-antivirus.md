@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ccb0d4cf168bbb4d3c1575c1e6611829909d0817
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275409"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926536"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender nell'app Sicurezza di Windows app
 

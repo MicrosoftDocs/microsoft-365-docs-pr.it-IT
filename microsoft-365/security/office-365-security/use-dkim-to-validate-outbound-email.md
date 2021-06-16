@@ -20,12 +20,12 @@ ms.custom:
 description: Informazioni su come usare DomainKeys Identified Mail (DKIM) insieme a Microsoft 365 per garantire che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cd04911e3663bb6b9fa00d4946b26086dc8094d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 12c7609635d9140f2e8efda3f6f1397619ce4790
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538268"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929906"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato
 
@@ -213,18 +213,16 @@ Dopo aver pubblicato i record CNAME in DNS, è possibile abilitare la firma DKIM
 
 1. [Accedere a Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) con l'account aziendale o dell'istituto di istruzione.
 
-2. Passare a [protection.office.com](https://protection.office.com) o [security.microsoft.com](https://security.microsoft.com) a seconda del portale in uso e seguire il percorso seguente.
+2. Passare a [security.microsoft.com](https://security.microsoft.com) e seguire il percorso seguente.
 
-|protection.office.com  |security.microsoft.com  |
-|---------|---------|
-| Gestione delle minacce > Criteri > Criteri aggiuntivi > DKIM     | E-mail e collaborazione > Criteri e regole > Criteri di minaccia > Altri criteri > DKIM        | 
+3. Passare a **Posta elettronica e collaborazione > Criteri e regole > Criteri di minaccia > DKIM**.
 
-3. Selezionare il dominio per il quale si desidera abilitare DKIM, quindi, in **Firma i messaggi per questo dominio con firme DKIM** scegliere **Abilita**. Ripetere questo passaggio per ogni dominio personalizzato.
+4. Selezionare il dominio per il quale si desidera abilitare DKIM, quindi, in **Firma i messaggi per questo dominio con firme DKIM** scegliere **Abilita**. Ripetere questo passaggio per ogni dominio personalizzato.
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Per abilitare la firma DKIM del dominio personalizzato usando PowerShell
 
 > [!IMPORTANT]
->:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="L'errore &quot;Nessuna chiave DKIM salvata per il dominio&quot;.":::
+>:::image type="content" source="../../media/dkim.png" alt-text="L'errore &quot;Nessuna chiave DKIM salvata per il dominio&quot;.":::
 > Se si configura DKIM per la prima volta e viene visualizzato l'errore "Nessuna chiave DKIM salvata per il dominio". completare il comando del passaggio 2 seguente (ad esempio, *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) per visualizzare la chiave.
 
 1. [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).

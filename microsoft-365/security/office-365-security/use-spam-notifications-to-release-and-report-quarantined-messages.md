@@ -21,12 +21,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sulle notifiche di posta indesiderata degli utenti finali per i messaggi in quarantena in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f5eafbb51cd0ff32c69fa0cff85729ef95d3d1f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 30f82abc245a2f6022bd1a75b57e9d20e3e32a32
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274989"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929888"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Usare le notifiche di posta indesiderata degli utenti per rilasciare e segnalare i messaggi in quarantena
 
@@ -58,9 +58,9 @@ Una notifica di posta indesiderata dell'utente finale contiene le informazioni s
 
 - **Blocca mittente:** fare clic su questo collegamento per aggiungere il mittente all'elenco Mittenti bloccati nella cassetta postale. Per ulteriori informazioni, vedere [Blocca mittente di posta](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-- **Rilascio**: per i messaggi di posta indesiderata (non di phishing), è possibile rilasciare il messaggio qui senza andare in quarantena nel Centro sicurezza & conformità.
+- **Rilascio**: per i messaggi di posta indesiderata (non di phishing), è possibile rilasciare il messaggio qui senza andare a Mettere in quarantena il portale Microsoft 365 Defender.
 
-- **Revisione:** fare clic su questo collegamento per passare a Quarantena nel Centro sicurezza & conformità, in cui è possibile visualizzare, rilasciare, eliminare o segnalare i messaggi in quarantena, a seconda del motivo per cui il messaggio è stato messo in quarantena. Per ulteriori informazioni, vedere Trovare e rilasciare i messaggi in quarantena [come utente in EOP.](find-and-release-quarantined-messages-as-a-user.md)
+- **Revisione:** fare clic su questo collegamento per passare a Quarantena nel portale di Microsoft 365 Defender, in cui è possibile visualizzare, rilasciare, eliminare o segnalare i messaggi in quarantena( a seconda del motivo per cui il messaggio è stato messo in quarantena). Per ulteriori informazioni, vedere Trovare e rilasciare i messaggi in quarantena [come utente in EOP.](find-and-release-quarantined-messages-as-a-user.md)
 
 ![Notifica di posta indesiderata dell'utente finale di esempio](../../media/end-user-spam-notification.png)
 

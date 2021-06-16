@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: In questo articolo viene descritto come avviare il portale tramite l'utilità di pianificazione di avvio del portale
-ms.openlocfilehash: bf01f6ae93b424543a6a509f89961a1b7a0c9ad7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb092ea2500aaa139a34e511d224ec4419e04cb5
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841667"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930260"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Avviare il portale usando l'utilità di SharePoint di avvio del portale
 
@@ -116,7 +116,10 @@ In precedenza, gli avvii del portale potevano essere pianificati solo SharePoint
 7. Determinare chi deve visualizzare immediatamente il sito e immettere le informazioni nel **campo Utenti esenti da ondate.** Questi utenti sono esclusi dalle ondate e non verranno reindirizzati prima, durante o dopo l'avvio.
 
     > [!NOTE]
-    > È possibile aggiungere fino a 50 utenti o gruppi di sicurezza distinti. Utilizzare i gruppi di sicurezza quando sono necessari più di 50 utenti per accedere al portale prima dell'avvio delle ondate.
+    > È possibile utilizzare fino a 50 utenti o gruppi di sicurezza distinti per l'intero avvio. Ogni avvio è indipendente l'uno dall'altro, quindi se si pianifica un avvio in un altro portale, è possibile utilizzare fino a 50 utenti/gruppi di sicurezza per tale avvio. Inoltre, è possibile utilizzare fino a 20 utenti o gruppi di sicurezza distinti per ogni ondata. 
+
+>L'utilità di pianificazione dell'avvio del portale supporta i gruppi di sicurezza e i gruppi di sicurezza abilitati alla posta elettronica. 
+
 
 8. Confermare i dettagli di avvio del portale e selezionare **Pianifica**. Dopo la pianificazione dell'avvio, tutte le modifiche apportate alla home page del portale di SharePoint dovranno ricevere un risultato di diagnostica integro prima della ripresa dell'avvio del portale.
 
@@ -267,7 +270,7 @@ Il reindirizzamento temporaneo delle pagine deve essere utilizzato quando non Sh
 
 2. Verificare che non si verifica alcun reindirizzamento per tutti gli utenti.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 [Pianificazione del piano di implementazione dell'avvio del portale in SharePoint Online](./planportallaunchroll-out.md)
 

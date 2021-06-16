@@ -17,16 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 2ea8cc323220024406a49eda8d6a7c0b42ca71a4
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 82c734d8a394be048f9be862be114fae7f90e6b3
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594050"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930476"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Passare a Microsoft Defender per Endpoint - Fase 2: installazione
 
@@ -93,14 +95,15 @@ La chiave del Registro di sistema [DisableAntiSpyware](/windows-hardware/customi
 1. In quanto amministratore locale nell'endpoint o nel dispositivo, apri Windows PowerShell.
 
 2. Eseguire i cmdlet di PowerShell seguenti: <br/>   
+
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-   > [!NOTE]
-   > Quando si usa il comando Gestione e manutenzione immagini distribuzione all'interno di una sequenza di attività che esegue PS, è necessario cmd.exe percorso seguente.
-   > Esempio:<br/>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   Quando si usa il comando Gestione e manutenzione immagini distribuzione all'interno di una sequenza di attività che esegue PS, è necessario cmd.exe percorso seguente.
+   Esempio:<br/>
+   
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. Per verificare Antivirus Microsoft Defender è in esecuzione, utilizzare il cmdlet PowerShell seguente: <br/>
    `Get-Service -Name windefend`
@@ -113,6 +116,7 @@ La chiave del Registro di sistema [DisableAntiSpyware](/windows-hardware/customi
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Modificare (o creare) una voce DWORD denominata **ForcePassiveMode** e specificare le impostazioni seguenti:
+
    - Imposta il valore DWORD su **1.**
    - In **Base** selezionare **Esadecimale.**
 

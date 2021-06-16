@@ -16,18 +16,18 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Trovare e usare i report per Microsoft Defender per Office 365 nel Centro sicurezza & conformità.
+description: Trova e usa i report per Microsoft Defender per Office 365 nel portale Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: a5c45f58ee83de11712b198c85a8e423314289bf
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599900"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930235"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Visualizzare Defender per Office 365 report nel dashboard Report nel Centro sicurezza & conformità
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-microsoft-365-defender-portal"></a>Visualizzare defender per Office 365 report nel dashboard report nel portale Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,9 +35,9 @@ ms.locfileid: "51599900"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender per le organizzazioni Office 365 (ad esempio, abbonamenti Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 1 o componenti aggiuntivi Microsoft Defender per Office 365 Piano 2) contengono una serie di report relativi alla sicurezza. Se si dispone delle [autorizzazioni necessarie,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)è possibile visualizzare questi report nel Centro sicurezza & conformità andando a **Dashboard** \> **report.** Per passare direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
+Microsoft Defender per le organizzazioni Office 365 (ad esempio, abbonamenti Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 1 o componenti aggiuntivi Microsoft Defender per Office 365 Piano 2) contengono una serie di report relativi alla sicurezza. Se si dispone delle autorizzazioni [necessarie,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)è possibile visualizzare questi report nel portale di Microsoft 365 Defender andando a **Report** Collaborazione tramite posta elettronica \>  \> **Rapporti di collaborazione tramite posta elettronica**. Per passare direttamente al dashboard dei report, aprire <https://security.microsoft.com/emailandcollabreport> .
 
-![Dashboard Report nel Centro sicurezza & conformità](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Dashboard report nel portale di Microsoft 365 Defender](../../media/user-reported-messages.png)
 
 ## <a name="defender-for-office-365-file-types-report"></a>Report tipi di file per Defender per Office 365
 
@@ -45,7 +45,7 @@ Il **report Defender per Office 365 tipi di file** mostra il tipo di file rileva
 
  La visualizzazione aggregata del report consente 90 giorni di filtro, mentre la visualizzazione dettagli consente solo 10 giorni di filtro.
 
-Per visualizzare il report, aprire il Centro [sicurezza & conformità,](https://protection.office.com)passare a Dashboard report e selezionare Defender per Office 365  \>  tipi **di file.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ATPFileReport> .
+Per visualizzare il report, aprire il [portale Microsoft 365 Defender,](https://security.microsoft.com)passare **a** Dashboard report e selezionare Defender per Office 365 \>  tipi **di file.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ATPFileReport> .
 
 ![Widget Defender per Office 365 tipi di file nel dashboard report](../../media/atp-file-types-report-widget.png)
 
@@ -127,7 +127,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
 Il **report Eliminazione messaggi ATP** mostra le azioni intraprese per i messaggi di posta elettronica che sono stati rilevati come contenuti dannosi.
 
-Per visualizzare il report, aprire il Centro [sicurezza &](https://protection.office.com)conformità, passare a Dashboard report e selezionare Defender per l'eliminazione Office 365  \>  **messaggio.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ATPMessageReport> .
+Per visualizzare il report, aprire il [portale di Microsoft 365 Defender,](https://security.microsoft.com)passare & Rapporti Di posta elettronica &  \> **collaborazione** \> **E-mail & rapporti** di collaborazione e selezionare **Defender** per l'eliminazione Office 365 messaggio . Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ATPMessageReport> .
 
 ![Defender per Office 365 widget di eliminazione dei messaggi nel dashboard dei report](../../media/atp-message-disposition-report-widget.png)
 
@@ -215,7 +215,7 @@ Il **report Latenza della posta** mostra una visualizzazione aggregata della lat
 
 Il lato client e la latenza di rete non sono inclusi.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard  \> **report** e selezionare Report **latenza della posta**. Per passare direttamente al report, aprire <https://protection.office.com/mailLatencyReport?viewid=P50> .
+Per visualizzare il report, aprire il portale di  [Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & collaborazione E-mail & rapporti di collaborazione e fare clic su Visualizza dettagli \>  \> **in** **Report latenza posta**.  Per passare direttamente al report, aprire <https://security.microsoft.com/mailLatencyReport> .
 
 ![Widget report latenza della posta nel dashboard report](../../media/mail-latency-report-widget.png)
 
@@ -268,7 +268,7 @@ Il **rapporto sullo stato di** Protezione dalle minacce è un'unica visualizzazi
 
 Il **report di protezione dalle minacce URL** fornisce visualizzazioni di riepilogo e tendenze per le minacce rilevate e le azioni eseguite sui clic sugli URL come parte di Collegamenti [sicuri.](safe-links.md) A questo report non saranno applicati i dati dei clic degli utenti a cui è applicato il criterio Collegamenti sicuri. L'opzione Non tenere traccia **dei clic degli utenti** è selezionata.
 
-Per visualizzare il report, aprire [il Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard  \> **report** e selezionare **Report protezione URL.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
+Per visualizzare il report, aprire il portale  [di Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & \> **collaborazione** \> **E-mail & report**  di collaborazione e fare clic su Visualizza dettagli in Report protezione **URL**. Per passare direttamente al report, aprire <https://security.microsoft.com/reports/URLProtectionActionReport> .
 
 ![Widget report protezione URL nel dashboard report](../../media/url-protection-report-widget.png)
 
@@ -336,8 +336,8 @@ Oltre ai report descritti in questo articolo, sono disponibili diversi altri rep
 |Report|Argomento|
 |---|---|
 |**Explorer** (Microsoft Defender per Office 365 Piano 2) o rilevamenti in tempo reale **(Microsoft** Defender per Office 365 Piano 1)|[Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md)|
-|**Report di sicurezza della** posta elettronica, ad esempio il report Mittenti e destinatari principali, il rapporto Spoofing della posta elettronica e il report Rilevamenti posta indesiderata.|[Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità](view-email-security-reports.md)|
-|**Rapporti del flusso di** posta, ad esempio il rapporto inoltro, il rapporto sullo stato del flusso di posta e il rapporto Mittenti e destinatari principali.|[Visualizzare i report del flusso di posta nel Centro sicurezza & conformità](view-mail-flow-reports.md)|
+|**Report di sicurezza della** posta elettronica, ad esempio il report Mittenti e destinatari principali, il rapporto Spoofing della posta elettronica e il report Rilevamenti posta indesiderata.|[Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender](view-email-security-reports.md)|
+|**Rapporti del flusso di** posta, ad esempio il rapporto inoltro, il rapporto sullo stato del flusso di posta e il rapporto Mittenti e destinatari principali.|[Visualizzare i report del flusso di posta nel portale Microsoft 365 Defender](view-mail-flow-reports.md)|
 |**Traccia URL per collegamenti sicuri** (solo PowerShell). L'output di questo cmdlet mostra i risultati delle azioni collegamenti sicuri degli ultimi sette giorni.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |**Risultati del traffico di posta per EOP e Microsoft Defender per Office 365** (solo PowerShell). L'output di questo cmdlet contiene informazioni su Domain, Date, Event Type, Direction, Action e Message Count.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Rapporti dettagli posta per EOP e Defender per Office 365** di posta elettronica (solo PowerShell). L'output di questo cmdlet contiene dettagli su file o URL dannosi, tentativi di phishing, rappresentazione e altre potenziali minacce nei messaggi di posta elettronica o nei file.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
@@ -345,16 +345,16 @@ Oltre ai report descritti in questo articolo, sono disponibili diversi altri rep
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quali autorizzazioni sono necessarie per visualizzare defender per Office 365 report?
 
-Per visualizzare e utilizzare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel Centro sicurezza & conformità:
+Per visualizzare e usare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel portale di Microsoft 365 Defender:
 
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
 - **Lettore sicurezza**
 - **Lettore globale**
 
-Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
 
-**Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel Centro sicurezza e conformità di & e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+**Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Cosa succede se i report non mostrano dati?
 
@@ -362,6 +362,6 @@ Se non vedi i dati nel tuo Defender per i Office 365, verifica che i criteri sia
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità](reports-and-insights-in-security-and-compliance.md)
+[Report e informazioni dettagliate intelligenti nel portale di Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
 
 [Autorizzazioni ruolo (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

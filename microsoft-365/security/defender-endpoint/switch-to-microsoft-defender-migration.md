@@ -17,29 +17,27 @@ ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
 - m365solution-overview
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2a2b78089486b432ebf9492de26396b2bb96f94d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593502"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930308"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passare da Protezione endpoint non Microsoft a Microsoft Defender for Endpoint
 
-Se stai pensando di passare dalla protezione degli endpoint non Microsoft a [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), sei nel posto giusto. Usa questo articolo come guida.
+Se stai pensando di passare da una soluzione di protezione degli endpoint non Microsoft a [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), sei nel posto giusto. Usa questo articolo come guida.
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Panoramica della migrazione a Defender for Endpoint":::
 
-Quando si passa a Defender for Endpoint, si inizia con la soluzione non Microsoft che opera in modalità attiva, si configura Defender per Endpoint in modalità passiva, si esegue l'onboard su Defender per Endpoint, si imposta Defender per Endpoint sulla modalità attiva e quindi si rimuove la soluzione non Microsoft.
-
-> [!TIP]
-> - Se attualmente si usa McAfee Endpoint Security (McAfee), vedere [Migrate from McAfee to Defender for Endpoint.](mcafee-to-microsoft-defender-migration.md)
-> - Se attualmente stai usando Symantec Endpoint Protection (Symantec), vedi Eseguire la migrazione da [Symantec](symantec-to-microsoft-defender-endpoint-migration.md)a Defender per Endpoint.
+Quando si passa a Defender for Endpoint, si inizia con la soluzione non Microsoft che opera in modalità attiva. Quindi, configura Defender per Endpoint in modalità passiva e onboard i dispositivi a Defender per Endpoint. Successivamente, imposta Defender per Endpoint sulla modalità attiva. Infine, rimuovere la soluzione non Microsoft.
 
 ## <a name="the-migration-process"></a>Processo di migrazione
 

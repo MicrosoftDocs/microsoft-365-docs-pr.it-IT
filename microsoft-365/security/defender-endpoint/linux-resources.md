@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933326"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930368"
 ---
 # <a name="resources"></a>Risorse
 
@@ -31,6 +31,7 @@ ms.locfileid: "51933326"
 
 
 **Si applica a:**
+
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -69,6 +70,7 @@ Se è possibile riprodurre un problema, aumentare innanzitutto il livello di reg
    ```bash
    mdatp log level set --level info
    ```
+
    ```Output
    Log level configured successfully
    ```
@@ -77,7 +79,8 @@ Se è possibile riprodurre un problema, aumentare innanzitutto il livello di reg
 
 Se si verifica un errore durante l'installazione, il programma di installazione segnala solo un errore generale.
 
-Il registro dettagliato verrà salvato in `/var/log/microsoft/mdatp_install.log` . Se si verificano problemi durante l'installazione, inviare questo file in modo da poter diagnosticare la causa.
+Il registro dettagliato verrà salvato in `/var/log/microsoft/mdatp/install.log` .
+Se si verificano problemi durante l'installazione, inviare questo file in modo da poter diagnosticare la causa.
 
 ## <a name="uninstall"></a>Disinstalla
 
@@ -104,7 +107,7 @@ Nella tabella seguente sono elencati i comandi per alcuni degli scenari più com
 |Gruppo                 |Scenario                                                |Comando                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Configurazione         |Attivare/disattivare la protezione in tempo reale                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|Configurazione         |Attivare/disattivare il monitoraggio del comportamento                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
+|Configurazione         |Attivare/disattivare il monitoraggio del comportamento                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |Configurazione         |Attivare/disattivare la protezione cloud                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |Configurazione         |Attivare/disattivare la diagnostica del prodotto                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |Configurazione         |Attivare/disattivare l'invio automatico di esempi                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |

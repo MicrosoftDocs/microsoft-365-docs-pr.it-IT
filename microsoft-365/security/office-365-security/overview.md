@@ -3,7 +3,7 @@ title: Sicurezza di Office 365, Microsoft Defender per Office 365, EOP, MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/13/2020
+ms.date: 06/11/2021
 audience: Admin
 ms.topic: conceptual
 localization_priority: Normal
@@ -16,26 +16,25 @@ ms.collection:
 description: Sicurezza in Office 365, da EOP a Defender per Office Piani 1 e 2 di Office 365, differenza tra configurazione della sicurezza standard e rigorosa e altro ancora. Comprendere ciò che si ha e come proteggere le proprie proprietà.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db37718ce2feae9c79ff6b323eb22e30f24e72b2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6ecdfe324ded6224745b0e2eac087e432ac76c83
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205833"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930248"
 ---
-# <a name="office-365-security-overview"></a>Panoramica sulla sicurezza di Office 365
+# <a name="microsoft-defender-for-office-365-security-overview"></a>Panoramica di Microsoft Defender Office 365 sicurezza
 
 **Si applica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 
-
-Questo articolo presenta le nuove proprietà di sicurezza nel cloud. Se si fa parte di un centro operazioni per la sicurezza, si è un amministratore della sicurezza nuovo dell'argomento o si desidera fare un ripasso, questo è il posto giusto per iniziare.
+Questo articolo ti introdurrà al nuovo Microsoft Defender per le Office 365 sicurezza nel cloud. Se si fa parte di un centro operazioni per la sicurezza, si è un amministratore della sicurezza nuovo dell'argomento o si desidera fare un ripasso, questo è il posto giusto per iniziare.
 
 > [!CAUTION]
 > Se si usa **Outlook.com**, **Microsoft 365 Family** o **Microsoft 365 Personal** e si cercano informazioni sui *collegamenti sicuri* o gli *allegati sicuri* in Outlook, ***fare clic sul collegamento*** vedere [Sicurezza avanzata Outlook.com per gli abbonati a Microsoft 365](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-## <a name="office-365-security-spelled-out"></a>Informazioni dettagliate sulla sicurezza in Office 365
+## <a name="what-is-defender-for-office-365-security"></a>Che cos'è Defender per Office 365 sicurezza
 
 Ogni abbonamento a Office 365 include funzionalità di sicurezza. Gli obiettivi e le azioni che è possibile intraprendere dipendono dal focus di questi diversi abbonamenti. La sicurezza di Office 365 comprende tre servizi di sicurezza (o prodotti) principali, che sono associati al tipo di abbonamento:
 
@@ -57,8 +56,6 @@ Forse si è abituati a vedere questi tre componenti illustrati in questo modo:
 
 In termini di architettura, tuttavia, si può pensare ai vari elementi come a livelli di sicurezza cumulativi, ognuno con un'enfasi sulla sicurezza. Il concetto è più simile a questo:
 
-<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
-
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP e Microsoft Defender per Office 365 e le loro relazioni reciproche, con enfasi sul servizio, inclusa una nota per l'autenticazione della posta elettronica.":::
 
 Anche se ognuno di questi servizi pone l'accento su un obiettivo tra Protezione, Rilevamento, Indagine e Risposta, ***tutti** _ i servizi possono svolgere _ *_qualsiasi_** attività di protezione, rilevamento, indagine e risposta.
@@ -73,8 +70,6 @@ Se si ha Office 365 E3 o versione inferiore, si ha anche EOP, ma con l'opzione d
 > Se l'abbonamento non è né Office 365 E3, né Office 365 E5, si può comunque verificare se è disponibile l'opzione per eseguire l'aggiornamento a Microsoft Defender per Office 365 P1. Se si è interessati, [questa pagina Web](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) contiene un elenco degli abbonamenti idonei per l'aggiornamento Microsoft Defender per Office 365 P1 (cercare in fondo alla pagina).
 
 ## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>Gerarchia della sicurezza di Office 365, da EOP a Microsoft Defender per Office 365
-
-![EOP e Microsoft Defender per Office 365 e il relativo accento sulla sicurezza, tra protezione, rilevamento, indagine e risposta. La configurazione dell'autenticazione della posta elettronica (almeno DKIM e DMARC) deve essere impostata per EOP e a salire.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 > [!IMPORTANT]
 > Informazioni dettagliate sono disponibili a queste pagine: [Exchange Online Protection](exchange-online-protection-overview.md) e [Defender per Office 365](defender-for-office-365.md).
@@ -117,7 +112,7 @@ Vantaggi con **Defender per Office 365 Piano 2** (a oggi):
 
 Quindi Microsoft Defender per Office 365 P2 è più ricco sul lato ***indagine e risposta*** e aggiunge una nuova capacità di rilevazione. L'automazione.
 
-In Microsoft Defender per Office 365 P2, lo strumento di rilevazione principale si chiama **Esplora minacce** e non Rilevamenti in tempo reale. Se quando si passa al Centro sicurezza viene visualizzato Esplora minacce, si è in Microsoft Defender per Office 365 P2.
+In Microsoft Defender per Office 365 P2, lo strumento di rilevazione principale si chiama **Esplora minacce** e non Rilevamenti in tempo reale. Se vedi Threat Explorer quando accedi al portale di Microsoft 365 Defender, sei in Microsoft Defender per Office 365 P2.
 
 Per informazioni dettagliate su Microsoft Defender per Office 365 P1 e P2, passare a **[questo articolo](defender-for-office-365.md)**.
 
@@ -159,3 +154,4 @@ Aggiornarsi sulle [novità di Microsoft Defender per Office 365 (inclusi gli svi
 [Usare Esplora minacce o Rilevamenti in tempo reale](threat-explorer.md)
 
 Usare [Simulatore di attacchi in Microsoft Defender per Office 365](attack-simulator.md)
+

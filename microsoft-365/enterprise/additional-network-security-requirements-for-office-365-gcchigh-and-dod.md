@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: Office 365 GCC high e DoD hanno requisiti di sicurezza di rete aggiuntivi'
 hideEdit: true
-ms.openlocfilehash: 4817edfcea638324e26eb855d1ea33936be1bfb4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f4c03d364e84d89a1b12e4d858ab46eb3be6ae5e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691243"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926560"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Altri requisiti di sicurezza della rete per Office 365 GCC High e DoD
 
@@ -42,20 +42,20 @@ GCC I clienti high e DOD che pianificano di utilizzare le identità federate o l
 Per consentire al servizio di comunicare con gli  endpoint locali, è necessario inviare un messaggio di posta elettronica Office 365 progettazione per le modifiche di rete.
 
 > [!WARNING]
-> Tutte le richieste hanno **un** contratto di servizio di tre settimane e non possono essere accelerate a causa dei controlli di sicurezza e conformità necessari e delle pipeline di distribuzione.  Sono incluse le richieste di rete di onboarding iniziali e le eventuali modifiche dopo la migrazione al servizio.  Assicurarsi che i team di rete siano a conoscenza di questa sequenza temporale e di includerla nei cicli di pianificazione.
+> Tutte le richieste hanno **un** contratto di servizio di tre settimane e non possono essere accelerate a causa dei controlli di sicurezza e conformità necessari e delle pipeline di distribuzione.  Sono incluse le richieste di rete di onboarding iniziali e le eventuali modifiche dopo la migrazione al servizio.  Assicurati che i team di rete siano a conoscenza di questa sequenza temporale e la includano nei cicli di pianificazione.
 
-Inviare un messaggio di posta [elettronica Office 365 Government whitelist di rete](mailto:o365gwlt@microsoft.com) con le informazioni seguenti:
+Invia un messaggio di posta [elettronica Office 365 Government Allow-List richieste](mailto:o365gwlt@microsoft.com) con le informazioni seguenti:
 
-* **To**: [Office 365 Government Network Whitelist](mailto:o365gwlt@microsoft.com)
+* **A**: [Office 365 Government Allow-List richieste](mailto:o365gwlt@microsoft.com)
 * **Da**: un amministratore tenant: il messaggio di posta **elettronica di invio deve** corrispondere a un contatto amministratore globale nel tenant
-* **Oggetto di** posta elettronica : Office 365 GCC high network request - contoso.onmicrosoft.us (sostituire questo con il nome del tenant)
+* **Oggetto di** posta elettronica : Office 365 GCC high network request - contoso.onmicrosoft.us (sostituire con il nome del tenant)
 
 Il corpo del messaggio deve includere i dati seguenti:
 
 * Nome Microsoft Online Services tenant (ad esempio, contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
 * Una lista di distribuzione di posta elettronica con cui Microsoft comunicherà per le comunicazioni in corso relative alle modifiche di rete e/o al follow-up per subnet non valide
 * Indicare se si prevede di usare Microsoft Teams coesistenza ibrida con le distribuzioni locali
-* URL accessibile esternamente dal sistema di identità federata (ad esempio sts.contoso.com) e intervallo di indirizzi IP nella notazione CIDR (ad esempio 10.1.1.0/28)
+* URL accessibile esternamente dal sistema di identità federata (ad esempio, sts.contoso.com) e intervallo di indirizzi IP nella notazione CIDR (ad esempio, . 10.1.1.0/28)
 * URL e intervallo di indirizzi IP dell'elenco di revoche di certificati PKI locali nella notazione CIDR
 * URL e intervallo di indirizzi IP accessibili esternamente Exchange Server distribuzione locale nella notazione CIDR
 * URL e intervallo di indirizzi IP accessibili esternamente Skype for Business distribuzione locale nella notazione CIDR
@@ -63,8 +63,8 @@ Il corpo del messaggio deve includere i dati seguenti:
 Per motivi di sicurezza e conformità, tenere presenti le restrizioni seguenti per la richiesta:
 
 * Esiste una limitazione di quattro subnet per tenant
-* Le subnet devono essere in notazione CIDR (ad esempio 10.1.1.0/28)
+* Le subnet devono essere in notazione CIDR (ad esempio, 10.1.1.0/28)
 * Gli intervalli di subnet non possono essere superiori a /24
 * Non **è possibile** soddisfare le richieste per consentire l'accesso ai servizi cloud commerciali (Office 365, Google G-Suite, Amazon Web Services e così via)
 
-Dopo che la richiesta è stata ricevuta e approvata da Microsoft, è previsto un contratto di servizio di tre settimane per l'implementazione e non può essere accelerato.  Riceverai un riconoscimento iniziale quando abbiamo ricevuto la richiesta e una conferma finale una volta completata.
+Dopo che la richiesta è stata ricevuta e approvata da Microsoft, è previsto un contratto di servizio di tre settimane per l'implementazione e non può essere accelerato.  Riceverai un riconoscimento iniziale quando abbiamo ricevuto la richiesta e un riconoscimento finale una volta completata.

@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Usa Esplora minacce o rilevamenti in tempo reale nel Centro sicurezza e conformità per analizzare e rispondere alle minacce in &amp; modo efficiente.
+description: Usa Threat Explorer o i rilevamenti in tempo reale nel portale di Microsoft 365 Defender per analizzare e rispondere alle minacce in modo efficiente.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65fe67103d9a380c63a0362594c23290457ea3aa
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 71052cc5a3874da250772bfa628417824ba51c63
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295270"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930113"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Ricerca delle minacce in Threat Explorer per Microsoft Defender per Office 365
 
@@ -42,7 +42,7 @@ Contenuto dell'articolo:
 
 Se l'organizzazione dispone di [Microsoft Defender per Office 365](defender-for-office-365.md)e si dispone  delle autorizzazioni [,](#required-licenses-and-permissions)è possibile utilizzare **Esplora** risorse o rilevamenti in tempo reale per rilevare e correggere le minacce. 
 
-Nel **Centro sicurezza & conformità** passare a **Gestione** delle minacce e quindi scegliere **Esplora risorse**  o **Rilevamenti in tempo reale.**
+Nel portale **Microsoft 365 Defender passare** a Posta elettronica & **collaborazione** e quindi scegliere **Esplora**.
 
 <br>
 
@@ -50,7 +50,7 @@ Nel **Centro sicurezza & conformità** passare a **Gestione** delle minacce e qu
 
 |Con Microsoft Defender per Office 365 Piano 2, viene visualizzato:|Con Microsoft Defender per Office 365 piano 1, viene visualizzato:|
 |---|---|
-|![Esplora minacce](../../media/threatmgmt-explorer.png)|![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)|
+|![Esplora minacce](../../media/path-to-explorer.png)|![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)|
 |
 
 Con questi strumenti è possibile:
@@ -68,15 +68,15 @@ In Microsoft Defender per Office 365, sono disponibili due piani di sottoscrizio
 
 Defender per Office 365 Piano 1 usa i rilevamenti in tempo *reale,* che è un sottoinsieme dello strumento di ricerca *Threat Explorer* (denominato anche *Explorer)* nel Piano 2. In questa serie di articoli, la maggior parte degli esempi è stata creata usando l'intero Threat Explorer. Gli amministratori devono testare i passaggi nei rilevamenti in tempo reale per vedere dove si applicano.
 
-Per aprire lo strumento Esplora risorse, passare **a Sicurezza &** Centro conformità Gestione minacce  >    >   (o **rilevamenti in tempo reale).** Per impostazione predefinita, arriverai nella pagina **Malware,** ma usa l'elenco a discesa **Visualizza** per acquisire familiarità con le opzioni. Se stai cercando Phish o stai scavando in una campagna di minacce, scegli queste visualizzazioni.
+Per aprire lo strumento Explorer, vai a **Microsoft 365 e-mail** del portale defender  >  **& collaborazione**  >  **Explorer**. Per impostazione predefinita, arriverai nella pagina **Malware,** ma usa l'elenco a discesa **Visualizza** per acquisire familiarità con le opzioni. Se stai cercando Phish o stai scavando in una campagna di minacce, scegli queste visualizzazioni.
 
 > [!div class="mx-imgBorder"]
-> ![Elenco a discesa Visualizza in Esplora minacce](../../media/threat-explorer-view-drop-down.png)
+> ![Elenco a discesa Visualizza in Esplora minacce](../../media/view-drop-down.png)
 
 Una volta che un utente delle operazioni di sicurezza (Sec Ops) seleziona i dati che desidera visualizzare, se l'ambito  è ristretto come invii utente o una visualizzazione più ampia, come Tutti i messaggi di posta **elettronica,** può utilizzare il pulsante Mittente per filtrare ulteriormente. Ricordarsi di selezionare Aggiorna per completare le azioni di filtro.
 
 > [!div class="mx-imgBorder"]
-> ![Pulsante Mittente in Esplora minacce](../../media/threat-explorer-sender-button.png)
+> ![Pulsante Mittente in Esplora minacce](../../media/sender-drop-down.png)
 
 La perfezione dello stato attivo in Esplora risorse o il rilevamento in tempo reale può essere pensata nei livelli. Il primo è **View.** Il secondo può essere pensato come uno *stato attivo filtrato.* Ad esempio, puoi ripercorrere i passaggi che hai fatto per trovare una minaccia registrando le tue decisioni come questa: Per trovare il problema in Esplora risorse, ho scelto la visualizzazione **Malware** con un filtro destinatario attivo. In questo modo è più semplice eseguire nuovamente i passaggi.
 
@@ -86,7 +86,7 @@ La perfezione dello stato attivo in Esplora risorse o il rilevamento in tempo re
 I criteri di affinamento possono essere evasi in intervalli di date utilizzando i controlli dell'intervallo di date. Qui puoi vedere Esplora risorse nella visualizzazione **Malware,** con lo stato attivo del filtro **Tecnologia** di rilevamento. Ma è il pulsante **Filtro avanzato** che consente ai team sec ops di scavare in profondità. 
 
 > [!div class="mx-imgBorder"]
-> ![Filtro avanzato in Esplora minacce](../../media/threat-explorer-advanced-filter.png)
+> ![Filtro avanzato in Esplora minacce](../../media/advanced-filter.png)
 
 Se si **fa clic sul** filtro Avanzato, viene visualizzato un pannello che consente ai cacciatori sec ops di creare query in modo che includano o escludono le informazioni necessarie. Sia il grafico che la tabella nella pagina Esplora risorse rifletteranno i risultati. 
 
@@ -99,7 +99,7 @@ Utilizzare il **pulsante Opzioni** colonna per ottenere il tipo di informazioni 
 > ![Pulsante Opzioni colonna evidenziato](../../media/threat-explorer-column-options.png)
 
 > [!div class="mx-imgBorder"]
-> ![Opzioni disponibili in Colonne](../../media/threat-explorer-column-options-details.png)
+> ![Opzioni disponibili in Colonne](../../media/column-options.png)
 
 Nello stesso ambiente, assicurati di testare le opzioni di visualizzazione. Gruppi di destinatari diversi reagiscono bene alle diverse presentazioni degli stessi dati. Per alcuni visualizzatori, la mappa **Email Origins** può mostrare che  una minaccia è diffusa o discreta più rapidamente rispetto all'opzione Visualizzazione campagna accanto ad essa. Sec Ops può usare questi display per fare al meglio punti che sottolineano la necessità di sicurezza e protezione o per un confronto successivo, per dimostrare l'efficacia delle loro azioni. 
 
@@ -144,7 +144,7 @@ In questo caso, l'analista può eseguire azioni come segnalare la posta elettron
 
 Quando ci si sposta da un avviso in Esplora minacce, **la visualizzazione** verrà filtrata in base **all'ID avviso.** Questo vale anche per il rilevamento in tempo reale. Vengono visualizzati i messaggi rilevanti per l'avviso specifico e un totale di posta elettronica (un conteggio). Sarà possibile vedere se un messaggio fa parte di un avviso e passare da tale messaggio all'avviso correlato.
 
-Infine, l'ID avviso è incluso nell'URL, ad esempio: `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+Infine, l'ID avviso è incluso nell'URL, ad esempio: `https://https://security.microsoft.com/viewalerts`
 
 > [!div class="mx-imgBorder"]
 > ![Filtro per l'ID avviso](../../media/AlertID-Filter.png)
@@ -252,7 +252,7 @@ Devi disporre di [Microsoft Defender per Office 365](defender-for-office-365.md)
 
 Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necessario disporre di quanto segue:
 
-- Per il Centro sicurezza & conformità:
+- Per il portale Microsoft 365 Defender:
 
   - Gestione dell'organizzazione
   - Amministratore della sicurezza (può essere assegnato nell'Azure Active Directory di amministrazione ( <https://aad.portal.azure.com> )
@@ -267,11 +267,11 @@ Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necess
 
 Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse seguenti:
 
-- [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
+- [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)
 - [Autorizzazioni funzionalità in Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - [Identificare e analizzare i messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md) 
 - [Visualizzare i file dannosi rilevati in SharePoint Online, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md) 

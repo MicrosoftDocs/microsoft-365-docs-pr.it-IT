@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: informazioni su cosa è cambiato per il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a Office 365 servizi nella nuova area data center tedesca.'
-ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591781"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930404"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Cosa cambia dopo la migrazione ai servizi Office 365 nelle nuove aree data center tedesche
 
@@ -76,6 +76,12 @@ Considerazioni da tenere presente:
 
 - Gli utenti del Outlook Web App che accedono al servizio utilizzando un URL in cui la cassetta postale non risiede, verrà visualizzata una richiesta di autenticazione aggiuntiva. Ad esempio, se la cassetta postale dell'utente si trova nei servizi Office 365 e la connessione Outlook Web App dell'utente utilizza l'endpoint legacy, l'utente eseguirà prima l'autenticazione in e quindi `outlook.office.de` `login.microsoftonline.de` in `login.microsoftonline.com` . Al termine della migrazione, l'utente può accedere al nuovo URL ( ) e verrà visualizzata solo la singola richiesta di `https://outlook.office365.com` accesso prevista. 
 
+## <a name="sharepoint-online"></a>SharePoint Online
+
+In SharePoint Online e OneDrive for Business, è possibile condividere elementi tramite Outlook. Dopo aver premuto il Outlook, viene creato un collegamento condivisibile e inserito in un nuovo messaggio nel Outlook Web App.
+
+La condivisione di elementi in SharePoint Online e OneDrive for Business tramite Outlook non funziona più dopo il completamento della migrazione di SharePoint Online. Riconosciamo che si tratta di un problema noto. Tuttavia, poiché questa Outlook è nel percorso della deprecazione, la correzione del problema non è pianificata fino all'implementazione della deprecazione.
+
 ## <a name="office-services"></a>Office Servizi
 
 Office I servizi online sono accessibili tramite `office.de` prima e durante la transizione. Dopo la transizione delle cassette postali degli utenti ai servizi Office 365, gli utenti devono iniziare a utilizzare Office 365 URL dei servizi. Quando i carichi di lavoro successivi vengono migrati Office 365 servizi, la loro interfaccia dal portale office.com inizierà a funzionare.
@@ -99,7 +105,7 @@ Office 365 Il video verrà ritirato il 1° marzo 2021 e Office 365 Video non sar
 
 [Comprendere le azioni e gli impatti delle fasi di migrazione](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Guida introduttiva:
 

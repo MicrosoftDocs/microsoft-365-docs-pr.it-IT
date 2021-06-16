@@ -20,12 +20,12 @@ ms.custom:
 description: In questo argomento viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Microsoft 365 locale.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 623ea316d1ad92790b8818504970a1d35401f617
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879217"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929576"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurare il tenant di Microsoft 365 per una maggiore sicurezza
 
@@ -63,9 +63,9 @@ Il portale Microsoft 365 Defender include funzionalità che proteggono l'ambient
 > [!NOTE]
 > Per distribuzioni non standard di SPF, distribuzioni ibride e risoluzione dei problemi: come Microsoft 365 utilizza [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md)per impedire lo spoofing .
 
-## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>Visualizzare dashboard e report nel Centro sicurezza & conformità
+## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>Visualizzare dashboard e report nel portale Microsoft 365 Defender
 
-Visitare questi report e dashboard per ulteriori informazioni sull'integrità dell'ambiente. I dati in questi report diventeranno più ricchi quando l'organizzazione utilizza Office 365 servizi. Per il momento, acquisire familiarità con gli elementi che è possibile monitorare ed eseguire. Per ulteriori informazioni, vedere [Reports in the Security & Compliance Center.](../../compliance/reports-in-security-and-compliance.md)
+Visitare questi report e dashboard per ulteriori informazioni sull'integrità dell'ambiente. I dati in questi report diventeranno più ricchi quando l'organizzazione utilizza Office 365 servizi. Per il momento, acquisire familiarità con gli elementi che è possibile monitorare ed eseguire. Per ulteriori informazioni, vedere [Reports in the Microsoft 365 Defender portal.](../../compliance/reports-in-security-and-compliance.md)
 
 <br>
 

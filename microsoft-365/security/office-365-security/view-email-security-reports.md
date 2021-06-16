@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
+title: Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come trovare e utilizzare i report di sicurezza della posta elettronica per l'organizzazione. I report di sicurezza della posta elettronica sono disponibili nel Centro sicurezza & conformità.
+description: Informazioni su come trovare e utilizzare i report di sicurezza della posta elettronica per l'organizzazione. I report di sicurezza della posta elettronica sono disponibili nel portale Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bb7570722fcc957ca86d68f6b42ef254578d7bd7
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531027"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930326"
 ---
-# <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,9 +35,9 @@ ms.locfileid: "52531027"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nel Centro sicurezza e conformità è disponibile [un'ampia](https://protection.office.com) gamma di report che consentono di verificare in che modo le funzionalità di sicurezza della posta elettronica, ad esempio la protezione da posta indesiderata, antimalware e crittografia in Microsoft 365, proteggono l'organizzazione. & Se si dispone delle [autorizzazioni necessarie,](#what-permissions-are-needed-to-view-these-reports)è possibile visualizzare questi report nel Centro sicurezza & conformità andando a **Dashboard** \> **report.** Per passare direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
+Nel portale di [Microsoft 365 Defender](https://security.microsoft.com) è disponibile un'ampia gamma di report che consentono di vedere in che modo le funzionalità di sicurezza della posta elettronica, ad esempio la protezione da posta indesiderata, antimalware e crittografia in Microsoft 365, proteggono l'organizzazione. Se si dispone delle autorizzazioni [necessarie,](#what-permissions-are-needed-to-view-these-reports)è possibile visualizzare questi report  nel portale di Microsoft 365 Defender andando a Rapporti e-mail & \> **collaborazione** \> **E-mail**& rapporti di collaborazione . Per passare direttamente al dashboard dei report, aprire <https://security.microsoft.com/emailandcollabreport> .
 
-![Dashboard dei report nel Centro sicurezza & conformità](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Dashboard dei report nel portale Microsoft 365 Defender](../../media/email-collaboration-reports.png)
 
 ## <a name="compromised-users-report"></a>Report utenti compromessi
 
@@ -50,7 +50,7 @@ Il **report Utenti compromessi** mostra il numero di  account  utente contrasseg
 
 La visualizzazione aggregata mostra i dati degli ultimi 90 giorni e la visualizzazione dettagli mostra i dati degli ultimi 30 giorni.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare **a** \> **Dashboard report** e selezionare **Utenti compromessi.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=CompromisedUsers> .
+Per visualizzare il report, aprire il portale  [di Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & \> **collaborazione** \> **E-mail &**  rapporti di collaborazione e fare clic su Visualizza dettagli in Utenti **compromessi**. Per passare direttamente al report, aprire <https://security.microsoft.com/reports/CompromisedUsers> .
 
 È possibile filtrare sia il grafico che la tabella dei dettagli facendo clic su **Filtri** e selezionando uno o più dei valori seguenti:
 
@@ -80,7 +80,7 @@ Il **report Crittografia** è disponibile in EOP (sottoscrizioni con cassette po
 
 La visualizzazione aggregata consente il filtro per gli ultimi 90 giorni, mentre la visualizzazione dettagli consente il filtro per 10 giorni.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare **a** \> **Dashboard report** e selezionare **Report di crittografia.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=EncryptionReport> .
+Per visualizzare il report, aprire il portale  [di Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & \> **collaborazione** \> **E-mail**  & rapporti di collaborazione e fare clic su Visualizza dettagli in Report **crittografia**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=EncryptionReport> .
 
 Per ulteriori informazioni sulla crittografia, vedere [Crittografia della posta elettronica in Microsoft 365](../../compliance/email-encryption.md).
 
@@ -153,7 +153,7 @@ Il **rapporto Rilevamenti malware nel** report di posta elettronica mostra infor
 
  Il filtro di visualizzazione aggregata consente 90 giorni, mentre il filtro della tabella dei dettagli consente solo 10 giorni.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard report e  \>  selezionare **Rilevamenti malware nella posta elettronica.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=MalwareDetections> .
+Per visualizzare il report, aprire il portale [di Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail &  \> **collaborazione** \> **E-mail**  & rapporti di collaborazione e fare clic su Visualizza dettagli in **Malware rilevato nella** posta elettronica . Per passare direttamente al report, aprire <https://security.microsoft.com/reports/MalwareDetections> .
 
 ![Rilevamenti di malware nel widget di posta elettronica nel dashboard dei report](../../media/malware-detections-widget.png)
 
@@ -191,7 +191,7 @@ Il **report Rilevamenti posta indesiderata** mostra i messaggi di posta elettron
 
 La visualizzazione aggregata consente un filtro di 90 giorni, mentre la tabella dei dettagli consente un filtro di 10 giorni.
 
-Per visualizzare il report, aprire [il Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard report  \>  e selezionare **Rilevamenti posta indesiderata.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=SpamDetections> .
+Per visualizzare il report, aprire il portale di  [Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail \> **& collaborazione** \> **E-mail & rapporti di**  collaborazione e fare clic su Visualizza dettagli in Rilevamenti **posta indesiderata**. Per passare direttamente al report, aprire <https://security.microsoft.com/reports/SpamDetections> .
 
 ![Widget Rilevamenti posta indesiderata nel dashboard report](../../media/spam-detections-report-widget.png)
 
@@ -255,7 +255,7 @@ La visualizzazione aggregata del report consente 45 giorni di filtro, mentre la 
 
 <sup>\*</sup> Infine, sarà possibile utilizzare fino a 90 giorni di filtro.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare **a** \> **Dashboard report** e selezionare **Rilevamenti spoofing**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=SpoofMailReport> .
+Per visualizzare il report, aprire il portale di  [Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & collaborazione E-mail & rapporti di collaborazione e fare clic su Visualizza dettagli \>  \>  in **Rilevamenti spoofing**.  Per passare direttamente al report, aprire <https://security.microsoft.com/reports/SpoofMailReport> .
 
 ![Widget Rilevamenti di spoofing nel dashboard dei report](../../media/spoof-detections-widget.png)
 
@@ -301,7 +301,7 @@ Il report fornisce il conteggio dei messaggi di posta elettronica con contenuto 
 
 **Nota:** è importante comprendere che se un messaggio viene inviato a cinque destinatari, viene conteggiato come cinque messaggi diversi e non un messaggio.
 
-Per visualizzare il report, aprire [il Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard  \> **report** e selezionare **Stato di Protezione dalle minacce**. Per passare direttamente al report, aprire uno degli URL seguenti:
+Per visualizzare il report, aprire il portale [di Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail &  \> **collaborazione** \> **E-mail & rapporti di**  collaborazione e fare clic su Visualizza dettagli in Stato protezione dalle **minacce**. Per passare direttamente al report, aprire uno degli URL seguenti:
 
 - Microsoft Defender per Office 365:<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
@@ -479,7 +479,7 @@ Se si fa **clic su Visualizza tabella** dettagli , le informazioni visualizzate 
 
 Il **report Top malware** mostra i vari tipi di malware rilevati dalla protezione [antimalware in EOP.](anti-malware-protection.md)
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare **a** \> **Dashboard report** e selezionare **Malware principale.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=TopMalware> .
+Per visualizzare il report, aprire il portale  [di Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & \> **collaborazione** \> **E-mail & report**  di collaborazione e fare clic su Visualizza dettagli in Malware **principale**. Per passare direttamente al report, aprire <https://security.microsoft.com/reports/TopMalware> .
 
 ![Widget malware principale nel dashboard dei report](../../media/top-malware-report-widget.png)
 
@@ -500,35 +500,33 @@ Il **report di protezione dalle minacce URL** è disponibile in Microsoft Defend
 
 ## <a name="user-reported-messages-report"></a>Rapporto messaggi segnalati dall'utente
 
-Il **rapporto** Messaggi segnalati dall'utente mostra informazioni sui messaggi di posta elettronica segnalati [](enable-the-report-message-add-in.md) dagli utenti come posta indesiderata, tentativi di phishing o buona posta utilizzando il componente aggiuntivo Segnala messaggio o Il componente aggiuntivo Segnala [phishing](enable-the-report-phish-add-in.md).
+Il report Messaggi **segnalati** dall'utente mostra informazioni sui messaggi di posta elettronica [](enable-the-report-message-add-in.md) segnalati dagli utenti come posta indesiderata, tentativi di phishing o buona posta utilizzando il componente aggiuntivo Segnala messaggio o Il componente aggiuntivo Segnala [phishing](enable-the-report-phish-add-in.md).
 
 Sono disponibili dettagli per ogni messaggio, incluso il motivo del recapito, ad esempio un'eccezione del criterio di posta indesiderata o una regola del flusso di posta configurata per l'organizzazione. Per visualizzare i dettagli, selezionare un elemento nell'elenco dei report utente e quindi visualizzare le informazioni nelle **schede Riepilogo** **e** Dettagli.
 
-![Il User-Reported messaggi mostra i messaggi che gli utenti etichettano come posta indesiderata, non come posta indesiderata o tentativi di phishing.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![Il rapporto Messaggi segnalati dall'utente mostra i messaggi che gli utenti etichettano come posta indesiderata, non come posta indesiderata o tentativi di phishing.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
-Per visualizzare questo report, nel [Centro sicurezza & conformità](https://protection.office.com)eseguire una delle operazioni seguenti:
+Per visualizzare questo report, nel portale [di Microsoft 365 Defender](https://security.microsoft.com)passare a Report e-mail & collaborazione E-mail & rapporti di collaborazione  \>  \>  \> **Messaggi segnalati dall'utente**.
 
-- Vai a **Dashboard di gestione delle** \> **minacce** Messaggi \> **segnalati dall'utente**.
+- Go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports** User \> **reported messages**.
 
-- Passare a **Gestione delle minacce** \> **Esaminare** i messaggi segnalati \> **dall'utente**.
-
-![Nel Centro sicurezza & conformità scegliere Gestione delle minacce \> Esaminare i messaggi segnalati \> dall'utente](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![Nel portale di Microsoft 365 Defender scegliere Segnala e-mail & collaborazione E-mail & rapporti di collaborazione Messaggi segnalati \> \> \> dall'utente](../../media/user-reported-messages.png)
 
 > [!IMPORTANT]
-> Per il corretto funzionamento del rapporto Messaggi  segnalati dall'utente, è necessario che la registrazione di controllo sia attivata per l'Office 365 locale. Questa operazione viene in genere eseguita da un utente a cui è assegnato il ruolo Log di controllo in Exchange Online. Per ulteriori informazioni, vedere [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+> Per il corretto funzionamento del report  Messaggi segnalati dall'utente, è necessario che la registrazione di controllo sia attivata per l'Office 365 locale. Questa operazione viene in genere eseguita da un utente a cui è assegnato il ruolo Log di controllo in Exchange Online. Per ulteriori informazioni, vedere [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quali autorizzazioni sono necessarie per visualizzare questi report?
 
-Per visualizzare e utilizzare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel Centro sicurezza & conformità:
+Per visualizzare e usare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel portale di Microsoft 365 Defender:
 
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
 - **Lettore sicurezza**
 - **Lettore globale**
 
-Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
 
-**Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel Centro sicurezza e conformità di & e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+**Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Cosa succede se i report non mostrano dati?
 
@@ -538,8 +536,8 @@ Se i dati nei report non vengono visualizzati, verificare che i criteri siano co
 
 [Protezione da posta indesiderata e antimalware in EOP](anti-spam-and-anti-malware-protection.md)
 
-[Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità](reports-and-insights-in-security-and-compliance.md)
+[Report e informazioni dettagliate intelligenti nel portale di Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
 
-[Visualizzare i report del flusso di posta nel Centro sicurezza & conformità](view-mail-flow-reports.md)
+[Visualizzare i report del flusso di posta nel portale Microsoft 365 Defender](view-mail-flow-reports.md)
 
 [Visualizzare i report per Defender per Office 365](view-reports-for-mdo.md)

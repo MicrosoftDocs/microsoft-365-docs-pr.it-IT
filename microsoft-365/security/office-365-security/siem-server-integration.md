@@ -18,12 +18,12 @@ ms.custom:
 description: Panoramica dell'integrazione del server SiEM (Security Information and Event Management) con i servizi cloud Microsoft 365 e le applicazioni
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599948"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929792"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrazione del server SiEM (Security Information and Event Management) con Microsoft 365 applicazioni e servizi di sicurezza
 
@@ -57,7 +57,7 @@ Un server SIEM può ricevere dati da un'ampia gamma di Microsoft 365 e applicazi
 
 |Microsoft 365 Servizio o applicazione|Input/metodi del server SIEM|Risorse per approfondire|
 |---|---|---|
-|[Microsoft Defender per Office 365](defender-for-office-365.md)|Log di controllo|[Integrazione SIEM con Microsoft Defender per Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender per Office 365](defender-for-office-365.md)|Log di audit|[Integrazione SIEM con Microsoft Defender per Office 365](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender per endpoint](/windows/security/threat-protection/)|Endpoint HTTPS ospitato in Azure <p> API REST|[Pull degli avvisi agli strumenti SIEM](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Integrazione dei log|[Integrazione SIEM con Microsoft Cloud App Security](/cloud-app-security/siem)|
 |
@@ -69,7 +69,7 @@ Un server SIEM può ricevere dati da un'ampia gamma di Microsoft 365 e applicazi
 
 Verificare che la registrazione di controllo sia attivata prima di configurare l'integrazione del server SIEM.
 
-- Per SharePoint Online, OneDrive for Business e Azure Active Directory, la registrazione di controllo è [attivata nel Centro sicurezza & conformità](../../compliance/turn-audit-log-search-on-or-off.md).
+- Per SharePoint Online, OneDrive for Business e Azure Active Directory, la registrazione di controllo è attivata nel [portale di Microsoft 365 Defender.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 - Per Exchange Online, vedere [Manage mailbox auditing](../../compliance/enable-mailbox-auditing.md).
 

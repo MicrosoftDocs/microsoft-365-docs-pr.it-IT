@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere l'organizzazione da phishing e altri attacchi che usano URL dannosi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 406450752085817cb49e3cf08a90c0087af3d94b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9775c67a35d45595f68cd364dc4d70e9985b7e9e
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879289"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930524"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -294,7 +294,7 @@ Nella tabella seguente sono descritti alcuni esempi dei valori che è possibile 
 
 Ogni criterio Collegamenti sicuri contiene un elenco Non riscrivere gli **URL** seguenti che è possibile utilizzare per specificare gli URL non riscritti dall'analisi dei collegamenti sicuri. In altre parole, l'elenco consente agli utenti inclusi nel criterio di accedere agli URL specificati che altrimenti verrebbero bloccati dai collegamenti sicuri. È possibile configurare elenchi diversi in diversi criteri collegamenti sicuri. L'elaborazione dei criteri viene interrotta dopo l'applicazione del primo criterio (probabilmente la priorità più alta) all'utente. Pertanto, solo un **elenco Non riscrivere** gli URL seguenti viene applicato a un utente incluso in più criteri collegamenti sicuri attivi.
 
-Per aggiungere voci all'elenco nei criteri collegamenti sicuri nuovi o esistenti, vedere [Create Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) o Modify Safe Links [policies.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
+Per aggiungere voci all'elenco nei criteri collegamenti sicuri nuovi o esistenti, vedere Usare il portale di [Microsoft 365 Defender](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) per creare criteri collegamenti sicuri o Utilizzare il portale di Microsoft 365 Defender per modificare i criteri collegamenti [sicuri.](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)
 
 **Note**:
 

@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b62659360e990467524ec632968dfea313d0b164
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: bde97638a39eef4561b898b2cf49e51bed6e77a5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861672"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926656"
 ---
 # <a name="turn-on-network-protection"></a>Attivare la protezione di rete
 
@@ -81,7 +82,7 @@ Abilitare la protezione di rete utilizzando uno dei metodi seguenti:
 
 ### <a name="mobile-device-management-mdm"></a>Gestione di dispositivi mobili (MDM)
 
-Usa [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) per abilitare o disabilitare la protezione di rete o abilitare la modalità di controllo.
+Usa [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) per abilitare o disabilitare la protezione di rete o abilitare la modalità di controllo.
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (in precedenza Intune)
 

@@ -18,12 +18,12 @@ description: Gli amministratori e gli utenti finali possono imparare a inviare m
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3a02c710472a996245a38d996ff4485efd1748
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 4d277df764ce2fb135f11c6320bc990e4d4142d6
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624026"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929768"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Inviare manualmente i messaggi a Microsoft per l'analisi
 
@@ -35,7 +35,7 @@ ms.locfileid: "52624026"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Se si è un amministratore di un'organizzazione con Exchange Online cassette postali, è consigliabile utilizzare il portale invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Se si è un amministratore di un'organizzazione con Exchange Online cassette postali, è consigliabile utilizzare il portale invii nel portale di Microsoft 365 Defender. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi di posta indesiderata (posta indesiderata) o phishing nella posta in arrivo o se non ricevono un messaggio di posta elettronica legittimo perché è contrassegnato come posta indesiderata. Stiamo costantemente per ottimizzare i filtri per la posta indesiderata per essere più accurati.
 

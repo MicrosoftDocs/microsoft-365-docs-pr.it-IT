@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932882"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930272"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codici di errore comuni Microsoft 365'API REST di Defender
 
@@ -62,7 +62,7 @@ DisabledFeature | Accesso negato (403) | La funzionalità tenant non è abilitat
 DisallowedOperation | Accesso negato (403) | \<the disallowed operation and the reason\>.
 NotFound | Non trovato (404) | Messaggio di errore Generale non trovato.
 ResourceNotFound | Non trovato (404) | Risorsa \<the requested resource\> non trovata.
-InternalServerError | Errore interno del server (500) | *Nota: nessun messaggio di errore, ritentare l'operazione o contattare Microsoft se non viene risolto*
+InternalServerError | Errore interno del server (500) | *Nota: nessun messaggio di errore, ritentare l'operazione o [contattare Microsoft](/microsoft-365/business-video/get-help-support) se non viene risolto*
 
 ## <a name="examples"></a>Esempi
 
