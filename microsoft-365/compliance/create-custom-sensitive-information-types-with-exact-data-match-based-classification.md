@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6839401bc1dd00acc45992f902a6360eb7f20120
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 05d5889ba690bdf61fd51044b3c059f1476342af
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878197"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964657"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match
 
@@ -612,7 +612,7 @@ Questi percorsi sono supportati dai tipi di informazioni riservate EDM:
 - Microsoft Teams (conversazioni)
 - DLP per SharePoint (file)
 - Criteri DPL di Microsoft Cloud App Security
-- Criteri di etichettatura automatica sul lato server - disponibili per i clienti di cloud commerciali <!--, UNCOMMENT THIS ON 6/15 and government cloud customers-->
+- Criteri di etichettatura automatica sul lato server - disponibili per i clienti cloud commerciali e per i clienti di cloud per enti pubblici
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Creazione di un criterio DLP con EDM
 

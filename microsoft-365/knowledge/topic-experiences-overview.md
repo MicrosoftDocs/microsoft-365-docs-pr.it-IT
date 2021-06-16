@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Panoramica di Viva Topics.
-ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908324"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950024"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Panoramica di Microsoft Viva Topics 
 
@@ -103,7 +103,7 @@ Quando utilizzi Viva Topics nel tuo ambiente Microsoft 365, gli utenti avranno i
 
 - Responsabili informazioni: utenti che guidano gli argomenti attraverso il ciclo di vita degli argomenti. I knowledge  manager utilizzano la pagina Gestisci argomenti nel Centro argomenti per confermare gli argomenti suggeriti dall'IA, rimuovere gli argomenti non più rilevanti, nonché modificare gli argomenti esistenti o crearne di nuovi e sono gli unici utenti ad accedervi. Gli amministratori delle informazioni autorizzano i responsabili delle informazioni a collaborare tramite le impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365. 
 
-- Amministratori della knowledge base: gli amministratori configurano Viva Topics e lo gestiscono tramite i controlli di amministrazione nell'Microsoft 365 di amministrazione. Attualmente, un amministratore globale di Microsoft 365 o di SharePoint può fungere da amministratore delle informazioni.
+- Amministratori della knowledge base: gli amministratori configurano Viva Topics e lo gestiscono tramite i controlli di amministrazione nella interfaccia di amministrazione di Microsoft 365. Attualmente, un amministratore globale di Microsoft 365 o di SharePoint può fungere da amministratore delle informazioni.
 
 Per ulteriori informazioni, vedere [Viva Topics roles.](topic-experiences-roles.md)
 
@@ -123,7 +123,7 @@ Per ulteriori informazioni, vedere [Gestire gli argomenti nel Centro argomenti.]
 
 ## <a name="admin-controls"></a>Controlli amministratore
 
-I controlli di amministrazione nell'Microsoft 365 di amministrazione consentono di gestire Viva Topics. Consentono a un amministratore globale di Microsoft 365 o di SharePoint di:
+I controlli di amministrazione nella interfaccia di amministrazione di Microsoft 365 consentono di gestire Viva Topics. Consentono a un amministratore globale di Microsoft 365 o di SharePoint di:
 
 - Controllare quali utenti dell'organizzazione possono visualizzare gli argomenti nelle pagine moderne di SharePoint o nei risultati della ricerca di SharePoint.
 - Controllare quali siti di SharePoint verranno sottoposti a ricerca per indicizzazione per identificare gli argomenti.
@@ -141,8 +141,6 @@ L'IA lavorerà continuamente per fornirti suggerimenti per migliorare gli argome
 Gli utenti con autorizzazioni di modifica o creazione di argomenti possono aggiornare direttamente le pagine degli argomenti se desiderano apportare correzioni o aggiungere ulteriori informazioni. Possono anche aggiungere nuovi argomenti che l'IA non è stato in grado di identificare. Se sono disponibili informazioni sufficienti su questi argomenti aggiunti manualmente e l'intelligenza artificiale è in grado di identificare questo tipo di argomento, ulteriori suggerimenti dell'IA potrebbero migliorare questi argomenti aggiunti manualmente.
 
 Agli utenti a cui consenti l'accesso per visualizzare gli argomenti nel lavoro quotidiano potrebbe essere chiesto se l'argomento gli è stato utile. Il sistema esamina queste risposte e le utilizza per migliorare gli highlight dell'argomento e aiutare a determinare cosa viene mostrato nei riepiloghi degli argomenti e nei dettagli dell'argomento.
-
-Inoltre, gli utenti con le autorizzazioni appropriate possono taggare elementi come conversazioni di Yammer che sono rilevanti per un argomento e aggiungerli a un argomento specifico. 
 
 Per ulteriori informazioni, vedere [Individuazione e cura degli argomenti](./topic-experiences-discovery-curation.md).
 

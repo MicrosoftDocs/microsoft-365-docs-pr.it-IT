@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710719"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932867"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -263,9 +263,16 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 |Revisione per l'eliminazione | No| Sì |
 |Prova di eliminazione per un massimo di 7 anni | No |Sì, quando si usa la revisione per l'eliminazione o quando un elemento viene contrassegnato come record|
 |Audit delle attività dell’amministratore| Sì | Sì|
+|Controllo delle azioni di conservazione| No | Sì <sup>\*</sup> |
 |Identificazione degli elementi soggetti a conservazione: <br /> - Ricerca contenuto <br /> - Pagina di classificazione dei dati, Esplora contenuto, Esplora attività | <br /> No <br /> No | <br /> Sì <br /> Sì|
 
-Si noti che è possibile usare sia criteri di conservazione sia etichette di conservazione, come metodi di conservazione complementari. Per esempio:
+**Nota a piè di pagina:**
+
+<sup>\*</sup> Per le etichette di conservazione che non contrassegnano i contenuti come record o record normativi, gli eventi di controllo sono limitati al caso in cui un elemento in SharePoint ha un'etichetta applicata, modificata o rimossa. Per informazioni dettagliate sul controllo delle etichette di conservazione, vedere la sezione [Controllo delle azioni di conservazione](#auditing-retention-actions) in questa pagina.
+
+### <a name="combining-retention-policies-and-retention-labels"></a>Combinazione di criteri di conservazione ed etichette di conservazione.
+
+Non è necessario scegliere se usare solo criteri di conservazione o solo etichette di conservazione. Entrambi i metodi possono essere combinati e, di fatto, sono complementari tra di loro per offrire una soluzione più completa. Ad esempio:
 
 1. Si può creare e configurare un criterio conservazione che elimina automaticamente il contenuto cinque anni dopo l'ultima modifica e applicarlo a tutti gli account di OneDrive.
 
@@ -374,9 +381,31 @@ Per ulteriori informazioni sulla raccolta di archiviazione, vedere [Come funzion
 
 In base al comportamento durante il periodo di tolleranza, se viene ri-abilitato il criterio o modificato lo stato della posizione nuovamente su on entro 30 giorni, il criterio verrà ripristinato senza alcuna perdita di dati permanente durante questo periodo.
 
-## <a name="auditing-retention-configuration"></a>Configurazione del controllo della conservazione
+## <a name="auditing-retention-configuration-and-actions"></a>Controllo della configurazione e delle azioni di conservazione
 
-Le azioni dell’amministratore inerenti i criteri di conservazione e la conservazione delle etichette vengono salvate nel log di controllo quando [il controllo è abilitato](turn-audit-log-search-on-or-off.md). Ad esempio, un evento di controllo viene creato quando si crea, si configura o si elimina un criterio o un’etichetta di conservazione. Per la lista completa, vedere [Attività inerenti i criteri e le etichette di conservazione](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+Quando il [controllo è abilitato](turn-audit-log-search-on-or-off.md), gli eventi di controllo per la conservazione sono supportati sia per la configurazione dell'amministrazione (criteri di conservazione ed etichette di conservazione) che per le azioni di conservazione (solo etichette di conservazione).
+
+### <a name="auditing-retention-configuration"></a>Configurazione del controllo della conservazione
+
+Le configurazioni dell'amministratore per i criteri di conservazione e le etichette di conservazione vengono registrate come eventi di controllo quando viene creato, riconfigurato o eliminato un criterio o un'etichetta di conservazione.
+
+Per l'elenco completo degli eventi di controllo, vedere [Attività dei criteri e delle etichette di conservazione](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+
+### <a name="auditing-retention-actions"></a>Controllo delle azioni di conservazione
+
+Le azioni di conservazione registrate come eventi di controllo sono disponibili solo per le etichette di conservazione e non per i criteri di conservazione:
+
+- Quando un'etichetta di conservazione viene applicata, modificata o rimossa da un elemento in SharePoint:
+    - Da **Attività su file e pagine**, selezionare **Etichetta di conservazione modificata per un file**. 
+
+- Quando un elemento etichettato in SharePoint viene contrassegnato come record e viene sbloccato o bloccato da un utente:
+    - In **Attività su file e pagine**, selezionare **Stato del record modificato in Bloccato** e **Stato del record modificato in Sbloccato**.
+
+- Quando un'etichetta di conservazione che contrassegna il contenuto come record o record normativo viene applicata a un elemento in Exchange:
+    - Da **Attività su cassette postali di Exchange**, selezionare **Messaggio etichettato come record**.
+
+- In SharePoint o Exchange, quando un elemento etichettato viene contrassegnato come record o record normativo e viene eliminato definitivamente:
+    - Da **Attività su file e pagine**, selezionare **File eliminato contrassegnato come record**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlet di PowerShell per criteri ed etichette di conservazione
 

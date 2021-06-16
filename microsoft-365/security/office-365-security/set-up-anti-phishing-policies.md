@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono conoscere i criteri anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788416"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964886"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri anti-phishing in Microsoft 365
 
@@ -143,7 +143,7 @@ Per impedire l'aggiunta del punto interrogativo o tramite tag ai messaggi proven
   - Per il punto interrogativo nella foto del mittente, SPF o DKIM sono i più importanti.
   - Per il tag via, confermare il dominio nella firma DKIM o l'indirizzo **MAIL FROM** corrisponde (o è un sottodominio di) al dominio nell'indirizzo Mittente.
 
-Per ulteriori informazioni, vedere Identificare i messaggi sospetti [in Outlook.com e Outlook sul Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+Per ulteriori informazioni, vedere [Identificare i messaggi sospetti in Outlook.com e Outlook sul web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Impostazioni esclusive nei criteri anti-phishing in Microsoft Defender per Office 365
 
@@ -209,10 +209,14 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri a
   - **Mostra suggerimento** per caratteri insoliti : L'indirizzo From contiene set di caratteri insoliti (ad esempio, simboli matematici e testo o una combinazione di lettere maiuscole e minuscole) in un mittente o dominio protetto.
 
   > [!IMPORTANT]
+  > Anche se i suggerimenti per la  sicurezza della rappresentazione sono disattivati, è consigliabile utilizzare una regola del flusso di posta (nota anche come regola di trasporto) per aggiungere ai messaggi l'intestazione del messaggio seguente:
   >
-  > Anche quando i suggerimenti per la  sicurezza della rappresentazione sono disattivati, è consigliabile utilizzare una regola del flusso di posta (nota anche come regola di trasporto) per aggiungere un'intestazione del messaggio denominata **X-MS-Exchange-EnableFirstContactSafetyTip** con valore **abilitato** ai messaggi. Un suggerimento per la sicurezza invierà una notifica ai destinatari la prima volta che riceve un messaggio dal mittente o se spesso non riceve messaggi dal mittente. Questa funzionalità aggiunge un ulteriore livello di protezione da potenziali attacchi di rappresentazione.
+  > - Nome intestazione: **X-MS-Exchange-EnableFirstContactSafetyTip**
+  > - Valore intestazione: **Enable**
   >
-  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Il testo dell'suggerimento per la sicurezza per la protezione della rappresentazione con più destinatari.":::
+  > Un suggerimento per la sicurezza invierà una notifica ai destinatari la prima volta che riceve un messaggio dal mittente o se spesso non riceve messaggi dal mittente. Questa funzionalità aggiunge un ulteriore livello di protezione da potenziali attacchi di rappresentazione.
+  >
+  > ![Il testo dell'suggerimento per la sicurezza per la protezione della rappresentazione con più destinatari.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 - **Intelligence delle cassette** postali: abilita o disabilita l'intelligenza artificiale (AI) che determina i modelli di posta elettronica degli utenti con i contatti frequenti. Questa impostazione consente all'IA di distinguere i messaggi dai mittenti legittimi e impersonati.
 

@@ -1,6 +1,6 @@
 ---
 title: Guide alla migrazione per passare a Microsoft Defender for Endpoint
-description: Scopri come passare da una soluzione defender non Microsoft 365 a Microsoft Defender per Endpoint
+description: Scopri come passare da una soluzione non Microsoft 365 Defender a Microsoft Defender per Endpoint
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: a0b1f82ae26ba1103ed4cc7eb0be7e9c376b5f52
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 010cea14bebd4e29822b1826c0ec4577d53baca7
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933036"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964862"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Passare a Microsoft Defender per Endpoint
 
@@ -38,9 +38,9 @@ Se stai valutando la possibilità di passare a Defender for Endpoint, abbiamo in
 
 | Scenario | Linee guida |
 |:----|:----|
-| Non hai ancora una soluzione di endpoint protection e vuoi saperne di più su Defender for Endpoint. <p> Vuoi vedere il funzionamento di Defender for Endpoint prima di implementazione nel tuo ambiente.  | [Laboratorio di valutazione di Microsoft Defender for Endpoint](evaluation-lab.md)   |
+| Non hai ancora una soluzione di endpoint protection e vuoi saperne di più su Defender for Endpoint. Vuoi vedere il funzionamento di Defender for Endpoint prima di implementazione nel tuo ambiente.  | [Laboratorio di valutazione di Microsoft Defender for Endpoint](evaluation-lab.md)   |
 | Hai già Defender per Endpoint e vuoi assistenza per la configurazione e la configurazione di tutto.  | [Guida alla distribuzione di Microsoft Defender for Endpoint](deployment-phases.md)  |
-| Si prevede di passare da una soluzione di protezione degli endpoint non Microsoft a Defender per Endpoint e Antivirus Microsoft Defender. <p> Si desidera ottenere una panoramica del processo di migrazione e su come eseguire il passaggio. |[Passare a Microsoft Defender per Endpoint](switch-to-microsoft-defender-migration.md)   |
+| Si prevede di passare da una soluzione di protezione degli endpoint non Microsoft a Defender per Endpoint e Antivirus Microsoft Defender. Si desidera ottenere una panoramica del processo di migrazione e su come eseguire il passaggio. |[Passare a Microsoft Defender per Endpoint](switch-to-microsoft-defender-migration.md)   |
 | Hai già eseguito la migrazione o l'onboarded a Defender per Endpoint. Si desidera assistenza con i passaggi successivi, ad esempio la gestione delle impostazioni di sicurezza, la configurazione di altre funzionalità o l'ottimizzazione dei criteri di sicurezza. | [Gestire Microsoft Defender for Endpoint, post-migrazione](manage-atp-post-migration.md) |
 
 

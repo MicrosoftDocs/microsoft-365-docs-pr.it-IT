@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 05/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 34f423222068236271afdda13afb95cffa58b709
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 96e4dab96f8ceb149916c908991079bb2dfa866f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683812"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964898"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurare le opzioni di analisi di Microsoft Defender Antivirus
 
@@ -31,14 +31,11 @@ ms.locfileid: "52683812"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Utilizzare Microsoft Intune per configurare le opzioni di analisi
 
-Vedere le risorse seguenti: 
-
-- [Configurare le impostazioni di restrizione dei dispositivi in Microsoft Intune](/intune/device-restrictions-configure) 
-- [Antivirus Microsoft Defender impostazioni di restrizione del dispositivo per Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Per ulteriori informazioni, vedere [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and Antivirus Microsoft Defender device restriction settings for Windows 10 in [Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus). 
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Utilizzare Microsoft Endpoint Manager per configurare le opzioni di analisi
 
-Vedere [Come creare e distribuire criteri antimalware: Impostazioni di analisi.](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)
+Per informazioni dettagliate sulla configurazione Microsoft Endpoint Manager (ramo corrente), vedere [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Utilizzare Criteri di gruppo per configurare le opzioni di analisi
 
@@ -49,6 +46,7 @@ Vedere [Come creare e distribuire criteri antimalware: Impostazioni di analisi.]
 3. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione computer **e** fare clic su **Modelli amministrativi.**
 
 4. Espandere l'albero **Windows componenti** Antivirus Microsoft Defender e quindi selezionare un percorso (vedere Impostazioni  >   [e posizioni](#settings-and-locations) in questo articolo).
+
 
 5. Modificare l'oggetto criterio. 
 
@@ -69,13 +67,15 @@ Vedere [Come creare e distribuire criteri antimalware: Impostazioni di analisi.]
 | Specifica il carico massimo della CPU (come percentuale) durante un'analisi. <p> **Analisi**  >  **Specificare la percentuale massima di utilizzo della CPU durante un'analisi** | 50 |  `-ScanAvgCPULoadFactor` <p>**NOTA:** il carico massimo della CPU non è un limite rigido, ma è una guida per il motore di analisi per non superare il massimo in media. Le analisi eseguite manualmente ignoreranno questa impostazione e verranno eseguite senza limiti di CPU. |
 | Specificare le dimensioni massime, in kilobyte, dei file di archivio da analizzare. <p> **Analisi**  >  **Specificare la dimensione massima dei file di archivio da analizzare** | Nessun limite | Non disponibile <p>Il valore predefinito 0 non applica alcun limite |
 | Configurare la priorità della CPU bassa per le analisi pianificate <p> **Analisi**  >  **Configurare la priorità della CPU bassa per le analisi pianificate** | Disattivato | Non disponibile |
+
  
 > [!NOTE]
 > Se la protezione in tempo reale è attivata, i file vengono analizzati prima dell'accesso e dell'esecuzione. L'ambito di analisi include tutti i file, inclusi i file su supporti rimovibili montati, ad esempio unità USB. Se il dispositivo che esegue l'analisi ha la protezione in tempo reale o la protezione all'accesso attivata, l'analisi includerà anche condivisioni di rete.
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>Utilizzare PowerShell per configurare le opzioni di analisi
 
-Vedere le risorse seguenti:
+
+Per ulteriori informazioni su come usare PowerShell con Antivirus Microsoft Defender, vedere
 
 - [Gestire Antivirus Microsoft Defender con i cmdlet di PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Cmdlet defender](/powershell/module/defender/)
@@ -99,7 +99,13 @@ Se Antivirus Microsoft Defender rileva una minaccia all'interno di un messaggio 
 - Oggetto e-mail
 - Nome allegato
 
+
+## <a name="scanning-mapped-network-drives"></a>Analisi delle unità di rete mappate
+
+In qualsiasi sistema operativo, vengono analizzate solo le unità di rete mappate a livello di sistema. Le unità di rete mappate a livello utente non vengono analizzate. Le unità di rete mappate a livello di utente sono quelle mappate manualmente da un utente nella sessione e utilizzando le proprie credenziali.
+
 ## <a name="see-also"></a>Vedere anche
+
 
 - [Personalizzare, avviare ed esaminare i risultati di Antivirus Microsoft Defender analisi e correzione](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configurare ed eseguire analisi di Microsoft Defender Antivirus su richiesta](run-scan-microsoft-defender-antivirus.md)

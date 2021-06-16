@@ -1,7 +1,7 @@
 ---
 title: Ricerca di minacce su dispositivi, messaggi di posta elettronica, app e identità con ricerca avanzata
 description: Studiare scenari di ricerca comuni e query di esempio che riguardano dispositivi, messaggi di posta elettronica, app e identità.
-keywords: ricerca avanzata, dati di Office365, dispositivi Windows, messaggi di posta elettronica di Office365 normalizzare, messaggi di posta elettronica, app, identità, ricerca di minacce, ricerca di minacce informatiche, ricerca, query, telemetria, Microsoft 365, Microsoft 365 Defender
+keywords: ricerca avanzata, dati di Office365, dispositivi Windows, messaggi di posta elettronica di Office365 normalizzare, messaggi di posta elettronica, app, identità, ricerca delle minacce, ricerca di minacce informatiche, ricerca, query, telemetria, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aacd0745ff507356035f8f460ed2b4307e9da6ed
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932966"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964874"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Cercare minacce tra dispositivi, posta elettronica, app e identità
 
@@ -35,7 +35,7 @@ ms.locfileid: "51932966"
 **Si applica a:**
 - Microsoft 365 Defender
 
-[La ricerca avanzata](advanced-hunting-overview.md) in Microsoft 365 Defender ti consente di cercare in modo proattivo le minacce in:
+[La ricerca avanzata](advanced-hunting-overview.md) in Microsoft 365 Defender consente di cercare in modo proattivo le minacce in:
 - Dispositivi gestiti da Microsoft Defender per Endpoint
 - Messaggi di posta elettronica elaborati da Microsoft 365
 - Attività dell'app cloud, eventi di autenticazione e attività del controller di dominio monitorate da Microsoft Cloud App Security e Microsoft Defender for Identity
@@ -100,6 +100,90 @@ DeviceInfo
 | join AlertInfo on AlertId
 | project AlertId, Timestamp, Title, Severity, Category 
 ```
+
+
+### <a name="get-file-event-information"></a>Ottenere informazioni sull'evento del file
+
+Utilizzare la query seguente per ottenere informazioni sugli eventi correlati ai file. 
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceFileEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="get-network-event-information"></a>Ottenere informazioni sugli eventi di rete
+
+Utilizzare la query seguente per ottenere informazioni sugli eventi correlati alla rete.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-agent-version-information"></a>Ottenere informazioni sulla versione dell'agente dispositivo
+
+Usa la query seguente per ottenere la versione dell'agente in esecuzione in un dispositivo.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="example-query-for-macos-devices"></a>Query di esempio per dispositivi macOS
+
+Usa la query di esempio seguente per visualizzare tutti i dispositivi che eseguono macOS con una versione precedente a Catalina.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OSPlatform == "macOS" and  OSVersion !contains "10.15" and OSVersion !contains "11."
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-status-info"></a>Ottenere informazioni sullo stato del dispositivo
+
+Usa la query seguente per ottenere lo stato di un dispositivo. Nell'esempio seguente, la query controlla se il dispositivo è onboarded.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OnboardingStatus != "Onboarded"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
 
 ## <a name="hunting-scenarios"></a>Scenari di ricerca
 

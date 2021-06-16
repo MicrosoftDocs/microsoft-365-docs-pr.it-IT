@@ -19,17 +19,17 @@ ms.custom:
 search.appverid: MET150
 description: Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende nell'interfaccia di amministrazione.
 ms.date: 04/08/2021
-ms.openlocfilehash: 5c4ce1c00bfde4a895710d737fab0836998836c6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 18e7ca5cec91e1614808f2087ce0394f33a45c7a
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929456"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950084"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
 > [!IMPORTANT]
-> Questo articolo si applica solo agli abbonamenti a Microsoft 365 per le aziende. Per gli abbonamenti Microsoft 365 Family o Personal, vedere [Annullare un abbonamento Microsoft 365](https://support.microsoft.com/it-IT/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b).
+> Questo articolo si applica solo agli abbonamenti a Microsoft 365 per le aziende. Per gli abbonamenti Microsoft 365 Family o Personal, vedere [Annullare un abbonamento Microsoft 365](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 
 *Idoneità:* Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se si hanno più di 25 licenze assegnate a utenti, ridurlo a meno di 25 o [contattare il supporto per annullare l'abbonamento](../../business-video/get-help-support.md).
 

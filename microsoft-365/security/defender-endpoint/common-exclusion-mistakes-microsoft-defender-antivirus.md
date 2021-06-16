@@ -15,21 +15,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/17/2021
-ms.openlocfilehash: d10343538c995534878196cc57092c37fd2dcf7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/15/2021
+ms.openlocfilehash: f9ca83fcfba4b79898a0fed527e38947a4c230d6
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538064"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950132"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Errori comuni da evitare quando si definiscono le esclusioni
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-È possibile definire un elenco di esclusione per gli elementi che non si desidera Antivirus Microsoft Defender analizzare. Tali elementi esclusi potrebbero contenere minacce che rendono vulnerabile il dispositivo. 
-
-In questo articolo vengono descritti alcuni errori comuni da evitare durante la definizione delle esclusioni. 
+È possibile definire un elenco di esclusione per gli elementi che non si desidera Antivirus Microsoft Defender analizzare. Tali elementi esclusi potrebbero contenere minacce che rendono vulnerabile il dispositivo. In questo articolo vengono descritti alcuni errori comuni da evitare durante la definizione delle esclusioni. 
 
 Prima di definire gli elenchi di esclusione, [vedere Consigli per la definizione delle esclusioni.](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
@@ -231,7 +227,9 @@ In generale, non definire esclusioni per i processi seguenti:
 
 `dbgsvc.exe`  
 
-`dnx.exe`  
+`dnx.exe`
+
+`dotnet.exe`
 
 `fsi.exe`  
 
@@ -272,9 +270,3 @@ Antivirus Microsoft Defender Il servizio viene eseguito nel contesto di sistema 
 
 Per informazioni su come utilizzare i caratteri jolly negli elenchi di esclusione dei nomi di file e dei percorsi delle cartelle o delle estensioni, vedere Use [wildcards in the file name and folder path or extension exclusion lists.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 
-## <a name="related-articles"></a>Articoli correlati
-
-- [Configurare e convalidare le esclusioni Antivirus Microsoft Defender analisi](configure-exclusions-microsoft-defender-antivirus.md)
-- [Configurare e convalidare le esclusioni in base all'estensione di file e al percorso della cartella](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Configurare e convalidare le esclusioni per i file aperti dai processi](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configurare Antivirus Microsoft Defender esclusioni in Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

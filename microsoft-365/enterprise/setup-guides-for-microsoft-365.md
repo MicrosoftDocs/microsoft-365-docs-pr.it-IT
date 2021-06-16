@@ -21,35 +21,35 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accelerare la pianificazione e la configurazione di Microsoft 365 o Office 365 con le guide all'installazione.
-ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d2e4f29a3f6d484c8586194258c3157bc73fb9e1
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454148"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964621"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guide alla configurazione per i servizi di Office 365 e Microsoft 365
 
-Microsoft 365 e Office 365 di configurazione forniscono indicazioni e risorse personalizzate per la pianificazione e la distribuzione di tenant, app e servizi. Queste Microsoft 365 guide vengono create usando le stesse procedure consigliate che gli esperti di onboarding [di FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) condividono nelle singole interazioni e sono disponibili per tutti gli amministratori nell'interfaccia di amministrazione di Microsoft 365. Forniscono informazioni sulla configurazione del prodotto, abilitano le funzionalità di sicurezza, distribuiscono strumenti di collaborazione e forniscono script per velocizzare le distribuzioni avanzate.
+Microsoft 365 e Office 365 di configurazione forniscono indicazioni e risorse personalizzate per la pianificazione e la distribuzione di tenant, app e servizi. Queste guide vengono create usando [](https://www.microsoft.com/fasttrack/microsoft-365) le stesse procedure consigliate che Microsoft 365 FastTrack esperti di onboarding condividono in singole interazioni e sono disponibili per tutti gli amministratori all'interno del interfaccia di amministrazione di Microsoft 365. Forniscono informazioni sulla configurazione del prodotto, abilitano le funzionalità di sicurezza, distribuiscono strumenti di collaborazione e forniscono script per velocizzare le distribuzioni avanzate.
 
-## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Come accedere alle guide alla configurazione nell'Microsoft 365 di amministrazione
+## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Come accedere alle guide alla configurazione nella interfaccia di amministrazione di Microsoft 365
 
-Le guide all'installazione sono accessibili dalla pagina [Guida all'installazione](https://aka.ms/setupguidance) nell'Microsoft 365 di amministrazione. Puoi tenere traccia dello stato del tuo stato di avanzamento e puoi tornare in qualsiasi momento per completare una guida. Per accedere alla **pagina Delle indicazioni per l'installazione:**
+Le guide all'installazione sono accessibili dalla pagina Delle indicazioni per [l'installazione](https://aka.ms/setupguidance) nella interfaccia di amministrazione di Microsoft 365. Puoi tenere traccia dello stato del tuo stato di avanzamento e puoi tornare in qualsiasi momento per completare una guida. Per accedere alla **pagina Delle indicazioni per l'installazione:**
 
-1. [Nell'Microsoft 365 di amministrazione](https://admin.microsoft.com/)passare alla **home** page.
+1. Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/), passare alla **home** page.
 
 2. Trova la **scheda Guide & formazione.** 
 
-   ![Scheda Guide & formazione nell'Microsoft 365 di amministrazione](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![Scheda Guide & formazione nella interfaccia di amministrazione di Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
 3. Selezionare **Guida all'installazione personalizzata**.
 
-   ![Screenshot of the Setup guidance page in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![Screenshot of the Setup guidance page in the interfaccia di amministrazione di Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 >[!NOTE]
->Le autorizzazioni di amministratore tenant sono necessarie per accedere all'Microsoft 365 di amministrazione.
+>Le autorizzazioni di amministratore tenant sono necessarie per accedere al interfaccia di amministrazione di Microsoft 365.
 
-## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Come funzionano le guide alla configurazione nell'Microsoft 365 di amministrazione?
+## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Come funzionano le guide all'installazione nella interfaccia di amministrazione di Microsoft 365?
 
 Ogni guida fornisce istruzioni dettagliate, risorse, articoli e, se necessario, script che è possibile utilizzare per apportare modifiche alla configurazione. Queste guide offrono scelte che riflettono le esigenze specifiche delle organizzazioni di piccole e grandi dimensioni. Inoltre, la guida include assistenza sia per gli amministratori nuovi che per gli amministratori più esperti.
 
@@ -96,11 +96,11 @@ Microsoft Edge è stato ricostruito da zero per garantire la compatibilità e le
 
 La [guida all'installazione](https://aka.ms/edgeadvisor) di Microsoft Edge consente di configurare l'individuazione siti di Enterprise per vedere quali siti a cui si accede nell'organizzazione potrebbe dover utilizzare la modalità IE, esaminare e configurare caratteristiche di sicurezza importanti, configurare criteri di privacy e criteri aggiuntivi per soddisfare i requisiti dell'organizzazione e gestire l'accesso Web nei dispositivi. Puoi scaricare Microsoft Edge in singoli dispositivi o ti mostreremo come eseguire la distribuzione a più utenti dell'organizzazione con Configuration Manager o Microsoft Intune. 
 
-### <a name="microsoft-search-setup-guide"></a>Guida all'installazione di Microsoft Search
+### <a name="microsoft-search-setup-guide"></a>Microsoft Search guida alla configurazione
 
-Microsoft Search consente all'organizzazione di trovare ciò di cui ha bisogno per completare ciò su cui sta lavorando. Sia che si cerchino persone, file, organigrammi, siti o risposte a domande comuni, l'organizzazione può usare Microsoft Search per tutta la giornata lavorativa per ottenere risposte.
+Microsoft Search aiuta l'organizzazione a trovare ciò di cui ha bisogno per completare ciò su cui sta lavorando. Sia che si cerchino persone, file, organigrammi, siti o risposte a domande comuni, l'organizzazione può usare Microsoft Search per tutta la giornata lavorativa per ottenere risposte.
 
-La [guida all'installazione di Microsoft Search](https://aka.ms/MicrosoftSearchSetup) consente di configurare Microsoft Search indipendentemente dal fatto che si desideri eseguire il progetto pilota in un gruppo di utenti o implementarlo a tutti gli utenti dell'organizzazione. Dovrai assegnare gli amministratori della ricerca e gli editor di ricerca e quindi personalizzare l'esperienza di ricerca per gli utenti con risposte e opzioni aggiuntive, ad esempio l'aggiunta dell'estensione Bing a Chrome o l'impostazione di Bing come motore di ricerca predefinito.
+La [Microsoft Search di](https://aka.ms/MicrosoftSearchSetup) configurazione consente di configurare Microsoft Search se si desidera eseguire la distribuzione pilota a un gruppo di utenti o stenderla a tutti gli utenti dell'organizzazione. Dovrai assegnare gli amministratori della ricerca e gli editor di ricerca e quindi personalizzare l'esperienza di ricerca per gli utenti con risposte e opzioni aggiuntive, ad esempio l'aggiunta dell'estensione Bing a Chrome o l'impostazione di Bing come motore di ricerca predefinito.
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guida alla configurazione della co-gestione di Intune Configuration Manager
 
@@ -157,13 +157,13 @@ Con la [Microsoft Intune](https://aka.ms/intunesetupguide)di configurazione, dov
 
 Microsoft Exchange Online Protection (EOP) è un servizio di filtro della posta elettronica basato su cloud per la protezione da posta indesiderata e malware, con funzionalità per proteggere l'organizzazione dalle violazioni dei criteri di messaggistica. 
 
-Utilizzare la [guida alla configurazione](https://aka.ms/EOPguidance) di Exchange Online Protection per configurare EOP selezionando quale dei tre scenari di distribuzione si adatta alle cassette postali locali, alle cassette postali ibride (combinazione di locale e cloud) o a tutte le cassette postali cloud che si adattano all'organizzazione. &mdash; &mdash; La guida fornisce informazioni e risorse per configurare ed esaminare le licenze dell'utente, assegnare autorizzazioni nell'interfaccia di amministrazione di Microsoft 365 e configurare i criteri antimalware e di posta indesiderata dell'organizzazione nel Centro sicurezza & Conformità. 
+Utilizzare la [guida alla configurazione](https://aka.ms/EOPguidance) di Exchange Online Protection per configurare EOP selezionando quale dei tre scenari di distribuzione si adatta alle cassette postali locali, alle cassette postali ibride (combinazione di locale e cloud) o a tutte le cassette postali cloud che si adattano all'organizzazione. &mdash; &mdash; La guida fornisce informazioni e risorse per configurare ed esaminare le licenze dell'utente, assegnare autorizzazioni nel interfaccia di amministrazione di Microsoft 365 e configurare i criteri antimalware e di posta indesiderata dell'organizzazione nel Centro sicurezza & conformità. 
 
 ### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender per Office 365 advisor
 
 [Microsoft Defender for Office 365 advisor](https://aka.ms/oatpsetup) protegge l'organizzazione dalle minacce dannose che l'ambiente potrebbe incontrare tramite messaggi di posta elettronica, collegamenti e strumenti di collaborazione di terze parti. Questa guida fornisce le risorse e le informazioni necessarie per preparare e identificare defender per Office 365 piano per soddisfare le esigenze dell'organizzazione. 
 
-### <a name="microsoft-information-protection-setup-guide"></a>Guida alla configurazione di Microsoft Information Protection
+### <a name="microsoft-information-protection-setup-guide"></a>Microsoft Information Protection guida alla configurazione
 
 Ottenere una panoramica delle funzionalità che è possibile applicare alla strategia di Protezione delle informazioni in modo da essere certi che le informazioni riservate siano protette. È possibile usare un approccio basato su un ciclo di vita in quattro fasi per individuare, classificare, proteggere e monitorare le informazioni sensibili. La [guida Configurazione di Microsoft Information Protection](https://aka.ms/mipsetupguide) fornisce indicazioni per completare ognuna di queste fasi.
 
@@ -215,10 +215,5 @@ Usare la guida Deploy [Office to remote users](https://aka.ms/officeremoteinstal
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Distribuire e aggiornare Microsoft 365 Apps con Configuration Manager
 
-Per le organizzazioni che usano Configuration Manager, è possibile utilizzare l'advisor Distribuire e aggiornare Microsoft 365 Apps con [Configuration Manager](https://aka.ms/oppinstall) per generare uno script che configurerà automaticamente la distribuzione di Microsoft 365 Apps usando le procedure consigliate dai tecnici di FastTrack. Usa questa guida per creare i gruppi di distribuzione, personalizzare le app e le funzionalità di Office, configurare installazioni dinamiche o snelle ed eseguire lo script per creare le applicazioni, le regole di distribuzione automatica e le raccolte di dispositivi necessarie per la distribuzione. 
+Per le organizzazioni che usano Configuration Manager, è possibile utilizzare l'advisor Distribuire e aggiornare Microsoft 365 Apps con [Configuration Manager](https://aka.ms/oppinstall) per generare uno script che configurerà automaticamente la distribuzione di Microsoft 365 Apps usando le procedure consigliate dai tecnici FastTrack. Usa questa guida per creare i gruppi di distribuzione, personalizzare le app e le funzionalità di Office, configurare installazioni dinamiche o snelle ed eseguire lo script per creare le applicazioni, le regole di distribuzione automatica e le raccolte di dispositivi necessarie per la distribuzione. 
 
-### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Integrare un'app cloud di terze parti con Azure AD
-
-Migliora l'esperienza utente e fornisci un ulteriore livello di sicurezza integrando la tua app di terze parti con Azure Active Directory (Azure AD). Con questa esperienza end-to-end, è possibile eseguire la maggior parte della configurazione direttamente da questa procedura guidata. Se appropriato, reindirizza l'utente alla pagina di configurazione corrispondente.
-
-Usa la procedura guidata Integrare app [cloud di terze](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) parti per integrare un'app cloud di terze parti con Azure AD.

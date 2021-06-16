@@ -16,19 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-search.appverid: MET150
-description: Iscriversi per una versione di valutazione gratuita di 30 giorni Microsoft 365 Business Standard, Microsoft 365 Business Premium o Microsoft 365 Apps for business.
+search.appverid: GEA150
+description: Iscriversi per una versione di valutazione gratuita di 30 giorni per Microsoft 365 Business Standard, Microsoft 365 Business Premium o App Microsoft 365 per le aziende.
 ms.date: 08/07/2020
-ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583449"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950048"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Provare o acquistare un abbonamento Microsoft 365 per le aziende
 
-Microsoft 365 per le aziende è un servizio di sottoscrizione che consente di eseguire l'organizzazione nel cloud mentre Microsoft si occupa dell'IT per te. Microsoft gestisce i dispositivi, protegge dalle minacce reali e fornisce all'organizzazione il software aziendale più recente. Puoi iscriverti a una sottoscrizione di valutazione gratuita per Microsoft 365 Business Standard, Microsoft 365 Business Premium o Microsoft 365 Apps for business e provarla per 30 giorni.
+Microsoft 365 per le aziende è un servizio di sottoscrizione che consente di eseguire l'organizzazione nel cloud mentre Microsoft si occupa dell'IT per te. Microsoft gestisce i dispositivi, protegge dalle minacce reali e fornisce all'organizzazione il software aziendale più recente. Puoi iscriverti a una sottoscrizione di valutazione gratuita per Microsoft 365 Business Standard, Microsoft 365 Business Premium o App Microsoft 365 per le aziende e provarla per 30 giorni.
 
 > [!NOTE]
 > È necessario utilizzare una carta di credito quando si effettua la registrazione per una versione di valutazione gratuita. Al termine del periodo di valutazione gratuito, l'abbonamento di valutazione viene convertito automaticamente in un abbonamento a pagamento. La carta di credito non viene fatturata fino alla fine del periodo di prova.
@@ -49,7 +49,7 @@ Non è necessario un account Microsoft esistente per iscriversi per una versione
 
 ## <a name="try-a-free-trial-subscription"></a>Provare una sottoscrizione di valutazione gratuita
 
-Sei un nuovo cliente e non hai già un account con Microsoft? Seguire questa procedura per creare un account e iscriversi a una sottoscrizione di valutazione gratuita di Microsoft 365 Business Standard, Microsoft 365 Business Premium o Microsoft 365 Apps for business.
+Sei un nuovo cliente e non hai già un account con Microsoft? Seguire questa procedura per creare un account e iscriversi a una sottoscrizione di valutazione gratuita di Microsoft 365 Business Standard, Microsoft 365 Business Premium o App Microsoft 365 per le aziende.
 
 1. Accedere al <a href="https://www.aka.ms/office365signup" target="_blank">sito Microsoft 365 prodotti</a>.
 2. Seleziona il piano a cui vuoi iscriverti, ad esempio **Microsoft 365 Business Standard,** scorri verso il basso nella pagina e seleziona Prova **gratuitamente per 1 mese.**
@@ -62,7 +62,7 @@ Al termine del periodo di valutazione gratuito, l'abbonamento di valutazione vie
 
 Se si desidera acquistare l'abbonamento prima che il periodo di valutazione sia finito, eseguire la procedura seguente:
 
-1. Nell'Microsoft 365 di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti.</a>
+1. Nel interfaccia di amministrazione di Microsoft 365, passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti.</a>
 2. Nella **pagina I tuoi** prodotti trova l'abbonamento che vuoi acquistare.
 3. Nella sezione **Licenze** selezionare **Acquista sottoscrizione.**
 4. Scegli un impegno mensile o annuale per l'abbonamento, quindi seleziona **Checkout.**
@@ -83,13 +83,13 @@ Quando sei pronto per l'acquisto, vedi [Acquistare la versione di valutazione.](
 
 ## <a name="cancel-your-free-trial-subscription"></a>Annullare la sottoscrizione di valutazione gratuita
 
-Se decidi di annullare la sottoscrizione di valutazione prima del termine del periodo di valutazione gratuito, vai all'interfaccia di amministrazione di Microsoft 365 e disattiva [Fatturazione ricorrente.](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) La versione di valutazione scadrà automaticamente al termine del mese e la carta di credito \' non verrà addebitata.
+Se decidi di annullare la sottoscrizione di valutazione prima del termine del periodo di valutazione gratuito, vai al interfaccia di amministrazione di Microsoft 365 e [disattiva Fatturazione ricorrente.](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) La versione di valutazione scadrà automaticamente al termine del mese e la carta di credito \' non verrà addebitata.
 
 ## <a name="try-a-different-subscription"></a>Provare un abbonamento diverso
 
-Se hai già un abbonamento Microsoft 365 per le aziende, puoi usare l'interfaccia di amministrazione di Microsoft 365 per provare un abbonamento diverso.
+Se si dispone già di un Microsoft 365 per le aziende, è possibile utilizzare la interfaccia di amministrazione di Microsoft 365 per provare un abbonamento diverso.
 
-Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione di Microsoft 365, la nuova sottoscrizione viene associata alla stessa organizzazione (spazio dei nomi di dominio) della sottoscrizione esistente. Questa associazione semplifica lo spostamento degli utenti dell'organizzazione tra sottoscrizioni o l'assegnazione di una licenza per i prodotti aggiuntivi necessari.
+Quando si aggiunge una sottoscrizione tramite il interfaccia di amministrazione di Microsoft 365, la nuova sottoscrizione viene associata alla stessa organizzazione (spazio dei nomi di dominio) della sottoscrizione esistente. Questa associazione semplifica lo spostamento degli utenti dell'organizzazione tra sottoscrizioni o l'assegnazione di una licenza per i prodotti aggiuntivi necessari.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acquisto servizi.</a>
 2. Nella pagina **Acquista servizi** vengono visualizzati i piani disponibili per l'organizzazione. Scegliere il Microsoft 365 piano che si desidera provare.
@@ -101,7 +101,7 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione d
 
 ## <a name="buy-a-different-subscription"></a>Acquistare un abbonamento diverso
 
-Se si dispone già di un abbonamento Microsoft 365 per le aziende, è possibile passare attraverso l'interfaccia di amministrazione di Microsoft 365 per acquistare un abbonamento diverso per l'organizzazione.
+Se si dispone già di un abbonamento Microsoft 365 per le aziende, è possibile passare attraverso il interfaccia di amministrazione di Microsoft 365 per acquistare un abbonamento diverso per l'organizzazione.
 
 Quando si acquista un'altra sottoscrizione tramite l'interfaccia di amministrazione, la nuova sottoscrizione viene associata alla stessa organizzazione (spazio dei nomi di dominio) della sottoscrizione esistente. In questo modo è più semplice spostare gli utenti dell'organizzazione tra le sottoscrizioni o assegnare loro una licenza per l'abbonamento aggiuntivo di cui hanno bisogno.
 
