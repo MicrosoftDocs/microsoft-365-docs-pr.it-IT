@@ -17,26 +17,25 @@ ROBOTS: NOINDEX
 description: Gli utenti possono imparare a visualizzare e agire sui messaggi in quarantena inviati alle cassette postali condivise per cui dispongono delle autorizzazioni.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d6aed4a6e3bc725635558a5e8394b671d11f47c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 4b958bb07660f4e0c93865300e190c713148a21d
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929852"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933056"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visualizzare e rilasciare i messaggi in quarantena dalle cassette postali condivise
 
 > [!NOTE]
 > Le funzionalità descritte in questo articolo sono attualmente disponibili in Anteprima, non sono disponibili per tutti e sono soggette a modifiche.
 
-Gli utenti possono gestire i messaggi in quarantena in cui sono uno dei destinatari, come descritto in Trovare e rilasciare i messaggi in quarantena [come utente in EOP.](find-and-release-quarantined-messages-as-a-user.md) Ma per quanto riguarda le cassette postali condivise in cui l'utente dispone delle autorizzazioni Accesso completo e Invia come o Invia per conto della cassetta postale, come descritto in Cassette postali condivise [in Exchange Online](/exchange/collaboration-exo/shared-mailboxes)?
+Gli utenti possono gestire i messaggi in quarantena in cui sono uno dei destinatari, come descritto in Trovare e rilasciare i messaggi in quarantena [come utente in EOP.](find-and-release-quarantined-messages-as-a-user.md) Ma per quanto riguarda **le cassette** postali condivise in cui l'utente dispone delle autorizzazioni Accesso completo e Invia come o Invia per conto della cassetta postale, come descritto in Cassette postali condivise [in Exchange Online](/exchange/collaboration-exo/shared-mailboxes)?
 
 In precedenza, la possibilità per gli utenti di gestire i messaggi in quarantena inviati a una cassetta postale condivisa richiedeva agli amministratori di lasciare abilitato il mapping automatico per la cassetta postale condivisa (è abilitato per impostazione predefinita quando un amministratore concede a un utente l'accesso a un'altra cassetta postale). Tuttavia, a seconda delle dimensioni e del numero di cassette postali a cui  l'utente ha accesso, le prestazioni possono risentirne quando Outlook tenta di aprire tutte le cassette postali a cui l'utente ha accesso. Per questo motivo, molti amministratori scelgono di rimuovere [il mapping automatico per le cassette postali condivise.](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)
 
 A questo punto, il mapping automatico non è più necessario per consentire agli utenti di gestire i messaggi in quarantena inviati alle cassette postali condivise. Funziona solo. Esistono due metodi diversi per accedere ai messaggi in quarantena inviati a una cassetta postale condivisa:
 
 - Se l'amministratore ha abilitato le notifiche di posta indesiderata dell'utente finale nei criteri di protezione da  posta [indesiderata,](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)qualsiasi utente che ha accesso alle notifiche di posta indesiderata dell'utente finale nella cassetta postale condivisa può fare clic sul pulsante Revisione nella notifica per andare in quarantena nel portale di Microsoft 365 Defender. Si noti che questo metodo consente solo agli utenti di gestire i messaggi in quarantena inviati alla cassetta postale condivisa. Gli utenti non possono gestire i propri messaggi di quarantena in questo contesto.
-
 - L'utente [può passare alla quarantena nel portale Microsoft 365 Defender.](find-and-release-quarantined-messages-as-a-user.md) Per impostazione predefinita, vengono visualizzati solo i messaggi inviati all'utente. Tuttavia, l'utente può modificare i risultati dell'ordinamento **(il** pulsante **ID** messaggio per impostazione  predefinita) in Indirizzo di posta elettronica **destinatario,** immettere l'indirizzo di posta elettronica della cassetta postale condivisa e quindi fare clic su Aggiorna per visualizzare i messaggi in quarantena inviati alla cassetta postale condivisa.
 
   ![Ordinamento dei messaggi in quarantena in base all'indirizzo di posta elettronica del destinatario.](../../media/quarantine-sort-results-by-recipient-email-address.png)

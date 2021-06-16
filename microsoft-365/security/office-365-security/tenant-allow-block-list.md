@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare gli elementi consentiti e i blocchi nell'elenco Consenti/Blocca tenant nel portale di sicurezza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 67c3badb86f1cfb9bf644cc202ed67e3163a6772
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929732"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933156"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gestire l'elenco di tenant consentiti/bloccati
 
@@ -92,44 +92,36 @@ In questo articolo viene descritto come configurare le voci nell'elenco consenti
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Usare il portale Microsoft 365 Defender per creare voci di URL di blocco nell'elenco tenant consentiti/bloccati
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Tenant \>  \> **Consenti/Blocca elenchi.**
+1. Nel portale Microsoft 365 Defender passare a Criteri **& regole** regole criteri di minaccia \>  \> **Sezione** Tenant \> **Consenti/Blocca elenchi**.
 
-2. Nella pagina **Elenco tenant consentiti/bloccati** verificare che la scheda **URL** sia selezionata e quindi fare clic su **Blocca**
+2. Nella pagina **Elenco tenant consentiti/bloccati** verificare che la scheda **URL** sia selezionata e quindi fare clic su Blocca ![ icona ](../../media/m365-cc-sc-create-icon.png) **Blocca**.
 
 3. Nel riquadro **a comparsa Blocca URL** visualizzato configurare le impostazioni seguenti:
-
-   - **Aggiungi URL da bloccare:** immetti un URL per riga, fino a un massimo di 20. Per informazioni dettagliate sulla sintassi per le voci URL, vedere la sintassi dell'URL per la sezione [Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo articolo.
-
+   - **Aggiungere URL con caratteri jolly:** immettere un URL per riga, fino a un massimo di 20. Per informazioni dettagliate sulla sintassi per le voci URL, vedere la sintassi dell'URL per la sezione [Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo articolo.
    - **Non scadere mai:** eseguire una delle operazioni seguenti:
-
-     - Verificare che l'impostazione sia disattivata ( Interruttore disattivato ) e utilizzare la casella Scadenza per specificare la data di scadenza ![ ](../../media/scc-toggle-off.png) per le voci. 
+     - Verificare che l'impostazione sia disattivata ( Interruttore disattivato ) e utilizzare la casella Rimuovi su per specificare la data di ![ ](../../media/scc-toggle-off.png) scadenza per le voci. 
 
        oppure
 
      - Spostare l'interruttore a destra per configurare le voci in modo che non scada mai: ![Attiva](../../media/scc-toggle-on.png).
-
    - **Nota facoltativa:** immettere un testo descrittivo per le voci.
 
 4. Al termine, fare clic su **Aggiungi**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Usare il portale Microsoft 365 Defender per creare voci di file bloccate nell'elenco tenant consentiti/bloccati
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **Tenant Consenti/Blocca elenchi**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& regole** regole criteri di minaccia \>  \> **Sezione** Tenant \> **Consenti/Blocca elenchi**.
 
-2. Nella pagina **Elenco tenant consentiti/bloccati** selezionare la **scheda File** e quindi fare clic su **Blocca.**
+2. Nella pagina **Elenco tenant consentiti/bloccati** selezionare la **scheda File** e quindi fare clic su Blocca ![ icona ](../../media/m365-cc-sc-create-icon.png) **Blocca**.
 
-3. Nel riquadro **a comparsa Aggiungi file da** bloccare, configurare le impostazioni seguenti:
-
+3. Nel riquadro **a comparsa Blocca** file visualizzato configurare le impostazioni seguenti:
    - **Aggiungere hash di file:** immettere un valore hash SHA256 per riga, fino a un massimo di 20.
-
    - **Non scadere mai:** eseguire una delle operazioni seguenti:
-
-     - Verificare che l'impostazione sia disattivata ( Interruttore disattivato ) e utilizzare la casella Scadenza per specificare la data di scadenza ![ ](../../media/scc-toggle-off.png) per le voci. 
+     - Verificare che l'impostazione sia disattivata ( Interruttore disattivato ) e utilizzare la casella Rimuovi su per specificare la data di ![ ](../../media/scc-toggle-off.png) scadenza per le voci. 
 
      oppure
 
      - Spostare l'interruttore a destra per configurare le voci in modo che non scada mai: ![Attiva](../../media/scc-toggle-on.png).
-
    - **Nota facoltativa:** immettere un testo descrittivo per le voci.
 
 4. Al termine, fare clic su **Aggiungi**.
@@ -142,42 +134,37 @@ In questo articolo viene descritto come configurare le voci nell'elenco consenti
 - Quando si configura una voce consenti o blocca per una coppia di domini, i messaggi di tale coppia di domini non vengono più visualizzati nelle informazioni di spoof intelligence.
 - Le voci per i mittenti contraffatti non scadono mai.
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **Tenant Consenti/Blocca elenchi**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& regole** regole criteri di minaccia \>  \> **Sezione** Tenant \> **Consenti/Blocca elenchi**.
 
-2. Nella pagina **Elenco tenant consentiti/non consentiti** selezionare la **scheda Spoofing** e quindi fare clic su **Aggiungi.**
+2. Nella pagina **Elenco tenant consentiti/non consentiti** selezionare la scheda **Spoofing** e quindi fare clic su ![ Blocca icona ](../../media/m365-cc-sc-create-icon.png) **Aggiungi**.
 
 3. Nel riquadro **a comparsa Aggiungi nuove coppie** di domini visualizzato configurare le impostazioni seguenti:
-
    - **Aggiungere nuove coppie di domini con caratteri jolly:** immettere una coppia di domini per riga, fino a un massimo di 20. Per informazioni dettagliate sulla sintassi per le voci dei mittenti falsificati, vedere la sintassi della coppia di domini per le voci del mittente contraffatte nella sezione [Tenant Allow/Block List](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) più avanti in questo articolo.
-
    - **Tipo di spoofing**: selezionare uno dei valori seguenti:
      - **Interno**: il mittente contraffatto si trova in un dominio appartenente all'organizzazione (un [dominio accettato).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Esterno:** il mittente contraffatto si trova in un dominio esterno.
-
    - **Azione**: selezionare **Consenti** o **Blocca**.
 
 4. Al termine, fare clic su **Aggiungi**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>Usare il portale Microsoft 365 Defender per visualizzare le voci nell'elenco tenant consentiti/bloccati
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **Tenant Consenti/Blocca elenchi**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& regole** regole criteri di minaccia \>  \> **Sezione** Tenant \> **Consenti/Blocca elenchi**.
 
 2. Selezionare la scheda desiderata. Le colonne disponibili dipendono dalla scheda selezionata:
 
    - **URL**:
      - **Value**: URL.
      - **Action**: valore **Block.**
-     - **Data ultimo aggiornamento**
-     - **Data di scadenza**
-     - **Nota**
-
+     - **Ultimo aggiornamento**
+     - **Rimuovi su**
+     - **Note**
    - **File**
      - **Value**: Hash del file.
      - **Action**: valore **Block.**
-     - **Data ultimo aggiornamento**
-     - **Data di scadenza**
-     - **Nota**
-
+     - **Ultimo aggiornamento**
+     - **Rimuovi su**
+     - **Note**
    - **Spoofing**
      - **Utente contraffatto**
      - **Infrastruttura di invio**
@@ -190,10 +177,9 @@ In questo articolo viene descritto come configurare le voci nell'elenco consenti
 
    - **URL:** è possibile raggruppare i risultati in base a **Action.**
    - **File**: è possibile raggruppare i risultati in base a **Action.**
-   - **Domini mittente per bypass BCL:** **il** gruppo non è disponibile in questa scheda.
    - **Spoofing**: è possibile raggruppare i risultati in base **al tipo Azione** o **Spoofing.**
 
-   Fare **clic su** Cerca, immettere tutto o parte di un valore e quindi premere INVIO per trovare un valore specifico. Al termine, fare clic su Cancella **ricerca** ![ Cancella icona di ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) ricerca.
+   Fare **clic su** Cerca, immettere tutto o parte di un valore e quindi premere INVIO per trovare un valore specifico. Al termine, fare clic su Cancella icona ![ ricerca ](../../media/m365-cc-sc-close-icon.png) **Cancella ricerca**.
 
    Fare **clic su** Filtro per filtrare i risultati. I valori disponibili **nel** riquadro a comparsa Filtro visualizzato dipendono dalla scheda selezionata:
 
@@ -201,19 +187,12 @@ In questo articolo viene descritto come configurare le voci nell'elenco consenti
      - **Azione**
      - **Non scadere mai**
      - **Data ultimo aggiornamento**
-     - **Data di scadenza**
-
+     - **Rimuovi su**
    - **File**
      - **Azione**
      - **Non scadere mai**
-     - **Data ultimo aggiornamento**
-     - **Data di scadenza**
-
-   - **Domini mittente per bypass BCL**
-     - **Non scadere mai**
-     - **Data ultimo aggiornamento**
-     - **Data di scadenza**
-
+     - **Ultimo aggiornamento**
+     - **Rimuovi su**
    - **Spoofing**
      - **Azione**
      - **Tipo spoofing**
@@ -222,43 +201,34 @@ In questo articolo viene descritto come configurare le voci nell'elenco consenti
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Usare il portale Microsoft 365 Defender per modificare le voci nell'elenco tenant consentiti/bloccati
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **Tenant Consenti/Blocca elenchi**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& regole** regole criteri di minaccia \>  \> **Sezione** Tenant \> **Consenti/Blocca elenchi**.
 
 2. Selezionare la scheda contenente il tipo di voce che si desidera modificare:
    - **URL**
    - **File**
-   - **Domini mittente per bypass BCL**
    - **Spoofing**
 
-3. Selezionare la voce che si desidera modificare e quindi fare clic su **Modifica** ![ icona Modifica ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) . I valori che è possibile modificare nel riquadro a comparsa visualizzato dipendono dalla scheda selezionata nel passaggio precedente:
-
+3. Selezionare la voce che si desidera modificare e quindi fare clic su ![ Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica**. I valori che è possibile modificare nel riquadro a comparsa visualizzato dipendono dalla scheda selezionata nel passaggio precedente:
    - **URL**
      - **Non scadere mai e/o** data di scadenza.
      - **Nota facoltativa**
-
    - **File**
      - **Non scadere mai e/o** data di scadenza.
      - **Nota facoltativa**
-
-   - **Domini mittente per bypass BCL**
-     - **Non scadere mai e/o** data di scadenza.
-
    - **Spoofing**
      - **Azione**: è possibile modificare il valore in **Consenti** o **Blocca**.
-
 4. Al termine, fare clic su **Salva**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Usare il portale Microsoft 365 Defender per rimuovere le voci dall'elenco tenant consentiti/bloccati
 
-1. Nel portale di Microsoft 365 Defender passare a **Gestione** minacce Criteri \>  \> **Tenant Consenti/Blocca elenchi**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& regole** regole criteri di minaccia \>  \> **Sezione** Tenant \> **Consenti/Blocca elenchi**.
 
 2. Selezionare la scheda contenente il tipo di voce che si desidera rimuovere:
    - **URL**
    - **File**
-   - **Domini mittente per bypass BCL**
    - **Spoofing**
 
-3. Selezionare la voce che si desidera rimuovere e quindi fare clic su **Elimina Icona** ![ ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) Elimina.
+3. Selezionare la voce che si desidera rimuovere e quindi fare clic su ![ Elimina icona ](../../media/m365-cc-sc-delete-icon.png) **Elimina.**
 
 4. Nella finestra di dialogo di avviso visualizzata fare clic su **Elimina.**
 
@@ -662,7 +632,7 @@ Ecco alcuni esempi di coppie di domini valide per identificare i mittenti contra
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-Il numero massimo di voci del mittente contraffatto è 1000. 
+Il numero massimo di voci del mittente contraffatto è 1000.
 
 L'aggiunta di una coppia di domini consente o blocca *solo* la combinazione dell'utente contraffatto *e dell'infrastruttura* di invio. Non consente la posta elettronica dell'utente contraffatto da alcuna origine, né consente la posta elettronica dall'origine dell'infrastruttura di invio per qualsiasi utente contraffatto. 
 

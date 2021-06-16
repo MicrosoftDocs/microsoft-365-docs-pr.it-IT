@@ -18,12 +18,12 @@ ms.collection:
 description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri collegamenti sicuri e le impostazioni globali dei collegamenti sicuri in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40ae52cfce53c3fa14253a94e72f1a2bccda9a86
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: fb157792f0f9e80e4a974b59aebaa2e1991c5d0b
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929828"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933120"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -36,12 +36,15 @@ ms.locfileid: "52929828"
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](defender-for-office-365.md). Se si è un utente principale che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Collegamenti sicuri è una funzionalità di [Microsoft Defender per Office 365 che](defender-for-office-365.md) fornisce l'analisi URL dei messaggi di posta elettronica in ingresso nel flusso di posta e l'ora della verifica degli URL e dei collegamenti nei messaggi di posta elettronica e in altre posizioni. Per altre informazioni, vedi [Collegamenti sicuri in Microsoft Defender per Office 365](safe-links.md).
+Collegamenti sicuri in [Microsoft Defender per Office 365](defender-for-office-365.md) fornisce l'analisi degli URL dei messaggi di posta elettronica in ingresso nel flusso di posta e l'ora della verifica su clic degli URL e dei collegamenti nei messaggi di posta elettronica e in altre posizioni. Per altre informazioni, vedi [Collegamenti sicuri in Microsoft Defender per Office 365](safe-links.md).
 
 Non esiste un criterio predefinito o predefinito per i collegamenti sicuri. Per ottenere l'analisi dei collegamenti sicuri degli URL, è necessario creare uno o più criteri collegamenti sicuri come descritto in questo articolo.
 
 > [!NOTE]
+>
 > Le impostazioni globali per la protezione dei collegamenti sicuri vengono configurate **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [Configurare le impostazioni globali per i collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
+>
+> Gli amministratori devono considerare le diverse impostazioni di configurazione per i collegamenti sicuri. Una delle opzioni disponibili è includere informazioni identificabili dall'utente in Collegamenti sicuri. Questa funzionalità consente *ai team di Security Ops di* analizzare potenziali compromissione degli utenti, intraprendere azioni correttive e limitare costose violazioni.
 
 È possibile configurare i criteri collegamenti sicuri nel portale di Microsoft 365 Defender o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi di Microsoft Defender per Office 365).
 
@@ -49,9 +52,6 @@ Gli elementi di base di un criterio Collegamenti sicuri sono:
 
 - Il criterio collegamenti **sicuri:** attivare la protezione dei collegamenti sicuri, attivare l'analisi degli URL in tempo reale, specificare se attendere il completamento dell'analisi in tempo reale prima di recapitare il messaggio, attivare l'analisi dei messaggi interni, specificare se tenere traccia dei clic degli utenti sugli URL e specificare se consentire agli utenti di fare clic sull'URL originale.
 - **La regola dei collegamenti sicuri**: Specifica la priorità e i filtri destinatari (a cui si applica il criterio).
-
-> [!IMPORTANT]
-> Gli amministratori devono considerare le diverse impostazioni di configurazione per SafeLinks. Una delle opzioni disponibili è includere informazioni identificabili dall'utente in SafeLinks. Questa funzionalità consente *ai team di Security Ops di* analizzare potenziali compromissione degli utenti, intraprendere azioni correttive e limitare costose violazioni.
 
 La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri dei collegamenti sicuri nel portale di Microsoft 365 Defender:
 
@@ -74,7 +74,7 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
   Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md) e Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > 
+  >
   > - L'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   . - Il **gruppo di ruoli Gestione** organizzazione di sola [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) consente inoltre l'accesso in sola lettura alla funzionalità.
 
@@ -88,39 +88,45 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 
 La creazione di un criterio collegamenti sicuri personalizzati nel portale di Microsoft 365 Defender crea contemporaneamente la regola dei collegamenti sicuri e il criterio collegamenti sicuri associati utilizzando lo stesso nome per entrambi.
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **sezione** Collegamenti \> **sicuri.**
 
-2. Nella pagina **Collegamenti sicuri** fare clic su **Crea.**
+2. Nella pagina **Collegamenti sicuri** fare clic su Crea ![ icona ](../../media/m365-cc-sc-create-icon.png) **Crea**.
 
 3. Verrà **visualizzata la procedura guidata Nuovo criterio Collegamenti** sicuri. Nella pagina **Assegnare un nome al** criterio configurare le impostazioni seguenti:
 
    - **Nome**: immettere un nome univoco descrittivo per il criterio.
-
    - **Descrizione**: immettere una descrizione opzionale per il criterio.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-4. Nella pagina **Impostazioni** visualizzata configurare le impostazioni seguenti:
+4. Nella pagina **Utenti e domini** visualizzata identificare i destinatari interni a cui si applica il criterio (condizioni del destinatario):
+   - **Utenti**: la cassette postali specificate, utenti di posta o contatti di posta specificati nell'organizzazione.
+   - **Gruppi**: i gruppi di distribuzione specificati, gruppi di sicurezza abilitati alla posta elettronica o gruppi di Microsoft 365 nell'organizzazione.
+   - **Domini**: tutti i destinatari nei domini specificati [accettati](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) nell'organizzazione.
 
-   - **Selezionare l'azione per URL** sconosciuti potenzialmente dannosi nei messaggi: selezionare **Attivato** per abilitare la protezione collegamenti sicuri per i collegamenti nei messaggi di posta elettronica.
+   Fare clic nella casella appropriata, iniziare a digitare un valore e selezionare il valore desiderato nei risultati. Ripetere questa procedura tutte le volte necessarie. Per rimuovere un valore esistente, fare clic su Rimuovi ![Icona Rimuovi](../../media/m365-cc-sc-remove-selection-icon.png) accanto al valore.
 
+   Per utenti o gruppi è possibile usare la maggior parte degli identificatori, ad esempio nome, nome visualizzato, alias, indirizzo di posta elettronica, nome dell'account e così via, ma il nome visualizzato corrispondente viene visualizzato nei risultati. Per gli utenti, immettere un asterisco (\*) da solo per visualizzare tutti i valori disponibili.
+
+   Più valori della stessa condizione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
+
+   - **Escludere questi utenti, gruppi e domini**: per aggiungere eccezioni per i destinatari interni a cui si applicano i criteri (eccezione destinatari), selezionare questa opzione e configurare le eccezioni. Impostazioni e comportamento sono equivalenti alle condizioni.
+
+   Al termine dell'operazione, fare clic su **Avanti**.
+
+5. Nella pagina **Impostazioni di** protezione visualizzata configurare le impostazioni seguenti:
+   - **Selezionare l'azione per URL** sconosciuti potenzialmente dannosi nei messaggi: selezionare **Attivato** per abilitare la protezione collegamenti sicuri per i collegamenti nei messaggi di posta elettronica. Se si attiva questa impostazione, sono disponibili le impostazioni seguenti:
+     - **Applica l'analisi degli URL** in tempo reale per i collegamenti sospetti e i collegamenti che puntano ai file: selezionare questa opzione per abilitare l'analisi in tempo reale dei collegamenti nei messaggi di posta elettronica. Se si attiva questa impostazione, è disponibile l'impostazione seguente:
+       - **Attendere il completamento dell'analisi** degli URL prima di recapitare il messaggio: selezionare questa opzione per attendere il completamento dell'analisi degli URL in tempo reale prima di recapitare il messaggio.
+     - **Applica collegamenti sicuri ai messaggi di posta elettronica** inviati all'interno dell'organizzazione: selezionare questa opzione per applicare il criterio Collegamenti sicuri ai messaggi tra mittenti interni e destinatari interni.
    - **Selezionare l'azione per URL** sconosciuti o potenzialmente dannosi all'interno di Microsoft Teams : selezionare Attivato per abilitare la protezione collegamenti sicuri per i collegamenti in Teams. 
-
-   - **Applica l'analisi degli URL** in tempo reale per i collegamenti sospetti e i collegamenti che puntano ai file: selezionare questa impostazione per abilitare l'analisi in tempo reale dei collegamenti nei messaggi di posta elettronica.
-
-   - **Attendere il completamento dell'analisi dell'URL prima** di recapitare il messaggio: selezionare questa impostazione per attendere il completamento dell'analisi degli URL in tempo reale prima di recapitare il messaggio.
-
-   - **Applica collegamenti sicuri ai messaggi di posta elettronica** inviati all'interno dell'organizzazione : selezionare questa impostazione per applicare il criterio Collegamenti sicuri ai messaggi tra mittenti interni e destinatari interni.
-
    - **Non tenere traccia dei clic degli utenti:** lasciare deselezionata questa impostazione per abilitare la verifica dei clic degli utenti sugli URL nei messaggi di posta elettronica.
-
-   - **Non consentire agli utenti di passare all'URL** originale: selezionare questa impostazione per impedire agli utenti di passare all'URL originale nelle pagine [di avviso.](safe-links.md#warning-pages-from-safe-links)
-
+   - **Non consentire agli utenti di passare all'URL** originale: selezionare questa opzione per impedire agli utenti di passare all'URL originale nelle pagine [di avviso.](safe-links.md#warning-pages-from-safe-links)
    - **Non riscrivere gli URL** seguenti: consente l'accesso agli URL specificati che altrimenti verrebbero bloccati dai collegamenti sicuri.
 
-     Nella casella digitare l'URL o il valore desiderato e quindi fare clic su ![Icona del pulsante Aggiungi](../../media/ITPro-EAC-AddIcon.png).
+     Nella casella digitare l'URL o il valore desiderato e quindi fare clic su **Aggiungi**. Ripetere questo passaggio tutte le volte necessarie.
 
-     Per rimuovere una voce esistente, selezionarla e quindi fare clic su ![Icona del pulsante Elimina](../../media/ITPro-EAC-DeleteIcon.png).
+     Per rimuovere una voce esistente, fare clic su ![Icona Rimuovi](../../media/m365-cc-sc-remove-selection-icon.png) accanto alla voce.
 
      Per la sintassi delle voci, vedere Sintassi delle voci per [l'elenco "Non riscrivere gli URL seguenti".](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
 
@@ -130,100 +136,88 @@ La creazione di un criterio collegamenti sicuri personalizzati nel portale di Mi
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-5. Nella pagina **Applicato a** visualizzata identificare i destinatari interni a cui si applica il criterio.
-
-   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
-
-   Fare **clic su Aggiungi condizione.** Nell'elenco a discesa visualizzato selezionare una condizione in **Applicato se**:
-
-   - **Il destinatario è**: Specifica una o più cassette postali, utenti di posta o contatti di posta nell'organizzazione.
-   - **Il destinatario è un membro di**: Specifica uno o più gruppi nell'organizzazione.
-   - **Il dominio del destinatario è**: specifica i destinatari in uno o più dei domini configurati accettati nell'organizzazione.
-
-   Dopo aver selezionato la condizione, viene visualizzato un elenco a discesa corrispondente con **una casella** Qualsiasi di queste.
-
-   - Fare clic nella casella e scorrere l'elenco di valori da selezionare.
-   - Fare clic nella casella e iniziare a digitare per filtrare l'elenco e selezionare un valore.
-   - Per aggiungere altri valori, fare clic in un'area vuota della casella.
-   - Per rimuovere singole voci, fare clic **su Rimuovi** ![ Icona Rimuovi sul ](../../media/scc-remove-icon.png) valore.
-   - Per rimuovere l'intera condizione, fare **clic su Rimuovi** Icona Rimuovi nella ![ ](../../media/scc-remove-icon.png) condizione.
-
-   Per aggiungere una condizione aggiuntiva, fare clic **su Aggiungi una condizione** e selezionare un valore rimanente in Applicato **se**.
-
-   Per aggiungere eccezioni, fare clic **su Aggiungi una condizione** e selezionare un'eccezione in Tranne **se**. Impostazioni e comportamento sono equivalenti alle condizioni.
+6. Nella pagina **Notifica** visualizzata selezionare uno dei seguenti valori per Come **si desidera inviare una** notifica agli utenti? :
+   - **Usare il testo di notifica predefinito**
+   - **Usa testo di notifica personalizzato:** se si seleziona questo valore, vengono visualizzate le impostazioni seguenti:
+     - **Usare Microsoft Translator per la localizzazione automatica**
+     - **Testo di notifica personalizzato:** immettere il testo della notifica personalizzata in questa casella.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-6. Nella pagina **Rivedere le impostazioni** visualizzata esaminare le impostazioni. È possibile fare **clic su** Modifica per ogni impostazione per modificarla.
+7. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare clic su **Indietro** o selezionare la pagina specifica della procedura guidata.
 
-   Al termine dell'operazione, scegliere **Fine**.
+   Al termine, fare clic su **Invia.**
+
+8. Nel messaggio di conferma visualizzato fare clic su **Fatto**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per visualizzare i criteri collegamenti sicuri
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **sezione** Collegamenti \> **sicuri.**
 
-2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
+2. Nella pagina **Collegamenti sicuri** vengono visualizzate le proprietà seguenti nell'elenco dei criteri Collegamenti sicuri:
+   - **Nome**
+   - **Stato**
+   - **Priorità**
 
-   I dettagli dei criteri vengono visualizzati in un riquadro a comparsa
+3. Quando si seleziona un criterio facendo clic sul nome, le impostazioni dei criteri vengono visualizzate in un riquadro a comparsa.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per modificare i criteri collegamenti sicuri
 
-1. Nel portale Microsoft 365 Defender passare a ***Criteri & regole di** \> **minaccia** \> **Collegamenti sicuri**.
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **sezione** Collegamenti \> **sicuri.**
 
-2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
+2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco facendo clic sul nome.
 
-3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic **su Modifica criterio.**
-
-Le impostazioni disponibili nel riquadro a comparsa visualizzato sono identiche a quelle descritte nella sezione Usare il portale [di Microsoft 365 Defender per](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) creare criteri collegamenti sicuri.
+3. Nel riquadro a comparsa dei dettagli sui criteri visualizzato selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Per ulteriori informazioni sulle impostazioni, vedere la sezione precedente Usare il portale [di Microsoft 365 Defender per creare](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) criteri collegamenti sicuri in questo articolo.  
 
 Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei criteri, vedere le sezioni seguenti.
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Abilitare o disabilitare i criteri collegamenti sicuri
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
+1. Nel portale Microsoft 365 Defender passare a Email **& Collaboration** Policies \> **& Rules** Threat \> **Policies** \> **section** \> **Safe Links**.
 
-2. Notare il valore nella **colonna** Stato:
+2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco facendo clic sul nome.
 
-   - Spostare l'interruttore a sinistra per disabilitare il criterio: ![Disattivare i criteri](../../media/scc-toggle-off.png).
+3. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato è presente uno dei valori seguenti:
+   - **Criterio disattivato**: per attivare il criterio, fare clic su ![Attiva icona](../../media/m365-cc-sc-turn-on-off-icon.png) **Attiva** .
+   - **Criterio attivato**: per disattivare il criterio, fare clic su ![Disattiva icona](../../media/m365-cc-sc-turn-on-off-icon.png) **Disattiva**.
 
-   - Spostare l'interruttore a destra per abilitare il criterio: ![Attivare i criteri](../../media/scc-toggle-on.png).
+4. Nella finestra di dialogo di conferma visualizzata fare clic su **Attiva** o **Disattiva**.
+
+5. Fare clic su **Chiudi** nel riquadro a comparsa dei dettagli del criterio.
+
+Tornare alla pagina dei criteri principale, il valore **Stato** del criterio sarà **Attivato** o **Disattivato**.
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>Impostare la priorità dei criteri collegamenti sicuri
 
-Per impostazione predefinita, ai criteri collegamenti sicuri viene data una priorità basata sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
+Per impostazione predefinita, ai collegamenti sicuri viene data una priorità basata sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
-Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
+Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o **Riduci priorità** nelle proprietà del criterio. Non è possibile modificare direttamente il valore **Priorità** nel portale di Microsoft 365 Defender. La modifica di priorità di un criterio è utile solo se si hanno più criteri.
 
-I criteri collegamenti sicuri vengono visualizzati nell'ordine in cui vengono elaborati (il primo criterio ha il **valore Priority** 0).
+**Nota**:
 
-> [!NOTE]
-> Nel portale Microsoft 365 Defender puoi modificare la priorità del criterio Collegamenti sicuri solo dopo aver creato il criterio. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola dei collegamenti sicuri (che può influire sulla priorità delle regole esistenti).
+- Nel portale Microsoft 365 Defender puoi modificare la priorità del criterio Collegamenti sicuri solo dopo aver creato il criterio. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola dei collegamenti sicuri (che può influire sulla priorità delle regole esistenti).
+- I criteri collegamenti sicuri vengono elaborati nell'ordine in cui vengono visualizzati (il primo criterio ha il **valore Priority** 0). Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
 
-Per modificare la priorità di un criterio, spostare il criterio verso l'alto o verso il basso nell'elenco (non è possibile modificare direttamente il numero di priorità nel portale di Microsoft 365 Defender). 
+1. Nel portale Microsoft 365 Defender passare a Email **& Collaboration** Policies \> **& Rules** Threat \> **Policies** \> **section** \> **Safe Links**.
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
+2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco facendo clic sul nome.
 
-2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
+3. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato viene visualizzato **Aumenta priorità** o **Riduci priorità** in base al valore di priorità corrente e al numero di criteri personalizzati:
+   - Per il criterio con **valore Priority** **0 è** disponibile solo **l'opzione Riduci** priorità.
+   - Il criterio con il valore **Di priorità** più basso (ad esempio, **3)** ha solo l'opzione **Aumenta** priorità disponibile.
+   - Se si dispone di tre o più criteri, per i  criteri tra i valori di priorità più alta e più bassa sono disponibili le opzioni Aumenta priorità e **Riduci** priorità.
 
-3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic sul pulsante priorità disponibile:
+   Fare clic![ sull’icona Aumenta priorità](../../media/m365-cc-sc-increase-icon.png) **Aumenta priorità** o ![sull’icona Riduci priorità](../../media/m365-cc-sc-decrease-icon.png) **Riduci priorità** per modificare il valore **Priorità**.
 
-   - Il criterio Collegamenti sicuri con **valore Priorità** **0** ha solo il **pulsante Riduci** priorità disponibile.
-
-   - Il criterio Collegamenti sicuri con il valore **Di** priorità più basso (ad esempio, **3)** ha solo il **pulsante Aumenta** priorità disponibile.
-
-   - Se si dispone di tre o più criteri collegamenti sicuri,  i criteri  tra i valori di priorità più alta e più bassa hanno entrambi i pulsanti Aumenta priorità e Riduci priorità disponibili.
-
-4. Fare **clic su Aumenta priorità** o **Diminuisci priorità** per modificare il valore **Priorità.**
-
-5. Al termine, fare clic su **Chiudi**.
+4. Al termine, fare clic su **Chiudi** nel riquadro a comparsa dei dettagli del criterio.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per rimuovere i criteri collegamenti sicuri
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri di** minaccia Collegamenti \>  \> **sicuri**.
+1. Nel portale Microsoft 365 Defender passare a Email **& Collaboration** Policies \> **& Rules** Threat \> **Policies** \> **section** \> **Safe Links**.
 
-2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
+2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco facendo clic sul nome. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato fare clic![ sull'icona Altre azioni](../../media/m365-cc-sc-more-actions-icon.png) **Altre azioni** \> ![Icona Elimina criterio](../../media/m365-cc-sc-delete-icon.png) **Elimina criterio**.
 
-3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic su **Elimina** criterio e quindi su **Sì** nella finestra di dialogo di avviso visualizzata.
+3. Nella finestra di dialogo di conferma che viene visualizzata fare clic su **Sì**.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Utilizzare Exchange Online PowerShell o PowerShell EOP autonomo per configurare i criteri collegamenti sicuri
 
@@ -243,14 +237,13 @@ La creazione di un criterio collegamenti sicuri in PowerShell è un processo in 
 2. Creare la regola dei collegamenti sicuri che specifica il criterio dei collegamenti sicuri a cui si applica la regola.
 
 > [!NOTE]
-> 
+>
 > - È possibile creare una nuova regola per i collegamenti sicuri e assegnarle un criterio di collegamenti sicuri non associazione esistente. Una regola dei collegamenti sicuri non può essere associata a più di un criterio collegamenti sicuri.
-> 
+>
 > - È possibile configurare le impostazioni seguenti nei nuovi criteri dei collegamenti sicuri in PowerShell che non sono disponibili nel portale di Microsoft 365 Defender fino a quando non si crea il criterio:
-> 
 >   - Creare il nuovo criterio come disabilitato (_Abilitato_ `$false` nel cmdlet **New-SafeLinksRule).**
 >   - Impostare la priorità del criterio durante la creazione (_Priority_ _\<Number\>_ ) nel cmdlet **New-SafeLinksRule.**
-> 
+>
 > - Un nuovo criterio di collegamenti sicuri creato in PowerShell non è visibile nel portale di Microsoft 365 Defender finché non si assegna il criterio a una regola dei collegamenti sicuri.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Passaggio 1: Usare PowerShell per creare un criterio collegamenti sicuri
@@ -262,9 +255,9 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 ```
 
 > [!NOTE]
-> 
+>
 > - Per informazioni dettagliate sulla sintassi delle voci da utilizzare per il parametro _DoNotRewriteUrls,_ vedere [Entry syntax for the "Do not rewrite the following URLs" list](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
-> 
+>
 > - Per ulteriori sintassi che è possibile utilizzare per il parametro _DoNotRewriteUrls_ quando si modificano i criteri dei collegamenti sicuri esistenti utilizzando il cmdlet **Set-SafeLinksPolicy,** vedere la sezione Utilizzare [PowerShell](#use-powershell-to-modify-safe-links-policies) per modificare i criteri dei collegamenti sicuri più avanti in questo articolo.
 
 In questo esempio viene creato un criterio collegamenti sicuri denominato Contoso All con i valori seguenti:

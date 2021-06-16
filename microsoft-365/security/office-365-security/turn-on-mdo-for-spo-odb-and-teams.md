@@ -20,12 +20,12 @@ description: Gli amministratori possono scoprire come attivare allegati sicuri p
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 374e67626eab07cc8ab89a52554658a31e661eec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a654db40e5dec8d23d07ec7455216fe4e0a8c0e7
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929948"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933012"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams
 
@@ -53,9 +53,13 @@ In questo articolo vengono descritti i passaggi per abilitare e configurare alle
 
 ## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Passaggio 1: usare il portale di Microsoft 365 Defender per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams
 
-1. Nel portale di Microsoft 365 Defender passare a Criteri **&** criteri di minaccia Allegati sicuri \>  \> e fare clic su **Impostazioni globali.**
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **sezione** Allegati \> **sicuri**.
 
-2. Nel **riquadro a comparsa** Impostazioni globali visualizzato, vai all'impostazione Attiva Defender per Office 365 **per SharePoint, OneDrive e Microsoft Teams.** Sposta l'interruttore a destra Attiva/Disattiva per attivare Allegati sicuri per ![ ](../../media/scc-toggle-on.png) SharePoint, OneDrive e Microsoft Teams.
+2. Nella pagina **Allegati sicuri** fare clic su **Impostazioni globali.**
+
+3. Nel **riquadro a comparsa** Impostazioni globali visualizzato passare alla sezione Proteggi **file in SharePoint, OneDrive e Microsoft Teams.**
+
+   Sposta l'interruttore Attiva Defender per Office 365 per **SharePoint, OneDrive** e Microsoft Teams verso destra Attiva per attivare Allegati sicuri per SharePoint, OneDrive e ![ ](../../media/scc-toggle-on.png) Microsoft Teams.
 
    Al termine, fare clic su **Salva**.
 
@@ -71,7 +75,9 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-AtpPoli
 
 ## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Passaggio 2: (scelta consigliata) Utilizzare SharePoint PowerShell online per impedire agli utenti di scaricare file dannosi
 
-Per impostazione predefinita, gli utenti non possono aprire, spostare, copiare o condividere file dannosi rilevati da ATP. Tuttavia, possono eliminare e scaricare file dannosi.
+Per impostazione predefinita, gli utenti non possono aprire, spostare, copiare o condividere file dannosi rilevati dagli allegati sicuri per <sup>\*</sup> SharePoint, OneDrive e Microsoft Teams. Tuttavia, possono eliminare e scaricare file dannosi.
+
+<sup>\*</sup> Se gli utenti passano **a Gestisci accesso,** **l'opzione** Condividi è ancora disponibile.
 
 Per impedire agli utenti di scaricare file dannosi, [connettersi SharePoint PowerShell online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) ed eseguire il comando seguente:
 
@@ -90,34 +96,31 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-SPOTena
 
 È possibile creare un criterio di avviso che notifica all'utente e ad altri amministratori quando allegati sicuri per SharePoint, OneDrive e Microsoft Teams rileva un file dannoso. Per altre informazioni sugli avvisi, vedi Creare avvisi attività nel [portale Microsoft 365 Defender.](../../compliance/create-activity-alerts.md)
 
-1. Nel portale [Microsoft 365 Defender](https://security.microsoft.com)passare a Criteri **& criteri** di \> **avviso** o aprire <https://security.microsoft.com/alertpolicies> .
+1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** \> **di avviso** o aprire <https://security.microsoft.com/alertpolicies> .
 
 2. Nella pagina **Criterio avviso** fare clic su Nuovo criterio **di avviso.**
 
 3. La **procedura guidata Nuovo criterio** di avviso viene aperta in un riquadro a comparsa. Nella pagina **Assegnare un nome all'avviso** configurare le impostazioni seguenti:
-
    - **Nome**: digitare un nome univoco e descrittivo. Ad esempio, File dannosi nelle raccolte.
    - **Descrizione:** digitare una descrizione facoltativa. Ad esempio, notifica agli amministratori quando vengono rilevati file dannosi in SharePoint Online, OneDrive o Microsoft Teams.
-   - **Gravità:** lasciare selezionato il valore predefinito **Basso** oppure **selezionare Medio** o **Alto.**
-   - **Categoria**: selezionare **Gestione delle minacce**.
+   - **Gravità:** selezionare **Bassa,** **Media** o **Alta** nell'elenco a discesa.
+   - **Categoria**: selezionare **Gestione delle minacce** nell'elenco a discesa.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
 4. Nella pagina **Crea impostazioni avviso** configurare le impostazioni seguenti:
-
-   - **Cosa si desidera avvisare?: Attività è**: Selezionare **Malware rilevato nel file**.
-   - **Come si desidera attivare l'avviso?**: Lasciare selezionato il valore predefinito Ogni volta che **un'attività corrisponde alla** regola.
+   - **Cosa si desidera avvisare?** sezione \> **Attività è** \> Seleziona malware rilevato nel **file** dall'elenco a discesa.
+   - **Come si desidera attivare l'avviso?** sezione: lasciare selezionato il valore predefinito **Ogni volta che un'attività corrisponde alla regola.**
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
 5. Nella pagina **Imposta i destinatari** configurare le impostazioni seguenti:
-
-   - **Invia notifiche tramite posta** elettronica : verificare che questa impostazione sia selezionata. Nella casella **Destinatari di posta elettronica** selezionare uno o più amministratori globali, amministratori della sicurezza o lettori di sicurezza che devono ricevere una notifica quando viene rilevato un file dannoso.
+   - Verificare che **l'opzione Invia notifiche tramite posta** elettronica sia selezionata. Nella casella **Destinatari di posta elettronica** selezionare uno o più amministratori globali, amministratori della sicurezza o lettori di sicurezza che devono ricevere una notifica quando viene rilevato un file dannoso.
    - **Limite notifiche giornaliere**: lasciare selezionato il valore **predefinito Nessun** limite.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-6. Nella pagina **Rivedere le impostazioni** esaminare le impostazioni e fare clic su Modifica in una delle sezioni per apportare modifiche. 
+6. Nella pagina **Rivedere le impostazioni** esaminare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare clic su **Indietro** o selezionare la pagina specifica della procedura guidata.
 
    Nella sezione Vuoi attivare subito il **criterio?** lascia selezionato il valore predefinito **Sì, attivalo subito.**
 
@@ -139,7 +142,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-Activit
 
 - Per verificare di aver attivato correttamente gli allegati sicuri per SharePoint, OneDrive e Microsoft Teams, eseguire una delle operazioni seguenti:
 
-  - Nel [portale di Microsoft 365 Defender](https://security.microsoft.com)passare a Criteri **&** regole Criteri di minaccia Allegati sicuri, selezionare Impostazioni globali e verificare il valore dell'impostazione Attiva Defender per Office 365 per \>  \>  **SharePoint, OneDrive e Microsoft Teams.** 
+  - Nel portale di Microsoft 365 Defender passare **alla** sezione Criteri & regole criteri di minaccia Allegati sicuri, selezionare Impostazioni globali e verificare il valore dell'impostazione Attiva Defender per Office 365 per \>  \>  \>  **SharePoint, OneDrive e Microsoft Teams.** 
 
   - In Exchange Online PowerShell, eseguire il comando seguente per verificare l'impostazione della proprietà:
 
@@ -158,9 +161,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-Activit
   Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - Per verificare di aver configurato correttamente un criterio di avviso per i file rilevati, eseguire una delle operazioni seguenti:
-
   - Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di avviso Selezionare il criterio di avviso e verificare \>  \> le impostazioni.
-
   - In Microsoft 365 Defender Portal PowerShell, sostituire con il nome del criterio di avviso, eseguire il \<AlertPolicyName\> comando seguente e verificare i valori delle proprietà:
 
     ```powershell
