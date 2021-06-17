@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nel Centro sicurezza e conformità in Office 365 e Microsoft 365 per monitorare potenziali minacce, perdita di dati e problemi di autorizzazioni.
-ms.openlocfilehash: 2fe23f3e6d6889c3fc80b94be6a07095e06d3d68
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 4bca7bb15900dbdd7caadb74ce7938b9483be03e
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950120"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964729"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
@@ -285,11 +285,11 @@ Dopo aver generato e visualizzato  gli avvisi nella pagina Visualizza avvisi nel
 
   - Numero di volte in cui è stata eseguita l'attività monitorata dall'avviso. Questo numero potrebbe non corrispondere al numero effettivo di avvisi correlati elencati nella pagina Visualizza avvisi perché potrebbero essere stati attivati più avvisi.
 
-  - Collegamento a un elenco di attività che include un elemento per ogni attività eseguita che ha attivato l'avviso. Ogni voce in questo elenco identifica quando si è verificata l'attività, il nome dell'operazione effettiva (ad esempio "FileDeleted") e l'utente che ha eseguito l'attività, l'oggetto (ad esempio un file, un caso di eDiscovery o una cassetta postale) su cui è stata eseguita l'attività e l'indirizzo IP del computer dell'utente. Per gli avvisi correlati al malware, questo collegamento a un elenco di messaggi.
+  - Collegamento a un elenco di attività che include un elemento per ogni attività eseguita che ha attivato l'avviso. Ogni voce in questo elenco identifica quando si è verificata l'attività, il nome dell'operazione effettiva (ad esempio "FileDeleted"), l'utente che ha eseguito l'attività, l'oggetto (ad esempio un file, un caso di eDiscovery o una cassetta postale) su cui è stata eseguita l'attività e l'indirizzo IP del computer dell'utente. Per gli avvisi correlati al malware, questo collegamento a un elenco di messaggi.
 
   - Nome (e collegamento) del criterio di avviso corrispondente.
 
-- **Eliminare le notifiche di posta elettronica.** Puoi disattivare (o eliminare) le notifiche di posta elettronica dalla pagina a comparsa per un avviso. Quando si sopprimeno le notifiche di posta elettronica, Microsoft non invierà notifiche quando le attività o gli eventi che soddisfano le condizioni del criterio di avviso. Tuttavia, gli avvisi verranno attivati quando le attività eseguite dagli utenti corrispondono alle condizioni del criterio di avviso. È inoltre possibile disattivare le notifiche tramite posta elettronica modificando i criteri di avviso.
+- **Eliminare le notifiche di posta elettronica.** Puoi disattivare (o eliminare) le notifiche di posta elettronica dalla pagina a comparsa per un avviso. Quando si sopprimeno le notifiche di posta elettronica, Microsoft non invierà notifiche quando si verificano attività o eventi che soddisfano le condizioni del criterio di avviso. Tuttavia, gli avvisi verranno attivati quando le attività eseguite dagli utenti corrispondono alle condizioni del criterio di avviso. È inoltre possibile disattivare le notifiche tramite posta elettronica modificando i criteri di avviso.
 
 - **Risolvere gli avvisi.** È possibile contrassegnare un avviso come risolto nella pagina a comparsa per un avviso (che imposta lo stato dell'avviso su **Risolto**). A meno che non si modifica il filtro, gli avvisi risolti non vengono visualizzati nella **pagina Visualizza** avvisi.
 
