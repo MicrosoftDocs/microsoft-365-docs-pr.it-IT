@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844071"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998789"
 ---
 # <a name="take-response-actions-on-a-file"></a>Intraprendere azioni di risposta su un file
 
@@ -68,7 +68,7 @@ Per ulteriori informazioni sui ruoli, vedere [Create and manage roles for role-b
 > È possibile eseguire questa azione solo se:
 >
 > - Il dispositivo su cui stai eseguendo l'azione Windows 10 versione 1703 o successiva
-> - Il file non appartiene a autori di terze parti attendibili o non è firmato da Microsoft
+> - Il file non appartiene a editori di terze parti attendibili o non è firmato da Microsoft
 > - Antivirus Microsoft Defender deve essere almeno in esecuzione in modalità passiva. Per ulteriori informazioni, vedere [Antivirus Microsoft Defender compatibilità.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 **L'azione Interrompi e metti** in quarantena i file include l'interruzione dei processi in esecuzione, la messa in quarantena dei file e l'eliminazione di dati permanenti come le chiavi del Registro di sistema.
@@ -82,7 +82,7 @@ Questa azione ha effetto sui dispositivi con Windows 10 versione 1703 o successi
 
 1. Selezionare il file che si desidera arrestare e mettere in quarantena. È possibile selezionare un file da una delle visualizzazioni seguenti o utilizzare la casella Di ricerca:
 
-   - **Avvisi:** fare clic sui collegamenti corrispondenti nella descrizione o dettagli nella sequenza temporale artefatto
+   - **Avvisi:** fai clic sui collegamenti corrispondenti nella descrizione o dettagli nella sequenza temporale della storia di avviso
    - **Casella di ricerca:** selezionare **File** dal menu a discesa e immettere il nome del file
 
    > [!NOTE]
@@ -128,14 +128,14 @@ Prima dell'implementazione dell'azione per i file ampiamente utilizzati in un'or
 
 2. Immettere il comando seguente e premere **INVIO**:
 
-   ```powershell
+   ```console
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
-> [!NOTE]
-> In alcuni scenari, **ThreatName** può essere visualizzato come: EUS:Win32/CustomEnterpriseBlock!cl.
->
-> Defender for Endpoint ripristini tutti i file bloccati personalizzati messi in quarantena su questo dispositivo negli ultimi 30 giorni.
+   > [!NOTE]
+   > In alcuni scenari, **ThreatName** può essere visualizzato come: EUS:Win32/CustomEnterpriseBlock!cl.
+   >
+   > Defender for Endpoint ripristini tutti i file bloccati personalizzati messi in quarantena su questo dispositivo negli ultimi 30 giorni.
 
 > [!IMPORTANT]
 > Un file messo in quarantena come potenziale minaccia di rete potrebbe non essere recuperabile. Se un utente tenta di ripristinare il file dopo la quarantena, tale file potrebbe non essere accessibile. Ciò può essere dovuto al fatto che il sistema non ha più credenziali di rete per accedere al file. In genere, questo è il risultato di un accesso temporaneo a una cartella condivisa o di sistema e i token di accesso sono scaduti.
@@ -234,15 +234,13 @@ Puoi anche inviare un esempio tramite il portale del Centro sicurezza [Microsoft
 > [!NOTE]
 > A causa dei flussi di elaborazione back-end nel portale del Centro sicurezza Microsoft, potrebbero essere presenti fino a 10 minuti di latenza tra l'invio di file e la disponibilità della funzionalità di analisi approfondita in Defender for Endpoint.
 
-Quando l'esempio viene raccolto, Defender for Endpoint esegue il file in un ambiente sicuro. Crea quindi un report dettagliato dei comportamenti osservati e degli artefatti associati, ad esempio i file rilasciati nei dispositivi, la comunicazione con gli IP e le modifiche al Registro di sistema.
-
 ### <a name="submit-files-for-deep-analysis"></a>Inviare file per l'analisi approfondita
 
 1. Selezionare il file che si desidera inviare per l'analisi approfondita. È possibile selezionare o cercare un file da una delle visualizzazioni seguenti:
 
-    - Avvisi: selezionare i collegamenti ai file da **Descrizione** **o Dettagli** nella sequenza temporale artefatto
+    - **Avvisi:** selezionare i collegamenti ai file nella **sequenza temporale Descrizione** **o** Dettagli
     - **Elenco Dispositivi:** selezionare i collegamenti ai file dalla sezione **Descrizione** o **Dettagli** nella **sezione Dispositivo nell'organizzazione**
-    - Casella di ricerca: selezionare **File** dal menu a discesa e immettere il nome del file
+    - **Casella di ricerca:** selezionare **File** dal menu a discesa e immettere il nome del file
 
 2. Nella scheda **Analisi approfondita** della visualizzazione file selezionare **Invia.**
 
@@ -251,7 +249,7 @@ Quando l'esempio viene raccolto, Defender for Endpoint esegue il file in un ambi
    > [!NOTE]
    > Sono supportati solo i file PE, _inclusi.exe_ e _.dll_ file.
 
-Viene visualizzata una barra di stato e vengono fornite informazioni sulle diverse fasi dell'analisi. È quindi possibile visualizzare il report al termine dell'analisi.
+   Viene visualizzata una barra di stato e vengono fornite informazioni sulle diverse fasi dell'analisi. È quindi possibile visualizzare il report al termine dell'analisi.
 
 > [!NOTE]
 > A seconda della disponibilità del dispositivo, il tempo di raccolta dei campioni può variare. È presente un timeout di 3 ore per la raccolta di campioni. La raccolta avrà esito negativo e l'operazione verrà interrotta se non è disponibile Windows 10 dei dispositivi online in quel momento. È possibile inviare di nuovo i file per l'analisi approfondita per ottenere dati nuovi nel file.
@@ -277,11 +275,14 @@ I dettagli forniti consentono di analizzare se sono presenti indicazioni su un p
 Se si verifica un problema durante il tentativo di inviare un file, provare a eseguire una delle operazioni seguenti per la risoluzione dei problemi.
 
 1. Verificare che il file in questione sia un file PE. I file PE in _genere.exe_ _o.dll_ (applicazioni o programmi eseguibili).
+
 2. Verificare che il servizio abbia accesso al file, che esista ancora e che non sia stato danneggiato o modificato.
+
 3. Attendere un breve periodo di tempo e provare a inviare di nuovo il file. La coda potrebbe essere piena o si è verificato un errore di connessione o di comunicazione temporaneo.
+
 4. Se il criterio di raccolta di esempio non è configurato, il comportamento predefinito è consentire la raccolta di esempi. Se è configurato, verificare che l'impostazione dei criteri consenta la raccolta di campioni prima di inviare di nuovo il file. Quando è configurata la raccolta di esempi, controllare il valore del Registro di sistema seguente:
 
-    ```powershell
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -291,6 +292,7 @@ Se si verifica un problema durante il tentativo di inviare un file, provare a es
     ```
 
 1. Modificare l'unità organizzativa tramite Criteri di gruppo. Per ulteriori informazioni, vedere [Configure with Group Policy.](configure-endpoints-gp.md)
+
 1. Se questi passaggi non risolvono il problema, [contattare winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## <a name="related-topics"></a>Argomenti correlati

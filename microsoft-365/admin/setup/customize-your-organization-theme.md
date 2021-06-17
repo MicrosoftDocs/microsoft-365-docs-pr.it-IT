@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Informazioni su come modificare il tema predefinito per la parte superiore della barra di spostamento in Microsoft 365 e personalizzarlo in base al logo o al colore della società.
-ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908162"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998801"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
@@ -74,7 +74,7 @@ Puoi creare fino a quattro temi di gruppo aggiuntivi.
 
 2. In **Gruppi** puoi selezionare fino a 5 Microsoft 365 che possono visualizzare il tema del gruppo, anziché usare il tema predefinito. Puoi anche impedire agli utenti di ignorare il tema e mostrare il nome visualizzato dell'utente.
 
-3. Seleziona **Salva**.
+3. Selezionare **Salva**.
 
 :::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: Scheda Generale che mostra il tema predefinito per un gruppo di utenti nell'organizzazione":::
 
@@ -82,16 +82,13 @@ Puoi creare fino a quattro temi di gruppo aggiuntivi.
 
 Nella pagina **Logo puoi** aggiungere i logo e specificare l'URL a cui gli utenti accederanno quando selezionano il logo.
 
-- **Logo predefinito:** aggiungere un percorso URL che punti al logo. Assicurati che l'URL usi HTTPS. Se stai caricando un logo, assicurati che sia inferiore a 10 kb. Il logo predefinito può essere in formato JPG, PNG, GIF o SVG. Per le immagini SVG, verranno ridimensionate in modo da adattarsi verticalmente a 24 pixel. Le immagini JPG, PNG e GIF verranno ridimensionate per adattarsi a 200 x 48 pixel.
+- **Logo predefinito:** aggiungere un percorso URL che punti al logo. Assicurati che l'URL usi HTTPS. Aggiungere un URL di immagine HTTPS che consenta l'accesso anonimo e non richieda l'autenticazione. Per il tema predefinito, hai anche un'opzione per caricare un'immagine del logo inferiore a 10 kb. Il logo predefinito può essere in formato JPG, PNG, GIF o SVG. Per le immagini SVG, verranno ridimensionate in modo da adattarsi verticalmente a 24 pixel. Le immagini JPG, PNG e GIF verranno ridimensionate per adattarsi a 200 x 48 pixel. Le proporzioni del logo verranno sempre mantenute.
 - **Logo alternativo:** aggiungere un percorso URL che punti al logo. Il logo alternativo deve essere ottimizzato per l'uso in Office temi scuri. Stessi requisiti del logo predefinito.
 - **Collegamento al clic:** aggiungere una posizione URL che punti al logo. È possibile utilizzare il logo come collegamento a qualsiasi risorsa aziendale, ad esempio il sito Web dell'azienda.
 
 Seleziona **Salva** per salvare le modifiche.
 
 È possibile rimuovere i logo in qualsiasi momento. Torna alla pagina **Logos** e seleziona **Rimuovi.**
-
-> [!NOTE]
-> Per impostazione predefinita, vengono innanzitutto mostrate le selezioni di logo utilizzate dalla maggior parte delle organizzazioni. L'opzione di caricamento è applicabile solo ai temi predefiniti e non ai temi di gruppo.
   
 ## <a name="colors-choose-theme-colors"></a>Colori: scegliere i colori del tema
 

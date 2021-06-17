@@ -40,7 +40,7 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Trasferire gli utenti a un abbonamento diverso
       href: subscriptions/move-users-different-subscription.md
-    - name: Gestire le licenze delle app di terze parti
+    - name: Gestire le licenze ISV delle app
       href: licenses/manage-third-party-app-licenses.md
     - name: Gestire i criteri di richiesta automatica
       href: licenses/manage-auto-claim-policies.md

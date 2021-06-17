@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9e1b7a18bea09d10cb133ce9106df45533a72172
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 18d6079141d7fe0cd5b4c7187f51e5fa7079b844
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445230"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998753"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
 Utilizzare i criteri di gestione dei rischi insider per identificare le attività rischiose e gli strumenti di gestione per agire sugli avvisi di rischio nell'organizzazione. Completare la procedura seguente per configurare i prerequisiti e configurare un criterio di gestione dei rischi insider.
 
 >[!IMPORTANT]
->La Microsoft 365 di gestione dei rischi insider offre un'opzione a livello di tenant per aiutare i clienti a facilitare la governance interna a livello utente. Gli amministratori a livello di tenant possono configurare le autorizzazioni per fornire l'accesso a questa soluzione ai membri dell'organizzazione e configurare i connettori dati nel Centro conformità di Microsoft 365 per importare dati rilevanti per supportare l'identificazione a livello utente di attività potenzialmente rischiose. I clienti riconoscono che le informazioni dettagliate relative al comportamento, al carattere o alle prestazioni del singolo utente materialmente correlate all'impiego possono essere calcolate dall'amministratore e rese disponibili agli altri utenti dell'organizzazione. Inoltre, i clienti riconoscono che devono condurre una propria indagine completa relativa al comportamento, al carattere o alle prestazioni del singolo utente in modo materiale correlato all'impiego e non si basano solo sulle informazioni del servizio di gestione dei rischi insider. I clienti sono esclusivamente responsabili dell'utilizzo del servizio di gestione dei rischi insider di Microsoft 365 e di qualsiasi funzionalità o servizio associato in conformità a tutte le leggi applicabili, incluse le leggi relative all'identificazione dei singoli utenti e alle eventuali azioni correttive.
+>La Microsoft 365 di gestione dei rischi insider offre un'opzione a livello di tenant per aiutare i clienti a facilitare la governance interna a livello utente. Gli amministratori a livello di tenant possono configurare le autorizzazioni per fornire l'accesso a questa soluzione ai membri dell'organizzazione e configurare i connettori dati nel Centro conformità Microsoft 365 per importare dati rilevanti per supportare l'identificazione a livello utente di attività potenzialmente rischiose. I clienti riconoscono che le informazioni dettagliate relative al comportamento, al carattere o alle prestazioni del singolo utente materialmente correlate all'impiego possono essere calcolate dall'amministratore e rese disponibili agli altri utenti dell'organizzazione. Inoltre, i clienti riconoscono che devono condurre una propria indagine completa relativa al comportamento, al carattere o alle prestazioni del singolo utente in modo materiale correlato all'impiego e non si basano solo sulle informazioni del servizio di gestione dei rischi insider. I clienti sono esclusivamente responsabili dell'utilizzo del servizio di gestione dei rischi insider di Microsoft 365 e di qualsiasi funzionalità o servizio associato in conformità a tutte le leggi applicabili, incluse le leggi relative all'identificazione dei singoli utenti e alle eventuali azioni correttive.
 
 Per ulteriori informazioni su come i criteri di rischio insider possono aiutare a gestire i rischi [nell'organizzazione,](insider-risk-management.md)vedere Insider risk management in Microsoft 365 .
 
@@ -38,13 +38,13 @@ Prima di iniziare a usare la gestione dei rischi insider, è consigliabile confe
 - Microsoft 365 E5 (versione di valutazione o a pagamento)
 - Microsoft 365 E3 abbonamento + Microsoft 365 E5 Compliance componente aggiuntivo
 - Microsoft 365 E3 e il Microsoft 365 E5 Insider Risk Management
-- Microsoft 365 Sottoscrizione A5 (versione di valutazione o a pagamento)
-- Microsoft 365 Sottoscrizione A3 + componente aggiuntivo Microsoft 365 conformità A5
-- Microsoft 365 Sottoscrizione A3 + il Microsoft 365 A5 Insider Risk Management
+- Microsoft 365 A5 abbonamento (versione di valutazione o a pagamento)
+- Microsoft 365 A3 abbonamento + il Microsoft 365 A5 conformità
+- Microsoft 365 A3 e il Microsoft 365 A5 Insider Risk Management
 - Microsoft 365 Abbonamento G5 (versione di valutazione o a pagamento)
 - Microsoft 365 G3 e il Microsoft 365 G5 Compliance
 - Microsoft 365 G3 e il Microsoft 365 G5 Insider Risk Management
-- Office 365 Abbonamento E3 + Enterprise Mobility and Security E3 + Microsoft 365 E5 Compliance aggiuntivo
+- Office 365 E3 abbonamento + Enterprise Mobility and Security E3 + Microsoft 365 E5 Compliance aggiuntivo
 
 Agli utenti inclusi nei criteri di gestione dei rischi insider deve essere assegnata una delle licenze precedenti.
 
@@ -61,14 +61,14 @@ A seconda della struttura del team di gestione della conformità, è possibile a
 
 | **Gruppo di ruolo** | **Autorizzazioni del ruolo** |
 | :------------- | :------------------- |
-| **Insider Risk Management** | Usare questo gruppo di ruoli per la gestione dei rischi Insider per la propria organizzazione in un unico gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e revisori designati, è possibile configurare le autorizzazioni di gestione dei rischi insider in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione per la gestione dei rischi insider e le autorizzazioni associate. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la gestione dei rischi insider ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi distinti di utenti. |
-| **Insider Risk Management Admin** | Utilizzare questo gruppo di ruoli per configurare inizialmente la gestione dei rischi insider e successivamente per separare gli amministratori dei rischi insider in un gruppo definito. Gli utenti di questo gruppo di ruoli possono abilitare e visualizzare informazioni analitiche e creare, leggere, aggiornare ed eliminare criteri di gestione dei rischi insider, impostazioni globali e assegnazioni di gruppi di ruoli. |
+| **Insider Risk Management** | Usare questo gruppo di ruoli per la gestione dei rischi Insider per la propria organizzazione in un unico gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e revisori designati, è possibile configurare le autorizzazioni di gestione dei rischi insider in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione per la gestione dei rischi insider e le autorizzazioni associate. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la gestione dei rischi insider ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi distinti di utenti. Quando si utilizza questa configurazione, è consigliabile assicurarsi di avere sempre almeno un utente assegnato a questo ruolo per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri.|
+| **Insider Risk Management Admin** | Utilizzare questo gruppo di ruoli per configurare inizialmente la gestione dei rischi insider e successivamente per separare gli amministratori dei rischi insider in un gruppo definito. Gli utenti di questo gruppo di ruoli possono abilitare e visualizzare informazioni analitiche e creare, leggere, aggiornare ed eliminare criteri di gestione dei rischi insider, impostazioni globali e assegnazioni di gruppi di ruoli. Quando si utilizza questa configurazione, è consigliabile assicurarsi di avere sempre almeno un utente assegnato a questo ruolo per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri. |
 | **Analisti gestione dei rischi Insider** | Usare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di casi di rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere e visualizzare tutti gli avvisi, i casi, le informazioni analitiche e i modelli di avvisi per la gestione dei rischi insider. Non possono accedere a Esplora contenuto a rischio insider. |
 | **Investigatori gestione dei rischi Insider** | Usare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da investigatori dei dati relativi al rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere a tutti gli avvisi di gestione dei rischi insider, i casi, i modelli di avviso e Esplora contenuto per tutti i casi. |
 | **Revisori della gestione dei rischi insider** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che controllano le attività di gestione dei rischi insider. Gli utenti di questo gruppo di ruoli possono accedere al log di controllo dei rischi insider. |
 
 > [!NOTE]
-> Questi gruppi di ruoli non sono attualmente supportati in Privileged Identity Management (PIM). Per altre informazioni su PIM, vedere [Assegnare ruoli di Azure AD in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
+> Questi gruppi di ruoli non sono attualmente supportati in Gestione identità con privilegi (PIM). Per altre informazioni su PIM, vedere [Assegnare ruoli di Azure AD in Gestione identità con privilegi](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Aggiungere utenti a un gruppo di ruoli di gestione dei rischi insider
 
@@ -102,7 +102,7 @@ Per abilitare Insider Risk Analytics, è necessario essere membri del gruppo di 
 
 Completare la procedura seguente per abilitare l'analisi dei rischi insider:
 
-1. Nel Centro [Microsoft 365 conformità](https://compliance.microsoft.com)passare a Gestione dei **rischi Insider.**
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei rischi Insider**.
 2. Selezionare **Esegui analisi** nella scheda Analisi per i rischi insider **nella** scheda Panoramica della gestione dei rischi **insider.** Questa azione attiva l'analisi dell'analisi per l'organizzazione. Puoi anche attivare   >  **l'analisi nell'organizzazione** accedendo a Impostazioni rischio Insider **Analisi (anteprima)** e abilitando Analizza l'attività utente del tenant per identificare potenziali rischi insider.
 3. Nel riquadro **Dei dettagli di** Analisi selezionare Esegui analisi per avviare **l'analisi per l'organizzazione.** I risultati dell'analisi analitica possono richiedere fino a 24 ore prima che i dati analitici siano disponibili come report per la revisione.
 
@@ -123,7 +123,7 @@ Il Microsoft 365 hr è necessario quando si utilizzano i modelli di criteri segu
 - Violazioni dei criteri di sicurezza da parte di utenti scontenti
 - Perdite di dati da parte di utenti scontenti
 
-Vedere [l'articolo Configurare un connettore](import-hr-data.md) per importare i dati delle risorse umane per istruzioni dettagliate per configurare il connettore Microsoft 365 hr per l'organizzazione. Dopo aver configurato il connettore HR, tornare a questi passaggi di configurazione.
+Vedere [l'articolo Configurare un connettore](import-hr-data.md) per importare i dati delle risorse umane per istruzioni dettagliate per configurare il connettore risorse umane di Microsoft 365 per l'organizzazione. Dopo aver configurato il connettore HR, tornare a questi passaggi di configurazione.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurare i criteri di prevenzione della perdita dei dati (DLP)
 
@@ -160,7 +160,7 @@ Vedi [l'articolo Introduzione alle impostazioni di gestione](insider-risk-manage
 La gestione dei rischi Insider supporta l'importazione dei dati degli utenti e dei log dalle piattaforme di accesso e controllo fisico. Il connettore di badging fisico consente di estrarre i dati di accesso dai file JSON, inclusi ID utente, ID punto di accesso, data e ora di accesso e stato di accesso. Tali dati aiutano a guidare gli indicatori di avviso nei criteri di gestione dei rischi Insider e costituiscono una parte importante della configurazione della copertura completa relativa alla gestione dei rischi nell’organizzazione. Se si configurano più connettori di badging fisico per l'organizzazione, la gestione dei rischi insider estrae automaticamente gli indicatori da tutti i connettori di badging fisici. Le informazioni del connettore di badging fisico integrano altri segnali di rischio insider quando si utilizzano tutti i modelli di criteri di rischio insider.
 
 >[!IMPORTANT]
->Per consentire ai criteri di gestione dei rischi insider di usare e correlare i dati del segnale relativi agli utenti in uscita e terminati con i dati degli eventi dalle piattaforme di controllo fisico e di accesso, è inoltre necessario configurare il connettore hr Microsoft 365. Se si abilita il connettore di badging fisico senza abilitare il connettore hr di Microsoft 365, i criteri di gestione dei rischi insider eelaborareranno solo gli eventi per l'accesso fisico non autorizzato per gli utenti dell'organizzazione.
+>Per consentire ai criteri di gestione dei rischi insider di usare e correlare i dati del segnale relativi agli utenti in uscita e terminati con i dati degli eventi dalle piattaforme di controllo fisico e accesso, è necessario configurare anche il connettore HR di Microsoft 365. Se si abilita il connettore di badging fisico senza abilitare il connettore HR di Microsoft 365, i criteri di gestione dei rischi insider eelaborareranno solo gli eventi per l'accesso fisico non autorizzato per gli utenti dell'organizzazione.
 
 Per istruzioni dettagliate sulla configurazione del connettore di badging fisico per l'organizzazione, vedere l'articolo Set [up a connector to import physical badging data.](import-physical-badging-data.md) Dopo aver configurato il connettore, tornare a questi passaggi di configurazione.
 
@@ -178,7 +178,7 @@ Vedi [l'articolo Configurare le funzionalità avanzate in Defender for Endpoint]
 
 Prima di configurare un criterio, definire le impostazioni di rischio insider seguenti:
 
-1. Nel Centro [Microsoft 365](https://compliance.microsoft.com)conformità, vai a Gestione dei rischi **Insider** e seleziona Impostazioni **rischio Insider** nell'angolo in alto a destra di qualsiasi pagina.
+1. Nel Centro [conformità Microsoft 365](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare Impostazioni rischio **Insider** nell'angolo in alto a destra di qualsiasi pagina.
 2. Nella pagina **Privacy** seleziona un'impostazione di privacy per la visualizzazione dei nomi utente per gli avvisi dei criteri.
 3. Nella pagina **Indicatori** selezionare gli indicatori di avviso che si desidera applicare a tutti i criteri di rischio insider.
 
@@ -192,11 +192,11 @@ Prima di configurare un criterio, definire le impostazioni di rischio insider se
     - [Livello volume avviso](insider-risk-management-settings.md#alert-volume)
     - [Stato dell'avviso di Microsoft Defender for Endpoint](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Impostazioni di dominio](insider-risk-management-settings.md#domains-preview)
-6. Nella pagina **Esporta avvisi** abilita l'esportazione delle informazioni sugli avvisi per i rischi insider usando le API di Office 365 management, se necessario.
+6. Nella pagina **Esporta avvisi** abilitare l'esportazione delle informazioni sugli avvisi per i rischi insider utilizzando le API di gestione di Office 365, se necessario.
 7. Nella pagina **Priorità gruppi di utenti** creare un gruppo di utenti con priorità e aggiungere utenti se non creati nel passaggio **3.**
-8. Nella pagina **Power Automate flussi** di lavoro configurare un flusso da modelli di flusso di rischio insider o creare un nuovo flusso. Per istruzioni [dettagliate,](insider-risk-management-settings.md#power-automate-flows-preview) vedere l'articolo Introduzione alle impostazioni di gestione dei rischi insider.
+8. Nella pagina **Power Automate flows** configurare un flusso da modelli di flusso di rischio insider o creare un nuovo flusso. Per istruzioni [dettagliate,](insider-risk-management-settings.md#power-automate-flows-preview) vedere l'articolo Introduzione alle impostazioni di gestione dei rischi insider.
 9. Nella pagina **Asset di priorità** configurare le risorse prioritarie per l'utilizzo dei dati della piattaforma di controllo e accesso fisico importata dal connettore di badging fisico. Per istruzioni [dettagliate,](insider-risk-management-settings.md#priority-physical-assets-preview) vedere l'articolo Introduzione alle impostazioni di gestione dei rischi insider.
-10. Nella pagina **Microsoft Teams,** abilitare l'integrazione Microsoft Teams con la gestione dei rischi insider per creare automaticamente un team per la collaborazione di casi o utenti. Per istruzioni [dettagliate,](insider-risk-management-settings.md#microsoft-teams-preview) vedere l'articolo Introduzione alle impostazioni di gestione dei rischi insider.
+10. Nella pagina **Microsoft Teams,** abilitare l'integrazione di Microsoft Teams con la gestione dei rischi insider per creare automaticamente un team per la collaborazione di casi o utenti. Per istruzioni [dettagliate,](insider-risk-management-settings.md#microsoft-teams-preview) vedere l'articolo Introduzione alle impostazioni di gestione dei rischi insider.
 11. Selezionare **Salva per** abilitare queste impostazioni per i criteri di rischio insider.
 
 ## <a name="step-6-create-an-insider-risk-management-policy"></a>Passaggio 6: Creare un criterio di gestione dei rischi insider

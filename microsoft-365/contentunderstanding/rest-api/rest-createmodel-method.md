@@ -1,5 +1,5 @@
 ---
-title: Crea un modello
+title: Creare un modello
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -18,9 +18,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/11/2021
 ms.locfileid: "52904223"
 ---
-# <a name="create-model"></a>Crea un modello
+# <a name="create-model"></a>Creare un modello
 
-Crea un modello e il tipo di contenuto associato. Nota che in questo modo viene creato solo il modello. Dovrà comunque essere qualificato nel centro contenuti (vedi [esempio](rest-createmodel-method.md#examples)).
+Crea un modello e il tipo di contenuto associato. Si noti che in questo modo viene creato solo il modello. Dovrà comunque essere qualificato nel centro contenuti (vedi [esempio](rest-createmodel-method.md#examples)).
 
 ## <a name="http-request"></a>Richiesta HTTP
 
@@ -31,11 +31,11 @@ POST /_api/machinelearning/models HTTP/1.1
 
 Nessuno
 
-## <a name="request-headers"></a>Intestazioni di richiesta
+## <a name="request-headers"></a>Intestazioni della richiesta
 
 | Intestazione | Valore |
 |--------|-------|
-|Accetta|application/json;odata=verbose|
+|Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
 |x-requestdigest|Riepilogo appropriato per il sito corrente|
 
@@ -43,7 +43,7 @@ Nessuno
 
 |Nome    |Tipo   |Descrizione |
 |--------|-------|------------|
-|_metadati|  |Imposta i metadati dell'oggetto in SPO. Usa sempre il valore: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}. |
+|_metadata|  |Imposta i metadati dell'oggetto in SPO. Usare sempre il valore: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}. |
 |ContentTypeGroup|stringa|Gruppo di tipi di contenuto associato al modello. Per impostazione predefinita, "Tipi di contenuto dei documenti intelligenti".|
 |ContentTypeName|stringa|Nome tipo di contenuto associato. Il file del modello creato avrà lo stesso nome.|
 
@@ -55,7 +55,7 @@ Nessuno
 
 ## <a name="examples"></a>Esempi
 
-### <a name="create-a-new-document-understanding-model-called-contoso-contract"></a>Crea un nuovo modello di analisi dei documenti denominato "Contratto Contoso"
+### <a name="create-a-new-document-understanding-model-called-contoso-contract"></a>Creare un nuovo modello di analisi dei documenti denominato "Contratto Contoso"
 
 #### <a name="sample-request"></a>Richiesta di esempio
 

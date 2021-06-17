@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8cd9e9a72cd7643238d118fe0aed519db9159470
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: fafd3eed63e077ded41259d25f0d8a1a89802925
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820148"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998741"
 ---
 # <a name="plan-for-insider-risk-management"></a>Piano per la gestione dei rischi Insider
 
@@ -42,32 +42,32 @@ Se si dispone di requisiti per specifici stakeholder da coinvolgere in indagini 
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>Pianificare il flusso di lavoro di revisione e analisi
 
-Selezionare stakeholder dedicati per monitorare ed esaminare gli avvisi e i casi a cadenza regolare nel Centro [Microsoft 365 conformità](https://compliance.microsoft.com/). Assicurarsi di comprendere come assegnare le diverse parti interessate ai diversi gruppi di ruoli disponibili nella gestione dei rischi insider.
+Selezionare stakeholder dedicati per monitorare ed esaminare gli avvisi e i casi a cadenza regolare nel Centro conformità [Microsoft 365.](https://compliance.microsoft.com/) Assicurarsi di comprendere come assegnare le diverse parti interessate ai diversi gruppi di ruoli disponibili nella gestione dei rischi insider.
 
-A seconda della struttura del team di gestione della conformità, è possibile assegnare utenti a specifici gruppi di ruolo per gestire diversi insiemi di funzionalità della gestione dei rischi Insider. Per visualizzare  la scheda Autorizzazioni nel Centro sicurezza & di Office 365 e gestire i gruppi  di ruoli, è necessario essere assegnati al gruppo di ruoli Gestione organizzazione o assegnare il ruolo Gestione *ruoli.* Scegliere tra queste opzioni del gruppo di ruoli durante la configurazione della gestione dei rischi insider:
+A seconda della struttura del team di gestione della conformità, è possibile assegnare utenti a specifici gruppi di ruolo per gestire diversi insiemi di funzionalità della gestione dei rischi Insider. Per visualizzare  la scheda Autorizzazioni nel Centro sicurezza & e conformità di Office 365  e gestire i gruppi di ruoli, è necessario essere assegnati al gruppo di ruoli Gestione organizzazione o assegnare il ruolo Gestione *ruoli.* Scegliere tra queste opzioni del gruppo di ruoli durante la configurazione della gestione dei rischi insider:
 
 | **Gruppo di ruolo** | **Autorizzazioni del ruolo** |
 | :------------- | :------------------- |
-| **Insider Risk Management** | Usare questo gruppo di ruoli per la gestione dei rischi Insider per la propria organizzazione in un unico gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e revisori designati, è possibile configurare le autorizzazioni di gestione dei rischi insider in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione per la gestione dei rischi insider e le autorizzazioni associate. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la gestione dei rischi insider ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi distinti di utenti. |
-| **Insider Risk Management Admin** | Utilizzare questo gruppo di ruoli per configurare inizialmente la gestione dei rischi insider e successivamente per separare gli amministratori dei rischi insider in un gruppo definito. Gli utenti di questo gruppo di ruoli possono abilitare e visualizzare informazioni analitiche e creare, leggere, aggiornare ed eliminare criteri di gestione dei rischi insider, impostazioni globali e assegnazioni di gruppi di ruoli. |
+| **Insider Risk Management** | Usare questo gruppo di ruoli per la gestione dei rischi Insider per la propria organizzazione in un unico gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e revisori designati, è possibile configurare le autorizzazioni di gestione dei rischi insider in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione per la gestione dei rischi insider e le autorizzazioni associate. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la gestione dei rischi insider ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi distinti di utenti. Quando si utilizza questa configurazione, è consigliabile assicurarsi di avere sempre almeno un utente assegnato a questo ruolo per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri. |
+| **Insider Risk Management Admin** | Utilizzare questo gruppo di ruoli per configurare inizialmente la gestione dei rischi insider e successivamente per separare gli amministratori dei rischi insider in un gruppo definito. Gli utenti di questo gruppo di ruoli possono abilitare e visualizzare informazioni analitiche e creare, leggere, aggiornare ed eliminare criteri di gestione dei rischi insider, impostazioni globali e assegnazioni di gruppi di ruoli. Quando si utilizza questa configurazione, è consigliabile assicurarsi di avere sempre almeno un utente assegnato a questo ruolo per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri. |
 | **Analisti gestione dei rischi Insider** | Usare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di casi di rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere e visualizzare tutti gli avvisi, i casi, le informazioni analitiche e i modelli di avvisi per la gestione dei rischi insider. Non possono accedere a Esplora contenuto a rischio insider. |
 | **Investigatori gestione dei rischi Insider** | Usare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da investigatori dei dati relativi al rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere a tutti gli avvisi di gestione dei rischi insider, i casi, i modelli di avviso e Esplora contenuto per tutti i casi. |
 | **Revisori della gestione dei rischi insider** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che controllano le attività di gestione dei rischi insider. Gli utenti di questo gruppo di ruoli possono accedere al log di controllo dei rischi insider. |
 
 ## <a name="understand-requirements-and-dependencies"></a>Informazioni su requisiti e dipendenze
 
-A seconda di come si prevede di implementare i criteri di gestione dei rischi insider, è necessario disporre delle sottoscrizioni di licenza Microsoft 365 e comprendere e pianificare alcuni prerequisiti della soluzione.
+A seconda di come si prevede di implementare i criteri di gestione dei rischi insider, è necessario disporre delle sottoscrizioni di licenza di Microsoft 365 appropriate e comprendere e pianificare alcuni prerequisiti della soluzione.
 
-**Licenze:** La gestione dei rischi Insider è disponibile nell'ambito di un'ampia selezione di Microsoft 365 licenze. Per informazioni dettagliate, vedere [l'articolo Introduzione alla gestione dei rischi insider.](insider-risk-management-configure.md#subscriptions-and-licensing)
+**Licenze:** La gestione dei rischi insider è disponibile nell'ambito di un'ampia selezione di abbonamenti alle licenze di Microsoft 365. Per informazioni dettagliate, vedere [l'articolo Introduzione alla gestione dei rischi insider.](insider-risk-management-configure.md#subscriptions-and-licensing)
 
-Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera provare [la](https://www.microsoft.com/microsoft-365/enterprise) gestione dei rischi insider, è possibile aggiungere [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) all'abbonamento esistente o iscriversi a una versione di valutazione di Microsoft 365 Enterprise E5.
+Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera provare la gestione dei rischi insider, è possibile aggiungere [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) all'abbonamento esistente o iscriversi [a](https://www.microsoft.com/microsoft-365/enterprise) una versione di valutazione di Microsoft 365 Enterprise E5.
 
 **Requisiti dei modelli di criteri:** A seconda del modello di criteri scelto, è necessario comprendere e pianificare i requisiti prima di configurare la gestione dei rischi insider nell'organizzazione:
 
-- Quando si  utilizza il modello Furto di dati da utenti in uscita, è necessario configurare un connettore hr di Microsoft 365 per importare periodicamente le informazioni sulla data di chiusura e di chiusura per gli utenti dell'organizzazione. Vedere l'articolo [Importare dati con il connettore HR](import-hr-data.md) per istruzioni dettagliate su come configurare il connettore HR di Microsoft 365 per l'organizzazione.
+- Quando si  utilizza il modello Furto di dati per utenti in uscita, è necessario configurare un connettore risorse umane di Microsoft 365 per importare periodicamente le informazioni sulla data di chiusura e di chiusura per gli utenti dell'organizzazione. Vedere l'articolo [Importare dati con il connettore HR](import-hr-data.md) per istruzioni dettagliate su come configurare il connettore HR di Microsoft 365 per l'organizzazione.
 - Quando **si** utilizzano modelli di perdita di dati, è necessario configurare almeno un criterio di prevenzione della perdita dei dati (DLP) per definire le informazioni riservate nell'organizzazione e per ricevere avvisi di rischio insider per gli avvisi dei criteri DLP di gravità elevata. Vedere l'articolo [Creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) per istruzioni dettagliate su come configurare i criteri DLP per l'organizzazione.
 - Quando si usano **modelli di violazione dei** criteri di sicurezza, è necessario abilitare Microsoft Defender for Endpoint per l'integrazione della gestione dei rischi insider nel Defender Security Center per importare gli avvisi di violazione di sicurezza. Vedi [l'articolo Configurare le funzionalità avanzate in Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) per istruzioni dettagliate per abilitare l'integrazione di Defender for Endpoint con la gestione dei rischi insider.
-- Quando si **utilizzano modelli utente scontenti,** è necessario configurare un connettore hr Microsoft 365 per importare periodicamente informazioni sulle prestazioni o sullo stato dell'abbassamento di livello per gli utenti dell'organizzazione. Vedere l'articolo [Importare dati con il connettore HR](import-hr-data.md) per istruzioni dettagliate su come configurare il connettore HR di Microsoft 365 per l'organizzazione.
+- Quando si **utilizzano modelli utente scontenti,** è necessario configurare un connettore risorse umane di Microsoft 365 per importare periodicamente le informazioni sullo stato delle prestazioni o dell'abbassamento di livello per gli utenti dell'organizzazione. Vedere l'articolo [Importare dati con il connettore HR](import-hr-data.md) per istruzioni dettagliate su come configurare il connettore HR di Microsoft 365 per l'organizzazione.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Testare con un piccolo gruppo di utenti in un ambiente di produzione
 

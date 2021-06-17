@@ -1,5 +1,5 @@
 ---
-title: Ottieni informazioni su modelli e raccolte
+title: Ottenere informazioni su modelli e raccolte
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -18,7 +18,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/11/2021
 ms.locfileid: "52904224"
 ---
-# <a name="get-model-and-library-information"></a>Ottieni informazioni su modelli e raccolte
+# <a name="get-model-and-library-information"></a>Ottenere informazioni su modelli e raccolte
 
 Ottiene informazioni su un modello e sulla raccolta in cui è stato applicato (vedi [esempio](rest-getmodelandlibraryinfo.md#examples)).
 
@@ -30,15 +30,15 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 
 ## <a name="uri-parameters"></a>Parametri URI
 
-| Nome | In | Obbligatoria | Tipo | Descrizione |
+| Nome | In | Obbligatorio | Tipo | Descrizione |
 |--------|-------|--------|------------|
 |ModelUniqueId|query|Vero|GUID|ID univoco del file di modello.|
 
-## <a name="request-headers"></a>Intestazioni di richiesta
+## <a name="request-headers"></a>Intestazioni della richiesta
 
 | Intestazione | Valore |
 |--------|-------|
-|Accetta|application/json;odata=verbose|
+|Accept|application/json;odata=verbose|
 
 
 ## <a name="request-body"></a>Corpo della richiesta
@@ -56,11 +56,11 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
 |200 OK| |Operazione completata|
-|201 Created| |Nota che poiché questa API supporta l'applicazione del modello a più raccolte, è possibile che sia restituito 201 anche se si verifica un errore nell'applicazione del modello a una delle raccolte. <br>Controlla il corpo della risposta per determinare se il modello è stato applicato correttamente a tutte le raccolte specificate. Per informazioni dettagliate, vedi [Corpo della richiesta](rest-getmodelandlibraryinfo.md#request-body).|
+|201 Created| |Si noti che poiché questa API supporta l'applicazione del modello a più raccolte, è possibile che sia restituito 201 anche se si verifica un errore nell'applicazione del modello a una delle raccolte. <br>Controllare il corpo della risposta per determinare se il modello è stato applicato correttamente a tutte le raccolte specificate. Per informazioni dettagliate, vedere [Corpo della richiesta](rest-getmodelandlibraryinfo.md#request-body).|
 
 ## <a name="examples"></a>Esempi
 
-### <a name="get-information-about-the-contracts-model-and-primed-document-library-in-the-repository-site"></a>Ottieni informazioni sul modello di contratti e sulla raccolta documenti primed nel sito del repository
+### <a name="get-information-about-the-contracts-model-and-primed-document-library-in-the-repository-site"></a>Ottenere informazioni sul modello di contratti e sulla raccolta documenti primed nel sito del repository
 
 In questo esempio, l'ID del modello di analisi dei documenti Contoso Contract è `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.
 

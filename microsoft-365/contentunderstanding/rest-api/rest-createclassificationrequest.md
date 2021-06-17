@@ -1,5 +1,5 @@
 ---
-title: Crea una richiesta di classificazione
+title: Creare una richiesta di classificazione
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -18,11 +18,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/11/2021
 ms.locfileid: "52904212"
 ---
-# <a name="create-classification-request"></a>Crea una richiesta di classificazione
+# <a name="create-classification-request"></a>Creare una richiesta di classificazione
 
 Crea una richiesta per classificare uno o più file usando il modello di analisi dei documenti applicato (vedi [esempio](rest-createclassificationrequest.md#examples)).
 
-Il servizio REST di SharePoint Online (e SharePoint 2016 e versioni successive) supporta la combinazione di più richieste. Le richieste vengono combinate in un'unica chiamata al servizio usando l'opzione di query $batch OData. Questo metodo può essere usato per mettere in coda gli elementi di lavoro di classificazione per centinaia di documenti contemporaneamente.
+Il servizio REST di SharePoint Online (e SharePoint 2016 e versioni successive locali) supporta la combinazione di più richieste. Le richieste vengono combinate in un'unica chiamata al servizio usando l'opzione di query $batch OData. Questo metodo può essere usato per mettere in coda gli elementi di lavoro di classificazione per centinaia di documenti contemporaneamente.
 
 ## <a name="http-request"></a>Richiesta HTTP
 
@@ -33,11 +33,11 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 Nessuno
 
-## <a name="request-headers"></a>Intestazioni di richiesta
+## <a name="request-headers"></a>Intestazioni della richiesta
 
 | Intestazione | Valore |
 |--------|-------|
-|Accetta|application/json;odata=verbose|
+|Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
 |x-requestdigest|Riepilogo appropriato per il sito corrente|
 
@@ -45,7 +45,7 @@ Nessuno
 
 |Nome    |Tipo   |Descrizione |
 |--------|-------|------------|
-|_metadati|stringa |Imposta i metadati dell'oggetto in SPO. Usa sempre il valore: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}. |
+|_metadata|stringa |Imposta i metadati dell'oggetto in SPO. Usare sempre il valore: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}. |
 |TargetSiteId|guid|ID del sito in cui si trova il file da classificare.|
 |TargetWebId|guid|ID della pagina Web in cui si trova il file da classificare.|
 |TargetUniqueId|guid|ID del file da classificare.|
@@ -58,7 +58,7 @@ Nessuno
 
 ## <a name="examples"></a>Esempi
 
-### <a name="enqueue-a-request-to-classify-a-file-of-id-e6cff8b7-c90c-4564-b5b8-033449090932"></a>Metti in coda una richiesta per classificare un file con ID "e6cff8b7-c90c-4564-b5b8-033449090932"
+### <a name="enqueue-a-request-to-classify-a-file-of-id-e6cff8b7-c90c-4564-b5b8-033449090932"></a>Mettere in coda una richiesta per classificare un file con ID "e6cff8b7-c90c-4564-b5b8-033449090932"
 
 #### <a name="sample-request"></a>Richiesta di esempio
 
