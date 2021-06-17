@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: fe6a4604852965bdcc563ac0e410ca165bc5a088
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 5742c121b73eb8709e770c9b2c4da6dbfd942276
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789374"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984857"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Esportare la valutazione della configurazione sicura per dispositivo
 
@@ -34,8 +34,6 @@ ms.locfileid: "52789374"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
->
 >
 Restituisce tutte le configurazioni e il relativo stato, in base al dispositivo.
 
@@ -102,7 +100,7 @@ Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 ConfigurationCategory | stringa | Categoria o raggruppamento a cui appartiene la configurazione: Applicazione, Sistema operativo, Rete, Account, Controlli di sicurezza | Controlli di sicurezza
 ConfigurationId | stringa | Identificatore univoco di una configurazione specifica | scid-10000
 ConfigurationImpact | stringa | Impatto nominale della configurazione sul punteggio di configurazione complessivo (1-10) | 9 
-ConfigurationName | stringa | Nome visualizzato della configurazione | Aggiungere dispositivi a Microsoft Defender for Endpoint
+ConfigurationName | stringa | Nome visualizzato della configurazione | Aggiungere dispositivi a Microsoft Defender for Endpoint
 ConfigurationSubcategory | stringa | Sottocategoria o sottoraggruppamento a cui appartiene la configurazione. In molti casi qui vengono descritte capacità o funzionalità specifiche. | Dispositivi onboard
 DeviceId | stringa | Identificatore univoco del dispositivo nel servizio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName | stringa | Nome di dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com

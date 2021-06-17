@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: d0efd97359440ffb3d4b39b6389b477203c56084
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788836"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985001"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Accedere a API di Microsoft Defender per endpoint
 
@@ -62,7 +62,7 @@ Argomento | Descrizione
 :---|:---
 [Rilevazione avanzata](run-advanced-query-api.md) | Eseguire query dall'API.
 [Metodi e proprietà di avviso](alerts.md) | Esegui chiamate API come \- ottenere avvisi, creare avvisi, aggiornare avvisi e altro ancora.
-[Esportare proprietà e metodi di valutazione per dispositivo](get-assessment-methods-properties.md) | Eseguire chiamate API come esportare la valutazione della configurazione sicura, esportare la valutazione dell'inventario \- software ed esportare la valutazione delle vulnerabilità del software.
+[Esportare proprietà e metodi di valutazione per dispositivo](get-assessment-methods-properties.md) | Eseguire chiamate API per raccogliere valutazioni delle vulnerabilità in base al dispositivo, ad esempio: esportare la valutazione della configurazione sicura, esportare la valutazione dell'inventario software, esportare la valutazione delle vulnerabilità software e la valutazione delle vulnerabilità del software per l'esportazione \- delta.
 [Metodi e proprietà dell'indagine automatizzata](investigation.md) | Esegui chiamate API, ad \- esempio ottieni raccolta di indagini.
 [Ottenere avvisi correlati al dominio](get-domain-related-alerts.md) | Esegui chiamate API come \- ottenere dispositivi correlati al dominio, statistiche del dominio e altro ancora.
 [Metodi e proprietà di file](files.md) | Esegui chiamate API come ottenere informazioni sui file, avvisi correlati ai file, dispositivi correlati \- ai file e statistiche sui file.

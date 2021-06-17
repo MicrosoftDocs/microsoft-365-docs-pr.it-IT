@@ -14,18 +14,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769330"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985463"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Visualizzare eventi per la riduzione della superficie di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
+
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +39,7 @@ La revisione degli eventi è utile quando si valutano le funzionalità. Puoi abi
 
 In questo articolo vengono elencati tutti gli eventi, la funzionalità o l'impostazione associata e viene descritto come creare visualizzazioni personalizzate da filtrare in base a eventi specifici.
 
-Ottieni report dettagliati su eventi e blocchi come parte di Sicurezza di Windows se hai una sottoscrizione E5 e usi [Microsoft Defender for Endpoint.](microsoft-defender-endpoint.md)
+Ottieni report dettagliati su eventi, blocchi e avvisi come parte di Sicurezza di Windows se hai una sottoscrizione E5 e usi [Microsoft Defender for Endpoint.](microsoft-defender-endpoint.md)
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Usare visualizzazioni personalizzate per esaminare le funzionalità di riduzione della superficie di attacco
 
@@ -58,7 +59,8 @@ Puoi anche passare manualmente all'area dell'evento corrispondente alla funziona
 
 3. Seleziona **Azione**  >  **Importa visualizzazione personalizzata...**
 
-    ![Animazione evidenziazione Importa visualizzazione personalizzata a sinistra della finestra del visualizzatore pari](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![Animazione evidenziazione Importa visualizzazione personalizzata a sinistra della finestra del visualizzatore pari](images/events-import.gif)
 
 4. Passare al percorso in cui è stato estratto il file XML per la visualizzazione personalizzata desiderata e selezionarlo.
 
@@ -68,19 +70,18 @@ Puoi anche passare manualmente all'area dell'evento corrispondente alla funziona
 
 ### <a name="copy-the-xml-directly"></a>Copiare direttamente il codice XML
 
-1. Digitare **Visualizzatore** eventi nel menu Start e aprire il visualizzatore Windows **eventi.**
+1. Digitare **visualizzatore eventi** nel menu Start e aprire il Visualizzatore Windows **eventi**.
 
 2. Nel riquadro sinistro, in **Azioni,** selezionare **Crea visualizzazione personalizzata...**
 
-    ![Animazione che evidenzia l'opzione crea visualizzazione personalizzata nella finestra visualizzatore eventi](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![Animazione che evidenzia l'opzione crea visualizzazione personalizzata nella finestra visualizzatore eventi](images/events-create.gif)
 
 3. Passare alla scheda XML e selezionare **Modifica query manualmente.** Verrà visualizzato un avviso che indica che non è possibile modificare la query utilizzando la scheda **Filtro** se si utilizza l'opzione XML. Selezionare **Sì**.
 
 4. Incollare il codice XML per la funzionalità da cui si desidera filtrare gli eventi nella sezione XML.
 
-5. Selezionare **OK**. Specificare un nome per il filtro.
-
-6. Verrà creata una visualizzazione personalizzata che filtra solo gli eventi correlati a tale funzionalità.
+5. Selezionare **OK**. Specificare un nome per il filtro. In questo modo viene creata una visualizzazione personalizzata che filtra solo gli eventi correlati a tale funzionalità.
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>XML per gli eventi delle regole di riduzione della superficie di attacco
 
@@ -145,7 +146,7 @@ Puoi accedere a questi eventi nel Visualizzatore Windows eventi:
 2. Espandere **Registri applicazioni e servizi > Microsoft > Windows** quindi passare alla cartella elencata in **Provider/origine** nella tabella seguente.
 3. Fai doppio clic sull'elemento secondario per visualizzare gli eventi. Scorrere gli eventi per trovare quello che si sta cercando.
 
-   ![Animazione che mostra l'utilizzo del Visualizzatore eventi](/windows/security/threat-protection/images/event-viewer)
+   ![Animazione che mostra l'utilizzo del Visualizzatore eventi](images/event-viewer.gif)
 
 Funzionalità | Provider/origine | ID evento | Descrizione
 :-|:-|:-:|:-

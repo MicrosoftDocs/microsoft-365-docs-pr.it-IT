@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: 5bdb7ed46bdf01d4fb6075f310b98dcdb98a5a7f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b4040a60e59f3256b69f90d33af6f7543e50784e
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771922"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984797"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Abilitare regole per la riduzione della superficie di attacco
 
@@ -172,9 +172,9 @@ Puoi usare l'URI OMA Microsoft Endpoint Manager (MEM) per configurare regole asr
 
 >[!NOTE]
 > Gestione dei conflitti:
-> 
+>
 > Se assegni a un dispositivo due criteri asR diversi, il modo in cui viene gestito il conflitto sono le regole a cui vengono assegnati stati diversi, non esiste una gestione dei conflitti e il risultato è un errore.
-> 
+>
 > Le regole non in conflitto non restituiranno un errore e la regola verrà applicata correttamente. Ne risulta che viene applicata la prima regola e le regole successive non in conflitto vengono unite nel criterio.
 
 ## <a name="mdm"></a>MDM
@@ -251,7 +251,7 @@ Esempio:
 > [!WARNING]
 > Se gestisci i computer e i dispositivi con Intune, Configuration Manager o un'altra piattaforma di gestione a livello aziendale, il software di gestione sovrascriverà tutte le impostazioni di PowerShell in conflitto all'avvio. Per consentire agli utenti di definire il valore tramite PowerShell, utilizzare l'opzione "Definito dall'utente" per la regola nella piattaforma di gestione.
 
-1. Digitare **powershell** nel menu Start, fare clic con il pulsante destro **del** mouse Windows PowerShell e scegliere Esegui **come amministratore.**
+1. Digitare **powershell** nella menu Start, fare clic con il pulsante destro **del mouse** Windows PowerShell e selezionare Esegui come **amministratore.**
 
 2. Digitare il cmdlet seguente:
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18823db8ca8d4bfa82b8ab6265ee8a0902a13e79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925893"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984701"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
 
@@ -28,7 +28,7 @@ Esistono diversi modi in cui Microsoft Managed Desktop servizio comunica con i c
 Microsoft Managed Desktop Il portale di amministrazione richiede che gli utenti che accedono al portale Azure Active Directory (AD):
 - Amministratore globale
 - Amministratore del servizio Intune
-- Lettore globale
+- Ruolo con autorizzazioni di lettura globali
 - Service Support Administrator
 
 L'amministratore globale deve essere quello per registrare l'organizzazione in Microsoft Managed Desktop. Tutti e cinque i ruoli hanno lo stesso accesso nel portale di amministrazione per avviare e visualizzare le attività. Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure AD, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
@@ -51,15 +51,11 @@ I contatti di amministratore sono necessari quando [invii una richiesta di suppo
 
 **Per aggiungere contatti di amministratore**
 
-1.  Accedi a Microsoft Managed Desktop [di amministrazione](https://aka.ms/mwaasportal). 
+1.  Accedi a [Microsoft Endpoint Manager](https://endpoint.microsoft.com). 
 
-2.  In **Supporto** selezionare **Contatti di amministrazione.** 
-
-    ![Menu Supporto, Contatti di amministratore nella parte superiore selezionata](../../media/admincontacts.png)
+2.  In **Amministrazione tenant** cerca la sezione Microsoft Managed Desktop quindi seleziona Contatti di **amministratore.**  
 
 3. Selezionare **Aggiungi**.
-
-    ![Portale di amministrazione, pulsante Aggiungi, a sinistra di Esporta e aggiorna](../../media/adminadd.png)
 
 4.  Seleziona **un'area di stato attivo** e immetti le informazioni per il contatto. 
 

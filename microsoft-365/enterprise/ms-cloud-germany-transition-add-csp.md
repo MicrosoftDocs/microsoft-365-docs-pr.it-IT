@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: informazioni aggiuntive per i provider di soluzioni cloud rilevanti per la migrazione da Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 7a7c377d8e0b72a0179ff28a93018f88d22a5325
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52931050"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984917"
 ---
 # <a name="additional-information-for-cloud-solution-providers"></a>Informazioni aggiuntive per i provider di soluzioni cloud
 
@@ -37,6 +37,6 @@ I tenant dei clienti CSP verranno migrati nella nuova area dati tedesca e colleg
 
 ## <a name="missing-subscriptions-in-azure"></a>Sottoscrizioni mancanti in Azure
 
-Dopo il completamento della transizione di sottoscrizione e licenza [(fase 3),](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) i provider di soluzioni cloud non avranno più accesso alla sottoscrizione di Azure.
+Dopo il completamento della transizione di sottoscrizione e licenza [(fase 3),](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer) i provider di soluzioni cloud non avranno più accesso alla sottoscrizione di Azure.
 
 Per ripristinare l'accesso, eseguire la procedura seguente per [elevare l'accesso per gestire tutte le sottoscrizioni e i gruppi di gestione di Azure.](/azure/role-based-access-control/elevate-access-global-admin)

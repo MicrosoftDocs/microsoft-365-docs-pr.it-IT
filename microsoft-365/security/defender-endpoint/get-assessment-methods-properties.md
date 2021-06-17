@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63f8490984886b8b95e5c090865b5384a0ba04fb
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ace9f55b0b083faaeeb620700a43a1216c4451c2
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789355"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984869"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Esportare proprietà e metodi di valutazione per dispositivo
 
@@ -34,8 +34,6 @@ ms.locfileid: "52789355"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## <a name="api-description"></a>Descrizione API
 
 Fornisce metodi e dettagli sulle proprietà sulle API che estrae gestione di minacce e vulnerabilità dati in base al dispositivo. Esistono diverse chiamate API per ottenere diversi tipi di dati. In generale, ogni chiamata API contiene i dati dei requisiti per i dispositivi dell'organizzazione.
@@ -44,13 +42,15 @@ Fornisce metodi e dettagli sulle proprietà sulle API che estrae gestione di min
 >
 > Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
 
-Esistono tre metodi API che puoi usare per recuperare (esportare) diversi tipi di informazioni:
+Puoi usare le API di valutazione dell'esportazione per recuperare (esportare) diversi tipi di informazioni:
 
-1. Esportare la valutazione delle configurazioni sicure
+- [1. Esportare la valutazione delle configurazioni sicure](#1-export-secure-configurations-assessment)
 
-2. Esportare valutazioni di inventario software
+- [2. Esportare la valutazione dell'inventario software](#2-export-software-inventory-assessment)
 
-3. Esportare valutazioni delle vulnerabilità dei software
+- [3. Esportare la valutazione delle vulnerabilità software](#3-export-software-vulnerabilities-assessment)
+
+Le API corrispondenti ai tipi di informazioni di esportazione sono descritte nelle sezioni 1, 2 e 3.
 
 Per ogni metodo, esistono diverse chiamate API per ottenere tipi diversi di dati. Poiché la quantità di dati può essere di grandi dimensioni, è possibile recuperarla in due modi:
 
@@ -148,6 +148,7 @@ Metodo | Tipo di dati | Descrizione
 :---|:---|:---
 Valutazione delle vulnerabilità del software di esportazione **(OData)** | Insieme Investigation Vedere: [3.2 Properties (OData)](#32-properties-odata) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per organizzazioni di piccole dimensioni con meno di 100 K dispositivi. La risposta viene impaginata, quindi è possibile utilizzare il campo @odata.nextLink dalla risposta per recuperare i risultati successivi.
 Esportare la valutazione delle vulnerabilità software **(tramite file)** | Entità di indagine Vedere: [3.3 Proprietà (tramite file)](#33-properties-via-files) | Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come segue: 1.  Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione. 2.  Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
+**Valutazione delle vulnerabilità** del software di esportazione delta **(OData)** | Raccolta di indagini Vedere: [3.4 Proprietà Delta export OData)](#34-properties-delta-export-odata) | Restituisce una tabella con una voce per ogni combinazione univoca di: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId ed EventTimestamp. <br><br> L'API estrae i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. La risposta viene impaginata, quindi è possibile utilizzare il campo @odata.nextLink dalla risposta per recuperare i risultati successivi. A differenza della valutazione completa delle vulnerabilità software (OData), che viene utilizzata per ottenere un'intera istantanea della valutazione delle vulnerabilità software dell'organizzazione per dispositivo, la chiamata API OData per l'esportazione delta viene utilizzata per recuperare solo le modifiche che si sono verificate tra una data selezionata e la data corrente (chiamata API "delta"). Invece di ottenere un'esportazione completa con una grande quantità di dati ogni volta, si otterrà solo informazioni specifiche sulle vulnerabilità nuove, fisse e aggiornate. È inoltre possibile utilizzare la chiamata all'API OData per l'esportazione delta per calcolare indicatori KPI diversi, ad esempio "quante vulnerabilità sono state risolvete?" o "Quante nuove vulnerabilità sono state aggiunte all'organizzazione?"  <br><br> Poiché la chiamata dell'API OData per l'esportazione delta per le vulnerabilità software restituisce dati solo per un intervallo di date mirato, non è considerata _un'esportazione completa._
 
 ### <a name="32-properties-odata"></a>3.2 Proprietà (OData)
 
@@ -179,6 +180,32 @@ Proprietà (ID) | Tipo di dati | Descrizione
 :---|:---|:---
 Esportare file | stringa \[ di matrice\]  | Elenco di URL di download per i file che tengono lo snapshot corrente dell'organizzazione.
 GeneratedTime | stringa | Ora in cui è stata generata l'esportazione.
+
+### <a name="34-properties-delta-export-odata"></a>3.4 Proprietà (esportazione delta OData)
+
+Proprietà (ID) | Tipo di dati | Descrizione
+:---|:---|:---
+CveId | stringa | Identificatore univoco assegnato alla vulnerabilità della sicurezza nel sistema CVE (Common Vulnerabilities and Exposures).
+CvssScore | stringa | Punteggio CVSS del CVE.
+DeviceId | stringa | Identificatore univoco del dispositivo nel servizio.
+DeviceName | stringa | Nome di dominio completo (FQDN) del dispositivo.
+DiskPaths | Array[string] | Prova su disco che il prodotto è installato nel dispositivo.
+EventTimestamp | Stringa | Ora in cui è stato trovato questo evento delta.
+ExploitabilityLevel | stringa | Livello di sfruttabilità di questa vulnerabilità (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+FirstSeenTimestamp | stringa | La prima volta che il CVE di questo prodotto è stato visualizzato nel dispositivo.
+Id | stringa | Identificatore univoco del record.  
+LastSeenTimestamp | stringa | Ultima volta che il CVE è stato visualizzato nel dispositivo.
+OSPlatform | stringa | Piattaforma del sistema operativo in esecuzione nel dispositivo. Ciò indica specifici sistemi operativi, incluse variazioni all'interno della stessa famiglia di prodotti, come Windows 10 e Windows 7. Per informazioni dettagliate, vedere tvm supported operating systems and platforms.
+RbacGroupName | stringa | Gruppo RBAC (Role-Based Access Control). Se questo dispositivo non è assegnato ad alcun gruppo RBAC, il valore sarà "Non assegnato". Se l'organizzazione non contiene gruppi RBAC, il valore sarà "None".
+RecommendationReference | stringa | Riferimento all'ID suggerimento relativo a questo software.
+RecommendedSecurityUpdate  | stringa | Nome o descrizione dell'aggiornamento della sicurezza fornito dal fornitore del software per risolvere la vulnerabilità.
+RecommendedSecurityUpdateId  | stringa | Identificatore degli aggiornamenti della sicurezza applicabili o dell'identificatore per gli articoli della Knowledge Base (KB) corrispondenti
+RegistryPaths  | Array[string] | Prova del Registro di sistema che il prodotto è installato nel dispositivo.
+SoftwareName | stringa | Nome del prodotto software.
+SoftwareVendor | stringa | Nome del fornitore del software.
+SoftwareVersion | stringa | Numero di versione del prodotto software.
+Stato | Stringa | **Nuovo**   (per una nuova vulnerabilità introdotta in un dispositivo).  **Risolto**   (per una vulnerabilità che non esiste più nel dispositivo, il che significa che è stato corretti). **Aggiornato**   (per una vulnerabilità in un dispositivo che è cambiata. Le possibili modifiche sono: punteggio CVSS, livello di exploit, livello di gravità, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
+VulnerabilitySeverityLevel | stringa | Livello di gravità assegnato alla vulnerabilità della sicurezza in base al punteggio CVSS e ai fattori dinamici influenzati dal panorama delle minacce.
 
 ## <a name="see-also"></a>Vedere anche
 

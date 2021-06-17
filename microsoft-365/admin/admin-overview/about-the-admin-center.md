@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,19 +23,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
-description: Accedere con autorizzazioni di amministratore all'Microsoft 365 di amministrazione per configurare l'organizzazione nel cloud e gestire utenti e sottoscrizioni.
-ms.openlocfilehash: 1d8afaf8c63124fc0dde40002214ba99d4d1a4a0
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
-ms.translationtype: MT
+description: Accedere con le autorizzazioni di amministratore all'interfaccia di amministrazione di Microsoft 365 per configurare l'organizzazione nel cloud e gestire gli utenti e gli abbonamenti.
+ms.openlocfilehash: eff0ab72ef3e4634e7a83d1af825bc42d11686af
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572022"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52949988"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informazioni sull'interfaccia di amministrazione di Microsoft 365
 
-Se hai acquistato un piano Microsoft 365 per le aziende e hai le autorizzazioni **di amministratore, hai accesso all'interfaccia di amministrazione**. Questo articolo contiene tutte le informazioni necessarie.
+**Se si è acquistato un piano di Microsoft 365 per le aziende E si dispone di autorizzazioni di amministratore, è possibile accedere all'interfaccia di amministrazione**. Questo articolo contiene tutte le informazioni necessarie.
 
-**Se sei un utente o hai un piano Microsoft 365 Family, non hai un'interfaccia di amministrazione.** Per configurare Microsoft 365, vai a Scaricare e installare o reinstallare Microsoft 365 [o Office 2019 in un PC o Mac.](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+**Se si ha un piano di Microsoft 365 Family, non si ha accesso ad alcuna interfaccia di amministrazione.** Per configurare Microsoft 365, vedere [Scaricare e installare o reinstallare Microsoft 365 o Office 2019 in un PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
 
 L'interfaccia di amministrazione consente di configurare l'organizzazione nel cloud, gestire utenti e abbonamenti e molto altro ancora. In questo articolo, vengono fornite informazioni su come accedere all'interfaccia di amministrazione e sulle funzionalità e impostazioni disponibili.
 
@@ -51,7 +51,7 @@ Se il video è stato utile, consultare la [serie di formazione completa a Micros
 
 2. Selezionare l'icona di avvio delle app in alto a sinistra e scegliere **Amministratore**.
 
-    Il **riquadro Amministratore** viene visualizzato solo per gli utenti che dispongono Microsoft 365 autorizzazioni di [amministratore.](../add-users/about-admin-roles.md) Se il riquadro non è visibile, non si hanno le autorizzazioni necessarie per accedere all'interfaccia di amministrazione per l'organizzazione.
+    Il riquadro **Amministratore** viene visualizzato solo agli utenti con [autorizzazioni di amministratore](../add-users/about-admin-roles.md) di Microsoft 365. Se il riquadro non è visibile, non si hanno le autorizzazioni necessarie per accedere all'interfaccia di amministrazione per l'organizzazione.
 
 ## <a name="admin-center-features-and-settings"></a>Funzionalità e impostazioni dell'interfaccia di amministrazione
 
@@ -59,30 +59,30 @@ Ecco le funzionalità e le impostazioni disponibili nel riquadro di spostamento 
   
 |**Menu**|**Scopo**|
 |-----|-----|
-|**Home** <br/> |Questa è la pagina di destinazione nell'interfaccia di amministrazione. Qui è possibile vedere dove gestire gli utenti, la fatturazione, l'integrità dei servizi e i report.  <br/> |
+|**Home** <br/> |Si tratta della pagina di destinazione dell'interfaccia di amministrazione. Qui è possibile vedere dove gestire gli utenti, la fatturazione, l'integrità dei servizi e i report.  <br/> |
 |**Utenti** <br/> |Qui è possibile aggiungere ed eliminare utenti dell'organizzazione, ad esempio dipendenti o studenti. Si può anche impostare il livello di autorizzazione e reimpostare le password di questi utenti.  <br/> |
-|**Gruppi** <br/> |Creare e gestire gruppi nell'organizzazione, ad esempio un Microsoft 365, un gruppo di distribuzione, un gruppo di sicurezza o una cassetta postale condivisa. Informazioni su come [creare](../create-groups/create-groups.md) e [gestire](../create-groups/manage-groups.md) i gruppi.  <br/> |
+|**Gruppi** <br/> |È possibile creare e gestire i gruppi dell'organizzazione, ad esempio un gruppo di Microsoft 365, un gruppo di distribuzione, un gruppo di sicurezza o una cassetta postale condivisa. Informazioni su come [creare](../create-groups/create-groups.md) e [gestire](../create-groups/manage-groups.md) i gruppi.  <br/> |
 |**Risorse** <br/> |In questa pagina si possono creare e gestire le risorse, ad esempio una raccolta siti di SharePoint. Vedere come [creare le raccolte siti](/sharepoint/create-site-collection).  <br/> |
 |**Fatturazione** <br/> |Consente di visualizzare, acquistare o annullare abbonamenti per la propria organizzazione. È possibile visualizzare anche gli estratti conti passati e il numero di licenze assegnate ai singoli utenti. Vedere altre informazioni sulla [gestione della fatturazione](../../commerce/index.yml).  <br/> |
 |**Supporto** <br/> | Qui si possono visualizzare le richieste di assistenza esistenti o crearne di nuove. Per altre informazioni, vedere [Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore](../../business-video/get-help-support.md). |
 |**Impostazioni** <br/> |In questa pagina è possibile gestire le impostazioni globali per app come la posta elettronica, i siti e la famiglia di prodotti Office, cambiare i criteri delle password e la data di scadenza, aggiungere e aggiornare i nomi di dominio, come contoso.com, cambiare il profilo dell'organizzazione e le preferenze di rilascio, nonché scegliere se i partner possono accedere o meno all'interfaccia di amministrazione.  <br/> |
 |**Configurazione** <br/> |Qui è possibile gestire i domini esistenti, attivare e gestire l'autenticazione a più fattori, gestire l'accesso dell'amministratore, eseguire la migrazione delle cassette postali degli utenti in Office 365, gestire gli aggiornamenti delle funzionalità e aiutare gli utenti a installare le app di Office. |
-|**Report** <br/> |Scopri a colpo d'occhio come l'organizzazione usa Microsoft 365 con report dettagliati sull'uso della posta elettronica, sulle Office e altro ancora. Vedere come si usano i nuovi [report attività](../activity-reports/activity-reports.md).  <br/> |
-|**Integrità** <br/> |Visualizzare l'integrità a colpo d'occhio. Puoi anche consultare altri dettagli e la cronologia dell'integrità. Per [altre informazioni,](../../enterprise/view-service-health.md) vedi Come controllare l'integrità dei servizi e Come [Windows integrità del rilascio.](/windows/deployment/update/check-release-health)  <br/><br/>Usare il Centro messaggi per tenersi aggiornati sulle imminenti modifiche a funzionalità e servizi. Vengono pubblicati annunci con informazioni utili per prepararsi al cambiamento e comprendere l'impatto che può avere sugli utenti. Per ulteriori dettagli, vedere [Centro messaggi](../manage/message-center.md). <br/> |
+|**Report** <br/> |Questa pagina contiene report dettagliati sull'uso della posta elettronica, le attivazioni di Office e così via, consentendo di vedere a colpo d'occhio come viene usato Microsoft 365 nell'organizzazione. Vedere come si usano i nuovi [report attività](../activity-reports/activity-reports.md).  <br/> |
+|**Integrità** <br/> |Consente di visualizzare lo stato di integrità dei servizi a colpo d'occhio. È inoltre possibile verificare altri dettagli e la cronologia dell'integrità dei servizi. Vedere [Come controllare l'integrità dei servizi](../../enterprise/view-service-health.md) e [Come controllare l'integrità della release di Windows](/windows/deployment/update/check-release-health) per altre informazioni.  <br/><br/>Usare il Centro messaggi per tenersi aggiornati sulle imminenti modifiche a funzionalità e servizi. Vengono pubblicati annunci con informazioni utili per prepararsi al cambiamento e comprendere l'impatto che può avere sugli utenti. Altri dettagli nel [Centro messaggi](../manage/message-center.md). <br/> |
 |**Interfacce di amministrazione** <br/> |Consente di aprire interfacce di amministrazione distinte per Exchange, Skype for Business, SharePoint, Yammer e Azure AD. Ogni interfaccia di amministrazione include tutte le impostazioni disponibili per il servizio corrispondente.  <br/> Ad esempio, nell'interfaccia di amministrazione di Exchange è possibile configurare e gestire la posta elettronica, i calendari, i gruppi di distribuzione e altro ancora. Nell'interfaccia di amministrazione di SharePoint è possibile creare e gestire raccolte siti, le impostazioni dei siti e OneDrive for Business. Nell'interfaccia di amministrazione di Skype for Business è possibile configurare le notifiche di messaggistica istantanea, le conferenze telefoniche con accesso esterno e la presenza online.  <br/> Vedere le informazioni sull'[interfaccia di amministrazione di Exchange](/exchange/exchange-admin-center) e sull' [interfaccia di amministrazione di SharePoint](/sharepoint/sharepoint-online).<br/> **Nota:** le interfacce di amministrazione disponibili variano in base al piano e all'area geografica.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Attività comuni nell'interfaccia di amministrazione
 
-- Gestire gli utenti: [aggiungere utenti e assegnare licenze contemporaneamente,](../add-users/add-users.md)Eliminare o [ripristinare](../add-users/delete-a-user.md)utenti o Reimpostare la password di [un utente.](../add-users/reset-passwords.md)
+- Gestire gli utenti: [Aggiungere utenti e assegnare licenze contemporaneamente](../add-users/add-users.md), [Eliminare o ripristinare utenti](../add-users/delete-a-user.md) o [Reimpostare una password utente](../add-users/reset-passwords.md).
 
 - Ottenere assistenza per la fatturazione: [Fatturazione](../../commerce/index.yml)
 
 - Visualizzare i report attività: [Report attività](../activity-reports/activity-reports.md)
 
-- [Creare un Microsoft 365 gruppo](../create-groups/create-groups.md)
+- [Creare un gruppo di Microsoft 365 ](../create-groups/create-groups.md)
 
-- [Gestire un Microsoft 365 gruppo](../create-groups/manage-groups.md)
+- [Gestire un gruppo di Microsoft 365 ](../create-groups/manage-groups.md)
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[video Microsoft 365 formazione su Microsoft 365](../../business-video/index.yml) per le aziende (pagina dei collegamenti)
+[Video di formazione su Microsoft 365 per le aziende](../../business-video/index.yml) (pagina collegamento)

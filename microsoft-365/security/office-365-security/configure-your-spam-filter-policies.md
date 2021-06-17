@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: bb3e378c13507e354cdd1d739214c1c2d9d6aa98
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879097"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950096"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -307,7 +307,7 @@ Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o
 3. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato viene visualizzato **Aumenta priorità** o **Riduci priorità** in base al valore di priorità corrente e al numero di criteri personalizzati:
    - Il criterio di filtro della posta indesiderata con **valore di** priorità **0** ha solo l'opzione **Riduci priorità** disponibile.
    - Il criterio di filtro della posta indesiderata con il **valore di** priorità più basso (per esempio, **3**) ha solo l'opzione **Aumenta priorità** disponibile.
-   - Se si impostano tre o più criteri di filtro della posta indesiderata, i criteri tra i valori di priorità più alti e più bassi hanno sia le opzioni **Aumenta priorità** sia quelli **Riduci la priorità** disponibili.
+   - Se si impostano tre o più criteri di filtro della posta indesiderata, i criteri tra i valori di priorità più alti e più bassi hanno sia le opzioni **Aumenta priorità** che **Riduci priorità** disponibili.
 
    Fare clic![ sull’icona Aumenta priorità](../../media/m365-cc-sc-increase-icon.png) **Aumenta priorità** o ![sull’icona Riduci priorità](../../media/m365-cc-sc-decrease-icon.png) **Riduci priorità** per modificare il valore **Priorità**.
 

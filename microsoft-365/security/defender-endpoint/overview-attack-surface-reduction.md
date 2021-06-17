@@ -19,25 +19,26 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: b6fb9bb327816b7e166a443a0d07932d30421a19
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 6b3c88f23d3ceffbca588c80b05266d12147ca39
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771694"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985025"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>Panoramica delle funzionalità di riduzione della superficie di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
+
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Le superfici di attacco sono tutti i luoghi in cui l'organizzazione è vulnerabile a minacce informatiche e attacchi. Defender for Endpoint include diverse funzionalità per ridurre le superfici di attacco. Guarda il video seguente per altre informazioni sulla riduzione della superficie di attacco.<p>
+Le superfici di attacco sono tutti i luoghi in cui l'organizzazione è vulnerabile a minacce informatiche e attacchi. Defender for Endpoint include diverse funzionalità per ridurre le superfici di attacco. Guarda il video seguente per altre informazioni sulla riduzione della superficie di attacco.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
 
@@ -47,7 +48,7 @@ Come accennato nel video, Defender for Endpoint include diverse funzionalità di
 
 | Articolo | Descrizione |
 |:---|:---|
-| [Isolamento basato su hardware.](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Proteggere e mantenere l'integrità di un sistema all'avvio e durante l'esecuzione. Convalidare l'integrità del sistema tramite l'attestazione locale e remota. Usa l'isolamento dei contenitori per Microsoft Edge proteggere i siti Web dannosi. |
+| [Isolamento basato su hardware](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Proteggere e mantenere l'integrità di un sistema all'avvio e durante l'esecuzione. Convalidare l'integrità del sistema tramite l'attestazione locale e remota. Usa l'isolamento del contenitore Microsoft Edge per proteggere i siti Web dannosi. |
 | [Controllo delle applicazioni](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Utilizzare il controllo dell'applicazione in modo che le applicazioni devono ottenere attendibilità per poter essere eseguite. |
 | [Accesso controllato alle cartelle](controlled-folders.md) | Impedire alle app dannose o sospette (incluso il malware ransomware per la crittografia dei file) di apportare modifiche ai file nelle cartelle di sistema chiave (richiede Antivirus Microsoft Defender) |
 | [Protezione di rete](network-protection.md) | Estendere la protezione al traffico di rete e alla connettività nei dispositivi dell'organizzazione. (Richiede Antivirus Microsoft Defender) |

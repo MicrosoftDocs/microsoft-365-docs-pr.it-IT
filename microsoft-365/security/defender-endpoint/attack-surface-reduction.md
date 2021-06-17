@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 409f6d0bbbcf9f8b50119e35bdb7852c4323bbf9
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903853"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984989"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -37,11 +37,11 @@ La superficie di attacco dell'organizzazione include tutte le posizioni in cui u
 
 Le regole di riduzione della superficie di attacco sono mirate a determinati comportamenti software, ad esempio:
 
-- Avvio di file eseguibili e script che tentano di scaricare o eseguire file;
-- Esecuzione di script offuscati o comunque sospetti; e
-- Esecuzione di comportamenti che le app in genere non avviano durante il normale lavoro quotidiano.
+- Avvio di file eseguibili e script che tentano di scaricare o eseguire file
+- Esecuzione di script offuscati o comunque sospetti
+- Esecuzione di comportamenti che le app in genere non avviano durante il normale lavoro quotidiano
 
-Tali comportamenti software sono talvolta visibili nelle applicazioni legittime; tuttavia, questi comportamenti sono spesso considerati rischiosi perché vengono comunemente maltrattati da utenti malintenzionati tramite malware. Le regole di riduzione della superficie di attacco possono vincolare i comportamenti rischiosi e contribuire a proteggere l'organizzazione.
+Tali comportamenti software sono talvolta visibili nelle applicazioni legittime. Tuttavia, questi comportamenti sono spesso considerati rischiosi perché vengono comunemente maltrattati da utenti malintenzionati tramite malware. Le regole di riduzione della superficie di attacco possono vincolare i comportamenti rischiosi basati su software e contribuire a proteggere l'organizzazione.
 
 Per ulteriori informazioni sulla configurazione delle regole di riduzione della superficie di [attacco,](enable-attack-surface-reduction.md)vedere Enable attack surface reduction rules .
 
@@ -55,7 +55,7 @@ Nel riquadro dei dettagli dei suggerimenti controlla l'impatto dell'utente per d
 
 ## <a name="audit-mode-for-evaluation"></a>Modalità di controllo per la valutazione
 
-Usa [la modalità di controllo](audit-windows-defender.md) per valutare in che modo le regole di riduzione della superficie di attacco influirebbero sull'organizzazione se fossero abilitate. Eseguire prima tutte le regole in modalità di controllo per comprendere in che modo influiscono sulle applicazioni line-of-business. Molte applicazioni line-of-business sono scritte con problemi di sicurezza limitati e potrebbero eseguire attività in modi simili al malware. Monitorando i dati di controllo e [aggiungendo esclusioni](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) per le applicazioni necessarie, è possibile distribuire regole di riduzione della superficie di attacco senza ridurre la produttività.
+Usa [la modalità di controllo](audit-windows-defender.md) per valutare in che modo le regole di riduzione della superficie di attacco influirebbero sull'organizzazione, se abilitata. Eseguire prima tutte le regole in modalità di controllo per comprendere in che modo influiscono sulle applicazioni line-of-business. Molte applicazioni line-of-business sono scritte con problemi di sicurezza limitati e potrebbero eseguire attività in modi simili al malware. Monitorando i dati di controllo e [aggiungendo esclusioni](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) per le applicazioni necessarie, è possibile distribuire regole di riduzione della superficie di attacco senza ridurre la produttività.
 
 ## <a name="warn-mode-for-users"></a>Modalità avviso per gli utenti
 
@@ -67,7 +67,7 @@ La modalità avviso consente all'organizzazione di disporre di regole di riduzio
 
 La modalità avviso è supportata nei dispositivi che eseguono le seguenti versioni di Windows:
 
-- [Windows 10 versione 1809](/windows/whats-new/whats-new-windows-10-version-1809) o successiva
+- [Windows 10, versione 1809](/windows/whats-new/whats-new-windows-10-version-1809) o versioni successive
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809) o successiva
 
 Antivirus Microsoft Defender deve essere in esecuzione con protezione in tempo reale in [modalità attiva.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
@@ -114,13 +114,18 @@ Puoi impostare regole di riduzione della superficie di attacco per i dispositivi
 - Windows Server, [versione 1803 (Canale semestraale)](/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Anche se le regole di riduzione della superficie di attacco non richiedono una licenza [Windows E5,](/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender per Endpoint,](microsoft-defender-endpoint.md)nonché funzionalità di creazione di report e configurazione in [Microsoft 365 Defender.](/microsoft-365/security/defender/overview-security-center) Queste funzionalità avanzate non sono disponibili con una licenza Windows Professional o Windows E3. Tuttavia, se si dispone di tali licenze, è possibile utilizzare visualizzatore eventi e registri Antivirus Microsoft Defender per esaminare gli eventi delle regole di riduzione della superficie di attacco.
+Anche se le regole di riduzione della superficie di attacco non richiedono una licenza [Windows E5,](/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Le funzionalità avanzate, disponibili solo in Windows E5, includono:
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Esaminare gli eventi di riduzione della superficie di attacco nel portale Microsoft 365 Defender
+- Monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint](microsoft-defender-endpoint.md)
+- Funzionalità di creazione di report e configurazione [in Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+
+Queste funzionalità avanzate non sono disponibili con una licenza Windows Professional o Windows E3. Tuttavia, se si dispone di tali licenze, è possibile utilizzare visualizzatore eventi e registri Antivirus Microsoft Defender per esaminare gli eventi delle regole di riduzione della superficie di attacco.
+
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Esaminare gli eventi di riduzione della superficie di attacco nel portale Microsoft 365 Defender di attacco
 
 Defender for Endpoint fornisce report dettagliati per eventi e blocchi nell'ambito di scenari di analisi degli avvisi.
 
-Puoi eseguire query su Defender per i dati dell'endpoint in [Microsoft 365 Defender](microsoft-defender-security-center.md) usando la [ricerca avanzata.](advanced-hunting-query-language.md) Se si esegue la modalità [di](audit-windows-defender.md)controllo, è possibile utilizzare la ricerca avanzata per comprendere in che modo le regole di riduzione della superficie di attacco potrebbero influire sull'ambiente.
+Puoi eseguire query su Defender per i dati [dell'endpoint](microsoft-defender-security-center.md) in Microsoft 365 Defender tramite [ricerca avanzata.](advanced-hunting-query-language.md) Se si esegue la modalità [di](audit-windows-defender.md)controllo, è possibile utilizzare la ricerca avanzata per comprendere in che modo le regole di riduzione della superficie di attacco potrebbero influire sull'ambiente.
 
 Ecco una query di esempio:
 
@@ -135,7 +140,7 @@ DeviceEvents
 
 1. Scarica il [pacchetto di valutazione](https://aka.ms/mp7z2w) ed estrai il file *cfa-events.xml* in un percorso facilmente accessibile nel dispositivo.
 
-2. Immetti le parole *Visualizzatore eventi* nel menu Start per aprire il Visualizzatore Windows eventi.
+2. Immettere le parole *Visualizzatore eventi* nel menu Start per aprire il Visualizzatore Windows eventi.
 
 3. In **Azioni** selezionare **Importa visualizzazione personalizzata...**.
 
@@ -183,15 +188,15 @@ Se si configurano regole di riduzione della superficie di attacco tramite Criter
 
 Questa regola impedisce a un'applicazione di scrivere un driver firmato vulnerabile su disco. I driver firmati vulnerabili possono essere sfruttati da applicazioni locali che dispongono di privilegi sufficienti per accedere \-  \- al kernel. I driver firmati vulnerabili consentono agli utenti malintenzionati di disabilitare o aggirare le soluzioni di sicurezza, causando una compromissione del sistema.
 
-Questa regola non blocca il caricamento di un driver già esistente nel sistema.
+La **regola Blocca l'abuso dei** driver firmati vulnerabili sfruttati non blocca il caricamento di un driver già esistente nel sistema.
 
 >[!NOTE]
 >
-> Questa regola può essere configurata utilizzando [l'URI OMA MEM](enable-attack-surface-reduction.md#mem) per le informazioni procedurali sulle regole personalizzate URI OMA MEM.
+> Puoi configurare questa regola usando [l'URI OMA MEM](enable-attack-surface-reduction.md#mem) per le informazioni procedurali sulle regole personalizzate URI OMA MEM.
 >
-> Questa regola può essere configurata anche tramite [PowerShell.](enable-attack-surface-reduction.md#powershell)
+> È inoltre possibile configurare questa regola utilizzando [PowerShell.](enable-attack-surface-reduction.md#powershell)
 >
-> È possibile utilizzare questo sito Web per [inviare un driver per l'analisi.](https://www.microsoft.com/en-us/wdsi/driversubmission)
+> Per fare in modo che un driver sia esaminato, utilizzare questo sito Web per [inviare un driver per l'analisi.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
 Questa regola è supportata in tutte le versioni in cui è supportato il controllo del codice asr. che è:
 
@@ -226,7 +231,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 Questa regola impedisce Office app di creare processi figlio. Office app includono Word, Excel, PowerPoint, OneNote e Access.
 
-La creazione di processi figlio dannosi è una strategia antimalware comune. I malware che Office come vettore spesso eseguono macro VBA e sfruttano il codice per scaricare e tentare di eseguire più payload. Tuttavia, alcune applicazioni line-of-business legittime potrebbero anche generare processi figlio per scopi benigni, ad esempio la generazione di un prompt dei comandi o l'utilizzo di PowerShell per configurare le impostazioni del Registro di sistema.
+La creazione di processi figlio dannosi è una strategia antimalware comune. I malware che Office come vettore spesso eseguono macro VBA e sfruttano il codice per scaricare e tentare di eseguire più payload. Tuttavia, alcune applicazioni line-of-business legittime potrebbero anche generare processi figlio per scopi benigni. ad esempio la generazione di un prompt dei comandi o l'uso di PowerShell per configurare le impostazioni del Registro di sistema.
 
 Questa regola è stata introdotta in:
 
@@ -243,7 +248,7 @@ GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloccare il furto delle credenziali dal sottosistema Windows'autorità di sicurezza locale
 
-Questa regola consente di impedire il furto delle credenziali bloccando localmente il servizio LSASS (Local Security Authority Subsystem Service).
+Questa regola consente di impedire il furto delle credenziali bloccando il servizio LSASS (Local Security Authority Subsystem Service).
 
 LSASS autentica gli utenti che a loro Windows computer. Microsoft Defender Credential Guard in Windows 10 in genere impedisce i tentativi di estrarre le credenziali da LSASS. Tuttavia, alcune organizzazioni non possono abilitare Credential Guard in tutti i computer a causa di problemi di compatibilità con driver smart card personalizzati o altri programmi caricati nell'Autorità di sicurezza locale (LSA). In questi casi, gli utenti malintenzionati possono usare strumenti di hacking come Mimikatz per raschiare password non crittografate e hash NTLM da LSASS.
 
@@ -360,7 +365,7 @@ GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 Questa regola impedisce alle app Office, tra cui Word, Excel e PowerPoint, di creare contenuti eseguibili potenzialmente dannosi, bloccando la scrittura su disco di codice dannoso.
 
-Il malware che Office come vettore può tentare di uscire dall'Office e salvare componenti dannosi su disco. Questi componenti dannosi sarebbero sopravvissuti al riavvio del computer e persistessero nel sistema. Pertanto, questa regola si difende da una tecnica di persistenza comune.
+Il malware che Office come vettore potrebbe tentare di uscire dall'Office e salvare componenti dannosi su disco. Questi componenti dannosi sarebbero sopravvissuti al riavvio del computer e persistessero nel sistema. Pertanto, questa regola si difende da una tecnica di persistenza comune.
 
 Questa regola è stata introdotta in:
 
@@ -400,12 +405,12 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Impedire Office'applicazione di comunicazione di creare processi figlio
 
-Questa regola impedisce Outlook di creare processi figlio, pur consentendo funzioni Outlook legittimi.
+Questa regola impedisce a Outlook di creare processi figlio, pur consentendo funzioni di Outlook legittime.
 
-Questa regola protegge dagli attacchi di social engineering e impedisce allo sfruttamento del codice di sfruttare le vulnerabilità in Outlook. Protegge inoltre dalle regole Outlook e dagli [exploit](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) dei moduli che gli utenti malintenzionati possono utilizzare quando le credenziali di un utente vengono compromesse.
+Questa regola protegge dagli attacchi di social engineering e impedisce allo sfruttamento del codice di sfruttare vulnerabilità in Outlook. Protegge inoltre dalle regole e dagli exploit dei moduli di [Outlook](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) che gli utenti malintenzionati possono utilizzare quando le credenziali di un utente vengono compromesse.
 
 > [!NOTE]
-> Questa regola blocca le descrizioni comandi e le descrizioni comandi dei criteri DLP in Outlook. Questa regola si applica solo Outlook e Outlook.com. 
+> Questa regola blocca le descrizioni comandi e le descrizioni comandi dei criteri DLP in Outlook. Questa regola si applica solo Outlook.com Outlook.
 
 Questa regola è stata introdotta in:
 
@@ -430,7 +435,7 @@ Le minacce senza file utilizzano diverse tattiche per rimanere nascoste, per evi
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1903](/windows/whats-new/whats-new-windows-10-version-1903)
+- [Windows 10 versione 1903](/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Nome Intune: Non disponibile
@@ -444,7 +449,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 Questa regola blocca l'esecuzione dei processi creati [tramite PsExec](/sysinternals/downloads/psexec) [e WMI.](/windows/win32/wmisdk/about-wmi) Sia PsExec che WMI possono eseguire codice in remoto, quindi esiste il rischio che malware abuso di questa funzionalità a scopo di comando e controllo o per diffondere un'infezione in tutta la rete di un'organizzazione.
 
 > [!WARNING]
-> Usa questa regola solo se gestisci i dispositivi con [Intune](/intune) o un'altra soluzione MDM. Questa regola non è compatibile con la gestione [tramite Microsoft Endpoint Configuration Manager](/configmgr) perché questa regola blocca i comandi WMI utilizzati dal client di Configuration Manager per funzionare correttamente.
+> Usa questa regola solo se gestisci i dispositivi con [Intune](/intune) o un'altra soluzione MDM. Questa regola non è compatibile con la gestione tramite [Microsoft Endpoint Configuration Manager](/configmgr) perché questa regola blocca i comandi WMI utilizzati dal client di Configuration Manager per funzionare correttamente.
 
 Questa regola è stata introdotta in:
 
@@ -475,15 +480,15 @@ Nome di Configuration Manager: `Block untrusted and unsigned processes that run 
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Bloccare le chiamate API Win32 Office macro
+### <a name="block-win32-api-calls-from-office-macros"></a>Bloccare le chiamate API Win32 dalle macro di Office
 
 Questa regola impedisce alle macro VBA di chiamare le API Win32.
 
-Office VBA abilita le chiamate API Win32. Il malware può usare in modo improprio questa funzionalità, ad esempio chiamare le [API Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) per avviare shellcode dannosi senza scrivere nulla direttamente sul disco. La maggior parte delle organizzazioni non si basa sulla possibilità di chiamare le API Win32 nel funzionamento quotidiano, anche se usano macro in altri modi.
+Vba di Office abilita le chiamate API Win32. Il malware può usare in modo improprio questa funzionalità, ad esempio chiamare le [API Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) per avviare shellcode dannosi senza scrivere nulla direttamente sul disco. La maggior parte delle organizzazioni non si basa sulla possibilità di chiamare le API Win32 nel funzionamento quotidiano, anche se usano macro in altri modi.
 
 Questa regola è stata introdotta in:
 
-- [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
@@ -519,5 +524,3 @@ Nome Intune: `Advanced ransomware protection`
 Nome di Configuration Manager: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
-
-

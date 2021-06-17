@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7b95fc487a8ee3e82e0f215b34aa564e063534af
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5ca147c9e69168b2f15aa69bba8728567b782fa9
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772078"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984461"
 ---
 # <a name="machine-resource-type"></a>Tipo di risorsa computer
 
@@ -55,6 +55,7 @@ Metodo|Tipo restituito |Descrizione
 [Trovare computer per tag](find-machines-by-tag.md) | [raccolta computer](machine.md) | Trova i computer per [Tag](machine-tags.md).
 [Recuperare i KB mancanti](get-missing-kbs-machine.md) | Raccolta KB | Ottenere un elenco di indicatori KPI mancanti associati all'ID computer
 [Impostare un valore del dispositivo](set-device-value.md)| [raccolta computer](machine.md) | Imposta il [valore di un dispositivo](tvm-assign-device-value.md).
+[Aggiorna computer](update-machine-method.md) |[raccolta computer](machine.md) | Ottenere lo stato di aggiornamento di un computer.
 
 ## <a name="properties"></a>Proprietà
 

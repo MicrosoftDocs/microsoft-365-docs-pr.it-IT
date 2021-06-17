@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Panoramica di Viva Topics.
-ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 785fddb7c951bb6f7c170971f0af4eb7ac8f9a83
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950024"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984905"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Panoramica di Microsoft Viva Topics 
 
@@ -39,14 +39,14 @@ Viva Topics utilizza l'intelligenza artificiale per cercare e identificare autom
 
 Gli argomenti vengono visualizzati agli utenti tramite:
 
-- [Evidenziazioni degli argomenti](topic-experiences-overview.md#topic-highlights) SharePoint pagine
+- [Argomenti evidenziati](topic-experiences-overview.md#sharepoint-highlights) in SharePoint pagine
 - Risposte all'argomento nei [risultati della ricerca](topic-experiences-overview.md#search-results)
 - Ricerca nelle [applicazioni di Office](topic-experiences-overview.md#office-application-search)
 - [Home](topic-experiences-overview.md#topic-center) page del Centro argomenti
 
-### <a name="topic-highlights"></a>Highlight degli argomenti
+### <a name="sharepoint-highlights"></a>SharePoint principali
 
-Quando un argomento viene menzionato nel contenuto delle notizie e delle pagine di SharePoint, lo vedrai evidenziato. È possibile aprire il riepilogo dell'argomento dagli highlight. Apri i dettagli dell'argomento dal titolo del riepilogo per visualizzare la pagina completa dell'argomento. L'argomento menzionato potrebbe essere identificato automaticamente o potrebbe essere stato aggiunto alla pagina con un riferimento diretto all'argomento dall'autore della pagina. 
+Quando un argomento viene menzionato nel contenuto delle notizie e delle pagine di SharePoint, lo vedrai evidenziato. È possibile aprire il riepilogo dell'argomento dagli highlight. Apri i dettagli dell'argomento dal titolo del riepilogo per visualizzare la pagina completa dell'argomento. L'argomento menzionato potrebbe essere identificato automaticamente o potrebbe essere stato fatto riferimento direttamente dall'autore della pagina. 
 
    ![Screenshot che mostra le evidenziazioni degli argomenti.](../media/knowledge-management/saturn.png) 
 

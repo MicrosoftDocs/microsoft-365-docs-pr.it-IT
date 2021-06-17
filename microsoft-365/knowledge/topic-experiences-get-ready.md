@@ -1,6 +1,6 @@
 ---
-title: Prepara l'ambiente per Microsoft Viva Topics
-description: Prepara l'ambiente in modo da poter fornire il maggior numero possibile di contenuti agli utenti con Microsoft Viva Topics.
+title: Prepara l'ambiente per la Microsoft Viva Topics
+description: Prepara l'ambiente in modo da poter fornire il più contenuto possibile agli utenti con Microsoft Viva Topics.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,26 +10,26 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2db8654bf7bb1bc5ef4759c1617a84ae2153553a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917393"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984881"
 ---
-# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Prepara l'ambiente per Microsoft Viva Topics
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Prepara l'ambiente per la Microsoft Viva Topics
 
 Per ottenere il massimo da Viva Topics, è necessario includere il maggior contenuto possibile per l'individuazione degli argomenti, in modo da poter disporre di un ricco set di argomenti per gli utenti. Ma quale contenuto deve essere usato per l'individuazione degli argomenti? Come ottimizzare il contenuto indicizzato mantenendone il controllo? Maggiore è l'ambito del contenuto, maggiori sono le informazioni che l'intelligenza artificiale può scoprire. In questo articolo viene illustrata la procedura di pianificazione per assicurarsi di includere il contenuto appropriato e di disporre delle persone e delle risorse appropriate per creare un'esperienza ottimale per gli utenti.
 
 Per pianificare Viva Topics, è necessario:
 
-![Eseguire la migrazione, connettersi, modernizzare, proteggere e identificare i passaggi per l'onboarding nella gestione delle conoscenze](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![Eseguire la migrazione, connettersi, modernizzare, proteggere e identificare i passaggi per l'onboarding in Viva Topics.](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [Eseguire la migrazione del contenuto SharePoint](#1-migrate-content-to-microsoft-365)
     - L'indicizzazione degli argomenti include solo il contenuto SharePoint siti.
       - Se possibile, eseguire la migrazione di contenuti importanti in SharePoint Online da origini esterne.
       - Assegnare priorità alle origini di contenuto con un elevato potenziale di conoscenza tacita.
-      - Evidenziare i vantaggi della gestione delle conoscenze per incoraggiare gli utenti a spostare il contenuto da OneDrive a SharePoint siti.
+      - Evidenziare i vantaggi di Viva Topics per incoraggiare gli utenti a spostare il contenuto da OneDrive a SharePoint siti.
 
 2. [Connessione informazioni a Microsoft Graph](#2-connect-information-to-microsoft-graph)
     - In futuro, il contenuto esterno può essere inserito nel knowledge graph e diventare disponibile.
@@ -104,7 +104,7 @@ Una buona gestione delle autorizzazioni è fondamentale qui. Inoltre, una buona 
 
 Oltre alle autorizzazioni, è anche possibile controllare l'ambito di ciò che è individuabile tramite gli argomenti. Hai sempre il controllo di ciò che è indicizzato.
 
-Gli amministratori possono configurare l'indicizzazione nell'Microsoft 365 di amministrazione. Quando si configura [Knowledge Management,](set-up-topic-experiences.md)è possibile:
+Gli amministratori possono configurare l'indicizzazione nel Amministrazione Microsoft 365 Center. Quando si configura [Viva Topics,](set-up-topic-experiences.md)è possibile:
 
 - Consentire l'individuazione in tutti i siti di SharePoint o specificare i siti da includere o escludere come origini degli argomenti.
 - In caso di termini sensibili, è anche possibile escludere gli argomenti in base al nome. Ad esempio, se si dispone del nome di un progetto sensibile per cui è preferibile non visualizzare evidenziazioni o schede, indipendentemente dalle autorizzazioni dell'utente, è possibile escludere tale nome di progetto.
@@ -128,9 +128,9 @@ A seconda dell'organizzazione, potrebbero essere presenti poche o molte persone 
 | Configura Viva Topics | Possiede la gestione e la qualità degli argomenti | Contribuisce agli argomenti in base alle proprie competenze. |
 | Garantisce l'applicazione degli standard di sicurezza e conformità e comprende il contratto di licenza.| Esegue attività di gestione degli argomenti, ad esempio la creazione, la modifica, l'eliminazione e il rifiuto di argomenti. Supporta i collaboratori dell'argomento con le relative attività. | Cura le informazioni e il contenuto nelle pagine degli argomenti, incluse le persone e le risorse aggiunte a tale argomento. |
 
-Highlights e le schede verranno visualizzate agli utenti nel contesto del proprio lavoro, ad esempio quando esplorano le pagine moderne in SharePoint. È possibile controllare l'esperienza utente finale per gli argomenti.
+Le evidenziazioni e le schede verranno visualizzate agli utenti nel contesto del proprio lavoro, ad esempio quando esplorano le pagine moderne in SharePoint. È possibile controllare l'esperienza utente finale per gli argomenti.
 
-- Who gli argomenti? La visibilità degli argomenti è configurata Microsoft 365'interfaccia di amministrazione. Scegliere i gruppi da consentire di visualizzare gli argomenti:
+- Who gli argomenti? La visibilità degli argomenti è configurata Amministrazione Microsoft 365 Center. Scegliere i gruppi da consentire di visualizzare gli argomenti:
   - Tutte le persone nell'organizzazione. "Tutti" non include gli utenti guest, ma tutti gli utenti interni nella directory
   - Solo persone o gruppi di sicurezza selezionati (questa opzione è valida durante la distribuzione di Viva Topics, in modo da poter testare con un sottoinsieme di utenti). Se si desidera che gli utenti guest visualizzano gli argomenti, è necessario utilizzare l'opzione "Utenti o gruppi di sicurezza selezionati" e concedere loro una licenza.
   - Nessuno.

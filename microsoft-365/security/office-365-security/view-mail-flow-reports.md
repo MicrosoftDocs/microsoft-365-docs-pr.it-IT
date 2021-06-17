@@ -19,12 +19,12 @@ description: Gli amministratori possono ottenere informazioni sui report del flu
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245673"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985505"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visualizzare i report del flusso di posta nel dashboard report nel Centro sicurezza & conformità
 
@@ -35,7 +35,7 @@ ms.locfileid: "52245673"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Oltre ai report del flusso di posta disponibili nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza e conformità di &, nel dashboard report sono disponibili diversi report aggiuntivi sul flusso di posta che consentono di monitorare l'organizzazione di Microsoft 365.
+Oltre ai report del flusso di posta disponibili nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza e conformità di &, nel dashboard report sono disponibili diversi report aggiuntivi sul flusso di posta per monitorare l'organizzazione di Microsoft 365.
 
 Se si dispone delle [autorizzazioni necessarie,](#what-permissions-are-needed-to-view-these-reports)è possibile visualizzare questi report nel Centro [sicurezza & conformità](https://protection.office.com) andando a Dashboard  \> **report.** Per passare direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
 
@@ -95,29 +95,29 @@ Se si fa **clic su Filtri** in una visualizzazione tabella dei dettagli, è poss
 
 Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
-## <a name="exchange-transport-rule-report"></a>Exchange delle regole di trasporto
+## <a name="exchange-transport-rule-report"></a>Report delle regole di trasporto di Exchange
 
-Il Exchange delle **regole** di trasporto mostra l'effetto delle regole del flusso di posta (note anche come regole di trasporto) sui messaggi in arrivo e in uscita nell'organizzazione.
+Il **rapporto sulle regole di trasporto** di Exchange mostra l'effetto delle regole del flusso di posta (note anche come regole di trasporto) sui messaggi in arrivo e in uscita nell'organizzazione.
 
-Per visualizzare il report, aprire il Centro [sicurezza & conformità,](https://protection.office.com)passare a Dashboard report e selezionare Exchange  \>  Regola di **trasporto**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare **a** \> **Dashboard report** e selezionare **Regola di trasporto di Exchange.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
-![Exchange della regola di trasporto nel dashboard report](../../media/transport-rule-report-widget.png)
+![Widget delle regole di trasporto di Exchange nel dashboard dei report](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Visualizzazione report per il report Exchange regola di trasporto
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Visualizzazione dei report per il report delle regole di trasporto di Exchange
 
 Nella visualizzazione report sono disponibili i grafici seguenti:
 
-- **Visualizzare i dati per: Exchange di trasporto** \> **Scomporsi per: Direzione**: questo grafico  mostra il numero di **messaggi in** ingresso e in uscita interessati dalle regole di trasporto.
+- **Visualizzare i dati per: regole di trasporto di Exchange** \> **Scomporsi per: Direzione**: questo grafico  mostra il numero di **messaggi in** ingresso e in uscita interessati dalle regole di trasporto.
 
-- **Visualizzare i dati per: Exchange di trasporto** \> **Scomporsi per: Gravità**: questo grafico mostra il numero **di** messaggi Di gravità elevata e Gravità media e **Gravità** bassa. Il livello di gravità viene impostato come azione nella regola **(** Controlla questa regola con livello di gravità o _SetAuditSeverity_). Per ulteriori informazioni, vedere [Mail flow rule actions in Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **Visualizzare i dati per: regole di trasporto di Exchange** \> **Scomporsi per: Gravità**: questo grafico mostra il numero **di** messaggi Di gravità elevata e Gravità media e **Gravità** bassa. Il livello di gravità viene impostato come azione nella regola **(** Controlla questa regola con livello di gravità o _SetAuditSeverity_). Per ulteriori informazioni, vedere [Mail flow rule actions in Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Visualizzare i dati in base a: DLP Exchange trasporto** \> **Scomporsi per: Direzione**: questo grafico  mostra il numero di messaggi **in** ingresso e in uscita interessati dalle regole di trasporto dlp (Data Loss Prevention). È possibile perfezionare ulteriormente il grafico selezionando una delle opzioni seguenti:
+- **Visualizzare i dati per: regole di trasporto** \> di Exchange DLP **Scomporsi per: Direzione**: questo grafico  mostra il numero di messaggi **in** ingresso e in uscita interessati dalle regole di trasporto dlp (Data Loss Prevention). È possibile perfezionare ulteriormente il grafico selezionando una delle opzioni seguenti:
 
   - **Mostra dati per: Tutte le regole di trasporto DLP**
   - **Mostra dati per: utenti compromessi**
   - **Mostra dati per: Basso volume di contenuto rilevato U.S. Patriot Act**
 
-- **Visualizzare i dati in base a: DLP Exchange trasporto** \> **Scomporsi per: Direzione**:  questa visualizzazione mostra il numero  di messaggi di gravità alta e media **e** di gravità bassa interessati dalle regole di trasporto DLP. È possibile perfezionare ulteriormente il grafico selezionando una delle opzioni seguenti:
+- **Visualizzare i dati per: regole di trasporto** \> di Exchange DLP **Scomporsi per: Direzione**:  questa visualizzazione mostra il numero  di messaggi di gravità alta e media **e** di gravità bassa interessati dalle regole di trasporto DLP. È possibile perfezionare ulteriormente il grafico selezionando una delle opzioni seguenti:
 
   - **Mostra dati per: Tutte le regole di trasporto DLP**
   - **Mostra dati per: utenti compromessi**
@@ -129,13 +129,13 @@ Se si fa **clic su Filtri** in una visualizzazione report, è possibile modifica
 - Valori di direzione
 - Valori di gravità
 
-![Visualizzazione report nel report delle regole Exchange trasporto](../../media/transport-rule-report-report-view.png)
+![Visualizzazione dei report nel report delle regole di trasporto di Exchange](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Visualizzazione tabella dettagli per il report Exchange regole di trasporto
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Visualizzazione tabella dettagli per il report sulle regole di trasporto di Exchange
 
 Se si fa **clic su Visualizza tabella** dettagli , le informazioni visualizzate dipendono dal grafico visualizzato:
 
-- **Visualizzare i dati per: Exchange di trasporto**:
+- **Visualizzare i dati per: Regole di trasporto di Exchange**:
 
   - **Data**
   - **Regola di trasporto**
@@ -145,7 +145,7 @@ Se si fa **clic su Visualizza tabella** dettagli , le informazioni visualizzate 
   - **Gravità**
   - **Direzione**
 
-- **Visualizzare i dati per: DLP Exchange di trasporto**:
+- **Visualizzare i dati per: regole di trasporto di Exchange DLP**:
 
   - **Data**
   - **Criterio DLP**
@@ -166,7 +166,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
 ## <a name="forwarding-report"></a>Rapporto di inoltro
 
-Il **rapporto Inoltro mostra** i messaggi inoltrati automaticamente dall'organizzazione a domini esterni da Exchange Online cassette postali. I messaggi inoltrati possono rappresentare un rischio per la sicurezza o la conformità e possono indicare un account compromesso.
+Il **rapporto Inoltro mostra** i messaggi inoltrati automaticamente dall'organizzazione ai domini esterni dalle cassette postali di Exchange Online. I messaggi inoltrati possono rappresentare un rischio per la sicurezza o la conformità e possono indicare un account compromesso.
 
 Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard report  \>  e selezionare Report **di inoltro.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -339,8 +339,8 @@ La tabella dei dati contiene le informazioni seguenti, visualizzate in ordine di
   - **Rappresentazione utente**: messaggi filtrati a causa di un tentativo di rappresentazione di un utente (mittente del messaggio) definito nelle impostazioni di protezione della rappresentazione di un criterio anti-phishing.
   - **Rappresentazione di dominio**: messaggi filtrati a causa di un tentativo di rappresentare un dominio definito nelle impostazioni di protezione della rappresentazione di un criterio anti-phishing.
 - **Detonazione di file e URL (Defender per Office 365)**:
-  - **Detonazione file:** messaggi filtrati in base a un criterio Allegati sicuri.
-  - **Detonazione URL:** messaggio filtrato in base a un criterio collegamenti sicuri.
+  - **Detonazione file:** messaggi filtrati da un criterio Safe allegati.
+  - **Detonazione URL:** messaggio filtrato in base a un Safe dei collegamenti.
 - **Protezione post-recapito e ZAP (ATP) o ZAP (EOP):** ZAP indica l'eliminazione automatica a zero ore.
 
 Se si seleziona una riga nella tabella dati, nel riquadro a comparsa viene visualizzata un'ulteriore suddivisione dei conteggi dei messaggi di posta elettronica.
@@ -380,11 +380,11 @@ Questo grafico mostra i messaggi organizzati nelle categorie seguenti:
 
 - **Totale posta elettronica**
 - **Edge allow** e **Edge filtered**
-- **Non malware,** **Rilevamento allegati sicuri,** <sup>\*</sup> Rilevamento motore **antimalware** e **Messaggi delle regole**
+- **Non malware,** **Safe allegati,** <sup>\*</sup> **rilevamento motore antimalware** e **messaggi di regola**
 - **Not phish,** **DMARC failure,** **Impersonation detection,** **Spoof detection** e **Phish detection**
 - **Nessun rilevamento con detonazione URL e** **rilevamento detonazione URL**<sup>\*</sup>
 - **Non posta indesiderata** e  **posta indesiderata**
-- **Posta elettronica non dannosa,** **rilevamento collegamenti sicuri** e <sup>\*</sup> **ZAP**
+- **Posta elettronica non dannosa,** **rilevamento Safe** <sup>\*</sup> collegamenti e **ZAP**
 
 <sup>\*</sup>Defender per Office 365
 
@@ -395,14 +395,14 @@ La tabella dei dati contiene le informazioni seguenti, visualizzate in ordine di
 - **Data**
 - **Totale posta elettronica**
 - **Edge filtrato**
-- **Motore antimalware, Allegati sicuri, regola filtrata:**
+- **Motore antimalware, Safe allegati, regola filtrata:**
   - **Regola filtrata**: Messaggi filtrati a causa delle regole del flusso di posta (note anche come regole di trasporto).
 - **DMARC, rappresentazione, spoofing, phish filtrato**:
   - **DMARC**: Messaggi filtrati a causa dell'errore del messaggio nel controllo di autenticazione DMARC.
 - **Rilevamento detonazione URL**
 - **Protezione da posta indesiderata filtrata**
 - **ZAP rimosso**
-- **Rilevamento tramite collegamenti sicuri**
+- **Rilevamento da Safe collegamenti**
 
 Se si seleziona una riga nella tabella dati, nel riquadro a comparsa viene visualizzata un'ulteriore suddivisione dei conteggi dei messaggi di posta elettronica.
 
@@ -450,7 +450,7 @@ Nella visualizzazione report sono disponibili i grafici seguenti:
 
   ![Visualizzazione della direzione nel report Posta inviata e ricevuta](../../media/sent-and-received-email-report-direction-view.png)
 
-- **Drill-down per** \> **Malware (antimalware):** questa selezione consente di accedere ai rilevamenti [di malware nel report di posta elettronica.](view-email-security-reports.md#malware-detections-in-email-report)
+- **Drill-down per** \> **Malware (antimalware):** questa selezione consente di accedere al [report Rilevamenti malware.](view-email-security-reports.md#malware-detections-report)
 
 - **Drill-down per** \> **Rilevamenti posta indesiderata):** questa selezione consente di accedere al [report Rilevamenti posta indesiderata.](view-email-security-reports.md#spam-detections-report)
 

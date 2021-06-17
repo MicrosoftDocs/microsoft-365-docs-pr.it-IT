@@ -14,17 +14,16 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a5fa8e46de0a6561d3377ce77e38bd59aa97f3c4
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861221"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984725"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Valutare le regole per la riduzione della superficie di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Si applica a:**
 
@@ -33,7 +32,7 @@ ms.locfileid: "52861221"
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Le regole di riduzione della superficie di attacco consentono di impedire le azioni in genere utilizzate dal malware per compromettere dispositivi o reti. Le regole di riduzione della superficie di attacco consentono di chiudere molti dei punti di ingresso comuni utilizzati da malware e ransomware. 
+Le regole di riduzione della superficie di attacco consentono di impedire le azioni in genere utilizzate dal malware per compromettere dispositivi o reti. Le regole di riduzione della superficie di attacco consentono di chiudere molti dei punti di ingresso comuni utilizzati da malware e ransomware.
 
 Impostare le regole di riduzione della superficie di attacco per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
 
@@ -45,7 +44,7 @@ Impostare le regole di riduzione della superficie di attacco per i dispositivi c
 > [!WARNING]
 > L'abilitazione delle regole di riduzione del servizio di Windows Server 2016 può causare risultati imprevisti e influire sulle prestazioni del server. Non è consigliabile abilitare o distribuire regole di riduzione della superficie di attacco su piattaforme non supportate.
 
-Scopri come valutare le regole di riduzione della superficie di attacco abilitando la modalità di controllo per testare la funzionalità direttamente nell'organizzazione.
+Scopri come valutare le regole di riduzione della superficie di attacco [abilitando](audit-windows-defender.md) la modalità di controllo per testare la funzionalità direttamente nell'organizzazione.
 
 > [!TIP]
 > Puoi anche visitare il sito Web dello scenario demo di Microsoft Defender per Endpoint [all'indirizzo demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) per verificare che la funzionalità funzioni e vedere come funziona.
@@ -91,6 +90,6 @@ Vedi [Personalizzare le regole di riduzione della superficie](customize-attack-s
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Ridurre le superfici di attacco con le regole di riduzione della superficie di attacco](attack-surface-reduction.md)
-* [Usare la modalità di controllo per valutare Windows Defender](audit-windows-defender.md)
-* [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction.md)
+- [Ridurre le superfici di attacco con le regole di riduzione della superficie di attacco](attack-surface-reduction.md)
+- [Usare la modalità di controllo per valutare Windows Defender](audit-windows-defender.md)
+- [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction.md)

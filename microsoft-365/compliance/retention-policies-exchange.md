@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per Exchange.
-ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861132"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985433"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Informazioni sulla conservazione per Exchange
 
@@ -34,7 +34,7 @@ Questo articolo integra [Informazioni sulla conservazione](retention.md) con inf
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
 
-Usando i criteri di conservazione e le etichette di conservazione è possibile mantenere ed eliminare gli elementi di Exchange seguenti: messaggi di posta elettronica, incluse le bozze, con gli allegati, note e attività che hanno una data di fine. 
+Usando i criteri di conservazione e le etichette di conservazione è possibile mantenere ed eliminare gli elementi di Exchange dalle cassette postali condivise e degli utenti seguenti: messaggi di posta elettronica (inclusi i messaggi ricevuti, le bozze e i messaggi inviati) con allegati, note e attività che hanno una data di fine. 
 
 Gli elementi del calendario con una data di fine sono supportati per i criteri di conservazione, ma non per le etichette di conservazione.
 

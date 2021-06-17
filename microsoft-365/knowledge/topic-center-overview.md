@@ -1,6 +1,5 @@
 ---
 title: Panoramica del Centro argomenti in Microsoft Viva Topics
-description: Informazioni sul Centro argomenti in Microsoft Viva Topics.
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
@@ -14,16 +13,17 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+description: Informazioni sul Centro argomenti in Microsoft Viva Topics.
+ms.openlocfilehash: f782be90e6cd6fa12e57df87ebb1057e58bdca19
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583593"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984929"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Panoramica del Centro argomenti in Microsoft Viva Topics
 
-In Microsoft Viva Topics, il centro argomenti è un sito SharePoint moderno che funge da centro di conoscenza per l'organizzazione. Viene creato durante [l'installazione di Viva Topics](set-up-topic-experiences.md) nell'Microsoft 365 di amministrazione.
+In Microsoft Viva Topics, il centro argomenti è un sito SharePoint moderno che funge da centro di conoscenza per l'organizzazione. Viene creato durante [l'installazione di Viva Topics](set-up-topic-experiences.md) nella interfaccia di amministrazione di Microsoft 365.
 
 Il Centro argomenti ha una home page predefinita con la **web** part Argomenti in cui tutti gli utenti con licenza possono visualizzare gli argomenti a cui hanno una connessione. 
 
@@ -34,7 +34,7 @@ Mentre tutti gli utenti con licenza che possono visualizzare gli argomenti avran
 Il centro argomenti viene creato durante l'installazione di Viva Topics. Al termine dell'installazione, un amministratore può trovare l'URL nella [pagina Gestione centro argomenti.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
-1. Nell'Microsoft 365 di amministrazione selezionare **Impostazioni** e quindi selezionare **Impostazioni organizzazione.**
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 selezionare **Impostazioni** e quindi selezionare **Impostazioni organizzazione.**
 2. Nella scheda **Servizi** selezionare **Esperienze argomento.**
 
     ![Connessione persone alla conoscenza](../media/admin-org-knowledge-options-completed.png) 
@@ -69,7 +69,7 @@ Dopo aver confermato la connessione a un argomento, l'utente può apportare modi
 
 ## <a name="manage-topics-page"></a>Pagina Gestisci argomenti
 
-Per utilizzare la pagina **Gestisci argomenti** del Centro argomenti, è necessario disporre delle autorizzazioni necessarie per gestire gli argomenti necessarie per il ruolo di knowledge manager. L'amministratore può assegnare [](set-up-topic-experiences.md)queste autorizzazioni agli utenti durante [](topic-experiences-knowledge-rules.md) l'installazione della gestione delle conoscenze oppure i nuovi utenti possono essere aggiunti successivamente da un amministratore tramite l'interfaccia Microsoft 365 di amministrazione.
+Per utilizzare la pagina **Gestisci argomenti** del Centro argomenti, è necessario disporre delle autorizzazioni necessarie per gestire gli argomenti necessarie per il ruolo di knowledge manager. L'amministratore può assegnare queste autorizzazioni agli utenti durante [](topic-experiences-knowledge-rules.md) l'installazione di [Viva Topics](set-up-topic-experiences.md)oppure i nuovi utenti possono essere aggiunti successivamente da un amministratore tramite il interfaccia di amministrazione di Microsoft 365.
 
 Nella pagina **Gestisci argomenti,** il dashboard degli argomenti mostra tutti gli argomenti a cui si ha accesso, identificati dalle posizioni di origine specificate. In ogni argomento verrà mostrata la data in cui l'argomento è stato individuato. Un utente a cui sono state assegnate le autorizzazioni Gestione argomenti può esaminare gli argomenti non confermati e scegliere di:
 
