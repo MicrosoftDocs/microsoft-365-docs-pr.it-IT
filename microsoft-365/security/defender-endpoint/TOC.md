@@ -32,18 +32,8 @@
 #### [Fase 1: preparazione](switch-to-microsoft-defender-prepare.md)
 #### [Fase 2: configurazione](switch-to-microsoft-defender-setup.md)
 #### [Fase 3: onboarding](switch-to-microsoft-defender-onboard.md)
-### [Passare da McAfee a Microsoft Defender per endpoint]()
-#### [Panoramica della migrazione](mcafee-to-microsoft-defender-migration.md)
-#### [Fase 1: preparazione](mcafee-to-microsoft-defender-prepare.md) 
-#### [Fase 2: configurazione](mcafee-to-microsoft-defender-setup.md)
-#### [Fase 3: onboarding](mcafee-to-microsoft-defender-onboard.md)
-### [Passare da Symantec a Microsoft Defender per endpoint]()
-#### [Panoramica della migrazione](symantec-to-microsoft-defender-endpoint-migration.md)
-#### [Fase 1: preparazione](symantec-to-microsoft-defender-atp-prepare.md)
-#### [Fase 2: configurazione](symantec-to-microsoft-defender-atp-setup.md)
-#### [Fase 3: onboarding](symantec-to-microsoft-defender-atp-onboard.md)
-### [Gestire Microsoft Defender for Endpoint dopo la migrazione]()
-#### [Panoramica gestione di Microsoft Defender per Endpoint](manage-atp-post-migration.md)
+### [Gestire Defender for Endpoint dopo la migrazione]()
+#### [Panoramica gestione di Defender per Endpoint](manage-atp-post-migration.md)
 #### [Intune (consigliato)](manage-atp-post-migration-intune.md)
 #### [Configuration Manager](manage-atp-post-migration-configuration-manager.md)
 #### [Oggetti Criteri di gruppo (GPO)](manage-atp-post-migration-group-policy-objects.md)
@@ -52,7 +42,7 @@
 
 ## [Configurare ed aggiungere dispositivi]()
 ### [Microsoft Defender per Endpoint su Windows e Server Windows]()
-#### [Aggiungere dispositivi a Microsoft Defender for Endpoint](onboard-configure.md)
+#### [Aggiungere dispositivi a Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Aggiungere versioni precedenti di Windows](onboard-downlevel.md)
 #### [Aggiungere di dispositivi Windows 10]()
 ##### [Aggiungere strumenti e metodi](configure-endpoints.md)
@@ -465,7 +455,7 @@
 #### [Note sulla versione dell'API](api-release-notes.md)
 #### [API Microsoft Defender per endpointI]()
 ##### [Introduzione]()
-###### [Licenza e termini per API di Microsoft Defender for Endpoint](api-terms-of-use.md)
+###### [Licenza e termini per API di Microsoft Defender for Endpoint](api-terms-of-use.md)
 ###### [Accedere a API di Microsoft Defender per endpoint](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Ottenere l'accesso con il contesto delle applicazioni](exposed-apis-create-app-webapp.md)
@@ -473,7 +463,7 @@
 ###### [Ottenere l'accesso alle applicazioni partner](exposed-apis-create-app-partners.md)
 
 
-##### [Schema API Microsoft Defender per Endpoint]()
+##### [Schema API Microsoft Defender per Endpoint]()
 ###### [Accedere a API di Microsoft Defender per endpoint](exposed-apis-list.md)
 ###### [Codici di errore API REST comuni](common-errors.md)
 ###### [Rilevazione avanzata](run-advanced-query-api.md)
@@ -619,7 +609,7 @@
 ##### [Informazioni sui diversi modi per eseguire il pull dei rilevamenti](configure-siem.md)
 ##### [Abilitare integrazione SIEM](enable-siem-integration.md)
 ##### [Configurare Micro Focus ArcSight per il pull dei rilevamenti](configure-arcsight.md)
-##### [Campi di rilevamento di Microsoft Defender for Endpoint ](api-portal-mapping.md)
+##### [Campi di rilevamento di Microsoft Defender for Endpoint ](api-portal-mapping.md)
 ##### [Pull dei rilevamenti con l'API REST SIEM](pull-alerts-using-rest-api.md)
 ##### [Recuperare gli avvisi dal tenant del cliente](fetch-alerts-mssp.md)
 ##### [Risolvere i problemi di integrazione degli strumenti SIEM](troubleshoot-siem.md)
@@ -650,14 +640,14 @@
 #### [Diventare un partner di Microsoft Defender per endpoint](get-started-partner-integration.md)
 
 ### [Integrazioni]()
-#### [Integrazioni Microsoft Defender for Endpoint](threat-protection-integration.md)
+#### [Integrazioni Microsoft Defender for Endpoint](threat-protection-integration.md)
 #### [Proteggere utenti, dati e dispositivi con l'accesso condizionale](conditional-access.md)
 #### [Panoramica integrazione di Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)
 
 ### [Panoramica di protezione delle informazioni in Windows]()
 #### [Integrazione di Windows](information-protection-in-windows-overview.md)
 
-### [Accedere a Microsoft Defender for Endpoint Community Center](community.md)
+### [Accedere a Microsoft Defender for Endpoint Community Center](community.md)
 
 ### [Risorse utili](helpful-resources.md)
 

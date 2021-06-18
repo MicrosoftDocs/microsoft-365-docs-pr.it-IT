@@ -1,11 +1,11 @@
 - name: Conformità Microsoft 365
   href: index.yml
+- name: Novità sulla conformità Microsoft 365
+  href: whats-new.md
 - name: Per iniziare
   items:
     - name: Attività rapide per iniziare con la conformità
       href: compliance-quick-tasks.md
-    - name: Novità sulla conformità Microsoft 365
-      href: whats-new.md
     - name: Catalogo delle soluzioni Microsoft 365
       href: microsoft-365-solution-catalog.md
     - name: Centro conformità Microsoft 365
