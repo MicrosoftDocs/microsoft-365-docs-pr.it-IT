@@ -530,6 +530,8 @@
 ####### [Trovare computer per tag](find-machines-by-tag.md)
 ####### [Recuperare i KB mancanti](get-missing-kbs-machine.md)
 ####### [Impostare un valore del dispositivo](set-device-value.md)
+####### [Aggiornare computer](update-machine-method.md)
+
 
 
 ###### [Azione computer]()
