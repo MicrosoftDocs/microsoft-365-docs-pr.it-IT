@@ -1,5 +1,5 @@
 ---
-title: Creare notifiche per attività di corrispondenza esatta dei dati (anteprima)
+title: Creare notifiche per attività di corrispondenza esatta dei dati
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Informazioni su come creare notifiche per le attività di corrispondenza esatta dei dati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919362"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007562"
 ---
-# <a name="create-notifications-for-exact-data-match-activities-preview"></a>Creare notifiche per attività di corrispondenza esatta dei dati (anteprima)
+# <a name="create-notifications-for-exact-data-match-activities"></a>Creare notifiche per attività di corrispondenza esatta dei dati
 
 Quando si [creano tipi di informazioni sensibili personalizzate con corrispondenza esatta dei dati (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) nel [log di audit](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log) vengono create diverse attività. È possibile usare il cmdlet [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) di PowerShell per creare notifiche che consentono di sapere quando si verificano queste attività:
 
@@ -33,9 +33,6 @@ Quando si [creano tipi di informazioni sensibili personalizzate con corrisponden
 - RemoveSchema
 - UploadDataFailed
 - UploadDataCompleted
-
-> [!NOTE]
-> La possibilità di creare notifiche per le attività EDM è disponibile solo per i cloud World Wide e GCC.
 
 ## <a name="pre-requisites"></a>Prerequisiti
 

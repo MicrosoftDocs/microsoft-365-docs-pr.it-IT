@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Informazioni su come modificare il tema predefinito per la parte superiore della barra di spostamento in Microsoft 365 e personalizzarlo in base al logo o al colore della società.
-ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998801"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006914"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
@@ -70,7 +70,7 @@ Il tema predefinito è il primo tema visualizzato.
 
 Puoi creare fino a quattro temi di gruppo aggiuntivi.
 
-1. Nella pagina **Generale** immettere un nome per il tema.
+1. Nella pagina **Generale** immettere un nome per il nuovo tema.
 
 2. In **Gruppi** puoi selezionare fino a 5 Microsoft 365 che possono visualizzare il tema del gruppo, anziché usare il tema predefinito. Puoi anche impedire agli utenti di ignorare il tema e mostrare il nome visualizzato dell'utente.
 

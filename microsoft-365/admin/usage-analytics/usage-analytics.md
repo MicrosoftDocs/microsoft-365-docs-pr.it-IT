@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Ottieni una panoramica del modo in cui l'organizzazione adotta Microsoft 365 servizi per comunicare e collaborare.
-ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635391"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007166"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analisi di utilizzo di Microsoft 365
 
@@ -68,7 +68,7 @@ Il Microsoft 365 di panoramica contiene i report seguenti. È possibile visualiz
 
 La pagina di attivazione e licenza offre report sull Microsoft 365 appliczione; cio? quanti utenti hanno scaricato e attivato Office app e quante licenze sono state assegnate dall'organizzazione. Il valore del mese verso la parte superiore si riferisce al mese corrente e le metriche riflettono i valori aggregati dall'inizio del mese alla data corrente.
 
-- **Attivazione** &ndash; Tenere traccia delle attivazioni del piano di servizio (ad esempio, Microsoft 365 Apps for enterprise, Project e Visio) nell'organizzazione. Ogni persona con una licenza di Office può installare prodotti in un totale di cinque dispositivi. Puoi anche usare i report in questa sezione per visualizzare i dispositivi in cui gli utenti hanno installato Office app. Tieni presente che per attivare un piano, un utente deve installare l'app e accedere con il proprio account.
+- **Attivazione** &ndash; Tenere traccia delle attivazioni del piano di servizio (ad esempio, App Microsoft 365 per grandi imprese, Project e Visio) nell'organizzazione. Ogni persona con una licenza di Office può installare prodotti in un totale di cinque dispositivi. Puoi anche usare i report in questa sezione per visualizzare i dispositivi in cui gli utenti hanno installato Office app. Tieni presente che per attivare un piano, un utente deve installare l'app e accedere con il proprio account.
 
 - **Licenze** &ndash; Questo report contiene una panoramica dei tipi di licenza, del numero di utenti a cui è stato assegnato ogni tipo di licenza e della distribuzione dell'assegnazione delle licenze per ogni mese. Il valore del mese verso la parte superiore si riferisce al mese corrente e le metriche riflettono i valori aggregati dall'inizio del mese alla data corrente.
 
@@ -105,7 +105,7 @@ Oltre a personalizzare i report dall'interfaccia Web di Power BI, gli utenti pos
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>Come si può ottenere il file pbit a cui è associata questa dashboard?
 
-È possibile accedere al file pbit [dall'Area download Microsoft.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)
+È possibile accedere al file pbit [dall'Area download Microsoft.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) 
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>Who visualizzare i dashboard e i report?
 
@@ -129,7 +129,7 @@ I dati nell'app modello attualmente riguardano lo stesso set di metriche di atti
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>In che modo i dati nell'app modello sono diversi dai dati nei report di utilizzo?
 
-I dati sottostanti visualizzati nell'app modello corrispondono ai dati visualizzati nei report attività nell'Microsoft 365 di amministrazione. Le differenze principali sono che nei dati dell'interfaccia di amministrazione sono disponibili per gli ultimi 7/30/90/180 giorni, mentre l'app modello presenta i dati su base mensile per un massimo di 12 mesi.
+I dati sottostanti visualizzati nell'app modello corrispondono ai dati visualizzati nei report attività nell'interfaccia di amministrazione di Microsoft 365. Le differenze principali sono che nei dati dell'interfaccia di amministrazione sono disponibili per gli ultimi 7/30/90/180 giorni, mentre l'app modello presenta i dati su base mensile per un massimo di 12 mesi.
 
 Inoltre, i dettagli a livello utente nell'app modello sono disponibili solo per l'ultimo mese completo per gli utenti a cui è stata assegnata una licenza di prodotto ed eseguito un'attività.
 

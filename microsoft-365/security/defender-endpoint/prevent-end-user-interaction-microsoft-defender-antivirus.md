@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 06ee2f1cb68df0a957818e1fccb45628487c39fd
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ff0e134d38288b12cbc46dc3ca5f103fbf8c7ad9
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274917"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007680"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedire agli utenti di visualizzare o interagire con l'Antivirus Microsoft Defender utente
 
@@ -40,18 +40,18 @@ In Windows 10 versione 1703 nascondere l'interfaccia nasconderà le notifiche An
 
 Con l'impostazione impostata su **Abilitato**:
 
-![Screenshot di Sicurezza di Windows senza l'icona scudo e la sezione protezione da virus e minacce](images/defender/wdav-headless-mode-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Sicurezza di Windows senza l'icona scudo e la sezione protezione da virus e minacce":::
 
 Con l'impostazione impostata **su Disabilitato** o non configurata:
 
-![Screenshot del Sicurezza di Windows che mostra l'icona scudo e la sezione protezione da virus e minacce](images/defender/wdav-headless-mode-off-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Screenshot dell'Sicurezza di Windows con l'icona scudo e le sezioni di protezione dalle minacce":::
 
 >[!NOTE]
 >Nascondere l'interfaccia impedirà inoltre Antivirus Microsoft Defender notifiche sull'endpoint. Verranno comunque visualizzate le notifiche di Microsoft Defender for Endpoint. Puoi anche configurare [singolarmente le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md)
 
 Nelle versioni precedenti di Windows 10, l'impostazione nasconde l'Windows Defender client. Se l'utente tenta di aprirla, riceverà un avviso che indica che l'amministratore di sistema ha limitato l'accesso a questa app.
 
-![Messaggio di avviso quando la modalità headless è abilitata in Windows 10, versioni precedenti alla 1703](images/defender/wdav-headless-mode-1607.png)
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Messaggio di avviso quando la modalità headless è abilitata in Windows 10, versioni precedenti alla 1703":::
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>Usare Criteri di gruppo per nascondere l'interfaccia di Microsoft Defender AV agli utenti
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 18d6079141d7fe0cd5b4c7187f51e5fa7079b844
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: ab9f52e2e8376f20bb56aa4389bdaa417826eca1
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998753"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007358"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -61,8 +61,8 @@ A seconda della struttura del team di gestione della conformità, è possibile a
 
 | **Gruppo di ruolo** | **Autorizzazioni del ruolo** |
 | :------------- | :------------------- |
-| **Insider Risk Management** | Usare questo gruppo di ruoli per la gestione dei rischi Insider per la propria organizzazione in un unico gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e revisori designati, è possibile configurare le autorizzazioni di gestione dei rischi insider in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione per la gestione dei rischi insider e le autorizzazioni associate. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la gestione dei rischi insider ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi distinti di utenti. Quando si utilizza questa configurazione, è consigliabile assicurarsi di avere sempre almeno un utente assegnato a questo ruolo per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri.|
-| **Insider Risk Management Admin** | Utilizzare questo gruppo di ruoli per configurare inizialmente la gestione dei rischi insider e successivamente per separare gli amministratori dei rischi insider in un gruppo definito. Gli utenti di questo gruppo di ruoli possono abilitare e visualizzare informazioni analitiche e creare, leggere, aggiornare ed eliminare criteri di gestione dei rischi insider, impostazioni globali e assegnazioni di gruppi di ruoli. Quando si utilizza questa configurazione, è consigliabile assicurarsi di avere sempre almeno un utente assegnato a questo ruolo per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri. |
+| **Insider Risk Management** | Usare questo gruppo di ruoli per la gestione dei rischi Insider per la propria organizzazione in un unico gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e revisori designati, è possibile configurare le autorizzazioni di gestione dei rischi insider in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione per la gestione dei rischi insider e le autorizzazioni associate. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la gestione dei rischi insider ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi distinti di utenti. Quando si utilizza questa configurazione, è necessario assicurarsi di avere sempre almeno un utente assegnato a questo gruppo di ruoli per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare i criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri.|
+| **Insider Risk Management Admin** | Utilizzare questo gruppo di ruoli per configurare inizialmente la gestione dei rischi insider e successivamente per separare gli amministratori dei rischi insider in un gruppo definito. Gli utenti di questo gruppo di ruoli possono abilitare e visualizzare informazioni analitiche e creare, leggere, aggiornare ed eliminare criteri di gestione dei rischi insider, impostazioni globali e assegnazioni di gruppi di ruoli. Quando si utilizza questa configurazione, è necessario assicurarsi di avere sempre almeno un utente assegnato a questo gruppo di ruoli per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare i criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri. |
 | **Analisti gestione dei rischi Insider** | Usare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di casi di rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere e visualizzare tutti gli avvisi, i casi, le informazioni analitiche e i modelli di avvisi per la gestione dei rischi insider. Non possono accedere a Esplora contenuto a rischio insider. |
 | **Investigatori gestione dei rischi Insider** | Usare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da investigatori dei dati relativi al rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere a tutti gli avvisi di gestione dei rischi insider, i casi, i modelli di avviso e Esplora contenuto per tutti i casi. |
 | **Revisori della gestione dei rischi insider** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che controllano le attività di gestione dei rischi insider. Gli utenti di questo gruppo di ruoli possono accedere al log di controllo dei rischi insider. |

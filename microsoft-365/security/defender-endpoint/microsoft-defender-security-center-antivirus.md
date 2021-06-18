@@ -15,17 +15,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926536"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007448"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender nell'app Sicurezza di Windows app
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Si applica a:**
 
@@ -48,7 +45,7 @@ L Sicurezza di Windows app è un'interfaccia client Windows 10 versione 1703 e s
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Esaminare le impostazioni di protezione da virus e minacce nell Sicurezza di Windows app
 
-![Screenshot dell'etichetta Impostazioni di Protezione da virus e minacce nell'app Sicurezza di Windows](images/defender/wdav-protection-settings-wdsc.png)
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Impostazioni di protezione da virus e minacce nell Sicurezza di Windows app":::
 
 1. Apri l Sicurezza di Windows app facendo clic sull'icona scudo nella barra delle applicazioni o cercando Defender nel menu **Start.**
 
@@ -69,7 +66,7 @@ Le sezioni seguenti descrivono come eseguire alcune delle attività più comuni 
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>Esaminare la versione dell'aggiornamento della sicurezza intelligence e scaricare gli aggiornamenti più recenti nell'app Sicurezza di Windows sicurezza
 
-![Informazioni sul numero di versione dell'intelligence per la sicurezza](images/defender/wdav-wdsc-defs.png)
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Numero di versione dell'intelligence per la sicurezza":::
 
 1. Apri l Sicurezza di Windows app cercando Sicurezza nel menu Start *e* quindi selezionando **Sicurezza di Windows**.
 

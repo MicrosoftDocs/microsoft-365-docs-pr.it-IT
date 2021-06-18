@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/28/2020
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ec3dd2edc09d504af0ed76b17577130b1cdce1b7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bc7c84e089b08c440512f8a8bf7583f41394f2ca
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275373"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007644"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Esaminare Antivirus Microsoft Defender risultati dell'analisi
 
@@ -47,7 +47,7 @@ Il cmdlet seguente restituirà ogni rilevamento nell'endpoint. Se sono presenti 
 Get-MpThreatDetection
 ```
 
-![Screenshot of PowerShell cmdlets and outputs](images/defender/wdav-get-mpthreatdetection.png)
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Screenshot of PowerShell cmdlets and outputs":::
 
 È possibile specificare `-ThreatID` di limitare l'output in modo da visualizzare solo i rilevamenti per una minaccia specifica.
 
@@ -57,7 +57,7 @@ Se si desidera elencare i rilevamenti delle minacce, ma combinare i rilevamenti 
 Get-MpThreat
 ```
 
-![screenshot di PowerShell](images/defender/wdav-get-mpthreat.png)
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Codice di PowerShell":::
 
 Per ulteriori informazioni su come usare PowerShell con Antivirus Microsoft Defender, vedere Use [PowerShell cmdlets to configure](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Antivirus Microsoft Defender run Antivirus Microsoft Defender and [Defender cmdlets.](/powershell/module/defender/)
 

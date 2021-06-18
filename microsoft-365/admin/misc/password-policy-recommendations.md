@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Rendere più sicura l'organizzazione da attacchi alle password, bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635975"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006926"
 ---
 # <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
 
@@ -112,7 +112,7 @@ Ecco alcuni suggerimenti volti a incoraggiare la diversità delle password.
   
 ### <a name="ban-common-passwords"></a>Vietare le password comuni
 
-Il più importante requisito da impostare in relazione alla creazione di password da parte degli utenti consiste nel vietare l'uso di password comuni per ridurre l'esposizione dell'organizzazione ad attacchi di forza bruta volti a violare le password. Alcune delle password più usate dagli utenti sono **abcdefg**, **password**, **123456**.
+Il requisito più importante da impostare in relazione alla creazione di password da parte degli utenti consiste nel vietare l'uso di password comuni, in modo da ridurre l'esposizione dell'organizzazione ad attacchi di forza bruta volti a violare le password. Alcune delle password più usate dagli utenti sono: **abcdefg**, **password**, **123456**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Educare gli utenti a non riutilizzare le password aziendali in altre posizioni
 
@@ -131,6 +131,8 @@ Con l'autenticazione a più fattori basata sul rischio, quando il sistema rileva
 ## <a name="next-steps"></a>Passaggi successivi
 
 Per saperne di più sulla gestione delle password: ecco alcune letture consigliate.
+
+- [Indicazioni sulle password Microsoft](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [Le password Web complesse sono davvero utili?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 

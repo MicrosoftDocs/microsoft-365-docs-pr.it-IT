@@ -14,23 +14,21 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 71df43639a719acb9436f64deba6b6c5cc9317f5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 386e4499fec30bf1c564c1e0dc81cb8aaa5912a5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924280"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007521"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurare e convalidare le esclusioni in base all'estensione di file e al percorso della cartella
-
-
 
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Antivirus Microsoft Defender esclusioni non si applicano ad altre funzionalità di Microsoft Defender for Endpoint, tra cui il rilevamento e la risposta degli [endpoint (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)le regole di riduzione della superficie di attacco [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)e l'accesso controllato alle [cartelle.](/microsoft-365/security/defender-endpoint/controlled-folders) I file esclusi utilizzando i metodi descritti in questo articolo possono comunque attivare EDR avvisi e altri rilevamenti. Per escludere i file in modo generale, aggiungerli agli indicatori personalizzati di Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/manage-indicators)
+> Antivirus Microsoft Defender esclusioni non si applicano ad altre funzionalità di Microsoft Defender for Endpoint, tra cui [rilevamento e reazione dagli endpoint (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)regole di riduzione della superficie di attacco [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)e accesso controllato [alle cartelle.](/microsoft-365/security/defender-endpoint/controlled-folders) I file esclusi utilizzando i metodi descritti in questo articolo possono comunque attivare EDR avvisi e altri rilevamenti. Per escludere i file in modo generale, aggiungerli agli indicatori personalizzati di Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/manage-indicators)
 
 ## <a name="exclusion-lists"></a>Elenchi di esclusione
 
@@ -310,7 +308,7 @@ Get-MpPreference
 
 Nell'esempio seguente vengono evidenziati gli elementi contenuti `ExclusionExtension` nell'elenco:
 
-![Output di PowerShell per Get-MpPreference l'elenco di esclusione insieme ad altre preferenze](images/defender/wdav-powershell-get-exclusions-all.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Output di PowerShell per Get-MpPreference":::
 
 Per altre informazioni, vedere [Usare i cmdlet di PowerShell per configurare ed eseguire Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) e [Cmdlet di Defender](/powershell/module/defender/).
 
@@ -326,7 +324,7 @@ $WDAVprefs.ExclusionPath
 
 Nell'esempio seguente l'elenco viene suddiviso in nuove righe per ogni utilizzo del `Add-MpPreference` cmdlet:
 
-![Output di PowerShell che mostra solo le voci nell'elenco di esclusione](images/defender/wdav-powershell-get-exclusions-variable.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Output di PowerShell che mostra solo le voci nell'elenco di esclusione":::
 
 Per altre informazioni, vedere [Usare i cmdlet di PowerShell per configurare ed eseguire Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) e [Cmdlet di Defender](/powershell/module/defender/).
 

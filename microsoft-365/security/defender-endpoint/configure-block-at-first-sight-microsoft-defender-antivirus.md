@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 04/28/2021
+ms.date: 06/15/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274953"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964701"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Abilitare il blocco al primo rilevamento
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Si applica a:**
 
@@ -34,7 +31,7 @@ ms.locfileid: "52274953"
 Questo articolo descrive una funzionalità antivirus/antimalware nota come blocco al primo rilevamento e descrive come abilitarla per l'organizzazione. 
 
 > [!TIP]
-> Questo articolo è destinato agli amministratori aziendali e ai professionisti IT che gestiscono le impostazioni di sicurezza per le organizzazioni. Se non si è un amministratore aziendale o un professionista IT, ma si hanno domande sul blocco al primo rilevamento, vedere [Non si è un amministratore aziendale o un professionista IT?](#not-an-enterprise-admin-or-it-pro).
+> Questo articolo è destinato agli amministratori aziendali e ai professionisti IT che gestiscono le impostazioni di sicurezza per le organizzazioni. Se non si è un amministratore aziendale o un professionista IT, ma si hanno domande sul blocco al primo rilevamento, vedere la sezione [Non si è un amministratore aziendale o un professionista IT?](#not-an-enterprise-admin-or-it-pro).
 
 ## <a name="what-is-block-at-first-sight"></a>Cos'è il blocco al primo rilevamento?
 
@@ -55,7 +52,7 @@ Antivirus Microsoft Defender usa più tecnologie di rilevamento e prevenzione pe
 ![Elenco dei motori antivirus di Microsoft Defender](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> Per altre informazioni, vedere il blog [Informazioni sulle tecnologie avanzate al centro della protezione di Microsoft Defender per endpoint di nuova generazione](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+> Per altre informazioni, vedere [ (Blog) Informazioni sulle tecnologie avanzate al centro della protezione di Microsoft Defender per endpoint di nuova generazione](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
 ## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Alcune informazioni da conoscere sul blocco al primo rilevamento
 
@@ -149,7 +146,9 @@ Antivirus Microsoft Defender usa più tecnologie di rilevamento e prevenzione pe
 
 ## <a name="validate-block-at-first-sight-is-working"></a>Verificare che il blocco al primo rilevamento funzioni
 
-Per verificare che la funzionalità sia operativa, seguire le istruzioni in [Convalidare le connessioni tra la rete e il cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
+Per verificare che la funzionalità sia attivata correttamente, scaricare il file di esempio [Blocco al primo rilevamento](https://demo.wd.microsoft.com/Page/BAFS). Per scaricare il file è necessario un account in Azure AD a cui sia assegnato il ruolo Amministratore della sicurezza o Amministratore globale.
+
+Per verificare che la protezione abilitata per il cloud, seguire le istruzioni in [Convalidare le connessioni tra la rete e il cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud). 
 
 ## <a name="turn-off-block-at-first-sight"></a>Disabilitare il blocco al primo rilevamento
 

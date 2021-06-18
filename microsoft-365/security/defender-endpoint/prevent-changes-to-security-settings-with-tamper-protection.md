@@ -1,6 +1,6 @@
 ---
 title: Proteggere le impostazioni di sicurezza con protezione antimanomissione
-ms.reviewer: shwjha, hayhov
+ms.reviewer: pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Usa la protezione anti-manomissione per impedire alle app dannose di modificare impostazioni di sicurezza importanti.
 keywords: malware, defender, antivirus, protezione antimalware
@@ -16,13 +16,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 05/17/2021
-ms.openlocfilehash: f6217cccf79b951c3103e1024ac74669d68645cd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.date: 06/17/2021
+ms.openlocfilehash: 7050a1588b71ac106d5364f29c76d379072e9511
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925936"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007418"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Proteggere le impostazioni di sicurezza con protezione antimanomissione
 
@@ -80,8 +80,8 @@ Nella tabella seguente vengono fornite informazioni dettagliate su metodi, strum
 |:----|:----|
 | Microsoft Intune  | No |
 | Microsoft Endpoint Configuration Manager + Tenant Attach  |     No  |
-| Microsoft Defender Security Center ( [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) )    |     Sì |
-| Microsoft 365 centro sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) )  |     Sì  |
+| Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )    |     Sì |
+| Microsoft 365 Defender portale ( [https://security.microsoft.com](https://security.microsoft.com) )  |     Sì  |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>Gestire la protezione da manomissioni per l'organizzazione usando il Microsoft Defender Security Center
 
@@ -100,6 +100,7 @@ La protezione anti-manomissione può essere attivata o disattivata per il tenant
 - È necessario disporre delle autorizzazioni [appropriate,](/microsoft-365/security/defender-endpoint/assign-portal-access)ad esempio l'amministratore globale, l'amministratore della sicurezza o le operazioni di sicurezza.
 
 - I Windows devono eseguire una delle seguenti versioni di Windows:
+
    - Windows 10
    - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windows Server, versione [1803](/windows/release-health/status-windows-10-1803) o successiva
@@ -147,6 +148,7 @@ Se si fa parte del team di sicurezza dell'organizzazione e la sottoscrizione inc
 2. Selezionare **Profili di** configurazione dei  >  **dispositivi**.
 
 3. Creare un profilo che includa le impostazioni seguenti:
+
     - **Piattaforma: Windows 10 e versioni successive**
     - **Tipo di profilo: Endpoint protection**
     - **Categoria: Microsoft Defender Security Center**
@@ -154,17 +156,19 @@ Se si fa parte del team di sicurezza dell'organizzazione e la sottoscrizione inc
 
 4. Assegnare il profilo a uno o più gruppi.
 
-### <a name="are-you-using-windows-os-1709-1803-or-1809"></a>Si usa Windows OS 1709, 1803 o 1809?
+### <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>Si utilizza Windows Server 2016 o Windows versione 1709, 1803 o 1809?
 
-Se si usa Windows 10 OS [1709,](/windows/release-health/status-windows-10-1709) [1803](/windows/release-health/status-windows-10-1803)o [1809,](/windows/release-health/status-windows-10-1809-and-windows-server-2019)non verrà visualizzato **Protezione** da manomissione nell'app Sicurezza di Windows. È invece possibile utilizzare PowerShell per determinare se la protezione da manomissione è abilitata.
-
-#### <a name="use-powershell-to-determine-whether-tamper-protection-is-turned-on"></a>Utilizzare PowerShell per determinare se la protezione da manomissione è attivata
+Se si usa Windows Server 2016, Windows 10 versione 1709, 1803 o [1809,](/windows/release-health/status-windows-10-1809-and-windows-server-2019)non verrà visualizzato **Protezione** da manomissione nell'app Sicurezza di Windows. È invece possibile utilizzare PowerShell per determinare se la protezione da manomissione è abilitata. 
+   
+In Windows Server 2016, l'app Impostazioni non riflette in modo accurato lo stato della protezione in tempo reale quando è abilitata la protezione da manomissioni.
+   
+#### <a name="use-powershell-to-determine-whether-tamper-protection-andor-real-time-protection-are-turned-on"></a>Usare PowerShell per determinare se la protezione da manomissioni e/o la protezione in tempo reale sono attivate
 
 1. Apri l'Windows PowerShell app.
 
 2. Utilizzare il cmdlet [Di PowerShell Get-MpComputerStatus.](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps)
 
-3. Nell'elenco dei risultati cercare `IsTamperProtected` . Il valore *true indica* che è abilitata la protezione da manomissione.
+3. Nell'elenco dei risultati cercare `IsTamperProtected` . Il valore *true indica* che è abilitata la protezione da manomissione. Nell'elenco dei risultati cercare `RealTimeProtectionEnabled` . Il valore true indica che è abilitata la protezione da manomissione.
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Gestire la protezione da manomissione per l'organizzazione con Configuration Manager versione 2006
 
@@ -219,15 +223,11 @@ Quando viene rilevato un tentativo di manomissione, viene generato un avviso nel
 
 ![Microsoft Defender Security Center](images/tamperattemptalert.png)
 
-Usando le funzionalità [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) di rilevamento e risposta degli [endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) e la ricerca avanzata in Microsoft Defender for Endpoint, il team delle operazioni di sicurezza può analizzare e affrontare tali tentativi.
+Usando [rilevamento e reazione dagli endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) e [funzionalità avanzate di ricerca](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) in Microsoft Defender for Endpoint, il team delle operazioni di sicurezza può analizzare e affrontare tali tentativi.
 
 ## <a name="review-your-security-recommendations"></a>Esaminare i suggerimenti per la sicurezza
 
-La protezione anti-manomissione si integra con [le funzionalità di gestione delle & delle](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) minacce. [I suggerimenti per la](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) sicurezza includono l'accertarsi che la protezione contro le manomissioni sia attivata. Ad esempio, è possibile eseguire una ricerca in caso di *manomissione,* come illustrato nell'immagine seguente:
-
-![La protezione anti-manomissione si traduce in suggerimenti per la sicurezza](/images/securityrecs-tamperprotect.jpg)
-
-Nei risultati puoi selezionare **Attiva protezione** manomissione per saperne di più e attivarla.
+La protezione anti-manomissione si integra con [le funzionalità di gestione delle & delle](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) minacce. [I suggerimenti per la](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) sicurezza includono l'accertarsi che la protezione contro le manomissioni sia attivata. Ad esempio, è possibile cercare in *manomissione*. Nei risultati puoi selezionare **Attiva protezione** manomissione per saperne di più e attivarla.
 
 ![Attivare la protezione anti-manomissione](images/tamperprotectsecurityrecos.png)
 
