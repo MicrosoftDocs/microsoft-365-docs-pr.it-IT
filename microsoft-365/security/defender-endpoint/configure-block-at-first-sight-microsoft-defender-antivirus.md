@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964701"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007400"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Abilitare il blocco al primo rilevamento
 
@@ -82,7 +82,7 @@ Antivirus Microsoft Defender usa più tecnologie di rilevamento e prevenzione pe
    - **Estensioni di tempo per l'analisi di file da parte del cloud**: 50
    - **Richiedi conferma all'utente prima dell'invio di campioni**: Invia tutti i dati senza chiedere conferma
 
-   ![Configurazione di Intune](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Blocco di configurazione di Intune al primo rilevamento":::
 
 4. Salvare le impostazioni.
 
@@ -136,7 +136,7 @@ Antivirus Microsoft Defender usa più tecnologie di rilevamento e prevenzione pe
 
 2. Selezionare **Protezione da virus e minacce**, quindi in **Impostazioni di Protezione da virus e minacce** selezionare **Gestisci impostazioni**.
 
-   ![Screenshot dell'etichetta Impostazioni di Protezione da virus e minacce nell'app Sicurezza di Windows](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot dell'etichetta Impostazioni di Protezione da virus e minacce nell'app Sicurezza di Windows":::
 
 3. Verificare che le opzioni **Protezione fornita dal cloud** e **Invio automatico di file di esempio** siano entrambe abilitate.
 
