@@ -19,12 +19,12 @@ description: Gli amministratori possono imparare a usare i criteri di spoof inte
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: a683ed93e4e483e63fe01281b32661f0b803d1ce
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793209"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029298"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Gestire i mittenti contraffatti utilizzando i criteri di spoof intelligence e informazioni di spoof intelligence in EOP
 
@@ -67,7 +67,7 @@ Il criterio di **spoof intelligence** predefinito (e solo) garantisce che i mess
 - È possibile abilitare, disabilitare e configurare le impostazioni di spoof intelligence nei criteri anti-phishing. Per istruzioni basate sull'abbonamento, vedere uno degli argomenti seguenti:
 
   - [Configurare i criteri anti-phishing in EOP](configure-anti-phishing-policies-eop.md).
-  - [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md).
+  - [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-mdo-anti-phishing-policies.md).
 
 - Per le impostazioni consigliate per spoof intelligence, vedere [Impostazioni dei criteri anti-phishing EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)
 
@@ -184,7 +184,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-PhishFi
 
 1. Nel Centro sicurezza & conformità passare a **Dashboard di gestione delle** \> **minacce**.
 
-2. Nella riga **Insights** cercare uno degli elementi seguenti:
+2. Nella riga **Insights** ricercare uno degli elementi seguenti:
 
    - **Domini contraffatti probabilmente negli ultimi sette** giorni: questa informazione indica che l'intelligence di spoofing è abilitata (è abilitata per impostazione predefinita).
    - **Abilita protezione da spoofing**: questa informazione indica che l'intelligence di spoofing è disabilitata e fare clic sull'analisi consente di abilitare l'intelligence di spoofing.

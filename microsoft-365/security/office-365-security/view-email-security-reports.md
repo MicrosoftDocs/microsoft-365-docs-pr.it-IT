@@ -19,12 +19,12 @@ description: Gli amministratori possono scoprire come trovare e usare i report d
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022935"
+ms.locfileid: "53029573"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualizzare i report di sicurezza della posta elettronica nel portale di Microsoft 365 Defender
 
@@ -157,7 +157,9 @@ Per visualizzare il report nel portale di Microsoft 365 Defender, passare **a** 
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>Visualizzazione tipo per la relazione sullo stato del flusso di posta
 
-Quando si apre il report, la **scheda Tipo** è selezionata per impostazione predefinita. Per impostazione predefinita, questa visualizzazione contiene un grafico e una tabella dei dettagli configurata con i filtri seguenti:
+![Visualizzazione tipo nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-type-view.png)
+
+Nella pagina **Relazione sullo stato del flusso di posta** la scheda **Tipo** è selezionata per impostazione predefinita. Per impostazione predefinita, questa visualizzazione contiene un grafico e una tabella dei dettagli configurata con i filtri seguenti:
 
 - **Data (UTC)** Ultimi 7 giorni.
 - **Direzione della posta**:
@@ -175,7 +177,7 @@ Quando si apre il report, la **scheda Tipo** è selezionata per impostazione pre
 
 Il grafico è organizzato in base ai **valori Type.**
 
-È possibile modificare questi filtri facendo clic **su Filtro** o su un valore nella legenda del grafico.
+È possibile modificare questi filtri facendo clic su **Filtro**.
 
 Nella tabella dei dettagli sotto il grafico vengono visualizzate le informazioni seguenti:
 
@@ -200,9 +202,9 @@ Per la visualizzazione dettagli, è possibile esportare i dati solo per un giorn
 
 Ogni file .csv esportato è limitato a 150.000 righe. Se i dati di quel giorno contengono più di 150.000 righe, verranno creati .csv file.
 
-![Visualizzazione tipo nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-type-view.png)
-
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Visualizzazione della direzione per la relazione sullo stato del flusso di posta
+
+![Visualizzazione direzione nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-direction-view.png)
 
 Se si fa clic **sulla scheda Direzione,** vengono utilizzati gli stessi filtri predefiniti della **visualizzazione** Tipo.
 
@@ -220,11 +222,11 @@ Per la visualizzazione dettagli, è possibile esportare i dati solo per un giorn
 
 Ogni file .csv esportato è limitato a 150.000 righe. Se i dati di quel giorno contengono più di 150.000 righe, verranno creati .csv file.
 
-![Visualizzazione direzione nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-direction-view.png)
-
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Visualizzazione imbuto per la relazione sullo stato del flusso di posta
 
 La **visualizzazione Imbuto** mostra come le funzionalità di protezione dalle minacce di posta elettronica di Microsoft filtrano la posta elettronica in arrivo e in uscita nell'organizzazione. Fornisce informazioni dettagliate sul conteggio totale della posta elettronica e sul modo in cui le funzionalità di protezione dalle minacce configurate, tra cui protezione perimetrale, antimalware, anti-phishing, protezione da posta indesiderata e anti-spoofing influiscono su questo conteggio.
+
+![Visualizzazione Imbuto nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-funnel-view.png)
 
 Se si fa clic sulla scheda **Imbuto,** per impostazione predefinita, questa visualizzazione contiene un grafico e una tabella dei dettagli configurata con i filtri seguenti:
 
@@ -289,8 +291,6 @@ Dopo aver fatto **clic su** Esporta **in Opzioni,** è possibile selezionare uno
 In **Data** scegliere un intervallo e quindi fare clic su **Applica.** I dati per i filtri correnti verranno esportati in un .csv file.
 
 Ogni file .csv esportato è limitato a 150.000 righe. Se i dati contengono più di 150.000 righe, verranno creati .csv file.
-
-![Visualizzazione Imbuto nella relazione sullo stato del flusso di posta](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Visualizzazione tecnica per la relazione sullo stato del flusso di posta
 
@@ -460,14 +460,23 @@ Il grafico mostra le informazioni seguenti:
 Nella pagina **Invii** è possibile filtrare sia il grafico che la tabella dei dettagli facendo clic su **Filtro** e selezionando uno o più dei valori seguenti:
 
 - **Data riportata**: **Ora inizio** **e Ora fine**
-- **Tipo di invio:** **Posta** elettronica, **URL** o **File**
+- **Tipo invio**:
+  - **Posta elettronica**
+  - **URL**
+  - **File**
 - **ID invio**
 - **ID messaggio di rete**
 - **Mittente**
 - **Nome**
 - **Inviato da**
-- **Motivo dell'invio:** **Non posta indesiderata,** **Phish,** **Malware** o **Posta indesiderata**
-- **Stato nuova analisi**: **In sospeso** o **Completato**
+- **Motivo dell'invio:**
+  - **Non indesiderato**
+  - **Phishing**
+  - **Malware**
+  - **Posta indesiderata**
+- **Stato nuova analisi**:
+  - **In sospeso**
+  - **Operazione completata**
 
 La tabella dei dettagli sotto il grafico  mostra le stesse informazioni  e ha le stesse opzioni Raggruppa o Personalizza colonne della scheda Inviato per l'analisi in **Invio** di &  \> collaborazione. Per altre informazioni, vedi [Visualizzare gli invii di amministratori a Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
 
@@ -772,7 +781,7 @@ Se si fa **clic su Filtro**, è possibile specificare un intervallo di date con 
 
 ## <a name="url-threat-protection-report"></a>Report di protezione dalle minacce URL
 
-Il **report di protezione dalle minacce URL** è disponibile in Microsoft Defender per Office 365. Per ulteriori informazioni, vedere [Report di protezione dalle minacce URL](view-reports-for-mdo.md#url-threat-protection-report).
+Il **report di protezione dalle minacce URL** è disponibile solo in Microsoft Defender per Office 365. Per ulteriori informazioni, vedere [Report di protezione dalle minacce URL](view-reports-for-mdo.md#url-threat-protection-report).
 
 ## <a name="user-reported-messages-report"></a>Rapporto messaggi segnalati dall'utente
 

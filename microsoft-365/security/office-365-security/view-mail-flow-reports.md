@@ -19,12 +19,12 @@ description: Gli amministratori possono ottenere informazioni sui report del flu
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985505"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029477"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visualizzare i report del flusso di posta nel dashboard report nel Centro sicurezza & conformità
 
@@ -34,6 +34,9 @@ ms.locfileid: "52985505"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+> [!NOTE]
+> La maggior parte dei report descritti in questo argomento sono disponibili nell'interfaccia di amministrazione di Exchange (EAC). Per ulteriori informazioni, vedere [Mail flow reports in the new Exchange admin center.](/exchange/monitoring/mail-flow-reports/mail-flow-reports) Il [report delle regole di](view-email-security-reports.md#exchange-transport-rule-report) trasporto di Exchange è disponibile nel portale di Microsoft 365 Defender.
 
 Oltre ai report del flusso di posta disponibili nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza e conformità di &, nel dashboard report sono disponibili diversi report aggiuntivi sul flusso di posta per monitorare l'organizzazione di Microsoft 365.
 
@@ -166,7 +169,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
 ## <a name="forwarding-report"></a>Rapporto di inoltro
 
-Il **rapporto Inoltro mostra** i messaggi inoltrati automaticamente dall'organizzazione ai domini esterni dalle cassette postali di Exchange Online. I messaggi inoltrati possono rappresentare un rischio per la sicurezza o la conformità e possono indicare un account compromesso.
+Il **rapporto Inoltro mostra** i messaggi inoltrati automaticamente dall'organizzazione a domini esterni da Exchange Online cassette postali. I messaggi inoltrati possono rappresentare un rischio per la sicurezza o la conformità e possono indicare un account compromesso.
 
 Per visualizzare il report, aprire il [Centro sicurezza & conformità,](https://protection.office.com)passare a Dashboard report  \>  e selezionare Report **di inoltro.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -421,7 +424,9 @@ Ogni file .csv esportato è limitato a 150.000 righe. Se i dati contengono più 
 
 ## <a name="sent-and-received-email-report"></a>Rapporto di posta elettronica inviato e ricevuto
 
-Il **report Posta inviata e** ricevuta è un report intelligente che mostra le informazioni sulla posta elettronica in arrivo e in uscita, inclusi i rilevamenti di posta indesiderata, il malware e la posta elettronica identificata come "buona". La differenza tra questo report e la relazione sullo stato [del flusso](#mailflow-status-report) di posta è che non include i dati sui messaggi bloccati dalla protezione perimetrale. È importante comprendere che se un messaggio viene inviato a cinque destinatari viene conteggiato come un unico messaggio.
+Il **report Posta inviata e** ricevuta è un report intelligente che mostra le informazioni sulla posta elettronica in arrivo e in uscita, inclusi i rilevamenti di posta indesiderata, il malware e la posta elettronica identificata come "buona". La differenza tra questo report e la relazione sullo stato [del flusso](#mailflow-status-report) di posta è che non include i dati sui messaggi bloccati dalla protezione perimetrale.
+
+**Nota:** è importante comprendere che se un messaggio viene inviato a cinque destinatari viene conteggiato come un unico messaggio.
 
 La visualizzazione aggregata e la visualizzazione dettagli del report consentono 90 giorni di filtro.
 

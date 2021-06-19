@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono conoscere i criteri anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 846043be72be741e60c09c85fba14dbf291612a1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964886"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029370"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri anti-phishing in Microsoft 365
 
@@ -62,7 +62,7 @@ Per configurare i criteri anti-phishing, vedere gli articoli seguenti:
 
 - [Configurare i criteri anti-phishing in Exchange Online Protection](configure-anti-phishing-policies-eop.md)
 
-- [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)
+- [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-mdo-anti-phishing-policies.md)
 
 Il resto di questo articolo descrive le impostazioni disponibili nei criteri anti-phishing in EOP e Defender per Office 365.
 
@@ -131,9 +131,6 @@ Le impostazioni dei mittenti non autenticati fanno parte delle impostazioni [di 
 - Abilitare il simbolo del punto interrogativo **(?)** del mittente non autenticato? : quando questa impostazione è attivata, viene aggiunto un punto  interrogativo alla foto del mittente nella casella Da se il messaggio non supera i controlli SPF o DKIM e il messaggio non supera l'autenticazione DMARC o [composita.](email-validation-and-authentication.md#composite-authentication) Quando questa impostazione è disattivata, il punto interrogativo non viene aggiunto alla foto del mittente.
 
 - Abilita tag **"via"?**: quando questa impostazione è attivata, il tag via (chris@contoso.com tramite fabrikam.com) viene aggiunto nella casella Da se il dominio nell'indirizzo mittente (il mittente del messaggio visualizzato nei client di posta elettronica) è diverso dal dominio nella firma <sup>\*</sup> DKIM o nell'indirizzo **MAIL FROM.** <u></u> Per ulteriori informazioni su questi indirizzi, vedere [Panoramica degli standard dei messaggi di posta elettronica.](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
-
-> [!NOTE]
-> Attualmente, **l'impostazione Abilita tag "via"?** non è disponibile in tutte le organizzazioni. Se non si dispone dell'impostazione **Abilita tag "via"?** il punto interrogativo e il tag via sono entrambi controllati dall'impostazione Abilita punto interrogativo mittente non autenticato **(?)** nell'organizzazione. 
 
 Per impedire l'aggiunta del punto interrogativo o tramite tag ai messaggi provenienti da mittenti specifici, sono disponibili le opzioni seguenti:
 

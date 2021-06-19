@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni su come abilitare i componenti aggiuntivi Segnala messaggio o Segnala phishing per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7e5136e6d1a118df2e0e91f09a79a9a63e88052
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8949322b0b691d59e59e5f7b80d2b9650e4115d5
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028584"
+ms.locfileid: "53029910"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Abilitare i componenti aggiuntivi Segnala messaggio o Segnala phishing
 
@@ -34,17 +34,17 @@ ms.locfileid: "53028584"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Se si è un amministratore in un'organizzazione di Microsoft 365 con cassette postali di Exchange Online, è consigliabile utilizzare il portale invii in Microsoft 365 Defender. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Se si è un amministratore di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online, è consigliabile utilizzare il portale invii nel portale di Microsoft 365 Defender. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono agli utenti di segnalare facilmente falsi positivi (buona posta elettronica contrassegnata come non buona) o falsi negativi (posta elettronica non consentita) a Microsoft e alle sue affiliate per l'analisi. 
+I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono agli utenti di segnalare facilmente falsi positivi (buona posta elettronica contrassegnata come non buona) o falsi negativi (posta elettronica non consentita) a Microsoft e alle sue affiliate per l'analisi.
 
-Microsoft usa questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica. Si supponga, ad esempio, che gli utenti segnalano molti messaggi utilizzando il componente aggiuntivo Segnala phishing. Queste informazioni vengono visualizzate nel dashboard di sicurezza e in altri report. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per indicare che potrebbe essere necessario aggiornare i criteri anti-phishing. 
+Microsoft usa questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica. Si supponga, ad esempio, che gli utenti segnalano molti messaggi utilizzando il componente aggiuntivo Segnala phishing. Queste informazioni vengono visualizzate nel dashboard di sicurezza e in altri report. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per indicare che potrebbe essere necessario aggiornare i criteri anti-phishing.
 
-È possibile installare il componente aggiuntivo Segnala messaggio o Segnala phishing. Se si desidera che gli utenti segnalano messaggi di posta indesiderata e di phishing, distribuire il componente aggiuntivo Segnala messaggio nell'organizzazione. Per ulteriori informazioni, vedere Enable the Report Message add-in. 
+È possibile installare il componente aggiuntivo Segnala messaggio o Segnala phishing. Se si desidera che gli utenti segnalano messaggi di posta indesiderata e di phishing, distribuire il componente aggiuntivo Segnala messaggio nell'organizzazione. Per ulteriori informazioni, vedere Enable the Report Message add-in.
 
-Il componente aggiuntivo Segnala messaggio consente di segnalare sia i messaggi di posta indesiderata che i messaggi di phishing. Gli amministratori possono abilitare il componente aggiuntivo Segnala messaggio per l'organizzazione e i singoli utenti possono installarlo automaticamente. 
+Il componente aggiuntivo Segnala messaggio consente di segnalare sia i messaggi di posta indesiderata che i messaggi di phishing. Gli amministratori possono abilitare il componente aggiuntivo Segnala messaggio per l'organizzazione e i singoli utenti possono installarlo automaticamente.
 
-Il componente aggiuntivo Segnala phishing consente di segnalare solo i messaggi di phishing. Gli amministratori possono abilitare il componente aggiuntivo Segnala phishing per l'organizzazione e i singoli utenti possono installarlo automaticamente. 
+Il componente aggiuntivo Segnala phishing consente di segnalare solo i messaggi di phishing. Gli amministratori possono abilitare il componente aggiuntivo Segnala phishing per l'organizzazione e i singoli utenti possono installarlo automaticamente.
 
 Se si è un singolo utente, è possibile abilitare entrambi i componenti aggiuntivi.
 
@@ -65,7 +65,7 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
 
 - Per le installazioni dell'organizzazione, l'organizzazione deve essere configurata per l'utilizzo dell'autenticazione OAuth. Per ulteriori informazioni, vedere [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Gli amministratori devono essere membri del gruppo di ruoli Amministratori globali. Per ulteriori informazioni, vedere [Autorizzazioni in Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
+- Gli amministratori devono essere membri del gruppo di ruoli Amministratori globali. Per ulteriori informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 
 - Per ulteriori informazioni su come segnalare un messaggio utilizzando la funzionalità Segnala messaggio, vedere Segnalare falsi positivi e [falsi negativi in Outlook.](report-false-positives-and-false-negatives.md)
 
@@ -74,7 +74,7 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
 
 ## <a name="get-the-report-message-add-in"></a>Ottenere il componente aggiuntivo Segnala messaggio
 
-### <a name="get-the-add-in-for-yourself"></a>Ottenere il componente aggiuntivo per se stessi
+### <a name="get-the-report-message-add-in-for-yourself"></a>Ottenere il componente aggiuntivo Segnala messaggio per se stessi
 
 1. Passare a Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> all'indirizzo e cercare il componente aggiuntivo Segnala messaggio. Per passare direttamente al componente aggiuntivo Segnala messaggio, passare a <https://appsource.microsoft.com/product/office/wa104381180> .
 
@@ -98,7 +98,7 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
   > [!div class="mx-imgBorder"]
   > ![Icona del componente aggiuntivo Report di Outlook sul Web](../../media/owa-report-message-icon.png)
 
-### <a name="get-the-add-in-for-your-organization"></a>Ottenere il componente aggiuntivo per l'organizzazione
+### <a name="get-the-report-message-add-in-for-your-organization"></a>Ottenere il componente aggiuntivo Segnala messaggio per l'organizzazione
 
 > [!NOTE]
 > La visualizzazione del componente aggiuntivo nell'organizzazione potrebbe richiedere fino a 12 ore.
@@ -124,13 +124,11 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
 7. Nella pagina **Configura componente aggiuntivo visualizzata** configurare le impostazioni seguenti:
 
    - **Utenti assegnati**: selezionare uno dei valori seguenti:
-
      - **Tutti** (impostazione predefinita)
      - **Utenti/gruppi specifici**
      - **Solo io**
 
    - **Metodo di distribuzione:** selezionare uno dei valori seguenti:
-
      - **Risolto (impostazione predefinita):** il componente aggiuntivo viene distribuito automaticamente agli utenti specificati e non può essere rimosso.
      - **Disponibile**: gli utenti possono installare il componente aggiuntivo in **Home** \> **Get add-ins** \> **Admin-managed**.
      - **Facoltativo:** il componente aggiuntivo viene distribuito automaticamente agli utenti specificati, ma può scegliere di rimuoverlo.
@@ -161,7 +159,7 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
 
 ## <a name="get-the-report-phishing-add-in"></a>Ottenere il componente aggiuntivo Segnala phishing
 
-### <a name="get-the-add-in-for-yourself"></a>Ottenere il componente aggiuntivo per se stessi
+### <a name="get-the-report-phishing-add-in-for-yourself"></a>Ottenere il componente aggiuntivo Segnala phishing per se stessi
 
 1. Vai a Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> all'indirizzo e cerca il componente aggiuntivo Segnala phishing.
 
@@ -182,7 +180,7 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
   > [!div class="mx-imgBorder"]
   > ![Icona del componente aggiuntivo Di phishing per i report di Outlook sul Web](../../media/OWA-ReportPhishing.png)
 
-### <a name="get-the-add-in-for-your-organization"></a>Ottenere il componente aggiuntivo per l'organizzazione
+### <a name="get-the-report-phishing-add-in-for-your-organization"></a>Ottenere il componente aggiuntivo Segnala phishing per l'organizzazione
 
 > [!NOTE]
 > La visualizzazione del componente aggiuntivo nell'organizzazione potrebbe richiedere fino a 12 ore.
@@ -206,13 +204,11 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
 7. Nella pagina **Configura componente aggiuntivo visualizzata** configurare le impostazioni seguenti:
 
    - **Utenti assegnati**: selezionare uno dei valori seguenti:
-
      - **Tutti** (impostazione predefinita)
      - **Utenti/gruppi specifici**
      - **Solo io**
 
    - **Metodo di distribuzione:** selezionare uno dei valori seguenti:
-
      - **Risolto (impostazione predefinita):** il componente aggiuntivo viene distribuito automaticamente agli utenti specificati e non può essere rimosso.
      - **Disponibile**: gli utenti possono installare il componente aggiuntivo in **Home** \> **Get add-ins** \> **Admin-managed**.
      - **Facoltativo:** il componente aggiuntivo viene distribuito automaticamente agli utenti specificati, ma può scegliere di rimuoverlo.

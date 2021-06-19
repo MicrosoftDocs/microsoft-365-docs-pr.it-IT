@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 03fd82cd5dc24653b6d67fa47cc225d355bfac45
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 3cbd329c63d7cf1868083c66919773e14ed51156
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028800"
+ms.locfileid: "53029598"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>Accedere alle API di Microsoft 365 Defender
 
@@ -59,7 +59,7 @@ Usa questo contesto per le app eseguite senza un utente connesso, ad esempio ser
 2. Assegnare le autorizzazioni desiderate all'applicazione.
 3. Creare una chiave per l'applicazione.
 4. Ottieni un token di sicurezza usando l'applicazione e la relativa chiave.
-5. Usa il token per accedere Microsoft 365 Defender API.
+5. Usa il token per accedere all'API Microsoft 365 Defender.
 
 Per altre informazioni, vedi **[Creare un'app per accedere Microsoft 365 Defender senza un utente.](api-create-app-web.md)**
 
@@ -70,7 +70,7 @@ Usa questo contesto per eseguire azioni per conto di un singolo utente.
 1. Creare un'Azure Active Directory nativa.
 2. Assegnare l'autorizzazione desiderata all'applicazione.
 3. Ottenere un token di sicurezza usando le credenziali utente per l'applicazione.
-4. Usa il token per accedere Microsoft 365 Defender API.
+4. Usa il token per accedere all'API Microsoft 365 Defender.
 
 Per altre informazioni, vedi **[Creare un'app per accedere Microsoft 365 Defender API per conto di un utente.](api-create-app-user-context.md)**
 
@@ -82,7 +82,7 @@ Usa questo contesto quando devi fornire un'app a molti utenti in [più tenant.](
 2. Assegnare l'autorizzazione desiderata all'applicazione.
 3. Ottieni [il consenso dell'amministratore](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) per l'app da ogni tenant.
 4. Ottenere un token di sicurezza usando le credenziali utente in base all'ID tenant di un cliente.
-5. Usa il token per accedere Microsoft 365 Defender API.
+5. Usa il token per accedere all'API Microsoft 365 Defender.
 
 Per altre informazioni, vedi **[Creare un'app con accesso partner Microsoft 365 Defender API](api-partner-access.md)**.
 

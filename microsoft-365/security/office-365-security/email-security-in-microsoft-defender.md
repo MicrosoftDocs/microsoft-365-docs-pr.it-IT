@@ -16,12 +16,12 @@ description: Visualizzare e analizzare i tentativi di phishing di malware.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028545"
+ms.locfileid: "53029886"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Sicurezza della posta elettronica con Threat Explorer in Microsoft Defender per Office 365
 
@@ -32,11 +32,11 @@ Contenuto dell'articolo:
 - [Avviare un'indagine e una risposta automatizzate](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> Questo articolo fa parte di una serie di **3** articoli su **Threat Explorer (Explorer),** sicurezza della posta elettronica e informazioni di base su **Explorer** e sui rilevamenti in tempo reale (ad esempio le differenze tra gli strumenti e le autorizzazioni necessarie per operare).  Gli altri due articoli di questa serie sono la ricerca delle minacce [in Threat Explorer](threat-hunting-in-threat-explorer.md) e Threat Explorer e le nozioni di base sui [rilevamenti in tempo reale.](real-time-detections.md) 
+> Questo articolo fa parte di una serie di **3** articoli su **Threat Explorer (Explorer),** sicurezza della posta elettronica e informazioni di base su **Explorer** e sui rilevamenti in tempo reale (ad esempio le differenze tra gli strumenti e le autorizzazioni necessarie per operare).  Gli altri due articoli di questa serie sono la ricerca delle minacce [in Threat Explorer](threat-hunting-in-threat-explorer.md) e Threat Explorer e le nozioni di base sui [rilevamenti in tempo reale.](real-time-detections.md)
 
-In questo articolo viene illustrato come visualizzare e analizzare i tentativi di malware e phishing rilevati nella posta elettronica Microsoft 365 funzionalità di sicurezza. 
+In questo articolo viene illustrato come visualizzare e analizzare i tentativi di malware e phishing rilevati nella posta elettronica Microsoft 365 funzionalità di sicurezza.
 
-**Si applica a**
+**Si applica a:**
 
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
@@ -45,45 +45,42 @@ In questo articolo viene illustrato come visualizzare e analizzare i tentativi d
 
 Per visualizzare il malware rilevato nei messaggi di posta [](threat-explorer-views.md#email--malware) elettronica ordinati Microsoft 365 tecnologia, usare la visualizzazione Malware > posta elettronica di Esplora risorse (o rilevamenti in tempo reale). Il malware è la visualizzazione predefinita, quindi potrebbe essere selezionato non appena apri Esplora risorse.
 
-1. Nel portale Microsoft 365 Defender ( ), scegliere Posta <https://security.microsoft.com> **elettronica &** \> **collaborazione Explorer** (o **Rilevamenti in tempo reale**). In questo esempio viene utilizzato Explorer. Se si è nel portale Microsoft 365 Defender convergente ( scorrere fino a https://security.microsoft.com/) **Email & collaboration**  >  **Explorer**.
+1. Nel portale Microsoft 365 Defender ( <https://security.microsoft.com> ), scegliere **e-mail &** \> **collaborazione Explorer** (o **Rilevamenti in tempo reale**; In questo esempio viene utilizzato Explorer).
 
    Da qui, inizia da View, scegli un determinato intervallo di tempo per analizzare (se necessario) e concentrare i filtri, come da [Explorer walk-through.](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)
 
-2. Nel menu **Visualizza** scegliere **Malware in Posta** **elettronica**.
+2. **Nell'elenco a** discesa Visualizza, verificare che l'opzione **Malware** di posta \>  elettronica sia selezionata.
 
-3. Fare **clic su Mittente** e quindi scegliere **Tecnologia di** rilevamento di \> **base.**
+3. Fare **clic su Mittente** e quindi scegliere **Tecnologia di** rilevamento di \> **base** nell'elenco a discesa.
 
-   
    :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="tecnologia di rilevamento malware":::
 
    Le tecnologie di rilevamento sono ora disponibili come filtri per il report.
 
-4. Scegliere un'opzione. Selezionare quindi il **pulsante** Aggiorna per applicare il filtro.
+4. Scegliere un'opzione e quindi fare clic su **Aggiorna** per applicare il filtro (non aggiornare la finestra del browser).
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="tecnologia di rilevamento selezionata"::: 
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="tecnologia di rilevamento selezionata":::
 
-   Il report viene aggiornato per visualizzare i risultati rilevati dal malware nella posta elettronica, utilizzando l'opzione tecnologia selezionata. Da qui è possibile eseguire ulteriori analisi. 
+   Il report viene aggiornato per visualizzare i risultati rilevati dal malware nella posta elettronica, utilizzando l'opzione tecnologia selezionata. Da qui è possibile eseguire ulteriori analisi.
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Visualizzare l'URL di phishing e fare clic su Dati verdetto
 
 È possibile visualizzare i tentativi di phishing tramite URL nella posta elettronica, incluso un elenco di URL consentiti, bloccati e ignorati. Per identificare gli URL su cui è stato fatto clic, [Safe i collegamenti](safe-links.md) devono essere configurati. Assicurati di configurare i [criteri](set-up-safe-links-policies.md) di Safe per la protezione basata sul clic e la registrazione dei verdetti clic Safe collegamenti.
 
-Per esaminare gli URL dei phish nei messaggi e fare clic sugli URL nei messaggi [   >  **phish,**](threat-explorer-views.md#email--phish) usa la visualizzazione Phish e-mail di Esplora risorse o rilevamenti in tempo reale.
+1. Nel portale Microsoft 365 Defender ( <https://security.microsoft.com> ), scegliere **e-mail &** \> **collaborazione Explorer** (o **Rilevamenti in tempo reale**; In questo esempio viene utilizzato Explorer).
 
-1. Nel portale Microsoft 365 Defender ( ), scegliere Posta <https://security.microsoft.com> **elettronica &** \> **collaborazione Explorer** (o **Rilevamenti in tempo reale**). In questo esempio viene utilizzato Explorer.
-
-2. Scegliere **E-mail**  \> **phish dal** menu Visualizza.
+2. **Nell'elenco a** discesa Visualizza scegliere **E-mail** \> **Phish.**
 
    > [!div class="mx-imgBorder"]
    > ![Menu Visualizza per Esplora risorse nel contesto di phishing](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Fare **clic su Mittente** e quindi scegliere **URL Fare** clic su \> **verdetto.**
+3. Fare **clic su** Mittente e quindi scegliere URL **Fare** clic \> **su Verdetto** nell'elenco a discesa.
 
-4. Selezionare una o più opzioni, ad esempio **Blocca** e  Blocca ignorate, e quindi selezionare il pulsante Aggiorna sulla stessa riga delle opzioni per applicare il filtro. Non aggiornare la finestra del browser.
+4. Nelle opzioni visualizzate seleziona una o più  opzioni, ad esempio Blocca e Blocca ignorate, quindi fai clic **su** Aggiorna (non aggiornare la finestra del browser).
 
     :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL e clic su verdetti":::
 
-   Il report viene aggiornato per visualizzare due diverse tabelle URL nella scheda URL del report:
+   Il report viene aggiornato per visualizzare due diverse tabelle URL nella **scheda URL** del report:
 
    - **Gli URL principali sono** gli URL nei messaggi filtrati e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione Posta elettronica phish, questo elenco contiene in genere URL legittimi. Gli utenti malintenzionati includono una combinazione di URL buoni e non recapitati nei messaggi per tentare di ottenerli, ma rendono i collegamenti dannosi più interessanti. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica, ma questa colonna è nascosta per semplificare la visualizzazione.
 

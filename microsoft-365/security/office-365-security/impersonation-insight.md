@@ -19,12 +19,12 @@ description: Gli amministratori possono scoprire come funzionano le informazioni
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6aab20cc9050152b7ba9f86baed887969ad4da0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 53baecd100851eb5ab05fe79751961baef3acd5c
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029016"
+ms.locfileid: "53029670"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Informazioni dettagliate sulla rappresentazione in Defender per Office 365
 
@@ -53,7 +53,6 @@ La protezione della rappresentazione fa parte delle impostazioni dei criteri ant
 - Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alle informazioni dettagliate sulla rappresentazione nella **pagina Anti-phishing,** utilizzare <https://security.microsoft.com/antiphishing> . Per passare direttamente alla pagina **informazioni dettagliate sulla rappresentazione,** utilizzare <https://security.microsoft.com/impersonationinsight> .
 
 - È necessario disporre delle autorizzazioni nel portale Microsoft 365 Defender per poter eseguire le procedure descritte in questo articolo:
-
   - **Gestione organizzazione**
   - **Amministratore della sicurezza**
   - **Lettore sicurezza**
@@ -63,7 +62,7 @@ La protezione della rappresentazione fa parte delle impostazioni dei criteri ant
 
   **Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nel interfaccia di amministrazione di Microsoft 365 offre agli utenti le  autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
-- Abiliti e configura la protezione dalla rappresentazione nei criteri anti-phishing in Microsoft Defender per Office 365. La protezione della rappresentazione non è abilitata per impostazione predefinita. Per ulteriori informazioni, vedere [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+- Abiliti e configura la protezione dalla rappresentazione nei criteri anti-phishing in Microsoft Defender per Office 365. La protezione della rappresentazione non è abilitata per impostazione predefinita. Per ulteriori informazioni, vedere [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Aprire le informazioni dettagliate sulla rappresentazione nel Microsoft 365 Defender portale
 

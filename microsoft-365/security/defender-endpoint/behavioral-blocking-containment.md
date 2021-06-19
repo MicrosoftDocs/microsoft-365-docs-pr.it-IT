@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c480bb83465e6057cd1cf29f1f5077f2a0e165e8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 98ea631536bbfa9e1858f70ae3a0ea9de8743572
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028824"
+ms.locfileid: "53029778"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocco e contenimento comportamentale
 
@@ -36,9 +36,9 @@ ms.locfileid: "53028824"
 
 ## <a name="overview"></a>Panoramica
 
-Il panorama delle minacce di oggi è invaso da [malware senza file](/windows/security/threat-protection/intelligence/fileless-threats) e che vive fuori dalla terra, minacce altamente polimorfiche che mutano più velocemente rispetto alle soluzioni tradizionali possono tenere il passo e attacchi gestiti dall'uomo che si adattano a ciò che gli avversari trovano nei dispositivi compromessi. Le soluzioni di sicurezza tradizionali non sono sufficienti per arrestare tali attacchi; hai bisogno di funzionalità supportate dall'intelligenza artificiale (AI) e dall'apprendimento dei dispositivi (ML), come il blocco comportamentale e il contenimento, incluse in [Defender for Endpoint.](/windows/security) 
+Il panorama delle minacce di oggi è invaso da [malware senza file](/windows/security/threat-protection/intelligence/fileless-threats) e che vive fuori dalla terra, minacce altamente polimorfiche che mutano più velocemente rispetto alle soluzioni tradizionali possono tenere il passo e attacchi gestiti dall'uomo che si adattano a ciò che gli avversari trovano nei dispositivi compromessi. Le soluzioni di sicurezza tradizionali non sono sufficienti per arrestare tali attacchi; hai bisogno di funzionalità supportate dall'intelligenza artificiale (AI) e dall'apprendimento dei dispositivi (ML), come il blocco comportamentale e il contenimento, incluse in [Defender for Endpoint.](/windows/security)
 
-Le funzionalità di blocco e contenimento comportamentali possono aiutare a identificare e arrestare le minacce, in base ai comportamenti e agli alberi di processo, anche quando la minaccia ha iniziato l'esecuzione. I componenti e le funzionalità di protezione, EDR e Defender for Endpoint di nuova generazione funzionano insieme nelle funzionalità di blocco e contenimento comportamentali. 
+Le funzionalità di blocco e contenimento comportamentali possono aiutare a identificare e arrestare le minacce, in base ai comportamenti e agli alberi di processo, anche quando la minaccia ha iniziato l'esecuzione. I componenti e le funzionalità di protezione, EDR e Defender for Endpoint di nuova generazione funzionano insieme nelle funzionalità di blocco e contenimento comportamentali.
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Blocco e contenimento comportamentale":::
 
@@ -50,7 +50,7 @@ Le funzionalità di blocco e contenimento comportamentali funzionano con più co
 
 - [Defender for Endpoint](overview-endpoint-detection-response.md) ha un'ampia gamma di ottica tra identità, posta elettronica, dati e app, oltre ai segnali di comportamento di rete, endpoint e kernel ricevuti tramite EDR. Un componente di [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender for Endpoint elabora e correla questi segnali, genera avvisi di rilevamento e connette gli avvisi correlati in eventi imprevisti.
 
-Con queste funzionalità, è possibile impedire o bloccare più minacce, anche se iniziano a essere eseguite. Ogni volta che viene rilevato un comportamento sospetto, la minaccia viene contenuta, vengono creati avvisi e le minacce vengono arrestate nelle loro tracce. 
+Con queste funzionalità, è possibile impedire o bloccare più minacce, anche se iniziano a essere eseguite. Ogni volta che viene rilevato un comportamento sospetto, la minaccia viene contenuta, vengono creati avvisi e le minacce vengono arrestate nelle loro tracce.
 
 L'immagine seguente mostra un esempio di un avviso attivato dalle funzionalità di blocco e contenimento comportamentali:
 
@@ -58,13 +58,13 @@ L'immagine seguente mostra un esempio di un avviso attivato dalle funzionalità 
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Componenti del blocco comportamentale e del contenimento
 
-- **Regole di riduzione della [](attack-surface-reduction.md) superficie** di attacco basata su criteri sul client L'esecuzione di comportamenti di attacco comuni predefiniti non è consentita, in base alle regole di riduzione della superficie di attacco. Quando questi comportamenti tentano di essere eseguiti, possono essere visualizzati in Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) come avvisi informativi. Le regole di riduzione della superficie di attacco non sono abilitate per impostazione predefinita. configurare i criteri nella [Microsoft 365 Defender](microsoft-defender-security-center.md).
+- **Regole di riduzione della [](attack-surface-reduction.md) superficie** di attacco basata su criteri sul client L'esecuzione di comportamenti di attacco comuni predefiniti non è consentita, in base alle regole di riduzione della superficie di attacco. Quando questi comportamenti tentano di essere eseguiti, possono essere visualizzati in Microsoft 365 Defender <https://security.microsoft.com> avvisi informativi. Le regole di riduzione della superficie di attacco non sono abilitate per impostazione predefinita. configurare i criteri nella [Microsoft 365 Defender](microsoft-defender-security-center.md).
 
-- **[Blocco comportamentale client](client-behavioral-blocking.md)** Le minacce sugli endpoint vengono rilevate tramite machine learning e quindi vengono bloccate e corretti automaticamente. Il blocco comportamentale del client è abilitato per impostazione predefinita. 
+- **[Blocco comportamentale client](client-behavioral-blocking.md)** Le minacce sugli endpoint vengono rilevate tramite machine learning e quindi vengono bloccate e corretti automaticamente. Il blocco comportamentale del client è abilitato per impostazione predefinita.
 
-- **[Il blocco del ciclo di feedback](feedback-loop-blocking.md)** (noto anche come protezione rapida) I rilevamenti delle minacce vengono osservati tramite l'intelligenza comportamentale. Le minacce vengono arrestate e impedite l'esecuzione su altri endpoint. Il blocco del ciclo di feedback è abilitato per impostazione predefinita. 
+- **[Il blocco del ciclo di feedback](feedback-loop-blocking.md)** (noto anche come protezione rapida) I rilevamenti delle minacce vengono osservati tramite l'intelligenza comportamentale. Le minacce vengono arrestate e impedite l'esecuzione su altri endpoint. Il blocco del ciclo di feedback è abilitato per impostazione predefinita.
 
-- **[Rilevamento e risposta degli endpoint (EDR) in modalità blocco](edr-in-block-mode.md)** Gli artefatti o i comportamenti dannosi osservati tramite la protezione post-violazione sono bloccati e contenuti. EDR in modalità blocco funziona anche se Antivirus Microsoft Defender non è la soluzione antivirus principale. La EDR in modalità blocco non è abilitata per impostazione predefinita, ma viene attivata in Microsoft 365 Defender. 
+- **[Rilevamento e risposta degli endpoint (EDR) in modalità blocco](edr-in-block-mode.md)** Gli artefatti o i comportamenti dannosi osservati tramite la protezione post-violazione sono bloccati e contenuti. EDR in modalità blocco funziona anche se Antivirus Microsoft Defender non è la soluzione antivirus principale. La EDR in modalità blocco non è abilitata per impostazione predefinita, ma viene attivata in Microsoft 365 Defender.
 
 Ci si aspetta di più nell'area del blocco comportamentale e del contenimento, poiché Microsoft continua a migliorare le funzionalità e le funzionalità di protezione dalle minacce. Per vedere cosa è pianificato e in implementazione ora, visitare la roadmap [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
 
@@ -88,12 +88,12 @@ Di seguito sono riportati due esempi reali di blocco comportamentale e contenime
 
 ### <a name="example-1-credential-theft-attack-against-100-organizations"></a>Esempio 1: attacco di furto di credenziali a 100 organizzazioni
 
-Come descritto in [In hot pursuit of elusive threats: AI-driven behavior-based blocking stops](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)attacks in their tracks , a credential theft attack against 100 organizations around the world was stopped by behavioral blocking and containment capabilities. I messaggi di posta elettronica di phishing che contenevano un documento di richiamo sono stati inviati alle organizzazioni di destinazione. Se un destinatario ha aperto l'allegato, un documento remoto correlato è stato in grado di eseguire codice sul dispositivo dell'utente e caricare il malware Lokibot, che ha rubato le credenziali, ha esfiltrato i dati rubati e ha atteso ulteriori istruzioni da un server di comando e controllo. 
+Come descritto in [In hot pursuit of elusive threats: AI-driven behavior-based blocking stops](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)attacks in their tracks , a credential theft attack against 100 organizations around the world was stopped by behavioral blocking and containment capabilities. I messaggi di posta elettronica di phishing che contenevano un documento di richiamo sono stati inviati alle organizzazioni di destinazione. Se un destinatario ha aperto l'allegato, un documento remoto correlato è stato in grado di eseguire codice sul dispositivo dell'utente e caricare il malware Lokibot, che ha rubato le credenziali, ha esfiltrato i dati rubati e ha atteso ulteriori istruzioni da un server di comando e controllo.
 
 I modelli di apprendimento dei dispositivi basati sul comportamento in Defender for Endpoint hanno intercettato e arrestato le tecniche dell'autore dell'attacco in due punti della catena di attacco:
 
 - Il primo livello di protezione ha rilevato il comportamento di exploit. I classificatori di apprendimento dei dispositivi nel cloud hanno identificato correttamente la minaccia come e hanno immediatamente indicato al dispositivo client di bloccare l'attacco.
-- Il secondo livello di protezione, che ha consentito di arrestare i casi in cui l'attacco è passato al primo livello, ha rilevato la cavità del processo, ha interrotto il processo e rimosso i file corrispondenti (ad esempio Lokibot). 
+- Il secondo livello di protezione, che ha consentito di arrestare i casi in cui l'attacco è passato al primo livello, ha rilevato la cavità del processo, ha interrotto il processo e rimosso i file corrispondenti (ad esempio Lokibot).
 
 Mentre l'attacco è stato rilevato e arrestato, gli avvisi, ad esempio un "avviso di accesso iniziale", sono stati attivati e visualizzati nel portale di [Microsoft 365 Defender](microsoft-defender-security-center.md) (in precedenza il Microsoft Defender Security Center):
 
@@ -107,15 +107,15 @@ Come descritto nel recente [](https://www.microsoft.com/security/blog/2020/03/09
 
 :::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="Avviso NTLM per malware Juicy Potato":::
 
-La minaccia si è trasformata in malware; si tratta di una nuova variante non vista prima di un noto strumento di hacking chiamato Juicy Potato, che viene utilizzato dagli utenti malintenzionati per ottenere l'escalation dei privilegi su un dispositivo. 
+La minaccia si è trasformata in malware; si tratta di una nuova variante non vista prima di un noto strumento di hacking chiamato Juicy Potato, che viene utilizzato dagli utenti malintenzionati per ottenere l'escalation dei privilegi su un dispositivo.
 
 Minuti dopo l'attivazione dell'avviso, il file è stato analizzato e confermato dannoso. Il processo è stato arrestato e bloccato, come illustrato nell'immagine seguente:
 
 :::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artefatto bloccato":::
 
-Pochi minuti dopo il blocco dell'artefatto, più istanze dello stesso file sono state bloccate sullo stesso dispositivo, impedendo la distribuzione di altri utenti malintenzionati o di altro malware nel dispositivo. 
+Pochi minuti dopo il blocco dell'artefatto, più istanze dello stesso file sono state bloccate sullo stesso dispositivo, impedendo la distribuzione di altri utenti malintenzionati o di altro malware nel dispositivo.
 
-Questo esempio mostra che con le funzionalità di blocco e contenimento comportamentali, le minacce vengono rilevate, contenute e bloccate automaticamente. 
+Questo esempio mostra che con le funzionalità di blocco e contenimento comportamentali, le minacce vengono rilevate, contenute e bloccate automaticamente.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

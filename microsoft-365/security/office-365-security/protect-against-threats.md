@@ -20,12 +20,12 @@ description: Gli amministratori possono conoscere la protezione dalle minacce in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 407838c815a85ce7c73322a0de176970ee93e537
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878329"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029610"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -61,8 +61,8 @@ Le funzionalità di protezione dalle minacce sono incluse in *tutte le* sottoscr
 |Protezione anti-phishing|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protezione dalla posta indesiderata|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Eliminazione automatica zero ore (per la posta elettronica)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protezione da URL e file dannosi nei documenti Office posta elettronica (collegamenti sicuri e allegati sicuri)|[Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams di lavoro|[Microsoft Defender per Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
+|Protezione da URL e file dannosi nei documenti di posta elettronica e Office (Safe collegamenti e Safe allegati)|[Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Attivare gli Safe allegati per SharePoint, OneDrive e Microsoft Teams di lavoro|[Microsoft Defender per Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
 |Protezione avanzata anti-phishing|[Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Ruoli e autorizzazioni
@@ -139,11 +139,12 @@ La procedura seguente descrive come configurare il criterio anti-phishing predef
        - **If mailbox intelligence detects an impersonated user** <sup>\*</sup> : Select Move message to the **recipients' Junk Email folders** (Standard) or Quarantine the **message** (Strict).
        - **If message is detected as spoof**: Select Move message to the **recipients' Junk Email folders** (Standard) or Quarantine the **message** (Strict).
      - **Sezione Suggerimenti per &** sicurezza: configurare le impostazioni seguenti:
+       - **Mostra primo contatto suggerimento per la sicurezza**: Seleziona (attiva).
        - **Show user impersonation suggerimento per la sicurezza** <sup>\*</sup> : Select (turn on).
        - **Show domain impersonation suggerimento per la sicurezza** <sup>\*</sup> : Select (turn on).
        - **Show user impersonation unusual characters suggerimento per la sicurezza** <sup>\*</sup> : Select (turn on).
        - **Show (?) for unauthenticated senders for spoof**: Select (turn on).
-       - **Mostra tag "via":** seleziona (attiva) se questa impostazione è disponibile.
+       - **Mostra tag "via":** seleziona (attiva).
 
      Al termine, scegliere **Salva**.
 
@@ -151,7 +152,7 @@ La procedura seguente descrive come configurare il criterio anti-phishing predef
 
 4. Fare **clic su** Salva e quindi su **Chiudi**
 
-Per istruzioni dettagliate sulla configurazione dei criteri anti-phishing, vedere [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) e [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+Per istruzioni dettagliate sulla configurazione dei criteri anti-phishing, vedere [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) e [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>Parte 3 - Protezione da posta indesiderata in EOP
 
@@ -169,22 +170,22 @@ Per ulteriori informazioni sulle impostazioni consigliate per la protezione da p
 
 Per istruzioni dettagliate sulla configurazione dei criteri di protezione da posta indesiderata, vedere [Configure anti-spam policies in EOP.](configure-your-spam-filter-policies.md)
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4 - Protezione da URL e file dannosi (collegamenti sicuri e allegati sicuri in Defender per Office 365)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4 - Protezione da URL e file dannosi (collegamenti Safe e allegati Safe in Defender per Office 365)
 
-La protezione time-of-click da URL e file dannosi è disponibile nelle sottoscrizioni che includono [Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Viene configurato tramite i criteri [Allegati sicuri](safe-attachments.md) e [Collegamenti](safe-links.md) sicuri.
+La protezione time-of-click da URL e file dannosi è disponibile nelle sottoscrizioni che includono [Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Viene configurato tramite i criteri Safe [allegati](safe-attachments.md) [e Safe collegamenti.](safe-links.md)
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Criteri allegati sicuri in Microsoft Defender per Office 365
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Safe Criteri allegati in Microsoft Defender per Office 365
 
-Per configurare allegati [sicuri,](safe-attachments.md)creare almeno un criterio Collegamenti sicuri.
+Per configurare Safe [allegati,](safe-attachments.md)creare almeno un criterio Safe collegamenti.
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere **Criteri** di gestione delle minacce Allegati sicuri \>  \> **ATP** e quindi fare clic su **Crea**.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere **Criteri** di gestione delle minacce \>  \> **ATP Safe allegati** e quindi fare clic su **Crea.**
 
-2. Nella procedura **guidata nuovo criterio allegati** sicuri visualizzata, configurare le impostazioni seguenti:
+2. Nella procedura **guidata nuovo Safe allegati** visualizzata configurare le impostazioni seguenti:
 
    - Nella casella **Nome** digitare `Block malware` e quindi fare clic su **Avanti.**
 
    - Nella pagina **Impostazioni** configurazione delle impostazioni seguenti:
-     - Nella sezione **Allegati sicuri risposta malware sconosciuta** scegliere **Blocca**.
+     - Nella sezione **Safe allegati risposta malware sconosciuta** scegliere **Blocca**.
      - Nella sezione **Reindirizza allegato** selezionare l'opzione **Abilita reindirizzamento.** Specificare l'indirizzo di posta elettronica dell'amministratore o dell'operatore della sicurezza dell'organizzazione, che rivedrà i file rilevati.
 
      Fare clic su **Avanti**.
@@ -193,21 +194,21 @@ Per configurare allegati [sicuri,](safe-attachments.md)creare almeno un criterio
 
 4. Rivedere le impostazioni e quindi fare clic su **Fine.**
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Criteri collegamenti sicuri in Microsoft Defender per Office 365
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Safe Criteri collegamenti in Microsoft Defender per Office 365
 
-Per configurare collegamenti [sicuri,](safe-links.md)esaminare e modificare le impostazioni globali per Collegamenti sicuri e creare almeno un criterio Collegamenti sicuri.
+Per configurare [Safe](safe-links.md)collegamenti, esaminare e modificare le impostazioni globali per i collegamenti Safe e creare almeno un criterio Safe collegamenti.
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)  scegliere Criteri di gestione delle minacce Collegamenti sicuri \>  \> **ATP,** fare clic su **Impostazioni** globali e quindi configurare le impostazioni seguenti:
+1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere  Criteri di gestione delle minacce COLLEGAMENTI \>  \> **SAFE ATP** e fare clic su **Impostazioni** globali e quindi configurare le impostazioni seguenti:
 
-   - Verificare **che l'opzione Usa collegamenti sicuri in: Office 365 applicazioni** sia attivata: ![ Attiva/Disattiva. ](../../media/scc-toggle-on.png)
-   - **Non tenere traccia quando gli utenti fanno clic su Collegamenti sicuri**: Disattiva questa impostazione per tenere traccia dei clic degli utenti: Disattiva ![ ](../../media/scc-toggle-off.png) .
+   - Verificare **Usa Safe collegamenti in: Office 365 le applicazioni** sono attivate: ![ Attiva/Disattiva. ](../../media/scc-toggle-on.png)
+   - **Non tenere traccia quando gli utenti fanno clic Safe** collegamenti : Disattiva questa impostazione per tenere traccia dei clic degli utenti: Disattiva ![ ](../../media/scc-toggle-off.png) .
    - Non consentire agli utenti di fare clic su collegamenti sicuri **all'URL originale:** verifica che questa impostazione sia attivata: ![ Attiva/ ](../../media/scc-toggle-on.png) attiva.
 
    Al termine, scegliere **Salva**.
 
-2. Tornare alla pagina collegamenti sicuri principale, fare clic su **Crea.**
+2. Tornare alla pagina principale dei Safe, fare clic su **Crea.**
 
-3. Nella procedura **guidata per la creazione di collegamenti** sicuri visualizzata configurare le impostazioni seguenti:
+3. Nella procedura **guidata per la creazione Safe dei** collegamenti di gruppo visualizzata, configurare le impostazioni seguenti:
 
    - Nella casella **Nome** digitare un nome, ad esempio `Safe Links` , e quindi fare clic su **Avanti.**
 
@@ -227,18 +228,18 @@ Per configurare collegamenti [sicuri,](safe-links.md)esaminare e modificare le i
 
 Per altre informazioni, vedere [Configurare i criteri Collegamenti sicuri](set-up-safe-links-policies.md).
 
-## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Parte 5- Verificare che gli allegati sicuri SharePoint, OneDrive e Microsoft Teams sia attivato
+## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Parte 5 - Verificare che Safe allegati per SharePoint, OneDrive e Microsoft Teams sia attivato
 
 Carichi di lavoro come SharePoint, OneDrive e Teams sono creati per la collaborazione. L'uso di Defender Office 365 consente di bloccare e rilevare file identificati come dannosi nei siti del team e nelle raccolte documenti. Per altre informazioni su come funziona, [vedere](mdo-for-spo-odb-and-teams.md).
 
 > [!IMPORTANT]
 > Prima di iniziare questa procedura, verificare che la registrazione di controllo sia già attivata **per l'Microsoft 365 locale.** Questa operazione viene in genere eseguita da un utente a cui è assegnato il ruolo Log di controllo in Exchange Online. Per ulteriori informazioni, vedere Attivare o disattivare la [ricerca nei log di controllo](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-1. Nel Centro [sicurezza & conformità](https://protection.office.com)scegliere **Criteri** di gestione delle minacce Allegati sicuri ATP e quindi fare clic \>  \> su **Impostazioni globali.**
+1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere  Criteri di gestione delle minacce \>  \> **ATP Safe allegati** e quindi fare clic su Impostazioni **globali.**
 
 2. Verificare che l'interruttore Attiva Defender per Office 365 **per SharePoint, OneDrive** e Microsoft Teams sia a destra: Attiva e quindi fai clic ![ su ](../../media/scc-toggle-on.png) **Salva.**
 
-3. Esaminare (e, se appropriato, modificare) [](set-up-safe-attachments-policies.md) i criteri Allegati sicuri e Collegamenti sicuri [dell'organizzazione.](set-up-safe-links-policies.md)
+3. Esaminare (e, se appropriato, modificare) [](set-up-safe-attachments-policies.md) i criteri allegati Safe dell'organizzazione e [Safe dei collegamenti.](set-up-safe-links-policies.md)
 
 4. (Scelta consigliata) Come amministratore globale o amministratore di SharePoint Online, eseguire il cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** con il parametro _DisallowInfectedFileDownload_ impostato su `$true` .
 

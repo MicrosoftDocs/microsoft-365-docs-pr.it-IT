@@ -21,12 +21,12 @@ ms.custom:
 description: Gli amministratori possono conoscere le funzionalità di protezione anti-phishing in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538340"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029238"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protezione anti-phishing in Microsoft 365
 
@@ -65,7 +65,7 @@ EOP (ovvero, Microsoft 365 senza Microsoft Defender per Office 365) contiene fun
 
 Microsoft Defender per Office 365 contiene funzionalità anti-phishing aggiuntive e avanzate:
 
-- **Criteri anti-phishing in Microsoft Defender per Office 365**: configurare le impostazioni di protezione della rappresentazione per mittenti e domini di mittente specifici, impostazioni di intelligence delle cassette postali e soglie avanzate di phishing regolabili. Per ulteriori informazioni, vedere [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Per ulteriori informazioni sulle differenze tra i criteri anti-phishing in EOP e i criteri anti-phishing in Defender per Office 365, vedere [Criteri anti-phishing in Microsoft 365](set-up-anti-phishing-policies.md).
+- **Criteri anti-phishing in Microsoft Defender per Office 365**: configurare le impostazioni di protezione della rappresentazione per mittenti e domini di mittente specifici, impostazioni di intelligence delle cassette postali e soglie avanzate di phishing regolabili. Per ulteriori informazioni, vedere [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md). Per ulteriori informazioni sulle differenze tra i criteri anti-phishing in EOP e i criteri anti-phishing in Defender per Office 365, vedere [Criteri anti-phishing in Microsoft 365](set-up-anti-phishing-policies.md).
 
 - **Visualizzazioni campagna**: Machine learning e altre euristiche identificano e analizzano i messaggi coinvolti in attacchi di phishing coordinati contro l'intero servizio e l'organizzazione. Per altre informazioni, vedi [Visualizzazioni campagna in Microsoft Defender per Office 365](campaigns.md).
 
