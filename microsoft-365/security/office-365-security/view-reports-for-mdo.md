@@ -1,5 +1,5 @@
 ---
-title: Visualizzare defender per Office 365 report nel dashboard report
+title: Visualizzazione report di Microsoft Defender per Office 365
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,18 +16,18 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Trova e usa i report per Microsoft Defender per Office 365 nel portale Microsoft 365 Defender.
+description: Gli amministratori possono scoprire come trovare e usare Defender per Office 365 report disponibili nel portale Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a5c45f58ee83de11712b198c85a8e423314289bf
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 5b9279614571c123ad92f1684f86175b410c6c5c
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930235"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022842"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-microsoft-365-defender-portal"></a>Visualizzare defender per Office 365 report nel dashboard report nel portale Microsoft 365 Defender
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Visualizzare i report di Defender Office 365 nel Microsoft 365 Defender portale
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,230 +35,67 @@ ms.locfileid: "52930235"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender per le organizzazioni Office 365 (ad esempio, abbonamenti Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 1 o componenti aggiuntivi Microsoft Defender per Office 365 Piano 2) contengono una serie di report relativi alla sicurezza. Se si dispone delle autorizzazioni [necessarie,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)è possibile visualizzare questi report nel portale di Microsoft 365 Defender andando a **Report** Collaborazione tramite posta elettronica \>  \> **Rapporti di collaborazione tramite posta elettronica**. Per passare direttamente al dashboard dei report, aprire <https://security.microsoft.com/emailandcollabreport> .
+Microsoft Defender per le organizzazioni Office 365 (ad esempio, abbonamenti Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 1 o componenti aggiuntivi Microsoft Defender per Office 365 Piano 2) contengono una serie di report relativi alla sicurezza. Se si dispone [delle](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)autorizzazioni necessarie, è possibile visualizzare questi  report nel portale di Microsoft 365 Defender andando a Rapporti e-mail & \> **collaborazione** \> **E-mail**& rapporti di collaborazione . Per passare direttamente alla pagina Rapporti di **collaborazione &** e-mail, aprire <https://security.microsoft.com/emailandcollabreport> .
 
-![Dashboard report nel portale di Microsoft 365 Defender](../../media/user-reported-messages.png)
-
-## <a name="defender-for-office-365-file-types-report"></a>Report tipi di file per Defender per Office 365
-
-Il **report Defender per Office 365 tipi di file** mostra il tipo di file rilevati come dannosi dagli allegati [sicuri.](safe-attachments.md)
-
- La visualizzazione aggregata del report consente 90 giorni di filtro, mentre la visualizzazione dettagli consente solo 10 giorni di filtro.
-
-Per visualizzare il report, aprire il [portale Microsoft 365 Defender,](https://security.microsoft.com)passare **a** Dashboard report e selezionare Defender per Office 365 \>  tipi **di file.** Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ATPFileReport> .
-
-![Widget Defender per Office 365 tipi di file nel dashboard report](../../media/atp-file-types-report-widget.png)
+![Pagina dei & di collaborazione tramite posta elettronica nel portale Microsoft 365 Defender posta elettronica](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
-> Le informazioni contenute in questo report sono disponibili anche nel report defender per l Office 365 [di eliminazione dei messaggi.](#defender-for-office-365-message-disposition-report)
+>
+> I report di sicurezza della posta elettronica che non richiedono Defender per Office 365 sono descritti in [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).
+>
+> I report correlati al flusso di posta sono ora disponibili nell'interfaccia di amministrazione di Exchange (EAC). Per ulteriori informazioni su questi report, vedere [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
-### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Visualizzazione report per il report Defender per Office 365 tipi di file
-
-Sono disponibili le visualizzazioni seguenti:
-
-- **Visualizza dati per: File**: Il grafico contiene le informazioni seguenti:
-
-  - **Allegati Excel dannosi**
-  - **Allegati Flash dannosi**
-  - **Allegati PDF dannosi**
-  - **Allegati PowerPoint dannosi**
-  - **URL dannosi**
-  - **Allegati di Word dannosi**
-  - **Allegati eseguibili dannosi**
-  - **Altri**
-
-  Quando si passa il mouse su un determinato giorno (punto dati), è [](safe-attachments.md) possibile visualizzare la suddivisione dei tipi di file dannosi rilevati dagli allegati sicuri e dalla protezione [antimalware in EOP.](anti-malware-protection.md)
-
-  ![Visualizzazione file nel report Defender per Office 365 tipi di file](../../media/atp-file-types-report-file-view.png)
-
-  Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:
-
-  - **Data di inizio** e **Data fine**
-  - Gli stessi valori del tipo di file visibili nel grafico.
-
-- **Visualizza dati per: Messaggio**: Il grafico contiene le informazioni seguenti:
-
-  - **Blocca accesso**
-  - **Messaggi sostituiti**
-  - **Messaggi monitorati**
-  - **Sostituito da Recapito dinamico della** posta elettronica : per ulteriori informazioni, vedere Recapito dinamico nei criteri allegati [sicuri.](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)
-
-  ![Visualizzazione dei messaggi nel report Defender per Office 365 tipi di file](../../media/atp-file-types-report-message-view.png)
-
-  Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:
-
-  - **Data di inizio** e **Data fine**
-  - Gli stessi valori di eliminazione dei messaggi disponibili nel grafico e il valore **aggiuntivo Messaggi passati.**
-
-### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Visualizzazione tabella dettagli per il report Defender per Office 365 tipi di file
-
-Se si fa clic **su** Visualizza tabella dettagli , il report offre una visualizzazione quasi in tempo reale di tutti i clic che si verificano all'interno dell'organizzazione negli ultimi 10 giorni. Le informazioni visualizzate dipendono dal grafico visualizzato:
-
-- **Visualizza dati per: File**:
-
-  - **Data**
-  - **Indirizzo destinatario**
-  - **Indirizzo del mittente**
-  - **ID messaggio**: Disponibile nel **campo di intestazione Message-ID** nell'intestazione del messaggio e deve essere univoco. Un valore di esempio è `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (si notino le parentesi angolari).
-  - **File**
-
-  Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:
-
-  - **Data di inizio** e **Data fine**
-  - Gli stessi valori del tipo di file visibili nel grafico.
-
-- **Visualizza dati per: Messaggio**:
-
-  - **Data**
-  - **Indirizzo destinatario**
-  - **Indirizzo del mittente**
-  - **ID messaggio**
-  - **File**
-  - **Oggetto**
-
-  Se si fa **clic su Filtri**, è possibile modificare i risultati con i filtri seguenti:
-
-  - **Data di inizio** e **Data fine**
-  - Gli stessi valori di eliminazione dei messaggi disponibili nel grafico e il valore **aggiuntivo Messaggi passati.**
-
-Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
-
-## <a name="defender-for-office-365-message-disposition-report"></a>Report disposizione messaggi di Defender per Office 365
-
-Il **report Eliminazione messaggi ATP** mostra le azioni intraprese per i messaggi di posta elettronica che sono stati rilevati come contenuti dannosi.
-
-Per visualizzare il report, aprire il [portale di Microsoft 365 Defender,](https://security.microsoft.com)passare & Rapporti Di posta elettronica &  \> **collaborazione** \> **E-mail & rapporti** di collaborazione e selezionare **Defender** per l'eliminazione Office 365 messaggio . Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ATPMessageReport> .
-
-![Defender per Office 365 widget di eliminazione dei messaggi nel dashboard dei report](../../media/atp-message-disposition-report-widget.png)
+## <a name="safe-attachments-file-types-report"></a>Safe Report Tipi di file allegati
 
 > [!NOTE]
-> Le informazioni contenute in questo report sono disponibili anche nel [report Defender per Office 365 tipi di file.](#defender-for-office-365-file-types-report)
+> Il **Safe dei tipi di file allegati** alla fine andrà via. Le stesse informazioni sono disponibili nella relazione [sullo stato di Threat Protection.](#threat-protection-status-report)
 
-### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Visualizzazione report per defender per Office 365 di eliminazione dei messaggi
+## <a name="safe-attachments-message-disposition-report"></a>Safe Rapporto eliminazione messaggi allegati
 
-Sono disponibili le visualizzazioni seguenti:
-
-- **Visualizza dati per: Messaggio**: Il grafico contiene le informazioni seguenti:
-
-  - **Blocca accesso**
-  - **Messaggi sostituiti**
-  - **Messaggi monitorati**
-  - **Sostituito da Recapito dinamico della** posta elettronica : per ulteriori informazioni, vedere Recapito dinamico nei criteri allegati [sicuri.](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)
-
-  ![Visualizzazione dei messaggi nel report Defender per Office 365 tipi di file](../../media/atp-file-types-report-message-view.png)
-
-  Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:
-
-  - **Data di inizio** e **Data fine**
-  - Gli stessi valori di eliminazione dei messaggi disponibili nel grafico e il valore **aggiuntivo Messaggi passati.**
-
-- **Visualizza dati per: File**: Il grafico contiene le informazioni seguenti:
-
-  - **Allegati Excel dannosi**
-  - **Allegati Flash dannosi**
-  - **Allegati PDF dannosi**
-  - **Allegati PowerPoint dannosi**
-  - **URL dannosi**
-  - **Allegati di Word dannosi**
-  - **Allegati eseguibili dannosi**
-  - **Altri**
-
-  Quando si passa il mouse su un determinato giorno (punto dati), è [](safe-attachments.md) possibile visualizzare la suddivisione dei tipi di file dannosi rilevati dagli allegati sicuri e dalla protezione [antimalware in EOP.](anti-malware-protection.md)
-
-  ![Visualizzazione file nel report Defender per Office 365 tipi di file](../../media/atp-file-types-report-file-view.png)
-
-  Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:
-
-  - **Data di inizio** e **Data fine**
-  - Gli stessi valori del tipo di file visibili nel grafico.
-
-### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Visualizzazione tabella dei dettagli per il report sull'eliminazione Office 365 defender per i messaggi
-
-Se si fa clic **su** Visualizza tabella dettagli , il report offre una visualizzazione quasi in tempo reale di tutti i clic che si verificano all'interno dell'organizzazione negli ultimi 10 giorni. Le informazioni visualizzate dipendono dal grafico visualizzato:
-
-- **Visualizza dati per: Messaggio**:
-
-  - **Data**
-  - **Indirizzo destinatario**
-  - **Indirizzo del mittente**
-  - **ID messaggio**
-  - **File**
-  - **Oggetto**
-
-  Se si fa **clic su Filtri**, è possibile modificare i risultati con i filtri seguenti:
-
-  - **Data di inizio** e **Data fine**
-  - Gli stessi valori di eliminazione dei messaggi disponibili nel grafico e il valore **aggiuntivo Messaggi passati.**
-
-- **Visualizza dati per: File**:
-
-  - **Data**
-  - **Indirizzo destinatario**
-  - **Indirizzo del mittente**
-  - **ID messaggio**
-  - **File**
-
-  Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:
-
-  - **Data di inizio** e **Data fine**
-  - Gli stessi valori del tipo di file visibili nel grafico.
-
-Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
+> [!NOTE]
+> Il **Safe di eliminazione dei messaggi** allegati alla fine andrà via. Le stesse informazioni sono disponibili nella relazione [sullo stato di Threat Protection.](#threat-protection-status-report)
 
 ## <a name="mail-latency-report"></a>Rapporto latenza della posta
 
-Il **report Latenza della posta** mostra una visualizzazione aggregata della latenza di recapito e detonazione della posta riscontrata all'interno dell'organizzazione. I tempi di recapito della posta nel servizio sono influenzati da una serie di fattori e il tempo di recapito assoluto in secondi spesso non è un buon indicatore di esito positivo o di un problema. Un tempo di recapito lento in un giorno può essere considerato un tempo medio di recapito in un altro giorno o viceversa. Il **rapporto Latenza posta** tenta di qualificare il recapito dei messaggi in base ai dati statistici relativi ai tempi di recapito osservati di altri messaggi:
-
-- **50° percentile**: indica i tempi di recapito dei messaggi. È possibile considerare questo valore come un tempo medio di recapito.
-- **90° percentile**: indica un'elevata latenza per il recapito dei messaggi. Solo il 10% dei messaggi ha impiegato più tempo di questo valore per il recapito.
-- **99° percentile:** indica la latenza massima per il recapito dei messaggi.
+Il **report Latenza della posta** mostra una visualizzazione aggregata della latenza di recapito e detonazione della posta riscontrata all'interno dell'organizzazione. I tempi di recapito della posta nel servizio sono influenzati da una serie di fattori e il tempo di recapito assoluto in secondi spesso non è un buon indicatore di esito positivo o di un problema. Un tempo di recapito lento in un giorno può essere considerato un tempo medio di recapito in un altro giorno o viceversa. In questo modo si tenta di qualificare il recapito dei messaggi in base ai dati statistici relativi ai tempi di recapito osservati di altri messaggi.
 
 Il lato client e la latenza di rete non sono inclusi.
 
-Per visualizzare il report, aprire il portale di  [Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & collaborazione E-mail & rapporti di collaborazione e fare clic su Visualizza dettagli \>  \> **in** **Report latenza posta**.  Per passare direttamente al report, aprire <https://security.microsoft.com/mailLatencyReport> .
+Per visualizzare il report, aprire il portale [Microsoft 365 Defender,](https://security.microsoft.com)passare **a** Report e-mail & \> **collaborazione** \> **E-mail & collaborazione.** Nella pagina **Rapporti di collaborazione &** posta elettronica individuare Rapporto **latenza posta** e quindi fare clic su Visualizza **dettagli.** Per passare direttamente al report, aprire <https://security.microsoft.com/mailLatencyReport> .
 
-![Widget report latenza della posta nel dashboard report](../../media/mail-latency-report-widget.png)
+![Widget report di latenza della posta nella pagina Report & e-mail](../../media/mail-latency-report-widget.png)
 
-### <a name="report-view-for-the-mail-latency-report"></a>Visualizzazione report per il report Latenza posta
+Nella pagina **Rapporto latenza posta** sono disponibili le schede seguenti nella pagina **Rapporto latenza posta:**
 
-Quando si apre il report, la **scheda 50° percentile è** selezionata per impostazione predefinita.
+- **50° percentile**: indica i tempi di recapito dei messaggi. È possibile considerare questo valore come un tempo medio di recapito. Questa scheda è selezionata per impostazione predefinita.
+- **90° percentile**: indica un'elevata latenza per il recapito dei messaggi. Solo il 10% dei messaggi ha impiegato più tempo di questo valore per il recapito.
+- **99° percentile:** indica la latenza massima per il recapito dei messaggi.
 
-Per impostazione predefinita, questa visualizzazione contiene un grafico configurato con i filtri seguenti:
-
-- **Date**: Ultimi 7 giorni
-- **Visualizzazione messaggio**:
-  - Messaggi detonati
-
-Questo grafico mostra i messaggi organizzati nelle categorie seguenti:
+Indipendentemente dalla scheda selezionata, il grafico mostra i messaggi organizzati nelle categorie seguenti:
 
 - **Latenza recapito posta**
-- **Latenza detonazione**
+- **Detonazioni**
 
 Quando si passa il mouse su una categoria nel grafico, è possibile visualizzare una suddivisione della latenza in ogni categoria.
 
-![Rapporto latenza della posta](../../media/mail-latency-report.png)
+![50° percentile del rapporto latenza della posta](../../media/mail-latency-report-50th-percentile-view.png)
 
-Se si fa **clic su Filtro** nella visualizzazione report, è possibile modificare i risultati con i filtri seguenti:
+Se si fa **clic su Filtro**, è possibile filtrare sia il grafico che la tabella dei dettagli in base ai valori seguenti:
 
-- Tutti i messaggi
-- Messaggi che contengono allegati o URL
+- **Data (UTC)**: **Data inizio e** Data **fine**
+- **Visualizzazione messaggio:** uno dei valori seguenti:
+  - **Tutti i messaggi**
+  - **Messaggi che contengono allegati o URL**
+  - **Messaggi detonati**
 
-Se si fa clic sulla **scheda 90° percentile o** **sul 99° percentile,** verranno utilizzati gli stessi filtri predefiniti della **visualizzazione 50° percentile.**
+Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla** o **Cancella filtri.**
 
-### <a name="details-table-view-for-the-mail-latency-report"></a>Visualizzazione tabella dettagli per il report Latenza posta
+Nella tabella dei dettagli sotto il grafico sono disponibili le informazioni seguenti:
 
-Nella visualizzazione tabella dei dettagli vengono visualizzate le informazioni seguenti:
-
-- **Data**
-- **Percentili**
+- **Data (UTC)**
+- **Percentili**: **50,** **90** o **99**
 - **Conteggio messaggi**
 - **Latenza complessiva**
-
-![Dettagli del rapporto sulla latenza della posta](../../media/mail-latency-report-details.png)
-
-Quanto sopra mostra che il 14 novembre la latenza media riscontrata per tutti i messaggi recapitati e detonati è stata **di 108.033** secondi.
-
-La tabella dei dettagli contiene le stesse informazioni in ogni scheda.
 
 ## <a name="threat-protection-status-report"></a>Report dello stato di protezione dalle minacce
 
@@ -266,53 +103,44 @@ Il **rapporto sullo stato di** Protezione dalle minacce è un'unica visualizzazi
 
 ## <a name="url-threat-protection-report"></a>Report di protezione dalle minacce URL
 
-Il **report di protezione dalle minacce URL** fornisce visualizzazioni di riepilogo e tendenze per le minacce rilevate e le azioni eseguite sui clic sugli URL come parte di Collegamenti [sicuri.](safe-links.md) A questo report non saranno applicati i dati dei clic degli utenti a cui è applicato il criterio Collegamenti sicuri. L'opzione Non tenere traccia **dei clic degli utenti** è selezionata.
+Il **report di protezione dalle minacce URL** fornisce visualizzazioni di riepilogo e tendenze per le minacce rilevate e le azioni eseguite sui clic sugli URL nell'ambito Safe [collegamenti.](safe-links.md) In questo report non saranno disponibili i dati dei clic degli utenti a cui è applicato il criterio Safe collegamenti con l'opzione Non **tenere** traccia dei clic degli utenti selezionata.
 
-Per visualizzare il report, aprire il portale  [di Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & \> **collaborazione** \> **E-mail & report**  di collaborazione e fare clic su Visualizza dettagli in Report protezione **URL**. Per passare direttamente al report, aprire <https://security.microsoft.com/reports/URLProtectionActionReport> .
+Per visualizzare il report, aprire il portale [Microsoft 365 Defender,](https://security.microsoft.com)passare **a** Report e-mail & \> **collaborazione** \> **E-mail & collaborazione.** Nella pagina **Rapporti di collaborazione &** posta elettronica individuare la pagina Protezione **URL** e quindi fare clic su **Visualizza dettagli.** Per passare direttamente al report, aprire <https://security.microsoft.com/reports/URLProtectionActionReport> .
 
-![Widget report protezione URL nel dashboard report](../../media/url-protection-report-widget.png)
+![Widget report protezione URL nella pagina Report di collaborazione & e-mail](../../media/url-protection-report-widget.png)
+
+Le visualizzazioni disponibili nella pagina **del report di protezione** dalle minacce URL sono descritte nelle sezioni seguenti.
 
 > [!NOTE]
-> Si tratta di un *report sulle tendenze di protezione,* ovvero i dati rappresentano le tendenze in un set di dati più grande. Di conseguenza, i dati nella visualizzazione aggregata non sono disponibili in tempo reale qui, ma i dati nella visualizzazione della tabella dei dettagli sono, quindi potrebbe verificarsi una leggera discrepanza tra le due visualizzazioni.
+> Si tratta di un *report sulle tendenze di protezione,* ovvero i dati rappresentano le tendenze in un set di dati più grande. Di conseguenza, i dati nei grafici non sono disponibili in tempo reale qui, ma i dati nella tabella dei dettagli sono, quindi potresti vedere una leggera discrepanza tra i due. I grafici vengono aggiornati una volta ogni quattro ore e contengono dati per gli ultimi 90 giorni.
 
-### <a name="report-view-for-the-url-threat-protection-report"></a>Visualizzazione report per il report di protezione dalle minacce URL
+### <a name="view-data-by-url-click-protection-action"></a>Visualizzare i dati in base all'azione di protezione del clic dell'URL
 
-Il **report di protezione dalle** minacce URL include due visualizzazioni aggregate che vengono aggiornate una volta ogni quattro ore che mostra i dati degli ultimi 90 giorni:
+![Url Click Protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **Azione di protezione clic URL**: Mostra il numero di clic sull'URL da parte degli utenti nell'organizzazione e i risultati del clic:
+La visualizzazione azione Visualizza dati in base **all'URL** consente di visualizzare il numero di clic sull'URL da parte degli utenti nell'organizzazione e i risultati del clic:
 
-  - **Bloccato** (all'utente è stato impedito di passare all'URL)
-  - **Bloccato e su cui è stato fatto clic** (l'utente ha scelto di continuare a passare all'URL)
-  - **Fatto clic durante l'analisi** (l'utente ha fatto clic sul collegamento prima del completamento dell'analisi)
+- **Consentito**: all'utente è stato consentito passare all'URL.
+- **Bloccato:** all'utente è stato impedito di passare all'URL.
+- **Bloccato e su cui è stato fatto clic:** l'utente ha scelto di continuare a passare all'URL.
+- **Fatto clic durante l'analisi**: l'utente ha fatto clic sul collegamento prima del completamento dell'analisi.
 
-  Un clic indica che l'utente ha fatto clic attraverso la pagina di blocco al sito Web dannoso (gli amministratori possono disabilitare il clic nei criteri collegamenti sicuri).
+Un clic indica che l'utente ha fatto clic attraverso la pagina di blocco al sito Web dannoso (gli amministratori possono disabilitare il clic nei criteri Safe collegamenti).
 
-  Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:
+Se si fa **clic su Filtri**, è possibile modificare il report e la tabella dei dettagli selezionando uno o più dei valori seguenti nel riquadro a comparsa visualizzato:
 
-  - **Data di inizio** e **Data fine**
-  - Le azioni di protezione dei clic disponibili, oltre al valore **Consentito** (all'utente è stato consentito passare all'URL).
+- **Data (UTC)**: **Data inizio e** Data **fine**
+- **Rilevamento**:
+  - **Consentito**
+  - **Bloccato**
+  - **Bloccato e su cui è stato fatto clic**
+  - **Fatto clic durante l'analisi**
+- **Domini**: domini URL elencati nei risultati del report.
+- **Destinatari**
 
-  ![Url Click Protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla** o **Cancella filtri.**
 
-- **Url click by application**: Mostra il numero di clic sull'URL da parte delle applicazioni che supportano collegamenti sicuri:
-
-  - **Client di posta elettronica**
-  - **PowerPoint**
-  - **Word**
-  - **Excel**
-  - **OneNote**
-  - **Visio**
-  - **Teams**
-  - **Altro**
-
-  Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:
-
-  - **Data di inizio** e **Data fine**
-  - Applicazioni disponibili.
-
-### <a name="details-table-view-for-the-url-threat-protection-report"></a>Visualizzazione tabella dettagli per il report di protezione dalle minacce URL
-
-Se si **fa** clic su Visualizza tabella dettagli , il report offre una visualizzazione quasi in tempo reale di tutti i clic che si verificano nell'organizzazione negli ultimi 7 giorni con i dettagli seguenti:
+La tabella dei dettagli sotto il grafico fornisce la seguente visualizzazione quasi in tempo reale di tutti i clic che si sono verificato nell'organizzazione negli ultimi 7 giorni:
 
 - **Ora clic**
 - **Utente**
@@ -320,48 +148,75 @@ Se si **fa** clic su Visualizza tabella dettagli , il report offre una visualizz
 - **Azione**
 - **App**
 
-Se si fa **clic su** Filtri nella visualizzazione tabella dei dettagli, è possibile  filtrare in base allo stesso criterio della visualizzazione report e anche in base ai domini o ai destinatari separati da virgole. 
+### <a name="view-data-by-url-click-by-application"></a>Visualizzare i dati in base all'URL facendo clic per applicazione
 
-> [!NOTE]
-> Il **filtro Domini** fa riferimento al dominio URL elencato nei risultati del report. 
+![Url click by application view in the URL threat protection report](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
-Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
+La visualizzazione Visualizza i dati in base **all'URL** fa clic per applicazione mostra il numero di clic sull'URL da parte delle app che supportano Safe collegamenti:
+
+- **Client di posta elettronica**
+- **PowerPoint**
+- **Word**
+- **Excel**
+- **OneNote**
+- **Visio**
+- **Teams**
+- **Altri**
+
+Se si fa **clic su Filtri**, è possibile modificare il report e la tabella dei dettagli selezionando uno o più dei valori seguenti nel riquadro a comparsa visualizzato:
+
+- **Data (UTC)**: **Data inizio e** Data **fine**
+- **Rilevamento:** app disponibili nel grafico.
+- **Domini**: domini URL elencati nei risultati del report.
+- **Destinatari**
+
+Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla** o **Cancella filtri.**
+
+La tabella dei dettagli sotto il grafico fornisce la seguente visualizzazione quasi in tempo reale di tutti i clic che si sono verificato nell'organizzazione negli ultimi 7 giorni:
+
+- **Ora clic**
+- **Utente**
+- **URL**
+- **Azione**
+- **App**
 
 ## <a name="additional-reports-to-view"></a>Report aggiuntivi da visualizzare
 
 Oltre ai report descritti in questo articolo, sono disponibili diversi altri report, come descritto nella tabella seguente:
+
+<br>
 
 ****
 
 |Report|Argomento|
 |---|---|
 |**Explorer** (Microsoft Defender per Office 365 Piano 2) o rilevamenti in tempo reale **(Microsoft** Defender per Office 365 Piano 1)|[Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md)|
-|**Report di sicurezza della** posta elettronica, ad esempio il report Mittenti e destinatari principali, il rapporto Spoofing della posta elettronica e il report Rilevamenti posta indesiderata.|[Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender](view-email-security-reports.md)|
-|**Rapporti del flusso di** posta, ad esempio il rapporto inoltro, il rapporto sullo stato del flusso di posta e il rapporto Mittenti e destinatari principali.|[Visualizzare i report del flusso di posta nel portale Microsoft 365 Defender](view-mail-flow-reports.md)|
-|**Traccia URL per collegamenti sicuri** (solo PowerShell). L'output di questo cmdlet mostra i risultati delle azioni collegamenti sicuri degli ultimi sette giorni.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
+|**Report di sicurezza della** posta elettronica, ad esempio il report Mittenti e destinatari principali, il rapporto Spoofing della posta elettronica e il report Rilevamenti posta indesiderata.|[Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender posta elettronica](view-email-security-reports.md)|
+|**Rapporti del flusso di** posta, ad esempio il rapporto inoltro, il rapporto sullo stato del flusso di posta e il rapporto Mittenti e destinatari principali.|[Rapporti del flusso di posta nella nuova Exchange di amministrazione](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|**Traccia URL per Safe collegamenti** (solo PowerShell). L'output di questo cmdlet mostra i risultati delle azioni Safe collegamenti negli ultimi sette giorni.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |**Risultati del traffico di posta per EOP e Microsoft Defender per Office 365** (solo PowerShell). L'output di questo cmdlet contiene informazioni su Domain, Date, Event Type, Direction, Action e Message Count.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Rapporti dettagli posta per EOP e Defender per Office 365** di posta elettronica (solo PowerShell). L'output di questo cmdlet contiene dettagli su file o URL dannosi, tentativi di phishing, rappresentazione e altre potenziali minacce nei messaggi di posta elettronica o nei file.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quali autorizzazioni sono necessarie per visualizzare defender per Office 365 report?
 
-Per visualizzare e usare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel portale di Microsoft 365 Defender:
+Per visualizzare e utilizzare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel portale di Microsoft 365 Defender:
 
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
 - **Lettore sicurezza**
 - **Lettore globale**
 
-Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
+Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
 
-**Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+**Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nel interfaccia di amministrazione di Microsoft 365 offre agli utenti le  autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Cosa succede se i report non mostrano dati?
 
-Se non vedi i dati nel tuo Defender per i Office 365, verifica che i criteri siano configurati correttamente. L'organizzazione deve disporre [](set-up-safe-attachments-policies.md) [di](set-up-safe-links-policies.md) criteri collegamenti sicuri e allegati sicuri definiti per poter Office 365 protezione dei dati. Vedere anche [Protezione da posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md).
+Se non vedi i dati nel tuo Defender per i Office 365, verifica che i criteri siano configurati correttamente. L'organizzazione deve [disporre Safe](set-up-safe-links-policies.md) dei collegamenti e dei Safe [allegati](set-up-safe-attachments-policies.md) per poter disporre di Defender Office 365 protezione. Vedere anche [Protezione da posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Report e informazioni dettagliate intelligenti nel portale di Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
+[Report e informazioni dettagliate intelligenti nel portale Microsoft 365 Defender dati](reports-and-insights-in-security-and-compliance.md)
 
 [Autorizzazioni ruolo (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

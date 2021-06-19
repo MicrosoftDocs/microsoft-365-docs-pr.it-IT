@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender per Office 365 include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 00dcd5d8f5d18b59de67318049cc1e5807451f14
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904117"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022355"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender per Office 365
 
@@ -122,13 +122,7 @@ Microsoft Defender per Office 365 include un [dashboard avanzato per la creazion
 I report vengono aggiornati in tempo reale, fornendo le informazioni più recenti. Questi report forniscono anche suggerimenti e inviano avvisi in caso di minacce imminenti. I report predefiniti includono quanto segue:
 
 - [Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md)
-
 - [Report dello stato di protezione dalle minacce](view-reports-for-mdo.md#threat-protection-status-report)
-
-- [Report tipi di file per Defender per Office 365](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
-
-- [Report disposizione messaggi di Defender per Office 365](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
-
 - ... e molti altri.
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>Usare le funzionalità di analisi e risposta alle minacce

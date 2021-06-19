@@ -16,25 +16,25 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: e25fab99718c791c64b583283237815736c450ae
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: d3acf24d12b72a92af4246afdf11f67e01c45b2c
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793185"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022505"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurare le funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365 Defender include potenti [funzionalità di analisi e risposta](m365d-autoir.md) automatizzate che possono risparmiare molto tempo e fatica al team delle operazioni di sicurezza. Con [la correzione](m365d-autoir.md#how-automated-investigation-and-self-healing-works)automatica, queste funzionalità simulano i passaggi che un analista della sicurezza potrebbe eseguire per analizzare e rispondere alle minacce, solo più velocemente e con maggiore capacità di ridimensionamento.
+Microsoft 365 Defender include potenti [funzionalità di](m365d-autoir.md) analisi e risposta automatizzate che consentono di risparmiare tempo e fatica al team delle operazioni di sicurezza. Con [la correzione](m365d-autoir.md#how-automated-investigation-and-self-healing-works)automatica, queste funzionalità simulano i passaggi che un analista della sicurezza potrebbe eseguire per analizzare e rispondere alle minacce, solo più velocemente e con maggiore capacità di ridimensionamento.
 
 In questo articolo viene descritto come configurare l'indagine e la risposta automatizzate in Microsoft 365 Defender con questi passaggi:
 
 1. [Esaminare i prerequisiti](#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 2. [Rivedere o modificare il livello di automazione per i gruppi di dispositivi.](#review-or-change-the-automation-level-for-device-groups)
 3. [Esaminare i criteri di sicurezza e avviso in Office 365](#review-your-security-and-alert-policies-in-office-365).
-4. [Assicurati che Microsoft 365 Defender sia attivato.](#make-sure-microsoft-365-defender-is-turned-on)
+4. [Assicurati che Microsoft 365 Defender sia attivato](#make-sure-microsoft-365-defender-is-turned-on).
 
 Dopo aver configurato tutto, è possibile visualizzare e gestire le azioni di correzione [nel centro notifiche.](m365d-autoir-actions.md)
 
@@ -46,11 +46,11 @@ Dopo aver configurato tutto, è possibile visualizzare e gestire le azioni di co
 
 |Requisito|Dettagli|
 |---|---|
-|Requisiti dell'abbonamento|Una di queste sottoscrizioni: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 con il Microsoft 365 E5 Security aggiuntivo</li><li>Microsoft 365 A3 con il Microsoft 365 A5 Security</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> Vedi [i Microsoft 365 di licenza di Microsoft 365 Defender](./prerequisites.md#licensing-requirements).|
+|Requisiti dell'abbonamento|Una di queste sottoscrizioni: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 con il Microsoft 365 E5 Security aggiuntivo</li><li>Microsoft 365 A3 con il Microsoft 365 A5 Security</li><li>Office 365 E5 più Enterprise Mobility + Security E5 più Windows E5</li></ul> <p> Vedere [Microsoft 365 Defender di licenza .](./prerequisites.md#licensing-requirements)|
 |Requisiti di rete|<ul><li>[Microsoft Defender per l'identità](/azure-advanced-threat-protection/what-is-atp) abilitato</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configurato</li><li>[Integrazione di Microsoft Defender for Identity](/cloud-app-security/mdi-integration)</li></ul>|
 |Requisiti di computer Windows|<ul><li>Windows 10 versione 1709 o successiva installata (vedere Windows 10 [sulla versione](/windows/release-information/))</li><li>Sono stati configurati i seguenti servizi di protezione dalle minacce:<ul><li>[Microsoft Defender per endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protezione del contenuto della posta elettronica e dei Office di posta elettronica|[Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configurato|
-|Autorizzazioni|Per configurare le funzionalità di analisi e risposta automatizzate, è necessario disporre del ruolo amministratore globale o amministratore della sicurezza assegnato Azure Active Directory ( ) o nell'interfaccia di amministrazione di <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ). <p> Per ottenere le autorizzazioni necessarie per utilizzare le funzionalità di analisi e risposta automatizzate, ad esempio la revisione, l'approvazione o il rifiuto di azioni in sospeso, vedere Autorizzazioni necessarie per le attività del [centro notifiche.](m365d-action-center.md#required-permissions-for-action-center-tasks)|
+|Autorizzazioni|Per configurare le funzionalità di analisi e risposta automatizzate, è necessario disporre del ruolo amministratore globale o amministratore della sicurezza assegnato in Azure Active Directory ( ) o nella interfaccia di amministrazione di Microsoft 365 <https://portal.azure.com> ( <https://admin.microsoft.com> ). <p> Per ottenere le autorizzazioni necessarie per utilizzare le funzionalità di analisi e risposta automatizzate, ad esempio la revisione, l'approvazione o il rifiuto di azioni in sospeso, vedere Autorizzazioni necessarie per le attività del [centro notifiche.](m365d-action-center.md#required-permissions-for-action-center-tasks)|
 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>Rivedere o modificare il livello di automazione per i gruppi di dispositivi
@@ -58,7 +58,9 @@ Dopo aver configurato tutto, è possibile visualizzare e gestire le azioni di co
 L'esecuzione di indagini automatizzate e l'esecuzione automatica o solo dopo l'approvazione dei dispositivi dipendono da determinate impostazioni, ad esempio i criteri di gruppo dei dispositivi dell'organizzazione. Esaminare il livello di automazione configurato per i criteri di gruppo del dispositivo.
 
 1. Vai al Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e accedi.
+
 2. Vai a **Impostazioni**  >  **autorizzazioni Gruppi** di  >  **dispositivi**.
+
 3. Esaminare i criteri di gruppo dei dispositivi. In particolare, esaminare la **colonna Livello di** correzione. Ti consigliamo di **usare Full - correggere automaticamente le minacce.**  Potrebbe essere necessario creare o modificare i gruppi di dispositivi per ottenere il livello di automazione desiderato. Per informazioni su questa attività, vedere gli articoli seguenti:
    - [Modalità di correzione delle minacce](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    - [Creazione e gestione di gruppi di dispositivi](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
@@ -71,26 +73,32 @@ Anche se determinati avvisi e criteri di sicurezza possono attivare indagini aut
 
 Le impostazioni di sicurezza in Office 365 proteggere la posta elettronica e il contenuto. Per visualizzare o modificare queste impostazioni, seguire le indicazioni in [Protezione dalle minacce](../office-365-security/protect-against-threats.md).
 
-1. Nel centro Microsoft 365 sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) ), passare a Criteri & Regole **Criteri** \> **di minaccia**.
+1. Nel portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ), passare **a Criteri & Regole Criteri** di \> **minaccia**.
+
 2. Verificare che siano configurati tutti i criteri seguenti. Per ottenere assistenza e suggerimenti, vedere [Protezione dalle minacce.](/microsoft-365/security/office-365-security/protect-against-threats)
    - [Antimalware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
    - [Anti-phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
    - [Allegati sicuri](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Collegamenti sicuri](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Protezione da posta indesiderata](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-3. Assicurati che [Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) sia attivato.
-4. Assicurati che [l'eliminazione automatica](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) di zero ore per la protezione della posta elettronica sia in vigore.
-5. Questo passaggio è facoltativo. Esaminare i [Office 365 di avviso nel](../../compliance/alert-policies.md) Centro Microsoft 365 conformità ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Diversi criteri di avviso predefiniti sono nella categoria Gestione delle minacce. Alcuni di questi avvisi possono attivare un'indagine e una risposta automatizzate. Per ulteriori informazioni, vedere [Criteri di avviso predefiniti.](../../compliance/alert-policies.md#default-alert-policies)
 
-## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Assicurati che Microsoft 365 Defender sia attivato
+3. Assicurati che [Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) sia attivato.
+
+4. Assicurati che [l'eliminazione automatica](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) di zero ore per la protezione della posta elettronica sia in vigore.
+
+5. Questo passaggio è facoltativo. Esaminare i [Office 365 di avviso](../../compliance/alert-policies.md) nella Centro conformità Microsoft 365 ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Diversi criteri di avviso predefiniti sono nella categoria Gestione delle minacce. Alcuni di questi avvisi possono attivare un'indagine e una risposta automatizzate. Per ulteriori informazioni, vedere [Criteri di avviso predefiniti.](../../compliance/alert-policies.md#default-alert-policies)
+
+## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Assicurarsi che Microsoft 365 Defender sia attivato
 
 :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP su":::
 
-1. Accedere al Centro sicurezza Microsoft 365 sicurezza ( [https://security.microsoft.com](https://security.microsoft.com) ).
-2. Nel riquadro di spostamento cercare Eventi imprevisti, Centro notifiche e **Ricerca,** come illustrato nell'immagine precedente.
-   - Se vedi **Eventi imprevisti,** **Centro notifiche** e **Ricerca,** Microsoft 365 Defender è attivato. Vedi la [sezione Esaminare o modificare il livello di automazione](#review-or-change-the-automation-level-for-device-groups) per i gruppi di dispositivi di questo articolo.
-   - Se non vedi *Eventi* **imprevisti,** **Centro** notifiche o **Ricerca,** Microsoft 365 Defender potrebbe non essere attivato. In questo caso, [visitare il Centro notifiche](m365d-action-center.md).
-3. Nel riquadro di spostamento scegliere **Impostazioni**  >  **Microsoft 365 Defender**. Verifica che Microsoft 365 Defender sia attivato.
+1. Accedere al portale di Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
+
+2. Nel riquadro di spostamento cerca Eventi imprevisti **&** **avvisi,** Ricerca e Centro notifiche, come mostrato nell'immagine precedente. 
+   - Se vedi **Eventi imprevisti & avvisi,** Ricerca e Centro **notifiche,** Microsoft 365 Defender è attivato.  Vedi la [sezione Esaminare o modificare il livello di automazione](#review-or-change-the-automation-level-for-device-groups) per i gruppi di dispositivi di questo articolo.
+   - Se non sono *visualizzati* **Eventi imprevisti,** **Centro** notifiche o **Ricerca,** Microsoft 365 Defender potrebbe non essere attivato. In questo caso, [visitare il Centro notifiche](m365d-action-center.md).
+
+3. Nel riquadro di spostamento scegliere **Impostazioni**  >  **Microsoft 365 Defender**. Verificare che Microsoft 365 Defender sia attivato.
 
 > [!TIP]
 > Hai bisogno di assistenza? Vedi [Attivare Microsoft 365 Defender](m365d-enable.md).

@@ -1,6 +1,6 @@
 ---
 title: Eventi imprevisti in Microsoft 365 Defender
-description: Analizzare gli eventi imprevisti che si verificano tra dispositivi, utenti e cassette postali nel centro Microsoft 365 sicurezza.
+description: Analizzare gli eventi imprevisti osservati su dispositivi, utenti e cassette postali nel Microsoft 365 Defender portale.
 keywords: incidenti, avvisi, analizzare, analizzare, risposta, correlazione, attacco, computer, dispositivi, utenti, identità, identità, identità, cassetta postale, posta elettronica, 365, microsoft, m365, risposta agli incidenti, cyberattacco
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9970bb6d410f39ff5d796dec678a750342f0f599
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842027"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022782"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Eventi imprevisti in Microsoft 365 Defender
 
@@ -40,15 +40,15 @@ ms.locfileid: "52842027"
 > Vuoi provare Microsoft 365 Defender? Puoi [valutarlo in un ambiente lab](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [eseguire il progetto pilota in produzione](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
-Un evento imprevisto in Microsoft 365 Defender è una raccolta di avvisi correlati e dati associati che costituiscono la storia di un attacco. 
+Un evento imprevisto Microsoft 365 Defender è una raccolta di avvisi correlati e dati associati che costituiscono la storia di un attacco. 
 
 Microsoft 365 e le app creano avvisi quando rilevano un evento o un'attività sospetta o dannosa. I singoli avvisi forniscono indicazioni preziose su un attacco completato o in corso. Tuttavia, gli attacchi in genere utilizzano diverse tecniche per diversi tipi di entità, ad esempio dispositivi, utenti e cassette postali. Il risultato è più avvisi per più entità nel tenant. 
 
-Poiché l'aggregazione dei singoli avvisi per ottenere informazioni approfondite su un attacco può essere impegnativa e richiede molto tempo, Microsoft 365 Defender aggrega automaticamente gli avvisi e le informazioni associate in un evento imprevisto.
+Poiché l'aggregazione dei singoli avvisi per ottenere informazioni approfondite su un attacco può essere impegnativa e dispendiosa in termini di tempo, Microsoft 365 Defender aggrega automaticamente gli avvisi e le informazioni associate in un evento imprevisto.
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Come Microsoft 365 Defender correla gli eventi dalle entità a un evento imprevisto":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Come Microsoft 365 Defender gli eventi dalle entità a un evento imprevisto":::
 
-Guarda questa breve panoramica degli eventi imprevisti in Microsoft 365 Defender (4 minuti).
+Guarda questa breve panoramica degli incidenti in Microsoft 365 Defender (4 minuti).
 
 <br>
 
@@ -62,17 +62,17 @@ Il raggruppamento degli avvisi correlati in un evento imprevisto offre una visua
 - Ambito dell'attacco, ad esempio il numero di dispositivi, utenti e cassette postali che sono stati influenzati. 
 - Tutti i dati associati all'attacco.
 
-Se [abilitato,](m365d-enable.md)Microsoft 365 Defender [può](m365d-autoir.md) analizzare e risolvere automaticamente gli avvisi tramite l'automazione e l'intelligenza artificiale. È inoltre possibile eseguire ulteriori passaggi di correzione per risolvere l'attacco. 
+Se [abilitata,](m365d-enable.md)Microsoft 365 Defender può [analizzare e](m365d-autoir.md) risolvere automaticamente gli avvisi tramite l'automazione e l'intelligenza artificiale. È inoltre possibile eseguire ulteriori passaggi di correzione per risolvere l'attacco. 
 
-## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Eventi imprevisti e avvisi nel centro sicurezza Microsoft 365 sicurezza
+## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>Eventi imprevisti e avvisi nel Microsoft 365 Defender portale
 
-È possibile gestire gli eventi imprevisti & avvisi **> eventi** imprevisti sulla barra di avvio veloce del centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Di seguito viene riportato un esempio.
+È possibile gestire gli eventi imprevisti & avvisi **> eventi** imprevisti sulla barra di avvio veloce del portale di Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Di seguito viene riportato un esempio.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Pagina Eventi imprevisti nel centro Microsoft 365 sicurezza":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Pagina Eventi imprevisti nel portale Microsoft 365 Defender utenti":::
 
 Se si seleziona un nome di evento imprevisto, viene visualizzato un riepilogo dell'evento imprevisto e viene fornito l'accesso alle schede con informazioni aggiuntive.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Esempio della pagina Riepilogo per un evento imprevisto nel centro sicurezza Microsoft 365 sicurezza":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Esempio della pagina Riepilogo per un evento imprevisto nel portale Microsoft 365 Defender":::
 
 Le schede aggiuntive per un evento imprevisto sono:
 
@@ -104,13 +104,13 @@ Le schede aggiuntive per un evento imprevisto sono:
 
   Figura che mostra la connessione degli avvisi agli asset che hanno effetto nell'organizzazione.
 
-Ecco la relazione tra un evento imprevisto e i relativi dati e le schede di un evento imprevisto nel centro sicurezza Microsoft 365 sicurezza.
+Ecco la relazione tra un evento imprevisto e i relativi dati e le schede di un evento imprevisto nel Microsoft 365 Defender portale.
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relazione di un evento imprevisto e dei relativi dati con le schede di un evento imprevisto nel centro sicurezza Microsoft 365 sicurezza":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relazione di un evento imprevisto e dei relativi dati con le schede di un evento imprevisto nel Microsoft 365 Defender portale":::
 
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Flusso di lavoro di risposta agli eventi imprevisti di esempio per Microsoft 365 Defender
 
-Ecco un flusso di lavoro di esempio per rispondere a eventi imprevisti in Microsoft 365 con il centro sicurezza Microsoft 365 sicurezza.
+Ecco un flusso di lavoro di esempio per rispondere a eventi imprevisti in Microsoft 365 con il Microsoft 365 Defender portale.
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Esempio di flusso di lavoro di risposta a eventi imprevisti per Microsoft 365":::
 
@@ -121,15 +121,15 @@ Su base continuativa, identificare gli eventi imprevisti con priorità più alta
 
 1. Per ogni evento imprevisto, avviare [un'analisi e un attacco:](investigate-incidents.md)
  
-   a. Visualizzare il riepilogo dell'evento imprevisto per comprendere l'ambito e la gravità e le entità interessate **(scheda** Riepilogo).
+   1. Visualizzare il riepilogo dell'evento imprevisto per comprendere l'ambito e la gravità e le entità interessate **(scheda** Riepilogo).
 
-   b. Iniziare ad analizzare gli avvisi per comprenderne l'origine, l'ambito e la gravità **(scheda** Avvisi).
+   1. Iniziare ad analizzare gli avvisi per comprenderne l'origine, l'ambito e la gravità **(scheda** Avvisi).
 
-   c. In base alle esigenze, raccogliere informazioni sui dispositivi, gli utenti e le cassette postali influenzati (le schede **Dispositivi,** **Utenti** e **Cassette** postali).
+   1. In base alle esigenze, raccogliere informazioni sui dispositivi, gli utenti e le cassette postali influenzati (le schede **Dispositivi,** **Utenti** e **Cassette** postali).
 
-   d. Scopri come Microsoft 365 Defender ha [risolto automaticamente alcuni avvisi](m365d-autoir.md) **(scheda** Indagini).
+   1. Vedere come Microsoft 365 Defender [ha risolto automaticamente alcuni avvisi](m365d-autoir.md) (scheda Indagini). 
    
-   e. Se necessario, usare le informazioni nel set di dati per l'evento imprevisto per ulteriori informazioni (scheda **Prova e** risposta).
+   1. Se necessario, usare le informazioni nel set di dati per l'evento imprevisto per ulteriori informazioni (scheda **Prova e** risposta).
 
 2. Dopo o durante l'analisi, eseguire il contenimento per ridurre qualsiasi ulteriore impatto dell'attacco e dell'eliminazione della minaccia alla sicurezza.
 
@@ -173,11 +173,11 @@ Le attività giornaliere, mensili, trimestrali e annuali possono essere utilizza
 
 **Se non si ha la novità dell'analisi** della sicurezza e della risposta agli eventi imprevisti:
 
-- Vedere [](first-incident-overview.md) la procedura dettagliata Rispondi al primo evento imprevisto per ottenere una presentazione guidata di un processo tipico di analisi, correzione e revisione post-incidente nel Centro sicurezza Microsoft 365 con un esempio di attacco.
+- Vedere [](first-incident-overview.md) la procedura dettagliata Rispondi al primo evento imprevisto per ottenere una presentazione guidata di un processo tipico di analisi, correzione e revisione post-incidente nel portale di Microsoft 365 Defender con un esempio di attacco.
 
 **Se si ha esperienza con l'analisi** della sicurezza e la risposta agli incidenti:
 
-- Introduzione alla coda degli eventi imprevisti dalla **pagina** Eventi imprevisti del centro sicurezza Microsoft 365 sicurezza. Da qui è possibile:
+- Introduzione alla coda degli eventi imprevisti dalla **pagina** Eventi imprevisti del Microsoft 365 Defender portale. Da qui è possibile:
 
   - Vedere quali eventi imprevisti devono essere [classificati in](incident-queue.md) base alla gravità e ad altri fattori. 
 

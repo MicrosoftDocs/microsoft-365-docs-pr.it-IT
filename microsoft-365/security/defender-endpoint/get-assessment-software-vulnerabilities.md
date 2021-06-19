@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea05d37ebcd0953dd109f524775a55cf8d6b3683
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984965"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022871"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Esportare la valutazione delle vulnerabilità software per dispositivo
 
@@ -39,16 +39,16 @@ Restituisce tutte le vulnerabilità software note e i relativi dettagli per tutt
 
 Esistono diverse chiamate API per ottenere diversi tipi di dati. Poiché la quantità di dati può essere molto grande, è possibile recuperarla in due modi:
 
-1. [Valutazione delle vulnerabilità del software di esportazione OData](#1-export-software-vulnerabilities-assessment-odata)  L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale per _organizzazioni di piccole dimensioni con meno di 100 K dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
+1. [Esportare la risposta JSON di valutazione **delle vulnerabilità software**](#1-export-software-vulnerabilities-assessment-json-response)  L'API estrae tutti i dati nell'organizzazione come risposte Json. Questo metodo è ideale per _organizzazioni di piccole dimensioni con meno di 100 K dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
 
-2. [Esportare la valutazione delle vulnerabilità software tramite file](#2-export-software-vulnerabilities-assessment-via-files) Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. I file via sono consigliati per organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
+2. [Esportare la valutazione delle vulnerabilità software **tramite file**](#2-export-software-vulnerabilities-assessment-via-files) Questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. I file via sono consigliati per organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
 
    - Chiama l'API per ottenere un elenco di URL di download con tutti i dati dell'organizzazione.
 
    - Scarica tutti i file usando gli URL di download ed elabora i dati come vuoi.
 
-3. [Valutazione delle vulnerabilità software di esportazione delta OData](#3-delta-export-software-vulnerabilities-assessment-odata)  Restituisce una tabella con una voce per ogni combinazione univoca di: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId ed EventTimestamp.
-L'API estrae i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. La risposta viene impaginata, quindi è possibile utilizzare il campo @odata.nextLink dalla risposta per recuperare i risultati successivi. <br><br> A differenza della valutazione completa delle vulnerabilità software (OData), che viene utilizzata per ottenere un'intera istantanea della valutazione delle vulnerabilità software dell'organizzazione per dispositivo, la chiamata API OData per l'esportazione delta viene utilizzata per recuperare solo le modifiche che si sono verificate tra una data selezionata e la data corrente (chiamata API "delta"). Invece di ottenere un'esportazione completa con una grande quantità di dati ogni volta, si otterrà solo informazioni specifiche sulle vulnerabilità nuove, fisse e aggiornate. È inoltre possibile utilizzare la chiamata all'API OData per l'esportazione delta per calcolare indicatori KPI diversi, ad esempio "quante vulnerabilità sono state risolvete?" o "Quante nuove vulnerabilità sono state aggiunte all'organizzazione?" <br><br> Poiché la chiamata dell'API OData per l'esportazione delta per le vulnerabilità software restituisce dati solo per un intervallo di date mirato, non è considerata _un'esportazione completa._
+3. [Risposta JSON per la valutazione delle vulnerabilità software **di esportazione delta**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Restituisce una tabella con una voce per ogni combinazione univoca di: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId ed EventTimestamp.
+L'API estrae i dati nell'organizzazione come risposte Json. La risposta viene impaginata, quindi è possibile utilizzare il campo @odata.nextLink dalla risposta per recuperare i risultati successivi. <br><br> A differenza della "valutazione completa delle vulnerabilità software (risposta JSON)", che viene utilizzata per ottenere un'intera istantanea della valutazione delle vulnerabilità software dell'organizzazione tramite dispositivo, la chiamata API OData per l'esportazione delta viene utilizzata per recuperare solo le modifiche che si sono verificate tra una data selezionata e la data corrente (chiamata API "delta"). Invece di ottenere un'esportazione completa con una grande quantità di dati ogni volta, si otterrà solo informazioni specifiche sulle vulnerabilità nuove, fisse e aggiornate. È inoltre possibile utilizzare la chiamata API di risposta JSON per l'esportazione delta per calcolare diversi indicatori KPI, ad esempio "quante vulnerabilità sono state risolvete?" o "Quante nuove vulnerabilità sono state aggiunte all'organizzazione?" <br><br> Poiché la chiamata dell'API di risposta JSON di esportazione Delta per le vulnerabilità software restituisce dati solo per un intervallo di date mirato, non è considerata _un'esportazione completa._
 
 I dati raccolti (tramite _OData_ o _tramite file)_ sono lo snapshot corrente dello stato corrente e non contengono dati storici. Per raccogliere i dati storici, i clienti devono salvare i dati nei propri archivi dati.
 
@@ -56,17 +56,17 @@ I dati raccolti (tramite _OData_ o _tramite file)_ sono lo snapshot corrente del
 >
 > Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
 
-## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. Esportare la valutazione delle vulnerabilità software (OData)
+## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. Esportare la valutazione delle vulnerabilità software (risposta JSON)
 
 ### <a name="11-api-method-description"></a>1.1 Descrizione del metodo API
 
 Questa risposta API contiene tutti i dati del software installato per dispositivo. Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
-#### <a name="limitations"></a>Limitazioni
+#### <a name="111-limitations"></a>1.1.1 Limitazioni
 
->- La dimensione massima della pagina è 200.000.
->
->- I limiti di frequenza per questa API sono 30 chiamate al minuto e 1000 chiamate all'ora.
+- La dimensione massima della pagina è 200.000.
+
+- I limiti di frequenza per questa API sono 30 chiamate al minuto e 1000 chiamate all'ora.
 
 ### <a name="12-permissions"></a>1.2 Autorizzazioni
 
@@ -89,7 +89,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 - $top - Numero di risultati da restituire (non restituisce @odata.nextLink e pertanto non estrae tutti i dati)
 
 ### <a name="15-properties"></a>1.5 Proprietà
->
+
 >[!Note]
 >
 >- Ogni record è di circa 1 KB di dati. È consigliabile prendere in considerazione questo parametro quando si sceglie il parametro pageSize corretto.
@@ -97,7 +97,8 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >- Nella risposta potrebbero essere restituite alcune colonne aggiuntive. Queste colonne sono temporanee e potrebbero essere rimosse, utilizzare solo le colonne documentate.
 >
 >- Le proprietà definite nella tabella seguente sono elencate in ordine alfabetico in base all'ID proprietà.  Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in questa tabella.
->
+
+<br/>
 
 Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 :---|:---|:---|:---
@@ -335,17 +336,17 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## <a name="3-delta-export-software-vulnerabilities-assessment-odata"></a>3. Valutazione delle vulnerabilità software di esportazione delta (OData)
+## <a name="3-delta-export-software-vulnerabilities-assessment-json-response"></a>3. Valutazione delle vulnerabilità del software di esportazione delta (risposta JSON)
 
 ### <a name="31-api-method-description"></a>3.1 Descrizione del metodo API
 
-Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. L'API estrae i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. La risposta viene impaginata, quindi è possibile utilizzare il campo @odata.nextLink dalla risposta per recuperare i risultati successivi. A differenza della valutazione completa delle vulnerabilità software (OData), che viene utilizzata per ottenere un'intera istantanea della valutazione delle vulnerabilità software dell'organizzazione per dispositivo, la chiamata API OData per l'esportazione delta viene utilizzata per recuperare solo le modifiche che si sono verificate tra una data selezionata e la data corrente (chiamata API "delta"). Invece di ottenere un'esportazione completa con una grande quantità di dati ogni volta, si otterrà solo informazioni specifiche sulle vulnerabilità nuove, fisse e aggiornate. È inoltre possibile utilizzare la chiamata all'API OData per l'esportazione delta per calcolare indicatori KPI diversi, ad esempio "quante vulnerabilità sono state risolvete?" o "Quante nuove vulnerabilità sono state aggiunte all'organizzazione?"
+Restituisce una tabella con una voce per ogni combinazione univoca di DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. L'API estrae i dati nell'organizzazione come risposte Json. La risposta viene impaginata, quindi è possibile utilizzare il campo @odata.nextLink dalla risposta per recuperare i risultati successivi. A differenza della valutazione completa delle vulnerabilità software (risposta JSON), che viene utilizzata per ottenere un'intera istantanea della valutazione delle vulnerabilità software dell'organizzazione tramite dispositivo, la chiamata API di risposta JSON di esportazione delta viene utilizzata per recuperare solo le modifiche che si sono verificate tra una data selezionata e la data corrente (chiamata API "delta"). Invece di ottenere un'esportazione completa con una grande quantità di dati ogni volta, si otterrà solo informazioni specifiche sulle vulnerabilità nuove, fisse e aggiornate. È inoltre possibile utilizzare la chiamata API di risposta JSON per l'esportazione delta per calcolare diversi indicatori KPI, ad esempio "quante vulnerabilità sono state risolvete?" o "Quante nuove vulnerabilità sono state aggiunte all'organizzazione?"
 
 >[!NOTE]
 >
->È consigliabile usare la valutazione completa delle vulnerabilità del software di esportazione in base alla chiamata API del dispositivo almeno una volta alla settimana e questa ulteriore vulnerabilità del software di esportazione cambia in base alle chiamate API del dispositivo (delta) per tutti gli altri giorni della settimana.  A differenza delle altre API OData valutazioni, l'"esportazione delta" non è un'esportazione completa. L'esportazione delta include solo le modifiche apportate tra una data selezionata e la data corrente (chiamata API "delta").
+>È consigliabile usare la valutazione completa delle vulnerabilità del software di esportazione in base alla chiamata API del dispositivo almeno una volta alla settimana e questa ulteriore vulnerabilità del software di esportazione cambia in base alle chiamate API del dispositivo (delta) per tutti gli altri giorni della settimana.  A differenza delle altre API di risposta JSON assessments, l'esportazione delta non è un'esportazione completa. L'esportazione delta include solo le modifiche apportate tra una data selezionata e la data corrente (chiamata API "delta").
 
-#### <a name="limitations"></a>Limitazioni
+#### <a name="311-limitations"></a>3.1.1 Limitazioni
 
 - La dimensione massima della pagina è 200.000.
 
@@ -379,10 +380,10 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 Ogni record restituito contiene tutti i dati della valutazione completa delle vulnerabilità del software di esportazione da parte dell'API OData del dispositivo, oltre a due campi aggiuntivi: _**EventTimestamp**_ e _**Status.**_
 
 >[!NOTE]
->-Alcune colonne aggiuntive potrebbero essere restituite nella risposta. Queste colonne sono temporanee e potrebbero essere rimosse, quindi usa solo le colonne documentate.
+>- Nella risposta potrebbero essere restituite alcune colonne aggiuntive. Queste colonne sono temporanee e potrebbero essere rimosse, quindi usa solo le colonne documentate.
 >
->-Le proprietà definite nella tabella seguente sono elencate in ordine alfabetico, in base all'ID proprietà.  Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in questa tabella.
-<br>
+>- Le proprietà definite nella tabella seguente sono elencate in ordine alfabetico in base all'ID proprietà.  Quando si esegue questa API, l'output risultante non verrà necessariamente restituito nello stesso ordine elencato in questa tabella.
+<br><br/>
 
 Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 :---|:---|:---|:---
@@ -411,12 +412,12 @@ VulnerabilitySeverityLevel | stringa | Livello di gravità assegnato alla vulner
 #### <a name="clarifications"></a>Chiarimenti
 
 - Se il software è stato aggiornato dalla versione 1.0 alla versione 2.0 ed entrambe le versioni sono esposte a CVE-A, si riceveranno due eventi distinti:  
-   a. Risolto : CVE-A versione 1.0 è stata corretta  
-   b. New : È stato aggiunto CVE-A versione 2.0
+   1. Risolto : CVE-A versione 1.0 è stata corretta  
+   1. New : È stato aggiunto CVE-A versione 2.0
 
 - Se una vulnerabilità specifica (ad esempio, CVE-A) è stata vista per la prima volta in un momento specifico (ad esempio, il 10 gennaio) nel software con la versione 1.0 e pochi giorni dopo tale software è stato aggiornato alla versione 2.0 che è stata anche esposta allo stesso CVE-A, si riceveranno questi due eventi separati:  
-   a. Risolto : CVE-X, FirstSeenTimestamp il 10 gennaio, versione 1,0.  
-   b. New : CVE-X, FirstSeenTimestamp il 10 gennaio, versione 2.0.
+   1. Risolto : CVE-X, FirstSeenTimestamp il 10 gennaio, versione 1,0.  
+   1. New : CVE-X, FirstSeenTimestamp il 10 gennaio, versione 2.0.
 
 ### <a name="36-examples"></a>3.6 Esempi
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925888"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022741"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli eventi imprevisti in Microsoft 365 Defender
 
@@ -36,17 +36,17 @@ ms.locfileid: "52925888"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender applica l'analisi della correlazione e aggrega gli avvisi correlati e le indagini automatizzate di prodotti diversi in un evento imprevisto. Microsoft 365 Defender attiva anche avvisi univoci sulle attività che possono essere identificate solo come dannose, data la visibilità end-to-end che Microsoft 365 Defender ha nell'intera famiglia di prodotti. Questa visualizzazione offre agli analisti della sicurezza la più ampia storia di attacco, che li aiuta a comprendere meglio e gestire le minacce complesse all'interno dell'organizzazione.
+Microsoft 365 Defender l'analisi della correlazione e aggrega gli avvisi correlati e le indagini automatizzate di prodotti diversi in un evento imprevisto. Microsoft 365 Defender attiva anche avvisi univoci sulle attività che possono essere identificate solo come dannose data la visibilità end-to-end che Microsoft 365 Defender ha nell'intera famiglia di prodotti. Questa visualizzazione offre agli analisti della sicurezza la più ampia storia di attacco, che li aiuta a comprendere meglio e gestire le minacce complesse all'interno dell'organizzazione.
 
 La **coda eventi imprevisti** mostra una raccolta di eventi imprevisti creati su dispositivi, utenti e cassette postali. Ti aiuta a ordinare gli eventi imprevisti in base alla loro priorità e a definire una risposta di cybersecurity mirata. 
 
-È possibile accedere alla coda degli eventi imprevisti da **Eventi imprevisti &** avvisi > eventi imprevisti sulla barra di avvio veloce del Centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Di seguito viene riportato un esempio.
+Si arriva alla coda degli eventi imprevisti da **Eventi imprevisti &** avvisi > eventi imprevisti sulla barra di avvio veloce del portale di Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Di seguito viene riportato un esempio.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Esempio di coda degli eventi imprevisti":::
 
 La **sezione Eventi imprevisti e avvisi più** recenti mostra un grafico del numero di avvisi ricevuti e di eventi imprevisti creati nelle ultime 24 ore.
 
-Per impostazione predefinita, nella coda degli eventi imprevisti nel centro sicurezza Microsoft 365 vengono visualizzati gli eventi imprevisti visualizzati negli ultimi sei mesi. L'evento imprevisto più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo.
+Per impostazione predefinita, nella coda degli eventi imprevisti nel portale Microsoft 365 Defender vengono visualizzati gli eventi imprevisti visualizzati negli ultimi sei mesi. L'evento imprevisto più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo.
 
 La coda eventi imprevisti include colonne personalizzabili **(selezionare** Scegli colonne) che offrono visibilità sulle diverse caratteristiche dell'evento imprevisto o sulle entità influenzate. Ciò consente di prendere una decisione informata sulla definizione di priorità degli incidenti per l'analisi.
 

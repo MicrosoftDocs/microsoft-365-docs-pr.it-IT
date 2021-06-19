@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per distribuire le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: c87289fc7017e75db3b8a5b84a8af3a42dc16a10
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 550a1a84df88340de14caff08284ef6a8cadc9e9
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689122"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022487"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -86,7 +86,7 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 |Usare la creazione condivisa e il salvataggio automatico nelle app desktop di Office quando i documenti sono crittografati | [Abilitare la creazione condivisa di file crittografati con etichette di riservatezza](sensitivity-labels-coauthoring.md)
 |Applicare automaticamente etichette di riservatezza ai documenti e ai messaggi di posta elettronica | [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)|
 |Usare le etichette di riservatezza per proteggere il contenuto in Teams e SharePoint |[Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](sensitivity-labels-teams-groups-sites.md)|
-|Impedisce l’uso da parte degli utenti o li mette in guardia dal condividere file o messaggi di posta elettronica con una specifica etichetta di riservatezza |[Usare le etichette di riservatezza come condizioni nei criteri di prevenzione della perdita dei dati (anteprima)](dlp-sensitivity-label-as-condition.md) |
+|Impedisce l’uso da parte degli utenti o li mette in guardia dal condividere file o messaggi di posta elettronica con una specifica etichetta di riservatezza |[Usare le etichette di riservatezza come condizioni per i criteri di prevenzione della perdita dei dati](dlp-sensitivity-label-as-condition.md) |
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi Azure Information Protection per classificare e proteggere automaticamente i file](/azure/information-protection/deploy-aip-scanner)|
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati nel cloud|[Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Applicare e visualizzare le etichette in Power BI e proteggere i dati quando vengono salvati all'esterno del servizio.|[Etichette di riservatezza in Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|

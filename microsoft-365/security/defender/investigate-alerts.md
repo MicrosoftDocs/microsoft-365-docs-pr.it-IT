@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 567916e9e1a1d96d77bc6c187b384a1ec3be72a5
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782910"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022707"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Analizzare gli avvisi in Microsoft 365 Defender
 
@@ -40,13 +40,13 @@ Gli avvisi sono alla base di tutti gli eventi imprevisti e indicano il verificar
 
 In Microsoft 365 Defender, gli avvisi correlati vengono aggregati insieme per formare [eventi imprevisti.](incidents-overview.md) Gli incidenti forniscono sempre il contesto più ampio di un attacco, tuttavia, l'analisi degli avvisi può essere utile quando è necessaria un'analisi più approfondita. 
 
-La **coda Avvisi** mostra il set corrente di avvisi. Si arriva alla coda degli avvisi da **Eventi imprevisti & avvisi > avvisi** sulla barra di avvio veloce del centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)).
+La **coda Avvisi** mostra il set corrente di avvisi. Si arriva alla coda degli avvisi da **Eventi imprevisti & avvisi > avvisi** sulla barra di avvio veloce del portale di Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Esempio di coda degli avvisi":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Esempio di coda degli avvisi":::
 
 Gli avvisi di diverse soluzioni di sicurezza Microsoft come Microsoft Defender for Endpoint, Microsoft Defender per Office 365 e Microsoft 365 Defender vengono visualizzati qui.
 
-Per impostazione predefinita, nella coda degli avvisi nel centro sicurezza Microsoft 365 vengono visualizzati gli avvisi nuovi e in corso degli ultimi 30 giorni. L'avviso più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo. 
+Per impostazione predefinita, nella coda degli avvisi nel portale Microsoft 365 Defender vengono visualizzati gli avvisi nuovi e in corso degli ultimi 30 giorni. L'avviso più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo. 
 
 Dalla coda degli avvisi predefinita, è  possibile selezionare **Filtri** per visualizzare un riquadro Filtri, da cui è possibile specificare un sottoinsieme degli avvisi. Di seguito viene riportato un esempio.
 
@@ -66,7 +66,7 @@ Dalla coda degli avvisi predefinita, è  possibile selezionare **Filtri** per vi
 
 Per visualizzare la pagina di avviso principale, selezionare il nome dell'avviso. Di seguito viene riportato un esempio.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel centro sicurezza Microsoft 365 sicurezza":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel portale Microsoft 365 Defender":::
 
 È inoltre possibile selezionare **l'azione Apri la pagina di avviso** principale nel riquadro **Gestisci** avviso.
 
@@ -75,12 +75,12 @@ Una pagina di avviso è composta da queste sezioni:
 - Alert story, ovvero la catena di eventi e avvisi correlati a questo avviso in ordine cronologico
 - Dettagli di riepilogo
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel centro sicurezza Microsoft 365 sicurezza":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Esempio della pagina dei dettagli di un avviso nel portale Microsoft 365 Defender":::
 
 In tutta una pagina di avviso, è possibile selezionare i puntini di sospensione (**...**) accanto a qualsiasi entità per visualizzare le azioni disponibili, ad esempio l'apertura della pagina di avviso o il collegamento dell'avviso a un altro evento imprevisto.
 
 ### <a name="alert-sources"></a>Origini degli avvisi
-Microsoft 365 Gli avvisi defender possono derivare da soluzioni come Microsoft Defender for Endpoint, Microsoft Defender per Office 365 e Microsoft Cloud App Security. Potresti notare avvisi con caratteri anteposti nell'avviso. Nella tabella seguente vengono fornite indicazioni per comprendere il mapping delle origini degli avvisi in base al carattere anteposto nell'avviso.
+Microsoft 365 Defender avvisi possono derivare da soluzioni come Microsoft Defender for Endpoint, Microsoft Defender per Office 365 e Microsoft Cloud App Security. Potresti notare avvisi con caratteri anteposti nell'avviso. Nella tabella seguente vengono fornite indicazioni per comprendere il mapping delle origini degli avvisi in base al carattere anteposto nell'avviso.
 
 > [!NOTE]
 > - I GUID anteposti sono specifici solo per le esperienze unificate, ad esempio la coda degli avvisi unificati, la pagina degli avvisi unificati, l'indagine unificata e l'incidente unificato.<br>
@@ -94,13 +94,11 @@ Microsoft Defender per endpoint | `da` o `ed` per avvisi di rilevamento personal
 Microsoft Defender per identità | `aa{GUID}` <br> Esempio: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Esempio: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
-
-
 ### <a name="analyze-affected-assets"></a>Analizzare gli asset interessati
 
 La **sezione Azioni eseguite** contiene un elenco di asset interessati, ad esempio cassette postali, dispositivi e utenti interessati da questo avviso. 
 
-È inoltre possibile selezionare **Visualizza nel centro** notifiche  per visualizzare la scheda **Cronologia** del centro notifiche nel centro Microsoft 365 sicurezza. 
+È inoltre possibile selezionare **Visualizza nel centro notifiche** per visualizzare la scheda **Cronologia** **del** centro notifiche nel portale Microsoft 365 Defender notifiche. 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Tracciare il ruolo di un avviso nella storia di avviso
 
@@ -143,7 +141,7 @@ Da questo riquadro è inoltre possibile eseguire queste azioni aggiuntive:
 
 Di seguito viene riportato un esempio.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Esempio di azioni su un avviso nel Centro sicurezza Microsoft 365 sicurezza":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Esempio di azioni su un avviso nel portale Microsoft 365 Defender":::
 
 L'elenco delle azioni aggiuntive dipende dal tipo di avviso.
 

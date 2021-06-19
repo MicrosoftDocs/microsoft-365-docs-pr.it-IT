@@ -1,6 +1,6 @@
 ---
 title: Risolvere i falsi positivi o i falsi negativi in Microsoft 365 Defender
-description: Qualcosa non è stato rilevato o rilevato in modo errato da AIR in Microsoft 365 Defender? Informazioni su come inviare falsi positivi o falsi negativi a Microsoft per l'analisi.
+description: Qualcosa è stato perso o rilevato in modo errato da AIR in Microsoft 365 Defender? Informazioni su come inviare falsi positivi o falsi negativi a Microsoft per l'analisi.
 keywords: automatizzato, indagine, avviso, correzione, falso positivo, falso negativo
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 3cffa97d26b2b28de8d9e45d7030e0931a7ba072
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f60208b06e66c1e9803e05ee1fc41376824e9b56
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269579"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022535"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Risolvere i falsi positivi o i falsi negativi in Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "52269579"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Talvolta possono verificarsi falsi positivi o negativi con qualsiasi soluzione di protezione dalle minacce. Se [le funzionalità di analisi e risposta](m365d-autoir.md) automatizzate in Microsoft 365 Defender hanno perso o rilevato qualcosa in modo errato, il team delle operazioni di sicurezza può eseguire le operazioni seguenti:
+Talvolta possono verificarsi falsi positivi o negativi con qualsiasi soluzione di protezione dalle minacce. Se [le funzionalità di indagine e risposta](m365d-autoir.md) automatizzate in Microsoft 365 Defender hanno perso o rilevato in modo errato qualcosa, il team delle operazioni di sicurezza può eseguire le operazioni seguenti:
 
 - [Segnalare un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Modificare gli avvisi](#adjust-an-alert-to-prevent-false-positives-from-recurring) (se necessario)
@@ -73,4 +73,3 @@ Se è stata eseguita un'azione di correzione su un'entità (ad esempio un dispos
 
 - [Visualizzare i dettagli e i risultati di un'indagine automatizzata](m365d-autoir-results.md)
 - [Ricerca proattiva di minacce con ricerca avanzata in Microsoft 365 Defender](advanced-hunting-overview.md)
-- [Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

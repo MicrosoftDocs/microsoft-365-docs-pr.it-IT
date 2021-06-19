@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5742c121b73eb8709e770c9b2c4da6dbfd942276
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ad8b2030da4fb4815eb71ca53fb2dbac67a05d79
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984857"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022391"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Esportare la valutazione della configurazione sicura per dispositivo
 
@@ -39,7 +39,7 @@ Restituisce tutte le configurazioni e il relativo stato, in base al dispositivo.
 
 Esistono diverse chiamate API per ottenere diversi tipi di dati. Poiché la quantità di dati può essere di grandi dimensioni, è possibile recuperarla in due modi:
 
-- [Export secure configuration assessment **OData**](#1-export-secure-configuration-assessment-odata): L'API estrae tutti i dati nell'organizzazione come risposte Json, seguendo il protocollo OData. Questo metodo è ideale _per organizzazioni di piccole dimensioni con meno di 100 K dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
+- [Esportare la risposta **JSON** per la valutazione della](#1-export-secure-configuration-assessment-json-response)configurazione sicura : l'API estrae tutti i dati nell'organizzazione come risposte Json. Questo metodo è ideale _per organizzazioni di piccole dimensioni con meno di 100 K dispositivi._ La risposta viene impaginata, quindi è possibile utilizzare il campo \@ odata.nextLink dalla risposta per recuperare i risultati successivi.
 
 - [Esportare la valutazione della configurazione sicura tramite **file:**](#2-export-secure-configuration-assessment-via-files)questa soluzione API consente di estrarre grandi quantità di dati in modo più rapido e affidabile. Pertanto, è consigliabile per le organizzazioni di grandi dimensioni, con più di 100 dispositivi K. Questa API estrae tutti i dati dell'organizzazione come file di download. La risposta contiene URL per scaricare tutti i dati da Archiviazione di Azure. Questa API consente di scaricare tutti i dati da Archiviazione di Azure come indicato di seguito:
 
@@ -53,7 +53,7 @@ I dati raccolti (tramite _OData_ o _tramite file)_ sono lo snapshot corrente del
 >
 > Se non diversamente indicato, tutti i metodi di valutazione dell'esportazione elencati sono **_l'esportazione_** completa e per dispositivo **_(noto_** anche **_come per dispositivo)._**
 
-## <a name="1-export-secure-configuration-assessment-odata"></a>1. Esportare la valutazione della configurazione sicura (OData)
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Esportare la valutazione della configurazione sicura (risposta JSON)
 
 ### <a name="11-api-method-description"></a>1.1 Descrizione del metodo API
 
@@ -100,7 +100,7 @@ Proprietà (ID) | Tipo di dati | Descrizione | Esempio di valore restituito
 ConfigurationCategory | stringa | Categoria o raggruppamento a cui appartiene la configurazione: Applicazione, Sistema operativo, Rete, Account, Controlli di sicurezza | Controlli di sicurezza
 ConfigurationId | stringa | Identificatore univoco di una configurazione specifica | scid-10000
 ConfigurationImpact | stringa | Impatto nominale della configurazione sul punteggio di configurazione complessivo (1-10) | 9 
-ConfigurationName | stringa | Nome visualizzato della configurazione | Aggiungere dispositivi a Microsoft Defender for Endpoint
+ConfigurationName | stringa | Nome visualizzato della configurazione | Aggiungere dispositivi a Microsoft Defender for Endpoint
 ConfigurationSubcategory | stringa | Sottocategoria o sottoraggruppamento a cui appartiene la configurazione. In molti casi qui vengono descritte capacità o funzionalità specifiche. | Dispositivi onboard
 DeviceId | stringa | Identificatore univoco del dispositivo nel servizio. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName | stringa | Nome di dominio completo (FQDN) del dispositivo. | johnlaptop.europe.contoso.com

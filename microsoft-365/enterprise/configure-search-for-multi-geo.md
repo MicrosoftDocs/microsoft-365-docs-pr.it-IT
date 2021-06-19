@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare la ricerca in un ambiente multi-geografico. Solo alcuni client, ad esempio OneDrive for Business, possono restituire risultati in un ambiente multi-geografico.
-ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 31e0c4ae3fe73f2f6e113dbc38989726eb1ca590
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911163"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022331"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurare la ricerca di Microsoft 365 Multi-Geo
 
@@ -324,5 +324,5 @@ Esempio di query CSOM estesa a **tutte** le posizioni geografiche:
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;
-keywordQuery["EnableMultiGeoSearch"] = true;
+keywordQuery.Properties["EnableMultiGeoSearch"] = true;
 ```
