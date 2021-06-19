@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 4215e6618c1cc6359755c2af1e7b9e93ca07b58d
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 49f50b99d6c1b46394e26447bd33b6bf93e2917f
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984809"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029004"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -369,3 +369,17 @@ Per altre informazioni sui cmdlet di PowerShell che supportano i criteri di appl
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
+
+## <a name="tips-to-increase-labeling-reach"></a>Suggerimenti per aumentare la portata dell'etichettatura
+
+Anche se l'etichettatura automatica è uno dei modi più efficienti per classificare, etichettare e proteggere i file di Office di proprietà dell'organizzazione, verificare se è possibile integrarla con uno dei metodi aggiuntivi per aumentarne la portata:
+
+- Quando si usa il [client di etichettatura unificata di Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2):
+    
+    - Per i file in archivi dati locali, ad esempio condivisioni di rete e raccolte di SharePoint Server: usare lo [scanner](/azure/information-protection/deploy-aip-scanner) per individuare le informazioni sensibili in questi file ed etichettarli in modo appropriato. Se si prevede di eseguire la migrazione o caricare questi file in SharePoint in Microsoft 365, usare lo scanner per etichettare i file prima di spostarli nel cloud.
+    
+    - Se è stata usata un'altra soluzione di etichettatura prima di usare le etichette di riservatezza: usare PowerShell e [un'impostazione avanzata per riutilizzare le etichette](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) da queste soluzioni.
+
+- Incoraggiare l'uso dell'[etichettatura manuale](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) dopo aver formato gli utenti su quali etichette di riservatezza applicare. Quando si è certi che gli utenti comprendano quale etichetta applicare, valutare la possibilità di configurare un'etichetta predefinita e l'etichettatura obbligatoria come [impostazioni dei criteri](sensitivity-labels.md#what-label-policies-can-do). 
+
+È inoltre consigliabile [contrassegnare i nuovi file come sensibili per impostazione predefinita](/sharepoint/sensitive-by-default) in SharePoint per impedire che gli utenti guest possano accedere ai nuovi file aggiunti prima che almeno un criterio DLP abbia ne analizzato il contenuto.

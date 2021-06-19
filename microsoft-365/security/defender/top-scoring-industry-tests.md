@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934394"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028500"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Punteggio più alto nei test del settore
 
@@ -43,7 +43,7 @@ L'approccio di base per i test di MITRE consiste nell'emulare gli attacchi in sc
 
 - Valutazione basata su ATT&CK di Microsoft 365 Defender - Maggio 2020: [Leader del rilevamento negli scenari reali](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender ha fornito quasi il 100% della copertura nelle fasi della catena di attacco. Ha offerto la massima visibilità predefinita sulle attività degli utenti malintenzionati. La visibilità riduce significativamente il lavoro manuale per il centro operativo per la sicurezza e le soluzioni dei fornitori che si basavano su specifiche modifiche di configurazione. Microsoft 365 Defender presentava inoltre il minore numero di lacune nella visibilità, riducendo la possibilità dell'utente malintenzionato di operare indisturbato.
+ Microsoft 365 Defender ha fornito quasi il 100% della copertura nelle fasi della catena di attacco. Ha offerto la massima visibilità predefinita sulle attività degli utenti malintenzionati. La visibilità riduce significativamente il lavoro manuale per il centro operativo per la sicurezza e le soluzioni dei fornitori che si basavano su specifiche modifiche di configurazione. Microsoft 365 Defender presentava inoltre il minore numero di lacune nella visibilità, riducendo la possibilità dell'utente malintenzionato di operare indisturbato.
 
 ## <a name="next-generation-protection"></a>Protezione di nuova generazione
 
@@ -89,7 +89,7 @@ SE Labs testa una gamma di soluzioni usate da prodotti e servizi per rilevare e/
 
 - Enterprise Endpoint Protection ottobre-dicembre 2020: [AAA Award](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**Ultima**</sup>
 
-    Il prodotto di protezione di nuova generazione Microsoft ha fermato tutti gli attacchi pubblici e mirati. Antivirus Microsoft Defender ha conseguito ottimi risultati, grazie alla possibilità di bloccare URL dannosi, gestire exploit e classificare correttamente applicazioni e siti Web legittimi.
+    Il prodotto di protezione di nuova generazione Microsoft ha fermato tutti gli attacchi pubblici e mirati. Antivirus Microsoft Defender ha conseguito ottimi risultati, grazie alla capacità di bloccare URL dannosi, gestire exploit e classificare correttamente applicazioni e siti Web legittimi.
 
 - Enterprise Endpoint Protection luglio-settembre 2020: [AAA Award](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 

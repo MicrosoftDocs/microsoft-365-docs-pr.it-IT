@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come applicare un'etichetta di conservazione a un modello in SharePoint Syntex.
-ms.openlocfilehash: 799ab3fa0fcdc9af9d227428056d2cd7abeaf539
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2ddfd6ffe11e8e01e32b6e1b5ddf65763e4ae381
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706721"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022415"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Applicare un'etichetta di conservazione a un modello in SharePoint Syntex
 
 Microsoft SharePoint Syntex consente di applicare facilmente un'[etichetta di riservatezza](../compliance/sensitivity-labels.md) a un modello di analisi dei documenti. Questa caratteristica non è ancora disponibile per i modelli di elaborazione di moduli.
 
-Le etichette di riservatezza consentono di applicare criteri di crittografia, condivisione e accesso condizionale ai documenti identificati nei modelli. Ad esempio, si vuole che il modello non solo identifichi i documenti finanziari che contengono numeri di conto corrente bancario o numeri di carta di credito caricati nella raccolta documenti, ma anche applicare un'*etichetta di riservatezza* Crittografia per limitare gli utenti autorizzati che possono accedere a tale contenuto e le relative modalità di utilizzo.
+Le etichette di riservatezza consentono di applicare criteri di crittografia, condivisione e accesso condizionale ai documenti identificati nei modelli. Ad esempio, si vuole che il modello non solo identifichi i documenti finanziari che contengono numeri di conto corrente bancario o numeri di carta di credito caricati nella raccolta documenti, ma anche applicare un'*etichetta di riservatezza* Crittografia per limitare gli utenti autorizzati che possono accedere a tale contenuto e le relative modalità di utilizzo. I modelli Syntex rispettano le regole relative all'[ordine delle etichette](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) e non sovrascrivono un'etichetta esistente applicata manualmente da un utente al file. 
 
 Si può applicare al modello un'etichetta di sensibilità preesistente, usando le impostazioni del modello nella home page del modello. L'etichetta deve essere già pubblicata per essere disponibile per la selezione dalle impostazioni del modello.
 
