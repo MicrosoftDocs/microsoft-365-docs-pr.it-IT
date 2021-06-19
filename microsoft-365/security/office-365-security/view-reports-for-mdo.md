@@ -1,5 +1,5 @@
 ---
-title: Visualizzare defender per Office 365 report nel dashboard report
+title: Visualizzazione report di Microsoft Defender per Office 365
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,352 +16,207 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Trova e usa i report per Microsoft Defender per Office 365 nel portale Microsoft 365 Defender.
+description: Gli amministratori possono scoprire come trovare e usare Defender per Office 365 report disponibili nel portale Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a5c45f58ee83de11712b198c85a8e423314289bf
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 5b9279614571c123ad92f1684f86175b410c6c5c
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930235"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022842"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-microsoft-365-defender-portal"></a><span data-ttu-id="c5076-103">Visualizzare defender per Office 365 report nel dashboard report nel portale Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c5076-103">View Defender for Office 365 reports in the Reports dashboard in the Microsoft 365 Defender portal</span></span>
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a><span data-ttu-id="c4125-103">Visualizzare i report di Defender Office 365 nel Microsoft 365 Defender portale</span><span class="sxs-lookup"><span data-stu-id="c4125-103">View Defender for Office 365 reports in the Microsoft 365 Defender portal</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-<span data-ttu-id="c5076-104">**Si applica a**</span><span class="sxs-lookup"><span data-stu-id="c5076-104">**Applies to**</span></span>
-- [<span data-ttu-id="c5076-105">Microsoft Defender per Office 365 piano 1 e piano 2</span><span class="sxs-lookup"><span data-stu-id="c5076-105">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](defender-for-office-365.md)
-- [<span data-ttu-id="c5076-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c5076-106">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
+<span data-ttu-id="c4125-104">**Si applica a**</span><span class="sxs-lookup"><span data-stu-id="c4125-104">**Applies to**</span></span>
+- [<span data-ttu-id="c4125-105">Microsoft Defender per Office 365 piano 1 e piano 2</span><span class="sxs-lookup"><span data-stu-id="c4125-105">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](defender-for-office-365.md)
+- [<span data-ttu-id="c4125-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c4125-106">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
 
-<span data-ttu-id="c5076-107">Microsoft Defender per le organizzazioni Office 365 (ad esempio, abbonamenti Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 1 o componenti aggiuntivi Microsoft Defender per Office 365 Piano 2) contengono una serie di report relativi alla sicurezza.</span><span class="sxs-lookup"><span data-stu-id="c5076-107">Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports.</span></span> <span data-ttu-id="c5076-108">Se si dispone delle autorizzazioni [necessarie,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)è possibile visualizzare questi report nel portale di Microsoft 365 Defender andando a **Report** Collaborazione tramite posta elettronica \>  \> **Rapporti di collaborazione tramite posta elettronica**.</span><span class="sxs-lookup"><span data-stu-id="c5076-108">If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email collaboration** \> **Email collaboration reports**.</span></span> <span data-ttu-id="c5076-109">Per passare direttamente al dashboard dei report, aprire <https://security.microsoft.com/emailandcollabreport> .</span><span class="sxs-lookup"><span data-stu-id="c5076-109">To go directly to the Reports dashboard, open <https://security.microsoft.com/emailandcollabreport>.</span></span>
+<span data-ttu-id="c4125-107">Microsoft Defender per le organizzazioni Office 365 (ad esempio, abbonamenti Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 1 o componenti aggiuntivi Microsoft Defender per Office 365 Piano 2) contengono una serie di report relativi alla sicurezza.</span><span class="sxs-lookup"><span data-stu-id="c4125-107">Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports.</span></span> <span data-ttu-id="c4125-108">Se si dispone [delle](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)autorizzazioni necessarie, è possibile visualizzare questi  report nel portale di Microsoft 365 Defender andando a Rapporti e-mail & \> **collaborazione** \> **E-mail**& rapporti di collaborazione .</span><span class="sxs-lookup"><span data-stu-id="c4125-108">If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="c4125-109">Per passare direttamente alla pagina Rapporti di **collaborazione &** e-mail, aprire <https://security.microsoft.com/emailandcollabreport> .</span><span class="sxs-lookup"><span data-stu-id="c4125-109">To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.</span></span>
 
-![Dashboard report nel portale di Microsoft 365 Defender](../../media/user-reported-messages.png)
-
-## <a name="defender-for-office-365-file-types-report"></a><span data-ttu-id="c5076-111">Report tipi di file per Defender per Office 365</span><span class="sxs-lookup"><span data-stu-id="c5076-111">Defender for Office 365 file types report</span></span>
-
-<span data-ttu-id="c5076-112">Il **report Defender per Office 365 tipi di file** mostra il tipo di file rilevati come dannosi dagli allegati [sicuri.](safe-attachments.md)</span><span class="sxs-lookup"><span data-stu-id="c5076-112">The **Defender for Office 365 file types report** report shows you the type of files detected as malicious by [Safe Attachments](safe-attachments.md).</span></span>
-
- <span data-ttu-id="c5076-113">La visualizzazione aggregata del report consente 90 giorni di filtro, mentre la visualizzazione dettagli consente solo 10 giorni di filtro.</span><span class="sxs-lookup"><span data-stu-id="c5076-113">The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for 10 days of filtering.</span></span>
-
-<span data-ttu-id="c5076-114">Per visualizzare il report, aprire il [portale Microsoft 365 Defender,](https://security.microsoft.com)passare **a** Dashboard report e selezionare Defender per Office 365 \>  tipi **di file.**</span><span class="sxs-lookup"><span data-stu-id="c5076-114">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 file types**.</span></span> <span data-ttu-id="c5076-115">Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ATPFileReport> .</span><span class="sxs-lookup"><span data-stu-id="c5076-115">To go directly to the report, open <https://protection.office.com/reportv2?id=ATPFileReport>.</span></span>
-
-![Widget Defender per Office 365 tipi di file nel dashboard report](../../media/atp-file-types-report-widget.png)
+![Pagina dei & di collaborazione tramite posta elettronica nel portale Microsoft 365 Defender posta elettronica](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
-> <span data-ttu-id="c5076-117">Le informazioni contenute in questo report sono disponibili anche nel report defender per l Office 365 [di eliminazione dei messaggi.](#defender-for-office-365-message-disposition-report)</span><span class="sxs-lookup"><span data-stu-id="c5076-117">The information in this report is also available in the [Defender for Office 365 message disposition report](#defender-for-office-365-message-disposition-report).</span></span>
+>
+> <span data-ttu-id="c4125-111">I report di sicurezza della posta elettronica che non richiedono Defender per Office 365 sono descritti in [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).</span><span class="sxs-lookup"><span data-stu-id="c4125-111">Email security reports that don't require Defender for Office 365 are described in [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).</span></span>
+>
+> <span data-ttu-id="c4125-112">I report correlati al flusso di posta sono ora disponibili nell'interfaccia di amministrazione di Exchange (EAC).</span><span class="sxs-lookup"><span data-stu-id="c4125-112">Reports that are related to mail flow are now in the Exchange admin center (EAC).</span></span> <span data-ttu-id="c4125-113">Per ulteriori informazioni su questi report, vedere [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).</span><span class="sxs-lookup"><span data-stu-id="c4125-113">For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).</span></span>
 
-### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a><span data-ttu-id="c5076-118">Visualizzazione report per il report Defender per Office 365 tipi di file</span><span class="sxs-lookup"><span data-stu-id="c5076-118">Report view for the Defender for Office 365 file types report</span></span>
-
-<span data-ttu-id="c5076-119">Sono disponibili le visualizzazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-119">The following views are available:</span></span>
-
-- <span data-ttu-id="c5076-120">**Visualizza dati per: File**: Il grafico contiene le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-120">**View data by: File**: The chart contains the following information:</span></span>
-
-  - <span data-ttu-id="c5076-121">**Allegati Excel dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-121">**Malicious Excel attachments**</span></span>
-  - <span data-ttu-id="c5076-122">**Allegati Flash dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-122">**Malicious Flash attachments**</span></span>
-  - <span data-ttu-id="c5076-123">**Allegati PDF dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-123">**Malicious PDF attachments**</span></span>
-  - <span data-ttu-id="c5076-124">**Allegati PowerPoint dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-124">**Malicious PowerPoint attachments**</span></span>
-  - <span data-ttu-id="c5076-125">**URL dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-125">**Malicious URLs**</span></span>
-  - <span data-ttu-id="c5076-126">**Allegati di Word dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-126">**Malicious Word attachments**</span></span>
-  - <span data-ttu-id="c5076-127">**Allegati eseguibili dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-127">**Malicious executable attachments**</span></span>
-  - <span data-ttu-id="c5076-128">**Altri**</span><span class="sxs-lookup"><span data-stu-id="c5076-128">**Others**</span></span>
-
-  <span data-ttu-id="c5076-129">Quando si passa il mouse su un determinato giorno (punto dati), è [](safe-attachments.md) possibile visualizzare la suddivisione dei tipi di file dannosi rilevati dagli allegati sicuri e dalla protezione [antimalware in EOP.](anti-malware-protection.md)</span><span class="sxs-lookup"><span data-stu-id="c5076-129">When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).</span></span>
-
-  ![Visualizzazione file nel report Defender per Office 365 tipi di file](../../media/atp-file-types-report-file-view.png)
-
-  <span data-ttu-id="c5076-131">Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-131">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="c5076-132">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-132">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-133">Gli stessi valori del tipo di file visibili nel grafico.</span><span class="sxs-lookup"><span data-stu-id="c5076-133">The same file type values that are visible in the chart.</span></span>
-
-- <span data-ttu-id="c5076-134">**Visualizza dati per: Messaggio**: Il grafico contiene le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-134">**View data by: Message**: The chart contains the following information:</span></span>
-
-  - <span data-ttu-id="c5076-135">**Blocca accesso**</span><span class="sxs-lookup"><span data-stu-id="c5076-135">**Block access**</span></span>
-  - <span data-ttu-id="c5076-136">**Messaggi sostituiti**</span><span class="sxs-lookup"><span data-stu-id="c5076-136">**Messages replaced**</span></span>
-  - <span data-ttu-id="c5076-137">**Messaggi monitorati**</span><span class="sxs-lookup"><span data-stu-id="c5076-137">**Messages monitored**</span></span>
-  - <span data-ttu-id="c5076-138">**Sostituito da Recapito dinamico della** posta elettronica : per ulteriori informazioni, vedere Recapito dinamico nei criteri allegati [sicuri.](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)</span><span class="sxs-lookup"><span data-stu-id="c5076-138">**Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).</span></span>
-
-  ![Visualizzazione dei messaggi nel report Defender per Office 365 tipi di file](../../media/atp-file-types-report-message-view.png)
-
-  <span data-ttu-id="c5076-140">Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-140">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="c5076-141">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-141">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-142">Gli stessi valori di eliminazione dei messaggi disponibili nel grafico e il valore **aggiuntivo Messaggi passati.**</span><span class="sxs-lookup"><span data-stu-id="c5076-142">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
-
-### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a><span data-ttu-id="c5076-143">Visualizzazione tabella dettagli per il report Defender per Office 365 tipi di file</span><span class="sxs-lookup"><span data-stu-id="c5076-143">Details table view for the Defender for Office 365 file types report</span></span>
-
-<span data-ttu-id="c5076-144">Se si fa clic **su** Visualizza tabella dettagli , il report offre una visualizzazione quasi in tempo reale di tutti i clic che si verificano all'interno dell'organizzazione negli ultimi 10 giorni.</span><span class="sxs-lookup"><span data-stu-id="c5076-144">If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days.</span></span> <span data-ttu-id="c5076-145">Le informazioni visualizzate dipendono dal grafico visualizzato:</span><span class="sxs-lookup"><span data-stu-id="c5076-145">The information that's shown depends on the chart you were looking at:</span></span>
-
-- <span data-ttu-id="c5076-146">**Visualizza dati per: File**:</span><span class="sxs-lookup"><span data-stu-id="c5076-146">**View data by: File**:</span></span>
-
-  - <span data-ttu-id="c5076-147">**Data**</span><span class="sxs-lookup"><span data-stu-id="c5076-147">**Date**</span></span>
-  - <span data-ttu-id="c5076-148">**Indirizzo destinatario**</span><span class="sxs-lookup"><span data-stu-id="c5076-148">**Recipient address**</span></span>
-  - <span data-ttu-id="c5076-149">**Indirizzo del mittente**</span><span class="sxs-lookup"><span data-stu-id="c5076-149">**Sender address**</span></span>
-  - <span data-ttu-id="c5076-150">**ID messaggio**: Disponibile nel **campo di intestazione Message-ID** nell'intestazione del messaggio e deve essere univoco.</span><span class="sxs-lookup"><span data-stu-id="c5076-150">**Message ID**: Available in the **Message-ID** header field in the message header and should be unique.</span></span> <span data-ttu-id="c5076-151">Un valore di esempio è `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (si notino le parentesi angolari).</span><span class="sxs-lookup"><span data-stu-id="c5076-151">An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).</span></span>
-  - <span data-ttu-id="c5076-152">**File**</span><span class="sxs-lookup"><span data-stu-id="c5076-152">**File**</span></span>
-
-  <span data-ttu-id="c5076-153">Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-153">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="c5076-154">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-154">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-155">Gli stessi valori del tipo di file visibili nel grafico.</span><span class="sxs-lookup"><span data-stu-id="c5076-155">The same file type values that are visible in the chart.</span></span>
-
-- <span data-ttu-id="c5076-156">**Visualizza dati per: Messaggio**:</span><span class="sxs-lookup"><span data-stu-id="c5076-156">**View data by: Message**:</span></span>
-
-  - <span data-ttu-id="c5076-157">**Data**</span><span class="sxs-lookup"><span data-stu-id="c5076-157">**Date**</span></span>
-  - <span data-ttu-id="c5076-158">**Indirizzo destinatario**</span><span class="sxs-lookup"><span data-stu-id="c5076-158">**Recipient address**</span></span>
-  - <span data-ttu-id="c5076-159">**Indirizzo del mittente**</span><span class="sxs-lookup"><span data-stu-id="c5076-159">**Sender address**</span></span>
-  - <span data-ttu-id="c5076-160">**ID messaggio**</span><span class="sxs-lookup"><span data-stu-id="c5076-160">**Message ID**</span></span>
-  - <span data-ttu-id="c5076-161">**File**</span><span class="sxs-lookup"><span data-stu-id="c5076-161">**File**</span></span>
-  - <span data-ttu-id="c5076-162">**Oggetto**</span><span class="sxs-lookup"><span data-stu-id="c5076-162">**Subject**</span></span>
-
-  <span data-ttu-id="c5076-163">Se si fa **clic su Filtri**, è possibile modificare i risultati con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-163">If you click **Filters**, you can modify the results with the following filters:</span></span>
-
-  - <span data-ttu-id="c5076-164">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-164">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-165">Gli stessi valori di eliminazione dei messaggi disponibili nel grafico e il valore **aggiuntivo Messaggi passati.**</span><span class="sxs-lookup"><span data-stu-id="c5076-165">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
-
-<span data-ttu-id="c5076-166">Per tornare alla visualizzazione report, fare clic su **Visualizza report.**</span><span class="sxs-lookup"><span data-stu-id="c5076-166">To get back to the reports view, click **View report**.</span></span>
-
-## <a name="defender-for-office-365-message-disposition-report"></a><span data-ttu-id="c5076-167">Report disposizione messaggi di Defender per Office 365</span><span class="sxs-lookup"><span data-stu-id="c5076-167">Defender for Office 365 message disposition report</span></span>
-
-<span data-ttu-id="c5076-168">Il **report Eliminazione messaggi ATP** mostra le azioni intraprese per i messaggi di posta elettronica che sono stati rilevati come contenuti dannosi.</span><span class="sxs-lookup"><span data-stu-id="c5076-168">The **ATP Message Disposition** report shows you the actions that were taken for email messages that were detected as having malicious content.</span></span>
-
-<span data-ttu-id="c5076-169">Per visualizzare il report, aprire il [portale di Microsoft 365 Defender,](https://security.microsoft.com)passare & Rapporti Di posta elettronica &  \> **collaborazione** \> **E-mail & rapporti** di collaborazione e selezionare **Defender** per l'eliminazione Office 365 messaggio .</span><span class="sxs-lookup"><span data-stu-id="c5076-169">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and select **Defender for Office 365 message disposition**.</span></span> <span data-ttu-id="c5076-170">Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ATPMessageReport> .</span><span class="sxs-lookup"><span data-stu-id="c5076-170">To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.</span></span>
-
-![Defender per Office 365 widget di eliminazione dei messaggi nel dashboard dei report](../../media/atp-message-disposition-report-widget.png)
+## <a name="safe-attachments-file-types-report"></a><span data-ttu-id="c4125-114">Safe Report Tipi di file allegati</span><span class="sxs-lookup"><span data-stu-id="c4125-114">Safe Attachments file types report</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c5076-172">Le informazioni contenute in questo report sono disponibili anche nel [report Defender per Office 365 tipi di file.](#defender-for-office-365-file-types-report)</span><span class="sxs-lookup"><span data-stu-id="c5076-172">The information in this report is also available in the [Defender for Office 365 file types report](#defender-for-office-365-file-types-report).</span></span>
+> <span data-ttu-id="c4125-115">Il **Safe dei tipi di file allegati** alla fine andrà via.</span><span class="sxs-lookup"><span data-stu-id="c4125-115">The **Safe Attachments file types report** will eventually go away.</span></span> <span data-ttu-id="c4125-116">Le stesse informazioni sono disponibili nella relazione [sullo stato di Threat Protection.](#threat-protection-status-report)</span><span class="sxs-lookup"><span data-stu-id="c4125-116">The same information is available in the [Threat protection status report](#threat-protection-status-report).</span></span>
 
-### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a><span data-ttu-id="c5076-173">Visualizzazione report per defender per Office 365 di eliminazione dei messaggi</span><span class="sxs-lookup"><span data-stu-id="c5076-173">Report view for the Defender for Office 365 message disposition report</span></span>
-
-<span data-ttu-id="c5076-174">Sono disponibili le visualizzazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-174">The following views are available:</span></span>
-
-- <span data-ttu-id="c5076-175">**Visualizza dati per: Messaggio**: Il grafico contiene le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-175">**View data by: Message**: The chart contains the following information:</span></span>
-
-  - <span data-ttu-id="c5076-176">**Blocca accesso**</span><span class="sxs-lookup"><span data-stu-id="c5076-176">**Block access**</span></span>
-  - <span data-ttu-id="c5076-177">**Messaggi sostituiti**</span><span class="sxs-lookup"><span data-stu-id="c5076-177">**Messages replaced**</span></span>
-  - <span data-ttu-id="c5076-178">**Messaggi monitorati**</span><span class="sxs-lookup"><span data-stu-id="c5076-178">**Messages monitored**</span></span>
-  - <span data-ttu-id="c5076-179">**Sostituito da Recapito dinamico della** posta elettronica : per ulteriori informazioni, vedere Recapito dinamico nei criteri allegati [sicuri.](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)</span><span class="sxs-lookup"><span data-stu-id="c5076-179">**Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).</span></span>
-
-  ![Visualizzazione dei messaggi nel report Defender per Office 365 tipi di file](../../media/atp-file-types-report-message-view.png)
-
-  <span data-ttu-id="c5076-181">Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-181">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="c5076-182">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-182">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-183">Gli stessi valori di eliminazione dei messaggi disponibili nel grafico e il valore **aggiuntivo Messaggi passati.**</span><span class="sxs-lookup"><span data-stu-id="c5076-183">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
-
-- <span data-ttu-id="c5076-184">**Visualizza dati per: File**: Il grafico contiene le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-184">**View data by: File**: The chart contains the following information:</span></span>
-
-  - <span data-ttu-id="c5076-185">**Allegati Excel dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-185">**Malicious Excel attachments**</span></span>
-  - <span data-ttu-id="c5076-186">**Allegati Flash dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-186">**Malicious Flash attachments**</span></span>
-  - <span data-ttu-id="c5076-187">**Allegati PDF dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-187">**Malicious PDF attachments**</span></span>
-  - <span data-ttu-id="c5076-188">**Allegati PowerPoint dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-188">**Malicious PowerPoint attachments**</span></span>
-  - <span data-ttu-id="c5076-189">**URL dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-189">**Malicious URLs**</span></span>
-  - <span data-ttu-id="c5076-190">**Allegati di Word dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-190">**Malicious Word attachments**</span></span>
-  - <span data-ttu-id="c5076-191">**Allegati eseguibili dannosi**</span><span class="sxs-lookup"><span data-stu-id="c5076-191">**Malicious executable attachments**</span></span>
-  - <span data-ttu-id="c5076-192">**Altri**</span><span class="sxs-lookup"><span data-stu-id="c5076-192">**Others**</span></span>
-
-  <span data-ttu-id="c5076-193">Quando si passa il mouse su un determinato giorno (punto dati), è [](safe-attachments.md) possibile visualizzare la suddivisione dei tipi di file dannosi rilevati dagli allegati sicuri e dalla protezione [antimalware in EOP.](anti-malware-protection.md)</span><span class="sxs-lookup"><span data-stu-id="c5076-193">When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).</span></span>
-
-  ![Visualizzazione file nel report Defender per Office 365 tipi di file](../../media/atp-file-types-report-file-view.png)
-
-  <span data-ttu-id="c5076-195">Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-195">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="c5076-196">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-196">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-197">Gli stessi valori del tipo di file visibili nel grafico.</span><span class="sxs-lookup"><span data-stu-id="c5076-197">The same file type values that are visible in the chart.</span></span>
-
-### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a><span data-ttu-id="c5076-198">Visualizzazione tabella dei dettagli per il report sull'eliminazione Office 365 defender per i messaggi</span><span class="sxs-lookup"><span data-stu-id="c5076-198">Details table view for the Defender for Office 365 message disposition report</span></span>
-
-<span data-ttu-id="c5076-199">Se si fa clic **su** Visualizza tabella dettagli , il report offre una visualizzazione quasi in tempo reale di tutti i clic che si verificano all'interno dell'organizzazione negli ultimi 10 giorni.</span><span class="sxs-lookup"><span data-stu-id="c5076-199">If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days.</span></span> <span data-ttu-id="c5076-200">Le informazioni visualizzate dipendono dal grafico visualizzato:</span><span class="sxs-lookup"><span data-stu-id="c5076-200">The information that's shown depends on the chart you were looking at:</span></span>
-
-- <span data-ttu-id="c5076-201">**Visualizza dati per: Messaggio**:</span><span class="sxs-lookup"><span data-stu-id="c5076-201">**View data by: Message**:</span></span>
-
-  - <span data-ttu-id="c5076-202">**Data**</span><span class="sxs-lookup"><span data-stu-id="c5076-202">**Date**</span></span>
-  - <span data-ttu-id="c5076-203">**Indirizzo destinatario**</span><span class="sxs-lookup"><span data-stu-id="c5076-203">**Recipient address**</span></span>
-  - <span data-ttu-id="c5076-204">**Indirizzo del mittente**</span><span class="sxs-lookup"><span data-stu-id="c5076-204">**Sender address**</span></span>
-  - <span data-ttu-id="c5076-205">**ID messaggio**</span><span class="sxs-lookup"><span data-stu-id="c5076-205">**Message ID**</span></span>
-  - <span data-ttu-id="c5076-206">**File**</span><span class="sxs-lookup"><span data-stu-id="c5076-206">**File**</span></span>
-  - <span data-ttu-id="c5076-207">**Oggetto**</span><span class="sxs-lookup"><span data-stu-id="c5076-207">**Subject**</span></span>
-
-  <span data-ttu-id="c5076-208">Se si fa **clic su Filtri**, è possibile modificare i risultati con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-208">If you click **Filters**, you can modify the results with the following filters:</span></span>
-
-  - <span data-ttu-id="c5076-209">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-209">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-210">Gli stessi valori di eliminazione dei messaggi disponibili nel grafico e il valore **aggiuntivo Messaggi passati.**</span><span class="sxs-lookup"><span data-stu-id="c5076-210">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
-
-- <span data-ttu-id="c5076-211">**Visualizza dati per: File**:</span><span class="sxs-lookup"><span data-stu-id="c5076-211">**View data by: File**:</span></span>
-
-  - <span data-ttu-id="c5076-212">**Data**</span><span class="sxs-lookup"><span data-stu-id="c5076-212">**Date**</span></span>
-  - <span data-ttu-id="c5076-213">**Indirizzo destinatario**</span><span class="sxs-lookup"><span data-stu-id="c5076-213">**Recipient address**</span></span>
-  - <span data-ttu-id="c5076-214">**Indirizzo del mittente**</span><span class="sxs-lookup"><span data-stu-id="c5076-214">**Sender address**</span></span>
-  - <span data-ttu-id="c5076-215">**ID messaggio**</span><span class="sxs-lookup"><span data-stu-id="c5076-215">**Message ID**</span></span>
-  - <span data-ttu-id="c5076-216">**File**</span><span class="sxs-lookup"><span data-stu-id="c5076-216">**File**</span></span>
-
-  <span data-ttu-id="c5076-217">Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-217">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="c5076-218">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-218">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-219">Gli stessi valori del tipo di file visibili nel grafico.</span><span class="sxs-lookup"><span data-stu-id="c5076-219">The same file type values that are visible in the chart.</span></span>
-
-<span data-ttu-id="c5076-220">Per tornare alla visualizzazione report, fare clic su **Visualizza report.**</span><span class="sxs-lookup"><span data-stu-id="c5076-220">To get back to the reports view, click **View report**.</span></span>
-
-## <a name="mail-latency-report"></a><span data-ttu-id="c5076-221">Rapporto latenza della posta</span><span class="sxs-lookup"><span data-stu-id="c5076-221">Mail latency report</span></span>
-
-<span data-ttu-id="c5076-222">Il **report Latenza della posta** mostra una visualizzazione aggregata della latenza di recapito e detonazione della posta riscontrata all'interno dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="c5076-222">The **Mail latency report** shows you an aggregate view of the mail delivery and detonation latency experienced within your organization.</span></span> <span data-ttu-id="c5076-223">I tempi di recapito della posta nel servizio sono influenzati da una serie di fattori e il tempo di recapito assoluto in secondi spesso non è un buon indicatore di esito positivo o di un problema.</span><span class="sxs-lookup"><span data-stu-id="c5076-223">Mail delivery times in the service are affected by a number of factors, and the absolute delivery time in seconds is often not a good indicator of success or a problem.</span></span> <span data-ttu-id="c5076-224">Un tempo di recapito lento in un giorno può essere considerato un tempo medio di recapito in un altro giorno o viceversa.</span><span class="sxs-lookup"><span data-stu-id="c5076-224">A slow delivery time on one day might be considered an average delivery time on another day, or vice-versa.</span></span> <span data-ttu-id="c5076-225">Il **rapporto Latenza posta** tenta di qualificare il recapito dei messaggi in base ai dati statistici relativi ai tempi di recapito osservati di altri messaggi:</span><span class="sxs-lookup"><span data-stu-id="c5076-225">The **Mail latency report** tries to qualify message delivery based on statistical data about the observed delivery times of other messages:</span></span>
-
-- <span data-ttu-id="c5076-226">**50° percentile**: indica i tempi di recapito dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="c5076-226">**50th percentile**: This is the middle for message delivery times.</span></span> <span data-ttu-id="c5076-227">È possibile considerare questo valore come un tempo medio di recapito.</span><span class="sxs-lookup"><span data-stu-id="c5076-227">You can consider this value as an average delivery time.</span></span>
-- <span data-ttu-id="c5076-228">**90° percentile**: indica un'elevata latenza per il recapito dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="c5076-228">**90th percentile**: This indicates a high latency for message delivery.</span></span> <span data-ttu-id="c5076-229">Solo il 10% dei messaggi ha impiegato più tempo di questo valore per il recapito.</span><span class="sxs-lookup"><span data-stu-id="c5076-229">Only 10% of messages took longer than this value to deliver.</span></span>
-- <span data-ttu-id="c5076-230">**99° percentile:** indica la latenza massima per il recapito dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="c5076-230">**99th percentile**: This indicates the highest latency for message delivery.</span></span>
-
-<span data-ttu-id="c5076-231">Il lato client e la latenza di rete non sono inclusi.</span><span class="sxs-lookup"><span data-stu-id="c5076-231">Client side and network latency are not included.</span></span>
-
-<span data-ttu-id="c5076-232">Per visualizzare il report, aprire il portale di  [Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & collaborazione E-mail & rapporti di collaborazione e fare clic su Visualizza dettagli \>  \> **in** **Report latenza posta**. </span><span class="sxs-lookup"><span data-stu-id="c5076-232">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Mail latency report**.</span></span> <span data-ttu-id="c5076-233">Per passare direttamente al report, aprire <https://security.microsoft.com/mailLatencyReport> .</span><span class="sxs-lookup"><span data-stu-id="c5076-233">To go directly to the report, open <https://security.microsoft.com/mailLatencyReport>.</span></span>
-
-![Widget report latenza della posta nel dashboard report](../../media/mail-latency-report-widget.png)
-
-### <a name="report-view-for-the-mail-latency-report"></a><span data-ttu-id="c5076-235">Visualizzazione report per il report Latenza posta</span><span class="sxs-lookup"><span data-stu-id="c5076-235">Report view for the Mail latency report</span></span>
-
-<span data-ttu-id="c5076-236">Quando si apre il report, la **scheda 50° percentile è** selezionata per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="c5076-236">When you open the report, the **50th percentiles** tab is selected by default.</span></span>
-
-<span data-ttu-id="c5076-237">Per impostazione predefinita, questa visualizzazione contiene un grafico configurato con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-237">By default, this view contains a chart that's configured with the following filters:</span></span>
-
-- <span data-ttu-id="c5076-238">**Date**: Ultimi 7 giorni</span><span class="sxs-lookup"><span data-stu-id="c5076-238">**Date**: The last 7 days</span></span>
-- <span data-ttu-id="c5076-239">**Visualizzazione messaggio**:</span><span class="sxs-lookup"><span data-stu-id="c5076-239">**Message View**:</span></span>
-  - <span data-ttu-id="c5076-240">Messaggi detonati</span><span class="sxs-lookup"><span data-stu-id="c5076-240">Detonated messages</span></span>
-
-<span data-ttu-id="c5076-241">Questo grafico mostra i messaggi organizzati nelle categorie seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-241">This chart shows messages organized into the following categories:</span></span>
-
-- <span data-ttu-id="c5076-242">**Latenza recapito posta**</span><span class="sxs-lookup"><span data-stu-id="c5076-242">**Mail delivery latency**</span></span>
-- <span data-ttu-id="c5076-243">**Latenza detonazione**</span><span class="sxs-lookup"><span data-stu-id="c5076-243">**Detonation latency**</span></span>
-
-<span data-ttu-id="c5076-244">Quando si passa il mouse su una categoria nel grafico, è possibile visualizzare una suddivisione della latenza in ogni categoria.</span><span class="sxs-lookup"><span data-stu-id="c5076-244">When you hover over a category in the chart, you can see a breakdown of the latency in each category.</span></span>
-
-![Rapporto latenza della posta](../../media/mail-latency-report.png)
-
-<span data-ttu-id="c5076-246">Se si fa **clic su Filtro** nella visualizzazione report, è possibile modificare i risultati con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-246">If you click **Filter** in the report view, you can modify the results with the following filters:</span></span>
-
-- <span data-ttu-id="c5076-247">Tutti i messaggi</span><span class="sxs-lookup"><span data-stu-id="c5076-247">All messages</span></span>
-- <span data-ttu-id="c5076-248">Messaggi che contengono allegati o URL</span><span class="sxs-lookup"><span data-stu-id="c5076-248">Messages that contain attachments or URLs</span></span>
-
-<span data-ttu-id="c5076-249">Se si fa clic sulla **scheda 90° percentile o** **sul 99° percentile,** verranno utilizzati gli stessi filtri predefiniti della **visualizzazione 50° percentile.**</span><span class="sxs-lookup"><span data-stu-id="c5076-249">If you click the **90th percentiles** tab or the **99th percentiles** tab, the same default filters from the **50th percentiles** view are used.</span></span>
-
-### <a name="details-table-view-for-the-mail-latency-report"></a><span data-ttu-id="c5076-250">Visualizzazione tabella dettagli per il report Latenza posta</span><span class="sxs-lookup"><span data-stu-id="c5076-250">Details table view for the Mail latency report</span></span>
-
-<span data-ttu-id="c5076-251">Nella visualizzazione tabella dei dettagli vengono visualizzate le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-251">The following information is shown in the details table view:</span></span>
-
-- <span data-ttu-id="c5076-252">**Data**</span><span class="sxs-lookup"><span data-stu-id="c5076-252">**Date**</span></span>
-- <span data-ttu-id="c5076-253">**Percentili**</span><span class="sxs-lookup"><span data-stu-id="c5076-253">**Percentiles**</span></span>
-- <span data-ttu-id="c5076-254">**Conteggio messaggi**</span><span class="sxs-lookup"><span data-stu-id="c5076-254">**Message count**</span></span>
-- <span data-ttu-id="c5076-255">**Latenza complessiva**</span><span class="sxs-lookup"><span data-stu-id="c5076-255">**Overall latency**</span></span>
-
-![Dettagli del rapporto sulla latenza della posta](../../media/mail-latency-report-details.png)
-
-<span data-ttu-id="c5076-257">Quanto sopra mostra che il 14 novembre la latenza media riscontrata per tutti i messaggi recapitati e detonati è stata **di 108.033** secondi.</span><span class="sxs-lookup"><span data-stu-id="c5076-257">The above shows that on November 14 the average latency experienced for all messages delivered and detonated was **108.033** seconds.</span></span>
-
-<span data-ttu-id="c5076-258">La tabella dei dettagli contiene le stesse informazioni in ogni scheda.</span><span class="sxs-lookup"><span data-stu-id="c5076-258">The details table contains the same information on each tab.</span></span>
-
-## <a name="threat-protection-status-report"></a><span data-ttu-id="c5076-259">Report dello stato di protezione dalle minacce</span><span class="sxs-lookup"><span data-stu-id="c5076-259">Threat protection status report</span></span>
-
-<span data-ttu-id="c5076-260">Il **rapporto sullo stato di** Protezione dalle minacce è un'unica visualizzazione che riunisce informazioni sul contenuto dannoso e sulla posta elettronica dannosa rilevata e bloccata da [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) e Microsoft Defender per Office 365.</span><span class="sxs-lookup"><span data-stu-id="c5076-260">The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365.</span></span> <span data-ttu-id="c5076-261">Per ulteriori informazioni, vedere [Rapporto sullo stato di Protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report).</span><span class="sxs-lookup"><span data-stu-id="c5076-261">For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).</span></span>
-
-## <a name="url-threat-protection-report"></a><span data-ttu-id="c5076-262">Report di protezione dalle minacce URL</span><span class="sxs-lookup"><span data-stu-id="c5076-262">URL threat protection report</span></span>
-
-<span data-ttu-id="c5076-263">Il **report di protezione dalle minacce URL** fornisce visualizzazioni di riepilogo e tendenze per le minacce rilevate e le azioni eseguite sui clic sugli URL come parte di Collegamenti [sicuri.](safe-links.md)</span><span class="sxs-lookup"><span data-stu-id="c5076-263">The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md).</span></span> <span data-ttu-id="c5076-264">A questo report non saranno applicati i dati dei clic degli utenti a cui è applicato il criterio Collegamenti sicuri. L'opzione Non tenere traccia **dei clic degli utenti** è selezionata.</span><span class="sxs-lookup"><span data-stu-id="c5076-264">This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.</span></span>
-
-<span data-ttu-id="c5076-265">Per visualizzare il report, aprire il portale  [di Microsoft 365 Defender,](https://security.microsoft.com)passare a Report e-mail & \> **collaborazione** \> **E-mail & report**  di collaborazione e fare clic su Visualizza dettagli in Report protezione **URL**.</span><span class="sxs-lookup"><span data-stu-id="c5076-265">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **URL protection report**.</span></span> <span data-ttu-id="c5076-266">Per passare direttamente al report, aprire <https://security.microsoft.com/reports/URLProtectionActionReport> .</span><span class="sxs-lookup"><span data-stu-id="c5076-266">To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.</span></span>
-
-![Widget report protezione URL nel dashboard report](../../media/url-protection-report-widget.png)
+## <a name="safe-attachments-message-disposition-report"></a><span data-ttu-id="c4125-117">Safe Rapporto eliminazione messaggi allegati</span><span class="sxs-lookup"><span data-stu-id="c4125-117">Safe Attachments message disposition report</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c5076-268">Si tratta di un *report sulle tendenze di protezione,* ovvero i dati rappresentano le tendenze in un set di dati più grande.</span><span class="sxs-lookup"><span data-stu-id="c5076-268">This is a *protection trend report*, meaning data represents trends in a larger dataset.</span></span> <span data-ttu-id="c5076-269">Di conseguenza, i dati nella visualizzazione aggregata non sono disponibili in tempo reale qui, ma i dati nella visualizzazione della tabella dei dettagli sono, quindi potrebbe verificarsi una leggera discrepanza tra le due visualizzazioni.</span><span class="sxs-lookup"><span data-stu-id="c5076-269">As a result, the data in the aggregate view is not available in real time here, but the data in the details table view is, so you may see a slight discrepancy between the two views.</span></span>
+> <span data-ttu-id="c4125-118">Il **Safe di eliminazione dei messaggi** allegati alla fine andrà via.</span><span class="sxs-lookup"><span data-stu-id="c4125-118">The **Safe Attachments message disposition report** will eventually go away.</span></span> <span data-ttu-id="c4125-119">Le stesse informazioni sono disponibili nella relazione [sullo stato di Threat Protection.](#threat-protection-status-report)</span><span class="sxs-lookup"><span data-stu-id="c4125-119">The same information is available in the [Threat protection status report](#threat-protection-status-report).</span></span>
 
-### <a name="report-view-for-the-url-threat-protection-report"></a><span data-ttu-id="c5076-270">Visualizzazione report per il report di protezione dalle minacce URL</span><span class="sxs-lookup"><span data-stu-id="c5076-270">Report view for the URL threat protection report</span></span>
+## <a name="mail-latency-report"></a><span data-ttu-id="c4125-120">Rapporto latenza della posta</span><span class="sxs-lookup"><span data-stu-id="c4125-120">Mail latency report</span></span>
 
-<span data-ttu-id="c5076-271">Il **report di protezione dalle** minacce URL include due visualizzazioni aggregate che vengono aggiornate una volta ogni quattro ore che mostra i dati degli ultimi 90 giorni:</span><span class="sxs-lookup"><span data-stu-id="c5076-271">The **URL threat protection** report has two aggregated views that are refreshed once every four hours that shows data for the last 90 days:</span></span>
+<span data-ttu-id="c4125-121">Il **report Latenza della posta** mostra una visualizzazione aggregata della latenza di recapito e detonazione della posta riscontrata all'interno dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="c4125-121">The **Mail latency report** shows you an aggregate view of the mail delivery and detonation latency experienced within your organization.</span></span> <span data-ttu-id="c4125-122">I tempi di recapito della posta nel servizio sono influenzati da una serie di fattori e il tempo di recapito assoluto in secondi spesso non è un buon indicatore di esito positivo o di un problema.</span><span class="sxs-lookup"><span data-stu-id="c4125-122">Mail delivery times in the service are affected by a number of factors, and the absolute delivery time in seconds is often not a good indicator of success or a problem.</span></span> <span data-ttu-id="c4125-123">Un tempo di recapito lento in un giorno può essere considerato un tempo medio di recapito in un altro giorno o viceversa.</span><span class="sxs-lookup"><span data-stu-id="c4125-123">A slow delivery time on one day might be considered an average delivery time on another day, or vice-versa.</span></span> <span data-ttu-id="c4125-124">In questo modo si tenta di qualificare il recapito dei messaggi in base ai dati statistici relativi ai tempi di recapito osservati di altri messaggi.</span><span class="sxs-lookup"><span data-stu-id="c4125-124">This tries to qualify message delivery based on statistical data about the observed delivery times of other messages.</span></span>
 
-- <span data-ttu-id="c5076-272">**Azione di protezione clic URL**: Mostra il numero di clic sull'URL da parte degli utenti nell'organizzazione e i risultati del clic:</span><span class="sxs-lookup"><span data-stu-id="c5076-272">**URL click protection action**: Shows the number of URL clicks by users in the organization and the results of the click:</span></span>
+<span data-ttu-id="c4125-125">Il lato client e la latenza di rete non sono inclusi.</span><span class="sxs-lookup"><span data-stu-id="c4125-125">Client side and network latency are not included.</span></span>
 
-  - <span data-ttu-id="c5076-273">**Bloccato** (all'utente è stato impedito di passare all'URL)</span><span class="sxs-lookup"><span data-stu-id="c5076-273">**Blocked** (the user was blocked from navigating to the URL)</span></span>
-  - <span data-ttu-id="c5076-274">**Bloccato e su cui è stato fatto clic** (l'utente ha scelto di continuare a passare all'URL)</span><span class="sxs-lookup"><span data-stu-id="c5076-274">**Blocked and clicked through** (the user has chosen to continue navigating to the URL)</span></span>
-  - <span data-ttu-id="c5076-275">**Fatto clic durante l'analisi** (l'utente ha fatto clic sul collegamento prima del completamento dell'analisi)</span><span class="sxs-lookup"><span data-stu-id="c5076-275">**Clicked through during scan** (the user has clicked on the link before the scan was complete)</span></span>
+<span data-ttu-id="c4125-126">Per visualizzare il report, aprire il portale [Microsoft 365 Defender,](https://security.microsoft.com)passare **a** Report e-mail & \> **collaborazione** \> **E-mail & collaborazione.**</span><span class="sxs-lookup"><span data-stu-id="c4125-126">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="c4125-127">Nella pagina **Rapporti di collaborazione &** posta elettronica individuare Rapporto **latenza posta** e quindi fare clic su Visualizza **dettagli.**</span><span class="sxs-lookup"><span data-stu-id="c4125-127">On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**.</span></span> <span data-ttu-id="c4125-128">Per passare direttamente al report, aprire <https://security.microsoft.com/mailLatencyReport> .</span><span class="sxs-lookup"><span data-stu-id="c4125-128">To go directly to the report, open <https://security.microsoft.com/mailLatencyReport>.</span></span>
 
-  <span data-ttu-id="c5076-276">Un clic indica che l'utente ha fatto clic attraverso la pagina di blocco al sito Web dannoso (gli amministratori possono disabilitare il clic nei criteri collegamenti sicuri).</span><span class="sxs-lookup"><span data-stu-id="c5076-276">A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).</span></span>
+![Widget report di latenza della posta nella pagina Report & e-mail](../../media/mail-latency-report-widget.png)
 
-  <span data-ttu-id="c5076-277">Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-277">If you click **Filters**, you can modify the report with the following filters:</span></span>
+<span data-ttu-id="c4125-130">Nella pagina **Rapporto latenza posta** sono disponibili le schede seguenti nella pagina **Rapporto latenza posta:**</span><span class="sxs-lookup"><span data-stu-id="c4125-130">On the **Mail latency report** page, the following tabs are available on the **Mail latency report** page:</span></span>
 
-  - <span data-ttu-id="c5076-278">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-278">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-279">Le azioni di protezione dei clic disponibili, oltre al valore **Consentito** (all'utente è stato consentito passare all'URL).</span><span class="sxs-lookup"><span data-stu-id="c5076-279">The available click protection actions, plus the value **Allowed** (the user was allowed to navigate to the URL).</span></span>
+- <span data-ttu-id="c4125-131">**50° percentile**: indica i tempi di recapito dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="c4125-131">**50th percentile**: This is the middle for message delivery times.</span></span> <span data-ttu-id="c4125-132">È possibile considerare questo valore come un tempo medio di recapito.</span><span class="sxs-lookup"><span data-stu-id="c4125-132">You can consider this value as an average delivery time.</span></span> <span data-ttu-id="c4125-133">Questa scheda è selezionata per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="c4125-133">This tab is selected by default.</span></span>
+- <span data-ttu-id="c4125-134">**90° percentile**: indica un'elevata latenza per il recapito dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="c4125-134">**90th percentile**: This indicates a high latency for message delivery.</span></span> <span data-ttu-id="c4125-135">Solo il 10% dei messaggi ha impiegato più tempo di questo valore per il recapito.</span><span class="sxs-lookup"><span data-stu-id="c4125-135">Only 10% of messages took longer than this value to deliver.</span></span>
+- <span data-ttu-id="c4125-136">**99° percentile:** indica la latenza massima per il recapito dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="c4125-136">**99th percentile**: This indicates the highest latency for message delivery.</span></span>
 
-  ![Url Click Protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+<span data-ttu-id="c4125-137">Indipendentemente dalla scheda selezionata, il grafico mostra i messaggi organizzati nelle categorie seguenti:</span><span class="sxs-lookup"><span data-stu-id="c4125-137">Regardless of the tab you select, the chart shows messages organized into the following categories:</span></span>
 
-- <span data-ttu-id="c5076-281">**Url click by application**: Mostra il numero di clic sull'URL da parte delle applicazioni che supportano collegamenti sicuri:</span><span class="sxs-lookup"><span data-stu-id="c5076-281">**URL click by application**: Shows the number of URL clicks by applications that support Safe Links:</span></span>
+- <span data-ttu-id="c4125-138">**Latenza recapito posta**</span><span class="sxs-lookup"><span data-stu-id="c4125-138">**Mail delivery latency**</span></span>
+- <span data-ttu-id="c4125-139">**Detonazioni**</span><span class="sxs-lookup"><span data-stu-id="c4125-139">**Detonations**</span></span>
 
-  - <span data-ttu-id="c5076-282">**Client di posta elettronica**</span><span class="sxs-lookup"><span data-stu-id="c5076-282">**Email client**</span></span>
-  - <span data-ttu-id="c5076-283">**PowerPoint**</span><span class="sxs-lookup"><span data-stu-id="c5076-283">**PowerPoint**</span></span>
-  - <span data-ttu-id="c5076-284">**Word**</span><span class="sxs-lookup"><span data-stu-id="c5076-284">**Word**</span></span>
-  - <span data-ttu-id="c5076-285">**Excel**</span><span class="sxs-lookup"><span data-stu-id="c5076-285">**Excel**</span></span>
-  - <span data-ttu-id="c5076-286">**OneNote**</span><span class="sxs-lookup"><span data-stu-id="c5076-286">**OneNote**</span></span>
-  - <span data-ttu-id="c5076-287">**Visio**</span><span class="sxs-lookup"><span data-stu-id="c5076-287">**Visio**</span></span>
-  - <span data-ttu-id="c5076-288">**Teams**</span><span class="sxs-lookup"><span data-stu-id="c5076-288">**Teams**</span></span>
-  - <span data-ttu-id="c5076-289">**Altro**</span><span class="sxs-lookup"><span data-stu-id="c5076-289">**Other**</span></span>
+<span data-ttu-id="c4125-140">Quando si passa il mouse su una categoria nel grafico, è possibile visualizzare una suddivisione della latenza in ogni categoria.</span><span class="sxs-lookup"><span data-stu-id="c4125-140">When you hover over a category in the chart, you can see a breakdown of the latency in each category.</span></span>
 
-  <span data-ttu-id="c5076-290">Se si fa **clic su Filtri**, è possibile modificare il report con i filtri seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-290">If you click **Filters**, you can modify the report with the following filters:</span></span>
+![50° percentile del rapporto latenza della posta](../../media/mail-latency-report-50th-percentile-view.png)
 
-  - <span data-ttu-id="c5076-291">**Data di inizio** e **Data fine**</span><span class="sxs-lookup"><span data-stu-id="c5076-291">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="c5076-292">Applicazioni disponibili.</span><span class="sxs-lookup"><span data-stu-id="c5076-292">The available applications.</span></span>
+<span data-ttu-id="c4125-142">Se si fa **clic su Filtro**, è possibile filtrare sia il grafico che la tabella dei dettagli in base ai valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="c4125-142">If you click **Filter**, you can filter both the chart and the details table by the following values:</span></span>
 
-### <a name="details-table-view-for-the-url-threat-protection-report"></a><span data-ttu-id="c5076-293">Visualizzazione tabella dettagli per il report di protezione dalle minacce URL</span><span class="sxs-lookup"><span data-stu-id="c5076-293">Details table view for the URL threat protection report</span></span>
+- <span data-ttu-id="c4125-143">**Data (UTC)**: **Data inizio e** Data **fine**</span><span class="sxs-lookup"><span data-stu-id="c4125-143">**Date (UTC)**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="c4125-144">**Visualizzazione messaggio:** uno dei valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="c4125-144">**Message view**: One of the following values:</span></span>
+  - <span data-ttu-id="c4125-145">**Tutti i messaggi**</span><span class="sxs-lookup"><span data-stu-id="c4125-145">**All messages**</span></span>
+  - <span data-ttu-id="c4125-146">**Messaggi che contengono allegati o URL**</span><span class="sxs-lookup"><span data-stu-id="c4125-146">**Messages that contain attachments or URLs**</span></span>
+  - <span data-ttu-id="c4125-147">**Messaggi detonati**</span><span class="sxs-lookup"><span data-stu-id="c4125-147">**Detonated messages**</span></span>
 
-<span data-ttu-id="c5076-294">Se si **fa** clic su Visualizza tabella dettagli , il report offre una visualizzazione quasi in tempo reale di tutti i clic che si verificano nell'organizzazione negli ultimi 7 giorni con i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="c5076-294">If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 7 days with the following details:</span></span>
+<span data-ttu-id="c4125-148">Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla** o **Cancella filtri.**</span><span class="sxs-lookup"><span data-stu-id="c4125-148">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
 
-- <span data-ttu-id="c5076-295">**Ora clic**</span><span class="sxs-lookup"><span data-stu-id="c5076-295">**Click time**</span></span>
-- <span data-ttu-id="c5076-296">**Utente**</span><span class="sxs-lookup"><span data-stu-id="c5076-296">**User**</span></span>
-- <span data-ttu-id="c5076-297">**URL**</span><span class="sxs-lookup"><span data-stu-id="c5076-297">**URL**</span></span>
-- <span data-ttu-id="c5076-298">**Azione**</span><span class="sxs-lookup"><span data-stu-id="c5076-298">**Action**</span></span>
-- <span data-ttu-id="c5076-299">**App**</span><span class="sxs-lookup"><span data-stu-id="c5076-299">**App**</span></span>
+<span data-ttu-id="c4125-149">Nella tabella dei dettagli sotto il grafico sono disponibili le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c4125-149">In the details table below the chart, the following information is available:</span></span>
 
-<span data-ttu-id="c5076-300">Se si fa **clic su** Filtri nella visualizzazione tabella dei dettagli, è possibile  filtrare in base allo stesso criterio della visualizzazione report e anche in base ai domini o ai destinatari separati da virgole. </span><span class="sxs-lookup"><span data-stu-id="c5076-300">If you click **Filters** in the details table view, you can filter by the same criteria as in the report view, and also by **Domains** or **Recipients** separated by commas.</span></span>
+- <span data-ttu-id="c4125-150">**Data (UTC)**</span><span class="sxs-lookup"><span data-stu-id="c4125-150">**Date (UTC)**</span></span>
+- <span data-ttu-id="c4125-151">**Percentili**: **50,** **90** o **99**</span><span class="sxs-lookup"><span data-stu-id="c4125-151">**Percentiles**: **50**, **90**, or **99**</span></span>
+- <span data-ttu-id="c4125-152">**Conteggio messaggi**</span><span class="sxs-lookup"><span data-stu-id="c4125-152">**Message count**</span></span>
+- <span data-ttu-id="c4125-153">**Latenza complessiva**</span><span class="sxs-lookup"><span data-stu-id="c4125-153">**Overall latency**</span></span>
+
+## <a name="threat-protection-status-report"></a><span data-ttu-id="c4125-154">Report dello stato di protezione dalle minacce</span><span class="sxs-lookup"><span data-stu-id="c4125-154">Threat protection status report</span></span>
+
+<span data-ttu-id="c4125-155">Il **rapporto sullo stato di** Protezione dalle minacce è un'unica visualizzazione che riunisce informazioni sul contenuto dannoso e sulla posta elettronica dannosa rilevata e bloccata da [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) e Microsoft Defender per Office 365.</span><span class="sxs-lookup"><span data-stu-id="c4125-155">The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365.</span></span> <span data-ttu-id="c4125-156">Per ulteriori informazioni, vedere [Rapporto sullo stato di Protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report).</span><span class="sxs-lookup"><span data-stu-id="c4125-156">For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).</span></span>
+
+## <a name="url-threat-protection-report"></a><span data-ttu-id="c4125-157">Report di protezione dalle minacce URL</span><span class="sxs-lookup"><span data-stu-id="c4125-157">URL threat protection report</span></span>
+
+<span data-ttu-id="c4125-158">Il **report di protezione dalle minacce URL** fornisce visualizzazioni di riepilogo e tendenze per le minacce rilevate e le azioni eseguite sui clic sugli URL nell'ambito Safe [collegamenti.](safe-links.md)</span><span class="sxs-lookup"><span data-stu-id="c4125-158">The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md).</span></span> <span data-ttu-id="c4125-159">In questo report non saranno disponibili i dati dei clic degli utenti a cui è applicato il criterio Safe collegamenti con l'opzione Non **tenere** traccia dei clic degli utenti selezionata.</span><span class="sxs-lookup"><span data-stu-id="c4125-159">This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.</span></span>
+
+<span data-ttu-id="c4125-160">Per visualizzare il report, aprire il portale [Microsoft 365 Defender,](https://security.microsoft.com)passare **a** Report e-mail & \> **collaborazione** \> **E-mail & collaborazione.**</span><span class="sxs-lookup"><span data-stu-id="c4125-160">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="c4125-161">Nella pagina **Rapporti di collaborazione &** posta elettronica individuare la pagina Protezione **URL** e quindi fare clic su **Visualizza dettagli.**</span><span class="sxs-lookup"><span data-stu-id="c4125-161">On the **Email & collaboration reports** page, find **URL protection page** and then click **View details**.</span></span> <span data-ttu-id="c4125-162">Per passare direttamente al report, aprire <https://security.microsoft.com/reports/URLProtectionActionReport> .</span><span class="sxs-lookup"><span data-stu-id="c4125-162">To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.</span></span>
+
+![Widget report protezione URL nella pagina Report di collaborazione & e-mail](../../media/url-protection-report-widget.png)
+
+<span data-ttu-id="c4125-164">Le visualizzazioni disponibili nella pagina **del report di protezione** dalle minacce URL sono descritte nelle sezioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="c4125-164">The available views on the **URL threat protection** report page are described in the following sections.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c5076-301">Il **filtro Domini** fa riferimento al dominio URL elencato nei risultati del report.</span><span class="sxs-lookup"><span data-stu-id="c5076-301">The **Domains** filter refers to the URL domain listed in the report results.</span></span> 
+> <span data-ttu-id="c4125-165">Si tratta di un *report sulle tendenze di protezione,* ovvero i dati rappresentano le tendenze in un set di dati più grande.</span><span class="sxs-lookup"><span data-stu-id="c4125-165">This is a *protection trend report*, meaning data represents trends in a larger dataset.</span></span> <span data-ttu-id="c4125-166">Di conseguenza, i dati nei grafici non sono disponibili in tempo reale qui, ma i dati nella tabella dei dettagli sono, quindi potresti vedere una leggera discrepanza tra i due.</span><span class="sxs-lookup"><span data-stu-id="c4125-166">As a result, the data in the charts is not available in real time here, but the data in the details table is, so you may see a slight discrepancy between the two.</span></span> <span data-ttu-id="c4125-167">I grafici vengono aggiornati una volta ogni quattro ore e contengono dati per gli ultimi 90 giorni.</span><span class="sxs-lookup"><span data-stu-id="c4125-167">The charts are refreshed once every four hours and contain data for the last 90 days.</span></span>
 
-<span data-ttu-id="c5076-302">Per tornare alla visualizzazione report, fare clic su **Visualizza report.**</span><span class="sxs-lookup"><span data-stu-id="c5076-302">To get back to the reports view, click **View report**.</span></span>
+### <a name="view-data-by-url-click-protection-action"></a><span data-ttu-id="c4125-168">Visualizzare i dati in base all'azione di protezione del clic dell'URL</span><span class="sxs-lookup"><span data-stu-id="c4125-168">View data by URL click protection action</span></span>
 
-## <a name="additional-reports-to-view"></a><span data-ttu-id="c5076-303">Report aggiuntivi da visualizzare</span><span class="sxs-lookup"><span data-stu-id="c5076-303">Additional reports to view</span></span>
+![Url Click Protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-<span data-ttu-id="c5076-304">Oltre ai report descritti in questo articolo, sono disponibili diversi altri report, come descritto nella tabella seguente:</span><span class="sxs-lookup"><span data-stu-id="c5076-304">In addition to the reports described in this article, several other reports are available, as described in the following table:</span></span>
+<span data-ttu-id="c4125-170">La visualizzazione azione Visualizza dati in base **all'URL** consente di visualizzare il numero di clic sull'URL da parte degli utenti nell'organizzazione e i risultati del clic:</span><span class="sxs-lookup"><span data-stu-id="c4125-170">The **View data by URL click protection action** view shows the number of URL clicks by users in the organization and the results of the click:</span></span>
+
+- <span data-ttu-id="c4125-171">**Consentito**: all'utente è stato consentito passare all'URL.</span><span class="sxs-lookup"><span data-stu-id="c4125-171">**Allowed**: The user was allowed to navigate to the URL.</span></span>
+- <span data-ttu-id="c4125-172">**Bloccato:** all'utente è stato impedito di passare all'URL.</span><span class="sxs-lookup"><span data-stu-id="c4125-172">**Blocked**: The user was blocked from navigating to the URL.</span></span>
+- <span data-ttu-id="c4125-173">**Bloccato e su cui è stato fatto clic:** l'utente ha scelto di continuare a passare all'URL.</span><span class="sxs-lookup"><span data-stu-id="c4125-173">**Blocked and clicked through**: The user has chosen to continue navigating to the URL.</span></span>
+- <span data-ttu-id="c4125-174">**Fatto clic durante l'analisi**: l'utente ha fatto clic sul collegamento prima del completamento dell'analisi.</span><span class="sxs-lookup"><span data-stu-id="c4125-174">**Clicked through during scan**: The user has clicked on the link before the scan was complete.</span></span>
+
+<span data-ttu-id="c4125-175">Un clic indica che l'utente ha fatto clic attraverso la pagina di blocco al sito Web dannoso (gli amministratori possono disabilitare il clic nei criteri Safe collegamenti).</span><span class="sxs-lookup"><span data-stu-id="c4125-175">A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).</span></span>
+
+<span data-ttu-id="c4125-176">Se si fa **clic su Filtri**, è possibile modificare il report e la tabella dei dettagli selezionando uno o più dei valori seguenti nel riquadro a comparsa visualizzato:</span><span class="sxs-lookup"><span data-stu-id="c4125-176">If you click **Filters**, you can modify the report and the details table by selecting one or more of the following values in the flyout that appears:</span></span>
+
+- <span data-ttu-id="c4125-177">**Data (UTC)**: **Data inizio e** Data **fine**</span><span class="sxs-lookup"><span data-stu-id="c4125-177">**Date (UTC)**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="c4125-178">**Rilevamento**:</span><span class="sxs-lookup"><span data-stu-id="c4125-178">**Detection**:</span></span>
+  - <span data-ttu-id="c4125-179">**Consentito**</span><span class="sxs-lookup"><span data-stu-id="c4125-179">**Allowed**</span></span>
+  - <span data-ttu-id="c4125-180">**Bloccato**</span><span class="sxs-lookup"><span data-stu-id="c4125-180">**Blocked**</span></span>
+  - <span data-ttu-id="c4125-181">**Bloccato e su cui è stato fatto clic**</span><span class="sxs-lookup"><span data-stu-id="c4125-181">**Blocked and clicked through**</span></span>
+  - <span data-ttu-id="c4125-182">**Fatto clic durante l'analisi**</span><span class="sxs-lookup"><span data-stu-id="c4125-182">**Clicked through during scan**</span></span>
+- <span data-ttu-id="c4125-183">**Domini**: domini URL elencati nei risultati del report.</span><span class="sxs-lookup"><span data-stu-id="c4125-183">**Domains**: The URL domains listed in the report results.</span></span>
+- <span data-ttu-id="c4125-184">**Destinatari**</span><span class="sxs-lookup"><span data-stu-id="c4125-184">**Recipients**</span></span>
+
+<span data-ttu-id="c4125-185">Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla** o **Cancella filtri.**</span><span class="sxs-lookup"><span data-stu-id="c4125-185">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
+
+<span data-ttu-id="c4125-186">La tabella dei dettagli sotto il grafico fornisce la seguente visualizzazione quasi in tempo reale di tutti i clic che si sono verificato nell'organizzazione negli ultimi 7 giorni:</span><span class="sxs-lookup"><span data-stu-id="c4125-186">The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:</span></span>
+
+- <span data-ttu-id="c4125-187">**Ora clic**</span><span class="sxs-lookup"><span data-stu-id="c4125-187">**Click time**</span></span>
+- <span data-ttu-id="c4125-188">**Utente**</span><span class="sxs-lookup"><span data-stu-id="c4125-188">**User**</span></span>
+- <span data-ttu-id="c4125-189">**URL**</span><span class="sxs-lookup"><span data-stu-id="c4125-189">**URL**</span></span>
+- <span data-ttu-id="c4125-190">**Azione**</span><span class="sxs-lookup"><span data-stu-id="c4125-190">**Action**</span></span>
+- <span data-ttu-id="c4125-191">**App**</span><span class="sxs-lookup"><span data-stu-id="c4125-191">**App**</span></span>
+
+### <a name="view-data-by-url-click-by-application"></a><span data-ttu-id="c4125-192">Visualizzare i dati in base all'URL facendo clic per applicazione</span><span class="sxs-lookup"><span data-stu-id="c4125-192">View data by URL click by application</span></span>
+
+![Url click by application view in the URL threat protection report](../../media/url-threat-protection-report-url-click-by-application-view.png)
+
+<span data-ttu-id="c4125-194">La visualizzazione Visualizza i dati in base **all'URL** fa clic per applicazione mostra il numero di clic sull'URL da parte delle app che supportano Safe collegamenti:</span><span class="sxs-lookup"><span data-stu-id="c4125-194">The **View data by URL click by application** view shows the number of URL clicks by apps that support Safe Links:</span></span>
+
+- <span data-ttu-id="c4125-195">**Client di posta elettronica**</span><span class="sxs-lookup"><span data-stu-id="c4125-195">**Email client**</span></span>
+- <span data-ttu-id="c4125-196">**PowerPoint**</span><span class="sxs-lookup"><span data-stu-id="c4125-196">**PowerPoint**</span></span>
+- <span data-ttu-id="c4125-197">**Word**</span><span class="sxs-lookup"><span data-stu-id="c4125-197">**Word**</span></span>
+- <span data-ttu-id="c4125-198">**Excel**</span><span class="sxs-lookup"><span data-stu-id="c4125-198">**Excel**</span></span>
+- <span data-ttu-id="c4125-199">**OneNote**</span><span class="sxs-lookup"><span data-stu-id="c4125-199">**OneNote**</span></span>
+- <span data-ttu-id="c4125-200">**Visio**</span><span class="sxs-lookup"><span data-stu-id="c4125-200">**Visio**</span></span>
+- <span data-ttu-id="c4125-201">**Teams**</span><span class="sxs-lookup"><span data-stu-id="c4125-201">**Teams**</span></span>
+- <span data-ttu-id="c4125-202">**Altri**</span><span class="sxs-lookup"><span data-stu-id="c4125-202">**Others**</span></span>
+
+<span data-ttu-id="c4125-203">Se si fa **clic su Filtri**, è possibile modificare il report e la tabella dei dettagli selezionando uno o più dei valori seguenti nel riquadro a comparsa visualizzato:</span><span class="sxs-lookup"><span data-stu-id="c4125-203">If you click **Filters**, you can modify the report and the details table by selecting one or more of the following values in the flyout that appears:</span></span>
+
+- <span data-ttu-id="c4125-204">**Data (UTC)**: **Data inizio e** Data **fine**</span><span class="sxs-lookup"><span data-stu-id="c4125-204">**Date (UTC)**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="c4125-205">**Rilevamento:** app disponibili nel grafico.</span><span class="sxs-lookup"><span data-stu-id="c4125-205">**Detection**: Available apps from the chart.</span></span>
+- <span data-ttu-id="c4125-206">**Domini**: domini URL elencati nei risultati del report.</span><span class="sxs-lookup"><span data-stu-id="c4125-206">**Domains**: The URL domains listed in the report results.</span></span>
+- <span data-ttu-id="c4125-207">**Destinatari**</span><span class="sxs-lookup"><span data-stu-id="c4125-207">**Recipients**</span></span>
+
+<span data-ttu-id="c4125-208">Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla** o **Cancella filtri.**</span><span class="sxs-lookup"><span data-stu-id="c4125-208">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
+
+<span data-ttu-id="c4125-209">La tabella dei dettagli sotto il grafico fornisce la seguente visualizzazione quasi in tempo reale di tutti i clic che si sono verificato nell'organizzazione negli ultimi 7 giorni:</span><span class="sxs-lookup"><span data-stu-id="c4125-209">The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:</span></span>
+
+- <span data-ttu-id="c4125-210">**Ora clic**</span><span class="sxs-lookup"><span data-stu-id="c4125-210">**Click time**</span></span>
+- <span data-ttu-id="c4125-211">**Utente**</span><span class="sxs-lookup"><span data-stu-id="c4125-211">**User**</span></span>
+- <span data-ttu-id="c4125-212">**URL**</span><span class="sxs-lookup"><span data-stu-id="c4125-212">**URL**</span></span>
+- <span data-ttu-id="c4125-213">**Azione**</span><span class="sxs-lookup"><span data-stu-id="c4125-213">**Action**</span></span>
+- <span data-ttu-id="c4125-214">**App**</span><span class="sxs-lookup"><span data-stu-id="c4125-214">**App**</span></span>
+
+## <a name="additional-reports-to-view"></a><span data-ttu-id="c4125-215">Report aggiuntivi da visualizzare</span><span class="sxs-lookup"><span data-stu-id="c4125-215">Additional reports to view</span></span>
+
+<span data-ttu-id="c4125-216">Oltre ai report descritti in questo articolo, sono disponibili diversi altri report, come descritto nella tabella seguente:</span><span class="sxs-lookup"><span data-stu-id="c4125-216">In addition to the reports described in this article, several other reports are available, as described in the following table:</span></span>
+
+<br>
 
 ****
 
-|<span data-ttu-id="c5076-305">Report</span><span class="sxs-lookup"><span data-stu-id="c5076-305">Report</span></span>|<span data-ttu-id="c5076-306">Argomento</span><span class="sxs-lookup"><span data-stu-id="c5076-306">Topic</span></span>|
+|<span data-ttu-id="c4125-217">Report</span><span class="sxs-lookup"><span data-stu-id="c4125-217">Report</span></span>|<span data-ttu-id="c4125-218">Argomento</span><span class="sxs-lookup"><span data-stu-id="c4125-218">Topic</span></span>|
 |---|---|
-|<span data-ttu-id="c5076-307">**Explorer** (Microsoft Defender per Office 365 Piano 2) o rilevamenti in tempo reale **(Microsoft** Defender per Office 365 Piano 1)</span><span class="sxs-lookup"><span data-stu-id="c5076-307">**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)</span></span>|[<span data-ttu-id="c5076-308">Esplora minacce (e rilevamenti in tempo reale)</span><span class="sxs-lookup"><span data-stu-id="c5076-308">Threat Explorer (and real-time detections)</span></span>](threat-explorer.md)|
-|<span data-ttu-id="c5076-309">**Report di sicurezza della** posta elettronica, ad esempio il report Mittenti e destinatari principali, il rapporto Spoofing della posta elettronica e il report Rilevamenti posta indesiderata.</span><span class="sxs-lookup"><span data-stu-id="c5076-309">**Email security reports**, such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.</span></span>|[<span data-ttu-id="c5076-310">Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c5076-310">View email security reports in the Microsoft 365 Defender portal</span></span>](view-email-security-reports.md)|
-|<span data-ttu-id="c5076-311">**Rapporti del flusso di** posta, ad esempio il rapporto inoltro, il rapporto sullo stato del flusso di posta e il rapporto Mittenti e destinatari principali.</span><span class="sxs-lookup"><span data-stu-id="c5076-311">**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.</span></span>|[<span data-ttu-id="c5076-312">Visualizzare i report del flusso di posta nel portale Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c5076-312">View mail flow reports in the Microsoft 365 Defender portal</span></span>](view-mail-flow-reports.md)|
-|<span data-ttu-id="c5076-313">**Traccia URL per collegamenti sicuri** (solo PowerShell).</span><span class="sxs-lookup"><span data-stu-id="c5076-313">**URL trace for Safe Links** (PowerShell only).</span></span> <span data-ttu-id="c5076-314">L'output di questo cmdlet mostra i risultati delle azioni collegamenti sicuri degli ultimi sette giorni.</span><span class="sxs-lookup"><span data-stu-id="c5076-314">The output of this cmdlet shows you the results of Safe Links actions over the past seven days.</span></span>|[<span data-ttu-id="c5076-315">Get-UrlTrace</span><span class="sxs-lookup"><span data-stu-id="c5076-315">Get-UrlTrace</span></span>](/powershell/module/exchange/get-urltrace)|
-|<span data-ttu-id="c5076-316">**Risultati del traffico di posta per EOP e Microsoft Defender per Office 365** (solo PowerShell).</span><span class="sxs-lookup"><span data-stu-id="c5076-316">**Mail traffic results for EOP and Microsoft Defender for Office 365** (PowerShell only).</span></span> <span data-ttu-id="c5076-317">L'output di questo cmdlet contiene informazioni su Domain, Date, Event Type, Direction, Action e Message Count.</span><span class="sxs-lookup"><span data-stu-id="c5076-317">The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.</span></span>|[<span data-ttu-id="c5076-318">Get-MailTrafficATPReport</span><span class="sxs-lookup"><span data-stu-id="c5076-318">Get-MailTrafficATPReport</span></span>](/powershell/module/exchange/get-mailtrafficatpreport)|
-|<span data-ttu-id="c5076-319">**Rapporti dettagli posta per EOP e Defender per Office 365** di posta elettronica (solo PowerShell).</span><span class="sxs-lookup"><span data-stu-id="c5076-319">**Mail detail reports for EOP and Defender for Office 365 detections** (PowerShell only).</span></span> <span data-ttu-id="c5076-320">L'output di questo cmdlet contiene dettagli su file o URL dannosi, tentativi di phishing, rappresentazione e altre potenziali minacce nei messaggi di posta elettronica o nei file.</span><span class="sxs-lookup"><span data-stu-id="c5076-320">The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.</span></span>|[<span data-ttu-id="c5076-321">Get-MailDetailATPReport</span><span class="sxs-lookup"><span data-stu-id="c5076-321">Get-MailDetailATPReport</span></span>](/powershell/module/exchange/get-maildetailatpreport)|
+|<span data-ttu-id="c4125-219">**Explorer** (Microsoft Defender per Office 365 Piano 2) o rilevamenti in tempo reale **(Microsoft** Defender per Office 365 Piano 1)</span><span class="sxs-lookup"><span data-stu-id="c4125-219">**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)</span></span>|[<span data-ttu-id="c4125-220">Esplora minacce (e rilevamenti in tempo reale)</span><span class="sxs-lookup"><span data-stu-id="c4125-220">Threat Explorer (and real-time detections)</span></span>](threat-explorer.md)|
+|<span data-ttu-id="c4125-221">**Report di sicurezza della** posta elettronica, ad esempio il report Mittenti e destinatari principali, il rapporto Spoofing della posta elettronica e il report Rilevamenti posta indesiderata.</span><span class="sxs-lookup"><span data-stu-id="c4125-221">**Email security reports**, such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.</span></span>|[<span data-ttu-id="c4125-222">Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender posta elettronica</span><span class="sxs-lookup"><span data-stu-id="c4125-222">View email security reports in the Microsoft 365 Defender portal</span></span>](view-email-security-reports.md)|
+|<span data-ttu-id="c4125-223">**Rapporti del flusso di** posta, ad esempio il rapporto inoltro, il rapporto sullo stato del flusso di posta e il rapporto Mittenti e destinatari principali.</span><span class="sxs-lookup"><span data-stu-id="c4125-223">**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.</span></span>|[<span data-ttu-id="c4125-224">Rapporti del flusso di posta nella nuova Exchange di amministrazione</span><span class="sxs-lookup"><span data-stu-id="c4125-224">Mail flow reports in the new Exchange admin center</span></span>](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|<span data-ttu-id="c4125-225">**Traccia URL per Safe collegamenti** (solo PowerShell).</span><span class="sxs-lookup"><span data-stu-id="c4125-225">**URL trace for Safe Links** (PowerShell only).</span></span> <span data-ttu-id="c4125-226">L'output di questo cmdlet mostra i risultati delle azioni Safe collegamenti negli ultimi sette giorni.</span><span class="sxs-lookup"><span data-stu-id="c4125-226">The output of this cmdlet shows you the results of Safe Links actions over the past seven days.</span></span>|[<span data-ttu-id="c4125-227">Get-UrlTrace</span><span class="sxs-lookup"><span data-stu-id="c4125-227">Get-UrlTrace</span></span>](/powershell/module/exchange/get-urltrace)|
+|<span data-ttu-id="c4125-228">**Risultati del traffico di posta per EOP e Microsoft Defender per Office 365** (solo PowerShell).</span><span class="sxs-lookup"><span data-stu-id="c4125-228">**Mail traffic results for EOP and Microsoft Defender for Office 365** (PowerShell only).</span></span> <span data-ttu-id="c4125-229">L'output di questo cmdlet contiene informazioni su Domain, Date, Event Type, Direction, Action e Message Count.</span><span class="sxs-lookup"><span data-stu-id="c4125-229">The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.</span></span>|[<span data-ttu-id="c4125-230">Get-MailTrafficATPReport</span><span class="sxs-lookup"><span data-stu-id="c4125-230">Get-MailTrafficATPReport</span></span>](/powershell/module/exchange/get-mailtrafficatpreport)|
+|<span data-ttu-id="c4125-231">**Rapporti dettagli posta per EOP e Defender per Office 365** di posta elettronica (solo PowerShell).</span><span class="sxs-lookup"><span data-stu-id="c4125-231">**Mail detail reports for EOP and Defender for Office 365 detections** (PowerShell only).</span></span> <span data-ttu-id="c4125-232">L'output di questo cmdlet contiene dettagli su file o URL dannosi, tentativi di phishing, rappresentazione e altre potenziali minacce nei messaggi di posta elettronica o nei file.</span><span class="sxs-lookup"><span data-stu-id="c4125-232">The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.</span></span>|[<span data-ttu-id="c4125-233">Get-MailDetailATPReport</span><span class="sxs-lookup"><span data-stu-id="c4125-233">Get-MailDetailATPReport</span></span>](/powershell/module/exchange/get-maildetailatpreport)|
 |
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a><span data-ttu-id="c5076-322">Quali autorizzazioni sono necessarie per visualizzare defender per Office 365 report?</span><span class="sxs-lookup"><span data-stu-id="c5076-322">What permissions are needed to view the Defender for Office 365 reports?</span></span>
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a><span data-ttu-id="c4125-234">Quali autorizzazioni sono necessarie per visualizzare defender per Office 365 report?</span><span class="sxs-lookup"><span data-stu-id="c4125-234">What permissions are needed to view the Defender for Office 365 reports?</span></span>
 
-<span data-ttu-id="c5076-323">Per visualizzare e usare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel portale di Microsoft 365 Defender:</span><span class="sxs-lookup"><span data-stu-id="c5076-323">In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 Defender portal:</span></span>
+<span data-ttu-id="c4125-235">Per visualizzare e utilizzare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel portale di Microsoft 365 Defender:</span><span class="sxs-lookup"><span data-stu-id="c4125-235">In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 Defender portal:</span></span>
 
-- <span data-ttu-id="c5076-324">**Gestione organizzazione**</span><span class="sxs-lookup"><span data-stu-id="c5076-324">**Organization Management**</span></span>
-- <span data-ttu-id="c5076-325">**Amministratore della sicurezza**</span><span class="sxs-lookup"><span data-stu-id="c5076-325">**Security Administrator**</span></span>
-- <span data-ttu-id="c5076-326">**Lettore sicurezza**</span><span class="sxs-lookup"><span data-stu-id="c5076-326">**Security Reader**</span></span>
-- <span data-ttu-id="c5076-327">**Lettore globale**</span><span class="sxs-lookup"><span data-stu-id="c5076-327">**Global Reader**</span></span>
+- <span data-ttu-id="c4125-236">**Gestione organizzazione**</span><span class="sxs-lookup"><span data-stu-id="c4125-236">**Organization Management**</span></span>
+- <span data-ttu-id="c4125-237">**Amministratore della sicurezza**</span><span class="sxs-lookup"><span data-stu-id="c4125-237">**Security Administrator**</span></span>
+- <span data-ttu-id="c4125-238">**Lettore sicurezza**</span><span class="sxs-lookup"><span data-stu-id="c4125-238">**Security Reader**</span></span>
+- <span data-ttu-id="c4125-239">**Lettore globale**</span><span class="sxs-lookup"><span data-stu-id="c4125-239">**Global Reader**</span></span>
 
-<span data-ttu-id="c5076-328">Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)</span><span class="sxs-lookup"><span data-stu-id="c5076-328">For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).</span></span>
+<span data-ttu-id="c4125-240">Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="c4125-240">For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-<span data-ttu-id="c5076-329">**Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="c5076-329">**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365.</span></span> <span data-ttu-id="c5076-330">Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="c5076-330">For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).</span></span>
+<span data-ttu-id="c4125-241">**Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nel interfaccia di amministrazione di Microsoft 365 offre agli utenti le  autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="c4125-241">**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365.</span></span> <span data-ttu-id="c4125-242">Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="c4125-242">For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).</span></span>
 
-## <a name="what-if-the-reports-arent-showing-data"></a><span data-ttu-id="c5076-331">Cosa succede se i report non mostrano dati?</span><span class="sxs-lookup"><span data-stu-id="c5076-331">What if the reports aren't showing data?</span></span>
+## <a name="what-if-the-reports-arent-showing-data"></a><span data-ttu-id="c4125-243">Cosa succede se i report non mostrano dati?</span><span class="sxs-lookup"><span data-stu-id="c4125-243">What if the reports aren't showing data?</span></span>
 
-<span data-ttu-id="c5076-332">Se non vedi i dati nel tuo Defender per i Office 365, verifica che i criteri siano configurati correttamente.</span><span class="sxs-lookup"><span data-stu-id="c5076-332">If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly.</span></span> <span data-ttu-id="c5076-333">L'organizzazione deve disporre [](set-up-safe-attachments-policies.md) [di](set-up-safe-links-policies.md) criteri collegamenti sicuri e allegati sicuri definiti per poter Office 365 protezione dei dati.</span><span class="sxs-lookup"><span data-stu-id="c5076-333">Your organization must have [Safe Links policies](set-up-safe-links-policies.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place.</span></span> <span data-ttu-id="c5076-334">Vedere anche [Protezione da posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md).</span><span class="sxs-lookup"><span data-stu-id="c5076-334">Also see [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md).</span></span>
+<span data-ttu-id="c4125-244">Se non vedi i dati nel tuo Defender per i Office 365, verifica che i criteri siano configurati correttamente.</span><span class="sxs-lookup"><span data-stu-id="c4125-244">If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly.</span></span> <span data-ttu-id="c4125-245">L'organizzazione deve [disporre Safe](set-up-safe-links-policies.md) dei collegamenti e dei Safe [allegati](set-up-safe-attachments-policies.md) per poter disporre di Defender Office 365 protezione.</span><span class="sxs-lookup"><span data-stu-id="c4125-245">Your organization must have [Safe Links policies](set-up-safe-links-policies.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place.</span></span> <span data-ttu-id="c4125-246">Vedere anche [Protezione da posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md).</span><span class="sxs-lookup"><span data-stu-id="c4125-246">Also see [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="c5076-335">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="c5076-335">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="c4125-247">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="c4125-247">Related topics</span></span>
 
-[<span data-ttu-id="c5076-336">Report e informazioni dettagliate intelligenti nel portale di Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c5076-336">Smart reports and insights in the Microsoft 365 Defender portal</span></span>](reports-and-insights-in-security-and-compliance.md)
+[<span data-ttu-id="c4125-248">Report e informazioni dettagliate intelligenti nel portale Microsoft 365 Defender dati</span><span class="sxs-lookup"><span data-stu-id="c4125-248">Smart reports and insights in the Microsoft 365 Defender portal</span></span>](reports-and-insights-in-security-and-compliance.md)
 
-[<span data-ttu-id="c5076-337">Autorizzazioni ruolo (Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="c5076-337">Role permissions (Azure Active Directory</span></span>](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[<span data-ttu-id="c4125-249">Autorizzazioni ruolo (Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="c4125-249">Role permissions (Azure Active Directory</span></span>](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
