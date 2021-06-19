@@ -20,12 +20,12 @@ description: Informazioni su come usare le funzionalità di analisi e risposta a
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02e396cac060f2b8431b2b70e89c18950596d9c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ef29493bd68166b88bba3ef5905f0427823b4015
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933374"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028852"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Analizzare i messaggi di posta elettronica dannosi recapitati in Office 365
 
@@ -51,7 +51,7 @@ Verificare che vengano soddisfatti i seguenti requisiti:
 
 - L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, antimalware, anti-phishing e così via. Vedere [Protezione dalle minacce in Office 365](protect-against-threats.md).
 
-- Si è un amministratore globale o si dispone del ruolo Amministratore sicurezza o Ricerca ed eliminazione assegnato nel Centro sicurezza & conformità. Vedere [Autorizzazioni nel Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md). Per alcune azioni, è inoltre necessario assegnare un nuovo ruolo Anteprima.
+- Si è un amministratore globale o si dispone del ruolo Amministratore sicurezza o Ricerca ed eliminazione assegnato in Microsoft 365 Defender. Vedere [Autorizzazioni nella Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md). Per alcune azioni, è inoltre necessario assegnare un nuovo ruolo Anteprima.
 
 ### <a name="preview-role-permissions"></a>Autorizzazioni per il ruolo Anteprima
 
@@ -67,10 +67,10 @@ Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazion
 |
 
 > [!NOTE]
-> *L'anteprima* è un ruolo e non un gruppo di ruoli. il ruolo Anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365 (in <https://protection.office.com> ). Passare a **Autorizzazioni** e quindi modificare un gruppo di ruoli esistente o aggiungere un nuovo gruppo di ruoli con il **ruolo Anteprima** assegnato.
-> Al ruolo Amministratore globale viene assegnata l'interfaccia di amministrazione di Microsoft 365 ( ) e i ruoli Amministratore sicurezza e Lettore sicurezza vengono assegnati nel <https://admin.microsoft.com> Centro sicurezza & conformità ( <https://protection.office.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md)
+> *L'anteprima* è un ruolo e non un gruppo di ruoli. il ruolo Anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365 (in <https://security.microsoft.com> ). Passare a **Autorizzazioni** e quindi modificare un gruppo di ruoli esistente o aggiungere un nuovo gruppo di ruoli con il **ruolo Anteprima** assegnato.
+> Al ruolo Amministratore globale viene assegnato il interfaccia di amministrazione di Microsoft 365 ( ) e i ruoli Amministratore sicurezza e Lettore sicurezza vengono assegnati in Microsoft 365 Defender <https://admin.microsoft.com> ( <https://security.microsoft.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere Autorizzazioni nella [Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
 
-Sappiamo che l'anteprima e il download della posta elettronica sono attività sensibili e quindi il controllo è abilitato per queste attività. Una volta che un amministratore esegue queste attività sui messaggi di posta elettronica, i log di controllo vengono generati per lo stesso e possono essere visibili nel Centro sicurezza Office 365 & conformità ( <https://protection.office.com> ). Passare alla **sezione Ricerca** log di controllo  >  **e** filtrare in base al nome dell'amministratore nella sezione Ricerca. I risultati filtrati mostreranno l'attività **AdminMailAccess.** Selezionare una riga per visualizzare i dettagli nella sezione **Ulteriori informazioni** sulla posta elettronica in anteprima o scaricata.
+Sappiamo che l'anteprima e il download della posta elettronica sono attività sensibili e quindi il controllo è abilitato per queste attività. Una volta che un amministratore esegue queste attività sui messaggi di posta elettronica, i log di controllo vengono generati per lo stesso e possono essere visibili nel Office 365 Microsoft 365 Defender ( <https://security.microsoft.com> ). Passare alla **sezione Ricerca** log di controllo  >  **e** filtrare in base al nome dell'amministratore nella sezione Ricerca. I risultati filtrati mostreranno l'attività **AdminMailAccess.** Selezionare una riga per visualizzare i dettagli nella sezione **Ulteriori informazioni** sulla posta elettronica in anteprima o scaricata.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Trovare messaggi di posta elettronica sospetti recapitati
 
@@ -79,13 +79,11 @@ Esplora minacce è un potente report che può servire a più scopi, come trovare
 > [!NOTE]
 > Le ricerche predefinite in Esplora risorse non includono attualmente elementi zapped.  Questo vale per tutte le visualizzazioni, ad esempio malware o phish views. Per includere gli elementi zapped, è necessario aggiungere un set **di** azioni di recapito per includere **Rimosso da ZAP.** Se includi tutte le opzioni, vedrai tutti i risultati dell'azione di recapito, inclusi gli elementi zapped.
 
-1. **Passare a Esplora minacce:** accedere a e accedere usando l'account aziendale o <https://protection.office.com> dell'istituto di istruzione per Office 365. Verrà quindi accedere al Centro sicurezza & conformità.
+1. **Passare a Esplora minacce:** accedere a e accedere usando l'account aziendale o <https://security.microsoft.com> dell'istituto di istruzione per Office 365. Questo ti porta a Microsoft 365 Defender.
 
-2. Nella barra di avvio veloce di spostamento a sinistra scegliere **Esplora gestione** \> **minacce.**
+2. Nella barra di avvio veloce di spostamento a sinistra scegliere **Posta elettronica & collaborazione** \> **Explorer.**
 
-    ![Esplora risorse con i campi Azione recapito e Posizione recapito.](../../media/ThreatExFields.PNG)
-
-    Potresti notare la nuova **colonna Azioni** speciali. Questa funzionalità ha lo scopo di inviire agli amministratori il risultato dell'elaborazione di un messaggio di posta elettronica. È **possibile accedere alla** colonna Azioni speciali nella stessa posizione dell'azione di **recapito** e della posizione **di recapito.** Le azioni speciali potrebbero essere aggiornate alla fine della sequenza temporale della posta elettronica di Threat Explorer, una nuova funzionalità volta a migliorare l'esperienza di ricerca per gli amministratori.
+      Potresti notare la nuova **colonna Azioni** speciali. Questa funzionalità ha lo scopo di inviire agli amministratori il risultato dell'elaborazione di un messaggio di posta elettronica. È **possibile accedere alla** colonna Azioni speciali nella stessa posizione dell'azione di **recapito** e della posizione **di recapito.** Le azioni speciali potrebbero essere aggiornate alla fine della sequenza temporale della posta elettronica di Threat Explorer, una nuova funzionalità volta a migliorare l'esperienza di ricerca per gli amministratori.
 
 3. **Visualizzazioni in Esplora minacce**: scegliere Tutti **i** messaggi di posta elettronica dal menu **Visualizza.**
 

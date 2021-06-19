@@ -18,12 +18,12 @@ description: Scopri come riconoscere e correggere l'attacco di concessione del c
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5675a7a83bb62bae80f20e8e7c86fde38599ec6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c3c3c06974feb2dab3985a60938fe7d543543c3
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538304"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028920"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecito
 
@@ -50,7 +50,7 @@ Questi attacchi sfruttano un modello di interazione che presuppone che l'entità
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Passaggi per trovare i segni di questo attacco
 
-1. Aprire il **Centro sicurezza & conformità** all'indirizzo <https://protection.office.com> .
+1. Aprire il **Microsoft 365 Defender** portale all'indirizzo <https://security.microsoft.com> .
 
 2. Passare a **Cerca** e selezionare **Ricerca log di controllo**.
 
@@ -143,7 +143,7 @@ Lo script produce un file denominato Permissions.csv. Seguire questa procedura p
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinare l'ambito dell'attacco
 
-Dopo aver completato l'inventario dell'accesso alle applicazioni, esaminare il **log di controllo per** determinare l'ambito completo della violazione. Cercare gli utenti interessati, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni di cui disponeva l'app. È possibile eseguire ricerche **nel log di** controllo nel Centro sicurezza & [conformità](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+Dopo aver completato l'inventario dell'accesso alle applicazioni, esaminare il **log di controllo per** determinare l'ambito completo della violazione. Cercare gli utenti interessati, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni di cui disponeva l'app. È possibile eseguire ricerche **nel log di** controllo nella [Microsoft 365 Defender](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 > [!IMPORTANT]
 > [Per ottenere](../../compliance/enable-mailbox-auditing.md) [](../../compliance/turn-audit-log-search-on-or-off.md) queste informazioni, è necessario che il controllo delle cassette postali e il controllo attività per amministratori e utenti siano stati abilitati prima dell'attacco.

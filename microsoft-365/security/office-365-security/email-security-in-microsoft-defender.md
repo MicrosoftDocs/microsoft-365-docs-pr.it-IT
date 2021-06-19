@@ -16,12 +16,12 @@ description: Visualizzare e analizzare i tentativi di phishing di malware.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877897"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028545"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Sicurezza della posta elettronica con Threat Explorer in Microsoft Defender per Office 365
 
@@ -45,38 +45,32 @@ In questo articolo viene illustrato come visualizzare e analizzare i tentativi d
 
 Per visualizzare il malware rilevato nei messaggi di posta [](threat-explorer-views.md#email--malware) elettronica ordinati Microsoft 365 tecnologia, usare la visualizzazione Malware > posta elettronica di Esplora risorse (o rilevamenti in tempo reale). Il malware è la visualizzazione predefinita, quindi potrebbe essere selezionato non appena apri Esplora risorse.
 
-1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione <https://protection.office.com>  \> **delle minacce** (o **Rilevamenti in tempo reale).** In questo esempio viene utilizzato Explorer.
-
-   Se sei nel portale Microsoft 365 Defender convergente ( ) scorri fino a <https://security.microsoft.com> **Email & collaboration**  >  **Explorer**.
+1. Nel portale Microsoft 365 Defender ( ), scegliere Posta <https://security.microsoft.com> **elettronica &** \> **collaborazione Explorer** (o **Rilevamenti in tempo reale**). In questo esempio viene utilizzato Explorer. Se si è nel portale Microsoft 365 Defender convergente ( scorrere fino a https://security.microsoft.com/) **Email & collaboration**  >  **Explorer**.
 
    Da qui, inizia da View, scegli un determinato intervallo di tempo per analizzare (se necessario) e concentrare i filtri, come da [Explorer walk-through.](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)
 
-2. Scegliere **Malware** tramite posta **elettronica** dal menu \> **Visualizza.**
-
-   > [!div class="mx-imgBorder"]
-   > ![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailMalwareMenu.png)
+2. Nel menu **Visualizza** scegliere **Malware in Posta** **elettronica**.
 
 3. Fare **clic su Mittente** e quindi scegliere **Tecnologia di** rilevamento di \> **base.**
 
-   Le tecnologie di rilevamento sono ora disponibili come filtri per il report.
+   
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="tecnologia di rilevamento malware":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Tecnologie di rilevamento malware](../../media/ExplorerEmailMalwareDetectionTech.png)
+   Le tecnologie di rilevamento sono ora disponibili come filtri per il report.
 
 4. Scegliere un'opzione. Selezionare quindi il **pulsante** Aggiorna per applicare il filtro.
 
-   > [!div class="mx-imgBorder"]
-   > ![Tecnologia di rilevamento selezionata](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="tecnologia di rilevamento selezionata"::: 
 
    Il report viene aggiornato per visualizzare i risultati rilevati dal malware nella posta elettronica, utilizzando l'opzione tecnologia selezionata. Da qui è possibile eseguire ulteriori analisi. 
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Visualizzare l'URL di phishing e fare clic su Dati verdetto
 
-È possibile visualizzare i tentativi di phishing tramite URL nella posta elettronica, incluso un elenco di URL consentiti, bloccati e ignorati. Per identificare gli URL su cui è stato fatto clic, [è necessario](safe-links.md) configurare collegamenti sicuri. Assicurati di configurare i criteri [collegamenti](set-up-safe-links-policies.md) sicuri per la protezione del tempo di clic e la registrazione dei verdetti clic da collegamenti sicuri.
+È possibile visualizzare i tentativi di phishing tramite URL nella posta elettronica, incluso un elenco di URL consentiti, bloccati e ignorati. Per identificare gli URL su cui è stato fatto clic, [Safe i collegamenti](safe-links.md) devono essere configurati. Assicurati di configurare i [criteri](set-up-safe-links-policies.md) di Safe per la protezione basata sul clic e la registrazione dei verdetti clic Safe collegamenti.
 
 Per esaminare gli URL dei phish nei messaggi e fare clic sugli URL nei messaggi [   >  **phish,**](threat-explorer-views.md#email--phish) usa la visualizzazione Phish e-mail di Esplora risorse o rilevamenti in tempo reale.
 
-1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione <https://protection.office.com>  \> **delle minacce** (o **Rilevamenti in tempo reale).** In questo esempio viene utilizzato Explorer.
+1. Nel portale Microsoft 365 Defender ( ), scegliere Posta <https://security.microsoft.com> **elettronica &** \> **collaborazione Explorer** (o **Rilevamenti in tempo reale**). In questo esempio viene utilizzato Explorer.
 
 2. Scegliere **E-mail**  \> **phish dal** menu Visualizza.
 
@@ -87,14 +81,13 @@ Per esaminare gli URL dei phish nei messaggi e fare clic sugli URL nei messaggi 
 
 4. Selezionare una o più opzioni, ad esempio **Blocca** e  Blocca ignorate, e quindi selezionare il pulsante Aggiorna sulla stessa riga delle opzioni per applicare il filtro. Non aggiornare la finestra del browser.
 
-   > [!div class="mx-imgBorder"]
-   > ![URL e clic su verdetti](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL e clic su verdetti":::
 
    Il report viene aggiornato per visualizzare due diverse tabelle URL nella scheda URL del report:
 
    - **Gli URL principali sono** gli URL nei messaggi filtrati e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione Posta elettronica phish, questo elenco contiene in genere URL legittimi. Gli utenti malintenzionati includono una combinazione di URL buoni e non recapitati nei messaggi per tentare di ottenerli, ma rendono i collegamenti dannosi più interessanti. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica, ma questa colonna è nascosta per semplificare la visualizzazione.
 
-   - **I clic principali** sono gli URL con ritorno a capo automatico dei collegamenti sicuri su cui è stato fatto clic, ordinati in base al numero totale di clic. Anche questa colonna non viene visualizzata per semplificare la visualizzazione. I conteggi totali per colonna indicano il numero di verdetti clic su Collegamenti sicuri per ogni URL su cui si è fatto clic. Nella visualizzazione Posta elettronica phish, questi url sono in genere sospetti o dannosi. Ma la visualizzazione potrebbe includere URL che non sono minacce ma sono in messaggi di phish. I clic url sui collegamenti senza ritorno a capo non vengono visualizzati qui.
+   - **I clic principali** sono Safe URL con ritorno a capo dei collegamenti su cui è stato fatto clic, ordinati in base al numero totale di clic. Anche questa colonna non viene visualizzata per semplificare la visualizzazione. I conteggi totali per colonna indicano il numero Safe clic sul numero di verdetti per ogni URL su cui si fa clic. Nella visualizzazione Posta elettronica phish, questi url sono in genere sospetti o dannosi. Ma la visualizzazione potrebbe includere URL che non sono minacce ma sono in messaggi di phish. I clic url sui collegamenti senza ritorno a capo non vengono visualizzati qui.
 
    Le due tabelle URL mostrano gli URL principali nei messaggi di posta elettronica di phishing in base all'azione di recapito e alla posizione. Le tabelle mostrano i clic url bloccati o visitati nonostante un avviso, in modo da poter vedere quali potenziali collegamenti non riusciti sono stati presentati agli utenti e che gli utenti hanno fatto clic. Da qui è possibile eseguire ulteriori analisi. Ad esempio, sotto il grafico è possibile visualizzare gli URL principali nei messaggi di posta elettronica bloccati nell'ambiente dell'organizzazione.
 
@@ -122,7 +115,7 @@ Nei riquadri a comparsa E-mail o URL, Clic principali e nelle esperienze di filt
 ## <a name="start-automated-investigation-and-response"></a>Avviare un'indagine e una risposta automatizzate
 
 > [!NOTE]
-> Le funzionalità di analisi e risposta automatizzate sono disponibili in Microsoft Defender per Office 365 *Piano 2* *e Office 365 E5.*
+> Le funzionalità di analisi e risposta automatizzate sono disponibili in *Microsoft Defender per Office 365 Piano 2* e *Office 365 E5*.
 
 [L'indagine e la risposta automatizzate](automated-investigation-response-office.md) possono risparmiare tempo e impegno per le operazioni di sicurezza dedicato all'analisi e alla mitigazione dei cyberattacchi. Oltre a configurare avvisi che possono attivare un playbook di sicurezza, puoi avviare un processo di indagine e risposta automatizzato da una visualizzazione in Esplora risorse. Per informazioni dettagliate, vedi Esempio: un amministratore [della sicurezza attiva un'indagine da Explorer.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
 

@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori delle organizzazioni con Microsoft Defender per Office 365 possono anche gestire i file in quarantena in SharePoint Online, OneDrive for Business e Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01d5011248d1c0fc0daab0d04e1cca39e26e34bd
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 59bdfdaddbc091467bfd2ccddc2c40377955fab3
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878893"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028992"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -41,11 +41,11 @@ Gli amministratori possono visualizzare, rilasciare ed eliminare tutti i tipi di
 
 Gli amministratori delle organizzazioni con Microsoft Defender per Office 365 possono anche visualizzare, scaricare ed eliminare i file in quarantena in SharePoint Online, OneDrive for Business e Microsoft Teams.
 
-È possibile visualizzare e gestire i messaggi in quarantena nel portale di Microsoft 365 Defender o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online, PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
+È possibile visualizzare e gestire i messaggi in quarantena nel portale di Microsoft 365 Defender o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni necessarie prima di iniziare
 
-- Per aprire il portale Microsoft 365 Defender, passare a <https://security.microsoft.com> . Per aprire direttamente la pagina della quarantena, passare a <https://security.microsoft.com/quarantine>.
+- Per aprire il portale di Microsoft 365 Defender, andare a <https://security.microsoft.com>. Per aprire direttamente la pagina della quarantena, passare a <https://security.microsoft.com/quarantine>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -64,15 +64,15 @@ Gli amministratori delle organizzazioni con Microsoft Defender per Office 365 po
 - I messaggi in quarantena vengono conservati per un periodo di tempo predefinito prima di essere eliminati automaticamente:
   - 30 giorni per i messaggi messi in quarantena dai criteri di protezione da posta indesiderata (posta indesiderata, phishing e posta elettronica in blocco). Questo è il valore predefinito e il valore massimo. Per configurare (inferiore) questo valore, vedere [Configure anti-spam policies](configure-your-spam-filter-policies.md).
   - 15 giorni per i messaggi che contengono malware.
-  - 15 giorni per i file messi in quarantena dagli allegati sicuri per SharePoint, OneDrive e Microsoft Teams in Defender per Office 365.
+  - 15 giorni per i file messi in quarantena da Safe allegati per SharePoint, OneDrive e Microsoft Teams in Defender per Office 365.
 
   Quando un messaggio scade dalla quarantena, non è possibile recuperarlo.
 
-## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>Usare il portale Microsoft 365 Defender per gestire i messaggi di posta elettronica in quarantena
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>Utilizzare il portale Microsoft 365 Defender per gestire i messaggi di posta elettronica in quarantena
 
 ### <a name="view-quarantined-email"></a>Visualizzare la posta elettronica in quarantena
 
-1. Nel portale Microsoft 365 Defender passare a Posta **elettronica & collaborazione** \> **Rivedere** \> **quarantena**.
+1. Nel portale di Microsoft 365 Defender, passare a **Posta elettronica e collaborazione** \> **Rivedi**\> **Quarantena**.
 
 2. Nella pagina **Quarantena** verificare che l'opzione **Visualizza in** quarantena sia impostata sul valore predefinito **e-mail.**
 
@@ -109,7 +109,7 @@ Gli amministratori delle organizzazioni con Microsoft Defender per Office 365 po
      - **Phish ad alta confidenza**
    - **Tipo di criteri**: filtrare i messaggi in base al tipo di criteri:
      - **Criteri antimalware**
-     - **Criteri allegati sicuri**
+     - **Safe Criteri allegati**
      - **Criteri anti-phishing**
      - **Criteri filtro contenuti ospitati** (criteri di protezione dalla posta indesiderata)
      - **Regola di trasporto**
@@ -196,15 +196,15 @@ Quando si selezionano più messaggi in quarantena nell'elenco  (fino a 100), vie
 Al termine, fare clic su **Chiudi**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Usare il portale Microsoft 365 Defender per gestire i file in quarantena in Defender per Office 365
-
 > [!NOTE]
 > Le procedure per i file in quarantena in questa sezione sono disponibili solo per i sottoscrittori di Microsoft Defender Office 365 Piano 1 e Piano 2.
 
-Nelle organizzazioni con Defender per Office 365, gli amministratori possono gestire i file in quarantena in SharePoint Online, OneDrive for Business e Microsoft Teams. Per abilitare la protezione per questi file, vedere Attivare allegati sicuri per [SharePoint, OneDrive e Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+Nelle organizzazioni con Defender per Office 365, gli amministratori possono gestire i file in quarantena in SharePoint Online, OneDrive for Business e Microsoft Teams. Per abilitare la protezione per questi file, vedere Attivare Safe [allegati per SharePoint, OneDrive e Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Visualizzare i file in quarantena
 
-1. Nel portale Microsoft 365 Defender passare a Posta **elettronica & collaborazione** \> **Rivedere** \> **quarantena**.
+1. Nel portale di Microsoft 365 Defender, passare a **Posta elettronica e collaborazione** \> **Rivedi**\> **Quarantena**.
+
 
 2. Nella pagina **Quarantena** modificare Visualizza **in quarantena** in file **di valore**. È possibile ordinare un campo facendo clic su un'intestazione di colonna disponibile.
 
@@ -276,6 +276,6 @@ I cmdlet utilizzati per visualizzare e gestire i messaggi e i file in quarantena
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): si noti che questo cmdlet è solo per i messaggi, non per i file in quarantena provenienti da allegati sicuri per SharePoint, OneDrive e Microsoft Teams.
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): questo cmdlet è valido solo per i messaggi e non per i file in quarantena provenienti da allegati Safe per SharePoint, OneDrive e Microsoft Teams.
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

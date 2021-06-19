@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b8060952960f89e274361bb6382f03d482346e0d
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903829"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028860"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint
 
@@ -66,7 +66,7 @@ La gestione degli avvisi e la classificazione dei falsi positivi aiuta a formare
 
 Prima di classificare o eliminare un avviso, determinare se l'avviso è accurato, falso positivo o benigno.
 
-1. Vai al portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedi.
+1. Accedere al portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) ed eseguire l'accesso.
 
 2. Nel riquadro di spostamento scegliere **Coda avvisi.**
 
@@ -84,7 +84,7 @@ Prima di classificare o eliminare un avviso, determinare se l'avviso è accurato
 
 Gli avvisi possono essere classificati come falsi positivi o veri positivi in Microsoft 365 Defender. La classificazione degli avvisi aiuta a formare Microsoft Defender for Endpoint in modo che, nel tempo, si vedano più avvisi veri e meno avvisi falsi.
 
-1. Vai al portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedi.
+1. Accedere al portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) ed eseguire l'accesso.
 
 2. Selezionare **Coda avvisi** e quindi selezionare un avviso.
 
@@ -97,9 +97,9 @@ Gli avvisi possono essere classificati come falsi positivi o veri positivi in Mi
 
 ### <a name="suppress-an-alert"></a>Eliminare un avviso
 
-Se hai avvisi che sono falsi positivi o veri positivi, ma per eventi non importanti, puoi eliminare tali avvisi in Microsoft 365 Defender. L'eliminazione degli avvisi consente di ridurre il rumore nel dashboard delle operazioni di sicurezza. 
+Se sono presenti avvisi che sono falsi positivi o veri positivi ma per eventi non importanti, è possibile eliminare tali avvisi in Microsoft 365 Defender. L'eliminazione degli avvisi consente di ridurre il rumore nel dashboard delle operazioni di sicurezza. 
 
-1. Vai al portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e accedi.
+1. Accedere al portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) ed eseguire l'accesso.
 
 2. Nel riquadro di spostamento selezionare **Coda avvisi.**
 
@@ -247,7 +247,7 @@ In generale, non è necessario definire le esclusioni per Antivirus Microsoft De
 
 [Gli](/microsoft-365/security/defender-endpoint/manage-indicators) indicatori (in particolare, indicatori di compromissione o ioc) consentono al team delle operazioni di sicurezza di definire il rilevamento, la prevenzione e l'esclusione delle entità. Ad esempio, puoi specificare determinati file da omettere dalle analisi e dalle azioni di correzione in Microsoft Defender per Endpoint. In caso contrario, gli indicatori possono essere utilizzati per generare avvisi per determinati file, indirizzi IP o URL.
 
-Per specificare le entità come esclusioni per Microsoft Defender for Endpoint, crea indicatori "consenti" per tali entità. Tali indicatori "consenti" in Microsoft Defender for Endpoint si applicano alla protezione [di](microsoft-defender-antivirus-in-windows-10.md)nuova generazione, al rilevamento e alla risposta degli [endpoint](overview-endpoint-detection-response.md)e alle indagini automatizzate & [correzione](/microsoft-365/security/defender-endpoint/automated-investigations).
+Per specificare le entità come esclusioni per Microsoft Defender for Endpoint, crea indicatori "consenti" per tali entità. Tali indicatori "consenti" in Microsoft Defender for Endpoint si applicano alla protezione [di](microsoft-defender-antivirus-in-windows-10.md)nuova [generazione,](overview-endpoint-detection-response.md)rilevamento e reazione dagli endpoint e all'indagine & [correzione automatica.](/microsoft-365/security/defender-endpoint/automated-investigations)
 
 Gli indicatori "Consenti" possono essere creati per:
 
@@ -276,7 +276,7 @@ Prima di creare indicatori per indirizzi IP, URL o domini, verificare che siano 
 - La versione del client antimalware è 4.18.1906.x o successiva 
 - I dispositivi eseguono Windows 10 versione 1709 o successiva 
 
-Gli indicatori di rete personalizzati sono attivati nella [Microsoft 365 Defender.](microsoft-defender-security-center.md) Per ulteriori informazioni, vedere [Funzionalità avanzate.](/microsoft-365/security/defender-endpoint/advanced-features)
+Gli indicatori di rete personalizzati sono attivati nella [Microsoft 365 Defender](microsoft-defender-security-center.md). Per ulteriori informazioni, vedere [Funzionalità avanzate.](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-application-certificates"></a>Indicatori per i certificati delle applicazioni 
 
@@ -438,7 +438,7 @@ A seconda del [livello di automazione](/microsoft-365/security/defender-endpoint
 > [!IMPORTANT]
 > Ti consigliamo di *usare l'automazione* completa per l'analisi e la correzione automatizzate. Non disattivare queste funzionalità a causa di un falso positivo. Usa invece gli [indicatori "consenti"](#indicators-for-microsoft-defender-for-endpoint)per definire le eccezioni e mantieni l'analisi e la correzione automatizzate impostate per eseguire automaticamente le azioni appropriate. Seguire [queste indicazioni consente](automation-levels.md#levels-of-automation) di ridurre il numero di avvisi che il team delle operazioni di sicurezza deve gestire. 
 
-## <a name="still-need-help"></a>Serve ulteriore assistenza?
+## <a name="still-need-help"></a>Ulteriore assistenza
 
 Se hai seguito tutti i passaggi descritti in questo articolo e hai ancora bisogno di assistenza, contatta il supporto tecnico.
 
@@ -452,4 +452,4 @@ Se hai seguito tutti i passaggi descritti in questo articolo e hai ancora bisogn
 
 [Gestire Microsoft Defender per Endpoint](manage-atp-post-migration.md)
 
-[Panoramica di Microsoft 365 Defender Portal](/microsoft-365/security/defender-endpoint/use) 
+[Panoramica del Microsoft 365 Defender portale](/microsoft-365/security/defender-endpoint/use) 

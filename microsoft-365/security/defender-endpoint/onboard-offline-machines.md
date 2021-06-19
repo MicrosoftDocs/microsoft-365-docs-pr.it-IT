@@ -2,7 +2,7 @@
 title: Onboard dei dispositivi senza accesso a Internet a Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: Onboardare i dispositivi senza accesso a Internet in modo che possano inviare i dati del sensore al sensore Microsoft Defender for Endpoint
-keywords: onboard, server, vm, locale, gateway oms, analisi dei log, analisi dei log di Azure, mma
+keywords: onboard, server, macchina virtuale, locale, gateway oms, analisi dei log, analisi dei log di Azure, mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed33f67695fddc78c0bac646f72ca0c48887bb04
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 73110d89c39319825cc8dc8e347d137de52a510a
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844419"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028380"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Onboard dei dispositivi senza accesso a Internet a Microsoft Defender for Endpoint
 
@@ -52,7 +52,7 @@ Per ulteriori informazioni sui metodi di onboarding, vedere gli articoli seguent
 - [Onboard dei server al servizio Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [Configurare le impostazioni di connettività Proxy e Internet del dispositivo](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## <a name="on-premise-devices"></a>Dispositivi locali
+## <a name="on-premises-devices"></a>Dispositivi locali
 
 - Configurare Azure Log Analytics (in precedenza noto come gateway OMS) per agire come proxy o hub:
   - [Agente di analisi dei log di Azure](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)

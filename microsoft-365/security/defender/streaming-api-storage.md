@@ -1,6 +1,6 @@
 ---
-title: Trasmettere Microsoft 365 eventi defender al tuo account Archiviazione
-description: Scopri come configurare Microsoft 365 Defender per trasmettere eventi di ricerca avanzata al Archiviazione account.
+title: Trasmettere Microsoft 365 Defender eventi al tuo account Archiviazione utente
+description: Scopri come configurare Microsoft 365 Defender trasmettere eventi di ricerca avanzata al tuo account Archiviazione.
 keywords: esportazione di dati non elaborati, API di streaming, API, hub eventi, archiviazione di Azure, account di archiviazione, ricerca avanzata, condivisione di dati non elaborati
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4e706bbb2246bd0629db721373ffcd4164d123d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fa61e2fd0591d375a17bad6e166a76c1ca40862e
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772503"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028896"
 ---
-# <a name="configure--microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurare Microsoft 365 Defender per trasmettere eventi di ricerca avanzata al Archiviazione account
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurare Microsoft 365 Defender per trasmettere eventi di ricerca avanzata al tuo account Archiviazione
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "52772503"
 
 ## <a name="enable-raw-data-streaming"></a>Abilita flusso di dati non elaborati:
 
-1. Accedere a Microsoft 365 [Centro sicurezza Defender](https://security.microsoft.com) come ***Amministratore** globale _ o _* Amministratore _della sicurezza_**.
+1. Accedere al [Centro sicurezza Microsoft 365 Defender](https://security.microsoft.com) come ***Amministratore** globale _ o _* Amministratore _della sicurezza_**.
 
 2. Vai alla [pagina Impostazioni esportazione dati](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft Defender Security Center.
 
@@ -79,7 +79,7 @@ ms.locfileid: "52772503"
 
 - Ogni riga contiene il nome dell'evento, l'ora in cui Defender per Endpoint ha ricevuto l'evento, il tenant a cui appartiene (si otterrà solo gli eventi dal tenant) e l'evento in formato JSON in una proprietà denominata "proprietà".
 
-- Per altre informazioni sullo schema degli eventi Microsoft 365 Defender, vedi [Panoramica di Advanced Hunting.](../defender/advanced-hunting-overview.md)
+- Per ulteriori informazioni sullo schema degli eventi Microsoft 365 Defender, vedere [Advanced Hunting overview.](../defender/advanced-hunting-overview.md)
 
 
 ## <a name="data-types-mapping"></a>Mapping dei tipi di dati
@@ -103,5 +103,5 @@ Per ottenere i tipi di dati per le proprietà degli eventi, eseguire le operazio
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defender Streaming API](streaming-api.md)
-- [Trasmettere Microsoft 365 eventi di Defender all'account di archiviazione di Azure](streaming-api-storage.md)
+- [Trasmettere Microsoft 365 Defender eventi all'account di archiviazione di Azure](streaming-api-storage.md)
 - [Archiviazione di Azure Documentazione dell'account](/azure/storage/common/storage-account-overview)

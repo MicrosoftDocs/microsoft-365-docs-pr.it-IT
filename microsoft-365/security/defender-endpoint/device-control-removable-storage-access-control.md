@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: cb23987600a5f87a99449510f7651c4fdcd45f66
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861720"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028404"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Control
 
@@ -41,18 +41,18 @@ Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Co
 
 ## <a name="prepare-your-endpoints"></a>Preparare gli endpoint
 
-Distribuire Il controllo di accesso Archiviazione rimovibili nei dispositivi Windows 10 con antimalware Client versione **4.18.2103.3 o successiva.**
-1. **4.18.2104 o** versione successiva : Aggiungere SerialNumberId, VID_PID, supporto dell'oggetto Criteri di gruppo basato su filepath, ComputerSid
+Distribuire Il controllo di accesso Archiviazione rimovibili nei dispositivi Windows 10 con client antimalware **versione 4.18.2103.3 o successiva.**
 
-2. **4.18.2105 o** versione successiva : Aggiungere il supporto dei caratteri jolly per HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinazione di un utente specifico in un computer specifico, SSD rimovibile (un SSD SanDisk Extreme)/supporto USB Attached SCSI (UAS)
+- **4.18.2104 o** versione successiva : Aggiungere SerialNumberId, VID_PID, supporto dell'oggetto Criteri di gruppo basato su filepath, ComputerSid
+
+- **4.18.2105 o** versione successiva : Aggiungere il supporto dei caratteri jolly per HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinazione di un utente specifico in un computer specifico, SSD rimovibile (un SSD SanDisk Extreme)/supporto USB Attached SCSI (UAS)
 
 :::image type="content" source="images/powershell.png" alt-text="Interfaccia di PowerShell":::
 
-   > [!NOTE]
-   > Nessuno dei Sicurezza di Windows deve essere attivo, è possibile eseguire Removable Archiviazione Access Control indipendentemente Sicurezza di Windows stato.
+> [!NOTE]
+> Nessuno dei Sicurezza di Windows deve essere attivo, è possibile eseguire Removable Archiviazione Access Control indipendentemente Sicurezza di Windows stato.
 
 ## <a name="policy-properties"></a>Proprietà dei criteri
-
 
 È possibile utilizzare le proprietà seguenti per creare un gruppo di archiviazione rimovibile:
 
@@ -67,6 +67,7 @@ Elenca le proprietà del dispositivo che vuoi usare per coprire il gruppo.
 Per ogni proprietà del dispositivo, vedi **la sezione Proprietà dispositivo** sopra riportata per ulteriori dettagli.
 
 1. Opzioni:
+
     - ID primario
         - RemovableMediaDevices
         - CdRomDevices
@@ -87,11 +88,9 @@ Per ogni proprietà del dispositivo, vedi **la sezione Proprietà dispositivo** 
 1. Descrizione: quando in DescriptorIDList vengono utilizzate più proprietà del dispositivo, MatchType definisce la relazione.
 
 1. Opzioni:
+
     - MatchAll: tutti gli attributi in DescriptorIdList saranno **relazione And.** Ad esempio, se l'amministratore inserisce DeviceID e InstancePathID per ogni USB connesso, il sistema controllera' se l'USB soddisfa entrambi i valori.
-
     - MatchAny: gli attributi sotto DescriptorIdList saranno **relazione Or.** Ad esempio, se l'amministratore inserisce DeviceID e InstancePathID, per ogni USB connessa, il sistema farà l'imposizione purché l'USB abbia un **valore DeviceID** o **InstanceID** identico.
-
-
 
 Di seguito sono riportate le proprietà dei criteri di controllo di accesso:
 
@@ -101,9 +100,9 @@ Di seguito sono riportate le proprietà dei criteri di controllo di accesso:
 
 **Nome proprietà: IncludedIdList**
 
-1. Descrizione: i gruppi a cui verrà applicato il criterio. Se vengono aggiunti più gruppi, il criterio verrà applicato a tutti i supporti di tutti i gruppi.
+2. Descrizione: i gruppi a cui verrà applicato il criterio. Se vengono aggiunti più gruppi, il criterio verrà applicato a tutti i supporti di tutti i gruppi.
 
-1. Opzioni: l'ID gruppo/GUID deve essere utilizzato in questa istanza.
+3. Opzioni: l'ID gruppo/GUID deve essere utilizzato in questa istanza.
 
 Nell'esempio seguente viene illustrato l'utilizzo di GroupID:
 
@@ -111,8 +110,9 @@ Nell'esempio seguente viene illustrato l'utilizzo di GroupID:
 
 **Nome proprietà: ExcludedIDList**
 
-1. Descrizione: i gruppi a cui non verrà applicato il criterio.
-1. Opzioni: l'ID gruppo/GUID deve essere utilizzato in questa istanza.
+Descrizione: i gruppi a cui non verrà applicato il criterio.
+
+Opzioni: l'ID gruppo/GUID deve essere utilizzato in questa istanza.
 
 **Nome proprietà: Id voce**
 
@@ -123,7 +123,9 @@ Nell'esempio seguente viene illustrato l'utilizzo di GroupID:
 1. Descrizione: definisce l'azione per i gruppi di archiviazione rimovibili in IncludedIDList.
     - Imposizione: Consenti o Nega
     - Controllo: AuditAllowed o AuditDenied 
-1. Opzioni:
+
+2. Opzioni:
+
     - Consenti
     - Nega
     - AuditAllowed: definisce la notifica e l'evento quando è consentito l'accesso
@@ -133,19 +135,19 @@ Quando sono presenti tipi di conflitto per lo stesso supporto, il sistema applie
 
 **Nome proprietà: Sid**
 
-1. Descrizione: definisce se applicare questo criterio a un utente o a un gruppo di utenti specifico. una voce può avere al massimo un Sid e una voce senza sid significa applicare il criterio sul computer.
+Descrizione: definisce se applicare questo criterio a un utente o a un gruppo di utenti specifico. una voce può avere al massimo un Sid e una voce senza sid significa applicare il criterio sul computer.
 
 **Nome proprietà: ComputerSid**
 
-1. Descrizione: definisce se applicare questo criterio a un computer o a un gruppo di computer specifico. una voce può avere al massimo un ComputerSid e una voce senza ComputerSid significa applicare il criterio sul computer. Se si desidera applicare una voce a un utente specifico e a un computer specifico, aggiungere sia Sid che ComputerSid nella stessa voce.
+Descrizione: definisce se applicare questo criterio a un computer o a un gruppo di computer specifico. una voce può avere al massimo un ComputerSid e una voce senza ComputerSid significa applicare il criterio sul computer. Se si desidera applicare una voce a un utente specifico e a un computer specifico, aggiungere sia Sid che ComputerSid nella stessa voce.
 
 **Nome proprietà: Opzioni**
 
-1. Descrizione: definisce se visualizzare o meno la notifica.
+Descrizione: definisce se visualizzare o meno la notifica.
 
    :::image type="content" source="images/device-status.png" alt-text="Schermata in cui è possibile visualizzare lo stato del dispositivo":::
 
-1. Opzioni: 0-4. Quando è selezionata l'opzione Digitazione Consenti o Nega:
+Opzioni: 0-4. Quando è selezionata l'opzione Digitazione Consenti o Nega:
 
    - 0: nothing
    - 4: **disabilitare AuditAllowed** **e AuditDenied** per questa voce. Anche se **block** si verifica e **l'impostazione AuditDenied** è configurata, il sistema non mostrerà la notifica.
@@ -159,16 +161,16 @@ Quando sono presenti tipi di conflitto per lo stesso supporto, il sistema applie
 
 **Nome proprietà: AccessMask**
 
-1. Descrizione: definisce l'accesso.
+Descrizione: definisce l'accesso.
 
-1. Opzioni: 1-7:
-    - 1: Lettura
-    - 2: Scrittura
-    - 3: Lettura e scrittura
-    - 4: Eseguire
-    - 5: Lettura ed esecuzione
-    - 6: Scrittura ed esecuzione
-    - 7: Lettura ed scrittura ed esecuzione
+Opzioni 1-7:
+  - 1: Lettura
+  - 2: Scrittura
+  - 3: Lettura e scrittura
+  - 4: Eseguire
+  - 5: Lettura ed esecuzione
+  - 6: Scrittura ed esecuzione
+  - 7: Lettura ed scrittura ed esecuzione
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Scenari comuni di controllo di Archiviazione rimovibili
 
@@ -177,6 +179,7 @@ Per acquisire familiarità con Microsoft Defender for Endpoint Removable Archivi
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>Scenario 1: Impedire l'accesso in scrittura ed esecuzione a tutti gli USB approvati specifici, ma consentirne l'esecuzione
 
 1. Creare gruppi
+
     1. Gruppo 1: qualsiasi archivio rimovibile e CD/DVD. Un esempio di archiviazione rimovibile e CD/DVD è il gruppo **9b28fae8-72f7-4267-a1a5-685f747a7146 nell'esempio** [Any Removable Archiviazione and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Gruppo 2: USB approvati in base alle proprietà del dispositivo. Un esempio per questo caso di utilizzo è: ID istanza - Gruppo **65fa649a-a111-4912-9294-fb6337a25038** nel file di esempio [approved usbs Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
@@ -185,13 +188,15 @@ Per acquisire familiarità con Microsoft Defender for Endpoint Removable Archivi
     > È necessario sostituire `&` con `&amp;` nel valore.
 
 2. Creazione di un criterio
-    1. Criterio 1: bloccare l'accesso in scrittura ed esecuzione, ma consentire gli USB approvati. Un esempio per questo caso d'uso è: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** nell'esempio [Scenario 1 Block Write and Execute Access but allow approved USBs .xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+
+    1. Criterio 1: bloccare l'accesso in scrittura ed esecuzione, ma consentire gli USB approvati. Un esempio per questo caso d'uso è: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** nell'esempio [Scenario 1 Block Write and Execute Access but allow approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Criterio 2: controlla l'accesso in scrittura ed esecuzione agli USB consentiti. Un esempio per questo caso di utilizzo è: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** nell'esempio [Scenario 1 Audit Write and Execute access to approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
 ### <a name="scenario-2-audit-write-and-execute-access-to-all-but-block-specific-unapproved-usbs"></a>Scenario 2: controllare l'accesso in scrittura ed esecuzione a tutti gli USB non approvati specifici, ma bloccarlo
 
 1. Creare gruppi
+
     1. Gruppo 1: qualsiasi archivio rimovibile e CD/DVD. Un esempio di questo caso di utilizzo è il gruppo **9b28fae8-72f7-4267-a1a5-685f747a7146 nell'esempio** [Any Removable Archiviazione and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Gruppo 2: USB non approvati in base alle proprietà del dispositivo, ad esempio ID fornitore/ID prodotto, Nome descrittivo - Gruppo **65fa649a-a111-4912-9294-fb6337a25038** nel file di esempio [USBs non approvate Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) 
@@ -200,6 +205,7 @@ Per acquisire familiarità con Microsoft Defender for Endpoint Removable Archivi
     > È necessario sostituire `&` con `&amp;` nel valore.
 
 2. Creazione di un criterio
+
     1. Criterio 1: Bloccare l'accesso in scrittura ed esecuzione a tutti gli USB non approvati specifici. Un esempio di questo caso di utilizzo è: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98 nell'esempio** [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Criterio 2: controllare l'accesso in scrittura ed esecuzione ad altri utenti. Un esempio di questo caso di utilizzo è: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48 nell'esempio** [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
@@ -314,3 +320,31 @@ DeviceEvents
 ```
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Schermata che illustra il blocco dell'archiviazione rimovibile":::
+
+## <a name="frequently-asked-questions"></a>Domande frequenti
+**Qual è la limitazione del supporto di archiviazione rimovibile per il numero massimo di USB?**
+
+È stato convalidato un gruppo USB con 100.000 supporti, fino a 7 MB. Il criterio funziona sia in Intune che negli oggetti Criteri di gruppo senza problemi di prestazioni.
+
+**Perché il criterio non funziona?**
+
+Il motivo più comune è che non esiste una versione [client antimalware necessaria.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)
+
+Un altro motivo potrebbe essere che il file XML non è formattato correttamente, ad esempio, non utilizzando la formattazione markdown corretta per il carattere "&" nel file XML oppure l'editor di testo potrebbe aggiungere un indicatore dell'ordine dei byte (BOM) 0xEF 0xBB 0xBF all'inizio dei file che causa il non funzionamento dell'analisi XML. Una soluzione semplice consiste nel scaricare il [file di](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) esempio (selezionare **Raw** e quindi **Salva con** nome ) e quindi aggiornare.
+
+Se è presente un valore e il criterio viene gestito tramite Criteri di gruppo, verificare se il dispositivo client può accedere al percorso XML dei criteri.
+
+**Come è possibile sapere quale computer utilizza una versione client antimalware non aggiornata nell'organizzazione?**
+
+È possibile utilizzare la query seguente per ottenere la versione del client antimalware nel portale Microsoft 365 sicurezza:
+```kusto
+//check the antimalware client version
+DeviceFileEvents
+| where FileName == "MsMpEng.exe"
+| where FolderPath contains @"C:\ProgramData\Microsoft\Windows Defender\Platform\"
+| extend PlatformVersion=tostring(split(FolderPath, "\\", 5))
+//| project DeviceName, PlatformVersion // check which machine is using legacy platformVersion
+| summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
+| order by PlatformVersion desc
+```
+

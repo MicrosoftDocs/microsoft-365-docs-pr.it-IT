@@ -16,19 +16,18 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 409f6d0bbbcf9f8b50119e35bdb7852c4323bbf9
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984989"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028788"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Perché le regole di riduzione della superficie di attacco sono importanti
@@ -91,7 +90,7 @@ Inoltre, la modalità avviso non è supportata nei dispositivi che eseguono vers
 
 ## <a name="notifications-and-alerts"></a>Notifiche e avvisi
 
-Ogni volta che viene attivata una regola di riduzione della superficie di attacco, viene visualizzata una notifica nel dispositivo. Puoi personalizzare [la notifica con i](customize-attack-surface-reduction.md#customize-the-notification) dettagli dell'azienda e le informazioni di contatto.
+Ogni volta che viene attivata una regola di riduzione della superficie di attacco, viene visualizzata una notifica nel dispositivo. È possibile [personalizzare la notifica](customize-attack-surface-reduction.md#customize-the-notification) con i dettagli aziendali e le informazioni sul contatto.
 
 Inoltre, quando vengono attivate determinate regole di riduzione della superficie di attacco, vengono generati avvisi.
 
@@ -127,7 +126,7 @@ Defender for Endpoint fornisce report dettagliati per eventi e blocchi nell'ambi
 
 Puoi eseguire query su Defender per i dati [dell'endpoint](microsoft-defender-security-center.md) in Microsoft 365 Defender tramite [ricerca avanzata.](advanced-hunting-query-language.md) Se si esegue la modalità [di](audit-windows-defender.md)controllo, è possibile utilizzare la ricerca avanzata per comprendere in che modo le regole di riduzione della superficie di attacco potrebbero influire sull'ambiente.
 
-Ecco una query di esempio:
+Ecco un esempio di query:
 
 ```kusto
 DeviceEvents
@@ -160,7 +159,7 @@ La "versione del motore" elencata per gli eventi di riduzione della superficie d
 
 ## <a name="attack-surface-reduction-rules"></a>Regole per la riduzione della superficie di attacco
 
-La tabella e le sottosezioni seguenti descrivono ognuna delle 15 regole di riduzione della superficie di attacco. Le regole di riduzione della superficie di attacco sono elencate in ordine alfabetico, in base al nome della regola.
+La tabella e le sottosezioni seguenti descrivono ognuna delle 16 regole di riduzione della superficie di attacco. Le regole di riduzione della superficie di attacco sono elencate in ordine alfabetico, in base al nome della regola.
 
 Se si configurano regole di riduzione della superficie di attacco tramite Criteri di gruppo o PowerShell, sono necessari i GUID. D'altra parte, se si utilizza Microsoft Endpoint Manager o Microsoft Intune, non sono necessari i GUID.
 

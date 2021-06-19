@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022782"
+ms.locfileid: "53028524"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Eventi imprevisti in Microsoft 365 Defender
 
@@ -144,9 +144,11 @@ Su base continuativa, identificare gli eventi imprevisti con priorità più alta
 
 Se non si ha di [](incidents-overview.md) che fare con l'analisi della sicurezza, vedere l'introduzione alla risposta al primo evento imprevisto per ulteriori informazioni e per analizzare un evento imprevisto di esempio.
 
+Per ulteriori informazioni sulla risposta agli eventi imprevisti tra i prodotti Microsoft, vedere [questo articolo](/security/compass/incident-response-overview).
+
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>Operazioni di sicurezza di esempio per Microsoft 365 Defender
 
-Ecco un esempio di operazioni di sicurezza per Microsoft 365 Defender.
+Ecco un esempio di operazioni di sicurezza (SecOps) per Microsoft 365 Defender.
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Esempio di operazioni di sicurezza per Microsoft 365 Defender":::
 
@@ -169,11 +171,19 @@ Le attività annuali possono includere l'esecuzione di un grave evento imprevist
 
 Le attività giornaliere, mensili, trimestrali e annuali possono essere utilizzate per aggiornare o perfezionare processi, criteri e configurazioni di sicurezza.
 
+### <a name="secops-resources-across-microsoft-products"></a>Risorse SecOps tra i prodotti Microsoft
+
+Per ulteriori informazioni su SecOps nei prodotti Microsoft, vedere queste risorse:
+
+- [Funzionalità](/security/compass/security-operations-capabilities)
+- [Procedure consigliate](/security/compass/security-operations)
+- [Video e diapositive](/security/compass/security-operations-videos-and-decks)
+
 ## <a name="next-steps"></a>Passaggi successivi
 
 **Se non si ha la novità dell'analisi** della sicurezza e della risposta agli eventi imprevisti:
 
-- Vedere [](first-incident-overview.md) la procedura dettagliata Rispondi al primo evento imprevisto per ottenere una presentazione guidata di un processo tipico di analisi, correzione e revisione post-incidente nel portale di Microsoft 365 Defender con un esempio di attacco.
+- Vedi la procedura [dettagliata](first-incident-overview.md) Rispondi al primo incidente per ottenere una presentazione guidata di un processo tipico di analisi, correzione e revisione post-incidente nel portale di Microsoft 365 Defender con un attacco di esempio.
 
 **Se si ha esperienza con l'analisi** della sicurezza e la risposta agli incidenti:
 

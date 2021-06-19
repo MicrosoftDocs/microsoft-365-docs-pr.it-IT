@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4d793d49d669510b722a72160ae396ee73ab9699
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022741"
+ms.locfileid: "53028512"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli eventi imprevisti in Microsoft 365 Defender
 
@@ -98,7 +98,7 @@ Dopo aver configurato un filtro utile nella coda degli eventi imprevisti, è pos
 - Eventi imprevisti con una minaccia associata specifica
 - Eventi imprevisti con un attore specifico
 
-Dopo aver compilato e archiviato l'elenco di visualizzazioni filtro utili come URL, è possibile [](manage-incidents.md) utilizzarlo rapidamente per elaborare e definire le priorità degli eventi imprevisti nella coda e gestirli per l'analisi successiva.
+Dopo aver compilato e archiviato l'elenco di visualizzazioni filtro utili come URL, è possibile utilizzarlo per elaborare e definire rapidamente le priorità degli eventi imprevisti nella coda e gestirli per l'assegnazione e l'analisi successive. [](manage-incidents.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

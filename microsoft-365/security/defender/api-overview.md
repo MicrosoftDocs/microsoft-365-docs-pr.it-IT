@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b19a6072be5f97b90c117f053ccae4593587c43d
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 1ddb6da49e5e9f23aacf73caaeb91302ac9c19c9
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730896"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028968"
 ---
-# <a name="overview-of--microsoft-365-defender-apis"></a>Panoramica delle API Microsoft 365 Defender
+# <a name="overview-of-microsoft-365-defender-apis"></a>Panoramica delle API Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "52730896"
 
 Microsoft 365 Defender è basato su una piattaforma pronta per l'integrazione.
 
-Usa le API Microsoft 365 Defender per automatizzare i flussi di lavoro in base all'evento imprevisto condiviso e alle tabelle di ricerca avanzate.
+Usa le API Microsoft 365 Defender per automatizzare i flussi di lavoro in base alle tabelle di ricerca avanzate e degli eventi imprevisti condivisi.
 
 - **[Coda degli eventi imprevisti combinati:](api-incident.md)** concentrarsi su ciò che è critico raggruppando l'ambito di attacco completo e tutti gli asset influenzati insieme nell'API degli eventi imprevisti.
 
@@ -49,14 +49,14 @@ Usa le API Microsoft 365 Defender per automatizzare i flussi di lavoro in base a
 Usa [l'API di streaming](../defender-endpoint/raw-data-export.md) per spedire gli eventi e gli avvisi in tempo reale dalle istanze quando si verificano all'interno di un singolo flusso di dati.
 
 
-Insieme a queste MICROSOFT 365 specifiche di Defender, ognuno dei nostri [](api-articles.md) altri prodotti di sicurezza espone API aggiuntive per aiutarti a sfruttare le loro funzionalità uniche.
+Insieme a queste API Microsoft 365 Defender specifiche, ognuno dei nostri altri [](api-articles.md) prodotti di sicurezza espone API aggiuntive per aiutarti a sfruttare le loro funzionalità uniche.
 
 
 > [!NOTE]
 > La transizione al portale unificato non deve influire sui dashboard di PowerBi basati sulle API di Microsoft Defender for Endpoint. Puoi continuare a usare le API esistenti indipendentemente dalla transizione interattiva del portale.
 
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 | **Informazioni su come accedere alle API** |
 |-|
@@ -64,9 +64,9 @@ Insieme a queste MICROSOFT 365 specifiche di Defender, ognuno dei nostri [](api-
 | [Accedere alle API di Microsoft 365 Defender](api-access.md) |
 | **Creare app** |
 | [Creare un'app "Hello world"](api-hello-world.md) |
-| [Creare un'app per accedere Microsoft 365 DEFENDER API per conto di un utente](api-create-app-user-context.md) |
+| [Creare un'app per accedere Microsoft 365 Defender API per conto di un utente](api-create-app-user-context.md) |
 | [Creare un'app per accedere Microsoft 365 Defender senza un utente](api-create-app-web.md) |
-| [Creare un'app con accesso partner multi-tenant alle API Microsoft 365 Defender](api-partner-access.md) |
+| [Creare un'app con accesso partner multi-tenant Microsoft 365 Defender API](api-partner-access.md) |
 | **Risolvere i problemi e gestire le app** |
 | [Informazioni su codici di errore API](api-error-codes.md) |
 | [Gestire i segreti nelle app con Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/) |

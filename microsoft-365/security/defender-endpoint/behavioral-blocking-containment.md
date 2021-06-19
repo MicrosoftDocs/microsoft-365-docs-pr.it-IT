@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: f2de1f6bf35f4454ed6ab286c0bc8004a0d6301b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: c480bb83465e6057cd1cf29f1f5077f2a0e165e8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904069"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028824"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocco e contenimento comportamentale
 
@@ -48,7 +48,7 @@ Le funzionalità di blocco e contenimento comportamentali funzionano con più co
 
 - [Il rilevamento e la risposta](overview-endpoint-detection-response.md) degli endpoint (EDR) ricevono segnali di sicurezza in rete, dispositivi e comportamento del kernel. Quando vengono rilevate minacce, vengono creati avvisi. Più avvisi dello stesso tipo vengono aggregati in eventi imprevisti, semplificando l'analisi e la risposta del team delle operazioni di sicurezza.
 
-- [Defender for Endpoint](overview-endpoint-detection-response.md) ha un'ampia gamma di ottica tra identità, posta elettronica, dati e app, oltre ai segnali di comportamento di rete, endpoint e kernel ricevuti tramite EDR. Un componente di [Microsoft 365 Defender,](../defender/microsoft-365-defender.md)Defender for Endpoint elabora e correla questi segnali, genera avvisi di rilevamento e connette gli avvisi correlati negli eventi imprevisti.
+- [Defender for Endpoint](overview-endpoint-detection-response.md) ha un'ampia gamma di ottica tra identità, posta elettronica, dati e app, oltre ai segnali di comportamento di rete, endpoint e kernel ricevuti tramite EDR. Un componente di [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender for Endpoint elabora e correla questi segnali, genera avvisi di rilevamento e connette gli avvisi correlati in eventi imprevisti.
 
 Con queste funzionalità, è possibile impedire o bloccare più minacce, anche se iniziano a essere eseguite. Ogni volta che viene rilevato un comportamento sospetto, la minaccia viene contenuta, vengono creati avvisi e le minacce vengono arrestate nelle loro tracce. 
 
@@ -58,7 +58,7 @@ L'immagine seguente mostra un esempio di un avviso attivato dalle funzionalità 
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Componenti del blocco comportamentale e del contenimento
 
-- **Regole di riduzione della [](attack-surface-reduction.md) superficie** di attacco basata su criteri sul client L'esecuzione di comportamenti di attacco comuni predefiniti non è consentita, in base alle regole di riduzione della superficie di attacco. Quando questi comportamenti tentano di essere eseguiti, possono essere visualizzati nel Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) come avvisi informativi. Le regole di riduzione della superficie di attacco non sono abilitate per impostazione predefinita. configurare i criteri in [Microsoft 365 Defender](microsoft-defender-security-center.md).
+- **Regole di riduzione della [](attack-surface-reduction.md) superficie** di attacco basata su criteri sul client L'esecuzione di comportamenti di attacco comuni predefiniti non è consentita, in base alle regole di riduzione della superficie di attacco. Quando questi comportamenti tentano di essere eseguiti, possono essere visualizzati in Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) come avvisi informativi. Le regole di riduzione della superficie di attacco non sono abilitate per impostazione predefinita. configurare i criteri nella [Microsoft 365 Defender](microsoft-defender-security-center.md).
 
 - **[Blocco comportamentale client](client-behavioral-blocking.md)** Le minacce sugli endpoint vengono rilevate tramite machine learning e quindi vengono bloccate e corretti automaticamente. Il blocco comportamentale del client è abilitato per impostazione predefinita. 
 
@@ -95,9 +95,9 @@ I modelli di apprendimento dei dispositivi basati sul comportamento in Defender 
 - Il primo livello di protezione ha rilevato il comportamento di exploit. I classificatori di apprendimento dei dispositivi nel cloud hanno identificato correttamente la minaccia come e hanno immediatamente indicato al dispositivo client di bloccare l'attacco.
 - Il secondo livello di protezione, che ha consentito di arrestare i casi in cui l'attacco è passato al primo livello, ha rilevato la cavità del processo, ha interrotto il processo e rimosso i file corrispondenti (ad esempio Lokibot). 
 
-Mentre l'attacco è stato rilevato e arrestato, gli avvisi, ad esempio un "avviso di accesso iniziale", sono stati attivati e visualizzati nel portale [di Microsoft 365 Defender](microsoft-defender-security-center.md) (in precedenza Microsoft Defender Security Center):
+Mentre l'attacco è stato rilevato e arrestato, gli avvisi, ad esempio un "avviso di accesso iniziale", sono stati attivati e visualizzati nel portale di [Microsoft 365 Defender](microsoft-defender-security-center.md) (in precedenza il Microsoft Defender Security Center):
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Avviso di accesso iniziale nel portale Microsoft 365 Defender":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Avviso di accesso iniziale nel Microsoft 365 Defender portale":::
 
 Questo esempio mostra come i modelli di apprendimento dei dispositivi basati sul comportamento nel cloud aggiungono nuovi livelli di protezione dagli attacchi, anche dopo l'avvio dell'esecuzione.
 
@@ -127,4 +127,4 @@ Questo esempio mostra che con le funzionalità di blocco e contenimento comporta
 
 - [Vedere attività recenti sulle minacce globali](https://www.microsoft.com/wdsi/threats)
 
-- [Panoramica di Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Ottenere una panoramica di Microsoft 365 Defender](../defender/microsoft-365-defender.md)
