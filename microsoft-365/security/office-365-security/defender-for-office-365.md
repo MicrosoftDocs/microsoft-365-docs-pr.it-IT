@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender per Office 365 include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bdb1e16c20b623934bb4fb994fcb8c6ef5f5ff0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 81a45f6839538118c5413c1f5fc09e0cd19903a0
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028469"
+ms.locfileid: "53029874"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender per Office 365
 
@@ -96,9 +96,9 @@ La tabella seguente riepiloga cosa è incluso in ogni piano.
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurazione criteri di Microsoft Defender per Office 365
 
-Con Microsoft Defender per Office 365, il team di sicurezza dell'organizzazione può configurare la protezione definendo i criteri in Microsoft 365 Defender (passare a <https://security.microsoft.com> \> **Posta elettronica e collaborazione** \> **Criteri e regole**.)
+Con Microsoft Defender per Office 365, il team di sicurezza dell'organizzazione può configurare la protezione definendo i criteri nel portale di Microsoft 365 Defender (passare a <https://security.microsoft.com> \> **Posta elettronica e collaborazione** \> **Criteri e regole**).
 
-Scopri di più guardando [questo video](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
+Scopri di più guardando [questo video](https://www.youtube.com/watch?v=vivvTmWJ_3c).
 
 > [!TIP]
 > Per un rapido elenco dei criteri da definire, vedere [Protezione dalle minacce](protect-against-threats.md).
@@ -113,11 +113,11 @@ I criteri definiti per l'organizzazione determinano il comportamento e il livell
 
 - **[Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md)**: protegge l'organizzazione quando gli utenti collaborano e condividono file, identificando e bloccando i file dannosi nei siti del team e nelle raccolte documenti. Per altre informazioni, vedere [Attivare Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
-- **[Protezione anti-phishing in Microsoft Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: rileva i tentativi di imitare i propri utenti e i domini interni o personalizzati. Applica i modelli di apprendimento automatico e gli algoritmi avanzati di rilevamento delle imitazioni per evitare attacchi di phishing. Per altre informazioni, vedere [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md).
+- **[Protezione anti-phishing in Microsoft Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: rileva i tentativi di imitare i propri utenti e i domini interni o personalizzati. Applica i modelli di apprendimento automatico e gli algoritmi avanzati di rilevamento delle imitazioni per evitare attacchi di phishing. Per altre informazioni, vedere [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Visualizzazione report di Microsoft Defender per Office 365
 
-Microsoft Defender per Office 365 include un [dashboard avanzato per la creazione di report](view-reports-for-mdo.md) per monitorare le prestazioni di Microsoft Defender per Office 365. È possibile accedervi da **Report** \> **Dashboard** nel portale di Microsoft 365 Defender.
+Microsoft Defender per Office 365 include [report](view-reports-for-mdo.md) per monitorare Defender per Office 365. È possibile accedere ai report nel portale di Microsoft 365 Defender da **Report** \> **Posta elettronica e collaborazione** \> **Report di posta elettronica e collaborazione** o direttamente da <https://security.microsoft.com/securityreports>.
 
 I report vengono aggiornati in tempo reale, fornendo le informazioni più recenti. Questi report forniscono anche suggerimenti e inviano avvisi in caso di minacce imminenti. I report predefiniti includono quanto segue:
 
@@ -141,16 +141,19 @@ Microsoft Defender per Office 365 Piano 2 include i migliori [strumenti per l'an
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Autorizzazioni necessarie per usare le funzionalità di Microsoft Defender per Office 365
 
-Per accedere alle funzionalità di Microsoft Defender per Office 365 in Microsoft 365 Defender, è necessario disporre di un ruolo appropriato. La tabella seguente include alcuni esempi:
+Per accedere alle funzionalità di Microsoft Defender per Office 365, all’utente dev’essere stato assegnato un ruolo appropriato. La tabella seguente include alcuni esempi:
+
+<br>
+
+****
 
 |Ruolo o gruppo di ruoli|Risorse per approfondire|
 |---|---|
-|Amministratore globale, che può essere assegnato in Azure Active Directory o in Microsoft 365 Defender|[Informazioni sui ruoli di amministratore di Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Amministratore della sicurezza, che può essere assegnato in Azure Active Directory o in Microsoft 365 Defender|[Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Autorizzazioni in Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
-|Gestione dell'organizzazione di Exchange Online (assegnata a Exchange Online)|[Autorizzazioni in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Ricerca ed eliminazione, assegnato solo in Microsoft 365 Defender|[Autorizzazioni in Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
-
-Per altre informazioni, vedere [Autorizzazioni in Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+|amministratore globale (Gestione organizzazione)|È possibile assegnare questo ruolo in Azure Active Directory o nel portale di Microsoft 365 Defender. Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
+|Amministratore della sicurezza|È possibile assegnare questo ruolo in Azure Active Directory o nel portale di Microsoft 365 Defender. Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
+|Gestione organizzazione in Exchange Online|[Autorizzazioni in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
+|Ricerca ed eliminazione|Questo ruolo è disponibile solo nel portale di Microsoft 365 Defender o nel Centro conformità Microsoft 365. Per altre informazioni, consulta [Autorizzazioni di accesso nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md) e [Autorizzazioni di accesso nel Centro conformità Microsoft 365](../../compliance/microsoft-365-compliance-center-permissions.md).|
+|||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>Ottenere Microsoft Defender per Office 365
 
@@ -177,4 +180,3 @@ Nuove funzionalità vengono aggiunte continuamente a Microsoft Defender per Offi
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 - [Analisi e risposta automatizzate in Microsoft 365 Defender](../defender/m365d-autoir.md)
-

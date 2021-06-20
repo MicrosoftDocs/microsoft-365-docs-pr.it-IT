@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Sintesi: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati nel proprio ambiente di sviluppo/testinging per la campagna politica.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: fcba6e2f3939115d6dfbaae80d322246bdeadee9
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028776"
+ms.locfileid: "53029898"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Creare siti del team in un ambiente di sviluppo/testinging per la campagna politica
 
@@ -34,8 +34,8 @@ ms.locfileid: "53028776"
 
 - [Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md)
 
- **Sintesi**: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati nel proprio ambiente di sviluppo/testinging per la campagna politica. 
-   
+ **Sintesi**: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati nel proprio ambiente di sviluppo/testinging per la campagna politica.
+
 Attenersi alle istruzioni in questo articolo per creare un ambiente di sviluppo/testing che include i quattro tipi di siti del team di SharePoint Online per la soluzione [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md). I siti sono descritti nel dettaglio nell'Argomento 10, **SharePoint e OneDrive for Business**.
 
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/testing per la campagna politica
@@ -46,43 +46,46 @@ Prima di tutto, seguire le istruzioni in [Configurazione di gruppi e utenti in u
 
 In questa fase, vengono create le etichette per i diversi livelli di sicurezza per cartelle di documenti dei siti del team di SharePoint Online.
 
-1. Se necessario, accedere all'interfaccia di amministrazione con le credenziali dell'account amministratore globale dell'abbonamento di valutazione. Per informazioni, vedere [Dove accedere a Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, accedere all'interfaccia di amministrazione di Microsoft 365 (<https://admin.microsoft.com>) con le credenziali dell'account amministratore globale dell'abbonamento di valutazione. Per informazioni, vedere [Dove accedere a Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Dalla scheda **Microsoft Office Home** fare clic sul riquadro **Amministratore**.
+2. Nella pagina iniziale **Home** fare clic su **Mostra tutto**. Nella sezione **Interfacce di amministrazione** visualizzata fare clic su **Conformità**.
 
-3. Dalla nuova scheda **Interfaccia di amministrazione di Microsoft 365** del browser fare clic su **Interfacce di amministrazione > Sicurezza e conformità**.
+3. Nella pagina **Home** del Centro conformità Microsoft 365 passare alla sezione **Soluzioni** \> **Information Protection**. Per passare direttamente alla pagina **Information Protection**, usare <https://compliance.microsoft.com//informationprotection>.
 
-4. Dalla nuova scheda **Home: Sicurezza e conformità** del browser, fare clic su **Classificazioni > Etichette**.
+4. Nella pagina **Information Protection** verificare che il tag **Etichetta** sia selezionato, quindi fare clic sull’icona ![Crea un'etichetta](../../media/m365-cc-sc-create-icon.png) **Crea un'etichetta**.
 
-5. Dal riquadro **Home > Etichette**, fare clic su **Crea un’etichetta**.
+5. Verrà visualizzata la procedura guidata **Nuova etichetta di riservatezza**. Nel passaggio **Nome e descrizione** immettere i valori seguenti:
+   - **Nome**: digitare **Interno**.
+   - **Nome visualizzato**
+   - **Descrizione per gli utenti**
 
-6. Nel riquadro **Denomina l'etichetta**, digitare **Interno** e fare clic su **Avanti**.
+   Al termine dell'operazione, fare clic su **Avanti**.
 
-7. Nel riquadro **Label settings** (Importazioni etichetta) fare clic su **Avanti**.
+6. Nel riquadro **Label settings** (Importazioni etichetta) fare clic su **Avanti**.
 
-8. Nel riquadro **Verifica le impostazioni** fare clic su **Crea questa etichetta** e fare clic su **Chiudi**.
+7. Nel riquadro **Verifica le impostazioni** fare clic su **Crea questa etichetta** e fare clic su **Chiudi**.
 
-9. Ripetere i passaggi 5-8 per queste etichette aggiuntive:
+8. Ripetere i passaggi 5-8 per queste etichette aggiuntive:
 
    - Private
    - Dati sensibili
    - Highly Confidential (Riservatezza elevata)
 
-10. Dal riquadro **Home > Etichette** fare clic su **Publish labels** (Pubblica etichette).
+9. Dal riquadro **Home > Etichette** fare clic su **Publish labels** (Pubblica etichette).
 
-11. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Choose labels to publish** (Scegli etichette da pubblicare).
+10. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Choose labels to publish** (Scegli etichette da pubblicare).
 
-12. Nel riquadro **Choose labels** (Scegli etichette) fare clic su **Aggiungi** e selezionare le quattro etichette.
+11. Nel riquadro **Choose labels** (Scegli etichette) fare clic su **Aggiungi** e selezionare le quattro etichette.
 
-13. Fare clic su **Fine**.
+12. Fare clic su **Fine**.
 
-14. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Avanti**.
+13. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Avanti**.
 
-15. Nel riquadro **Choose locations** (Scegli posizioni) fare clic su **Avanti**.
+14. Nel riquadro **Choose locations** (Scegli posizioni) fare clic su **Avanti**.
 
-16. Nel riquadro **Denomina il criterio**, digitare **Campagna** in **Nome**, quindi fare clic su **Avanti**.
+15. Nel riquadro **Denomina il criterio**, digitare **Campagna** in **Nome**, quindi fare clic su **Avanti**.
 
-17. Nel riquadro **Verifica le impostazioni**, fare clic su **Pubblica etichette** e fare clic su **Chiudi**.
+16. Nel riquadro **Verifica le impostazioni**, fare clic su **Pubblica etichette** e fare clic su **Chiudi**.
 
 ## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>Fase 3: creare i siti del team di SharePoint Online
 
