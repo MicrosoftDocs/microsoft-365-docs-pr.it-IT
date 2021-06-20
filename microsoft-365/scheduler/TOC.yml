@@ -1,10 +1,10 @@
-- name: Utilità di pianificazione per Microsoft 365
+- name: Pianificatore per Microsoft 365
   href: scheduler-overview.md
 - name: Attendibilità e privacy
   href: scheduler-trust-privacy.md
-- name: Configurazione dell'utilità di pianificazione per Microsoft 365
+- name: Configurazione del pianificatore per Microsoft 365
   href: scheduler-setup.md
-- name: Come usare l'Utilità di pianificazione per Microsoft 365
+- name: Come usare il pianificatore per Microsoft 365
   href: scheduler-using.md
-- name: Utilità di Microsoft 365 domande frequenti
+- name: Domande frequenti del Pianificatore per Microsoft 365
   href: scheduler-faqs.md
