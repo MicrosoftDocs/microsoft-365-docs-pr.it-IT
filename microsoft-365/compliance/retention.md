@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 65c9216e30c2db04b1981a17d73b3a9f0b5f1594
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932867"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007502"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -268,7 +268,7 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 
 **Nota a piè di pagina:**
 
-<sup>\*</sup> Per le etichette di conservazione che non contrassegnano i contenuti come record o record normativi, gli eventi di controllo sono limitati al caso in cui un elemento in SharePoint ha un'etichetta applicata, modificata o rimossa. Per informazioni dettagliate sul controllo delle etichette di conservazione, vedere la sezione [Controllo delle azioni di conservazione](#auditing-retention-actions) in questa pagina.
+<sup>\*</sup> Per le etichette di conservazione che non contrassegnano i contenuti come record o record normativi, gli eventi di controllo sono limitati al caso in cui un elemento in SharePoint o OneDrive ha un'etichetta applicata, modificata o rimossa. Per informazioni dettagliate sul controllo delle etichette di conservazione, vedere la sezione [Controllo delle azioni di conservazione](#auditing-retention-actions) in questa pagina.
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Combinazione di criteri di conservazione ed etichette di conservazione.
 
@@ -373,9 +373,11 @@ La protezione dell'archiviazione viene applicata dopo la creazione dei criteri d
 
 ## <a name="releasing-a-policy-for-retention"></a>Rilascio dei criteri di conservazione
 
-Se i criteri di conservazione non hanno una protezione dell'archiviazione è possibile eliminare i criteri in qualsiasi momento, in questo modo vengono disabilitate le impostazioni di conservazione applicate in precedenza. È possibile inoltre mantenere il criterio, ma rimuovere un sito per SharePoint o un account per OneDrive, o modificare lo stato della posizione in off, o disabilitare il criterio.
+Se i criteri di conservazione non hanno una protezione dell'archiviazione è possibile eliminare i criteri in qualsiasi momento, in questo modo vengono disabilitate le impostazioni di conservazione applicate in precedenza. È possibile inoltre mantenere il criterio, ma modificare lo stato della posizione su off o disabilitare il criterio. Se il criterio è configurato per includere siti specifici per SharePoint o account per OneDrive, puoi anche modificare il criterio per rimuovere una o più di queste voci per rilasciare il criterio per questi siti o account.
  
 Quando viene intrapresa una qualsiasi delle azioni precedenti, qualsiasi contenuto di SharePoint o OneDrive soggetto a conservazione dal criterio continuerà a essere conservato per 30 giorni per evitare la perdita accidentale di dati. Durante il periodo di tolleranza di 30 giorni, i file eliminati verranno ancora conservati (i file continuano a essere aggiunti alla raccolta di archiviazione), ma il processo timer che pulisce periodicamente la raccolta di archiviazione verrà sospeso per questi file, così da poterli ripristinare se necessario.
+
+Un'eccezione a questo periodo di tolleranza di 30 giorni è costituita dall'aggiornamento del criterio in modo da escludere uno o più siti per SharePoint o account per OneDrive; in questo caso, il processo timer elimina i file per queste posizioni nella raccolta di archiviazione senza il ritardo di 30 giorni.
 
 Per ulteriori informazioni sulla raccolta di archiviazione, vedere [Come funziona la conservazione per SharePoint e OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
@@ -395,7 +397,7 @@ Per l'elenco completo degli eventi di controllo, vedere [Attività dei criteri e
 
 Le azioni di conservazione registrate come eventi di controllo sono disponibili solo per le etichette di conservazione e non per i criteri di conservazione:
 
-- Quando un'etichetta di conservazione viene applicata, modificata o rimossa da un elemento in SharePoint:
+- Quando un'etichetta di conservazione viene applicata, modificata o rimossa da un elemento in SharePoint o OneDrive:
     - Da **Attività su file e pagine**, selezionare **Etichetta di conservazione modificata per un file**. 
 
 - Quando un elemento etichettato in SharePoint viene contrassegnato come record e viene sbloccato o bloccato da un utente:
@@ -404,7 +406,7 @@ Le azioni di conservazione registrate come eventi di controllo sono disponibili 
 - Quando un'etichetta di conservazione che contrassegna il contenuto come record o record normativo viene applicata a un elemento in Exchange:
     - Da **Attività su cassette postali di Exchange**, selezionare **Messaggio etichettato come record**.
 
-- In SharePoint o Exchange, quando un elemento etichettato viene contrassegnato come record o record normativo e viene eliminato definitivamente:
+- In SharePoint, OneDrive o Exchange, quando un elemento etichettato viene contrassegnato come record o record normativo e viene eliminato definitivamente:
     - Da **Attività su file e pagine**, selezionare **File eliminato contrassegnato come record**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlet di PowerShell per criteri ed etichette di conservazione
