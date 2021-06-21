@@ -164,6 +164,8 @@
                   href: advanced-hunting-query-emails-devices.md
                 - name: Ricerca ransomware
                   href: advanced-hunting-find-ransomware.md
+                - name: Esempio di rilevazione avanzata
+                  href: advanced-hunting-example.md
                 - name: Transizione da Defender per endpoint
                   href: advanced-hunting-migrate-from-mde.md
             - name: Usare i risultati delle query
@@ -326,6 +328,8 @@
                       href: streaming-api-event-hub.md
                     - name: Trasmettere eventi di rilevazione avanzata agli account di archiviazione
                       href: streaming-api-storage.md
+                    - name: Configurare l'Hub Eventi
+                      href: configure-event-hub.md
                 - name: API di rilevazione avanzata
                   href: api-advanced-hunting.md
                 - name: API incidenti
