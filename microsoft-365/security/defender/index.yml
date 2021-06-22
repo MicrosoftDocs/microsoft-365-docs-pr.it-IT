@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft 365 Defender
-summary: Scopri le soluzioni di sicurezza affidabili in Microsoft 365 Defender per proteggere meglio la tua azienda dalle superfici di attacco.
+summary: Informazioni sulle soluzioni di sicurezza affidabili in Microsoft 365 Defender in modo da poter proteggere meglio l'azienda tra le superfici di attacco.
 metadata:
-  title: Microsoft 365 Documentazione di Defender
-  description: Scopri le soluzioni di sicurezza affidabili in Microsoft 365 Defender per proteggere meglio la tua azienda dalle superfici di attacco.
+  title: Microsoft 365 Defender documentazione
+  description: Informazioni sulle soluzioni di sicurezza affidabili in Microsoft 365 Defender in modo da poter proteggere meglio l'azienda tra le superfici di attacco.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,19 +13,21 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 68909caf8844b5ea4d20029a04d1b7d81ca25e66
-  ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+  ms.openlocfilehash: d4fa7ecef5bb132ca23084b5f46af230a3d181aa
+  ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 06/10/2021
-  ms.locfileid: "52878449"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53053132"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
   - linkListType: overview
     links:
     - text: Che cos'è Microsoft 365 Defender?
-      url: ../defender/microsoft-365-defender.md
+      url: microsoft-365-defender.md
+    - text: Panoramica di Microsoft 365 Defender
+      url: overview-security-center.md
   - linkListType: whats-new
     links:
     - text: Novità di Microsoft 365 Defender
@@ -42,7 +44,7 @@ landingContent:
       url: m365d-evaluation.md
     - text: Eseguire un progetto pilota nell'ambiente di produzione
       url: m365d-pilot.md
-- title: Informazioni di base
+- title: Per iniziare
   linkLists:
   - linkListType: get-started
     links:
@@ -80,20 +82,10 @@ landingContent:
     links:
     - text: Cos'è Microsoft Defender per endpoint?
       url: ../defender-endpoint/microsoft-defender-endpoint.md
-    - text: Defender per Endpoint in Microsoft 365 Defender
+    - text: Defender per endpoint in Microsoft 365 Defender
       url: microsoft-365-security-center-mde.md
     - text: Reindirizzamento di Defender per Endpoint in Microsoft 365 Defender
       url: ../defender/microsoft-365-security-mde-redirection.md
-- title: Centro sicurezza Microsoft 365
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Panoramica del Centro sicurezza Microsoft 365
-      url: overview-security-center.md
-    - text: Microsoft Defender for Endpoint nel centro sicurezza Microsoft 365 sicurezza
-      url: microsoft-365-security-center-mde.md
-    - text: Microsoft Defender per Office 365 nel Centro sicurezza Microsoft 365
-      url: ../defender/microsoft-365-security-center-mdo.md
 - title: Microsoft Cloud App Security
   linkLists:
   - linkListType: overview
@@ -108,9 +100,9 @@ landingContent:
     links:
     - text: Indagare sugli eventi imprevisti
       url: investigate-incidents.md
-    - text: Tenere traccia e rispondere alle minacce emergenti
+    - text: Monitorare e rispondere alle nuove minacce
       url: threat-analytics.md
-    - text: Analisi e risposta alle minacce automatizzate
+    - text: Indagine e reazione automatizzate
       url: m365d-autoir.md
     - text: Ricerca di minacce
       url: advanced-hunting-overview.md
@@ -118,5 +110,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Microsoft 365 API Defender (anteprima)
+    - text: Microsoft 365 Defender API (anteprima)
       url: api-overview.md
