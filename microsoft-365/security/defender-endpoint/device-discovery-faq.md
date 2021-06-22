@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b2c0b986ef6dbb54cd34e9b4413711cd3e5f9c6d
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245961"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053156"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Domande frequenti sull'individuazione dei dispositivi
 
@@ -65,7 +65,7 @@ Sì, puoi applicare filtri per escludere i dispositivi non gestiti dall'elenco d
  Per impostazione predefinita, tutti i dispositivi onboarded in esecuzione su Windows 10 versione 1809 o successiva acquisisce e analizzano i protocolli seguenti: ARP, CDP, DHCP, DHCPv6, IP (intestazioni), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (intestazioni), UDP (intestazioni), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Quali protocolli vengono utilizzati per il probe attivo nell'individuazione standard?
- Quando un dispositivo è configurato per eseguire l'individuazione standard, i servizi esposti vengono sondati utilizzando i protocolli seguenti: ARP, FTP, HTTP, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL
+ Quando un dispositivo è configurato per eseguire l'individuazione standard, i servizi esposti vengono sondati utilizzando i protocolli seguenti: ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSyncSync
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>Come è possibile escludere le destinazioni dal sondaggio con l'individuazione standard?
  Se nella rete sono presenti dispositivi che non devono essere controllati attivamente, è anche possibile definire un elenco di esclusioni per impedirne l'analisi. La configurazione è disponibile nella pagina delle impostazioni di individuazione dei dispositivi.
@@ -91,4 +91,5 @@ Potresti notare differenze tra il numero di dispositivi elencati in "può essere
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>Posso eseguire l'onboard di dispositivi non gestiti trovati?
  Sì. Gli endpoint non gestiti nella rete introducono vulnerabilità e rischi per la rete. L'onboarding al servizio può aumentare la visibilità della sicurezza su di essi. 
 
-
+## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>Ho notato che lo stato di integrità del dispositivo non gestito è sempre "Attivo", perché?
+Temporaneamente, lo stato di integrità del dispositivo non gestito sarà "Attivo" durante il periodo di conservazione standard dell'inventario dei dispositivi, indipendentemente dallo stato effettivo.

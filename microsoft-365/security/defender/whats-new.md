@@ -1,7 +1,7 @@
 ---
 title: Novità di Microsoft 365 Defender
-description: Elenca le nuove funzionalità e funzionalità in Microsoft 365 Defender
-keywords: novità di Microsoft 365 Defender, ga, generalmente disponibile, funzionalità, disponibili, nuove
+description: Elenca le nuove caratteristiche e funzionalità in Microsoft 365 Defender
+keywords: novità di Microsoft 365 Defender, ga, generalmente disponibili, funzionalità, disponibili, nuove
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c974701b83fbb6dbcac1cc597578a97144b2b482
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 582116047900fc5f28d5580398cf5c065e6a3e23
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845595"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053024"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novità di Microsoft 365 Defender
 
@@ -40,10 +40,10 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 ```
 
 ## <a name="april-2021"></a>Aprile 2021
-- Centro sicurezza Microsoft 365 migliorato <br> Il nuovo [Centro sicurezza Microsoft 365](https://security.microsoft.com) è ora disponibile in anteprima pubblica. Questa nuova esperienza consente di accedere a Defender per endpoint, Defender per Office 365, Microsoft 365 Defender e altre soluzioni nel Centro sicurezza Microsoft 365. Questa è la nuova sede per gestire i controlli di sicurezza. [Informazioni sulle novità](./overview-security-center.md).
+- Microsoft 365 Defender<br> Il portale [Microsoft 365 Defender](https://security.microsoft.com) è ora disponibile. Questa nuova esperienza riunisce Defender for Endpoint, Defender for Office 365, Defender for Identity e altro ancora in un unico portale. Questa è la nuova sede per gestire i controlli di sicurezza. [Informazioni sulle novità](./overview-security-center.md).
 
-- [Microsoft 365 Report defender threat analytics](threat-analytics.md)<br>
- L'analisi delle minacce consente di rispondere e ridurre al minimo l'impatto degli attacchi attivi. Puoi anche conoscere i tentativi di attacco bloccati dalle soluzioni Microsoft 365 Defender ed eseguire azioni preventive che attenuano il rischio di un'ulteriore esposizione e aumentano la resilienza. Come parte dell'esperienza di sicurezza unificata, l'analisi delle minacce è ora disponibile per Microsoft Defender per Endpoint e Microsoft Defender per i titolari della licenza Office E5.
+- [Microsoft 365 Defender di analisi delle minacce](threat-analytics.md)<br>
+ L'analisi delle minacce consente di rispondere e ridurre al minimo l'impatto degli attacchi attivi. Sono inoltre disponibili informazioni sui tentativi di attacco bloccati dalle soluzioni Microsoft 365 Defender ed eseguire azioni preventive che attenuano il rischio di ulteriore esposizione e aumentano la resilienza. Come parte dell'esperienza di sicurezza unificata, l'analisi delle minacce è ora disponibile per Microsoft Defender per Endpoint e Microsoft Defender per i titolari della licenza Office E5.
 
 ## <a name="march-2021"></a>Marzo 2021
 - [Tabella CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Informazioni sugli eventi in varie app e servizi cloud coperti da Microsoft Cloud App Security. Questa tabella include anche informazioni precedentemente disponibili in `AppFileEvents` .
@@ -73,6 +73,6 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 - [Miglioramenti avanzati per la ricerca](advanced-hunting-overview.md) <br> Ricerca proattiva delle minacce nell'area di lavoro moderna con Kusto Query Language e uno schema ottimizzato per la sicurezza.
 
 ## <a name="march-2019"></a>Marzo 2019
-- Rilevazione avanzata <br> Pagina di destinazione per varie funzionalità di ricerca che consentono di individuare in modo proattivo minacce che interessano posta elettronica, dati, dispositivi e identità.
+- Ricerca avanzata <br> Pagina di destinazione per varie funzionalità di ricerca che consentono di individuare in modo proattivo minacce che interessano posta elettronica, dati, dispositivi e identità.
 - [Microsoft Secure Score](microsoft-secure-score.md) <br> Misurazione della posizione di sicurezza di un'organizzazione, con un numero maggiore che indica più azioni di miglioramento intraprese. Seguendo i consigli di Microsoft Secure Score è possibile proteggere l'organizzazione dalle minacce. 
 - [Report](overview-security-center.md) <br>  Include una serie di schede che coprono un'ampia gamma di aree monitorate dagli analisti e dagli amministratori della sicurezza nell'ambito delle operazioni quotidiane.

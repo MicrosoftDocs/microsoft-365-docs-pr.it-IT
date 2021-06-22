@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f9a4b7679a33d6722336ee5412e4992389ba915f
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 40ec3887cd37ddb412df3ae78300c1f9e9c60ecc
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694414"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053048"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
@@ -53,7 +53,7 @@ Inoltre, i gruppi di sicurezza abilitati alla posta elettronica nel tenant di or
 
 Sarà inoltre necessario comunicare con l'azienda partner attendibile (con cui verranno trasferite le cassette postali) per ottenere il proprio ID tenant Microsoft 365 attendibile. Questo ID tenant viene utilizzato nel campo Relazione `DomainName` organizzativa.
 
-Per ottenere l'ID tenant di una sottoscrizione, accedere all'Microsoft 365 di amministrazione e passare a [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Fare clic sull'icona di copia per la proprietà ID tenant per copiarla negli Appunti.
+Per ottenere l'ID tenant di una sottoscrizione, accedere al interfaccia di amministrazione di Microsoft 365 e passare a [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Fare clic sull'icona di copia per la proprietà ID tenant per copiarla negli Appunti.
 
 Ecco come funziona il processo.
 
@@ -122,6 +122,7 @@ Preparare il tenant di origine:
 6. Lo script verrà sospeso e verrà richiesto di accettare o acconsentire all'applicazione Exchange cassetta postale creata durante questo processo. Ecco un esempio.
 
     ```powershell
+    PS C:\PowerShell\> # Note: the below User.Invite.All permission is optional, and will only be used to retrieve access token to send invitation email to source tenant
     PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureResourceLocation "Brazil Southeast" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
 
     cmdlet Get-Credential at command pipeline position 1
@@ -134,7 +135,7 @@ Preparare il tenant di origine:
     Pay-As-You-Go (ewe23423-a3327-34232-343... Admin@fabrikam... Pay-As-You-Go                           AzureCloud                              dsad938432-dd8e-s9034-bf9a-83984293n43
     Auditing setup successfully for Cross-TenantMovesVault
     Exchange application given access to KeyVault Cross-TenantMovesVault
-    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - Directory.ReadWrite.All. Exchange - Mailbox.Migration
+    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - User.Invite.All. Exchange - Mailbox.Migration
     Admin consent URI for fabrikam.onmicrosoft.com tenant admin is -
     https://login.microsoftonline.com/fabrikam.onmicrosoft.com/adminconsent?client_id=6fea6ere-0dwe-404d-ad35-c71a15cers5c&redirect_uri=https://office.com
     Admin consent URI for contoso.onmicrosoft.com tenant admin is -
@@ -175,7 +176,7 @@ La configurazione dell'amministratore di destinazione è stata completata.
    > [!NOTE]
    > Se non si ottiene questo messaggio di posta elettronica o non è possibile trovarlo, all'amministratore tenant di destinazione è stato fornito un URL diretto che può essere assegnato all'utente per accettare l'invito. L'URL deve essere nella trascrizione della sessione remota di PowerShell dell'amministratore tenant di destinazione.
 
-3. Nell'interfaccia di amministrazione di Microsoft 365 o in una sessione remota di PowerShell, creare uno o più gruppi di sicurezza abilitati alla posta elettronica per controllare l'elenco delle cassette postali consentite dal tenant di destinazione per il pull (spostamento) dal tenant di origine al tenant di destinazione. Non è necessario popolare questo gruppo in anticipo, ma è necessario fornire almeno un gruppo per eseguire la procedura di installazione (script). I gruppi nest non sono supportati. 
+3. Nel interfaccia di amministrazione di Microsoft 365 o in una sessione remota di PowerShell, creare uno o più gruppi di sicurezza abilitati alla posta elettronica per controllare l'elenco delle cassette postali consentite dal tenant di destinazione per il pull (spostamento) dal tenant di origine al tenant di destinazione. Non è necessario popolare questo gruppo in anticipo, ma è necessario fornire almeno un gruppo per eseguire la procedura di installazione (script). I gruppi nest non sono supportati. 
 
 4. Scaricare lo script SetupCrossTenantRelationshipForResourceTenant.ps1 per la configurazione del tenant di origine dal repository GitHub repository qui: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
 
@@ -716,7 +717,7 @@ Ricorda che questa funzionalità è attualmente in anteprima e il contratto di s
    | Ostacoli alle informazioni                              |
    | Information Protection per Office 365 - Premium   |
    | Information Protection for Office 365 - Standard  |
-   | Dati analitici di MyAnalytics                           |
+   | Insights di MyAnalytics                           |
    | Microsoft 365 Controllo avanzato                   |
    | Microsoft Bookings                                |
    | Microsoft Business Center                         |
