@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore TeleMessage per importare e archiviare i dati di WhatsApp in Microsoft 365. In questo modo è possibile archiviare i dati da origini dati di terze parti in Microsoft 365 in modo da poter utilizzare funzionalità di conformità come il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: a8f588e6bbe5180865a2053b055230e4f35ed96a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 0f4759eeb26190d7fdfc92cbf986efecd017eda5
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822166"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054782"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>Configurare un connettore per archiviare i dati di WhatsApp
 
 Usa il connettore TeleMessage nel Centro conformità Microsoft 365 per importare e archiviare chiamate WhatsApp, chat, allegati, file e messaggi eliminati. Dopo aver configurato e configurato un connettore, il connettore si connette all'account TeleMessage dell'organizzazione una volta al giorno e importa la comunicazione mobile dei dipendenti tramite l'archivio what Telefono sapp di TeleMessage o l'archivio cloud di TeleMessage WhatsApp nelle cassette postali di Microsoft 365.
 
-Dopo aver archiviato i dati di WhatsApp nelle cassette postali degli utenti, è possibile applicare ai dati di WhatsApp funzionalità di conformità Microsoft 365 quali conservazione per controversia legale, Ricerca contenuto e criteri di conservazione Microsoft 365. Ad esempio, è possibile cercare i messaggi WhatsApp utilizzando Ricerca contenuto o associare la cassetta postale che contiene i messaggi WhatsApp a un responsabile in Advanced eDiscovery caso. L'utilizzo di un connettore WhatsApp per importare e archiviare i dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
+Dopo l'archiviazione dei dati di WhatsApp nelle cassette postali degli utenti, è possibile applicare ai dati di WhatsApp funzionalità di conformità Microsoft 365 quali conservazione per controversia legale, ricerca contenuto e criteri di conservazione Microsoft 365. Ad esempio, è possibile cercare i messaggi WhatsApp utilizzando Ricerca contenuto o associare la cassetta postale che contiene i messaggi WhatsApp a un responsabile in Advanced eDiscovery caso. L'utilizzo di un connettore WhatsApp per importare e archiviare i dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
 ## <a name="overview-of-archiving-whatsapp-data"></a>Panoramica dell'archiviazione dei dati di WhatsApp
 
@@ -51,13 +51,13 @@ Alcuni dei passaggi di implementazione necessari per archiviare i dati di comuni
 
 - Installa [l'app TeleMessage WhatsApp Telefono Archiver](https://www.telemessage.com/mobile-archiver/whatsapp-phone-archiver-2/) sui telefoni cellulari dei dipendenti e attivala. In alternativa, è possibile installare le normali app WhatsApp o WhatsApp Business sui telefoni cellulari dei dipendenti e attivare il servizio WhatsApp Cloud Archiver eseguendo la scansione di un codice QR sul sito Web TeleMessage. Per ulteriori informazioni, vedere [WhatsApp Cloud Archiver.](https://www.telemessage.com/mobile-archiver/whatsapp-archiver/whatsapp-cloud-archiver/)
 
-- All'utente che crea un connettore di rete Verizon deve essere assegnato il ruolo Esportazione importazione cassette postali in Exchange Online. Questa operazione è necessaria per aggiungere connettori nella pagina **Connettori** dati nel Centro Microsoft 365 conformità. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione importazione cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In caso contrario, è possibile creare un gruppo di ruoli, assegnare il ruolo Importazione/Esportazione cassette postali e quindi aggiungere gli utenti appropriati come membri. Per ulteriori informazioni, vedere le sezioni [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) o Modify role [groups](/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "Manage role groups in Exchange Online".
+- All'utente che crea un connettore di rete Verizon deve essere assegnato il ruolo Esportazione importazione cassette postali in Exchange Online. Questa operazione è necessaria per aggiungere connettori nella pagina **Connettori** dati nell'Centro conformità Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione importazione cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In caso contrario, è possibile creare un gruppo di ruoli, assegnare il ruolo Importazione/Esportazione cassette postali e quindi aggiungere gli utenti appropriati come membri. Per ulteriori informazioni, vedere le sezioni [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) o Modify role [groups](/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "Manage role groups in Exchange Online".
 
 - Questo connettore dati è disponibile in GCC nel cloud Microsoft 365 us government. Le applicazioni e i servizi di terze parti possono comportare l'archiviazione, la trasmissione e l'elaborazione dei dati dei clienti dell'organizzazione in sistemi di terze parti esterni all'infrastruttura di Microsoft 365 e pertanto non coperti dagli impegni di conformità e protezione dei dati di Microsoft 365. Microsoft non fa alcuna rappresentazione che utilizzi questo prodotto per connettersi ad applicazioni di terze parti implica che tali applicazioni di terze parti siano conformi a FEDRAMP.
 
 ## <a name="create-a-whatsapp-archiver-connector"></a>Creare un connettore di Archiviazione WhatsApp
 
-Dopo aver completato i prerequisiti descritti nella sezione precedente, è possibile creare il connettore WhatsApp nel Centro Microsoft 365 conformità. Il connettore utilizza le informazioni fornite per connettersi al sito TeleMessage e trasferire i dati di WhatsApp nelle caselle delle cassette postali dell'utente corrispondenti in Microsoft 365.
+Dopo aver completato i prerequisiti descritti nella sezione precedente, è possibile creare il connettore WhatsApp nell'Centro conformità Microsoft 365. Il connettore utilizza le informazioni fornite per connettersi al sito TeleMessage e trasferire i dati di WhatsApp nelle caselle delle cassette postali dell'utente corrispondenti in Microsoft 365.
 
 1. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fai clic su **Connettori dati**  >  **WhatsApp Archiver**.
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Ottieni le ultime novità nell'isolamento basato su hardware. Impedire attacchi attuali ed emergenti, come exploit o collegamenti dannosi, di compromettere la produttività dei dipendenti e la sicurezza aziendale.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0fa6ad884c6b21457c8359cf82e32e4b8c100ba
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 39d6a9c3a3c3a5e2c736025a26c22588f9f08bb0
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488312"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055261"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard per Office per gli amministratori
 
@@ -83,7 +83,7 @@ Per altre informazioni sui Office di aggiornamento, vedi [Panoramica dei canali 
 
 Questo passaggio garantisce che i dati necessari per identificare e risolvere i problemi raggiungano Microsoft. Segui questi passaggi per abilitare la diagnostica nel dispositivo Windows dispositivo:
 
-1. Apri **Impostazioni** dal menu Start.
+1. Aprire **Impostazioni** dal menu Start.
 
    ![Menu Start](../../media/ag05-diagnostic.png)
 
@@ -120,7 +120,6 @@ All'apertura, il file dovrebbe visualizzare alcuni indicatori visivi che il file
 ## <a name="configure-application-guard-for-office"></a>Configurare Application Guard per Office
 
 Office supporta i criteri seguenti per consentire di configurare le funzionalità di Application Guard per Office. Questi criteri possono essere configurati tramite Criteri di gruppo o tramite il [servizio Office criteri cloud.](/DeployOffice/overview-office-cloud-policy-service)
-Vedere la configurazione impostata dall'amministratore esaminando le impostazioni di Criteri di gruppo in Configurazione utente Modelli amministrativi **\\ Microsoft Office \\ 2016 \\ Security Impostazioni Trust Center Application \\ \\ Guard**.
 
 
 > [!NOTE]
@@ -189,7 +188,7 @@ Se riscontri problemi durante l'avvio di Application Guard per Office, sei invit
 
 Application Guard per Office è integrato con Microsoft Defender for Endpoint per fornire il monitoraggio e l'avviso in caso di attività dannose che si verificano nell'ambiente isolato.
 
-[Documenti sicuri in Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) è una funzionalità che usa Microsoft Defender for Endpoint per analizzare i documenti aperti in Application Guard per Office. Per un ulteriore livello di protezione, gli utenti non possono lasciare Application Guard per Office finché non vengono determinati i risultati dell'analisi.
+[Cassaforte documenti in Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) è una funzionalità che usa Microsoft Defender for Endpoint per analizzare i documenti aperti in Application Guard per Office. Per un ulteriore livello di protezione, gli utenti non possono lasciare Application Guard per Office finché non vengono determinati i risultati dell'analisi.
 
 Microsoft Defender for Endpoint è una piattaforma di sicurezza progettata per aiutare le reti aziendali a prevenire, rilevare, analizzare e rispondere alle minacce avanzate. Per altri dettagli su questa piattaforma, vedi [Microsoft Defender for Endpoint.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) Per altre informazioni sull'onboarding dei dispositivi per questa piattaforma, vedi [Eseguire l'onboarding](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)dei dispositivi nel servizio Microsoft Defender for Endpoint.
 
@@ -234,6 +233,9 @@ Quando viene soddisfatta questa euristica, Office crea un contenitore di Applica
 ## <a name="known-issues"></a>Problemi noti
 
 * La selezione di collegamenti Web ( `http` o ) non consente di aprire il `https` browser.
-* Al momento non è possibile incollare il contenuto o le immagini IN FORMATO RTF Office documenti aperti con Application Guard.
-* L'impostazione predefinita per i criteri di protezione dei tipi di file non supportati è bloccare l'apertura di tipi di file non attendibili di Information Rights Management (IRM), CSV o HTML.
+* L'impostazione predefinita per i criteri di protezione copia e incolla è l'abilitazione dell'accesso degli Appunti solo al testo.
+* L'impostazione predefinita per i criteri di protezione dei tipi di file non supportati è bloccare l'apertura di tipi di file non supportati non attendibili crittografati o con Information Rights Management (IRM) impostato. Sono inclusi i file con Microsoft Information Protection di riservatezza utilizzando la crittografia (riservato o estremamente riservato).
+* Al momento i file CSV e HTML non sono supportati.
+* Application Guard per Office attualmente non funziona con i volumi compressi NTFS. Se viene visualizzato un errore "ERROR_VIRTUAL_DISK_LIMITATION" provare a decomprimere il volume.
 * Gli aggiornamenti a .NET potrebbero causare un errore di apertura dei file in Application Guard. Come soluzione alternativa, gli utenti possono riavviare il dispositivo quando si verificano questo errore. Per ulteriori informazioni sul problema, vedere [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Per ulteriori [informazioni, vedere Domande frequenti - Microsoft Defender Application Guard.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

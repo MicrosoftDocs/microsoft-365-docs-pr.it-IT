@@ -20,12 +20,12 @@ ms.collection:
 description: Gli amministratori possono imparare a elevare le impostazioni di sicurezza e a usare report, avvisi e indagini per gli account di priorità nelle Microsoft 365 aziendali.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632222"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055254"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Suggerimenti sulla sicurezza per gli account con priorità in Microsoft 365
 
@@ -36,6 +36,8 @@ Per gli utenti malintenzionati, gli attacchi di phishing ordinari che gettano un
 Microsoft 365 e Microsoft Defender per Office 365 contengono diverse funzionalità chiave che forniscono livelli di sicurezza aggiuntivi per gli account con priorità. Questo articolo descrive queste funzionalità e come usarle.
 
 ![Riepilogo dei suggerimenti per la sicurezza nel modulo icona](../../media/security-recommendations-for-priority-users.png)
+
+<br>
 
 ****
 
@@ -61,7 +63,7 @@ Per istruzioni, vedere [Passaggio 1. Aumentare la sicurezza di accesso per i lav
 
 - È possibile [utilizzare](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) i criteri di autenticazione e le regole di Accesso client [in](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) Exchange Online per bloccare o consentire l'autenticazione di base e i protocolli di autenticazione legacy come POP3, IMAP4 e SMTP autenticato per utenti specifici.
 
-- È possibile disabilitare l'accesso POP3 e IMAP4 sulle singole cassette postali. È possibile disabilitare SMTP autenticato a livello di organizzazione e abilitarlo in cassette postali specifiche che lo richiedono ancora. Per istruzioni, vedere gli argomenti seguenti:
+- È possibile disabilitare l'accesso POP3 e IMAP4 sulle singole cassette postali. È possibile disabilitare SMTP autenticato a livello di organizzazione e abilitarlo in cassette postali specifiche che lo richiedono ancora. Per istruzioni, vedere gli articoli seguenti:
   - [Abilitare o disabilitare l'accesso POP3 o IMAP4 per un utente](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [Abilitare o disabilitare l'invio SMTP del client autenticato (AUTENTICAZIONE SMTP)](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
@@ -85,7 +87,7 @@ I tag utente in Microsoft Defender per Office 365 Piano 2 (nell'ambito di un abb
 
 **Gli account** di priorità sono un tipo di tag utente predefinito (noto come _tag_ di sistema) che è possibile utilizzare per identificare eventi imprevisti e avvisi che coinvolgono account con priorità. Per ulteriori informazioni sugli **account con priorità,** vedere [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
-Puoi anche creare tag personalizzati per identificare e classificare ulteriormente gli account di priorità. Per ulteriori informazioni, vedere [Tag utente](user-tags.md). Tieni presente che puoi gestire **gli account di priorità** (tag di sistema) nella stessa interfaccia dei tag utente personalizzati.
+Puoi anche creare tag personalizzati per identificare e classificare ulteriormente gli account di priorità. Per ulteriori informazioni, vedere [Tag utente](user-tags.md). Puoi gestire gli **account di priorità** (tag di sistema) nella stessa interfaccia dei tag utente personalizzati.
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Monitorare gli account di priorità in avvisi, report e rilevamenti
 
@@ -97,8 +99,8 @@ Dopo aver protetto e etichettato gli utenti con priorità, è possibile utilizza
 
 |Funzionalità|Descrizione|
 |---|---|
-|Avvisi|I tag utente degli utenti interessati sono  visibili e disponibili come filtri nella pagina Visualizza avvisi nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Visualizzazione degli avvisi.](../../compliance/alert-policies.md#viewing-alerts)|
-|Esplora minacce <p> Rilevamenti in tempo reale|In **Esplora** minacce (Microsoft Defender per Office 365 Piano 2) o rilevamenti in tempo reale **(Microsoft** Defender per Office 365 Piano 1), i tag utente sono visibili nella visualizzazione Griglia della posta elettronica e nel riquadro a comparsa Dettagli posta elettronica. I tag utente sono disponibili anche come proprietà filtrabile. Per altre informazioni, vedi [Tag in Threat Explorer.](threat-explorer.md#tags-in-threat-explorer)|
+|Avvisi|I tag utente degli utenti interessati sono visibili e disponibili come filtri nella **pagina Avvisi** del Microsoft 365 Defender portale. Per ulteriori informazioni, vedere [Visualizzazione degli avvisi.](../../compliance/alert-policies.md#viewing-alerts)|
+|Explorer <p> Rilevamenti in tempo reale|In **Esplora** risorse (Defender per Office 365 Piano 2) o rilevamenti in tempo reale (Defender per Office 365 Piano 1), i tag utente sono visibili nella visualizzazione Griglia **e-mail** e nel riquadro a comparsa Dettagli posta elettronica. I tag utente sono disponibili anche come proprietà filtrabile. Per altre informazioni, vedi [Tag in Esplora risorse.](threat-explorer.md#tags-in-threat-explorer)|
 |Visualizzazioni campagna|I tag utente sono una delle molte proprietà filtrabili in Visualizzazioni campagna in Microsoft Defender per Office 365 Piano 2. Per ulteriori informazioni, vedere [Visualizzazioni campagna.](campaigns.md)|
 |Report dello stato di protezione dalle minacce|In praticamente tutte le visualizzazioni e le tabelle dei dettagli nel rapporto sullo stato di **Threat Protection** è possibile filtrare i risultati in base agli account **di priorità.** Per ulteriori informazioni, vedere [Rapporto sullo stato di Protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report).|
 |Report Problemi di posta elettronica per gli account con priorità|Il **report Problemi di posta** elettronica per gli account di priorità nell'interfaccia di amministrazione di Exchange (EAC) contiene informazioni sui messaggi non recapitati e ritardati per gli account con **priorità.** Per ulteriori informazioni, vedere [Email issues for priority accounts report.](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
@@ -119,7 +121,7 @@ Microsoft 365 fornisce le risorse seguenti per informare gli utenti dell'organiz
 |Concetti|Risorse|Descrizione|
 |---|---|---|
 |Microsoft 365|[Percorsi di apprendimento personalizzabili](/office365/customlearning/)|Queste risorse consentono di mettere insieme la formazione per gli utenti dell'organizzazione.|
-|Sicurezza di Microsoft 365|[Modulo di apprendimento: proteggere l'organizzazione con sicurezza intelligente e integrata da Microsoft 365](/learn/modules/security-with-microsoft-365)|Questo modulo consente di descrivere in che modo Microsoft 365 di sicurezza funzionano insieme e di articolare i vantaggi di queste funzionalità di sicurezza.|
+|Sicurezza di Microsoft 365|[Learning modulo: proteggere l'organizzazione con sicurezza intelligente e integrata da Microsoft 365](/learn/modules/security-with-microsoft-365)|Questo modulo consente di descrivere in che modo Microsoft 365 di sicurezza funzionano insieme e di articolare i vantaggi di queste funzionalità di sicurezza.|
 |Autenticazione a più fattori|[Verifica in due passaggi: qual è la pagina di verifica aggiuntiva?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Questo articolo consente agli utenti finali di comprendere cos'è l'autenticazione a più fattori e perché viene utilizzata nell'organizzazione.|
 |Formazione per la simulazione di attacchi|[Introduzione alla formazione sull’uso di Simulatore di attacchi](attack-simulation-training-get-started.md)|La formazione sulla simulazione di attacchi in Microsoft Defender per Office 365 Piano 2 consente all'amministratore di configurare, avviare e tenere traccia degli attacchi di phishing simulati contro gruppi specifici di utenti.|
 

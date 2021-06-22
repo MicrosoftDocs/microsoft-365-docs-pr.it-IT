@@ -1,5 +1,5 @@
 ---
-title: Criteri per gli invii di utenti
+title: Impostazioni dei messaggi segnalati dall'utente
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -17,14 +17,14 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052988"
+ms.locfileid: "53055125"
 ---
-# <a name="user-submissions-policy"></a>Criteri per gli invii di utenti
+# <a name="user-reported-message-settings"></a>Impostazioni dei messaggi segnalati dall'utente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,16 +33,16 @@ ms.locfileid: "53052988"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nelle Microsoft 365 con cassette postali Exchange Online, è possibile specificare una cassetta postale per ricevere i messaggi che gli utenti segnalano come dannosi o non dannosi. Quando gli utenti inviano messaggi utilizzando le varie opzioni di segnalazione, è possibile utilizzare questa cassetta postale per intercettare i messaggi (solo inviare alla cassetta postale personalizzata) o ricevere copie dei messaggi (inviare alla cassetta postale personalizzata e a Microsoft). Questa funzionalità funziona con le opzioni di segnalazione dei messaggi seguenti:
+Nelle Microsoft 365 con cassette postali Exchange Online, è possibile specificare una cassetta postale per ricevere i messaggi che gli utenti segnalano come dannosi o non dannosi. Quando gli utenti segnalano i messaggi utilizzando le varie opzioni di segnalazione, è possibile utilizzare questa cassetta postale per intercettare i messaggi (solo inviare alla cassetta postale personalizzata) o ricevere copie dei messaggi (inviare alla cassetta postale personalizzata e Microsoft). Questa funzionalità funziona con le opzioni di segnalazione dei messaggi seguenti:
 
 - [Componente aggiuntivo Segnala messaggio](enable-the-report-message-add-in.md)
 - [Componente aggiuntivo Segnala phishing](enable-the-report-phish-add-in.md)
 - [Strumenti di creazione di report di terze parti](#third-party-reporting-tools)
 
-Il recapito dei messaggi segnalati dall'utente a una cassetta postale personalizzata anziché direttamente a Microsoft consente agli amministratori di segnalare in modo selettivo e manuale i messaggi a Microsoft utilizzando [l'invio da amministratore.](admin-submission.md)
+Il recapito dei messaggi segnalati dall'utente a una cassetta postale personalizzata anziché direttamente a Microsoft consente agli amministratori di segnalare in modo selettivo e manuale i messaggi a Microsoft utilizzando [l'invio da amministratore.](admin-submission.md) Queste impostazioni in precedenza erano note come criteri invii utente.
 
   > [!NOTE]
-  > Se la segnalazione è stata disabilitata [in Outlook sul web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), l'abilitazione degli invii degli utenti qui avrà la precedenza su tale impostazione e consentirà agli utenti di segnalare di nuovo i messaggi Outlook sul web messaggi.
+  > Se la segnalazione è stata disabilitata [in Outlook sul web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), l'abilitazione dei messaggi segnalati dall'utente qui avrà la precedenza su tale impostazione e consentirà agli utenti di segnalare di nuovo i messaggi Outlook sul web messaggi.
 
 ## <a name="custom-mailbox-prerequisites"></a>Prerequisiti per le cassette postali personalizzate
 

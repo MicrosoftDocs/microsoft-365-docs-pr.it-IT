@@ -1,5 +1,5 @@
 ---
-title: Configurare i criteri allegati sicuri in Microsoft Defender per Office 365
+title: Configurare i Cassaforte allegati in Microsoft Defender per Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come definire i criteri allegati sicuri per proteggere l'organizzazione da file dannosi nella posta elettronica.
+description: Informazioni su come definire i criteri Cassaforte allegati per proteggere l'organizzazione da file dannosi nella posta elettronica.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e96babff19ea981b953d35929813b1e08c000e32
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206503"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054329"
 ---
-# <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri allegati sicuri in Microsoft Defender per Office 365
+# <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurare i Cassaforte allegati in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,182 +36,178 @@ ms.locfileid: "51206503"
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](whats-new-in-defender-for-office-365.md). Se si è un utente principale che desidera informazioni sull'analisi degli allegati in Outlook, vedere [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Allegati sicuri è una funzionalità di [Microsoft Defender per Office 365 che](whats-new-in-defender-for-office-365.md) utilizza un ambiente virtuale per archiviare gli allegati nei messaggi di posta elettronica in ingresso dopo essere stati analizzati dalla protezione [antimalware in Exchange Online Protection (EOP),](anti-malware-protection.md)ma prima del recapito ai destinatari. Per ulteriori informazioni, vedere [Allegati sicuri in Microsoft Defender per Office 365](safe-attachments.md).
+Cassaforte Allegati è una funzionalità di [Microsoft Defender per Office 365 che](whats-new-in-defender-for-office-365.md) usa un ambiente virtuale per archiviare gli allegati nei messaggi di posta elettronica in ingresso dopo essere stati analizzati dalla protezione [antimalware in Exchange Online Protection (EOP),](anti-malware-protection.md)ma prima del recapito ai destinatari. Per ulteriori informazioni, vedere [Cassaforte allegati in Microsoft Defender per Office 365](safe-attachments.md).
 
-Non esiste un criterio predefinito per gli allegati sicuri o predefinito. Per ottenere l'analisi degli allegati sicuri degli allegati dei messaggi di posta elettronica, è necessario creare uno o più criteri allegati sicuri come descritto in questo articolo.
+Non esiste un criterio predefinito o predefinito Cassaforte allegati. Per ottenere Cassaforte allegati degli allegati dei messaggi di posta elettronica, è necessario creare uno o più criteri Cassaforte allegati come descritto in questo articolo.
 
-È possibile configurare i criteri allegati sicuri nel Centro sicurezza & conformità o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi defender per Office 365).
+È possibile configurare i criteri allegati Cassaforte nel portale di Microsoft 365 Defender o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi defender per Office 365).
 
-Gli elementi di base di un criterio Allegati sicuri sono:
+Gli elementi di base di un criterio Cassaforte allegati sono:
 
-- **Il** criterio allegati sicuri : Specifica le azioni per i rilevamenti di malware sconosciuti, se inviare messaggi con allegati di malware a un indirizzo di posta elettronica specificato e se recapitare i messaggi se l'analisi degli allegati sicuri non può essere completata.
+- Criterio allegati sicuri **:** Specifica le azioni per i rilevamenti di malware sconosciuti, se inviare messaggi con allegati di malware a un indirizzo di posta elettronica specificato e se recapitare i messaggi se l'analisi degli allegati Cassaforte non può essere completata.
 - **La regola degli allegati sicuri**: Specifica la priorità e i filtri destinatari (a cui si applica il criterio).
 
-La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri allegati sicuri nel Centro sicurezza & conformità:
+La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri Cassaforte allegati nel portale Microsoft 365 Defender:
 
-- Quando si crea un criterio Allegati sicuri, si crea contemporaneamente una regola degli allegati sicuri e il criterio di allegato sicuro associato utilizzando lo stesso nome per entrambi.
-- Quando si modifica un criterio Allegati sicuri, le impostazioni relative al nome, alla priorità, abilitate o disabilitate e ai filtri destinatari modificano la regola degli allegati sicuri. Tutte le altre impostazioni modificano i criteri allegati sicuri associati.
-- Quando si rimuove un criterio Allegati sicuri, vengono rimossi la regola degli allegati sicuri e il criterio di allegato sicuro associato.
+- Quando si crea un criterio Cassaforte allegati, si sta creando contemporaneamente una regola degli allegati sicuri e il criterio di allegato sicuro associato utilizzando lo stesso nome per entrambi.
+- Quando si modifica un criterio Cassaforte allegati, le impostazioni relative al nome, alla priorità, abilitate o disabilitate e ai filtri destinatari modificano la regola degli allegati sicuri. Tutte le altre impostazioni modificano i criteri allegati sicuri associati.
+- Quando si rimuove un criterio Cassaforte allegati sicuri, vengono rimossi la regola degli allegati sicuri e i criteri allegati sicuri associati.
 
-In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione Utilizzare [PowerShell Exchange Online PowerShell EOP](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) autonomo per configurare i criteri allegati sicuri più avanti in questo articolo.
+In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione Use [Exchange Online PowerShell or standalone EOP PowerShell to configure Cassaforte Attachments più](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) avanti in questo articolo.
 
 > [!NOTE]
-> Nell'area impostazioni globali delle impostazioni allegati sicuri è possibile configurare funzionalità che non dipendono dai criteri allegati sicuri. Per istruzioni, vedere Attivare allegati sicuri per [SharePoint, OneDrive e](turn-on-mdo-for-spo-odb-and-teams.md) Microsoft Teams e Documenti sicuri [in Microsoft 365 E5](safe-docs.md).
+> Nell'area impostazioni globali delle impostazioni Cassaforte allegati è possibile configurare funzionalità che non dipendono dai criteri Cassaforte allegati. Per istruzioni, vedere Attivare Cassaforte allegati per [SharePoint, OneDrive e](turn-on-mdo-for-spo-odb-and-teams.md) Microsoft Teams e [Cassaforte documenti in Microsoft 365 E5](safe-docs.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla **pagina Allegati sicuri,** utilizzare <https://protection.office.com/safeattachmentv2> .
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alla pagina **Cassaforte allegati,** utilizzare <https://security.microsoft.com/safeattachmentv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
-  - Per creare, modificare ed eliminare i criteri allegati sicuri,  è  necessario essere membri dei gruppi di ruoli  Gestione organizzazione  o Amministratore sicurezza nel Centro sicurezza e conformità di & e membri del gruppo di ruoli Gestione organizzazione in Exchange Online.
-  - Per l'accesso in sola lettura ai criteri allegati  sicuri,  è necessario essere membri dei gruppi di ruoli Lettore globale o Lettore di sicurezza nel Centro sicurezza & conformità.
+  - Per creare, modificare ed eliminare i criteri allegati Cassaforte, è  necessario  essere membri dei gruppi di  ruoli Gestione organizzazione  o Amministratore sicurezza nel portale di Microsoft 365 Defender e membri del gruppo di ruoli Gestione organizzazione in Exchange Online.
+  - Per l'accesso in sola lettura ai criteri Cassaforte allegati,  è necessario  essere membri dei gruppi di ruoli Lettore globale o Lettore di sicurezza nel portale Microsoft 365 Defender sicurezza.
 
-  Per ulteriori informazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md) e Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender e](permissions-microsoft-365-security-center.md) Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  - L'aggiunta di utenti al ruolo Azure Active Directory corrispondente nel interfaccia di amministrazione di Microsoft 365 offre agli utenti le  autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
-- Per le impostazioni consigliate per i criteri allegati sicuri, vedere [Impostazioni degli allegati sicuri.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
+- Per le impostazioni consigliate per i criteri Cassaforte allegati, vedere impostazioni [Cassaforte allegati](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
 - Consentire fino a 30 minuti per l'applicazione di un criterio nuovo o aggiornato.
 
-## <a name="use-the-security--compliance-center-to-create-safe-attachments-policies"></a>Usare il Centro sicurezza & conformità per creare criteri allegati sicuri
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies"></a>Usare il portale Microsoft 365 Defender per creare criteri Cassaforte allegati
 
-La creazione di un criterio allegati sicuri personalizzato nel Centro sicurezza & conformità crea contemporaneamente la regola degli allegati sicuri e i criteri allegati sicuri associati utilizzando lo stesso nome per entrambi.
+La creazione di un criterio Cassaforte allegati personalizzati nel portale di Microsoft 365 Defender crea la regola degli allegati sicuri e i criteri allegati sicuri associati contemporaneamente utilizzando lo stesso nome per entrambi.
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **Allegati sicuri ATP**.
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
 
-2. Nella pagina **Allegati sicuri** fare clic su **Crea.**
+2. Nella pagina **Cassaforte allegati** fare clic su Crea ![ icona ](../../media/m365-cc-sc-create-icon.png) **Crea**.
 
-3. Verrà **visualizzata la procedura guidata Nuovo criterio Allegati** sicuri. Nella pagina **Assegnare un nome al** criterio configurare le impostazioni seguenti:
-
+3. Viene aperta la creazione guidata criteri. Nella pagina **Assegnare un nome al** criterio configurare le impostazioni seguenti:
    - **Nome**: immettere un nome univoco descrittivo per il criterio.
-
    - **Descrizione**: immettere una descrizione opzionale per il criterio.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-4. Nella pagina **Impostazioni** visualizzata configurare le impostazioni seguenti:
+4. Nella pagina **Utenti e domini** visualizzata identificare i destinatari interni a cui si applica il criterio (condizioni del destinatario):
+   - **Utenti**: la cassette postali specificate, utenti di posta o contatti di posta specificati nell'organizzazione.
+   - **Gruppi**: i gruppi di distribuzione specificati, gruppi di sicurezza abilitati alla posta elettronica o gruppi di Microsoft 365 nell'organizzazione.
+   - **Domini**: tutti i destinatari nei domini specificati [accettati](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) nell'organizzazione.
 
-   - **Allegati sicuri Risposta malware sconosciuta**: selezionare uno dei seguenti valori:
+   Fare clic nella casella appropriata, iniziare a digitare un valore e selezionare il valore desiderato nei risultati. Ripetere questa procedura tutte le volte necessarie. Per rimuovere un valore esistente, fare clic su Rimuovi ![Icona Rimuovi](../../media/m365-cc-sc-remove-selection-icon.png) accanto al valore.
 
+   Per utenti o gruppi è possibile usare la maggior parte degli identificatori, ad esempio nome, nome visualizzato, alias, indirizzo di posta elettronica, nome dell'account e così via, ma il nome visualizzato corrispondente viene visualizzato nei risultati. Per gli utenti, immettere un asterisco (\*) da solo per visualizzare tutti i valori disponibili.
+
+   Più valori della stessa condizione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
+
+   - **Escludere questi utenti, gruppi e domini**: per aggiungere eccezioni per i destinatari interni a cui si applicano i criteri (eccezione destinatari), selezionare questa opzione e configurare le eccezioni. Impostazioni e comportamento sono equivalenti alle condizioni.
+
+   Al termine dell'operazione, fare clic su **Avanti**.
+
+5. Nella pagina **Impostazioni** configurazione delle impostazioni seguenti:
+
+   - **Cassaforte Allegati risposta malware sconosciuta**: selezionare uno dei seguenti valori:
      - **Disattivato:** in genere, non è consigliabile questo valore.
      - **Monitor**
      - **Block**: questo è il valore predefinito e il valore consigliato in Standard e Strict [preset security policies](preset-security-policies.md).
      - **Sostituisce**
      - **Recapito dinamico (funzionalità di anteprima)**
 
-     Questi valori sono illustrati nelle [impostazioni dei criteri Allegati sicuri.](safe-attachments.md#safe-attachments-policy-settings)
+     Questi valori sono illustrati nelle impostazioni [Cassaforte dei criteri Allegati.](safe-attachments.md#safe-attachments-policy-settings)
 
-   - Inviare l'allegato al seguente indirizzo di posta elettronica **:** Per  i valori di azione **Blocca,** Monitor o **Sostituisci,** è possibile selezionare Abilita reindirizzamento per inviare messaggi contenenti allegati di malware all'indirizzo di posta elettronica interno o esterno specificato per l'analisi e l'analisi.
+   - Reindirizzare i messaggi con allegati rilevati **:** se si seleziona Abilita reindirizzamento **,** è possibile specificare un indirizzo di posta elettronica nella casella Invia messaggi che contengono allegati **bloccati,** monitorati o sostituiti all'indirizzo di posta elettronica specificato per inviare messaggi contenenti allegati di malware per l'analisi e l'analisi.
 
-     Per le impostazioni dei criteri Standard e Strict è consigliabile abilitare il reindirizzamento. Per ulteriori informazioni, vedere [Impostazioni degli allegati sicuri.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
+     Per le impostazioni dei criteri Standard e Strict è consigliabile abilitare il reindirizzamento. Per ulteriori informazioni, vedere [impostazioni Cassaforte allegati](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
-   - **Applicare la selezione** precedente se si verifica il timeout o l'errore dell'analisi antimalware per gli allegati: l'azione specificata da Allegati sicuri risposta **malware** sconosciuta viene eseguita sui messaggi anche quando l'analisi degli allegati sicuri non può essere completata. Se è stata selezionata questa opzione, selezionare sempre **Reindirizzamento abilitato.** In caso contrario, i messaggi potrebbero essere persi.
-
-   Al termine dell'operazione, fare clic su **Avanti**.
-
-5. Nella pagina **Applicato a** visualizzata identificare i destinatari interni a cui si applica il criterio.
-
-   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
-
-   Fare **clic su Aggiungi condizione.** Nell'elenco a discesa visualizzato selezionare una condizione in **Applicato se**:
-
-   - **Il destinatario è**: Specifica una o più cassette postali, utenti di posta o contatti di posta nell'organizzazione.
-   - **Il destinatario è un membro di**: Specifica uno o più gruppi nell'organizzazione.
-   - **Il dominio del destinatario è**: specifica i destinatari in uno o più dei domini configurati accettati nell'organizzazione.
-
-   Dopo aver selezionato la condizione, viene visualizzato un elenco a discesa corrispondente con **una casella** Qualsiasi di queste.
-
-   - Fare clic nella casella e scorrere l'elenco di valori da selezionare.
-   - Fare clic nella casella e iniziare a digitare per filtrare l'elenco e selezionare un valore.
-   - Per aggiungere altri valori, fare clic in un'area vuota della casella.
-   - Per rimuovere singole voci, fare clic **su Rimuovi** ![ Icona Rimuovi sul ](../../media/scc-remove-icon.png) valore.
-   - Per rimuovere l'intera condizione, fare **clic su Rimuovi** Icona Rimuovi nella ![ ](../../media/scc-remove-icon.png) condizione.
-
-   Per aggiungere una condizione aggiuntiva, fare clic **su Aggiungi una condizione** e selezionare un valore rimanente in Applicato **se**.
-
-   Per aggiungere eccezioni, fare clic **su Aggiungi una condizione** e selezionare un'eccezione in Tranne **se**. Impostazioni e comportamento sono equivalenti alle condizioni.
+   - Applicare la risposta di rilevamento allegati Cassaforte se l'analisi non può essere completata (timeout o **errori): l'azione** specificata da **Cassaforte Allegati** risposta malware sconosciuta viene eseguita sui messaggi anche quando non è possibile completare l'analisi degli allegati di Cassaforte. Se è stata selezionata questa opzione, selezionare sempre **Abilita reindirizzamento** e specificare un indirizzo di posta elettronica per inviare messaggi contenenti allegati di malware. In caso contrario, i messaggi potrebbero essere persi.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-6. Nella pagina **Rivedere le impostazioni** visualizzata esaminare le impostazioni. È possibile fare **clic su** Modifica per ogni impostazione per modificarla.
+6. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare clic su **Indietro** o selezionare la pagina specifica della procedura guidata.
 
-   Al termine dell'operazione, scegliere **Fine**.
+   Al termine, fare clic su **Invia.**
 
-## <a name="use-the-security--compliance-center-to-view-safe-attachments-policies"></a>Usare il Centro sicurezza & conformità per visualizzare i criteri allegati sicuri
+7. Nel messaggio di conferma visualizzato fare clic su **Fatto**.
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **Allegati sicuri ATP**.
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Utilizzare il portale Microsoft 365 Defender per visualizzare i criteri Cassaforte allegati
 
-2. Nella pagina **Allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
 
-   I dettagli dei criteri vengono visualizzati in un riquadro a comparsa
+2. Nella pagina **Cassaforte allegati** vengono visualizzate le proprietà seguenti nell'elenco dei criteri:
+   - **Nome**
+   - **Stato**
+   - **Priorità**
 
-## <a name="use-the-security--compliance-center-to-modify-safe-attachments-policies"></a>Utilizzare il Centro sicurezza & conformità per modificare i criteri allegati sicuri
+3. Quando si seleziona un criterio facendo clic sul nome, le impostazioni dei criteri vengono visualizzate in un riquadro a comparsa.
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **Allegati sicuri ATP**.
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Utilizzare il portale Microsoft 365 Defender per modificare i criteri Cassaforte allegati
 
-2. Nella pagina **Allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
 
-3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic **su Modifica criterio.**
+2. Nella pagina **Cassaforte allegati** selezionare un criterio dall'elenco facendo clic sul nome.
 
-Le impostazioni disponibili nel riquadro a comparsa visualizzato sono identiche a quelle descritte nella sezione Usare il Centro [sicurezza &](#use-the-security--compliance-center-to-create-safe-attachments-policies) conformità per creare criteri allegati sicuri.
+3. Nel riquadro a comparsa dei dettagli sui criteri visualizzato selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Per ulteriori informazioni sulle impostazioni, vedere la sezione Usare il portale di Microsoft 365 Defender per creare criteri Cassaforte [allegati](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) più indietro in questo articolo.  
 
 Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei criteri, vedere le sezioni seguenti.
 
-### <a name="enable-or-disable-safe-attachments-policies"></a>Abilitare o disabilitare i criteri allegati sicuri
+### <a name="enable-or-disable-safe-attachments-policies"></a>Abilitare o disabilitare i criteri Cassaforte allegati
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **Allegati sicuri ATP**.
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
 
-2. Notare il valore nella **colonna** Stato:
+2. Nella pagina **Cassaforte allegati** selezionare un criterio dall'elenco facendo clic sul nome.
 
-   - Spostare l'interruttore a sinistra ![Disattivare i criteri](../../media/scc-toggle-off.png) per disabilitare il criterio.
+3. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato è presente uno dei valori seguenti:
+   - **Criterio disattivato**: per attivare il criterio, fare clic su ![Attiva icona](../../media/m365-cc-sc-turn-on-off-icon.png) **Attiva** .
+   - **Criterio attivato**: per disattivare il criterio, fare clic su ![Disattiva icona](../../media/m365-cc-sc-turn-on-off-icon.png) **Disattiva**.
 
-   - Spostare l'interruttore verso destra ![Attivare i criteri](../../media/scc-toggle-on.png) per abilitare il criterio.
+4. Nella finestra di dialogo di conferma visualizzata fare clic su **Attiva** o **Disattiva**.
 
-### <a name="set-the-priority-of-safe-attachments-policies"></a>Impostare la priorità dei criteri allegati sicuri
+5. Fare clic su **Chiudi** nel riquadro a comparsa dei dettagli del criterio.
 
-Per impostazione predefinita, ai criteri allegati sicuri viene data una priorità basata sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
+Tornare alla pagina dei criteri principale, il valore **Stato** del criterio sarà **Attivato** o **Disattivato**.
+
+### <a name="set-the-priority-of-safe-attachments-policies"></a>Impostare la priorità dei criteri Cassaforte allegati
+
+Per impostazione predefinita, Cassaforte criteri allegati hanno una priorità basata sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
 Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
 
-I criteri allegati sicuri vengono visualizzati nell'ordine in cui vengono elaborati (il primo criterio ha il **valore Priority** 0).
+Cassaforte I criteri allegati vengono visualizzati nell'ordine in cui vengono elaborati (il primo criterio ha il **valore Priority** 0).
 
-**Nota:** nel Centro sicurezza & conformità, è possibile modificare la priorità del criterio Allegati sicuri solo dopo aver creato il criterio. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola degli allegati sicuri (che può influire sulla priorità delle regole esistenti).
+**Nota:** nel portale Microsoft 365 Defender, è possibile modificare la priorità del criterio allegati Cassaforte solo dopo aver creato il criterio. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola degli allegati sicuri (che può influire sulla priorità delle regole esistenti).
 
-Per modificare la priorità di un criterio, spostare il criterio più in alto o più in basso nell'elenco (non è possibile modificare direttamente il numero **Priority** nel Centro sicurezza e conformità).
+Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o **Riduci priorità** nelle proprietà del criterio. Non è possibile modificare direttamente il valore **Priorità** nel portale di Microsoft 365 Defender. La modifica di priorità di un criterio è utile solo se si hanno più criteri.
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **Allegati sicuri ATP**.
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
 
-2. Nella pagina **Allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
+2. Nella pagina **Cassaforte allegati** selezionare un criterio dall'elenco facendo clic sul nome.
 
-3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic sul pulsante priorità disponibile.
+3. Nella parte superiore del riquadro a comparsa dei  dettagli del  criterio visualizzato, vedrai Aumentare la priorità o Diminuire la priorità in base al valore di priorità corrente e al numero di criteri:
+   - Per il criterio con **valore Priority** **0 è** disponibile solo **l'opzione Riduci** priorità.
+   - Il criterio con il valore **Di priorità** più basso (ad esempio, **3)** ha solo l'opzione **Aumenta** priorità disponibile.
+   - Se si dispone di tre o più criteri, per i  criteri tra i valori di priorità più alta e più bassa sono disponibili le opzioni Aumenta priorità e **Riduci** priorità.
 
-   - Per il criterio Allegati sicuri con **valore Priorità** **0** è disponibile solo il **pulsante** Riduci priorità.
+   Fare clic![ sull’icona Aumenta priorità](../../media/m365-cc-sc-increase-icon.png) **Aumenta priorità** o ![sull’icona Riduci priorità](../../media/m365-cc-sc-decrease-icon.png) **Riduci priorità** per modificare il valore **Priorità**.
 
-   - Il criterio Allegati sicuri con il valore **di priorità** più basso ( ad **esempio, 3**) ha solo il **pulsante Aumenta** priorità disponibile.
+4. Al termine, fare clic su **Chiudi** nel riquadro a comparsa dei dettagli del criterio.
 
-   - Se si dispone di tre o più criteri allegati sicuri,  i criteri  tra i valori di priorità più alta e più bassa hanno entrambi i pulsanti Aumenta priorità e Riduci priorità disponibili.
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Utilizzare il portale Microsoft 365 Defender per rimuovere i criteri Cassaforte allegati
 
-4. Fare **clic su Aumenta priorità** o **Diminuisci priorità** per modificare il valore **Priorità.**
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
 
-5. Al termine, fare clic su **Chiudi**.
+2. Nella pagina **Cassaforte allegati** selezionare un criterio personalizzato nell'elenco facendo clic sul nome del criterio.
 
-## <a name="use-the-security--compliance-center-to-remove-safe-attachments-policies"></a>Usare il Centro sicurezza & conformità per rimuovere i criteri allegati sicuri
+3. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato fare clic![ sull'icona Altre azioni](../../media/m365-cc-sc-more-actions-icon.png) **Altre azioni** \> ![Icona Elimina criterio](../../media/m365-cc-sc-delete-icon.png) **Elimina criterio**.
 
-1. Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **Allegati sicuri ATP**.
+4. Nella finestra di dialogo di conferma che viene visualizzata fare clic su **Sì**.
 
-2. Nella pagina **Allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Utilizzare Exchange Online PowerShell o PowerShell EOP autonomo per configurare i criteri Cassaforte allegati
 
-3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic su **Elimina** criterio e quindi su **Sì** nella finestra di dialogo di avviso visualizzata.
-
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Utilizzare Exchange Online PowerShell o PowerShell EOP autonomo per configurare i criteri allegati sicuri
-
-Come descritto in precedenza, un criterio Allegati sicuri è costituito da un criterio degli allegati sicuri e da una regola degli allegati sicuri.
+Come descritto in precedenza, un criterio Cassaforte allegati è costituito da un criterio di allegato sicuro e da una regola degli allegati sicuri.
 
 In PowerShell, la differenza tra i criteri degli allegati sicuri e le regole degli allegati sicuri è evidente. È possibile gestire i criteri degli allegati sicuri utilizzando i cmdlet **\* -SafeAttachmentPolicy** e le regole degli allegati sicuri utilizzando i cmdlet **\* -SafeAttachmentRule.**
 
@@ -219,9 +215,9 @@ In PowerShell, la differenza tra i criteri degli allegati sicuri e le regole deg
 - In PowerShell, le impostazioni nel criterio degli allegati sicuri e nella regola degli allegati sicuri vengono modificate separatamente.
 - Quando si rimuove un criterio di allegato sicuro da PowerShell, la regola degli allegati sicuri corrispondente non viene rimossa automaticamente e viceversa.
 
-### <a name="use-powershell-to-create-safe-attachments-policies"></a>Usare PowerShell per creare criteri allegati sicuri
+### <a name="use-powershell-to-create-safe-attachments-policies"></a>Utilizzare PowerShell per creare criteri Cassaforte allegati
 
-La creazione di un criterio allegati sicuri in PowerShell è un processo in due passaggi:
+La creazione Cassaforte criteri allegati in PowerShell è un processo in due passaggi:
 
 1. Creare il criterio degli allegati sicuri.
 2. Creare la regola degli allegati sicuri che specifica il criterio degli allegati sicuri a cui si applica la regola.
@@ -230,11 +226,11 @@ La creazione di un criterio allegati sicuri in PowerShell è un processo in due 
 
 - È possibile creare una nuova regola degli allegati sicuri e assegnarle un criterio di allegato sicuro non associato esistente. Una regola degli allegati sicuri non può essere associata a più criteri allegati sicuri.
 
-- È possibile configurare le impostazioni seguenti nei nuovi criteri allegati sicuri in PowerShell che non sono disponibili nel Centro sicurezza & conformità fino a quando non si crea il criterio:
+- È possibile configurare le impostazioni seguenti nei nuovi criteri allegati sicuri in PowerShell che non sono disponibili nel portale di Microsoft 365 Defender fino a quando non si crea il criterio:
   - Creare il nuovo criterio come disabilitato (_Abilitato_ `$false` nel cmdlet **New-SafeAttachmentRule).**
   - Impostare la priorità del criterio durante la creazione (_Priority_ _\<Number\>_ ) nel cmdlet **New-SafeAttachmentRule.**
 
-- Un nuovo criterio di allegato sicuro creato in PowerShell non è visibile nel Centro sicurezza & conformità finché non si assegna il criterio a una regola degli allegati sicuri.
+- Un nuovo criterio di allegato sicuro creato in PowerShell non è visibile nel portale di Microsoft 365 Defender finché non si assegna il criterio a una regola degli allegati sicuri.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>Passaggio 1: Usare PowerShell per creare criteri allegati sicuri
 
@@ -246,9 +242,9 @@ New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [
 
 In questo esempio viene creato un criterio di allegato sicuro denominato Contoso All con i valori seguenti:
 
-- Bloccare i messaggi che vengono trovati come contenenti malware dall'analisi dei documenti sicuri (non viene utilizzato il parametro _Action_ e il valore predefinito è `Block` ).
+- Blocca i messaggi che vengono trovati come contenenti malware Cassaforte'analisi dei documenti (non viene utilizzato il parametro _Action_ e il valore predefinito è `Block` ).
 - Il reindirizzamento è abilitato e i messaggi che contengono malware vengono inviati a sec-ops@contoso.com per l'analisi e l'analisi.
-- Se l'analisi degli allegati sicuri non è disponibile o si verificano errori, non recapitare il messaggio (non viene utilizzato il _parametro ActionOnError_ e il valore predefinito è `$true` ).
+- Se Cassaforte'analisi degli allegati non è disponibile o si verificano errori, non recapitare il messaggio (non viene utilizzato il parametro _ActionOnError_ e il valore predefinito è `$true` ).
 
 ```PowerShell
 New-SafeAttachmentPolicy -Name "Contoso All" -Redirect $true -RedirectAddress sec-ops@contoso.com
@@ -333,7 +329,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-SafeAtt
 
 ### <a name="use-powershell-to-modify-safe-attachment-policies"></a>Utilizzare PowerShell per modificare i criteri allegati sicuri
 
-Non è possibile rinominare un criterio degli allegati sicuri in PowerShell (il cmdlet **Set-SafeAttachmentPolicy** non dispone di _alcun parametro Name)._ Quando si rinomina un criterio Allegati sicuri nel Centro sicurezza & conformità, si rinomina solo la regola degli allegati _sicuri._
+Non è possibile rinominare un criterio degli allegati sicuri in PowerShell (il cmdlet **Set-SafeAttachmentPolicy** non dispone di _alcun parametro Name)._ Quando si rinomina un criterio Cassaforte allegati nel portale Microsoft 365 Defender, si rinomina solo la regola degli allegati _sicuri._
 
 In caso contrario, le stesse impostazioni sono disponibili quando si crea un criterio degli allegati sicuri come descritto nella sezione Passaggio [1:](#step-1-use-powershell-to-create-a-safe-attachment-policy) utilizzare PowerShell per creare un criterio di allegati sicuri più indietro in questo articolo.
 
@@ -361,7 +357,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-SafeAtt
 
 ### <a name="use-powershell-to-enable-or-disable-safe-attachment-rules"></a>Abilitazione o disabilitazione delle regole degli allegati sicuri tramite PowerShell
 
-L'abilitazione o la disabilitazione di una regola degli allegati sicuri in PowerShell abilita o disabilita l'intero criterio Allegati sicuri (la regola degli allegati sicuri e il criterio degli allegati sicuri assegnati).
+L'abilitazione o la disabilitazione di una regola degli allegati sicuri in PowerShell abilita o disabilita l'intero criterio allegati Cassaforte (la regola degli allegati sicuri e il criterio degli allegati sicuri assegnati).
 
 Per abilitare o disabilitare una regola degli allegati sicuri in PowerShell, utilizzare la sintassi seguente:
 
@@ -441,9 +437,9 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Remove-Safe
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
-Per verificare che i criteri allegati sicuri siano stati creati, modificati o rimossi correttamente, eseguire una delle operazioni seguenti:
+Per verificare che i criteri allegati siano stati creati, modificati o rimossi correttamente, Cassaforte eseguire una delle operazioni seguenti:
 
-- Nel Centro sicurezza & conformità passare a **Criteri** di gestione delle minacce \>  \> **Allegati sicuri ATP**. Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare altri dettagli, selezionare il criterio nell'elenco e visualizzare i dettagli nel riquadro a comparsa.
+- Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**. Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare altri dettagli, selezionare il criterio dall'elenco facendo clic sul nome e visualizzare i dettagli nel riquadro a comparsa.
 
 - In Exchange Online PowerShell o Exchange Online Protection PowerShell, sostituire con il nome del criterio o della regola, eseguire il comando seguente e \<Name\> verificare le impostazioni:
 
@@ -455,4 +451,4 @@ Per verificare che i criteri allegati sicuri siano stati creati, modificati o ri
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-Per verificare che gli allegati sicuri esempeno l'analisi dei messaggi, controlla il Defender disponibile per Office 365 report. Per ulteriori informazioni, vedere [View reports for Defender for Office 365](view-reports-for-mdo.md) and Use Explorer in the Security & Compliance [Center.](threat-explorer.md)
+Per verificare che Cassaforte allegati esempa l'analisi dei messaggi, controlla il Defender disponibile per Office 365 report. Per altre informazioni, vedi [Visualizzare i report per Defender per Office 365](view-reports-for-mdo.md) e Usare Esplora risorse nel portale [Microsoft 365 Defender.](threat-explorer.md)

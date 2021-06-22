@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6b9814180df2cad2553c4565ebb65891b5cf9bf5
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 0705ba096c2aefc6bd089bd5fba80b055fd881dc
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985421"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055241"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personalizzare regole per la riduzione della superficie di attacco
 
@@ -90,7 +90,7 @@ Per informazioni [dettagliate su](attack-surface-reduction.md) ogni regola, vede
 
 2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione computer **e** fare clic su **Modelli amministrativi.**
 
-3. Espandi l'albero per Windows **componenti Antivirus Microsoft Defender** Windows Defender riduzione della superficie di attacco di  >    >  **Exploit Guard.**  >  
+3. Espandere l'albero per **Windows componenti Antivirus Microsoft Defender** Microsoft Defender Exploit Guard riduzione della superficie  >    >    >  **di attacco.**
 
 4. Fai doppio clic **sull'impostazione Escludi** file e percorsi dalle regole di riduzione della superficie di attacco e imposta l'opzione su **Abilitato.** Selezionare **Mostra** e immettere ogni file o cartella nella **colonna Nome** valore. Immettere **0** nella **colonna Valore** per ogni elemento.
 

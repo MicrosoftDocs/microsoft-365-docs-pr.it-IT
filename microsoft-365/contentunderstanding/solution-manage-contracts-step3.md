@@ -12,20 +12,20 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Informazioni su come usare Power Automate per creare il flusso per elaborare i contratti utilizzando una Microsoft 365 soluzione.
-ms.openlocfilehash: 0ddcbeff6c8bd119850e3e4ea45db2513e774433
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e6c1d1e53363f996241efb2394189853d840c6c2
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636255"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054466"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Passaggio 3. Usare Power Automate per creare il flusso per elaborare i contratti
 
-Il canale di gestione dei contratti è stato creato e la raccolta documenti SharePoint allegato. Il passaggio successivo consiste nel creare un flusso Power Automate per elaborare i contratti identificati e classificati dal SharePoint Syntex. È possibile eseguire questo passaggio [creando un Power Automate flusso di lavoro nella raccolta SharePoint documenti.](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)
+Il canale di gestione dei contratti è stato creato e la raccolta documenti SharePoint allegato. Il passaggio successivo consiste nel creare un flusso Power Automate per elaborare i contratti che il modello SharePoint Syntex identifica e classifica. È possibile eseguire questo passaggio [creando un Power Automate flusso di lavoro nella raccolta SharePoint documenti.](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)
 
 Per la soluzione di gestione dei contratti, si desidera creare un flusso Power Automate per eseguire le azioni seguenti:
 
--  Dopo che un contratto è stato classificato dal SharePoint Syntex, modifica lo stato del contratto **in In revisione**.
+-  Dopo che un contratto è stato classificato dal modello SharePoint Syntex, modificare lo stato del contratto **in In revisione**.
 - Il contratto viene quindi esaminato e approvato o rifiutato.
 - Per i contratti approvati, le informazioni sul contratto vengono pubblicate in una scheda per l'elaborazione dei pagamenti.
 - Per i contratti rifiutati, al team viene notificata un'ulteriore analisi. 
@@ -36,7 +36,7 @@ Il diagramma seguente mostra il Power Automate per la soluzione di gestione dei 
 
 ## <a name="prepare-your-contract-for-review"></a>Preparare il contratto per la revisione
 
-Quando un contratto viene identificato e classificato dal modello di SharePoint Syntex document understanding, il flusso di Power Automate cambierà innanzitutto lo stato **in In revisione.**
+Quando un contratto viene identificato e classificato dal modello SharePoint Syntex di comprensione dei documenti, il flusso di Power Automate modificherà innanzitutto lo stato **in In revisione**.
 
 ![Stato aggiornamento.](../media/content-understanding/flow-overview.png)
 
@@ -127,9 +127,9 @@ Il codice seguente è il codice JSON usato per questo passaggio nel Power Automa
 ```
 
 
-## <a name="conditional"></a>Condizionale
+## <a name="conditional-context"></a>Contesto condizionale
 
-Nel flusso è quindi necessario creare una condizione in cui il contratto verrà approvato o rifiutato.
+Nel flusso è quindi necessario creare una condizione in cui il contratto verrà approvato [o](#if-the-contract-is-approved) [rifiutato.](#if-the-contract-is-rejected)
 
 ![Condizionale.](../media/content-understanding/condition.png)
 
@@ -152,6 +152,19 @@ Quando un contratto è stato approvato, si verifica quanto segue:
 - Nel flusso viene creato l'elemento seguente per spostare i contratti approvati nella **scheda Per i** pagamenti.
 
    ![Flow elemento da spostare in Pay Out.](../media/content-understanding/ready-for-payout.png)
+
+    Per ottenere le espressioni per le informazioni necessarie dalla scheda Teams, utilizzare i valori illustrati nella tabella seguente.
+ 
+    |Nome     |Expression |
+    |---------|-----------|
+    | Stato approvazione  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['submitActionId']         |
+    | Approvato da     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responder'] ['displayName']        |
+    | Data approvazione     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responseTime']         |
+    | Commento     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['data'] ['acComments']         |
+    
+    Nell'esempio seguente viene illustrato come utilizzare la casella della formula in Power Automate per scrivere un'espressione.
+
+   ![Screenshot in Power Automate che mostra una formula di espressione.](../media/content-understanding/expression-formula-power-automate.png)    
 
 - Una scheda adattiva che indica che il contratto è stato approvato viene creata e inserita nel canale Gestione contratti.
 
@@ -250,11 +263,11 @@ Quando un contratto è stato rifiutato, si verifica quanto segue:
 
 - Nel flusso, si estrae il file di contratto, si modifica lo stato in **Rifiutato** e quindi si archivia di nuovo il file.
 
-   ![Flow stato rifiutato.](../media/content-understanding/reject-flow.png)
+   ![Flow stato rifiutato nel file di contratto.](../media/content-understanding/reject-flow.png)
 
 - Nel flusso viene creata una scheda adattiva che indica che il contratto è stato rifiutato.
 
-   ![Flow stato rifiutato.](../media/content-understanding/reject-flow-item.png)
+   ![Flow stato di rifiuto nella scheda adattiva.](../media/content-understanding/reject-flow-item.png)
 
 Il codice seguente è il codice JSON usato per questo passaggio nel Power Automate flusso.
 

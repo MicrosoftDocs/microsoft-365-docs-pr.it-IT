@@ -12,13 +12,13 @@ ms.collection: m365solution-managecontracts m365solution-overview
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Scopri come gestire i contratti usando una Microsoft 365 di SharePoint Syntex, SharePoint Lists, Microsoft Teams e Power Automate.
-ms.openlocfilehash: 352ebd1b9170aaf7829c414e87f7a79c4f17a1df
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: Informazioni su come gestire i contratti Microsoft 365 una soluzione SharePoint Syntex, SharePoint elenchi, Microsoft Teams e Power Automate.
+ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843771"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054759"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gestire i contratti con una soluzione Microsoft 365
 
@@ -44,7 +44,7 @@ Il primo passaggio nella pianificazione del sistema di gestione dei contratti co
 
 Questa guida alla soluzione di gestione dei contratti include quattro componenti di Microsoft 365:
 
-- **Microsoft SharePoint Syntex:** creare modelli per identificare e classificare i file di contratto e quindi estrarre i dati appropriati da essi.
+- **Microsoft SharePoint Syntex**: creare modelli per identificare e classificare i file di contratto e quindi estrarre i dati appropriati da essi.
 
 - **Elenchi SharePoint Microsoft**: utilizzare la formattazione disponibile negli elenchi SharePoint moderni per presentare i contratti in un formato per le aziende.
 
@@ -56,7 +56,7 @@ Questa guida alla soluzione di gestione dei contratti include quattro componenti
 
   ![Diagramma della soluzione che mostra il flusso di lavoro per caricare documenti, estrarre dati, inviare notifiche alle parti interessate e approvare o rifiutare il contratto.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. I documenti vengono caricati in una SharePoint raccolta documenti. Un SharePoint di comprensione dei documenti Syntex è stato applicato alla raccolta documenti. Controlla ogni file per verificare se una corrispondenza a un tipo di contenuto "contratto" è stata addestrata per la ricerca. Se trova una corrispondenza, classifica il file come "contratto" e aggiorna il tipo di contenuto per il documento.
+1. I documenti vengono caricati in una SharePoint raccolta documenti. Alla raccolta SharePoint Syntex è stato applicato un modello di comprensione dei documenti. Controlla ogni file per verificare se una corrispondenza a un tipo di contenuto "contratto" è stata addestrata per la ricerca. Se trova una corrispondenza, classifica il file come "contratto" e aggiorna il tipo di contenuto per il documento.
 
 2. Il modello estrae anche dati specifici da ogni file di contratto che gli stakeholder sono interessati a visualizzare, ad esempio *l'importo del cliente,* del *terzista e della commissione.*
 

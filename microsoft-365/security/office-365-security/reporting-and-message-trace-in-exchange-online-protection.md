@@ -15,12 +15,12 @@ ms.custom:
 description: In questo articolo vengono riportati i report e gli strumenti di risoluzione dei problemi disponibili per gli amministratori di Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841439"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054378"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Creazione di report e traccia dei messaggi in EOP
 
@@ -35,30 +35,17 @@ Nelle organizzazioni Microsoft 365 con cassette postali in Exchange Online o in 
 
 ## <a name="usage-reports"></a>Report sull'uso
 
-**Microsoft 365 gruppi di** lavoro : consente di visualizzare informazioni sul numero di Microsoft 365 che vengono creati e utilizzati.
+- **Microsoft 365 gruppi di** lavoro : consente di visualizzare informazioni sul numero di Microsoft 365 che vengono creati e utilizzati. Per ulteriori informazioni, vedere [Microsoft 365 report nell'interfaccia di amministrazione - Microsoft 365 gruppi](../../admin/activity-reports/office-365-groups.md).
+- **Attività di posta** elettronica : consente di visualizzare informazioni sul numero di messaggi inviati, ricevuti e letti nell'intera organizzazione e da utenti specifici. Per ulteriori informazioni, vedere [Microsoft 365 report nell'interfaccia di amministrazione - Attività di posta elettronica.](../../admin/activity-reports/email-activity.md)
+- **Utilizzo dell'app di** posta elettronica : consente di visualizzare informazioni sulle app di posta elettronica usate. Questo include il numero totale di connessioni per ogni app e le versioni di Outlook che si connettono. Per ulteriori informazioni, vedere report [Microsoft 365 nell'interfaccia di amministrazione - Utilizzo delle app di posta elettronica.](../../admin/activity-reports/email-apps-usage.md)
+- **Utilizzo delle cassette** postali: consente di visualizzare informazioni sull'archiviazione utilizzata, sul consumo di quote, sul conteggio degli elementi e sull'ultima attività (attività di invio o lettura) per le cassette postali. Per ulteriori informazioni, vedere [Microsoft 365 report nell'interfaccia di amministrazione - Utilizzo delle cassette postali.](../../admin/activity-reports/mailbox-usage.md)
 
-**Attività di posta** elettronica : consente di visualizzare informazioni sul numero di messaggi inviati, ricevuti e letti nell'intera organizzazione e da utenti specifici.
-
-**Utilizzo dell'app di** posta elettronica : consente di visualizzare informazioni sulle app di posta elettronica usate. Questi dati includono il numero totale di connessioni per ogni applicazione e le versioni di Outlook con cui si stabilisce la connessione.
-
-**Utilizzo delle cassette** postali: consente di visualizzare informazioni sull'archiviazione utilizzata, sul consumo di quote, sul conteggio degli elementi e sull'ultima attività (attività di invio o lettura) per le cassette postali.
-
-Per ulteriori informazioni, vedere le risorse seguenti:
-
-- [Microsoft 365 Report nell'interfaccia di amministrazione - Microsoft 365 gruppi](../../admin/activity-reports/office-365-groups.md)
-- [Microsoft 365 Report nell'interfaccia di amministrazione - Attività di posta elettronica](../../admin/activity-reports/email-activity.md)
-- [Microsoft 365 Report nell'interfaccia di amministrazione - Utilizzo delle app di posta elettronica](../../admin/activity-reports/email-apps-usage.md)
-- [Microsoft 365 Report nell'interfaccia di amministrazione - Utilizzo delle cassette postali](../../admin/activity-reports/mailbox-usage.md)
-
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Report di & sicurezza nell'interfaccia di amministrazione Microsoft 365 sicurezza
+## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Report di sicurezza nel portale Microsoft 365 defender
 
 Questi report migliorati offrono un'esperienza di creazione di report interattiva per gli amministratori di EOP, che include informazioni di riepilogo e la possibilità di eseguire il drill-down per ulteriori dettagli.
 
-**Defender for Office 365**: consente di visualizzare informazioni sui collegamenti sicuri e sugli allegati sicuri che fanno parte di Microsoft Defender per Office 365.
-
-**EOP:** consente di visualizzare informazioni sui rilevamenti di malware, posta contraffatta, rilevamenti di posta indesiderata e flusso di posta da e verso l'organizzazione.
-
-[Visualizzare i report per Defender per Office 365](view-reports-for-mdo.md)
+- **Defender for Office 365**: consente di visualizzare informazioni sui Cassaforte e Cassaforte allegati che fanno parte di Microsoft Defender per Office 365. Per ulteriori informazioni, vedere [View Defender for Office 365 reports in the Microsoft 365 Defender portal.](view-reports-for-mdo.md)
+- **EOP:** consente di visualizzare informazioni sui rilevamenti di malware, posta contraffatta, rilevamenti di posta indesiderata e flusso di posta da e verso l'organizzazione. Per ulteriori informazioni, vedere [View email security reports in the Microsoft 365 Defender portal.](view-email-security-reports.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Report personalizzati con Microsoft Graph
 
@@ -70,7 +57,7 @@ Consente di seguire il percorso dei messaggi all'interno di EOP. È possibile st
 
 È possibile utilizzare queste informazioni per rispondere in modo efficiente alle domande dell'utente, risolvere i problemi relativi al flusso di posta, convalidare le modifiche apportate ai criteri e ridurre la necessità di contattare il supporto tecnico per assistenza.
 
-Vedere [Traccia messaggio nel Centro sicurezza & conformità](message-trace-scc.md).
+Vedere [Traccia messaggi nel portale Microsoft 365 Defender messaggi](message-trace-scc.md).
 
 ## <a name="audit-logging"></a>Registrazione di controllo
 
@@ -79,6 +66,8 @@ Consente di tenere traccia di modifiche specifiche apportate all'organizzazione 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Rapporti e latenza e disponibilità dei dati dei messaggi
 
 La tabella seguente descrive quando in EOP le funzionalità di creazione rapporti e dati di traccia dei messaggi sono disponibili e per quanto tempo.
+
+<br>
 
 ****
 

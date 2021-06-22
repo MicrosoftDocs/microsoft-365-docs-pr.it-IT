@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Informazioni su come usare Microsoft Teams per creare il canale di gestione dei contratti usando una Microsoft 365 soluzione.
-ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 099487279482385760e05d9b166ae80c665d931e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841175"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054745"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Passaggio 2. Usare Microsoft Teams per creare il canale di gestione dei contratti
 
@@ -31,30 +31,31 @@ Quando l'organizzazione configura una soluzione di gestione dei contratti, è ne
 
      ![Scheda Post.](../media/content-understanding/posts.png)
 
-- **Avere una posizione in cui i membri possano visualizzare i contratti approvati per sapere quando possono essere inviati per il pagamento.** In Teams, è possibile creare un canale **Per** pagamento che elenca tutti i contratti che dovranno essere inviati al pagamento. È possibile estendere facilmente questa soluzione per scrivere queste informazioni direttamente in un'applicazione finanziaria di terze parti, ad esempio Dynamics CRM.
+- **Avere una posizione in cui i membri possano visualizzare i contratti approvati per sapere quando possono essere inviati per il pagamento.** In SharePoint, dovrai creare un elenco  per i pagamenti e includere colonne per **Cliente,**  Appaltatore e Importo **commissione,** selezionando Una riga di testo come tipo di colonna. Dovrai aggiungere l'elenco  Per i pagamenti come scheda Teams nel canale Gestione contratti, in modo analogo a quello che dovrai fare per la [ **scheda** Contratti.](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab) Nella **scheda Per i pagamenti** verranno elencati tutti i contratti che dovranno essere inviati per il pagamento. È possibile estendere facilmente questa soluzione per scrivere queste informazioni direttamente in un'applicazione finanziaria di terze parti, ad esempio Dynamics CRM. 
+
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Allegare SharePoint raccolta documenti alla scheda Contratti
 
-Dopo aver creato una **scheda** Contratti nel canale Gestione contratti, è necessario allegarvi SharePoint raccolta [documenti.](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) La SharePoint documento che si desidera allegare è quella a cui è stato applicato il modello di SharePoint syntex nella sezione precedente.
+Dopo aver creato una **scheda** Contratti nel canale Gestione contratti, è necessario allegarvi SharePoint raccolta [documenti.](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) La SharePoint documento che si desidera allegare è quella a cui è stato applicato il modello di comprensione SharePoint Syntex documento nella sezione precedente.
 
 Dopo aver collegato SharePoint raccolta documenti, sarà possibile visualizzare eventuali contratti classificati tramite una visualizzazione elenco predefinita.
 
-   ![Visualizzazione elenco.](../media/content-understanding/list-view.png)
+   ![Visualizzazione elenco della SharePoint raccolta.](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Personalizzare la visualizzazione del riquadro della scheda Contratti
 
 > [!NOTE]
 > Questa sezione fa riferimento ad esempi di codice contenuti nel file [ContractTileFormatting.jsincluso](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) nell'archivio [Contracts Management Solution Assets.](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)
 
-Anche Teams consente di visualizzare i contratti in una visualizzazione riquadro, è consigliabile personalizzarlo per visualizzare i dati del contratto che si desidera rendere visibili nella scheda contratto. Ad esempio, per la **scheda Contratti,** è importante che i membri vedano il cliente, l'appaltatore e l'importo della commissione nella scheda del contratto. Tutti questi campi sono stati estratti da ogni contratto tramite il SharePoint Syntex applicato alla raccolta documenti. Vuoi anche essere in grado di modificare la barra di intestazione del riquadro con colori diversi per ogni stato in modo che i membri possano facilmente vedere dove si trova il contratto nel processo di approvazione. Ad esempio, tutti i contratti approvati avranno una barra di intestazione blu.
+Anche Teams consente di visualizzare i contratti in una visualizzazione riquadro, è consigliabile personalizzarlo per visualizzare i dati del contratto che si desidera rendere visibili nella scheda contratto. Ad esempio, per la **scheda Contratti,** è importante che i membri vedano il cliente, l'appaltatore e l'importo della commissione nella scheda del contratto. Tutti questi campi sono stati estratti da ogni contratto tramite il modello SharePoint Syntex applicato alla raccolta documenti. Vuoi anche essere in grado di modificare la barra di intestazione del riquadro con colori diversi per ogni stato in modo che i membri possano facilmente vedere dove si trova il contratto nel processo di approvazione. Ad esempio, tutti i contratti approvati avranno una barra di intestazione blu.
 
-   ![Visualizzazione elenco.](../media/content-understanding/tile.png)
+   ![Visualizzazione riquadri SharePoint raccolta.](../media/content-understanding/tile.png)
 
 La visualizzazione riquadro personalizzata usata richiede di apportare modifiche al file JSON usato per formattare la visualizzazione riquadro corrente. Puoi fare riferimento al file JSON usato per creare la visualizzazione scheda esaminando il file [ContractTileFormatting.jssu.](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) Nelle sezioni seguenti vedrai sezioni specifiche del codice per le funzionalità presenti nelle schede del contratto.
 
 Se vuoi visualizzare o apportare modifiche al codice JSON per la visualizzazione nel canale Teams, nel canale Teams seleziona il menu a discesa della visualizzazione e quindi seleziona **Formatta visualizzazione corrente.**
 
-   ![formato json.](../media/content-understanding/jason-format.png)
+   ![Screenshot del formato json in Teams canale.](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>Dimensioni e forma della scheda
 
@@ -105,7 +106,7 @@ Il codice seguente consente di definire lo stato di ogni scheda titolo. Si noti 
 
 ## <a name="extracted-fields"></a>Campi estratti
 
-In ogni scheda contratto verranno visualizzati tre campi estratti per ogni contratto (*Cliente,* Appaltatore e Importo *commissione*). Inoltre, vuoi anche visualizzare l'ora/data in cui il file è stato classificato dal modello syntex SharePoint usato per identificarlo.
+In ogni scheda contratto verranno visualizzati tre campi estratti per ogni contratto (*Cliente,* Appaltatore e Importo *commissione*). Inoltre, si desidera visualizzare l'ora/data in cui il file è stato classificato dal modello SharePoint Syntex utilizzato per identificarlo.
 
 Nel file [ContractTileFormatting.js,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) le sezioni seguenti definiscono ognuna di queste.
 

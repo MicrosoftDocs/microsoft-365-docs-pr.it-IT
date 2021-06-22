@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per distribuire le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 550a1a84df88340de14caff08284ef6a8cadc9e9
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b5e6c8d6d2972b6aa050e3805c51327a6cf1058c
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022487"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055080"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -90,7 +90,7 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi Azure Information Protection per classificare e proteggere automaticamente i file](/azure/information-protection/deploy-aip-scanner)|
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati nel cloud|[Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Applicare e visualizzare le etichette in Power BI e proteggere i dati quando vengono salvati all'esterno del servizio.|[Etichette di riservatezza in Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
-|Monitorare e capire come vengono usate le etichette di riservatezza nell'organizzazione|[Conoscere i dati - Panoramica della classificazione dei dati](data-classification-overview.md) <br /><br /> [Introduzione alla classificazione dei dati](data-classification-overview.md)|
+|Monitorare e capire come vengono usate le etichette di riservatezza nell'organizzazione|[Informazioni sulla classificazione dei dati](data-classification-overview.md)|
 |Estendere le etichette di riservatezza ad app e servizi di terze parti|[SDK di Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|
 |Estendere etichette di riservatezza ai contenuti di Archiviazione BLOB di Azure, File di Azure, Azure Data Lake Storage Gen1 e Azure Data Lake Storage Gen12|[Etichettare automaticamente contenuti in Azure Purview](/azure/purview/create-sensitivity-label) |
 

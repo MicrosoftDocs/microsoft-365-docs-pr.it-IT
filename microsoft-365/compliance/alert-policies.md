@@ -1,12 +1,12 @@
 ---
-title: Criteri di avviso nei Centri sicurezza e conformità
+title: Microsoft 365 di avviso
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -15,22 +15,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
-description: Creare criteri di avviso nel Centro sicurezza e conformità in Office 365 e Microsoft 365 per monitorare potenziali minacce, perdita di dati e problemi di autorizzazioni.
-ms.openlocfilehash: 4bca7bb15900dbdd7caadb74ce7938b9483be03e
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+description: Creare criteri di avviso nell'Centro conformità Microsoft 365 per monitorare potenziali minacce, perdita di dati e problemi di autorizzazioni.
+ms.openlocfilehash: a6f9b7dec1a147b9cd9b00b5516c77aea79437e9
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964729"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054740"
 ---
-# <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
+# <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>Criteri di avviso nella Centro conformità Microsoft 365
 
-È possibile utilizzare i criteri di avviso e gli strumenti del dashboard degli avvisi nei Centri sicurezza e conformità di Microsoft 365 per creare criteri di avviso e quindi visualizzare gli avvisi generati quando gli utenti eseguono attività che corrispondono alle condizioni di un criterio di avviso. Esistono diversi criteri di avviso predefiniti che consentono di monitorare attività quali l'assegnazione di privilegi di amministratore in Exchange Online, attacchi di malware, campagne di phishing e livelli insoliti di eliminazioni di file e condivisione esterna.
+È possibile utilizzare i criteri di avviso e gli strumenti del dashboard degli avvisi nel Centro conformità Microsoft 365 per creare criteri di avviso e quindi visualizzare gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso. Esistono diversi criteri di avviso predefiniti che consentono di monitorare attività quali l'assegnazione di privilegi di amministratore in Exchange Online, attacchi di malware, campagne di phishing e livelli insoliti di eliminazioni di file e condivisione esterna.
 
-I criteri di avviso consentono di categorizzare gli avvisi attivati da un criterio, applicare il criterio a tutti gli utenti dell'organizzazione, impostare un livello di soglia per l'attivazione di un avviso e decidere se ricevere notifiche tramite posta elettronica quando vengono attivati gli avvisi. È inoltre disponibile  una pagina Visualizza avvisi nel Centro sicurezza e conformità in cui è possibile visualizzare e filtrare gli avvisi, impostare uno stato di avviso per gestire gli avvisi e quindi ignorare gli avvisi dopo aver risolto o risolto l'evento imprevisto sottostante.
+I criteri di avviso consentono di categorizzare gli avvisi attivati da un criterio, applicare il criterio a tutti gli utenti dell'organizzazione, impostare un livello di soglia per l'attivazione di un avviso e decidere se ricevere notifiche tramite posta elettronica quando vengono attivati gli avvisi. È inoltre disponibile  una pagina Avvisi nel Centro conformità in cui è possibile visualizzare e filtrare gli avvisi, impostare uno stato di avviso per gestire gli avvisi e quindi ignorare gli avvisi dopo aver risolto o risolto l'evento imprevisto sottostante.
 
 > [!NOTE]
 > I criteri di avviso sono disponibili per le organizzazioni con una sottoscrizione Microsoft 365 Enterprise, Office 365 Enterprise o Office 365 US Government E1/F1/G1, E3/F3/G3 o E5/G5. La funzionalità avanzata è disponibile solo per le organizzazioni con una sottoscrizione E5/G5 o per le organizzazioni che dispongono di una sottoscrizione E1/F1/G1 o E3/F3/G3 e microsoft Defender per Office 365 P2 o un Microsoft 365 E5 Compliance o una sottoscrizione del componente aggiuntivo E5 eDiscovery e Controllo. La funzionalità che richiede un abbonamento A5/G5 o a un componente aggiuntivo è evidenziata in questo argomento. Tieni inoltre presente che i criteri di avviso sono disponibili negli ambienti Office 365 GCC, GCC High e DoD US government.
@@ -39,48 +38,50 @@ I criteri di avviso consentono di categorizzare gli avvisi attivati da un criter
 
 Ecco una breve panoramica del funzionamento dei criteri di avviso e degli avvisi che vengono attivati quando l'attività dell'utente o dell'amministratore soddisfa le condizioni di un criterio di avviso.
 
-![Panoramica del funzionamento dei criteri di avviso](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
+![Panoramica del funzionamento dei criteri di avviso](../media/M365-AlertPolicies-Overview.png)
 
-1. Un amministratore dell'organizzazione crea, configura e attiva un criterio di avviso utilizzando la **pagina Criteri** di avviso nel Centro sicurezza e conformità. È inoltre possibile creare criteri di avviso utilizzando il cmdlet [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) in PowerShell & Centro conformità.
+1. Un amministratore dell'organizzazione crea, configura e attiva un criterio di avviso utilizzando la **pagina Criteri** di avviso nel Centro conformità. È inoltre possibile creare criteri di avviso utilizzando il cmdlet [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) in PowerShell & Centro conformità.
 
-   Per creare criteri di avviso, è necessario disporre del ruolo Gestisci avvisi o Configurazione organizzazione nel Centro sicurezza e conformità.
+   Per creare criteri di avviso, è necessario disporre del ruolo Gestisci avvisi o Configurazione organizzazione nel Centro conformità.
 
    > [!NOTE]
    > Sono necessarie fino a 24 ore dopo la creazione o l'aggiornamento di un criterio di avviso prima che gli avvisi possano essere attivati dal criterio. Questo perché il criterio deve essere sincronizzato con il motore di rilevamento degli avvisi.
 
 2. Un utente esegue un'attività che corrisponde alle condizioni di un criterio di avviso. In caso di attacchi malware, i messaggi di posta elettronica infetti inviati agli utenti dell'organizzazione attivano un avviso.
 
-3. Microsoft 365 viene generato un avviso visualizzato nella  pagina Visualizza avvisi nel Centro sicurezza & conformità. Inoltre, se le notifiche di posta elettronica sono abilitate per il criterio di avviso, Microsoft invia una notifica a un elenco di destinatari. Gli avvisi che possono essere visualizzati da un amministratore o da altri utenti nella pagina Visualizza avvisi sono determinati dai ruoli assegnati all'utente. Per ulteriori informazioni, vedere [Autorizzazioni RBAC necessarie per visualizzare gli avvisi.](#rbac-permissions-required-to-view-alerts)
+3. Microsoft 365 viene generato un avviso visualizzato nella pagina **Avvisi** di Centro conformità Microsoft 365. Inoltre, se le notifiche di posta elettronica sono abilitate per il criterio di avviso, Microsoft invia una notifica a un elenco di destinatari. Gli avvisi che possono essere visualizzati da un amministratore o da altri utenti nella pagina Avvisi sono determinati dai ruoli assegnati all'utente. Per ulteriori informazioni, vedere [Autorizzazioni RBAC necessarie per visualizzare gli avvisi.](#rbac-permissions-required-to-view-alerts)
 
-4. Un amministratore gestisce gli avvisi nel Centro sicurezza e conformità. La gestione degli avvisi consiste nell'assegnare uno stato di avviso per tenere traccia e gestire qualsiasi indagine.
+4. Un amministratore gestisce gli avvisi nel Centro conformità. La gestione degli avvisi consiste nell'assegnare uno stato di avviso per tenere traccia e gestire qualsiasi indagine.
 
 ## <a name="alert-policy-settings"></a>Impostazioni dei criteri di avviso
 
-Un criterio di avviso è costituito da un set di regole e condizioni che definiscono l'attività dell'utente o dell'amministratore che genera un avviso, un elenco di utenti che attivano l'avviso se eseguono l'attività e una soglia che definisce quante volte deve verificarsi l'attività prima dell'attivazione di un avviso. È inoltre possibile categorizzare il criterio e assegnare un livello di gravità. Queste due impostazioni consentono di gestire i criteri di avviso e gli avvisi che vengono attivati quando vengono soddisfatte le condizioni dei criteri, perché è possibile filtrare tali impostazioni durante la gestione dei criteri e la visualizzazione degli avvisi nel Centro sicurezza e conformità. Ad esempio, è possibile visualizzare gli avvisi che soddisfano le condizioni della stessa categoria o visualizzare gli avvisi con lo stesso livello di gravità.
+Un criterio di avviso è costituito da un set di regole e condizioni che definiscono l'attività dell'utente o dell'amministratore che genera un avviso, un elenco di utenti che attivano l'avviso se eseguono l'attività e una soglia che definisce quante volte deve verificarsi l'attività prima dell'attivazione di un avviso. È inoltre possibile categorizzare il criterio e assegnare un livello di gravità. Queste due impostazioni consentono di gestire i criteri di avviso (e gli avvisi che vengono attivati quando vengono soddisfatte le condizioni dei criteri) perché è possibile filtrare in base a queste impostazioni durante la gestione dei criteri e la visualizzazione degli avvisi nel Centro conformità. Ad esempio, è possibile visualizzare gli avvisi che soddisfano le condizioni della stessa categoria o visualizzare gli avvisi con lo stesso livello di gravità.
 
-Per visualizzare e creare criteri di avviso, passare a [https://protection.office.com](https://protection.office.com) e quindi selezionare Criteri  \> **avvisi.**
+**Per visualizzare e creare criteri di avviso:**
 
-![Nel Centro sicurezza e conformità seleziona Avvisi, quindi seleziona Criteri di avviso per visualizzare e creare i criteri di avviso](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
+Vai a <https://compliance.microsoft.com> e quindi seleziona **Criteri**  >  **Criteri Avviso**  >  **Criteri** avviso . In alternativa, è possibile passare direttamente a <https://compliance.microsoft.com/alertpolicies> .
+
+![Nel Centro conformità selezionare Criteri e in Avviso selezionare Criteri di avviso per visualizzare e creare criteri di avviso](../media/LaunchAlertPoliciesMCC.png)
 
 Un criterio di avviso è costituito dalle impostazioni e dalle condizioni seguenti.
 
-- **Attività** monitorata dall'avviso: si crea un criterio per tenere traccia di un'attività o, in alcuni casi, di alcune attività correlate, ad esempio la condivisione di un file con un utente esterno, la condivisione, l'assegnazione delle autorizzazioni di accesso o la creazione di un collegamento anonimo. Quando un utente esegue l'attività definita dal criterio, viene attivato un avviso in base alle impostazioni della soglia di avviso.
+- **Attività che l'avviso sta verificando**. È possibile creare un criterio per tenere traccia di un'attività o in alcuni casi di alcune attività correlate, ad esempio la condivisione di un file con un utente esterno tramite la condivisione, l'assegnazione delle autorizzazioni di accesso o la creazione di un collegamento anonimo. Quando un utente esegue l'attività definita dal criterio, viene attivato un avviso in base alle impostazioni della soglia di avviso.
 
     > [!NOTE]
     > Le attività che è possibile tenere traccia dipendono dal piano dell'organizzazione Office 365 Enterprise o Office 365 del governo degli Stati Uniti. In generale, le attività correlate a campagne di malware e attacchi di phishing richiedono un abbonamento E5/G5 o un abbonamento E1/F1/G1 o E3/F3/G3 con un abbonamento al componente aggiuntivo [Defender per Office 365](../security/office-365-security/defender-for-office-365.md) Piano 2.
 
-- **Condizioni attività:** per la maggior parte delle attività, è possibile definire condizioni aggiuntive che devono essere soddisfatte per attivare un avviso. Le condizioni comuni includono gli indirizzi IP (in modo che un avviso sia attivato quando l'utente esegue l'attività su un computer con un indirizzo IP specifico o all'interno di un intervallo di indirizzi IP), se un avviso viene attivato se un utente o un utente specifico esegue tale attività e se l'attività viene eseguita su un nome di file o un URL specifico. È inoltre possibile configurare una condizione che attiva un avviso quando l'attività viene eseguita da qualsiasi utente dell'organizzazione. Le condizioni disponibili dipendono dall'attività selezionata.
+- **Condizioni di attività**. Per la maggior parte delle attività, è possibile definire condizioni aggiuntive che devono essere soddisfatte per attivare un avviso. Le condizioni comuni includono gli indirizzi IP (in modo che un avviso sia attivato quando l'utente esegue l'attività su un computer con un indirizzo IP specifico o all'interno di un intervallo di indirizzi IP), se un avviso viene attivato se un utente o un utente specifico esegue tale attività e se l'attività viene eseguita su un nome di file o un URL specifico. È inoltre possibile configurare una condizione che attiva un avviso quando l'attività viene eseguita da qualsiasi utente dell'organizzazione. Le condizioni disponibili dipendono dall'attività selezionata.
 
-- **Quando viene attivato l'avviso:** è possibile configurare un'impostazione che definisce la frequenza di esecuzione di un'attività prima dell'attivazione di un avviso. In questo modo è possibile configurare un criterio per generare un avviso ogni volta che un'attività soddisfa le condizioni dei criteri, quando viene superata una determinata soglia o quando l'occorrenza dell'attività che l'avviso sta verificando diventa insolita per l'organizzazione.
+- **Quando viene attivato l'avviso**. È possibile configurare un'impostazione che definisce la frequenza di esecuzione di un'attività prima dell'attivazione di un avviso. In questo modo è possibile configurare un criterio per generare un avviso ogni volta che un'attività soddisfa le condizioni dei criteri, quando viene superata una determinata soglia o quando l'occorrenza dell'attività che l'avviso sta verificando diventa insolita per l'organizzazione.
 
-    ![Configurare la modalità di attivazione degli avvisi, in base al momento in cui si verifica l'attività, a una soglia o a un'attività insolita per l'organizzazione](../media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
+    ![Configurare la modalità di attivazione degli avvisi, in base al momento in cui si verifica l'attività, a una soglia o a un'attività insolita per l'organizzazione](../media/howalertsaretriggered.png)
 
     Se si seleziona l'impostazione in base ad attività insolite, Microsoft stabilisce un valore di base che definisce la frequenza normale per l'attività selezionata. Per stabilire questa linea di base sono necessari fino a sette giorni, durante i quali gli avvisi non verranno generati. Una volta stabilita la previsione, viene attivato un avviso quando la frequenza dell'attività monitorata dal criterio di avviso supera notevolmente il valore di base. Per le attività correlate al controllo , ad esempio le attività di file e cartelle, è possibile stabilire una linea di base basata su un singolo utente o su tutti gli utenti dell'organizzazione. per le attività correlate al malware, è possibile stabilire una linea di base basata su una singola famiglia di malware, su un singolo destinatario o su tutti i messaggi dell'organizzazione.
 
     > [!NOTE]
     > La possibilità di configurare i criteri di avviso in base a una soglia o a attività insolite richiede una sottoscrizione E5/G5 o una sottoscrizione E1/F1/G1 o E3/F3/G3 con un abbonamento al componente aggiuntivo Microsoft Defender per Office 365 P2, Microsoft 365 E5 Compliance o Microsoft 365 eDiscovery e controllo. Le organizzazioni con una sottoscrizione E1/F1/G1 e E3/F3/G3 possono creare solo criteri di avviso in cui viene attivato un avviso ogni volta che si verifica un'attività.
 
-- **Categoria di** avviso: per facilitare il rilevamento e la gestione degli avvisi generati da un criterio, è possibile assegnare una delle categorie seguenti a un criterio.
+- **Categoria avviso**. Per facilitare il rilevamento e la gestione degli avvisi generati da un criterio, è possibile assegnare una delle categorie seguenti a un criterio.
 
   - Prevenzione della perdita dei dati
 
@@ -94,26 +95,26 @@ Un criterio di avviso è costituito dalle impostazioni e dalle condizioni seguen
 
   - Altri
 
-  Quando si verifica un'attività che soddisfa le condizioni del criterio di avviso, l'avviso generato viene contrassegnato con la categoria definita in questa impostazione. In questo modo è possibile tenere traccia e  gestire gli avvisi con la stessa impostazione di categoria nella pagina Visualizza avvisi nel Centro sicurezza e conformità perché è possibile ordinare e filtrare gli avvisi in base alla categoria.
+  Quando si verifica un'attività che soddisfa le condizioni del criterio di avviso, l'avviso generato viene contrassegnato con la categoria definita in questa impostazione. In questo modo è possibile tenere traccia e gestire gli avvisi con la stessa impostazione di categoria nella pagina **Avvisi** nel Centro conformità perché è possibile ordinare e filtrare gli avvisi in base alla categoria.
 
-- **Gravità avviso** - Analogamente alla categoria di avviso, si assegna un attributo di gravità (**Basso,** **Medio,** Alto o **Informativo**) ai criteri di avviso. Analogamente alla categoria di avviso, quando si verifica un'attività che corrisponde alle condizioni del criterio di avviso, l'avviso generato viene contrassegnato con lo stesso livello di gravità impostato per il criterio di avviso. Anche in questo caso, questo consente di tenere traccia e gestire gli avvisi con la stessa impostazione di gravità nella **pagina Visualizza** avvisi. Ad esempio, è possibile filtrare l'elenco degli avvisi in modo che siano visualizzati solo gli avvisi **con** gravità Elevata.
+- **Gravità dell'avviso**. Analogamente alla categoria di avviso, ai criteri di avviso viene assegnato un attributo di gravità (**Low**, **Medium**, **High** o **Informational).** Analogamente alla categoria di avviso, quando si verifica un'attività che corrisponde alle condizioni del criterio di avviso, l'avviso generato viene contrassegnato con lo stesso livello di gravità impostato per il criterio di avviso. Anche in questo caso, è possibile tenere traccia e gestire gli avvisi con la stessa impostazione di gravità nella **pagina Avvisi.** Ad esempio, è possibile filtrare l'elenco degli avvisi in modo che siano visualizzati solo gli avvisi **con** gravità Elevata.
 
     > [!TIP]
     > Quando si configura un criterio di avviso, è consigliabile assegnare un livello di gravità maggiore alle attività che possono provocare conseguenze molto negative, ad esempio il rilevamento di malware dopo il recapito agli utenti, la visualizzazione di dati riservati o classificati, la condivisione di dati con utenti esterni o altre attività che possono causare la perdita di dati o minacce alla sicurezza. In questo modo è possibile definire la priorità degli avvisi e le azioni intraprese per analizzare e risolvere le cause sottostanti.
 
-- **Notifiche tramite** posta elettronica- È possibile configurare il criterio in modo che le notifiche di posta elettronica siano inviate (o non inviate) a un elenco di utenti quando viene attivato un avviso. Puoi anche impostare un limite di notifica giornaliero in modo che, una volta raggiunto il numero massimo di notifiche, non verranno inviate altre notifiche per l'avviso durante quel giorno. Oltre alle notifiche tramite posta elettronica, l'utente o altri amministratori possono visualizzare gli avvisi attivati da un criterio nella **pagina Visualizza** avvisi. Prendere in considerazione l'abilitazione delle notifiche di posta elettronica per i criteri di avviso di una categoria specifica o con un'impostazione di gravità superiore.
+- **Notifiche tramite posta elettronica**. È possibile configurare il criterio in modo che le notifiche di posta elettronica siano inviate (o non inviate) a un elenco di utenti quando viene attivato un avviso. Puoi anche impostare un limite di notifica giornaliero in modo che, una volta raggiunto il numero massimo di notifiche, non verranno inviate altre notifiche per l'avviso durante quel giorno. Oltre alle notifiche tramite posta elettronica, l'utente o altri amministratori possono visualizzare gli avvisi attivati da un criterio nella **pagina Avvisi.** Prendere in considerazione l'abilitazione delle notifiche di posta elettronica per i criteri di avviso di una categoria specifica o con un'impostazione di gravità superiore.
 
 ## <a name="default-alert-policies"></a>Criteri di avviso predefiniti
 
 Microsoft fornisce criteri di avviso predefiniti che consentono di identificare Exchange di abuso delle autorizzazioni di amministratore, attività di malware, potenziali minacce esterne e interne e rischi di governance delle informazioni. Nella pagina **Criteri di** avviso i nomi di questi criteri predefiniti sono in grassetto e il tipo di criterio è definito come **Sistema**. Questi criteri sono attivati per impostazione predefinita. È possibile disattivare questi criteri (o riattivarlo), configurare un elenco di destinatari a cui inviare notifiche tramite posta elettronica e impostare un limite di notifica giornaliero. Le altre impostazioni per questi criteri non possono essere modificate.
 
-Nella tabella seguente sono elencati e descritti i criteri di avviso predefiniti disponibili e la categoria a cui è assegnato ogni criterio. La categoria viene utilizzata per determinare quali avvisi possono essere visualizzati da un utente nella pagina Visualizza avvisi. Per ulteriori informazioni, vedere [Autorizzazioni RBAC necessarie per visualizzare gli avvisi.](#rbac-permissions-required-to-view-alerts)
+Nella tabella seguente sono elencati e descritti i criteri di avviso predefiniti disponibili e la categoria a cui è assegnato ogni criterio. La categoria viene utilizzata per determinare quali avvisi possono essere visualizzati da un utente nella pagina Avvisi. Per ulteriori informazioni, vedere [Autorizzazioni RBAC necessarie per visualizzare gli avvisi.](#rbac-permissions-required-to-view-alerts)
 
 La tabella indica inoltre il piano Office 365 Enterprise e Office 365 del governo statunitense necessario per ognuno di essi. Alcuni criteri di avviso predefiniti sono disponibili se l'organizzazione dispone dell'abbonamento al componente aggiuntivo appropriato oltre a una sottoscrizione E1/F1/G1 o E3/F3/G3.
 
 | Criterio di avviso predefinito | Descrizione | Categoria | Enterprise abbonamento |
 |:-----|:-----|:-----|:-----|
-|**È stato rilevato un clic sull'URL potenzialmente dannoso**|Genera un avviso quando un utente protetto da Safe [collegamenti](../security/office-365-security/safe-links.md) nell'organizzazione fa clic su un collegamento dannoso. Questo evento viene attivato quando microsoft Defender per Office 365 identifica le modifiche al verdetto degli URL o quando gli utenti sostituiscono le pagine dei collegamenti di Safe (in base al criterio collegamenti Microsoft 365 for business Safe dell'organizzazione). Questo criterio di avviso ha **un'impostazione** di gravità elevata. Per i clienti di Defender Office 365 P2, E5, G5, questo avviso attiva automaticamente l'indagine e la risposta [automatizzate in Office 365](../security/office-365-security/office-365-air.md). Per ulteriori informazioni sugli eventi che attivano questo avviso, vedere [Set up Safe Links policies](../security/office-365-security/set-up-safe-links-policies.md).|Gestione dei rischi|E5/G5 o Defender per Office 365 di componente aggiuntivo P2|
+|**È stato rilevato un clic sull'URL potenzialmente dannoso**|Genera un avviso quando un utente protetto da Cassaforte [collegamenti nell'organizzazione](../security/office-365-security/safe-links.md) fa clic su un collegamento dannoso. Questo evento viene attivato quando Microsoft Defender per Office 365 identifica le modifiche al verdetto degli URL o quando gli utenti sostituiscono le pagine dei collegamenti di Cassaforte (in base al criterio Microsoft 365 for business Cassaforte Links dell'organizzazione). Questo criterio di avviso ha **un'impostazione** di gravità elevata. Per i clienti di Defender Office 365 P2, E5, G5, questo avviso attiva automaticamente l'indagine e la risposta [automatizzate in Office 365](../security/office-365-security/office-365-air.md). Per ulteriori informazioni sugli eventi che attivano questo avviso, vedere [Set up Cassaforte Links policies.](../security/office-365-security/set-up-safe-links-policies.md)|Gestione dei rischi|E5/G5 o Defender per Office 365 di componente aggiuntivo P2|
 |**Risultato invio amministratore completato**|Genera un avviso quando un [invio dell'amministratore](../security/office-365-security/admin-submission.md) completa la nuova analisi dell'entità inviata. Un avviso verrà attivato ogni volta che viene eseguito il rendering di un risultato di nuova analisi da un invio dell'amministratore. Questi avvisi hanno lo scopo di ricordare di esaminare i risultati degli invii [precedenti,](https://protection.office.com/reportsubmission)inviare messaggi segnalati dall'utente per ottenere il controllo più recente dei criteri e analizzare di nuovo i verdetti e aiutare a determinare se i criteri di filtro nell'organizzazione hanno l'impatto previsto. Questo criterio ha **un'impostazione di gravità** informativo.|Gestione dei rischi|E1/F1, E3/F3 o E5|
 |**L'amministratore ha attivato l'analisi manuale della posta elettronica**|Genera un avviso quando un amministratore attiva l'analisi manuale di un messaggio di posta elettronica da Threat Explorer. Per altre informazioni, vedi [Esempio: un amministratore della sicurezza attiva un'indagine da Threat Explorer.](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) Questo avviso notifica all'organizzazione che l'indagine è stata avviata. L'avviso fornisce informazioni sull'utente che l'ha attivato e include un collegamento all'indagine. Questo criterio ha **un'impostazione di gravità** informativo.|Gestione dei rischi| Abbonamento al componente aggiuntivo E5/G5 o Microsoft Defender per Office 365 componente aggiuntivo P2| 
 |**Creazione di regole di inoltro/reindirizzamento**|Genera un avviso quando un utente dell'organizzazione crea una regola di posta in arrivo per la propria cassetta postale che inoltra o reindirizza i messaggi a un altro account di posta elettronica. Questo criterio tiene traccia solo delle regole di Posta in arrivo create Outlook sul web (in precedenza noto come Outlook Web App) o Exchange Online PowerShell. Questo criterio ha **un'impostazione di gravità** informativo. Per ulteriori informazioni sull'utilizzo delle regole di Posta in arrivo per inoltrare e reindirizzare la posta elettronica in Outlook sul web, vedere [Use rules in Outlook sul web to automatically forward messages to another account](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Gestione dei rischi|E1/F1/G1, E3/F3/G3 o E5/G5|
@@ -143,7 +144,7 @@ La tabella indica inoltre il piano Office 365 Enterprise e Office 365 del govern
 |**Volume insolito di eliminazione dei file**|Genera un avviso quando un numero insolitamente elevato di file viene eliminato in SharePoint o OneDrive in un breve periodo di tempo. Questo criterio ha **un'impostazione di** gravità Media.|Governance delle informazioni|E5/G5, Defender per Office 365 P2 o Microsoft 365 E5 di componente aggiuntivo|
 |**Aumento insolito dei messaggi segnalati come tentativi di phishing**|Genera un avviso quando si verifica un aumento significativo del numero di persone nell'organizzazione utilizzando il componente aggiuntivo Segnala messaggio Outlook per segnalare i messaggi come posta di phishing. Questo criterio ha **un'impostazione di** gravità Media. Per ulteriori informazioni su questo componente aggiuntivo, vedere [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Gestione dei rischi|E5/G5 o Defender per Office 365 di componente aggiuntivo P2|
 |**Phish di rappresentazione utente recapitato nella posta in arrivo/cartella**<sup>1,</sup><sup>2</sup>|Genera un avviso quando Microsoft rileva che un amministratore o una sostituzione utente ha consentito il recapito di un messaggio di phishing di rappresentazione utente nella posta in arrivo (o in un'altra cartella accessibile dall'utente) di una cassetta postale. Esempi di sostituzioni includono una regola di posta in arrivo o del flusso di posta che consente i messaggi provenienti da un mittente o un dominio specifico oppure un criterio di protezione da posta indesiderata che consente i messaggi provenienti da mittenti o domini specifici. Questo criterio ha **un'impostazione di** gravità Media.|Gestione dei rischi|E5/G5 o Defender per Office 365 di componente aggiuntivo P2|
-|**Utente con restrizioni per l'invio di posta elettronica**|Genera un avviso quando a un utente dell'organizzazione non è consentita l'invio di posta in uscita. Ciò in genere si verifica quando un account viene compromesso e l'utente è elencato nella pagina **Utenti** con restrizioni nel Centro sicurezza & conformità. Per accedere a questa pagina, passare a **Gestione delle minacce > esaminare > utenti con restrizioni**). Questo criterio ha **un'impostazione** di gravità elevata. Per ulteriori informazioni sugli utenti con restrizioni, vedere Rimozione di un utente, un dominio o un indirizzo IP da un elenco di indirizzi IP non consentiti dopo l'invio [di posta indesiderata.](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam)|Gestione dei rischi|E1/F1/G1, E3/F3/G3 o E5/G5|
+|**Utente con restrizioni per l'invio di posta elettronica**|Genera un avviso quando a un utente dell'organizzazione non è consentita l'invio di posta in uscita. Questo in genere si verifica quando un account viene compromesso e l'utente è elencato nella pagina **Utenti** con restrizioni nella Centro conformità Microsoft 365. Per accedere a questa pagina, passare a **Gestione delle minacce > esaminare > utenti con restrizioni**). Questo criterio ha **un'impostazione** di gravità elevata. Per ulteriori informazioni sugli utenti con restrizioni, vedere Rimozione di un utente, un dominio o un indirizzo IP da un elenco di indirizzi IP non consentiti dopo l'invio [di posta indesiderata.](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam)|Gestione dei rischi|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Utenti con restrizioni per la condivisione di moduli e la raccolta di risposte**|Genera un avviso quando a un utente dell'organizzazione è stata limitata la condivisione di moduli e la raccolta di risposte tramite Microsoft Forms a causa di un comportamento ripetuto di tentativo di phishing rilevato. Questo criterio ha **un'impostazione** di gravità elevata.|Gestione dei rischi|E1, E3/F3 o E5|
 |||||
 
@@ -154,13 +155,13 @@ L'attività insolita monitorata da alcuni dei criteri predefiniti si basa sullo 
 
 ## <a name="viewing-alerts"></a>Visualizzazione degli avvisi
 
-Quando un'attività eseguita dagli utenti dell'organizzazione corrisponde alle impostazioni di un  criterio di avviso, viene generato e visualizzato un avviso nella pagina Visualizza avvisi nel Centro sicurezza e conformità. A seconda delle impostazioni di un criterio di avviso, una notifica tramite posta elettronica viene inviata anche a un elenco di utenti specificati quando viene attivato un avviso. Per ogni avviso, nel  dashboard della pagina Visualizza avvisi vengono visualizzati il nome del criterio di avviso corrispondente, la gravità e la categoria dell'avviso (definiti nel criterio di avviso) e il numero di volte in cui si è verificata un'attività che ha generato l'avviso. Questo valore si basa sull'impostazione di soglia del criterio di avviso. Il dashboard mostra anche lo stato di ogni avviso. Per ulteriori informazioni sull'utilizzo della proprietà status per gestire gli avvisi, vedere [Managing alerts](#managing-alerts).
+Quando un'attività eseguita dagli utenti nell'organizzazione corrisponde alle impostazioni di un criterio di avviso, viene generato e visualizzato un avviso nella pagina **Avvisi** nel Centro conformità. A seconda delle impostazioni di un criterio di avviso, una notifica tramite posta elettronica viene inviata anche a un elenco di utenti specificati quando viene attivato un avviso. Per ogni avviso, nel  dashboard della pagina Avvisi vengono visualizzati il nome del criterio di avviso corrispondente, la gravità e la categoria dell'avviso (definiti nel criterio di avviso) e il numero di volte in cui si è verificata un'attività che ha generato l'avviso. Questo valore si basa sull'impostazione di soglia del criterio di avviso. Il dashboard mostra anche lo stato di ogni avviso. Per ulteriori informazioni sull'utilizzo della proprietà status per gestire gli avvisi, vedere [Managing alerts](#managing-alerts).
 
-Per visualizzare gli avvisi, passare [https://protection.office.com](https://protection.office.com) a e selezionare **Avvisi** \> **Visualizza avvisi**.
+Per visualizzare gli avvisi, <https://compliance.microsoft.com> passare a e quindi selezionare **Avvisi**. In alternativa, è possibile passare direttamente a <https://compliance.microsoft.com/compliancealerts> .
 
-![Nella sicurezza e conformità seleziona Avvisi, quindi seleziona Visualizza avvisi per visualizzare gli avvisi](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
+![Nella finestra Centro conformità Microsoft 365, selezionare Avvisi](../media/ViewAlertsMCC.png)
 
-È possibile utilizzare i filtri seguenti per visualizzare un sottoinsieme di tutti gli avvisi nella **pagina Visualizza** avvisi.
+È possibile utilizzare i filtri seguenti per visualizzare un sottoinsieme di tutti gli avvisi nella **pagina** Avvisi.
 
 - **Stato.** Utilizzare questo filtro per visualizzare gli avvisi a cui è assegnato uno stato specifico. Lo stato predefinito è **Active**. L'utente o altri amministratori possono modificare il valore di stato.
 
@@ -174,7 +175,7 @@ Per visualizzare gli avvisi, passare [https://protection.office.com](https://pro
 
 - **Tag.** Utilizzare questo filtro per visualizzare gli avvisi di uno o più tag utente. I tag vengono applicati in base alle cassette postali contrassegnate o agli utenti visualizzati negli avvisi. Vedi [Tag utente in Office 356 ATP](../security/office-365-security/user-tags.md) per altre informazioni.
 
-- **Source.** Utilizzare questo filtro per visualizzare gli avvisi attivati dai criteri di avviso nel Centro sicurezza e conformità o gli avvisi attivati Office 365 Cloud App Security criteri o entrambi. Per ulteriori informazioni sugli Office 365 Cloud App Security, vedere [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts).
+- **Source.** Utilizzare questo filtro per visualizzare gli avvisi attivati dai criteri di avviso nel Centro conformità o gli avvisi attivati Office 365 Cloud App Security criteri di conformità o entrambi. Per ulteriori informazioni sugli Office 365 Cloud App Security, vedere [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts).
 
 > [!IMPORTANT]
 > Il filtro e l'ordinamento in base ai tag utente sono attualmente in anteprima pubblica.
@@ -182,7 +183,7 @@ Per visualizzare gli avvisi, passare [https://protection.office.com](https://pro
 
 ## <a name="alert-aggregation"></a>Aggregazione degli avvisi
 
-Quando si verificano più eventi che soddisfano le condizioni di un criterio di avviso con un breve periodo di tempo, vengono aggiunti a un avviso esistente da un processo denominato *aggregazione degli avvisi.* Quando un evento attiva un avviso, l'avviso viene generato e visualizzato nella pagina Visualizza **avvisi** e viene inviata una notifica. Se lo stesso evento si verifica entro l'intervallo di aggregazione, Microsoft 365 dettagli sul nuovo evento all'avviso esistente anziché attivare un nuovo avviso. L'obiettivo dell'aggregazione degli avvisi è ridurre la "fatica" degli avvisi e consentire di concentrarsi e intervenire su un numero minore di avvisi per lo stesso evento.
+Quando si verificano più eventi che soddisfano le condizioni di un criterio di avviso con un breve periodo di tempo, vengono aggiunti a un avviso esistente da un processo denominato *aggregazione degli avvisi.* Quando un evento attiva un avviso, l'avviso viene generato e visualizzato nella **pagina Avvisi** e viene inviata una notifica. Se lo stesso evento si verifica entro l'intervallo di aggregazione, Microsoft 365 dettagli sul nuovo evento all'avviso esistente anziché attivare un nuovo avviso. L'obiettivo dell'aggregazione degli avvisi è ridurre la "fatica" degli avvisi e consentire di concentrarsi e intervenire su un numero minore di avvisi per lo stesso evento.
 
 La lunghezza dell'intervallo di aggregazione dipende dall'Office 365 o Microsoft 365 sottoscrizione.
 
@@ -209,7 +210,7 @@ Tenere presente quanto segue sull'aggregazione degli avvisi:
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Autorizzazioni RBAC necessarie per visualizzare gli avvisi
 
-Le autorizzazioni RBAC (Role Based Access Control) assegnate agli utenti dell'organizzazione determinano quali avvisi possono essere visualizzati da un utente nella **pagina Visualizza** avvisi. Come viene eseguita questa operazione? I ruoli di gestione assegnati agli utenti (in base all'appartenenza ai gruppi di ruoli nel Centro sicurezza & conformità) determinano le categorie di avviso che un utente può visualizzare nella pagina Visualizza **avvisi.** Di seguito vengono descritti alcuni esempi:
+Le autorizzazioni RBAC (Role Based Access Control) assegnate agli utenti dell'organizzazione determinano quali avvisi possono essere visualizzati da un utente nella **pagina** Avvisi. Come viene eseguita questa operazione? I ruoli di gestione assegnati agli utenti (in base all'appartenenza ai gruppi di ruoli nel Centro conformità Microsoft 365) determinano le categorie di avviso che un utente può visualizzare nella **pagina** Avvisi. Di seguito vengono descritti alcuni esempi:
 
 - I membri del gruppo di ruoli Gestione record possono visualizzare solo gli avvisi generati dai criteri di avviso assegnati alla **categoria Governance delle** informazioni.
 
@@ -219,7 +220,7 @@ Le autorizzazioni RBAC (Role Based Access Control) assegnate agli utenti dell'or
 
 Questa progettazione (basata sulle autorizzazioni RBAC) consente di determinare quali avvisi possono essere visualizzati (e gestiti) dagli utenti in ruoli di processo specifici nell'organizzazione.
 
-Nella tabella seguente sono elencati i ruoli necessari per visualizzare gli avvisi delle sei diverse categorie di avvisi. Nella prima colonna delle tabelle sono elencati tutti i ruoli nel Centro sicurezza & conformità.  Un segno di spunta indica che un utente assegnato a tale ruolo può visualizzare gli avvisi della categoria di avviso corrispondente elencata nella riga superiore.
+Nella tabella seguente sono elencati i ruoli necessari per visualizzare gli avvisi delle sei diverse categorie di avvisi. Nella prima colonna delle tabelle sono elencati tutti i ruoli nell'Centro conformità Microsoft 365.  Un segno di spunta indica che un utente assegnato a tale ruolo può visualizzare gli avvisi della categoria di avviso corrispondente elencata nella riga superiore.
 
 Per vedere a quale categoria è assegnato un criterio di avviso predefinito, vedere la tabella in [Criteri di avviso predefiniti.](#default-alert-policies)
 
@@ -266,12 +267,12 @@ Per vedere a quale categoria è assegnato un criterio di avviso predefinito, ved
 > ```powershell
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
-> 
-> È inoltre possibile visualizzare i ruoli assegnati a un gruppo di ruoli nel Centro sicurezza & conformità. Passare alla **pagina Autorizzazioni** e selezionare un gruppo di ruoli. I ruoli assegnati sono elencati nella pagina a comparsa.
+>
+> È inoltre possibile visualizzare i ruoli assegnati a un gruppo di ruoli nella Centro conformità Microsoft 365. Passare alla **pagina Autorizzazioni** e selezionare un gruppo di ruoli. I ruoli assegnati sono elencati nella pagina a comparsa.
 
 ## <a name="managing-alerts"></a>Gestione degli avvisi
 
-Dopo aver generato e visualizzato  gli avvisi nella pagina Visualizza avvisi nel Centro sicurezza e conformità, è possibile analizzarli, analizzarli e risolverli. Ecco alcune attività che è possibile eseguire per gestire gli avvisi.
+Dopo aver generato e visualizzato gli avvisi nella pagina **Avvisi** nel Centro conformità, è possibile analizzarli, analizzarli e risolverli. Ecco alcune attività che è possibile eseguire per gestire gli avvisi.
 
 - **Assegnare uno stato agli avvisi.** È possibile assegnare uno dei seguenti stati agli avvisi: **Attivo** (valore predefinito), **Investigating,** **Resolved** o **Dismissed.** È quindi possibile filtrare questa impostazione per visualizzare gli avvisi con la stessa impostazione di stato. Questa impostazione di stato consente di tenere traccia del processo di gestione degli avvisi.
 
@@ -283,7 +284,7 @@ Dopo aver generato e visualizzato  gli avvisi nella pagina Visualizza avvisi nel
 
   - Utente (o elenco di utenti) che ha attivato l'avviso. È incluso solo per i criteri di avviso impostati per tenere traccia di un singolo utente o di una singola attività.
 
-  - Numero di volte in cui è stata eseguita l'attività monitorata dall'avviso. Questo numero potrebbe non corrispondere al numero effettivo di avvisi correlati elencati nella pagina Visualizza avvisi perché potrebbero essere stati attivati più avvisi.
+  - Numero di volte in cui è stata eseguita l'attività monitorata dall'avviso. Questo numero potrebbe non corrispondere al numero effettivo di avvisi correlati elencati nella pagina Avvisi perché potrebbero essere stati attivati più avvisi.
 
   - Collegamento a un elenco di attività che include un elemento per ogni attività eseguita che ha attivato l'avviso. Ogni voce in questo elenco identifica quando si è verificata l'attività, il nome dell'operazione effettiva (ad esempio "FileDeleted"), l'utente che ha eseguito l'attività, l'oggetto (ad esempio un file, un caso di eDiscovery o una cassetta postale) su cui è stata eseguita l'attività e l'indirizzo IP del computer dell'utente. Per gli avvisi correlati al malware, questo collegamento a un elenco di messaggi.
 
@@ -291,21 +292,21 @@ Dopo aver generato e visualizzato  gli avvisi nella pagina Visualizza avvisi nel
 
 - **Eliminare le notifiche di posta elettronica.** Puoi disattivare (o eliminare) le notifiche di posta elettronica dalla pagina a comparsa per un avviso. Quando si sopprimeno le notifiche di posta elettronica, Microsoft non invierà notifiche quando si verificano attività o eventi che soddisfano le condizioni del criterio di avviso. Tuttavia, gli avvisi verranno attivati quando le attività eseguite dagli utenti corrispondono alle condizioni del criterio di avviso. È inoltre possibile disattivare le notifiche tramite posta elettronica modificando i criteri di avviso.
 
-- **Risolvere gli avvisi.** È possibile contrassegnare un avviso come risolto nella pagina a comparsa per un avviso (che imposta lo stato dell'avviso su **Risolto**). A meno che non si modifica il filtro, gli avvisi risolti non vengono visualizzati nella **pagina Visualizza** avvisi.
+- **Risolvere gli avvisi.** È possibile contrassegnare un avviso come risolto nella pagina a comparsa per un avviso (che imposta lo stato dell'avviso su **Risolto**). A meno che non si modifica il filtro, gli avvisi risolti non vengono visualizzati nella **pagina Avvisi.**
 
-## <a name="viewing-cloud-app-security-alerts"></a>Visualizzazione degli avvisi di Cloud App Security
+## <a name="viewing-cloud-app-security-alerts"></a>Visualizzazione Cloud App Security avvisi
 
-Gli avvisi attivati dai criteri di Office 365 Cloud  App Security vengono ora visualizzati nella pagina Visualizza avvisi nel Centro sicurezza e conformità. Sono inclusi gli avvisi attivati dai criteri attività e dagli avvisi attivati dai criteri di rilevamento delle anomalie in Office 365 Cloud App Security. Ciò significa che è possibile visualizzare tutti gli avvisi nel Centro sicurezza e conformità. Office 365 Cloud App Security è disponibile solo per le organizzazioni con un abbonamento a Office 365 Enterprise E5 o Office 365 US Government G5. Per altre informazioni, vedi [Panoramica di Cloud App Security.](/cloud-app-security/what-is-cloud-app-security)
+Gli avvisi attivati dai criteri Office 365 Cloud App Security vengono ora visualizzati nella **pagina Avvisi** nel Centro conformità. Sono inclusi gli avvisi attivati dai criteri attività e dagli avvisi attivati dai criteri di rilevamento delle anomalie in Office 365 Cloud App Security. Ciò significa che è possibile visualizzare tutti gli avvisi nel Centro conformità. Office 365 Cloud App Security è disponibile solo per le organizzazioni con un abbonamento Office 365 Enterprise E5 o Office 365 US Government G5. Per ulteriori informazioni, vedere [Overview of Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
-Le organizzazioni che dispongono di Microsoft Cloud App Security come parte di una sottoscrizione Enterprise Mobility + Security E5 o come servizio autonomo possono anche visualizzare gli avvisi di Cloud App Security correlati alle app e ai servizi di Office 365 nel Centro sicurezza & conformità.
+Le organizzazioni che hanno Microsoft Cloud App Security come parte di una sottoscrizione Enterprise Mobility + Security E5 o come servizio autonomo possono anche visualizzare gli avvisi di Cloud App Security correlati alle app e ai servizi di Microsoft 365 nel Centro conformità Microsoft 365.
 
-Per visualizzare solo gli avvisi di Cloud App Security nel Centro sicurezza e conformità, usa **il** filtro Origine e seleziona Cloud **App Security.**
+Per visualizzare solo Cloud App Security avvisi nel Centro conformità, utilizzare il filtro **Origine** e selezionare **Cloud App Security**.
 
-![Usare il filtro Origine per visualizzare solo gli avvisi di Cloud App Security](../media/FilterCASAlerts.png)
+![Utilizzare il filtro Origine per visualizzare solo Cloud App Security avvisi](../media/FilterCASAlerts.png)
 
-Analogamente a un avviso attivato da un criterio di avviso nel Centro sicurezza e conformità, è possibile selezionare un avviso di Cloud App Security per visualizzare una pagina a comparsa con i dettagli sull'avviso. L'avviso include un collegamento per visualizzare i dettagli e gestire l'avviso nel portale di Cloud App Security e un collegamento al criterio di Cloud App Security corrispondente che ha attivato l'avviso. Vedi [Monitorare gli avvisi in Cloud App Security.](/cloud-app-security/monitor-alerts)
+Analogamente a un avviso attivato da un criterio di avviso nel Centro conformità, è possibile selezionare un avviso Cloud App Security per visualizzare una pagina a comparsa con i dettagli sull'avviso. L'avviso include un collegamento per visualizzare i dettagli e gestire l'avviso nel portale di Cloud App Security e un collegamento al criterio di Cloud App Security corrispondente che ha attivato l'avviso. Vedere [Monitorare gli avvisi in Cloud App Security](/cloud-app-security/monitor-alerts).
 
-![I dettagli dell'avviso contengono collegamenti al portale di Cloud App Security](../media/CASAlertDetail.png)
+![I dettagli dell'avviso contengono collegamenti al Cloud App Security portale](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> La modifica dello stato di un avviso di Cloud App Security nel Centro sicurezza e conformità non aggiornerà lo stato di risoluzione per lo stesso avviso nel portale di Cloud App Security. Ad esempio, se si contrassegna  lo stato dell'avviso come Risolto nel Centro sicurezza e conformità, lo stato dell'avviso nel portale di Cloud App Security rimane invariato. Per risolvere o ignorare un avviso di Cloud App Security, gestisci l'avviso nel portale di Cloud App Security.
+> La modifica dello stato di un Cloud App Security nel Centro conformità non aggiornerà lo stato di risoluzione per lo stesso avviso nel portale Cloud App Security conformità. Ad esempio, se si contrassegna  lo stato dell'avviso come Risolto nel Centro conformità, lo stato dell'avviso nel portale Cloud App Security non viene modificato. Per risolvere o ignorare un Cloud App Security, gestire l'avviso nel portale Cloud App Security.

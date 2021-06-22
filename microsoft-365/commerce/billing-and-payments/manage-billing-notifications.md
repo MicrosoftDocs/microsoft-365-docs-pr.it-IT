@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gestire chi riceve messaggi di posta elettronica di notifica di fatturazione e allegati di fattura.
 ms.date: 03/17/2021
-ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998765"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054584"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gestire le notifiche di fatturazione e le fatture allegate
 
@@ -37,9 +37,6 @@ La **pagina Notifiche di** fatturazione consente di gestire chi riceve i messagg
 Per eseguire la procedura descritta in questo articolo, è necessario essere un amministratore globale. Gli amministratori della fatturazione possono apportare alcune di queste modifiche, come indicato nelle sezioni seguenti. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="change-the-language-you-receive-email-in"></a>Modificare la lingua in cui si riceve la posta elettronica
-
-> [!NOTE]
-> Gli amministratori della fatturazione possono anche eseguire la procedura descritta in questa sezione.
 
 I messaggi di posta elettronica di notifica di fatturazione vengono inviati nella lingua preferita dell'organizzazione. Per modificare la lingua preferita, eseguire la procedura seguente.
 
@@ -58,7 +55,7 @@ Le notifiche di fatturazione dell'organizzazione vengono inviate all'indirizzo d
 3. Nel riquadro destro, nella **scheda Amministratori assegnati,** selezionare **Aggiungi**.
 4. Nel riquadro **Aggiungi amministratori** digitare il nome visualizzato o il nome utente dell'utente e quindi selezionare l'utente nell'elenco dei suggerimenti.
 5. Aggiungi più utenti finché non hai finito.
-6. Selezionare **Salva**. L'utente viene aggiunto all'elenco degli amministratori assegnati.
+6. Seleziona **Salva**. L'utente viene aggiunto all'elenco degli amministratori assegnati.
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Rimuovere i ruoli di amministratore tramite la pagina Notifiche di fatturazione
 
@@ -87,6 +84,9 @@ Oltre agli amministratori globali e di fatturazione, microsoft invia notifiche d
 3. Nel riquadro destro digitare l'indirizzo di posta elettronica che si desidera utilizzare, quindi selezionare **Salva**.
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Ricevere le fatture dell'organizzazione come allegati di posta elettronica
+
+> [!NOTE]
+> Gli amministratori della fatturazione possono anche eseguire la procedura descritta in questa sezione.
 
 È possibile allegare una copia della fattura dell'organizzazione come file PDF ai messaggi di posta elettronica di notifica delle fatture quando è pronta una nuova fattura. Per ricevere le fatture come allegati, eseguire la procedura seguente.
 

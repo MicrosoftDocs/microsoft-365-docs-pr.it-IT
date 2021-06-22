@@ -11,15 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Configurare e usare un connettore nel Centro Microsoft 365 conformità per importare e archiviare i dati di WeChat in Microsoft 365.
-ms.openlocfilehash: 3ee858cd09c1b6c7bd29dc5e2162753df9f5544a
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+description: Configurare e usare un connettore nel Centro conformità Microsoft 365 per importare e archiviare i dati di WeChat in Microsoft 365.
+ms.openlocfilehash: e610b58421c2d84402010c9a5d5ad33ec6da5b04
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861633"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054612"
 ---
-# <a name="set-up-a-connector-to-archive-wechat-data-preview"></a>Configurare un connettore per archiviare i dati di WeChat (anteprima)
+# <a name="set-up-a-connector-to-archive-wechat-data"></a>Configurare un connettore per archiviare i dati di WeChat
 
 Usa il connettore TeleMessage nel Centro conformità Microsoft 365 per importare e archiviare le chiamate, le chat, gli allegati, i file e i messaggi richiamati di WeChat e WeCom. Dopo aver configurato e configurato un connettore, il connettore si connette all'account TeleMessage dell'organizzazione e importa la comunicazione mobile dei dipendenti tramite l'archivio WeChat Di TeleMessage nelle cassette postali in Microsoft 365.
 
@@ -35,7 +35,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 2. In tempo reale, i dati WeChat dell'organizzazione vengono copiati nel sito TeleMessage.
 
-3. Il connettore WeChat Archiver creato nel Centro conformità Microsoft 365 si connette ogni giorno al sito TeleMessage e trasferisce i messaggi di posta elettronica dalle 24 ore precedenti a un'area Archiviazione di Azure sicura nel cloud Microsoft.
+3. Il connettore WeChat Archiver creato nel Centro conformità Microsoft 365 si connette al sito TeleMessage ogni giorno e trasferisce i messaggi di posta elettronica dalle 24 ore precedenti a un'area Archiviazione di Azure sicura nel cloud Microsoft.
 
 4. Il connettore importa gli elementi di comunicazione mobile nella cassetta postale di un utente specifico. Verrà creata una nuova cartella denominata WeChat Archiver nella cassetta postale dell'utente specifico e gli elementi verranno importati in essa. Il connettore esegue il mapping utilizzando il valore della proprietà Indirizzo di posta elettronica *dell'utente.* Ogni messaggio di posta elettronica contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di posta elettronica. Oltre al mapping automatico degli utenti utilizzando il valore della proprietà Indirizzo di posta elettronica *dell'utente,* è anche possibile definire un mapping personalizzato caricando un file di mapping CSV. Questo file di mapping deve contenere il numero di cellulare dell'utente e l'indirizzo Microsoft 365 corrispondente per ogni utente. Se si abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di posta elettronica il connettore guarderà innanzitutto il file di mapping personalizzato. Se non trova un utente Microsoft 365 valido corrispondente al numero di cellulare di un utente, il connettore utilizzerà la proprietà Dell'indirizzo di posta elettronica dell'utente dell'elemento di posta elettronica. Se il connettore non trova un utente Microsoft 365 valido nel file di mapping personalizzato o nella proprietà dell'indirizzo di posta elettronica dell'utente dell'elemento di posta elettronica, *l'elemento* non verrà importato.
 
@@ -55,7 +55,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 ## <a name="create-a-wechat-archiver-connector"></a>Creare un connettore WeChat Archiver
 
-Seguire i passaggi descritti in questa sezione per creare un connettore WeChat Archiver nel Centro Microsoft 365 conformità. Il connettore utilizza le informazioni fornite per connettersi al sito TeleMessage e trasferire i dati delle comunicazioni WeChat alle cassette postali degli utenti corrispondenti in Microsoft 365.
+Seguire i passaggi descritti in questa sezione per creare un connettore WeChat Archiver nella Centro conformità Microsoft 365. Il connettore utilizza le informazioni fornite per connettersi al sito TeleMessage e trasferire i dati delle comunicazioni WeChat alle cassette postali degli utenti corrispondenti in Microsoft 365.
 
 1. Passare a <https://compliance.microsoft.com> e quindi fare clic su **Connettori dati**  >  **WeChat Archiver**.
 

@@ -12,16 +12,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Informazioni su come usare SharePoint Syntex per identificare i file di contratto ed estrarre i dati utilizzando una Microsoft 365 soluzione.
-ms.openlocfilehash: b4b11b1bdb980b0ee7629af0cbecbb126a5ae5e5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636207"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054501"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Passaggio 1. Usare SharePoint Syntex per identificare i file di contratto ed estrarre i dati
 
-L'organizzazione ha bisogno di un modo per identificare e classificare tutti i documenti di contratto dai numerosi file ricevuti. È inoltre possibile visualizzare rapidamente diversi elementi chiave in ognuno dei file di contratto identificati (ad esempio, *Cliente,* Appaltatore e *Importo commissione).* A tale scopo, utilizzare [SharePoint Syntex](index.md) per creare un modello di comprensione dei documenti e applicarlo a una raccolta documenti.
+L'organizzazione ha bisogno di un modo per identificare e classificare tutti i documenti di contratto dai numerosi file ricevuti. È inoltre possibile visualizzare rapidamente diversi elementi chiave in ognuno dei file di contratto identificati (ad esempio, *Cliente,* Appaltatore e *Importo commissione).* A tale scopo, è [possibile SharePoint Syntex](index.md) per creare un modello di comprensione dei documenti e applicarlo a una raccolta documenti.
 
 ## <a name="overview-of-the-process"></a>Panoramica del processo
 
@@ -37,7 +37,7 @@ L'organizzazione ha bisogno di un modo per identificare e classificare tutti i d
 
    ![Contratti nella raccolta documenti](../media/content-understanding/doc-lib-solution.png)
 
-5. Se hai requisiti di conservazione per i contratti, [](apply-a-retention-label-to-a-model.md) puoi anche usare il modello per applicare un'etichetta di conservazione che impedirà l'eliminazione dei contratti per un periodo di tempo specificato.
+5. Se hai requisiti di conservazione o sicurezza per i tuoi contratti, puoi [](apply-a-sensitivity-label-to-a-model.md) anche usare il modello per applicare un'etichetta di conservazione o un'etichetta di riservatezza che impedirà l'eliminazione dei contratti per un periodo di tempo specificato o per limitare chi può accedere ai contratti. [](apply-a-retention-label-to-a-model.md)
 
 ## <a name="steps-to-create-and-train-your-model"></a>Passaggi per creare ed eseguire il training del modello
 
@@ -198,6 +198,11 @@ Per applicare il modello a una raccolta SharePoint documenti:
 6. Nella **sezione Raccolte con questo** modello  della pagina Modelli > contratto verrà visualizzato l'URL del sito SharePoint sito.
 
     ![Screenshot della home page contratto che mostra la sezione Librerie con questo modello.](../media/content-understanding/contract-libraries-with-this-model.png)
+
+7. In **Impostazioni**  >  **impostazioni raccolta:**
+
+   - Aggiungere una colonna denominata **Status** e selezionare **Choice** come tipo di colonna.
+   - Applicare i **valori In revisione,** **Approvato** **e Rifiutato.**
 
 Dopo aver applicato il modello alla raccolta documenti, è possibile iniziare a caricare documenti nel sito e visualizzare i risultati.
 
