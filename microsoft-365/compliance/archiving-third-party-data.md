@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come importare dati di terze parti da piattaforme di social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione documenti Microsoft 365 cassette postali.
-ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054769"
+ms.locfileid: "53061730"
 ---
 # <a name="archive-third-party-data"></a>Archiviare i dati di terze parti
 
@@ -143,7 +143,6 @@ Come accennato in precedenza, i connettori dati forniti da TeleMessage sono disp
 |O2 SMS e Voice Network Archiver | Sì         | No | No |
 |TELUS SMS Network Archiver | Sì | No | No |
 |Verizon SMS/MMS Network Archiver | Sì | No | No |
-|WeChat Archiver | Sì | No | No |
 |WhatsApp Archiver | Sì | No | No |
 |||||
 

@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a usare il portale invii nel portale di Microsoft 365 Defender per inviare messaggi di posta elettronica sospetti, messaggi di phishing sospetti, posta indesiderata e altri messaggi, URL e allegati di posta elettronica potenzialmente dannosi a Microsoft per la nuova analisi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b671ce5a44c7be61331a121b49e96658cf14bab1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964802"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062033"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
@@ -91,7 +91,8 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 5. Al termine, fare clic sul **pulsante** Invia.
 
-   ![Esempio di invio di un nuovo URL](../../media/submission-flyout-email.PNG)
+> [!div class="mx-imgBorder"]
+> ![Esempio di invio di un nuovo URL](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Inviare un URL sospetto a Microsoft
 
@@ -105,7 +106,8 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 4. Al termine, fare clic sul **pulsante** Invia.
 
-   ![Esempio di nuovo invio di posta elettronica](../../media/submission-url-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![Esempio di nuovo invio di posta elettronica](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Inviare un allegato di posta elettronica sospetto a Microsoft
 
@@ -119,7 +121,8 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 4. Al termine, fare clic sul **pulsante** Invia.
 
-   ![Esempio di nuovo invio allegato](../../media/submission-file-flyout.PNG)
+> [!div class="mx-imgBorder"]
+> ![Esempio di nuovo invio allegato](../../media/submission-file-flyout.png)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Visualizzare gli invii di amministratori a Microsoft
 
@@ -157,7 +160,8 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
      Al termine, fare clic su **Applica.**
 
-     ![Nuove opzioni di filtro per gli invii di amministratori](../../media/admin-submission-email-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Nuove opzioni di filtro per gli invii di amministratori](../../media/admin-submission-filters.png)
 
    - Per raggruppare le voci, fare clic **su Gruppo** e selezionare uno dei valori seguenti nell'elenco a discesa:
      - **Nessuna**
@@ -170,7 +174,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ### <a name="admin-submission-rescan-details"></a>Dettagli dell'analisi dell'invio dell'amministratore
 
-I messaggi inviati negli invii di amministratori vengono sottoposti a nuova analisi e i risultati vengono visualizzati nel riquadro a comparsa dei dettagli degli invii:
+I messaggi inviati negli invii di amministratori vengono esaminati e i risultati vengono visualizzati nel riquadro a comparsa dettagli invii:
 
 - Se si è verificato un errore nell'autenticazione della posta elettronica del mittente al momento del recapito.
 - Informazioni su eventuali riscontri dei criteri che potrebbero aver influenzato o sostituito il verdetto di un messaggio.
@@ -214,7 +218,8 @@ Se è stato distribuito il componente aggiuntivo Segnala [messaggio,](enable-the
 
      Al termine, fare clic su **Applica.**
 
-    ![Nuove opzioni di filtro per gli invii degli utenti](../../media/user-submissions-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Nuove opzioni di filtro per gli invii degli utenti](../../media/admin-submission-reported-messages.png)
 
    - Per raggruppare le voci, fare clic **su Gruppo** e selezionare uno dei valori seguenti nell'elenco a discesa:
      - **Nessuna**
@@ -245,4 +250,5 @@ Nella scheda **Messaggi segnalati dall'utente** selezionare un messaggio nell'el
 - **Segnalare posta indesiderata**
 - **Attivare l'indagine**
 
-![Nuove opzioni sul pulsante Azione](../../media/user-submission-custom-mailbox-action-button.png)
+> [!div class="mx-imgBorder"]
+> ![Nuove opzioni sul pulsante Azione](../../media/admin-submission-main-action-button.png)

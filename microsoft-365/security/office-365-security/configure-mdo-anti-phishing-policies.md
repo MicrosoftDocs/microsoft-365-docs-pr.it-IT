@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare a creare, modificare ed eliminare i criteri anti-phishing avanzati disponibili nelle organizzazioni con Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbf90f52127e96e08f1c176a23d5f5ab1d6d86c4
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dd69e00b0e8929752341bf3d2b0abde88921066b
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054541"
+ms.locfileid: "53061878"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri anti-phishing in Microsoft Defender per Office 365
 
@@ -230,7 +230,7 @@ La creazione di un criterio anti-phishing personalizzato nel portale di Microsof
        - **Mettere in quarantena il messaggio**
 
    - **Suggerimenti per la sicurezza & indicatori**: Configurare le impostazioni seguenti:
-     - **Show first contact suggerimento per la sicurezza**: Questo suggerimento per la sicurezza sostituisce la necessità di creare regole del flusso di posta (note anche come regole di trasporto) che aggiungono l'intestazione **denominata X-MS-Exchange-EnableFirstContactSafetyTip** con il valore **Enable** to messages.
+     - **Show first contact suggerimento per la sicurezza**: Per ulteriori informazioni, vedere [First contact suggerimento per la sicurezza](set-up-anti-phishing-policies.md#first-contact-safety-tip).
      - **Mostra rappresentazione utente suggerimento per la sicurezza**: questa impostazione è disponibile solo se è stata selezionata l'opzione Consenti agli utenti **di proteggere** nella pagina precedente.
      - **Show domain impersonation suggerimento per la sicurezza**: Questa impostazione è disponibile solo se è stato selezionato Abilita domini **da proteggere** nella pagina precedente.
      - **Mostra caratteri insoliti di rappresentazione utente suggerimento per la sicurezza** Questa impostazione è disponibile solo se è stata selezionata l'opzione Consenti agli **utenti di proteggere** o Abilitare i domini per la **protezione** nella pagina precedente.

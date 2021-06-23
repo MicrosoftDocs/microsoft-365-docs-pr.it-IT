@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare a creare, modificare ed eliminare i criteri anti-phishing disponibili nelle organizzazioni di Exchange Online Protection (EOP) con o senza Exchange Online cassette postali.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8633644ab0380cf2adcf30c006a7d6d141a6040a
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1dcfba32a5c76915c8c905d55b69712162efac48
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054574"
+ms.locfileid: "53062232"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurare i criteri anti-phishing in Exchange Online Protection
 
@@ -126,11 +126,14 @@ La creazione di un criterio anti-phishing personalizzato nel portale di Microsof
      - **Spostare il messaggio nelle cartelle posta indesiderata dei destinatari**
      - **Mettere in quarantena il messaggio**
 
-   - **Suggerimenti per &** indicatori di sicurezza : questa impostazione è disponibile solo se è stata selezionata l'opzione **Abilita spoof intelligence** nella pagina precedente:
-     - **Show (?) for unauthenticated senders for spoof**: Aggiunge un punto interrogativo alla foto del mittente nella casella Da  di Outlook se il messaggio non supera i controlli SPF o DKIM e il messaggio non supera DMARC o l'autenticazione [composita.](email-validation-and-authentication.md#composite-authentication)
-     - **Mostra tag "via":** aggiunge un tag via (chris@contoso.com tramite fabrikam.com) all'indirizzo mittente se è diverso dal dominio nella firma DKIM o nell'indirizzo **MAIL FROM.**
+   - **Suggerimenti per la sicurezza & indicatori**:
+     - **Show first contact suggerimento per la sicurezza**: Per ulteriori informazioni, vedere [First contact suggerimento per la sicurezza](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - **Show (?) for unauthenticated senders for spoof**: Aggiunge un punto interrogativo alla foto del mittente nella casella Da di Outlook se il messaggio non supera i controlli SPF o DKIM e il messaggio non passa DMARC o <sup>\*</sup> l'autenticazione [composita.](email-validation-and-authentication.md#composite-authentication) 
+     - **Show "via" tag**: Aggiunge un tag via (chris@contoso.com tramite fabrikam.com) all'indirizzo From se è diverso dal dominio nella firma <sup>\*</sup> DKIM o nell'indirizzo **MAIL FROM.**
 
      Per attivare un'impostazione, selezionare la casella di controllo. Per disattivarla, deselezionare la casella di controllo.
+
+     <sup>\*</sup> Questa impostazione è disponibile solo se è stata selezionata **l'opzione Abilita spoof intelligence** nella pagina precedente. Per ulteriori informazioni, vedere [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).
 
    Al termine dell'operazione, fare clic su **Avanti**.
 

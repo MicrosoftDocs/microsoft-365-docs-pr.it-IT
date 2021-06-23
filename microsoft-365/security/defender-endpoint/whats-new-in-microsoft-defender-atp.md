@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ceca8ac76f63ef7da34f4222312e9e03a3b0e23a
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844191"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062255"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novità di Microsoft Defender per Endpoint
 
@@ -46,6 +46,16 @@ Per ulteriori informazioni sulle funzionalità di anteprima, vedere [Funzionalit
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
+## <a name="june-2021"></a>Giugno 2021
+
+- [Device discovery](device-discovery.md) <br> Consente di individuare i dispositivi non gestiti connessi alla rete aziendale senza la necessità di dispositivi aggiuntivi o modifiche di processo ingombranti. Usando i dispositivi onboarded, puoi trovare dispositivi non gestiti nella rete e valutare vulnerabilità e rischi. Puoi quindi eseguire l'onboardboard dei dispositivi individuati per ridurre i rischi associati alla presenza di endpoint non gestiti nella rete.
+
+   > [!IMPORTANT]
+   > L'individuazione standard sarà la modalità predefinita per tutti i clienti a partire dal 19 luglio 2021. Puoi scegliere di mantenere la modalità di base tramite la pagina delle impostazioni. 
+
+
+- [Le definizioni dei](/microsoft-365/security/defender-endpoint/machine-groups) gruppi di dispositivi possono ora includere più valori per ogni condizione. Puoi impostare più tag, nomi di dispositivi e domini sulla definizione di un singolo gruppo di dispositivi.
+
 ## <a name="march-2021"></a>Marzo 2021
 - [Gestire la protezione contro le manomissioni con il Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> È possibile gestire le impostazioni di protezione dalle manomissioni Windows 10, Windows Server 2016 e Windows Server 2019 utilizzando un metodo denominato *tenant attach*. 
 
@@ -66,7 +76,7 @@ Per ulteriori informazioni sulle funzionalità di anteprima, vedere [Funzionalit
 
 
 ## <a name="july-2020"></a>Luglio 2020
-- [Creare indicatori per certificati](manage-indicators.md). <br> Creare indicatori per consentire o bloccare i certificati. 
+- [Creare indicatori per certificati](manage-indicators.md) <br> Creare indicatori per consentire o bloccare i certificati. 
 
 ## <a name="june-2020"></a>Giugno 2020
 - [Microsoft Defender per Endpoint su Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint ora aggiunge il supporto per Linux. Scopri come installare, configurare, aggiornare e usare Microsoft Defender per Endpoint in Linux.

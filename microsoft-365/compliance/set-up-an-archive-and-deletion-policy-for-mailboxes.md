@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come creare un criterio di archiviazione ed eliminazione in Microsoft 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
-ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919532"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062163"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione
 
@@ -63,7 +63,7 @@ Il primo passaggio consiste nell'abilitare la cassetta postale di archiviazione 
 > [!NOTE]
 > È possibile abilitare le cassette postali di archiviazione in qualsiasi momento durante questo processo, purché siano abilitate a un certo punto prima di completare il processo. Se una cassetta postale di archiviazione non è abilitata, non viene eseguita alcuna azione sugli elementi a cui è assegnato un criterio di archiviazione o eliminazione.
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Vai a [https://protection.office.com](https://protection.office.com).
 
 2. Accedi con l'account amministratore globale.
     
@@ -294,6 +294,6 @@ Nel passaggio 4 è necessario assegnare il nuovo criterio di conservazione alle 
     |Non eliminare mai  <br/> |Questo tag impedisce l'eliminazione degli elementi da un criterio di conservazione.  <br/> |Built-in  <br/> |Personale; questo tag può essere applicato dagli utenti.  <br/> |
     |Sposta elementi personali in archivio dopo 1 anni  <br/> |Sposta gli elementi nella cassetta postale di archiviazione dopo 1 anno.  <br/> |Built-in  <br/> |Personale; questo tag può essere applicato dagli utenti.  <br/> |
 
-    > <sup>\*</sup>Gli utenti possono utilizzare lo strumento Recupera posta eliminata in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) per ripristinare un elemento eliminato entro il periodo di conservazione degli elementi eliminati, che per impostazione predefinita è di 14 giorni in Exchange Online. Un amministratore può utilizzare Windows PowerShell per aumentare il periodo di conservazione degli elementi eliminati a un massimo di 30 giorni. Per ulteriori informazioni, vedere: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) e Change the deleted item retention period for a mailbox in [Exchange Online](https://www.microsoft.com/?ref=go)
+    > <sup>\*</sup>Gli utenti possono utilizzare lo strumento Recupera posta eliminata in Outlook e Outlook sul web (in precedenza noto come Outlook Web App) per ripristinare un elemento eliminato entro il periodo di conservazione degli elementi eliminati, che per impostazione predefinita è di 14 giorni in Exchange Online. Un amministratore può utilizzare Windows PowerShell per aumentare il periodo di conservazione degli elementi eliminati a un massimo di 30 giorni. Per ulteriori informazioni, vedere: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) e Change the deleted item retention period for a mailbox in [Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
   
 - L'utilizzo del tag di conservazione Sposta in archivio per **14** giorni degli elementi ripristinabili consente di liberare spazio di archiviazione nella cartella Elementi ripristinabili nella cassetta postale principale dell'utente. Ciò è utile quando la cassetta postale di un utente viene messa in attesa, il che significa che non viene mai eliminata definitivamente la cassetta postale dell'utente. Senza spostare gli elementi nella cassetta postale di archiviazione, è possibile che la quota di archiviazione per la cartella Elementi ripristinabili nella cassetta postale principale sia raggiunta. Per ulteriori informazioni su questo e su come evitarlo, vedere [Increase the Recoverable Items quota for mailboxes on hold](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).

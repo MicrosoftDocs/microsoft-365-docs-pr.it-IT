@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932819"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062208"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novità di Microsoft Defender per Office 365
 
@@ -42,6 +42,14 @@ Scopri di più guardando [questo video](https://www.youtube.com/watch?v=Tdz6Kfru
 > [!TIP]
 > Non hai ancora Microsoft Defender per Office 365? [Contattare le vendite per avviare una versione di valutazione.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
+## <a name="june-2021"></a>Giugno 2021
+
+- Nuovo primo contatto suggerimento per la sicurezza all'interno dei criteri anti-phishing. Questa suggerimento per la sicurezza viene visualizzata quando i destinatari ricevono per la prima volta un messaggio di posta elettronica da un mittente o non ricevono spesso messaggi di posta elettronica da un mittente. Per ulteriori informazioni su questa impostazione e su come configurarla, vedere gli articoli seguenti:
+
+- [Primo contatto suggerimento per la sicurezza](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [Configurare i criteri anti-phishing in Exchange Online Protection](configure-anti-phishing-policies-eop.md)
+- [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-mdo-anti-phishing-policies.md)
+
 ## <a name="aprilmay-2021"></a>Aprile/maggio 2021
 
 - [Pagina](mdo-email-entity-page.md)entità di posta elettronica : visualizzazione unificata a 360 gradi di un messaggio di posta elettronica con informazioni avanzate su minacce, autenticazione e rilevamenti, dettagli di detonazione e un'esperienza di anteprima della posta elettronica nuova.
@@ -54,6 +62,7 @@ Scopri di più guardando [questo video](https://www.youtube.com/watch?v=Tdz6Kfru
 - Aumento dei limiti per l'esportazione di record da 9990 a 200.000 in esperienze [di ricerca](threat-explorer.md)
 - Estensione del limite di conservazione e ricerca dei dati di Explorer (e rilevamento in tempo [reale)](threat-explorer.md) per i tenant di prova da 7 (limite precedente) a 30 giorni nelle esperienze di ricerca
 - Nuovi pivot di ricerca **denominati** dominio rappresentato e utente rappresentato all'interno di Esplora risorse (e rilevamenti in tempo reale) per cercare gli attacchi di rappresentazione contro utenti o domini protetti.  Per ulteriori informazioni, vedere [details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender per Office 365 Piano 1 o Piano 2)
+- Nuovo primo contatto suggerimento per la sicurezza quando i destinatari ricevono per la prima volta un messaggio di posta elettronica da un mittente o non ricevono spesso messaggi di posta elettronica da un mittente. Per ulteriori informazioni su questa impostazione e su come configurarla Exchange regole del flusso di posta (note anche come regole di trasporto), vedere [First contact suggerimento per la sicurezza](set-up-anti-phishing-policies.md#first-contact-safety-tip).
 
 ## <a name="december-2020"></a>Dicembre 2020
 
@@ -91,7 +100,7 @@ Scopri di più guardando [questo video](https://www.youtube.com/watch?v=Tdz6Kfru
 
 - Il widget **Eventi** imprevisti è ora il widget **Centro** notifiche. Per visualizzare i widget di sicurezza nel Centro sicurezza & conformità, passare a **Gestione delle minacce** \> **Revisione**.) (Microsoft Defender per Office 365 Piano 2)
 
-- [Documenti sicuri in Microsoft 365](safe-docs.md) **(anteprima)**
+- [Cassaforte documenti in Microsoft 365](safe-docs.md) **(anteprima)**
 
 ## <a name="december-2019"></a>Dicembre 2019
 

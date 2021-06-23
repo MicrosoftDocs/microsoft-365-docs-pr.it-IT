@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7a5aa5e049159761c46e2103f7b1ecdd1499f3cd
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934622"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061645"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Condizioni di licenza dell'applicazione Microsoft Defender per Endpoint su Android
 
@@ -56,7 +56,7 @@ per questa applicazione, a meno che non siano presenti altri termini che accompa
 
 1.  **INSTALLATION AND USE RIGHTS.**
 
-    1.  **Installazione e utilizzo.** Puoi installare e usare un numero qualsiasi di copie di questa applicazione su dispositivi abilitati per Android di cui sei proprietario o che controlli. Puoi usare questa applicazione con la sottoscrizione valida dell'azienda a Microsoft Defender for Endpoint o a un servizio online che include le funzionalità di Microsoft Defender for Endpoint.
+    1.  **Installazione e utilizzo.** Puoi installare e usare un numero qualsiasi di copie di questa applicazione su dispositivi abilitati per Android di cui sei proprietario o che controlli. 
 
     2.  **Aggiornamenti.** Gli aggiornamenti a Microsoft Defender for Endpoint potrebbero essere necessari per tutte le funzionalità. Alcune funzionalità potrebbero non essere disponibili in tutti i paesi.
 

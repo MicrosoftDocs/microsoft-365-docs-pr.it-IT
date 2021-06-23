@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Impedire a un ex dipendente di accedere e bloccare l'accesso Microsoft 365 servizi.
-ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840851"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061826"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Passaggio 1 - Impedire a un ex dipendente di accedere e bloccare l'accesso Microsoft 365 servizi
 
@@ -41,12 +41,12 @@ Se è necessario impedire immediatamente l'accesso di un utente, è consigliabil
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 2. Selezionare la casella accanto al nome dell'utente e quindi selezionare **Reimposta password.**
 3. Immettere una nuova password e quindi selezionare **Reimposta**. Non inviarlo a loro.
-4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella **scheda Account** selezionare **Avvia disconnessione.**
+4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella scheda **Account** selezionare Disconnetta **tutte le sessioni.**
 
 Entro un'ora o dopo aver lasciato la pagina Microsoft 365 corrente in cui si trova, viene richiesto di accedere di nuovo. Un token di accesso è valido per un'ora, quindi la sequenza temporale dipende dal tempo che rimane su quel token e dal fatto che si snavigare fuori dalla pagina Web corrente.
   
 > [!IMPORTANT]
-> Se l'utente è Outlook sul Web, basta fare clic nella propria cassetta postale, potrebbe non essere espulso immediatamente. Non appena selezionano un riquadro diverso, ad esempio OneDrive o aggiornano il browser, viene avviata la disconnessione.
+> Se l'utente è in Outlook sul web, basta fare clic nella propria cassetta postale, potrebbe non essere espulso immediatamente. Non appena selezionano un riquadro diverso, ad esempio OneDrive o aggiornano il browser, viene avviata la disconnessione.
   
 Per usare PowerShell per disconnettere immediatamente un utente, vedere il cmdlet [Revoke-AzureADUserAllRefreshToken.](/powershell/module/azuread/revoke-azureaduserallrefreshtoken)
   

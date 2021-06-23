@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fd7c6a217c1bc1ce3b278afb911988b94a6951e0
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933782"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062161"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migrazione da un gruppo HIPS di terze parti alle regole asr
 
@@ -148,6 +148,6 @@ Questo articolo ti aiuta a mappare le regole comuni a Microsoft Defender per End
 
 Vedere anche
 
-- [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction-faq.md)
+- [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction-faq.yml)
 - [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
 - [Valutare le regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)

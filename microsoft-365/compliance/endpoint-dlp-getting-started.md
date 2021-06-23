@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: bf607890fcae34e95da15954349e7190bdbb19ac
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878101"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061663"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introduzione alla prevenzione della perdita di dati degli endpoint
 
@@ -77,9 +77,6 @@ I dati provenienti da Endpoint DLP possono essere visualizzati in [Esplora attiv
 - Amministratore di conformità
 - Amministratore della sicurezza
 - Amministratore dati di conformità
-- Ruolo con autorizzazioni di lettura globali
-- Amministratore che legge i dati di sicurezza
-- Amministratore che legge i report
 
 ### <a name="prepare-your-endpoints"></a>Preparare gli endpoint
 

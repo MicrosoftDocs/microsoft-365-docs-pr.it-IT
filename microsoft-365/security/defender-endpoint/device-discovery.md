@@ -1,6 +1,6 @@
 ---
 title: Panoramica di Device discovery
-description: Scopri come sfruttare l'individuazione degli endpoint in Microsoft 365 Defender per trovare dispositivi non gestiti nella rete
+description: Informazioni su come sfruttare l'individuazione degli endpoint in Microsoft 365 Defender per trovare dispositivi non gestiti nella rete
 keywords: individuazione dei dispositivi, individuazione, passiva, proattiva, rete, visibilità, server, workstation, onboard, dispositivi non gestiti
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 16baaa6fd9865140d42c0ca3a566427f761a28c2
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636243"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062211"
 ---
 # <a name="device-discovery-overview"></a>Panoramica di Device discovery
 
@@ -35,7 +35,6 @@ ms.locfileid: "52636243"
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 La protezione dell'ambiente richiede l'inventario dei dispositivi presenti nella rete. Tuttavia, il mapping dei dispositivi in una rete può spesso essere costoso, impegnativo e dispendioso in termini di tempo. 
 
