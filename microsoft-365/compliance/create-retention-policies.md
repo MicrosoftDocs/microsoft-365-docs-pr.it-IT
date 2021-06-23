@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769430"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053072"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -116,7 +116,7 @@ Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessar
 ### <a name="retention-policy-for-yammer-locations"></a>Criterio di conservazione per posizioni di Yammer
 
 > [!NOTE]
-> I criteri di conservazione per Yammer vengono distribuiti in anteprima. Se i nuovi percorsi di Yammer non sono ancora visualizzati, riprovare tra qualche settimana.
+> I criteri di conservazione per Yammer sono disponibili in anteprima.
 >
 > Per usare questa funzionalità, la rete Yammer deve essere in [Modalità nativa](/yammer/configure-your-yammer-network/overview-native-mode), non nella Modalità ibrida.
 
@@ -127,8 +127,6 @@ Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessar
 3. Nella pagina **Decidere se si vuole conservare il contenuto, eliminarlo e entrambi** della procedura guidata specificare le opzioni di configurazione per la conservazione e l'eliminazione del contenuto. 
     
     È possibile creare un criterio che si limita a conservare il contenuto senza eliminarlo, lo conserva e quindi lo elimina dopo un periodo di tempo specificato oppure semplicemente elimina il contenuto dopo un periodo di tempo specificato. Per altre informazioni, vedere [Impostazioni per la conservazione e l'eliminazione del contenuto](#settings-for-retaining-and-deleting-content) in questa pagina.
-    
-    Non selezionare **Usa le impostazioni di conservazione avanzate**, perché questa opzione non è supportata per le posizioni di Yammer. 
 
 4. Nella pagina **Scegli posizioni** selezionare **Consenti la scelta di posizioni specifiche**. Quindi, attivare una o entrambe le posizioni di Yammer: **Messaggi della community di Yammer** e **Messaggi utente di Yammer**.
     

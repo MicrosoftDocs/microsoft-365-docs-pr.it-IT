@@ -18,12 +18,12 @@ ms.collection:
 description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri dei collegamenti Cassaforte e le impostazioni dei collegamenti Cassaforte globali in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b4254d62cfa5844756392c00686e7b93c466d160
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082757"
+ms.locfileid: "53096769"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i Cassaforte dei collegamenti in Microsoft Defender per Office 365
 
@@ -53,7 +53,7 @@ Gli elementi di base di un criterio Cassaforte collegamenti sono:
 - Il criterio collegamenti **sicuri:** attivare la protezione dei collegamenti di Cassaforte, attivare l'analisi degli URL in tempo reale, specificare se attendere il completamento dell'analisi in tempo reale prima di recapitare il messaggio, attivare l'analisi dei messaggi interni, specificare se tenere traccia dei clic degli utenti sugli URL e specificare se consentire agli utenti di fare clic sull'URL originale.
 - **La regola dei collegamenti sicuri**: Specifica la priorità e i filtri destinatari (a cui si applica il criterio).
 
-La differenza tra questi due elementi non è ovvia quando si gestiscono Cassaforte criteri dei collegamenti nel portale Microsoft 365 Defender:
+La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri Cassaforte collegamenti nel portale Microsoft 365 Defender:
 
 - Quando si crea un criterio Cassaforte collegamenti sicuri, si crea contemporaneamente una regola per i collegamenti sicuri e il criterio collegamenti sicuri associati utilizzando lo stesso nome per entrambi.
 - Quando si modifica un criterio Cassaforte collegamenti sicuri, le impostazioni relative al nome, alla priorità, abilitate o disabilitate e ai filtri destinatari modificano la regola dei collegamenti sicuri. Tutte le altre impostazioni modificano il criterio dei collegamenti sicuri associati.
@@ -110,7 +110,7 @@ La creazione di un criterio personalizzato Cassaforte collegamenti sicuri nel po
 
    Più valori della stessa condizione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
 
-   - **Escludere questi utenti, gruppi e domini**: per aggiungere eccezioni per i destinatari interni a cui si applicano i criteri (eccezione destinatari), selezionare questa opzione e configurare le eccezioni. Impostazioni e comportamento sono equivalenti alle condizioni.
+   - **Escludere questi utenti, gruppi** e domini: per aggiungere eccezioni per i destinatari interni a cui si applica il criterio (eccezioni dei destinatari), selezionare questa opzione e configurare le eccezioni. Impostazioni e comportamento sono equivalenti alle condizioni.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -138,7 +138,7 @@ La creazione di un criterio personalizzato Cassaforte collegamenti sicuri nel po
 
 6. Nella pagina **Notifica** visualizzata selezionare uno dei seguenti valori per Come **si desidera inviare una** notifica agli utenti? :
    - **Usare il testo di notifica predefinito**
-   - **Usa testo di notifica personalizzato:** se si seleziona questo valore, vengono visualizzate le impostazioni seguenti:
+   - **Usa testo di notifica personalizzato**: Se si seleziona questo valore (la lunghezza non può superare i 200 caratteri), vengono visualizzate le impostazioni seguenti:
      - **Usare Microsoft Translator per la localizzazione automatica**
      - **Testo di notifica personalizzato:** immettere il testo della notifica personalizzata in questa casella.
 
@@ -146,7 +146,7 @@ La creazione di un criterio personalizzato Cassaforte collegamenti sicuri nel po
 
 7. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare clic su **Indietro** o selezionare la pagina specifica della procedura guidata.
 
-   Al termine, fare clic su **Invia.**
+   Al termine, fare clic su **Salva**.
 
 8. Nel messaggio di conferma visualizzato fare clic su **Fatto**.
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028788"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096733"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -296,9 +296,11 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Bloccare l'esecuzione dei file eseguibili a meno che non soddisfino un criterio di prevalenza, età o elenco attendibile
 
-Questa regola blocca l'avvio dei tipi di file seguenti, a meno che non soddisfino i criteri di prevalenza o età o non siano in un elenco attendibile o in un elenco di esclusione:
+Questa regola blocca l'avvio dei file eseguibili, ad esempio .exe, .dll o scr, a meno che non vengano soddisfatte le condizioni seguenti:
 
-- File eseguibili (ad esempio .exe, .dll o scr)
+- Prevalenza: i file eseguibili si trovano in più di 1.000 endpoint
+- Età: i file eseguibili sono stati rilasciati più di 24 ore fa
+- Percorso: i file eseguibili sono inclusi in un elenco attendibile o in un elenco di esclusione
 
 L'avvio di file eseguibili non attendibili o sconosciuti può essere rischioso, poiché inizialmente potrebbe non essere chiaro se i file sono dannosi.
 
@@ -404,12 +406,12 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Impedire Office'applicazione di comunicazione di creare processi figlio
 
-Questa regola impedisce a Outlook di creare processi figlio, pur consentendo funzioni di Outlook legittime.
+Questa regola impedisce Outlook di creare processi figlio, pur consentendo funzioni Outlook legittimi.
 
-Questa regola protegge dagli attacchi di social engineering e impedisce allo sfruttamento del codice di sfruttare vulnerabilità in Outlook. Protegge inoltre dalle regole e dagli exploit dei moduli di [Outlook](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) che gli utenti malintenzionati possono utilizzare quando le credenziali di un utente vengono compromesse.
+Questa regola protegge dagli attacchi di social engineering e impedisce allo sfruttamento del codice di sfruttare le vulnerabilità in Outlook. Protegge inoltre dalle regole Outlook e dagli [exploit](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) dei moduli che gli utenti malintenzionati possono utilizzare quando le credenziali di un utente vengono compromesse.
 
 > [!NOTE]
-> Questa regola blocca le descrizioni comandi e le descrizioni comandi dei criteri DLP in Outlook. Questa regola si applica solo Outlook.com Outlook.
+> Questa regola blocca le descrizioni comandi e le descrizioni comandi dei criteri DLP in Outlook. Questa regola si applica solo Outlook e Outlook.com.
 
 Questa regola è stata introdotta in:
 
@@ -434,7 +436,7 @@ Le minacce senza file utilizzano diverse tattiche per rimanere nascoste, per evi
 
 Questa regola è stata introdotta in:
 
-- [Windows 10 versione 1903](/windows/whats-new/whats-new-windows-10-version-1903)
+- [Windows 10, versione 1903](/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Nome Intune: Non disponibile
@@ -448,7 +450,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 Questa regola blocca l'esecuzione dei processi creati [tramite PsExec](/sysinternals/downloads/psexec) [e WMI.](/windows/win32/wmisdk/about-wmi) Sia PsExec che WMI possono eseguire codice in remoto, quindi esiste il rischio che malware abuso di questa funzionalità a scopo di comando e controllo o per diffondere un'infezione in tutta la rete di un'organizzazione.
 
 > [!WARNING]
-> Usa questa regola solo se gestisci i dispositivi con [Intune](/intune) o un'altra soluzione MDM. Questa regola non è compatibile con la gestione tramite [Microsoft Endpoint Configuration Manager](/configmgr) perché questa regola blocca i comandi WMI utilizzati dal client di Configuration Manager per funzionare correttamente.
+> Usa questa regola solo se gestisci i dispositivi con [Intune](/intune) o un'altra soluzione MDM. Questa regola non è compatibile con la gestione [tramite Microsoft Endpoint Configuration Manager](/configmgr) perché questa regola blocca i comandi WMI utilizzati dal client di Configuration Manager per funzionare correttamente.
 
 Questa regola è stata introdotta in:
 
@@ -479,15 +481,15 @@ Nome di Configuration Manager: `Block untrusted and unsigned processes that run 
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Bloccare le chiamate API Win32 dalle macro di Office
+### <a name="block-win32-api-calls-from-office-macros"></a>Bloccare le chiamate API Win32 Office macro
 
 Questa regola impedisce alle macro VBA di chiamare le API Win32.
 
-Vba di Office abilita le chiamate API Win32. Il malware può usare in modo improprio questa funzionalità, ad esempio chiamare le [API Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) per avviare shellcode dannosi senza scrivere nulla direttamente sul disco. La maggior parte delle organizzazioni non si basa sulla possibilità di chiamare le API Win32 nel funzionamento quotidiano, anche se usano macro in altri modi.
+Office VBA abilita le chiamate API Win32. Il malware può usare in modo improprio questa funzionalità, ad esempio chiamare le [API Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) per avviare shellcode dannosi senza scrivere nulla direttamente sul disco. La maggior parte delle organizzazioni non si basa sulla possibilità di chiamare le API Win32 nel funzionamento quotidiano, anche se usano macro in altri modi.
 
 Questa regola è stata introdotta in:
 
-- [Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)

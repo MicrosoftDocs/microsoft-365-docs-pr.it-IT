@@ -17,12 +17,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083537"
+ms.locfileid: "53096157"
 ---
 # <a name="user-reported-message-settings"></a>Impostazioni dei messaggi segnalati dall'utente
 
@@ -134,24 +134,19 @@ I requisiti di formattazione dei messaggi sono descritti nella sezione successiv
 
 Per identificare correttamente i messaggi allegati originali, i messaggi inviati alla cassetta postale personalizzata richiedono una formattazione specifica. Se i messaggi non utilizzano questo formato, i messaggi allegati originali vengono sempre identificati come invii di phishing.
 
-Per una corretta identificazione dei messaggi allegati originali, i messaggi inviati alla cassetta postale personalizzata devono utilizzare la sintassi seguente per l'oggetto (titolo busta):
+Se si desidera specificare il motivo segnalato per i messaggi allegati originali, i messaggi inviati alla cassetta postale personalizzata (non modificare l'allegato) devono iniziare con uno dei prefissi seguenti nell'oggetto (Titolo busta):
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1| o Posta indesiderata:
+- 2| o Non indesiderato
+- 3| o Phishing
 
-dove SafetyAPIAction è uno dei seguenti valori interi:
+Ad esempio:
 
-- 1: Posta indesiderata
-- 2: Non indesiderato
-- 3: Phishing
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-In questo esempio vengono utilizzati i seguenti valori:
+- Entrambi questi messaggi vengono segnalati come Non posta indesiderata in base all'oggetto.
+- Il resto viene ignorato.
 
-- Il messaggio viene segnalato come phishing.
-- L'ID messaggio di rete è 49871234-6dc6-43e8-abcd-08d797f20abe.
-- L'IP del mittente è 167.220.232.101.
-- L'indirizzo da è test@contoso.com.
-- La riga dell'oggetto del messaggio è "test phishing submission"
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 I messaggi che non seguono questo formato non verranno visualizzati correttamente nel portale invii.

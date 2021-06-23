@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b87d1963b8ffa3751c13cea532c8d6436f69fbb9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501219"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096844"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Tenere traccia e rispondere alle minacce emergenti con l'analisi delle minacce 
 
@@ -116,6 +116,24 @@ Ogni report include grafici che forniscono una panoramica della resilienza dell'
 - **Stato configurazione sicura:** indica il numero di dispositivi con impostazioni di sicurezza non configurate correttamente. Applicare le impostazioni di sicurezza consigliate per attenuare la minaccia. I dispositivi sono **considerati sicuri** se hanno applicato _tutte_ le impostazioni rilevate.
 - **Stato patch vulnerabilità:** mostra il numero di dispositivi vulnerabili. Applicare aggiornamenti della sicurezza o patch per risolvere le vulnerabilità sfruttate dalla minaccia.
 
+#### <a name="view-reports-per-threat-tags"></a>Visualizzare report per tag di minaccia
+È possibile filtrare l'elenco dei report delle minacce e visualizzare i report più rilevanti in base a un tag specifico (categoria) o a un tipo di report. 
+- **Tag per le** minacce: consente di visualizzare i report più rilevanti in base a una categoria di minacce specifica. Ad esempio, tutti i report relativi al ransomware.
+- **Tipi di** report: consente di visualizzare i report più rilevanti in base a un tipo di report specifico. Ad esempio, tutti i report che coprono strumenti e tecniche. 
+- **Filtri:** consente di esaminare in modo efficiente l'elenco dei report delle minacce e filtrare la visualizzazione in base a un tag o a un tipo di report specifico. Ad esempio, esaminare tutti i report sulle minacce correlati alla categoria ransomware o i report sulle minacce che coprono le vulnerabilità.
+
+##### <a name="how-does-it-work"></a>Come funziona
+Il team di Microsoft Threat Intelligence ha aggiunto tag di minaccia a ogni rapporto sulle minacce:
+- Sono ora disponibili quattro tag per le minacce:
+  - Ransomware
+  - Phishing
+  - Vulnerabilità
+  - Gruppo attività
+- I tag delle minacce vengono presentati nella parte superiore della pagina di analisi delle minacce, con contatori per il numero di report disponibili in ogni tag.
+    ![tag di minaccia](../../media/threat-analytics/ta-threattags-mtp.png)
+- L'elenco può anche essere ordinato in base ai tag delle   ![ minacce: elenchi](../../media/threat-analytics//ta-taglist-mtp.png)
+- I filtri sono disponibili per tag di minaccia e tipo di report:   ![ filtri](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Report degli analisti: ottenere informazioni approfondite dai ricercatori di sicurezza Microsoft
 Nella sezione **Report analista** leggere la descrizione dettagliata dell'esperto. La maggior parte dei report fornisce descrizioni dettagliate delle catene di attacco, tra cui tattiche e tecniche mappate al framework CK di MITRE ATT&, elenchi esaustivi di suggerimenti e potenti indicazioni per la ricerca di [minacce.](advanced-hunting-overview.md)
 
@@ -165,9 +183,9 @@ _Sezione Mitigazioni di un report di analisi delle minacce_
 ## <a name="additional-report-details-and-limitations"></a>Ulteriori dettagli e limitazioni del report
 >[!NOTE]
 >Nell'ambito dell'esperienza di sicurezza unificata, l'analisi delle minacce è ora disponibile non solo per Microsoft Defender for Endpoint, ma anche per Microsoft Defender per i titolari di licenze Office E5.
->Se non si usa il portale di sicurezza di Microsoft 365 (Microsoft 365 Defender), è anche possibile visualizzare i dettagli del report (senza i dati di Microsoft Defender per Office) nel portale di Microsoft Defender Security Center (Microsoft Defender per endpoint). 
+>Se non si utilizza il portale di sicurezza di Microsoft 365 (Microsoft 365 Defender), è anche possibile visualizzare i dettagli del report (senza i dati di Microsoft Defender per Office) nel portale di Microsoft Defender Security Center (Microsoft Defender per endpoint). 
 
-Per accedere al report di analisi delle minacce sono necessari determinati ruoli e autorizzazioni. Per [informazioni dettagliate,](custom-roles.md) vedi Ruoli personalizzati nel controllo di accesso basato sui ruoli per Microsoft 365 Defender.
+Per accedere al report di analisi delle minacce sono necessari determinati ruoli e autorizzazioni. Per [informazioni dettagliate, vedere Custom roles in role-based access control for Microsoft 365 Defender.](custom-roles.md)
   - Per visualizzare gli avvisi, gli eventi imprevisti o i dati degli asset a impatto, devi disporre delle autorizzazioni per Microsoft Defender per Office o i dati degli avvisi di Microsoft Defender per endpoint o entrambi.
   - Per visualizzare i tentativi di posta elettronica non consentiti, è necessario disporre delle autorizzazioni per Microsoft Defender per Office dati di ricerca. 
   - Per visualizzare le mitigazioni, devi disporre delle autorizzazioni per gestione di minacce e vulnerabilità dati in Microsoft Defender per Endpoint.

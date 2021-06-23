@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 582116047900fc5f28d5580398cf5c065e6a3e23
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053024"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096817"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novità di Microsoft 365 Defender
 
@@ -38,6 +38,8 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## <a name="june-2021"></a>Giugno 2021
+- Tag delle minacce nel [Microsoft 365 Defender di analisi delle minacce](threat-analytics.md) <br> I tag per le minacce consentono di concentrarsi su categorie di minacce specifiche ed esaminare i report più rilevanti. 
 
 ## <a name="april-2021"></a>Aprile 2021
 - Microsoft 365 Defender<br> Il portale [Microsoft 365 Defender](https://security.microsoft.com) è ora disponibile. Questa nuova esperienza riunisce Defender for Endpoint, Defender for Office 365, Defender for Identity e altro ancora in un unico portale. Questa è la nuova sede per gestire i controlli di sicurezza. [Informazioni sulle novità](./overview-security-center.md).

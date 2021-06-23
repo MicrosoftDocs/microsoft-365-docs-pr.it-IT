@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono conoscere i criteri anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e5cd60915699cd2adb42e575c25912f5f164a5b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055136"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096788"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri anti-phishing in Microsoft 365
 
@@ -141,9 +141,11 @@ Per ulteriori informazioni, vedere [Identificare i messaggi sospetti in Outlook.
 Le **impostazioni Mostra primo** contatto suggerimento per la sicurezza contatto sono disponibili in EOP e Defender per le organizzazioni Office 365 e non hanno alcuna dipendenza dalle impostazioni di spoof intelligence o protezione della rappresentazione. Il suggerimento per la sicurezza viene visualizzato ai destinatari negli scenari seguenti:
 
 - La prima volta che si ottiene un messaggio da un mittente
-- Se spesso non ottengono messaggi dal mittente.
+- Spesso non ottengono messaggi dal mittente.
 
-![Il testo dell'suggerimento per la sicurezza per la protezione della rappresentazione con più destinatari.](../../media/safety-tip-first-contact-multiple-recipients.png)
+![Primo contatto suggerimento per la sicurezza per i messaggi con un destinatario.](../../media/safety-tip-first-contact-one-recipient.png)
+
+![Primo contatto suggerimento per la sicurezza per i messaggi con più destinatari.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 Questa funzionalità aggiunge un ulteriore livello di protezione da potenziali attacchi di rappresentazione, quindi ti consigliamo di attivarla.
 

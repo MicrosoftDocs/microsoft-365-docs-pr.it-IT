@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 65c9216e30c2db04b1981a17d73b3a9f0b5f1594
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: e39f4e65d5c4bdf4235e7ae2d8aa207c986c76c8
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007502"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055047"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -224,17 +224,12 @@ Quando le etichette di conservazione contrassegnano gli elementi come record o r
 
 #### <a name="monitoring-retention-labels"></a>Monitoraggio delle etichette di conservazione
 
-Dal Centro conformità Microsoft 365 selezionare **Classificazione dei dati** > **Panoramica** per monitorare il modo in cui le etichette di conservazione sono in uso nel tenant e identificare la posizione in cui si trovano gli elementi contrassegnati. Per ulteriori informazioni, inclusi i prerequisiti importanti, vedere [Conoscere i dati - panoramica sulla classificazione dei dati](data-classification-overview.md).
+Dal Centro conformità Microsoft 365 selezionare **Classificazione dei dati** e la pagina **Panoramica** per monitorare il modo in cui le etichette di conservazione sono in uso nel tenant e identificare la posizione in cui si trovano gli elementi contrassegnati. Per ulteriori informazioni, inclusi i prerequisiti importanti, vedere [Informazioni sulla classificazione dei dati](data-classification-overview.md).
 
 È quindi possibile eseguire il drill-down tra i dettagli usando [l’esploratore dei contenuti](data-classification-content-explorer.md) e [l’esploratore delle attività](data-classification-activity-explorer.md).
 
 > [!TIP]
 >È consigliabile usare alcuni degli altri approfondimenti per la classificazione dei dati, ad esempio i classificatori addestrabili e i tipi di informazioni riservate, per identificare il contenuto che potrebbe essere necessario mantenere o eliminare o gestire come risultato.
-
-Il Centro sicurezza e conformità di Office 365 riceve le informazioni generali equivalenti per la conservazione delle etichette dalla **Gestione delle informazioni** > **Dashboard**, e informazioni più dettagliate dalla **Gestione delle informazioni** > **Esploratore delle attività di etichettatura**. Per ulteriori informazioni sul monitoraggio delle etichette di conservazione nell’interfaccia di amministrazione precedente, vedere la seguente documentazione:
-- [Visualizzare i report della gestione dei dati](view-the-data-governance-reports.md)
-- [Introduzione alla classificazione dei dati](data-classification-overview.md).
-- [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
 
 #### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>Usare Cerca Contenuto per trovare tutti i contenuti su una specifica etichetta di conservazione
 

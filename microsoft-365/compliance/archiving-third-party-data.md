@@ -22,77 +22,141 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come importare dati di terze parti da piattaforme di social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione documenti Microsoft 365 cassette postali.
-ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: de4c3c6454809cc1b7f78c0e5790fcbe8b3887c0
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061730"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096169"
 ---
-# <a name="archive-third-party-data"></a>Archiviare i dati di terze parti
+# <a name="archive-third-party-data-in-microsoft-365"></a>Archiviare dati di terze parti in Microsoft 365
 
 Microsoft 365 consente agli amministratori di utilizzare i connettori dati per importare e archiviare dati di terze parti da piattaforme di social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione documenti nelle cassette postali dell'organizzazione Microsoft 365 aziendale. Uno dei vantaggi principali dell'utilizzo dei connettori di dati per importare e archiviare dati di terze parti in Microsoft 365 è che è possibile applicare diverse soluzioni di conformità Microsoft 365 dopo l'importazione. Ciò consente di garantire che i dati non Microsoft dell'organizzazione siano conformi alle normative e agli standard che influiscono sull'organizzazione.
 
 ## <a name="third-party-data-connectors"></a>Connettori dati di terze parti
 
-Nella tabella seguente sono elencati i connettori dati di terze parti disponibili nella Centro conformità Microsoft 365. La tabella riepiloga inoltre le soluzioni di conformità che è possibile applicare ai dati di terze parti dopo l'importazione e l'archiviazione in Microsoft 365. Vedere la [sezione successiva per](#overview-of-compliance-solutions-that-support-third-party-data) una descrizione più dettagliata di ogni soluzione di conformità e su come può trarre vantaggio da dati di terze parti.
+Il Centro conformità Microsoft 365 fornisce connettori di dati nativi di terze parti da Microsoft per importare dati da diverse origini dati, ad esempio LinkedIn, Instant Bloomberg e Twitter e i connettori di dati che supportano la soluzione di gestione dei rischi Insider. Oltre a questi connettori di dati, Microsoft collabora con i partner seguenti per fornire molti altri connettori dati di terze parti nell'Centro conformità Microsoft 365. L'organizzazione collabora con questi partner per configurare il servizio di archiviazione prima di creare un connettore dati corrispondente nella Centro conformità Microsoft 365.
 
-> [!TIP]
-> Fare clic sul collegamento nella colonna **Dati di terze** parti per seguire le istruzioni dettagliate per la creazione di un connettore per tale tipo di dati.
+- [Veritas](#veritas-data-connectors)
+
+- [TeleMessage](#telemessage-data-connectors)
+
+- [17a-4 LLC](#17a-4-data-connectors)
+
+- [CellTrust](#celltrust-data-connectors)
+
+I dati di terze parti elencati nelle sezioni successive (ad eccezione dei dati delle risorse umane e dei dati di badging fisici utilizzati per la soluzione di gestione dei rischi di Microsoft 365 Insider) vengono importati nelle cassette postali degli utenti. Le Microsoft 365 di conformità che supportano i dati di terze parti vengono applicate alla cassetta postale dell'utente in cui sono archiviati i dati.
+
+### <a name="microsoft-data-connectors"></a>Connettori dati Microsoft
+
+Nella tabella seguente sono elencati i connettori dati di terze parti nativi disponibili nella Centro conformità Microsoft 365. La tabella riepiloga inoltre le soluzioni di conformità che è possibile applicare dopo l'importazione e l'archiviazione di dati di terze parti in Microsoft 365. Vedere la [sezione Panoramica delle soluzioni](#overview-of-compliance-solutions-that-support-third-party-data) di conformità che supportano i dati di terze parti per una descrizione più dettagliata di ogni soluzione di conformità e su come supporta i dati di terze parti.
+
+Fare clic sul collegamento nella colonna **Dati di terze** parti per seguire le istruzioni dettagliate per la creazione di un connettore per tale tipo di dati.
 
 |Dati di terze parti  |Conservazione per controversia legale|eDiscovery  |Impostazioni di conservazione  |Gestione dei record  |Conformità delle comunicazioni  |Gestione dei rischi Insider  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Android <sup>1</sup>](archive-android-archiver-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[AT&T Network <sup>1</sup>](archive-att-network-archiver-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Bell Network <sup>1</sup>](archive-bell-network-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Cisco Jabber su MS SQL <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Cisco Jabber su Oracle <sup>2</sup>](archive-ciscojabberonoracle-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Cisco Jabber su PostgreSQL <sup>2</sup>](archive-ciscojabberonpostgresql-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[EML <sup>2</sup>](archive-eml-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[Enterprise Numero <sup>1</sup>](archive-enterprise-number-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[FX Connessione <sup>2</sup>](archive-fxconnect-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Risorse umane](import-hr-data.md) ||||||![Segno di spunta](../media/checkmark.png)
 |[ICE Chat](archive-icechat-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Jive <sup>2</sup>](archive-jive-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[MS database SQL <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[Rete O2 <sup>1</sup>](archive-o2-network-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 |[Badging fisico](import-physical-badging-data.md) ||||||![Segno di spunta](../media/checkmark.png)|
-|[Pivot <sup>2</sup>](archive-pivot-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Redtail Speak <sup>2</sup>](archive-redtailspeak-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Reuters Dealing <sup>2</sup>](archive-reutersdealing-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Reuters Eikon <sup>2</sup>](archive-reuterseikon-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[Segnale <sup>1</sup>](archive-signal-archiver-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Skype for Business <sup>2</sup>](archive-skypeforbusiness-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Slack eDiscovery <sup>2</sup>](archive-slack-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[<sup>Sinfonia 2</sup>](archive-symphony-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Telegramma <sup>1</sup>](archive-telegram-archiver-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Rete TELUS <sup>1</sup>](archive-telus-network-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Delimitato da testo <sup>2</sup>](archive-text-delimited-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[Verizon Network <sup>1</sup>](archive-verizon-network-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Pagine Web <sup>2</sup>](archive-webpagecapture-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[WeChat <sup>1</sup>](archive-wechat-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Workplace da Facebook <sup>2</sup>](archive-workplacefromfacebook-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[XIP <sup>2</sup>](archive-xip-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[XSLT/XML <sup>2</sup>](archive-xslt-xml-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
-|[Yieldbroker <sup>2</sup>](archive-yieldbroker-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
-|[Zoom riunioni <sup>2</sup>](archive-zoommeetings-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
 ||||||||
 
-> [!NOTE]
-> <sup>1</sup> Connettore dati fornito da TeleMessage. Prima di poter archiviare i dati in Microsoft 365, è necessario collaborare con TeleMessage per configurare il servizio di archiviazione per l'organizzazione. Per ulteriori informazioni, vedere la sezione relativa ai prerequisiti nelle istruzioni dettagliate per questo tipo di dati. I connettori di dati TeleMessage sono disponibili anche in GCC nel cloud Microsoft 365 us government. Per ulteriori informazioni, vedere la sezione [Connettori di dati](#data-connectors-in-the-us-government-cloud) nel cloud del governo statunitense in questo articolo. <br/><br/><sup>2</sup> Connettore dati fornito da Veritas. Prima di poter archiviare i dati in Microsoft 365, è necessario collaborare con Veritas per configurare il servizio di archiviazione per l'organizzazione. Per ulteriori informazioni, vedere la sezione relativa ai prerequisiti nelle istruzioni dettagliate per questo tipo di dati.
+### <a name="veritas-data-connectors"></a>Connettori dati Veritas
 
-I dati di terze parti elencati nella tabella precedente (ad eccezione dei dati delle risorse umane e dei dati fisici di badging) vengono importati nelle cassette postali degli utenti. Le soluzioni di conformità corrispondenti che supportano i dati di terze parti vengono applicate alla cassetta postale dell'utente in cui sono archiviati i dati.
+Nella tabella di questa sezione sono elencati i connettori di dati di terze parti disponibili in collaborazione con Veritas. La tabella riepiloga inoltre le soluzioni di conformità che è possibile applicare ai dati di terze parti dopo l'importazione e l'archiviazione in Microsoft 365. Vedere la [sezione Panoramica delle soluzioni](#overview-of-compliance-solutions-that-support-third-party-data) di conformità che supportano i dati di terze parti per una descrizione più dettagliata di ogni soluzione di conformità e su come supporta i dati di terze parti.
+
+Prima di poter archiviare dati di terze parti in Microsoft 365, è necessario collaborare con Veritas per configurare il servizio di archiviazione (denominato *Merge1)* per l'organizzazione. Per ulteriori informazioni, fare clic sul collegamento nella colonna **Dati** di terze parti per seguire le istruzioni dettagliate per la creazione di un connettore per tale tipo di dati.
+
+|Dati di terze parti  |Conservazione per controversia legale|eDiscovery  |Impostazioni di conservazione  |Gestione dei record  |Conformità delle comunicazioni  |Gestione dei rischi Insider  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust](archive-celltrust-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Cisco Jabber su MS SQL](archive-ciscojabberonmssql-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Cisco Bladeber su Oracle](archive-ciscojabberonoracle-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Cisco Jabber su PostgreSQL](archive-ciscojabberonpostgresql-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[.EML](archive-eml-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
+|[Connessione FX](archive-fxconnect-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Jive](archive-jive-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Database MS SQL](archive-mssqldatabaseimporter-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
+|[Pivot](archive-pivot-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Redtail Speak](archive-redtailspeak-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Reuters Dealing](archive-reutersdealing-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Reuters Eikon](archive-reuterseikon-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Reuters FX](archive-reutersfx-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Salesforce Chatter](archive-salesforcechatter-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
+|[ServiceNow](archive-servicenow-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
+|[Margine di flessibilità eDiscovery](archive-slack-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Symphony](archive-symphony-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Delimitato da testo](archive-text-delimited-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
+|[Webex Teams](archive-webexteams-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Pagine Web](archive-webpagecapture-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
+|[Workplace from Facebook](archive-workplacefromfacebook-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[XIP](archive-xip-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[XSLT/XML](archive-xslt-xml-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|||
+|[Yieldbroker](archive-yieldbroker-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Riunioni Zoom](archive-zoommeetings-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+||||||||
+
+### <a name="telemessage-data-connectors"></a>Connettori dati TeleMessage
+
+Nella tabella di questa sezione sono elencati i connettori di dati di terze parti disponibili in collaborazione con TeleMessage. La tabella riepiloga inoltre le soluzioni di conformità che è possibile applicare ai dati di terze parti dopo l'importazione e l'archiviazione in Microsoft 365. Vedere la [sezione Panoramica delle soluzioni](#overview-of-compliance-solutions-that-support-third-party-data) di conformità che supportano i dati di terze parti per una descrizione più dettagliata di ogni soluzione di conformità e su come supporta i dati di terze parti.
+
+Prima di poter archiviare dati di terze parti in Microsoft 365, è necessario collaborare con TeleMessage per configurare il servizio di archiviazione per l'organizzazione. Per ulteriori informazioni, fare clic sul collegamento nella colonna **Dati** di terze parti per seguire le istruzioni dettagliate per la creazione di un connettore per tale tipo di dati.
+
+I connettori di dati TeleMessage sono disponibili anche in GCC nel cloud Microsoft 365 us government. Per ulteriori informazioni, vedere la sezione Connettori di dati nel cloud del governo statunitense in questo articolo.
+
+|Dati di terze parti  |Conservazione per controversia legale|eDiscovery  |Impostazioni di conservazione  |Gestione dei record  |Conformità delle comunicazioni  |Gestione dei rischi Insider  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Android ](archive-android-archiver-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[AT&T Network ](archive-att-network-archiver-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Bell Network ](archive-bell-network-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Enterprise Number](archive-enterprise-number-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Rete O2 ](archive-o2-network-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Rete TELUS ](archive-telus-network-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Rete Verizon ](archive-verizon-network-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[WeChat ](archive-wechat-data.md)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[WhatsApp ](archive-whatsapp-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+||||||||
+
+### <a name="17a-4-data-connectors"></a>Connettori dati 17a-4
+
+Nella tabella di questa sezione sono elencati i connettori di dati di terze parti disponibili in collaborazione con 17a-4 LLC. La tabella riepiloga inoltre le soluzioni di conformità che è possibile applicare ai dati di terze parti dopo l'importazione e l'archiviazione in Microsoft 365. Vedere la [sezione Panoramica delle soluzioni](#overview-of-compliance-solutions-that-support-third-party-data) di conformità che supportano i dati di terze parti per una descrizione più dettagliata di ogni soluzione di conformità e su come supporta i dati di terze parti.
+
+Prima di poter archiviare dati di terze parti in Microsoft 365, è necessario collaborare con Veritas per configurare il servizio di archiviazione (denominato *DataParser)* per l'organizzazione. Per ulteriori informazioni, fare clic sul collegamento nella colonna **Dati** di terze parti per seguire le istruzioni dettagliate per la creazione di un connettore per tale tipo di dati.
+
+|Dati di terze parti  |Conservazione per controversia legale|eDiscovery  |Impostazioni di conservazione  |Gestione dei record  |Conformità delle comunicazioni  |Gestione dei rischi Insider  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[BlackBerry](archive-17a-4-blackberry-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Bloomberg ](archive-17a-4-bloomberg-data.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Cisco Jabber ](archive-17a-4-cisco-jabber-data.md)   |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Cisco Webex ](archive-17a-4-webex-teams-data.md)   |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[FactSet ](archive-17a-4-factset-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Fuze ](archive-17a-4-fuze-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Fx Connessione](archive-17a-4-fxconnect-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[ICE Chat](archive-17a-4-ice-im-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[InvestEdge ](archive-17a-4-investedge-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[LivePerson Conversational Cloud ](archive-17a-4-liveperson-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Quip ](archive-17a-4-quip-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[ServiceNow ](archive-17a-4-servicenow-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Slack ](archive-17a-4-slack-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Sinfonia ](archive-17a-4-symphony-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|[Zoom ](archive-17a-4-zoom-data.md)    |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+||||||||
+
+### <a name="celltrust-data-connectors"></a>Connettori dati CellTrust
+
+Nella tabella di questa sezione sono elencati i connettori di dati di terze parti disponibili in collaborazione con CellTrust. La tabella riepiloga inoltre le soluzioni di conformità che è possibile applicare ai dati di terze parti dopo l'importazione e l'archiviazione in Microsoft 365. Vedere la [sezione Panoramica delle soluzioni](#overview-of-compliance-solutions-that-support-third-party-data) di conformità che supportano i dati di terze parti per una descrizione più dettagliata di ogni soluzione di conformità e su come supporta i dati di terze parti.
+
+Prima di poter archiviare dati di terze parti in Microsoft 365, è necessario collaborare con CellTrust per configurare il servizio di archiviazione (denominato *CellTrust SL2)* per l'organizzazione. Per ulteriori informazioni, fare clic sul collegamento nella colonna **Dati** di terze parti per istruzioni dettagliate per la creazione di un connettore SL2 CellTrust.
+
+|Dati di terze parti  |Conservazione per controversia legale|eDiscovery  |Impostazioni di conservazione  |Gestione dei record  |Conformità delle comunicazioni  |Gestione dei rischi Insider  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+||||||||
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Panoramica delle soluzioni di conformità che supportano dati di terze parti
 
