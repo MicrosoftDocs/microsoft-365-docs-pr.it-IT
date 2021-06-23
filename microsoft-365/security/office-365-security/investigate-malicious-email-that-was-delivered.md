@@ -20,12 +20,12 @@ description: Informazioni su come usare le funzionalità di analisi e risposta a
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e99cda906e97db72a440c3daf509a767181e5342
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: e49963d1ffaeb7bce20f21f82f37fd3675b9cdd3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029798"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083357"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Analizzare i messaggi di posta elettronica dannosi recapitati in Microsoft 365
 
@@ -51,7 +51,7 @@ Verificare che vengano soddisfatti i seguenti requisiti:
 
 - L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, antimalware, anti-phishing e così via. Vedere [Protezione dalle minacce in Office 365](protect-against-threats.md).
 
-- Si è un amministratore globale o si dispone del ruolo Amministratore sicurezza o Ricerca ed eliminazione assegnato nel Microsoft 365 Defender portale. Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). Per alcune azioni, è necessario assegnare anche il ruolo Anteprima.
+- Si è un amministratore globale o si dispone del ruolo Amministratore sicurezza o Ricerca ed eliminazione assegnato nel Microsoft 365 Defender portale. Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Per alcune azioni, è necessario assegnare anche il ruolo Anteprima.
 
 ### <a name="preview-role-permissions"></a>Autorizzazioni per il ruolo Anteprima
 
@@ -73,7 +73,7 @@ Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazion
 >
 > Al ruolo Amministratore globale viene assegnato il interfaccia di amministrazione di Microsoft 365 ( ) e i ruoli Amministratore sicurezza e Lettore sicurezza vengono assegnati in Microsoft 365 Defender <https://admin.microsoft.com> ( <https://security.microsoft.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere Autorizzazioni nel [portale Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 
-Sappiamo che l'anteprima e il download della posta elettronica sono attività sensibili e quindi il controllo è abilitato per queste attività. Una volta che un amministratore esegue queste attività sui messaggi di posta elettronica, i log di controllo vengono generati per lo stesso e possono essere visibili nel Centro sicurezza Office 365 & conformità ( <https://protection.office.com> ). Passare alla **sezione Ricerca** log di controllo  >  **e** filtrare in base al nome dell'amministratore nella sezione Ricerca. I risultati filtrati mostreranno l'attività **AdminMailAccess.** Selezionare una riga per visualizzare i dettagli nella sezione **Ulteriori informazioni** sulla posta elettronica in anteprima o scaricata.
+Sappiamo che l'anteprima e il download della posta elettronica sono attività sensibili e quindi il controllo è abilitato per queste attività. Una volta che un amministratore esegue queste attività sui messaggi di posta elettronica, i log di controllo vengono generati per lo stesso e possono essere visibili nel portale di Microsoft 365 Defender ( <https://security.microsoft.com> ). Vai alla **scheda** \> **Controlla** ricerca e filtra il nome dell'amministratore nella **casella** Utenti. I risultati filtrati mostreranno l'attività **AdminMailAccess.** Selezionare una riga per visualizzare i dettagli nella sezione **Ulteriori informazioni** sulla posta elettronica in anteprima o scaricata.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Trovare messaggi di posta elettronica sospetti recapitati
 

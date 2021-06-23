@@ -16,16 +16,16 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: Gli amministratori possono scoprire come attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams, incluso come impostare gli avvisi per i file rilevati.
+description: Gli amministratori possono informazioni su come attivare Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams, incluso come impostare gli avvisi per i file rilevati.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a654db40e5dec8d23d07ec7455216fe4e0a8c0e7
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b64b3cfb29b3be999c9e26804e35dc4d02e48fbb
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933012"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083093"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams
 
@@ -35,15 +35,15 @@ ms.locfileid: "52933012"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams protegge l'organizzazione dalla condivisione accidentale di file dannosi. Per ulteriori informazioni, vedere Allegati sicuri [per SharePoint, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams protegge l'organizzazione dalla condivisione accidentale di file dannosi. Per ulteriori informazioni, vedere [Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-In questo articolo vengono descritti i passaggi per abilitare e configurare allegati sicuri per SharePoint, OneDrive e Microsoft Teams.
+In questo articolo vengono descritti i passaggi per abilitare e configurare Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alla **pagina Allegati sicuri,** aprire <https://security.microsoft.com/safeattachmentv2> .
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alla pagina **Cassaforte allegati,** aprire <https://security.microsoft.com/safeattachmentv2> .
 
-- Per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams, è necessario essere membri  dei gruppi  di ruoli Gestione organizzazione o Amministratore sicurezza nel portale di Microsoft 365 Defender. Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
+- Per attivare Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams, è necessario essere membri dei gruppi di  ruoli  Gestione organizzazione o Amministratore sicurezza nel portale di Microsoft 365 Defender. Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 - Per usare SharePoint PowerShell online per impedire agli utenti di scaricare file dannosi, [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) è necessario essere membri dei ruoli [Amministratore](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) globale o Amministratore SharePoint in Azure AD.
 
@@ -51,21 +51,21 @@ In questo articolo vengono descritti i passaggi per abilitare e configurare alle
 
 - Consentire fino a 30 minuti per l'applicazione delle impostazioni.
 
-## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Passaggio 1: usare il portale di Microsoft 365 Defender per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams
+## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Passaggio 1: usare il portale Microsoft 365 Defender per attivare Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **sezione** Allegati \> **sicuri**.
+1. Nel portale Microsoft 365 Defender, passare alla sezione **Criteri & criteri** di minaccia Cassaforte \>  \>  \> **allegati**.
 
-2. Nella pagina **Allegati sicuri** fare clic su **Impostazioni globali.**
+2. Nella pagina **Cassaforte allegati** fare clic su **Impostazioni globali.**
 
 3. Nel **riquadro a comparsa** Impostazioni globali visualizzato passare alla sezione Proteggi **file in SharePoint, OneDrive e Microsoft Teams.**
 
-   Sposta l'interruttore Attiva Defender per Office 365 per **SharePoint, OneDrive** e Microsoft Teams verso destra Attiva per attivare Allegati sicuri per SharePoint, OneDrive e ![ ](../../media/scc-toggle-on.png) Microsoft Teams.
+   Sposta l'interruttore Attiva Defender per Office 365 per **SharePoint, OneDrive** e Microsoft Teams verso destra Attiva per attivare gli allegati Cassaforte per SharePoint, OneDrive e ![ ](../../media/scc-toggle-on.png) Microsoft Teams.
 
-   Al termine, fare clic su **Salva**.
+   Al termine, scegliere **Salva**.
 
-### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Usare Exchange Online PowerShell per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams
+### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Usare Exchange Online PowerShell per attivare Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams
 
-Se si preferisce usare PowerShell per attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams, connettersi [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ed eseguire il comando seguente:
+Se si preferisce utilizzare PowerShell per attivare Cassaforte Attachments per SharePoint, OneDrive e Microsoft Teams, connettersi [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ed eseguire il comando seguente:
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
@@ -75,7 +75,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-AtpPoli
 
 ## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Passaggio 2: (scelta consigliata) Utilizzare SharePoint PowerShell online per impedire agli utenti di scaricare file dannosi
 
-Per impostazione predefinita, gli utenti non possono aprire, spostare, copiare o condividere file dannosi rilevati dagli allegati sicuri per <sup>\*</sup> SharePoint, OneDrive e Microsoft Teams. Tuttavia, possono eliminare e scaricare file dannosi.
+Per impostazione predefinita, gli utenti non possono aprire, spostare, copiare o condividere file dannosi rilevati dagli allegati di Cassaforte per <sup>\*</sup> SharePoint, OneDrive e Microsoft Teams. Tuttavia, possono eliminare e scaricare file dannosi.
 
 <sup>\*</sup> Se gli utenti passano **a Gestisci accesso,** **l'opzione** Condividi è ancora disponibile.
 
@@ -94,9 +94,9 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-SPOTena
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Passaggio 3 (consigliato) Usare il portale Microsoft 365 Defender per creare un criterio di avviso per i file rilevati
 
-È possibile creare un criterio di avviso che notifica all'utente e ad altri amministratori quando allegati sicuri per SharePoint, OneDrive e Microsoft Teams rileva un file dannoso. Per altre informazioni sugli avvisi, vedi Creare avvisi attività nel [portale Microsoft 365 Defender.](../../compliance/create-activity-alerts.md)
+È possibile creare un criterio di avviso che notifica all'utente e ad altri amministratori quando Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams rileva un file dannoso. Per ulteriori informazioni sugli avvisi, vedere [Create activity alerts in the Microsoft 365 Defender portal.](../../compliance/create-activity-alerts.md)
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** \> **di avviso** o aprire <https://security.microsoft.com/alertpolicies> .
+1. Nel portale Microsoft 365 Defender, passare a Criteri **& criteri** \> **di avviso** o aprire <https://security.microsoft.com/alertpolicies> .
 
 2. Nella pagina **Criterio avviso** fare clic su Nuovo criterio **di avviso.**
 
@@ -140,9 +140,9 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-Activit
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
-- Per verificare di aver attivato correttamente gli allegati sicuri per SharePoint, OneDrive e Microsoft Teams, eseguire una delle operazioni seguenti:
+- Per verificare di aver attivato correttamente Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams, eseguire una delle operazioni seguenti:
 
-  - Nel portale di Microsoft 365 Defender passare **alla** sezione Criteri & regole criteri di minaccia Allegati sicuri, selezionare Impostazioni globali e verificare il valore dell'impostazione Attiva Defender per Office 365 per \>  \>  \>  **SharePoint, OneDrive e Microsoft Teams.** 
+  - Nel portale di Microsoft 365 Defender passare **alla** sezione Criteri & regole criteri di minaccia Cassaforte Allegati, selezionare Impostazioni globali e verificare il valore dell'impostazione Attiva Defender per Office 365 per \>  \>  \>  **SharePoint, OneDrive e Microsoft Teams.** 
 
   - In Exchange Online PowerShell, eseguire il comando seguente per verificare l'impostazione della proprietà:
 
@@ -161,8 +161,8 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere New-Activit
   Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - Per verificare di aver configurato correttamente un criterio di avviso per i file rilevati, eseguire una delle operazioni seguenti:
-  - Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di avviso Selezionare il criterio di avviso e verificare \>  \> le impostazioni.
-  - In Microsoft 365 Defender Portal PowerShell, sostituire con il nome del criterio di avviso, eseguire il \<AlertPolicyName\> comando seguente e verificare i valori delle proprietà:
+  - Nel portale Microsoft 365 Defender, andare a Criteri **& criteri** di avviso Selezionare il criterio di avviso e verificare \>  \> le impostazioni.
+  - In Microsoft 365 Defender PowerShell del portale, sostituire con il nome del criterio di avviso, eseguire il \<AlertPolicyName\> comando seguente e verificare i valori delle proprietà:
 
     ```powershell
     Get-ActivityAlert -Identity "<AlertPolicyName>"

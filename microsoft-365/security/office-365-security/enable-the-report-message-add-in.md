@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come abilitare i componenti aggiuntivi Segnala messaggio o Segnala phishing per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
+description: Informazioni su come abilitare i componenti aggiuntivi Segnala messaggio o Segnala phishing per Outlook e Outlook sul web, per singoli utenti o per l'intera organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8949322b0b691d59e59e5f7b80d2b9650e4115d5
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: d5e336dcab9e3787d8c5245cdbe32855c59021f7
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029910"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082769"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Abilitare i componenti aggiuntivi Segnala messaggio o Segnala phishing
 
@@ -34,9 +34,9 @@ ms.locfileid: "53029910"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Se si è un amministratore di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online, è consigliabile utilizzare il portale invii nel portale di Microsoft 365 Defender. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Se si è un amministratore di un'organizzazione Microsoft 365 con cassette postali Exchange Online,  è consigliabile utilizzare la pagina Invii nel portale Microsoft 365 Defender. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono agli utenti di segnalare facilmente falsi positivi (buona posta elettronica contrassegnata come non buona) o falsi negativi (posta elettronica non consentita) a Microsoft e alle sue affiliate per l'analisi.
+I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul web (in precedenza noto come Outlook Web App) consentono agli utenti di segnalare facilmente falsi positivi (buona posta elettronica contrassegnata come non positiva) o falsi negativi (posta elettronica non consentita) a Microsoft e alle relative affiliate per l'analisi.
 
 Microsoft usa questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica. Si supponga, ad esempio, che gli utenti segnalano molti messaggi utilizzando il componente aggiuntivo Segnala phishing. Queste informazioni vengono visualizzate nel dashboard di sicurezza e in altri report. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per indicare che potrebbe essere necessario aggiornare i criteri anti-phishing.
 
@@ -48,29 +48,29 @@ Il componente aggiuntivo Segnala phishing consente di segnalare solo i messaggi 
 
 Se si è un singolo utente, è possibile abilitare entrambi i componenti aggiuntivi.
 
-Se si è un amministratore globale o un amministratore di Exchange Online ed Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile abilitare il componente aggiuntivo Segnala messaggio e il componente aggiuntivo Segnala phishing per l'organizzazione. Entrambi i componenti aggiuntivi sono ora disponibili tramite [distribuzione centralizzata.](../../admin/manage/centralized-deployment-of-add-ins.md)
+Se si è un amministratore globale o un amministratore di Exchange Online e Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile abilitare il componente aggiuntivo Segnala messaggio e il componente aggiuntivo Segnala phishing per l'organizzazione. Entrambi i componenti aggiuntivi sono ora disponibili tramite [distribuzione centralizzata.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni necessarie prima di iniziare
 
-- Sia il componente aggiuntivo Segnala messaggio che il componente aggiuntivo Segnala phishing funzionano con la maggior parte delle sottoscrizioni di Microsoft 365 e i prodotti seguenti:
+- Sia il componente aggiuntivo Segnala messaggio che il componente aggiuntivo Segnala phishing funzionano con la maggior parte delle sottoscrizioni Microsoft 365 e i prodotti seguenti:
   - Outlook sul Web
   - Outlook 2013 SP1 o versione successiva
   - Outlook 2016 per Mac
-  - Outlook incluso con le app di Microsoft 365 per le aziende
-  - App Outlook per iOS e Android
+  - Outlook incluse nelle app Microsoft 365 per Enterprise
+  - Outlook app per iOS e Android
 
-- Entrambi i componenti aggiuntivi non sono disponibili per le cassette postali condivise o le cassette postali nelle organizzazioni exchange locali.
+- Entrambi i componenti aggiuntivi non sono disponibili per le cassette postali condivise o le cassette postali nelle organizzazioni Exchange locali.
 
 - Il Web browser esistente dovrebbe funzionare sia con i componenti aggiuntivi Segnala messaggio che Segnala phishing. Tuttavia, se si nota che il componente aggiuntivo non è disponibile o non funziona come previsto, provare un browser diverso.
 
 - Per le installazioni dell'organizzazione, l'organizzazione deve essere configurata per l'utilizzo dell'autenticazione OAuth. Per ulteriori informazioni, vedere [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Gli amministratori devono essere membri del gruppo di ruoli Amministratori globali. Per ulteriori informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
+- Gli amministratori devono essere membri del gruppo di ruoli Amministratori globali. Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-- Per ulteriori informazioni su come segnalare un messaggio utilizzando la funzionalità Segnala messaggio, vedere Segnalare falsi positivi e [falsi negativi in Outlook.](report-false-positives-and-false-negatives.md)
+- Per ulteriori informazioni su come segnalare un messaggio utilizzando la funzionalità Segnala messaggio, vedere Segnalare falsi positivi e falsi negativi [in Outlook](report-false-positives-and-false-negatives.md).
 
 > [!IMPORTANT]
-> Non è consigliabile utilizzare l'esperienza di creazione di report incorporata in Outlook perché non è possibile utilizzare i criteri di invio [degli utenti.](./user-submission.md) È consigliabile usare invece il componente aggiuntivo Segnala messaggio o Segnala phishing.
+> Non è consigliabile l'esperienza di creazione di report incorporata in Outlook perché non può usare i criteri di invio [degli utenti.](./user-submission.md) È consigliabile usare invece il componente aggiuntivo Segnala messaggio o Segnala phishing.
 
 ## <a name="get-the-report-message-add-in"></a>Ottenere il componente aggiuntivo Segnala messaggio
 
@@ -88,22 +88,22 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
 
 Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate le icone seguenti:
 
-- In Outlook l'icona è simile alla seguente:
+- In Outlook, l'icona è simile alla seguente:
 
   > [!div class="mx-imgBorder"]
   > ![Icona del componente aggiuntivo Segnala messaggio per Outlook](../../media/OutlookReportMessageIcon.png)
 
-- In Outlook sul Web l'icona è simile alla seguente:
+- In Outlook sul web, l'icona è simile alla seguente:
 
   > [!div class="mx-imgBorder"]
-  > ![Icona del componente aggiuntivo Report di Outlook sul Web](../../media/owa-report-message-icon.png)
+  > ![Outlook sul web Icona del componente aggiuntivo Segnala messaggio](../../media/owa-report-message-icon.png)
 
 ### <a name="get-the-report-message-add-in-for-your-organization"></a>Ottenere il componente aggiuntivo Segnala messaggio per l'organizzazione
 
 > [!NOTE]
 > La visualizzazione del componente aggiuntivo nell'organizzazione potrebbe richiedere fino a 12 ore.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare **alla** pagina Impostazioni \> **componenti aggiuntivi all'indirizzo** <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Se la pagina componenti  aggiuntivi non è visualizzata, passare al collegamento Impostazioni Componenti aggiuntivi app integrate nella parte superiore  \>  \>  della **pagina App** integrate.
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Impostazioni** \> **componenti aggiuntivi** all'indirizzo <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Se la pagina del  componente aggiuntivo non è  visualizzata, passare al collegamento componenti aggiuntivi Impostazioni app integrate nella parte superiore della pagina \>  \>  **App** integrate.
 
 2. Selezionare **Distribuisci componente aggiuntivo** nella parte superiore della pagina e quindi selezionare **Avanti.**
 
@@ -147,9 +147,9 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Rivedere o modificare le impostazioni per il componente aggiuntivo Segnala messaggio
 
-1. Nell'interfaccia di amministrazione di Microsoft 365  passare alla pagina Impostazioni \> **componenti aggiuntivi all'indirizzo** <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Se la pagina componenti  aggiuntivi non è visualizzata, passare al collegamento Impostazioni Componenti aggiuntivi app integrate nella parte superiore  \>  \>  della **pagina App** integrate.
+1. Nel interfaccia di amministrazione di Microsoft 365 passare alla pagina Impostazioni  \> **componenti aggiuntivi** all'indirizzo <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Se la pagina del  componente aggiuntivo non è  visualizzata, passare al collegamento componenti aggiuntivi Impostazioni app integrate nella parte superiore della pagina \>  \>  **App** integrate.
 
-   ![Pagina Servizi e Add-Ins nella nuova interfaccia di amministrazione di Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Pagina Servizi e Add-Ins nel nuovo Amministrazione Microsoft 365 Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Individuare e selezionare il componente aggiuntivo **Segnala** messaggio.
 
@@ -171,21 +171,21 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
 
 Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate le icone seguenti:
 
-- In Outlook l'icona è simile alla seguente:
+- In Outlook, l'icona è simile alla seguente:
 
   ![Segnalare l'icona del componente aggiuntivo phishing per Outlook](../../media/Outlook-ReportPhishing.png)
 
-- In Outlook sul Web l'icona è simile alla seguente:
+- In Outlook sul web, l'icona è simile alla seguente:
 
   > [!div class="mx-imgBorder"]
-  > ![Icona del componente aggiuntivo Di phishing per i report di Outlook sul Web](../../media/OWA-ReportPhishing.png)
+  > ![Outlook sul web Segnala icona componente aggiuntivo phishing](../../media/OWA-ReportPhishing.png)
 
 ### <a name="get-the-report-phishing-add-in-for-your-organization"></a>Ottenere il componente aggiuntivo Segnala phishing per l'organizzazione
 
 > [!NOTE]
 > La visualizzazione del componente aggiuntivo nell'organizzazione potrebbe richiedere fino a 12 ore.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365  passare alla pagina Impostazioni \> **componenti aggiuntivi all'indirizzo** <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Se la pagina componenti  aggiuntivi non è visualizzata, passare al collegamento Impostazioni Componenti aggiuntivi app integrate nella parte superiore  \>  \>  della **pagina App** integrate.
+1. Nel interfaccia di amministrazione di Microsoft 365 passare alla pagina Impostazioni  \> **componenti aggiuntivi** all'indirizzo <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Se la pagina del  componente aggiuntivo non è  visualizzata, passare al collegamento componenti aggiuntivi Impostazioni app integrate nella parte superiore della pagina \>  \>  **App** integrate.
 
 2. Selezionare **Distribuisci componente aggiuntivo** nella parte superiore della pagina e quindi selezionare **Avanti.**
 
@@ -221,7 +221,7 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Rivedere o modificare le impostazioni per il componente aggiuntivo Segnala phishing
 
-1. Nell'interfaccia di amministrazione di Microsoft 365  passare alla pagina Impostazioni \> **componenti aggiuntivi all'indirizzo** <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Se la pagina componenti  aggiuntivi non è visualizzata, passare al collegamento Impostazioni Componenti aggiuntivi app integrate nella parte superiore  \>  \>  della **pagina App** integrate.
+1. Nel interfaccia di amministrazione di Microsoft 365 passare alla pagina Impostazioni  \> **componenti aggiuntivi** all'indirizzo <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Se la pagina del  componente aggiuntivo non è  visualizzata, passare al collegamento componenti aggiuntivi Impostazioni app integrate nella parte superiore della pagina \>  \>  **App** integrate.
 
 2. Individuare e selezionare il **componente aggiuntivo Segnala** phishing.
 

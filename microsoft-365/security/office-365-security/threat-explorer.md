@@ -19,12 +19,12 @@ description: Usa Explorer e i rilevamenti in tempo reale nel centro sicurezza Mi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 4a9a364f82b7f7836c2f0177dfbde80171b9c36f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029586"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083225"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer e rilevamenti in tempo reale
 
@@ -186,7 +186,7 @@ Attualmente, viene visualizzata la posizione di recapito nella griglia della pos
 
 ### <a name="system-overrides"></a>Sostituzioni di sistema
 
-*Le sostituzioni* di sistema consentono di creare eccezioni al percorso di recapito previsto di un messaggio. La posizione di recapito fornita dal sistema viene sovrascritta in base alle minacce e ad altri rilevamenti identificati dallo stack di filtro. Le sostituzioni di sistema possono essere impostate tramite criteri tenant o utente per recapitare il messaggio come suggerito dal criterio. Le sostituzioni possono identificare il recapito involontario di messaggi dannosi a causa di lacune nelle configurazioni, ad esempio un criterio mittente troppo ampio impostato da un utente Safe mittente. Questi valori di override possono essere:
+*Le sostituzioni* di sistema consentono di creare eccezioni al percorso di recapito previsto di un messaggio. La posizione di recapito fornita dal sistema viene sovrascritta in base alle minacce e ad altri rilevamenti identificati dallo stack di filtro. Le sostituzioni di sistema possono essere impostate tramite criteri tenant o utente per recapitare il messaggio come suggerito dal criterio. Le sostituzioni possono identificare il recapito involontario di messaggi dannosi a causa di lacune nelle configurazioni, ad esempio un criterio mittente troppo ampio impostato da un utente Cassaforte mittente. Questi valori di override possono essere:
 
 - Consentito dai criteri utente: un utente crea criteri a livello di cassetta postale per consentire domini o mittenti.
 
@@ -448,7 +448,7 @@ Il report viene aggiornato per visualizzare i risultati rilevati dal malware nel
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Visualizzare l'URL di phishing e fare clic su Dati verdetto
 
-Si supponga di voler visualizzare i tentativi di phishing tramite URL nella posta elettronica, incluso un elenco di URL consentiti, bloccati ed ignorati. Per identificare gli URL su cui è stato fatto clic, [Safe i collegamenti](safe-links.md) devono essere configurati. Assicurati di configurare i [criteri](set-up-safe-links-policies.md) di Safe per la protezione basata sul clic e la registrazione dei verdetti clic Safe collegamenti.
+Si supponga di voler visualizzare i tentativi di phishing tramite URL nella posta elettronica, incluso un elenco di URL consentiti, bloccati ed ignorati. Per identificare gli URL su cui è stato fatto clic, [Cassaforte i collegamenti](safe-links.md) devono essere configurati. Assicurati di configurare i criteri di [Cassaforte](set-up-safe-links-policies.md) per la protezione del momento del clic e la registrazione dei verdetti clic Cassaforte collegamenti.
 
 Per esaminare gli URL dei phish nei messaggi e fare clic sugli URL nei messaggi [   >  **phish,**](threat-explorer-views.md#email--phish) usa la visualizzazione Phish e-mail di Esplora risorse o rilevamenti in tempo reale.
 
@@ -470,7 +470,7 @@ Per esaminare gli URL dei phish nei messaggi e fare clic sugli URL nei messaggi 
 
    - **Gli URL principali sono** gli URL nei messaggi filtrati e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione Posta elettronica phish, questo elenco contiene in genere URL legittimi. Gli utenti malintenzionati includono una combinazione di URL buoni e non recapitati nei messaggi per tentare di ottenerli, ma rendono i collegamenti dannosi più interessanti. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica, ma questa colonna è nascosta per semplificare la visualizzazione.
 
-   - **I clic principali** sono Safe URL con ritorno a capo dei collegamenti su cui è stato fatto clic, ordinati in base al numero totale di clic. Anche questa colonna non viene visualizzata per semplificare la visualizzazione. I conteggi totali per colonna indicano il numero Safe clic sul numero di verdetti per ogni URL su cui si fa clic. Nella visualizzazione Posta elettronica phish, questi url sono in genere sospetti o dannosi. Ma la visualizzazione potrebbe includere URL che non sono minacce ma sono in messaggi di phish. I clic url sui collegamenti senza ritorno a capo non vengono visualizzati qui.
+   - **I clic principali** sono Cassaforte URL con ritorno a capo dei collegamenti su cui è stato fatto clic, ordinati in base al numero totale di clic. Anche questa colonna non viene visualizzata per semplificare la visualizzazione. I conteggi totali per colonna indicano il numero di Cassaforte clic sul numero di verdetti per ogni URL su cui si è fatto clic. Nella visualizzazione Posta elettronica phish, questi url sono in genere sospetti o dannosi. Ma la visualizzazione potrebbe includere URL che non sono minacce ma sono in messaggi di phish. I clic url sui collegamenti senza ritorno a capo non vengono visualizzati qui.
 
    Le due tabelle URL mostrano gli URL principali nei messaggi di posta elettronica di phishing in base all'azione di recapito e alla posizione. Le tabelle mostrano i clic url bloccati o visitati nonostante un avviso, in modo da poter vedere quali potenziali collegamenti non riusciti sono stati presentati agli utenti e che l'utente ha fatto clic. Da qui è possibile eseguire ulteriori analisi. Ad esempio, sotto il grafico è possibile visualizzare gli URL principali nei messaggi di posta elettronica bloccati nell'ambiente dell'organizzazione.
 
@@ -534,10 +534,10 @@ Oltre agli scenari descritti in questo articolo, sono disponibili molte più opz
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
-È necessario disporre [di Microsoft Defender per Office 365](defender-for-office-365.md) per usare Esplora risorse o rilevamenti in tempo reale.
+Devi disporre di [Microsoft Defender per Office 365](defender-for-office-365.md) usare Explorer o rilevamenti in tempo reale.
 
 - Explorer è incluso in Defender per Office 365 Piano 2.
-- Il report rilevamenti in tempo reale è incluso in Defender per Office 365 Piano 1.
+- Il report rilevamenti in tempo reale è incluso in Defender per Office 365 piano 1.
 - Pianificare l'assegnazione delle licenze per tutti gli utenti che devono essere protetti da Defender per Office 365. Explorer e i rilevamenti in tempo reale mostrano i dati di rilevamento per gli utenti con licenza.
 
 Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necessario disporre delle autorizzazioni appropriate, ad esempio quelle concesse a un amministratore della sicurezza o a un lettore di sicurezza.
@@ -545,10 +545,10 @@ Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necess
 - Per il Centro sicurezza & conformità, è necessario disporre di uno dei ruoli seguenti:
 
   - Gestione dell'organizzazione
-  - Amministratore della sicurezza (può essere assegnato nell'interfaccia di amministrazione di Azure Active Directory ( <https://aad.portal.azure.com> )
+  - Amministratore della sicurezza (può essere assegnato nell'Azure Active Directory di amministrazione ( <https://aad.portal.azure.com> )
   - Ruolo con autorizzazioni di lettura per la sicurezza
 
-- Per Exchange Online, è necessario disporre di uno dei ruoli seguenti assegnati nell'interfaccia di amministrazione di Exchange ( ) o <https://admin.protection.outlook.com/ecp/> [in PowerShell di Exchange Online](/powershell/exchange/exchange-online-powershell):
+- Per Exchange Online, è necessario disporre di uno dei ruoli seguenti assegnati nell'interfaccia di amministrazione di Exchange ( ) o <https://admin.protection.outlook.com/ecp/> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Gestione organizzazione
   - Gestione organizzazione sola visualizzazione
@@ -557,15 +557,15 @@ Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necess
 
 Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse seguenti:
 
-- [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
+- [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
 - [Autorizzazioni funzionalità in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>Differenze tra Esplora minacce e rilevamenti in tempo reale
 
-- Il *report rilevamenti in tempo* reale è disponibile in Defender per Office 365 Piano 1. *Threat Explorer* è disponibile in Defender per Office 365 Piano 2.
+- Il *report Rilevamenti in tempo* reale è disponibile in Defender per Office 365 Piano 1. *Threat Explorer* è disponibile in Defender per Office 365 Piano 2.
 - Il report Rilevamenti in tempo reale consente di visualizzare i rilevamenti in tempo reale. Threat Explorer esegue anche questa operazione, ma fornisce anche ulteriori dettagli per un determinato attacco.
 - Una *visualizzazione Tutti i* messaggi di posta elettronica è disponibile in Esplora minacce, ma non nel report Rilevamenti in tempo reale.
-- Altre funzionalità di filtro e azioni disponibili sono incluse in Threat Explorer. Per ulteriori informazioni, vedere [Microsoft Defender per Office 365 Service Description: Feature availability across Defender for Office 365 plans.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+- Altre funzionalità di filtro e azioni disponibili sono incluse in Threat Explorer. Per altre informazioni, vedi [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
 
 ## <a name="other-articles"></a>Altri articoli
 

@@ -17,12 +17,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055125"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083537"
 ---
 # <a name="user-reported-message-settings"></a>Impostazioni dei messaggi segnalati dall'utente
 
@@ -68,7 +68,7 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 
 - Per modificare la configurazione per gli invii di utenti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
-  - **Organization Management** or **Security Administrator** nel portale [Microsoft 365 Defender sicurezza](permissions-in-the-security-and-compliance-center.md).
+  - **Gestione dell'organizzazione** **o amministratore** della sicurezza [in Autorizzazioni nel Microsoft 365 Defender portale](permissions-microsoft-365-security-center.md).
   - **Gestione organizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - È necessario accedere a Exchange Online PowerShell. Se l'account che si sta tentando di utilizzare non ha accesso Exchange Online PowerShell, quando si specifica la cassetta postale degli invii verrà visualizzato un errore simile al seguente:

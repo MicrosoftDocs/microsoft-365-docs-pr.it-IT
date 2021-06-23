@@ -16,12 +16,12 @@ ms.collection:
 description: Sicurezza in Office 365, da EOP a Defender per Office Piani 1 e 2 di Office 365, differenza tra configurazione della sicurezza standard e rigorosa e altro ancora. Comprendere ciò che si ha e come proteggere le proprie proprietà.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ecdfe324ded6224745b0e2eac087e432ac76c83
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: db458f0a3a3ac2cc4a06d0827844e156798f6505
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930248"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083657"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Panoramica di Microsoft Defender Office 365 sicurezza
 
@@ -112,7 +112,7 @@ Vantaggi con **Defender per Office 365 Piano 2** (a oggi):
 
 Quindi Microsoft Defender per Office 365 P2 è più ricco sul lato ***indagine e risposta*** e aggiunge una nuova capacità di rilevazione. L'automazione.
 
-In Microsoft Defender per Office 365 P2, lo strumento di rilevazione principale si chiama **Esplora minacce** e non Rilevamenti in tempo reale. Se vedi Threat Explorer quando accedi al portale di Microsoft 365 Defender, sei in Microsoft Defender per Office 365 P2.
+In Microsoft Defender per Office 365 P2, lo strumento di rilevazione principale si chiama **Esplora minacce** e non Rilevamenti in tempo reale. Se vedi Threat Explorer quando accedi al portale Microsoft 365 Defender, sei in Microsoft Defender per Office 365 P2.
 
 Per informazioni dettagliate su Microsoft Defender per Office 365 P1 e P2, passare a **[questo articolo](defender-for-office-365.md)**.
 
@@ -125,7 +125,7 @@ Questo riferimento rapido è utile per comprendere quali funzionalità sono disp
 
 |Defender per Office 365 Piano 1|Defender per Office 365 Piano 2|
 |---|---|
-|Funzionalità di configurazione, protezione e rilevamento: <ul><li>[Allegati sicuri](safe-attachments.md)</li><li>[Collegamenti sicuri](safe-links.md)</li><li>[Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protezione anti-phishing in Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Rilevamenti in tempo reale](threat-explorer.md)</li></ul>|Funzionalità di Defender per Office 365 Piano 1 <p> --- più --- <p> Funzionalità di automazione, analisi, correzione e formazione: <ul><li>[Tracker delle minacce](threat-trackers.md)</li><li>[Esplora minacce](threat-explorer.md)</li><li>[Analisi e risposta automatizzate](office-365-air.md)</li><li>[Simulatore di attacchi](attack-simulator.md)</li></ul>|
+|Funzionalità di configurazione, protezione e rilevamento: <ul><li>[Allegati sicuri](safe-attachments.md)</li><li>[Collegamenti sicuri](safe-links.md)</li><li>[Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protezione anti-phishing in Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Rilevamenti in tempo reale](threat-explorer.md)</li></ul>|Funzionalità di Defender per Office 365 Piano 1 <p> --- più --- <p> Funzionalità di automazione, analisi, correzione e formazione: <ul><li>[Tracker delle minacce](threat-trackers.md)</li><li>[Esplora minacce](threat-explorer.md)</li><li>[Analisi e risposta automatizzate](office-365-air.md)</li><li>[Formazione per la simulazione di attacchi](attack-simulation-training.md)</li></ul>|
 |
 
 - Microsoft Defender per Office 365 Piano 2 è incluso in Office 365 E5, Office 365 A5 e Microsoft 365 E5.
@@ -153,5 +153,4 @@ Aggiornarsi sulle [novità di Microsoft Defender per Office 365 (inclusi gli svi
 
 [Usare Esplora minacce o Rilevamenti in tempo reale](threat-explorer.md)
 
-Usare [Simulatore di attacchi in Microsoft Defender per Office 365](attack-simulator.md)
-
+Usare [il training di simulazione degli attacchi](attack-simulation-training.md)

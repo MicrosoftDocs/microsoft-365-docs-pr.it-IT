@@ -20,12 +20,12 @@ description: Gli amministratori possono scoprire come trovare e usare Defender p
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b9279614571c123ad92f1684f86175b410c6c5c
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: f7eab856f22ac1c2282e83897db6e3f93d4d97e6
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022842"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083513"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Visualizzare i report di Defender Office 365 nel Microsoft 365 Defender portale
 
@@ -45,15 +45,15 @@ Microsoft Defender per le organizzazioni Office 365 (ad esempio, abbonamenti Mic
 >
 > I report correlati al flusso di posta sono ora disponibili nell'interfaccia di amministrazione di Exchange (EAC). Per ulteriori informazioni su questi report, vedere [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
-## <a name="safe-attachments-file-types-report"></a>Safe Report Tipi di file allegati
+## <a name="safe-attachments-file-types-report"></a>Cassaforte Report Tipi di file allegati
 
 > [!NOTE]
-> Il **Safe dei tipi di file allegati** alla fine andrà via. Le stesse informazioni sono disponibili nella relazione [sullo stato di Threat Protection.](#threat-protection-status-report)
+> Il **Cassaforte dei tipi di file allegati** alla fine andrà via. Le stesse informazioni sono disponibili nella relazione [sullo stato di Threat Protection.](#threat-protection-status-report)
 
-## <a name="safe-attachments-message-disposition-report"></a>Safe Rapporto eliminazione messaggi allegati
+## <a name="safe-attachments-message-disposition-report"></a>Cassaforte Rapporto eliminazione messaggi allegati
 
 > [!NOTE]
-> Il **Safe di eliminazione dei messaggi** allegati alla fine andrà via. Le stesse informazioni sono disponibili nella relazione [sullo stato di Threat Protection.](#threat-protection-status-report)
+> Il **Cassaforte di eliminazione dei messaggi** allegati alla fine andrà via. Le stesse informazioni sono disponibili nella relazione [sullo stato di Threat Protection.](#threat-protection-status-report)
 
 ## <a name="mail-latency-report"></a>Rapporto latenza della posta
 
@@ -103,7 +103,7 @@ Il **rapporto sullo stato di** Protezione dalle minacce è un'unica visualizzazi
 
 ## <a name="url-threat-protection-report"></a>Report di protezione dalle minacce URL
 
-Il **report di protezione dalle minacce URL** fornisce visualizzazioni di riepilogo e tendenze per le minacce rilevate e le azioni eseguite sui clic sugli URL nell'ambito Safe [collegamenti.](safe-links.md) In questo report non saranno disponibili i dati dei clic degli utenti a cui è applicato il criterio Safe collegamenti con l'opzione Non **tenere** traccia dei clic degli utenti selezionata.
+Il **report di protezione dalle minacce URL** fornisce visualizzazioni di riepilogo e tendenze per le minacce rilevate e le azioni eseguite sui clic sugli URL nell'ambito Cassaforte [collegamenti.](safe-links.md) In questo report non saranno disponibili dati sui clic degli utenti a cui è stato applicato il criterio collegamenti Cassaforte clic utente è selezionata l'opzione Non tenere traccia **dei** clic degli utenti.
 
 Per visualizzare il report, aprire il portale [Microsoft 365 Defender,](https://security.microsoft.com)passare **a** Report e-mail & \> **collaborazione** \> **E-mail & collaborazione.** Nella pagina **Rapporti di collaborazione &** posta elettronica individuare la pagina Protezione **URL** e quindi fare clic su **Visualizza dettagli.** Per passare direttamente al report, aprire <https://security.microsoft.com/reports/URLProtectionActionReport> .
 
@@ -125,7 +125,7 @@ La visualizzazione azione Visualizza dati in base **all'URL** consente di visual
 - **Bloccato e su cui è stato fatto clic:** l'utente ha scelto di continuare a passare all'URL.
 - **Fatto clic durante l'analisi**: l'utente ha fatto clic sul collegamento prima del completamento dell'analisi.
 
-Un clic indica che l'utente ha fatto clic attraverso la pagina di blocco al sito Web dannoso (gli amministratori possono disabilitare il clic nei criteri Safe collegamenti).
+Un clic indica che l'utente ha fatto clic attraverso la pagina di blocco al sito Web dannoso (gli amministratori possono disabilitare il click-through nei Cassaforte dei collegamenti).
 
 Se si fa **clic su Filtri**, è possibile modificare il report e la tabella dei dettagli selezionando uno o più dei valori seguenti nel riquadro a comparsa visualizzato:
 
@@ -152,7 +152,7 @@ La tabella dei dettagli sotto il grafico fornisce la seguente visualizzazione qu
 
 ![Url click by application view in the URL threat protection report](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
-La visualizzazione Visualizza i dati in base **all'URL** fa clic per applicazione mostra il numero di clic sull'URL da parte delle app che supportano Safe collegamenti:
+La **visualizzazione Visualizza dati in base all'URL** in base all'applicazione mostra il numero di clic sull'URL da parte delle app che supportano Cassaforte collegamenti:
 
 - **Client di posta elettronica**
 - **PowerPoint**
@@ -193,7 +193,7 @@ Oltre ai report descritti in questo articolo, sono disponibili diversi altri rep
 |**Explorer** (Microsoft Defender per Office 365 Piano 2) o rilevamenti in tempo reale **(Microsoft** Defender per Office 365 Piano 1)|[Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md)|
 |**Report di sicurezza della** posta elettronica, ad esempio il report Mittenti e destinatari principali, il rapporto Spoofing della posta elettronica e il report Rilevamenti posta indesiderata.|[Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender posta elettronica](view-email-security-reports.md)|
 |**Rapporti del flusso di** posta, ad esempio il rapporto inoltro, il rapporto sullo stato del flusso di posta e il rapporto Mittenti e destinatari principali.|[Rapporti del flusso di posta nella nuova Exchange di amministrazione](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|**Traccia URL per Safe collegamenti** (solo PowerShell). L'output di questo cmdlet mostra i risultati delle azioni Safe collegamenti negli ultimi sette giorni.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
+|**Traccia URL per Cassaforte collegamenti** (solo PowerShell). L'output di questo cmdlet mostra i risultati delle azioni Cassaforte collegamenti negli ultimi sette giorni.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |**Risultati del traffico di posta per EOP e Microsoft Defender per Office 365** (solo PowerShell). L'output di questo cmdlet contiene informazioni su Domain, Date, Event Type, Direction, Action e Message Count.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Rapporti dettagli posta per EOP e Defender per Office 365** di posta elettronica (solo PowerShell). L'output di questo cmdlet contiene dettagli su file o URL dannosi, tentativi di phishing, rappresentazione e altre potenziali minacce nei messaggi di posta elettronica o nei file.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -207,13 +207,13 @@ Per visualizzare e utilizzare i report descritti in questo articolo, è necessar
 - **Lettore sicurezza**
 - **Lettore globale**
 
-Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 **Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nel interfaccia di amministrazione di Microsoft 365 offre agli utenti le  autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Cosa succede se i report non mostrano dati?
 
-Se non vedi i dati nel tuo Defender per i Office 365, verifica che i criteri siano configurati correttamente. L'organizzazione deve [disporre Safe](set-up-safe-links-policies.md) dei collegamenti e dei Safe [allegati](set-up-safe-attachments-policies.md) per poter disporre di Defender Office 365 protezione. Vedere anche [Protezione da posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md).
+Se non vedi i dati nel tuo Defender per i Office 365, verifica che i criteri siano configurati correttamente. L'organizzazione deve [disporre Cassaforte](set-up-safe-links-policies.md) dei collegamenti e [Cassaforte dei](set-up-safe-attachments-policies.md) criteri allegati per poter disporre di Defender Office 365 protezione. Vedere anche [Protezione da posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

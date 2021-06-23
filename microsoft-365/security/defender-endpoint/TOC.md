@@ -241,7 +241,7 @@
 #### [Valutare le regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
 #### [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
 #### [Personalizzare regole per la riduzione della superficie di attacco](customize-attack-surface-reduction.md)
-#### [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction-faq.md)
+#### [Domande frequenti per la riduzione della superficie di attacco](attack-surface-reduction-faq.yml)
 #### [Visualizzare eventi per la riduzione della superficie di attacco](event-views.md)
 #### [Usare la modalità di controllo per la riduzione della superficie di attacco](audit-windows-defender.md)
 

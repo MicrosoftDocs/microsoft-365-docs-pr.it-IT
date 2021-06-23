@@ -19,12 +19,12 @@ description: Usa Microsoft Defender per Office 365 insieme a Microsoft Defender 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d54e4ec40c636b8b3ea319e79cbad5005850952
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: fed3a04a7a699b4689cd9d6d9d335a8ba51d2fd8
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029268"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083381"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Usare Microsoft Defender per Office 365 insieme a Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ L'immagine seguente illustra  l'aspetto della scheda Dispositivi quando è abili
 
 ![Quando Microsoft Defender for Endpoint è abilitato, puoi visualizzare un elenco di dispositivi con avvisi.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-In questo esempio, è possibile vedere che i destinatari del messaggio di posta elettronica rilevato hanno quattro dispositivi e uno ha un avviso. Facendo clic sul collegamento per un dispositivo viene aperta la pagina in [Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (in precedenza il Centro sicurezza Microsoft Defender).
+In questo esempio, è possibile vedere che i destinatari del messaggio di posta elettronica rilevato hanno quattro dispositivi e uno ha un avviso. Facendo clic sul collegamento per un dispositivo viene aperta la pagina [nel portale Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (in precedenza il Centro sicurezza Microsoft Defender).
 
 > [!TIP]
 > Il Microsoft 365 Defender portale sostituisce il Microsoft Defender Security Center. Vedi [Microsoft Defender per Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
@@ -48,7 +48,7 @@ In questo esempio, è possibile vedere che i destinatari del messaggio di posta 
 
 - L'organizzazione deve disporre di Microsoft Defender per Office 365 (o Office 365 E5) e Microsoft Defender per Endpoint.
 
-- È necessario essere un amministratore globale o disporre di un ruolo di amministratore della sicurezza (ad esempio Amministratore della sicurezza) in Microsoft 365. Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- È necessario essere un amministratore globale o disporre di un ruolo di amministratore della sicurezza (ad esempio Amministratore della sicurezza) in Microsoft 365. Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 - Devi avere accesso a [Esplora risorse (o ai rilevamenti in tempo reale).](threat-explorer.md)
 
@@ -56,21 +56,19 @@ In questo esempio, è possibile vedere che i destinatari del messaggio di posta 
 
 L'integrazione di Microsoft Defender per Office 365 con Microsoft Defender for Endpoint è impostata sia in Defender per Endpoint che in Defender per Office 365.
 
-1. In quanto amministratore globale o amministratore della sicurezza, <https://security.microsoft.com/threatexplorer> .
+1. In quanto amministratore globale o amministratore della sicurezza, aprire il portale di Microsoft 365 Defender ( ) e passare a <https://security.microsoft.com> **E-mail &** \> **collaborazione Explorer**. Per passare direttamente alla **pagina Esplora** risorse, utilizzare <https://security.microsoft.com/threatexplorer> .
 
-2. Nel riquadro di spostamento scegliere **e-mail &** \> **collaborazione Explorer.**
+2. **Nell'angolo** superiore destro della pagina Esplora risorse fare clic su **MDE Impostazioni**.
 
-3. **Nell'angolo** superiore destro della pagina Esplora risorse fare clic su **MDE Impostazioni**.
-
-4. Nel riquadro a comparsa di connessione **di Microsoft Defender for Endpoint** visualizzato, attivare Connessione a Microsoft Defender per **Endpoint** ( Attiva/Disattiva ) e quindi fare clic su Chiudi ![ icona ](../../media/scc-toggle-on.png) ![ ](../../media/m365-cc-sc-close-icon.png) **Chiudi**.
+3. Nel riquadro a comparsa di connessione **di Microsoft Defender for Endpoint** visualizzato, attivare Connessione a Microsoft Defender per **Endpoint** ( Attiva/Disattiva ) e quindi fare clic su Chiudi ![ icona ](../../media/scc-toggle-on.png) ![ ](../../media/m365-cc-sc-close-icon.png) **Chiudi**.
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="Connessione MDE":::
 
-5. Nel riquadro di spostamento scegliere **Impostazioni**. Nella pagina **Impostazioni** scegliere **Endpoint**
+4. Nel riquadro di spostamento scegliere **Impostazioni**. Nella pagina **Impostazioni** scegliere **Endpoint**
 
-6. Nella pagina **Endpoint visualizzata** scegliere **Funzionalità avanzate**.
+5. Nella pagina **Endpoint visualizzata** scegliere **Funzionalità avanzate**.
 
-7. Scorrere verso il **basso Office 365 di Threat Intelligence** e attivarla ( Toggle on ![ ](../../media/scc-toggle-on.png) ).
+6. Scorrere verso il **basso Office 365 di Threat Intelligence** e attivarla ( Toggle on ![ ](../../media/scc-toggle-on.png) ).
 
    Al termine, fare clic su **Salva preferenze.**
 

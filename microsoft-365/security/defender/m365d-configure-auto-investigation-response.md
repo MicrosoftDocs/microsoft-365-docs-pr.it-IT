@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: d3acf24d12b72a92af4246afdf11f67e01c45b2c
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4275339e048a4197590c91c5904733ce99b22f9f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022505"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083441"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurare le funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Anche se determinati avvisi e criteri di sicurezza possono attivare indagini aut
 
 Le impostazioni di sicurezza in Office 365 proteggere la posta elettronica e il contenuto. Per visualizzare o modificare queste impostazioni, seguire le indicazioni in [Protezione dalle minacce](../office-365-security/protect-against-threats.md).
 
-1. Nel portale Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ), passare **a Criteri & Regole Criteri** di \> **minaccia**.
+1. Nel portale Microsoft 365 Defender ( <https://security.microsoft.com> ), passare **a Criteri & Regole Criteri** di \> **minaccia**.
 
 2. Verificare che siano configurati tutti i criteri seguenti. Per ottenere assistenza e suggerimenti, vedere [Protezione dalle minacce.](/microsoft-365/security/office-365-security/protect-against-threats)
    - [Antimalware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -82,9 +82,9 @@ Le impostazioni di sicurezza in Office 365 proteggere la posta elettronica e il 
    - [Collegamenti sicuri](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Protezione da posta indesiderata](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 
-3. Assicurati che [Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) sia attivato.
+3. Assicurati che [Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md) sia attivato.
 
-4. Assicurati che [l'eliminazione automatica](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) di zero ore per la protezione della posta elettronica sia in vigore.
+4. Assicurati che l'eliminazione automatica di zero ore [(ZAP) in](../office-365-security/zero-hour-auto-purge.md) Exchange Online sia in vigore.
 
 5. Questo passaggio è facoltativo. Esaminare i [Office 365 di avviso](../../compliance/alert-policies.md) nella Centro conformità Microsoft 365 ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Diversi criteri di avviso predefiniti sono nella categoria Gestione delle minacce. Alcuni di questi avvisi possono attivare un'indagine e una risposta automatizzate. Per ulteriori informazioni, vedere [Criteri di avviso predefiniti.](../../compliance/alert-policies.md#default-alert-policies)
 

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 08e69013c0108d0caaf76c6a227684f5f1b68355
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877885"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083693"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Analisi e risposta automatizzate (AIR) in Microsoft Defender per Office 365
 
@@ -46,7 +46,7 @@ In questo articolo viene descritto:
 - Il [flusso complessivo di AIR](#the-overall-flow-of-air);
 - [Come ottenere AIR](#how-to-get-air); e
 - Autorizzazioni [necessarie per](#required-permissions-to-use-air-capabilities) configurare o utilizzare le funzionalità AIR.
-- Modifiche che verranno presto apportate al portale di Microsoft 365 Defender
+- Modifiche che verranno presto apportate al portale Microsoft 365 Defender web
 
 In questo articolo sono [inoltre inclusi i passaggi successivi](#next-steps)e le risorse per ulteriori informazioni.
 
@@ -56,7 +56,7 @@ Viene attivato un avviso e un playbook sulla sicurezza avvia un'indagine automat
 
 1. Un'indagine automatizzata viene avviata in uno dei modi seguenti:
    - Un [avviso viene attivato da un](#which-alert-policies-trigger-automated-investigations) elemento sospetto nei messaggi di posta elettronica ,ad esempio un messaggio, un allegato, un URL o un account utente compromesso. Viene creato un evento imprevisto e viene avviata un'indagine automatizzata. o
-   - Un analista [della sicurezza avvia un'indagine automatizzata](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) durante l'uso [di Threat Explorer.](threat-explorer.md)
+   - Un [analista della sicurezza avvia un'indagine automatizzata](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) durante l'uso di [Explorer.](threat-explorer.md)
 2. Durante l'esecuzione di un'indagine automatizzata, raccoglie i dati relativi al messaggio di posta elettronica in questione e le entità correlate a tale messaggio. Tali entità possono includere file, URL e destinatari. L'ambito dell'indagine può aumentare quando vengono attivati avvisi nuovi e correlati.
 3. Durante e dopo un'indagine automatizzata, [i dettagli e i risultati](air-view-investigation-results.md) sono disponibili per la visualizzazione. I risultati [includono azioni](air-remediation-actions.md) consigliate che possono essere intraprese per rispondere e correggere eventuali minacce rilevate.
 4. Il team delle operazioni di sicurezza esamina [i risultati e i](air-view-investigation-results.md)suggerimenti dell'indagine e approva o rifiuta le azioni di [correzione.](air-review-approve-pending-completed-actions.md)
@@ -81,9 +81,7 @@ Le funzionalità AIR sono incluse in [Microsoft Defender per Office 365](defende
 - [Protezione antimalware](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [Protezione anti-phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Protezione dalla posta indesiderata](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [Collegamenti sicuri e allegati sicuri](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Eliminazione automatica zero ore per la posta elettronica](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
+- [Cassaforte Collegamenti e Cassaforte allegati](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 Inoltre, assicurarsi di esaminare i criteri di avviso [dell'organizzazione,](../../compliance/alert-policies.md)in particolare i criteri [predefiniti nella categoria Gestione delle minacce.](../../compliance/alert-policies.md#default-alert-policies)
 
@@ -97,7 +95,7 @@ Microsoft 365 fornisce molti criteri di avviso incorporati che consentono di ide
 
 |Avviso|Gravità|Modalità di generazione dell'avviso|
 |---|---|---|
-|È stato rilevato un clic sull'URL potenzialmente dannoso|**High**|Questo avviso viene generato quando si verifica una delle condizioni seguenti: <ul><li>Un utente protetto da [collegamenti sicuri nell'organizzazione](safe-links.md) fa clic su un collegamento dannoso</li><li>Le modifiche al verdetto per gli URL sono identificate da Microsoft Defender per Office 365</li><li>Gli utenti sostituiscono le pagine di avviso collegamenti sicuri (in base al criterio [Collegamenti sicuri dell'organizzazione).](set-up-safe-links-policies.md)</li></ul> <p> Per ulteriori informazioni sugli eventi che attivano questo avviso, vedere [Set up Safe Links policies.](set-up-safe-links-policies.md)|
+|È stato rilevato un clic sull'URL potenzialmente dannoso|**High**|Questo avviso viene generato quando si verifica una delle condizioni seguenti: <ul><li>Un utente protetto da collegamenti [Cassaforte nell'organizzazione](safe-links.md) fa clic su un collegamento dannoso</li><li>Le modifiche al verdetto per gli URL sono identificate da Microsoft Defender per Office 365</li><li>Gli utenti sostituiscono Cassaforte di avviso dei collegamenti (in base al criterio collegamenti Cassaforte [dell'organizzazione).](set-up-safe-links-policies.md)</li></ul> <p> Per ulteriori informazioni sugli eventi che attivano questo avviso, vedere [Set up Cassaforte Links policies.](set-up-safe-links-policies.md)|
 |Un messaggio di posta elettronica viene segnalato da un utente come malware o phish|**Informativa**|Questo avviso viene generato quando gli utenti dell'organizzazione segnalano i messaggi come posta elettronica di phishing utilizzando il componente aggiuntivo Segnala messaggio o Segnala [phishing](enable-the-report-phish-add-in.md). [](enable-the-report-message-add-in.md)|
 |I messaggi di posta elettronica contenenti malware vengono rimossi dopo il recapito|**Informativa**|Questo avviso viene generato quando i messaggi di posta elettronica contenenti malware vengono recapitati alle cassette postali dell'organizzazione. Se si verifica questo evento, Microsoft rimuove i messaggi infetti dalle cassette postali Exchange Online utilizzando l'eliminazione automatica [di zero ore.](zero-hour-auto-purge.md)|
 |I messaggi di posta elettronica contenenti URL di phish vengono rimossi dopo il recapito|**Informativa**|Questo avviso viene generato quando i messaggi contenenti phish vengono recapitati alle cassette postali dell'organizzazione. Se si verifica questo evento, Microsoft rimuove i messaggi infetti dalle cassette postali Exchange Online utilizzando l'eliminazione automatica [di zero ore.](zero-hour-auto-purge.md)|
@@ -106,7 +104,7 @@ Microsoft 365 fornisce molti criteri di avviso incorporati che consentono di ide
 |
 
 > [!TIP]
-> Per ulteriori informazioni sui criteri di avviso o sulla modifica delle impostazioni predefinite, vedere Criteri di avviso nel Centro [Microsoft 365 conformità.](../../compliance/alert-policies.md)
+> Per ulteriori informazioni sui criteri di avviso o per modificare le impostazioni predefinite, vedere [Criteri](../../compliance/alert-policies.md)di avviso nella Centro conformità Microsoft 365 .
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Autorizzazioni necessarie per l'utilizzo delle funzionalità AIR
 
@@ -118,9 +116,8 @@ Le autorizzazioni vengono concesse tramite determinati ruoli, ad esempio quelli 
 
 |Attività|Ruolo(i) obbligatorio|
 |---|---|
-|Configurare le funzionalità AIR|Uno dei ruoli seguenti: <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li></ul> <p> Questi ruoli possono essere assegnati in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).|
-|Avviare un’indagine automatica <p> --- o --- <p> Approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnato in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md): <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li><li>Operatore della sicurezza</li><li>Ruolo con autorizzazioni di lettura per la sicurezza <br> --- e --- </li><li>Ricerca ed eliminazione (questo ruolo viene assegnato solo nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Di ricerca ed eliminazione a tale nuovo gruppo di ruoli.</li></ul>|
-|
+|Configurare le funzionalità AIR|Uno dei ruoli seguenti: <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li></ul> <p> Questi ruoli possono essere assegnati in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [portale Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)|
+|Avviare un’indagine automatica <p> --- o --- <p> Approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnato in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [portale Microsoft 365 Defender:](permissions-microsoft-365-security-center.md) <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li><li>Operatore della sicurezza</li><li>Ruolo con autorizzazioni di lettura per la sicurezza <br> --- e --- </li><li>Ricerca ed eliminazione (questo ruolo viene assegnato solo nel [Microsoft 365 Defender portale.](permissions-microsoft-365-security-center.md) Potrebbe essere necessario creare un nuovo gruppo di **ruoli &** di collaborazione e aggiungere il ruolo Di ricerca ed eliminazione a tale nuovo gruppo di ruoli.</li></ul>|
 
 ## <a name="required-licenses"></a>Licenze necessarie
 
@@ -130,18 +127,18 @@ Le autorizzazioni vengono concesse tramite determinati ruoli, ad esempio quelli 
 - Team delle operazioni di sicurezza dell'organizzazione (inclusi i lettori di sicurezza e quelli con **il ruolo Di ricerca ed eliminazione)**
 - Utenti finali
 
-## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Le modifiche saranno presto disponibili nel portale Microsoft 365 Defender
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Le modifiche saranno presto disponibili nel portale Microsoft 365 Defender web
 
-Se stai già usando le funzionalità AIR in Microsoft Defender per Office 365, stai per vedere alcune modifiche nel portale di [Microsoft 365 Defender migliorato.](../defender/overview-security-center.md)
+Se stai già usando le funzionalità AIR in Microsoft Defender per Office 365, stai per vedere alcune modifiche nel portale di Microsoft 365 Defender [migliorato.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro notifiche unificato":::
 
-Il nuovo e migliorato portale Microsoft 365 Defender riunisce le funzionalità AIR in [Microsoft Defender per Office 365](defender-for-office-365.md) e in Microsoft Defender per [Endpoint.](../defender-endpoint/automated-investigations.md) Con questi aggiornamenti e migliorie, il team addetto alle operazioni di sicurezza potrà visualizzare dettagli sulle indagini automatizzate e le azioni di correzione per tutta la posta elettronica, i contenuti della collaborazione, gli account utente e i dispositivi, il tutto in un'unica posizione.
+Il portale di Microsoft 365 Defender nuovo e migliorato riunisce le funzionalità AIR in [Microsoft Defender per Office 365](defender-for-office-365.md) e in Microsoft Defender for [Endpoint.](../defender-endpoint/automated-investigations.md) Con questi aggiornamenti e migliorie, il team addetto alle operazioni di sicurezza potrà visualizzare dettagli sulle indagini automatizzate e le azioni di correzione per tutta la posta elettronica, i contenuti della collaborazione, gli account utente e i dispositivi, il tutto in un'unica posizione.
 
 > [!TIP]
-> Il nuovo Microsoft 365 Microsoft 365 Defender Portal ( <https://security.microsoft.com> ) sostituisce i centri seguenti:
+> Il nuovo Microsoft 365 Microsoft 365 Defender portale ( <https://security.microsoft.com> ) sostituisce i seguenti centri:
 >
-> - Office 365 Centro sicurezza & conformità ( <https://protection.office.com> )
+> - Centro sicurezza & conformità ( <https://protection.office.com> )
 > - Microsoft Defender Security Center ( <https://securitycenter.windows.com> )
 >
 > Oltre alla modifica dell'URL, è presente un nuovo aspetto, progettato per offrire al team di sicurezza un'esperienza più semplificata, con visibilità per più rilevamenti di minacce in un'unica posizione.
@@ -159,10 +156,10 @@ Nella tabella seguente sono elencate le modifiche e i miglioramenti apportati a 
 |**Pagina Indagini**|La pagina **delle indagini** aggiornata è più coerente con quanto visualizzato in Microsoft Defender [per Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Vedrai alcune modifiche generali al formato e allo stile che si allineano alla nuova visualizzazione **Indagini unificate.** Ad esempio, il grafico dell'indagine ha un formato più unificato.|
 |**Scheda** Utenti|La **scheda** Utenti ora è la **scheda Cassette** postali. I dettagli sugli utenti sono elencati nella **scheda Cassetta** postale.|
 |**Scheda Posta** elettronica|La **scheda Posta** elettronica è stata rimossa. visitare la **scheda Entità** per visualizzare un elenco di elementi del cluster di posta elettronica e di posta elettronica.|
-|**Scheda Entità**|La **scheda Entità** ha uno stile di tabulazione che include una visualizzazione di riepilogo e la possibilità di filtrare in base al tipo di entità. La **scheda Entità** ora include un'opzione **Vai** a ricerca oltre all'opzione Apri **in Esplora** risorse. Ora puoi usare [Esplora](threat-explorer.md) minacce o [ricerca avanzata](../defender-endpoint/advanced-hunting-overview.md) per trovare entità e minacce e filtrare i risultati.|
+|**Scheda Entità**|La **scheda Entità** ha uno stile di tabulazione che include una visualizzazione di riepilogo e la possibilità di filtrare in base al tipo di entità. La **scheda Entità** ora include un'opzione **Vai** a ricerca oltre all'opzione Apri **in Esplora** risorse. Ora puoi usare [Esplora risorse](threat-explorer.md) o la ricerca [avanzata](../defender-endpoint/advanced-hunting-overview.md) per trovare entità e minacce e filtrare i risultati.|
 |**Scheda** Azioni|La scheda **Azioni** aggiornata ora include una scheda **Azioni in** sospeso e una **scheda Cronologia** azioni. Le azioni possono essere approvate (o rifiutate) in un riquadro laterale che viene aperto quando si seleziona un'azione in sospeso.|
 |**Scheda** Evidenza|Una nuova **scheda Evidenza** mostra i risultati chiave dell'entità correlati alle azioni. Le azioni correlate a ogni prova possono essere approvate (o rifiutate) in un riquadro laterale che si apre quando si seleziona un'azione in sospeso.|
-|**Centro notifiche**|Il centro **notifiche aggiornato** ( ) riunisce le azioni in sospeso e [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) completate tra posta elettronica, dispositivi e identità. Per altre informazioni, vedi Centro notifiche. Per altre informazioni, vedi [Il centro notifiche.](../defender/m365d-action-center.md)|
+|**Centro notifiche**|Il centro **notifiche aggiornato** ( ) riunisce le azioni in sospeso e <https://security.microsoft.com/action-center> completate tra posta elettronica, dispositivi e identità. Per altre informazioni, vedi Centro notifiche. Per altre informazioni, vedi [Il centro notifiche.](../defender/m365d-action-center.md)|
 |**Pagina Eventi imprevisti**|La **pagina Eventi** imprevisti ora correla più indagini per fornire una migliore visione consolidata delle indagini. ([Ulteriori informazioni sugli eventi imprevisti](../defender/incidents-overview.md). )|
 |
 

@@ -1,5 +1,5 @@
 ---
-title: Configurare i criteri collegamenti sicuri in Microsoft Defender per Office 365
+title: Configurare i Cassaforte dei collegamenti in Microsoft Defender per Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri collegamenti sicuri e le impostazioni globali dei collegamenti sicuri in Microsoft Defender per Office 365.
+description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri dei collegamenti Cassaforte e le impostazioni dei collegamenti Cassaforte globali in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb157792f0f9e80e4a974b59aebaa2e1991c5d0b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b4254d62cfa5844756392c00686e7b93c466d160
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933120"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082757"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri collegamenti sicuri in Microsoft Defender per Office 365
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i Cassaforte dei collegamenti in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,63 +36,63 @@ ms.locfileid: "52933120"
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](defender-for-office-365.md). Se si è un utente principale che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Collegamenti sicuri in [Microsoft Defender per Office 365](defender-for-office-365.md) fornisce l'analisi degli URL dei messaggi di posta elettronica in ingresso nel flusso di posta e l'ora della verifica su clic degli URL e dei collegamenti nei messaggi di posta elettronica e in altre posizioni. Per altre informazioni, vedi [Collegamenti sicuri in Microsoft Defender per Office 365](safe-links.md).
+Cassaforte I collegamenti in [Microsoft Defender per Office 365](defender-for-office-365.md) forniscono l'analisi DEGLI URL dei messaggi di posta elettronica in ingresso nel flusso di posta e l'ora della verifica dei clic degli URL e dei collegamenti nei messaggi di posta elettronica e in altre posizioni. Per ulteriori informazioni, vedere [Cassaforte collegamenti in Microsoft Defender per Office 365](safe-links.md).
 
-Non esiste un criterio predefinito o predefinito per i collegamenti sicuri. Per ottenere l'analisi dei collegamenti sicuri degli URL, è necessario creare uno o più criteri collegamenti sicuri come descritto in questo articolo.
+Non esiste un criterio predefinito o predefinito per Cassaforte collegamenti. Per ottenere Cassaforte l'analisi dei collegamenti degli URL, è necessario creare uno o più criteri Cassaforte collegamenti, come descritto in questo articolo.
 
 > [!NOTE]
 >
-> Le impostazioni globali per la protezione dei collegamenti sicuri vengono configurate **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [Configurare le impostazioni globali per i collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
+> È possibile configurare le impostazioni globali per la Cassaforte dei collegamenti **esterni** ai criteri Cassaforte collegamenti. Per istruzioni, vedere [Configure global settings for Cassaforte Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 >
-> Gli amministratori devono considerare le diverse impostazioni di configurazione per i collegamenti sicuri. Una delle opzioni disponibili è includere informazioni identificabili dall'utente in Collegamenti sicuri. Questa funzionalità consente *ai team di Security Ops di* analizzare potenziali compromissione degli utenti, intraprendere azioni correttive e limitare costose violazioni.
+> Gli amministratori devono considerare le diverse impostazioni di configurazione per Cassaforte collegamenti. Una delle opzioni disponibili è includere informazioni identificabili dall'utente Cassaforte collegamenti. Questa funzionalità consente *ai team di Security Ops di* analizzare potenziali compromissione degli utenti, intraprendere azioni correttive e limitare costose violazioni.
 
-È possibile configurare i criteri collegamenti sicuri nel portale di Microsoft 365 Defender o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi di Microsoft Defender per Office 365).
+È possibile configurare i criteri collegamenti Cassaforte nel portale di Microsoft 365 Defender o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online, ma con sottoscrizioni di componenti aggiuntivi di Microsoft Defender per Office 365).
 
-Gli elementi di base di un criterio Collegamenti sicuri sono:
+Gli elementi di base di un criterio Cassaforte collegamenti sono:
 
-- Il criterio collegamenti **sicuri:** attivare la protezione dei collegamenti sicuri, attivare l'analisi degli URL in tempo reale, specificare se attendere il completamento dell'analisi in tempo reale prima di recapitare il messaggio, attivare l'analisi dei messaggi interni, specificare se tenere traccia dei clic degli utenti sugli URL e specificare se consentire agli utenti di fare clic sull'URL originale.
+- Il criterio collegamenti **sicuri:** attivare la protezione dei collegamenti di Cassaforte, attivare l'analisi degli URL in tempo reale, specificare se attendere il completamento dell'analisi in tempo reale prima di recapitare il messaggio, attivare l'analisi dei messaggi interni, specificare se tenere traccia dei clic degli utenti sugli URL e specificare se consentire agli utenti di fare clic sull'URL originale.
 - **La regola dei collegamenti sicuri**: Specifica la priorità e i filtri destinatari (a cui si applica il criterio).
 
-La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri dei collegamenti sicuri nel portale di Microsoft 365 Defender:
+La differenza tra questi due elementi non è ovvia quando si gestiscono Cassaforte criteri dei collegamenti nel portale Microsoft 365 Defender:
 
-- Quando si crea un criterio Collegamenti sicuri, si crea contemporaneamente una regola per i collegamenti sicuri e il criterio collegamenti sicuri associati utilizzando lo stesso nome per entrambi.
-- Quando si modifica un criterio Collegamenti sicuri, le impostazioni relative al nome, alla priorità, abilitate o disabilitate e ai filtri destinatario modificano la regola dei collegamenti sicuri. Tutte le altre impostazioni modificano il criterio dei collegamenti sicuri associati.
-- Quando si rimuove un criterio Collegamenti sicuri, la regola dei collegamenti sicuri e il criterio collegamenti sicuri associati vengono rimossi.
+- Quando si crea un criterio Cassaforte collegamenti sicuri, si crea contemporaneamente una regola per i collegamenti sicuri e il criterio collegamenti sicuri associati utilizzando lo stesso nome per entrambi.
+- Quando si modifica un criterio Cassaforte collegamenti sicuri, le impostazioni relative al nome, alla priorità, abilitate o disabilitate e ai filtri destinatari modificano la regola dei collegamenti sicuri. Tutte le altre impostazioni modificano il criterio dei collegamenti sicuri associati.
+- Quando si rimuove un criterio Cassaforte collegamenti sicuri, la regola dei collegamenti sicuri e il criterio collegamenti sicuri associati vengono rimossi.
 
-In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione Use [Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) più avanti in questo articolo.
+In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione Use [Exchange Online PowerShell or standalone EOP PowerShell to configure Cassaforte Links policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) più avanti in questo articolo.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com/>. Per passare direttamente alla **pagina Collegamenti sicuri,** utilizzare <https://security.microsoft.com/safelinksv2> .
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com/>. Per passare direttamente alla pagina **Cassaforte collegamenti,** utilizzare <https://security.microsoft.com/safelinksv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
-  - Per creare, modificare ed eliminare i criteri collegamenti sicuri,  è necessario essere membri dei gruppi di ruoli Gestione organizzazione  o Amministratore sicurezza nel portale di Microsoft 365 Defender e membri del gruppo di ruoli Gestione organizzazione in Exchange Online.  
-  - Per l'accesso in sola lettura ai criteri collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
+  - Per creare, modificare ed eliminare i criteri collegamenti Cassaforte, è  necessario essere  membri dei gruppi di ruoli  Gestione organizzazione  o Amministratore sicurezza nel portale di Microsoft 365 Defender e membri del gruppo di ruoli Gestione organizzazione in Exchange Online.
+  - Per l'accesso in sola lettura ai Cassaforte dei collegamenti, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
 
-  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md) e Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender e](permissions-microsoft-365-security-center.md) Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - L'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre  agli utenti le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > - L'aggiunta di utenti al ruolo Azure Active Directory corrispondente nel interfaccia di amministrazione di Microsoft 365 offre agli utenti le  autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   . - Il **gruppo di ruoli Gestione** organizzazione di sola [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) consente inoltre l'accesso in sola lettura alla funzionalità.
 
-- Per le impostazioni consigliate per i criteri collegamenti sicuri, vedere [Impostazioni dei criteri Collegamenti sicuri.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+- Per le impostazioni consigliate per i criteri Cassaforte collegamenti, vedere Cassaforte [impostazioni dei criteri collegamenti.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - Consentire fino a 30 minuti per l'applicazione di un criterio nuovo o aggiornato.
 
-- [Nuove funzionalità vengono continuamente aggiunte a Microsoft Defender per Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). Quando vengono aggiunte nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri collegamenti sicuri esistenti.
+- [Nuove funzionalità vengono continuamente aggiunte a Microsoft Defender per Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). Quando vengono aggiunte nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri dei collegamenti Cassaforte esistenti.
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per creare criteri collegamenti sicuri
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Utilizzare il portale Microsoft 365 Defender per creare criteri Cassaforte collegamenti
 
-La creazione di un criterio collegamenti sicuri personalizzati nel portale di Microsoft 365 Defender crea contemporaneamente la regola dei collegamenti sicuri e il criterio collegamenti sicuri associati utilizzando lo stesso nome per entrambi.
+La creazione di un criterio personalizzato Cassaforte collegamenti sicuri nel portale di Microsoft 365 Defender crea contemporaneamente la regola dei collegamenti sicuri e il criterio collegamenti sicuri associati utilizzando lo stesso nome per entrambi.
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **sezione** Collegamenti \> **sicuri.**
+1. Nel portale Microsoft 365 Defender, passare alla sezione **Criteri & criteri** di minaccia Cassaforte \>  \>  \> **collegamenti**.
 
-2. Nella pagina **Collegamenti sicuri** fare clic su Crea ![ icona ](../../media/m365-cc-sc-create-icon.png) **Crea**.
+2. Nella pagina **Cassaforte collegamenti** fare clic su Crea ![ icona ](../../media/m365-cc-sc-create-icon.png) **Crea**.
 
-3. Verrà **visualizzata la procedura guidata Nuovo criterio Collegamenti** sicuri. Nella pagina **Assegnare un nome al** criterio configurare le impostazioni seguenti:
+3. Verrà **visualizzata la procedura guidata Cassaforte nuovi** collegamenti. Nella pagina **Assegnare un nome al** criterio configurare le impostazioni seguenti:
 
    - **Nome**: immettere un nome univoco descrittivo per il criterio.
    - **Descrizione**: immettere una descrizione opzionale per il criterio.
@@ -115,14 +115,14 @@ La creazione di un criterio collegamenti sicuri personalizzati nel portale di Mi
    Al termine dell'operazione, fare clic su **Avanti**.
 
 5. Nella pagina **Impostazioni di** protezione visualizzata configurare le impostazioni seguenti:
-   - **Selezionare l'azione per URL** sconosciuti potenzialmente dannosi nei messaggi: selezionare **Attivato** per abilitare la protezione collegamenti sicuri per i collegamenti nei messaggi di posta elettronica. Se si attiva questa impostazione, sono disponibili le impostazioni seguenti:
+   - **Selezionare l'azione per URL** sconosciuti potenzialmente  dannosi nei messaggi: selezionare Attivato per abilitare la protezione Cassaforte collegamenti per i collegamenti nei messaggi di posta elettronica. Se si attiva questa impostazione, sono disponibili le impostazioni seguenti:
      - **Applica l'analisi degli URL** in tempo reale per i collegamenti sospetti e i collegamenti che puntano ai file: selezionare questa opzione per abilitare l'analisi in tempo reale dei collegamenti nei messaggi di posta elettronica. Se si attiva questa impostazione, è disponibile l'impostazione seguente:
        - **Attendere il completamento dell'analisi** degli URL prima di recapitare il messaggio: selezionare questa opzione per attendere il completamento dell'analisi degli URL in tempo reale prima di recapitare il messaggio.
-     - **Applica collegamenti sicuri ai messaggi di posta elettronica** inviati all'interno dell'organizzazione: selezionare questa opzione per applicare il criterio Collegamenti sicuri ai messaggi tra mittenti interni e destinatari interni.
-   - **Selezionare l'azione per URL** sconosciuti o potenzialmente dannosi all'interno di Microsoft Teams : selezionare Attivato per abilitare la protezione collegamenti sicuri per i collegamenti in Teams. 
+     - **Applica Cassaforte** collegamenti ai messaggi di posta elettronica inviati all'interno dell'organizzazione : selezionare questa opzione per applicare il criterio Collegamenti Cassaforte ai messaggi tra mittenti interni e destinatari interni.
+   - **Selezionare l'azione per** URL sconosciuti o potenzialmente dannosi all'interno di Microsoft Teams : selezionare Attivato per abilitare la protezione dei collegamenti Cassaforte per i collegamenti in Teams. 
    - **Non tenere traccia dei clic degli utenti:** lasciare deselezionata questa impostazione per abilitare la verifica dei clic degli utenti sugli URL nei messaggi di posta elettronica.
    - **Non consentire agli utenti di passare all'URL** originale: selezionare questa opzione per impedire agli utenti di passare all'URL originale nelle pagine [di avviso.](safe-links.md#warning-pages-from-safe-links)
-   - **Non riscrivere gli URL** seguenti: consente l'accesso agli URL specificati che altrimenti verrebbero bloccati dai collegamenti sicuri.
+   - **Non riscrivere gli URL** seguenti: consente di accedere agli URL specificati che altrimenti verrebbero bloccati Cassaforte collegamenti.
 
      Nella casella digitare l'URL o il valore desiderato e quindi fare clic su **Aggiungi**. Ripetere questo passaggio tutte le volte necessarie.
 
@@ -130,9 +130,9 @@ La creazione di un criterio collegamenti sicuri personalizzati nel portale di Mi
 
      Per la sintassi delle voci, vedere Sintassi delle voci per [l'elenco "Non riscrivere gli URL seguenti".](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
 
-   Per informazioni dettagliate su queste impostazioni, vedere [Safe Links settings for email messages](safe-links.md#safe-links-settings-for-email-messages) e Safe Links settings for [Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
+   Per informazioni dettagliate su queste impostazioni, vedere Cassaforte [impostazioni](safe-links.md#safe-links-settings-for-email-messages) dei collegamenti per i messaggi di posta elettronica e Cassaforte collegamenti per [Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
 
-   Per ulteriori informazioni sui valori consigliati per le impostazioni dei criteri Standard e Strict, vedere [Safe Links policy settings.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+   Per ulteriori informazioni sui valori consigliati per le impostazioni dei criteri Standard e Strict, vedere Cassaforte [links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -150,32 +150,32 @@ La creazione di un criterio collegamenti sicuri personalizzati nel portale di Mi
 
 8. Nel messaggio di conferma visualizzato fare clic su **Fatto**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per visualizzare i criteri collegamenti sicuri
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Utilizzare il portale Microsoft 365 Defender per visualizzare i criteri Cassaforte collegamenti
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **sezione** Collegamenti \> **sicuri.**
+1. Nel portale Microsoft 365 Defender, passare alla sezione **Criteri & criteri** di minaccia Cassaforte \>  \>  \> **collegamenti**.
 
-2. Nella pagina **Collegamenti sicuri** vengono visualizzate le proprietà seguenti nell'elenco dei criteri Collegamenti sicuri:
+2. Nella pagina **Cassaforte collegamenti** vengono visualizzate le proprietà seguenti nell'elenco dei criteri Cassaforte collegamenti:
    - **Nome**
    - **Stato**
    - **Priorità**
 
 3. Quando si seleziona un criterio facendo clic sul nome, le impostazioni dei criteri vengono visualizzate in un riquadro a comparsa.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per modificare i criteri collegamenti sicuri
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Utilizzare il portale Microsoft 365 Defender per modificare i criteri Cassaforte collegamenti
 
-1. Nel portale Microsoft 365 Defender passare a Criteri **& criteri** di minaccia \>  \> **sezione** Collegamenti \> **sicuri.**
+1. Nel portale Microsoft 365 Defender, passare alla sezione **Criteri & criteri** di minaccia Cassaforte \>  \>  \> **collegamenti**.
 
-2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco facendo clic sul nome.
+2. Nella pagina **Cassaforte collegamenti** selezionare un criterio dall'elenco facendo clic sul nome.
 
-3. Nel riquadro a comparsa dei dettagli sui criteri visualizzato selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Per ulteriori informazioni sulle impostazioni, vedere la sezione precedente Usare il portale [di Microsoft 365 Defender per creare](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) criteri collegamenti sicuri in questo articolo.  
+3. Nel riquadro a comparsa dei dettagli sui criteri visualizzato selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Per ulteriori informazioni sulle impostazioni, vedere la sezione precedente Utilizzare il portale di Microsoft 365 Defender [per](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) creare criteri Cassaforte collegamenti in questo articolo.  
 
 Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei criteri, vedere le sezioni seguenti.
 
-### <a name="enable-or-disable-safe-links-policies"></a>Abilitare o disabilitare i criteri collegamenti sicuri
+### <a name="enable-or-disable-safe-links-policies"></a>Abilitare o disabilitare i criteri Cassaforte collegamenti
 
-1. Nel portale Microsoft 365 Defender passare a Email **& Collaboration** Policies \> **& Rules** Threat \> **Policies** \> **section** \> **Safe Links**.
+1. Nel portale Microsoft 365 Defender, passare a Criteri di **collaborazione** & e-mail & regole Criteri di minaccia \>  \>  \> **sezione** \> **Cassaforte Collegamenti**.
 
-2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco facendo clic sul nome.
+2. Nella pagina **Cassaforte collegamenti** selezionare un criterio dall'elenco facendo clic sul nome.
 
 3. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato è presente uno dei valori seguenti:
    - **Criterio disattivato**: per attivare il criterio, fare clic su ![Attiva icona](../../media/m365-cc-sc-turn-on-off-icon.png) **Attiva** .
@@ -187,20 +187,20 @@ Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei c
 
 Tornare alla pagina dei criteri principale, il valore **Stato** del criterio sarà **Attivato** o **Disattivato**.
 
-### <a name="set-the-priority-of-safe-links-policies"></a>Impostare la priorità dei criteri collegamenti sicuri
+### <a name="set-the-priority-of-safe-links-policies"></a>Impostare la priorità dei criteri Cassaforte collegamenti
 
-Per impostazione predefinita, ai collegamenti sicuri viene data una priorità basata sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
+Per impostazione predefinita, Cassaforte collegamenti hanno una priorità basata sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
 Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o **Riduci priorità** nelle proprietà del criterio. Non è possibile modificare direttamente il valore **Priorità** nel portale di Microsoft 365 Defender. La modifica di priorità di un criterio è utile solo se si hanno più criteri.
 
 **Nota**:
 
-- Nel portale Microsoft 365 Defender puoi modificare la priorità del criterio Collegamenti sicuri solo dopo aver creato il criterio. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola dei collegamenti sicuri (che può influire sulla priorità delle regole esistenti).
-- I criteri collegamenti sicuri vengono elaborati nell'ordine in cui vengono visualizzati (il primo criterio ha il **valore Priority** 0). Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
+- Nel portale Microsoft 365 Defender, è possibile modificare la priorità del criterio collegamenti Cassaforte solo dopo aver creato il criterio. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola dei collegamenti sicuri (che può influire sulla priorità delle regole esistenti).
+- Cassaforte I criteri dei collegamenti vengono elaborati nell'ordine in cui vengono visualizzati (il primo criterio ha il **valore Priority** 0). Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
 
-1. Nel portale Microsoft 365 Defender passare a Email **& Collaboration** Policies \> **& Rules** Threat \> **Policies** \> **section** \> **Safe Links**.
+1. Nel portale Microsoft 365 Defender, passare a Criteri di **collaborazione** & e-mail & regole Criteri di minaccia \>  \>  \> **sezione** \> **Cassaforte Collegamenti**.
 
-2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco facendo clic sul nome.
+2. Nella pagina **Cassaforte collegamenti** selezionare un criterio dall'elenco facendo clic sul nome.
 
 3. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato viene visualizzato **Aumenta priorità** o **Riduci priorità** in base al valore di priorità corrente e al numero di criteri personalizzati:
    - Per il criterio con **valore Priority** **0 è** disponibile solo **l'opzione Riduci** priorità.
@@ -211,17 +211,17 @@ Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o
 
 4. Al termine, fare clic su **Chiudi** nel riquadro a comparsa dei dettagli del criterio.
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Usare il portale Microsoft 365 Defender per rimuovere i criteri collegamenti sicuri
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Utilizzare il portale Microsoft 365 Defender per rimuovere i criteri Cassaforte collegamenti
 
-1. Nel portale Microsoft 365 Defender passare a Email **& Collaboration** Policies \> **& Rules** Threat \> **Policies** \> **section** \> **Safe Links**.
+1. Nel portale Microsoft 365 Defender, passare a Criteri di **collaborazione** & e-mail & regole Criteri di minaccia \>  \>  \> **sezione** \> **Cassaforte Collegamenti**.
 
-2. Nella pagina **Collegamenti sicuri** selezionare un criterio dall'elenco facendo clic sul nome. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato fare clic![ sull'icona Altre azioni](../../media/m365-cc-sc-more-actions-icon.png) **Altre azioni** \> ![Icona Elimina criterio](../../media/m365-cc-sc-delete-icon.png) **Elimina criterio**.
+2. Nella pagina **Cassaforte collegamenti** selezionare un criterio dall'elenco facendo clic sul nome. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato fare clic![ sull'icona Altre azioni](../../media/m365-cc-sc-more-actions-icon.png) **Altre azioni** \> ![Icona Elimina criterio](../../media/m365-cc-sc-delete-icon.png) **Elimina criterio**.
 
 3. Nella finestra di dialogo di conferma che viene visualizzata fare clic su **Sì**.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Utilizzare Exchange Online PowerShell o PowerShell EOP autonomo per configurare i criteri collegamenti sicuri
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Utilizzare Exchange Online PowerShell o PowerShell EOP autonomo per configurare i criteri Cassaforte collegamenti
 
-Come descritto in precedenza, un criterio Collegamenti sicuri è costituito da un criterio collegamenti sicuri e da una regola per i collegamenti sicuri.
+Come descritto in precedenza, un criterio Cassaforte collegamenti sicuri è costituito da un criterio collegamenti sicuri e da una regola per i collegamenti sicuri.
 
 In PowerShell, la differenza tra i criteri dei collegamenti sicuri e le regole dei collegamenti sicuri è evidente. È possibile gestire i criteri dei collegamenti sicuri utilizzando i cmdlet **\* -SafeLinksPolicy** e gestire le regole dei collegamenti sicuri utilizzando i cmdlet **\* -SafeLinksRule.**
 
@@ -229,9 +229,9 @@ In PowerShell, la differenza tra i criteri dei collegamenti sicuri e le regole d
 - In PowerShell, le impostazioni nel criterio collegamenti sicuri e nella regola dei collegamenti sicuri vengono modificate separatamente.
 - Quando si rimuove un criterio collegamenti sicuri da PowerShell, la regola dei collegamenti sicuri corrispondente non viene rimossa automaticamente e viceversa.
 
-### <a name="use-powershell-to-create-safe-links-policies"></a>Usare PowerShell per creare criteri collegamenti sicuri
+### <a name="use-powershell-to-create-safe-links-policies"></a>Usare PowerShell per creare criteri Cassaforte collegamenti
 
-La creazione di un criterio collegamenti sicuri in PowerShell è un processo in due passaggi:
+La creazione di Cassaforte dei collegamenti in PowerShell è un processo in due passaggi:
 
 1. Creare il criterio collegamenti sicuri.
 2. Creare la regola dei collegamenti sicuri che specifica il criterio dei collegamenti sicuri a cui si applica la regola.
@@ -244,7 +244,7 @@ La creazione di un criterio collegamenti sicuri in PowerShell è un processo in 
 >   - Creare il nuovo criterio come disabilitato (_Abilitato_ `$false` nel cmdlet **New-SafeLinksRule).**
 >   - Impostare la priorità del criterio durante la creazione (_Priority_ _\<Number\>_ ) nel cmdlet **New-SafeLinksRule.**
 >
-> - Un nuovo criterio di collegamenti sicuri creato in PowerShell non è visibile nel portale di Microsoft 365 Defender finché non si assegna il criterio a una regola dei collegamenti sicuri.
+> - Un nuovo criterio di collegamenti sicuri creato in PowerShell non è visibile nel portale di Microsoft 365 Defender finché non si assegna il criterio a una regola per i collegamenti sicuri.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Passaggio 1: Usare PowerShell per creare un criterio collegamenti sicuri
 
@@ -267,7 +267,7 @@ In questo esempio viene creato un criterio collegamenti sicuri denominato Contos
 - Attiva l'analisi in tempo reale degli URL selezionati, inclusi i collegamenti selezionati che puntano ai file.
 - Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio.
 - Attivare l'analisi e la riscrittura degli URL per i messaggi interni.
-- Tenere traccia dei clic degli utenti correlati alla protezione dei collegamenti sicuri (non viene utilizzato il parametro _DoNotTrackUserClicks_ e il valore predefinito è $false, ovvero vengono monitorati i clic degli utenti).
+- Tenere traccia dei clic degli utenti correlati alla protezione dei collegamenti di Cassaforte (non viene utilizzato il parametro _DoNotTrackUserClicks_ e il valore predefinito è $false, che significa che i clic degli utenti vengono monitorati).
 - Non consentire agli utenti di passare all'URL originale.
 
 ```PowerShell
@@ -353,7 +353,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Get-SafeLin
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>Utilizzare PowerShell per modificare i criteri dei collegamenti sicuri
 
-Non è possibile rinominare un criterio collegamenti sicuri in PowerShell (il cmdlet **Set-SafeLinksPolicy** non dispone di _alcun parametro Name)._ Quando si rinomina un criterio collegamenti sicuri nel portale di Microsoft 365 Defender, si rinomina solo la regola dei collegamenti _sicuri._
+Non è possibile rinominare un criterio collegamenti sicuri in PowerShell (il cmdlet **Set-SafeLinksPolicy** non dispone di _alcun parametro Name)._ Quando si rinomina un criterio Cassaforte collegamenti sicuri nel portale Microsoft 365 Defender, si rinomina solo la regola dei collegamenti _sicuri._
 
 L'unica considerazione aggiuntiva per la modifica dei criteri dei collegamenti sicuri in PowerShell è la sintassi disponibile per il parametro _DoNotRewriteUrls_ (l'elenco "Non riscrivere gli [URL seguenti"):](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
@@ -386,7 +386,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-SafeLin
 
 ### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a>Abilitazione o disabilitazione delle regole dei collegamenti sicuri tramite PowerShell
 
-L'abilitazione o la disabilitazione di una regola di collegamenti sicuri in PowerShell abilita o disabilita l'intero criterio Collegamenti sicuri (la regola dei collegamenti sicuri e il criterio collegamenti sicuri assegnati).
+L'abilitazione o la disabilitazione di una regola di collegamenti sicuri in PowerShell abilita o disabilita l'intero criterio collegamenti Cassaforte (la regola dei collegamenti sicuri e il criterio collegamenti sicuri assegnati).
 
 Per abilitare o disabilitare una regola di collegamenti sicuri in PowerShell, utilizzare la sintassi seguente:
 
@@ -465,13 +465,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Per verificare che i collegamenti sicuri esempeno l'analisi dei messaggi, controlla microsoft Defender disponibile per Office 365 report. Per altre informazioni, vedi [Visualizzare i report per Defender per Office 365](view-reports-for-mdo.md) e Usare Esplora risorse nel portale di Microsoft 365 [Defender.](threat-explorer.md)
+Per verificare che Cassaforte link esempa l'analisi dei messaggi, controlla microsoft Defender disponibile per Office 365 report. Per altre informazioni, vedi [Visualizzare i report per Defender per Office 365](view-reports-for-mdo.md) e Usare Esplora risorse nel portale [Microsoft 365 Defender.](threat-explorer.md)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
-Per verificare di aver creato, modificato o rimosso correttamente i criteri collegamenti sicuri, eseguire una delle operazioni seguenti:
+Per verificare di aver creato, modificato o rimosso correttamente i criteri Cassaforte collegamenti, eseguire una delle operazioni seguenti:
 
-- Nel portale Microsoft 365 Defender passare **a** Criteri & criteri di \> **minaccia** \> **Collegamenti sicuri**. Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare altri dettagli, selezionare il criterio nell'elenco e visualizzare i dettagli nel riquadro a comparsa.
+- Nel portale Microsoft 365 Defender, passare **a Criteri & criteri di** minaccia \>  \> **Cassaforte collegamenti**. Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare altri dettagli, selezionare il criterio nell'elenco e visualizzare i dettagli nel riquadro a comparsa.
 
 - In Exchange Online PowerShell o Exchange Online Protection PowerShell, sostituire con il nome del criterio o della regola, eseguire il comando seguente e \<Name\> verificare le impostazioni:
 

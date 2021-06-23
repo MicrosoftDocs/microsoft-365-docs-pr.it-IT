@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrare Microsoft Teams classi nel sistema Learning management
-ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 940c5c695d602ddce6ea49b1f914f2345fbeb7e5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053252"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083244"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard"></a>Usare Microsoft Teams classi con Blackboard
 
@@ -63,8 +63,6 @@ Come amministratore di Blackboard Learn Ultra, dovrai registrare 2 app di integr
 3. Selezionare **Register LTI1.3/Advantage Tool**.
 
 4. Immetti il primo degli ID client forniti (Blackboard o Microsoft) e seleziona **Invia.**
-
-   ![lo strumento di registrazione LTI con un campo per immettere l'ID client](../media/lti-media/register-tool.png)
 
 5. Esaminare le impostazioni precompilato e verificare che lo stato dello strumento sia contrassegnato come approvato.
 

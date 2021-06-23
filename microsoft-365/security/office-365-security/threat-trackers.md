@@ -18,12 +18,12 @@ ms.collection:
 description: Informazioni sui tracker delle minacce, inclusi i nuovi Tracker degni di nota, per aiutare l'organizzazione a rimanere al di sopra dei problemi di sicurezza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d7585df980fca322a3bc5ce28f2ef2f7f53284e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 0a5db47ccd3e1686b6b49174cb9b3c24256b8cbd
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930004"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083045"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Threat Trackers - New and Noteworthy
 
@@ -50,10 +50,10 @@ La maggior parte delle pagine del tracker include numeri di tendenza che vengono
 
 I tracker sono solo alcune delle numerose funzionalità avanzate disponibili con Microsoft Defender per Office 365 [Piano 2.](office-365-ti.md) I tracker delle minacce includono [tracker noteworth,](#noteworthy-trackers) [tracker di](#trending-trackers)tendenza, [query](#tracked-queries)tracciate e [query salvate.](#saved-queries)
 
-Per visualizzare e usare i tracker delle minacce per la tua organizzazione, vai al portale di Microsoft 365 Defender ( ) e scegli <https://security.microsoft.com> **Email & collaboration** \> **Threat tracker**.
+Per visualizzare e usare i tracker delle minacce per l'organizzazione, passare al portale di Microsoft 365 Defender ( ) e scegliere <https://security.microsoft.com> **Email & collaboration** \> **Threat tracker**.
 
 > [!NOTE]
-> Per usare Threat Trackers, devi essere un amministratore globale, un amministratore della sicurezza o un lettore di sicurezza. Vedere [Autorizzazioni nel portale Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+> Per usare Threat Trackers, devi essere un amministratore globale, un amministratore della sicurezza o un lettore di sicurezza. Vedere [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 ### <a name="noteworthy-trackers"></a>Tracker degni di nota
 
@@ -89,24 +89,24 @@ Sia che si riveda la posta elettronica, il contenuto o le attività Office (pres
 
 Ricorda che puoi sempre fornire feedback su questa o altre funzionalità di sicurezza Microsoft 365 facendo clic sul **pulsante Feedback** nell'angolo in basso a destra.
 
-![Microsoft 365 Defender Portal](../../media/microsoft-365-defender-portal.png)
+![Microsoft 365 Defender portale](../../media/microsoft-365-defender-portal.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>Tracker e Microsoft Defender per Office 365
 
-Con la nostra minaccia degna di nota, stiamo evidenziando le minacce malware avanzate rilevate [dagli allegati sicuri.](safe-attachments.md) Se sei un cliente Office 365 Enterprise E5 e non stai usando [Microsoft Defender per Office 365](defender-for-office-365.md), dovresti essere - è incluso nell'abbonamento. Defender for Office 365 offre valore anche se hai altri strumenti di sicurezza che filtrano il flusso di posta elettronica con i servizi Office 365 sicurezza. Tuttavia, le funzionalità di [protezione](safe-links.md) da posta indesiderata e collegamenti sicuri funzionano meglio quando la soluzione di sicurezza della posta elettronica principale è Office 365.
+Con la nostra minaccia degna di nota, stiamo evidenziando le minacce antimalware avanzate rilevate da [Cassaforte allegati.](safe-attachments.md) Se sei un cliente Office 365 Enterprise E5 e non stai usando [Microsoft Defender per Office 365](defender-for-office-365.md), dovresti essere - è incluso nell'abbonamento. Defender for Office 365 offre valore anche se hai altri strumenti di sicurezza che filtrano il flusso di posta elettronica con i servizi Office 365 sicurezza. Tuttavia, le funzionalità di protezione da posta indesiderata [e Cassaforte](safe-links.md) collegamenti funzionano meglio quando la soluzione di sicurezza della posta elettronica principale è Office 365.
 
 ![Microsoft Defender per Office 365 nel portale Microsoft 365 Defender](../../media/policies.png)
 
-Nel mondo odierno pieno di minacce, eseguire solo analisi antimalware tradizionali significa che non sei abbastanza protetto dagli attacchi. Gli utenti malintenzionati più sofisticati usano strumenti comunemente disponibili per creare nuovi attacchi offuscati o ritardati che non verranno riconosciuti dai tradizionali motori antimalware basati su firma. La funzionalità Allegati sicuri accetta allegati di posta elettronica e li fa detonare in un ambiente virtuale per determinare se sono sicuri o dannosi. Questo processo di detonazione apre ogni file in un ambiente di computer virtuale, quindi osserva cosa accade dopo l'apertura del file. Sia che si tratta di un file PDF, compresso o di un documento Office, il codice dannoso può essere nascosto in un file, attivando solo una volta che la vittima lo apre sul computer. Detonando e analizzando il file nel flusso di posta elettronica, le funzionalità di Defender per Office 365 individuano queste minacce in base ai comportamenti, alla reputazione dei file e a una serie di regole euristiche.
+Nel mondo odierno pieno di minacce, eseguire solo analisi antimalware tradizionali significa che non sei abbastanza protetto dagli attacchi. Gli utenti malintenzionati più sofisticati usano strumenti comunemente disponibili per creare nuovi attacchi offuscati o ritardati che non verranno riconosciuti dai tradizionali motori antimalware basati su firma. La Cassaforte allegati di posta elettronica accetta allegati di posta elettronica e li fa detonare in un ambiente virtuale per determinare se sono sicuri o dannosi. Questo processo di detonazione apre ogni file in un ambiente di computer virtuale, quindi osserva cosa accade dopo l'apertura del file. Sia che si tratta di un file PDF, compresso o di un documento Office, il codice dannoso può essere nascosto in un file, attivando solo una volta che la vittima lo apre sul computer. Detonando e analizzando il file nel flusso di posta elettronica, le funzionalità di Defender per Office 365 individuano queste minacce in base ai comportamenti, alla reputazione dei file e a una serie di regole euristiche.
 
-Il nuovo filtro delle minacce degne di nota evidenzia gli elementi rilevati di recente tramite allegati sicuri. Questi rilevamenti rappresentano gli elementi che sono nuovi file dannosi, non trovati in precedenza da Microsoft 365 nel flusso di posta elettronica o nella posta elettronica di altri clienti. Presta attenzione agli elementi in Noteworthy Threat Tracker, vedi chi è stato preso di mira da loro ed esamina i dettagli della detonazione mostrati nella scheda Analisi avanzata (che si trova facendo clic sull'oggetto del messaggio di posta elettronica in Esplora risorse). Nota questa scheda è disponibile solo nei messaggi di posta elettronica rilevati dalla funzionalità Allegati sicuri: questo strumento di monitoraggio degna di nota include tale filtro, ma puoi anche usare tale filtro per altre ricerche in Esplora risorse.
+Il nuovo filtro delle minacce degne di nota evidenzia gli elementi rilevati di recente Cassaforte allegati. Questi rilevamenti rappresentano gli elementi che sono nuovi file dannosi, non trovati in precedenza da Microsoft 365 nel flusso di posta elettronica o nella posta elettronica di altri clienti. Presta attenzione agli elementi in Noteworthy Threat Tracker, vedi chi è stato preso di mira da loro ed esamina i dettagli della detonazione mostrati nella scheda Analisi avanzata (che si trova facendo clic sull'oggetto del messaggio di posta elettronica in Esplora risorse). Nota questa scheda è disponibile solo nei messaggi di posta elettronica rilevati dalla funzionalità allegati di Cassaforte: questo strumento di monitoraggio degna di nota include tale filtro, ma puoi anche usare tale filtro per altre ricerche in Esplora risorse.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 - Se l'organizzazione non dispone già di queste funzionalità Office 365 threat investigation e response, vedere [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 
-- Assicurarsi che al team di sicurezza siano assegnati i ruoli e le autorizzazioni corretti. È necessario essere un amministratore globale o disporre del ruolo Amministratore sicurezza o Ricerca ed eliminazione nel portale di Microsoft 365 Defender. Vedere [Autorizzazioni nel portale Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+- Assicurarsi che al team di sicurezza siano assegnati i ruoli e le autorizzazioni corretti. È necessario essere un amministratore globale o disporre del ruolo Amministratore sicurezza o Ricerca ed eliminazione nel portale Microsoft 365 Defender sicurezza. Vedere [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 - Guarda i nuovi tracker da visualizzare nell'Microsoft 365 locale. Se disponibile, troverai i tracker [qui.](https://https://security.microsoft.com/) Vai a **Email & collaboration** Threat \> **tracker**.
 
-- Se non l'hai già fatto, scopri di più su e configura Microsoft [](safe-links.md) [Defender](defender-for-office-365.md) per Office 365 per la tua organizzazione, inclusi collegamenti sicuri e [allegati sicuri.](safe-attachments.md)
+- Se non l'hai già fatto, scopri di più su e configura Microsoft [](safe-links.md) [Defender per Office 365](defender-for-office-365.md) per la tua organizzazione, inclusi i collegamenti Cassaforte e Cassaforte [allegati.](safe-attachments.md)

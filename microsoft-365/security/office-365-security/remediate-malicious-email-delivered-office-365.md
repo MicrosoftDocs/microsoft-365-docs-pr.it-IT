@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a59b24cd29ab8bf3b9b08c7818813a7ab89f7ce2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 44d093c039e972832b162b989577f04dc336812b
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537884"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082877"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Correggere i messaggi di posta elettronica dannosi recapitati in Office 365
 
@@ -29,23 +29,23 @@ ms.locfileid: "52537884"
 **Si applica a**
 - [Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md)
 
-La correzione significa eseguire un'azione prescritta contro una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere puliti dal sistema, tramite l'eliminazione automatica a zero ore (ZAP) o dai team di sicurezza tramite azioni di correzione come lo spostamento nella posta in *arrivo,* lo spostamento nella posta *indesiderata,* lo spostamento agli elementi *eliminati,* l'eliminazione reversa *o* l'eliminazione *permanente.* Microsoft Defender per Office 365 P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite indagini manuali e automatizzate.
+La correzione significa eseguire un'azione prescritta contro una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere puliti dal sistema, tramite l'eliminazione automatica a zero ore (ZAP) o dai team di sicurezza tramite azioni di correzione come lo spostamento nella posta in *arrivo,* lo spostamento nella posta *indesiderata,* lo spostamento agli elementi *eliminati,* l'eliminazione reversa *o* l'eliminazione *permanente.* Microsoft Defender per Office 365 Piano 2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite un'indagine manuale e automatizzata.
 
 > [!NOTE]
-> Per correggere la posta elettronica dannosa, i team di sicurezza necessitano del ruolo di ricerca *ed eliminazione* assegnato. L'assegnazione di ruolo viene eseguita tramite le autorizzazioni nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+> Per correggere i messaggi di posta elettronica dannosi, i team di sicurezza devono *disporre* del ruolo Di ricerca ed eliminazione. L'assegnazione di ruolo viene eseguita tramite le [autorizzazioni nel Microsoft 365 Defender portale.](permissions-microsoft-365-security-center.md)
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Informazioni necessarie prima di iniziare
 
-Gli amministratori possono eseguire le azioni necessarie nei messaggi di posta  elettronica, ma per ottenere l'approvazione di tali azioni, è necessario che gli sia assegnato il ruolo di ricerca ed eliminazione tramite Autorizzazioni del Centro **sicurezza &** \> **conformità**. Senza il ruolo "ricerca ed eliminazione" aggiunto a uno dei gruppi di ruoli, non saranno in grado di eseguire l'azione.
+Gli amministratori possono eseguire le azioni necessarie per i messaggi di  posta elettronica, ma per  ottenere l'approvazione di tali azioni, è necessario che gli sia assegnato il ruolo Di ricerca ed eliminazione nelle autorizzazioni di collaborazione & e-mail nel portale di Microsoft 365 Defender. Senza il *ruolo Ricerca ed eliminazione"* aggiunto a uno dei gruppi di ruoli, non saranno in grado di eseguire l'azione.
 
 ## <a name="manual-and-automated-remediation"></a>Correzione manuale e automatica
 
-*La ricerca manuale* si verifica quando i team di sicurezza identificano manualmente le minacce utilizzando le funzionalità di ricerca e filtro in Esplora minacce. La correzione manuale della posta elettronica può essere attivata tramite qualsiasi visualizzazione della posta elettronica (*Malware,* *Phish* o *Tutti* i messaggi di posta elettronica ) dopo aver identificato un set di messaggi di posta elettronica da correggere.
+*La ricerca manuale* avviene quando i team di sicurezza identificano manualmente le minacce utilizzando le funzionalità di ricerca e filtro in Esplora risorse. La correzione manuale della posta elettronica può essere attivata tramite qualsiasi visualizzazione della posta elettronica (*Malware,* *Phish* o *Tutti* i messaggi di posta elettronica ) dopo aver identificato un set di messaggi di posta elettronica da correggere.
 
 > [!div class="mx-imgBorder"]
 > [![Ricerca manuale in Office 365 Threat Explorer per data.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
-I team di sicurezza possono usare Esplora minacce per selezionare i messaggi di posta elettronica in diversi modi:
+I team di sicurezza possono usare Explorer per selezionare i messaggi di posta elettronica in diversi modi:
 
 - Scegliere manualmente i messaggi di posta elettronica: usare i filtri in diverse visualizzazioni. Selezionare fino a 100 messaggi di posta elettronica da correggere.
 
@@ -53,23 +53,23 @@ I team di sicurezza possono usare Esplora minacce per selezionare i messaggi di 
 
 - Selezione delle query con esclusione: a volte i team delle operazioni di sicurezza potrebbero voler correggere i messaggi di posta elettronica selezionando un'intera query ed escludendo manualmente alcuni messaggi di posta elettronica dalla query. A tale scopo, un amministratore può usare la **casella di** controllo Seleziona tutto e scorrere verso il basso per escludere manualmente i messaggi di posta elettronica. La query può contenere un massimo di 1.000 messaggi di posta elettronica. Il numero massimo di esclusioni è 100.
 
-Dopo aver selezionato i messaggi di posta elettronica tramite Threat Explorer, puoi avviare la correzione mediante un'azione diretta o l'accodamento dei messaggi di posta elettronica per un'azione:
+Dopo aver selezionato i messaggi di posta elettronica tramite Esplora risorse, è possibile avviare la correzione mediante un'azione diretta o l'accodamento dei messaggi di posta elettronica per un'azione:
 
 - Approvazione diretta: quando azioni come lo spostamento nella posta in *arrivo,* lo spostamento nella posta *indesiderata,* lo spostamento agli elementi *eliminati,* l'eliminazione reversibili o l'eliminazione definitiva vengono selezionati dal personale di sicurezza che dispone delle autorizzazioni appropriate e vengono seguite le operazioni successive di correzione, il processo di correzione inizia a eseguire l'azione selezionata.  Un riquadro a comparsa temporaneo mostra la correzione in corso.
 
 - Approvazione in due passaggi: un'azione di "aggiunta alla correzione" può essere eseguita dagli amministratori che non dispongono delle autorizzazioni appropriate o che devono attendere l'esecuzione dell'azione. In questo caso, i messaggi di posta elettronica di destinazione vengono aggiunti a un contenitore di correzione. L'approvazione è necessaria prima dell'esecuzione della correzione.
 
-**Le azioni di indagine e risposta** automatizzate vengono attivate dagli avvisi o dai team delle operazioni di sicurezza di Threat Explorer. Possono includere azioni di correzione consigliate che devono essere approvate da un team delle operazioni di sicurezza. Queste azioni sono incluse nella scheda **Azione** dell'indagine automatizzata.
+**Le azioni di indagine e risposta** automatizzate vengono attivate dagli avvisi o dai team delle operazioni di sicurezza di Explorer. Possono includere azioni di correzione consigliate che devono essere approvate da un team delle operazioni di sicurezza. Queste azioni sono incluse nella scheda **Azione** dell'indagine automatizzata.
 
 > [!div class="mx-imgBorder"]
 > [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Tutte le correzioni (approvazione diretta o approvazione in due passaggi) create in Esplora minacce e le azioni approvate provenienti da indagini automatizzate vengono visualizzate nel Centro notifiche. Accedi a questi elementi tramite il riquadro di spostamento sinistro in **Centro** \> **notifiche revisione.**
+Tutte le correzioni (approvazione diretta o approvazione in due passaggi) create in Esplora risorse e le azioni approvate provenienti da indagini automatizzate vengono visualizzate nel centro notifiche. Accedi a questi elementi tramite il riquadro di spostamento sinistro in **Centro** \> **notifiche revisione.**
 
 > [!div class="mx-imgBorder"]
 > [![Centro notifiche con un elenco di minacce per data e gravità.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
-Il Centro notifiche mostra tutte le azioni di correzione degli ultimi 30 giorni. Le azioni eseguite tramite Esplora minacce sono elencate in base al nome fornito dal team delle operazioni di sicurezza al momento della creazione della correzione. Le azioni intraprese tramite indagini automatizzate hanno titoli che iniziano con l'avviso correlato che ha attivato l'indagine, ad esempio "Zap email cluster... ."
+Il Centro notifiche mostra tutte le azioni di correzione degli ultimi 30 giorni. Le azioni eseguite tramite Esplora risorse sono elencate in base al nome fornito dal team delle operazioni di sicurezza al momento della creazione della correzione. Le azioni intraprese tramite indagini automatizzate hanno titoli che iniziano con l'avviso correlato che ha attivato l'indagine, ad esempio "Zap email cluster... ."
 
 Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, inclusi il nome, la data di creazione, la descrizione, la gravità della minaccia e lo stato. Vengono inoltre mostrate le due schede seguenti.
 
@@ -93,11 +93,11 @@ Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, inclusi il
     - Locale/esterno
     - Non riuscito/eliminato
 
-  I messaggi sospetti vengono classificati come corretti o non corretti. Nella maggior parte dei casi, i messaggi correttivi e non corretti sono uguali al totale dei messaggi inviati. Ma in rari casi questo potrebbe non essere vero. Ciò può verificarsi a causa di ritardi del sistema, timeout o messaggi scaduti. I messaggi scadono in base al periodo di conservazione di Esplora minacce per l'organizzazione.
+  I messaggi sospetti vengono classificati come corretti o non corretti. Nella maggior parte dei casi, i messaggi correttivi e non corretti sono uguali al totale dei messaggi inviati. Ma in rari casi questo potrebbe non essere vero. Ciò può verificarsi a causa di ritardi del sistema, timeout o messaggi scaduti. I messaggi scadono in base al periodo di conservazione di Explorer per l'organizzazione.
 
-  A meno che non si remediating old messages after your organization's Threat Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. Per i ritardi del sistema, gli aggiornamenti di correzione vengono in genere aggiornati entro poche ore.
+  A meno che non si remediating old messages after your organization's Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. Per i ritardi del sistema, gli aggiornamenti di correzione vengono in genere aggiornati entro poche ore.
 
-  Se il periodo di conservazione dell'organizzazione per la posta elettronica in Threat Explorer è di 30 giorni e si stanno correggere i messaggi di posta elettronica che tornano indietro di 29-30 giorni, il conteggio degli invii di posta elettronica potrebbe non sempre sommarsi. I messaggi di posta elettronica potrebbero aver già iniziato a uscire dal periodo di conservazione.
+  Se il periodo di conservazione dell'organizzazione per la posta elettronica in Esplora risorse è di 30 giorni e si stanno correggere i messaggi di posta elettronica che tornano indietro di 29-30 giorni, il conteggio degli invii di posta elettronica potrebbe non essere sempre sommato. I messaggi di posta elettronica potrebbero aver già iniziato a uscire dal periodo di conservazione.
 
   Se le correzioni sono bloccate nello stato "In corso" per un po', è probabile che siano dovute a ritardi del sistema. La correzione potrebbe richiedere fino a poche ore. Potrebbero essere presenti varianti nel conteggio degli invii di posta elettronica, perché alcuni dei messaggi di posta elettronica potrebbero non essere stati inclusi nella query all'inizio della correzione a causa di ritardi del sistema. È buona idea ripetere la correzione in questi casi.
 
@@ -106,24 +106,24 @@ Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, inclusi il
 
   Durante la correzione vengono agiti solo i messaggi di posta elettronica corretti. I messaggi di posta elettronica non correttibili non possono essere corretti dal Office 365 di posta elettronica, poiché non vengono archiviati nelle cassette postali cloud.
 
-  Se necessario, gli amministratori possono eseguire azioni sui messaggi di posta elettronica in quarantena, ma tali messaggi scadranno dalla quarantena se non vengono eliminati manualmente. I messaggi di posta elettronica messi in quarantena a causa di contenuti dannosi non sono accessibili dagli utenti, quindi il personale di sicurezza non deve eseguire alcuna azione per eliminare le minacce in quarantena. Se i messaggi di posta elettronica sono locali o esterni, l'utente può essere contattato per risolvere il messaggio di posta elettronica sospetto. Oppure gli amministratori possono usare strumenti di sicurezza/server di posta elettronica separati per la rimozione. Questi messaggi di posta elettronica possono essere identificati applicando il percorso di recapito *= filtro esterno* locale in Threat Explorer. Per i messaggi di posta elettronica non riusciti o eliminati o non accessibili dagli utenti, non ci saranno messaggi di posta elettronica da mitigare, dal momento che questi messaggi non raggiungono la cassetta postale.
+  Se necessario, gli amministratori possono eseguire azioni sui messaggi di posta elettronica in quarantena, ma tali messaggi scadranno dalla quarantena se non vengono eliminati manualmente. I messaggi di posta elettronica messi in quarantena a causa di contenuti dannosi non sono accessibili dagli utenti, quindi il personale di sicurezza non deve eseguire alcuna azione per eliminare le minacce in quarantena. Se i messaggi di posta elettronica sono locali o esterni, l'utente può essere contattato per risolvere il messaggio di posta elettronica sospetto. Oppure gli amministratori possono usare strumenti di sicurezza/server di posta elettronica separati per la rimozione. Questi messaggi di posta elettronica possono essere identificati applicando il percorso di recapito *= filtro esterno* locale in Esplora risorse. Per i messaggi di posta elettronica non riusciti o eliminati o non accessibili dagli utenti, non ci saranno messaggi di posta elettronica da mitigare, dal momento che questi messaggi non raggiungono la cassetta postale.
 
   L'immagine seguente mostra l'aspetto di un invio nel Centro notifiche. Una correzione può contenere più invii. Se più azioni vengono approvate tramite un'indagine automatizzata, ogni azione del cluster di posta elettronica o di posta elettronica viene visualizzata nella stessa correzione di un invio diverso.
 
   > [!div class="mx-imgBorder"]
   > [![Riquadro a comparsa del cluster di posta elettronica ZAP.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
-  Selezionare un elemento di invio della posta per visualizzare i dettagli di tale correzione, ad esempio la query (quando la correzione viene attivata tramite indagini automatizzate o Esplora minacce tramite la selezione di una query) e l'ora di inizio e fine della correzione. Viene inoltre visualizzato un elenco dei messaggi inviati per la correzione. Quando i messaggi vengono spostati al di fuori del periodo di conservazione di Esplora minacce, i messaggi scompaiono da questo elenco. L'elenco mostra anche i singoli messaggi corretti.
+  Selezionare un elemento di invio della posta per visualizzare i dettagli di tale correzione, ad esempio la query (quando la correzione viene attivata tramite indagini automatizzate o Esplora risorse tramite la selezione di una query) e l'ora di inizio e fine della correzione. Viene inoltre visualizzato un elenco dei messaggi inviati per la correzione. Quando i messaggi vengono spostati fuori dal periodo di conservazione di Esplora risorse, i messaggi scompaiono da questo elenco. L'elenco mostra anche i singoli messaggi corretti.
 
 - **Log azioni:** questa scheda mostra i messaggi corretti, inclusa la data approvata, l'amministratore che ha approvato l'azione, l'azione, lo stato e i conteggi.
 
   Lo stato può essere:
 
   - **Avviato:** viene attivata la correzione.
-  - **In coda:** la correzione viene accodata per la mitigazione dei messaggi di posta elettronica.
-  - **In corso:** mitigazione in corso.
-  - **Completato:** mitigazione di tutti i messaggi di posta elettronica correttibili completati correttamente o con alcuni errori.
-  - **Operazione** non riuscita: nessuna correzione è riuscita.
+    - **In coda:** la correzione viene accodata per la mitigazione dei messaggi di posta elettronica.
+    - **In corso:** mitigazione in corso.
+    - **Completato:** mitigazione di tutti i messaggi di posta elettronica correttibili completati correttamente o con alcuni errori.
+    - **Operazione** non riuscita: nessuna correzione è riuscita.
 
   Poiché è possibile intervenire solo sui messaggi di posta elettronica corretti, la pulizia di ogni messaggio di posta elettronica viene visualizzata come completata o non riuscita. Dai messaggi di posta elettronica correttivi totali, vengono segnalate le mitigazioni riuscite e non riuscite.
 
@@ -135,7 +135,7 @@ Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, inclusi il
 
   Selezionare qualsiasi elemento nel registro azioni per visualizzare i dettagli di correzione. Se i dettagli dicono "operazione riuscita" o "non trovata nella cassetta postale", l'elemento è già stato rimosso dalla cassetta postale. A volte si verifica un errore di sistema durante la correzione. In questi casi, è buona idea ritentare la correzione.
 
-  In caso di correzione di batch di grandi dimensioni, è anche possibile esportare i messaggi inviati per la correzione tramite Invio posta e i messaggi corretti tramite i log azioni. Il limite di esportazione viene aumentato a 100.000 record.
+  In caso di correzione di batch di grandi dimensioni, è anche possibile esportare i messaggi inviati per la correzione tramite Invio posta e i messaggi corretti tramite i registri azioni. Il limite di esportazione viene aumentato a 100.000 record.
 
 Il team di sicurezza può richiedere fino a 50 correzioni manuali simultanee; Tuttavia, non è impostato alcun limite per le azioni di indagine e risposta automatizzate.
 

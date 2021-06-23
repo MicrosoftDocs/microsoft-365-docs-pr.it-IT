@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono scoprire come trovare e usare i report di sicurezza della posta elettronica disponibili nel portale di Microsoft 365 Defender.
+description: Gli amministratori possono imparare a trovare e usare i report di sicurezza della posta elettronica disponibili nel portale Microsoft 365 Defender posta elettronica.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2ad90038ac818f9759768d0d00019393205b03f3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029573"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083525"
 ---
-# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualizzare i report di sicurezza della posta elettronica nel portale di Microsoft 365 Defender
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender posta elettronica
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,20 +35,20 @@ ms.locfileid: "53029573"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nel portale di Microsoft 365 Defender sono disponibili diversi report che consentono di vedere come le funzionalità di sicurezza della posta elettronica, ad esempio la protezione da posta indesiderata, antimalware e crittografia <https://security.microsoft.com> in Microsoft 365, proteggono l'organizzazione. Se si dispone delle autorizzazioni [necessarie,](#what-permissions-are-needed-to-view-these-reports)è possibile visualizzare questi report nel  portale di Microsoft 365 Defender andando a Rapporti e-mail & \> **collaborazione** \> **E-mail**& rapporti di collaborazione . Per passare direttamente alla pagina Rapporti di **collaborazione &** e-mail, aprire <https://security.microsoft.com/emailandcollabreport> .
+Nel portale di Microsoft 365 Defender è disponibile un'ampia gamma di report che consentono di verificare in che modo le funzionalità di sicurezza della posta elettronica, ad esempio la protezione da posta indesiderata, antimalware e crittografia in Microsoft 365, proteggono <https://security.microsoft.com> l'organizzazione. Se si dispone [delle](#what-permissions-are-needed-to-view-these-reports)autorizzazioni necessarie, è possibile visualizzare questi  report nel portale di Microsoft 365 Defender andando a Rapporti e-mail & \> **collaborazione** \> **E-mail**& rapporti di collaborazione . Per passare direttamente alla pagina Rapporti di **collaborazione &** e-mail, aprire <https://security.microsoft.com/emailandcollabreport> .
 
-![Pagina dei & di collaborazione tramite posta elettronica nel portale di Microsoft 365 Defender](../../media/email-collaboration-reports.png)
+![Pagina dei & di collaborazione tramite posta elettronica nel portale Microsoft 365 Defender posta elettronica](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
 > Alcuni dei report nella pagina Rapporti di **collaborazione &** e-mail richiedono Microsoft Defender per Office 365. Per informazioni su questi report, vedere [View Defender for Office 365 reports in the Microsoft 365 Defender portal.](view-reports-for-mdo.md)
 >
-> I report correlati al flusso di posta sono ora disponibili nell'interfaccia di amministrazione di Exchange (EAC). Per ulteriori informazioni su questi report, vedere [Mail flow reports in the new Exchange admin center.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> I report correlati al flusso di posta sono ora disponibili nell'interfaccia di amministrazione di Exchange (EAC). Per ulteriori informazioni su questi report, vedere [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
 ## <a name="compromised-users-report"></a>Report utenti compromessi
 
 > [!NOTE]
-> Questo report è disponibile nelle organizzazioni di Microsoft 365 con cassette postali di Exchange Online. Non è disponibile nelle organizzazioni autonome di Exchange Online Protection (EOP).
+> Questo report è disponibile nelle organizzazioni Microsoft 365 con Exchange Online cassette postali. Non è disponibile nelle organizzazioni autonome Exchange Online Protection (EOP).
 
 Il **report Utenti compromessi** mostra il numero di  account  utente contrassegnati come sospetti o con restrizioni negli ultimi 7 giorni. Gli account in uno di questi stati sono problematici o addirittura compromessi. Con un uso frequente, è possibile utilizzare il report per individuare picchi e persino tendenze in account sospetti o con restrizioni. Per ulteriori informazioni sugli utenti compromessi, vedere [Risposta a un account di posta elettronica compromesso.](responding-to-a-compromised-email-account.md)
 
@@ -56,7 +56,7 @@ Il **report Utenti compromessi** mostra il numero di  account  utente contrasseg
 
 La visualizzazione aggregata mostra i dati degli ultimi 90 giorni e la visualizzazione dettagli mostra i dati degli ultimi 30 giorni.
 
-Per visualizzare il report nel portale di Microsoft 365 Defender, passare **a** Report e-mail & \> **collaborazione** \> **E-mail & di collaborazione**. Nella pagina **Rapporti di &** e-mail individuare Utenti **compromessi** e quindi fare clic **su Visualizza dettagli.** Per passare direttamente al report, aprire <https://security.microsoft.com/reports/CompromisedUsers> .
+Per visualizzare il report nel portale Microsoft 365 Defender, passare **a** Report e-mail & \> **collaborazione** \> **E-mail & rapporti di collaborazione**. Nella pagina **Rapporti di &** e-mail individuare Utenti **compromessi** e quindi fare clic **su Visualizza dettagli.** Per passare direttamente al report, aprire <https://security.microsoft.com/reports/CompromisedUsers> .
 
 Nella pagina **Utenti compromessi** è possibile filtrare sia il grafico che la tabella dei dettagli facendo clic su **Filtro** e selezionando uno o più dei valori seguenti nel riquadro a comparsa visualizzato:
 
@@ -75,29 +75,29 @@ Nella tabella dei dettagli sotto il grafico è possibile visualizzare i dettagli
 - **ID utente**
 - **Azione**
 
-## <a name="exchange-transport-rule-report"></a>Report delle regole di trasporto di Exchange
+## <a name="exchange-transport-rule-report"></a>Exchange delle regole di trasporto
 
-Il **rapporto sulle regole di trasporto** di Exchange mostra l'effetto delle regole del flusso di posta (note anche come regole di trasporto) sui messaggi in arrivo e in uscita nell'organizzazione.
+Il **Exchange delle regole di trasporto** mostra l'effetto delle regole del flusso di posta (note anche come regole di trasporto) sui messaggi in arrivo e in uscita nell'organizzazione.
 
-Per visualizzare il report nel portale di Microsoft 365 Defender, passare **a** Report e-mail & \> **collaborazione** \> **E-mail & di collaborazione**. Nella pagina **Rapporti di & e-mail** individuare la regola di trasporto **di Exchange** e quindi fare clic su **Visualizza dettagli**. Per passare direttamente al report, aprire <https://security.microsoft.com/reports/ETRRuleReport> .
+Per visualizzare il report nel portale Microsoft 365 Defender, passare **a** Report e-mail & \> **collaborazione** \> **E-mail & rapporti di collaborazione**. Nella pagina **Rapporti di &** e-mail individuare Exchange di **trasporto** e quindi fare clic su **Visualizza dettagli.** Per passare direttamente al report, aprire <https://security.microsoft.com/reports/ETRRuleReport> .
 
-![Widget regola di trasporto di Exchange nella pagina Rapporti di collaborazione & e-mail](../../media/transport-rule-report-widget.png)
+![Exchange della regola di trasporto nella pagina Rapporti di collaborazione & posta elettronica](../../media/transport-rule-report-widget.png)
 
-Nella pagina **Rapporto regole di trasporto di Exchange,** i grafici e i dati disponibili sono descritti nelle sezioni seguenti.
+Nella pagina **Exchange report delle regole di** trasporto, i grafici e i dati disponibili sono descritti nelle sezioni seguenti.
 
 ### <a name="chart-breakdown-by-direction"></a>Suddivisione del grafico per direzione
 
-![Visualizzazione della direzione per le regole di trasporto di Exchange nel report delle regole di trasporto di Exchange](../../media/transport-rule-report-etr-direction-view.png)
+![Visualizzazione direzione per Exchange regole di trasporto nel report Exchange regole di trasporto](../../media/transport-rule-report-etr-direction-view.png)
 
 Se si seleziona **Suddivisione grafico per direzione**, sono disponibili i grafici seguenti:
 
-- **Visualizzare i dati in base alle regole di trasporto di Exchange**: numero di messaggi in  **ingresso** e in uscita interessati dalle regole del flusso di posta.
+- **Visualizzare i dati Exchange regole di trasporto**:  Numero di messaggi **in** ingresso e in uscita interessati dalle regole del flusso di posta.
 - **View data by DLP Exchange transport rules**: The number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) mail flow rules.
 
 Nella tabella dei dettagli sotto il grafico vengono visualizzate le informazioni seguenti:
 
 - **Data**
-- **Criterio DLP** (**Visualizzare i dati solo in base alle regole di trasporto di Exchange DLP)**
+- **Criterio DLP** (**Visualizza i dati solo per Exchange DLP)**
 - **Regola di trasporto**
 - **Oggetto**
 - **Indirizzo del mittente**
@@ -115,18 +115,18 @@ Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla*
 
 ### <a name="chart-breakdown-by-severity"></a>Suddivisione del grafico per gravità
 
-![Visualizzazione gravità per le regole di trasporto di Exchange nel report delle regole di trasporto di Exchange](../../media/transport-rule-report-etr-severity-view.png)
+![Visualizzazione gravità per Exchange regole di trasporto nel report Exchange regole di trasporto](../../media/transport-rule-report-etr-severity-view.png)
 
 Se si seleziona **Scomposizione grafico per gravità**, sono disponibili i grafici seguenti:
 
-- **Visualizzare i dati in base alle regole di** trasporto di Exchange : numero di messaggi di gravità elevata, gravità media e **gravità** bassa.   Il livello di gravità viene impostato come azione nella regola **(** Controlla questa regola con livello di gravità o _SetAuditSeverity_). Per ulteriori informazioni, vedere [Mail flow rule actions in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **Visualizzare i dati Exchange regole di trasporto**: Numero di messaggi Di gravità elevata, Gravità media e  **Gravità** bassa.  Il livello di gravità viene impostato come azione nella regola **(** Controlla questa regola con livello di gravità o _SetAuditSeverity_). Per ulteriori informazioni, vedere [Mail flow rule actions in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Visualizzare i dati in base alle** regole di trasporto di  Exchange DLP : numero di messaggi di gravità **elevata,** di gravità **media** e di gravità bassa interessati dalle regole del flusso di posta DLP.
+- **Visualizzare i dati** da DLP Exchange di trasporto : Numero di messaggi  di gravità **elevata,** gravità media e gravità bassa interessati dalle regole del flusso di posta DLP.
 
 Nella tabella dei dettagli sotto il grafico vengono visualizzate le informazioni seguenti:
 
 - **Data**
-- **Criterio DLP** (**Visualizzare i dati solo in base alle regole di trasporto di Exchange DLP)**
+- **Criterio DLP** (**Visualizza i dati solo per Exchange DLP)**
 - **Regola di trasporto**
 - **Oggetto**
 - **Indirizzo del mittente**
@@ -149,9 +149,9 @@ Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla*
 
 ## <a name="mailflow-status-report"></a>Rapporto sullo stato del flusso di posta
 
-Il **rapporto** sullo stato del flusso di posta è un report intelligente che mostra informazioni sulla posta elettronica in arrivo e in uscita, sui rilevamenti di posta indesiderata, sul malware, sulla posta elettronica identificata come "buona" e sulle informazioni sulla posta elettronica consentita o bloccata sul perimetro. Questo è l'unico report che contiene informazioni sulla protezione perimetrale e mostra la quantità di posta elettronica bloccata prima di essere consentita al servizio per la valutazione da Parte di Exchange Online Protection (EOP). È importante comprendere che se un messaggio viene inviato a cinque destinatari, viene conteggiato come cinque messaggi diversi e non un messaggio.
+Il **rapporto** sullo stato del flusso di posta è un report intelligente che mostra informazioni sulla posta elettronica in arrivo e in uscita, sui rilevamenti di posta indesiderata, sul malware, sulla posta elettronica identificata come "buona" e sulle informazioni sulla posta elettronica consentita o bloccata sul perimetro. Questo è l'unico report che contiene informazioni sulla protezione perimetrale e mostra la quantità di posta elettronica bloccata prima di essere consentita al servizio per la valutazione da parte di Exchange Online Protection (EOP). È importante comprendere che se un messaggio viene inviato a cinque destinatari, viene conteggiato come cinque messaggi diversi e non un messaggio.
 
-Per visualizzare il report nel portale di Microsoft 365 Defender, passare **a** Report e-mail & \> **collaborazione** \> **E-mail & di collaborazione**. Nella pagina **E-mail & rapporti di collaborazione,** trovare Riepilogo stato **flusso** di posta e quindi fare clic **su Visualizza dettagli**. Per passare direttamente al report, aprire <https://security.microsoft.com/reports/mailflowStatusReport> .
+Per visualizzare il report nel portale Microsoft 365 Defender, passare **a** Report e-mail & \> **collaborazione** \> **E-mail & rapporti di collaborazione**. Nella pagina **E-mail & rapporti di collaborazione,** trovare Riepilogo stato **flusso** di posta e quindi fare clic **su Visualizza dettagli**. Per passare direttamente al report, aprire <https://security.microsoft.com/reports/mailflowStatusReport> .
 
 ![Widget Riepilogo stato flusso di posta nella pagina Rapporti di collaborazione & posta elettronica](../../media/mail-flow-status-report-widget.png)
 
@@ -275,8 +275,8 @@ La tabella dei dettagli contiene le informazioni seguenti, visualizzate in ordin
   - **Rappresentazione utente**: messaggi filtrati a causa di un tentativo di rappresentazione di un utente (mittente del messaggio) definito nelle impostazioni di protezione della rappresentazione di un criterio anti-phishing.
   - **Rappresentazione di dominio**: messaggi filtrati a causa di un tentativo di rappresentare un dominio definito nelle impostazioni di protezione della rappresentazione di un criterio anti-phishing.
 - **Detonazione di file e URL (Defender per Office 365)**:
-  - **Detonazione file:** messaggi filtrati da un criterio Safe allegati.
-  - **Detonazione URL:** messaggio filtrato in base a un Safe dei collegamenti.
+  - **Detonazione file:** messaggi filtrati da un criterio Cassaforte allegati.
+  - **Detonazione URL:** messaggio filtrato in base a un criterio Cassaforte collegamenti.
 - **Protezione post-recapito e ZAP (ATP) o ZAP (EOP):** eliminazione automatica a zero ore (ZAP) per malware, posta indesiderata e phishing.
 
 Se si seleziona una riga nella tabella dei dettagli, nel riquadro a comparsa viene visualizzata un'ulteriore suddivisione dei conteggi dei messaggi di posta elettronica.
@@ -314,11 +314,11 @@ Questo grafico mostra i messaggi organizzati nelle categorie seguenti:
 - **Totale posta elettronica**
 - **Edge allow** e **Edge filtered**
 - **Regola di trasporto consentita** **e regola di trasporto filtrata** (regole del flusso di posta)
-- **Non malware,** **Safe allegati e** rilevamento motore <sup>\*</sup> **antimalware**
+- **Non malware,** **Cassaforte allegati e** rilevamento motore <sup>\*</sup> **antimalware**
 - **Not phish,** **DMARC failure,** **Impersonation detection,** <sup>\*</sup> Spoof **detection** e **Phish detection**
 - **Nessun rilevamento con detonazione URL e** **rilevamento detonazione URL**<sup>\*</sup>
 - **Non posta indesiderata** e  **posta indesiderata**
-- **Posta elettronica non dannosa,** **rilevamento Safe** <sup>\*</sup> collegamenti e **ZAP**
+- **Posta elettronica non dannosa,** **rilevamento Cassaforte** <sup>\*</sup> collegamenti e **ZAP**
 
 <sup>\*</sup>Defender per Office 365
 
@@ -330,13 +330,13 @@ La tabella dei dettagli contiene le informazioni seguenti, visualizzate in ordin
 - **Totale posta elettronica**
 - **Edge filtrato**
 - **Messaggi delle regole**: Messaggi filtrati a causa delle regole del flusso di posta (note anche come regole di trasporto).
-- **Motore antimalware**, **Safe allegati** <sup>\*</sup> :
+- **Motore antimalware**, **Cassaforte allegati** <sup>\*</sup> :
 - **DMARC, impersonation,** <sup>\*</sup> **spoof,** **phish filtered**:
   - **DMARC**: Messaggi filtrati a causa dell'errore del messaggio nel controllo di autenticazione DMARC.
 - **Rilevamento detonazione URL**<sup>\*</sup>
 - **Protezione da posta indesiderata filtrata**
 - **ZAP rimosso**
-- **Rilevamento da Safe collegamenti**<sup>\*</sup>
+- **Rilevamento da Cassaforte collegamenti**<sup>\*</sup>
 
 <sup>\*</sup>Defender per Office 365
 
@@ -484,9 +484,9 @@ La tabella dei dettagli sotto il grafico  mostra le stesse informazioni  e ha le
 
 ## <a name="threat-protection-status-report"></a>Report dello stato di protezione dalle minacce
 
-La **relazione sullo stato di Protezione** dalle minacce è disponibile sia in EOP che in Defender per Office 365; Tuttavia, i report contengono dati diversi. Ad esempio, i clienti di EOP possono visualizzare le informazioni sul malware rilevato nella posta elettronica, ma non informazioni sui file dannosi rilevati dagli allegati Safe per [SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)e Microsoft Teams .
+La **relazione sullo stato di Protezione** dalle minacce è disponibile sia in EOP che in Defender per Office 365; Tuttavia, i report contengono dati diversi. Ad esempio, i clienti di EOP possono visualizzare le informazioni sul malware rilevato nella posta elettronica, ma non informazioni sui file dannosi rilevati da allegati Cassaforte per [SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)e Microsoft Teams .
 
-Il report fornisce il conteggio dei messaggi di posta elettronica con contenuto dannoso, ad esempio file o indirizzi di siti Web (URL) bloccati dal motore antimalware, eliminazione automatica a zero ore [(ZAP)](zero-hour-auto-purge.md)e Defender per funzionalità di Office 365 come collegamenti [di Safe,](safe-links.md) [allegati Safe](safe-attachments.md)e funzionalità di protezione dalla rappresentazione nei criteri [anti-phishing.](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) È possibile utilizzare queste informazioni per identificare le tendenze o determinare se i criteri dell'organizzazione devono essere rettificati.
+Il report fornisce il conteggio dei messaggi di posta elettronica con contenuto dannoso, ad esempio file o indirizzi di siti Web (URL) bloccati dal motore antimalware, eliminazione automatica a zero ore [(ZAP)](zero-hour-auto-purge.md)e Defender per funzionalità di Office 365 come collegamenti [di Cassaforte,](safe-links.md) [allegati Cassaforte](safe-attachments.md)e funzionalità di protezione dalla rappresentazione nei criteri [anti-phishing.](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) È possibile utilizzare queste informazioni per identificare le tendenze o determinare se i criteri dell'organizzazione devono essere rettificati.
 
 **Nota:** è importante comprendere che se un messaggio viene inviato a cinque destinatari, viene conteggiato come cinque messaggi diversi e non un messaggio.
 
@@ -580,7 +580,7 @@ Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla*
 
 Nella visualizzazione **Visualizza dati per \> malware** e-mail e **grafico per** tecnologia di rilevamento, nel grafico vengono visualizzate le informazioni seguenti:
 
-- **Detonazione file:** <sup>\*</sup> rilevamento da parte Safe allegati.
+- **Detonazione file** <sup>\*</sup> : rilevamento da parte Cassaforte allegati.
 - **Reputazione detonazione file:** tutta la reputazione dei file dannosi generata da Defender per Office 365 <sup>\*</sup> detonazioni.
 - **Reputazione file**
 - **Motore antimalware:** <sup>\*</sup> rilevamento da motori antimalware.
@@ -622,7 +622,7 @@ Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla*
 Nelle **visualizzazioni Scomposizione grafico** per tipo di criterio e Visualizza dati per posta elettronica **\> o** Visualizza dati tramite **\> malware** tramite posta elettronica, nei grafici vengono visualizzate le informazioni seguenti:
 
 - **Antimalware**
-- **Safe Allegati**<sup>\*</sup>
+- **Cassaforte Allegati**<sup>\*</sup>
 - **Anti-phish**
 - **Protezione da posta indesiderata**
 - **Regola del flusso di** posta (nota anche come regola di trasporto)
@@ -701,7 +701,7 @@ Al termine della configurazione dei filtri, fare clic **su Applica,** **Annulla*
 Nella visualizzazione **Visualizzazione dati per \> malware** contenuto, nel grafico per Microsoft Defender per Office 365 organizzazioni:
 
 - **Motore antimalware:** file dannosi rilevati in Sharepoint, OneDrive e Microsoft Teams dal rilevamento di [virus incorporato in Microsoft 365](virus-detection-in-spo.md).
-- **Detonazione file:** file dannosi rilevati da Safe allegati per [SharePoint, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **Detonazione file:** file dannosi rilevati da Cassaforte allegati per [SharePoint, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 Nella tabella dei dettagli sotto il grafico sono disponibili le informazioni seguenti:
 
@@ -730,8 +730,8 @@ Nella visualizzazione **Visualizza dati per sostituzione di** sistema, nel grafi
 - **Domini consentiti dall'organizzazione**
 - **ZAP non abilitato**
 - **Cartella Posta indesiderata non abilitata**
-- **Mittente Safe utente**
-- **Dominio Safe utente**
+- **Mittente Cassaforte utente**
+- **Dominio Cassaforte utente**
 
 Nella tabella dei dettagli sotto il grafico sono disponibili le informazioni seguenti:
 
@@ -848,7 +848,7 @@ Per visualizzare e utilizzare i report descritti in questo articolo, è necessar
 - **Lettore sicurezza**
 - **Lettore globale**
 
-Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 **Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nel interfaccia di amministrazione di Microsoft 365 offre agli utenti le  autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 

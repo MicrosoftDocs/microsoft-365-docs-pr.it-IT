@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
+  ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52625414"
+  ms.lasthandoff: 06/23/2021
+  ms.locfileid: "53083645"
 title: Domande frequenti sui messaggi in quarantena
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -82,14 +82,14 @@ sections:
   - question: >
       È possibile rilasciare o segnalare più di un messaggio in quarantena alla volta?
     answer: >
-      Nel Centro sicurezza & conformità è possibile selezionare e rilasciare fino a 100 messaggi alla volta.
+      Nel portale Microsoft 365 Defender, è possibile selezionare e rilasciare fino a 100 messaggi alla volta.
 
 
       Gli amministratori possono utilizzare i cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) e [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) in Exchange Online PowerShell o PowerShell EOP autonomo per trovare e rilasciare i messaggi in quarantena in blocco e per segnalare i falsi positivi in blocco.
   - question: >
       Sono supportati i caratteri jolly nella ricerca dei messaggi in quarantena? Posso cercare i messaggi in quarantena in base a un dominio specifico?
     answer: >-
-      I caratteri jolly non sono supportati nel Centro sicurezza & conformità. Ad esempio, quando si cerca un mittente, è necessario specificare l'indirizzo di posta elettronica completo. Tuttavia, è possibile usare i caratteri jolly in Exchange Online PowerShell o PowerShell EOP autonomo.
+      I caratteri jolly non sono supportati nel Microsoft 365 Defender portale. Ad esempio, quando si cerca un mittente, è necessario specificare l'indirizzo di posta elettronica completo. Tuttavia, è possibile usare i caratteri jolly in Exchange Online PowerShell o PowerShell EOP autonomo.
 
 
       Ad esempio, copia il codice di PowerShell seguente in NotePad e salva il file come .ps1 in un percorso facile da trovare (ad esempio, C:\Data\QuarantineRelease.ps1).

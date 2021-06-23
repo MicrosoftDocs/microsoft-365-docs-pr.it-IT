@@ -1,5 +1,5 @@
 ---
-title: Protezione dalle minacce
+title: Proteggere dalle minacce in Microsoft Defender per Office 365, antimalware, anti-phishing, anti-spam, collegamenti Cassaforte, allegati Cassaforte, eliminazione automatica zero ore (ZAP), configurazione della sicurezza MDO
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 localization_priority: Normal
-ms.date: 09/08/2020
+ms.date: 06/22/2021
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ description: Gli amministratori possono conoscere la protezione dalle minacce in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 407838c815a85ce7c73322a0de176970ee93e537
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029610"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083681"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -40,6 +40,8 @@ Ecco una guida introduttiva che suddivide la configurazione di Defender per Offi
 
 > [!IMPORTANT]
 > Le impostazioni consigliate iniziali sono incluse per ogni tipo di criterio. Tuttavia, sono disponibili molte opzioni ed è possibile modificare le impostazioni in base alle esigenze specifiche **dell'organizzazione.** Consentire circa 30 minuti che i criteri o le modifiche funzionino nel datacenter.
+>
+> Per ignorare la configurazione manuale della maggior parte dei criteri in Defender per Office 365, puoi usare criteri di sicurezza preimpostati a livello Standard o Strict. Per altre informazioni, vedi [Criteri di sicurezza predefiniti in EOP e Microsoft Defender per Office 365](preset-security-policies.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,7 +50,7 @@ Ecco una guida introduttiva che suddivide la configurazione di Defender per Offi
 Le funzionalità di protezione dalle minacce sono incluse in *tutte le* sottoscrizioni Microsoft o Office 365 microsoft; tuttavia, alcune sottoscrizioni dispongono di funzionalità avanzate. Nella tabella seguente sono elencate le funzionalità di protezione incluse in questo articolo insieme ai requisiti minimi di sottoscrizione.
 
 > [!TIP]
-> Si noti che, oltre alle indicazioni per attivare il *controllo,* i passaggi avviano l'antimalware, anti-phishing e la posta indesiderata, contrassegnati come parte di Office 365 Exchange Online Protection (**EOP**). Questo può sembrare strano in un articolo di Defender per Office 365, fino a quando non si ricorda (**Defender per Office 365**) contiene e si basa su EOP.
+> Si noti che oltre alle indicazioni per attivare il *controllo,* i passaggi avviano l'antimalware, il phishing e la posta indesiderata, contrassegnati come parte di Office 365 Exchange Online Protection (**EOP**). Questo può sembrare strano in un articolo di Defender per Office 365, fino a quando non si ricorda (**Defender per Office 365**) contiene e si basa su EOP.
 
 <br>
 
@@ -60,14 +62,11 @@ Le funzionalità di protezione dalle minacce sono incluse in *tutte le* sottoscr
 |Protezione anti-malware|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protezione anti-phishing|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protezione dalla posta indesiderata|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Eliminazione automatica zero ore (per la posta elettronica)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protezione da URL e file dannosi nei documenti di posta elettronica e Office (Safe collegamenti e Safe allegati)|[Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Attivare gli Safe allegati per SharePoint, OneDrive e Microsoft Teams di lavoro|[Microsoft Defender per Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
-|Protezione avanzata anti-phishing|[Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protezione da URL e file dannosi nei documenti Office di posta elettronica (Cassaforte collegamenti e Cassaforte allegati)|[Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Ruoli e autorizzazioni
 
-Per configurare Defender per Office 365, è necessario disporre di un ruolo appropriato nel [Centro sicurezza & conformità.](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) Esaminare la tabella seguente per i ruoli che possono eseguire queste azioni.
+Per configurare Defender per Office 365 criteri, devi disporre di un ruolo appropriato. Esaminare la tabella seguente per i ruoli che possono eseguire queste azioni.
 
 <br>
 
@@ -77,27 +76,28 @@ Per configurare Defender per Office 365, è necessario disporre di un ruolo appr
 |---|---|
 |amministratore globale|[Informazioni sui ruoli di amministratore di Microsoft 365](../../admin/add-users/about-admin-roles.md)|
 |Amministratore della sicurezza|[Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Gestione organizzazione di Exchange Online|[Autorizzazioni in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> e <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
+|Gestione organizzazione di Exchange Online|[Autorizzazioni in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 |
 
-Per ulteriori informazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md)
+Per ulteriori informazioni, vedere [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 ### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Attivare la registrazione di controllo per la creazione di report e indagini
 
-- Avviare la registrazione di controllo in anticipo. È necessario che il controllo sia **ON** per alcuni dei passaggi seguenti. La registrazione di controllo è disponibile nelle sottoscrizioni che [includono Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Per visualizzare i dati nei report di protezione dalle minacce, ad esempio il [dashboard](security-dashboard.md)di [sicurezza,](view-email-security-reports.md)i report di sicurezza della posta elettronica e [Esplora](threat-explorer.md)risorse, la registrazione di controllo deve essere *attivata.* Per ulteriori informazioni, vedere Attivare o disattivare la ricerca nel [log di controllo.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Avviare la registrazione di controllo in anticipo. È necessario che il controllo sia **ON** per alcuni dei passaggi seguenti. La registrazione di controllo è disponibile nelle sottoscrizioni che [includono Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Per visualizzare i dati nei report di protezione dalle [minacce,](view-email-security-reports.md)nei report di sicurezza della posta elettronica e in [Esplora](threat-explorer.md)risorse, la registrazione di controllo deve essere *attivata.* Per ulteriori informazioni, vedere Attivare o disattivare la ricerca nel [log di controllo.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="part-1---anti-malware-protection-in-eop"></a>Parte 1 - Protezione antimalware in EOP
 
 Per ulteriori informazioni sulle impostazioni consigliate per l'antimalware, vedere [Impostazioni dei criteri antimalware EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)
 
-1. Aprire <https://security.microsoft.com/antimalwarev2> .
+1. Aprire la **pagina Antimalware** nel portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/antimalwarev2> .
 
-2. Nella pagina **Antimalware** selezionare il criterio denominato **Criterio** predefinito facendo clic sul nome.
+2. Nella pagina **Antimalware** seleziona il criterio denominato **Default (Default)** facendo clic sul nome.
 
 3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic su Modifica impostazioni **di protezione** e quindi configurare le impostazioni seguenti:
-   - Selezionare **Abilita il filtro allegati comuni** per attivare il filtro allegati comuni. Fare **clic su Personalizza tipi di file** per aggiungere altri tipi di file.
-   - Verificare che **l'opzione Abilita eliminazione automatica** a zero ore per il malware sia selezionata.
-   - Verificare che nessuna delle impostazioni nella **sezione Notifica** sia selezionata.
+   - **Sezione Impostazioni di** protezione:
+     - Selezionare **Abilita il filtro allegati comuni** per attivare il filtro allegati comuni. Fare **clic su Personalizza tipi di file** per aggiungere altri tipi di file.
+     - **Abilita eliminazione automatica** a zero ore per il malware : verifica che questa impostazione sia selezionata. Per ulteriori informazioni su ZAP per il malware, vedere [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
+   - **Sezione** Notifica: verificare che nessuna delle impostazioni di notifica sia selezionata.
 
    Al termine, scegliere **Salva**.
 
@@ -113,13 +113,12 @@ Per ulteriori informazioni sulle impostazioni consigliate per i criteri anti-phi
 
 La procedura seguente descrive come configurare il criterio anti-phishing predefinito. Impostazioni disponibili solo in Defender per Office 365 sono chiaramente contrassegnati.
 
-1. Aprire <https://security.microsoft.com/antiphishing> .
+1. Aprire la **pagina Anti-phishing** nel portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/antiphishing> .
 
 2. Nella pagina **Anti-phishing** selezionare il criterio **denominato Office365 AntiPhish Default (Default)** facendo clic sul nome.
 
 3. Nel riquadro a comparsa dei dettagli del criterio visualizzato configurare le impostazioni seguenti:
-
-   - **Soglia di & di phishing:** fare **clic** su Modifica impostazioni  di protezione e configurare le impostazioni seguenti nel riquadro a comparsa Modifica impostazioni di protezione che si apre:
+   - **Soglia di & di phishing:** fare clic **su Modifica** impostazioni di protezione e configurare le impostazioni seguenti nel riquadro a comparsa che si apre:
      - **Soglia posta elettronica di phishing**: selezionare <sup>\*</sup> **2 - Aggressivo** (Standard) o **3 - Più aggressivo** (rigido).
      - **Sezione Rappresentazione:** <sup>\*</sup> configurare i valori seguenti:
        - Selezionare Consenti agli utenti di proteggere, fare clic sul collegamento Gestisci **(nn)** mittenti visualizzato e quindi aggiungere mittenti interni ed esterni per proteggere dalla rappresentazione, ad esempio i membri del consiglio di amministrazione dell'organizzazione, il CEO, il CFO e altri dirigenti senior.
@@ -132,7 +131,7 @@ La procedura seguente descrive come configurare il criterio anti-phishing predef
 
      Al termine, scegliere **Salva**.
 
-   - **Sezione** Azioni: fare **clic su Modifica**  azioni e configurare le impostazioni seguenti nel riquadro a comparsa Modifica azioni visualizzato:
+   - **Sezione** Azioni: fare **clic su Modifica azioni** e configurare le impostazioni seguenti nel riquadro a comparsa che si apre:
      - **Sezione Azioni** messaggio: configurare le impostazioni seguenti:
        - **Se il messaggio viene rilevato come utente rappresentato:** <sup>\*</sup> selezionare Metti in quarantena il **messaggio**.
        - **If message is detected as an impersonated domain** <sup>\*</sup> : Select Quarantine the **message**.
@@ -158,122 +157,164 @@ Per istruzioni dettagliate sulla configurazione dei criteri anti-phishing, veder
 
 Per ulteriori informazioni sulle impostazioni consigliate per la protezione da posta indesiderata, vedere Impostazioni dei criteri di protezione da posta indesiderata di [EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
-1. Aprire <https://security.microsoft.com/antispam> .
+1. Aprire la **pagina Criteri di protezione** da posta indesiderata nel portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/antispam> .
 
 2. Nella pagina **Criteri di protezione** da posta indesiderata selezionare nell'elenco il criterio denominato Criterio di protezione da posta indesiderata in ingresso **(predefinito)** facendo clic sul nome.
 
-3. Nel riquadro a comparsa dei dettagli del criterio visualizzato eseguire la procedura seguente:
-   - **Soglia di posta elettronica in blocco & proprietà della posta indesiderata:** fare clic **su Modifica soglia e proprietà della posta indesiderata**. Nel riquadro **a comparsa della soglia e delle** proprietà della posta indesiderata visualizzato, imposta il valore di **Soglia** posta elettronica in blocco su 5 (Strict) o 6 (Standard). Al termine, scegliere **Salva**.
-   - **Sezione Mittenti e domini consentiti e** bloccati: esaminare o modificare i mittenti consentiti e i domini consentiti.
+3. Nel riquadro a comparsa dei dettagli del criterio visualizzato configurare le impostazioni seguenti:
+   - **Soglia di posta elettronica in blocco & proprietà della posta indesiderata:** fare clic **su Modifica soglia e proprietà della posta indesiderata**. Nel riquadro a comparsa visualizzato configurare le impostazioni seguenti:
+     - **Soglia di posta elettronica in** blocco : impostare questo valore su 5 (Strict) o 6 (Standard).
+     - Lasciare le altre impostazioni ai valori predefiniti (**Off** o **None**).
+
+     Al termine, scegliere **Salva**.
+
+   - **Sezione Azioni:** fare clic **su Modifica azioni.** Nel riquadro a comparsa visualizzato configurare le impostazioni seguenti:
+     - **Sezione Azioni messaggio:**
+       - **Posta** indesiderata: verificare **che l'opzione** Sposta il messaggio nella cartella Posta indesiderata sia selezionata (Standard) o selezionare **Messaggio in quarantena** (strict).
+       - **Posta indesiderata ad alta probabilità**: selezionare Messaggio in **quarantena**.
+       - **Phishing**: selezionare **Messaggio in quarantena**.
+       - **Phishing ad alta probabilità**: verificare che **i messaggi in quarantena siano** selezionati.
+       - **In** blocco: verificare **che l'opzione** Sposta il messaggio nella cartella Posta indesiderata sia selezionata (Standard) o selezionare **Messaggio in quarantena** (strict).
+     - **Conservare la posta indesiderata in quarantena per questo numero di giorni:** verificare il valore **30** giorni.
+     - **Abilita suggerimenti per la sicurezza della posta indesiderata**: verificare che questa impostazione sia selezionata (attivata).
+     - **Enable zero-hour auto purge (ZAP):** verificare che questa impostazione sia selezionata (attivata).
+       - **Abilita per i messaggi di phishing**: verificare che questa impostazione sia selezionata (attivata). Per ulteriori informazioni, vedere [Zero-hour auto purge (ZAP) for phishing](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing).
+       - **Abilita per i messaggi di posta indesiderata**: verificare che questa impostazione sia selezionata (attivata). Per ulteriori informazioni, vedere [Zero-hour auto purge (ZAP) for spam](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam).
+     - **Sezione** Notifiche:
+       - Selezionare **Abilita notifiche di posta indesiderata dell'utente finale.**
+         - **Invia notifiche di posta indesiderata dell'utente finale ogni (giorni):** verificare il valore **3** giorni.
+         - **Language**: verificare il valore **Default** o selezionare una lingua.
+
+     Al termine, scegliere **Salva**.
+
+   - **Sezione Mittenti** e domini consentiti e bloccati: esaminare o modificare i mittenti e i domini consentiti, come descritto in Creare elenchi di mittenti bloccati [in EOP](create-block-sender-lists-in-office-365.md) o Creare elenchi di mittenti attendibili [in EOP.](create-safe-sender-lists-in-office-365.md)
+
+     Al termine, scegliere **Salva**.
 
 4. Al termine, fare clic su **Chiudi**.
 
 Per istruzioni dettagliate sulla configurazione dei criteri di protezione da posta indesiderata, vedere [Configure anti-spam policies in EOP.](configure-your-spam-filter-policies.md)
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4 - Protezione da URL e file dannosi (collegamenti Safe e allegati Safe in Defender per Office 365)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4 - Protezione da URL e file dannosi (collegamenti Cassaforte e allegati Cassaforte in Defender per Office 365)
 
-La protezione time-of-click da URL e file dannosi è disponibile nelle sottoscrizioni che includono [Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Viene configurato tramite i criteri Safe [allegati](safe-attachments.md) [e Safe collegamenti.](safe-links.md)
+La protezione time-of-click da URL e file dannosi è disponibile nelle sottoscrizioni che includono [Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Viene configurato tramite i criteri Cassaforte [allegati](safe-attachments.md) [e Cassaforte collegamenti.](safe-links.md)
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Safe Criteri allegati in Microsoft Defender per Office 365
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Cassaforte Criteri allegati in Microsoft Defender per Office 365
 
-Per configurare Safe [allegati,](safe-attachments.md)creare almeno un criterio Safe collegamenti.
+Per ulteriori informazioni sulle impostazioni consigliate per Cassaforte allegati, vedere . [Cassaforte allegati](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere **Criteri** di gestione delle minacce \>  \> **ATP Safe allegati** e quindi fare clic su **Crea.**
+1. Aprire la **Cassaforte allegati** nel portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/safeattachmentv2> .
 
-2. Nella procedura **guidata nuovo Safe allegati** visualizzata configurare le impostazioni seguenti:
+2. Nella pagina **Cassaforte allegati** fare clic su **Impostazioni globali** e quindi configurare le impostazioni seguenti nel riquadro a comparsa visualizzato:
+   - **Attiva Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams**: attiva questa impostazione ( ![ Attiva o disattiva ](../../media/scc-toggle-on.png) ).
 
-   - Nella casella **Nome** digitare `Block malware` e quindi fare clic su **Avanti.**
+     > [!IMPORTANT]
+     > Prima di attivare Cassaforte allegati per SharePoint, OneDrive e Microsoft Teams, verificare che la registrazione di controllo sia attivata **nell'organizzazione.** Questa azione viene in genere eseguita da un utente a cui è assegnato il ruolo Log di controllo in Exchange Online. Per ulteriori informazioni, vedere Attivare o disattivare la [ricerca nei log di controllo](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-   - Nella pagina **Impostazioni** configurazione delle impostazioni seguenti:
-     - Nella sezione **Safe allegati risposta malware sconosciuta** scegliere **Blocca**.
-     - Nella sezione **Reindirizza allegato** selezionare l'opzione **Abilita reindirizzamento.** Specificare l'indirizzo di posta elettronica dell'amministratore o dell'operatore della sicurezza dell'organizzazione, che rivedrà i file rilevati.
+   - **Attivare Cassaforte documenti per Office** client : attivare questa impostazione ( ![ Attiva/ attiva ](../../media/scc-toggle-on.png) ). Tieni presente che questa funzionalità è disponibile e significativa solo con Microsoft 365 E5 o Microsoft 365 E5 Security licenze.
+   - **Consentire agli utenti di fare** clic su Visualizzazione protetta anche se Cassaforte documenti ha identificato il file come dannoso: verificare che questa impostazione sia disattivata ( ![ Toggle off ](../../media/scc-toggle-off.png) ).
 
-     Fare clic su **Avanti**.
+   Al termine, fare clic su **Salva**
 
-3. Nella pagina **Applicato** **a** fare clic su Aggiungi una condizione, scegliere Applicato **se:** Il dominio del destinatario è , fare clic su **Aggiungi,** selezionare il dominio o i domini, fare clic su **Aggiungi,** su Fatto **e** quindi su **Avanti.**
+3. Nella pagina Allegati **Cassaforte** fare clic su ![ Crea ](../../media/m365-cc-sc-create-icon.png) icona.
 
-4. Rivedere le impostazioni e quindi fare clic su **Fine.**
+4. Nella procedura **guidata crea Cassaforte criteri allegati** visualizzata configurare le impostazioni seguenti:
+   - **Assegnare un nome alla pagina dei** criteri:
+     - **Nome:** immettere un elemento univoco e descrittivo.
+     - **Descrizione:** immettere una descrizione facoltativa.
+   - **Pagina Utenti e** domini: poiché si tratta del primo criterio e [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) probabilmente si desidera ottimizzare la copertura, è consigliabile immettere i domini accettati nella **casella** Domini. In caso contrario, è possibile utilizzare le **caselle Utenti** **e** Gruppi per un controllo più granulare. È possibile specificare le eccezioni selezionando Escludi **questi utenti, gruppi e domini** e immettendo valori.
+   - **Impostazioni** pagina:
+     - **Cassaforte Allegati risposta malware sconosciuta**: selezionare **Blocca**.
+     - **Reindirizzare l'allegato con** allegati rilevati : **Abilita reindirizzamento**: Attiva questa impostazione (seleziona) e immetti un indirizzo di posta elettronica per ricevere i messaggi rilevati.
+     - Applicare la risposta Cassaforte rilevamento allegati se **l'analisi** non può essere completata (timeout o errori): verificare che questa impostazione sia selezionata.
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Safe Criteri collegamenti in Microsoft Defender per Office 365
+5. Al termine, fare clic su **Invia** e quindi su **Fine.**
 
-Per configurare [Safe](safe-links.md)collegamenti, esaminare e modificare le impostazioni globali per i collegamenti Safe e creare almeno un criterio Safe collegamenti.
-
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere  Criteri di gestione delle minacce COLLEGAMENTI \>  \> **SAFE ATP** e fare clic su **Impostazioni** globali e quindi configurare le impostazioni seguenti:
-
-   - Verificare **Usa Safe collegamenti in: Office 365 le applicazioni** sono attivate: ![ Attiva/Disattiva. ](../../media/scc-toggle-on.png)
-   - **Non tenere traccia quando gli utenti fanno clic Safe** collegamenti : Disattiva questa impostazione per tenere traccia dei clic degli utenti: Disattiva ![ ](../../media/scc-toggle-off.png) .
-   - Non consentire agli utenti di fare clic su collegamenti sicuri **all'URL originale:** verifica che questa impostazione sia attivata: ![ Attiva/ ](../../media/scc-toggle-on.png) attiva.
-
-   Al termine, scegliere **Salva**.
-
-2. Tornare alla pagina principale dei Safe, fare clic su **Crea.**
-
-3. Nella procedura **guidata per la creazione Safe dei** collegamenti di gruppo visualizzata, configurare le impostazioni seguenti:
-
-   - Nella casella **Nome** digitare un nome, ad esempio `Safe Links` , e quindi fare clic su **Avanti.**
-
-   - Nella pagina **Impostazioni** configurazione delle impostazioni seguenti:
-     - **Selezionare l'azione per URL sconosciuti potenzialmente dannosi nei messaggi**: Scegliere **Sì.**
-     - **Selezionare l'azione per URL sconosciuti** o potenzialmente dannosi all'interno Microsoft Teams : Scegliere **Sì.**
-     - **Applicare collegamenti sicuri ai messaggi di posta elettronica inviati all'interno dell'organizzazione**
-     - **Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio**
-     - **Applicare collegamenti sicuri ai messaggi di posta elettronica inviati all'interno dell'organizzazione**
-     - **Non consentire agli utenti di passare all'URL originale**
-
-     Fare clic su **Avanti**.
-
-4. Nella pagina **Applicato** **a** fare clic su Aggiungi una condizione, scegliere Applicato **se:** Il dominio del destinatario è , fare clic su **Aggiungi,** selezionare il dominio o i domini, fare clic su **Aggiungi,** su Fatto **e** quindi su **Avanti.**
-
-5. Rivedere le impostazioni e quindi fare clic su **Fine.**
-
-Per altre informazioni, vedere [Configurare i criteri Collegamenti sicuri](set-up-safe-links-policies.md).
-
-## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Parte 5 - Verificare che Safe allegati per SharePoint, OneDrive e Microsoft Teams sia attivato
-
-Carichi di lavoro come SharePoint, OneDrive e Teams sono creati per la collaborazione. L'uso di Defender Office 365 consente di bloccare e rilevare file identificati come dannosi nei siti del team e nelle raccolte documenti. Per altre informazioni su come funziona, [vedere](mdo-for-spo-odb-and-teams.md).
-
-> [!IMPORTANT]
-> Prima di iniziare questa procedura, verificare che la registrazione di controllo sia già attivata **per l'Microsoft 365 locale.** Questa operazione viene in genere eseguita da un utente a cui è assegnato il ruolo Log di controllo in Exchange Online. Per ulteriori informazioni, vedere Attivare o disattivare la [ricerca nei log di controllo](../../compliance/turn-audit-log-search-on-or-off.md)!
-
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere  Criteri di gestione delle minacce \>  \> **ATP Safe allegati** e quindi fare clic su Impostazioni **globali.**
-
-2. Verificare che l'interruttore Attiva Defender per Office 365 **per SharePoint, OneDrive** e Microsoft Teams sia a destra: Attiva e quindi fai clic ![ su ](../../media/scc-toggle-on.png) **Salva.**
-
-3. Esaminare (e, se appropriato, modificare) [](set-up-safe-attachments-policies.md) i criteri allegati Safe dell'organizzazione e [Safe dei collegamenti.](set-up-safe-links-policies.md)
-
-4. (Scelta consigliata) Come amministratore globale o amministratore di SharePoint Online, eseguire il cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** con il parametro _DisallowInfectedFileDownload_ impostato su `$true` .
-
+6. (Scelta consigliata) Come amministratore globale o amministratore di SharePoint Online, eseguire il cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** con il parametro _DisallowInfectedFileDownload_ impostato su `$true` in SharePoint Online PowerShell.
    - `$true` blocca tutte le azioni (ad eccezione di Delete) per i file rilevati. Gli utenti non possono aprire, spostare, copiare o condividere i file rilevati.
    - `$false` blocca tutte le azioni ad eccezione di Elimina e Scarica. Gli utenti possono scegliere di accettare il rischio e scaricare un file rilevato.
 
-   > [!TIP]
-   > Per ulteriori informazioni sull'uso di PowerShell con Microsoft 365, vedere [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
+7. Consentire fino a 30 minuti che le modifiche si diffondono in tutti Microsoft 365 datacenter.
 
-5. Consentire fino a 30 minuti che le modifiche si diffondono in tutti Microsoft 365 datacenter.
+Per istruzioni dettagliate sulla configurazione dei criteri Cassaforte allegati e delle impostazioni globali per Cassaforte allegati, vedere i seguenti argomenti:
 
-### <a name="now-set-up-alerts-for-detected-files"></a>Configurare ora gli avvisi per i file rilevati
+- [Configurare i Cassaforte allegati in Microsoft Defender per Office 365](set-up-safe-attachments-policies.md)
+- [Attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
+- [Sicurezza documenti in Microsoft 365 E5](safe-docs.md)
 
-Per ricevere una notifica quando un file in SharePoint Online, OneDrive for Business o Microsoft Teams è stato identificato come dannoso, è possibile configurare un avviso.
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Cassaforte Criteri collegamenti in Microsoft Defender per Office 365
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere **Avvisi** \> **Gestisci avvisi.**
+Per ulteriori informazioni sulle impostazioni consigliate per i collegamenti Cassaforte, vedere Cassaforte [Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
-2. Scegliere **Nuovo criterio di avviso.**
+1. Aprire la **Cassaforte collegamenti** nel portale di Microsoft 365 Defender all'indirizzo <https://security.microsoft.com/safelinksv2> .
 
-3. Specificare un nome per l'avviso. Ad esempio, è possibile digitare File dannosi in Librerie.
+2. Nella pagina **Cassaforte collegamenti** fare clic su **Impostazioni globali** e quindi configurare le impostazioni seguenti nel riquadro a comparsa visualizzato:
+   - **Impostazioni che si applicano al contenuto nelle app Office 365 supportate:**
+     - **Usa Cassaforte collegamenti nelle app Office 365**: verifica che questa impostazione sia attivata ( ![ Attiva/Disattiva ](../../media/scc-toggle-on.png) ).
+     - **Non tenere traccia quando gli utenti fanno clic su** collegamenti protetti nelle app Office 365 : disattiva questa impostazione ( Disattiva ![ ](../../media/scc-toggle-off.png) )
+     - **Non consentire agli utenti di fare clic sull'URL** originale nelle app Office 365 : verificare che questa impostazione sia attivata ( ![ Attiva/Disattiva ](../../media/scc-toggle-on.png) ).
 
-4. Digitare una descrizione per l'avviso. Ad esempio, è possibile digitare Notifica agli amministratori quando vengono rilevati file dannosi in SharePoint Online, OneDrive o Microsoft Teams.
+   Al termine, fare clic su **Salva**
 
-5. Nella sezione **Invia questo avviso quando...** imposta:
+3. Nella pagina Collegamenti **Cassaforte** fare clic su ![ Crea ](../../media/m365-cc-sc-create-icon.png) icona.
 
-   a. **Nell'elenco Attività** scegliere **Malware rilevato nel file**.
+4. Nella procedura **guidata crea Cassaforte dei** criteri che si apre, configurare le impostazioni seguenti:
+   - **Assegnare un nome alla pagina dei** criteri:
+     - **Nome:** immettere un elemento univoco e descrittivo.
+     - **Descrizione:** immettere una descrizione facoltativa.
+   - **Pagina Utenti e** domini: poiché si tratta del primo criterio e [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) probabilmente si desidera ottimizzare la copertura, è consigliabile immettere i domini accettati nella **casella** Domini. In caso contrario, è possibile utilizzare le **caselle Utenti** **e** Gruppi per un controllo più granulare. È possibile specificare le eccezioni selezionando Escludi **questi utenti, gruppi e domini** e immettendo valori.
+   - **Pagina Impostazioni di** protezione:
+     - **Selezionare l'azione per URL sconosciuti potenzialmente dannosi nei messaggi**: Attiva questa **impostazione.**
+     - **Seleziona l'azione per URL sconosciuti** o potenzialmente dannosi all'interno Microsoft Teams : Attiva questa **impostazione.** A partire da marzo 2020, questa impostazione è disponibile in Anteprima ed è disponibile o funzionante solo per i membri del Microsoft Teams Technology Adoption Program (TAP).
+     - **Applica l'analisi degli URL** in tempo reale per i collegamenti sospetti e i collegamenti che puntano ai file: seleziona questa impostazione (attiva).
+       - **Attendi il completamento dell'analisi degli URL prima di recapitare il messaggio:** seleziona questa impostazione (attiva).
+     - Applica Cassaforte collegamenti ai messaggi di posta elettronica inviati all'interno **dell'organizzazione**: selezionare questa impostazione (attiva).
+     - **Non tenere traccia dei clic degli utenti:** verificare che questa impostazione non sia selezionata (disattivata).
+     - **Non consentire agli utenti di passare all'URL originale:** verificare che questa impostazione sia attivata (selezionata).
+     - **Visualizzare** la personalizzazione dell'organizzazione nelle pagine di notifica e avviso: la selezione di questa impostazione (attivarla) è significativa solo dopo aver seguito le istruzioni in Personalizzare il tema [di Microsoft 365 per](../../admin/setup/customize-your-organization-theme.md) l'organizzazione per caricare il logo della società.
+     - **Non riscrivere gli URL seguenti:** non sono disponibili suggerimenti specifici per questa impostazione. Per ulteriori informazioni, vedere gli elenchi ["Non riscrivere gli URL seguenti" nei criteri Cassaforte collegamenti.](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
+   - **Pagina di** notifica:
+     - **Come si desidera inviare una notifica agli utenti?** sezione: facoltativamente, è possibile selezionare **Usa testo di notifica personalizzato** per immettere testo di notifica personalizzato da usare. Puoi anche selezionare **Usa Microsoft Translator per** la localizzazione automatica per tradurre il testo di notifica personalizzato nella lingua dell'utente. In caso contrario, lasciare **selezionato Usa il testo di notifica** predefinito.
 
-   b. Lasciare vuoto **il campo** Utenti.
+5. Al termine, fare clic su **Invia** e quindi su **Fine.**
 
-6. Nella sezione **Invia questo avviso a...** selezionare uno o più amministratori globali, amministratori della sicurezza o lettori di sicurezza che devono ricevere una notifica quando viene rilevato un file dannoso.
+Per istruzioni dettagliate sulla configurazione dei criteri Cassaforte collegamenti e delle impostazioni globali per Cassaforte collegamenti, vedere i seguenti argomenti:
 
-7. **Salva**.
+- [Configurare i Cassaforte dei collegamenti in Microsoft Defender per Office 365](set-up-safe-links-policies.md)
+- [Configurare le impostazioni globali per Cassaforte collegamenti in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md)
 
-Per ulteriori informazioni sugli avvisi, vedere [Create activity alerts in the Security & Compliance Center.](../../compliance/create-activity-alerts.md)
+### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>Configurare gli avvisi per i file rilevati in SharePoint Online o OneDrive for Business
+
+Per ricevere una notifica quando un file in SharePoint Online o OneDrive for Business è stato identificato come dannoso, è possibile configurare un avviso come descritto in questa sezione.
+
+1. Nel portale Microsoft 365 Defender , passare a Posta elettronica & collaborazione Criteri & <https://security.microsoft.com>  \> **regole** \> **Criteri di avviso**.
+
+2. Nella pagina **Criterio avviso** fare clic su Nuovo criterio **di avviso.**
+
+3. Verrà **visualizzata la procedura guidata Nuovo** criterio di avviso. Nella pagina **Nome** configurare le impostazioni seguenti:
+   - **Nome**: immettere un nome univoco e descrittivo. Ad esempio, è possibile digitare File dannosi in Librerie.
+   - **Descrizione:** immettere una descrizione facoltativa.
+   - **Gravità**: selezionare **Bassa,** **Media** o **Alta.**
+   - **Categoria**: selezionare **Gestione delle minacce**.
+
+   Al termine, fare clic su **Avanti**
+
+4. Nella pagina **Crea impostazioni avviso** configurare le impostazioni seguenti:
+   - **Cosa si desidera avvisare?** sezione: **Attività Rileva** malware nel \> **file**.
+   - **Sezione Come si desidera attivare** l'avviso: verificare ogni volta che viene selezionata un'attività **corrispondente** alla regola.
+
+   Al termine, fare clic su **Avanti**
+
+5. Nella pagina **Imposta i destinatari** configurare le impostazioni seguenti:
+   - **Invia notifiche tramite posta** elettronica : verificare che questa impostazione sia selcted.
+   - **Destinatari di posta** elettronica: selezionare uno o più amministratori globali, amministratori della sicurezza o lettori di sicurezza che devono ricevere una notifica quando viene rilevato un file dannoso.
+   - **Limite di notifica giornaliero**: verificare **che non sia selezionato** alcun limite.
+
+   Al termine, fare clic su **Avanti**
+
+6. Nella pagina **Rivedere le impostazioni,** rivedere le impostazioni, verificare che l'opzione **Sì,** attivarla subito sia selezionata e quindi fare clic su **Fine.**
+
+Per ulteriori informazioni sui criteri di avviso, vedere [Alert policies in the Centro conformità Microsoft 365](../../compliance/alert-policies.md).
 
 > [!NOTE]
 > Al termine della configurazione, utilizzare questi collegamenti per avviare le indagini sui carichi di lavoro:
@@ -283,29 +324,17 @@ Per ulteriori informazioni sugli avvisi, vedere [Create activity alerts in the S
 >- [Cosa fare quando viene trovato un file dannoso in SharePoint Online, OneDrive o Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Gestire i messaggi e i file in quarantena come amministratore in Microsoft 365](manage-quarantined-messages-and-files.md)
 
-## <a name="part-6---additional-settings-to-configure"></a>Parte 6 - Impostazioni aggiuntive da configurare
-
-Oltre a configurare la protezione da malware, URL e file dannosi, phishing e posta indesiderata, ti consigliamo di configurare l'eliminazione automatica di zero ore.
-
-### <a name="zero-hour-auto-purge-for-email-in-eop"></a>Eliminazione automatica di zero ore per la posta elettronica in EOP
-
-[L'eliminazione automatica a zero ore](zero-hour-auto-purge.md) (ZAP) è disponibile nelle sottoscrizioni che includono [EOP.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) Questa protezione è attivata per impostazione predefinita. Tuttavia, per l'effettiva protezione è necessario che siano soddisfatte le condizioni seguenti:
-
-- Le azioni di posta indesiderata sono impostate **su Sposta il messaggio nella cartella Posta indesiderata** nei criteri di protezione da posta [indesiderata.](anti-spam-protection.md)
-
-- Gli utenti hanno mantenuto le impostazioni predefinite [per la](configure-junk-email-settings-on-exo-mailboxes.md)posta indesiderata e non hanno disattivato la protezione dalla posta indesiderata.
-
-Per ulteriori informazioni, vedere Eliminazione automatica di zero ore - protezione [da posta indesiderata e malware.](zero-hour-auto-purge.md)
-
 ## <a name="post-setup-tasks-and-next-steps"></a>Attività successive all'installazione e passaggi successivi
 
 Dopo aver configurato le funzionalità di protezione dalle minacce, assicurati di monitorare il funzionamento di tali funzionalità. Rivedi e rivedi i criteri in modo che esertino le tue necessità. Inoltre, cercare nuove funzionalità e aggiornamenti del servizio che possono aggiungere valore.
+
+<br>
 
 ****
 
 |Soluzione|Risorse per approfondire|
 |---|---|
-|Vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report|[Dashboard di sicurezza](security-dashboard.md) <p> [Report di sicurezza della posta elettronica](view-email-security-reports.md) <p> [Report per Microsoft Defender per Office 365](view-reports-for-mdo.md) <p> [Esplora minacce](threat-explorer.md)|
-|Rivedere periodicamente e rivedere i criteri di protezione dalle minacce in base alle esigenze|[Secure Score](../defender/microsoft-secure-score.md) <p> [Report e informazioni dettagliate intelligenti](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 di indagine sulle minacce e le funzionalità di risposta](./office-365-ti.md)|
+|Vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report|[Report di sicurezza della posta elettronica](view-email-security-reports.md) <p> [Report per Microsoft Defender per Office 365](view-reports-for-mdo.md) <p> [Esplora minacce](threat-explorer.md)|
+|Rivedere periodicamente e rivedere i criteri di protezione dalle minacce in base alle esigenze|[Secure Score](../defender/microsoft-secure-score.md) <p> [Microsoft 365 di indagine sulle minacce e le funzionalità di risposta](./office-365-ti.md)|
 |Cercare nuove funzionalità e aggiornamenti dei servizi|[Opzioni di rilascio standard e mirato](../../admin/manage/release-options-in-office-365.md) <p> [Centro messaggi](../../admin/manage/message-center.md) <p> [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Descrizioni dei servizi](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|Informazioni dettagliate sulle configurazioni di sicurezza Standard e Strict consigliate per EOP e Defender per Office 365|[Impostazioni consigliate per EOP e Microsoft Defender per Office 365 sicurezza](recommended-settings-for-eop-and-office365.md)|
+|

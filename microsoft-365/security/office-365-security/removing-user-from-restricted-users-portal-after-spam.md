@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono scoprire come rimuovere gli utenti dal portale Utenti con restrizioni in Office 365. Gli utenti vengono aggiunti al portale Utenti con restrizioni se hanno inviato posta indesiderata in uscita, in genere in seguito a una compromissione dell'account.
+description: Gli amministratori possono scoprire come rimuovere gli utenti dalla pagina Utenti con restrizioni nel portale di Microsoft 365 Defender. Gli utenti vengono aggiunti al portale Utenti con restrizioni se hanno inviato posta indesiderata in uscita, in genere in seguito a una compromissione dell'account.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2171e2465aa40e187f8104c7c0d2675562f115ce
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 924db948103a4d3b45c499f433961762a45931af
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537872"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082853"
 ---
-# <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Rimuovere utenti bloccati dal portale Utenti con restrizioni in Office 365
+# <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Rimuovere utenti bloccati dal portale Utenti con restrizioni in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "52537872"
 
 Se un utente supera uno dei limiti di invio in uscita, come specificato nei [limiti di servizio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) o nei [criteri di posta indesiderata in uscita](configure-the-outbound-spam-policy.md), l'utente non può inviare messaggi di posta elettronica, ma può continuare a riceverne.
 
-L'utente viene aggiunto al portale Utenti con restrizioni nel Centro sicurezza e conformità. Quando prova a inviare messaggi di posta elettronica, il messaggio viene restituito in un rapporto di mancato recapito, noto anche come NDR o notifica di mancato recapito, con il codice di errore [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) e il testo seguente:
+L'utente viene aggiunto alla pagina **Utenti con restrizioni** nel portale di Microsoft 365 Defender. Quando prova a inviare messaggi di posta elettronica, il messaggio viene restituito in un rapporto di mancato recapito, noto anche come NDR o notifica di mancato recapito, con il codice di errore [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) e il testo seguente:
 
 > "Non è stato possibile recapitare il messaggio perché l'utente non è stato riconosciuto come mittente valido. La causa più comune di questo problema è che l'indirizzo di posta elettronica sia sospettato di inviare posta indesiderata e che non sia più autorizzato a inviare messaggi di posta elettronica.  Contattare l'amministratore della posta elettronica per ricevere assistenza. Il server remoto ha restituito l'errore "550 5.1.8 Access denied, bad outbound sender."
 
-Gli amministratori possono rimuovere gli utenti dal portale Utenti con restrizioni nel Centro sicurezza e conformità o in PowerShell per Exchange Online.
+Gli amministratori possono rimuovere gli utenti dalla pagina Utenti con restrizioni in Microsoft 365 Defender o in PowerShell per Exchange Online.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **Utenti con restrizioni**, usare <https://protection.office.com/restrictedusers>.
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alla pagina **Utenti con restrizioni**, usare <https://security.microsoft.com/restrictedusers>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -64,17 +64,23 @@ Gli amministratori possono rimuovere gli utenti dal portale Utenti con restrizio
 
 - Un mittente che supera i limiti di posta elettronica in uscita è un indicatore di account compromesso. Prima di rimuovere l'utente dal portale Utenti con restrizioni, assicurarsi di seguire i passaggi necessari per riprendere il controllo dell'account. Per altre informazioni, vedere [Rispondere a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md).
 
-## <a name="use-the-security--compliance-center-to-remove-a-user-from-the-restricted-users-list"></a>Usare il Centro sicurezza e conformità per rimuovere un utente dall'elenco Utenti con restrizioni
+## <a name="use-the-microsoft-365-defender-portal-to-remove-a-user-from-the-restricted-users-list"></a>Usare il portale di Microsoft 365 Defender per rimuovere un utente dall'elenco Utenti con restrizioni
 
-1. Nel Centro sicurezza e conformità, passare a **Gestione delle minacce** \> **Rivedi** \> **Utenti con restrizioni**.
+1. Nel portale di Microsoft 365 Defender, passare a **Posta elettronica e collaborazione**  >  **Rivedi** >  **Utenti con restrizioni**.
 
-2. Individuare e selezionare l’utente che si desidera sbloccare. Nella colonna **Azioni** fare clic su **Sblocca**.
+2. Nella pagina **Utenti con restrizioni** individuare e selezionare l'utente che si desidera sbloccare facendo clic sull'utente.
 
-3. I dettagli relativi all'account al quale è stato impedito l'invio di messaggi saranno visualizzati in un menu a comparsa. Si consiglia di consultare i suggerimenti per assicurarsi di eseguire le operazioni appropriate nel caso in cui l'account sia effettivamente compromesso. Al termine, fare clic su **Avanti**.
+3. Fare clic sull'azione **Sblocca** che viene visualizzata.
 
-4. La schermata successiva include suggerimenti che consentono di evitare compromissioni future. L'autenticazione a più fattori (MFA) e la modifica delle password sono buone soluzioni di difesa. Al termine, fare clic su **Sblocca utente**.
+4. Nel riquadro a comparsa **Sblocca utente** visualizzato leggere i dettagli sull'account con restrizioni. Si consiglia di consultare i suggerimenti per assicurarsi di eseguire le operazioni appropriate nel caso in cui l'account sia compromesso.
 
-5. Fare clic su **Sì** per confermare la modifica.
+   Al termine dell'operazione, fare clic su **Avanti**.
+
+5. La schermata successiva include suggerimenti che consentono di evitare compromissioni future. L'abilitazione dell'autenticazione a più fattori (MFA) e la reimpostazione della password sono buone soluzioni di difesa.
+
+   Al termine, fare clic su **Salva**.
+
+6. Fare clic su **Sì** per confermare la modifica.
 
    > [!NOTE]
    > La rimozione di tutte le restrizioni utente può richiedere fino a 24 ore.
@@ -86,20 +92,15 @@ Il criterio di avviso predefinito denominato **Utente al quale è stato impedito
 > [!IMPORTANT]
 > Per il corretto funzionamento degli avvisi, la ricerca nel log di controllo deve essere attivata. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. Nel Centro sicurezza e conformità, passare a **Avvisi** \> **Criteri di avviso**.
+1. Nel portale di Microsoft 365 Defender, passare a **Posta elettronica e collaborazione** \> **Rivedi**\> **Criterio di avviso**.
 
-2. Individuare e selezionare l'avviso relativo agli **utenti ai quali è stato impedito di inviare posta elettronica**.
+2. Nella pagina **Criteri di avviso**, trovare e selezionare l'avviso relativo agli **utenti ai quali è stato impedito di inviare posta elettronica**. È possibile ordinare i criteri in base al nome o usare la **casella di ricerca** per trovare il criterio.
 
-3. Nel riquadro a comparsa visualizzato verificare o configurare le impostazioni seguenti:
-
+3. Nel riquadro a comparsa visualizzato relativo agli **utenti ai quali è stato impedito di inviare posta elettronica** verificare o configurare le impostazioni seguenti:
    - **Stato**: verificare che l'avviso sia attivato ![Attiva](../../media/scc-toggle-on.png).
-
    - **Destinatari di posta elettronica**: fare clic su **Modifica** e verificare o configurare le impostazioni seguenti nel riquadro a comparsa **Modifica destinatari** visualizzato:
-
-     - **Invia notifiche tramite posta elettronica**: verificare che la casella di controllo sia selezionata (**Attivato**).
-
-     - **Destinatari di posta elettronica**: il valore predefinito è **TenantAdmins**, ossia i membri di **Amministratore globale**. Per aggiungere altri destinatari, fare clic in un'area vuota della casella. Verrà visualizzato un elenco di destinatari e si può iniziare a digitare un nome per filtrare e selezionare un destinatario. È possibile rimuovere un destinatario esistente dalla casella facendo clic sull’![icona Rimuovi](../../media/scc-remove-icon.png) accanto al nome.
-
+     - **Invia notifiche tramite posta elettronica**: verificare sia selezionato (**Attivato**).
+     - **Destinatari di posta elettronica**: il valore predefinito è **TenantAdmins**, ossia i membri di **Amministratore globale**. Per aggiungere altri destinatari, fare clic in un'area vuota della casella. Verrà visualizzato un elenco di destinatari e si può iniziare a digitare un nome per filtrare e selezionare un destinatario. È possibile rimuovere un destinatario esistente dalla casella facendo clic sull’![icona Rimuovi](../../media/m365-cc-sc-remove-selection-icon.png) accanto al nome.
      - **Limite giornaliero per le notifiche**: il valore predefinito è **Nessun limite**, ma è possibile selezionare un limite per il numero massimo di notifiche giornaliere.
 
      Al termine, scegliere **Salva**.

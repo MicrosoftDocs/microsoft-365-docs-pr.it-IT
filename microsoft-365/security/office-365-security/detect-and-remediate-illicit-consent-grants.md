@@ -18,12 +18,12 @@ description: Scopri come riconoscere e correggere l'attacco di concessione del c
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0041c473f196dace893122c5c0543a06c1e6ff8
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029862"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083009"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecito
 
@@ -50,9 +50,9 @@ Questi attacchi sfruttano un modello di interazione che presuppone che l'entità
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Passaggi per trovare i segni di questo attacco
 
-1. Aprire il **portale Microsoft 365 Defender** e quindi <https://security.microsoft.com> selezionare **Controlla**.
+1. Aprire il **portale Microsoft 365 Defender e** quindi selezionare <https://security.microsoft.com> **Controlla**. In caso contrario, per passare direttamente alla **pagina Controllo,** utilizzare <https://security.microsoft.com/auditlogsearch> .
 
-2. Nella pagina **Controllo** visualizzata verificare che la scheda **Ricerca** sia selezionata e quindi configurare le impostazioni seguenti:
+2. Nella pagina **Controllo** verificare che la **scheda Ricerca** sia selezionata e quindi configurare le impostazioni seguenti:
    - **Intervallo di data e ora**
    - **Attività:** verificare che **l'opzione Mostra risultati per tutte le attività** sia selezionata.
 
@@ -137,7 +137,7 @@ Lo script produce un file denominato Permissions.csv. Seguire questa procedura p
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinare l'ambito dell'attacco
 
-Dopo aver completato l'inventario dell'accesso alle applicazioni, esaminare il **log di controllo per** determinare l'ambito completo della violazione. Cercare gli utenti interessati, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni di cui disponeva l'app. È possibile eseguire ricerche **nel log di** controllo nella [Microsoft 365 Defender](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+Dopo aver completato l'inventario dell'accesso alle applicazioni, esaminare il **log di controllo per** determinare l'ambito completo della violazione. Cercare gli utenti interessati, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni di cui disponeva l'app. È possibile eseguire ricerche **nel log di** controllo nel portale [Microsoft 365 Defender.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
 > [Per ottenere](../../compliance/enable-mailbox-auditing.md) [](../../compliance/turn-audit-log-search-on-or-off.md) queste informazioni, è necessario che il controllo delle cassette postali e il controllo attività per amministratori e utenti siano stati abilitati prima dell'attacco.
@@ -165,8 +165,8 @@ Dopo aver identificato un'applicazione con autorizzazioni illecite, è possibile
 L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti. Usare la [Roadmap della sicurezza di Microsoft 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Microsoft 365.
 
 - Attività da eseguire i primi 30 giorni. Queste hanno effetto immediato e sono a basso impatto per gli utenti.
-- Attività da completare in 90 giorni. Queste attività richiedono una quantità di tempo leggermente superiore per la pianificazione e l'implementazione, ma aumentano notevolmente il livello di sicurezza.
-- Dopo 90 giorni. Questi miglioramenti si instaurano nei primi 90 giorni di lavoro effettuato.
+- Attività da portare a termine in 90 giorni. Queste attività richiedono una quantità di tempo leggermente superiore per la pianificazione e l'implementazione, ma aumentano notevolmente il livello di sicurezza.
+- Oltre 90 giorni. Questi miglioramenti si instaurano nei primi 90 giorni di lavoro effettuato.
 
 ## <a name="see-also"></a>Vedere anche
 

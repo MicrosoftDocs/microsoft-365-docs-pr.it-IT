@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Usa Threat Explorer o i rilevamenti in tempo reale nel portale di Microsoft 365 Defender per analizzare e rispondere alle minacce in modo efficiente.
+description: Usa Threat Explorer o i rilevamenti in tempo reale nel portale Microsoft 365 Defender per analizzare e rispondere alle minacce in modo efficiente.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71052cc5a3874da250772bfa628417824ba51c63
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 2b0c0c36cb481aac64b55467da4aaf9e3cf7a493
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930113"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083561"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Ricerca delle minacce in Threat Explorer per Microsoft Defender per Office 365
 
@@ -42,7 +42,7 @@ Contenuto dell'articolo:
 
 Se l'organizzazione dispone di [Microsoft Defender per Office 365](defender-for-office-365.md)e si dispone  delle autorizzazioni [,](#required-licenses-and-permissions)è possibile utilizzare **Esplora** risorse o rilevamenti in tempo reale per rilevare e correggere le minacce. 
 
-Nel portale **Microsoft 365 Defender passare** a Posta elettronica & **collaborazione** e quindi scegliere **Esplora**.
+Nel portale **Microsoft 365 Defender ,** passare a Posta elettronica **& collaborazione** e quindi scegliere **Esplora**.
 
 <br>
 
@@ -68,7 +68,7 @@ In Microsoft Defender per Office 365, sono disponibili due piani di sottoscrizio
 
 Defender per Office 365 Piano 1 usa i rilevamenti in tempo *reale,* che è un sottoinsieme dello strumento di ricerca *Threat Explorer* (denominato anche *Explorer)* nel Piano 2. In questa serie di articoli, la maggior parte degli esempi è stata creata usando l'intero Threat Explorer. Gli amministratori devono testare i passaggi nei rilevamenti in tempo reale per vedere dove si applicano.
 
-Per aprire lo strumento Explorer, vai a **Microsoft 365 e-mail** del portale defender  >  **& collaborazione**  >  **Explorer**. Per impostazione predefinita, arriverai nella pagina **Malware,** ma usa l'elenco a discesa **Visualizza** per acquisire familiarità con le opzioni. Se stai cercando Phish o stai scavando in una campagna di minacce, scegli queste visualizzazioni.
+Per aprire lo strumento Esplora risorse, vai a **Microsoft 365 Defender portale** Email  >  **& collaboration**  >  **Explorer**. Per impostazione predefinita, arriverai nella pagina **Malware,** ma usa l'elenco a discesa **Visualizza** per acquisire familiarità con le opzioni. Se stai cercando Phish o stai scavando in una campagna di minacce, scegli queste visualizzazioni.
 
 > [!div class="mx-imgBorder"]
 > ![Elenco a discesa Visualizza in Esplora minacce](../../media/view-drop-down.png)
@@ -267,11 +267,11 @@ Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necess
 
 Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse seguenti:
 
-- [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)
+- [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
 - [Autorizzazioni funzionalità in Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - [Identificare e analizzare i messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md) 
 - [Visualizzare i file dannosi rilevati in SharePoint Online, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md) 
