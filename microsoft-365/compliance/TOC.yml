@@ -395,9 +395,9 @@
               href: archive-celltrust-data.md
             - name: Cisco Jabber su MS SQL
               href: archive-ciscojabberonmssql-data.md
-            - name: Cisco Jabber on Oracle (anteprima)
+            - name: Cisco Bladeber su Oracle
               href: archive-ciscojabberonoracle-data.md
-            - name: Cisco Jabber su PostgreSQL (anteprima)
+            - name: Cisco Jabber su PostgreSQL
               href: archive-ciscojabberonpostgresql-data.md
             - name: .EML
               href: archive-eml-data.md
@@ -421,6 +421,8 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
+            - name: Skype for Business (anteprima)
+              href: archive-skypeforbusiness-data.md
             - name: Margine di flessibilità eDiscovery
               href: archive-slack-data.md
             - name: Symphony
@@ -429,8 +431,6 @@
               href: archive-text-delimited-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
-            - name: Pagine Web
-              href: archive-webpagecapture-data.md
             - name: Pagine Web
               href: archive-webpagecapture-data.md
             - name: Workplace from Facebook
@@ -455,11 +455,15 @@
               href: archive-enterprise-number-data.md
             - name: O2 Network
               href: archive-o2-network-data.md
+            - name: Signal (anteprima)
+              href: archive-signal-archiver-data.md
+            - name: Telegram (anteprima)
+              href: archive-telegram-archiver-data.md
             - name: Rete TELUS
               href: archive-telus-network-data.md
             - name: Rete Verizon
               href: archive-verizon-network-data.md
-            - name: WeChat (anteprima)
+            - name: WeChat
               href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
