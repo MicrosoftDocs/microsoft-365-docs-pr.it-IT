@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841793"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105573"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint su Linux
 
@@ -349,6 +349,21 @@ Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
         ```bash
         mdatp threat list
         ```
+
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>Esperienza delle funzionalità di rilevamento e risposta degli endpoint Linux (EDR) con attacchi simulati
+
+Per testare le funzionalità di EDR per Linux, seguire la procedura seguente per simulare un rilevamento nel server Linux e analizzare il caso. 
+
+1.  Verificare che il server Linux onboarded sia visualizzato Microsoft Defender Security Center. Se si tratta del primo onboarding del computer, può essere necessario attendere fino a 20 minuti prima che venga visualizzato. 
+
+2.  Scaricare ed estrarre il [file script](https://aka.ms/LinuxDIY) in un server Linux onboarded ed eseguire il comando seguente: `./mde_linux_edr_diy.sh`
+
+3.  Dopo alcuni minuti, deve essere generato un rilevamento in Microsoft Defender Security Center.
+
+4.  Esaminare i dettagli dell'avviso, la sequenza temporale del computer ed eseguire i passaggi di analisi tipici.
+
+
+
 
 ## <a name="installer-script"></a>Script del programma di installazione
 

@@ -16,12 +16,12 @@ description: Usa Threat Explorer o i rilevamenti in tempo reale nel portale Micr
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b0c0c36cb481aac64b55467da4aaf9e3cf7a493
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 0ad5d73abae71cc7cc00e12665d96b2020da0c41
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083561"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105430"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Ricerca delle minacce in Threat Explorer per Microsoft Defender per Office 365
 
@@ -40,18 +40,9 @@ Contenuto dell'articolo:
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Se l'organizzazione dispone di [Microsoft Defender per Office 365](defender-for-office-365.md)e si dispone  delle autorizzazioni [,](#required-licenses-and-permissions)è possibile utilizzare **Esplora** risorse o rilevamenti in tempo reale per rilevare e correggere le minacce. 
+Se l'organizzazione dispone di [Microsoft Defender per Office 365](defender-for-office-365.md)e si dispone  delle autorizzazioni [,](#required-licenses-and-permissions)è possibile utilizzare **Esplora** risorse o rilevamenti in tempo reale per rilevare e correggere le minacce.
 
-Nel portale **Microsoft 365 Defender ,** passare a Posta elettronica **& collaborazione** e quindi scegliere **Esplora**.
-
-<br>
-
-****
-
-|Con Microsoft Defender per Office 365 Piano 2, viene visualizzato:|Con Microsoft Defender per Office 365 piano 1, viene visualizzato:|
-|---|---|
-|![Esplora minacce](../../media/path-to-explorer.png)|![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)|
-|
+Nel portale Microsoft 365 Defender ( ), passare a Posta elettronica & collaborazione e quindi scegliere Esplora risorse o Rilevamenti <https://security.microsoft.com> in tempo **reale**.   Per accedere direttamente alla pagina, utilizzare <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>
 
 Con questi strumenti è possibile:
 
@@ -60,7 +51,7 @@ Con questi strumenti è possibile:
 - Avviare un processo di indagine e risposta automatizzato da una visualizzazione in Esplora risorse
 - Analizzare la posta elettronica dannosa e altro ancora
 
-Per altre informazioni, vedi [Sicurezza della posta elettronica con Threat Explorer.](email-security-in-microsoft-defender.md) 
+Per altre informazioni, vedi [Sicurezza della posta elettronica con Threat Explorer.](email-security-in-microsoft-defender.md)
 
 ## <a name="threat-explorer-walk-through"></a>Analisi di Threat Explorer
 
@@ -68,7 +59,7 @@ In Microsoft Defender per Office 365, sono disponibili due piani di sottoscrizio
 
 Defender per Office 365 Piano 1 usa i rilevamenti in tempo *reale,* che è un sottoinsieme dello strumento di ricerca *Threat Explorer* (denominato anche *Explorer)* nel Piano 2. In questa serie di articoli, la maggior parte degli esempi è stata creata usando l'intero Threat Explorer. Gli amministratori devono testare i passaggi nei rilevamenti in tempo reale per vedere dove si applicano.
 
-Per aprire lo strumento Esplora risorse, vai a **Microsoft 365 Defender portale** Email  >  **& collaboration**  >  **Explorer**. Per impostazione predefinita, arriverai nella pagina **Malware,** ma usa l'elenco a discesa **Visualizza** per acquisire familiarità con le opzioni. Se stai cercando Phish o stai scavando in una campagna di minacce, scegli queste visualizzazioni.
+Dopo aver **esplorato**, per impostazione predefinita, arriverai nella  pagina **Malware,** ma usa l'elenco a discesa Visualizza per acquisire familiarità con le opzioni. Se stai cercando Phish o stai scavando in una campagna di minacce, scegli queste visualizzazioni.
 
 > [!div class="mx-imgBorder"]
 > ![Elenco a discesa Visualizza in Esplora minacce](../../media/view-drop-down.png)
@@ -81,19 +72,19 @@ Una volta che un utente delle operazioni di sicurezza (Sec Ops) seleziona i dati
 La perfezione dello stato attivo in Esplora risorse o il rilevamento in tempo reale può essere pensata nei livelli. Il primo è **View.** Il secondo può essere pensato come uno *stato attivo filtrato.* Ad esempio, puoi ripercorrere i passaggi che hai fatto per trovare una minaccia registrando le tue decisioni come questa: Per trovare il problema in Esplora risorse, ho scelto la visualizzazione **Malware** con un filtro destinatario attivo. In questo modo è più semplice eseguire nuovamente i passaggi.
 
 > [!TIP]
-> Se Sec Ops usa **Tag** per contrassegnare gli account che considerano obiettivi di valore elevato, possono effettuare selezioni come Visualizzazione phish con lo stato attivo del filtro Tag (includere un intervallo di date se *usato).* Questo mostrerà loro eventuali tentativi di phishing indirizzati ai loro obiettivi utente di alto valore durante un intervallo di tempo (ad esempio date in cui determinati attacchi di phishing stanno avvenendo molto per il loro settore). 
+> Se Sec Ops usa **Tag** per contrassegnare gli account che considerano obiettivi di valore elevato, possono effettuare selezioni come Visualizzazione phish con lo stato attivo del filtro Tag (includere un intervallo di date se *usato).* Questo mostrerà loro eventuali tentativi di phishing indirizzati ai loro obiettivi utente di alto valore durante un intervallo di tempo (ad esempio date in cui determinati attacchi di phishing stanno avvenendo molto per il loro settore).
 
-I criteri di affinamento possono essere evasi in intervalli di date utilizzando i controlli dell'intervallo di date. Qui puoi vedere Esplora risorse nella visualizzazione **Malware,** con lo stato attivo del filtro **Tecnologia** di rilevamento. Ma è il pulsante **Filtro avanzato** che consente ai team sec ops di scavare in profondità. 
+I criteri di affinamento possono essere evasi in intervalli di date utilizzando i controlli dell'intervallo di date. Qui puoi vedere Esplora risorse nella visualizzazione **Malware,** con lo stato attivo del filtro **Tecnologia** di rilevamento. Ma è il pulsante **Filtro avanzato** che consente ai team sec ops di scavare in profondità.
 
 > [!div class="mx-imgBorder"]
 > ![Filtro avanzato in Esplora minacce](../../media/advanced-filter.png)
 
-Se si **fa clic sul** filtro Avanzato, viene visualizzato un pannello che consente ai cacciatori sec ops di creare query in modo che includano o escludono le informazioni necessarie. Sia il grafico che la tabella nella pagina Esplora risorse rifletteranno i risultati. 
+Se si **fa clic sul** filtro Avanzato, viene visualizzato un pannello che consente ai cacciatori sec ops di creare query in modo che includano o escludono le informazioni necessarie. Sia il grafico che la tabella nella pagina Esplora risorse rifletteranno i risultati.
 
 > [!div class="mx-imgBorder"]
 > ![Risultati di una query](../../media/threat-explorer-chart-table.png)
 
-Utilizzare il **pulsante Opzioni** colonna per ottenere il tipo di informazioni sulla tabella più utili: 
+Utilizzare il **pulsante Opzioni** colonna per ottenere il tipo di informazioni sulla tabella più utili:
 
 > [!div class="mx-imgBorder"]
 > ![Pulsante Opzioni colonna evidenziato](../../media/threat-explorer-column-options.png)
@@ -101,7 +92,7 @@ Utilizzare il **pulsante Opzioni** colonna per ottenere il tipo di informazioni 
 > [!div class="mx-imgBorder"]
 > ![Opzioni disponibili in Colonne](../../media/column-options.png)
 
-Nello stesso ambiente, assicurati di testare le opzioni di visualizzazione. Gruppi di destinatari diversi reagiscono bene alle diverse presentazioni degli stessi dati. Per alcuni visualizzatori, la mappa **Email Origins** può mostrare che  una minaccia è diffusa o discreta più rapidamente rispetto all'opzione Visualizzazione campagna accanto ad essa. Sec Ops può usare questi display per fare al meglio punti che sottolineano la necessità di sicurezza e protezione o per un confronto successivo, per dimostrare l'efficacia delle loro azioni. 
+Nello stesso ambiente, assicurati di testare le opzioni di visualizzazione. Gruppi di destinatari diversi reagiscono bene alle diverse presentazioni degli stessi dati. Per alcuni visualizzatori, la mappa **Email Origins** può mostrare che  una minaccia è diffusa o discreta più rapidamente rispetto all'opzione Visualizzazione campagna accanto ad essa. Sec Ops può usare questi display per fare al meglio punti che sottolineano la necessità di sicurezza e protezione o per un confronto successivo, per dimostrare l'efficacia delle loro azioni.
 
 > [!div class="mx-imgBorder"]
 > ![Mappa Origini posta elettronica](../../media/threat-explorer-email-origin-map.png)
@@ -113,9 +104,9 @@ Nello stesso ambiente, assicurati di testare le opzioni di visualizzazione. Grup
 
 Quando viene visualizzato un messaggio di posta elettronica sospetto, fare clic sul nome per espandere il riquadro a comparsa a destra. In questo caso, è disponibile il banner che consente a Sec Ops di visualizzare la [pagina dell'entità di posta](mdo-email-entity-page.md) elettronica.
 
-La pagina dell'entità di posta elettronica riunisce il contenuto disponibile **in** **Dettagli,** **Allegati,** Dispositivi, ma include dati più organizzati. Sono inclusi elementi come i risultati DMARC, la visualizzazione in testo normale dell'intestazione del messaggio di posta elettronica con un'opzione di copia, le informazioni di verdetto sugli allegati detonati in modo sicuro e i file eliminati da tali detonazioni (possono includere indirizzi IP contattati e screenshot di pagine o file). Anche gli URL e i loro verdetti sono elencati con dettagli simili segnalati. 
+La pagina dell'entità di posta elettronica riunisce il contenuto disponibile **in** **Dettagli,** **Allegati,** Dispositivi, ma include dati più organizzati. Sono inclusi elementi come i risultati DMARC, la visualizzazione in testo normale dell'intestazione del messaggio di posta elettronica con un'opzione di copia, le informazioni di verdetto sugli allegati detonati in modo sicuro e i file eliminati da tali detonazioni (possono includere indirizzi IP contattati e screenshot di pagine o file). Anche gli URL e i loro verdetti sono elencati con dettagli simili segnalati.
 
-Quando si raggiunge questa fase, la pagina dell'entità di posta elettronica sarà fondamentale per il passaggio finale,*ovvero la correzione.* 
+Quando si raggiunge questa fase, la pagina dell'entità di posta elettronica sarà fondamentale per il passaggio finale,*ovvero la correzione.*
 
 > [!div class="mx-imgBorder"]
 > ![Pagina entità di posta elettronica](../../media/threat-explorer-email-entity-page.png)
@@ -152,13 +143,13 @@ Infine, l'ID avviso è incluso nell'URL, ad esempio: `https://https://security.m
 > [!div class="mx-imgBorder"]
 > ![ID avviso nel riquadro a comparsa dettagli](../../media/AlertID-DetailsFlyout.png)
 
-### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>Estensione del limite di conservazione e ricerca dei dati di Explorer (e rilevamento in tempo reale) per i tenant di prova 
+### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>Estensione del limite di conservazione e ricerca dei dati di Explorer (e rilevamento in tempo reale) per i tenant di prova
 
 Come parte di questa modifica, gli analisti saranno in grado di cercare e filtrare i dati di posta elettronica in 30 giorni (da sette giorni) in Threat Explorer e rilevamenti in tempo reale per i tenant di prova di Office P1 e P2. Questo non influisce sui tenant di produzione per i clienti P1 e P2 E5, dove il valore predefinito di conservazione è già 30 giorni.
 
-### <a name="updated-export-limit"></a>Limite di esportazione aggiornato 
+### <a name="updated-export-limit"></a>Limite di esportazione aggiornato
 
-Il numero di record email che possono essere esportati da Threat Explorer è ora 200.000 (era 9990). Il set di colonne che è possibile esportare rimane invariato. 
+Il numero di record email che possono essere esportati da Threat Explorer è ora 200.000 (era 9990). Il set di colonne che è possibile esportare rimane invariato.
 
 ### <a name="tags-in-threat-explorer"></a>Tag in Threat Explorer
 
@@ -178,7 +169,7 @@ Quando gli analisti osservano la colonna **Tag** nella griglia della posta elett
 
 #### <a name="filtering"></a>Filtro
 
-I tag possono essere utilizzati come filtri. Eseguire la ricerca solo tra account con priorità o utilizzare scenari specifici di tag utente in questo modo. È inoltre possibile escludere i risultati con determinati tag. Combina i tag con altri filtri e intervalli di date per restringere l'ambito di indagine. 
+I tag possono essere utilizzati come filtri. Eseguire la ricerca solo tra account con priorità o utilizzare scenari specifici di tag utente in questo modo. È inoltre possibile escludere i risultati con determinati tag. Combina i tag con altri filtri e intervalli di date per restringere l'ambito di indagine.
 
 [![Tag di filtro](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
@@ -187,7 +178,7 @@ I tag possono essere utilizzati come filtri. Eseguire la ricerca solo tra accoun
 
 #### <a name="email-detail-flyout"></a>Riquadro a comparsa Dettagli posta elettronica
 
-Per visualizzare i singoli tag per mittente e destinatario, selezionare un messaggio di posta elettronica per aprire il riquadro a comparsa dei dettagli del messaggio. Nella scheda **Riepilogo,** i tag mittente e destinatario vengono visualizzati separatamente. Le informazioni sui singoli tag per mittente e destinatario possono essere esportate come dati CSV. 
+Per visualizzare i singoli tag per mittente e destinatario, selezionare un messaggio di posta elettronica per aprire il riquadro a comparsa dei dettagli del messaggio. Nella scheda **Riepilogo,** i tag mittente e destinatario vengono visualizzati separatamente. Le informazioni sui singoli tag per mittente e destinatario possono essere esportate come dati CSV.
 
 > [!div class="mx-imgBorder"]
 > ![Tag Dettagli posta elettronica](../../media/tags-flyout.png)
@@ -205,18 +196,18 @@ Scopri di più guardando [questo video](https://www.youtube.com/watch?v=UoVzN0lY
 
 ### <a name="top-targeted-users"></a>Utenti di destinazione principali
 
-Principali famiglie di malware mostra **gli utenti di destinazione principali** nella sezione Malware. Gli utenti di destinazione principali verranno estesi anche tramite le visualizzazioni Phish e All Email. Gli analisti saranno in grado di visualizzare i cinque utenti più mirati, insieme al numero di tentativi per ogni utente in ogni visualizzazione. 
+Principali famiglie di malware mostra **gli utenti di destinazione principali** nella sezione Malware. Gli utenti di destinazione principali verranno estesi anche tramite le visualizzazioni Phish e All Email. Gli analisti saranno in grado di visualizzare i cinque utenti più mirati, insieme al numero di tentativi per ogni utente in ogni visualizzazione.
 
-Operazioni di sicurezza Gli utenti possono esportare l'elenco degli utenti di destinazione, fino a un limite di 3.000, insieme al numero di tentativi effettuati, per l'analisi offline per ogni visualizzazione della posta elettronica. Inoltre, selezionando il numero di tentativi (ad esempio, 13 tentativi nell'immagine seguente) verrà aperta una visualizzazione filtrata in Esplora minacce, in modo da poter visualizzare ulteriori dettagli tra i messaggi di posta elettronica e le minacce per tale utente.  
+Operazioni di sicurezza Gli utenti possono esportare l'elenco degli utenti di destinazione, fino a un limite di 3.000, insieme al numero di tentativi effettuati, per l'analisi offline per ogni visualizzazione della posta elettronica. Inoltre, selezionando il numero di tentativi (ad esempio, 13 tentativi nell'immagine seguente) verrà aperta una visualizzazione filtrata in Esplora minacce, in modo da poter visualizzare ulteriori dettagli tra i messaggi di posta elettronica e le minacce per tale utente.
 
 > [!div class="mx-imgBorder"]
 > ![Utenti di destinazione principali](../../media/Top_Targeted_Users.png)
 
 ### <a name="exchange-transport-rules"></a>Exchange di trasporto
 
-Il team delle operazioni di sicurezza sarà in grado di visualizzare tutte le regole di trasporto Exchange (o regole del flusso di posta) applicate a un messaggio nella visualizzazione Griglia posta elettronica. Selezionare **Opzioni colonna** nella griglia e quindi Exchange regola di **trasporto** dalle opzioni di colonna. L Exchange delle regole di trasporto è visibile anche nel riquadro **a** comparsa Dettagli nel messaggio di posta elettronica. 
+Il team delle operazioni di sicurezza sarà in grado di visualizzare tutte le regole di trasporto Exchange (o regole del flusso di posta) applicate a un messaggio nella visualizzazione Griglia posta elettronica. Selezionare **Opzioni colonna** nella griglia e quindi Exchange regola di **trasporto** dalle opzioni di colonna. L Exchange delle regole di trasporto è visibile anche nel riquadro **a** comparsa Dettagli nel messaggio di posta elettronica.
 
-Vengono visualizzati i nomi e i GUID delle regole di trasporto applicate al messaggio. Gli analisti potranno cercare i messaggi utilizzando il nome della regola di trasporto. Si tratta di una ricerca CONTAINS, che significa che è possibile eseguire anche ricerche parziali. 
+Vengono visualizzati i nomi e i GUID delle regole di trasporto applicate al messaggio. Gli analisti potranno cercare i messaggi utilizzando il nome della regola di trasporto. Si tratta di una ricerca CONTAINS, che significa che è possibile eseguire anche ricerche parziali.
 
 > [!IMPORTANT]
 > Exchange ricerca delle regole di trasporto e la disponibilità dei nomi dipendono dal ruolo specifico assegnato all'utente. Per visualizzare i nomi delle regole di trasporto e la ricerca, è necessario disporre di uno dei ruoli o delle autorizzazioni seguenti. Tuttavia, anche senza i ruoli o le autorizzazioni seguenti, un analista può visualizzare l'etichetta della regola di trasporto e le informazioni sul GUID nei dettagli della posta elettronica. Altre esperienze di visualizzazione dei record nelle griglie di posta elettronica, nei riquadri a comparsa di posta elettronica, nei filtri e nell'esportazione non sono interessate.
@@ -235,9 +226,9 @@ Vengono visualizzati i nomi e i GUID delle regole di trasporto applicate al mess
 
 ### <a name="inbound-connectors"></a>Connettori in ingresso
 
-I connettori sono una raccolta di istruzioni che personalizzano il flusso della posta elettronica da e verso l'Microsoft 365 o Office 365'organizzazione. Consentono di applicare eventuali restrizioni o controlli di sicurezza. In Esplora minacce, è possibile visualizzare i connettori correlati a un messaggio di posta elettronica e cercare i messaggi di posta elettronica utilizzando i nomi dei connettori. 
+I connettori sono una raccolta di istruzioni che personalizzano il flusso della posta elettronica da e verso l'Microsoft 365 o Office 365'organizzazione. Consentono di applicare eventuali restrizioni o controlli di sicurezza. In Esplora minacce, è possibile visualizzare i connettori correlati a un messaggio di posta elettronica e cercare i messaggi di posta elettronica utilizzando i nomi dei connettori.
 
-La ricerca di connettori è una query CONTAINS, il che significa che le ricerche con parole chiave parziali possono funzionare: 
+La ricerca di connettori è una query CONTAINS, il che significa che le ricerche con parole chiave parziali possono funzionare:
 
 > [!div class="mx-imgBorder"]
 > ![Dettagli connettore](../../media/Connector_Details.png)
@@ -250,16 +241,13 @@ Devi disporre di [Microsoft Defender per Office 365](defender-for-office-365.md)
 - Il report rilevamenti in tempo reale è incluso in Defender per Office 365 piano 1.
 - Pianificare l'assegnazione delle licenze per tutti gli utenti che devono essere protetti da Defender per Office 365. Explorer e i rilevamenti in tempo reale mostrano i dati di rilevamento per gli utenti con licenza.
 
-Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necessario disporre di quanto segue:
+Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necessario disporre delle autorizzazioni seguenti:
 
 - Per il portale Microsoft 365 Defender:
-
   - Gestione dell'organizzazione
   - Amministratore della sicurezza (può essere assegnato nell'Azure Active Directory di amministrazione ( <https://aad.portal.azure.com> )
   - Ruolo con autorizzazioni di lettura per la sicurezza
-
 - Per Exchange Online:
-
   - Gestione organizzazione
   - Gestione organizzazione sola visualizzazione
   - Destinatari solo visualizzazione
@@ -273,9 +261,9 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- [Identificare e analizzare i messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md) 
-- [Visualizzare i file dannosi rilevati in SharePoint Online, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md) 
-- [Ottenere una panoramica delle visualizzazioni in Esplora minacce (e rilevamenti in tempo reale)](threat-explorer-views.md) 
-- [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report) 
-- [Indagine e reazione automatizzate in Microsoft Threat Protection](automated-investigation-response-office.md) 
+- [Identificare e analizzare i messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md)
+- [Visualizzare i file dannosi rilevati in SharePoint Online, OneDrive e Microsoft Teams](mdo-for-spo-odb-and-teams.md)
+- [Ottenere una panoramica delle visualizzazioni in Esplora minacce (e rilevamenti in tempo reale)](threat-explorer-views.md)
+- [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report)
+- [Indagine e reazione automatizzate in Microsoft Threat Protection](automated-investigation-response-office.md)
 - [Analizzare i messaggi di posta elettronica con la pagina Entità di posta elettronica](mdo-email-entity-page.md)

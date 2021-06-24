@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestire il feedback che gli utenti possono inviare a Microsoft sui prodotti Microsoft.
-ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 990ae811145d9586307cd3181724866198063a1b
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840671"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105297"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Gestire il feedback Microsoft per l'organizzazione
 
-In quanto amministratore di un'organizzazione Microsoft 365, ora sono disponibili diversi criteri che consentono di gestire la raccolta di commenti e suggerimenti e l'esperienza di coinvolgimento dei clienti degli utenti quando si usano Microsoft 365 applicazioni. È possibile creare e usare gruppi di Azure Active Directory esistenti nell'organizzazione per ognuno di questi criteri. Con questi criteri, è possibile controllare il modo in cui diversi reparti dell'organizzazione possono inviare commenti e suggerimenti a Microsoft. Microsoft rivede tutti i feedback inviati dai clienti e usa questo feedback per migliorare il prodotto. Mantenere attivata  l'esperienza di feedback ti consente di vedere cosa stanno dicendo gli utenti sui prodotti Microsoft che stanno usando. Il feedback raccolto dagli utenti sarà presto disponibile nell'Microsoft 365 di amministrazione.
+In quanto amministratore di un'organizzazione Microsoft 365, ora sono disponibili diversi criteri che consentono di gestire la raccolta di commenti e suggerimenti e l'esperienza di coinvolgimento dei clienti degli utenti quando si usano Microsoft 365 applicazioni. È possibile creare e usare gruppi di Azure Active Directory esistenti nell'organizzazione per ognuno di questi criteri. Con questi criteri, è possibile controllare il modo in cui diversi reparti dell'organizzazione possono inviare commenti e suggerimenti a Microsoft. Microsoft rivede tutti i feedback inviati dai clienti e usa questo feedback per migliorare il prodotto. Mantenere attivata  l'esperienza di feedback ti consente di vedere cosa stanno dicendo gli utenti sui prodotti Microsoft che stanno usando. Il feedback raccolto dagli utenti sarà presto disponibile nella interfaccia di amministrazione di Microsoft 365.
 
 Per altre informazioni sui tipi di feedback e su come Microsoft usa il feedback degli utenti, vedi Informazioni sui commenti e suggerimenti [Microsoft per l'organizzazione.](../misc/feedback-user-control.md)
 
@@ -86,7 +86,7 @@ Per usare questi criteri, i dispositivi devono avere un numero di build minimo. 
 
 ## <a name="configure-policies"></a>Configurare i criteri
 
-1. Accedere a [https://config.office.com](https://config.office.com) ed eseguire l'accesso come utente con autorizzazioni di amministratore globale.
+1. Accedere a [https://config.office.com](https://config.office.com) ed eseguire l'accesso.
 1. Selezionare **Personalizzazione,** **quindi Gestione criteri.**
 1. Selezionare **Crea**.
 1. Immettere **nome** e **descrizione**.

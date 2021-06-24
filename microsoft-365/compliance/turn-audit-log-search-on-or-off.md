@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Come attivare o disattivare la funzionalità di ricerca dei log di controllo nel Centro conformità Microsoft 365 per abilitare o disabilitare la capacità degli amministratori di eseguire ricerche nel log di controllo.
-ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Come attivare o disattivare la funzionalità di ricerca dei log di controllo nel Centro conformità Microsoft 365 per abilitare o disabilitare la possibilità degli amministratori di eseguire ricerche nel log di controllo.
+ms.openlocfilehash: 7c55443eda9a99ff4ef153d8564fd9ac43fcc549
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706665"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105309"
 ---
 # <a name="turn-auditing-on-or-off"></a>Attivare o disattivare il controllo
 
@@ -39,7 +39,7 @@ La registrazione di controllo è attivata per impostazione predefinita per le or
 - Per attivare o disattivare il controllo nell Exchange Online nell'organizzazione Microsoft 365 controllo. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi  di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'Exchange di amministrazione. Gli amministratori globali in Microsoft 365 sono membri del gruppo di ruoli Gestione organizzazione in Exchange Online. 
 
     > [!NOTE]
-    > Agli utenti devono essere assegnate le autorizzazioni Exchange Online attivare o disattivare il controllo. Se si assegna agli utenti  il ruolo Log di controllo nella pagina Autorizzazioni del Centro sicurezza & conformità, non potranno attivare o disattivare il controllo. Questo perché il cmdlet sottostante è un cmdlet Exchange Online PowerShell. 
+    > Agli utenti devono essere assegnate le autorizzazioni Exchange Online attivare o disattivare il controllo. Se si assegna agli utenti  il ruolo Log di controllo nella pagina Autorizzazioni del Centro sicurezza & conformità, non potranno attivare o disattivare il controllo. Questo perché il cmdlet sottostante è un cmdlet Exchange Online PowerShell.
 
 - Per istruzioni dettagliate sulla ricerca nel log di controllo, vedere [Search the audit log in the Security & Compliance Center.](search-the-audit-log-in-security-and-compliance.md) Per altre informazioni sull'API di Microsoft 365 Management Activity, vedi Introduzione alle API di [Microsoft 365 Management.](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
@@ -59,7 +59,7 @@ Se il controllo non è attivato per l'organizzazione, è possibile attivarlo nel
 
 1. Andare su <https://compliance.microsoft.com> ed eseguire l'accesso.
 
-2. Nel riquadro di spostamento sinistro del Centro Microsoft 365 conformità fare clic **su Mostra tutto** e quindi su **Controlla.**
+2. Nel riquadro di spostamento sinistro della Centro conformità Microsoft 365 fare clic su **Mostra tutto** e quindi su **Controlla.**
 
    Se il controllo non è attivato per l'organizzazione, viene visualizzato un banner in cui viene richiesto di avviare la registrazione delle attività degli utenti e degli amministratori.
 
@@ -71,7 +71,7 @@ Se il controllo non è attivato per l'organizzazione, è possibile attivarlo nel
 
 ### <a name="use-powershell-to-turn-on-auditing"></a>Usare PowerShell per attivare il controllo
 
-1. [Connettersi a PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Eseguire il comando di PowerShell seguente per attivare il controllo in Office 365.
 
@@ -85,7 +85,7 @@ Se il controllo non è attivato per l'organizzazione, è possibile attivarlo nel
 
 È necessario utilizzare Exchange Online PowerShell per disattivare il controllo.
   
-1. [Connettersi a PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Eseguire il comando di PowerShell seguente per disattivare il controllo.
 
@@ -103,6 +103,6 @@ Se il controllo non è attivato per l'organizzazione, è possibile attivarlo nel
 
       Il valore di  `False` per la  _proprietà UnifiedAuditLogIngestionEnabled_ indica che il controllo è disattivato.
 
-    - Passare alla pagina **Controllo** nel Centro Microsoft 365 conformità.
+    - Passare alla **pagina** Controllo nell'Centro conformità Microsoft 365.
 
       Se il controllo non è attivato per l'organizzazione, viene visualizzato un banner in cui viene richiesto di avviare la registrazione delle attività degli utenti e degli amministratori.

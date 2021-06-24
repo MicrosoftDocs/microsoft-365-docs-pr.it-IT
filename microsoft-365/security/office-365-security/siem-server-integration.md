@@ -18,12 +18,12 @@ ms.custom:
 description: Panoramica dell'integrazione del server SiEM (Security Information and Event Management) con i servizi cloud Microsoft 365 e le applicazioni
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929792"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105597"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrazione del server SiEM (Security Information and Event Management) con Microsoft 365 applicazioni e servizi di sicurezza
 
@@ -46,12 +46,13 @@ L'organizzazione utilizza o pianifica di ottenere un server SiEM (Security Infor
 La necessità di un server SIEM dipende da molti fattori, ad esempio i requisiti di sicurezza dell'organizzazione e la posizione dei dati. Microsoft 365 include un'ampia gamma di funzionalità di sicurezza che soddisfano le esigenze di sicurezza di molte organizzazioni senza server aggiuntivi, ad esempio un server SIEM. Alcune organizzazioni hanno circostanze particolari che richiedono l'utilizzo di un server SIEM. Di seguito vengono descritti alcuni esempi:
 
 - *Fabrikam* ha alcuni contenuti e applicazioni in locale e alcuni nel cloud (hanno una distribuzione cloud ibrida). Per ottenere report sulla sicurezza in tutto il contenuto e le applicazioni, Fabrikam ha implementato un server SIEM.
-
 - *Contoso* è un'organizzazione di servizi finanziari con requisiti di sicurezza particolarmente stringenti. Hanno aggiunto un server SIEM al proprio ambiente per sfruttare la protezione di sicurezza aggiuntiva necessaria.
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>Integrazione del server SIEM con Microsoft 365
 
 Un server SIEM può ricevere dati da un'ampia gamma di Microsoft 365 e applicazioni. Nella tabella seguente sono elencati diversi Microsoft 365 e applicazioni, insieme agli input e alle risorse del server SIEM per ulteriori informazioni.
+
+<br>
 
 ****
 
@@ -69,8 +70,7 @@ Un server SIEM può ricevere dati da un'ampia gamma di Microsoft 365 e applicazi
 
 Verificare che la registrazione di controllo sia attivata prima di configurare l'integrazione del server SIEM.
 
-- Per SharePoint Online, OneDrive for Business e Azure Active Directory, la registrazione di controllo è attivata nel [portale di Microsoft 365 Defender.](../../compliance/turn-audit-log-search-on-or-off.md)
-
+- Per SharePoint Online, OneDrive for Business e Azure Active Directory, vedere Attivare o disattivare [il controllo.](../../compliance/turn-audit-log-search-on-or-off.md)
 - Per Exchange Online, vedere [Manage mailbox auditing](../../compliance/enable-mailbox-auditing.md).
 
 ## <a name="more-resources"></a>Altre risorse

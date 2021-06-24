@@ -20,12 +20,12 @@ description: Gli amministratori possono conoscere la protezione dalle minacce in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 7e37b67dbed75e3283070ba94321fcb03979a5a6
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083681"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105393"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -95,7 +95,7 @@ Per ulteriori informazioni sulle impostazioni consigliate per l'antimalware, ved
 
 3. Nel riquadro a comparsa dei dettagli del criterio visualizzato fare clic su Modifica impostazioni **di protezione** e quindi configurare le impostazioni seguenti:
    - **Sezione Impostazioni di** protezione:
-     - Selezionare **Abilita il filtro allegati comuni** per attivare il filtro allegati comuni. Fare **clic su Personalizza tipi di file** per aggiungere altri tipi di file.
+     - **Abilita il filtro allegati comuni**: Seleziona (attiva). Fare **clic su Personalizza tipi di file** per aggiungere altri tipi di file.
      - **Abilita eliminazione automatica** a zero ore per il malware : verifica che questa impostazione sia selezionata. Per ulteriori informazioni su ZAP per il malware, vedere [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
    - **Sezione** Notifica: verificare che nessuna delle impostazioni di notifica sia selezionata.
 
@@ -251,7 +251,7 @@ Per ulteriori informazioni sulle impostazioni consigliate per i collegamenti Cas
 2. Nella pagina **Cassaforte collegamenti** fare clic su **Impostazioni globali** e quindi configurare le impostazioni seguenti nel riquadro a comparsa visualizzato:
    - **Impostazioni che si applicano al contenuto nelle app Office 365 supportate:**
      - **Usa Cassaforte collegamenti nelle app Office 365**: verifica che questa impostazione sia attivata ( ![ Attiva/Disattiva ](../../media/scc-toggle-on.png) ).
-     - **Non tenere traccia quando gli utenti fanno clic su** collegamenti protetti nelle app Office 365 : disattiva questa impostazione ( Disattiva ![ ](../../media/scc-toggle-off.png) )
+     - **Non tenere traccia quando gli utenti fanno clic su** collegamenti protetti nelle app Office 365 : disattiva questa impostazione ( Disattiva ![ ](../../media/scc-toggle-off.png) ).
      - **Non consentire agli utenti di fare clic sull'URL** originale nelle app Office 365 : verificare che questa impostazione sia attivata ( ![ Attiva/Disattiva ](../../media/scc-toggle-on.png) ).
 
    Al termine, fare clic su **Salva**

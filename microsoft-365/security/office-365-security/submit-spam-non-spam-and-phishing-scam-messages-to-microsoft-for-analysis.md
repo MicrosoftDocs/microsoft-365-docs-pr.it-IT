@@ -18,12 +18,12 @@ description: Gli amministratori e gli utenti finali possono imparare a inviare m
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d277df764ce2fb135f11c6320bc990e4d4142d6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: d0d48c3c6f6d082085390d6e246a088b6d3f6bf0
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929768"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105549"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Inviare manualmente i messaggi a Microsoft per l'analisi
 
@@ -35,7 +35,7 @@ ms.locfileid: "52929768"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Se si è un amministratore di un'organizzazione con Exchange Online cassette postali, è consigliabile utilizzare il portale invii nel portale di Microsoft 365 Defender. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Se si è un amministratore di un'organizzazione con Exchange Online cassette  postali, è consigliabile utilizzare la pagina Invii nel portale Microsoft 365 Defender. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi di posta indesiderata (posta indesiderata) o phishing nella posta in arrivo o se non ricevono un messaggio di posta elettronica legittimo perché è contrassegnato come posta indesiderata. Stiamo costantemente per ottimizzare i filtri per la posta indesiderata per essere più accurati.
 
@@ -47,7 +47,7 @@ L'utente e gli utenti possono contribuire a questo processo inviando falsi posit
 ## <a name="submit-false-negatives-to-microsoft"></a>Inviare falsi negativi a Microsoft
 
 > [!TIP]
-> Anziché utilizzare le procedure seguenti per segnalare falsi negativi, gli utenti di Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) possono utilizzare il componente aggiuntivo Segnala messaggio o Segnala phishing. Per informazioni su come installare e utilizzare questi strumenti, vedere [Enable the Report Message add-in](enable-the-report-message-add-in.md) e Enable the Report Phishing [add-in.](enable-the-report-phish-add-in.md)
+> Anziché utilizzare le procedure seguenti per segnalare falsi negativi, gli utenti di Outlook e Outlook sul web (in precedenza noto come Outlook Web App) possono utilizzare il componente aggiuntivo Segnala messaggio o Segnala phishing. Per informazioni su come installare e utilizzare questi strumenti, vedere [Enable the Report Message add-in](enable-the-report-message-add-in.md) e Enable the Report Phishing [add-in.](enable-the-report-phish-add-in.md)
 
 Se si riceve un messaggio che passa attraverso il filtro posta indesiderata che dovrebbe essere stato identificato come posta indesiderata o phishing, è possibile inviare il messaggio ai team di analisi della posta indesiderata Microsoft e analisi di phishing Microsoft in base alle esigenze. Gli analisti rivedranno il messaggio e lo aggiungeranno ai filtri a livello di servizio se soddisfano i criteri di classificazione.
 
@@ -72,7 +72,7 @@ Se si riceve un messaggio che passa attraverso il filtro posta indesiderata che 
 ## <a name="submit-false-positives-to-microsoft"></a>Inviare falsi positivi a Microsoft
 
 > [!TIP]
-> Anziché utilizzare le procedure seguenti per segnalare falsi positivi, gli utenti di Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) possono utilizzare il componente aggiuntivo Segnala messaggio o Segnala phishing. Per informazioni su come installare e utilizzare questi strumenti, vedere [Enable the Report Message add-in](enable-the-report-message-add-in.md) e Enable the Report Phishing [add-in.](enable-the-report-phish-add-in.md)
+> Anziché utilizzare le procedure seguenti per segnalare falsi positivi, gli utenti di Outlook e Outlook sul web possono utilizzare il componente aggiuntivo Segnala messaggio o Segnala phishing. Per informazioni su come installare e utilizzare questi strumenti, vedere [Enable the Report Message add-in](enable-the-report-message-add-in.md) e Enable the Report Phishing [add-in.](enable-the-report-phish-add-in.md)
 
 Se un messaggio è stato erroneamente identificato come posta indesiderata, è possibile inviarlo al team di analisi della posta indesiderata di Microsoft. Gli analisti valuteranno il messaggio e, a seconda dei risultati dell'analisi, i filtri a livello di servizio possono essere modificati per consentire l'invio del messaggio.
 

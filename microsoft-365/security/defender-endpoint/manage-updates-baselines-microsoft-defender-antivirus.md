@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/14/2021
-ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.date: 06/23/2021
+ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929444"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105333"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gestire Antivirus Microsoft Defender aggiornamenti e applicare linee di base
 
@@ -105,6 +105,8 @@ Nessun problema noto
 ### <a name="whats-new"></a>Novità
 - Logica di monitoraggio del comportamento aggiuntiva
 - Rilevamento dei keylogger in modalità kernel migliorato
+- Sono stati aggiunti nuovi controlli per gestire il processo di implementazione graduale per [gli aggiornamenti di Microsoft Defender](manage-gradual-rollout.md)
+
 
 ### <a name="known-issues"></a>Problemi noti
 Nessun problema noto  
