@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0068d5aeef1289d8775dcefd0b4f60cb8f8ed0de
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 78783ab98c50252115c28008680197256bfd7aa5
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105405"
+ms.locfileid: "53114738"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novità di Microsoft 365 Defender
 
@@ -38,6 +38,8 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## <a name="june-2021"></a>Giugno 2021
+- Tag delle minacce nel [Microsoft 365 Defender di analisi delle minacce](threat-analytics.md) <br> I tag per le minacce consentono di concentrarsi su categorie di minacce specifiche ed esaminare i report più rilevanti. 
 
 ## <a name="may-2021"></a>Maggio 2021
 

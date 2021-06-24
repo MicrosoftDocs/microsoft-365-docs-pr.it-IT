@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Utilizzare Ricerca contenuto nel Centro Microsoft 365 conformità per eseguire una raccolta di destinazione, che cerca gli elementi in una cassetta postale o in una cartella del sito specifica.
-ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: Utilizzare Ricerca contenuto nell'Centro conformità Microsoft 365 per eseguire una raccolta di destinazione, che cerca gli elementi in una cassetta postale o in una cartella del sito specifica.
+ms.openlocfilehash: 925a6e5e0e56c63cde8bfa1b39cca6e64abcd016
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311909"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114753"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usare Ricerca contenuto per raccolte di destinazione
 
-Lo strumento ricerca contenuto nel Centro conformità Microsoft 365 non fornisce un modo diretto nell'interfaccia utente per cercare cartelle specifiche nelle cassette postali di Exchange o SharePoint e OneDrive for Business siti. È tuttavia possibile eseguire ricerche in cartelle specifiche (denominate raccolte di *destinazione)* specificando la proprietà ID cartella per la posta elettronica o il percorso (DocumentLink) per i siti nella sintassi della query di ricerca effettiva. L'utilizzo di Ricerca contenuto per eseguire una raccolta di destinazione è utile quando si è certi che gli elementi che rieseguono un caso o elementi con privilegi si trovino in una cassetta postale o in una cartella del sito specifica. È possibile utilizzare lo script in questo articolo per ottenere l'ID cartella per le cartelle delle cassette postali o il percorso (DocumentLink) per le cartelle in un SharePoint e OneDrive for Business sito. È quindi possibile utilizzare l'ID o il percorso della cartella in una query di ricerca per restituire gli elementi che si trovano nella cartella.
+Lo strumento ricerca contenuto nella Centro conformità Microsoft 365 non fornisce un modo diretto nell'interfaccia utente per cercare cartelle specifiche nelle cassette postali di Exchange o SharePoint e OneDrive for Business siti. È tuttavia possibile eseguire ricerche in cartelle specifiche (denominate raccolte di *destinazione)* specificando la proprietà ID cartella per la posta elettronica o il percorso (DocumentLink) per i siti nella sintassi della query di ricerca effettiva. L'utilizzo di Ricerca contenuto per eseguire una raccolta di destinazione è utile quando si è certi che gli elementi che rieseguono un caso o elementi con privilegi si trovino in una cassetta postale o in una cartella del sito specifica. È possibile utilizzare lo script in questo articolo per ottenere l'ID cartella per le cartelle delle cassette postali o il percorso (DocumentLink) per le cartelle in un SharePoint e OneDrive for Business sito. È quindi possibile utilizzare l'ID o il percorso della cartella in una query di ricerca per restituire gli elementi che si trovano nella cartella.
 
 > [!NOTE]
 > Per restituire il contenuto che si trova in una cartella in un sito SharePoint o OneDrive for Business, lo script in questo argomento utilizza la proprietà gestita DocumentLink anziché la proprietà Path. La proprietà DocumentLink è più affidabile della proprietà Path perché restituirà tutto il contenuto di una cartella, mentre la proprietà Path non restituirà alcuni file multimediali.
@@ -216,17 +216,19 @@ Ecco un esempio dell'output restituito dallo script per le cartelle del sito.
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Passaggio 2: Usare un ID cartella o un documentlink per eseguire una raccolta di destinazione
 
-Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o collegamenti a documenti per un utente specifico, il passaggio successivo per passare al Centro conformità di Microsoft 365 e creare una nuova ricerca contenuto per eseguire ricerche in una cartella specifica. Verrà utilizzata la coppia o property:value nella query di ricerca configurata nella casella parola chiave Ricerca contenuto (o come valore del parametro ContentMatchQuery se si utilizza il `folderid:<folderid>` `documentlink:<path>` cmdlet **New-ComplianceSearch).**  È possibile combinare la  `folderid` proprietà o con altri parametri di ricerca o condizioni di  `documentlink` ricerca. Se si include solo la proprietà o nella query, la ricerca restituirà tutti gli  `folderid` elementi che si trovano nella cartella  `documentlink` specificata.
+Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o collegamenti a documenti per un utente specifico, il passaggio successivo per passare al Centro conformità Microsoft 365 e creare una nuova ricerca contenuto per cercare una cartella specifica. Verrà utilizzata la coppia o property:value nella query di ricerca configurata nella casella parola chiave Ricerca contenuto (o come valore del parametro ContentMatchQuery se si utilizza il `folderid:<folderid>` `documentlink:<path>` cmdlet **New-ComplianceSearch).**  È possibile combinare la  `folderid` proprietà o con altri parametri di ricerca o condizioni di  `documentlink` ricerca. Se si include solo la proprietà o nella query, la ricerca restituirà tutti gli  `folderid` elementi che si trovano nella cartella  `documentlink` specificata.
 
 1. Passare a e accedere utilizzando l'account e le credenziali utilizzati per <https://compliance.microsoft.com> eseguire lo script nel passaggio 1.
 
 2. Nel riquadro sinistro del Centro conformità fare clic su **Mostra** tutto  >  **ricerca contenuto** e quindi su Nuova **ricerca.**
 
-3. Nella casella **Parole** chiave incollare il `folderid:<folderid>` valore o  `documentlink:<path>` restituito dallo script nel passaggio 1.
+3. Nella casella **Parole** chiave incollare il `folderid:<folderid>` valore o  `documentlink:<path>/*` restituito dallo script nel passaggio 1.
 
     Ad esempio, la query nello screenshot seguente cerca qualsiasi elemento nella sottocartella Ripuliture nella cartella Elementi ripristinabili dell'utente (il valore della proprietà per la sottocartella Ripuliture è mostrato nello screenshot nel `folderid` passaggio 1):
 
     ![Incollare il folderid o documentlink nella casella delle parole chiave della query di ricerca](../media/FolderIDSearchQuery.png)
+    > [!IMPORTANT]
+    > per le ricerche documentlink è necessario utilizzare un file  `asterisk '/*'` .  
 
 4. In **Percorsi** selezionare **Percorsi specifici e** quindi fare clic su **Modifica.**
 
@@ -259,16 +261,16 @@ Ecco alcuni esempi di utilizzo delle proprietà  `folderid` e in una query di ri
 - In questo esempio viene eseguita una ricerca in una cartella del sito (ed eventuali sottocartelle) di documenti contenenti le lettere "NDA" nel titolo.
 
   ```powershell
-  documentlink:<path> AND filename:nda
+  documentlink:"<path>/*" AND filename:nda
   ```
 
 - In questo esempio viene eseguita una ricerca in una cartella del sito (e in qualsiasi sottocartella) dei documenti che sono stati modificati in un intervallo di date.
 
   ```powershell
-  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Quando si usa lo script in questo articolo per eseguire raccolte di destinazione, tenere presente quanto segue.
 

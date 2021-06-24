@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: Esportare i risultati della ricerca da una ricerca contenuto nel Centro Microsoft 365 conformità in un computer locale. I risultati della posta elettronica vengono esportati come file PST. Il contenuto SharePoint e OneDrive for Business siti vengono esportati come documenti Office nativi.
+description: Esportare i risultati della ricerca da una ricerca contenuto nella Centro conformità Microsoft 365 in un computer locale. I risultati della posta elettronica vengono esportati come file PST. Il contenuto SharePoint e OneDrive for Business siti vengono esportati come documenti Office nativi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: d3ae14fc0ac31e50d579668c7fafba5390c5b8fc
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653536"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114765"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati della ricerca contenuto
 
@@ -90,7 +90,7 @@ L'esportazione dei risultati di una ricerca contenuto implica la preparazione de
 
 Il primo passaggio consiste nel preparare i risultati della ricerca per l'esportazione. Quando si preparano i risultati, questi vengono caricati in un percorso di Archiviazione di Azure fornito da Microsoft nel cloud Microsoft. Il contenuto delle cassette postali e dei siti viene caricato alla velocità massima di 2 GB all'ora.
   
-1. Nel Centro Microsoft 365 conformità selezionare la ricerca di contenuto da cui si desidera esportare i risultati.
+1. Nell'Centro conformità Microsoft 365 selezionare la ricerca di contenuto da cui si desidera esportare i risultati.
   
 2. Scegliere **Esporta** risultati dal menu Azioni nella parte inferiore della pagina a **comparsa.**
 
@@ -133,6 +133,8 @@ Il primo passaggio consiste nel preparare i risultati della ricerca per l'esport
    2. Selezionare la **casella di controllo Includi versioni SharePoint file** per esportare tutte le versioni SharePoint documenti. Questa opzione viene visualizzata solo se le origini di contenuto della ricerca includono SharePoint o OneDrive for Business siti.
   
    3. Selezionare Esporta **file in una cartella compressa (compressa). Include solo singoli messaggi e SharePoint per** esportare i risultati della ricerca in cartelle compresse. Questa opzione viene visualizzata solo quando si sceglie di esportare Exchange elementi come singoli messaggi e quando i risultati della ricerca includono SharePoint o OneDrive documenti. Questa opzione viene utilizzata principalmente per aggirare il limite di 260 caratteri nei nomi dei percorsi Windows file quando gli elementi vengono esportati. Vedere "Nomi di file di elementi esportati" nella [sezione Ulteriori](#more-information) informazioni.
+   > [!IMPORTANT]
+   > L'esportazione di file in una cartella compressa (compressa) aumenterà i tempi di esportazione.
   
 6. Fare **clic su** Esporta per avviare il processo di esportazione. I risultati della ricerca sono preparati per il download, ovvero vengono raccolti dai percorsi del contenuto originale e quindi caricati in un percorso Archiviazione di Azure nel cloud Microsoft. Questa operazione può richiedere diversi minuti.
 
@@ -142,7 +144,7 @@ Per istruzioni su come scaricare i risultati della ricerca esportati, vedere la 
 
 Il passaggio successivo consiste nel scaricare i risultati della ricerca dal percorso Archiviazione di Azure nel computer locale.
   
-1. Nella pagina **Ricerca contenuto** nel Centro Microsoft 365 conformità selezionare la **scheda** Esportazioni
+1. Nella pagina **Ricerca contenuto** della Centro conformità Microsoft 365 selezionare la **scheda** Esportazioni
   
    Potrebbe essere necessario fare clic **su Aggiorna** per aggiornare l'elenco dei processi di esportazione in modo che venga visualizzato il processo di esportazione creato. I processi di esportazione hanno lo stesso nome della ricerca corrispondente **con _Export** aggiunto al nome di ricerca.
   
@@ -175,7 +177,7 @@ Il passaggio successivo consiste nel scaricare i risultati della ricerca dal per
   
     Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Una volta completato il processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Ecco altre informazioni sull'esportazione dei risultati della ricerca.
   
