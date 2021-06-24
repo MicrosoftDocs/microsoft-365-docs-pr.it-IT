@@ -13,23 +13,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796055"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062196"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Questa funzionalità è in anteprima e soggetta a modifiche. 
->
-> È consigliabile abilitare questa funzionalità in un tenant di test anziché in un tenant di produzione poiché:
-> - Questa funzionalità apporta modifiche all'etichettatura dei metadati. Al momento non tutte le app in tutte le piattaforme supportano questa modifica
-> - Non è possibile disabilitare manualmente questa funzionalità dopo che è stata abilitata
+> Questa funzionalità è in anteprima e soggetta a modifiche.
 
 Abilitare l'impostazione per supportare la [creazione condivisa](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) per le app desktop di Office in modo che, quando i documenti vengono etichettati e crittografati con le [etichette di riservatezza](sensitivity-labels.md), più utenti possono modificare tali documenti contemporaneamente.
 
@@ -37,7 +33,7 @@ Se questa impostazione non è abilitata per il tenant, quando gli utenti usano l
 
 Inoltre, l'abilitazione di questa funzionalità comporta il supporto della funzionalità di [salvataggio automatico](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) per i file etichettati e crittografati.
 
-Per leggere l'annuncio sul rilascio, vedere il post di blog [Annuncio della creazione condivisa su documenti crittografati con Microsoft Information Protection e aggiornamenti delle etichette](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+Per leggere l'annuncio iniziale sul rilascio, vedere il post di blog [Annuncio della creazione condivisa su documenti crittografati con Microsoft Information Protection e aggiornamenti delle etichette](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Modifiche ai metadati delle etichette di riservatezza
 
@@ -76,15 +72,13 @@ Per un elenco completo delle app e dei servizi che supportano questa impostazion
 
 Prima di attivare questa funzionalità, assicurarsi di aver compreso i seguenti prerequisiti.
 
-- È necessario usare un tenant di test per questa anteprima.
-
 - È necessario essere un amministratore globale per aggiornare questa funzionalità.
 
 - Le etichette di riservatezza devono essere [abilitate per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) per il tenant. Se questa funzionalità non è già stata abilitata, quando si seleziona l'impostazione per attivare la creazione condivisa per i file con etichette di riservatezza, questa verrà abilitata automaticamente.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: Anteprima: [Anteprima: Canale corrente (Anteprima)](https://office.com/insider)
-    - **macOS**: Anteprima: [canale corrente (Anteprima)](https://office.com/insider)
+    - **Windows**: versione minima 2105: 18 giugno
+    - **macOS**: versione minima 16.50
     - **iOS**: non ancora supportato
     - **Android**: non ancora supportato
 
@@ -142,34 +136,26 @@ Questa versione di anteprima di creazione condivisa per file crittografati con e
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Come abilitare la creazione condivisa per i file con etichette di riservatezza
 
 > [!CAUTION]
-> L'attivazione di questa impostazione è un'azione unidiredirezionale. Durante la versione di anteprima è consigliabile testare la nuova funzionalità solo in un ambiente non di produzione e solo dopo aver letto e compreso le modifiche dei metadati, i prerequisiti, le limitazioni e gli eventuali problemi noti documentati in questa pagina.
+> L'attivazione di questa impostazione è un'azione unidirezionale. Durante la versione di anteprima abilitarla solo in un ambiente non di produzione e solo dopo aver letto e compreso le modifiche dei metadati, i prerequisiti, le limitazioni e gli eventuali problemi noti documentati in questa pagina.
 
-Durante l'anteprima è necessario usare un URL specifico per accedere a questa impostazione nel Centro conformità Microsoft 365.
+1. Accedere al [Centro conformità Microsoft 365](https://compliance.microsoft.com) come amministratore globale per il tenant.
 
-1. Accedere al Centro conformità Microsoft 365 come amministratore globale per il tenant di test tramite il collegamento seguente:
+2. Nel riquadro di spostamento selezionare **Impostazioni** > **Creazione condivisa per i file con i file di riservatezza**.
+
+2. Nella **Creazione condivisa di file con etichette di riservatezza (anteprima)** leggere il riepilogo, i prerequisiti, cosa aspettarsi e l'avviso che indica che non è possibile disattivare questa impostazione dopo l'attivazione.
     
-    ```http
-    https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ```
-    Questo collegamento consente di accedere direttamente all'impostazione del tenant **Creazione condivisa per i file con etichette di riservatezza**.
-
-    > [!IMPORTANT]
-    > Prima di continuare, verificare di aver effettuato l'accesso a un tenant di test che non influirà sugli utenti: 
-    >
-    > Selezionare il cerchio con le iniziali dell'account nell'angolo in alto a destra del Centro conformità e verificare che il nome del tenant sia visualizzato per il tenant di test previsto.
-    
-2. Leggere il riepilogo, i prerequisiti, cosa aspettarsi e l'avviso che indica che non è possibile disattivare questa impostazione dopo l'attivazione. Quindi selezionare **Attiva la creazione condivisa per i file con etichette di riservatezza** e infine **Applica**:
+    Quindi selezionare **Attiva la creazione condivisa per i file con etichette di riservatezza** e infine **Applica**:
     
     ![Opzione per attivare la creazione condivisa per i file con etichette di riservatezza](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-3. Prima di testare questa nuova funzionalità per la creazione condivisa, bisogna attendere 24 ore perché l'impostazione venga replicata nell'ambiente.
+3. Prima di testare questa nuova funzionalità per la creazione condivisa, bisogna attendere 24 ore perché l'impostazione venga riusata nell'ambiente.
 
 ## <a name="contact-support-if-you-need-to-disable-this-feature"></a>Se è necessario disabilitare questa funzionalità, contattare il Supporto tecnico
 
 > [!IMPORTANT]
 > Se è necessario disabilitare questa funzionalità bisogna tenere presente che le informazioni dell’etichetta potrebbero andare perse.
 
-Dopo aver abilitato la creazione condivisa per i file con etichette di riservatezza per il tenant, non è possibile disabilitare questa impostazione manualmente. Per questo motivo, prima di abilitare questa impostazione è importante verificare e comprendere i prerequisiti, le conseguenze e le limitazioni. È anche consigliabile testare questa funzionalità con un tenant di test invece che un tenant di produzione.
+Dopo aver abilitato la creazione condivisa per i file con etichette di riservatezza per il tenant, non è possibile disabilitare questa impostazione manualmente. Per questo motivo, prima di abilitare questa impostazione è importante verificare e comprendere i prerequisiti, le conseguenze e le limitazioni.
 
 ![Opzione che mostra la creazione condivisa per le etichette di riservatezza attivata](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 

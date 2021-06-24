@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb3e378c13507e354cdd1d739214c1c2d9d6aa98
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950096"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108236"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -83,7 +83,7 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
 
 La creazione di un criterio di protezione dalla posta indesiderata nel portale di Microsoft 365 Defender permette di creare contemporaneamente una regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata associato, usando lo stesso nome per entrambi.
 
-1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> pagina **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri protezione posta indesiderata** fare clic su ![Crea icona](../../media/m365-cc-sc-create-icon.png) **Crea criteri** e quindi selezionare **In ingresso** nell'elenco a discesa.
 
@@ -242,7 +242,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel portale d
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>Usare il portale di Microsoft 365 Defender per visualizzare i criteri di protezione dalla posta indesiderata
 
-1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> pagina **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri filtro posta indesiderata** cercare uno dei valori seguenti:
    - Il valore **Tipo** personalizzato è il **Criterio personalizzato per la posta indesiderata**
@@ -259,7 +259,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel portale d
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Usare il portale di Microsoft 365 Defender per modificare i criteri di protezione dalla posta indesiderata
 
-1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> pagina **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata** selezionare un criterio di filtro della posta indesiderata nell'elenco facendo clic sul nome:
    - Un criterio personalizzato creato dall'utente in cui il valore nella colonna **Tipo** è **Criterio di protezione dalla posta indesiderata personalizzato**.
@@ -275,7 +275,7 @@ Per abilitare o disabilitare un criterio, impostare l'ordine di priorità dei cr
 
 Non è possibile disabilitare il criterio di protezione dalla posta indesiderata predefinito.
 
-1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> pagina **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata** selezionare un criterio con il **Valore tipo** dei **Criteri di protezione dalla posta indesiderata** dall'elenco facendo clic sul nome:.
 
@@ -300,7 +300,7 @@ Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o
 - nel portale di Microsoft 365 Defender è possibile solo modificare la priorità del criterio di protezione dalla posta indesiderata dopo averlo creato. In PowerShell, è possibile sovrascrivere la priorità predefinita quando si crea la regola di filtro della posta indesiderata (che può incidere sulla priorità delle regole esistenti).
 - I criteri di protezione dalla posta indesiderata vengono elaborati nell'ordine in cui sono visualizzati (il primo criterio contiene il valore **Priorità** 0). Il criterio di protezione dalla posta indesiderata predefinito contiene il valore di priorità **Minimo**, che non è possibile modificare.
 
-1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> pagina **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata**,selezionare un criterio con il **Valore tipo** dei **Criteri di protezione dalla posta indesiderata** dall'elenco facendo clic sul nome.
 
@@ -317,7 +317,7 @@ Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o
 
 Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, è possibile configurare le notifiche di posta indesiderata per l'utente finale per informare i destinatari su quanto accaduto ai messaggi a loro destinati. Per altre informazioni sulle notifiche, vedere [Notifiche di posta indesiderata per l'utente finale in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> pagina **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata** selezionare un criterio di filtro della posta indesiderata nell'elenco facendo clic sul nome:
    - Un criterio personalizzato creato dall'utente in cui il valore nella colonna **Tipo** è **Criterio di protezione dalla posta indesiderata personalizzato**.
@@ -344,7 +344,7 @@ Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, �
 
 Quando si usa il portale di Microsoft 365 Defender per rimuovere un criterio di filtro della posta indesiderata personalizzato, vengono eliminati sia la regola di filtro della posta indesiderata che il criterio di filtro della posta indesiderata corrispondente. Non è possibile rimuovere il criterio di protezione dalla posta indesiderata predefinito.
 
-1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
+1. Nel portale di Microsoft 365 Defender passare a **Email e collaborazione** \> **Criteri e regole** \> pagina **Criteri delle minacce** \> **sezione** Criteri \> **Protezione posta indesiderata**.
 
 2. Nella pagina **Criteri di filtro della posta indesiderata** selezionare un criterio con il **Valore tipo** dei **Criteri di protezione dalla posta indesiderata** dall'elenco facendo clic sul nome:. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato fare clic![ sull'icona Altre azioni](../../media/m365-cc-sc-more-actions-icon.png) **Altre azioni** \> ![Icona Elimina criterio](../../media/m365-cc-sc-delete-icon.png) **Elimina criterio**.
 
