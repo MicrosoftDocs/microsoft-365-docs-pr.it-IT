@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare ad applicare le impostazioni dei criteri Standard e Strict tra le funzionalità di protezione di Exchange Online Protection (EOP) e Microsoft Defender per Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb5fb2e882348e2cd0480abf5ad7217095b2522d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: e41edb6c2d77a69ee3d4fa28ff86e0e77410caa5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083489"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108296"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Criteri di sicurezza predefiniti in EOP e Microsoft Defender per Office 365
 
@@ -119,7 +119,7 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Usare il portale Microsoft 365 Defender per assegnare criteri di sicurezza preimpostati agli utenti
 
-1. Nel portale Microsoft 365 Defender, passare a Criteri di **&** di collaborazione & regole Criteri di minaccia Sezione Criteri di sicurezza predefiniti \>  \>  \>  \> .
+1. Nel portale Microsoft 365 Defender, passare a Criteri di **collaborazione** & di posta elettronica & regole Criteri minaccia sezione Criteri di sicurezza \>  \>  \>  \> **predefiniti.**
 
 2. In **Protezione standard o** Protezione **rigida** fare clic su **Modifica.**
 

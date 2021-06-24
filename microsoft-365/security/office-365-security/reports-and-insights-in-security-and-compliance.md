@@ -19,12 +19,12 @@ description: Informazioni sui report intelligenti e sulle informazioni dettaglia
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4af84c058eb3d9d7112f6102d39b209c34148d0e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 9408f99b72821e6510927755a9fe6f3aa525a5e0
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054509"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108620"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
 
@@ -55,7 +55,7 @@ Nel Centro sicurezza e conformità è disponibile un'& ampia gamma di report. (V
 
 |Tipo di informazioni|Percorso da seguire|Dove andare per saperne di più|
 |---|---|---|
-|**Microsoft 365 Defender (tutto)** <p> Informazioni dettagliate e suggerimenti principali e collegamenti a Microsoft 365 Defender report, inclusi report di prevenzione della perdita di dati, etichette, report di sicurezza della posta elettronica, Defender per Office 365 report e altro ancora|Nel Centro sicurezza & conformità, andare **a** Report E-mail  >  **&**  >  **[collaborazione E-mail & report di collaborazione](https://security.microsoft.com/emailandcollabreport)**|[Monitorare e visualizzare i report nel centro sicurezza Microsoft 365 sicurezza](../defender/overview-security-center.md)|
+|**Report & Centro sicurezza e conformità** (tutto in su) <p> Informazioni dettagliate e suggerimenti principali e collegamenti ai report di conformità di Security &, inclusi report di prevenzione della perdita dei dati, etichette, report di sicurezza della posta elettronica, Defender per Office 365 report e altro ancora|Nel Centro sicurezza & conformità passare a **Dashboard** \> **report**|[Report nel Centro sicurezza e conformità](../../compliance/reports-in-security-and-compliance.md)|
 |**Prevenzione della perdita dei dati** <p> Corrispondenza dei criteri di prevenzione della perdita dei dati, falsi positivi e override e collegamenti per creare o modificare criteri|Nel Centro sicurezza & conformità passare a Criteri di **prevenzione della perdita di** \> **dati**|[Visualizzare i report per la prevenzione della perdita dei dati](../../compliance/view-the-dlp-reports.md)|
 |**Governance dei dati** <p> Informazioni sul modo in cui vengono applicate etichette, etichette classificate come record, tendenze delle etichette e altro ancora|Nel Centro sicurezza & conformità passare a **Dashboard di governance delle** \> **informazioni**|[Visualizzare i report della gestione dei dati](../../compliance/view-the-data-governance-reports.md)|
 |**Dashboard di gestione delle** minacce (noto anche come dashboard di sicurezza) <p> Rilevamenti di minacce, tendenze di malware, utenti di destinazione principali, dettagli sui messaggi di posta elettronica inviati e ricevuti e altro ancora|Nel Centro sicurezza & conformità passare a **Dashboard di gestione delle** \> **vulnerabilità**|[Visualizzare i report per Defender per Office 365](view-reports-for-mdo.md)|

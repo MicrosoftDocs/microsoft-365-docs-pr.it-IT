@@ -19,12 +19,12 @@ description: Informazioni sulle azioni di correzione nelle funzionalità di anal
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 8fc01ab0dd5178032ea7b101f5361c25bb10bbea
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028932"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108536"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Esaminare e gestire le azioni di correzione in Office 365
 
@@ -38,7 +38,6 @@ Poiché le indagini automatizzate sulla posta elettronica & contenuto di  collab
 
 Queste azioni di correzione non vengono eseguite a meno che il team delle operazioni di sicurezza non le approvi. È consigliabile rivedere e approvare tutte le azioni in sospeso il prima possibile, in modo che le indagini automatizzate si completino in modo appropriato. In alcuni casi, è possibile riconsiderare le azioni inviate.  È necessario essere parte del ruolo di & di eliminazione prima di eseguire qualsiasi azione.
 
-
 ## <a name="approve-or-reject-pending-actions"></a>Approvare (o rifiutare) le azioni in sospeso
 Esistono quattro modi diversi per trovare ed eseguire azioni di indagine automatica:
 
@@ -48,22 +47,25 @@ Esistono quattro modi diversi per trovare ed eseguire azioni di indagine automat
 - [Coda delle indagini di analisi e correzione](https://security.microsoft.com/airinvestigation)
 
 ## <a name="incident-queue"></a>Coda eventi imprevisti
-1. Accedere al Centro [sicurezza Microsoft 365 e](https://security.microsoft.com) accedere.
+
+1. Apri il Microsoft 365 Defender portale ( <https://security.microsoft.com> ) e accedi.
 2. Nel riquadro di spostamento selezionare **Eventi imprevisti & avvisi > eventi imprevisti**.
 3. Selezionare il nome di un evento imprevisto per aprire la relativa pagina di riepilogo.
 4. Selezionare la **scheda Prova e** risposta.
 5. Selezionare un elemento nell'elenco. Viene aperto il riquadro laterale.
 6. Nel riquadro laterale, eseguire le azioni di approvazione o rifiuto.
 
-## <a name="investigation-queue"></a>Coda di analisi 
-1. Accedere al Centro [sicurezza Microsoft 365 e](https://security.microsoft.com) accedere.
-2. Passare dalla pagina avvisi/eventi imprevisti. 
-3. Nella pagina Indagine passare alla scheda **Azioni in** sospeso. 
-4. Selezionare un elemento nell'elenco. Viene aperto il riquadro laterale.  
+## <a name="investigation-queue"></a>Coda di analisi
+
+1. Apri il Microsoft 365 Defender portale ( <https://security.microsoft.com> ) e accedi.
+2. Passare dalla pagina avvisi/eventi imprevisti.
+3. Nella pagina Indagine passare alla scheda **Azioni in** sospeso.
+4. Selezionare un elemento nell'elenco. Viene aperto il riquadro laterale.
 5. Nel riquadro laterale, eseguire le azioni di approvazione o rifiuto.
 
 ## <a name="action-center"></a>Centro notifiche
-1. Accedere al Centro [sicurezza Microsoft 365 e](https://security.microsoft.com) accedere.
+
+1. Apri il Microsoft 365 Defender portale ( <https://security.microsoft.com> ) e accedi.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In** sospeso esaminare l'elenco delle azioni in attesa di approvazione.
    - Selezionare **Apri pagina di indagine** per visualizzare ulteriori dettagli sull'indagine.
@@ -71,33 +73,37 @@ Esistono quattro modi diversi per trovare ed eseguire azioni di indagine automat
    - Selezionare **Rifiuta** per impedire l'esecuzione di un'azione in sospeso.
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>Coda delle indagini di analisi e correzione
-1. Accedere al Centro [sicurezza Microsoft 365 e](https://security.microsoft.com) accedere.
-2. Aprire indagini in sospeso. 
+
+1. Apri il Microsoft 365 Defender portale ( <https://security.microsoft.com> ) e accedi.
+2. Aprire indagini in sospeso.
 3. Nella pagina Indagine passare alla scheda **Azioni in** sospeso.
-4. Selezionare un elemento nell'elenco. Viene aperto il riquadro laterale.  
+4. Selezionare un elemento nell'elenco. Viene aperto il riquadro laterale.
 5. Nel riquadro laterale, eseguire le azioni di approvazione o rifiuto.
 
 ## <a name="change-or-undo-one-remediation-action"></a>Modificare o annullare un'azione di correzione
 
 Esistono due modi diversi per riconsiderare le azioni inviate:
-   - Tramite il [centro notifiche unificato](https://security.microsoft.com/action-center).
-   - Anche se [il Office action center](https://security.microsoft.com/threatincidents).
-   
+
+- Tramite il [centro notifiche unificato](https://security.microsoft.com/action-center).
+- Anche se [il Office action center](https://security.microsoft.com/threatincidents).
+
 ## <a name="change-or-undo-through-the-unified-action-center"></a>Modificare o annullare il centro notifiche unificato
+
 1. Passare al [centro notifiche unificato](https://security.microsoft.com/action-center) ed eseguire l'accesso.
 2. Nella scheda **Cronologia** selezionare un'azione che si desidera modificare o annullare.
-3. Nel riquadro sul lato destro dello schermo, selezionare l'azione appropriata **(** sposta nella posta in **arrivo,** sposta nella posta **indesiderata,** passa agli elementi eliminati, **eliminazione recidiva o **elimina definitivamente**).
+3. Nel riquadro sul lato destro dello schermo, selezionare l'azione appropriata **(** sposta nella posta in **arrivo,** sposta nella posta **indesiderata,** passa a elementi **eliminati,** eliminazione recidiva o **eliminazione permanente**).
 
- ## <a name="change-or-undo-through-the-office-action-center"></a>Modifica o annullamento tramite il Office notifiche 
+## <a name="change-or-undo-through-the-office-action-center"></a>Modifica o annullamento tramite il Office notifiche
+
 1. Accedere al Office [action center](https://security.microsoft.com/threatincidents) ed eseguire l'accesso.
 2. Selezionare la correzione appropriata.
-3. Nel riquadro laterale fare clic sulla voce relativa agli invii di posta e attendere il caricamento dell'elenco. 
-4. Attendere che il pulsante Azione nella parte superiore sia abilitato e selezionare il pulsante Azione per modificare il tipo di azione. 
+3. Nel riquadro laterale fare clic sulla voce relativa agli invii di posta e attendere il caricamento dell'elenco.
+4. Attendere che il pulsante Azione nella parte superiore sia abilitato e selezionare il pulsante Azione per modificare il tipo di azione.
 5. Verranno create le azioni appropriate.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Usare Esplora minacce](threat-explorer.md) 
+- [Usare Esplora minacce](threat-explorer.md)
 - [Admin /Manual Actions](remediate-malicious-email-delivered-office-365.md)
 - [Come segnalare falsi positivi/negativi nelle funzionalità di indagine e risposta automatizzate](air-report-false-positives-negatives.md)
 

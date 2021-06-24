@@ -16,12 +16,12 @@ ms.collection:
 description: Informazioni su Cassaforte documenti in Microsoft 365 E5 o Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 0e1bd2150a04e51e0d06c6cd1c17a71a032df1a5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054423"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108608"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Sicurezza documenti in Microsoft 365 E5
 
@@ -32,7 +32,7 @@ ms.locfileid: "53054423"
 
 Cassaforte Documenti è una funzionalità di Microsoft 365 E5 o Microsoft 365 E5 Security che usa [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per analizzare documenti e file aperti in [Visualizzazione](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) protetta o Application Guard [per Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni necessarie prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Cassaforte I documenti sono disponibili solo per gli utenti *con Microsoft 365 E5* o *Microsoft 365 E5 Security* licenze. Queste licenze non sono incluse in Microsoft Defender per Office 365 piani.
 
@@ -62,7 +62,7 @@ I file inviati Cassaforte documenti non vengono conservati in Defender oltre il 
 
 ## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>Utilizzare il Microsoft 365 Defender per configurare Cassaforte documenti
 
-1. Aprire il portale Microsoft 365 Defender e passare a Criteri di collaborazione & **e-mail** & criteri di minaccia sezione Criteri di \>  \>  \>  \> **Cassaforte allegati**.
+1. Aprire il portale Microsoft 365 Defender e passare a Criteri di **collaborazione** & e-mail \> **& regole** \> **Criteri** \>  minaccia \> sezione Criteri Cassaforte allegati .
 
 2. Nella pagina **Cassaforte allegati** fare clic su **Impostazioni globali.**
 
@@ -70,7 +70,7 @@ I file inviati Cassaforte documenti non vengono conservati in Defender oltre il 
    - **Attivare Cassaforte documenti per Office** client : spostare l'interruttore a destra per attivare la funzionalità: ![ Attiva/ ](../../media/scc-toggle-on.png) attiva.
    - **Consentire agli** utenti di fare clic su Visualizzazione protetta anche se Cassaforte Documenti ha identificato il file come dannoso: è consigliabile lasciare disattivata questa opzione (lasciare l'interruttore a sinistra: ![ Interruttore ](../../media/scc-toggle-off.png) disattivato).
 
-   Al termine, seleziona **Salva**.
+   Al termine, scegliere **Salva**.
 
    ![Cassaforte Documents settings after selecting Global settings on the Cassaforte Attachments page.](../../media/safe-docs-global-settings.png)
 
@@ -103,7 +103,7 @@ Per ulteriori informazioni, vedere [Onboard to the Microsoft Defender for Endpoi
 
 Per verificare di aver abilitato e configurato Cassaforte documenti, eseguire una delle operazioni seguenti:
 
-- Nel portale di Microsoft 365 Defender passare **a** Criteri di collaborazione & posta elettronica & regole Criteri di minaccia sezione Criteri di minaccia Cassaforte Allegati Impostazioni globali e verificare l'opzione Attiva documenti Cassaforte per i client Office e Consenti agli utenti di fare clic su Visualizzazione protetta anche se documenti Cassaforte identificano il file come impostazioni \>  \>  \>  \>  \> dannose.  
+- Nel portale di Microsoft 365 Defender & passare **a** Criteri di collaborazione di posta elettronica & Criteri di collaborazione & Criteri di minaccia sezione Criteri di protezione Cassaforte Allegati Impostazioni globali e verificare l'opzione Attiva documenti Cassaforte per i client Office e Consenti agli utenti di fare clic su Visualizzazione protetta anche se documenti Cassaforte identificano il file come impostazioni \>  \>  \>  \>  \> dannose.  
 
 - Eseguire il comando seguente in Exchange Online PowerShell e verificare i valori delle proprietà:
 

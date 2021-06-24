@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come proteggere le informazioni riservate usando Microsoft 365 criteri e strumenti di prevenzione della perdita dei dati ed eseguire un'analisi del ciclo di vita DLP.
-ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244613"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108260"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati
 
@@ -121,7 +121,9 @@ Durante la modalità di test, monitorare i risultati del criterio e ottimizzarlo
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>Abilitare il controllo e ottimizzare i criteri
 
-Una volta che il criterio soddisfa tutti gli obiettivi, attivalo. Continuare a monitorare i risultati dell'applicazione dei criteri e ottimizzare in base alle esigenze. In generale, i criteri hanno effetto circa un'ora dopo essere stati attivati. <!--See, LINK A per i contratti di servizio per i dettagli specifici della posizione-- >
+Una volta che il criterio soddisfa tutti gli obiettivi, attivalo. Continuare a monitorare i risultati dell'applicazione dei criteri e ottimizzare in base alle esigenze. In generale, i criteri hanno effetto circa un'ora dopo essere stati attivati. 
+
+<!--See, LINK TO topic for SLAs for location specific  details-->
 
 ## <a name="dlp-policy-configuration-overview"></a>Panoramica della configurazione dei criteri DLP
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Gli amministratori possono imparare a utilizzare i criteri di recapito avanzati in Exchange Online Protection (EOP) per identificare i messaggi che non devono essere filtrati in scenari supportati specifici (simulazioni di phishing di terze parti e messaggi recapitati alle cassette postali secOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: deaad11b6397cd53017c0972a624b67a9623887f
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 819f78883aa75fbbdded2e47c1bb85945f080233
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879109"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108404"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurare il recapito di simulazioni di phishing di terze parti agli utenti e messaggi non filtrati alle cassette postali secOps
 
@@ -47,8 +47,8 @@ Per proteggere [l'organizzazione](secure-by-default.md)per impostazione predefin
 - [AIR e clustering in Defender per Office 365](office-365-air.md) ignora questi messaggi.
 - In particolare per simulazioni di phishing di terze parti:
   - [Gli invii di](admin-submission.md) amministratori generano una risposta automatica che indica che il messaggio fa parte di una campagna di simulazione di phishing e non è una minaccia reale. Gli avvisi e AIR non verranno attivati.
-  - [I collegamenti sicuri in Defender per Office 365](safe-links.md) non bloccano o detonano gli URL identificati in modo specifico in questi messaggi.
-  - [Gli allegati sicuri in Defender per Office 365](safe-attachments.md) non detonano gli allegati in questi messaggi.
+  - [Cassaforte link in Defender per Office 365](safe-links.md) non blocca o fa detonare gli URL identificati in modo specifico in questi messaggi.
+  - [Cassaforte allegati in Defender per Office 365](safe-attachments.md) non fa detonare gli allegati in questi messaggi.
 
 <sup>\*</sup> Non è possibile ignorare il filtro antimalware o ZAP per il malware.
 
@@ -60,22 +60,22 @@ I messaggi identificati dal criterio di recapito avanzato non sono minacce alla 
 - [Ricerca avanzata in Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md)
 - [Visualizzazioni campagna](campaigns.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla **pagina Recapito avanzato,** aprire <https://security.microsoft.com/advanceddelivery> .
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alla **pagina Recapito avanzato,** aprire <https://security.microsoft.com/advanceddelivery> .
 
 - Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
-  - Per creare, modificare o rimuovere le impostazioni configurate nel criterio di  recapito avanzato, è necessario essere membri del gruppo  di ruoli Amministratore della sicurezza nel portale **di Microsoft 365 Defender** e membri del gruppo di ruoli Gestione organizzazione in **Exchange Online**.  
+  - Per creare, modificare o rimuovere le impostazioni configurate nel criterio di  recapito avanzato, è necessario essere membri del  gruppo di ruoli Amministratore della sicurezza nel portale **di Microsoft 365 Defender** e membri del gruppo di ruoli Gestione organizzazione in **Exchange Online**.  
   - Per l'accesso in sola lettura ai criteri di recapito avanzati, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
 
-  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender](permissions-microsoft-365-security-center.md) e Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender e](permissions-microsoft-365-security-center.md) Autorizzazioni in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente offre agli utenti  le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > L'aggiunta di utenti al ruolo Azure Active Directory corrispondente offre agli utenti  le autorizzazioni necessarie nel portale Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utilizzare il portale Microsoft 365 Defender per configurare le cassette postali SecOps nel criterio di recapito avanzato
 
-1. Nel portale Microsoft 365 Defender passare a Posta **elettronica &** criteri di collaborazione & regole criteri di minaccia \>  \>  \> **Sezione** \> **Regole recapito avanzato**.
+1. Nel portale Microsoft 365 Defender, passare a Posta **elettronica &** Criteri di collaborazione \> **& regole** \> **Criteri** di minaccia sezione Regole \>  \> **Recapito avanzato**.
 
 2. Nella pagina **Recapito avanzato** verificare che la scheda Cassetta postale **SecOps** sia selezionata e quindi eseguire una delle operazioni seguenti:
    - Fare ![ clic su Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica**.
@@ -95,7 +95,7 @@ Le voci della cassetta postale SecOps configurate vengono visualizzate nella sch
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Usare il portale Microsoft 365 Defender per configurare simulazioni di phishing di terze parti nel criterio di recapito avanzato
 
-1. Nel portale Microsoft 365 Defender passare a Posta **elettronica &** criteri di collaborazione & regole criteri di minaccia \>  \>  \> **Sezione** \> **Regole recapito avanzato**.
+1. Nel portale Microsoft 365 Defender, passare a Posta **elettronica &** Criteri di collaborazione \> **& regole** \> **Criteri** di minaccia sezione Regole \>  \> **Recapito avanzato**.
 
 2. Nella pagina **Recapito avanzato** selezionare la scheda **Simulazione di phishing** e quindi eseguire una delle operazioni seguenti:
    - Fare ![ clic su Modifica icona ](../../media/m365-cc-sc-edit-icon.png) **Modifica**.

@@ -18,12 +18,12 @@ ms.collection:
 description: Gli amministratori possono imparare a usare l'analizzatore di configurazione per trovare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di protezione standard e rigidi criteri di sicurezza predefiniti di protezione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 01a9b3a2b01a3cfc95a3911f75907cbe0ef9d58f
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878665"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108428"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizzatore della configurazione per i criteri di protezione in EOP e Microsoft Defender per Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "52878665"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-L'analizzatore della configurazione nel portale di Microsoft 365 Defender offre una posizione centrale per trovare e correggere i criteri di sicurezza in cui le impostazioni sono al di sotto delle impostazioni di protezione standard e dei profili di protezione rigorosi nei criteri [di sicurezza preimpostati.](preset-security-policies.md)
+L'analizzatore della configurazione nel portale Microsoft 365 Defender fornisce una posizione centrale per trovare e correggere i criteri di sicurezza in cui le impostazioni sono al di sotto delle impostazioni di protezione standard e del profilo di protezione strict nei criteri [di sicurezza predefiniti.](preset-security-policies.md)
 
 L'analizzatore di configurazione analizza i seguenti tipi di criteri:
 
@@ -50,32 +50,32 @@ L'analizzatore di configurazione analizza i seguenti tipi di criteri:
     - Le stesse [impostazioni di spoofing](set-up-anti-phishing-policies.md#spoof-settings) disponibili nei criteri anti-phishing di EOP.
     - [Impostazioni di rappresentazione](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Soglie di phishing avanzate](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [Criteri collegamenti sicuri](set-up-safe-links-policies.md).
-  - [Criteri allegati sicuri](set-up-safe-attachments-policies.md).
+  - [Cassaforte dei collegamenti .](set-up-safe-links-policies.md)
+  - [Cassaforte allegati](set-up-safe-attachments-policies.md).
 
 I **valori delle** impostazioni dei criteri Standard e **Strict** utilizzati come baseline sono descritti in Impostazioni consigliate per EOP e Microsoft Defender per la Office 365 [sicurezza](recommended-settings-for-eop-and-office365.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il portale Microsoft 365 Defender all'indirizzo <https://security.microsoft.com> . Per passare direttamente alla pagina **dell'analizzatore della** configurazione, utilizzare <https://security.microsoft.com/configurationAnalyzer> .
+- Per aprire il portale di Microsoft 365 Defender, andare alla pagina <https://security.microsoft.com>. Per passare direttamente alla pagina **dell'analizzatore della** configurazione, utilizzare <https://security.microsoft.com/configurationAnalyzer> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni nel portale di Microsoft 365 Defender:
+- È necessario disporre delle autorizzazioni nel portale Microsoft 365 Defender per poter eseguire le procedure descritte in questo articolo:
   - Per utilizzare l'analizzatore **della configurazione** e apportare aggiornamenti ai criteri di sicurezza, è necessario essere membri dei gruppi **di** ruoli Gestione organizzazione o Amministratore **sicurezza.**
   - Per l'accesso in sola lettura all'analizzatore di configurazione, è necessario essere membri dei gruppi di ruoli **Lettore** globale o **Lettore** di sicurezza.
 
-  Per ulteriori informazioni, vedere [Autorizzazioni nel portale Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
+  Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
   > [!NOTE]
   >  
-  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente offre agli utenti  le autorizzazioni necessarie nel portale di Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > - L'aggiunta di utenti al ruolo Azure Active Directory corrispondente offre agli utenti  le autorizzazioni necessarie nel portale Microsoft 365 Defender e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   >
   > - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
-## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Usare l'analizzatore della configurazione nel portale Microsoft 365 Defender
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Usare l'analizzatore della configurazione nel Microsoft 365 Defender portale
 
-Nel portale Microsoft 365 Defender passare alla sezione **Criteri** di collaborazione & di posta elettronica & criteri di minaccia Criteri modello \>  \>  \>  \> .
+Nel portale Microsoft 365 Defender, passare a Criteri di **collaborazione** & e-mail & Regole Criteri minaccia sezione Criteri modello \>  \>  \>  \> **Analizzatore di configurazione**.
 
 La **pagina Analizzatore** configurazione include due schede principali:
 
@@ -93,8 +93,8 @@ Per impostazione predefinita, la colonna Nome **gruppo/impostazione** criteri co
 - **Protezione da posta indesiderata**
 - **Anti-phishing**
 - **Antimalware**
-- **Allegati sicuri** (se l'abbonamento include Microsoft Defender per Office 365)
-- **Collegamenti sicuri** (se l'abbonamento include Microsoft Defender per Office 365)
+- **Cassaforte allegati** (se l'abbonamento include Microsoft Defender per Office 365)
+- **Cassaforte (se** l'abbonamento include Microsoft Defender per Office 365)
 
 Nella visualizzazione predefinita, tutto è compresso. Accanto a ogni criterio, è presente un riepilogo dei risultati del confronto dei criteri (che è possibile modificare) e delle impostazioni nei criteri corrispondenti per i profili di protezione Standard o Strict (che non è possibile modificare). Verranno visualizzate le informazioni seguenti per il profilo di protezione con cui si sta confrontando:
 

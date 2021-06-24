@@ -15,12 +15,12 @@ ms.date: 06/10/2021
 description: Scopri come velocizzare il processo di rilevamento e gestione degli account utente compromessi con funzionalità di indagine e risposta automatizzate in Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: fd1ad6f52114340153f3958441bfb9500db67215
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904141"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108578"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Risolvere gli account utente compromessi con analisi e risposta automatizzate
 
@@ -37,9 +37,7 @@ ms.locfileid: "52904141"
 Il playbook sulla sicurezza degli utenti compromesso consente al team di sicurezza dell'organizzazione di:
 
 - Velocizzare il rilevamento degli account utente compromessi;
-
 - Limitare l'ambito di una violazione quando un account viene compromesso; e
-
 - Rispondere agli utenti compromessi in modo più efficace ed efficiente.
 
 ## <a name="compromised-user-alerts"></a>Avvisi utente compromessi
@@ -67,21 +65,17 @@ Quando un account utente viene compromesso, vengono attivati gli avvisi. In alcu
 
 ### <a name="view-and-investigate-restricted-users"></a>Visualizzare e analizzare gli utenti con restrizioni
 
-Sono disponibili alcune opzioni per passare a un elenco di utenti con restrizioni. Ad esempio, nel Centro sicurezza & conformità, è possibile passare a **Gestione** delle minacce \> **Rivedere** Utenti \> **con restrizioni**. Nella procedura seguente viene descritto lo spostamento tramite il **dashboard** Avvisi, che rappresenta un ottimo modo per visualizzare vari tipi di avvisi che potrebbero essere stati attivati.
+Sono disponibili alcune opzioni per passare a un elenco di utenti con restrizioni. Ad esempio, nel portale Microsoft 365 Defender, è possibile passare a **Posta elettronica & collaborazione** \> **Rivedere** Utenti \> **con restrizioni**. Nella procedura seguente viene descritto lo spostamento tramite il **dashboard** Avvisi, che rappresenta un ottimo modo per visualizzare vari tipi di avvisi che potrebbero essere stati attivati.
 
-1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso.
+1. Aprire il portale Microsoft 365 Defender ( <https://security.microsoft.com> ) e passare a Eventi **imprevisti &** \> **avvisi**. In caso contrario, per passare direttamente alla **pagina Avvisi,** utilizzare <https://security.microsoft.com/alerts> .
 
-2. Nel riquadro di spostamento scegliere **Dashboard** \> **avvisi.**
+2. Nella pagina **Avvisi** filtrare i risultati in base al periodo di tempo e al criterio denominato Utente con restrizioni **per l'invio di posta elettronica.**
 
-3. Nel widget **Altri avvisi** scegliere Utenti **con restrizioni.**
+   ![Pagina Avvisi nel portale di Microsoft 365 Defender filtrata per gli utenti con restrizioni](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
-   ![Widget Altri avvisi](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+3. Se si seleziona la voce facendo  clic sul nome, verrà visualizzata una pagina Utente con restrizioni per l'invio di posta elettronica con ulteriori dettagli da esaminare. Accanto al  pulsante Gestisci avviso, è possibile fare clic su Altre opzioni Icona Altre opzioni e quindi selezionare Visualizza dettagli utente con restrizioni per passare alla pagina Utenti con restrizioni, in cui è possibile rilasciare l'utente ![ con ](../../media/m365-cc-sc-more-actions-icon.png)  [restrizioni.](removing-user-from-restricted-users-portal-after-spam.md)  
 
-   Verrà aperto l'elenco degli utenti con restrizioni.
-
-   ![Utenti con restrizioni in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
-
-4. Selezionare un account utente nell'elenco per visualizzare i dettagli ed eseguire azioni, ad esempio [il rilascio dell'utente con restrizioni.](removing-user-from-restricted-users-portal-after-spam.md)
+   ![Pagina Utente con restrizioni per l'invio di posta elettronica dal Centro avvisi](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
 
 ### <a name="view-details-about-automated-investigations"></a>Visualizzare i dettagli sulle indagini automatizzate
 

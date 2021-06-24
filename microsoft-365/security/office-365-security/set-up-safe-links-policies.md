@@ -18,12 +18,12 @@ ms.collection:
 description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri dei collegamenti Cassaforte e le impostazioni dei collegamenti Cassaforte globali in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 8d42051d2ca4f26758cbe7334d427f3f93178f97
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096769"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108212"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i Cassaforte dei collegamenti in Microsoft Defender per Office 365
 
@@ -173,7 +173,7 @@ Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei c
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Abilitare o disabilitare i criteri Cassaforte collegamenti
 
-1. Nel portale Microsoft 365 Defender, passare a Criteri di **collaborazione** & e-mail & regole Criteri di minaccia \>  \>  \> **sezione** \> **Cassaforte Collegamenti**.
+1. Nel portale Microsoft 365 Defender, passare a Criteri di collaborazione & **e-mail** & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte Collegamenti**.
 
 2. Nella pagina **Cassaforte collegamenti** selezionare un criterio dall'elenco facendo clic sul nome.
 
@@ -198,7 +198,7 @@ Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o
 - Nel portale Microsoft 365 Defender, è possibile modificare la priorità del criterio collegamenti Cassaforte solo dopo aver creato il criterio. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola dei collegamenti sicuri (che può influire sulla priorità delle regole esistenti).
 - Cassaforte I criteri dei collegamenti vengono elaborati nell'ordine in cui vengono visualizzati (il primo criterio ha il **valore Priority** 0). Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
 
-1. Nel portale Microsoft 365 Defender, passare a Criteri di **collaborazione** & e-mail & regole Criteri di minaccia \>  \>  \> **sezione** \> **Cassaforte Collegamenti**.
+1. Nel portale Microsoft 365 Defender, passare a Criteri di collaborazione & **e-mail** & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte Collegamenti**.
 
 2. Nella pagina **Cassaforte collegamenti** selezionare un criterio dall'elenco facendo clic sul nome.
 
@@ -213,7 +213,7 @@ Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Utilizzare il portale Microsoft 365 Defender per rimuovere i criteri Cassaforte collegamenti
 
-1. Nel portale Microsoft 365 Defender, passare a Criteri di **collaborazione** & e-mail & regole Criteri di minaccia \>  \>  \> **sezione** \> **Cassaforte Collegamenti**.
+1. Nel portale Microsoft 365 Defender, passare a Criteri di collaborazione & **e-mail** & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte Collegamenti**.
 
 2. Nella pagina **Cassaforte collegamenti** selezionare un criterio dall'elenco facendo clic sul nome. Nella parte superiore del riquadro a comparsa dei dettagli sui criteri visualizzato fare clic![ sull'icona Altre azioni](../../media/m365-cc-sc-more-actions-icon.png) **Altre azioni** \> ![Icona Elimina criterio](../../media/m365-cc-sc-delete-icon.png) **Elimina criterio**.
 

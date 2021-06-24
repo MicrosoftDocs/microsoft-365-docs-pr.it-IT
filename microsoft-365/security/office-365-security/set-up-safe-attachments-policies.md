@@ -18,12 +18,12 @@ description: Informazioni su come definire i criteri Cassaforte allegati per pro
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: e516a16ff28c762e154fd908312df65ea48699bc
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054329"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108224"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurare i Cassaforte allegati in Microsoft Defender per Office 365
 
@@ -83,7 +83,7 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 
 La creazione di un criterio Cassaforte allegati personalizzati nel portale di Microsoft 365 Defender crea la regola degli allegati sicuri e i criteri allegati sicuri associati contemporaneamente utilizzando lo stesso nome per entrambi.
 
-1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & e-mail & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte allegati**.
 
 2. Nella pagina **Cassaforte allegati** fare clic su Crea ![ icona ](../../media/m365-cc-sc-create-icon.png) **Crea**.
 
@@ -129,13 +129,13 @@ La creazione di un criterio Cassaforte allegati personalizzati nel portale di Mi
 
 6. Nella pagina **Controllo** visualizzata controllare le impostazioni. È possibile selezionare **Modifica** in ogni sezione per modificare le impostazioni all'interno della sezione. Oppure è possibile fare clic su **Indietro** o selezionare la pagina specifica della procedura guidata.
 
-   Al termine, fare clic su **Invia.**
+   Al termine, fare clic su **Salva**.
 
 7. Nel messaggio di conferma visualizzato fare clic su **Fatto**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Utilizzare il portale Microsoft 365 Defender per visualizzare i criteri Cassaforte allegati
 
-1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & e-mail & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte allegati**.
 
 2. Nella pagina **Cassaforte allegati** vengono visualizzate le proprietà seguenti nell'elenco dei criteri:
    - **Nome**
@@ -146,7 +146,7 @@ La creazione di un criterio Cassaforte allegati personalizzati nel portale di Mi
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Utilizzare il portale Microsoft 365 Defender per modificare i criteri Cassaforte allegati
 
-1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & e-mail & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte allegati**.
 
 2. Nella pagina **Cassaforte allegati** selezionare un criterio dall'elenco facendo clic sul nome.
 
@@ -156,7 +156,7 @@ Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei c
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Abilitare o disabilitare i criteri Cassaforte allegati
 
-1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & e-mail & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte allegati**.
 
 2. Nella pagina **Cassaforte allegati** selezionare un criterio dall'elenco facendo clic sul nome.
 
@@ -182,7 +182,7 @@ Cassaforte I criteri allegati vengono visualizzati nell'ordine in cui vengono el
 
 Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o **Riduci priorità** nelle proprietà del criterio. Non è possibile modificare direttamente il valore **Priorità** nel portale di Microsoft 365 Defender. La modifica di priorità di un criterio è utile solo se si hanno più criteri.
 
-1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & e-mail & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte allegati**.
 
 2. Nella pagina **Cassaforte allegati** selezionare un criterio dall'elenco facendo clic sul nome.
 
@@ -197,7 +197,7 @@ Per modificare la priorità di un criterio, fare clic su **Aumenta priorità** o
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Utilizzare il portale Microsoft 365 Defender per rimuovere i criteri Cassaforte allegati
 
-1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**.
+1. Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & e-mail & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte allegati**.
 
 2. Nella pagina **Cassaforte allegati** selezionare un criterio personalizzato nell'elenco facendo clic sul nome del criterio.
 
@@ -439,7 +439,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Remove-Safe
 
 Per verificare che i criteri allegati siano stati creati, modificati o rimossi correttamente, Cassaforte eseguire una delle operazioni seguenti:
 
-- Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & posta elettronica & criteri di minaccia sezione Criteri \>  \>  \>  di \> **Cassaforte Allegati**. Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare altri dettagli, selezionare il criterio dall'elenco facendo clic sul nome e visualizzare i dettagli nel riquadro a comparsa.
+- Nel portale Microsoft 365 Defender, passare **a** Criteri di collaborazione & e-mail & regole Criteri minaccia sezione Criteri \>  \>  \>  \> **Cassaforte allegati**. Verificare l'elenco dei criteri, i **relativi valori status** e i relativi valori **Priority.** Per visualizzare altri dettagli, selezionare il criterio dall'elenco facendo clic sul nome e visualizzare i dettagli nel riquadro a comparsa.
 
 - In Exchange Online PowerShell o Exchange Online Protection PowerShell, sostituire con il nome del criterio o della regola, eseguire il comando seguente e \<Name\> verificare le impostazioni:
 
