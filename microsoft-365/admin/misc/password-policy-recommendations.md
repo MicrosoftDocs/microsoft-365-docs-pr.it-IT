@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Rendere più sicura l'organizzazione da attacchi alle password, bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 6f79116b1188eaab1b843b2e3fa612c4ed01c488
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006926"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096625"
 ---
 # <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
 
@@ -58,7 +58,7 @@ I criteri per l'impostazione di password efficaci rientrano in tre ampie categor
 
 L'obiettivo principale di un sistema di password più sicuro è la diversità delle password. I criteri per le password dovrebbero contenere moltissime password diverse e difficili da indovinare. Ecco alcuni suggerimenti per garantire la massima sicurezza possibile per la propria organizzazione.
   
-- Mantenere il requisito di lunghezza minima di 8 caratteri (una password più lunga non è necessariamente migliore)
+- Mantenere il requisito di lunghezza minima di 8 caratteri
 
 - Non impostare requisiti di composizione dei caratteri, ad esempio \*&amp;(^%$
 
@@ -131,6 +131,8 @@ Con l'autenticazione a più fattori basata sul rischio, quando il sistema rileva
 ## <a name="next-steps"></a>Passaggi successivi
 
 Per saperne di più sulla gestione delle password: ecco alcune letture consigliate.
+
+- [Niente più password](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
 
 - [Indicazioni sulle password Microsoft](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
