@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8ad5ffe2b175a8f7a42b2fad353fcde13a60cfec
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
+ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730523"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53125399"
 ---
-# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Funzionalità di anteprima di Defender
+# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender funzionalità di anteprima
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,15 +37,15 @@ ms.locfileid: "52730523"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Il Microsoft 365 Defender è costantemente aggiornato per includere nuovi miglioramenti e funzionalità.
+Il Microsoft 365 Defender viene costantemente aggiornato per includere nuovi miglioramenti e funzionalità.
 
-Scopri le nuove funzionalità nella versione di Microsoft 365 Defender Preview ed essere tra i primi a provare le funzionalità future attivando l'esperienza di anteprima.
+Informazioni sulle nuove funzionalità nella versione Microsoft 365 Defender anteprima ed essere tra i primi a provare le funzionalità future attivando l'esperienza di anteprima.
 
-Per altre informazioni sulle nuove funzionalità disponibili in genere, vedi Novità [di Microsoft 365 Defender.](whats-new.md)
+Per ulteriori informazioni sulle nuove funzionalità disponibili in genere, vedere [Novità di Microsoft 365 Defender](whats-new.md).
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
-Gli account assegnati ai ruoli Azure Active Directory (Azure AD) seguenti possono attivare Microsoft 365 Defender Preview:
+Gli account assegnati ai ruoli Azure Active Directory (Azure AD) seguenti possono attivare le funzionalità Microsoft 365 Defender Preview:
 
 - Amministratore globale
 - Amministratore della sicurezza
@@ -68,8 +68,9 @@ Se la casella di controllo **Attivare le funzionalità di anteprima** è selezio
 
 Le caratteristiche e i miglioramenti seguenti sono attualmente disponibili in anteprima:
 
+- **[Visualizzare report per tag di minaccia:](threat-analytics.md#view-reports-per-threat-tags)** i tag di minaccia consentono di concentrarsi su categorie di minacce specifiche ed esaminare i report più rilevanti.
 - **[API di streaming:](../defender-endpoint/raw-data-export.md)** Microsoft 365 Defender supporta lo streaming di tutti gli eventi disponibili tramite Advanced Hunting a un hub eventi e/o a un account di archiviazione di Azure.
-- **[Microsoft 365 Defender API:](api-overview.md)** le API di Microsoft 365 Defender di primo livello ti consentiranno di automatizzare i flussi di lavoro in base agli eventi imprevisti condivisi e alle tabelle di ricerca avanzate. 
+- **[Microsoft 365 Defender API:](api-overview.md)** le API di Microsoft 365 Defender di primo livello consentono di automatizzare i flussi di lavoro in base alle tabelle di ricerca avanzate e degli eventi imprevisti condivisi. 
 - **[Eseguire azioni nella ricerca avanzata-](advanced-hunting-take-action.md)** Contiene rapidamente minacce o indirizzi di asset compromessi che si trovano nella [ricerca avanzata.](advanced-hunting-overview.md)
 - **[Informazioni di riferimento sullo schema nel](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** portale- Ottenere informazioni sulle tabelle dello schema di ricerca avanzata direttamente nel Centro sicurezza. Oltre alle descrizioni di tabelle e colonne, questo riferimento include tipi di eventi supportati `ActionType` (valori) e query di esempio.
 - **[Funzione DeviceFromIP():](advanced-hunting-devicefromip-function.md)** consente di ottenere informazioni sui dispositivi a cui è stato assegnato uno o più indirizzi IP specifici in un determinato intervallo di tempo.
