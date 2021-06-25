@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come amministrare la visibilità degli argomenti in Microsoft Viva Topics.
-ms.openlocfilehash: cd6a712687a63c3d131ee678c6c408f516c7b529
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 07679b2de668ba5e0c9fdf206310233ce7af84a4
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107684"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137752"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Gestire la visibilità degli argomenti in Microsoft Viva Topics
 
-È possibile gestire il set di utenti che possono visualizzare le evidenziazioni degli argomenti, le schede argomento e il Centro argomenti nell'Microsoft 365 [di amministrazione.](https://admin.microsoft.com) Per eseguire queste attività, è SharePoint amministratore globale o amministratore globale.
+È possibile gestire chi può visualizzare le evidenziazioni degli argomenti, le schede argomento e il Centro argomenti nella [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com). Per eseguire queste attività, è necessario essere SharePoint amministratore globale o amministratore dei gruppi.
 
 ## <a name="to-access-topics-management-settings"></a>Per accedere alle impostazioni di gestione degli argomenti:
 
-1. Nell'Microsoft 365 di amministrazione fare clic su **Impostazioni** e quindi **su Impostazioni organizzazione.**
+1. Nel interfaccia di amministrazione di Microsoft 365, fare clic su **Impostazioni**, quindi **su Impostazioni organizzazione**.
 2. Nella scheda **Servizi** fare clic su **Esperienze argomento.**
 
     ![Connessione persone alla conoscenza](../media/admin-org-knowledge-options-completed.png) 

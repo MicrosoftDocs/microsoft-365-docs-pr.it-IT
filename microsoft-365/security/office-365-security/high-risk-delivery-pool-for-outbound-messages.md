@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni su come vengono utilizzati i pool di recapito per proteggere la reputazione dei server di posta elettronica nei Microsoft 365 datacenter.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599912"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137719"
 ---
 # <a name="outbound-delivery-pools"></a>Pool di recapito in uscita
 
@@ -61,3 +61,24 @@ Le possibili cause di un aumento dei dati di mancato recapito includono:
 - Un server di posta elettronica non autorizzato.
 
 Tutti questi problemi possono comportare un aumento repentino del numero di NNDR elaborati dal servizio. Molte volte, questi nomi di mancato recapito sembrano essere posta indesiderata per altri server e servizi di posta elettronica (noto anche come _[backscatter).](backscatter-messages-and-eop.md)_
+
+
+### <a name="relay-pool"></a>Pool di inoltro
+
+I messaggi inoltrati o inoltrati tramite Microsoft 365 in determinati scenari verranno inviati utilizzando uno speciale pool di inoltro, perché la destinazione non deve considerare Microsoft 365 come mittente effettivo. È importante isolare questo traffico di posta elettronica, perché esistono scenari legittimi e non validi per l'inoltro automatico o l'inoltro della posta elettronica Microsoft 365. Analogamente al pool di recapito ad alto rischio, per l'inoltro della posta viene utilizzato un pool di indirizzi IP separato. Questo pool di indirizzi non viene pubblicato perché può cambiare spesso e non fa parte del record SPF pubblicato per Microsoft 365.
+
+Microsoft 365 necessario verificare che il mittente originale sia legittimo in modo da poter recapitare con sicurezza il messaggio inoltrato.
+
+Il messaggio inoltrato/inoltrato deve soddisfare uno dei criteri seguenti per evitare di utilizzare il pool di inoltro:
+
+- Il mittente in uscita si trova in [un dominio accettato.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- SPF passa quando il messaggio viene inviato Microsoft 365.
+- DKIM nel dominio del mittente passa quando il messaggio Microsoft 365.
+ 
+È possibile indicare che un messaggio è stato inviato tramite il pool di inoltro esaminando l'IP del server in uscita (il pool di inoltro sarà compreso nell'intervallo 40.95.0.0/16) o osservando il nome del server in uscita (avrà "rly" nel nome).
+
+Nei casi in cui è possibile autenticare il mittente, viene utilizzato lo schema di riscrittura del mittente (SRS) per aiutare il sistema di posta elettronica del destinatario a sapere che il messaggio inoltrato è di origine attendibile. Ulteriori informazioni su come funziona e su cosa è possibile fare per assicurarsi che il dominio di invio passi l'autenticazione in [Sender Rewriting Scheme (SRS) in Office 365](/office365/troubleshoot/antispam/sender-rewriting-scheme).
+
+Per il funzionamento di DKIM, assicurati di abilitare DKIM per il dominio di invio. Ad esempio, fabrikam.com fa parte di contoso.com ed è definito nei domini accettati dell'organizzazione. Se il mittente del messaggio sender@fabrikam.com, DKIM deve essere abilitato per fabrikam.com. per informazioni su come abilitare l'utilizzo di DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato, vedere Use [DKIM to validate outbound email sent from your custom domain.](use-dkim-to-validate-outbound-email.md)
+
+Per aggiungere un dominio personalizzato, seguire la procedura descritta in [Aggiungere un dominio a Microsoft 365](../../admin/setup/add-domain.md).
