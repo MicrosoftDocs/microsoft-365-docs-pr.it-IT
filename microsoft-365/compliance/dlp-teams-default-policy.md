@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni sui criteri di prevenzione della perdita di dati predefiniti in Microsoft Teams
-ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c6b7413fdd4017fe1211e804c00a2e9c0684468d
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114144"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149119"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Informazioni sul criterio predefinito per la prevenzione della perdita di dati in Microsoft Teams (anteprima)
 
-[Le funzionalità di prevenzione della](dlp-learn-about-dlp.md) perdita dei dati sono state estese Microsoft Teams messaggi di chat e canali, inclusi i messaggi del canale privato. Come parte di questa versione, è stato creato un criterio DLP predefinito per i clienti per la prima volta al Centro conformità.
+[Le funzionalità di prevenzione della](dlp-learn-about-dlp.md) perdita dei dati sono state estese Microsoft Teams messaggi di chat e canali, inclusi i messaggi del canale privato. Come parte di questa versione, è stato creato un criterio DLP predefinito per Microsoft Teams per i clienti al Centro conformità per la prima volta.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -41,7 +41,7 @@ Qualsiasi tenant concesso in licenza con una o più delle licenze seguenti e con
 
 ## <a name="what-does-the-default-policy-do"></a>Cosa fa il criterio predefinito?
 
-Il criterio DLP predefinito tiene traccia di tutti i numeri di carta di credito condivisi internamente ed esternamente all'organizzazione. Questo criterio è in base all'impostazione predefinita per tutti gli utenti del tenant. Non genera suggerimenti per i criteri per gli utenti finali, ma genera un evento Alert e inoltre attiva un messaggio di posta elettronica di bassa gravità per l'amministratore (aggiunto nel criterio). L'amministratore può visualizzare le attività e modificare i dettagli dei criteri accedendo al Centro conformità.
+Il criterio DLP predefinito per Teams tiene traccia di tutti i numeri di carta di credito condivisi internamente ed esternamente all'organizzazione. Questo criterio è in base all'impostazione predefinita per tutti gli utenti del tenant. Non genera suggerimenti per i criteri per gli utenti finali, ma genera un evento Alert e inoltre attiva un messaggio di posta elettronica di bassa gravità per l'amministratore (aggiunto nel criterio). L'amministratore può visualizzare le attività e modificare i dettagli dei criteri accedendo al Centro conformità.
 
 Gli amministratori possono visualizzare questo criterio nel [Centro](https://compliance.microsoft.com/compliancesettings) conformità > criteri di prevenzione della perdita di dati.
 

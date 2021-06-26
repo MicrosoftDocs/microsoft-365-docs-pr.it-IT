@@ -2,8 +2,8 @@
 title: Assegnare e completare le azioni di miglioramento in Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come eseguire l'implementazione e il test sui controlli in Microsoft Compliance Manager. Assegnare rapporti di lavoro, archiviare documentazione ed esportare.
-ms.openlocfilehash: e761d8d4410f1c52bb79d4a225eec407f1fd6a6e
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: f2674e24ed38362c5c7563a574e0dba9c81f2584
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570385"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149035"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Assegnare e completare le azioni di miglioramento in Compliance Manager
 

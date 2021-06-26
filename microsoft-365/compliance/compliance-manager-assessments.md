@@ -2,8 +2,8 @@
 title: Creare e gestire valutazioni in Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,27 +14,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare valutazioni in Microsoft Compliance Manager per soddisfare i requisiti di normative e certificazioni importanti per l'organizzazione.
-ms.openlocfilehash: b8051a036f2ffda2f3a2840880318466a2ec71af
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4530f8544834c672b3ae1ebb70625ffe8f2ae4ae
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500641"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148939"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Creare e gestire valutazioni in Compliance Manager
 
 **In questo articolo:** Informazioni su come personalizzare Compliance Manager per l'organizzazione creando e gestendo **valutazioni.** In questo articolo viene illustrato come creare valutazioni, come organizzarle in **gruppi,** utilizzare i **controlli,** accettare aggiornamenti ed esportare report di  **valutazione.**
 
-> [!IMPORTANT]
-> Le valutazioni disponibili per l'organizzazione dipendono dal contratto di licenza. [Esaminare i dettagli](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
-
 ## <a name="introduction-to-assessments"></a>Introduzione alle valutazioni
 
-Compliance Manager consente di gestire la conformità alle valutazioni per le normative e le certificazioni applicabili all'organizzazione. Le valutazioni sono raggruppamenti di controlli di uno specifico regolamento, standard o criterio. Compliance Manager semplifica l'avvio del monitoraggio della conformità fornendo valutazioni predefinite che coprono una vasta gamma di normative e certificazioni del settore e regionali.
+Compliance Manager consente di creare valutazioni che valutano la conformità con le normative del settore e regionali applicabili all'organizzazione. Le valutazioni si basano sul framework dei modelli di valutazione, che contengono i controlli necessari, le azioni di miglioramento e le azioni Microsoft per completare la valutazione. L'impostazione delle valutazioni più rilevanti per l'organizzazione consente di implementare criteri e procedure operative per limitare i rischi di conformità.
 
-Ogni valutazione viene creata da un modello [di valutazione.](compliance-manager-templates.md) I modelli fungono da framework contenente i controlli, le azioni di miglioramento e le azioni Microsoft necessarie per completare la valutazione. L'impostazione delle valutazioni più rilevanti per l'organizzazione consente di implementare criteri e procedure operative per limitare i rischi di conformità.
+Tutte le valutazioni sono elencate nella scheda valutazioni di Compliance Manager. Ulteriori informazioni su [come filtrare la visualizzazione delle valutazioni e interpretare gli stati di stato.](compliance-manager-setup.md#assessments-page)
 
-Tutte le valutazioni sono elencate nella pagina delle valutazioni. Ulteriori informazioni su [come filtrare la visualizzazione delle valutazioni e interpretare gli stati di stato.](compliance-manager-setup.md#assessments-page)
+> [!IMPORTANT]
+> I modelli disponibili per l'organizzazione per la creazione di valutazioni dipendono dal contratto di licenza. [Esaminare i dettagli delle licenze](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="data-protection-baseline-default-assessment"></a>Valutazione predefinita di base per la protezione dei dati
 
@@ -44,36 +42,11 @@ Questa valutazione viene utilizzata per calcolare il punteggio di conformità in
 
 Compliance Manager diventa più utile durante la creazione e la gestione delle proprie valutazioni per soddisfare le esigenze specifiche dell'organizzazione.
 
-## <a name="assessment-creation-overview"></a>Panoramica della creazione della valutazione
-
-Esistono tre modi per configurare le valutazioni:
-
-1. [Utilizzare una valutazione precompisa](#use-a-pre-built-assessment).
-2. [Estendere una valutazione precompisa in base alle proprie esigenze.](#extend-a-pre-built-assessment)
-3. [Creare una valutazione personalizzata.](#create-your-own-custom-assessment)
-
-> [!NOTE]
-> Solo gli utenti che hanno un ruolo di amministratore globale, di amministrazione di Compliance Manager o di assessore di Compliance Manager possono creare e modificare le valutazioni. Ulteriori informazioni sui [ruoli e sulle autorizzazioni](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
-
-**Usare una valutazione precompisa**
-
-Avvia il percorso di conformità scegliendo una valutazione già impostata da Compliance Manager. Forniamo un'ampia [](compliance-manager-templates.md) selezione di modelli per normative e certificazioni che si allineano a settori, aree geografiche e standard comuni di protezione dei dati, come GDPR e ISO 27001. I modelli contengono i controlli e le azioni di miglioramento per aiutarti a soddisfare i requisiti di una determinata certificazione. Ti verrà chiesto di scegliere un modello quando inizi a [creare una valutazione.](#use-a-pre-built-assessment)
-
-**Estendere una valutazione precompisa in base alle proprie esigenze**
-
-È possibile modificare una valutazione di Compliance Manager, un processo che viene detto "estensione", aggiungendo controlli e azioni personalizzati in base alle esigenze dell'organizzazione. Ad esempio, se in genere è necessario conformarsi a HIPAA ma richiedono ulteriori controlli di protezione dei dati o di sicurezza, è possibile estendere il modello HIPAA aggiungendo i propri controlli. Vedere le istruzioni per [l'estensione di una valutazione precompisa.](#extend-a-pre-built-assessment)
-
-**Creare una valutazione personalizzata**
-
-È possibile creare la propria valutazione interamente da zero per tenere traccia precisamente delle esigenze dell'organizzazione. Per creare una valutazione personale, è necessario innanzitutto creare un modello personalizzato per la valutazione in Compliance Manager. Vedi le istruzioni per [la creazione di una valutazione personalizzata.](#create-your-own-custom-assessment)
-
 ## <a name="understand-groups-before-creating-assessments"></a>Comprendere i gruppi prima di creare valutazioni
 
-Prima di creare o modificare le valutazioni, è importante comprendere il funzionamento dei gruppi. Quando si crea una valutazione, è necessario assegnarla a un gruppo durante il processo. Ecco perché è consigliabile pianificare una strategia di raggruppamento per le valutazioni prima di creare le valutazioni.
+Quando crei una valutazione, dovrai assegnarla a un gruppo. I gruppi sono contenitori che consentono di organizzare le valutazioni in modo logico, ad esempio in base all'anno o alla regolamentazione, o in base alle divisioni o alle aree geografiche dell'organizzazione. Per questo motivo è consigliabile pianificare una strategia di raggruppamento prima di creare valutazioni.
 
-### <a name="what-are-groups"></a>Che cos'è un gruppo
-
-I gruppi sono contenitori che consentono di organizzare le valutazioni. È possibile raggruppare le valutazioni in modo logico, ad esempio in base all'anno o al regolamento o in base alle divisioni o alle aree geografiche dell'organizzazione. Di seguito sono riportati esempi di due gruppi e delle relative valutazioni sottostanti:
+Di seguito sono riportati esempi di due gruppi e delle relative valutazioni sottostanti:
 
 - **Valutazione FFIEC IS 2020**
   - FFIEC IS
@@ -81,136 +54,57 @@ I gruppi sono contenitori che consentono di organizzare le valutazioni. È possi
   - ISO 27001:2013
   - ISO 27018:2014
 
-Quando due valutazioni diverse nello stesso gruppo condividono azioni di miglioramento gestite dall'utente, tutti gli aggiornamenti apportati ai dettagli o allo stato di implementazione di un'azione verranno sincronizzati automaticamente con la stessa azione in qualsiasi altra valutazione del gruppo. Questa sincronizzazione consente di implementare un'unica azione di miglioramento e soddisfare diversi requisiti in più normative.
+Quando due valutazioni diverse nello stesso gruppo condividono azioni di miglioramento gestite, tutti gli aggiornamenti apportati ai dettagli o allo stato di implementazione di un'azione verranno sincronizzati automaticamente in tutto il gruppo. Questa sincronizzazione consente di implementare un'unica azione di miglioramento e soddisfare diversi requisiti contemporaneamente.
 
-### <a name="how-to-create-a-group"></a>Come creare un gruppo
+### <a name="create-a-group"></a>Creare un gruppo
 
-Si crea un gruppo durante il processo di [creazione di una nuova valutazione.](#to-create-an-assessment)
-
-I gruppi non possono essere creati come entità autonome. Un gruppo deve contenere almeno una valutazione. Per creare un gruppo, è innanzitutto necessario creare una valutazione da inserire nel gruppo.
+È possibile creare un gruppo durante la creazione di una nuova valutazione. I gruppi non possono essere creati come entità autonome.
 
 ### <a name="what-to-know-when-working-with-groups"></a>Cosa sapere quando si lavora con i gruppi
 
+- Un gruppo deve contenere almeno una valutazione.
 - I nomi dei gruppi devono essere univoci all'interno dell'organizzazione.
 - I gruppi non dispongono di proprietà di sicurezza. Tutte le autorizzazioni sono associate alle valutazioni.
 - Dopo aver aggiunto una valutazione a un gruppo, il raggruppamento non può essere modificato.
-- I controlli di valutazione correlati in valutazioni diverse all'interno dello stesso gruppo vengono aggiornati automaticamente al termine.
 - Se si aggiunge una nuova valutazione a un gruppo esistente, le informazioni comuni delle valutazioni in tale gruppo vengono copiate nella nuova valutazione.
+- I controlli di valutazione correlati in valutazioni diverse all'interno dello stesso gruppo vengono aggiornati automaticamente al termine.
+- Quando viene apportata una modifica a un miglioramento visualizzato in più gruppi, tale modifica viene riflessa in tutte le istanze di tale azione di miglioramento.
 - I gruppi possono contenere valutazioni per la stessa certificazione o regolamento, ma ogni gruppo può contenere solo una valutazione per una coppia di certificazione di prodotto specifica. Ad esempio, un gruppo non può contenere due valutazioni per Office 365 e NIST CSF. Un gruppo può contenere più valutazioni per lo stesso prodotto solo se la certificazione o il regolamento corrispondente per ognuno di essi è diverso.
 - L'eliminazione di una valutazione interrompe la relazione tra tale valutazione e il gruppo.
-- I gruppi non possono essere eliminati.
-- Quando viene apportata una modifica a un miglioramento visualizzato in più gruppi, tale modifica viene riflessa in tutte le istanze di tale azione di miglioramento.
+- I gruppi non possono essere eliminati manualmente.
 
-## <a name="use-a-pre-built-assessment"></a>Usare una valutazione precompisa
+## <a name="create-assessments"></a>Creare valutazioni
 
-Esistono due punti di partenza per creare una valutazione da un modello di Compliance Manager.
+> [!NOTE]
+> Solo gli utenti che hanno un ruolo di amministratore globale, di amministrazione di Compliance Manager o di assessore di Compliance Manager possono creare e modificare le valutazioni. Ulteriori informazioni sui [ruoli e sulle autorizzazioni](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-È possibile iniziare il processo dalla pagina delle valutazioni selezionando il **pulsante Aggiungi** valutazione e quindi utilizzando la procedura guidata di creazione della valutazione. Di seguito sono riportati i passaggi per questo processo.
+Per iniziare a creare valutazioni, eseguire la procedura seguente.
 
-Puoi anche iniziare dalla pagina dei modelli di valutazione trovando il modello desiderato e selezionandolo nell'elenco per arrivare alla relativa pagina dei dettagli. Nella pagina dei dettagli del modello selezionare **Crea valutazione.** Verrà quindi immessa la procedura guidata con il modello già selezionato.
+1. Conoscere il gruppo a cui assegnare la valutazione o prepararsi a crearne uno nuovo per questa valutazione.
 
-### <a name="to-create-an-assessment"></a>Per creare una valutazione
+2. Aprire la procedura guidata di valutazione. È possibile accedere a questo riquadro a comparsa da una delle due posizioni seguenti:
+    - Vai alla pagina **delle valutazioni** in Compliance Manager e seleziona **Aggiungi valutazione**; o
+    - Individuare il modello che si desidera utilizzare nella scheda modelli **di** valutazione, visualizzarne i dettagli e selezionare **Crea valutazione.** Verrà popolato automaticamente il campo di selezione del modello della procedura guidata.
 
-1. Conoscere il gruppo a cui assegnare la valutazione o prepararsi a crearne uno nuovo per questa valutazione. [Ulteriori informazioni sui gruppi](#understand-groups-before-creating-assessments).  
+3. **Selezionare un modello:** se non è già stato scelto un modello nel passaggio 2, scegliere un modello da utilizzare come base per la valutazione. Vedrai l'elenco dei modelli suddivisi in categorie incluse e premium (vedi [Tipi di modelli](compliance-manager-templates.md#template-availability-and-licensing) per ulteriori informazioni). Seleziona il pulsante di opzione accanto al modello scelto, quindi seleziona **Avanti.**
 
-2. Vai alla pagina **delle valutazioni** in Compliance Manager e seleziona **Aggiungi valutazione.** Una procedura guidata di valutazione verrà visualizzata in un riquadro a comparsa di grandi dimensioni.
-
-3. **Selezionare un modello:** scegliere un modello da utilizzare come base per la valutazione. Vedrai l'elenco dei modelli suddivisi in categorie incluse e premium (vedi [Tipi di modelli](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) per ulteriori informazioni). Seleziona il pulsante di opzione accanto al modello scelto, quindi seleziona **Avanti.**
-
-4. **Nome e gruppo:** Immettere un nome per la valutazione nel **campo Nome valutazione.** I nomi di valutazione devono essere univoci all'interno dei gruppi. Se il nome della valutazione corrisponde al nome di un'altra valutazione in un determinato gruppo, verrà visualizzato un errore che richiede di creare un nome diverso.
-
-5. Assegnare la valutazione a un gruppo. È possibile:
-    - Selezionare **Usa gruppo esistente** per assegnarlo a un gruppo già creato. o
-    - Selezionare **Crea nuovo gruppo** per creare un nuovo gruppo e assegnarle questa valutazione:
-        - Determinare un nome per il gruppo e immetterlo nel campo sotto il pulsante di opzione.
-        - È possibile **copiare dati da un gruppo esistente,** ad esempio dettagli e documenti di implementazione e test, selezionando le caselle appropriate.
+4. **Nome e gruppo:** Impostare queste proprietà per identificare la valutazione e assegnarla a un gruppo.
+    - **Nome**: immettere un nome per la valutazione nel **campo Nome valutazione.** I nomi di valutazione devono essere univoci all'interno dei gruppi. Se il nome della valutazione corrisponde al nome di un'altra valutazione in un determinato gruppo, verrà visualizzato un errore che richiede di creare un nome diverso.
+    - **Gruppo**: assegnare la valutazione a un gruppo. È possibile:
+        - Selezionare **Usa gruppo esistente** per assegnarlo a un gruppo già creato. o
+        - Selezionare **Crea nuovo gruppo** per creare un nuovo gruppo e assegnarle questa valutazione:
+            - Determinare un nome per il gruppo e immetterlo nel campo sotto il pulsante di opzione.
+            - È possibile **copiare dati da un gruppo esistente,** ad esempio dettagli e documenti di implementazione e test, selezionando le caselle appropriate.
 
     Al termine, selezionare **Avanti**.
 
-6. **Revisione e fine:** L'ultima schermata della procedura guidata mostra il modello, il nome e il gruppo scelti per la valutazione. È possibile modificare una qualsiasi di queste impostazioni dai collegamenti sullo schermo, riportandoti ai passaggi pertinenti della procedura guidata. Quando si è pronti, selezionare **Crea valutazione**.
+5. **Revisione e fine:** L'ultima schermata della procedura guidata mostra il modello, il nome e il gruppo scelti per la valutazione. È possibile modificare una qualsiasi di queste impostazioni dai collegamenti sullo schermo, riportandoti ai passaggi pertinenti della procedura guidata. Quando si è pronti, selezionare **Crea valutazione**.
 
-7. La schermata successiva conferma che la nuova valutazione è stata creata correttamente. Seleziona **Fine** per chiudere la procedura guidata e la pagina dei dettagli della nuova valutazione verrà visualizzata sullo schermo.
+6. La schermata successiva conferma che la nuova valutazione è stata creata correttamente. Seleziona **Fine** per chiudere la procedura guidata e la pagina dei dettagli della nuova valutazione verrà visualizzata sullo schermo.
 
 Se viene visualizzata una **schermata Valutazione non** riuscita dopo aver selezionato **Crea** valutazione, selezionare **Riprova** per creare di nuovo la valutazione.
 
 È possibile modificare il nome della valutazione dopo  la creazione selezionando il pulsante Modifica nome [nell'angolo](#monitor-assessment-progress-and-controls)superiore destro della pagina dei dettagli della valutazione.
-
-## <a name="extend-a-pre-built-assessment"></a>Estendere una valutazione precompisa
-
-Puoi modificare una valutazione precompisa aggiungendo controlli personalizzati e azioni di miglioramento al modello della valutazione. Questo processo è denominato "estensione di un modello Microsoft" in Compliance Manager. Quando estendi il modello di una valutazione, riceverà gli aggiornamenti rilasciati da Microsoft, che potrebbero verificarsi quando vengono apportate modifiche al regolamento o al prodotto correlato (vedere [Accepting updates to assessments](#accepting-updates-to-assessments)).
-
-Questo processo verrà completato a partire dalla pagina dei modelli **di** valutazione anziché dalla **pagina delle valutazioni.**
-
-**Prima di iniziare**
-
-Per prepararsi a questo processo, dovrai prima assemblare un foglio di calcolo Excel formato speciale per importare i dati del modello necessari. Esistono requisiti speciali per i [file Excel formattati](compliance-manager-templates.md#formatting-your-template-data-with-excel) utilizzati nel processo di estensione. Vedere questi punti aggiuntivi per evitare errori nel processo di importazione:
-
-- Il foglio di calcolo deve contenere solo le azioni e i controlli che si desidera aggiungere alla valutazione. 
-- Il foglio di calcolo non può contenere controlli o azioni già esistenti nella valutazione che si desidera modificare.
-- Prendi in considerazione l'inclusione di "estensione" nel titolo del modello, ad esempio "GDPR – [nome della tua società] estensione." Ciò semplifica l'identificazione nell'elenco  nella pagina dei modelli di valutazione in modo diverso dal modello standard fornito da Microsoft o da un modello personalizzato con un nome simile.
-
-Dopo aver formattato il foglio di calcolo, eseguire la procedura seguente.
-
-**Passaggi per l'estensione di un modello di Compliance Manager**
-
-1. Vai alla pagina **Modelli di** valutazione e seleziona Crea **nuovo modello.** Verrà aperta una procedura guidata per la creazione di modelli.
-
-2. Scegliere il tipo di modello che si desidera creare. In questo caso, selezionare **Estendi un modello Microsoft**, **quindi Selezionare il modello Microsoft**.
-
-3. Sul lato destro dello schermo viene visualizzato un riquadro a comparsa per la selezione del modello, che mostra un elenco di tutti i modelli e il relativo stato attivo o inattivo. Il **contatore dei** modelli attivati mostra quanti modelli sono attualmente in uso al di fuori del numero totale disponibile per l'utilizzo. Se si è oltre il limite, verrà visualizzato un avviso sulla barra dei messaggi. Per [ulteriori informazioni, vedere](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) Tipi di modello.
-
-4. Sul lato destro dello schermo viene visualizzato un riquadro a comparsa di selezione del modello. Usare **la** ricerca per applicare filtri per l'individuazione del modello desiderato
-
-5. Dopo aver individuato il modello, seleziona il pulsante di opzione a sinistra del nome, quindi seleziona **Salva**.
-
-6. Nella schermata successiva viene visualizzato il modello selezionato. Se corretto, selezionare **Avanti**. Se non è corretto, scegliere **Seleziona un modello diverso da** scegliere di nuovo.
-
-7. Nella schermata **Upload file** selezionare  Sfoglia per trovare e caricare il file Excel contenente tutti i dati del modello necessari.
-
-8. Se non si verificano problemi con il file, nella schermata successiva viene visualizzato il nome del file caricato. Selezionare **Avanti** per continuare (se è necessario modificare il file, selezionare Upload **un file diverso).**
-
-    - Se si verifica un problema con il file, nella parte superiore viene visualizzato un messaggio di errore che spiega il problema. Dovrai correggere e ricaricare il file. Gli errori si verificano se il foglio di calcolo è formattato in modo non corretto o se sono presenti informazioni non valide in alcuni campi.
- 
-9. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando si è pronti per l'approvazione, selezionare **Avanti**. Se è necessario apportare modifiche, **selezionare Upload un file diverso.**
-
-10. L'ultima schermata conferma la creazione di un nuovo modello. Selezionare **Fine** per uscire dalla procedura guidata.
-
-11. Arriverai alla pagina dei dettagli del nuovo modello. Da qui è possibile creare la valutazione selezionando **Crea valutazione**. Per indicazioni, iniziare dal passaggio #4 nelle istruzioni [per la creazione della valutazione sopra riportate.](#to-create-an-assessment)
-
-## <a name="create-your-own-custom-assessment"></a>Creare una valutazione personalizzata
-
-La creazione di una valutazione personalizzata in Compliance Manager richiede la creazione di un modello personalizzato. Per creare un modello personalizzato, dovrai prima assemblare un foglio di calcolo Excel formato per importare i dati del modello necessari. Aiuta anche a decidere in anticipo a quale gruppo assegnare la valutazione al momento della creazione (ulteriori informazioni sui [gruppi).](#what-are-groups)
-
-**Segui i passaggi seguenti per creare la valutazione personalizzata:**
-
-1. **Formattare il Excel file.** Per iniziare, formattare i dati del modello in Excel foglio di calcolo usando [queste istruzioni.](compliance-manager-templates.md#formatting-your-template-data-with-excel)
-
-2. **Creare il modello** seguendo [queste istruzioni.](compliance-manager-templates.md#create-a-new-template)
-
-3. **Creare la valutazione** dal modello. Per iniziare, aprire la pagina dei dettagli del modello e  selezionare **Crea** valutazione oppure passare alla pagina delle valutazioni e **selezionare Crea valutazione.**
-
-4. Una procedura guidata di creazione della valutazione verrà visualizzata in un riquadro a comparsa di grandi dimensioni. Da qui puoi seguire le indicazioni a partire dal passaggio #3 delle istruzioni per la creazione della [valutazione,](#to-create-an-assessment)usando il nuovo modello personalizzato per la valutazione.
-
-## <a name="delete-an-assessment"></a>Eliminare una valutazione
-
-L'eliminazione di una valutazione la rimuove dall'elenco nella pagina delle valutazioni. Tenere presente questi punti importanti sull'eliminazione delle valutazioni:
-
-- **L'eliminazione di una valutazione è permanente. non è possibile ottenerlo.** Se si desidera utilizzare di nuovo la stessa valutazione, sarà necessario crearla di nuovo.
-- Se le azioni di miglioramento nella valutazione non vengono visualizzate in altre valutazioni, verranno eliminate quando la valutazione viene eliminata.
-- È [consigliabile esportare un report](#export-an-assessment-report) della valutazione prima di eliminarlo definitivamente.
-
-Per eliminare una valutazione, eseguire la procedura seguente:
-
-1. Nella pagina **delle valutazioni** seleziona la valutazione che vuoi eliminare per aprire la pagina dei dettagli della valutazione.
-
-2. Seleziona **Elimina valutazione** nell'angolo superiore destro dello schermo.
-
-3. Verrà visualizzata una finestra in cui viene chiesto di confermare l'eliminazione definitiva della valutazione. Selezionare **Elimina valutazione** per chiudere la finestra. Si otterrà una finestra di conferma che la valutazione è stata eliminata da Compliance Manager.
-
-Se si elimina l'unica valutazione in un gruppo, anche tale gruppo viene eliminato da Compliance Manager.
-
-> [!NOTE]
-> Non è possibile eliminare tutte le valutazioni. Le organizzazioni necessitano di almeno una valutazione per il corretto funzionamento di Compliance Manager. Se la valutazione che si desidera eliminare è l'unica, aggiungere un'altra valutazione prima di eliminare l'altra valutazione.
 
 ## <a name="monitor-assessment-progress-and-controls"></a>Monitorare l'avanzamento della valutazione e i controlli
 
@@ -258,7 +152,7 @@ Nella scheda Azioni Microsoft sono elencate tutte le azioni della valutazione ge
 
 Altre informazioni su [come vengono monitorati e](compliance-score-calculation.md) segnati i controlli e le azioni di miglioramento.
 
-## <a name="accepting-updates-to-assessments"></a>Accettazione degli aggiornamenti alle valutazioni
+## <a name="accept-updates-to-assessments"></a>Accettare aggiornamenti per le valutazioni
 
 Quando è disponibile un aggiornamento per una valutazione, vedrai una notifica e avrai la possibilità di accettare l'aggiornamento o rimandarlo in un secondo momento.
 
@@ -310,3 +204,24 @@ Se si sta completando una valutazione, è possibile assicurarsi di aver completa
 È possibile esportare una valutazione in un file Excel per le parti interessate alla conformità nell'organizzazione o per revisori esterni e autorità di regolamentazione. Nella pagina dei dettagli della valutazione seleziona il pulsante Genera **report** nella parte superiore della pagina, che crea un file Excel che puoi salvare e condividere.
 
 Il report è uno snapshot della valutazione alla data e all'ora dell'esportazione. Contiene i dettagli per i controlli gestiti dall'utente e da Microsoft, inclusi lo stato dell'implementazione, la data del test e i risultati dei test.
+
+## <a name="delete-an-assessment"></a>Eliminare una valutazione
+
+L'eliminazione di una valutazione la rimuove dall'elenco nella pagina delle valutazioni. Tenere presente questi punti importanti sull'eliminazione delle valutazioni:
+
+- **L'eliminazione di una valutazione è permanente. non è possibile ottenerlo.** Se si desidera utilizzare di nuovo la stessa valutazione, sarà necessario crearla di nuovo.
+- Se le azioni di miglioramento nella valutazione non vengono visualizzate in altre valutazioni, verranno eliminate quando la valutazione viene eliminata.
+- È [consigliabile esportare un report](#export-an-assessment-report) della valutazione prima di eliminarlo definitivamente.
+
+Per eliminare una valutazione, eseguire la procedura seguente:
+
+1. Nella pagina **delle valutazioni** seleziona la valutazione che vuoi eliminare per aprire la pagina dei dettagli della valutazione.
+
+2. Seleziona **Elimina valutazione** nell'angolo superiore destro dello schermo.
+
+3. Verrà visualizzata una finestra in cui viene chiesto di confermare l'eliminazione definitiva della valutazione. Selezionare **Elimina valutazione** per chiudere la finestra. Si otterrà una finestra di conferma che la valutazione è stata eliminata da Compliance Manager.
+
+Se si elimina l'unica valutazione in un gruppo, anche tale gruppo viene eliminato da Compliance Manager.
+
+> [!NOTE]
+> Non è possibile eliminare tutte le valutazioni. Le organizzazioni necessitano di almeno una valutazione per il corretto funzionamento di Compliance Manager. Se la valutazione che si desidera eliminare è l'unica, aggiungere un'altra valutazione prima di eliminare l'altra valutazione.

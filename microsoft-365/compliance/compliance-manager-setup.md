@@ -2,8 +2,8 @@
 title: Introduzione a Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare test automatizzati delle azioni. Gestire la cronologia utente e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570558"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148903"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -38,7 +38,7 @@ L Microsoft 365 amministratore globale dell'organizzazione sarà probabilmente i
 
 ## <a name="sign-in"></a>Accesso
 
-1. Passare al Centro [Microsoft 365 conformità](https://compliance.microsoft.com/) e **accedere** con l'account Microsoft 365 amministratore globale.
+1. Passare al [Centro conformità Microsoft 365](https://compliance.microsoft.com/) e **accedere con** l'account Microsoft 365 amministratore globale.
 2. Selezionare **Compliance Manager** nel riquadro di spostamento sinistro. Si arriva al dashboard di [Compliance Manager.](#understand-the-compliance-manager-dashboard)
 
 Il collegamento diretto per accedere a Compliance Manager è [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) .
@@ -80,7 +80,7 @@ Se non si dispone dell'accesso al Centro sicurezza e conformità di Office 365 o
 
 Per assegnare ruoli e impostare autorizzazioni in Azure AD, vedere [Assegnare](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)ruoli di amministratore e non amministratore agli utenti con Azure Active Directory .
 
-Gli utenti con identità di Azure AD che non dispongono di Office 365 o Microsoft 365 non potranno accedere a Compliance Manager nel Centro Microsoft 365 conformità. Per richiedere assistenza per accedere a Compliance Manager, [contattare cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
+Gli utenti con identità di Azure AD che non dispongono di Office 365 o Microsoft 365 non saranno in grado di accedere a Compliance Manager nella Centro conformità Microsoft 365. Per richiedere assistenza per accedere a Compliance Manager, [contattare cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### <a name="role-types"></a>Tipi di ruolo
 
@@ -97,7 +97,7 @@ La tabella seguente mostra le funzioni consentite da ogni ruolo in Compliance Ma
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>Impostazioni per test automatizzati e cronologia utente
 
-Le impostazioni di Compliance Manager nel Centro Microsoft 365 conformità consentono di abilitare e disabilitare il test automatico delle azioni di miglioramento. Le impostazioni consentono inoltre di gestire i dati degli utenti associati alle azioni di miglioramento, inclusa la possibilità di riassegnare le azioni di miglioramento a un altro utente.  Solo gli utenti con un ruolo di amministratore globale o amministratore di Compliance Manager possono accedere alle impostazioni di Compliance Manager.
+Le impostazioni di Compliance Manager nella Centro conformità Microsoft 365 consentono di abilitare e disabilitare il test automatico delle azioni di miglioramento. Le impostazioni consentono inoltre di gestire i dati degli utenti associati alle azioni di miglioramento, inclusa la possibilità di riassegnare le azioni di miglioramento a un altro utente.  Solo gli utenti con un ruolo di amministratore globale o amministratore di Compliance Manager possono accedere alle impostazioni di Compliance Manager.
 
 > [!NOTE]
 > La funzionalità di test automatizzato non è disponibile per i clienti in ambienti GCC High e DoD, perché secure score non è disponibile in questi ambienti. GCC I clienti High e DoD dovranno implementare e testare manualmente le azioni di miglioramento.
@@ -112,7 +112,7 @@ L'amministratore globale dell'organizzazione può modificare le impostazioni per
 
 #### <a name="to-manage-your-automated-testing-settings"></a>Per gestire le impostazioni di test automatizzati:
 
-1. Selezionare **Impostazioni** nella barra di spostamento sinistra da qualsiasi punto [del Centro Microsoft 365 conformità.](https://compliance.microsoft.com/)
+1. Selezionare **Impostazioni** sulla barra di spostamento sinistra da un punto qualsiasi [della Centro conformità Microsoft 365](https://compliance.microsoft.com/).
 
 2. Nella pagina delle impostazioni selezionare **Compliance Manager.**
 
@@ -134,7 +134,7 @@ Le impostazioni della cronologia utente consentono inoltre di riassegnare tutte 
 
 **Per trovare le impostazioni della cronologia utente:**
 
-1. Selezionare Impostazioni nella barra di spostamento sinistra da qualsiasi punto [del Centro Microsoft 365 conformità.](https://compliance.microsoft.com/)
+1. Selezionare Impostazioni sulla barra di spostamento sinistra da un punto qualsiasi [della Centro conformità Microsoft 365](https://compliance.microsoft.com/).
 
 2. Nella pagina delle impostazioni selezionare **Compliance Manager.**
 
@@ -152,7 +152,7 @@ Il report riflette lo stato dell'azione di miglioramento alla data di creazione.
 
 **Seguire la procedura seguente per esportare un report in base all'utente:**
 
-1. Selezionare **Impostazioni** nella barra di spostamento sinistra da qualsiasi punto [del Centro Microsoft 365 conformità.](https://compliance.microsoft.com/)
+1. Selezionare **Impostazioni** sulla barra di spostamento sinistra da un punto qualsiasi [della Centro conformità Microsoft 365](https://compliance.microsoft.com/).
 
 2. Nella pagina delle impostazioni selezionare **Compliance Manager.**
 
@@ -170,7 +170,7 @@ Il report riflette lo stato dell'azione di miglioramento alla data di creazione.
 
 **Seguire i passaggi seguenti per riassegnare le azioni di miglioramento a un altro utente:**
 
-1. Selezionare **Impostazioni** nella barra di spostamento sinistra da qualsiasi punto [del Centro Microsoft 365 conformità.](https://compliance.microsoft.com/)
+1. Selezionare **Impostazioni** sulla barra di spostamento sinistra da un punto qualsiasi [della Centro conformità Microsoft 365](https://compliance.microsoft.com/).
 
 2. Nella pagina delle impostazioni selezionare **Compliance Manager.**
 
@@ -197,7 +197,7 @@ L'eliminazione della cronologia di un utente li rimuoverà come proprietari dell
 
 Per eliminare la cronologia di un utente, eseguire la procedura seguente:
 
-1. Selezionare **Impostazioni** nella barra di spostamento sinistra da qualsiasi punto [del Centro Microsoft 365 conformità.](https://compliance.microsoft.com/)
+1. Selezionare **Impostazioni** sulla barra di spostamento sinistra da un punto qualsiasi [della Centro conformità Microsoft 365](https://compliance.microsoft.com/).
 
 2. Nella pagina delle impostazioni selezionare **Compliance Manager.**
 
@@ -322,7 +322,7 @@ Da questa schermata è possibile eseguire un'azione in due modi:
 
 Nella pagina delle valutazioni sono [elencate](compliance-manager-assessments.md) tutte le valutazioni impostate per l'organizzazione. Il denominatore del punteggio di conformità è determinato da tutte le valutazioni rilevate. Quando aggiungi altre valutazioni, vedrai più azioni di miglioramento elencate nella pagina delle azioni di miglioramento e il denominatore del punteggio di conformità aumenta.
 
-Il **contatore dei** modelli attivati nella parte superiore della pagina mostra il numero di modelli di valutazione attivi attualmente in uso al di fuori del numero totale di modelli disponibili per l'organizzazione. Per [ulteriori informazioni, vedere](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) Tipo di modello.
+Il **contatore dei** modelli attivati nella parte superiore della pagina mostra il numero di modelli di valutazione attivi attualmente in uso al di fuori del numero totale di modelli disponibili per l'organizzazione. Per [ulteriori informazioni, vedere Disponibilità dei modelli](compliance-manager-templates.md#template-availability-and-licensing) e licenze.
 
 Nella pagina delle valutazioni sono riepilogate le informazioni chiave su ogni valutazione:
 
@@ -357,7 +357,7 @@ Per impostazione predefinita, nella pagina delle valutazioni viene visualizzata 
 
 Un modello è una struttura per la creazione di una valutazione in Compliance Manager. La pagina dei modelli di valutazione mostra un elenco di modelli e i dettagli principali. L'elenco include i modelli forniti da Compliance Manager e tutti i modelli modificati o creati dall'organizzazione. È possibile applicare filtri per trovare un modello basato su certificazione, ambito del prodotto, paese, settore e chi lo ha creato.
 
-Il **contatore dei** modelli attivati nella parte superiore della pagina mostra il numero di modelli di valutazione attivi attualmente in uso al di fuori del numero totale di modelli disponibili per l'organizzazione. Per [ulteriori informazioni, vedere](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) Tipo di modello.
+Il **contatore dei** modelli attivati nella parte superiore della pagina mostra il numero di modelli di valutazione attivi attualmente in uso al di fuori del numero totale di modelli disponibili per l'organizzazione. Per [ulteriori informazioni, vedere Disponibilità dei modelli](compliance-manager-templates.md#template-availability-and-licensing) e licenze.
 
 Selezionare un modello dalla riga corrispondente per visualizzare la relativa pagina dei dettagli, contenente una descrizione del modello e ulteriori informazioni su certificazione, ambito e dettagli dei controlli. Da questa pagina è possibile selezionare i pulsanti appropriati per creare una valutazione, esportare i dati del modello Excel o modificare il modello.
 

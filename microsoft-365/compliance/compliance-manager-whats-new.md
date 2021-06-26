@@ -2,8 +2,8 @@
 title: Novità di Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Scopri le novità di Compliance Manger e le novità a venire. Informazioni sulle valutazioni aggiornate, nuovi modelli di valutazione, nuove azioni e altro ancora.
-ms.openlocfilehash: fe5e8056bd771082436c3cd941cd6f4e602c11a9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52465463"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149023"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novità di Microsoft Compliance Manager
 
@@ -48,4 +48,4 @@ Compliance Manager è ora disponibile per i clienti Us Government DoD, oltre ai 
 
 ### <a name="active-and-inactive-templates"></a>Modelli attivi e inattivi
 
-Ogni pagina di valutazione e pagina del modello di valutazione ha un contatore dei modelli attivato. Questo contatore mostra il numero di modelli idonei in uso in base al contratto di licenza. Visualizza [tipi di modelli: inclusi e premium, attivi e inattivi](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) per altre informazioni.
+Ogni pagina di valutazione e pagina del modello di valutazione ha un contatore dei modelli attivato. Questo contatore mostra il numero di modelli idonei in uso in base al contratto di licenza. Per [altre informazioni, vedi Disponibilità e licenze](compliance-manager-templates.md#template-availability-and-licensing) dei modelli.

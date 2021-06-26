@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come usare i criteri dlp per le app cloud non Microsoft.
-ms.openlocfilehash: d4c5170cab01b1ca22701b13c7afbf4f2e0ba7da
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114134"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149155"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft (anteprima)
 
@@ -80,6 +80,8 @@ Puoi scegliere diverse azioni per ogni app cloud non Microsoft supportata. Per o
 Quando si crea una regola nel criterio DLP, è possibile selezionare un'azione per le app cloud non Microsoft. Per limitare le app di terze parti, seleziona **Limita app di terze parti.**
 
 ![Limitare le app di terze parti](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+
+>[NOTA] I criteri DLP applicati alle app non Microsoft usano Microsoft Cloud App Security. Quando viene creato il criterio DLP per un'app non Microsoft, lo stesso criterio verrà creato automaticamente in Microsoft Cloud App Security.
 
 Per informazioni sulla creazione e la configurazione dei criteri DLP, vedere [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md?view=o365-worldwide).
 

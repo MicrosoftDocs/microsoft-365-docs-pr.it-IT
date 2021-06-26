@@ -2,8 +2,8 @@
 title: Compliance Manager di Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce le azioni consigliate per affrontare i rischi.
-ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc1919f63716dfa79274a5cf7016ef07f2f36f92
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244396"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148951"
 ---
 # <a name="microsoft-compliance-manager"></a>Compliance Manager di Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "52244396"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novità: la versione GA di Compliance Manager
 
-Compliance Manager è ora disponibile in generale come soluzione di gestione della conformità end-to-end all'interno del centro Microsoft 365 [conformità](microsoft-365-compliance-center.md). Con questa versione, Compliance Manager completa la transizione dalla posizione precedente in Microsoft Service Trust Portal. Compliance Manager è disponibile anche per i clienti di Community (GCC) Moderate, GCC High e Department of Defense (DoD).
+Compliance Manager è ora disponibile in genere come soluzione di gestione della conformità end-to-end all'interno del [Centro conformità Microsoft 365](microsoft-365-compliance-center.md). Con questa versione, Compliance Manager completa la transizione dalla posizione precedente in Microsoft Service Trust Portal. Compliance Manager è disponibile anche per i clienti di Community (GCC) Moderate, GCC High e Department of Defense (DoD).
 
 L'anteprima pubblica del punteggio di conformità si è evoluta in uno strumento centralizzato con funzionalità di gestione della conformità avanzate e maggiore facilità di utilizzo.  La versione GA offre una raccolta più ampia di valutazioni predefinite per facilitare la scalabilità delle attività di conformità.
 
@@ -45,7 +45,7 @@ Guarda il video seguente per scoprire in che modo Compliance Manager può sempli
 
 ## <a name="what-is-compliance-manager"></a>Che cos'è Compliance Manager
 
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) è [](microsoft-365-compliance-center.md) una funzionalità del Centro Microsoft 365 conformità che consente di gestire i requisiti di conformità dell'organizzazione con maggiore facilità e comodità. Compliance Manager può essere utile per tutto il percorso di conformità, dall'inventario dei rischi per la protezione dei dati alla gestione delle complessità dell'implementazione dei controlli, al rispetto delle normative e delle certificazioni e alla creazione di report ai revisori.
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) è [](microsoft-365-compliance-center.md) una funzionalità del Centro conformità Microsoft 365 che consente di gestire i requisiti di conformità dell'organizzazione con maggiore facilità e comodità. Compliance Manager può essere utile per tutto il percorso di conformità, dall'inventario dei rischi per la protezione dei dati alla gestione delle complessità dell'implementazione dei controlli, al rispetto delle normative e delle certificazioni e alla creazione di report ai revisori.
 
 Compliance Manager consente di semplificare la conformità e ridurre i rischi fornendo:
 

@@ -2,8 +2,8 @@
 title: Guida introduttiva a Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare la guida introduttiva di Compliance Manager per facilitare il percorso di comprensione, configurazione e utilizzo di Compliance Manager.
-ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906028"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149047"
 ---
 # <a name="compliance-manager-quickstart"></a>Guida rapida a Compliance Manager
 
@@ -31,7 +31,7 @@ Sia che tu sia in arrivo a Compliance Manager per la prima volta o che tu sia pr
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>Prima visita: informazioni su Compliance Manager
 
-Compliance Manager si trova nel Centro Microsoft 365 conformità all'indirizzo https://compliance.microsoft.com . L'amministratore globale dell'organizzazione dovrà configurare le autorizzazioni utente e [assegnare i ruoli](compliance-manager-setup.md#set-user-permissions-and-assign-roles) prima di iniziare a usare Compliance Manager.
+Compliance Manager si trova nella Centro conformità Microsoft 365 all'indirizzo https://compliance.microsoft.com . L'amministratore globale dell'organizzazione dovrà configurare le autorizzazioni utente e [assegnare i ruoli](compliance-manager-setup.md#set-user-permissions-and-assign-roles) prima di iniziare a usare Compliance Manager.
 
 La prima volta che visiti Compliance Manager, vedrai un punteggio di conformità per la tua organizzazione. Compliance Manager sta già valutando l'ambiente Microsoft 365 corrente rispetto alla linea di base per la protezione dei dati. Il modo migliore per iniziare a familiarizzare con Compliance Manager è comprendere cosa mostra, i suoi elementi chiave e come personalizzare il dashboard.
 
@@ -63,8 +63,8 @@ Quando si ha familiarità con la gestione delle valutazioni in Compliance Manage
 
 È inoltre possibile configurare test automatizzati di tutte le azioni di miglioramento o di un sottoinsieme. Visitare i collegamenti seguenti per informazioni sulle funzionalità più avanzate in Compliance Manager:
 
-- [Estendere una valutazione di Compliance Manager aggiungendo controlli personalizzati e azioni di miglioramento](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [Creare una valutazione personalizzata](compliance-manager-assessments.md#create-your-own-custom-assessment)
+- [Estendere un modello di Compliance Manager aggiungendo controlli personalizzati e azioni di miglioramento](compliance-manager-templates.md#extend-an-assessment-template)
+- [Creare un modello personalizzato](compliance-manager-templates.md#create-an-assessment-template)
 - [Modificare un modello esistente per aggiungere o rimuovere controlli e azioni](compliance-manager-templates.md#modify-a-template)
 - [Configurare test automatizzati delle azioni di miglioramento](compliance-manager-setup.md#set-up-automated-testing)
 - [Riassegnare azioni di miglioramento a un altro utente](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

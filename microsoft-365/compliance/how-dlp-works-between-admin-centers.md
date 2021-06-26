@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Informazioni su come DLP nel Centro sicurezza & conformità funziona con dlp e regole del flusso di posta (regole di trasporto) nell'Exchange di amministrazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c5249279e1dd04447235aae813128cf458adde03
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: d71c45e5483bc73afbe2598415e30b84e97c2539
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114074"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149143"
 ---
-# <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
+# <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>Funzionamento di DLP tra il Centro Microsoft 365 conformità e l Exchange intervanza di amministrazione
 
-In Office 365, è possibile creare un criterio di prevenzione della perdita dei dati (DLP) in due diverse aree di amministrazione:
+In Microsoft 365, è possibile creare un criterio di prevenzione della perdita dei dati (DLP) in due diverse aree di amministrazione:
   
-- Nel **Centro** sicurezza & conformità è possibile creare un singolo criterio DLP per proteggere il contenuto in SharePoint, OneDrive, Exchange e ora Microsoft Teams. Se possibile, è consigliabile creare un criterio DLP qui. Per ulteriori informazioni, vedere [Informazioni di riferimento sulla prevenzione della perdita di dati.](data-loss-prevention-policies.md)
+- Nel Centro conformità **Microsoft 365**, è possibile creare un singolo criterio DLP per proteggere il contenuto in SharePoint, OneDrive, Exchange, Teams e ora Dispositivi endpoint. È consigliabile creare un criterio DLP qui. Per ulteriori informazioni, vedere [Informazioni di riferimento sulla prevenzione della perdita di dati.](data-loss-prevention-policies.md)
     
 - **Nell'Exchange di amministrazione,** è possibile creare un criterio DLP per proteggere il contenuto solo in Exchange. Questo criterio può usare regole Exchange del flusso di posta (note anche come regole di trasporto), quindi ha più opzioni specifiche per la gestione della posta elettronica. Per ulteriori informazioni, vedere [DLP nell'Exchange di amministrazione.](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
     
@@ -55,6 +55,6 @@ Si noti inoltre che Exchange regole del flusso di posta che utilizzano l'azione 
 
 I suggerimenti per i criteri possono funzionare con i criteri DLP e le regole del flusso di posta creati nell'interfaccia di amministrazione di Exchange oppure con i criteri DLP creati nel Centro sicurezza & Conformità, ma non entrambi. Questo perché questi criteri sono archiviati in posizioni diverse, ma i suggerimenti per i criteri possono essere attingere solo da un'unica posizione.
   
-Se sono stati configurati suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange, eventuali suggerimenti per i criteri configurati nell'Interfaccia di conformità di & sicurezza non verranno visualizzati agli utenti in Outlook sul Web e Outlook 2013 e versioni successive fino a quando non si disattivano i suggerimenti nell'interfaccia di amministrazione di Exchange. Ciò garantisce che le regole correnti Exchange flusso di posta continueranno a funzionare fino a quando non si sceglie di passare al Centro sicurezza & conformità.
+Se sono stati configurati suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange, eventuali suggerimenti per i criteri configurati nel Centro sicurezza & conformità non verranno visualizzati agli utenti in Outlook sul web e Outlook 2013 e versioni successive fino a quando non si disattivano i suggerimenti nell'interfaccia di amministrazione di Exchange. Ciò garantisce che le regole correnti Exchange flusso di posta continueranno a funzionare fino a quando non si sceglie di passare al Centro sicurezza & conformità.
   
 Tieni presente che, anche se i suggerimenti per i criteri possono essere attingere solo da un'unica posizione, le notifiche di posta elettronica vengono sempre inviate, anche se si usano i criteri DLP sia nel Centro sicurezza & Conformità che nell'interfaccia di amministrazione di Exchange.

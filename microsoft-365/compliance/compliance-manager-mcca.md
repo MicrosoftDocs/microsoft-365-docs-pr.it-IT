@@ -2,8 +2,8 @@
 title: Analizzatore configurazione conformità Microsoft per Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come usare Microsoft Compliance Configuration Analyzer per iniziare rapidamente a usare Microsoft Compliance Manager.
-ms.openlocfilehash: 5d74d9980daf7f6ff7f013578cb11be83d18948e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244637"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148963"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizzatore configurazione conformità Microsoft per Compliance Manager (anteprima)
 
@@ -101,19 +101,19 @@ Seguire queste istruzioni per eseguire un report in base a un percorso specifico
     ```
   | Input |  Paese | 
   | :------------- | :------------: |
-  | 1 | Asia-Pacifico |
-  | 2 | Australia |
-  | 3 | Canada |
+  | 1  | Asia-Pacifico |
+  | 2  | Australia |
+  | 3  | Canada |
   | 4  | Europa (Francia esclusa) / Medio Oriente / Africa |
   | 5  | Francia |
   | 6  | India |
   | 7  | Giappone |
   | 8  | Corea del Sud |
   | 9  | Nord America (canada escluso) |
-  | 10   | Sud America |
-  | 11 | Sudafrica |
+  | 10  | Sud America |
+  | 11  | Sudafrica |
   | 12  | Svizzera |
-  | 13 | Emirati Arabi Uniti |
+  | 13  | Emirati Arabi Uniti |
   | 14  | Regno Unito |
 
 
@@ -153,7 +153,7 @@ Selezionare una casella per visualizzare i miglioramenti e i suggerimenti.
 
 **Elementi con stato Miglioramento**
 
-Seleziona l'elenco a discesa **accanto** all'etichetta Miglioramento a destra dell'azione di miglioramento. Vedrai un breve riepilogo e dettagli sulle impostazioni correnti e sulle azioni di miglioramento consigliate. Il riepilogo include collegamenti diretti a Compliance Manager, alla soluzione applicabile nel Centro Microsoft 365 conformità e alla documentazione pertinente.
+Seleziona l'elenco a discesa **accanto** all'etichetta Miglioramento a destra dell'azione di miglioramento. Vedrai un breve riepilogo e dettagli sulle impostazioni correnti e sulle azioni di miglioramento consigliate. Il riepilogo include collegamenti diretti a Compliance Manager, alla soluzione applicabile nella Centro conformità Microsoft 365 e alla documentazione pertinente.
 
 Facendo clic sul collegamento Compliance Manager viene visualizzata una visualizzazione filtrata di tutte le azioni di miglioramento all'interno della soluzione non ancora implementate. Da qui è possibile visualizzare il numero di punti che è possibile raggiungere per aumentare il punteggio di conformità [e](compliance-score-calculation.md)le valutazioni a cui si applicano e le normative e le certificazioni applicabili.
 
