@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 77834c71c7df9f5a460533f1a06878e0e3e38145
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061892"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137776"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -140,6 +140,9 @@ Per altre informazioni su queste opzioni di configurazione, vedere la documentaz
 
 Inoltre, analogamente alla configurazione dei criteri di prevenzione della perdita dei dati, è possibile scegliere se una condizione deve rilevare tutti i tipi di informazioni sensibili o solo una di esse. Per rendere le condizioni più flessibili o complesse, è possibile aggiungere [gruppi e usare operatori logici tra i gruppi](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
+> [!NOTE]
+> I criteri di etichettatura automatica basati su tipi di informazioni sensibili personalizzati si applicano solo al contenuto appena creato o modificato in OneDrive e SharePoint. 
+
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurazione di classificatori sottoponibili a training per un'etichetta
 
 Al momento questa opzione è disponibile in anteprima. Se si usa questa opzione, assicurare di avere pubblicato nel tenant almeno un'altra etichetta di riservatezza che sia configurata per l'assegnazione automatica delle etichette e l'opzione [tipi di informazioni sensibili](#configuring-sensitive-info-types-for-a-label).
@@ -190,7 +193,7 @@ Caratteristiche specifiche dell'etichettatura predefinita:
 
 - Per le etichette consigliate nelle versioni desktop di Word, il contenuto sensibile che ha generato il suggerimento viene contrassegnato in modo che gli utenti possano rivedere e rimuovere tale contenuto anziché applicare l'etichetta di riservatezza consigliata.
 
-- Per informazioni su come vengono applicate tali etichette nelle app di Office, screenshot di esempio e dettagli su come vengono rilevate le informazioni sensibili, vedere [Applicare automaticamente o consigliare l'applicazione di etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Per informazioni su come vengono applicate tali etichette nelle app di Office, screenshot di esempio e dettagli su come vengono rilevate le informazioni sensibili, vedere [Applicare automaticamente o consigliare l'applicazione di etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.office.com/it-IT/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Caratteristiche specifiche del client di etichettatura unificata di Azure Information Protection:
 
@@ -215,7 +218,7 @@ Assicurarsi di conoscere i prerequisiti prima di configurare i criteri di etiche
     - Nel momento in cui vengono eseguiti i criteri di applicazione automatica di etichette, il file non deve essere aperto da un altro processo o utente. Un file estratto per la modifica rientra in questa categoria.
 
 - Se si prevede di usare [tipi di informazioni sensibili personalizzati](sensitive-information-type-learn-about.md) anziché quelli predefiniti: 
-    - I tipi di informazioni di riservatezza personalizzati vengono valutati in base a contenuti aggiunti a SharePoint o a OneDrive dopo il loro salvataggio. 
+    - I tipi di informazioni di sensibili personalizzati riguardano solo il contenuto aggiunto o modificato in SharePoint o a OneDrive successivamente alla loro applicazione. 
     - Per testare nuovi tipi di informazioni sensibili personalizzati, crearli prima di creare i criteri di applicazione automatica di etichette e quindi creare nuovi documenti con i dati di esempio per il test.
 
 - Una o più etichette di riservatezza [create e pubblicate](create-sensitivity-labels.md) (per almeno un utente) che è possibile selezionare per i criteri di applicazione automatica di etichette. Per queste etichette:
