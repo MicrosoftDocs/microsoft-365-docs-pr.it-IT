@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108236"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137764"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -104,7 +104,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel portale d
 
    Più valori della stessa condizione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
 
-   - **Escludere questi utenti, gruppi e domini**: per aggiungere eccezioni per i destinatari interni a cui si applicano i criteri (eccezione destinatari), selezionare questa opzione e configurare le eccezioni. Impostazioni e comportamento sono equivalenti alle condizioni.
+   - **Escludere questi utenti, gruppi e domini**: per aggiungere eccezioni ai destinatari interni a cui si applicano i criteri (eccezione destinatari), selezionare questa opzione e configurare le eccezioni. Impostazioni e comportamento sono equivalenti alle condizioni.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -203,7 +203,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel portale d
    >
    > Valutare con attenzione prima di aggiungere i domini all'elenco dei domini consentiti. Per altre informazioni, vedere [Creare elenchi di mittenti attendibili in EOP](create-safe-sender-lists-in-office-365.md)
    >
-   > Non aggiungere mai [domini accettati](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)propri, o domini comuni, ad esempio microsoft.com o office.com, all'elenco di domini consentiti. Se questi domini sono autorizzati a ignorare il filtro della posta indesiderata, consentono a utenti malintenzionati di inviare facilmente messaggi di posta elettronica nell'organizzazione.
+   > Non aggiungere mai [domini accettati](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)propri, o domini comuni, ad esempio microsoft.com o office.com, all'elenco di domini consentiti. Se a questi domini è consentito ignorare il filtro della posta indesiderata, gli utenti malintenzionati possono inviare facilmente messaggi che effettuano lo spoofing di questi domini attendibili nell'organizzazione.
    >
    > Il blocco manuale dei domini mediante l'aggiunta di domini all'elenco dei domini bloccati non è pericoloso, ma può aumentare il carico di lavoro amministrativo. Per altre informazioni, vedere [Creare elenchi di mittenti bloccati in EOP](create-block-sender-lists-in-office-365.md).
    >
