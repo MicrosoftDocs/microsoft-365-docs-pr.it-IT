@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: f882a9a215f331930de7473d6bf057a3d45bc50e
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 9337bddd87dd24d42b4d06fe77225901701cbdee
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137692"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149179"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -298,7 +298,7 @@ Usare il seguente flusso per comprendere i risultati della conservazione e della
   
 Spiegazione per i quattro diversi principi:
   
-1. **La conservazione prevale sull'eliminazione.** Un contenuto non può essere cancellato in maniera permanente quando possiede anche le impostazioni di conservazione. Anche se questo principio garantisce che il contenuto venga mantenuto per motivi di conformità, il processo di eliminazione viene comunque avviato e può rimuovere il contenuto alla vista degli utenti. Ad esempio, un documento in SharePoint passa dalla cartella originale alla cartella dei blocchi per la conservazione. Tuttavia, l'eliminazione permanente viene sospesa. Per altre informazioni su come e dove viene conservato il contenuto, usare i collegamenti seguenti per ogni carico di lavoro:
+1. **La conservazione prevale sull'eliminazione.** Un contenuto non può essere cancellato in maniera permanente quando possiede anche le impostazioni di conservazione. Anche se questo principio garantisce che il contenuto venga mantenuto per motivi di conformità, il processo di eliminazione viene comunque avviato e può rimuovere il contenuto alla vista e alle ricerche degli utenti. Per SharePoint, ad esempio, un documento passa dalla cartella originale alla cartella dei blocchi per conservazione. Tuttavia, l'eliminazione permanente viene sospesa. Per altre informazioni su come e dove viene conservato il contenuto, usare i collegamenti seguenti per ogni carico di lavoro:
     
     - [Funzionamento della conservazione per SharePoint e OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [Come funziona la conservazione in Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
@@ -307,7 +307,7 @@ Spiegazione per i quattro diversi principi:
     
     Esempio: Un messaggio email è soggetto al criterio di conservazione per Exchange che è configurato per cancellare gli elementi dopo tre anni e possiede anche un'etichetta di conservazione applicata che è configurata per conservare gli elementi per cinque anni.
     
-    Il messaggio email verrà conservato per cinque anni perché questa azione conservativa ha la precedenza sulla cancellazione. Il messaggio di posta elettronica viene quindi eliminato definitivamente alla fine dei cinque anni a causa dell'azione di eliminazione.
+    Il messaggio email verrà conservato per cinque anni perché questa azione conservativa ha la precedenza sulla cancellazione. Il messaggio di posta elettronica viene eliminato definitivamente alla fine dei cinque anni a causa dell'azione di eliminazione sospesa mentre era attiva l'azione di conservazione.
 
 2. **Prevale il periodo di conservazione più lungo.** Se un contenuto è soggetto a più impostazioni di conservazione che prevedono periodi di conservazione diversi, verrà mantenuto fino al termine del periodo di conservazione più lungo.
     
