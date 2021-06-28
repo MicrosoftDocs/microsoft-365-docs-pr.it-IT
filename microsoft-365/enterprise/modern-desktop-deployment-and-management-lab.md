@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3f9899726838caca678542e17206dae038c39a3d
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770674"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169569"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows 10 e Office 365
 
@@ -55,9 +55,11 @@ Il lab risultante è progettato per essere connesso alle versioni di valutazione
 Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione. I lab sono stati aggiornati per le versioni più recenti di Intune e Configuration Manager. 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Pianificare e preparare l'infrastruttura 
+
 - Desktop Analytics 
 - Cloud Management Gateway & di distribuzione cloud 
-- Tenant attach, co-management, and switching workloads 
+- NOVITÀ! Collegamento e co-gestione del tenant
+- NOVITÀ! Endpoint analytics 
 - Accesso remoto (VPN) 
 
 ### <a name="prepare-configuration"></a>Preparare la configurazione   
@@ -91,6 +93,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 - Enterprise distribuzione gestita tramite Microsoft Intune  
 - Distribuzione e gestione loB con Microsoft Intune
 - Distribuire Microsoft Teams
+- NOVITÀ! Filtri di assegnazione  
 
 ### <a name="deploy-windows-virtual-desktop"></a>Distribuire Windows desktop virtuale  
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: b4040a60e59f3256b69f90d33af6f7543e50784e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984797"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169605"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Abilitare regole per la riduzione della superficie di attacco
 
@@ -35,7 +35,9 @@ ms.locfileid: "52984797"
 
 [Le regole di riduzione della superficie](attack-surface-reduction.md) di attacco (regole ASR) consentono di impedire azioni che il malware spesso abuso per compromettere dispositivi e reti.
 
-**Requisiti** Puoi impostare regole di riduzione della superficie di attacco per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
+## <a name="requirements"></a>Requisiti
+
+Puoi impostare regole di riduzione della superficie di attacco per i dispositivi che eseguono una delle seguenti edizioni e versioni di Windows:
 
 - Windows 10 Pro versione [1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
 - Windows 10 Enterprise versione [1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
@@ -121,7 +123,7 @@ Puoi usare l'URI OMA Microsoft Endpoint Manager (MEM) per configurare regole asr
    > [!div class="mx-imgBorder"]
    > ![Attributi di base MEM](images/mem03-1-basics.png)
 
-4. Fare clic su **Avanti**. Step **2 Configuration settings opens.** Per l'URI OMA Impostazioni, fare clic su **Aggiungi.** Vengono ora visualizzate due opzioni: **Aggiungi** ed **Esporta**.
+4. Scegliere **Avanti**. Step **2 Configuration settings opens.** Per l'URI OMA Impostazioni, fare clic su **Aggiungi.** Vengono ora visualizzate due opzioni: **Aggiungi** ed **Esporta**.
 
    > [!div class="mx-imgBorder"]
    > ![Impostazioni di configurazione MEM](images/mem04-2-configuration-settings.png)
@@ -162,7 +164,7 @@ Puoi usare l'URI OMA Microsoft Endpoint Manager (MEM) per configurare regole asr
    > [!div class="mx-imgBorder"]
    > ![Regole di applicabilità MEM](images/mem07-5-applicability-rules.png)
 
-10. Fare clic su **Avanti**. Nel passaggio **6 Rivedere e creare** esaminare le impostazioni e le informazioni selezionate e immesse e quindi fare clic su **Crea.**
+10. Scegliere **Avanti**. Nel passaggio **6 Rivedere e creare** esaminare le impostazioni e le informazioni selezionate e immesse e quindi fare clic su **Crea.**
 
     > [!div class="mx-imgBorder"]
     > ![MEM Rivedere e creare](images/mem08-6-review-create.png)
