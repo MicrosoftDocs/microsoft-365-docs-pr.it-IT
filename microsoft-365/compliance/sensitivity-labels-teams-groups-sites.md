@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 844391ee20d2c8e8b94261659b18de0690dee119
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096757"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149191"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -141,6 +141,8 @@ Per essere visualizzati nell'elenco a discesa per la selezione, i contesti di au
 Se un utente con un'app non supportata si connette al sito configurato per un contesto di autenticazione, viene visualizzato un messaggio di accesso negato oppure gli verrà richiesto di eseguire l'autenticazione ma questa verrà rifiutato. Le app che al momento supportano i contesti di autenticazione sono:
 
 - Office per il Web, che include Outlook per il Web
+
+- Microsoft Teams per Windows e macOS (esclude l'app Web di Teams)
 
 - Microsoft Planner
 
