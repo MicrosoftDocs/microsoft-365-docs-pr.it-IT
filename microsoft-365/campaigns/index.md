@@ -25,20 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Suggerimenti di sicurezza e collaborazione di Microsoft 365 Business Premium per le piccole imprese, comprese le piccole aziende, gli studi e le campagne elettorali.
-ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 34f36a86167ebba2ad80cc0046184b3c1997f845
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245029"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177466"
 ---
-<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 per piccole imprese e campagne
-===========================
+# <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 per piccole imprese e campagne
 
 Se si ha Microsoft 365 Business Premium, le indicazioni fornite in questa raccolta sono il modo più rapido per configurare la sicurezza e iniziare a collaborare in modo sicuro. Oggigiorno proteggere i dati e le comunicazioni è una priorità, soprattutto per le campagne politiche, gli studi medici e legali e molte altre piccole imprese. Questa soluzione offre una serie di suggerimenti il cui scopo è aiutare a proteggere se stessi e i propri dati. Questa raccolta include la guida per la configurazione e l'utilizzo di questo ambiente consigliato, indipendentemente dal tipo di attività.
 
 
-![Microsoft 365 Business Premium protegge gli strumenti di produttività e collaborazione, l’archiviazione di file, la posta elettronica, i dispositivi e l’identità](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium protegge gli strumenti di produttività e collaborazione, l’archiviazione di file, la posta elettronica, i dispositivi e l’identità](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 Questa configurazione include le seguenti linee guida per proteggere la produttività, la collaborazione, l’archiviazione dei file, la posta elettronica, i dispositivi e l’identità della propria azienda:
 
@@ -50,8 +49,7 @@ Questa configurazione include le seguenti linee guida per proteggere la produtti
 |Archiviazione e condivisione sicura dei file | Condividere file e video da Microsoft Teams, OneDrive, SharePoint e Microsoft Stream e proteggere i dati sensibili.| [Condividere file e video](share-files-and-videos.md) |
 |Dispositivi Windows 10 gestiti |Usare dispositivi gestiti per il personale chiave e proteggere tali dispositivi. | [Configurare i dispositivi Windows gestiti](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
-<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Configurazione di sicurezza consigliata per Microsoft 365 Business Premium
-------------------------------------
+## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Configurazione di sicurezza consigliata per Microsoft 365 Business Premium
 
 La configurazione di sicurezza consigliata per Microsoft 365 Business Premium consente di:
 
@@ -71,8 +69,7 @@ La raccolta include i seguenti elementi:
 
 Per altre informazioni sul contenuto incluso, vedere [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
 
-<a name="get-started"></a>Per iniziare
---------------------------
+## <a name="get-started"></a>Per iniziare
 
 Seguire questi passaggi per iniziare:
 
@@ -80,8 +77,7 @@ Seguire questi passaggi per iniziare:
 - Per le aziende: [Scoprire in che modo gli utenti useranno Microsoft 365](m365-campaigns-users.md)
 - Per le aziende: [Configurare Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
-<a name="solutions-for-your-business"></a>Soluzioni per la propria azienda
---------------------------
+## <a name="solutions-for-your-business"></a>Soluzioni per la propria azienda
 
 Dopo aver configurato l'ambiente Microsoft 365, è possibile usare le soluzioni seguenti per iniziare a lavorare:
 
