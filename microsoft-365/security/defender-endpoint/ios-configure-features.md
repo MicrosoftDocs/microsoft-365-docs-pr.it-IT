@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842255"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194950"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurare Microsoft Defender per le funzionalità di Endpoint in iOS
 
@@ -65,6 +65,26 @@ Anche se abilitata per impostazione predefinita, in alcuni casi potrebbe essere 
 
 Apple iOS non supporta più VPN a livello di dispositivo per essere attive contemporaneamente. Anche se nel dispositivo possono esistere più profili VPN, può essere attiva una sola VPN alla volta.
 
+## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>Configurare Microsoft Defender per il segnale di rischio endpoint nei criteri di protezione delle app (MAM)
+
+Microsoft Defender for Endpoint può essere configurato per inviare segnali di minaccia da usare nei criteri di protezione delle app (APP, noto anche come MAM) in iOS/iPadOS. Con questa funzionalità, puoi usare Microsoft Defender for Endpoint per proteggere l'accesso ai dati aziendali anche dai dispositivi di cui non è stata annullata la registrazione.
+
+I passaggi per configurare i criteri di protezione delle app con Microsoft Defender for Endpoint sono i seguenti:
+
+1. Configurare la connessione dal tenant Microsoft Endpoint Manager a Microsoft Defender per Endpoint. Nell'interfaccia di amministrazione di [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vai a **Connettori** di amministrazione tenant e  >  **token** Microsoft Defender  >  **for Endpoint** (sotto Piattaforma incrociata) o **Endpoint Security** Microsoft Defender  >  **for Endpoint** (in Configurazione) e attiva gli interruttori in Criteri di protezione app Impostazioni per **iOS**.
+1. Seleziona Salva. Dovrebbe essere visualizzato **Lo stato della** connessione è ora impostato su **Abilitato.**
+1. Creare criteri di protezione delle app: dopo aver completato la configurazione del connettore Microsoft Defender for Endpoint, passare a App Criteri di protezione delle app (in Criteri) per creare un nuovo criterio o aggiornarne  >   uno esistente.
+1. Selezionare le impostazioni dei requisiti di **piattaforma, app, protezione dei dati e** accesso richieste dall'organizzazione per i criteri.
+1. In **Condizioni del dispositivo di** avvio  >  **condizionale** troverai l'impostazione Max allowed device threat **level**. Questo dovrà essere configurato su Basso, Medio, Alto o Protetto. Le azioni disponibili saranno Blocca **accesso** o **Cancella dati.** È possibile che venga visualizzata una finestra di dialogo in formato informativo per verificare che il connettore sia configurato prima che questa impostazione abbia effetto. Se il connettore è già configurato, è possibile ignorare questa finestra di dialogo.
+1. Completare con Assegnazioni e salvare i criteri.
+
+Per altri dettagli su MAM o sui criteri di protezione delle app, vedi Impostazioni dei criteri [di protezione delle app iOS.](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)
+
+### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Distribuzione di Microsoft Defender per Endpoint per MAM o su dispositivi non registrazione
+
+Microsoft Defender for Endpoint su iOS abilita lo scenario dei criteri di protezione delle app ed è disponibile nell'App Store di Apple.
+
+Gli utenti finali devono installare la versione più recente dell'app direttamente dall'App Store di Apple.
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Configurare i criteri di conformità per i dispositivi jailbroken
 
@@ -86,12 +106,12 @@ Segui i passaggi seguenti per creare un criterio di conformità per i dispositiv
     > [!div class="mx-imgBorder"]
     > ![Criteri Impostazioni](images/ios-jb-settings.png)
 
-4. Nella sezione *Azione per la non conformità* selezionare le azioni in base ai requisiti e selezionare **Avanti**.
+4. Nella sezione **Azione per la non conformità** selezionare le azioni in base ai requisiti e selezionare **Avanti**.
 
     > [!div class="mx-imgBorder"]
     > ![Azioni dei criteri](images/ios-jb-actions.png)
 
-5. Nella sezione *Assegnazioni* selezionare i gruppi di utenti che si desidera includere per questo criterio e quindi selezionare **Avanti.**
+5. Nella sezione **Assegnazioni** selezionare i gruppi di utenti che si desidera includere per questo criterio e quindi selezionare **Avanti.**
 6. Nella sezione **Revisione e creazione** verificare che tutte le informazioni immesse siano corrette e quindi selezionare **Crea**.
 
 ## <a name="configure-custom-indicators"></a>Configurare indicatori personalizzati

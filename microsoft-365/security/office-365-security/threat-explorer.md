@@ -19,12 +19,12 @@ description: Usa Explorer e i rilevamenti in tempo reale nel portale Microsoft 3
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3dc8c205d5edfe455884d64030c7a6070762adb
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108548"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195034"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer e rilevamenti in tempo reale
 
@@ -56,7 +56,7 @@ Con questo report, è possibile:
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Miglioramenti all'esperienza di ricerca delle minacce
 
-### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>Introduzione dell'ID avviso per gli avvisi MDO in Esplora risorse/Rilevamenti in tempo reale (anteprima)
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>Introduzione dell'ID avviso per Defender per Office 365 avvisi in Esplora risorse/Rilevamenti in tempo reale (anteprima)
 
 Oggi, se si passa da un avviso a Esplora minacce, viene aperta una visualizzazione filtrata all'interno di Esplora risorse, con la visualizzazione filtrata in base all'ID dei criteri di avviso (l'ID criterio è un identificatore univoco per un criterio di avviso).
 Stiamo rendendo questa integrazione più pertinente introducendo l'ID avviso (vedi un esempio di ID avviso di seguito) in Threat Explorer e rilevamenti in tempo reale in modo da visualizzare i messaggi pertinenti per l'avviso specifico, nonché un conteggio dei messaggi di posta elettronica. Sarà inoltre possibile vedere se un messaggio fa parte di un avviso e passare da tale messaggio all'avviso specifico.
@@ -544,7 +544,7 @@ Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necess
 
 - Per il Centro sicurezza & conformità, è necessario disporre di uno dei ruoli seguenti:
 
-  - Gestione dell'organizzazione
+  - Gestione organizzazione
   - Amministratore della sicurezza (può essere assegnato nell'Azure Active Directory di amministrazione ( <https://aad.portal.azure.com> )
   - Ruolo con autorizzazioni di lettura per la sicurezza
 
@@ -553,7 +553,7 @@ Per visualizzare e usare Esplora risorse o rilevamenti in tempo reale, è necess
   - Gestione organizzazione
   - Gestione organizzazione sola visualizzazione
   - Destinatari solo visualizzazione
-  - Gestione della conformità
+  - Gestione conformità
 
 Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse seguenti:
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c043e97d6c02e4f41d000e9ce8cfea4a0950252a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 65e3e8d1baef7ca4440824c9a262f0b5f696b657
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246145"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194746"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>Segnalare e risolvere i problemi relativi alle regole asR di Microsoft Defender for ATP
 
@@ -42,7 +42,7 @@ Ecco uno screenshot dal Centro sicurezza Microsoft 365 sicurezza **(in** Segnala
 
 Una delle funzionalità più potenti di Microsoft Defender for Endpoint è la ricerca avanzata. Se non hai familiarità con la ricerca avanzata, fai riferimento alla ricerca proattiva per le [minacce con la ricerca avanzata.](advanced-hunting-overview.md)
 
-Ricerca avanzata è uno strumento di ricerca delle minacce basato su query (Kusto Query Language) che consente di esplorare fino a 30 giorni dei dati acquisiti (non elaborati EDR), raccolti da tutti i computer. Tramite la ricerca avanzata, è possibile esaminare in modo proattivo gli eventi per individuare indicatori ed entità interessanti. L'accesso flessibile ai dati consente di cercare senza vincoli minacce note e potenziali.
+La ricerca avanzata è uno strumento di ricerca delle minacce basato su query (Kusto Query Language) che consente di esplorare fino a 30 giorni dei dati acquisiti (non elaborati), raccolti da Defender per Endpoint dai dispositivi. Tramite la ricerca avanzata, è possibile esaminare in modo proattivo gli eventi per individuare indicatori ed entità interessanti. L'accesso flessibile ai dati consente di cercare senza vincoli minacce note e potenziali.
 
 Attraverso la ricerca avanzata, è possibile estrarre informazioni sulle regole asr, creare report e ottenere informazioni approfondite sul contesto di un determinato evento di controllo o blocco delle regole ASR.
 

@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Gli amministratori possono conoscere la modalità di valutazione di Microsoft Defender per Office 365
-ms.openlocfilehash: ba01fa45ca9a4e2e5b3597378bf7ddafc8be3f56
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768747"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195010"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Informazioni su Microsoft Defender per Office 365 versione di valutazione
 
@@ -45,11 +45,11 @@ La versione di valutazione di Defender Office 365 è disponibile per 90 giorni e
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Configurare un defender per la Office 365 prova
 
-Una versione di valutazione consente alle organizzazioni di configurare e configurare facilmente Defender per Office 365 funzionalità. Durante l'installazione, i criteri esclusivi di Defender per Office 365 (in [particolare,](safe-attachments.md)Allegati [sicuri,](safe-links.md)Collegamenti sicuri e protezione dalla rappresentazione nei criteri di protezione da posta [indesiderata)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)vengono applicati utilizzando il modello Standard per i criteri di sicurezza [predefiniti.](preset-security-policies.md)
+Una versione di valutazione consente alle organizzazioni di configurare e configurare facilmente Defender per Office 365 funzionalità. Durante l'installazione, i criteri esclusivi di Defender per Office 365 (in particolare, allegati [Cassaforte,](safe-attachments.md)collegamenti [Cassaforte](safe-links.md)e protezione dalla rappresentazione nei criteri di protezione dalla posta [indesiderata)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)vengono applicati utilizzando il modello Standard per i criteri di sicurezza [predefiniti.](preset-security-policies.md)
 
 Per impostazione predefinita, questi criteri hanno come ambito tutti gli utenti dell'organizzazione, ma gli amministratori possono personalizzare i criteri durante o dopo l'installazione in modo che si applicino solo a utenti specifici.
 
-Durante l'installazione, viene impostata anche la funzionalità di risposta MDO (disponibile in MDO P2 o equivalente) per l'intera organizzazione. Non è necessario alcun ambito dei criteri.
+Durante la configurazione, defender per Office 365 funzionalità di risposta (disponibile in Defender per Office 365 P2 o equivalente) viene configurato anche per l'intera organizzazione. Non è necessario alcun ambito dei criteri.
 
 ## <a name="licensing"></a>Licenze
 

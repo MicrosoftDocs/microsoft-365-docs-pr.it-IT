@@ -1,5 +1,5 @@
 ---
-title: Pagina dell'entità di posta elettronica di Microsoft Defender for Office 365 (MDO)
+title: Pagina dell'entità di posta Office 365 Microsoft Defender for Office 365
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: I clienti di Microsoft Defender Office 365 E5 e P1 e P2 ora possono ottenere una visualizzazione a 360 gradi di ogni messaggio di posta elettronica con la pagina dell'entità di posta elettronica.
-ms.openlocfilehash: d2f5a5b20034ef22b8e3894885079609a9ad5874
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 5621476f8f8f7270d241d642354ab174a25b8b37
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083279"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194992"
 ---
 # <a name="the-email-entity-page"></a>Pagina Entità posta elettronica
 
@@ -30,11 +30,11 @@ ms.locfileid: "53083279"
 - [Usare le schede della pagina dell'entità di posta elettronica](#use-email-entity-page-tabs)
 - [Novità della pagina dell'entità di posta elettronica](#new-to-the-email-entity-page)
 
-Gli amministratori di Microsoft Defender per Office 365 (o MDO) E5 e MDO P1 e P2 hanno una visualizzazione a 360 gradi della posta elettronica usando la pagina Entità di posta **elettronica**. Questa pagina di posta elettronica di accesso è stata creata per migliorare le informazioni recapitate nel riquadro a comparsa ["Dettagli posta elettronica" di Threat Explorer.](threat-explorer-views.md)
+Gli amministratori di Microsoft Defender per Office 365 E5 e Defender per Office P1 e P2 hanno una visualizzazione a 360 gradi della posta elettronica usando la pagina Entità di posta **elettronica.** Questa pagina di posta elettronica di accesso è stata creata per migliorare le informazioni recapitate nel riquadro a comparsa ["Dettagli posta elettronica" di Threat Explorer.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Raggiungere la pagina dell'entità di posta elettronica
 
-La pagina dell'entità di posta elettronica è disponibile in Microsoft 365 defender portal ( ) in <https://security.microsoft.com> **Email & collaboration** \> **Explorer**. In caso contrario, per passare direttamente alla **pagina Esplora** risorse, utilizzare <https://security.microsoft.com/threatexplorer> .
+La pagina dell'entità di posta elettronica è disponibile nel portale di Microsoft 365 Defender ( ) in <https://security.microsoft.com> **Email & collaboration** \> **Explorer**. In caso contrario, per passare direttamente alla **pagina Esplora** risorse, utilizzare <https://security.microsoft.com/threatexplorer> .
 
 In **Esplora risorse** seleziona l'oggetto di un messaggio di posta elettronica che stai analizzando. Nella parte superiore del riquadro a comparsa della posta elettronica verrà visualizzata una barra d'oro. Questo invito alla nuova pagina, legge "Prova la nostra nuova pagina dell'entità di posta elettronica con dati arricchiti...". Selezionare questa opzione per visualizzare la nuova pagina.
 

@@ -1,6 +1,6 @@
 ---
 title: Preparare la posizione di sicurezza per il primo incidente
-description: Configurare la posizione Microsoft 365 sicurezza del tenant per il primo incidente in Microsoft 365 Defender.
+description: Configurare la Microsoft 365 sicurezza del tenant per il primo incidente in Microsoft 365 Defender.
 keywords: eventi, avvisi, analisi, correlazione, attacco, computer, dispositivi, utenti, identità, cassetta postale, posta elettronica, 365, Microsoft, M365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da9147955c5da9ea727854420b3d4d160583ef73
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fcdce7f5a41c23dfe33eb75ef15b579ac12c8742
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840935"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194938"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparare la posizione di sicurezza per il primo incidente
 
@@ -47,17 +47,17 @@ Microsoft 365 Defender può aiutare a risolvere diversi aspetti della prevenzion
 
 ## <a name="step-1-implement-zero-trust"></a>Passaggio 1. Implementare zero trust
 
-[Zero Trust](/security/zero-trust/) è una filosofia di sicurezza integrata e una strategia end-to-end che considera la natura complessa di qualsiasi ambiente moderno, inclusa la forza lavoro mobile e gli utenti, i dispositivi, le applicazioni e i dati, ovunque si trovino. Fornendo un singolo riquadro di vetro per gestire tutti i rilevamenti in modo coerente, Microsoft 365 Defender [](/security/zero-trust/#guiding-principles-of-zero-trust) può semplificare l'implementazione dei principi guida di Zero Trust da parte del team delle operazioni di sicurezza. 
+[Zero Trust](/security/zero-trust/) è una filosofia di sicurezza integrata e una strategia end-to-end che considera la natura complessa di qualsiasi ambiente moderno, inclusa la forza lavoro mobile e gli utenti, i dispositivi, le applicazioni e i dati, ovunque si trovino. Fornendo un singolo riquadro di vetro per gestire tutti i rilevamenti in modo coerente, Microsoft 365 Defender può [](/security/zero-trust/#guiding-principles-of-zero-trust) rendere più semplice per il team delle operazioni di sicurezza implementare i principi guida di Zero Trust. 
 
-I componenti di Microsoft 365 Defender possono visualizzare le violazioni delle regole implementate per stabilire criteri di accesso condizionale per Zero Trust integrando i dati di Microsoft Defender for Endpoint (MDE) o di altri fornitori di sicurezza per dispositivi mobili come origine di informazioni per i criteri di conformità dei dispositivi e l'implementazione di criteri di accesso condizionale basati su dispositivo. 
+I componenti di Microsoft 365 Defender possono visualizzare le violazioni delle regole implementate per stabilire criteri di accesso condizionale per Zero Trust integrando i dati di Microsoft Defender per Endpoint o altri fornitori di sicurezza mobile come origine delle informazioni per i criteri di conformità dei dispositivi e l'implementazione di criteri di accesso condizionale basati su dispositivo. 
 
 Il rischio del dispositivo influisce direttamente sulle risorse accessibili dall'utente del dispositivo. Il rifiuto dell'accesso alle risorse in base a determinati criteri è il tema principale di Zero Trust e Microsoft 365 Defender fornisce le informazioni necessarie per determinare i criteri del livello di attendibilità. Ad esempio, Microsoft 365 Defender può fornire il livello di versione software di un dispositivo tramite la pagina Gestione minacce e vulnerabilità, mentre i criteri di accesso condizionale limitano i dispositivi con versioni obsolete o vulnerabili.
 
-L'automazione è una parte fondamentale dell'implementazione e della gestione di un ambiente zero trust, riducendo al contempo il numero di avvisi che potrebbero causare eventi di risposta a eventi imprevisti( IR). I componenti di Microsoft 365 Defender possono essere automatizzati, ad esempio le azioni di correzione [(note](m365d-autoir.md) come indagini per un incidente nel centro sicurezza Microsoft 365), le azioni di notifica e persino la creazione di ticket di supporto, ad esempio in [ServiceNow.](https://microsoft.service-now.com/sp/)
+L'automazione è una parte fondamentale dell'implementazione e della gestione di un ambiente zero trust, riducendo al contempo il numero di avvisi che potrebbero causare eventi di risposta a eventi imprevisti( IR). I componenti di Microsoft 365 Defender possono essere automatizzati, ad esempio le azioni di correzione [(note](m365d-autoir.md) come indagini per un evento imprevisto nel centro sicurezza Microsoft 365), le azioni di notifica e persino la creazione di ticket di supporto, ad esempio in [ServiceNow.](https://microsoft.service-now.com/sp/)
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Passaggio 2. Determinare la posizione di sicurezza dell'organizzazione
 
-Successivamente, le organizzazioni possono usare [Microsoft Secure Score](microsoft-secure-score.md) in Microsoft 365 Defender per determinare la posizione di sicurezza corrente e prendere in considerazione suggerimenti su come migliorarlo. Più alto è il punteggio, maggiori sono i suggerimenti per la sicurezza e le azioni di miglioramento adottate dall'organizzazione. I consigli relativi al punteggio sicuro possono essere presi in prodotti diversi e consentire alle organizzazioni di aumentare ancora di più i propri punteggi. 
+Successivamente, le organizzazioni possono usare [microsoft Secure Score](microsoft-secure-score.md) in Microsoft 365 Defender per determinare la posizione di sicurezza corrente e prendere in considerazione consigli su come migliorarlo. Più alto è il punteggio, maggiori sono i suggerimenti per la sicurezza e le azioni di miglioramento adottate dall'organizzazione. I consigli relativi al punteggio sicuro possono essere presi in prodotti diversi e consentire alle organizzazioni di aumentare ancora di più i propri punteggi. 
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Esempio di Microsoft Secure Score nel Centro sicurezza Microsoft":::
  
@@ -65,7 +65,7 @@ Successivamente, le organizzazioni possono usare [Microsoft Secure Score](micros
 
 La prevenzione degli incidenti può contribuire a semplificare gli sforzi delle operazioni di sicurezza per concentrarsi sugli incidenti di sicurezza critici e importanti in corso. Le vulnerabilità software sono spesso un punto di ingresso prevenibile per gli attacchi che possono portare al furto di dati, alla perdita di dati o all'interruzione delle operazioni aziendali. Se non sono in corso attacchi, le operazioni di sicurezza [](../defender-endpoint/tvm-exposure-score.md) devono cercare di raggiungere e mantenere un livello accettabile di esposizione alle vulnerabilità nell'organizzazione.
 
-Per controllare l'avanzamento dell'applicazione di patch al software, visita la pagina [Gestione](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) delle minacce e delle vulnerabilità in Defender for Endpoint, a cui puoi accedere da Microsoft 365 Defender tramite la **scheda Altre** risorse.
+Per controllare l'avanzamento dell'applicazione di patch software, visita la pagina [Gestione](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) delle minacce e delle vulnerabilità in Defender for Endpoint, a cui puoi accedere da Microsoft 365 Defender tramite la **scheda Altre** risorse.
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Esempio della pagina Minacce e vulnerabilità nel Centro sicurezza Microsoft"::: 
  

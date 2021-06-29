@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su cosa accade quando un'indagine o un caso legale supportato da un Advanced eDiscovery caso viene chiuso o eliminato.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: efbcbe34e6d7d8b564bcfa0cf9bbd8a1fbb59709
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657652"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194629"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Chiudere o eliminare un Advanced eDiscovery caso
 
@@ -36,7 +36,7 @@ Ecco cosa accade quando si chiude un Advanced eDiscovery caso:
 
 - Con la chiusura di un caso vengono disattivati solo i blocchi specifici associati. Se altre esenzioni vengono posizionate in un percorso di contenuto (ad esempio un blocco per controversia legale, un blocco eDiscovery di base o un blocco di un caso Advanced eDiscovery diverso), tali blocchi verranno comunque mantenuti.
 
-- Il caso è ancora elencato nella pagina eDiscovery nel Centro Microsoft 365 conformità. I dettagli, i blocchi, le ricerche e i membri di un caso chiuso vengono mantenuti.
+- Il caso è ancora elencato nella pagina eDiscovery nell'Centro conformità Microsoft 365. I dettagli, i blocchi, le ricerche e i membri di un caso chiuso vengono mantenuti.
 
 - È possibile modificare un caso dopo che è stato chiuso. Ad esempio, è possibile aggiungere o rimuovere membri, creare ricerche, esportare risultati di ricerca e preparare i risultati della ricerca per l'analisi in Advanced eDiscovery. La differenza principale tra casi attivi e chiusi è che con la chiusura di un caso vengono disattivati i blocchi.
 
@@ -46,9 +46,9 @@ Per chiudere un caso:
 
 2. Nella scheda **Impostazioni** in **Informazioni sul caso**, fare clic su **Seleziona**.
 
-3. Nella parte inferiore della **pagina del** riquadro a comparsa Informazioni caso fare clic su (**...**) **Altre opzioni** e quindi fare clic su **Chiudi caso.**
+   ![Accedere alla pagina del riquadro a comparsa delle informazioni sul caso in Advanced eDiscovery caso](..\media\AeDSelectCaseInformation.png) 
 
-   ![Opzione nel menu Altre opzioni per chiudere un'Advanced eDiscovery caso](..\Media\CloseAdvancedeDiscoveryCase.png)
+3. Nella parte inferiore della pagina del riquadro a comparsa **Informazioni** caso fare clic su **Azioni** e quindi su **Chiudi caso.**
 
    Per il completamento del processo di chiusura possono essere necessari fino a 60 minuti.
 
@@ -62,15 +62,13 @@ Per riaprire un caso chiuso:
 
 2. Nella scheda **Impostazioni** in **Informazioni sul caso**, fare clic su **Seleziona**.
 
-3. Nella parte inferiore della **pagina del** riquadro a comparsa Informazioni caso fare clic su (**...**) **Altre opzioni** e quindi fare clic su **Riapri caso.**
-
-   ![Opzione nel menu Altre opzioni per riaprire un Advanced eDiscovery caso](..\Media\ReopenAdvancedeDiscoveryCase.png)
+3. Nella parte inferiore della pagina del riquadro a comparsa **Informazioni** caso fare clic su **Azioni** e quindi su **Riapri caso.**
 
    Il completamento del processo di riapertura potrebbe richiedere fino a 60 minuti.
 
 ## <a name="delete-a-case"></a>Eliminare un caso
 
-È possibile eliminare sia i casi attivi che Advanced eDiscovery chiusi. Quando si elimina un caso, tutti i componenti associati al caso, come l'elenco di responsabili, comunicazioni, ricerche, insiemi da rivedere e processi esportati vengono eliminati. Il caso viene rimosso dall'elenco dei casi nella pagina **Advanced eDiscovery** nel Centro Microsoft 365 conformità. Non è possibile ripristinare o riaprire un caso eliminato.
+È possibile eliminare sia i casi attivi che Advanced eDiscovery chiusi. Quando si elimina un caso, tutti i componenti associati al caso, come l'elenco di responsabili, comunicazioni, ricerche, insiemi da rivedere e processi esportati vengono eliminati. Il caso viene rimosso dall'elenco dei casi nella pagina **Advanced eDiscovery** nella Centro conformità Microsoft 365. Non è possibile ripristinare o riaprire un caso eliminato.
 
 > [!NOTE]
 > Negli scenari di fuoriuscita di dati, l'unico modo per rimuovere gli elementi in un set di revisione è eliminare il Advanced eDiscovery caso. Altri metodi di "ricerca ed eliminazione" non rimuovono elementi da un set di recensioni.
@@ -91,6 +89,5 @@ Per eliminare un caso:
 
 2. Nella scheda **Impostazioni** in **Informazioni sul caso**, fare clic su **Seleziona**.
 
-3. Nella parte inferiore della **pagina del** riquadro a comparsa Informazioni caso fare clic su (**...**) **Altre opzioni** e quindi fare clic **su Elimina caso.**
+3. Nella parte inferiore della pagina del riquadro a comparsa **Informazioni** caso fare clic su **Azioni** e quindi su **Elimina caso.**
 
-   ![Opzione nel menu Altre opzioni per eliminare una Advanced eDiscovery caso](..\Media\DeleteAdvancedeDiscoveryCase.png)

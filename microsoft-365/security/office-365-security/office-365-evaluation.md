@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 79d736330a40d33f5334196d165e72f487b6d959
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108332"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194782"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Valutare Microsoft Defender per Office 365
 
@@ -50,7 +50,7 @@ Con la modalità di valutazione, [Cassaforte allegati,](safe-attachments.md)�
 
 Nell'ambito dell'installazione, la modalità di valutazione configura anche [il filtro avanzato per i connettori.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Migliora l'accuratezza del filtro conservando le informazioni sull'indirizzo IP e sul mittente, che altrimenti vengono perse quando la posta passa attraverso un gateway di sicurezza della posta elettronica (ESG) davanti a Defender per Office 365. Il filtro avanzato per i connettori migliora inoltre l'accuratezza del filtro per i criteri di protezione da posta indesiderata e anti-phishing Exchange Online Protection (EOP) esistenti.
 
-Il filtro avanzato per i connettori migliora l'accuratezza del filtro, ma può alterare la recapitabilità di alcuni messaggi se si dispone di un gruppo di protezione di Exchange davanti a Defender per Office 365 e attualmente non ignorare il filtro EOP. L'impatto è limitato ai criteri EOP; I criteri MDO impostati come parte della valutazione vengono creati in modalità non di imposizione. Per ridurre al minimo il potenziale impatto sulla produzione, è possibile ignorare tutti i filtri EOP creando una regola del flusso di posta (nota anche come regola di trasporto) per impostare il livello di probabilità di posta indesiderata (SCL) dei messaggi su -1. Per informazioni dettagliate, vedere Use [mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)  
+Il filtro avanzato per i connettori migliora l'accuratezza del filtro, ma può alterare la recapitabilità di alcuni messaggi se si dispone di un gruppo di protezione di Exchange davanti a Defender per Office 365 e attualmente non ignorare il filtro EOP. L'impatto è limitato ai criteri EOP; Defender per Office 365 criteri impostati come parte della valutazione vengono creati in modalità non di imposizione. Per ridurre al minimo il potenziale impatto sulla produzione, è possibile ignorare tutti i filtri EOP creando una regola del flusso di posta (nota anche come regola di trasporto) per impostare il livello di probabilità di posta indesiderata (SCL) dei messaggi su -1. Per informazioni dettagliate, vedere Use [mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)  
 
 Quando viene impostata la modalità di valutazione, ogni giorno verrà aggiornato un rapporto con fino a 90 giorni di dati che quantificano i messaggi che sarebbero stati bloccati se i criteri fossero stati implementati (ad esempio, eliminare, inviare alla posta indesiderata, mettere in quarantena). I report vengono generati per tutti i rilevamenti di Defender Office 365 ed EOP. Vengono aggregati per tecnologia di rilevamento (ad esempio, la rappresentazione) e possono essere filtrati in base all'intervallo di tempo. Inoltre, i rapporti dei messaggi possono essere creati su richiesta per creare pivot personalizzati o per approfondire i messaggi usando Explorer.
 

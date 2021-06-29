@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137776"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169617"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -89,6 +89,7 @@ Nella tabella seguente sono riportate le differenze di comportamento tra i due m
 |Limitazione in base alla posizione|No |Sì |
 |Condizioni: Classificatori sottoponibili a training|Sì |No |
 |Condizioni: Opzioni di condivisione e opzioni aggiuntive per la posta elettronica|No |Sì |
+|Condizioni: Eccezioni|No |Sì (solo posta elettronica) |
 |Consigli, suggerimento criteri e criteri ignorati dagli utenti|Sì |No |
 |Modalità di simulazione|No |Sì |
 |Verifica delle condizioni negli allegati di Exchange|No | Sì|
@@ -297,7 +298,17 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     - L'allegato è protetto da password
     - Non è stato possibile analizzare il contenuto degli allegati di posta elettronica
     - L'analisi del contenuto degli allegati di posta elettronica non è stata completata
-
+    - L'intestazione corrisponde ai criteri
+    - Il soggetto corrisponde ai criteri
+    - L'indirizzo del destinatario contiene parole
+    - L'indirizzo del destinatario corrisponde ai criteri
+    - L'indirizzo del mittente corrisponde ai criteri
+    - Il dominio del mittente è
+    - Il destinatario è un membro di
+    - Il mittente è
+    
+    Per ognuna di queste condizioni, è quindi possibile specificare le eccezioni.
+    
 8. A seconda delle scelte effettuate in precedenza, è possibile creare regole nuove usando condizioni ed eccezioni.
     
     Le opzioni di configurazione per i tipi di informazioni sensibili sono identiche a quelle selezionate per l'applicazione automatica di etichette per le app di Office. Per altre informazioni, vedere [Configurazione dei tipi di informazioni sensibili per un'etichetta](#configuring-sensitive-info-types-for-a-label).

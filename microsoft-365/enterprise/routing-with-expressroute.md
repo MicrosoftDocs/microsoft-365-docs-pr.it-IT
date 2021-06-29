@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: In questo articolo sono disponibili informazioni sui requisiti di routing, i circuiti e i domini di routing di Azure ExpressRoute da usare con Office 365.
-ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b27e3cfe41af8cf5e444f1221f1cee2e3bbf5826
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687170"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194794"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing con ExpressRoute per Office 365
 
@@ -85,14 +85,6 @@ Per fare in modo che Microsoft instrada di nuovo alla rete questi flussi di traf
 
 Quando si configura una relazione di peering utilizzando il dominio di routing di peering Microsoft e vengono approvati per l'accesso appropriato, sarà possibile visualizzare tutti i servizi PaaS e SaaS disponibili su ExpressRoute. I Office 365 progettati per ExpressRoute possono essere gestiti con [community BGP](./bgp-communities-in-expressroute.md) o [filtri di route.](/azure/expressroute/how-to-routefilter-portal)
   
-Altre applicazioni, ad esempio Office 365 Video, sono Office 365 applicazioni. tuttavia, Office 365 Video è costituito da tre diversi componenti, il portale, il servizio di streaming e la rete di recapito dei contenuti. Il portale si trova all'interno di SharePoint Online, il servizio di streaming si trova all'interno di Servizi multimediali di Azure e la rete di recapito dei contenuti si trova all'interno del Rete CDN di Azure. Nella tabella seguente vengono descritti questi componenti.
-
-|**Componente**|**Applicazione sottostante**|**Incluso in SharePoint BGP online Community?**|**Utilizzo**|
-|:-----|:-----|:-----|:-----|
-|Office 365 Portale video  <br/> |SharePoint Online  <br/> |Sì  <br/> |Configurazione, caricamento  <br/> |
-|Office 365 Servizio di streaming video  <br/> |Servizi multimediali di Azure  <br/> |No  <br/> |Servizio di streaming, usato nel caso in cui il video non sia disponibile dal rete CDN  <br/> |
-|Office 365 Rete per la distribuzione di contenuti video  <br/> |Rete CDN di Azure  <br/> |No  <br/> |Origine principale di download/streaming video. [Ulteriori informazioni su Office 365 rete video.](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e)  <br/> |
-
 Ognuna delle funzionalità Office 365 disponibili utilizzando il peering Microsoft sono elencate nell'articolo Office 365 [endpoint](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) per tipo di applicazione e FQDN. Il motivo per l'uso del nome di dominio completo nelle tabelle è consentire ai clienti di gestire il traffico tramite file PAC o altre configurazioni proxy, vedere la guida alla gestione degli [endpoint](./managing-office-365-endpoints.md) di Office 365 ad esempio i file PAC.
   
 In alcuni casi è stato utilizzato un dominio con caratteri jolly in cui uno o più FQDN secondari vengono annunciati in modo diverso rispetto al dominio con caratteri jolly di livello superiore. Questo accade in genere quando il carattere jolly rappresenta un lungo elenco di server tutti annunciati a ExpressRoute e a Internet, mentre un piccolo sottoinsieme di destinazioni viene annunciato solo su Internet o al contrario. Fare riferimento alle tabelle seguenti per comprendere dove sono le differenze.
@@ -259,6 +251,6 @@ Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/erorouting](
   
 [Piano di risoluzione dei problemi di prestazioni per Office 365](performance-troubleshooting-plan.md)
   
-[Intervalli di indirizzi IP e URL di Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL e intervalli di indirizzi IP di Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Ottimizzazione delle prestazioni e della rete di Office 365](network-planning-and-performance.md)

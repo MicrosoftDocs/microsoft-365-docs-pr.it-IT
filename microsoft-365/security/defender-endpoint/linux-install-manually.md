@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105573"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195022"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint su Linux
 
@@ -92,7 +92,7 @@ Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipa
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    Oppure, se vuoi esplorare nuove funzionalità su dispositivi selezionati, potresti voler distribuire MDE per Linux nel canale *veloce per i insider:*
+    Oppure, se vuoi esplorare nuove funzionalità su dispositivi selezionati, potresti voler distribuire Microsoft Defender for Endpoint su Linux nel canale *veloce per i insider:*
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -120,7 +120,7 @@ Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipa
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Ad esempio, se si esegue SLES 12 e si desidera distribuire MDE per Linux dal *canale prod:*
+    Ad esempio, se si esegue SLES 12 e si desidera distribuire Microsoft Defender for Endpoint su Linux dal *canale prod:*
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -400,13 +400,13 @@ Durante l'aggiornamento del sistema operativo a una nuova versione principale, d
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Come eseguire la migrazione da Insiders-Fast al canale di produzione
 
-1. Disinstallare la versione "Insiders-Fast Channel" di MDE per Linux.
+1. Disinstallare la versione "Insiders-Fast Channel" di Defender per Endpoint su Linux.
 
     ``
     sudo yum remove mdatp
     ``
 
-1. Disabilitare mdE per Linux Insiders-Fast repo  ``
+1. Disabilitare defender per endpoint in Insiders-Fast Linux  ``
     sudo yum repolist
     ``
 

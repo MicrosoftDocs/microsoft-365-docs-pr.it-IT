@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f9d56b7e72befb8acddf6d9f810a7ba5cec1083
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: b82b6993ce9ed5a3f0f3e6e13e8a260a185c9730
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694366"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194974"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Risolvere i problemi e trovare risposte alle domande frequenti su Microsoft Defender per Endpoint su iOS
 
@@ -58,7 +58,7 @@ Anche se abilitata per impostazione predefinita, in alcuni casi potrebbe essere 
 > [!NOTE]
 > Protezione Web non sarà disponibile quando LA VPN è disabilitata. Per abilitare di nuovo Web Protection, apri l'app Microsoft Defender for Endpoint nel dispositivo e tocca o fai clic su **Avvia VPN.**
 
-## <a name="issues-with-multiple-vpn-profiles"></a>Problemi con più profili VPN
+## <a name="co-existence-with-multiple-vpn-profiles"></a>Coesistenza con più profili VPN
 
 Apple iOS non supporta più VPN **a livello** di dispositivo per essere attive contemporaneamente. Anche se nel dispositivo possono esistere più profili VPN, può essere attiva una sola VPN alla volta.
 
@@ -74,7 +74,11 @@ Inoltre, la VPN utilizzata è una VPN locale e, a differenza di una VPN tradizio
 
 ## <a name="data-usage"></a>Utilizzo dei dati
 
-Microsoft Defender for Endpoint usa una VPN locale/loopback per controllare il traffico Web per eventuali connessioni o siti Web dannosi. Per questo motivo, l'utilizzo dei dati di Microsoft Defender for Endpoint può essere inesatto. L'utilizzo effettivo dei dati da parte di Microsoft Defender per Endpoint non è significativo e minore di quello mostrato nella pagina Utilizzo dati Impostazioni nel dispositivo.
+Microsoft Defender for Endpoint usa una VPN locale/loopback per controllare il traffico Web per eventuali connessioni o siti Web dannosi. Per questo motivo, l'utilizzo dei dati di Microsoft Defender for Endpoint può essere inesatto. Abbiamo anche osservato che se il dispositivo si trova solo sulla rete cellulare, l'utilizzo dei dati riportato dal provider di servizi è molto vicino al consumo effettivo, mentre nell'app Impostazioni Apple mostra da 1,5 a 2x dei dati effettivi utilizzati.
+
+Abbiamo osservazioni simili anche con altri servizi VPN e lo abbiamo segnalato ad Apple.
+
+Inoltre, è fondamentale che Microsoft Defender for Endpoint sia aggiornato con i servizi back-end per garantire una protezione migliore. Tuttavia, stiamo lavorando all'ottimizzazione dell'utilizzo dei dati da parte di Microsoft Defender per Endpoint.
 
 ## <a name="report-unsafe-site"></a>Segnala sito non sicuro
 

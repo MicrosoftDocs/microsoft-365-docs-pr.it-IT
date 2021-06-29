@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 077411e5af5825efcf81d19ce8cb72ef850ae17b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 7243e8f6fad225e6c4570184736e8d6588466d0a
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054313"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194962"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuzione basata su Intune per Microsoft Defender per Endpoint in macOS
 
@@ -101,18 +101,18 @@ Questo profilo contiene informazioni sulla licenza per Microsoft Defender for En
     > [!div class="mx-imgBorder"]
     > ![Creazione di profili di configurazione personalizzati](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. Scegliere un nome per il profilo, ad esempio "Onboarding MDE per macOS". Fare clic su **Avanti**.
+1. Scegli un nome per il profilo, ad esempio "Onboarding defender o endpoint per macOS". Scegliere **Avanti**.
 
     > [!div class="mx-imgBorder"]
     > ![Profilo di configurazione personalizzato - nome](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. Scegliere un nome per il nome del profilo di configurazione, ad esempio "Onboarding MDE per macOS".
+1. Scegli un nome per il nome del profilo di configurazione, ad esempio "Defender for Endpoint onboarding for macOS".
 1. Seleziona intune/WindowsDefenderATPOnboarding.xml estratto dal pacchetto di onboarding precedente come file del profilo di configurazione.
 
     > [!div class="mx-imgBorder"]
     > ![Importare una configurazione da un file per il profilo di configurazione personalizzato](images/mdatp-6-systemconfigurationprofiles.png)
 
-1. Fare clic su **Avanti**.
+1. Scegliere **Avanti**.
 1. Assegnare dispositivi nella **scheda Assegnazione.** Fare clic su **Avanti.**
 
     > [!div class="mx-imgBorder"]
@@ -172,7 +172,7 @@ Questo profilo è necessario per macOS 10.15 (Catalina) o versioni precedenti. V
 
 Scaricare [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) dal [repository GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-Seguire le istruzioni per il BLOB di [onboarding](#onboarding-blob) dall'alto, usando "MdE Full Disk Access" come nome del profilo e **scaricando fulldisk.mobileconfig** come nome del profilo di configurazione.
+Segui le istruzioni per il BLOB di [onboarding](#onboarding-blob) dall'alto, usando "Defender for Endpoint Full Disk Access" come nome del profilo e scarica **fulldisk.mobileconfig** come nome del profilo di configurazione.
 
 ### <a name="network-filter"></a>Filtro di rete
 
@@ -180,7 +180,7 @@ Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microso
 
 Scaricare [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) dal [repository GitHub .](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-Segui le istruzioni per [il BLOB di onboarding](#onboarding-blob) dall'alto, usando "Filtro di rete MDE" come nome del profilo e **scaricando netfilter.mobileconfig** come nome del profilo di configurazione.
+Segui le istruzioni per [il BLOB di onboarding](#onboarding-blob) dall'alto, usando "Defender for Endpoint Network Filter" come nome del profilo e **scaricando netfilter.mobileconfig** come nome del profilo di configurazione.
 
 ### <a name="notifications"></a>Notifiche
 
@@ -188,7 +188,7 @@ Questo profilo viene usato per consentire a Microsoft Defender for Endpoint su m
 
 Scaricare [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) dal [repository GitHub .](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-Segui le istruzioni per [il BLOB di onboarding](#onboarding-blob) dall'alto, usando "Notifiche MDE" come nome del profilo e **scaricando notif.mobileconfig** come nome del profilo di configurazione.
+Segui le istruzioni per [il BLOB di onboarding](#onboarding-blob) dall'alto, usando "Defender for Endpoint Notifications" come nome del profilo e **scaricando notif.mobileconfig** come nome del profilo di configurazione.
 
 ### <a name="view-status"></a>Visualizza stato
 

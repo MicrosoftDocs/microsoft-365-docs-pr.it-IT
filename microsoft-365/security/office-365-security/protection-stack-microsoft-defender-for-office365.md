@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Seguire il percorso di un messaggio in arrivo tramite lo stack di filtro delle minacce in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1113d04cabdabe2925242cb18dde78daf9ef6e2c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683296"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194806"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Procedura dettagliata per la protezione dalle minacce in Microsoft Defender per Office 365
 
@@ -51,7 +51,7 @@ I blocchi perimetrali sono progettati per essere automatici. In caso di falso po
 
 Le funzionalità dell'intelligence mittente sono fondamentali per l'intercettazione di messaggi di posta indesiderata, in blocco, di rappresentazione e spoofing non autorizzati, oltre che per il rilevamento di falsi. La maggior parte di queste funzionalità è configurabile singolarmente.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La fase 2 del filtro in MDO è Sender intelligence.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Fase 2 del filtro in Defender per Office 365 è Sender intelligence.":::
 
 1. **I trigger e gli** avvisi di rilevamento della compromissione dell'account vengono generati quando un account ha un comportamento anomalo, coerentemente con la compromissione. In alcuni casi, l'account utente viene bloccato e non può inviare ulteriori messaggi di posta elettronica fino a quando il problema non viene risolto dal team delle operazioni di sicurezza di un'organizzazione.
 
@@ -99,7 +99,7 @@ In questa fase lo stack di filtri inizia a gestire il contenuto specifico del me
 
 8. **L'euristica del** contenuto può rilevare messaggi sospetti in base alla struttura e alla frequenza delle parole all'interno del corpo del messaggio, utilizzando modelli di machine learning.
 
-9. **Allegati sicuri** consente di creare sandbox per ogni allegato per Defender Office 365 clienti, usando l'analisi dinamica per rilevare le minacce mai viste prima.
+9. **Cassaforte allegati consente** di creare sandbox per ogni allegato per Defender Office 365 clienti, usando l'analisi dinamica per rilevare minacce mai viste prima.
 
 10. **La detonazione del** contenuto collegato considera ogni URL che si collega a un file in un messaggio di posta elettronica come allegato, inviando in modo asincrono in modalità sandbox il file al momento del recapito.
 
@@ -111,7 +111,7 @@ L'ultima fase si verifica dopo il recapito della posta o dei file, agendo sulla 
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="La fase 4 del filtro in Defender per Office 365 è la protezione post-recapito.":::
 
-1. **Collegamenti sicuri** è Defender per Office 365 protezione con il tempo di clic. Ogni URL in ogni messaggio viene racchiuso in modo che punti ai server Collegamenti sicuri Microsoft. Quando si fa clic su un URL, viene controllato rispetto alla reputazione più recente, prima che l'utente venga reindirizzato al sito di destinazione. L'URL viene in modalità sandbox asincrona per aggiornarne la reputazione.
+1. **Cassaforte link è** Defender per Office 365 protezione basata sul clic. Ogni URL in ogni messaggio viene racchiuso in modo che punti ai server Microsoft Cassaforte Links. Quando si fa clic su un URL, viene controllato rispetto alla reputazione più recente, prima che l'utente venga reindirizzato al sito di destinazione. L'URL viene in modalità sandbox asincrona per aggiornarne la reputazione.
 
 2. **Zero-Hour Auto-purge (ZAP)** per il phishing rileva e neutralizza retroattivamente i messaggi di phishing dannosi che sono già stati recapitati a Exchange Online cassette postali.
 
@@ -123,9 +123,9 @@ L'ultima fase si verifica dopo il recapito della posta o dei file, agendo sulla 
 
 6. **I componenti** aggiuntivi Segnala messaggio consentono agli utenti di segnalare facilmente falsi positivi (posta elettronica buona, erroneamente contrassegnata come non *buona)* o falsi negativi (posta elettronica errata contrassegnata come *buona)* a Microsoft per ulteriori analisi.
 
-7. **Collegamenti sicuri per i client Office** offre la stessa protezione basata sul clic dei collegamenti sicuri, in modo nativo, all'interno di client Office come Word, PowerPoint e Excel.
+7. **Cassaforte Collegamenti** per i client Office offre la stessa protezione basata sul clic dei collegamenti Cassaforte, in modo nativo, all'interno di client Office come Word, PowerPoint e Excel.
 
-8. **La protezione per OneDrive, SharePoint** e Teams offre la stessa protezione degli allegati sicuri da file dannosi, in modo nativo, all'interno di OneDrive, SharePoint e Microsoft Teams.
+8. **La protezione per OneDrive, SharePoint e Teams** offre la stessa protezione degli allegati Cassaforte da file dannosi, in modo nativo, all'interno di OneDrive, SharePoint e Microsoft Teams.
 
 9. Quando si seleziona un URL che punta a un file dopo il recapito, la **detonazione** del contenuto collegato visualizza una pagina di avviso fino al completamento della sandbox del file e l'URL viene trovato sicuro.
 
@@ -133,9 +133,9 @@ L'ultima fase si verifica dopo il recapito della posta o dei file, agendo sulla 
 
 Il diagramma finale (come tutte le parti del diagramma che lo compone) è soggetto a modifiche man mano che il prodotto cresce *e si sviluppa.* Aggiungi un segnalibro a questa pagina e usa l'opzione **di feedback** che troverai in basso se devi chiedere dopo gli aggiornamenti. Per i record, questo è lo stack con tutte le fasi nell'ordine:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Tutte le fasi del filtro in MDO nell'ordine da 1 a 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Tutte le fasi del filtro in Defender per Office 365 in ordine, da 1 a 4.":::
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 È necessario configurare Microsoft Defender per Office 365 ***in questo momento** _? Usa questo stack, _now*, con questa procedura dettagliata per [iniziare](protect-against-threats.md) a proteggere l'organizzazione.
 

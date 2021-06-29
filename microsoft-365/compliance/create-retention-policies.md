@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053072"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169593"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -116,7 +116,7 @@ Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessar
 ### <a name="retention-policy-for-yammer-locations"></a>Criterio di conservazione per posizioni di Yammer
 
 > [!NOTE]
-> I criteri di conservazione per Yammer sono disponibili in anteprima.
+> I criteri di conservazione per Yammer sono in anteprima e attualmente non informano gli utenti quando i messaggi vengono eliminati in seguito a un criterio di conservazione.
 >
 > Per usare questa funzionalità, la rete Yammer deve essere in [Modalità nativa](/yammer/configure-your-yammer-network/overview-native-mode), non nella Modalità ibrida.
 
