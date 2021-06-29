@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configura Dispositivi mobili e sicurezza di base per proteggere e gestire i dispositivi mobili degli utenti eseguendo azioni come la pulizia remota di un dispositivo.
-ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f1cfa6cdc8d799ba62c687408cb12a4ba453f313
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634293"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177274"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Impostare Basic Mobility + Security
 
 L'ambiente di mobilità e sicurezza di base integrato per Microsoft 365 consente di proteggere e gestire i dispositivi mobili degli utenti, ad esempio iPhone, iPad, Android e Windows telefoni. È possibile creare e gestire criteri di sicurezza, cancellare tutti i dati in remoto e visualizzare report dettagliati sui dispositivi.
 
-Hai domande? Per domande frequenti su come risolvere le domande più comuni, vedere [Basic Mobility and Security Frequently-asked questions (FAQ)](frequently-asked-questions.md). Tenere presente che non è possibile utilizzare un account amministratore delegato per gestire i dispositivi mobili e la sicurezza di base. Per altre info, vedi [Partner: Offrire l'amministrazione delegata.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
+Hai domande? Per domande frequenti su come risolvere le domande più comuni, vedere [Basic Mobility and Security Frequently-asked questions (FAQ)](frequently-asked-questions.yml). Tenere presente che non è possibile utilizzare un account amministratore delegato per gestire i dispositivi mobili e la sicurezza di base. Per altre info, vedi [Partner: Offrire l'amministrazione delegata.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
 
 La gestione dei dispositivi fa parte del Centro sicurezza & conformità, quindi dovrai andare lì per avviare la configurazione di base per dispositivi mobili e sicurezza.
 
@@ -49,7 +49,7 @@ Quando il servizio è pronto, completare la procedura seguente per completare l'
 
 Se non hai un dominio personalizzato associato a Microsoft 365 o se non stai gestendo Windows dispositivi, puoi ignorare questa sezione. In caso contrario, sarà necessario aggiungere record DNS per il dominio nell'host DNS. Se i record sono già stati aggiunti, come parte della configurazione del dominio con Microsoft 365, si è tutti impostati. Dopo aver aggiunto i record, gli utenti Microsoft 365 dell'organizzazione che a tale dispositivo a cui accede Windows con un indirizzo di posta elettronica che utilizza il dominio personalizzato vengono reindirizzati per la registrazione a Dispositivi mobili e sicurezza di base.
 
-Serve assistenza per la configurazione dei record? Individuare il registrar e selezionare il nome del registrar per accedere alla Guida dettagliata per la creazione di record DNS nell'elenco fornito in [Add DNS records to connect your domain](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Seguire queste istruzioni per creare record CNAME descritti in [Semplificare](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)Windows registrazione senza Azure AD Premium .
+Serve assistenza per la configurazione dei record? Individuare il registrar e selezionare il nome del registrar per accedere alla Guida dettagliata per la creazione di record DNS nell'elenco fornito in [Add DNS records to connect your domain](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Seguire queste istruzioni per creare record CNAME descritti in [Semplificare Windows registrazione senza Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
 Dopo aver aggiunto i due record CNAME, tornare al Centro sicurezza e conformità & e passare a Prevenzione della perdita di dati Gestione dei dispositivi per completare  >     il passaggio successivo.
 

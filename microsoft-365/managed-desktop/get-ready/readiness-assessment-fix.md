@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5a22996ce9e39dc16191ddddc6aa9393de557bbc
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579411"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177574"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
@@ -66,6 +66,14 @@ Almeno un connettore di certificato ha un errore. Se è necessario questo connet
 
 Si dispone di almeno un connettore di certificato e non vengono segnalati errori. Tuttavia, in preparazione della distribuzione, potrebbe essere necessario creare un profilo per riutilizzare il connettore per Microsoft Managed Desktop dispositivi. Per ulteriori informazioni, vedere [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
+### <a name="company-portal"></a>Portale aziendale
+
+Microsoft Managed Desktop che gli amministratori IT installino Portale aziendale Intune per gli utenti con Microsoft Managed Desktop dispositivi. 
+
+**Non pronto**
+
+Non hai installato Portale aziendale per gli utenti. Acquistare Portale aziendale e forzare una sincronizzazione tra Intune e Microsoft Store per le aziende. Per altre informazioni, vedi [Installare Portale aziendale Intune nei dispositivi](../get-started/company-portal.md).
+
 
 ### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
 
@@ -86,7 +94,7 @@ Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per 
 - Ruolo con autorizzazioni di lettura per la sicurezza
 - Amministratore della sicurezza
 - Amministratore accesso condizionale
-- Lettore globale
+- Ruolo con autorizzazioni di lettura globali
 - Amministratore dispositivi
 
 
@@ -167,7 +175,7 @@ Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per 
 - Ruolo con autorizzazioni di lettura per la sicurezza
 - Amministratore della sicurezza
 - Amministratore accesso condizionale
-- Lettore globale
+- Ruolo con autorizzazioni di lettura globali
 - Amministratore dispositivi
 
 
@@ -218,7 +226,7 @@ Puoi chiedere al rappresentante dell'account Microsoft una query in Microsoft En
 
 ### <a name="windows-hello-for-business"></a>Windows Hello for Business
 
-Microsoft Managed Desktop necessario Windows che Hello for Business sia abilitato.
+Microsoft Managed Desktop richiede Windows Hello per l'a attivazione di Business.
 
 **Non pronto**
 
@@ -226,7 +234,7 @@ Windows Hello for Business è disabilitato. Abilitarlo seguendo la procedura des
 
 **Avviso**
 
-Windows Hello for Business non è configurato. Abilitarlo seguendo la procedura descritta in [Create a Windows Hello for Business policy.](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
+Windows Hello per le aziende non è configurato. Abilitarlo seguendo la procedura descritta in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10 di aggiornamento

@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Usare l'API REST per ottenere o aggiornare le informazioni su un modello di analisi dei documenti di SharePoint Syntex.
-ms.openlocfilehash: aa97e0fde57c6d5200b437a8f9c7187c0980cc5b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 306bcd894b6339575f8c91ac3c4fb89f2033f3bc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904230"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177106"
 ---
 # <a name="getbyuniqueid"></a>GetByUniqueId
 
@@ -25,13 +25,13 @@ Ottiene o aggiorna le informazioni su un modello di analisi dei documenti di Sha
 ## <a name="http-request"></a>Richiesta HTTP
 
 ```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
 Lo stesso metodo può essere usato anche per eliminare un modello. 
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
+DELETE /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
 ```
 ## <a name="uri-parameters"></a>Parametri URI
 
@@ -64,12 +64,12 @@ In questo esempio l'ID del modello di analisi dei documenti Contoso Contract è 
 #### <a name="sample-request"></a>Richiesta di esempio
 
 ```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
 #### <a name="sample-response"></a>Risposta di esempio
 
-**Codice di stato:** 204
+**Codice di stato:** 200
 
 ```HTTP
 {
@@ -107,7 +107,7 @@ In questo esempio l'ID del modello di analisi dei documenti Contoso Contract è 
 #### <a name="sample-request"></a>Richiesta di esempio
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+DELETE /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
 ## <a name="see-also"></a>Vedere anche

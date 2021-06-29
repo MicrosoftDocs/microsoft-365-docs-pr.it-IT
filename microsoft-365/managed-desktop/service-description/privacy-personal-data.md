@@ -12,140 +12,75 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861684"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177478"
 ---
-# <a name="privacy-and-personal-data"></a>Privacy e dati personali
+# <a name="overview"></a>Panoramica
 
-Gli utenti possono ricevere, trasmettere e archiviare dati nei dispositivi gestiti da Microsoft Managed Desktop. Si fidano che la privacy dei dati sia protetta e usata solo in modo coerente con le loro aspettative. In questo articolo viene illustrato Microsoft Managed Desktop, archivia, conserva, elabora, protegge, condivide, controlla ed esporta i dati personali. Scoprirai anche come un amministratore può visualizzare, correggere ed eliminare i dati personali.
+Microsoft Managed Desktop è un servizio IT-as-a-Service (ITaaS) per i clienti cloud aziendali progettato per mantenere distribuiti e aggiornati i dispositivi Windows dipendenti. Fornisce inoltre la gestione e le operazioni dei servizi IT, monitora la sicurezza e la risposta agli incidenti, oltre a fornire supporto agli utenti. Questa documentazione fornisce ulteriori dettagli sulla piattaforma dati e sulla conformità alla privacy per Microsoft Managed Desktop.
 
-Microsoft Managed Desktop non utilizza i dati personali raccolti nell'ambito della fornitura del servizio per scopi di profilatura, pubblicità o marketing.
+## <a name="microsoft-managed-desktop-data-sources-and-purpose"></a>Microsoft Managed Desktop origini dati e scopo
 
-## <a name="data-collection-of-microsoft-managed-desktop"></a>Raccolta dati di Microsoft Managed Desktop
+Microsoft Managed Desktop fornisce il proprio servizio ai clienti aziendali e gestisce correttamente i dispositivi registrati dei clienti utilizzando dati provenienti da diverse origini. Queste origini, tra cui Azure Active Directory, Microsoft Intune, Microsoft Windows 10 e Microsoft Defender for Endpoint, offrono una visualizzazione completa dei dispositivi che Microsoft Managed Desktop gestire. Il servizio usa anche questi servizi Microsoft per abilitare Microsoft Managed Desktop fornire funzionalità ITaaS:
 
-Quando gli utenti registrano i dispositivi aziendali in Microsoft Managed Desktop, la raccolta dei dati viene gestita a livello tecnico tramite Windows e Microsoft Intune. Queste origini raccolgono dati personali sui dispositivi degli utenti, ad esempio i nomi dei dispositivi per Microsoft Managed Desktop per poter identificare il dispositivo da gestire e fornito con le esperienze Microsoft Managed Desktop utenti.
+- [Microsoft Windows 10 Enterprise-](/windows/windows-10/) per la gestione dell'esperienza di configurazione dei dispositivi, la gestione delle connessioni ad altri servizi e il supporto operativo per i professionisti IT.
+- [Windows Update for Business:](/windows/deployment/update/waas-manage-updates-wufb) usa Windows 10 Enterprise dati di diagnostica per fornire ulteriori informazioni sull Windows 10 aggiornamento. 
+- [Microsoft Endpoint Manager:](/mem/endpoint-manager-overview) per la gestione dei dispositivi e per proteggere i dati.
+  - [Microsoft Azure Active Directory](/azure/active-directory/) - per l'autenticazione e l'identificazione di tutti gli account utente. 
+  - [Microsoft Intune:](/mem/intune/) per la distribuzione delle configurazioni dei dispositivi, la gestione dei dispositivi e la gestione delle applicazioni.
+  - [Endpoint Analytics:](/mem/analytics/overview) per informazioni analitiche sull'utilizzo di dispositivi e app.
+  - [Windows Autopilot](/microsoft-365/windows/windows-autopilot) : per il provisioning e la distribuzione dei dispositivi.
+  - [Microsoft Defender for Endpoint:](/microsoft-365/security/defender-endpoint/) fornisce servizi di sicurezza come il monitoraggio della sicurezza dei dispositivi e i dati di intelligence per la sicurezza.
+- [Microsoft Managed Desktop:](https://endpoint.microsoft.com/#home) dati forniti dal cliente o generati dal servizio durante l'esecuzione del servizio.
+- [Microsoft 365 per le aziende](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1) – per la gestione di Microsoft 365 Apps.
 
-Microsoft Managed Desktop raccoglie dati da solo per fornire il proprio servizio (ad eccezione delle informazioni di contatto [dell'amministratore IT.](#it-admin-contact-information) Vengono invece Microsoft Managed Desktop dati già raccolti da altre origini, ad esempio Windows e Microsoft Intune. Microsoft Managed Desktop dati raccolti da questi servizi dai dispositivi registrati:
+## <a name="microsoft-managed-desktop-data-process-and-storage"></a>Microsoft Managed Desktop e archiviazione dei dati
 
-- Windows dati di diagnostica dei dispositivi gestiti da Microsoft Managed Desktop vengono inviati agli archivi dati di diagnostica Windows microsoft.
-- Microsoft Managed Desktop la [gestione moderna per](/learn/modules/introduction-to-modern-management-in-microsoft-365/) la gestione dei dispositivi registrati. Come parte della "gestione moderna", i dispositivi devono essere registrati nell'Azure Active Directory del tenant.
-- Per distribuire la configurazione altamente ottimizzata e sicura ai dispositivi registrati, Microsoft Managed Desktop usa Microsoft Intune.
-- Microsoft Managed Desktop i dati di intelligence di sicurezza di Microsoft Defender Advanced Thread Protection per i clienti che usano quel servizio.
-
-## <a name="data-storage-and-sources-in-microsoft-managed-desktop"></a>Archiviazione e origini dati in Microsoft Managed Desktop
-
-Dopo Microsoft Managed Desktop ottenere i dati, deve fornire il servizio, l'archiviazione e l'elaborazione di questi dati procede come segue:
-
-### <a name="storing-data-storage-location-and-data-retention"></a>Archiviazione di dati, posizione di archiviazione e conservazione dei dati
-
-Microsoft Managed Desktop i dati in uno o più dei seguenti servizi di archiviazione Microsoft:
-
-- Azure SQL
-- Archiviazione di Azure
-- Dynamics 365
-
-Microsoft Managed Desktop i dati vengono archiviati negli Stati Uniti. I dati personali vengono conservati da Microsoft Managed Desktop per un massimo di 30 giorni, ad eccezione dei dati di avviso per i dispositivi Microsoft Managed Desktop raccolti da Microsoft Defender per Endpoint. I dati effettivi dell'avviso (che potrebbero includere dati personali) vengono archiviati per 180 giorni. I dati degli avvisi con i dati personali rimossi vengono archiviati per un massimo di due anni. In conformità al Regolamento generale sulla protezione dei dati (GDPR) e al California Consumer Privacy Act (CCPA), Microsoft Managed Desktop rispetta i diritti dell'oggetto dei dati per tutti i dati personali archiviati nei dati di avviso.
-
-### <a name="staff-location"></a>Posizione del personale
-
-I Microsoft Managed Desktop Operations and Security Operations si trovano negli Stati Uniti e in India.
-
-## <a name="data-usage-of-microsoft-managed-desktop"></a>Utilizzo dei dati di Microsoft Managed Desktop
-
-Microsoft Managed Desktop questi dati:
+Microsoft Managed Desktop si basa sui dati di più prodotti e servizi Microsoft per fornire il proprio servizio ai clienti aziendali. Per raggiungere l'obiettivo di proteggere e mantenere i dispositivi registrati, eelaborare e copiare i dati da questi servizi a Microsoft Managed Desktop. Quando eseguiamo i dati, seguiamo le indicazioni documentate fornite dall'utente, come indicato nelle Condizioni dei Servizi online e nell'Informativa sulla privacy Microsoft. Quando eseguiamo i dati, seguiamo le indicazioni documentate fornite dall'utente, come indicato nelle Condizioni dei Servizi [online](https://www.microsoft.com/licensing/product-licensing/products) e nell'Informativa [sulla privacy Microsoft.](https://privacy.microsoft.com/privacystatement) Microsoft Managed Desktop del processore includono la garanzia di riservatezza, sicurezza e resilienza appropriate. Microsoft Managed Desktop adotta ulteriori misure di privacy e sicurezza per garantire una corretta gestione dei dati personali identificabili. 
 
 
-| Origini dati |Da usare con Microsoft Managed Desktop  |
-|---------|---------|
-|Azure Active Directory dati     | Usato nei report creati per gli amministratori tenant, disponibili nel portale Microsoft Managed Desktop admin.        |
-|Dati di Intune     | Usato nei report creati per gli amministratori tenant, disponibili nel portale Microsoft Managed Desktop admin.        |
-|Microsoft Defender per endpoint     |  Usato per affrontare le minacce alla sicurezza rilevate nei dispositivi registrati dal Security Operations Center (SOC) di Microsoft Managed Desktop.  |
-|Windows di diagnostica     |Usato per determinare lo stato di aggiornamento dei dispositivi gestiti e per fornire e migliorare l'offerta ITaaS (IT-as-a-Service) di Microsoft Managed Desktop.         |
-|Dati di contatto dell'amministratore     | Usato da Microsoft Managed Desktop per comunicare con gli amministratori tenant.        |
+## <a name="microsoft-managed-desktop-data-storage-and-staff-location"></a>Microsoft Managed Desktop dell'archiviazione dei dati e della posizione del personale
 
+Microsoft Managed Desktop i propri dati nei data center di Azure negli Stati Uniti. I dati personali ottenuti da Microsoft Managed Desktop e altri servizi sono necessari per mantenere operativo il servizio. Se un dispositivo viene rimosso da Microsoft Managed Desktop, microsoft conserva i dati personali per un massimo di 30 giorni ad eccezione dei dati di avviso raccolti da Microsoft Defender per Endpoint, che viene archiviato per 180 giorni per motivi di sicurezza. Per ulteriori informazioni sulla conservazione dei dati, vedere [Conservazione, eliminazione](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)e distruzione dei dati in Microsoft 365 .
 
-### <a name="entities-processed-by-microsoft-managed-desktop"></a>Entità elaborate da Microsoft Managed Desktop
+Microsoft Managed Desktop I team di Engineering Operations e Security Operations si trovano negli Stati Uniti e in India. 
 
-Microsoft Managed Desktop elabora queste entità per fornire il servizio:
+## <a name="microsoft-windows-10-diagnostic-data"></a>Dati di diagnostica Windows 10 Microsoft
 
-- Dati del dispositivo
-- Impostazioni di sicurezza del dispositivo
-- Hardware e sistema operativo del dispositivo
-- Informazioni aggregate sull'integrità dei dispositivi
-- Informazioni di diagnostica del dispositivo
-- Dati tenant
-- Azure Active Directory risorse
-- Criteri e dati di configurazione
-- Metadati e dati di avviso di Microsoft Defender for Endpoint
-- Windows di diagnostica
-- Dati sull'utilizzo di prodotti e servizi
+Microsoft Managed Desktop utilizza [Windows 10 dati di diagnostica](/windows/privacy/windows-diagnostic-data) ottimizzati per mantenere Windows, aggiornati, risolvere i problemi e apportare miglioramenti al prodotto. L'impostazione dei dati di diagnostica avanzata include informazioni più dettagliate sui dispositivi registrati in Microsoft Managed Desktop e le relative impostazioni, funzionalità e integrità del dispositivo. Quando si selezionano dati di diagnostica avanzata, vengono raccolti i dati, inclusi i dati di diagnostica necessari. Vedi [Modifiche alla raccolta Windows dati di](/windows/privacy/changes-to-windows-diagnostic-data-collection) diagnostica per altre informazioni sull'impostazione Windows 10 dati di diagnostica e sulla raccolta dei dati.
 
-### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+La terminologia dei dati di diagnostica cambierà nelle versioni future di Windows. Microsoft Managed Desktop si impegna a elaborare solo i dati di cui ha bisogno il servizio. Anche se questo significa che il livello di diagnostica cambierà in Facoltativo, Microsoft Managed Desktop implementerà i criteri di diagnostica limitati per ottimizzare la raccolta dei dati di diagnostica necessaria per il servizio. Per ulteriori dettagli, vedere [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection).
 
-I dati di identità usati da Microsoft Managed Desktop vengono archiviati da Azure Active Directory in una posizione geografica in base all'indirizzo fornito dall'organizzazione durante la sottoscrizione di un servizio online Microsoft, ad esempio Office 365 o Azure. Vedere [Microsoft Azure— Dove sono i dati dei clienti?](http://azuredatacentermap.azurewebsites.net/) per una mappa che mostra i data center per Azure Active Directory.
+Microsoft Managed Desktop elabora e archivia solo i dati a livello di sistema da Windows 10 dati di diagnostica facoltativi provenienti da dispositivi registrati, ad esempio l'affidabilità delle applicazioni e dei dispositivi e le informazioni sulle prestazioni. Microsoft Managed Desktop non elabora e archivia i dati personali dei clienti, ad esempio la cronologia di chat e browser, i dati vocali, di testo o vocali. 
 
-Per ulteriori informazioni sulle aree geografiche utilizzate da Azure per l'archiviazione dei dati, [vedere Azure Active Directory–Where is your data located](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9).
+Per ulteriori informazioni sulla raccolta dei dati di diagnostica [](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) di Microsoft Windows 10, vedere la sezione Dove archiviamo ed eseiamo i dati personali dell'Informativa sulla privacy Microsoft.
 
-### <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-windows-update-for-business"></a>Microsoft Windows Update for Business
+Microsoft Windows Update for Business usa i dati di Windows diagnostica per analizzare lo stato e gli errori degli aggiornamenti. Microsoft Managed Desktop sfrutta questi dati e lo usa per ridurre e risolvere i problemi per garantire che tutti i dispositivi registrati siano aggiornati in base a una cadenza di aggiornamento predefinita.
 
-I dati di Intune possono essere archiviati in alcune aree geografiche diverse, ad esempio Europa Nord (Irlanda) e Europa Occidentale (Paesi Bassi). L'amministratore IT crea un account tenant e sceglie il paese in cui verranno archiviati i dati quando inizialmente si registrano nei servizi intune. Per un elenco delle posizioni dei data center usate da Intune, [vedere Microsoft Intune— Dove sono i dati dei clienti?](http://intunedatacentermap.azurewebsites.net/). Per altre informazioni sull'archiviazione dei dati e sull'uso da parte di Intune, vedi [Raccolta dati in Intune.](/intune/privacy-data-collect)
+## <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+L'identificazione dei dati utilizzati da Microsoft Managed Desktop viene archiviata da Azure Active Directory (Azure AD) in una posizione geografica in base alla posizione fornita dall'organizzazione durante la sottoscrizione ai servizi online Microsoft, ad esempio Microsoft Apps per le aziende e Azure. L'identificazione dei dati usati da Microsoft Managed Desktop viene archiviata da Azure AD in una posizione geografica in base alla posizione fornita dall'organizzazione durante la sottoscrizione ai servizi online Microsoft, ad esempio Microsoft Apps per le aziende e Azure. Per altre informazioni sulla posizione dei dati di Azure AD, [vedere Azure Active Directory - Dove si trovano i dati?](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
-### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender per endpoint
+## <a name="microsoft-intune"></a>Microsoft Intune
+Microsoft Intune raccoglie, elabora e condivide i dati Microsoft Managed Desktop per supportare le operazioni e i servizi aziendali. Per [altre informazioni](/mem/intune/protect/privacy-data-collect) sui dati raccolti in Intune, vedere Raccolta di dati in Intune. 
 
-I dati di Microsoft Defender for Endpoint possono essere archiviati in alcune aree geografiche diverse. Per questo motivo, Defender for Endpoint opera nei data center di Microsoft Azure nell'Unione Europea, nel Regno Unito e negli Stati Uniti, come indicato in [Microsoft Defender for Endpoint— Data storage locations](http://intunedatacentermap.azurewebsites.net/). Per altre informazioni sull'archiviazione dei dati e sull'uso da parte di Defender per Endpoint, vedi Quali dati vengono raccolti [da Microsoft Defender per Endpoint?](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Per ulteriori informazioni sulle posizioni Microsoft Intune dati, vedere [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide). Intune rispetta le selezioni della posizione di archiviazione effettuate dall'amministratore per i dati dei clienti.
 
-### <a name="windows-10"></a>Windows 10
+## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender per endpoint
+Microsoft Defender for Endpoint raccoglie e archivia le informazioni per i dispositivi registrati in Microsoft Managed Desktop per scopi di amministrazione, monitoraggio e creazione di report. Le informazioni raccolte includono dati di file (ad esempio nomi di file, dimensioni e hash), dati di processo (processi in esecuzione, hash), dati del Registro di sistema, dati di connessione di rete e dettagli del dispositivo (ad esempio identificatori di dispositivo, nomi di dispositivi e versione del sistema operativo). Vedi [Microsoft Defender per l'archiviazione e](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) la privacy dei dati degli endpoint per altre informazioni su Microsoft Defender per la raccolta e la posizione di archiviazione dei dati di Endpoint. 
 
-Come indicato nell'Informativa sulla [privacy di Microsoft,](https://privacy.microsoft.com/privacystatement)"i dati personali raccolti da Microsoft possono essere archiviati ed elaborati nella tua area geografica, negli Stati Uniti e in qualsiasi altro paese in cui Microsoft o le sue consociate, filiali o provider di servizi gestiscono strutture. [...] In genere, la posizione di archiviazione principale si trova nell'area geografica del cliente o negli Stati Uniti, spesso con un backup in un datacenter in un'altra area geografica. Le località di archiviazione vengono scelte per funzionare in modo efficiente, migliorare le prestazioni e creare licenzianze per proteggere i dati in caso di interruzione o altro problema. Microsoft prende misure per garantire che i dati raccolti ai sensi della presente informativa sulla privacy vengano elaborati in base alle disposizioni della presente informativa e ai requisiti della legge applicabile ovunque si trovino i dati."
+## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise 
+Microsoft 365 Apps for enterprise raccoglie e condivide i dati con Microsoft Managed Desktop per garantire che tali app siano aggiornate con la versione più recente in base ai canali di aggiornamento predefiniti gestiti da Microsoft Managed Desktop. Vedi [Microsoft Defender per l'archiviazione e](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) la privacy dei dati degli endpoint per altre informazioni sulla raccolta dei Microsoft 365 Apps e sulle posizioni di archiviazione dei dati.
 
-Per ulteriori informazioni sulla raccolta dei dati di diagnostica di Windows 10, vedi la sezione "Dove archiviamo ed eseiamo i dati [personali"](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) dell'Informativa sulla privacy Microsoft.
+## <a name="major-data-change-notification"></a>Notifica di modifica dei dati principali
+Microsoft Managed Desktop segue un processo di controllo delle modifiche come descritto nel framework di comunicazione dei servizi. Microsoft comunica ai clienti tramite il Microsoft 365 Message Center e Microsoft Managed Desktop admin portal degli incidenti di sicurezza e delle modifiche principali apportate al servizio. Le modifiche apportate ai tipi di dati raccolti e alla posizione in cui sono archiviati vengono considerate modifiche materiali. Microsoft fornirà un minimo di 30 giorni di notifica avanzata di questa modifica, come è la pratica standard per i prodotti Microsoft 365 e i servizi. Per ulteriori informazioni, vedere [Service changes and communication](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide).
 
-## <a name="data-access-protection"></a>Protezione dell'accesso ai dati
+## <a name="compliance"></a>Conformità
+Microsoft Managed Desktop ha subito controlli esterni e ha ottenuto un set completo di offerte di conformità. Per ulteriori informazioni, vedere Microsoft Managed Desktop [conformità](/microsoft-365/managed-desktop/intro/compliance). I report di controllo sono disponibili per il download nel Portale microsoft [per](https://aka.ms/stp)l'attendibilità dei servizi, che funge da archivio centrale per Microsoft Enterprise Online Services. (Microsoft Managed Desktop è elencato all'interno di questi documenti nella categoria "Monitoraggio e gestione.") 
 
-L'accesso diretto Microsoft Managed Desktop archivi dati interni di Microsoft Managed Desktop è limitato in diversi modi:
-
-- Richiede l'approvazione del livello di lead di progettazione.
-- È vincolata al tempo e verificata.
-- Tutti i dati vengono crittografati durante l'archiviazione.
-- L'Microsoft Managed Desktop di gestione interna di Microsoft Managed Desktop richiede una workstation altamente protetta e con restrizioni.
-
-## <a name="processing-personal-data-in-a-compliant-manner"></a>Trattamento dei dati personali in modo conforme
-Microsoft Managed Desktop elabora i dati personali con sistemi certificati ISO. Per ulteriori informazioni, vedere [Compliance.](../intro/compliance.md)
-
-## <a name="profiling-and-marketing"></a>Profilatura e marketing
-
-Microsoft Managed Desktop non utilizza i dati personali raccolti nell'ambito della fornitura del servizio per scopi di profilatura, pubblicità o marketing.
-
-## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati nell'ambito del GDPR e del CCPA
-
-Il Regolamento generale sulla protezione dei dati [(GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) dell'Unione Europea concede ai soggetti (noti come soggetti del regolamento) il diritto di gestire i dati personali raccolti da un datore di lavoro o da un altro tipo di agenzia o organizzazione (noto come controllore dei dati o semplicemente controller). Nell'ambito del regolamento GDPR i dati personali hanno una definizione molto ampia, ovvero sono tutti i dati riferiti a una persona fisica identificata o identificabile. In base al regolamento GDPR, ai soggetti dei dati vengono assegnati diritti specifici relativamente ai dati personali, tra i quali il diritto di ottenerne copie, richiedere correzioni, limitarne l'elaborazione, eliminarli o riceverli in formato elettronico in modo che possano essere trasferiti a un altro titolare. Una richiesta formale da un soggetto interessato a un titolare del trattamento di agire sui dati personali viene definita una Richiesta dell’interessato  o DSR.
-
-Analogamente, il CCPA fornisce diritti e obblighi di privacy ai consumatori della California, inclusi diritti simili ai diritti soggetti ai dati del GDPR, ad esempio il diritto di eliminare, accedere e ricevere (portabilità) le proprie informazioni personali. Il CCPA prevede anche alcune divulgazioni, protezioni contro la discriminazioni quando si eleminano diritti di esercizio e requisiti di "rifiuto esplicito/consenso esplicito" per determinati trasferimenti di dati classificati come "vendite". In generale, la definizione di vendite include la condivisione di dati a titolo oneroso. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](/compliance/regulatory/offering-ccpa?view=o365-worldwide) e le [Domande frequenti sul California Consumer Privacy Act](/compliance/regulatory/ccpa-faq?view=o365-worldwide).
-
-Nella sezione seguente viene illustrato Microsoft Managed Desktop i controller per trovare, accedere e agire sui dati personali o sulle informazioni personali utilizzate da Microsoft Managed Desktop.
-
-> [!NOTE]
-> Per informazioni generali sul GDPR, vedere la sezione [GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) del Service Trust Portal.
-
-### <a name="it-admin-contact-information"></a>Informazioni di contatto dell'amministratore IT
-
-Un amministratore tenant può visualizzare, correggere ed eliminare i propri dati personali (ad esempio le proprie informazioni di contatto) direttamente nella sezione Contatto amministratore del portale Microsoft Managed Desktop.
-
-## <a name="microsoft-defender-for-endpoint-alert-data"></a>Dati di avviso di Microsoft Defender per endpoint
-
-Gli amministratori della sicurezza possono richiedere l'estrazione o l'eliminazione di dati personali relativi agli avvisi di Microsoft Defender for Endpoint in un dispositivo Microsoft Managed Desktop gestito nel proprio ambiente. L'amministratore della sicurezza deve accedere al portale Microsoft Managed Desktop [di amministrazione](https://aka.ms/memadmin) e inviare una richiesta di supporto. Seleziona **Tipo di** richiesta  di supporto di Richiesta di **modifica,** Categoria di sicurezza e **Sottocategoria** di Altro **e** quindi specifica i nomi dei dispositivi pertinenti nella descrizione insieme alla richiesta di estrazione o eliminazione dei dati.
-
-### <a name="user-related-personal-data"></a>Dati personali correlati all'utente
-
-A parte questo, Microsoft Managed Desktop non raccoglie dati personali da soli. Al contrario, si basa sui dati personali raccolti da altri microsoft Enterprise Online Services. Gli amministratori IT che desiderano rispondere alle richieste degli utenti per visualizzare, correggere ed eliminare i propri dati personali possono utilizzare le rispettive funzionalità dei servizi sottostanti da cui dipende Microsoft Managed Desktop utenti. Se si è interessati a visualizzare o eliminare i dati personali utilizzati da questi servizi, vedere prima l'articolo Richieste degli interessati di Azure per il [GDPR.](/compliance/regulatory/gdpr-dsr-Azure)
-
-Inoltre, utilizzare le indicazioni seguenti per esercitare le DSR per i Microsoft Managed Desktop da cui dipende la raccolta dei dati personali:
-
-- [Azure Active Directory](/compliance/regulatory/gdpr-dsr-Azure?view=o365-worldwide)
-- [Microsoft Intune](/compliance/regulatory/gdpr-dsr-Intune?view=o365-worldwide)
-- [Microsoft Defender per Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Windows 10](/windows/privacy/windows-10-and-privacy-compliance)
+## <a name="legal"></a>Esigenze legali
+Informativa sulla privacy di Microsoft agli utenti finali dei prodotti forniti dai clienti **dell'organizzazione - L'Informativa** sulla privacy [Microsoft](https://privacy.microsoft.com/privacystatement) notifica agli utenti finali che, quando accedono ai prodotti Microsoft con un account aziendale, a) l'organizzazione può controllare e amministrare il proprio account (incluso il controllo delle impostazioni relative alla privacy) e accedere ed elaborare i dati e b) Microsoft può raccogliere ed elaborare i dati per fornire il servizio all'organizzazione e agli utenti finali.

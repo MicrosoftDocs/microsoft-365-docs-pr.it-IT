@@ -1,6 +1,6 @@
 ---
 title: Configurare device discovery
-description: Scopri come configurare l'individuazione dei dispositivi in Microsoft 365 Defender usando l'individuazione di base o standard
+description: Informazioni su come configurare l'individuazione dei dispositivi Microsoft 365 Defender l'individuazione di base o standard
 keywords: basic, standard, configure endpoint discovery, device discovery
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0d722b4f4bef5b4d178edc5f2142c887690d4c63
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e1efeff77657e04223b21d639a0a09287f3707cc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765252"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177586"
 ---
 # <a name="configure-device-discovery"></a>Configurare device discovery
 
@@ -101,7 +101,24 @@ Scegliere la classificazione di individuazione iniziale significa applicare lo s
 6. Confermare che si desidera apportare la modifica. 
 
 
+## <a name="explore-devices-in-the-network"></a>Esplorare i dispositivi nella rete
 
+È possibile utilizzare la query di ricerca avanzata seguente per ottenere più contesto su ogni nome di rete descritto nell'elenco delle reti. La query elenca tutti i dispositivi onboarded connessi a una determinata rete negli ultimi 7 giorni.
+
+
+
+```kusto
+DeviceNetworkInfo
+| where Timestamp > ago(7d)
+| summarize arg_max(Timestamp, *) by DeviceId
+| where ConnectedNetworks  != ""
+| extend ConnectedNetworksExp = parse_json(ConnectedNetworks)
+| mv-expand bagexpansion = array ConnectedNetworks=ConnectedNetworksExp
+| extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
+| where NetworkName == "<your network name here>"
+
+
+```
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica di Device discovery](device-discovery.md)

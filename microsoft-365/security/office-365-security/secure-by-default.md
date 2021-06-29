@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: ''
+ms.date: 06/28/2021
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 description: Ulteriori informazioni sull'impostazione di protezione per impostazione predefinita in Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861528"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177646"
 ---
 # <a name="secure-by-default-in-office-365"></a>Protezione per impostazione predefinita in Office 365
 
@@ -52,7 +52,7 @@ Per ulteriori informazioni su EOP, vedere [Exchange Online Protection panoramica
 Poiché Microsoft vuole proteggere i clienti per impostazione predefinita, alcune sostituzioni dei tenant non vengono applicate per malware o phishing ad alta sicurezza. Queste sostituzioni includono:
 
 - Elenchi di mittenti consentiti o elenchi di domini consentiti (criteri di protezione da posta indesiderata)
-- Outlook Mittenti attendibili
+- Outlook Cassaforte mittenti
 - Elenco indirizzi IP consentiti (filtro connessioni)
 
 Per ulteriori informazioni su queste sostituzioni, vedere [Create safe sender lists.](create-safe-sender-lists-in-office-365.md)
@@ -68,14 +68,14 @@ Lo spirito di protezione per impostazione predefinita è: stiamo prendendo la st
 
 I nostri dati indicano che un utente ha 30 volte più probabilità di fare clic su un collegamento dannoso nei messaggi nella cartella Posta indesiderata rispetto alla quarantena. I nostri dati indicano anche che il tasso di falsi positivi (messaggi positivi contrassegnati come non validi) per i messaggi di phishing ad alta probabilità è molto basso e gli amministratori possono risolvere eventuali falsi positivi con invii di amministratori.
 
-È stato inoltre determinato che il mittente consentito e gli elenchi di domini consentiti nei criteri di protezione da posta indesiderata e Mittenti attendibili in Outlook erano troppo ampi e causavano più danni che buoni.
+È stato inoltre stabilito che il mittente consentito e gli elenchi di domini consentiti nei criteri di protezione dalla posta indesiderata e nei mittenti di Cassaforte in Outlook erano troppo ampi e causavano più danni che buoni.
 
 Per dirla in un altro modo: come servizio di sicurezza, microsoft agisce per conto dell'utente per evitare che gli utenti vengano compromessi.
 
 ## <a name="exceptions"></a>Eccezioni
 
 > [!NOTE]
-> A luglio 2021, la protezione per impostazione predefinita verrà estesa Exchange regole del flusso di posta (note anche come regole di trasporto). Se si utilizzano regole del flusso di posta per consentire simulazioni di phishing di terze parti o il [](configure-advanced-delivery.md) recapito non filtrato alle cassette postali delle operazioni di sicurezza, è infine necessario eliminare queste regole e passare all'utilizzo dei criteri di recapito avanzati quando la funzionalità è _disponibile._
+> Nell'agosto 2021, la protezione per impostazione predefinita verrà estesa Exchange regole del flusso di posta (note anche come regole di trasporto). Se si utilizzano regole del flusso di posta per consentire simulazioni di phishing di terze parti o il [](configure-advanced-delivery.md) recapito non filtrato alle cassette postali delle operazioni di sicurezza, è infine necessario eliminare queste regole e passare all'utilizzo dei criteri di recapito avanzati quando la funzionalità è _disponibile._
 
 L'unico override che consente ai messaggi di phishing ad alta probabilità di ignorare il filtro sono le regole del flusso di posta. Per utilizzare le regole del flusso di posta per ignorare il filtro, vedere [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 

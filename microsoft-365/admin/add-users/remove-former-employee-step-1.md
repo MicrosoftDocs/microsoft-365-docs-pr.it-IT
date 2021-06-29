@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Impedire a un ex dipendente di accedere e bloccare l'accesso Microsoft 365 servizi.
-ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061826"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177118"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Passaggio 1 - Impedire a un ex dipendente di accedere e bloccare l'accesso Microsoft 365 servizi
 
@@ -65,7 +65,7 @@ Per altre informazioni sul tempo necessario per rimuovere un dipendente dalla po
 
 Se hai posta elettronica come parte dell'abbonamento Microsoft 365, accedi all'interfaccia di amministrazione di Exchange e segui questa procedura per impedire all'ex dipendente di accedere alla posta elettronica.
   
-1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
+1. Accedere all'<a href="https://admin.exchange.microsoft.com/" target="_blank">interfaccia di amministrazione di Exchange</a>.
 2. Nell'Interfaccia di amministrazione di Exchange passare a **Destinatari** \> **Cassette postali**.
-3. Fare doppio clic sull'utente e passare alla **pagina Funzionalità cassetta** postale. In **Dispositivi mobili** seleziona **Disabilita** Exchange ActiveSync e Disabilita OWA per i dispositivi **e** rispondi **Sì** a entrambi quando richiesto.
-4. In **Connettività posta** elettronica selezionare **Disabilita** e rispondi **Sì** quando richiesto.
+3. Fai doppio clic sull'utente e vai a **Gestisci le impostazioni delle app di posta elettronica** in App di posta **elettronica**. Disattiva **il** dispositivo di scorrimento per tutte le opzioni; **Mobile (Exchange ActiveSync),** **Outlook sul web**, Outlook **desktop (MAPI),** **Exchange web services**, **POP3** e **IMAP**.
+4. Selezionare **Salva**.

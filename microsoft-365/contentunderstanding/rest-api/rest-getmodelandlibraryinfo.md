@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Usa l'API REST per ottenere informazioni su un modello e sulla raccolta in cui è stato applicato.
-ms.openlocfilehash: 6cd61364ed3b360ef235aaba21a2735002fe481e
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2449084653c6d9af8d774edc306c485e7a466bf6
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904224"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177070"
 ---
 # <a name="get-model-and-library-information"></a>Ottenere informazioni su modelli e raccolte
 
@@ -25,13 +25,13 @@ Ottiene informazioni su un modello e sulla raccolta in cui è stato applicato (v
 ## <a name="http-request"></a>Richiesta HTTP
 
 ```HTTP
-GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP/1.1
+GET /_api/machinelearning/publications/getbymodeluniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>Parametri URI
 
 | Nome | In | Obbligatorio | Tipo | Descrizione |
-|--------|-------|--------|------------|
+|--------|-------|--------|------------|-----------|
 |ModelUniqueId|query|Vero|GUID|ID univoco del file di modello.|
 
 ## <a name="request-headers"></a>Intestazioni della richiesta
@@ -41,22 +41,11 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 |Accept|application/json;odata=verbose|
 
 
-## <a name="request-body"></a>Corpo della richiesta
-
-| Nome | Obbligatorio | Tipo | Descrizione |
-|--------|-------|--------|------------|
-|ModelUniqueId|sì|stringa|ID univoco del file di modello.|
-|TargetSiteUrl|sì|stringa|URL completo del sito della raccolta di destinazione.|
-|TargetWebServerRelativeUrl|sì|stringa|URL relativo al server Web per la raccolta di destinazione.|
-|TargetLibraryServerRelativeUrl|sì|stringa|URL relativo al server per la raccolta di destinazione.|
-|TargetLibraryRemoved|sì|int|Il contrassegno che indica se la raccolta di destinazione è stata rimossa o meno.|
-
 ## <a name="response"></a>Risposta
 
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
 |200 OK| |Operazione completata|
-|201 Created| |Si noti che poiché questa API supporta l'applicazione del modello a più raccolte, è possibile che sia restituito 201 anche se si verifica un errore nell'applicazione del modello a una delle raccolte. <br>Controllare il corpo della risposta per determinare se il modello è stato applicato correttamente a tutte le raccolte specificate. Per informazioni dettagliate, vedere [Corpo della richiesta](rest-getmodelandlibraryinfo.md#request-body).|
 
 ## <a name="examples"></a>Esempi
 
@@ -67,7 +56,7 @@ In questo esempio, l'ID del modello di analisi dei documenti Contoso Contract è
 #### <a name="sample-request"></a>Richiesta di esempio
 
 ```HTTP
-GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}’) HTTP/1.1
+GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 #### <a name="sample-response"></a>Risposta di esempio
 
@@ -130,7 +119,7 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e
             "ViewOption": "NewViewAsDefault"
         }
     ]
-}```
+}
 ```
 
 ## <a name="see-also"></a>Vedere anche

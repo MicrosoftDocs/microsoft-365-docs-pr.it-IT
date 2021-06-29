@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come salvare il contenuto della cassetta postale di un ex dipendente.
-ms.openlocfilehash: d73d7005d2ccea429f66c5b2564220424665439f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd24145b6b5162a03dee0338cc0820e5af271ddd
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244226"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177490"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Passaggio 2 - Salvare il contenuto della cassetta postale di un ex dipendente
 
@@ -45,4 +45,4 @@ Dopo aver impedito a un utente di accedere all'organizzazione, è possibile salv
 
     **OR**
 
-2. Aggiungere l'indirizzo di posta elettronica dell'ex dipendente alla versione di Outlook Web app e quindi esportare i dati in un file pst. I dati possono essere importati in un altro account di posta elettronica, se necessario. Vedere [Passaggio 6 - Concedere a un altro](remove-former-employee-step-6.md)dipendente l'accesso OneDrive e Outlook dati .
+2. Aggiungere l'indirizzo di posta elettronica dell'ex dipendente alla versione di Outlook desktop e quindi esportare i dati in un file PST. I dati possono essere importati in un altro account di posta elettronica, se necessario. Vedere [Passaggio 6 - Concedere a un altro](remove-former-employee-step-6.md)dipendente l'accesso OneDrive e Outlook dati .

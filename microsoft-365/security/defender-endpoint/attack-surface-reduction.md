@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: eadca063d50bf1f969f1bb247b6e56d8ec46a6e0
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169581"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177634"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -52,7 +52,7 @@ Per ulteriori informazioni sulla configurazione delle regole di riduzione della 
 
 Nel riquadro dei dettagli dei suggerimenti controlla l'impatto dell'utente per determinare quale percentuale dei dispositivi può accettare un nuovo criterio che abilita la regola in modalità di blocco senza influire negativamente sulla produttività.
 
-Per [informazioni sui](enable-attack-surface-reduction.md#requirements) sistemi operativi supportati, vedere Requisiti nell'articolo "Abilitare le regole di riduzione della superficie di attacco".
+Vedi [Requisiti nell'articolo](enable-attack-surface-reduction.md#requirements) "Abilitare le regole di riduzione della superficie di attacco" per informazioni sui sistemi operativi supportati e informazioni aggiuntive sui requisiti.
 
 ## <a name="audit-mode-for-evaluation"></a>Modalità di controllo per la valutazione
 

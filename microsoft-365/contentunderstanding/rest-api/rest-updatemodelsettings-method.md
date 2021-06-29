@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Usare l'API REST per aggiornare le impostazioni dei modelli disponibili per un modello di analisi dei documenti di SharePoint Syntex.
-ms.openlocfilehash: f24fc8428adbf22ded2ca6d7a49cabc84b385770
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: cd288812044f3b02839c3c11c321947bd02cccaa
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904229"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177166"
 ---
 # <a name="updatemodelsettings"></a>UpdateModelSettings
 
@@ -25,12 +25,14 @@ Aggiorna le impostazioni dei modelli disponibili (etichetta di conservazione ass
 ## <a name="http-request"></a>Richiesta HTTP
 
 ```HTTP
-POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
+POST /_api/machinelearning/models/getbytitle('{modelFileName}')/updatemodelsettings HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>Parametri URI
 
-Nessuno
+|Nome |In |Obbligatorio|Tipo|Descrizione|
+|-----|---|--------|----|-----------|
+|modelFileName|query|True|stringa|Nome del file di modello di Syntex.|
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
