@@ -19,12 +19,12 @@ description: Usa Explorer e i rilevamenti in tempo reale nel portale Microsoft 3
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: ee9c4c63817d9c6860942eb8001b02a0535333b1
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195034"
+ms.locfileid: "53203257"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer e rilevamenti in tempo reale
 
@@ -56,7 +56,8 @@ Con questo report, è possibile:
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Miglioramenti all'esperienza di ricerca delle minacce
 
-### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>Introduzione dell'ID avviso per Defender per Office 365 avvisi in Esplora risorse/Rilevamenti in tempo reale (anteprima)
+
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>Introduzione dell'ID avviso per Defender Office 365 avvisi in Esplora risorse/Rilevamenti in tempo reale
 
 Oggi, se si passa da un avviso a Esplora minacce, viene aperta una visualizzazione filtrata all'interno di Esplora risorse, con la visualizzazione filtrata in base all'ID dei criteri di avviso (l'ID criterio è un identificatore univoco per un criterio di avviso).
 Stiamo rendendo questa integrazione più pertinente introducendo l'ID avviso (vedi un esempio di ID avviso di seguito) in Threat Explorer e rilevamenti in tempo reale in modo da visualizzare i messaggi pertinenti per l'avviso specifico, nonché un conteggio dei messaggi di posta elettronica. Sarà inoltre possibile vedere se un messaggio fa parte di un avviso e passare da tale messaggio all'avviso specifico.
@@ -69,12 +70,12 @@ L'ID avviso è disponibile all'interno dell'URL quando si visualizza un singolo 
 > [!div class="mx-imgBorder"]
 > ![ID avviso nel riquadro a comparsa dettagli](../../media/AlertID-DetailsFlyout.png)
 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Estensione del limite di conservazione e ricerca dei dati di Explorer (e rilevamento in tempo reale) per i tenant di prova da 7 a 30 giorni (Anteprima)
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Estensione del limite di conservazione e ricerca dei dati di Explorer (e rilevamento in tempo reale) per i tenant di prova da 7 a 30 giorni
 
 Come parte di questa modifica, sarà possibile cercare e filtrare i dati di posta elettronica in 30 giorni (un aumento rispetto ai 7 giorni precedenti) in Threat Explorer/Rilevamenti in tempo reale per Defender per tenant di prova Office P1 e P2.
 Ciò non influisce sui tenant di produzione per i clienti P1 e P2/E5, che hanno già le funzionalità di conservazione e ricerca dei dati di 30 giorni.
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Limiti aggiornati per l'esportazione di record per Threat Explorer (anteprima)
+### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>Limiti aggiornati per l'esportazione di record per Threat Explorer
 
 Come parte di questo aggiornamento, il numero di righe per i record di posta elettronica che possono essere esportati da Esplora minacce è aumentato da 9990 a 200.000 record. Il set di colonne che è possibile esportare attualmente rimarrà invariato, ma il numero di righe aumenterà rispetto al limite corrente.
 

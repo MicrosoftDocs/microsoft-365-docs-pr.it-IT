@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gestire chi riceve messaggi di posta elettronica di notifica di fatturazione e allegati di fattura.
 ms.date: 03/17/2021
-ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054584"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203245"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gestire le notifiche di fatturazione e le fatture allegate
 
@@ -55,7 +55,7 @@ Le notifiche di fatturazione dell'organizzazione vengono inviate all'indirizzo d
 3. Nel riquadro destro, nella **scheda Amministratori assegnati,** selezionare **Aggiungi**.
 4. Nel riquadro **Aggiungi amministratori** digitare il nome visualizzato o il nome utente dell'utente e quindi selezionare l'utente nell'elenco dei suggerimenti.
 5. Aggiungi più utenti finché non hai finito.
-6. Seleziona **Salva**. L'utente viene aggiunto all'elenco degli amministratori assegnati.
+6. Selezionare **Salva**. L'utente viene aggiunto all'elenco degli amministratori assegnati.
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Rimuovere i ruoli di amministratore tramite la pagina Notifiche di fatturazione
 
@@ -127,6 +127,6 @@ Per ricevere le fatture come allegati alle notifiche delle fatture, eseguire la 
 ## <a name="related-content"></a>Contenuto correlato
 
 [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\
-[Informazioni di fatturazione per Microsoft 365 per le aziende in Messico](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (articolo) \
+[Informazioni di fatturazione per Microsoft 365 per le aziende in Messico](mexico-billing-info.md) (articolo) \
 [Comprendere la fattura o la fattura per Microsoft 365 per le aziende](understand-your-invoice2.md) (articolo)\
 [Aggiungere utenti e assegnare licenze contemporaneamente](../../admin/add-users/add-users.md) (articolo)

@@ -1,5 +1,5 @@
 ---
-title: Applica modello
+title: Modello di applicazione batch
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Usare l'API REST per applicare un modello di analisi dei documenti a una o più raccolte.
-ms.openlocfilehash: d4cadad3c45dd7af0cdaeb4e1b367426289db870
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904267"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177262"
 ---
-# <a name="apply-model"></a>Applica modello
+# <a name="batch-apply-model"></a>Modello di Applicazione Batch
 
 Applica (o sincronizza) un modello di analisi dei documenti sottoposto a training a una o più raccolte (vedere l'[esempio](rest-applymodel-method.md#examples)).
 
@@ -32,7 +32,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 Nessuno
 
-## <a name="request-headers"></a>Intestazioni di richiesta
+## <a name="request-headers"></a>Intestazioni della richiesta
 
 | Intestazione | Valore |
 |--------|-------|
@@ -44,18 +44,45 @@ Nessuno
 
 | Nome | Obbligatorio | Tipo | Descrizione |
 |--------|-------|--------|------------|
+|__metadata|sì|stringa|Imposta i metadati dell'oggetto in SPO. Usare sempre il valore: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"}.|
+|Pubblicazioni|sì|MachineLearningPublicationEntityData[]|Raccolta di MachineLearningPublicationEntityData, ognuno dei quali specifica il modello e la raccolta documenti di destinazione.|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Nome | Obbligatorio | Tipo | Descrizione |
+|--------|-------|--------|------------|
 |ModelUniqueId|sì|stringa|ID univoco del file di modello.|
-TargetSiteUrl|sì|stringa|URL completo del sito della raccolta di destinazione.|
-TargetWebServerRelativeUrl|sì|stringa|URL relativo al server Web per la raccolta di destinazione.|
-TargetLibraryServerRelativeUrl|sì|stringa|URL relativo al server per la raccolta di destinazione.|
-ViewOption|no|stringa|Specifica se impostare la nuova visualizzazione modello come predefinita per la raccolta.|
+|TargetSiteUrl|sì|stringa|URL completo del sito della raccolta di destinazione.|
+|TargetWebServerRelativeUrl|sì|stringa|URL relativo al server Web per la raccolta di destinazione.|
+|TargetLibraryServerRelativeUrl|sì|stringa|URL relativo al server per la raccolta di destinazione.|
+|ViewOption|no|stringa|Specifica se impostare la nuova visualizzazione modello come predefinita per la raccolta.|
 
 ## <a name="response"></a>Risposta
 
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
-|200 OK| |Operazione completata|
-|201 Created| |Si noti che poiché questa API supporta l'applicazione del modello a più raccolte, è possibile che sia restituito 201 anche se si verifica un errore nell'applicazione del modello a una delle raccolte. <br>Controllare il corpo della risposta per determinare se il modello è stato applicato correttamente a tutte le raccolte specificate. Per informazioni dettagliate, vedere [Corpo della richiesta](rest-applymodel-method.md#request-body).|
+|201 Created||Si tratta di un'API personalizzata per supportare l'applicazione di un modello a più raccolte documenti. In caso di esito positivo parziale, è comunque possibile che venga restituito il 201 creato e il chiamante deve controllare il corpo della risposta per capire se il modello è stato applicato correttamente a una raccolta documenti.|
+
+## <a name="response-body"></a>Contenuto risposta
+| Nome   | Tipo  | Descrizione|
+|--------|-------|------------|
+|TotalSuccesses|int|Numero totale di un modello applicato correttamente a una raccolta documenti.|
+|TotalFailures|int|Numero totale di un modello non applicato a una raccolta documenti.|
+|Dettagli|MachineLearningPublicationResult[]|Raccolta di MachineLearningPublicationResult, ognuno dei quali specifica il risultato dettagliato dell'applicazione del modello alla raccolta documenti.|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| Nome   | Tipo  | Descrizione|
+|--------|-------|------------|
+|StatusCode|int|Codice di stato HTTP.|
+|ErrorMessage|stringa|Messaggio di errore che indica cosa non va quando si applica il modello alla raccolta documenti.|
+|Pubblicazione|MachineLearningPublicationEntityData|Specifica le informazioni sul modello e la raccolta documenti di destinazione.| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Nome | Tipo | Descrizione |
+|--------|--------|------------|
+|ModelUniqueId|stringa|ID univoco del file di modello.|
+|TargetSiteUrl|stringa|URL completo del sito della raccolta di destinazione.|
+|TargetWebServerRelativeUrl|stringa|URL relativo al server Web per la raccolta di destinazione.|
+|TargetLibraryServerRelativeUrl|stringa|URL relativo al server per la raccolta di destinazione.|
 
 ## <a name="examples"></a>Esempi
 
@@ -89,7 +116,7 @@ In questo esempio l'ID del modello di analisi dei documenti Contoso Contract è 
 
 Nella risposta, TotalFailures e TotalSuccesses fanno riferimento al numero di errori e successi nell'applicazione del modello alle raccolte specificate.
 
-**Codice di stato:** 200
+**Codice di stato:** 201
 
 ```JSON
 {
@@ -103,7 +130,7 @@ Nella risposta, TotalFailures e TotalSuccesses fanno riferimento al numero di er
                 "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
                 "ViewOption": "NewViewAsDefault"
             },
-            "StatusCode": 200
+            "StatusCode": 201
         }
     ],
     "TotalFailures": 0,

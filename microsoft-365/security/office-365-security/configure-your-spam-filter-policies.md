@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137764"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203293"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -149,7 +149,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel portale d
 
      |Azione|Posta indesiderata|Fortemente<br>confidenziale<br>posta indesiderata|Phishing|Fortemente<br>confidenziale<br>phishing|Invio in blocco|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Spostare un messaggio nella cartella Posta indesiderata**: il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata.<sup>1</sup>|![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|
+     |**Spostare un messaggio nella cartella Posta indesiderata**: il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata.<sup>1</sup>|![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../../media/checkmark.png)||![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|
      |**Aggiungi X-Header**: aggiunge un X-Header all'intestazione del messaggio e recapita il messaggio nella cassetta postale. <p> Immettere il nome del campo X-Header (non il valore) successivamente nella casella **Aggiungi testo X-Header**. <p> Per i verdetti **Posta indesiderata** e **Posta indesiderata con alta confidenza**, il messaggio viene spostato nella cartella Posta indesiderata.<sup>1,2</sup>|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)||![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|
      |**Anteponi testo alla riga dell'oggetto**: aggiunge testo all'inizio della riga dell'oggetto del messaggio. Il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata.<sup>1,2</sup> <p> Immettere il testo successivamente nella casella **Riga dell'oggetto del prefisso con il testo**.|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)||![Segno di spunta](../../media/checkmark.png)|
      |**Reindirizza messaggio a indirizzo di posta elettronica:** invece di inviare il messaggio ai destinatari designati, lo invia ad altri destinatari. <p> Specificare i destinatari successivamente nella casella **Reindirizza a questo indirizzo di posta elettronica**.|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
@@ -182,7 +182,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel portale d
 
    - **Reindirizza a questo indirizzo di posta elettronica**: questa casella è obbligatoria e disponibile solo se **Reindirizza il messaggio all'indirizzo di posta elettronica** è stato selezionato come azione per il verdetto filtro posta indesiderata. Immettere l'indirizzo di posta elettronica cui recapitare il messaggio. È possibile immettere più valori separati da punto e virgola (;).
 
-   - **Abilitare suggerimenti per la sicurezza**: per impostazione predefinita, i suggerimenti per la sicurezza sono abilitati, ma è possibile disabilitarli deselezionando la casella di controllo. Per altre informazioni sui suggerimenti per la sicurezza, leggere [Suggerimenti per la sicurezza nei messaggi di posta elettronica](safety-tips-in-office-365.md).
+   - **Abilitare suggerimenti per la sicurezza**: per impostazione predefinita, i suggerimenti per la sicurezza sono abilitati, ma è possibile disabilitarli deselezionando la casella di controllo.
 
    - **Abilitare Zero-Hour Auto Purge (ZAP)**: ZAP rileva ed esegue operazioni sui messaggi già recapitati nelle cassette di posta di Exchange Online. Per altre informazioni vedere [Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware](zero-hour-auto-purge.md).
 

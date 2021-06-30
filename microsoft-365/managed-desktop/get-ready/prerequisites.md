@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e4469d8abcfa8308c64e2efa7f7dc4f0156e5718
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 31077b3ffbddb78ecac8841c22c77fa75f6e2c32
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957528"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203089"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Prerequisiti per Microsoft Managed Desktop
 
@@ -29,7 +29,7 @@ Area | Dettagli prerequisiti
 --- | ---
 Licenze |Microsoft Managed Desktop richiede la licenza Microsoft 365 E3 con Microsoft Defender for Endpoint (o equivalenti) assegnata agli utenti.<br>Per informazioni dettagliate sui piani di servizio specifici, vedere [Ulteriori informazioni sulle licenze](#more-about-licenses) in questo argomento.<br>Per ulteriori informazioni sulle licenze disponibili, vedere [Microsoft 365 licenze](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 Connettività |  Tutti Microsoft Managed Desktop dispositivi richiedono la connettività a numerosi endpoint di servizio Microsoft dalla rete aziendale.<br><br>Per l'elenco completo degli INDIRIZZI IP e DEGLI URL necessari, vedere [Configurazione di rete.](../get-ready/network.md) 
-Azure Active Directory |    Azure Active Directory (Azure AD) deve essere l'origine dell'autorità per tutti gli account utente oppure gli account utente devono essere sincronizzati da Active Directory locale utilizzando la versione più recente supportata di Azure AD Connessione.<br><br>[Enterprise stato roaming](/azure/active-directory/devices/enterprise-state-roaming-overview) deve essere abilitato per Microsoft Managed Desktop utenti.<br><br>Per ulteriori informazioni, vedere [Azure AD Connessione](/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Per ulteriori informazioni sulle versioni di Azure AD Connessione supportate, vedere [Azure AD Connessione:Version release history](/azure/active-directory/hybrid/reference-connect-version-history).
+Azure Active Directory |    Azure Active Directory (Azure AD) deve essere l'origine dell'autorità per tutti gli account utente oppure gli account utente devono essere sincronizzati da Active Directory locale utilizzando la versione più recente supportata di Azure AD Connessione.<br><br>Per ulteriori informazioni, vedere [Azure AD Connessione](/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Per ulteriori informazioni sulle versioni di Azure AD Connessione supportate, vedere [Azure AD Connessione:Version release history](/azure/active-directory/hybrid/reference-connect-version-history).
 Autenticazione |    Se Azure AD non è l'origine dell'autenticazione principale per gli account utente, è necessario configurarne una in Azure AD Connessione:<br>- Sincronizzazione hash password<br>- Autenticazione pass-through<br>- Un provider di identità esterno (incluso Windows Server ADFS e IDP non Microsoft) configurato per soddisfare i requisiti di integrazione di Azure AD. Per ulteriori [informazioni, vedere](https://www.microsoft.com/download/details.aspx?id=56843) le linee guida. <br><br>Quando si impostano le opzioni di autenticazione con Azure AD Connessione, è consigliabile anche il writeback delle password. Per ulteriori informazioni, vedere [Writeback delle password.](/azure/active-directory/authentication/howto-sspr-writeback) <br><br>Se viene implementato un provider di identità esterno, è necessario convalidare la soluzione:<br>- Soddisfa i requisiti di integrazione di Azure AD<br>- Supporta l'accesso condizionale di Azure AD, che consente Microsoft Managed Desktop criteri di conformità del dispositivo da configurare<br>- Abilita la registrazione dei dispositivi e l'uso di Microsoft 365 o funzionalità necessarie come parte di Microsoft Managed Desktop <br><br>Per altre informazioni sulle opzioni di autenticazione con Azure AD, vedi Opzioni di accesso Connessione utente [di Azure AD.](/azure/active-directory/connect/active-directory-aadconnect-user-signin)
 Microsoft 365 | OneDrive for Business deve essere abilitato per Microsoft Managed Desktop utenti.<br><br>Anche se non è necessario eseguire la registrazione con Microsoft Managed Desktop, è consigliabile eseguire la migrazione dei servizi seguenti nel cloud:<br>- Posta elettronica: eseguire la migrazione alle cassette postali basate su cloud, Exchange online o configurare con Exchange Online Hybrid con Exchange 2013 o versione successiva, locale.<br>- File e cartelle: eseguire la migrazione a OneDrive for Business o SharePoint Online.<br>- Strumenti di collaborazione online: eseguire la migrazione a Teams.
 Gestione dei dispositivi | Microsoft Managed Desktop dispositivi richiedono la gestione tramite Microsoft Intune. Intune deve essere impostato come autorità di gestione dei dispositivi mobili.<br><br>Per ulteriori informazioni, vedere [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
