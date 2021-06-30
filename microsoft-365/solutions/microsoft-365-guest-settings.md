@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365 che possono influire sulla condivisione con persone esterne all'organizzazione.
-ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 622e3ac0c44ec763cffff51773edbe6c64515a11
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625441"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177443"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
@@ -165,8 +165,10 @@ Poiché OneDrive è una gerarchia di siti all'interno di SharePoint, le impostaz
 | Impostazione | Impostazione predefinita | Descrizione |
 |:-----|:-----|:-----|
 |Limita condivisione esterna in base al dominio|Disattivato|Questa impostazione consente di specificare un elenco di domini autorizzati o bloccati per la condivisione. Se si specificano domini autorizzati, gli inviti di condivisione possono essere inviati solo a tali domini. Se si specificano domini non autorizzati, gli inviti di condivisione non possono essere inviati a tali domini.<br><br> Questa impostazione influisce su tutti i siti di SharePoint e OneDrive nell'organizzazione.|
+|Consentire la condivisione esterna solo a utenti di gruppi di sicurezza specifici|Disattivato|Se si desidera limitare chi può condividere contenuti con utenti guest in SharePoint e OneDrive, è possibile farlo limitando la condivisione alle persone in gruppi di sicurezza specifici. Queste impostazioni non influiscono sulla condivisione tramite Teams o Gruppi di Microsoft 365. Gli utenti guest invitati tramite un gruppo o un team hanno accesso anche al sito associato, anche se la condivisione di documenti e cartelle può essere eseguita solo da persone nei gruppi di sicurezza specificati.<br><br>Per ogni gruppo specificato, puoi scegliere gli utenti che possono condividere con i collegamenti di tipo "Chiunque".|
 |Gli utenti guest devono accedere con lo stesso account a cui vengono inviati gli inviti di condivisione|Disattivato|Impedisce agli utenti guest di utilizzare gli inviti di condivisione dei siti con un indirizzo di posta elettronica diverso da quello al quale è stato inviato l'invito.<br><br>[L'integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](/sharepoint/sharepoint-azureb2b-integration-preview) non usa questa impostazione perché tutti gli utenti guest vengono aggiunti alla directory in base all'indirizzo di posta elettronica al quale è stato inviato l'invito. Non è possibile utilizzare indirizzi di posta elettronica alternativi per accedere al sito.|
 |Consenti agli utenti guest di condividere elementi che non possiedono|Attivato|Se è su **Attivato**, gli utenti guest possono condividere elementi che non possiedono con altri utenti o utenti guest; se è su **Disattivato**, non possono farlo. Gli utenti guest possono sempre condividere elementi di cui hanno il controllo completo.|
+|Le persone che usano un codice di verifica devono ripetere l'autenticazione dopo questo numero di giorni|Disattivato|Questa impostazione consente di richiedere agli utenti che eseguono l'autenticazione con un passcode monouso di eseguire nuovamente l'autenticazione dopo un determinato numero di giorni.|
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Impostazioni dei collegamenti a file e cartelle di SharePoint e OneDrive
 
@@ -182,21 +184,6 @@ Quando si condividono file e cartelle in SharePoint e OneDrive, ai destinatari d
 |Questi collegamenti devono scadere entro questo numero di giorni|Disattivato (nessuna scadenza)|Specifica il numero di giorni dopo che un collegamento *Chiunque* creato scade. I collegamenti scaduti non possono essere rinnovati. Creare un nuovo collegamento se è necessario continuare a condividere dopo la scadenza.|
 |Autorizzazioni per i file|Visualizzazione e modifica|Specifica i livelli di autorizzazione per i file disponibili per gli utenti quando si crea un collegamento *Chiunque*. Se si seleziona **Visualizzazione**, gli utenti possono creare collegamenti ai file *Chiunque* solo con autorizzazioni di visualizzazione. Se si seleziona **Visualizzazione e modifica**, gli utenti possono scegliere tra le autorizzazioni di visualizzazione e le autorizzazioni di visualizzazione e modifica quando creano il collegamento.|
 |Autorizzazioni per le cartelle|Visualizzazione, modifica e caricamento|Specifica i livelli di autorizzazione per le cartelle disponibili per gli utenti quando si crea un collegamento *Chiunque*. Se si seleziona **Visualizzazione**, gli utenti possono creare collegamenti alle cartelle *Chiunque* solo con autorizzazioni di visualizzazione. Se si seleziona **Visualizzazione, modifica e caricamento**, gli utenti possono scegliere tra le autorizzazioni di visualizzazione e le autorizzazioni di visualizzazione, modifica e caricamento quando creano il collegamento.|
-
-### <a name="sharepoint-and-onedrive-security-group-settings"></a>Impostazioni dei gruppi di sicurezza in SharePoint e OneDrive
-
-Se si desidera limitare chi può condividere contenuti con utenti guest in SharePoint e OneDrive, è possibile farlo limitando la condivisione alle persone in gruppi di sicurezza specifici. Queste impostazioni non influiscono sulla condivisione tramite Teams o Gruppi di Microsoft 365. Gli utenti guest invitati tramite un gruppo o un team hanno accesso anche al sito associato, anche se la condivisione di documenti e cartelle può essere eseguita solo da persone nei gruppi di sicurezza specificati.
-
-**Navigazione:** Interfaccia di amministrazione di SharePoint > Condivisione > Limitare la condivisione esterna ai gruppi di sicurezza
-
-![Screenshot delle impostazioni dei gruppi di sicurezza per la condivisione a livello di organizzazione in SharePoint](../media/sharepoint-organization-external-sharing-security-groups.png)
-
-| Impostazione | Impostazione predefinita | Descrizione |
-|:-----|:-----|:-----|
-|Consenti solo agli utenti dei gruppi di sicurezza selezionati di condividere con utenti esterni autenticati|Disattivato|Se è su **Attivato**, solo le persone nei gruppi di sicurezza specificati possono condividere con le persone esterne all’organizzazione. Sono disponibili solo i collegamenti *Persone specifiche*. La condivisione *Chiunque* è disabilitata a meno che anche **Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati** sia su **Attivato**|
-|Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati|Disattivato|Se è su **Attivato**, solo le persone nei gruppi di sicurezza specificati possono condividere con utenti guest. Sono disponibili i collegamenti *Chiunque* e *Persone specifiche*.|
-
-Queste due impostazioni possono essere usate contemporaneamente. Se un utente si trova nel gruppo di sicurezza specificato per entrambe le impostazioni, il livello di autorizzazione più elevato prevale (*Chiunque* più *Utente specifico*). I gruppi di sicurezza annidati sono supportati.
 
 ## <a name="sharepoint-site-level"></a>SharePoint (livello sito)
 

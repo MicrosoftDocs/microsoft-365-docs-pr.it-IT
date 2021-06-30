@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: I ruoli di amministratore, quale Amministratore dei servizi, sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione.
-ms.openlocfilehash: 801a5a85479e431b46883c69e75b1ea909892ca1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 073e82971906ea817da9971ba737874711dc43d3
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964573"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177454"
 ---
 # <a name="about-admin-roles"></a>Informazioni sui ruoli di amministratore
 
@@ -76,8 +76,8 @@ Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazio
 |Amministratore licenze    |   Assegna il ruolo di amministratore della licenza agli utenti che devono assegnare e rimuovere licenze dagli utenti e modificarne la posizione di utilizzo. <br/><br/> Gli amministratori delle licenze possono anche fare quanto segue: <br> - Rielaborare le assegnazioni delle licenze per le licenze basate su gruppo <br> - Assegnare licenze di prodotto ai gruppi per le licenze basate su gruppo  |
 |Amministratore delle app di Office    |   Assegnare il ruolo di amministratore delle app di Office agli utenti che devono eseguire le operazioni seguenti: <br> - Usare il servizio di criteri cloud di Office per creare e gestire i criteri basati su cloud per Office <br> - Creare e gestire richieste di servizio <br> - Gestire i contenuti "Novità" che gli utenti vedono nelle app di Office   <br> - Monitorare l'integrità dei servizi  |
 |Amministratore password  |   Assegnare il ruolo di amministratore della password a un utente che deve reimpostare le password per utenti non amministratori e amministratori di password.   |
-|Amministratore che legge il Centro messaggi |   Assegnare il ruolo amministratore che legge i report agli utenti che devono eseguire le azioni seguenti: <br> - Monitorare le notifiche del Centro messaggi <br> - Ricevere riepiloghi tramite email settimanali sui post e sugli aggiornamenti del Centro messaggi <br> - Condividere i post del Centro messaggi <br> - Avere accesso in sola lettura ai servizi di Azure AD, ad esempio utenti e gruppi|
-|Amministratore di Power Platform |   Assegnare il ruolo amministratore che legge i report agli utenti che devono eseguire le azioni seguenti: <br> - Gestire tutte le funzionalità di amministratore per PowerApps,Power Automate e la prevenzione della perdita dei dati <br> - Creare e gestire richieste di servizio <br> - Monitorare l'integrità dei servizi  |
+|Amministratore che legge il Centro messaggi |   Assegnare il ruolo di lettore del Centro messaggi agli utenti che devono eseguire le operazioni seguenti: <br> - Monitorare le notifiche del Centro messaggi <br> - Ricevere riepiloghi tramite email settimanali sui post e sugli aggiornamenti del Centro messaggi <br> - Condividere i post del Centro messaggi <br> - Avere accesso in sola lettura ai servizi di Azure AD, ad esempio utenti e gruppi|
+|Amministratore di Power Platform |   Assegnare il ruolo di amministratore Power Platform agli utenti che devono eseguire le operazioni seguenti: <br> - Gestire tutte le funzionalità di amministratore per PowerApps,Power Automate e la prevenzione della perdita dei dati <br> - Creare e gestire richieste di servizio <br> - Monitorare l'integrità dei servizi  |
 |Amministratore che legge i report |   Assegnare il ruolo amministratore che legge i report agli utenti che devono eseguire le azioni seguenti: <br> - Visualizzare i dati di utilizzo e i report attività nell'interfaccia di amministrazione di Microsoft 365 <br> - Ottenere l'accesso al pacchetto di contenuti per l'adozione di Power BI <br> - Accedere ai report di accesso e delle attività in Azure AD <br> - Visualizzare i dati restituiti dall'API per la creazione di report di Microsoft Graph|
 |Amministratore del supporto dei servizi   |   Assegnare il ruolo di amministratore del supporto dei servizi come ruolo aggiuntivo agli amministratori o agli utenti che devono eseguire le seguenti operazioni oltre al loro ruolo di amministratore regolare: <br> - Aprire e gestire le richieste di servizio <br> - Visualizzare e condividere i post del Centro messaggi <br> - Monitorare l'integrità dei servizi   |
 |Amministratore di SharePoint    |   Assegnare il ruolo di amministratore di SharePoint agli utenti che devono accedere e gestire l'interfaccia di amministratore di SharePoint Online. <br><br>Gli amministratori di SharePoint possono anche: <br> -Creare ed eliminare siti <br> - Gestire raccolte siti e impostazioni globali di SharePoint   |

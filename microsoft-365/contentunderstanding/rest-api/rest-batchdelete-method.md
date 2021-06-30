@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Usa l'API REST per rimuovere un modello di analisi dei documenti applicato da una o più raccolte.
-ms.openlocfilehash: 8c7aeb449da161fe49050631643c63c93268a13f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904211"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177238"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -32,11 +32,11 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 Nessuno
 
-## <a name="request-headers"></a>Intestazioni di richiesta
+## <a name="request-headers"></a>Intestazioni della richiesta
 
 | Intestazione | Valore |
 |--------|-------|
-|Accetta|application/json;odata=verbose|
+|Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
 |x-requestdigest|Digest appropriato per il sito corrente.|
 
@@ -44,18 +44,43 @@ Nessuno
 
 | Nome | Obbligatorio | Tipo | Descrizione |
 |--------|-------|--------|------------|
+|Pubblicazioni|sì|MachineLearningPublicationEntityData[]|Raccolta di MachineLearningPublicationEntityData, ognuno dei quali specifica il modello e la raccolta documenti di destinazione.|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Nome | Obbligatorio | Tipo | Descrizione |
+|--------|-------|--------|------------|
 |ModelUniqueId|sì|stringa|ID univoco del file di modello.|
-TargetSiteUrl|sì|stringa|URL completo del sito della raccolta di destinazione.|
-TargetWebServerRelativeUrl|sì|stringa|URL relativo al server Web per la raccolta di destinazione.|
-TargetLibraryServerRelativeUrl|sì|stringa|URL relativo al server per la raccolta di destinazione.|
-ViewOption|no|stringa|Specifica se impostare la nuova visualizzazione modello come predefinita per la raccolta.|
+|TargetSiteUrl|sì|stringa|URL completo del sito della raccolta di destinazione.|
+|TargetWebServerRelativeUrl|sì|stringa|URL relativo al server Web per la raccolta di destinazione.|
+|TargetLibraryServerRelativeUrl|sì|stringa|URL relativo al server per la raccolta di destinazione.|
 
 ## <a name="response"></a>Risposta
 
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
-|200 OK| |Operazione completata|
+|200 OK||Si tratta di un'API personalizzata per supportare la rimozione di un modello a più raccolte documenti. In caso di esito positivo parziale, potrebbe comunque essere restituito 200 OK e il chiamante deve esaminare il corpo della risposta per capire se il modello è stato rimosso correttamente da una raccolta documenti.|
 
+## <a name="response-body"></a>Corpo della risposta
+| Nome   | Tipo  | Descrizione|
+|--------|-------|------------|
+|TotalSuccesses|int|Numero totale di modelli rimossi correttamente da una raccolta documenti.|
+|TotalFailures|int|Numero totale di modelli che non possono essere rimossi da una raccolta documenti.|
+|Dettagli|MachineLearningPublicationResult[]|Raccolta di MachineLearningPublicationResult, ognuno dei quali specifica il risultato dettagliato della rimozione del modello da una raccolta documenti.|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| Nome   | Tipo  | Descrizione|
+|--------|-------|------------|
+|StatusCode|int|Codice di stato HTTP.|
+|ErrorMessage|stringa|Messaggio di errore che indica cosa non va quando si applica il modello alla raccolta documenti.|
+|Pubblicazione|MachineLearningPublicationEntityData|Specifica le informazioni sul modello e la raccolta documenti di destinazione.| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Nome | Tipo | Descrizione |
+|--------|--------|------------|
+|ModelUniqueId|stringa|ID univoco del file di modello.|
+|TargetSiteUrl|stringa|URL completo del sito della raccolta di destinazione.|
+|TargetWebServerRelativeUrl|stringa|URL relativo al server Web per la raccolta di destinazione.|
+|TargetLibraryServerRelativeUrl|stringa|URL relativo al server per la raccolta di destinazione.|
 
 ## <a name="examples"></a>Esempi
 
@@ -66,28 +91,22 @@ In questo esempio, l'ID del modello di analisi dei documenti Contoso Contract è
 #### <a name="sample-request"></a>Richiesta di esempio
 
 ```HTTP
-{
-    "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"
-    },
-    "Publications": {
-        "results": [
-            {
-                "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc",
-                "TargetSiteUrl": "https://contoso.sharepoint.com/sites/repository/",
-                "TargetWebServerRelativeUrl": "/sites/repository",
-                "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
-                "ViewOption": "NewViewAsDefault"
-            }
-        ]
-    }
-}
+{ 
+    "publications": [ 
+        { 
+            "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc", 
+            "TargetSiteUrl": "https://constco.sharepoint-df.com/sites/docsite", 
+            "TargetWebServerRelativeUrl": "/sites/docsite ", 
+            "TargetLibraryServerRelativeUrl": "/sites/dcocsite/joedcos" 
+        } 
+    ] 
+} 
 ```
 
 
 #### <a name="sample-response"></a>Risposta di esempio
 
-Nella risposta, TotalFailures e TotalSuccesses fanno riferimento al numero di errori e successi del modello applicato alle raccolte specificate.
+Nella risposta, TotalFailures e TotalSuccesses fanno riferimento al numero di errori e di successi del modello rimosso dalle librerie specificate.
 
 **Codice di stato:** 200
 
