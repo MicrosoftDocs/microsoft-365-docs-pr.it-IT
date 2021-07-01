@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Preparare e distribuire l'estensione per Conformità Microsoft.
-ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843831"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226960"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introduzione all'estensione per Conformità Microsoft
 
@@ -84,11 +84,11 @@ La distribuzione dell'estensione per la conformità Microsoft è un processo in 
 4. [Eseguire la distribuzione con Criteri di gruppo](#deploy-using-group-policy)
 5. [Testare l'estensione](#test-the-extension)
 6. [Usare il dashboard di gestione degli avvisi per visualizzare gli avvisi DLP di Chrome](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [Visualizzazione dei dati DLP di Chrome in Esplora attività](#viewing-chrome-dlp-data-in-activity-explorer) 
+7. [Visualizzazione dei dati DLP di Chrome in Esplora attività](#viewing-chrome-dlp-data-in-activity-explorer)
 
 ### <a name="prepare-infrastructure"></a>Preparazione dell'infrastruttura
 
-Se si sta implementando l'estensione per la conformità Microsoft in tutti i dispositivi Windows 10 monitorati, è consigliabile rimuovere Google Chrome dall'elenco delle app e dei browser non consentiti. Per altre informazioni, vedere [Browser non consentiti](endpoint-dlp-using.md#unallowed-browsers). Se si sta eseguendo l'implementazione solo in alcuni dispositivi, è possibile lasciare Chrome nell'elenco delle app o dei browser non consentiti. L'estensione per la conformità Microsoft ignorerà le restrizioni di entrambi gli elenchi per i computer in cui è installata.  
+Se si sta implementando l'estensione per la conformità Microsoft in tutti i dispositivi Windows 10 monitorati, è consigliabile rimuovere Google Chrome dall'elenco delle app e dei browser non consentiti. Per altre informazioni, vedere [Browser non consentiti](endpoint-dlp-using.md#unallowed-browsers). Se si sta eseguendo l'implementazione solo in alcuni dispositivi, è possibile lasciare Chrome nell'elenco delle app o dei browser non consentiti. L'estensione per la conformità Microsoft ignorerà le restrizioni di entrambi gli elenchi per i computer in cui è installata.
 
 ### <a name="prepare-your-devices"></a>Preparazione dei dispositivi
 
@@ -99,13 +99,13 @@ Se si sta implementando l'estensione per la conformità Microsoft in tutti i dis
 
 ### <a name="basic-setup-single-machine-selfhost"></a>Configurazione di base Selfhost su un singolo computer
 
-Si tratta del metodo consigliato. 
+Si tratta del metodo consigliato.
 
-1. Accedere al computer Windows 10 in cui si desidera installare l'estensione per la conformità Microsoft ed eseguire lo script di PowerShell come amministratore. 
+1. Accedere al computer Windows 10 in cui si desidera installare l'estensione per la conformità Microsoft ed eseguire lo script di PowerShell come amministratore.
 
    ```powershell
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ``` 
+   ```
 
 2.  Passare all'[estensione per la conformità Microsoft - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
@@ -158,7 +158,7 @@ Prima di aggiungere l'estensione per la conformità Microsoft all'elenco delle e
 7.  Selezionare **Aggiungi**.
 
 8.  Immettere le informazioni sui criteri seguenti.
-    
+
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Tipo di dati:`String`<br/>
     Valore: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
@@ -221,34 +221,32 @@ Se non si desidera usare Microsoft Endpoint Manager, è possibile usare i criter
 
 ### <a name="test-the-extension"></a>Testare l'estensione
 
-#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>Caricare nel servizio cloud o accedere tramite browser non consentiti a Uscita cloud  
+#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>Caricare nel servizio cloud o accedere tramite browser non consentiti a Uscita cloud
 
 1. Creare o recuperare un elemento sensibile e provare a caricare un file in un dominio dei servizi con restrizioni dell'organizzazione. I dati riservati devono corrispondere a uno dei [tipi di informazioni sensibili](sensitive-information-type-entity-definitions.md) predefiniti o a uno dei tipi di informazioni sensibili dell'organizzazione. Si dovrebbe ricevere una notifica di tipo avviso popup di DLP dal dispositivo che si sta testando, che informa che questa azione non è consentita quando il file è aperto.
 
-#### <a name="testing-other-dlp-scenarios-in-chrome"></a>Test di altri scenari di prevenzione della perdita dei dati in Chrome 
+#### <a name="testing-other-dlp-scenarios-in-chrome"></a>Test di altri scenari di prevenzione della perdita dei dati in Chrome
 
 Dopo aver rimosso Chrome dall'elenco di browser o app non autorizzati, è possibile testare gli scenari seguenti per verificare che il comportamento soddisfi i requisiti dell'organizzazione:
 
 - Copiare dati da un elemento sensibile a un altro documento tramite gli Appunti
-    - Per eseguire il test, aprire un file protetto da azioni di copia negli Appunti nel browser Chrome e provare a copiare i dati dal file.
-    - Risultato previsto: notifica di avviso popup di DLP che comunica che questa azione non è consentita quando il file è aperto.
+  - Per eseguire il test, aprire un file protetto da azioni di copia negli Appunti nel browser Chrome e provare a copiare i dati dal file.
+  - Risultato previsto: notifica di avviso popup di DLP che comunica che questa azione non è consentita quando il file è aperto.
 - Stampa di un documento
-    - Per eseguire il test, aprire un file protetto dalle azioni di stampa nel browser Chrome e provare a stampare il file.
-    - Risultato previsto: notifica di avviso popup di DLP che comunica che questa azione non è consentita quando il file è aperto.
+  - Per eseguire il test, aprire un file protetto dalle azioni di stampa nel browser Chrome e provare a stampare il file.
+  - Risultato previsto: notifica di avviso popup di DLP che comunica che questa azione non è consentita quando il file è aperto.
 - Copia in supporti rimovibili USB
-    - Per eseguire un test, provare a salvare il file in un archivio multimediale rimovibile.
-    - Risultato previsto: notifica di avviso popup di DLP che comunica che questa azione non è consentita quando il file è aperto.
+  - Per eseguire un test, provare a salvare il file in un archivio multimediale rimovibile.
+  - Risultato previsto: notifica di avviso popup di DLP che comunica che questa azione non è consentita quando il file è aperto.
 - Copia in condivisione di rete
-    - Per eseguire un test, provare a salvare il file in una condivisione di rete.
-    - Risultato previsto: notifica di avviso popup di DLP che comunica che questa azione non è consentita quando il file è aperto.
-
+  - Per eseguire un test, provare a salvare il file in una condivisione di rete.
+  - Risultato previsto: notifica di avviso popup di DLP che comunica che questa azione non è consentita quando il file è aperto.
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>Usare il dashboard di gestione degli avvisi per visualizzare gli avvisi di DLP di Chrome
 
 1. Aprire la pagina di **Prevenzione della perdita dei dati** nel **Centro conformità Microsoft 365** e scegliere [Avvisi](https://compliance.microsoft.com).
 
 2. Fare riferimento alle procedure in [Come configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita dei dati](dlp-configure-view-alerts-policies.md) per visualizzare gli avvisi per i criteri di prevenzione della perdita dei dati degli endpoint.
-
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Visualizzazione dei dati DLP di Chrome in Esplora attività
 
@@ -265,14 +263,15 @@ Dopo aver rimosso Chrome dall'elenco di browser o app non autorizzati, è possib
 2. La modalità Incognito non è supportata e deve essere disabilitata.
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Ora che si è eseguito l'onboarding dei dispositivi e che è possibile visualizzare i dati sulle attività in Esplora attività, è possibile procedere con il passaggio successivo, in cui si creano criteri di prevenzione della perdita dei dati per proteggere gli elementi sensibili.
 
 - [Uso di Prevenzione della perdita di dati degli endpoint](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni sulla prevenzione della perdita di dati degli endpoint ](endpoint-dlp-learn-about.md)
-- [Uso della Prevenzione della perdita di dati degli endpoint ](endpoint-dlp-using.md)
+- [Informazioni sulla prevenzione della perdita di dati degli endpoint](endpoint-dlp-learn-about.md)
+- [Uso della prevenzione della perdita di dati degli endpoint](endpoint-dlp-using.md)
 - [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)

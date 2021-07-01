@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Creare una cassetta postale sala o attrezzatura in modo che tutti gli utenti dell'organizzazione potranno prenotarla per riunioni o eventi usando Outlook. "
-ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d999cb04161b1284025aa1b587fe7368c25eb4f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915171"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227932"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Cassette postali della sala e attrezzatura
 
@@ -88,7 +88,7 @@ Per configurare una cassetta postale sala o attrezzatura, passare all'interfacci
 6. Se sono state apportate modifiche, selezionare **Salva** e quindi **Chiudi**.
 
 > [!Note]
-> Per mantenere al sicuro le cassette postali sala e attrezzatura, bloccare l'accesso a queste cassette postali. Per altre informazioni, vedere [Bloccare l'accesso per l'account della cassetta postale condivisa](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> Per mantenere al sicuro le cassette postali sala e attrezzatura, bloccare l'accesso a queste cassette postali. Per altre informazioni, vedere [Bloccare l'accesso per l'account della cassetta postale condivisa](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>Domande frequenti sulle cassette postali sala e attrezzatura
 

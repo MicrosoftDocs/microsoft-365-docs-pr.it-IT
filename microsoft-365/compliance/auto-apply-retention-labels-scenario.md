@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Come usare le etichette di conservazione per gestire il ciclo di vita dei documenti in SharePoint tramite l’uso dei metadati, per classificare il contenuto, applicare automaticamente le etichette e usare la conservazione basata su eventi per avviare il periodo di conservazione.
-ms.openlocfilehash: 6c58658378fd0def9a56783e7b8b35db3323b135
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 3bc2d6f5baa2f11e7905ccf98e16145fef24d64d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034215"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227604"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usare le etichette di conservazione per gestire il ciclo di vita dei documenti archiviati in SharePoint
 
@@ -58,7 +58,7 @@ In questo scenario, si usa il Servizio metadati gestiti e l'Archivio termini per
 
 Le *tipologie di contenuto* possono essere create e pubblicate con l'[Hub tipo di contenuto](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). È anche possibile creare e pubblicare un tipo di contenuto utilizzando strumenti di provisioning del sito come l'apposito [framework PnP](/sharepoint/dev/solution-guidance/pnp-provisioning-framework) o lo [schema JSON di progettazione del sito](/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
 
-Ciascun prodotto dispone di un sito di SharePoint dedicato, contenente una raccolta documenti con le corrette tipologie di contenuto abilitate. Tutti i documenti vengono archiviati in questa raccolta.
+Ciascun prodotto dispone di un sito di SharePoint dedicato, contenente una raccolta documenti con le corrette tipologie di contenuto abilitate. Tutti i documenti vengono archiviati in questa raccolta documenti.
 
 [ ![Raccolta documenti per la documentazione del prodotto](../media/SPRetention3.png) ](../media/SPRetention3.png#lightbox)
 
@@ -121,19 +121,19 @@ La schermata seguente mostra le impostazioni quando si crea l'etichetta di conse
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>Creare un tipo di evento quando si crea un'etichetta di conservazione
 
 1. Nella pagina **Definisci impostazioni di conservazione** della procedura guidata Crea etichetta di conservazione, dopo **Avvia il periodo di conservazione in base a**, selezionare **Crea nuovo tipo di evento**:
-    
+
     ![Creare un nuovo tipo di evento per la finestra di dialogo Specifica di prodotto](../media/SPRetention6.png)
 
 3. Nella pagina **Nomina il tuo tipo di evento**, scrivere **Cessazione prodotto** e aggiungere una descrizione facoltativa. Selezionare **Avanti**, **Invia**, e **Fatto**.
 
 4. Tornare alla pagina **Definisci impostazioni di conservazione**. Nell'opzione **Avvia il periodo di conservazione in base a**, usare la casella a discesa per selezionare il tipo di evento **Cessazione prodotto** creato.
-    
-    Ecco come appaiono le impostazioni per l'etichetta di conservazione Specifica di prodotto: 
-    
+
+    Ecco come appaiono le impostazioni per l'etichetta di conservazione Specifica di prodotto:
+
    ![Impostazioni per la nuova etichetta Specifica di prodotto](../media/SPRetention7.png)
 
-6. Selezionare **Crea etichetta** e, nella pagina successiva, quando compare l'opzione per pubblicare l'etichetta, applicare automaticamente o salvare l'etichetta: selezionare **Salva l'etichetta per ora** e fare clic su **Fatto**. 
-    
+6. Selezionare **Crea etichetta** e, nella pagina successiva, quando compare l'opzione per pubblicare l'etichetta, applicare automaticamente o salvare l'etichetta: selezionare **Salva l'etichetta per ora** e fare clic su **Fatto**.
+
     > [!TIP]
     > Per informazioni più dettagliate sui vari passaggi, consultare [Creare un'etichetta il cui periodo di conservazione è basato su un evento](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
@@ -188,9 +188,9 @@ Per eseguire il mapping della proprietà sottoposta a ricerca per indicizzazione
 
 1. Nella casella del filtro **Proprietà gestita**, digitare **_RefinableString00_** e selezionare la freccia verde.
 
-2. Nell'elenco dei risultati, selezionare il link **RefinableString00**, poi scorrere verso il basso fino alla sezione **Mapping alle proprietà sottoposte a ricerca per indicizzazione**.  
+2. Nell'elenco dei risultati, selezionare il link **RefinableString00**, poi scorrere verso il basso fino alla sezione **Mapping alle proprietà sottoposte a ricerca per indicizzazione**.
 
-3. Selezionare **Aggiungi mapping** e poi digitare **_ows\_Doc\_x0020\_Type_*_ nella casella* Cerca un nome di proprietà sottoposta a ricerca per indicizzazione** all'interno della finestra **Selezione proprietà sottoposte a ricerca per indicizzazione**. Selezionare **Trova**.  
+3. Selezionare **Aggiungi mapping** e poi digitare **_ows\_Doc\_x0020\_Type_*_ nella casella* Cerca un nome di proprietà sottoposta a ricerca per indicizzazione** all'interno della finestra **Selezione proprietà sottoposte a ricerca per indicizzazione**. Selezionare **Trova**.
 
 4. Nell'elenco dei risultati, selezionare **ows\_Doc\_x0020\_Type** e poi **OK**.
 
@@ -222,19 +222,19 @@ Dopo aver verificato il funzionamento della query KQL, si potranno creare i crit
 2. Nella procedura guidata Crea criterio di applicazione automatica etichette, nella pagina **Nomina il tuo criterio di applicazione automatica etichette**, scrivere un nome, ad esempio **Applicazione automatica etichetta specifica di prodotto**, e aggiungere una descrizione facoltativa. Quindi, scegliere **Avanti**.
 
 3. Nella pagina **Scegli il tipo di contenuto a cui applicare questa etichetta**, selezionare **Applica etichetta a contenuti che includono parole, frasi o proprietà specifiche**, quindi selezionare **Avanti**.
-    
+
    [ ![Selezionare Applica etichetta ai contenuti che includono parole, frasi o proprietà specifiche](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
-    
+
    Questa opzione consente di fornire la stessa query di ricerca KQL collaudata nella sezione precedente. La query mostra come risultato tutti i documenti Specifica di prodotto che hanno *Finale* come Stato. Quando utilizziamo la medesima query nei criteri di applicazione automatica dell'etichetta, l'etichetta di conservazione Specifica di prodotto sarà applicata automaticamente a tutti i documenti corrispondenti.
 
 4. Nella pagina **Applica etichetta a contenuti che corrispondono a questa query**, scrivere **RefinableString00:"Product Specification" AND RefinableString01:Final** e selezionare **Avanti**.
 
    ![Specificare la query nella casella Editor di query con parole chiave](../media/SPRetention19.png)
 
-5. Nella pagina **Scegli posizioni per applicare il criterio**, selezionare le posizioni dei contenuti a cui si desidera applicare il criterio. Per questo scenario, il criterio verrà applicato solo alle posizioni di SharePoint, poiché tutti i documenti di produzione sono archiviati nelle raccolte documenti di SharePoint. Modificare lo stato di **Posta elettronica di Exchange**, **Account di OneDrive**, e **Gruppi di Microsoft 365** su **Disattivato**. Verificare che lo stato dei siti di SharePoint sia impostato su **Attivato** prima di selezionare **Avanti**: 
-    
+5. Nella pagina **Scegli posizioni per applicare il criterio**, selezionare le posizioni dei contenuti a cui si desidera applicare il criterio. Per questo scenario, il criterio verrà applicato solo alle posizioni di SharePoint, poiché tutti i documenti di produzione sono archiviati nelle raccolte documenti di SharePoint. Modificare lo stato di **Posta elettronica di Exchange**, **Account di OneDrive**, e **Gruppi di Microsoft 365** su **Disattivato**. Verificare che lo stato dei siti di SharePoint sia impostato su **Attivato** prima di selezionare **Avanti**:
+
     ![Scegliere siti specifici per l'applicazione automatica delle etichette](../media/SPRetentionSPlocations.png)
-    
+
    > [!TIP]
    > Anziché applicare il criterio a tutti i siti di SharePoint, è possibile selezionare **Seleziona sito** e aggiungere gli URL per i siti di SharePoint specifici.
 
@@ -247,9 +247,9 @@ Dopo aver verificato il funzionamento della query KQL, si potranno creare i crit
     ![Impostazioni per l'applicazione automatica dell'etichetta](../media/SPRetention18.png)
 
 9. Selezionare **Invia** per creare il criterio di applicazione automatica dell'etichetta.
-    
-   >[!NOTE]
-   >Sono necessari fino a 7 giorni per applicare automaticamente l'etichetta Specifica di prodotto a tutti i documenti che corrispondono alla query di ricerca KQL.
+
+   > [!NOTE]
+   > Sono necessari fino a 7 giorni per applicare automaticamente l'etichetta Specifica di prodotto a tutti i documenti che corrispondono alla query di ricerca KQL.
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>Verificare che l'etichetta di conservazione sia stata applicata automaticamente
 
@@ -287,7 +287,7 @@ Per creare questo flusso, iniziare da un connettore di SharePoint e selezionare 
 - **URI**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Intestazioni**: Chiave = Content-Type, Valore = application/atom+xml
 - **Corpo**:
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'>
     <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
@@ -324,10 +324,10 @@ Selezionare l'evento per visualizzarne i dettagli nella pagina a comparsa. Notar
 
 ![Dettagli evento](../media/SPRetention29.png)
 
-Dopo un periodo di tempo, lo stato dell’evento indica l'elaborazione di un sito e di un documento di SharePoint.  
+Dopo un periodo di tempo, lo stato dell’evento indica l'elaborazione di un sito e di un documento di SharePoint.
 
 ![I dettagli dell'evento mostrano che i documenti sono stati elaborati.](../media/SPRetention31.png)
- 
+
 Questo indica che sarà stato avviato il periodo di conservazione per l'etichetta applicata al documento del prodotto Spinning Widget, sulla base della data dell'evento *Cessazione produzione Spinning Widget*. Ipotizzando che lo scenario sia stato implementato nell'ambiente di test configurando un periodo di conservazione pari a un giorno, è possibile passare alla raccolta dei propri documenti di prodotto alcuni giorni dopo la creazione dell'evento e verificare l'effettiva eliminazione di tale documento, in seguito al processo di eliminazione in SharePoint.
 
 ### <a name="more-about-asset-ids"></a>Altre informazioni sugli ID risorsa
