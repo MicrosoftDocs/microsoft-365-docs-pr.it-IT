@@ -114,7 +114,7 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Creare notifiche per attività di corrispondenza esatta dei dati (anteprima)
           href: sit-edm-notifications-activities.md
-        - name: Creare un tipo di informazione sensibile personalizzato - Centro conformità
+        - name: Introduzione ai tipi di informazione sensibile personalizzati - Centro conformità
           href: create-a-custom-sensitive-information-type.md
         - name: Creare tipi di informazioni sensibili personalizzati - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
@@ -933,7 +933,7 @@
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
 - name: Microsoft 365 Enterprise
   href: ../enterprise/index.yml
-- name: Sicurezza di Microsoft 365
+- name: Sicurezza Microsoft 365
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home

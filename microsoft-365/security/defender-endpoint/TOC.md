@@ -66,7 +66,7 @@
 #### [Microsoft Defender per endpoint su macOS]()
 ##### [Panoramica di Microsoft Defender per endpoint su MacOS](microsoft-defender-endpoint-mac.md)
 ##### [Novità](mac-whatsnew.md)
- 
+
 ##### [Distribuzione]()
 ###### [Distribuzione basata su Microsoft Intune](mac-install-with-intune.md)
 ###### [Distribuzione basata su JAMF Pro]()
@@ -75,11 +75,11 @@
 ####### [Configurare gruppi di dispositivi](mac-jamfpro-device-groups.md)
 ####### [Configurare i criteri](mac-jamfpro-policies.md)
 ####### [Registrare i dispositivi](mac-jamfpro-enroll-devices.md)
- 
+
 ###### [Distribuzione con un altro sistema di gestione di dispositivi mobili (MDM)](mac-install-with-other-mdm.md)
 ###### [Distribuzione manuale](mac-install-manually.md)
 ##### [Aggiornare](mac-updates.md)
- 
+
 ##### [Configurare]()
 ###### [Configurare e convalidare le esclusioni](mac-exclusions.md)
 ###### [Impostare le preferenze](mac-preferences.md)
@@ -89,14 +89,14 @@
 ####### [Esempi di JAMF](mac-device-control-jamf.md)
 ####### [Esempi di Intune](mac-device-control-intune.md)
 ###### [Pianificare analisi](mac-schedule-scan.md)
- 
+
 ##### [Risoluzione dei problemi]()
 ###### [Risolvere i problemi di installazione](mac-support-install.md)
 ###### [Risolvere i problemi di prestazioni](mac-support-perf.md)
 ###### [Risolvere i problemi di connettività cloud](troubleshoot-cloud-connect-mdemac.md)
 ###### [Risolvere i problemi di estensione del kernel](mac-support-kext.md)
 ###### [Risolvere i problemi relativi alle licenze](mac-support-license.md)
- 
+
 ##### [Privacy](mac-privacy.md)
 ##### [Risorse](mac-resources.md)
 
@@ -104,10 +104,10 @@
 #### [Microsoft Defender per endpoint su iOS]()
 ##### [Panoramica di Microsoft Defender per Endpoint su iOS](microsoft-defender-endpoint-ios.md)
 ##### [Novità](ios-whatsnew.md)
- 
+
 ##### [Distribuzione]()
 ###### [Distribuzione di Microsoft Defender per Endpoint su iOS via Intune](ios-install.md)
- 
+
 ##### [Configurare]()
 ###### [Configurare le caratteristiche di iOS](ios-configure-features.md)
 
@@ -115,8 +115,8 @@
 ###### [Domande frequenti e risoluzione dei problemi](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
- 
- 
+
+
 #### [Microsoft Defender per Endpoint su Linux]()
 ##### [Panoramica di Microsoft Defender per Endpoint su Linux](microsoft-defender-endpoint-linux.md)
 ##### [Novità](linux-whatsnew.md)
@@ -127,7 +127,7 @@
 ###### [Distribuire Defender per Endpoint su Linux con Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 ##### [Aggiorna](linux-updates.md)
- 
+
 ##### [Configurare]()
 ###### [Configurare e convalidare le esclusioni](linux-exclusions.md)
 ###### [Configurazione manuale del proxy statico](linux-static-proxy-configuration.md)
@@ -136,29 +136,29 @@
 ###### [Pianificare analisi con Microsoft Defender per Endpoint su Linux](linux-schedule-scan-atp.md)
 ###### [Pianificare un aggiornamento di Microsoft Defender per Endpoint (Linux)](linux-update-MDE-Linux.md)
 
- 
+
 ##### [Risoluzione dei problemi]()
 ###### [Risoverei problemi di installazione](linux-support-install.md)
 ###### [Esaminare i problemi di integrità dell'agente](health-status.md)
 ###### [Risolvere i problemi di connettività cloud](linux-support-connectivity.md)
 ###### [Risolvere i problemi di prestazioni](linux-support-perf.md)
 ###### [Risolvere i problemi di eventi mancanti](linux-support-events.md)
- 
+
 ##### [Privacy](linux-privacy.md)
 ##### [Risorse](linux-resources.md)
- 
+
 #### [Microsoft Defender per Endpoint su Android]()
 ##### [Panoramica di Microsoft Defender per Endpoint su Android](microsoft-defender-endpoint-android.md)
- 
+
 ##### [Distribuzione]()
 ###### [Distribuzione di Microsoft Defender per Endpoint per Android con Microsoft Intune](android-intune.md)
- 
+
 ##### [Configurare]()
 ###### [Configurare funzionalità di Microsoft Defender per Endpoint su funzionalità Android](android-configure.md)
- 
+
 ##### [Privacy]()
 ###### [Microsoft Defender per Endpoint su Android - Informazioni sulla privacy](android-privacy.md)
- 
+
 ##### [Risoluzione dei problemi]()
 ###### [Risolvere i problemi](android-support-signin.md)
 
@@ -321,13 +321,13 @@
 ##### [Abilitare la protezione dagli exploit](enable-exploit-protection.md)
 ##### [Personalizzare la protezione dagli exploit](customize-exploit-protection.md)
 ##### [Importare, esportare e distribuire configurazioni di protezione da exploit](import-export-exploit-protection-emet-xml.md)
-##### [Riferimento protezione dagli exploit](exploit-protection-reference.md )
+##### [Riferimento protezione dagli exploit](exploit-protection-reference.md)
 
 #### [Protezione di rete]()
 ##### [Proteggere la rete](network-protection.md)
 ##### [Valutare la protezione di rete](evaluate-network-protection.md)
 ##### [Attivare la protezione di rete](enable-network-protection.md)
- 
+
 #### [Protezione sul Web]()
 ##### [Panoramica protezione Web](web-protection-overview.md)
 ##### [Protezione dalle minacce sul Web]()
@@ -335,7 +335,7 @@
 ###### [Monitorare la sicurezza sul Web](web-protection-monitoring.md)
 ###### [Rispondere alle minacce sul Web](web-protection-response.md)
 ##### [Filtro contenuti Web](web-content-filtering.md)
- 
+
 #### [Accesso controllato alle cartelle]()
 ##### [Proteggere le cartelle](controlled-folders.md)
 ##### [Valutare l’accesso controllato alle cartelle](evaluate-controlled-folder-access.md)
@@ -371,7 +371,7 @@
 ##### [Visualizzare e organizzare la coda degli incidenti](view-incidents-queue.md)
 ##### [Gestire gli incidenti](manage-incidents.md)
 ##### [Indagare sugli incidenti](investigate-incidents.md)
- 
+
 #### [Coda di avvisi]()
 ##### [Visualizzare e organizzare la coda di avvisi](alerts-queue.md)
 ##### [Rivedere gli avvisi](review-alerts.md)
@@ -383,12 +383,12 @@
 ##### [Esaminare un dominio](investigate-domain.md)
 ###### [Esaminare gli eventi di connessione che si verificano dietro i proxy di inoltro](investigate-behind-proxy.md)
 ##### [Esaminare un account utente](investigate-user.md)
- 
+
 #### [Elenco dispositivi]()
 ##### [Visualizzare e organizzare l’elenco dispositivi](machines-view-overview.md)
 ##### [Contrassegni degli eventi della sequenza temporale del dispositivo](device-timeline-event-flag.md)
 ##### [Gestire gruppi di dispositivi e tag](machine-tags.md)
- 
+
 #### [Intraprendere azioni di risposta]()
 ##### [Intraprendere azioni di risposta su un dispositivo]()
 ###### [Azioni di risposta su dispositivi](respond-machine-alerts.md)
@@ -547,7 +547,7 @@
 ####### [Limitare l'esecuzione dell'app](restrict-code-execution.md)
 ####### [Rimuovere la restrizione dell'app](unrestrict-code-execution.md)
 ####### [Eseguire ricerca del virus](run-av-scan.md)
-####### [Eseguire risposta in tempo reale](run-live-response.md) 
+####### [Eseguire risposta in tempo reale](run-live-response.md)
 ####### [Dispositivo offboard](offboard-machine-api.md)
 ####### [Arrestare e mettere in quarantena un file](stop-and-quarantine-file.md)
 ####### [Annullare azione dei computer](cancel-machine-action.md)
@@ -661,7 +661,7 @@
 ##### [Dispositivi inattivi](fix-unhealthy-sensors.md#inactive-devices)
 ##### [Dispositivi non configurati correttamente](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Esaminare gli eventi e gli errori dei sensori nei computer con visualizzatore eventi](event-error-codes.md)
-  
+
 #### [Risolvere i problemi del servizio di Microsoft Defender per endpoint]()
 ##### [Risolvere i problemi dei servizi](troubleshoot-mdatp.md)
 ##### [Verificare l'integrità dei servizi](service-status.md)
@@ -669,8 +669,8 @@
 
 #### [Risolvere i problemi relativi alle risposte in tempo reale](troubleshoot-live-response.md)
 
-#### [Raccogliere log di supporto con LiveAnalyzer ](troubleshoot-collect-support-log.md)
- 
+#### [Raccogliere log di supporto con LiveAnalyzer](troubleshoot-collect-support-log.md)
+
 #### [Risolvere i problemi di riduzione della superficie di attacco]()
 ##### [Protezione di rete](troubleshoot-np.md)
 ##### [Regole per la riduzione della superficie di attacco](troubleshoot-asr.md)
@@ -678,4 +678,4 @@
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender per Office 365](../office-365-security/index.yml)
-# [Defender per identità](https://docs.microsoft.com/defender-for-identity/)
+# [Defender per identità](/defender-for-identity/)

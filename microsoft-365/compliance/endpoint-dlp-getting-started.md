@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 8dc57bfe395ad76e6b8aef336aaadb2cb7e42f81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061663"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226672"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introduzione alla prevenzione della perdita di dati degli endpoint
 
@@ -44,7 +44,6 @@ Prima di iniziare a usare Endpoint DLP, è necessario confermare l'[abbonamento 
 - Microsoft 365 A5 Compliance
 - Microsoft 365 E5 Information Protection and Governance
 - Microsoft 365 A5 Information Protection and Governance
-
 
 ### <a name="permissions"></a>Autorizzazioni
 
@@ -84,25 +83,26 @@ Verificare che i dispositivi Windows 10 in cui si prevede di distribuire Endpoin
 
 1. Devono eseguire Windows 10 x 64, build 1809 o successiva.
 
-2. La versione del client antimalware deve essere 4.18.2009.7 o successiva. Controllare la versione corrente aprendo l'app Sicurezza di Windows e facendo clic sull'icona impostazioni e quindi su Informazioni. Il numero di versione è elencato in Versione client antimalware. Eseguire l'aggiornamento all'ultima versione del client antimalware installando l'aggiornamento di Windows KB4052623. 
+2. La versione del client antimalware deve essere 4.18.2009.7 o successiva. Controllare la versione corrente aprendo l'app Sicurezza di Windows e facendo clic sull'icona impostazioni e quindi su Informazioni. Il numero di versione è elencato in Versione client antimalware. Eseguire l'aggiornamento all'ultima versione del client antimalware installando l'aggiornamento di Windows KB4052623.
 
    > [!NOTE]
    > Nessun componente di Sicurezza di Windows deve essere attivo ed è possibile eseguire Endpoint DLP indipendentemente dallo stato di Sicurezza di Windows, ma il [Controllo in tempo reale della protezione e del comportamento](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) deve essere abilitato. 
- 
-3. Devono essere installati gli aggiornamenti seguenti di Windows. 
- 
+
+3. Devono essere installati gli aggiornamenti seguenti di Windows.
+
    > [!NOTE]
    > Questi aggiornamenti non sono prerequisiti per l'onboarding di un dispositivo in Endpoint DLP, ma contengono correzioni per problemi importanti, pertanto vanno installati prima di usare il prodotto.
 
-    - Per Windows 10 1809 - KB4559003, KB4577069, KB4580390
-    - Per Windows 10 1903 o 1909 - KB4559004, KB4577062, KB4580386
-    - Per Windows 10 2004 - KB4568831, KB4577063
-    - Per i dispositivi che eseguono Office 2016 (e non qualsiasi altra versione di Office) - KB4577063 
+   - Per Windows 10 1809 - KB4559003, KB4577069, KB4580390
+   - Per Windows 10 1903 o 1909 - KB4559004, KB4577062, KB4580386
+   - Per Windows 10 2004 - KB4568831, KB4577063
+   - Per i dispositivi che eseguono Office 2016 (e non qualsiasi altra versione di Office) - KB4577063
 
 4. Tutti i dispositivi devono essere uno dei seguenti:
-- [Aggiunto ad Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
-- [Aggiunto ad Azure AD ibrido](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-- [Registrato ad Azure AD](/azure/active-directory/user-help/user-help-register-device-on-network)
+
+   - [Aggiunto ad Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
+   - [Aggiunto ad Azure AD ibrido](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+   - [Registrato ad Azure AD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Installare il browser Microsoft Edge Chromium nel dispositivo endpoint per applicare azioni dei criteri per l'attività di caricamento nel cloud. Vedere [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -124,7 +124,7 @@ In questo scenario di distribuzione si esegue l'onboarding di dispositivi non an
 
 1. Aprire il [Centro conformità Microsoft](https://compliance.microsoft.com).
 
-2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Onboarding di dispositivi**. 
+2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Onboarding di dispositivi**.
 
    > [!div class="mx-imgBorder"]
    > ![abilitare la gestione dei dispositivi](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -140,7 +140,7 @@ In questo scenario di distribuzione si esegue l'onboarding di dispositivi non an
 
    > [!div class="mx-imgBorder"]
    > ![metodo di distribuzione](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-   
+
 6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender per endpoint che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
 
     - Onboarding di dispositivi Windows 10 con Criteri di gruppo
@@ -166,13 +166,12 @@ In questo scenario, Microsoft Defender per endpoint è già distribuito e ci son
 
    > [!div class="mx-imgBorder"]
    > ![gestione dispositivi](../media/endpoint-dlp-getting-started-2-device-management.png)
-   
+
 4. Scegliere **Onboarding** se è necessario aggiungere altri dispositivi.
 
 5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **Scarica pacchetto**.
 
 6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender per endpoint che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
-
     - Onboarding di dispositivi Windows 10 con Criteri di gruppo
     - Onboarding di dispositivi Windows 10 con Microsoft Endpoint Configuration Manager
     - Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
@@ -190,7 +189,6 @@ Una volta completata l'operazione di onboarding, l'endpoint sarà visibile nell'
 
 2. Fare riferimento alle procedure in [Come configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita dei dati](dlp-configure-view-alerts-policies.md) per visualizzare gli avvisi per i criteri di Endpoint DLP.
 
-
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizzazione dei dati di Endpoint DLP in Esplora attività
 
 1. Aprire la pagina [Classificazione dei dati](https://compliance.microsoft.com/dataclassification?viewid=overview) per il dominio nel Centro conformità Microsoft 365 e scegliere Esplora attività.
@@ -201,14 +199,15 @@ Una volta completata l'operazione di onboarding, l'endpoint sarà visibile nell'
    > ![filtro di Esplora attività per i dispositivi endpoint](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Ora che si è eseguito l'onboarding dei dispositivi e che è possibile visualizzare i dati sulle attività in Esplora attività, è possibile procedere con il passaggio successivo, in cui si creano criteri di prevenzione della perdita dei dati per proteggere gli elementi sensibili.
 
 - [Uso di Prevenzione della perdita di dati degli endpoint](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni sulla prevenzione della perdita di dati degli endpoint ](endpoint-dlp-learn-about.md)
-- [Uso della Prevenzione della perdita di dati degli endpoint ](endpoint-dlp-using.md)
+- [Informazioni sulla prevenzione della perdita di dati degli endpoint](endpoint-dlp-learn-about.md)
+- [Uso della prevenzione della perdita di dati degli endpoint](endpoint-dlp-using.md)
 - [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)

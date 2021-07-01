@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare il proxy del dispositivo e le impostazioni di connessione Internet per la prevenzione della perdita di dati degli endpoint.
-ms.openlocfilehash: f2a62b5c7913b6f41c414310a97ab5f072f59642
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 801f3cf4f2215002fb80f7c4d68c2f5b83f5d04d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538616"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226708"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurazione del proxy del dispositivo e delle impostazioni di connessione Internet per la prevenzione della perdita di dati degli endpoint
 
@@ -42,8 +42,8 @@ L'impostazione di configurazione WinHTTP è indipendente dalle impostazioni del 
 > Se nella topologia di rete si usa un proxy trasparente o WPAD, non sono necessarie impostazioni di configurazione speciali. Per ulteriori informazioni sulle esclusioni URL nel proxy di Microsoft Defender per Endpoint, vedere [Abilitare l'accesso agli URL del servizio cloud della Prevenzione della perdita dei dati degli endpoint nel server proxy](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server).
 
 - Configurazione manuale del proxy statico:
-    - Configurazione basata sul registro
-    - WinHTTP configurato utilizzando il comando netsh. Questo è adatto solo per desktop in una topologia stabile (ad esempio: un desktop in una rete aziendale dietro lo stesso proxy)
+  - Configurazione basata sul registro
+  - WinHTTP configurato utilizzando il comando netsh. Questo è adatto solo per desktop in una topologia stabile (ad esempio: un desktop in una rete aziendale dietro lo stesso proxy)
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurare manualmente il server proxy con un proxy statico basato sul registro
 
@@ -53,21 +53,21 @@ Il proxy statico è configurabile tramite Criteri di gruppo. I criteri di gruppo
 
 1. Aprire **Modelli amministrativi > Componenti di Windows > Raccolta dati e build di anteprima > Configura l'utilizzo del proxy autenticato per l'esperienza utente connessa e servizio di telemetria**
 
-2. Impostarlo su **Abilitato** e selezionare **Disabilita uso proxy autenticato**: 
+2. Impostarlo su **Abilitato** e selezionare **Disabilita uso proxy autenticato**:
 
-![Immagine delle impostazioni di criteri di gruppo 1](../media/atp-gpo-proxy1.png)
- 
+   ![Immagine delle impostazioni di criteri di gruppo 1](../media/atp-gpo-proxy1.png)
+
 3. Aprire **Modelli amministrativi > Componenti di Windows > Raccolta dati e build di anteprima > Configura esperienze utente connesse e telemetria**:
 
- Configurare il proxy inverso
+   Configurare il proxy inverso
 
-![Immagine delle impostazioni di criteri di gruppo 2](../media/atp-gpo-proxy2.png)
+   ![Immagine delle impostazioni di criteri di gruppo 2](../media/atp-gpo-proxy2.png)
 
-Il criterio imposta due valori di registro`TelemetryProxyServer` come REG_SZ e `DisableEnterpriseAuthProxy` REG_DWORD nella chiave di registro`HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
+   Il criterio imposta due valori di registro`TelemetryProxyServer` come REG_SZ e `DisableEnterpriseAuthProxy` REG_DWORD nella chiave di registro`HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
-Il valore di registro TelemetryProxyServer è nel formato \<server name or ip\>:\<port\>. Ad esempio: **10.0.0.6:8080**
+   Il valore di registro TelemetryProxyServer è nel formato \<server name or ip\>:\<port\>. Ad esempio: **10.0.0.6:8080**
 
-Il valore del registro `DisableEnterpriseAuthProxy` deve essere impostato su 1.
+   Il valore del registro `DisableEnterpriseAuthProxy` deve essere impostato su 1.
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>Configurare manualmente il server proxy con il comando "netsh"
 
@@ -78,19 +78,19 @@ Usare netsh per configurare un proxy statico a livello di sistema.
 
 1. Aprire un prompt dei comandi con privilegi elevati:
     1. Passare a **Start** e digitare **cmd**
-    1. Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
-2.  Immettere il comando indicato di seguito e premere **INVIO**:
+    2. Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
 
-    `netsh winhttp set proxy <proxy>:<port>`
+2. Immettere il comando indicato di seguito e premere **INVIO**:
 
-    Ad esempio: **netsh winhttp set proxy 10.0.0.6:8080**
+   `netsh winhttp set proxy <proxy>:<port>`
+
+   Ad esempio: **netsh winhttp set proxy 10.0.0.6:8080**
 
 3. Per reimpostare il proxy winhttp, immettere il comando indicato di seguito e premere **INVIO**:
 
-     `netsh winhttp reset proxy`
+   `netsh winhttp reset proxy`
 
 Per altre informazioni, vedere [Sintassi comando netsh, contesti e formattazione](/windows-server/networking/technologies/netsh/netsh-contexts).
-
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>Abilitare l'accesso agli URL del servizio cloud della Prevenzione della perdita dei dati degli endpoint nel server proxy
 
@@ -110,38 +110,44 @@ Verificare che la configurazione del proxy sia stata completata correttamente, c
 3. Aprire un prompt dei comandi con privilegi elevati:
     1. Passare a **Start** e digitare **cmd**.
     1. Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
-4.  Immettere il comando indicato di seguito e premere **INVIO**:
-    
-`HardDrivePath\MDATPClientAnalyzer.cmd`
+4. Immettere il comando indicato di seguito e premere **INVIO**:
 
-Sostituire *HardDrivePath* con il percorso in cui è stato scaricato lo strumento MDATPClientAnalyzer, ad esempio
-    
-**C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd**
+   `HardDrivePath\MDATPClientAnalyzer.cmd`
 
+   Sostituire *HardDrivePath* con il percorso in cui è stato scaricato lo strumento MDATPClientAnalyzer, ad esempio
 
-5.  Estrarre il file **MDATPClientAnalyzerResult. zip** creato dallo strumento nella cartella usata in _HardDrivePath*.
+   **C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd**
 
-6.  Aprire **MDATPClientAnalyzerResult.txt** e verificare di avere eseguito la procedura di configurazione del proxy per abilitare l'individuazione del server e l'accesso agli URL di servizio.  Lo strumento controlla la connettività degli URL del servizio Defender per Endpoint con cui è configurato per interagire. Quindi immette i risultati per ogni URL che potrebbe essere potenzialmente utilizzato per comunicare con il servizio Defender per l'endpoint nel file **MDATPClientAnalyzerResult.txt**. Ad esempio:
+5. Estrarre il file **MDATPClientAnalyzerResult. zip** creato dallo strumento nella cartella usata in _HardDrivePath*.
 
-    **Testing URL: https://xxx.microsoft.com/xxx </br> 1 - Default proxy: Succeeded (200) </br> 2 - Proxy auto discovery (WPAD): Succeeded (200)</br> 3 - Proxy disabled: Succeeded (200)</br> 4 - Named proxy: Doesn't exist</br> 5 - Command-line proxy: Doesn't exist**</br>
+6. Aprire **MDATPClientAnalyzerResult.txt** e verificare di avere eseguito la procedura di configurazione del proxy per abilitare l'individuazione del server e l'accesso agli URL di servizio.  Lo strumento controlla la connettività degli URL del servizio Defender per Endpoint con cui è configurato per interagire. Quindi immette i risultati per ogni URL che potrebbe essere potenzialmente utilizzato per comunicare con il servizio Defender per l'endpoint nel file **MDATPClientAnalyzerResult.txt**. Ad esempio:
 
+   ```DOS
+   Testing URL: https://xxx.microsoft.com/xxx
+   1 - Default proxy: Succeeded (200)
+   2 - Proxy auto discovery (WPAD): Succeeded (200)
+   3 - Proxy disabled: Succeeded (200)
+   4 - Named proxy: Doesn't exist
+   5 - Command-line proxy: Doesn't exist
+   ```
 
-Se almeno una delle opzioni di connettività restituisce uno stato (200), il client Defender per Endpoint può comunicare correttamente con l'URL testato usando questo metodo di connettività. 
+Se almeno una delle opzioni di connettività restituisce uno stato (200), il client Defender per Endpoint può comunicare correttamente con l'URL testato usando questo metodo di connettività.
 
 Tuttavia, se i risultati della verifica della connettività indicano un errore, viene visualizzato un errore HTTP (vedere codici di stato HTTP). È quindi possibile usare gli URL nella tabella illustrata in [Abilitare l'accesso agli URL del servizio cloud della Prevenzione della perdita dei dati degli endpoint nel server proxy](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server). Gli URL usati variano a seconda dell'area selezionata durante la procedura di onboarding.
-[!NOTE] Strumento di analisi della connettività non è compatibile con la regola ASR [Bloccare le creazioni di processi provenienti dai comandi PSExec e WMI](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). È necessario disabilitare temporaneamente questa regola per eseguire lo strumento di connettività.
 
-[!NOTE] Quando TelemetryProxyServer è impostato, nel Registro o tramite Criteri di Gruppo, Defender for Endpoint ricade in modalità diretta se non può accedere al proxy definito.
-Argomenti correlati •   Onboarding di dispositivi Windows 10 •   Risolvere i problemi di onboarding della Microsoft Prevenzione della perdita dei dati degli endpoint
-
-
-
-
+> [!NOTE]
+>
+> Lo strumento di analisi della connettività non è compatibile con la regola ASR [Bloccare le creazioni di processi provenienti dai comandi PSExec e WMI](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). È necessario disabilitare temporaneamente questa regola per eseguire lo strumento di connettività.
+>
+> Quando TelemetryProxyServer è impostato, nel Registro o tramite Criteri di gruppo, Defender per endpoint ricade in modalità diretta se non può accedere al proxy definito. Argomenti correlati:
+>
+> - Eseguire l'onboarding di dispositivi Windows 10
+> - Risoluzione dei problemi di onboarding della prevenzione della perdita dei dati degli endpoint Microsoft
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni sulla prevenzione della perdita di dati degli endpoint ](endpoint-dlp-learn-about.md)
-- [Uso della Prevenzione della perdita di dati degli endpoint ](endpoint-dlp-using.md)
+- [Informazioni sulla prevenzione della perdita di dati degli endpoint](endpoint-dlp-learn-about.md)
+- [Uso della prevenzione della perdita di dati degli endpoint](endpoint-dlp-using.md)
 - [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)

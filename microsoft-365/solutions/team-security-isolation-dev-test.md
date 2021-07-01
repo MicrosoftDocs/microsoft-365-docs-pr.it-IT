@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Configurare le funzionalità sicurezza e l'infrastruttura necessarie per consentire ai dipendenti di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: 62361126ad0b843fd909b98807eeb186f13e75bb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: c58f0849937d7a807c9969e1651c51b3a9470ba5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778341"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228604"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurare un team con l'isolamento di sicurezza in ambiente di sviluppo/test
 
@@ -30,57 +30,56 @@ Questo articolo fornisce istruzioni dettagliate per creare un [team con isolamen
 ![Configurazione per il team isolato Strategia aziendale.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 Usare questo ambiente di sviluppo/test per sperimentare e perfezionare le impostazioni secondo le proprie necessità specifiche prima di distribuire questo tipo di team in produzione.
-  
+
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
 
 Se si desidera semplicemente testare i team sensibili ed estremamente riservati con i requisiti minimi, seguire le istruzioni in [Configurazione di base](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
 Se si desidera testare i team sensibili ed estremamente riservati in un'organizzazione simulata, seguire le istruzioni in [Sincronizzazione dell'hash delle password](../enterprise/password-hash-sync-m365-ent-test-environment.md).
 
->[!Note]
->Il test di un team con isolamento di sicurezza non richiede l'ambiente di testing aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di Active Directory Domain Services (AD DS) attiva. Qui viene fornito come un'opzione in modo da poter testare un team con isolamento di sicurezza e sperimentarlo in un ambiente che rappresenta un'organizzazione tipica.
->
-    
+> [!NOTE]
+> Il test di un team con isolamento di sicurezza non richiede l'ambiente di testing aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di Active Directory Domain Services (AD DS) attiva. Qui viene fornito come un'opzione in modo da poter testare un team con isolamento di sicurezza e sperimentarlo in un ambiente che rappresenta un'organizzazione tipica.
+
 ## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>Fase 2: Creare e configurare i gruppi e gli utenti di Azure Active Directory (Azure AD)
 
 In questa fase vengono creati e configurati i gruppi e gli utenti di Azure AD per l'organizzazione fittizia.
-  
+
 Innanzitutto, creare un gruppo di sicurezza con il portale di Azure.
-  
+
 1. Creare una scheda separata nel browser e accedere al portale di Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com). Se necessario, accedere con le credenziali dell'account amministratore globale dell'abbonamento a pagamento o di valutazione di Microsoft 365 E5.
-    
+
 2. Nel portale di Azure fare clic su **Azure Active Directory > Gruppi**.
-    
+
 3. Nel pannello **Gruppi - Tutti i gruppi** fare clic su **+ Nuovo gruppo**.
-    
+
 4. Nel pannello **Gruppo**:
-    
+
   - Selezionare **Sicurezza** in **Tipo di gruppo**.
-    
+
   - Digitare **C-Suite** in **Nome**.
-    
+
   - Selezionare **Assegnato** in **Tipo di appartenenza**.
-      
+
 5. Fare clic su **Crea** e quindi chiudere il pannello **Gruppo**.
-    
+
 Quindi, configurare la licenza automatica in modo che i membri del nuovo gruppo **C-Suite** vengano assegnati automaticamente a una licenza di Microsoft 365 E5.
-  
+
 1. Nel portale di Azure fare clic su **Azure Active Directory > Licenze > Tutti i prodotti**.
-    
+
 2. Nell'elenco, selezionare **Microsoft 365 Enterprise E5**, quindi fare clic su **Assegna**.
-    
+
 3. Nel pannello **Assegnare licenza** fare clic su **Utenti e gruppi**.
-    
+
 4. Nell'elenco dei gruppi, selezionare il gruppo **C-Suite**.
-    
+
 5. Fare clic su **Seleziona**, quindi su **Assegna**.
-    
+
 6. Chiudere la scheda del portale di Azure nel browser.
-    
+
 Quindi, [connettersi con il modulo di Azure Active Directory PowerShell per Graph](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
-  
+
 Inserire il nome dell'organizzazione, la posizione e una password comune; eseguire quindi questi comandi dal prompt dei comandi di PowerShell o Integrated Script Environment (ISE) per creare nuovi account utente e aggiungerli ai rispettivi gruppi C-Suite:
-  
+
 ```powershell
 $orgName="<organization name, such as contoso-test for the contoso-test.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
@@ -90,27 +89,27 @@ $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfi
 $PasswordProfile.Password=$commonPassword
 
 $groupName="C-Suite"
-$userNames=@("CEO","CFO","CIO") 
+$userNames=@("CEO","CFO","CIO")
 $groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
+ForEach ($element in $userNames){
+New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
 }
 ```
 
 > [!NOTE]
-> L'uso di una password comune qui consente l'automazione e agevola la configurazione per un ambiente di sviluppo e test. Ovviamente, questo approccio è sconsigliato per le sottoscrizioni di produzione. 
-  
+> L'utilizzo di una password comune in questo caso è per rendere automatica e facile la configurazione per un ambiente di sviluppo/test. Naturalmente, non è una scelta consigliata per le sottoscrizioni di produzione.
+
 Seguire questi passaggi per verificare che le licenze basate su gruppo funzionino correttamente.
-  
+
 1. Accedere all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com).
-    
+
 2. Dalla nuova scheda **Interfaccia di amministrazione di Microsoft 365** del browser fare clic su **Utenti**.
-    
+
 3. Fare clic su **CEO** nell'elenco degli utenti.
-    
+
 4. Nel riquadro in cui sono elencate le proprietà dell'account utente **CEO** verificare che all'account sia stata assegnata la licenza **Microsoft 365 Enterprise E5** in **Licenze dei prodotti**.
-    
+
 ## <a name="phase-3-create-your-team"></a>Fase 3: Creare il team
 
 In questa fase, è possibile creare e si configurare un team con isolamento di sicurezza affinché i membri del team di dirigenti senior possano collaborare alla strategia aziendale.
@@ -160,7 +159,7 @@ Eseguire la procedura seguente:
 14. Nella pagina **Applicazione automatica di etichette per le app di Office** fare clic su **Avanti**.
 15. Fare clic su **Invia**, quindi su **Fine**.
 
-In seguito, pubblicare la nuova etichetta seguendo questi passaggi: 
+In seguito, pubblicare la nuova etichetta seguendo questi passaggi:
 
 1. Nella pagina **Protezione delle informazioni** del Centro conformità Microsoft 365 scegliere la scheda **Criteri delle etichette**.
 2. Fare clic su **Pubblica etichette**.
@@ -177,7 +176,7 @@ In seguito, pubblicare la nuova etichetta seguendo questi passaggi:
 
 L'etichetta **Strategia aziendale** potrebbe essere disponibile qualche tempo dopo la pubblicazione.
 
-Successivamente, applicare la nuova etichetta al team **Strategia aziendale** e aggiornare il tipo di collegamento di condivisione predefinito per ridurre il rischio di condivisione accidentale di file e cartelle con un gruppo di destinatari più ampio del previsto. 
+Successivamente, applicare la nuova etichetta al team **Strategia aziendale** e aggiornare il tipo di collegamento di condivisione predefinito per ridurre il rischio di condivisione accidentale di file e cartelle con un gruppo di destinatari più ampio del previsto.
 
 1. Aprire l'[interfaccia di amministrazione di SharePoint](https://admin.microsoft.com/sharepoint).
 2. In **Siti** fare clic su **Siti attivi**.
