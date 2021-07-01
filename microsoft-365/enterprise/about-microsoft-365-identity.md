@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Informazioni su come gestire il servizio di identità utente di Azure AD in Microsoft 365 modelli di identità solo cloud o ibridi.
-ms.openlocfilehash: b54ccce6ea2a468e02d9db95e7932d847df4e64b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93a37f39a4d96d7c2e434ed6edf4df588e672a0f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905705"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228496"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 modelli di identità e Azure Active Directory
 
@@ -46,7 +46,7 @@ La prima scelta di pianificazione è il modello Microsoft 365 identity.
 
 ## <a name="microsoft-365-identity-models"></a>Microsoft 365 di identità
 
-Per pianificare gli account utente, è necessario prima di tutto conoscere i due modelli di gestione delle identità disponibili in Microsoft 365. È possibile mantenere le identità dell'organizzazione solo nel cloud. In alternativa, è possibile mantenere le identità Active Directory Domain Services (AD DS) in locale e usarle per l'autenticazione quando gli utenti accedono ai servizi cloud di Microsoft 365.  
+Per pianificare gli account utente, è necessario prima di tutto conoscere i due modelli di gestione delle identità disponibili in Microsoft 365. È possibile mantenere le identità dell'organizzazione solo nel cloud. In alternativa, è possibile mantenere le identità Active Directory Domain Services (AD DS) in locale e usarle per l'autenticazione quando gli utenti accedono ai servizi cloud di Microsoft 365.
 
 Ecco i due tipi di identità con la descrizione dei vantaggi e dell'ambiente in cui sono più indicati.
 
@@ -60,16 +60,16 @@ Ecco i due tipi di identità con la descrizione dei vantaggi e dell'ambiente in 
 
 ## <a name="cloud-only-identity"></a>Identità solo cloud
 
-Un'identità solo cloud usa solo gli account utente che esistono in Azure AD. L'identità solo cloud viene in genere utilizzata da organizzazioni di piccole dimensioni che non dispongono di server locali o non utilizzano Servizi di dominio Active Directory per gestire le identità locali. 
+Un'identità solo cloud usa solo gli account utente che esistono in Azure AD. L'identità solo cloud viene in genere utilizzata da organizzazioni di piccole dimensioni che non dispongono di server locali o non utilizzano Servizi di dominio Active Directory per gestire le identità locali.
 
 Ecco i componenti di base dell'identità solo cloud.
- 
+
 ![Componenti di base dell'identità solo cloud](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 Sia gli utenti locali che gli utenti remoti (online) usano gli account utente e le password di Azure AD per accedere ai Microsoft 365 cloud. Azure AD autentica le credenziali utente in base agli account utente e alle password archiviate.
 
 ### <a name="administration"></a>Amministrazione
-Poiché gli account utente sono archiviati solo in Azure AD, è possibile gestire le identità cloud con strumenti quali l'interfaccia di amministrazione di Microsoft 365 e [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). [](../admin/add-users/index.yml) 
+Poiché gli account utente sono archiviati solo in Azure AD, è possibile gestire le identità cloud con strumenti quali interfaccia di amministrazione di Microsoft 365 [e](../admin/add-users/index.yml) [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md).
 
 ## <a name="hybrid-identity"></a>Identità ibrida
 
@@ -77,7 +77,7 @@ L'identità ibrida usa gli account che provengono da un'istanza locale di AD DS 
 
 Azure AD Connect offre la sincronizzazione continua degli account. Viene eseguito in un server locale, verifica la presenza di modifiche in AD DS e invia queste modifiche ad Azure AD. Azure AD Connect consente di filtrare gli account sincronizzati e scegliere se eseguire la sincronizzazione di una versione con hash delle password utente, nota come sincronizzazione dell'hash delle password (PHS).
 
-Durante l'implementazione dell'identità ibrida, l'istanza locale di AD DS costituisce l'origine autorevole delle informazioni sull'account. Questo significa che le attività di amministrazione vengono eseguite principalmente in locale e quindi sincronizzate con Azure AD. 
+Durante l'implementazione dell'identità ibrida, l'istanza locale di AD DS costituisce l'origine autorevole delle informazioni sull'account. Questo significa che le attività di amministrazione vengono eseguite principalmente in locale e quindi sincronizzate con Azure AD.
 
 Ecco i componenti dell'identità ibrida.
 
@@ -85,22 +85,20 @@ Ecco i componenti dell'identità ibrida.
 
 Il tenant di Azure AD contiene una copia degli account di AD DS. In questa configurazione sia gli utenti locali che gli utenti remoti che accedono ai servizi cloud di Microsoft 365 eseguono l'autenticazione in Azure AD.
 
->[!Note]
->È sempre necessario usare Azure AD Connect per sincronizzare gli account utenti per l'identità ibrida. Gli account utente sincronizzati in Azure AD sono necessari per l'assegnazione di licenze e la gestione dei gruppi, nonché per configurare le autorizzazioni e per altre attività amministrative che interessano gli account utente.
->
+> [!NOTE]
+> È sempre necessario usare Azure AD Connect per sincronizzare gli account utenti per l'identità ibrida. Gli account utente sincronizzati in Azure AD sono necessari per l'assegnazione di licenze e la gestione dei gruppi, nonché per configurare le autorizzazioni e per altre attività amministrative che interessano gli account utente.
 
 ### <a name="administration"></a>Amministrazione
 
-Poiché gli account utente originali e autorevoli sono archiviati in Servizi di dominio Active Directory locale, le identità vengono gestite con gli stessi strumenti utilizzati per gestire Servizi di dominio Active Directory. 
+Poiché gli account utente originali e autorevoli sono archiviati in Servizi di dominio Active Directory locale, le identità vengono gestite con gli stessi strumenti utilizzati per gestire Servizi di dominio Active Directory.
 
-Non si usa l'interfaccia Microsoft 365 o PowerShell per Microsoft 365 gestire gli account utente sincronizzati in Azure AD.
+Non si usa la interfaccia di amministrazione di Microsoft 365 o PowerShell per Microsoft 365 gestire gli account utente sincronizzati in Azure AD.
 
 ## <a name="next-step"></a>Passaggio successivo
 
 Se è necessario il modello di identità solo cloud, vedere [Identità solo cloud.](cloud-only-identities.md)
 
 Se è necessario il modello di identità ibrido, vedere [Identità ibrida](plan-for-directory-synchronization.md).
-
 
 ## <a name="see-also"></a>Vedere anche
 

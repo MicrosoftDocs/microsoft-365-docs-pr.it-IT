@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 910923e693804c96c109c52606b62d92af51abeb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203293"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228664"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -140,7 +140,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel portale d
 
      Le azioni disponibili per i verdetti filtro posta indesiderata sono descritte nella tabella seguente.
 
-     - Un segno di spunta ( ![Segno di spunta](../../media/checkmark.png)) indica che l'azione è disponibile (non tutte le azioni sono disponibili per tutti i verdetti).
+     - Un segno di spunta ( ![Segno di spunta](../../media/checkmark.png) ) indica che l'azione è disponibile (non tutte le azioni sono disponibili per tutti i verdetti).
      - Un asterisco (<sup>\*</sup>) dopo il segno di spunta indica l'azione predefinita per il verdetto filtro posta indesiderata.
 
      <br>

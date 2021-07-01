@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0123fc5cb22e249475f7e95426ee74f6e0939aaa
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: e052f3c287a6523174259a0a58017421bc989071
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788434"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229612"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
@@ -41,17 +41,17 @@ In questa illustrazione sono incluse informazioni per gli architetti IT Microsof
 
 ## <a name="migrate-to-microsoft-365"></a>Eseguire la migrazione a Microsoft 365
 
-Microsoft fornisce strumenti per eseguire la migrazione delle condivisioni file di rete locali e dei siti di SharePoint Server a Microsoft 365 con particolare attenzione alla protezione e alla sicurezza del contenuto durante la migrazione. Questo set di illustrazioni illustra i vari metodi disponibili per spostare il contenuto in SharePoint, Teams e OneDrive e il modo in cui i dati passano attraverso il processo. 
+Microsoft fornisce strumenti per eseguire la migrazione delle condivisioni file di rete locali e dei siti di SharePoint Server a Microsoft 365 con particolare attenzione alla protezione e alla sicurezza del contenuto durante la migrazione. Questo set di illustrazioni illustra i vari metodi disponibili per spostare il contenuto in SharePoint, Teams e OneDrive e il modo in cui i dati passano attraverso il processo.
 
 | Elemento | Descrizione |
 |:-----|:-----|
-|[![Poster modello: eseguire la migrazione a Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/>[PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <br/> Aggiornato a marzo 2021 |Include: <ul><li>  Migrazione condivisione file</li><li>Migrazione di SharePoint Server </li> </ul><br> Per ulteriori informazioni, vedere [Migrate your content to Microsoft 365.](/sharepointmigration/migrate-to-sharepoint-online)|
+|[![Poster modello: eseguire la migrazione a Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Aggiornato a marzo 2021 |Include: <ul><li> Migrazione condivisione file</li><li>Migrazione di SharePoint Server</li></ul> <p> Per ulteriori informazioni, vedere [Migrate your content to Microsoft 365.](/sharepointmigration/migrate-to-sharepoint-online)|
 
 ## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 di conformità e protezione delle informazioni
 
-Microsoft 365 include un ampio set di funzionalità di conformità e protezione delle informazioni. Insieme agli strumenti di produttività di Microsoft, queste funzionalità sono progettate per aiutare le organizzazioni a collaborare in tempo reale aderendo a stringenti framework di conformità normativa. 
+Microsoft 365 include un ampio set di funzionalità di conformità e protezione delle informazioni. Insieme agli strumenti di produttività di Microsoft, queste funzionalità sono progettate per aiutare le organizzazioni a collaborare in tempo reale aderendo a stringenti framework di conformità normativa.
 
-Questo set di illustrazioni usa uno dei settori più regolamentati, i servizi finanziari, per dimostrare come queste funzionalità possono essere applicate per soddisfare i requisiti normativi comuni. Queste illustrazioni possono essere personalizzate. 
+Questo set di illustrazioni usa uno dei settori più regolamentati, i servizi finanziari, per dimostrare come queste funzionalità possono essere applicate per soddisfare i requisiti normativi comuni. Queste illustrazioni possono essere personalizzate.
 
 
 | Elemento | Descrizione |
@@ -84,16 +84,16 @@ Funzionalità consigliate per la protezione di identità e dispositivi che acced
 | Elemento | Descrizione |
 |:-----|:-----|
 |[![Poster modello: identità e protezione dei dispositivi per Microsoft 365](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Visualizzazione in formato PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download in formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Scarica come Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Aggiornato a settembre 2020|È importante utilizzare livelli di protezione coerenti tra dati, identità e dispositivi. Questo modello mostra quali funzionalità sono paragonabili a altre informazioni sulle funzionalità per proteggere identità e dispositivi.  <br/> |
- 
+
 <a name="BKMK_ediscovery"></a>
 ## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery architettura in Microsoft 365
 
-Advanced eDiscovery flusso di lavoro end-to-end e flusso di dati, inclusi Microsoft 365 multi-geo. 
+Advanced eDiscovery flusso di lavoro end-to-end e flusso di dati, inclusi Microsoft 365 multi-geo.
 
 | Elemento | Descrizione |
 |:-----|:-----|
 |[![Poster modello: Advanced eDiscovery architettura in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visualizzazione come immagine](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Download in formato PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Scarica come Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Ultimo aggiornamento: ottobre 2020|Include: <ul><li>  Flusso di lavoro end-to-end in un singolo ambiente</li><li>Flusso di lavoro end-to-end in un Microsoft 365 multi-geo </li><li>Flusso di dati end-to-end che supporta il flusso di lavoro EDRM</li> |
-  
+
 
 
 ## <a name="microsoft-telephony-solutions"></a>Soluzioni di telefonia Microsoft
@@ -107,7 +107,7 @@ Microsoft supporta diverse opzioni per iniziare il viaggio verso l'implementazio
 
 ## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Configurare l'infrastruttura per il lavoro ibrido
 
-Con Microsoft 365 e altre tecnologie cloud Microsoft, è possibile fornire ai dipendenti l'accesso sicuro alle informazioni, agli strumenti e alle risorse locali e basate sul cloud dell'organizzazione dalle proprie case. 
+Con Microsoft 365 e altre tecnologie cloud Microsoft, è possibile fornire ai dipendenti l'accesso sicuro alle informazioni, agli strumenti e alle risorse locali e basate sul cloud dell'organizzazione dalle proprie case.
 
 [![Configurare l'infrastruttura per il poster di lavoro ibrido](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
 [PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)  |  [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
@@ -120,13 +120,14 @@ Per ulteriori informazioni, vedere l'articolo per questo poster: Configurare l'i
 Con Microsoft 365, è possibile configurare un team privato in Microsoft Teams e utilizzare le impostazioni di sicurezza del sito di SharePoint e un'etichetta di riservatezza univoca per crittografare i file in modo che solo i membri del team possano decrittografarli.
 
 [![Poster Microsoft Teams con l’isolamento di sicurezza](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> Aggiornamento agosto 2020
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
+Aggiornamento agosto 2020
 
 Per ulteriori informazioni, vedere l'articolo per questo poster: [Configurare un team con isolamento della sicurezza.](secure-teams-security-isolation.md)
 
-  
+
 ## <a name="see-also"></a>Vedere anche
 
 [Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](../enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
-  
+
 [Guida al lab test (TLG) per adozione del cloud](../enterprise/cloud-adoption-test-lab-guides-tlgs.md)

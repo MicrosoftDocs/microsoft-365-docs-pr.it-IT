@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come pianificare gli argomenti relativi alla pianificazione per Microsoft Viva
-ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583113"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229540"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Pianificare gli argomenti di Microsoft Viva
 
@@ -36,13 +36,15 @@ Per saperne di più sulla tecnologia IA alla base di Viva Topics, leggi [Alessan
 
 ## <a name="requirements"></a>Requisiti
 
-Devi essere [sottoscritto a Viva Topics](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o SharePoint amministratore per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
+Devi essere [sottoscritto a Viva Topics](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o SharePoint amministratore per accedere al interfaccia di amministrazione di Microsoft 365 e configurare Topics.
 
 Tutti gli utenti che useranno Gli argomenti richiedono una **licenza esperienze di** argomento. L'assegnazione delle licenze è trattata in [Set up Microsoft Viva Topics.](set-up-topic-experiences.md)
 
 ## <a name="topic-discovery"></a>Individuazione argomenti
 
-Le impostazioni di individuazione degli argomenti specificano i siti di SharePoint da usare come origini per gli argomenti. È possibile scegliere di includere tutti i siti di SharePoint, uno specifico elenco di siti o nessun sito. È consigliabile scegliere tutti i siti in modo che le esperienze degli argomenti possano individuare un gran numero di argomenti importanti per gli utenti.
+Le impostazioni di individuazione degli argomenti specificano i siti di SharePoint da usare come origini per gli argomenti. Sono inclusi sia i siti classici che i siti moderni, nonché i siti associati a Microsoft Teams e Microsoft 365 gruppi. OneDrive siti non sono inclusi.
+
+È possibile scegliere di includere tutti i siti di SharePoint, uno specifico elenco di siti o nessun sito. È consigliabile scegliere tutti i siti in modo che le esperienze degli argomenti possano individuare un gran numero di argomenti importanti per gli utenti.
 
 Quando si configurano gli argomenti è possibile scegliere uno dei seguenti comandi:
 
@@ -128,7 +130,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Amministrazione
 
-Quando si configurano gli argomenti, come parte del processo di installazione, viene creato automaticamente un centro argomenti. Pensa a cosa vuoi assegnare un nome al Centro argomenti e a cosa vuoi che sia l'URL. È possibile impostare sia il nome che l'URL come parte del processo di installazione ed è possibile modificare il nome (ma non l'URL) in un secondo momento nell'interfaccia di amministrazione di Microsoft 365. È possibile avere un solo centro argomenti.
+Quando si configurano gli argomenti, come parte del processo di installazione, viene creato automaticamente un centro argomenti. Pensa a cosa vuoi assegnare un nome al Centro argomenti e a cosa vuoi che sia l'URL. È possibile impostare sia il nome che l'URL come parte del processo di installazione e modificare il nome (ma non l'URL) più avanti nella interfaccia di amministrazione di Microsoft 365. È possibile avere un solo centro argomenti.
 
 ## <a name="setup-checklist"></a>Elenco di controllo per l'installazione
 

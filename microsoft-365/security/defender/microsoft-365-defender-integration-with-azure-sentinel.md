@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Integrazione di Defender con Azure Sentinel
-description: Usa Azure Sentinel come SIEM per Microsoft 365 eventi ed eventi di Defender.
+title: Le integrazioni di Microsoft 365 Defender con Azure Sentinel.
+description: Usa Azure Sentinel come SIEM per eventi Microsoft 365 Defender eventi imprevisti.
 keywords: incidenti, avvisi, analizzare, analizzare, risposta, correlazione, attacco, computer, dispositivi, utenti, identità, identità, identità, cassetta postale, posta elettronica, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,25 +22,32 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7d9cff584f35c39544034501c607b7156a0f1bf2
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: b9a9a6381c93e2d252f75710adc206868c0a5546
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782922"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229912"
 ---
-# <a name="microsoft-365-defender-integration-with-azure-sentinel"></a>Microsoft 365 Integrazione di Defender con Azure Sentinel
+# <a name="microsoft-365-defender-integration-with-azure-sentinel"></a>Le integrazioni di Microsoft 365 Defender con Azure Sentinel.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Si applica a:**
 - Microsoft 365 Defender
 
-Il connettore Microsoft 365 Defender per Azure Sentinel (anteprima) invia tutti gli eventi imprevisti e gli avvisi di Microsoft 365 Defender ad Azure Sentinel e mantiene sincronizzati gli eventi imprevisti. 
+Il connettore Microsoft 365 Defender per Azure Sentinel (anteprima) invia tutte le informazioni relative Microsoft 365 Defender eventi imprevisti e avvisi ad Azure Sentinel e mantiene sincronizzati gli eventi imprevisti. 
 
 Dopo aver aggiunto il connettore, gli eventi imprevisti di Microsoft 365 Defender che includono tutti gli avvisi, le entità e le informazioni pertinenti associati ricevuti da Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender per Office 365 e Microsoft Cloud App Security vengono trasmessi ad Azure Sentinel come dati &mdash; siem (Security Information and Event Management), fornendo il contesto per eseguire la triage e la risposta agli incidenti con &mdash; Azure Sentinel. 
 
 Una volta in Azure Sentinel, gli incidenti rimangono sincronizzati bidirezionalemente con Microsoft 365 Defender, consentendoti di sfruttare i vantaggi del Centro sicurezza Microsoft 365 e di Azure Sentinel nel portale di Azure per l'indagine e la risposta agli incidenti.
+
+Guarda questa breve panoramica dell'integrazione di Azure Sentinel con Microsoft 365 Defender (4 minuti).
+
+<br>
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRo]
+
 
 Ecco come funziona.
 
@@ -48,7 +55,7 @@ Ecco come funziona.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-1. Informazioni più approfondite [sull'integrazione Microsoft 365 Defender con Azure Sentinel.](/azure/sentinel/microsoft-365-defender-sentinel-integration)
+1. Informazioni più approfondite [sull'Microsoft 365 Defender'integrazione con Azure Sentinel.](/azure/sentinel/microsoft-365-defender-sentinel-integration)
 2. [Connessione dati da Microsoft 365 Defender ad Azure Sentinel.](/azure/sentinel/connect-microsoft-365-defender)
 
 ## <a name="see-also"></a>Vedere anche

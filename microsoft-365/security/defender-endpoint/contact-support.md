@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845631"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228724"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contattare il supporto di Microsoft Defender per endpoint
 
@@ -34,39 +34,38 @@ ms.locfileid: "52845631"
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender for Endpoint ha recentemente aggiornato il processo di supporto per offrire un'esperienza di supporto più moderna e avanzata. 
+Defender for Endpoint ha recentemente aggiornato il processo di supporto per offrire un'esperienza di supporto più moderna e avanzata.
 
 Il nuovo widget consente ai clienti di:
+
 - Trovare soluzioni ai problemi comuni
 - Inviare un caso di supporto al team di supporto Microsoft
 
 ## <a name="prerequisites"></a>Prerequisiti
+
 È importante conoscere i ruoli specifici che dispongono dell'autorizzazione per aprire i casi di supporto.
 
 Come minimo, è necessario disporre di un ruolo di amministratore del supporto **tecnico o** dell'helpdesk.
 
-
 Per ulteriori informazioni sui ruoli che dispongono dell'autorizzazione, vedere [Autorizzazioni di amministratore della sicurezza](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). I ruoli che includono `microsoft.office365.supportTickets/allEntities/allTasks` l'azione possono inviare un caso.
 
-Per informazioni generali sui ruoli di amministratore, vedere [Informazioni sui ruoli di amministratore.](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
-
+Per informazioni generali sui ruoli di amministratore, vedere [Informazioni sui ruoli di amministratore.](/microsoft-365/admin/add-users/about-admin-roles)
 
 ## <a name="access-the-widget"></a>Accedere al widget
 L'accesso al nuovo widget di supporto può essere eseguito in due modi:
 
-1.  Fare clic sul punto interrogativo in alto a destra del portale e quindi su "Supporto Microsoft":
+1. Fare clic sul punto interrogativo in alto a destra del portale e quindi su "Supporto Microsoft":
 
     ![Immagine del widget quando è selezionato il punto interrogativo](images/support-widget.png)
 
 2. Fare clic sul **pulsante Serve aiuto?**  nella parte inferiore destra del Microsoft Defender Security Center:
 
-
     ![Immagine del pulsante Serve aiuto](images/need-help.png)
 
 Nel widget verranno offerte due opzioni:
 
-- Trovare soluzioni ai problemi comuni    
-- Aprire una richiesta di servizio  
+- Trovare soluzioni ai problemi comuni
+- Aprire una richiesta di servizio
 
 ## <a name="find-solutions-to-common-problems"></a>Trovare soluzioni ai problemi comuni
 Questa opzione include articoli che potrebbero essere correlati alla domanda che potresti porre. Basta iniziare a digitare la domanda nella casella di ricerca e verranno riportati gli articoli relativi alla ricerca.
@@ -77,23 +76,24 @@ Nel caso in cui gli articoli suggeriti non siano sufficienti, è possibile aprir
 
 ## <a name="open-a-service-request"></a>Aprire una richiesta di servizio
 
-Scopri come aprire i ticket di supporto contattando defender per il supporto endpoint. 
+Scopri come aprire i ticket di supporto contattando defender per il supporto endpoint.
 
 > [!Note]
 > Se hai un contratto di supporto con Microsoft, nel widget verrà visualizzato il tag premier. In caso contrario, contattare il proprio account manager Microsoft.
 
 ### <a name="contact-support"></a>Contattare il supporto
+
 Questa opzione è disponibile facendo clic sull'icona che ha l'aspetto di una cuffia. Verrà quindi visualizzata la pagina seguente per inviare il caso di supporto:
 
 ![Immagine del widget apri una richiesta di servizio](images/Support4.png)
 
-1. Compilare un titolo e una descrizione per il problema che si sta affrontando, nonché un numero di telefono e un indirizzo di posta elettronica in cui è possibile contattarti. 
+1. Compilare un titolo e una descrizione per il problema che si sta affrontando, nonché un numero di telefono e un indirizzo di posta elettronica in cui è possibile contattarti.
 
-2. (Facoltativo) Includere fino a cinque allegati rilevanti per il problema per fornire un contesto aggiuntivo per il caso di supporto. 
+2. (Facoltativo) Includere fino a cinque allegati rilevanti per il problema per fornire un contesto aggiuntivo per il caso di supporto.
 
 3. Selezionare il fuso orario e una lingua alternativa, se applicabile. La richiesta verrà inviata al team di supporto Microsoft. Il team risponderà alla richiesta di servizio a breve.
 
-
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Risolvere i problemi dei servizi](troubleshoot-mdatp.md)
-- [Verificare l'integrità dei servizi](service-status.md).
+- [Verificare l'integrità dei servizi](service-status.md)

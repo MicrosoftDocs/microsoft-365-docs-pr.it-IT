@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come applicare un'etichetta di conservazione a un modello in SharePoint Syntex.
-ms.openlocfilehash: ebcd398799e7c8addd96d5941427628d3db5ad43
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: c7d6c17dc4d41bf2dab663618e740318d88dd723
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028944"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228748"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Applicare un'etichetta di conservazione a un modello in SharePoint Syntex
 
 Microsoft SharePoint Syntex consente di applicare facilmente un'[etichetta di riservatezza](../compliance/sensitivity-labels.md) a un modello di analisi dei documenti. Questa caratteristica non è ancora disponibile per i modelli di elaborazione di moduli.
 
-Le etichette di riservatezza consentono di applicare criteri di crittografia, condivisione e accesso condizionale ai documenti identificati nei modelli. Ad esempio, si vuole che il modello non solo identifichi i documenti finanziari che contengono numeri di conto corrente bancario o numeri di carta di credito caricati nella raccolta documenti, ma anche applicare un'*etichetta di riservatezza* Crittografia per limitare gli utenti autorizzati che possono accedere a tale contenuto e le relative modalità di utilizzo. I modelli SharePoint Syntex rispettano le regole relative all'[ordine delle etichette](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) e non sovrascrivono un'etichetta esistente applicata manualmente da un utente al file. 
+Le etichette di riservatezza consentono di applicare criteri di crittografia, condivisione e accesso condizionale ai documenti identificati nei modelli. Ad esempio, si vuole che il modello non solo identifichi i documenti finanziari che contengono numeri di conto corrente bancario o numeri di carta di credito caricati nella raccolta documenti, ma anche applicare un'*etichetta di riservatezza* Crittografia per limitare gli utenti autorizzati che possono accedere a tale contenuto e le relative modalità di utilizzo. I modelli SharePoint Syntex rispettano le regole relative all'[ordine delle etichette](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) e non sovrascrivono un'etichetta esistente applicata manualmente da un utente al file. 
 
 Si può applicare al modello un'etichetta di sensibilità preesistente, usando le impostazioni del modello nella home page del modello. L'etichetta deve essere già pubblicata per essere disponibile per la selezione dalle impostazioni del modello.
 

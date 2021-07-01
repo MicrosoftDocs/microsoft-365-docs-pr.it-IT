@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 65215d15e79ab03611bbf28c153d6882fd1c355d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177622"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229144"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Abilitare regole per la riduzione della superficie di attacco
 
@@ -49,7 +49,7 @@ Puoi impostare regole di riduzione della superficie di attacco per i dispositivi
 Per usare l'intero set di funzionalità delle regole di riduzione della superficie di attacco, è necessario:
 
 - Windows Defender Antivirus come av primario (protezione in tempo reale)
-- [Cloud-Delivery Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (alcune regole lo richiedono)
+- [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (alcune regole lo richiedono)
 - Windows 10 Enterprise Licenza E5 o E3 o Microsoft 365 Business
 
 Anche se le regole di riduzione della superficie di attacco non richiedono una licenza [E5](/windows/deployment/deploy-enterprise-licenses)di Windows , con una licenza di Windows E5, puoi ottenere funzionalità di gestione avanzate, tra cui monitoraggio, analisi e flussi di lavoro disponibili in Defender for Endpoint, nonché funzionalità di creazione di report e configurazione nel centro sicurezza Microsoft 365. Queste funzionalità avanzate non sono disponibili con una licenza E3, ma puoi comunque usare il Visualizzatore eventi per esaminare gli eventi delle regole di riduzione della superficie di attacco.

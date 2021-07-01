@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Scopri di più sulle nuove funzionalità crittografiche di Office 365, che consentono di comunicare tramite posta elettronica in sicurezza con le persone all’interno e all’esterno dell’organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 9b738c0f93b8958e441b34b458942c2b34c16661
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876305"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228580"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurare le nuove funzionalità di Message Encryption
 
@@ -39,13 +39,13 @@ L'unico requisito necessario per usare le nuove funzionalità di OME è che [Azu
 
 Azure RMS viene attivato automaticamente anche per la maggior parte dei piani idonei, pertanto non è necessario eseguire alcuna operazione a tal riguardo. Per altre informazioni, vedere [Attivazione di Azure Rights Management](/azure/information-protection/activate-service).
 
->[!IMPORTANT]
->Se si usa Active Directory Rights Management Services (AD RMS) con Exchange Online, è necessario [eseguire la migrazione ad Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) prima di poter usare le nuove funzionalità di OME. OME non è compatibile con AD RMS.  
+> [!IMPORTANT]
+> Se si usa Active Directory Rights Management Services (AD RMS) con Exchange Online, è necessario [eseguire la migrazione ad Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) prima di poter usare le nuove funzionalità di OME. OME non è compatibile con AD RMS.
 
 Per ulteriori informazioni, vedere:
 
 - [Quali abbonamenti sono necessari per usare le nuove funzionalità di OME? ](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) per verificare se il piano di abbonamento include Azure Information Protection (che include le funzionalità di Azure RMS).
-- Per informazioni sull'acquisto di un abbonamento idoneo, vedere [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).  
+- Per informazioni sull'acquisto di un abbonamento idoneo, vedere [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
 
 ### <a name="manually-activating-azure-rights-management"></a>Attivazione manuale di Azure Rights Management
 
@@ -63,7 +63,7 @@ Ci sono diversi motivi, ad esempio i requisiti di conformità, che possono richi
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Verificare la nuova configurazione di OME in PowerShell di Exchange Online
 
 È possibile verificare se il tenant di Microsoft 365 è configurato correttamente per l'uso delle nuove funzionalità di OME disponibili in [PowerShell di Exchange Online](/powershell/exchange/exchange-online-powershell).
-  
+
 1. [Connettersi a PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) usando un account con autorizzazioni di amministratore globale nel tenant di Microsoft 365.
 
 2. Eseguire il cmdlet Get-IRMConfiguration.
@@ -74,7 +74,7 @@ Ci sono diversi motivi, ad esempio i requisiti di conformità, che possono richi
 
      ```powershell
      Test-IRMConfiguration [-Sender <email address >]
-     ```  
+     ```
 
    **Esempio**:
 
@@ -114,11 +114,11 @@ Ci sono diversi motivi, ad esempio i requisiti di conformità, che possono richi
 
 Se in precedenza sono state configurate regole del flusso di posta per crittografare la posta elettronica nell'organizzazione, è necessario aggiornare le regole esistenti per usare le nuove funzionalità di OME. Per le nuove distribuzioni, è necessario creare nuove regole per il flusso di posta.
 
->[!IMPORTANT]
->In caso contrario, gli utenti continueranno a ricevere messaggi crittografati che usano il formato dell'allegato HTML precedente invece della nuova esperienza di OME.
+> [!IMPORTANT]
+> In caso contrario, gli utenti continueranno a ricevere messaggi crittografati che usano il formato dell'allegato HTML precedente invece della nuova esperienza di OME.
 
 Le regole del flusso di posta elettronica determinano le condizioni con cui i messaggi di posta elettronica devono essere crittografati e le condizioni per rimuovere la crittografia. Quando si imposta un'azione per una regola, tutti i messaggi che soddisfano le condizioni della regola vengono crittografati al momento dell'invio.
-  
+
 Per altre passaggi sulla creazione delle regole del flusso di posta elettronica di OME, vedere [Definire le regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
 Aggiornare le regole esistenti per usare le nuove funzionalità di OME:

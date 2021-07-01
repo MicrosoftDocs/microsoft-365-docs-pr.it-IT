@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come configurare Microsoft Viva Topics
-ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 42f84b9b792907d7fe118e0b15c3767674ddf19b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893765"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229588"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurare Gli argomenti di Microsoft Viva
 
-È possibile utilizzare l'Microsoft 365 di amministrazione per configurare e configurare [Gli argomenti](topic-experiences-overview.md). 
+È possibile utilizzare il interfaccia di amministrazione di Microsoft 365 per impostare e configurare [Argomenti](topic-experiences-overview.md). 
 
 È importante pianificare il modo migliore per configurare e configurare gli argomenti nell'ambiente. Leggere Plan [for Microsoft Viva Topics](plan-topic-experiences.md) prima di iniziare le procedure descritte in questo articolo.
 
-Devi essere [sottoscritto a Viva Topics](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o SharePoint amministratore per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
+Devi essere [sottoscritto a Viva Topics](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o SharePoint amministratore per accedere al interfaccia di amministrazione di Microsoft 365 e configurare Topics.
 
 Se hai configurato SharePoint [per richiedere dispositivi gestiti,](/sharepoint/control-access-from-unmanaged-devices)assicurati di configurare Gli argomenti da un dispositivo gestito.
 
@@ -39,7 +39,7 @@ Questo video mostra il processo di configurazione degli argomenti in Microsoft 3
 
 ## <a name="assign-licenses"></a>Assegnare le licenze
 
-È necessario assegnare licenze per gli utenti che utilizzano Argomenti. Solo gli utenti con una licenza possono visualizzare informazioni su argomenti quali evidenziazioni, schede argomento, pagine di argomenti e il Centro argomenti. 
+È necessario assegnare licenze per gli utenti che utilizzano Argomenti. Solo gli utenti con una licenza possono visualizzare informazioni su argomenti quali evidenziazioni, schede degli argomenti, pagine degli argomenti e centro argomenti. 
 
 Per assegnare le licenze:
 
@@ -52,7 +52,7 @@ Per assegnare le licenze:
 4. In **App** assicurati che Graph Connettori ricerca con indice **(Argomenti Viva)** e **Viva Argomenti** siano entrambi selezionati.
 
    > [!div class="mx-imgBorder"]
-   > ![Licenze di Microsoft Viva Topics nell'Microsoft 365 di amministrazione](../media/topic-experiences-licenses.png)
+   > ![Licenze di Microsoft Viva Topics interfaccia di amministrazione di Microsoft 365](../media/topic-experiences-licenses.png)
 
 5. Fare clic su **Salva modifiche**.
 
@@ -61,17 +61,17 @@ L'accesso agli argomenti dopo l'assegnazione delle licenze potrebbe richiedere f
 ## <a name="set-up-topics"></a>Configurare Argomenti
 
 > [!Note]
-> La prima volta che l'individuazione degli argomenti è abilitata, potrebbero essere disponibili fino a due settimane prima che tutti gli argomenti suggeriti vengano visualizzati nella visualizzazione Gestisci argomenti. L'individuazione degli argomenti continua quando vengono apportati nuovi contenuti o aggiornamenti al contenuto. È normale avere fluttuazioni nel numero di argomenti suggeriti nell'organizzazione poiché Viva Topics valuta nuove informazioni.
+> La prima volta che l'individuazione degli argomenti è abilitata, potrebbero essere disponibili fino a due settimane prima che tutti gli argomenti suggeriti vengano visualizzati nella visualizzazione Gestisci argomenti. L'individuazione degli argomenti continua quando vengono apportati nuovi contenuti o aggiornamenti al contenuto. È normale che vi siano fluttuazioni nel numero di argomenti suggeriti nell'organizzazione mentre Viva Topics valuta le nuove informazioni.
 
 Per configurare gli argomenti
-1. [Nell'Microsoft 365 di amministrazione selezionare](https://admin.microsoft.com) **Installazione** e quindi visualizzare la sezione File **e** contenuto.
+1. [Nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), selezionare **Installazione** e quindi visualizzare la **sezione File e** contenuto.
 2. Nella sezione **File e contenuto** fare clic su Connessione utenti a **conoscenza.**
 
     ![Connessione persone alla conoscenza](../media/admin-org-knowledge-options.png) 
 
 3. Nella pagina **Connessione utenti a conoscenza** fare clic su Introduzione per eseguire il processo di installazione. 
 
-    ![Informazioni di base](../media/k-get-started.png) 
+    ![Per iniziare](../media/k-get-started.png) 
 
 4. Nella pagina **Scegliere in che modo Viva Topics può trovare gli** argomenti, si configurerà l'individuazione degli argomenti. Nella sezione **Seleziona SharePoint argomenti** selezionare i siti SharePoint ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegli tra:
     - **Tutti i siti**: tutti i siti di SharePoint nell’organizzazione. Sono inclusi i siti correnti e futuri.
@@ -132,7 +132,10 @@ Per configurare gli argomenti
 
     Selezionare **Avanti**.
 
-9. Nella pagina **Crea centro argomenti** è possibile creare il sito Centro argomenti in cui è possibile visualizzare le pagine degli argomenti e gestire gli argomenti. Nella casella **Nome sito** digitare un nome per il Centro argomenti. Facoltativamente, è possibile digitare una breve descrizione nella **casella Descrizione.** 
+9. Nella pagina **Crea centro argomenti** è possibile creare il sito Centro argomenti in cui è possibile visualizzare le pagine degli argomenti e gestire gli argomenti. Nella casella **Nome sito** digitare un nome per il Centro argomenti. È possibile fare clic sull'icona a forma di matita se si desidera modificare l'URL. Facoltativamente, digitare una breve descrizione nella **casella Descrizione.** 
+
+   > [!Important]
+   > È possibile modificare il nome del sito in un secondo momento, ma non è possibile modificare l'URL dopo aver completato la procedura guidata.
 
    Selezionare **Avanti**.
 
@@ -148,7 +151,7 @@ Per configurare gli argomenti
 
 ## <a name="manage-topic-experiences"></a>Gestire le esperienze degli argomenti
 
-Dopo aver configurato Gli argomenti, è possibile modificare le impostazioni scelte durante l'installazione nell'Microsoft 365 [di amministrazione.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Vedere i seguenti riferimenti:
+Dopo aver configurato Gli argomenti, è possibile modificare le impostazioni scelte durante l'installazione nella interfaccia di amministrazione di Microsoft 365 [.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Vedere i seguenti riferimenti:
 
 - [Gestire l'individuazione degli argomenti in Microsoft Viva Topics](topic-experiences-discovery.md)
 - [Gestire la visibilità degli argomenti in Microsoft Viva Topics](topic-experiences-knowledge-rules.md)

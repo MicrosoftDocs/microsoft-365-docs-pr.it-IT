@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Dispositivi mobili e sicurezza di base possono aiutarti a proteggere e gestire i dispositivi mobili.
-ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: a5f20b2999a1a54070433560904e9535a4d1524a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706179"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228280"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funzionalità Basic Mobility + Security
 
@@ -51,8 +51,8 @@ Puoi usare Dispositivi mobili e sicurezza di base per proteggere e gestire i dis
 
 <sup>3</sup> Dopo giugno 2020, le versioni android successive alla 9 non possono gestire le impostazioni delle password tranne che nei dispositivi Samsung Knox.
 
->[!NOTE]
->I dispositivi già registrati con le versioni precedenti del sistema operativo continuano a funzionare anche se le funzionalità potrebbero cambiare senza preavviso.
+> [!NOTE]
+> I dispositivi già registrati con le versioni precedenti del sistema operativo continuano a funzionare anche se le funzionalità potrebbero cambiare senza preavviso.
 
 Se gli utenti dell'organizzazione usano dispositivi mobili non supportati da Dispositivi mobili e sicurezza di base, è consigliabile bloccare l'accesso dell'app Exchange ActiveSync alla posta elettronica di Microsoft 365 per tali dispositivi, per rendere più sicuri i dati dell'organizzazione. Per la procedura per bloccare Exchange ActiveSync, vedi [Gestire le impostazioni di accesso ai dispositivi in Dispositivi mobili e sicurezza di base.](manage-device-access-settings.md)
 
@@ -65,10 +65,11 @@ Le app supportate per i diversi tipi di dispositivi mobili nella tabella seguent
 |**Exchange** Exchange ActiveSync include la posta elettronica incorporata e le app di terze parti, come TouchDown, che usano Exchange ActiveSync versione 14.1 o successiva. |Posta |Posta elettronica |
 |**Office**   e  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**Su telefoni e tablet**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Solo su telefoni:** <br/> Office Mobile |
 
->[!NOTE]
-- >Il supporto per iOS 10.0 e versioni successive include iPhone e iPad dispositivi.
-- >La gestione dei dispositivi BlackBerry OS non è supportata da Basic Security and Mobility. Utilizzare BlackBerry Business Cloud Services (BBCS) di BlackBerry per gestire i dispositivi BlackBerry OS. I dispositivi Blackberry che eseguono il sistema operativo Android sono supportati come dispositivi Android standard
-- >Agli utenti non verrà richiesto di registrarsi e non verranno bloccati o segnalati per violazione dei criteri se usano il browser per dispositivi mobili per accedere a siti di Microsoft 365 SharePoint, documenti in Office Online o posta elettronica in Outlook Web App.
+> [!NOTE]
+>
+> - Il supporto per iOS 10.0 e versioni successive include iPhone e iPad dispositivi.
+> - La gestione dei dispositivi BlackBerry OS non è supportata da Basic Security and Mobility. Utilizzare BlackBerry Business Cloud Services (BBCS) di BlackBerry per gestire i dispositivi BlackBerry OS. I dispositivi Blackberry che eseguono il sistema operativo Android sono supportati come dispositivi Android standard
+> - Agli utenti non verrà richiesto di registrarsi e non verranno bloccati o segnalati per violazione dei criteri se usano il browser per dispositivi mobili per accedere a siti di Microsoft 365 SharePoint, documenti in Office Online o posta elettronica in Outlook Web App.
 
 Il diagramma seguente mostra cosa accade quando un utente con un nuovo dispositivo accede a un'app che supporta il controllo di accesso con Dispositivi mobili e sicurezza di base. L'utente non può accedere Microsoft 365 risorse nell'app finché non registra il dispositivo.
 
@@ -79,7 +80,7 @@ Il diagramma seguente mostra cosa accade quando un utente con un nuovo dispositi
 
 ## <a name="policy-settings-for-mobile-devices"></a>Impostazioni criteri per dispositivi mobili
 
-Se si crea un criterio per bloccare l'accesso con determinate impostazioni attivate, agli utenti viene impedito l'accesso alle risorse di Microsoft 365 quando si utilizza un'app supportata elencata in Controllo di accesso per la posta elettronica e i documenti di [Microsoft 365.](capabilities.md) 
+Se si crea un criterio per bloccare l'accesso con determinate impostazioni attivate, agli utenti viene impedito l'accesso alle risorse di Microsoft 365 quando si utilizza un'app supportata elencata in Controllo di accesso per la posta elettronica e i documenti di [Microsoft 365.](capabilities.md)
 
 Le impostazioni che possono impedire agli utenti di accedere Microsoft 365 risorse sono disponibili nelle sezioni seguenti:
 
@@ -89,7 +90,7 @@ Le impostazioni che possono impedire agli utenti di accedere Microsoft 365 risor
 
 - Modificato
 
-- Profilo di posta elettronica gestito  
+- Profilo di posta elettronica gestito
 
 Nel diagramma seguente, ad esempio, viene mostrato cosa succede quando un utente con un dispositivo registrato non rispetta un'impostazione di sicurezza in un criterio di gestione dei dispositivi mobili che si applica al dispositivo dell'utente. L'utente accede a un'app che supporta il controllo di accesso con Dispositivi mobili e sicurezza di base. Viene loro impedito l'accesso Microsoft 365 risorse nell'app finché il dispositivo non è conforme all'impostazione di sicurezza.
 
@@ -116,15 +117,15 @@ Nelle sezioni seguenti sono elencate le impostazioni dei criteri che è possibil
 |:-----|:-----|:-----|:-----|
 |Richiedere la crittografia dei dati nei<sup>dispositivi 1</sup> |No|Sì|Sì|
 
-<sup>1</sup> Con Samsung Knox, puoi anche richiedere la crittografia sulle schede di archiviazione. 
+<sup>1</sup> Con Samsung Knox, puoi anche richiedere la crittografia sulle schede di archiviazione.
 
-## <a name="jail-broken-setting"></a>Impostazione di modifica 
+## <a name="jail-broken-setting"></a>Impostazione di modifica
 
 |**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Il dispositivo non può essere modificato o usato come radice |Sì|Sì|Sì|
 
-## <a name="managed-email-profile-option"></a>Opzione del profilo di posta elettronica gestito 
+## <a name="managed-email-profile-option"></a>Opzione del profilo di posta elettronica gestito
 
 L'opzione seguente può impedire agli utenti di accedere Microsoft 365 posta elettronica se usano un profilo di posta elettronica creato manualmente. Gli utenti con dispositivi iOS devono eliminare il loro profilo di posta elettronica creato manualmente prima di poter accedere alla posta elettronica. Dopo aver eliminato il profilo, viene creato automaticamente un nuovo profilo nel dispositivo. Per istruzioni su come gli utenti finali possono ottenere la conformità, vedere È stato trovato un [account di posta elettronica esistente.](/intune-user-help/existing-company-email-account-found)
 
@@ -205,8 +206,8 @@ Le impostazioni seguenti sono supportate per i Windows 10 registrati come dispos
 
 - Ricorda cronologia password e impedisci il riutilizzo
 
->[!NOTE]
->Le impostazioni seguenti che regolano le password controllano solo gli account Windows locali. Windows account forniti tramite l'aggiunta a un dominio o Azure Active Directory non sono interessati da queste impostazioni.
+> [!NOTE]
+> Le impostazioni seguenti che regolano le password controllano solo gli account Windows locali. Windows account forniti tramite l'aggiunta a un dominio o Azure Active Directory non sono interessati da queste impostazioni.
 
 ### <a name="system-settings"></a>Impostazioni di sistema
 

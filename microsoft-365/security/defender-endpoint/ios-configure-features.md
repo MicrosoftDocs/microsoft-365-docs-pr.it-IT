@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 749e03cb9d14476245baea82c21d322d4d726aad
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194950"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230008"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurare Microsoft Defender per le funzionalità di Endpoint in iOS
 
@@ -78,7 +78,7 @@ I passaggi per configurare i criteri di protezione delle app con Microsoft Defen
 1. In **Condizioni del dispositivo di** avvio  >  **condizionale** troverai l'impostazione Max allowed device threat **level**. Questo dovrà essere configurato su Basso, Medio, Alto o Protetto. Le azioni disponibili saranno Blocca **accesso** o **Cancella dati.** È possibile che venga visualizzata una finestra di dialogo in formato informativo per verificare che il connettore sia configurato prima che questa impostazione abbia effetto. Se il connettore è già configurato, è possibile ignorare questa finestra di dialogo.
 1. Completare con Assegnazioni e salvare i criteri.
 
-Per altri dettagli su MAM o sui criteri di protezione delle app, vedi Impostazioni dei criteri [di protezione delle app iOS.](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)
+Per altri dettagli su MAM o sui criteri di protezione delle app, vedi Impostazioni dei criteri [di protezione delle app iOS.](/mem/intune/apps/app-protection-policy-settings-ios)
 
 ### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Distribuzione di Microsoft Defender per Endpoint per MAM o su dispositivi non registrazione
 

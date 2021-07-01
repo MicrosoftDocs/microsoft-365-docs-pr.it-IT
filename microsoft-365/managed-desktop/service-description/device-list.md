@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245937"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230056"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop dispositivi
 
@@ -22,13 +22,13 @@ ms.locfileid: "52245937"
 
 Microsoft Managed Desktop valuta regolarmente i dispositivi da includere nel servizio. Questo articolo elenca i dispositivi specifici attualmente supportati. Per una dichiarazione più generale dei requisiti dei dispositivi, vedi [Requisiti del dispositivo.](device-requirements.md)
 
-Per ulteriori informazioni sulle Microsoft Managed Desktop, vedere Microsoft Managed Desktop [documentazione e risorse.](../index.yml) 
+Per ulteriori informazioni sulle Microsoft Managed Desktop, vedere Microsoft Managed Desktop [documentazione e risorse.](../index.yml)
 
 [Selezionare e convalidare nuovi dispositivi](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere uno dei modelli seguenti e soddisfare o superare le specifiche elencate per RAM, famiglia di processori e spazio su disco. 
+Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere uno dei modelli seguenti e soddisfare o superare le specifiche elencate per RAM, famiglia di processori e spazio su disco.
 
 I collegamenti ai dispositivi qui sono solo per riferimento. Se vuoi ordinare i dispositivi, contatta i contatti del canale commerciale per assicurarti di scegliere le configurazioni corrette. In questa tabella, la data *di* archiviazione è la data in cui questi modelli saranno soggetti a una durata Microsoft Managed Desktop durata del servizio; i dispositivi di questo tipo onboarded dopo questa data non riceveranno un periodo di supporto triennale completo da Microsoft Managed Desktop. I dispositivi archiviati sono elencati anche in [Microsoft Managed Desktop archiviati.](archived-device-list.md) *Data di* ritiro è la data in cui questo modello non sarà più supportato Microsoft Managed Desktop affatto. In tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
 
@@ -79,9 +79,9 @@ I collegamenti ai dispositivi qui sono solo per riferimento. Se vuoi ordinare i 
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB di RAM | Nessuno | 22 ottobre 2021 | 22 ottobre 2024 |
 | **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB di RAM | Nessuno | 15 gennaio 2022 | 15 gennaio 2025 |
 
-Inoltre, il dispositivo deve soddisfare anche questi criteri:     
+Inoltre, il dispositivo deve soddisfare anche questi criteri:
 
-- Se uno SKU specifico è elencato nei requisiti del dispositivo, assicurati di usarlo quando ordini. In questo modo, i dispositivi sono conformi ai Microsoft Managed Desktop software. 
+- Se uno SKU specifico è elencato nei requisiti del dispositivo, assicurati di usarlo quando ordini. In questo modo, i dispositivi sono conformi ai Microsoft Managed Desktop software.
 - Non è stata completata Windows'esperienza di prima esecuzione.
 - Essere registrati con Microsoft Managed Desktop tramite la [funzionalità Registrazione](../get-started/register-devices-self.md) dispositivo
 

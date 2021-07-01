@@ -1,7 +1,7 @@
 ---
-title: Eseguire le simulazioni di Microsoft 365 di attacco di Defender
-description: Esegui simulazioni di attacco per il progetto pilota Microsoft 365 Defender per vedere come si svolge e viene rapidamente corretti.
-keywords: Microsoft 365 Simulazione di attacco pilota defender, eseguire la simulazione di attacco pilota di Microsoft 365 Defender, simulare l'attacco in Microsoft 365 Defender, progetto pilota di Microsoft 365 Defender, cyber security, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, indagini e correzioni automatizzate, ricerca avanzata
+title: Eseguire le simulazioni di Microsoft 365 Defender di attacco
+description: Esegui simulazioni di attacco per Microsoft 365 Defender progetto pilota per vedere come si svolge e viene rapidamente corretti.
+keywords: Microsoft 365 Defender simulazione di attacco pilota, eseguire la simulazione di attacco pilota di Microsoft 365 Defender, simulare un attacco in Microsoft 365 Defender, un progetto pilota Microsoft 365 Defender, sicurezza informatica, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, indagini e correzioni automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18dc8158ef3c806e5dac5a01778adebc6eecc1ce
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934478"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230020"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Eseguire le simulazioni di Microsoft 365 di attacco di Defender
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Eseguire le simulazioni di Microsoft 365 Defender di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934478"
 
 Si è attualmente in fase di simulazione dell'attacco.
 
-Dopo aver preparato l'ambiente pilota, è il momento di testare le funzionalità di gestione degli incidenti di Microsoft 365 Defender e le funzionalità di analisi e correzione automatizzate. Microsoft ti aiuterà a simulare un attacco sofisticato che sfrutta tecniche avanzate per nasconderti dal rilevamento. L'attacco enumera le sessioni SMB (Server Message Block) aperte nei controller di dominio e recupera gli indirizzi IP recenti dei dispositivi degli utenti. Questa categoria di attacchi in genere non include i file rilasciati nel dispositivo della vittima, ma si verificano esclusivamente in memoria. Usano strumenti di amministrazione e di sistema esistenti e inserisce il codice nei processi di sistema per nasconderne l'esecuzione. Tale comportamento consente loro di evitare il rilevamento e di mantenere il dispositivo.
+Dopo aver preparato l'ambiente pilota, è il momento di testare la gestione degli incidenti Microsoft 365 Defender e le funzionalità di analisi e correzione automatizzate. Microsoft ti aiuterà a simulare un attacco sofisticato che sfrutta tecniche avanzate per nasconderti dal rilevamento. L'attacco enumera le sessioni SMB (Server Message Block) aperte nei controller di dominio e recupera gli indirizzi IP recenti dei dispositivi degli utenti. Questa categoria di attacchi in genere non include i file rilasciati nel dispositivo della vittima, ma si verificano esclusivamente in memoria. Usano strumenti di amministrazione e di sistema esistenti e inserisce il codice nei processi di sistema per nasconderne l'esecuzione. Tale comportamento consente loro di evitare il rilevamento e di mantenere il dispositivo.
 
 In questa simulazione, lo scenario di esempio inizia con uno script di PowerShell. Un utente potrebbe essere ingannato nell'esecuzione di uno script. Oppure lo script potrebbe essere eseguito da una connessione remota a un altro computer da un dispositivo in precedenza infetto, ovvero l'utente malintenzionato che tenta di spostarsi lateralmente nella rete. Il rilevamento di questi script può essere difficile perché gli amministratori spesso eseguono anche script in remoto per eseguire diverse attività amministrative.
 
@@ -134,7 +134,7 @@ Passando al punto di vista dell'analista SOC, è ora possibile iniziare a analiz
 
 ### <a name="investigate-the-attack-as-a-single-incident"></a>Analizzare l'attacco come un singolo evento imprevisto
 
-Microsoft 365 Defender correla l'analisi e aggrega tutti gli avvisi e le indagini correlati da prodotti diversi in un'unica entità evento imprevisto. In questo modo, Microsoft 365 Defender mostra una storia di attacco più ampia, consentendo all'analista SOC di comprendere e rispondere a minacce complesse.
+Microsoft 365 Defender l'analisi e aggrega tutti gli avvisi e le indagini correlati di prodotti diversi in un'unica entità evento imprevisto. In questo modo, Microsoft 365 Defender una storia di attacco più ampia, consentendo all'analista SOC di comprendere e rispondere a minacce complesse.
 
 Gli avvisi generati durante questa simulazione sono associati alla stessa minaccia e, di conseguenza, vengono aggregati automaticamente come singolo evento imprevisto.
 
@@ -158,7 +158,7 @@ Per visualizzare l'evento imprevisto:
 
    ![Screenshot del punto in cui fare clic su Gestisci evento imprevisto](../../media/mtp/fig5a.png)
 
-   ![Screenshot dei campi nel pannello gestisci eventi imprevisti in cui puoi contrassegnare l'evento imprevisto, assegnarlo a te stesso e aggiungere commenti ](../../media/mtp/fig5b.png)
+   ![Screenshot dei campi nel pannello gestisci eventi imprevisti in cui puoi contrassegnare l'evento imprevisto, assegnarlo a te stesso e aggiungere commenti](../../media/mtp/fig5b.png)
 
 ### <a name="review-generated-alerts"></a>Esaminare gli avvisi generati
 
@@ -432,14 +432,14 @@ I rilevamenti personalizzati eseguiranno la query in base alla frequenza imposta
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ulteriori esercizi di ricerca avanzata
 
-Per ulteriori informazioni sulla ricerca avanzata, i webcast seguenti illustrano le funzionalità di ricerca avanzata all'interno di Microsoft 365 Defender per creare query tra pilastri, eseguire pivot in entità e creare rilevamenti e azioni di correzione personalizzati.
+Per ulteriori informazioni sulla ricerca avanzata, i webcast seguenti illustrano le funzionalità della ricerca avanzata all'interno di Microsoft 365 Defender per creare query tra pilastri, eseguire pivot in entità e creare rilevamenti e azioni di correzione personalizzate.
 
 > [!NOTE]
 > Prepararsi con il proprio account GitHub per eseguire le query di ricerca nell'ambiente del laboratorio di testing pilota.
 
 |Titolo|Descrizione|Scaricare MP4|Guarda su YouTube|File CSL da utilizzare|
 |---|---|---|---|---|
-|Episodio 1: Nozioni fondamentali su KQL|Verranno trattate le nozioni di base sulle funzionalità di ricerca avanzate in Microsoft 365 Defender. Informazioni sui dati di ricerca avanzati disponibili e sulla sintassi e sugli operatori KQL di base.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episodio 1: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
+|Episodio 1: Nozioni fondamentali su KQL|Verranno trattate le nozioni di base delle funzionalità di ricerca avanzate in Microsoft 365 Defender. Informazioni sui dati di ricerca avanzati disponibili e sulla sintassi e sugli operatori KQL di base.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episodio 1: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |Episodio 2: Join|Continueremo a conoscere i dati nella ricerca avanzata e su come unire le tabelle. Informazioni sui join interni, esterni, univoci e semi e sulle sfumature dell'innerunique join Kusto predefinito.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Episodio 2: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |Episodio 3: Riepilogo, pivot e visualizzazione dei dati|Ora che siamo in grado di filtrare, modificare e unire i dati, è il momento di iniziare a riepilogare, quantificare, eseguire pivot e visualizzare. In questo episodio verrà descritto l'operatore di riepilogo e alcuni dei calcoli che è possibile eseguire durante l'immersione in tabelle aggiuntive nello schema di ricerca avanzata. I set di dati vengono trasformati in grafici che consentono di migliorare l'analisi.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Episodio 3: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
 |Episodio 4: Diamo la caccia! Applicazione di KQL al rilevamento degli eventi imprevisti|È ora di tenere traccia di alcune attività degli utenti malintenzionati. In questo episodio useremo la nostra migliore comprensione di KQL e la ricerca avanzata in Microsoft 365 Defender per tenere traccia di un attacco. Scopri alcuni dei suggerimenti e dei trucchi usati nel campo per tenere traccia dell'attività degli utenti malintenzionati, tra cui gli ABC della cybersecurity e come applicarli alla risposta agli incidenti.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episodio 4: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
@@ -447,5 +447,5 @@ Per ulteriori informazioni sulla ricerca avanzata, i webcast seguenti illustrano
 
 ## <a name="next-step"></a>Passaggio successivo
 
-|![Fase di chiusura e riepilogo](../../media/mtp/close.png) <br>[Fase di chiusura e riepilogo](m365d-pilot-close.md)|Analizza il Microsoft 365 pilota di Defender, presentalo agli stakeholder e fai il passaggio successivo.
+|![Fase di chiusura e riepilogo](../../media/mtp/close.png) <br>[Fase di chiusura e riepilogo](m365d-pilot-close.md)|Analizzare il Microsoft 365 Defender pilota, presentarli agli stakeholder e fare il passaggio successivo.
 |:-----|:-----|

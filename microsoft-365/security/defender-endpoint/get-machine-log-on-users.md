@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1c81d2978677b751a8085f88b5c4732fd4a5a247
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 634a381ca862dc7580d82168a4b9540acc0cd394
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770050"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229024"
 ---
 # <a name="get-machine-logon-users-api"></a>API Per ottenere gli utenti di accesso al computer
 
@@ -30,7 +30,7 @@ ms.locfileid: "52770050"
 
 **Si applica a:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,47 +40,47 @@ ms.locfileid: "52770050"
 ## <a name="api-description"></a>Descrizione API
 Recupera una raccolta di utenti connessi in un dispositivo specifico.
 
-
 ## <a name="limitations"></a>Limitazioni
 1. È possibile eseguire query sugli avvisi aggiornati per l'ultimo aggiornamento in base al periodo di conservazione configurato.
 2. I limiti di frequenza per questa API sono 100 chiamate al minuto e 1500 chiamate all'ora.
 
-
 ## <a name="permissions"></a>Autorizzazioni
 Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi [Usare Microsoft Defender per le API endpoint](apis-intro.md)
 
-Tipo di autorizzazione |   Autorizzazione  |   Nome visualizzato autorizzazione
+Tipo di autorizzazione |Autorizzazione|Nome visualizzato autorizzazione
 :---|:---|:---
-Applicazione |   User.Read.All | "Lettura profili utente"
+Applicazione |User.Read.All |"Lettura profili utente"
 Delegato (account aziendale o dell'istituto di istruzione) | User.Read.All | "Lettura profili utente"
 
->[!Note]
+> [!NOTE]
 > Quando si ottiene un token utilizzando le credenziali utente:
->- L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: "Visualizza dati". Per ulteriori informazioni, vedere [Create and manage roles](user-roles.md) )
->- La risposta includerà gli utenti solo se il dispositivo è visibile all'utente, in base alle impostazioni del gruppo di dispositivi. Per altre informazioni, vedi [Creare e gestire gruppi di dispositivi.](machine-groups.md)
+>
+> - L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: "Visualizza dati". Per ulteriori informazioni, vedere [Create and manage roles](user-roles.md).
+> - La risposta includerà gli utenti solo se il dispositivo è visibile all'utente, in base alle impostazioni del gruppo di dispositivi. Per altre informazioni, vedi [Creare e gestire gruppi di dispositivi.](machine-groups.md)
 
 ## <a name="http-request"></a>Richiesta HTTP
+
 ```http
 GET /api/machines/{id}/logonusers
 ```
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
-Name | Tipo | Descrizione
+Nome | Tipo | Descrizione
 :---|:---|:---
 Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**.
 
-
 ## <a name="request-body"></a>Corpo della richiesta
+
 Vuoto
 
 ## <a name="response"></a>Risposta
-Se l'operazione ha esito positivo e [](user.md) il dispositivo esiste: 200 OK con l'elenco delle entità utente nel corpo. Se il dispositivo non è stato trovato - 404 Non trovato.
 
+Se l'operazione ha esito positivo e [](user.md) il dispositivo esiste: 200 OK con l'elenco delle entità utente nel corpo. Se il dispositivo non è stato trovato - 404 Non trovato.
 
 ## <a name="example"></a>Esempio
 
-**Richiesta**
+### <a name="request"></a>Richiesta
 
 Ecco un esempio della richiesta.
 
@@ -88,10 +88,9 @@ Ecco un esempio della richiesta.
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
 ```
 
-**Risposta**
+### <a name="response"></a>Risposta
 
 Ecco un esempio di risposta.
-
 
 ```http
 HTTP/1.1 200 OK

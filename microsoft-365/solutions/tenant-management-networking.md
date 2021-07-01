@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Ottimizzare l'accesso di rete Microsoft 365 tenant.
-ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cf9591d2ec027c42f5ef9e7abac6dc9b06744a81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407193"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229180"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Passaggio 2. Rete ottimale per la Microsoft 365 per i tenant aziendali
 
@@ -31,7 +31,7 @@ Per ottimizzare l'accesso alla rete per il tenant, è necessario:
 
 - Ottimizzare il percorso tra gli utenti locali e la posizione più vicina a Microsoft Global Network.
 - Ottimizzare l'accesso a Microsoft Global Network per gli utenti remoti che utilizzano una soluzione VPN di accesso remoto.
-- Usare Network Insights per progettare il perimetro di rete per le posizioni dell'ufficio.
+- Utilizzare Network Insights per progettare il perimetro di rete per le posizioni dell'ufficio.
 - Ottimizzare l'accesso a risorse specifiche ospitate SharePoint siti con Office 365 rete CDN.
 - Configurare i dispositivi proxy e perimetrali di rete per ignorare l'elaborazione per Microsoft 365 traffico attendibile con l'elenco di endpoint e automatizzare l'aggiornamento dell'elenco quando vengono apportate modifiche.
 
@@ -94,7 +94,7 @@ In questa illustrazione, il client VPN invia e riceve il traffico fondamentale d
 
 Per informazioni dettagliate e per materiale sussidiario, consultare [Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling per VPN](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-## <a name="using-network-insights-preview"></a>Uso di Network Insights (anteprima)
+## <a name="using-network-insights-preview"></a>Uso di Insights rete (anteprima)
 
 Le informazioni dettagliate sulla rete sono metriche sulle prestazioni raccolte dal tenant Microsoft 365 che consentono di progettare perimetri di rete per le posizioni dell'ufficio. Ogni approfondimento fornisce dettagli in tempo reale sulle caratteristiche delle prestazioni per un problema specifico per ogni posizione geografica in cui gli utenti locali accedono al tenant.
 
@@ -112,10 +112,10 @@ Queste sono le informazioni dettagliate di rete specifiche per ogni posizione de
 - [Bassa velocità di download da SharePoint porta principale](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [Uscita di rete ottimale per gli utenti in Cina](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
->[!IMPORTANT]
->Informazioni dettagliate sulla rete, consigli sulle prestazioni e valutazioni nell Microsoft 365'interfaccia di amministrazione è attualmente in stato di anteprima. È disponibile solo per Microsoft 365 tenant registrati nel programma di anteprima delle funzionalità.
+> [!IMPORTANT]
+> Informazioni dettagliate sulla rete, consigli sulle prestazioni e valutazioni nel Amministrazione Microsoft 365 Center sono attualmente in stato di anteprima. È disponibile solo per Microsoft 365 tenant registrati nel programma di anteprima delle funzionalità.
 
-Per ulteriori informazioni, vedere [Microsoft 365 Network Insights.](../enterprise/office-365-network-mac-perf-insights.md)
+Per ulteriori informazioni, vedere [Microsoft 365 Network Insights](../enterprise/office-365-network-mac-perf-insights.md).
 
 ## <a name="sharepoint-performance-with-the-office-365-cdn"></a>SharePoint prestazioni con il Office 365 rete CDN
 

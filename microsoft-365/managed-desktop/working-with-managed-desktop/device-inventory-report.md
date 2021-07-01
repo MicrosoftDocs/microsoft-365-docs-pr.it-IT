@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3ebbb4359e460c0e8ddd6d353ce70057ed352212
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 0137bef845cace589247c35763bbf4253398cbc6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245337"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229000"
 ---
 # <a name="device-inventory-report"></a>Report inventario dei dispositivi
 
@@ -43,6 +43,6 @@ Nella visualizzazione **Dispositivi** puoi selezionare la scheda **Esporta** tut
 - Versione TPM
 - Avvio protetto abilitato
 - Tipo di disco primario
-- Memoria fisica totale 
+- Memoria fisica totale
 
-![Visualizzazione dispositivi che mostra l'elenco dei dispositivi e i dettagli correlati. Caselle di controllo accanto ai filtri di selezione superiore per l'attività, lo stato di registrazione. Sopra c'è una casella di ricerca. Schede nella parte superiore per registrare nuovi dispositivi, aggiornare la visualizzazione, esportare errori ed esportare i dati. ](../../media/mmd-devices-view.png)
+![Visualizzazione dispositivi che mostra l'elenco dei dispositivi e i dettagli correlati. Caselle di controllo accanto ai filtri di selezione superiore per l'attività, lo stato di registrazione. Sopra c'è una casella di ricerca. Schede nella parte superiore per registrare nuovi dispositivi, aggiornare la visualizzazione, esportare errori ed esportare i dati.](../../media/mmd-devices-view.png)

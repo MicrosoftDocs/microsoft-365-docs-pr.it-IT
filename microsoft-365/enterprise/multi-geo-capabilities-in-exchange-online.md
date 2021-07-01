@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Informazioni sulle funzionalità multi-geografiche in Exchange Online, ad esempio limitazioni delle funzionalità e posizionamento delle cassette postali.
-ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694306"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229804"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Funzionalità Multi-Geo in Exchange Online
 
@@ -59,4 +59,4 @@ Exchange Online sincronizza la proprietà **PreferredDataLocation** di Azure AD 
 
 - Le cartelle pubbliche sono supportate nelle organizzazioni Multi-Geo. Tuttavia, è necessario che le cartelle pubbliche rimangano nella posizione geografica centrale. Non è possibile spostare le cartelle pubbliche nelle posizioni geografiche satelliti.
 
-- In un ambiente multi-geografico il controllo delle cassette postali in aree geografiche diverse non è supportato. Ad esempio, se a un utente sono assegnate le autorizzazioni per accedere a una cassetta postale condivisa in un'area geografica diversa, le azioni sulla cassetta postale eseguite da tale utente non vengono registrate nel log di controllo della cassetta postale condivisa. Per altre informazioni, vedere [Gestire il controllo delle cassette postali](../compliance/enable-mailbox-auditing.md?view=o365-worldwide).
+- In un ambiente multi-geografico il controllo delle cassette postali in aree geografiche diverse non è supportato. Ad esempio, se a un utente sono assegnate le autorizzazioni per accedere a una cassetta postale condivisa in un'area geografica diversa, le azioni sulla cassetta postale eseguite da tale utente non vengono registrate nel log di controllo della cassetta postale condivisa. Per altre informazioni, vedere [Gestire il controllo delle cassette postali](../compliance/enable-mailbox-auditing.md).

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa Dispositivi mobili e sicurezza di base per creare criteri per i dispositivi che proteggono le informazioni dell'organizzazione.
-ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 62dc2eef87d413a9cb62a01541126860620eec3f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706323"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228256"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Creare criteri di sicurezza dei dispositivi in Dispositivi mobili e sicurezza di base
 
@@ -39,14 +39,14 @@ Puoi usare Dispositivi mobili e sicurezza di base per creare criteri per i dispo
 - Per creare e distribuire i criteri di sicurezza e mobilità di base in Microsoft 365, è necessario essere un amministratore Microsoft 365 globale. Per altre info, vedi [Autorizzazioni nel Centro sicurezza & conformità.](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 - Prima di distribuire i criteri, consenti all'organizzazione di conoscere i potenziali effetti della registrazione di un dispositivo in Dispositivi mobili e sicurezza di base. A seconda della configurazione dei criteri, ai dispositivi non conformi può essere impedito l'accesso a Microsoft 365 e ai dati, incluse le applicazioni installate, le foto e le informazioni personali in un dispositivo registrato, e i dati possono essere eliminati.
 
->[!NOTE]
->I criteri e le regole di accesso creati in Basic Mobility and Security for Microsoft 365 Business Standard sostituiscono Exchange ActiveSync criteri cassetta postale del dispositivo mobile e regole di accesso ai dispositivi creati nell'interfaccia di amministrazione di Exchange. Dopo la registrazione di un dispositivo in Dispositivi mobili e sicurezza di base per Microsoft 365 Business Standard, qualsiasi criterio cassetta postale del dispositivo mobile o regola di accesso al dispositivo Exchange ActiveSync applicato al dispositivo viene ignorato. Per ulteriori informazioni sulle Exchange ActiveSync, [vedere Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> [!NOTE]
+> I criteri e le regole di accesso creati in Basic Mobility and Security for Microsoft 365 Business Standard sostituiscono Exchange ActiveSync criteri cassetta postale del dispositivo mobile e regole di accesso ai dispositivi creati nell'interfaccia di amministrazione di Exchange. Dopo la registrazione di un dispositivo in Dispositivi mobili e sicurezza di base per Microsoft 365 Business Standard, qualsiasi criterio cassetta postale del dispositivo mobile o regola di accesso al dispositivo Exchange ActiveSync applicato al dispositivo viene ignorato. Per ulteriori informazioni sulle Exchange ActiveSync, [vedere Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Passaggio 1: Creare un criterio dispositivo e distribuirne uno in un gruppo di test
 
 Prima di iniziare, assicurati di aver attivato e configurato Basic Mobility and Security. Per istruzioni, vedere [Overview of Basic Mobility and Security.](overview.md)
 
-1. Nel browser digitare [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
+1. Nel browser digitare <https://protection.office.com/devicev2> .
 
 2. Selezionare **Crea un criterio**.
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Distribuire Microsoft 365 sicurezza e conformità e proteggere le informazioni personali.
-ms.openlocfilehash: 659a5295f8b2973c8efef7a7d77f49b2904accf6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 479774069844964e2e603dee5efbc7b8ef867918
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113439"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229264"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteggere le informazioni soggette alla normativa sulla privacy dei dati
 
@@ -37,9 +37,8 @@ Questi controlli sono all'interno delle seguenti aree della soluzione:
 
 ![Servizi chiave per proteggere le informazioni personali soggette alla normativa sulla privacy dei dati](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
->[!Note]
->Questa soluzione descrive le funzionalità di sicurezza e conformità per proteggere le informazioni soggette alle normative sulla privacy dei dati. Per un elenco completo delle funzionalità di sicurezza in Microsoft 365, vedere la [documentazione Microsoft 365 sicurezza.](../security/index.yml) Per un elenco completo delle funzionalità di conformità in Microsoft 365, vedere Microsoft 365 [documentazione sulla conformità.](../compliance/index.yml)
->
+> [!NOTE]
+> Questa soluzione descrive le funzionalità di sicurezza e conformità per proteggere le informazioni soggette alle normative sulla privacy dei dati. Per un elenco completo delle funzionalità di sicurezza in Microsoft 365, vedere la [documentazione Microsoft 365 sicurezza.](../security/index.yml) Per un elenco completo delle funzionalità di conformità in Microsoft 365, vedere Microsoft 365 [documentazione sulla conformità.](../compliance/index.yml)
 
 ## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Normative sulla privacy dei dati che influiscono sui controlli di protezione delle informazioni
 
@@ -69,7 +68,7 @@ Le [soluzioni di protezione delle](../compliance/information-protection.md) info
 
 - [Crittografia del servizio con Customer Key](../compliance/customer-key-overview.md)
 - [Tipi di informazioni riservate](../compliance/sensitive-information-type-entity-definitions.md) (descritti nell'articolo valutare i rischi per la privacy dei [dati e identificare gli elementi sensibili)](information-protection-deploy-assess.md)
-- [Etichette di riservatezza](../compliance/sensitivity-labels.md) 
+- [Etichette di riservatezza](../compliance/sensitivity-labels.md)
   - Servizio/livello contenitore
   - Lato client/livello di contenuto
   - Automatizzato per la gestione dei dati in SharePoint e OneDrive
@@ -88,7 +87,7 @@ Per informazioni su altre funzionalità di protezione delle informazioni Microso
 
 ## <a name="sensitivity-labels"></a>Etichette di riservatezza
 
-Le etichette di riservatezza del framework di Microsoft Information Protection consentono di classificare e proteggere i dati dell'organizzazione senza ostacolare la produttività degli utenti e la loro capacità di collaborare.
+Le etichette di riservatezza del framework Microsoft Information Protection consentono di classificare e proteggere i dati dell'organizzazione senza ostacolare la produttività degli utenti e la loro capacità di collaborare.
 
 > [!div class="mx-imgBorder"]
 > ![Etichette di riservatezza in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
@@ -122,7 +121,7 @@ Completare queste attività prima di implementare una delle funzionalità basate
 
 ### <a name="general-guidance"></a>Indicazioni generali
 
-1. **Definizione dello schema.** Prima di usare le funzionalità tecniche per applicare etichette e protezione, lavorare all'interno dell'organizzazione per definire uno schema di classificazione. Potrebbe essere già presente uno schema di classificazione, che semplifica l'aggiunta di dati personali. 
+1. **Definizione dello schema.** Prima di usare le funzionalità tecniche per applicare etichette e protezione, lavorare all'interno dell'organizzazione per definire uno schema di classificazione. Potrebbe essere già presente uno schema di classificazione, che semplifica l'aggiunta di dati personali.
 2. **Guida introduttiva.** Iniziare decidendo il numero e i nomi delle etichette da implementare. Eseguire questa attività senza preoccuparsi della tecnologia da utilizzare e della modalità di applicazione delle etichette. Applicare questo schema universalmente all'interno dell'organizzazione, inclusi i dati che risiedono in locale e in altri servizi cloud.
 3. **Suggerimenti aggiuntivi** Durante la progettazione e l'implementazione di criteri, etichette e condizioni, è consigliabile seguire questi suggerimenti:
 
@@ -131,12 +130,12 @@ Completare queste attività prima di implementare una delle funzionalità basate
    - **Usare scenari e casi d'uso.** Identificare i casi d'uso comuni all'interno dell'organizzazione e gli scenari di utilizzo derivati dalle normative sulla privacy dei dati a cui si è soggetti. Verificare se la configurazione di etichetta e classificazione immaginata funzionerà in pratica.
    - **Interrogare ogni richiesta di una nuova etichetta.** Ogni scenario o caso d'uso ha realmente bisogno di una nuova etichetta o è possibile usare ciò che si ha già? Mantenere il numero minimo di etichette migliora l'adozione.
    - **Utilizzare etichette secondarie per i reparti chiave.** Alcuni reparti avranno esigenze specifiche che richiedono etichette specifiche. Definire queste etichette come sottoe etichette di un'etichetta esistente e prendere in considerazione l'utilizzo di criteri con ambito assegnati a gruppi di utenti anziché a livello globale.
-   - **Considerare i criteri con ambito.** I criteri destinati a sottoinsiemi di utenti impediranno il sovraccarico delle etichette. Un criterio con ambito consente di assegnare etichette o sottoelezioni specifiche del ruolo o del reparto solo ai dipendenti che lavorano per quel reparto specifico. 
+   - **Considerare i criteri con ambito.** I criteri destinati a sottoinsiemi di utenti impediranno il sovraccarico delle etichette. Un criterio con ambito consente di assegnare etichette o sottoelezioni specifiche del ruolo o del reparto solo ai dipendenti che lavorano per quel reparto specifico.
    - **Utilizzare nomi di etichette significativi.** Cerca di non usare il gergo, gli standard o gli acronimi come nomi di etichetta. Prova a usare nomi che risuonano con l'utente finale per migliorare l'adozione. Invece di usare etichette come PII, PCI, HIPAA, LBI, MBI e HBI, prendi in considerazione nomi come Non-Business, Public, General, Confidential e Highly Confidential.
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Creare e distribuire etichette di riservatezza per siti, gruppi e team
 
-Quando si creano [etichette di riservatezza](../compliance/sensitivity-labels-teams-groups-sites.md) nel Centro Microsoft 365 conformità, è ora possibile applicarle a questi contenitori:
+Quando si creano [etichette di riservatezza](../compliance/sensitivity-labels-teams-groups-sites.md) nel Centro conformità Microsoft 365, è ora possibile applicarle a questi contenitori:
 
 - Microsoft Teams siti
 - Microsoft 365 gruppi (in precedenza Office 365 gruppi)
@@ -160,14 +159,14 @@ Quando si è pronti per iniziare a proteggere i dati dell'organizzazione con eti
 2. **Definire le caratteristiche di ogni etichetta.** Configurare le impostazioni di protezione che si vogliono associare a ciascuna etichetta. Ad esempio, è possibile che si desideri applicare solo un'intestazione o un piè di pagina a un contenuto con riservatezza più bassa( ad esempio un'etichetta "Generale"), mentre un contenuto con maggiore riservatezza (ad esempio un'etichetta "Riservato") deve avere una filigrana e avere la crittografia abilitata.
 3. **Pubblicare le etichette.** Dopo aver configurato le etichette di riservatezza, pubblicarle usando un criterio di etichetta. Decidere quali utenti e gruppi devono avere le etichette e quali impostazioni dei criteri usare. Una singola etichetta è riutilizzabile. È possibile definirlo una sola volta e quindi includerlo in diversi criteri di etichetta assegnati a utenti diversi.
 
-Dopo aver pubblicato le etichette di riservatezza dal Centro conformità Microsoft 365, queste vengono visualizzate nelle app di [Office per](../compliance/sensitivity-labels-office-apps.md) consentire agli utenti di classificare e proteggere il contenuto durante la creazione o la modifica.
+Dopo aver pubblicato le etichette di riservatezza dal Centro conformità Microsoft 365, [](../compliance/sensitivity-labels-office-apps.md) queste vengono visualizzate nelle app di Office per consentire agli utenti di classificare e proteggere il contenuto durante la creazione o la modifica.
 
 ![Flusso di distribuzione delle etichette di riservatezza in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
 Per la privacy dei dati, si applica manualmente un'etichetta di riservatezza con crittografia e altre regole alla posta elettronica o al contenuto contenente informazioni personali riservate.
 
->[!Note]
->Le etichette di riservatezza con la crittografia abilitata per la posta elettronica hanno alcune funzionalità sovrapposte con OME. Vedere [Confronto tra scenari di posta elettronica sicuri e OME e etichette di riservatezza.](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels)
+> [!NOTE]
+> Le etichette di riservatezza con la crittografia abilitata per la posta elettronica hanno alcune funzionalità sovrapposte con OME. Vedere [Confronto tra scenari di posta elettronica sicuri e OME e etichette di riservatezza.](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels)
 
 ### <a name="client-side-auto-labeling-when-users-edit-documents-or-compose-emails"></a>Etichettatura automatica sul lato client quando gli utenti modificano documenti o compongono messaggi di posta elettronica
 
@@ -190,14 +189,14 @@ Per la privacy dei dati, si applicano automaticamente etichette di riservatezza 
 ### <a name="service-side-auto-labeling-when-content-is-already-saved"></a>Etichettatura automatica sul lato servizio quando il contenuto è già salvato
 
 Questo metodo è denominato classificazione automatica con etichette di riservatezza. Potresti anche sentirla come etichettatura automatica per i dati in pausa (per i documenti in SharePoint e OneDrive) e i dati in transito (per i messaggi di posta elettronica inviati o ricevuti da Exchange). Ad Exchange, non include messaggi di posta elettronica nelle cassette postali in pausa.
- 
+
 Poiché questa etichettatura viene applicata dal servizio stesso anziché dall'applicazione utente, non è necessario preoccuparsi delle app degli utenti e della versione. Di conseguenza, questa funzionalità è immediatamente disponibile nell'intera organizzazione ed è adatta per l'applicazione di etichette su vasta scala. I criteri di applicazione automatica di etichette non supportano l'applicazione di etichette consigliate perché l'utente non interagisce con il processo di etichettatura. L'amministratore esegue invece i criteri in modalità di simulazione per garantire la corretta etichettatura del contenuto prima dell'applicazione effettiva dell'etichetta.
 
 Per istruzioni sulla configurazione, vedere Come configurare i criteri di etichettatura automatica per [SharePoint, OneDrive e Exchange](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
 
 Per la privacy dei dati all'interno dei siti di interesse, le etichette di riservatezza push per la crittografia automatica del contenuto contenente informazioni personali riservate.
 
-## <a name="data-loss-prevention"></a>Prevenzione della perdita dei dati 
+## <a name="data-loss-prevention"></a>Prevenzione della perdita dei dati
 
 È possibile utilizzare la prevenzione della perdita dei dati [(DLP)](../compliance/dlp-learn-about-dlp.md) in Microsoft 365 per rilevare, avvisare e bloccare la condivisione rischiosa, involontaria o inappropriata, ad esempio la condivisione di dati contenenti informazioni personali, sia internamente che esternamente.
 
@@ -228,7 +227,7 @@ DLP viene utilizzato per identificare un documento o un messaggio di posta elett
 
 ### <a name="planning-for-dlp"></a>Pianificazione della prevenzione della perdita dei dati
 
-Pianificare i criteri DLP per: 
+Pianificare i criteri DLP per:
 
 - Requisiti aziendali.
 
@@ -272,9 +271,8 @@ Nella tabella seguente sono elencate tre configurazioni per aumentare la protezi
 
 La prima configurazione, Awareness, può essere usata come punto di partenza e livello minimo di protezione per soddisfare le esigenze di conformità per le normative sulla privacy dei dati.
 
->[!Note]
->Con l'aumentare dei livelli di protezione, la capacità degli utenti di condividere e accedere alle informazioni diminuisce in alcuni casi e potrebbe influire sulla produttività o sulla capacità di completare le attività quotidiane.
-
+> [!NOTE]
+> Con l'aumentare dei livelli di protezione, la capacità degli utenti di condividere e accedere alle informazioni diminuisce in alcuni casi e potrebbe influire sulla produttività o sulla capacità di completare le attività quotidiane.
 
 Per aiutare i dipendenti a continuare a essere produttivi in un ambiente più sicuro quando aumentano i livelli di protezione, prendere il tempo necessario per formarli e istruirli sui nuovi criteri e procedure di sicurezza.
 
@@ -314,7 +312,7 @@ Per la privacy dei dati, si utilizza OME per proteggere i messaggi interni conte
 
 È inoltre possibile definire regole del flusso di posta per applicare questa protezione. Ad esempio, è possibile creare una regola che richiede la crittografia di tutti i messaggi indirizzati a un destinatario specifico o che contiene parole chiave specifiche nella riga dell'oggetto e inoltre specificare che i destinatari non possono copiare o stampare il contenuto del messaggio.
 
-Inoltre, la crittografia [avanzata](../compliance/ome-advanced-message-encryption.md) dei messaggi OME consente di soddisfare gli obblighi di conformità che richiedono controlli più flessibili sui destinatari esterni e sul loro accesso ai messaggi di posta elettronica crittografati. Con OME Advanced Message Encryption in Microsoft 365, è possibile controllare i messaggi di posta elettronica sensibili condivisi all'esterno dell'organizzazione con criteri automatici che rilevano i tipi di informazioni riservate. 
+Inoltre, la crittografia [avanzata](../compliance/ome-advanced-message-encryption.md) dei messaggi OME consente di soddisfare gli obblighi di conformità che richiedono controlli più flessibili sui destinatari esterni e sul loro accesso ai messaggi di posta elettronica crittografati. Con OME Advanced Message Encryption in Microsoft 365, è possibile controllare i messaggi di posta elettronica sensibili condivisi all'esterno dell'organizzazione con criteri automatici che rilevano i tipi di informazioni riservate.
 
 Per la privacy dei dati, se è necessario condividere la posta elettronica con una parte esterna, è possibile specificare una data di scadenza e revocare i messaggi. È possibile revocare e impostare una data di scadenza solo per i messaggi inviati a destinatari esterni.
 

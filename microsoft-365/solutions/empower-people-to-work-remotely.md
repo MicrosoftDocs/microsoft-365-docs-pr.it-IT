@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: lavorare da casa, lavoro da casa, ibrido, lavoratore remoto, lavoro ibrido, dipendenti remoti, connettività ibrida, accesso remoto, lavoro remoto, lavorare a distanza, telelavorare, lavoro in movimento, lavorare in remoto, lavorare ovunque, ambienti di lavoro flessibili
 description: Esaminare i vari livelli dell'infrastruttura in modo che i lavoratori ibridi possano accedere in modo sicuro alle risorse locali e di Microsoft 365.
-ms.openlocfilehash: 55f1cf5c922166e1fe3932b6fe89fbdfcbfba466
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: fed23a4607cfb47049a6540dfb592d9a8baf9d21
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788888"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229372"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configurare l'infrastruttura per il lavoro ibrido con Microsoft 365
 
@@ -40,9 +40,8 @@ Microsoft 365 offre funzionalità che consentono ai lavoratori ibridi di lavorar
 
 ![Aumentare la produttività dei lavoratori ibridi con Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
->[!Note]
->Se sei un nuovo utente di Microsoft 365, vedi [queste risorse](https://www.microsoft.com/microsoft-365).
->
+> [!NOTE]
+> Se sei un nuovo utente di Microsoft 365, vedi [queste risorse](https://www.microsoft.com/microsoft-365).
 
 Guarda questo video per una panoramica sulla procedura di implementazione.
 <br>
@@ -53,9 +52,9 @@ Per i professionisti IT che gestiscono infrastrutture locali e basate su cloud p
 
 - Connessione
 
-  Da qualunque parte del mondo e in qualsiasi momento, i dipendenti possono accedere a: 
+  Da qualunque parte del mondo e in qualsiasi momento, i dipendenti possono accedere a:
 
-  - Dati e servizi basati su cloud tramite la propria sottoscrizione a Microsoft 365. 
+  - Dati e servizi basati su cloud tramite la propria sottoscrizione a Microsoft 365.
 
   - Risorse dell'organizzazione, ad esempio quelle offerte dai data center delle applicazioni locali.
 
@@ -71,11 +70,11 @@ Per i professionisti IT che gestiscono infrastrutture locali e basate su cloud p
 
   I lavoratori ibridi che lavorano a distanza possono essere produttivi come quelli in ufficio in modi altamente collaborativi, tramite: 
 
-  - Riunioni online e sessioni di chat con Teams. 
+  - Riunioni online e sessioni di chat con Teams.
 
   - Aree di lavoro condivise per l’archiviazione di file basata su cloud, con l’accessibilità globale e la collaborazione in tempo reale di SharePoint e OneDrive.
 
-  - Attività e flussi di lavoro condivisi per suddividere il lavoro e portare a termine le attività. 
+  - Attività e flussi di lavoro condivisi per suddividere il lavoro e portare a termine le attività.
 
 Per un’esperienza di accesso senza soluzione di continuità, è necessario sincronizzare gli account utente locali di Active Directory Domain Services (AD DS) con Azure Active Directory (Azure AD). Per proteggere i dispositivi Windows 10, è necessario registrarli in Intune. Ecco una panoramica generale dell'infrastruttura.
 
@@ -86,15 +85,15 @@ Per abilitare le capacità di Microsoft 365 per i lavoratori ibridi, usare quest
 | Capacità o funzionalità | Descrizione | Licenze |
 |:-------|:-----|:-------|
 | MFA applicata con le impostazioni predefinite per la sicurezza   | Proteggere le identità e i dispositivi dalla compromissione richiedendo una seconda forma di autenticazione per gli accessi. Le impostazioni predefinite per la sicurezza richiedono l'autenticazione a più fattori per tutti gli account utente.   | Microsoft 365 E3 o E5 |
-| MFA applicata con l'accesso condizionale| Richiedere l'autenticazione a più fattori in base alle proprietà dell'accesso con i criteri di accesso condizionale.    | Microsoft 365 E3 o E5 | 
-| MFA applicata con l'accesso condizionale basato sul rischio   | Richiedere l'autenticazione a più fattori in base al rischio di accesso dell'utente con Microsoft Defender per identità. | Microsoft 365 E5 o E3 con licenze di Azure AD Premium P2 | 
+| MFA applicata con l'accesso condizionale| Richiedere l'autenticazione a più fattori in base alle proprietà dell'accesso con i criteri di accesso condizionale.    | Microsoft 365 E3 o E5 |
+| MFA applicata con l'accesso condizionale basato sul rischio   | Richiedere l'autenticazione a più fattori in base al rischio di accesso dell'utente con Microsoft Defender per identità. | Microsoft 365 E5 o E3 con licenze di Azure AD Premium P2 |
 | Reimpostazione della password self-service    | Consentire agli utenti di reimpostare o sbloccare le password o gli account personali.  | Microsoft 365 E3 o E5 |
 | Azure AD Application Proxy    | Offrire un accesso remoto sicuro per le applicazioni basate sul Web ospitate nei server Intranet.   | Richiede una sottoscrizione di Azure a pagamento separata |
 | VPN da punto a sito di Azure   | Stabilire una connessione sicura dal dispositivo di un lavoratore remoto alla Intranet aziendale tramite una rete virtuale di Azure.   | Richiede una sottoscrizione di Azure a pagamento separata |
 | Desktop virtuale Windows   | Supportare i lavoratori remoti che possono usare solo i propri dispositivi personali e non gestiti con desktop virtuali in esecuzione in Azure. | Richiede una sottoscrizione di Azure a pagamento separata |
-| Servizi Desktop remoto | Consentire ai dipendenti di connettersi a computer basati su Windows nella Intranet aziendale. | Microsoft 365 E3 o E5 | 
+| Servizi Desktop remoto | Consentire ai dipendenti di connettersi a computer basati su Windows nella Intranet aziendale. | Microsoft 365 E3 o E5 |
 | Gateway di Servizi Desktop remoto   | Crittografare le comunicazioni e impedire che gli host RDS siano esposti direttamente a Internet. | Richiede licenze di Windows Server separate |
-| Microsoft Intune | Gestire dispositivi e applicazioni.   | Microsoft 365 E3 o E5 | 
+| Microsoft Intune | Gestire dispositivi e applicazioni.   | Microsoft 365 E3 o E5 |
 | Configuration Manager | Gestire installazioni, aggiornamenti e impostazioni del software nei dispositivi | Richiede licenze di Configuration Manager separate |
 | Desktop Analytics | Determinare l'adozione degli aggiornamenti dei client Windows.   | Richiede licenze di Configuration Manager separate |
 | Windows Autopilot | Impostare e preconfigurare nuovi dispositivi Windows 10 in modo da predisporli per l'uso.   | Microsoft 365 E3 o E5 |

@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Come configurare Teams per una maggiore sicurezza della condivisione dei file con tre livelli di protezione, in modo da bilanciare la sicurezza con la facilità di collaborazione.
-ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 0c1eb9585326f2269dca02f52e9170788f659c46
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683404"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228820"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurare Teams con tre livelli di protezione
 
@@ -122,7 +122,7 @@ Gli utenti guest spesso non hanno dispositivi gestiti dall'organizzazione. Se si
 
 Le impostazioni dei dispositivi non gestiti nelle etichette di riservatezza influiscono solo sull'accesso a SharePoint. Se si vuole allargare il controllo ai dispositivi non gestiti oltre SharePoint, è possibile in alternativa [Creare un criterio di accesso condizionale di Azure Active Directory per tutte le app e i servizi dell'organizzazione](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device).  Per configurare questo criterio in modo specifico per i [servizi di Microsoft 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), selezionare l'app cloud di **Office 365** in **App cloud o azioni**.
 
-![Screenshot dell'app cloud di Office 365 in un criterio di accesso condizionale di Azure Active Directory](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+![Screenshot dell'app cloud di Office 365 in un criterio di accesso condizionale di Azure Active Directory](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
 L'uso di criteri che influiscono su tutti i servizi di Microsoft 365 può migliorare la sicurezza e l'esperienza degli utenti. Ad esempio, quando si blocca l'accesso ai dispositivi non gestiti solo in SharePoint, gli utenti possono accedere alla chat in un team con un dispositivo non gestito, ma perderanno l'accesso quando provano ad accedere alla scheda **File**. L'uso dell'app cloud di Office 365 consente di evitare problemi con le [dipendenze dei servizi](/azure/active-directory/conditional-access/service-dependencies).
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Che si tratta dell'aggiunta di nuove soluzioni al Centro conformità, dell'aggiornamento delle funzionalità esistenti in base al feedback dell'utente o dell'implementazione di documentazione aggiornata e aggiornata, Microsoft 365 consente di rimanere al top del panorama di conformità in continua evoluzione. Scopri cosa abbiamo fatto fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1884989abba56a7da68a2a1372132015a81f5e03
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 6cd82e66a0b01f4cd329d846cf43581759dec0b6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985013"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228460"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -33,8 +33,13 @@ Che si tratta dell'aggiunta di nuove soluzioni al [Centro conformità Microsoft 
 > Alcune funzionalità di conformità vengono implementazioni a velocità diverse per i clienti. Se non vedi ancora una funzionalità, prova ad aggiungerti alla [versione mirata.](/office365/admin/manage/release-options-in-office-365)
 
 > [!TIP]
-> Ti interessa cosa succede in altre centri di amministrazione? Vedere questi articoli:<br>[Novità della interfaccia di amministrazione di Microsoft 365](/office365/admin/whats-new-in-preview)<br>[Novità nell'interfaccia SharePoint di amministrazione](/sharepoint/what-s-new-in-admin-center)<br>[Novità di Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
-E visitare la roadmap [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per informazioni sulle Microsoft 365 che sono state avviate, sono in fase di implementazione, sono in fase di sviluppo, sono state annullate o rilasciate in precedenza.
+> Ti interessa cosa succede in altre centri di amministrazione? Vedere questi articoli:
+>
+> - [Novità della interfaccia di amministrazione di Microsoft 365](/office365/admin/whats-new-in-preview)
+> - [Novità nell'interfaccia SharePoint di amministrazione](/sharepoint/what-s-new-in-admin-center)
+> - [Novità di Microsoft 365 Defender](../security/defender/whats-new.md)
+>
+> E visitare la roadmap [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per informazioni sulle Microsoft 365 che sono state avviate, sono in fase di implementazione, sono in fase di sviluppo, sono state annullate o rilasciate in precedenza.
 
 ## <a name="may-2021"></a>Maggio 2021
 
@@ -53,7 +58,7 @@ E visitare la roadmap [Microsoft 365](https://www.microsoft.com/microsoft-365/ro
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
-- In anteprima, una nuova impostazione per **il** contesto di autenticazione è ora disponibile quando si configura un'etichetta di riservatezza per gruppi [e siti.]( sensitivity-labels-teams-groups-sites.md) Questa opzione funziona in combinazione con i criteri di accesso condizionale di Azure AD per applicare condizioni più stringenti quando gli utenti accedono SharePoint siti a cui è applicata l'etichetta. Prima di configurare questa [impostazione,](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) assicurati di leggere le dipendenze e le limitazioni.
+- In anteprima, una nuova impostazione per **il** contesto di autenticazione è ora disponibile quando si configura un'etichetta di riservatezza per gruppi [e siti.](sensitivity-labels-teams-groups-sites.md) Questa opzione funziona in combinazione con i criteri di accesso condizionale di Azure AD per applicare condizioni più stringenti quando gli utenti accedono SharePoint siti a cui è applicata l'etichetta. Prima di configurare questa [impostazione,](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) assicurati di leggere le dipendenze e le limitazioni.
 - [I criteri di etichettatura](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) automatica configurati solo per Exchange ora supportano  le etichette di riservatezza che applicano la crittografia con Consenti agli utenti di assegnare le autorizzazioni per le opzioni Non inoltrare o Encrypt-Only.
 - [L'etichettatura](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) obbligatoria è ora disponibile in genere per tutte Office app, su tutte le piattaforme.
 
@@ -85,6 +90,7 @@ E visitare la roadmap [Microsoft 365](https://www.microsoft.com/microsoft-365/ro
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
 Outlook e aggiornamenti:
+
 - [Impostazioni diverse per l'etichetta predefinita e](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) l'etichettatura obbligatoria sono ora supportate per l'etichettatura predefinita. In precedenza, queste impostazioni erano supportate solo dal client di etichettatura unificato AIP.
 - [Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions) è ora supportato da macOS, iOS e Android.
 - [L'etichettatura](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) obbligatoria è in distribuzione nelle piattaforme rimanenti.
@@ -159,7 +165,7 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 - [Introduzione al tipo di informazioni riservate personalizzato](/microsoft-365/compliance/create-a-custom-sensitive-information-type)
 - [Informazioni sui tipi di informazioni riservate](/microsoft-365/compliance/sensitive-information-type-learn-about)
 - [Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Creare notifiche per le attività di corrispondenza esatta dei dati](/microsoft-365/compliance/sit-edm-notifications-activities)
+- [Creare notifiche per attività di corrispondenza esatta dei dati](/microsoft-365/compliance/sit-edm-notifications-activities)
 - [Definizioni di entità del tipo di informazioni riservate](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 - [Creare un tipo di informazioni riservate personalizzato tramite PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [Creare un dizionario di parole chiave](/microsoft-365/compliance/create-a-keyword-dictionary)
@@ -167,12 +173,12 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
 - **Supporto DoD**. Supporto per i tenant del governo statunitense con ambienti DoD.
-- **Encrypt-Only for Outlook**. Le opzioni di crittografia per Outlook includono ora Encrypt-Only quando si seleziona Consenti [agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions).
-- **Applicazione di etichette predefinite nelle app di Office**. Indicazioni [aggiornate](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) su come applicare etichette predefinite nelle app di Office quando è installato il client di etichettatura unificata di Azure Information Protection.
+- **Encrypt-Only for Outlook**. Le opzioni di crittografia Outlook ora includono Encrypt-Only quando si seleziona Consenti agli [utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions).
+- **Applicazione di etichette predefinite in Office app**. Indicazioni [aggiornate](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) su come applicare etichette predefinite nelle app Office quando è installato il client di etichettatura unificata di Azure Information Protection.
 
 ## <a name="february-2021"></a>Febbraio 2021
 
-Ecco alcune delle modifiche apportate alle soluzioni di conformità e al contenuto di Microsoft 365 per il mese di febbraio.
+Ecco alcune delle modifiche apportate alle soluzioni Microsoft 365 e al contenuto per il mese di febbraio.
 
 ### <a name="auditing"></a>Controllo
 
@@ -192,7 +198,7 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 
 - [Informazioni su Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati](/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [Informazioni sullo scanner locale per la prevenzione della perdita di dati di Microsoft 365](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [Informazioni sullo scanner locale Microsoft 365 prevenzione della perdita di dati](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
 - [Introduzione allo scanner locale per la prevenzione della perdita di dati](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
 - [Uso di Prevenzione della perdita di dati degli endpoint](/microsoft-365/compliance/endpoint-dlp-using)
@@ -202,7 +208,7 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 
 Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 
-- [Decrittografia negli strumenti di eDiscovery di Microsoft 365](/microsoft-365/compliance/ediscovery-decryption)
+- [Decrittografia in Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery-decryption)
 - [Query con parole chiave e condizioni di ricerca](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
 - [Ritiro del modulo Pertinenza in Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
 - [Utilizzare uno script per aggiungere utenti a un'esenzione in un caso di eDiscovery di base](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
@@ -214,7 +220,7 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 #### <a name="azure-rights-management-service-rms"></a>Azure Rights Management Service (RMS)
 
 - [Funzionalità di crittografia gestite dai clienti](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Crittografia della posta di Exchange Online con AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). Il supporto per questo servizio è deprecato. Non è più possibile utilizzare AD RMS in un ambiente ibrido di Exchange. Eseguire invece la migrazione ad Azure RMS.
+- [Exchange Online della posta elettronica con AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). Il supporto per questo servizio è deprecato. Non è più possibile utilizzare AD RMS in un ambiente Exchange ibrido. Eseguire invece la migrazione ad Azure RMS.
 
 #### <a name="customer-key"></a>Customer Key
 
@@ -224,10 +230,10 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 #### <a name="information-rights-management-irm"></a>Information Rights Management (IRM)
 
 - [Applicare Information Rights Management (IRM) a un elenco o a una raccolta.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) Questi cloud nazionali non supportano questa impostazione:
-    - Microsoft Cloud per il governo degli Stati Uniti
-    - Microsoft Cloud Germania
-    - Azure e Microsoft 365 gestito da 21Vianet in Cina)
-- [Configurare IRM per l'utilizzo di un server AD RMS locale.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) Il supporto per questo servizio in un ambiente ibrido di Exchange è deprecato.
+  - Microsoft Cloud for US Government
+  - Microsoft Cloud Germania
+  - Azure e Microsoft 365 gestiti da 21Vianet in Cina)
+- [Configurare IRM per l'utilizzo di un server AD RMS locale.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) Il supporto per questo servizio in un ambiente Exchange ibrido è deprecato.
 
 ### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
 
@@ -238,19 +244,18 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 - [Creare tipi di informazioni riservate personalizzati con classificazione basata su Corrispondenza esatta dati](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
 - [Definizioni delle entità tipo di informazioni sensibili](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
-
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
 Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 
-- **Condivisione esterna di SharePoint**. Per [le etichette contenitore](sensitivity-labels-teams-groups-sites.md) l'opzione per la condivisione esterna dai siti di SharePoint viene ora rilasciata come generalmente disponibile. Inoltre, l'interfaccia di amministrazione di Microsoft 365 e Planner ora supportano l'applicazione di queste etichette di riservatezza. 
+- **SharePoint condivisione esterna**. Per [le etichette contenitore,](sensitivity-labels-teams-groups-sites.md) l'opzione per la condivisione esterna SharePoint siti viene ora rilasciata come disponibile in genere. Inoltre, il interfaccia di amministrazione di Microsoft 365 e Planner ora supportano l'applicazione di queste etichette di riservatezza. 
 - **Creazione condivisa e salvataggio automatico**. Il supporto [per la creazione condivisa e il salvataggio](sensitivity-labels-coauthoring.md) automatico per i file crittografati viene rilasciato come anteprima per i test nei tenant non di produzione.
 
 ## <a name="january-2021"></a>Gennaio 2021
 
 ### <a name="support-for-card-content-in-teams"></a>Supporto per il contenuto delle schede in Teams
 
-Le soluzioni di conformità di Microsoft 365 seguenti supportano ora il rilevamento del contenuto della scheda [generato](/microsoftteams/platform/task-modules-and-cards/what-are-cards) tramite le app nei messaggi di Teams:
+Le soluzioni di Microsoft 365 seguenti supportano ora il rilevamento del contenuto della scheda [generato](/microsoftteams/platform/task-modules-and-cards/what-are-cards) tramite le app nei Teams messaggi:
 
 - **Core e Advanced eDiscovery**. Il contenuto della scheda può [ora essere messo](create-ediscovery-holds.md#preserve-card-content) [in](/microsoftteams/ediscovery-investigation#search-for-card-content) attesa o incluso nelle ricerche (si applica anche alla ricerca di contenuto).
 - **Controlla**. L'attività della scheda [viene ora registrata nel log di controllo.](/microsoftteams/audit-log-events#teams-activities)
@@ -269,7 +274,7 @@ Le soluzioni di conformità di Microsoft 365 seguenti supportano ora il rilevame
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>Contenuti in evidenza: nuovi contenuti per soluzioni di rischio insider
 
-Il team del contenuto di conformità di Microsoft 365 è al lavoro per creare documenti di "soluzione di contenuto" per promuovere il modo in cui le funzionalità di conformità possono essere utilizzate insieme per soddisfare gli obiettivi di conformità.
+Il team Microsoft 365 contenuto di conformità è al lavoro per creare documenti di "soluzione di contenuto" per promuovere il modo in cui le funzionalità di conformità possono essere utilizzate insieme per soddisfare gli obiettivi di conformità.
 
 Il primo è il contenuto che riunisce le nostre soluzioni di rischio insider: conformità delle comunicazioni, gestione dei rischi insider, barriere alle informazioni e gestione degli accessi privilegiati. Ecco un'occhiata a ciò che troverai:
 
@@ -279,7 +284,7 @@ Il primo è il contenuto che riunisce le nostre soluzioni di rischio insider: co
   - [Gestione dei rischi Insider](insider-risk-management-solution-overview.md)
   - [Barriere informative](information-barriers-solution-overview.md)
   - [Gestione accessi con privilegi](privileged-access-management-solution-overview.md)
-  
+
 Presto saranno disponibili altri documenti sulle soluzioni di contenuto.
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery

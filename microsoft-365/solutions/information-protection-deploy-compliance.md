@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Informazioni su come usare Compliance Score e Compliance Manager per migliorare il livello di protezione dei dati personali.
-ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918571"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229300"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utilizzare Compliance Manager per gestire le azioni di miglioramento
 
@@ -30,19 +30,18 @@ Microsoft Compliance Manager consente di gestire i miglioramenti correlati alle 
 
 In questo articolo vengono fornite indicazioni sull'utilizzo di questo strumento per scopi di privacy dei dati.
 
->[!Note]
->I consigli di Compliance Manager non devono essere interpretati come una garanzia di conformità. L'utente deve valutare e convalidare l'efficacia dei controlli dei clienti in base all'ambiente normativo. Questi servizi sono soggetti ai termini e alle condizioni delle Condizioni [dei Servizi online.](https://go.microsoft.com/fwlink/?linkid=2108910) Vedi anche indicazioni [Microsoft 365 licenze per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
->
+> [!NOTE]
+> I consigli di Compliance Manager non devono essere interpretati come una garanzia di conformità. L'utente deve valutare e convalidare l'efficacia dei controlli dei clienti in base all'ambiente normativo. Questi servizi sono soggetti ai termini e alle condizioni delle Condizioni [dei Servizi online.](https://go.microsoft.com/fwlink/?linkid=2108910) Vedi anche indicazioni [Microsoft 365 licenze per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
 #### <a name="what-is-compliance-manager"></a>Che cos'è Compliance Manager
 
-[Compliance Manager è](../compliance/compliance-manager.md) uno strumento di valutazione dei rischi basato sul flusso di lavoro nel centro Microsoft 365 conformità per la gestione delle attività di conformità normativa relative ai servizi cloud Microsoft. Nell'ambito della sottoscrizione Microsoft 365 o Azure Active Directory (Azure AD), Compliance Manager consente di gestire la conformità normativa all'interno del modello di responsabilità condivisa per i servizi cloud Microsoft.
+[Compliance Manager è](../compliance/compliance-manager.md) uno strumento di valutazione dei rischi basato sul flusso di lavoro nel Centro conformità Microsoft 365 per la gestione delle attività di conformità normative correlate ai servizi cloud Microsoft. Nell'ambito della sottoscrizione Microsoft 365 o Azure Active Directory (Azure AD), Compliance Manager consente di gestire la conformità normativa all'interno del modello di responsabilità condivisa per i servizi cloud Microsoft.
 
 **Valutazioni pronte per l'uso**
 
-Compliance Manager fornisce modelli [](../compliance/compliance-manager-assessments.md) predefiniti per la creazione di valutazioni allineate alle normative relative alla privacy dei dati, ad esempio GDPR e HIPAA/HITECH. I modelli dispongono di un mapping di controllo incorporato che consente di eseguire azioni di miglioramento per soddisfare i requisiti del regolamento. Ogni valutazione fornisce informazioni sui controlli che ogni regolamento richiede per il servizio di destinazione, suddiviso dai controlli gestiti e gestiti da Microsoft. 
+Compliance Manager fornisce modelli [](../compliance/compliance-manager-assessments.md) predefiniti per la creazione di valutazioni allineate alle normative relative alla privacy dei dati, ad esempio GDPR e HIPAA/HITECH. I modelli dispongono di un mapping di controllo incorporato che consente di eseguire azioni di miglioramento per soddisfare i requisiti del regolamento. Ogni valutazione fornisce informazioni sui controlli che ogni regolamento richiede per il servizio di destinazione, suddiviso dai controlli gestiti e gestiti da Microsoft.
 
 L'utilizzo di un modello predefinito consente di iniziare rapidamente a valutare i rischi. Quando si diventa più esperti nell'utilizzo di Compliance Manager, è possibile personalizzare un modello predefinito aggiungendo controlli e azioni di miglioramento personalizzati oppure creare valutazioni personalizzate in base alle esigenze dell'organizzazione.
 
@@ -59,7 +58,7 @@ Nella [guida introduttiva di Compliance Manager](../compliance/compliance-manage
 - [Prima visita: acquisire familiarità con Compliance Manager](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Utilizzo del dashboard di Compliance Manager
     - Informazioni sul punteggio di conformità
-    - Informazioni sulle azioni di miglioramento
+    - Learning sulle azioni di miglioramento
     - Informazioni su valutazioni e modelli
 - [Ramping up: configure Compliance Manager to manage your compliance activities](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - Creazione e gestione della prima valutazione

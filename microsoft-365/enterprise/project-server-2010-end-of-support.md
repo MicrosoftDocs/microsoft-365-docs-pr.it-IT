@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Il supporto termina per Project Server 2010 termina il 13 aprile 2021. Utilizzare questo articolo come guida per eseguire l'aggiornamento a Project Online o a una versione più recente di Project Server locale.
-ms.openlocfilehash: f57fa15da3cabc4b326a52359a29c652fcbe9e7f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 0ca37d00ee670a8a3f7c83d75864b5af19587951
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842231"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229756"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Tabella di marcia della fine del supporto di Project Server 2010
 
@@ -157,11 +157,11 @@ Risorse chiave:
 
 - [Le novità dell'aggiornamento Project Server 2013](/project/what-s-new-in-project-server-2013-upgrade) riguardano importanti modifiche per questa versione, tra cui:
 
-   - Non è disponibile alcun aggiornamento sul posto a Project Server 2013. Il metodo basato sul collegamento di database è l'unico modo supportato per eseguire l'aggiornamento da Project Server 2010 a Project Server 2013.
+  - Non è disponibile alcun aggiornamento sul posto a Project Server 2013. Il metodo basato sul collegamento di database è l'unico modo supportato per eseguire l'aggiornamento da Project Server 2010 a Project Server 2013.
 
-   - Il processo di aggiornamento non solo convertirà i dati di Project Server 2010 nel formato Project Server 2013, ma consoliderà anche i quattro database di Project Server 2010 in un singolo database Project Web App.
+  - Il processo di aggiornamento non solo convertirà i dati di Project Server 2010 nel formato Project Server 2013, ma consoliderà anche i quattro database di Project Server 2010 in un singolo database Project Web App.
 
-   - Sia SharePoint Server 2013 che Project Server 2013 sono stati modificati nell'autenticazione basata sulle attestazioni della versione precedente. Se si utilizza l'autenticazione classica, è necessario tenere presente questo problema durante l'aggiornamento. Per ulteriori informazioni, vedere [Eseguire la migrazione dall'autenticazione in modalità classica a quella basata su attestazioni in SharePoint 2013]( /sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
+  - Sia SharePoint Server 2013 che Project Server 2013 sono stati modificati nell'autenticazione basata sulle attestazioni della versione precedente. Se si utilizza l'autenticazione classica, è necessario tenere presente questo problema durante l'aggiornamento. Per ulteriori informazioni, vedere [Eseguire la migrazione dall'autenticazione in modalità classica a quella basata su attestazioni in SharePoint 2013](/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
 
 Risorse chiave:
 
@@ -213,9 +213,9 @@ Risorse chiave:
 
 - [Informazioni sull'aggiornamento Project Server 2019](/project/plan-for-upgrade-to-project-server-2016)<br/><br/>Informazioni sulle modifiche importanti per l'aggiornamento a questa versione, tra cui:
 
-   - Il processo di aggiornamento eseguirà la migrazione dei dati dal database Project Server 2016 al database SharePoint Server 2019 del contenuto.  Project Server 2019 non creerà più il proprio database Project Server nella SharePoint Server farm.
+  - Il processo di aggiornamento eseguirà la migrazione dei dati dal database Project Server 2016 al database SharePoint Server 2019 del contenuto.  Project Server 2019 non creerà più il proprio database Project Server nella SharePoint Server farm.
 
-   - Dopo l'aggiornamento, tenere presenti diverse modifiche Project Web App.  Per informazioni dettagliate, [vedere What's new in Project Server 2019](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
+  - Dopo l'aggiornamento, tenere presenti diverse modifiche Project Web App.  Per informazioni dettagliate, [vedere What's new in Project Server 2019](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
 
 **Altre risorse**:
 

@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 0c48c9076d05cd352229477acc28b32185eef54f
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: c81f14b92b285359bda7e291bd8d3a8b636ae54d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657855"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228964"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Avvisi di sicurezza di Defender for Identity in Microsoft 365 Defender
 
@@ -27,16 +27,16 @@ Gli avvisi di Defender for Identity sono integrati in modo nativo nel centro sic
 
 La nuova pagina di avviso identità offre ai clienti di Microsoft Defender for Identity un miglioramento del segnale tra domini e nuove funzionalità di risposta automatica alle identità. Garantisce la sicurezza e consente di migliorare l'efficienza delle operazioni di sicurezza.
 
-Uno dei vantaggi dell'analisi degli avvisi tramite [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) è che gli avvisi di Microsoft Defender for Identity sono ulteriormente correlati alle informazioni ottenute da ognuno degli altri prodotti della famiglia di prodotti. Questi avvisi migliorati sono coerenti con gli altri formati di avviso di Microsoft 365 Defender originati da [Microsoft Defender per Office 365](/microsoft-365/security/office-365-security) e Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint) La nuova pagina elimina in modo efficace la necessità di passare a un altro portale del prodotto per analizzare gli avvisi associati all'identità.
+Uno dei vantaggi dell'analisi degli avvisi tramite [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) è che gli avvisi di Microsoft Defender for Identity sono ulteriormente correlati alle informazioni ottenute da ognuno degli altri prodotti della famiglia di prodotti. Questi avvisi migliorati sono coerenti con gli altri Microsoft 365 Defender di avviso provenienti da [Microsoft Defender per Office 365](/microsoft-365/security/office-365-security) e Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint) La nuova pagina elimina in modo efficace la necessità di passare a un altro portale del prodotto per analizzare gli avvisi associati all'identità.
 
 Gli avvisi provenienti da Defender for Identity possono ora attivare le funzionalità di analisi e risposta automatizzate [(AIR)](/microsoft-365/security/defender/m365d-autoir) di Microsoft 365 Defender, tra cui la correzione automatica degli avvisi e la mitigazione di strumenti e processi che possono contribuire all'attività sospetta.
 
->[!IMPORTANT]
->Come parte della convergenza con Microsoft 365 Defender, alcune opzioni e dettagli sono cambiati rispetto alla posizione nel portale defender per l'identità. Leggi i dettagli seguenti per scoprire dove trovare sia le funzionalità familiari che le nuove funzionalità.
+> [!IMPORTANT]
+> Come parte della convergenza con Microsoft 365 Defender, alcune opzioni e dettagli sono cambiati dalla loro posizione nel portale defender per l'identità. Leggi i dettagli seguenti per scoprire dove trovare sia le funzionalità familiari che le nuove funzionalità.
 
 ## <a name="review-security-alerts"></a>Esaminare gli avvisi di sicurezza
 
-È possibile accedere agli avvisi da più  posizioni, tra cui la pagina Avvisi, la pagina Eventi imprevisti, le pagine dei singoli dispositivi e dalla **pagina Ricerca** avanzata.  In questo esempio verrà esaminata la **pagina Avvisi**.  
+È possibile accedere agli avvisi da più  posizioni, tra cui la pagina Avvisi, la pagina Eventi imprevisti, le pagine dei singoli dispositivi e dalla **pagina Ricerca** avanzata.  In questo esempio verrà esaminata la **pagina Avvisi**.
 
 Nel centro [Microsoft 365](https://security.microsoft.com/)sicurezza, passare a Eventi **imprevisti & avvisi** e quindi a **Avvisi**.
 
@@ -85,8 +85,8 @@ Nel riquadro destro, vedrai i dettagli **dell'avviso.** Qui è possibile visuali
 
     ![Gestire l'avviso](../../media/defender-identity/manage-alert.png)
 
-    >[!NOTE]
-    >Nel file Excel sono ora disponibili **due collegamenti:** Visualizza **in Microsoft Defender per** l'identità e Visualizza in Microsoft 365 Defender . Ogni collegamento consente di accedere al portale pertinente e di fornire informazioni sull'avviso.
+    > [!NOTE]
+    > Nel file Excel sono ora disponibili **due collegamenti:** Visualizza **in Microsoft Defender per** l'identità e Visualizza in Microsoft 365 Defender . Ogni collegamento consente di accedere al portale pertinente e di fornire informazioni sull'avviso.
 
 ## <a name="see-also"></a>Vedere anche
 

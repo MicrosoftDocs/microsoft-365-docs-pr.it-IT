@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 0ee214cf7ff5d5998a7fa35688574a23f8b082f0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177478"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229600"
 ---
 # <a name="overview"></a>Panoramica
 
@@ -68,16 +68,16 @@ L'identificazione dei dati utilizzati da Microsoft Managed Desktop viene archivi
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Microsoft Intune raccoglie, elabora e condivide i dati Microsoft Managed Desktop per supportare le operazioni e i servizi aziendali. Per [altre informazioni](/mem/intune/protect/privacy-data-collect) sui dati raccolti in Intune, vedere Raccolta di dati in Intune. 
 
-Per ulteriori informazioni sulle posizioni Microsoft Intune dati, vedere [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide). Intune rispetta le selezioni della posizione di archiviazione effettuate dall'amministratore per i dati dei clienti.
+Per ulteriori informazioni sulle posizioni Microsoft Intune dati, vedere [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). Intune rispetta le selezioni della posizione di archiviazione effettuate dall'amministratore per i dati dei clienti.
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender per endpoint
-Microsoft Defender for Endpoint raccoglie e archivia le informazioni per i dispositivi registrati in Microsoft Managed Desktop per scopi di amministrazione, monitoraggio e creazione di report. Le informazioni raccolte includono dati di file (ad esempio nomi di file, dimensioni e hash), dati di processo (processi in esecuzione, hash), dati del Registro di sistema, dati di connessione di rete e dettagli del dispositivo (ad esempio identificatori di dispositivo, nomi di dispositivi e versione del sistema operativo). Vedi [Microsoft Defender per l'archiviazione e](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) la privacy dei dati degli endpoint per altre informazioni su Microsoft Defender per la raccolta e la posizione di archiviazione dei dati di Endpoint. 
+Microsoft Defender for Endpoint raccoglie e archivia le informazioni per i dispositivi registrati in Microsoft Managed Desktop per scopi di amministrazione, monitoraggio e creazione di report. Le informazioni raccolte includono dati di file (ad esempio nomi di file, dimensioni e hash), dati di processo (processi in esecuzione, hash), dati del Registro di sistema, dati di connessione di rete e dettagli del dispositivo (ad esempio identificatori di dispositivo, nomi di dispositivi e versione del sistema operativo). Vedi [Microsoft Defender per l'archiviazione e](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) la privacy dei dati degli endpoint per altre informazioni su Microsoft Defender per la raccolta e la posizione di archiviazione dei dati di Endpoint. 
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise 
-Microsoft 365 Apps for enterprise raccoglie e condivide i dati con Microsoft Managed Desktop per garantire che tali app siano aggiornate con la versione più recente in base ai canali di aggiornamento predefiniti gestiti da Microsoft Managed Desktop. Vedi [Microsoft Defender per l'archiviazione e](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) la privacy dei dati degli endpoint per altre informazioni sulla raccolta dei Microsoft 365 Apps e sulle posizioni di archiviazione dei dati.
+Microsoft 365 Apps for enterprise raccoglie e condivide i dati con Microsoft Managed Desktop per garantire che tali app siano aggiornate con la versione più recente in base ai canali di aggiornamento predefiniti gestiti da Microsoft Managed Desktop. Vedi [Microsoft Defender per l'archiviazione e](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) la privacy dei dati degli endpoint per altre informazioni sulla raccolta dei Microsoft 365 Apps e sulle posizioni di archiviazione dei dati.
 
 ## <a name="major-data-change-notification"></a>Notifica di modifica dei dati principali
-Microsoft Managed Desktop segue un processo di controllo delle modifiche come descritto nel framework di comunicazione dei servizi. Microsoft comunica ai clienti tramite il Microsoft 365 Message Center e Microsoft Managed Desktop admin portal degli incidenti di sicurezza e delle modifiche principali apportate al servizio. Le modifiche apportate ai tipi di dati raccolti e alla posizione in cui sono archiviati vengono considerate modifiche materiali. Microsoft fornirà un minimo di 30 giorni di notifica avanzata di questa modifica, come è la pratica standard per i prodotti Microsoft 365 e i servizi. Per ulteriori informazioni, vedere [Service changes and communication](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide).
+Microsoft Managed Desktop segue un processo di controllo delle modifiche come descritto nel framework di comunicazione dei servizi. Microsoft comunica ai clienti tramite il Microsoft 365 Message Center e Microsoft Managed Desktop admin portal degli incidenti di sicurezza e delle modifiche principali apportate al servizio. Le modifiche apportate ai tipi di dati raccolti e alla posizione in cui sono archiviati vengono considerate modifiche materiali. Microsoft fornirà un minimo di 30 giorni di notifica avanzata di questa modifica, come è la pratica standard per i prodotti Microsoft 365 e i servizi. Per ulteriori informazioni, vedere [Service changes and communication](/microsoft-365/managed-desktop/service-description/servicechanges).
 
 ## <a name="compliance"></a>Conformità
 Microsoft Managed Desktop ha subito controlli esterni e ha ottenuto un set completo di offerte di conformità. Per ulteriori informazioni, vedere Microsoft Managed Desktop [conformità](/microsoft-365/managed-desktop/intro/compliance). I report di controllo sono disponibili per il download nel Portale microsoft [per](https://aka.ms/stp)l'attendibilità dei servizi, che funge da archivio centrale per Microsoft Enterprise Online Services. (Microsoft Managed Desktop è elencato all'interno di questi documenti nella categoria "Monitoraggio e gestione.") 

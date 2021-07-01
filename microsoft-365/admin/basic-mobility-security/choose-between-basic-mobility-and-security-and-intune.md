@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Mobilità e sicurezza di base fanno parte dei piani Microsoft 365 sicurezza.
-ms.openlocfilehash: b7b1d229e87a313a9567daed87f03452b1925a65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904265"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228268"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Scegliere tra Dispositivi mobili di base e sicurezza o Intune
 
@@ -52,17 +52,17 @@ Sia Basic Mobility che Security e Intune sono inclusi in un'ampia gamma di piani
 |Enterprise Mobility & Security E3 |No|Sì|
 |Enterprise Mobility + Security E5 |No|Sì|
 
->[!NOTE]
->Non puoi iniziare a usare Dispositivi mobili e sicurezza di base se stai già usando Microsoft Intune.
+> [!NOTE]
+> Non puoi iniziare a usare Dispositivi mobili e sicurezza di base se stai già usando Microsoft Intune.
 
- Per informazioni dettagliate, vedere [Microsoft 365 e Office 365 del servizio della piattaforma .](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) 
+ Per informazioni dettagliate, vedere [Microsoft 365 e Office 365 del servizio della piattaforma .](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)
 
 ## <a name="differences-in-capabilities"></a>Differenze nelle funzionalità
 
 Microsoft Intune dispositivi mobili e sicurezza di base incorporati offrono entrambi la possibilità di gestire i dispositivi mobili nell'organizzazione, ma esistono differenze fondamentali nelle funzionalità, descritte nella tabella seguente.
 
->[!NOTE]
->È possibile gestire gli utenti e i dispositivi mobili usando Intune e Dispositivi mobili di base e sicurezza nella stessa organizzazione di Microsoft 365 Business Standard configurando prima Dispositivi mobili e sicurezza di base e quindi aggiungendo *Microsoft Intune*. In questo modo è possibile scegliere dispositivi mobili e sicurezza di base o la soluzione Intune più ricca di funzionalità. Assegnare una licenza di Intune per abilitare le funzionalità di Intune.
+> [!NOTE]
+> È possibile gestire gli utenti e i dispositivi mobili usando Intune e Dispositivi mobili di base e sicurezza nella stessa organizzazione di Microsoft 365 Business Standard configurando prima Dispositivi mobili e sicurezza di base e quindi aggiungendo *Microsoft Intune*. In questo modo è possibile scegliere dispositivi mobili e sicurezza di base o la soluzione Intune più ricca di funzionalità. Assegnare una licenza di Intune per abilitare le funzionalità di Intune.
 
 | Area funzionale | Caratteristiche evidenziate | Basic Mobility + Security | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
@@ -80,7 +80,7 @@ Microsoft Intune dispositivi mobili e sicurezza di base incorporati offrono entr
 |Programmi di registrazione zero tocco (AutoPilot) |Registrare un numero elevato di dispositivi di proprietà dell'azienda, semplificando al contempo la configurazione degli utenti. |No|Sì|
 |||
 
-Oltre alle funzionalità elencate nella tabella precedente, Basic Mobility and Security e Intune includono entrambi un set di azioni remote che inviano comandi ai dispositivi tramite Internet. Ad esempio, puoi rimuovere i dati di Office dal dispositivo di un dipendente lasciando i dati personali sul posto (ritirare), rimuovere le app di Office dal dispositivo di un dipendente (cancellazione) o reimpostare un dispositivo alle impostazioni di fabbrica (cancellazione completa). 
+Oltre alle funzionalità elencate nella tabella precedente, Basic Mobility and Security e Intune includono entrambi un set di azioni remote che inviano comandi ai dispositivi tramite Internet. Ad esempio, puoi rimuovere i dati di Office dal dispositivo di un dipendente lasciando i dati personali sul posto (ritirare), rimuovere le app di Office dal dispositivo di un dipendente (cancellazione) o reimpostare un dispositivo alle impostazioni di fabbrica (cancellazione completa).
 
 Le azioni remote di base per dispositivi mobili e sicurezza includono ritiro, cancellazione e cancellazione completa. Per ulteriori informazioni sulle azioni di base per dispositivi mobili e sicurezza, vedere [capabilities of Basic Mobility and Security.](capabilities.md)
 

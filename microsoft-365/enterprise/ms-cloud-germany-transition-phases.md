@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: comprendere le azioni e gli impatti delle fasi di migrazione del passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a servizi Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: abf58930e2f937922733fedec2f13bfc2949fcb8
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930452"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229828"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Azioni e impatti delle fasi di migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -134,7 +134,7 @@ Considerazioni aggiuntive:
 
 - Se l'organizzazione usa ancora SharePoint 2010, non funzioneranno più dopo il 31 dicembre 2021. SharePoint 2013 i flussi di lavoro rimarranno supportati, anche se disattivati per impostazione predefinita per i nuovi tenant a partire dal 1 novembre 2020. Al termine della migrazione al SharePoint Online, è consigliabile passare a Power Automate o ad altre soluzioni supportate.
  - I clienti di Microsoft Cloud Deutschland la cui istanza di SharePoint Online non è ancora stata migrata devono rimanere nel modulo powershell di SharePoint Online/Microsoft.SharePointOnline.CSOM versione 16.0.20616.12000 o successiva. In caso contrario, le connessioni SharePoint Online tramite PowerShell o il modello a oggetti sul lato client avranno esito negativo.
-- Durante questa fase, gli indirizzi IP dietro gli URL SharePoint cambieranno. Dopo la transizione ai servizi globali di Office 365, gli indirizzi per gli URL del tenant conservati (ad esempio, e ) verranno modificati negli URL e negli intervalli di indirizzi IP di Microsoft 365 worldwide `contoso.sharepoint.de` `contoso-my.sharepoint.de` [(SharePoint Online e OneDrive for Business).](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)
+- Durante questa fase, gli indirizzi IP dietro gli URL SharePoint cambieranno. Dopo la transizione ai servizi globali di Office 365, gli indirizzi per gli URL del tenant conservati (ad esempio, e ) verranno modificati negli URL e negli intervalli di indirizzi IP di Microsoft 365 worldwide `contoso.sharepoint.de` `contoso-my.sharepoint.de` [(SharePoint Online e OneDrive for Business).](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business)
 - Mentre SharePoint e OneDrive sono in transizione, Office Online potrebbe non funzionare come previsto. 
 
 > [!NOTE]
@@ -231,7 +231,7 @@ In questa fase, Skype for Business verrà eseguita la migrazione a Microsoft Tea
 - Gli utenti non potranno accedere a Skype for Business tra le transizioni di servizio a Office 365 e non fino al completamento delle voci DNS dei clienti.
 - I contatti e le riunioni esistenti continueranno a funzionare come Skype for Business riunioni.
 
-Quando è stato configurato un dominio di vanità per Skype for Business, le voci DNS devono essere aggiornate. Fare riferimento a [Domini nell'Microsoft 365 di amministrazione](https://admin.microsoft.com/Adminportal/Home#/Domains) e applicare le modifiche nella configurazione DNS. 
+Quando è stato configurato un dominio di vanità per Skype for Business, le voci DNS devono essere aggiornate. Fare riferimento [a Domini nel interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/Domains) e applicare le modifiche nella configurazione DNS. 
 
 Se è necessario connettersi a Skype for Business Online con PowerShell al termine della fase di migrazione 9, utilizzare il codice di PowerShell seguente per connettersi:
 

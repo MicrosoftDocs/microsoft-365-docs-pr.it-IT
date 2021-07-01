@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Determinare le normative sulla privacy dei dati, gli scenari pertinenti, la preparazione e i tipi di informazioni riservate presenti nell'Microsoft 365 locale.
-ms.openlocfilehash: 6801f0af70e08d2b4efdc9e27f1cb1f1d636b821
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e41dccea3569573d45b2e07e8ab7f122c44b311
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929169"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229312"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Valutare i rischi per la privacy dei dati e identificare gli elementi sensibili con Microsoft 365
 
-La valutazione delle normative sulla privacy dei dati e dei rischi a cui l'organizzazione è soggetta è un primo passo fondamentale prima di implementare eventuali azioni di miglioramento correlate, incluse quelle raggiungibili con funzionalità e servizi Microsoft 365 dati. 
+La valutazione delle normative sulla privacy dei dati e dei rischi a cui l'organizzazione è soggetta è un primo passo fondamentale prima di implementare eventuali azioni di miglioramento correlate, incluse quelle raggiungibili con funzionalità e servizi Microsoft 365 dati.
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>Normative sulla privacy dei dati potenzialmente applicabili
 
@@ -34,9 +34,9 @@ Per una buona guida di riferimento sul più ampio quadro normativo per le normat
 
 ### <a name="gdpr"></a>GDPR
 
-Il GDPR, il più noto e citato delle normative sulla privacy dei dati, regola la raccolta, l'archiviazione, l'elaborazione e la condivisione di tutti i dati personali relativi a una persona naturale identificata o identificabile residente nell'Unione Europea . 
+Il GDPR, il più noto e citato delle normative sulla privacy dei dati, regola la raccolta, l'archiviazione, l'elaborazione e la condivisione di tutti i dati personali relativi a una persona naturale identificata o identificabile residente nell'Unione Europea .
 
-Secondo l'articolo 4 del GDPR: 
+Secondo l'articolo 4 del GDPR:
 
 - "dati personali" si intende qualsiasi informazione relativa a una persona naturale identificata o identificabile ('soggetto dei dati'); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente, in particolare facendo riferimento a un identificatore come un nome, un numero di identificazione, dati sulla posizione, un identificatore online o a uno o più fattori specifici dell'identità fisica, fisiologico, genetica, mentale, economica, culturale o sociale di tale persona fisica.
 
@@ -48,15 +48,15 @@ L'adesione ad altri standard come ISO 27001 è stata riconosciuta anche da diver
 
 Altre importanti normative sulla privacy dei dati specificano anche i requisiti per la gestione dei dati personali.
 
-Negli Stati Uniti, questi includono il California Consumer Protection Act[(CCPA),](/compliance/regulatory/ccpa-faq)HIPAA-HITECH (United States health care privacy act) e il Graham Leach Bliley Act (GLBA). Altre normative specifiche dello stato sono anche sul posto o in fase di sviluppo. 
+Negli Stati Uniti, questi includono il California Consumer Protection Act[(CCPA),](/compliance/regulatory/ccpa-faq)HIPAA-HITECH (United States health care privacy act) e il Graham Leach Bliley Act (GLBA). Altre normative specifiche dello stato sono anche sul posto o in fase di sviluppo.
 
 In tutto il mondo, altri esempi includono il National GDPR Implementation Act (BDSG) della Germania, il Brazil Data Protection Act (LGPD) e molti altri.
 
 ## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Mapping delle normative alle Microsoft 365 di controllo tecnico
 
-Molte delle normative relative alla privacy dei dati hanno requisiti sovrapposti, quindi è consigliabile comprendere quali normative sono soggette a prima di sviluppare qualsiasi schema di controllo tecnico. 
+Molte delle normative relative alla privacy dei dati hanno requisiti sovrapposti, quindi è consigliabile comprendere quali normative sono soggette a prima di sviluppare qualsiasi schema di controllo tecnico.
 
-Per riferimenti successivi negli articoli di questa soluzione complessiva, questa tabella fornisce estratti di un campionamento delle normative sulla privacy dei dati. 
+Per riferimenti successivi negli articoli di questa soluzione complessiva, questa tabella fornisce estratti di un campionamento delle normative sulla privacy dei dati.
 
 | Regolamento | Articolo/sezione | Estratto | Categorie di controllo tecnico applicabili |
 |:-------|:-----|:-------|:-------|
@@ -78,37 +78,35 @@ Per riferimenti successivi negli articoli di questa soluzione complessiva, quest
 |  | 1798.105(d) | (eccezioni a 1798.105(c) <br> Un'azienda o un provider di servizi non è tenuti a conformarsi alla richiesta di un utente di eliminare le informazioni personali dell'utente se è necessario che l'azienda o il provider di servizi mantenga le informazioni personali dell'utente per: (fare riferimento al regolamento corrente per ulteriori informazioni). | Individuazione e risposta |
 |||||
 
->[!Important]
->Non si tratta di un elenco esaustivo. Per ulteriori informazioni sull'applicabilità delle sezioni citate, fare riferimento a [Compliance Manager](../compliance/compliance-manager.md) o al consulente legale o di conformità per le categorie di controllo tecnico elencate.
->
+> [!IMPORTANT]
+> Non si tratta di un elenco esaustivo. Per ulteriori informazioni sull'applicabilità delle sezioni citate, fare riferimento a [Compliance Manager](../compliance/compliance-manager.md) o al consulente legale o di conformità per le categorie di controllo tecnico elencate.
 
 ## <a name="knowing-your-data"></a>Conoscere i dati
 
 Indipendentemente dalle normative a cui si è soggetti, i diversi tipi di dati degli utenti all'interno e all'esterno dell'organizzazione interagiscono con i sistemi sono tutti fattori importanti che possono influire sulla strategia complessiva di protezione dei dati personali, in base alle normative del settore e del governo applicabili all'organizzazione. Ciò include la posizione in cui vengono archiviati i dati personali, il tipo e la quantità di tali dati e in quali circostanze sono stati raccolti.
- 
+
 ![Conoscere i dati: che tipo sono e quanti sono e in quali circostanze sono stati raccolti](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
 
-### <a name="data-portability"></a>Portabilità dei dati 
+### <a name="data-portability"></a>Portabilità dei dati
 
 I dati si spostano anche nel tempo durante l'elaborazione, la perfezione e altre versioni derivano da esso. Uno snapshot iniziale non è mai sufficiente. È necessario un processo continuo per conoscere i dati. Questo rappresenta una delle principali sfide per le organizzazioni di grandi dimensioni che gestiscono volumi significativi di dati personali. Le organizzazioni che non affrontano il problema "conoscere i dati" potrebbero potenzialmente avere rischi molto elevati e possibili sanzioni da parte delle agenzie di regolamentazione.
 
 ![Ciclo di vita dei dati](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
- 
+
 ### <a name="where-the-personal-data-is"></a>Dove si trova il dato personale
 
 Per affrontare le normative sulla privacy dei dati, non è possibile basarsi su nozioni generali su dove si pensa che i dati personali possano esistere, ora o in futuro. Le normative sulla privacy dei dati richiedono che le organizzazioni dimostrino di sapere dove si trova i dati personali su base continuativa. Ciò rende importante scattare uno snapshot iniziale di tutte le origini dati per l'archiviazione possibile delle informazioni personali, incluso l'ambiente Microsoft 365, e stabilire meccanismi per il monitoraggio e il rilevamento continui.
 
-Se non hai ancora valutato la preparazione complessiva e i rischi associati alle normative sulla privacy dei dati, usa il framework in 3 passaggi seguente per iniziare. 
+Se non hai ancora valutato la preparazione complessiva e i rischi associati alle normative sulla privacy dei dati, usa il framework in 3 passaggi seguente per iniziare.
 
 ![Passaggi per valutare la conformità generale e i rischi associati alle normative sulla privacy dei dati](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
->[!Note]
->Questo articolo e il relativo contenuto non hanno lo scopo di prendere il posto dei servizi di consulenza legale. Fornisce solo alcune linee guida di base e collegamenti a strumenti che potrebbero essere di aiuto nelle prime fasi della valutazione.
->
- 
-## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>Passaggio 1: sviluppare una conoscenza di base degli scenari di dati personali dell'organizzazione 
+> [!NOTE]
+> Questo articolo e il relativo contenuto non hanno lo scopo di prendere il posto dei servizi di consulenza legale. Fornisce solo alcune linee guida di base e collegamenti a strumenti che potrebbero essere di aiuto nelle prime fasi della valutazione.
 
-È necessario valutare l'esposizione al rischio per la privacy dei dati in base al tipo di dati personali attualmente gestiti, dove vengono archiviati, quali controlli di protezione vengono posizionati su di esso, come viene gestito il ciclo di vita e chi ha accesso ad esso. 
+## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>Passaggio 1: sviluppare una conoscenza di base degli scenari di dati personali dell'organizzazione
+
+È necessario valutare l'esposizione al rischio per la privacy dei dati in base al tipo di dati personali attualmente gestiti, dove vengono archiviati, quali controlli di protezione vengono posizionati su di esso, come viene gestito il ciclo di vita e chi ha accesso ad esso.
 
 Come punto di partenza, è importante creare un inventario dei tipi di dati personali presenti nell'ambiente Microsoft 365 locale. Usa queste categorie:
 
@@ -120,7 +118,7 @@ Ecco un esempio dei diversi tipi di dati per i reparti tipici di un'organizzazio
 
 ![Tipi di dati personali](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-La maggior parte dei dati personali soggetti alla normativa sulla privacy dei dati viene in genere raccolta e archiviata al di fuori Microsoft 365. Tutti i dati personali provenienti da applicazioni web o per dispositivi mobili per i consumatori devono essere stati esportati da tali applicazioni a Microsoft 365 per essere soggetti al controllo della privacy dei dati all'interno di Microsoft 365. 
+La maggior parte dei dati personali soggetti alla normativa sulla privacy dei dati viene in genere raccolta e archiviata al di fuori Microsoft 365. Tutti i dati personali provenienti da applicazioni web o per dispositivi mobili per i consumatori devono essere stati esportati da tali applicazioni a Microsoft 365 per essere soggetti al controllo della privacy dei dati all'interno di Microsoft 365.
 
 L'esposizione alla privacy dei Microsoft 365 potrebbe essere più limitata rispetto alle applicazioni Web e ai sistemi CRM, che questa soluzione non è in grado di risolvere.
 
@@ -136,21 +134,20 @@ Durante la valutazione del profilo di rischio, è inoltre importante tenere pres
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>Dati dei dipendenti necessari per svolgere le funzioni aziendali quotidiane
 
-Per natura, le organizzazioni devono raccogliere dati sui dipendenti per l'identità elettronica e le risorse umane, a seconda di ciò che accettano nei contratti dei dipendenti. Finché una persona lavora per un'azienda, in genere non si tratta di un problema. L'organizzazione potrebbe voler mettere in atto meccanismi per impedire a malintenzionati di esfiltrare o di perdere dati personali dei dipendenti. 
+Per natura, le organizzazioni devono raccogliere dati sui dipendenti per l'identità elettronica e le risorse umane, a seconda di ciò che accettano nei contratti dei dipendenti. Finché una persona lavora per un'azienda, in genere non si tratta di un problema. L'organizzazione potrebbe voler mettere in atto meccanismi per impedire a malintenzionati di esfiltrare o di perdere dati personali dei dipendenti.
 
-Se una persona lascia un'azienda, le organizzazioni in genere dispongono di processi, procedure e pianificazioni di conservazione ed eliminazione per la rimozione degli account utente, la rimozione delle cassette postali e le unità personali e la modifica dello stato dei dipendenti in elementi come i sistemi delle risorse umane. Per le situazioni in cui è coinvolta una controversia legale, un dipendente o un'altra parte di un'indagine legale può avere motivi validi per ottenere informazioni sui dati personali archiviati nei sistemi dell'organizzazione. In alcune occasioni, tale parte può richiedere che tali dati siano rimossi o anonimi. 
+Se una persona lascia un'azienda, le organizzazioni in genere dispongono di processi, procedure e pianificazioni di conservazione ed eliminazione per la rimozione degli account utente, la rimozione delle cassette postali e le unità personali e la modifica dello stato dei dipendenti in elementi come i sistemi delle risorse umane. Per le situazioni in cui è coinvolta una controversia legale, un dipendente o un'altra parte di un'indagine legale può avere motivi validi per ottenere informazioni sui dati personali archiviati nei sistemi dell'organizzazione. In alcune occasioni, tale parte può richiedere che tali dati siano rimossi o anonimi.
 
-Per soddisfare tali esigenze, le organizzazioni devono disporre di processi e procedure che rivolano le esigenze preventive, investigative e correttive per facilitare tali richieste, notando che alcune informazioni su un dipendente possono essere ragionevolmente considerate cruciali per la continuità aziendale. Ad esempio, informazioni che un singolo utente ha creato un file o ha eseguito una funzione. 
+Per soddisfare tali esigenze, le organizzazioni devono disporre di processi e procedure che rivolano le esigenze preventive, investigative e correttive per facilitare tali richieste, notando che alcune informazioni su un dipendente possono essere ragionevolmente considerate cruciali per la continuità aziendale. Ad esempio, informazioni che un singolo utente ha creato un file o ha eseguito una funzione.
 
->[!Note]
->Per le tecniche di indagine e correzione per i dati personali in Microsoft 365, vedere l'articolo [monitoraggio e risposta.](information-protection-deploy-monitor-respond.md) È inoltre possibile utilizzare schemi di classificazione e protezione automatizzati per assicurarsi che i dati personali siano controllati all'interno dell'organizzazione, oltre a impedirne l'uscita dall'organizzazione in situazioni di attore dannoso. Per ulteriori [informazioni, vedere](information-protection-deploy-protect-information.md) l'articolo sulla protezione delle informazioni.
->
- 
+> [!NOTE]
+> Per le tecniche di indagine e correzione per i dati personali in Microsoft 365, vedere l'articolo [monitoraggio e risposta.](information-protection-deploy-monitor-respond.md) È inoltre possibile utilizzare schemi di classificazione e protezione automatizzati per assicurarsi che i dati personali siano controllati all'interno dell'organizzazione, oltre a impedirne l'uscita dall'organizzazione in situazioni di attore dannoso. Per ulteriori [informazioni, vedere](information-protection-deploy-protect-information.md) l'articolo sulla protezione delle informazioni.
+
 ### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>Dati dell'organizzazione relativi ai clienti aziendali nello scenario B2B
 
-La raccolta di informazioni B2B è anche una sfida perché l'organizzazione potrebbe dover conservare i record dei nomi dei clienti e delle transazioni nei vari sistemi per motivi di continuità aziendale, proteggendo tuttavia le informazioni da esfiltrazioni accidentali o dannose. Come per i dati dei dipendenti, le organizzazioni devono disporre di criteri, procedure e controlli tecnici per proteggere tali dati, oltre a definire l'età in base a pianificazioni di conservazione ed eliminazione definite. 
+La raccolta di informazioni B2B è anche una sfida perché l'organizzazione potrebbe dover conservare i record dei nomi dei clienti e delle transazioni nei vari sistemi per motivi di continuità aziendale, proteggendo tuttavia le informazioni da esfiltrazioni accidentali o dannose. Come per i dati dei dipendenti, le organizzazioni devono disporre di criteri, procedure e controlli tecnici per proteggere tali dati, oltre a definire l'età in base a pianificazioni di conservazione ed eliminazione definite.
 
-In genere, i contratti con clienti esterni, partner e altre entità con cui l'organizzazione fa affari avranno una lingua per gestire tali dati, tra cui protezione, conservazione ed eliminazione sia durante che dopo che l'entità ha una relazione con l'organizzazione. 
+In genere, i contratti con clienti esterni, partner e altre entità con cui l'organizzazione fa affari avranno una lingua per gestire tali dati, tra cui protezione, conservazione ed eliminazione sia durante che dopo che l'entità ha una relazione con l'organizzazione.
 
 ### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>Dati dell'organizzazione relativi agli utenti che forniscono informazioni ai servizi online gestiti dall'organizzazione nello scenario B2C
 
@@ -175,7 +172,7 @@ La maggior parte delle organizzazioni avrà una certa esposizione a uno degli sc
 
 ## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Passaggio 2: valutare la conformità per la conformità alle normative sulla privacy dei dati
 
-Anche se specifiche del GDPR, le domande poste nello strumento gratuito di valutazione del [GDPR di Microsoft](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) forniscono un buon inizio per comprendere la preparazione generale alla privacy dei dati. 
+Anche se specifiche del GDPR, le domande poste nello strumento gratuito di valutazione del [GDPR di Microsoft](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) forniscono un buon inizio per comprendere la preparazione generale alla privacy dei dati.
 
 Anche le organizzazioni soggette ad altre normative sulla privacy dei dati, come il CCPA negli Stati Uniti o nel Gpl del Brasile, possono trarre vantaggio dall'inventario di conformità di questo strumento a causa di disposizioni sovrapposte con il GDPR.
 
@@ -188,20 +185,20 @@ La valutazione GDPR è costituita dalle sezioni seguenti:
 | Mitigazione dei rischi e sicurezza delle informazioni | <ol><li>Si usano strumenti per analizzare i dati non strutturati? </li><li>Tutti i server sono aggiornati e si utilizzano firewall per proteggerli? </li><li>Eseguire backup regolari dei server? </li><li>Si monitorano attivamente le perdite di dati? </li><li>Crittografare i dati in pausa e in trasmissione? </li></ol>|
 | Gestione dei criteri | <ol><li>Come si gestiscono le regole aziendali di binding (BCR)? </li><li>Tenere traccia del consenso per i dati? </li><li> Su una scala da 1 a 5, 5 completamente coperti, i contratti riguardano le classificazioni dei dati e i requisiti di gestione? </li><li>Si dispone e si testa regolarmente un piano di risposta agli incidenti? </li><li>Quale criterio viene utilizzato per gestire l'accesso? </li></ol>|
 |||
- 
-## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Passaggio 3: Identificare i tipi di informazioni riservate che si verificano nell'Microsoft 365 locale. 
 
-Questo passaggio prevede l'identificazione di particolari tipi di informazioni riservate soggetti a controlli normativi specifici, nonché l'occorrenza di tali tipi nell'ambiente Microsoft 365 locale. 
+## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Passaggio 3: Identificare i tipi di informazioni riservate che si verificano nell'Microsoft 365 locale.
 
-Trovare contenuto nell'ambiente contenente dati personali può essere un'attività formidabile, che in precedenza prevedeva una combinazione di ricerca di conformità, eDiscovery, Advanced eDiscovery, DLP e controllo. 
+Questo passaggio prevede l'identificazione di particolari tipi di informazioni riservate soggetti a controlli normativi specifici, nonché l'occorrenza di tali tipi nell'ambiente Microsoft 365 locale.
+
+Trovare contenuto nell'ambiente contenente dati personali può essere un'attività formidabile, che in precedenza prevedeva una combinazione di ricerca di conformità, eDiscovery, Advanced eDiscovery, DLP e controllo.
 
 Con la nuova soluzione **classificazione** dei dati nell'interfaccia di amministrazione di Conformità Microsoft, questo è diventato molto più semplice con la funzionalità [Esplora](../compliance/data-classification-content-explorer.md) contenuto, che funziona con tipi di informazioni riservate incorporati o personalizzati, inclusi quelli relativi ai dati personali.
- 
+
 ### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
 
 L'interfaccia di amministrazione di Conformità Microsoft viene precaricata con oltre 100 tipi di informazioni riservate, la maggior parte dei quali correlati all'identificazione e all'individuazione dei dati personali. Questi tipi di informazioni riservate predefiniti consentono di identificare e proteggere numeri di carta di credito, numeri di conto corrente bancario, numeri di passaporto e altro ancora, in base a modelli definiti da un'espressione regolare (regex) o da una funzione. Per altre informazioni, vedere [Elementi cercati dai tipi di informazioni sensibili](../compliance/sensitive-information-type-entity-definitions.md).
 
-Se è necessario identificare e proteggere un tipo specifico dell'organizzazione o regionale di elementi sensibili, ad esempio un formato personalizzato per gli ID dei dipendenti o altre informazioni personali non già coperte da un tipo di informazioni riservate predefinito, è possibile creare un tipo di informazioni riservate personalizzato con questi metodi: 
+Se è necessario identificare e proteggere un tipo specifico dell'organizzazione o regionale di elementi sensibili, ad esempio un formato personalizzato per gli ID dei dipendenti o altre informazioni personali non già coperte da un tipo di informazioni riservate predefinito, è possibile creare un tipo di informazioni riservate personalizzato con questi metodi:
 
 - PowerShell
 - Regole personalizzate con corrispondenza esatta dei dati (EDM)
@@ -220,10 +217,10 @@ Per ulteriori informazioni, vedere questi articoli:
 ### <a name="content-explorer"></a>Esplora contenuto
 
 Uno strumento importante per determinare l'occorrenza di elementi sensibili nell'ambiente è il nuovo [Esplora](../compliance/data-classification-content-explorer.md) contenuto nell'interfaccia di amministrazione Microsoft 365 conformità. Si tratta di uno strumento automatizzato per l'analisi iniziale e continua dell'intero abbonamento Microsoft 365 per l'occorrenza di tipi di informazioni riservate e la visualizzazione dei risultati.
- 
+
 Il nuovo strumento Esplora contenuto consente di identificare rapidamente le posizioni degli elementi sensibili nell'ambiente, utilizzando tipi di informazioni riservate incorporati o personalizzati. Ciò può comportare la definizione di un processo e la responsabilità assegnata di analizzare regolarmente la presenza e la posizione di elementi sensibili.
 
-Insieme agli altri passaggi evidenziati in questo articolo, questo rappresenta un punto di partenza per identificare l'esposizione al rischio globale, la preparazione e la posizione degli elementi sensibili da proteggere tramite la configurazione e il monitoraggio Microsoft 365 pianificazione. 
+Insieme agli altri passaggi evidenziati in questo articolo, questo rappresenta un punto di partenza per identificare l'esposizione al rischio globale, la preparazione e la posizione degli elementi sensibili da proteggere tramite la configurazione e il monitoraggio Microsoft 365 pianificazione.
 
 ### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>Altri metodi per identificare i dati personali nell'ambiente
 

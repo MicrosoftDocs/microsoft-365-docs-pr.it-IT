@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: c94b387bbd73e2c4f9b3de243131ae023ddb4cb8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b424b4f611f0553de4b7129d2c0b63cefbdeeab3
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222526"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229360"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Verso l'identità e oltre: il punto di vista di un architetto
 
@@ -50,7 +50,7 @@ Non ignorare questa sezione. Spesso è necessario tornare a questi argomenti, an
 Purtroppo, la lingua non è uno strumento preciso. Spesso usiamo la stessa parola per indicare concetti diversi o parole diverse per indicare lo stesso concetto. Questo diagramma viene spesso usato di seguito per stabilire una terminologia di base e un "modello di gerarchia".
 <br><br>
 
-![Illustrazione di tenant, sottoscrizione, servizio e dati](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)  
+![Illustrazione di tenant, sottoscrizione, servizio e dati](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
 
 <br>
 
@@ -98,7 +98,7 @@ XYZ SaaS supporta il provisioning just-in-time (JIT), perché mi stai richiedend
 
 [Sincronizzazione hash delle](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization) password (PHS) e [autenticazione pass-through](/azure/active-directory/hybrid/how-to-connect-pta-how-it-works) (PTA) e [federazione](/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
 
-In genere c'è un acceso [confronto sulla](/azure/active-directory/hybrid/choose-ad-authn) federazione. Più semplice in genere è meglio e quindi usare PHS a meno che non si abbia un buon motivo per non usarlo. È inoltre possibile configurare metodi di autenticazione diversi per domini DNS diversi nello stesso tenant. 
+In genere c'è un acceso [confronto sulla](/azure/active-directory/hybrid/choose-ad-authn) federazione. Più semplice in genere è meglio e quindi usare PHS a meno che non si abbia un buon motivo per non usarlo. È inoltre possibile configurare metodi di autenticazione diversi per domini DNS diversi nello stesso tenant.
 
 Alcuni clienti abilitano la federazione + PHS principalmente per:
 
@@ -132,14 +132,14 @@ La combinazione di tutti questi segnali consente criteri dinamici come questi:
 
 Se si accetta questa definizione estesa di autorizzazione, è necessario implementare soluzioni aggiuntive. Le soluzioni implementate dipendono dal livello di dinamicità del criterio e dalle minacce a cui assegnare la priorità. Alcuni esempi di tali sistemi sono:
 
-- [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
+- [Azure AD Identity Protection](/azure/active-directory/identity-protection/)
 - [Microsoft Defender per identità](/azure-advanced-threat-protection/)
 - [Microsoft Defender ATP](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender per Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [Microsoft Defender per Office 365](../security/office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
-- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
-- [Microsoft Information Protection](../compliance/information-protection.md?view=o365-worldwide) (MIP)
+- [Microsoft Information Protection](../compliance/information-protection.md) (MIP)
 - [Azure Sentinel](/azure/sentinel/)
 
 Naturalmente, oltre ad Azure AD, diversi servizi e applicazioni dispongono di modelli di autorizzazione specifici. Alcuni di questi vengono descritti più avanti nella sezione delega.
@@ -154,11 +154,11 @@ Don't Panic! Questo non significa che Exchange deprecato (o SharePoint e così v
 
 ![Allegare un file a un messaggio di posta elettronica](../media/solutions-architecture-center/modern-attachments.png)
 
-Osservando il client Outlook è possibile vedere molti servizi "connessi" come parte di questa esperienza, non solo Exchange. Sono inclusi Azure AD, Microsoft Search, App, Profilo, conformità e Office 365 gruppi. 
+Osservando il client Outlook è possibile vedere molti servizi "connessi" come parte di questa esperienza, non solo Exchange. Sono inclusi Azure AD, Microsoft Search, app, profilo, conformità e Office 365 gruppi.
 
 ![Outlook interfaccia utente con callout](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
-Per informazioni [Microsoft Fluid Framework'anteprima](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268) delle funzionalità future. In anteprima ora, posso leggere e rispondere a Teams conversazioni direttamente in Outlook. Infatti, il [Teams client](https://products.office.com/microsoft-teams/download-app) è uno degli esempi più importanti di questa strategia. 
+Per informazioni [Microsoft Fluid Framework'anteprima](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268) delle funzionalità future. In anteprima ora, posso leggere e rispondere a Teams conversazioni direttamente in Outlook. Infatti, il [Teams client](https://products.office.com/microsoft-teams/download-app) è uno degli esempi più importanti di questa strategia.
 
 Nel complesso, è sempre più difficile tracciare una linea chiara tra Office 365 e altri servizi nei cloud Microsoft. Lo vedo come un grande vantaggio per i clienti perché possono trarre vantaggio dall'innovazione totale in tutto ciò che facciamo anche se usano un componente. Molto interessante e ha implicazioni di vasta portata per molti clienti.
 
@@ -182,10 +182,10 @@ Alcuni clienti scelgono di utilizzare più tenant. Questa dovrebbe essere una de
 
 - Struttura aziendale di tipo holding in cui non è necessaria una facile collaborazione tra entità diverse e sono presenti forti esigenze amministrative e di isolamento.
 - Dopo un'acquisizione, viene presa una decisione aziendale per mantenere separate due entità.
-- Simulazione dell'ambiente di un cliente che non modifica l'ambiente di produzione del cliente. 
+- Simulazione dell'ambiente di un cliente che non modifica l'ambiente di produzione del cliente.
 - Sviluppo di software per i clienti.
 
-In questi scenari multi-tenant, i clienti spesso desiderano mantenere una configurazione uguale tra i tenant o segnalare le modifiche alla configurazione e le derivazioni. Questo spesso significa passare dalle modifiche manuali alla configurazione come codice. Il supporto di Microsoft Premiere offre un workshop per questi tipi di requisiti in base a questo IP pubblico: [https://Microsoft365dsc.com](https://Microsoft365dsc.com) .
+In questi scenari multi-tenant, i clienti spesso desiderano mantenere una configurazione uguale tra i tenant o segnalare le modifiche alla configurazione e le derivazioni. Questo spesso significa passare dalle modifiche manuali alla configurazione come codice. Il supporto di Microsoft Premiere offre un workshop per questi tipi di requisiti in base a questo IP pubblico: <https://Microsoft365dsc.com> .
 
 ### <a name="multi-geo"></a>Multi-Geo
 
@@ -195,7 +195,7 @@ To [Multi-Geo](../enterprise/microsoft-365-multi-geo.md) or not to Multi-Geo, th
 - Non è una soluzione per la conformità [al GDPR.](https://www.microsoft.com/trust-center/privacy/gdpr-overview) Il GDPR non si concentra sulla sovranità dei dati o sulle posizioni di archiviazione. Esistono altri framework di conformità per questo.
 - Non risolve la delega dell'amministrazione (vedi sotto) o [le barriere di informazione](../compliance/information-barriers.md).
 - Non è uguale a multi-tenant e richiede flussi di lavoro [di provisioning degli utenti](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) aggiuntivi.
-- Non sposta [il tenant](../enterprise/moving-data-to-new-datacenter-geos.md) (Azure AD) in un'altra area geografica. 
+- Non sposta [il tenant](../enterprise/moving-data-to-new-datacenter-geos.md) (Azure AD) in un'altra area geografica.
 
 ## <a name="delegation-of-administration"></a>Delega dell'amministrazione
 
@@ -203,15 +203,15 @@ Nella maggior parte delle organizzazioni di grandi dimensioni, la separazione de
 
 ### <a name="azure-ad-and-microsoft-365-admin-centers"></a>Azure AD e le Microsoft 365 di amministrazione
 
-Esiste un elenco lungo e crescente di [ruoli incorporati.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Ogni ruolo è costituito da un elenco di autorizzazioni di ruolo raggruppate per consentire l'esecuzione di azioni specifiche. Queste autorizzazioni sono disponibili nella scheda "Descrizione" all'interno di ogni ruolo. In alternativa, puoi vedere una versione più leggibile in Microsoft 365 Admin Center. Le definizioni per i ruoli predefiniti non possono essere modificate. In genere, raggruppare questi elementi in tre categorie:
+Esiste un elenco lungo e crescente di [ruoli incorporati.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Ogni ruolo è costituito da un elenco di autorizzazioni di ruolo raggruppate per consentire l'esecuzione di azioni specifiche. Queste autorizzazioni sono disponibili nella scheda "Descrizione" all'interno di ogni ruolo. In alternativa, puoi vedere una versione più leggibile in Amministrazione Microsoft 365 Center. Le definizioni per i ruoli predefiniti non possono essere modificate. In genere, raggruppare questi elementi in tre categorie:
 
-- **Amministratore globale:** questo ruolo "tutto potente" deve essere [altamente protetto](../enterprise/protect-your-global-administrator-accounts.md) come in altri sistemi. I consigli tipici includono: nessuna assegnazione permanente e uso di Azure AD Privileged Identity Management (PIM); autenticazione avanzata; E così via. È interessante notare che questo ruolo non consente di accedere a tutti gli elementi per impostazione predefinita. In genere, vedo confusione sull'accesso di conformità e l'accesso di Azure, descritto più avanti. Tuttavia, questo ruolo può sempre assegnare l'accesso ad altri servizi nel tenant. 
+- **Amministratore globale:** questo ruolo "tutto potente" deve essere [altamente protetto](../enterprise/protect-your-global-administrator-accounts.md) come in altri sistemi. I consigli tipici includono: nessuna assegnazione permanente e uso di Azure AD Privileged Identity Management (PIM); autenticazione avanzata; E così via. È interessante notare che questo ruolo non consente di accedere a tutti gli elementi per impostazione predefinita. In genere, vedo confusione sull'accesso di conformità e l'accesso di Azure, descritto più avanti. Tuttavia, questo ruolo può sempre assegnare l'accesso ad altri servizi nel tenant.
 - **Amministratori di servizi specifici:** alcuni servizi (Exchange, SharePoint, Power BI e così via) utilizzano ruoli di amministrazione di alto livello da Azure AD. Questo non è coerente in tutti i servizi e più ruoli specifici del servizio sono descritti più avanti.
 - **Funzionale:** esiste un lungo elenco (e in crescita) di ruoli incentrati su operazioni specifiche (guest inviter e così via). Periodicamente, ne vengono aggiunte di più in base alle esigenze dei clienti.
 
 Non è possibile delegare tutto (anche se il gap sta diminuendo), il che significa che a volte è necessario utilizzare il ruolo di amministratore globale. È consigliabile considerare la configurazione come codice e l'automazione anziché l'appartenenza degli utenti a questo ruolo.
 
-**Nota:** l Microsoft 365'interfaccia di amministrazione di Azure AD ha un'interfaccia più intuitiva, ma presenta un sottoinsieme di funzionalità rispetto all'esperienza di amministrazione di Azure AD. Entrambi i portali usano gli stessi ruoli di Azure AD, quindi le modifiche si verificano nella stessa posizione. Suggerimento: se vuoi un'interfaccia utente di amministrazione incentrata sulla gestione delle identità senza tutta la confusione di Azure, usa [https://aad.portal.azure.com](https://aad.portal.azure.com) . 
+**Nota:** il interfaccia di amministrazione di Microsoft 365 ha un'interfaccia più intuitiva, ma ha un sottoinsieme di funzionalità rispetto all'esperienza di amministrazione di Azure AD. Entrambi i portali usano gli stessi ruoli di Azure AD, quindi le modifiche si verificano nella stessa posizione. Suggerimento: se vuoi un'interfaccia utente di amministrazione incentrata sulla gestione delle identità senza tutta la confusione di Azure, usa <https://aad.portal.azure.com> .
 
 Qual è il nome? Non fare supposizioni dal nome del ruolo. La lingua non è uno strumento molto preciso. L'obiettivo deve essere definire le operazioni che devono essere delegate prima di vedere quali ruoli sono necessari. L'aggiunta di qualcuno al ruolo "Lettore sicurezza" non fa in modo che vedano le impostazioni di sicurezza in tutti gli elementi.
 
@@ -221,7 +221,7 @@ Un'altra domanda comune è la possibilità di ambito dei ruoli in un sottoinsiem
 
 Oggi, tutti questi ruoli richiedono l'appartenenza diretta (o l'assegnazione dinamica se si usa [Azure AD PIM](/azure/active-directory/privileged-identity-management/)). Ciò significa che i clienti devono gestire questi elementi direttamente in Azure AD e non possono essere basati sull'appartenenza a un gruppo di sicurezza. I'm not a fan of creating scripts to manage these as it would need to run with elevated rights. In genere consiglio l'integrazione delle API con sistemi di processo come ServiceNow o l'uso di strumenti di governance dei partner come Saviynt. È in corso un lavoro di progettazione per risolvere questo problema nel tempo.
 
-Ho [menzionato Azure AD PIM](/azure/active-directory/privileged-identity-management/) alcune volte. Esiste una soluzione PAM [(Privileged Access Management)](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services) Microsoft Identity Manager (MIM) corrispondente per i controlli locali. È anche consigliabile esaminare [Privileged Access Workstations](/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) e [Azure AD Identity Governance](/azure/active-directory/governance/identity-governance-overview). Esistono anche diversi strumenti di terze parti, che possono abilitare l'elevazione dei ruoli just-in-time, just-enough e dinamica. Ciò fa in genere parte di una discussione più ampia per la protezione di un ambiente. 
+Ho [menzionato Azure AD PIM](/azure/active-directory/privileged-identity-management/) alcune volte. Esiste una soluzione PAM [(Privileged Access Management)](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services) Microsoft Identity Manager (MIM) corrispondente per i controlli locali. È anche consigliabile esaminare [Privileged Access Workstations](/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) e [Azure AD Identity Governance](/azure/active-directory/governance/identity-governance-overview). Esistono anche diversi strumenti di terze parti, che possono abilitare l'elevazione dei ruoli just-in-time, just-enough e dinamica. Ciò fa in genere parte di una discussione più ampia per la protezione di un ambiente.
 
 A volte gli scenari chiamano l'aggiunta di un utente esterno a un ruolo (vedere la sezione multi-tenant, sopra). Funziona correttamente. [Azure AD B2B](/azure/active-directory/b2b/) è un altro argomento di grandi dimensioni e divertente da illustrare ai clienti, ad esempio in un altro articolo.
 
@@ -231,7 +231,7 @@ A volte gli scenari chiamano l'aggiunta di un utente esterno a un ruolo (vedere 
 
 In un certo senso, si tratta di un'evoluzione del modello Exchange dei gruppi di ruoli. Tuttavia, Exchange Online dispone di una propria [interfaccia di gestione dei gruppi di](/exchange/permissions-exo) ruoli. Alcuni gruppi di ruoli in Exchange Online sono bloccati e gestiti da Azure AD o dal Centro sicurezza e conformità &, ma altri potrebbero avere nomi uguali o simili e sono gestiti in Exchange Online (aggiungendo confusione). Ti consigliamo di evitare di usare l'Exchange Online utente a meno che non siano necessari ambiti per la Exchange gestione.
 
-Non è possibile creare ruoli personalizzati. I ruoli sono definiti dai servizi creati da Microsoft e aumentano man quando vengono introdotti nuovi servizi. Questo concetto è simile ai [ruoli definiti dalle applicazioni](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. Quando vengono abilitati nuovi servizi, spesso è necessario creare nuovi gruppi di ruoli per concedere o delegare l'accesso a tali servizi (ad esempio, gestione [dei rischi insider).](../compliance/insider-risk-management-configure.md?view=o365-worldwide)
+Non è possibile creare ruoli personalizzati. I ruoli sono definiti dai servizi creati da Microsoft e aumentano man quando vengono introdotti nuovi servizi. Questo concetto è simile ai [ruoli definiti dalle applicazioni](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. Quando vengono abilitati nuovi servizi, spesso è necessario creare nuovi gruppi di ruoli per concedere o delegare l'accesso a tali servizi (ad esempio, gestione [dei rischi insider).](../compliance/insider-risk-management-configure.md)
 
 Questi gruppi di ruoli richiedono anche l'appartenenza diretta e non possono contenere gruppi di Azure AD. Purtroppo, oggi questi gruppi di ruoli non sono supportati da Azure AD PIM. Come i ruoli di Azure AD, tendo a consigliare la gestione di questi elementi tramite API o un prodotto di governance dei partner come Saviynt o altri.
 
@@ -243,31 +243,37 @@ Vale la pena notare che i controlli attualmente gestiti tramite il Centro sicure
 
 Come indicato in precedenza, molti clienti desiderano ottenere un modello di delega più granulare. Esempio comune: "Gestire il servizio XYZ solo per gli utenti e le posizioni di Divisione X" (o un'altra dimensione). La possibilità di eseguire questa operazione dipende da ogni servizio e non è coerente tra servizi e funzionalità. Inoltre, ogni servizio può avere un modello RBAC distinto e univoco. Invece di discutere di tutti questi elementi (ci sarà un'eternità), aggiungo collegamenti pertinenti per ogni servizio. Questo non è un elenco completo, ma ti permetterà di iniziare.
 
-- **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](/exchange/permissions-exo/permissions-exo) 
-- **SharePoint Online** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](/sharepoint/manage-site-collection-administrators) 
-- **Microsoft Teams**  -  [https://docs.microsoft.com/microsoftteams/itadmin-readiness](/microsoftteams/itadmin-readiness)
-- **eDiscovery** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](../compliance/index.yml) 
-  + **Filtro autorizzazioni**  -  [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](../compliance/index.yml)
-  + **Limiti di conformità**  -  [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](../compliance/set-up-compliance-boundaries.md)
-  + **Advanced eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](../compliance/overview-ediscovery-20.md)
-- **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](/yammer/manage-yammer-users/manage-yammer-admins) 
-- **Multi-geo** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](../enterprise/add-a-sharepoint-geo-admin.md) 
-- **Dynamics 365** - [https://docs.microsoft.com/dynamics365/](/dynamics365/) <br>
-  Nota: questo collegamento è alla radice della documentazione. Esistono più tipi di servizi con varianti nel modello di amministrazione/delega.
-- **Power Platform**  -  [https://docs.microsoft.com/power-platform/admin/admin-documentation](/power-platform/admin/admin-documentation)
-  + **Power Apps**  -  [https://docs.microsoft.com/power-platform/admin/wp-security](/power-platform/admin/wp-security) <br>
-    Nota: esistono più tipi con varianti nei modelli di amministrazione/delega.
-  + **Power Automate**  -  [https://docs.microsoft.com/power-automate/environments-overview-admin](/power-automate/environments-overview-admin)
-  + **Power BI**  -  [https://docs.microsoft.com/power-bi/service-admin-governance](/power-bi/service-admin-governance) <br>
-Nota: la sicurezza e la delega della piattaforma dati (che Power BI è un componente) è un'area complessa.
-- **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](/mem/intune/fundamentals/role-based-access-control)
-- **Microsoft Defender per Endpoint**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
-- **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
-- **Stream**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role](/stream/assign-administrator-user-role)
-- **Barriere in fatto di informazioni**  -  [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](../compliance/information-barriers.md)
+- **Exchange Online** - (/exchange/permissions-exo/permissions-exo)
+- **SharePoint Online** - (/sharepoint/manage-site-collection-administrators)
+- **Microsoft Teams** - (/microsoftteams/itadmin-readiness)
+- **eDiscovery** - (.. /compliance/index.yml)
+  - **Filtro autorizzazioni** - (.. /compliance/index.yml)
+  - **Limiti di conformità** - (.. /compliance/set-up-compliance-boundaries.md)
+  - **Advanced eDiscovery** - (.. /compliance/overview-ediscovery-20.md)
+- **Yammer** - (/yammer/manage-yammer-users/manage-yammer-admins)
+- **Multi-geo** - (.. /enterprise/add-a-sharepoint-geo-admin.md)
+- **Dynamics 365** – (/dynamics365/)
 
-Per il resto, la ricerca in Documenti è stata molto buona ultimamente - [https://docs.microsoft.com/](../compliance/information-barriers.md) . 
+  Nota: questo collegamento è alla radice della documentazione. Esistono più tipi di servizi con varianti nel modello di amministrazione/delega.
+
+- **Power Platform** - (/power-platform/admin/admin-documentation)
+  - **Power Apps** - (/power-platform/admin/wp-security)
+
+    Nota: esistono più tipi con varianti nei modelli di amministrazione/delega.
+
+  - **Power Automate** - (/power-automate/environments-overview-admin)
+  - **Power BI** - (/power-bi/service-admin-governance)
+
+    Nota: la sicurezza e la delega della piattaforma dati (che Power BI è un componente) è un'area complessa.
+
+- **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control)
+- **Microsoft Defender for Endpoint** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
+- **Microsoft 365 Defender** - (.. /security/defender/m365d-permissions.md)
+- **Microsoft Cloud App Security** - (/cloud-app-security/manage-admins)
+- **Stream** - (/stream/assign-administrator-user-role)
+- **Ostacoli alle informazioni** - (.. /compliance/information-barriers.md)
+
+Per il resto, la ricerca in Documenti è stata molto buona ultimamente - <https://docs.microsoft.com/> .
 
 ### <a name="activity-logs"></a>Log attività
 
@@ -278,37 +284,37 @@ Di seguito sono Microsoft 365 di log a cui si accede tramite altre API:
 - [Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (attività non correlate Office 365)
 - [Exchange Verifica messaggi](/powershell/module/exchange/get-messagetrace)
 - Sistemi threat/UEBA descritti in precedenza (ad esempio, Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender for Endpoint e così via)
-- [Protezione delle informazioni Microsoft](../compliance/data-classification-activity-explorer.md?view=o365-worldwide)
+- [Microsoft Information Protection](../compliance/data-classification-activity-explorer.md)
 - [Microsoft Defender per endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
-È importante identificare innanzitutto tutte le origini dei registri necessarie per un programma di sicurezza e conformità. Tenere inoltre presente che log diversi hanno limiti di conservazione in linea diversi. 
+È importante identificare innanzitutto tutte le origini dei registri necessarie per un programma di sicurezza e conformità. Tenere inoltre presente che log diversi hanno limiti di conservazione in linea diversi.
 
-Dal punto di vista della delega dell'amministratore, la maggior parte Microsoft 365 di attività non dispone di un modello RBAC incorporato. Se si dispone dell'autorizzazione per visualizzare un registro, è possibile visualizzare tutti gli elementi in esso presenti. Un esempio comune di requisito del cliente è: "Voglio essere in grado di eseguire query sull'attività solo per gli utenti dell'Unione Europea" (o un'altra dimensione). Per ottenere questo requisito, è necessario trasferire i log in un altro servizio. Nel cloud Microsoft, è consigliabile trasferirlo in [Azure Sentinel](/azure/sentinel/overview) o [Log Analytics.](/azure/azure-monitor/learn/quick-create-workspace) 
+Dal punto di vista della delega dell'amministratore, la maggior parte Microsoft 365 di attività non dispone di un modello RBAC incorporato. Se si dispone dell'autorizzazione per visualizzare un registro, è possibile visualizzare tutti gli elementi in esso presenti. Un esempio comune di requisito del cliente è: "Voglio essere in grado di eseguire query sull'attività solo per gli utenti dell'Unione Europea" (o un'altra dimensione). Per ottenere questo requisito, è necessario trasferire i log in un altro servizio. Nel cloud Microsoft, è consigliabile trasferirlo in [Azure Sentinel](/azure/sentinel/overview) o [Log Analytics.](/azure/azure-monitor/learn/quick-create-workspace)
 
 Diagramma di alto livello:
 
-![Diagramma delle origini dei log per un programma di sicurezza e conformità](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![Diagramma delle origini dei log per un programma di sicurezza e conformità](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
 
 Il diagramma precedente rappresenta funzionalità integrate per l'invio di log all'hub eventi e/o Archiviazione di Azure e/o ad Azure Log Analytics.The diagram above represents built-in capabilities to send logs to Event Hub and/or Archiviazione di Azure and/or Azure Log Analytics. Non tutti i sistemi includono ancora questa funzionalità. Esistono tuttavia altri approcci per inviare questi log allo stesso repository. Ad esempio, vedere [Protezione dei Teams con Azure Sentinel.](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761)
 
 La combinazione di tutti i log in un'unica posizione di archiviazione include vantaggi aggiunti, ad esempio correlazioni incrociate, tempi di conservazione personalizzati, aumento dei dati necessari per supportare il modello RBAC e così via. Una volta che i dati sono in questo sistema di archiviazione, è possibile creare un dashboard di Power BI (o un altro tipo di visualizzazione) con un modello RBAC appropriato.
 
-I log non devono essere indirizzati a una sola posizione. Potrebbe anche essere utile integrare Office 365 [log](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) con Microsoft Cloud App Security o un modello RBAC personalizzato in [Power BI](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide). Archivi diversi hanno vantaggi e gruppi di destinatari diversi.
+I log non devono essere indirizzati a una sola posizione. Potrebbe anche essere utile integrare Office 365 [log](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) con Microsoft Cloud App Security o un modello RBAC personalizzato in [Power BI](../admin/usage-analytics/usage-analytics.md). Archivi diversi hanno vantaggi e gruppi di destinatari diversi.
 
-Vale la pena ricordare che esiste un sistema di analisi incorporato molto ricco per sicurezza, minacce, vulnerabilità e così via in un servizio denominato [Microsoft 365 Defender.](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
+Vale la pena ricordare che esiste un sistema di analisi incorporato molto ricco per sicurezza, minacce, vulnerabilità e così via in un servizio denominato [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md).
 
 Molti clienti di grandi dimensioni desiderano trasferire questi dati di registro in un sistema di terze parti(ad esempio, SIEM). Esistono diversi approcci a questo scopo, ma in generale [Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) e Graph sono buoni punti di partenza. [](/graph/security-integration)
 
 ### <a name="azure"></a>Azure
 
-Viene spesso chiesto se esiste un modo per separare i ruoli con privilegi elevati tra Azure AD, Azure e SaaS (ad esempio: Amministratore globale per Office 365 ma non Azure).  Non proprio.  L'architettura multi-tenant è necessaria se è necessaria una separazione amministrativa completa, ma ciò aggiunge [una complessità significativa](https://aka.ms/multi-tenant-user) (vedere sopra). Tutti questi servizi fanno parte dello stesso limite di sicurezza/identità (osservare il modello gerarchico precedente).  
+Viene spesso chiesto se esiste un modo per separare i ruoli con privilegi elevati tra Azure AD, Azure e SaaS (ad esempio: Amministratore globale per Office 365 ma non Azure).  Non proprio.  L'architettura multi-tenant è necessaria se è necessaria una separazione amministrativa completa, ma ciò aggiunge [una complessità significativa](https://aka.ms/multi-tenant-user) (vedere sopra). Tutti questi servizi fanno parte dello stesso limite di sicurezza/identità (osservare il modello gerarchico precedente).
 
 È importante comprendere le relazioni tra vari servizi nello stesso tenant. Sto lavorando con molti clienti che stanno creando soluzioni aziendali che si estendono su Azure, Office 365 e Power Platform (e spesso anche servizi cloud locali e di terze parti). Un esempio comune:
 
 1. Voglio collaborare a un set di documenti/immagini/etc (Office 365)
 2. Inviare ognuno di essi tramite un processo di approvazione (Power Platform)
-3.  Dopo l'approvazione di tutti i componenti, assemblare questi componenti in [un'API Microsoft Graph](/azure/active-directory/develop/microsoft-graph-intro) unificato è il tuo migliore amico.  Non impossibile, ma significativamente più complesso progettare una soluzione che si estende [su più tenant.](/azure/active-directory/develop/single-and-multi-tenant-apps)
+3. Dopo l'approvazione di tutti i componenti, assemblare questi componenti in [un'API Microsoft Graph](/azure/active-directory/develop/microsoft-graph-intro) unificato è il tuo migliore amico.  Non impossibile, ma significativamente più complesso progettare una soluzione che si estende [su più tenant.](/azure/active-directory/develop/single-and-multi-tenant-apps)
 
 Azure Role-Based Access Control (RBAC) consente una gestione degli accessi granulare per Azure. Utilizzando RBAC, è possibile gestire l'accesso alle risorse concedendo agli utenti il numero minimo di autorizzazioni necessarie per eseguire i propri processi. I dettagli non sono nell'ambito di questo documento, ma per ulteriori informazioni sul controllo degli accessi in base al ruolo, vedere Che cos'è il controllo di accesso basato sui ruoli [(RBAC) in Azure?](/azure/role-based-access-control/overview) Il controllo degli accessi in base al ruolo è importante, ma solo parte delle considerazioni sulla governance per Azure. [Cloud Adoption Framework è](/azure/cloud-adoption-framework/govern/) un ottimo punto di partenza per saperne di più. Mi piace il modo in cui il mio amico, Andres Ravinet, guida i clienti passo dopo passo, anche se diversi componenti per decidere l'approccio. La visualizzazione di alto livello per vari elementi (non buona come il processo per arrivare al modello di cliente effettivo) è simile alla seguente:
 
