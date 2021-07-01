@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Microsoft 365 (detto anche controllo delle cassette postali predefinito o controllo delle cassette postali attivato per impostazione predefinita). Ciò significa che determinate azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono registrate automaticamente in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 0fd15ffd26ad28b9e8b4f2b627ff26206983f21e
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 56207a21d9a13edb04a07234764257d3c27f2d0f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108092"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226780"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -92,7 +92,7 @@ I tipi di accesso classificano l'utente che ha fatto le azioni di controllo sull
 
 Nella tabella seguente vengono descritte le azioni delle cassette postali disponibili nella registrazione di controllo delle cassette postali per le cassette postali utente e le cassette postali condivise.
 
-- Un segno di spunta ( ![Segno di spunta](../media/checkmark.png)) indica che l'azione della cassetta postale può essere registrata per il tipo di accesso (non tutte le azioni sono disponibili per tutti i tipi di accesso).
+- Un segno di spunta (![Segno di spunta](../media/checkmark.png)) indica che l'azione della cassetta postale può essere registrata per il tipo di accesso (non tutte le azioni sono disponibili per tutti i tipi di accesso).
 - Un asterisco ( ) dopo il segno di spunta indica che l'azione della cassetta postale viene registrata <sup>\*</sup> per impostazione predefinita per il tipo di accesso.
 - Tenere presente che un amministratore con autorizzazione accesso completo a una cassetta postale è considerato un delegato.
 

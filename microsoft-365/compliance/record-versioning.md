@@ -17,38 +17,38 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui record che semplificano l’implementazione di una soluzione di gestione dei record in Microsoft 365.
-ms.openlocfilehash: 5c828f06f2ce9e2bd18869f897f1f372c1a62f21
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 86fbd84e03263ca5d99e1bfe6ab572589dc98bbd
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471125"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226132"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usare il controllo delle versioni per aggiornare i record archiviati in SharePoint o OneDrive
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
->[!NOTE] 
+> [!NOTE]
 > Poiché i record normativi bloccano la modifica, il controllo delle versioni dei record non è disponibile per i record normativi.
 
 La possibilità di contrassegnare un documento come [record](records-management.md#records) e limitare le azioni che è possibile eseguire su di esso rappresenta un obiettivo essenziale per qualsiasi soluzione di gestione dei record. Tuttavia, la collaborazione potrebbe essere necessaria anche per le persone che creano versioni successive.
 
 Ad esempio, può capitare di contrassegnare come record un contratto di vendita, e che successivamente sia necessario aggiornare il contratto con nuovi termini e contrassegnare l'ultima versione come nuovo record conservando comunque la versione precedente. Per scenari di questo tipo, SharePoint e OneDrive supportano il *controllo delle versioni dei record*. Le cartelle del blocco appunti di OneNote non supportano il controllo delle versioni dei record.
 
-Per usare il controllo delle versioni dei record, è necessario prima di tutto [etichettare un documento e contrassegnarlo come record](declare-records.md). Una volta fatto ciò, accanto all'etichetta di conservazione viene visualizzata una proprietà del documento denominata *Stato del record*, con lo stato del record iniziale impostato su **Bloccato**. 
+Per usare il controllo delle versioni dei record, è necessario prima di tutto [etichettare un documento e contrassegnarlo come record](declare-records.md). Una volta fatto ciò, accanto all'etichetta di conservazione viene visualizzata una proprietà del documento denominata *Stato del record*, con lo stato del record iniziale impostato su **Bloccato**.
 
 È possibile eseguire le operazioni seguenti:
 
-  - **Modificare e conservare continuamente come record singole versioni del documento, sbloccando e bloccando la proprietà Stato del record.** Solo quando la proprietà **Stato del record** è impostata su **Bloccato** è una nuova versione del record conservata. Questo consente di ridurre il rischio di mantenere le versioni e le copie inutili del documento.
+- **Modificare e conservare continuamente come record singole versioni del documento, sbloccando e bloccando la proprietà Stato del record.** Solo quando la proprietà **Stato del record** è impostata su **Bloccato** è una nuova versione del record conservata. Questo consente di ridurre il rischio di mantenere le versioni e le copie inutili del documento.
 
-  - **Archiviare automaticamente i record in un archivio dei record sul posto all'interno della raccolta siti.** Ogni raccolta siti di SharePoint e OneDrive mantiene il contenuto nella propria raccolta di archiviazione. Le versioni dei record vengono archiviate nella cartella Record della raccolta.
+- **Archiviare automaticamente i record in un archivio dei record sul posto all'interno della raccolta siti.** Ogni raccolta siti di SharePoint e OneDrive mantiene il contenuto nella propria raccolta di archiviazione. Le versioni dei record vengono archiviate nella cartella Record della raccolta.
 
-  - **Conservare un documento sempre valido che contiene tutte le versioni.** Per impostazione predefinita, ogni documento di SharePoint e OneDrive ha una cronologia delle versioni disponibile nel menu dell’elemento. In questa cronologia delle versioni è possibile individuare facilmente le versioni record e visualizzare tali documenti.
+- **Conservare un documento sempre valido che contiene tutte le versioni.** Per impostazione predefinita, ogni documento di SharePoint e OneDrive ha una cronologia delle versioni disponibile nel menu dell’elemento. In questa cronologia delle versioni è possibile individuare facilmente le versioni record e visualizzare tali documenti.
 
 > [!TIP]
 > Quando si usa il controllo delle versioni dei record con un'etichetta di conservazione che include un'azione di eliminazione, è consigliabile configurare anche l'impostazione di conservazione **Avvia il periodo di conservazione in base a:** impostandola su **Quando gli elementi sono stati etichettati**. Con questa impostazione dell'etichetta, l'inizio del periodo di conservazione viene reimpostato per ogni nuova versione del record, in modo da garantire l'eliminazione delle versioni meno recenti prima di quelle più recenti.
 
-Il controllo delle versioni del record è automaticamente disponibile per qualsiasi documento con un'etichetta di conservazione che contrassegna l'elemento come record. Quando un utente visualizza le proprietà del documento tramite il riquadro dei dettagli, può cambiare lo **Stato del record** da **Bloccato** a **Sbloccato**. Questa azione crea un record nella cartella Record della raccolta di archiviazione, dove rimane fino alla fine del periodo di conservazione. 
+Il controllo delle versioni del record è automaticamente disponibile per qualsiasi documento con un'etichetta di conservazione che contrassegna l'elemento come record. Quando un utente visualizza le proprietà del documento tramite il riquadro dei dettagli, può cambiare lo **Stato del record** da **Bloccato** a **Sbloccato**. Questa azione crea un record nella cartella Record della raccolta di archiviazione, dove rimane fino alla fine del periodo di conservazione.
 
 Quando il documento è sbloccato, qualsiasi utente con autorizzazioni di modifica standard può modificare il file. Tuttavia, gli utenti non possono eliminare il file, perché è ancora considerato un record. Una volta completato il processo di modifica, l'utente può quindi impostare lo **Stato del record** da **Sbloccato** a **Bloccato**, che impedisce ulteriori modifiche in questo stato.
 <br/><br/>

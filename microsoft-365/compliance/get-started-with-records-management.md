@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Se è necessaria una soluzione di gestione dei record per Microsoft 365 che gestisca i contenuti di valore per obblighi legali, aziendali o normativi, di seguito vengono riportate alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 173086799e4ae7cec3192f95248f0a7f26a10552
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244345"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226576"
 ---
 # <a name="get-started-with-records-management"></a>Introduzione alla gestione dei record
 
@@ -30,14 +30,14 @@ ms.locfileid: "52244345"
 
 Pronto a iniziare a gestire i contenuti di valore dell'organizzazione per gli obblighi legali, aziendali o normativi usando una soluzione di gestione dei record in Microsoft 365? Per iniziare, usare le indicazioni seguenti:
 
-1. **Conoscere la soluzione di gestione dei record** e le azioni consentite o bloccate quando i documenti e i messaggi di posta elettronica vengono dichiarati come record: [Informazioni sulla gestione dei record](records-management.md). 
+1. **Conoscere la soluzione di gestione dei record** e le azioni consentite o bloccate quando i documenti e i messaggi di posta elettronica vengono dichiarati come record: [Informazioni sulla gestione dei record](records-management.md).
 
 2. **Conoscere le etichette di conservazione e il meccanismo di conservazione** per SharePoint ed Exchange, perché le etichette di conservazione vengono usate per dichiarare i record: [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
 
-3. **Creare il piano di archiviazione per le impostazioni e le azioni di conservazione** [importando un piano esistente](file-plan-manager.md#import-retention-labels-into-your-file-plan ) se disponibile oppure creare [nuove etichette di conservazione che dichiarano i record](declare-records.md).
+3. **Creare il piano di archiviazione per le impostazioni e le azioni di conservazione** [importando un piano esistente](file-plan-manager.md#import-retention-labels-into-your-file-plan) se disponibile oppure creare [nuove etichette di conservazione che dichiarano i record](declare-records.md).
 
-4. **Pubblicare e applicare le etichette di conservazione**. Le etichette di conservazione sono blocchi predefiniti riutilizzabili che possono essere usati in più criteri e incorporati nei flussi di lavoro degli utenti: 
-    
+4. **Pubblicare e applicare le etichette di conservazione**. Le etichette di conservazione sono blocchi predefiniti riutilizzabili che possono essere usati in più criteri e incorporati nei flussi di lavoro degli utenti:
+
     - [Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)
     - [Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)
 
@@ -49,9 +49,9 @@ Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vanta
 
 ## <a name="permissions-required-for-records-management"></a>Autorizzazioni necessarie per la gestione dei record
 
-Ai membri del team di conformità responsabili della gestione dei record è necessario assegnare autorizzazioni per il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). Per impostazione predefinita, l'amministratore del tenant (amministratore globale) ha accesso a questa posizione e può fornire l'accesso ai responsabili della conformità e ad altre persone senza concedere loro tutte le autorizzazioni di un amministratore del tenant. Per concedere queste autorizzazioni di amministrazione limitata, è consigliabile aggiungere gli utenti al gruppo di ruoli di amministratore **Gestione dei record**, che concede le autorizzazioni a tutte le funzionalità relative alla gestione record, tra cui [la revisione e verifica per l’eliminazione](disposition.md). 
+Ai membri del team di conformità responsabili della gestione dei record è necessario assegnare autorizzazioni per il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). Per impostazione predefinita, l'amministratore del tenant (amministratore globale) ha accesso a questa posizione e può fornire l'accesso ai responsabili della conformità e ad altre persone senza concedere loro tutte le autorizzazioni di un amministratore del tenant. Per concedere queste autorizzazioni di amministrazione limitata, è consigliabile aggiungere gli utenti al gruppo di ruoli di amministratore **Gestione dei record**, che concede le autorizzazioni a tutte le funzionalità relative alla gestione record, tra cui [la revisione e verifica per l’eliminazione](disposition.md).
 
-Per un ruolo di sola lettura, è possibile creare un nuovo gruppo di ruoli e aggiungere a questo gruppo il ruolo **Gestione dei record View-Only**. 
+Per un ruolo di sola lettura, è possibile creare un nuovo gruppo di ruoli e aggiungere a questo gruppo il ruolo **Gestione dei record View-Only**.
 
 Per altre informazioni su questi gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 

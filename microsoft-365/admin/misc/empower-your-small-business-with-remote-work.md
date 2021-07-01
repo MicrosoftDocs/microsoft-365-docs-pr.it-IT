@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Informazioni dettagliate, suggerimenti, risorse e indicazioni più recenti sul lavoro remoto per le aziende che usano Microsoft 365.
-ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: fb261fbb5b52e81861fde16f6effc12b0a232e80
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023738"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227920"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Aumentare la produttività di un'azienda di piccole dimensioni con il lavoro remoto
 
 Poiché le aziende si adattano alla crescente necessità di lavorare in remoto e connettersi virtualmente con i propri clienti, questo sito viene aggiornato con le informazioni, i suggerimenti, le risorse e le indicazioni più recenti sul lavoro remoto per le aziende che usano Microsoft 365.
 
->[!TIP]
->Non hai Microsoft_Teams? Ottieni 6 mesi di Microsoft Teams in Office gratuitamente (quando ti i iscriviti per 1 anno). Ottieni le tecnologie descritte in questo articolo come parte dell'offerta. Per informazioni dettagliate, vedi [Provare 1 mese gratuito.](https://aka.ms/SMBTeamsOffer)
+> [!TIP]
+> Non hai Microsoft_Teams? Ottieni 6 mesi di Microsoft Teams in Office gratuitamente (quando ti i iscriviti per 1 anno). Ottieni le tecnologie descritte in questo articolo come parte dell'offerta. Per informazioni dettagliate, vedi [Provare 1 mese gratuito.](https://aka.ms/SMBTeamsOffer)
 
 ## <a name="remote-work-for-your-small-business-video"></a>Lavoro remoto per la tua piccola azienda (video)
 
@@ -43,7 +43,7 @@ Hai già un abbonamento, ma devi configurarlo? Vedere [Microsoft 365 formazione 
 
 ## <a name="connect-with-employees-and-customers"></a>Connessione con dipendenti e clienti
 
-È comunque possibile connettersi con dipendenti, clienti, clienti e partner, anche se non è possibile incontrarsi faccia a faccia. Usa Microsoft Teams per continuare a lavorare e a connetterti con i tuoi clienti. 
+È comunque possibile connettersi con dipendenti, clienti, clienti e partner, anche se non è possibile incontrarsi faccia a faccia. Usa Microsoft Teams per continuare a lavorare e a connetterti con i tuoi clienti.
 
 ### <a name="meet-up-in-teams"></a>Incontrarsi in Teams
 
@@ -83,11 +83,11 @@ Per altre informazioni, vedi [Gestire i dispositivi.](../../business-video/secur
 
 L'hub della documentazione tecnica per Microsoft 365 Business viene aggiornato con nuove indicazioni sul lavoro remoto sicuro.
 
-Per informazioni dettagliate, [vedere Microsoft 365 Business risorse.](https://docs.microsoft.com/microsoft-365/business)
+Per informazioni dettagliate, [vedere Microsoft 365 Business resources](/microsoft-365/business).
 
-## <a name="need-to-ask-a-question"></a>Hai bisogno di porre una domanda? 
+## <a name="need-to-ask-a-question"></a>Hai bisogno di porre una domanda?
 
 Chiedi nel [forum Teams o](https://answers.microsoft.com/msteams/forum) nel forum Office [Admins](https://answers.microsoft.com).
 
 > [!NOTE]
-> La maggior parte delle attività in questo articolo e video può essere eseguita con una sottoscrizione a Microsoft 365 Business Basic (in precedenza Office 365 Business Essentials), ma alcune richiedono una sottoscrizione premium. 
+> La maggior parte delle attività in questo articolo e video può essere eseguita con una sottoscrizione a Microsoft 365 Business Basic (in precedenza Office 365 Business Essentials), ma alcune richiedono una sottoscrizione premium.

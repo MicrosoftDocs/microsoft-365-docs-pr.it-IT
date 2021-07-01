@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Informazioni sulle attività che consentono di iniziare rapidamente a utilizzare la conformità in Microsoft 365.
-ms.openlocfilehash: 3f93eb31800d158a33b1f3c0acdd48d650b2153e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 61a057c3666faae51a012dd9db2d4c63ded0f77a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113392"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227260"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Attività rapide per iniziare a usare il Centro conformità Microsoft 365
 
@@ -30,7 +30,7 @@ Dopo aver completato queste attività di conformità di base, è consigliabile e
 
 ## <a name="task-1-configure-compliance-permissions"></a>Attività 1: Configurare le autorizzazioni di conformità
 
-È importante gestire chi nell'organizzazione ha accesso al centro Microsoft 365 conformità per visualizzare il contenuto ed eseguire attività di gestione. Microsoft 365 fornisce ruoli amministrativi specifici per la conformità e per l'utilizzo degli strumenti inclusi nel Centro Microsoft 365 conformità.
+È importante gestire chi nell'organizzazione ha accesso al Centro conformità Microsoft 365 per visualizzare il contenuto ed eseguire attività di gestione. Microsoft 365 fornisce ruoli amministrativi specifici per la conformità e per l'utilizzo degli strumenti inclusi nella Centro conformità Microsoft 365.
 
 Per iniziare, assegnare autorizzazioni di conformità alle persone dell'organizzazione in modo che possano eseguire queste attività e impedire a persone non autorizzate di accedere ad aree esterne alle proprie responsabilità. Prima di iniziare a configurare e implementare soluzioni  di conformità incluse  in Microsoft 365, è necessario assicurarsi di aver assegnato le persone appropriate all'amministratore dei dati di conformità e ai ruoli di amministratore di conformità. Sarà inoltre necessario assegnare gli utenti al ruolo Azure Active Directory lettore globale per visualizzare i dati in Compliance Manager.
 
@@ -44,10 +44,10 @@ Per istruzioni dettagliate sulla configurazione delle autorizzazioni e sull'asse
 
 Per istruzioni dettagliate per iniziare a usare Compliance Manager, vedere [Introduzione a Compliance Manager.](compliance-manager-setup.md)
 
->[!IMPORTANT]
->La sicurezza e la conformità sono strettamente integrate per la maggior parte delle organizzazioni. È importante che l'organizzazione indirizzi le aree di sicurezza di base, protezione dalle minacce e gestione delle identità e degli accessi per fornire un approccio di difesa approfondito sia alla sicurezza che alla conformità.
+> [!IMPORTANT]
+> La sicurezza e la conformità sono strettamente integrate per la maggior parte delle organizzazioni. È importante che l'organizzazione indirizzi le aree di sicurezza di base, protezione dalle minacce e gestione delle identità e degli accessi per fornire un approccio di difesa approfondito sia alla sicurezza che alla conformità.
 >
->Controllare il [Microsoft 365 secure score](../security/defender/microsoft-secure-score.md) nel centro sicurezza Microsoft 365 e completare le attività descritte negli articoli seguenti:
+> Controllare il [Microsoft 365 secure score](../security/defender/microsoft-secure-score.md) nel centro sicurezza Microsoft 365 e completare le attività descritte negli articoli seguenti:
 >
 > - [Roadmap per la sicurezza - Priorità principali per i primi 30 giorni, 90 giorni e oltre](../security/office-365-security/security-roadmap.md)
 > - [Le 12 attività principali per i team di sicurezza per supportare il lavoro da casa](../security/top-security-tasks-for-remote-work.md)
@@ -56,7 +56,7 @@ Per istruzioni dettagliate per iniziare a usare Compliance Manager, vedere [Intr
 
 Dopo aver determinato lo stato corrente dell'organizzazione e chi può gestire le funzioni di conformità, il passaggio successivo consiste nel verificare di disporre dei dati per eseguire indagini di conformità e generare report per le attività di rete e utente nell'organizzazione. L'abilitazione del controllo è anche un prerequisito importante per le soluzioni di conformità trattate più avanti in questo articolo.
 
-Le informazioni dettagliate fornite dal log di controllo sono uno strumento utile per soddisfare i requisiti di conformità alle soluzioni che consentono di gestire e monitorare le aree di conformità che necessitano di miglioramenti. La registrazione di controllo deve essere abilitata prima che le attività siano registrate e che sia possibile eseguire ricerche nel log di controllo. Se abilitata, le attività degli utenti e degli amministratori dell'organizzazione vengono registrate nel log di controllo e conservate per 90 giorni e fino a un anno a seconda della licenza assegnata agli utenti.
+Insights forniti dal log di controllo sono uno strumento utile per soddisfare i requisiti di conformità alle soluzioni che consentono di gestire e monitorare le aree di conformità che necessitano di miglioramenti. La registrazione di controllo deve essere abilitata prima che le attività siano registrate e che sia possibile eseguire ricerche nel log di controllo. Se abilitata, le attività degli utenti e degli amministratori dell'organizzazione vengono registrate nel log di controllo e conservate per 90 giorni e fino a un anno a seconda della licenza assegnata agli utenti.
 
 Per istruzioni dettagliate su come attivare o disattivare il controllo, vedere Attivare o [disattivare la ricerca nel log di controllo.](turn-audit-log-search-on-or-off.md)
 
@@ -146,7 +146,7 @@ Definire i tipi di informazioni riservate in base al modello contenuto nelle inf
 
 Per istruzioni dettagliate sulla definizione di tipi di informazioni riservate personalizzati, vedere [Create a custom sensitive information type in the Security & Compliance Center.](./create-a-custom-sensitive-information-type.md)
 
-### <a name="prevent-data-loss"></a>Evitare la perdita di dati
+### <a name="prevent-data-loss"></a>Prevenire la perdita di dati
 
 [I criteri di prevenzione della](dlp-learn-about-dlp.md) perdita dei dati consentono di identificare, monitorare e proteggere automaticamente le informazioni riservate nell'Microsoft 365 organizzazione. Utilizzare i criteri DLP per identificare gli elementi sensibili tra servizi Microsoft, impedire la condivisione accidentale di elementi sensibili e aiutare gli utenti a rimanere conformi senza interrompere il flusso di lavoro.
 

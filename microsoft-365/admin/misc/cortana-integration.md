@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Gli utenti con account aziendali o dell'istituto di istruzione validi possono ottenere Cortana in Microsoft 365 esperienze che soddisfano Office 365 promesse di sicurezza a livello aziendale.
-ms.openlocfilehash: 45e6f46fa753096c535add9daf486ef6a9f1bff0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054598"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227896"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -39,7 +39,7 @@ Quando si esegue l'accesso con account aziendali o dell'istituto di istruzione v
 
 - Coerentemente con altri servizi Office 365, i servizi Cortana enterprise soddisfano le stesse promesse di privacy, sicurezza e conformità a livello aziendale, come illustrato nelle Condizioni per i servizi [online (OST).](https://www.microsoft.com/licensing/product-licensing/products)
 
-- Le Microsoft 365, ad esempio i messaggi di posta elettronica briefing e Play My Emails, verranno abilitate utilizzando Cortana Enterprise Services e saranno completamente conformi a tali promesse. Queste funzionalità sono attualmente disponibili in tutto il mondo (multi-tenant standard). Per ulteriori informazioni su come trovare il percorso di utilizzo, vedere [Visualizzare valori di proprietà aggiuntivi per gli account](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts).
+- Le Microsoft 365, ad esempio i messaggi di posta elettronica briefing e Play My Emails, verranno abilitate utilizzando Cortana Enterprise Services e saranno completamente conformi a tali promesse. Queste funzionalità sono attualmente disponibili in tutto il mondo (multi-tenant standard). Per ulteriori informazioni su come trovare il percorso di utilizzo, vedere [Visualizzare valori di proprietà aggiuntivi per gli account](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md#view-additional-property-values-for-accounts).
 
 - Le esperienze esistenti per gli utenti, tra cui Cortana in Windows 10 (versione 1909 e precedenti), sono disciplinate dal Contratto di servizi [Microsoft](https://www.microsoft.com/licensing/product-licensing/products) e dall'Informativa sulla [privacy Microsoft](https://privacy.microsoft.com/privacystatement) (vedere la sezione "Servizi esistenti per i consumatori" di seguito). Queste condizioni regolano anche i Cortana enterprise forniti all'utente quando hanno eseguito l'accesso con le credenziali dell'utente.
 

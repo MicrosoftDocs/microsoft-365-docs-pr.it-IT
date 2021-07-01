@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: b9696f26dd8f68ba291eab50e11a4cb6dd55ab7a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408177"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226912"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Crittografia a chiave doppia per Microsoft 365
 
@@ -45,7 +45,7 @@ La crittografia a chiave doppia è destinata ai dati più sensibili soggetti ai 
 
 Qualsiasi applicazione o servizio esterno non integrato con DKE tramite MIP SDK non sarà in grado di eseguire azioni sui dati crittografati.
 
-Microsoft Information Protection SDK 1.7+ supporta la crittografia a chiave doppia. le applicazioni che si integrano con il nostro SDK saranno in grado di ragionare su questi dati con autorizzazioni e integrazioni sufficienti.
+Il Microsoft Information Protection SDK 1.7+ supporta la crittografia a chiave doppia; le applicazioni che si integrano con il nostro SDK saranno in grado di ragionare su questi dati con autorizzazioni e integrazioni sufficienti.
 
 È consigliabile che le organizzazioni utilizzino le funzionalità di protezione delle informazioni Microsoft (classificazione ed etichettatura) per proteggere la maggior parte dei dati sensibili e utilizzare DKE solo per i dati cruciali. La crittografia a chiave doppia è rilevante per i dati sensibili in settori altamente regolamentati come i servizi finanziari e il settore sanitario.
 
@@ -79,7 +79,7 @@ Segui questi passaggi generali per configurare DKE. Dopo aver completato questi 
 
 1. Distribuire il servizio DKE come descritto in questo articolo.
 
-2. Crea un'etichetta con la crittografia a chiave doppia. Passare a Protezione delle informazioni nel [Centro Microsoft 365 conformità](https://compliance.microsoft.com) e creare una nuova etichetta con crittografia a chiave doppia. Vedere [Limitare l'accesso al contenuto utilizzando etichette di riservatezza per applicare la crittografia.](./encryption-sensitivity-labels.md)
+2. Crea un'etichetta con la crittografia a chiave doppia. Passare a Protezione delle informazioni [nell'Centro conformità Microsoft 365](https://compliance.microsoft.com) e creare una nuova etichetta con crittografia a chiave doppia. Vedere [Limitare l'accesso al contenuto utilizzando etichette di riservatezza per applicare la crittografia.](./encryption-sensitivity-labels.md)
 
 3. Utilizzare le etichette di crittografia a chiave doppia. Proteggere i dati selezionando l'etichetta Crittografia a chiave doppia dalla barra multifunzione Riservatezza in Microsoft Office.
 
@@ -183,7 +183,7 @@ Scegliere se utilizzare la posta elettronica o l'autorizzazione del ruolo. DKE s
 
 - **Autorizzazione del ruolo**. Consente all'organizzazione di autorizzare l'accesso alle chiavi in base ai gruppi di Active Directory e richiede che il servizio Web possa eseguire query LDAP.
 
-**Per impostare le impostazioni di accesso alle chiavi per DKE tramite l'autorizzazione di posta elettronica**
+##### <a name="to-set-key-access-settings-for-dke-using-email-authorization"></a>Per impostare le impostazioni di accesso alle chiavi per DKE tramite l'autorizzazione di posta elettronica
 
 1. Apri il **appsettings.jsfile on** e individua l'impostazione. `AuthorizedEmailAddress`
 
@@ -205,7 +205,7 @@ Questa immagine mostra **l'appsettings.jssul** file formattato correttamente per
 
    ![Il appsettings.jssul file che mostra il metodo di autorizzazione della posta elettronica](../media/dke-email-accesssetting.png)
 
-**Per impostare le impostazioni di accesso alle chiavi per DKE tramite l'autorizzazione del ruolo**
+##### <a name="to-set-key-access-settings-for-dke-using-role-authorization"></a>Per impostare le impostazioni di accesso alle chiavi per DKE tramite l'autorizzazione del ruolo
 
 1. Apri il **appsettings.jsfile on** e individua l'impostazione. `AuthorizedRoles`
 
@@ -231,7 +231,7 @@ Questa immagine mostra **l'appsettings.jssul** file formattato correttamente per
 
 Le impostazioni delle chiavi e del tenant DKE si trovano nel file **appsettings.jsfile.**
 
-**Per configurare le impostazioni del tenant e delle chiavi per DKE**
+##### <a name="to-configure-tenant-and-key-settings-for-dke"></a>Per configurare le impostazioni del tenant e delle chiavi per DKE
 
 1. Aprire il **appsettings.jsfile.**
 
@@ -242,6 +242,7 @@ Le impostazioni delle chiavi e del tenant DKE si trovano nel file **appsettings.
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+
 > [!NOTE]
 > Se si desidera abilitare l'accesso B2B esterno all'archivio chiavi, sarà inoltre necessario includere questi tenant esterni come parte dell'elenco delle autorità emittente valide.
 
@@ -263,7 +264,7 @@ Dopo aver definito le impostazioni dell'applicazione, sei pronto per generare ch
 
 Per generare le chiavi:
 
-1. Dal Windows start esegui il prompt dei comandi OpenSSL.
+1. Dal Windows menu Start, eseguire il prompt dei comandi OpenSSL.
 
 2. Passare alla cartella in cui si desidera salvare le chiavi di test. I file creati completando i passaggi di questa attività vengono archiviati nella stessa cartella.
 
@@ -370,7 +371,7 @@ Potresti preferire altri metodi per distribuire le chiavi. Selezionare il metodo
 
 Per le distribuzioni pilota, è possibile eseguire la distribuzione in Azure e iniziare subito.
 
-**Per creare un'istanza di Azure Web App per ospitare la distribuzione DKE**
+#### <a name="to-create-an-azure-web-app-instance-to-host-your-dke-deployment"></a>Per creare un'istanza di Azure Web App per ospitare la distribuzione DKE
 
 Per pubblicare l'archivio chiavi, creerai un'istanza del servizio app di Azure per ospitare la distribuzione DKE. Successivamente, pubblicherai le chiavi generate in Azure.
 
@@ -502,7 +503,7 @@ Per registrare il servizio DKE:
 
 9. In **Concessione implicita** seleziona la **casella di controllo Token ID.**
 
-10. Selezionare **Salva** per salvare le modifiche.
+10. Seleziona **Salva** per salvare le modifiche.
 
 11. Nel riquadro sinistro seleziona **Esponi un'API,** quindi accanto a URI ID applicazione seleziona **Imposta**.
 
@@ -530,18 +531,18 @@ Per registrare il servizio DKE:
 
     4. Selezionare **Salva** nella parte superiore per salvare le modifiche.
 
-    5. Ripeti questi passaggi, ma questa volta definisci l'ID client come `c00e9d32-3c8d-4a7d-832b-029040e7db99` . Questo valore è l'ID client di etichettatura unificato di Azure Information Protection. 
+    5. Ripeti questi passaggi, ma questa volta definisci l'ID client come `c00e9d32-3c8d-4a7d-832b-029040e7db99` . Questo valore è l'ID client di etichettatura unificato di Azure Information Protection.
 
 Il servizio DKE è ora registrato. Continuare creando [etichette con DKE](#create-sensitivity-labels-using-dke).
 
 ## <a name="create-sensitivity-labels-using-dke"></a>Creare etichette di riservatezza con DKE
 
-Nel Centro Microsoft 365 conformità crea una nuova etichetta di riservatezza e applica la crittografia come farei in caso contrario. Seleziona **Usa crittografia a chiave doppia** e immetti l'URL dell'endpoint per la chiave.
+Nell'Centro conformità Microsoft 365 crea una nuova etichetta di riservatezza e applica la crittografia come farei in caso contrario. Seleziona **Usa crittografia a chiave doppia** e immetti l'URL dell'endpoint per la chiave.
 
 Ad esempio:
 
 > [!div class="mx-imgBorder"]
-> ![Selezionare Usa crittografia a chiave doppia nel Centro Microsoft 365 conformità](../media/dke-use-dke.png)
+> ![Selezionare Usa crittografia a chiave doppia nella Centro conformità Microsoft 365](../media/dke-use-dke.png)
 
 Tutte le etichette DKE che aggiungi inizieranno a essere visualizzate per gli utenti nelle versioni più recenti di Microsoft 365 Apps for enterprise.
 

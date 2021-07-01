@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Informazioni su come modificare il tema predefinito per la parte superiore della barra di spostamento in Microsoft 365 e personalizzarlo in base al logo o al colore della società.
-ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006914"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227800"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
@@ -41,12 +41,12 @@ L'amministratore dell'organizzazione può creare più temi per le persone dell'o
 
 2. Nella scheda **Profilo organizzazione** selezionare **Temi personalizzati.**
 
-Tutti i temi possono essere personalizzati utilizzando le schede seguenti.
+Tutti i temi dell'organizzazione possono essere personalizzati utilizzando le schede seguenti.
 
 |**Scheda**|**Cosa potete fare?**|
 |:-----|:-----|
 |[Generale](#general-modify-a-theme) <br/> |Modificare il nome di un tema e assegnare fino a cinque gruppi (se applicabile).  <br/> |
-|[Logo](#logos-specify-your-theme-logos) <br/> |Aggiungi il logo del tema, inclusa la Office tema scuro e le opzioni per dispositivi mobili.  <br/> |
+|[Logo](#logos-specify-your-theme-logos) <br/> |Aggiungi il logo dell'organizzazione, incluso il logo alternativo per il tema scuro.  <br/> |
 |[Colori](#colors-choose-theme-colors) <br/> |Personalizzare una combinazione di colori specificando i colori della barra di spostamento, dell'accento, del testo e dell'icona. <br/> |
 
 ## <a name="general-modify-a-theme"></a>Generale: Modificare un tema
@@ -64,7 +64,7 @@ Il tema predefinito è il primo tema visualizzato.
 > [!IMPORTANT]
 > Il tema predefinito è univoco, non può essere rinominato e si applica a tutti gli utenti dell'organizzazione. Per eliminare il tema predefinito, è necessario eliminare prima tutti gli altri temi.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
 
 ### <a name="create-a-group-theme"></a>Creare un tema di gruppo
 
@@ -76,7 +76,7 @@ Puoi creare fino a quattro temi di gruppo aggiuntivi.
 
 3. Selezionare **Salva**.
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: Scheda Generale che mostra il tema predefinito per un gruppo di utenti nell'organizzazione":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: Scheda Generale che mostra il tema predefinito per un gruppo di utenti nell'organizzazione":::
 
 ## <a name="logos-specify-your-theme-logos"></a>Logo: specificare i logo del tema
 
@@ -84,9 +84,11 @@ Nella pagina **Logo puoi** aggiungere i logo e specificare l'URL a cui gli utent
 
 - **Logo predefinito:** aggiungere un percorso URL che punti al logo. Assicurati che l'URL usi HTTPS. Aggiungere un URL di immagine HTTPS che consenta l'accesso anonimo e non richieda l'autenticazione. Per il tema predefinito, hai anche un'opzione per caricare un'immagine del logo inferiore a 10 kb. Il logo predefinito può essere in formato JPG, PNG, GIF o SVG. Per le immagini SVG, verranno ridimensionate in modo da adattarsi verticalmente a 24 pixel. Le immagini JPG, PNG e GIF verranno ridimensionate per adattarsi a 200 x 48 pixel. Le proporzioni del logo verranno sempre mantenute.
 - **Logo alternativo:** aggiungere un percorso URL che punti al logo. Il logo alternativo deve essere ottimizzato per l'uso in Office temi scuri. Stessi requisiti del logo predefinito.
-- **Collegamento al clic:** aggiungere una posizione URL che punti al logo. È possibile utilizzare il logo come collegamento a qualsiasi risorsa aziendale, ad esempio il sito Web dell'azienda.
+- **Collegamento al clic:** aggiungere una posizione URL che punti al logo. È possibile utilizzare il logo come collegamento a qualsiasi risorsa aziendale, ad esempio il sito Web dell'azienda. Se non si seleziona una posizione URL per il logo, per impostazione predefinita verrà visualizzata Office home page.
 
 Seleziona **Salva** per salvare le modifiche.
+
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot: Logos tab showing the logo options":::
 
 È possibile rimuovere i logo in qualsiasi momento. Torna alla pagina **Logos** e seleziona **Rimuovi.**
   
@@ -98,9 +100,8 @@ Nella pagina **Colori** è possibile impostare i colori predefiniti e scegliere 
 - **Colore testo e icona:** selezionare un colore da utilizzare per il testo e le icone sulla barra di spostamento superiore.
 - **Colore principale:** selezionane uno che viene visualizzato bene su uno sfondo bianco o chiaro. Il colore principale viene utilizzato per colorare alcuni collegamenti e pulsanti visualizzati su uno sfondo bianco o chiaro. Ad esempio, il colore principale viene utilizzato per colorare gli elementi nella posta in arrivo di un utente e nella pagina del portale Office.com.
 - **Reimposta colore:** selezionare questo collegamento per ripristinare i colori predefiniti.
-- **Quale logo deve essere utilizzato?**: Selezionare i logo predefiniti o qualsiasi altro logo creato dall'utente.
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

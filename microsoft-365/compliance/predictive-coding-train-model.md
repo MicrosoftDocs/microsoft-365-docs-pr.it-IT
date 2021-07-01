@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ef6d1cf23d6cca58f4226696bc63c1dea5816cc1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822552"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226216"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Eseguire il training di un modello di codifica predittivo (anteprima)
 
@@ -29,11 +29,11 @@ Per esaminare il flusso di lavoro di codifica predittiva, vedere Informazioni su
 
 ## <a name="before-you-train-a-model"></a>Prima di eseguire il training di un modello
 
-- Durante un ciclo di formazione, etichettare gli elementi come **Rilevanti** o **Non** rilevanti in base alla pertinenza del contenuto del documento. Non basare la decisione sui valori nei campi dei metadati. Ad esempio, per i messaggi di posta elettronica Teams conversazioni, non basare la decisione di etichettatura sui partecipanti del messaggio. 
+- Durante un ciclo di formazione, etichettare gli elementi come **Rilevanti** o **Non** rilevanti in base alla pertinenza del contenuto del documento. Non basare la decisione sui valori nei campi dei metadati. Ad esempio, per i messaggi di posta elettronica Teams conversazioni, non basare la decisione di etichettatura sui partecipanti del messaggio.
 
 ## <a name="train-a-model-for-the-first-time"></a>Training di un modello per la prima volta
 
-1. Nel Centro Microsoft 365 conformità aprire un caso Advanced eDiscovery e quindi selezionare la **scheda Revisione set.**
+1. Nella finestra Centro conformità Microsoft 365 aprire un Advanced eDiscovery e quindi selezionare la **scheda Set di** revisioni.
 
 2. Apri un set di recensioni e quindi fai clic su **Analisi**  >  **Gestisci codifica predittiva (anteprima)**.
 
@@ -63,10 +63,10 @@ Dopo aver eseguito il primo ciclo di formazione, viene avviato un processo che e
 
 - In base al modo in cui hai etichettato i 40 elementi nel set di training, il modello apprende dall'etichettatura e si aggiorna per diventare più accurato.
 
-- Il modello elabora quindi ogni elemento nell'intero set di revisione e assegna un punteggio di previsione compreso tra **0** (non rilevante) e **1** (pertinente).  
+- Il modello elabora quindi ogni elemento nell'intero set di revisione e assegna un punteggio di previsione compreso tra **0** (non rilevante) e **1** (pertinente).
 
 - Il modello assegna un punteggio di previsione ai 10 elementi del set di controlli etichettati durante il round di training. Il modello confronta il punteggio di stima di questi 10 elementi con l'etichetta effettiva assegnata all'elemento durante la fase di training. In base a questo confronto, il modello identifica la classificazione seguente (denominata matrice confusione *set* di controlli ) per valutare le prestazioni di previsione del modello:
-  
+
   |          |Il modello prevede che l'elemento sia rilevante |Il modello prevede che l'elemento non sia rilevante |
   |:---------|:---------|:---------|
   |**Elemento etichette revisore pertinente**| True positive| Falso positivo |

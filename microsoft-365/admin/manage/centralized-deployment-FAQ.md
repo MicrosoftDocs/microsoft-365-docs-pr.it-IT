@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Leggere le risposte alle domande frequenti sulla distribuzione centralizzata dall'Microsoft 365 di amministrazione.
-ms.openlocfilehash: 60d7a91da738803976b6823009450124d7b57814
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Leggere le risposte alle domande frequenti sulla distribuzione centralizzata dall'interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: 0da9ec9595fd433abe1e2e2ae3f2e3a0c6b3b9b5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579303"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228005"
 ---
 # <a name="centralized-deployment-faq"></a>Domande frequenti sulla distribuzione centralizzata
 
@@ -44,7 +44,7 @@ La distribuzione centralizzata supporta le assegnazioni a singoli utenti, gruppi
 
 È meglio usare le assegnazioni dei gruppi anziché l'assegnazione di singoli utenti per semplificare la gestione.
  
-Per ulteriori informazioni, vedere [Assegnazioni di utenti e gruppi.](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)  
+Per ulteriori informazioni, vedere [Assegnazioni di utenti e gruppi.](./centralized-deployment-of-add-ins.md#user-and-group-assignments)  
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Quanto tempo è necessario per la visualizzazione dei componenti aggiuntivi per tutti gli utenti?  
 
@@ -94,8 +94,8 @@ Ti consigliamo di contattarlo per lo sviluppatore ISV per il componente aggiunti
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>Quale ruolo di amministratore è necessario per gestire i componenti aggiuntivi per l'organizzazione?  
 
-L'amministratore globale è il ruolo consigliato con accesso completo al ciclo di vita di gestione dei componenti aggiuntivi. Altri ruoli di amministratore hanno un accesso limitato al ciclo di vita della distribuzione dei componenti aggiuntivi. Se sei la persona che ha acquistato l'abbonamento Microsoft 365 per le aziende, sei l'amministratore globale. 
+L'amministratore globale è il ruolo consigliato con accesso completo al ciclo di vita di gestione dei componenti aggiuntivi. Se sei la persona che ha acquistato l'abbonamento Microsoft 365 Business, sei l'amministratore globale. 
  
-La sottoscrizione include un set di ruoli di amministratore che è possibile assegnare ad altri utenti dell'organizzazione. Ogni ruolo di amministratore è mappato a funzioni aziendali comuni e fornisce agli utenti dell'organizzazione le autorizzazioni per eseguire attività specifiche nell'Microsoft 365 di amministrazione.  
+La sottoscrizione include un set di ruoli di amministratore che è possibile assegnare ad altri utenti dell'organizzazione. Ogni ruolo di amministratore è mappato a funzioni aziendali comuni e fornisce agli utenti dell'organizzazione le autorizzazioni per eseguire attività specifiche nel interfaccia di amministrazione di Microsoft 365.  
  
-Per ulteriori informazioni, vedere [Assegnare ruoli di amministratore.](../add-users/assign-admin-roles.md?view=o365-worldwide) 
+Per ulteriori informazioni, vedere [Assegnare ruoli di amministratore.](../add-users/assign-admin-roles.md) 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 30363b544d9016b10dd9aad463d33c40065da0f3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919812"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226348"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Informazioni sulla gestione dei rischi insider in Microsoft 365
 
@@ -127,8 +127,8 @@ Nelle situazioni più gravi potrebbe essere necessario condividere le informazio
 - **Advanced eDiscovery**: l'escalation di un caso di indagine consente di trasferire i dati e la gestione del caso Advanced eDiscovery in Microsoft 365. La soluzione Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rilevanti per le indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro per le notifiche di blocco a fini giudiziari. Per maggiori informazioni sui casi di Advanced eDiscovery, consultare la [Panoramica di Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 - integrazione delle API di gestione di **Office 365 (anteprima):** la gestione dei rischi Insider supporta l'esportazione delle informazioni sugli avvisi nei servizi siem (Security Information and Event Management) tramite le API di Office 365 Management. L'accesso alle informazioni sugli avvisi nella piattaforma più adatto ai processi di rischio dell'organizzazione offre maggiore flessibilità nell'agire sulle attività a rischio. Per altre informazioni sull'esportazione delle informazioni sugli avvisi con Office 365 Management API, vedi [Esportare avvisi.](insider-risk-management-settings.md#export-alerts-preview)
 
->[!NOTE]
->Grazie per il feedback e il supporto durante l'anteprima del connettore ServiceNow. Abbiamo deciso di terminare l'anteprima del connettore ServiceNow e interrompere il supporto nella gestione dei rischi insider il 30 novembre 2020. Stiamo valutando attivamente metodi alternativi per fornire ai clienti l'integrazione di ServiceNow nella gestione dei rischi insider.
+> [!NOTE]
+> Grazie per il feedback e il supporto durante l'anteprima del connettore ServiceNow. Abbiamo deciso di terminare l'anteprima del connettore ServiceNow e interrompere il supporto nella gestione dei rischi insider il 30 novembre 2020. Stiamo valutando attivamente metodi alternativi per fornire ai clienti l'integrazione di ServiceNow nella gestione dei rischi insider.
 
 ## <a name="scenarios"></a>Scenari
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per dichiarare i record.
-ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: ba0587619609adba2d7746a45a3b24008a4a00be
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903901"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226996"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usare le etichette di conservazione per dichiarare i record
 
@@ -36,7 +36,7 @@ In seguito è possibile pubblicare tali etichetta in un criterio per le etichett
 
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>Come visualizzare l'opzione per contrassegnare i contenuti come record normativi
 
->[!NOTE] 
+> [!NOTE]
 > Questa procedura è un'azione controllabile, che registra l'**Opzione dei record normativi abilitata per le etichette di conservazione** nella sezione [Criteri di conservazione e attività delle etichette di conservazione](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) del log di controllo.
 
 Per impostazione predefinita, l'opzione dell'etichetta di conservazione per contrassegnare i contenuti come record normativi non è mostrata nella procedura guidata dell'etichetta di conservazione. Per visualizzare questa opzione, è prima necessario eseguire un comando di PowerShell:
@@ -44,13 +44,14 @@ Per impostazione predefinita, l'opzione dell'etichetta di conservazione per cont
 1. [Connettersi a PowerShell nel Centro sicurezza e conformità di Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Eseguire il seguente cmdlet:
-    
+
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
     ````
+
     Non viene richiesta la conferma, e l'impostazione ha effetto immediato.
 
-Se si cambia idea in merito alla configurazione di questa opzione nella procedura di creazione dell'etichetta di conservazione, la si può nascondere eseguendo lo stesso cmdlet con il valore **false**: `Set-RegulatoryComplianceUI -Enabled $false` 
+Se si cambia idea in merito alla configurazione di questa opzione nella procedura di creazione dell'etichetta di conservazione, la si può nascondere eseguendo lo stesso cmdlet con il valore **false**: `Set-RegulatoryComplianceUI -Enabled $false`
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurare le etichette di conservazione per dichiarare i record
 
@@ -60,7 +61,7 @@ Ad esempio:
 
 ![Configurare una etichetta di conservazione per contrassegnare i contenuti come record o record normativi](../media/recordversioning6.png)
 
-Ora è possibile applicare questa etichetta di conservazione ai documenti di SharePoint o OneDrive e ai messaggi di posta elettronica di Exchange, se necessario. 
+Ora è possibile applicare questa etichetta di conservazione ai documenti di SharePoint o OneDrive e ai messaggi di posta elettronica di Exchange, se necessario.
 
 Istruzioni complete:
 
@@ -73,7 +74,7 @@ Istruzioni complete:
 
 Quando le etichette di conservazione che classificano gli elementi come record o record normativi vengono rese disponibili agli utenti per applicarle nelle app:
 
-- Per Exchange, qualsiasi utente con accesso in scrittura alla cassetta postale può applicare queste etichette. 
+- Per Exchange, qualsiasi utente con accesso in scrittura alla cassetta postale può applicare queste etichette.
 - Per SharePoint e OneDrive, qualsiasi utente del gruppo Membri predefinito (con livello di autorizzazione Collaborazione) può applicare queste etichette.
 
 Esempio di documento contrassegnato come record da un'etichetta di conservazione:
@@ -84,7 +85,7 @@ Esempio di documento contrassegnato come record da un'etichetta di conservazione
 
 Le azioni di etichettatura per dichiarare elementi come record vengono registrate nel log di audit.
 
-Per gli elementi di SharePoint: 
+Per gli elementi di SharePoint:
 - Da **Attività su file e pagine** selezionare **Etichetta di conservazione modificata per un file**. Questo evento di controllo è per le etichette di conservazione che contrassegnano gli elementi come record o record normativi o che sono etichette di conservazione standard.
 
 Per gli elementi di Exchange:

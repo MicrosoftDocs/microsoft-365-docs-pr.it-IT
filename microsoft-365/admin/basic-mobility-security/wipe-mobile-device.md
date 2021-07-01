@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa dispositivi mobili e sicurezza di base incorporati per rimuovere le informazioni dai dispositivi registrati.
-ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: c3cc547ce5e135ccdabf9a09b0d572f1b2530f47
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706143"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228148"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Cancellare un dispositivo mobile in Dispositivi mobili e sicurezza di base
 
@@ -45,7 +45,7 @@ I dispositivi mobili possono archiviare informazioni riservate dell'organizzazio
 
 ## <a name="wipe-a-mobile-device"></a>Cancellare un dispositivo mobile
 
-1. Passare [all'Microsoft 365 di amministrazione .](../../admin/admin-overview/about-the-admin-center.md)
+1. Passare al [interfaccia di amministrazione di Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Digita Gestione dispositivi mobili nel campo di ricerca e seleziona **Gestione dispositivi mobili** nell'elenco dei risultati.
 
@@ -86,5 +86,6 @@ La cancellazione viene inviata immediatamente al dispositivo mobile e il disposi
 |Microsoft 365 dati dell'app vengono cancellati se il dispositivo è protetto dai criteri di Intune App Protection. Le app non vengono rimosse. Per i dispositivi non protetti dai criteri DIM (Mobile Application Management), Outlook e OneDrive non rimuove i dati memorizzati nella cache.<br/>**Nota** Per l'applicazione dei criteri di protezione delle app di Intune è necessario disporre di una licenza di Intune.|Sì|Sì|
 |Le impostazioni dei criteri applicate da Dispositivi mobili e sicurezza di base ai dispositivi non vengono più applicate. gli utenti possono modificare le impostazioni.|Sì|Sì|
 |I profili di posta elettronica creati da Dispositivi mobili e sicurezza di base vengono rimossi e la posta elettronica memorizzata nella cache nel dispositivo viene eliminata.|Sì|N/D|
->[!NOTE]
->Portale aziendale app è disponibile nell'App Store per iOS e nel Play Store per dispositivi Android.
+
+> [!NOTE]
+> Portale aziendale app è disponibile nell'App Store per iOS e nel Play Store per dispositivi Android.

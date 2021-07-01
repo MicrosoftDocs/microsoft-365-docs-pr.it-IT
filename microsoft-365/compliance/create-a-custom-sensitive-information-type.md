@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come creare, modificare, rimuovere e testare tipi di informazioni riservate personalizzati per DLP nel Centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683844"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227152"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introduzione ai tipi di informazione sensibile personalizzati
 
@@ -45,7 +45,7 @@ I tipi di informazione sensibile personalizzati creati con questo metodo vengono
     - [funzioni](what-the-dlp-functions-look-for.md)
     - [livello di confidenza](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- È necessario avere le autorizzazioni di amministrazione globale o di amministrazione della conformità per creare, collaudare e distribuire un tipo personalizzato di informazione riservata tramite l'interfaccia utente. Vedere [Informazioni sui ruoli di amministratore](/office365/admin/add-users/about-admin-roles?view=o365-worldwide) di Office 365.
+- È necessario avere le autorizzazioni di amministrazione globale o di amministrazione della conformità per creare, collaudare e distribuire un tipo personalizzato di informazione riservata tramite l'interfaccia utente. Vedere [Informazioni sui ruoli di amministratore](/office365/admin/add-users/about-admin-roles) di Office 365.
 
 - L'organizzazione deve disporre di un abbonamento, ad esempio Office 365 Enterprise, che includa le funzionalità per la prevenzione della perdita dei dati (DLP). Vedere la descrizione del servizio [Criteri di messaggistica e conformità](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 

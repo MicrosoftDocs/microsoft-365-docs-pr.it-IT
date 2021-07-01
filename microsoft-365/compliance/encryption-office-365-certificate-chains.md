@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Visualizzare un elenco completo dei certificati radice e delle autorità di certificazione (CA) in Microsoft 365.
-ms.openlocfilehash: c5b00a3a663c2ae4862cfa3d11f92015c0331e59
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bb48bf82f3f00223d3a913280e34fe4f0686426
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907720"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226756"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 catene di crittografia
 
@@ -30,8 +30,8 @@ Microsoft 365 si avvale di diversi provider di certificati. Di seguito viene des
 
 Last updated: **16/10/2020**
 
->[!NOTE]
->Per informazioni sui certificati applicabili ai **clienti DOD** e GCC High, vedere Microsoft 365 [encryption chains - DOD and GCC High](encryption-office-365-certificate-chains-itar.md).
+> [!NOTE]
+> Per informazioni sui certificati applicabili ai **clienti DOD** e GCC High, vedere Microsoft 365 [encryption chains - DOD and GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Tipo di certificato** | **Download P7b** | **Endpoint CRL** | **Endpoint OCSP** | **Endpoint AIA** |
 | --- | --- | --- | --- | --- |

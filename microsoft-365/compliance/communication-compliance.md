@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9d9c439704b6837cec086b390cde9c480d2d69ba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 2bf40f5b1d89b7a232f86c1e186ca660db9f8bbc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860397"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227284"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Informazioni sulla conformità delle comunicazioni in Microsoft 365
 
@@ -103,7 +103,7 @@ I nuovi dashboard interattivi per avvisi, corrispondenze ai criteri, azioni e te
 
 - **Avvisi intelligenti proattivi**: gli avvisi per corrispondenze ai criteri che richiedono un'attenzione immediata includono nuovi dashboard per gli elementi in sospeso ordinati per gravità e nuove notifiche automatiche tramite posta elettronica inviate ai revisori designati.
 - **Dashboard interattivi**: i nuovi dashboard visualizzano le corrispondenze dei criteri, le azioni in sospeso e risolte e le tendenze di utenti e criteri.
-- **Supporto controllo:** un registro completo delle attività di revisione e criteri viene esportato facilmente dal Centro conformità Microsoft 365 per supportare le richieste di revisione di controllo.
+- **Supporto del controllo**: un registro completo delle attività di revisione e criteri viene esportato facilmente dal Centro conformità Microsoft 365 per supportare le richieste di revisione di controllo.
 
 ## <a name="integration-with-microsoft-365-services"></a>Integrazione con Microsoft 365 servizi
 
@@ -129,8 +129,8 @@ L'identificazione e la risoluzione dei problemi di conformità con la conformit�
 
 In questo passaggio del flusso di lavoro si identificano i requisiti di conformità e si configurano i criteri di conformità delle comunicazioni applicabili. I modelli di criteri sono un ottimo modo non solo per configurare rapidamente un nuovo criterio di conformità, ma anche per modificare e aggiornare rapidamente i criteri quando cambiano i requisiti. È possibile, ad esempio, scegliere di testare rapidamente un criterio per il linguaggio offensivo e la comunicazione anti-molestie per un piccolo gruppo di utenti prima di configurare un criterio per tutti gli utenti dell'organizzazione.
 
->[!Important]
->Per impostazione predefinita, gli amministratori globali non hanno accesso alle funzionalità di conformità delle comunicazioni. Per abilitare le autorizzazioni per le funzionalità di conformità delle comunicazioni, vedere [Rendere disponibile la conformità delle comunicazioni nell'organizzazione.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
+> [!IMPORTANT]
+> Per impostazione predefinita, gli amministratori globali non hanno accesso alle funzionalità di conformità delle comunicazioni. Per abilitare le autorizzazioni per le funzionalità di conformità delle comunicazioni, vedere [Rendere disponibile la conformità delle comunicazioni nell'organizzazione.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
 Nel Centro conformità Microsoft 365 è possibile scegliere tra i seguenti modelli di criteri:
 
@@ -142,7 +142,7 @@ Nel Centro conformità Microsoft 365 è possibile scegliere tra i seguenti model
 
 ### <a name="investigate"></a>Indagine
 
-In questa fase, vengono esaminati attentamente i problemi rilevati come corrispondenti ai criteri di conformità delle comunicazioni. Questo passaggio include le azioni seguenti disponibili nel Centro Microsoft 365 conformità:
+In questa fase, vengono esaminati attentamente i problemi rilevati come corrispondenti ai criteri di conformità delle comunicazioni. Questo passaggio include le azioni seguenti disponibili nella Centro conformità Microsoft 365:
 
 - **Avvisi**: quando un messaggio corrisponde a una condizione del criterio, viene generato automaticamente un avviso. Per ogni avviso, è possibile visualizzare lo stato, la gravità, l'ora rilevata e se viene assegnato Advanced eDiscovery caso e il relativo stato. I nuovi avvisi vengono visualizzati nella home page di conformità delle comunicazioni e nella **pagina Avvisi** e sono elencati in ordine di gravità.
 - **Gestione dei problemi**: per ogni avviso è possibile eseguire azioni di verifica per correggere il problema rilevato nel messaggio.

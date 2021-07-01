@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1af3ff5fac9a95afb15f680f8f46e8d0de0b4567
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245433"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226048"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informazioni sulla gestione dei record in Microsoft 365
 
@@ -70,11 +70,11 @@ Usando le etichette di conservazione per dichiarare i record, è possibile imple
 
 ### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Confronto tra le restrizioni relative alle azioni consentite o bloccate
 
-Usare la tabella seguente per identificare quali restrizioni vengono applicate al contenuto in seguito all'applicazione di un'etichetta di conservazione standard e di etichette di conservazione che contrassegnano il contenuto come record o record normativo. 
+Usare la tabella seguente per identificare quali restrizioni vengono applicate al contenuto in seguito all'applicazione di un'etichetta di conservazione standard e di etichette di conservazione che contrassegnano il contenuto come record o record normativo.
 
 Un'etichetta di conservazione standard include le impostazioni di conservazione e le azioni, ma non contrassegna il contenuto come un record o un record normativo.
 
->[!NOTE] 
+> [!NOTE]
 > Per completezza di informazioni, la tabella include colonne per un record bloccato e sbloccato, applicabile a SharePoint e OneDrive, ma non a Exchange. Per bloccare e sbloccare un record viene usato il [controllo delle versioni dei record](record-versioning.md), che non è supportato per gli elementi di Exchange. Quindi, per tutti gli elementi di Exchange contrassegnati come record, il comportamento mappato alla colonna **Record: bloccato** e alla colonna **Record: non bloccato** non è pertinente.
 
 
@@ -94,19 +94,20 @@ Note a piè di pagina:
 
 <sup>1</sup> Supportato da OneDrive ed Exchange conservando una copia in una posizione protetta, ma bloccato da SharePoint.
 
-Quando viene applicata un'etichetta di conservazione a un elemento elenco con un documento allegato, tale documento non erediterà le impostazioni di conservazione e potrà essere eliminato dall'elemento elenco. Al contrario, se tale elemento fosse stato dichiarato un record con un'etichetta di conservazione, il documento allegato avrebbe ereditato le impostazioni di conservazione e non avrebbe potuto essere eliminato. 
+Quando viene applicata un'etichetta di conservazione a un elemento elenco con un documento allegato, tale documento non erediterà le impostazioni di conservazione e potrà essere eliminato dall'elemento elenco. Al contrario, se tale elemento fosse stato dichiarato un record con un'etichetta di conservazione, il documento allegato avrebbe ereditato le impostazioni di conservazione e non avrebbe potuto essere eliminato.
 
 <sup>2</sup> I container includono le raccolte documenti in SharePoint e le cassette postali in Exchange.
 
->[!IMPORTANT] 
-> La differenza più importante di un record normativo è che, dopo che è stato applicato al contenuto, nessuno, nemmeno un amministratore globale, può rimuovere l'etichetta. 
+> [!IMPORTANT]
+> La differenza più importante di un record normativo è che, dopo che è stato applicato al contenuto, nessuno, nemmeno un amministratore globale, può rimuovere l'etichetta.
 >
 > Le etichette di conservazione configurate per i record normativi hanno le seguenti restrizioni amministrative:
+>
 > - Il periodo di conservazione non può essere abbreviato dopo il salvataggio dell'etichetta, ma solo esteso.
-> - Queste etichette non sono supportate dai criteri di etichettatura automatica, e devono essere applicate usando i [criteri delle etichette di conservazione](create-apply-retention-labels.md). 
+> - Queste etichette non sono supportate dai criteri di etichettatura automatica, e devono essere applicate usando i [criteri delle etichette di conservazione](create-apply-retention-labels.md).
 >
 > Inoltre, non è possibile applicare un'etichetta normativa a un documento estratto da SharePoint.
-> 
+>
 > A causa delle restrizioni e delle azioni irreversibili, verificare che sia effettivamente necessario usare i record normativi prima di selezionare questa opzione per le etichette di conservazione. Per evitare la configurazione accidentale, questa opzione non è disponibile per impostazione predefinita, ma deve prima essere abilitata con PowerShell. Le istruzioni sono incluse in [Dichiarare i record usando le etichette di conservazione](declare-records.md).
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione

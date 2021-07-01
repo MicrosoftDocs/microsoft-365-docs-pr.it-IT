@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b59fb57ebd17050624ce36805558dcd1eef0503
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939254"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226528"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi insider
 
@@ -142,8 +142,8 @@ La scheda **Attività utente** è uno degli strumenti più potenti per l'analisi
 
 ### <a name="activity-explorer-preview"></a>Esplora attività (anteprima)
 
->[!IMPORTANT]
->La scheda Esplora attività è disponibile nell'area di gestione dei casi per gli utenti che attivano eventi dopo che questa funzionalità è disponibile nell'organizzazione.
+> [!IMPORTANT]
+> La scheda Esplora attività è disponibile nell'area di gestione dei casi per gli utenti che attivano eventi dopo che questa funzionalità è disponibile nell'organizzazione.
 
 La **scheda Esplora attività** consente agli analisti e agli investigatori del rischio di esaminare i dettagli dell'attività associati agli avvisi di rischio. Ad esempio, nell'ambito delle azioni di gestione dei casi, gli investigatori e gli analisti potrebbero dover esaminare tutte le attività di rischio associate al caso per ulteriori dettagli. Con **Esplora attività,** i revisori possono esaminare rapidamente una sequenza temporale delle attività rischiose rilevate e identificare e filtrare tutte le attività di rischio associate agli avvisi.
 
@@ -165,7 +165,7 @@ Nel dashboard delle note del caso vengono visualizzate le note dell'utente che h
 
 Per aggiungere una nota a un caso:
 
-1. Nel Centro [Microsoft 365 conformità](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare la **scheda** Casi.
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona la **scheda** Casi.
 2. Selezionare un caso, quindi selezionare la **scheda Note caso.**
 3. Selezionare **Aggiungi nota caso**.
 4. Nella finestra **di dialogo Aggiungi nota caso** digitare la nota per il caso. Selezionare **Salva** per aggiungere la nota al caso oppure **scegliere** Annulla chiudi senza salvare la nota nel caso.
@@ -182,7 +182,7 @@ L'accesso temporaneo a un caso può essere concesso aggiungendo un utente come c
 
 Per aggiungere un collaboratore a un caso:
 
-1. Nel Centro [Microsoft 365 conformità](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare la **scheda** Casi.
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona la **scheda** Casi.
 2. Selezionare un caso, quindi selezionare la **scheda Collaboratori.**
 3. Selezionare **Aggiungi collaboratore**.
 4. Nella finestra **di dialogo Aggiungi** collaboratore iniziare a digitare il nome dell'utente che si desidera aggiungere e quindi selezionare l'utente nell'elenco degli utenti suggeriti. Questo elenco viene generato dall'Azure Active Directory della sottoscrizione tenant.
@@ -200,7 +200,7 @@ Nella maggior parte dei casi, le azioni degli utenti che creano avvisi di rischi
 
 Per inviare un avviso all'utente assegnato a un caso:
 
-1. Nel Centro [Microsoft 365 conformità](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare la **scheda** Casi.
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona la **scheda** Casi.
 2. Seleziona un caso, quindi seleziona il pulsante Invia avviso **tramite posta** elettronica sulla barra degli strumenti delle azioni del caso.
 3. Nella finestra **di dialogo Invia avviso tramite posta** elettronica selezionare il controllo a discesa **Scegliere** un modello di avviso per selezionare il modello di avviso per l'avviso. Questa selezione precompilierà gli altri campi dell'avviso.
 4. Esaminare i campi di avviso e aggiornarsi in base alle esigenze. I valori immessi qui sostituiscono i valori del modello.
@@ -212,13 +212,13 @@ Inoltrare il caso per le indagini degli utenti in situazioni in cui è necessari
 
 Per inoltrare un caso a un'indagine utente:
 
-1. Nel Centro [Microsoft 365 conformità](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare la **scheda** Casi.
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona la **scheda** Casi.
 2. Seleziona un caso, quindi seleziona il pulsante Escalation **per** indagine sulla barra degli strumenti delle azioni del caso.
 3. Nella finestra **di dialogo Escalation per l'indagine** immettere un nome per la nuova indagine utente. Se necessario, immettere le note sul caso e selezionare **Escalation.**
 4. Esaminare i campi di avviso e aggiornarsi in base alle esigenze. I valori immessi qui sostituiscono i valori del modello.
 5. Selezionare **Conferma per** creare il caso di indagine dell'utente oppure scegliere **Annulla** per chiudere la finestra di dialogo senza creare un nuovo caso di indagine utente.
 
-Dopo l'escalation del caso di gestione dei rischi insider a un nuovo caso di indagine degli utenti, è possibile esaminare il nuovo caso nell'area **eDiscovery** avanzata nel Centro conformità Microsoft 365  >   sicurezza.
+Dopo l'escalation del caso di gestione dei rischi insider a un nuovo caso di indagine degli utenti, è possibile esaminare il nuovo caso nell'area **eDiscovery**  >  **avanzata** nella Centro conformità Microsoft 365.
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Eseguire attività automatizzate con flussi Power Automate per il caso
 
@@ -256,7 +256,7 @@ Dopo che gli analisti e gli investigatori del rischio hanno completato la revisi
 
 Per risolvere un caso:
 
-1. Nel Centro [Microsoft 365 conformità](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare la **scheda** Casi.
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona la **scheda** Casi.
 2. Seleziona un caso, quindi seleziona il pulsante **Risolvi caso** sulla barra degli strumenti delle azioni del caso.
 3. Nella finestra **di dialogo Risolvi** caso selezionare il controllo **a** discesa Risolvi come per selezionare la classificazione della risoluzione per il caso. Le opzioni sono **Benign** o **Confirmed policy violation.**
 4. Nella finestra **di dialogo Risolvi** caso immettere i motivi della classificazione della risoluzione nel campo di **testo** Azione eseguita.

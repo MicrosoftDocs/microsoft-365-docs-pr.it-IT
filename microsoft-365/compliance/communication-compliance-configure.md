@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e258a7fec21bd3499553fe726730ac685ff990b5
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821380"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227344"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -38,9 +38,9 @@ Prima di iniziare a usare la conformità alle comunicazioni, è consigliabile co
 - Microsoft 365 E5 (versione di valutazione o a pagamento)
 - Microsoft 365 E3 abbonamento + Microsoft 365 E5 Compliance componente aggiuntivo
 - Microsoft 365 E3 e il Microsoft 365 E5 Insider Risk Management
-- Microsoft 365 Sottoscrizione A5 (versione di valutazione o a pagamento)
-- Microsoft 365 Sottoscrizione A3 + componente aggiuntivo Microsoft 365 conformità A5
-- Microsoft 365 Sottoscrizione A3 + il Microsoft 365 A5 Insider Risk Management
+- Microsoft 365 A5 abbonamento (versione di valutazione o a pagamento)
+- Microsoft 365 A3 abbonamento + il Microsoft 365 A5 conformità
+- Microsoft 365 A3 e il Microsoft 365 A5 Insider Risk Management
 - Microsoft 365 Abbonamento G5 (versione di valutazione o a pagamento)
 - Microsoft 365 Sottoscrizione G5 + componente aggiuntivo Microsoft 365 conformità G5
 - Microsoft 365 Sottoscrizione G5 + il Microsoft 365 G5 Insider Risk Management
@@ -50,17 +50,17 @@ Prima di iniziare a usare la conformità alle comunicazioni, è consigliabile co
 
 Agli utenti inclusi nei criteri di conformità delle comunicazioni deve essere assegnata una delle licenze precedenti.
 
->[!IMPORTANT]
->Office 365 Advanced Compliance non viene più venduto come abbonamento autonomo. Quando le sottoscrizioni correnti scadono, i clienti devono passare a una delle sottoscrizioni precedenti, che contengono le stesse o ulteriori funzionalità di conformità.
+> [!IMPORTANT]
+> Office 365 Advanced Compliance non viene più venduto come abbonamento autonomo. Quando le sottoscrizioni correnti scadono, i clienti devono passare a una delle sottoscrizioni precedenti, che contengono le stesse o ulteriori funzionalità di conformità.
 
 Se non si dispone di un piano Office 365 Enterprise E5 esistente e si desidera provare la conformità delle comunicazioni, è possibile aggiungere [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) all'abbonamento esistente o iscriversi [per](https://www.microsoft.com/microsoft-365/enterprise) una versione di valutazione di Office 365 Enterprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Passaggio 1 (obbligatorio): abilitare le autorizzazioni per la conformità delle comunicazioni
 
->[!Important]
->Per impostazione predefinita, gli amministratori globali non hanno accesso alle funzionalità di conformità delle comunicazioni. I ruoli assegnati in questo passaggio sono necessari prima che le funzionalità di conformità della comunicazione siano accessibili. Dopo aver configurato i gruppi di ruoli, potrebbero essere necessarie fino a 30 minuti per applicare le autorizzazioni del gruppo di ruoli agli utenti assegnati all'interno dell'organizzazione.
+> [!IMPORTANT]
+> Per impostazione predefinita, gli amministratori globali non hanno accesso alle funzionalità di conformità delle comunicazioni. I ruoli assegnati in questo passaggio sono necessari prima che le funzionalità di conformità della comunicazione siano accessibili. Dopo aver configurato i gruppi di ruoli, potrebbero essere necessarie fino a 30 minuti per applicare le autorizzazioni del gruppo di ruoli agli utenti assegnati all'interno dell'organizzazione.
 
-Esistono cinque gruppi di ruoli utilizzati per configurare le autorizzazioni per gestire le funzionalità di conformità delle comunicazioni. Per rendere **disponibile la** conformità delle comunicazioni come opzione di menu nel Centro conformità di Microsoft 365 e per continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli Communication *Compliance* o Communication *Compliance Admin.* Per accedere e gestire le funzionalità di conformità delle comunicazioni dopo la configurazione iniziale, gli utenti devono essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
+Esistono cinque gruppi di ruoli utilizzati per configurare le autorizzazioni per gestire le funzionalità di conformità delle comunicazioni. Per rendere **disponibile la conformità** delle comunicazioni come opzione di menu in Centro conformità Microsoft 365 e per continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli Communication *Compliance* o Communication *Compliance Admin.* Per accedere e gestire le funzionalità di conformità delle comunicazioni dopo la configurazione iniziale, gli utenti devono essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
 
 A seconda di come si desidera gestire i criteri di comunicazione e gli avvisi, è necessario assegnare gli utenti a gruppi di ruoli specifici. È possibile assegnare utenti con responsabilità di conformità diverse a gruppi di ruoli specifici per gestire diverse aree di funzionalità di conformità delle comunicazioni. In caso contrario, è possibile decidere di assegnare tutti gli account utente per amministratori, analisti, investigatori e visualizzatori designati al gruppo di ruoli *Conformità* comunicazioni. Utilizzare uno o più gruppi di ruoli per soddisfare al meglio i requisiti di gestione della conformità.
 
@@ -130,7 +130,7 @@ Utilizzare il grafico seguente per configurare i gruppi nell'organizzazione per 
 |:-----|:-----|:-----|
 |Utenti con supervisione <br> Utenti esclusi | Gruppi di distribuzione <br> Gruppi di Microsoft 365 | Gruppi di distribuzione dinamici <br> Gruppi di distribuzione annidati <br> Gruppi di sicurezza abilitati alla posta elettronica <br> Microsoft 365 gruppi con appartenenza dinamica |
 | Revisori | Nessuno | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici <br> Gruppi di distribuzione annidati <br> Gruppi di sicurezza abilitati alla posta elettronica |
-  
+
 Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora tutti i messaggi di posta elettronica Teams chat di ogni utente nel gruppo di distribuzione. Quando si assegna un gruppo di Microsoft 365 nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Teams inviate a tale gruppo, non i singoli messaggi di posta elettronica e chat ricevuti da ogni membro del gruppo.
 
 Se si è un'organizzazione con una distribuzione locale di Exchange o un provider di posta elettronica esterno e si desidera monitorare le chat di Microsoft Teams per gli utenti, è necessario creare un gruppo di distribuzione per gli utenti con cassette postali locali o esterne da monitorare. Più avanti in questi passaggi, questo gruppo  di distribuzione verrà assegnato come selezione Di utenti e gruppi supervisionati nella procedura guidata dei criteri. Per ulteriori informazioni sui requisiti e sulle limitazioni per abilitare l'archiviazione basata su cloud e il supporto Teams per gli utenti locali, vedere [Search for Teams chat data for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
@@ -154,11 +154,11 @@ Per gestire gli utenti supervisionati nelle organizzazioni aziendali di grandi d
     ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
     $i = 0
-    ForEach ($M in $Mbx) 
+    ForEach ($M in $Mbx)
     {
       Write-Host "Adding" $M.DisplayName
       Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
-      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded
       $i++
     }
     Write-Host $i "Mailboxes added to supervisory review distribution group."
@@ -179,14 +179,14 @@ Per altre informazioni sulla configurazione di Yammer in modalità nativa, vedi:
 - [Configurare la rete Yammer per la modalità nativa per Microsoft 365](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Passaggio 5 (obbligatorio): creare un criterio di conformità delle comunicazioni
-  
->[!Important]
->L'utilizzo di PowerShell per creare e gestire i criteri di conformità delle comunicazioni non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella soluzione di conformità Microsoft 365 [comunicazione.](https://compliance.microsoft.com/supervisoryreview)
 
-1. Accedere usando [https://compliance.microsoft.com](https://compliance.microsoft.com) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
+> [!IMPORTANT]
+> L'utilizzo di PowerShell per creare e gestire i criteri di conformità delle comunicazioni non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella soluzione di conformità Microsoft 365 [comunicazione.](https://compliance.microsoft.com/supervisoryreview)
 
-2. Nel Centro Microsoft 365 conformità selezionare **Conformità comunicazioni**.
-  
+1. Accedere usando <https://compliance.microsoft.com> le credenziali per un account amministratore nell'Microsoft 365 aziendale.
+
+2. Nell'Centro conformità Microsoft 365, selezionare **Conformità comunicazione.**
+
 3. Selezionare la scheda **Criteri**.
 
 4. Selezionare **Crea criterio** per creare e configurare un nuovo criterio da un modello o per creare e configurare un criterio personalizzato.
@@ -201,8 +201,8 @@ Per altre informazioni sulla configurazione di Yammer in modalità nativa, vedi:
 
     - Scegli un campo condizione limitato, in genere un tipo di informazioni riservate o un dizionario parole chiave da applicare al criterio.
 
-    >[!NOTE]
-    >Se si desidera abilitare il riconoscimento ottico dei caratteri [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) per analizzare le immagini incorporate o allegate nei messaggi per il testo stampato o scritto a mano che soddisfa le condizioni dei criteri, selezionare Personalizza condizioni e percentuale dei criteri e abilitare Estrai testo stampato o scritto a mano dalle immagini per la  >   valutazione. 
+    > [!NOTE]
+    > Se si desidera abilitare il riconoscimento ottico dei caratteri [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) per analizzare le immagini incorporate o allegate nei messaggi per il testo stampato o scritto a mano che soddisfa le condizioni dei criteri, selezionare Personalizza condizioni e percentuale dei criteri e abilitare Estrai testo stampato o scritto a mano dalle immagini per la  >   valutazione. 
 
     Se si sceglie di utilizzare la procedura guidata dei criteri per creare un criterio personalizzato, sarà necessario:
 
@@ -240,7 +240,7 @@ Puoi anche scegliere di abilitare l'anonimizzazione per i nomi utente visualizza
 
 1. Accedere usando [https://compliance.microsoft.com](https://compliance.microsoft.com) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
 
-2. Nel Centro Microsoft 365 conformità passare a **Conformità delle comunicazioni**.
+2. Nel Centro conformità Microsoft 365, andare a **Conformità delle comunicazioni**.
 
 3. Per configurare l'anonimizzazione per i nomi utente, selezionare la **scheda** Privacy.
 

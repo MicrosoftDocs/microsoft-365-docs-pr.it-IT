@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 23c2ed180606e61820c6e736e472aef0ae4933a5
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
-ms.translationtype: HT
+ms.openlocfilehash: f64fcf4908f119e261b07bbc4feaed2151e30187
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445686"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226432"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -52,8 +52,8 @@ I modelli di gestione dei rischi Insider sono condizioni predefinite dei criteri
 
 Esistono specifici indicatori di rischio in genere associati al furto di dati da parte degli utenti che lasciano l'organizzazione. Questo modello di criteri usa indicatori di esfiltrazione per il l'assegnazione del punteggio di rischio ed è incentrato sul rilevamento e sugli avvisi in quest'area di rischio. Il furto di dati da parte di utenti che lasciano l'organizzazione può includere il download di file da SharePoint Online, la stampa di file e la copia di dati in servizi personali di messaggistica e archiviazione cloud all'approssimarsi delle date di dimissioni e di termine del rapporto di lavoro. Usando il connettore HR di Microsoft 365 o l'opzione per monitorare automaticamente l'eliminazione degli account utente in Azure Active Directory per l'organizzazione, questo modello inizia a valutare gli indicatori di rischio relativi a queste attività e la relativa correlazione con lo stato di impiego degli utenti.
 
->[!IMPORTANT]
->Quando si usa questo modello, è possibile configurare un connettore HR di Microsoft 365 in modo da importare periodicamente i dettagli sulle date di fine rapporto o dimissioni per gli utenti dell'organizzazion. Vedere l'articolo [Importare dati con il connettore HR](import-hr-data.md) per istruzioni dettagliate su come configurare il connettore HR di Microsoft 365 per l'organizzazione. Se si sceglie di non usare il connettore HR, quando si configurano gli eventi di attivazione nella creazione guidata criteri è necessario selezionare l'opzione L'account utente è stato eliminato da Azure AD.
+> [!IMPORTANT]
+> Quando si usa questo modello, è possibile configurare un connettore HR di Microsoft 365 in modo da importare periodicamente i dettagli sulle date di fine rapporto o dimissioni per gli utenti dell'organizzazion. Vedere l'articolo [Importare dati con il connettore HR](import-hr-data.md) per istruzioni dettagliate su come configurare il connettore HR di Microsoft 365 per l'organizzazione. Se si sceglie di non usare il connettore HR, quando si configurano gli eventi di attivazione nella creazione guidata criteri è necessario selezionare l'opzione L'account utente è stato eliminato da Azure AD.
 
 ### <a name="general-data-leaks"></a>Fughe di dati generali
 
@@ -74,8 +74,8 @@ Quando si creano o si modificano criteri DLP da usare con i criteri di gestione 
 
     ![Impostazione avviso criterio DLP](../media/insider-risk-DLP-policy-high-severity.png)
 
-     >[!NOTE]
-     >Quando si crea un nuovo criterio DLP usando i modelli predefiniti, è necessario selezionare l'opzione **Creare o personalizzare le regole avanzate di prevenzione della perdita dei dati** per configurare l'impostazione **Report degli incidenti** per il livello di gravità *Alto*.
+     > [!NOTE]
+     > Quando si crea un nuovo criterio DLP usando i modelli predefiniti, è necessario selezionare l'opzione **Creare o personalizzare le regole avanzate di prevenzione della perdita dei dati** per configurare l'impostazione **Report degli incidenti** per il livello di gravità *Alto*.
 
 A ogni criterio di gestione dei rischi Insider creato dal modello **Fughe di dati** può essere assegnato un solo criterio DLP. È consigliabile creare un criterio DLP dedicato che combini le diverse attività da rilevare e che dovranno fungere da eventi di attivazione per i criteri di rischio insider che usano il modello **Fughe di dati**.
 
@@ -164,8 +164,8 @@ Questi criteri di gestione dei rischi Insider possono usare indicatori specifici
 - **Offuscamento**: i segnali di questa categoria sono incentrati sul mascheramento delle attività rischiose da parte degli utenti nell'ambito del criterio. Un'attività di esempio in questa categoria è la ridenominazione dei file in un dispositivo.
 - **Pulizia**: i segnali di questa categoria sono incentrati sulle attività di eliminazione da parte degli utenti nell'ambito del criterio. Un'attività di esempio in questa categoria è l'eliminazione dei file in un dispositivo.
 
->[!NOTE]
->Il rilevamento delle sequenze usa gli indicatori abilitati nelle impostazioni globali per la gestione dei rischi Insider e gli indicatori selezionati in un criterio. Se non sono selezionati gli indicatori appropriati, il rilevamento delle sequenze non funziona.
+> [!NOTE]
+> Il rilevamento delle sequenze usa gli indicatori abilitati nelle impostazioni globali per la gestione dei rischi Insider e gli indicatori selezionati in un criterio. Se non sono selezionati gli indicatori appropriati, il rilevamento delle sequenze non funziona.
 
 È possibile personalizzare singole impostazioni di soglia per ogni tipo di rilevamento sequenza configurato nei criteri. Queste impostazioni di soglia modificano gli avvisi in base al volume di file associati alla sequenza.
 
@@ -182,8 +182,8 @@ Il rilevamento dell'esfiltrazione cumulativa è abilitato per impostazione prede
 - Perdita di dati per utenti con priorità
 - Perdite di dati da parte di utenti scontenti
 
->[!NOTE]
->Il rilevamento dell'esfiltrazione cumulativa usa gli indicatori di esfiltrazione abilitati nelle impostazioni globali per la gestione dei rischi Insider e gli indicatori di esfiltrazione selezionati in un criterio. Di conseguenza, il rilevamento dell'esfiltrazione cumulativa viene valutato solo per gli indicatori di esfiltrazione necessari selezionati.
+> [!NOTE]
+> Il rilevamento dell'esfiltrazione cumulativa usa gli indicatori di esfiltrazione abilitati nelle impostazioni globali per la gestione dei rischi Insider e gli indicatori di esfiltrazione selezionati in un criterio. Di conseguenza, il rilevamento dell'esfiltrazione cumulativa viene valutato solo per gli indicatori di esfiltrazione necessari selezionati.
 
 Quando si abilita il rilevamento dell'esfiltrazione cumulativa per i criteri relativi al furto o alla fuga di dati, informazioni dettagliate sulle attività di esfiltrazione cumulative vengono visualizzate nella scheda **Attività utente** all'interno di un caso di gestione dei rischi Insider.
 
@@ -260,8 +260,8 @@ Completare i passaggi seguenti per creare un nuovo criterio:
 2. Selezionare **Crea criterio** per aprire la creazione guidata criteri.
 3. Nella pagina **Modello criteri** scegliere una categoria di criteri e quindi selezionare il modello per il nuovo criterio. Questi modelli sono costituiti da condizioni e da indicatori che definiscono le attività a rischio da rilevare e analizzare. Esaminare i prerequisiti del modello, gli eventi di attivazione e le attività rilevate per verificare che sia adatto alle proprie esigenze.
 
-    >[!IMPORTANT]
-    >Alcuni modelli di criteri hanno prerequisiti che devono essere configurati perché il criterio possa generare avvisi rilevanti. Se non sono stati configurati i prerequisiti dei criteri applicabili, vedere il **Passaggio 4** descritto in precedenza.
+    > [!IMPORTANT]
+    > Alcuni modelli di criteri hanno prerequisiti che devono essere configurati perché il criterio possa generare avvisi rilevanti. Se non sono stati configurati i prerequisiti dei criteri applicabili, vedere il **Passaggio 4** descritto in precedenza.
 
 4. Selezionare **Avanti** per continuare.
 5. Nella pagina **Nome e descrizione** completare i campi seguenti:
@@ -287,8 +287,8 @@ Completare i passaggi seguenti per creare un nuovo criterio:
 12. Selezionare **Avanti** per continuare.
 13. Nella pagina **Indicatori ed evento di attivazione** verranno visualizzati gli [indicatori](insider-risk-management-settings.md#indicators) definiti come disponibili nelle **** impostazioni dei rischi Insider > **Indicatori**. Se all'inizio della procedura guidata è stato selezionato un modello *Fughe di dati*, è necessario selezionare un criterio di prevenzione della perdita dei dati nell'elenco a discesa **Criteri DLP** per abilitare gli indicatori di attivazione per il criterio oppure selezionare l'evento di attivazione predefinito.
 
-    >[!IMPORTANT]
-    >Se non è possibile selezionare gli indicatori in questa pagina, è necessario selezionare gli indicatori che si vogliono abilitare per tutti i criteri. È possibile usare il pulsante **Abilita indicatori** nella procedura guidata o selezionare gli indicatori nella pagina **Gestione dei rischi Insider** > **Impostazioni** > **Indicatori di criteri**.
+    > [!IMPORTANT]
+    > Se non è possibile selezionare gli indicatori in questa pagina, è necessario selezionare gli indicatori che si vogliono abilitare per tutti i criteri. È possibile usare il pulsante **Abilita indicatori** nella procedura guidata o selezionare gli indicatori nella pagina **Gestione dei rischi Insider** > **Impostazioni** > **Indicatori di criteri**.
 
     Selezionare gli indicatori da applicare al criterio. Se si preferisce non usare le impostazioni di soglia dei criteri predefinite per questi indicatori, disabilitare **Utilizzare le soglie predefinite consigliate da Microsoft** e immettere i valori di soglia per ogni indicatore selezionato.
 
@@ -332,8 +332,8 @@ Per gestire un criterio esistente, completare la procedura seguente:
 12. Selezionare **Avanti** per continuare.
 13. Nella pagina **Indicatori ed evento di attivazione** verranno visualizzati gli [indicatori](insider-risk-management-settings.md#indicators) definiti come disponibili nelle **** impostazioni dei rischi Insider > **Indicatori**. Se all'inizio della procedura guidata è stato selezionato un modello *Fughe di dati*, è necessario selezionare un criterio di prevenzione della perdita dei dati nell'elenco a discesa **Criteri DLP** per abilitare gli indicatori di attivazione per il criterio oppure selezionare l'evento di attivazione predefinito.
 
-    >[!IMPORTANT]
-    >Se non è possibile selezionare gli indicatori in questa pagina, è necessario selezionare gli indicatori che si vogliono abilitare per tutti i criteri. È possibile usare il pulsante **Abilita indicatori** nella procedura guidata o selezionare gli indicatori nella pagina **Gestione dei rischi Insider** > **Impostazioni** > **Indicatori di criteri**.
+    > [!IMPORTANT]
+    > Se non è possibile selezionare gli indicatori in questa pagina, è necessario selezionare gli indicatori che si vogliono abilitare per tutti i criteri. È possibile usare il pulsante **Abilita indicatori** nella procedura guidata o selezionare gli indicatori nella pagina **Gestione dei rischi Insider** > **Impostazioni** > **Indicatori di criteri**.
 
     Selezionare gli indicatori da applicare al criterio. Se si preferisce non usare le impostazioni di soglia dei criteri predefinite per questi indicatori, disabilitare **Utilizzare le soglie predefinite consigliate da Microsoft** e immettere i valori di soglia per ogni indicatore selezionato.
 
@@ -366,8 +366,8 @@ Ecco alcuni scenari in cui può essere utile iniziare immediatamente ad assegnar
 - Si è verificato un incidente che può richiedere l'assegnazione immediata di punteggi di rischio alle attività degli utenti interessati per uno o più criteri
 - Il connettore HR non è stato ancora configurato, ma si vuole iniziare ad assegnare punteggi di rischio alle attività degli utenti per gli eventi HR caricando un file CSV per gli utenti
 
->[!NOTE]
->Possono essere necessario diverse ore prima che i nuovi utenti aggiunti manualmente compaiano nel dashboard **Utenti**. La visualizzazione delle attività dei 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività degli utenti aggiunti manualmente, passare alla scheda **Utenti**, selezionare l'utente nel dashboard **Utenti** e aprire la scheda **Attività utente** nel riquadro dei dettagli.
+> [!NOTE]
+> Possono essere necessario diverse ore prima che i nuovi utenti aggiunti manualmente compaiano nel dashboard **Utenti**. La visualizzazione delle attività dei 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività degli utenti aggiunti manualmente, passare alla scheda **Utenti**, selezionare l'utente nel dashboard **Utenti** e aprire la scheda **Attività utente** nel riquadro dei dettagli.
 
 Per avviare manualmente l'assegnazione del punteggio alle attività degli utenti in uno o più criteri di gestione dei rischi Insider, procedere come segue:
 
@@ -393,8 +393,8 @@ Per interrompere il calcolo del punteggio degli utenti in un criterio, vedere l'
 
 ## <a name="delete-a-policy"></a>Eliminare un criterio
 
->[!NOTE]
->L'eliminazione di un criterio non comporta l'eliminazione degli avvisi attivi o archiviati generati dal criterio.
+> [!NOTE]
+> L'eliminazione di un criterio non comporta l'eliminazione degli avvisi attivi o archiviati generati dal criterio.
 
 Per eliminare un criterio di gestione dei rischi Insider esistente, completare i passaggi seguenti:
 

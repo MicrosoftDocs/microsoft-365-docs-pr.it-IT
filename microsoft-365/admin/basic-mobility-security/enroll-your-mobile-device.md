@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Prima di poter usare Microsoft 365 con il dispositivo, potrebbe essere necessario registrarlo in Dispositivi mobili e sicurezza di base per Microsoft 365.
-ms.openlocfilehash: 2ad0aac331969696bbf53d0b06c18ee5c0ee90f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 9da3424409a950670e3be45354a5c399fec52372
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706167"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228184"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Registrare il dispositivo mobile con Dispositivi mobili e sicurezza di base
 
@@ -31,8 +31,8 @@ L'uso di telefoni, tablet e altri dispositivi mobili per il lavoro è un ottimo 
 
 Le organizzazioni scelgono Dispositivi mobili e sicurezza di base in modo che i dipendenti possano usare i dispositivi mobili per accedere in modo sicuro alla posta elettronica, ai calendari e ai documenti di lavoro, mentre l'azienda protegge dati importanti e soddisfa i requisiti di conformità.Per ulteriori informazioni, vedere [Overview of Basic Mobility and Security for Microsoft 365](overview.md). Per altre info, vedi Quali informazioni possono essere visualizzate [dall'organizzazione quando si registra il dispositivo?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
->[!IMPORTANT] 
->Quando si registra il dispositivo in Dispositivi mobili e sicurezza di base per Microsoft 365, potrebbe essere necessario configurare una password, oltre a consentire all'organizzazione aziendale di cancellare il dispositivo. Una cancellazione del dispositivo può essere eseguita dall'interfaccia di amministrazione di Microsoft 365, ad esempio, per rimuovere tutti i dati dal dispositivo se la password viene immessa in modo errato troppe volte o se i termini di utilizzo sono interrotti.
+> [!IMPORTANT]
+> Quando si registra il dispositivo in Dispositivi mobili e sicurezza di base per Microsoft 365, potrebbe essere necessario configurare una password, oltre a consentire all'organizzazione aziendale di cancellare il dispositivo. Una cancellazione del dispositivo può essere eseguita dal interfaccia di amministrazione di Microsoft 365, ad esempio, per rimuovere tutti i dati dal dispositivo se la password viene immessa in modo errato troppe volte o se i termini di utilizzo sono interrotti.
 
 ## <a name="supported-devices"></a>Dispositivi supportati
 
@@ -46,8 +46,8 @@ Dispositivi mobili e sicurezza di Microsoft 365 ospitati dal servizio Intune fun
 
 Se il dispositivo non è elencato in precedenza ed è necessario usarlo con Dispositivi mobili e sicurezza di base, contattare l'amministratore aziendale o dell'istituto di istruzione.
 
->[!TIP]
->In caso di problemi durante la registrazione del dispositivo, vedi [Risolvere i problemi relativi alla mobilità e alla sicurezza di base.](troubleshoot.md)
+> [!TIP]
+> In caso di problemi durante la registrazione del dispositivo, vedi [Risolvere i problemi relativi alla mobilità e alla sicurezza di base.](troubleshoot.md)
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Configurare il dispositivo mobile con Intune e Dispositivi mobili e sicurezza di base
 
@@ -55,8 +55,8 @@ Il Portale aziendale Intune consente a un dispositivo di essere gestito da Micro
 
 ### <a name="iphone-or-ipad"></a>iPhone o iPad
 
->[!TIP]
->Non sarà possibile inviare e ricevere posta elettronica finché non si completa questo passaggio.
+> [!TIP]
+> Non sarà possibile inviare e ricevere posta elettronica finché non si completa questo passaggio.
 
 Vai all'App Store di Apple e scarica e installa Portale aziendale Intune.
 
@@ -64,8 +64,8 @@ Per connettere e configurare il telefono o il tablet iOS con il portale aziendal
 
 ### <a name="android-phone-or-tablet"></a>Telefono o tablet Android
 
->[!TIP]
->Non sarà possibile inviare e ricevere posta elettronica finché non si completa questo passaggio.
+> [!TIP]
+> Non sarà possibile inviare e ricevere posta elettronica finché non si completa questo passaggio.
 
 Vai a Google Play Store e scarica e installa Portale aziendale Intune.
 

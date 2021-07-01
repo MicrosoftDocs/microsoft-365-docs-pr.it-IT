@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Rimuovere gruppi o criteri per disattivare Dispositivi mobili e sicurezza di base.
-ms.openlocfilehash: 1d81aed01193fb2ba821ebc055958ac6cd8ac382
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 7ec4ec0d47668c21824d8e01e3845d637b9b0922
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023870"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228136"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>Disabilitare Basic Mobility + Security
 
@@ -29,16 +29,16 @@ Per disattivare in modo efficace Dispositivi mobili e sicurezza di base, rimuovi
 
 - Disabilita Dispositivi mobili e sicurezza di base per tutti rimuovendo tutti i criteri di dispositivi mobili e di sicurezza di base.
 
-Queste opzioni rimuovono l'applicazione di sicurezza e mobilità di base per i dispositivi dell'organizzazione. Purtroppo, non puoi semplicemente "annullare il provisioning" di Base Mobility and Security dopo aver configurato il provisioning. 
+Queste opzioni rimuovono l'applicazione di sicurezza e mobilità di base per i dispositivi dell'organizzazione. Purtroppo, non puoi semplicemente "annullare il provisioning" di Base Mobility and Security dopo aver configurato il provisioning.
 
->[!IMPORTANT]
->Tenere presente l'impatto sui dispositivi degli utenti quando si rimuovono i gruppi di sicurezza degli utenti dai criteri o si rimuovono i criteri stessi. Ad esempio, i profili di posta elettronica e i messaggi di posta elettronica memorizzati nella cache potrebbero essere rimossi, a seconda del dispositivo. Per altre info, vedi  [Cosa succede quando elimini un criterio o rimuovi un utente dal criterio?](../../admin/basic-mobility-security/create-device-security-policies.md)
+> [!IMPORTANT]
+> Tenere presente l'impatto sui dispositivi degli utenti quando si rimuovono i gruppi di sicurezza degli utenti dai criteri o si rimuovono i criteri stessi. Ad esempio, i profili di posta elettronica e i messaggi di posta elettronica memorizzati nella cache potrebbero essere rimossi, a seconda del dispositivo. Per altre info, vedi  [Cosa succede quando elimini un criterio o rimuovi un utente dal criterio?](../../admin/basic-mobility-security/create-device-security-policies.md)
 
 ## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Rimuovere i gruppi di sicurezza degli utenti dai criteri dei dispositivi mobili e di sicurezza di base
 
 1. Nel browser digitare:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2. Seleziona un criterio dispositivo e seleziona **Modifica criterio.** 
+2. Seleziona un criterio dispositivo e seleziona **Modifica criterio.**
 
 3. Nella pagina  **Distribuzione**   selezionare **Rimuovi**.
 
@@ -48,11 +48,11 @@ Queste opzioni rimuovono l'applicazione di sicurezza e mobilità di base per i d
 
 ## <a name="remove-basic-mobility-and-security-device-policies"></a>Rimuovere i criteri dei dispositivi mobili e di sicurezza di base
 
-1.  Nel browser digitare:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) . 
+1. Nel browser digitare:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2.  Seleziona un criterio dispositivo e quindi seleziona  **Elimina criterio.**
-    
-3.  Nella finestra di dialogo Avviso selezionare **Sì.**
+2. Seleziona un criterio dispositivo e quindi seleziona  **Elimina criterio.**
 
->[!NOTE]
->Per altri passaggi per sbloccare i dispositivi se i dispositivi dell'organizzazione sono ancora in uno stato [bloccato,](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)vedi il post di blog Rimozione del controllo di accesso da Gestione dispositivi mobili per Office 365 .
+3. Nella finestra di dialogo Avviso selezionare **Sì.**
+
+> [!NOTE]
+> Per altri passaggi per sbloccare i dispositivi se i dispositivi dell'organizzazione sono ancora in uno stato [bloccato,](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)vedi il post di blog Rimozione del controllo di accesso da Gestione dispositivi mobili per Office 365 .

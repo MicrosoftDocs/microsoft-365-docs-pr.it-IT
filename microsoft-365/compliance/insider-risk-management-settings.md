@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1dd61570a0695124fdd675241535dec7d288a627
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624694"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226384"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introduzione alle impostazioni di gestione dei rischi insider
 
@@ -70,8 +70,8 @@ In alcuni casi, è possibile limitare gli indicatori dei criteri di rischio insi
 
 Per definire gli indicatori dei criteri di rischio insider abilitati in tutti i criteri di rischio insider, passare a **Impostazioni di** rischio Insider Indicatori e selezionare uno o più indicatori di  >   criteri. Gli indicatori selezionati nella pagina Impostazioni indicatori non possono essere configurati singolarmente durante la creazione o la modifica di un criterio di rischio insider nella procedura guidata dei criteri.
 
->[!NOTE]
->La visualizzazione dei nuovi utenti aggiunti manualmente nel dashboard Utenti può richiedere **diverse ore.** La visualizzazione delle attività dei 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **dashboard** Utenti e aprire la **scheda Attività** utente nel riquadro dei dettagli.
+> [!NOTE]
+> La visualizzazione dei nuovi utenti aggiunti manualmente nel dashboard Utenti può richiedere **diverse ore.** La visualizzazione delle attività dei 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **dashboard** Utenti e aprire la **scheda Attività** utente nel riquadro dei dettagli.
 
 ### <a name="enable-device-indicators-and-onboard-devices"></a>Abilitare gli indicatori di dispositivo e i dispositivi di onboard
 <a name="OnboardDevices"> </a>
@@ -199,8 +199,8 @@ Gli avvisi di Defender per Endpoint vengono importati ogni giorno. A seconda del
 
 Ad esempio, se si seleziona *Nuovo,* *In* corso e Risolto per questa impostazione, quando viene generato un avviso di Microsoft Defender per endpoint e lo stato è *Nuovo*, viene importata un'attività di avviso iniziale per l'utente a rischio insider.  Quando lo stato di valutazione di Defender for Endpoint viene modificato *in In* corso, viene importata una seconda attività per questo avviso per l'utente a rischio insider. Quando lo stato finale di valutazione defender per endpoint è impostato su *Risolto,* viene importata una terza attività per questo avviso per l'utente a rischio insider. Questa funzionalità consente agli investigatori di seguire la progressione degli avvisi di Defender for Endpoint e di scegliere il livello di visibilità richiesto dall'indagine.
 
->[!IMPORTANT]
->Per importare gli avvisi di violazione della sicurezza è necessario configurare Microsoft Defender for endpoint nell'organizzazione e abilitarlo per l'integrazione della gestione dei rischi Insider in Defender Security Center. Per altre informazioni sulla configurazione di Defender per Endpoint per l'integrazione della gestione dei rischi Insider, vedere [Configurare le funzionalità avanzate in Defender per endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
+> [!IMPORTANT]
+> Per importare gli avvisi di violazione della sicurezza è necessario configurare Microsoft Defender for endpoint nell'organizzazione e abilitarlo per l'integrazione della gestione dei rischi Insider in Defender Security Center. Per altre informazioni sulla configurazione di Defender per Endpoint per l'integrazione della gestione dei rischi Insider, vedere [Configurare le funzionalità avanzate in Defender per endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### <a name="domains-preview"></a>Domini (anteprima)
 
@@ -249,7 +249,7 @@ I campi e i valori seguenti vengono esportati per gli avvisi di gestione dei ris
 | Gravità | Gravità dell'avviso. I valori *sono High,* *Medium* o *Low.* |
 | Origine | Origine dell'avviso. Il valore è *Office 365 Sicurezza & Conformità*. |
 | Stato | Stato dell'avviso. I valori *sono Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), *Resolved* (*Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
-| Version | Versione dello schema di avviso di sicurezza e conformità. |
+| Versione | Versione dello schema di avviso di sicurezza e conformità. |
 
 I campi e i valori seguenti vengono esportati per gli avvisi di gestione dei rischi insider per lo schema comune dell'API Office 365 [management.](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)
 
@@ -272,11 +272,11 @@ Ad esempio, è necessario proteggere da perdite di dati per un progetto estremam
 
 ### <a name="create-a-priority-user-group"></a>Creare un gruppo di utenti con priorità
 
-Per creare un nuovo gruppo di utenti con priorità, si utilizzerà l'impostazione dei controlli nella soluzione di gestione dei rischi **Insider** nel Centro Microsoft 365 conformità. Per creare un gruppo di utenti con priorità, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.*
+Per creare un nuovo gruppo di utenti con priorità, userai i controlli di impostazione nella soluzione di gestione dei rischi **Insider** nella Centro conformità Microsoft 365. Per creare un gruppo di utenti con priorità, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.*
 
 Completare la procedura seguente per creare un gruppo di utenti con priorità:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare Impostazioni **rischio Insider.**
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona Impostazioni rischio **Insider**.
 2. Selezionare la **scheda Priorità gruppi di** utenti
 3. Nella scheda **Gruppi di utenti con priorità** selezionare Crea gruppo di utenti con priorità **per** avviare la creazione guidata del gruppo.
 4. Nella pagina **Definisci gruppo** completare i campi seguenti:
@@ -290,11 +290,11 @@ Completare la procedura seguente per creare un gruppo di utenti con priorità:
 
 ### <a name="update-a-priority-user-group"></a>Aggiornare un gruppo di utenti con priorità
 
-Per aggiornare un gruppo di utenti con priorità esistente, si utilizzerà l'impostazione dei controlli nella soluzione di gestione dei rischi **Insider** nel Centro Microsoft 365 conformità. Per aggiornare un gruppo di utenti con priorità, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.*
+Per aggiornare un gruppo di utenti con priorità esistente, userai i controlli di impostazione nella soluzione di gestione dei rischi **Insider** nella Centro conformità Microsoft 365. Per aggiornare un gruppo di utenti con priorità, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.*
 
 Completare la procedura seguente per modificare un gruppo di utenti con priorità:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare Impostazioni **rischio Insider.**
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona Impostazioni rischio **Insider**.
 2. Selezionare la **scheda Priorità gruppi di** utenti
 3. Selezionare il gruppo di utenti con priorità che si desidera modificare e selezionare **Modifica gruppo.**
 4. Nella pagina **Definisci gruppo** aggiornare il campo Descrizione, se necessario. Non è possibile aggiornare il nome del gruppo di utenti con priorità. Selezionare **Avanti** per continuare.
@@ -304,14 +304,14 @@ Completare la procedura seguente per modificare un gruppo di utenti con priorit�
 
 ### <a name="delete-a-priority-user-group"></a>Eliminare un gruppo di utenti con priorità
 
-Per eliminare un gruppo di utenti con priorità esistente, si utilizzerà l'impostazione dei controlli nella soluzione di gestione dei rischi **Insider** nel Centro Microsoft 365 conformità. Per eliminare un gruppo di utenti con priorità, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.*
+Per eliminare un gruppo di utenti con priorità esistente, userai i controlli di impostazione nella soluzione di gestione dei rischi **Insider** nella Centro conformità Microsoft 365. Per eliminare un gruppo di utenti con priorità, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.*
 
->[!IMPORTANT]
->L'eliminazione di un gruppo di utenti con priorità lo rimuoverà da qualsiasi criterio attivo a cui è assegnato. Se si elimina un gruppo di utenti con priorità assegnato a un criterio attivo, il criterio non conterrà utenti nell'ambito e sarà effettivamente inattivo e non creerà avvisi.
+> [!IMPORTANT]
+> L'eliminazione di un gruppo di utenti con priorità lo rimuoverà da qualsiasi criterio attivo a cui è assegnato. Se si elimina un gruppo di utenti con priorità assegnato a un criterio attivo, il criterio non conterrà utenti nell'ambito e sarà effettivamente inattivo e non creerà avvisi.
 
 Completare la procedura seguente per eliminare un gruppo di utenti con priorità:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare Impostazioni **rischio Insider.**
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona Impostazioni rischio **Insider**.
 2. Selezionare la **scheda Priorità gruppi di** utenti
 3. Selezionare il gruppo di utenti con priorità che si desidera modificare e scegliere **Elimina** dal menu dashboard.
 4. Nella finestra **di dialogo** Elimina selezionare **Sì** per eliminare il gruppo di utenti con priorità oppure **scegliere Annulla** per tornare al dashboard.
@@ -330,16 +330,16 @@ Si sceglie di abilitare il connettore dati di badging fisico in Microsoft 365 im
 
 ### <a name="configure-priority-physical-assets"></a>Configurare asset fisici con priorità
 
-Per configurare gli asset fisici con priorità, si configurerà il connettore di badging fisico e si useranno i controlli delle impostazioni nella soluzione di gestione dei rischi **Insider** nel Centro Microsoft 365 conformità. Per configurare gli asset fisici con priorità, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin*.
+Per configurare gli asset fisici con priorità, è necessario configurare il connettore di badging fisico e utilizzare i controlli di impostazione nella soluzione di gestione dei rischi **Insider** nella Centro conformità Microsoft 365. Per configurare gli asset fisici con priorità, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin*.
 
 Completare la procedura seguente per configurare gli asset fisici con priorità:
 
 1. Seguire i passaggi di configurazione per la gestione dei rischi insider [nell'articolo Introduzione alla gestione dei rischi](insider-risk-management-configure.md) insider. Nel passaggio 3, assicurarsi di configurare il connettore di badging fisico.
 
-    >[!IMPORTANT]
-    >Per consentire ai criteri di gestione dei rischi insider di usare e correlare i dati del segnale relativi agli utenti in uscita e terminati con i dati degli eventi dalle piattaforme di controllo fisico e di accesso, è inoltre necessario configurare il connettore hr Microsoft 365. Se si abilita il connettore di badging fisico senza abilitare il connettore hr di Microsoft 365, i criteri di gestione dei rischi insider e processeranno solo gli eventi per le attività di accesso fisico per gli utenti dell'organizzazione.
+    > [!IMPORTANT]
+    > Per consentire ai criteri di gestione dei rischi insider di usare e correlare i dati del segnale relativi agli utenti in uscita e terminati con i dati degli eventi dalle piattaforme di controllo fisico e di accesso, è inoltre necessario configurare il connettore hr Microsoft 365. Se si abilita il connettore di badging fisico senza abilitare il connettore hr di Microsoft 365, i criteri di gestione dei rischi insider e processeranno solo gli eventi per le attività di accesso fisico per gli utenti dell'organizzazione.
 
-2. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare Impostazioni **rischio Insider** Priorità asset  >  **fisici.**
+2. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona Impostazioni rischio **Insider** Priorità  >  **asset fisici**.
 3. Nella  pagina Asset fisici di priorità è possibile aggiungere manualmente gli ID risorsa fisica che si desidera monitorare per gli eventi degli asset importati dal connettore di badging fisico oppure importare un file .csv di tutti gli ID delle risorse fisiche importati dal connettore di protezione fisica: a) Per aggiungere manualmente gli ID delle risorse fisiche, scegliere Aggiungi asset fisici di **priorità,** immettere un ID risorsa fisica, quindi selezionare **Aggiungi**. Immetti altri ID risorsa fisica e quindi seleziona Aggiungi asset fisici **di priorità** per salvare tutti gli asset immessi.
     b) Per aggiungere un elenco di ID risorsa fisica da un file .csv, scegliere Importa asset fisici **con priorità**. Nella finestra di dialogo Esplora file seleziona .csv file che vuoi importare, quindi seleziona **Apri.** Gli ID risorsa fisica dei file .csv vengono aggiunti all'elenco.
 4. Passare alla **scheda Indicatori dei** criteri in Impostazioni.
@@ -348,14 +348,14 @@ Completare la procedura seguente per configurare gli asset fisici con priorità:
 
 ### <a name="delete-a-priority-physical-asset"></a>Eliminare un asset fisico con priorità
 
-Per eliminare un asset fisico con priorità esistente, si utilizzerà l'impostazione dei controlli nella soluzione di gestione dei rischi Insider nel Centro Microsoft 365 conformità. Per eliminare un asset fisico con priorità, è necessario essere membri del gruppo di ruoli Insider Risk Management o Insider Risk Management Admin.
+Per eliminare un asset fisico con priorità esistente, userai i controlli di impostazione nella soluzione di gestione dei rischi Insider nella Centro conformità Microsoft 365. Per eliminare un asset fisico con priorità, è necessario essere membri del gruppo di ruoli Insider Risk Management o Insider Risk Management Admin.
 
->[!IMPORTANT]
->L'eliminazione di un asset fisico di priorità lo rimuove dall'esame da qualsiasi criterio attivo in cui era incluso in precedenza. Gli avvisi generati dalle attività associate all'asset fisico con priorità non vengono eliminati.
+> [!IMPORTANT]
+> L'eliminazione di un asset fisico di priorità lo rimuove dall'esame da qualsiasi criterio attivo in cui era incluso in precedenza. Gli avvisi generati dalle attività associate all'asset fisico con priorità non vengono eliminati.
 
 Completare la procedura seguente per eliminare un asset fisico con priorità:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare Impostazioni **rischio Insider** Priorità asset  >  **fisici.**
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona Impostazioni rischio **Insider** Priorità  >  **asset fisici**.
 2. Nella pagina **Priorità risorse fisiche** selezionare l'asset che si desidera eliminare.
 3. Scegliere **Elimina** dal menu azione per eliminare la risorsa.
 
@@ -379,13 +379,13 @@ I modelli di Power Automate seguenti vengono forniti ai clienti per supportare l
 
 ### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Creare un flusso di Power Automate dal modello di gestione dei rischi insider
 
-Per creare un flusso di Power Automate da un modello di gestione dei rischi insider consigliato, si useranno i controlli delle impostazioni nella soluzione di gestione dei rischi  **Insider** nel Centro conformità Microsoft 365 o nell'opzione Gestisci flussi **di Power Automate** dal controllo **Automate** quando si lavora direttamente nei dashboard Casi o **Utenti.**
+Per creare un flusso di Power Automate da un modello di gestione dei rischi insider consigliato, userai i controlli delle impostazioni nella soluzione di gestione dei rischi  **Insider** nel Centro conformità Microsoft 365 o nell'opzione Gestisci flussi **di Power Automate** dal **controllo Automatizza** quando lavori direttamente nei dashboard Casi o **Utenti.**
 
 Per creare un flusso Power Automate nell'area delle impostazioni, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.* Per creare un flusso Power Automate  con l'opzione Gestisci flussi di Power Automate, è necessario essere membri di almeno un gruppo di ruoli di gestione dei rischi insider.
 
 Completare i passaggi seguenti per creare un flusso Power Automate da un modello di gestione dei rischi insider consigliato:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com/)passare a Gestione dei rischi **Insider** e selezionare Impostazioni **rischio Insider** Power Automate  >  **flussi.** È inoltre possibile accedere dalle **pagine dei** **dashboard** Casi o Utenti scegliendo **Automatizza** gestione Power Automate  >  **flussi.**
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/), passare a **Gestione dei** rischi Insider e selezionare Impostazioni **rischio Insider**  >  **Power Automate flussi**. È inoltre possibile accedere dalle **pagine dei** **dashboard** Casi o Utenti scegliendo **Automatizza** gestione Power Automate  >  **flussi.**
 2. Nella pagina **Power Automate flussi** di lavoro selezionare un modello consigliato nella sezione Modelli di gestione dei rischi **insider** che potrebbero piacerti nella pagina.
 3. Il flusso elenca le connessioni incorporate necessarie per il flusso e noterà se gli stati della connessione sono disponibili. Se necessario, aggiornare tutte le connessioni che non vengono visualizzate come disponibili. Selezionare **Continua.**
 4. Per impostazione predefinita, i flussi consigliati sono preconfigurato con i campi di dati del servizio di Microsoft 365 e insider consigliati necessari per completare l'attività assegnata per il flusso. Se necessario, personalizzare i componenti del flusso utilizzando il **controllo Mostra** opzioni avanzate e configurando le proprietà disponibili per il componente di flusso.
@@ -393,8 +393,8 @@ Completare i passaggi seguenti per creare un flusso Power Automate da un modello
 6. Selezionare **Salva bozza** per salvare il flusso per ulteriori configurazioni oppure **selezionare Salva** per completare la configurazione per il flusso.
 7. Selezionare **Chiudi** per tornare alla pagina **Power Automate flusso** di lavoro. Il nuovo modello verrà elencato  come flusso nelle schede Flussi di lavoro ed è automaticamente disponibile dal controllo a discesa **Automate** quando si lavora con i casi di gestione dei rischi insider per l'utente che crea il flusso.
 
->[!IMPORTANT]
->Se altri utenti dell'organizzazione devono accedere al flusso, il flusso deve essere condiviso.
+> [!IMPORTANT]
+> Se altri utenti dell'organizzazione devono accedere al flusso, il flusso deve essere condiviso.
 
 ![Gestione dei rischi insider consente di automatizzare i flussi](../media/insider-risk-settings-power-automate-flows.png)
 
@@ -419,13 +419,13 @@ Completare la procedura seguente per creare un modello di Power Automate persona
 
 ### <a name="share-a-power-automate-flow"></a>Condividere un Power Automate flusso
 
-Per impostazione predefinita, Power Automate flussi creati da un utente sono disponibili solo per tale utente. Per consentire ad altri utenti di gestione dei rischi insider di accedere e usare un flusso, il flusso deve essere condiviso dall'autore del flusso. Per condividere un flusso, si useranno i controlli delle impostazioni nella soluzione di gestione dei rischi **Insider** nel Centro conformità Microsoft 365 o  nell'opzione Gestisci flussi di **Power Automate** dal controllo Automate quando si lavora direttamente nelle pagine del **dashboard** Casi o Utenti. Dopo aver condiviso un flusso, tutti gli utenti con cui è stato condiviso  possono accedere al flusso nell'elenco a discesa **Automatizza** controllo nei dashboard del caso **e dell'utente.**
+Per impostazione predefinita, Power Automate flussi creati da un utente sono disponibili solo per tale utente. Per consentire ad altri utenti di gestione dei rischi insider di accedere e usare un flusso, il flusso deve essere condiviso dall'autore del flusso. Per condividere un flusso, userai i controlli delle impostazioni nella soluzione di gestione dei rischi **Insider** nel Centro conformità Microsoft 365 o nell'opzione Gestisci flussi di Power Automate dal controllo **Automatizza** quando lavori direttamente nelle pagine del **dashboard** Casi o Utenti.  Dopo aver condiviso un flusso, tutti gli utenti con cui è stato condiviso  possono accedere al flusso nell'elenco a discesa **Automatizza** controllo nei dashboard del caso **e dell'utente.**
 
 Per condividere un flusso Power Automate nell'area delle impostazioni, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.* Per condividere un flusso Power Automate con l'opzione **Gestisci** flussi Power Automate, è necessario essere membri di almeno un gruppo di ruoli di gestione dei rischi insider.
 
 Completare la procedura seguente per condividere un Power Automate flusso:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare Impostazioni **rischio Insider** Power Automate  >  **flussi.** È inoltre possibile accedere dalle **pagine dei** **dashboard** Casi o Utenti scegliendo **Automatizza** gestione Power Automate  >  **flussi.**
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei** rischi Insider e selezionare Impostazioni **rischio Insider**  >  **Power Automate flussi**. È inoltre possibile accedere dalle **pagine dei** **dashboard** Casi o Utenti scegliendo **Automatizza** gestione Power Automate  >  **flussi.**
 2. Nella pagina **Power Automate flussi** di lavoro selezionare la scheda **Flussi del** team o Flussi **del** team.
 3. Seleziona il flusso da condividere, quindi scegli **Condividi** dal menu delle opzioni del flusso.
 4. Nella pagina di condivisione del flusso immettere il nome dell'utente o del gruppo che si desidera aggiungere come proprietario del flusso.
@@ -433,26 +433,26 @@ Completare la procedura seguente per condividere un Power Automate flusso:
 
 ### <a name="edit-a-power-automate-flow"></a>Modificare un Power Automate flusso
 
-Per modificare un flusso, verranno utilizzati i controlli delle impostazioni nella soluzione di gestione dei rischi **Insider** nel Centro conformità Microsoft 365 o  nell'opzione Gestisci flussi di **Power Automate** dal controllo **Automate** quando si lavora direttamente nei **dashboard** Casi o Utenti.
+Per modificare un flusso, userai i  controlli delle impostazioni nella soluzione di gestione dei rischi **Insider**  nel Centro conformità Microsoft 365 o nell'opzione Gestisci flussi **di Power Automate** dal controllo Automatizza quando lavori direttamente nei **dashboard** Casi o Utenti.
 
 Per modificare un flusso Power Automate nell'area delle impostazioni, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.* Per modificare un flusso Power Automate  con l'opzione Gestisci Power Automate flussi di lavoro, è necessario essere membri di almeno un gruppo di ruoli di gestione dei rischi insider.
 
 Completare la procedura seguente per modificare un Power Automate flusso:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare Impostazioni **rischio Insider** Power Automate  >  **flussi.** È inoltre possibile accedere dalle **pagine dei** **dashboard** Casi o Utenti scegliendo **Automatizza** gestione Power Automate  >  **flussi.**
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei** rischi Insider e selezionare Impostazioni **rischio Insider**  >  **Power Automate flussi**. È inoltre possibile accedere dalle **pagine dei** **dashboard** Casi o Utenti scegliendo **Automatizza** gestione Power Automate  >  **flussi.**
 2. Nella pagina **Power Automate flussi** selezionare un flusso da modificare e scegliere **Modifica** dal menu controllo di flusso.
 3. Selezionare i **puntini di sospensione Impostazioni** modificare l'impostazione di un componente di flusso o i puntini di sospensione  >     >  **Elimina** per eliminare un componente di flusso.
 4. Selezionare **Salva** e quindi **Chiudi per** completare la modifica del flusso.
 
 ### <a name="delete-a-power-automate-flow"></a>Eliminare un Power Automate flusso
 
-Per eliminare un flusso, si useranno i controlli delle impostazioni nella soluzione di gestione dei rischi **Insider** nel Centro conformità di Microsoft 365  o nell'opzione Gestisci flussi di **Power Automate** dal controllo **Automate** quando si lavora direttamente nei **dashboard** Casi o Utenti. Quando un flusso viene eliminato, viene rimosso come opzione per tutti gli utenti.
+Per eliminare un flusso, userai i controlli delle impostazioni nella soluzione di gestione dei rischi **Insider** nel Centro conformità Microsoft 365 o nell'opzione Gestisci flussi di Power Automate dal controllo  **Automatizza** quando lavori direttamente nei **dashboard** Casi o Utenti.  Quando un flusso viene eliminato, viene rimosso come opzione per tutti gli utenti.
 
 Per eliminare un Power Automate nell'area delle impostazioni, è necessario essere membri del gruppo di ruoli *Insider Risk Management* o Insider Risk Management *Admin.* Per eliminare un flusso Power Automate con l'opzione **Gestisci** Power Automate flussi di lavoro, è necessario essere membri di almeno un gruppo di ruoli di gestione dei rischi insider.
 
 Completare la procedura seguente per eliminare un Power Automate flusso:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a Gestione dei rischi **Insider** e selezionare Impostazioni **rischio Insider** Power Automate  >  **flussi.** È inoltre possibile accedere dalle **pagine dei** **dashboard** Casi o Utenti scegliendo **Automatizza** gestione Power Automate  >  **flussi.**
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei** rischi Insider e selezionare Impostazioni **rischio Insider**  >  **Power Automate flussi**. È inoltre possibile accedere dalle **pagine dei** **dashboard** Casi o Utenti scegliendo **Automatizza** gestione Power Automate  >  **flussi.**
 2. Nella pagina **Power Automate flussi** selezionare un flusso da eliminare e scegliere **Elimina** dal menu controllo di flusso.
 3. Nella finestra di dialogo di conferma dell'eliminazione, selezionare **Elimina** per rimuovere il flusso oppure **scegliere Annulla** per uscire dall'azione di eliminazione.
 
@@ -470,7 +470,7 @@ Per ulteriori informazioni su come usare team e canali in Microsoft Teams, veder
 
 L'abilitazione Microsoft Teams supporto per i casi è facile e veloce da configurare. Per abilitare la Microsoft Teams per la gestione dei rischi insider, completare i passaggi seguenti:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a **Gestione** dei rischi Insider Impostazioni dei  >  **rischi Insider.**
+1. Nella finestra di [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei rischi Insider** Impostazioni rischio  >  **Insider**.
 2. Selezionare la **Microsoft Teams.**
 3. Abilitare Microsoft Teams per la gestione dei rischi insider.
 4. Selezionare **Salva** per configurare ed uscire.
@@ -485,7 +485,7 @@ Gli utenti hanno bisogno dell'autorizzazione per creare Microsoft 365 gruppi nel
 
 Per creare un team per un caso, userai il controllo Crea team Microsoft quando lavori direttamente in un caso esistente. Completare la procedura seguente per creare un nuovo team:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a **Casi di** gestione dei rischi Insider e selezionare un caso  >   esistente.
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Casi di** gestione dei rischi Insider e selezionare un  >   caso esistente.
 2. Scegliere Crea Microsoft Team dal menu **azione del caso.**
 3. Nel campo **Nome team** immettere un nome per il nuovo team Microsoft Teams team.
 4. Seleziona **Crea team Microsoft** e quindi seleziona **Chiudi.**
@@ -516,7 +516,7 @@ Le informazioni analitiche delle analisi si basano sugli stessi segnali di attiv
 Per abilitare l'analisi dei rischi insider, è necessario essere membri del gruppo di ruoli Insider Risk Management, Insider Risk Management Admin o Microsoft 365 Global admin.
 Completare la procedura seguente per abilitare l'analisi dei rischi insider:
 
-1. Nel Centro [Microsoft 365 conformità](https://compliance.microsoft.com)passare a Gestione dei **rischi Insider.**
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei rischi Insider**.
 2. Selezionare **Esegui analisi** nella scheda Analisi per i rischi insider **nella** scheda Panoramica della gestione dei rischi **insider.** In questo modo viene attivata l'analisi dell'analisi per l'organizzazione. Puoi anche attivare l'analisi nell'organizzazione accedendo a Impostazioni dei rischi **Insider** Analisi e abilitando  >   **l'analisi dell'attività** utente del tenant per identificare potenziali rischi insider.
 3. Nel riquadro **Dei dettagli di** Analisi selezionare Esegui **analisi** per avviare l'analisi per l'organizzazione. I risultati dell'analisi analitica possono richiedere fino a 24 ore prima che i dati analitici siano disponibili come report per la revisione.
 
@@ -546,6 +546,6 @@ Per disattivare l'analisi dei rischi insider, è necessario essere membri del gr
 
 Completare la procedura seguente per disattivare l'analisi dei rischi insider:
 
-1. Nel Centro [Microsoft 365 conformità](https://compliance.microsoft.com)passare a Gestione dei **rischi Insider.**
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei rischi Insider**.
 2. Seleziona **La pagina Analisi delle impostazioni dei rischi**  >  **Insider.**
 3. Nella pagina **Analisi** disattivare Analizza **l'attività** utente del tenant per identificare potenziali rischi insider.

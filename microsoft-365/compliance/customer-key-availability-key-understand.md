@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni sulla chiave di disponibilità utilizzata per recuperare le chiavi cliente perse.
-ms.openlocfilehash: 4f4dfdff0aa1c7ebe6dd1266c82c6fd290913a3e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: a4db6eab78feebd171dbfd5c8b45252837f229d0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345095"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227080"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Informazioni sulle chiavi di disponibilità per Customer Key
 
@@ -155,8 +155,8 @@ Microsoft 365 attiva la chiave di disponibilità solo in circostanze specifiche.
 
        - In questo caso, la chiave di disponibilità verrà utilizzata solo per le azioni di sistema e non per le azioni dell'utente, la richiesta dell'utente avrà esito negativo e l'utente riceverà un messaggio di errore.
 
->[!IMPORTANT]
->Microsoft 365 codice del servizio ha sempre un token di accesso valido per il ragionamento sui dati dei clienti per fornire servizi cloud a valore aggiunto. Pertanto, fino a quando la chiave di disponibilità non è stata eliminata, può essere utilizzata come fallback per le azioni avviate o interne a Exchange Online e Skype for Business, ad esempio la creazione dell'indice di ricerca o lo spostamento delle cassette postali. Questo vale sia per gli errori temporanei che per le richieste ACCESS DENIED per Azure Key Vault.
+> [!IMPORTANT]
+> Microsoft 365 codice del servizio ha sempre un token di accesso valido per il ragionamento sui dati dei clienti per fornire servizi cloud a valore aggiunto. Pertanto, fino a quando la chiave di disponibilità non è stata eliminata, può essere utilizzata come fallback per le azioni avviate o interne a Exchange Online e Skype for Business, ad esempio la creazione dell'indice di ricerca o lo spostamento delle cassette postali. Questo vale sia per gli errori temporanei che per le richieste ACCESS DENIED per Azure Key Vault.
 
 ### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Trigger per SharePoint online, OneDrive for Business e Teams file
 

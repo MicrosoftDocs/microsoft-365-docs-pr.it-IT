@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e59fb8a32275a2ef7c4865e93400b97ad5560df5
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 802f3fdacba62839b93b8441502334ae486cdacc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820000"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226324"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Dashboard utenti per la gestione dei rischi Insider
 
@@ -45,15 +45,15 @@ Il **dashboard Utenti include** gli utenti aggiunti ai criteri di gestione dei r
 
 Quando un utente viene aggiunto manualmente a un criterio, le attività utente per i 90 giorni precedenti vengono classificate e aggiunte alla sequenza temporale **attività** utente. Ad esempio, si dispone di un utente attualmente non assegnato punteggi di rischio per un criterio di rischio insider e l'utente ha attività di perdita di dati segnalate al reparto legale dell'organizzazione. L'ufficio legale consiglia di configurare nuovi requisiti di monitoraggio a breve termine per l'utente. È possibile assegnare temporaneamente l'utente al *criterio* perdite di dati per un periodo di tempo designato (finestra di attivazione). Tutti gli utenti aggiunti temporaneamente vengono visualizzati nel **dashboard** Utenti perché i requisiti di attivazione degli eventi non sono più necessari.
 
->[!NOTE]
->La visualizzazione dei nuovi utenti aggiunti manualmente nel dashboard Utenti può richiedere **diverse ore.** La visualizzazione delle attività dei 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **dashboard** Utenti e aprire la **scheda Attività** utente nel riquadro dei dettagli.
+> [!NOTE]
+> La visualizzazione dei nuovi utenti aggiunti manualmente nel dashboard Utenti può richiedere **diverse ore.** La visualizzazione delle attività dei 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **dashboard** Utenti e aprire la **scheda Attività** utente nel riquadro dei dettagli.
 
 L'utente viene rimosso automaticamente dal **dashboard** Utenti e il  punteggio si interrompe alla scadenza del tempo definito nella finestra Di attivazione se:
 
 - l'utente non ha altri eventi di attivazione o avvisi dei criteri di rischio insider e
 - se la durata della finestra **di** attivazione definita manualmente è maggiore della durata della finestra di attivazione **del criterio** globale.
 
-**L'impostazione della finestra** di attivazione con la durata più lunga sostituisce sempre l'impostazione **della** finestra di attivazione con una durata più breve. Ad esempio, hai configurato  la finestra  Attivazione nella scheda Temporale dei criteri globali nelle impostazioni globali di gestione dei rischi insider per 15 giorni, che viene applicata automaticamente a tutti i criteri di rischio insider. 
+**L'impostazione della finestra** di attivazione con la durata più lunga sostituisce sempre l'impostazione **della** finestra di attivazione con una durata più breve. Ad esempio, hai configurato  la finestra  Attivazione nella scheda Temporale dei criteri globali nelle impostazioni globali di gestione dei rischi insider per 15 giorni, che viene applicata automaticamente a tutti i criteri di rischio insider.
 
 Si aggiunge temporaneamente un  utente ai criteri di rischio insider perdite di dati e si definiscono 30 giorni come finestra **di attivazione** per l'utente. **L'impostazione della finestra** di attivazione globale di 15 giorni viene ignorata definendo l'impostazione della finestra di attivazione di 30 giorni per l'utente aggiunto temporaneamente.  L'utente aggiunto temporaneamente rimarrà nel **dashboard Utenti** e sarà nell'ambito del criterio per 30 giorni.
 
@@ -71,32 +71,32 @@ Ogni utente visualizzato nel **dashboard Utenti** dispone delle informazioni seg
 
 ![Dashboard degli utenti della gestione dei rischi Insider](../media/insider-risk-users-dashboard.png)
 
->[!NOTE]
->Il numero di utenti visualizzati nel **dashboard** Utenti può essere limitato in alcuni casi, a seconda del volume di avvisi attivi e criteri di corrispondenza. Gli utenti con avvisi attivi vengono visualizzati nel **dashboard** Utenti durante la generazione degli avvisi e possono verificarsi rari casi in cui viene raggiunto il numero massimo di utenti visualizzati. Se questo limite si verifica, gli utenti con avvisi attivi che non vengono visualizzati verranno aggiunti al **dashboard** Utenti quando gli avvisi utente esistenti vengono valutati.
+> [!NOTE]
+> Il numero di utenti visualizzati nel **dashboard** Utenti può essere limitato in alcuni casi, a seconda del volume di avvisi attivi e criteri di corrispondenza. Gli utenti con avvisi attivi vengono visualizzati nel **dashboard** Utenti durante la generazione degli avvisi e possono verificarsi rari casi in cui viene raggiunto il numero massimo di utenti visualizzati. Se questo limite si verifica, gli utenti con avvisi attivi che non vengono visualizzati verranno aggiunti al **dashboard** Utenti quando gli avvisi utente esistenti vengono valutati.
 
 ## <a name="view-user-details"></a>Visualizzare i dettagli utente
 
 Per visualizzare ulteriori dettagli sull'attività di rischio per un utente, aprire il riquadro dei dettagli utente facendo doppio clic su un utente nel **dashboard Utenti.** Nel riquadro dei dettagli è possibile visualizzare le informazioni seguenti:
 
 - **Scheda Profilo** utente
-    - **Nome e titolo**: il nome e il titolo della posizione per l'utente da Azure Active Directory. Questi campi utente saranno anonimi o vuoti se è abilitata l'impostazione di anonimizzazione globale per la gestione dei rischi insider.
-    - **Posta elettronica utente**: Indirizzo di posta elettronica per l'utente.
-    - **Alias**: alias di rete per l'utente.
-    - **Organizzazione o reparto:** l'organizzazione o il reparto per l'utente.
+  - **Nome e titolo**: il nome e il titolo della posizione per l'utente da Azure Active Directory. Questi campi utente saranno anonimi o vuoti se è abilitata l'impostazione di anonimizzazione globale per la gestione dei rischi insider.
+  - **Posta elettronica utente**: Indirizzo di posta elettronica per l'utente.
+  - **Alias**: alias di rete per l'utente.
+  - **Organizzazione o reparto:** l'organizzazione o il reparto per l'utente.
 
 - **Scheda Attività utente**
-    - **Cronologia delle attività degli utenti recenti:** elenca sia gli indicatori di attivazione che gli indicatori di rischio insider per le attività degli utenti fino agli ultimi 180 giorni. Vengono inoltre classificate tutte le attività pertinenti agli indicatori di rischio insider, anche se le attività potrebbero aver generato o meno un avviso di rischio insider. Gli esempi di indicatori di attivazione possono essere una data di rinuncia o l'ultima data di lavoro programmata per l'utente. Gli indicatori di rischio Insider sono attività determinate per avere un elemento di rischio e sono definite nei criteri in cui l'utente è incluso. Le attività di evento e rischio sono elencate con l'elemento più recente elencato per primo.
+  - **Cronologia delle attività degli utenti recenti:** elenca sia gli indicatori di attivazione che gli indicatori di rischio insider per le attività degli utenti fino agli ultimi 180 giorni. Vengono inoltre classificate tutte le attività pertinenti agli indicatori di rischio insider, anche se le attività potrebbero aver generato o meno un avviso di rischio insider. Gli esempi di indicatori di attivazione possono essere una data di rinuncia o l'ultima data di lavoro programmata per l'utente. Gli indicatori di rischio Insider sono attività determinate per avere un elemento di rischio e sono definite nei criteri in cui l'utente è incluso. Le attività di evento e rischio sono elencate con l'elemento più recente elencato per primo.
 
 ## <a name="remove-users-from-in-scope-assignment-to-policies"></a>Rimuovere gli utenti dall'assegnazione nell'ambito ai criteri
 
 In alcuni scenari potrebbe essere necessario interrompere l'assegnazione dei punteggi di rischio all'attività di un utente nei criteri di gestione dei rischi insider. Utilizzare **Rimuovi utenti nella** pagina **Dashboard** utenti per interrompere l'assegnazione dei punteggi di rischio per uno o più utenti da tutti i criteri di gestione dei rischi insider per cui sono attualmente nell'ambito. Questa azione non rimuove gli utenti dall'assegnazione complessiva dei criteri (quando si aggiungono utenti o gruppi a una configurazione di criteri), ma semplicemente rimuove gli utenti dall'elaborazione attiva dai criteri dopo gli eventi di attivazione correnti. Se gli utenti avranno un altro evento di attivazione in futuro, i punteggi di rischio dei criteri inizieranno automaticamente ad essere assegnati di nuovo agli utenti. Eventuali avvisi o casi esistenti per questo utente non verranno rimossi.
 
->[!NOTE]
->Il completamento della rimozione di un utente da un criterio può richiedere alcuni minuti. Al termine, l'utente non sarà più elencato nella pagina Utenti. Se l'utente rimosso ha avvisi o casi attivi, l'utente rimarrà nella pagina Utenti e i dettagli dell'utente mostreranno che non sono più nell'ambito di un criterio.
+> [!NOTE]
+> Il completamento della rimozione di un utente da un criterio può richiedere alcuni minuti. Al termine, l'utente non sarà più elencato nella pagina Utenti. Se l'utente rimosso ha avvisi o casi attivi, l'utente rimarrà nella pagina Utenti e i dettagli dell'utente mostreranno che non sono più nell'ambito di un criterio.
 
 Per rimuovere manualmente gli utenti dallo stato nell'ambito in tutti i criteri di gestione dei rischi insider, eseguire la procedura seguente:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a **Gestione dei rischi Insider** e selezionare la **scheda** Utenti.
+1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei rischi Insider** e selezionare la **scheda** Utenti.
 2. Nel **dashboard Utenti selezionare** l'utente o gli utenti che si desidera rimuovere dall'ambito nei criteri di gestione dei rischi insider.
 3. Selezionare **Rimuovi utenti**.
 4. Nel riquadro **Rimuovi utente** selezionare **Rimuovi** o **Annulla** per ignorare le modifiche e chiudere la finestra di dialogo.

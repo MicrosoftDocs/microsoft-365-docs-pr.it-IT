@@ -18,24 +18,24 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5a9f5a6b218ec7a0e1fe9b05524ea1898b03e370
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: f94d2bbb8a65a4004ee05b9d740f94ae841f9a4e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822130"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227376"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni
 
 ## <a name="policies"></a>Criteri
 
->[!Important]
->L'utilizzo di PowerShell per creare e gestire i criteri di conformità delle comunicazioni non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella soluzione di conformità Microsoft 365 [comunicazione.](https://compliance.microsoft.com/supervisoryreview)
+> [!IMPORTANT]
+> L'utilizzo di PowerShell per creare e gestire i criteri di conformità delle comunicazioni non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella soluzione di conformità Microsoft 365 [comunicazione.](https://compliance.microsoft.com/supervisoryreview)
 
-È possibile creare criteri di conformità delle comunicazioni per le organizzazioni di Microsoft 365 nel Centro conformità Microsoft 365. I criteri di conformità delle comunicazioni definiscono quali comunicazioni e utenti sono soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che le comunicazioni devono soddisfare e specificano chi deve eseguire le revisioni. Gli utenti assegnati al ruolo *Amministratore* conformità comunicazione possono configurare i  criteri e chiunque abbia questo ruolo assegnato può accedere alla pagina Conformità comunicazioni e alle impostazioni globali nel Centro conformità Microsoft 365 comunicazioni. Se necessario, è possibile esportare la cronologia delle modifiche apportate a un criterio in un file .csv (valori delimitati da virgole) che include anche lo stato degli avvisi in attesa di revisione, degli elementi inoltrati e degli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
+È possibile creare criteri di conformità delle comunicazioni per le organizzazioni di Microsoft 365 nel Centro conformità Microsoft 365. I criteri di conformità delle comunicazioni definiscono quali comunicazioni e utenti sono soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che le comunicazioni devono soddisfare e specificano chi deve eseguire le revisioni. Gli utenti assegnati al *ruolo Amministratore* conformità comunicazione possono configurare i  criteri e chiunque abbia questo ruolo assegnato può accedere alla pagina Conformità comunicazioni e alle impostazioni globali nella Centro conformità Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche apportate a un criterio in un file .csv (valori delimitati da virgole) che include anche lo stato degli avvisi in attesa di revisione, degli elementi inoltrati e degli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
 
->[!NOTE]
->I criteri di supervisione creati nel Centro sicurezza & conformità per Office 365 sottoscrizioni non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da una sottoscrizione Office 365 a una sottoscrizione Microsoft 365, è necessario creare nuovi criteri di conformità delle comunicazioni per sostituire i criteri di supervisione esistenti.
+> [!NOTE]
+> I criteri di supervisione creati nel Centro sicurezza & conformità per Office 365 sottoscrizioni non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da una sottoscrizione Office 365 a una sottoscrizione Microsoft 365, è necessario creare nuovi criteri di conformità delle comunicazioni per sostituire i criteri di supervisione esistenti.
 
 ## <a name="policy-templates"></a>Modelli dei criteri
 
@@ -69,10 +69,10 @@ Per riprendere un criterio, passare **alla** pagina Criteri, selezionare un crit
 
 ## <a name="permissions"></a>Autorizzazioni
 
->[!Important]
->Per impostazione predefinita, gli amministratori globali non hanno accesso alle funzionalità di conformità delle comunicazioni. I ruoli assegnati in questo passaggio sono necessari prima che le funzionalità di conformità della comunicazione siano accessibili.
+> [!IMPORTANT]
+> Per impostazione predefinita, gli amministratori globali non hanno accesso alle funzionalità di conformità delle comunicazioni. I ruoli assegnati in questo passaggio sono necessari prima che le funzionalità di conformità della comunicazione siano accessibili.
 
-Esistono cinque gruppi di ruoli utilizzati per configurare le autorizzazioni per gestire le funzionalità di conformità delle comunicazioni. Per rendere **disponibile la** conformità delle comunicazioni come opzione di menu nel Centro conformità di Microsoft 365 e per continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli Communication *Compliance* o Communication *Compliance Admin.* Per accedere e gestire le funzionalità di conformità delle comunicazioni dopo la configurazione iniziale, gli utenti devono essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
+Esistono cinque gruppi di ruoli utilizzati per configurare le autorizzazioni per gestire le funzionalità di conformità delle comunicazioni. Per rendere **disponibile la conformità** delle comunicazioni come opzione di menu in Centro conformità Microsoft 365 e per continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli Communication *Compliance* o Communication *Compliance Admin.* Per accedere e gestire le funzionalità di conformità delle comunicazioni dopo la configurazione iniziale, gli utenti devono essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
 
 A seconda di come si desidera gestire i criteri di comunicazione e gli avvisi, è necessario assegnare gli utenti a gruppi di ruoli specifici. È possibile scegliere di assegnare utenti con responsabilità di conformità diverse a gruppi di ruoli specifici per gestire diverse aree delle funzionalità di conformità delle comunicazioni. In caso contrario, è possibile decidere di assegnare tutti gli account utente per amministratori, analisti, investigatori e visualizzatori designati al gruppo di ruoli *Conformità* comunicazioni. Utilizzare uno o più gruppi di ruoli per soddisfare al meglio i requisiti di gestione della conformità.
 
@@ -88,7 +88,7 @@ Scegliere tra queste opzioni del gruppo di ruoli per la configurazione della con
 
 ### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>Per le organizzazioni che utilizzano le autorizzazioni originali e i gruppi di ruoli
 
-La nuova struttura del gruppo di ruoli sostituisce la struttura iniziale del gruppo di ruoli per la conformità alle comunicazioni. Per le organizzazioni che già usano la conformità delle comunicazioni, è necessario essere assegnati al ruolo di amministratore della revisione della supervisione per iniziare a usare la conformità delle comunicazioni nel Centro Microsoft 365 conformità. Inoltre, è stato necessario creare un nuovo gruppo di ruoli per i revisori con i ruoli Supervisory Review Administrator, Case Management, Compliance Administrator e Review per analizzare e correggere i messaggi con le corrispondenze dei criteri. In sostanza, tutti gli amministratori e i revisori si trovavano in un singolo gruppo di ruoli e tutti avevano le stesse autorizzazioni di accesso e gestione. Con gli aggiornamenti più recenti per la conformità delle comunicazioni, è consigliabile pianificare la migrazione dalla struttura del gruppo di ruoli precedente alla nuova struttura del gruppo di ruoli. Il supporto per la struttura del gruppo di ruoli precedente verrà gradualmente sfasato.
+La nuova struttura del gruppo di ruoli sostituisce la struttura iniziale del gruppo di ruoli per la conformità alle comunicazioni. Per le organizzazioni che già utilizzano la conformità delle comunicazioni, è necessario avere il ruolo di amministratore della revisione della supervisione per iniziare a utilizzare la conformità delle comunicazioni nel Centro conformità Microsoft 365. Inoltre, è stato necessario creare un nuovo gruppo di ruoli per i revisori con i ruoli Supervisory Review Administrator, Case Management, Compliance Administrator e Review per analizzare e correggere i messaggi con le corrispondenze dei criteri. In sostanza, tutti gli amministratori e i revisori si trovavano in un singolo gruppo di ruoli e tutti avevano le stesse autorizzazioni di accesso e gestione. Con gli aggiornamenti più recenti per la conformità delle comunicazioni, è consigliabile pianificare la migrazione dalla struttura del gruppo di ruoli precedente alla nuova struttura del gruppo di ruoli. Il supporto per la struttura del gruppo di ruoli precedente verrà gradualmente sfasato.
 
 Per facilitare la pianificazione della migrazione, considerare l'esempio seguente. Attualmente nell'organizzazione sono presenti tre tipi di utenti, amministratori IT, valutazione e revisori. Questi tre tipi di utenti sono nella struttura del gruppo di ruoli precedente e sono tutti membri di un singolo gruppo di ruoli a cui sono assegnati i ruoli seguenti:
 
@@ -107,8 +107,8 @@ Per aggiornare i ruoli per questi utenti per la nuova struttura del gruppo di ru
 
 Prima di iniziare a utilizzare la conformità delle comunicazioni, è necessario determinare chi necessita della revisione delle comunicazioni. Nei criteri si useranno gli indirizzi di posta elettronica per identificare singoli utenti o gruppi di utenti da supervisionare. Alcuni esempi di questi gruppi sono Microsoft 365, Exchange di distribuzione basate su Yammer e Microsoft Teams canali. È inoltre possibile escludere utenti o gruppi specifici dall'analisi con un gruppo di esclusione specifico o un elenco di gruppi. Per ulteriori informazioni sui tipi di gruppi supportati nei criteri di conformità delle comunicazioni, vedere [Introduzione alla conformità delle comunicazioni.](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)
 
->[!IMPORTANT]
->Gli utenti coperti dai criteri di conformità delle comunicazioni devono disporre di una licenza di Microsoft 365 E5 Compliance, di una licenza di Office 365 Enterprise E3 con il componente aggiuntivo Advanced Compliance o di essere inclusi in una sottoscrizione Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si desidera provare la conformità delle comunicazioni, è possibile iscriversi a una versione di valutazione di [Office 365 Enterprise E5.](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+> [!IMPORTANT]
+> Gli utenti coperti dai criteri di conformità delle comunicazioni devono disporre di una licenza di Microsoft 365 E5 Compliance, di una licenza di Office 365 Enterprise E3 con il componente aggiuntivo Advanced Compliance o di essere inclusi in una sottoscrizione Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si desidera provare la conformità delle comunicazioni, è possibile iscriversi a una versione di valutazione di [Office 365 Enterprise E5.](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 ## <a name="reviewers"></a>Revisori
 
@@ -150,7 +150,7 @@ Con i criteri di conformità delle comunicazioni, è possibile scegliere di anal
 
 È possibile scegliere di selezionare **Tutti gli utenti** o di definire utenti specifici in un criterio di conformità delle comunicazioni. Selezionando **Tutti gli utenti**, si applica il criterio a tutti gli utenti e a tutti i gruppi in cui un utente è incluso come membro. La definizione di utenti specifici applica il criterio agli utenti definiti e a tutti i gruppi in cui gli utenti definiti sono inclusi come membri.
 
-### <a name="direction"></a>Direction
+### <a name="direction"></a>Direzione
 
 Per impostazione predefinita, **la condizione Direction** è visualizzata e non può essere rimossa. Le impostazioni della direzione di comunicazione in un criterio vengono scelte singolarmente o insieme:
 
@@ -199,8 +199,8 @@ I *classificatori* di immagini Per adulti, *Racy* e *Gory* analizzano i file nei
 
 I classificatori predefiniti disponibili per il training e i classificatori globali non forniscono un elenco esaustivo di termini o immagini in queste aree. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare i classificatori a sua discrezione. Anche se i classificatori possono aiutare l'organizzazione a monitorare queste aree, i classificatori non sono destinati a fornire l'unico mezzo per monitorare o affrontare tale linguaggio o immagini dell'organizzazione. L'organizzazione, non Microsoft, rimane responsabile di tutte le decisioni relative al monitoraggio, all'analisi e al blocco della lingua e delle immagini in queste aree, inclusa la conformità con la privacy locale e altre leggi applicabili. Microsoft incoraggia la consulenza con i consulenti legali prima della distribuzione e dell'uso.
 
->[!NOTE]
->I criteri che usano classificatori ispezionano e valutano i messaggi con un numero di parole uguale o superiore a sei. I messaggi contenenti meno di sei parole non vengono valutati nei criteri tramite classificatori. Per identificare ed eseguire azioni su messaggi più brevi contenenti contenuto inappropriato, è consigliabile includere un dizionario di parole chiave personalizzato per il monitoraggio dei criteri di conformità delle comunicazioni per questo tipo di contenuto.
+> [!NOTE]
+> I criteri che usano classificatori ispezionano e valutano i messaggi con un numero di parole uguale o superiore a sei. I messaggi contenenti meno di sei parole non vengono valutati nei criteri tramite classificatori. Per identificare ed eseguire azioni su messaggi più brevi contenenti contenuto inappropriato, è consigliabile includere un dizionario di parole chiave personalizzato per il monitoraggio dei criteri di conformità delle comunicazioni per questo tipo di contenuto.
 
 Per informazioni sui classificatori addestrabili in Microsoft 365, vedere [Introduzione ai classificatori addestrabili.](classifier-get-started-with.md)
 
@@ -218,8 +218,8 @@ Le immagini da 50 KB a 4 MB nei formati di immagine seguenti vengono analizzate 
 - .tiff (formato file immagine tag)
 - .pdf (formato documento portatile)
 
->[!NOTE]
->L'analisi e l'estrazione di immagini .pdf incorporate e associate è attualmente supportata solo per i messaggi di posta elettronica.
+> [!NOTE]
+> L'analisi e l'estrazione di immagini .pdf incorporate e associate è attualmente supportata solo per i messaggi di posta elettronica.
 
 Quando si esaminano gli avvisi in sospeso per i criteri con OCR abilitato, le immagini identificate e corrispondenti alle condizioni dei criteri vengono visualizzate come elementi figlio per gli avvisi associati. È possibile visualizzare l'immagine originale per valutare il testo identificato nel contesto del messaggio originale. La disponibilità delle immagini rilevate con avvisi può richiedere fino a 48 ore.
 
@@ -229,7 +229,7 @@ Quando si esaminano gli avvisi in sospeso per i criteri con OCR abilitato, le im
 Le condizioni selezionate per il criterio si applicano alle comunicazioni provenienti sia dalla posta elettronica che da origini di terze parti nell'organizzazione (ad esempio da Instant Bloomberg).
 
 Nella tabella seguente vengono illustrate ulteriori informazioni su ogni condizione.
-  
+
 |**Condizione**|**Come usare questa condizione**|
 |:-----|:-----|
 | **Il contenuto corrisponde a uno di questi classificatori** | Applica al criterio quando tutti i classificatori vengono inclusi o esclusi in un messaggio. Alcuni classificatori sono predefiniti nel tenant e i classificatori personalizzati devono essere configurati separatamente prima che siano disponibili per questa condizione. Solo un classificatore può essere definito come condizione in un criterio. Per ulteriori informazioni sulla configurazione dei classificatori, vedere [Learn about trainable classifiers (preview)](classifier-learn-about.md). |
@@ -242,24 +242,26 @@ Nella tabella seguente vengono illustrate ulteriori informazioni su ogni condizi
 | **L'allegato è uno di questi tipi di file**  <br><br> **L'allegato non è uno di questi tipi di file** | Per supervisionare le comunicazioni che includono o escludono tipi specifici di allegati, immettere le estensioni di file (ad esempio .exe o .pdf). Se si desidera includere o escludere più estensioni di file, immetterli in righe separate. Per applicare il criterio, è necessario che una sola estensione dell'allegato corrisponda.|
 | **La dimensione del messaggio è superiore a**  <br><br> **La dimensione del messaggio non è superiore a** | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare le dimensioni massime o minime che un messaggio può avere prima di essere sottoposto a revisione. Se ad esempio  si specifica una dimensione del messaggio superiore a \> **1,0 MB,** tutti i messaggi di dimensioni superiori a 1,01 MB sono soggetti a revisione. È possibile scegliere byte, kilobyte, megabyte o gigabyte per questa condizione.|
 | **L'allegato è più grande di**  <br><br> **L'allegato non è più grande di** | Per esaminare i messaggi in base alle dimensioni degli allegati, specificare la dimensione massima o minima che un allegato può avere prima che il messaggio e i relativi allegati siano soggetti a revisione. Ad esempio, se si specifica **Che** l'allegato è superiore a \> **2,0 MB,** tutti i messaggi con allegati di 2,01 MB e oltre sono soggetti a revisione. È possibile scegliere byte, kilobyte, megabyte o gigabyte per questa condizione.|
-   
+
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Corrispondenza di parole e frasi a messaggi di posta elettronica o allegati
 <a name="Matchwords"> </a>
 
 Ogni parola immessa e separata con una virgola viene applicata separatamente (per applicare la condizione del criterio al messaggio di posta elettronica o all'allegato deve essere applicata una sola parola). Ad esempio, usiamo la condizione **Message** contiene una di queste parole, con le parole chiave "banker", "confidential" e "insider trading" separate da una virgola (banker, confidential,"insider trading"). Il criterio si applica a tutti i messaggi che includono la parola "banker", "confidential" o la frase "insider trading". Per applicare questa condizione dei criteri, è necessario che si verifichi solo una di queste parole o frasi. Le parole nel messaggio o nell'allegato devono corrispondere esattamente a quelle immesse.
 
->[!IMPORTANT]
->Quando si importa un file di dizionario personalizzato, ogni parola o frase deve essere separata con un ritorno a capo e su una riga separata. <br> Ad esempio: <br><br>
->*banker* <br>
->*confidential* <br>
->*insider trading*
+> [!IMPORTANT]
+>
+> Quando si importa un file di dizionario personalizzato, ogni parola o frase deve essere separata con un ritorno a capo e su una riga separata. Ad esempio:
+>
+> *banker* <br>
+> *confidential* <br>
+> *insider trading*
 
 Per analizzare sia i messaggi di posta [](create-test-tune-dlp-policy.md) elettronica che gli [](create-a-keyword-dictionary.md) allegati per le stesse parole chiave, creare un criterio di prevenzione della perdita di dati con un dizionario di parole chiave personalizzato per i termini che si desidera analizzare nei messaggi. Questa configurazione dei criteri identifica le parole chiave definite che vengono visualizzate nel messaggio di posta elettronica **o nell'allegato** di posta elettronica. L'utilizzo delle impostazioni dei criteri condizionali standard (*Message* contiene una qualsiasi di queste parole e *Attachment* contiene una qualsiasi di queste parole) per identificare i termini nei messaggi e negli allegati richiede che i termini siano presenti **sia** nel messaggio che nell'allegato.
-  
+
 #### <a name="enter-multiple-conditions"></a>Immettere più condizioni
 
 Se si immettono più condizioni, Microsoft 365 tutte le condizioni vengono utilizzate insieme per determinare quando applicare i criteri di conformità delle comunicazioni agli elementi di comunicazione. Quando si impostano più condizioni, è necessario che vengano soddisfatte tutte le condizioni per l'applicazione del criterio, a meno che non venga immessa un'eccezione. Ad esempio, è necessario un criterio che si applica se un messaggio contiene la parola "commercio" ed è superiore a 2 MB. Tuttavia, se il messaggio contiene anche le parole "Approvato da Contoso financial", il criterio non deve essere applicato. In questo esempio le tre condizioni vengono definite come segue:
-  
+
 - **Il messaggio contiene una di queste parole**, con la parola chiave "trade"
 - **La dimensione del messaggio è maggiore di**, con il valore 2 MB
 - **Il messaggio non contiene nessuna di queste parole,** con le parole chiave "Approvato dal team finanziario di Contoso"
@@ -308,8 +310,8 @@ Se si desidera creare più di un semplice messaggio di posta elettronica basato 
 </html>
 ```
 
->[!NOTE]
->L'implementazione dell'attributo href HTML nei modelli di notifica di conformità delle comunicazioni attualmente supporta solo le virgolette singole anziché le virgolette doppie per i riferimenti URL.
+> [!NOTE]
+> L'implementazione dell'attributo href HTML nei modelli di notifica di conformità delle comunicazioni attualmente supporta solo le virgolette singole anziché le virgolette doppie per i riferimenti URL.
 
 ## <a name="filters"></a>Filtri
 
@@ -344,8 +346,8 @@ Per i criteri di conformità delle comunicazioni, i seguenti valori dei criteri 
 | Soglia | 4 attività |
 | Finestra | 60 minuti |
 
->[!Note]
->Le impostazioni di attivazione della soglia dei criteri di avviso per le attività supportano un valore minimo pari o superiore a 3 per i criteri di conformità delle comunicazioni.
+> [!NOTE]
+> Le impostazioni di attivazione della soglia dei criteri di avviso per le attività supportano un valore minimo pari o superiore a 3 per i criteri di conformità delle comunicazioni.
 
 È possibile modificare le impostazioni predefinite per i trigger su numero di attività, periodo  per le attività e per utenti specifici nei criteri di avviso nella pagina Criteri di avviso nel Centro sicurezza & conformità.
 
@@ -355,7 +357,7 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 1. Accedere usando [https://compliance.microsoft.com](https://compliance.microsoft.com) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
 
-2. Nel Centro Microsoft 365 conformità passare a **Criteri**.
+2. Nel Centro conformità Microsoft 365, andare a **Criteri**.
 
 3. Selezionare **Office 365 avviso** nella **pagina** Criteri per  aprire la pagina Criteri avvisi nel Centro sicurezza Office 365 **& conformità**.
 
@@ -373,17 +375,17 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 I clienti con Microsoft 365 che includono la conformità alle comunicazioni non necessitano di licenze aggiuntive Power Automate per usare il modello di conformità di comunicazione predefinito Power Automate consigliato. Il modello predefinito può essere personalizzato per supportare l'organizzazione e coprire gli scenari di conformità delle comunicazioni di base. Se si sceglie di utilizzare le funzionalità di Power Automate premium in questi modelli, creare un modello personalizzato utilizzando il connettore di conformità di Microsoft 365 o utilizzare modelli Power Automate per altre aree di conformità in Microsoft 365, potrebbero essere necessarie licenze Power Automate aggiuntive.
 
->[!IMPORTANT]
->Si ricevono richieste di convalida delle licenze aggiuntive durante il test dei flussi Power Automate licenze? L'organizzazione potrebbe non aver ancora ricevuto gli aggiornamenti del servizio per questa funzionalità di anteprima. Gli aggiornamenti vengono distribuiti e tutte le organizzazioni con sottoscrizioni Microsoft 365 che includono la conformità alle comunicazioni devono disporre del supporto delle licenze per i flussi creati dai modelli di Power Automate consigliati entro il 30 ottobre 2020.
+> [!IMPORTANT]
+> Si ricevono richieste di convalida delle licenze aggiuntive durante il test dei flussi Power Automate licenze? L'organizzazione potrebbe non aver ancora ricevuto gli aggiornamenti del servizio per questa funzionalità di anteprima. Gli aggiornamenti vengono distribuiti e tutte le organizzazioni con sottoscrizioni Microsoft 365 che includono la conformità alle comunicazioni devono disporre del supporto delle licenze per i flussi creati dai modelli di Power Automate consigliati entro il 30 ottobre 2020.
 
 ![Conformità delle comunicazioni Power Automate](../media/communication-compliance-power-automate.png)
 
 Il modello di Power Automate seguente viene fornito ai clienti per supportare l'automazione dei processi per gli avvisi di conformità alle comunicazioni:
 
 - **Notifica al responsabile quando un utente ha un avviso** di conformità della comunicazione: alcune organizzazioni potrebbero dover avere una notifica di gestione immediata quando un utente ha un avviso di conformità della comunicazione. Quando questo flusso viene configurato e selezionato, al responsabile del caso all'utente viene inviato un messaggio di posta elettronica con le informazioni seguenti su tutti gli avvisi:
-    - Criteri applicabili per l'avviso
-    - Data/ora dell'avviso
-    - Livello di gravità dell'avviso
+  - Criteri applicabili per l'avviso
+  - Data/ora dell'avviso
+  - Livello di gravità dell'avviso
 
 ### <a name="create-a-power-automate-flow"></a>Creare un Power Automate flusso
 
@@ -391,7 +393,7 @@ Per creare un flusso di Power Automate da un modello predefinito consigliato, si
 
 Completare la procedura seguente per creare un Power Automate flusso di lavoro da un modello predefinito:
 
-1. Nel Centro Microsoft 365 conformità passare a **Criteri** di conformità delle comunicazioni e selezionare il criterio con  >   l'avviso che si desidera rivedere.
+1. Nel Centro conformità Microsoft 365, passare a **Criteri di conformità** delle  >   comunicazioni e selezionare il criterio con l'avviso che si desidera rivedere.
 2. Dal criterio, selezionare la scheda **In** sospeso e selezionare un avviso in sospeso.
 3. Seleziona **Power Automate** dal menu dell'azione di avviso.
 4. Nella pagina **Power Automate,** selezionare un modello  predefinito nella sezione Modelli di conformità di comunicazione che potrebbero piacerti nella pagina.
@@ -408,7 +410,7 @@ Per impostazione predefinita, Power Automate flussi creati da un utente sono dis
 Per condividere un flusso Power Automate, è necessario essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
 Completare la procedura seguente per condividere un Power Automate flusso:
 
-1. Nel Centro Microsoft 365 conformità passare a **Criteri** di conformità delle comunicazioni e selezionare il criterio con  >   l'avviso che si desidera rivedere.
+1. Nel Centro conformità Microsoft 365, passare a **Criteri di conformità** delle  >   comunicazioni e selezionare il criterio con l'avviso che si desidera rivedere.
 2. Dal criterio, selezionare la scheda **In** sospeso e selezionare un avviso in sospeso.
 3. Seleziona **Power Automate** dal menu dell'azione di avviso.
 4. Nella pagina **Power Automate flussi** di lavoro selezionare la scheda **Flussi del** team o Flussi **del** team.
@@ -422,7 +424,7 @@ Se devi modificare un flusso, userai  il controllo Power Automate quando lavori 
 
 Completare la procedura seguente per modificare un Power Automate flusso:
 
-1. Nel Centro Microsoft 365 conformità passare a **Criteri** di conformità delle comunicazioni e selezionare il criterio con  >   l'avviso che si desidera rivedere.
+1. Nel Centro conformità Microsoft 365, passare a **Criteri di conformità** delle  >   comunicazioni e selezionare il criterio con l'avviso che si desidera rivedere.
 2. Dal criterio, selezionare la scheda **In** sospeso e selezionare un avviso in sospeso.
 3. Seleziona **Power Automate** dal menu dell'azione di avviso.
 4. Nella pagina **Power Automate flussi** selezionare il flusso da modificare. Seleziona **Modifica** dal menu controllo di flusso.
@@ -435,7 +437,7 @@ Se devi eliminare un flusso, userai  il controllo Power Automate quando lavori d
 
 Completare la procedura seguente per eliminare un Power Automate flusso:
 
-1. Nel Centro Microsoft 365 conformità passare a **Criteri** di conformità delle comunicazioni e selezionare il criterio con  >   l'avviso che si desidera rivedere.
+1. Nel Centro conformità Microsoft 365, passare a **Criteri di conformità** delle  >   comunicazioni e selezionare il criterio con l'avviso che si desidera rivedere.
 2. Dal criterio, selezionare la scheda **In** sospeso e selezionare un avviso in sospeso.
 3. Seleziona **Power Automate** dal menu dell'azione di avviso.
 4. Nella pagina **Power Automate flussi** selezionare il flusso da eliminare. Seleziona **Elimina** dal menu controllo di flusso.
@@ -466,7 +468,7 @@ Il **dashboard Report** contiene i seguenti widget di report e collegamenti dett
     - Elementi in sospeso
     - Notifica dell'utente
     - Caso creato
-    
+
     Utilizzare *l'opzione* Esporta per creare un .csv contenente i dettagli del report.
 - **Report dettagliato su elementi** e azioni per posizione: esaminare ed esportare gli elementi corrispondenti e le azioni di correzione per Microsoft 365 posizione. Include informazioni sul modo in cui le piattaforme del carico di lavoro sono associate a:
 
@@ -510,8 +512,8 @@ Il **dashboard Report** contiene i seguenti widget di report e collegamenti dett
 
 In alcuni casi, è necessario fornire informazioni ai revisori normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli utenti. Queste informazioni possono essere un riepilogo di tutte le attività associate a un criterio organizzativo definito o ogni volta che viene modificato un criterio di conformità della comunicazione. I criteri di conformità delle comunicazioni dispongono di audit trail predefiniti per una completa preparazione per i controlli interni o esterni. Le cronologie di controllo dettagliate di ogni azione di creazione, modifica ed eliminazione vengono acquisite dai criteri di comunicazione per fornire una prova delle procedure di supervisione.
 
->[!Important]
->Il controllo deve essere abilitato per l'organizzazione prima di registrare gli eventi di conformità delle comunicazioni. Per abilitare il controllo, vedere [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Quando le attività attivano eventi acquisiti nel Microsoft 365 di controllo, potrebbero essere necessario fino a 48 ore prima che questi eventi possano essere visualizzati nei criteri di conformità delle comunicazioni.
+> [!IMPORTANT]
+> Il controllo deve essere abilitato per l'organizzazione prima di registrare gli eventi di conformità delle comunicazioni. Per abilitare il controllo, vedere [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Quando le attività attivano eventi acquisiti nel Microsoft 365 di controllo, potrebbero essere necessario fino a 48 ore prima che questi eventi possano essere visualizzati nei criteri di conformità delle comunicazioni.
 
 Per visualizzare le attività di aggiornamento dei criteri di conformità delle comunicazioni, selezionare il **controllo** Esporta aggiornamenti dei criteri nella pagina principale per qualsiasi criterio. Per esportare le attività  di aggiornamento, è necessario disporre dei ruoli *Amministratore* globale o Amministratore conformità comunicazioni. Questa azione genera un file di controllo nel formato .csv contenente le informazioni seguenti:
 
@@ -548,7 +550,7 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 In questo esempio vengono restituite le attività che corrispondono ai criteri di conformità delle comunicazioni correnti:
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
 Le corrispondenze dei criteri di conformità delle comunicazioni vengono archiviate in una cassetta postale di supervisione per ogni criterio. In alcuni casi, potrebbe essere necessario controllare le dimensioni della cassetta postale di supervisione per un criterio per assicurarsi che non si sta avvicinando al limite corrente di 50 GB. Se viene raggiunto il limite della cassetta postale, le corrispondenze dei criteri non vengono acquisite e sarà necessario creare un nuovo criterio (con le stesse impostazioni) per continuare a acquisire corrispondenze per le stesse attività.
@@ -559,7 +561,7 @@ Per verificare le dimensioni di una cassetta postale di supervisione per un crit
 2. Eseguire il comando seguente in PowerShell:
 
     ```PowerShell
-    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name)
     {
        "<Name of your communication compliance policy>: " + $p.Name
        Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteggi i dispositivi non gestiti o bring-your-own (BYOD) con Microsoft 365.
-ms.openlocfilehash: 430f5446f86c26cb1f0fd1c7f34613cddec473b2
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398254"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227500"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteggere i PC Windows 10 e Mac non gestiti
 
@@ -54,7 +54,7 @@ Se il Windows 10 PC o Mac non è gestito dall'organizzazione, assicurati di conf
 
 La crittografia dei dispositivi è disponibile in un'ampia gamma di Windows e consente di proteggere i dati crittografando i dati. Se si attiva la crittografia del dispositivo, solo gli utenti autorizzati potranno accedere al dispositivo e ai dati. Per [istruzioni, vedi Attivare la crittografia](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) del dispositivo.
 
- Se la crittografia del dispositivo non è disponibile nel dispositivo, puoi attivare la crittografia BitLocker [standard.](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) (BitLocker non è disponibile nell'Windows 10 Home edizione). 
+ Se la crittografia del dispositivo non è disponibile nel dispositivo, puoi attivare la crittografia [BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) standard. BitLocker non è disponibile nell'Windows 10 Home edizione. 
 
 **Proteggere il dispositivo con Sicurezza di Windows**<p>
 Se si dispone Windows 10, si otterrà la protezione antivirus più recente con Sicurezza di Windows. Quando si avvia Windows 10 per la prima volta, Sicurezza di Windows è attivo e aiuta attivamente a proteggere il PC mediante la ricerca di malware (software dannoso), virus e minacce alla sicurezza. Sicurezza di Windows usa la protezione in tempo reale per analizzare tutto ciò che scari clici o esegui sul PC.
@@ -72,7 +72,7 @@ Dovresti sempre eseguire Windows Firewall anche se hai un altro firewall attivat
 La crittografia del disco protegge i dati quando i dispositivi vengono persi o rubati. La crittografia su disco completo di FileVault consente di impedire l'accesso non autorizzato alle informazioni sul disco di avvio. Per [istruzioni, vedi usare FileVault per crittografare il disco di avvio sul Mac.](https://support.apple.com/HT204837)
 
 **Proteggere il mac da malware**<p>
-Microsoft consiglia di installare e usare software antivirus affidabile sul Mac. Vedi l'articolo seguente per un elenco di scelte: [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
+Microsoft consiglia di installare e usare software antivirus affidabile sul Mac. Vedi l'articolo seguente per un elenco di scelte: [Best Mac antivirus 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
 È inoltre possibile ridurre il rischio di malware utilizzando software solo da fonti affidabili. Le impostazioni in Impostazioni & preferenze privacy consentono di specificare le origini del software installato nel Mac. Per altre informazioni, vedi [Proteggere il Mac da malware.](https://support.apple.com/kb/PH25087)
 

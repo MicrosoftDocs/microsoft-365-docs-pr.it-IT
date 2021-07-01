@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 44a17471f1e2ba92d0099f62b95dec8d0e56a224
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 3ff3c652d5446167ac3c2bf78a2405c21929ea11
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957493"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226468"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Gestione dei rischi insider Esplora contenuto
 
@@ -29,8 +29,8 @@ In alcuni casi, i dati associati a un caso potrebbero non essere disponibili com
 
 Se il contenuto include autorizzazioni di Information Rights Management, queste autorizzazioni vengono mantenute per il contenuto copiato e gli utenti assegnati al ruolo *Insider Risk Management Investigators* dovranno disporre di queste autorizzazioni e diritti se devono aprire e visualizzare i file. A ogni file e messaggio viene assegnato automaticamente un ID file univoco nel caso di gestione dei rischi insider a scopo di gestione. I documenti associati alle attività degli indicatori di dispositivo non sono inclusi in Esplora contenuto.
 
->[!Note]
->Esplora contenuto include attività correlate Microsoft Office file. Le attività a livello di sito, ad esempio quando un SharePoint viene eliminato o se vengono modificate le autorizzazioni del sito, non vengono incluse in Esplora contenuto.
+> [!NOTE]
+> Esplora contenuto include attività correlate Microsoft Office file. Le attività a livello di sito, ad esempio quando un SharePoint viene eliminato o se vengono modificate le autorizzazioni del sito, non vengono incluse in Esplora contenuto.
 
 ## <a name="column-options"></a>Opzioni colonna
 

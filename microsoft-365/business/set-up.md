@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Scopri i passaggi di configurazione per Microsoft 365 Business Premium, tra cui l'aggiunta di un dominio e di utenti, la configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 74a98e915577cf86ec32a706bd3b8f558f49db95
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624390"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227640"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurare i Microsoft 365 Business Premium nella configurazione guidata
 
@@ -69,7 +69,7 @@ Quando acquisti Microsoft 365 Business Premium, hai la possibilità di usare un 
     ![Screenshot della pagina Personalizza l'accesso.](../media/adddomain.png)
 
     
-4. Seguire i passaggi della procedura guidata per creare record DNS presso qualsiasi provider di [hosting DNS per](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Microsoft 365 che verifica di essere proprietari del dominio. Se si conosce l’host del dominio, vedere anche le [istruzioni specifiche dell’host](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Seguire i passaggi della procedura guidata per creare record DNS presso qualsiasi provider di [hosting DNS per](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Microsoft 365 che verifica di essere proprietari del dominio. Se si conosce l'host di dominio, vedere anche [Aggiungere un dominio a Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     Se il proprio provider di hosting è GoDaddy o un altro host abilitato con [Domain Connect](/office365/admin/get-help-with-domains/domain-connect), il processo è semplice e viene richiesto di eseguire l’accesso e lasciare che Microsoft Authenticate completi l’autenticazione.
 
@@ -135,4 +135,4 @@ Per installare Office dispositivi mobili iOS o Android, vedi [Configurare i disp
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[video Microsoft 365 formazione su Microsoft 365](../business-video/index.yml) per le aziende (pagina dei collegamenti)
+[Video di formazione su Microsoft 365 per le aziende](../business-video/index.yml) (pagina collegamento)

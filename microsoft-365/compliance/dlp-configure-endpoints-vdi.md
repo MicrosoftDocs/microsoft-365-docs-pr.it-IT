@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Distribuisci il pacchetto di configurazione nel dispositivo VDI (Virtual Desktop Infrastructure) in modo che siano onboarded nel servizio di prevenzione della perdita dei dati Microsoft 365 Endpoint.
-ms.openlocfilehash: 2a62de6c238c1f681bde8a9bf25ecd596a10d390
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 64d9bfed3d1d5600b5843c697e894577f83527fe
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917952"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226876"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti
 
@@ -28,15 +28,15 @@ ms.locfileid: "50917952"
 
 - Dispositivi VDI (Virtual Desktop Infrastructure)
 
->[!WARNING]
+> [!WARNING]
 > Microsoft 365 Il supporto per la prevenzione della perdita dei dati degli endpoint Windows desktop virtuale supporta scenari a sessione singola. Gli scenari multi-sessione Windows desktop virtuale non sono attualmente supportati.
 
 ## <a name="onboard-vdi-devices"></a>Onboard dei dispositivi VDI
 
-Microsoft 365 La prevenzione della perdita dei dati degli endpoint supporta l'onboarding di sessioni VDI non persistenti. 
+Microsoft 365 La prevenzione della perdita dei dati degli endpoint supporta l'onboarding di sessioni VDI non persistenti.
 
->[!Note]
->Per eseguire l'onboarding di sessioni VDI non persistenti, i dispositivi VDI devono essere Windows 10 1809 o versioni successive.
+> [!NOTE]
+> Per eseguire l'onboarding di sessioni VDI non persistenti, i dispositivi VDI devono essere Windows 10 1809 o versioni successive.
 
 Quando si esegue l'onboarding di VDI, potrebbero verificarsi problemi associati. Di seguito sono riportate le sfide tipiche per questo scenario:
 
@@ -45,75 +45,73 @@ Quando si esegue l'onboarding di VDI, potrebbero verificarsi problemi associati.
 
 I dispositivi VDI possono essere visualizzati nel Centro Microsoft 365 conformità come uno dei seguenti:
 
-- Voce singola per ogni dispositivo.  
+- Voce singola per ogni dispositivo.
 Si noti che in  questo caso, è necessario configurare lo stesso nome del dispositivo al momento della creazione della sessione, ad esempio utilizzando un file di risposta automatico.
 - Più voci per ogni dispositivo- una per ogni sessione.
 
 I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicheranno i passaggi per una o più voci.
 
->[!WARNING]
-> Per gli ambienti in cui le configurazioni delle risorse sono scarse, la procedura di avvio VDI potrebbe rallentare l'onboarding Microsoft 365 di prevenzione della perdita di dati dell'endpoint. 
+> [!WARNING]
+> Per gli ambienti in cui le configurazioni delle risorse sono scarse, la procedura di avvio VDI potrebbe rallentare l'onboarding Microsoft 365 di prevenzione della perdita di dati dell'endpoint.
 
-1.  Apri il pacchetto di configurazione VDI .zip file (*DeviceCompliancePackage.zip*) scaricato dall'onboarding guidato del servizio.
+1. Apri il pacchetto di configurazione VDI .zip file (*DeviceCompliancePackage.zip*) scaricato dall'onboarding guidato del servizio.
 
-2.  Nel riquadro di spostamento seleziona **Impostazioni**  >    >  **onboarding del dispositivo.**
+2. Nel riquadro di spostamento seleziona **Impostazioni**  >    >  **onboarding del dispositivo.**
 
 3. Nel campo **Metodo di** distribuzione selezionare Script **di onboarding VDI per gli endpoint non persistenti.**
 
-5. Fai **clic su Scarica pacchetto** e salva il file .zip file.
+4. Fai **clic su Scarica pacchetto** e salva il file .zip file.
 
-6. Copiare i file dalla cartella DeviceCompliancePackage estratta dal file .zip `golden/master` nell'immagine nel percorso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
+5. Copiare i file dalla cartella DeviceCompliancePackage estratta dal file .zip `golden/master` nell'immagine nel percorso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` .
 
-7. Se non stai implementando una singola voce per ogni dispositivo, copia DeviceComplianceOnboardingScript.cmd.
+6. Se non stai implementando una singola voce per ogni dispositivo, copia DeviceComplianceOnboardingScript.cmd.
 
-8. Se stai implementando una singola voce per ogni dispositivo, copia sia Onboard-NonPersistentMachine.ps1 che DeviceComplianceOnboardingScript.cmd.
-    
+7. Se stai implementando una singola voce per ogni dispositivo, copia sia Onboard-NonPersistentMachine.ps1 che DeviceComplianceOnboardingScript.cmd.
+
     > [!NOTE]
     > Se la cartella non è `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` visualizzata, è possibile che sia nascosta. Dovrai scegliere l'opzione Mostra **cartelle e file** nascosti da Esplora file.
 
-9. Aprire una finestra Editor Criteri di gruppo locali e passare a **Configurazione computer**  >  **Windows Impostazioni**  >  **Script di**  >  **avvio**.
+8. Aprire una finestra Editor Criteri di gruppo locali e passare a **Configurazione computer**  >  **Windows Impostazioni**  >  **Script di**  >  **avvio**.
 
    > [!NOTE]
    > I Criteri di gruppo di dominio possono essere utilizzati anche per l'onboarding di dispositivi VDI non persistenti.
 
-4. A seconda del metodo che vuoi implementare, segui la procedura appropriata:
+9. A seconda del metodo che vuoi implementare, segui la procedura appropriata:
 
    **Per una singola voce per ogni dispositivo**
-   
+
    Selezionare la **scheda Script di PowerShell,** quindi fare clic **su** Aggiungi (Windows Explorer si aprirà direttamente nel percorso in cui è stato copiato lo script di onboarding in precedenza). Passare a script di PowerShell di `Onboard-NonPersistentMachine.ps1` onboarding.
-   
+
    **Per più voci per ogni dispositivo:**
-   
+
    Seleziona la **scheda Script,** quindi fai clic su **Aggiungi** (Windows Explorer si aprirà direttamente nel percorso in cui hai copiato lo script di onboarding in precedenza). Passare allo script di onboarding bash `DeviceComplianceOnboardingScript.cmd` .
 
-5. Testare la soluzione:
+10. Testare la soluzione:
+    1. Creare un pool con un solo dispositivo.
+    1. Accesso al dispositivo.
+    1. Disconnessione dal dispositivo.
+    1. Accedere al dispositivo con un altro utente.
+    1. **Per una singola voce per ogni dispositivo:** controlla solo una voce in Microsoft Defender Security Center.
+       **Per più voci per ogni dispositivo**: Controllare più voci in Microsoft Defender Security Center.
 
-   1. Creare un pool con un solo dispositivo.
-      
-   1. Accesso al dispositivo.
-      
-   1. Disconnessione dal dispositivo.
+11. Fare **clic su Elenco** dispositivi nel riquadro di spostamento.
 
-   1. Accedere al dispositivo con un altro utente.
-      
-   1. **Per una singola voce per ogni dispositivo:** controlla solo una voce in Microsoft Defender Security Center.<br>
-      **Per più voci per ogni dispositivo**: Controllare più voci in Microsoft Defender Security Center.
-
-6. Fare **clic su Elenco** dispositivi nel riquadro di spostamento.
-
-7. Usa la funzione di ricerca immettendo il nome del dispositivo e seleziona **Dispositivo** come tipo di ricerca.
+12. Usa la funzione di ricerca immettendo il nome del dispositivo e seleziona **Dispositivo** come tipo di ricerca.
 
 ## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Aggiornamento di immagini VDI (Virtual Desktop Infrastructure) non persistenti
-Come procedura consigliata, è consigliabile utilizzare gli strumenti di manutenzione offline per applicare patch alle immagini golden/master.<br>
+
+Come procedura consigliata, è consigliabile utilizzare gli strumenti di manutenzione offline per applicare patch alle immagini golden/master.
+
 Ad esempio, puoi usare i comandi seguenti per installare un aggiornamento mentre l'immagine rimane offline:
 
 ```console
-DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing" 
+DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
 DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 Per ulteriori informazioni sui comandi di Gestione e manutenzione immagini distribuzione e sulla manutenzione offline, fare riferimento agli articoli seguenti:
+
 - [Modificare un'Windows immagine con Gestione e manutenzione immagini distribuzione](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [Gestione e manutenzione immagini distribuzione Command-Line opzioni](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [Ridurre le dimensioni dell'archivio componenti in un'immagine Windows offline](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
@@ -143,8 +141,9 @@ Se la manutenzione offline non è un'opzione valida per l'ambiente VDI non persi
 5. Re-seal the golden/master image as you normally would.
 
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Onboardare Windows 10 dispositivi con Criteri di gruppo](dlp-configure-endpoints-gp.md)
 - [Onboard Windows 10 dispositivi con Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](dlp-configure-endpoints-mdm.md)
 - [Onboarding di dispositivi Windows 10 con uno script locale](dlp-configure-endpoints-script.md)
-- [Risolvere i Microsoft Defender Advanced Threat Protection di onboarding](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Risolvere i problemi di onboarding di Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

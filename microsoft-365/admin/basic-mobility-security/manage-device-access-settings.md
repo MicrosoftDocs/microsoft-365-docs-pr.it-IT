@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Dispositivi mobili e sicurezza di base possono aiutarti a proteggere e gestire i dispositivi mobili.
-ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 24eeb1dfccef3d30e577b15ecb9d2fda4d902cdc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876949"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228160"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gestire le impostazioni di accesso ai dispositivi in Dispositivi mobili e sicurezza di base
 
@@ -33,10 +33,10 @@ Eseguire la procedura seguente:
 
 1. Accedi a Microsoft 365 con il tuo account amministratore globale.
 
-2. Nel browser digitare:  [https://protection.office.com](https://protection.office.com/) .    
+2. Nel browser digitare:  [https://protection.office.com](https://protection.office.com/) .
 
-    >[!IMPORTANT]
-    >Se è la prima volta che si usa Basic Mobility and Security per Microsoft 365 Business Standard, attivarlo qui: [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Dopo l'attivazione, gestisci i dispositivi con Office 365 [Sicurezza & Conformità](https://protection.office.com/).
+    > [!IMPORTANT]
+    > Se è la prima volta che si usa Basic Mobility and Security per Microsoft 365 Business Standard, attivarlo qui: [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Dopo l'attivazione, gestisci i dispositivi con Office 365 [Sicurezza & Conformità](https://protection.office.com/).
 
 3. Vai a Prevenzione della perdita di dati > **Criteri** dispositivo di gestione dei dispositivi e seleziona Gestisci impostazioni di accesso ai dispositivi a livello di   >  **** **organizzazione.**
 

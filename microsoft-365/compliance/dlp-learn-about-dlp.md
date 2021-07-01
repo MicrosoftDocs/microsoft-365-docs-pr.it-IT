@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come proteggere le informazioni riservate usando Microsoft 365 criteri e strumenti di prevenzione della perdita dei dati ed eseguire un'analisi del ciclo di vita DLP.
-ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 291a9ab09d14e24d58604644d77381d7f41214d6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108260"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226852"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati
 
@@ -35,7 +35,7 @@ In Microsoft 365, è possibile implementare la prevenzione della perdita dei dat
 - condivisioni file locali e SharePoint.
 
 Microsoft 365 rileva gli elementi sensibili utilizzando un'analisi approfondita del contenuto, non semplicemente tramite una semplice analisi del testo. Il contenuto viene analizzato per le corrispondenze dei dati principali alle parole chiave, tramite la valutazione delle espressioni regolari, la convalida delle funzioni interne e le corrispondenze dei dati secondari che si trovano in prossimità della corrispondenza dei dati primari. Oltre a ciò, DLP usa anche algoritmi di machine learning e altri metodi per rilevare il contenuto che corrisponde ai criteri DLP.
-  
+
 ## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP fa parte dell'offerta di conformità Microsoft 365 più ampia
 
 Microsoft 365 DLP è solo uno degli Microsoft 365 di conformità che verranno utilizzati per proteggere gli elementi sensibili ovunque vivano o in viaggio. È consigliabile comprendere gli altri strumenti del set di Microsoft 365 conformità, il modo in cui si interrelano e funzionano meglio insieme.  Per ulteriori [informazioni sul processo di](protect-information.md) protezione delle informazioni, vedere Microsoft 365 strumenti di conformità.
@@ -69,7 +69,7 @@ Microsoft 365 Il monitoraggio e la protezione DLP sono nativi delle applicazioni
 
 **Pianificazione della tecnologia per DLP**
 
-Tenere presente che DLP come tecnologia è in grado di monitorare e proteggere i dati in pausa, i dati in uso e i dati in movimento tra servizi Microsoft 365, dispositivi Windows 10, condivisioni file locali e SharePoint locale. Esistono implicazioni di pianificazione per le diverse posizioni, il tipo di dati che si desidera monitorare e proteggere e le azioni da eseguire quando si verifica una corrispondenza dei criteri.  
+Tenere presente che DLP come tecnologia è in grado di monitorare e proteggere i dati in pausa, i dati in uso e i dati in movimento tra servizi Microsoft 365, dispositivi Windows 10, condivisioni file locali e SharePoint locale. Esistono implicazioni di pianificazione per le diverse posizioni, il tipo di dati che si desidera monitorare e proteggere e le azioni da eseguire quando si verifica una corrispondenza dei criteri.
 
 **Pianificazione dei processi aziendali per DLP**
 
@@ -121,7 +121,7 @@ Durante la modalità di test, monitorare i risultati del criterio e ottimizzarlo
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>Abilitare il controllo e ottimizzare i criteri
 
-Una volta che il criterio soddisfa tutti gli obiettivi, attivalo. Continuare a monitorare i risultati dell'applicazione dei criteri e ottimizzare in base alle esigenze. In generale, i criteri hanno effetto circa un'ora dopo essere stati attivati. 
+Una volta che il criterio soddisfa tutti gli obiettivi, attivalo. Continuare a monitorare i risultati dell'applicazione dei criteri e ottimizzare in base alle esigenze. In generale, i criteri hanno effetto circa un'ora dopo essere stati attivati.
 
 <!--See, LINK TO topic for SLAs for location specific  details-->
 
@@ -133,7 +133,7 @@ Una volta che il criterio soddisfa tutti gli obiettivi, attivalo. Continuare a m
     - Un modello di criteri predefinito: dati finanziari, dati medici e sanitari, dati sulla privacy tutti per vari paesi e aree geografiche.
     - Criteri personalizzati che utilizzano i tipi di informazioni riservate, le etichette di conservazione e le etichette di riservatezza disponibili.
 2. **Scegliere dove si desidera monitorare:** si selezionano una o più posizioni che si desidera che DLP monitori per le informazioni riservate. È possibile monitorare:
-    
+
 posizione | includo/escluso da|
 |---------|---------|
 |Posta elettronica di Exchange| gruppi di distribuzione|
@@ -154,7 +154,7 @@ posizione | includo/escluso da|
 
 - SharePoint/Exchange/OneDrive: bloccare gli utenti esterni all'organizzazione che accedono al contenuto. Mostra all'utente un suggerimento e invia loro una notifica tramite posta elettronica che sta prendendo un'azione non consentita dal criterio DLP.
 - Teams Chat e canale: impedire la condivisione di informazioni riservate nella chat o nel canale
-- Windows 10 Dispositivi: controlla o limita la copia di un elemento sensibile in un dispositivo USB rimovibile 
+- Windows 10 Dispositivi: controlla o limita la copia di un elemento sensibile in un dispositivo USB rimovibile
 - Office App: mostra un popup che informa l'utente che sta impegnandosi in un comportamento rischioso e blocca o blocca ma consente l'override.
 - Condivisioni file locali: spostare il file da cui è archiviato in una cartella di quarantena
 
@@ -166,18 +166,18 @@ posizione | includo/escluso da|
 All DLP policies are created and maintained in the Microsoft 365 Compliance center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
 
 Dopo aver creato un criterio DLP nel Centro conformità, questo viene archiviato in un archivio dei criteri centrale e quindi sincronizzato con le varie origini di contenuto, tra cui:
-  
+
 - Exchange Online e da qui con Outlook sul Web e Outlook.
 - Siti di OneDrive for Business.
 - Siti di SharePoint Online.
 - Applicazioni desktop di Office (Excel, PowerPoint e Word).
 - Messaggi di chat e canali di Microsoft Teams.
-    
+
 In seguito alla sincronizzazione del criterio con il percorso corretto, viene avviata la valutazione del contenuto e l'applicazione delle azioni.
 
 ## <a name="viewing-policy-application-results"></a>Visualizzazione dei risultati dell'applicazione dei criteri
 
-DLP segnala una grande quantità di informazioni in Microsoft 365 monitoraggio, corrispondenze e azioni dei criteri e attività degli utenti. Dovrai usare e agire su queste informazioni per ottimizzare i criteri e le azioni di triage eseguite su elementi sensibili. La telemetria viene prima [Microsoft 365](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) log di controllo del Centro conformità, viene elaborata e si trasforma in diversi strumenti di creazione di report. Ogni strumento di creazione di report ha uno scopo diverso.  
+DLP segnala una grande quantità di informazioni in Microsoft 365 monitoraggio, corrispondenze e azioni dei criteri e attività degli utenti. Dovrai usare e agire su queste informazioni per ottimizzare i criteri e le azioni di triage eseguite su elementi sensibili. La telemetria viene prima [Microsoft 365](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) log di controllo del Centro conformità, viene elaborata e si trasforma in diversi strumenti di creazione di report. Ogni strumento di creazione di report ha uno scopo diverso.
 
 ### <a name="dlp-alerts-dashboard"></a>Dashboard avvisi DLP
 
@@ -203,7 +203,7 @@ I [report DLP mostrano](view-the-dlp-reports.md#view-the-reports-for-data-loss-p
 
 Nella scheda Esplora attività della  pagina DLP il filtro Attività è stato preimpostato *su DLPRuleMatch.* Usa questo strumento per esaminare le attività relative al contenuto che contiene informazioni riservate o a cui sono state applicate etichette, ad esempio quali etichette sono state modificate, i file sono stati modificati e sono state applicate corrispondenze a una regola.
 
-![Screenshot of the DLPRuleMatch scoped activity explorer ](../media/dlp-activity-explorer.png)
+![Screenshot of the DLPRuleMatch scoped activity explorer](../media/dlp-activity-explorer.png)
 
 Per altre informazioni, vedi [Introduzione a Esplora attività](data-classification-activity-explorer.md)
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Usa lo strumento Comunicazioni in un caso Advanced eDiscovery per inviare, raccogliere e tenere traccia delle notifiche di blocco legale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: df1b2d962e83110c62ccac871f669bbc0d3bfe02
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 026670b9ed45f366ff3d711d8f2b2d0274be5a19
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840561"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227104"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creare un avviso di blocco legale
 
@@ -52,34 +52,34 @@ Il primo passaggio consiste nel specificare i dettagli appropriati per gli avvis
 > Il responsabile emittente deve disporre di una **cassetta postale attiva** da visualizzare nell'elenco a discesa Responsabile emittente
 
 
-4. Fare clic su **Avanti**.
+4. Scegliere **Avanti**.
 
 ## <a name="step-2-define-the-portal-content"></a>Passaggio 2: Definire il contenuto del portale
 
-Successivamente, è possibile creare e aggiungere il contenuto dell'avviso di blocco. Nella pagina **Definisci contenuto portale** della procedura guidata **Crea** comunicazione specificare il contenuto dell'avviso di blocco. Questo contenuto verrà aggiunto automaticamente agli avvisi di rilascio, riemissione, promemoria e escalation. Inoltre, questo contenuto verrà visualizzato nel Portale di conformità del responsabile. 
+Successivamente, è possibile creare e aggiungere il contenuto dell'avviso di blocco. Nella pagina **Definisci contenuto portale** della procedura guidata **Crea** comunicazione specificare il contenuto dell'avviso di blocco. Questo contenuto verrà aggiunto automaticamente agli avvisi di rilascio, riemissione, promemoria e escalation. Inoltre, questo contenuto verrà visualizzato nel Portale di conformità del responsabile.
 
 ![Pagina contenuto portale](../media/PortalContent.PNG)
 
 Per creare il contenuto del portale:
 
-1. Digitare (o tagliare e incollare da un altro documento) l'avviso di blocco nella casella di testo per il contenuto del portale. 
+1. Digitare (o tagliare e incollare da un altro documento) l'avviso di blocco nella casella di testo per il contenuto del portale.
 
 2. Inserire variabili di unione nell'avviso per personalizzare l'avviso e condividere il Portale di conformità del responsabile.
 
-3. Fare clic su **Avanti**.
+3. Scegliere **Avanti**.
 
-  >[!Tip]
-  >Per ulteriori informazioni su come personalizzare il contenuto e il formato del contenuto del portale, vedere [Use the Communications Editor.](using-communications-editor.md)
+  > [!TIP]
+  > Per ulteriori informazioni su come personalizzare il contenuto e il formato del contenuto del portale, vedere [Use the Communications Editor.](using-communications-editor.md)
 
 ## <a name="step-3-set-the-required-notifications"></a>Passaggio 3: Impostare le notifiche necessarie
 
-Dopo aver definito il contenuto dell'avviso di blocco, è possibile configurare i flussi di lavoro per l'invio e la gestione del processo di notifica. Le notifiche sono messaggi di posta elettronica inviati per notificare e seguire i custodi. Ogni responsabile aggiunto alla comunicazione riceverà la stessa notifica. 
+Dopo aver definito il contenuto dell'avviso di blocco, è possibile configurare i flussi di lavoro per l'invio e la gestione del processo di notifica. Le notifiche sono messaggi di posta elettronica inviati per notificare e seguire i custodi. Ogni responsabile aggiunto alla comunicazione riceverà la stessa notifica.
 
 Per configurare e inviare un avviso di blocco, devi includere le notifiche di rilascio, rilascio e rilascio.
 
-### <a name="issuance-notification"></a>Notifica di rilascio 
+### <a name="issuance-notification"></a>Notifica di rilascio
 
-Dopo la creazione della comunicazione, la **notifica** di rilascio viene avviata dal responsabile del rilascio specificato. La notifica di rilascio è la prima comunicazione inviata al depositario per informarli degli obblighi di conservazione. 
+Dopo la creazione della comunicazione, la **notifica** di rilascio viene avviata dal responsabile del rilascio specificato. La notifica di rilascio è la prima comunicazione inviata al depositario per informarli degli obblighi di conservazione.
 
 Per creare una notifica di rilascio:
 
@@ -89,7 +89,7 @@ Per creare una notifica di rilascio:
 
 3. Specificare **l'oggetto** per l'avviso (obbligatorio).
 
-4. Specificare il contenuto o istruzioni aggiuntive che si desidera fornire al responsabile (obbligatorio). Il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di rilascio. 
+4. Specificare il contenuto o istruzioni aggiuntive che si desidera fornire al responsabile (obbligatorio). Il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di rilascio.
 
 5. Fare clic su **Salva**.
 
@@ -116,7 +116,7 @@ Per creare una notifica di riemissione:
 
 Una volta risolta una questione o se un responsabile non è più soggetto a conservare il contenuto, è possibile rilasciare il responsabile da un caso. Se il responsabile è stato precedentemente emesso un avviso di blocco, la notifica di rilascio può essere usata per avvisare i custodi che sono stati rilasciati dall'obbligo.
 
-Per creare una notifica di rilascio: 
+Per creare una notifica di rilascio:
 
 1. Nel riquadro **Rilascia** fai clic su **Modifica.**
 
@@ -148,7 +148,7 @@ Per pianificare i promemoria:
 
 4. Specificare il **numero di promemoria** (obbligatorio). Questo campo specifica il numero di promemoria da inviare ai responsabili che non rispondono. Ad esempio, se si imposta il numero di promemoria su 3, un responsabile riceverà un massimo di tre promemoria. Dopo che un responsabile ha riconosciuto la notifica di blocco, i promemoria non verranno più inviati a tale utente.
 
-5. Specificare **l'oggetto** per l'avviso (obbligatorio). 
+5. Specificare **l'oggetto** per l'avviso (obbligatorio).
 
 6. Specificare il contenuto o istruzioni aggiuntive che si desidera fornire al responsabile (obbligatorio). Il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di promemoria.
 
@@ -168,7 +168,7 @@ Per pianificare le escalation:
 
 4. Specificare il **numero di escalation** (obbligatorio). Questo campo specifica il numero di escalation da inviare ai responsabili che non rispondono. Se ad esempio si imposta il numero di escalation su 3, al responsabile e al responsabile verrà inviato un avviso di escalation per un massimo di tre volte. Dopo che un responsabile ha riconosciuto la notifica di blocco, le escalation non verranno più inviate.
 
-5. Specificare **l'oggetto** per l'avviso (obbligatorio). 
+5. Specificare **l'oggetto** per l'avviso (obbligatorio).
 
 6. Specificare il contenuto o istruzioni aggiuntive che si desidera fornire al responsabile (obbligatorio). Il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di escalation.
 
@@ -176,7 +176,7 @@ Per pianificare le escalation:
 
 ## <a name="step-5-assign-custodians-to-receive-notifications"></a>Passaggio 5: Assegnare i custodi per ricevere le notifiche
 
-Dopo aver finalizzato il contenuto per le notifiche, selezionare i custodi a cui si desidera inviare le notifiche. 
+Dopo aver finalizzato il contenuto per le notifiche, selezionare i custodi a cui si desidera inviare le notifiche.
 
 ![Pagina Seleziona custodi](../media/SelectCustodians.PNG)
 
@@ -188,8 +188,8 @@ Per aggiungere i custodi:
 
 2. Fare **clic su** Avanti per esaminare le impostazioni e i dettagli di comunicazione.
 
->[!NOTE]
->Puoi aggiungere solo i custodi che sono stati aggiunti al caso e non sono stati inviati un'altra notifica all'interno del caso.
+> [!NOTE]
+> Puoi aggiungere solo i custodi che sono stati aggiunti al caso e non sono stati inviati un'altra notifica all'interno del caso.
 
 ## <a name="step-6-review-settings"></a>Passaggio 6: rivedere le impostazioni
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bda9633ab37fd21fd66b3a8a53d4dd522e48ced1
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b7eb225f04f531c3b6de71bf72df0f8062a8c93d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820279"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226504"
 ---
 # <a name="insider-risk-management-audit-log"></a>Log di controllo per la gestione dei rischi Insider
 
@@ -38,8 +38,8 @@ Le aree incluse nel monitoraggio delle attività includono:
 
 Per visualizzare ed esportare i dati dal log di controllo, gli utenti devono essere assegnati ai gruppi di ruoli *Insider Risk Management* o Insider Risk Management *Auditors.* Per ulteriori informazioni sui gruppi di ruoli di gestione dei rischi insider, vedere Introduzione alla gestione dei rischi [insider Passaggio 1: abilitazione delle autorizzazioni.](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)
 
->[!NOTE]
->Il log di controllo per la gestione dei rischi insider non è associato al log di controllo Microsoft 365, sono sistemi di controllo indipendenti e acquisiscono informazioni su attività separate. La disabilitazione Microsoft 365 controllo non influisce sul controllo delle attività all'interno della gestione dei rischi insider.
+> [!NOTE]
+> Il log di controllo per la gestione dei rischi insider non è associato al log di controllo Microsoft 365, sono sistemi di controllo indipendenti e acquisiscono informazioni su attività separate. La disabilitazione Microsoft 365 controllo non influisce sul controllo delle attività all'interno della gestione dei rischi insider.
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Visualizzare le attività nel log di controllo dei rischi insider
 

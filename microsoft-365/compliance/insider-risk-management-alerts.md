@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9fe1665eda882793a62315299a3cbf6667ec7988
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 0ee3fdf19552ee80737f6758e655d297228c469e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445654"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226552"
 ---
 # <a name="insider-risk-management-alerts"></a>Avvisi per la gestione dei rischi Insider
 
@@ -32,14 +32,14 @@ Il dashboard di avviso **per il rischio** insider consente di visualizzare e agi
 - **Totale avvisi che devono essere esaminati**: viene elencato il numero totale di avvisi che necessitano di revisione e valutazione, inclusa una suddivisione in base alla gravità dell'avviso.
 - **Avvisi aperti negli ultimi 30** giorni: numero totale di avvisi creati dai criteri corrispondenti negli ultimi 30 giorni, ordinati in base ai livelli di gravità degli avvisi alti, medi e bassi.
 - **Tempo medio per la risoluzione degli avvisi**: riepilogo delle statistiche di avviso utili:
-    - Tempo medio di risoluzione degli avvisi di gravità elevata, elencato in ore, giorni o mesi.
-    - Tempo medio di risoluzione degli avvisi di gravità media, elencato in ore, giorni o mesi.
-    - Tempo medio di risoluzione degli avvisi di gravità bassa, elencato in ore, giorni o mesi.
+  - Tempo medio di risoluzione degli avvisi di gravità elevata, elencato in ore, giorni o mesi.
+  - Tempo medio di risoluzione degli avvisi di gravità media, elencato in ore, giorni o mesi.
+  - Tempo medio di risoluzione degli avvisi di gravità bassa, elencato in ore, giorni o mesi.
 
 ![Dashboard di avviso per la gestione dei rischi Insider](../media/insider-risk-alerts-dashboard.png)
 
->[!NOTE]
->La gestione dei rischi Insider usa la limitazione degli avvisi incorporata al fine di contribuire alla protezione e ottimizzazione dell'esperienza di indagine e revisione dei rischi. Tale limitazione protegge da problemi che possono causare un sovraccarico di avvisi relativi a criteri, come ad esempio connettori di dati configurati in modo non corretto o criteri di prevenzione della perdita dei dati. Di conseguenza, potrebbe verificarsi un ritardo nella visualizzazione di nuovi avvisi per un utente.
+> [!NOTE]
+> La gestione dei rischi Insider usa la limitazione degli avvisi incorporata al fine di contribuire alla protezione e ottimizzazione dell'esperienza di indagine e revisione dei rischi. Tale limitazione protegge da problemi che possono causare un sovraccarico di avvisi relativi a criteri, come ad esempio connettori di dati configurati in modo non corretto o criteri di prevenzione della perdita dei dati. Di conseguenza, potrebbe verificarsi un ritardo nella visualizzazione di nuovi avvisi per un utente.
 
 ## <a name="alert-status-and-severity"></a>Stato e gravità dell'avviso
 
@@ -75,7 +75,7 @@ Per cercare una parola specifica nel nome dell'avviso, selezionare il controllo 
 
 Per eseguire la valutazione di un avviso di rischio insider, completare i passaggi seguenti:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a **Gestione dei rischi Insider** e selezionare la **scheda** Avvisi.
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei rischi Insider** e selezionare la **scheda** Avvisi.
 2. Nel **dashboard Avvisi** selezionare l'avviso che si desidera utilizzare.
 3. Nel riquadro **dei dettagli degli avvisi** è possibile esaminare le schede seguenti e analizzare l'avviso:
     - **Riepilogo:** questa scheda contiene informazioni generali sull'avviso e consente di confermare l'avviso e creare un nuovo caso o di ignorare l'avviso. Include lo stato corrente per l'avviso e il livello di gravità del rischio di avviso, elencato come *Alto,* *Medio* o *Basso.* Il livello di gravità può aumentare o diminuire nel tempo se l'avviso non viene triaged.
@@ -91,8 +91,8 @@ Per eseguire la valutazione di un avviso di rischio insider, completare i passag
 
 ## <a name="activity-explorer-preview"></a>Esplora attività (anteprima)
 
->[!NOTE]
->Esplora attività è disponibile nell'area di gestione degli avvisi per gli utenti che attivano eventi dopo che questa funzionalità è disponibile nell'organizzazione.
+> [!NOTE]
+> Esplora attività è disponibile nell'area di gestione degli avvisi per gli utenti che attivano eventi dopo che questa funzionalità è disponibile nell'organizzazione.
 
 Esplora attività offre agli investigatori e agli analisti dei rischi uno strumento analitico completo che fornisce informazioni dettagliate sugli avvisi. Con Esplora attività, i revisori possono esaminare rapidamente una sequenza temporale delle attività rischiose rilevate e identificare e filtrare tutte le attività di rischio associate agli avvisi. Per filtrare gli avvisi in Esplora attività, selezionare il controllo Filtro. È possibile filtrare gli avvisi in base a uno o più attributi elencati nel riquadro dei dettagli per l'avviso. Esplora attività supporta anche colonne personalizzabili per consentire a investigatori e analisti di concentrare il dashboard sulle informazioni più importanti per loro.
 
@@ -100,7 +100,7 @@ Esplora attività offre agli investigatori e agli analisti dei rischi uno strume
 
 Per usare **Esplora attività,** completare la procedura seguente:
 
-1. Nel Centro Microsoft 365 conformità, passare a **Gestione dei rischi Insider** e selezionare la **scheda** Avvisi.
+1. Nella finestra Centro conformità Microsoft 365, vai a **Gestione dei rischi Insider** e seleziona la **scheda** Avvisi.
 2. Nel **dashboard Avvisi** selezionare l'avviso che si desidera utilizzare.
 3. Nel riquadro **dei dettagli degli avvisi** selezionare Apri visualizzazione **espansa.**
 4. Nella pagina dell'avviso selezionato selezionare la **scheda Esplora** attività.
@@ -113,7 +113,7 @@ Quando si esaminano le attività in Esplora attività, gli investigatori e gli a
 
 Quando l'avviso viene esaminato e esaminato, è possibile creare un nuovo caso per analizzare ulteriormente l'attività di rischio. Per creare un caso per un avviso, attenersi alla seguente procedura:
 
-1. Nel Centro [Microsoft 365 conformità,](https://compliance.microsoft.com)passare a **Gestione dei rischi Insider** e selezionare la **scheda** Avvisi.
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com), passare a **Gestione dei rischi Insider** e selezionare la **scheda** Avvisi.
 2. Nel **dashboard Avvisi** selezionare l'avviso per cui si desidera confermare e creare un nuovo caso.
 3. Nel riquadro **Dei dettagli degli avvisi** selezionare Azioni   >  **Confermare gli avvisi & creare il caso.**
 4. Nella finestra **di dialogo Conferma avviso e crea** caso di rischio insider immetti un nome per il caso, seleziona gli utenti da aggiungere come collaboratori e aggiungi commenti come applicabili. I commenti vengono aggiunti automaticamente al caso come nota del caso.

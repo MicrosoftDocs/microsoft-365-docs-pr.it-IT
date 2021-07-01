@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05d5889ba690bdf61fd51044b3c059f1476342af
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: e8f6c075d706da46d7163705f6aa9d0ca6cad1a2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964657"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227128"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match
 
@@ -385,15 +385,15 @@ Se non si vuole esporre file dati di testo sensibili non crittografati, è possi
 - un account aziendale o dell'Istituto di istruzione per Microsoft 365, che verrà aggiunto al gruppo di sicurezza **EDM\_datauploaders**
 - un computer Windows 10 o Windows Server 2016 con versione .NET 4.6.2 per l'esecuzione di EDMUploadAgent
 - una directory nel computer di caricamento per:
-    -  EDMUploadAgent
-    - il file degli elementi sensibili in .csv o  tsv,PatientRecords.csvnei nostri esempi
-    -  e i file di output hash e salt
-    - il nome del datastore dal file **edm.xml**, for quest’esempio `PatientRecords`
+  - EDMUploadAgent
+  - il file degli elementi sensibili in .csv o  tsv,PatientRecords.csvnei nostri esempi
+  - file hash e salt di output
+  - il nome del datastore dal file **edm.xml**, for quest’esempio `PatientRecords`
 - Se si usano [lo schema Exact Data Match e la procedura guidata per il tipo di informazioni sensibili](sit-edm-wizard.md) è ***necessario*** scaricarli
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Impostare il gruppo di sicurezza e l'account utente
 
-1. Come amministratore globale, passare all'interfaccia di amministrazione usando il [collegamento appropriato per l'abbonamento in uso](#portal-links-for-your-subscription) e [creare un gruppo di sicurezza](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) denominato **EDM\_ DataUploaders**.
+1. Come amministratore globale, passare all'interfaccia di amministrazione usando il [collegamento appropriato per l'abbonamento in uso](#portal-links-for-your-subscription) e [creare un gruppo di sicurezza](/office365/admin/email/create-edit-or-delete-a-security-group) denominato **EDM\_ DataUploaders**.
 
 2. Aggiungere uno o più utenti al gruppo di sicurezza **EDM\_DataUploaders**. (Questi utenti gestiranno il database delle informazioni sensibili.)
 
@@ -401,18 +401,17 @@ Se non si vuole esporre file dati di testo sensibili non crittografati, è possi
 
 Il computer deve avere accesso diretto al tenant di Microsoft 365.
 
->[!NOTE]
+> [!NOTE]
+>
 > Prima di iniziare questa procedura, verificare di essere un membro del gruppo di sicurezza **EDM\_DataUploaders**.
-
-> [!TIP]
+>
 > Facoltativamente, è possibile eseguire una convalida sul file .csv o tsv prima di caricarlo eseguendo:
 >
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+> `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
->Per altre informazioni sui parametri supportati da EdmUploadAgent.exe>, eseguire
+> Per altre informazioni sui parametri supportati da EdmUploadAgent.exe>, eseguire
 >
 > `EdmUploadAgent.exe /?`
-
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>Collegamenti all'agente di caricamento EDM per tipo di abbonamento
 

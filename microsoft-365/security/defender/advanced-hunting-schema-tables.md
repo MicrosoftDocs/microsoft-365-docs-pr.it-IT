@@ -1,5 +1,5 @@
 ---
-title: Tabelle dati nello schema di ricerca avanzata Microsoft 365 Defender
+title: Tabelle di dati nello schema Microsoft 365 Defender ricerca avanzata
 description: Informazioni sulle tabelle nello schema di ricerca avanzata per comprendere i dati su cui è possibile eseguire query di ricerca delle minacce
 keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, dati
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 50a221a65c8264d816de958ec74fa99e9e6db762
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470581"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53225993"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendere schema di ricerca avanzato
 
@@ -48,9 +48,9 @@ Durante la creazione di query, utilizzare il riferimento allo schema predefinito
 - **Query di esempio:** query di esempio che illustrano come utilizzare la tabella.
 
 ### <a name="access-the-schema-reference"></a>Accedere al riferimento allo schema
-Per accedere rapidamente al riferimento allo schema, selezionare l'azione Visualizza **riferimento** accanto al nome della tabella nella rappresentazione dello schema. È inoltre possibile selezionare **Riferimento allo schema** per cercare una tabella.   
+Per accedere rapidamente al riferimento allo schema, selezionare l'azione Visualizza **riferimento** accanto al nome della tabella nella rappresentazione dello schema. È inoltre possibile selezionare **Riferimento allo schema** per cercare una tabella.
 
-![Immagine che mostra come accedere al riferimento allo schema nel portale ](../../media/mtp-ah/ah-reference.png) 
+![Immagine che mostra come accedere al riferimento allo schema nel portale](../../media/mtp-ah/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>Informazioni sulle tabelle dello schema
 Di seguito sono elencate tutte le tabelle dello schema. Ogni nome di tabella rimanda a una pagina che descrive i nomi delle colonne di quella tabella. I nomi delle tabelle e delle colonne sono inoltre elencati nel Centro sicurezza come parte della rappresentazione dello schema nella schermata di ricerca avanzata.

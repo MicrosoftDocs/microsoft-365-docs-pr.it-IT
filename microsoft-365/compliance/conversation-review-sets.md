@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni sulla funzionalità di ricostruzione delle conversazioni in Advanced eDiscovery (denominato threading delle conversazioni) per ricostruire, rivedere ed esportare conversazioni di chat in Microsoft Teams e Yammer gruppi.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 12887ba8dd74c3dab445dcc76e155e274a371539
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 9848280a7d6dbcbd6128fff06f150c8458f09701
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838305"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227188"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>Threading delle conversazioni in Advanced eDiscovery
 
@@ -44,7 +44,7 @@ Con la ricostruzione delle conversazioni, puoi usare le funzionalità integrate 
 
 Ecco alcune definizioni utili per iniziare a usare la ricostruzione delle conversazioni.
 
-- **Messaggi:** Rappresenta l'unità più piccola di una conversazione. I messaggi possono variare in base alle dimensioni, alla struttura e ai metadati. 
+- **Messaggi:** Rappresenta l'unità più piccola di una conversazione. I messaggi possono variare in base alle dimensioni, alla struttura e ai metadati.
 
 - **Conversazione:** Rappresenta un raggruppamento di uno o più messaggi. In diverse applicazioni, le conversazioni possono essere rappresentate in modi diversi. In alcune applicazioni esiste un'azione esplicita che deriva dalla risposta a un messaggio esistente. Le conversazioni vengono formate in modo esplicito a seguito di questa azione dell'utente. Ad esempio, ecco uno screenshot di una conversazione di canale in Microsoft Teams.
 
@@ -63,15 +63,15 @@ Dopo aver esaminato e finalizzato la query di ricerca in una raccolta, è possib
 Quando aggiungi elementi dalle conversazioni a un set di recensioni, puoi usare l'opzione conversazioni a thread per raccogliere messaggi contestuali dalle conversazioni che contengono elementi che corrispondono ai criteri di ricerca della raccolta. Dopo aver selezionato l'opzione conversazioni di thread, possono verificarsi le operazioni seguenti:
 
   ![Recupero conversazioni](../media/messagesandconversations.png)
-  
+
 1. Utilizzando una parola chiave e una query di intervallo di date, la ricerca ha restituito un risultato *nel messaggio 3.* Questo messaggio fa parte di una conversazione più ampia, illustrata da *CRC1.*
-  
+
 2. Quando aggiungi i dati in un set di recensioni e abiliti le opzioni di recupero della conversazione, Advanced eDiscovery torna indietro e raccogli altri elementi in *CRC1.*
-  
+
 3. Dopo aver aggiunto gli elementi al set di revisione, è possibile esaminare tutti i singoli messaggi di *CRC1.*
 
 Per abilitato l'opzione conversazioni in thread, vedere [Commit di una bozza di raccolta in un set di revisione.](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set)
-  
+
 ## <a name="step-3-review-and-export-threaded-conversations"></a>Passaggio 3: esaminare ed esportare conversazioni in thread
 
 Dopo che il contenuto è stato elaborato e aggiunto al set di recensioni, puoi iniziare a esaminare i dati nel set di recensioni. Le funzionalità di revisione sono diverse a seconda che il contenuto sia stato aggiunto a un set di revisione standard o a un set di recensioni di conversazione.
@@ -84,7 +84,7 @@ In un set di revisione standard, i messaggi vengono elaborati e visualizzati com
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Revisione delle conversazioni in un set di revisione delle conversazioni
 
-In un set di revisione delle conversazioni, i singoli messaggi vengono threadati e presentati come conversazioni. In questo modo è possibile esaminare ed esportare conversazioni contestuali. 
+In un set di revisione delle conversazioni, i singoli messaggi vengono threadati e presentati come conversazioni. In questo modo è possibile esaminare ed esportare conversazioni contestuali.
 
   ![Insieme di revisione delle conversazioni](../media/ConversationRSOptions.PNG)
 
@@ -96,10 +96,10 @@ In un set di revisione delle conversazioni, puoi usare le opzioni seguenti per f
 
 - **Raggruppa per conversazione:** Raggruppa i messaggi all'interno della stessa conversazione per aiutare gli utenti a semplificare e accelerare il processo di revisione.
 
-- **Visualizzazione riepilogo:** Visualizza la conversazione a thread. In questa visualizzazione è possibile visualizzare l'intera conversazione e accedere ai metadati per ogni singolo messaggio.  
-  
+- **Visualizzazione riepilogo:** Visualizza la conversazione a thread. In questa visualizzazione è possibile visualizzare l'intera conversazione e accedere ai metadati per ogni singolo messaggio.
+
    - Visualizzare i metadati per i singoli messaggi
-   
+
    - Scaricare singoli messaggi
 
 - **Visualizzazione testo:** Fornisce il testo estratto per l'intera conversazione.
@@ -116,25 +116,19 @@ In un set di revisione delle conversazioni, puoi impostare le opzioni seguenti p
 
 ![Opzioni di esportazione per le conversazioni](../media/export.png)
 
-a. Opzioni metadati
+1. Opzioni metadati:
+   - **Carica file:** I metadati sono inclusi per ogni singolo messaggio, messaggio di posta elettronica e documento. In una conversazione è presente una riga per ogni messaggio.
+   - **Tag:** I tag del processo di revisione sono inclusi nel file di metadati. I messaggi di una conversazione condividono gli stessi tag.
 
-   - **Carica file:** I metadati sono inclusi per ogni singolo messaggio, messaggio di posta elettronica e documento. In una conversazione è presente una riga per ogni messaggio. 
-
-   - **Tag:** I tag del processo di revisione sono inclusi nel file di metadati. I messaggi di una conversazione condividono gli stessi tag. 
-
-b. Opzioni di conversazione
-  
-   - **File di conversazione:** Quando si esportano file di conversazione, la visualizzazione con annotazioni viene convertita in un file PDF e scaricata nella cartella di esportazione. I messaggi in un file di conversazione puntano alla versione PDF dello stesso file di conversazione.  
-  
+2. Opzioni di conversazione:
+   - **File di conversazione:** Quando si esportano file di conversazione, la visualizzazione con annotazioni viene convertita in un file PDF e scaricata nella cartella di esportazione. I messaggi in un file di conversazione puntano alla versione PDF dello stesso file di conversazione.
    - **Singoli messaggi di chat:** Quando si esportano singoli messaggi, ogni messaggio univoco nella conversazione viene esportato come elemento autonomo. Il file viene esportato nello stesso formato in cui è stato salvato nella cassetta postale. Per una conversazione specifica, si ricevono più file msg.
 
-     >[!NOTE]
+     > [!NOTE]
      > Se sono state applicate annotazioni al file di conversazione, queste annotazioni non verranno trasferite ai singoli messaggi.
 
-c. Altre opzioni
-
+3. Altre opzioni:
    - **Generare file di testo per tutto il contenuto esportato:** Genera un file di testo per ogni conversazione esportata dal set di recensioni.
-
    - **Sostituisci il contenuto esportato con PDF redatti:** Se i file di conversazione redatti vengono generati durante il processo di revisione, questi file sono disponibili durante l'esportazione. Puoi decidere se esportare solo i file nativi (non selezionando questa opzione) o sostituire i file nativi con le versioni rievocate dei file nativi (selezionando questa opzione), che vengono esportati come file PDF.
 
 ## <a name="more-information"></a>Ulteriori informazioni
@@ -142,7 +136,5 @@ c. Altre opzioni
 Per ulteriori informazioni su come esaminare i dati dei casi in Advanced eDiscovery, vedere gli articoli seguenti:
 
 - [Visualizzare i dati del caso](view-documents-in-review-set.md)
-
 - [Analizzare i dati del caso](analyzing-data-in-review-set.md)
-
 - [Esportare i dati del caso](exporting-data-ediscover20.md)

@@ -13,30 +13,30 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilizzare lo strumento Ricerca contenuto eDiscovery nel Centro sicurezza & conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, nei documenti nei siti di SharePoint e nelle posizioni di OneDrive e nelle conversazioni di messaggistica istantanea in Skype for Business.
-ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a70c234331d1329fb80f32fb81762391a862d487
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333687"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226060"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Cercare contenuto tramite lo strumento Ricerca contenuto
 
 Utilizzare lo strumento Ricerca contenuto nel Centro sicurezza & conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, nei documenti nei siti di SharePoint e nelle posizioni di OneDrive e nelle conversazioni di messaggistica istantanea in Skype for Business. È possibile utilizzare lo strumento di ricerca contenuto per cercare messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea in strumenti di collaborazione come Microsoft Teams e Microsoft 365 gruppi.
-  
+
 ## <a name="search-for-content"></a>Cercare contenuto
 
 Il primo passaggio consiste nell'iniziare a utilizzare lo strumento Ricerca contenuto per scegliere i percorsi di contenuto in cui eseguire la ricerca e configurare una query con parole chiave per la ricerca di elementi specifici. In caso contrario, è possibile lasciare vuota la query e restituire tutti gli elementi nelle posizioni di destinazione.
-  
+
 - [Creare ed eseguire](content-search.md) una ricerca contenuto
 
 - [Riferimento funzionalità] per Ricerca contenuto (content-search-reference.md)
 
-- [Creare query di ricerca e usare condizioni per](keyword-queries-and-search-conditions.md) restringere la ricerca 
+- [Creare query di ricerca e usare condizioni per](keyword-queries-and-search-conditions.md) restringere la ricerca
 
-- [Configurare il filtro delle autorizzazioni di ricerca](permissions-filtering-for-content-search.md) in modo che un responsabile di eDiscovery possa cercare solo sottoinsiemi di cassette postali o siti nell'organizzazione 
+- [Configurare il filtro delle autorizzazioni di ricerca](permissions-filtering-for-content-search.md) in modo che un responsabile di eDiscovery possa cercare solo sottoinsiemi di cassette postali o siti nell'organizzazione
 
-- [Eseguire una ricerca nell'elenco id](csv-file-for-an-id-list-content-search.md) per cercare messaggi di posta elettronica specifici 
+- [Eseguire una ricerca nell'elenco id](csv-file-for-an-id-list-content-search.md) per cercare messaggi di posta elettronica specifici
 
 - [Cercare le cassette postali basate sul cloud](search-cloud-based-mailboxes-for-on-premises-users.md) per gli utenti locali in Microsoft 365
 
@@ -48,22 +48,22 @@ Il primo passaggio consiste nell'iniziare a utilizzare lo strumento Ricerca cont
 
 - [Ritentare una ricerca di contenuto per](retry-failed-content-search.md) risolvere un errore di percorso del contenuto
 
-- [Conservare i destinatari Ccn](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) in modo da poterli cercare 
+- [Conservare i destinatari Ccn](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) in modo da poterli cercare
 
 ## <a name="perform-actions-on-content-you-find"></a>Eseguire azioni sul contenuto trovato
 
 Dopo aver eseguito una ricerca e affinarla in base alle esigenze, il passaggio successivo consiste nell'eseguire un'operazione con i risultati restituiti dalla ricerca. È possibile esportare e scaricare i risultati nel computer locale o in caso di attacco tramite posta elettronica all'organizzazione, è possibile eliminare i risultati di una ricerca dalle cassette postali degli utenti.
-  
-- [Esportare i risultati di una ricerca di contenuto](export-search-results.md) e scaricarli nel computer locale 
+
+- [Esportare i risultati di una ricerca di contenuto](export-search-results.md) e scaricarli nel computer locale
 
 - [Cercare ed eliminare messaggi di posta](search-for-and-delete-messages-in-your-organization.md) elettronica, ad esempio messaggi che contenutino un virus, allegati pericolosi o messaggi di phishing
 
-- [Esportare un report](export-a-content-search-report.md) sui risultati di una ricerca di contenuto, senza esportare i risultati effettivi 
+- [Esportare un report](export-a-content-search-report.md) sui risultati di una ricerca di contenuto, senza esportare i risultati effettivi
 
 ## <a name="learn-more-about-content-search"></a>Ulteriori informazioni sulla ricerca di contenuto
 
 Ricerca contenuto è facile da usare, ma è anche uno strumento potente. Dietro le quinte, c'è molto da fare. Più si conosce e si comprende il comportamento e le limitazioni, maggiore sarà il successo con cui verrà utilizzato per le esigenze di ricerca e indagine dell'organizzazione. Informazioni su:
-  
+
 - [Elementi parzialmente indicizzati in](partially-indexed-items-in-content-search.md) Exchange e SharePoint e come includerli o escluderli durante l'esportazione e il download dei risultati della ricerca
 
 - [Analizzare gli elementi parzialmente indicizzati e](investigating-partially-indexed-items-in-ediscovery.md) determinare l'esposizione dell'organizzazione a questi elementi
@@ -77,11 +77,11 @@ Ricerca contenuto è facile da usare, ma è anche uno strumento potente. Dietro 
 ## <a name="use-scripts-for-advanced-scenarios"></a>Usare script per scenari avanzati
 
 A volte è necessario eseguire attività di ricerca del contenuto più avanzate, complesse e ripetitive. In questi casi, è più semplice e veloce usare i comandi di PowerShell nel Centro sicurezza & conformità. Per semplificare questa operazione &, sono stati creati diversi script di PowerShell del Centro sicurezza e conformità per completare attività complesse correlate alla ricerca di contenuto.
-  
+
 - [Cercare cartelle specifiche di cassette](use-content-search-for-targeted-collections.md) postali e siti (denominate *raccolta di destinazione) quando si è certi che gli elementi che responsavano a un caso si trovino in tale cartella
 
-- [Cercare nella cassetta postale e OneDrive un](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) elenco di utenti 
+- [Cercare nella cassetta postale e OneDrive un](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) elenco di utenti
 
-- [Creare, creare report ed eliminare più](create-report-on-and-delete-multiple-content-searches.md) ricerche per identificare ed eliminare in modo rapido ed efficiente i dati di ricerca 
+- [Creare, creare report ed eliminare più](create-report-on-and-delete-multiple-content-searches.md) ricerche per identificare ed eliminare in modo rapido ed efficiente i dati di ricerca
 
 - [Clonare una ricerca di contenuto](clone-a-content-search.md) e confrontare rapidamente i risultati di query di ricerca con parole chiave diverse eseguite nelle stesse posizioni di contenuto. oppure utilizzare lo script per risparmiare tempo senza dover immettere di nuovo un numero elevato di percorsi di contenuto quando si crea una nuova ricerca

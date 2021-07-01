@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: b5aa6c737bc54129ce49378a7dcaf81e9d5c612f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114104"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226684"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
@@ -34,7 +34,7 @@ La **prevenzione della perdita di dati degli endpoint** (Endpoint DLP) estende l
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Attività endpoint che è possibile monitorare e su cui si può intervenire
 
-Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seguenti, che gli utenti possono eseguire sugli elementi sensibili nei dispositivi che eseguono Windows 10. 
+Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seguenti, che gli utenti possono eseguire sugli elementi sensibili nei dispositivi che eseguono Windows 10.
 
 |Attività |Descrizione  | Controllabile/limitabile|
 |---------|---------|---------|
@@ -48,7 +48,7 @@ Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seg
 |creare un elemento.|Rileva quando un utente crea un elemento| controllabile|
 |rinominare un elemento|Rileva quando un utente rinomina un elemento| controllabile|
 
- ## <a name="monitored-files"></a>File monitorati
+## <a name="monitored-files"></a>File monitorati
 
 Endpoint DLP supporta il monitoraggio di questi tipi di file:
 
@@ -66,10 +66,10 @@ Endpoint DLP supporta il monitoraggio di questi tipi di file:
 - File CS
 - File H
 - File Java
- 
+
 Per impostazione predefinita, Endpoint DLP controlla le attività per questi tipi di file anche in mancanza di una corrispondenza dei criteri. Se si vogliono monitorare i dati solo se c'è una corrispondenza dei criteri, è possibile disattivare l'opzione **Controllare sempre le attività dei file per i dispositivi** nelle impostazioni globali di Endpoint DLP. Se questa impostazione è attiva, le attività su qualsiasi file Word, PowerPoint, Excel, PDF e .csv vengono sempre controllate, anche se il dispositivo non dispone di alcun criterio.
 
-Endpoint DLP monitora le attività in base al tipo MIME, pertanto le attività verranno acquisite anche se l'estensione del file viene cambiata. 
+Endpoint DLP monitora le attività in base al tipo MIME, pertanto le attività verranno acquisite anche se l'estensione del file viene cambiata.
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Cosa distingue Endpoint DLP
 
@@ -153,8 +153,8 @@ Ad esempio, se un file viene copiato in un supporto USB rimovibile, nei dettagli
 
 Dopo avere acquisito familiarità con Endpoint DLP, è possibile proseguire con questi argomenti:
 
-1) [Introduzione alla prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-getting-started.md)
-2) [Uso della prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-using.md)
+1. [Introduzione alla prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-getting-started.md)
+2. [Uso della prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Vedere anche
 
