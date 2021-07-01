@@ -9,16 +9,16 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Domande frequenti su Microsoft Bookings.
-  ms.openlocfilehash: e9617710b70c0b79f855284e789c58b3f1124515
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: 956d423ef89454fa87524ce15165ffd3c8b59507
+  ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334001"
+  ms.lasthandoff: 06/30/2021
+  ms.locfileid: "53227704"
 title: Domande frequenti su Microsoft Bookings
 summary: ''
 sections:
-- name: Generale
+- name: Impostazioni generali
   questions:
   - question: >
       Che cos'è Microsoft Bookings?
@@ -55,7 +55,7 @@ sections:
   - question: >
       Il reparto IT può controllare se gli utenti finali possono accedere a Bookings?
     answer: >
-      Bookings is available in Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. A tale scopo, [seguire queste istruzioni](turn-bookings-on-or-off.md).
+      Bookings is available in Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the interfaccia di amministrazione di Microsoft 365 if they choose. A tale scopo, [seguire queste istruzioni](turn-bookings-on-or-off.md).
 
 
       Se un cliente desidera disabilitare l'accesso a Bookings per determinate licenze idonee nel tenant, può utilizzare criteri di gruppo per limitare le licenze o implementare un criterio cassetta postale di OWA che limiterà chi è in grado di creare nuovi calendari di Bookings.
@@ -123,7 +123,7 @@ sections:
   - question: >
       Come si ottiene Microsoft Bookings?
     answer: >
-      Bookings è disponibile per i clienti con Office 365 A3, A5, E3 ed E5, oltre a Microsoft 365 Business Standard, Microsoft 365 Business Premium, A3, A5, E3 ed E5. Puoi usare Bookings con un'app complementare iOS e Android. Bookings non è disponibile come app autonoma. Outlook Web App o Outlook sul Web deve essere abilitato per l'utilizzo di Bookings, in quanto archivia i dati all'interno Outlook.
+      Bookings è disponibile per i clienti con Office 365 A3, A5, E3 ed E5, oltre a Microsoft 365 Business Standard, Microsoft 365 Business Premium, A3, A5, E3 ed E5. Puoi usare Bookings con un'app complementare iOS e Android. Bookings non è disponibile come app autonoma. Outlook Web App o Outlook sul web devono essere abilitati per l'utilizzo di Bookings, in quanto archivia i dati all'interno Outlook.
 
 
       Una licenza di Bookings offre funzionalità complete al prodotto, inclusa la creazione e la gestione dei calendari. Consente inoltre agli utenti di visualizzare e modificare i calendari esistenti, quando questi utenti vengono aggiunti come personale in un ruolo amministratore o visualizzatore.
@@ -201,9 +201,9 @@ sections:
     answer: >
       Gli indirizzi di posta elettronica vengono controllati e gestiti a livello Microsoft 365 e dipendono dalle impostazioni di configurazione del dominio. Altre informazioni sono disponibili [qui.](/powershell/module/exchange/get-accepteddomain)
   - question: >
-      La possibilità di inviare SMS messaggi dipende da un servizio diverso o da una configurazione specifica?
+      La possibilità di inviare messaggi SMS dipende da un servizio diverso o da una configurazione specifica?
     answer: >
-      SMS i messaggi sono attualmente disponibili in Nord America e verrà utilizzato un account Skype o Twilio per SMS recapito.
+      I messaggi SMS sono attualmente disponibili in Nord America e verrà utilizzato un account Skype o Twilio per il recapito SMS.
   - question: >
       Come possono essere visualizzati gli appuntamenti di Bookings nel calendario di una persona?
     answer: >
@@ -305,9 +305,9 @@ sections:
     answer: >
       Il personale viene assegnato in modo casuale in questi scenari, tra tutti i membri del personale disponibili al momento della prenotazione dell'appuntamento. Attualmente non esiste alcun modo per garantire una distribuzione equa degli appuntamenti assegnati casualmente tra tutti i membri del personale o per il limite del numero di appuntamenti assegnati a ogni membro del personale. Se è necessario eseguire il bilanciamento del carico tra il personale dopo diverse assegnazioni casuali, è possibile farlo manualmente nella scheda Calendario della pagina Prenotazioni.
   - question: >
-      In che modo gli utenti possono rifiutare esplicitamente SMS messaggi se hanno già acconsentito esplicitamente?
+      In che modo gli utenti possono rifiutare esplicitamente di ricevere messaggi SMS se hanno già acconsentito esplicitamente in precedenza?
     answer: >
-      Quando si prenota un appuntamento SMS messaggi di testo abilitati, ai clienti verrà richiesto di selezionare la casella di consenso esplicito ogni volta che prenotano. I clienti possono anche rispondere direttamente al messaggio di SMS (il provider di SMS) che indica che desiderano che i messaggi cessino e quindi non verranno inviati altri sms a tale numero di telefono. Se il cliente rifiuta esplicitamente di ricevere messaggi di testo dal provider e non da Bookings stesso, non riceverà più messaggi SMS in futuro, anche quando acconsente esplicitamente dalla pagina Prenotazioni.
+      Quando si prenota un appuntamento con SMS abilitati, ai clienti verrà richiesto di selezionare la casella di consenso esplicito ogni volta che prenotano. I clienti possono anche rispondere direttamente al messaggio SMS (il provider SMS) che indica che desiderano che i messaggi cessino e quindi non verranno inviati altri sms a quel numero di telefono. Se il cliente rifiuta esplicitamente di ricevere sms dal provider e non da Bookings stesso, non riceverà più messaggi SMS in futuro, anche quando acconsente esplicitamente dalla pagina Prenotazioni.
 - name: Risoluzione dei problemi
   questions:
   - question: >
@@ -318,7 +318,7 @@ sections:
 
       > [!NOTE]
 
-      > Bookings è attivato per impostazione predefinita per i clienti con Microsoft 365 Business Standard, Microsoft 365 A3 o Microsoft 365 A5. Bookings è disponibile anche per i clienti che hanno Office 365 Enterprise E3 e Office 365 Enterprise E5, ma è disattivato per impostazione predefinita. Per iniziare, vedi [Ottenere l'accesso a Microsoft Bookings.](get-access.md) Per attivare o disattivare Bookings, vedi Attivare o disattivare [Bookings per la tua organizzazione.](turn-bookings-on-or-off.md)
+      > Bookings è attivato per impostazione predefinita per i clienti che dispongono di Microsoft 365 Business Standard, Microsoft 365 A3 o Microsoft 365 A5 clienti. Bookings è disponibile anche per i clienti che hanno Office 365 Enterprise E3 e Office 365 Enterprise E5, ma è disattivato per impostazione predefinita. Per iniziare, vedi [Ottenere l'accesso a Microsoft Bookings.](get-access.md) Per attivare o disattivare Bookings, vedi Attivare o disattivare [Bookings per la tua organizzazione.](turn-bookings-on-or-off.md)
 
 
       Per informazioni sulla sincronizzazione del calendario del personale, vedere [Aggiungere personale a Bookings.](add-staff.md) Assicurati che nella pagina **Dettagli del personale** sia selezionata l'opzione Eventi nel calendario che **influiscono** sulla disponibilità.
@@ -359,4 +359,4 @@ sections:
 
 
       Se l'errore persiste dopo un periodo di tempo prolungato o lo si verifica spesso, contattare il supporto tecnico.
-additionalContent: "\n## <a name=\"additional-resources\"></a>Risorse aggiuntive\n\n- [Microsoft Bookings espande la disponibilità nel blog aziendale](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Video sul funzionamento di Microsoft Bookings](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Iniziare a usare Microsoft Bookings](get-access.md)\n\n- [Attivare o disattivare Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [Aggiungere utenti singolarmente o in blocco](../admin/add-users/add-users.md?view=o365-worldwide.)\n\n- [Aggiungere personale a Bookings](add-staff.md)\n\n- [Componenti API da automatizzare dopo la definizione del modello](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [URL del calendario prenotazioni per la visualizzazione](https://outlook.office.com/bookings/calendar)\n\n- [Criteri di conformità di Bookings](/compliance/regulatory/gdpr-dsr-Office365?view=o365-worldwide#bookings)\n\n- [Personalizzare e pubblicare la pagina di prenotazione](customize-booking-page.md)\n\n- [Configurazione delle cassette postali tenant](/powershell/module/exchange/get-accepteddomain)\n\n- [Prenotazioni di gruppo](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Metriche di Bookings e monitoraggio delle attività](metrics-and-activity-tracking.md)\n\n- [M365 Public Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- Inviare commenti e suggerimenti tramite [UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)"
+additionalContent: "\n## <a name=\"additional-resources\"></a>Risorse aggiuntive\n\n- [Microsoft Bookings espande la disponibilità nel blog aziendale](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Video sul funzionamento di Microsoft Bookings](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Iniziare a usare Microsoft Bookings](get-access.md)\n\n- [Attivare o disattivare Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [Aggiungere utenti singolarmente o in blocco](../admin/add-users/add-users.md)\n\n- [Aggiungere personale a Bookings](add-staff.md)\n\n- [Componenti API da automatizzare dopo la definizione del modello](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [URL del calendario prenotazioni per la visualizzazione](https://outlook.office.com/bookings/calendar)\n\n- [Criteri di conformità di Bookings](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [Personalizzare e pubblicare la pagina di prenotazione](customize-booking-page.md)\n\n- [Configurazione delle cassette postali tenant](/powershell/module/exchange/get-accepteddomain)\n\n- [Prenotazioni di gruppo](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Metriche di Bookings e monitoraggio delle attività](metrics-and-activity-tracking.md)\n\n- [M365 Public Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- Inviare commenti e suggerimenti tramite [UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)"
