@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0f9f5665345733abafc6e4f2e777958feb4e11b6
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8240b9f4c4402e0e372a5e242d8b200f26f28717
+ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298636"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53243972"
 ---
 # <a name="contact-support-for-india"></a>Contattare il supporto per l'India
 
@@ -36,7 +36,3 @@ Inglese: Mon-Fri 9.00-18.00
 ### <a name="technical-support"></a>Supporto tecnico:
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
-
-Numero Telefono alternativo: 1800 200 2052
-
-Numero verde locale
