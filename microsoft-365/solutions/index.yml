@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: c71ba6628ed858311db3d58c144295ff617679dc
-  ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+  ms.openlocfilehash: 053a20e65859fedbd91c9357ccdbd98bdb5109b3
+  ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 06/06/2021
-  ms.locfileid: "52789208"
+  ms.lasthandoff: 06/29/2021
+  ms.locfileid: "53177394"
 landingContent:
 - title: Guide della soluzione fondamentali
   linkLists:
@@ -33,6 +33,8 @@ landingContent:
       url: deploy-threat-protection.md
     - text: 'Distribuire la protezione delle informazioni per le normative sulla privacy dei dati '
       url: information-protection-deploy.md
+    - text: Microsoft 365 per piccole imprese e campagne
+      url: ../campaigns/index.md
 - title: Illustrazioni e principi di progettazione dell'architettura
   linkLists:
   - linkListType: architecture
@@ -41,46 +43,50 @@ landingContent:
       url: cloud-architecture-models.md
     - text: Illustrazioni sulla produttività di Microsoft 365
       url: productivity-illustrations.md
-    - text: Poster sull'architettura di Teams
-      url: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Principi di progettazione
       url: design-principles.md
-- title: Risorse del carico di lavoro
+    - text: Infografiche per utenti
+      url: infographics-for-users.md
+    - text: Icone e modelli architettura
+      url: architecture-icons-templates.md
+- title: Guide alle soluzioni di amministrazione e migrazione
   linkLists:
-  - linkListType: reference
+  - linkListType: how-to-guide
     links:
-    - text: Casi studio di Contoso
-      url: contoso-case-study-solutions.md
-  - linkListType: tutorial
-    links:
-    - text: Guide dei laboratori di testing
-      url: test-lab-guides-overview-solutions.md
+    - text: Gestione dei tenant
+      url: tenant-management-overview.md
+    - text: Rimuovere un ex dipendente
+      url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Eseguire la migrazione di Condivisioni file a Microsoft 365
+      url: /sharepointmigration/mm-get-started.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 - title: Guide alle soluzioni per il lavoro in team e la collaborazione
   linkLists:
   - linkListType: deploy
     links:
     - text: Pianificare e distribuire una soluzione vocale di Teams
       url: deploy-voice.md
+    - text: Gestire i contratti per l'azienda
+      url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
   - linkListType: overview
     links:
+    - text: Intranet intelligente
+      url: /sharepoint/intelligent-internet-overview.md
     - text: Governance collaborativa
       url: collaboration-governance-overview.md
     - text: Collaborazione ai file
       url: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: Intranet intelligente
-      url: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Guida di OneDrive per le aziende
       url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-- title: Guide alle soluzioni per la sicurezza e la conformità
+- title: Guide di soluzione di conformità
   linkLists:
   - linkListType: deploy
     links:
-    - text: Principali attività per i team di sicurezza per supportare il lavoro da casa
-      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: Sicurezza Microsoft 365 per Business Decision Maker (BDM)
-      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: Distribuire Microsoft Defender per endpoint
-      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Soluzioni per i rischi Insider
+      url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Soluzioni di controllo
+      url: ../compliance/auditing-solutions-overview.md
+    - text: Microsoft 365 Advanced eDiscovery
+      url: ../compliance/overview-ediscovery-20.md
   - linkListType: reference
     links:
     - text: "ISO: piano d'azione consigliato"
@@ -91,6 +97,44 @@ landingContent:
       url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: "GDPR: piano d'azione consigliato"
       url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: Guide alle soluzioni per la sicurezza
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Principali attività per i team di sicurezza per supportare il lavoro da casa
+      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Sicurezza Microsoft 365 per Business Decision Maker (BDM)
+      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Configurazioni di identità e accesso dei dispositivi
+      url: ../security/office-365-security/microsoft-365-policies-configurations.md
+    - text: Distribuire Microsoft Defender per endpoint
+      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+    - text: Valutare Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: Raccomandazioni sulla sicurezza per gli account con priorità
+      url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+    - text: Valutare Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint
+      url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
+  - linkListType: how-to-guide
+    links:
+    - text: Migrare da Symantec a Microsoft Defender per endpoint
+      url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
+    - text: Migrare da McAfee a Microsoft Defender per endpoint
+      url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
+    - text: Passare dalla soluzione di sicurezza non Microsoft per endpoint a Microsoft Defender per Endpoint
+      url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+- title: Risorse del carico di lavoro
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Casi studio di Contoso
+      url: contoso-case-study-solutions.md
+  - linkListType: tutorial
+    links:
+    - text: Guide dei laboratori di testing
+      url: test-lab-guides-overview-solutions.md
 - title: Guida specifica del settore
   linkLists:
   - linkListType: overview
