@@ -1,5 +1,5 @@
 ---
-title: Passaggio 2. Fornire l'accesso remoto alle app e ai servizi locali.
+title: "Passaggio2: fornire l'accesso remoto alle app e ai servizi locali"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Assicurarsi che i lavoratori remoti possano accedere alle risorse locali e ottimizzare l'accesso ai servizi cloud di Microsoft 365.
-ms.openlocfilehash: 9fea86bb9c564a37a519d2c7e0ef2e2fd0a59470
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: bc446cf26ec99d3e9f81564b5474777c674603bc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029135"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229432"
 ---
-# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Passaggio 2. Fornire l'accesso remoto alle app e ai servizi locali.
+# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Passaggio2: fornire l'accesso remoto alle app e ai servizi locali
 
-Se l'organizzazione usa una VPN di accesso remoto, in genere con server VPN nel perimetro della rete e dei client VPN installati nei dispositivi degli utenti, gli utenti possono usare connessioni VPN di accesso remoto per accedere alle app e ai server locali. Tuttavia, potrebbe essere necessario ottimizzare il traffico verso i servizi basati nel cloud di Microsoft 365.
+Se l'organizzazione usa una VPN di accesso remoto, in genere con server VPN nel perimetro della rete e dei client VPN installati nei dispositivi degli utenti, gli utenti possono usare connessioni VPN di accesso remoto per accedere alle app e ai server locali. Ma potrebbe essere necessario ottimizzare il traffico verso i servizi basati su cloud di Microsoft 365.
 
 Se gli utenti non scelgono una soluzione VPN, è possibile usare il proxy di applicazione di Azure Active Directory (Azure AD) e la VPN da punto a sito (point-to-site) di Azure per fornire l'accesso, nel caso in cui tutte le app siano basate sul Web.
 
@@ -51,7 +51,7 @@ Senza split tunneling, tutto il traffico di lavoro remoto viene inviato attraver
 
 ![Traffico di rete dai client VPN senza tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Il traffico di Microsoft 365 deve avere un percorso indiretto nell'organizzazione, che potrebbe essere inoltrato a un punto di ingresso di rete Microsoft lontano dalla posizione fisica del client VPN. Questo percorso indiretto aggiunge latenza al traffico di rete e riduce le prestazioni complessive. 
+Il traffico di Microsoft 365 deve avere un percorso indiretto nell'organizzazione, che potrebbe essere inoltrato a un punto di ingresso della rete Microsoft lontano dalla posizione fisica del client VPN. Questo percorso indiretto aggiunge latenza al traffico di rete e riduce le prestazioni complessive.
 
 Grazie alla modalità split tunneling, è possibile configurare il client VPN per escludere tipi specifici di traffico da inviare tramite la connessione VPN alla rete dell'organizzazione.
 
@@ -67,7 +67,7 @@ Per informazioni dettagliate e per materiale sussidiario, consultare [Ottimizzar
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Distribuire l'accesso remoto quando si dispone solo di app Web e di un'identità ibrida
 
-Se i lavoratori remoti non usano un client VPN tradizionale e gli account utente e i gruppi locali sono sincronizzati con Azure AD, è possibile usare il proxy di applicazione di Azure AD per fornire accesso remoto sicuro alle applicazioni basate sul Web ospitate nei server locali. Le applicazioni basate sul Web includono i siti di SharePoint Server, i server di Outlook Web Access o qualsiasi altra applicazione aziendale basata sul Web. 
+Se i lavoratori remoti non usano un client VPN tradizionale e gli account utente e i gruppi locali sono sincronizzati con Azure AD, è possibile usare il proxy di applicazione di Azure AD per fornire accesso remoto sicuro alle applicazioni basate sul Web ospitate nei server locali. Le applicazioni basate sul Web includono i siti di SharePoint Server, i server di Outlook Web Access o qualsiasi altra applicazione aziendale basata sul Web.
 
 Di seguito sono elencati i componenti del proxy di applicazione di Azure AD.
 
@@ -75,35 +75,32 @@ Di seguito sono elencati i componenti del proxy di applicazione di Azure AD.
 
 Per altre informazioni, vedere la [panoramica sul proxy di applicazione di Azure AD](/azure/active-directory/manage-apps/application-proxy).
 
->[!Note]
->Il proxy di applicazione di Azure AD non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
->
+> [!NOTE]
+> Il proxy di applicazione di Azure AD non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>Distribuire l'accesso remoto quando le app non sono solo app Web
 
 Se i lavoratori remoti non usano un client VPN tradizionale e le app non sono basate sul Web, è possibile usare una VPN da punto a sito (point-to-site) P2S di Azure.
 
-Una VPN da punto a sito stabilisce una connessione sicura dal dispositivo di un lavoratore remoto alla rete dell'organizzazione tramite una rete virtuale di Azure. 
+Una VPN da punto a sito stabilisce una connessione sicura dal dispositivo di un lavoratore remoto alla rete dell'organizzazione tramite una rete virtuale di Azure.
 
 ![Componenti della VPN da punto a sito di Azure](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 Per altre informazioni, vedere la [panoramica su VPN da punto a sito](/azure/vpn-gateway/point-to-site-about).
 
->[!Note]
->VPN de punto a sito di Azure non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
->
+> [!NOTE]
+> VPN de punto a sito di Azure non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Distribuire il Desktop virtuale Windows per fornire l'accesso remoto ai lavoratori remoti che usano dispositivi personali 
+## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Distribuire il Desktop virtuale Windows per fornire l'accesso remoto ai lavoratori remoti che usano dispositivi personali
 
-Per assistere i lavoratori remoti che possono usare solo i propri dispositivi personali e non gestiti, usare il Desktop virtuale Windows in Azure con lo scopo di creare e assegnare i desktop virtuali che gli utenti possono usare da casa. I PC virtualizzati possono agire esattamente come i PC connessi alla rete dell’organizzazione.
+Per assistere i lavoratori remoti che possono usare solo i propri dispositivi personali e non gestiti, usare il Desktop virtuale Windows in Azure con lo scopo di creare e assegnare i desktop virtuali che gli utenti possono usare da casa. I PC virtualizzati possono agire esattamente come i PC connessi alla rete dell'organizzazione.
 
 ![Componenti di Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Per altre informazioni, vedere la [panoramica sul Desktop virtuale Windows](/azure/virtual-desktop/overview). 
+Per altre informazioni, vedere la [panoramica sul Desktop virtuale Windows](/azure/virtual-desktop/overview).
 
->[!Note]
+> [!NOTE]
 >Windows Virtual Desktop non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
->
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Proteggere le connessioni dei servizi del desktop remoto con il gateway Servizi del desktop remoto
 
