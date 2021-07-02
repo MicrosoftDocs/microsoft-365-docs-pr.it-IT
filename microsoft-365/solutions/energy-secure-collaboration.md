@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 consente alle organizzazioni del settore energetico di passare a una piattaforma di collaborazione moderna, contribuendo a mantenere i dati e i sistemi sicuri e conformi alle normative.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efc9476d2c766aab325977dfe717290ff6c8fb8d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916119"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229324"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Considerazioni chiave su conformità e sicurezza per il settore energetico
 ![Immagine metaforica di una visione globale dei vari settori che usano il cloud](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ Gli standard normativi raccomandati per le organizzazioni del settore energetico
 - Azure e Azure per enti pubblici hanno ricevuto un'autorizzazione a operare provvisoria (P-ATO) a livello di impatto elevato, il livello più elevato di autorizzazione di FedRAMP. 
 
 Per informazioni sui servizi cloud Microsoft e FedRAMP, vedere le risorse seguenti:
-- [Panoramica su Microsoft e FedRAMP](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
+- [Panoramica su Microsoft e FedRAMP](/compliance/regulatory/offering-FedRAMP)
 - [Report FedRAMP di Office 365](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 
@@ -90,7 +90,7 @@ I **criteri di scadenza del gruppo di Office 365** consentono di garantire che i
 - La proliferazione di team non necessari o non usati
 - La conservazione prolungata di dati non più necessari all'organizzazione
 
-Gli amministratori possono specificare un periodo di scadenza per i gruppi di Office 365, ad esempio 90, 180 o 365 giorni. Se un servizio supportato da un gruppo di Office 365 non è attivo per il periodo di scadenza, i proprietari del gruppo ricevono una notifica e, se non viene eseguita alcuna azione, il gruppo di Office 365 e tutti i servizi correlati, tra cui Microsoft Teams, verranno eliminati. 
+Gli amministratori potrebbero specificare un periodo di scadenza in giorni per i gruppi di Office 365, come ad esempio 90, 180 o 365 giorni. Se un servizio supportato da un gruppo di Office 365 non è attivo per il periodo di scadenza, i proprietari del gruppo ricevono una notifica e, se non viene eseguita alcuna azione, il gruppo di Office 365 e tutti i servizi correlati, tra cui Microsoft Teams, verranno eliminati. 
 
 La conservazione prolungata dei dati in un team di Microsoft Teams può esporre al rischio di controversie legali e l'uso di criteri di scadenza è un metodo consigliato per la protezione dell'organizzazione. In combinazione con le etichette e i criteri di conservazione predefiniti, Microsoft 365 consente alle organizzazioni di mantenere solo i dati necessari per rispettare gli obblighi di conformità alle normative.
 
@@ -161,7 +161,7 @@ L'implementazione dei criteri MIP e DLP nelle organizzazioni richiede un'attenta
 ## <a name="govern-data-by-effectively-managing-records"></a>Gestire i dati tramite una gestione efficiente dei record
 Le normative richiedono a molte organizzazioni di gestire la conservazione dei documenti aziendali chiave in base a una pianificazione di conservazione gestita. Le organizzazioni affrontano rischi di conformità se i dati vengono eliminati troppo presto o rischi legali se vengono conservati troppo a lungo. Strategie efficaci di gestione dei record consentono di mantenere i documenti in base a periodi di conservazione prestabiliti, sviluppati per ridurre al minimo i rischi per l'organizzazione. I periodi di conservazione sono disciplinati da una pianificazione gestita a livello centrale e sono basati sulla natura di ogni tipo di documento, sui requisiti di conformità alle normative sulla conservazione di tipi specifici di dati e sui criteri definiti dell'organizzazione. 
 
-Per l'assegnazione accurata dei periodi di conservazione dei record tra i documenti dell'organizzazione può essere necessario un processo granulare, che assegna un periodo di conservazione univoco ai singoli documenti. Il numero elevato di documenti presenti nelle organizzazioni del settore dell'energia, associato al fatto che in molti casi i periodi di conservazione possono essere generati da eventi interni, ad esempio un contratto che scade o un dipendente che lascia l'organizzazione, rende l'applicazione di criteri di conservazione dei record su larga scala particolarmente impegnativa.
+L'assegnazione accurata di periodi di conservazione dei record nei documenti dell'organizzazione potrebbe richiedere un processo granulare con assegnazione di periodi di conservazione unici per singoli documenti. Il numero elevato di documenti presenti nelle organizzazioni del settore dell'energia, associato al fatto che in molti casi i periodi di conservazione possono essere generati da eventi interni, ad esempio un contratto che scade o un dipendente che lascia l'organizzazione, rende l'applicazione di criteri di conservazione dei record su larga scala particolarmente impegnativa.
 
 Microsoft 365 offre funzionalità che consentono di definire criteri ed etichette di conservazione, per implementare facilmente i requisiti di gestione dei record. Un responsabile dei record definisce un'etichetta di conservazione, che rappresenta un "tipo di record" in una pianificazione di conservazione tradizionale. L'etichetta di conservazione contiene impostazioni che definiscono i dettagli seguenti:
 - Il periodo di conservazione di un record
@@ -192,7 +192,7 @@ I criteri di supervisione di Microsoft 365 consentono alle organizzazioni di mon
 ### <a name="communication-compliance"></a>Conformità delle comunicazioni
 Con molti canali di comunicazione disponibili ai dipendenti, le organizzazioni hanno sempre più bisogno di soluzioni efficaci per monitorare o supervisionare le comunicazioni in settori regolamentati quali i mercati di commercio dell'energia. La recente soluzione per la conformità delle comunicazioni integrata in Microsoft 365 aiuta le organizzazioni a fronteggiare sfide comuni quali l'aumento costante dei canali di comunicazione e del volume dei messaggi, nonché il rischio di potenziali sanzioni per violazioni dei criteri.
 
-Conformità delle comunicazioni può monitorare più canali di comunicazione e usare modelli di Machine Learning per identificare potenziali violazioni dei criteri, tra cui posta elettronica di Office 365, Microsoft Teams, Skype for Business Online, Facebook, Twitter e messaggi istantanei di Bloomberg. Conformità delle comunicazioni aiuta i team di conformità a revisionare in modo efficace ed efficiente i messaggi in cerca di eventuali violazioni di:
+Conformità delle comunicazioni può monitorare più canali di comunicazione e usare modelli di apprendimento automatico per identificare potenziali violazioni dei criteri, tra cui posta elettronica di Office 365, Microsoft Teams, Skype for Business Online, Facebook, Twitter e messaggi istantanei di Bloomberg. Conformità delle comunicazioni consente ai team addetti alla conformità di esaminare i messaggi in modo efficace ed efficiente per verificare la presenza di eventuali violazioni di:
 - Criteri aziendali, ad esempio uso accettabile, standard etici e criteri specifici aziendali 
 - Riservatezza o divulgazione di informazioni aziendali riservate, ad esempio comunicazioni non autorizzate riguardanti progetti riservati come acquisizioni imminenti, fusioni, divulgazioni dei guadagni, riorganizzazioni o cambiamenti del team dirigente.
 - Requisiti di conformità normativa, ad esempio comunicazioni dei dipendenti riguardanti i tipi di attività o le transazioni in cui è impegnata un'organizzazione, nel rispetto delle normative FERC per i mercati energetici
