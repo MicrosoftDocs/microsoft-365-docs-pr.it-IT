@@ -1,5 +1,5 @@
 ---
-title: Connettività di rete nell'Microsoft 365 di amministrazione
+title: Connettività di rete nel Amministrazione Microsoft 365 Center
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: Panoramica della connettività di rete nell'Microsoft 365 admin center
-ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: Panoramica della connettività di rete in Amministrazione Microsoft 365 Center
+ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470641"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53277002"
 ---
-# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connettività di rete nell'Microsoft 365 di amministrazione
+# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connettività di rete nel Amministrazione Microsoft 365 Center
 
-L Microsoft 365 Admin Center include ora metriche aggregate di connettività di rete raccolte dal tenant di Microsoft 365 e disponibili per la visualizzazione solo da parte degli utenti amministrativi nel tenant.
+Il Amministrazione Microsoft 365 Center ora include metriche di connettività di rete aggregate raccolte dal tenant Microsoft 365 e disponibili per la visualizzazione solo da parte degli utenti amministrativi nel tenant.
 
 > [!div class="mx-imgBorder"]
 > ![Strumento di test della connettività di rete](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**Le valutazioni di rete** **e le informazioni dettagliate** sulla rete vengono visualizzate nell'Microsoft 365 di amministrazione in **Health | Connettività di rete**.
+**Le valutazioni di rete** **e le informazioni dettagliate** sulla rete vengono visualizzate nel Centro Amministrazione Microsoft 365 in **Health | Connettività di rete**.
 
 > [!div class="mx-imgBorder"]
 > ![Pagina Prestazioni di rete](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
@@ -37,7 +37,7 @@ L Microsoft 365 Admin Center include ora metriche aggregate di connettività di 
 >[!NOTE]
 >La connettività di rete nell'interfaccia di amministrazione supporta i tenant in WW Commercial e Germania, ma non GCC Moderate, GCC High, DoD o Cina.
 
-Quando si accede per la prima volta alla pagina delle prestazioni di rete, è necessario configurare le posizioni per visualizzare la mappa delle prestazioni della rete globale, una valutazione della rete con ambito per l'intero tenant, la percentuale di utenti che lavorano in remoto e in locale e un elenco dei problemi correnti su cui intervenire e/o per approfondire la ricerca. Dal riquadro della panoramica è possibile eseguire il drill-down per visualizzare metriche e problemi specifici delle prestazioni di rete in base alla posizione. Per ulteriori informazioni, vedere [Panoramica delle prestazioni di rete nell'Microsoft 365 di amministrazione.](#network-connectivity-overview-in-the-microsoft-365-admin-center)
+Quando si accede per la prima volta alla pagina delle prestazioni di rete, è necessario configurare le posizioni per visualizzare la mappa delle prestazioni della rete globale, una valutazione della rete con ambito per l'intero tenant, la percentuale di utenti che lavorano in remoto e in locale e un elenco dei problemi correnti su cui intervenire e/o per approfondire la ricerca. Dal riquadro della panoramica è possibile eseguire il drill-down per visualizzare metriche e problemi specifici delle prestazioni di rete in base alla posizione. Per ulteriori informazioni, vedere [Panoramica delle prestazioni di rete nel Amministrazione Microsoft 365 Center.](#network-connectivity-overview-in-the-microsoft-365-admin-center)
 
 Potrebbe essere richiesto di partecipare all'anteprima pubblica per questa funzionalità per conto dell'organizzazione. L'accettazione in genere avviene immediatamente, dopo di che verrà visualizzata la pagina connettività di rete.
 
@@ -75,7 +75,10 @@ Per questa opzione, è necessario identificare una persona in ogni posizione. Ch
 
 I report di test sono collegati a una posizione se sono stati aggiunti con informazioni sulla subnet LAN, altrimenti vengono visualizzati solo nella posizione della città.
 
-I campioni di misurazione e le posizioni degli uffici dovrebbero iniziare a comparire 2-3 minuti dopo il completamento di un report di test. Per ulteriori informazioni, vedere test [Microsoft 365 connettività di rete (anteprima)](office-365-network-mac-perf-onboarding-tool.md).
+I campioni di misurazione e le posizioni degli uffici dovrebbero iniziare a comparire 2-3 minuti dopo il completamento di un report di test. Per ulteriori informazioni, vedere test [Microsoft 365 connettività di rete](office-365-network-mac-perf-onboarding-tool.md).
+
+> [!NOTE]
+> Quando si aggiungono le posizioni dell'ufficio Microsoft 365 connettività di rete nel interfaccia di amministrazione di Microsoft 365, è possibile fornire indirizzi IPv4 o IPv6 per le subnet LAN. Egress Gli indirizzi IP devono utilizzare IPv4.
 
 ## <a name="how-do-i-use-this-information"></a>Come si usano queste informazioni?
 
@@ -86,7 +89,7 @@ I campioni di misurazione e le posizioni degli uffici dovrebbero iniziare a comp
 Le aziende complesse con più sedi di uffici e architetture perimetrali di rete non banali possono trarre vantaggio da queste informazioni durante l'onboarding iniziale a Microsoft 365 o per correggere i problemi di prestazioni di rete rilevati con l'aumento dell'utilizzo. Questa operazione in genere non è necessaria per le piccole imprese che usano Microsoft 365 o per le aziende che dispongono già di connettività di rete semplice e diretta. Si prevede che le aziende con più di 500 utenti e più sedi di uffici trarranno il massimo vantaggio.
 
 >[!IMPORTANT]
->Le informazioni dettagliate sulla rete, i consigli sulle prestazioni e le valutazioni nell'interfaccia di amministrazione di Microsoft 365 sono attualmente in stato di anteprima ed è disponibile solo per i tenant di Microsoft 365 registrati nel programma di anteprima delle funzionalità.
+>Le informazioni dettagliate sulla rete, i suggerimenti sulle prestazioni e le valutazioni nel centro Amministrazione Microsoft 365 sono attualmente in stato di anteprima ed è disponibile solo per i tenant di Microsoft 365 registrati nel programma di anteprima delle funzionalità.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise problemi di connettività di rete
 
@@ -97,15 +100,15 @@ Molte aziende hanno configurazioni perimetrali di rete che sono aumentate nel te
 
 ## <a name="how-we-can-solve-these-challenges"></a>Come possiamo risolvere queste sfide
 
-Le aziende possono migliorare l'esperienza [](./microsoft-365-network-connectivity-principles.md) utente generale e proteggere l'ambiente seguendo i principi di connettività Office 365 e usando la funzionalità di connettività di rete di Microsoft 365 Admin Center. Nella maggior parte dei casi, seguire questi principi generali avrà un impatto positivo significativo sulla latenza dell'utente finale, sull'affidabilità del servizio e sulle prestazioni complessive della Microsoft 365.
+Le aziende possono migliorare l'esperienza [](./microsoft-365-network-connectivity-principles.md) utente generale e proteggere l'ambiente seguendo i principi di connettività Office 365 e usando la funzionalità di connettività di rete di Amministrazione Microsoft 365 Center. Nella maggior parte dei casi, seguire questi principi generali avrà un impatto positivo significativo sulla latenza dell'utente finale, sull'affidabilità del servizio e sulle prestazioni complessive della Microsoft 365.
 
 A Volte a Microsoft viene richiesto di analizzare i problemi di prestazioni di rete con Microsoft 365 per i clienti di grandi aziende, che spesso hanno una causa principale correlata all'infrastruttura perimetrale di rete del cliente. Quando viene rilevata una causa radice comune di un problema del perimetro di rete del cliente, si cerca di identificare semplici misurazioni di test che lo identificano. Un test con una soglia di misurazione che identifica un problema specifico è utile perché possiamo testare la stessa misura in qualsiasi posizione, stabilire se la causa radice è presente e condividerla come informazioni approfondite sulla rete con l'amministratore.
 
 Alcune informazioni dettagliate sulla rete indicherà semplicemente un problema che richiede ulteriori indagini. Un'analisi della rete in cui sono disponibili test sufficienti per mostrare un'azione di correzione specifica per correggere la causa radice è elencata come **azione consigliata.** Questi consigli, basati su metriche in tempo reale che rivelano valori che non rientrano in una soglia predeterminata, sono molto più utili dei consigli generali sulle procedure consigliate, poiché sono specifici per l'ambiente e mostreranno il miglioramento effettivo dopo aver apportato le modifiche consigliate.
 
-## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Panoramica della connettività di rete nell'Microsoft 365 di amministrazione
+## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Panoramica della connettività di rete nel Amministrazione Microsoft 365 Center
 
-Microsoft ha misurazioni di rete esistenti da diversi Office desktop e client Web che supportano il funzionamento di Microsoft 365. Queste misurazioni vengono ora utilizzate per fornire informazioni dettagliate sulla  progettazione dell'architettura di rete e una valutazione della rete mostrate nella pagina Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 rete.
+Microsoft ha misurazioni di rete esistenti da diversi Office desktop e client Web che supportano il funzionamento di Microsoft 365. Queste misurazioni vengono ora utilizzate per fornire informazioni dettagliate sulla  progettazione dell'architettura di rete e una valutazione della rete mostrate nella pagina Connettività di rete nel Amministrazione Microsoft 365 Center.
 
 Per impostazione predefinita, le informazioni approssimative sulla posizione associate alle misurazioni di rete identificano la città in cui si trovano i dispositivi client. La valutazione della rete in ogni posizione viene visualizzata con il colore e il numero relativo di utenti in ogni posizione è rappresentato dalle dimensioni del cerchio.
 
@@ -220,7 +223,7 @@ La posizione di uscita da Internet è la posizione in cui il traffico di rete es
 
 ### <a name="what-license-is-needed-for-this-capability"></a>Quale licenza è necessaria per questa funzionalità?
 
-È necessaria una licenza che fornisce l'accesso all'Microsoft 365 di amministrazione.
+È necessaria una licenza che fornisce l'accesso al interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

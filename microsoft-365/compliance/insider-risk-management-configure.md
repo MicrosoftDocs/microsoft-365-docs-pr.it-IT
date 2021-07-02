@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 50273fabc85ecedc92b9c3ec379d3b82a63dd6e1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226444"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256328"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -59,7 +59,7 @@ Esistono quattro gruppi di ruoli utilizzati per configurare le autorizzazioni pe
 
 A seconda della struttura del team di gestione della conformità, è possibile assegnare utenti a specifici gruppi di ruolo per gestire diversi insiemi di funzionalità della gestione dei rischi Insider. Per visualizzare  la scheda Autorizzazioni nel Centro sicurezza & di Office 365 e gestire i gruppi  di ruoli, è necessario essere assegnati al gruppo di ruoli Gestione organizzazione o assegnare il ruolo Gestione *ruoli.* Scegliere tra queste opzioni del gruppo di ruoli durante la configurazione della gestione dei rischi insider:
 
-| **Gruppo di ruolo** | **Autorizzazioni del ruolo** |
+| **Gruppo di ruoli** | **Autorizzazioni del ruolo** |
 | :------------- | :------------------- |
 | **Insider Risk Management** | Usare questo gruppo di ruoli per la gestione dei rischi Insider per la propria organizzazione in un unico gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e revisori designati, è possibile configurare le autorizzazioni di gestione dei rischi insider in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione per la gestione dei rischi insider e le autorizzazioni associate. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la gestione dei rischi insider ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi distinti di utenti. Quando si utilizza questa configurazione, è necessario assicurarsi di avere sempre almeno un utente assegnato a questo gruppo di ruoli per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare i criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri.|
 | **Insider Risk Management Admin** | Utilizzare questo gruppo di ruoli per configurare inizialmente la gestione dei rischi insider e successivamente per separare gli amministratori dei rischi insider in un gruppo definito. Gli utenti di questo gruppo di ruoli possono abilitare e visualizzare informazioni analitiche e creare, leggere, aggiornare ed eliminare criteri di gestione dei rischi insider, impostazioni globali e assegnazioni di gruppi di ruoli. Quando si utilizza questa configurazione, è necessario assicurarsi di avere sempre almeno un utente assegnato a questo gruppo di ruoli per assicurarsi che i criteri funzionino come previsto e in modo che l'utente possa creare e modificare i criteri, configurare le impostazioni della soluzione ed esaminare gli avvisi di integrità dei criteri. |
@@ -74,7 +74,7 @@ A seconda della struttura del team di gestione della conformità, è possibile a
 
 Completare i passaggi seguenti per aggiungere utenti a un gruppo di ruoli di gestione dei rischi insider:
 
-1. Accedere usando [https://protection.office.com/permissions](https://protection.office.com/permissions) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
+1. Accedere usando [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
 
 2. Nel Centro &amp; sicurezza e conformità passare a **Autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
 

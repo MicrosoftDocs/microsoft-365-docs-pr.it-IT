@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f099d7bd180843530d23d0bbcee89dc8ae35cdbb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227344"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256736"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -76,7 +76,7 @@ Scegliere tra queste opzioni del gruppo di ruoli per la configurazione della con
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Opzione 1: assegnare tutti gli utenti di conformità al gruppo di ruoli Conformità comunicazione
 
-1. Accedere usando [https://protection.office.com/permissions](https://protection.office.com/permissions) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
+1. Accedere usando [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
 
 2. Nel Centro &amp; sicurezza e conformità passare a **Autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
 
@@ -94,7 +94,7 @@ Scegliere tra queste opzioni del gruppo di ruoli per la configurazione della con
 
 Utilizzare questa opzione per assegnare utenti a gruppi di ruoli specifici per segmentare l'accesso e le responsabilità di conformità delle comunicazioni tra i diversi utenti dell'organizzazione.
 
-1. Accedere usando [https://protection.office.com/permissions](https://protection.office.com/permissions) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
+1. Accedere usando [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
 
 2. Nel Centro &amp; sicurezza e conformità passare a **Autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
 

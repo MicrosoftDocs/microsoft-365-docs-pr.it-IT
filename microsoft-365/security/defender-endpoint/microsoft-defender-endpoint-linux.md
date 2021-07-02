@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 008263bfb948d1a2c52031635d074aca323e6764
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893741"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256892"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender per endpoint su Linux
 
@@ -70,7 +70,8 @@ In generale, è necessario eseguire la procedura seguente:
   - Strumenti di gestione di terze parti:
     - [Distribuire con lo strumento di gestione della configurazione di Puppet](linux-install-with-puppet.md)
     - [Distribuire con lo strumento di gestione della configurazione di Ansible](linux-install-with-ansible.md)
-
+    - [Distribuire con lo strumento di gestione della configurazione di Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+    
 Se si verificano errori di installazione, fare riferimento a Risoluzione dei problemi di installazione [in Microsoft Defender per Endpoint su Linux.](linux-support-install.md)
 
 

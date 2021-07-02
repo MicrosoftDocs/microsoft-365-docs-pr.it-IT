@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd3904b480f757c1cf684e15afaae9c19559e1ea
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b44977252b18c29a5f05a67f4ffbdb7dc85a8188
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227400"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256784"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Case study: Contoso configura rapidamente un criterio linguistico offensivo per Microsoft Teams, Exchange e Yammer comunicazioni
 
@@ -91,7 +91,7 @@ Contoso decide di utilizzare il gruppo di ruoli *Conformità* comunicazione asse
 | **Communication Compliance Investigator** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che agiranno come investigatori della conformità delle comunicazioni. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto dei messaggi, inoltrare a revisori aggiuntivi, inoltrare a un caso di Advanced eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
 | **Visualizzatore della conformità delle comunicazioni** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che gestiranno i report di comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono accedere a tutti i widget di report nella home page di conformità delle comunicazioni e possono visualizzare tutti i report di conformità delle comunicazioni. |
 
-1. Gli amministratori IT di Contoso a accedere alla pagina delle autorizzazioni del Centro sicurezza e conformità di **Office 365 Security &** [( https://protection.office.com/permissions)](https://protection.office.com/permissions) utilizzando le credenziali per un account amministratore globale e selezionare il collegamento per visualizzare e gestire i ruoli in Microsoft 365.
+1. Gli amministratori IT di Contoso a accedere alla pagina delle autorizzazioni del Centro sicurezza e conformità di **Office 365 Security &** [( https://compliance.microsoft.com/permissions)](https://compliance.microsoft.com/permissions) utilizzando le credenziali per un account amministratore globale e selezionare il collegamento per visualizzare e gestire i ruoli in Microsoft 365.
 2. Nel **Centro sicurezza & conformità,** passare a **Autorizzazioni** e selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
 3. Gli amministratori selezionano il *gruppo di ruoli Conformità* comunicazione, quindi **selezionaNo Modifica gruppo di ruoli.**
 4. Gli amministratori **selezionano Scegli** membri nel riquadro di spostamento sinistro, quindi seleziona **Modifica**.

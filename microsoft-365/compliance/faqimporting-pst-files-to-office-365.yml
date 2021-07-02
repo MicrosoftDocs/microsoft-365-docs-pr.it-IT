@@ -18,16 +18,16 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: In questo articolo sono contenute le risposte ad alcune domande frequenti per gli amministratori sull'importazione di file PST Microsoft 365 tramite il Office 365 Import Service.
-  ms.openlocfilehash: 27fa3b93b53a497fcff63524b04f427049bac412
-  ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+  ms.openlocfilehash: 4340285e6c7cff857e3f3de771ec6e67d4ce010c
+  ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/28/2021
-  ms.locfileid: "52090632"
+  ms.lasthandoff: 07/02/2021
+  ms.locfileid: "53276942"
 title: Domande frequenti sull'importazione di file PST
 summary: "**Questo articolo è per gli amministratori. Si desidera importare i file PST nella propria cassetta postale? Vedere [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**\n\nEcco alcune domande frequenti sull'utilizzo del servizio di importazione Office 365 per importare in blocco i file PST Microsoft 365 cassette postali. Per ulteriori informazioni su come importare file PST, vedere [Overview of importing PST files to Office 365](./importing-pst-files-to-office-365.md).\n  \n## <a name=\"using-network-upload-to-import-pst-files\"></a>Uso del caricamento tramite rete per l'importazione di file PST\n\nPer istruzioni dettagliate, vedere Use [network upload to import PST files to Office 365](use-network-upload-to-import-pst-files.md).\n"
 sections:
-- name: Generale
+- name: Impostazioni generali
   questions:
   - question: >
       Quali autorizzazioni sono necessarie per creare processi di importazione nel servizio di importazione di Office 365?
@@ -74,12 +74,9 @@ sections:
       Si può usare il caricamento di rete per importare file PST in cartelle pubbliche in Exchange Online?
     answer: >
       No. Non è possibile importare file PST nelle cartelle pubbliche.
-
-
-      ## <a name="using-drive-shipping-to-import-pst-files"></a>Uso della spedizione unità per l'importazione di file PST
-
-
-      Per istruzioni dettagliate, vedere [Use drive shipping to import PST files to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md).
+  - question: >
+      Esistono requisiti di risoluzione dello schermo quando si crea un processo di importazione del caricamento di rete?
+    answer: "Se la risoluzione dello schermo nel computer locale è impostata su 1366 x 768, potrebbero verificarsi problemi durante la creazione di un processo di importazione. In questo caso, è consigliabile modificare la risoluzione dello schermo impostando un'impostazione diversa e quindi creare un nuovo processo di importazione. Stiamo lavorando per risolvere questo problema.     \n\n\n\n## <a name=\"using-drive-shipping-to-import-pst-files\"></a>Uso della spedizione unità per l'importazione di file PST\n\nPer istruzioni dettagliate, vedere [Use drive shipping to import PST files to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md).\n"
   - question: >
       Quali autorizzazioni sono necessarie per creare processi di importazione nel servizio di importazione di Office 365?
     answer: "Per importare i file PST nelle cassette postali di Microsoft 365, l'utente deve avere il ruolo importazione/esportazione di cassette postali. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione/importazione cassette postali al gruppo di ruoli Gestione organizzazione. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di importazione/esportazione di cassette postali e quindi aggiungere se stessi o altri utenti come membri. Per altre informazioni, vedere le sezioni \"Aggiungere un ruolo a un gruppo di ruoli\" o \"Creare un gruppo di ruoli\" in [Gestire i gruppi di ruoli in Exchange Online](/Exchange/permissions-exo/role-groups).\n  \nInoltre, per creare processi di importazione nel Centro sicurezza e conformità, una delle seguenti condizioni deve essere vera:\n  \n- All'utente deve essere assegnato il ruolo Destinatari di posta in ExchangeOnline. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli Gestione organizzazione e Gestione destinatari.\n    \n    Oppure\n    \n- È necessario essere un amministratore globale nell'organizzazione.\n    \n> [!TIP]\n> Prendere in considerazione la creazione di un nuovo gruppo di ruoli in Exchange Online appositamente creato per l'importazione dei file PST in Office 365. Per il livello minimo di privilegi necessari per importare i file PST, assegnare i ruoli di importazione/esportazione di cassette postali e Destinatari di posta al nuovo gruppo di ruoli, quindi aggiungere i membri. \n  \n"
@@ -166,4 +163,8 @@ sections:
       Sì.
   - question: >
       If I have to ship my hard drive to another country, is there anything I need to do?
-    answer: The hard drive that you ship to Microsoft might have to cross international borders. In tal caso, sei responsabile di garantire che il disco rigido ei dati in esso contenuti vengano importati e/o esportati in conformità con le leggi applicabili. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+    answer: >
+      The hard drive that you ship to Microsoft might have to cross international borders. In tal caso, sei responsabile di garantire che il disco rigido ei dati in esso contenuti vengano importati e/o esportati in conformità con le leggi applicabili. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+  - question: >
+      Esistono requisiti di risoluzione dello schermo quando si crea un processo di importazione per la spedizione delle unità?
+    answer: Se la risoluzione dello schermo nel computer locale è impostata su 1366 x 768, potrebbero verificarsi problemi durante la creazione di un processo di importazione. In questo caso, è consigliabile modificare la risoluzione dello schermo impostando un'impostazione diversa e quindi creare un nuovo processo di importazione. Stiamo lavorando per risolvere questo problema.

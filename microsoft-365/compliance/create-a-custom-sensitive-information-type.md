@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come creare, modificare, rimuovere e testare tipi di informazioni riservate personalizzati per DLP nel Centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227152"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256724"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introduzione ai tipi di informazione sensibile personalizzati
 
@@ -182,10 +182,16 @@ Ecco le definizioni e alcuni esempi per gli altri controlli disponibili.
 
 
 > [!NOTE]
-> Microsoft 365 Information Protection supporta, in anteprima, i set di caratteri a due byte nelle lingue seguenti:
+> Microsoft 365 Information Protection supporta le lingue del set di caratteri a due byte per:
 > - Cinese (semplificato)
 > - Cinese (tradizionale)
 > - Coreano
 > - Giapponese
 >
 >Il supporto è disponibile per i tipi di informazioni sensibili. Per altre informazioni, vedere [Note sulla versione del supporto della protezione delle informazioni per i set di caratteri a due byte (anteprima)](mip-dbcs-relnotes.md).
+
+> [!TIP]
+> Per rilevare modelli contenenti caratteri cinesi/giapponesi e caratteri a byte singolo o per rilevare modelli contenenti cinese/giapponese e inglese, definire due varianti della parola chiave o dell'espressione regolare. Ad esempio, per rilevare una parola chiave come "机密的documento", usa due varianti della parola chiave; uno con uno spazio tra il testo giapponese e l'inglese e un altro senza uno spazio tra il testo giapponese e l'inglese. Pertanto, le parole chiave da aggiungere nel SIT devono essere "机密的 documento" e "机密的documento". Analogamente, per rilevare una frase "東京オリンピック2020", è necessario utilizzare due varianti. "東京オリンピック 2020" e "東京オリンピック2020".
+> Durante la creazione di un'espressione regolare utilizzando un trattino a byte doppio o un punto a byte doppio, assicurarsi di utilizzare l'escape di entrambi i caratteri come un trattino o un punto in un'espressione regolare. Ecco un esempio di espressione regolare per riferimento:
+    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+> È consigliabile usare una corrispondenza di stringa anziché una corrispondenza di parola in un elenco di parole chiave.

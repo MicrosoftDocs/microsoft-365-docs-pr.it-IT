@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Modificare le sottoscrizioni manualmente acquistando una nuova sottoscrizione e verificando che entrambe le sottoscrizioni siano elencate e attive.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5db328cb1545279faa1332c144c7a8b60a50fa05
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536107"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256772"
 ---
 # <a name="change-plans-manually"></a>Modificare manualmente i piani
 
@@ -79,6 +79,8 @@ Includere una licenza per ogni utente da spostare.
 Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel momento in poi si pagherà solo per le nuove licenze utente.
 
 ## <a name="step-4-reassign-licenses"></a>Passaggio 4: Riassegnare le licenze
+
+Quando si esegue l'aggiornamento da un piano Office 365 a un piano Microsoft 365, è necessario modificare le assegnazioni delle licenze per tutti gli utenti. Le licenze non vengono assegnate automaticamente quando si modificano i piani manualmente.
 
 ### <a name="reassign-a-license-for-one-user"></a>Riassegnare una licenza per un solo utente
 

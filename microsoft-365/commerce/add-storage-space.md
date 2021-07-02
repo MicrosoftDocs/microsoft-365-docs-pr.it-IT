@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Aggiungi spazio di archiviazione file nella sottoscrizione Microsoft 365 abbonamento. Con l'archiviazione di file aggiuntiva, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: dee7debfbd2b624f3bf82bd573c81e7e1373b31e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635859"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256820"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
@@ -87,8 +87,10 @@ Office 365 Extra File Storage è disponibile per gli abbonamenti seguenti:
 - Office 365 Enterprise E3
 - Office 365 Enterprise E4
 - Office 365 Enterprise E5
-- Office per il Web con SharePoint Piano 1
-- Office per il Web con SharePoint Piano 2
+- Office 365 A3 (facoltà)
+- Office 365 A5 (facoltà)
+- Office per il web con SharePoint piano 1
+- Office per il web con SharePoint Piano 2
 - SharePoint Online Piano 1
 - SharePoint Online Piano 2
 - Microsoft 365 Business Basic

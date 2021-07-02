@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: ed6dc9956c3e78f8ed39dca9cd6bf0421dd28456
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177634"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276990"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -183,7 +183,6 @@ Se si configurano regole di riduzione della superficie di attacco tramite Criter
 |[Bloccare i processi non attendibili e non firmati eseguiti da USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
 |[Bloccare le chiamate API Win32 Office macro](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
 |[Usare la protezione avanzata contro ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Supportato|[Windows 10 versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) o successiva|
-|
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloccare l'abuso di driver firmati vulnerabili sfruttati
 
@@ -199,7 +198,7 @@ La **regola Blocca l'abuso dei** driver firmati vulnerabili sfruttati non blocca
 >
 > Per fare in modo che un driver sia esaminato, utilizzare questo sito Web per [inviare un driver per l'analisi.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
-Questa regola è supportata in tutte le versioni in cui è supportato il controllo del codice asr. che è:
+Sistemi operativi supportati:
 
 - [Windows 10 Pro versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
 - [Windows 10 Enterprise versione 1709](/windows/whats-new/whats-new-windows-10-version-1709) o successiva
@@ -216,7 +215,7 @@ Questa regola impedisce gli attacchi bloccando La creazione di processi da parte
 
 Tramite social engineering o exploit, il malware può scaricare e avviare payload ed uscire da Adobe Reader. Bloccando la generazione dei processi figlio da Parte di Adobe Reader, il malware che tenta di usarlo come vettore non è in grado di diffondersi.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -234,7 +233,7 @@ Questa regola impedisce Office app di creare processi figlio. Office app includo
 
 La creazione di processi figlio dannosi è una strategia antimalware comune. I malware che Office come vettore spesso eseguono macro VBA e sfruttano il codice per scaricare e tentare di eseguire più payload. Tuttavia, alcune applicazioni line-of-business legittime potrebbero anche generare processi figlio per scopi benigni. ad esempio la generazione di un prompt dei comandi o l'uso di PowerShell per configurare le impostazioni del Registro di sistema.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -256,7 +255,7 @@ LSASS autentica gli utenti che a loro Windows computer. Microsoft Defender Crede
 > [!NOTE]
 > In alcune app, il codice enumera tutti i processi in esecuzione e tenta di aprirli con autorizzazioni esaustivi. Questa regola nega l'azione di apertura del processo dell'app e registra i dettagli nel registro eventi di sicurezza. Questa regola può generare molto rumore. Se hai un'app che enumera semplicemente LSASS, ma non ha alcun impatto reale sulle funzionalità, non è necessario aggiungerla all'elenco di esclusione. Di per sé, questa voce del registro eventi non indica necessariamente una minaccia dannosa.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -276,7 +275,7 @@ Questa regola impedisce l'avvio dei seguenti tipi di file dalla posta elettronic
 - File eseguibili (ad esempio .exe, .dll o scr)
 - File di script (ad esempio un file con estensione ps, Visual Basic .vbs o JavaScript .js)
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -313,7 +312,7 @@ L'avvio di file eseguibili non attendibili o sconosciuti può essere rischioso, 
 >
 > È possibile specificare singoli file o cartelle (utilizzando percorsi di cartelle o nomi di risorse completi), ma non è possibile specificare a quali regole o esclusioni si applicano.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -332,7 +331,7 @@ Questa regola rileva le proprietà sospette all'interno di uno script offuscato.
 
 L'offuscamento degli script è una tecnica comune utilizzata dagli autori di malware e dalle applicazioni legittime per nascondere la proprietà intellettuale o ridurre i tempi di caricamento degli script. Gli autori di malware usano anche l'offuscamento per rendere più difficile la lettura di codice dannoso, impedendo così un'attenta analisi da parte degli utenti e del software di sicurezza.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -351,7 +350,7 @@ Questa regola impedisce agli script di avviare contenuti scaricati potenzialment
 
 Anche se non è comune, le applicazioni line-of-business a volte usano script per scaricare e avviare programmi di installazione.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -370,7 +369,7 @@ Questa regola impedisce alle app Office, tra cui Word, Excel e PowerPoint, di cr
 
 Il malware che Office come vettore potrebbe tentare di uscire dall'Office e salvare componenti dannosi su disco. Questi componenti dannosi sarebbero sopravvissuti al riavvio del computer e persistessero nel sistema. Pertanto, questa regola si difende da una tecnica di persistenza comune.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -393,7 +392,7 @@ Non esistono scopi aziendali legittimi noti per l'uso dell'inserimento di codice
 
 Questa regola si applica a Word, Excel e PowerPoint.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -415,7 +414,7 @@ Questa regola protegge dagli attacchi di social engineering e impedisce allo sfr
 > [!NOTE]
 > Questa regola blocca le descrizioni comandi e le descrizioni comandi dei criteri DLP in Outlook. Questa regola si applica solo Outlook e Outlook.com.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -436,7 +435,7 @@ Questa regola impedisce al malware di abusare di WMI per ottenere la persistenza
 
 Le minacce senza file utilizzano diverse tattiche per rimanere nascoste, per evitare di essere visibili nel file system e per ottenere il controllo periodico dell'esecuzione. Alcune minacce possono usare in modo improprio l'archivio WMI e il modello di eventi per rimanere nascosti.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1903](/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
@@ -454,7 +453,7 @@ Questa regola blocca l'esecuzione dei processi creati [tramite PsExec](/sysinter
 > [!WARNING]
 > Usa questa regola solo se gestisci i dispositivi con [Intune](/intune) o un'altra soluzione MDM. Questa regola non è compatibile con la gestione [tramite Microsoft Endpoint Configuration Manager](/configmgr) perché questa regola blocca i comandi WMI utilizzati dal client di Configuration Manager per funzionare correttamente.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -470,7 +469,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 Con questa regola, gli amministratori possono impedire l'esecuzione di file eseguibili non firmati o non attendibili da unità rimovibili USB, incluse le schede SD. I tipi di file bloccati includono file eseguibili (ad esempio .exe, .dll o scr)
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -489,7 +488,7 @@ Questa regola impedisce alle macro VBA di chiamare le API Win32.
 
 Office VBA abilita le chiamate API Win32. Il malware può usare in modo improprio questa funzionalità, ad esempio chiamare le [API Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) per avviare shellcode dannosi senza scrivere nulla direttamente sul disco. La maggior parte delle organizzazioni non si basa sulla possibilità di chiamare le API Win32 nel funzionamento quotidiano, anche se usano macro in altri modi.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -515,7 +514,7 @@ La regola tende a errare sul lato della cautela per evitare ransomware.
 > [!NOTE]
 > Per usare [questa regola, è necessario](enable-cloud-protection-microsoft-defender-antivirus.md) abilitare la protezione recapitata nel cloud.
 
-Questa regola è stata introdotta in:
+Sistemi operativi supportati:
 
 - [Windows 10, versione 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versione 1809](/windows-server/get-started/whats-new-in-windows-server-1809)

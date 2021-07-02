@@ -3,7 +3,7 @@ title: Usare Microsoft Teams riunioni con Canvas
 ms.author: v-cichur
 author: cichur
 manager: serdars
-ms.reviewer: amitman
+ms.reviewer: sovaish
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,33 +13,33 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrare Microsoft Teams riunioni con Canvas
-ms.openlocfilehash: 8ccf1c1d45d38fa4a92b556146744a2c17cd5105
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 946abaec52cb1c5060d5490b409758cf230a4e5a
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821892"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256880"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Usare Microsoft Teams riunioni con Canvas
 
 > [!IMPORTANT]
 > Alcune informazioni fanno riferimento alle caratteristiche del prodotto prima del rilascio, e possono essere modificate sostanzialmente prima della distribuzione al pubblico. Microsoft non fornisce alcuna garanzia, esplicita o implicita, in relazione alle informazioni contenute in questo documento.
 
-Microsoft Teams riunioni è un'app LTI (Learning Tools Interoperability) che consente a docenti e studenti di spostarsi facilmente tra il sistema di gestione dell'apprendimento (LMS) e il Teams. Gli utenti possono accedere ai team di classe associati al corso direttamente dall'LMS.
+Microsoft Teams riunioni è un'app LTI (Learning Tools Interoperability) che consente a docenti e studenti di spostarsi facilmente tra il sistema di gestione di Learning (LMS) e il Teams. Gli utenti possono accedere ai team di classe associati al corso direttamente dall'LMS.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Amministratore
 
 Prima di gestire l'integrazione di Microsoft Teams in Instructure Canvas, è importante che l'app **Microsoft-Teams-Sync-for-Canvas** di Canvas di Canvas venga approvata dall'amministratore di Microsoft Office 365 dell'istituto nel tenant di Microsoft Azure prima di completare la configurazione dell'amministratore di Canvas.
 
 1. Accedi a Canvas.
- 
+
 2. Seleziona il **collegamento** Amministratore nella struttura di spostamento globale e quindi seleziona il tuo account.
 
-3. Nella struttura di spostamento dell'amministratore **seleziona il Impostazioni** e quindi la **scheda** Integrazioni. 
+3. Nella struttura di spostamento dell'amministratore **seleziona il Impostazioni** e quindi la **scheda** Integrazioni.
 
-4. Immettere il nome del tenant Microsoft e l'attributo di accesso. 
+4. Immettere il nome del tenant Microsoft e l'attributo di accesso.
 
-   L'attributo login verrà usato per associare l'utente Canvas a un Azure Active Directory utente. 
+   L'attributo login verrà usato per associare l'utente Canvas a un Azure Active Directory utente.
 
 5. Seleziona **Aggiorna Impostazioni** una volta fatto.
 
@@ -48,7 +48,7 @@ Prima di gestire l'integrazione di Microsoft Teams in Instructure Canvas, è imp
    ![autorizzazioni](media/permissions.png)
 
 7. Selezionare **Accetta**.
- 
+
 8. Abilita la Microsoft Teams sincronizzazione attivando l'interruttore.
 
    ![teams-sync](media/teams-sync.png)
@@ -63,8 +63,8 @@ Come amministratore di Canvas, dovrai aggiungere l'app LTI per Microsoft Teams r
 
 1. Accedere **alle impostazioni di amministrazione**  >  **App**.
 
-2. Seleziona **+ App** per aggiungere le app Teams LTI. 
- 
+2. Seleziona **+ App** per aggiungere le app Teams LTI.
+
    ![external-apps](media/external-apps.png)
 
 3. Selezionare **Per ID client per** tipo di configurazione.
@@ -72,8 +72,8 @@ Come amministratore di Canvas, dovrai aggiungere l'app LTI per Microsoft Teams r
    ![aggiungere app](media/add-app.png)
 
 4. Immetti l'ID client fornito e quindi seleziona **Invia.**
-   
-   Noterai il nome dell'app LTI Microsoft Teams riunioni per l'ID client per la conferma. 
+
+   Noterai il nome dell'app LTI Microsoft Teams riunioni per l'ID client per la conferma.
 
 5. Selezionare **Installa**.
 

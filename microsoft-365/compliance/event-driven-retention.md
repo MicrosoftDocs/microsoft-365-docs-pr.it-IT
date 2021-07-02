@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: In genere, nell’ambito di una soluzione di gestione dei record, è possibile configurare un’etichetta di conservazione per avviare il periodo di conservazione in base a un evento identificato.
-ms.openlocfilehash: ee828b6852440f5be07fdf34df2fb6a11253ae1c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 83f1be417b706fdb66b1df71ba351ce16d5ad485
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034247"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226624"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Avviare la conservazione al verificarsi di un evento
 
@@ -60,7 +60,7 @@ Per usare correttamente la conservazione basata su eventi, è importante compren
   
 ![Diagramma 2 di 2: tipo di evento, etichette, eventi e ID delle risorse](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
-1. Vengono create etichette di conservazione per diversi tipi di contenuto, che vengono poi associate a un tipo di evento. Ad esempio, le etichette di conservazione per tipi diversi di file e record di prodotti sono associate a un tipo di evento denominato Durata del prodotto, in quanto tali record devono essere conservati per 10 anni dal momento in cui il prodotto raggiunge la fine del ciclo di vita.
+1. Creare etichette di conservazione per diversi tipi di contenuti e quindi associarle a un tipo di evento. Ad esempio, le etichette di conservazione per tipi diversi di file e record di prodotti sono associate a un tipo di evento denominato Durata del prodotto, in quanto tali record devono essere conservati per 10 anni dal momento in cui il prodotto raggiunge la fine del ciclo di vita.
     
 2. Gli utenti (in genere i responsabili dei record) applicano queste etichette di conservazione al contenuto e (per i documenti di SharePoint e OneDrive) immettono un ID risorsa per ogni elemento. In questo esempio l'ID risorsa è un codice o nome del prodotto usato dall'organizzazione. Pertanto, ai record di ogni prodotto viene assegnata un'etichetta di conservazione e ogni record ha una proprietà che contiene un ID risorsa. Il diagramma rappresenta **tutto il contenuto** per tutti i record dei prodotti in un'organizzazione e ogni elemento contiene l'ID risorsa del prodotto a cui appartiene il record. 
     
@@ -72,11 +72,11 @@ Per usare correttamente la conservazione basata su eventi, è importante compren
     
    - La data in cui si è verificato l'evento. Questa data viene utilizzata come inizio del periodo di conservazione. Questa data può essere la data attuale, una futura o una passata.
 
-4. Dopo aver creato un evento, la data dell'evento viene sincronizzata con tutto il contenuto che ha un'etichetta di conservazione di quel tipo di evento e che contiene la parola chiave o l'ID risorsa specificato. Come per qualsiasi etichetta di conservazione, la sincronizzazione può richiedere fino a sette giorni. Come mostrato nel diagramma precedente, questo evento ha attivato il periodo di conservazione di tutti gli elementi cerchiati in rosso. In altre parole, quando il prodotto raggiunge la fine del ciclo di vita, questo evento attiva il periodo di conservazione per i record del prodotto.
+4. Dopo aver creato un evento, tale data dell'evento viene sincronizzata con tutto il contenuto che ha un'etichetta di conservazione di quel tipo di evento e che contiene l'ID risorsa o la parola chiave specificati. Come qualsiasi etichetta di conservazione, questa sincronizzazione può richiedere fino a 7 giorni. Nel diagramma precedente, il periodo di conservazione di tutti gli elementi cerchiati in rosso è attivato da questo evento. In altre parole, quando questo prodotto raggiunge la fine del suo ciclo di vita, quell'evento attiva il periodo di conservazione per i record di quel prodotto.
 
 È importante tenere presente che se per un evento non si specificano le parole chiave o un ID risorsa, **l'evento attiverà il periodo di conservazione di ogni contenuto** con un'etichetta di conservazione corrispondente a quel tipo di evento. Nel diagramma precedente, ad esempio, verrebbe avviata la conservazione di tutto il contenuto. Questo potrebbe non essere il risultato previsto.
 
-Tenere infine presente che ogni etichetta di conservazione ha le proprie impostazioni di conservazione. In questo esempio, queste specificano tutte 10 anni ma un evento può attivare etichette con diversi periodi di conservazione.
+Infine, tenere presente che ogni etichetta di conservazione ha le proprie impostazioni di conservazione. In questo esempio, tutti gli elementi specificano 10 anni, ma è possibile che un evento attivi etichette di conservazione con periodi di conservazione diversi.
   
 ## <a name="how-to-set-up-event-driven-retention"></a>Come configurare la conservazione basata su eventi
 
@@ -125,7 +125,7 @@ Come per qualsiasi etichetta di conservazione, è necessario pubblicare o applic
 
 ### <a name="step-4-enter-an-asset-id"></a>Passaggio 4: immettere un ID risorsa
 
-Dopo avere applicato al contenuto un'etichetta basata su eventi, è possibile immettere un ID risorsa per ogni elemento. Ad esempio, l'organizzazione può usare:
+Dopo aver applicato al contenuto un'etichetta basata sugli eventi, è possibile immettere un ID risorsa per ogni elemento. Ad esempio, la propria organizzazione potrebbe utilizzare:
   
 - Codici prodotto da utilizzare per conservare i contenuti solo per un prodotto specifico.
     
@@ -153,17 +153,19 @@ Durante la creazione dell'evento, scegliere lo stesso tipo di evento specificato
 
 In alternativa, se è necessario creare un evento per più etichette di conservazione con tipi di evento diversi, selezionare l'opzione **Scegliere etichette esistenti**. Selezionare quindi le etichette configurate per i tipi di evento che si vuole associare all'evento.
 
-### <a name="step-7-enter-keywords-or-an-asset-id"></a>Passaggio 7: immettere parole chiave o un ID risorsa
+### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>Passaggio 7: immettere parole chiave o query per Exchange, ID asset per SharePoint e OneDrive
 
-A questo punto si limiterà l’ambito del contenuto, specificando gli ID risorsa per il contenuto di SharePoint e OneDrive o le parole chiave per il contenuto di Exchange. Per gli ID risorsa, la conservazione verrà applicata solo al contenuto con la coppia *proprietà:valore* specificata. Se non si immette un ID risorsa, a tutti i contenuti con etichette di quel tipo di evento verrà applicata la stessa data di conservazione.
+Ora si restringe l'ambito del contenuto. Per il contenuto di Exchange, è necessario specificare parole chiave o una query. Per i contenuti di SharePoint e OneDrive, è possibile farlo specificando gli ID asset.
 
-Ad esempio: se si usa la proprietà ID risorsa, immettere `ComplianceAssetID:<value>` nella casella relativa agli ID risorsa mostrati sotto.
-  
+Per gli elementi di Exchange, usare parole chiave o una query che utilizza Keyword Query Language (KQL). Per maggiori informazioni sulla sintassi della query, vedere le [informazioni di riferimento sulla sintassi KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Per altre informazioni sulle proprietà ricercabili utilizzabili per Exchange, vedere [Query con parola chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md).
+
+Per gli ID risorsa, la conservazione verrà applicata solo al contenuto con la coppia *proprietà:valore* specificata. Ad esempio. se si usa la proprietà ID risorsa, immettere `ComplianceAssetID:<value>` nella casella relativa agli ID risorsa mostrati nell’immagine seguente.
+
+Se non si immette un ID risorsa, a tutti i contenuti con etichette di quel tipo di evento verrà applicata la stessa data di conservazione.
+
 È possibile che l'organizzazione abbia applicato altre proprietà e altri ID ai documenti correlati al tipo di evento. Ad esempio, se è necessario individuare i record di un prodotto specifico, l'ID può essere una combinazione della proprietà personalizzata ProductID e del valore "XYZ" In questo caso, si immetterà `ProductID:XYZ` nella casella per gli ID risorsa mostrata nell'immagine seguente.
-  
-Per gli elementi di Exchange includere parole chiave. È possibile usare una query con gli operatori di ricerca come AND, OR e NOT. Per altre informazioni, vedere [Query con parola chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md).
-  
-Infine, scegliere la data in cui si è verificato l'evento; questa data viene utilizzata come inizio del periodo di conservazione. Dopo aver creato un evento, la data dell'evento viene sincronizzata con tutto i contenuti che hanno un'etichetta di conservazione per il tipo di evento, l'ID risorsa e le parole chiave. Come per qualsiasi etichetta di conservazione, la sincronizzazione può richiedere fino a sette giorni.
+
+Infine, scegliere la data in cui si è verificato l'evento. Questa data viene utilizzata come inizio del periodo di conservazione. Dopo aver creato un evento, quella data dell'evento viene sincronizzata con tutti i contenuti con un'etichetta di conservazione di quel tipo di evento, ID risorsa e parole chiave o query. Come per qualsiasi etichetta di conservazione, la sincronizzazione può richiedere fino a sette giorni.
   
 ![Pagina Impostazioni evento](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 

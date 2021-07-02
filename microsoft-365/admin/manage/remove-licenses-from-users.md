@@ -20,13 +20,13 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 description: Il metodo utilizzato per annullare l'assegnazione delle licenze di prodotto dipende dall'annullamento dell'assegnazione delle licenze da utenti specifici o da un prodotto specifico.
-ms.date: 07/01/2020
-ms.openlocfilehash: f79ffecc22fe4531076ccacd83c25e44b81052a6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.date: 06/07/2021
+ms.openlocfilehash: 6220ddc15e7b3381da1d78ad3ac4f3c2204bda78
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006974"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256832"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 
@@ -117,7 +117,7 @@ Quando si utilizza la **pagina Utenti attivi** per annullare l'assegnazione dell
 ::: moniker-end
 
 2. Selezionare i cerchi accanto ai nomi degli utenti per cui si desidera annullare l'assegnazione delle licenze.
-3. Nella parte superiore seleziona **Gestisci licenze prodotto.**
+3. Nella parte superiore selezionare **Gestisci le licenze dei prodotti**.
 4. Nel riquadro **Gestisci licenze prodotto** selezionare Annulla assegnazione tutte le **modifiche** di  >  **salvataggio.**
 5. Nella parte inferiore del riquadro selezionare **Fatto.**  
 

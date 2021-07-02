@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per importare e archiviare i dati RingCentral da Veritas a Microsoft 365. Questo connettore consente di archiviare i dati da origini dati di terze parti in Microsoft 365. Dopo aver archiviato questi dati, è possibile utilizzare funzionalità di conformità come il blocco legale, eDiscovery e i criteri di conservazione per gestire i dati di terze parti.
-ms.openlocfilehash: 57c993ce99556677c0161649254b5ab43caace0e
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+ms.openlocfilehash: b5e98df50b0610c9fb583a8521c7a6d6fdb48e44
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53244012"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276858"
 ---
-# <a name="set-up-a-connector-to-archive-ringcentral-data"></a>Configurare un connettore per archiviare i dati ringcentral
+# <a name="set-up-a-connector-to-archive-ringcentral-data-preview"></a>Configurare un connettore per archiviare i dati RingCentral (anteprima)
 
 Utilizzare un connettore Veritas nel Centro conformità Microsoft 365 per importare e archiviare i dati dalla piattaforma RingCentral alle cassette postali degli utenti nell'Microsoft 365 organizzativa. Veritas fornisce un [connettore RingCentral](https://www.veritas.com/insights/merge1/ringcentral) configurato per acquisire elementi dall'origine dati di terze parti e importare tali elementi in Microsoft 365. Il connettore converte contenuto come chat, allegati, attività, note e post da RingCentral in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 

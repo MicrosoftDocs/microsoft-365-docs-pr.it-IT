@@ -1,5 +1,5 @@
 ---
-title: Creare indicatori per file.
+title: Creare indicatori per file
 ms.reviewer: ''
 description: Creare indicatori per un hash di file che definiscono il rilevamento, la prevenzione e l'esclusione delle entità.
 keywords: file, hash, gestire, consentito, bloccato, bloccare, pulito, dannoso, hash file, indirizzo IP, URL, dominio
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730535"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256916"
 ---
-# <a name="create-indicators-for-files"></a>Creare indicatori per file.
+# <a name="create-indicators-for-files"></a>Creare indicatori per file
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -80,10 +80,13 @@ I file bloccati automaticamente da un indicatore non verranno visualizzati nel c
 
 >[!IMPORTANT]
 >- In genere, i blocchi di file vengono applicati e rimossi entro un paio di minuti, ma possono richiedere fino a 30 minuti.
->- Se sono presenti criteri indicatore file in conflitto, viene applicato il criterio di applicazione dei criteri più sicuri. Ad esempio, un criterio indicatore hash file SHA-256 ha la precedenza su un criterio indicatore hash file MD5 se entrambi i tipi di hash definiscono lo stesso file.
->- Se i criteri di gruppo EnableFileHashComputation sono disabilitati, la precisione di blocco del file IoC viene ridotta. Tuttavia, l'abilitazione di EnableFileHashComputation può influire sulle prestazioni del dispositivo.
->    - Ad esempio, la copia di file di grandi dimensioni da una condivisione di rete nel dispositivo locale, in particolare tramite una connessione VPN, può avere un effetto sulle prestazioni del dispositivo.
->    - Per ulteriori informazioni sui criteri di gruppo EnableFileHashComputation, vedere [Defender CSP](/windows/client-management/mdm/defender-csp)
+> 
+>- Se sono presenti criteri IoC file in conflitto con lo stesso tipo di imposizione e destinazione, verrà applicato il criterio dell'hash più sicuro. Un criterio IoC con hash di file SHA-256 vincerà su un criterio IoC hash di file SHA-1, che vincerà su un criterio IoC hash di file MD5 se i tipi di hash definiscono lo stesso file. Questo è sempre vero indipendentemente dal gruppo di dispositivi. 
+>   In tutti gli altri casi, se i criteri IoC dei file in conflitto con la stessa destinazione di imposizione vengono applicati a tutti i dispositivi e al gruppo del dispositivo, per un dispositivo, il criterio nel gruppo di dispositivi vincerà. 
+>   
+>- Se il criterio di gruppo EnableFileHashComputation è disabilitato, la precisione di blocco del file IoC viene ridotta. Tuttavia, `EnableFileHashComputation` l'abilitazione può influire sulle prestazioni del dispositivo. Ad esempio, la copia di file di grandi dimensioni da una condivisione di rete nel dispositivo locale, in particolare tramite una connessione VPN, potrebbe avere un effetto sulle prestazioni del dispositivo.
+>
+>   Per ulteriori informazioni sui criteri di gruppo EnableFileHashComputation, vedere [Defender CSP](/windows/client-management/mdm/defender-csp)
 
 ## <a name="policy-conflict-handling"></a>Gestione dei conflitti dei criteri  
 
@@ -103,7 +106,7 @@ I conflitti di gestione dei criteri Cert e File IoC seguiranno l'ordine seguente
 
 Se sono presenti criteri IoC di file in conflitto con lo stesso tipo di imposizione e destinazione, verrà applicato il criterio dell'hash più sicuro (ovvero più lungo). Ad esempio, un criterio IoC hash di file SHA-256 vincerà un criterio IoC hash di file MD5 se entrambi i tipi di hash definiscono lo stesso file.
 
-Tieni presente gestione di minacce e vulnerabilità delle funzionalità delle applicazioni vulnerabili di blocco usa gli ioC dei file per l'imposizione e seguirà l'ordine di gestione dei conflitti precedente.
+Le funzionalità gestione delle vulnerabilità delle applicazioni vulnerabili di threat e gestione delle vulnerabilità utilizzano gli IoC dei file per l'applicazione e seguiranno l'ordine di gestione dei conflitti precedente.
 
 ### <a name="examples"></a>Esempi
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dopo aver creato e eseguito un'iterazione su una raccolta di bozze, puoi eseguirne il commit in un set di revisioni. Quando si esegue il commit di una bozza di raccolta, gli elementi raccolti vengono aggiunti all'insieme di revisione nel caso. Dopo aver raccolto gli elementi nel set di revisione, è possibile analizzarli, esaminarli ed esportarli.
-ms.openlocfilehash: e28592e7aac289bfc0cc29d312963fa21d9f8fd4
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: dceb661d9586e324482dc4f56bce12fafaf9b251
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838887"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276978"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Eseguire il commit di una bozza di raccolta in un set di revisione in Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Quando sei soddisfatto degli elementi raccolti in una raccolta di bozze e sei pr
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>Eseguire il commit di una raccolta bozza in un insieme da rivedere
 
-1. Nel Centro Microsoft 365 conformità aprire il caso Advanced eDiscovery e quindi selezionare la **scheda** Raccolte per visualizzare un elenco delle raccolte nel caso.
+1. Nel Centro conformità Microsoft 365, aprire il Advanced eDiscovery e quindi selezionare la  scheda Raccolte per visualizzare un elenco delle raccolte nel caso.
 
    ![Elenco di raccolte in un caso](../media/CommitDraftCollections1.png)
 
@@ -46,7 +46,7 @@ Quando sei soddisfatto degli elementi raccolti in una raccolta di bozze e sei pr
 
    1. Seleziona **Raccogli elementi e aggiungi al set di revisione.**
 
-   2. Decidere se aggiungere la raccolta a un nuovo set di revisione (che viene creato dopo l'invio della raccolta) o a un set di revisione esistente. Completa questa sezione in base alla tua decisione.
+   2. Decidi se aggiungere la raccolta a un nuovo set di recensioni (che viene creato dopo l'invio della raccolta) o aggiungerla a un set di revisione esistente. Completa questa sezione in base alla tua decisione.
 
    3. Configurare le impostazioni di raccolta aggiuntive:
 
@@ -73,6 +73,8 @@ Quando sei soddisfatto degli elementi raccolti in una raccolta di bozze e sei pr
 ## <a name="what-happens-after-you-commit-a-draft-collection"></a>Cosa succede dopo il commit di una bozza di raccolta
 
 Quando si esegue il commit di una bozza di raccolta in un insieme di recensioni, si verificano le operazioni seguenti:
+
+- Se è stato creato un nuovo set di revisione in cui eseguire il commit della raccolta, il set di revisione viene creato e visualizzato nella scheda **Set di** revisione nel caso. Lo stato del nuovo set di revisioni è **Pronto.** Questo valore di stato indica che il set di revisione è stato creato. non significa che la raccolta sia stata aggiunta al set di recensioni. Lo stato dell'aggiunta di elementi nella raccolta al set di revisioni viene visualizzato nella **scheda** Raccolte.
 
 - La query di ricerca della raccolta viene eseguita di nuovo. Ciò significa che i risultati della ricerca effettivi copiati nel set di revisione potrebbero essere diversi dai risultati stimati restituiti all'ultima esecuzione della ricerca di raccolta.
 

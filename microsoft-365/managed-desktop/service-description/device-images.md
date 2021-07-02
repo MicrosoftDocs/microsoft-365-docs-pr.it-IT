@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841283"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276930"
 ---
 # <a name="device-images"></a>Immagini dispositivo
 
@@ -25,7 +25,7 @@ ms.locfileid: "52841283"
 Se ordini [nuovi dispositivi o](#new-devices) riutilizzi quelli esistenti, hai diverse opzioni per assicurarti che l'immagine nel dispositivo soddisfi i requisiti del [dispositivo.](device-requirements.md#check-hardware-requirements) [](#existing-devices)
 
 ## <a name="new-devices"></a>Nuovi dispositivi
-Quando ordini un nuovo dispositivo da un produttore [approvato,](device-requirements.md#minimum-requirements)segui questi passaggi per assicurarti che spediranno i dispositivi con la configurazione Microsoft Managed Desktop immagine e software.
+Quando ordini un nuovo dispositivo da un produttore [approvato,](device-requirements.md#minimum-requirements)segui questi passaggi per assicurarti che spediranno i dispositivi con la configurazione Microsoft Managed Desktop immagine e software. Ogni volta che si prevede di registrare un modello di dispositivo specifico nel servizio per la prima volta, è consigliabile testare un esempio per assicurarsi che garantisca l'esperienza utente prevista. Per altre informazioni, vedi [Convalidare i nuovi dispositivi.](/microsoft-365/managed-desktop/get-started/validate-device)
 
 ### <a name="dell"></a>Dell
 Collaborare direttamente con il venditore Dell, che si assicurerà che l'immagine approvata da Microsoft Managed Desktop sia applicata ai dispositivi per l'ordine. Per ulteriori domande sui dispositivi Dell, sull'immagine e sul processo di ordinamento, contattare MMD_at_dell@dell.com.

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Esportare i documenti in un set di Archiviazione di Azure e quindi usare Azure Storage Explorer per scaricarli in un computer locale.
-ms.openlocfilehash: dfb3892f31e857d4744f6da337c924efaa87ab11
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b7638e33a40a2ac46f4bb69b869e4c2cf6d48f65
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574710"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256508"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Esportare documenti in un set di revisione in un account Archiviazione di Azure revisione
 
@@ -41,7 +41,7 @@ Quando si esportano documenti da un set di Advanced eDiscovery, è possibile esp
 
 Il primo passaggio consiste nel creare un processo di esportazione per esportare i documenti da un set di revisioni. Per istruzioni più dettagliate su tutte le opzioni di esportazione, vedere [Export documents from a review set.](export-documents-from-review-set.md) Nella procedura seguente vengono evidenziate le impostazioni per esportare i documenti nell'account Archiviazione di Azure dell'organizzazione.
 
-1. Nel centro Microsoft 365 conformità aprire il caso Advanced eDiscovery, selezionare la scheda Review **sets** e quindi selezionare il set di recensioni che si desidera esportare.
+1. Nel Centro conformità Microsoft 365, aprire il caso Advanced eDiscovery, selezionare la  scheda Set di revisioni e quindi selezionare il set di revisioni che si desidera esportare.
 
 2. Nel set di revisioni fare clic **su Azione**  >  **Esporta.**
 

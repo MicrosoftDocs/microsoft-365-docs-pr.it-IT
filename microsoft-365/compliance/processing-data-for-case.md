@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Panoramica sull'elaborazione di varie forme di dati in Advanced eDiscovery.
-ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: ad723195ab0ae8a8d1200428bde00e2fcb0094ae
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751513"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256304"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Utilizzare gli errori di elaborazione in Advanced eDiscovery
 
